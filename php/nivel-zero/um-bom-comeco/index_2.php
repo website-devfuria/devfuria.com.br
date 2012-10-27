@@ -4,14 +4,7 @@
         <title>Um bom começo | devfuria.com.br</title>
         <link href="../../../boot/css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="../../../boot/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
-        <style type="text/css">
-            div.banners_dir {
-                background-color: red;
-                float: right;
-                height: 200px;
-                width: 400px;
-            }
-        </style>
+        <link href="../../../furia/css/furia.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div class="container-fluid">
@@ -71,9 +64,20 @@
                         (Servidor MySQL) recuperando algum tipo de dado com valor agregado. Essa informação é embebida por código HTML e
                         devolvida de volta ao navegador do cliente gerando, assim, a página HTML resultante.</p>
                 </div>
-
+                
                 <div class="code">
-                    <h1>PHP</h1>
+                    <h6>PHP</h6>
+                    <pre>&lt;?php
+    código fonte
+    código fonte
+    código fonte
+?&gt;</pre>              
+                    
+                </p>
+                
+                
+                <div class="code">
+                    <h6>PHP</h6>
                     <pre>&lt;?php
     código fonte
     código fonte
@@ -83,7 +87,7 @@
                 </div>
 
                 <div class="code">
-                    <h1>PHP</h1>
+                    <h6>PHP</h6>
                     <pre>&lt;?php
 echo "Eu sou uma string&lt;br /&gt;";
 echo "e serei exibida na tela do navegador.&lt;br /&gt;";
@@ -92,7 +96,7 @@ echo "e serei exibida na tela do navegador.&lt;br /&gt;";
                 </div>
 
                 <div class="code">
-                    <h1>PHP</h1>
+                    <h6>PHP</h6>
                     <pre>&lt;?php
 $resultado = 1 + 1;
 echo "Resultado da soma de 1 + 1 = $resultado";
@@ -101,7 +105,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                 </div>
 
                 <div class="code">
-                    <h1>PHP</h1>
+                    <h6>PHP</h6>
                     <pre>&lt;?php
 /*
 comentário em bloco

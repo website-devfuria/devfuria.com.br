@@ -1,0 +1,35 @@
+/* Útil
+===================================================*/
+.clear {
+    clear: both;
+}
+
+
+/* Banners
+===================================================*/
+div.banners_dir {
+    width: 340px;
+    margin-left: 20px;/* Acerta a margem dos parágrafos menores */
+    float: right;
+    position: relative;
+    background-color: red;
+}
+
+div.ban-lat-dir {
+    position: relative;
+    padding: 2px;
+    text-align: center;
+    border: 1px dotted #000;
+}
+div.ban-lat-dir._336x280 {
+    margin: 5px auto;
+    width: 336px;
+    height: 280px;
+}
+div.ban-lat-dir._300x250 {
+    margin: 5px auto;
+    width: 300px;
+    height: 250px;
+}
+
+
