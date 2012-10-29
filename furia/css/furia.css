@@ -5,31 +5,158 @@
 }
 
 
-/* Banners
+
+
+.container {
+    padding: 5px 20px;    
+    box-shadow: 4px 5px 10px;
+    -webkit-box-shadow: 4px 5px 10px #000000;
+}
+
+/* Seções
 ===================================================*/
-div.banners_dir {
-    width: 340px;
-    margin-left: 20px;/* Acerta a margem dos parágrafos menores */
-    float: right;
-    position: relative;
-    background-color: red;
+ul.secoes li {
+    float: left;
+    list-style: none;
 }
-
-div.ban-lat-dir {
+ul.secoes a {
+    background-color: #003366;
     position: relative;
-    padding: 2px;
+    display: inline-block;
+    height: 50px;
+    width: 164px;
+    margin: 10px;
+    line-height: 50px;
     text-align: center;
-    border: 1px dotted #000;
+    color: #FFF;
+    border-radius: 3px;
 }
-div.ban-lat-dir._336x280 {
-    margin: 5px auto;
-    width: 336px;
-    height: 280px;
+ul.secoes a:hover {
+    box-shadow: 0px 0px 5px #000000;
 }
-div.ban-lat-dir._300x250 {
-    margin: 5px auto;
-    width: 300px;
-    height: 250px;
+ul.secoes a.em_breve{
+}
+ul.secoes a.em_breve:hover {
+    box-shadow: none;
+    text-decoration: none;
+}
+ul.secoes a span {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    height: 10px;
+    line-height: 10px;
+    font-size: 9px;
+    color: #FFF;
 }
 
 
+article p {
+    margin: 15px 0px;
+    line-height: 18px;
+    text-indent:50px;
+    text-align: justify;
+}
+article p em {
+    font-weight: 900;
+}
+article p.fim {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: right;
+    font-size: 9px;
+}
+article hr {
+    margin: 0px;
+}
+/* Links dentro do artigo
+===================================================*/
+article p a:link, article p a:visited {
+    text-decoration: underline;
+}
+
+/* Imagens
+===================================================*/
+article div img {border: none;}
+article div.imagem {/* Parágrafo contendo imagem */
+    text-indent: 0px;
+    text-align: center;
+}
+article div.imagem p {/* Comentários das figuras */
+    display: block;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+    color: #333;
+    margin: 0px;
+}
+article div.imagem p a {/* Link da fonte (das figuras) */
+    font-size: 12px;
+    color: #333;
+}
+
+
+
+/* Codes
+===================================================*/
+article div.code {
+    color: #000;
+}
+
+article div.code h6 {
+    background-color: #BBB;
+    color: #767676;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0px;
+}
+article div.code pre {
+    background-color: #EEE;
+    padding: 10px;
+    line-height: 16px;
+    color: #000;
+    font-size: 12px;
+    font-family: monospace;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+article div.code pre.scroll {
+    overflow-x: scroll;
+}
+article div.code pre em{
+    font-weight: 900;
+}
+
+
+/* Leitura Sugerida
+===================================================*/
+article dl {
+    width: 98%;
+}
+article dt {
+    margin-left: 33px;
+    margin-top: 25px;
+    display: block;
+    color: #0093D8;
+    font-size: 16px;
+}
+article dd {
+    margin-left: 50px;
+    margin-top: 20px;
+    display: list-item;
+    list-style: disc outside none;
+    text-align: justify;
+}
+article dd em {
+    font-weight: 900;
+}
+article dd a {
+    display: block;
+    padding-top: 6px;
+    color: #FF0000;
+}
+article dd a:hover {
+    background-color: #fff;
+}
