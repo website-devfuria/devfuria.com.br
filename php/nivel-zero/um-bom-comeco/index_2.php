@@ -8,6 +8,9 @@
         <link href="../../../furia/css/furia.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+
+
+        <div class="container">
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -49,9 +52,11 @@
 
                 </div>
             </div>
-        </div>
-
-        <div class="container">
+        </div>            
+            
+            
+            
+            
             <div class="row">
                 <div class="span12">
 
