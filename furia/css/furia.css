@@ -5,12 +5,18 @@
 }
 
 
-
-
-.container {
-    padding: 5px 20px;    
-    box-shadow: 4px 5px 10px;
-    -webkit-box-shadow: 4px 5px 10px #000000;
+@media (min-width: 980px) {
+    body {
+        padding-top: 40px;
+    }
+    .breadcrumb{
+        margin-top: 30px;
+    }
+    .container {
+        padding: 5px 20px;
+        box-shadow: 4px 5px 10px;
+        -webkit-box-shadow: 4px 5px 10px #000000;
+    }
 }
 
 /* Seções

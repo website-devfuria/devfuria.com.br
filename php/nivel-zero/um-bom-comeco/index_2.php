@@ -4,13 +4,9 @@
         <title>Um bom começo | devfuria.com.br</title>
         <link href="../../../boot/css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="../../../boot/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
-        <link href="../../../boot/css/docs.css" rel="stylesheet" type="text/css" />
         <link href="../../../furia/css/furia.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-
-
-        <div class="container">
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -52,11 +48,10 @@
 
                 </div>
             </div>
-        </div>            
-            
-            
-            
-            
+        </div>
+
+
+        <div class="container">
             <div class="row">
                 <div class="span12">
 
@@ -273,6 +268,7 @@ comentário em bloco
                 </div>
             </div>
         </div><!-- container-fluid  -->
+        <script src="../../../boot/js/jquery.js"></script>
         <script src="../../../boot/js/bootstrap.js"></script>
     </body>
 </html>
