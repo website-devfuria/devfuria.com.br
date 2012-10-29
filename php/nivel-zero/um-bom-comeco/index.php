@@ -2,9 +2,10 @@
 <html lang="pt-br">
     <head>
         <title>Um bom começo | devfuria.com.br</title>
-        <link href="../../../boot/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="../../../boot/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+        <link href="../../../furia/boot/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="../../../furia/boot/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
         <link href="../../../furia/css/furia.css" rel="stylesheet" type="text/css" />
+        <link href="../../../furia/treeview/jquery.treeview.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -19,30 +20,36 @@
                     <!-- Be sure to leave the brand out there if you want it shown -->
                     <a class="brand" href="#">DevFuria</a>
 
+
                     <!-- Everything you want hidden at 940px or less, place within here -->
                     <div class="nav-collapse">
                         <ul class="nav">
-                            <li class="">
-                                <a href="./index.html">Home</a>
-                            </li>
                             <li class="active">
-                                <a href="./getting-started.html">Get started</a>
+                                <a href="#">PHP</a>
                             </li>
                             <li class="">
-                                <a href="./scaffolding.html">Scaffolding</a>
+                                <a href="#">Javascript</a>
                             </li>
                             <li class="">
-                                <a href="./base-css.html">Base CSS</a>
+                                <a href="#">HTML & CSS</a>
                             </li>
                             <li class="">
-                                <a href="./components.html">Components</a>
+                                <a href="#">MySql</a>
                             </li>
                             <li class="">
-                                <a href="./javascript.html">Javascript</a>
+                                <a href="#">Análise</a>
                             </li>
-                            <li class="">
-                                <a href="./customize.html">Customize</a>
-                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group direita visible-desktop" >
+                        <a class="btn dropdown-toggle btn-inverse btn-primary" data-toggle="dropdown" href="#">
+                            Mais...
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.devfuria.com.br/mapa-do-site">mapa do site</a></li>
+                            <li><a href="https://github.com/flaviomicheletti/devfuria">forke me on github</a></li>
                         </ul>
                     </div>
 
@@ -54,12 +61,14 @@
         <div class="container">
             <div class="row">
                 <div class="span12">
+                    <header>
+                        <ul class="breadcrumb">
+                            <li><a href="http://www.devfuria.com.br/">Home</a> <span class="divider">/</span></li>
+                            <li><a href="../../../php/">PHP</a> <span class="divider">/</span></li>
+                            <li class="active">Um bom começo</li>
+                        </ul>
+                    </header>
 
-                    <ul class="breadcrumb">
-                        <li><a href="http://www.devfuria.com.br/">Home</a> <span class="divider">/</span></li>
-                        <li><a href="../../../php/">PHP</a> <span class="divider">/</span></li>
-                        <li class="active">Um bom começo</li>
-                    </ul>
 
                     <article>
                         <h1>Um bom começo</h1>
@@ -263,12 +272,107 @@ comentário em bloco
                                 programação,  de qualquer linguagem, é muito difuso, disperso, pulverizado e pouco conciso.</dd>
                         </dl>
                         <p class="fim">Fim da matéria</p>
+                        <hr />
+                        <div data-font="verdana" data-show-faces="true" data-width="300" data-send="false" class="fb-like fb_edge_widget_with_comment fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 25px; width: 300px;"><iframe scrolling="no" id="fae3160256b3d8" name="f841c552b6ae26" style="border: medium none; overflow: hidden; height: 25px; width: 300px;" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;locale=pt_BR&amp;sdk=joey&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df29529866568efa%26origin%3Dhttp%253A%252F%252Fwww.devfuria.com.br%252Ff2adaacaae15f82%26domain%3Dwww.devfuria.com.br%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fwww.devfuria.com.br%2Fphp%2Fnivel-zero%2Fum-bom-comeco%2F&amp;node_type=link&amp;width=300&amp;font=verdana&amp;layout=standard&amp;colorscheme=light&amp;show_faces=true&amp;send=false&amp;extended_social_context=false"></iframe></span></div>
+
+
                     </article>
 
                 </div>
             </div>
-        </div><!-- container-fluid  -->
-        <script src="../../../boot/js/jquery.js"></script>
-        <script src="../../../boot/js/bootstrap.js"></script>
+        </div><!-- container-  -->
+
+        <div class="container sem_borda">
+            <div class="row">
+                <div class="span10 offset1">
+                    <div class="furia-tree parcial">
+                        <h5>Veja também...</h5>
+                        <h6>Nível Zero</h6>
+                        <ul id="browser" class="filetree">
+
+                            <li><a ><span class="file atual">Um bom começo</span></a></li>
+
+                            <li><a href="http://www.devfuria.com.br/php/nivel-zero/logica-de-programacao"><span class="file ">Lógica de Programação</span></a></li>
+
+                            <li><a href="http://www.devfuria.com.br/php/nivel-zero/antes-de-enfiar-o-pe-na-jaca"><span class="file ">Antes de enfiar o pé na jáca</span></a></li>
+
+                            <li><a href="http://www.devfuria.com.br/php/nivel-zero/intalando-o-ambiente"><span class="file ">Instalando o ambiente no estilo NEXT, NEXT, NEXT</span></a></li>
+
+                            <li><a href="http://www.devfuria.com.br/php/nivel-zero/estudos-de-logica-1-ao-5"><span class="file ">Estudos de lógica com respostas (1 ao 5)</span></a></li>
+
+                            <li><a href="http://www.devfuria.com.br/php/nivel-zero/estudos-de-logica-6-ao-10"><span class="file ">Estudos de lógica com respostas (6 ao 10)</span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span8 offset2">
+                    <div class="furia-feedback ">
+                        <form  id="form-feedback" action="#">
+                            <h6>Feedback</h6>
+                            <p>Deixe seu feedback, ele é muito importante.</p>
+                            <p>
+                                <input type="text" name="contato" id="contato" placeholder="você" class="span6"/>
+                            </p>
+                            <p>
+                                <input type="text" name="email" id="email" placeholder="email" class="span6"/>
+                            </p>
+                            <p>
+                                <textarea name="feedback" id="feedback"  rows="10" cols="10" placeholder="Seu feedback!" class="span6"></textarea>
+                            </p>
+                            <p>
+                                <input type="hidden" value="/devfuria/www.devfuria.com.brOLD/php/nivel-zero/um-bom-comeco/" name="url" />
+                                <input type="hidden" value="508ad7e3d505d7.35271062" name="id" />
+                                <input type="submit" value="Enviar" class="btn btn-primary"/>
+                            </p>
+                        </form>
+                        <script type="text/javascript">
+                            $("#form-feedback").submit(function(event){
+                                event.preventDefault();
+
+                                var dataToSend = $(this).serialize();
+                                $.ajax({
+                                    type: "POST",
+                                    url: "../../../../furia/send_mail.php",
+                                    data: dataToSend,
+                                    success: function(data){
+                                        if(data != "fail"){
+                                            $('#form-feedback').toggle('slow', function(){
+                                                $('#form-feedback').html('<h1>Obrigado!</h1><p>Feedback enviado com sucesso!</p>').show(600);
+                                            });
+                                        } else {
+                                            alert("Sorry main, não conseguimos enviar seu feedback!!!");
+                                            event.preventDefault();
+                                        }
+                                    },
+                                    error: function(){
+                                        alert("Sorry main, houve um erro no Ajax!!!");
+                                    }
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="../../../furia/boot/js/jquery.js"></script>
+        <script src="../../../furia/boot/js/bootstrap.js"></script>
+        <script src="../../../furia/treeview/jquery.treeview.js"></script>
+
+        <script type="text/javascript">
+            $("#browser").treeview({
+                animated: "slow",
+                control: "#treecontrol"
+            });
+
+            $('a', 'article').each(function(){
+                $(this).attr('target', "_blanck");
+            });
+        </script>
     </body>
 </html>

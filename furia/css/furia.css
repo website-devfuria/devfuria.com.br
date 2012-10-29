@@ -19,45 +19,21 @@
     }
 }
 
-/* Seções
-===================================================*/
-ul.secoes li {
-    float: left;
-    list-style: none;
+/* Botão à diretia na nav */
+.direita {
+    float: right;
+    margin-right: 50px;
+
 }
-ul.secoes a {
-    background-color: #003366;
-    position: relative;
-    display: inline-block;
-    height: 50px;
-    width: 164px;
-    margin: 10px;
-    line-height: 50px;
-    text-align: center;
-    color: #FFF;
-    border-radius: 3px;
-}
-ul.secoes a:hover {
-    box-shadow: 0px 0px 5px #000000;
-}
-ul.secoes a.em_breve{
-}
-ul.secoes a.em_breve:hover {
+
+/* container som borda*/
+.sem_borda {
     box-shadow: none;
-    text-decoration: none;
-}
-ul.secoes a span {
-    display: block;
-    position: absolute;
-    top: 30px;
-    left: 60px;
-    height: 10px;
-    line-height: 10px;
-    font-size: 9px;
-    color: #FFF;
+    -webkit-box-shadow: none;
 }
 
-
+/* Matéria
+===================================================*/
 article p {
     margin: 15px 0px;
     line-height: 18px;
@@ -165,4 +141,73 @@ article dd a {
 }
 article dd a:hover {
     background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* Tree view
+===================================================*/
+div.furia-tree {
+    padding: 20px;
+    box-shadow: 1px 1px 3px #767676;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+}
+div.furia-tree.parcial {
+    margin: auto;
+    margin-top: 40px
+}
+div.furia-tree h5 {
+    margin: 0px 0px 10px 0px;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+}
+div.furia-tree h6 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 14px;
+}
+div.furia-tree #treecontrol a{
+    border: 1px solid #FFF;
+    color: #767676;
+}
+div.furia-tree #treecontrol a:hover{
+    background-color: #FFF;
+    border: 1px solid red;
+    color: red;
+}
+div.furia-tree a .atual{
+    color: #AFC6E9;
+}
+div.furia-tree a:hover{
+    text-decoration: none;
+}
+
+
+
+/* Feedback
+===================================================*/
+div.furia-feedback {
+    text-align: center;
+    margin-top: 40px;
+}
+div.furia-feedback h6 {
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 14px;
+}
+div.furia-feedback p {
+}
+div.furia-feedback input[type=text], div.furia-feedback textarea {
+    -width: 100%;
+}
+div.furia-feedback textarea {
+    -height: 150px;
 }

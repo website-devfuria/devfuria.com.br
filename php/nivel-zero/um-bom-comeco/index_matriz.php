@@ -326,7 +326,7 @@ comentário em bloco
             <p>
                 <input type="hidden" value="/devfuria/www.devfuria.com.brOLD/php/nivel-zero/um-bom-comeco/" name="url" />
                 <input type="hidden" value="508ad7e3d505d7.35271062" name="id" />
-                <input type="submit" value="Enviar" />
+                <input type="submit" value="Enviar" class="btn btn-success"/>
             </p>
         </form>
         <script type="text/javascript">
