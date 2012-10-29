@@ -61,6 +61,7 @@
         <div class="container">
             <div class="row">
                 <div class="span12">
+
                     <header>
                         <ul class="breadcrumb">
                             <li><a href="http://www.devfuria.com.br/">Home</a> <span class="divider">/</span></li>
@@ -69,6 +70,23 @@
                         </ul>
                     </header>
 
+                    <!--GOOGLE search -->
+                    <p>
+                        <style type="text/css">table.gsc-search-box td {vertical-align: top;}</style>
+                        <gcse:search></gcse:search>
+                        <script type="text/javascript">
+                            (function() {
+                                var cx = '008752684436201828935:ov97wzanhkq';
+                                var gcse = document.createElement('script');
+                                gcse.type = 'text/javascript';
+                                gcse.async = true;
+                                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                    '//www.google.com.br/cse/cse.js?cx=' + cx;
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                    </p>
 
                     <article>
                         <h1>Um bom começo</h1>
@@ -272,12 +290,26 @@ comentário em bloco
                                 programação,  de qualquer linguagem, é muito difuso, disperso, pulverizado e pouco conciso.</dd>
                         </dl>
                         <p class="fim">Fim da matéria</p>
-                        <hr />
-                        <div data-font="verdana" data-show-faces="true" data-width="300" data-send="false" class="fb-like fb_edge_widget_with_comment fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 25px; width: 300px;"><iframe scrolling="no" id="fae3160256b3d8" name="f841c552b6ae26" style="border: medium none; overflow: hidden; height: 25px; width: 300px;" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;locale=pt_BR&amp;sdk=joey&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df29529866568efa%26origin%3Dhttp%253A%252F%252Fwww.devfuria.com.br%252Ff2adaacaae15f82%26domain%3Dwww.devfuria.com.br%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fwww.devfuria.com.br%2Fphp%2Fnivel-zero%2Fum-bom-comeco%2F&amp;node_type=link&amp;width=300&amp;font=verdana&amp;layout=standard&amp;colorscheme=light&amp;show_faces=true&amp;send=false&amp;extended_social_context=false"></iframe></span></div>
-
-
                     </article>
 
+
+                    <div id="fb-root"></div>
+                    <div class="fb-like" data-send="false" data-width="300" data-show-faces="true" data-font="verdana"></div>
+                    <style type="text/css">
+                        .fb_iframe_widget {
+                            display: block;
+                            margin: 30px 0px;
+                            text-align: center;
+                        }
+                    </style>
+                    <script>(function(d, s, id) {
+                        var js, fjs = d.getElementById('fb-root');
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
                 </div>
             </div>
         </div><!-- container-  -->
@@ -329,50 +361,17 @@ comentário em bloco
                             </p>
                         </form>
                         <script type="text/javascript">
-                            $("#form-feedback").submit(function(event){
-                                event.preventDefault();
 
-                                var dataToSend = $(this).serialize();
-                                $.ajax({
-                                    type: "POST",
-                                    url: "../../../../furia/send_mail.php",
-                                    data: dataToSend,
-                                    success: function(data){
-                                        if(data != "fail"){
-                                            $('#form-feedback').toggle('slow', function(){
-                                                $('#form-feedback').html('<h1>Obrigado!</h1><p>Feedback enviado com sucesso!</p>').show(600);
-                                            });
-                                        } else {
-                                            alert("Sorry main, não conseguimos enviar seu feedback!!!");
-                                            event.preventDefault();
-                                        }
-                                    },
-                                    error: function(){
-                                        alert("Sorry main, houve um erro no Ajax!!!");
-                                    }
-                                });
-                            });
                         </script>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
+        <script src="../../../furia/js/ga.js"></script>
         <script src="../../../furia/boot/js/jquery.js"></script>
         <script src="../../../furia/boot/js/bootstrap.js"></script>
         <script src="../../../furia/treeview/jquery.treeview.js"></script>
-
-        <script type="text/javascript">
-            $("#browser").treeview({
-                animated: "slow",
-                control: "#treecontrol"
-            });
-
-            $('a', 'article').each(function(){
-                $(this).attr('target', "_blanck");
-            });
-        </script>
+        <script src="../../../furia/js/furia.js"></script>
     </body>
 </html>

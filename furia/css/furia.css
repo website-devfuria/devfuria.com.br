@@ -47,11 +47,9 @@ article p.fim {
     margin-top: 50px;
     margin-bottom: 0px;
     text-align: right;
-    font-size: 9px;
+    border-bottom: 1px solid #000;
 }
-article hr {
-    margin: 0px;
-}
+
 /* Links dentro do artigo
 ===================================================*/
 article p a:link, article p a:visited {
