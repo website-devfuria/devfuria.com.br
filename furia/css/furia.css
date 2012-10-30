@@ -178,7 +178,7 @@ div.furia-tree a {
     line-height: 25px;
 }
 div.furia-tree a:hover {
-    color: #003366; 
+    color: #003366;
 }
 div.furia-tree a .atual {
     color: #AFC6E9;
@@ -187,16 +187,22 @@ div.furia-tree a:hover {
     text-decoration: none;
 }
 
+/* COntrole expandir/contrair*/
 div.furia-tree #treecontrol {
-    float: right;
+    -float: right;
 }
-div.furia-tree #treecontrol a{
-    border: 1px solid #FFF;
+div.furia-tree #treecontrol a {
     color: #767676;
+    float: right;
+    margin-left: 30px;
+    padding: 10px;
+}
+div.furia-tree #treecontrol a img{
+    padding-bottom: 2px;
+    padding-right: 5px;
 }
 div.furia-tree #treecontrol a:hover{
     background-color: #FFF;
-    border: 1px solid red;
     color: red;
 }
 
@@ -227,9 +233,56 @@ div.furia-feedback h6 {
 }
 div.furia-feedback p {
 }
-div.furia-feedback input[type=text], div.furia-feedback textarea {
-    -width: 100%;
+
+
+
+
+/* Listagem das Matérias
+===================================================*/
+div.furia-lista-materias div.materia-resumo {
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+
+    border: 1px solid #F5F5F5;
+    box-shadow: 2px 2px 2px #767676;
+    cursor: pointer;
+    margin: 30px 0;
+    padding: 0px 0px;
 }
-div.furia-feedback textarea {
-    -height: 150px;
+div.materia-resumo.lista-php {
+    background-image: url("../imagens/lista_php.png");
+}
+div.materia-resumo.lista-html-css {
+    background-image: url("../imagens/lista_html_css.png");
+}
+div.materia-resumo.lista-js {
+    background-image: url("../imagens/lista_js.png");
+}
+div.materia-resumo.lista-mysql {
+    background-image: url("../imagens/lista_mysql.png");
+}
+div.materia-resumo.lista-analise {
+    background-image: url("../imagens/lista_analise.png");
+}
+div.materia-resumo * {
+    color: #000;
+    display: block;
+}
+div.materia-resumo a {
+    margin-left: 50px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+div.materia-resumo:hover {
+    background-color: #F5F5F5;
+}
+div.materia-resumo em {
+    font-size: 20px;
+    margin: 10px 0px;
+    padding: 3px 0px;
+}
+div.materia-resumo span.assinatura {
+    font-size: 10px;
+    margin: 10px 0px;
+    padding: 3px 0px;
 }
