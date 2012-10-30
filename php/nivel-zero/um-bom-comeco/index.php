@@ -1,15 +1,23 @@
+<?php
+var_dump(  get_include_path()  );
+var_dump(realpath(__FILE__));
+var_dump(__FILE__);
+var_dump(dirname(__FILE__));
+var_dump(getcwd());
+var_dump($_SERVER);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Um bom começo | devfuria.com.br</title>
-        <?php include "head_links_css.php"; ?>
+        <?php include "../../../furia/comp/head_links_css.php"; ?>
     </head>
     <body>
 
         <?php include "nav_top.php"; ?>
 
         <div class="container">
-            
+
             <div class="row">
                 <div class="span12">
 

@@ -187,7 +187,7 @@ div.furia-tree a:hover {
     text-decoration: none;
 }
 
-/* COntrole expandir/contrair*/
+/* Controle expandir/contrair*/
 div.furia-tree #treecontrol {
     -float: right;
 }
@@ -216,10 +216,6 @@ div.furia-tree #treecontrol a:hover{
 
 
 
-
-
-
-
 /* Feedback
 ===================================================*/
 div.furia-feedback {
@@ -233,7 +229,6 @@ div.furia-feedback h6 {
 }
 div.furia-feedback p {
 }
-
 
 
 
@@ -280,6 +275,9 @@ div.materia-resumo em {
     font-size: 20px;
     margin: 10px 0px;
     padding: 3px 0px;
+}
+div.materia-resumo span.resumo {
+    margin: 10px 0px;
 }
 div.materia-resumo span.assinatura {
     font-size: 10px;
