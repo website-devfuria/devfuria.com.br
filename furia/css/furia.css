@@ -19,7 +19,7 @@
     }
 }
 
-/* Botão à diretia na nav */
+/* Botão à direita na nav */
 .direita {
     float: right;
     margin-right: 50px;
@@ -172,6 +172,24 @@ div.furia-tree h6 {
     font-weight: 900;
     font-size: 14px;
 }
+div.furia-tree a {
+    color: #767676;
+    display: block;
+    line-height: 25px;
+}
+div.furia-tree a:hover {
+    color: #003366; 
+}
+div.furia-tree a .atual {
+    color: #AFC6E9;
+}
+div.furia-tree a:hover {
+    text-decoration: none;
+}
+
+div.furia-tree #treecontrol {
+    float: right;
+}
 div.furia-tree #treecontrol a{
     border: 1px solid #FFF;
     color: #767676;
@@ -181,12 +199,18 @@ div.furia-tree #treecontrol a:hover{
     border: 1px solid red;
     color: red;
 }
-div.furia-tree a .atual{
-    color: #AFC6E9;
-}
-div.furia-tree a:hover{
-    text-decoration: none;
-}
+
+
+
+/*file: jquery,treeview.css */
+/*line 70*/.filetree li { padding: 0px 0px 10px 16px; }
+/*line 74*/.filetree span.file { background-position: 0px 6px }
+
+
+
+
+
+
 
 
 
