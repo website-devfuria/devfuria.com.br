@@ -1,30 +1,36 @@
 <?php
-var_dump(realpath(__FILE__));
-var_dump(__FILE__);
-var_dump(dirname(__FILE__));
-var_dump(getcwd());
-var_dump($_SERVER);
+require "furia/includes/bs.php";
+defined('BASE_PATH') or die;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Um bom começo | devfuria.com.br</title>
-        <?php include "furia/comp/head_links_css.php"; ?>
+        <title><?php echo DOMINIO; ?></title>
+        <?php
+        $head_meta = array(
+            "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
+            "keywords" => "webapp; app's; desenvolvimento, desenvolvimento web, website, webstandards, programação, php, php fácil, php iniciando, php iniciante, começando com php, php descomplicado, javascript, js, html, html5, css",
+        );
+        include BASE_PATH.COMPONENTES_PATH."head_meta.php";
+        ?>
+        <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
     </head>
     <body>
 
-        <?php include "nav_top.php"; ?>
+        <?php
+        $nav_top['secao'] = null;
+        include BASE_PATH.COMPONENTES_PATH."nav_top.php";
+        ?>
 
         <div class="container">
 
             <div class="row">
                 <div class="span12">
-
                     <header>
-                        <?php include "breadcrumb.php"; ?>
-                        <p><?php include "google_search.php"; ?></p>
+                        <p>
+                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
+                        </p>
                     </header>
-
 
                     <div class="furia-lista-materias">
                         <div class="materia-resumo lista-php">
@@ -73,12 +79,12 @@ var_dump($_SERVER);
                             </a>
                         </div>
                     </div>
-                    <?php include "face_botao_curtir.php"; ?>
+                    <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>
 
                 </div><!-- span12 -->
             </div><!-- row -->
         </div><!-- container -->
 
-    <?php include "rodape_js.php"; ?>
+    <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
     </body>
 </html>

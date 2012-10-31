@@ -1,19 +1,26 @@
 <?php
-require "../furia/bs.php";
+require "../furia/includes/bs.php";
 defined('BASE_PATH') or die;
-
-$materia = stdClass();
-$materia->titulo = "Um bom começo";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Um bom começo | devfuria.com.br</title>
+        <title>PHP | <?php echo DOMINIO; ?></title>
+        <?php
+        $head_meta = array(
+            "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
+            "keywords" => "webapp; app's; desenvolvimento, desenvolvimento web, website, webstandards, programação, php, php fácil, php iniciando, php iniciante, começando com php, php descomplicado, javascript, js, html, html5, css",
+        );
+        include BASE_PATH.COMPONENTES_PATH."head_meta.php";
+        ?>
         <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
     </head>
     <body>
 
-        <?php include BASE_PATH.COMPONENTES_PATH."nav_top.php"; ?>
+        <?php
+        $nav_top['secao'] = "php";
+        include BASE_PATH.COMPONENTES_PATH."nav_top.php";
+        ?>
 
         <div class="container">
 
@@ -22,8 +29,7 @@ $materia->titulo = "Um bom começo";
                     <header>
                         <ul class="breadcrumb">
                             <li><a href="<?php echo ROOT_PATH; ?>">Home</a> <span class="divider">/</span></li>
-                            <li><a href="<?php echo BASE_PATH; ?>php/">PHP</a> <span class="divider">/</span></li>
-                            <li class="active"><?php echo BASE_PATH; ?></li>
+                            <li class="active">PHP</li>
                         </ul>
                         <p>
                             <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
@@ -61,9 +67,11 @@ $materia->titulo = "Um bom começo";
             <div class="row">
                 <div class="span10 offset1">
                     <?php include BASE_PATH.COMPONENTES_PATH."tree_completa.php"; ?>
-                </div><!-- span  -->
-            </div><!-- row -->
+                </div>
+            </div>
+
         </div><!-- container -->
+
     <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
     </body>
 </html>

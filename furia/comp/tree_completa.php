@@ -8,25 +8,12 @@
                         <ul class="filetree" id="browser">
                             <li class="folder"><span class="folder">Nível 0</span>
                                 <ul>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/um-bom-comeco" class=""><span class="file">Um bom começo</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/logica-de-programacao" class=""><span class="file">Lógica de Programação</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/antes-de-enfiar-o-pe-na-jaca" class=""><span class="file">Antes de enfiar o pé na jáca</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/intalando-o-ambiente" class=""><span class="file">Instalando o ambiente no estilo NEXT, NEXT, NEXT</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/estudos-de-logica-1-ao-5" class=""><span class="file">Estudos de lógica com respostas (1 ao 5)</span></a></li>
-                                    <li class="last"><a href="<?php echo BASE_PATH; ?>nivel-zero/estudos-de-logica-6-ao-10" class=""><span class="file">Estudos de lógica com respostas (6 ao 10)</span></a></li>
-                                </ul>
-                            </li>
-                         </ul>
-                        <h6>JS</h6>
-                        <ul class="filetree" id="browser">
-                            <li class="folder"><span class="folder">Nível 0</span>
-                                <ul>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/um-bom-comeco" class=""><span class="file">Um bom começo</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/logica-de-programacao" class=""><span class="file">Lógica de Programação</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/antes-de-enfiar-o-pe-na-jaca" class=""><span class="file">Antes de enfiar o pé na jáca</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/intalando-o-ambiente" class=""><span class="file">Instalando o ambiente no estilo NEXT, NEXT, NEXT</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>nivel-zero/estudos-de-logica-1-ao-5" class=""><span class="file">Estudos de lógica com respostas (1 ao 5)</span></a></li>
-                                    <li class="last"><a href="<?php echo BASE_PATH; ?>nivel-zero/estudos-de-logica-6-ao-10" class=""><span class="file">Estudos de lógica com respostas (6 ao 10)</span></a></li>
+                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/um-bom-comeco" class=""><span class="file">Um bom começo</span></a></li>
+                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/logica-de-programacao" class=""><span class="file">Lógica de Programação</span></a></li>
+                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/antes-de-enfiar-o-pe-na-jaca" class=""><span class="file">Antes de enfiar o pé na jáca</span></a></li>
+                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/intalando-o-ambiente" class=""><span class="file">Instalando o ambiente no estilo NEXT, NEXT, NEXT</span></a></li>
+                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/estudos-de-logica-1-ao-5" class=""><span class="file">Estudos de lógica com respostas (1 ao 5)</span></a></li>
+                                    <li class="last"><a href="<?php echo BASE_PATH; ?>php/nivel-zero/estudos-de-logica-6-ao-10" class=""><span class="file">Estudos de lógica com respostas (6 ao 10)</span></a></li>
                                 </ul>
                             </li>
                          </ul>

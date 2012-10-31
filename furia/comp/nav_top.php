@@ -1,3 +1,17 @@
+<?php
+
+/**
+ * Seções para nevegação
+ */
+$secoes = array(
+    "php"      => "PHP",
+    "js"       => "Javascript",
+    "html-css" => "HTML & CSS",
+    "mysql"    => "MySql",
+    "analise"  => "Análise",
+);
+
+?>
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
@@ -5,25 +19,15 @@
                 <span class="icon-align-justify icon-white"></span>
             </a>
 
-            <a class="brand" href="<?php echo BASE_PATH; ?>">DevFuria</a>
+            <a class="brand" href="<?php echo ROOT_PATH; ?>">DevFuria</a>
 
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active">
-                        <a href="<?php echo BASE_PATH; ?>php/">PHP</a>
+                <?php foreach($secoes as $secao_path => $secao_label): ?>
+                    <li class="<?php echo ($secao_path == $nav_top['secao']) ? "active" : null ; ?>">
+                        <a href="<?php echo BASE_PATH.$secao_path."/"; ?>"><?php echo $secao_label; ?></a>
                     </li>
-                    <li class="">
-                        <a href="<?php echo BASE_PATH; ?>js/">Javascript</a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo BASE_PATH; ?>html-css/">HTML & CSS</a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo BASE_PATH; ?>mysql/">MySql</a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo BASE_PATH; ?>analise/">Análise</a>
-                    </li>
+                <?php endforeach; ?>
                 </ul>
             </div>
 
@@ -33,7 +37,7 @@
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo ROOT_PATH; ?>mapa-do-site">mapa do site</a></li>
+                    <li><a href="<?php echo BASE_PATH; ?>mapa-do-site">mapa do site</a></li>
                     <li><a href="https://github.com/flaviomicheletti/devfuria">forke me on github</a></li>
                 </ul>
             </div>
