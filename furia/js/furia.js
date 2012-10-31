@@ -12,7 +12,7 @@ var furia = {
             var dataToSend = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: "../../../../furia/send_mail.php",
+                url: "../furia/send_mail.php",
                 data: dataToSend,
                 success: function(data){
                     if(data != "fail"){

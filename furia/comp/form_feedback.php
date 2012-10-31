@@ -1,3 +1,9 @@
+<?php
+$id = uniqid("", true);
+$_SESSION['id'] = $id;
+
+?>
+
 <div class="furia-feedback ">
     <form  id="form-feedback" action="#">
         <h6>Feedback</h6>
@@ -12,8 +18,8 @@
             <textarea name="feedback" id="feedback"  rows="10" cols="10" placeholder="Seu feedback!" class="span6"></textarea>
         </p>
         <p>
-            <input type="hidden" value="/devfuria/www.devfuria.com.brOLD/php/nivel-zero/um-bom-comeco/" name="url" />
-            <input type="hidden" value="508ad7e3d505d7.35271062" name="id" />
+            <input type="hidden" value="<?php echo $_SERVER['REQUEST_URI'] ?>" name="url" />
+            <input type="hidden" value="<?php echo $id?>" name="id" />
             <input type="submit" value="Enviar" class="btn btn-primary"/>
         </p>
     </form>

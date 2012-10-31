@@ -1,27 +1,33 @@
 <?php
-var_dump(realpath(__FILE__));
-var_dump(__FILE__);
-var_dump(dirname(__FILE__));
-var_dump(getcwd());
-var_dump($_SERVER);
+require "../furia/bs.php";
+defined('BASE_PATH') or die;
+
+$materia = stdClass();
+$materia->titulo = "Um bom começo";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Um bom começo | devfuria.com.br</title>
-        <?php include "../furia/comp/head_links_css.php"; ?>
+        <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
     </head>
     <body>
 
-        <?php include "nav_top.php"; ?>
+        <?php include BASE_PATH.COMPONENTES_PATH."nav_top.php"; ?>
 
         <div class="container">
 
             <div class="row">
                 <div class="span12">
                     <header>
-                        <?php include "breadcrumb.php"; ?>
-                        <p><?php include "google_search.php"; ?></p>
+                        <ul class="breadcrumb">
+                            <li><a href="<?php echo ROOT_PATH; ?>">Home</a> <span class="divider">/</span></li>
+                            <li><a href="<?php echo BASE_PATH; ?>php/">PHP</a> <span class="divider">/</span></li>
+                            <li class="active"><?php echo BASE_PATH; ?></li>
+                        </ul>
+                        <p>
+                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
+                        </p>
                     </header>
                 </div>
             </div>
@@ -48,16 +54,16 @@ var_dump($_SERVER);
                     </div>
                 </div>
                 <div class="span6">
-                    <?php include "form_feedback.php"; ?>
+                    <?php include BASE_PATH.COMPONENTES_PATH."form_feedback.php"; ?>
                 </div>
             </div>
 
             <div class="row">
                 <div class="span10 offset1">
-                    <?php include "tree_completa.php"; ?>
+                    <?php include BASE_PATH.COMPONENTES_PATH."tree_completa.php"; ?>
                 </div><!-- span  -->
             </div><!-- row -->
         </div><!-- container -->
-    <?php include "rodape_js.php"; ?>
+    <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
     </body>
 </html>
