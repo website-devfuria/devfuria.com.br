@@ -1,5 +1,5 @@
                     <div class="furia-tree">
-                        <div id="treecontrol">
+                        <div id="treecontrol" class="hidden-phone">
                             <a href="#" title="Collapse the entire tree below"><img alt="-" src="<?php echo BASE_PATH; ?>furia/treeview/images/minus.gif">Contrair todos</a>
                             <a href="#" title="Expand the entire tree below"><img alt="+" src="<?php echo BASE_PATH; ?>furia/treeview/images/plus.gif">Expandir todos</a>
                         </div>
