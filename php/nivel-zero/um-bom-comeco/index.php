@@ -2,7 +2,7 @@
 require "../../../furia/includes/bs.php";
 defined('BASE_PATH') or die;
 
-$materia = new stdClass();
+$materia = new Materia(1);
 $materia->titulo = "Um bom começo";
 ?>
 <!DOCTYPE html>
@@ -11,8 +11,8 @@ $materia->titulo = "Um bom começo";
         <title><?php echo $materia->titulo; ?> | <?php echo DOMINIO; ?></title>
         <?php
         $head_meta = array(
-            "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
-            "keywords" => "webapp; app's; desenvolvimento, desenvolvimento web, website, webstandards, programação, php, php fácil, php iniciando, php iniciante, começando com php, php descomplicado, javascript, js, html, html5, css",
+            "description" => $materia->resumo,
+            "keywords" => "",
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>

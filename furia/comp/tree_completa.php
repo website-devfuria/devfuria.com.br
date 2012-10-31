@@ -8,7 +8,12 @@
                         <ul class="filetree" id="browser">
                             <li class="folder"><span class="folder">Nível 0</span>
                                 <ul>
-                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/um-bom-comeco" class=""><span class="file">Um bom começo</span></a></li>
+                                    <li>
+                                        <a href="<?php echo BASE_PATH; ?>php/nivel-zero/<?php echo $materia->url ?>" class="">
+                                            <span class="file"><?php echo $materia->titulo ?>/span>
+                                        </a>
+                                    </li>
+
                                     <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/logica-de-programacao" class=""><span class="file">Lógica de Programação</span></a></li>
                                     <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/antes-de-enfiar-o-pe-na-jaca" class=""><span class="file">Antes de enfiar o pé na jáca</span></a></li>
                                     <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/intalando-o-ambiente" class=""><span class="file">Instalando o ambiente no estilo NEXT, NEXT, NEXT</span></a></li>

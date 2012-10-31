@@ -33,51 +33,22 @@ defined('BASE_PATH') or die;
                     </header>
 
                     <div class="furia-lista-materias">
+
+
+
+                        
                         <div class="materia-resumo lista-php">
                             <a href="php/nivel-zero/um-bom-comeco">
-                                <em>Instalando o Ambiente no estilo NEXT, NEXT, NEXT.</em>
+                                <em><?php echo $materia->titulo; ?></em>
                                 <span class="resumo">
-                                    Advertência: Programar é algo viciante, programe com moderação. Bom, mas nem tudo são flores! Para codificar de forma ímpar é preciso ter organização e disciplina. Essa matéria é um convite para as boas práticas.
+                                    <?php echo $materia->resumo; ?>
                                 </span>
-                                <span class="hidden-phone assinatura">Flávio Micheletti, atualizado em 11/09/2012, escrito em 5/06/2012.</span>
+                                <span class="hidden-phone assinatura"><?php echo $materia->autor; ?>, atualizado em <?php echo $materia->dt_atualizacao; ?>, escrito em <?php echo $materia->dt_criacao; ?>.</span>
                             </a>
                         </div>
-                        <div class="materia-resumo lista-html-css">
-                            <a href="php/nivel-zero/um-bom-comeco">
-                                <em>Estudos de lógica com respostas (1 ao 5)</em>
-                                <span class="resumo">
-                                    As aplicações web prometem ser o futuro do desenvolvimento de software. Sua natureza, sua arquitetura, conquistou os usuários e os desenvolvedores também (programador web não trabalha, se diverte). Essa matéria é uma introdução ao desenvolvimento web. Divirta-se!
-                                </span>
-                                <span class="hidden-phone assinatura">Flávio Micheletti, atualizado em 11/09/2012, escrito em 5/06/2012.</span>
-                            </a>
-                        </div>
-                        <div class="materia-resumo lista-js">
-                            <a href="php/nivel-zero/um-bom-comeco">
-                                <em>Um bom começo</em>
-                                <span class="resumo">
-                                    As aplicações web prometem ser o futuro do desenvolvimento de software. Sua natureza, sua arquitetura, conquistou os usuários e os desenvolvedores também (programador web não trabalha, se diverte). Essa matéria é uma introdução ao desenvolvimento web. Divirta-se!
-                                </span>
-                                <span class="hidden-phone assinatura">Flávio Micheletti, atualizado em 11/09/2012, escrito em 5/06/2012.</span>
-                            </a>
-                        </div>
-                        <div class="materia-resumo lista-mysql">
-                            <a href="php/nivel-zero/um-bom-comeco">
-                                <em>Um bom começo</em>
-                                <span class="resumo">
-                                    As aplicações web prometem ser o futuro do desenvolvimento de software. Sua natureza, sua arquitetura, conquistou os usuários e os desenvolvedores também (programador web não trabalha, se diverte). Essa matéria é uma introdução ao desenvolvimento web. Divirta-se!
-                                </span>
-                                <span class="hidden-phone assinatura">Flávio Micheletti, atualizado em 11/09/2012, escrito em 5/06/2012.</span>
-                            </a>
-                        </div>
-                        <div class="materia-resumo lista-analise">
-                            <a href="php/nivel-zero/um-bom-comeco">
-                                <em>Um bom começo</em>
-                                <span class="resumo">
-                                    As aplicações web prometem ser o futuro do desenvolvimento de software. Sua natureza, sua arquitetura, conquistou os usuários e os desenvolvedores também (programador web não trabalha, se diverte). Essa matéria é uma introdução ao desenvolvimento web. Divirta-se!
-                                </span>
-                                <span class="hidden-phone assinatura">Flávio Micheletti, atualizado em 11/09/2012, escrito em 5/06/2012.</span>
-                            </a>
-                        </div>
+
+
+
                     </div>
                     <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>
 
