@@ -1,26 +1,26 @@
 var furia = {
     init: function(){
-        this.bind_form_feedback();
+        this.feedback_form_action();
         this.apontar_links_para_fora();
         this.g();
         this.inicializar_tree_view();
     },
-    bind_form_feedback: function(){
+    feedback_form_action: function(){
         $("#form-feedback").submit(function(event){
             event.preventDefault();
 
             var dataToSend = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: "../furia/send_mail.php",
+                url: "../furia/includes/feedback-form-action-ajax.php",
                 data: dataToSend,
                 success: function(data){
-                    if(data != "fail"){
+                    if( data ){
                         $('#form-feedback').toggle('slow', function(){
                             $('#form-feedback').html('<h1>Obrigado!</h1><p>Feedback enviado com sucesso!</p>').show(600);
                         });
                     } else {
-                        alert("Sorry main, não conseguimos enviar seu feedback!!!");
+                        alert(data.msg);
                         event.preventDefault();
                     }
                 },

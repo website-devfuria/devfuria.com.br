@@ -1,7 +1,7 @@
 <?php
 /**
  * Envia email do feedback (via Ajax).
- * 
+ *
  * <p>Validamos o email do remetente enviando uma msg para ele.
  * se obtivermos sucesso então enviamos email ao DevFuria.</p>
  */
@@ -30,18 +30,15 @@ $_POST['url']      = isset($_POST['url'])      ? $_POST['url']      : null ;
  */
 # checa o id
 if( $_SESSION['id'] != $_POST['id']  ){
-    echo "fail";
-    die();
+    $erro['msg']= "ID do form não confere !!!";
 }
 # checa se veio email
 if( !$_POST['email'] ){
-    echo "fail";
-    die();
+    $erro['msg']= "Preencha o email !!!";
 }
-# checa se veio email
+# checa se veio menssagem
 if( !$_POST['feedback'] ){
-    echo "fail";
-    die();
+    $erro['msg']= "Escreva alguma coisa !!!";
 }
 
 
@@ -63,8 +60,7 @@ $res = mail($to, $subject, $message, $headers);
  * Conseguimos enviar o email?
  */
 if( !$res ){
-    echo "fail";
-    die();
+    $erro['msg']= "Email inválido !!!";
 }
 
 
@@ -88,7 +84,6 @@ $res = mail($to, $subject, $message, $headers);
  * Conseguimos enviar o email?
  */
 if( !$res ){
-    echo "fail";
-    die();
+    $erro['msg']= "Algo deu errado !!!";
 }
 ?>
