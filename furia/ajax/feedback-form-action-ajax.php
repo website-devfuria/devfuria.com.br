@@ -30,15 +30,15 @@ $_POST['url']      = isset($_POST['url'])      ? $_POST['url']      : null ;
  */
 # checa o id
 if( $_SESSION['id'] != $_POST['id']  ){
-    $erro['msg']= "ID do form não confere !!!";
+    $erro['msg'] = "ID do form não confere !!!";
 }
 # checa se veio email
 if( !$_POST['email'] ){
-    $erro['msg']= "Preencha o email !!!";
+    $erro['msg'] = "Preencha o email !!!";
 }
 # checa se veio menssagem
 if( !$_POST['feedback'] ){
-    $erro['msg']= "Escreva alguma coisa !!!";
+    $erro['msg'] = "Escreva alguma coisa !!!";
 }
 
 
@@ -46,10 +46,10 @@ if( !$_POST['feedback'] ){
 /**
  * Enviar email para remetente.
  */
-$from    = "feedback@devfuria.com.br";
-$to      = $_POST['email'];
-$subject = "Site: DevFuria - mensagem";
-$message = "A devfuria agradeçe seu feedback.<br /> www.devfuria.com.br";
+$from     = "feedback@devfuria.com.br";
+$to       = $_POST['email'];
+$subject  = "Site: DevFuria - mensagem";
+$message  = "A devfuria agradeçe seu feedback.<br /> www.devfuria.com.br";
 $headers  = "MIME-Version: 1.0\n";
 $headers .= "Content-type: text/html; charset=utf-8\n";
 $headers .= "From: $from\n";
@@ -67,10 +67,10 @@ if( !$res ){
 /**
  * Enviar email para a DevFuria
  */
-$from    = $_POST['email'];
-$to      = "feedback@devfuria.com.br";
-$subject = "DevFuria - mensagem";
-$message = $_POST['contato'] . " say: \n" . $_POST['feedback'] . "\n" . $_POST['url'];
+$from     = $_POST['email'];
+$to       = "feedback@devfuria.com.br";
+$subject  = "DevFuria - mensagem";
+$message  = $_POST['contato'] . " say: \n" . $_POST['feedback'] . "\n" . $_POST['url'];
 
 $headers  = "MIME-Version: 1.0\n";
 $headers .= "Content-type: text/html; charset=utf-8\n";
@@ -85,5 +85,13 @@ $res = mail($to, $subject, $message, $headers);
  */
 if( !$res ){
     $erro['msg']= "Algo deu errado !!!";
+}
+
+
+/**
+ * Resposta
+ */
+if( $erro ){
+    echo json_encode($erro);
 }
 ?>
