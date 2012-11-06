@@ -1,24 +1,26 @@
+<?php
+$tree_completa['where']    = "WHERE secao = '{$tree_completa['secao']}' AND nivel = '{$tree_completa['nivel']}' ";
+$tree_completa['mateiras'] = Materia::getObjects($tree_completa['where']);
+?>
                     <div class="furia-tree">
                         <div id="treecontrol" class="hidden-phone">
                             <a href="#" title="Collapse the entire tree below"><img alt="-" src="<?php echo BASE_PATH; ?>furia/treeview/images/minus.gif">Contrair todos</a>
                             <a href="#" title="Expand the entire tree below"><img alt="+" src="<?php echo BASE_PATH; ?>furia/treeview/images/plus.gif">Expandir todos</a>
                         </div>
 
-                        <h6>PHP</h6>
+                        <h6><?php echo strtoupper($tree_completa['secao']); ?></h6>
                         <ul class="filetree" id="browser">
-                            <li class="folder"><span class="folder">Nível 0</span>
+                            <li class="folder"><span class="folder">Nível Zero</span>
                                 <ul>
-                                    <li>
-                                        <a href="<?php echo BASE_PATH; ?>php/nivel-zero/<?php echo $materia->url ?>" class="">
-                                            <span class="file"><?php echo $materia->titulo ?>/span>
-                                        </a>
-                                    </li>
-
-                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/logica-de-programacao" class=""><span class="file">Lógica de Programação</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/antes-de-enfiar-o-pe-na-jaca" class=""><span class="file">Antes de enfiar o pé na jáca</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/intalando-o-ambiente" class=""><span class="file">Instalando o ambiente no estilo NEXT, NEXT, NEXT</span></a></li>
-                                    <li><a href="<?php echo BASE_PATH; ?>php/nivel-zero/estudos-de-logica-1-ao-5" class=""><span class="file">Estudos de lógica com respostas (1 ao 5)</span></a></li>
-                                    <li class="last"><a href="<?php echo BASE_PATH; ?>php/nivel-zero/estudos-de-logica-6-ao-10" class=""><span class="file">Estudos de lógica com respostas (6 ao 10)</span></a></li>
+                                    <?php foreach($tree_completa['mateiras'] as $materia): ?>
+                                        <li>
+                                            <a href="<?php echo BASE_PATH.$materia->url ?>" class="">
+                                                <span class="file">
+                                                    <?php echo $materia->titulo ?>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </li>
                          </ul>

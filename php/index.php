@@ -1,6 +1,5 @@
 <?php
 require "../furia/includes/bs.php";
-defined('BASE_PATH') or die;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -66,7 +65,11 @@ defined('BASE_PATH') or die;
 
             <div class="row">
                 <div class="span10 offset1">
-                    <?php include BASE_PATH.COMPONENTES_PATH."tree_completa.php"; ?>
+                    <?php
+                    $tree_completa['secao'] = "php";
+                    $tree_completa['nivel'] = "zero";
+                    include BASE_PATH.COMPONENTES_PATH."tree_completa.php";
+                    ?>
                 </div>
             </div>
 

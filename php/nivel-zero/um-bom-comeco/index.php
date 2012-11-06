@@ -1,9 +1,6 @@
 <?php
 require "../../../furia/includes/bs.php";
-defined('BASE_PATH') or die;
-
 $materia = new Materia(1);
-$materia->titulo = "Um bom começo";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

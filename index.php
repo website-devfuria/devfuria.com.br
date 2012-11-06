@@ -1,6 +1,5 @@
 <?php
 require "furia/includes/bs.php";
-defined('BASE_PATH') or die;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -16,14 +15,11 @@ defined('BASE_PATH') or die;
         <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
     </head>
     <body>
-
         <?php
         $nav_top['secao'] = null;
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
-
         <div class="container">
-
             <div class="row">
                 <div class="span12">
                     <header>
@@ -31,31 +27,31 @@ defined('BASE_PATH') or die;
                             <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
                         </p>
                     </header>
-
                     <div class="furia-lista-materias">
-
-
-
-                        
-                        <div class="materia-resumo lista-php">
-                            <a href="php/nivel-zero/um-bom-comeco">
-                                <em><?php echo $materia->titulo; ?></em>
-                                <span class="resumo">
-                                    <?php echo $materia->resumo; ?>
-                                </span>
-                                <span class="hidden-phone assinatura"><?php echo $materia->autor; ?>, atualizado em <?php echo $materia->dt_atualizacao; ?>, escrito em <?php echo $materia->dt_criacao; ?>.</span>
-                            </a>
-                        </div>
-
-
-
+                        <?php
+                        $where    = "";
+                        $materias = Materia::getObjects($where);
+                        ?>
+                        <?php foreach($materias as $materia): ?>
+                            <div class="materia-resumo lista-php">
+                                <a href="<?php echo BASE_PATH.$materia->url ?>">
+                                    <em><?php echo $materia->titulo; ?></em>
+                                    <span class="resumo">
+                                        <?php echo $materia->resumo; ?>
+                                    </span>
+                                    <span class="hidden-phone assinatura">
+                                        <?php echo $materia->autor; ?>,
+                                        atualizado em <?php echo $materia->dt_atualizacao; ?>,
+                                        escrito em <?php echo $materia->dt_criacao; ?>.
+                                    </span>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                     <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>
-
                 </div><!-- span12 -->
             </div><!-- row -->
         </div><!-- container -->
-
     <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
     </body>
 </html>

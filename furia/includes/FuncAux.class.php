@@ -32,7 +32,7 @@ class FuncAux {
      */
     static function dataConversor($formato_entrada, $formato_saida, $str_data){
 
-		date_default_timezone_set('America/Sao_Paulo');
+        date_default_timezone_set('America/Sao_Paulo');
         $date = DateTime::createFromFormat($formato_entrada, $str_data);
 
         if($date)

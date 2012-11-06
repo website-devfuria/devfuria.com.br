@@ -21,7 +21,8 @@ function descobre_caminho_relativo(){
             $qtd++;
         }
     }
-
+    
+    $qtd--;
     $qtd--;
     $res = str_pad("", $qtd*3, "../", STR_PAD_LEFT);
 
@@ -49,14 +50,15 @@ define('COMPONENTES_PATH', "furia/comp/");
  */
 define('DOMINIO', "devfuria.com.br");
 
+
+
 /**
  * Conexão com o DB
  */
-$PDO = new PDO(
-    "mysql:host=localhost;dbname=devfuria_main",
-    "devfuria_conexao",
-    "780lambda17",
-    array(
-        PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
-    )
-);
+require (BASE_PATH."furia/includes/Conn.class.php");
+
+
+/**
+ * Classe Materia
+ */
+require (BASE_PATH."furia/includes/Materia.class.php");
