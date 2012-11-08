@@ -1,5 +1,5 @@
 <?php
-$tree_completa['where']    = "WHERE secao = '{$materia->secao}' AND nivel = '{$materia->nivel}' ";
+$tree_completa['where']    = "WHERE secao = '{$tree_completa['secao']}' AND nivel = '{$tree_completa['nivel']}' ";
 $tree_completa['mateiras'] = Materia::getObjects($tree_completa['where']);
 ?>
                     <div class="furia-tree">

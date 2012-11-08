@@ -61,7 +61,7 @@ require "../furia/includes/bs.php";
                 <div class="span10 offset1">
                     <?php
                     $tree_completa['secao'] = "js";
-                    $tree_completa['nivel'] = "bascio";
+                    $tree_completa['nivel'] = "basico";
                     include BASE_PATH.COMPONENTES_PATH."tree_completa.php";
                     ?>
                 </div>
