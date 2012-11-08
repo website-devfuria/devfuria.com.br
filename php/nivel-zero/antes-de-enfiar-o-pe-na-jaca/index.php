@@ -77,25 +77,27 @@ $materia = new Materia(3);
 
                         <h2>Identar o código fonte</h2>
 
-                        <p>Identar o código significa dar espaço determinado no começo da linha do código com o intuito de torná-lo mais claro.
-                            Vejamos um código sem identação:</p>
+                        <p>Identar o código significa dar espaço determinado no começo da linha do código com o intuito de torná-lo mais claro.</p>
+
+                        <p>Vejamos um código sem identação:</p>
 
                         <div class="code menor">
                             <h6>PHP</h6>
                             <pre>&lt;?php
-// Arrrgh! Código sem identação.
 
 if($valor)
 echo “código sem identação é trabalho de amador”;
 else
 echo “não inventaram nada pior que código não identado”;
+
 ?&gt;</pre>
                         </div>
+
+                        <p>E agora, um código identado:</p>
 
                         <div class="code menor">
                             <h6>PHP</h6>
                             <pre>&lt;?php
-// Agora sim! Código com identação (ufa)
 
 if($valor)
     echo “código sem identação é trabalho de amador”;
@@ -113,7 +115,7 @@ else
 
                         <p>Outra consideraçõa importante é: <em>ao digitar uma linha, idente-a. Não deixe para arrumar o codigo no final</em>. Sua vista
                             deve ir se acostumando com o codigo identado, se deixar para o final você irá acostumar-se com código sem identação.
-                            Olhar código de terceiro, além de te ajudar com o estilo ajuda a intender da importância da identação.</p>
+                            <em>Olhe muito código de terceiro</em>, além de ajudar com o estilo, ajuda a entender da importância da identação.</p>
 
                         <h2>Nomeie as variáveis adequadamente</h2>
 

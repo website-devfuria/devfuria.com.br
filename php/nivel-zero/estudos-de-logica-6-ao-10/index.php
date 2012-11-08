@@ -1,6 +1,6 @@
 <?php
 require "../../../furia/includes/bs.php";
-$materia = new Materia(5);
+$materia = new Materia(6);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

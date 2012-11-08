@@ -34,6 +34,10 @@
 
 /* Matéria
 ===================================================*/
+article h2, article h3 {
+    margin-top: 100px;
+}
+
 article p {
     margin: 15px 0px;
     line-height: 18px;
@@ -76,7 +80,20 @@ article div.imagem p a {/* Link da fonte (das figuras) */
     color: #333;
 }
 
+/* Sitações
+===================================================*/
+blockquote {
+    margin: 0px 0px 0px 350px;
+    padding: 0 10px;
+    font-style: italic;
+    font-size: 12px;
+    color: #767676;
+}
 
+.blockquote-inline {
+    font-style: italic;
+    color: #767676;
+}
 
 /* Codes
 ===================================================*/

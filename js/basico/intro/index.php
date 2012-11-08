@@ -38,224 +38,128 @@ $materia = new Materia(7);
                     </header>
 
                     <article>
-                        <h1>Introdução ao curso</h1>
+<h1>JS, introdução !</h1>
 
-                        <p><em>PHP é uma linguagem de programação para uso geral</em>. Inicialmente, projetada por Rasmus Lerdorf na década de 1990, tinha
-                            como objetivo principal contar as visitas que eram realizadas em seu currículo on-line. Atualmente (2012) é utilizada,
-                            principalmente para construir aplicações web. Entende-se por aplicações web (às vezes abreviado para “webapp” ou
-                            simplesmente “app´s”) programas ou softwares escritos para rodarem na plataforma web, no modelo cliente/servidor.</p>
+<p><em>JavaScript(JS) não é brinquedo, é linguagem de programação séria</em>. Das mil definições de JS a, que mais me agrada é a de
+    Kevin e Cameron em seu livro Simple JavaScript(Só JavaScript) <span class="blockquote-inline">"JavaScript é uma linguagem de programação simples que
+permite alterar páginas web dinamicamente, enquanto estão sendo exibidas em um navegador."</span></p>
 
-                        <p>Um pequeno site pode se beneficiar de uma linguagem do lado do servidor. Um formulário de envio de contato , um portal
-                            de internet, um software gerenciador de email (o Gmail da Google ou o e-mail do Yahoo, por exemplo), um site do tipo
-                            E-comerce e muitos outros sistemas também utilizam-se de linguagem do lado do servidor. Nem toda aplicação web precisa
-                            ser destinada a Internet. Programas como a Intranet de uma empresa, softwares comerciais e de gestão nem sempre estão
-                            publicados na Internet, rodam apenas na rede interna da organização.</p>
+<p>Mas os autores alertam "Parece algo que você pode dominar em uma tarde, JS parece simples, contudo, em seus 10 anos de
+história até aqui [o livro é de 2007], as melhores práticas de JS pareciam mudar com as estações."</p>
 
-                        <p>Em apenas dois parágrafos surgiram termos essenciais e importantes:</p>
+<p>A definição do pessoal do Mozilla também me agrada <span class="blockquote-inline">"JavaScript (às vezes chamado apenas de JS) é uma linguagem de
+programação interpretada e orientada a objetos baseada em protótipos e em <em>first-class functions</em> (funções de primeira
+classe), mais conhecida como a linguagem de script da Web, mas utilizada em vários outros ambientes (em inglês) como
+node.js e Couchbase."</span></p>
 
-                        <ul>
-                            <li>Linguagem de programação do lado do servidor</li>
-                            <li>Modelo cliente/servidor</li>
-                            <li>Aplicações Web (webapp, app´s)</li>
-                            <li>Sistemas</li>
-                            <li>Software</li>
-                            <li>Programas</li>
-                        </ul>
+<p>É possível fazer mil peripécias com JS e suas páginas da web, a cada dia a lista de possibilidas vai aumentado. A maior
+utilização do JS é no sentido de melhoria de páginas web (HTML e CSS), o que chamamos de <em>aperfeiçoamento progressivo</em>,
+começa-se com o HTML, CSS e por fim o JS.</p>
 
-                        <p>Outros termos surgirão e com o tempo esses conceitos irão se tornam mais claros e amadurecidos. Por enquanto, é
-                            aconselhável a não perder muito tempo com eles. <em>Deixe seu celebro, aos poucos, se familiarizar com esse universo e
-                                foque sua atenção para a liguagem</em>.</p>
+<p><em>Validar um formulário</em> do lado do cliente evitando que os dados trafeguem até o servidor foi, por um bom tempo, a
+melhoria mais aplicada e popular. Quem nunca validou um formulário com JS?</p>
 
-                        <p>O termo "Linguagem de programação do lado do servidor" é uma forma genérica de se referir a linguagem de programação que
-                            está rodando "lá" no lado do servidor. No caso, estamos considerando a linguagem PHP, mas poderia ser qualquer outra,
-                            como por exemplo, Python, Pearl, Ruby, Java(JSP), CGI, ASP pura, ASP.net, etc...</p>
+<p>Um funcionalidade que ajudou em muito a popularização da linguagem é o <em>AJAX</em>. A junção do JS com XML sendo realizado por
+requisições diretamente do código de JS para o servidor é algo surpreendente.</p>
 
-                        <p><em>PHP é uma linguagem de programação interpretada</em>, isto é, seu código fonte não é compilado e executado, mas sim
-                            interpretado e executado. O código fonte produzido pelo programador é armazenado em um arquivo de texto simples chamado
-                            de script, normalmente salvo com a extensão “php”, exemplo: “formulario_clientes.php”. Esse scritpt é interpretado e
-                            executado pelo módulo PHP (no dia-a-dia os profissionais dizem apenas “executado”). Esse módulo roda sobre o servidor
-                            web denominado Apache. O banco de dados MySql, largamente utilizado com a linguagem PHP, é considerado o par perfeito,
-                            o casamento do ano, porém é possível utilizar outros banco de dados com a linguagem PHP, como por exemplo, Postgress,
-                            Oracle,  MongoDB, SqlLite, etc... A arquitetura é ilustrada pela figura 01, o cliente é o computador que consome
-                            serviços do servidor, normalmente um usuário atrás do navegador web, ele clica em um link com extensão .php, o  servidor
-                            Apache escuta a “requisição” e aciona o módulo PHP (mod_php). Este por sua vez interpreta (interpretador PHP) o código
-                            armazenado no servidor (o script) e, se for o caso, através da extensão “php5-mysql” aciona o banco de dados Mysql
-                            (Servidor MySQL) recuperando algum tipo de dado com valor agregado. Essa informação é embebida por código HTML e
-                            devolvida de volta ao navegador do cliente gerando, assim, a página HTML resultante.</p>
+<p>Outra aplicação do JS que empolga bastante são as chamadas <em>aplicalções web ricas</em>. O termo "rico" refere-se a interface,
+ou seja, a interafce é quem está mais rica, mais usual, mais fácil, mas agragadora. Há quem diga que elas são o futuro
+das aplicações web.</p>
 
-                        <div class="imagem">
-                            <img src="../../imagens/morimoto_apache1.png" alt="funcionamento do servidor web" />
-                            <p>Figura 01 - Esquema da arquitetura na qual, comumente, é executado os script em PHP.</p>
-                            <p>Fonte:
-                                <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html">Morimoto</a>
-                            </p>
-                        </div>
+<p>O nodejs promete levar o JS para o lado do servidor, isso já é uma realidade e será questão de tempo até encontrarmos
+bons frutos dessa iniciativa.</p>
 
-                        <p>Não ficou claro esse funcionamento? Tudo bem, é mais um assunto no qual é preciso familiarizar-se para depois
-                            compreendê-lo, dê tempo ao tempo.</p>
+<p><em>JavaScript nasceu em 1995, seu pai chama-se Brendan Eich</em>. Ná época a Netscape queria uma linguagem que roda-se no lado
+do cliente e incubiu Brendam de realizar este projeto. Ela chamava-se LiveScript e como a SUN Microsystems interessou-se
+pela linguagem e também começo a contribuir, conseguiu que ela vie-se a se chamar Javascript, foi uma lance de marketing
+com a linguagem Java. A única coisa que Javascript tem de comum com a linguagem Java é que ambas são orientada a objetos,
+mas até isso é implementado de forma diferente, bem diferente.</p>
 
-                        <p>Todo esse processo roda sobre um sistema operacional, podendo ser tanto o Linux como o Windows. Quando utilizamos o Linux,
-                            diz-se que a arquitetura é a <em>LAMP</em> (Linux, Apache, Mysql e PHP), quando utilizamos o Windows, diz-se que a arquitetura é
-                            <em>WAMP</em> (Windows, Apache, Mysql e PHP) e quando ela é híbrida, garantindo assim seu funcionamento tanto no windows como no
-                            Linux, diz-se XAMP, onde o “X” representa o sistema operacional.</p>
+<p><em>Javascript não é Java</em>.</p>
 
-                        <p>Todas as ferramentas apresentadas, com exceção do Microsoft Windows, são <em>Open Source</em>. Trata-se de um movimento mundial
-                            de centenas de profissionais colaboradores organizados em comunidades que se auto gerenciam, muitos bons frutos são
-                            produzidos por essas comunidades. Eles estão inundando o mundo com aplicações de código aberto, na qual é possível
-                            utilizar, alterar, estudar e contribuir com o código fonte. É importante salientar que a utilização do sistema
-                            operacional Linux trará, ao estudante, um benefício didático muito superior do que se fosse utilizado apenas o sistema
-                            operacional Windows. Não trata-se de mero preconceito contra os produtos da Microsoft. A principal razão é que o advento
-                            OpenSource propicia um estudo aprofundado do funcionamento do software, seja ele o sistema operacional, o servidor web
-                            ou qualquer outro software. Se o leitor não conhece o Linux, não se preocupe, <em>é possível sim aprender e desenvolver em
-                                PHP utilizando apenas o Windows, mas considere conhecer e entender o sistema Linux</em>.</p>
+<p>Obs: Há quem diga que Javascript nasceu antes de 1995, chamava-se Cmm, ou Mach, e blá blá blá. Mas isso é história.</p>
 
-                        <p>Para começar a programar em PHP é necessário ter o "ambiente" corretamente instalado e configurado, seja em LAMP ou
-                            em WAMP. A instalação pode ser uma tarefa simples e básica, se a configuração não for item de preocupação. Mas saber
-                            configurar o <em>ambiente de desenvolvimento</em> é obrigação do programador. Inicialmente, poderá ser utilizada a configuração
-                            básica (de fábrica), mas em breve será preciso dominar a configuração dos componentes.</p>
+<p>Após algum tempo, a empresa ECMA resolveu padronizar a linguagem e criou o padrão ECMAscript, na verdade este é o nome
+adotado para a linguagem. Porque temos um padrão? Porque cada navegador implementa a linguagem de forma diferente, em
+outras palavras, escrever um trecho de código Javascript válido que funciona no Firefox, por exemplo, pode não funcionar
+no IE (sempre o IE). Isso mesmo, Javascript sofre do mesmo problema que o HTML e o CSS, cada navegador implementa ao
+seu sabor. "Em teoria, a  padronização obriga as empresas fabricantes de navegadores a implementarem no mínimo aquele
+conjunto de funcionalidades"(Edgar Damiani) ...por isso o padrão ECMA é tão importante.</p>
 
-                        <p>Em contraponto ao ambiente de desenvolvimento, temos o ambiente na qual o software está rodando de verdade. Trata-se do
-                            <em>ambiente de produção</em> seu correto funcionamento é um fator crítico para a equipe de TI. Os scripts são produzidos e
-                            testados no ambiente de desenvolvimento e posteriormente publicados (enviados) para o ambiente de produção. Após "subir
-                            o ambiente é preciso instalar programas auxiliares como um bom editor de código (Netbeans, Eclipse, etc...), um
-                            controlador de versão (software que controla a versão do código fonte), um navegador de web compatível com o
-                            "webs standars" (Fire Fox, Google Chrome, etc...), uma interface (API) para o banco de dados, no caso do Mysql é
-                            utilizado o PhpMyAdmin, bibliotecas que auxiliam na depuração do código como o X-Debug, etc...</p>
+<p><em>JS é legal porque dá para começar a programar em segundos. A instalação do ambiente é estupidamente fácil: basta um
+navegador web e um editor de texto</em>. Só não vale o IE nem o bloco de notas.</p>
 
-                        <p>A rotina de desenvolvimento, no tocante a codificação, normalmente é esta: com o editor e navegador abertos escrevemos um
-                            trecho de código e vamos até o navegador e checamos o resultado acionando a tecla F5 (para atualizar a página no
-                            navegador). Se o código interage com a base de dados, então, mantemos a API do banco de dados aberta para podemos
-                            observar se o que foi alterado está acontecendo de fato no banco de dados. Assim, repetidamente, vamos tecendo o código
-                            fonte do sistema a ser construído.</p>
+<p>Eu utilizo o Firefox para testar meus scripts. O firefox tem um plugin que é um verdadeiro caniveto suíço, faz tudo e
+mais um pouco, trata-se do Firebug. uma ferramenta e tanto, no decorrer do curso vamos utilizá-lo com frequência. Outro
+plugin que não pode ficar de fora é o Web Developer, instale os dois plugins e vá descobrindo aos poucos suas
+funcionalidades, você irá se surpreender.</p>
 
-                        <p>A <em>sintaxe básica</em> pode ser conferida nos trechos de códigos seguintes:</p>
+<p>Quanto ao editor de código, este fica a sua escolha, eu uso e gosto muito do Netbeans.</p>
 
-                        <div class="code">
-                            <h6>PHP</h6>
-                            <pre>&lt;?php
+<h2>O primeiro script a gente nunca esqueçe</h2>
 
-# Comentários podem ser feitos em linha ou em bloco:
+<p>Crie um arquivo texto e salve com o nome
+"index.html". Agora insira nele o seguinte código:</p>
 
-// comentário em linha
+<div class="code">
+<h6>JS</h6>
+<pre>
+var foo = "Eu sou javascript";
+alert(foo);
+</pre>
+<p>Agora abra um navegador qualquer e, em seguida, abra o arquivo.</p>
+</div>
 
-# comentário em linha
+<h2>O segundo script a gente talvez esqueça</h2>
 
-/*
- * comentário em bloco 
- */
+<p class="imagem">
+    <img src="../imagens/pic_bulboff.gif" id="myimage" />
+    <span>Programar é uma atividade criativa !!! Clique e confira.</span>
+    <span>Fonte:<a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_lightbulb">w3schools</a></span>
+</p>
 
-/*
-comentário em bloco 
-comentário em bloco 
-comentário em bloco
-*/
+<div class="code">
+<h6>JS</h6>
+<pre>
+var element = document.getElementById('myimage');
+element.onclick = function() {
+    if (element.src.match("bulbon")) {
+        element.src="../imagens/pic_bulboff.gif";
+    } else {
+        element.src="../imagens/pic_bulbon.gif";
+    }
+};
+// Scritp da lâmpada !
+</pre>
+</div>
 
+<p>No curso, iremos estudar o JS em conjunto com suas irmãs (siamesas): HTML e CSS. O leitor deve ter certa familiaridade
+com essas tecnologias porque, JS sem elas é hardware sem software.</p>
 
+<p>Este curso foi, inicialmente, idealizado para iniciantes em programação. Existem um nível abaixo do nível básico: é o
+nível zero, estão nesse grupo as pessoas autodidatas que nunca frenquentaram um curso regular de informática. Se este
+for o seu caso, talvez lhe falte um pouco de lógica de programação, aconselho a fazer uma leitura atenta das 6 matérias
+do nível zero de PHP, afinal ĺógica é lógica em qualquer linguagem.</p>
 
-/*
- * O código PHP é escrito entre as tags "&lt;?php" e  "?&gt;".
- */
+<p>Atualmente (set/2012) JS disponta como o principal alicerce de um desenvolvedor front-end(client-side). Desenvolver do
+lado do cliente, desenvolvedor de interfaces, engenheiro front-end. Seja lá qual for o nome, o fato é que cada vez mais
+a atividade está se tornando uma profissão madura e respeitada (e bem remunerada).</p>
 
+<p>Coincidência ou não, encontrei impresso no livro de Kevin e Camerom uma das fortes razões que me levaram a realizar o
+projeto deste site...</p>
 
+<blockquote>
+  <p>"alguns autores respeitados no setor o ensinarão uma porção de soluções rápidas para problemas simples e mais nada,
+deixando-o apenas com corda suficiente para se enforcar quando você tentar resolver um problema de verdade. Então
+quando desesperadamente procurar um exemplo na Web que faça o que você precisa, provavelmente será incapaz de entender
+o código JS encontrado. Este livro é diferente..."</p>
+</blockquote>
 
-/*
- * O método echo exibe uma ou mais string.
- */
-echo "Eu sou uma string&lt;br /&gt;";
-echo "e serei exibida na tela do navegador.&lt;br /&gt;";
+<p>Este site também. O objetivo é "você ganhar confiança não somente para escrever seu próprio código JavaScript, mas também
+para entender código escrito por outras pessoas e até para identificar código antigo e prejudicial e poder alterá-lo com
+maestria".</p>
 
-
-
-/*
- * As variáveis começam com o símbolo de cifrão, como no exemplo, "$nome_da_variavel".
- */
-$resultado = 1 + 1;
-echo "Resultado da soma de 1 + 1 = $resultado";
-
-?&gt;</pre>
-                        </div>
-
-                        <p>O PHP obteve, nos anos seguinte à sua criação, a colaboração da dupla Andi Gutmans e Zeev Suraski  evoluíndo de forma
-                            surpreendente. Atualmente na versão 5 a linguagem conta com uma larga aceitação e utilização em centenas de projetos,
-                            dos mais simples aos mais complexos. A linguagem possue vasta documentação na Internet e na literatura. Alguns bons
-                            framework´s foram produzidos como por exemplo o <em>Zend</em>, o Cake, o Codeigniter o Symphony entre outros. A empresa Zend,
-                            responsável pelo framework de mesmo nome, lidera o mercado de certificações. Há também centenas de bibliotecas que
-                            auxiliam o desenvolvimento da aplicação, a mais notável é a Pear (não confundir com a linguagem Pearl).</p>
-
-                        <p>A empresa Netcraft, periodicamente, lança pesquisas que discriminam os servidores web mais utilizados, o Apache sempre 
-                            está na frente, em média 60%, veja figura 02.</p>
-
-                        <div class="imagem">
-                            <img src="../../imagens/apache_estatistica01.png" alt="funcionamento do servidor web" />
-                            <p>Figura 02 - Estatística de servidores web pelo mundo</p>
-                            <p>
-                                <a href="http://news.netcraft.com/archives/2012/09/10/september-2012-web-server-survey.html#more-6429">Fonte: Natcraft</a>
-                            </p> 
-                        </div>
-
-                        <p>Bom... um servidor apache pode rodar outas linguagens alem do PHP, mas veja este outro gráfico:</p>
-
-                        <div class="imagem">
-                            <img src="../../imagens/php_estatistica01.png" alt="funcionamento do servidor web" />
-                            <p>Figura 03 - Linguagens identificadas em quase 7 miloes de domínios.</p>
-                            <p>
-                                <a href="http://phpadvent.org/2010/usage-statistics-by-ilia-alshanetsky">Fonte: http://phpadvent.org</a>
-                            </p>
-                        </div>
-
-                        <p>"O gráfico acima mostra a repartição das 6 maiores linguagens identificáveis em 6.7 milhões de domínios onde a linguagem
-                            pôde ser determinada."</p>
-
-                        <p>PHP não é a melhor linguagem, nem a mais segura. Mas é uma excelente linguagem de programação web.</p>
-
-                        <p>Seja bem vindo ao mudo do PHP!</p>
-
-                        <h2>Leituras adicionais sugeridas</h2>
-
-                        <dl id="leitura_adcionais">
-                            <dt>Internet</dt>
-                            <dd>
-                                <em>Manual oficial do PHP</em>, está aqui não é sugerida, é obrigatória. (dica: digite apenas php.net que o
-                                navegador redireciona para a url completa).
-                                <a href="php.net" >http://www.php.net</a>
-                            </dd>
-
-                            <dd>
-                                <em>Trecho do manual</em> que introduz à programação em PHP.
-                                <a href="http://www.php.net/manual/pt_BR/getting-started.php" >http://www.php.net/manual/pt_BR/getting-started.php</a>
-                            </dd>
-
-                            <dd>
-                                <em>Artigo de Henrique Bastos</em> explicando as diferenças sobre linguagem interpretada e compiladas.
-                                <a href="http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada" >
-                                    http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada</a>
-                            </dd>
-
-                            <dd>
-                                <em>Artigo escrito em 2009</em> na língua inglesa por Dionysios e traduzido pelo portal www.dri.pt. Fala sobre a
-                                <em>evolução do PHP</em> e como a linguagem se adaptou a realidade das organizações.
-                                <a href="http://www.dri.pt/pt/noticias/noticias/linguagem_php_solucao_eficaz_para_empresas.html" >
-                                    http://www.dri.pt/pt/noticias/noticias/linguagem_php_solucao_eficaz_para_empresas.html</a>
-                            </dd>
-
-                            <dd>
-                                Notícia eletrônica falando sobre a <em>importância das aplicações web</em>
-                                <a href="http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/" >
-                                    http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/</a>
-                            </dd>
-
-                            <dt>Livros</dt>
-                            <dd>
-                                <em>Nenhum livro sobre PHP</em> é suficientemente básico, conciso e estruturado em uma sequência com começo, meio e fim. Se
-                                tratando de PHP para iniciantes, infelizmente não conheço nenhum livro na qual seja merecedor de uma indicação. Existe
-                                uma infinidades de livros bons e nos quais eu farei referência quando for oportuno, mas a abrangência é de intermediário
-                                para avançado. Aliás, essa foi uma das razões que me motivaram a realizar este projeto O ensino da linguagem de
-                                programação,  de qualquer linguagem, é muito difuso, disperso, pulverizado e pouco conciso.
-                            </dd>
-                        </dl>
-
-
-
+<p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>
 
                         <p class="fim">Fim da matéria</p>
                     </article>
