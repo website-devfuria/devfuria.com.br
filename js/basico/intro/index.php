@@ -1,6 +1,6 @@
 <?php
 require "../../../furia/includes/bs.php";
-$materia = new Materia(1);
+$materia = new Materia(7);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -18,7 +18,7 @@ $materia = new Materia(1);
     <body>
 
         <?php
-        $nav_top['secao'] = "php";
+        $nav_top['secao'] = "js";
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
 
@@ -29,7 +29,7 @@ $materia = new Materia(1);
                     <header>
                         <ul class="breadcrumb">
                             <li><a href="<?php echo ROOT_PATH; ?>">Home</a> <span class="divider">/</span></li>
-                            <li><a href="<?php echo BASE_PATH; ?>php/">PHP</a> <span class="divider">/</span></li>
+                            <li><a href="<?php echo BASE_PATH; ?>js/">JS</a> <span class="divider">/</span></li>
                             <li class="active"><?php echo $materia->titulo; ?></li>
                         </ul>
                         <p>
@@ -38,7 +38,7 @@ $materia = new Materia(1);
                     </header>
 
                     <article>
-                        <h1>Um bom começo</h1>
+                        <h1>Introdução ao curso</h1>
 
                         <p><em>PHP é uma linguagem de programação para uso geral</em>. Inicialmente, projetada por Rasmus Lerdorf na década de 1990, tinha
                             como objetivo principal contar as visitas que eram realizadas em seu currículo on-line. Atualmente (2012) é utilizada,
