@@ -62,7 +62,10 @@ article p a:link, article p a:visited {
 
 /* Imagens
 ===================================================*/
-article div img {border: none;}
+article div img {
+    border: none;
+    margin: 15px 0px;
+}
 article div.imagem {/* Parágrafo contendo imagem */
     text-indent: 0px;
     text-align: center;
@@ -99,6 +102,7 @@ blockquote {
 ===================================================*/
 article div.code {
     color: #000;
+    margin: 15px 0px;
 }
 
 article div.code h6 {
