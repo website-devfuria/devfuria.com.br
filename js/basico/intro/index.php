@@ -9,7 +9,8 @@ $materia = new Materia(7);
         <?php
         $head_meta = array(
             "description" => $materia->resumo,
-            "keywords" => "",
+            "keywords" =>  KEYWORDS_PAD . KEYWORDS_JS . "introdução ao javascript; definição de javascript; ajax; ".
+                           "firebug; front-end; desenvolvimento fornt-end; "
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>
