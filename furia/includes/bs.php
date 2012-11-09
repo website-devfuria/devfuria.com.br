@@ -22,12 +22,12 @@ function descobre_caminho_relativo(){
         }
     }
     
-    $qtd--;
-    $qtd--;
     $res = str_pad("", $qtd*3, "../", STR_PAD_LEFT);
 
     return $res;
 }
+
+
 
 
 /**
@@ -70,11 +70,11 @@ define('KEYWORDS_JS', "javascript básico; javascript fácil; javascript início
                       "javascript iniciando; javascript iniciante; começando com javascript; começando no javascript; ".
                       "javascript descomplicado; aprendendo javascript; matéria sobre javascript; aula sobre javascript; ");
 
-
 /**
  * Conexão com o DB
  */
 require (BASE_PATH."furia/includes/Conn.class.php");
+
 
 
 /**

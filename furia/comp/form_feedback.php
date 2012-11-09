@@ -17,7 +17,7 @@ $_SESSION['id'] = uniqid("", true);
         </p>
         <p>
             <input type="hidden" value="<?php echo $_SERVER['REQUEST_URI'] ?>" name="url" />
-            <input type="hidden" value="<?php echo $id?>" name="id" />
+            <input type="hidden" value="<?php echo $_SESSION['id']?>" name="id" />
             <input type="submit" value="Enviar" class="btn btn-primary"/>
         </p>
     </form>
