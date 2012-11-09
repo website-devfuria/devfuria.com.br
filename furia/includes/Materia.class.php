@@ -45,11 +45,13 @@ class Materia {
      * @param type $where
      * @return type
      */
-    static function getObjects($where=null) {
+    static function getObjects($where=null, $order=null) {
         
         $materias = array();
         
-        $sql  = "SELECT * FROM materias $where ORDER BY ordem ASC";
+        $orderby = $order ? $order : "ORDER BY ordem ASC";
+        
+        $sql  = "SELECT * FROM materias $where $orderby";
         
         $stmt = Conn::getConexao()->query($sql);
         while( $materia = $stmt->fetch(PDO::FETCH_OBJ)  ):
