@@ -1,3 +1,4 @@
+<?php defined('DF') or die;?>
 <div id="fb-root"></div>
 <div class="fb-like" data-send="false" data-width="300" data-show-faces="true" data-font="verdana"></div>
 <style type="text/css">

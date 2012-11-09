@@ -28,11 +28,6 @@ $materia = new Materia(3);
             <div class="row">
                 <div class="span12">
                     <header>
-                        <ul class="breadcrumb">
-                            <li><a href="<?php echo ROOT_PATH; ?>">Home</a> <span class="divider">/</span></li>
-                            <li><a href="<?php echo BASE_PATH; ?>php/">PHP</a> <span class="divider">/</span></li>
-                            <li class="active"><?php echo $materia->titulo; ?></li>
-                        </ul>
                         <p>
                             <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
                         </p>

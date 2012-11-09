@@ -1,4 +1,5 @@
 <?php
+defined('DF') or die;
 
 /**
  * Seções para nevegação
@@ -8,7 +9,7 @@ $secoes = array(
     "js"       => "Javascript",
     "html-css" => "HTML & CSS",
     "mysql"    => "MySql",
-    "analise"  => "Análise",
+    "engsoft"  => "Eng. Software",
 );
 
 ?>
@@ -39,7 +40,7 @@ $secoes = array(
                 <ul class="dropdown-menu">
                     <li><a href="<?php echo BASE_PATH; ?>mapa-do-site">mapa do site</a></li>
                     <li><a href="https://github.com/flaviomicheletti/devfuria">forke me on github</a></li>
-                </ul>
+                </ul>           
             </div>
 
         </div>

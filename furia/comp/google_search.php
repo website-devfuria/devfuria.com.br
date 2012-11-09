@@ -1,4 +1,12 @@
-<style type="text/css">table.gsc-search-box td {vertical-align: top;}</style>
+<?php defined('DF') or die;?>
+<style type="text/css">
+    table.gsc-search-box td {vertical-align: top;}
+    .cse form.gsc-search-box, form.gsc-search-box {
+        margin: 0px;
+        margin-bottom: -10px;
+        padding: 0;
+    }   
+</style>
 <gcse:search></gcse:search>
 <script type="text/javascript">
     (function() {

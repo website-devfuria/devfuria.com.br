@@ -1,4 +1,11 @@
 <?php
+/**
+ * HOME
+ */
+
+/**
+ * includes
+ */
 require "furia/includes/bs.php";
 ?>
 <!DOCTYPE html>
@@ -24,9 +31,7 @@ require "furia/includes/bs.php";
             <div class="row">
                 <div class="span12">
                     <header>
-                        <p>
                             <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
-                        </p>
                     </header>
                     <div class="furia-lista-materias">
                         <?php

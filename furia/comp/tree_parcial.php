@@ -1,4 +1,5 @@
 <?php
+defined('DF') or die;
 $where    = "WHERE secao = '{$materia->secao}' AND nivel = '{$materia->nivel}' ";
 $materias = Materia::getObjects($where);
 ?>

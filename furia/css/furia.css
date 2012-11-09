@@ -7,10 +7,11 @@
 
 @media (min-width: 980px) {
     body {
-        padding-top: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
-    .breadcrumb{
-        margin-top: 30px;
+    .breadcrumb {
+        margin: 15px 0px;
     }
     .container {
         padding: 5px 20px;
@@ -86,7 +87,7 @@ article div.imagem p a {/* Link da fonte (das figuras) */
 /* Sitações
 ===================================================*/
 blockquote {
-    margin: 0px 0px 0px 350px;
+    margin: 0px 0px 0px 40%;
     padding: 0 10px;
     font-style: italic;
     font-size: 12px;
@@ -164,12 +165,6 @@ article dd a:hover {
 
 
 
-
-
-
-
-
-
 /* Tree view
 ===================================================*/
 div.furia-tree {
@@ -226,13 +221,9 @@ div.furia-tree #treecontrol a:hover{
     background-color: #FFF;
     color: red;
 }
-
-
-
 /*file: jquery,treeview.css */
 /*line 70*/.filetree li { padding: 0px 0px 10px 16px; }
 /*line 74*/.filetree span.file { background-position: 0px 6px }
-
 
 
 
@@ -262,7 +253,7 @@ div.furia-lista-materias div.materia-resumo {
     border: 1px solid #F5F5F5;
     box-shadow: 2px 2px 2px #767676;
     cursor: pointer;
-    margin: 30px 0;
+    margin-bottom: 30px;
     padding: 0px 0px;
 }
 div.materia-resumo.lista-php {

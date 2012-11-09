@@ -26,10 +26,6 @@ require "../furia/includes/bs.php";
             <div class="row">
                 <div class="span12">
                     <header>
-                        <ul class="breadcrumb">
-                            <li><a href="<?php echo ROOT_PATH; ?>">Home</a> <span class="divider">/</span></li>
-                            <li class="active">JS</li>
-                        </ul>
                         <p>
                             <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
                         </p>

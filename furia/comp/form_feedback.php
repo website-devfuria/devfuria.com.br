@@ -1,9 +1,7 @@
 <?php
-$id = uniqid("", true);
-$_SESSION['id'] = $id;
-
+defined('DF') or die;
+$_SESSION['id'] = uniqid("", true);
 ?>
-
 <div class="furia-feedback ">
     <form  id="form-feedback" action="#">
         <h6>Feedback</h6>

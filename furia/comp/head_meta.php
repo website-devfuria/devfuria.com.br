@@ -1,3 +1,4 @@
+<?php defined('DF') or die;?>
 <meta charset="utf-8" />
 <meta name="description" content="<?php echo $head_meta['description'] ?>"/>
 <meta name="keywords" content="<?php echo $head_meta['keywords'] ?>"/>

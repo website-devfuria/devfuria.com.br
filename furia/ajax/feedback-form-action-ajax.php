@@ -12,7 +12,7 @@
  * Session
  */
 session_start();
-
+isset($_SESSION['id']) or die;
 
 
 /**
@@ -26,7 +26,7 @@ $_POST['url']      = isset($_POST['url'])      ? $_POST['url']      : null ;
 
 
 /**
- * Validando o identificador
+ * Validações
  */
 # checa o id
 if( $_SESSION['id'] != $_POST['id']  ){
