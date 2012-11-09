@@ -341,7 +341,7 @@ mostrar valor_reajuste, salario_reajustado
 <em>FIM</em></pre>
                         </div>
 
-                        <p class="fim">Fim da matéria</p>
+                        <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
                     </article>
 
                     <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>

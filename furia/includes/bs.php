@@ -29,6 +29,7 @@ function descobre_caminho_relativo(){
         }
     }
     
+    $qtd-=2;
     $res = str_pad("", $qtd*3, "../", STR_PAD_LEFT);
 
     return $res;
@@ -88,3 +89,8 @@ require (BASE_PATH."furia/includes/Conn.class.php");
  * Classe Materia
  */
 require (BASE_PATH."furia/includes/Materia.class.php");
+
+/**
+ * Classes diversas
+ */
+require (BASE_PATH."furia/includes/FuncAux.class.php");

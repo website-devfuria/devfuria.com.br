@@ -248,11 +248,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                                 programação,  de qualquer linguagem, é muito difuso, disperso, pulverizado e pouco conciso.
                             </dd>
                         </dl>
-
-
-
-
-                        <p class="fim">Fim da matéria</p>
+                        <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
                     </article>
 
                     <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>

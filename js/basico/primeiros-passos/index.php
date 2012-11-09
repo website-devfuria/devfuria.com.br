@@ -33,8 +33,8 @@ $materia = new Materia(8);
                     </header>
 
                     <article>
-                        <h1>Primeiros passos</h1>
-
+                        <h1>Primeiros passos</h1>                      
+                        
                         <p>Na matéria de introdução eu comentei que vamos aprender JS junto com HTML e CSS. Na verdade vamos aprender as coisas
                             separadamente, porém vamos trabalhar com os três elementos como se fosse ingredientes obrigatórios em cada receita.</p>
 
@@ -140,7 +140,7 @@ alert(foor);
 
                         <h2>Típos de variáveis</h2>
 
-                        <p class="fim">Fim da matéria</p>
+                        <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
                     </article>
 
                     <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>

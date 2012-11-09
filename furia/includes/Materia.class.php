@@ -34,8 +34,8 @@ class Materia {
         $this->nivel          = $obj->nivel;
         $this->secao          = $obj->secao;
         $this->autor          = $obj->autor;
-        $this->dt_atualizacao = $obj->dt_atualizacao;
-        $this->dt_criacao     = $obj->dt_criacao;
+        $this->dt_atualizacao = FuncAux::data_converte_para_visualizar($obj->dt_atualizacao);
+        $this->dt_criacao     = FuncAux::data_converte_para_visualizar($obj->dt_criacao);
         $this->ordem          = $obj->ordem;
     }
     

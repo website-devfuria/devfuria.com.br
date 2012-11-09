@@ -322,7 +322,7 @@ elseif(  (condition3)&&(condition4)  ){
 
                         <p>... e seja feliz!</p>
 
-                        <p class="fim">Fim da matéria</p>
+                        <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
                     </article>
 
                     <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>

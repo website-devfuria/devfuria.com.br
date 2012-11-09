@@ -211,7 +211,8 @@ var element = document.getElementById('myimage');
                                 
                         <p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>
 
-                        <p class="fim">Fim da matéria</p>
+                        <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
+
                     </article>
 
                     <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>
