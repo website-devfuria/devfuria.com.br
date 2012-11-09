@@ -9,7 +9,8 @@ $materia = new Materia(2);
         <?php
         $head_meta = array(
             "description" => $materia->resumo,
-            "keywords" => "",
+            "keywords" =>  KEYWORDS_PAD . KEYWORDS_PHP . "lógica de programação; php e lógica de programação; ".
+                           "pseudocódigo; dfd; diagrama de fluxo de dados; teste de mesa; algoritmos; ",
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>

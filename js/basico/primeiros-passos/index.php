@@ -9,7 +9,7 @@ $materia = new Materia(8);
         <?php
         $head_meta = array(
             "description" => $materia->resumo,
-            "keywords" => "",
+            "keywords" =>  KEYWORDS_PAD . KEYWORDS_JS . "marcação semântica; exemplos de javascript; "
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>
@@ -38,49 +38,49 @@ $materia = new Materia(8);
                     </header>
 
                     <article>
-<h1>Primeiros passos</h1>
+                        <h1>Primeiros passos</h1>
 
-<p>Na matéria de introdução eu comentei que vamos aprender JS junto com HTML e CSS. Na verdade vamos aprender as coisas
-separadamente, porém vamos trabalhar com os três elementos como se fosse ingredientes obrigatórios em cada receita.</p>
+                        <p>Na matéria de introdução eu comentei que vamos aprender JS junto com HTML e CSS. Na verdade vamos aprender as coisas
+                            separadamente, porém vamos trabalhar com os três elementos como se fosse ingredientes obrigatórios em cada receita.</p>
 
-<p>Neste ponto é importante entendermos a obrigação de cada um desses componentes. O <em>JS será encarregado do comportamento</em>
-da página, da interação com o usuário, dos enventos possíveis (click, duplo click, teclado, movimentação do mouse, e
-etc...), de tudo aquilo que pode beneficinar a interface do sistema.</p>
+                        <p>Neste ponto é importante entendermos a obrigação de cada um desses componentes. O <em>JS será encarregado do comportamento</em>
+                            da página, da interação com o usuário, dos enventos possíveis (click, duplo click, teclado, movimentação do mouse, e
+                            etc...), de tudo aquilo que pode beneficinar a interface do sistema.</p>
 
-<p>O CSS se encarrega-rá da apresentação da página. Pensou em estilizar, formatar, desenhar, cuidar da aparência, layout,
-cores, fontes, bordas, espaçamento, disposição dos elementos ...pensou em CSS. Ele cuidará da embalagem, do roupagem
-que sua página web irá vestir. Estilizar é com o CSS.</p>
+                        <p>O CSS se encarrega-rá da apresentação da página. Pensou em estilizar, formatar, desenhar, cuidar da aparência, layout,
+                            cores, fontes, bordas, espaçamento, disposição dos elementos ...pensou em CSS. Ele cuidará da embalagem, do roupagem
+                            que sua página web irá vestir. Estilizar é com o CSS.</p>
 
-<p>Sobrou para o HTML deixar claro qual é o conteúdo, em outras palavras, "tudo que é necessário para ler e entender o
-conteúdo de ua página web. [] O código HTML deve fazer o máximo para transmintir o significado (ou semântica) do
-conteúdo." O HTML descreve o conteúdo da página, a isso chamamos de <em>marcação semântica</em>.</p>
+                        <p>Sobrou para o HTML deixar claro qual é o conteúdo, em outras palavras, "tudo que é necessário para ler e entender o
+                            conteúdo de ua página web. [] O código HTML deve fazer o máximo para transmintir o significado (ou semântica) do
+                            conteúdo." O HTML descreve o conteúdo da página, a isso chamamos de <em>marcação semântica</em>.</p>
 
-<p>OK. O que acabamos de fazer foi separar as obrigações. Com isso, acabamos de praticar técnica chamada de <em>programação em
-camadas</em>. No caso, temos 3 camadas: conteúdo(HTML), apresentação(CSS) e comportamento(JS).</p>
+                        <p>OK. O que acabamos de fazer foi separar as obrigações. Com isso, acabamos de praticar técnica chamada de <em>programação em
+                                camadas</em>. No caso, temos 3 camadas: conteúdo(HTML), apresentação(CSS) e comportamento(JS).</p>
 
-<p>O HTML será encarregado da marcação do
-conteúdo</p>
+                        <p>O HTML será encarregado da marcação do
+                            conteúdo</p>
 
-<h2>Aonde colocar o java script ?</h2>
+                        <h2>Aonde colocar o Javascript ?</h2>
 
-<p>O ideal é escrevermos o código JS em um arquivo texto com extensão .js e incluí-lo no arquivo HTML dessa forma:</p>
+                        <p>O ideal é escrevermos o código JS em um arquivo texto com extensão .js e incluí-lo no arquivo HTML dessa forma:</p>
 
-<div class="code menor">
-<h6>codigo.js</h6>
-<pre>
+                        <div class="code menor">
+                            <h6>codigo.js</h6>
+                            <pre>
 var foo = "Eu sou javascript";
 alert(foor);
 
 // Este aqui é o arquivo separado
 
-</pre>
-</div>
+                            </pre>
+                        </div>
 
-<p>O JS do arquivo "codigo.js" fica dentro do arquivo HTML, confira no trecho seguinte:</p>
+                        <p>O JS do arquivo "codigo.js" fica dentro do arquivo HTML, confira no trecho seguinte:</p>
 
-<div class="code menor">
-<h6>index.html</h6>
-<pre>
+                        <div class="code menor">
+                            <h6>index.html</h6>
+                            <pre>
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
@@ -93,14 +93,14 @@ alert(foor);
         ...
     &lt;/body&gt;
 &lt;/html&gt;
-</pre>
-</div>
+                            </pre>
+                        </div>
 
-<p>No código seguinte temos a mesmíssima coisa, só que em um arquivo html 5. O palavrão 'DOCTYPE' virou duas palavrinhas:</p>
+                        <p>No código seguinte temos a mesmíssima coisa, só que em um arquivo html 5. O palavrão 'DOCTYPE' virou duas palavrinhas:</p>
 
-<div class="code menor">
-<h6>index.html</h6>
-<pre>
+                        <div class="code menor">
+                            <h6>index.html</h6>
+                            <pre>
 <em>&lt;!DOCTYPE html&gt;</em>
 &lt;html&gt;
     &lt;head&gt;
@@ -112,21 +112,21 @@ alert(foor);
         ...
     &lt;/body&gt;
 &lt;/html&gt;
-</pre>
-</div>
+                            </pre>
+                        </div>
 
-<p>As abordagem acima sofre de um pequeno inconveniente: a ordem em que o arquivo é lido e executado pelo browser. Os
-navegadores executam arquivos JS assim que o código é baixado e depois continua a reenderizar o HTML restante. Isso
-significa que se o seu código depender do HTML, e acredite vai depender, ele não conseguirá executar corretamente.</p>
+                        <p>As abordagem acima sofre de um pequeno inconveniente: a ordem em que o arquivo é lido e executado pelo browser. Os
+                            navegadores executam arquivos JS assim que o código é baixado e depois continua a reenderizar o HTML restante. Isso
+                            significa que se o seu código depender do HTML, e acredite vai depender, ele não conseguirá executar corretamente.</p>
 
-<p>Atualmente há algumas saídas para este problema, a abordagem mais utilizada é a boa e velha dica: <em>Coloque o script no
-final do HTML !!!</em>, pronto resolvido. Isso garante que seu JS será executado após todo o HTML ter sido carregado e de
-quebra sua página obtem um ganho de performance. Em outra matéria, falarei mais sobre essa questão. Por hora vejamos
-como ficou nosso HTML:</p>
+                        <p>Atualmente há algumas saídas para este problema, a abordagem mais utilizada é a boa e velha dica: <em>Coloque o script no
+                                final do HTML !!!</em>, pronto resolvido. Isso garante que seu JS será executado após todo o HTML ter sido carregado e de
+                            quebra sua página obtem um ganho de performance. Em outra matéria, falarei mais sobre essa questão. Por hora vejamos
+                            como ficou nosso HTML:</p>
 
-<div class="code menor">
-<h6>index.html</h6>
-<pre>
+                        <div class="code menor">
+                            <h6>index.html</h6>
+                            <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -138,12 +138,12 @@ como ficou nosso HTML:</p>
     &lt;script type="text/javascript" src="codigo.js"&gt;&lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</pre>
-</div>
+                            </pre>
+                        </div>
 
-<p>Colocamos o código JS no final do HTML.</p>
+                        <p>Colocamos o código JS no final do HTML.</p>
 
-<h2>Típos de variáveis</h2>
+                        <h2>Típos de variáveis</h2>
 
                         <p class="fim">Fim da matéria</p>
                     </article>

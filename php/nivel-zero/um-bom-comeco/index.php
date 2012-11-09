@@ -9,7 +9,7 @@ $materia = new Materia(1);
         <?php
         $head_meta = array(
             "description" => $materia->resumo,
-            "keywords" => "",
+            "keywords" =>  KEYWORDS_PAD . KEYWORDS_PHP . "o que é php; definição de php;   ",
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>
@@ -197,7 +197,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
 
                         <div class="imagem">
                             <img src="../../imagens/php_estatistica01.png" alt="funcionamento do servidor web" />
-                            <p>Figura 03 - Linguagens identificadas em quase 7 miloes de domínios.</p>
+                            <p>Figura 03 - Linguagens identificadas em quase 7 milhões de domínios.</p>
                             <p>
                                 <a href="http://phpadvent.org/2010/usage-statistics-by-ilia-alshanetsky">Fonte: http://phpadvent.org</a>
                             </p>

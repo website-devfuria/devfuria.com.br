@@ -9,7 +9,8 @@ $materia = new Materia(4);
         <?php
         $head_meta = array(
             "description" => $materia->resumo,
-            "keywords" => "",
+            "keywords" =>  KEYWORDS_PAD . KEYWORDS_PHP . "servidor web; configurações; apache; mysql; x-debug; phpmysql".
+                           "git; svn; firefox; firebug; "
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>

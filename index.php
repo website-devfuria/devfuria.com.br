@@ -8,7 +8,8 @@ require "furia/includes/bs.php";
         <?php
         $head_meta = array(
             "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
-            "keywords" => "webapp; app's; desenvolvimento, desenvolvimento web, website, webstandards, programação, php, php fácil, php iniciando, php iniciante, começando com php, php descomplicado, javascript, js, html, html5, css",
+            "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC
+
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>
@@ -29,11 +30,12 @@ require "furia/includes/bs.php";
                     </header>
                     <div class="furia-lista-materias">
                         <?php
+                        $order    = "ORDER BY secao, ordem";
                         $where    = "";
-                        $materias = Materia::getObjects($where);
+                        $materias = Materia::getObjects($where, $order);
                         ?>
                         <?php foreach($materias as $materia): ?>
-                            <div class="materia-resumo lista-php">
+                            <div class="materia-resumo lista-<?php echo $materia->secao; ?>">
                                 <a href="<?php echo BASE_PATH.$materia->url ?>">
                                     <em><?php echo $materia->titulo; ?></em>
                                     <span class="resumo">
