@@ -10,17 +10,19 @@ var furia = {
             event.preventDefault();
 
             var dataToSend = $(this).serialize();
+            console.log();
             $.ajax({
                 type: "POST",
-                url: "../furia/includes/feedback-form-action-ajax.php",
+                dataType: 'json',                
+                url: DF.base_path + "furia/ajax/feedback-form-action-ajax.php",
                 data: dataToSend,
-                success: function(data){
-                    if( data ){
+                success: function(erro){
+                    if( ! erro ){
                         $('#form-feedback').toggle('slow', function(){
                             $('#form-feedback').html('<h1>Obrigado!</h1><p>Feedback enviado com sucesso!</p>').show(600);
                         });
                     } else {
-                        alert(data.msg);
+                        alert(erro);
                         event.preventDefault();
                     }
                 },
@@ -37,7 +39,6 @@ var furia = {
     },
     g: function(){
       $("#___gcse_0").addClass("hidden-phone");
-      console.log('foi');
     },
     inicializar_tree_view: function(){
         $("#browser").treeview({

@@ -3,6 +3,13 @@
  * Arquivo Bootstrap
  */
 
+
+/**
+ * 
+ */
+session_start();
+
+
 /**
  * Descobre o caminho relativo(da raiz) para podermos referenciar arquivos
  * php, css, js, imgs, e etc...
