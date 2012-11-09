@@ -31,6 +31,12 @@ function descobre_caminho_relativo(){
 
 
 /**
+ * 
+ */
+define('DF', true);
+
+
+/**
  * Caminho relativo da raiz do sistema
  */
 define('BASE_PATH', descobre_caminho_relativo());
