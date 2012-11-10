@@ -1,5 +1,5 @@
 <?php defined('DF') or die; ?>
-        <div class="container-fluid rodape">
+        <div class="container-fluid rodape hidden-phone">
             <div class="row-fluid">
                 <div class="span4">
                     a
