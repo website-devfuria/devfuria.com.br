@@ -47,7 +47,7 @@ require "../furia/includes/bs.php";
                     <dl>
                         <dt>Nível zero</dt>
                         <?php foreach($materias as $materia): ?>
-                            <dd><a href="<?php echo $materia->url?>"><?php echo $materia->titulo?></a></dd>
+                            <dd><a href="<?php echo BASE_PATH.$materia->url?>"><?php echo $materia->titulo?></a></dd>
                         <?php endforeach; ?>
                     </dl>
                 </div>
@@ -61,7 +61,7 @@ require "../furia/includes/bs.php";
                     <dl>
                         <dt>Nível básico</dt>
                         <?php foreach($materias as $materia): ?>
-                            <dd><a href="<?php echo $materia->url?>"><?php echo $materia->titulo?></a></dd>
+                            <dd><a href="<?php echo BASE_PATH.$materia->url?>"><?php echo $materia->titulo?></a></dd>
                         <?php endforeach; ?>
                     </dl>
                 </div>
