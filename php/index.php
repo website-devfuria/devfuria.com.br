@@ -21,7 +21,7 @@ require "../furia/includes/bs.php";
         ?>
         <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
     </head>
-    <body>
+    <body class="respiro-em-baixo">
 
         <?php
         $nav_top['secao'] = "php";
