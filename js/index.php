@@ -12,9 +12,9 @@ require "../furia/includes/bs.php";
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>
-        <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
+        <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>       
     </head>
-    <body>
+    <body class="respiro-em-baixo">
 
         <?php
         $nav_top['secao'] = "js";

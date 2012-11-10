@@ -162,6 +162,9 @@ alert(foor);
                 </div>
             </div>
         </div>
+        
+        <?php include BASE_PATH.COMPONENTES_PATH."rodape.php"; ?>
+        
     <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
     </body>
 </html>

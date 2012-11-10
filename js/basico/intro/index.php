@@ -220,7 +220,7 @@ var element = document.getElementById('myimage');
                 </div><!-- span12  -->
             </div><!-- row  -->
         </div><!-- container -->
-
+        
         <div class="container sem_borda">
             <div class="row">
                 <div class="span10 offset1">
@@ -234,6 +234,9 @@ var element = document.getElementById('myimage');
                 </div>
             </div>
         </div>
+        
+        <?php include BASE_PATH.COMPONENTES_PATH."rodape.php"; ?>
+        
         <script type="text/javascript">
         var element = document.getElementById('myimage');
         element.onclick = function() {

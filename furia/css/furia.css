@@ -4,12 +4,14 @@
     clear: both;
 }
 
-
+  
 @media (min-width: 980px) {
     body {
         padding-top: 60px;
-        padding-bottom: 60px;
     }
+    body.respiro-em-baixo {
+        padding-bottom: 60px;
+    }    
     .breadcrumb {
         margin: 15px 0px;
     }
@@ -176,10 +178,11 @@ div.furia-tree {
     box-shadow: 1px 1px 3px #767676;
     border: 1px solid #F5F5F5;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
 div.furia-tree.parcial {
     margin: auto;
-    margin-top: 40px
+    margin-top: 40px;
 }
 div.furia-tree h5 {
     margin: 0px 0px 10px 0px;
@@ -299,4 +302,10 @@ div.materia-resumo span.assinatura {
     font-size: 10px;
     margin: 10px 0px;
     padding: 3px 0px;
+}
+
+div.rodape {
+    background-image: url("../imagens/dblue071.jpg");
+    box-shadow: 0 10px 10px 10px #000000;
+    height: 600px;
 }
