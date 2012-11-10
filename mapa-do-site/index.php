@@ -30,12 +30,40 @@ require "../furia/includes/bs.php";
                     </header>
                 </div><!-- span12 -->
             </div><!-- row -->
+
+            <div class="row12">
+                <div>
+                    <h1>MAPA DO SITE</h1>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="span6">
-1                    
+                    <h3>PHP</h3>
+                    <?php
+                    $where    = "WHERE secao = 'php' AND nivel = 'zero' ";
+                    $materias = Materia::getObjects($where);
+                    ?>
+                    <dl>
+                        <dt>Nível zero</dt>
+                        <?php foreach($materias as $materia): ?>
+                            <dd><a href="<?php echo $materia->url?>"><?php echo $materia->titulo?></a></dd>
+                        <?php endforeach; ?>
+                    </dl>
                 </div>
+            <div class="row">
                 <div class="span6">
-2                    
+                    <h3>Javascript</h3>
+                    <?php
+                    $where    = "WHERE secao = 'js' AND nivel = 'basico' ";
+                    $materias = Materia::getObjects($where);
+                    ?>
+                    <dl>
+                        <dt>Nível básico</dt>
+                        <?php foreach($materias as $materia): ?>
+                            <dd><a href="<?php echo $materia->url?>"><?php echo $materia->titulo?></a></dd>
+                        <?php endforeach; ?>
+                    </dl>
                 </div>
             </div>
             

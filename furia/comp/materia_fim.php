@@ -1,3 +1,4 @@
+<?php defined('DF') or die; ?>
                         <p class="fim">
                             <span class="label label-info fim-e">
                                 <?php echo $materia->autor; ?>,
