@@ -16,11 +16,11 @@ require "furia/includes/bs.php";
         $head_meta = array(
             "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
             "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC
-
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>
         <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
+        <link href="<?php echo BASE_PATH; ?>index.css" rel="stylesheet" type="text/css" />        
     </head>
     <body class="respiro-em-baixo">
         <?php
@@ -44,12 +44,12 @@ require "furia/includes/bs.php";
                                 <a href="<?php echo BASE_PATH.$materia->url ?>">
                                     <em><?php echo $materia->titulo; ?></em>
                                     <span class="resumo">
-                                        <?php echo $materia->resumo; ?>
+                                        <?php echo $materia->resumo; ?> (continuar lendo)
                                     </span>
                                     <span class="hidden-phone assinatura">
                                         <?php echo $materia->autor; ?>,
-                                        atualizado em <?php echo $materia->dt_atualizacao; ?>,
-                                        escrito em <?php echo $materia->dt_criacao; ?>.
+                                        atualizado em <?php echo FuncAux::data_converte_para_visualizar( $materia->dt_atualizacao ); ?>,
+                                        escrito em <?php echo FuncAux::data_converte_para_visualizar( $materia->dt_criacao ); ?>.
                                     </span>
                                 </a>
                             </div>

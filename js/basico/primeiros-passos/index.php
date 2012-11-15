@@ -28,8 +28,8 @@ $materia = new Materia(8);
             <div class="row">
                 <div class="span12">
                     <article>
-                        <h1>Primeiros passos</h1>                      
-                        
+                        <h1>Primeiros passos (rascunho)</h1>
+
                         <p>Na matéria de introdução eu comentei que vamos aprender JS junto com HTML e CSS. Na verdade vamos aprender as coisas
                             separadamente, porém vamos trabalhar com os três elementos como se fosse ingredientes obrigatórios em cada receita.</p>
 
@@ -125,7 +125,7 @@ alert(foor);
     &lt;/head&gt;
     &lt;body&gt;
         ...
-    &lt;script type="text/javascript" src="codigo.js"&gt;&lt;/script&gt;
+    <em>&lt;script type="text/javascript" src="codigo.js"&gt;&lt;/script&gt;</em>
     &lt;/body&gt;
 &lt;/html&gt;
                             </pre>
@@ -133,7 +133,11 @@ alert(foor);
 
                         <p>Colocamos o código JS no final do HTML.</p>
 
-                        <h2>Típos de variáveis</h2>
+                        <p>...
+                            ...
+                            ...</p>
+
+                        <p>em construção</p>
 
                         <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
                     </article>
