@@ -312,3 +312,6 @@ div.rodape {
     box-shadow: 0 10px 10px 10px #000000;
     height: 600px;
 }
+div.rodape p {
+    color: #FFF;
+}
