@@ -22,17 +22,12 @@ $materia = new Materia(7);
         $nav_top['secao'] = "js";
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
+        
+        <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
 
-        <div class="container">
-
+        <div class="container sombra">
             <div class="row">
                 <div class="span12">
-                    <header>
-                        <p>
-                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
-                        </p>
-                    </header>
-
                     <article>
                         <h1>Introdução !</h1>
                             

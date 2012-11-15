@@ -20,19 +20,12 @@ require "../furia/includes/bs.php";
         $nav_top['secao'] = null;
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
-        <div class="container">
+        
+        <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
+        
+        <div class="container sombra">
             <div class="row">
                 <div class="span12">
-                    <header>
-                        <p>
-                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
-                        </p>
-                    </header>
-                </div><!-- span12 -->
-            </div><!-- row -->
-
-            <div class="row12">
-                <div>
                     <h1>MAPA DO SITE</h1>
                 </div>
             </div>

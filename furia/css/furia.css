@@ -17,9 +17,12 @@
     }
     .container {
         padding: 5px 20px;
+    }
+    .container.sombra {
         box-shadow: 4px 5px 10px;
         -webkit-box-shadow: 4px 5px 10px #000000;
-    }
+    }    
+    
 }
 
 /* Botão à direita na nav */

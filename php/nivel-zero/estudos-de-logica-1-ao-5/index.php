@@ -23,16 +23,11 @@ $materia = new Materia(5);
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
 
-        <div class="container">
+        <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
 
+        <div class="container sombra">
             <div class="row">
                 <div class="span12">
-                    <header>
-                        <p>
-                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
-                        </p>
-                    </header>
-
                     <article>
                         <h1>Estudos de lógica com respostas (1 ao 5)</h1>
 
@@ -363,7 +358,10 @@ mostrar valor_reajuste, salario_reajustado
                 </div>
             </div>
         </div>
+        
+    <?php include BASE_PATH.COMPONENTES_PATH."rodape.php"; ?>
 
     <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
+    
     </body>
 </html>

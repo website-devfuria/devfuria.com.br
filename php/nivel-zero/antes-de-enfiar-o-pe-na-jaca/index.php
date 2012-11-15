@@ -22,17 +22,12 @@ $materia = new Materia(3);
         $nav_top['secao'] = "php";
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
+        
+        <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
 
-        <div class="container">
-
+        <div class="container sombra">
             <div class="row">
                 <div class="span12">
-                    <header>
-                        <p>
-                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
-                        </p>
-                    </header>
-
                     <article>
                         <h1>Antes de enfiar o pé na jáca</h1>
 
@@ -344,7 +339,10 @@ elseif(  (condition3)&&(condition4)  ){
                 </div>
             </div>
         </div>
+        
+    <?php include BASE_PATH.COMPONENTES_PATH."rodape.php"; ?>
 
     <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
+
     </body>
 </html>

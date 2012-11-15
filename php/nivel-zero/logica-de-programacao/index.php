@@ -22,17 +22,12 @@ $materia = new Materia(2);
         $nav_top['secao'] = "php";
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
+        
+        <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
 
-        <div class="container">
-
+        <div class="container sombra">
             <div class="row">
                 <div class="span12">
-                    <header>
-                        <p>
-                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
-                        </p>
-                    </header>
-
                     <article>
                         <h1>Lógica de Programação</h1>
 
@@ -244,6 +239,9 @@ echo $soma;
             </div>
         </div>
 
+    <?php include BASE_PATH.COMPONENTES_PATH."rodape.php"; ?>
+        
     <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
+        
     </body>
 </html>
