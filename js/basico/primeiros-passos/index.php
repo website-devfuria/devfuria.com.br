@@ -41,32 +41,16 @@ $materia = new Materia(8);
                             cores, fontes, bordas, espaçamento, disposição dos elementos ...pensou em CSS. Ele cuidará da embalagem, do roupagem
                             que sua página web irá vestir. Estilizar é com o CSS.</p>
 
-                        <p>Sobrou para o HTML deixar claro qual é o conteúdo, em outras palavras, "tudo que é necessário para ler e entender o
-                            conteúdo de ua página web. [] O código HTML deve fazer o máximo para transmintir o significado (ou semântica) do
-                            conteúdo." O HTML descreve o conteúdo da página, a isso chamamos de <em>marcação semântica</em>.</p>
+                        <p>Sobrou para o HTML deixar claro qual é o conteúdo, marcando o conteúdo. Em outras palavras: "tudo que é necessário para
+                            ler e entender o conteúdo de ua página web. O código HTML deve fazer o máximo para transmintir o significado
+                            (ou semântica) do conteúdo." O HTML descreve o conteúdo da página, a isso chamamos de <em>marcação semântica</em>.</p>
 
                         <p>OK. O que acabamos de fazer foi separar as obrigações. Com isso, acabamos de praticar técnica chamada de <em>programação em
                                 camadas</em>. No caso, temos 3 camadas: conteúdo(HTML), apresentação(CSS) e comportamento(JS).</p>
 
-                        <p>O HTML será encarregado da marcação do
-                            conteúdo</p>
-
                         <h2>Aonde colocar o Javascript ?</h2>
 
                         <p>O ideal é escrevermos o código JS em um arquivo texto com extensão .js e incluí-lo no arquivo HTML dessa forma:</p>
-
-                        <div class="code menor">
-                            <h6>codigo.js</h6>
-                            <pre>
-var foo = "Eu sou javascript";
-alert(foor);
-
-// Este aqui é o arquivo separado
-
-                            </pre>
-                        </div>
-
-                        <p>O JS do arquivo "codigo.js" fica dentro do arquivo HTML, confira no trecho seguinte:</p>
 
                         <div class="code menor">
                             <h6>index.html</h6>
@@ -88,7 +72,7 @@ alert(foor);
 
                         <p>No código seguinte temos a mesmíssima coisa, só que em um arquivo html 5. O palavrão 'DOCTYPE' virou duas palavrinhas:</p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>index.html</h6>
                             <pre>
 <em>&lt;!DOCTYPE html&gt;</em>
@@ -114,7 +98,7 @@ alert(foor);
                             quebra sua página obtem um ganho de performance. Em outra matéria, falarei mais sobre essa questão. Por hora vejamos
                             como ficou nosso HTML:</p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>index.html</h6>
                             <pre>
 &lt;!DOCTYPE html&gt;
@@ -131,13 +115,66 @@ alert(foor);
                             </pre>
                         </div>
 
-                        <p>Colocamos o código JS no final do HTML.</p>
+                        <p><em>Colocamos o código JS no final do HTML.</em></p>
 
-                        <p>...
-                            ...
-                            ...</p>
+                        <h2>FireBug</h2>
 
-                        <p>em construção</p>
+                        <p>O FireBug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
+                            <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="FireBug">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
+
+                        <p>Ele será necessário para debugar-mos o código escrito em JS.</p>
+
+                        <p>Então, quando nos depararmos com o seguinte código:</p>
+
+                        <div class="code menor">
+                            <h6>JS</h6>
+                            <pre>
+var qualquer = "uma string qualquer";
+console.log(qualquer);
+                            </pre>
+                        </div>
+
+                        <p>...estaremos na verdade, fazendo uso do plugin FireBug, pois a instrunção <em>console.log()</em> não é do JS e sim do plugin
+                            FireBug. O resultado do código é conferido na seção "console" do plugin.</p>
+
+                        <h2>Javascript é seguro?</h2>
+
+                        <p>Vamos estender essa pergunta para: A linguagem de programação X é sergura?</p>
+
+                        <p>Nenhuma linguagem de programação é segura ou insegura, a pergunta correta seria:</p>
+
+                        <p><em>O desenvolvedor programa de forma segura?</em></p>
+
+                        <p>O que acontece com JS é que o código fica exposto a qualquer usuário, por isso, percebemos erroneamente, que JS é inseguro,
+                            mas isto não é verdade. Seguro ou inseguro, como já disse, é a forma como se programa.</p>
+
+                        <p>Obviamente, tendo em vista que o código fica exposto, não criaremos nenhum <em>código sensível</em> (um código que possa ser
+                            explorado por um hacker causando danos a aplicação).</p>
+
+                        <h2>Características da linguagem</h2>
+
+                        <p>JS é uma linguagem baseada em protótipos, em funções de primeira classe, fracamente tipada, imperativa e estruturada,
+                            implementa closures,</p>
+
+                        <p>Se você já acompanhou algumas matérias do curos de PHP deve ter percebido que eu utilizo "um pouco de engenharia reversa":
+                            explico o essencial, demonstro algum código e vamos aprofundando aos poucos. Acredito que essa seja uma boa forma para
+                            ensinar e aprender programação. Com este curso de JS não será diferente, as características aqui apresentadas serão
+                            explicadas ao longo do curso quando o leitor já estiver mais familizarizado com a linguagem e, dessa forma, poderá
+                            aproveitar melhor o curso.</p>
+
+                        <h2>JS é realmente Orientado a Objetos ?</h2>
+
+                        <p>Essa uma característica que não podia ficar de fora, a questão se JS é ou não OOP ainda causa certa polêmica, mas segundo
+                            Douglas Crockford's (o mago do JS):</p>
+
+                        <blockquote>
+                            <p>"O JavaScript é orientado à objetos? Bem, ele contém objetos que podem conter dados e métodos que agem sobre esses
+                                dados. Objetos podem conter outros objetos. O JavaScript não possui classes, mas possui construtores que são capazes
+                                de fazer o que as classes fazem, incluindo agir como contêineres para classes de variáveis e métodos. Ele não possui
+                                herança orientada a classe, mas tem herança orientada a protótipo.</p>
+                        </blockquote>
+
+                        <p><em>Na próxima matéria veremos o básico do JS.</em></p>
 
                         <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
                     </article>
