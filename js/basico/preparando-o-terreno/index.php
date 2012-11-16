@@ -28,7 +28,7 @@ $materia = new Materia(8);
             <div class="row">
                 <div class="span12">
                     <article>
-                        <h1>Primeiros passos (rascunho)</h1>
+                        <h1>Preparando o terreno</h1>
 
                         <p>Na matéria de introdução eu comentei que vamos aprender JS junto com HTML e CSS. Na verdade vamos aprender as coisas
                             separadamente, porém vamos trabalhar com os três elementos como se fosse ingredientes obrigatórios em cada receita.</p>
