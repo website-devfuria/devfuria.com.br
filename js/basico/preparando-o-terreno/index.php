@@ -139,7 +139,7 @@ console.log(qualquer);
 
                         <h2>Javascript é seguro?</h2>
 
-                        <p>Vamos estender essa pergunta para: A linguagem de programação X é sergura?</p>
+                        <p>Vamos estender essa pergunta para: a linguagem de programação X é sergura?</p>
 
                         <p>Nenhuma linguagem de programação é segura ou insegura, a pergunta correta seria:</p>
 
@@ -154,18 +154,17 @@ console.log(qualquer);
                         <h2>Características da linguagem</h2>
 
                         <p>JS é uma linguagem baseada em protótipos, em funções de primeira classe, fracamente tipada, imperativa e estruturada,
-                            implementa closures,</p>
+                            implementa closures.</p>
 
                         <p>Se você já acompanhou algumas matérias do curos de PHP deve ter percebido que eu utilizo "um pouco de engenharia reversa":
                             explico o essencial, demonstro algum código e vamos aprofundando aos poucos. Acredito que essa seja uma boa forma para
-                            ensinar e aprender programação. Com este curso de JS não será diferente, as características aqui apresentadas serão
+                            ensinar e aprender programação. Com este curso de JS, não será diferente. As características aqui apresentadas serão
                             explicadas ao longo do curso quando o leitor já estiver mais familizarizado com a linguagem e, dessa forma, poderá
                             aproveitar melhor o curso.</p>
 
                         <h2>JS é realmente Orientado a Objetos ?</h2>
 
-                        <p>Essa uma característica que não podia ficar de fora, a questão se JS é ou não OOP ainda causa certa polêmica, mas segundo
-                            Douglas Crockford's (o mago do JS):</p>
+                        <p>A questão se JS é ou não OOP ainda causa certa polêmica, mas segundo Douglas Crockford's (o mago do JS):</p>
 
                         <blockquote>
                             <p>"O JavaScript é orientado à objetos? Bem, ele contém objetos que podem conter dados e métodos que agem sobre esses

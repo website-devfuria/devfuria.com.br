@@ -6,10 +6,10 @@ defined('DF') or die;
  */
 $secoes = array(
     "php"      => "PHP",
-    "js"       => "Javascript",
-    "html-css" => "HTML & CSS",
-    "mysql"    => "MySql",
-    "engsoft"  => "Eng. Software",
+    "js"       => "Javascript"
+//    "html-css" => "HTML & CSS",
+//    "mysql"    => "MySql",
+//    "engsoft"  => "Eng. Software",
 );
 
 ?>

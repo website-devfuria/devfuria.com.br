@@ -70,7 +70,7 @@ $materia = new Materia(7);
     
                         <p><em>Javascript não é Java</em>.</p>
     
-                        <p>Obs: Há quem diga que Javascript nasceu antes de 1995, chamava-se Cmm, ou Mach, e blá blá blá. Mas isso é história.</p>
+                        <p>Obs: Há quem diga que Javascript nasceu antes de 1995, chamava-se Cmm, e blá blá blá. Mas isso é história.</p>
     
                         <p>Após algum tempo, a empresa ECMA resolveu padronizar a linguagem e criou o padrão ECMAscript, na verdade este é o nome
                             adotado para a linguagem. Porque temos um padrão? Porque cada navegador implementa a linguagem de forma diferente, em
@@ -172,7 +172,7 @@ var element = document.getElementById('myimage');
                             </pre>
                         </div>
     
-                        <p>A função que imbutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ele testa se o valor de "src" do
+                        <p>A função que embutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ele testa se o valor de "src" do
                             elemento é igual a "bulbon". Se for, ele troca para "pic_bulboff.gif", se não ele troca para "pic_bulbon.gif".</p>
     
                         <p>E assim temos a impressão de acender e apagar a lâmpada.
