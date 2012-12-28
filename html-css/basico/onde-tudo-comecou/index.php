@@ -1,6 +1,6 @@
 <?php
 require "../../../furia/includes/bs.php";
-$materia = new Materia(7);
+$materia = new Materia(1);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,189 +22,267 @@ $materia = new Materia(7);
         $nav_top['secao'] = "js";
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
-        
+
         <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
 
         <div class="container sombra">
             <div class="row">
                 <div class="span12">
                     <article>
-                        <h1>Introdução !</h1>
-    
-                        <p><em>Javascript(JS) não é brinquedo, é linguagem de programação séria</em>. Das mil definições de JS a que mais me agrada é a de
-                            Kevin e Cameron em seu livro Simple Javascript Só Javascript) <span class="blockquote-inline">"Javascript é uma
-                                linguagem de programação simples que permite alterar páginas web dinamicamente, enquanto estão sendo exibidas em um
-                                navegador."</span>.</p>
-    
-                        <p>Mas os autores alertam <span class="blockquote-inline">"Parece algo que você pode dominar em uma tarde, JS parece
-                                simples, contudo, em seus 10 anos de história até aqui [o livro é de 2007], as melhores práticas de JS pareciam mudar
-                                com as estações."</span>.</p>
-    
-                        <p>A definição do pessoal do Mozilla também me agrada <span class="blockquote-inline">"Javascript (às vezes chamado apenas
-                                de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos, baseada em protótipos e em <em>first-class
-                                    functions</em> (funções de primeira classe), mais conhecida como a linguagem de script da Web. Também utilizada em vários
-                                outros ambientes como node.js e Apache CouchDB."</span>.</p>
-    
-                        <p>É possível fazer mil peripécias com JS e suas páginas da web, a cada dia a lista de possibilidas vai aumentado. A maior
-                            utilização do JS é no sentido de melhoria de páginas web (HTML e CSS), o que chamamos de <em>aperfeiçoamento progressivo</em>,
-                            começa-se com o HTML, CSS e por fim o JS.</p>
-    
-                        <p><em>Validar um formulário</em> do lado do cliente evitando que os dados trafeguem até o servidor foi, por um bom tempo, a
-                            melhoria mais aplicada e popular. Quem nunca validou um formulário com JS?</p>
-    
-                        <p>Um funcionalidade que ajudou em muito a popularização da linguagem é o <em>AJAX</em>. A junção do JS com XML sendo realizado por
-                            requisições diretamente do código de JS para o servidor é algo surpreendente.</p>
-    
-                        <p>Outra aplicação do JS que empolga bastante são as chamadas <em>aplicalções web ricas</em>. O termo "rico" refere-se a interface,
-                            ou seja, a interafce é quem está mais rica, mais usual, mais fácil, mas agragadora. Há quem diga que elas são o futuro
-                            das aplicações web.</p>
-    
-                        <p>O nodejs promete levar o JS para o lado do servidor, isso já é uma realidade e será questão de tempo até encontrarmos
-                            bons frutos dessa iniciativa.</p>
-    
-                        <p><em>Javascript nasceu em 1995, seu pai chama-se Brendan Eich</em>. Ná época a Netscape queria uma linguagem que roda-se no lado
-                            do cliente e incubiu Brendam de realizar este projeto. Ela chamava-se LiveScript e como a SUN Microsystems interessou-se
-                            pela linguagem e também começo a contribuir, conseguiu que ela vie-se a se chamar Javascript, foi uma lance de marketing
-                            com a linguagem Java. A única coisa que Javascript tem de comum com a linguagem Java é que ambas são orientada a objetos,
-                            mas até isso é implementado de forma diferente, bem diferente.</p>
-    
-                        <p><em>Javascript não é Java</em>.</p>
-    
-                        <p>Obs: Há quem diga que Javascript nasceu antes de 1995, chamava-se Cmm, e blá blá blá. Mas isso é história.</p>
-    
-                        <p>Após algum tempo, a empresa ECMA resolveu padronizar a linguagem e criou o padrão ECMAscript, na verdade este é o nome
-                            adotado para a linguagem. Porque temos um padrão? Porque cada navegador implementa a linguagem de forma diferente, em
-                            outras palavras, escrever um trecho de código Javascript válido que funciona no Firefox, por exemplo, pode não funcionar
-                            no IE (sempre o IE). Isso mesmo, Javascript sofre do mesmo problema que o HTML e o CSS, cada navegador implementa ao
-                            seu sabor. "Em teoria, a  padronização obriga as empresas fabricantes de navegadores a implementarem no mínimo aquele
-                            conjunto de funcionalidades"(Edgar Damiani) ...por isso o padrão ECMA é tão importante.</p>
-    
-                        <p><em>JS é legal porque dá para começar a programar em segundos. A instalação do ambiente é estupidamente fácil: basta um
-                                navegador web e um editor de texto</em>. Só não vale o IE nem o bloco de notas.</p>
-    
-                        <p>Eu utilizo o Firefox para testar meus scripts. O firefox tem um plugin que é um verdadeiro caniveto suíço, faz tudo e
-                            mais um pouco, trata-se do Firebug. uma ferramenta e tanto, no decorrer do curso vamos utilizá-lo com frequência. Outro
-                            plugin que não pode ficar de fora é o Web Developer, instale os dois plugins e vá descobrindo aos poucos suas
-                            funcionalidades, você irá se surpreender.</p>
-    
-                        <p>Quanto ao editor de código, este fica a sua escolha, eu uso e gosto muito do Netbeans.</p>
-    
-                        <h2>O primeiro script a gente nunca esqueçe</h2>
-    
-                        <p>Crie um arquivo texto e salve com o nome
-                            "index.html". Agora insira nele o seguinte código:</p>
-    
-                        <div class="code">
-                            <h6>JS</h6>
-                            <pre>
-var foo = "Eu sou javascript";
-alert(foo);
-                            </pre>
-                        </div>
-    
-                        <p>Agora abra um navegador qualquer e, em seguida, abra o arquivo.</p>
-    
-                        <h2>O segundo script talvez a gente esqueça</h2>
-    
-                        <div class="code">
-                            <h6>JS</h6>
-                            <pre>
-var element = document.getElementById('myimage');
-element.onclick = function() {
-    if (element.src.match("bulbon")) {
-        element.src="../imagens/pic_bulboff.gif";
-    } else {
-        element.src="../imagens/pic_bulbon.gif";
-    }
-};
-                            </pre>
-                        </div>
-    
-                        <div class="imagem">
-                            <img src="../imagens/pic_bulboff.gif" id="myimage" />
-                            <p>Programar é uma atividade criativa !!! Clique e confira.</p>
-                            <p>Fonte:<a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_lightbulb">w3schools</a></p>
-                        </div>
-    
-                        <p>O que o código acima faz?
-                            Ele apenas acende e apaga uma lâmpada!</p>
-    
-                        <p>OK, brincadeiras à parte. O código é um pouco mais elaborado, a lógica é a seguinte: temos duas figuras da mesma lâmpada,
-                            uma acesa e outra apagada. A cada clique, troque a imagem da lâmpada. É isso, vejamos o html para entendermos melhor o
-                            funcionamento do conjunto.</p>
-    
-                        <div class="code">
-                            <h6>HTML</h6>
-                            <pre>
-&lt!DOCTYPE html&gt
-&lthtml&gt
-    &lthead&gt
-        &ltmeta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt
-        &lttitle&gtHello, World!&lt/title&gt
-    &lt/head&gt
-    &ltbody&gt
-        
-        &ltimg id="myimage" src="../imagens/pic_bulboff.gif" alt="lampada"/&gt
-        &ltp&gtClick the light bulb to turn on/off the light&lt/p&gt
-            
-        &ltscript type="text/javascript" src="codigo.js"&gt&lt/script&gt
-            
-    &lt/body&gt
-&lt/html&gt
-                            </pre>
-                        </div>
-    
-                        <p>Temos uma tag "img" e seu atributo "src" que aponta para uma imagem no servidor. É nesse elemento que nossa lógca irá
-                            atuar. Presisamos "pegar" a imagem via JS, para tal utilizamos a função "getElementeByIi" (traduzindo: pegue o elemento
-                            pelo id) e Armazenamos o resultado na variável "element". Até aqui tudo bem.</p>
-    
-                        <p>Na sequência, atribuímos uma função para o evento "onclick" do elemento capurado. Não entendendeu como é feito isto?
-                            Veja o código numa forma mais limpa:</p>
-    
-                        <div class="code">
-                            <h6>JS</h6>
-                            <pre>
-var element = document.getElementById('myimage');
-<em>element.onclick = function() {
-     ... ao clicar na imagem
-     ... o código aqui inserido será acionado
-};</em>
-                            </pre>
-                        </div>
-    
-                        <p>A função que embutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ele testa se o valor de "src" do
-                            elemento é igual a "bulbon". Se for, ele troca para "pic_bulboff.gif", se não ele troca para "pic_bulbon.gif".</p>
-    
-                        <p>E assim temos a impressão de acender e apagar a lâmpada.
-                            Isso é Javascript!</p>
-    
-                        <p>No curso, iremos estudar o JS em conjunto com suas irmãs (siamesas): HTML e CSS. O leitor deve ter certa familiaridade
-                            com essas tecnologias porque, JS sem elas é hardware sem software.</p>
-    
-                        <p>Este curso foi, inicialmente, idealizado para iniciantes em programação. Existem um nível abaixo do nível básico: é o
-                            nível zero, estão nesse grupo as pessoas autodidatas que nunca frenquentaram um curso regular de informática. Se este
-                            for o seu caso, talvez lhe falte um pouco de lógica de programação, aconselho a fazer uma leitura atenta das 6 matérias
-                            do nível zero de PHP, afinal ĺógica é lógica em qualquer linguagem.</p>
-    
-                        <p>Atualmente (set/2012) JS disponta como o principal alicerce de um desenvolvedor front-end(client-side). Desenvolver do
-                            lado do cliente, desenvolvedor de interfaces, engenheiro front-end. Seja lá qual for o nome, o fato é que cada vez mais
-                            a atividade está se tornando uma profissão madura e respeitada (e bem remunerada).</p>
-    
-                        <p>Coincidência ou não, encontrei impresso no livro de Kevin e Camerom uma das fortes razões que me levaram a realizar o
-                            projeto deste site...</p>
-    
-                        <blockquote>
-                            <p>"alguns autores respeitados no setor o ensinarão uma porção de soluções rápidas para problemas simples e mais nada,
-                                deixando-o apenas com corda suficiente para se enforcar quando você tentar resolver um problema de verdade. Então
-                                quando desesperadamente procurar um exemplo na Web que faça o que você precisa, provavelmente será incapaz de entender
-                                o código JS encontrado. Este livro é diferente..."</p>
-                        </blockquote>
-    
-                        <p>Este site também. O objetivo é "você ganhar confiança não somente para escrever seu próprio código Javascript, mas também
-                            para entender código escrito por outras pessoas e até para identificar código antigo e prejudicial e poder alterá-lo com
-                            maestria".</p>
-    
-                        <p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>
+                        <h1>Onde tudo começou</h1>
+
+<p>Tim Berners-Lee, a culpa é toda dele. No começo dos anos 90, o dito cujo, inventou o HTML (HyperText Markup Language) que
+significa Linguagem de Marcação de Hipertexto. Ele queria facilitar a comunicação de suas pesquisas com seus colegas
+e acabou resolvendo o problema de todo mundo, nascia a web.</p>
+
+<p>A idéia era simples e genial, era possível criar e disponibilizar um arquivo de texto simples com conteúdo HTML, via rede,
+para outro computador. No computador de destino, um software chamado webrowser(navegador web) era encarregado de exibir
+o conteúdo HTML. Não podemos esquecer de mencionar o protocolo HTTP (Hypertext Transfer Protocol, Protocolo de
+Transferência de Hipertexto) que também é invenção de Lee e é peça primordial da web. </p>
+
+<p>A web teve um crescimento rápido. Nessa época, "nosso bebê", já tinha pernas e músculos bem desenvolvidos
+e dava seus primeiros passos. Não demorou muito para surgirem empresas interessadas na tecnologia, como foi o caso da
+Netscape. Ela estava interessada no mavegador web e criou um com o mesmo nome. A Microsof, apesar de atrasada, também
+queira sua fatia do mercado e lançou e destemido (ou talvez temido) Internet Explore, vulgo IE.</p>
+
+<p>Essa passagem histórica ficou connhecida como "a guerra dos navegadores", procure na web por esse termo. Nas Faculdades
+de tecnologia é muito comum exibirem um filme que deve ter o mesmo nome (não lembro bem). Vale apena assitir. Essa fase
+definiu o que conhecemos hoje por Cross-browser, que nada mais é do que a habilidade de construir um site que suporte
+vários navegadores, falaremos dele em breve, apenas adianto que dá para perder alguns cabelos.</p>
+
+<p>Essa é a (humilde, diga-se de passagem) história da Internet. E a história da HTML faz parte dela, mas o que nos
+interessa é apenas enteder o HTML e a CSS. Como já disse, a história de ambas é muito interessante e vale a pena aprender
+sobre o assunto. A web está cheia de sites e documentos falando à respeito, fica a critério do leitor buscar essas
+informações. Por hora, vamos nos deter apenas no universo do HTML e da CSS.</p>
+
+<h2>Afinal o que é HTML?</h2>
+
+<p><em>HTML, originalmente, marca o conteúdo</em>. Ele faz isso através de sua "etiquetas", ou melhor, através de suas <em>tag's</em>.
+A tag "p" define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:</p>
+
+<ul>
+<li><em>html</em>, define o próprio documento HTML.</li>
+<li><em>head</em>, define o cabeçário do documento.</li>
+<li><em>titlte</em>, define o título.</li>
+<li><em>body</em>, define o corpo.</li>
+<li><em>h1</em>, definie o primeiro título, o mais importante.</li>
+<li><em>h2</em>, definie o segudo título, e assim até o h6.</li>
+<li><em>a</em>, define uma âncora, quero dizer, o famoso link.</li>
+<li><em>img</em>, define uma imagem</li>
+</ul>
+
+<p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: &lt;nome da tag&gt; e toda tag aberta deve ser fechada.
+A barra para direita indica qual é a <em>tag de fechamento</em>, exemplo: &lt;p&gt;aqui é um parágrafo&lt;/p&gt;</p>
+
+<p>Abaixo conferimos um arquivo HTML na sua essência.</p>
+
+<div class="code">
+
+
+efdeee9567427a1bbfd682c218f0c01b
+
+
+<pre>
+<html>
+    <head>
+        <title>Título da página</title>
+    </head>
+    <body>
+
+<pre><code>    &lt;h1&gt;Um título qualquer&lt;/h1&gt;
+    &lt;p&gt;primeiro parágrafo/p&gt;
+    &lt;p&gt;segundo parágrafo&lt;/p&gt;
+    &lt;p&gt;terceiro parágrafo&lt;/p&gt;
+
+    &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
+    &lt;p&gt;quarto parágrafo&lt;/p&gt;
+    &lt;p&gt;quinto parágrafo&lt;/p&gt;
+    &lt;p&gt;sexto parágrafo&lt;/p&gt;
+
+&lt;/body&gt;
+</code></pre>
+
+</html>
+</pre>
+</div>
+
+<h2>E esse tal de CSS?</h2>
+
+<p>CSS (Cascading Style Sheet) determina a estilização do contéudo. </p>
+
+<blockquote>
+  <p>Folha de estilo em cascata é um mecanismo simples para adicionar estilos
+( por exemplo: fontes, cores, espaçamentos) aos documentos web.
+Fonte: W3c</p>
+</blockquote>
+
+<p>Com a CSS podemos estilizar a paǵina HTML e assim, separamos as obrigações de cada tecnologia:
+* A HTML define a estrutura do documento e
+* A CSS definie a estilização</p>
+
+<p>A CSS é composta pelo que se chama de "regras de estilização", um exemplo de regra seria: <em>"todo parágrafo deve ter o
+tamanho da fonte em 12px e sua cor deve ser #767676"</em>, traduzindo em código css ficaria assim:</p>
+
+<div class="code">
+<h6>CSS</h6>
+<pre>
+p {
+    font-size: 12px;
+    color: #767676;
+}
+</pre>
+</div>
+
+<p>A letra "p" é o <em>seletor</em>, é o alvo da regra CSS. Entre as chaves, neste exemplo, há duas propriedades.
+<em>font-size</em>  e <em>color</em> são as propriedades e <em>12px</em> e <em>#767676</em> são seus respectivos valores.
+A regra CSS pode conter várias declarações separadas por ponto e vírgula.</p>
+
+<p>A CSS <em>"uni-se"</em> ao HTML de 3 formas distintas: inline, embeded e linked.</p>
+
+<h3>CSS - inline (na linha)</h3>
+
+<p>É o método mais simples, declaramos a regra com o emprego do atributo "style" do HTML, exemplo:</p>
+
+<div class="code">
+<h6>HTML e CSS (massaroca)</h6>
+<pre>
+<html>
+    <head>
+        <title>Título da página</title>
+    </head>
+    <body>
+
+        <h1>Um título qualquer</h1>
+        <p <em>style="font-size: 12px; color#767676"</em>>primeiro parágrafo/p>
+        <p <em>style="font-size: 12px; color#767676"</em>>segundo parágrafo</p>
+        <p <em>style="font-size: 12px; color#767676"</em>>terceiro parágrafo</p>
+
+        <h2>Outro título qualquer</h2>
+        <p <em>style="font-size: 12px; color#767676"</em>>quarto parágrafo</p>
+        <p <em>style="font-size: 12px; color#767676"</em>>quinto parágrafo</p>
+        <p <em>style="font-size: 12px; color#767676"</em>>sexto parágrafo</p>
+
+    </body>
+</html>
+</pre>
+</div>
+
+<p>O leitor atento notou que tivemos que repetir a regra em cada parágrafo. Essa forma além de repetir código, não ajuda na
+legibilidade e NÂO permite o controle centralizado da CSS. Programadores e designs, no geral, evitam a CSS inline.
+Ainda não "dá cadeia" utilizar-se de CSS inline, se achar que precise dela, pode usá-la com bom censo.</p>
+
+<h3>CSS - embeded (incorporadas)</h3>
+
+<p>Coloca-se as regras de CSS entre a tag "style" na seção "head" do HTML, veja o exemplo:</p>
+
+<div class="code">
+
+
+b87a819b5bd5fa2e8da6855849f513b1
+
+
+<pre>
+<html>
+    <head>
+        <title>Título da página</title>
+        <em><style type="text/css" medial="all">
+        p {
+            font-size: 12px;
+            color: #767676;
+        }
+        </style></em>
+    </head>
+    <body>
+
+<pre><code>    &lt;h1&gt;Um título qualquer&lt;/h1&gt;
+    &lt;p&gt;primeiro parágrafo/p&gt;
+    &lt;p&gt;segundo parágrafo&lt;/p&gt;
+    &lt;p&gt;terceiro parágrafo&lt;/p&gt;
+
+    &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
+    &lt;p&gt;quarto parágrafo&lt;/p&gt;
+    &lt;p&gt;quinto parágrafo&lt;/p&gt;
+    &lt;p&gt;sexto parágrafo&lt;/p&gt;
+
+&lt;/body&gt;
+</code></pre>
+
+</html>
+</pre>
+</div>
+
+<p>Já é bem melhor que o método anterior: localizaremos a CSS com mais facilidade no documento.
+Mas há o método campeão...</p>
+
+<h3>CSS - linked (externos)</h3>
+
+<p>Coloca-se as regras de CSS em um arquivo separado do HTML. Normalmente a extensão do arquivo é <em>".css"</em>. A "cola" é
+realizada através da tag <em>"link"</em>, veja código de exemplo:</p>
+
+<div class="code">
+
+
+efdeee9567427a1bbfd682c218f0c01b
+
+
+<pre>
+<html>
+    <head>
+        <title>Título da página</title>
+        <em><link rel="stylesheet" type="text/css" href="estilos.css" media="all" /></em>
+    </head>
+    <body>
+
+<pre><code>    &lt;h1&gt;Um título qualquer&lt;/h1&gt;
+    &lt;p&gt;primeiro parágrafo/p&gt;
+    &lt;p&gt;segundo parágrafo&lt;/p&gt;
+    &lt;p&gt;terceiro parágrafo&lt;/p&gt;
+
+    &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
+    &lt;p&gt;quarto parágrafo&lt;/p&gt;
+    &lt;p&gt;quinto parágrafo&lt;/p&gt;
+    &lt;p&gt;sexto parágrafo&lt;/p&gt;
+
+&lt;/body&gt;
+</code></pre>
+
+</html>
+</pre>
+</div>
+
+<p>Agora sim temos um método profissional. Toda CSS fica em arquivo separado que é incluso no HTML através de uma única linha.
+Há vantagens e desvantagens em cada um dos métodos, discutiremos isso em breve, por hora saiba que esse é o método que
+mais utilizaremos no curso.</p>
+
+<h2>O poder da CSS</h2>
+
+<p>A CSS é uma realidade incontestável para quem desenvolve aplicações web. Não dá para caminhar sem ela, na verdade não
+dá nem para sair do lugar. Quero dizer que é preciso aprender CSS para poder desenvolver bem, ou você domina ela ou ela
+te domina. Não precisa ser ninja em CSS, mas quanto mais conhecimento você acomular sobre CSS (e HTML também) melhor e
+mais produtivo ser seu dia a dia como desenvolverdor.</p>
+
+<p>Para o leitor ter uma idéia do poder da CSS dê uma olha nos seguintes trabalhos: </p>
+
+<p>css zen garden
+css edge</p>
+
+<h2>W3C</h2>
+
+<p>Completando a história da HTML: o W3C é um consórcio que regulamenta as especificações tanto do HTML como do CSS. O
+W3C é a fonte oficial do HTML e CSS. É possível encontrar as traduções das especificações para a língua portuguesa.
+Dois pequenos alertas :  a) Estudar pela especificação é mais difícil(e mais chata também) e b) nem todos os navegadores
+implemtam as especificações em sua totalidade, isso siginifica que a especificação diz uma coisa e seu navegador comporta-se
+de outro, restanto para o programador ou desgin "se virar" para encontrar um solução.</p>
+
+<h2>Firebug</h2>
+
+<h2>HTML, DHTML , XHTML, HTML5, no final das contas é tudo HTML</h2>
+
+<p>No início era apenas HTML, depois veio  DHTML (o "d" era de Dynamic), depois o XHTML e hoje temos o HTML5.
+Sim, são coisas distintas umas das outras, mas em sua essencia não passam de mero HTML. Por simplificação, utilizaremos
+o termo HTML de forma gernérica e quando for necessário ser mais específico utilzaremos o termo correto.</p>
+
+
 
                         <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
 
@@ -215,7 +293,7 @@ var element = document.getElementById('myimage');
                 </div><!-- span12  -->
             </div><!-- row  -->
         </div><!-- container -->
-        
+
         <div class="container sem_borda">
             <div class="row">
                 <div class="span10 offset1">
@@ -229,9 +307,9 @@ var element = document.getElementById('myimage');
                 </div>
             </div>
         </div>
-        
+
         <?php include BASE_PATH.COMPONENTES_PATH."rodape.php"; ?>
-        
+
         <script type="text/javascript">
         var element = document.getElementById('myimage');
         element.onclick = function() {
@@ -240,7 +318,7 @@ var element = document.getElementById('myimage');
             } else {
                 element.src="../imagens/pic_bulbon.gif";
             }
-        };            
+        };
         </script>
     <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
     </body>
