@@ -5,7 +5,7 @@
 
 
 /**
- * 
+ *
  */
 session_start();
 
@@ -28,8 +28,8 @@ function descobre_caminho_relativo(){
             $qtd++;
         }
     }
-    
-    $qtd-=2;
+
+    $qtd-=1;
     $res = str_pad("", $qtd*3, "../", STR_PAD_LEFT);
 
     return $res;
@@ -39,7 +39,7 @@ function descobre_caminho_relativo(){
 
 
 /**
- * 
+ *
  */
 define('DF', true);
 
