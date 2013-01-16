@@ -10,10 +10,9 @@ var furia = {
             event.preventDefault();
 
             var dataToSend = $(this).serialize();
-            console.log();
             $.ajax({
                 type: "POST",
-                dataType: 'json',                
+                dataType: 'json',
                 url: DF.base_path + "furia/ajax/feedback-form-action-ajax.php",
                 data: dataToSend,
                 success: function(erro){
