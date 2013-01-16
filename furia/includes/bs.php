@@ -91,6 +91,12 @@ require (BASE_PATH."furia/includes/Conn.class.php");
 require (BASE_PATH."furia/includes/Materia.class.php");
 
 /**
+ * Markdown
+ */
+require (BASE_PATH."furia/includes/markdown.php");
+
+
+/**
  * Classes diversas
  */
 require (BASE_PATH."furia/includes/FuncAux.class.php");
