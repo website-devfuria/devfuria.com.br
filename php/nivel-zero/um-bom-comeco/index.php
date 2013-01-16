@@ -28,7 +28,8 @@ $materia = new Materia(1);
             <div class="row">
                 <div class="span12">
                     <article>
-                        <?php require "materia.php"; ?>
+                        <?php echo Markdown(file_get_contents('materia.mrk'));  ?>
+                        <?php include "materia.php"  ?>
                         <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
                     </article>
 

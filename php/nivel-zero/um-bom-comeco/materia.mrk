@@ -42,13 +42,13 @@ armazenado no servidor (o script) e, se for o caso, através da extensão “php
 (Servidor MySQL) recuperando algum tipo de dado com valor agregado. Essa informação é embebida por código HTML e
 devolvida de volta ao navegador do cliente gerando, assim, a página HTML resultante.
 
-<p class="imagem">
+<div class="imagem">
     <img src="../../imagens/morimoto_apache1.png" alt="funcionamento do servidor web" />
-    <span>Figura 01 - Esquema da arquitetura na qual, comumente, é executado os script em PHP.</span>
-    <span>Fonte:
-    <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html">Morimoto</a>
-    </span>
-</p>
+    <p>Figura 01 - Esquema da arquitetura na qual, comumente, é executado os script em PHP.</p>
+    <p>Fonte:
+        <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html">Morimoto</a>
+    </p>
+</div>
 
 Não ficou claro esse funcionamento? Tudo bem, é mais um assunto no qual é preciso familiarizar-se para depois
 compreendê-lo, dê tempo ao tempo.
@@ -139,7 +139,7 @@ responsável pelo framework de mesmo nome, lidera o mercado de certificações. 
 auxiliam o desenvolvimento da aplicação, a mais notável é a Pear (não confundir com a linguagem Pearl).
 
 
-A empresa Netcraft, periodicamente, lança pesquisas que discriminam os servidores web mais utilizados, o Apache sempre 
+A empresa Netcraft, periodicamente, lança pesquisas que discriminam os servidores web mais utilizados, o Apache sempre
 está na frente, em média 60%, veja figura 02.
 
 <p class="imagem">
@@ -147,7 +147,7 @@ está na frente, em média 60%, veja figura 02.
     <span>Figura 02 - Estatística de servidores web pelo mundo</span>
     <span>
     <a href="http://news.netcraft.com/archives/2012/09/10/september-2012-web-server-survey.html#more-6429">Fonte: Natcraft</a>
-    </span> 
+    </span>
 </p>
 
 Bom... um servidor apache pode rodar outas linguagens alem do PHP, mas veja este outro gráfico:
