@@ -222,12 +222,13 @@ O poder da CSS
 A CSS é uma realidade incontestável para quem desenvolve aplicações web. Não dá para caminhar sem ela, na verdade não
 dá nem para sair do lugar. Quero dizer que é preciso aprender CSS para poder desenvolver bem, ou você domina ela ou ela
 te domina. Não precisa ser ninja em CSS, mas quanto mais conhecimento você acomular sobre CSS (e HTML também) melhor e
-mais produtivo ser seu dia a dia como desenvolverdor.
+mais produtivo será seu dia a dia como desenvolverdor.
 
 Para o leitor ter uma idéia do poder da CSS dê uma olha nos seguintes trabalhos:
 
-css zen garden
-css edge
+http://www.csszengarden.com/
+
+http://meyerweb.com/eric/css/edge/
 
 
 
@@ -237,12 +238,18 @@ W3C
 Completando a história da HTML: o W3C é um consórcio que regulamenta as especificações tanto do HTML como do CSS. O
 W3C é a fonte oficial do HTML e CSS. É possível encontrar as traduções das especificações para a língua portuguesa.
 Dois pequenos alertas :  a) Estudar pela especificação é mais difícil(e mais chata também) e b) nem todos os navegadores
-implemtam as especificações em sua totalidade, isso siginifica que a especificação diz uma coisa e seu navegador comporta-se
-de outro, restanto para o programador ou desgin "se virar" para encontrar um solução.
+implemtam as especificações em sua totalidade, isso siginifica que a especificação diz uma coisa e seu navegador
+comporta-se de outro, restando para o programador ou desgin "se virar" para encontrar um solução.
 
 
 Firebug
 -------
+
+
+
+HTML5
+-----
+
 
 
 
