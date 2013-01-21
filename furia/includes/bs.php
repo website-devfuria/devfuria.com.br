@@ -84,7 +84,6 @@ define('KEYWORDS_JS', "javascript básico; javascript fácil; javascript início
 require (BASE_PATH."furia/includes/Conn.class.php");
 
 
-
 /**
  * Classe Materia
  */
