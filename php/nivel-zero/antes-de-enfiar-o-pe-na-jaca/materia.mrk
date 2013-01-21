@@ -47,12 +47,12 @@ Vejamos um código sem endentação:
 if($valor)
 echo “código sem endentação é trabalho de amador”;
 else
-echo “não inventaram nada pior que código não identado”;
+echo “não inventaram nada pior que código não endentado”;
 
 ?&gt;</pre>
 </div>
 
-E agora, um código identado:
+E agora, um código endentado:
 
 <div class="code menor">
 <h6>PHP</h6>
@@ -61,7 +61,7 @@ E agora, um código identado:
 if($valor)
     echo “código sem endentação é trabalho de amador”;
 else
-    echo “não inventaram nada pior que código não identado”;
+    echo “não inventaram nada pior que código não endentado”;
 
 ?&gt;</pre>
 </div>
@@ -73,7 +73,7 @@ Eles dizem isso por que diferentes editores podem exibir diferetnes formatos do 
 com o TAB (eu sou normal e uso o TAB) use-os!!!
 
 Outra consideraçõa importante é: *ao digitar uma linha, idente-a. Não deixe para arrumar o codigo no final*. Sua vista
-deve ir se acostumando com o codigo identado, se deixar para o final você irá acostumar-se com código sem endentação.
+deve ir se acostumando com o codigo endentado, se deixar para o final você irá acostumar-se com código sem endentação.
 *Olhe muito código de terceiro*, além de ajudar com o estilo, ajuda a entender da importância da endentação.
 
 
