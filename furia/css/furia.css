@@ -4,14 +4,14 @@
     clear: both;
 }
 
-  
+
 @media (min-width: 980px) {
     body {
         padding-top: 60px;
     }
     body.respiro-em-baixo {
         padding-bottom: 60px;
-    }    
+    }
     .breadcrumb {
         margin: 15px 0px;
     }
@@ -21,8 +21,8 @@
     .container.sombra {
         box-shadow: 4px 5px 10px;
         -webkit-box-shadow: 4px 5px 10px #000000;
-    }    
-    
+    }
+
 }
 
 /* Botão à direita na nav */
@@ -46,7 +46,7 @@ article h2, article h3 {
 article p {
     margin: 15px 0px;
     line-height: 18px;
-    text-indent:50px;
+    /*text-indent:50px;*/
     text-align: justify;
 }
 article p em {
@@ -98,7 +98,7 @@ article div.imagem p a {/* Link da fonte (das figuras) */
 /* Sitações
 ===================================================*/
 blockquote {
-    margin: 0px 0px 0px 40%;
+    /*margin: 0px 0px 0px 40%;*/
     padding: 0 10px;
     font-style: italic;
     font-size: 12px;
