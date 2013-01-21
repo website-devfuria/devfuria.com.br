@@ -18,7 +18,7 @@ $materia = new Materia(1);
     <body>
 
         <?php
-        $nav_top['secao'] = "php";
+        $nav_top['secao'] = $materia->secao;
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
 

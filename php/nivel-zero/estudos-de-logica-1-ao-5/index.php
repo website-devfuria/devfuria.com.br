@@ -9,7 +9,7 @@ $materia = new Materia(5);
         <?php
         $head_meta = array(
             "description" => $materia->resumo,
-            "keywords" =>  KEYWORDS_PAD . KEYWORDS_PHP . "exercícios de lógica; prica de lógica; prática da lógica; ".
+            "keywords" =>  KEYWORDS_PAD . KEYWORDS_PHP . "exercícios de lógica; prática da lógica; ".
                            "algoritmos; "
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
@@ -19,7 +19,7 @@ $materia = new Materia(5);
     <body>
 
         <?php
-        $nav_top['secao'] = "php";
+        $nav_top['secao'] = $materia->secao;
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
 
