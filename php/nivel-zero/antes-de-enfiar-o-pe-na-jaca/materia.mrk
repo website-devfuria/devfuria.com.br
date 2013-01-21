@@ -33,19 +33,19 @@ são *quatro dicas essenciais* para quem está começando a programar:
 4. programar é como pintar um quadro, cada um tem um estilo, procure o seu.
 
 
-Identar o código fonte
+Endentar o código fonte
 ----------------------
 
-Identar o código significa dar espaço determinado no começo da linha do código com o intuito de torná-lo mais claro.
+Endentar o código significa dar espaço determinado no começo da linha do código com o intuito de torná-lo mais claro.
 
-Vejamos um código sem identação:
+Vejamos um código sem endentação:
 
 <div class="code menor">
 <h6>PHP</h6>
 <pre>&lt;?php
 
 if($valor)
-echo “código sem identação é trabalho de amador”;
+echo “código sem endentação é trabalho de amador”;
 else
 echo “não inventaram nada pior que código não identado”;
 
@@ -59,22 +59,22 @@ E agora, um código identado:
 <pre>&lt;?php
 
 if($valor)
-    echo “código sem identação é trabalho de amador”;
+    echo “código sem endentação é trabalho de amador”;
 else
     echo “não inventaram nada pior que código não identado”;
 
 ?&gt;</pre>
 </div>
 
-Se para você ambos os códigos estão “de acordo”, então sabemos que você não gosta de identar código. Um exercício
+Se para você ambos os códigos estão “de acordo”, então sabemos que você não gosta de endentar código. Um exercício
 interessante de se fazer é pegar um código fonte de umas 100 linhas e identá-lo. Alguns programadores defendem que a
-identação deve ser realizado com quatro espaços, ou seja, ao invés da tecla TAB, acionamos quatro vezes a barra de espaço.
+endentação deve ser realizado com quatro espaços, ou seja, ao invés da tecla TAB, acionamos quatro vezes a barra de espaço.
 Eles dizem isso por que diferentes editores podem exibir diferetnes formatos do código fonte. Mas seja com espaços, ou
 com o TAB (eu sou normal e uso o TAB) use-os!!!
 
 Outra consideraçõa importante é: *ao digitar uma linha, idente-a. Não deixe para arrumar o codigo no final*. Sua vista
-deve ir se acostumando com o codigo identado, se deixar para o final você irá acostumar-se com código sem identação.
-*Olhe muito código de terceiro*, além de ajudar com o estilo, ajuda a entender da importância da identação.
+deve ir se acostumando com o codigo identado, se deixar para o final você irá acostumar-se com código sem endentação.
+*Olhe muito código de terceiro*, além de ajudar com o estilo, ajuda a entender da importância da endentação.
 
 
 Nomeie as variáveis adequadamente
@@ -282,7 +282,7 @@ Tudo bem, no começo, é difícil ter um parâmetro para fazer uma boa escolha d
 e observe muito código de terceiro, depois de uns 2 ou 3 anos programando (direto e reto) você começará a compor
 seu verdadeiro estilo. Mas não se esqueça dessas quatro dias:
 
-1. identar o código
+1. endentar o código
 2. usar uma boa nomenclatura
 3. comentar o código
 4. ter ou seguir um estilo.
