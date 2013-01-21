@@ -9,7 +9,7 @@ $materia = new Materia(3);
         <?php
         $head_meta = array(
             "description" => $materia->resumo,
-            "keywords" =>  KEYWORDS_PAD . KEYWORDS_PHP . "identação; identar; identar código; estilo de programação; ".
+            "keywords" =>  KEYWORDS_PAD . KEYWORDS_PHP . "endentação; endentar; endentar código; estilo de programação; ".
                            "nomenclatura; comentários; comentando código;"
             );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
