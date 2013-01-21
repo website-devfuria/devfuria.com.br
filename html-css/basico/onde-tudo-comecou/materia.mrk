@@ -17,8 +17,8 @@ queira sua fatia do mercado e lançou e destemido (ou talvez temido) Internet Ex
 
 Essa passagem histórica ficou connhecida como "a guerra dos navegadores", procure na web por esse termo. Nas Faculdades
 de tecnologia é muito comum exibirem um filme que deve ter o mesmo nome (não lembro bem). Vale apena assitir. Essa fase
-definiu o que conhecemos hoje por Cross-browser, que nada mais é do que a habilidade de construir um site que suporte
-vários navegadores, falaremos dele em breve, apenas adianto que dá para perder alguns cabelos.
+definiu o que conhecemos hoje por Cross-browser, que nada mais é do que a habilidade de construir um site que com suporte
+a vários navegadores, falaremos dele em breve, apenas adianto que dá para perder alguns cabelos.
 
 Essa é a (humilde, diga-se de passagem) história da Internet. E a história da HTML faz parte dela, mas o que nos
 interessa é apenas enteder o HTML e a CSS. Como já disse, a história de ambas é muito interessante e vale a pena aprender
@@ -77,9 +77,11 @@ E esse tal de CSS?
 CSS (Cascading Style Sheet) determina a estilização do contéudo.
 > Folha de estilo em cascata é um mecanismo simples para adicionar estilos
 >( por exemplo: fontes, cores, espaçamentos) aos documentos web.
-Fonte: W3c
+<small>Fonte: W3c</small>
 
-Com a CSS podemos estilizar a paǵina HTML e assim, separamos as obrigações de cada tecnologia:
+
+Com a CSS é possível estilizar páginas HTML e assim, separs as obrigações de cada tecnologia:
+
 * A HTML define a estrutura do documento e
 * A CSS definie a estilização
 
@@ -96,8 +98,11 @@ p {
 </pre>
 </div>
 
-A letra "p" é o *seletor*, é o alvo da regra CSS. Entre as chaves, neste exemplo, há duas propriedades.
-*font-size*  e *color* são as propriedades e *12px* e *#767676* são seus respectivos valores.
+A letra "p" é o *seletor*, é o alvo da regra CSS.
+
+Entre as chaves, neste exemplo, há duas propriedades: *font-size*  e *color*.
+
+*12px* e *#767676* são seus respectivos valores.
 A regra CSS pode conter várias declarações separadas por ponto e vírgula.
 
 A CSS *"uni-se"* ao HTML de 3 formas distintas: inline, embeded e linked.
