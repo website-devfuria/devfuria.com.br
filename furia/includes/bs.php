@@ -29,7 +29,7 @@ function descobre_caminho_relativo(){
         }
     }
 
-    $qtd-=1;
+    $qtd-= 1;# 1 para localhost e 0 para dialhost
     $res = str_pad("", $qtd*3, "../", STR_PAD_LEFT);
 
     return $res;
