@@ -30,8 +30,6 @@ $materia = new Materia(2);
                 <div class="span12">
                     <article>
                         <?php echo Markdown(file_get_contents('materia.mrk'));  ?>
-                        <?php #include "materia.php"  ?>
-
                         <?php include BASE_PATH.COMPONENTES_PATH."materia_fim.php"; ?>
                     </article>
 
