@@ -8,7 +8,7 @@ e acabou resolvendo o problema de todo mundo, nascia a web.
 A idéia era simples e genial, era possível criar e disponibilizar um arquivo de texto simples com conteúdo HTML, via rede,
 para outro computador. No computador de destino, um software chamado webrowser(navegador web) era encarregado de exibir
 o conteúdo HTML. Não podemos esquecer de mencionar o protocolo HTTP (Hypertext Transfer Protocol, Protocolo de
-Transferência de Hipertexto) que também é invenção de Lee e é peça primordial da web. 
+Transferência de Hipertexto) que também é invenção de Lee e é peça primordial da web.
 
 A web teve um crescimento rápido. Nessa época, "nosso bebê", já tinha pernas e músculos bem desenvolvidos
 e dava seus primeiros passos. Não demorou muito para surgirem empresas interessadas na tecnologia, como foi o caso da
@@ -20,9 +20,9 @@ de tecnologia é muito comum exibirem um filme que deve ter o mesmo nome (não l
 definiu o que conhecemos hoje por Cross-browser, que nada mais é do que a habilidade de construir um site que suporte
 vários navegadores, falaremos dele em breve, apenas adianto que dá para perder alguns cabelos.
 
-Essa é a (humilde, diga-se de passagem) história da Internet. E a história da HTML faz parte dela, mas o que nos 
+Essa é a (humilde, diga-se de passagem) história da Internet. E a história da HTML faz parte dela, mas o que nos
 interessa é apenas enteder o HTML e a CSS. Como já disse, a história de ambas é muito interessante e vale a pena aprender
-sobre o assunto. A web está cheia de sites e documentos falando à respeito, fica a critério do leitor buscar essas 
+sobre o assunto. A web está cheia de sites e documentos falando à respeito, fica a critério do leitor buscar essas
 informações. Por hora, vamos nos deter apenas no universo do HTML e da CSS.
 
 
@@ -49,24 +49,24 @@ Abaixo conferimos um arquivo HTML na sua essência:
 <div class="code">
 <h6>HTML</h6>
 <pre>
-<html>
-    <head>
-        <title>Título da página</title>
-    </head>
-    <body>
+&lthtml&gt
+    &lthead&gt
+        &lttitle&gtTítulo da página&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt
 
-        <h1>Um título qualquer</h1>
-        <p>primeiro parágrafo/p>
-        <p>segundo parágrafo</p>
-        <p>terceiro parágrafo</p>
+        &lth1&gtUm título qualquer&lt/h1&gt
+        &ltp&gtprimeiro parágrafo/p&gt
+        &ltp&gtsegundo parágrafo&lt/p&gt
+        &ltp&gtterceiro parágrafo&lt/p&gt
 
-        <h2>Outro título qualquer</h2>
-        <p>quarto parágrafo</p>
-        <p>quinto parágrafo</p>
-        <p>sexto parágrafo</p>
+        &lth2&gtOutro título qualquer&lt/h2&gt
+        &ltp&gtquarto parágrafo&lt/p&gt
+        &ltp&gtquinto parágrafo&lt/p&gt
+        &ltp&gtsexto parágrafo&lt/p&gt
 
-    </body>
-</html>
+    &lt/body&gt
+&lt/html&gt
 </pre>
 </div>
 
@@ -74,7 +74,7 @@ Abaixo conferimos um arquivo HTML na sua essência:
 E esse tal de CSS?
 ------------------
 
-CSS (Cascading Style Sheet) determina a estilização do contéudo. 
+CSS (Cascading Style Sheet) determina a estilização do contéudo.
 > Folha de estilo em cascata é um mecanismo simples para adicionar estilos
 >( por exemplo: fontes, cores, espaçamentos) aos documentos web.
 Fonte: W3c
@@ -110,24 +110,24 @@ A CSS *"uni-se"* ao HTML de 3 formas distintas: inline, embeded e linked.
 <div class="code">
 <h6>HTML e CSS (massaroca)</h6>
 <pre>
-<html>
-    <head>
-        <title>Título da página</title>
-    </head>
-    <body>
+&lthtml&gt
+    &lthead&gt
+        &lttitle&gtTítulo da página&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt
 
-        <h1>Um título qualquer</h1>
-        <p <em>style="font-size: 12px; color#767676"</em>>primeiro parágrafo/p>
-        <p <em>style="font-size: 12px; color#767676"</em>>segundo parágrafo</p>
-        <p <em>style="font-size: 12px; color#767676"</em>>terceiro parágrafo</p>
+        &lth1&gtUm título qualquer&lt/h1&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtprimeiro parágrafo/p&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtsegundo parágrafo&lt/p&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtterceiro parágrafo&lt/p&gt
 
-        <h2>Outro título qualquer</h2>
-        <p <em>style="font-size: 12px; color#767676"</em>>quarto parágrafo</p>
-        <p <em>style="font-size: 12px; color#767676"</em>>quinto parágrafo</p>
-        <p <em>style="font-size: 12px; color#767676"</em>>sexto parágrafo</p>
+        &lth2&gtOutro título qualquer&lt/h2&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtquarto parágrafo&lt/p&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtquinto parágrafo&lt/p&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtsexto parágrafo&lt/p&gt
 
-    </body>
-</html>
+    &lt/body&gt
+&lt/html&gt
 </pre>
 </div>
 
@@ -143,30 +143,30 @@ Coloca-se as regras de CSS entre a tag "style" na seção "head" do HTML, veja o
 <div class="code">
 <h6>HTML e CSS</h6>
 <pre>
-<html>
-    <head>
-        <title>Título da página</title>
-        <em><style type="text/css" medial="all">
+&lthtml&gt
+    &lthead&gt
+        &lttitle&gtTítulo da página&lt/title&gt
+        <em>&ltstyle type="text/css" medial="all"&gt
         p {
             font-size: 12px;
             color: #767676;
-        }
-        </style></em>
-    </head>
-    <body>
+        }</em>
+        &lt/style&gt
+    &lt/head&gt
+    &ltbody&gt
 
-        <h1>Um título qualquer</h1>
-        <p>primeiro parágrafo/p>
-        <p>segundo parágrafo</p>
-        <p>terceiro parágrafo</p>
+        &lth1&gtUm título qualquer&lt/h1&gt
+        &ltp&gtprimeiro parágrafo/p&gt
+        &ltp&gtsegundo parágrafo&lt/p&gt
+        &ltp&gtterceiro parágrafo&lt/p&gt
 
-        <h2>Outro título qualquer</h2>
-        <p>quarto parágrafo</p>
-        <p>quinto parágrafo</p>
-        <p>sexto parágrafo</p>
+        &lth2&gtOutro título qualquer&lt/h2&gt
+        &ltp&gtquarto parágrafo&lt/p&gt
+        &ltp&gtquinto parágrafo&lt/p&gt
+        &ltp&gtsexto parágrafo&lt/p&gt
 
-    </body>
-</html>
+    &lt/body&gt
+&lt/html&gt
 </pre>
 </div>
 
@@ -183,30 +183,30 @@ realizada através da tag *"link"*, veja código de exemplo:
 <div class="code">
 <h6>HTML</h6>
 <pre>
-<html>
-    <head>
-        <title>Título da página</title>
-        <em><link rel="stylesheet" type="text/css" href="estilos.css" media="all" /></em>
-    </head>
-    <body>
+&lthtml&gt
+    &lthead&gt
+        &lttitle&gtTítulo da página&lt/title&gt
+        &ltem&gt&ltlink rel="stylesheet" type="text/css" href="estilos.css" media="all" /&gt&lt/em&gt
+    &lt/head&gt
+    &ltbody&gt
 
-        <h1>Um título qualquer</h1>
-        <p>primeiro parágrafo/p>
-        <p>segundo parágrafo</p>
-        <p>terceiro parágrafo</p>
+        &lth1&gtUm título qualquer&lt/h1&gt
+        &ltp&gtprimeiro parágrafo/p&gt
+        &ltp&gtsegundo parágrafo&lt/p&gt
+        &ltp&gtterceiro parágrafo&lt/p&gt
 
-        <h2>Outro título qualquer</h2>
-        <p>quarto parágrafo</p>
-        <p>quinto parágrafo</p>
-        <p>sexto parágrafo</p>
+        &lth2&gtOutro título qualquer&lt/h2&gt
+        &ltp&gtquarto parágrafo&lt/p&gt
+        &ltp&gtquinto parágrafo&lt/p&gt
+        &ltp&gtsexto parágrafo&lt/p&gt
 
-    </body>
-</html>
+    &lt/body&gt
+&lt/html&gt
 </pre>
 </div>
 
 Agora sim temos um método profissional. Toda CSS fica em arquivo separado que é incluso no HTML através de uma única linha.
-Há vantagens e desvantagens em cada um dos métodos, discutiremos isso em breve, por hora saiba que esse é o método que 
+Há vantagens e desvantagens em cada um dos métodos, discutiremos isso em breve, por hora saiba que esse é o método que
 mais utilizaremos no curso.
 
 
@@ -219,7 +219,7 @@ dá nem para sair do lugar. Quero dizer que é preciso aprender CSS para poder d
 te domina. Não precisa ser ninja em CSS, mas quanto mais conhecimento você acomular sobre CSS (e HTML também) melhor e
 mais produtivo ser seu dia a dia como desenvolverdor.
 
-Para o leitor ter uma idéia do poder da CSS dê uma olha nos seguintes trabalhos: 
+Para o leitor ter uma idéia do poder da CSS dê uma olha nos seguintes trabalhos:
 
 css zen garden
 css edge
