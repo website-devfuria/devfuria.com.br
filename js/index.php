@@ -1,4 +1,11 @@
 <?php
+/**
+ * JS home
+ */
+
+/**
+ * Includes
+ */
 require "../furia/includes/bs.php";
 ?>
 <!DOCTYPE html>
@@ -12,7 +19,7 @@ require "../furia/includes/bs.php";
         );
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>
-        <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>       
+        <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
     </head>
     <body class="respiro-em-baixo">
 
