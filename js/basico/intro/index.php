@@ -6,14 +6,7 @@ $materia = new Materia(7);
 <html lang="pt-br">
     <head>
         <title><?php echo $materia->titulo; ?> | <?php echo DOMINIO; ?></title>
-        <?php
-        $head_meta = array(
-            "description" => $materia->resumo,
-            "keywords" =>  KEYWORDS_PAD . KEYWORDS_JS . "introdução ao javascript; definição de javascript; ajax; ".
-                           "firebug; front-end; desenvolvimento fornt-end; "
-        );
-        include BASE_PATH.COMPONENTES_PATH."head_meta.php";
-        ?>
+        <?php include BASE_PATH.COMPONENTES_PATH."head_meta.php"; ?>
         <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
     </head>
     <body>

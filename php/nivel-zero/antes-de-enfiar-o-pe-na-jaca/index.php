@@ -6,14 +6,7 @@ $materia = new Materia(3);
 <html lang="pt-br">
     <head>
         <title><?php echo $materia->titulo; ?> | <?php echo DOMINIO; ?></title>
-        <?php
-        $head_meta = array(
-            "description" => $materia->resumo,
-            "keywords" =>  KEYWORDS_PAD . KEYWORDS_PHP . "endentação; endentar; endentar código; estilo de programação; ".
-                           "nomenclatura; comentários; comentando código;"
-            );
-        include BASE_PATH.COMPONENTES_PATH."head_meta.php";
-        ?>
+        <?php include BASE_PATH.COMPONENTES_PATH."head_meta.php"; ?>
         <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
     </head>
     <body>
