@@ -1,4 +1,12 @@
 <?php
+
+/**
+ * Mapa do site
+ */
+
+/**
+ * Includes
+ */
 require "../furia/includes/bs.php";
 ?>
 <!DOCTYPE html>
@@ -20,9 +28,9 @@ require "../furia/includes/bs.php";
         $nav_top['secao'] = null;
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
         ?>
-        
+
         <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
-        
+
         <div class="container sombra">
             <div class="row">
                 <div class="span12">
@@ -59,7 +67,7 @@ require "../furia/includes/bs.php";
                     </dl>
                 </div>
             </div>
-            
+
         </div><!-- container -->
     <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
     </body>

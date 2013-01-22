@@ -54,6 +54,13 @@ define('BASE_PATH', descobre_caminho_relativo());
  */
 define('ROOT_PATH', "http://www.devfuria.com.br/");
 
+
+/**
+ *
+ */
+define('VIEWS_PATH', "furia/views/");
+
+
 /**
  *
  */
