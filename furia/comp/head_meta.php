@@ -1,10 +1,15 @@
 <?php
 defined('DF') or die;
 
-$head_meta = array(
-    "description" => $materia->resumo,
-    "keywords" => KEYWORDS_PAD . $materia->getKeyWords()
-);
+/**
+ * Quando vem das matérias mudamos a descrições
+ */
+if( isset($materia) ){
+    $head_meta = array(
+        "description" => $materia->resumo,
+        "keywords" => KEYWORDS_PAD . $materia->getKeyWords()
+    );
+}
 ?>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

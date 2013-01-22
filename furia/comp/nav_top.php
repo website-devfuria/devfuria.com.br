@@ -12,6 +12,13 @@ $secoes = array(
 //    "engsoft"  => "Eng. Software",
 );
 
+/**
+ * Assinala o menu conforme a seção da matéria
+ */
+if( isset($materia) ){
+    $nav_top['secao'] = $materia->secao;
+}
+
 ?>
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
@@ -40,7 +47,7 @@ $secoes = array(
                 <ul class="dropdown-menu">
                     <li><a href="<?php echo BASE_PATH; ?>mapa-do-site">mapa do site</a></li>
                     <li><a href="https://github.com/flaviomicheletti/devfuria">forke me on github</a></li>
-                </ul>           
+                </ul>
             </div>
 
         </div>

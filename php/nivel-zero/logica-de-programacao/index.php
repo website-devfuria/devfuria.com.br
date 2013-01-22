@@ -11,11 +11,7 @@ $materia = new Materia(2);
     </head>
     <body>
 
-        <?php
-        $nav_top['secao'] = $materia->secao;
-        include BASE_PATH.COMPONENTES_PATH."nav_top.php";
-        ?>
-
+        <?php include BASE_PATH.COMPONENTES_PATH."nav_top.php";?>
         <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
 
         <div class="container sombra">
