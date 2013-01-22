@@ -7,7 +7,7 @@
 /**
  * Includes
  */
-require "/furia/includes/bs.php";
+require "furia/includes/bs.php";
 
 
 /**
