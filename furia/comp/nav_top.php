@@ -7,9 +7,7 @@ defined('DF') or die;
 $secoes = array(
     "php"      => "PHP",
     "js"       => "Javascript"
-//    "html-css" => "HTML & CSS",
-//    "mysql"    => "MySql",
-//    "engsoft"  => "Eng. Software",
+//    "html" => "HTML & CSS",
 );
 
 /**
@@ -46,7 +44,7 @@ if( isset($materia) ){
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="<?php echo BASE_PATH; ?>mapa-do-site">mapa do site</a></li>
-                    <li><a href="https://github.com/flaviomicheletti/devfuria">forke me on github</a></li>
+                    <li><a href="https://github.com/flaviomicheletti/www.devfuria.com.br">forke me on github</a></li>
                 </ul>
             </div>
 
