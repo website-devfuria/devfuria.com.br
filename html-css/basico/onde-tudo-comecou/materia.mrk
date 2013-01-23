@@ -1,12 +1,6 @@
 Onde tudo começou
 =================
 
-<div class="imagem">
-    <img src="../../imagens/tim-berners-lee.jpg" alt="Tim Berners Lee" />
-    <p>Figura 01 - Esse é o cara!.</p>
-</div>
-
-
 Tim Berners-Lee, a culpa é toda dele. No começo dos anos 90, o dito cujo, inventou o HTML (HyperText Markup Language) que
 significa Linguagem de Marcação de Hipertexto. Ele queria facilitar a comunicação de suas pesquisas com seus colegas
 e acabou resolvendo o problema de todo mundo, nascia a web.
@@ -30,6 +24,12 @@ Essa é a (humilde, diga-se de passagem) história da Internet. E a história da
 interessa é apenas enteder o HTML e a CSS. Como já disse, a história de ambas é muito interessante e vale a pena aprender
 sobre o assunto. A web está cheia de sites e documentos falando à respeito, fica a critério do leitor buscar essas
 informações. Por hora, vamos nos deter apenas no universo do HTML e da CSS.
+
+<div class="imagem">
+    <img src="../../imagens/tim-berners-lee.jpg" alt="Tim Berners Lee" />
+    <p>Figura 01 - Tim Berners-Lee, esse é o cara!.</p>
+</div>
+
 
 
 Mas afinal, o que é HTML?
@@ -276,10 +276,10 @@ HTML5
 -----
 
 Essa é a versão mais atual do HTML, o grupo WHATWG (http://www.whatwg.org/) não teve a mesma pasciência que o w3c e
-saiu na frente com as especificações da tão esperada HTML5. A nova versão trouxe novidades como videos, armazenamento
-local , canvas(uma prancheta para você desenhar via código), geolocation, web off-line, campos com autofoco,
-placeholders e muito mais. Se você é novato em HTML talvez não tenha entendido nada do que listamos sobre o HTML5, mas
-fique tranquilo(a), veremos HTML concomitante com o HTML5.
+saiu na frente com as especificações da tão esperada HTML5. A nova versão exlcluíu alguns elementos já defazados, inseriu
+aluguns outros mais "semânticos" e trouxe novidades como videos, armazenamento local , canvas(uma prancheta para você
+desenhar via código), geolocation, web off-line, campos com autofoco, placeholders e muito mais. Se você é novato em HTML
+talvez não tenha entendido nada do que listamos sobre o HTML5, mas fique tranquilo(a), veremos HTML concomitante com o HTML5.
 
 
 

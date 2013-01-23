@@ -1,0 +1,38 @@
+Elementos in-line e elementos block-level
+=========================================
+
+Antes a escreve HTML vamos tentar entender como o Navegador reenderiza o HTML que criamos.
+
+O navegador separa os elementos(as tags) em dois grandes mundos: os "in-line" e os "block-level". A diferênça básica
+é que o browser acomoda os elementos inline à esquerda um ao lado do outro e os de bloco ele coloca um embaixo do outro
+além de ocupar a tela toda. Gostaria que você <em>percebesse</em> isso ao ínves de tentar entender.
+[code1.html](code1.html "Veja a pagina em funcionamento")
+
+
+
+Reset CSS
+---------
+
+Outra coisa a se observar é que cada navegador traz um estilo padrão embutido. Isso significa que se abrirmos um html
+crú, sem estilos algum, iremos notar uma suave estilização por parte do navegador: tamanho de fontes, margens no topo e
+em baixo(botton), espaçamento(padding), e etc...
+
+Então não se engane, quando abrir um html em um navegador qualquer, inclusive no FF(Firefox), você estará vendo o
+resultado após o browser ter aplicado sua folha de estilo padrão. Extiste até uma técnica que "zera" esses estilos, muita
+vez indesejados. Eric Meyer foi o pioneiro nessa técnica e a batizou de "Reset CSS", trata-se de um pequeno trexo de
+css (um trexo esperto, diga-se de passagem) que anula a estilização embutida. Veja mais no site do figura:
+[http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/ "Eric Meyer")
+
+
+O seu HTML faz sentido quando lido sem nenhum estilo?
+----------------------------------------------------
+
+Aqui a estilização padrão do navegador pode ajudar, pois se aplicar-mos o "reset" a visualização será prejudicada, então
+quando dizemos "sem nenhum estilo" leia "apenas com o estilo padrão".
+
+<em>Estamos falando de semântica e de bom senso</em>. O seu HTML deve fazer sentido quando lido apenas com o estilo
+padrão do navegador. Estou colocando em pauta essa questão para que você tom ciência desde o início e vá se policiando,
+pois HTML parece "babá", mas quero ver você escrever um HTML bem estruturado, sem exageros, sem vícios e que no final
+faça bastante sentido.
+
+Então pratique muito e tenha como objetivo fazer um HTML descente.
