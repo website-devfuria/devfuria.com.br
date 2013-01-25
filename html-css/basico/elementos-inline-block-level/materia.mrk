@@ -1,12 +1,72 @@
 Elementos in-line e elementos block-level
 =========================================
 
-Antes de escreve HTML vamos tentar entender como o Navegador reenderiza o HTML que criamos.
+Antes de começar a crirar HTML, vamos tentar entender como o Navegador reenderiza nosso HTML.
 
-O navegador separa os elementos(as tags) em dois grandes mundos: os "in-line" e os "block-level". A diferênça básica
-é que o browser acomoda os elementos inline à esquerda um ao lado do outro e os de bloco ele coloca um embaixo do outro
-além de ocupar a tela toda. Gostaria que você <em>percebesse</em> isso ao ínves de tentar entender.
-[code1.html](code1.html "Veja a pagina em funcionamento")
+Há dois tipos básicos de tag's: as in-line e de block-level. A diferênça básica é que o browser acomoda os elementos
+inline à esquerda um ao lado do outro e os de bloco ele coloca um embaixo do outro além de ocupar a tela toda.
+
+Gostaria que você <em>percebesse</em> isso ao ínves de tentar entender.
+
+Veja o HTML abaixo para entender e clique no [link](code1.html "Veja a pagina em funcionamento")
+ para perceber como ele foi reenderizado.
+
+<div class="code menor">
+<h6>HTML(inválido)</h6>
+<pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;elementos in-li e block-level&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+            body * {
+                border: 1px solid #000;
+                background-color: #F5F5F5;
+                margin: 20px;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;Título 1&lt;/h1&gt;
+        &lt;h2&gt;Título 2&lt;/h2&gt;
+
+        &lt;span&gt;span 01&lt;/span&gt;
+        &lt;span&gt;span 02&lt;/span&gt;
+        &lt;span&gt;span 03&lt;/span&gt;
+
+
+        &lt;p&gt;parágrafo a&lt;/p&gt;
+        &lt;p&gt;parágrafo b&lt;/p&gt;
+
+        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
+        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
+        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
+
+        &lt;div&gt;div 1&lt;/div&gt;
+        &lt;div&gt;div 2&lt;/div&gt;
+
+        &lt;a href="#"&gt;Link 1&lt;/a&gt;
+        &lt;a href="#"&gt;também me chamam de âncora&lt;/a&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+Esse não é um HTML "oficial", é apenas para fins ilustrativos. Perceba que eu coloquei a palavra "inválido" no título
+do código. Eu criei um CSS básico e misturei as tag's inline e block para você perceber como elas se comportam.
+
+Entender esse aspecto básico lhe ajudará a criar páginas HTML sem muita dor de cabeça. O problema reside no fato
+de que estamos acostumados a ver uma página em branco de um software do tipo editor de textos ou editor de imagens e
+vamos "dizendo" ao softwarer "coloque este círuclo aqui, aquele texto ali, agora desça um pouco o círculo e etc..".
+
+Com o HTML há uma diferênça crucial: existe uma certa manha para desenharmos a arte que pintamos em nossa cabeça.
+E entender essa "manha" fará toda a diferênça.
+
+A dica é: não tente criar em HTML a página que você idealizou sem antes se familiarizar com a forma que o navegador
+reenderiza o HTML.
+
+Outra dica é um tanto óbivia: pratique muito, muito mesmo!.
 
 
 

@@ -32,9 +32,9 @@ function descobre_caminho_relativo(){
     /*
      * 0 para dialhost
      * 1 no escritório
-     * 3 no note do ale
+     * 2 no note do ale
      */
-    $qtd-= 3;
+    $qtd-= 2;
     $res = str_pad("", $qtd*3, "../", STR_PAD_LEFT);
 
     return $res;
