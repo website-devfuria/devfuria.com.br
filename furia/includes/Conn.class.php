@@ -22,7 +22,7 @@ abstract class Conn {
             return new PDO(
                 "mysql:host=localhost;dbname=devfuria_main",
                 "root",
-                "beta16",
+                "1234",
                 array(
                     PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
                 )
