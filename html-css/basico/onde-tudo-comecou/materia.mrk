@@ -38,22 +38,23 @@ Mas afinal, o que é HTML?
 *HTML, originalmente, marca o conteúdo*. Ele faz isso através de sua "etiquetas", ou melhor, através de suas *tag's*.
 A tag "p" define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:
 
-+ *html*, define o próprio documento HTML.
-+ *head*, define o cabeçário do documento.
-+ *titlte*, define o título.
-+ *body*, define o corpo.
-+ *h1*, definie o primeiro título, o mais importante.
-+ *h2*, definie o segudo título, e assim até o h6.
-+ *a*, define uma âncora, quero dizer, o famoso link.
-+ *img*, define uma imagem
++ *html* - define o próprio documento HTML.
++ *head* - define o cabeçalho do documento.
++ *titlte* - define o título.
++ *body* - define o corpo.
++ *h1* - definie o primeiro título(o mais importante).
++ *h2* - definie o segudo título, e assim até o h6.
++ *a* -  define uma âncora, quero dizer, o famoso link.
++ *img* - define uma imagem
 
 As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: &lt;nome da tag&gt; e toda tag aberta deve ser fechada.
+
 A barra para direita indica qual é a *tag de fechamento*, exemplo: &lt;p&gt;aqui é um parágrafo&lt;/p&gt;
 
 Abaixo conferimos um arquivo HTML na sua essência:
 
 <div class="code">
-<h6>HTML</h6>
+<h6>HTML(inválido)</h6>
 <pre>
 &lthtml&gt
     &lthead&gt
@@ -75,6 +76,57 @@ Abaixo conferimos um arquivo HTML na sua essência:
 &lt/html&gt
 </pre>
 </div>
+
+Repare que eu coloquei a palavra "inválido" alertando quanto à validade do HTML.
+O código acima não é valido e serve apenas para fins didâtico e ilustrativo. 
+
+
+Validando seu HTML
+------------------
+
+O W3c dita as normas do que é ou não válido na construção de arquivos HTML, eles produzem as famozas especificações
+cohecidas comom Web Standards.
+
+Produziram também uma ferramenta online que testa o seu código HTML e aponta os possíveis erros. Trata-se do
+[Markup Validation Service](http://validator.w3.org/ "Validador W3c").
+
+É possível enviar o HTML de 3 formas:
+
+* passando o link da web(Validate by URI),
+* enviando o arquivo(Validate by UPLOAD) e
+* inseridno o conteúdo diretamente(Validate by Direct Input).
+
+O código abaixo é o HTML acima corrigido, faltava-lhe o <em>DOCTYPE</em> e a especificação do <em>charset</em>. Falaremos
+de ambos em breve.
+
+<div class="code">
+<h6>HTML</h6>
+<pre>
+&lt;!DOCTYPE
+        HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd"&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;Um título qualquer&lt;/h1&gt;
+        &lt;p&gt;primeiro parágrafo/p&gt;
+        &lt;p&gt;segundo parágrafo&lt;/p&gt;
+        &lt;p&gt;terceiro parágrafo&lt;/p&gt;
+
+        &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
+        &lt;p&gt;quarto parágrafo&lt;/p&gt;
+        &lt;p&gt;quinto parágrafo&lt;/p&gt;
+        &lt;p&gt;sexto parágrafo&lt;/p&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
 
 
 E esse tal de CSS?
@@ -291,4 +343,5 @@ Sim, são coisas distintas umas das outras, mas em sua essencia não passam de m
 o termo HTML de forma gernérica e quando for necessário ser mais específico utilzaremos o termo correto.
 
 Então vamos ao HTML e à CSS...
+
 23/01/2012
