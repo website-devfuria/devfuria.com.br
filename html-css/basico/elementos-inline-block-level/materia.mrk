@@ -1,7 +1,7 @@
 Elementos in-line e elementos block-level
 =========================================
 
-Antes a escreve HTML vamos tentar entender como o Navegador reenderiza o HTML que criamos.
+Antes de escreve HTML vamos tentar entender como o Navegador reenderiza o HTML que criamos.
 
 O navegador separa os elementos(as tags) em dois grandes mundos: os "in-line" e os "block-level". A diferênça básica
 é que o browser acomoda os elementos inline à esquerda um ao lado do outro e os de bloco ele coloca um embaixo do outro
