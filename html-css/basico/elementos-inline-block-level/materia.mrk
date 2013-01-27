@@ -4,9 +4,9 @@ Elementos in-line e elementos block-level
 Há dois tipos básicos de tag's: as in-line e de block-level.
 
 A diferênça básica é que o browser acomoda os elementos
-inline à esquerda um ao lado do outro e os de bloco ele coloca um embaixo do outro além de ocupar a tela toda.
+inline à esquerda um ao lado do outro e as de bloco ele coloca uma embaixo da outra ocupando a tela toda.
 
-Veja o HTML abaixo para <em>entender<em> e clique no [link](code1.html "Veja a pagina em funcionamento")
+Veja o HTML abaixo para <em>entender</em> e clique no [link](code1.html "Veja a pagina em funcionamento")
 para <em>perceber</em> como ele foi reenderizado.
 
 <div class="code menor">
