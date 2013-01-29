@@ -1,0 +1,116 @@
+Introdução ao HTML(5) e ao CSS(3)
+==================================
+
+mostrar as tag's mais básicas separadamente
+
+que tal mostar algumas do HTML5?
+
+
+A CSS *"uni-se"* ao HTML de 3 formas distintas: inline, embeded e linked.
+
+
+### CSS - inline (na linha) ###
+
+É o método mais simples, declaramos a regra com o emprego do atributo "style" do HTML, exemplo:
+
+<div class="code">
+<h6>HTML e CSS (massaroca)</h6>
+<pre>
+&lthtml&gt
+    &lthead&gt
+        &lttitle&gtTítulo da página&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt
+
+        &lth1&gtUm título qualquer&lt/h1&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtprimeiro parágrafo/p&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtsegundo parágrafo&lt/p&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtterceiro parágrafo&lt/p&gt
+
+        &lth2&gtOutro título qualquer&lt/h2&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtquarto parágrafo&lt/p&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtquinto parágrafo&lt/p&gt
+        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtsexto parágrafo&lt/p&gt
+
+    &lt/body&gt
+&lt/html&gt
+</pre>
+</div>
+
+O leitor atento notou que tivemos que repetir a regra em cada parágrafo. Essa forma além de repetir código, não ajuda na
+legibilidade e NÂO permite o controle centralizado da CSS. Programadores e designs, no geral, evitam a CSS inline.
+Ainda não "dá cadeia" utilizar-se de CSS inline, se achar que precise dela, pode usá-la com bom censo.
+
+
+### CSS - embeded (incorporadas) ###
+
+Coloca-se as regras de CSS entre a tag "style" na seção "head" do HTML, veja o exemplo:
+
+<div class="code">
+<h6>HTML e CSS</h6>
+<pre>
+&lthtml&gt
+    &lthead&gt
+        &lttitle&gtTítulo da página&lt/title&gt
+        <em>&ltstyle type="text/css" medial="all"&gt
+        p {
+            font-size: 12px;
+            color: #767676;
+        }</em>
+        &lt/style&gt
+    &lt/head&gt
+    &ltbody&gt
+
+        &lth1&gtUm título qualquer&lt/h1&gt
+        &ltp&gtprimeiro parágrafo/p&gt
+        &ltp&gtsegundo parágrafo&lt/p&gt
+        &ltp&gtterceiro parágrafo&lt/p&gt
+
+        &lth2&gtOutro título qualquer&lt/h2&gt
+        &ltp&gtquarto parágrafo&lt/p&gt
+        &ltp&gtquinto parágrafo&lt/p&gt
+        &ltp&gtsexto parágrafo&lt/p&gt
+
+    &lt/body&gt
+&lt/html&gt
+</pre>
+</div>
+
+Já é bem melhor que o método anterior: localizaremos a CSS com mais facilidade no documento.
+Mas há o método campeão...
+
+
+### CSS - linked (externos) ###
+
+Coloca-se as regras de CSS em um arquivo separado do HTML. Normalmente a extensão do arquivo é *".css"*. A "cola" é
+realizada através da tag *"link"*, veja código de exemplo:
+
+
+<div class="code">
+<h6>HTML</h6>
+<pre>
+&lthtml&gt
+    &lthead&gt
+        &lttitle&gtTítulo da página&lt/title&gt
+        &ltem&gt&ltlink rel="stylesheet" type="text/css" href="estilos.css" media="all" /&gt&lt/em&gt
+    &lt/head&gt
+    &ltbody&gt
+
+        &lth1&gtUm título qualquer&lt/h1&gt
+        &ltp&gtprimeiro parágrafo/p&gt
+        &ltp&gtsegundo parágrafo&lt/p&gt
+        &ltp&gtterceiro parágrafo&lt/p&gt
+
+        &lth2&gtOutro título qualquer&lt/h2&gt
+        &ltp&gtquarto parágrafo&lt/p&gt
+        &ltp&gtquinto parágrafo&lt/p&gt
+        &ltp&gtsexto parágrafo&lt/p&gt
+
+    &lt/body&gt
+&lt/html&gt
+</pre>
+</div>
+
+Agora sim temos um método profissional. Toda CSS fica em arquivo separado que é incluso no HTML através de uma única linha.
+Há vantagens e desvantagens em cada um dos métodos, discutiremos isso em breve, por hora saiba que esse é o método que
+mais utilizaremos no curso.

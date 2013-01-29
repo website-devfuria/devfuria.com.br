@@ -81,53 +81,36 @@ Repare que eu coloquei a palavra "inválido" alertando quanto à validade do HTM
 O código acima não é valido e serve apenas para fins didâtico e ilustrativo. 
 
 
-Validando seu HTML
-------------------
 
-O W3c dita as normas do que é ou não válido na construção de arquivos HTML, eles produzem as famozas especificações
-cohecidas comom Web Standards.
+W3C
+---
 
-Produziram também uma ferramenta online que testa o seu código HTML e aponta os possíveis erros. Trata-se do
-[Markup Validation Service](http://validator.w3.org/ "Validador W3c").
-
-É possível enviar o HTML de 3 formas:
-
-* passando o link da web(Validate by URI),
-* enviando o arquivo(Validate by UPLOAD) e
-* inseridno o conteúdo diretamente(Validate by Direct Input).
-
-O código abaixo é o HTML acima corrigido, faltava-lhe o <em>DOCTYPE</em> e a especificação do <em>charset</em>. Falaremos
-de ambos em breve.
-
-<div class="code">
-<h6>HTML</h6>
-<pre>
-&lt;!DOCTYPE
-        HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd"&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Título da página&lt;/title&gt;
-        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-
-        &lt;h1&gt;Um título qualquer&lt;/h1&gt;
-        &lt;p&gt;primeiro parágrafo/p&gt;
-        &lt;p&gt;segundo parágrafo&lt;/p&gt;
-        &lt;p&gt;terceiro parágrafo&lt;/p&gt;
-
-        &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
-        &lt;p&gt;quarto parágrafo&lt;/p&gt;
-        &lt;p&gt;quinto parágrafo&lt;/p&gt;
-        &lt;p&gt;sexto parágrafo&lt;/p&gt;
-
-    &lt;/body&gt;
-&lt;/html&gt;
-</pre>
-</div>
+Completando a história da HTML: o W3C é um consórcio que regulamenta as especificações tanto do HTML como do CSS. O
+W3C é a fonte oficial do HTML e CSS. É possível encontrar as traduções das especificações para a língua portuguesa.
+Dois pequenos alertas :  a) Estudar pela especificação é mais difícil(e mais chata também) e b) nem todos os navegadores
+implemtam as especificações em sua totalidade, isso siginifica que a especificação diz uma coisa e seu navegador
+comporta-se de outro, restando para o programador ou desgin "se virar" para encontrar um solução.
 
 
+
+HTML5
+-----
+
+Essa é a versão mais atual do HTML. O grupo WHATWG ([http://www.whatwg.org/](http://www.whatwg.org/)) não teve a mesma
+pasciência que o w3c e saiu na frente com as especificações da tão esperada HTML5. A nova versão exlcluíu alguns 
+elementos já defazados, inseriu aluguns outros mais "semânticos" e trouxe novidades como videos, armazenamento local, 
+canvas(uma prancheta para você desenhar via código), geolocation, web off-line, campos com autofoco, placeholders e muito
+mais. Se você é novato em HTML talvez não tenha entendido nada do que listamos sobre o HTML5, mas fique tranquilo(a),
+veremos HTML concomitante com o HTML5.
+
+
+
+HTML, DHTML , XHTML, HTML5, no final das contas é tudo HTML
+------------------------------------------------------------
+
+No início era apenas HTML, depois veio DHTML (o "d" era de Dynamic), depois o XHTML e hoje temos o HTML5.
+Sim, são coisas distintas umas das outras, mas em sua essencia não passam de mero HTML. Por simplificação, utilizaremos
+o termo HTML de forma gernérica e quando for necessário ser mais específico utilzaremos o termo correto.
 
 E esse tal de CSS?
 ------------------
@@ -136,7 +119,6 @@ CSS (Cascading Style Sheet) determina a estilização do contéudo.
 > Folha de estilo em cascata é um mecanismo simples para adicionar estilos
 >( por exemplo: fontes, cores, espaçamentos) aos documentos web.
 <small>Fonte: W3c</small>
-
 
 Com a CSS é possível estilizar páginas HTML e assim, separs as obrigações de cada tecnologia:
 
@@ -163,116 +145,6 @@ Entre as chaves, neste exemplo, há duas propriedades: *font-size*  e *color*.
 *12px* e *#767676* são seus respectivos valores.
 A regra CSS pode conter várias declarações separadas por ponto e vírgula.
 
-A CSS *"uni-se"* ao HTML de 3 formas distintas: inline, embeded e linked.
-
-
-### CSS - inline (na linha) ###
-
-É o método mais simples, declaramos a regra com o emprego do atributo "style" do HTML, exemplo:
-
-<div class="code">
-<h6>HTML e CSS (massaroca)</h6>
-<pre>
-&lthtml&gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-    &lt/head&gt
-    &ltbody&gt
-
-        &lth1&gtUm título qualquer&lt/h1&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtprimeiro parágrafo/p&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtsegundo parágrafo&lt/p&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtterceiro parágrafo&lt/p&gt
-
-        &lth2&gtOutro título qualquer&lt/h2&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtquarto parágrafo&lt/p&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtquinto parágrafo&lt/p&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtsexto parágrafo&lt/p&gt
-
-    &lt/body&gt
-&lt/html&gt
-</pre>
-</div>
-
-O leitor atento notou que tivemos que repetir a regra em cada parágrafo. Essa forma além de repetir código, não ajuda na
-legibilidade e NÂO permite o controle centralizado da CSS. Programadores e designs, no geral, evitam a CSS inline.
-Ainda não "dá cadeia" utilizar-se de CSS inline, se achar que precise dela, pode usá-la com bom censo.
-
-
-### CSS - embeded (incorporadas) ###
-
-Coloca-se as regras de CSS entre a tag "style" na seção "head" do HTML, veja o exemplo:
-
-<div class="code">
-<h6>HTML e CSS</h6>
-<pre>
-&lthtml&gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-        <em>&ltstyle type="text/css" medial="all"&gt
-        p {
-            font-size: 12px;
-            color: #767676;
-        }</em>
-        &lt/style&gt
-    &lt/head&gt
-    &ltbody&gt
-
-        &lth1&gtUm título qualquer&lt/h1&gt
-        &ltp&gtprimeiro parágrafo/p&gt
-        &ltp&gtsegundo parágrafo&lt/p&gt
-        &ltp&gtterceiro parágrafo&lt/p&gt
-
-        &lth2&gtOutro título qualquer&lt/h2&gt
-        &ltp&gtquarto parágrafo&lt/p&gt
-        &ltp&gtquinto parágrafo&lt/p&gt
-        &ltp&gtsexto parágrafo&lt/p&gt
-
-    &lt/body&gt
-&lt/html&gt
-</pre>
-</div>
-
-Já é bem melhor que o método anterior: localizaremos a CSS com mais facilidade no documento.
-Mas há o método campeão...
-
-
-### CSS - linked (externos) ###
-
-Coloca-se as regras de CSS em um arquivo separado do HTML. Normalmente a extensão do arquivo é *".css"*. A "cola" é
-realizada através da tag *"link"*, veja código de exemplo:
-
-
-<div class="code">
-<h6>HTML</h6>
-<pre>
-&lthtml&gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-        &ltem&gt&ltlink rel="stylesheet" type="text/css" href="estilos.css" media="all" /&gt&lt/em&gt
-    &lt/head&gt
-    &ltbody&gt
-
-        &lth1&gtUm título qualquer&lt/h1&gt
-        &ltp&gtprimeiro parágrafo/p&gt
-        &ltp&gtsegundo parágrafo&lt/p&gt
-        &ltp&gtterceiro parágrafo&lt/p&gt
-
-        &lth2&gtOutro título qualquer&lt/h2&gt
-        &ltp&gtquarto parágrafo&lt/p&gt
-        &ltp&gtquinto parágrafo&lt/p&gt
-        &ltp&gtsexto parágrafo&lt/p&gt
-
-    &lt/body&gt
-&lt/html&gt
-</pre>
-</div>
-
-Agora sim temos um método profissional. Toda CSS fica em arquivo separado que é incluso no HTML através de uma única linha.
-Há vantagens e desvantagens em cada um dos métodos, discutiremos isso em breve, por hora saiba que esse é o método que
-mais utilizaremos no curso.
-
-
 
 O poder da CSS
 ---------------
@@ -284,64 +156,32 @@ mais produtivo será seu dia a dia como desenvolverdor.
 
 Para o leitor ter uma idéia do poder da CSS dê uma olha nos seguintes trabalhos:
 
-http://www.csszengarden.com/
+[http://www.csszengarden.com/](http://www.csszengarden.com/)
 
-http://meyerweb.com/eric/css/edge/
-
-
-
-W3C
----
-
-Completando a história da HTML: o W3C é um consórcio que regulamenta as especificações tanto do HTML como do CSS. O
-W3C é a fonte oficial do HTML e CSS. É possível encontrar as traduções das especificações para a língua portuguesa.
-Dois pequenos alertas :  a) Estudar pela especificação é mais difícil(e mais chata também) e b) nem todos os navegadores
-implemtam as especificações em sua totalidade, isso siginifica que a especificação diz uma coisa e seu navegador
-comporta-se de outro, restando para o programador ou desgin "se virar" para encontrar um solução.
+[http://meyerweb.com/eric/css/edge/](http://meyerweb.com/eric/css/edge/)    
 
 
 
-Firebug
--------
+Ferramentas
+-----------
 
-O FireBug eu já havia comentado sobre ele na matéria http://www.devfuria.com.br/js/basico/preparando-o-terreno/.
+O <em>FireBug</em> eu já havia comentado sobre ele na matéria [http://www.devfuria.com.br/js/basico/preparando-o-terreno/](http://www.devfuria.com.br/js/basico/preparando-o-terreno/).
+
 Ele é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
 [https://addons.mozilla.org/pt-br/firefox/addon/firebug](https://addons.mozilla.org/pt-br/firefox/addon/firebug "FireBug")
 
 O Firebug é um verdadeiro canivete suíço, dá para fazer uma coisas impressionantes com ele e no fim acaba se saindo
 como uma ferramenta indispensável.
 
+<em>Web developer</em> é um outro plugin do Firefox igualmente essencial como o Firebug.
+Instale os dois e reserve um tempo para descobrir
+o que eles podem fazer por você. 
 
-
-Web developer
--------------
-
-Esse é um outro plugin do Firefox igualmente essencial com o firebug. Instale os dois e reserve um tempo para descobrir
-o que eles podem fazer por você. Em breve volto para falar mais detalhes sobre essas ferramentas.
+Em breve voltarei para falar mais detalhes sobre essas ferramentas.
 
 Disponível em:
 [https://addons.mozilla.org/pt-br/firefox/addon/web-developer/](https://addons.mozilla.org/pt-br/firefox/addon/web-developer/ "Web Developer")
 
 
-
-HTML5
------
-
-Essa é a versão mais atual do HTML, o grupo WHATWG (http://www.whatwg.org/) não teve a mesma pasciência que o w3c e
-saiu na frente com as especificações da tão esperada HTML5. A nova versão exlcluíu alguns elementos já defazados, inseriu
-aluguns outros mais "semânticos" e trouxe novidades como videos, armazenamento local , canvas(uma prancheta para você
-desenhar via código), geolocation, web off-line, campos com autofoco, placeholders e muito mais. Se você é novato em HTML
-talvez não tenha entendido nada do que listamos sobre o HTML5, mas fique tranquilo(a), veremos HTML concomitante com o HTML5.
-
-
-
-HTML, DHTML , XHTML, HTML5, no final das contas é tudo HTML
-------------------------------------------------------------
-
-No início era apenas HTML, depois veio DHTML (o "d" era de Dynamic), depois o XHTML e hoje temos o HTML5.
-Sim, são coisas distintas umas das outras, mas em sua essencia não passam de mero HTML. Por simplificação, utilizaremos
-o termo HTML de forma gernérica e quando for necessário ser mais específico utilzaremos o termo correto.
-
-Então vamos ao HTML e à CSS...
 
 23/01/2012
