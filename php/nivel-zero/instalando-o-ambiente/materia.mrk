@@ -25,14 +25,19 @@ desenvolvimento deve simular ao máximo o ambiente de produção”*, porém acr
 preocupação de um programador iniciante.
 
 Se você é do mundo Linux, ótimo. Se você é do ambiente Windows, gostaria de convidá-lo a experimentar o mundo Linux.
-Agora, se você aspira ser um prpfissional da área de TI, será sua obrigação conhecer outros sistemas operacionais além
-do Windows. Que tal começar pelo Linux?.
+Agora, se você aspira ser um profissional da área de TI, será sua obrigação conhecer outros sistemas operacionais além
+do Windows.
+
+Que tal começar pelo Linux?.
 
 
 ### E o pessoal do Windows? ###
 
-Para o pessoal windows eu sugiro a instalação do WAMP procure por "wamp server", ele já instala tudo no estilo next, next,
-next: apache, mysql, php, phpmyadmin. Irá faltar apenas o X-debug.
+Para o pessoal windows eu sugiro a instalação do WAMP, procure por "wamp server".
+
+Ele já instala tudo no estilo next, next, next, finish: apache, mysql, php, phpmyadmin.
+
+Irá faltar apenas o X-debug.
 
 
 Botando a mão na massa
@@ -290,6 +295,6 @@ seguida executá-lo (obviamente).
 Como controlador de versão eu sugiro o *svn* que ainda é muito utilizado. Dá para instalar pelo repositório da distro, eu
 utilizava o svn no windows e sentia falta de uma interface no nautilus (o gerenciador de arquivos do linux) então eu
 descobri o nautilus-svn, procure por rabbit-svn e instale ele também. Atualmente (2012) a controle de versão mais
-utilizado e divulgado é o *GIT*, procure pelo por github e aprenda mais sobre este controlador de versão.
+utilizado e divulgado é o *GIT*, procure por "github" e aprenda mais sobre este controlador de versão.
 
 Como navegador eu sugiro o Firefox e não se esqueça dos plugins FireBug e WebDeveloper eles quebram um galho enorme.
