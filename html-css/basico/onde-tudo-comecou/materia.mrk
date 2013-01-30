@@ -33,7 +33,7 @@ informações. Por hora, vamos nos deter apenas no universo do HTML e da CSS.
 
 
 Mas afinal, o que é HTML?
---------------------
+-------------------------
 
 *HTML, originalmente, marca o conteúdo*. Ele faz isso através de sua "etiquetas", ou melhor, através de suas *tag's*.
 A tag "p" define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:
@@ -82,8 +82,7 @@ O código acima não é valido e serve apenas para fins didâtico e ilustrativo.
 
 
 
-W3C
----
+### W3C
 
 Completando a história da HTML: o W3C é um consórcio que regulamenta as especificações tanto do HTML como do CSS. O
 W3C é a fonte oficial do HTML e CSS. É possível encontrar as traduções das especificações para a língua portuguesa.
@@ -92,25 +91,19 @@ implemtam as especificações em sua totalidade, isso siginifica que a especific
 comporta-se de outro, restando para o programador ou desgin "se virar" para encontrar um solução.
 
 
-
-HTML5
------
-
-Essa é a versão mais atual do HTML. O grupo WHATWG ([http://www.whatwg.org/](http://www.whatwg.org/)) não teve a mesma
-pasciência que o w3c e saiu na frente com as especificações da tão esperada HTML5. A nova versão exlcluíu alguns 
-elementos já defazados, inseriu aluguns outros mais "semânticos" e trouxe novidades como videos, armazenamento local, 
-canvas(uma prancheta para você desenhar via código), geolocation, web off-line, campos com autofoco, placeholders e muito
-mais. Se você é novato em HTML talvez não tenha entendido nada do que listamos sobre o HTML5, mas fique tranquilo(a),
-veremos HTML concomitante com o HTML5.
-
-
-
-HTML, DHTML , XHTML, HTML5, no final das contas é tudo HTML
-------------------------------------------------------------
+### HTML, DHTML , XHTML, HTML5, no final das contas é tudo HTML
 
 No início era apenas HTML, depois veio DHTML (o "d" era de Dynamic), depois o XHTML e hoje temos o HTML5.
 Sim, são coisas distintas umas das outras, mas em sua essencia não passam de mero HTML. Por simplificação, utilizaremos
 o termo HTML de forma gernérica e quando for necessário ser mais específico utilzaremos o termo correto.
+
+O HTML5 é a versão mais atual do HTML. O grupo WHATWG ([http://www.whatwg.org/](http://www.whatwg.org/)) não teve a mesma
+pasciência que o w3c e saiu na frente com as especificações da tão esperada HTML5. A nova versão exlcluíu alguns 
+elementos já defazados, inseriu alguns outros mais "semânticos" e trouxe novidades como videos, armazenamento local, 
+canvas(uma prancheta para você desenhar via código), geo-location, web off-line, campos com autofoco, placeholders e muito
+mais. Se você é novato em HTML talvez não tenha entendido nada do que listamos sobre o HTML5, mas fique tranquilo(a),
+veremos HTML concomitante com o HTML5.
+
 
 E esse tal de CSS?
 ------------------
@@ -120,7 +113,7 @@ CSS (Cascading Style Sheet) determina a estilização do contéudo.
 >( por exemplo: fontes, cores, espaçamentos) aos documentos web.
 <small>Fonte: W3c</small>
 
-Com a CSS é possível estilizar páginas HTML e assim, separs as obrigações de cada tecnologia:
+Com a CSS é possível estilizar páginas HTML e assim, separar as obrigações de cada tecnologia:
 
 * A HTML define a estrutura do documento e
 * A CSS definie a estilização
@@ -145,9 +138,33 @@ Entre as chaves, neste exemplo, há duas propriedades: *font-size*  e *color*.
 *12px* e *#767676* são seus respectivos valores.
 A regra CSS pode conter várias declarações separadas por ponto e vírgula.
 
+Se uma imagem vale por mil palavras, vou lhe mandar 4 imagens, espero que valham 4 mil palavras...
 
-O poder da CSS
----------------
+<div class="imagem">
+    <img src="css-syntax01.gif" alt="Seletor CSS" style="border: 1px solid #CCC"/>
+    <p><a href="http://www.sleddogstudio.com/webdesign/lesson/09/">Fonte da imagem acima</a></p>
+</div>
+
+<div class="imagem">
+    <img src="anatomy-of-a-css-rule.gif" alt="Seletor CSS" style="border: 1px solid #CCC"/>
+    <p><a href="http://learnwebcode.com/what-is-css/">Fonte da imagem acima</a></p>
+</div>
+
+<div class="imagem">
+    <img src="css-selectors-lrg.png" alt="Seletor CSS" style="border: 1px solid #CCC"/>
+    <p><a href="http://en.support.wordpress.com/custom-design/css-basics/">Fonte da imagem acima</a></p>
+</div>
+
+<div class="imagem">
+    <img src="css_selector_declaration.png" alt="Seletor CSS" style="border: 1px solid #CCC"/>
+    <p><a href="http://cscie12.dce.harvard.edu/lecture_notes/2006-07/20070220/handout.html">Fonte da imagem acima</a></p>
+</div>
+
+
+
+
+
+### O poder da CSS
 
 A CSS é uma realidade incontestável para quem desenvolve aplicações web. Não dá para caminhar sem ela, na verdade não
 dá nem para sair do lugar. Quero dizer que é preciso aprender CSS para poder desenvolver bem, ou você domina ela ou ela
