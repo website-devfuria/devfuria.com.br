@@ -1,16 +1,70 @@
 Introdução ao HTML(5) e ao CSS(3)
 ==================================
 
-mostrar as tag's mais básicas separadamente
+Vamos dar uma rápida olhada nas tag's básicas e uma "passeada" com o CSS.
 
-que tal mostar algumas do HTML5?
+### Âncora(link)
+    <a href="pagina-ao-clicar.html">Isto é um link</a>;
+
+O link possue a proprieda <em>href</em> (<em>h</em>ypertext <em>ref</em>erence) que nada mais é do que o alvo que será
+alcançado quando clicarmos no link.
+
+Esse alvo pode ser uma outra página html, ou um script de servidor, por exemplo php.
+
+Pode até apontar para uma imagem ou outro arquivo qualquer (e então o navegador perguntará so o usuário quer fazer o
+dowload ou abrí-lo com algum programa).
+
+O alvo pode estar em um nível hierarquico de pasta diferente, para baixo ou para cima.
+
+Trata-se do <em>endereço
+relativo</em> e vamos para baixo, de pasta em pasta, com o símbolo <em>"../"</em> exemplo:
+
+    <a href="../../../pagina-ao-clicar.html">Isto é um link 3 pastas abaixo</a>;
+
+E para cima, com o nome da pasta, exemplo:
+
+    <a href="pasta/pasta/pasta/pagina-ao-clicar.html">Isto é um link três pastas acima</a>;
+
+Na URL da âncora também podemos passar parâmetros com um par de valor, onde o primeiro valor é o nome da variável e o
+segundo é o valor dessa variável, mas isso nos veremos mais afundo quando estivermos estudando uma linguagem "do lado
+do servidor. Exemplo: 
+
+    <a href="pscript.php?varA=valor1&varB=valor2">Isto é um link com dois parâmetros</a>;
+
+link:hover
+
+### Listas
 
 
-A CSS *"uni-se"* ao HTML de 3 formas distintas: <em>inline, embeded e linked</em>.
+### Parágrafos e imagens
+
+\# texto
+
+texto # texto
+
+texto #
+
+
+### Tabelas
+dados tabulares
+tableless
+
+
+
+### Formulários, inputs e labels
+
+maxlength
+placeholder
+
+
+### Div's e Span's
+
 
 ### CSS - inline (na linha) ###
 
-É o método mais simples, declaramos a regra com o emprego do atributo "style" do HTML, exemplo:
+A CSS *"uni-se"* ao HTML de 3 formas distintas: <em>inline, embeded e linked</em>.
+
+Inline o método mais simples, declaramos a regra com o emprego do atributo "style" do HTML, exemplo:
 
 <div class="code">
 <h6>HTML & CSS</h6>
@@ -51,7 +105,7 @@ Coloca-se as regras de CSS entre a tag "style" na seção "head" do HTML, veja o
 &lthtml&gt
     &lthead&gt
         &lttitle&gtTítulo da página&lt/title&gt
-        <em>&ltstyle type="text/css" medial="all"&gt
+        <em>&ltstyle type="text/css" media="all"&gt
         p {
             font-size: 12px;
             color: #767676;
@@ -114,3 +168,6 @@ Agora sim temos um método profissional. Toda CSS fica em arquivo separado que �
 Há vantagens e desvantagens em cada um dos métodos, discutiremos isso em breve, por hora saiba que esse é o método mais
 adequado e por essa razão o que mais utilizaremos no curso, porém não leve tudo a ferro-e-fogo: pode lançar mão das 3
 formas quando e onde ahcar melhor.
+
+
+terminar falando um pouco da CSS3, level1, level2 e level3
