@@ -34,7 +34,7 @@ function descobre_caminho_relativo(){
      * 1 no escritório
      * 2 no note do ale
      */
-    $qtd-= 2;
+    $qtd-= 1;
     $res = str_pad("", $qtd*3, "../", STR_PAD_LEFT);
 
     return $res;

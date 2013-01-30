@@ -27,7 +27,7 @@ E para cima, com o nome da pasta, exemplo:
 
 Na URL da âncora também podemos passar parâmetros com um par de valor, onde o primeiro valor é o nome da variável e o
 segundo é o valor dessa variável, mas isso nos veremos mais afundo quando estivermos estudando uma linguagem "do lado
-do servidor. Exemplo: 
+do servidor. Exemplo:
 
     <a href="pscript.php?varA=valor1&varB=valor2">Isto é um link com dois parâmetros</a>;
 
@@ -60,9 +60,45 @@ placeholder
 ### Div's e Span's
 
 
-### CSS - inline (na linha) ###
+### Cascading Style Sheets
 
-A CSS *"uni-se"* ao HTML de 3 formas distintas: <em>inline, embeded e linked</em>.
+Quem começa a aprender CSS logo se pergunta: <em>o que será esse negócio de cascata?</em>. É um conceito.
+
+Além dele temos a questão da herânça (nada a ver com oop, olha lá hein!!!) e a especificidade.
+
+Tudo bem, que tal não esquentarmos a cabeça com isso por enquanto? Vamos cair de cabeça e depois, quando estiver mais
+familiarizado, voltamos para "fechar" esses conceitos, ok?
+
+Na matéria anterior (onde tudo começou) vimos como é a estrutura de uma rule-set. Sempre que estilizamos o HTML
+precisamos pensar primeiro em <em>qual será o nosso elemento(s) alvo?</em> E na sequência aplicamos o rule-set.
+Há uma dúzia de formas diferentes de encontrar elementos HTML. Fazemos isso através dos <em>seletores</em>.
+
+Está curioso? Dê uma olhada na tabela abaixo:
+
+<div class="imagem">
+    <img src="infograficoSeletores.jpg" alt="Info gráfico de seletores css" />
+    <p>Fonte: <a href="http://www.linhadecodigo.com.br/artigo/3579/seletores-das-css-infografico.aspx">Linha de código</a></p>
+</div>
+
+...mas não se assuste, vamos devagar aqui também.
+
+A CSS também possue <em>unidades de medidas</em>: px(pixel), pt(pontos), em(relativo ao tamnho da fonte) e %(porcentagem).
+A mais simples e conhecida é a <em>pixel</em>. Um pixel representa um ponto na tela, veja figura abaixo:
+
+<div class="imagem">
+    <img src="ReconstructionsFromPixels.png" alt="Pixel" />
+    <p>Fonte: <a href="http://pt.wikipedia.org/wiki/Pixelx">Wikipedia</a></p>
+</div>
+
+
+Falar sobre as cores.
+
+Rule-set, seletores, propriedades, unidades de medidas, cores, ufa... agora precisamos aprender como unir a css ao
+docuemnto HTML.
+
+A CSS *"uni-se"* ao HTML de 3 formas distintas: <em>inline, embeded e linked</em>. Vejamos:
+
+#### CSS - inline (na linha) ####
 
 Inline o método mais simples, declaramos a regra com o emprego do atributo "style" do HTML, exemplo:
 
