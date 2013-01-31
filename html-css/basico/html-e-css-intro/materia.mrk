@@ -9,15 +9,14 @@ Vamos dar uma rápida olhada nas tag's básicas e uma "passeada" com o CSS.
 O link possue a proprieda <em>href</em> (<em>h</em>ypertext <em>ref</em>erence) que nada mais é do que o alvo que será
 alcançado quando clicarmos no link.
 
-Esse alvo pode ser uma outra página html, ou um script de servidor, por exemplo php.
+Esse alvo pode ser uma outra página html ou um script de servidor em php, por exemplo.
 
 Pode até apontar para uma imagem ou outro arquivo qualquer (e então o navegador perguntará so o usuário quer fazer o
-dowload ou abrí-lo com algum programa).
+<em>download</em> ou abrí-lo com algum programa).
 
 O alvo pode estar em um nível hierarquico de pasta diferente, para baixo ou para cima.
 
-Trata-se do <em>endereço
-relativo</em> e vamos para baixo, de pasta em pasta, com o símbolo <em>"../"</em> exemplo:
+Trata-se do <em>endereço relativo</em>. Vamos para baixo, de pasta em pasta, com o símbolo <em>"../"</em> exemplo:
 
     <a href="../../../pagina-ao-clicar.html">Isto é um link 3 pastas abaixo</a>;
 
@@ -29,20 +28,154 @@ Na URL da âncora também podemos passar parâmetros com um par de valor, onde o
 segundo é o valor dessa variável, mas isso nos veremos mais afundo quando estivermos estudando uma linguagem "do lado
 do servidor. Exemplo:
 
-    <a href="pscript.php?varA=valor1&varB=valor2">Isto é um link com dois parâmetros</a>;
+    <a href="script.php?varA=valor1&varB=valor2">Isto é um link com dois parâmetros</a>;
 
-link:hover
+O link pode sofrer estilizaçãoes interessantes. É muito comum estilizar o link como se fosse um botão e há também um
+efeito que é acionado quando passamos o mouse por cima: é o *hover* (por cima, pairar). Para estilizar o "hover" utiliza-se
+de *pseudoclasses*, a regra CSS abaixo adiciona a cor vermelha a link apenas quando passamos o mouse sobre ele.
 
+    a:hover { background-color: red}
+    
 ### Listas
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+As listas ajudam a organizar o conteúdo mas fazem muito mais do que isso. Elas são utilizadas principalmente para
+criar menus (com a ajuda da CSS, é claro). Esses menus podem ser verticais (que é a disposição natural das listas) ou
+podem ser horizontais. O efeito horizontal é produzido com o auxílio da propriedade  *float* (CSS). Essa propriedade, 
+quando utilizada sabiamente, produz resultados interessantes. Ela faz os elementos flutuarem para a direita ou para a
+esquerda. Voltaremos a falar sobre o float em breve. 
+
+A tag "ul" é um container que comporta os item da lista, as tag's "li", ou seja, o "ul" é a lista e os "li" são os itens.
+"ul" siginifca "unordened list" (lista não ordenada), há também a lista "ol" (ordened list) que é exatamente o inverso.
+
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
 
 
 ### Parágrafos e imagens
 
-\# texto
+    <p> Isto é um parágrafo</p>
+    
+    <p>
+        Este parágrafo contém uma imagem
+        <img src="imagem.png" alt="texto alternativo" />
+    </p>
 
-texto # texto
+A tag *"p"* também é muito comum, ela representa um parágrafo e, obviamente, acomoda textos.
 
-texto #
+A tag *"img"* representa uma imagem, a proprieda *"src"* diz aonde a imagem se encontra gravada e também obedece a 
+hierarquia do sistema de arquivos (como o 'href'). Já a proprieda *"alt"* é um texto alternativo que será exibido caso
+o caminho para a imagem seja inválido.
+
+A tag "p" é block-livel e a tag "img" é in-line. Estou apresentando as duas tag's juntas para ilustrar como elas se
+interagem. As duas tag's sozinhas não fazem muita coisa, mas se adicionarmos ao tempero a propriedade *float* (olha ela
+aí denovo) a brincadeira ficará mais interessante.
+
+Podemos dizer para a imagem flutuar à equerda, então o texto fluirá para o lado inverso (direita).
+Veja o código abaixo e o resultado [aqui](p_img_e.html).
+
+<div class="code">
+<h6>HTML & CSS</h6>
+<pre>
+&lt;!DOCTYPE
+    HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd"&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Imagem flutuando à esquerda&lt;/title&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+        &lt;style type="text/css"&gt;
+            img {
+                <em>float: left;</em>
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;
+            &lt;img src="235px-Tom19.jpg" alt="Tom Jobim" /&gt;
+            Antônio Carlos Brasileiro de Almeida Jobim (Rio de Janeiro, 25 de janeiro de 1927 —
+            Nova Iorque, 8 de dezembro de 1994),  mais conhecido como Tom Jobim, foi um compositor, maestro, pianista,
+            cantor, arranjador e violonista brasileiro.
+        &lt;/p&gt;
+        &lt;p&gt;
+            É considerado o maior expoente de todos os tempos da música brasileira pela revista Rolling Stone, e um dos
+            criadores do movimento da bossa nova.            
+        &lt;/p&gt;
+        &lt;p&gt;
+            Pensou em trabalhar como arquiteto, chegando a cursar o primeiro ano da faculdade e até a se empregar em um
+            escritório, mas logo desistiu e decidiu ser pianista. Tocava em bares e boates em Copacabana, como no Beco 
+            das Garrafas no início dos anos 1950, até que em 1952 foi contratado como arranjador pela gravadora 
+            Continental, onde trabalhou com Sávio Silveira. Além dos arranjos, também tinha a função de transcrever para
+            a pauta as melodias de compositores que não dominavam a escrita musical. Datam dessa época as primeiras
+            composições, sendo a primeira gravada "Incerteza", uma parceria com Newton Mendonça, na voz de Mauricy Moura.            
+        &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+Ou
+
+Podemos dizer para a imagem flutuar à direita e então o texto fluirá a esquerda.
+Veja o código abaixo e o resultado [aqui](p_img_d.html).
+
+<div class="code">
+<h6>HTML & CSS</h6>
+<pre>
+&lt;!DOCTYPE
+    HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd"&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Imagem flutuando à direita&lt;/title&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+        &lt;style type="text/css"&gt;
+            img {
+                <em>float: right;</em>
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;
+            &lt;img src="235px-Tom19.jpg" alt="Tom Jobim" /&gt;
+            Antônio Carlos Brasileiro de Almeida Jobim (Rio de Janeiro, 25 de janeiro de 1927 —
+            Nova Iorque, 8 de dezembro de 1994),  mais conhecido como Tom Jobim, foi um compositor, maestro, pianista,
+            cantor, arranjador e violonista brasileiro.
+        &lt;/p&gt;
+        &lt;p&gt;
+            É considerado o maior expoente de todos os tempos da música brasileira pela revista Rolling Stone, e um dos
+            criadores do movimento da bossa nova.            
+        &lt;/p&gt;
+        &lt;p&gt;
+            Pensou em trabalhar como arquiteto, chegando a cursar o primeiro ano da faculdade e até a se empregar em um
+            escritório, mas logo desistiu e decidiu ser pianista. Tocava em bares e boates em Copacabana, como no Beco 
+            das Garrafas no início dos anos 1950, até que em 1952 foi contratado como arranjador pela gravadora 
+            Continental, onde trabalhou com Sávio Silveira. Além dos arranjos, também tinha a função de transcrever para
+            a pauta as melodias de compositores que não dominavam a escrita musical. Datam dessa época as primeiras
+            composições, sendo a primeira gravada "Incerteza", uma parceria com Newton Mendonça, na voz de Mauricy Moura.            
+        &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+E se quisessemos centralizar a imagem? Ahaaa... é possível, é uma certa gambiarra, mas é possível.
+Obviamente, explicar tal proesa fugirá do escopo desse modesto artigo, mas deixo o link e a fonte para que você possa
+conferir o resultado. O autor descobriu duas formas de se resolver o problema, por isso mostro dois links:
+
+[Primeira solução](http://trevordavis.net/play/float-center/)
+
+[Segunda solução](http://trevordavis.net/play/float-center/image-align-center/)
+
+Fonte: [Artigo de Treor Davis](http://trevordavis.net/blog/why-is-there-no-float-center)
 
 
 ### Tabelas
@@ -62,9 +195,8 @@ placeholder
 
 ### Cascading Style Sheets
 
-Quem começa a aprender CSS logo se pergunta: <em>o que será esse negócio de cascata?</em>. É um conceito.
-
-Além dele temos a questão da herânça (nada a ver com oop, olha lá hein!!!) e a especificidade.
+Quem começa a aprender CSS logo se pergunta: <em>o que será esse negócio de cascata?</em>. É um conceito. Ainda temos a
+questão da herânça (nada a ver com oop, olha lá hein!!!) e a especificidade.
 
 Tudo bem, que tal não esquentarmos a cabeça com isso por enquanto? Vamos cair de cabeça e depois, quando estiver mais
 familiarizado, voltamos para "fechar" esses conceitos, ok?
@@ -82,7 +214,7 @@ Está curioso? Dê uma olhada na tabela abaixo:
 
 ...mas não se assuste, vamos devagar aqui também.
 
-A CSS também possue <em>unidades de medidas</em>: px(pixel), pt(pontos), em(relativo ao tamnho da fonte) e %(porcentagem).
+A CSS também possue <em>unidades de medidas</em>: px(pixel), pt(pontos), em(relativo ao tamanho da fonte) e %(porcentagem).
 A mais simples e conhecida é a <em>pixel</em>. Um pixel representa um ponto na tela, veja figura abaixo:
 
 <div class="imagem">
@@ -93,8 +225,8 @@ A mais simples e conhecida é a <em>pixel</em>. Um pixel representa um ponto na 
 
 Falar sobre as cores.
 
-Rule-set, seletores, propriedades, unidades de medidas, cores, ufa... agora precisamos aprender como unir a css ao
-docuemnto HTML.
+Rule-set, seletores, propriedades, unidades de medidas, cores, ufa... agora precisamos aprender como unir a CSS ao
+documento HTML.
 
 A CSS *"uni-se"* ao HTML de 3 formas distintas: <em>inline, embeded e linked</em>. Vejamos:
 
