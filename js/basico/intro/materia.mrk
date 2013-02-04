@@ -1,19 +1,29 @@
 Introdução !
-======================================
+============
 
-*Javascript(JS) não é brinquedo, é linguagem de programação séria*. Das mil definições de JS a que mais me agrada é a de
-Kevin e Cameron em seu livro Simple Javascript Só Javascript) <span class="blockquote-inline">"Javascript é uma
-linguagem de programação simples que permite alterar páginas web dinamicamente, enquanto estão sendo exibidas em um
-navegador."</span>.
+<div class="imagem" >
+    <img src="../../imagens/livro-simple-js.jpg" />
+</div>
 
-Mas os autores alertam <span class="blockquote-inline">"Parece algo que você pode dominar em uma tarde, JS parece
-simples, contudo, em seus 10 anos de história até aqui [o livro é de 2007], as melhores práticas de JS pareciam mudar
-com as estações."</span>.
 
-A definição do pessoal do Mozilla também me agrada <span class="blockquote-inline">"Javascript (às vezes chamado apenas
-de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos, baseada em protótipos e em *first-class
-functions* (funções de primeira classe), mais conhecida como a linguagem de script da Web. Também utilizada em vários
-outros ambientes como node.js e Apache CouchDB."</span>.
+*Javascript(JS) não é brinquedo, é linguagem de programação séria*.
+
+Das mil definições de JS a que mais me agrada é a de
+Kevin e Cameron em seu livro "Simple Javascript" (Só Javascript):
+> "Javascript é uma linguagem de programação simples que permite alterar páginas web dinamicamente, enquanto estão
+> sendo exibidas em um navegador.".
+
+E os autores alertam...
+
+> "Parece algo que você pode dominar em uma tarde, JS parece simples, contudo, em seus 10 anos de história até aqui
+> [o livro é de 2007], as melhores práticas de JS pareciam mudar com as estações.".
+
+
+A definição do pessoal do Mozilla também me agrada:
+> "Javascript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos,
+> baseada em protótipos e em *first-class functions* (funções de primeira classe), mais conhecida como a linguagem de
+> script da Web. Também utilizada em vários outros ambientes como node.js e Apache CouchDB."</span>.
+
 
 É possível fazer mil peripécias com JS e suas páginas da web, a cada dia a lista de possibilidas vai aumentado. A maior
 utilização do JS é no sentido de melhoria de páginas web (HTML e CSS), o que chamamos de *aperfeiçoamento progressivo*,
@@ -95,7 +105,7 @@ element.onclick = function() {
 </div>
 
 <div class="imagem">
-    <img src="../imagens/pic_bulboff.gif" id="myimage" />
+    <img src="../../imagens/pic_bulboff.gif" id="myimage" />
     <p>Programar é uma atividade criativa !!! Clique e confira.</p>
     <p>Fonte:<a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_lightbulb">w3schools</a></p>
 </div>
@@ -122,7 +132,7 @@ funcionamento do conjunto.
         &ltp&gtClick the light bulb to turn on/off the light&lt/p&gt
 
         &ltscript type="text/javascript" src="codigo.js"&gt&lt/script&gt
-        
+
     &lt/body&gt
 &lt/html&gt
 </pre>

@@ -22,3 +22,14 @@ $materia = new Materia(7);
 require BASE_PATH.VIEWS_PATH."materias.php";
 
 ?>
+
+<script type="text/javascript">
+var element = document.getElementById('myimage');
+element.onclick = function() {
+    if (element.src.match("bulbon")) {
+        element.src="../../imagens/pic_bulboff.gif";
+    } else {
+        element.src="../../imagens/pic_bulbon.gif";
+    }
+};
+</script>
