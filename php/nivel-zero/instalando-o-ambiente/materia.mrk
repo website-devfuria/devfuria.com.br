@@ -65,28 +65,24 @@ A distro Had Hat originou o CentOS e o Fedora (entre outras) e a família Debian
 
 Teoricamente, se você conhece bem o "esquema geral" conseguirá se virar em qualquer distro. As diferênças, as vezes,
 são poucas. Como por exemplo no Ubuntu para instalar programar utiliza-se o "apt-get" e no Fedora utiliza-se o "yum".
-Como estou mais familizarizado com o Ubuntu, vou continuar este tutorial considerando-o. Prometo que volto para atender
-aos usuários da família Had Rat (estou fazendo testes no FEDORA).
+Como estou mais familizarizado com o Ubuntu, vou continuar este tutorial considerando-o.
 
-Uma vez com o sistema Linux(Ubuntu) instalado a primeira coisa que fazemos é atualizá-lo pois, sempre sobra um monte de
+<span style="text-decoration:line-through;">Prometo que volto para atender aos usuários da família Had Rat (estou
+fazendo testes no FEDORA).</span> OK já voltei.
+
+Uma vez com o sistema Linux(Ubuntuu ou Fedora) instalado a primeira coisa que fazemos é atualizá-lo pois, sempre sobra um monte de
 código que não couberam no CD. Se você não conseguir fazer a atualização via interface do usuário teremos que fazer via
 console (terminal), já já veremos os comandos.
 
 A segunda coisa que deve ser feita e definir uma senha para o usuário "root". Abra o termial (tente CTRL+ALT+U) e digite:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre>sudo passwd root</pre>
-</div>
+    sudo passwd root
 
 Após digite a senha do seu usuário (definida na instalação) e na sequência digite a senha do root. Para rodar alguns
 comandos é preciso ter autoriazação de root. Ou vocẽ digita "sudo" antes de cada comando (será preciso fornecer a senha
 do root) ou vira root e vai trabalhando. Para virar root digite:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre>su root</pre>
-</div>
+    su root
 
 ... e forneca a senha definida anteriormente. Os comandos apresentados na sequência consideram que você seja root ou
 que utilize o "sudo". O sinal # no início de cada comando explicita o que eu acabei de falar, logo não é necessário
@@ -95,23 +91,30 @@ digitá-lo junto com o comando, rs.
 
 ### Atualizando o sistema (via terminal) ###
 
-Abra o terminal e digite:
+Abra o Ubuntu e digite:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># apt-get update
-# apt-get upgrade</pre>
-</div>
+Ubuntu
+
+    apt-get update
+    apt-get upgrade
+
+No Fedora também temos os comandos update e upgrade, porém eles fazem coisas diferentes. Eu aconselho a utilizar a
+interface gráfica para atualizar o sistema.
+
 
 
 ### Instalando o Apache2 ###
 
-No terminal digite:
+No Ubuntu digite:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># apt-get install apache2</pre>
-</div>
+    apt-get install apache2
+
+no Fedora são três linhas...
+
+    yum install httpd
+    chkconfig --levels 235 httpd on
+    service httpd start
+
 
 Para ter certeza de que o apache foi instaldo corretamente, abra um navegador qualquer é digite http://localhost. Uma
 página simples escrita “It’s work” aparecerá. Você terá que descobrir e entender (por conta própria) o que é "DocumentRoot",
@@ -122,15 +125,14 @@ seus módulos.
 
 ### Instalando o PHP ###
 
-Na sequência instalamos o php, no console digite:
+Na sequência instalamos o php, no terminal digite:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># apt-get install php5 libapache2-mod-php5</pre>
-</div>
+    apt-get install php5 libapache2-mod-php5 // ubuntu
+    yum install httpd php php-common // fedora
 
-Para testar o php, crie um pequeno arquivo com a extensão .php conforme mostrado abaixo e salve em /var/www. É preciso
-ser root para inserir arquivos nesta pasta.
+
+Para testar o php, crie um pequeno arquivo com a extensão .php conforme mostrado abaixo e salve em /var/www (Ubuntu) e
+/var/www/html (Fedora). É preciso ser root para inserir arquivos nesta pasta.
 
 
 <div class="code">
@@ -146,10 +148,16 @@ Abra o navegador e digite novamente http://localhost. Agora aparecerá a tela do
 Neste momento, é aconselhável instalar alguns módulos complementares que serão úteis no futuro. Com o tempo você
 "descobrirá" os "seus" pacotes. Mas por enquanto instale estes:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># apt-get install php5-mysql php5-curl php5-gd php5-idn\ php5-dev php-pear</pre>
-</div>
+no Ubuntu...
+
+    apt-get install php5-mysql php5-curl php5-gd php5-idn\ php5-dev php-pear
+
+no Fedora...
+
+    yum install php-pecl-apc php-cli php-pear php-pdo php-mysql php-pgsql php-pecl-mongo
+	      php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
+
+
 
 Para que o apache, juntamente com o módulo do php execute os scripts eles devem ser ser salvos no “documentroot”
 (raiz do documento). “DocumentRoot” nada mais é do que a pasta na qual o servidor “sabe” que contém arquivos nos quais
@@ -171,17 +179,13 @@ No terminal é possível utilizar alguns editores de textos como o "vi" (que já
 devem ser instalados). Eu gosto de utilizar o nano pois ele é mais fácil. Instale o "nano" digitando:
 
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># apt-get install nano</pre>
-</div>
+    apt-get install nano // ubuntu
+    yum install nano // fedora
 
 Com o nano instalado, digite:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># nano /etc/php5/apache2/php.ini</pre>
-</div>
+    nano /etc/php5/apache2/php.ini // ubuntu
+    nano /etc/php.ini // fedora
 
 Procure as linhas a seguir e altere como se segue:
 
@@ -200,38 +204,26 @@ html_erros = On
 Salve o arquivo digitando CRTL+O, confirme pressionando ENTER, agora feche o arquivo digitadno CTRL+W.
 O nano é muito fácil, diz aí? Reinicie o apache:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># /etc/init.d/apache2 restart</pre>
-</div>
-
+    /etc/init.d/apache2 restart // ubuntu
+    service httpd restart // fedora
 
 ### Instalando o X-Debug ###
 
 O X-debug é uma ferramenta útil prá cara... Ele ajuda a formatar a saída dos dados e é possível utilizá-lo com a interface
 do NetBeans. Neste momento, talvez vocẽ não entenda o que ele é, nem seu potencial, mas aproveite para instalá-lo agora.
 um dia você ainda vai me agradeçer, rssss. Com o PECL(pear)pode-se instalar novos pacotes no estilo apt-get, no caso
-vamos instalar o pacote x-debug:
+vamos instalar o pacote x-debug no Ubuntu:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># pecl install xdebug</pre>
-</div>
+    pecl install xdebug
 
 Onde será que o Linux gravou a extensão x-debug? Digite e anote o caminho:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># find/ -name 'x-debug.so'2> /dev/null</pre>
-</div>
+    find/ -name 'x-debug.so'2> /dev/null
 
 Agora, precisamos dizer ao php que o x-debug existe. Par tal é preciso incluir um linha no final do arquivo php.ini.
 Abra, novamente, o php.ini:
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># nano /etc/php5/php.ini</pre>
-</div>
+    nano /etc/php5/php.ini
 
 No final do arquivo ou no fim da seção "extenções" inclua a seguinta linha:
 
@@ -243,17 +235,35 @@ No final do arquivo ou no fim da seção "extenções" inclua a seguinta linha:
 Reinicie o apache (o comando nós já vimos).
 
 
+No Fedora bastam 2 linhas...
+
+    yum install php-pecl-xdebug
+    service httpd restart
+
+
 ### Instalando o MySql ###
 
-Agora chegou a vez o banco de dados, instale o mysql digitando
+Agora chegou a vez o banco de dados, instale o mysql no Ubuntu digitando...
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># apt-get install mysql-server mysql-client</pre>
-</div>
+    apt-get install mysql-server mysql-client // ubuntu
 
-Enquanto os arquivos são baixados e instalados o sistema lhe pergunta qual será a senha do root (para acessar o banco de
-dados), anote-a.
+Enquanto os arquivos são baixados e instalados o sistema lhe perguntará qual será a senha do root (para acessar o banco
+de dados), anote-a.
+
+No fedora é parecido, só que você é quem define a senha, então instale o mysql no Fedora...
+
+    yum install mysql mysql-server // fedora
+
+e agora habilite a senha digitando...
+
+    mysqladmin -u root password [your_password_here]
+
+Para saber se deu certo tente acessar o prompt do mysql digitando...
+
+    mysql -h localhost -u root -p
+
+O sistema solicitará a senha, digite-a. Se estiver enchergando o prompt está tudo OK, digite "exit" para sair.
+
 
 
 ### Instalando o PhpMyAdmin ###
@@ -261,14 +271,17 @@ dados), anote-a.
 Na sequência instale o phpmyadmin, este aplicativo é responsável por oferecer uma interface amigável de trabalho ao
 usuário do banco.
 
-<div class="code">
-<h6>Comandos Linux</h6>
-<pre># # apt-get install phpmyadmin</pre>
-</div>
+    apt-get install phpmyadmin //ubuntu
 
 Responda as perguntas que o instalardor fará (nenhum segredo) e ao final, abra o navegador e digite "localhost/phpmyadmin"
 a tela de login deve ser exibida, digite novamente o usuario do mysql (root) e sua senha. Pronto, você está dentro do
 sistema, agora é possível manipular o mysql com um interface amigável.
+
+No Fedora, após a instalação, será preciso reiniciar o apache...
+
+    yum install phpmyadmin
+    service httpd resstart
+
 
 
 ### Finalizando ###
@@ -297,4 +310,7 @@ utilizava o svn no windows e sentia falta de uma interface no nautilus (o gerenc
 descobri o nautilus-svn, procure por rabbit-svn e instale ele também. Atualmente (2012) a controle de versão mais
 utilizado e divulgado é o *GIT*, procure por "github" e aprenda mais sobre este controlador de versão.
 
-Como navegador eu sugiro o Firefox e não se esqueça dos plugins FireBug e WebDeveloper eles quebram um galho enorme.
+Como navegador eu sugiro o *Firefox* e não se esqueça dos plugins *FireBug e WebDeveloper* eles quebram um galho enorme.
+
+
+04/02/2013
