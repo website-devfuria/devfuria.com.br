@@ -33,7 +33,7 @@ computador e começar a escrever o código fonte, sem antes perder alguns minuto
 improdutividade e disperdício de tempo. Antes de codificar é preciso se debruçar sobre o problema e se for necessário,
 realizar o teste de mesa e também desenhar o DFD.
 
-*O principal benefício da lógica de programação é que sua prática exercita a mente do programador tornando-o mais 
+*O principal benefício da lógica de programação é que sua prática exercita a mente do programador tornando-o mais
 eficiente e eficaz*. Segundo o guru do marketing Peter Drucker: "eficiência é fazer as coisas de maneira correta,
 eficácia são as coisas certas. O resultado depende de fazer certo as coisas certas".
 
@@ -173,11 +173,6 @@ Leituras adicionais sugeridas
 
 <dl id="leitura_adcionais">
     <dt>Internet</dt>
-        <dd>
-            <em>Texto curtinho do mestre Morimoto sobre pseudocodigo</em>. Pô, até sobre isso o cara escreve!!! rs.
-            <a href="http://www.hardware.com.br/termos/pseudocodigo.net">
-            http://www.hardware.com.br/termos/pseudocodigo</a>
-        </dd>
 
         <dd>
             <em>Artigo sobre</em> lógica de programação do blog “ogenial”. Leitura fácil e rápida. pode servir como um
