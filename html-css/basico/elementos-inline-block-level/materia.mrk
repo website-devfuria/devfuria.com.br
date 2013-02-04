@@ -6,8 +6,8 @@ Há dois tipos básicos de tag's: as in-line e de block-level.
 A diferênça básica é que o browser acomoda os elementos
 inline à esquerda um ao lado do outro e as de bloco ele coloca uma embaixo da outra ocupando a tela toda.
 
-Veja o HTML abaixo para <em>entender</em> e clique no [link](code1.html "Veja a pagina em funcionamento")
-para <em>perceber</em> como ele foi reenderizado.
+Veja o HTML abaixo para *entender* e clique no [link](code1.html "Veja a pagina em funcionamento")
+para *perceber* como ele foi reenderizado.
 
 <div class="code menor">
 <h6>HTML(inválido)</h6>
@@ -52,27 +52,27 @@ para <em>perceber</em> como ele foi reenderizado.
 </div>
 
 Esse não é um HTML "oficial", é apenas para fins ilustrativos. Repare que eu coloquei a palavra "inválido" no título
-do código, é para alertar que o HTML apresentado não é válido, ou seja, não validará se submetido as normas do w3c, 
+do código, é para alertar que o HTML apresentado não é válido, ou seja, não validará se submetido as normas do w3c,
 falaremos disso adiante. Eu criei um CSS básico e misturei as tag's inline e block apenas para você perceber como elas
 se comportam.
 
-Perceber esse aspecto básico, mais do que entender, lhe ajudará a criar páginas HTML sem muita dor de cabeça. 
+Perceber esse aspecto básico, mais do que entender, lhe ajudará a criar páginas HTML sem muita dor de cabeça.
 
 O problema reside no fato de que estamos acostumados a olhar um software qualquer do tipo editor de textos ou editor
 de imagens e vamos "dizendo" ao softwarer" coloque este círuclo aqui, aquele texto ali, agora desça um pouco o círculo
 e etc..".
 
-Com o HTML a idéia é parecida mas há uma diferênça crucial: <em>existe uma certa manha para desenharmos a arte que
-"pintamos" em nossa cabeça.</em>. E entender essa "manha" fará toda a diferênça. No caso, a "manha"(uma parte dela) é
+Com o HTML a idéia é parecida mas há uma diferênça crucial: *existe uma certa manha para desenharmos a arte que
+"pintamos" em nossa cabeça.*. E entender essa "manha" fará toda a diferênça. No caso, a "manha"(uma parte dela) é
 compreender a diferênça entre as tag's in-line e as tag's block-level.
 
 
-A dica é: <em>não tente criar em HTML a página que você idealizou sem antes se familiarizar com a forma que o navegador
-reenderiza o HTML</em>.
+A dica é: *não tente criar em HTML a página que você idealizou sem antes se familiarizar com a forma que o navegador
+reenderiza o HTML*.
 
 
-Abaixo vemos alguns elementos básicos de <em>block-level</em>:
- 
+Abaixo vemos alguns elementos básicos de *block-level*:
+
 * div
 * h1, h2, h3
 * p
@@ -83,7 +83,7 @@ Abaixo vemos alguns elementos básicos de <em>block-level</em>:
 * hr
 
 
-... e alguns elementos <em>in-line</em>:
+... e alguns elementos *in-line*:
 
 * span
 * a
@@ -94,6 +94,6 @@ Abaixo vemos alguns elementos básicos de <em>block-level</em>:
 * select
 * textarea
 
-Essa matéria é curtinha, mas não se engane, <em>seguir em frente sem entender(de verdade) é perca de tempo</em>.
+Essa matéria é curtinha, mas não se engane, *seguir em frente sem entender(de verdade) é perca de tempo*.
 
 Aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.

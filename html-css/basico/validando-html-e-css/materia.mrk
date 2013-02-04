@@ -14,7 +14,7 @@ Produziram também uma ferramenta online que testa o seu código HTML e aponta o
 * enviando o arquivo(Validate by UPLOAD) e
 * inserindo o conteúdo diretamente(Validate by Direct Input).
 
-O código abaixo é o HTML acima corrigido, faltava-lhe o <em>DOCTYPE</em> e a especificação do <em>charset</em>. Falaremos
+O código abaixo é o HTML acima corrigido, faltava-lhe o *DOCTYPE* e a especificação do *charset*. Falaremos
 de ambos em breve.
 
 <div class="code">
