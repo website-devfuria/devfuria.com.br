@@ -83,7 +83,7 @@ Podemos dizer para a imagem flutuar à equerda, então o texto fluirá para o la
 Veja o código abaixo e o resultado [aqui](p_img_e.html).
 
     <p>
-        <img src="235px-Tom19.jpg" alt="Tom Jobim" style="float: left" />
+        <img src="tom-jobim.jpg" alt="Tom Jobim" style="float: left" />
         Antônio Carlos Brasileiro de Almeida Jobim (Rio de Janeiro, 25 de janeiro de 1927 —
         Nova Iorque, 8 de dezembro de 1994),  mais conhecido como Tom Jobim, foi um compositor, maestro, pianista,
         cantor, arranjador e violonista brasileiro.
@@ -105,7 +105,7 @@ Veja o código abaixo e o resultado [aqui](p_img_e.html).
 Veja o código abaixo e o resultado [aqui](p_img_d.html).
 
     <p>
-        <img src="235px-Tom19.jpg" alt="Tom Jobim" style="float: right" />
+        <img src="tom-jobim.jpg" alt="Tom Jobim" style="float: right" />
         Antônio Carlos Brasileiro de Almeida Jobim (Rio de Janeiro, 25 de janeiro de 1927 —
         Nova Iorque, 8 de dezembro de 1994),  mais conhecido como Tom Jobim, foi um compositor, maestro, pianista,
         cantor, arranjador e violonista brasileiro.
@@ -187,7 +187,7 @@ servidor ele poderá trabalhar com a variável "pais" e seu valor será, adivinh
 Esse negócio é tão simples que fica até difícil de explicar. rs.
 
 <div class="imagem">
-    <img src="form_facebook.png" alt="Formulário do Facebook" />
+    <img src="../../imagens/form_facebook.png" alt="Formulário do Facebook" />
 </div>
 
 Veja o famoso formulário do Facebook. Vamos analisar apenas a "tarja azul". Tamos os campos "login", "senha" e uma
@@ -233,7 +233,7 @@ A CSS também possue *unidades de medidas*: px(pixel), pt(pontos), em(relativo a
 A mais simples e conhecida é a *pixel*. Um pixel representa um ponto na tela, veja figura abaixo:
 
 <div class="imagem">
-    <img src="ReconstructionsFromPixels.png" alt="Pixel" />
+    <img src="../../imagens/pixel.png" alt="Pixel" />
     <p>Fonte: <a href="http://pt.wikipedia.org/wiki/Pixelx">Wikipedia</a></p>
 </div>
 
@@ -353,4 +353,3 @@ adequado e por essa razão o que mais utilizaremos no curso, porém não leve tu
 formas quando e onde ahcar melhor.
 
 
-terminar falando um pouco da CSS3, level1, level2 e level3
