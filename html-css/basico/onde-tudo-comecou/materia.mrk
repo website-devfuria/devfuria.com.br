@@ -144,25 +144,24 @@ voltaremos nelas em breve.
 Se uma imagem vale por mil palavras, vou lhe mandar 4 imagens, espero que valham 4 mil palavras...
 
 <div class="imagem">
-    <img src="css-syntax01.gif" alt="Seletor CSS" style="border: 1px solid #CCC"/>
+    <img src="../../imagens/css-syntax01.gif" alt="Seletor CSS" style="border: 1px solid #CCC"/>
     <p><a href="http://www.sleddogstudio.com/webdesign/lesson/09/">Fonte da imagem acima</a></p>
 </div>
 
 <div class="imagem">
-    <img src="css-syntax02.gif" alt="Seletor CSS" style="border: 1px solid #CCC"/>
+    <img src="../../imagens/css-syntax02.gif" alt="Seletor CSS" style="border: 1px solid #CCC"/>
     <p><a href="http://learnwebcode.com/what-is-css/">Fonte da imagem acima</a></p>
 </div>
 
 <div class="imagem">
-    <img src="css-syntax03.png" alt="Seletor CSS" style="border: 1px solid #CCC"/>
+    <img src="../../imagens/css-syntax03.png" alt="Seletor CSS" style="border: 1px solid #CCC"/>
     <p><a href="http://en.support.wordpress.com/custom-design/css-basics/">Fonte da imagem acima</a></p>
 </div>
 
 <div class="imagem">
-    <img src="css-syntax04.png" alt="Seletor CSS" style="border: 1px solid #CCC"/>
+    <img src="../../imagens/css-syntax04.png" alt="Seletor CSS" style="border: 1px solid #CCC"/>
     <p><a href="http://cscie12.dce.harvard.edu/lecture_notes/2006-07/20070220/handout.html">Fonte da imagem acima</a></p>
 </div>
-
 
 
 
