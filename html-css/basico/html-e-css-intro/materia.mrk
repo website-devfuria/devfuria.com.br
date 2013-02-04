@@ -1,5 +1,5 @@
-Introdução ao HTML(5) e ao CSS(3)
-==================================
+HTML e CSS - Introdução
+=======================
 
 Vamos dar uma rápida olhada nas tag's básicas e uma "passeada" com o CSS.
 
@@ -35,7 +35,7 @@ efeito que é acionado quando passamos o mouse por cima: é o *hover* (por cima,
 de *pseudoclasses*, a regra CSS abaixo adiciona a cor vermelha a link apenas quando passamos o mouse sobre ele.
 
     a:hover { background-color: red}
-    
+
 ### Listas
 
     <ul>
@@ -46,9 +46,9 @@ de *pseudoclasses*, a regra CSS abaixo adiciona a cor vermelha a link apenas qua
 
 As listas ajudam a organizar o conteúdo mas fazem muito mais do que isso. Elas são utilizadas principalmente para
 criar menus (com a ajuda da CSS, é claro). Esses menus podem ser verticais (que é a disposição natural das listas) ou
-podem ser horizontais. O efeito horizontal é produzido com o auxílio da propriedade  *float* (CSS). Essa propriedade, 
+podem ser horizontais. O efeito horizontal é produzido com o auxílio da propriedade  *float* (CSS). Essa propriedade,
 quando utilizada sabiamente, produz resultados interessantes. Ela faz os elementos flutuarem para a direita ou para a
-esquerda. Voltaremos a falar sobre o float em breve. 
+esquerda. Voltaremos a falar sobre o float em breve.
 
 A tag "ul" é um container que comporta os item da lista, as tag's "li", ou seja, o "ul" é a lista e os "li" são os itens.
 "ul" siginifca "unordened list" (lista não ordenada), há também a lista "ol" (ordened list) que é exatamente o inverso.
@@ -63,7 +63,7 @@ A tag "ul" é um container que comporta os item da lista, as tag's "li", ou seja
 ### Parágrafos e imagens
 
     <p> Isto é um parágrafo</p>
-    
+
     <p>
         Este parágrafo contém uma imagem
         <img src="imagem.png" alt="texto alternativo" />
@@ -71,7 +71,7 @@ A tag "ul" é um container que comporta os item da lista, as tag's "li", ou seja
 
 A tag *"p"* também é muito comum, ela representa um parágrafo e, obviamente, acomoda textos.
 
-A tag *"img"* representa uma imagem, a proprieda *"src"* diz aonde a imagem se encontra gravada e também obedece a 
+A tag *"img"* representa uma imagem, a proprieda *"src"* diz aonde a imagem se encontra gravada e também obedece a
 hierarquia do sistema de arquivos (como o 'href'). Já a proprieda *"alt"* é um texto alternativo que será exibido caso
 o caminho para a imagem seja inválido.
 
@@ -82,109 +82,113 @@ aí denovo) a brincadeira ficará mais interessante.
 Podemos dizer para a imagem flutuar à equerda, então o texto fluirá para o lado inverso (direita).
 Veja o código abaixo e o resultado [aqui](p_img_e.html).
 
-<div class="code">
-<h6>HTML & CSS</h6>
-<pre>
-&lt;!DOCTYPE
-    HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd"&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Imagem flutuando à esquerda&lt;/title&gt;
-        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-        &lt;style type="text/css"&gt;
-            img {
-                <em>float: left;</em>
-            }
-        &lt;/style&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;p&gt;
-            &lt;img src="235px-Tom19.jpg" alt="Tom Jobim" /&gt;
-            Antônio Carlos Brasileiro de Almeida Jobim (Rio de Janeiro, 25 de janeiro de 1927 —
-            Nova Iorque, 8 de dezembro de 1994),  mais conhecido como Tom Jobim, foi um compositor, maestro, pianista,
-            cantor, arranjador e violonista brasileiro.
-        &lt;/p&gt;
-        &lt;p&gt;
-            É considerado o maior expoente de todos os tempos da música brasileira pela revista Rolling Stone, e um dos
-            criadores do movimento da bossa nova.            
-        &lt;/p&gt;
-        &lt;p&gt;
-            Pensou em trabalhar como arquiteto, chegando a cursar o primeiro ano da faculdade e até a se empregar em um
-            escritório, mas logo desistiu e decidiu ser pianista. Tocava em bares e boates em Copacabana, como no Beco 
-            das Garrafas no início dos anos 1950, até que em 1952 foi contratado como arranjador pela gravadora 
-            Continental, onde trabalhou com Sávio Silveira. Além dos arranjos, também tinha a função de transcrever para
-            a pauta as melodias de compositores que não dominavam a escrita musical. Datam dessa época as primeiras
-            composições, sendo a primeira gravada "Incerteza", uma parceria com Newton Mendonça, na voz de Mauricy Moura.            
-        &lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</pre>
-</div>
+    <p>
+        <img src="235px-Tom19.jpg" alt="Tom Jobim" style="float: left" />
+        Antônio Carlos Brasileiro de Almeida Jobim (Rio de Janeiro, 25 de janeiro de 1927 —
+        Nova Iorque, 8 de dezembro de 1994),  mais conhecido como Tom Jobim, foi um compositor, maestro, pianista,
+        cantor, arranjador e violonista brasileiro.
+    </p>
+    <p>
+        É considerado o maior expoente de todos os tempos da música brasileira pela revista Rolling Stone, e um dos
+        criadores do movimento da bossa nova.
+    </p>
+    <p>
+        Pensou em trabalhar como arquiteto, chegando a cursar o primeiro ano da faculdade e até a se empregar em um
+        escritório, mas logo desistiu e decidiu ser pianista. Tocava em bares e boates em Copacabana, como no Beco
+        das Garrafas no início dos anos 1950, até que em 1952 foi contratado como arranjador pela gravadora
+        Continental, onde trabalhou com Sávio Silveira. Além dos arranjos, também tinha a função de transcrever para
+        a pauta as melodias de compositores que não dominavam a escrita musical. Datam dessa época as primeiras
+        composições, sendo a primeira gravada "Incerteza", uma parceria com Newton Mendonça, na voz de Mauricy Moura.
+    </p>
 
-Ou
-
-Podemos dizer para a imagem flutuar à direita e então o texto fluirá a esquerda.
+... ou podemos dizer para a imagem flutuar à direita e então o texto fluirá a esquerda.
 Veja o código abaixo e o resultado [aqui](p_img_d.html).
 
-<div class="code">
-<h6>HTML & CSS</h6>
-<pre>
-&lt;!DOCTYPE
-    HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd"&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Imagem flutuando à direita&lt;/title&gt;
-        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-        &lt;style type="text/css"&gt;
-            img {
-                <em>float: right;</em>
-            }
-        &lt;/style&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;p&gt;
-            &lt;img src="235px-Tom19.jpg" alt="Tom Jobim" /&gt;
-            Antônio Carlos Brasileiro de Almeida Jobim (Rio de Janeiro, 25 de janeiro de 1927 —
-            Nova Iorque, 8 de dezembro de 1994),  mais conhecido como Tom Jobim, foi um compositor, maestro, pianista,
-            cantor, arranjador e violonista brasileiro.
-        &lt;/p&gt;
-        &lt;p&gt;
-            É considerado o maior expoente de todos os tempos da música brasileira pela revista Rolling Stone, e um dos
-            criadores do movimento da bossa nova.            
-        &lt;/p&gt;
-        &lt;p&gt;
-            Pensou em trabalhar como arquiteto, chegando a cursar o primeiro ano da faculdade e até a se empregar em um
-            escritório, mas logo desistiu e decidiu ser pianista. Tocava em bares e boates em Copacabana, como no Beco 
-            das Garrafas no início dos anos 1950, até que em 1952 foi contratado como arranjador pela gravadora 
-            Continental, onde trabalhou com Sávio Silveira. Além dos arranjos, também tinha a função de transcrever para
-            a pauta as melodias de compositores que não dominavam a escrita musical. Datam dessa época as primeiras
-            composições, sendo a primeira gravada "Incerteza", uma parceria com Newton Mendonça, na voz de Mauricy Moura.            
-        &lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</pre>
-</div>
-
-E se quisessemos centralizar a imagem? Ahaaa... é possível, é uma certa gambiarra, mas é possível.
-Obviamente, explicar tal proesa fugirá do escopo desse modesto artigo, mas deixo o link e a fonte para que você possa
-conferir o resultado. O autor descobriu duas formas de se resolver o problema, por isso mostro dois links:
-
-[Primeira solução](http://trevordavis.net/play/float-center/)
-
-[Segunda solução](http://trevordavis.net/play/float-center/image-align-center/)
-
-Fonte: [Artigo de Treor Davis](http://trevordavis.net/blog/why-is-there-no-float-center)
+    <p>
+        <img src="235px-Tom19.jpg" alt="Tom Jobim" style="float: right" />
+        Antônio Carlos Brasileiro de Almeida Jobim (Rio de Janeiro, 25 de janeiro de 1927 —
+        Nova Iorque, 8 de dezembro de 1994),  mais conhecido como Tom Jobim, foi um compositor, maestro, pianista,
+        cantor, arranjador e violonista brasileiro.
+    </p>
+    <p>
+        É considerado o maior expoente de todos os tempos da música brasileira pela revista Rolling Stone, e um dos
+        criadores do movimento da bossa nova.
+    </p>
+    <p>
+        Pensou em trabalhar como arquiteto, chegando a cursar o primeiro ano da faculdade e até a se empregar em um
+        escritório, mas logo desistiu e decidiu ser pianista. Tocava em bares e boates em Copacabana, como no Beco
+        das Garrafas no início dos anos 1950, até que em 1952 foi contratado como arranjador pela gravadora
+        Continental, onde trabalhou com Sávio Silveira. Além dos arranjos, também tinha a função de transcrever para
+        a pauta as melodias de compositores que não dominavam a escrita musical. Datam dessa época as primeiras
+        composições, sendo a primeira gravada "Incerteza", uma parceria com Newton Mendonça, na voz de Mauricy Moura.
+    </p>
 
 
 ### Tabelas
-dados tabulares
-tableless
 
+As tabelas acomodam dados tabulares.
+
+Isso parece óbvio, mas não foi assim no começo da internet. Pela falta de recursos apropriados e pela instabilidade
+advinda dos navegadores, muitos deenvolvedores utilizavam-se de tabelas para fazer o layout da página. Isso é uma
+prática condenável e seu remédio chama-se *tableless*, que nada mais é do que um conceito (ou talvez um princípio) onde
+evita-se utilizar a tabela em algo que não seja dados tabulares.
+
+Uma tabela contém linhas (tr) e campos (td). às vezes podem conter as tag's "thead", "tbody" e "tfoot" que representam
+o cabeçalho, o corpo e o rodapé da tabela, respectivamente.
+
+Quando temos linhas campos do cabeçalho(dentro da tag "thead") utilizamos a tag "th" no lugar da "td", pois essa
+representam melhor o cabeçalho.
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>campo 1</th>
+                <th>campo 2</th>
+                <th>campo 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>dado 1</td>
+                <td>dado 2</td>
+                <td>dado 3</td>
+            </tr>
+            <tr>
+                <td>dado 1</td>
+                <td>dado 2</td>
+                <td>dado 3</td>
+            </tr>
+            <tr>
+                <td>dado 1</td>
+                <td>dado 2</td>
+                <td>dado 3</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            Este é o rodapé
+        </tfoot>
+
+    </table>
 
 
 ### Formulários, inputs e labels
+
+Um formulário na web normalmente é chato de se preencher, só que ele é a alma dos aplicativos web, pois é através de seus
+campos que o usuário faz a inserção dos dados e interaje com o sistema.
+
+
+
+
+Um formulário pode (e deve) conter elementos que "formam" um par "nome=valor", por exemplo, um campo de entrada de
+texto (uma text box) chama-se "pais" e o seu valor é o texto "Brasil". Quando esse formulário submeter seus dados para o
+servidor ele poderá trabalhar com a variável "pais" e seu valor será, adivinhe, "Brasil".
+
+Esse negócio é tão simples que fica até difícil de explicar. rs.
+
 
 maxlength
 placeholder
@@ -196,23 +200,14 @@ placeholder
 ### Cascading Style Sheets
 
 Quem começa a aprender CSS logo se pergunta: <em>o que será esse negócio de cascata?</em>. É um conceito. Ainda temos a
-questão da herânça (nada a ver com oop, olha lá hein!!!) e a especificidade.
+questão da especificidade e da herânça (nada a ver com oop, olha lá hein!!!).
 
 Tudo bem, que tal não esquentarmos a cabeça com isso por enquanto? Vamos cair de cabeça e depois, quando estiver mais
 familiarizado, voltamos para "fechar" esses conceitos, ok?
 
-Na matéria anterior (onde tudo começou) vimos como é a estrutura de uma rule-set. Sempre que estilizamos o HTML
+Na matéria ["onde tudo começou"](../onde-tudo-comecou) vimos como é a estrutura de uma rule-set. Sempre que estilizamos o HTML
 precisamos pensar primeiro em <em>qual será o nosso elemento(s) alvo?</em> E na sequência aplicamos o rule-set.
 Há uma dúzia de formas diferentes de encontrar elementos HTML. Fazemos isso através dos <em>seletores</em>.
-
-Está curioso? Dê uma olhada na tabela abaixo:
-
-<div class="imagem">
-    <img src="infograficoSeletores.jpg" alt="Info gráfico de seletores css" />
-    <p>Fonte: <a href="http://www.linhadecodigo.com.br/artigo/3579/seletores-das-css-infografico.aspx">Linha de código</a></p>
-</div>
-
-...mas não se assuste, vamos devagar aqui também.
 
 A CSS também possue <em>unidades de medidas</em>: px(pixel), pt(pontos), em(relativo ao tamanho da fonte) e %(porcentagem).
 A mais simples e conhecida é a <em>pixel</em>. Um pixel representa um ponto na tela, veja figura abaixo:
