@@ -8,7 +8,7 @@
                 </a>
             </p>
             <p style="text-align: center">
-                2012
+                2013
             </p>
             <p style="text-align: justify;">
                 Esta licença permite que outros remixem, adaptem, e criem obras derivadas sobre a obra licenciada, sendo vedado o uso com fins comerciais. As novas obras devem conter menção ao autor nos créditos e também não podem ser usadas com fins comerciais, porém as obras derivadas não precisam ser licenciadas sob os mesmos termos desta licença.
@@ -34,11 +34,7 @@
                 </a>
             </p>
             <p>
-                Este site nasceu em junho de 2012. Eu havia planejado um design bem diferente do atual.
-                Caso esteja curioso em ver o design primário acesse:<br />
-                <a href="http://www.devfuria.com.br/old/">
-                   http://www.devfuria.com.br/old/
-                </a>
+                Este site nasceu em junho de 2012. <br />
             </p>
         </div>
     </div>
