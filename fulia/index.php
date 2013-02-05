@@ -39,13 +39,12 @@ require "../furia/includes/bs.php";
                 <div class="span12">
                     <form class="form-horizontal inverse">
                         <legend>Matérias</legend>
-                        <div class="btn-toolbar">
+                        <div class="btn-toolbar" >
                             <div class="btn-group pull-right">
-
-                                <a class="btn btn-inverse" href="#"><i class=" icon-chevron-left  icon-white"></i></a>
-                                <a class="btn btn-inverse" href="#"><i class=" icon-chevron-right  icon-white"></i></a>
+                                <a class="btn btn-inverse" href="#" id="ctr-percorre-esq"><i class=" icon-chevron-left  icon-white"></i></a>
+                                <a class="btn btn-inverse" href="#" id="ctr-percorre-dir"><i class=" icon-chevron-right  icon-white"></i></a>
                             </div>
-                        </div>                                
+                        </div>
 
                         <div class="control-group">
                             <label class="control-label" for="id">id</label>
@@ -59,7 +58,7 @@ require "../furia/includes/bs.php";
                                 <div class="input-prepend">
                                     <span class="add-on">www.devfuria.com.br/</span>
                                     <input id="url" type="text" style="width: 810px"/>
-                                </div>                            
+                                </div>
                             </div>
                         </div>
                         <div class="control-group">
@@ -108,7 +107,7 @@ require "../furia/includes/bs.php";
                                     <option id="7">Flávio Micheletti</option>
                                 </select>
                             </div>
-                        </div> 
+                        </div>
                         <div class="control-group">
                             <label class="control-label" for="dt-cria">Data de criação</label>
                             <div class="controls">
@@ -118,7 +117,7 @@ require "../furia/includes/bs.php";
                         <div class="control-group">
                             <label class="control-label" for="dt-atualiza">Data de atualização</label>
                             <div class="controls">
-                                <!--<input type="text" id="dt-atualiza" class="span2 centralizar-texto" />-->
+                                <input type="text" id="dt-atualiza" class="span2 centralizar-texto" />
                                 <div id="datepicker"></div>
                             </div>
                         </div>
@@ -127,7 +126,7 @@ require "../furia/includes/bs.php";
                             <div class="controls">
                                 <input type="text" id="ordem" class="span1 centralizar-texto" />
                             </div>
-                        </div>                        
+                        </div>
                         <div class="control-group">
                             <div class="controls">
                                 <button type="submit" class="btn btn-danger disabled">Excluir</button>
@@ -143,6 +142,6 @@ require "../furia/includes/bs.php";
     </body>
     <script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
     <script src="<?php echo BASE_PATH; ?>furia/boot/js/bootstrap.js" type="text/javascript"></script>
-    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js" type="text/javascript"></script>        
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript"></script>
 </html>
