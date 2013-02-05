@@ -8,12 +8,12 @@ $(document).ready(function() {
 
         },
         setRegistros: function(){
-            this.registros.push( {id:10, url:"primeira"}  );
-            this.registros.push( {id:20, url:"segunda"}  );
-            this.registros.push( {id:30, url:"terceira"}  );
+            this.registros[1] = {id:1, url:"primeira"};
+            this.registros[2] = {id:2, url:"segunda"};
+            this.registros[3] = {id:3, url:"terceira"};
         },
-        retMateria: function(chave){
-            return this.registros[chave];
+        retMateria: function(id){
+            return this.registros[id];
         }
     }
     materias.init();
@@ -36,9 +36,9 @@ $(document).ready(function() {
             var me = this;
             this.btnDir.click(function(event){
                 event.preventDefault();
-                if(me.registro_atual < (me.total_registros-1) ){
+                if(me.registro_atual < me.total_registros){
                     me.registro_atual = me.registro_atual+1;
-                    console.log(materias.retMateria(me.registro_atual).id);
+                    console.log(materias.retMateria(me.registro_atual).url);
                 }
             });
         },
@@ -46,9 +46,10 @@ $(document).ready(function() {
             var me = this;
             this.btnEsq.click(function(event){
                 event.preventDefault();
-                if(me.registro_atual > 0){
+                if(me.registro_atual > 1){
                     me.registro_atual = me.registro_atual-1;
-                    console.log(materias.retMateria(me.registro_atual).id);
+                    console.log(me.registro_atual);
+                    //console.log(materias.retMateria(me.registro_atual).url);
                 }
             });
         }
