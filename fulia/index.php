@@ -33,7 +33,6 @@ require "../furia/includes/bs.php";
         </style>
     </head>
     <body>
-
         <div class="container">
             <div class="row">
                 <div class="span12">
@@ -45,26 +44,25 @@ require "../furia/includes/bs.php";
                                 <a class="btn btn-inverse" href="#" id="ctr-percorre-dir"><i class=" icon-chevron-right  icon-white"></i></a>
                             </div>
                         </div>
-
                         <div class="control-group">
-                            <label class="control-label" for="id">id</label>
+                            <label class="control-label" for="frm-id">id</label>
                             <div class="controls">
-                                <input type="text" id="id" class="span1 centralizar-texto" />
+                                <input type="text" id="frm-id" class="span1 centralizar-texto" />
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="url">URL</label>
+                            <label class="control-label" for="frm-url">URL</label>
                             <div class="controls">
                                 <div class="input-prepend">
                                     <span class="add-on">www.devfuria.com.br/</span>
-                                    <input id="url" type="text" style="width: 810px"/>
+                                    <input type="text" id="frm-url" style="width: 810px"/>
                                 </div>
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="titulo">Título</label>
+                            <label class="control-label" for="frm-titulo">Título</label>
                             <div class="controls">
-                                <input type="text" id="titulo" class="input-tamanho-padrao"/>
+                                <input id="frm-titulo" type="text" class="input-tamanho-padrao"/>
                             </div>
                         </div>
                         <div class="control-group">
@@ -132,7 +130,6 @@ require "../furia/includes/bs.php";
                                 <button type="submit" class="btn btn-danger disabled">Excluir</button>
                                 <button type="submit" class="btn disabled">Cancelar</button>
                                 <button type="submit" class="btn btn-info disabled">Salvar</button>
-
                             </div>
                         </div>
                     </form>
