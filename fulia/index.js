@@ -1,8 +1,18 @@
 $(document).ready(function() {
 
     var ajax = {
-        read: function(dados, callback){
-            $.post("crudMaterias.php", dados, function(resposta){
+        read: function(callback){
+            $.post("crudMaterias.php", "ac=select", function(resposta){
+                callback(resposta);
+            });
+        },
+        readTotalRegis: function(callback){
+            $.post("crudMaterias.php", "ac=total", function(resposta){
+                callback(resposta);
+            });
+        },
+        create: function(materia, callback){
+            $.post("crudMaterias.php", "ac=insert" + materia, function(resposta){
                 callback(resposta);
             });
         }
@@ -21,7 +31,7 @@ $(document).ready(function() {
         },
         setRegistros: function(){
             var me = this;
-            ajax.read("", function(resp){
+            ajax.read(function(resp){
                 me.registros = JSON.parse(resp);
             });
         }
@@ -42,6 +52,9 @@ $(document).ready(function() {
         dt_atualizacao: $("#frm-dt-atualizacao"),
         ordem: $("#frm-ordem"),
 
+        init: function(){
+            //this.ligarEstadoAlteracao();
+        },
         bind: function(materia){
             this.id.val(materia.id);
             this.url.val(materia.url);
@@ -55,13 +68,48 @@ $(document).ready(function() {
             this.dt_atualizacao.val(materia.dt_atualizacao);
             this.ordem.val(materia.ordem);
         },
-        setButtonsInsert: function(){
-            console.log("insert");
+        limpar: function(){
+            this.id.val("");
+            this.url.val("")
+            this.titulo.val("")
+            this.resumo.val("")
+            this.keywords.val("")
+            this.nivel.val("")
+            this.secao.val("")
+            this.autor.val("")
+            this.dt_criacao.val("")
+            this.dt_atualizacao.val("")
+            this.ordem.val("")
         },
-        setButtonsUpdate: function(){
-            console.log("update");
+        ligarEstadoAlteracao: function(){
+            $('input').change(function(){
+                console.log( "alterando: " + $(this).attr('id') );
+                acao.alterando();
+            })
+        },
+        deligarEstadoAlteracao: function(){
+            $('input').unbind();
+        },
+        getMateria: function(){
+            var materia = {};
+
+            materia.id             = this.id.val();
+            materia.url            = this.url.val();
+            materia.titulo         = this.titulo.val();
+            materia.resumo         = this.resumo.val();
+            materia.keywords       = this.keywords.val();
+            materia.nivel          = this.nivel.val();
+            materia.secao          = this.secao.val();
+            materia.autor          = this.autor.val();
+            materia.dt_criacao     = this.dt_criacao.val();
+            materia.dt_atualizacao = this.dt_atualizacao.val();
+            materia.ordem          = this.ordem.val();
+
+            return materia;
         }
     };
+    ctrForm.init();
+
 
     var ctrPercorre = {
         total_registros: 0,
@@ -74,7 +122,11 @@ $(document).ready(function() {
             this.setTotalRegistros();
         },
         setTotalRegistros: function(){
-            this.total_registros = 8;
+            var me = this;
+
+            ajax.readTotalRegis(function(total){
+                me.total_registros = total;
+            });
         },
         setBtnDir: function(regis){
             var me = this;
@@ -83,7 +135,7 @@ $(document).ready(function() {
                 if(me.registro_atual < (me.total_registros-1) ){
                     me.registro_atual = me.registro_atual+1;
                     ctrForm.bind( materias.get(me.registro_atual) );
-                    acao.atualizando();
+                    acao.visualizando();
                 }
             });
         },
@@ -94,7 +146,7 @@ $(document).ready(function() {
                 if(me.registro_atual > 0){
                     me.registro_atual = me.registro_atual-1;
                     ctrForm.bind( materias.get(me.registro_atual) );
-                    acao.atualizando();
+                    acao.visualizando();
                 }
             });
         }
@@ -110,32 +162,77 @@ $(document).ready(function() {
             this.inserindo();
         },
         inserindo: function(){
-            this.btnSalvar.removeClass("disabled");
-            this.setButtonSalvar();
-            this.btnExcluir.addClass("disabled");
+            this.btnNovo.addClass("disabled");          // desliga btn novo
+            this.btnSalvar.removeClass("disabled");     // liga    btn salvar
+            this.btnCancelar.addClass("disabled");      // desliga btn cancelar
+            this.btnExcluir.addClass("disabled");       // desliga btn excluir
+
+            this.setButtonSalvar_insert();              // evento  salvar
         },
-        atualizando: function(){
-            this.setButtonNovo();
-            this.btnNovo.removeClass('disabled');
-            this.btnExcluir.removeClass("disabled");
+        alterando: function(){
+            this.btnNovo.addClass('disabled');          // desliga btn novo
+            this.btnSalvar.removeClass("disabled");     // liga    btn salvar
+            this.btnCancelar.removeClass("disabled");   // liga    btn cancelar
+            this.btnExcluir.addClass("disabled");       // desliga btn excluir
+
+            this.setButtonSalvar_update();              // evento  salvar
+            this.setButtonCancelar();                   // evento  cancelar
+        },
+        visualizando: function(){
+            this.btnNovo.removeClass('disabled');       // liga    btn novo
+            this.btnSalvar.addClass("disabled");        // desliga btn salvar
+            this.btnCancelar.addClass("disabled");      // desliga btn cancelar
+            this.btnExcluir.removeClass("disabled");    // liga    btn excluir
+
+            this.setButtonNovo();                       // evento  novo
+            this.setButtonExcluir()                     // evento  excluir
         },
         setButtonNovo: function(){
             var me = this;
-            
-            this.btnNovo.unbind().click(function(){
-                console.log("reset form");
-                $(this).addClass('disabled').unbind();
+
+            this.btnNovo.unbind().click(function(event){
+                event.preventDefault();
+                console.log("vai inserir um novo");
+                ctrForm.limpar();
+                ctrForm.deligarEstadoAlteracao();
                 me.inserindo();
             });
         },
-        setButtonSalvar: function(){
+        setButtonSalvar_insert: function(){
             var me = this;
-            
-            this.btnSalvar.click(function(event){
+
+            this.btnSalvar.unbind().click(function(event){
                 event.preventDefault();
-                console.log("salvou form");
-                $(this).addClass("disabled").unbind().click(function(e){e.preventDefault()});
-                me.atualizando();
+                console.log("salvar(in), atualizar array, ir para último");
+                me.visualizando();
+                ajax.create( "&materia="+JSON.stringify( ctrForm.getMateria() ) , function(){});
+            });
+        },
+        setButtonSalvar_update: function(){
+            var me = this;
+
+            this.btnSalvar.unbind().click(function(event){
+                event.preventDefault();
+                me.visualizando();
+                console.log("salvar - up");
+            });
+        },
+        setButtonCancelar: function(){
+            var me = this;
+
+            this.btnCancelar.unbind().click(function(event){
+                event.preventDefault();
+                ctrForm.bind(  materias.get(ctrPercorre.registro_atual)  );
+                me.visualizando();
+            });
+
+        },
+        setButtonExcluir: function(){
+            var me = this;
+
+            this.btnExcluir.unbind().click(function(event){
+                event.preventDefault();
+                console.log("excluir, atualizar array, reiniciar(novo)");
             });
         }
     }

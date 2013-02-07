@@ -31,7 +31,7 @@ require "../furia/includes/bs.php";
             }
             .btn-fulia {
                 width: 100px;
-            }            
+            }
         </style>
     </head>
     <body>
@@ -55,7 +55,7 @@ require "../furia/includes/bs.php";
                             <div class="controls">
                                 <input type="text" id="frm-id" class="span1 centralizar-texto" />
                             </div>
-                        </div><!--
+                        </div>
                         <div class="control-group">
                             <label class="control-label" for="frm-url">URL</label>
                             <div class="controls">
@@ -70,7 +70,7 @@ require "../furia/includes/bs.php";
                             <div class="controls">
                                 <input id="frm-titulo" type="text" class="input-tamanho-padrao"/>
                             </div>
-                        </div>
+                        </div><!--
                         <div class="control-group">
                             <label class="control-label" for="frm-resumo">Resumo</label>
                             <div class="controls">
