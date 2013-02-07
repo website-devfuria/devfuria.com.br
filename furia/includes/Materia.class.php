@@ -7,9 +7,9 @@
  */
 class Materia {
 
-    const PHP  = "php";
-    const JS   = "js";
-    const HTML = "html";
+    const PHP      = "php";
+    const JS       = "js";
+    const HTML_CSS = "html-css";
 
 
     /**

@@ -29,7 +29,9 @@ require "../furia/includes/bs.php";
                 text-align: center;
                 font-weight: 900;
             }
-
+            .btn-fulia {
+                width: 100px;
+            }            
         </style>
     </head>
     <body>
@@ -37,7 +39,11 @@ require "../furia/includes/bs.php";
             <div class="row">
                 <div class="span12">
                     <form class="form-horizontal inverse">
-                        <legend>Matérias</legend>
+                        <legend>Matérias
+                            <span>
+                                <a link="" class="btn btn-link pull-right disabled" id="ctr-acao-novo">Nova matéria</a>
+                            </span>
+                        </legend>
                         <div class="btn-toolbar" >
                             <div class="btn-group pull-right">
                                 <a class="btn btn-inverse" href="#" id="ctr-percorre-esq"><i class=" icon-chevron-left  icon-white"></i></a>
@@ -49,7 +55,7 @@ require "../furia/includes/bs.php";
                             <div class="controls">
                                 <input type="text" id="frm-id" class="span1 centralizar-texto" />
                             </div>
-                        </div>
+                        </div><!--
                         <div class="control-group">
                             <label class="control-label" for="frm-url">URL</label>
                             <div class="controls">
@@ -66,70 +72,73 @@ require "../furia/includes/bs.php";
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="resumo">Resumo</label>
+                            <label class="control-label" for="frm-resumo">Resumo</label>
                             <div class="controls">
-                                <textarea rows="6" id="resumo" class="input-tamanho-padrao"></textarea>
+                                <textarea rows="6" id="frm-resumo" class="input-tamanho-padrao"></textarea>
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="keywords">Keywords</label>
+                            <label class="control-label" for="frm-keywords">Keywords</label>
                             <div class="controls">
-                                <textarea rows="3" id="keywords" class="input-tamanho-padrao"></textarea>
+                                <textarea rows="3" id="frm-keywords" class="input-tamanho-padrao"></textarea>
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="keywords">Nível</label>
+                            <label class="control-label" for="frm-nivel">Nível</label>
                             <div class="controls">
-                                <select id="nivel">
-                                    <option>zero</option>
-                                    <option>básico</option>
-                                    <option>intermediário</option>
-                                    <option>avançado</option>
+                                <select id="frm-nivel">
+                                    <option value=""></option>
+                                    <option value="zero">Zero</option>
+                                    <option value="basico">Básico</option>
+                                    <option value="intermediario">Intermediário</option>
+                                    <option value="avancado">Avançado</option>
                                 </select>
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="secao">Seção</label>
+                            <label class="control-label" for="frm-secao">Seção</label>
                             <div class="controls">
-                                <select id="secao">
-                                    <option>PHP</option>
-                                    <option>JS</option>
-                                    <option>HTML & CSS</option>
+                                <select id="frm-secao" >
+                                    <option value=""></option>
+                                    <option value="php">PHP</option>
+                                    <option value="js">JS</option>
+                                    <option value="html-css">HTML & CSS</option>
                                 </select>
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="secao">Autor</label>
+                            <label class="control-label" for="frm-autor">Autor</label>
                             <div class="controls">
-                                <select id="autor">
-                                    <option id="7">Flávio Micheletti</option>
+                                <select id="frm-autor">
+                                    <option value=""></option>
+                                    <option value="Flávio Micheletti">Flávio Micheletti</option>
                                 </select>
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="dt-cria">Data de criação</label>
+                            <label class="control-label" for="frm-dt-criacao">Data de criação</label>
                             <div class="controls">
-                                <input type="text" id="dt-cria" class="span2 centralizar-texto" />
+                                <input type="text" id="frm-dt-criacao" class="span2 centralizar-texto" />
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="dt-atualiza">Data de atualização</label>
+                            <label class="control-label" for="frm-dt-atualizacao">Data de atualização</label>
                             <div class="controls">
-                                <input type="text" id="dt-atualiza" class="span2 centralizar-texto" />
+                                <input type="text" id="frm-dt-atualizacao" class="span2 centralizar-texto" />
                                 <div id="datepicker"></div>
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="ordem">Ordem</label>
+                            <label class="control-label" for="frm-ordem">Ordem</label>
                             <div class="controls">
-                                <input type="text" id="ordem" class="span1 centralizar-texto" />
+                                <input type="text" id="frm-ordem" class="span1 centralizar-texto" />
                             </div>
-                        </div>
+                        </div>-->
                         <div class="control-group">
                             <div class="controls">
-                                <button type="submit" class="btn btn-danger disabled">Excluir</button>
-                                <button type="submit" class="btn disabled">Cancelar</button>
-                                <button type="submit" class="btn btn-info disabled">Salvar</button>
+                                <button type="button" id="ctr-acao-excluir" class="btn-fulia btn btn-danger disabled">Excluir</button>
+                                <button type="button" id="ctr-acao-cancelar" class="btn-fulia btn disabled">Cancelar</button>
+                                <button type="butonn" id="ctr-acao-salvar" class="btn-fulia btn btn-info disabled">Salvar</button>
                             </div>
                         </div>
                     </form>
