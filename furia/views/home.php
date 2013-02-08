@@ -16,62 +16,8 @@
         ?>
         <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
         <link href="<?php echo BASE_PATH; ?>index.css" rel="stylesheet" type="text/css" />
-        <style type="text/css">
-            /* Listagem das Matérias
-            ===================================================*/
-            div.furia-lista-materias div.materia-resumo {
-                background-position: 10px 50%;
-                background-repeat: no-repeat;
-
-                border: 1px solid #F5F5F5;
-                box-shadow: 2px 2px 2px #767676;
-                cursor: pointer;
-                margin-bottom: 30px;
-                padding: 0px 0px;
-            }
-            div.materia-resumo.lista-php {
-                background-image: url("furia/imagens/lista_php.png");
-            }
-            div.materia-resumo.lista-html-css {
-                background-image: url("furia/imagens/lista_html_css.png");
-            }
-            div.materia-resumo.lista-js {
-                background-image: url("furia/imagens/lista_js.png");
-            }
-            div.materia-resumo.lista-mysql {
-                background-image: url("furia/imagens/lista_mysql.png");
-            }
-            div.materia-resumo.lista-analise {
-                background-image: url("furia/imagens/lista_analise.png");
-            }
-            div.materia-resumo * {
-                color: #000;
-                display: block;
-            }
-            div.materia-resumo a {
-                margin-left: 50px;
-                margin-right: 20px;
-                text-decoration: none;
-            }
-            div.materia-resumo:hover {
-                background-color: #F5F5F5;
-            }
-            div.materia-resumo em {
-                font-size: 20px;
-                margin: 10px 0px;
-                padding: 3px 0px;
-            }
-            div.materia-resumo span.resumo {
-                margin: 10px 0px;
-            }
-            div.materia-resumo span.assinatura {
-                font-size: 10px;
-                margin: 10px 0px;
-                padding: 3px 0px;
-            }
-        </style>
     </head>
-    <body class="respiro-em-baixo">
+    <body>
         <?php
         $nav_top['secao'] = null;
         include BASE_PATH.COMPONENTES_PATH."nav_top.php";
@@ -82,28 +28,78 @@
                     <header>
                             <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
                     </header>
-                    <div class="furia-lista-materias">
+                </div>
+            </div>
+
+
+            <ul class="thumbnails">
+                <li class="span4">
+                    <div class="thumbnail">
+                        <a href="<?php echo BASE_PATH?>php/">
+                            <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-php.jpeg" alt="">
+                        </a>
                         <?php
-                        $order    = "ORDER BY secao, ordem";
-                        $where    = "";
-                        $materias = Materia::getObjects($where, $order);
+                        $where = "WHERE secao = 'php' AND nivel = 'zero' ";
+                        $materias = Materia::getObjects($where);
                         ?>
-                        <?php foreach($materias as $materia): ?>
-                            <div class="materia-resumo lista-<?php echo $materia->secao; ?>">
-                                <a href="<?php echo BASE_PATH.$materia->url ?>">
-                                    <em><?php echo $materia->titulo; ?></em>
-                                    <span class="resumo">
-                                        <?php echo $materia->resumo; ?> (continuar lendo)
-                                    </span>
-                                    <span class="hidden-phone assinatura">
-                                        <?php echo $materia->autor; ?>,
-                                        atualizado em <?php echo FuncAux::data_converte_para_visualizar( $materia->dt_atualizacao ); ?>,
-                                        escrito em <?php echo FuncAux::data_converte_para_visualizar( $materia->dt_criacao ); ?>.
-                                    </span>
-                                </a>
-                            </div>
-                        <?php endforeach; ?>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><span class="badge badge-success">Básico</span></li>
+                            <li>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <?php foreach ($materias as $materia): ?>
+                                        <li><a href="<?php echo BASE_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
+                </li>
+                <li class="span4">
+                    <div class="thumbnail" >
+                        <a href="<?php echo BASE_PATH?>js/">
+                            <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-javascript.png" alt="">
+                        </a>
+                        <?php
+                        $where = "WHERE secao = 'js' AND nivel = 'basico' ";
+                        $materias = Materia::getObjects($where);
+                        ?>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><span class="badge badge-success">Básico</span></li>
+                            <li>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <?php foreach ($materias as $materia): ?>
+                                        <li><a href="<?php echo BASE_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="span4">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-html-css.jpg" alt="">
+                        </a>
+                        <?php
+                        $where = "WHERE secao = 'html-css' AND nivel = 'basico' ";
+                        $materias = Materia::getObjects($where);
+                        ?>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><span class="badge badge-success">Básico</span></li>
+                            <li>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li class="disabled"><a href="#">Onde tudo começou</a></li>
+                                    <li class="disabled"><a href="#">HTML e CSS - Introdução</a></li>
+                                    <li class="disabled"><a href="#">Elementos in-line e elementos block-level</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="row">
+                <div class="span12">
                     <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>
                 </div><!-- span12 -->
             </div><!-- row -->
