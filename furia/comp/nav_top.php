@@ -37,17 +37,6 @@ if( isset($materia) ){
                 </ul>
             </div>
 
-            <div class="btn-group direita visible-desktop" >
-                <a class="btn dropdown-toggle btn-inverse btn-primary" data-toggle="dropdown" href="#">
-                    Mais...
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASE_PATH; ?>mapa-do-site">mapa do site</a></li>
-                    <li><a href="https://github.com/flaviomicheletti/www.devfuria.com.br">forke me on github</a></li>
-                </ul>
-            </div>
-
         </div>
     </div>
 </div>
