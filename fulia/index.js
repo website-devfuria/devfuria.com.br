@@ -209,12 +209,27 @@ $(document).ready(function() {
             });
         },
         setButtonSalvar_update: function(){
-            var me = this;
+            var me = this,
+                materia_old = {},
+                materia_atu = {};
 
             this.btnSalvar.unbind().click(function(event){
                 event.preventDefault();
-                ajax.update( "&materia="+JSON.stringify( ctrForm.getMateria() ), function(){
-                    me.visualizando();                                          // ajustar controles
+                materia_atu = ctrForm.getMateria();
+
+                ajax.update( "&materia="+JSON.stringify( materia_atu ), function(){
+                    me.visualizando();                                            // ajustar controles
+                    materia_old = materias.registros[ctrPercorre.registro_atual]; // atualizar matéira do array
+                    materia_old.url            = materia_atu.url;
+                    materia_old.titulo         = materia_atu.titulo;
+                    materia_old.resumo         = materia_atu.resumo;
+                    materia_old.keywords       = materia_atu.keywords;
+                    materia_old.nivel          = materia_atu.nivel;
+                    materia_old.secao          = materia_atu.secao;
+                    materia_old.autor          = materia_atu.autor;
+                    materia_old.dt_criacao     = materia_atu.dt_criacao;
+                    materia_old.dt_atualizacao = materia_atu.dt_atualizacao;
+                    materia_old.ordem          = materia_atu.ordem;
                 });
             });
         },
