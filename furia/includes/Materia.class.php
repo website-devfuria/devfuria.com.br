@@ -60,6 +60,8 @@ class Materia {
 
         $stmt = Conn::getConexao()->query($sql);
         while( $materia = $stmt->fetch(PDO::FETCH_OBJ)  ):
+            $materia->dt_criacao     = FuncAux::data_converte_para_visualizar($materia->dt_criacao);
+            $materia->dt_atualizacao = FuncAux::data_converte_para_visualizar($materia->dt_atualizacao);
             $materias[] = $materia;
         endwhile;
 
