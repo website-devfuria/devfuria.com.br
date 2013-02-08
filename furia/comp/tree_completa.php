@@ -11,7 +11,7 @@ $tree_completa['mateiras'] = Materia::getObjects($tree_completa['where']);
 
                         <h6><?php echo strtoupper($tree_completa['secao']); ?></h6>
                         <ul class="filetree" id="browser">
-                            <li class="folder"><span class="folder">Nível Zero</span>
+                            <li class="folder"><span class="folder">Básico</span>
                                 <ul>
                                     <?php foreach($tree_completa['mateiras'] as $materia): ?>
                                         <li>
