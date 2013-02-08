@@ -15,12 +15,18 @@ $(document).ready(function() {
             $.post("crudMaterias.php", "ac=insert" + materia, function(resposta){
                 callback(resposta);
             });
-        }
+        },
+        delete_: function(id, callback){
+            $.post("crudMaterias.php", "ac=delete&id=" + id, function(resposta){
+                callback(resposta);
+            });
+        }        
     }
 
 
     var materias = {
         registros: [],
+        total_registros: 0,
 
         init: function(){
             this.setRegistros();
@@ -33,6 +39,9 @@ $(document).ready(function() {
             var me = this;
             ajax.read(function(resp){
                 me.registros = JSON.parse(resp);
+                ajax.readTotalRegis(function(total){
+                    me.total_registros = total;
+                });                
             });
         }
     }
@@ -52,9 +61,6 @@ $(document).ready(function() {
         dt_atualizacao: $("#frm-dt-atualizacao"),
         ordem: $("#frm-ordem"),
 
-        init: function(){
-            //this.ligarEstadoAlteracao();
-        },
         bind: function(materia){
             this.id.val(materia.id);
             this.url.val(materia.url);
@@ -82,8 +88,7 @@ $(document).ready(function() {
             this.ordem.val("")
         },
         ligarEstadoAlteracao: function(){
-            $('input').change(function(){
-                console.log( "alterando: " + $(this).attr('id') );
+            $('input').unbind().change(function(){
                 acao.alterando();
             })
         },
@@ -108,31 +113,20 @@ $(document).ready(function() {
             return materia;
         }
     };
-    ctrForm.init();
-
 
     var ctrPercorre = {
-        total_registros: 0,
         registro_atual: -1,
         btnDir: $("#ctr-percorre-dir"),
         btnEsq: $("#ctr-percorre-esq"),
         init: function(){
             this.setBtnDir();
             this.setBtnEsq();
-            this.setTotalRegistros();
-        },
-        setTotalRegistros: function(){
-            var me = this;
-
-            ajax.readTotalRegis(function(total){
-                me.total_registros = total;
-            });
         },
         setBtnDir: function(regis){
             var me = this;
             this.btnDir.click(function(event){
                 event.preventDefault();
-                if(me.registro_atual < (me.total_registros-1) ){
+                if(me.registro_atual < (materias.total_registros-1) ){
                     me.registro_atual = me.registro_atual+1;
                     ctrForm.bind( materias.get(me.registro_atual) );
                     acao.visualizando();
@@ -168,6 +162,7 @@ $(document).ready(function() {
             this.btnExcluir.addClass("disabled");       // desliga btn excluir
 
             this.setButtonSalvar_insert();              // evento  salvar
+            ctrForm.deligarEstadoAlteracao();
         },
         alterando: function(){
             this.btnNovo.addClass('disabled');          // desliga btn novo
@@ -186,13 +181,13 @@ $(document).ready(function() {
 
             this.setButtonNovo();                       // evento  novo
             this.setButtonExcluir()                     // evento  excluir
+            ctrForm.ligarEstadoAlteracao();
         },
         setButtonNovo: function(){
             var me = this;
 
             this.btnNovo.unbind().click(function(event){
                 event.preventDefault();
-                console.log("vai inserir um novo");
                 ctrForm.limpar();
                 ctrForm.deligarEstadoAlteracao();
                 me.inserindo();
@@ -203,9 +198,13 @@ $(document).ready(function() {
 
             this.btnSalvar.unbind().click(function(event){
                 event.preventDefault();
-                console.log("salvar(in), atualizar array, ir para último");
-                me.visualizando();
-                ajax.create( "&materia="+JSON.stringify( ctrForm.getMateria() ) , function(){});
+                ajax.create( "&materia="+JSON.stringify( ctrForm.getMateria() ) , function(lastInsertId){
+                    materias.setRegistros();                                    // atualizar array
+                    ctrPercorre.registro_atual = materias.total_registros-1;    // ir para último regis
+                    me.visualizando();                                          // ajustar controles
+                    ctrForm.id.val(lastInsertId);
+                    
+                });
             });
         },
         setButtonSalvar_update: function(){
@@ -214,7 +213,6 @@ $(document).ready(function() {
             this.btnSalvar.unbind().click(function(event){
                 event.preventDefault();
                 me.visualizando();
-                console.log("salvar - up");
             });
         },
         setButtonCancelar: function(){
@@ -232,7 +230,13 @@ $(document).ready(function() {
 
             this.btnExcluir.unbind().click(function(event){
                 event.preventDefault();
-                console.log("excluir, atualizar array, reiniciar(novo)");
+                ajax.delete_( ctrForm.getMateria().id , function(){
+                    materias.setRegistros();            // atualizar array
+                    ctrPercorre.registro_atual = -1;    // reiniciar (novo)
+                    ctrForm.limpar();                   // reiniciar
+                    ctrForm.deligarEstadoAlteracao();                    
+                    me.inserindo();
+                });                
             });
         }
     }

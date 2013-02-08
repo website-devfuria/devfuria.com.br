@@ -36,9 +36,17 @@ switch ($acao) {
         $materia->dt_criacao     = FuncAux::data_converte_para_mysql($materia_request->dt_criacao);
         $materia->ordem          = $materia_request->ordem;        
         $materia->inserir();
+        echo $materia->id;
         
         break;
 
+    case "delete":
+        $id = isset($_POST['id']) ? $_POST['id'] : null ;
+        $materia = new Materia();
+        $materia->id = $id;
+        $materia->deletar();
+        break;    
+    
 }
 
 
