@@ -138,7 +138,7 @@ require "../furia/includes/bs.php";
                             <div class="controls">
                                 <button type="button" id="ctr-acao-excluir" class="btn-fulia btn btn-danger disabled">Excluir</button>
                                 <button type="button" id="ctr-acao-cancelar" class="btn-fulia btn disabled">Cancelar</button>
-                                <button type="butonn" id="ctr-acao-salvar" class="btn-fulia btn btn-info disabled">Salvar</button>
+                                <button type="button" id="ctr-acao-salvar" class="btn-fulia btn btn-info disabled">Salvar</button>
                             </div>
                         </div>
                     </form>

@@ -20,7 +20,7 @@ $(document).ready(function() {
             $.post("crudMaterias.php", "ac=delete&id=" + id, function(resposta){
                 callback(resposta);
             });
-        }        
+        }
     }
 
 
@@ -41,7 +41,7 @@ $(document).ready(function() {
                 me.registros = JSON.parse(resp);
                 ajax.readTotalRegis(function(total){
                     me.total_registros = total;
-                });                
+                });
             });
         }
     }
@@ -156,31 +156,32 @@ $(document).ready(function() {
             this.inserindo();
         },
         inserindo: function(){
-            this.btnNovo.addClass("disabled");          // desliga btn novo
-            this.btnSalvar.removeClass("disabled");     // liga    btn salvar
-            this.btnCancelar.addClass("disabled");      // desliga btn cancelar
-            this.btnExcluir.addClass("disabled");       // desliga btn excluir
+            this.btnNovo.addClass("disabled");           // desliga btn novo
+            this.btnSalvar.removeClass("disabled");      // liga    btn salvar
+            this.btnCancelar.addClass("disabled");       // desliga btn cancelar
+            this.btnExcluir.addClass("disabled");        // desliga btn excluir
 
-            this.setButtonSalvar_insert();              // evento  salvar
+            this.setButtonSalvar_insert();               // evento  salvar
             ctrForm.deligarEstadoAlteracao();
         },
         alterando: function(){
-            this.btnNovo.addClass('disabled');          // desliga btn novo
-            this.btnSalvar.removeClass("disabled");     // liga    btn salvar
-            this.btnCancelar.removeClass("disabled");   // liga    btn cancelar
-            this.btnExcluir.addClass("disabled");       // desliga btn excluir
+            this.btnNovo.addClass('disabled');           // desliga btn novo
+            this.btnSalvar.removeClass("disabled");      // liga    btn salvar
+            this.btnCancelar.removeClass("disabled");    // liga    btn cancelar
+            this.btnExcluir.addClass("disabled");        // desliga btn excluir
 
-            this.setButtonSalvar_update();              // evento  salvar
-            this.setButtonCancelar();                   // evento  cancelar
+
+            this.setButtonSalvar_update();               // evento  salvar
+            this.setButtonCancelar();                    // evento  cancelar
         },
         visualizando: function(){
-            this.btnNovo.removeClass('disabled');       // liga    btn novo
-            this.btnSalvar.addClass("disabled");        // desliga btn salvar
-            this.btnCancelar.addClass("disabled");      // desliga btn cancelar
-            this.btnExcluir.removeClass("disabled");    // liga    btn excluir
+            this.btnNovo.removeClass('disabled');        // liga    btn novo
+            this.btnSalvar.addClass("disabled").unbind();// desliga btn salvar
+            this.btnCancelar.addClass("disabled");       // desliga btn cancelar
+            this.btnExcluir.removeClass("disabled");     // liga    btn excluir
 
-            this.setButtonNovo();                       // evento  novo
-            this.setButtonExcluir()                     // evento  excluir
+            this.setButtonNovo();                        // evento  novo
+            this.setButtonExcluir()                      // evento  excluir
             ctrForm.ligarEstadoAlteracao();
         },
         setButtonNovo: function(){
@@ -198,12 +199,11 @@ $(document).ready(function() {
 
             this.btnSalvar.unbind().click(function(event){
                 event.preventDefault();
-                ajax.create( "&materia="+JSON.stringify( ctrForm.getMateria() ) , function(lastInsertId){
+                ajax.create( "&materia="+JSON.stringify( ctrForm.getMateria() ), function(lastInsertId){
                     materias.setRegistros();                                    // atualizar array
                     ctrPercorre.registro_atual = materias.total_registros-1;    // ir para último regis
                     me.visualizando();                                          // ajustar controles
                     ctrForm.id.val(lastInsertId);
-                    
                 });
             });
         },
@@ -234,9 +234,9 @@ $(document).ready(function() {
                     materias.setRegistros();            // atualizar array
                     ctrPercorre.registro_atual = -1;    // reiniciar (novo)
                     ctrForm.limpar();                   // reiniciar
-                    ctrForm.deligarEstadoAlteracao();                    
+                    ctrForm.deligarEstadoAlteracao();
                     me.inserindo();
-                });                
+                });
             });
         }
     }
