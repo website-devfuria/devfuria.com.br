@@ -15,6 +15,11 @@
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>
         <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
+        <style type="text/css">
+            div.materia-resumo.lista-js {
+                background-image: url("../furia/imagens/lista_js.png");
+            }
+        </style>
     </head>
     <body class="respiro-em-baixo">
 
@@ -35,26 +40,6 @@
                 </div>
             </div>
 
-
-            <div class="row">
-                <div class="span6">
-                    <div class="furia-secoes-intro">
-                        <h1>Curso (in) completo de JS</h1>
-                        <p>O <em>Curso Javascript (in)completo</em> foi desenvolvido primando-se a qualidade, simplicidade e objetividade</p>
-                        <p>Caso o leitor sinta a falta de qualquer um deses elementos, pedimos a gentileza de nos enviar um feedback</p>
-
-                        <p>O curso está dividido em níveis: básico, intermediário e avançado</p>
-                        <p>Dentro de cada nível encontram-se as mátérias(artigos).</p>
-
-                        <p>Seja bem vindo ao curso!</p>
-                        <p>Esperamos que seja proveitoso.</p>
-                    </div>
-                </div>
-                <div class="span6">
-                    <?php include BASE_PATH.COMPONENTES_PATH."form_feedback.php"; ?>
-                </div>
-            </div>
-
             <div class="row">
                 <div class="span10 offset1">
                     <?php
@@ -62,6 +47,33 @@
                     $tree_completa['nivel'] = "basico";
                     include BASE_PATH.COMPONENTES_PATH."tree_completa.php";
                     ?>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span10 offset1">
+                    <div class="furia-lista-materias">
+                        <?php
+                        $order    = "ORDER BY secao, ordem";
+                        $where    = "WHERE secao = 'js' ";
+                        $materias = Materia::getObjects($where, $order);
+                        ?>
+                        <?php foreach($materias as $materia): ?>
+                            <div class="materia-resumo lista-<?php echo $materia->secao; ?>">
+                                <a href="<?php echo BASE_PATH.$materia->url ?>">
+                                    <em><?php echo $materia->titulo; ?></em>
+                                    <span class="resumo">
+                                        <?php echo $materia->resumo; ?> (continuar lendo)
+                                    </span>
+                                    <span class="hidden-phone assinatura">
+                                        <?php echo $materia->autor; ?>,
+                                        atualizado em <?php echo FuncAux::data_converte_para_visualizar( $materia->dt_atualizacao ); ?>,
+                                        escrito em <?php echo FuncAux::data_converte_para_visualizar( $materia->dt_criacao ); ?>.
+                                    </span>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
             </div>
 
