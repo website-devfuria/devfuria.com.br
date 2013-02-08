@@ -17,6 +17,7 @@ $_SESSION['chave'] = CHAVE;
 <html lang="pt-br">
     <head>
         <title>Furia e Fulia</title>
+        <meta charset="utf-8" />
         <link href="<?php echo BASE_PATH; ?>furia/boot/css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo BASE_PATH; ?>furia/boot/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
         <link href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
