@@ -165,7 +165,6 @@ $(document).ready(function() {
             this.btnSalvar.removeClass("disabled");      // liga    btn salvar
             this.btnCancelar.addClass("disabled");       // desliga btn cancelar
             this.btnExcluir.addClass("disabled");        // desliga btn excluir
-
             this.setButtonSalvar_insert();               // evento  salvar
             ctrForm.deligarEstadoAlteracao();
         },
@@ -174,8 +173,6 @@ $(document).ready(function() {
             this.btnSalvar.removeClass("disabled");      // liga    btn salvar
             this.btnCancelar.removeClass("disabled");    // liga    btn cancelar
             this.btnExcluir.addClass("disabled");        // desliga btn excluir
-
-
             this.setButtonSalvar_update();               // evento  salvar
             this.setButtonCancelar();                    // evento  cancelar
         },
@@ -184,7 +181,6 @@ $(document).ready(function() {
             this.btnSalvar.addClass("disabled").unbind();// desliga btn salvar
             this.btnCancelar.addClass("disabled");       // desliga btn cancelar
             this.btnExcluir.removeClass("disabled");     // liga    btn excluir
-
             this.setButtonNovo();                        // evento  novo
             this.setButtonExcluir()                      // evento  excluir
             ctrForm.ligarEstadoAlteracao();
