@@ -20,9 +20,23 @@ switch ($acao) {
         break;
 
     case "insert":
-        $materia = isset($_POST['materia']) ? $_POST['materia'] : null ;
-        var_dump( json_decode($materia) );
-
+        $materia_request = isset($_POST['materia']) ? $_POST['materia'] : null ;
+        $materia_request = json_decode($materia_request);
+        
+        $materia = new Materia();
+        $materia->id             = $materia_request->id;
+        $materia->url            = $materia_request->url;
+        $materia->titulo         = $materia_request->titulo;
+        $materia->resumo         = $materia_request->resumo;
+        $materia->keywords       = $materia_request->keywords;
+        $materia->nivel          = $materia_request->nivel;
+        $materia->secao          = $materia_request->secao;
+        $materia->autor          = $materia_request->autor;
+        $materia->dt_atualizacao = FuncAux::data_converte_para_mysql($materia_request->dt_atualizacao);
+        $materia->dt_criacao     = FuncAux::data_converte_para_mysql($materia_request->dt_criacao);
+        $materia->ordem          = $materia_request->ordem;        
+        $materia->inserir();
+        
         break;
 
 }

@@ -16,7 +16,7 @@ class Materia {
      *
      * @param type $id
      */
-    function __construct($id) {
+    function __construct($id=null) {
         if($id){
             $this->id = $id;
             $this->carregar();
@@ -65,6 +65,32 @@ class Materia {
 
         return $materias;
 
+    }
+    
+    /**
+     * 
+     * @throws Exception
+     */
+    function inserir(){
+        $sql = "INSERT INTO materias"
+                ."(id, url, titulo, resumo, keywords, nivel, secao, autor, dt_atualizacao, dt_criacao, ordem)"
+                ." VALUES( "
+                ."'".$this->id."', "
+                ."'".$this->url."', "
+                ."'".$this->titulo."' ,"
+                ."'".$this->resumo."' ,"
+                ."'".$this->keywords."', "
+                ."'".$this->nivel."', "
+                ."'".$this->secao."', "
+                ."'".$this->autor."', "
+                ."'".$this->dt_atualizacao."', "
+                ."'".$this->dt_criacao."', "
+                .$this->ordem.")";
+        $result = Conn::getConexao()->query($sql);
+        if(!$result){
+            $err = Conn::getConexao()->errorInfo();
+            throw new Exception($err[2], $err[1]);
+        }
     }
 
 

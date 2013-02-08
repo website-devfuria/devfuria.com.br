@@ -70,7 +70,7 @@ require "../furia/includes/bs.php";
                             <div class="controls">
                                 <input id="frm-titulo" type="text" class="input-tamanho-padrao"/>
                             </div>
-                        </div><!--
+                        </div>
                         <div class="control-group">
                             <label class="control-label" for="frm-resumo">Resumo</label>
                             <div class="controls">
@@ -133,7 +133,7 @@ require "../furia/includes/bs.php";
                             <div class="controls">
                                 <input type="text" id="frm-ordem" class="span1 centralizar-texto" />
                             </div>
-                        </div>-->
+                        </div>
                         <div class="control-group">
                             <div class="controls">
                                 <button type="button" id="ctr-acao-excluir" class="btn-fulia btn btn-danger disabled">Excluir</button>
