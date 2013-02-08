@@ -2,27 +2,27 @@ $(document).ready(function() {
 
     var ajax = {
         read: function(callback){
-            $.post("crudMaterias.php", "ac=select", function(resposta){
+            $.post("crudMaterias.php", "&ac=select", function(resposta){
                 callback(resposta);
             });
         },
         readTotalRegis: function(callback){
-            $.post("crudMaterias.php", "ac=total", function(resposta){
+            $.post("crudMaterias.php", "&ac=total", function(resposta){
                 callback(resposta);
             });
         },
         create: function(materia, callback){
-            $.post("crudMaterias.php", "ac=insert" + materia, function(resposta){
+            $.post("crudMaterias.php", "&ac=insert" + materia, function(resposta){
                 callback(resposta);
             });
         },
         update: function(materia, callback){
-            $.post("crudMaterias.php", "ac=update" + materia, function(resposta){
+            $.post("crudMaterias.php", "&ac=update" + materia, function(resposta){
                 callback(resposta);
             });
         },
         delete_: function(id, callback){
-            $.post("crudMaterias.php", "ac=delete&id=" + id, function(resposta){
+            $.post("crudMaterias.php", "&ac=delete&id=" + id, function(resposta){
                 callback(resposta);
             });
         }

@@ -3,6 +3,14 @@
  * Includes
  */
 require "../furia/includes/bs.php";
+
+/**
+ * Autenticação
+ */
+$_GET['c'] = (isset($_GET['c'])) ? $_GET['c'] : null ;
+if($_GET['c'] != CHAVE) die('sorry man!');
+$_SESSION['chave'] = CHAVE;
+
 ?>
 
 <!DOCTYPE html>

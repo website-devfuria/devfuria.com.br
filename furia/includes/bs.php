@@ -76,6 +76,11 @@ define('COMPONENTES_PATH', "furia/comp/");
  */
 define('DOMINIO', "devfuria.com.br");
 
+/**
+ * Chave acesso à área administrativa
+ */
+define("CHAVE", 1234);
+
 
 /**
  * Palavras chaves

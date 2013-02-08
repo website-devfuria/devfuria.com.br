@@ -5,6 +5,12 @@
 require "../furia/includes/bs.php";
 
 
+/**
+ * Autenticação
+ */
+if($_SESSION['chave'] != CHAVE) die();
+
+
 $acao = isset($_POST['ac']) ? $_POST['ac'] : null ;
 
 switch ($acao) {
