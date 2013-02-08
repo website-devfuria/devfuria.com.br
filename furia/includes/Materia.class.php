@@ -66,9 +66,9 @@ class Materia {
         return $materias;
 
     }
-    
+
     /**
-     * 
+     *
      * @throws Exception
      */
     function inserir(){
@@ -91,24 +91,52 @@ class Materia {
             $err = Conn::getConexao()->errorInfo();
             throw new Exception($err[2], $err[1]);
         }
-        
+
         $this->id = Conn::getConexao()->lastInsertId();
-        
+
     }
-    
+
     /**
-     * 
+     *
      * @throws Exception
      */
-    function deletar(){
-        
-        $sql = "DELETE FROM materias WHERE id = {$this->id} LIMIT 1";
-        
+    function update(){
+        $sql = "UPDATE materias "
+                ."SET "
+                ."id = '".$this->id."', "
+                ."url = '".$this->url."', "
+                ."titulo = '".$this->titulo."' ,"
+                ."resumo = '".$this->resumo."' ,"
+                ."keywords = '".$this->keywords."', "
+                ."nivel = '".$this->nivel."', "
+                ."secao = '".$this->secao."', "
+                ."autor = '".$this->autor."', "
+                ."dt_atualizacao = '".$this->dt_atualizacao."', "
+                ."dt_criacao = '".$this->dt_criacao."', "
+                ."ordem = ".$this->ordem
+                ." WHERE id = ".$this->id;
+
         $result = Conn::getConexao()->query($sql);
         if(!$result){
             $err = Conn::getConexao()->errorInfo();
             throw new Exception($err[2], $err[1]);
-        }        
+        }
+    }
+
+
+    /**
+     *
+     * @throws Exception
+     */
+    function deletar(){
+
+        $sql = "DELETE FROM materias WHERE id = {$this->id} LIMIT 1";
+
+        $result = Conn::getConexao()->query($sql);
+        if(!$result){
+            $err = Conn::getConexao()->errorInfo();
+            throw new Exception($err[2], $err[1]);
+        }
     }
 
 

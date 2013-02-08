@@ -16,6 +16,11 @@ $(document).ready(function() {
                 callback(resposta);
             });
         },
+        update: function(materia, callback){
+            $.post("crudMaterias.php", "ac=update" + materia, function(resposta){
+                callback(resposta);
+            });
+        },
         delete_: function(id, callback){
             $.post("crudMaterias.php", "ac=delete&id=" + id, function(resposta){
                 callback(resposta);
@@ -212,7 +217,9 @@ $(document).ready(function() {
 
             this.btnSalvar.unbind().click(function(event){
                 event.preventDefault();
-                me.visualizando();
+                ajax.update( "&materia="+JSON.stringify( ctrForm.getMateria() ), function(){
+                    me.visualizando();                                          // ajustar controles
+                });
             });
         },
         setButtonCancelar: function(){
