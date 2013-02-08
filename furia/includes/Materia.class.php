@@ -105,7 +105,7 @@ class Materia {
     function update(){
         $sql = "UPDATE materias "
                 ."SET "
-                ."id = '".$this->id."', "
+//                ."id = '".$this->id."', "
                 ."url = '".$this->url."', "
                 ."titulo = '".$this->titulo."' ,"
                 ."resumo = '".$this->resumo."' ,"
