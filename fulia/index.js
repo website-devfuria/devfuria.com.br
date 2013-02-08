@@ -93,7 +93,7 @@ $(document).ready(function() {
             this.ordem.val("")
         },
         ligarEstadoAlteracao: function(){
-            $('input').unbind().change(function(){
+            $('input, select').unbind().change(function(){
                 acao.alterando();
             })
         },

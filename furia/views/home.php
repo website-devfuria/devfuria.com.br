@@ -39,7 +39,7 @@
                             <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-php.jpeg" alt="">
                         </a>
                         <?php
-                        $where = "WHERE secao = 'php' AND nivel = 'zero' ";
+                        $where = "WHERE secao = 'php' AND nivel = 'basico' ";
                         $materias = Materia::getObjects($where);
                         ?>
                         <ul class="nav nav-pills nav-stacked">

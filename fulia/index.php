@@ -97,7 +97,6 @@ $_SESSION['chave'] = CHAVE;
                             <div class="controls">
                                 <select id="frm-nivel">
                                     <option value=""></option>
-                                    <option value="zero">Zero</option>
                                     <option value="basico">Básico</option>
                                     <option value="intermediario">Intermediário</option>
                                     <option value="avancado">Avançado</option>

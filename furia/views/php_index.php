@@ -44,7 +44,7 @@
                 <div class="span10 offset1">
                     <?php
                     $tree_completa['secao'] = "php";
-                    $tree_completa['nivel'] = "zero";
+                    $tree_completa['nivel'] = "basico";
                     include BASE_PATH.COMPONENTES_PATH."tree_completa.php";
                     ?>
                 </div>
