@@ -6,7 +6,7 @@ Vamos dar uma rápida olhada nas tag's básicas e uma "passeada" com o CSS.
 ### Âncora(link)
     <a href="pagina-ao-clicar.html">Isto é um link</a>;
 
-O link possue a proprieda *href8 (*h*ypertext *ref*erence) que nada mais é do que o alvo que será
+O link possue a proprieda *href* (hypertext reference) que nada mais é do que o alvo que será
 alcançado quando clicarmos no link.
 
 Esse alvo pode ser uma outra página html ou um script de servidor em php, por exemplo.
@@ -198,7 +198,7 @@ trabalhar com os seguintes dados:
 * senha=1234
 * manter=false
 
-Essa questão da interação formulário/servidor nós trataremos no urso de PHP, ok? Aqui no curso de HTML e CSS vamos nos
+Essa questão da interação formulário/servidor nós trataremos no curso de PHP, ok? Aqui no curso de HTML e CSS vamos nos
 deter apenas em seu layout e estrutura.
 
 
@@ -225,8 +225,8 @@ questão da especificidade e da herânça (nada a ver com oop, olha lá hein!!!)
 Tudo bem, que tal não esquentarmos a cabeça com isso por enquanto? Vamos cair de cabeça e depois, quando estiver mais
 familiarizado, voltamos para "fechar" esses conceitos, ok?
 
-Na matéria ["onde tudo começou"](../onde-tudo-comecou) vimos como é a estrutura de uma rule-set. Sempre que estilizamos o HTML
-precisamos pensar primeiro em *qual será o nosso elemento(s) alvo?* E na sequência aplicamos o rule-set.
+Na matéria ["onde tudo começou"](../onde-tudo-comecou) vimos como é a estrutura de uma rule-set. Sempre que estilizamos
+o HTML precisamos pensar primeiro em *qual será o nosso(s) elemento(s) alvo?* E na sequência aplicamos o rule-set.
 Há uma dúzia de formas diferentes de encontrar elementos HTML. Fazemos isso através dos *seletores*.
 
 A CSS também possue *unidades de medidas*: px(pixel), pt(pontos), em(relativo ao tamanho da fonte) e %(porcentagem).
@@ -238,9 +238,19 @@ A mais simples e conhecida é a *pixel*. Um pixel representa um ponto na tela, v
 </div>
 
 
-Falar sobre as cores.
+*As cores* normalmente são apresentadas pela combinação das cores primárias. Dizemos ao navegador o quanto queremos de
+vermelho, verde e azul e assim vamos montando todas as outras cores.
 
-Rule-set, seletores, propriedades, unidades de medidas, cores, ufa... agora precisamos aprender como unir a CSS ao
+Então devemos seguir o esquema *rgb* que significa red, green e blue, respectivamente. Os valores possíveis estão entre
+0(zero) e 255, onde 0 significa que não temos nada do tom desejado e 255 significa que temos o máximo do tom desejado.
+
+Abaixo vemos a forma decimal e hexadecimal que representa a cor vermelha:
+
+    rgb(255, 0, 0)
+    #FF0000
+
+
+Agora precisamos aprender como unir a CSS ao
 documento HTML.
 
 A CSS *"uni-se"* ao HTML de 3 formas distintas: *inline, embeded e linked*. Vejamos:
@@ -350,6 +360,13 @@ realizada através da tag *"link"*, veja código de exemplo:
 Agora sim temos um método profissional. Toda CSS fica em arquivo separado que é incluso no HTML através de uma única linha.
 Há vantagens e desvantagens em cada um dos métodos, discutiremos isso em breve, por hora saiba que esse é o método mais
 adequado e por essa razão o que mais utilizaremos no curso, porém não leve tudo a ferro-e-fogo: pode lançar mão das 3
-formas quando e onde ahcar melhor.
+formas quando e onde achar melhor.
 
 
+
+Ufa!
+----
+
+Âncoras, listas, parágrafos, imagens, propriedade float, tabelas, formulários, div, span, CSS, seletores, rule-set, pixel,
+unidades de medidas, cores, CSS inline, CSS embeded, CSS linked. Vimos bastante coisas nesta matéria, vamos agora
+entender a diferênca entre os elementos "in-line" e "level-block"... na próxima matéria é lógico.
