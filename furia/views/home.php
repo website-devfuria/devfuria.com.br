@@ -15,7 +15,6 @@
         include BASE_PATH.COMPONENTES_PATH."head_meta.php";
         ?>
         <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
-        <link href="<?php echo BASE_PATH; ?>index.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <?php
@@ -88,9 +87,9 @@
                             <li><span class="badge badge-success">Básico</span></li>
                             <li>
                                 <ul class="nav nav-pills nav-stacked">
-                                    <li class="disabled"><a href="#">Onde tudo começou</a></li>
-                                    <li class="disabled"><a href="#">HTML e CSS - Introdução</a></li>
-                                    <li class="disabled"><a href="#">Elementos in-line e elementos block-level</a></li>
+                                    <?php foreach ($materias as $materia): ?>
+                                        <li><a href="<?php echo BASE_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </li>
                         </ul>
