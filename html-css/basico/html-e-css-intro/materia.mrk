@@ -212,7 +212,7 @@ Ambas as tag's são muito utilizadas em conjunto com o CSS visando sofrer alguma
 
     <div>
 
-    </di>
+    </div>
 
     <span>um pequeno texto</span>
 
@@ -234,7 +234,7 @@ A mais simples e conhecida é a *pixel*. Um pixel representa um ponto na tela, v
 
 <div class="imagem">
     <img src="../../imagens/pixel.png" alt="Pixel" />
-    <p>Fonte: <a href="http://pt.wikipedia.org/wiki/Pixelx">Wikipedia</a></p>
+    <p><a href="http://pt.wikipedia.org/wiki/Pixelx">Fonte da imagem acima</a></p>
 </div>
 
 
