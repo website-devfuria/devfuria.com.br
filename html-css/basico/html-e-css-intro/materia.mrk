@@ -250,8 +250,9 @@ Abaixo vemos a forma decimal e hexadecimal que representa a cor vermelha:
     #FF0000
 
 
-Agora precisamos aprender como unir a CSS ao
-documento HTML.
+### Unindo o CSS ao HTML
+
+Agora precisamos aprender como unir a CSS ao documento HTML.
 
 A CSS *"uni-se"* ao HTML de 3 formas distintas: *inline, embeded e linked*. Vejamos:
 
@@ -288,7 +289,7 @@ legibilidade e NÂO permite o controle centralizado da CSS. Programadores e desi
 Ainda não "dá cadeia" utilizar-se de CSS inline, se achar que precise dela, pode usá-la com bom censo.
 
 
-### CSS - embeded (incorporadas) ###
+#### CSS - embeded (incorporadas) ####
 
 Coloca-se as regras de CSS entre a tag "style" na seção "head" do HTML, veja o exemplo:
 
@@ -326,7 +327,7 @@ Já é bem melhor que o método anterior: já é possível localizar a CSS com m
 Mas há o método campeão...
 
 
-### CSS - linked (externos) ###
+#### CSS - linked (externos) ####
 
 Coloca-se as regras de CSS em um arquivo separado do HTML. Normalmente a extensão do arquivo é *.css*. A "cola" é
 realizada através da tag *"link"*, veja código de exemplo:

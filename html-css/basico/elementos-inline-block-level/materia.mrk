@@ -94,6 +94,76 @@ Abaixo vemos alguns elementos básicos de *block-level*:
 * select
 * textarea
 
-Essa matéria é curtinha, mas não se engane, *seguir em frente sem entender(de verdade) é perca de tempo*.
+Há ainda um terceiro tipo de elemento: o *inline-block* que nada mais é do que um elemento de bloco acomodado como um
+elemento inline.
 
-Aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.
+A CSS pode alterar o tipo do elemento. Com a propriedade "display" é possível utilizar os três valores (mais comuns):
+
+1. block
+2. inline
+3. inline-block
+
+A tag "div" é block-level, mas se aplicarmos a propriedade "inline" ela começará a se comportar como uma tag inline.
+
+O inverso também é verdadeiro.
+
+A tag "span" é inline, mas se aplicarmos a propriedade "block" ela se comportará como uma tag block-level.
+
+Para ilustrar eu utilizei o mesmo HTML acima e aliquei duas regras de css para "inverter as bolas", quem era block virou
+inline e quem era inline virou bolck. Veja o resultado [aqui](code2.html "tipos invertidos")
+
+
+
+<div class="code menor">
+<h6>HTML(inválido)</h6>
+<pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;tipos INVERTIDOS&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+            body * {
+                border: 1px solid #000;
+                background-color: #F5F5F5;
+                margin: 20px;
+            }
+            div, h1, h2, p {
+                display: inline;
+            }
+            span, img, a {
+                display: block;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;Título 1&lt;/h1&gt;
+        &lt;h2&gt;Título 2&lt;/h2&gt;
+
+        &lt;span&gt;span 01&lt;/span&gt;
+        &lt;span&gt;span 02&lt;/span&gt;
+        &lt;span&gt;span 03&lt;/span&gt;
+
+
+        &lt;p&gt;parágrafo a&lt;/p&gt;
+        &lt;p&gt;parágrafo b&lt;/p&gt;
+
+        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
+        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
+        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
+
+        &lt;div&gt;div 1&lt;/div&gt;
+        &lt;div&gt;div 2&lt;/div&gt;
+
+        &lt;a href="#"&gt;Link 1&lt;/a&gt;
+        &lt;a href="#"&gt;também me chamam de âncora&lt;/a&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+
+
+
+Essa matéria é curtinha, mas não se engane, seguir em frente sem entender (de verdade) é perca de tempo,
+aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.
