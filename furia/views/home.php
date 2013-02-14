@@ -76,7 +76,7 @@
                 </li>
                 <li class="span4">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a href="<?php echo BASE_PATH?>html-css/">
                             <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-html-css.jpg" alt="">
                         </a>
                         <?php
