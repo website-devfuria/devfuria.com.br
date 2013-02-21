@@ -74,6 +74,19 @@ class Materia {
      * @throws Exception
      */
     function inserir(){
+
+        if(!$this->id) throw new Exception("Faltou o id");
+        if(!$this->url) throw new Exception("Faltou o url");
+        if(!$this->titulo) throw new Exception("Faltou o título");
+        if(!$this->resumo) throw new Exception("Faltou o resumo");
+        if(!$this->keywords) throw new Exception("Faltou o keywords");
+        if(!$this->nivel) throw new Exception("Faltou o nivel");
+        if(!$this->secao) throw new Exception("Faltou o secao");
+        if(!$this->autor) throw new Exception("Faltou o autor");
+        if(!$this->dt_atualizacao) throw new Exception("Faltou o dt_atualizacao");
+        if(!$this->dt_criacao) throw new Exception("Faltou o dt_criacao");
+        if(!$this->ordem) throw new Exception("Faltou o ordem");
+
         $sql = "INSERT INTO materias"
                 ."(id, url, titulo, resumo, keywords, nivel, secao, autor, dt_atualizacao, dt_criacao, ordem)"
                 ." VALUES( "

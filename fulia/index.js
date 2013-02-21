@@ -93,12 +93,12 @@ $(document).ready(function() {
             this.ordem.val("")
         },
         ligarEstadoAlteracao: function(){
-            $('input, select').unbind().change(function(){
+            $('input, select, textarea').unbind().change(function(){
                 acao.alterando();
             })
         },
         deligarEstadoAlteracao: function(){
-            $('input').unbind();
+            $('input, select, textarea').unbind();
         },
         getMateria: function(){
             var materia = {};
@@ -184,6 +184,7 @@ $(document).ready(function() {
             this.setButtonNovo();                        // evento  novo
             this.setButtonExcluir()                      // evento  excluir
             ctrForm.ligarEstadoAlteracao();
+            ctrMsgErro.esconder();
         },
         setButtonNovo: function(){
             var me = this;
@@ -200,11 +201,21 @@ $(document).ready(function() {
 
             this.btnSalvar.unbind().click(function(event){
                 event.preventDefault();
-                ajax.create( "&materia="+JSON.stringify( ctrForm.getMateria() ), function(lastInsertId){
-                    materias.setRegistros();                                    // atualizar array
-                    ctrPercorre.registro_atual = materias.total_registros-1;    // ir para último regis
-                    me.visualizando();                                          // ajustar controles
-                    ctrForm.id.val(lastInsertId);
+                ajax.create( "&materia="+JSON.stringify( ctrForm.getMateria() ), function(resp){
+                    var resp = JSON.parse(resp);
+
+                    if( resp.lastInsertId){
+                        materias.setRegistros();                                    // atualizar array
+                        ctrPercorre.registro_atual = materias.total_registros-1;    // ir para último regis
+                        me.visualizando();                                          // ajustar controles
+                        ctrForm.id.val(lastInsertId);
+                    } else {
+                        if( resp.erro != undefined){
+                            ctrMsgErro.mostrar(resp.erro);
+                        } else {
+                            ctrMsgErro.mostrar("ERRO:"+resp);
+                        }
+                    }
                 });
             });
         },
@@ -259,4 +270,16 @@ $(document).ready(function() {
         }
     }
     acao.init();
+
+    var ctrMsgErro = {
+        elem: $(".alert"),
+        mostrar: function(msg){
+            this.elem.find("span").html(msg);
+            this.elem.show();
+        },
+        esconder: function(){
+            this.elem.hide();
+        }
+    }
+
 });

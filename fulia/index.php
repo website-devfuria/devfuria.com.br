@@ -150,6 +150,13 @@ $_SESSION['chave'] = CHAVE;
                             </div>
                         </div>
                     </form>
+
+
+                    <div class="alert alert-error" style="display: none">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Erro! </strong> <span></span>
+                    </div>
+
                 </div>
             </div>
         </div>
