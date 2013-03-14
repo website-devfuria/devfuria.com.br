@@ -30,7 +30,7 @@ do servidor. Exemplo:
 
     <a href="script.php?varA=valor1&varB=valor2">Isto é um link com dois parâmetros</a>;
 
-O link pode sofrer estilizaçãoes interessantes. É muito comum estilizar o link como se fosse um botão e há também um
+O link pode sofrer estilizações interessantes. É muito comum estilizar o link como se fosse um botão e há também um
 efeito que é acionado quando passamos o mouse por cima: é o *hover* (por cima, pairar). Para estilizar o "hover" utiliza-se
 de *pseudoclasses*, a regra CSS abaixo adiciona a cor vermelha a link apenas quando passamos o mouse sobre ele.
 
@@ -50,8 +50,9 @@ podem ser horizontais. O efeito horizontal é produzido com o auxílio da propri
 quando utilizada sabiamente, produz resultados interessantes. Ela faz os elementos flutuarem para a direita ou para a
 esquerda. Voltaremos a falar sobre o float em breve.
 
-A tag "ul" é um container que comporta os item da lista, as tag's "li", ou seja, o "ul" é a lista e os "li" são os itens.
-"ul" siginifca "unordened list" (lista não ordenada), há também a lista "ol" (ordened list) que é exatamente o inverso.
+A tag "ul" é um container que comporta os item da lista, as tag's "li". Em outras palavras, o "ul" é a lista e os "li"
+são os itens. "ul" siginifca "unordened list" (lista não ordenada), há também a lista "ol" (ordened list) que é
+exatamente o inverso.
 
     <ol>
         <li></li>
@@ -75,9 +76,8 @@ A tag *"img"* representa uma imagem, a proprieda *"src"* diz aonde a imagem se e
 hierarquia do sistema de arquivos (como o 'href'). Já a proprieda *"alt"* é um texto alternativo que será exibido caso
 o caminho para a imagem seja inválido.
 
-A tag "p" é block-livel e a tag "img" é in-line. Estou apresentando as duas tag's juntas para ilustrar como elas se
-interagem. As duas tag's sozinhas não fazem muita coisa, mas se adicionarmos ao tempero a propriedade *float* (olha ela
-aí denovo) a brincadeira ficará mais interessante.
+Estou apresentando as duas tag's juntas para ilustrar como elas se interagem. As duas tag's sozinhas não fazem muita
+coisa, mas se adicionarmos ao tempero a propriedade *float* (olha ela aí denovo) a brincadeira ficará mais interessante.
 
 Podemos dizer para a imagem flutuar à equerda, então o texto fluirá para o lado inverso (direita).
 Veja o código abaixo e o resultado [aqui](p_img_e.html).
@@ -129,14 +129,14 @@ Veja o código abaixo e o resultado [aqui](p_img_d.html).
 As tabelas acomodam dados tabulares.
 
 Isso parece óbvio, mas não foi assim no começo da internet. Pela falta de recursos apropriados e pela instabilidade
-advinda dos navegadores, muitos deenvolvedores utilizavam-se de tabelas para fazer o layout da página. Isso é uma
+advinda dos navegadores, muitos desenvolvedores utilizavam-se de tabelas para fazer o layout da página. Isso é uma
 prática condenável e seu remédio chama-se *tableless*, que nada mais é do que um conceito (ou talvez um princípio) onde
 evita-se utilizar a tabela em algo que não seja dados tabulares.
 
 Uma tabela contém linhas (tr) e campos (td). às vezes podem conter as tag's "thead", "tbody" e "tfoot" que representam
 o cabeçalho, o corpo e o rodapé da tabela, respectivamente.
 
-Quando temos linhas campos do cabeçalho(dentro da tag "thead") utilizamos a tag "th" no lugar da "td", pois essa
+Quando temos linhas campos do cabeçalho (dentro da tag "thead") utilizamos a tag "th" no lugar da "td", pois essa
 representam melhor o cabeçalho.
 
     <table>
@@ -178,7 +178,7 @@ representam melhor o cabeçalho.
 ### Formulários, inputs e labels
 
 Um formulário na web normalmente é chato de se preencher, só que ele é a alma dos aplicativos web, pois é através de seus
-campos que o usuário faz a inserção dos dados e interaje com o sistema.
+campos que o usuário faz a inserção dos dados e, dessa forma, interaje com o sistema.
 
 Um formulário pode (e deve) conter elementos que "formam" um par "nome=valor", por exemplo, um campo de entrada de
 texto (uma text box) chama-se "pais" e o seu valor é o texto "Brasil". Quando esse formulário submeter seus dados para o
@@ -205,8 +205,8 @@ deter apenas em seu layout e estrutura.
 
 ### Div's e Span's
 
-A tag "div" é um elemento block-level do tipo "conteiner" que acomoda outras tag's, é um *div*sor de espaços.
-A tag "span" é do tipo in-line e acomoda pequenos trechos de texto.
+A tag "div" é um elemento do tipo "conteiner" que acomoda outras tag's, é um *div*sor de espaços.
+A tag "span" acomoda pequenos trechos de texto.
 
 Ambas as tag's são muito utilizadas em conjunto com o CSS visando sofrer alguma estilização posterior.
 
@@ -222,7 +222,7 @@ Ambas as tag's são muito utilizadas em conjunto com o CSS visando sofrer alguma
 Quem começa a aprender CSS logo se pergunta: *o que será esse negócio de cascata?*. É um conceito. Ainda temos a
 questão da especificidade e da herânça (nada a ver com oop, olha lá hein!!!).
 
-Tudo bem, que tal não esquentarmos a cabeça com isso por enquanto? Vamos cair de cabeça e depois, quando estiver mais
+Tudo bem, que tal não esquentarmos a cabeça com isso por enquanto? Vamos focar no básico e depois, quando estiver mais
 familiarizado, voltamos para "fechar" esses conceitos, ok?
 
 Na matéria ["onde tudo começou"](../onde-tudo-comecou) vimos como é a estrutura de uma rule-set. Sempre que estilizamos
