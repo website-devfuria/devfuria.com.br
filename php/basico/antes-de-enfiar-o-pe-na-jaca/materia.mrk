@@ -27,7 +27,7 @@ Por outro lado, existem sempre aquelas receitas mágicas que parecem que vão "s
 Esta matéria traz algumas considerações sobre boas práticas, *antes de você desembestar a cuspir códigos à rodo*. Na verdade
 são *quatro dicas essenciais* para quem está começando a programar:
 
-1. idente seu código (eu lhe imploro)
+1. endente seu código (eu lhe imploro)
 2. use uma boa nomenclatura, desde variáveis até nome de scripts, bases, formulários, métodos, classes, etc...
 3. comente o código
 4. programar é como pintar um quadro, cada um tem um estilo, procure o seu.
@@ -67,12 +67,14 @@ else
 </div>
 
 Se para você ambos os códigos estão “de acordo”, então sabemos que você não gosta de endentar código. Um exercício
-interessante de se fazer é pegar um código fonte de umas 100 linhas e identá-lo. Alguns programadores defendem que a
+interessante de se fazer é pegar um código fonte de umas 100 linhas e endentá-lo.
+
+Alguns programadores defendem que a
 endentação deve ser realizado com quatro espaços, ou seja, ao invés da tecla TAB, acionamos quatro vezes a barra de espaço.
 Eles dizem isso por que diferentes editores podem exibir diferetnes formatos do código fonte. Mas seja com espaços, ou
 com o TAB (eu sou normal e uso o TAB) use-os!!!
 
-Outra consideraçõa importante é: *ao digitar uma linha, idente-a. Não deixe para arrumar o codigo no final*. Sua vista
+Outra consideração importante é: *ao digitar uma linha, idente-a. Não deixe para arrumar o codigo no final*. Sua vista
 deve ir se acostumando com o codigo endentado, se deixar para o final você irá acostumar-se com código sem endentação.
 *Olhe muito código de terceiro*, além de ajudar com o estilo, ajuda a entender da importância da endentação.
 
@@ -105,7 +107,7 @@ Que tal? Tudo certo? Bom, vamos imaginar a instrução select...
 
 <div class="code">
 <h6>SQL</h6>
-<pre>“SELECT cliente_id, cliente_codigo e etc...FROM clientes”</pre>
+<pre>SELECT cliente_id, cliente_codigo e etc...FROM clientes</pre>
 </div>
 
 Fica grande, ocupa espaço, ruim mesmo.
@@ -153,7 +155,7 @@ A figura a seguir mostra um exemplo de convenção de nomenclatura.
 
 <div class="imagem">
     <img src="../../imagens/nomenclatura1.png" alt="Nomenclatura de variáveis"/>
-    <p>Figura 01 - Convençao de nomeação utilizada em um projeto qualquer encontrado no Google Code.</p>
+    <p>Figura 01 - Convençao de nomeação utilizada em um projeto acadêmico encontrado no Google Code.</p>
     <p>Fonte: <a href="http://code.google.com/p/guardachuva/wiki/ConvencoesDeNomeacao">Projeto Gruada Chuva</a></p>
 </div>
 
@@ -164,18 +166,16 @@ Comente o código... e faça-o de forma concisa
 *Comentar código, assim como nomear variáveis, também é uma arte*. Existem programadores que não comentam o código, há
 também os que comentam demais. Há, ainda, aqueles que acham que o comentário do código é a documentação do sistema, não é.
 
-*Infelizmente, não existe uma regra única para comentar o código, cada programador faz do seu jeito.* Também não existe a
-melhor ou a pior forma de comentar, *apenas existe a forma que auxilia quem a lê e a forma que não ajuda em nada*. Quando
-for comentar o código, tenha como objetivo somente isso: *auxiliar alguém quem não conhece o código e está tentando
-entendê-lo. Se esse objetivo for cumprido, então o comentário foi nota 10*.
+Infelizmente, não existe uma regra única para comentar o código, cada programador faz do seu jeito. Também não existe a
+melhor ou a pior forma de comentar, apenas existe a forma que auxilia quem a lê e a forma que não ajuda em nada. Quando
+for comentar o código, tenha como objetivo somente isso: auxiliar alguém quem não conhece o código e está tentando
+entendê-lo. Se esse objetivo for cumprido, então o comentário foi nota 10.
 
 Outra coisa importante é: seja, ao menos, conciso. Quero dizer, use de português claro e objetivo. Não esqueca da
 acentuar as palavras (afinal, falamos português, não é mesmo?), alguns programadores não fazem isso, eles estão
-preocupados com o “charset” do arquivo. Ser conciso não está somente relacionado ao conteúdo do comentário, mas sim na
-sua forma de apresentação. Procure manter a homogenidade, quero dizer, se utilizar o sinal “#” para comentar então
-continue utilizando até a última linha à programar. Se utilizar “//” então utilize-o até o fim.
+preocupados com o “charset” do arquivo.
 
-Vou passar alguns modelinhos, mas não se apegue a eles, apenas use-os com bom senso.
+Vou passar alguns modelinhos de comentários, mas não se apegue a eles, apenas use-os com bom senso.
 
 <div class="code">
 <h6>PHP</h6>
@@ -211,7 +211,7 @@ boa equipe tem um padrão ao menos razoável e niguém "inventa moda". *Quando o
 conseguimos identificar se foi Zezinho ou Luizinho quem mexeu no código, ou seja, *parece que foi escrito por
 uma só pessoa*, esse é o objetivo.
 
-No site do PECL (uma bibliote respeitosa de códigos PHP) estaí alguns exemplos de estilo, vejamos:
+No site do PECL (uma bibliote respeitosa de códigos PHP) encontramos alguns exemplos de estilo, vejamos:
 
 <div class="code">
 <h6>PHP</h6>
