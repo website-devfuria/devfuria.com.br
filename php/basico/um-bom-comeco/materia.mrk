@@ -38,7 +38,7 @@ de script, normalmente salvo com a extensão “php”, exemplo: “formulario\_
 executado pelo módulo PHP (no dia-a-dia os profissionais dizem apenas “executado”). Esse módulo roda sobre o servidor
 web denominado Apache. O banco de dados MySql, largamente utilizado com a linguagem PHP, é considerado o par perfeito,
 o casamento do ano, porém é possível utilizar outros banco de dados com a linguagem PHP, como por exemplo, Postgress,
-Oracle,  MongoDB, SqlLite, etc... A arquitetura é ilustrada pela figura 01, o cliente é o computador que consome
+Oracle,  MongoDB, SqlLite, etc... A arquitetura é ilustrada pela figura abaixo, o cliente é o computador que consome
 serviços do servidor, normalmente um usuário atrás do navegador web, ele clica em um link com extensão .php, o  servidor
 Apache escuta a “requisição” e aciona o módulo PHP (mod\_php). Este por sua vez interpreta (interpretador PHP) o código
 armazenado no servidor (o script) e, se for o caso, através da extensão “php5-mysql” aciona o banco de dados Mysql
@@ -47,7 +47,7 @@ devolvida de volta ao navegador do cliente gerando, assim, a página HTML result
 
 <div class="imagem">
     <img src="../../imagens/morimoto_apache1.png" alt="funcionamento do servidor web" />
-    <p>Figura 01 - Esquema da arquitetura na qual, comumente, é executado os script em PHP.</p>
+    <p>Esquema da arquitetura na qual, comumente, é executado os script em PHP.</p>
     <p>Fonte:
         <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html">Morimoto</a>
     </p>
@@ -55,6 +55,17 @@ devolvida de volta ao navegador do cliente gerando, assim, a página HTML result
 
 Não ficou claro esse funcionamento? Tudo bem, é mais um assunto no qual é preciso familiarizar-se para depois
 compreendê-lo, dê tempo ao tempo.
+
+Se simplificarmos o funcionamento podemos resumí-lo da seguinte forma: o PHP, através do servidor web, produz páginas
+em HTML. Veja a figura abaixo:
+
+<div class="imagem">
+    <img src="../../imagens/php_architect.gif" alt="funcionamento simplificado do servidor web" />
+    <p>Esquema da arquitetura simnplificado.</p>
+</div>
+
+
+
 
 LAMP, WAMP, XAMP, que troço é esse?
 -----------------------------------
