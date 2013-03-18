@@ -58,14 +58,12 @@ se comportam.
 
 Perceber esse aspecto básico, mais do que entender, lhe ajudará a criar páginas HTML sem muita dor de cabeça.
 
-O problema reside no fato de que estamos acostumados a utilizar softwares quaisquer do tipo editor de textos ou editor
-de imagens e vamos "dizendo" ao softwarer" coloque este círuclo aqui, aquele texto ali, agora desça um pouco o círculo
-e etc..".
+O problema reside no fato de que estamos acostumados a utilizar softwares, como por exemplo editores de textos ou editores
+de imagens e vamos "dizendo" ao softwarer" coloque este círculo aqui, aquele texto ali, agora desça um pouco o círculo
+e etc..". Achamos que com HTML dá para fazer igual. Com o HTML a idéia é parecida mas há uma diferênça crucial: *existe
+uma certa manha para desenharmos a arte que "pintamos" em nossa cabeça.*. E entender essa "manha" fará toda a diferênça.
 
-Com o HTML a idéia é parecida mas há uma diferênça crucial: *existe uma certa manha para desenharmos a arte que
-"pintamos" em nossa cabeça.*. E entender essa "manha" fará toda a diferênça. No caso, a "manha"(uma parte dela) é
-compreender a diferênça entre as tag's in-line e as tag's block-level.
-
+Uma parte dessa "manha" é compreender a diferênça entre as tag's in-line e as tag's block-level.
 
 A dica é: *não tente criar em HTML a página que você idealizou sem antes se familiarizar com a forma que o navegador
 reenderiza o HTML*.
