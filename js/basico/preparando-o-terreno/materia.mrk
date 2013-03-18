@@ -6,14 +6,14 @@ separadamente, porém vamos trabalhar com os três elementos como se fosse ingre
 
 Neste ponto é importante entendermos a obrigação de cada um desses componentes. O *JS será encarregado do comportamento*
 da página, da interação com o usuário, dos enventos possíveis (click, duplo click, teclado, movimentação do mouse, e
-etc...), de tudo aquilo que pode beneficinar a interface do sistema.
+etc...), de tudo aquilo que pode beneficiar a interface do sistema.
 
 O CSS se encarrega-rá da apresentação da página. Pensou em estilizar, formatar, desenhar, cuidar da aparência, layout,
 cores, fontes, bordas, espaçamento, disposição dos elementos ...pensou em CSS. Ele cuidará da embalagem, do roupagem
 que sua página web irá vestir. Estilizar é com o CSS.
 
 Sobrou para o HTML deixar claro qual é o conteúdo, marcando o conteúdo. Em outras palavras: "tudo que é necessário para
-ler e entender o conteúdo de ua página web. O código HTML deve fazer o máximo para transmintir o significado
+ler e entender o conteúdo de sua página web. O código HTML deve fazer o máximo para transmitir o significado
 (ou semântica) do conteúdo." O HTML descreve o conteúdo da página, a isso chamamos de *marcação semântica*.
 
 OK. O que acabamos de fazer foi separar as obrigações. Com isso, acabamos de praticar técnica chamada de *programação em

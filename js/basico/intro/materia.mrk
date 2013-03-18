@@ -139,11 +139,11 @@ funcionamento do conjunto.
 </div>
 
 Temos uma tag "img" e seu atributo "src" que aponta para uma imagem no servidor. É nesse elemento que nossa lógca irá
-atuar. Presisamos "pegar" a imagem via JS, para tal utilizamos a função "getElementeByIi" (traduzindo: pegue o elemento
-pelo id) e Armazenamos o resultado na variável "element". Até aqui tudo bem.
+atuar. Presisamos "pegar" a imagem via JS, para tal utilizamos a função "getElementeById" (traduzindo: pegue o elemento
+pelo id) e armazenamos o resultado na variável "element". Até aqui tudo bem.
 
 Na sequência, atribuímos uma função para o evento "onclick" do elemento capurado. Não entendendeu como é feito isto?
-Veja o código numa forma mais limpa:
+Veja o código de forma mais limpa:
 
 <div class="code">
 <h6>JS</h6>
@@ -157,7 +157,7 @@ var element = document.getElementById('myimage');
 </div>
 
 
-A função que embutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ele testa se o valor de "src" do
+A função que embutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ela testa se o valor de "src" do
 elemento é igual a "bulbon". Se for, ele troca para "pic\_bulboff.gif", se não ele troca para "pic\_bulbon.gif".
 
 E assim temos a impressão de acender e apagar a lâmpada.
@@ -166,10 +166,9 @@ Isso é Javascript!
 No curso, iremos estudar o JS em conjunto com suas irmãs (siamesas): HTML e CSS. O leitor deve ter certa familiaridade
 com essas tecnologias porque, JS sem elas é hardware sem software.
 
-Este curso foi, inicialmente, idealizado para iniciantes em programação. Existem um nível abaixo do nível básico: é o
-nível zero, estão nesse grupo as pessoas autodidatas que nunca frenquentaram um curso regular de informática. Se este
-for o seu caso, talvez lhe falte um pouco de lógica de programação, aconselho a fazer uma leitura atenta das 6 matérias
-do nível zero de PHP, afinal ĺógica é lógica em qualquer linguagem.
+Este curso foi, inicialmente, idealizado para iniciantes em programaçã e pessoas autodidatas que nunca frenquentaram um
+curso regular de informática. Se este for o seu caso, talvez lhe falte um pouco de lógica de programação, aconselho a
+fazer uma leitura atenta das 6 matérias do nível zero de PHP, afinal ĺógica é lógica em qualquer linguagem.
 
 Atualmente (set/2012) JS disponta como o principal alicerce de um desenvolvedor front-end(client-side). Desenvolver do
 lado do cliente, desenvolvedor de interfaces, engenheiro front-end. Seja lá qual for o nome, o fato é que cada vez mais

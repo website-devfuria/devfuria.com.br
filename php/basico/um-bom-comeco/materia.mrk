@@ -6,6 +6,9 @@ como objetivo principal contar as visitas que eram realizadas em seu currículo 
 principalmente para construir aplicações web. Entende-se por aplicações web (às vezes abreviado para “webapp” ou
 simplesmente “app´s”) programas ou softwares escritos para rodarem na plataforma web, no modelo cliente/servidor.
 
+O que faz uma aplicação web?
+-----------------------------
+
 Um pequeno site pode se beneficiar de uma linguagem do lado do servidor. Um formulário de envio de contato , um portal
 de internet, um software gerenciador de email (o Gmail da Google ou o e-mail do Yahoo, por exemplo), um site do tipo
 E-comerce e muitos outros sistemas também utilizam-se de linguagem do lado do servidor. Nem toda aplicação web precisa
@@ -35,7 +38,7 @@ de script, normalmente salvo com a extensão “php”, exemplo: “formulario\_
 executado pelo módulo PHP (no dia-a-dia os profissionais dizem apenas “executado”). Esse módulo roda sobre o servidor
 web denominado Apache. O banco de dados MySql, largamente utilizado com a linguagem PHP, é considerado o par perfeito,
 o casamento do ano, porém é possível utilizar outros banco de dados com a linguagem PHP, como por exemplo, Postgress,
-Oracle,  MongoDB, SqlLite, etc... A arquitetura é ilustrada pela figura 01, o cliente é o computador que consome
+Oracle,  MongoDB, SqlLite, etc... A arquitetura é ilustrada pela figura abaixo, o cliente é o computador que consome
 serviços do servidor, normalmente um usuário atrás do navegador web, ele clica em um link com extensão .php, o  servidor
 Apache escuta a “requisição” e aciona o módulo PHP (mod\_php). Este por sua vez interpreta (interpretador PHP) o código
 armazenado no servidor (o script) e, se for o caso, através da extensão “php5-mysql” aciona o banco de dados Mysql
@@ -44,7 +47,7 @@ devolvida de volta ao navegador do cliente gerando, assim, a página HTML result
 
 <div class="imagem">
     <img src="../../imagens/morimoto_apache1.png" alt="funcionamento do servidor web" />
-    <p>Figura 01 - Esquema da arquitetura na qual, comumente, é executado os script em PHP.</p>
+    <p>Esquema da arquitetura na qual, comumente, é executado os script em PHP.</p>
     <p>Fonte:
         <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html">Morimoto</a>
     </p>
@@ -52,6 +55,20 @@ devolvida de volta ao navegador do cliente gerando, assim, a página HTML result
 
 Não ficou claro esse funcionamento? Tudo bem, é mais um assunto no qual é preciso familiarizar-se para depois
 compreendê-lo, dê tempo ao tempo.
+
+Se simplificarmos o funcionamento podemos resumí-lo da seguinte forma: o PHP, através do servidor web, produz páginas
+em HTML. Veja a figura abaixo:
+
+<div class="imagem">
+    <img src="../../imagens/php_architect.gif" alt="funcionamento simplificado do servidor web" />
+    <p>Esquema da arquitetura simnplificado.</p>
+</div>
+
+
+
+
+LAMP, WAMP, XAMP, que troço é esse?
+-----------------------------------
 
 Todo esse processo roda sobre um sistema operacional, podendo ser tanto o Linux como o Windows. Quando utilizamos o Linux,
 diz-se que a arquitetura é a *LAMP* (Linux, Apache, Mysql e PHP), quando utilizamos o Windows, diz-se que a arquitetura é
@@ -87,6 +104,11 @@ navegador). Se o código interage com a base de dados, então, mantemos a API do
 observar se o que foi alterado está acontecendo de fato no banco de dados. Assim, repetidamente, vamos tecendo o código
 fonte do sistema a ser construído.
 
+
+
+Sintaxe Basica
+--------------
+
 A *sintaxe básica* pode ser conferida nos trechos de códigos seguintes:
 
 <div class="code">
@@ -109,18 +131,16 @@ comentário em bloco
 */
 
 
-
 /*
- * O código PHP é escrito entre as tags "<?php" e  "?>".
+ * O código PHP é escrito entre as tags "&lt;?php" e  "?&gt;".
  */
-
 
 
 /*
  * O método echo exibe uma ou mais string.
  */
-echo "Eu sou uma string<br />";
-echo "e serei exibida na tela do navegador.<br />";
+echo "Eu sou uma string&lt;br /&gt;";
+echo "e serei exibida na tela do navegador.";
 
 
 
@@ -133,12 +153,15 @@ echo "Resultado da soma de 1 + 1 = $resultado";
 </div>
 
 
-O PHP obteve, nos anos seguinte à sua criação, a colaboração da dupla Andi Gutmans e Zeev Suraski  evoluíndo de forma
-surpreendente. Atualmente na versão 5 a linguagem conta com uma larga aceitação e utilização em centenas de projetos,
+Por que PHP?
+------------
+
+O PHP obteve, nos anos seguinte à sua criação, a colaboração da dupla Andi Gutmans e Zeev Suraski evoluíndo de forma
+surpreendente. Atualmente na versão 5.4 a linguagem conta com uma larga aceitação e utilização em centenas de projetos,
 dos mais simples aos mais complexos. A linguagem possue vasta documentação na Internet e na literatura. Alguns bons
-framework´s foram produzidos como por exemplo o *Zend*, o Cake, o Codeigniter o Symphony entre outros. A empresa Zend,
-responsável pelo framework de mesmo nome, lidera o mercado de certificações. Há também centenas de bibliotecas que
-auxiliam o desenvolvimento da aplicação, a mais notável é a Pear (não confundir com a linguagem Pearl).
+framework´s foram produzidos como por exemplo o *Zend* e o Symphony (entre outros). A empresa Zend, responsável pelo
+framework de mesmo nome, lidera o mercado de certificações. Há também centenas de bibliotecas que auxiliam o
+desenvolvimento da aplicação, a mais notável é a Pear (não confundir com a linguagem Pearl).
 
 
 A empresa Netcraft, periodicamente, lança pesquisas que discriminam os servidores web mais utilizados, o Apache sempre
@@ -152,22 +175,21 @@ está na frente, em média 60%, veja figura 02.
     </p>
 </div>
 
-Bom... um servidor apache pode rodar outas linguagens alem do PHP, mas veja este outro gráfico:
+Bom... um servidor apache pode rodar outas linguagens além do PHP, mas veja este outro gráfico:
 
 <div class="imagem">
     <img src="../../imagens/php_estatistica01.png" alt="funcionamento do servidor web" />
-    <p>Figura 03 - Linguagens identificadas em quase 7 milhões de domínios.</p>
+    <p>Figura 03 - O gráfico acima mostra a repartição das 6 maiores linguagens identificáveis em 6.7 milhões de domínios onde a linguagem
+pôde ser determinada.</p>
     <p>
         <a href="http://phpadvent.org/2010/usage-statistics-by-ilia-alshanetsky">Fonte: http://phpadvent.org</a>
     </p>
 </div>
 
-"O gráfico acima mostra a repartição das 6 maiores linguagens identificáveis em 6.7 milhões de domínios onde a linguagem
-pôde ser determinada."
 
 PHP não é a melhor linguagem, nem a mais segura. Mas é uma excelente linguagem de programação web.
 
-Seja bem vindo ao mudo do PHP!
+Seja bem vindo ao curso de PHP!
 
 
 Leituras adicionais sugeridas
@@ -176,7 +198,7 @@ Leituras adicionais sugeridas
 <dl id="leitura_adcionais">
     <dt>Internet</dt>
         <dd><em>Manual oficial do PHP</em>, está aqui não é sugerida, é obrigatória. (dica: digite apenas php.net que o
-        navegador redireciona para a url completa).<a href="php.net" >http://www.php.net</a></dd>
+        navegador redireciona para a url completa).<a href="http://www.php.net" >http://www.php.net</a></dd>
 
         <dd><em>Trecho do manual</em> que introduz à programação em PHP.<a
         href="http://www.php.net/manual/pt_BR/getting-started.php" >http://www.php.net/manual/pt_BR/getting-started.php</a></dd>
@@ -184,11 +206,6 @@ Leituras adicionais sugeridas
         <dd><em>Artigo de Henrique Bastos</em> explicando as diferenças sobre linguagem interpretada e compiladas.<a
         href="http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada" >
         http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada</a></dd>
-
-        <dd><em>Artigo escrito em 2009</em> na língua inglesa por Dionysios e traduzido pelo portal www.dri.pt. Fala sobre a
-        <em>evolução do PHP</em> e como a linguagem se adaptou a realidade das organizações.<a
-        href="http://www.dri.pt/pt/noticias/noticias/linguagem_php_solucao_eficaz_para_empresas.html" >
-        http://www.dri.pt/pt/noticias/noticias/linguagem_php_solucao_eficaz_para_empresas.html</a></dd>
 
         <dd>Notícia eletrônica falando sobre a <em>importância das aplicações web</em><a
         href="http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/" >
