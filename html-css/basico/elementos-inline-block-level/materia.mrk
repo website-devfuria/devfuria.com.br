@@ -58,7 +58,7 @@ se comportam.
 
 Perceber esse aspecto básico, mais do que entender, lhe ajudará a criar páginas HTML sem muita dor de cabeça.
 
-O problema reside no fato de que estamos acostumados a olhar um software qualquer do tipo editor de textos ou editor
+O problema reside no fato de que estamos acostumados a utilizar softwares quaisquer do tipo editor de textos ou editor
 de imagens e vamos "dizendo" ao softwarer" coloque este círuclo aqui, aquele texto ali, agora desça um pouco o círculo
 e etc..".
 
@@ -109,8 +109,8 @@ O inverso também é verdadeiro.
 
 A tag "span" é inline, mas se aplicarmos a propriedade "block" ela se comportará como uma tag block-level.
 
-Para ilustrar eu utilizei o mesmo HTML acima e aliquei duas regras de css para "inverter as bolas", quem era block virou
-inline e quem era inline virou bolck. Veja o resultado [aqui](code2.html "tipos invertidos")
+Para ilustrar eu utilizei o mesmo HTML acima e apliquei duas regras de css para "inverter as bolas", quem era block virou
+inline e quem era inline virou block. Veja o resultado [aqui](code2.html "tipos invertidos")
 
 
 
