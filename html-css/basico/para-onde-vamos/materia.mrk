@@ -1,0 +1,92 @@
+E agora, para onde vamos?
+=========================
+
+
+Quando eu idealizei este projeto, eu tinha como objetivo principal facilitar ao máximo o aprendizado. "Facilitar" no
+sentido de otimizar, procurando formas diferentes, porém bastante eficientes de mostrar como as coisas funcionam.
+
+Se fizer uma busca na internet sobre o tema irá se deparar com uma quantidade enorme de matérias que apenas descrevem a
+especificação do HTML e do CSS.
+
+Por exemplo, você encontrará matérias sobre *o que* é uma "div" e suas especificações, mas dificilmente encontrará materias
+que demonstre *como* utilizá-las.
+
+Normalmente os assuntos são listados em uma sequência que ignora a capacidade de absorção do leitor. Por exemplo, em um
+curso comum de HTML, logo na introdução, o leitor é apresentado ao tema DOCTYPE. Ele passa os olhos sobre o assunto mas
+não o absorve porque o tema foi introduzido prematuramente ou muitas vezes sem uma ordem lógica.
+
+Eu decidi *re*novar. Vamos desenvolver um passo a passo onde você poderá ver e perceber na prática como o desenvolvimento
+web funciona.
+
+Por outro lado talvez o leitor sinta um pouco de falta dessa especificação. OK, você terá a web interia para lhe servir
+e, diga-se de passagem, existem sites que abordam o tema com muita propriedade. Sem querer ser repetitivo e já
+aproveitando para me explicar, se eu segui-se a mesma linha desses sites eu seria apenas "mais um" site de cursos sobre
+desenvolvimento, por isso ousei fazer diferente. Por outo lado não quis reinventar a roda e reproduzir matérias que já
+são abundantes na internet.
+
+Preparei um "case" que acredito ser bastante realista com o dia a dia do desenvolvimento e também ilustra o processo
+de forma lúdica.
+
+
+
+O Case
+------
+
+O site [csszengarden.com](http://www.csszengarden.com/) é notório por seus esforços em promover e divulgar *o poder do CSS unido a um bom
+HTML*. Ele tráz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e desafiaram designers
+solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utiliar o tema/estilo que
+quiser, mas não poderá jamais alterar o HTML e sua estrutura.
+
+O resultado você confere no site. Design's realmente incŕiveis foram elaborados. Incríveis não só pela arte mas
+principalmente pela *excelência de técnica utiliza na construção do HTML e do CSS.*
+
+O site possue tradução para o português e também disponibiliza uma lista de links que auxiliarão
+em sua jornada, não deixe de conferir.
+
+*Mas e o "case"?*
+
+Nós iremos utilizar esse HTML para os próximos exercícios, não vamos focar no design (obviamente)
+vamos exercitar apenas a construção de um bom HTML e algumas estilizações básicas.
+
+
+
+
+Mas eu quero ser desenvolvedor e não designer?
+--------------------------------------------
+
+Legal, eu também não quero virar designer. O desenvolvimento de software não se faz apenas implementando *requisistos
+funcionais*. Outras aspectos igualmente importantes, também devem ser considerados. O design dos sofware é uma dessas coisas".
+
+Um software desprovido de um design é um aplicativo suspeito. Um software só pode ser considerado excelente quando o design
+também é excelente. OK, isso não é uma verdade absoluta, mas em 90% dos casos é.
+
+Normalmente, em pequenos projetos, designer e programador trabalham juntos. Nem sempre esse casamento dá certo. Há
+programadores que odeiam designer e há designers que odeiam programadores.
+
+Quando o programador puder contar com o apoio de um designer, tudo bem. Mas quando não há designer disponível,
+os desenvolvedores devem arregassar as mangas e arriscar um design pelo menos "arrumadinho". E rezarem para um designer
+corrigir seu trabalho há tempo (antes desse ser lançado).
+
+Questão polêmica: *Com quem fica a obrigação do HTML e CSS? Com o desginer ou com o desenvolvedor?*
+
+Mais uma questão: *Se eu trabalho com HTML e CSS sou considerado designer?*
+
+Outra interessante: *Existe programadores que não criam HTML e/ou CSS ?*
+
+Problemão hein? Toda essa confusão foi e é causada pelo próprio mercado de trabalho. Também, pelo fato da TI ser uma
+área dinâmica e bastante nova (se comparadas com área como Direito e Medicina, por exemplo). Pelo fato do mercado de
+trabalho ser tão imediatista e não se preocupar com esses detalhes e etc...
+
+No curso iremos apenas aprender a trabalhar com as tacnologias HTML e CSS, não veremos nada de design.
+
+
+Leituras adicionais sugeridas
+-----------------------------
+
+<dl id="leitura_adcionais">
+    <dt>Livros</dt>
+        <dd>livro 1</dd>
+        <dd>livro 2</dd>
+        <dd>livro 3</dd>
+</dl>
+
