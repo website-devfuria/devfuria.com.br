@@ -1,5 +1,20 @@
-Exercício 01 - Criando HTML
+Criando nosso primeiro HTML
 ===========================
+
+
+O site [csszengarden.com](http://www.csszengarden.com/) é notório por seus esforços em promover e divulgar *o poder do CSS unido a um bom
+HTML*. Ele tráz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e desafiaram designers
+solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utiliar o tema/estilo que
+quiser, mas não poderá jamais alterar o HTML e sua estrutura.
+
+O resultado você confere no site. Design's realmente incŕiveis foram elaborados. Incríveis não só pela arte mas
+principalmente pela *excelência de técnica utiliza na construção do HTML e do CSS.*
+
+O site possue tradução para o português e também disponibiliza uma lista de links que auxiliarão
+em sua jornada, não deixe de conferir.
+
+Nós iremos utilizar esse HTML para os próximos exercícios, não vamos focar no design (obviamente)
+vamos exercitar apenas a construção de um bom HTML e algumas estilizações básicas.
 
 O objetivo deste exercício é familiarizar-se com o desafio de *decidir qual tag utilizar, ou melhor, qual marcação mais
 adequado para o conteúdo?*
@@ -139,22 +154,32 @@ fácil leitura.
 
 Assista ao vídeo da solução que acompanha esta matéria.
 
-
-
 <div class="imagem">
     <iframe width="420" height="315" src="https://www.youtube-nocookie.com/embed/owrai0okB3A?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-* montar slide
+
+
+
+
+#### montar slide
 * capa com o logo preto
-* título e agenda
+* intro(o que é este video) e agenda
+
+explique o esquema das matérias e dos exercícios
 
 abra o navegador
-acesse olink da materia
+
+acesse o link da materia
+
 pegue o texo
+
 abra o netbeans
+
 abra o projeto devfuria
-crie o arquivoe cole o texto
+
+crie o arquivo e cole o texto
 
 vá mostrando aonde colocar as tag's
+
 veja o resultado no navegador
