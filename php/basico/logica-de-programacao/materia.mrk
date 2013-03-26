@@ -92,8 +92,8 @@ observar saldo
 
 O algorítmo apresentado aproxima-se mais a um *problema humano* e não a um *problema computacional*.
 
-Para resolver problemas computacionais é preciso entender os princípios da interação com computadores. Essa interação se
-dá através de três ações: entrada de dados, processamento e saída de dados.
+Para resolver problemas computacionais é preciso entender os princípios da interação com computadores e a noção do
+conceito de "variável". A interação se dá através de três ações: entrada de dados, processamento e saída de dados.
 
 <div class="imagem">
     <img src="../../imagens/fluxobasico.jpg" alt="Entrada, processamenteo e saída!"/>
@@ -103,15 +103,29 @@ dá através de três ações: entrada de dados, processamento e saída de dados
 A entrada é caracterizada pela inserção de dados. O processamento provoca uma transformação nos dados. A saída formata
 e apresenta os dados na tela.
 
+
+#### O que é uma variável?
+
+Uma variável é um espaço alocado(reservado) na memória do computador. Como o próprio nome já diz, seu conteúdo é
+variável.
+
+
+
+### Um exemplo simples
+
 Um exemplo computacional seria: "exibir a soma de dois números".
 
-1. O usuário digita um número e o computador armazenada na variável “numero\_primeiro”.
-2. O usuário digita o segundo número.
-3. O computador armazena na variável “numero\_segundo”.
-4. O computador soma os dois números e armazena o resultado na variável “soma” ...
-4. ... que em seguida é apresentada na tela.
+* O usuário digita um número e o computador armazenada na variável “numero\_primeiro”.
+* O usuário digita o segundo número.
+* O computador armazena na variável “numero\_segundo”.
+* O computador soma os dois números e armazena o resultado na variável “soma” ...
+* ... que em seguida é apresentada na tela.
 
-O algorítmo e o DFD à seguir ilustram a solução:
+
+
+
+
+O algorítmo abaixo ilustra uma possível solução:
 
 <div class="code">
 <h6>PSEUDOCÓDIGO</h6>
@@ -128,21 +142,44 @@ exibir soma
 </pre>
 </div>
 
+O DFD abaixo foi escrito à mão propositalmente. O objetivo é mostrar que não há necessidade de ser formal a ponto de
+desenhar os diagramas no computar. Essa simples tarefa pode levar muito tempo e o custo x benefício do diagrama começará
+a ser questionado.
+
 <div class="imagem">
     <img src="../../imagens/dfd_soma2num.png" alt="Diagrama de fluxo de dados" />
 </div>
 
+Perdoem minha letra!
 
-#### O que são esses quadrados tortos e verdes?
+O teste de mesa consiste em anotar os nomes das variáveis em colunas e anotar os valores que elas recebem em cada
+passagem de linha de código. Você deve fazer o teste de mesa após o código construído ou até olhando para o DFD.
+Veja o esquema passo a passo:
 
-São o DFD e eles nãos são tortos. É que cada figura tem possue um significado. E são verdes por que eu quiz colorir um
-pouco nossa matéria, rs.
+1. Anote os nomes da variáveis em uma linha
+2. Traçe linha verticais para separa as colunas
+3. Anote os valores para as variáveis <br />
+O valor "5" é atribuído para a variável "numero\_primeiro".
 
 
-### O que é uma variável?
+4. Anote os valores para as variáveis <br />
+O valor "7" é atribuído para a variável "numero\_segundo" <br />
+O valor "5" permanece inalterado na variável "numero\_primeiro"
 
-Uma variável é um espaço alocado(reservado) na memória do computador. Como o próprio nome já diz, seu conteúdo é
-variável. Observe o algorítmo implementado em PHP logo a baixo. Repare que não há uma função “o que o usuário digitar” que
+5. Anote os valores para as variáveis <br />
+A variável "soma" recebo o resultado da soma (valor "12") das duas variáveis anteriores <br />
+O valor "5" continua inalterado na variável "numero\_primeiro" <br />
+O valor "7" permanece inalterado na variável "numero\_primeiro"
+
+
+<div class="imagem">
+    <img src="../../imagens/testemesa1.png" alt="Teste de mesa" />
+</div>
+
+
+### Nota sobre o "recebimento dos dados" (entrada)
+
+Observe o algorítmo implementado em PHP logo a baixo. Repare que não há uma função “o que o usuário digitar” que
 receberá os dados do usuário, por essa razão usamos valores arbitrários(5 e 7). Para fazer com que o usuário digita-se
 os valores, seria necessário construir um formulário e receber os dados vindo desse formulário, tarefa esta que ficará
 para um outro momento.
@@ -158,16 +195,10 @@ echo $soma;
 ?&gt;</pre>
 </div>
 
-O teste de mesa consiste em anotar os nomes das variáveis em colunas e anotar os valores que elas recebem em cada
-passagem de linha de código.
-
-<div class="imagem">
-    <img src="../../imagens/testemesa1.png" alt="Teste de mesa" />
-</div>
 
 
-Nota sobre "atribuição"
------------------------
+
+### Nota sobre "atribuição"
 
 O sinal matemático de igualdade "=" tem a função de atribuição, ele atribui um valor a variável. E como se ele
 armazenas-se o valor naquele local. Diz-se "local" pois, uma variável nada mais é do que um espaço na memória reservado.
@@ -180,9 +211,10 @@ Normalmente o pseudocódigo utiliza-se da notação de uma seta para a esquerda 
 </pre>
 </div>
 
+Como o leitor deve ter percebido estamos utilizando o sinal de igual e não a seta.
 
-Nota sobre “organização mental”
--------------------------------
+
+### Nota sobre “organização mental”
 
 Existem alguns passos na qual é possível seguir para elaborar de forma organizada o algoritmo, vejamos um exemplo:
 
@@ -206,6 +238,7 @@ passo 3 e 2 e ainda retornar no passo 1.
 
 De qualquer forma essa estrutura é interessante e ajuda a organizar um pouco a mente, mas sejam flexível e
 utilize-a com bom senso.
+
 
 
 Leituras adicionais sugeridas

@@ -1,6 +1,9 @@
 Estudos de lógica com respostas (6 ao 10)
 ========================================
 
+Se você caiu nesta página de paraquedas, não deixe de ver as matérias introdutórias e principalmente a anterior a esta.
+
+
 Inspirado nos <a href="http://fit.faccat.br/~fpereira/apostilas/exerc_resp_alg_mar2007.pdf">91 exercícios</a> de
 Flávia Pereira de Carvalho.
 
@@ -87,18 +90,21 @@ Exercício 8
 
 Calcular o juros simples produzido pelo empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
 
-#### Solução (comentada)
+J = C.i.n
 
-Aqui novamente caímos no problema do “conhecimento alheio”. Se você se lembrar das aulas do ensino médio, este exercício
-não será problema, mas caso você não se lembre da formulário do juros simples esse exercício simplesmente se tornará
-impraticavel. Quero dizer que a fórmula do juros simples deveria acompanhar o exercício,
-J = C.i.n onde J = juros, C = capital, i = taxa de empréstimo e n = períodos. Então:
+J = juros,
+C = capital,
+i = taxa de empréstimo e
+n = períodos.
 
 J = 16.000 * 0.03 * 4
 
 J = 1.920,00
 
-E o pseudocódigo ficariam assim:
+
+#### Solução (comentada)
+
+Seguindo o cálculo acima o pseudocódigo ficariam assim:
 
 <div class="code">
 <h6>PORTUGOL</h6>
