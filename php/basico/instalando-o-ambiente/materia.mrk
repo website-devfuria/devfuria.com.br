@@ -121,7 +121,7 @@ no Fedora são três linhas...
 
     yum install httpd
     chkconfig --levels 235 httpd on
-    service httpd start
+    systemctl start httpd.service
 
 
 Para ter certeza de que o apache foi instalado corretamente, abra um navegador qualquer é digite http://localhost. É
@@ -214,7 +214,7 @@ Salve o arquivo digitando CRTL+O, confirme pressionando ENTER, agora feche o arq
 O nano é muito fácil, diz aí? Reinicie o apache:
 
     /etc/init.d/apache2 restart // ubuntu
-    service httpd restart // fedora
+    systemctl start httpd.service // fedora
 
 ### Instalando o X-Debug ###
 
@@ -247,7 +247,7 @@ Reinicie o apache (o comando nós já vimos).
 No Fedora bastam 2 linhas...
 
     yum install php-pecl-xdebug
-    service httpd restart
+    systemctl restart httpd.service
 
 
 ### Instalando o MySql ###
@@ -263,8 +263,13 @@ No fedora é parecido, só que você é quem define a senha, então instale o my
 
     yum install mysql mysql-server
 
-e agora habilite a senha digitando...
+inicie o serviço... 
 
+    systemctl start mysqld.service
+    systemctl enable mysqld.service
+    
+e habilite a senha digitando...
+    
     mysqladmin -u root password [your_password_here]
 
 Para saber se deu certo tente acessar o prompt do mysql digitando...
@@ -289,7 +294,7 @@ sistema, agora é possível manipular o mysql com um interface amigável.
 No Fedora, após a instalação, será preciso reiniciar o apache...
 
     yum install phpmyadmin
-    service httpd resstart
+    systemctl restart httpd.service
 
 
 
