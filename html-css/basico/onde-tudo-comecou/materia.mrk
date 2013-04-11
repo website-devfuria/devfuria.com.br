@@ -27,7 +27,7 @@ informações. Por hora, vamos nos deter apenas no universo do HTML e da CSS.
 
 <div class="imagem">
     <img src="../../imagens/tim-berners-lee.jpg" alt="Tim Berners Lee" />
-    <p>Figura 01 - Tim Berners-Lee, esse é o cara!.</p>
+    <p>Tim Berners-Lee, esse é o cara!.</p>
 </div>
 
 
@@ -80,6 +80,10 @@ Abaixo conferimos um arquivo HTML na sua essência:
 Repare que eu coloquei a palavra "inválido" alertando quanto à validade do HTML.
 O código acima não é valido e serve apenas para fins didâticos e ilustrativo.
 
+<div class="imagem">
+    <img src="../../imagens/html-basico.jpg" alt="HTML basico" />
+    <p><a href="http://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=1011879">Fonte da imagem acima</a></p>
+</div>
 
 
 ### W3C
@@ -104,6 +108,10 @@ canvas(uma prancheta para você desenhar via código), geo-location, web off-lin
 mais. Se você é novato em HTML talvez não tenha entendido nada do que listamos sobre o HTML5, mas fique tranquilo(a),
 veremos HTML concomitante com o HTML5.
 
+<div class="imagem">
+    <img src="../../imagens/fmt-html-versions.png" alt="Historico do HMTL" />
+    <p><a href="http://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=1011879">Fonte da imagem acima</a></p>
+</div>
 
 E esse tal de CSS?
 ------------------
