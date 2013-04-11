@@ -249,6 +249,10 @@ Abaixo vemos a forma decimal e hexadecimal que representa a cor vermelha:
     rgb(255, 0, 0)
     #FF0000
 
+<div class="imagem">
+    <img src="../../imagens/cores.png" alt="Pixel" />
+</div>
+
 
 ### Unindo o CSS ao HTML
 
