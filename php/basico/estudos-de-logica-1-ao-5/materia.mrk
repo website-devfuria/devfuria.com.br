@@ -17,18 +17,6 @@ Pensando nisso e com o objetivo de facilitar a vida do iniciante em programaçã
 arbitrários, ou seja, valores são definidos pelo programador e atribuídos diretamente no código fonte sem a interferência
 do usuário.
 
-Alguns profissionais (principalmente os acadêmicos) confundem “lógica de programação” com “conhecimento alheio”. Por
-exemplo, o enunciado do problema pede para resolver o metro quadrado de um espaço. Se a pessoa não saber como calcular
-o metro quadro ela não conseguirá desenvolver o enunciado (muitos não se lembram que o metro quadrado é igual a área do
-retângulo, basta multiplicar a base pela altura, onde a altura passa a ser uma medida horizontal). Então, conhecer a
-fórmula do metro quadrado não trata-se de lógica e sim de conhecimento alheio. Já o "como fazer" (algoritmo) para calcular
-o metro quadrado é pura lógica. A notícia ruim é que raríssimos profissionais atuam sobre este princípio, logo você
-terá trabalho extra para resolver os exercícios de lógica de programação (terá que dispor de um pouco de conhecimento
-alheio). É muito mais eficiente e honesto quando limpa-se os exercícios de lógica do conhecimento alheio, obtendo-se
-dessa forma apenas a lógica pura. Comentarei sobre isso ao longo dos exercícios. Talvez o leitor esteja se perguntando o
-que tem há ver com tudo isso? Afinal o objetivo é apenas aprender um pouco de lógica de programação. É que eu tenho uma
-enorme vontade de que você não perca o tempo precioso que eu e muitos outros programadores perdemos com essa falha no
-ensino da lógica de programação. E também que o seu aprendizado seja mais proveitoso.
 
 *IMPORTANTE: O aprendizado da lógica se faz a passos lentos, bem lentos. Leia o exercício mas não veja a solução enquanto
 não tiver “suado a camisa”. Normalmente, leva-se de 10 a 20 minutos em cada exercício, cronometre o seu tempo e não
