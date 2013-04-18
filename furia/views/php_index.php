@@ -12,9 +12,9 @@
             "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
             "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC . KEYWORDS_PHP
         );
-        include BASE_PATH.COMPONENTES_PATH."head_meta.php";
+        include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
         ?>
-        <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
+        <?php include BASE_PATH.VIEWS_COMP_PATH."head_links_css.php"; ?>
         <style type="text/css">
             div.materia-resumo.lista-php {
                 background-image: url("../furia/imagens/lista_php.png");
@@ -25,7 +25,7 @@
 
         <?php
         $nav_top['secao'] = "php";
-        include BASE_PATH.COMPONENTES_PATH."nav_top.php";
+        include BASE_PATH.VIEWS_COMP_PATH."nav_top.php";
         ?>
 
         <div class="container">
@@ -34,7 +34,7 @@
                 <div class="span12">
                     <header>
                         <p>
-                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
+                            <?php include BASE_PATH.VIEWS_COMP_PATH."google_search.php"; ?>
                         </p>
                     </header>
                 </div>
@@ -45,7 +45,7 @@
                     <?php
                     $tree_completa['secao'] = "php";
                     $tree_completa['nivel'] = "basico";
-                    include BASE_PATH.COMPONENTES_PATH."tree_completa.php";
+                    include BASE_PATH.VIEWS_COMP_PATH."tree_completa.php";
                     ?>
                 </div>
             </div>
@@ -81,6 +81,6 @@
 
         </div><!-- container -->
 
-    <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
+    <?php include BASE_PATH.VIEWS_COMP_PATH."rodape_js.php"; ?>
     </body>
 </html>

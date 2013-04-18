@@ -34,7 +34,7 @@ function descobre_caminho_relativo(){
      * 1 no escritório
      * 2 no note do ale
      */
-    $qtd-= 1;
+    $qtd-= 2;
     $res = str_pad("", $qtd*3, "../", STR_PAD_LEFT);
 
     return $res;
@@ -69,7 +69,7 @@ define('VIEWS_PATH', "furia/views/");
 /**
  *
  */
-define('COMPONENTES_PATH', "furia/comp/");
+define('VIEWS_COMP_PATH', "furia/views/comp/");
 
 /**
  *  Domínio

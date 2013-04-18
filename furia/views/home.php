@@ -12,20 +12,20 @@
             "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
             "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC
         );
-        include BASE_PATH.COMPONENTES_PATH."head_meta.php";
+        include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
         ?>
-        <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
+        <?php include BASE_PATH.VIEWS_COMP_PATH."head_links_css.php"; ?>
     </head>
     <body>
         <?php
         $nav_top['secao'] = null;
-        include BASE_PATH.COMPONENTES_PATH."nav_top.php";
+        include BASE_PATH.VIEWS_COMP_PATH."nav_top.php";
         ?>
         <div class="container">
             <div class="row">
                 <div class="span12">
                     <header>
-                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
+                            <?php include BASE_PATH.VIEWS_COMP_PATH."google_search.php"; ?>
                     </header>
                 </div>
             </div>
@@ -99,12 +99,12 @@
 
             <div class="row">
                 <div class="span12">
-                    <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>
+                    <?php include BASE_PATH.VIEWS_COMP_PATH."face_botao_curtir.php"; ?>
                 </div><!-- span12 -->
             </div><!-- row -->
         </div><!-- container -->
 
-    <?php include BASE_PATH.COMPONENTES_PATH."rodape.php"; ?>
-    <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
+    <?php include BASE_PATH.VIEWS_COMP_PATH."rodape.php"; ?>
+    <?php include BASE_PATH.VIEWS_COMP_PATH."rodape_js.php"; ?>
     </body>
 </html>
