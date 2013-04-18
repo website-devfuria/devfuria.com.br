@@ -89,6 +89,7 @@ Nesse caso, ele trás várias informações e leitor deve acostumar-se a "extrai
 
 <div class="imagem">
     <img src="../../imagens/debug-erro.png" alt="Debugando com echo" />
+    <p>Erro exibido pelo x-debug!</p>
 </div>
 
 1. Temos o tipo de erro: Warning
