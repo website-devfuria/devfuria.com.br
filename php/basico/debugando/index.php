@@ -13,7 +13,7 @@ require "../../../furia/includes/bs.php";
 /**
  * Instancia a matéria correta
  */
-$materia = new Materia(8);
+$materia = new Materia(13);
 
 
 /**
