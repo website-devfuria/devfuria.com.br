@@ -15,5 +15,5 @@ if( isset($materia) ){
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="<?php echo $head_meta['description'] ?>"/>
 <meta name="keywords" content="<?php echo $head_meta['keywords'] ?>"/>
-<meta property="og:image" content="<?php echo ROOT_PATH; ?>imagens/favicon_1_16x16x1.png"/>
-<link rel="shortcut icon" type="imagens/gif" href="<?php echo ROOT_PATH ?>imagens/favicon.ico">
+<meta property="og:image" content="<?php echo ROOT_PATH; ?>furia/imagens/favicon_1_16x16x1.png"/>
+<link rel="shortcut icon" type="imagens/gif" href="<?php echo ROOT_PATH ?>furia/imagens/favicon.ico">
