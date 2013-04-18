@@ -67,8 +67,8 @@
                                     </span>
                                     <span class="hidden-phone assinatura">
                                         <?php echo $materia->autor; ?>,
-                                        atualizado em <?php echo FuncAux::data_converte_para_visualizar( $materia->dt_atualizacao ); ?>,
-                                        escrito em <?php echo FuncAux::data_converte_para_visualizar( $materia->dt_criacao ); ?>.
+                                        atualizado em <?php echo $materia->dt_atualizacao; ?>,
+                                        escrito em <?php echo $materia->dt_criacao; ?>.
                                     </span>
                                 </a>
                             </div>
