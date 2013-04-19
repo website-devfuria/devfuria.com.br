@@ -1,5 +1,5 @@
 <?php
-require "../../../furia/includes/bs.php";
+require "../../../furia/boot.php";
 $materia = new Materia(1);
 ?>
 <!DOCTYPE html>

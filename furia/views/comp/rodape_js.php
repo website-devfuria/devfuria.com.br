@@ -5,7 +5,7 @@ var DF = {
 }
 </script>
 <script src="<?php echo BASE_PATH; ?>furia/js/ga.js" type="text/javascript"></script>
-<script src="<?php echo BASE_PATH; ?>furia/boot/js/jquery.js" type="text/javascript"></script>
-<script src="<?php echo BASE_PATH; ?>furia/boot/js/bootstrap.js" type="text/javascript"></script>
-<script src="<?php echo BASE_PATH; ?>furia/treeview/jquery.treeview.js" type="text/javascript"></script>
+<script src="<?php echo BASE_PATH; ?>furia/biblio/jquery/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="<?php echo BASE_PATH; ?>furia/biblio/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="<?php echo BASE_PATH; ?>furia/biblio/treeview/jquery.treeview.js" type="text/javascript"></script>
 <script src="<?php echo BASE_PATH; ?>furia/js/furia.js" type="text/javascript"></script>
