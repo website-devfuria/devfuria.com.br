@@ -10,7 +10,7 @@ tema/estilo que quiser, mas não poderá jamais alterar o HTML e sua estrutura.
 O resultado você confere no site. Design's realmente incríveis foram elaborados. Incríveis não só pela arte mas
 principalmente pela *excelência de técnica utiliza na construção do HTML e do CSS.*
 
-O site possui tradução para o português e também disponibiliza uma lista de links que auxiliarão em sua jornada, não 
+O site possue tradução para o português e também disponibiliza uma lista de links que auxiliarão em sua jornada, não 
 deixe de conferir.
 
 Nós iremos utilizar esse HTML para os próximos exercícios, não vamos focar no design (obviamente)
@@ -22,7 +22,7 @@ adequado para o conteúdo?*
 Uma página da web, uma página de um portal ou uma página de um sistema web (nosso foco) é composta por algum tipo de
 conteúdo: texto, cores, links, imagens, gráficos, filmes, audio. Mas principalmente texto.
 
-Imagine que você irá construi apenas uma página simples. Você já possue o texto. Na verdade é tudo muito simples, teremos
+Imagine que você irá construi apenas uma página simples. Você já possui o texto. Na verdade é tudo muito simples, teremos
 apenas títulos e parágrafos.
 
 Crie um arquivo chamado "zengarden-sample.html" e comece colando a estrutura básica do HTML.

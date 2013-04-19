@@ -174,7 +174,7 @@ ele deve ler e intrepretar. Por padrão, no Linux a pasta é /var/www (Debian e 
 derivados).
 
 É possível alterar este local configurando diretamente o arquivo /etc/ini.d/conf.d. Após realizado a configuração devemos
-parar o servidor e reiniciá-lo e prestar atenção para ver se ele não derá nenhuma menssagem de erro. Também é possível
+parar o servidor e reiniciá-lo e prestar atenção para ver se ele não derá nenhuma mensagem de erro. Também é possível
 forçar o reinicialização sem precisar parar o servidor, evitando deixá-lo fora do ar. Essa tarefa fica por sua conta, ok?
 
 Além das configurações do apache pode-se alterar as configurações do próprio php. Para isto basta encontrar o arquivo
