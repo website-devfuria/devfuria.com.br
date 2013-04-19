@@ -1,19 +1,31 @@
-<h1>Conteúdo do site <a href="http://www.devfuria.com.br">www.devfuria.com.br</a></h1>
+Conteúdo do site [www.devfuria.com.br](http://www.devfuria.com.br "DevFuria")
+=====
 
 
-<p>O site aborda desenvolvimento de aplicações web e foca o desenvolvimento nas
-linguagens: PHP, Javascript, HTML e CSS.</p>
+O site aborda desenvolvimento de aplicações web e
+foca o desenvolvimento nas linguagens: Javascript, PHP, HTML e CSS.
 
-<p>O site não é um blog, ele parece-se mais com site de curso web.</p>
+O site não é um blog, ele parece-se mais com site de curso web.
 
-<p>As matérias são escritas no formato markdowm (<a href="http://daringfireball.net/projects/markdown/">Daring Fireball</a>)</p>
+As matérias são escritas no formato markdowm [Daring Fireball](http://daringfireball.net/projects/markdown/ "Markdown")
 
-<p>Cada pasta define uma seção, ex:</p>
+Estrutura de arquivos:
 
-<ul>
-<li>A seção "php" está na pasta /php</li>
-<li>A seção "php nível zero" está na pasta /php/nivel-zero/</li>
-<li>Demais matérias estão dentro de cada seção/nível</li>
-</ul>
+	/furia
+	/html-css
+		/basico
+		/intermediario
+		/avancado
+	/js
+		/basico
+		/intermediario
+		/avancado
+	/php
+		/basico
+		/intermediario
+		/avancado
+	
 
-<p>Se tiver alguma dúvida ou sugestão entre em contato. feedback@devfuria.com.br </p>
+
+
+Se tiver alguma dúvida ou sugestão entre em contato. feedback@devfuria.com.br 
