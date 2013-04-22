@@ -14,34 +14,22 @@ class Materia {
 
     /**
      *
-     * @param type $id
      */
-    function __construct($id=null) {
-        if($id){
-            $this->id = $id;
-            $this->carregar();
-        }
-    }
+    function carregar($id) {
 
-    /**
-     *
-     */
-    function carregar() {
-
-        $sql = "SELECT * FROM materias WHERE id = {$this->id}";
-        $obj = Conn::getConexao()->query($sql)->fetch(PDO::FETCH_OBJ);
-
-        $this->id             = $obj->id;
+        $xml = simplexml_load_file($xml = BASE_PATH.'furia/materias-lista-home.xml');
+        $obj = $xml->secao[$id]->nivel->basico->materia;
+        
         $this->url            = $obj->url;
         $this->titulo         = $obj->titulo;
         $this->resumo         = $obj->resumo;
         $this->keywords       = $obj->keywords;
         $this->nivel          = $obj->nivel;
-        $this->secao          = $obj->secao;
+        $this->secao          = $xml->secao->nome;
         $this->autor          = $obj->autor;
-        $this->dt_atualizacao = $obj->dt_atualizacao;
         $this->dt_criacao     = $obj->dt_criacao;
-        $this->ordem          = $obj->ordem;
+        $this->dt_atualizacao = $obj->dt_atualizacao;
+        
     }
 
 

@@ -13,7 +13,10 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria correta
  */
-$materia = new Materia(1);
+define("PHP_UM_BOM_COMECO", 2);
+
+$materia = new Materia();
+$materia->carregar(PHP_UM_BOM_COMECO);
 
 
 /**
