@@ -12,8 +12,15 @@ class Materia {
     const HTML_CSS = "html-css";
 
 
+    const BASICO = "básico";
+    const INTER  = "intermediário";
+    const AVANC  = "avançado";
+
     /**
-     *
+     * 
+     * Carrega  a matéria conforme o id do xml.
+     * 
+     * @param type $id
      */
     function carregar($id) {
 
@@ -24,7 +31,6 @@ class Materia {
         $this->titulo         = $obj->titulo;
         $this->resumo         = $obj->resumo;
         $this->keywords       = $obj->keywords;
-        $this->nivel          = "basico";
         $this->secao          = $xml->secao[$id]->nome;
         $this->autor          = $obj->autor;
         $this->dt_criacao     = $obj->dt_criacao;
@@ -32,10 +38,17 @@ class Materia {
 
     }
 
+   /**
+    * Seta o nível da matéria
+    */
+    function setNivel($nivel){
+        $this->nivel = $nivel;
+    }
+
 
     /**
      *
-     * @param type $where
+     * 
      * @return type
      */
     function getListaParcial() {
@@ -63,7 +76,8 @@ class Materia {
 
     /**
      *
-     * @param type $where
+     * 
+     * @param type $secao
      * @return type
      */
     static function getObjects($secao=null) {

@@ -17,6 +17,7 @@ define("PHP_UM_BOM_COMECO", 2);
 
 $materia = new Materia();
 $materia->carregar(PHP_UM_BOM_COMECO);
+$materia->setNivel(Materia::BASICO);
 
 
 /**
