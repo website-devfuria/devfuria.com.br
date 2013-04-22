@@ -115,4 +115,3 @@ require (BASE_PATH."furia/markdown.php");
 /**
  * Classes diversas
  */
-require (BASE_PATH."furia/FuncAux.class.php");

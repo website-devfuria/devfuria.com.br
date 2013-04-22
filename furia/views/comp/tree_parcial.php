@@ -1,7 +1,7 @@
 <?php
 defined('DF') or die;
-$where    = "WHERE secao = '{$materia->secao}' AND nivel = '{$materia->nivel}' ";
-$materias = Materia::getObjects($where);
+$materias = $materia->getListaParcial();
+
 ?>
 <div class="furia-tree parcial">
     <h5>Veja também...</h5>

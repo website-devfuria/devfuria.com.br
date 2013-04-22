@@ -24,7 +24,7 @@
     <body class="respiro-em-baixo">
 
         <?php
-        $nav_top['secao'] = "php";
+        $nav_top['secao'] = Materia::PHP;
         include BASE_PATH.VIEWS_COMP_PATH."nav_top.php";
         ?>
 
@@ -43,41 +43,22 @@
             <div class="row">
                 <div class="span10 offset1">
                     <?php
-                    $tree_completa['secao'] = "php";
-                    $tree_completa['nivel'] = "basico";
+                    $tree_completa['secao'] = Materia::PHP;
                     include BASE_PATH.VIEWS_COMP_PATH."tree_completa.php";
                     ?>
                 </div>
             </div>
 
-
             <div class="row">
                 <div class="span10 offset1">
                     <div class="furia-lista-materias">
                         <?php
-                        $order    = "ORDER BY secao, ordem";
-                        $where    = "WHERE secao = 'php'";
-                        $materias = Materia::getObjects($where, $order);
+                        $lista_materias['secao'] = Materia::PHP;
+                        include BASE_PATH.VIEWS_COMP_PATH."lista_materias.php";                        
                         ?>
-                        <?php foreach($materias as $materia): ?>
-                            <div class="materia-resumo lista-<?php echo $materia->secao; ?>">
-                                <a href="<?php echo BASE_PATH.$materia->url ?>">
-                                    <em><?php echo $materia->titulo; ?></em>
-                                    <span class="resumo">
-                                        <?php echo $materia->resumo; ?> (continuar lendo)
-                                    </span>
-                                    <span class="hidden-phone assinatura">
-                                        <?php echo $materia->autor; ?>,
-                                        atualizado em <?php echo $materia->dt_atualizacao; ?>,
-                                        escrito em <?php echo $materia->dt_criacao; ?>.
-                                    </span>
-                                </a>
-                            </div>
-                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
-
 
         </div><!-- container -->
 

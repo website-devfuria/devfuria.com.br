@@ -50,25 +50,56 @@ class Materia {
      * @param type $where
      * @return type
      */
-    static function getObjects($where=null, $order=null) {
+    function getListaParcial() {
 
         $materias = array();
 
-        $orderby = $order ? $order : "ORDER BY ordem ASC";
-
-        $sql  = "SELECT * FROM materias $where $orderby";
-
-        $stmt = Conn::getConexao()->query($sql);
-        while( $materia = $stmt->fetch(PDO::FETCH_OBJ)  ):
-            $materia->dt_criacao     = FuncAux::data_converte_para_visualizar($materia->dt_criacao);
-            $materia->dt_atualizacao = FuncAux::data_converte_para_visualizar($materia->dt_atualizacao);
-            $materias[] = $materia;
-        endwhile;
-
+        $xml = simplexml_load_file(BASE_PATH.'furia/materias-lista-home.xml');
+        
+        switch ($this->secao) {
+            case self::HTML_CSS:
+                $materias = $xml->secao[0]->nivel->basico->materia;
+                break;
+            case self::JS:
+                $materias = $xml->secao[1]->nivel->basico->materia;
+                break;
+            case self::PHP:
+                $materias = $xml->secao[2]->nivel->basico->materia;
+                break;
+        }        
+        
         return $materias;
 
     }
 
+    /**
+     *
+     * @param type $where
+     * @return type
+     */
+    static function getObjects($secao=null) {
+
+        $materias = array();
+
+        $xml = simplexml_load_file(BASE_PATH.'furia/materias-lista-home.xml');
+        
+        switch ($secao) {
+            case self::HTML_CSS:
+                $materias = $xml->secao[0]->nivel->basico->materia;
+                break;
+            case self::JS:
+                $materias = $xml->secao[1]->nivel->basico->materia;
+                break;
+            case self::PHP:
+                $materias = $xml->secao[2]->nivel->basico->materia;
+                break;
+        }
+        
+        return $materias;
+
+    }    
+    
+    
     /**
      *
      * @throws Exception

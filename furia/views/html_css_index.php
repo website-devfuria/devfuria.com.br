@@ -54,25 +54,9 @@
                 <div class="span10 offset1">
                     <div class="furia-lista-materias">
                         <?php
-                        $order    = "ORDER BY secao, ordem";
-                        $where    = "WHERE secao = 'html-css' ";
-                        $materias = Materia::getObjects($where, $order);
+                        $lista_materias['secao'] = Materia::HTML_CSS;
+                        include BASE_PATH.VIEWS_COMP_PATH."lista_materias.php";                        
                         ?>
-                        <?php foreach($materias as $materia): ?>
-                            <div class="materia-resumo lista-<?php echo $materia->secao; ?>">
-                                <a href="<?php echo BASE_PATH.$materia->url ?>">
-                                    <em><?php echo $materia->titulo; ?></em>
-                                    <span class="resumo">
-                                        <?php echo $materia->resumo; ?> (continuar lendo)
-                                    </span>
-                                    <span class="hidden-phone assinatura">
-                                        <?php echo $materia->autor; ?>,
-                                        atualizado em <?php echo $materia->dt_atualizacao; ?>,
-                                        escrito em <?php echo  $materia->dt_criacao; ?>.
-                                    </span>
-                                </a>
-                            </div>
-                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
