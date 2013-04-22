@@ -19,17 +19,17 @@ class Materia {
 
         $xml = simplexml_load_file($xml = BASE_PATH.'furia/materias-lista-home.xml');
         $obj = $xml->secao[$id]->nivel->basico->materia;
-        
+                
         $this->url            = $obj->url;
         $this->titulo         = $obj->titulo;
         $this->resumo         = $obj->resumo;
         $this->keywords       = $obj->keywords;
-        $this->nivel          = $obj->nivel;
-        $this->secao          = $xml->secao->nome;
+        $this->nivel          = "basico";
+        $this->secao          = $xml->secao[$id]->nome;
         $this->autor          = $obj->autor;
         $this->dt_criacao     = $obj->dt_criacao;
         $this->dt_atualizacao = $obj->dt_atualizacao;
-        
+
     }
 
 
@@ -43,6 +43,7 @@ class Materia {
         $materias = array();
 
         $xml = simplexml_load_file(BASE_PATH.'furia/materias-lista-home.xml');
+
         
         switch ($this->secao) {
             case self::HTML_CSS:
