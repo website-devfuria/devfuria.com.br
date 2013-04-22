@@ -8,12 +8,38 @@
                     <titulo>Onde tudo começou</titulo>
                     <url>html-css/basico/onde-tudo-comecou</url>
                     <pasta>html-css/basico/onde-tudo-comecou/</pasta>
+                    <resumo>Tim Berners-Lee, a culpa é toda dele. No começo dos anos 90, o dito cujo, inventou o HTML (HyperText Markup Language) que significa Linguagem de Marcação de Hipertexto. Ele queria facilitar a comunicação de suas pesquisas com seus colegas e acabou resolvendo o problema de todo mundo, nascia a web.</resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>23/01/2013</dt_criacao>
+                    <dt_atualizacao>11/02/2013</dt_atualizacao>                    
                 </materia>
                 <materia>
-                    <titulo>Criando nosso primeiro HTML</titulo>
-                    <url>html-css/basico/primeiro-html</url>
-                    <pasta>html-css/basico/primeiro-html/</pasta>
+                    <titulo>HTML e CSS - Introdução</titulo>
+                    <url>html-css/basico/html-e-css-intro/</url>
+                    <pasta>html-css/basico/html-e-css-intro/</pasta>
+                    <resumo>Vamos dar uma rápida olhada nas tag's básicas e uma "passeada" com o CSS.</resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>23/01/2013</dt_criacao>
+                    <dt_atualizacao>11/02/2013</dt_atualizacao>                    
+                </materia>  
+                <materia>
+                    <titulo>Elementos in-line e elementos block-level</titulo>
+                    <url>html-css/basico/elementos-inline-block-level/</url>
+                    <pasta>html-css/basico/elementos-inline-block-level/</pasta>
+                    <resumo> Há dois tipos básicos de tag's: as in-line e de block-level. A diferênça básica é que o browser acomoda os elementos inline à esquerda um ao lado do outro e as de bloco ele coloca uma embaixo da outra ocupando a tela toda. Veja o HTML abaixo para *entender* e clique no [link](code1.html "Veja a pagina em funcionamento") para *perceber* como ele foi reenderizado.</resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>23/01/2013</dt_criacao>
+                    <dt_atualizacao>11/02/2013</dt_atualizacao>                    
                 </materia>
+                <materia>
+                    <titulo>Criando nosso primeiro HTML (com video)</titulo>
+                    <url>html-css/basico/primeiro-html/</url>
+                    <pasta>html-css/basico/primeiro-html/</pasta>
+                    <resumo>O site www.csszengarden.com é notório por seus esforços em promover e divulgar o poder do CSS unido a um bom HTML. Ele tráz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e desafiaram designers solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utilizar o tema/estilo que quiser, mas não poderá jamais alterar o HTML e sua estrutura </resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>12/04/2013</dt_criacao>
+                    <dt_atualizacao>12/04/2013</dt_atualizacao>                    
+                </materia>                
             </basico>
         </nivel>
     </secao>
@@ -23,14 +49,31 @@
             <basico>
                 <materia>
                     <titulo>Introduçao</titulo>
-                    <url>html-css/basico/onde-tudo-comecou</url>
-                    <pasta>html-css/basico/onde-tudo-comecou/</pasta>
+                    <url>js/basico/onde-tudo-comecou</url>
+                    <pasta>js/basico/onde-tudo-comecou/</pasta>
+                    <resumo>JavaScript(JS) não é brinquedo, é linguagem de programação séria. Das mil definições de JS a que mais me agrada é a de Kevin e Cameron em seu livro Simple JavaScript (Só JavaScript) 'JavaScript é uma linguagem de programação simples que permite alterar páginas web dinamicamente, enquanto estão sendo exibidas em um navegador.'. </resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>08/10/2012</dt_criacao>
+                    <dt_atualizacao>08/11/2012</dt_atualizacao>                    
                 </materia>
                 <materia>
                     <titulo>Preparando o terreno</titulo>
                     <url>js/basico/preparando-o-terreno</url>
                     <pasta>js/basico/preparando-o-terreno/</pasta>
+                    <resumo>Na matéria de introdução eu comentei que vamos aprender JS junto com HTML e CSS. Na verdade vamos aprender as coisas separadamente, porém vamos trabalhar com os três elementos como se fosse ingredientes obrigatórios em cada receita. Neste ponto é importante entendermos a obrigação de cada um desses componentes. O JS será encarregado do comportamento da página, da interação com o usuário, dos enventos possíveis (click, duplo click, teclado, movimentação do mouse, e etc...), de tudo aquilo que pode beneficinar a interface do sistema.</resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>08/10/2012</dt_criacao>
+                    <dt_atualizacao>08/11/2012</dt_atualizacao>               
                 </materia>
+                <materia>
+                    <titulo>Debugando (depurando)</titulo>
+                    <url>js/basico/debugando/</url>
+                    <pasta>js/basico/debugando/</pasta>
+                    <resumo>"Precisamos debugar o programa para sabermos onde [e como] está ocorrendo o erro". Essa frase faz parte do dia a dia do desenvolvedor e, não raro, ela tira o sono de muita gente.</resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>10/04/2013</dt_criacao>
+                    <dt_atualizacao>10/04/2013</dt_atualizacao>                    
+                </materia>                
             </basico>
         </nivel>
     </secao>
@@ -44,18 +87,63 @@
                     <pasta>php/basico/um-bom-comeco/</pasta>
                     <resumo>PHP é uma linguagem de programação para uso geral. Inicialmente, projetada por Rasmus Lerdorf na década de 1990, tinha como objetivo principal contar as visitas que eram realizadas em seu currículo on-line. Atualmente (2012) é utilizada, principalmente para construir aplicações web. Entende-se por aplicações web (às vezes abreviado para “webapp” ou simplesmente “app´s”) programas ou softwares escritos para rodarem na plataforma web, no modelo cliente/servidor...</resumo>
                     <autor>Flavio Micheletti</autor>
-                    <dt_criacao>01/01/2001</dt_criacao>
-                    <dt_atualizacao>02/02/2001</dt_atualizacao>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/09/2012</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>Logica de proraçao</titulo>
+                    <titulo>Logica de programaçao</titulo>
                     <url>php/basico/logica-de-programacao</url>
                     <pasta>php/basico/logica-de-programacao/</pasta>
                     <resumo>A lógica de programação é um exercício mental. Ela equivale aos exercícios físicos e todo programador deve praticar, não apenas no início do aprendizado mas no decorrer de toda a “estrada”. Programar um computador é uma atividade, antes de tudo, criativa. Quando a criatividade se une com o raciocínio lógico temos a lógica de programação. E programar nada mais é do que instruir o computador a resolver problemas... usando a lógica de forma criativa.</resumo>
                     <autor>Flavio Micheletti</autor>                    
-                    <dt_criacao>01/01/2001</dt_criacao>
-                    <dt_atualizacao>02/02/2001</dt_atualizacao>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/09/2012</dt_atualizacao>
                 </materia>
+                <materia>
+                    <titulo>Antes de enfiar o pé na jáca</titulo>
+                    <url>php/basico/antes-de-enfiar-o-pe-na-jaca/</url>
+                    <pasta>php/basico/antes-de-enfiar-o-pe-na-jaca/</pasta>
+                    <resumo>A questão é que o PHP é fácil demais. o que incentiva a implementar suas idéias, retornando, assim, bons resultados. Algumas dessas facilidades são a possibilidade de digitar grande parte de seu código diretamente em suas páginas da Web, adicionar funções úteis (como um código de acesso a banco de dados) a arquivos, incluindo-as de página em página e, antes de se dar conta, você já tem um aplicativo Web em execução. </resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/09/2012</dt_atualizacao>
+                </materia>                
+                <materia>
+                    <titulo>Instalando o ambiente no estilo NEXT, NEXT, NEXT</titulo>
+                    <url>php/basico/instalando-o-ambiente/</url>
+                    <pasta>php/basico/instalando-o-ambiente/</pasta>
+                    <resumo>Todo programador precisa saber “levantar” seu próprio ambiente de trabalho, me refiro a instalar os programas necessários para começar o desenvolvimento. Inclua na lista: o servidor web(apache), o módulo PHP, o banco de dados, a API (interface) do banco de dados, o editor de código, o controlador de versão, a escolha do sistema operacional, etc... Após instalado os componentes, devemos configurar cada um deles. </resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/09/2012</dt_atualizacao>
+                </materia>                
+                <materia>
+                    <titulo>Estudos de lógica com respostas (1 ao 5)</titulo>
+                    <url>php/basico/estudos-de-logica-1-ao-5/</url>
+                    <pasta>php/basico/estudos-de-logica-1-ao-5/</pasta>
+                    <resumo>Você já sabe o que é PHP, conhece a sintaxe básica, lêu o artigo “pé na jáca”, já conseguiu “subir’ o ambiente de desenvolvimento. Agora só falta começar a programar. Para isso vamos começar exercitando a lógica de programação. Não vamos criar programas completos e profissionais, nada disso. Construiremos apenas pequenos trechos de códigos para exercitar o raciocínio e desenvolver uma intimidade com a linguagem.</resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/09/2012</dt_atualizacao>                 
+                </materia>                
+                <materia>
+                    <titulo>Estudos de lógica com respostas (6 ao 10)</titulo>
+                    <url>php/basico/estudos-de-logica-6-ao-10/</url>
+                    <pasta>php/basico/estudos-de-logica-6-ao-10/</pasta>
+                    <resumo>Esta é a segunda bateria de exercícios de lógica. </resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>04/02/2013</dt_atualizacao>                  
+                </materia>                
+                <materia>
+                    <titulo>Debugando (depurando)</titulo>
+                    <url>php/basico/debugando/</url>
+                    <pasta>php/basico/debugando/</pasta>
+                    <resumo>Debugar é um esforço para encontrar determinado ponto (às vezes vários pontos) "defeituoso" no código para que seja corrigido.</resumo>
+                    <autor>Flavio Micheletti</autor>
+                    <dt_criacao>10/04/2013</dt_criacao>
+                    <dt_atualizacao>10/04/2013</dt_atualizacao>                  
+                </materia>                
             </basico>
         </nivel>
     </secao>
