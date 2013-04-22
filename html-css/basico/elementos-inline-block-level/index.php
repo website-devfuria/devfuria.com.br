@@ -13,7 +13,10 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria correta
  */
-$materia = new Materia(11);
+define("ELEMENTOS_INLINE_BLOCK_LEVEL", 2);
+$materia = new Materia();
+$materia->carregar(Materia::idXML_HTML_CSS, ELEMENTOS_INLINE_BLOCK_LEVEL);
+$materia->setNivel(Materia::BASICO);
 
 
 /**

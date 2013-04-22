@@ -13,7 +13,10 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria correta
  */
-$materia = new Materia(4);
+define("INSTALANDO_AMBIENTE", 3);
+$materia = new Materia();
+$materia->carregar(Materia::idXML_PHP, INSTALANDO_AMBIENTE);
+$materia->setNivel(Materia::BASICO);
 
 
 /**

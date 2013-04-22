@@ -7,31 +7,35 @@
  */
 class Materia {
 
-    const PHP      = "php";
-    const JS       = "js";
-    const HTML_CSS = "html-css";
-
-
     const BASICO = "básico";
     const INTER  = "intermediário";
     const AVANC  = "avançado";
-
+    
+    const PHP      = "php";
+    const JS       = "js";
+    const HTML_CSS = "html-css";
+ 
+    const idXML_PHP      = 2;
+    const idXML_JS       = 1;
+    const idXML_HTML_CSS = 0;    
+    
+    
     /**
      * 
      * Carrega  a matéria conforme o id do xml.
      * 
      * @param type $id
      */
-    function carregar($id) {
+    function carregar($id_secao, $id_materia) {
 
         $xml = simplexml_load_file($xml = BASE_PATH.'furia/materias-lista-home.xml');
-        $obj = $xml->secao[$id]->nivel->basico->materia;
+        $obj = $xml->secao[$id_secao]->nivel->basico->materia[$id_materia];
                 
         $this->url            = $obj->url;
         $this->titulo         = $obj->titulo;
         $this->resumo         = $obj->resumo;
         $this->keywords       = $obj->keywords;
-        $this->secao          = $xml->secao[$id]->nome;
+        $this->secao          = $xml->secao[$id_secao]->nome;
         $this->autor          = $obj->autor;
         $this->dt_criacao     = $obj->dt_criacao;
         $this->dt_atualizacao = $obj->dt_atualizacao;

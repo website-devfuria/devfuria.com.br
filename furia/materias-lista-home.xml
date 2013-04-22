@@ -49,7 +49,7 @@
             <basico>
                 <materia>
                     <titulo>Introdução</titulo>
-                    <url>js/basico/onde-tudo-comecou</url>
+                    <url>js/basico/intro</url>
                     <pasta>js/basico/onde-tudo-comecou/</pasta>
                     <resumo>JavaScript(JS) não é brinquedo, é linguagem de programação séria. Das mil definições de JS a que mais me agrada é a de Kevin e Cameron em seu livro Simple JavaScript (Só JavaScript) 'JavaScript é uma linguagem de programação simples que permite alterar páginas web dinamicamente, enquanto estão sendo exibidas em um navegador.'. </resumo>
                     <autor>Flávio Micheletti</autor>

@@ -11,12 +11,11 @@ require "../../../furia/boot.php";
 
 
 /**
- * Instancia a matéria correta
+ * Instancia a matéria
  */
-define("PHP_UM_BOM_COMECO", 2);
-
+define("UM_BOM_COMECO", 0);
 $materia = new Materia();
-$materia->carregar(PHP_UM_BOM_COMECO);
+$materia->carregar(Materia::idXML_PHP, UM_BOM_COMECO);
 $materia->setNivel(Materia::BASICO);
 
 
