@@ -91,7 +91,7 @@
                     <dt_atualizacao>11/09/2012</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>Logica de programação</titulo>
+                    <titulo>Lógica de programação</titulo>
                     <url>php/basico/logica-de-programacao</url>
                     <pasta>php/basico/logica-de-programacao/</pasta>
                     <resumo>A lógica de programação é um exercício mental. Ela equivale aos exercícios físicos e todo programador deve praticar, não apenas no início do aprendizado mas no decorrer de toda a “estrada”. Programar um computador é uma atividade, antes de tudo, criativa. Quando a criatividade se une com o raciocínio lógico temos a lógica de programação. E programar nada mais é do que instruir o computador a resolver problemas... usando a lógica de forma criativa.</resumo>
