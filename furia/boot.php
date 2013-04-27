@@ -11,39 +11,6 @@ session_start();
 
 
 /**
- * Descobre o caminho relativo(da raiz) para podermos referenciar arquivos
- * php, css, js, imgs, e etc...
- *
- * @return type
- */
-function descobre_caminho_relativo(){
-    $dir  = getcwd();
-    $root = $_SERVER['DOCUMENT_ROOT'];
-
-    $dir = str_replace($root, "", $dir);
-    $qtd = substr_count($dir, '/');
-
-    if(  isset($_SERVER['PATH_INFO'])  ){
-        if( $_SERVER['PATH_INFO'] == "/" ){
-            $qtd++;
-        }
-    }
-
-    /*
-     * 0 para dialhost
-     * 1 no escritório
-     * 2 no note do ale
-     */
-    $qtd-= 2;
-    $res = str_pad("", $qtd*3, "../", STR_PAD_LEFT);
-
-    return $res;
-}
-
-
-
-
-/**
  *
  */
 define('DF', true);
@@ -52,7 +19,8 @@ define('DF', true);
 /**
  * Caminho relativo da raiz do sistema
  */
-define('BASE_PATH', descobre_caminho_relativo());
+define('BASE_PATH', "../../../");
+
 
 /**
  * Root
