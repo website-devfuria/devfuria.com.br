@@ -11,7 +11,7 @@ $materias = $materia->getListaParcial();
                 <li><a><span class="file atual"><?php echo $cada_materia->titulo ?></span></a></li>
             <?php else: ?>
                 <li>
-                    <a href="<?php echo BASE_PATH.$cada_materia->url ?>" class="">
+                    <a href="<?php echo LINKS_PATH.$cada_materia->url ?>" class="">
                         <span class="file">
                             <?php echo $cada_materia->titulo ?>
                         </span>

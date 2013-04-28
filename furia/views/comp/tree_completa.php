@@ -14,7 +14,7 @@ $tree_completa['materias'] = Materia::getObjects($tree_completa['secao']);
                                 <ul>
                                     <?php foreach($tree_completa['materias'] as $materia): ?>
                                         <li>
-                                            <a href="<?php echo BASE_PATH.$materia->url ?>" class="">
+                                            <a href="<?php echo LINKS_PATH.$materia->url ?>" class="">
                                                 <span class="file">
                                                     <?php echo $materia->titulo ?>
                                                 </span>

@@ -28,7 +28,7 @@ class Materia {
      */
     function carregar($id_secao, $id_materia) {
 
-        $xml = simplexml_load_file($xml = BASE_PATH.'furia/materias-lista-home.xml');
+        $xml = simplexml_load_file($xml = BASE_PATH.'/materias-lista-home.xml');
         $obj = $xml->secao[$id_secao]->nivel->basico->materia[$id_materia];
                 
         $this->url            = $obj->url;
@@ -59,7 +59,7 @@ class Materia {
 
         $materias = array();
 
-        $xml = simplexml_load_file(BASE_PATH.'furia/materias-lista-home.xml');
+        $xml = simplexml_load_file(BASE_PATH.'/materias-lista-home.xml');
 
         
         switch ($this->secao) {
@@ -88,7 +88,7 @@ class Materia {
 
         $materias = array();
 
-        $xml = simplexml_load_file(BASE_PATH.'furia/materias-lista-home.xml');
+        $xml = simplexml_load_file(BASE_PATH.'/materias-lista-home.xml');
         
         switch ($secao) {
             case self::HTML_CSS:

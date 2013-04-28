@@ -35,7 +35,7 @@
                 <li class="span4">
                     <div class="thumbnail">
                         <a href="<?php echo BASE_PATH?>php/">
-                            <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-php.jpeg" alt="">
+                            <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-php.jpeg" alt="">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::PHP); ?>
                         <ul class="nav nav-pills nav-stacked">
@@ -43,7 +43,7 @@
                             <li>
                                 <ul class="nav nav-pills nav-stacked">
                                     <?php foreach ($materias as $materia): ?>
-                                        <li><a href="<?php echo BASE_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -53,7 +53,7 @@
                 <li class="span4">
                     <div class="thumbnail" >
                         <a href="<?php echo BASE_PATH?>js/">
-                            <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-javascript.png" alt="">
+                            <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-javascript.png" alt="">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::JS); ?>
                         <ul class="nav nav-pills nav-stacked">
@@ -61,7 +61,7 @@
                             <li>
                                 <ul class="nav nav-pills nav-stacked">
                                     <?php foreach ($materias as $materia): ?>
-                                        <li><a href="<?php echo BASE_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -70,8 +70,8 @@
                 </li>
                 <li class="span4">
                     <div class="thumbnail">
-                        <a href="<?php echo BASE_PATH?>html-css/">
-                            <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-html-css.jpg" alt="">
+                        <a href="<?php echo LINKS_PATH?>html-css/">
+                            <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-html-css.jpg" alt="">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::HTML_CSS); ?>
                         <ul class="nav nav-pills nav-stacked">
@@ -79,7 +79,7 @@
                             <li>
                                 <ul class="nav nav-pills nav-stacked">
                                     <?php foreach ($materias as $materia): ?>
-                                        <li><a href="<?php echo BASE_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
