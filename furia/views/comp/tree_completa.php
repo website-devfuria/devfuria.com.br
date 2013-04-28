@@ -4,8 +4,12 @@ $tree_completa['materias'] = Materia::getObjects($tree_completa['secao']);
 ?>
                     <div class="furia-tree">
                         <div id="treecontrol" class="hidden-phone">
-                            <a href="#" title="Collapse the entire tree below"><img alt="-" src="<?php echo BASE_PATH; ?>furia/treeview/images/minus.gif">Contrair todos</a>
-                            <a href="#" title="Expand the entire tree below"><img alt="+" src="<?php echo BASE_PATH; ?>furia/treeview/images/plus.gif">Expandir todos</a>
+                            <a href="#" title="Collapse the entire tree below">
+                                <img alt="-" src="<?php echo LINKS_PATH; ?>furia/bibio/treeview/images/minus.gif">Contrair todos
+                            </a>
+                            <a href="#" title="Expand the entire tree below">
+                                <img alt="+" src="<?php echo LINKS_PATH; ?>furia/biblio/treeview/images/plus.gif">Expandir todos
+                            </a>
                         </div>
 
                         <h6><?php echo strtoupper($tree_completa['secao']); ?></h6>

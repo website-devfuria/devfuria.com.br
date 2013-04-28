@@ -34,7 +34,7 @@
             <ul class="thumbnails">
                 <li class="span4">
                     <div class="thumbnail">
-                        <a href="<?php echo BASE_PATH?>php/">
+                        <a href="<?php echo LINKS_PATH?>php/">
                             <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-php.jpeg" alt="">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::PHP); ?>
@@ -52,7 +52,7 @@
                 </li>
                 <li class="span4">
                     <div class="thumbnail" >
-                        <a href="<?php echo BASE_PATH?>js/">
+                        <a href="<?php echo LINKS_PATH?>js/">
                             <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-javascript.png" alt="">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::JS); ?>
