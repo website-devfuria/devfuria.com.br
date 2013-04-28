@@ -17,36 +17,41 @@ define('DF', true);
 
 
 /**
- * Caminho relativo da raiz do sistema
- */
-define('BASE_PATH', dirname(__FILE__));
-
-
-/**
- * 
- */
-define('LINKS_PATH', "http://localhost/devfuria/www.devfuria.com.br/");
-
-
-/**
  * Root
  */
 define('ROOT_PATH', "http://www.devfuria.com.br/");
 
 
 /**
- *
+ * Caminho relativo da raiz do sistema
+ */
+define('BASE_PATH', dirname(__FILE__));
+
+
+/**
+ * Caminho absoluto para links e imagens
+ */
+# www.devefuria.com.br
+define('LINKS_PATH', ROOT_PATH);
+# local
+//define('LINKS_PATH', "http://localhost/devfuria/www.devfuria.com.br/");
+
+
+
+/**
+ * Pasta das views
  */
 define('VIEWS_PATH', "/views/");
 
 
 /**
- *
+ * Pasta dos componetes (referente as views) 
  */
 define('VIEWS_COMP_PATH', "/views/comp/");
 
+
 /**
- *  Domínio
+ *  Domínio, utilizado nos title das páginas
  */
 define('DOMINIO', "devfuria.com.br");
 
@@ -70,6 +75,7 @@ define('KEYWORDS_JS', "javascript básico; javascript fácil; javascript início
  * Classe Materia
  */
 require (BASE_PATH."/Materia.class.php");
+
 
 /**
  * Markdown
