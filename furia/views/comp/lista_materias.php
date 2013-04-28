@@ -4,7 +4,7 @@ $materias = Materia::getObjects($lista_materias['secao']);
 ?>
 
                         <?php foreach($materias as $materia): ?>
-                            <div class="materia-resumo lista-<?php echo $materia->secao; ?>">
+                            <div class="materia-resumo lista-<?php echo $lista_materias['secao']; ?>">
                                 <a href="<?php echo LINKS_PATH.$materia->url ?>">
                                     <em><?php echo $materia->titulo; ?></em>
                                     <span class="resumo">
