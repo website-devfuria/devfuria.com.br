@@ -7,18 +7,20 @@
 /**
  * Includes
  */
-require "../../../furia/includes/bs.php";
+require "../../../furia/boot.php";
 
 
 /**
  * Instancia a matéria correta
  */
-$materia = new Materia(8);
+define("PREPARANDO_TERRENO", 1);
+$materia = new Materia();
+$materia->carregar(Materia::idXML_JS, PREPARANDO_TERRENO);
+$materia->setNivel(Materia::BASICO);
 
 
 /**
  * View
  */
 require BASE_PATH.VIEWS_PATH."materias.php";
-
 ?>

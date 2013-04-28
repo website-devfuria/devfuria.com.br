@@ -7,13 +7,16 @@
 /**
  * Includes
  */
-require "../../../furia/includes/bs.php";
+require "../../../furia/boot.php";
 
 
 /**
  * Instancia a matéria correta
  */
-$materia = new Materia(13);
+define("DEBUGANDO", 6);
+$materia = new Materia();
+$materia->carregar(Materia::idXML_PHP, DEBUGANDO);
+$materia->setNivel(Materia::BASICO);
 
 
 /**

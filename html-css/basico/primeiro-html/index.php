@@ -7,14 +7,16 @@
 /**
  * Includes
  */
-require "../../../furia/includes/bs.php";
+require "../../../furia/boot.php";
 
 
 /**
  * Instancia a matéria correta
  */
-$materia = new Materia(12);
-
+define("PRIMEIRO_HTML", 3);
+$materia = new Materia();
+$materia->carregar(Materia::idXML_HTML_CSS, PRIMEIRO_HTML);
+$materia->setNivel(Materia::BASICO);
 
 /**
  * View

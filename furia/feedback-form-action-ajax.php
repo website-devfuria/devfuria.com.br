@@ -35,7 +35,7 @@ try {
     # checa se veio email
     if( !$_POST['email'] ){ throw new Exception("Preencha o email !!!"); }
    
-    # checa se veio menssagem
+    # checa se veio mensagem
     if( !$_POST['feedback'] ){ throw new Exception("Escreva alguma coisa !!!"); }
 
 

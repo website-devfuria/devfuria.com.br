@@ -12,20 +12,20 @@
             "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
             "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC
         );
-        include BASE_PATH.COMPONENTES_PATH."head_meta.php";
+        include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
         ?>
-        <?php include BASE_PATH.COMPONENTES_PATH."head_links_css.php"; ?>
+        <?php include BASE_PATH.VIEWS_COMP_PATH."head_links_css.php"; ?>
     </head>
     <body>
         <?php
         $nav_top['secao'] = null;
-        include BASE_PATH.COMPONENTES_PATH."nav_top.php";
+        include BASE_PATH.VIEWS_COMP_PATH."nav_top.php";
         ?>
         <div class="container">
             <div class="row">
                 <div class="span12">
                     <header>
-                            <?php include BASE_PATH.COMPONENTES_PATH."google_search.php"; ?>
+                            <?php include BASE_PATH.VIEWS_COMP_PATH."google_search.php"; ?>
                     </header>
                 </div>
             </div>
@@ -35,18 +35,15 @@
                 <li class="span4">
                     <div class="thumbnail">
                         <a href="<?php echo BASE_PATH?>php/">
-                            <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-php.jpeg" alt="">
+                            <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-php.jpeg" alt="">
                         </a>
-                        <?php
-                        $where = "WHERE secao = 'php' AND nivel = 'basico' ";
-                        $materias = Materia::getObjects($where);
-                        ?>
+                        <?php $materias = Materia::getObjects(Materia::PHP); ?>
                         <ul class="nav nav-pills nav-stacked">
                             <li><span class="badge badge-success">Básico</span></li>
                             <li>
                                 <ul class="nav nav-pills nav-stacked">
                                     <?php foreach ($materias as $materia): ?>
-                                        <li><a href="<?php echo BASE_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -56,18 +53,15 @@
                 <li class="span4">
                     <div class="thumbnail" >
                         <a href="<?php echo BASE_PATH?>js/">
-                            <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-javascript.png" alt="">
+                            <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-javascript.png" alt="">
                         </a>
-                        <?php
-                        $where = "WHERE secao = 'js' AND nivel = 'basico' ";
-                        $materias = Materia::getObjects($where);
-                        ?>
+                        <?php $materias = Materia::getObjects(Materia::JS); ?>
                         <ul class="nav nav-pills nav-stacked">
                             <li><span class="badge badge-success">Básico</span></li>
                             <li>
                                 <ul class="nav nav-pills nav-stacked">
                                     <?php foreach ($materias as $materia): ?>
-                                        <li><a href="<?php echo BASE_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -76,19 +70,16 @@
                 </li>
                 <li class="span4">
                     <div class="thumbnail">
-                        <a href="<?php echo BASE_PATH?>html-css/">
-                            <img data-src="holder.js/260x180" src="<?php echo BASE_PATH; ?>furia/imagens/logo-html-css.jpg" alt="">
+                        <a href="<?php echo LINKS_PATH?>html-css/">
+                            <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-html-css.jpg" alt="">
                         </a>
-                        <?php
-                        $where = "WHERE secao = 'html-css' AND nivel = 'basico' ";
-                        $materias = Materia::getObjects($where);
-                        ?>
+                        <?php $materias = Materia::getObjects(Materia::HTML_CSS); ?>
                         <ul class="nav nav-pills nav-stacked">
                             <li><span class="badge badge-success">Básico</span></li>
                             <li>
                                 <ul class="nav nav-pills nav-stacked">
                                     <?php foreach ($materias as $materia): ?>
-                                        <li><a href="<?php echo BASE_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -99,12 +90,12 @@
 
             <div class="row">
                 <div class="span12">
-                    <?php include BASE_PATH.COMPONENTES_PATH."face_botao_curtir.php"; ?>
+                    <?php include BASE_PATH.VIEWS_COMP_PATH."face_botao_curtir.php"; ?>
                 </div><!-- span12 -->
             </div><!-- row -->
         </div><!-- container -->
 
-    <?php include BASE_PATH.COMPONENTES_PATH."rodape.php"; ?>
-    <?php include BASE_PATH.COMPONENTES_PATH."rodape_js.php"; ?>
+    <?php include BASE_PATH.VIEWS_COMP_PATH."rodape.php"; ?>
+    <?php include BASE_PATH.VIEWS_COMP_PATH."rodape_js.php"; ?>
     </body>
 </html>

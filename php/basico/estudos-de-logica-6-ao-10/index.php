@@ -7,14 +7,16 @@
 /**
  * Includes
  */
-require "../../../furia/includes/bs.php";
+require "../../../furia/boot.php";
 
 
 /**
  * Instancia a matéria correta
  */
-$materia = new Materia(6);
-
+define("ESTUDOS_LOG_6_10", 5);
+$materia = new Materia();
+$materia->carregar(Materia::idXML_PHP, ESTUDOS_LOG_6_10);
+$materia->setNivel(Materia::BASICO);
 
 /**
  * View
