@@ -5,7 +5,7 @@ $tree_completa['materias'] = Materia::getObjects($tree_completa['secao']);
                     <div class="furia-tree">
                         <div id="treecontrol" class="hidden-phone">
                             <a href="#" title="Collapse the entire tree below">
-                                <img alt="-" src="<?php echo LINKS_PATH; ?>furia/bibio/treeview/images/minus.gif">Contrair todos
+                                <img alt="-" src="<?php echo LINKS_PATH; ?>furia/biblio/treeview/images/minus.gif">Contrair todos
                             </a>
                             <a href="#" title="Expand the entire tree below">
                                 <img alt="+" src="<?php echo LINKS_PATH; ?>furia/biblio/treeview/images/plus.gif">Expandir todos
