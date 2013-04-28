@@ -1,7 +1,6 @@
 <?php
 defined('DF') or die;
-$tree_completa['where']    = "WHERE secao = '{$tree_completa['secao']}' AND nivel = '{$tree_completa['nivel']}' ";
-$tree_completa['mateiras'] = Materia::getObjects($tree_completa['where']);
+$tree_completa['materias'] = Materia::getObjects($tree_completa['secao']);
 ?>
                     <div class="furia-tree">
                         <div id="treecontrol" class="hidden-phone">
@@ -13,9 +12,9 @@ $tree_completa['mateiras'] = Materia::getObjects($tree_completa['where']);
                         <ul class="filetree" id="browser">
                             <li class="folder"><span class="folder">Básico</span>
                                 <ul>
-                                    <?php foreach($tree_completa['mateiras'] as $materia): ?>
+                                    <?php foreach($tree_completa['materias'] as $materia): ?>
                                         <li>
-                                            <a href="<?php echo BASE_PATH.$materia->url ?>" class="">
+                                            <a href="<?php echo LINKS_PATH.$materia->url ?>" class="">
                                                 <span class="file">
                                                     <?php echo $materia->titulo ?>
                                                 </span>

@@ -25,13 +25,13 @@ if( isset($materia) ){
                 <span class="icon-align-justify icon-white"></span>
             </a>
 
-            <a class="brand" href="<?php echo ROOT_PATH; ?>">DevFuria</a>
+            <a class="brand" href="<?php echo LINKS_PATH; ?>">DevFuria</a>
 
             <div class="nav-collapse">
                 <ul class="nav">
                 <?php foreach($secoes as $secao_path => $secao_label): ?>
                     <li class="<?php echo ($secao_path == $nav_top['secao']) ? "active" : null ; ?>">
-                        <a href="<?php echo BASE_PATH.$secao_path."/"; ?>"><?php echo $secao_label; ?></a>
+                        <a href="<?php echo LINKS_PATH.$secao_path."/"; ?>"><?php echo $secao_label; ?></a>
                     </li>
                 <?php endforeach; ?>
                 </ul>
