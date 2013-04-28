@@ -45,7 +45,7 @@ Em outros casos, podem aparecer diversos erros, mas que foram ocasionados por um
 siginifica a correção de todos os erros descobertos. Veja a tirinha baixo:
 
 <div class="imagem">
-    <img src="../../imagens/tirinha16-debugando.png" alt="Desenho em quadrinhos satirizando as menssagens de debugação!" />
+    <img src="../../imagens/tirinha16-debugando.png" alt="Desenho em quadrinhos satirizando as mensagens de debugação!" />
     <p>Se programar já é uma arte, imagine debugar!!!</p>
     <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/08/19/erro-nao-documentado/">Vida de programador</a></p>
 </div>

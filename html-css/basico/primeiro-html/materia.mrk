@@ -2,16 +2,16 @@ Criando nosso primeiro HTML
 ===========================
 
 
-O site [csszengarden.com](http://www.csszengarden.com/) é notório por seus esforços em promover e divulgar *o poder do CSS unido a um bom
-HTML*. Ele tráz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e desafiaram designers
-solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utiliar o tema/estilo que
-quiser, mas não poderá jamais alterar o HTML e sua estrutura.
+O site [csszengarden.com](http://www.csszengarden.com/) é notório por seus esforços em promover e divulgar *o poder do 
+CSS unido a um bom HTML*. Ele traz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e 
+desafiaram designers solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utiliar o 
+tema/estilo que quiser, mas não poderá jamais alterar o HTML e sua estrutura.
 
 O resultado você confere no site. Design's realmente incríveis foram elaborados. Incríveis não só pela arte mas
 principalmente pela *excelência de técnica utiliza na construção do HTML e do CSS.*
 
-O site possue tradução para o português e também disponibiliza uma lista de links que auxiliarão
-em sua jornada, não deixe de conferir.
+O site possue tradução para o português e também disponibiliza uma lista de links que auxiliarão em sua jornada, não 
+deixe de conferir.
 
 Nós iremos utilizar esse HTML para os próximos exercícios, não vamos focar no design (obviamente)
 vamos exercitar apenas a construção de um bom HTML e algumas estilizações básicas.
@@ -22,7 +22,7 @@ adequado para o conteúdo?*
 Uma página da web, uma página de um portal ou uma página de um sistema web (nosso foco) é composta por algum tipo de
 conteúdo: texto, cores, links, imagens, gráficos, filmes, audio. Mas principalmente texto.
 
-Imagine que você irá construi apenas uma página simples. Você já possue o texto. Na verdade é tudo muito simples, teremos
+Imagine que você irá construi apenas uma página simples. Você já possui o texto. Na verdade é tudo muito simples, teremos
 apenas títulos e parágrafos.
 
 Crie um arquivo chamado "zengarden-sample.html" e comece colando a estrutura básica do HTML.
@@ -51,7 +51,9 @@ Crie um arquivo chamado "zengarden-sample.html" e comece colando a estrutura bá
 
 A um *palavrão* chamado DOCTYPE, eu sei. Em breve falaremos dele.
 
-O título eu mantive o original em inglês, agrora dentro desse arquivo cole o texto abaixo.
+O título eu mantive o original em inglês.
+
+Dentro do arquivo criado, cole o texto abaixo.
 
 Ele será o conteúdo de nossa primeira página (extraído do site [csszengarden.com](http://www.csszengarden.com/) ).
 
