@@ -32,7 +32,7 @@ uma conversa com o computador e seu código fonte:
 Esse é o processo de depuração: ir parando em determinados pontos do código fonte e pedir para o computador mostrar o
 que vai em sua memória.
 
-Acredite, isso não é nada sex.
+Acredite, isso não é nada sexy.
 
 Esse "ponto" ao qual estou me referindo nada mais é do que uma linha de código, por isso que 99% dos editores de código
 enumeram as linhas do arquivo. Seu colega de trabalho do andar de cima te liga é diz: "veja o erro está na linha 37".
@@ -92,7 +92,7 @@ Depuradores (subindo um degrau)
 -------------------------------
 
 Quem desenvolve em JS e utiliza o FireFox para ver o resultado pode contar com o FireBug (já comentei um monte de vez
-sobre esse plugin em matérias enteriores). Se você ainda não tem ele instalado, faça isso imediatamente.
+sobre esse plugin em matérias anteriores). Se você ainda não tem ele instalado, faça isso imediatamente.
 
 O FireBug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
 [https://addons.mozilla.org/pt-br/firefox/addon/firebug](https://addons.mozilla.org/pt-br/firefox/addon/firebug "FireBug")
@@ -112,4 +112,4 @@ na IDE Eclipse.
 Ele parece-se com o do navegador (document.write) mas não se engane, a janela do console tem muitas outras 
 funcionalidades e atrativos.
 
-Em breve, voltarei para presentar brevemnteo FireBug.
+Em breve, voltarei para presentar brevemente o FireBug.
