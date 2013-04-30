@@ -32,7 +32,7 @@
                     <dt_atualizacao>11/02/2013</dt_atualizacao>                    
                 </materia>
                 <materia>
-                    <titulo>Criando nosso primeiro HTML (com video)</titulo>
+                    <titulo>Criando nosso primeiro HTML (com vídeo)</titulo>
                     <url>html-css/basico/primeiro-html/</url>
                     <pasta>html-css/basico/primeiro-html/</pasta>
                     <resumo>O site www.csszengarden.com é notório por seus esforços em promover e divulgar o poder do CSS unido a um bom HTML. Ele tráz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e desafiaram designers solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utilizar o tema/estilo que quiser, mas não poderá jamais alterar o HTML e sua estrutura </resumo>
@@ -66,7 +66,7 @@
                     <dt_atualizacao>08/11/2012</dt_atualizacao>               
                 </materia>
                 <materia>
-                    <titulo>Debugando (depurando)</titulo>
+                    <titulo>Debugando (depurando) [com vídeo]</titulo>
                     <url>js/basico/debugando/</url>
                     <pasta>js/basico/debugando/</pasta>
                     <resumo>"Precisamos debugar o programa para sabermos onde [e como] está ocorrendo o erro". Essa frase faz parte do dia a dia do desenvolvedor e, não raro, ela tira o sono de muita gente.</resumo>
