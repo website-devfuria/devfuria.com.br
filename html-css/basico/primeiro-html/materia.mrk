@@ -111,7 +111,7 @@ Para quê participar? Para obter reconhecimento, inspiração, e um recurso ao q
 
 Nós gostaríamos de ver o máximo possível de CSS1. O uso de CSS2 deve ser limitado aos elementos suportados pelos navegadores em uso atualmente. O css Zen Garden existe para demonstrar o uso prático e funcional do padrão CSS e não para mostrar os truques mais avançados ainda somente disponíveis para os 2% do público que usa navegadores mais modernos. O único requerimento real, entretanto, é o seu CSS valide.
 
-Infelizmente, criar o design dessa maneira colocará em evidência as falhas nas várias implementações CSS disponíveis atualmente. Diferentes navegadores comportam-se de maneira distinta quanto a alguns elementos, mesmo quando o CSS é válido. Isso pode se converter em uma fonte de frustrações, principalmente quando uma correção para um navegador atrapalha outro. Veja a página de recursos para algumas soluções disponíveis. Compatibilidade total com todos navegadores ainda é um sonho e nós não esperamos que você consiga um design perfeitamente preciso até o último pixel em todas as plataformas. Mesmo assim, teste em todas que conseguir. Se o seu design não funciona pelo menos no IE5+/Win e Mozilla (que compõem 90% da população de navegadores), as chances são grandes de que nós não o aceitaremos.
+Infelizmente, criar o design dessa maneira colocará em evidência as falhas nas várias implementações CSS disponíveis atualmente. Diferentes navegadores comportam-se de maneira distinta quanto a alguns elementos, mesmo quando o CSS é válido. Isso pode se converter em uma fonte de frustrações, principalmente quando uma correção para um navegador atrapalha outro. Veja a página de recursos para algumas soluções dyum install http://winff.org/docs/rpm/fedora/winff-repo-1.0-1.noarch.rpmisponíveis. Compatibilidade total com todos navegadores ainda é um sonho e nós não esperamos que você consiga um design perfeitamente preciso até o último pixel em todas as plataformas. Mesmo assim, teste em todas que conseguir. Se o seu design não funciona pelo menos no IE5+/Win e Mozilla (que compõem 90% da população de navegadores), as chances são grandes de que nós não o aceitaremos.
 
 Nós pedimos que você envie ilustrações originais. Por favor, respeite as leis de copyright. Mantenha o material questionável ao mínimo: nudez artística é aceitável; pornografia explícita será rejeitada imediatamente.
 
@@ -159,5 +159,6 @@ Assista ao vídeo da solução que acompanha esta matéria.
 Obs: A voz doce ao fundo é minha querida Joana.
 
 <div class="imagem">
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/2tvFZwhIPDE?list=PL4-j1jp_g6DuRtIPWvGv4QvxPcSDjthmB" frameborder="0" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="http://www.youtube.com/embed/IMswx5wcqA0" frameborder="0" allowfullscreen>
+	</iframe>
 </div>
