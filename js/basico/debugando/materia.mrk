@@ -112,4 +112,16 @@ na IDE Eclipse.
 Ele parece-se com o do navegador (document.write) mas não se engane, a janela do console tem muitas outras 
 funcionalidades e atrativos.
 
-Em breve, voltarei para presentar brevemente o FireBug.
+<span style="text-decoration:line-through;">Em breve, voltarei para apresentar brevemente o FireBug.</span>
+
+Já voltei. 
+
+Cada vídeo que eu gravo é uma aventura! No primeiro, havia a voz da minha pequena grande Joana, neste eu
+estava com gripe e minha voz (que já é baixa) ficou super abafada. Tentei amplificar mais consegui apenas alguns chiados.
+
+De qualquer forma, vale a pena assistir ao video. É uma breve demonstração do Firebug e das funcionalidades comentadas.
+
+<div class="imagem">
+	<iframe width="560" height="315" src="http://www.youtube.com/embed/IP8xDTGkfjc" frameborder="0" allowfullscreen></iframe>
+</div>
+
