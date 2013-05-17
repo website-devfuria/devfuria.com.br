@@ -26,7 +26,6 @@ var day = parseInt(matches[1], 10);
 return valid;
 }
 
-
 validateDate: function(value){
 var valid = false;
         // Define uma expressão regular para validar se a data informada está
