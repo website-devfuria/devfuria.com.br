@@ -8,7 +8,9 @@ var hoje = new Date();
         $("#dt_validade").val(hoje);
 }
 
-
+/*
+ * http://www.michaelbenford.net/2010/05/validacao-de-datas-e-horas-em-javascript/
+ */
 var validateDate = function(value) {
 var valid = false;
         // Define uma expressão regular para validar se a data informada está
@@ -25,24 +27,6 @@ var day = parseInt(matches[1], 10);
         }
 return valid;
 }
-
-validateDate: function(value){
-var valid = false;
-        // Define uma expressão regular para validar se a data informada está
-        // no formato nn/nn/nnnn, onde n é um número entre 0 e 9
-        var regex = new RegExp("^([0-9]{2})/([0-9]{2})/([0-9]{4})$");
-        var matches = regex.exec(value);
-        if (matches != null){
-var day = parseInt(matches[1], 10);
-        var month = parseInt(matches[2], 10) - 1;
-        var year = parseInt(matches[3], 10);
-        var date = new Date(year, month, day, 0, 0, 0, 0);
-        valid = date.getFullYear() == year && date.getMonth() == month &&
-        date.getDate() == day;
-        }
-return valid;
-        }
-
 
 
 
