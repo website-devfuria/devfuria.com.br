@@ -35,7 +35,7 @@
                 <li class="span4">
                     <div class="thumbnail">
                         <a href="<?php echo LINKS_PATH?>php/">
-                            <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-php.jpeg" alt="">
+                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-php.jpeg" alt="php">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::PHP); ?>
                         <ul class="nav nav-pills nav-stacked">
@@ -53,7 +53,7 @@
                 <li class="span4">
                     <div class="thumbnail" >
                         <a href="<?php echo LINKS_PATH?>js/">
-                            <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-javascript.png" alt="">
+                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-javascript.png" alt="javascript">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::JS); ?>
                         <ul class="nav nav-pills nav-stacked">
@@ -71,7 +71,7 @@
                 <li class="span4">
                     <div class="thumbnail">
                         <a href="<?php echo LINKS_PATH?>html-css/">
-                            <img data-src="holder.js/260x180" src="<?php echo LINKS_PATH; ?>furia/imagens/logo-html-css.jpg" alt="">
+                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-html-css.jpg" alt="html e css">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::HTML_CSS); ?>
                         <ul class="nav nav-pills nav-stacked">
