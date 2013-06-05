@@ -13,7 +13,7 @@ var furia = {
             $.ajax({
                 type: "POST",
                 dataType: 'json',
-                url: DF.base_path + "furia/ajax/feedback-form-action-ajax.php",
+                url: DF.base_path + "furia/feedback-form-action-ajax.php",
                 data: dataToSend,
                 success: function(erro){
                     if( ! erro ){
