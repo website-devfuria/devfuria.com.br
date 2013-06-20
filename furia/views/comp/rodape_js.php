@@ -1,7 +1,7 @@
 <?php defined('DF') or die; ?>
 <script type="text/javascript">
 var DF = {
-    base_path: "<?php echo BASE_PATH; ?>"
+    base_path: "<?php echo ROOT_PATH; ?>"
 }
 </script>
 <script src="<?php echo LINKS_PATH; ?>furia/js/ga.js" type="text/javascript"></script>
