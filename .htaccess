@@ -1,0 +1,14 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^php\/nivel\-zero\/instalando\-o\-ambiente\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/basico\/instalando\-o\-ambiente\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^old\/php\/nivel\-zero\/logica\-de\-programacao\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/basico\/logica\-de\-programacao\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^old\/?$ "http\:\/\/www\.devfuria\.com\.br\/" [R=301,L]
+
