@@ -1,9 +1,10 @@
 Code - A lâmpada
 =================
 
-Nessa matéria utilizarei o apoio da ferramenta Codepen, ela me permite escrever um pequeno trecho de código o compartilhar ele aqui no devuria. Espero que isso facilite a didática.
+Nessa matéria utilizarei o apoio da ferramenta Codepen, ela me permite escrever um pequeno trecho de código e compartilhar
+ele aqui no devfuria. Espero que isso facilite a didática.
 
-Clique nas abs e o code pen mostra as partes separadamnete: HTML, JS e resultado.
+Clique nas abas e o Codepen mostra as partes separadamnete: HTML, JS e resultado.
 
 Experimente:
 
@@ -38,13 +39,16 @@ Mãos a obra
 
 Vamos revisitar o pequeno código da lámpada que vimos na [primeira matéria de JS ](http://www.devfuria.com.br/js/basico/intro/"JS|Intro")
 
-Primeiro, não posso deixar de comentar que programar no lado cliente é uma tarefa que exige muita criatividade. Esse exemplo ilustra bem isso.
+Primeiro, não posso deixar de comentar que programar no lado cliente é uma tarefa que exige muita criatividade. Esse 
+exemplo ilustra bem isso.
 
 O objetivo do script é dar a sensação de que estamos apagando e acendendo uma lâmpada.
 
 Você imagina como faremos isso funcionar?
 
-Utilizaresmos duas imagens: uma com a lâmpada apagada e outra com a luz acessa. Quando clicamos na imagem acessa o script deve trocar pela imagem apagada, quando clicamos na imagem apagada o script troca pela imagem acesa. Veja as figuras abaixo:
+Utilizaresmos duas imagens: uma com a lâmpada apagada e outra com a luz acessa. Quando clicamos na imagem acessa o
+script deve trocar pela imagem apagada, quando clicamos na imagem apagada o script troca pela imagem acesa. Veja as
+figuras abaixo:
 
 <div class="imagem">
     <img src="../../imagens/pic_bulboff.gif" alt="lámpada apagada" />
@@ -84,7 +88,8 @@ Ao clicar na lâmpada, ela (na verdade o link) aciona a função que alterna ent
 
 Deu certo? Ótimo.
 
-Deu errado? Ótimo também, aproveite para olhar a aba Network ("redes" em português) do Firebug para ver qual arquivo está faltando, provavelmente é isso que está errado.
+Deu errado? Ótimo também, aproveite para olhar a aba Network ("redes" em português) do Firebug para ver qual arquivo 
+está faltando, provavelmente é isso que está errado.
 
 
 
@@ -97,7 +102,8 @@ Agora recarregue a página (F5).
 
 Apareceu alguma mensagem  no console? Não? Maravilha, "parece" que não temos erros no JS.
 
-OPs, você não conhece o Firebug? Pare tudo e leia a matéria anterior a esta: [Debugando](http://www.devfuria.com.br/js/basico/debugando/ "Matéria: Debugando o JS"). Vai lá que eu te espero.
+OPs, você não conhece o Firebug? Pare tudo e leia a matéria anterior a esta: 
+[Debugando](http://www.devfuria.com.br/js/basico/debugando/ "Matéria: Debugando o JS"). Vai lá que eu te espero.
 
 
 Agora vamos aproveitar e estabelecer a comunicação: no arquivo "codigo.js" insira a seguinte linha
@@ -128,7 +134,8 @@ Se você conseguiu, sua tela deve parecer-se com a minha:
     <img src="../../imagens/firebug-se-comunicano.png" alt="Print screen da minha tela" />
 </div>
 
-Desse ponto em diante eu explicarei partes do ćodigo, caso fique na dúvida, tente descobrir o valor das variáveis através do "console.log()"
+Desse ponto em diante eu explicarei partes do ćodigo, caso fique na dúvida, tente descobrir o valor das variáveis 
+através do "console.log()"
 
 Experimente (teste) tudo:
 
@@ -160,15 +167,21 @@ element.onclick = function() {
 
 ### getElementById()
 
-Uma coisa que fazemos com muita frequência em JS é referenciar (ou talvez a palavra mais adequada seja *buscar*) elementos HTML. Estamos buscando um elemento na árvore DOM (Document Object Model), mas isso comentaremos em outro momento.
+Uma coisa que fazemos com muita frequência em JS é referenciar (ou talvez a palavra mais adequada seja *buscar*) 
+elementos HTML. Estamos buscando um elemento na árvore DOM (Document Object Model), mas isso comentaremos em outro momento.
 
 Mas é exatamente isso o que estamos fazendo com o a função *getElementById()*.
 
-Ela buscará um elemento HTML através da propriedade "id" desse elemento, ou seja, é necessário ter o elemento HTML para que a função funcione corretamente.
+Ela buscará um elemento HTML através da propriedade "id" desse elemento, ou seja, é necessário ter o elemento HTML para
+ que a função funcione corretamente.
 
-Se a função encontrar o elemento procurado, ela retornará esse elemento. Então atribuimos o resultado a uma variável para podermos manipular essa variável. Isso tudo acontece na linha 01 do código (veja o codepen no início da matéria), atribuímos o resultado de função na variável *elemento* (poderia ser qualquer outro nome, obviamente).
+Se a função encontrar o elemento procurado, ela retornará esse elemento. Então atribuimos o resultado a uma variável 
+para podermos manipular essa variável. Isso tudo acontece na linha 01 do código (veja o codepen no início da matéria),
+atribuímos o resultado de função na variável *elemento* (poderia ser qualquer outro nome, obviamente).
 
-Caso o elemnto HTML não exista, a função não dispara erro algum, ela é silenciosa. Ela apenas retornará "null", esse será o valor que atribuiremos a variável "elemento". Então, na linha 02, quando usamos o método "onclick" o JS dispara o erro: 
+Caso o elemnto HTML não exista, a função não dispara erro algum, ela é silenciosa. Ela apenas retornará "null", esse 
+será o valor que atribuiremos a variável "elemento". Então, na linha 02, quando usamos o método "onclick" o JS dispara 
+o erro: 
 
 	TypeError: element is null
 
@@ -181,7 +194,8 @@ Caso o elemnto HTML não exista, a função não dispara erro algum, ela é sile
 
 E se tivéssemos vários elementos com o mesmo id? Hum! Me responda você.
 
-Porque seu HTML possue vários elemento id quando cada deveria aparecer apenas uma única vez (alias, essa é a especificação o HTML)?
+Porque seu HTML possue vários elemento id quando cada deveria aparecer apenas uma única vez (alias, essa é a 
+especificação o HTML)?
 
 
 
@@ -190,14 +204,16 @@ Porque seu HTML possue vários elemento id quando cada deveria aparecer apenas u
 
 E esse *document* antes da função, o que siginifica?
 
-Esse objeto faz parte do DOM, ele represneta o documento ativo, antes dele (um nível acima) temos o objeto *window* e o correto era
-escrever assim:
+Esse objeto faz parte do DOM, ele represneta o documento ativo, antes dele (um nível acima) temos o objeto *window* e o
+correto era escrever assim:
 
 	window.document.getElementById();
 
-...mas isso é verboso demais e o obejto "window" pôde ser suprimido, mas ele ainda existe nos navegadores (muito provavelmente para garantir a retocompatibilidade).
+...mas isso é verboso demais e o obejto "window" pôde ser suprimido, mas ele ainda existe nos navegadores (muito 
+provavelmente para garantir a retocompatibilidade).
 
-Para simplificar as coisas, vamos encarar o document como um objeto importante e que contém funções importantes como a que acabamos de aprender.
+Para simplificar as coisas, vamos encarar o document como um objeto importante e que contém funções importantes como a 
+que acabamos de aprender.
 
 
 
@@ -245,7 +261,8 @@ mostrar_alerta();
 </pre>
 </div>
 
-Para dar uma charme no estilo da codificação, aplicamos uma quebra de linha (ENTER) após a primeira chave da função, veja:
+Para dar uma charme no estilo da codificação, aplicamos uma quebra de linha (ENTER) após a primeira chave da função, 
+veja:
 
 <div class="code">
 <h6>JS</h6>
