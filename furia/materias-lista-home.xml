@@ -32,7 +32,7 @@
                     <dt_atualizacao>11/02/2013</dt_atualizacao>                    
                 </materia>
                 <materia>
-                    <titulo>Criando nosso primeiro HTML (com vídeo)</titulo>
+                    <titulo>Criando nosso primeiro HTML [com vídeo]</titulo>
                     <url>html-css/basico/primeiro-html/</url>
                     <pasta>html-css/basico/primeiro-html/</pasta>
                     <resumo>O site www.csszengarden.com é notório por seus esforços em promover e divulgar o poder do CSS unido a um bom HTML. Ele tráz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e desafiaram designers solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utilizar o tema/estilo que quiser, mas não poderá jamais alterar o HTML e sua estrutura </resumo>
@@ -73,6 +73,15 @@
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>10/04/2013</dt_criacao>
                     <dt_atualizacao>30/04/2013</dt_atualizacao>                    
+                </materia>                
+                <materia>
+                    <titulo>Code- A Lâmpada</titulo>
+                    <url>js/basico/code-lampadas/</url>
+                    <pasta>js/basico/code-lampadas/</pasta>
+                    <resumo>Vamos revisitar o pequeno código da lámpada que vimos na primeira matéria de JS. Primeiro, não posso deixar de comentar que programar no lado cliente é uma tarefa que exige muita criatividade. Esse exemplo ilustra bem isso. O objetivo do script é dar a sensação de que estamos apagando e acendendo uma lâmpada.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/07/2013</dt_criacao>
+                    <dt_atualizacao>05/07/2013</dt_atualizacao>                    
                 </materia>                
             </basico>
         </nivel>
