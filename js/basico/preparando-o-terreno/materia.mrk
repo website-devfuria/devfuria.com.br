@@ -20,6 +20,16 @@ OK. O que acabamos de fazer foi separar as obrigações. Com isso, acabamos de p
 camadas*. No caso, temos 3 camadas: conteúdo(HTML), apresentação(CSS) e comportamento(JS).
 
 
+<div class="imagem">
+    <img src="../../imagens/camadas.gif" alt="camadas de uma aplicação" />
+    <p>Separando as obrigações! (programando em camadas)</p>
+    <p>Fonte:
+        <a href="http://www.thiagotpc.com/entech/#slide-27">Slide em www.thiagotpc.com</a>
+    </p>
+</div>
+
+
+
 Aonde colocar o Javascript ?
 -----------------------------
 
@@ -151,4 +161,4 @@ A questão se JS é ou não OOP ainda causa certa polêmica, mas segundo Douglas
 > herança orientada a classe, mas tem herança orientada a protótipo.
 
 
-*Na próxima matéria veremos o básico do JS.*
+*Na próxima matéria veremos como debugar (depurar) o JS.*
