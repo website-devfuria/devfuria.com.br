@@ -125,3 +125,17 @@ De qualquer forma, vale a pena assistir ao video. É uma breve demonstração do
 	<iframe width="560" height="315" src="http://www.youtube.com/embed/IP8xDTGkfjc" frameborder="0" allowfullscreen></iframe>
 </div>
 
+
+Como saber se o código não está com problemas ?
+----------------------------------------------------
+
+Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a linguágem é interpretada, estou me referindo ao código que demosntra erros. *E como demostrar os erros?*.
+
+Quando executamos o arquivo (seja .html ou .php ou qualquer outra linguagem que vocẽ use) os erros podem não aparecerem, em outras palavra, alguns erros são "timidos". Para encorajá-los a sair da "toca" é preciso utilizar o console.log() e, obviamente, manter o firebug aberto.
+
+O teste mais básico que podemos fazer em um script JS é abrir o HTML, ligar o Firebug (acione a tecla F12), escolha a aba "console" e
+recarrega a página con a tecla F5 ( à vezes precisamos executar um CTRl + F5, isso força a atualização).
+
+Se não aparecer nenhuma mensagem de erro, ótimo! Seu script está correto (pelo menos do ponto de vista da sintaxe).
+
+
