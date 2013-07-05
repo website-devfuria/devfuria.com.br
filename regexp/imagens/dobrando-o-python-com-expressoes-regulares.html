@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<head>
+				<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Dobrando o Python Com Expressões Regulares | Mind Bending</title>
+		
+				<script> jvcf7_loading_url= "http://mindbending.org/pt/wp-content/plugins/contact-form-7/images/ajax-loader.gif"</script><style>.wpcf7-form span.wpcf7-not-valid-tip{ display:none !important;}.wpcf7-form label.error{color:#900; font-size:11px; float:none;}.wpcf7-form input.error, .wpcf7-form select.error, .wpcf7-form textarea.error{border-bottom:2px solid #900;outline: none;}</style>
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="author" href="https://plus.google.com/b/102063745956138544914/102063745956138544914" />
+	<link rel="canonical" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares" />
+	<meta name="description" content="Dando continuidade no assunto de Expressões Regulares, hoje vou mostrar em que casos o uso de uma expressão regular supera (e muito) um trecho (relativamente complexo) de código Python." />
+	<meta name="keywords" content="endereço IP,expressão regular,Python,regexp,mind,bending" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Dobrando o Python Com Expressões Regulares | Mind Bending" />
+	<meta property="og:description" content="Dando continuidade no assunto de Expressões Regulares, hoje vou mostrar em que casos o uso de uma expressão regular supera (e muito) um trecho (relativamente complexo) de código Python." />
+	<meta property="og:url" content="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares" />
+	<meta property="og:image" content="http://mindbending.org/pt/wp-content/uploads/sites/4/2011/08/regex.jpg" />
+	<meta property="article:published_time" content="2011-09-05" />
+	<meta property="article:modified_time" content="2013-04-04" />
+	<meta property="article:author" content="http://mindbending.org/pt/author/mind-bending" />
+	<meta property="article:section" content="Python" />
+	<meta property="article:tag" content="endereço IP" />
+	<meta property="article:tag" content="expressão regular" />
+	<meta property="article:tag" content="Python" />
+	<meta property="article:tag" content="regexp" />
+	<meta property="og:site_name" content="Mind Bending - Português" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:creator" content="@mind_bend" />
+	<meta name="twitter:site" content="@mind_bend" />
+<!-- /SEO Ultimate -->
+
+<link rel="alternate" type="application/rss+xml" title="Mind Bending - Português &raquo; Feed" href="http://mindbending.org/pt/feed" />
+<link rel="alternate" type="application/rss+xml" title="Mind Bending - Português &raquo; Comments Feed" href="http://mindbending.org/pt/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Mind Bending - Português &raquo; Dobrando o Python Com Expressões Regulares Comments Feed" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares/feed" />
+<link rel='stylesheet' id='mvt_css_file-css'  href='http://mindbending.org/pt/wp-content/plugins/my-videotag/css/mvt-styles.css?ver=1.6.8' type='text/css' media='all' />
+<link rel='stylesheet' id='cf5_rps_h_carousel_css-css'  href='http://mindbending.org/pt/wp-content/plugins/related-posts-slider/formats/h_carousel/styles/plain/style.css?ver=2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://mindbending.org/pt/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='easy-fancybox-css-css'  href='http://mindbending.org/pt/wp-content/plugins/easy-fancybox/easy-fancybox.css.php?ver=1.3.5' type='text/css' media='screen' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://mindbending.org/pt/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<link rel='stylesheet' id='tw-bootstrap-css'  href='http://mindbending.org/pt/wp-content/themes/the-bootstrap/css/bootstrap.min.css?ver=2.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='the-bootstrap-css'  href='http://mindbending.org/pt/wp-content/themes/the-bootstrap/style.min.css?ver=0.0.1' type='text/css' media='all' />
+<style type='text/css'>
+body > .container{margin-top:68px;}@media(min-width: 980px){body > .container{margin-top:58px;}}
+</style>
+<link rel='stylesheet' id='the-bootstrap-child-css'  href='http://mindbending.org/pt/wp-content/themes/the-bootstrap-mb-child/style.css?ver=3.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='EG-Series_stylesheet-css'  href='http://mindbending.org/pt/wp-content/plugins/eg-series/css/eg-series.css?ver=3.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sharedaddy-css'  href='http://mindbending.org/pt/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css?ver=2.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://mindbending.org/pt/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.4.4.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mindbending.org/pt/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://mindbending.org/pt/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Que Venha A VimConf!' href='http://mindbending.org/pt/que-venha-a-vimconf' />
+<link rel='next' title='Tutorial de PyGI em Video 3' href='http://mindbending.org/pt/tutorial-de-pygi-em-video-3' />
+<meta name="generator" content="WordPress 3.5.2" />
+<link rel='shortlink' href='http://goo.gl/f3VCM' />
+<style type="text/css">
+.myvideotag{
+border:1px solid #CCCCCC;margin: 0 auto 10px;padding: 5px;
+}
+</style>
+	    <script type="text/javascript"> 
+		jQuery(document).ready(function() {
+			jQuery('#rps_hcarousel').cf5Rps({
+				items: {
+					visible: 4				},
+				scroll: {
+					items: 4,
+					pauseOnHover: true
+				},
+				prev: {	
+					button	: "#rps_prev",
+					key		: "left"
+				},
+				next: { 
+					button	: "#rps_next",
+					key		: "right"
+				},
+				auto: 4000
+			});
+		});
+	</script> 
+		<link type="text/css" rel="stylesheet" href="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/styles/shCore.css" />
+	<link type="text/css" rel="stylesheet" href="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/styles/shThemeDefault.css" />
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shCore.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushBash.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushCpp.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushCSharp.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushDelphi.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushDiff.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushGroovy.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushPerl.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushPhp.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushPlain.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushPython.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushRuby.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushScala.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushSql.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushVb.js"></script>
+	<script type="text/javascript" src="http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/shBrushXml.js"></script>
+	<script type="text/javascript">		
+		SyntaxHighlighter.config.clipboardSwf = 'http://mindbending.org/pt/wp-content/plugins/syntax-highlighter-and-code-prettifier/scripts/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+	<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #EFEFEF; }
+</style>
+	<!--[if lt IE 9]>
+		<script src="http://mindbending.org/pt/wp-content/themes/the-bootstrap/js/html5shiv.min.js" type="text/javascript"></script>
+		<script src="http://mindbending.org/pt/wp-content/themes/the-bootstrap/js/respond.min.js" type="text/javascript"></script>
+	<![endif]-->
+	<!-- Google Analytics Tracking by Google Analyticator 6.4.4.3: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-38341911-2']);
+        _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google 
+        
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+	<!-- Easy FancyBox 1.5.0 using FancyBox 1.3.5 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	var fb_timeout = null;
+	var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+	var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'transitionIn' : 'elastic', 'easingIn' : 'easeOutBack', 'transitionOut' : 'elastic', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false, 'titleShow' : true, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+	}
+	/* ]]> */
+	</script>
+	<style type="text/css">.fancybox-hidden{display:none}.rtl #fancybox-left{left:auto;right:0px}.rtl #fancybox-right{left:0px;right:auto}.rtl #fancybox-right-ico{background-position:-40px -30px}.rtl #fancybox-left-ico{background-position:-40px -60px}.rtl .fancybox-title-over{text-align:right}.rtl #fancybox-left-ico,.rtl #fancybox-right-ico{right:-9999px}.rtl #fancybox-right:hover span{right:auto;left:20px}.rtl #fancybox-left:hover span{right:20px}#fancybox-img{max-width:none;max-height:none}</style>
+	
+<!--
+				<script type="text/javascript">
+		jQuery(document).ready(function(){
+			// wider primary
+			jQuery('.span8').addClass('span9');						
+			jQuery('.span8').removeClass('span8');
+			// narrower secondary				
+			jQuery('.span4').addClass('span3');						
+			jQuery('.span4').removeClass('span4');
+		});
+		</script>
+-->
+	</head>
+	
+	<body class="single single-post postid-1826 single-format-standard custom-background content-sidebar">
+		<img src="http://mindbending.org/en/wp-content/uploads/sites/3/2013/03/new-header-logo2.png" alt="Mind Bending Blog Header" class="aligncenter" style="margin-top: 55px; max-width: 95%;"/>
+		<div class="container">
+			<div id="page" class="hfeed row">
+								<header id="branding" role="banner" class="span12">
+					<nav class="subnav clearfix"><ul id="menu-languages" class="nav nav-pills pull-right"><li id="menu-item-3193" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3193"><a title="English Language" href="http://mindbending.org/en">ENGLISH</a></li>
+<li id="menu-item-3194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3194"><a title="Idioma Português" href="http://mindbending.org/pt">PORTUGUÊS</a></li>
+</ul></nav>					<!--
+					<hgroup>
+						<h1 id="site-title">
+							<a href="http://mindbending.org/pt/" title="Mind Bending &#8211; Português" rel="home">
+								<span>Mind Bending &#8211; Português</span>
+							</a>
+						</h1>
+						<h2 id="site-description">Mining Bits and Knowledge</h2>
+					</hgroup>
+-->
+					
+					
+					<nav id="access" role="navigation">
+						<h3 class="assistive-text">Main menu</h3>
+						<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+						<div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+												<div class="navbar navbar-fixed-top navbar-inverse">
+							<div class="navbar-inner">
+								<div class="container" style="width: 98%;">
+									<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+									<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</a>
+																		<a class="brand" href="http://mindbending.org/pt/">Mind Bending Blog</a>
+									<!--
+									<a class="brand" href="#"><img src="http://mindbending.org/en/wp-content/uploads/sites/3/2013/02/mindbending-nav-logo.png"></img>Mind Bending Blog</a>
+									-->
+									<div class="nav-collapse">
+									<ul class="nav">
+									    <li class="divider-vertical"></li>
+									</ul>
+										<div class="menu-mainmenu-container"><ul id="menu-mainmenu" class="nav"><li id="menu-item-3199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3199"><a title="Página Principal do MIND BENDING" href="http://mindbending.org/pt/">HOME</a></li>
+<li id="menu-item-3211" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3211 dropdown" data-dropdown="dropdown"><a title="Escolha o Idioma de sua Preferência" href="http://mindbending.org" class="dropdown-toggle" data-toggle="dropdown">IDIOMA <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3178"><a title="Idioma Inglês" href="http://mindbending.org/en/">Inglês</a></li>
+	<li id="menu-item-3179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3179"><a title="Idioma Português" href="http://mindbending.org/pt/">Portugês</a></li>
+</ul>
+</li>
+<li id="menu-item-3105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3105 dropdown" data-dropdown="dropdown"><a title="Projetos MIND BENDING" href="http://mindbending.org/pt/projetos" class="dropdown-toggle" data-toggle="dropdown">PROJETOS <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3107"><a title="Projeto BEHOLDER" href="http://mindbending.org/pt/projetos/beholder">Beholder</a></li>
+	<li id="menu-item-3108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3108"><a title="Projeto TIAMAT" href="http://mindbending.org/pt/projetos/tiamat">Tiamat</a></li>
+	<li id="menu-item-3106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3106"><a title="Projeto USBMANAGER" href="http://mindbending.org/pt/projetos/usbmanager">USBManager</a></li>
+</ul>
+</li>
+<li id="menu-item-3502" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3502 dropdown" data-dropdown="dropdown"><a title="SERIES de Artigos" href="#" class="dropdown-toggle" data-toggle="dropdown">SERIES <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3503" class="menu-item menu-item-type-taxonomy menu-item-object-series menu-item-3503"><a href="http://mindbending.org/pt/series/dobrando-o-gnome-keyring-com-o-python">Dobrando o Gnome Keyring com o Python</a></li>
+	<li id="menu-item-3504" class="menu-item menu-item-type-taxonomy menu-item-object-series menu-item-3504"><a href="http://mindbending.org/pt/series/destaques-da-pycon-2011">Destaques da PyCon 2011</a></li>
+	<li id="menu-item-3505" class="menu-item menu-item-type-taxonomy menu-item-object-series menu-item-3505"><a href="http://mindbending.org/pt/series/python-e-udisks">Python e UDisks</a></li>
+	<li id="menu-item-3506" class="menu-item menu-item-type-taxonomy menu-item-object-series menu-item-3506"><a href="http://mindbending.org/pt/series/instalando-e-configurando-o-arch-linux">Instalando e Configurando o Arch Linux</a></li>
+</ul>
+</li>
+<li id="menu-item-3104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3104"><a title="Saiba mais sobre Mim" href="http://mindbending.org/pt/sobre-mim">SOBRE</a></li>
+<li id="menu-item-3200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3200"><a title="Contato MIND BENDING" href="http://mindbending.org/pt/contato/">CONTATO</a></li>
+</ul></div>	<form id="searchform" class="navbar-search pull-right" method="get" action="http://mindbending.org/pt/">
+				<i class="icon-search " style="position: relative; left: 28px; top: 2px;"></i>
+				<label for="s" class="assistive-text hidden">Search</label>
+				<input type="search" class="search-query" name="s" id="s" style="padding-left: 29px;" placeholder="Search" />
+				</form>								    </div>
+								</div>
+							</div>
+						</div>
+											</nav><!-- #access -->
+					<!--?php if ( function_exists('alienship_breadcrumbs') && !is_front_page() ) { alienship_breadcrumbs(); } ?-->
+					<div class="breadcrumb"><a href="http://mindbending.org/pt"><i class="icon-home"></i></a> <span class="chevron">&#8250;</span> <a href="http://mindbending.org/pt/linguagens-de-programacao" title="View all posts in Linguagens de Programação">Linguagens de Programação</a> <span class="chevron">&#8250;</span> <a href="http://mindbending.org/pt/linguagens-de-programacao/python" title="View all posts in Python">Python</a> <span class="chevron">&#8250;</span> Dobrando o Python Com Expressões Regulares</div>										</header><!-- #branding -->
+
+
+<section id="primary" class="span8">
+	
+		<div id="content" role="main">
+		<article id="post-1826" class="post-1826 post type-post status-publish format-standard hentry category-python tag-endereco-ip tag-expressao-regular tag-python tag-regexp">
+		
+	<header class="page-header">
+		<h1 class="entry-title">Dobrando o Python Com Expressões Regulares</h1>		<div class="entry-meta"><i class="icon-calendar" title="Published date"></i> <a href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares" title="10:00" rel="bookmark"><time class="entry-date" datetime="2011-09-05T10:00:03+00:00" pubdate>05/09/2011</time></a><span class="sep"> </span><span class="by-author">  <i class="icon-user"></i> <span class="author vcard"><a class="url fn n" href="http://mindbending.org/pt/author/mind-bending" title="View all posts by Magnun" rel="author">Magnun</a></span></span>		 <i class="icon-folder-open"></i> <a href="http://mindbending.org/pt/linguagens-de-programacao/python" title="View all posts in Python" rel="category tag">Python</a>		<span class="comments-link">
+			<a href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares#comments" title="Comment on Dobrando o Python Com Expressões Regulares"> <i class="icon-comment"></i> <strong>6</strong></a>		</span>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+<!-- INICIO DOS LINKS DE TRADUCAO -->
+                    			<div class="alert alert-success">
+                        <img title="en-us" src="http://mindbending.org/wp-content/uploads/2013/02/en-us.gif" alt="en-us" />&nbsp;&nbsp;This post is also available in <a href="http://mindbending.org/en/bending-python-with-regular-expressions/" target="_self">English </a>
+                        </div>
+                                                            <!-- FIM DOS LINKS DE TRADUCAO -->
+
+
+	<div class="entry-content clearfix">
+		<p style="text-align:justify">
+Dando continuidade no assunto de <a href="http://mindbending.org/pt/brincando-expressoes-regulares-no-python" target="_blank">Expressões Regulares</a>, hoje vou mostrar em que casos o uso de uma expressão regular supera (e muito) um trecho (relativamente complexo) de código Python.
+</p>
+<figure id="attachment_1782" class="wp-caption thumbnail aligncenter" style="width: 800px;">
+				<a class="" href="http://mindbending.org/pt/wp-content/uploads/sites/4/2011/08/regex.jpg"><img src="http://mindbending.org/pt/wp-content/uploads/sites/4/2011/08/regex.jpg" alt="RegEx" width="800" height="533" class="size-full wp-image-1782" /></a>
+				<figcaption class="wp-caption-text">Expressões Regulares</figcaption>
+			</figure>
+<p style="text-align:justify">
+Respirem fundo e vamos lá&#8230;
+</p>
+<p><span id="more-1826"></span></p>
+<h2>Contexto</h2>
+<p style="text-align:justify">
+Para este exemplo vou usar um contexto simples: uma aplicação que valida endereços IPs. Caso alguém esteja se perguntando, sim, este é um exemplo real. Em uma de minhas aplicações preciso verificar se um dado digitado pelo usuário é um endereço IP ou não.
+</p>
+<p style="text-align:justify">
+Abaixo irei mostrar diversos trechos de código, caso você queira testá-los, todos devem ser inseridos em um mesmo arquivo. No meu caso utilizei um arquivo chamado <code>valida_ip.py</code>.
+</p>
+<h2>Entendendo O Código</h2>
+<p style="text-align:justify">
+Todo o código está bem comentado e documentado, mas mesmo assim vou explicar alguns trechos para facilitar o entendimento.
+</p>
+<p style="text-align:justify">
+Vamos ver o &#8220;cabeçalho&#8221; do nosso programa:
+</p>
+<pre class="brush: py">
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+'''
+Programa responsável por realizar testes de performance na detecção e análise
+de endereços IPs utilizando códigos de Python puro e expressões regulares.
+
+Autor: Magnun Leno
+Licença: GPLv3
+Nome do Arquivo: valida_ip.py
+'''
+
+# Importando módulo de expressões regulares
+import re
+# Importando módulo "temporizador" de execuções
+import timeit
+
+# RegEx responsável por analisar o formato de um IP
+ip_re = re.compile(r'^d{1,3}.d{1,3}.d{1,3}.d{1,3}$')
+
+# Tupla que contém os dados a serem analisados (IPs válidos ou não)
+dados = (
+        '10.0.2.1',
+        '192.168.1.1',
+        'endereço.ip.incorreto',
+        '172.16.32.1',
+        '10.0.0.396',
+        'outro.endereço.ip.errado',
+        '172.16.80.1',
+        '172.erro.80.2',
+        'Com certeza isso não é um IP!!!',
+        '172.16.80',
+        )
+</pre>
+<p style="text-align:justify">
+Neste programa vou utilizar apenas os módulos <code>er</code> (<a<br />
+href="http://docs.python.org/library/re.html" target="_blank">expressão<br />
+regular</a>) e o <code>timeit</code> (<a<br />
+href="http://docs.python.org/library/timeit.html" target="_blank">Medidor de<br />
+tempo de execução</a>). O módulo <code>er</code> já é um conhecido nosso, para<br />
+aqueles que acompanharam o <a href="http://mindbending.org/pt/brincando-expressoes-regulares-no-python" target="_blank">último artigo</a>, já o módulo <code>timeit</code>, é &#8220;novo&#8221; até mesmo pra mim (descobri ele recentemente). Na função <code>cronometro</code> veremos como ele funciona.
+</p>
+<p style="text-align:justify">
+Após os módulos temos a compilação de uma expressão regular utilizando o método <code>compile</code> do módulo <code>re</code>. Como explicar o funcionamento das expressões regulares não é o escopo deste artigo, vou pedir para que acreditem que esta expressão regular verifica o &#8220;formato&#8221; de um endereço IP, ou seja, quatro grupos de números (de um a 3 dígitos) separados por pontos. Quem sabe no futuro eu não escrevo uma série de artigos sobre RegEx no Python <img src='http://mindbending.org/pt/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /> .
+</p>
+<p style="text-align:justify">
+Após a expressão regular, temos a tupla <code>dados</code> que armazena todos os dados (endereços IPs válidos e inválidos) a serem processados pelo nosso programa. Vejam que tentei incluir diversas possibilidades, desde endereços IPs válidos, IPs fora do escopo, texto puro, texto &#8220;no formato de um endereço IP&#8221; e endereços IPs incompletos.
+</p>
+<p style="text-align:justify">
+Agora vamos ver duas funções utilizadas para decodificar os endereços IP:
+</p>
+<pre class="brush: py">
+def valida_py():
+    '''Função responsável por validar os endereços IPs na tupla dados'''
+    for endereco in dados:
+        # Um endereço IP sempre tem 3 pontos
+        if endereco.count('.') != 3:
+            continue
+        # Corta a string nos pontos, gerando um tupla
+        campos = endereco.split('.')
+        # Verifica se todos os campos são numéricos
+        campos = [not campo.isdigit() for campo in campos]
+        # Se algum deles não for numérico, despreza e passa para o próximo
+        if any(campos):
+            continue
+        else:
+            # IP Válido
+            #print 'IP Válido:',endereco
+            pass
+
+def valida_er():
+    '''Função responsável por validar os endereços IPs na tupla dados
+    utilizando expressões regulares.
+    '''
+    for endereco in dados:
+        # Verifica se o endereço IP "casa" com a expressão regular
+        if ip_re.match(endereco):
+            # IP Válido
+            #print 'IP Válido:',endereco
+            pass
+</pre>
+<p style="text-align:justify">
+A primeira função, utiliza apenas códigos Python para analisar se uma das strings contidas em <code>dados</code> é um IP válido. O trecho mais complicado dessa função eu considero que seja a <em>list comprehension</em> e a instrução <code>any</code>.
+</p>
+<p style="text-align:justify">
+No trecho &#8220;<code>campos = [not campo.isdigit() for campo in campos]</code>&#8221; criamos uma lista que contém os valores booleanos invertidos (notem a instrução <code>not</code>) retornados pelo método <code>campo.isdigit()</code>. Este método informa caso a <em>string</em> <code>campo</code> seja composta somente por valores numéricos. Já o trecho <code>any(campos),</code> retorna <code>True</code> caso exista algum valor <code>True</code> dentro da lista <code>campos</code>.
+</p>
+<p style="text-align:justify">
+Analisando rapidamente a segunda função, chamada <code>valida_er</code>, podemos ver como as RegExp são poderosas pois, além da função ter ficado extremamente curta ela ficou fácil de entender.
+</p>
+<p style="text-align:justify">
+Para finalizar esse primeiro ciclo de teste, vamos agora criar uma função chamada <code>cronometro</code> que utiliza a classe <code>Timer</code> para cronometrar o tempo de 20.000 execuções de uma dada função:
+</p>
+<pre class="brush: py">
+def cronometro(func):
+    t = timeit.Timer(setup='from __main__ import '+ func, stmt=func+'()')
+    print func.ljust(16)+':', t.timeit(number=20000)
+
+if __name__ == '__main__':
+    print 'Python timing...'
+    cronometro('valida_py')
+
+    print 'nRegEx timing...'
+    cronometro('valida_er')
+</pre>
+<p style="text-align:justify">
+Além da função <code>cronometro</code> escrevi também uma &#8220;função main&#8221; do Python que chama a função <code>cronometro</code> para as funções <code>valida_py</code> e <code>valida_er</code>. Salvando tudo e executando, temos o seguinte resultado:
+</p>
+<pre>
+$ python valida_ip.py 
+Python timing...
+valida_py       : 0.481071233749
+
+RegEx timing...
+valida_er       : 0.185606956482
+</pre>
+<p style="text-align:justify">
+Uau! Isso que é humilhação! A RegEx foi 2.6 vezes mais rápida que o Python puro! Tudo bem que eu não estou sendo justo, o código em Python pode ser otimizado. Para provar isso criei a função <code>valida_py2</code>:
+</p>
+<pre class="brush: py">
+def valida_py2():
+    '''Função responsável por validar os endereços IPs na tupla dados
+    Essa versão possui um desempenho um pouco superior à valida_py
+    '''
+    for endereco in dados:
+        if endereco.count('.') != 3:
+            continue
+        campos = endereco.split('.')
+        for campo in campos:
+            if not campo.isdigit():
+                break
+        else:
+            # IP Valido
+            #print 'IP Valido:',endereco
+            pass
+</pre>
+<p style="text-align:justify">
+Para fazer o teste altere o &#8220;main&#8221; do programa para ficar da seguinte forma:
+</p>
+<pre class="brush: py">
+if __name__ == '__main__':
+    print 'Python timing...'
+    cronometro('valida_py')
+    cronometro('valida_py2')
+
+    print 'nRegEx timing...'
+    cronometro('valida_er')
+</pre>
+<p style="text-align:justify">
+Ao executarmos temos uma alegria inesperada:
+</p>
+<pre>
+$ python valida_ip.py 
+Python timing...
+valida_py       : 0.495260000229
+valida_py2      : 0.367525100708
+
+RegEx timing...
+valida_er       : 0.186715841293
+</pre>
+<p style="text-align:justify">
+Mesmo melhorando o nosso código a expressão regular ainda é mais eficiente (praticamente 2 vezes mais rápido) que o código Python puro.
+</p>
+<h2>Isso É Tudo?</h2>
+<p style="text-align:justify">
+Mas é claro que não! Nosso &#8220;validador de IPs&#8221; ainda tem falhas. Ele somente verifica se a <code>string</code> passada é composta por quatro grupos de números separados por pontos e nada mais. Agora precisamos verificar se eles são válidos, para isso vamos considerar que um IP válido está no intervalo 0.0.0.0 até 255.255.255.255.
+</p>
+<p style="text-align:justify">
+Para atender essa necessidade vamos adicionar 2 códigos no &#8220;cabeçalho&#8221; do nosso programa, da seguinte forma:
+</p>
+<pre class="brush: py">
+# Importando módulo de expressões regulares
+import re
+# Importando módulo "temporizador" de execuções
+import timeit
+
+# RegEx responsável por analisar o formato de um IP
+ip_re = re.compile(r'^d{1,3}.d{1,3}.d{1,3}.d{1,3}$')
+# RegEx responsável por analisar o conteúdo de um IP
+conteudo_ip_re = re.compile(r'^'+
+        r'(25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9]).'+
+        r'(25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9]).'+
+        r'(25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9]).'+
+        r'(25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9])$'
+        )
+# Lambda que informa caso um número esteja dentro ou fora do intervalo
+eh_valido = lambda n : not(255 &gt;= int(n) &gt;= 0)
+</pre>
+<p style="text-align:justify">
+O primeiro código inserido é uma nova expressão regular chamada <code>conteudo_ip_re</code>, enquanto o segundo código é o <em>lambda</em> <code>eh_valido</code>, ambos responsáveis por analisar se o número informado está dentro ou fora do intervalo válido entre 0 e 255.
+</p>
+<p style="text-align:justify">
+Agora criamos mais duas funções:
+</p>
+<pre class="brush: py">
+def valida_tudo_py():
+    '''Função responsável por validar o conteúdo dos endereços IPs
+    na tupla dados
+    '''
+    for endereco in dados:
+        if endereco.count('.') != 3:
+            continue
+        campos = endereco.split('.')
+        for campo in campos:
+            if not campo.isdigit():
+                break
+        else:
+            if any(map(eh_valido, campos)):
+                continue
+            # IP Valido
+            #print 'IP Valido:',endereco
+            pass
+
+def valida_tudo_er():
+    '''Função responsável por validar o conteúdo dos endereços IPs na tupla 
+    dados utilizando expressões regulares.
+    '''
+    for endereco in dados:
+        # Verifica se o endereço IP "casa" com a expressão regular
+        if conteudo_ip_re.match(endereco):
+            # IP Válido
+            #print 'IP Válido:',endereco
+            pass
+</pre>
+<p style="text-align:justify">
+Estas funções não diferem muito das apresentadas anteriormente, apenas adicionamos a linha que utiliza a instrução <code>map</code> em conjunto com o <em>lambda</em>, na função <code>valida_tudo_py</code>, e o uso da nova expressão regular <code>conteudo_ip_re</code>. Para finalizar essa bateria de testes basta adicionar uma chamada função <code>cronômetro</code> para cada nova função. Nossa &#8220;função main&#8221; ficará assim:
+</p>
+<pre class="brush: py">
+if __name__ == '__main__':
+    print 'Python timing...'
+    cronometro('valida_py')
+    cronometro('valida_py2')
+    cronometro('valida_tudo_py')
+
+    print 'nRegEx timing...'
+    cronometro('valida_er')
+    cronometro('valida_tudo_er')
+</pre>
+<p style="text-align:justify">
+Agora vamos ao teste final:
+</p>
+<pre>
+$ python valida_ip.py 
+Python timing...
+valida_py       : 0.496430158615
+valida_py2      : 0.377727985382
+valida_tudo_py  : 1.28690600395
+
+RegEx timing...
+valida_er       : 0.186795949936
+valida_tudo_er  : 0.310018062592
+</pre>
+<p style="text-align:justify">
+Agora, conseguimos derrubar de vez o Python! As expressões regulares conseguiram ser 4,15 vezes mais rápido que o código de Python puro.
+</p>
+<h2>Código Fonte</h2>
+<p style="text-align:justify">
+Todo o código fonte utilizado está disponível <a href="https://gist.github.com/1190466" rel="nofollow" target="_blank" >aqui</a>. Lembre-se este é um código GPL então podem usar sem medo!
+</p>
+<h2>Conclusão</h2>
+<p style="text-align:justify">
+Após essa breve análise do uso de expressões regulares no Python podemos ver que existem casos que elas não são a melhor escolha, já em outros podem te dar um ganho de desempenho e reduzir drasticamente seu código. Mas cuidado, as expressões regulares são extremamente traiçoeiras, teste-as exaustivamente antes de considerá-las totalmente válidas, ou você pode acabar tendo um comportamento inesperado na sua aplicação.
+</p>
+<p style="text-align:justify">
+Ah, e é claro, as expressões regulares podem se tornar verdadeiros bichos de 7 cabeças devoradores de fígado de programador! Se sua expressão regular está fincando muto complexa, considere quebrá-la em diversos pedaços, isso pode conservar sua sanidade por mais tempo!
+</p>
+<p style="text-align:justify">
+Até a próxima&#8230;</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Compartilhe:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=facebook" title="Share on Facebook" id="sharing-facebook-1826"><span></span></a></li><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=twitter" title="Click to share on Twitter" id="sharing-twitter-1826"><span></span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=google-plus-1" title="Click to share on Google+" id="sharing-google-1826"><span></span></a></li><li class="share-pocket"><a rel="nofollow" class="share-pocket sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=pocket" title="Click to share on Pocket"><span></span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=reddit" title="Click to share on Reddit"><span></span></a></li><li class="share-tumblr"><a rel="nofollow" class="share-tumblr sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=tumblr" title="Click to share on Tumblr"><span></span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=stumbleupon" title="Click to share on StumbleUpon"><span></span></a></li><li class="share-pinterest"><a rel="nofollow" class="share-pinterest sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=pinterest" title="Click to share on Pinterest"><span></span></a></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=digg" title="Click to Digg this post"><span></span></a></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=linkedin" title="Click to share on LinkedIn" id="sharing-linkedin-1826"><span></span></a></li><li class="share-press-this"><a rel="nofollow" class="share-press-this sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=press-this" title="Click to Press This!"><span></span></a></li><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon no-text" href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares?share=email" title="Click to email this to a friend"><span></span></a></li><li class="share-end"></li></ul></div></div></div>	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="tag-links block">Tagged <a href="http://mindbending.org/pt/endereco-ip" rel="tag">endereço IP</a>, <a href="http://mindbending.org/pt/expressao-regular" rel="tag">expressão regular</a>, <a href="http://mindbending.org/pt/python" rel="tag">Python</a>, <a href="http://mindbending.org/pt/regexp" rel="tag">regexp</a>.</span>	</footer><!-- .entry-footer -->
+	
+	</article><!-- #post-1826 -->
+							<div id="comments">
+			<h2 id="comments-title">
+				6 thoughts on &ldquo;<span>Dobrando o Python Com Expressões Regulares</span>&rdquo;			</h2>
+		
+					
+			<ol class="commentlist unstyled">
+						
+		<li  id="li-comment-244" class="comment even thread-even depth-1">
+			<article id="comment-244" class="comment row">
+				<div class="comment-author-avatar span1">
+					<img alt='' src='http://0.gravatar.com/avatar/e58d2e55e869a84a629050f42ea32e43?s=70&amp;d=&amp;r=G' class='avatar avatar-70 photo' height='70' width='70' />				</div>
+				<footer class="comment-meta span7">
+					<p class="comment-author vcard">
+						<span class="fn"><a href='http://about.me/fernandogrd' rel='external nofollow' class='url'>Fernando Rocha</a></span> <span class="says">said</span> on <a href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares/comment-page-1#comment-244"><time pubdate datetime="2011-09-05T07:31:21+00:00">05/09/2011 at 07:31</time></a>:					</p><!-- .comment-author .vcard -->
+	
+						
+				</footer><!-- .comment-meta -->
+	
+				<div class="comment-content span7">
+					<p>Sendo a regex bem leg&iacute;vel, acho que &eacute; super v&aacute;lido, resolve muita coisa com poucas linhas, como voc&ecirc; disse </p>
+<a class='comment-reply-link' href='/pt/dobrando-o-python-com-expressoes-regulares?replytocom=244#respond' onclick='return addComment.moveForm("comment-244", "244", "respond", "1826")'>Reply <span>&darr;</span></a>				</div><!-- .comment-content -->
+			</article><!-- #comment-244 .comment -->
+			
+	<ul class='children'>
+		
+		<li  id="li-comment-245" class="comment byuser comment-author-mind-bending bypostauthor odd alt depth-2">
+			<article id="comment-245" class="comment row">
+				<div class="comment-author-avatar span1 offset1">
+					<img alt='' src='http://0.gravatar.com/avatar/ec075fa635a4fc30e7c73935de9575da?s=70&amp;d=&amp;r=G' class='avatar avatar-70 photo' height='70' width='70' />				</div>
+				<footer class="comment-meta span6">
+					<p class="comment-author vcard">
+						<span class="fn"><a href='http://blogs.codecommunity.org/mindbending/' rel='external nofollow' class='url'>Magnun</a></span> <span class="says">said</span> on <a href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares/comment-page-1#comment-245"><time pubdate datetime="2011-09-05T07:42:50+00:00">05/09/2011 at 07:42</time></a>:					</p><!-- .comment-author .vcard -->
+	
+						
+				</footer><!-- .comment-meta -->
+	
+				<div class="comment-content span6">
+					<p>Sim&#8230; Como falei na conclus&atilde;o temos que tomar cuidado ou uma RegExp pode virar um trambolho enorme e dif&iacute;cil de manter.  </p>
+<p>Ainda existe muito &quot;preconceito&quot; com as Regexp, desenvolvedores as consideram extremamente complexas e um pouco lentas (j&aacute; que &eacute; uma &quot;linguagem&quot; sendo executada por outra &quot;linguagem&quot;). Para exemplos simples isso &eacute; verdade, mas em certos casso (como o citado acima) isso &eacute; uma grande inverdade <img src='http://mindbending.org/pt/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' />  </p>
+<a class='comment-reply-link' href='/pt/dobrando-o-python-com-expressoes-regulares?replytocom=245#respond' onclick='return addComment.moveForm("comment-245", "245", "respond", "1826")'>Reply <span>&darr;</span></a>				</div><!-- .comment-content -->
+			</article><!-- #comment-245 .comment -->
+			
+	</li>
+</ul>
+</li>
+		
+		<li  id="li-comment-246" class="comment even thread-odd thread-alt depth-1">
+			<article id="comment-246" class="comment row">
+				<div class="comment-author-avatar span1">
+					<img alt='' src='http://0.gravatar.com/avatar/ee5bef27ce2f0f2aa0df86e710fec7f8?s=70&amp;d=&amp;r=G' class='avatar avatar-70 photo' height='70' width='70' />				</div>
+				<footer class="comment-meta span7">
+					<p class="comment-author vcard">
+						<span class="fn"><a href='http://fotomix.wordpress.com/' rel='external nofollow' class='url'>Guaracy Monteiro</a></span> <span class="says">said</span> on <a href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares/comment-page-1#comment-246"><time pubdate datetime="2011-09-05T15:19:54+00:00">05/09/2011 at 15:19</time></a>:					</p><!-- .comment-author .vcard -->
+	
+						
+				</footer><!-- .comment-meta -->
+	
+				<div class="comment-content span7">
+					<p>Como &quot;preconceito&quot; est&aacute; entre aspas, acho que pode ser substitu&iacute;do por &quot;pregui&ccedil;a&quot;. <img src='http://mindbending.org/pt/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' />  </p>
+<p>Quanto a complexidade, &eacute; relativamente proporcional ao conhecimento. Se o cara n&atilde;o conhece, n&atilde;o entende. Se n&atilde;o entende, &eacute; complexo. O bom &eacute; que n&atilde;o &eacute; necess&aacute;rio esconder o c&oacute;digo fonte. Por exemplo, # ~. , ^/ ~ 2+i.4 n&atilde;o deve ser entendido por 99,9% dos programadores. </p>
+<p>De resto, acho que &eacute; como uma linguagem qualquer. Se a gente n&atilde;o tomar alguns cuidados nem a gente entende depois, ou melhor, demora quase como se fosse refazer. </p>
+<a class='comment-reply-link' href='/pt/dobrando-o-python-com-expressoes-regulares?replytocom=246#respond' onclick='return addComment.moveForm("comment-246", "246", "respond", "1826")'>Reply <span>&darr;</span></a>				</div><!-- .comment-content -->
+			</article><!-- #comment-246 .comment -->
+			
+	<ul class='children'>
+		
+		<li  id="li-comment-248" class="comment byuser comment-author-mind-bending bypostauthor odd alt depth-2">
+			<article id="comment-248" class="comment row">
+				<div class="comment-author-avatar span1 offset1">
+					<img alt='' src='http://0.gravatar.com/avatar/ec075fa635a4fc30e7c73935de9575da?s=70&amp;d=&amp;r=G' class='avatar avatar-70 photo' height='70' width='70' />				</div>
+				<footer class="comment-meta span6">
+					<p class="comment-author vcard">
+						<span class="fn"><a href='http://blogs.codecommunity.org/mindbending/' rel='external nofollow' class='url'>Magnun</a></span> <span class="says">said</span> on <a href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares/comment-page-1#comment-248"><time pubdate datetime="2011-09-05T18:55:33+00:00">05/09/2011 at 18:55</time></a>:					</p><!-- .comment-author .vcard -->
+	
+						
+				</footer><!-- .comment-meta -->
+	
+				<div class="comment-content span6">
+					<p>Sim, RegExp s&atilde;o &oacute;timas para criar c&oacute;digos obscuros. Mas nem sempre oferecem um bom desempenho, temos que usar com parcim&ocirc;nia <img src='http://mindbending.org/pt/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  </p>
+<a class='comment-reply-link' href='/pt/dobrando-o-python-com-expressoes-regulares?replytocom=248#respond' onclick='return addComment.moveForm("comment-248", "248", "respond", "1826")'>Reply <span>&darr;</span></a>				</div><!-- .comment-content -->
+			</article><!-- #comment-248 .comment -->
+			
+	</li>
+</ul>
+</li>
+		
+		<li  id="li-comment-247" class="comment even thread-even depth-1">
+			<article id="comment-247" class="comment row">
+				<div class="comment-author-avatar span1">
+					<img alt='' src='http://1.gravatar.com/avatar/5048ffde7ab92aeeedf45959f6d13c24?s=70&amp;d=&amp;r=G' class='avatar avatar-70 photo' height='70' width='70' />				</div>
+				<footer class="comment-meta span7">
+					<p class="comment-author vcard">
+						<span class="fn"><a href='http://my.opera.com/CrazyTerabyte/' rel='external nofollow' class='url'>Denilson</a></span> <span class="says">said</span> on <a href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares/comment-page-1#comment-247"><time pubdate datetime="2011-09-05T18:28:29+00:00">05/09/2011 at 18:28</time></a>:					</p><!-- .comment-author .vcard -->
+	
+						
+				</footer><!-- .comment-meta -->
+	
+				<div class="comment-content span7">
+					<p>Tive a mesma experi&ecirc;ncia. Fazer algo usando RegEx foi mais compacto e MUITO mais r&aacute;pido (quase 30 vezes mais r&aacute;pido).<br />
+  <a href="http://stackoverflow.com/q/3220031/124946" rel="nofollow">http://stackoverflow.com/q/3220031/124946</a><br />
+Ah, e se a legibilidade da RegEx for ruim, escreva muitos coment&aacute;rios ao redor; ou use &quot;re.VERBOSE&quot;<br />
+  <a href="http://docs.python.org/library/re.html#re.VERBOSE" rel="nofollow">http://docs.python.org/library/re.html#re.VERBOSE</a> </p>
+<a class='comment-reply-link' href='/pt/dobrando-o-python-com-expressoes-regulares?replytocom=247#respond' onclick='return addComment.moveForm("comment-247", "247", "respond", "1826")'>Reply <span>&darr;</span></a>				</div><!-- .comment-content -->
+			</article><!-- #comment-247 .comment -->
+			
+	<ul class='children'>
+		
+		<li  id="li-comment-249" class="comment byuser comment-author-mind-bending bypostauthor odd alt depth-2">
+			<article id="comment-249" class="comment row">
+				<div class="comment-author-avatar span1 offset1">
+					<img alt='' src='http://0.gravatar.com/avatar/ec075fa635a4fc30e7c73935de9575da?s=70&amp;d=&amp;r=G' class='avatar avatar-70 photo' height='70' width='70' />				</div>
+				<footer class="comment-meta span6">
+					<p class="comment-author vcard">
+						<span class="fn"><a href='http://blogs.codecommunity.org/mindbending/' rel='external nofollow' class='url'>Magnun</a></span> <span class="says">said</span> on <a href="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares/comment-page-1#comment-249"><time pubdate datetime="2011-09-05T19:05:34+00:00">05/09/2011 at 19:05</time></a>:					</p><!-- .comment-author .vcard -->
+	
+						
+				</footer><!-- .comment-meta -->
+	
+				<div class="comment-content span6">
+					<p>Ol&aacute; Denilson! </p>
+<p>Realmente a diferen&ccedil;a do tempo de resposta da substitui&ccedil;&atilde;o com RegExp no seu caso foi impressionante! </p>
+<p>Ah, obrigado pela dica do re.VERBOSE, eu n&atilde;o conhecia, geralmente uso o (?#&#8230;) para comentar as RegExp (mas n&atilde;o fica nada legal). </p>
+<p>At&eacute; mais&#8230; </p>
+<a class='comment-reply-link' href='/pt/dobrando-o-python-com-expressoes-regulares?replytocom=249#respond' onclick='return addComment.moveForm("comment-249", "249", "respond", "1826")'>Reply <span>&darr;</span></a>				</div><!-- .comment-content -->
+			</article><!-- #comment-249 .comment -->
+			
+	</li>
+</ul>
+</li>
+			</ol><!-- .commentlist .unstyled -->
+		
+					
+		</div><!-- #comments -->
+	
+		<div id="respond">
+			<h3 id="reply-title">Deixe um Comentário <small><a rel="nofollow" id="cancel-comment-reply-link" href="/pt/dobrando-o-python-com-expressoes-regulares#respond" style="display:none;">Cancel reply</a></small></h3>
+			<div id="commentform">
+				<iframe src="http://jetpack.wordpress.com/jetpack-comment/?blogid=46741366&#038;postid=1826&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=1&#038;avatar_default=gravatar_default&#038;greeting=Deixe+um+Coment%C3%A1rio&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en-US&#038;jetpack_version=2.3&#038;sig=3b0297340d8e9650dd640c31d8de95537b0763ee#parent=http%3A%2F%2Fmindbending.org%2Fpt%2Fdobrando-o-python-com-expressoes-regulares" allowtransparency="false" style="width:100%; height: 430px;border:0px;" frameBorder="0" scrolling="no" name="jetpack_remote_comment" id="jetpack_remote_comment"></iframe>
+			</div>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+							
+		<nav id="nav-single" class="pager">
+			<h3 class="assistive-text">Post navigation</h3>
+			<span class="next"><a href="http://mindbending.org/pt/tutorial-de-pygi-em-video-3" rel="next">Next Post <span class="meta-nav">&rarr;</span></a></span>
+			<span class="previous"><a href="http://mindbending.org/pt/que-venha-a-vimconf" rel="prev"><span class="meta-nav">&larr;</span> Previous Post</a></span>
+		</nav><!-- #nav-single -->
+		
+			</div><!-- #content -->
+	</section><!-- #primary -->
+
+<section id="secondary" class="widget-area span4" role="complementary">
+	<aside id="social_stickers_widget-2" class="widget well social_stickers_widget"><a href="http://facebook.com/MindBendingBlog" target="_blank" title="Facebook"><img src="http://mindbending.org/pt/wp-content/plugins/social-stickers/themes/default/facebook.png"  width="32" height="32" /></a> <a href="http://github.com/magnunleno" target="_blank" title="Github"><img src="http://mindbending.org/pt/wp-content/plugins/social-stickers/themes/default/github.png"  width="32" height="32" /></a> <a href="http://geekli.st/mind_bend" target="_blank" title="Geeklist"><img src="http://mindbending.org/pt/wp-content/plugins/social-stickers/themes/default/geeklist.png"  width="32" height="32" /></a> <a href="http://plus.google.com/102063745956138544914" target="_blank" title="Google+"><img src="http://mindbending.org/pt/wp-content/plugins/social-stickers/themes/default/googleplus.png"  width="32" height="32" /></a> <a href="http://stackoverflow.com/users/498227" target="_blank" title="Stackoverflow"><img src="http://mindbending.org/pt/wp-content/plugins/social-stickers/themes/default/stackoverflow.png"  width="32" height="32" /></a> <a href="http://twitter.com/mind_bend" target="_blank" title="Twitter"><img src="http://mindbending.org/pt/wp-content/plugins/social-stickers/themes/default/twitter.png"  width="32" height="32" /></a> <a href="http://coderwall.com/magnunleno" target="_blank" title="Coderwall"><img src="http://mindbending.org/pt/wp-content/plugins/social-stickers/themes/default/coderwall.png"  width="32" height="32" /></a> </aside><aside id="text-3" class="widget well widget_text">			<div class="textwidget"><center>
+<div>
+<a href="http://www.pythonbrasil.org.br/" title="PythonBrasil[9]"> 
+<img src="http://2013.pythonbrasil.org.br/divulgue/no-seu-site/pythonbrasil9_pt_BR_halfbanner.gif" alt="PythonBrasil[9]" />
+</a>
+</div>
+</center></div>
+		</aside><aside id="blog_subscription-2" class="widget well jetpack_subscription_widget"><h2 class="widget-title"><label for="subscribe-field">Receba Atualizações por Email</label></h2>
+		<form action="" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-2">
+			<p>Informe seu e-mail para receber as atualizações deste blog.</p>
+			<p><input type="text" name="email" style="width: 95%; padding: 1px 2px" value="Email Address" id="subscribe-field" onclick="if ( this.value == 'Email Address' ) { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Email Address'; }" /></p>
+
+			<p>
+				<input type="hidden" name="action" value="subscribe" />
+				<input type="hidden" name="source" value="http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares" />
+				<input type="hidden" name="sub-type" value="widget" />
+				<input type="hidden" name="redirect_fragment" value="blog_subscription-2" />
+								<input type="submit" value="Inscrever-se" name="jetpack_subscriptions_widget" />
+			</p>
+		</form>
+
+		
+</aside><aside id="tag_cloud-2" class="widget well widget_tag_cloud"><h2 class="widget-title">Tags</h2><div class="tagcloud"><a href='http://mindbending.org/pt/aif' class='tag-link-34' title='3 topics' style='font-size: 8pt;'>aif</a>
+<a href='http://mindbending.org/pt/arch' class='tag-link-49' title='31 topics' style='font-size: 20.6138613861pt;'>arch</a>
+<a href='http://mindbending.org/pt/atualizacao' class='tag-link-59' title='7 topics' style='font-size: 12.1584158416pt;'>atualização</a>
+<a href='http://mindbending.org/pt/bending' class='tag-link-76' title='9 topics' style='font-size: 13.5445544554pt;'>bending</a>
+<a href='http://mindbending.org/pt/blog' class='tag-link-79' title='5 topics' style='font-size: 10.495049505pt;'>blog</a>
+<a href='http://mindbending.org/pt/c' class='tag-link-93' title='5 topics' style='font-size: 10.495049505pt;'>c</a>
+<a href='http://mindbending.org/pt/dbus' class='tag-link-156' title='5 topics' style='font-size: 10.495049505pt;'>dbus</a>
+<a href='http://mindbending.org/pt/desenvolvimento' class='tag-link-173' title='7 topics' style='font-size: 12.1584158416pt;'>desenvolvimento</a>
+<a href='http://mindbending.org/pt/design' class='tag-link-174' title='5 topics' style='font-size: 10.495049505pt;'>design</a>
+<a href='http://mindbending.org/pt/doode' class='tag-link-194' title='3 topics' style='font-size: 8pt;'>doode</a>
+<a href='http://mindbending.org/pt/download' class='tag-link-201' title='3 topics' style='font-size: 8pt;'>download</a>
+<a href='http://mindbending.org/pt/empathy' class='tag-link-212' title='3 topics' style='font-size: 8pt;'>empathy</a>
+<a href='http://mindbending.org/pt/erro' class='tag-link-219' title='5 topics' style='font-size: 10.495049505pt;'>erro</a>
+<a href='http://mindbending.org/pt/games' class='tag-link-264' title='3 topics' style='font-size: 8pt;'>games</a>
+<a href='http://mindbending.org/pt/git-2' class='tag-link-275' title='6 topics' style='font-size: 11.4653465347pt;'>git</a>
+<a href='http://mindbending.org/pt/github' class='tag-link-276' title='3 topics' style='font-size: 8pt;'>github</a>
+<a href='http://mindbending.org/pt/gnome' class='tag-link-280' title='17 topics' style='font-size: 17.1485148515pt;'>gnome</a>
+<a href='http://mindbending.org/pt/gnome-3' class='tag-link-281' title='3 topics' style='font-size: 8pt;'>gnome 3</a>
+<a href='http://mindbending.org/pt/gnome-shell' class='tag-link-285' title='5 topics' style='font-size: 10.495049505pt;'>gnome shell</a>
+<a href='http://mindbending.org/pt/gnu' class='tag-link-288' title='9 topics' style='font-size: 13.5445544554pt;'>gnu</a>
+<a href='http://mindbending.org/pt/guia' class='tag-link-305' title='5 topics' style='font-size: 10.495049505pt;'>guia</a>
+<a href='http://mindbending.org/pt/instalacao' class='tag-link-353' title='12 topics' style='font-size: 15.0693069307pt;'>instalação</a>
+<a href='http://mindbending.org/pt/jogos' class='tag-link-377' title='4 topics' style='font-size: 9.38613861386pt;'>jogos</a>
+<a href='http://mindbending.org/pt/keyring' class='tag-link-382' title='7 topics' style='font-size: 12.1584158416pt;'>keyring</a>
+<a href='http://mindbending.org/pt/linux-2' class='tag-link-404' title='29 topics' style='font-size: 20.198019802pt;'>linux</a>
+<a href='http://mindbending.org/pt/livro' class='tag-link-409' title='4 topics' style='font-size: 9.38613861386pt;'>livro</a>
+<a href='http://mindbending.org/pt/pacman' class='tag-link-489' title='14 topics' style='font-size: 16.0396039604pt;'>pacman</a>
+<a href='http://mindbending.org/pt/palestra' class='tag-link-496' title='6 topics' style='font-size: 11.4653465347pt;'>palestra</a>
+<a href='http://mindbending.org/pt/passwords' class='tag-link-503' title='7 topics' style='font-size: 12.1584158416pt;'>passwords</a>
+<a href='http://mindbending.org/pt/programacao' class='tag-link-525' title='8 topics' style='font-size: 12.8514851485pt;'>programação</a>
+<a href='http://mindbending.org/pt/pycon2011' class='tag-link-539' title='4 topics' style='font-size: 9.38613861386pt;'>pycon2011</a>
+<a href='http://mindbending.org/pt/pygi' class='tag-link-542' title='4 topics' style='font-size: 9.38613861386pt;'>pygi</a>
+<a href='http://mindbending.org/pt/python' class='tag-link-16' title='40 topics' style='font-size: 22pt;'>Python</a>
+<a href='http://mindbending.org/pt/seahorse' class='tag-link-589' title='4 topics' style='font-size: 9.38613861386pt;'>seahorse</a>
+<a href='http://mindbending.org/pt/ssh' class='tag-link-620' title='4 topics' style='font-size: 9.38613861386pt;'>ssh</a>
+<a href='http://mindbending.org/pt/tiamat' class='tag-link-17' title='9 topics' style='font-size: 13.5445544554pt;'>Tiamat</a>
+<a href='http://mindbending.org/pt/tutorial' class='tag-link-656' title='17 topics' style='font-size: 17.1485148515pt;'>tutorial</a>
+<a href='http://mindbending.org/pt/twitter' class='tag-link-657' title='5 topics' style='font-size: 10.495049505pt;'>twitter</a>
+<a href='http://mindbending.org/pt/ubuntu-2' class='tag-link-658' title='8 topics' style='font-size: 12.8514851485pt;'>ubuntu</a>
+<a href='http://mindbending.org/pt/udisks' class='tag-link-662' title='4 topics' style='font-size: 9.38613861386pt;'>udisks</a>
+<a href='http://mindbending.org/pt/username' class='tag-link-673' title='4 topics' style='font-size: 9.38613861386pt;'>username</a>
+<a href='http://mindbending.org/pt/video' class='tag-link-680' title='4 topics' style='font-size: 9.38613861386pt;'>video</a>
+<a href='http://mindbending.org/pt/vim' class='tag-link-20' title='5 topics' style='font-size: 10.495049505pt;'>VIM</a>
+<a href='http://mindbending.org/pt/wordpress' class='tag-link-691' title='4 topics' style='font-size: 9.38613861386pt;'>wordpress</a>
+<a href='http://mindbending.org/pt/yaourt' class='tag-link-702' title='4 topics' style='font-size: 9.38613861386pt;'>yaourt</a></div>
+</aside><aside id="categories-2" class="widget well widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+	<li class="cat-item cat-item-707"><a href="http://mindbending.org/pt/bancos-de-dados" title="View all posts filed under Bancos de Dados">Bancos de Dados</a> (2)
+<ul class='children'>
+	<li class="cat-item cat-item-467"><a href="http://mindbending.org/pt/bancos-de-dados/nosql" title="View all posts filed under NoSQL">NoSQL</a> (2)
+	<ul class='children'>
+	<li class="cat-item cat-item-142"><a href="http://mindbending.org/pt/bancos-de-dados/nosql/couchdb" title="View all posts filed under CouchDB">CouchDB</a> (1)
+</li>
+	<li class="cat-item cat-item-450"><a href="http://mindbending.org/pt/bancos-de-dados/nosql/mongodb" title="View all posts filed under MongoDB">MongoDB</a> (1)
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-727"><a href="http://mindbending.org/pt/gimp-2" title="View all posts filed under GIMP">GIMP</a> (1)
+</li>
+	<li class="cat-item cat-item-716"><a href="http://mindbending.org/pt/github-2" title="View all posts filed under GitHub">GitHub</a> (1)
+</li>
+	<li class="cat-item cat-item-726"><a href="http://mindbending.org/pt/hacking" title="View all posts filed under Hacking">Hacking</a> (1)
+</li>
+	<li class="cat-item cat-item-717"><a href="http://mindbending.org/pt/linguagens-de-programacao" title="View all posts filed under Linguagens de Programação">Linguagens de Programação</a> (30)
+<ul class='children'>
+	<li class="cat-item cat-item-3"><a href="http://mindbending.org/pt/linguagens-de-programacao/c-linguagens-de-programacao" title="View all posts filed under C">C</a> (4)
+</li>
+	<li class="cat-item cat-item-16"><a href="http://mindbending.org/pt/linguagens-de-programacao/python" title="Posts relacionados a linguagem de programação (e de scripts) Python.">Python</a> (25)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://mindbending.org/pt/linux" title="View all posts filed under Linux">Linux</a> (51)
+<ul class='children'>
+	<li class="cat-item cat-item-720"><a href="http://mindbending.org/pt/linux/ambientes-graficos" title="View all posts filed under Ambientes Gráficos">Ambientes Gráficos</a> (15)
+	<ul class='children'>
+	<li class="cat-item cat-item-6"><a href="http://mindbending.org/pt/linux/ambientes-graficos/gnome-ambientes-graficos" title="View all posts filed under Gnome">Gnome</a> (13)
+</li>
+	<li class="cat-item cat-item-713"><a href="http://mindbending.org/pt/linux/ambientes-graficos/kde-ambientes-graficos" title="View all posts filed under KDE">KDE</a> (1)
+</li>
+	<li class="cat-item cat-item-22"><a href="http://mindbending.org/pt/linux/ambientes-graficos/xfce" title="View all posts filed under Xfce">Xfce</a> (1)
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-722"><a href="http://mindbending.org/pt/linux/aplicativos-linux" title="View all posts filed under Aplicativos">Aplicativos</a> (5)
+	<ul class='children'>
+	<li class="cat-item cat-item-5"><a href="http://mindbending.org/pt/linux/aplicativos-linux/git" title="View all posts filed under Git">Git</a> (2)
+</li>
+	<li class="cat-item cat-item-729"><a href="http://mindbending.org/pt/linux/aplicativos-linux/particionadores" title="View all posts filed under Particionadores">Particionadores</a> (1)
+		<ul class='children'>
+	<li class="cat-item cat-item-730"><a href="http://mindbending.org/pt/linux/aplicativos-linux/particionadores/fdisk-particionadores" title="View all posts filed under Fdisk">Fdisk</a> (1)
+</li>
+		</ul>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://mindbending.org/pt/linux/aplicativos-linux/vim" title="View all posts filed under VIM">VIM</a> (2)
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-721"><a href="http://mindbending.org/pt/linux/distribuicoes" title="View all posts filed under Distribuições">Distribuições</a> (24)
+	<ul class='children'>
+	<li class="cat-item cat-item-2"><a href="http://mindbending.org/pt/linux/distribuicoes/arch-linux" title="View all posts filed under Arch Linux">Arch Linux</a> (21)
+</li>
+	<li class="cat-item cat-item-18"><a href="http://mindbending.org/pt/linux/distribuicoes/ubuntu" title="View all posts filed under Ubuntu">Ubuntu</a> (3)
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://mindbending.org/pt/linux/games-linux" title="View all posts filed under Games">Games</a> (3)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://mindbending.org/pt/livros" title="View all posts filed under Livros">Livros</a> (1)
+</li>
+	<li class="cat-item cat-item-714"><a href="http://mindbending.org/pt/mind-bending-blog" title="View all posts filed under Mind Bending Blog">Mind Bending Blog</a> (7)
+</li>
+	<li class="cat-item cat-item-13"><a href="http://mindbending.org/pt/musica" title="View all posts filed under Música">Música</a> (2)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://mindbending.org/pt/projects-log" title="View all posts filed under Project logs">Project logs</a> (2)
+<ul class='children'>
+	<li class="cat-item cat-item-23"><a href="http://mindbending.org/pt/projects-log/anarchy" title="View all posts filed under Anarchy">Anarchy</a> (1)
+</li>
+	<li class="cat-item cat-item-17"><a href="http://mindbending.org/pt/projects-log/tiamat" title="View all posts filed under Tiamat">Tiamat</a> (1)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-718"><a href="http://mindbending.org/pt/pycon-python" title="View all posts filed under PyCon">PyCon</a> (9)
+<ul class='children'>
+	<li class="cat-item cat-item-708"><a href="http://mindbending.org/pt/pycon-python/pycon-2011-pycon-2" title="View all posts filed under PyCon 2011">PyCon 2011</a> (7)
+</li>
+	<li class="cat-item cat-item-728"><a href="http://mindbending.org/pt/pycon-python/pycon-2012" title="View all posts filed under PyCon 2012">PyCon 2012</a> (2)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-709"><a href="http://mindbending.org/pt/wordpress-2" title="View all posts filed under Wordpress">Wordpress</a> (2)
+</li>
+	<li class="cat-item cat-item-21"><a href="http://mindbending.org/pt/x4go-live" title="View all posts filed under x4GO Live">x4GO Live</a> (2)
+</li>
+		</ul>
+</aside><aside id="eg_series_series_widget-2" class="widget well widget_eg_series_series"><h2 class="widget-title">Series</h2><ul class="eg-series-series"><li class="eg-series-series-item"><a href="http://mindbending.org/pt/series/destaques-da-pycon-2011" title="Serie de artigos que destacam as melhores palestras da PyCon 2011">Destaques da PyCon 2011</a></li><li class="eg-series-series-item"><a href="http://mindbending.org/pt/series/dobrando-o-gnome-keyring-com-o-python" title="Serie de artigos sobre como utilizar a biblioteca Gnome Keyring e o Python para armazenar informações sensíveis.">Dobrando o Gnome Keyring com o Python</a></li><li class="eg-series-series-item"><a href="http://mindbending.org/pt/series/git-para-todos" >Git Para Todos</a></li><li class="eg-series-series-item"><a href="http://mindbending.org/pt/series/instalando-e-configurando-o-arch-linux" >Instalando e Configurando o Arch Linux</a></li><li class="eg-series-series-item"><a href="http://mindbending.org/pt/series/python-e-udisks" title="Serie de artigos sobre a utilização do UDisks através do Python">Python e UDisks</a></li></ul></aside><aside id="text-2" class="widget well widget_text"><h2 class="widget-title">Parceiros</h2>			<div class="textwidget"><div class="row-fluid">
+    <div class="span6">
+        <center>
+        <a href="http://cstropz.net/"  target="_blank">
+        <img src="http://mindbending.org/pt/wp-content/uploads/sites/4/2011/11/cz-logo.png" style="width:125px; height:125px; border:0px;" alt="Cstropz.net" />
+        </a>
+        </center>
+    </div>
+    <div class="span6">
+        <center>
+        <a href="http://sejalivre.org/"  target="_blank">
+        <img src="http://mindbending.org/pt/wp-content/uploads/sites/4/2011/12/sejalivre_125x125.png" style="width:125px; height:125px; border:0px;" alt="Seja Livre Blog" />
+        </center>
+        </a>
+    </div>
+</div>
+
+&nbsp;
+
+<div class="row-fluid">
+    <div class="span6">
+        <center>
+        <img src="http://mindbending.org/pt/wp-content/uploads/sites/4/2011/08/Empty_Banner.png" style="width:125px; height:125px; border:0px;" alt="Mind Bending Banner" />
+        </center>
+    </div>
+    <div class="span6">
+        <center>
+        <img src="http://mindbending.org/pt/wp-content/uploads/sites/4/2011/08/Empty_Banner.png" style="width:125px; height:125px; border:0px;" alt="Mind Bending Banner" />
+        </center>
+    </div>
+</div>
+</div>
+		</aside><aside id="twitter_timeline-2" class="widget well widget_twitter_timeline"><h2 class="widget-title">Twitter</h2><a class="twitter-timeline" data-widget-id="336597882272641025" data-theme="light" data-link-color="#0088" data-border-color="#e8e8e8" data-chrome="noheader nofooter noborders transparent" height="400" lang="EN">My Tweets</a></aside><aside id="facebook-likebox-2" class="widget well widget_facebook_likebox"><h2 class="widget-title"><a href="http://www.facebook.com/MindBendingBlog">Facebook</a></h2><iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FMindBendingBlog&#038;width=0&#038;height=432&#038;colorscheme=light&#038;show_faces=true&#038;stream=false&#038;show_border=true&#038;header=false&#038;force_wall=false" scrolling="no" frameborder="0" style="border: none; overflow: hidden; height: 432px; background: #fff"></iframe></aside><aside id="meta-2" class="widget well widget_meta"><h2 class="widget-title">Meta</h2>			<ul>
+			<li><a href="http://mindbending.org/pt/wp-login.php?action=register">Register</a></li>			<li><a href="http://mindbending.org/pt/wp-login.php">Log in</a></li>
+			<li><a href="http://mindbending.org/pt/feed" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://mindbending.org/pt/comments/feed" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</aside></section><!-- #secondary .widget-area -->
+				<footer id="colophon" role="contentinfo" class="span12">
+										<div id="page-footer" class="well clearfix">
+						<span class="credits alignleft">&copy; 2013 <a href="http://mindbending.org/pt/">Mind Bending - Português</a>, all rights reserved.</span>						<div id="site-generator">
+							<a	href="http://wordpress.org/"
+								title="Semantic Personal Publishing Platform"
+								target="_blank"
+								rel="generator">Proudly powered by WordPress</a>
+						</div>
+					</div><!-- #page-footer .well .clearfix -->
+									</footer><!-- #colophon -->
+							</div><!-- #page -->
+		</div><!-- .container -->
+	<!-- 137 queries. 1.141 seconds. -->
+	
+	<div style="display:none">
+	<div class="grofile-hash-map-e58d2e55e869a84a629050f42ea32e43">
+	</div>
+	<div class="grofile-hash-map-ec075fa635a4fc30e7c73935de9575da">
+	</div>
+	<div class="grofile-hash-map-ee5bef27ce2f0f2aa0df86e710fec7f8">
+	</div>
+	<div class="grofile-hash-map-5048ffde7ab92aeeedf45959f6d13c24">
+	</div>
+	</div>
+<div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript' src='http://mindbending.org/pt/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=20121205'></script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=600,height=600' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-pocket' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcompocket', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-tumblr' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+							<script type="text/javascript">
+			jQuery(document).on('ready', function(){
+				jQuery('body').on('click', 'a.share-pinterest', function(e){
+					e.preventDefault();
+
+					// Load Pinterest Bookmarklet code
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = window.location.protocol + "//assets.pinterest.com/js/pinmarklet.js?r=" + ( Math.random() * 99999999 );
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+
+					// Trigger Stats
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = this + ( this.toString().indexOf( '?' ) ? '&' : '?' ) + 'js_only=1';
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+				});
+			});
+			</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+			<div id="sharing_email" style="display: none;">
+		<form action="/pt/dobrando-o-python-com-expressoes-regulares" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="text" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="text" name="source_email" id="source_email" value="" />
+
+			
+			
+			<img style="float: right; display: none" class="loading" src="http://mindbending.org/pt/wp-content/plugins/jetpack/modules/sharedaddy/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+<script type='text/javascript' src='//platform.twitter.com/widgets.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/plugins/related-posts-slider/formats/h_carousel/js/rps.js?ver=2.0'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201327'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.36.0-2013.06.16'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/plugins/jquery-validation-for-contact-form-7/js/jquery.validate.min.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/plugins/jquery-validation-for-contact-form-7/js/jquery.jvcf7_validation.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2013Julaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/themes/the-bootstrap/js/bootstrap.min.js?ver=2.0.3'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/themes/the-bootstrap/js/the-bootstrap.min.js?ver=0.0.1'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-includes/js/comment-reply.min.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.5.pack.js?ver=1.3.5'></script>
+<script type='text/javascript' src='http://mindbending.org/pt/wp-content/plugins/easy-fancybox/jquery.easing.pack.js?ver=1.3'></script>
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+			// window.location.reload() doesn't respect the Hash in IE
+			window.location.hash = window.location.hash;
+		}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			var comm_par_el = document.getElementById( 'comment_parent' ),
+			    comm_par = (comm_par_el && comm_par_el.value) ? comm_par_el.value : '',
+			    frame = document.getElementById( 'jetpack_remote_comment' ),
+			    tellFrameNewParent;
+
+			tellFrameNewParent = function() {
+				if ( comm_par ) {
+					frame.src = "http:\/\/jetpack.wordpress.com\/jetpack-comment\/?blogid=46741366&postid=1826&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=gravatar_default&greeting=Deixe+um+Coment%C3%A1rio&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=2.3&sig=3b0297340d8e9650dd640c31d8de95537b0763ee#parent=http%3A%2F%2Fmindbending.org%2Fpt%2Fdobrando-o-python-com-expressoes-regulares" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+				} else {
+					frame.src = "http:\/\/jetpack.wordpress.com\/jetpack-comment\/?blogid=46741366&postid=1826&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=gravatar_default&greeting=Deixe+um+Coment%C3%A1rio&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=2.3&sig=3b0297340d8e9650dd640c31d8de95537b0763ee#parent=http%3A%2F%2Fmindbending.org%2Fpt%2Fdobrando-o-python-com-expressoes-regulares";
+				}
+			};
+
+	
+			if ( 'undefined' !== typeof addComment ) {
+				addComment._Jetpack_moveForm = addComment.moveForm;
+
+				addComment.moveForm = function( commId, parentId, respondId, postId ) {
+					var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ), cancelClick, cancel;
+
+					if ( false === returnValue ) {
+						cancel = document.getElementById( 'cancel-comment-reply-link' );
+						cancelClick = cancel.onclick;
+						cancel.onclick = function() {
+							var cancelReturn = cancelClick.call( this );
+							if ( false !== cancelReturn ) {
+								return cancelReturn;
+							}
+
+							if ( !comm_par ) {
+								return cancelReturn;
+							}
+
+							comm_par = 0;
+
+							tellFrameNewParent();
+
+							return cancelReturn;
+						};
+					}
+
+					if ( comm_par == parentId ) {
+						return returnValue;
+					}
+
+					comm_par = parentId;
+
+					tellFrameNewParent();
+
+					return returnValue;
+				};
+			}
+
+	
+			if ( window.postMessage ) {
+				if ( document.addEventListener ) {
+					window.addEventListener( 'message', function( event ) {
+						if ( "http:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				} else if ( document.attachEvent ) {
+					window.attachEvent( 'message', function( event ) {
+						if ( "http:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				}
+			}
+		</script>
+
+	
+	<script src="http://stats.wordpress.com/e-201327.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:2.3',blog:'46741366',post:'1826',tz:'-3'});
+	var load_cmc = function(){linktracker_init(46741366,1826,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>
+<script type="text/javascript">
+jQuery(document).on('ready gform_post_render', easy_fancybox_handler );
+</script>
+	</body>
+</html>
