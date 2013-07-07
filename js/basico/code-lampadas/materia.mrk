@@ -64,6 +64,9 @@ Para você me acompanhar, o ideal seria você baixar os código fontes ou redigi
 
 Baixe os arquivos através dos links: [codigo.js](codigo.js "Arquivo JS"), [lampada.html](lampadas.html "Arquivo JS").
 
+Baixe também as imagens das lâmpadas: [lâmpada apagada](../../imagens/pic_bulboff.gif "lâmpada off"), 
+[lâmpada acesa](../../imagens/pic_bulbon.gif "lâmpada om")
+
 Agora, abra o arquivo html no navegador.
 
 Não se esqueca do endereço de seu servidor web (apache) que é localhost. Na minha máquina eu utilizo o seguinte endereço:
