@@ -37,7 +37,7 @@ Um pouco de tudo:
 Mãos a obra
 -----------
 
-Vamos revisitar o pequeno código da lámpada que vimos na [primeira matéria de JS ](http://www.devfuria.com.br/js/basico/intro/"JS|Intro")
+Vamos revisitar o pequeno código da lámpada que vimos na [primeira matéria de JS ](http://www.devfuria.com.br/js/basico/intro/ "JS|Intro")
 
 Primeiro, não posso deixar de comentar que programar no lado cliente é uma tarefa que exige muita criatividade. Esse 
 exemplo ilustra bem isso.
@@ -62,7 +62,7 @@ Faça o script funcionar localmente
 
 Para você me acompanhar, o ideal seria você baixar os código fontes ou redigitá-los.
 
-Baixe os arquivos através dos links: [codigo.js](codigo.js "Arquivo JS"), [lampada.html](codigo.js "Arquivo JS").
+Baixe os arquivos através dos links: [codigo.js](codigo.js "Arquivo JS"), [lampada.html](lampadas.html "Arquivo JS").
 
 Agora, abra o arquivo html no navegador.
 
@@ -152,10 +152,10 @@ Experimente também fazer isso:
 var element = document.getElementById('myimage');
 element.onclick = function() {
     if (element.src.match("bulbon")) {
-    	console.log('true');
+    	<em>console.log('true');</em>
         element.src="../imagens/pic\_bulboff.gif";
     } else {
-    	console.log('false');
+    	<em>console.log('false');</em>
         element.src="../imagens/pic\_bulbon.gif";
     }
 };
@@ -204,7 +204,7 @@ especificação o HTML)?
 
 E esse *document* antes da função, o que siginifica?
 
-Esse objeto faz parte do DOM, ele represneta o documento ativo, antes dele (um nível acima) temos o objeto *window* e o
+Esse objeto faz parte do DOM, ele representa o documento ativo, antes dele (um nível acima) temos o objeto *window* e o
 correto era escrever assim:
 
 	window.document.getElementById();
@@ -223,6 +223,8 @@ que acabamos de aprender.
 Já ouviu falar em eventos? Isso mesmo "onclick" nada mais é do que o evento click.
 
 Mas de quem é esse evento? Os eventos são anexados aos elementos, no nosso exemplo anexamos o evento a tag "img"
+
+	element.onclick = ...aqui entra uma função!!!
 
 Ao clicarmos na imagem... disparamos o evento.
 
@@ -294,11 +296,17 @@ Calma, ela é faz parte do objeto que buscamos com a função getElemntById().
 
 SCR é a abreviação de source e siginifica que o conteúdo da tag "img" é definido por essa tag, veja o trecho de HTML:
 
-	<img src="local-da-imagem-no-seu-hd"
+	<img src="local-da-imagem-no-seu-hd">
+
+E podemos acessar esse e outras propriedades via JS.
+
+
+
 
 ### match()
 
-Função utilizada para executar uma Expressão Regular (regexp), não me pergunte o que é isso ok?
+Função nativa do JS utilizada para executar uma Expressão Regular (regexp), não me pergunte o que é isso ok?
+
 Veremos sobre regexp em breve, ok?
 
 Nós estamos usando o valor da  propriedade "src" para descobrir se ela contém o trecho "bulbon".
