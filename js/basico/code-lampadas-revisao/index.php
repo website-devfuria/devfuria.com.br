@@ -13,9 +13,9 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria correta
  */
-define("CODE_LAMPADA", 3);
+define("CODE_LAMPADA_REV", 4);
 $materia = new Materia();
-$materia->carregar(Materia::idXML_JS, CODE_LAMPADA);
+$materia->carregar(Materia::idXML_JS, CODE_LAMPADA_REV);
 $materia->setNivel(Materia::BASICO);
 
 
