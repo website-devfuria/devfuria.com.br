@@ -19,5 +19,6 @@ var lampada = {
         lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
     }
 };
+//lampada.setEvento();
 
-lampada.setEvento();
+console.log(lampada.ligada);
