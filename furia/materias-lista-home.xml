@@ -87,7 +87,7 @@
                     <titulo>Code - A Lâmpada (refatorando)</titulo>
                     <url>js/basico/code-lampadas-refatorado/</url>
                     <pasta>js/basico/code-lampadas-refatorado/</pasta>
-                    <resumo>Voltamos mais uma vez para arrumar o código e aproveito para iniciar, bem de leve, o assunto OOP em Javascript.</resumo>
+                    <resumo>Quando escrevemos um código e, posteriomente, voltamos para ajustar algumas coisas, estamos praticando o refactoring. Quero dizer, estamos refatorando o código. O conceito intuitivo da palavra traz consigo a idéia de que "refatorar" é simplificar uma expressão. Não é isso o que vem a sua mente ?.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>08/07/2013</dt_criacao>
                     <dt_atualizacao>08/07/2013</dt_atualizacao>
