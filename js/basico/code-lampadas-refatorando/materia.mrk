@@ -404,10 +404,7 @@ var lampada = {
 
 Para o código funcionar de verdade, falta realizarmos a primeira chamada ao método que inicia as coisas.
 
-Ne nosso casso trata-se do método setEventos();
-
-E essa chamda fazmos no final de tudo, veja:
-
+Em nosso casso, trata-se do método setEventos() e essa chamada fazemos no final de tudo, veja:
 
 <div class="code">
 <h6>JS</h6>
@@ -454,7 +451,7 @@ Procure variações e pontos diferentes, vá anotando os nomes que aparecem, voc
 * false
 * true
 
-Se preferir baixe os arquivos através dos links: [codigo-refatorado.js](codigo-refatorado.js "Arquivo refatorado JS"), [lampadas.html](lampadas.html "Arquivo HTML").
+Se preferir, baixe os arquivos através dos links: [codigo-refatorado.js](codigo-refatorado.js "Arquivo refatorado JS"), [lampadas.html](lampadas.html "Arquivo HTML").
 
 Baixe também as imagens das lâmpadas: [lâmpada apagada](../../imagens/pic_bulboff.gif "lâmpada off"), 
 [lâmpada acesa](../../imagens/pic_bulbon.gif "lâmpada om")
