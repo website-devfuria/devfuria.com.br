@@ -19,8 +19,8 @@ define('DF', true);
 /**
  * Root
  */
-define('ROOT_PATH', "http://www.devfuria.com.br/");
-//define('ROOT_PATH', "http://localhost/devfuria/www.devfuria.com.br/");
+//define('ROOT_PATH', "http://www.devfuria.com.br/");
+define('ROOT_PATH', "http://localhost/devfuria/www.devfuria.com.br/");
 
 
 /**
