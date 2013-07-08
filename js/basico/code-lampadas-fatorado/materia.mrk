@@ -1,5 +1,5 @@
-Code - A lâmpada (revisão)
-=========================
+Code - A lâmpada (refatorado)
+=============================
 
 Estou insistindo neste pequeno trecho de código com o intuito de facilitar o aprendizado. Se você já lêu a
 matéria introdutória e a matéria anterior, então já conhece o código e terá menos trabalho para entender a matéria atual.
@@ -453,5 +453,12 @@ Procure variações e pontos diferentes, vá anotando os nomes que aparecem, voc
 * undefined
 * false
 * true
+
+Se preferir baixe os arquivos através dos links: [codigo-refatorado.js](codigo-refatorado.js "Arquivo refatorado JS"), [lampadas.html](lampadas.html "Arquivo HTML").
+
+Baixe também as imagens das lâmpadas: [lâmpada apagada](../../imagens/pic_bulboff.gif "lâmpada off"), 
+[lâmpada acesa](../../imagens/pic_bulbon.gif "lâmpada om")
+
+
 
 Agora chega de lâmpadas, na próxima matéria mudarei o assunto, até lá.

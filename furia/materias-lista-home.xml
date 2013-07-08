@@ -75,7 +75,7 @@
                     <dt_atualizacao>30/04/2013</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>Code- A Lâmpada</titulo>
+                    <titulo>Code - A Lâmpada</titulo>
                     <url>js/basico/code-lampadas/</url>
                     <pasta>js/basico/code-lampadas/</pasta>
                     <resumo>Vamos revisitar o pequeno código da lámpada que vimos na primeira matéria de JS. Primeiro, não posso deixar de comentar que programar no lado cliente é uma tarefa que exige muita criatividade. Esse exemplo ilustra bem isso. O objetivo do script é dar a sensação de que estamos apagando e acendendo uma lâmpada.</resumo>
@@ -84,10 +84,10 @@
                     <dt_atualizacao>05/07/2013</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>Code- A Lâmpada (revisão)</titulo>
-                    <url>js/basico/code-lampadas-revisao/</url>
-                    <pasta>js/basico/code-lampadas-revisao/</pasta>
-                    <resumo>Voltamos mais uma vez para arrumar o códigoe aproveito para iniciar o assunto OOP em Javascript (bem de leve).</resumo>
+                    <titulo>Code - A Lâmpada (refatorando)</titulo>
+                    <url>js/basico/code-lampadas-refatorado/</url>
+                    <pasta>js/basico/code-lampadas-refatorado/</pasta>
+                    <resumo>Voltamos mais uma vez para arrumar o código e aproveito para iniciar, bem de leve, o assunto OOP em Javascript.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>08/07/2013</dt_criacao>
                     <dt_atualizacao>08/07/2013</dt_atualizacao>
