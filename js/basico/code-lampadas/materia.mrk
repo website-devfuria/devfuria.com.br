@@ -4,7 +4,7 @@ Code - A lâmpada
 Nessa matéria utilizarei o apoio da ferramenta Codepen, ela me permite escrever um pequeno trecho de código e compartilhar
 ele aqui no devfuria. Espero que isso facilite a didática.
 
-Clique nas abas e o Codepen mostra as partes separadamnete: HTML, JS e resultado.
+Clique nas abas e o Codepen mostra as partes separadamente: HTML, JS e resultado.
 
 Experimente:
 
@@ -212,7 +212,7 @@ correto era escrever assim:
 
 	window.document.getElementById();
 
-...mas isso é verboso demais e o obejto "window" pôde ser suprimido, mas ele ainda existe nos navegadores (muito 
+...mas isso é verboso demais. O objeto "window" pôde ser suprimido, mas ele ainda existe nos navegadores (muito 
 provavelmente para garantir a retocompatibilidade).
 
 Para simplificar as coisas, vamos encarar o document como um objeto importante e que contém funções importantes como a 
@@ -327,5 +327,20 @@ se não
 </div>
 
 
+### Conclusão
 
-Belo começo hei!
+Se você sobreviveu até aqui, parabéns!
+
+Vimos algumas coisas bem básicas, o objetivo era lhe proporcionar um primeiro contato com a linguagem de forma prática
+(bem prática).
+
+Outros tutorias passam apenas a especificação da linguagem, com sorte eles mostram um pequeno exemplo.
+
+Eu preferi, a partir de um exemplo, ir desenvolvendo e desenrolando as partes do código.
+
+Na próxima matéria ainda veremos este código da lâmpada, nós faremos outros experimentos com ele.
+
+Aproveitando este código, você não terá muito esforço para entender o seu funcionamento e aproveitará (assim espero)
+para focar no aprendizado da linguagem, esse é o objetivo.
+
+Até lá.
