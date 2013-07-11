@@ -58,7 +58,7 @@ class Materia {
 
 
     /**
-     * Carrega as listas das matérias por assunto (seção)
+     * Carrega as listas das matérias por seção
      * 
      * @return type
      */
@@ -91,7 +91,8 @@ class Materia {
     }
 
     /**
-     * Carrega as matérias ocnforme o XML
+     * Carrega as matérias conforme o XML.
+     * Utilizado, inclusive, na home para listar as metérias.
      * 
      * @param type $secao
      * @return type
@@ -118,7 +119,7 @@ class Materia {
                 $materias = $xml->secao[4]->nivel->basico->materia;
                 break;
             case self::LOGICA:
-                $materias = $xml->secao[3]->nivel->basico->materia;
+                $materias = $xml->secao[5]->nivel->basico->materia;
                 break;
         }
 
