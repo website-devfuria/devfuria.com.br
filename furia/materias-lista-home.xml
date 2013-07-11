@@ -139,6 +139,20 @@
         </nivel>
     </secao>
     <secao>
+        <nome>mysql</nome>
+        <nivel>
+            <basico>
+            </basico>
+        </nivel>
+    </secao>
+    <secao>
+        <nome>regexp</nome>
+        <nivel>
+            <basico>
+            </basico>
+        </nivel>
+    </secao>
+    <secao>
         <nome>lógica</nome>
         <nivel>
             <basico>

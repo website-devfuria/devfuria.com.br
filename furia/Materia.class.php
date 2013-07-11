@@ -11,9 +11,9 @@ class Materia {
     const INTER  = "intermediário";
     const AVANC  = "avançado";
     
+    const LOGICA   = "logica";
     const REGEXP   = "regexp";
     const MYSQL    = "mysql";
-    const LOGICA   = "logica";
     const PHP      = "php";
     const JS       = "js";
     const HTML_CSS = "html-css";
@@ -111,12 +111,12 @@ class Materia {
             case self::PHP:
                 $materias = $xml->secao[2]->nivel->basico->materia;
                 break;
-//            case self::MYSQL:
-//                $materias = $xml->secao[3]->nivel->basico->materia;
-//                break;
-//            case self::REGEXP:
-//                $materias = $xml->secao[4]->nivel->basico->materia;
-//                break;
+            case self::MYSQL:
+                $materias = $xml->secao[3]->nivel->basico->materia;
+                break;
+            case self::REGEXP:
+                $materias = $xml->secao[4]->nivel->basico->materia;
+                break;
             case self::LOGICA:
                 $materias = $xml->secao[3]->nivel->basico->materia;
                 break;
