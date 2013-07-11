@@ -11,10 +11,16 @@ class Materia {
     const INTER  = "intermediário";
     const AVANC  = "avançado";
     
+    const REGEXP   = "regexp";
+    const MYSQL    = "mysql";
+    const LOGICA   = "logica";
     const PHP      = "php";
     const JS       = "js";
     const HTML_CSS = "html-css";
  
+    const idXML_REGEXP   = 5;
+    const idXML_MYSQL    = 4;
+    const idXML_LOGICA   = 3;
     const idXML_PHP      = 2;
     const idXML_JS       = 1;
     const idXML_HTML_CSS = 0;    

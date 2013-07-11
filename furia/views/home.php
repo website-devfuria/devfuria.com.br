@@ -93,7 +93,7 @@
                         <a href="<?php echo LINKS_PATH?>logica/">
                             <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-logica-de-progr.png" alt="php">
                         </a>
-                        <?php $materias = Materia::getObjects(Materia::PHP); ?>
+                        <?php $materias = Materia::getObjects(Materia::LOGICA); ?>
                         <ul class="nav nav-pills nav-stacked">
                             <li><span class="badge badge-success">Básico</span></li>
                             <li>
@@ -111,16 +111,9 @@
                         <a href="<?php echo LINKS_PATH?>regexp/">
                             <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-regexp.jpg" alt="javascript">
                         </a>
-                        <?php $materias = Materia::getObjects(Materia::JS); ?>
+                        <?php $materias = Materia::getObjects(Materia::REGEXP); ?>
                         <ul class="nav nav-pills nav-stacked">
-                            <li><span class="badge badge-success">Básico</span></li>
-                            <li>
-                                <ul class="nav nav-pills nav-stacked">
-                                    <?php foreach ($materias as $materia): ?>
-                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </li>
+                            <li><span class="badge badge-success">Em breve</span></li>
                         </ul>
                     </div>
                 </li>
@@ -129,16 +122,9 @@
                         <a href="<?php echo LINKS_PATH?>mysql/">
                             <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-mysql.jpg" alt="html e css">
                         </a>
-                        <?php $materias = Materia::getObjects(Materia::HTML_CSS); ?>
+                        <?php $materias = Materia::getObjects(Materia::MYSQL); ?>
                         <ul class="nav nav-pills nav-stacked">
-                            <li><span class="badge badge-success">Básico</span></li>
-                            <li>
-                                <ul class="nav nav-pills nav-stacked">
-                                    <?php foreach ($materias as $materia): ?>
-                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </li>
+                            <li><span class="badge badge-success">Em breve</span></li>
                         </ul>
                     </div>
                 </li>
