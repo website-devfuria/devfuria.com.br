@@ -11,11 +11,11 @@ require "../../../furia/boot.php";
 
 
 /**
- * Instancia a matéria
+ * Instancia a matéria correta
  */
-define("LOGICA_DE_PROGRAMACAO", 1);
+define("ESTUDOS_LOG_1_5", 1);
 $materia = new Materia();
-$materia->carregar(Materia::idXML_PHP, LOGICA_DE_PROGRAMACAO);
+$materia->carregar(Materia::idXML_LOGICA, ESTUDOS_LOG_1_5);
 $materia->setNivel(Materia::BASICO);
 
 

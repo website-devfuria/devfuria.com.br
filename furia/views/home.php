@@ -109,7 +109,7 @@
                 <li class="span4">
                     <div class="thumbnail" >
                         <a href="<?php echo LINKS_PATH?>regexp/">
-                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-regexp.jpg" alt="javascript">
+                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-regexp.jpg" alt="logo expressões regulares">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::REGEXP); ?>
                         <ul class="nav nav-pills nav-stacked">
@@ -120,7 +120,7 @@
                 <li class="span4">
                     <div class="thumbnail">
                         <a href="<?php echo LINKS_PATH?>mysql/">
-                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-mysql.jpg" alt="html e css">
+                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-mysql.jpg" alt="logo mysql">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::MYSQL); ?>
                         <ul class="nav nav-pills nav-stacked">
