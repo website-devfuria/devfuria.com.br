@@ -94,10 +94,6 @@
                             <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-logica-de-progr.png" alt="php">
                         </a>
                         <?php $materias = Materia::getObjects(Materia::LOGICA); ?>
-                        <?php
-                        var_dump(Materia::LOGICA);
-                        ?>
-                        
                         <ul class="nav nav-pills nav-stacked">
                             <li><span class="badge badge-success">Básico</span></li>
                             <li>
