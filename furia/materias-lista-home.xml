@@ -11,7 +11,7 @@
                     <resumo>Tim Berners-Lee, a culpa é toda dele. No começo dos anos 90, o dito cujo, inventou o HTML (HyperText Markup Language) que significa Linguagem de Marcação de Hipertexto. Ele queria facilitar a comunicação de suas pesquisas com seus colegas e acabou resolvendo o problema de todo mundo, nascia a web.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>23/01/2013</dt_criacao>
-                    <dt_atualizacao>11/02/2013</dt_atualizacao>                    
+                    <dt_atualizacao>11/02/2013</dt_atualizacao>
                 </materia>
                 <materia>
                     <titulo>HTML e CSS - Introdução</titulo>
@@ -20,8 +20,8 @@
                     <resumo>Vamos dar uma rápida olhada nas tag's básicas e uma "passeada" com o CSS.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>23/01/2013</dt_criacao>
-                    <dt_atualizacao>11/02/2013</dt_atualizacao>                    
-                </materia>  
+                    <dt_atualizacao>11/02/2013</dt_atualizacao>
+                </materia>
                 <materia>
                     <titulo>Elementos in-line e elementos block-level</titulo>
                     <url>html-css/basico/elementos-inline-block-level/</url>
@@ -29,7 +29,7 @@
                     <resumo> Há dois tipos básicos de tag's: as in-line e de block-level. A diferênça básica é que o browser acomoda os elementos inline à esquerda um ao lado do outro e as de bloco ele coloca uma embaixo da outra ocupando a tela toda. Veja o HTML abaixo para *entender* e clique no [link](code1.html "Veja a pagina em funcionamento") para *perceber* como ele foi reenderizado.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>23/01/2013</dt_criacao>
-                    <dt_atualizacao>11/02/2013</dt_atualizacao>                    
+                    <dt_atualizacao>11/02/2013</dt_atualizacao>
                 </materia>
                 <materia>
                     <titulo>Criando nosso primeiro HTML [com vídeo]</titulo>
@@ -38,8 +38,8 @@
                     <resumo>O site www.csszengarden.com é notório por seus esforços em promover e divulgar o poder do CSS unido a um bom HTML. Ele tráz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e desafiaram designers solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utilizar o tema/estilo que quiser, mas não poderá jamais alterar o HTML e sua estrutura </resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>12/04/2013</dt_criacao>
-                    <dt_atualizacao>12/04/2013</dt_atualizacao>                    
-                </materia>                
+                    <dt_atualizacao>12/04/2013</dt_atualizacao>
+                </materia>
             </basico>
         </nivel>
     </secao>
@@ -54,7 +54,7 @@
                     <resumo>JavaScript(JS) não é brinquedo, é linguagem de programação séria. Das mil definições de JS a que mais me agrada é a de Kevin e Cameron em seu livro Simple JavaScript (Só JavaScript) 'JavaScript é uma linguagem de programação simples que permite alterar páginas web dinamicamente, enquanto estão sendo exibidas em um navegador.'. </resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>08/10/2012</dt_criacao>
-                    <dt_atualizacao>08/11/2012</dt_atualizacao>                    
+                    <dt_atualizacao>08/11/2012</dt_atualizacao>
                 </materia>
                 <materia>
                     <titulo>Preparando o terreno</titulo>
@@ -63,7 +63,7 @@
                     <resumo>Na matéria de introdução eu comentei que vamos aprender JS junto com HTML e CSS. Na verdade vamos aprender as coisas separadamente, porém vamos trabalhar com os três elementos como se fosse ingredientes obrigatórios em cada receita. Neste ponto é importante entendermos a obrigação de cada um desses componentes. O JS será encarregado do comportamento da página, da interação com o usuário, dos enventos possíveis (click, duplo click, teclado, movimentação do mouse, e etc...), de tudo aquilo que pode beneficinar a interface do sistema.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>08/10/2012</dt_criacao>
-                    <dt_atualizacao>08/11/2012</dt_atualizacao>               
+                    <dt_atualizacao>08/11/2012</dt_atualizacao>
                 </materia>
                 <materia>
                     <titulo>Debugando (depurando) [com vídeo]</titulo>
@@ -72,17 +72,26 @@
                     <resumo>"Precisamos debugar o programa para sabermos onde [e como] está ocorrendo o erro". Essa frase faz parte do dia a dia do desenvolvedor e, não raro, ela tira o sono de muita gente.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>10/04/2013</dt_criacao>
-                    <dt_atualizacao>30/04/2013</dt_atualizacao>                    
-                </materia>                
+                    <dt_atualizacao>30/04/2013</dt_atualizacao>
+                </materia>
                 <materia>
-                    <titulo>Code- A Lâmpada</titulo>
+                    <titulo>Code - A Lâmpada</titulo>
                     <url>js/basico/code-lampadas/</url>
                     <pasta>js/basico/code-lampadas/</pasta>
                     <resumo>Vamos revisitar o pequeno código da lámpada que vimos na primeira matéria de JS. Primeiro, não posso deixar de comentar que programar no lado cliente é uma tarefa que exige muita criatividade. Esse exemplo ilustra bem isso. O objetivo do script é dar a sensação de que estamos apagando e acendendo uma lâmpada.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>05/07/2013</dt_criacao>
-                    <dt_atualizacao>05/07/2013</dt_atualizacao>                    
-                </materia>                
+                    <dt_atualizacao>05/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Code - A Lâmpada (refatorando)</titulo>
+                    <url>js/basico/code-lampadas-refatorando/</url>
+                    <pasta>js/basico/code-lampadas-refatorando/</pasta>
+                    <resumo>Quando escrevemos um código e, posteriomente, voltamos para ajustar algumas coisas, estamos praticando o refactoring. Quero dizer, estamos refatorando o código. O conceito intuitivo da palavra traz consigo a idéia de que "refatorar" é simplificar uma expressão. Não é isso o que vem a sua mente ?.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>08/07/2013</dt_criacao>
+                    <dt_atualizacao>08/07/2013</dt_atualizacao>
+                </materia>
             </basico>
         </nivel>
     </secao>
@@ -104,7 +113,7 @@
                     <url>php/basico/logica-de-programacao</url>
                     <pasta>php/basico/logica-de-programacao/</pasta>
                     <resumo>A lógica de programação é um exercício mental. Ela equivale aos exercícios físicos e todo programador deve praticar, não apenas no início do aprendizado mas no decorrer de toda a “estrada”. Programar um computador é uma atividade, antes de tudo, criativa. Quando a criatividade se une com o raciocínio lógico temos a lógica de programação. E programar nada mais é do que instruir o computador a resolver problemas... usando a lógica de forma criativa.</resumo>
-                    <autor>Flávio Micheletti</autor>                    
+                    <autor>Flávio Micheletti</autor>
                     <dt_criacao>05/06/2012</dt_criacao>
                     <dt_atualizacao>11/09/2012</dt_atualizacao>
                 </materia>
@@ -116,7 +125,7 @@
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>05/06/2012</dt_criacao>
                     <dt_atualizacao>11/09/2012</dt_atualizacao>
-                </materia>                
+                </materia>
                 <materia>
                     <titulo>Instalando o ambiente no estilo NEXT, NEXT, NEXT</titulo>
                     <url>php/basico/instalando-o-ambiente/</url>
@@ -125,7 +134,7 @@
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>05/06/2012</dt_criacao>
                     <dt_atualizacao>11/09/2012</dt_atualizacao>
-                </materia>                
+                </materia>
                 <materia>
                     <titulo>Estudos de lógica com respostas (1 ao 5)</titulo>
                     <url>php/basico/estudos-de-logica-1-ao-5/</url>
@@ -133,8 +142,8 @@
                     <resumo>Você já sabe o que é PHP, conhece a sintaxe básica, lêu o artigo “pé na jáca”, já conseguiu “subir’ o ambiente de desenvolvimento. Agora só falta começar a programar. Para isso vamos começar exercitando a lógica de programação. Não vamos criar programas completos e profissionais, nada disso. Construiremos apenas pequenos trechos de códigos para exercitar o raciocínio e desenvolver uma intimidade com a linguagem.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>05/06/2012</dt_criacao>
-                    <dt_atualizacao>11/09/2012</dt_atualizacao>                 
-                </materia>                
+                    <dt_atualizacao>11/09/2012</dt_atualizacao>
+                </materia>
                 <materia>
                     <titulo>Estudos de lógica com respostas (6 ao 10)</titulo>
                     <url>php/basico/estudos-de-logica-6-ao-10/</url>
@@ -142,8 +151,8 @@
                     <resumo>Esta é a segunda bateria de exercícios de lógica. </resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>05/06/2012</dt_criacao>
-                    <dt_atualizacao>04/02/2013</dt_atualizacao>                  
-                </materia>                
+                    <dt_atualizacao>04/02/2013</dt_atualizacao>
+                </materia>
                 <materia>
                     <titulo>Debugando (depurando)</titulo>
                     <url>php/basico/debugando/</url>
@@ -151,8 +160,8 @@
                     <resumo>Debugar é um esforço para encontrar determinado ponto (às vezes vários pontos) "defeituoso" no código para que seja corrigido.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>10/04/2013</dt_criacao>
-                    <dt_atualizacao>10/04/2013</dt_atualizacao>                  
-                </materia>                
+                    <dt_atualizacao>10/04/2013</dt_atualizacao>
+                </materia>
             </basico>
         </nivel>
     </secao>

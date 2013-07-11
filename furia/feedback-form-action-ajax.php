@@ -51,7 +51,7 @@ try {
     $headers .= "Content-type: text/html; charset=utf-8\n";
     $headers .= "From: $from\n";
     $headers .= "Reply-To: $from\n";
-    $res = mail($to, $subject, $message, $headers);
+    $res = mail($to, $subject, $message, $headers, "-f $from ");
 
     /**
      * Conseguimos enviar o email?
@@ -73,7 +73,7 @@ try {
     $headers .= "Reply-To: $from\n";
     $headers .= "Cc: flaviomicheletti@hotmail.com";
 
-    $res = mail($to, $subject, $message, $headers);
+    $res = mail($to, $subject, $message, $headers, "-f $from ");
 
     /**
      * Conseguimos enviar o email?
