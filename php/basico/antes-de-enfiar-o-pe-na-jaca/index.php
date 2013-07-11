@@ -13,7 +13,7 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria
  */
-define("PE_NA_JACA", 2);
+define("PE_NA_JACA", 1);
 $materia = new Materia();
 $materia->carregar(Materia::idXML_PHP, PE_NA_JACA);
 $materia->setNivel(Materia::BASICO);
