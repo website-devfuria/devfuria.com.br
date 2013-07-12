@@ -189,3 +189,38 @@ Para saber mais, inclusive sobre os demais parâmetros não comentados, veja a d
 
 ### JS - 
 
+
+
+
+<h6>JS</h6>
+<pre>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Exemplo de ExpReg com string.match()</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body></body>
+    <script type="text/javascript" >
+
+    </script>
+</html></pre>
+</div>
+
+
+
+<h6>JS</h6>
+<pre>
+var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
+    pattern = /ca.a/,
+    resultado;
+
+// Executa nossa expressão
+resultado = string.match(pattern);
+
+if (resultado) {
+    console.log("casou", resultado);
+} else {
+    console.log("não casou", resultado);
+}</pre>
+</div>
