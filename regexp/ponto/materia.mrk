@@ -187,29 +187,28 @@ Para saber mais, inclusive sobre os demais parâmetros não comentados, veja a d
 [http://www.php.net/manual/pt_BR/function.preg-match.php](http://www.php.net/manual/pt_BR/function.preg-match.php)
 
 
-### JS - 
+
+### JS - string.match()
 
 
 
-
-<h6>JS</h6>
-<pre>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Exemplo de ExpReg com string.match()</title>
-        <meta charset="UTF-8" />
-    </head>
-    <body></body>
-    <script type="text/javascript" >
-
-    </script>
-</html></pre>
+<div class="code">
+<h6>HTML string-match.html</h6>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+        &lt;title&gt;string.match&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;script type="text/javascript" src="string-match.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
 </div>
 
 
-
-<h6>JS</h6>
+<div class="code">
+<h6>JS string-match.js</h6>
 <pre>
 var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/,
