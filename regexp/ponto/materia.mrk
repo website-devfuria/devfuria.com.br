@@ -55,6 +55,23 @@ O ponto também casa com ele próprio.
 </div>
 
 
+### Palavras que parcem-se com horas:
+<div class="imagem">
+    <img src="ponto-pag42-horas.png" alt="Exemplo de Expressão Regular" />
+    <p>Fonte:
+        <a href="http://www.piazinho.com.br/ed3/exemplos.html#5">Livro: Expressões Regulares 3 edição, pag 42#5</a>
+    </p>
+</div>
+
+### Tags de HTML:
+<div class="imagem">
+    <img src="ponto-pag42-tags.png" alt="Exemplo de Expressão Regular" />
+    <p>Fonte:
+        <a href="http://www.piazinho.com.br/ed3/exemplos.html#6">Livro: Expressões Regulares 3 edição, pag 42#6</a>
+    </p>
+</div>
+
+
 ### PHP - preg\_match()
 
 Segundo o Marinho, as funções PCRE são mais rápidas que as POSIX e para funcionarem o PHP deverá ser compilado com 
