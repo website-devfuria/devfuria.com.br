@@ -57,7 +57,7 @@ O ponto também casa com ele próprio.
 
 ### PHP - preg\_match()
 
-Segundo o Marinho, as funções  PCRE são mais rápidas que as POSIX e para funcionarem o PHP deverá ser compilado com 
+Segundo o Marinho, as funções PCRE são mais rápidas que as POSIX e para funcionarem o PHP deverá ser compilado com 
 suporte a bilioteca PCRE.
 
 No primeiro exemplo utilizo a função *preg_match()*, ela aceita 5 parâmetros. Por enquanto os três primeiros nos basta.
@@ -190,25 +190,11 @@ Para saber mais, inclusive sobre os demais parâmetros não comentados, veja a d
 
 ### JS - string.match()
 
-
-
-<div class="code">
-<h6>HTML string-match.html</h6>
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-        &lt;title&gt;string.match&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;script type="text/javascript" src="string-match.js"&gt;&lt;/script&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</pre>
-</div>
-
+Em JS temos a forma *string.match()* onde "string" é a variável contendo a sua string e "match()" é a função que evocamos
+para executar a ER.
 
 <div class="code">
-<h6>JS string-match.js</h6>
+<h6>JS forma1-string-match.js</h6>
 <pre>
 var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/,
@@ -221,5 +207,93 @@ if (resultado) {
     console.log("casou", resultado);
 } else {
     console.log("não casou", resultado);
-}</pre>
+}
+</pre>
+</div>
+
+Se a ER casar com a string então a variável *resultado* conterá um array com a parte que casou, mas apenas a primeira
+ocorrência.
+
+Se você precisar das demais ocorrências terá que fazer uma pequena alteração na ER, veja:
+
+    pattern = /ca.a/g,
+
+Tivemos que incluir a opção "g" de "global", veja mais na
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FGlobal_Objects%2FString%2Fmatch">documentação oficial</a>.
+
+
+
+
+### JS - pattern.test()
+
+Abaixo temos a forma mais usual em JS, ou pelo menos é a mais comentada.
+
+Diferentemente da primeira função (string.match), o valor da variável *resultado* será true ou false e a opção global
+"g" não funcionou, sou seja, não descobri uma forma de olhar as demais ocorrência, apenas a primeira.
+
+<div class="code">
+<h6>JS forma2-patter-test.js</h6>
+<pre>
+var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
+    pattern = /ca.a/,
+    resultado;
+
+// Executa nossa expressão
+resultado = pattern.test(string);
+
+if (resultado) {
+    console.log("casou", resultado);
+} else {
+    console.log("não casou", resultado);
+}
+</pre>
+</div>
+
+Uma forma variante porém semelhante é a encontrada abaixo:
+
+<div class="code">
+<h6>JS forma3-patter-test.js</h6>
+<pre>
+var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
+    pattern,
+    resultado;
+
+// Executa nossa expressão
+<em>pattern = new RegExp("ca.a");</em>
+resultado = pattern.test(string);
+
+if (resultado) {
+    console.log("casou", resultado);
+} else {
+    console.log("não casou", resultado);
+}
+</pre>
+</div>
+
+O atrativo dessa variante é que a ER criada apartir de uma string lhe dá mair poder de flaxibilidade e, obviamente, 
+maior responsabilidade.
+
+Lembre-se do conselho do tio do homen-aranha: "quanto maior o poder, maior a responsabilidade"
+
+
+
+### JS - pattern.exec()
+
+Essa também é uma forma bastante utilizada, principalmente pelo fato dela trazer todas as ocorrências.
+
+Repare apenas que a opção global "g" teve que ser utilizada, sem ela o navegador (FireFox 19) entra em um loop infinito.
+
+<div class="code">
+<h6>JS forma3-patter-test.js</h6>
+<pre>
+var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
+    pattern = /ca.a/g,
+    resultado;
+
+// Executa nossa expressão
+var i = 0;
+while(resultado = pattern.exec(string)){
+    console.log("casou", resultado);
+}
+</pre>
 </div>
