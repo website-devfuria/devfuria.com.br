@@ -70,6 +70,10 @@ define('KEYWORDS_PHP', "php básico; php fácil; php início; php iniciante; php
 define('KEYWORDS_JS', "javascript básico; javascript fácil; javascript início; javascript iniciante; ".
                       "javascript iniciando; javascript iniciante; começando com javascript; começando no javascript; ".
                       "javascript descomplicado; aprendendo javascript; matéria sobre javascript; aula sobre javascript; ");
+define('KEYWORDS_HTMLCSS', "");
+define('KEYWORDS_LOGICA', "");
+define('KEYWORDS_REGEXP', "");
+define('KEYWORDS_MYSQL', "");
 
 
 /**
