@@ -7,7 +7,7 @@
 /**
  * Includes
  */
-require "../furia/boot.php";
+require "../../furia/boot.php";
 
 
 /**

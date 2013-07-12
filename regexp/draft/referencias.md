@@ -37,7 +37,9 @@ Live exemplos do livro do Marinho
 
 Aplicações para testar e aprender Regexp
 
+
+    http://www.debuggex.com/
+    http://www.regexplanet.com/
     http://regexpal.com/
     http://regex.larsolavtorvik.com/
-    http://tools.lymas.com.br/regexp_br.php#
 
