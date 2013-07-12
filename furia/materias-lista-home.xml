@@ -109,15 +109,6 @@
                     <dt_atualizacao>11/09/2012</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>Lógica de programação</titulo>
-                    <url>php/basico/logica-de-programacao</url>
-                    <pasta>php/basico/logica-de-programacao/</pasta>
-                    <resumo>A lógica de programação é um exercício mental. Ela equivale aos exercícios físicos e todo programador deve praticar, não apenas no início do aprendizado mas no decorrer de toda a “estrada”. Programar um computador é uma atividade, antes de tudo, criativa. Quando a criatividade se une com o raciocínio lógico temos a lógica de programação. E programar nada mais é do que instruir o computador a resolver problemas... usando a lógica de forma criativa.</resumo>
-                    <autor>Flávio Micheletti</autor>
-                    <dt_criacao>05/06/2012</dt_criacao>
-                    <dt_atualizacao>11/09/2012</dt_atualizacao>
-                </materia>
-                <materia>
                     <titulo>Antes de enfiar o pé na jáca</titulo>
                     <url>php/basico/antes-de-enfiar-o-pe-na-jaca/</url>
                     <pasta>php/basico/antes-de-enfiar-o-pe-na-jaca/</pasta>
@@ -136,24 +127,6 @@
                     <dt_atualizacao>11/09/2012</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>Estudos de lógica com respostas (1 ao 5)</titulo>
-                    <url>php/basico/estudos-de-logica-1-ao-5/</url>
-                    <pasta>php/basico/estudos-de-logica-1-ao-5/</pasta>
-                    <resumo>Você já sabe o que é PHP, conhece a sintaxe básica, lêu o artigo “pé na jáca”, já conseguiu “subir’ o ambiente de desenvolvimento. Agora só falta começar a programar. Para isso vamos começar exercitando a lógica de programação. Não vamos criar programas completos e profissionais, nada disso. Construiremos apenas pequenos trechos de códigos para exercitar o raciocínio e desenvolver uma intimidade com a linguagem.</resumo>
-                    <autor>Flávio Micheletti</autor>
-                    <dt_criacao>05/06/2012</dt_criacao>
-                    <dt_atualizacao>11/09/2012</dt_atualizacao>
-                </materia>
-                <materia>
-                    <titulo>Estudos de lógica com respostas (6 ao 10)</titulo>
-                    <url>php/basico/estudos-de-logica-6-ao-10/</url>
-                    <pasta>php/basico/estudos-de-logica-6-ao-10/</pasta>
-                    <resumo>Esta é a segunda bateria de exercícios de lógica. </resumo>
-                    <autor>Flávio Micheletti</autor>
-                    <dt_criacao>05/06/2012</dt_criacao>
-                    <dt_atualizacao>04/02/2013</dt_atualizacao>
-                </materia>
-                <materia>
                     <titulo>Debugando (depurando)</titulo>
                     <url>php/basico/debugando/</url>
                     <pasta>php/basico/debugando/</pasta>
@@ -161,6 +134,54 @@
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>10/04/2013</dt_criacao>
                     <dt_atualizacao>10/04/2013</dt_atualizacao>
+                </materia>
+            </basico>
+        </nivel>
+    </secao>
+    <secao>
+        <nome>mysql</nome>
+        <nivel>
+            <basico>
+            </basico>
+        </nivel>
+    </secao>
+    <secao>
+        <nome>regexp</nome>
+        <nivel>
+            <basico>
+            </basico>
+        </nivel>
+    </secao>
+    <secao>
+        <nome>logica</nome>
+        <nivel>
+            <basico>
+                <materia>
+                    <titulo>Lógica de programação</titulo>
+                    <url>logica/basico/logica-de-programacao</url>
+                    <pasta>logica/basico/logica-de-programacao/</pasta>
+                    <resumo>A lógica de programação é um exercício mental. Ela equivale aos exercícios físicos e todo programador deve praticar, não apenas no início do aprendizado mas no decorrer de toda a “estrada”. Programar um computador é uma atividade, antes de tudo, criativa. Quando a criatividade se une com o raciocínio lógico temos a lógica de programação. E programar nada mais é do que instruir o computador a resolver problemas... usando a lógica de forma criativa.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/09/2012</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Estudos de lógica com respostas (1 ao 5)</titulo>
+                    <url>logica/basico/estudos-de-logica-1-ao-5/</url>
+                    <pasta>logica/basico/estudos-de-logica-1-ao-5/</pasta>
+                    <resumo>Você já sabe o que é PHP, conhece a sintaxe básica, lêu o artigo “pé na jáca”, já conseguiu “subir’ o ambiente de desenvolvimento. Agora só falta começar a programar. Para isso vamos começar exercitando a lógica de programação. Não vamos criar programas completos e profissionais, nada disso. Construiremos apenas pequenos trechos de códigos para exercitar o raciocínio e desenvolver uma intimidade com a linguagem.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/09/2012</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Estudos de lógica com respostas (6 ao 10)</titulo>
+                    <url>logica/basico/estudos-de-logica-6-ao-10/</url>
+                    <pasta>logica/basico/estudos-de-logica-6-ao-10/</pasta>
+                    <resumo>Esta é a segunda bateria de exercícios de lógica. </resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>04/02/2013</dt_atualizacao>
                 </materia>
             </basico>
         </nivel>

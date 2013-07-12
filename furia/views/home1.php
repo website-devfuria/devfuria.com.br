@@ -87,48 +87,6 @@
                     </div>
                 </li>
             </ul>
-            <ul class="thumbnails">
-                <li class="span4">
-                    <div class="thumbnail">
-                        <a href="<?php echo LINKS_PATH?>logica/">
-                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-logica-de-progr.png" alt="php">
-                        </a>
-                        <?php $materias = Materia::getObjects(Materia::LOGICA); ?>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><span class="badge badge-success">Básico</span></li>
-                            <li>
-                                <ul class="nav nav-pills nav-stacked">
-                                    <?php foreach ($materias as $materia): ?>
-                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="span4">
-                    <div class="thumbnail" >
-                        <a href="<?php echo LINKS_PATH?>regexp/">
-                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-regexp.jpg" alt="logo expressões regulares">
-                        </a>
-                        <?php $materias = Materia::getObjects(Materia::REGEXP); ?>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><span class="badge badge-success">Em breve</span></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="span4">
-                    <div class="thumbnail">
-                        <a href="<?php echo LINKS_PATH?>mysql/">
-                            <img src="<?php echo LINKS_PATH; ?>furia/imagens/logo-mysql.jpg" alt="logo mysql">
-                        </a>
-                        <?php $materias = Materia::getObjects(Materia::MYSQL); ?>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><span class="badge badge-success">Em breve</span></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
 
             <div class="row">
                 <div class="span12">

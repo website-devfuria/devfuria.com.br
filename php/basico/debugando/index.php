@@ -13,7 +13,7 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria correta
  */
-define("DEBUGANDO", 6);
+define("DEBUGANDO", 3);
 $materia = new Materia();
 $materia->carregar(Materia::idXML_PHP, DEBUGANDO);
 $materia->setNivel(Materia::BASICO);

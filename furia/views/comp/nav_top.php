@@ -7,7 +7,8 @@ defined('DF') or die;
 $secoes = array(
     "php"      => "PHP",
     "js"       => "Javascript",
-    "html-css" => "HTML & CSS"
+    "html-css" => "HTML & CSS",
+    "logica"   => "Lógica de Programação"
 );
 
 /**
