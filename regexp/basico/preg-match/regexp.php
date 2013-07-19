@@ -1,7 +1,7 @@
 <?php
 
-$subject   = "PHP PCRE";
-$pattern   = "//";
+$pattern   = "/(exemplo/";
+$subject   = "Casa com a palavra exemplo";
 $retorno = array();
 
 # Executa nossa expressão
