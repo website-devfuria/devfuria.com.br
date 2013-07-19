@@ -1,11 +1,14 @@
 Sabor PHP PCRE
 ==============
 
-
-### PHP - preg\_match()
-
 Segundo o Marinho, as funções PCRE são mais rápidas que as POSIX e para funcionarem o PHP deverá ser compilado com 
 suporte a bilioteca PCRE.
+
+
+
+
+### preg\_match()
+
 
 No primeiro exemplo utilizo a função *preg_match()*, ela aceita 5 parâmetros. Por enquanto os três primeiros nos basta.
 
@@ -65,7 +68,7 @@ Repare também que eu testo a variável *$resultado* de 3 maneiras:
 
 
 
-### PHP - preg\_match\_all()
+### preg\_match\_all()
 
 No exemplo anterior, o resultado retornado pela função preg_math() foi o primeiro valor que casou no caso a sttring "casa",
 veja a figura abaixo:
