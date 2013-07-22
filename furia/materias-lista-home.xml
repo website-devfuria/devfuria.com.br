@@ -153,11 +153,29 @@
                     <titulo>Introdução</titulo>
                     <url>regexp/basico/intro</url>
                     <pasta>regexp/basico/intro/</pasta>
-                    <resumo></resumo>
+                    <resumo>Expressões Regulares é uma técnica para procurar, de forma bem específica, um texto abrangente.OK, essa não é a definição formal de ER, é apenas uma variação da resposta encontrada por Aurélio Marinho para a seguinte pergunta: Para que servem ? Basicamente, servem para você dizer algo abrangente de forma específica.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>22/07/2013</dt_criacao>
                     <dt_atualizacao>22/07/2013</dt_atualizacao>
-                </materia>                
+                </materia>
+                <materia>
+                    <titulo>preg_match()</titulo>
+                    <url>regexp/basico/preg-match</url>
+                    <pasta>regexp/basico/preg-match/</pasta>
+                    <resumo>A função preg_match() refere-se a versão PCRE, versão compatível com PHP 5.3. Para iniciarmos vamos utilizar o exemplo básico da matéria de introdução.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>string_match()</titulo>
+                    <url>regexp/basico/string-match</url>
+                    <pasta>regexp/basico/string-match/</pasta>
+                    <resumo>Em JS temos a forma *string.match()* onde "string" é a variável contendo a sua string e "match()" é a função que evocamos para executar a ER..</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
             </basico>
         </nivel>
     </secao>

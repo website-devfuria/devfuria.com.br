@@ -1,9 +1,8 @@
 <?php
+
 /**
  * Arquivo index que funciona como redirecionador
  */
-
-
 /**
  * Includes
  */
@@ -23,5 +22,5 @@ $materia->setNivel(Materia::BASICO);
 /**
  * View
  */
-require BASE_PATH.VIEWS_PATH."materias.php";
+require BASE_PATH . VIEWS_PATH . "materias.php";
 ?>
