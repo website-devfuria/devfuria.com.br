@@ -6,7 +6,7 @@ Em JS temos a forma *string.match()* onde "string" é a variável contendo a sua
 para executar a ER.
 
 <div class="code">
-<h6>JS forma1-string-match.js</h6>
+<h6>JS</h6>
 <pre>
 var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
@@ -49,7 +49,7 @@ O valor da variável *resultado* na verdade é:
 Neste caso, o valor da variável *resultado* será apenas *null*
 
 <div class="code">
-<h6>JS forma1-string-match.js</h6>
+<h6>JS</h6>
 <pre>
 var string = "Casa com a palavra exemplo",
     pattern = /não existe/,
@@ -71,7 +71,7 @@ console.log(resultado);
 Se executarmos o código abaixo, ele falhará. Eu coloquei um ( a mais.
 
 <div class="code">
-<h6>JS forma1-string-match.js</h6>
+<h6>JS</h6>
 <pre>
 var string = "Casa com a palavra exemplo",
     <em>pattern = /(exemplo/,</em>
@@ -119,7 +119,7 @@ Caso a expressão não case, então o resultado será null, logo, nosssa lógia 
 E o nosso código ficará como se segue:
 
 <div class="code">
-<h6>JS forma1-string-match.js</h6>
+<h6>JS - código final</h6>
 <pre>
 var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
@@ -136,5 +136,5 @@ if (resultado) {
 </pre>
 </div>
 
-Lembre-se que se a expressão estiver sintaticamente errada ela interromperá a excução do script, logo, o uso os blocos
-de tratamento de errro (try cath) se faz necessário.
+Lembre-se que se a expressão estiver sintaticamente errada ela interromperá a excução do script, logo, o uso dos blocos
+de tratamento de erro (try cath) se faz necessário.
