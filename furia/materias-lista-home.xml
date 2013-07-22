@@ -213,14 +213,23 @@
                     <dt_atualizacao>22/07/2013</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>ponto-exemplos-code</titulo>
-                    <url>regexp/basico/ponto-exemplos-code</url>
-                    <pasta>regexp/basico/ponto-exemplos-code/</pasta>
-                    <resumo>Exemplos de implementação do ponto ".".</resumo>
+                    <titulo>Vários resultados - preg_match_all()</titulo>
+                    <url>regexp/basico/varios-resultados-preg-match-all</url>
+                    <pasta>regexp/basico/varios-resultados-preg-match-all/</pasta>
+                    <resumo>Exemplos da função perg_match_all() em PHP.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>22/07/2013</dt_criacao>
                     <dt_atualizacao>22/07/2013</dt_atualizacao>
                 </materia>
+                <materia>
+                    <titulo>Vários resultados - match(), test() e exec()</titulo>
+                    <url>regexp/basico/varios-resultados-match-test-exec</url>
+                    <pasta>regexp/basico/varios-resultados-match-test-exec/</pasta>
+                    <resumo>Exemplos das funções match(), test() e exec() em JS.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>                                
             </basico>
         </nivel>
     </secao>

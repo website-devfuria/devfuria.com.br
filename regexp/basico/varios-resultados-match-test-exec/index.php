@@ -13,9 +13,9 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria correta
  */
-define("PONTO_CODE", 7);
+define("VARIOS_JS", 8);
 $materia = new Materia();
-$materia->carregar(Materia::idXML_REGEXP, PONTO_CODE);
+$materia->carregar(Materia::idXML_REGEXP, VARIOS_JS);
 $materia->setNivel(Materia::BASICO);
 
 /**
