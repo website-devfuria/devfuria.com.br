@@ -73,7 +73,7 @@ Igualmente a função match(), a execução do código será interrompida e o Fi
 
 Como a função retorna apenas true ou false, fica facíl deduzirmos o código final.
 
-Porém,é vaálida a mesma observação quanto ao uso do  bloco "try cath" (no caso da expressão estar sintaticamente errada).
+Porém, é válida a mesma observação quanto ao uso do bloco "try cath" (no caso da expressão estar sintáticamente errada).
 
 <div class="code">
 <h6>JS - código final</h6>
