@@ -24,6 +24,12 @@ Exemplos/fuçar
 
     http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares
 
+
+Aprender
+
+    http://aurelio.net/blog/2011/11/29/video-aula-expressoes-regulares-quantificadores-gulosos/
+
+
 Site básico e bem didático
 
     http://boozox.net/php/manual-completo-y-sencillo-de-expresiones-regulares-en-php/
@@ -36,7 +42,6 @@ Live exemplos do livro do Marinho
 
 
 Aplicações para testar e aprender Regexp
-
 
     http://www.debuggex.com/
     http://www.regexplanet.com/
