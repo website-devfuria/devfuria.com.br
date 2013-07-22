@@ -1,21 +1,30 @@
 preg\_match()
 ==============
 
+A função preg\_match() refere-se a versão PCRE, versão compatível com PHP 5.3.
 
-
-O exemplo que utilizaremos é o como mostrado pelos testadores online abaixo:
-
+Para inicizarmos vamos utilizar um exemplo bem básico como mostrado pelos testadores abaixo:
 
 <div class="imagem">
     <img src="exemplo-regexp.png" alt="Exemplo no testador regexpal" />
     <p>http://regexpal.com/</p>
 </div>
 
-### 
+<br /><br /><br />
 <div class="imagem">
     <img src="exemplo-larsolav.png" alt="Exemplo no testador de Larsolav" />
     <p>http://regex.larsolavtorvik.com/</p>
 </div>
+
+Esse exemplo é tão simples, que talvez você esteja se perguntando:
+
+Porque não utilizar uma função qualquer para encontra a string?
+
+Sim claro, você tem toda razão, mas vamos combinar o seguinte: nossos exemplos serão fácies (e talvez sem sentido prático)
+apenas para facilitar seu aprendizado.
+
+Em breve faremos voôs mais altos, ok? "Tudo a seu tempo".
+
 
 
 ### preg\_match()
@@ -120,7 +129,15 @@ Tanto a variável $resultado será igual a false como receberemos um *warning* d
 </div>
 
 Precisamos tratar o erro adequadamente (tudo bem, warning não é erro, mas não deixa de ser um aviso importante), porém
-por enquanto não vamos nos preocupar com isso, bastamos organizar nossa lógica dessa forma:
+por enquanto não vamos nos preocupar com isso.
+
+
+
+
+### Código final
+
+
+Sabendo como a função se comporta, podemos esboçar nossa lógica da seguinte forma:
 
     se o valor é igual a 1 então
         print "casou"
@@ -129,13 +146,12 @@ por enquanto não vamos nos preocupar com isso, bastamos organizar nossa lógica
     se o valor é igual a false então
         print "ocorreu um erro"
 
-
-### Código final
+E aí fica fácil escrevermos o ćodigo final.
 
 <div class="code">
 <h6>PHP</h6>
 <pre>&lt;?php
-$pattern   = "/(exemplo/";
+$pattern   = "/exemplo/";
 $subject   = "Casa com a palavra exemplo";
 $retorno = array();
 
