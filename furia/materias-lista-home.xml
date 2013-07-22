@@ -168,10 +168,55 @@
                     <dt_atualizacao>22/07/2013</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>string_match()</titulo>
+                    <titulo>string.match()</titulo>
                     <url>regexp/basico/string-match</url>
                     <pasta>regexp/basico/string-match/</pasta>
-                    <resumo>Em JS temos a forma *string.match()* onde "string" é a variável contendo a sua string e "match()" é a função que evocamos para executar a ER..</resumo>
+                    <resumo>Em JS temos a forma string.match() onde "string" é a variável contendo a sua string e "match()" é a função que evocamos para executar a ER.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>pattern.test()</titulo>
+                    <url>regexp/basico/pattern-test</url>
+                    <pasta>regexp/basico/pattern-test/</pasta>
+                    <resumo>Em JS também temos a forma pattern.test() onde "pattern" é expressão regular, "test()" é a função que evocamos para executar a ER e o parâmetro 'string passado na função é a nosso texto de pesquisa (assunto).</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>pattern.exec()</titulo>
+                    <url>regexp/basico/pattern-exec</url>
+                    <pasta>regexp/basico/pattern-exec/</pasta>
+                    <resumo>A função exec() em JS possue a sintaxe parecida com a função test() porém o resultado é idêntico a função match().</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>new RegExp()</titulo>
+                    <url>regexp/basico/new-regexp</url>
+                    <pasta>regexp/basico/new-regexp/</pasta>
+                    <resumo>Utilizando-se do construtor RegExp() podemos compilar a expressão regular antes de usá-la. Isso é uma vantagem? Não exatamente.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>ponto</titulo>
+                    <url>regexp/basico/ponto</url>
+                    <pasta>regexp/basico/ponto/</pasta>
+                    <resumo>O ponto casa com qualquer caracter inclusive com as quebras de linhas (\r e \n).O ponto também casa com ele próprio.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>ponto-exemplos-code</titulo>
+                    <url>regexp/basico/ponto-exemplos-code</url>
+                    <pasta>regexp/basico/ponto-exemplos-code/</pasta>
+                    <resumo>Exemplos de implementação do ponto ".".</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>22/07/2013</dt_criacao>
                     <dt_atualizacao>22/07/2013</dt_atualizacao>

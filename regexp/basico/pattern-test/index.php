@@ -13,18 +13,10 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria correta
  */
-//define("NEW", 0);
+define("PATTERN_TEST", 3);
 $materia = new Materia();
+$materia->carregar(Materia::idXML_REGEXP, PATTERN_TEST);
 $materia->setNivel(Materia::BASICO);
-
-$materia->url = "seila";
-$materia->titulo = "new";
-$materia->resumo = "resumo";
-$materia->keywords = "keywords";
-$materia->secao = Materia::BASICO;
-$materia->autor = "eu";
-$materia->dt_criacao = "hoje";
-$materia->dt_atualizacao = "hoje";
 
 /**
  * View

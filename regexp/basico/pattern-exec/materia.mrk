@@ -1,7 +1,7 @@
 pattern.exec()
 ==============
 
-A função *exec()* em JS possue a sintaxe parecida com a função *test()* porém o resultado é idêntico a função *match()*
+A função *exec()* em JS possue a sintaxe parecida com a função *test()* porém o resultado é idêntico a função *match()*.
 
 A forma *pattern.exec()* onde "pattern" é expressão regular, "exec()" é a função que evocamos
 para executar a ER e o parâmetro 'string passado na função é a nosso texto de pesquisa (assunto).
