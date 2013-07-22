@@ -1,8 +1,7 @@
 preg\_match()
 ==============
 
-Segundo o Marinho, as funções PCRE são mais rápidas que as POSIX e para funcionarem o PHP deverá ser compilado com 
-suporte a bilioteca PCRE.
+
 
 O exemplo que utilizaremos é o como mostrado pelos testadores online abaixo:
 
@@ -31,6 +30,9 @@ A função *preg_match()* aceita 5 parâmetros, sendo os dois primeiros obrigat�
 
 Estou utilizando também o terceiro parâmetro e inclusive uma variável $resultado para pegar o resultado de execução
 da função.
+
+Veja mais sobre a função na documentação oficial:
+[http://php.net/manual/en/function.preg-match.php](http://php.net/manual/en/function.preg-match.php "")
 
 
 <div class="code">
