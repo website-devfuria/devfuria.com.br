@@ -8,7 +8,8 @@ $secoes = array(
     "php"      => "PHP",
     "js"       => "Javascript",
     "html-css" => "HTML & CSS",
-    "logica"   => "Lógica de Programação"
+    "logica"   => "Lógica de Programação",
+    "regexp"   => "RegExp"
 );
 
 /**

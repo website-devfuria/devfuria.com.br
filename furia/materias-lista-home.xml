@@ -149,6 +149,15 @@
         <nome>regexp</nome>
         <nivel>
             <basico>
+                <materia>
+                    <titulo>Introdução</titulo>
+                    <url>regexp/basico/intro</url>
+                    <pasta>regexp/basico/intro/</pasta>
+                    <resumo></resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>                
             </basico>
         </nivel>
     </secao>

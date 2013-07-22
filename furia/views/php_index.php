@@ -9,7 +9,7 @@
         <title>PHP | <?php echo DOMINIO; ?></title>
         <?php
         $head_meta = array(
-            "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
+            "description" => "Curso de PHP",
             "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC . KEYWORDS_PHP
         );
         include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";

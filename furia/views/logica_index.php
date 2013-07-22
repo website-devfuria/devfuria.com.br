@@ -9,22 +9,19 @@
         <title>Lógica | <?php echo DOMINIO; ?></title>
         <?php
         $head_meta = array(
-            "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
+            "description" => "Curso de lógica de programação",
             "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC . KEYWORDS_JS
         );
         include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
         ?>
         <?php include BASE_PATH.VIEWS_COMP_PATH."head_links_css.php"; ?>
         <style type="text/css">
-            div.materia-resumo.lista-js {
-                background-image: url("../furia/imagens/lista_js.png");
-            }
         </style>
     </head>
     <body class="respiro-em-baixo">
 
         <?php
-        $nav_top['secao'] = "logica";
+        $nav_top['secao'] = Materia::LOGICA;
         include BASE_PATH.VIEWS_COMP_PATH."nav_top.php";
         ?>
 
@@ -43,7 +40,7 @@
             <div class="row">
                 <div class="span10 offset1">
                     <?php
-                    $tree_completa['secao'] = "logica";
+                    $tree_completa['secao'] = Materia::LOGICA;
                     $tree_completa['nivel'] = "basico";
                     include BASE_PATH.VIEWS_COMP_PATH."tree_completa.php";
                     ?>
