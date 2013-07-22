@@ -1,55 +1,85 @@
-Sabor JS
-========
+pattern.test()
+==============
 
 
-### JS - string.match()
+Em JS também temos a forma *pattern.test()* onde "pattern" é expressão regular, "test()" é a função que evocamos
+para executar a ER e o parâmetro 'string passado na função é a nosso texto de pesquisa (assunto).
 
-Em JS temos a forma *string.match()* onde "string" é a variável contendo a sua string e "match()" é a função que evocamos
-para executar a ER.
+Essa é a forma mais usual, ou pelo menos é a mais comentada.
 
 <div class="code">
-<h6>JS forma1-string-match.js</h6>
+<h6>JS</h6>
 <pre>
-var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
-    pattern = /ca.a/,
+var string = "Casa com a palavra exemplo",
+    pattern = /exemplo/,
     resultado;
 
 // Executa nossa expressão
-resultado = string.match(pattern);
-
-if (resultado) {
-    console.log("casou", resultado);
-} else {
-    console.log("não casou", resultado);
-}
+resultado = pattern.test(string);
+console.log(resultado);
 </pre>
 </div>
 
-Se a ER casar com a string então a variável *resultado* conterá um array com a parte que casou, mas apenas a primeira
-ocorrência.
 
-Se você precisar das demais ocorrências terá que fazer uma pequena alteração na ER, veja:
-
-    pattern = /ca.a/g,
-
-Tivemos que incluir a opção "g" de "global", veja mais na
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FGlobal_Objects%2FString%2Fmatch">documentação oficial</a>.
+Diferentemente da primeira função (string.match), o valor da variável *resultado* será true ou false.
 
 
 
+### Se a expressão não casar
 
-### JS - pattern.test()
-
-Abaixo temos a forma mais usual em JS, ou pelo menos é a mais comentada.
-
-Diferentemente da primeira função (string.match), o valor da variável *resultado* será true ou false e a opção global
-"g" não funcionou, sou seja, não descobri uma forma de olhar as demais ocorrência, apenas a primeira.
+A função retorna *false* neste caso.
 
 <div class="code">
-<h6>JS forma2-patter-test.js</h6>
+<h6>JS</h6>
 <pre>
-var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
-    pattern = /ca.a/,
+var string = "Casa com a palavra exemplo",
+    pattern = /não existe/,
+    resultado;
+
+// Executa nossa expressão
+resultado = pattern.test(string);
+console.log(resultado);
+</pre>
+</div>
+
+
+
+### Se a expressão estiver sintaticamente errada
+
+Se executarmos o código abaixo, ele falhará. Eu coloquei um ( a mais.
+
+<div class="code">
+<h6>JS</h6>
+<pre>
+var string = "Casa com a palavra exemplo",
+    pattern = /(exemplo/,
+    resultado;
+
+// Executa nossa expressão
+resultado = pattern.test(string);
+console.log(resultado);
+</pre>
+</div>
+
+
+Igualmente a função match(), a execução do código será interrompida e o Firebug mostrará a seguinte mensagem:
+<div class="imagem">
+    <img src="match-erro.png" alt="match-resultado" />
+</div>
+
+
+
+### Code
+
+Como a função retorna apenas true ou false, fica facíl deduzirmos o código final.
+
+Porém,é vaálida a mesma observação quanto ao uso do  bloco "try cath" (no caso da expressão estar sintaticamente errada).
+
+<div class="code">
+<h6>JS - código final</h6>
+<pre>
+var string = "Casa com a palavra exemplo",
+    pattern = /exemplo/,
     resultado;
 
 // Executa nossa expressão
@@ -59,55 +89,6 @@ if (resultado) {
     console.log("casou", resultado);
 } else {
     console.log("não casou", resultado);
-}
-</pre>
-</div>
-
-Uma forma variante porém semelhante é a encontrada abaixo:
-
-<div class="code">
-<h6>JS forma3-patter-test.js</h6>
-<pre>
-var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
-    pattern,
-    resultado;
-
-// Executa nossa expressão
-<em>pattern = new RegExp("ca.a");</em>
-resultado = pattern.test(string);
-
-if (resultado) {
-    console.log("casou", resultado);
-} else {
-    console.log("não casou", resultado);
-}
-</pre>
-</div>
-
-O atrativo dessa variante é que a ER criada apartir de uma string lhe dá mair poder de flaxibilidade e, obviamente, 
-maior responsabilidade.
-
-Lembre-se do conselho do tio do homen-aranha: "quanto maior o poder, maior a responsabilidade"
-
-
-
-### JS - pattern.exec()
-
-Essa também é uma forma bastante utilizada, principalmente pelo fato dela trazer todas as ocorrências.
-
-Repare apenas que a opção global "g" teve que ser utilizada, sem ela o navegador (FireFox 19) entra em um loop infinito.
-
-<div class="code">
-<h6>JS forma3-patter-test.js</h6>
-<pre>
-var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
-    pattern = /ca.a/g,
-    resultado;
-
-// Executa nossa expressão
-var i = 0;
-while(resultado = pattern.exec(string)){
-    console.log("casou", resultado);
 }
 </pre>
 </div>

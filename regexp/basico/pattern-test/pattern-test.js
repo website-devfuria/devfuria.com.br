@@ -1,5 +1,5 @@
-var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
-    pattern = /ca.a/,
+var string = "Casa com a palavra exemplo",
+    pattern = /exemplo/,
     resultado;
 
 // Executa nossa expressão
