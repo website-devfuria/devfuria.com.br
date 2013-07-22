@@ -15,6 +15,7 @@ Elas servem para muita coisas e podem salver sua pele, se souber usá-las.
 
 
 
+
 ### Sobre o curso
 
 Eu preparei (e ainda estou preparando) este curso sobre ER's para ser bem básico, o intuito é que você leia a matéria
@@ -38,6 +39,31 @@ fonte, algumas ferramentes interessante:
 Irei utilizar as duas linguagens que também possuem seus cursos aqui no site: PHP e Javascript.
 
 Conforme vamos evoluíndo com as ER's, vamos evoluindo com as linguagens.
+
+
+
+### Primeiro Exemplo
+
+Temos a string original:
+
+    "Casa com a palavra exemplo"
+
+E queremos encontrar a string:
+    
+    "exemplo"
+
+Veja como fica nos testadores:
+
+<div class="imagem">
+    <img src="exemplo-regexp.png" alt="Exemplo no testador regexpal" />
+    <p>http://regexpal.com/</p>
+</div>
+
+<br /><br /><br />
+<div class="imagem">
+    <img src="exemplo-larsolav.png" alt="Exemplo no testador de Larsolav" />
+    <p>http://regex.larsolavtorvik.com/</p>
+</div>
 
 
 
@@ -77,7 +103,7 @@ E também temos o construtuor
 
     RegExp();
 
-Em JS (diferebtenebte de PH) as ER's devem ser embebidas por barras, sem aspas, exemplo:
+Em JS (diferentemente de PHP) as ER's devem ser embebidas por barras, sem aspas, exemplo:
 
     /sua expressão regular/
 
@@ -87,8 +113,10 @@ Veja mais informações na documentação oficial:
 [https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions](https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions)
 
 
-*Seja bem vindo ao curso!*
 
+Nas próximas matérias veremos como ficará nosso singelo "primeiro exemplo" nas duas linguagens. Até lá.
+
+*Seja bem vindo ao curso!*
 
 
 Leituras adicionais sugeridas

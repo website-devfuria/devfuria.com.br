@@ -3,18 +3,15 @@ preg\_match()
 
 A função preg\_match() refere-se a versão PCRE, versão compatível com PHP 5.3.
 
-Para inicizarmos vamos utilizar um exemplo bem básico como mostrado pelos testadores abaixo:
+Para iniciarmos vamos utilizar o exemplo básico da matéria de introdução ([link](link))
 
-<div class="imagem">
-    <img src="exemplo-regexp.png" alt="Exemplo no testador regexpal" />
-    <p>http://regexpal.com/</p>
-</div>
+Temos a string original:
 
-<br /><br /><br />
-<div class="imagem">
-    <img src="exemplo-larsolav.png" alt="Exemplo no testador de Larsolav" />
-    <p>http://regex.larsolavtorvik.com/</p>
-</div>
+    "Casa com a palavra exemplo"
+
+E queremos encontrar a string:
+    
+    "exemplo"
 
 Esse exemplo é tão simples, que talvez você esteja se perguntando:
 
