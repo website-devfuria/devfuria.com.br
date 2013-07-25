@@ -15,7 +15,6 @@ Elas servem para muita coisas e podem salver sua pele, se souber usá-las.
 
 
 
-
 ### Sobre o curso
 
 Eu preparei (e ainda estou preparando) este curso sobre ER's para ser bem básico, o intuito é que você leia a matéria
@@ -23,8 +22,8 @@ e entenda (e também decore) sobre cada aspecto comentado.
 
 Mas para facilitar ainda mais o seu aprendizado (o meu também foi mais fácil dessa forma) aconselho a utilizar alguns
 software online apenas para testar as ER's, ou seja, ao invés de você partir direto para o código fonte, parta primeiro
-para esses softwares, assim você terá a oportunidade de conferir sua ER's antes de ficar quebrando a cabeça no código
-fonte, algumas ferramentes interessante:
+para esses softwares, assim você terá a oportunidade de conferir sua ER antes de ficar quebrando a cabeça no código
+fonte, algumas ferramentas interessantes:
 
 
 [http://regexpal.com/](http://regexpal.com/)
@@ -65,7 +64,7 @@ Veja como fica nos testadores:
     <p>http://regex.larsolavtorvik.com/</p>
 </div>
 
-
+Os testadores ajudam muito, principalmente no começo, aprenda a utilizá-los, é divertido!
 
 
 ### PHP e os dois mudos: PCRE e POSIX
@@ -81,6 +80,10 @@ Em PHP as ER's devem ser tratadas como strings entre aspas, exemplo:
 
     '/sua expressão regular/'
 
+
+As funções POSIX são derivdas de *ereg()*;
+
+As funções do PREC são derivadas de *preg_macth()*;
 
 Veja mais informações na documentação oficial:
 
