@@ -25,7 +25,7 @@ O ponto também casa com ele próprio.
     </p>
 </div>
 
-### 
+###
 <div class="imagem">
     <img src="ponto-pag41-acentos.png" alt="Exemplo de Expressão Regular" />
     <p>Palavras que foram ou não acentudas</p>
@@ -34,7 +34,7 @@ O ponto também casa com ele próprio.
     </p>
 </div>
 
-### 
+###
 <div class="imagem">
     <img src="ponto-pag41-maiuscula.png" alt="Exemplo de Expressão Regular" />
     <p>Palavras que começam com maiúsculas ou não</p>
@@ -43,7 +43,7 @@ O ponto também casa com ele próprio.
     </p>
 </div>
 
-### 
+###
 <div class="imagem">
     <img src="ponto-pag41-grafia.png" alt="Exemplo de Expressão Regular" />
     <p>Palavras com grafia possivelmente errada</p>
@@ -52,7 +52,7 @@ O ponto também casa com ele próprio.
     </p>
 </div>
 
-### 
+###
 <div class="imagem">
     <img src="ponto-pag42-horas.png" alt="Exemplo de Expressão Regular" />
     <p>Palavras que parcem-se com horas</p>
@@ -61,7 +61,7 @@ O ponto também casa com ele próprio.
     </p>
 </div>
 
-### 
+###
 <div class="imagem">
     <img src="ponto-pag42-tags.png" alt="Exemplo de Expressão Regular" />
     <p>Tags de HTML</p>
@@ -69,7 +69,3 @@ O ponto também casa com ele próprio.
         <a href="http://www.piazinho.com.br/ed3/exemplos.html#6">Livro: Expressões Regulares 3 edição, pag 42#6</a>
     </p>
 </div>
-
-
-
-Clocar mais exemplos

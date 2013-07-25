@@ -24,6 +24,7 @@ Exemplos/fuçar
 
     http://mindbending.org/pt/dobrando-o-python-com-expressoes-regulares
 
+    http://200.195.165.74/informatica/tutos/regex/816-numeros-com-regex
 
 Aprender
 
