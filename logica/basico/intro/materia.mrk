@@ -1,5 +1,5 @@
-Lógica de Programação
-=====================
+Introdução a Lógica de Programação
+==================================
 
 *A lógica de programação é um exercício mental*. Ela equivale aos exercícios físicos e todo programador deve praticar,
 não apenas no início do aprendizado mas no decorrer de toda a “estrada”. Programar um computador é uma atividade, antes
@@ -58,6 +58,21 @@ realizar o teste de mesa e também desenhar o DFD.
 *O principal benefício da lógica de programação é que sua prática exercita a mente do programador tornando-o mais
 eficiente e eficaz*. Segundo o guru do marketing Peter Drucker: "eficiência é fazer as coisas de maneira correta,
 eficácia são as coisas certas. O resultado depende de fazer certo as coisas certas".
+
+
+### Sobre o curso
+
+Inicialmente, eu não havia planejado um curso de lógica. Ele estava embutido no curso de PHP. Como eu inclui o curso de
+Javascript (agora temos duas linguagens) senti a necessidade de separar o curso da linguagem, mesmo porque, a *lógica
+não depende de linguagem nenhuma*.
+
+Eu ainda não tive tempo de rever os exercícios, eles estão na linguagem PHP, mas em breve voltarei para arrumar essa
+seção.
+
+Tentarei separar o máximo possível a lógia da linguagem. Outra coisa, penso em incluir alguns exemplos em C, então
+poderei mostrar a implementação dos algorítmos em 3 linguagens: PHP, Javascript e C.
+
+*Seja bem vindo ao curso!*
 
 
 Botando a mão na massa
