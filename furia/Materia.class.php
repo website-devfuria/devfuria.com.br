@@ -34,9 +34,9 @@ class Materia {
      */
     function carregar($id_secao, $id_materia) {
 
-        $xml = simplexml_load_file($xml = BASE_PATH.'/materias-lista-home.xml');
+        $xml = simplexml_load_file($xml = BASE_PATH . '/materias-lista-home.xml');
         $obj = $xml->secao[$id_secao]->nivel->basico->materia[$id_materia];
-                
+
         $this->url            = $obj->url;
         $this->titulo         = $obj->titulo;
         $this->resumo         = $obj->resumo;
@@ -46,6 +46,23 @@ class Materia {
         $this->dt_criacao     = $obj->dt_criacao;
         $this->dt_atualizacao = $obj->dt_atualizacao;
 
+    }
+    
+    /**
+     * Carrega  a matéria conforme o id do xml.
+     * 
+     * @param type $id_secao
+     * @param type $id_materia
+     */
+    function carregarDraft($id_secao, $id_materia) {
+        $this->url            = "seila";
+        $this->titulo         = "new";
+        $this->resumo         = "resumo";
+        $this->keywords       = "keywords";
+        $this->secao          = Materia::BASICO;
+        $this->autor          = "eu";
+        $this->dt_criacao     = "hoje";
+        $this->dt_atualizacao = "hoje";
     }
 
     /**
