@@ -2,8 +2,14 @@ Vários resultados - preg\_match\_all()
 =====================================
 
 
-Se olharmos o exemplo da matéria anterior:
+Se olharmos o primeiro exemplo da matéria anterior:
 
+    assunto: "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo."
+    regexp: "/ca.a/"
+
+Notamos que a ER casa com mais de um resultado.
+
+*Como trabalhamos com mais de um resultado?* Bom, vejamos o código...
 
 <div class="code">
 <h6>PHP</h6>
