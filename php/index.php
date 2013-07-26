@@ -21,7 +21,7 @@ require "../furia/boot.php";
         <?php
         $head_meta = array(
             "description" => "Curso de PHP",
-            "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC . KEYWORDS_PHP
+            "keywords" =>  KEYWORDS_PHP
         );
         include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
         ?>

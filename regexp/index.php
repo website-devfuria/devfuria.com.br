@@ -21,7 +21,7 @@ require "../furia/boot.php";
         <?php
         $head_meta = array(
             "description" => "Curso de Expressões Regulares para PHP e JS",
-            "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC . KEYWORDS_REGEXP
+            "keywords" =>  KEYWORDS_REGEXP
         );
         include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
         ?>
