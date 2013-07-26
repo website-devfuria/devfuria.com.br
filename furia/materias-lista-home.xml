@@ -149,6 +149,87 @@
         <nome>regexp</nome>
         <nivel>
             <basico>
+                <materia>
+                    <titulo>Introdução</titulo>
+                    <url>regexp/basico/intro</url>
+                    <pasta>regexp/basico/intro/</pasta>
+                    <resumo>Expressões Regulares é uma técnica para procurar, de forma bem específica, um texto abrangente.OK, essa não é a definição formal de ER, é apenas uma variação da resposta encontrada por Aurélio Marinho para a seguinte pergunta: Para que servem ? Basicamente, servem para você dizer algo abrangente de forma específica.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>preg_match()</titulo>
+                    <url>regexp/basico/preg-match</url>
+                    <pasta>regexp/basico/preg-match/</pasta>
+                    <resumo>A função preg_match() refere-se a versão PCRE, versão compatível com PHP 5.3. Para iniciarmos vamos utilizar o exemplo básico da matéria de introdução.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>string.match()</titulo>
+                    <url>regexp/basico/string-match</url>
+                    <pasta>regexp/basico/string-match/</pasta>
+                    <resumo>Em JS temos a forma string.match() onde "string" é a variável contendo a sua string e "match()" é a função que evocamos para executar a ER.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>pattern.test()</titulo>
+                    <url>regexp/basico/pattern-test</url>
+                    <pasta>regexp/basico/pattern-test/</pasta>
+                    <resumo>Em JS também temos a forma pattern.test() onde "pattern" é expressão regular, "test()" é a função que evocamos para executar a ER e o parâmetro 'string passado na função é a nosso texto de pesquisa (assunto).</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>pattern.exec()</titulo>
+                    <url>regexp/basico/pattern-exec</url>
+                    <pasta>regexp/basico/pattern-exec/</pasta>
+                    <resumo>A função exec() em JS possue a sintaxe parecida com a função test() porém o resultado é idêntico a função match().</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>new RegExp()</titulo>
+                    <url>regexp/basico/new-regexp</url>
+                    <pasta>regexp/basico/new-regexp/</pasta>
+                    <resumo>Utilizando-se do construtor RegExp() podemos compilar a expressão regular antes de usá-la. Isso é uma vantagem? Não exatamente.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>ponto</titulo>
+                    <url>regexp/basico/ponto</url>
+                    <pasta>regexp/basico/ponto/</pasta>
+                    <resumo>O ponto casa com qualquer caracter inclusive com as quebras de linhas (\r e \n).O ponto também casa com ele próprio.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Vários resultados - preg_match_all()</titulo>
+                    <url>regexp/basico/varios-resultados-preg-match-all</url>
+                    <pasta>regexp/basico/varios-resultados-preg-match-all/</pasta>
+                    <resumo>Exemplos da função perg_match_all() em PHP.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Vários resultados - match(), test() e exec()</titulo>
+                    <url>regexp/basico/varios-resultados-match-test-exec</url>
+                    <pasta>regexp/basico/varios-resultados-match-test-exec/</pasta>
+                    <resumo>Exemplos das funções match(), test() e exec() em JS.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>22/07/2013</dt_criacao>
+                    <dt_atualizacao>22/07/2013</dt_atualizacao>
+                </materia>                                
             </basico>
         </nivel>
     </secao>
@@ -157,13 +238,13 @@
         <nivel>
             <basico>
                 <materia>
-                    <titulo>Lógica de programação</titulo>
-                    <url>logica/basico/logica-de-programacao</url>
-                    <pasta>logica/basico/logica-de-programacao/</pasta>
+                    <titulo>Introdução</titulo>
+                    <url>logica/basico/intro</url>
+                    <pasta>logica/basico/intro/</pasta>
                     <resumo>A lógica de programação é um exercício mental. Ela equivale aos exercícios físicos e todo programador deve praticar, não apenas no início do aprendizado mas no decorrer de toda a “estrada”. Programar um computador é uma atividade, antes de tudo, criativa. Quando a criatividade se une com o raciocínio lógico temos a lógica de programação. E programar nada mais é do que instruir o computador a resolver problemas... usando a lógica de forma criativa.</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>05/06/2012</dt_criacao>
-                    <dt_atualizacao>11/09/2012</dt_atualizacao>
+                    <dt_atualizacao>25/07/2013</dt_atualizacao>
                 </materia>
                 <materia>
                     <titulo>Estudos de lógica com respostas (1 ao 5)</titulo>

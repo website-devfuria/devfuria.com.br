@@ -36,7 +36,7 @@ Um funcionalidade que ajudou em muito a popularização da linguagem é o *AJAX*
 requisições diretamente do código de JS para o servidor é algo surpreendente.
 
 Outra aplicação do JS que empolga bastante são as chamadas *aplicalções web ricas*. O termo "rico" refere-se a interface,
-ou seja, a interafce é quem está mais rica, mais usual, mais fácil, mas agragadora. Há quem diga que elas são o futuro
+ou seja, a interface é quem está mais rica, mais usual, mais fácil, mas agragadora. Há quem diga que elas são o futuro
 das aplicações web.
 
 O nodejs promete levar o JS para o lado do servidor, isso já é uma realidade e será questão de tempo até encontrarmos
