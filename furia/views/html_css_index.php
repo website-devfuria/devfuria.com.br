@@ -9,7 +9,7 @@
         <title>HTML & CSS | <?php echo DOMINIO; ?></title>
         <?php
         $head_meta = array(
-            "description" => "Cursos, artigos e matérias sobre desenvolvimento web de alta qualidade",
+            "description" => "Curso de HTML e CSS, icluindo HTML 5 e CSS 3",
             "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC
         );
         include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
@@ -43,8 +43,7 @@
             <div class="row">
                 <div class="span10 offset1">
                     <?php
-                    $tree_completa['secao'] = "html-css";
-                    $tree_completa['nivel'] = "basico";
+                    $tree_completa['secao'] = Materia::HTML_CSS;
                     include BASE_PATH.VIEWS_COMP_PATH."tree_completa.php";
                     ?>
                 </div>
