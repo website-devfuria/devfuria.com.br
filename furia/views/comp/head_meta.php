@@ -4,7 +4,7 @@ defined('DF') or die;
 /**
  * Quando vem das matérias mudamos a descrições
  */
-if( isset($materia) ){
+if (isset($materia)) {
     $head_meta = array(
         "description" => $materia->resumo,
         "keywords" => KEYWORDS_PAD . $materia->getKeyWords()

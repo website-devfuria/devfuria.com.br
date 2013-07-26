@@ -142,7 +142,23 @@ class Materia {
 
         return $materias;
     }    
+
     
+    /**
+     * Retorna um array com as seções do site
+     * Utilizado em NavTop
+     * 
+     * @return type
+     */
+    static function getSecoes() {
+        return array(
+            "php"       => "PHP",
+            "js"        => "Javascript",
+            "html-css"  => "HTML & CSS",
+            "logica"    => "Lógica de Programação",
+            "regexp"    => "RegExp"
+        );
+    }
 
     /**
      * Retorna as palavras cheves conforme a seção

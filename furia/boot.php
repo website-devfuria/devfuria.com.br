@@ -79,7 +79,7 @@ define('KEYWORDS_MYSQL', "");
 /**
  * Classe Materia
  */
-require (BASE_PATH."/Materia.class.php");
+require (BASE_PATH."/Materia.php");
 
 
 /**
