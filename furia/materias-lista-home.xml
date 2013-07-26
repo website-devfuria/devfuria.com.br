@@ -142,6 +142,15 @@
         <nome>mysql</nome>
         <nivel>
             <basico>
+                <materia>
+                    <titulo>Introdução</titulo>
+                    <url>mysql/basico/intro/</url>
+                    <pasta>mysql/basico/introducao/</pasta>
+                    <resumo>Na década de 70 um pesquizador chamado Edgar Frank "Ted" Codd desenvolveu um produto de modelo de dado relacional chamado SEQUEL (Strutucred English Query Language, Linguagem de Consulta em Inglês Estruturado) que mais tarde veio a se tornar o nosso conhecido SQL (Structured Query Language, Linguagem de Consulta Estruturada).</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>26/07/2013</dt_criacao>
+                    <dt_atualizacao>26/07/2013</dt_atualizacao>
+                </materia>                
             </basico>
         </nivel>
     </secao>

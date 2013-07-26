@@ -156,7 +156,8 @@ class Materia {
             "js"        => "Javascript",
             "html-css"  => "HTML & CSS",
             "logica"    => "Lógica de Programação",
-            "regexp"    => "RegExp"
+            "regexp"    => "RegExp",
+            "mysql"    => "MySql & SQL"
         );
     }
 

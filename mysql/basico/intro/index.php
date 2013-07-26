@@ -13,9 +13,9 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria correta
  */
-define("_NEW", 0);
+define("INTRO", 0);
 $materia = new Materia();
-$materia->carregarDraft(Materia::idXML_JS, _NEW);
+$materia->carregar(Materia::idXML_MYSQL, INTRO);
 $materia->setNivel(Materia::BASICO);
 
 
