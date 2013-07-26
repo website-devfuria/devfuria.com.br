@@ -21,7 +21,7 @@ require "../furia/boot.php";
         <?php
         $head_meta = array(
             "description" => "Curso de HTML e CSS, icluindo HTML 5 e CSS 3",
-            "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC
+            "keywords" =>  KEYWORDS_PAD . KEYWORDS_TEC . KEYWORDS_HTMLCSS
         );
         include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
         ?>
