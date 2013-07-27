@@ -62,7 +62,8 @@ Faça o script funcionar localmente
 
 Para você me acompanhar, o ideal seria você baixar os código fontes ou redigitá-los.
 
-Baixe os arquivos através dos links: [codigo.js](codigo.js "Arquivo JS"), [lampada.html](lampadas.html "Arquivo JS").
+Baixe os arquivos através do Gist: [https://gist.github.com/flaviomicheletti/6095926](https://gist.github.com/flaviomicheletti/6095926 "Gist")
+, clique no botão "Download Gist" e descompacte o arquivo.
 
 Baixe também as imagens das lâmpadas: [lâmpada apagada](../../imagens/pic_bulboff.gif "lâmpada off"), 
 [lâmpada acesa](../../imagens/pic_bulbon.gif "lâmpada om")
@@ -71,11 +72,11 @@ Agora, abra o arquivo html no navegador.
 
 Não se esqueca do endereço de seu servidor web (apache) que é localhost. Na minha máquina eu utilizo o seguinte endereço:
 
-	http://localhost/devfuria/www.devfuria.com.br/js/basico/code-lampadas/lampadas.html
+	http://localhost/devfuria/labs/index.html
 
 Esse é o endereço que eu digito no navegador, mas o endereço físico (no harddisk) é: 
 
-	/var/www/html/devfuria/www.devfuria.com.br/js/basico/code-lampadas/lampadas.html
+	/var/www/html/devfuria/labs/index.html
 
 
 A diferênça é 
@@ -130,12 +131,6 @@ element.onclick = function() {
 </pre>
 </div>
 
-
-Se você conseguiu, sua tela deve parecer-se com a minha:
-
-<div class="imagem">
-    <img src="../../imagens/firebug-se-comunicano.png" alt="Print screen da minha tela" />
-</div>
 
 Desse ponto em diante eu explicarei partes do ćodigo, caso fique na dúvida, tente descobrir o valor das variáveis 
 através do "console.log()"
