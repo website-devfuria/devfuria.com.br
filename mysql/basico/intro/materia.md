@@ -7,7 +7,7 @@ Introdução
     <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/05/24/banco-de-dados/">Vida de programador</a></p>
 </div>
 
-Seu eu começasse essa seção com "Na década de 70..." a matéria perderia a graça, aprender também é se divertir.
+Seu eu começasse essa seção com "Na década de 70..." a matéria perderia a graça, aprender deve ser divertido.
 
 Hum Hum! tudo bem vamos lá...
 
@@ -133,7 +133,7 @@ Agora me responda sem pensar muito, o que é um conjunto de tabelas ?
 
 ... nosso banco de dados.
 
-A imagem abaixo ilusta nosso banco de dados:
+A imagem abaixo ilustra nosso banco de dados:
 
 <div class="imagem">
     <img src="db.jpg" alt="Tabela" />
