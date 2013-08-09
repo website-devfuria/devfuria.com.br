@@ -1,35 +1,29 @@
-Exercício 4
+Exercício 9
 ===
 
-Calcular o total de dias de n meses, considerando que os meses tenham 30 dias.
-
+Sendo o número total de eleitores de um município = 25.639, o número de votos brancos = 1507, nulos = 2312 e
+válidos = 21.820. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
 
 
 ### Comentários
-
-Quando o enúnciado diz "n" meses, significa que ele aceitará um valor qualquer. Em C resolveríamos isso facilmente,
-basta escrever:
-    
-    scanf("%d" , &n_meses);
-
-Como estamos no mundo web, precisaríamos de um formulários web para a entrada de dados, isso é algo trivial, porém
-bastante trabalhoso (no sentido de braçal).
-
-No nosso caso vamos colocar um valor arbitrário apenas para que nãto precisemos construir o formulário.
-
 
 
 ### Solução
 
 <div class="code">
-<h6>PSEUDOCÓDIGO</h6>
+<h6>PORTUGOL</h6>
 <pre><em>INÍCIO</em>
 
-n_meses = 3 // valor arbitrário
+perVotosBrancos = 1507 / total_eleitores * 100
 
-total_de_dias  = n_meses * 30
+perVotosNulos = 2312 / total_eleitores * 100
 
-mostrar total_de_dias
+perVotosValidos = 21.820 / total_eleitores * 100
 
-<em>FIM</em></pre>
+mostrar perVotosBrancos, perVotosNulos, perVotosValidos
+
+</pre>
+<p>Solução do exercício 9.</p>
 </div>
+
+Há um erro no algoritmo acima, qual é? ...Descobriu? A variável total\_eleitores deve ser inicializada com o valor 25.639.

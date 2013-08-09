@@ -14,7 +14,7 @@ pelo usuário, mas como estamos construíndo aplicações web, precisaríamos de
 em outro momento.
 
 Apresentamos apenas o pseudo-código, mas não deixe de fazer os diagramas, o teste de mesa e transcreva o algoritmo para
-uma linguagem de programação (no caso PHP).
+uma linguagem de programação.
 
 
 ### Solução

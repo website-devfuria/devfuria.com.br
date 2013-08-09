@@ -1,61 +1,49 @@
 Exercício 7
 ===
 
-Calcular o juros simples produzido pelo empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
+Faça um algoritmo, sendo a data de nascimento um valor qualquer, que expresse a idade de uma pessoa em dias.
 
 
 ### Comentários
 
+Este exercício é provcativo. Eu quis provocar em você a atenção para o problema de se trabalhar com datas, algo que
+não é fácil em nenhma linguagem.
 
-Este exercício é provocativo e tem como objetivo dispertar em você a seguinte questão:
+Para começar temos a questão dos formatos básicos abaixo:
 
-*Na maioria das vezes não é a lógica que vai resolver tudo e sim algum conhecimento sobre o assunto que se quer resolver.*
+    dd-mm-aaaa
+    mm-dd-aaaa
+    aaaaa-mm-dd
+    
+Mas não vamos no preocupar com isso agora, vá apenas se preparando psciologicamente, ok?
 
-Neste caso, conhecendo o cálculo do juros simples fica fácil encontrarmos a solução.
+Voltando ao nosso exercício, vamos utilizar os dias, meses e anos separadamente, ou seja precisaremos de pelo menos
+3 variáveis para armazenar uma data. Veja as dicas:
 
 
-Juros Simples
-
-    J = C.i.n
-
-Traduzindo...
-
-    J = juros,
-    C = capital,
-    i = taxa de empréstimo e
-    n = períodos.
-
-Efetuando o calculo...
-
-    J = 16.000 * 0.03 * 4
-
-.. temos o resulado:
-
-    J = 1.920,00
-
-Agora é só programar (já sabemos até o resultado do algorítimo) !
+1. Use a data de nascimento separadamente, dia em uma variável, mês em outra e ano em outra.
+2. Utilize uma data qualquer
+3. Faça os cálculos considerando que os anos teriam 365 dias e o meses apenas 30 dias. 
 
 
 
 ### Solução
 
-Seguindo o cálculo acima o pseudocódigo ficariam assim:
-
 <div class="code">
 <h6>PORTUGOL</h6>
 <pre><em>INÍCIO</em>
 
-// incializar as variáveis
-juros_simples = 0
-capital       = 16.000
-taxa          = 3/100
-periodo       = 4 // meses
+data_nasc_dia = 27
+data_nasc_mes = 9
+data_nasc_ano = 1977
 
-// Efetuar o cálculo
-juros_simlpes = capital * taxa * periodo
+data_atual_dia = 22
+data_atual_mes = 01
+data_atual_ano = 2012
 
-// Mostrar na tela
-mostrar juros simples
+anos = data_atual_ano - data_nasc_ano
+total_meses = anos * 12
+total_meses = total_meses + anos
 
-<em>FIM</em></pre>
+</pre>
 </div>

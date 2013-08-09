@@ -1,29 +1,36 @@
 Exercício 9
 ===
 
-Sendo o número total de eleitores de um município = 25.639, o número de votos brancos = 1507, nulos = 2312 e
-válidos = 21.820. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
+Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.
 
 
 ### Comentários
+
+Se o  número em questão for 45...
+
+Qual e o sucessor ?
+
+Qual é o seu antecessor?
 
 
 ### Solução
 
 <div class="code">
-<h6>PORTUGOL</h6>
+<h6>PSEUDOCÓDIGO</h6>
 <pre><em>INÍCIO</em>
 
-perVotosBrancos = 1507 / total_eleitores * 100
+// Inicia as variáveis
+numero     = 0
+numero_ant = 0
+numero_suc = 0
 
-perVotosNulos = 2312 / total_eleitores * 100
+// Efetua a operação
+numero     = 45;
+numero_ant = numero - 1
+numero_suc = numero + 1
 
-perVotosValidos = 21.820 / total_eleitores * 100
+// Mostra os resultados obtidos
+mostrar numero_suc, numero_ant
 
-mostrar perVotosBrancos, perVotosNulos, perVotosValidos
-
-</pre>
-<p>Solução do exercício 9.</p>
+<em>FIM</em></pre>
 </div>
-
-Há um erro no algoritmo acima, qual é? ...Descobriu? A variável total\_eleitores deve ser inicializada com o valor 25.639.
