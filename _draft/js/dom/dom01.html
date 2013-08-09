@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="app.var1" content="{12345}" />
+
+		<title>Untitled Document</title>
+		<style type="text/css" media="all">
+		</style>
+	</head>
+	<body>
+		<div id="">1</div>
+		<div id="">2</div>
+		<div id="">3</div>
+		<div id="">4</div>
+		<div id="">5</div>
+		<div id="">6</div>
+		<div id="">7</div>
+		<div id="">8</div>
+		<div id="">9</div>
+		<div id="">10</div>
+	</body>
+
+<script type="text/javascript">
+
+var procura = {
+	
+	algo: function (){
+		var mydivs = document.getElementsByTagName("div");
+		
+		for (var i = 0;  i < mydivs.length; i++  ){
+			mydivs[i].childNodes[0].nodeValue = parseInt(Math.random()*11);
+			console.log(mydivs[i].childNodes[0]);
+			console.log(mydivs[i].childNodes);
+			console.log(mydivs[i]);
+			console.log(mydivs);
+		}
+	}
+}
+procura.algo();
+
+</script>
+</html>

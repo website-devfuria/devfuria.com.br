@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<style type="text/css" media="all">
+		</style>
+		<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" >
+		
+			/**
+			 * Forma convencional
+			 */
+			window.onload = function(){
+				document.getElementeById('btn').onClick = mudaCor;
+			};
+			function mudaCor(){
+				document.getElementById('cor').style.color = '#FF0000';
+			};
+			
+			/**
+			 * Jquery equivalente
+			 */
+			$(document).ready(function(){
+				$('#seg').css('background', 'red');
+			});
+			
+			/**
+			 * Jquery alternativa I
+			 */
+			$().ready(function(){
+				$('#seg').css('background', 'red');
+			});
+			
+			/**
+			 * Jquery alternativa II
+			 */
+			$(function(){
+				$('#seg').css('background', 'red');
+			});
+			
+
+			/**
+			 * Sintaxe formal
+			 */
+			$(document).ready();
+			$(document).ready(function(){});
+    		$(document).ready(function(){
+			
+			});
+			
+			
+			
+		</script>
+	</head>
+      
+	<body>
+		<p id="pri">aaaaaaaaaaa</p>
+		<p id="seg">bbbbbbbbbbbbb</p>
+		<p id="ter">ccccccccccccc</p>
+	</body>
+</html>
