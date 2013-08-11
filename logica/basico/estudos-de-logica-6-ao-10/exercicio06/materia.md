@@ -15,7 +15,7 @@ basta escrever:
 Como estamos no mundo web, precisaríamos de um formulários web para a entrada de dados, isso é algo trivial, porém
 bastante trabalhoso (no sentido de braçal).
 
-No nosso caso vamos colocar um valor arbitrário apenas para que nãto precisemos construir o formulário.
+No nosso caso vamos colocar um valor arbitrário apenas para que não tenhamos que construir um formulário.
 
 
 
