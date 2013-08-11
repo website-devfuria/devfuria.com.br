@@ -13,9 +13,9 @@ require "../../../furia/boot.php";
 /**
  * Instancia a matéria
  */
-define("LOGICA_DE_PROGRAMACAO", 0);
+define("LOGICA_DE_PROGRAMACAO", 5);
 $materia = new Materia();
-$materia->carregarDraft(Materia::idXML_LOGICA, LOGICA_DE_PROGRAMACAO);
+$materia->carregar(Materia::idXML_LOGICA, LOGICA_DE_PROGRAMACAO);
 $materia->setNivel(Materia::BASICO);
 
 
