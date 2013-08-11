@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Tom Jobim</title>
+		<style type="text/css" media="all">
+
+		div{
+			width: 800px;
+		}	
+			
+		img {
+			margin:5px 20px;
+			border: 1px solidi #000;	
+		}
+		
+		p {
+			text-align:justify;
+		}
+		
+		.clear {
+			clear: both;
+		}
+
+		img#left{float:left}
+		img#right{float:right}
+
+		
+		</style>
+	</head>
+	<body>
+	
+		<div>	
+			<img src="tomjobim01.jpg" id="left">
+			<p>Pensou em trabalhar como arquiteto, chegando a cursar o primeiro ano da faculdade e até a se empregar em um escritório, mas logo desistiu e decidiu ser pianista. Tocava em bares e boates em Copacabana, como no Beco das Garrafas no início dos anos 1950, até que em 1952 foi contratado como arranjador pela gravadora Continental, onde trabalhou com Sávio Silveira. Além dos arranjos, também tinha a função de transcrever para a pauta as melodias de compositores que não dominavam a escrita musical. Datam dessa época as primeiras composições, sendo a primeira gravada "Incerteza", uma parceria com Newton Mendonça, na voz de Mauricy Moura.</p>
+			<div class="clear"></div>
+			
+			<img src="tomjobim02.jpg"  id="right"/>
+			<p>Depois da Continental, foi para a Odeon. Entretanto, não tinha tanto tempo para se dedicar à composição, que lhe interessava mais. É nesse época que compõe alguns sambas, em parceria de Billy Blanco: Tereza da Praia, gravada por Lúcio Alves e Dick Farney pela Continental (1954), Solidão e a Sinfonia do Rio de Janeiro. Tereza da Praia o primeiro sucesso. Depois disso, ocorreram outras parcerias, como com a cantora e compositora Dolores Duran, na canção Se é por Falta de Adeus.</p>
+		</div>
+
+	</body>
+</html>
