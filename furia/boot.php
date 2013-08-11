@@ -14,6 +14,9 @@ session_start();
  *
  */
 define('DF', true);
+//define('GANALYTICS_ON', true); // liga
+define('GANALYTICS_ON', false);// desliga
+
 
 
 /**
@@ -34,8 +37,6 @@ define('BASE_PATH', dirname(__FILE__));
  */
 # www.devefuria.com.br
 define('LINKS_PATH', ROOT_PATH);
-# local
-//define('LINKS_PATH', "http://localhost/devfuria/www.devfuria.com.br/");
 
 
 
