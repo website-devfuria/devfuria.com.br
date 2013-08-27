@@ -6,10 +6,8 @@ Faça um algoritmo, sendo a data de nascimento um valor qualquer, que expresse a
 
 ### Comentários
 
-Este exercício é provcativo. Eu quis provocar em você a atenção para o problema de se trabalhar com datas, algo que
-não é fácil em nenhma linguagem.
-
-Para começar temos a questão dos formatos básicos abaixo:
+Com esse exercício, eu quis provocar em você a atenção para o problema de se trabalhar com datas. Algo que não é fácil
+em nenhuma linguagem. As datas podem aprensentar diversos formatos, veja alguns formatos básicos abaixo:
 
     dd-mm-aaaa
     mm-dd-aaaa

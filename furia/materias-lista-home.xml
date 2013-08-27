@@ -256,22 +256,97 @@
                     <dt_atualizacao>25/07/2013</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>Estudos de lógica com respostas (1 ao 5)</titulo>
-                    <url>logica/basico/estudos-de-logica-1-ao-5/</url>
-                    <pasta>logica/basico/estudos-de-logica-1-ao-5/</pasta>
-                    <resumo>Você já sabe o que é PHP, conhece a sintaxe básica, lêu o artigo “pé na jáca”, já conseguiu “subir’ o ambiente de desenvolvimento. Agora só falta começar a programar. Para isso vamos começar exercitando a lógica de programação. Não vamos criar programas completos e profissionais, nada disso. Construiremos apenas pequenos trechos de códigos para exercitar o raciocínio e desenvolver uma intimidade com a linguagem.</resumo>
+                    <titulo>Exercício 01</titulo>
+                    <url>logica/basico/exercicio01/</url>
+                    <pasta>logica/basico/exercicio01/</pasta>
+                    <resumo>Escreva um algoritmo que mostre a área quadrada de um espaço qualquer (os valores desse espaço são atribuídos arbitrariamente pelo programador).</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>05/06/2012</dt_criacao>
-                    <dt_atualizacao>11/09/2012</dt_atualizacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
                 </materia>
                 <materia>
-                    <titulo>Estudos de lógica com respostas (6 ao 10)</titulo>
-                    <url>logica/basico/estudos-de-logica-6-ao-10/</url>
-                    <pasta>logica/basico/estudos-de-logica-6-ao-10/</pasta>
-                    <resumo>Esta é a segunda bateria de exercícios de lógica. </resumo>
+                    <titulo>Exercício 02</titulo>
+                    <url>logica/basico/exercicio02/</url>
+                    <pasta>logica/basico/exercicio02/</pasta>
+                    <resumo>Escreva um algoritmo que mostre a área quadrada de um espaço qualquer (os valores desse espaço são atribuídos arbitrariamente pelo programador).</resumo>
                     <autor>Flávio Micheletti</autor>
                     <dt_criacao>05/06/2012</dt_criacao>
-                    <dt_atualizacao>04/02/2013</dt_atualizacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Exercício 03</titulo>
+                    <url>logica/basico/exercicio03/</url>
+                    <pasta>logica/basico/exercicio03/</pasta>
+                    <resumo>Faça um programa que mostra a média simples (aritmética) de 3 valores quaisquer.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Exercício 04</titulo>
+                    <url>logica/basico/exercicio04/</url>
+                    <pasta>logica/basico/exercicio04/</pasta>
+                    <resumo>Sendo o número total de eleitores de um município = 25.639, o número de votos brancos = 1507, nulos = 2312 e válidos = 21.820. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Exercício 05</titulo>
+                    <url>logica/basico/exercicio05/</url>
+                    <pasta>logica/basico/exercicio05/</pasta>
+                    <resumo>Faça um algoritmo que mostre e calcule o reajuste de um salário qualquer. O salário e o reajuste serão valores quaisquer e a saída mostrará o valor do reajuste e o salário reajustado.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Exercício 06</titulo>
+                    <url>logica/basico/exercicio06/</url>
+                    <pasta>logica/basico/exercicio06/</pasta>
+                    <resumo>Calcular o total de dias de n meses, considerando que os meses tenham 30 dias.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Exercício 07</titulo>
+                    <url>logica/basico/exercicio07/</url>
+                    <pasta>logica/basico/exercicio07/</pasta>
+                    <resumo>aça um algoritmo, sendo a data de nascimento um valor qualquer, que expresse a idade de uma pessoa em dias.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Exercício 08</titulo>
+                    <url>logica/basico/exercicio08/</url>
+                    <pasta>logica/basico/exercicio08/</pasta>
+                    <resumo>O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos
+(aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escreva um
+algoritmo para calcular e escrever o custo final ao consumidor. Como custo de fábrica utilize um valor arbitrário,
+por exemplo, 20.000.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Exercício 09</titulo>
+                    <url>logica/basico/exercicio09/</url>
+                    <pasta>logica/basico/exercicio09/</pasta>
+                    <resumo>Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
+                </materia>
+                <materia>
+                    <titulo>Exercício 10</titulo>
+                    <url>logica/basico/exercicio10/</url>
+                    <pasta>logica/basico/exercicio10/</pasta>
+                    <resumo>Calcular o juros simples produzido pelo empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.</resumo>
+                    <autor>Flávio Micheletti</autor>
+                    <dt_criacao>05/06/2012</dt_criacao>
+                    <dt_atualizacao>11/08/2013</dt_atualizacao>
                 </materia>
             </basico>
         </nivel>
