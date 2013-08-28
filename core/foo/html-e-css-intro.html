@@ -121,14 +121,14 @@
                             <h1 id="html">Elementos básicos HTML</h1>
                         </div>
 
-                        <p class="lead">Vamos dar uma rápida olhada nas tag's básicas e uma "passeada" com o CSS.</p>
+                        <p class="">Vamos dar uma rápida olhada nas tag's básicas e depois uma "passeada" com o CSS.</p>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h2 id="html-ancora">Âncora(link)</h2>
+                                <h3 id="html-ancora">Âncora(link)</h3>
                             </div>                        
 
-                            <pre><code>&lt;a href="pagina-ao-clicar.html"&gt;Isto é um link&lt;/a&gt;;</code></pre>
+                            <pre><code>&lt;a href="pagina-ao-clicar.html"&gt;Isto é um link&lt;/a&gt;</code></pre>
 
                             <p>O link possui a proprieda <em>href</em> (hypertext reference) que nada mais é do que o alvo que será
                                 alcançado quando clicarmos no link.</p>
@@ -142,17 +142,24 @@
 
                             <p>Trata-se do <em>endereço relativo</em>. Vamos para baixo, de pasta em pasta, com o símbolo <em>"../"</em> exemplo:</p>
 
-                            <pre><code>&lt;a href="../../../pagina-ao-clicar.html"&gt;Isto é um link 3 pastas abaixo&lt;/a&gt;;</code></pre>
-
+                            <pre><code>&lt;a href="../../../pagina-ao-clicar.html"&gt;Isto é um link 3 pastas abaixo&lt;/a&gt;</code></pre>
+                            <div class="highlight">
+<pre>
+<code class="html">
+&lt;a href="../../../pagina-ao-clicar.html"&gt;Isto é um link 3 pastas abaixo&lt;/a&gt;
+</code>                            
+</pre>
+                            </div>
+                            
                             <p>E para cima, com o nome da pasta, exemplo:</p>
 
-                            <pre><code>&lt;a href="pasta/pasta/pasta/pagina-ao-clicar.html"&gt;Isto é um link três pastas acima&lt;/a&gt;;</code></pre>
+                            <pre><code>&lt;a href="pasta/pasta/pasta/pagina-ao-clicar.html"&gt;Isto é um link três pastas acima&lt;/a&gt;</code></pre>
 
                             <p>Na URL da âncora também podemos passar parâmetros com um par de valor, onde o primeiro valor é o nome da variável e o
                                 segundo é o valor dessa variável, mas isso nos veremos mais afundo quando estivermos estudando uma linguagem "do lado
                                 do servidor. Exemplo:</p>
 
-                            <pre><code>&lt;a href="script.php?varA=valor1&amp;varB=valor2"&gt;Isto é um link com dois parâmetros&lt;/a&gt;;</code></pre>
+                            <pre><code>&lt;a href="script.php?varA=valor1&amp;varB=valor2"&gt;Isto é um link com dois parâmetros&lt;/a&gt;</code></pre>
 
                             <p>O link pode sofrer estilizações interessantes. É muito comum estilizar o link como se fosse um botão e há também um
                                 efeito que é acionado quando passamos o mouse por cima: é o <em>hover</em> (por cima, pairar). Para estilizar o "hover" utiliza-se
@@ -163,7 +170,7 @@
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h2 id="html-listas">Listas</h2>
+                                <h3 id="html-listas">Listas</h3>
                             </div>                         
 
 
@@ -195,7 +202,7 @@
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h2 id="html-paragr-imgs">Parágrafos e imagens</h2>
+                                <h3 id="html-paragr-imgs">Parágrafos e imagens</h3>
                             </div>                         
 
                             <pre><code>&lt;p&gt; Isto é um parágrafo&lt;/p&gt;
@@ -264,7 +271,7 @@
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h2 id="html-tabelas">Tabelas</h2>
+                                <h3 id="html-tabelas">Tabelas</h3>
                             </div>                           
 
                             <p>As tabelas acomodam dados tabulares.</p>
@@ -319,7 +326,7 @@
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h2 id="html--forms-inputs-labels">Formulários, inputs e labels</h2>
+                                <h3 id="html-forms-inputs-labels">Formulários, inputs e labels</h3>
                             </div>                          
 
                             p>Um formulário na web normalmente é chato de se preencher, só que ele é a alma dos aplicativos web, pois é através de seus
@@ -347,8 +354,12 @@
 
                             <p>Essa questão da interação formulário/servidor nós trataremos no curso de PHP, ok? Aqui no curso de HTML e CSS vamos nos
                                 deter apenas em seu layout e estrutura.</p>
+                        </div>                              
 
-                            <h3 id="html-divs-span">Div's e Span's</h3>
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3 id="html-divs-span">Div's e Span's</h3>
+                            </div>                              
 
                             <p>A tag "div" é um elemento do tipo "conteiner" que acomoda outras tag's, é um <em>div</em>sor de espaços.
                                 A tag "span" acomoda pequenos trechos de texto.</p>
@@ -406,12 +417,12 @@
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h2 id="css-unindo">Unindo o CSS ao HTML</h2>
+                                <h3 id="css-unindo">Unindo o CSS ao HTML</h3>
                             </div>  
 
                             <p>Agora precisamos aprender como unir a CSS ao documento HTML.</p>
 
-                            <p>A CSS <em>"uni-se"</em> ao HTML de 3 formas distintas: <em>inline, embeded e linked</em>. Vejamos:</p>
+                            <p>"Colamos" a CSS ao HTML de 3 formas distintas: <em>inline, embeded e linked</em>. Vejamos:</p>
 
                             <h3 id='css-inline'>CSS - inline (na linha)</h3>
 
