@@ -243,9 +243,9 @@ body {
 .bs-masthead-links li + li {
   margin-left: 20px;
 }
-.bs-masthead-links a {
+/*.bs-masthead-links a {
   color: #fff;
-}
+}*/
 
 @media screen and (min-width: 768px) {
   .bs-masthead {
