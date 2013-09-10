@@ -93,14 +93,14 @@ require "core/boot.php";
     </div>
 
 
-    <div id="html" style="height: 40px;"></div>
+    <div id="htmlcss" style="height: 40px;"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h2>HTML & CSS</h2>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Onde tudo começou </a>
-                    <a href="#" class="list-group-item">HTML e CSS - Introdução </a>
+                    <a href="<?php echo LINKS_PATH; ?>/html-css/basico/html-e-css-intro/" class="list-group-item">HTML e CSS - Introdução </a>
                     <a href="#" class="list-group-item">Elementos in-line e elementos block-level </a>
                     <a href="#" class="list-group-item">Criando nosso primeiro HTML [com vídeo] </a>
                 </div>
