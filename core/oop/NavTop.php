@@ -7,10 +7,11 @@
 /**
  * Descrição da classe
  */
-class Core {
-
+class NavTop {
+    
     public $secoes = array();
-
+    public $secao = "";
+    
 }
 
 ?>

@@ -2,7 +2,6 @@
 /**
  * PHP
  */
-
 /**
  * Includes
  */
@@ -11,7 +10,7 @@ require "../../../core/boot.php";
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php 
+        <?php
         $core->head = new Head();
         $core->head->setTitle('PHP');
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -19,42 +18,12 @@ require "../../../core/boot.php";
     </head>
     <body>
 
-        <!-- Menu superior -->
-        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="../" class="navbar-brand">DevFuria</a>
-                </div>
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="../css">PHP</a>
-                        </li>
-                        <li>
-                            <a href="#">JavaScript</a>
-                        </li>
-                        <li>
-                            <a href="#">HTML & CSS</a>
-                        </li>
-                        <li>
-                            <a href="#">Lógica de programação</a>
-                        </li>
-                        <li>
-                            <a href="#">RegExp</a>
-                        </li>
-                        <li>
-                            <a href="#">(My)Sql</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header><!-- Menu superior -->
+        <?php
+        $core->navtop = new NavTop();
+        $core->navtop->secoes = $core->secoes;
+        $core->navtop->secao = "php";
+        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
+        ?> 
 
 
         <!-- Título -->
@@ -349,7 +318,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
             </div>
         </footer>
 
-    <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
 </html>

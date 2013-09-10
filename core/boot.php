@@ -101,9 +101,18 @@ define('KEYWORDS_MYSQL', "sql básico; sql fácil; sql início; sql iniciante; "
  */
 require (BASE_PATH . "/oop/Core.php");
 require (BASE_PATH . "/oop/Head.php");
+require (BASE_PATH . "/oop/NavTop.php");
 
 
 /**
- * Classes diversas
+ * Variáveis do sistema
  */
 $core = new Core();
+$core->secoes = array(
+    "php" => "PHP",
+    "js" => "Javascript",
+    "htmlcss" => "HTML & CSS",
+    "logica" => "Lógica de Programação",
+    "regexp" => "RegExp",
+    "mysql" => "MySql & SQL"
+);

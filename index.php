@@ -18,45 +18,11 @@ require "core/boot.php";
 
     <body>
 
-        <!-- Menu superior -->
-        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="../" class="navbar-brand">DevFuria</a>
-                </div>
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="#php">PHP</a>
-                        </li>
-                        <li>
-                            <a href="#js">JavaScript</a>
-                        </li>
-                        <li>
-                            <a href="#html">HTML & CSS</a>
-                        </li>
-                        <li>
-                            <a href="#logica">Lógica de programação</a>
-                        </li>
-                        <li>
-                            <a href="#regexp">RegExp</a>
-                        </li>
-                        <li>
-                            <a href="#mysql">(My)Sql</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header><!-- Menu superior -->
-
-
+        <?php
+        $core->navtop = new NavTop();
+        $core->navtop->secoes = $core->secoes;
+        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
+        ?> 
 
         <!-- Page content of course! -->
     <main class="bs-masthead" id="content" role="main">
