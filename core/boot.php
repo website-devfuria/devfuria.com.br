@@ -109,8 +109,8 @@ require (BASE_PATH . "/oop/NavTop.php");
  */
 $core = new Core();
 $core->secoes = array(
-    "php" => "PHP",
     "js" => "Javascript",
+    "php" => "PHP",
     "htmlcss" => "HTML & CSS",
     "logica" => "Lógica de Programação",
     "regexp" => "RegExp",

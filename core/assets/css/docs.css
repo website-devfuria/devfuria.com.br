@@ -578,10 +578,11 @@ h1[id] {
   border-color: #e5e5e5 #eee #eee;
   border-style: solid;
   border-width: 1px 0;
+  text-align: center;
 }
 /* Echo out a label for the example */
 .bs-example:after {
-  content: "Example";
+  --content: "Example";
   position: absolute;
   top:  15px;
   left: 15px;
@@ -591,6 +592,7 @@ h1[id] {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 
 /* Tweak display of the code snippets when following an example */
 .bs-example + .highlight {
