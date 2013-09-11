@@ -1084,3 +1084,10 @@ h1[id] {
   margin-top: 15px;
   margin-bottom: 5px;
 }
+
+/* Inclusões do Ale */
+
+/* O pre do bootstrap estava brignado com o them do highligth */
+pre {
+    background-color: #F8F8FF;
+}
