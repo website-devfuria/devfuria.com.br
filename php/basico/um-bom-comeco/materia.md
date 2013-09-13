@@ -200,7 +200,7 @@ Leituras adicionais sugeridas
         <dd><em>Manual oficial do PHP</em>, está aqui não é sugerida, é obrigatória. (dica: digite apenas php.net que o
         navegador redireciona para a url completa).<a href="http://www.php.net" >http://www.php.net</a></dd>
 
-        <dd><em>Trecho do manual</em> que introduz à programação em PHP.<a
+        <dd><em>Trecho do manual</em> que introduz a programação em PHP.<a
         href="http://www.php.net/manual/pt_BR/getting-started.php" >http://www.php.net/manual/pt_BR/getting-started.php</a></dd>
 
         <dd><em>Artigo de Henrique Bastos</em> explicando as diferenças sobre linguagem interpretada e compiladas.<a
