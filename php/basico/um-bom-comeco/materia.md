@@ -25,7 +25,7 @@ Em apenas dois parágrafos surgiram termos essenciais e importantes:
 * Programas
 
 Outros termos surgirão e com o tempo esses conceitos irão se tornam mais claros e amadurecidos. Por enquanto, é
-aconselhável a não perder muito tempo com eles. *Deixe seu celebro, aos poucos, se familiarizar com esse universo e
+aconselhável a não perder muito tempo com eles. *Deixe seu cérebro, aos poucos, se familiarizar com esse universo e
 foque sua atenção para a liguagem*.
 
 O termo "Linguagem de programação do lado do servidor" é uma forma genérica de se referir a linguagem de programação que
@@ -92,10 +92,10 @@ básica (de fábrica), mas em breve será preciso dominar a configuração dos c
 
 Em contraponto ao ambiente de desenvolvimento, temos o ambiente na qual o software está rodando de verdade. Trata-se do
 *ambiente de produção* seu correto funcionamento é um fator crítico para a equipe de TI. Os scripts são produzidos e
-testados no ambiente de desenvolvimento e posteriormente publicados (enviados) para o ambiente de produção. Após "subir
+testados no ambiente de desenvolvimento e posteriormente publicados (enviados) para o ambiente de produção. Após "subir"
 o ambiente é preciso instalar programas auxiliares como um bom editor de código (Netbeans, Eclipse, etc...), um
 controlador de versão (software que controla a versão do código fonte), um navegador de web compatível com o
-"webs standars" (Fire Fox, Google Chrome, etc...), uma interface (API) para o banco de dados, no caso do Mysql é
+"webs standars" (Firefox, Google Chrome, etc...), uma interface (API) para o banco de dados, no caso do Mysql é
 utilizado o PhpMyAdmin, bibliotecas que auxiliam na depuração do código como o X-Debug, etc...
 
 A rotina de desenvolvimento, no tocante a codificação, normalmente é esta: com o editor e navegador abertos escrevemos um
@@ -106,7 +106,7 @@ fonte do sistema a ser construído.
 
 
 
-Sintaxe Basica
+Sintaxe Básica
 --------------
 
 A *sintaxe básica* pode ser conferida nos trechos de códigos seguintes:
@@ -156,7 +156,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
 Por que PHP?
 ------------
 
-O PHP obteve, nos anos seguinte à sua criação, a colaboração da dupla Andi Gutmans e Zeev Suraski evoluíndo de forma
+O PHP obteve, nos anos seguinte à sua criação, a colaboração da dupla Andi Gutmans e Zeev Suraski evoluindo de forma
 surpreendente. Atualmente na versão 5.4 a linguagem conta com uma larga aceitação e utilização em centenas de projetos,
 dos mais simples aos mais complexos. A linguagem possui vasta documentação na Internet e na literatura. Alguns bons
 framework´s foram produzidos como por exemplo o *Zend* e o Symphony (entre outros). A empresa Zend, responsável pelo
@@ -175,7 +175,7 @@ está na frente, em média 60%, veja figura 02.
     </p>
 </div>
 
-Bom... um servidor apache pode rodar outas linguagens além do PHP, mas veja este outro gráfico:
+Bom... um servidor apache pode rodar outras linguagens além do PHP, mas veja este outro gráfico:
 
 <div class="imagem">
     <img src="../../imagens/php_estatistica01.png" alt="funcionamento do servidor web" />
@@ -215,6 +215,6 @@ Leituras adicionais sugeridas
         <dd><em>Nenhum livro sobre PHP</em> é suficientemente básico, conciso e estruturado em uma sequência com começo, meio e fim. Se
         tratando de PHP para iniciantes, infelizmente não conheço nenhum livro na qual seja merecedor de uma indicação. Existe
         uma infinidades de livros bons e nos quais eu farei referência quando for oportuno, mas a abrangência é de intermediário
-        para avançado. Aliás, essa foi uma das razões que me motivaram a realizar este projeto O ensino da linguagem de
-        programação,  de qualquer linguagem, é muito difuso, disperso, pulverizado e pouco conciso.</dd>
+        para avançado. Aliás, essa foi uma das razões que me motivaram a realizar este projeto. O ensino da linguagem de
+        programação, de qualquer linguagem, é muito difuso, disperso, pulverizado e pouco conciso.</dd>
 </dl>
