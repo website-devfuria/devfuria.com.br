@@ -6,9 +6,9 @@ para começar o desenvolvimento. Inclua na lista: o servidor web(apache), o mód
 do banco de dados, o editor de código, o controlador de versão, a escolha do sistema operacional, etc... Após instalado
 os componentes, devemos configurar cada um deles.
 
-Não pense que existe um tutorial mágico que lhe ensinará a fazer essas coisas rapidamente, porquê realmente não existe.
-Por outro lado, se o leitor for um inicante poderá achar a mão de obra da instalação e configuração um serviço um tanto
-penoso, e defato o é. Então, sugiro duas situações:
+Não pense que existe um tutorial mágico que lhe ensinará a fazer essas coisas rapidamente, porque realmente não existe.
+Por outro lado, se o leitor for um iniciante poderá achar a mão de obra da instalação e configuração um serviço um tanto
+penoso, e de fato o é. Então, sugiro duas situações:
 
 a) (básico)instalar tudo muito rapidamente para poder começar a programar ou
 
@@ -28,7 +28,7 @@ Se você é do mundo Linux, ótimo. Se você é do ambiente Windows, gostaria de
 Agora, se você aspira ser um profissional da área de TI, será sua obrigação conhecer outros sistemas operacionais além
 do Windows.
 
-Que tal começar pelo Linux?.
+Que tal começar pelo Linux?
 
 
 ### E o pessoal do Windows? ###
@@ -46,7 +46,7 @@ Botando a mão na massa
 Não vou explicar em detalhes como fazer a instalação, já existe bons artigos sobre o assunto, veremos dicas práticas que
 poderão lhe ajudar.
 
-Se você nunca usou o linux, aconselho a leitura do livro "Linux guia prático(Morimoto)". Um livro bastante consiso, prático
+Se você nunca usou o linux, aconselho a leitura do livro "Linux guia prático(Morimoto)". Um livro bastante conciso, prático
 e básico sem perder a profundidade.
 
 <div class="imagem">
@@ -55,7 +55,7 @@ e básico sem perder a profundidade.
 </div>
 
 
-A primeira coisa que aprende-se sobre um sistema operacional é como instalá-lo. Novcaso do Linux, você terá que decidir
+A primeira coisa que aprende-se sobre um sistema operacional é como instalá-lo. No caso do Linux, você terá que decidir
 entre mais de 500 distribuições(versões).
 
 Tudo bem, existem apenas umas 10 distro principais. Em 2013 a versão do ubuntu 12.10 é uma distro bastante popular, que
@@ -64,16 +64,16 @@ e comece tentando instalar o sistema. Não aconselho a instalar o Linux como "du
 neste momento. Utilize uma máquina virtual para reduzir o impacto, o VirtualBox da Sun (agora Oracle) é open source e
 uma boa opção.
 
-Explicar a *instalação do Linux foge do escopo deste trabalho*, também não será preciso pois, existem centenas de artigos
+Explicar a *instalação do Linux foge do escopo deste trabalho*, também não será preciso, pois existem centenas de artigos
 que explicam muito bem o passo a passo. Neste ponto é aconselhável trabalhar com máquinas virtuais. Repetindo,* é menos
-impactante instalar os sistema em uma máquina virtual do que na sua máquina principal*, assim se algo der errado sempre
+impactante instalar o sistema em uma máquina virtual do que na sua máquina principal*, assim se algo der errado sempre
 poderá voltar atrás.
 
-De forma grotesca, há duas fámílias de distro bastante conhecidas no mundo linux: A família Had Rat e a família Debian.
+De forma grotesca, há duas famílias de distro bastante conhecidas no mundo linux: A família Had Rat e a família Debian.
 A distro Had Hat originou o CentOS e o Fedora e a família Debian originou o Ubuntu.
 
 Teoricamente, se você conhece bem o "esquema geral" do sistema Linux conseguirá se virar em qualquer distro. As
-diferênças, as vezes, são poucas. Como por exemplo no Ubuntu para instalar programas utiliza-se o "apt-get" e no Fedora
+diferenças, as vezes, são poucas. Como por exemplo no Ubuntu para instalar programas utiliza-se o "apt-get" e no Fedora
 utiliza-se o "yum".
 
 <span style="text-decoration:line-through;">Como estou mais familizarizado com o Ubuntu, vou continuar este tutorial
@@ -86,12 +86,12 @@ usuário "root". Abra o termial (tente CTRL+ALT+U) e digite:
     sudo passwd root
 
 Após digite a senha do seu usuário (definida na instalação) e na sequência digite a senha do root. Para rodar alguns
-comandos é preciso ter autorização de root. Ou vocẽ digita "sudo" antes de cada comando (será preciso fornecer a senha
+comandos é preciso ter autorização de root. Ou você digita "sudo" antes de cada comando (será preciso fornecer a senha
 do root) ou vira root e vai trabalhando. Para virar root digite:
 
     su root
 
-... e forneca a senha definida anteriormente. Os comandos apresentados na sequência consideram que você seja root ou
+... e forneça a senha definida anteriormente. Os comandos apresentados na sequência consideram que você seja root ou
 que utilize o "sudo". O sinal # no início de cada comando explicita o que eu acabei de falar, logo não é necessário
 digitá-lo junto com o comando, rs.
 
@@ -210,7 +210,7 @@ html_erros = On
 </div>
 
 
-Salve o arquivo digitando CRTL+O, confirme pressionando ENTER, agora feche o arquivo digitadno CTRL+W.
+Salve o arquivo digitando CRTL+O, confirme pressionando ENTER, agora feche o arquivo digitando CTRL+W.
 O nano é muito fácil, diz aí? Reinicie o apache:
 
     /etc/init.d/apache2 restart // ubuntu
@@ -218,9 +218,9 @@ O nano é muito fácil, diz aí? Reinicie o apache:
 
 ### Instalando o X-Debug ###
 
-O X-debug é uma ferramenta útil prá cara... Ele ajuda a formatar a saída dos dados e é possível utilizá-lo com a interface
+O X-debug é uma ferramenta útil pra cara... Ele ajuda a formatar a saída dos dados e é possível utilizá-lo com a interface
 do NetBeans. Neste momento, talvez você não entenda o que ele é, nem seu potencial, mas aproveite para instalá-lo agora.
-Um dia você ainda vai me agradeçer, rssss. Com o PECL(pear)pode-se instalar novos pacotes no estilo apt-get, no caso
+Um dia você ainda vai me agradecer, rssss. Com o PECL(pear)pode-se instalar novos pacotes no estilo apt-get, no caso
 vamos instalar o pacote x-debug no Ubuntu:
 
     pecl install xdebug
@@ -234,7 +234,7 @@ Abra novamente o php.ini:
 
     nano /etc/php5/php.ini
 
-No final do arquivo ou no fim da seção "extenções" inclua a seguinta linha:
+No final do arquivo ou no fim da seção "extensões" inclua a seguinta linha:
 
 <div class="code">
 <h6>Texto Plano</h6>
@@ -287,7 +287,7 @@ usuário do banco.
 
     apt-get install phpmyadmin
 
-Responda as perguntas que o instalardor fará (nenhum segredo) e ao final, abra o navegador e digite "localhost/phpmyadmin"
+Responda as perguntas do instalador (nenhum segredo) e ao final, abra o navegador e digite "localhost/phpmyadmin"
 a tela de login deve ser exibida, digite novamente o usuario do mysql (root) e sua senha. Pronto, você está dentro do
 sistema, agora é possível manipular o mysql com um interface amigável.
 
@@ -316,7 +316,7 @@ seus plugins, e etc.. Só que neste ponto, a escolha dos aplicativos é uma ques
 Como *editor de código* eu sugiro o *Netbeans*, ele é open source e tem umas funcionalidades muito interessantes. Para
 instalá-lo é preciso, primeiramente, ter o java (JDK) previamente instalado. Tente instalar a versão openJavaX (onde x
 é a versão do java) via Softer Center (ainda estamos no ubuntu). Após isso, basta baixar o arquivo de instalação do
-Netbeans, procure pela versão PHP que tem aproximadamente uns 50mb. É preciso dar permissão de execução no arquivo e em
+Netbeans, procure pela versão PHP que tem aproximadamente 50MB. É preciso dar permissão de execução no arquivo e em
 seguida executá-lo (obviamente).
 
 Como controlador de versão eu sugiro o *svn* que ainda é muito utilizado. Dá para instalar pelo repositório da distro, eu
@@ -324,7 +324,7 @@ utilizava o svn no windows e sentia falta de uma interface no nautilus (o gerenc
 descobri o nautilus-svn, procure por rabbit-svn e instale ele também. Atualmente (2013) a controle de versão mais
 utilizado e divulgado é o *GIT*, procure por "github" e aprenda mais sobre este controlador de versão.
 
-Como navegador eu sugiro o *Firefox* e não se esqueça dos plugins *FireBug e WebDeveloper* eles quebram um galho enorme.
+Como navegador eu sugiro o *Firefox* e não se esqueça dos plugins *Firebug e WebDeveloper* eles quebram um galho enorme.
 
 Espero que você tenha sobrevivido.
 
