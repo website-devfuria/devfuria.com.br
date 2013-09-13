@@ -113,7 +113,14 @@
                         </a>
                         <?php $materias = Materia::getObjects(Materia::REGEXP); ?>
                         <ul class="nav nav-pills nav-stacked">
-                            <li><span class="badge badge-success">Em breve</span></li>
+                            <li><span class="badge badge-success">Básico</span></li>
+                            <li>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <?php foreach ($materias as $materia): ?>
+                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </li>                            
                         </ul>
                     </div>
                 </li>
@@ -124,8 +131,14 @@
                         </a>
                         <?php $materias = Materia::getObjects(Materia::MYSQL); ?>
                         <ul class="nav nav-pills nav-stacked">
-                            <li><span class="badge badge-success">Em breve</span></li>
-                        </ul>
+                            <li><span class="badge badge-success">Básico</span></li>
+                            <li>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <?php foreach ($materias as $materia): ?>
+                                        <li><a href="<?php echo LINKS_PATH . $materia->url ?>"><?php echo $materia->titulo ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </li> 
                     </div>
                 </li>
             </ul>

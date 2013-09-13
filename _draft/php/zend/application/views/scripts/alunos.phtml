@@ -1,0 +1,13 @@
+<?php 
+/**
+ * Lá no index usamos a variável records (com 's')
+ * e aqui estamos usando apenas record (sem o 's')
+ * então, precisamos configurar isso lá no controller. 
+ */
+?>
+<tr>
+	<td><?php echo $this->record->matricula ?></td>
+	<td><?php echo $this->record->nome ?></td>
+	<td><a href="<?php echo $this->placeholder('link')->linkEditar.'/matricula/'.$this->record->matricula ?>" >Editar</a></td>
+	<td><a href="<?php echo $this->placeholder('link')->linkExcluir.'/matricula/'.$this->record->matricula ?>" >Excluir</a></td>	
+</tr>

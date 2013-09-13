@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Tom Jobim</title>
+		<style type="text/css" media="all">
+
+		* {
+			font-family: Courier New;
+			font-size:12px;
+
+			margin: 0px;
+			padding: 0px;
+		}
+
+		div {
+			width: 70%;
+			min-width: 400px;
+			position:relative;
+			left: 50%;
+			margin-left: -35%;
+		}	
+			
+		img {
+			margin:5px 0px;
+			padding: 4px;
+			border: 5px solid #000;	
+		}
+		
+		h1 {
+			margin: 10px 0px 0px;
+			font-size:34px;		
+		}
+
+		p {
+			margin: 10px 0px;
+			text-align:justify;
+		}
+		
+		.clear {
+			clear: both;
+		}
+
+		img#left{float:left; margin-right: 10px;}
+		img#right{float:right; margin-left: 10px;}
+
+		
+		</style>
+	</head>
+	<body>
+	
+		<div>
+			<h1>O Maestro Brasileiro</h1>
+			<img src="tomjobim01.jpg" id="left">
+			<p>Pensou em trabalhar como arquiteto, chegando a cursar o primeiro ano da faculdade e até a se empregar em um escritório, mas logo desistiu e decidiu ser pianista. Tocava em bares e boates em Copacabana, como no Beco das Garrafas no início dos anos 1950, até que em 1952 foi contratado como arranjador pela gravadora Continental, onde trabalhou com Sávio Silveira. Além dos arranjos, também tinha a função de transcrever para a pauta as melodias de compositores que não dominavam a escrita musical. Datam dessa época as primeiras composições, sendo a primeira gravada "Incerteza", uma parceria com Newton Mendonça, na voz de Mauricy Moura.</p>
+
+			<p>Depois da Continental, foi para a Odeon. Entretanto, não tinha tanto tempo para se dedicar à composição, que lhe interessava mais. É nesse época que compõe alguns sambas, em parceria de Billy Blanco: Tereza da Praia, gravada por Lúcio Alves e Dick Farney pela Continental (1954), Solidão e a Sinfonia do Rio de Janeiro. Tereza da Praia o primeiro sucesso. Depois disso, ocorreram outras parcerias, como com a cantora e compositora Dolores Duran, na canção Se é por Falta de Adeus.</p>
+
+			<p>Em 1956 musicou a peça Orfeu da Conceição com Vinícius de Moraes, que se tornou um de seus parceiros mais constantes. Dessa peça fez bastante sucesso a canção antológica Se Todos Fossem Iguais a Você, gravada diversas vezes. Tom Jobim fez parte do núcleo embrionário da bossa nova. O LP Canção do Amor Demais (1958), em parceria com Vinícius, e interpretações de Elizeth Cardoso, foi acompanhado pelo violão de um baiano até então desconhecido, João Gilberto. A orquestração é considerada um marco inaugural da bossa nova, pela originalidade das melodias e harmonias. Inclui, entre outras, Canção do Amor Demais, Chega de Saudade e Eu Não Existo sem Você. A consolidação da bossa nova como estilo musical veio logo em seguida com o 78 rotações Chega de Saudade, interpretado por João Gilberto, lançado em 1959, com arranjos e direção musical de Tom, selou os rumos que a música popular brasileira tomaria dali para frente. No mesmo ano foi a vez de Sílvia Telles gravar Amor de Gente Moça, um disco com 12 canções de Tom, entre elas "Só em Teus Braços", "Dindi" (com Aloysio de Oliveira) e "A Felicidade" (com Vinícius).</p>
+
+			<img src="tomjobim02.jpeg"  id="right"/>
+			<p>Tom foi um dos destaques do Festival de Bossa Nova do Carnegie Hall, em Nova York em 1962. No ano seguinte compôs, com Vinícius, um dos maiores sucessos e possivelmente a canção brasileira mais executada no exterior: "Garota de Ipanema". Nos anos de 1962 e 1963 a quantidade de "clássicos" produzidos por Tom é impressionante: "Samba do Avião", "Só Danço Samba" (com Vinícius), "Ela é Carioca" (com Vinícius), "O Morro Não Tem Vez", "Inútil Paisagem" (com Aloysio), "Vivo Sonhando". Nos Estados Unidos gravou discos (o primeiro individual foi The Composer of Desafinado, Plays, de 1965), participou de espetáculos e fundou sua própria editora, a Corcovado Music.</p>
+
+			<p>O sucesso fora do Brasil o fez voltar aos EUA em 1967 para gravar com um dos grandes mitos americanos, Frank Sinatra. O disco Francis Albert Sinatra e Antônio Carlos Jobim, com arranjos de Claus Ogerman, incluiu versões em inglês das canções de Tom ("The Girl From Ipanema", "How Insensitive", "Dindi", "Quiet Night of Quiet Stars") e composições americanas, como "I Concentrate On You", de Cole Porter. No fim dos anos 1960, depois de lançar o disco Wave (com a faixa-título, Triste, Lamento entre outras instrumentais), participou de festivais no Brasil, conquistando o primeiro lugar no III Festival Internacional da Canção (Rede Globo), com Sabiá, parceria com Chico Buarque, interpretado por Cynara e Cybele, do Quarteto em Cy. Sabiá conquistou o júri, mas não o público, que vaiou ostensivamente a interpretação diante dos constrangidos compositores.</p>
+
+			<p>Aprofundando seus estudos musicais, adquirindo influências de compositores eruditos, principalmente Villa-Lobos e Debussy, Tom Jobim prosseguiu gravando e compondo músicas vocais e instrumentais de rara inspiração, juntando harmonias do jazz (Stone Flower) e elementos tipicamente brasileiros, fruto de suas pesquisas sobre a cultura brasileira. É o caso de "Matita Perê" e "Urubu", lançados na década de 1970, que marcam a aliança entre sua sofisticação harmônica e sua qualidade de letrista. São desses dois discos Águas de Março, Ana Luiza, Lígia, Correnteza, O Boto, Ângela. Também nessa época grava discos com outros artistas, como Elis e Tom, com Elis Regina, Miúcha e Tom Jobim e Edu e Tom, com Edu Lobo.</p>
+
+			<p>Valendo-se ainda do filão engajado da pós-ditadura, cantou, ainda que com uma participação individual diminuta, no coro da versão brasileira de We are the world, o hit americano que juntou vozes e levantou fundos para a África ou USA for Africa. O projeto Nordeste Já (1985) abraçou a causa da seca nordestina, unindo 155 vozes num compacto, de criação coletiva, com as canções Chega de mágoa e Seca dŽágua. Elogiado pela competência das interpretações individuais, foi no entanto criticado pela incapacidade de harmonizar as vozes e o enquadramento de cada uma delas no coro.</p>
+
+			<img src="tomjobim03.jpeg"  id="left"/>
+			<p>Em 1987, lançou Passarim, obra de um compositor já consagrado, que pode desenvolver seu trabalho sem qualquer receio, acompanhado por uma banda grande, a Banda Nova. Além da faixa-título, Gabriela, Luiza, Chansong, Borzeguim e Anos Dourados (com Chico Buarque) são os destaques. Em 1992 foi enredo da Escola de Samba Estação Primeira de Mangueira. Seu último álbum, Antônio Brasileiro, foi lançado em 1994, pouco antes da sua morte, em dezembro, de parada cardíaca, quando estava se recuperando de um câncer de bexiga no Hospital Mount Sinai, em Nova Iorque.[7]
+</p>
+
+			<p>Algumas biografias foram publicadas, entre elas Antônio Carlos Jobim, um Homem Iluminado, de sua irmã Helena Jobim, Antônio Carlos Jobim - Uma Biografia, de Sérgio Cabral, e Tons sobre Tom, de Márcia Cezimbra, Tárik de Souza e Tessy Callado.
+</p>
+
+			<p>Antônio Carlos Jobim era doutor «honoris causa» pela Universidade Nova de Lisboa / Faculdade de Ciências Sociais e Humanas, por volta de 1991.</p>
+
+			<p>O Aeroporto Internacional do Rio de Janeiro foi renomeado Aeroporto Internacional do Rio de Janeiro/Galeão - Antônio Carlos Jobim ' junto ao Congresso Nacional por uma comissão de notáveis, formada por Chico Buarque, Oscar Niemeyer, João Ubaldo Ribeiro, Antônio Cândido, Antônio Houaiss e Edu Lobo, criada e pessoalmente coordenada pelo crítico Ricardo Cravo Albin.[carece de fontes]</p>
+
+			<p>Em 25 de janeiro de 2011, dia em que Tom Jobim completaria 84 anos, o Google alterou o logo da sua página inicial em homenagem a Tom.[8]</p>			
+
+		</div>
+	</body>
+</html>

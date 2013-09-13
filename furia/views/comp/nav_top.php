@@ -4,12 +4,7 @@ defined('DF') or die;
 /**
  * Seções para nevegação
  */
-$secoes = array(
-    "php"      => "PHP",
-    "js"       => "Javascript",
-    "html-css" => "HTML & CSS",
-    "logica"   => "Lógica de Programação"
-);
+$secoes = Materia::getSecoes();
 
 /**
  * Assinala o menu conforme a seção da matéria

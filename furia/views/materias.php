@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="span12">
                     <article>
-                        <?php echo Markdown(file_get_contents('materia.mrk'));  ?>
+                        <?php echo Markdown(file_get_contents('materia.md'));  ?>
                         <?php include BASE_PATH.VIEWS_COMP_PATH."materia_fim.php"; ?>
                     </article>
 

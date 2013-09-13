@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Exemplo de campo do tipo texto</title>
+    </head>
+    <body>
+        <p>
+            <b>
+                O formulário a seguir exemplifica o código e a visualização dos elementos
+                (tags) e atributos usados para a criação dos diversos tipos de controle de
+                formulário HTML.
+            </b>
+        </p>
+        <p>
+            <b>
+                Os campos de texto simples são usados para entrada de pequenas cadeias
+                de caracteres, como nomes, números e datas.
+            </b>
+        </p>
+        <form action="receber.php" method="get">
+
+            <p>
+                <label for="nome">Nome(apenas letras)</label>
+                <input type="text" value="" id="nome" name="nome" />
+            </p>
+            <p>
+                <label for="idade">Idade(apenas números)</label>
+                <input type="text" value="" id="idade" name="idade"/>
+            </p>
+            <p>
+                <input type="submit" name="" value="Enviar"/>
+            </p>
+        </form>
+        <pre>
+            Após executar...
+            array
+              'nome' => string '123' (length=3)
+              'idade' => string 'asd' (length=3)
+        </pre>
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+            </a>
+        </p>
+    </body>
+</html>

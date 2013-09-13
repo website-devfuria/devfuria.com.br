@@ -1,0 +1,36 @@
+/*
+ *
+ *
+ */
+ *{
+     font-size: 12px;
+     font-family: Verdana;
+     
+}
+textarea#textarea{
+    overflow: auto;/*Remove scrollbars do Internet Explorer*/
+    background-color:tomato;
+    border-top:    5px ;
+    border-left:   5px ;
+    border-bottom: 5px ;
+    border-right:  5px ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------- */
+
