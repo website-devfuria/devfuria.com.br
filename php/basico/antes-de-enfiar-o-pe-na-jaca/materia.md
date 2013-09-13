@@ -1,7 +1,7 @@
-Antes de enfiar o pé na jáca
+Antes de enfiar o pé na jaca
 ============================
 
-> “A questão é que o PHP é fácil demais. o que incentiva a implementar suas idéias, retornando, assim, bons
+> “A questão é que o PHP é fácil demais. O que incentiva a implementar suas idéias, retornando, assim, bons
 > resultados. Algumas dessas facilidades são a possibilidade de digitar grande parte de seu código diretamente em suas
 > páginas da Web, adicionar funções úteis (como um código de acesso a banco de dados) a arquivos, incluindo-as de página
 > em página e, antes de se dar conta, você já tem um aplicativo Web em execução.
@@ -74,7 +74,7 @@ endentação deve ser realizado com quatro espaços, ou seja, ao invés da tecla
 Eles dizem isso por que diferentes editores podem exibir diferetnes formatos do código fonte. Mas seja com espaços, ou
 com o TAB (eu sou normal e uso o TAB) use-os!!!
 
-Outra consideração importante é: *ao digitar uma linha, idente-a. Não deixe para arrumar o codigo no final*. Sua vista
+Outra consideração importante é: *ao digitar uma linha, idente-a. Não deixe para arrumar o código no final*. Sua vista
 deve ir se acostumando com o codigo endentado, se deixar para o final você irá acostumar-se com código sem endentação.
 *Olhe muito código de terceiro*, além de ajudar com o estilo, ajuda a entender da importância da endentação.
 
@@ -155,7 +155,7 @@ A figura a seguir mostra um exemplo de convenção de nomenclatura.
 
 <div class="imagem">
     <img src="../../imagens/nomenclatura1.png" alt="Nomenclatura de variáveis"/>
-    <p>Figura 01 - Convençao de nomeação utilizada em um projeto acadêmico encontrado no Google Code.</p>
+    <p>Figura 01 - Convenção de nomeação utilizada em um projeto acadêmico encontrado no Google Code.</p>
     <p>Fonte: <a href="http://code.google.com/p/guardachuva/wiki/ConvencoesDeNomeacao">Projeto Gruada Chuva</a></p>
 </div>
 
@@ -171,7 +171,7 @@ melhor ou a pior forma de comentar, apenas existe a forma que auxilia quem a lê
 for comentar o código, tenha como objetivo somente isso: auxiliar alguém quem não conhece o código e está tentando
 entendê-lo. Se esse objetivo for cumprido, então o comentário foi nota 10.
 
-Outra coisa importante é: seja, ao menos, conciso. Quero dizer, use de português claro e objetivo. Não esqueca da
+Outra coisa importante é: seja, ao menos, conciso. Quero dizer, use de português claro e objetivo. Não esqueça da
 acentuar as palavras (afinal, falamos português, não é mesmo?), alguns programadores não fazem isso, eles estão
 preocupados com o “charset” do arquivo.
 
@@ -211,7 +211,7 @@ boa equipe tem um padrão ao menos razoável e niguém "inventa moda". *Quando o
 conseguimos identificar se foi Zezinho ou Luizinho quem mexeu no código, ou seja, *parece que foi escrito por
 uma só pessoa*, esse é o objetivo.
 
-No site do PECL (uma bibliote respeitosa de códigos PHP) encontramos alguns exemplos de estilo, vejamos:
+No site do PECL (uma biblioteca respeitosa de códigos PHP) encontramos alguns exemplos de estilo, vejamos:
 
 <div class="code">
 <h6>PHP</h6>
@@ -226,7 +226,7 @@ if ((condition1) || (condition2)) {
 ?&gt;</pre>
 </div>
 
-Mas tem quem goste de colocar as chaves na linha de baixo, olhe a diferênça:
+Mas tem quem goste de colocar as chaves na linha de baixo, olhe a diferença:
 
 <div class="code">
 <h6>PHP</h6>
@@ -280,7 +280,7 @@ Parece mais o estilo "zorra total", rssss
 
 Tudo bem, no começo, é difícil ter um parâmetro para fazer uma boa escolha do estilo, a dica é: não invente moda!!!
 e observe muito código de terceiro, depois de uns 2 ou 3 anos programando (direto e reto) você começará a compor
-seu verdadeiro estilo. Mas não se esqueça dessas quatro dias:
+seu verdadeiro estilo. Mas não se esqueça dessas quatro dicas:
 
 1. endentar o código
 2. usar uma boa nomenclatura
