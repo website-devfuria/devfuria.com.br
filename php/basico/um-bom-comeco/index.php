@@ -23,7 +23,7 @@ require "../../../core/boot.php";
         $core->navtop->secoes = $core->secoes;
         $core->navtop->secao = "php";
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
         <!-- Título -->
@@ -37,10 +37,9 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-warning">11/09/2012</span>, escrito em <span class="label label-warning">05/06/2012</span>. 
+                Flávio Micheletti, atualizado em <span class="label label-warning">11/09/2012</span>, escrito em <span class="label label-warning">05/06/2012</span>.
             </div>
         </div>
-
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -54,17 +53,17 @@ require "../../../core/boot.php";
                                 <a href="#intro">Introdução</a>
                                 <ul class="nav">
                                     <li><a href="#intro-o-que-faz">O que faz uma aplicação web?</a></li>
-                                </ul>                                
-                            </li>                            
+                                </ul>
+                            </li>
                             <li>
                                 <a href="#que-troco-e-esse">LAMP, WAMP, XAMP, que troço é esse?</a>
-                            </li>                            
+                            </li>
                             <li>
                                 <a href="#sintaxe-basica">Sintaxe Básica</a>
-                            </li>                            
+                            </li>
                             <li>
                                 <a href="#porque-php">Por que PHP?</a>
-                            </li>                            
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -75,7 +74,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">Introdução</h1>
-                        </div>                    
+                        </div>
 
                         <p><strong>PHP é uma linguagem de programação para uso geral</strong>. Inicialmente, projetada por Rasmus Lerdorf na década de 1990, tinha
                             como objetivo principal contar as visitas que eram realizadas em seu currículo on-line. Atualmente (2012) é utilizada,
@@ -85,7 +84,7 @@ require "../../../core/boot.php";
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h4 id="intro-o-que-faz">O que faz uma aplicação web?</h4>
-                            </div>                         
+                            </div>
 
                             <p>Um pequeno site pode se beneficiar de uma linguagem do lado do servidor. Um formulário de envio de contato , um portal
                                 de internet, um software gerenciador de email (o Gmail da Google ou o e-mail do Yahoo, por exemplo), um site do tipo
@@ -132,7 +131,7 @@ require "../../../core/boot.php";
                                     <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html">Morimoto</a>
                                 </p>
                             </div>
-                            
+
 
                             <p>Não ficou claro esse funcionamento? Tudo bem, é mais um assunto no qual é preciso familiarizar-se para depois
                                 compreendê-lo, dê tempo ao tempo.</p>
@@ -143,15 +142,15 @@ require "../../../core/boot.php";
                             <div class="bs-example bs-example-images">
                                 <img class="img-rounded" alt="funcionamento simplificado do servidor web" src="php_architect.gif">
                                 <p>Esquema da arquitetura simnplificado.</p>
-                            </div>                            
-                            
+                            </div>
+
                         </div>
-                    </div>                         
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="que-troco-e-esse">LAMP, WAMP, XAMP, que troço é esse?</h1>
-                        </div>                    
+                        </div>
 
                         <p>Todo esse processo roda sobre um sistema operacional, podendo ser tanto o Linux como o Windows. Quando utilizamos o Linux,
                             diz-se que a arquitetura é a <strong>LAMP</strong> (Linux, Apache, Mysql e PHP), quando utilizamos o Windows, diz-se que a arquitetura é
@@ -166,7 +165,7 @@ require "../../../core/boot.php";
                             operacional Windows. Não trata-se de mero preconceito contra os produtos da Microsoft. A principal razão é que o advento
                             OpenSource propicia um estudo aprofundado do funcionamento do software, seja ele o sistema operacional, o servidor web
                             ou qualquer outro software. Se o leitor não conhece o Linux, não se preocupe, <strong>é possível sim aprender e desenvolver em
-                            PHP utilizando apenas o Windows, mas considere conhecer e entender o sistema Linux</strong>.</p>
+                                PHP utilizando apenas o Windows, mas considere conhecer e entender o sistema Linux</strong>.</p>
 
                         <p>Para começar a programar em PHP é necessário ter o "ambiente" corretamente instalado e configurado, seja em LAMP ou
                             em WAMP. A instalação pode ser uma tarefa simples e básica, se a configuração não for item de preocupação. Mas saber
@@ -235,7 +234,7 @@ $resultado = 1 + 1;
 echo "Resultado da soma de 1 + 1 = $resultado";
 ?&gt;</pre>
                         </div>
-                    </div>                     
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -258,7 +257,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                                 <a href="http://news.netcraft.com/archives/2012/09/10/september-2012-web-server-survey.html#more-6429">Fonte: Natcraft</a>
                             </p>
                         </div>
-                        
+
                         <p>Bom... um servidor apache pode rodar outas linguagens além do PHP, mas veja este outro gráfico:</p>
 
                         <div class="bs-example bs-example-images">
@@ -268,54 +267,19 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                             <p>
                                 <a href="http://phpadvent.org/2010/usage-statistics-by-ilia-alshanetsky">Fonte: http://phpadvent.org</a>
                             </p>
-                        </div>                        
+                        </div>
 
                         <p>PHP não é a melhor linguagem, nem a mais segura. Mas é uma excelente linguagem de programação web.</p>
 
                         <p>Seja bem vindo ao curso de PHP!</p>
-                    </div>                    
+                    </div>
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 
         </div><!-- Matéria -->
 
-        <!-- Footer
-        ================================================== -->
-        <footer class="bs-footer" role="contentinfo">
-            <div class="container">
-                <div class="bs-social">
-                    <ul class="bs-social-buttons">
-                        <li>
-                            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
-                        </li>
-                        <li>
-                            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
-                        </li>
-                        <li class="follow-btn">
-                            <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
-                        </li>
-                        <li class="tweet-btn">
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getbootstrap.com/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
-                        </li>
-                    </ul>
-                </div>
-
-
-                <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-                <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-                <ul class="footer-links">
-                    <li><a href="../2.3.2/">Bootstrap 2.3.2 docs</a></li>
-                    <li class="muted">&middot;</li>
-                    <li><a href="http://blog.getbootstrap.com">Blog</a></li>
-                    <li class="muted">&middot;</li>
-                    <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
-                    <li class="muted">&middot;</li>
-                    <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
-                </ul>
-            </div>
-        </footer>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
