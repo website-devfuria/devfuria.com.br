@@ -29,7 +29,7 @@ require "../../../core/boot.php";
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Antes de enfiar o pé na jáca</h1>
-                <p></p>
+                <p>Esta matéria traz algumas considerações sobre boas práticas, antes de você desembestar a cuspir códigos à rodo. Na verdade são quatro dicas essenciais para quem está começando a programar:</p>
             </div>
         </div>
 
@@ -59,10 +59,10 @@ require "../../../core/boot.php";
                                 <a href="#nomeie">Nomeie adequadamente</a>
                             </li>
                             <li>
-                                <a href="#comente">Comente o código... e faça-o de forma concisa</a>
+                                <a href="#comente">Comente o código</a>
                             </li>
                             <li>
-                                <a href="#estilos">Estilos de codificação</a>
+                                <a href="#estilos">Tenha um estilo </a>
                             </li>
                         </ul>
                     </div>
@@ -113,7 +113,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="endente">Endentar o código fonte</h1>
+                            <h1 id="endente">1 - Endentar o código fonte</h1>
                         </div> 
                         <p>Endentar o código significa dar espaço determinado no começo da linha do código com o intuito de torná-lo mais claro.</p>
 
@@ -160,7 +160,7 @@ else
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="nomeie">Nomeie (tudo) adequadamente</h1>
+                            <h1 id="nomeie">2 - Nomeie (tudo) adequadamente</h1>
                         </div>                         
                         <p><em>Nomear variáveis, funções, classes, campos de banco de dados, campos de formulário HTML e tudo o mais que vir à mente...
                                 é uma arte</em>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de “nome”
@@ -240,7 +240,7 @@ endereco</pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="comente">Comente o código... e faça-o de forma concisa</h1>
+                            <h1 id="comente">3 - Comente o código... e faça-o de forma concisa</h1>
                         </div>
                         <p><em>Comentar código, assim como nomear variáveis, também é uma arte</em>. Existem programadores que não comentam o código, há
                             também os que comentam demais. Há, ainda, aqueles que acham que o comentário do código é a documentação do sistema, não é.</p>
@@ -281,10 +281,10 @@ endereco</pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="estilos">Estilos</h1>
+                            <h1 id="estilos">4 - Tenha um estilo ou... siga um</h1>
                         </div>
 
-                        <p>Estilo é o formato que se apresenta o seu código. A grande dica para que está começando em um equipe é: <em>descubra e respeite
+                        <p>Neste contexto, "estilo" é o formato no qual seu código é apresentado. A grande dica para que está começando em um equipe é: <em>descubra e respeite
                                 o estilo da equipe, mesmo que ele não seja bem definido.</em> Mais difícil que ter um estilo e seguir um estilo.</p>
 
                         <p>Pode-se entender estilo como sendo o "padrão de codificação", mais conhecido no termo em inglês "coding standars". Uma
