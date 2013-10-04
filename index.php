@@ -32,9 +32,6 @@ require "core/boot.php";
             <p>100% free!</p>
             <p>Isto não é um blog!</p>
             <p>Nem está totalmente construído.</p>
-            <p>É o trabalho de duas mãos apenas.</p>
-            <p>E por isso mesmo, o site está em constante evolução. Então, não estranhe se encontrar o curso em construção.</p>
-            <p>Encare este site como um seriado, onde de tempo em tempo novos capítulos são lançados... e a história toda vai sendo contada aos poucos.</p>
             <p>Seja bem vindo e espero que você divirta-se aprendendo.</p>
             <p>Feito especialmente para o público iniciante.</p>
         </div>
@@ -84,7 +81,7 @@ require "core/boot.php";
                 <h2>PHP</h2>
                 <div class="list-group">
                     <a href="<?php echo LINKS_PATH; ?>/php/basico/um-bom-comeco/" class="list-group-item">Um bom começo </a>
-                    <a href="#" class="list-group-item">Antes de enfiar o pé na jáca </a>
+                    <a href="<?php echo LINKS_PATH; ?>/php/basico/pe-na-jaca" class="list-group-item">Antes de enfiar o pé na jáca </a>
                     <a href="#" class="list-group-item">Instalando o ambiente no estilo NEXT, NEXT, NEXT </a>
                     <a href="#" class="list-group-item">Debugando (depurando) </a>
                 </div>

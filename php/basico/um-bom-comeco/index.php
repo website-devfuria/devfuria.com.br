@@ -132,7 +132,6 @@ require "../../../core/boot.php";
                                 </p>
                             </div>
 
-
                             <p>Não ficou claro esse funcionamento? Tudo bem, é mais um assunto no qual é preciso familiarizar-se para depois
                                 compreendê-lo, dê tempo ao tempo.</p>
 
