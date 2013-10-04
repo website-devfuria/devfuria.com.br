@@ -30,6 +30,7 @@ require "../../../core/boot.php";
             <div class="container">
                 <h1>Instalando o Ambiente no estilo NEXT, NEXT, NEXT.</h1>
                 <p>Vamos instalar o ambiente em nosso próprio desktop.</p>
+                <p>Alerta: esse não é o ideal... mas calma, estamos apenas começando</p>
             </div>
         </div>
 
@@ -50,329 +51,418 @@ require "../../../core/boot.php";
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
                             <li>
-                                <a href="#merda">Vai dar merda...</a>
+                                <a href="#intro">Introdução</a>
                             </li>
                             <li>
-                                <a href="#endente">Endentar o código fonte</a>
+                                <a href="#massa">Mão na massa</a>
                             </li>
                             <li>
-                                <a href="#nomeie">Nomeie adequadamente</a>
+                                <a href="#apache">Apache2</a>
                             </li>
                             <li>
-                                <a href="#comente">Comente o código... e faça-o de forma concisa</a>
+                                <a href="#php">PHP</a>
                             </li>
                             <li>
-                                <a href="#estilos">Estilos de codificação</a>
+                                <a href="#php-ini">Alterando o php.ini</a>
+                            </li>
+                            <li>
+                                <a href="#xdebug">X-Debug</a>
+                            </li>
+                            <li>
+                                <a href="#mysql">MySql</a>
+                            </li>
+                            <li>
+                                <a href="#phpmyadmin">PhpMyAdmin</a>
+                            </li>
+                            <li>
+                                <a href="#fechando">Fechando a conta</a>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>        
 
                 <!-- Corpo da matéria -->
-                <div class="col-md-9" role="main">
-
+                <div class="col-md-9" role="main">                
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="merda">Vai dar merda...</h1>
-                        </div>
-
-                        <blockquote>
-                            <p>“A questão é que o PHP é fácil demais. o que incentiva a implementar suas idéias, retornando, assim, bons
-                                resultados. Algumas dessas facilidades são a possibilidade de digitar grande parte de seu código diretamente em suas
-                                páginas da Web, adicionar funções úteis (como um código de acesso a banco de dados) a arquivos, incluindo-as de página
-                                em página e, antes de se dar conta, você já tem um aplicativo Web em execução.</p>
-
-                            <p>Bem, na verdade você está indo em direção ao desastre, porém nem percebe, é claro, pois seu site parece
-                                fantástico; ele funciona bem, seus clientes estão satisfeitos e gastando dinheiro.</p>
-
-                            <p>O problema surge quando você retorna ao código para iniciar uma nova fase, Mas, agora, você tem equipe e
-                                orçamento maiores e mais usuários. E, sem aviso algum, as coisas começam a dar errado, como se seu projeto tivesse sido
-                                envenenado.</p>
-
-                            <p>Nesse momento, seu novo programador quebra a cabeça para entender o seu código, que para você pode ser óbvio,
-                                embora, talvez, um pouco pretensioso em suas declarações e expressões. Porém, ele, o programador, está demorando mais
-                                que o esperado para exibir seu potencial e poder vir a se tornar um membro da equipe.”
-                                <small>Fonte: Matt Zandstra, abrindo seu livro Objetos PHP, padrões e prática.</small></p>
-                        </blockquote>
-
-                        <p>Zandstra foi muito feliz ao abrir o primeiro capítulo de seu livro com um alerta. <em>Qualquer um pode desenvolver um software,
-                                mas poucos o fazem com maestria</em>. O autor refere-se aos problemas que atingem a todos os programadores: falta de planejamento;
-                            falta de organização, falta de preparo, muita ansiedade em começar a codificação, falta de tempo (prazos irreais) e etc...
-                            Por outro lado, existem sempre aquelas receitas mágicas que parecem que vão "salvar o mundo".</p>
-
-                        <p>Esta matéria traz algumas considerações sobre boas práticas, <em>antes de você desembestar a cuspir códigos à rodo</em>. Na verdade
-                            são <em>quatro dicas essenciais</em> para quem está começando a programar:</p>
-
-                        <ol>
-                            <li>endente seu código (eu lhe imploro)</li>
-                            <li>use uma boa nomenclatura, desde variáveis até nome de scripts, bases, formulários, métodos, classes, etc...</li>
-                            <li>comente o código</li>
-                            <li>programar é como pintar um quadro, cada um tem um estilo, procure o seu.</li>
-                        </ol>                        
-                    </div>
-
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="endente">Endentar o código fonte</h1>
-                        </div> 
-                        <p>Endentar o código significa dar espaço determinado no começo da linha do código com o intuito de torná-lo mais claro.</p>
-
-                        <p>Vejamos um código sem endentação:</p>
-
-                        <div class="code menor">
-                            <h6>PHP</h6>
-                            <pre>&lt;?php
-
-if($valor)
-echo “código sem endentação é trabalho de amador”;
-else
-echo “não inventaram nada pior que código não endentado”;
-
-?&gt;</pre>
-                        </div>
-
-                        <p>E agora, um código endentado:</p>
-
-                        <div class="code menor">
-                            <h6>PHP</h6>
-                            <pre>&lt;?php
-
-if($valor)
-    echo “código sem endentação é trabalho de amador”;
-else
-    echo “não inventaram nada pior que código não endentado”;
-
-?&gt;</pre>
-                        </div>
-
-                        <p>Se para você ambos os códigos estão “de acordo”, então sabemos que você não gosta de endentar código. Um exercício
-                            interessante de se fazer é pegar um código fonte de umas 100 linhas e endentá-lo.</p>
-
-                        <p>Alguns programadores defendem que a
-                            endentação deve ser realizado com quatro espaços, ou seja, ao invés da tecla TAB, acionamos quatro vezes a barra de espaço.
-                            Eles dizem isso por que diferentes editores podem exibir diferetnes formatos do código fonte. Mas seja com espaços, ou
-                            com o TAB (eu sou normal e uso o TAB) use-os!!!</p>
-
-                        <p>Outra consideração importante é: <em>ao digitar uma linha, idente-a. Não deixe para arrumar o codigo no final</em>. Sua vista
-                            deve ir se acostumando com o codigo endentado, se deixar para o final você irá acostumar-se com código sem endentação.
-                            <em>Olhe muito código de terceiro</em>, além de ajudar com o estilo, ajuda a entender da importância da endentação.</p>
-                    </div>                        
-
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="nomeie">Nomeie (tudo) adequadamente</h1>
+                            <h1 id="intro">Introdução</h1>
                         </div>                         
-                        <p><em>Nomear variáveis, funções, classes, campos de banco de dados, campos de formulário HTML e tudo o mais que vir à mente...
-                                é uma arte</em>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de “nome”
-                            ser diferente de “Nome”, no caso estou me referindo ao “sensitive case” (caixa sensível). Existem também regras gerais e
-                            bastante disseminadas como, por exemplo, o “camel case” que diz para colocar em maiúscula  a letra da segunda palavra
-                            (umExemplo). Há também o “underline” ou “underscore” para separar os nomes das variáveis (outro&#95;exemplo). Há alguns
-                            estilo que diz para reservar três caracteres ao começo do nome da variável para identificar o tipo, mas como eu disse é
-                            apenas um estilo.</p>
+                        <p><em>Todo programador precisa saber “levantar” seu próprio ambiente de trabalho</em>, me refiro a instalar os programas necessários
+                            para começar o desenvolvimento. Inclua na lista: o servidor web(apache), o módulo PHP, o banco de dados, a API (interface)
+                            do banco de dados, o editor de código, o controlador de versão, a escolha do sistema operacional, etc... Após instalado
+                            os componentes, devemos configurar cada um deles.</p>
 
-                        <p>Ruim mesmo é quando ocorrem duas situações: a) quando o nome não reflete a idéia da variável e b) quando há uma bagunça
-                            de regras e/ou estilos. Tomemos um exemplo simples. A tabela cliente deve conter os campos id, codigo, nome, endereco.</p>
+                        <p>Não pense que existe um tutorial mágico que lhe ensinará a fazer essas coisas rapidamente, porquê realmente não existe.
+                            Por outro lado, se o leitor for um inicante poderá achar a mão de obra da instalação e configuração um serviço um tanto
+                            penoso, e defato o é. Então, sugiro duas situações:</p>
 
-                        <p>Surgem os nomes de campos...</p>
+                        <p>a) (básico)instalar tudo muito rapidamente para poder começar a programar ou</p>
 
-                        <div class="code">
-                            <h6>Texto plano</h6>
-                            <pre>cliente_id
-cliente_codigo
-cliente_nome
-cliente_endereco</pre>
-                        </div>
+                        <p>b) (avançado)aprender a instalar tudo com muita propriedade, digno de um mestre no assunto.</p>
 
-                        <p>Que tal? Tudo certo? Bom, vamos imaginar a instrução select...</p>
+                        <p>O primeiro caso poderá ser resolvido com a leitura atenta desse artigo. O segundo caso eu aconselho a todos que quiserem
+                            se profissionalizar. É importante que o profissional conheça as minúcias do ambiente de desenvolvimento e, se este for o
+                            seu caso, procure por artigos que tratem os componentes de forma separadas pois, convenhamos, não caberia em um único
+                            artigo a correta instalação e configuração de cada um dos componentes.</p>
 
-                        <div class="code">
-                            <h6>SQL</h6>
-                            <pre>SELECT cliente_id, cliente_codigo e etc...FROM clientes</pre>
-                        </div>
+                        <p>Há ainda a questão da preferência. Não existe o ambiente correto, existe a preferência sobre quais ferramentas instalar
+                            e como configurá-las. Pouco se discute sobre o ambiente de desenvolvimento, mas um pensamento é unânime: <em>“o ambiente de
+                                desenvolvimento deve simular ao máximo o ambiente de produção”</em>, porém acredito que isso (por enquanto) não deva ser
+                            preocupação de um programador iniciante.</p>
 
-                        <p>Fica grande, ocupa espaço, ruim mesmo.</p>
+                        <p>Se você é do mundo Linux, ótimo. Se você é do ambiente Windows, gostaria de convidá-lo a experimentar o mundo Linux.
+                            Agora, se você aspira ser um profissional da área de TI, será sua obrigação conhecer outros sistemas operacionais além
+                            do Windows.</p>
 
-                        <p>Pior que isso, só a bagunça seguinte...</p>
+                        <p>Que tal começar pelo Linux?.</p>
 
-                        <div class="code">
-                            <h6>Texto plano</h6>
-                            <pre>clienteId
-clienteCodigo
-cliente_nome
-clientes_endereco</pre>
-                        </div>
+                        <h3>E o pessoal do Windows?</h3>
 
-                        <p>Simplesmente terrível. Estamos usando os campos de uma tabela como exemplo, mas poderia ser os campos de um formulário HTML.</p>
+                        <p>Para o pessoal windows eu sugiro a instalação do WAMP, procure por "wamp server".</p>
 
-                        <div class="code menor">
-                            <h6>Texto plano</h6>
-                            <pre>cpId
-cpCodigo
-cpNome
-cpEndereco</pre>
-                        </div>
+                        <p>Ele já instala tudo no estilo next, next, next, finish: apache, mysql, php, phpmyadmin.</p>
 
-                        <p>O que siginifica “cp”? Ora, siginifica “campo”, mas precisa explicitar que é um campo? Não, não precisa. Bastasse...</p>
+                        <p>Irá faltar apenas o X-debug.</p>
+                    </div>
 
-                        <div class="code menor">
-                            <h6>Texto plano</h6>
-                            <pre>id
-codigo
-nome
-endereco</pre>
-                        </div>
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="massa">Botando a mão na massa</h1>
+                        </div> 
 
-                        <p>Às vezes o nome da variável é muito vago como, por exemplo, “endereco”. Mas que tipo de endereço? Endereço completo? Só
-                            o logradouro? Logradouro mais número? Nomes muito curto ou muito longos também não são adequados.</p>
+                        <p>Não vou explicar em detalhes como fazer a instalação, já existe bons artigos sobre o assunto, veremos dicas práticas que
+                            poderão lhe ajudar.</p>
 
-                        <p>Criar nomes adequados para variáveis pode depender da lógica. Por exemplo, espera-se obter o número menor do array,
-                            então que tal “numero_menor” ? ou “numeroMenor”? As duas são adequadas. Quem tem uma boa lógica somada a visão macro do
-                            negócio (domínio) e aliado ao exercício constante de ficar procurando por uma nomenclatura adequadas, consegue sempre
-                            uma boa nomeação. Considere pensar muito antes de nomear “as coisas”.  O ministério dos programadores adverte: “Prestar
-                            manutenção em um sistema com nomenclaturas do tipo Frankstain pode causar urticárias”.</p>
+                        <p>Se você nunca usou o linux, aconselho a leitura do livro "Linux guia prático(Morimoto)". Um livro bastante consiso, prático
+                            e básico sem perder a profundidade.</p>
 
-                        <p>A figura a seguir mostra um exemplo de convenção de nomenclatura.</p>
                         <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Nomenclatura de variáveis" src="nomenclatura1.png">
-                            <p>Fonte: <a href="http://code.google.com/p/guardachuva/wiki/ConvencoesDeNomeacao">Projeto Guarda Chuva</a></p>
+                            <img class="img-rounded" alt="Livro sobre o linux, autor Morimoto" src="linux-guia-pratico-morimoto.jpg">
+                            <p>Ótimo livro para iniciantes no Linux</p>
                         </div>                        
+                        
+                        <p>A primeira coisa que aprende-se sobre um sistema operacional é como instalá-lo. Novcaso do Linux, você terá que decidir
+                            entre mais de 500 distribuições(versões).</p>
+
+                        <p>Tudo bem, existem apenas umas 10 distro principais. Em 2013 a versão do ubuntu 12.10 é uma distro bastante popular, que
+                            tal começar por ela? Procure pelo site oficial, baixe a versão iso (uma imagem que é queimada, gravada bit a bit no cd)
+                            e comece tentando instalar o sistema. Não aconselho a instalar o Linux como "dual boot" com o Windows, pelo menos não
+                            neste momento. Utilize uma máquina virtual para reduzir o impacto, o VirtualBox da Sun (agora Oracle) é open source e
+                            uma boa opção.</p>
+
+                        <p>Explicar a <em>instalação do Linux foge do escopo deste trabalho</em>, também não será preciso pois, existem centenas de artigos
+                            que explicam muito bem o passo a passo. Neste ponto é aconselhável trabalhar com máquinas virtuais. Repetindo,* é menos
+                            impactante instalar os sistema em uma máquina virtual do que na sua máquina principal*, assim se algo der errado sempre
+                            poderá voltar atrás.</p>
+
+                        <p>De forma grotesca, há duas fámílias de distro bastante conhecidas no mundo linux: A família Had Rat e a família Debian.
+                            A distro Had Hat originou o CentOS e o Fedora e a família Debian originou o Ubuntu.</p>
+
+                        <p>Teoricamente, se você conhece bem o "esquema geral" do sistema Linux conseguirá se virar em qualquer distro. As
+                            diferênças, as vezes, são poucas. Como por exemplo no Ubuntu para instalar programas utiliza-se o "apt-get" e no Fedora
+                            utiliza-se o "yum".</p>
+
+                        <p><span style="text-decoration:line-through;">Como estou mais familizarizado com o Ubuntu, vou continuar este tutorial
+                                considerando-o. Prometo que volto para atender aos usuários da família Had Rat (estou fazendo testes no FEDORA).</span>
+                            OK já voltei.</p>
+
+                        <p>Uma vez com o sistema Linux instalado (Ubuntu ou Fedora) a primeira coisa que deve ser feita e definir uma senha para o
+                            usuário "root". Abra o termial (tente CTRL+ALT+U) e digite:</p>
+
+                        <pre><code>sudo passwd root
+</code></pre>
+
+                        <p>Após digite a senha do seu usuário (definida na instalação) e na sequência digite a senha do root. Para rodar alguns
+                            comandos é preciso ter autorização de root. Ou vocẽ digita "sudo" antes de cada comando (será preciso fornecer a senha
+                            do root) ou vira root e vai trabalhando. Para virar root digite:</p>
+
+                        <pre><code>su root
+</code></pre>
+
+                        <p>... e forneca a senha definida anteriormente. Os comandos apresentados na sequência consideram que você seja root ou
+                            que utilize o "sudo". O sinal # no início de cada comando explicita o que eu acabei de falar, logo não é necessário
+                            digitá-lo junto com o comando, rs.</p>
+                    </div>                 
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>Atualizando o sistema (via terminal)</h2>
+                        </div>                 
+
+                        <p>Abra o Ubuntu e digite:</p>
+
+                        <p>Ubuntu</p>
+
+                        <pre><code>apt-get update
+apt-get upgrade
+</code></pre>
+
+                        <p>No Fedora também temos os comandos update e upgrade, porém eles fazem coisas diferentes. Eu aconselho a utilizar a
+                            interface gráfica para atualizar o sistema.</p>
+
+                    </div>                 
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="apache">Instalando o Apache2</h1>
+                        </div>                 
+
+                        <p>No Ubuntu digite:</p>
+
+                        <pre><code>apt-get install apache2
+</code></pre>
+
+                        <p>no Fedora são três linhas...</p>
+
+                        <pre><code>yum install httpd
+chkconfig --levels 235 httpd on
+systemctl start httpd.service
+</code></pre>
+
+                        <p>Para ter certeza de que o apache foi instalado corretamente, abra um navegador qualquer é digite http://localhost. É
+                            exibido uma página simples com a frase “It’s work”.</p>
+                    </div> 
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="php">Instalando o PHP</h1>
+                        </div>                 
+
+                        <p>Na sequência instalamos o php, no terminal do Ubuntu digite:</p>
+
+                        <pre><code>apt-get install php5 libapache2-mod-php5
+</code></pre>
+
+                        <p>No terminal do Fedora digite:</p>
+
+                        <pre><code>yum install httpd php php-common // fedora
+</code></pre>
+
+                        <p>Para testar o php, crie um arquivo com onome index.php conforme mostrado abaixo e salve em /var/www (Ubuntu) e
+                            /var/www/html (Fedora). É preciso ser root para inserir arquivos nesta pasta.</p>
+
+                        <div class="code">
+                            <h6>index.php</h6>
+                            <pre>&lt;?php
+echo phpinfo();
+?&gt;</pre>
+                            <p> Este arquivo dá um print no resultado da função phpinfo(), essa função traz dados preciosos sobre a instalação</p>
+                        </div>
+
+                        <p>Abra o navegador e digite novamente http://localhost. Agora aparecerá a tela do php e as informações da instalação.</p>
+
+                        <p>Neste momento, é aconselhável instalar alguns módulos complementares que serão úteis no futuro. Com o tempo você
+                            "descobrirá" os "seus" pacotes. Mas por enquanto instale estes:</p>
+
+                        <p>no Ubuntu...</p>
+
+                        <pre><code>apt-get install php5-mysql php5-curl php5-gd php5-idn\ php5-dev php-pear
+</code></pre>
+
+                        <p>no Fedora...</p>
+
+                        <pre><code>yum install php-pecl-apc php-cli php-pear php-pdo php-mysql php-pgsql php-pecl-mongo
+      php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
+</code></pre>
+
+                        <p>Para que o apache, juntamente com o módulo do php execute os scripts eles devem ser ser salvos no “documentroot”
+                            (raiz do documento). “DocumentRoot” nada mais é do que a pasta na qual o servidor “sabe” que contém arquivos nos quais
+                            ele deve ler e intrepretar. Por padrão, no Linux a pasta é /var/www (Debian e derivados) e /var/www/html (RedHat e
+                            derivados).</p>
+
+                        <p>É possível alterar este local configurando diretamente o arquivo /etc/ini.d/conf.d. Após realizado a configuração devemos
+                            parar o servidor e reiniciá-lo e prestar atenção para ver se ele não derá nenhuma mensagem de erro. Também é possível
+                            forçar o reinicialização sem precisar parar o servidor, evitando deixá-lo fora do ar. Essa tarefa fica por sua conta, ok?</p>
+
+                        <p>Além das configurações do apache pode-se alterar as configurações do próprio php. Para isto basta encontrar o arquivo
+                            php.ini e alterar o que for necessário. Normalmente configura-se o ambiente de desenvolvimento para que seja exibido
+                            todos os erros e o que mais preferir.</p>
+
                     </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="comente">Comente o código... e faça-o de forma concisa</h1>
-                        </div>
-                        <p><em>Comentar código, assim como nomear variáveis, também é uma arte</em>. Existem programadores que não comentam o código, há
-                            também os que comentam demais. Há, ainda, aqueles que acham que o comentário do código é a documentação do sistema, não é.</p>
+                            <h1 id="php-ini">Alterando o php.ini</h1>
+                        </div>                 
 
-                        <p>Infelizmente, não existe uma regra única para comentar o código, cada programador faz do seu jeito. Também não existe a
-                            melhor ou a pior forma de comentar, apenas existe a forma que auxilia quem a lê e a forma que não ajuda em nada. Quando
-                            for comentar o código, tenha como objetivo somente isso: auxiliar alguém quem não conhece o código e está tentando
-                            entendê-lo. Se esse objetivo for cumprido, então o comentário foi nota 10.</p>
+                        <p>No terminal é possível utilizar alguns editores de textos como o "vi" (que já vem instalado) ou o "vim" e o "nano" (que
+                            devem ser instalados). Eu gosto de utilizar o nano pois ele é mais fácil. Instale o "nano" digitando:</p>
 
-                        <p>Outra coisa importante é: seja, ao menos, conciso. Quero dizer, use de português claro e objetivo. Não esqueca da
-                            acentuar as palavras (afinal, falamos português, não é mesmo?), alguns programadores não fazem isso, eles estão
-                            preocupados com o “charset” do arquivo.</p>
+                        <pre><code>apt-get install nano // ubuntu
+yum install nano // fedora
+</code></pre>
 
-                        <p>Vou passar alguns modelinhos de comentários, mas não se apegue a eles, apenas use-os com bom senso.</p>
+                        <p>Com o nano instalado, digite:</p>
+
+                        <pre><code>nano /etc/php5/apache2/php.ini // ubuntu
+nano /etc/php.ini // fedora
+</code></pre>
+
+                        <p>Procure as linhas a seguir e altere como se segue:</p>
 
                         <div class="code">
-                            <h6>PHP</h6>
-                            <pre>&lt;?php
-// Comente uma única linha de código isolada, só se for necessário mas principalmente se for necessário.
+                            <h6>Texto Plano</h6>
+                            <pre>
+error_reporting = E_ALL
+display_erros= On
+display_startup_erros = On
+track_erros = On
+html_erros = On
+                            </pre>
+                        </div>
 
-// Não é preciso comentar toda ou cada linha do código, lembre-se que comentar também polui.
+                        <p>Salve o arquivo digitando CRTL+O, confirme pressionando ENTER, agora feche o arquivo digitadno CTRL+W.
+                            O nano é muito fácil, diz aí? Reinicie o apache:</p>
 
-# Sinal de “sharp”, também serve para comentários.
-
-/**
- * Quis destacar este comentário, por isso fiz dessa forma
- * mas não é só isso, este tipo de comentário é um tanto
- * tanto quanto especial. Falaremos sobre isso em breve.
- */
-
-#
-# Também gosto de destacar dessa forma, mas dê preferência ao anterior.
-#
-
-?&gt;</pre>
-                        </div>                        
+                        <pre><code>/etc/init.d/apache2 restart // ubuntu
+systemctl start httpd.service // fedora
+</code></pre>
                     </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="estilos">Estilos</h1>
-                        </div>
+                            <h1 id="xdebug">Instalando o X-Debug</h1>
+                        </div>                 
 
-                        <p>Estilo é o formato que se apresenta o seu código. A grande dica para que está começando em um equipe é: <em>descubra e respeite
-                                o estilo da equipe, mesmo que ele não seja bem definido.</em> Mais difícil que ter um estilo e seguir um estilo.</p>
+                        <p>O X-debug é uma ferramenta útil prá cara... Ele ajuda a formatar a saída dos dados e é possível utilizá-lo com a interface
+                            do NetBeans. Neste momento, talvez você não entenda o que ele é, nem seu potencial, mas aproveite para instalá-lo agora.
+                            Um dia você ainda vai me agradeçer, rssss. Com o PECL(pear)pode-se instalar novos pacotes no estilo apt-get, no caso
+                            vamos instalar o pacote x-debug no Ubuntu:</p>
 
-                        <p>Pode-se entender estilo como sendo o "padrão de codificação", mais conhecido no termo em inglês "coding standars". Uma
-                            boa equipe tem um padrão ao menos razoável e niguém "inventa moda". <em>Quando olhamos o código feito pela equipe</em> não
-                            conseguimos identificar se foi Zezinho ou Luizinho quem mexeu no código, ou seja, <em>parece que foi escrito por
-                                uma só pessoa</em>, esse é o objetivo.</p>
+                        <pre><code>pecl install xdebug
+</code></pre>
 
-                        <p>No site do PECL (uma bibliote respeitosa de códigos PHP) encontramos alguns exemplos de estilo, vejamos:</p>
+                        <p>Onde será que o Linux gravou a extensão x-debug? Digite e anote o caminho:</p>
 
-                        <div class="code">
-                            <h6>PHP</h6>
-                            <pre>&lt;?php
-if ((condition1) || (condition2)) {
-    action1;
-} elseif ((condition3) && (condition4)) {
-    action2;
-} else {
-    defaultaction;
-}
-?&gt;</pre>
-                        </div>
+                        <pre><code>find/ -name 'x-debug.so'2&gt; /dev/null
+</code></pre>
 
-                        <p>Mas tem quem goste de colocar as chaves na linha de baixo, olhe a diferênça:</p>
+                        <p>Agora, precisamos dizer ao php que o x-debug existe. Par tal é preciso incluir um linha no final do arquivo php.ini.
+                            Abra novamente o php.ini:</p>
+
+                        <pre><code>nano /etc/php5/php.ini
+</code></pre>
+
+                        <p>No final do arquivo ou no fim da seção "extenções" inclua a seguinta linha:</p>
 
                         <div class="code">
-                            <h6>PHP</h6>
-                            <pre>&lt;?php
-if ((condition1) || (condition2))
-{
-    action1;
-}
-elseif ((condition3) && (condition4))
-{
-    action2;
-}
-else
-{
-    defaultaction;
-}
-?&gt;</pre>
+                            <h6>Texto Plano</h6>
+                            <pre>Zend_extension="/usr/lib/php5/caminho_anotado"</pre>
                         </div>
 
-                        <p>E ainda os que gostam de aperto, veja se você sente isso:</p>
+                        <p>Reinicie o apache (o comando nós já vimos).</p>
 
-                        <div class="code">
-                            <h6>PHP</h6>
-                            <pre>&lt;?php
-if((condition1)||(condition2)){
-    action1;
-}elseif((condition3)&&(condition4)){
-    action2;
-}else{
-    defaultaction;
-}
-?&gt;</pre>
-                        </div>
+                        <p>No Fedora bastam 2 linhas...</p>
 
-                        <p>Até aqui, tudo é uma questão de estilo, o que não pode é a ausência de estilo, veja o exemplo abaixo</p>
+                        <pre><code>yum install php-pecl-xdebug
+systemctl restart httpd.service
+</code></pre>
+                    </div>
 
-                        <div class="code">
-                            <h6>PHP</h6>
-                            <pre>&lt;?php
-if ((condition1)||(condition2))
-{
-    action1;
-}
-elseif(  (condition3)&&(condition4)  ){
-    action2;
-}else{  defaultaction;}
-?&gt;</pre>
-                        </div>
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="mysql">Instalando o MySql</h1>
+                        </div>                 
 
-                        <p>Parece mais o estilo "zorra total", rssss</p>
+                        <p>Agora chegou a vez o banco de dados, instale o mysql no Ubuntu digitando...</p>
 
-                        <p>Tudo bem, no começo, é difícil ter um parâmetro para fazer uma boa escolha do estilo, a dica é: não invente moda!!!
-                            e observe muito código de terceiro, depois de uns 2 ou 3 anos programando (direto e reto) você começará a compor
-                            seu verdadeiro estilo. Mas não se esqueça dessas quatro dias:</p>
+                        <pre><code>apt-get install mysql-server mysql-client
+</code></pre>
+
+                        <p>Enquanto os arquivos são baixados e instalados o sistema lhe perguntará qual será a senha do root (para acessar o banco
+                            de dados), anote-a.</p>
+
+                        <p>No fedora é parecido, só que você é quem define a senha, então instale o mysql no Fedora...</p>
+
+                        <pre><code>yum install mysql mysql-server
+</code></pre>
+
+                        <p>inicie o serviço... </p>
+
+                        <pre><code>systemctl start mysqld.service
+systemctl enable mysqld.service
+</code></pre>
+
+                        <p>e habilite a senha digitando...</p>
+
+                        <pre><code>mysqladmin -u root password [your_password_here]
+</code></pre>
+
+                        <p>Para saber se deu certo tente acessar o prompt do mysql digitando...</p>
+
+                        <pre><code>mysql -h localhost -u root -p
+</code></pre>
+
+                        <p>O sistema solicitará a senha, digite-a. Se estiver enchergando o prompt está tudo OK, digite "exit" para sair.</p>
+
+                    </div>  
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="phpmyadmin">Instalando o PhpMyAdmin</h1>
+                        </div>                 
+
+                        <p>Na sequência instale o phpmyadmin, este aplicativo é responsável por oferecer uma interface amigável de trabalho ao
+                            usuário do banco.</p>
+
+                        <pre><code>apt-get install phpmyadmin
+</code></pre>
+
+                        <p>Responda as perguntas que o instalardor fará (nenhum segredo) e ao final, abra o navegador e digite "localhost/phpmyadmin"
+                            a tela de login deve ser exibida, digite novamente o usuario do mysql (root) e sua senha. Pronto, você está dentro do
+                            sistema, agora é possível manipular o mysql com um interface amigável.</p>
+
+                        <p>No Fedora, após a instalação, será preciso reiniciar o apache...</p>
+
+                        <pre><code>yum install phpmyadmin
+systemctl restart httpd.service
+</code></pre>
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="fechando">Fechando a conta</h1>
+                        </div>                 
+
+                        <p>Anotou tudo que instalamos até aqui? vamos lá:</p>
 
                         <ol>
-                            <li>endentar o código</li>
-                            <li>usar uma boa nomenclatura</li>
-                            <li>comentar o código</li>
-                            <li>ter ou seguir um estilo.</li>
+                            <li>Com o sistema Linux instalado, definimos uma senha para o root.</li>
+                            <li>Atualizamos o sistema (linux).</li>
+                            <li>Instalamos o servidor web apache</li>
+                            <li>Instalamos o módulo php e alteramos o php.ini para exibir os erros.</li>
+                            <li>Instalamos o x-debug para nos ajudar na debugação.</li>
+                            <li>Instalamos o banco de dados Mysql.</li>
+                            <li>Instalamos o Phpmyadmin, uma interface para o mysql.</li>
                         </ol>
 
-                        <p>... e seja feliz!</p>                        
+                        <p>Ufa!!! Mas ainda falta algumas "coisinhas". Ainda temos o editor de código, o controlador de versão, os navegadores e
+                            seus plugins, e etc.. Só que neste ponto, a escolha dos aplicativos é uma questão pessoal, então fica apenas a sugestão.</p>
 
-                    </div>                        
+                        <p>Como <em>editor de código</em> eu sugiro o <em>Netbeans</em>, ele é open source e tem umas funcionalidades muito interessantes. Para
+                            instalá-lo é preciso, primeiramente, ter o java (JDK) previamente instalado. Tente instalar a versão openJavaX (onde x
+                            é a versão do java) via Softer Center (ainda estamos no ubuntu). Após isso, basta baixar o arquivo de instalação do
+                            Netbeans, procure pela versão PHP que tem aproximadamente uns 50mb. É preciso dar permissão de execução no arquivo e em
+                            seguida executá-lo (obviamente).</p>
+
+                        <p>Como controlador de versão eu sugiro o <em>svn</em> que ainda é muito utilizado. Dá para instalar pelo repositório da distro, eu
+                            utilizava o svn no windows e sentia falta de uma interface no nautilus (o gerenciador de arquivos do linux) então eu
+                            descobri o nautilus-svn, procure por rabbit-svn e instale ele também. Atualmente (2013) a controle de versão mais
+                            utilizado e divulgado é o <em>GIT</em>, procure por "github" e aprenda mais sobre este controlador de versão.</p>
+
+                        <p>Como navegador eu sugiro o <em>Firefox</em> e não se esqueça dos plugins <em>FireBug e WebDeveloper</em> eles quebram um galho enorme.</p>
+
+                        <p>Espero que você tenha sobrevivido.</p>
+
+                        <h2>Leituras adicionais sugeridas</h2>
+
+                        <dl id="leitura_adcionais">
+                            <dt>Internet</dt>
+                            <dd>Matéria da comunidade Ubuntu onde eles comparam e demonstram os comandos equivalentes tanto no Ubuntu como no Fedora.
+                                <a href="https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora" >https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora</a>
+                            </dd>
+                        </dl>
+                    </div>                 
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
