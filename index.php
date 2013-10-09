@@ -81,8 +81,8 @@ require "core/boot.php";
                 <h2>PHP</h2>
                 <div class="list-group">
                     <a href="<?php echo LINKS_PATH; ?>/php/basico/um-bom-comeco/" class="list-group-item">Um bom começo </a>
-                    <a href="<?php echo LINKS_PATH; ?>/php/basico/pe-na-jaca" class="list-group-item">Antes de enfiar o pé na jáca </a>
-                    <a href="#" class="list-group-item">Instalando o ambiente no estilo NEXT, NEXT, NEXT </a>
+                    <a href="<?php echo LINKS_PATH; ?>/php/basico/pe-na-jaca/" class="list-group-item">Antes de enfiar o pé na jáca </a>
+                    <a href="<?php echo LINKS_PATH; ?>/php/basico/instalando-o-ambiente/" class="list-group-item">Instalando o ambiente no estilo NEXT, NEXT, NEXT </a>
                     <a href="#" class="list-group-item">Debugando (depurando) </a>
                 </div>
             </div>
@@ -112,9 +112,9 @@ require "core/boot.php";
             <div class="col-md-12">
                 <h2>Lógica de Programação</h2>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Introdução </a>
-                    <a href="#" class="list-group-item">Exercicios do 01 ao 05</a>
-                    <a href="#" class="list-group-item">Exercicios do 06 ao 10</a>
+                    <a href="<?php echo LINKS_PATH; ?>/logica/basico/intro/" class="list-group-item">Introdução </a>
+                    <a href="<?php echo LINKS_PATH; ?>/logica/basico/bateria01/" class="list-group-item">Primeira Bateria</a>
+                    <a href="<?php echo LINKS_PATH; ?>/logica/basico/bateria02/" class="list-group-item">Segunda Bateria</a>
                 </div>
             </div>
         </div>
