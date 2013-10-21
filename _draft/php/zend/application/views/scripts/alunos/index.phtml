@@ -1,0 +1,16 @@
+
+<?php 
+/**
+ * paritalLoop recebe dois arg´s:
+ * 
+ * 1 - arquivo, para cada um dos elementos
+ * do $record ele vai passar para o arquivo indicado.
+ * Ele(o método)procura na raiz views/scripts.
+ * 
+ * 2 - 
+ */
+?>
+<a href="<?php echo $this->linkIncluir ?>" >Incluir aluno</a>
+<table border="1">
+<?php echo $this->partialLoop('alunos.phtml', $this->records) ?>
+</table>

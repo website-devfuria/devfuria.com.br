@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mynotes>
+  <note>
+    <tasks>Validate data</tasks>
+    <details>Validate data in SQL2005 Database with SQL manager</details>
+  </note>
+  <note>
+    <tasks>Download Music</tasks>
+    <details>Download latest music from site abc</details>
+  </note>
+</mynotes>
