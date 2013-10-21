@@ -99,8 +99,8 @@ require "../../../core/boot.php";
                             chamado SEQUEL (Strutucred English Query Language, Linguagem de Consulta em Inglês Estruturado) que mais tarde veio a
                             se tornar o nosso conhecido SQL (Structured Query Language, Linguagem de Consulta Estruturada).</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Foto de Edgar Frank Codd" src="edgar-f-codd.jpg" alt="MySql via console" />
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="Foto de Edgar Frank Codd" src="edgar-f-codd.jpg" />
                             <p>Edgar Frank Codd (1923-2013) Pai da SEQUEL</p>
                         </div>                           
                         

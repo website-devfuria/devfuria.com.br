@@ -126,7 +126,7 @@ require "core/boot.php";
             <div class="col-md-12">
                 <h2>Mysql</h2>
                 <div class="list-group">
-                    <a href="<?php echo LINKS_PATH; ?>/mysql/basico/intro/" class="list-group-item">Introdução </a>
+                    <a href="<?php echo LINKS_PATH; ?>/mysql/basico/intro/" class="list-group-item">Banco de dados prá que? </a>
                 </div>
             </div>
         </div>
