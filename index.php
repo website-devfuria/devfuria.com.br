@@ -83,7 +83,7 @@ require "core/boot.php";
                     <a href="<?php echo LINKS_PATH; ?>/php/basico/um-bom-comeco/" class="list-group-item">Um bom começo </a>
                     <a href="<?php echo LINKS_PATH; ?>/php/basico/pe-na-jaca/" class="list-group-item">Antes de enfiar o pé na jáca </a>
                     <a href="<?php echo LINKS_PATH; ?>/php/basico/instalando-o-ambiente/" class="list-group-item">Instalando o ambiente no estilo NEXT, NEXT, NEXT </a>
-                    <a href="#" class="list-group-item">Debugando (depurando) </a>
+                    <a href="<?php echo LINKS_PATH; ?>/php/basico/debugando/" class="list-group-item">Debugando (depurando) </a>
                 </div>
             </div>
         </div>
