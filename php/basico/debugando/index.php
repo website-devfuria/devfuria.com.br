@@ -37,7 +37,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-warning">11/09/2012</span>, escrito em <span class="label label-warning">05/06/2012</span>.
+                Flávio Micheletti, atualizado em <span class="label label-warning">10/04/2013</span>, escrito em <span class="label label-warning">10/04/2013</span>.
             </div>
         </div>
 
@@ -212,7 +212,7 @@ echo "&lt;/pre&gt;";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="valor-da-variavel">Mas eu só quero ver o valor de uma variável?</h1>
+                            <h1 id="valor-da-variavel">Mas eu só queria ver o valor de uma variável!!!</h1>
                         </div>
 
                         <p>O nosso exemplo é bem simples e talvez o leitor não tenha notado o quanto é importante essa questão da exibição.</p>
