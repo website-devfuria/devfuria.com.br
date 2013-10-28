@@ -30,7 +30,9 @@ require "../../../core/boot.php";
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Preparando o terreno</h1>
-                <p></p>
+                <p>Veremos Separações de interesses (separation of concerns), ondo colocar o JS e uma rápida pincelada
+                    em OOP, FIREBUG e a questão da segurança!.
+                </p>
             </div>
         </div>
 
