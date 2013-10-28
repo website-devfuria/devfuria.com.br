@@ -23,7 +23,7 @@ require "../../../core/boot.php";
         $core->navtop->secoes = $core->secoes;
         $core->navtop->secao = "js";
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
         <!-- Título -->
@@ -55,10 +55,10 @@ require "../../../core/boot.php";
                             </li>
                             <li>
                                 <a href="#js-pri">O primeiro script</a>
-                            </li>                            
+                            </li>
                             <li>
                                 <a href="#js-seg">O segundo script</a>
-                            </li>                            
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ require "../../../core/boot.php";
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Imagem do livro 'Simple Javascript'"  src="livro-simple-js.jpg">
                             <p>Este livro é excelente para quem está comneçando com JS.</p>
-                        </div>                        
+                        </div>
 
                         <p><strong>Javascript(JS) não é brinquedo, é linguagem de programação séria</strong>.</p>
 
@@ -144,13 +144,12 @@ require "../../../core/boot.php";
                             funcionalidades, você irá se surpreender.</p>
 
                         <p>Quanto ao editor de código, este fica a sua escolha, eu uso e gosto muito do Netbeans.</p>
-
-
                     </div>
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h2 id="js-pri">O primeiro script a gente nunca esqueçe</h2>
-                        </div>                    
+                        </div>
 
                         <p>Crie um arquivo texto e salve com o nome
                             "index.html". Agora insira nele o seguinte código:</p>
@@ -170,7 +169,7 @@ alert(foo);
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h2 id="js-seg">O segundo script talvez a gente esqueça</h2>
-                        </div>                      
+                        </div>
 
                         <div class="code">
                             <h6>JS</h6>
@@ -190,7 +189,7 @@ element.onclick = function() {
                             <img class="img-rounded" alt="Imagem da luz apagada" id="myimage" src="pic_bulboff.gif">
                             <p>Programar é uma atividade criativa !!! Clique e confira.</p>
                             <p>Fonte:<a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_lightbulb">w3schools</a></p>
-                        </div>                         
+                        </div>
 
                         <p>O que o código acima faz?
                             Ele apenas ascende e apaga uma lâmpada!</p>
@@ -269,14 +268,11 @@ var element = document.getElementById('myimage');
                             para entender código escrito por outras pessoas e até para identificar código antigo e prejudicial e poder alterá-lo com
                             maestria".</p>
 
-                        <p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>                        
-                    </div>            
-                </div>
-
-            </div><!-- Corpo da matéria -->
-        </div><!-- row -->
-
-    </div><!-- Matéria -->
+                        <p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>
+                    </div>
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+        </div><!-- Matéria -->
 
     <!-- Footer
     ================================================== -->

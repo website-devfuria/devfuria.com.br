@@ -64,7 +64,7 @@ require "core/boot.php";
                 <h2>Javascript</h2>
                 <div class="list-group">
                     <a href="<?php echo LINKS_PATH; ?>/js/basico/intro/" class="list-group-item">Introdução </a>
-                    <a href="#" class="list-group-item">Preparando o terreno </a>
+                    <a href="<?php echo LINKS_PATH; ?>/js/basico/preparando-o-terreno/" class="list-group-item">Preparando o terreno </a>
                     <a href="#" class="list-group-item">Debugando (depurando) [com vídeo] </a>
                     <a href="#" class="list-group-item">Code - A Lâmpada </a>
                     <a href="#" class="list-group-item">Code - A Lâmpada (refatorando) </a>
