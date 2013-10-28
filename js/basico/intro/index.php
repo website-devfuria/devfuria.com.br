@@ -54,10 +54,10 @@ require "../../../core/boot.php";
                                 <a href="#js-intro">Introdução</a>
                             </li>
                             <li>
-                                <a href="#js-pri">O primeiro Script a gente nunca esquece</a>
+                                <a href="#js-pri">O primeiro script</a>
                             </li>                            
                             <li>
-                                <a href="#js-seg">O segundo talvez a gente esqueca</a>
+                                <a href="#js-seg">O segundo script</a>
                             </li>                            
                         </ul>
                     </div>
@@ -169,7 +169,7 @@ alert(foo);
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="js-seg">O segundo script talvez a gente esqueça</h1>
+                            <h2 id="js-seg">O segundo script talvez a gente esqueça</h2>
                         </div>                      
 
                         <div class="code">
@@ -178,16 +178,16 @@ alert(foo);
 var element = document.getElementById('myimage');
 element.onclick = function() {
     if (element.src.match("bulbon")) {
-        element.src="../imagens/pic_bulboff.gif";
+        element.src="pic_bulboff.gif";
     } else {
-        element.src="../imagens/pic_bulbon.gif";
+        element.src="pic_bulbon.gif";
     }
 };
                             </pre>
                         </div>
 
                         <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Imagem da luz apagada"  src="../../pic_bulboff.gif">
+                            <img class="img-rounded" alt="Imagem da luz apagada" id="myimage" src="pic_bulboff.gif">
                             <p>Programar é uma atividade criativa !!! Clique e confira.</p>
                             <p>Fonte:<a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_lightbulb">w3schools</a></p>
                         </div>                         
@@ -315,6 +315,15 @@ var element = document.getElementById('myimage');
     </footer>
 
     <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
+<script type="text/javascript">
+var element = document.getElementById('myimage');
+element.onclick = function() {
+    if (element.src.match("bulbon")) {
+        element.src="pic_bulboff.gif";
+    } else {
+        element.src="pic_bulbon.gif";
+    }
+};
+</script>
 </body>
 </html>
