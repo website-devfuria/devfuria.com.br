@@ -59,7 +59,7 @@ require "../../../core/boot.php";
                                 <a href="#sintax-errada">Sintaticamente errada</a>
                             </li>
                             <li>
-                                <a href="#code-final">Código final</a>
+                                <a href="#code">Código</a>
                             </li>
                         </ul>
                     </div>
@@ -206,7 +206,7 @@ $resultado = preg_match($pattern, $subject, $retorno);
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="code-final">Código final</h1>
+                            <h1 id="code">Código</h1>
                         </div>
 
                         <p>Sabendo como a função se comporta, podemos esboçar nossa lógica da seguinte forma:</p>
