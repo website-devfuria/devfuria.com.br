@@ -31,6 +31,8 @@ require "../../../core/boot.php";
             <div class="container">
                 <h1>O ponto .</h1>
                 <p>Trago várias imagens (todas de autoria do Aurélio Marinho) ilustrando o uso do "ponto"</p>
+                <p>Como as imagens são grandes mas os textos pequenos eu tirei o menu esquerdo só para facilitar a
+                    leitura. Quem estiver de smartphone vai ter que dar um zoom nas imagens.</p>
             </div>
         </div>
 
@@ -45,25 +47,9 @@ require "../../../core/boot.php";
         <div class="container bs-docs-container">
             <div class="row">
 
-                <!-- navegação lateral esquerdo -->
-                <div class="col-md-3">
-                    <div class="bs-sidebar hidden-print" role="complementary">
-                        <ul class="nav bs-sidenav">
-                            <li>
-                                <a href="#intro">Conceito</a>
-                            </li>
-                            <li>
-                                <a href="#exemplo">Exemplo:</a>
-                            </li>
-                            <li>
-                                <a href="#exemplo-marinho">Exemplos do Marinho:</a>
-                            </li>
-                        </ul>
-                    </div>                    
-                </div>
 
                 <!-- Corpo da matéria -->
-                <div class="col-md-9" role="main">
+                <div class="col-md-12" role="main">
 
                     <div class="bs-docs-section">
                         <div class="page-header">
