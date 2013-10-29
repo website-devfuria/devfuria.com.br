@@ -1,0 +1,166 @@
+<?php
+/**
+ * PHP
+ */
+/**
+ * Includes
+ */
+require "../../../core/boot.php";
+?>
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <?php
+        $core->head = new Head();
+        $core->head->setTitle('REGEXP');
+        include BASE_PATH . VIEWS_PATH . "/head.php";
+        ?>
+    </head>
+    <body>
+
+        <?php
+        $core->navtop = new NavTop();
+        $core->navtop->secoes = $core->secoes;
+        $core->navtop->secao = Core::SECAO_ER;
+        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
+        ?>
+
+
+        <!-- Título -->
+        <div class="bs-header" id="content">
+            <div class="container">
+                <h1>O ponto .</h1>
+                <p>Trago várias imagens (todas de autoria do Aurélio Marinho) ilustrando o uso do "ponto"</p>
+            </div>
+        </div>
+
+        <!-- Linha abaixo do título -->
+        <div class="bs-old-docs">
+            <div class="container">
+                Flávio Micheletti, atualizado em <span class="label label-warning">22/07/2013</span>, escrito em <span class="label label-warning">22/07/2013</span>.
+            </div>
+        </div>
+
+        <!-- Matéria -->
+        <div class="container bs-docs-container">
+            <div class="row">
+
+                <!-- navegação lateral esquerdo -->
+                <div class="col-md-3">
+                    <div class="bs-sidebar hidden-print" role="complementary">
+                        <ul class="nav bs-sidenav">
+                            <li>
+                                <a href="#intro">Conceito</a>
+                            </li>
+                            <li>
+                                <a href="#exemplo">Exemplo:</a>
+                            </li>
+                            <li>
+                                <a href="#exemplo-marinho">Exemplos do Marinho:</a>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+
+                <!-- Corpo da matéria -->
+                <div class="col-md-9" role="main">
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="intro">Conceito</h1>
+                        </div>
+
+                        <p>O <em>ponto</em> casa com qualquer caracter inclusive com as quebras de linhas (\r e \n).</p>
+
+                        <p>O ponto também casa com ele próprio.</p>
+
+                        <div class="code">
+                            <h6>regexp</h6>
+                            <pre>.</pre>
+                        </div>
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="exemplo">Exemplo</h1>
+                        </div>
+
+                        <p><div class="imagem">
+                            <img src="ponto-casa.png" alt="Exemplo de Expressão Regular" />
+                        </div></p>
+
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="" src="" />
+                        </div> 
+
+
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="exemplo-marinho">Exemplos do Marinho:</h1>
+                        </div>
+
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="Exemplo de Expressão Regular" src="ponto-pag41-exemplos.png" />
+                            <p>Este é o primeiro exemplo</p>
+                            <p>Fonte:
+                                <a href="http://www.piazinho.com.br/ed3/exemplos.html#1">Livro: Expressões Regulares 3 edição, pag 41#1</a>
+                            </p>                            
+                        </div> 
+
+
+
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="Exemplo de Expressão Regular" src="ponto-pag41-acentos.png" />
+                            <p>Palavras que foram ou não acentudas</p>
+                            <p>Fonte:
+                                <a href="http://www.piazinho.com.br/ed3/exemplos.html#2">Livro: Expressões Regulares 3 edição, pag 41#2</a>
+                            </p>                            
+                        </div> 
+
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="Exemplo de Expressão Regular" src="ponto-pag41-maiuscula.png" />
+                            <p>Palavras que começam com maiúsculas ou não</p>
+                            <p>Fonte:
+                                <a href="http://www.piazinho.com.br/ed3/exemplos.html#3">Livro: Expressões Regulares 3 edição, pag 41#3</a>
+                            </p>                            
+                        </div> 
+
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="Exemplo de Expressão Regular" src="ponto-pag41-grafia.png" />
+                            <p>Palavras com grafia possivelmente errada</p>
+                            <p>Fonte:
+                                <a href="http://www.piazinho.com.br/ed3/exemplos.html#4">Livro: Expressões Regulares 3 edição, pag 41#4</a>
+                            </p>                            
+                        </div> 
+
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="Exemplo de Expressão Regular" src="ponto-pag42-horas.png" />
+                            <p>Palavras que parcem-se com horas</p>
+                            <p>Fonte:
+                                <a href="http://www.piazinho.com.br/ed3/exemplos.html#5">Livro: Expressões Regulares 3 edição, pag 42#5</a>
+                            </p>                            
+                        </div> 
+
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="Exemplo de Expressão Regular" src="ponto-pag42-tags.png" />
+                            <p>Tags de HTML</p>
+                            <p>Fonte:
+                                <a href="http://www.piazinho.com.br/ed3/exemplos.html#6">Livro: Expressões Regulares 3 edição, pag 42#6</a>
+                            </p>                            
+                        </div> 
+
+
+                    </div>
+
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+
+        </div><!-- Matéria -->
+
+        <?php include BASE_PATH . VIEWS_PATH . "/footer.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+
+    </body>
+</html>
