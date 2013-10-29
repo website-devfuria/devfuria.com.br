@@ -29,16 +29,15 @@ require "../../../core/boot.php";
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>O básico das Expressões Regulares</h1>
-                <p>Introdução aos conceitos intuitivo de ER.</p>
-                <p>Veremos um pequeno exemplo e como é o mundo das Er's em JS e PHP</p>
+                <h1>preg&#95;match()</h1>
+                <p>Dissecando a função do PHP</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-warning">22/07/213</span>, escrito em <span class="label label-warning">22/07/2013</span>.
+                Flávio Micheletti, atualizado em <span class="label label-warning">22/07/2013</span>, escrito em <span class="label label-warning">22/07/2013</span>.
             </div>
         </div>
 
@@ -51,22 +50,16 @@ require "../../../core/boot.php";
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
                             <li>
-                                <a href="#intro">O que são</a>
+                                <a href="#intro">Sobre a função</a>
                             </li>
                             <li>
-                                <a href="#sobre">Sobre o curso</a>
+                                <a href="#nao-casou">Expressão não casa</a>
                             </li>
                             <li>
-                                <a href="#exemplo01">Primeiro Exemplo</a>
+                                <a href="#sintax-errada">Sintaticamente errada</a>
                             </li>
                             <li>
-                                <a href="#mundos">PHP</a>
-                            </li>
-                            <li>
-                                <a href="#js">Javascript</a>
-                            </li>
-                            <li>
-                                <a href="#leituras">Leituras adicionais</a>
+                                <a href="#code-final">Código final</a>
                             </li>
                         </ul>
                     </div>
@@ -77,57 +70,12 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">O que são Expressões Regulares ?</h1>
+                            <h1 id="intro">Sobre a função</h1>
                         </div>
 
-                        <p>Expressões Regulares é uma técnica para procurar, de forma bem específica, um texto abrangente.</p>
+                        <p>A função preg&#95;match() refere-se a versão PCRE, versão compatível com PHP 5.3.</p>
 
-                        <p>OK, essa não é a definição formal de Expressões Regulares (ER), é uma variação da resposta encontrada por Aurélio Marinho
-                            para a seguinte pergunta:</p>
-
-                        <h2>Para que servem ?</h2>
-
-                        <blockquote>
-                            <p>Basicamente, servem para você dizer algo abrangente de forma específica.
-                                <small>Expressões Regulares, Uma Abordagem divertida (Aurélio Marinho, pag 36 da 3 edição).</small></p>
-                        </blockquote>
-
-                        <p>Elas servem para muita coisas e podem salver sua pele, se souber usá-las.</p>
-
-                    </div>
-
-
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="sobre">Sobre o curso</h1>
-                        </div>
-
-                        <p>Eu preparei (e ainda estou preparando) este curso sobre ER's para ser bem básico, o intuito é que você leia a matéria
-                            e entenda (e também decore) sobre cada aspecto comentado.</p>
-
-                        <p>Mas para facilitar ainda mais o seu aprendizado (o meu também foi mais fácil dessa forma) aconselho a utilizar alguns
-                            software online apenas para testar as ER's, ou seja, ao invés de você partir direto para o código fonte, parta primeiro
-                            para esses softwares, assim você terá a oportunidade de conferir sua ER antes de ficar quebrando a cabeça no código
-                            fonte, algumas ferramentas interessantes:</p>
-
-                        <p><a href="http://regexpal.com/">http://regexpal.com/</a></p>
-
-                        <p><a href="http://regex.larsolavtorvik.com/">http://regex.larsolavtorvik.com/</a></p>
-
-                        <p><a href="http://www.debuggex.com/">http://www.debuggex.com/</a></p>
-
-                        <p><a href="http://www.regexplanet.com/">http://www.regexplanet.com/</a></p>
-
-                        <p>Irei utilizar as duas linguagens que também possuem seus cursos aqui no site: PHP e Javascript.</p>
-
-                        <p>Conforme vamos evoluíndo com as ER's, vamos evoluindo com as linguagens.</p>
-                    </div>
-
-
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="exemplo01">Primeiro Exemplo</h1>
-                        </div>
+                        <p>Para iniciarmos vamos utilizar o exemplo básico da matéria de introdução (<a href="link">link</a>)</p>
 
                         <p>Temos a string original:</p>
 
@@ -137,115 +85,168 @@ require "../../../core/boot.php";
 
                         <pre><code>"exemplo"</code></pre>
 
-                        <p>Veja como fica nos testadores:</p>
+                        <p>Esse exemplo é tão simples, que talvez você esteja se perguntando:</p>
 
-                        <div class="bs-example ">
-                            <img class="img-thumbnail" alt="Exemplo no testador regexpal" src="exemplo-regexp.png" />
-                            <p>http://regexpal.com/</p>
-                        </div>                        
-                        
-                        <div class="bs-example ">
-                            <img class="img-thumbnail" alt="Exemplo no testador de Larsolav" src="exemplo-larsolav.png" />
-                            <p>http://regex.larsolavtorvik.com/</p>
-                        </div>                         
-                        
-                        <p>Os testadores ajudam muito, principalmente no começo, aprenda a utilizá-los, é divertido!</p>
-                    </div>
+                        <p>Porque não utilizar uma função qualquer para encontra a string?</p>
 
+                        <p>Sim claro, você tem toda razão, mas vamos combinar o seguinte: nossos exemplos serão fácies (e talvez sem sentido prático)
+                            apenas para facilitar seu aprendizado.</p>
 
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="mundos">PHP e os dois mudos: PCRE e POSIX</h1>
+                        <p>Em breve faremos voôs mais altos, ok? "Tudo a seu tempo".</p>
+
+                        <p>Ela (a função) aceita 5 parâmetros, sendo os dois primeiros obrigatórios.</p>
+
+                        <ol>
+                            <li><p>O primeiro parâmetro é a expressão regular.</p></li>
+                            <li><p>O segundo parâmetro é a string onde pesquisaremos a expressão.</p></li>
+                            <li><p>O terceiro parâmetro é um array que armazenará os resultados (partes) da string original</p></li>
+                        </ol>
+
+                        <p>Estou utilizando também o terceiro parâmetro e inclusive uma variável $resultado para pegar o resultado de execução
+                            da função.</p>
+
+                        <p>Veja mais sobre a função na documentação oficial:
+                            <a href="http://php.net/manual/en/function.preg-match.php" title="">http://php.net/manual/en/function.preg-match.php</a></p>
+
+                        <div class="code">
+                            <h6>PHP</h6>
+                            <pre>&lt;?php
+$pattern   = "/exemplo/";
+$subject   = "Casa com a palavra exemplo";
+$retorno = array();
+
+# Executa nossa expressão
+$resultado = preg_match($pattern, $subject, $retorno);
+var_dump($resultado, $retorno);
+?&gt;</pre>
                         </div>
 
-                        <p>As funções da versão POSIX estão depreciadas na versão 5.3 do PHP.</p>
+                        <p>Se olharmos para dentro das variáveis $retorno e $resultado teremos, respectivamente "1" e um array com a string "exemplo".</p>
 
-                        <p>A versão PREC é a mais atual.</p>
+                        <p>É como se isso estivesse acontecendo:</p>
 
-                        <p>Segundo o Marinho, as funções PCRE são mais rápidas que as POSIX e para funcionarem o PHP deverá ser compilado com 
-                            suporte a bilioteca PCRE.</p>
-
-                        <p>Em PHP as ER's devem ser tratadas como strings entre aspas, exemplo:</p>
-
-                        <pre><code>'/sua expressão regular/'</code></pre>
-
-                        <p>As funções POSIX são derivdas de <em>ereg()</em>;</p>
-
-                        <p>As funções do PREC são derivadas de <em>preg_macth()</em>;</p>
-
-                        <p>Veja mais informações na documentação oficial:</p>
-
-                        <p><a href="http://www.php.net/manual/en/book.pcre.php" title="PCRE">Sobre a PCRE</a></p>
-
-                        <p><a href="http://www.php.net/manual/en/reference.pcre.pattern.posix.php" title="POSIX">Sobre A POSIX</a></p>
-
-                    </div>
-
-                    
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="js">Javascript e suas funções ER</h1>
-                        </div>                    
-
-                        <p>Em JS temos 3 funções para tratarmos as ER's:</p>
-
-                        <pre><code>test()
-exec()
-match()
+                        <pre><code>$retorno = 1;
+$resultado = array("exemplo")
 </code></pre>
 
-                        <p>E também temos o construtuor</p>
+                        <p>...veja o resultado do var_dump($resultado, $retorno);:</p>
 
-                        <pre><code>RegExp();</code></pre>
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="var_dump nas variáveis resultado e retorno" src="var-dump-resultado.png" />
+                        </div>                        
 
-                        <p>Em JS (diferentemente de PHP) as ER's devem ser embebidas por barras, sem aspas, exemplo:</p>
-
-                        <pre><code>/sua expressão regular/</code></pre>
-
-                        <p>Veja mais informações na documentação oficial:</p>
-
-                        <p><a href="https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions">https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions</a></p>
-
-                        <p>Nas próximas matérias veremos como ficará nosso singelo "primeiro exemplo" nas duas linguagens. Até lá.</p>
-
-                        <p><em>Seja bem vindo ao curso!</em></p>
-
-                    </div>                    
-
+                        <p>A função retorna um valor para sabermos se obtivemos sucesso ou não e, no caso do sucesso, podemos saber quais as partes
+                            que casaram.</p>
+                    </div>
+                    
                     
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
-                        </div>                     
+                            <h1 id="nao-casou">Se a expressão não casar</h1>
+                        </div>                    
 
-                        <dl id="leitura_adcionais">
-                            <dt>Livros</dt>
-                            <dd><em>Expressões Regulares, Uma abordagem divertida</em>, nesse livro Aurélio Marinho Jargas dá um show de
-                                didádica simples e objetiva. E, como o título promete, muito divertida também. Esse aqui é um ótimo começo e
-                                não é sugerida mas sim obrigatório. Veja mais informações no site oficial:
-                                <a href="http://www.piazinho.com.br/" >http://www.piazinho.com.br/</a>
-                            </dd>
-                            <dd><em>Expressões Regulares Cookbook</em> Ótimo livro, não é tão fácil começar por ele, mas é muito bom, o que
-                                mais gostei é que os autores tratam os diversos sabores das ER.
-                                <a href="http://novatec.com.br/livros/regexpcookbook/" >http://novatec.com.br/livros/regexpcookbook/</a>
-                            </dd>
-                            <dd><em>Dominando Expressões Regulares</em> Confesso qua ainda não li este livro, mas gostei muito do capítulo
-                                de amostra, será minha proxima aquisição.
-                                <a href="http://www.altabooks.com.br/dominando-expressoes-regulares.html" >http://www.altabooks.com.br/dominando-expressoes-regulares.html</a>
-                            </dd>
-                            <dd><em>Mastering Regular Expressions </em> A bíblia das ER, também não li, dúvido muito que eu lei um dia. Meu
-                                objetivo é trafegar tranquilamente pelas ER e não domniná-las, se este for o seu caso, compre e leia o livro.
-                                <a href="http://regex.info/book.html" >http://regex.info/book.html</a>
-                            </dd>
-                            <dt>Internet</dt>
-                            <dd>Primeia edição do livro do Marinho disponível para leitura online:
-                                <a href="http://aurelio.net/regex/guia/" >http://aurelio.net/regex/guia/</a>
-                            </dd>
-                            <dd>Links e outras dicas do Marinho (só dá ele).
-                                <a href="http://aurelio.net/regex/#links" >http://aurelio.net/regex/#links</a>
-                            </dd>
-                        </dl>
-                    </div>                     
+                        <p>Executando o seguinte código:</p>
+
+                        <div class="code">
+                            <h6>PHP</h6>
+                            <pre>&lt;?php
+$pattern   = "/não existe/";
+$subject   = "Casa com a palavra exemplo";
+$retorno = array();
+
+# Executa nossa expressão
+$resultado = preg_match($pattern, $subject, $retorno);
+var_dump($resultado, $retorno);
+?&gt;</pre>
+                        </div>
+
+                        <p>...recebemos um int 0  na variável $resultado e um array vazio na variável $retorno.</p>
+
+                        <p>Isso siginifica que a função retorna 1 caso a expressão case e 0 (zero) caso NÂO case, até rimou.</p>
+
+                        <p>Podemos descobrir se a expressão não casou através de...</p>
+
+                        <pre><code>count($retorno) === 0</code></pre>
+
+                        <p>Você decide o que usar, eu prefiro testar o resulado da função (variável $resultado).</p>
+                    </div>    
+                    
+                    
+                    
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
+                        </div> 
+
+                        <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um ( a mais.</p>
+
+                        <div class="code">
+                            <h6>PHP</h6>
+                            <pre>&lt;?php
+<em>$pattern   = "/(exemplo/";</em>
+$subject   = "Casa com a palavra exemplo";
+$retorno = array();
+
+# Executa nossa expressão
+$resultado = preg_match($pattern, $subject, $retorno);
+?&gt;</pre>
+                        </div>
+
+                        <p>Tanto a variável $resultado será igual a false como receberemos um <em>warning</em> dizendo que a compilação da expressão falhou
+                            (outros tipos de erros também aparecem):</p>
+
+                        <div class="bs-example ">
+                            <img class="img-thumbnail" alt="warning retornado pela função" src="regexp-erro.png" />
+                        </div> 
+
+                        <p>Precisamos tratar o erro adequadamente (tudo bem, warning não é erro, mas não deixa de ser um aviso importante), porém
+                            por enquanto não vamos nos preocupar com isso.</p>
+
+                    </div> 
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="code-final">Código final</h1>
+                        </div>
+
+                        <p>Sabendo como a função se comporta, podemos esboçar nossa lógica da seguinte forma:</p>
+
+                        <pre><code>se o valor é igual a 1 então
+    print "casou"
+se o valor é igual a 0 então
+    print "não casou"
+se o valor é igual a false então
+    print "ocorreu um erro"
+</code></pre>
+
+                        <p>E aí fica fácil escrevermos o ćodigo final.</p>
+
+                        <div class="code">
+                            <h6>PHP</h6>
+                            <pre>&lt;?php
+$pattern   = "/exemplo/";
+$subject   = "Casa com a palavra exemplo";
+$retorno = array();
+
+# Executa nossa expressão
+$resultado = preg_match($pattern, $subject, $retorno);
+
+if ($resultado === 1) {
+    print "casou";
+    var_dump($retorno);
+    
+} else if ($resultado === 0) {
+    print "não casou";
+    var_dump($retorno);
+    
+} elseif ($resultado === false) {
+    print "ocorreu um erro";
+    
+}
+?&gt;</pre>
+                        </div>    
+
+                    </div>
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->

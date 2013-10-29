@@ -139,7 +139,7 @@ require "core/boot.php";
                 <h2>RegExp</h2>
                 <div class="list-group">
                     <a href="<?php echo LINKS_PATH; ?>/regexp/basico/intro/" class="list-group-item">Introdução </a>
-                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">preg_match() </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/preg-match" class="list-group-item">preg_match() </a>
                     <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">string.match() </a>
                     <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">pattern.test() </a>
                     <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">pattern.exec() </a>
