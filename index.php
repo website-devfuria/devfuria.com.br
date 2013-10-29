@@ -145,7 +145,7 @@ require "core/boot.php";
                     <a href="<?php echo LINKS_PATH; ?>/regexp/basico/pattern-exec" class="list-group-item">pattern.exec() </a>
                     <a href="<?php echo LINKS_PATH; ?>/regexp/basico/new-regexp" class="list-group-item">new RegExp() </a>
                     <a href="<?php echo LINKS_PATH; ?>/regexp/basico/ponto" class="list-group-item">ponto </a>
-                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">Vários resultados - preg_match_all() </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/varios-resultados-preg-match-all" class="list-group-item">Vários resultados - preg_match_all() </a>
                     <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">Vários resultados - match(), test() e exec() </a>
                 </div>
             </div>
