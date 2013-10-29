@@ -138,15 +138,15 @@ require "core/boot.php";
             <div class="col-md-12">
                 <h2>RegExp</h2>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Introdução </a>
-                    <a href="#" class="list-group-item">preg_match() </a>
-                    <a href="#" class="list-group-item">string.match() </a>
-                    <a href="#" class="list-group-item">pattern.test() </a>
-                    <a href="#" class="list-group-item">pattern.exec() </a>
-                    <a href="#" class="list-group-item">new RegExp() </a>
-                    <a href="#" class="list-group-item">ponto </a>
-                    <a href="#" class="list-group-item">Vários resultados - preg_match_all() </a>
-                    <a href="#" class="list-group-item">Vários resultados - match(), test() e exec() </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/intro/" class="list-group-item">Introdução </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">preg_match() </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">string.match() </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">pattern.test() </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">pattern.exec() </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">new RegExp() </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">ponto </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">Vários resultados - preg_match_all() </a>
+                    <a href="<?php echo LINKS_PATH; ?>/regexp/basico/" class="list-group-item">Vários resultados - match(), test() e exec() </a>
                 </div>
             </div>
         </div>
