@@ -23,37 +23,32 @@ require "../../../core/boot.php";
         $core->navtop->secoes = $core->secoes;
         $core->navtop->secao = "htmlcss";
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Elementos in-line e elementos block-level</h1>
-                <p></p>
+                <p>O objetivo da matéria é entender as diferênças entre os dois tipos</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                   Flávio Micheletti, atualizado em <span class="label label-info">11/02/2013</span>, escrito em <span class="label label-success">23/01/2013. </span>
+                Flávio Micheletti, atualizado em <span class="label label-info">11/02/2013</span>, escrito em <span class="label label-success">23/01/2013. </span>
             </div>
         </div>
 
 
         <!-- Matéria -->
-        <div class="container bs-docs-container">
+        <div class="container bs-docs-container" id="materia">
             <div class="row">
 
                 <!-- navegação lateral esquerdo -->
                 <div class="col-md-3">
                     <div class="bs-sidebar hidden-print" role="complementary">
-<!--                        <ul class="nav bs-sidenav">
-                            <li>
-                                <a href="#intro">Os 2 tipos essenciais de tags</a>
-                            </li>
-                        </ul>-->
                     </div>
                 </div>
 
@@ -65,13 +60,13 @@ require "../../../core/boot.php";
                             <h1 id="intro">Os 2 tipos essenciais de tags</h1>
                         </div>
 
-                        <p>Há dois tipos básicos de tag's: as in-line e de block-level.</p>
+                        <p>Há dois tipos básicos de tag's: as <code>in-line</code> e de <code>block-level</code>.</p>
 
-                        <p>A diferênça básica é que o browser acomoda os elementos
-                            inline à esquerda um ao lado do outro e as de bloco ele coloca uma embaixo da outra ocupando a tela toda.</p>
+                        <p>A diferênça básica é que o browser acomoda os elementos <strong>inline</strong> à esquerda um ao lado do outro
+                            e as de <strong>bloco</strong ele coloca uma em baixo da outra ocupando a tela toda.></p>
 
-                        <p>Veja o HTML abaixo para <em>entender</em> e clique no <a href="code1.html" title="Veja a pagina em funcionamento">link</a>
-                            para <em>perceber</em> como ele foi reenderizado.</p>
+                        <p>Veja o HTML abaixo para entender e clique no <a href="code1.html" title="Veja a pagina em funcionamento">link</a>
+                            para perceber como ele foi reenderizado.</p>
 
                         <div class="code menor">
                             <h6>HTML(inválido)</h6>
@@ -124,15 +119,15 @@ require "../../../core/boot.php";
 
                         <p>O problema reside no fato de que estamos acostumados a utilizar softwares, como por exemplo editores de textos ou editores
                             de imagens e vamos "dizendo" ao softwarer" coloque este círculo aqui, aquele texto ali, agora desça um pouco o círculo
-                            e etc..". Achamos que com HTML dá para fazer igual. Com o HTML a idéia é parecida mas há uma diferênça crucial: <em>existe
-                                uma certa manha para desenharmos a arte que "pintamos" em nossa cabeça.</em>. E entender essa "manha" fará toda a diferênça.</p>
+                            e etc..". Achamos que com HTML dá para fazer igual. Com o HTML a idéia é parecida mas há uma diferênça crucial: <strong>existe
+                                uma certa manha para desenharmos a arte que "pintamos" em nossa cabeça.</strong>. E entender essa "manha" fará toda a diferênça.</p>
 
                         <p>Uma parte dessa "manha" é compreender a diferênça entre as tag's in-line e as tag's block-level.</p>
 
-                        <p>A dica é: <em>não tente criar em HTML a página que você idealizou sem antes se familiarizar com a forma que o navegador
-                                reenderiza o HTML</em>.</p>
+                        <p>A dica é: <strong>não tente criar em HTML a página que você idealizou sem antes se familiarizar com a forma que o navegador
+                                reenderiza o HTML</strong>.</p>
 
-                        <p>Abaixo vemos alguns elementos básicos de <em>block-level</em>:</p>
+                        <p>Abaixo vemos alguns elementos básicos de <code>block-level</code>:</p>
 
                         <ul>
                             <li>div</li>
@@ -145,7 +140,7 @@ require "../../../core/boot.php";
                             <li>hr</li>
                         </ul>
 
-                        <p>... e alguns elementos <em>in-line</em>:</p>
+                        <p>... e alguns elementos <code>in-line</code>:</p>
 
                         <ul>
                             <li>span</li>
@@ -158,10 +153,10 @@ require "../../../core/boot.php";
                             <li>textarea</li>
                         </ul>
 
-                        <p>Há ainda um terceiro tipo de elemento: o <em>inline-block</em> que nada mais é do que um elemento de bloco acomodado como um
+                        <p>Há ainda um terceiro tipo de elemento: o <code>inline-block</code> que nada mais é do que um elemento de bloco acomodado como um
                             elemento inline.</p>
 
-                        <p>A CSS pode alterar o tipo do elemento. Com a propriedade "display" é possível utilizar os três valores (mais comuns):</p>
+                        <p>A CSS pode alterar o tipo do elemento. Com a propriedade <code>display</code> é possível utilizar os três valores (mais comuns):</p>
 
                         <ol>
                             <li>block</li>
@@ -169,11 +164,11 @@ require "../../../core/boot.php";
                             <li>inline-block</li>
                         </ol>
 
-                        <p>A tag "div" é block-level, mas se aplicarmos a propriedade "inline" ela começará a se comportar como uma tag inline.</p>
+                        <p>A tag <code>div</code> é block-level, mas se aplicarmos a propriedade <code>inline</code> ela começará a se comportar como uma tag inline.</p>
 
                         <p>O inverso também é verdadeiro.</p>
 
-                        <p>A tag "span" é inline, mas se aplicarmos a propriedade "block" ela se comportará como uma tag block-level.</p>
+                        <p>A tag <code>span</code> é inline, mas se aplicarmos a propriedade <code>block</code> ela se comportará como uma tag block-level.</p>
 
                         <p>Para ilustrar eu utilizei o mesmo HTML acima e apliquei duas regras de css para "inverter as bolas", quem era block virou
                             inline e quem era inline virou block. Veja o resultado <a href="code2.html" title="tipos invertidos">aqui</a></p>
@@ -228,19 +223,14 @@ require "../../../core/boot.php";
 
                         <p>Essa matéria é curtinha, mas não se engane, seguir em frente sem entender (de verdade) é perca de tempo,
                             aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.</p>
-                        <p>
-                    
-                    
-                    
-                    
-                    
-                </div><!-- Corpo da matéria -->
-            </div><!-- row -->
 
-        </div><!-- Matéria -->
+                    </div><!-- Corpo da matéria -->
+                </div><!-- row -->
 
-        <?php include BASE_PATH . VIEWS_PATH . "/footer.php"; ?>
-        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+            </div><!-- Matéria -->
+
+            <?php include BASE_PATH . VIEWS_PATH . "/footer.php"; ?>
+            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
 </html>

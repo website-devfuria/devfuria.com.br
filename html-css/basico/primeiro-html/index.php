@@ -23,7 +23,7 @@ require "../../../core/boot.php";
         $core->navtop->secoes = $core->secoes;
         $core->navtop->secao = "htmlcss";
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
         <!-- Título -->
@@ -68,22 +68,22 @@ require "../../../core/boot.php";
                             <h1 id="intro">Um HTML de primeira qualidade</h1>
                         </div>
 
-                        <p>O site <a href="http://www.csszengarden.com/">csszengarden.com</a> é notório por seus esforços em promover e divulgar <em>o poder do 
-                                CSS unido a um bom HTML</em>. Ele traz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e 
-                            desafiaram designers solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utiliar o 
+                        <p>O site <a href="http://www.csszengarden.com/">csszengarden.com</a> é notório por seus esforços em promover e divulgar <strong>o poder do
+                                CSS unido a um bom HTML</strong>. Ele traz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e
+                            desafiaram designers solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utiliar o
                             tema/estilo que quiser, mas não poderá jamais alterar o HTML e sua estrutura.</p>
 
                         <p>O resultado você confere no site. Design's realmente incríveis foram elaborados. Incríveis não só pela arte mas
-                            principalmente pela <em>excelência de técnica utiliza na construção do HTML e do CSS.</em></p>
+                            principalmente pela <strong>excelência de técnica utiliza na construção do HTML e do CSS.</strong></p>
 
-                        <p>O site possue tradução para o português e também disponibiliza uma lista de links que auxiliarão em sua jornada, não 
+                        <p>O site possue tradução para o português e também disponibiliza uma lista de links que auxiliarão em sua jornada, não
                             deixe de conferir.</p>
 
                         <p>Nós iremos utilizar esse HTML para os próximos exercícios, não vamos focar no design (obviamente)
                             vamos exercitar apenas a construção de um bom HTML e algumas estilizações básicas.</p>
 
-                        <p>O objetivo deste exercício é familiarizar-se com o desafio de <em>decidir qual tag utilizar, ou melhor, qual marcação mais
-                                adequado para o conteúdo?</em></p>
+                        <p>O objetivo deste exercício é familiarizar-se com o desafio de <strong>decidir qual tag utilizar, ou melhor, qual marcação mais
+                                adequado para o conteúdo?</strong></p>
 
                         <p>Uma página da web, uma página de um portal ou uma página de um sistema web (nosso foco) é composta por algum tipo de
                             conteúdo: texto, cores, links, imagens, gráficos, filmes, audio. Mas principalmente texto.</p>
@@ -91,7 +91,7 @@ require "../../../core/boot.php";
                         <p>Imagine que você irá construi apenas uma página simples. Você já possui o texto. Na verdade é tudo muito simples, teremos
                             apenas títulos e parágrafos.</p>
 
-                        <p>Crie um arquivo chamado "zengarden-sample.html" e comece colando a estrutura básica do HTML.</p>
+                        <p>Crie um arquivo chamado <code>zengarden-sample.html</code> e comece colando a estrutura básica do HTML.</p>
 
                         <div class="code">
                             <h6>HTML - Nossa estrutura básica </h6>
@@ -115,7 +115,7 @@ require "../../../core/boot.php";
                             </pre>
                         </div>
 
-                        <p>A um <em>palavrão</em> chamado DOCTYPE, eu sei. Em breve falaremos dele.</p>
+                        <p>A um <strong>palavrão</strong> chamado DOCTYPE, eu sei. Em breve falaremos dele.</p>
 
                         <p>O título eu mantive o original em inglês.</p>
 
@@ -123,7 +123,7 @@ require "../../../core/boot.php";
 
                         <p>Ele será o conteúdo de nossa primeira página (extraído do site <a href="http://www.csszengarden.com/">csszengarden.com</a> ).</p>
 
-                        <p>Após ter lido atentamente o texto, olhe para ele e pergunte-se: <em>aonde e quais tag's você utilizaria?</em></p>
+                        <p>Após ter lido atentamente o texto, olhe para ele e pergunte-se: <strong>aonde e quais tag's você utilizaria?</strong></p>
 
                         <p>Esse é seu exercício!</p>
 
@@ -222,23 +222,15 @@ etc...
 
                         <p>Essa foi fácil!</p>
 
-                        <p>O mais importante é você entender que não existe marcação certa ou errada. Mas existe a marcação adequada, limpa e de
-                            fácil leitura.</p>
-
+                        <p>O mais importante é você entender que não existe marcação certa ou errada. </p>
+                        <p>Mas existe a marcação adequada, limpa e de fácil leitura.</p>
                         <p>Assista ao vídeo da solução que acompanha esta matéria.</p>
-
-                        <p>Obs: A voz doce ao fundo é minha querida Joana.</p>
-
-                        <div class="imagem">
-                            <iframe width="560" height="315" src="http://www.youtube.com/embed/IMswx5wcqA0" frameborder="0" allowfullscreen>
-                            </iframe>
+                        <div class="bs-example bs-example-images">
+                            <iframe width="560" height="315" src="http://www.youtube.com/embed/IMswx5wcqA0" frameborder="0" allowfullscreen></iframe>
+                            <p>Obs: A voz doce ao fundo é minha querida Joana.</p>
                         </div>
                     </div>
 
-                    
-                    
-                    
-                    
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 
