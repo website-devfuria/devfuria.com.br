@@ -99,7 +99,7 @@ require "core/boot.php";
                     <a href="<?php echo LINKS_PATH; ?>/html-css/basico/onde-tudo-comecou/" class="list-group-item">Onde tudo começou </a>
                     <a href="<?php echo LINKS_PATH; ?>/html-css/basico/html-e-css-intro/" class="list-group-item">HTML e CSS - Introdução </a>
                     <a href="<?php echo LINKS_PATH; ?>/html-css/basico/elementos-inline-block-level/" class="list-group-item">Elementos in-line e elementos block-level </a>
-                    <a href="#" class="list-group-item">Criando nosso primeiro HTML [com vídeo] </a>
+                    <a href="<?php echo LINKS_PATH; ?>/html-css/basico/primeiro-html" class="list-group-item">Criando nosso primeiro HTML [com vídeo] </a>
                 </div>
             </div>
         </div>
