@@ -1,6 +1,6 @@
 <?php
 /**
- * PHP
+ * RegExp
  */
 /**
  * Includes
@@ -57,10 +57,10 @@ require "../../../core/boot.php";
                                 <a href="#sobre">Sobre o curso</a>
                             </li>
                             <li>
-                                <a href="#exemplo01">Primeiro Exemplo</a>
+                                <a href="#exemplo">Primeiro Exemplo</a>
                             </li>
                             <li>
-                                <a href="#mundos">PHP</a>
+                                <a href="#php">PHP</a>
                             </li>
                             <li>
                                 <a href="#js">Javascript</a>
@@ -126,7 +126,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="exemplo01">Primeiro Exemplo</h1>
+                            <h1 id="exemplo">Primeiro Exemplo</h1>
                         </div>
 
                         <p>Temos a string original:</p>
@@ -142,27 +142,27 @@ require "../../../core/boot.php";
                         <div class="bs-example ">
                             <img class="img-thumbnail" alt="Exemplo no testador regexpal" src="exemplo-regexp.png" />
                             <p>http://regexpal.com/</p>
-                        </div>                        
-                        
+                        </div>
+
                         <div class="bs-example ">
                             <img class="img-thumbnail" alt="Exemplo no testador de Larsolav" src="exemplo-larsolav.png" />
                             <p>http://regex.larsolavtorvik.com/</p>
-                        </div>                         
-                        
+                        </div>
+
                         <p>Os testadores ajudam muito, principalmente no começo, aprenda a utilizá-los, é divertido!</p>
                     </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="mundos">PHP e os dois mudos: PCRE e POSIX</h1>
+                            <h1 id="php">PHP e os dois mudos: PCRE e POSIX</h1>
                         </div>
 
                         <p>As funções da versão POSIX estão depreciadas na versão 5.3 do PHP.</p>
 
                         <p>A versão PREC é a mais atual.</p>
 
-                        <p>Segundo o Marinho, as funções PCRE são mais rápidas que as POSIX e para funcionarem o PHP deverá ser compilado com 
+                        <p>Segundo o Marinho, as funções PCRE são mais rápidas que as POSIX e para funcionarem o PHP deverá ser compilado com
                             suporte a bilioteca PCRE.</p>
 
                         <p>Em PHP as ER's devem ser tratadas como strings entre aspas, exemplo:</p>
@@ -175,17 +175,17 @@ require "../../../core/boot.php";
 
                         <p>Veja mais informações na documentação oficial:</p>
 
-                        <p><a href="http://www.php.net/manual/en/book.pcre.php" title="PCRE">Sobre a PCRE</a></p>
+                        <p><a href="http://www.php.net/manual/pt_BR/book.pcre.php" title="link-externo">PCRE</a></p>
 
-                        <p><a href="http://www.php.net/manual/en/reference.pcre.pattern.posix.php" title="POSIX">Sobre A POSIX</a></p>
+                        <p><a href="http://www.php.net/manual/en/reference.pcre.pattern.posix.php" title="link-externo">POSIX</a></p>
 
                     </div>
 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="js">Javascript e suas funções ER</h1>
-                        </div>                    
+                        </div>
 
                         <p>Em JS temos 3 funções para tratarmos as ER's:</p>
 
@@ -210,42 +210,68 @@ match()
 
                         <p><em>Seja bem vindo ao curso!</em></p>
 
-                    </div>                    
+                    </div>
 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="leituras">Leituras adicionais sugeridas</h1>
-                        </div>                     
+                        </div>
 
-                        <dl id="leitura_adcionais">
-                            <dt>Livros</dt>
-                            <dd><em>Expressões Regulares, Uma abordagem divertida</em>, nesse livro Aurélio Marinho Jargas dá um show de
-                                didádica simples e objetiva. E, como o título promete, muito divertida também. Esse aqui é um ótimo começo e
-                                não é sugerida mas sim obrigatório. Veja mais informações no site oficial:
-                                <a href="http://www.piazinho.com.br/" >http://www.piazinho.com.br/</a>
-                            </dd>
-                            <dd><em>Expressões Regulares Cookbook</em> Ótimo livro, não é tão fácil começar por ele, mas é muito bom, o que
-                                mais gostei é que os autores tratam os diversos sabores das ER.
-                                <a href="http://novatec.com.br/livros/regexpcookbook/" >http://novatec.com.br/livros/regexpcookbook/</a>
-                            </dd>
-                            <dd><em>Dominando Expressões Regulares</em> Confesso qua ainda não li este livro, mas gostei muito do capítulo
-                                de amostra, será minha proxima aquisição.
-                                <a href="http://www.altabooks.com.br/dominando-expressoes-regulares.html" >http://www.altabooks.com.br/dominando-expressoes-regulares.html</a>
-                            </dd>
-                            <dd><em>Mastering Regular Expressions </em> A bíblia das ER, também não li, dúvido muito que eu lei um dia. Meu
-                                objetivo é trafegar tranquilamente pelas ER e não domniná-las, se este for o seu caso, compre e leia o livro.
-                                <a href="http://regex.info/book.html" >http://regex.info/book.html</a>
-                            </dd>
-                            <dt>Internet</dt>
-                            <dd>Primeia edição do livro do Marinho disponível para leitura online:
-                                <a href="http://aurelio.net/regex/guia/" >http://aurelio.net/regex/guia/</a>
-                            </dd>
-                            <dd>Links e outras dicas do Marinho (só dá ele).
-                                <a href="http://aurelio.net/regex/#links" >http://aurelio.net/regex/#links</a>
-                            </dd>
-                        </dl>
-                    </div>                     
+
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Livros</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="http://www.piazinho.com.br/" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Expressões Regulares, Uma abordagem divertida</h4>
+                                        <p class="list-group-item-text">Nesse livro Aurélio Marinho Jargas dá um show de didádica simples e objetiva. E,
+                                            como o título promete, muito divertida também. Esse aqui é um ótimo começo e não é sugerida mas sim obrigatório.
+                                            Veja mais informações no site oficial:</p>
+                                        <span class="label label-default">http://www.piazinho.com.br/</span>
+                                    </a>
+                                    <a href="http://novatec.com.br/livros/regexpcookbook/" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Expressões Regulares Cookbook</h4>
+                                        <p class="list-group-item-text">Ótimo livro, não é tão fácil começar por ele, mas é muito bom, o que
+                                            mais gostei é que os autores tratam os diversos sabores das ER.</p>
+                                        <span class="label label-default">http://novatec.com.br/livros/regexpcookbook/</span>
+                                    </a>
+                                    <a href="http://www.altabooks.com.br/dominando-expressoes-regulares.html" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Dominando Expressões Regulares</h4>
+                                        <p class="list-group-item-text">Confesso qua ainda não li este livro, mas gostei muito do capítulo
+                                            de amostra, será minha proxima aquisição.</p>
+                                        <span class="label label-default">http://www.altabooks.com.br/dominando-expressoes-regulares.html</span>
+                                    </a>
+                                    <a href="http://regex.info/book.html" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Mastering Regular Expressions</h4>
+                                        <p class="list-group-item-text">A bíblia das ER, também não li, dúvido muito que eu lerei um dia. Se o seu
+                                            objetivo for dominar as ERs então compre e leia o livro. Mas se, assim como eu, o seu objetivo for
+                                            trafegar tranquilamente pelas ER e não domniná-las então está dispensado.</p>
+                                        <span class="label label-default">http://regex.info/book.html</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Primeia edição do livro do Marinho disponível para leitura online</h4>
+                                        <span class="label label-default">http://aurelio.net/regex/guia/</span>
+                                    </a>
+                                    <a href="http://aurelio.net/regex/#links" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Links e outras dicas do Marinho (só dá ele)</h4>
+                                        <span class="label label-default">http://aurelio.net/regex/#link</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->

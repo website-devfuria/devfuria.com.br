@@ -6,7 +6,6 @@ if(!$core->head->title){
 }
 
 ?>
-<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -22,4 +21,3 @@ if(!$core->head->title){
 
     <link rel="shortcut icon" type="imagens/gif" href="<?php echo ROOT_PATH ?>core/imagens/favicon.ico">
     <meta property="og:image" content="<?php echo ROOT_PATH; ?>core/imagens/favicon_1_16x16x1.png"/>
-</head>
