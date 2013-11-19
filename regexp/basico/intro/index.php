@@ -212,7 +212,6 @@ match()
 
                     </div>
 
-
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="leituras">Leituras adicionais sugeridas</h1>
@@ -272,6 +271,7 @@ match()
                                 </div>
                             </div>
                         </div>
+                    </div>
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->

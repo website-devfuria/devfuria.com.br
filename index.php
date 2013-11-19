@@ -114,7 +114,6 @@ require "core/boot.php";
                 <div class="list-group">
                     <a href="<?php echo LINKS_PATH; ?>/logica/basico/intro/" class="list-group-item">Introdução </a>
                     <a href="<?php echo LINKS_PATH; ?>/logica/basico/bateria01/" class="list-group-item">Primeira Bateria</a>
-                    <a href="<?php echo LINKS_PATH; ?>/logica/basico/bateria02/" class="list-group-item">Segunda Bateria</a>
                 </div>
             </div>
         </div>

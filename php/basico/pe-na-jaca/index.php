@@ -119,7 +119,7 @@ require "../../../core/boot.php";
 
                         <p>Vejamos um código sem endentação:</p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>PHP</h6>
                             <pre>&lt;?php
 
@@ -133,7 +133,7 @@ echo “não inventaram nada pior que código não endentado”;
 
                         <p>E agora, um código endentado:</p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>PHP</h6>
                             <pre>&lt;?php
 
@@ -204,7 +204,7 @@ clientes_endereco</pre>
 
                         <p>Simplesmente terrível. Estamos usando os campos de uma tabela como exemplo, mas poderia ser os campos de um formulário HTML.</p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>Texto plano</h6>
                             <pre>cpId
 cpCodigo
@@ -214,7 +214,7 @@ cpEndereco</pre>
 
                         <p>O que siginifica “cp”? Ora, siginifica “campo”, mas precisa explicitar que é um campo? Não, não precisa. Bastasse...</p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>Texto plano</h6>
                             <pre>id
 codigo

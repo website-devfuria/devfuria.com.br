@@ -115,7 +115,7 @@ require "../../../core/boot.php";
 
                         <p>O ideal é escrevermos o código JS em um arquivo texto com extensão .js e incluí-lo no arquivo HTML dessa forma:</p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>index.html</h6>
                             <pre>
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -193,7 +193,7 @@ require "../../../core/boot.php";
 
                         <p>Então, quando nos depararmos com o seguinte código:</p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>JS</h6>
                             <pre>
 var qualquer = "uma string qualquer";

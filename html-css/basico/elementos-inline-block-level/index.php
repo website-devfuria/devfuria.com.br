@@ -68,7 +68,7 @@ require "../../../core/boot.php";
                         <p>Veja o HTML abaixo para entender e clique no <a href="code1.html" title="Veja a pagina em funcionamento">link</a>
                             para perceber como ele foi reenderizado.</p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>HTML(inválido)</h6>
                             <pre>
 &lt;html&gt;
@@ -173,7 +173,7 @@ require "../../../core/boot.php";
                         <p>Para ilustrar eu utilizei o mesmo HTML acima e apliquei duas regras de css para "inverter as bolas", quem era block virou
                             inline e quem era inline virou block. Veja o resultado <a href="code2.html" title="tipos invertidos">aqui</a></p>
 
-                        <div class="code menor">
+                        <div class="code">
                             <h6>HTML(inválido)</h6>
                             <pre>
 &lt;html&gt;

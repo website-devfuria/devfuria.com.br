@@ -271,6 +271,13 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                         <p>PHP não é a melhor linguagem, nem a mais segura. Mas é uma excelente linguagem de programação web.</p>
 
                         <p>Seja bem vindo ao curso de PHP!</p>
+                    </div>
+
+                    
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                        </div>
                         
                         <div class="panel panel-success">
                             <div class="panel-heading">
@@ -278,14 +285,14 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                             </div>
                             <div class="panel-body">
                                 <div class="list-group">
-                                    <a href="http://www.piazinho.com.br/" class="list-group-item" title="link-externo">
+                                    <a href="#" class="list-group-item" title="">
                                         <h4 class="list-group-item-heading">Nenhum livro sobre PHP</h4>
                                         <p class="list-group-item-text">Nenhum livro sobre PHP é suficientemente básico, conciso e estruturado em uma sequência com começo, meio e fim. Se tratando de PHP para iniciantes, infelizmente não conheço nenhum livro na qual seja merecedor de uma indicação. Existe uma infinidades de livros bons e nos quais eu farei referência quando for oportuno, mas a abrangência é de intermediário para avançado. Aliás, essa foi uma das razões que me motivaram a realizar este projeto O ensino da linguagem de programação, de qualquer linguagem, é muito difuso, disperso, pulverizado e pouco conciso.</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div class="panel panel-info">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Internet</h3>
@@ -311,10 +318,9 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                                         <h4 class="list-group-item-heading">Notícia eletrônica falando sobre a importância das aplicações web</h4>
                                         <span class="label label-default">http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/</span>
                                     </a>
-                            </div>
-                        </div>                        
-                        
-                        
+                                </div>
+                            </div>                        
+                        </div>
                     </div>
 
                 </div><!-- Corpo da matéria -->
