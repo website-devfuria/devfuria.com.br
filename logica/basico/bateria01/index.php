@@ -503,27 +503,6 @@ mostrar total_de_dias
 
 <em>FIM</em></pre>
                                         </div>
-
-                                        <p>Agora em php...</p>
-
-                                        <div class="code">
-                                            <h6>PHP - Solução para o exercício 1</h6>
-                                            <pre>&lt;?php
-
-// Inicializar as variáveis
-$num_a = 10;
-$num_b = 20;
-$num_c = null; // inicializamos os variáveis com null em PHP.
-
-// Efetuar a troca
-$num_c = $num_a;
-$num_a = $num_b;
-$num_b = $num_c;
-
-// Mostrar na tela
-echo “$num_a, $num_b”;
-?&gt;</pre>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

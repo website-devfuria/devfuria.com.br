@@ -140,7 +140,7 @@ require "../../../core/boot.php";
 
                             <div class="bs-example bs-example-images">
                                 <img class="img-rounded" alt="funcionamento simplificado do servidor web" src="php_architect.gif">
-                                <p>Esquema da arquitetura simnplificado.</p>
+                                <p>Esquema da arquitetura simplificado.</p>
                             </div>
 
                         </div>
