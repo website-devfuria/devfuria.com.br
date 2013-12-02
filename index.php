@@ -2,6 +2,7 @@
 /**
  * HOME, index do site
  */
+
 /**
  * Includes
  */
@@ -14,10 +15,16 @@ require "core/boot.php";
         $core->head = new Head();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
+        <style type="text/css">
+            h1 {
+                font-weight: bolder;
+                color: #2F4F4F
+            }
+        </style>
+
     </head>
 
     <body>
-
         <?php
         $core->navtop = new NavTop();
         $core->navtop->secoes = $core->secoes;
@@ -37,32 +44,23 @@ require "core/boot.php";
             </ul>
         </div>
     </main>
-
-
+    
     <footer class="container" role="contentinfo">
-        <div class="bs-social">
-            <ul class="bs-social-buttons">
-                <li>
-                    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
-                </li>
-            </ul>
-        </div>
-
         <ul class="bs-masthead-links">
             <li>
-                <a href="#" >GitHub project</a>
+                <a href="https://github.com/flaviomicheletti/www.devfuria.com.br">Projeto no GitHub</a>
             </li>
             <li>
-                <a href="#" >Quem vôs fala</a>
+                <a href="flavio-alexandre-micheletti.php" >Quem vôs fala</a>
             </li>
         </ul>
     </footer>
 
-    <div class="" style="background-color: #2F4F4F; padding: 80px 0px;" id="js">
+    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="js">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 style="color: white">Javascript</h1>
+                    <h1>Javascript</h1>
                     <div class="list-group">
                         <a href="<?php echo LINKS_PATH; ?>/js/basico/intro/" class="list-group-item">1. Introdução </a>
                         <a href="<?php echo LINKS_PATH; ?>/js/basico/preparando-o-terreno/" class="list-group-item">2. Preparando o terreno </a>
@@ -72,16 +70,16 @@ require "core/boot.php";
                     </div>
                 </div>
             </div>
-                
+
         </div>
     </div>
 
 
-    <div class="" style="background-color: #6A5ACD; padding: 80px 0px;" id="php">
+    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="php">
         <div class="container" >
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="color: white">PHP</h1>
+                    <h1>PHP</h1>
                     <div class="list-group">
                         <a href="<?php echo LINKS_PATH; ?>/php/basico/um-bom-comeco/" class="list-group-item">Um bom começo </a>
                         <a href="<?php echo LINKS_PATH; ?>/php/basico/pe-na-jaca/" class="list-group-item">Antes de enfiar o pé na jáca </a>
@@ -94,11 +92,11 @@ require "core/boot.php";
     </div>
 
 
-    <div class="" style="background-color: #E6E6FA; padding: 80px 0px;" id="htmlcss">
+    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="htmlcss">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="color: white">HTML & CSS</h1>
+                    <h1>HTML & CSS</h1>
                     <div class="list-group">
                         <a href="<?php echo LINKS_PATH; ?>/html-css/basico/onde-tudo-comecou/" class="list-group-item">Onde tudo começou </a>
                         <a href="<?php echo LINKS_PATH; ?>/html-css/basico/html-e-css-intro/" class="list-group-item">HTML e CSS - Introdução </a>
@@ -111,11 +109,11 @@ require "core/boot.php";
     </div>
 
 
-    <div class="" style="background-color: #000; padding: 80px 0px;" id="logica">
+    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="logica">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="color: white">Lógica de Programação</h1>
+                    <h1>Lógica de Programação</h1>
                     <div class="list-group">
                         <a href="<?php echo LINKS_PATH; ?>/logica/basico/intro/" class="list-group-item">Introdução </a>
                         <a href="<?php echo LINKS_PATH; ?>/logica/basico/bateria01/" class="list-group-item">Primeira Bateria</a>
@@ -125,11 +123,11 @@ require "core/boot.php";
         </div>
     </div>
 
-    <div class="" style="background-color: #FA8072; padding: 80px 0px;" id="mysql">
+    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="mysql">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="color: white">Mysql</h1>
+                    <h1>Mysql</h1>
                     <div class="list-group">
                         <a href="<?php echo LINKS_PATH; ?>/mysql/basico/intro/" class="list-group-item">Banco de dados prá que? </a>
                     </div>
@@ -137,12 +135,12 @@ require "core/boot.php";
             </div>
         </div>
     </div>
-        
-    <div class="" style="background-color: #800000; padding: 80px 0px;" id="regexp">
+
+    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="regexp">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="color: white">RegExp</h1>
+                    <h1>RegExp</h1>
                     <div class="list-group">
                         <a href="<?php echo LINKS_PATH; ?>/regexp/basico/intro/" class="list-group-item">Introdução </a>
                         <a href="<?php echo LINKS_PATH; ?>/regexp/basico/preg-match" class="list-group-item">preg_match() </a>
