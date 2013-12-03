@@ -18,7 +18,7 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        $core->navtop->secao_ativa = "htmlcss";
+        $core->navtop->secao_ativa = Core::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?> 
 
