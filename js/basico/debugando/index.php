@@ -221,7 +221,20 @@ console.log(minha_variavel);
             </div><!-- row -->
         </div><!-- Matéria -->
 
-        <?php include BASE_PATH . VIEWS_PATH . "/footer.php"; ?>
+        <footer class="bs-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Javascript</h1>
+                        <?php
+                        $core->lista->setLinks($core->links, Core::SECAO_JS);
+                        $core->lista->link_ativo = "/js/basico/debugando/";
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
         
 </body>

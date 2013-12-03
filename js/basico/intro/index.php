@@ -277,7 +277,6 @@ var element = document.getElementById('myimage');
             </div><!-- row -->
         </div><!-- Matéria -->
 
-
         <footer class="bs-footer">
             <div class="container">
                 <div class="row">
@@ -285,13 +284,14 @@ var element = document.getElementById('myimage');
                         <h1>Javascript</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_JS);
-                        $core->lista->link_ativo = "Introdução";
+                        $core->lista->link_ativo = "/js/basico/intro/";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
                 </div>
             </div>
         </footer>
+        
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
         <script type="text/javascript">
