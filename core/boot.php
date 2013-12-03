@@ -148,12 +148,12 @@ $core->links[Core::SECAO_MYSQL] = array(
 
 $core->links[Core::SECAO_ER] = array(
     LINKS_PATH . "/regexp/basico/intro/" => "Introdução",
-    LINKS_PATH . "/regexp/basico/preg-match" => "preg_match()",
-    LINKS_PATH . "/regexp/basico/string-match" => "string.match()",
-    LINKS_PATH . "/regexp/basico/pattern-test" => "pattern.test() ",
-    LINKS_PATH . "/regexp/basico/pattern-exec" => "pattern.exec() ",
-    LINKS_PATH . "/regexp/basico/new-regexp" => "new RegExp() ",
-    LINKS_PATH . "/regexp/basico/ponto" => "ponto",
-    LINKS_PATH . "/regexp/basico/varios-resultados-preg-match-all" => "Vários resultados - preg_match_all()",
-    LINKS_PATH . "/regexp/basico/varios-resultados-match-test-exec" => "Vários resultados - match(), test() e exec()",
+    LINKS_PATH . "/regexp/basico/preg-match/" => "preg_match()",
+    LINKS_PATH . "/regexp/basico/string-match/" => "string.match()",
+    LINKS_PATH . "/regexp/basico/pattern-test/" => "pattern.test() ",
+    LINKS_PATH . "/regexp/basico/pattern-exec/" => "pattern.exec() ",
+    LINKS_PATH . "/regexp/basico/new-regexp/" => "new RegExp() ",
+    LINKS_PATH . "/regexp/basico/ponto/" => "ponto",
+    LINKS_PATH . "/regexp/basico/varios-resultados-preg-match-all/" => "Vários resultados - preg_match_all()",
+    LINKS_PATH . "/regexp/basico/varios-resultados-match-test-exec/" => "Vários resultados - match(), test() e exec()",
 );
