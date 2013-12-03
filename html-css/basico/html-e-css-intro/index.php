@@ -28,14 +28,14 @@ require "../../../core/boot.php";
             <div class="container">
                 <h1>Primeiro contato com HTML e CSS</h1>
                 <p>Nesta matéria veremos as tags básicas do HTML uma ultra mega rápida introdução ao CSS e também 
-                   como unir o CSS ao arquivo HTML.</p>
+                    como unir o CSS ao arquivo HTML.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                   Flávio Micheletti, atualizado em <span class="label label-info">11/02/2013</span>, escrito em <span class="label label-success">23/01/2013. </span>
+                Flávio Micheletti, atualizado em <span class="label label-info">11/02/2013</span>, escrito em <span class="label label-success">23/01/2013. </span>
             </div>
         </div>
 
@@ -143,7 +143,7 @@ require "../../../core/boot.php";
                                 são os itens. <code>ul</code> siginifca <strog>unordened list</strong> (lista não ordenada), há também a lista <code>ol</code> (ordened list) que é
                                 exatamente o inverso.</p>
 
-                            <pre><code>&lt;ol&gt;
+                                <pre><code>&lt;ol&gt;
     &lt;li&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
@@ -282,7 +282,7 @@ require "../../../core/boot.php";
                             </div>                          
 
                             <p>Um formulário na web normalmente é chato de se preencher, só que ele é a alma dos aplicativos web, pois é através de seus
-                            campos que o usuário faz a inserção dos dados e, dessa forma, interaje com o sistema.</p>
+                                campos que o usuário faz a inserção dos dados e, dessa forma, interaje com o sistema.</p>
 
                             <p>Um formulário pode (e deve) conter elementos que formam um par <code>nome=valor</code>, por exemplo, um campo de entrada de
                                 texto (uma text box) chama-se "pais" e o seu valor é o texto "Brasil". Quando esse formulário submeter seus dados para o
@@ -363,7 +363,7 @@ require "../../../core/boot.php";
 #FF0000
 </code></pre>
 
-                        
+
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Imagem das Cores" src="cores.png">
                             <p><a href="http://pt.wikipedia.org/wiki/Pixelx">Fonte da imagem acima</a></p>
@@ -496,7 +496,20 @@ require "../../../core/boot.php";
 
         </div><!-- Matéria -->
 
-        <?php include BASE_PATH . VIEWS_PATH . "/footer.php"; ?>
+        <footer class="bs-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>HTML & CSS</h1>
+                        <?php
+                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
+                        $core->lista->link_ativo = "/html-css/basico/html-e-css-intro/";
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
