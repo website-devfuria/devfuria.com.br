@@ -11,7 +11,7 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head = new Head();
+        
         $core->head->setTitle('LÓGICA');
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -19,9 +19,9 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        $core->navtop = new NavTop();
-        $core->navtop->secoes = $core->secoes;
-        $core->navtop->secao = Core::SECAO_LOG;
+        
+        
+        $core->navtop->secao_ativa = Core::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 

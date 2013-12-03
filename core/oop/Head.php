@@ -1,11 +1,7 @@
 <?php
 
 /**
- * Descrição do arquivo
- */
-
-/**
- * Descrição da classe
+ * Classe que acompanha a view "head.php"
  */
 class Head {
 

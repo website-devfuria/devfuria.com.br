@@ -19,7 +19,7 @@ $materia = new Materia(1);
     <body>
 
         <?php
-        $nav_top['secao'] = $materia->secao;
+        $nav_top['secao'] = $materia->secao_ativa;
         include BASE_PATH.VIEWS_COMP_PATH."nav_top.php";
         ?>
 

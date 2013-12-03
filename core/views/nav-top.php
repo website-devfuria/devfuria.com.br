@@ -11,9 +11,9 @@
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
-                <?php foreach ($core->navtop->secoes as $secao_path => $secao_label): ?>
-                    <li class="<?php echo ($secao_path == $core->navtop->secao) ? "active" : null; ?>">
-                        <a href="<?php echo ROOT_PATH . "/index.php#" . $secao_path; ?>"><?php echo $secao_label; ?></a>
+                <?php foreach ($core->secoes as $secao => $secao_label): ?>
+                    <li class="<?php echo ($secao == $core->navtop->secao_ativa) ? "active" : null; ?>">
+                        <a href="<?php echo ROOT_PATH . "/index.php#" . $secao; ?>"><?php echo $secao_label; ?></a>
                     </li>
                 <?php endforeach; ?>                        
             </ul>

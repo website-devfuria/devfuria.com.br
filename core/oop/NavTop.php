@@ -1,16 +1,11 @@
 <?php
 
 /**
- * Descrição do arquivo
- */
-
-/**
- * Descrição da classe
+ * Classe que acompanha a view "nav-top.php"
  */
 class NavTop {
     
-    public $secoes = array();
-    public $secao = "";
+    public $secao_ativa = "";       # a seção ativa
     
 }
 

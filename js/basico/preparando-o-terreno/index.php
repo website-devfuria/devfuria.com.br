@@ -11,7 +11,7 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head = new Head();
+        
         $core->head->setTitle('JS');
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -19,9 +19,9 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        $core->navtop = new NavTop();
-        $core->navtop->secoes = $core->secoes;
-        $core->navtop->secao = "js";
+        
+        
+        $core->navtop->secao_ativa = "js";
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?> 
 

@@ -102,17 +102,44 @@ define('KEYWORDS_MYSQL', "sql básico; sql fácil; sql início; sql iniciante; "
 require (BASE_PATH . "/oop/Core.php");
 require (BASE_PATH . "/oop/Head.php");
 require (BASE_PATH . "/oop/NavTop.php");
+require (BASE_PATH . "/oop/ListaSecao.php");
 
 
 /**
  * Variáveis do sistema
  */
+
 $core = new Core();
 $core->secoes = array(
     "js" => "Javascript",
     "php" => "PHP",
-    "htmlcss" => "HTML & CSS",
+    "html-css" => "HTML & CSS",
     "logica" => "Lógica de Programação",
     "regexp" => "RegExp",
     "mysql" => "MySql & SQL"
 );
+$core->links[Core::SECAO_JS] = array(
+    LINKS_PATH . "/js/basico/intro/" => "Introdução",
+    LINKS_PATH . "/js/basico/preparando-o-terreno/" => "Preparando o terreno",
+    LINKS_PATH . "/js/basico/debugando/" => "Debugando (depurando) [com vídeo]",
+    LINKS_PATH . "/js/basico/code-lampadas/" => "Code - A Lâmpada",
+    LINKS_PATH . "/js/basico/code-lampadas-refatorando/" => "Code - A Lâmpada (refatorando)"
+);
+$core->links[Core::SECAO_PHP] = array(
+    LINKS_PATH . "" => "",
+);
+$core->links[Core::SECAO_LOG] = array(
+    LINKS_PATH . "" => "",
+);
+$core->links[Core::SECAO_HTML] = array(
+    LINKS_PATH . "" => "",
+);
+$core->links[Core::SECAO_MYSQL] = array(
+    LINKS_PATH . "" => "",
+);
+$core->links[Core::SECAO_ER] = array(
+    LINKS_PATH . "" => "",
+);
+
+
+

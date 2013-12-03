@@ -11,7 +11,6 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head = new Head();
         $core->head->setTitle('JS');
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -19,9 +18,7 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        $core->navtop = new NavTop();
-        $core->navtop->secoes = $core->secoes;
-        $core->navtop->secao = "js";
+        $core->navtop->secao_ativa = "js";
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -286,13 +283,11 @@ var element = document.getElementById('myimage');
                 <div class="row">
                     <div class="col-md-6">
                         <h1>Javascript</h1>
-                        <div class="list-group">
-                            <a href="<?php echo LINKS_PATH; ?>/js/basico/intro/" class="list-group-item">1. Introdução </a>
-                            <a href="<?php echo LINKS_PATH; ?>/js/basico/preparando-o-terreno/" class="list-group-item">2. Preparando o terreno </a>
-                            <a href="<?php echo LINKS_PATH; ?>/js/basico/debugando/" class="list-group-item">3. Debugando (depurando) [com vídeo] </a>
-                            <a href="<?php echo LINKS_PATH; ?>/js/basico/code-lampadas" class="list-group-item">4. Code - A Lâmpada </a>
-                            <a href="<?php echo LINKS_PATH; ?>/js/basico/code-lampadas-refatorando" class="list-group-item">5. Code - A Lâmpada (refatorando) </a>
-                        </div>
+                        <?php
+                        $core->lista->setLinks($core->links, Core::SECAO_JS);
+                        $core->lista->link_ativo = "Introdução";
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                        ?>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ require "core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head = new Head();
+        
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
         <style type="text/css">
