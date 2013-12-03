@@ -126,20 +126,34 @@ $core->links[Core::SECAO_JS] = array(
     LINKS_PATH . "/js/basico/code-lampadas-refatorando/" => "Code - A Lâmpada (refatorando)"
 );
 $core->links[Core::SECAO_PHP] = array(
-    LINKS_PATH . "" => "",
+    LINKS_PATH . "/php/basico/um-bom-comeco/" => "Um bom começo",
+    LINKS_PATH . "/php/basico/pe-na-jaca/" => "Antes de enfiar o pé na jáca",
+    LINKS_PATH . "/php/basico/instalando-o-ambiente/" => "Instalando o ambiente no estilo NEXT, NEXT, NEXT",
+    LINKS_PATH . "/php/basico/debugando/" => "Debugando (depurando)",
 );
 $core->links[Core::SECAO_LOG] = array(
-    LINKS_PATH . "" => "",
+    LINKS_PATH . "/logica/basico/intro/" => "Introdução",
+    LINKS_PATH . "/logica/basico/bateria01/" => "Primeira Bateria",
 );
+
 $core->links[Core::SECAO_HTML] = array(
-    LINKS_PATH . "" => "",
+    LINKS_PATH . "/html-css/basico/onde-tudo-comecou/" => "Onde tudo começou",
+    LINKS_PATH . "/html-css/basico/html-e-css-intro/" => "HTML e CSS - Introdução",
+    LINKS_PATH . "/html-css/basico/elementos-inline-block-level/" => "Elementos in-line e elementos block-level",
+    LINKS_PATH . "/html-css/basico/primeiro-html/" => "Criando nosso primeiro HTML [com vídeo]",
 );
 $core->links[Core::SECAO_MYSQL] = array(
-    LINKS_PATH . "" => "",
+    LINKS_PATH . "/mysql/basico/intro/" => "Banco de dados prá que?",
 );
+
 $core->links[Core::SECAO_ER] = array(
-    LINKS_PATH . "" => "",
+    LINKS_PATH . "/regexp/basico/intro/" => "Introdução",
+    LINKS_PATH . "/regexp/basico/preg-match" => "preg_match()",
+    LINKS_PATH . "/regexp/basico/string-match" => "string.match()",
+    LINKS_PATH . "/regexp/basico/pattern-test" => "pattern.test() ",
+    LINKS_PATH . "/regexp/basico/pattern-exec" => "pattern.exec() ",
+    LINKS_PATH . "/regexp/basico/new-regexp" => "new RegExp() ",
+    LINKS_PATH . "/regexp/basico/ponto" => "ponto",
+    LINKS_PATH . "/regexp/basico/varios-resultados-preg-match-all" => "Vários resultados - preg_match_all()",
+    LINKS_PATH . "/regexp/basico/varios-resultados-match-test-exec" => "Vários resultados - match(), test() e exec()",
 );
-
-
-

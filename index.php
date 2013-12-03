@@ -1,4 +1,5 @@
 <?php
+
 /**
  * HOME, index do site
  */
@@ -11,10 +12,9 @@ require "core/boot.php";
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+<?php
+include BASE_PATH . VIEWS_PATH . "/head.php";
+?>
         <style type="text/css">
             h1 {
                 font-weight: bolder;
@@ -25,11 +25,9 @@ require "core/boot.php";
     </head>
 
     <body>
-        <?php
-        
-        
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+<?php
+include BASE_PATH . VIEWS_PATH . "/nav-top.php";
+?>
 
         <!-- Page content of course! -->
     <main class="bs-masthead" id="content" role="main">
@@ -44,7 +42,7 @@ require "core/boot.php";
             </ul>
         </div>
     </main>
-    
+
     <footer class="container" role="contentinfo">
         <ul class="bs-masthead-links">
             <li>
@@ -61,10 +59,10 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-6">
                     <h1>Javascript</h1>
-                    <?php
-                    $core->lista->setLinks($core->links, Core::SECAO_JS);
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
+<?php
+$core->lista->setLinks($core->links, Core::SECAO_JS);
+include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+?>
                 </div>
             </div>
 
@@ -77,12 +75,10 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>PHP</h1>
-                    <div class="list-group">
-                        <a href="<?php echo LINKS_PATH; ?>/php/basico/um-bom-comeco/" class="list-group-item">Um bom começo </a>
-                        <a href="<?php echo LINKS_PATH; ?>/php/basico/pe-na-jaca/" class="list-group-item">Antes de enfiar o pé na jáca </a>
-                        <a href="<?php echo LINKS_PATH; ?>/php/basico/instalando-o-ambiente/" class="list-group-item">Instalando o ambiente no estilo NEXT, NEXT, NEXT </a>
-                        <a href="<?php echo LINKS_PATH; ?>/php/basico/debugando/" class="list-group-item">Debugando (depurando) </a>
-                    </div>
+<?php
+$core->lista->setLinks($core->links, Core::SECAO_PHP);
+include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+?>
                 </div>
             </div>
         </div>
@@ -94,12 +90,10 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>HTML & CSS</h1>
-                    <div class="list-group">
-                        <a href="<?php echo LINKS_PATH; ?>/html-css/basico/onde-tudo-comecou/" class="list-group-item">Onde tudo começou </a>
-                        <a href="<?php echo LINKS_PATH; ?>/html-css/basico/html-e-css-intro/" class="list-group-item">HTML e CSS - Introdução </a>
-                        <a href="<?php echo LINKS_PATH; ?>/html-css/basico/elementos-inline-block-level/" class="list-group-item">Elementos in-line e elementos block-level </a>
-                        <a href="<?php echo LINKS_PATH; ?>/html-css/basico/primeiro-html" class="list-group-item">Criando nosso primeiro HTML [com vídeo] </a>
-                    </div>
+<?php
+$core->lista->setLinks($core->links, Core::SECAO_HTML);
+include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+?>
                 </div>
             </div>
         </div>
@@ -111,10 +105,10 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>Lógica de Programação</h1>
-                    <div class="list-group">
-                        <a href="<?php echo LINKS_PATH; ?>/logica/basico/intro/" class="list-group-item">Introdução </a>
-                        <a href="<?php echo LINKS_PATH; ?>/logica/basico/bateria01/" class="list-group-item">Primeira Bateria</a>
-                    </div>
+<?php
+$core->lista->setLinks($core->links, Core::SECAO_LOG);
+include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+?>
                 </div>
             </div>
         </div>
@@ -125,9 +119,10 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>Mysql</h1>
-                    <div class="list-group">
-                        <a href="<?php echo LINKS_PATH; ?>/mysql/basico/intro/" class="list-group-item">Banco de dados prá que? </a>
-                    </div>
+<?php
+$core->lista->setLinks($core->links, Core::SECAO_MYSQL);
+include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+?>
                 </div>
             </div>
         </div>
@@ -138,22 +133,15 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>RegExp</h1>
-                    <div class="list-group">
-                        <a href="<?php echo LINKS_PATH; ?>/regexp/basico/intro/" class="list-group-item">Introdução </a>
-                        <a href="<?php echo LINKS_PATH; ?>/regexp/basico/preg-match" class="list-group-item">preg_match() </a>
-                        <a href="<?php echo LINKS_PATH; ?>/regexp/basico/string-match" class="list-group-item">string.match() </a>
-                        <a href="<?php echo LINKS_PATH; ?>/regexp/basico/pattern-test" class="list-group-item">pattern.test() </a>
-                        <a href="<?php echo LINKS_PATH; ?>/regexp/basico/pattern-exec" class="list-group-item">pattern.exec() </a>
-                        <a href="<?php echo LINKS_PATH; ?>/regexp/basico/new-regexp" class="list-group-item">new RegExp() </a>
-                        <a href="<?php echo LINKS_PATH; ?>/regexp/basico/ponto" class="list-group-item">ponto </a>
-                        <a href="<?php echo LINKS_PATH; ?>/regexp/basico/varios-resultados-preg-match-all" class="list-group-item">Vários resultados - preg_match_all() </a>
-                        <a href="<?php echo LINKS_PATH; ?>/regexp/basico/varios-resultados-match-test-exec" class="list-group-item">Vários resultados - match(), test() e exec() </a>
-                    </div>
+<?php
+$core->lista->setLinks($core->links, Core::SECAO_ER);
+include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+?>
                 </div>
             </div>
         </div>
 
     </div>
-    <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+<?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 </body>
 </html>
