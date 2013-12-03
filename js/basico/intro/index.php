@@ -112,7 +112,7 @@ require "../../../core/boot.php";
                             requisições diretamente do código de JS para o servidor é algo surpreendente.</p>
 
                         <p>Outra aplicação do JS que empolga bastante são as chamadas <strong>aplicalções web ricas</strong>. O termo "rico" refere-se a interface,
-                            ou seja, a interface é quem está mais rica, mais usual, mais fácil, mas agragadora. Há quem diga que elas são o futuro
+                            ou seja, a interface é quem está mais rica, mais usual, mais fácil, mas agregadora. Há quem diga que elas são o futuro
                             das aplicações web.</p>
 
                         <p>O nodejs promete levar o JS para o lado do servidor, isso já é uma realidade e será questão de tempo até encontrarmos
@@ -270,22 +270,44 @@ var element = document.getElementById('myimage');
 
                         <p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>
                     </div>
+
+                    <ul class="pager">
+                        <!--<li class="previous"><a href="#">Início</a></li>-->
+                        <li class="next"><a href="#">Newer <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+                    </ul>
+
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
 
-        <?php include BASE_PATH . VIEWS_PATH . "/footer.php"; ?>
+
+        <footer class="bs-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Javascript</h1>
+                        <div class="list-group">
+                            <a href="<?php echo LINKS_PATH; ?>/js/basico/intro/" class="list-group-item">1. Introdução </a>
+                            <a href="<?php echo LINKS_PATH; ?>/js/basico/preparando-o-terreno/" class="list-group-item">2. Preparando o terreno </a>
+                            <a href="<?php echo LINKS_PATH; ?>/js/basico/debugando/" class="list-group-item">3. Debugando (depurando) [com vídeo] </a>
+                            <a href="<?php echo LINKS_PATH; ?>/js/basico/code-lampadas" class="list-group-item">4. Code - A Lâmpada </a>
+                            <a href="<?php echo LINKS_PATH; ?>/js/basico/code-lampadas-refatorando" class="list-group-item">5. Code - A Lâmpada (refatorando) </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-        
-<script type="text/javascript">
-var element = document.getElementById('myimage');
-element.onclick = function() {
-    if (element.src.match("bulbon")) {
-        element.src="pic_bulboff.gif";
-    } else {
-        element.src="pic_bulbon.gif";
-    }
-};
-</script>
-</body>
+
+        <script type="text/javascript">
+            var element = document.getElementById('myimage');
+            element.onclick = function() {
+                if (element.src.match("bulbon")) {
+                    element.src = "pic_bulboff.gif";
+                } else {
+                    element.src = "pic_bulbon.gif";
+                }
+            };
+        </script>
+    </body>
 </html>
