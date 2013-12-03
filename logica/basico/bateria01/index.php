@@ -11,7 +11,6 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        
         $core->head->setTitle('LÓGICA');
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -19,8 +18,6 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        
-        
         $core->navtop->secao_ativa = Core::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
@@ -830,14 +827,27 @@ mostrar juros simples
                             </div>
                         </div><!--acordion -->
                     </div><!--seção -->                
-                    
-                    
-                    </div><!-- Corpo da matéria -->
-                </div><!-- row -->
-            </div><!-- Matéria -->
 
-            <?php include BASE_PATH . VIEWS_PATH . "/footer.php"; ?>
-            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+        </div><!-- Matéria -->
+
+        <footer class="bs-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Lógica de Programação</h1>
+<?php
+$core->lista->setLinks($core->links, Core::SECAO_LOG);
+$core->lista->link_ativo = "/logica/basico/bateria01/";
+include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+?>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
 </html>
