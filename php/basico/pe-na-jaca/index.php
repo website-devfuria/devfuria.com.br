@@ -368,6 +368,11 @@ elseif(  (condition3)&&(condition4)  ){
                         </ol>
 
                         <p>... e seja feliz!</p>                        
+                        <?php
+                        $core->paginacao->link_ativo = "/php/basico/pe-na-jaca/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
 
                     </div>                        
 

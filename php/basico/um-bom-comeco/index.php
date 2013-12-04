@@ -318,6 +318,11 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                                 </div>
                             </div>                        
                         </div>
+                        <?php
+                        $core->paginacao->link_ativo = "/php/basico/um-bom-comeco/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
                     </div>
 
                 </div><!-- Corpo da matéria -->

@@ -139,7 +139,7 @@ die();
                             <img class="img-rounded" alt="Debugando com var_dump()" src="debug-var_dump.png" />
                             <p>Ilustração de como é exibido os dados COM var_dump()</p>
                         </div>                        
-                        
+
                         <p>É possível passar n variáveis, basta separá-las por vírgula.</p>
                     </div>
 
@@ -234,6 +234,11 @@ echo "&lt;/pre&gt;";
 </code></pre>
 
                         <p>E aí, sentiu a diferênça?</p>
+                        <?php
+                        $core->paginacao->link_ativo = "/php/basico/debugando/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
                     </div>
 
                 </div><!-- Corpo da matéria -->

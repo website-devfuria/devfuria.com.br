@@ -459,6 +459,12 @@ systemctl restart httpd.service
                                 <a href="https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora" >https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora</a>
                             </dd>
                         </dl>
+                        <?php
+                        $core->paginacao->link_ativo = "/php/basico/instalando-o-ambiente/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
+                        
                     </div>                 
 
                 </div><!-- Corpo da matéria -->
