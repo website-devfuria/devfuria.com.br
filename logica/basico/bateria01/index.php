@@ -34,7 +34,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-warning">11/08/2013</span>, escrito em <span class="label label-warning">05/06/2012</span>.
+                Flávio Micheletti, atualizado em <span class="label label-success">11/08/2013</span>, escrito em <span class="label label-info">05/06/2012</span>.
             </div>
         </div>
 
