@@ -1,6 +1,6 @@
 <?php
 /**
- * PHP
+ * MySql
  */
 /**
  * Includes
@@ -100,7 +100,7 @@ require "../../../core/boot.php";
                             <img class="img-thumbnail" alt="Foto de Edgar Frank Codd" src="edgar-f-codd.jpg" />
                             <p>Edgar Frank Codd (1923-2013) Pai da SEQUEL</p>
                         </div>                           
-                        
+
 
                         <p>Em pouco tempo a ANSI (American National Standards Institute) assumiu os trabalhos padronizando a SQL. Mas como tudo em
                             nossa área, a padronização tem suas exceções. Existem os dialetos SQL, cada sistema de banco de dados implementou sua
@@ -114,7 +114,7 @@ require "../../../core/boot.php";
                             <img class="img-rounded" alt="Exemplos de dialetos SQL" src="sql-dialetos.png" />
                             <p>Dialetos SQL</p>
                         </div>                        
-                        
+
                         <p>Na verdade, o quadro não é tão ruim assim. Se você domina um dialeto, terá facilidade para migrar para outro. Segundo
                             os irmãos Kline autores do livro "Sql - O Guia Essencial - Manual de Referência Profissional, 3 edição":</p>
 
@@ -153,7 +153,7 @@ require "../../../core/boot.php";
                         </div>
                     </div>
 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="siglas">DB = BD = SGBDR</h1>
@@ -171,7 +171,7 @@ require "../../../core/boot.php";
 
                     </div>
 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="banco-dados">Banco de dados</h1>
@@ -188,7 +188,7 @@ require "../../../core/boot.php";
 
                     </div>
 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="tabelas">Tabelas, Registros e Colunas</h1>
@@ -248,7 +248,7 @@ Camisa Social,   15.00 -- esse é outro registro
                             <p>... nosso banco de dados.</p>
 
                             <p>A imagem abaixo ilustra nosso banco de dados:</p>
-                            
+
                             <div class="bs-example bs-example-images">
                                 <img class="img-rounded" alt="diagrama que representa um banco de dados" src="db.jpg" />
                                 <p>
@@ -270,7 +270,7 @@ Camisa Social,   15.00 -- esse é outro registro
                         </div>
                     </div>
 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="instalando">Instalando o mysqls</h1>
@@ -309,7 +309,7 @@ systemctl enable mysqld.service
                         <p>Se tudo ocorreu bem poderemos acessar o servidor mysql via console.</p>
                     </div>
 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="via-console">MsySql via console (terminal)</h1>
@@ -371,7 +371,7 @@ root       -- informamos o usuário
 
                         <p>Espero que você esteja vendo o mesmo que eu:</p>
 
-                        
+
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="MySql via console" src="mysql-console.png" />
                             <p>Logado no MySql via console</p>
@@ -387,6 +387,12 @@ root       -- informamos o usuário
 </code></pre>
 
                         <p>O sistema responde com um simpático "Bye"... eu também, tchau!</p>
+                        <?php
+                        $core->paginacao->link_ativo = "/mysql/basico/intro/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                                  
+
                     </div>
 
                 </div><!-- Corpo da matéria -->

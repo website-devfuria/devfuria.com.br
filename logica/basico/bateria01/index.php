@@ -826,6 +826,11 @@ mostrar juros simples
                                 </div>
                             </div>
                         </div><!--acordion -->
+                        <?php
+                        $core->paginacao->link_ativo = "/logica/basico/bateria01/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                                  
                     </div><!--seção -->                
 
 
@@ -838,16 +843,16 @@ mostrar juros simples
                 <div class="row">
                     <div class="col-md-6">
                         <h1>Lógica de Programação</h1>
-<?php
-$core->lista->setLinks($core->links, Core::SECAO_LOG);
-$core->lista->link_ativo = "/logica/basico/bateria01/";
-include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-?>
+                        <?php
+                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
+                        $core->lista->link_ativo = "/logica/basico/bateria01/";
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                        ?>
                     </div>
                 </div>
             </div>
         </footer>
-<?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
 </html>
