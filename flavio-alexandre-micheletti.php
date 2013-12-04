@@ -11,7 +11,6 @@ require "core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
         <style type="text/css">
@@ -22,10 +21,11 @@ require "core/boot.php";
                 margin: 60px 10px;
             }
             .jumbotron {
-                background-image: url("core/imagens/casa.jpg");
+                background-image: url("core/imagens/ale.png");
                 background-repeat: no-repeat;
                 background-position: center left;
-                color: white;
+                color: #000;
+                font-weight: 900;
             }    
             .btn-home {
                 position: fixed;
@@ -44,33 +44,33 @@ require "core/boot.php";
         <div class="jumbotron">
             <h1>Flávio Alexandre Micheletti</h1>
             <ul>
-                <li>Analista de Sistemas</li>
-                <li>Pai da Joana</li>
-                <li>Brasileiro</li>
-                <li>Casado</li>
-                <li>36</li>
+                <li>Analista de Sistemas desde 2007.</li>
+                <li>Formado em Segurança da Informação pela Fatec SCS (2011)</li>
+                <li>Ultimamente, dedicando meu tempo na programação front-end.</li>
             </ul>
         </div>
 
         <div class="container">
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <tr>
-                        <th>GitHub</th>
-                        <td><a href="https://github.com/flaviomicheletti/">https://github.com/flaviomicheletti/</a></td>
-                    </tr>
-                    <tr>
-                        <th>Publicações (TCC)</th>
-                        <td><a class=""><small>ANÁLISE DAS PRINCIPAIS VULNERABILIDADES DE APLICAÇÕES WEB
-                                TENDO COMO BASE A ARQUITETURA LAMP E AS
-                                TOP 10 VULNERABILIDADES DA OWASP</small>
-                            </a></td>
-                    </tr>
-                </table>
+            <div class="col-md-offset-2 col-md-10  hidden-xs">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>GitHub</th>
+                            <td><a href="https://github.com/flaviomicheletti/">https://github.com/flaviomicheletti/</a></td>
+                        </tr>
+                        <tr>
+                            <th>Publicações (TCC)</th>
+                            <td>
+                                <a class=""><small>ANÁLISE DAS PRINCIPAIS VULNERABILIDADES DE APLICAÇÕES WEB
+                                        TENDO COMO BASE A ARQUITETURA LAMP E AS
+                                        TOP 10 VULNERABILIDADES DA OWASP</small>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-
         </div>
-
 
         <div class="col-md-2  hidden-xs">
             <div class="bs-sidebar hidden-print" role="complementary">
