@@ -57,6 +57,7 @@ class Core {
         $this->head = new Head();
         $this->navtop = new NavTop();
         $this->lista = new ListaSecao();
+        $this->paginacao = new Paginacao();
     }
 
 }

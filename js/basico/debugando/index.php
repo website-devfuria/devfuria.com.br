@@ -18,7 +18,7 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        $core->navtop->secao_ativa =  Core::SECAO_JS;
+        $core->navtop->secao_ativa = Core::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?> 
 
@@ -66,10 +66,10 @@ require "../../../core/boot.php";
                 <!-- Corpo da matéria -->
                 <div class="col-md-9" role="main">
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h1 id="intro">O que é debugar ?</h1>
-                            </div>                         
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="intro">O que é debugar ?</h1>
+                        </div>                         
 
                         <blockquote>
                             <p>Precisamos debugar o programa para sabermos onde [e como] está ocorrendo o erro.
@@ -127,95 +127,98 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
 
                         <p>Não vamos falar sobre testes agora, ok? Mas apenas formas simples de depuração.</p>
 
-                </div>
+                    </div>
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h1 id="formas">Formas rudimentares</h1>
-                            </div>  
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="formas">Formas rudimentares</h1>
+                        </div>  
 
-                            <p>A forma mais rudimentar de debugar em JS é exibir um alerta. Com o tempo você vai se encher com as popup e logo vai 
-                                procurar uma alternativa.</p>
+                        <p>A forma mais rudimentar de debugar em JS é exibir um alerta. Com o tempo você vai se encher com as popup e logo vai 
+                            procurar uma alternativa.</p>
 
-                            <pre><code>var minha_variavel = "Hello, word";
+                        <pre><code>var minha_variavel = "Hello, word";
 alert(minha_variavel);
 </code></pre>
 
-                            <div class="imagem">
-                                <img src="debug-alert.png" alt="Janela popup!" />
-                                <p><a href="https://courses.cs.washington.edu/courses/cse190m/11su/labs/lab5-pimpmytext.shtml">Fonte da imagem acima</a></p>
-                            </div>
+                        <div class="imagem">
+                            <img src="debug-alert.png" alt="Janela popup!" />
+                            <p><a href="https://courses.cs.washington.edu/courses/cse190m/11su/labs/lab5-pimpmytext.shtml">Fonte da imagem acima</a></p>
+                        </div>
 
-                            <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) através do método write() do
-                                objeto "document".</p>
+                        <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) através do método write() do
+                            objeto "document".</p>
 
-                            <pre><code>var minha_variavel = "Hello word";
+                        <pre><code>var minha_variavel = "Hello word";
 document.write(minha_variavel);
 </code></pre>
 
-                            <div class="bs-example bs-example-images">
-                                <img class="img-rounded" alt="Janela popup!"  src="debug-write.png">
-                                <p><a href="http://blueashes.com/2011/web-development/install-nodejs-on-windows/">Fonte da imagem acima</a></p>
-                            </div>  
-
+                        <div class="bs-example bs-example-images">
+                            <img class="img-rounded" alt="Janela popup!"  src="debug-write.png">
+                            <p><a href="http://blueashes.com/2011/web-development/install-nodejs-on-windows/">Fonte da imagem acima</a></p>
                         </div>  
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h1 id="depuradores">Depuradores (subindo um degrau)</h1>
-                            </div>  
+                    </div>  
 
-                            <p>Quem desenvolve em JS e utiliza o FireFox para ver o resultado pode contar com o FireBug (já comentei um monte de vez
-                                sobre esse plugin em matérias anteriores). Se você ainda não tem ele instalado, faça isso imediatamente.</p>
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="depuradores">Depuradores (subindo um degrau)</h1>
+                        </div>  
 
-                            <p>O FireBug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
-                                <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="FireBug">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
+                        <p>Quem desenvolve em JS e utiliza o FireFox para ver o resultado pode contar com o FireBug (já comentei um monte de vez
+                            sobre esse plugin em matérias anteriores). Se você ainda não tem ele instalado, faça isso imediatamente.</p>
 
-                            <pre><code>var minha_variavel = "Hello word!";
+                        <p>O FireBug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
+                            <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="FireBug">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
+
+                        <pre><code>var minha_variavel = "Hello word!";
 console.log(minha_variavel);
 </code></pre>
 
-                            <p>A imagem abaixo ilustra o resultado do console do firebug, repare que o desenvolvedor está usando o plugin do firebug
-                                na IDE Eclipse.</p>
+                        <p>A imagem abaixo ilustra o resultado do console do firebug, repare que o desenvolvedor está usando o plugin do firebug
+                            na IDE Eclipse.</p>
 
-                            <div class="bs-example bs-example-images">
-                                <img class="img-rounded" alt="Janela popup!"  src="debug-firebug.png">
-                                <p><a href=http://1.bp.blogspot.com/-yxbVFlzsyK8/UBUm7iInQAI/AAAAAAAAFpQ/l4ZSI-Mv4Ps/s1600/console.png">Fonte da imagem acima</a></p>
-                            </div>  
-
-                            <p>Ele parece-se com o do navegador (document.write) mas não se engane, a janela do console tem muitas outras 
-                                funcionalidades e atrativos.</p>
-
-                            <p><span style="text-decoration:line-through;">Em breve, voltarei para apresentar brevemente o FireBug.</span></p>
-
-                            <p>Já voltei. </p>
-
-                            <p>Cada vídeo que eu gravo é uma aventura! No primeiro, havia a voz da minha pequena grande Joana, neste eu
-                                estava com gripe e minha voz (que já é baixa) ficou super abafada. Tentei amplificar mais consegui apenas alguns chiados.</p>
-
-                            <p>De qualquer forma, vale a pena assistir ao video. É uma breve demonstração do Firebug e das funcionalidades comentadas.</p>
-
-                            <div class="bs-example bs-example-images">
-                                <iframe width="560" height="315" src="http://www.youtube.com/embed/IP8xDTGkfjc" frameborder="0" allowfullscreen></iframe>
-                            </div>  
+                        <div class="bs-example bs-example-images">
+                            <img class="img-rounded" alt="Janela popup!"  src="debug-firebug.png">
+                            <p><a href=http://1.bp.blogspot.com/-yxbVFlzsyK8/UBUm7iInQAI/AAAAAAAAFpQ/l4ZSI-Mv4Ps/s1600/console.png">Fonte da imagem acima</a></p>
                         </div>  
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h1 id="problemas">Como saber se o código não está com problemas ?</h1>
-                            </div>    
+                        <p>Ele parece-se com o do navegador (document.write) mas não se engane, a janela do console tem muitas outras 
+                            funcionalidades e atrativos.</p>
 
-                            <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a linguágem é interpretada, estou me referindo ao código que demosntra erros. <em>E como demostrar os erros?</em>.</p>
+                        <p><span style="text-decoration:line-through;">Em breve, voltarei para apresentar brevemente o FireBug.</span></p>
 
-                            <p>Quando executamos o arquivo (seja .html ou .php ou qualquer outra linguagem que vocẽ use) os erros podem não aparecerem, em outras palavra, alguns erros são "timidos". Para encorajá-los a sair da "toca" é preciso utilizar o console.log() e, obviamente, manter o firebug aberto.</p>
+                        <p>Já voltei. </p>
 
-                            <p>O teste mais básico que podemos fazer em um script JS é abrir o HTML, ligar o Firebug (acione a tecla F12), escolha a aba "console" e
-                                recarrega a página con a tecla F5 ( à vezes precisamos executar um CTRl + F5, isso força a atualização).</p>
+                        <p>Cada vídeo que eu gravo é uma aventura! No primeiro, havia a voz da minha pequena grande Joana, neste eu
+                            estava com gripe e minha voz (que já é baixa) ficou super abafada. Tentei amplificar mais consegui apenas alguns chiados.</p>
 
-                            <p>Se não aparecer nenhuma mensagem de erro, ótimo! Seu script está correto (pelo menos do ponto de vista da sintaxe).</p>                       
+                        <p>De qualquer forma, vale a pena assistir ao video. É uma breve demonstração do Firebug e das funcionalidades comentadas.</p>
+
+                        <div class="bs-example bs-example-images">
+                            <iframe width="560" height="315" src="http://www.youtube.com/embed/IP8xDTGkfjc" frameborder="0" allowfullscreen></iframe>
                         </div>  
+                    </div>  
 
- 
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="problemas">Como saber se o código não está com problemas ?</h1>
+                        </div>    
+
+                        <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a linguágem é interpretada, estou me referindo ao código que demosntra erros. <em>E como demostrar os erros?</em>.</p>
+
+                        <p>Quando executamos o arquivo (seja .html ou .php ou qualquer outra linguagem que vocẽ use) os erros podem não aparecerem, em outras palavra, alguns erros são "timidos". Para encorajá-los a sair da "toca" é preciso utilizar o console.log() e, obviamente, manter o firebug aberto.</p>
+
+                        <p>O teste mais básico que podemos fazer em um script JS é abrir o HTML, ligar o Firebug (acione a tecla F12), escolha a aba "console" e
+                            recarrega a página con a tecla F5 ( à vezes precisamos executar um CTRl + F5, isso força a atualização).</p>
+
+                        <p>Se não aparecer nenhuma mensagem de erro, ótimo! Seu script está correto (pelo menos do ponto de vista da sintaxe).</p>                       
+                        <?php
+                        $core->paginacao->link_ativo = "js/basico/debugando/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                            
+                    </div>  
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
@@ -236,6 +239,6 @@ console.log(minha_variavel);
             </div>
         </footer>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-        
-</body>
+
+    </body>
 </html>

@@ -18,7 +18,7 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        $core->navtop->secao_ativa =  Core::SECAO_JS;
+        $core->navtop->secao_ativa = Core::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?> 
 
@@ -28,7 +28,7 @@ require "../../../core/boot.php";
             <div class="container">
                 <h1>Code - A lâmpada</h1>
                 <p>Revendo o código do "primeiro script" aprenderemos um pouco de tudo:
-                getElementById, funções, eventos, DOM, firebug, document e window.
+                    getElementById, funções, eventos, DOM, firebug, document e window.
                 </p>
             </div>
         </div>
@@ -87,7 +87,7 @@ require "../../../core/boot.php";
                             <li>
                                 <a href="#conclusao">Conclusão</a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -249,7 +249,7 @@ element.onclick = function() {
                             </div>
                         </div>                         
                     </div>                    
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="by-id">getElementById</h1>
@@ -319,7 +319,7 @@ null.onclick = ...
 
                         <p>Ao clicarmos na imagem... disparamos o evento.</p>
                     </div> 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="function">function()</h1>
@@ -378,7 +378,7 @@ mostrar_alerta();
                         <pre><code>var minha_funcao = function() { };</code></pre>
 
                     </div> 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="src">src=""</h1>
@@ -439,6 +439,12 @@ se não
                             para focar no aprendizado da linguagem, esse é o objetivo.</p>
 
                         <p>Até lá.</p>  
+
+                        <?php
+                        $core->paginacao->link_ativo = "/js/basico/code-lampadas/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>
                     </div>                      
 
                 </div><!-- Corpo da matéria -->
@@ -460,6 +466,6 @@ se não
             </div>
         </footer>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-        
-</body>
+
+    </body>
 </html>

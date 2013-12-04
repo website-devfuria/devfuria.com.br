@@ -18,7 +18,7 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        $core->navtop->secao_ativa =  Core::SECAO_JS;
+        $core->navtop->secao_ativa = Core::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?> 
 
@@ -28,7 +28,7 @@ require "../../../core/boot.php";
             <div class="container">
                 <h1>Code - A lâmpada (refatorando)</h1>
                 <p>Vamos refatorar o código da matéria anterior. Introduziremos conceitos intuitivo de refatoração e
-aprenderemos um pouco sobre: orientação a objeto, propriedades/métodos e  como organizar seu código.</p>
+                    aprenderemos um pouco sobre: orientação a objeto, propriedades/métodos e  como organizar seu código.</p>
             </div>
         </div>
 
@@ -160,7 +160,7 @@ element.onclick = function() {
 
                         <p>A refatoração é irmã siamesa do TDD. Uma não vive sem a outra.</p>
                     </div>  
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="oop">OOP</h1>
@@ -241,7 +241,7 @@ var objeto = {
                             <li>utilzam os dois pontos como separador "nome: valor"</li>
                         </ul>
                     </div>                        
-                        
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="alterando">Finalmente... alterando o ćodigo!</h1>
@@ -413,7 +413,7 @@ senão
     };
 </code></pre>
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="quase">Código (quase) final</h1>
@@ -522,6 +522,12 @@ var lampada = {
 
                         <p>Agora chega de lâmpadas, na próxima matéria mudarei o assunto, até lá.</p>                      
 
+                        <?php
+                        $core->paginacao->link_ativo = "/js/basico/code-lampadas-refatorando/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
+
                     </div>
 
                 </div><!-- Corpo da matéria -->
@@ -543,6 +549,6 @@ var lampada = {
             </div>
         </footer>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-        
-</body>
+
+    </body>
 </html>

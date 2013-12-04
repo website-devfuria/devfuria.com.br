@@ -103,6 +103,7 @@ require (BASE_PATH . "/oop/Core.php");
 require (BASE_PATH . "/oop/Head.php");
 require (BASE_PATH . "/oop/NavTop.php");
 require (BASE_PATH . "/oop/ListaSecao.php");
+require (BASE_PATH . "/oop/Paginacao.php");
 
 
 /**
@@ -135,7 +136,6 @@ $core->links[Core::SECAO_LOG] = array(
     LINKS_PATH . "/logica/basico/intro/" => "Introdução",
     LINKS_PATH . "/logica/basico/bateria01/" => "Primeira Bateria",
 );
-
 $core->links[Core::SECAO_HTML] = array(
     LINKS_PATH . "/html-css/basico/onde-tudo-comecou/" => "Onde tudo começou",
     LINKS_PATH . "/html-css/basico/html-e-css-intro/" => "HTML e CSS - Introdução",
@@ -145,7 +145,6 @@ $core->links[Core::SECAO_HTML] = array(
 $core->links[Core::SECAO_MYSQL] = array(
     LINKS_PATH . "/mysql/basico/intro/" => "Banco de dados prá que?",
 );
-
 $core->links[Core::SECAO_ER] = array(
     LINKS_PATH . "/regexp/basico/intro/" => "Introdução",
     LINKS_PATH . "/regexp/basico/preg-match/" => "preg_match()",

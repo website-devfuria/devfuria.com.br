@@ -21,7 +21,7 @@ require "../../../core/boot.php";
         <?php
         
         
-        $core->navtop->secao_ativa = "js";
+        $core->navtop->secao_ativa = Core::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?> 
 
@@ -253,6 +253,12 @@ console.log(qualquer);
                         </blockquote>
 
                         <p><em>Na próxima matéria veremos como debugar (depurar) o JS.</em></p>
+                        
+                        <?php
+                        $core->paginacao->link_ativo = "/js/basico/preparando-o-terreno/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                      
                     </div>  
 
                 </div><!-- Corpo da matéria -->

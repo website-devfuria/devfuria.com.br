@@ -266,12 +266,13 @@ var element = document.getElementById('myimage');
                             maestria".</p>
 
                         <p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>
+                        
+                        <?php
+                        $core->paginacao->link_ativo = "/js/basico/intro";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                          
                     </div>
-
-                    <ul class="pager">
-                        <!--<li class="previous"><a href="#">Início</a></li>-->
-                        <li class="next"><a href="#">Newer <span class="glyphicon glyphicon-arrow-right"></span></a></li>
-                    </ul>
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
