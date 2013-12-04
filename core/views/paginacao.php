@@ -17,6 +17,7 @@
     <?php if ($core->paginacao->anterior['href']): ?>
         <li class="previous">
             <a href="<?php echo $core->paginacao->anterior['href']; ?>">
+                <span class="glyphicon glyphicon-arrow-left"></span>
                 <?php echo $core->paginacao->anterior['titulo']; ?>
             </a>
         </li>
