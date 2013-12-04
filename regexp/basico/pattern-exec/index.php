@@ -224,6 +224,12 @@ if (resultado) {
 
                         <p>Lembre-se que se a expressão estiver sintaticamente errada ela interromperá a excução do script, logo, o uso dos blocos
                             de tratamento de erro (try cath) se faz necessário.</p>
+                        <?php
+                        $core->paginacao->link_ativo = "/regexp/basico/pattern-exec/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
+                        
                     </div>
 
                 </div><!-- Corpo da matéria -->

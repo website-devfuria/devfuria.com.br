@@ -271,7 +271,14 @@ match()
                                 </div>
                             </div>
                         </div>
+                        
+                        <?php
+                        $core->paginacao->link_ativo = "/regexp/basico/intro/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
                     </div>
+                    
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->

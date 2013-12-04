@@ -133,8 +133,11 @@ require "../../../core/boot.php";
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#6">Livro: Expressões Regulares 3 edição, pag 42#6</a>
                             </p>                            
                         </div> 
-
-
+                        <?php
+                        $core->paginacao->link_ativo = "/regexp/basico/ponto/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
                     </div>
 
                 </div><!-- Corpo da matéria -->

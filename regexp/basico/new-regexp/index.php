@@ -114,6 +114,11 @@ console.log(pattern, resultado);
                                 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions?redirectlocale=en-US&redirectslug=JavaScript%2FGuide%2FRegular_Expressions">Doc. Oficial</a>
                             </dd>
                         </dl>
+                        <?php
+                        $core->paginacao->link_ativo = "/regexp/basico/new-regexp/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
                     </div>
 
                 </div><!-- Corpo da matéria -->

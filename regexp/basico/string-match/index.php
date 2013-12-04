@@ -158,11 +158,11 @@ console.log(resultado);
                         </div>
 
                         <p>A execução do código será interrompida, o Firebug mostra a seguinte mensagem:</p>
-                        
+
                         <div class="bs-example">
                             <img class="img-thumbnail" alt="match-ero" src="match-erro.png" />
                         </div>                        
-                        
+
                     </div> 
 
                     <div class="bs-docs-section">
@@ -243,29 +243,34 @@ if ($resultado === 1) {
 
                         </div>    
                     </div>
+                    <?php
+                    $core->paginacao->link_ativo = "/regexp/basico/string-match/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
 
-                    </div>
+                </div>
 
-                </div><!-- Corpo da matéria -->
-            </div><!-- row -->
+            </div><!-- Corpo da matéria -->
+        </div><!-- row -->
 
-        </div><!-- Matéria -->
+    </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>RegExp</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_ER);
-                        $core->lista->link_ativo = "/regexp/basico/string-match/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
+    <footer class="bs-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>RegExp</h1>
+                    <?php
+                    $core->lista->setLinks($core->links, Core::SECAO_ER);
+                    $core->lista->link_ativo = "/regexp/basico/string-match/";
+                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                    ?>
                 </div>
             </div>
-        </footer>
-        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+        </div>
+    </footer>
+    <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
-    </body>
+</body>
 </html>

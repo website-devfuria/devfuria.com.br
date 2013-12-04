@@ -152,11 +152,11 @@ for(i = 0; i < resultado.length; i++){
                             <h1 id="exec">exec()</h1>
                         </div>
 
-<p>Repare apenas que a opção global "g" teve que ser utilizada, sem ela o navegador (FireFox 19) entra em um loop infinito.</p>
+                        <p>Repare apenas que a opção global "g" teve que ser utilizada, sem ela o navegador (FireFox 19) entra em um loop infinito.</p>
 
-<div class="code">
-<h6>JS</h6>
-<pre>
+                        <div class="code">
+                            <h6>JS</h6>
+                            <pre>
 var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/g,
     resultado;
@@ -165,8 +165,8 @@ var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.
 while(resultado = pattern.exec(string)){
     console.log("casou", resultado);
 }
-</pre>
-</div>
+                            </pre>
+                        </div>
                     </div>
 
 
@@ -214,6 +214,11 @@ if (resultado) {
 
                         <p>Acesse o link <a href="https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806" title="Gist">https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806</a>
                             e clique no botão "Download Gist", descompacte o arquivo e boa diversão.</p>
+                        <?php
+                        $core->paginacao->link_ativo = "/regexp/basico/varios-resultados-match-test-exec/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
 
                     </div>
 
