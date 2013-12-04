@@ -488,6 +488,11 @@ require "../../../core/boot.php";
                                 unidades de medidas, cores, CSS inline, CSS embeded, CSS linked. Vimos bastante coisas nesta matéria, vamos agora
                                 entender a diferênca entre os elementos <strong>in-line</strong> e <strong>level-block</strong>... na próxima matéria é lógico.</p>
                         </div>
+                        <?php
+                        $core->paginacao->link_ativo = "/html-css/basico/html-e-css-intro/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                          
 
                     </div>
 

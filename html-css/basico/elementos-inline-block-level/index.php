@@ -216,10 +216,16 @@ require "../../../core/boot.php";
     &lt;/body&gt;
 &lt;/html&gt;
                             </pre>
-                        </div>
+                            <p>Essa matéria é curtinha, mas não se engane, seguir em frente sem entender (de verdade) é perca de tempo,
+                                aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.</p>
 
-                        <p>Essa matéria é curtinha, mas não se engane, seguir em frente sem entender (de verdade) é perca de tempo,
-                            aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.</p>
+                            <?php
+                            $core->paginacao->link_ativo = "/html-css/basico/elementos-inline-block-level/";
+                            $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                            include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                            ?>                          
+
+                        </div>
 
                     </div><!-- Corpo da matéria -->
                 </div><!-- row -->

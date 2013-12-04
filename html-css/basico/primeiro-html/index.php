@@ -34,7 +34,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                   Flávio Micheletti, atualizado em <span class="label label-info">12/04/2013</span>, escrito em <span class="label label-success">12/04/2013. </span>
+                Flávio Micheletti, atualizado em <span class="label label-info">12/04/2013</span>, escrito em <span class="label label-success">12/04/2013. </span>
             </div>
         </div>
 
@@ -226,6 +226,11 @@ etc...
                             <iframe width="560" height="315" src="http://www.youtube.com/embed/IMswx5wcqA0" frameborder="0" allowfullscreen></iframe>
                             <p>Obs: A voz doce ao fundo é minha querida Joana.</p>
                         </div>
+                        <?php
+                        $core->paginacao->link_ativo = "/html-css/basico/primeiro-html/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                          
                     </div>
 
                 </div><!-- Corpo da matéria -->

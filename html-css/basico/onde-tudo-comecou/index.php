@@ -34,7 +34,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                   Flávio Micheletti, atualizado em <span class="label label-info">11/02/2013</span>, escrito em <span class="label label-success">23/01/2013. </span>
+                Flávio Micheletti, atualizado em <span class="label label-info">11/02/2013</span>, escrito em <span class="label label-success">23/01/2013. </span>
             </div>
         </div>
 
@@ -265,17 +265,17 @@ p {
                             <img class="img-rounded" alt="Seletor CSS" src="css-syntax02.gif">
                             <p><a href="http://learnwebcode.com/what-is-css/">Fonte da imagem acima</a></p>
                         </div>
-                        
+
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Seletor CSS" src="css-syntax03.png">
                             <p><a href="http://en.support.wordpress.com/custom-design/css-basics/">Fonte da imagem acima</a></p>
                         </div>
-                        
+
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Seletor CSS" src="css-syntax04.png">
                             <p><a href="http://cscie12.dce.harvard.edu/lecture_notes/2006-07/20070220/handout.html">Fonte da imagem acima</a></p>
                         </div>
-                        
+
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h2 id="css-poder">O poder da CSS</h2>
@@ -316,6 +316,11 @@ p {
 
                         <p>Disponível em:
                             <a href="https://addons.mozilla.org/pt-br/firefox/addon/web-developer/" title="Web Developer">https://addons.mozilla.org/pt-br/firefox/addon/web-developer/</a></p>
+                        <?php
+                        $core->paginacao->link_ativo = "/html-css/basico/onde-tudo-comecou/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                          
                     </div>
 
                 </div><!-- Corpo da matéria -->
