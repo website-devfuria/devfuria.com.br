@@ -273,7 +273,7 @@ Camisa Social,   15.00 -- esse é outro registro
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="instalando">Instalando o mysqls</h1>
+                            <h1 id="instalando">Instalando o Mysql</h1>
                         </div>
 
                         <p>O software, normalmente, se divide em duas partes: servidor e cliente.</p>
