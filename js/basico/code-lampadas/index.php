@@ -196,7 +196,7 @@ HD        = /var/www/html/[seus diretórios]</code></pre>
                             <p>OPs, você não conhece o Firebug? Pare tudo e leia a matéria anterior a esta: 
                                 <a href="http://www.devfuria.com.br/js/basico/debugando/" title="Matéria: Debugando o JS">Debugando</a>. Vai lá que eu te espero.</p>
 
-                            <p>Agora vamos aproveitar e estabelecer a comunicação: no arquivo "codigo.js" insira a seguinte linha</p>
+                            <p>Agora vamos aproveitar e estabelecer a comunicação: no arquivo <strong>"codigo.js"</strong> insira a seguinte linha</p>
 
                             <pre><code>console.log("comunicação estabelecida");</code></pre>
 
@@ -218,7 +218,7 @@ element.onclick = function() {
                             </div>
 
                             <p>Desse ponto em diante eu explicarei partes do ćodigo, caso fique na dúvida, tente descobrir o valor das variáveis 
-                                através do "console.log()"</p>
+                                através do <code>console.log()</code></p>
 
                             <p>Experimente (teste) tudo:</p>
 
@@ -253,20 +253,20 @@ element.onclick = function() {
                             <h1 id="by-id">getElementById</h1>
                         </div> 
 
-                        <p>Uma coisa que fazemos com muita frequência em JS é referenciar (ou talvez a palavra mais adequada seja <em>buscar</em>) 
+                        <p>Uma coisa que fazemos com muita frequência em JS é referenciar (ou talvez a palavra mais adequada seja <strong>buscar</strong>) 
                             elementos HTML. Estamos buscando um elemento na árvore DOM (Document Object Model), mas isso comentaremos em outro momento.</p>
 
-                        <p>Mas é exatamente isso o que estamos fazendo com o a função <em>getElementById()</em>.</p>
+                        <p>Mas é exatamente isso o que estamos fazendo com o a função <code>getElementById()</code>.</p>
 
                         <p>Ela buscará um elemento HTML através da propriedade "id" desse elemento, ou seja, é necessário ter o elemento HTML para
                             que a função funcione corretamente.</p>
 
                         <p>Se a função encontrar o elemento procurado, ela retornará esse elemento. Então atribuimos o resultado a uma variável 
                             para podermos manipular essa variável. Isso tudo acontece na linha 01 do código (veja o codepen no início da matéria),
-                            atribuímos o resultado de função na variável <em>elemento</em> (poderia ser qualquer outro nome, obviamente).</p>
+                            atribuímos o resultado de função na variável <strong>"elemento"</strong> (poderia ser qualquer outro nome, obviamente).</p>
 
-                        <p>Caso o elemnto HTML não exista, a função não dispara erro algum, ela é silenciosa. Ela apenas retornará "null", esse 
-                            será o valor que atribuiremos a variável "elemento". Então, na linha 02, quando usamos o método "onclick" o JS dispara 
+                        <p>Caso o elemnto HTML não exista, a função não dispara erro algum, ela é silenciosa. Ela apenas retornará <code>null</code>, esse 
+                            será o valor que atribuiremos a variável <strong>"elemento"</strong>. Então, na linha 02, quando usamos o método "onclick" o JS dispara 
                             o erro: </p>
 
                         <pre><code>TypeError: element is null</code></pre>
@@ -290,17 +290,17 @@ null.onclick = ...
                             <h1 id="document">document</h1>
                         </div> 
 
-                        <p>E esse <em>document</em> antes da função, o que siginifica?</p>
+                        <p>E esse <code>document</code> antes da função, o que siginifica?</p>
 
-                        <p>Esse objeto faz parte do DOM, ele representa o documento ativo, antes dele (um nível acima) temos o objeto <em>window</em> e o
+                        <p>Esse objeto faz parte do DOM, ele representa o documento ativo, antes dele (um nível acima) temos o objeto <code>window</code> e o
                             correto era escrever assim:</p>
 
                         <pre><code>window.document.getElementById();</code></pre>
 
-                        <p>...mas isso é verboso demais. O objeto "window" pôde ser suprimido, mas ele ainda existe nos navegadores (muito 
+                        <p>...mas isso é verboso demais. O objeto <code>window</code> pôde ser suprimido, mas ele ainda existe nos navegadores (muito 
                             provavelmente para garantir a retocompatibilidade).</p>
 
-                        <p>Para simplificar as coisas, vamos encarar o document como um objeto importante e que contém funções importantes como a 
+                        <p>Para simplificar as coisas, vamos encarar o <code>document</code> como um objeto importante e que contém funções importantes como a 
                             que acabamos de aprender.</p>
                     </div> 
 
@@ -309,9 +309,9 @@ null.onclick = ...
                             <h1 id="onclick">onclick=""</h1>
                         </div> 
 
-                        <p>Já ouviu falar em eventos? Isso mesmo "onclick" nada mais é do que o evento click.</p>
+                        <p>Já ouviu falar em eventos? Isso mesmo <code>onclick</code> nada mais é do que o evento click.</p>
 
-                        <p>Mas de quem é esse evento? Os eventos são anexados aos elementos, no nosso exemplo anexamos o evento a tag "img"</p>
+                        <p>Mas de quem é esse evento? Os eventos são anexados aos elementos, no nosso exemplo anexamos o evento a tag <code>img</code></p>
 
                         <pre><code>element.onclick = ...aqui entra uma função!!!</code></pre>
 
@@ -382,13 +382,13 @@ mostrar_alerta();
                             <h1 id="src">src=""</h1>
                         </div> 
 
-                        <p>Esse "scr" nada mais é do que uma propriedade HTML, isso mesmo, HTML!</p>
+                        <p>Esse <code>scr</code> nada mais é do que uma propriedade HTML, isso mesmo, HTML!</p>
 
                         <p>E o que ela esta fazendo no meio do meu código JS?</p>
 
-                        <p>Calma, ela é faz parte do objeto que buscamos com a função getElemntById().</p>
+                        <p>Calma, ela é faz parte do objeto que buscamos com a função getElementById().</p>
 
-                        <p>SCR é a abreviação de source e siginifica que o conteúdo da tag "img" é definido por essa tag, veja o trecho de HTML:</p>
+                        <p>SCR é a abreviação de source e siginifica que o conteúdo da tag <code>img</code> é definido por essa tag, veja o trecho de HTML:</p>
 
                         <pre><code>&lt;img src="local-da-imagem-no-seu-hd"&gt;</code></pre>
 
