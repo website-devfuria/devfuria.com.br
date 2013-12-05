@@ -1,9 +1,7 @@
 <?php
-
 /**
  * HOME, index do site
  */
-
 /**
  * Includes
  */
@@ -12,9 +10,9 @@ require "core/boot.php";
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-<?php
-include BASE_PATH . VIEWS_PATH . "/head.php";
-?>
+        <?php
+        include BASE_PATH . VIEWS_PATH . "/head.php";
+        ?>
         <style type="text/css">
             h1 {
                 font-weight: bolder;
@@ -25,9 +23,9 @@ include BASE_PATH . VIEWS_PATH . "/head.php";
     </head>
 
     <body>
-<?php
-include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-?>
+        <?php
+        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
+        ?>
 
         <!-- Page content of course! -->
     <main class="bs-masthead" id="content" role="main">
@@ -59,10 +57,10 @@ include BASE_PATH . VIEWS_PATH . "/nav-top.php";
             <div class="row">
                 <div class="col-md-6">
                     <h1>Javascript</h1>
-<?php
-$core->lista->setLinks($core->links, Core::SECAO_JS);
-include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-?>
+                    <?php
+                    $core->lista->setLinks($core->links, Core::SECAO_JS);
+                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                    ?>
                 </div>
             </div>
 
@@ -75,10 +73,10 @@ include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>PHP</h1>
-<?php
-$core->lista->setLinks($core->links, Core::SECAO_PHP);
-include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-?>
+                    <?php
+                    $core->lista->setLinks($core->links, Core::SECAO_PHP);
+                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                    ?>
                 </div>
             </div>
         </div>
@@ -90,10 +88,10 @@ include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>HTML & CSS</h1>
-<?php
-$core->lista->setLinks($core->links, Core::SECAO_HTML);
-include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-?>
+                    <?php
+                    $core->lista->setLinks($core->links, Core::SECAO_HTML);
+                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                    ?>
                 </div>
             </div>
         </div>
@@ -105,10 +103,10 @@ include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>Lógica de Programação</h1>
-<?php
-$core->lista->setLinks($core->links, Core::SECAO_LOG);
-include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-?>
+                    <?php
+                    $core->lista->setLinks($core->links, Core::SECAO_LOG);
+                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                    ?>
                 </div>
             </div>
         </div>
@@ -119,10 +117,10 @@ include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>MySql</h1>
-<?php
-$core->lista->setLinks($core->links, Core::SECAO_MYSQL);
-include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-?>
+                    <?php
+                    $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
+                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                    ?>
                 </div>
             </div>
         </div>
@@ -133,15 +131,15 @@ include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
             <div class="row">
                 <div class="col-md-12">
                     <h1>RegExp</h1>
-<?php
-$core->lista->setLinks($core->links, Core::SECAO_ER);
-include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-?>
+                    <?php
+                    $core->lista->setLinks($core->links, Core::SECAO_ER);
+                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                    ?>
                 </div>
             </div>
         </div>
-
     </div>
-<?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+
+    <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 </body>
 </html>

@@ -106,18 +106,16 @@ require "../../../core/boot.php";
 
                         <p>Clique nas abas para visualizar as partes separadamente: HTML, JS e resultado.</p>
 
-                        <pre class="codepen" data-height="300" data-type="js" data-href="zFGvl" data-user="flaviomicheletti" data-safe="true">
-<code>var element = document.getElementById('myimage');
+<div data-height="238" data-theme-id="0" data-slug-hash="zFGvl" data-user="flaviomicheletti" data-default-tab="js" class='codepen'><pre><code>var element = document.getElementById(&#x27;myimage&#x27;);
 element.onclick = function() {
     if (element.src.match(&quot;bulbon&quot;)) {
-        element.src=&quot;http://www.devfuria.com.br/js/imagens/pic_bulboff.gif&quot;;
+        element.src=&quot;http:&#x2F;&#x2F;www.devfuria.com.br&#x2F;js&#x2F;basico&#x2F;intro&#x2F;pic_bulboff.gif&quot;;
     } else {
-        element.src=&quot;http://www.devfuria.com.br/js/imagens/pic_bulbon.gif&quot;;
+        element.src=&quot;http:&#x2F;&#x2F;www.devfuria.com.br&#x2F;js&#x2F;basico&#x2F;intro&#x2F;pic_bulbon.gif&quot;;
     }
-};</code><a href="http://codepen.io/flaviomicheletti/pen/zFGvl">Check out this Pen!</a></pre>
-
-                        <p><script async src="http://codepen.io/assets/embed/ei.js"></script></p>
-                    </div>                         
+};</code></pre>
+<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/zFGvl'>a lâmpada</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a></p>
+</div><script async src="//codepen.io/assets/embed/ei.js"></script>                        
 
                     <div class="bs-docs-section">
                         <div class="page-header">
