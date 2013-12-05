@@ -488,34 +488,53 @@ require "../../../core/boot.php";
                                 unidades de medidas, cores, CSS inline, CSS embeded, CSS linked. Vimos bastante coisas nesta matéria, vamos agora
                                 entender a diferênca entre os elementos <strong>in-line</strong> e <strong>level-block</strong>... na próxima matéria é lógico.</p>
                         </div>
-                        <?php
-                        $core->paginacao->link_ativo = "/html-css/basico/html-e-css-intro/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                          
-
                     </div>
 
-                </div><!-- Corpo da matéria -->
-            </div><!-- row -->
 
-        </div><!-- Matéria -->
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                        </div>
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>HTML & CSS</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
-                        $core->lista->link_ativo = "/html-css/basico/html-e-css-intro/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Livros</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item" title="">
+                                        <h4 class="list-group-item-heading">Nenhum livro sobre HTML</h4>
+                                        <p class="list-group-item-text">HTML é tão básico que eu recomendo que você pratique, pratique e pratique ao invés de ler, ler e ler.</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <?php
+                            $core->paginacao->link_ativo = "/html-css/basico/html-e-css-intro/";
+                            $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                            include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                            ?>                             
+                        </div>
+
+                    </div><!-- Corpo da matéria -->
+                </div><!-- row -->
+
+            </div><!-- Matéria -->
+
+            <footer class="bs-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>HTML & CSS</h1>
+                            <?php
+                            $core->lista->setLinks($core->links, Core::SECAO_HTML);
+                            $core->lista->link_ativo = "/html-css/basico/html-e-css-intro/";
+                            include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                            ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+            </footer>
+            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
 </html>
