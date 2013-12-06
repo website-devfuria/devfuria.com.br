@@ -118,28 +118,28 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 
 if($valor)
 echo “código sem endentação é trabalho de amador”;
 else
 echo “não inventaram nada pior que código não endentado”;
 
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>E agora, um código endentado:</p>
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 
 if($valor)
     echo “código sem endentação é trabalho de amador”;
 else
     echo “não inventaram nada pior que código não endentado”;
 
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>Se para você ambos os códigos estão “de acordo”, então sabemos que você não gosta de endentar código. Um exercício
@@ -159,8 +159,8 @@ else
                         <div class="page-header">
                             <h1 id="nomeie">2 - Nomeie (tudo) adequadamente</h1>
                         </div>                         
-                        <p><em>Nomear variáveis, funções, classes, campos de banco de dados, campos de formulário HTML e tudo o mais que vir à mente...
-                                é uma arte</em>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de “nome”
+                        <p><strong>Nomear variáveis, funções, classes, campos de banco de dados, campos de formulário HTML e tudo o mais que vir à mente...
+                                é uma arte</strong>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de “nome”
                             ser diferente de “Nome”, no caso estou me referindo ao “sensitive case” (caixa sensível). Existem também regras gerais e
                             bastante disseminadas como, por exemplo, o “camel case” que diz para colocar em maiúscula  a letra da segunda palavra
                             (umExemplo). Há também o “underline” ou “underscore” para separar os nomes das variáveis (outro&#95;exemplo). Há alguns
@@ -174,17 +174,17 @@ else
 
                         <div class="code">
                             <h6>Texto plano</h6>
-                            <pre>cliente_id
+                            <pre><code class="no-highlight">cliente_id
 cliente_codigo
 cliente_nome
-cliente_endereco</pre>
+cliente_endereco</code></pre>
                         </div>
 
                         <p>Que tal? Tudo certo? Bom, vamos imaginar a instrução select...</p>
 
                         <div class="code">
                             <h6>SQL</h6>
-                            <pre>SELECT cliente_id, cliente_codigo e etc...FROM clientes</pre>
+                            <pre><code class="no-highlight">SELECT cliente_id, cliente_codigo e etc...FROM clientes</code></pre>
                         </div>
 
                         <p>Fica grande, ocupa espaço, ruim mesmo.</p>
@@ -193,30 +193,30 @@ cliente_endereco</pre>
 
                         <div class="code">
                             <h6>Texto plano</h6>
-                            <pre>clienteId
+                            <pre><code class="no-highlight">clienteId
 clienteCodigo
 cliente_nome
-clientes_endereco</pre>
+clientes_endereco</code></pre>
                         </div>
 
                         <p>Simplesmente terrível. Estamos usando os campos de uma tabela como exemplo, mas poderia ser os campos de um formulário HTML.</p>
 
                         <div class="code">
                             <h6>Texto plano</h6>
-                            <pre>cpId
+                            <pre><code class="no-highlight">cpId
 cpCodigo
 cpNome
-cpEndereco</pre>
+cpEndereco</code></pre>
                         </div>
 
                         <p>O que siginifica “cp”? Ora, siginifica “campo”, mas precisa explicitar que é um campo? Não, não precisa. Bastasse...</p>
 
                         <div class="code">
                             <h6>Texto plano</h6>
-                            <pre>id
+                            <pre><code class="no-highlight">id
 codigo
 nome
-endereco</pre>
+endereco</code></pre>
                         </div>
 
                         <p>Às vezes o nome da variável é muito vago como, por exemplo, “endereco”. Mas que tipo de endereço? Endereço completo? Só
@@ -239,7 +239,7 @@ endereco</pre>
                         <div class="page-header">
                             <h1 id="comente">3 - Comente o código... e faça-o de forma concisa</h1>
                         </div>
-                        <p><em>Comentar código, assim como nomear variáveis, também é uma arte</em>. Existem programadores que não comentam o código, há
+                        <p><strong>Comentar código, assim como nomear variáveis, também é uma arte</strong>. Existem programadores que não comentam o código, há
                             também os que comentam demais. Há, ainda, aqueles que acham que o comentário do código é a documentação do sistema, não é.</p>
 
                         <p>Infelizmente, não existe uma regra única para comentar o código, cada programador faz do seu jeito. Também não existe a
@@ -255,7 +255,8 @@ endereco</pre>
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
+
 // Comente uma única linha de código isolada, só se for necessário mas principalmente se for necessário.
 
 // Não é preciso comentar toda ou cada linha do código, lembre-se que comentar também polui.
@@ -266,13 +267,16 @@ endereco</pre>
  * Quis destacar este comentário, por isso fiz dessa forma
  * mas não é só isso, este tipo de comentário é um tanto
  * tanto quanto especial. Falaremos sobre isso em breve.
+ * 
+ * Ele é conhecido como "doc-block"
+ *
  */
 
 #
-# Também gosto de destacar dessa forma, mas dê preferência ao anterior.
+# Também gosto de destacar dessa forma, mas dê preferência a anterior.
 #
 
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>                        
                     </div>
 
@@ -293,7 +297,7 @@ endereco</pre>
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 if ((condition1) || (condition2)) {
     action1;
 } elseif ((condition3) && (condition4)) {
@@ -301,14 +305,14 @@ if ((condition1) || (condition2)) {
 } else {
     defaultaction;
 }
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>Mas tem quem goste de colocar as chaves na linha de baixo, olhe a diferênça:</p>
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 if ((condition1) || (condition2))
 {
     action1;
@@ -321,14 +325,14 @@ else
 {
     defaultaction;
 }
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>E ainda os que gostam de aperto, veja se você sente isso:</p>
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 if((condition1)||(condition2)){
     action1;
 }elseif((condition3)&&(condition4)){
@@ -336,14 +340,14 @@ if((condition1)||(condition2)){
 }else{
     defaultaction;
 }
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>Até aqui, tudo é uma questão de estilo, o que não pode é a ausência de estilo, veja o exemplo abaixo</p>
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 if ((condition1)||(condition2))
 {
     action1;
@@ -351,7 +355,7 @@ if ((condition1)||(condition2))
 elseif(  (condition3)&&(condition4)  ){
     action2;
 }else{  defaultaction;}
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>Parece mais o estilo "zorra total", rssss</p>

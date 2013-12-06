@@ -202,8 +202,7 @@ require "../../../core/boot.php";
 
                             <p>São os <em>campos</em> de uma informação, por exemplo: </p>
 
-                            <pre><code>nome do produto, preco
-</code></pre>
+                            <pre><code class="no-highlight">nome do produto, preco</code></pre>
 
                             <p>...são dois possíveis campos (ou  colunas)</p>
                         </div>
@@ -216,9 +215,8 @@ require "../../../core/boot.php";
 
                             <p>São os dados abaixo dessas colunas:</p>
 
-                            <pre><code>Camiseta Regata, 11.99 -- esse é um registro
-Camisa Social,   15.00 -- esse é outro registro
-</code></pre>
+                            <pre><code class="no-highlight">Camiseta Regata, 11.99 -- esse é um registro
+Camisa Social,   15.00 -- esse é outro registro</code></pre>
                         </div>
 
 
@@ -285,26 +283,22 @@ Camisa Social,   15.00 -- esse é outro registro
 
                         <p>No Ubuntu (família Debian) digite:</p>
 
-                        <pre><code>apt-get install mysql-server mysql-client
-</code></pre>
+                        <pre><code class="no-highlight">apt-get install mysql-server mysql-client</code></pre>
 
                         <p>Enquanto os arquivos são baixados e instalados o sistema lhe perguntará qual será a senha do root (para acessar o banco de dados), anote-a.</p>
 
                         <p>No Fedora (família Had-Hat) é parecido, só que você é quem define a senha:</p>
 
-                        <pre><code>yum install mysql mysql-server
-</code></pre>
+                        <pre><code class="no-highlight">yum install mysql mysql-server</code></pre>
 
                         <p>inicie o serviço...</p>
 
-                        <pre><code>systemctl start mysqld.service
-systemctl enable mysqld.service
-</code></pre>
+                        <pre><code class="no-highlight">systemctl start mysqld.service
+systemctl enable mysqld.service</code></pre>
 
                         <p>e habilite a senha digitando...</p>
 
-                        <pre><code>mysqladmin -u root password [your_password_here]
-</code></pre>
+                        <pre><code class="no-highlight">mysqladmin -u root password [your_password_here]</code></pre>
 
                         <p>Se tudo ocorreu bem poderemos acessar o servidor mysql via console.</p>
                     </div>
@@ -319,19 +313,16 @@ systemctl enable mysqld.service
 
                         <p>O MySql utiliza o diretório "mysql" como diretório atual. Como exemlo veja o meu diretório autal:</p>
 
-                        <pre><code>[flavio@localhost www.devfuria.com.br]$
-</code></pre>
+                        <pre><code class="no-highlight">[flavio@localhost www.devfuria.com.br]$</code></pre>
 
                         <p>... ao entrar no Mysql meu diretório atual fica como abaixo:</p>
 
-                        <pre><code>mysql&gt;
-</code></pre>
+                        <pre><code class="no-highlight">mysql&gt;</code></pre>
 
                         <p>No console, é possível digitar "mysql" para entrar no servidor mysql, mas se digitar apenas isso receberemos a seguinte
                             mensagem:</p>
 
-                        <pre><code>ERROR 1045 (28000): Access denied for user 'flavio'@'localhost' (using password: NO)
-</code></pre>
+                        <pre><code class="no-highlight">ERROR 1045 (28000): Access denied for user 'flavio'@'localhost' (using password: NO)</code></pre>
 
                         <p>Bom começarmos com um erro pois dessa forma você irá se habituando a "encarar" essas mensagens ao invés de ignorá-las
                             (atitude comum de quem está iniciando).</p>
@@ -353,18 +344,16 @@ systemctl enable mysqld.service
 
                         <p><em>Então, como então acessamos o servidor via console?</em></p>
 
-                        <pre><code>mysql -h localhost -u root -p
-</code></pre>
+                        <pre><code class="no-highlight">mysql -h localhost -u root -p</code></pre>
 
                         <p>Vamos entender o comando acima. </p>
 
-                        <pre><code>mysql      -- evocamos o servidor
+                        <pre><code class="no-highlight">mysql      -- evocamos o servidor
 -h         -- dizemos que o próximo dado é referente ao host
 localhost  -- informamos o o host
 -u         -- dizemos que o próximo dado é referente ao usuário
 root       -- informamos o usuário
--p         -- dizemos que o próximo dado é referente a senha
-</code></pre>
+-p         -- dizemos que o próximo dado é referente a senha</code></pre>
 
                         <p>Não vamos digitar a senha porque pode ter alguém bisbilhotando (rsrs). Então acionamos o Enter e adivinhe? O console
                             solicita a senha do usuário infrmado. Agora sim pode digitar, pois a senha não é mostrada.</p>
@@ -383,8 +372,7 @@ root       -- informamos o usuário
 
                         <p>Digite:</p>
 
-                        <pre><code>exit
-</code></pre>
+                        <pre><code class="no-highlight">exit</code></pre>
 
                         <p>O sistema responde com um simpático "Bye"... eu também, tchau!</p>
                         <?php

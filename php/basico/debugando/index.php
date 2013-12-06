@@ -79,7 +79,7 @@ require "../../../core/boot.php";
                         <p>Ao sentar-se na frente do computador para codificar (seja lá o que for) o desenvolvedor estabelece, ou deveria estabelecer,
                             uma conversa com o computador e seu código fonte:</p>
 
-                        <pre><code>dev: E aí computer, me mostre o VALOR da variável "resultado".
+                        <pre><code class="no-highlight">dev: E aí computer, me mostre o VALOR da variável "resultado".
 
 cpu: Ok, mas parece que não está retornando nada, veja o valor que ela contém... "".
 
@@ -129,7 +129,7 @@ var_dump($minha_var);
 
                         <p>E dependendo do seu objetivo, devemos interromper o scritpt, para isso usamos a função "die()";</p>
 
-                        <pre><code>$minha_var = "qualquer coisa";
+                        <pre><code class="language-php">$minha_var = "qualquer coisa";
 var_dump($minha_var);
 die();
 ...mais códigos
@@ -165,7 +165,7 @@ die();
                         <p>Nesse caso, ele trás várias informações e leitor deve acostumar-se a "extrair" essas informações.</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="### ###Debugando com echo" src="debug-erro.png">
+                            <img class="img-rounded img-responsive" alt="### ###Debugando com echo" src="debug-erro.png">
                             <p>Erro exibido pelo x-debug!</p>
                         </div>                        
 
@@ -228,7 +228,7 @@ echo "&lt;/pre&gt;";
 
                         <p>Caso não tenha o x-debug instalado, use:</p>
 
-                        <pre><code>echo "&lt;pre&gt;";
+                        <pre><code class="language-php">echo "&lt;pre&gt;";
 print_r($_SERVER);
 echo "&lt;/pre&gt;";
 </code></pre>

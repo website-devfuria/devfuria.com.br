@@ -113,18 +113,18 @@ require "../../../core/boot.php";
 
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre>num_a = 10
+                                            <pre><code>num_a = 10
 
-num_b = 20</pre>
+num_b = 20</code></pre>
                                         </div>
 
                                         <p>Vamos pensar no resultado final</p>
 
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre>imprimir num_a, num_b
+                                            <pre><code>imprimir num_a, num_b
 
-// mostra na tela “20, 10”</pre>
+// mostra na tela “20, 10”</code></pre>
                                         </div>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@ num_b = 20</pre>
 
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre><em>INÍCIO</em>
+                                            <pre><code class="no-highlight">INÍCIO
 
 // Inicializar as variáveis
 num_a = 10
@@ -162,14 +162,14 @@ num_b = num_c
 // Mostrar na tela
 imprimir num_a, num_b
 
-<em>FIM</em></pre>
+FIM</code></pre>
                                         </div>
 
                                         <p>Agora em php...</p>
 
                                         <div class="code">
                                             <h6>PHP - Solução para o exercício 1</h6>
-                                            <pre>&lt;?php
+                                            <pre><code>&lt;?php
 
 // Inicializar as variáveis
 $num_a = 10;
@@ -183,7 +183,7 @@ $num_b = $num_c;
 
 // Mostrar na tela
 echo “$num_a, $num_b”;
-?&gt;</pre>                                        </div>
+?&gt;</code></pre>                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +235,7 @@ echo “$num_a, $num_b”;
                                     <div class="panel-body">
                                         <div class="code">
                                             <h6>PHP - Solução para o exercício 2</h6>
-                                            <pre>&lt;?php
+                                            <pre><code class="language-php">&lt;?php
 
 $lado_um = 7;   // poderia ser qualquer valor
 $lado_dois = 2; // poderia ser qualquer valor
@@ -243,7 +243,7 @@ $lado_dois = 2; // poderia ser qualquer valor
 $metro_quadrado = $lado_um * $lado_dois;
 
 echo $metro_quadrado; // mostra na tela “14”
-?&gt;</pre>
+?&gt;</code></pre>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -291,7 +291,7 @@ echo $metro_quadrado; // mostra na tela “14”
                                     <div class="panel-body">
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre><em>INÍCIO</em>
+                                            <pre><code class="no-highlight">INÍCIO
 
 // 3 valores quaisquer
 valor1 = 10
@@ -302,9 +302,7 @@ valor3 = 30
 media = (valor1 + valor2 + valor3) / 3
 
 // exibir
-mostrar media // 20
-
-                                            </pre>
+mostrar media // 20</code></pre>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -364,7 +362,7 @@ mostrar media // 20
                                     <div class="panel-body">
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre><em>INÍCIO</em>
+                                            <pre><code class="no-highlight">INÍCIO
 
 // Variável principal
 totalEleitores = 25.639
@@ -375,9 +373,7 @@ perVotosNulos = 2312 / total_eleitores * 100
 perVotosValidos = 21.820 / total_eleitores * 100
 
 // Exibir resultado
-mostrar perVotosBrancos, perVotosNulos, perVotosValidos
-
-                                            </pre>
+mostrar perVotosBrancos, perVotosNulos, perVotosValidos</code></pre>
                                         </div>                                                                          
                                     </div>
                                 </div>
@@ -427,7 +423,7 @@ mostrar perVotosBrancos, perVotosNulos, perVotosValidos
                                     <div class="panel-body">
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre><em>INÍCIO</em>
+                                            <pre><code class="no-highlight">INÍCIO
 
 salario = 1000
 
@@ -439,7 +435,7 @@ salario_reajustado = salario + valor_reajuste
 
 mostrar valor_reajuste, salario_reajustado
 
-<em>FIM</em></pre>
+FIM</code></pre>
                                         </div>                                                                          
                                     </div>
                                 </div>
@@ -490,7 +486,7 @@ mostrar valor_reajuste, salario_reajustado
                                     <div class="panel-body">
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre><em>INÍCIO</em>
+                                            <pre><code class="no-highlight">INÍCIO
 
 n_meses = 3 // valor arbitrário
 
@@ -498,7 +494,7 @@ total_de_dias  = n_meses * 30
 
 mostrar total_de_dias
 
-<em>FIM</em></pre>
+FIM</code></pre>
                                         </div>
                                     </div>
                                 </div>
@@ -560,7 +556,7 @@ aaaaa-mm-dd
                                     <div class="panel-body">
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre><em>INÍCIO</em>
+                                            <pre><code class="no-highlight">INÍCIO
 
 data_nasc_dia = 27
 data_nasc_mes = 9
@@ -572,8 +568,7 @@ data_atual_ano = 2012
 
 anos = data_atual_ano - data_nasc_ano
 total_meses = anos * 12
-total_meses = total_meses + anos
-                                            </pre>
+total_meses = total_meses + anos</code></pre>
                                         </div>                                                     
                                     </div>
                                 </div>
@@ -613,7 +608,7 @@ total_meses = total_meses + anos
                                         <p>Aliás, eu vou aproveitar e fazer um "negócio" que eu gosto muito: colocar o enunciado no código como comentário e
                                             depois escrever o código fonte.</p>
 
-                                        <pre><code>"como custo de fábrica utilize um valor arbitrário, por exemplo, 20.000."
+                                        <pre><code class="no-highlight">"como custo de fábrica utilize um valor arbitrário, por exemplo, 20.000."
 "Supondo que o percentual do distribuidor seja de 28%..."
 "..e os impostos de 45%"
 "O custo de um carro é..."
@@ -640,7 +635,7 @@ total_meses = total_meses + anos
                                     <div class="panel-body">
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre><em>INÍCIO</em>
+                                            <pre><code class="no-highlight">INÍCIO
 
 // "como custo de fábrica utilize um valor arbitrário, por exemplo, 20.000."
 custo_fabrica = 20.000;
@@ -670,7 +665,7 @@ custo_final = custo_final + (custo_fabrica * perc_impostos)
  */
 mostrar custo_final
 
-<em>FIM</em></pre>
+FIM</code></pre>
                                         </div>                                        
 
                                     </div>
@@ -718,7 +713,7 @@ mostrar custo_final
                                     <div class="panel-body">
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre><em>INÍCIO</em>
+                                            <pre><code class="no-highlight">INÍCIO
 
 // Inicia as variáveis
 numero     = 0
@@ -733,7 +728,7 @@ numero_suc = numero + 1
 // Mostra os resultados obtidos
 mostrar numero_suc, numero_ant
 
-<em>FIM</em></pre>
+FIM</code></pre>
                                         </div>                                      
                                     </div>
                                 </div>
@@ -805,7 +800,7 @@ n = períodos.
 
                                         <div class="code">
                                             <h6>PSEUDOCÓDIGO</h6>
-                                            <pre><em>INÍCIO</em>
+                                            <pre><code class="no-highlight">INÍCIO
 
 // incializar as variáveis
 juros_simples = 0
@@ -819,7 +814,7 @@ juros_simlpes = capital * taxa * periodo
 // Mostrar na tela
 mostrar juros simples
 
-<em>FIM</em></pre>
+FIM</code></pre>
                                         </div>                                        
 
                                     </div>

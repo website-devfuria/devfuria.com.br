@@ -67,8 +67,7 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>HTML(inválido)</h6>
-                            <pre>
-&lt;html&gt;
+                            <pre><code class="language-html">&lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;elementos in-li e block-level&lt;/title&gt;
         &lt;style type="text/css"&gt;
@@ -103,8 +102,7 @@ require "../../../core/boot.php";
         &lt;a href="#"&gt;também me chamam de âncora&lt;/a&gt;
 
     &lt;/body&gt;
-&lt;/html&gt;
-                            </pre>
+&lt;/html&gt;</code></pre>
                         </div>
 
                         <p>Esse não é um HTML "oficial", é apenas para fins ilustrativos. Repare que eu coloquei a palavra "inválido" no título
@@ -172,8 +170,7 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>HTML(inválido)</h6>
-                            <pre>
-&lt;html&gt;
+                            <pre><code class="language-html">&lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;tipos INVERTIDOS&lt;/title&gt;
         &lt;style type="text/css"&gt;
@@ -214,8 +211,7 @@ require "../../../core/boot.php";
         &lt;a href="#"&gt;também me chamam de âncora&lt;/a&gt;
 
     &lt;/body&gt;
-&lt;/html&gt;
-                            </pre>
+&lt;/html&gt;</code></pre>
                             <p>Essa matéria é curtinha, mas não se engane, seguir em frente sem entender (de verdade) é perca de tempo,
                                 aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.</p>
 

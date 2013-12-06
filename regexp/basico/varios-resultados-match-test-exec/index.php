@@ -75,7 +75,7 @@ require "../../../core/boot.php";
 
                         <p>Aqui, temos o mesmo problema da matéria anterior:</p>
 
-                        <p><em>Como trabalhamos com mais de um resultado?</em></p>
+                        <p><strong>Como trabalhamos com mais de um resultado?</strong></p>
 
                         <p>Se você caiu de paraquêdas nesta página aconselho a ler atentamente pelo menos as duas matérias anteriores a esta,
                             veja no final desta página na árvore de navegação: "Veja também..."</p>
@@ -92,8 +92,7 @@ regexp: "/ca.a/"
 
                         <div class="code">
                             <h6>JS forma1-string-match.js</h6>
-                            <pre>
-var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
+                            <pre><code class="language-javascript">var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/,
     resultado;
 
@@ -104,12 +103,11 @@ if (resultado) {
     console.log("casou", resultado);
 } else {
     console.log("não casou", resultado);
-}
-                            </pre>
+}</code></pre>
                         </div>
 
-                        <p>Se a ER casar com a string então a variável <em>resultado</em> conterá um array com a parte que casou, mas <em>apenas a primeira
-                                ocorrência.</em> Se você precisar das demais ocorrências terá que fazer uma pequena alteração na ER, veja:</p>
+                        <p>Se a ER casar com a string então a variável <code>resultado</code> conterá um array com a parte que casou, mas <strong>apenas a primeira
+                                ocorrência.</strong> Se você precisar das demais ocorrências terá que fazer uma pequena alteração na ER, veja:</p>
 
                         <pre><code>pattern = /ca.a/g,
 </code></pre>
@@ -130,8 +128,7 @@ if (resultado) {
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
+                            <pre><code class="language-javascript">var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/g,
     resultado,
     i;
@@ -141,8 +138,7 @@ resultado = string.match(pattern)
 
 for(i = 0; i < resultado.length; i++){
     console.log(resultado[i]);
-}
-                            </pre>
+}</code></pre>
                         </div>
                     </div>
 
@@ -152,20 +148,18 @@ for(i = 0; i < resultado.length; i++){
                             <h1 id="exec">exec()</h1>
                         </div>
 
-                        <p>Repare apenas que a opção global "g" teve que ser utilizada, sem ela o navegador (FireFox 19) entra em um loop infinito.</p>
+                        <p>Repare apenas que a opção global <code>g</code> teve que ser utilizada, sem ela o navegador (FireFox 19) entra em um loop infinito.</p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
+                            <pre><code class="language-javascript">var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/g,
     resultado;
 
 // Executa nossa expressão
 while(resultado = pattern.exec(string)){
     console.log("casou", resultado);
-}
-                            </pre>
+}</code></pre>
                         </div>
                     </div>
 
@@ -175,13 +169,12 @@ while(resultado = pattern.exec(string)){
                             <h1 id="test">test()</h1>
                         </div>
 
-                        <p>Diferentemente da primeira função (string.match), o valor da variável <em>resultado</em> será true ou false e a opção global
+                        <p>Diferentemente da primeira função (string.match), o valor da variável <code>resultado</code> será true ou false e a opção global
                             "g" não funcionou, sou seja, não descobri uma forma de olhar as demais ocorrência, apenas a primeira.</p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
+                            <pre><code class="language-javascript">var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/,
     resultado;
 
@@ -192,8 +185,7 @@ if (resultado) {
     console.log("casou", resultado);
 } else {
     console.log("não casou", resultado);
-}
-                            </pre>
+}</code></pre>
                         </div>
 
                     </div>
@@ -204,11 +196,11 @@ if (resultado) {
                             <h1 id="exercicio">Exercício prático</h1>
                         </div>
 
-                        <p>Dúvido muito que você conseguirá absorver o conteúdo desta matéria apenas lendo, então ponha a <em>mão na massa</em>. </p>
+                        <p>Dúvido muito que você conseguirá absorver o conteúdo desta matéria apenas lendo, então ponha a <strong>mão na massa</strong>. </p>
 
                         <p>Só assim você terá a garantida de que realmente incorporou os conceitos.</p>
 
-                        <p>Execute o códigos dessa matéria em sua máquina e <em>observe os resultado no console do FireBug.</em></p>
+                        <p>Execute o códigos dessa matéria em sua máquina e <strong>observe os resultado no console do FireBug.</strong></p>
 
                         <p>Para facilitar a sua vida, eu criei um Gist com os código fontes, assim você não precisará criar os arquivos.</p>
 

@@ -78,7 +78,12 @@
       })
 
     // carousel demo
-    $('.bs-docs-carousel-example').carousel()
+    $('.bs-docs-carousel-example').carousel();
+    
+    /**
+     * boot strap do js (devfuria)
+     */
+    hljs.initHighlightingOnLoad();
 })
 
 }(window.jQuery)

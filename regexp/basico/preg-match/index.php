@@ -107,7 +107,7 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 $pattern   = "/exemplo/";
 $subject   = "Casa com a palavra exemplo";
 $retorno = array();
@@ -115,7 +115,7 @@ $retorno = array();
 # Executa nossa expressão
 $resultado = preg_match($pattern, $subject, $retorno);
 var_dump($resultado, $retorno);
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>Se olharmos para dentro das variáveis $retorno e $resultado teremos, respectivamente "1" e um array com a string "exemplo".</p>
@@ -146,7 +146,7 @@ $resultado = array("exemplo")
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 $pattern   = "/não existe/";
 $subject   = "Casa com a palavra exemplo";
 $retorno = array();
@@ -154,7 +154,7 @@ $retorno = array();
 # Executa nossa expressão
 $resultado = preg_match($pattern, $subject, $retorno);
 var_dump($resultado, $retorno);
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>...recebemos um int 0  na variável $resultado e um array vazio na variável $retorno.</p>
@@ -179,21 +179,21 @@ var_dump($resultado, $retorno);
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 <em>$pattern   = "/(exemplo/";</em>
 $subject   = "Casa com a palavra exemplo";
 $retorno = array();
 
 # Executa nossa expressão
 $resultado = preg_match($pattern, $subject, $retorno);
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>Tanto a variável $resultado será igual a false como receberemos um <em>warning</em> dizendo que a compilação da expressão falhou
                             (outros tipos de erros também aparecem):</p>
 
                         <div class="bs-example ">
-                            <img class="img-rounded" alt="### warning retornado pela função" src="regexp-erro.png" />
+                            <img class="img-rounded img-responsive" alt="### warning retornado pela função" src="regexp-erro.png" />
                         </div> 
 
                         <p>Precisamos tratar o erro adequadamente (tudo bem, warning não é erro, mas não deixa de ser um aviso importante), porém
@@ -220,7 +220,7 @@ se o valor é igual a false então
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 $pattern   = "/exemplo/";
 $subject   = "Casa com a palavra exemplo";
 $retorno = array();
@@ -240,7 +240,7 @@ if ($resultado === 1) {
     print "ocorreu um erro";
     
 }
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>    
                         <?php
                         $core->paginacao->link_ativo = "/regexp/basico/preg-match/";

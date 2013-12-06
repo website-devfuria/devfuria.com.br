@@ -117,8 +117,7 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>index.html</h6>
-                            <pre>
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                            <pre><code class="language-html">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
     &lt;head&gt;
@@ -129,27 +128,24 @@ require "../../../core/boot.php";
     &lt;body&gt;
         ...
     &lt;/body&gt;
-&lt;/html&gt;
-                            </pre>
+&lt;/html&gt;</code></pre>
                         </div>
 
                         <p>No código seguinte temos a mesmíssima coisa, só que em um arquivo html 5. O palavrão 'DOCTYPE' virou duas palavrinhas:</p>
 
                         <div class="code">
                             <h6>index.html</h6>
-                            <pre>
-<em>&lt;!DOCTYPE html&gt;</em>
+                            <pre><code><em>&lt;!DOCTYPE html&gt;</em>
 &lt;html&gt;
     &lt;head&gt;
         &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
         &lt;title&gt;Hello, World!&lt;/title&gt;
-        <em>&lt;script type="text/javascript" src="codigo.js"&gt;&lt;/script&gt;</em>
+        &lt;script type="text/javascript" src="codigo.js" /&gt;
     &lt;/head&gt;
     &lt;body&gt;
         ...
     &lt;/body&gt;
-&lt;/html&gt;
-                            </pre>
+&lt;/html&gt;</code></pre>
                         </div>
 
                         <p>As abordagem acima sofre de um pequeno inconveniente: a ordem em que o arquivo é lido e executado pelo browser. Os
@@ -163,8 +159,7 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>index.html</h6>
-                            <pre>
-&lt;!DOCTYPE html&gt;
+                            <pre><code cass="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
         &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
@@ -174,8 +169,7 @@ require "../../../core/boot.php";
         ...
     <em>&lt;script type="text/javascript" src="codigo.js"&gt;&lt;/script&gt;</em>
     &lt;/body&gt;
-&lt;/html&gt;
-                            </pre>
+&lt;/html&gt;</code></pre>
                         </div>
 
                         <p><em>Colocamos o código JS no final do HTML.</em></p>
@@ -195,10 +189,8 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var qualquer = "uma string qualquer";
-console.log(qualquer);
-                            </pre>
+                            <pre><code class="language-javascript">var qualquer = "uma string qualquer";
+console.log(qualquer);</code></pre>
                         </div>
 
                         <p>...estaremos na verdade, fazendo uso do plugin FireBug, pois a instrunção <em>console.log()</em> não é do JS e sim do plugin

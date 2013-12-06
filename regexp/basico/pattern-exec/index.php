@@ -70,35 +70,33 @@ require "../../../core/boot.php";
                             <h1 id="intro">Sobre a função</h1>
                         </div>
                         
-                        <p>A função <em>exec()</em> em JS possue a sintaxe parecida com a função <em>test()</em> porém o resultado é idêntico a função <em>match()</em>.</p>
+                        <p>A função <code>exec()</code> em JS possue a sintaxe parecida com a função <code>test()</code> porém o resultado é idêntico a função <code>match()</code>.</p>
 
-                        <p>A forma <em>pattern.exec()</em> onde "pattern" é expressão regular, "exec()" é a função que evocamos
+                        <p>A forma <code>pattern.exec()</code> onde "pattern" é expressão regular, "exec()" é a função que evocamos
                             para executar a ER e o parâmetro 'string passado na função é a nosso texto de pesquisa (assunto).</p>
 
                         <p>Também é uma forma bastante usual e comentada.</p>
 
-                        <p>Viu? A sintaxe é parecida com a função <em>test()</em>, já os resultado é parecido com a função <em>match()</em>.</p>
+                        <p>Viu? A sintaxe é parecida com a função <code>test()</code>, já os resultado é parecido com a função <code>match()</code>.</p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "Casa com a palavra exemplo",
+                            <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
     resultado;
 
 // Executa nossa expressão
 resultado = pattern.exec(string);
-console.log(resultado);
-                            </pre>
+console.log(resultado);</code></pre>
                         </div>
 
                         <p>O texto, daqui para baixo, é idêntido ao da matéria <a href="../../basico/string-match" title="Matéria da função string.match()">string-match</a>.
                             Estou repetindo caso você tenha chegado por aqui diretamente e ainda não leu as matérias anteriores.</p>
 
-                        <p>Se a ER casar com a string então a variável <em>resultado</em> conterá um array com a parte que casou, mas apenas a primeira
+                        <p>Se a ER casar com a string então a variável <code>resultado</code> conterá um array com a parte que casou, mas apenas a primeira
                             ocorrência.</p>
 
-                        <p>Se olharmos mais atentamente poderemos observar que a função exec() não apenas retorna um array como também um objeto
+                        <p>Se olharmos mais atentamente poderemos observar que a função <code>exec()</code> não apenas retorna um array como também um objeto
                             (arrays são objetos em JS).</p>
 
                         <p>A janela do Firebug mostra o sinal "+" se clicar em cima dele o objeto se expandirá conforme a figura abaixo:</p>
@@ -107,18 +105,18 @@ console.log(resultado);
                             <img class="img-rounded" src="exec-resultado.png" alt="### exec-resultado" />
                         </div>
 
-                        <p>O valor da variável <em>resultado</em> na verdade é:</p>
+                        <p>O valor da variável <code>resultado</code> na verdade é:</p>
 
                         <pre><code>resultado[0] = string "casa"
 resultado['index'] = 19
 resultado['input'] = ""Casa com a palavra exemplo.""
 </code></pre>
 
-                        <p><em>resultado[0]</em> é o array retorando pela função, ele contém o valor da parte que casou.</p>
+                        <p><code>resultado[0]</code> é o array retorando pela função, ele contém o valor da parte que casou.</p>
 
-                        <p><em>resultado['index']</em> é um inteiro, ele indica a primeira posição dentro da string que coincidiu com o valor procurado.</p>
+                        <p><code>resultado['index']</code> é um inteiro, ele indica a primeira posição dentro da string que coincidiu com o valor procurado.</p>
 
-                        <p><em>resultado['input']</em> é a string original onde procuramos o nosso fragmento.</p>
+                        <p><code>resultado['input']</code> é a string original onde procuramos o nosso fragmento.</p>
 
                     </div>
 
@@ -127,19 +125,17 @@ resultado['input'] = ""Casa com a palavra exemplo.""
                             <h1 id="nao-casou">Se a expressão não casar</h1>
                         </div> 
 
-                        <p>Neste caso, o valor da variável <em>resultado</em> será apenas <em>null</em></p>
+                        <p>Neste caso, o valor da variável <code>resultado</code> será apenas <code>null</code></p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "Casa com a palavra exemplo",
+                            <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /não existe/,
     resultado;
 
 // Executa nossa expressão
 resultado = pattern.exec(string);
-console.log(resultado);
-                            </pre>
+console.log(resultado);</code></pre>
                         </div>
 
                         <pre><code>resultado = null;</code></pre>
@@ -151,19 +147,17 @@ console.log(resultado);
                             <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
                         </div> 
 
-                        <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um ( a mais.</p>
+                        <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um <code>(</code> a mais.</p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "Casa com a palavra exemplo",
+                            <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     <em>pattern = /(exemplo/,</em>
     resultado;
 
 // Executa nossa expressão
 resultado = pattern.exec(string);
-console.log(resultado);
-                            </pre>
+console.log(resultado);</code></pre>
                         </div>
 
                         <p>A execução do código será interrompida, o Firebug mostra a seguinte mensagem:
@@ -183,20 +177,20 @@ console.log(resultado);
 
                         <p>Como, então, faremos para checar se o obtevemos sucesso ou não?</p>
 
-                        <p>Bom, ao especionarmos o valor da variável <em>resultado</em> ela retorna primeiro o array, conforme trecho abaixo:</p>
+                        <p>Bom, ao especionarmos o valor da variável <code>resultado</code> ela retorna primeiro o array, conforme trecho abaixo:</p>
 
-                        <pre><code>resultado = ['exemplo'];</code></pre>
+                        <pre><code class="language-javascript">resultado = ['exemplo'];</code></pre>
 
                         <p>As demais propriedades ainda estão disponíveis, veja:</p>
 
-                        <pre><code>console.log(resultado[0])       // exibibe 'string "casa"'
+                        <pre><code class="language-javascript">console.log(resultado[0])       // exibibe 'string "casa"'
 console.log(resultado['index']) // exibibe 19
 console.log(resultado['input']) // exibibe 'string "Casa com a palavra exemplo"'
 </code></pre>
 
                         <p>Caso a expressão não case, então o resultado será null, logo, nosssa lógia poderá ficar como mostrado abaixo:</p>
 
-                        <pre><code>se casou então
+                        <pre><code class="language-javascript">se casou então
     print "casou"
 senão
     print "não casou"
@@ -206,8 +200,7 @@ senão
 
                         <div class="code">
                             <h6>JS - código final</h6>
-                            <pre>
-var string = "Casa com a palavra exemplo",
+                            <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
     resultado;
 
@@ -218,8 +211,7 @@ if (resultado) {
     console.log("casou", resultado);
 } else {
     console.log("não casou", resultado);
-}
-                            </pre>
+}</code></pre>
                         </div>
 
                         <p>Lembre-se que se a expressão estiver sintaticamente errada ela interromperá a excução do script, logo, o uso dos blocos

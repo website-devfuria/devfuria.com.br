@@ -1123,6 +1123,7 @@ div.code pre {
 div.code pre.scroll {
     overflow-x: scroll;
 }
-div.code pre em {
+div.code pre em, div.code pre code em {
     font-weight: 900;
+    background-color: #FFFF00;    
 }
