@@ -93,7 +93,7 @@ if ($resultado === 1) {
                             veja a figura abaixo:</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Resultado do primeiro exemplo em PHP" src="php-preg-math.png" />
+                            <img class="img-rounded" alt="###apenas o primeiro resultado" src="php-preg-math.png" />
                         </div>                         
 
                         <p>Mas, se observarmos o exemplo lá no começo da matéria, a expressão casa com outras partes da string:</p>
@@ -107,7 +107,7 @@ if ($resultado === 1) {
                             veja a figura abaixo:</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Resultado do primeiro exemplo em PHP" src="php-preg-math-all.png" />
+                            <img class="img-rounded" alt="###todos os resultados" src="php-preg-math-all.png" />
                         </div>                          
 
                         <p>Segue o código alterado para a função preg&#95;math&#95;all():</p>

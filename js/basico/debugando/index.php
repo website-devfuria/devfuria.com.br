@@ -142,7 +142,7 @@ alert(minha_variavel);
 </code></pre>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="######Debugando com Janela popup!" src="debug-alert.png" />
+                            <img class="img-rounded" alt="###Debugando com Janela popup!" src="debug-alert.png" />
                             <p><a href="https://courses.cs.washington.edu/courses/cse190m/11su/labs/lab5-pimpmytext.shtml" title="link-externo">Fonte da imagem acima</a></p>
                         </div>                           
                         
@@ -155,7 +155,7 @@ document.write(minha_variavel);
 </code></pre>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Janela popup!"  src="debug-write.png">
+                            <img class="img-rounded" alt="###Debugando no próprio HTML"  src="debug-write.png">
                             <p><a href="http://blueashes.com/2011/web-development/install-nodejs-on-windows/" title="link-externo">Fonte da imagem acima</a></p>
                         </div>  
 
@@ -180,7 +180,7 @@ console.log(minha_variavel);
                             na IDE Eclipse.</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Janela popup!"  src="debug-firebug.png">
+                            <img class="img-rounded" alt="###Debugando com firebug"  src="debug-firebug.png">
                             <p><a href=http://1.bp.blogspot.com/-yxbVFlzsyK8/UBUm7iInQAI/AAAAAAAAFpQ/l4ZSI-Mv4Ps/s1600/console.png" title="link-externo">Fonte da imagem acima</a></p>
                         </div>  
 

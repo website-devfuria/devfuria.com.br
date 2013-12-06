@@ -257,7 +257,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                         <p>Bom... um servidor apache pode rodar outas linguagens além do PHP, mas veja este outro gráfico:</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###<estatística do PHP>" src="php_estatistica01.png" class="img-responsive">
+                            <img class="img-rounded" alt="###estatística do PHP" src="php_estatistica01.png" class="img-responsive">
                             <p>O gráfico acima mostra a repartição das 6 maiores linguagens identificáveis em 6.7 milhões de domínios onde a linguagem
                                 pôde ser determinada.</p>
                             <p>
