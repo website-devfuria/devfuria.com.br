@@ -134,8 +134,8 @@ element.onclick = function() {
                             figuras abaixo:</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" src="pic_bulboff.gif" alt="###lámpada apagada" />
-                            <img class="img-rounded" src="pic_bulbon.gif" alt="###lámpada acesa" />
+                            <img class="img-rounded" src="pic_bulboff.gif" alt="### lámpada apagada" />
+                            <img class="img-rounded" src="pic_bulbon.gif" alt="### lámpada acesa" />
                             <p>O truque das lámpadas</p>
                         </div>                         
 

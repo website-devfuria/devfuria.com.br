@@ -69,7 +69,7 @@ require "../../../core/boot.php";
                         </div>
 
                         <div class="bs-example ">
-                            <img class="img-rounded" alt="###Exemplo de Expressão Regular" src="ponto-casa.png" />
+                            <img class="img-rounded" alt="### Exemplo de Expressão Regular" src="ponto-casa.png" />
                         </div>                         
 
                     </div>
@@ -80,7 +80,7 @@ require "../../../core/boot.php";
                         </div>
 
                         <div class="bs-example ">
-                            <img class="img-rounded" alt="###Exemplo de Expressão Regular" src="ponto-pag41-exemplos.png" />
+                            <img class="img-rounded" alt="### Exemplo de Expressão Regular" src="ponto-pag41-exemplos.png" />
                             <p>Este é o primeiro exemplo</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#1" title="link-externo">Livro: Expressões Regulares 3 edição, pag 41#1</a>
@@ -90,7 +90,7 @@ require "../../../core/boot.php";
 
 
                         <div class="bs-example ">
-                            <img class="img-rounded" alt="###Exemplo de Expressão Regular" src="ponto-pag41-acentos.png" />
+                            <img class="img-rounded" alt="### Exemplo de Expressão Regular" src="ponto-pag41-acentos.png" />
                             <p>Palavras que foram ou não acentudas</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#2" title="link-externo">Livro: Expressões Regulares 3 edição, pag 41#2</a>
@@ -98,7 +98,7 @@ require "../../../core/boot.php";
                         </div> 
 
                         <div class="bs-example ">
-                            <img class="img-rounded" alt="###Exemplo de Expressão Regular" src="ponto-pag41-maiuscula.png" />
+                            <img class="img-rounded" alt="### Exemplo de Expressão Regular" src="ponto-pag41-maiuscula.png" />
                             <p>Palavras que começam com maiúsculas ou não</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#3" title="link-externo">Livro: Expressões Regulares 3 edição, pag 41#3</a>
@@ -106,7 +106,7 @@ require "../../../core/boot.php";
                         </div> 
 
                         <div class="bs-example ">
-                            <img class="img-rounded" alt="###Exemplo de Expressão Regular" src="ponto-pag41-grafia.png" />
+                            <img class="img-rounded" alt="### Exemplo de Expressão Regular" src="ponto-pag41-grafia.png" />
                             <p>Palavras com grafia possivelmente errada</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#4" title="link-externo">Livro: Expressões Regulares 3 edição, pag 41#4</a>
@@ -114,7 +114,7 @@ require "../../../core/boot.php";
                         </div> 
 
                         <div class="bs-example ">
-                            <img class="img-rounded" alt="###Exemplo de Expressão Regular" src="ponto-pag42-horas.png" />
+                            <img class="img-rounded" alt="### Exemplo de Expressão Regular" src="ponto-pag42-horas.png" />
                             <p>Palavras que parcem-se com horas</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#5" title="link-externo">Livro: Expressões Regulares 3 edição, pag 42#5</a>
@@ -122,7 +122,7 @@ require "../../../core/boot.php";
                         </div> 
 
                         <div class="bs-example ">
-                            <img class="img-rounded" alt="###Exemplo de Expressão Regular" src="ponto-pag42-tags.png" />
+                            <img class="img-rounded" alt="### Exemplo de Expressão Regular" src="ponto-pag42-tags.png" />
                             <p>Tags de HTML</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#6" title="link-externo">Livro: Expressões Regulares 3 edição, pag 42#6</a>

@@ -109,7 +109,7 @@ require "../../../core/boot.php";
                             informações. Por hora, vamos nos deter apenas no universo do HTML e da CSS.</p>
 
                         <div class="bs-example">
-                            <img class="img-thumbnail" alt="###Tim Berners Lee" src="tim-berners-lee.jpg">
+                            <img class="img-thumbnail" alt="### Tim Berners Lee" src="tim-berners-lee.jpg">
                             <p>Tim Berners-Lee, esse é o cara!.</p>
                         </div>
 
@@ -169,7 +169,7 @@ require "../../../core/boot.php";
                             O código acima não é valido e serve apenas para fins didâticos e ilustrativo.</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###HTML basico" src="html-basico.jpg">
+                            <img class="img-rounded" alt="### HTML basico" src="html-basico.jpg">
                             <p><a href="http://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=1011879" title="link-externo">Fonte da imagem acima</a></p>
                         </div>
 
@@ -203,7 +203,7 @@ require "../../../core/boot.php";
                                 veremos HTML concomitante com o HTML5.</p>
 
                             <div class="bs-example">
-                                <img class="img-rounded" alt="###Histórico do HMTL" src="fmt-html-versions.png">
+                                <img class="img-rounded" alt="### Histórico do HMTL" src="fmt-html-versions.png">
                                 <p><a href="http://www.webarchive.org.uk/ukwa/visualisation/ukwa.ds.2/fmt" title="link-externo">Fonte da imagem acima</a></p>
                             </div>
 
@@ -257,22 +257,22 @@ p {
                         <p>Se uma imagem vale por mil palavras, vou lhe mandar 4 imagens, espero que valham 4 mil palavras...</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Seletor CSS" src="css-syntax01.gif">
+                            <img class="img-rounded" alt="### Seletor CSS" src="css-syntax01.gif">
                             <p><a href="http://www.sleddogstudio.com/webdesign/lesson/09/">Fonte da imagem acima</a></p>
                         </div>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Seletor CSS" src="css-syntax02.gif">
+                            <img class="img-rounded" alt="### Seletor CSS" src="css-syntax02.gif">
                             <p><a href="http://learnwebcode.com/what-is-css/">Fonte da imagem acima</a></p>
                         </div>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Seletor CSS" src="css-syntax03.png">
+                            <img class="img-rounded" alt="### Seletor CSS" src="css-syntax03.png">
                             <p><a href="http://en.support.wordpress.com/custom-design/css-basics/">Fonte da imagem acima</a></p>
                         </div>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Seletor CSS" src="css-syntax04.png">
+                            <img class="img-rounded" alt="### Seletor CSS" src="css-syntax04.png">
                             <p><a href="http://cscie12.dce.harvard.edu/lecture_notes/2006-07/20070220/handout.html">Fonte da imagem acima</a></p>
                         </div>
 

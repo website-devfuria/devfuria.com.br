@@ -124,7 +124,7 @@ element.onclick = function() {
                             o seu código fonte. Obviamente, não vamos nos deter nisso agora, mesmo porque é cedo para adentrarmos nesse assunto.</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Livro de Martin Fowler" src="refactoringBook.jpg">
+                            <img class="img-rounded" alt="### Livro de Martin Fowler" src="refactoringBook.jpg">
                             <p>Livro: Refatoração, aperfeiçoando o projeto de código existente (Martin Fowler).</p>
                         </div>                        
 
@@ -147,14 +147,14 @@ element.onclick = function() {
                         <p>TDD é uma arte (ninja) e o mestre e o Kent Bech.</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Livro de Kent Bech" src="tdd-livro.jpg">
+                            <img class="img-rounded" alt="### Livro de Kent Bech" src="tdd-livro.jpg">
                             <p>Livro: Desenvolvimento Guiado por Testes (Kent Bech)</p>
                         </div>                        
 
                         <p>O conceito é muito interessante, procure ler sobre, abaixo uma figura para estigá-lo:</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###### Ciclo do TDD" src="tdd-conceito.jpg">
+                            <img class="img-rounded" alt="### ### Ciclo do TDD" src="tdd-conceito.jpg">
                             <p>Ciclo do TDD</p>
                         </div>                        
 

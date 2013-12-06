@@ -71,7 +71,7 @@ require "../../../core/boot.php";
                             mas nem sempre é possível.</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Desenho em quadrinhos satirizando a lógica!" src="vida_prog_25.png">
+                            <img class="img-rounded" alt="### Desenho em quadrinhos satirizando a lógica!" src="vida_prog_25.png">
                             <p>Há... essas mulheres!.</p>
                             <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/03/22/logica-de-programacao/" title="link-externo">Vida de programador</a></p>
                         </div>                        

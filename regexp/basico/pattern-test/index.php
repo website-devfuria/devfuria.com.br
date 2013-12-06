@@ -136,7 +136,7 @@ console.log(resultado);
 
                         <p>Igualmente a função match(), a execução do código será interrompida e o Firebug mostrará a seguinte mensagem:
                         <div class="bs-example">
-                            <img class="img-rounded" src="match-erro.png" alt="###match-resultado" />
+                            <img class="img-rounded" src="match-erro.png" alt="### match-resultado" />
                         </div></p>
 
                     </div> 

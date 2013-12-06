@@ -134,7 +134,7 @@ require "../../../core/boot.php";
                             e básico sem perder a profundidade.</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Livro sobre o linux, autor Morimoto" src="linux-guia-pratico-morimoto.jpg">
+                            <img class="img-rounded" alt="### Livro sobre o linux, autor Morimoto" src="linux-guia-pratico-morimoto.jpg">
                             <p>Ótimo livro para iniciantes no Linux</p>
                         </div>                        
                         

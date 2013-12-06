@@ -104,7 +104,7 @@ echo $minha_var;
 </code></pre>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Debugando com echo" src="debug-echo.png" />
+                            <img class="img-rounded" alt="### Debugando com echo" src="debug-echo.png" />
                             <p>Ilustração de como é exibido os dados SEM var_dump()</p>
                         </div>
 
@@ -136,7 +136,7 @@ die();
 </code></pre>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Debugando com var_dump()" src="debug-var_dump.png" />
+                            <img class="img-rounded" alt="### Debugando com var_dump()" src="debug-var_dump.png" />
                             <p>Ilustração de como é exibido os dados COM var_dump()</p>
                         </div>                        
 
@@ -165,7 +165,7 @@ die();
                         <p>Nesse caso, ele trás várias informações e leitor deve acostumar-se a "extrair" essas informações.</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="######Debugando com echo" src="debug-erro.png">
+                            <img class="img-rounded" alt="### ###Debugando com echo" src="debug-erro.png">
                             <p>Erro exibido pelo x-debug!</p>
                         </div>                        
 

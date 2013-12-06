@@ -69,7 +69,7 @@ require "../../../core/boot.php";
                         </div>
 
                         <div class="bs-example">
-                            <img class="img-thumbnail" alt="###Imagem do livro 'Simple Javascript'"  src="livro-simple-js.jpg">
+                            <img class="img-thumbnail" alt="### Imagem do livro 'Simple Javascript'"  src="livro-simple-js.jpg">
                             <p>Este livro é excelente para quem está comneçando com JS.</p>
                         </div>
 
@@ -183,7 +183,7 @@ element.onclick = function() {
                         </div>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###Imagem da luz apagada" id="myimage" src="pic_bulboff.gif">
+                            <img class="img-rounded" alt="### Imagem da luz apagada" id="myimage" src="pic_bulboff.gif">
                             <p>Programar é uma atividade criativa !!! Clique e confira.</p>
                             <p>Fonte:<a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_lightbulb" title="link-externo">w3schools</a></p>
                         </div>

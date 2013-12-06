@@ -95,7 +95,7 @@ console.log(resultado);
                         <p>A janela do Firebug mostra o sinal "+" se clicar em cima dele o objeto se expandirá conforme a figura abaixo:</p>
 
                         <div class="bs-example ">
-                            <img class="img-rounded" alt="###match-resultado" src="match-resultado.png" />
+                            <img class="img-rounded" alt="### match-resultado" src="match-resultado.png" />
                         </div>
 
                         <p>O valor da variável <em>resultado</em> na verdade é:</p>
@@ -160,7 +160,7 @@ console.log(resultado);
                         <p>A execução do código será interrompida, o Firebug mostra a seguinte mensagem:</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="###match-ero" src="match-erro.png" />
+                            <img class="img-rounded" alt="### match-ero" src="match-erro.png" />
                         </div>                        
 
                     </div> 
