@@ -65,7 +65,7 @@ require "../../../core/boot.php";
                             <h1 id="intro">Um HTML de primeira qualidade</h1>
                         </div>
 
-                        <p>O site <a href="http://www.csszengarden.com/">csszengarden.com</a> é notório por seus esforços em promover e divulgar <strong>o poder do
+                        <p>O site <a href="http://www.csszengarden.com/" title="link-externo">csszengarden.com</a> é notório por seus esforços em promover e divulgar <strong>o poder do
                                 CSS unido a um bom HTML</strong>. Ele traz uma proposta interessante: criaram um HTML básico, porém bem formado, válido e
                             desafiaram designers solcitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá utiliar o
                             tema/estilo que quiser, mas não poderá jamais alterar o HTML e sua estrutura.</p>
@@ -118,7 +118,7 @@ require "../../../core/boot.php";
 
                         <p>Dentro do arquivo criado, cole o texto abaixo.</p>
 
-                        <p>Ele será o conteúdo de nossa primeira página (extraído do site <a href="http://www.csszengarden.com/">csszengarden.com</a> ).</p>
+                        <p>Ele será o conteúdo de nossa primeira página (extraído do site <a href="http://www.csszengarden.com/" title="link-externo">csszengarden.com</a> ).</p>
 
                         <p>Após ter lido atentamente o texto, olhe para ele e pergunte-se: <strong>aonde e quais tag's você utilizaria?</strong></p>
 

@@ -62,7 +62,7 @@ require "../../../core/boot.php";
                         <p>A diferênça básica é que o browser acomoda os elementos <strong>inline</strong> à esquerda um ao lado do outro
                             e as de <strong>bloco</strong ele coloca uma em baixo da outra ocupando a tela toda.></p>
 
-                        <p>Veja o HTML abaixo para entender e clique no <a href="code1.html" title="Veja a pagina em funcionamento">link</a>
+                        <p>Veja o HTML abaixo para entender e clique no <a href="code1.html" title="link-externo">link</a>
                             para perceber como ele foi reenderizado.</p>
 
                         <div class="code">
@@ -168,7 +168,7 @@ require "../../../core/boot.php";
                         <p>A tag <code>span</code> é inline, mas se aplicarmos a propriedade <code>block</code> ela se comportará como uma tag block-level.</p>
 
                         <p>Para ilustrar eu utilizei o mesmo HTML acima e apliquei duas regras de css para "inverter as bolas", quem era block virou
-                            inline e quem era inline virou block. Veja o resultado <a href="code2.html" title="tipos invertidos">aqui</a></p>
+                            inline e quem era inline virou block. Veja o resultado <a href="code2.html" title="link-externo">aqui</a></p>
 
                         <div class="code">
                             <h6>HTML(inválido)</h6>

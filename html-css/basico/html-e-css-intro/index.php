@@ -175,7 +175,7 @@ require "../../../core/boot.php";
                                 coisa, mas se adicionarmos ao tempero a propriedade <code>float</code> (olha ela aí denovo) a brincadeira ficará mais interessante.</p>
 
                             <p>Podemos dizer para a imagem flutuar à equerda, então o texto fluirá para o lado inverso (direita).
-                                Veja o código abaixo e o resultado <a href="p_img_e.html">aqui</a>.</p>
+                                Veja o código abaixo e o resultado <a href="p_img_e.html" title="link-externo">aqui</a>.</p>
 
                             <pre><code>&lt;p&gt;
     &lt;img src="tom-jobim.jpg" alt="Tom Jobim" style="float: left" /&gt;
@@ -198,7 +198,7 @@ require "../../../core/boot.php";
 </code></pre>
 
                             <p>... ou podemos dizer para a imagem flutuar à direita e então o texto fluirá a esquerda.
-                                Veja o código abaixo e o resultado <a href="p_img_d.html">aqui</a>.</p>
+                                Veja o código abaixo e o resultado <a href="p_img_d.html" title="link-externo">aqui</a>.</p>
 
                             <pre><code>&lt;p&gt;
     &lt;img src="tom-jobim.jpg" alt="Tom Jobim" style="float: right" /&gt;
@@ -348,7 +348,7 @@ require "../../../core/boot.php";
 
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Imagem do Pixel" src="pixel.png">
-                            <p><a href="http://pt.wikipedia.org/wiki/Pixelx">Fonte da imagem acima</a></p>
+                            <p><a href="http://pt.wikipedia.org/wiki/Pixelx" title="link-externo">Fonte da imagem acima</a></p>
                         </div>                        
 
                         <p><strong>As cores</strong> normalmente são apresentadas pela combinação das cores primárias. Dizemos ao navegador o quanto queremos de
@@ -366,7 +366,7 @@ require "../../../core/boot.php";
 
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Imagem das Cores" src="cores.png">
-                            <p><a href="http://pt.wikipedia.org/wiki/Pixelx">Fonte da imagem acima</a></p>
+                            <p><a href="http://pt.wikipedia.org/wiki/Pixelx" title="link-externo">Fonte da imagem acima</a></p>
                         </div>                        
 
                         <div class="bs-docs-section">

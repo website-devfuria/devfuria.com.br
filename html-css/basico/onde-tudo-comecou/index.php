@@ -125,19 +125,19 @@ require "../../../core/boot.php";
                             A tag "p" define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:</p>
 
                         <ul>
-                            <li><em>html</em> - define o próprio documento HTML.</li>
-                            <li><em>head</em> - define o cabeçalho do documento.</li>
-                            <li><em>titlte</em> - define o título.</li>
-                            <li><em>body</em> - define o corpo.</li>
-                            <li><em>h1</em> - definie o primeiro título(o mais importante).</li>
-                            <li><em>h2</em> - definie o segudo título, e assim até o h6.</li>
-                            <li><em>a</em> -  define uma âncora, quero dizer, o famoso link.</li>
-                            <li><em>img</em> - define uma imagem</li>
+                            <li><code>html</code> - define o próprio documento HTML.</li>
+                            <li><code>head</code> - define o cabeçalho do documento.</li>
+                            <li><code>titlte</code> - define o título.</li>
+                            <li><code>body</code> - define o corpo.</li>
+                            <li><code>h1</code> - definie o primeiro título(o mais importante).</li>
+                            <li><code>h2</code> - definie o segudo título, e assim até o h6.</li>
+                            <li><code>a</code> -  define uma âncora, quero dizer, o famoso link.</li>
+                            <li><code>img</code> - define uma imagem</li>
                         </ul>
 
-                        <p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: &lt;nome da tag&gt; e toda tag aberta deve ser fechada.</p>
+                        <p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: <code>&lt;nome da tag&gt</code>; e toda tag aberta deve ser fechada.</p>
 
-                        <p>A barra para direita indica qual é a <em>tag de fechamento</em>, exemplo: &lt;p&gt;aqui é um parágrafo&lt;/p&gt;</p>
+                        <p>A barra para direita indica qual é a <em>tag de fechamento</em>, exemplo: <code>&lt;p&gt;aqui é um parágrafo&lt;/p&gt;</p></code>
 
                         <p>Abaixo conferimos um arquivo HTML na sua essência:</p>
 
@@ -170,7 +170,7 @@ require "../../../core/boot.php";
 
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="HTML basico" src="html-basico.jpg">
-                            <p><a href="http://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=1011879">Fonte da imagem acima</a></p>
+                            <p><a href="http://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=1011879" title="link-externo">Fonte da imagem acima</a></p>
                         </div>
 
 
@@ -195,7 +195,7 @@ require "../../../core/boot.php";
                                 Sim, são coisas distintas umas das outras, mas em sua essência não passam de mero HTML. Por simplificação, utilizaremos
                                 o termo HTML de forma gernérica e quando for necessário ser mais específico utilzaremos o termo correto.</p>
 
-                            <p>O HTML5 é a versão mais atual do HTML. O grupo WHATWG (<a href="http://www.whatwg.org/">http://www.whatwg.org/</a>) não teve a mesma
+                            <p>O HTML5 é a versão mais atual do HTML. O grupo WHATWG (<a href="http://www.whatwg.org/" title="link-externo">http://www.whatwg.org/</a>) não teve a mesma
                                 pasciência que o w3c e saiu na frente com as especificações da tão esperada HTML5. A nova versão excluíu alguns
                                 elementos já defazados, inseriu alguns outros mais "semânticos" e trouxe novidades como videos, armazenamento local,
                                 canvas(uma prancheta para você desenhar via código), geo-location, web off-line, campos com autofoco, placeholders e muito
@@ -204,7 +204,7 @@ require "../../../core/boot.php";
 
                             <div class="bs-example bs-example-images">
                                 <img class="img-rounded" alt="Histórico do HMTL" src="fmt-html-versions.png">
-                                <p><a href="http://www.webarchive.org.uk/ukwa/visualisation/ukwa.ds.2/fmt">Fonte da imagem acima</a></p>
+                                <p><a href="http://www.webarchive.org.uk/ukwa/visualisation/ukwa.ds.2/fmt" title="link-externo">Fonte da imagem acima</a></p>
                             </div>
 
                         </div>
