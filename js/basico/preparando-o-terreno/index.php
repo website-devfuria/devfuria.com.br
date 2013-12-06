@@ -11,8 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        
-        $core->head->setTitle('JS');
+        $core->head->setTitle('');
+        $core->head->setDescription('');
+        $core->head->setkeywords('');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>

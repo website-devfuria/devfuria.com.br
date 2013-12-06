@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('PHP');
+        $core->head->setTitle('Começando com PHP');
+        $core->head->setDescription('');
+        $core->head->setkeywords('');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
