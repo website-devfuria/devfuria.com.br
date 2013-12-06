@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('Compilando Expressões Regulares');
+        $core->head->setDescription('Essa matéria, curtinha diga-se de passagem, mostra como compilar uma ER.');
+        $core->head->setkeywords('compilar er, compilar expressões regulares');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

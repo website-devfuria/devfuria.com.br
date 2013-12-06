@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('match(), test() e exec()');
+        $core->head->setDescription('Dissecando as funções match(), test() e exec() do JS');
+        $core->head->setkeywords('expressões regulares, match(), test(),  exec()');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

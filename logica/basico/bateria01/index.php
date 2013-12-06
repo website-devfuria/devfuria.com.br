@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('Exercícos básicos de lógica de programação');
+        $core->head->setDescription('10 exercícos de lógica de programação pra quem quase nunca viu lógica de programação, utilizaremos pseudocódigo');
+        $core->head->setkeywords('exercícios de lógica de programação, começando com lógica de programação, lógica de programação para inciantes');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

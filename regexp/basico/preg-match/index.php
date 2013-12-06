@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('preg_match()');
+        $core->head->setDescription('Dissecando a função preg_match() do PHP');
+        $core->head->setkeywords('expressões regulares, preg_match(), preg_match');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('Introdução a linguagem de programação JAVASCRIPT');
+        $core->head->setDescription('Uma introdução ao Javascript. Acompanha 2 script para quebrar o \"gelo\"');
+        $core->head->setkeywords('iniciando em javascript, aprendendo javascript, começando com javascript');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

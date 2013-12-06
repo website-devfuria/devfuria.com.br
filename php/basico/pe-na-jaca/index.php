@@ -11,9 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('Boas práticas para quem está começando em PHP ');
+        $core->head->setDescription('Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.'.
+                "Veremos 4 conceitos básicos: endentação, nomeação, comentários e estilos.");
+        $core->head->setkeywords('boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

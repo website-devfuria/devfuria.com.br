@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('Introdução aos conceitos intuitivo de ER.');
+        $core->head->setDescription('Aprenda o básico das Expressões Regulares para PHP e JS');
+        $core->head->setkeywords('regexp, começando com regexp, aprendendo expressões regulares, expressões regulares para iniciantes');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

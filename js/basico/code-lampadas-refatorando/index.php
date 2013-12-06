@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('Refatorando o códig da máteria \"Code - A lâmpada \"');
+        $core->head->setDescription('Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.');
+        $core->head->setkeywords('oop em javascript, refatoração, codificação coesa, boas práticas, organizando o código');        
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

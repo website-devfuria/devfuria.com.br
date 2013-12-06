@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('pattern.exec()');
+        $core->head->setDescription('Dissecando a função pattern.exec() do JS');
+        $core->head->setkeywords('expressões regulares, spattern.exec(), pattern.exec');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

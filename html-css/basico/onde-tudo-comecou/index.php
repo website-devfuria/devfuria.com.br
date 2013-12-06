@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('Introdução ao HTML e ao CSS');
+        $core->head->setDescription('Aprenda sobre: tags básicas de HTML, corpo de HTML, CSS, seletores, propriedades e ferramentas que ajuadm no desenvolvimento');
+        $core->head->setkeywords('começando com HTML, começando com CSS, corpo do html, tags básicas de HTML, firbug, webdeveloper');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>

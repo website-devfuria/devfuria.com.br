@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('preg_math_all()');
+        $core->head->setDescription('Dissecando a função preg_math_all() do PHP');
+        $core->head->setkeywords('expressões regulares, preg_math_all(), preg_math_all');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
