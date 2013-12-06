@@ -151,7 +151,7 @@ die();
 
                         <p>Para se beneficiar 100% da função var_dump() devemos ter instalado o programa x-debug.</p>
 
-                        <p>Veja a matéria <a href="http://www.devfuria.com.br/php/basico/instalando-o-ambiente/" title="Materia">Instalando o Ambiente no estilo NEXT, NEXT, NEXT.</a>
+                        <p>Veja a matéria <a href="http://www.devfuria.com.br/php/basico/instalando-o-ambiente/" title="Matéria">Instalando o Ambiente no estilo NEXT, NEXT, NEXT.</a>
                             para saber como instalá-lo.</p>
 
                         <p>O x-debug vai exibir o resultado de uma forma mais legível.</p>

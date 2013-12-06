@@ -231,7 +231,7 @@ endereco</pre>
                         <p>A figura a seguir mostra um exemplo de convenção de nomenclatura.</p>
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Nomenclatura de variáveis" src="nomenclatura1.png">
-                            <p>Fonte: <a href="http://code.google.com/p/guardachuva/wiki/ConvencoesDeNomeacao">Projeto Guarda Chuva</a></p>
+                            <p>Fonte: <a href="http://code.google.com/p/guardachuva/wiki/ConvencoesDeNomeacao" title="link-externo">Projeto Guarda Chuva</a></p>
                         </div>                        
                     </div>
 

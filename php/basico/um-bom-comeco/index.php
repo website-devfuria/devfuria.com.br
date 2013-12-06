@@ -125,7 +125,7 @@ require "../../../core/boot.php";
                                 <img class="img-rounded" alt="funcionamento do servidor web" src="morimoto_apache1.png">
                                 <p>Esquema da arquitetura na qual, comumente, é executado os script em PHP.</p>
                                 <p>Fonte:
-                                    <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html">Morimoto</a>
+                                    <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html" title="link-externo">Morimoto</a>
                                 </p>
                             </div>
 
@@ -250,7 +250,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                             <img class="img-rounded" alt="funcionamento do servidor web" src="apache_estatistica01.png">
                             <p>Estatística de servidores web pelo mundo</p>
                             <p>
-                                <a href="http://news.netcraft.com/archives/2012/09/10/september-2012-web-server-survey.html#more-6429">Fonte: Natcraft</a>
+                                <a href="http://news.netcraft.com/archives/2012/09/10/september-2012-web-server-survey.html#more-6429" title="link-externo">Fonte: Natcraft</a>
                             </p>
                         </div>
 
@@ -261,7 +261,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                             <p>O gráfico acima mostra a repartição das 6 maiores linguagens identificáveis em 6.7 milhões de domínios onde a linguagem
                                 pôde ser determinada.</p>
                             <p>
-                                <a href="http://phpadvent.org/2010/usage-statistics-by-ilia-alshanetsky">Fonte: http://phpadvent.org</a>
+                                <a href="http://phpadvent.org/2010/usage-statistics-by-ilia-alshanetsky" title="link-externo">Fonte: http://phpadvent.org</a>
                             </p>
                         </div>
 
