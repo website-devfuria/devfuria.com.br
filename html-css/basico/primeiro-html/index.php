@@ -92,8 +92,7 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>HTML - Nossa estrutura básica </h6>
-                            <pre>
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                            <pre><code class="language-html">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
 
 &lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" &gt;
@@ -107,9 +106,7 @@ require "../../../core/boot.php";
 
     &lt;/body&gt;
 
-&lt;/html&gt;
-
-                            </pre>
+&lt;/html&gt;</code></pre>
                         </div>
 
                         <p>A um <strong>palavrão</strong> chamado DOCTYPE, eu sei. Em breve falaremos dele.</p>
@@ -133,10 +130,7 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>zengarden-sample.html</h6>
-                            <pre>
-
-css Zen Garden
-
+                            <pre><code class="no-highlight">css Zen Garden
 
 # A Beleza de um Design CSS
 
@@ -182,9 +176,7 @@ Nós pedimos que você envie ilustrações originais. Por favor, respeite as lei
 
 Este é um exercício de aprendizado na mesma medida em que é uma demonstração. Você manterá o copyright completo de todos os seus gráficos, mas pedimos que você libere o seu CSS sob uma licença Creative Commons idêntica à deste site de modo que outros possam aprender do seu trabalho.
 
-A banda usada por este site está sendo graciosamente doada por mediatemple.
-
-                            </pre>
+A banda usada por este site está sendo graciosamente doada por mediatemple.</code></pre>
                         </div>
 
                         <p>E aí, terminou? Então pode ver a solução.</p>
@@ -198,9 +190,7 @@ A banda usada por este site está sendo graciosamente doada por mediatemple.
 
                         <div class="code">
                             <h6>HTML</h6>
-                            <pre>
-
-<em>&lt;h1&gt;</em>css Zen Garden<em>&lt;/h1&gt;</em>
+                            <pre><code class="no-highlight"><em>&lt;h1&gt;</em>css Zen Garden<em>&lt;/h1&gt;</em>
 
 <em>&lt;h2&gt;</em>A Beleza de um Design CSS<em>&lt;/h2&gt;</em>
 
@@ -212,9 +202,7 @@ A banda usada por este site está sendo graciosamente doada por mediatemple.
 
 <em>&lt;p&gt;</em>Entulhando uma escura e aterrorizante estrada jazem as relíquias antigas de elementos específicos a navegadores, DOMs incompatíveis e falta de suporte correto ao padrão CSS.<em>&lt;/p&gt;</em>
 
-etc...
-
-                            </pre>
+etc...</code></pre>
                         </div>
 
                         <p>Essa foi fácil!</p>

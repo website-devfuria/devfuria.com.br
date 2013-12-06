@@ -384,8 +384,7 @@ require "../../../core/boot.php";
 
                             <div class="code">
                                 <h6>HTML & CSS</h6>
-                                <pre>
-&lthtml&gt
+                                <pre><code class="language-html">&lthtml&gt
     &lthead&gt
         &lttitle&gtTítulo da página&lt/title&gt
     &lt/head&gt
@@ -402,8 +401,7 @@ require "../../../core/boot.php";
         &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtsexto parágrafo&lt/p&gt
 
     &lt/body&gt
-&lt/html&gt
-                                </pre>
+&lt/html&gt</code></pre>
                             </div>
 
                             <p>O leitor atento notou que tivemos que repetir a regra em cada parágrafo. Essa forma além de repetir código, não ajuda na
@@ -416,8 +414,7 @@ require "../../../core/boot.php";
 
                             <div class="code">
                                 <h6>HTML e CSS</h6>
-                                <pre>
-&lthtml&gt
+                                <pre><code class="language-html">&lthtml&gt
     &lthead&gt
         &lttitle&gtTítulo da página&lt/title&gt
         <em>&ltstyle type="text/css" media="all"&gt
@@ -440,8 +437,7 @@ require "../../../core/boot.php";
         &ltp&gtsexto parágrafo&lt/p&gt
 
     &lt/body&gt
-&lt/html&gt
-                                </pre>
+&lt/html&gt</code></pre>
                             </div>
 
                             <p>Já é bem melhor que o método anterior: já é possível localizar a CSS com mais facilidade no documento.
@@ -454,8 +450,7 @@ require "../../../core/boot.php";
 
                             <div class="code">
                                 <h6>HTML</h6>
-                                <pre>
-&lthtml&gt
+                                <pre><code class="language-html">&lthtml&gt
     &lthead&gt
         &lttitle&gtTítulo da página&lt/title&gt
         <em>&ltlink rel="stylesheet" type="text/css" href="estilos.css" media="all" /&gt</em>
@@ -473,8 +468,7 @@ require "../../../core/boot.php";
         &ltp&gtsexto parágrafo&lt/p&gt
 
     &lt/body&gt
-&lt/html&gt
-                                </pre>
+&lt/html&gt</code></pre>
                             </div>
 
                             <p>Agora sim temos um método profissional. Toda CSS fica em arquivo separado que é incluso no HTML através de uma única linha.

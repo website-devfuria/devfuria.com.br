@@ -86,16 +86,14 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var element = document.getElementById('myimage');
+                            <pre><code class="language-javascript">var element = document.getElementById('myimage');
 element.onclick = function() {
     if (element.src.match("bulbon")) {
         element.src = "pic_bulboff.gif";
     } else {
         element.src = "pic_bulbon.gif";
     }
-};
-                            </pre>
+};</code></pre>
                         </div>
 
                         <p><em>O que podemos melhorar nesse código ?</em></p>
@@ -131,11 +129,11 @@ element.onclick = function() {
                         <p>Mas, repondendo a pergunta, vamos alterar o ćodigo no sentido de clareza, pelo menos inicialmente. O problema é que
                             não vamos utilizar nenhuma metodologia para isso, ou seja, vamos aplicar arte pura e um pouco de gosto pessoal.</p>
 
-                        <p>Meu objetivo é plantar na sua mente uma semente chamada <em>"organização, limpeza e clareza"</em>.</p>
+                        <p>Meu objetivo é plantar na sua mente uma semente chamada <strong>"organização, limpeza e clareza"</strong>.</p>
 
                         <p>Essa palavras faem sentido para você? Sim ? Que ótimo, pois é nesse sentido que vamos tentar alterar o cósigo fonte original de nosso exemplo.</p>
 
-                        <p><em>O código já está funcionando, se eu mexer poderei danificá-lo!</em></p>
+                        <p><strong>O código já está funcionando, se eu mexer poderei danificá-lo!</strong></p>
 
                         <p>Poderá e com certeza irá danificá-lo.</p>
 
@@ -175,15 +173,15 @@ element.onclick = function() {
 
                         <p>Objeto vazio (e solto):</p>
 
-                        <pre><code>{}</code></pre>
+                        <pre><code class="language-javascript">{}</code></pre>
 
                         <p>Objeto vazio atribuído a uma variável qualquer:</p>
 
-                        <pre><code>var foo = {};</code></pre>
+                        <pre><code class="language-javascript">var foo = {};</code></pre>
 
                         <p>Objeto coma algumas prorpiedades:</p>
 
-                        <pre><code>var personagem = {
+                        <pre><code class="language-javascript">var personagem = {
     nome: "Zé Colméia",
     peso: "gordinho",
     tipo: "bicho"
@@ -192,13 +190,13 @@ element.onclick = function() {
 
                         <p>Agora podemos referenciar as propriedades:</p>
 
-                        <pre><code>console.log(personagem.nome);
+                        <pre><code class="language-javascript">console.log(personagem.nome);
 // saída: "Zé Colméia"
 </code></pre>
 
                         <p>Acrescentando um método:</p>
 
-                        <pre><code>var personagem = {
+                        <pre><code class="language-javascript">var personagem = {
     nome: "Zé Colméia",
     peso: "gordinho",
     tipo: "bicho",
@@ -210,15 +208,14 @@ element.onclick = function() {
 
                         <p>Executando esse método:</p>
 
-                        <pre><code>personagem.chamarCatatau();
+                        <pre><code class="language-javascript">personagem.chamarCatatau();
 </code></pre>
 
                         <p><em>Preciso que você faça um esforço mental para entender e decorar o seguinte código</em>:</p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var objeto = {
+                            <pre><code class="language-javascript">var objeto = {
     propriedade: "podemos iniciar a variável com algum valor",
     metodo: function() {
         // código
@@ -230,8 +227,7 @@ var objeto = {
         // código
         // código
     }
-};
-                            </pre>
+};</code></pre>
                         </div>
 
                         <p>Repare que tanto as propriedades quanto os métodos:</p>
@@ -251,10 +247,8 @@ var objeto = {
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var lampada = {
-};
-                            </pre>
+                            <pre><code class="language-javascript">var lampada = {
+};</code></pre>
                         </div>
 
                         <p>Vamos mudar um pouco a lógica para simplificar as coisas, ok?
@@ -263,11 +257,9 @@ var lampada = {
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var lampada = {
+                            <pre><code class="language-javascript">var lampada = {
     ligada: false,
-};
-                            </pre>
+};</code></pre>
                         </div>
 
                         <p>Ao criarmos a propriedade, aproveito para "setar" com seu valor padrão, no caso "false".</p>
@@ -278,15 +270,13 @@ var lampada = {
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var lampada = {
+                            <pre><code class="language-javascript">var lampada = {
     ligada: false,
     acender: function() {
     },
     apagar: function() {
     }
-};
-                            </pre>
+};</code></pre>
                         </div>
 
                         <p>Pense um pouco!</p>
@@ -295,18 +285,17 @@ var lampada = {
 
                         <p>Eles devem anotar o caminho da lâmpada da nossa tag img onde:</p>
 
-                        <pre><code>lampada.elemt.scr
+                        <pre><code class="language-javascript">lampada.elemt.scr
 </code></pre>
 
                         <p>representa...</p>
 
-                        <pre><code>objeto.tag_img.caminho_da_imagem = "um/caminho/qualquer"
+                        <pre><code class="language-javascript">objeto.tag_img.caminho_da_imagem = "um/caminho/qualquer"
 </code></pre>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var lampada = {
+                            <pre><code class="language-javascript">var lampada = {
     ligada: false,
     acender: function() {
         lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulbon.gif";
@@ -314,16 +303,14 @@ var lampada = {
     apagar: function() {
         lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
     }
-};
-                            </pre>
+};</code></pre>
                         </div>
 
                         <p>Está faltando uma propriedade para acomodar o elemento HTML "img".</p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var lampada = {
+                            <pre><code class="language-javascript">var lampada = {
     ligada: false,
     <em>element: {},</em>
     acender: function() {
@@ -332,8 +319,7 @@ var lampada = {
     apagar: function() {
         lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
     }
-};
-                            </pre>
+};</code></pre>
                         </div>
 
                         <p>Como colocado acima, essa propriedade é iniciada com um objeto vazio, porém podemos e queremos que ela seja iniciada
@@ -341,8 +327,7 @@ var lampada = {
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var lampada = {
+                            <pre><code class="language-javascript">var lampada = {
     ligada: false,
     <em>element: document.getElementById('myimage'),</em>
     acender: function() {
@@ -351,21 +336,18 @@ var lampada = {
     apagar: function() {
         lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
     }
-};
-                            </pre>
+};</code></pre>
                         </div>
 
                         <p>Antes nós ligávamos o evento à imagem dessa forma:</p>
 
-                        <pre><code>element.onclick = function() {...
-</code></pre>
+                        <pre><code class="language-javascript">element.onclick = function() {...</code></pre>
 
                         <p>Agora vamos fazer algo parecido:</p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var lampada = {
+                            <pre><code class="language-javascript">var lampada = {
     ligada: false,
     element: document.getElementById('myimage'),
     <em>setEvento: function() {
@@ -379,8 +361,7 @@ var lampada = {
     apagar: function() {
         lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
     }
-};
-                            </pre>
+};</code></pre>
                         </div>
 
                         <p>Só falta escrever a lógica desse método para que ele, corretamente, acende e apague a lâmpada.</p>
@@ -390,7 +371,7 @@ var lampada = {
 
                         <p>Segue a lógica</p>
 
-                        <pre><code>se lâmpada ligada então
+                        <pre><code class="language-javascript">se lâmpada ligada então
     desligar()
     anote que ela está desligada
 senão
@@ -402,7 +383,7 @@ senão
 
                         <p>Trasformando o pseudoćodigo em ćodigo de verdade:</p>
 
-                        <pre><code>    lampada.element.onclick = function(){
+                        <pre><code class="language-javascript">lampada.element.onclick = function(){
         if (lampada.ligada) {
             lampada.apagar();
             lampada.ligada = false;
@@ -434,8 +415,7 @@ senão
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var lampada = {
+                            <pre><code class="language-javascript">var lampada = {
     ligada: false,
     element: document.getElementById('myimage'),
     setEvento: function() {
@@ -455,8 +435,7 @@ var lampada = {
     apagar: function() {
         lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
     }
-};
-                            </pre>
+};</code></pre>
                         </div>
                     </div>
 
@@ -471,8 +450,7 @@ var lampada = {
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var lampada = {
+                            <pre><code class="language-javascript">var lampada = {
     ligada: false,
     element: document.getElementById('myimage'),
     setEvento: function() {
@@ -493,8 +471,7 @@ var lampada = {
         lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
     }
 };
-<em>lampada.setEvento();</em>
-                            </pre>
+<em>lampada.setEvento();</em></code></pre>
                         </div>
 
                         <p>Aproveite para testar o código, digo, veja cada valor de variável, sugestões;</p>

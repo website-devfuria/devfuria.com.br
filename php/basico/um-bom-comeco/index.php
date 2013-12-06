@@ -192,7 +192,7 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 # Comentários podem ser feitos em linha ou em bloco:
 
 // comentário em linha
@@ -228,7 +228,7 @@ echo "e serei exibida na tela do navegador.";
  */
 $resultado = 1 + 1;
 echo "Resultado da soma de 1 + 1 = $resultado";
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
                     </div>
 

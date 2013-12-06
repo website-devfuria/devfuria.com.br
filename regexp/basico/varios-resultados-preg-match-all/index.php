@@ -50,6 +50,9 @@ require "../../../core/boot.php";
                 <div class="col-md-9" role="main">
 
                     <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="intro">preg&#95;math&#95;all()</h1>
+                        </div>                        
 
                         <p>Se olharmos o primeiro exemplo da matéria anterior:</p>
 
@@ -59,11 +62,11 @@ regexp: "/ca.a/"
 
                         <p>Notamos que a ER casa com mais de um resultado.</p>
 
-                        <p><em>Como trabalhamos com mais de um resultado?</em> Bom, vejamos o código...</p>
+                        <p><strong>Como trabalhamos com mais de um resultado?</strong> Bom, vejamos o código...</p>
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 $subject   = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.";
 $pattern   = "/ca.a/";
 $retorno = array();
@@ -86,10 +89,10 @@ if ($resultado === 1) {
     print "ocorreu um erro";
 
 }
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
-                        <p>...podemos notar que o resultado retornado pela função preg_math() foi o primeiro valor que casou no caso a sttring "casa",
+                        <p>...podemos notar que o resultado retornado pela função <code>preg&#95;math()</code> foi o primeiro valor que casou no caso a sttring "casa",
                             veja a figura abaixo:</p>
 
                         <div class="bs-example">
@@ -103,7 +106,7 @@ if ($resultado === 1) {
 
                         <p>Como fazer para obter esse resultados?</p>
 
-                        <p>Uma saída é utilizar a função <em>preg&#95;math&#95;all()</em>, ela carregará a varirável <em>$retorno</em> com todos os resultados possíveis,
+                        <p>Uma saída é utilizar a função <code>preg&#95;math&#95;all()</code>, ela carregará a varirável <code>$retorno</code> com todos os resultados possíveis,
                             veja a figura abaixo:</p>
 
                         <div class="bs-example">
@@ -114,7 +117,7 @@ if ($resultado === 1) {
 
                         <div class="code">
                             <h6>PHP</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 $subject   = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.";
 $pattern   = "/ca.a/";
 $retorno = array();
@@ -137,7 +140,7 @@ if ($resultado >= 1) {
     print "ocorreu um erro";
 
 }
-?&gt;</pre>
+?&gt;</code></pre>
                         </div>
 
                         <p>Obsever que eu também alterei o "primeiro if" de:</p>
@@ -148,8 +151,8 @@ if ($resultado >= 1) {
 
                         <pre><code>if ($resultado &gt;= 1) {</code></pre>
 
-                        <p>Isso se deve ao fato de que a função preg&#95;math&#95;all() retorna um número inteiro com a quantidade de ocorrências
-                            encontradas, no exemplo o valor da variável <em>$resultado</em> =e igual a 5 (pois temos cinco resultados).</p>
+                        <p>Isso se deve ao fato de que a função <code>preg&#95;math&#95;all()</code> retorna um número inteiro com a quantidade de ocorrências
+                            encontradas, no exemplo o valor da variável <code>$resultado</code> é igual a 5 (pois temos cinco resultados).</p>
 
                         <p>Para saber mais, inclusive sobre os demais parâmetros não comentados, veja a documentação oficial:</p>
 

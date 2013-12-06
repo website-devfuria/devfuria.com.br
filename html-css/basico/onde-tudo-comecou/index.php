@@ -121,7 +121,7 @@ require "../../../core/boot.php";
                             <h1 id="afinal">Mas afinal, o que é HTML?</h1>
                         </div>
 
-                        <p><em>HTML, originalmente, marca o conteúdo</em>. Ele faz isso através de sua "etiquetas", ou melhor, através de suas <em>tag's</em>.
+                        <p><strong>HTML, originalmente, marca o conteúdo</strong>. Ele faz isso através de sua "etiquetas", ou melhor, através de suas <strong>tag's</strong>.
                             A tag "p" define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:</p>
 
                         <ul>
@@ -137,13 +137,13 @@ require "../../../core/boot.php";
 
                         <p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: <code>&lt;nome da tag&gt</code>; e toda tag aberta deve ser fechada.</p>
 
-                        <p>A barra para direita indica qual é a <em>tag de fechamento</em>, exemplo: <code>&lt;p&gt;aqui é um parágrafo&lt;/p&gt;</p></code>
+                        <p>A barra para direita indica qual é a <strong>tag de fechamento</strong>, exemplo: <code>&lt;p&gt;aqui é um parágrafo&lt;/p&gt;</p></code>
 
                         <p>Abaixo conferimos um arquivo HTML na sua essência:</p>
 
                         <div class="code">
                             <h6>HTML(inválido)</h6>
-                            <pre>
+                            <pre><code>
 &lthtml&gt
     &lthead&gt
         &lttitle&gtTítulo da página&lt/title&gt
@@ -161,8 +161,7 @@ require "../../../core/boot.php";
         &ltp&gtsexto parágrafo&lt/p&gt
 
     &lt/body&gt
-&lt/html&gt
-                            </pre>
+&lt/html&gt</code></pre>
                         </div>
 
                         <p>Repare que eu coloquei a palavra "inválido" alertando quanto à validade do HTML.
@@ -231,24 +230,22 @@ require "../../../core/boot.php";
                             <li>A CSS definie a estilização</li>
                         </ul>
 
-                        <p>A CSS é composta pelo que se chama de "regras de estilização"(rule-sets), um exemplo de regra seria: <em>"todo parágrafo deve ter o
-                                tamanho da fonte em 12px e sua cor deve ser #767676"</em>, traduzindo em código css ficaria assim:</p>
+                        <p>A CSS é composta pelo que se chama de "regras de estilização"(rule-sets), um exemplo de regra seria: <strong>"todo parágrafo deve ter o
+                                tamanho da fonte em 12px e sua cor deve ser #767676"</strong>, traduzindo em código css ficaria assim:</p>
 
                         <div class="code">
                             <h6>CSS</h6>
-                            <pre>
-p {
+                            <pre><code>p {
     font-size: 12px;
     color: #767676;
-}
-                            </pre>
+}</code></pre>
                         </div>
 
-                        <p>A letra "p" é o <em>seletor</em>, é o alvo da regra CSS.</p>
+                        <p>A letra "p" é o <code>seletor</code>, é o alvo da regra CSS.</p>
 
-                        <p>Entre as chaves, neste exemplo, há duas propriedades: <em>font-size</em>  e <em>color</em>.</p>
+                        <p>Entre as chaves, neste exemplo, há duas propriedades: <code>font-size</code>  e <code>color</code>.</p>
 
-                        <p><em>12px</em> e <em>#767676</em> são seus respectivos valores.
+                        <p><code>12px</code> e <code>#767676</code> são seus respectivos valores.
                             A regra CSS pode conter várias declarações separadas por ponto e vírgula.</p>
 
                         <p>Obs: #767676 é um  hexadecimal representando uma cor (um cinza escuro). Há outras formas de referênciar as cores,
@@ -308,7 +305,7 @@ p {
                         <p>O Firebug é um verdadeiro canivete suíço, dá para fazer uma coisas impressionantes com ele e no fim acaba se saindo
                             como uma ferramenta indispensável.</p>
 
-                        <p><em>Web developer</em> é um outro plugin do Firefox igualmente essencial como o Firebug.
+                        <p><strong>Web developer</strong> é um outro plugin do Firefox igualmente essencial como o Firebug.
                             Instale os dois e reserve um tempo para descobrir
                             o que eles podem fazer por você.</p>
 
@@ -317,12 +314,12 @@ p {
                         <p>Disponível em:
                             <a href="https://addons.mozilla.org/pt-br/firefox/addon/web-developer/" title="Web Developer">https://addons.mozilla.org/pt-br/firefox/addon/web-developer/</a></p>
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="leituras">Leituras adicionais sugeridas</h1>
                         </div>
-                        
+
                         <div class="panel panel-success">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Livros</h3>
@@ -336,42 +333,42 @@ p {
                                 </div>
                             </div>
                         </div>
-                        
-<!--                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Internet</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading">Manual oficial do PHP</h4>
-                                        <p class="list-group-item-text">Está aqui não é sugerida, é obrigatória. (dica: digite apenas php.net que o navegador redireciona para a url completa).</p>
-                                        <span class="label label-default">http://www.php.net</span>
-                                    </a>
-                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading">Trecho do manual...</h4>
-                                        <p class="list-group-item-text">... que introduz à programação em PHP.</p>
-                                        <span class="label label-default">http://www.php.net/manual/pt_BR/getting-started.php</span>
-                                    </a>
-                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading">Artigo de Henrique Bastos</h4>
-                                        <p class="list-group-item-text">...explicando as diferenças sobre linguagem interpretada e compiladas.</p>
-                                        <span class="label label-default">http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada</span>
-                                    </a>
-                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading">Notícia eletrônica falando sobre a importância das aplicações web</h4>
-                                        <span class="label label-default">http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/</span>
-                                    </a>
-                                </div>
-                            </div>                        
-                        </div>-->
+
+                        <!--                        <div class="panel panel-info">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title">Internet</h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div class="list-group">
+                                                            <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                                                <h4 class="list-group-item-heading">Manual oficial do PHP</h4>
+                                                                <p class="list-group-item-text">Está aqui não é sugerida, é obrigatória. (dica: digite apenas php.net que o navegador redireciona para a url completa).</p>
+                                                                <span class="label label-default">http://www.php.net</span>
+                                                            </a>
+                                                            <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                                                <h4 class="list-group-item-heading">Trecho do manual...</h4>
+                                                                <p class="list-group-item-text">... que introduz à programação em PHP.</p>
+                                                                <span class="label label-default">http://www.php.net/manual/pt_BR/getting-started.php</span>
+                                                            </a>
+                                                            <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                                                <h4 class="list-group-item-heading">Artigo de Henrique Bastos</h4>
+                                                                <p class="list-group-item-text">...explicando as diferenças sobre linguagem interpretada e compiladas.</p>
+                                                                <span class="label label-default">http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada</span>
+                                                            </a>
+                                                            <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                                                <h4 class="list-group-item-heading">Notícia eletrônica falando sobre a importância das aplicações web</h4>
+                                                                <span class="label label-default">http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>                        
+                                                </div>-->
                         <?php
                         $core->paginacao->link_ativo = "/html-css/basico/onde-tudo-comecou/";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                         ?>                      
                     </div>                    
-                    
+
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->

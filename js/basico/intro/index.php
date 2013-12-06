@@ -153,10 +153,8 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var foo = "Eu sou javascript";
-alert(foo);
-                            </pre>
+                            <pre><code class="language-javascript">var foo = "Eu sou javascript";
+alert(foo);</code></pre>
                         </div>
 
                         <p>Agora abra um navegador qualquer e, em seguida, abra o arquivo.</p>
@@ -170,16 +168,14 @@ alert(foo);
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var element = document.getElementById('myimage');
+                            <pre><code class="language-javascript">var element = document.getElementById('myimage');
 element.onclick = function() {
     if (element.src.match("bulbon")) {
         element.src="pic_bulboff.gif";
     } else {
         element.src="pic_bulbon.gif";
     }
-};
-                            </pre>
+};</code></pre>
                         </div>
 
                         <div class="bs-example">
@@ -197,8 +193,7 @@ element.onclick = function() {
 
                         <div class="code">
                             <h6>HTML</h6>
-                            <pre>
-&lt!DOCTYPE html&gt
+                            <pre><code class="language-html">&lt!DOCTYPE html&gt
 &lthtml&gt
     &lthead&gt
         &ltmeta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt
@@ -212,8 +207,7 @@ element.onclick = function() {
         &ltscript type="text/javascript" src="codigo.js"&gt&lt/script&gt
 
     &lt/body&gt
-&lt/html&gt
-                            </pre>
+&lt/html&gt</code></pre>
                         </div>
 
                         <p>Temos uma tag "img" e seu atributo "src" que aponta para uma imagem no servidor. É nesse elemento que nossa lógica irá
@@ -225,13 +219,11 @@ element.onclick = function() {
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var element = document.getElementById('myimage');
-<strong>element.onclick = function() {
+                            <pre><code class="language-javascript">var element = document.getElementById('myimage');
+<em>element.onclick = function() {
      ... ao clicar na imagem
      ... o código aqui inserido será acionado
-};</strong>
-                            </pre>
+};</em></code></pre>
                         </div>
 
                         <p>A função que embutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ela testa se o valor de "src" do

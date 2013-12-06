@@ -234,9 +234,9 @@ systemctl start httpd.service
 
                         <div class="code">
                             <h6>index.php</h6>
-                            <pre>&lt;?php
+                            <pre><code class="language-php">&lt;?php
 echo phpinfo();
-?&gt;</pre>
+?&gt;</code></pre>
                             <p> Este arquivo dá um print no resultado da função phpinfo(), essa função traz dados preciosos sobre a instalação</p>
                         </div>
 
@@ -290,13 +290,11 @@ nano /etc/php.ini // fedora
 
                         <div class="code">
                             <h6>Texto Plano</h6>
-                            <pre>
-error_reporting = E_ALL
+                            <pre><code class="no-highlight">error_reporting = E_ALL
 display_erros= On
 display_startup_erros = On
 track_erros = On
-html_erros = On
-                            </pre>
+html_erros = On</code></pre>
                         </div>
 
                         <p>Salve o arquivo digitando CRTL+O, confirme pressionando ENTER, agora feche o arquivo digitadno CTRL+W.
@@ -332,7 +330,7 @@ systemctl start httpd.service // fedora
 
                         <div class="code">
                             <h6>Texto Plano</h6>
-                            <pre>Zend_extension="/usr/lib/php5/caminho_anotado"</pre>
+                            <pre><code class="no-highlight">Zend_extension="/usr/lib/php5/caminho_anotado"</code></pre>
                         </div>
 
                         <p>Reinicie o apache (o comando nós já vimos).</p>

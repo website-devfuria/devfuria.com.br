@@ -70,8 +70,7 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "Casa com a palavra exemplo",
+                            <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern,
     resultado;
 
@@ -90,8 +89,7 @@ console.log(pattern, resultado);
 // string.match
 pattern = new RegExp(regexp);
 resultado = string.match(pattern);
-console.log(pattern, resultado);
-                            </pre>
+console.log(pattern, resultado);</code></pre>
                         </div>
 
                         <p>Uma vez com a ER compilada podemos executá-la em qualquer uma das três formas já discutidas nas matérias anteirores.</p>
@@ -112,7 +110,7 @@ console.log(pattern, resultado);
                                         </a>
                                         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions?redirectlocale=en-US&redirectslug=JavaScript%2FGuide%2FRegular_Expressions" class="list-group-item" title="link-externo">
                                             <h4 class="list-group-item-heading">Documentação Oficial</h4>
-                                            <p class="list-group-item-text">...falando sobre o objeto global RegExp. Apesar de ser um rascunho há informações
+                                            <p class="list-group-item-text">...falando sobre o objeto global RegExp. Apesar de ser um rascunho, há informações
                                                 bastante precisas</p>
                                             <span class="label label-default">http://www.php.net/manual/pt_BR/getting-started.php</span>
                                         </a>

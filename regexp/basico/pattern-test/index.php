@@ -71,25 +71,23 @@ require "../../../core/boot.php";
                         </div>
 
 
-                        <p>Em JS também temos a forma <em>pattern.test()</em> onde "pattern" é expressão regular, "test()" é a função que evocamos
+                        <p>Em JS também temos a forma <code>pattern.test()</code> onde "pattern" é expressão regular, "test()" é a função que evocamos
                             para executar a ER e o parâmetro 'string passado na função é a nosso texto de pesquisa (assunto).</p>
 
                         <p>Essa é a forma mais usual, ou pelo menos é a mais comentada.</p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "Casa com a palavra exemplo",
+                            <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
     resultado;
 
 // Executa nossa expressão
 resultado = pattern.test(string);
-console.log(resultado);
-                            </pre>
+console.log(resultado);</code></pre>
                         </div>
 
-                        <p>Diferentemente da primeira função (string.match), o valor da variável <em>resultado</em> será true ou false.</p>
+                        <p>Diferentemente da primeira função <code>(string.match)</code>, o valor da variável <code>resultado</code> será true ou false.</p>
                     </div>
 
                     <div class="bs-docs-section">
@@ -97,19 +95,17 @@ console.log(resultado);
                             <h1 id="nao-casou">Se a expressão não casar</h1>
                         </div> 
 
-                        <p>A função retorna <em>false</em> neste caso.</p>
+                        <p>A função retorna <code>false</code> neste caso.</p>
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "Casa com a palavra exemplo",
+                            <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /não existe/,
     resultado;
 
 // Executa nossa expressão
 resultado = pattern.test(string);
-console.log(resultado);
-                            </pre>
+console.log(resultado);</code></pre>
                         </div>
 
                     </div> 
@@ -123,20 +119,18 @@ console.log(resultado);
 
                         <div class="code">
                             <h6>JS</h6>
-                            <pre>
-var string = "Casa com a palavra exemplo",
+                            <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /(exemplo/,
     resultado;
 
 // Executa nossa expressão
 resultado = pattern.test(string);
-console.log(resultado);
-                            </pre>
+console.log(resultado);</code></pre>
                         </div>
 
                         <p>Igualmente a função match(), a execução do código será interrompida e o Firebug mostrará a seguinte mensagem:
                         <div class="bs-example">
-                            <img class="img-rounded" src="match-erro.png" alt="### match-resultado" />
+                            <img class="img-rounded" src="../string-match/match-erro.png" alt="### match-erro" />
                         </div></p>
 
                     </div> 
@@ -148,12 +142,11 @@ console.log(resultado);
 
                         <p>Como a função retorna apenas true ou false, fica facíl deduzirmos o código final.</p>
 
-                        <p>Porém, é válida a mesma observação quanto ao uso do bloco "try cath" (no caso da expressão estar sintáticamente errada).</p>
+                        <p>Porém, é válida a mesma observação quanto ao uso do bloco <code>try cath</code> (no caso da expressão estar sintáticamente errada).</p>
 
                         <div class="code">
                             <h6>JS - código final</h6>
-                            <pre>
-var string = "Casa com a palavra exemplo",
+                            <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
     resultado;
 
@@ -164,8 +157,7 @@ if (resultado) {
     console.log("casou", resultado);
 } else {
     console.log("não casou", resultado);
-}
-                            </pre>
+}</code></pre>
                         </div>
                         <?php
                         $core->paginacao->link_ativo = "/regexp/basico/pattern-test/";

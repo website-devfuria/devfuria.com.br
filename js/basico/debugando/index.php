@@ -87,7 +87,7 @@ require "../../../core/boot.php";
                         <p>Ao sentar-se na frente do computador para codificar (seja lá o que for) o desenvolvedor estabelece, ou deveria estabelecer,
                             uma conversa com o computador e seu código fonte:</p>
 
-                        <pre><code>dev: E aí computer, me mostre o VALOR da variável "resultado".
+                        <pre><code class="no-highlight">dev: E aí computer, me mostre o VALOR da variável "resultado".
 
 cpu: Ok, mas parece que não está retornando nada, veja o valor que ela contém... "".
 
@@ -137,9 +137,8 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
                         <p>A forma mais rudimentar de debugar em JS é exibir um alerta. Com o tempo você vai se encher com as popup e logo vai 
                             procurar uma alternativa.</p>
 
-                        <pre><code>var minha_variavel = "Hello, word";
-alert(minha_variavel);
-</code></pre>
+                        <pre><code class="language-javascript">var minha_variavel = "Hello, word";
+alert(minha_variavel);</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Debugando com Janela popup!" src="debug-alert.png" />
@@ -150,9 +149,8 @@ alert(minha_variavel);
                         <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) através do método write() do
                             objeto "document".</p>
 
-                        <pre><code>var minha_variavel = "Hello word";
-document.write(minha_variavel);
-</code></pre>
+                        <pre><code class="language-javascript">var minha_variavel = "Hello word";
+document.write(minha_variavel);</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Debugando no próprio HTML"  src="debug-write.png">
@@ -172,9 +170,8 @@ document.write(minha_variavel);
                         <p>O FireBug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
                             <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="link-externo">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
 
-                        <pre><code>var minha_variavel = "Hello word!";
-console.log(minha_variavel);
-</code></pre>
+                        <pre><code class="language-javascript">var minha_variavel = "Hello word!";
+console.log(minha_variavel);</code></pre>
 
                         <p>A imagem abaixo ilustra o resultado do console do firebug, repare que o desenvolvedor está usando o plugin do firebug
                             na IDE Eclipse.</p>
@@ -206,7 +203,7 @@ console.log(minha_variavel);
                             <h1 id="problemas">Como saber se o código não está com problemas ?</h1>
                         </div>    
 
-                        <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a linguágem é interpretada, estou me referindo ao código que demosntra erros. <em>E como demostrar os erros?</em>.</p>
+                        <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a linguágem é interpretada, estou me referindo ao código que demosntra erros. <strong>E como demostrar os erros?</strong>.</p>
 
                         <p>Quando executamos o arquivo (seja .html ou .php ou qualquer outra linguagem que vocẽ use) os erros podem não aparecerem, em outras palavra, alguns erros são "timidos". Para encorajá-los a sair da "toca" é preciso utilizar o console.log() e, obviamente, manter o firebug aberto.</p>
 
