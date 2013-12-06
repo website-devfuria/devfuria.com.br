@@ -100,8 +100,8 @@ require "../../../core/boot.php";
                         <p>OK. O que acabamos de fazer foi separar as obrigações. Com isso, acabamos de praticar técnica chamada de <em>programação em
                                 camadas</em>. No caso, temos 3 camadas: conteúdo(HTML), apresentação(CSS) e comportamento(JS).</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="camadas de uma aplicação"  src="camadas.gif">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###camadas de uma aplicação"  src="camadas.gif">
                             <p>Fonte:
                                 <a href="http://www.thiagotpc.com/entech/#slide-27" title="link-externo">Slide em www.thiagotpc.com</a>
                             </p>

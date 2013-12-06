@@ -222,7 +222,7 @@ etc...
                         <p>O mais importante é você entender que não existe marcação certa ou errada. </p>
                         <p>Mas existe a marcação adequada, limpa e de fácil leitura.</p>
                         <p>Assista ao vídeo da solução que acompanha esta matéria.</p>
-                        <div class="bs-example bs-example-images">
+                        <div class="bs-example">
                             <iframe width="560" height="315" src="http://www.youtube.com/embed/IMswx5wcqA0" frameborder="0" allowfullscreen></iframe>
                             <p>Obs: A voz doce ao fundo é minha querida Joana.</p>
                         </div>

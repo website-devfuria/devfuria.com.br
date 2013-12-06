@@ -121,11 +121,11 @@ require "../../../core/boot.php";
                                 (Servidor MySQL) recuperando algum tipo de dado com valor agregado. Essa informação é embebida por código HTML e
                                 devolvida de volta ao navegador do cliente gerando, assim, a página HTML resultante.</p>
 
-                            <div class="bs-example bs-example-images">
-                                <img class="img-rounded" alt="funcionamento do servidor web" src="morimoto_apache1.png">
+                            <div class="bs-example">
+                                <img class="img-rounded" alt="###funcionamento do servidor web" src="morimoto_apache1.png">
                                 <p>Esquema da arquitetura na qual, comumente, é executado os script em PHP.</p>
                                 <p>Fonte:
-                                    <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html" title="link-externo">Morimoto</a>
+                                    <a href="http://www.hardware.com.br/livros/servidores-linux/entendendo-organizacao-dos-arquivos.html" title="link-externo" class="img-responsive">Morimoto</a>
                                 </p>
                             </div>
 
@@ -135,8 +135,8 @@ require "../../../core/boot.php";
                             <p>Se simplificarmos o funcionamento podemos resumí-lo da seguinte forma: o PHP, através do servidor web, produz páginas
                                 em HTML. Veja a figura abaixo:</p>
 
-                            <div class="bs-example bs-example-images">
-                                <img class="img-rounded" alt="funcionamento simplificado do servidor web" src="php_architect.gif">
+                            <div class="bs-example">
+                                <img class="img-rounded" alt="###funcionamento simplificado do servidor web" src="php_architect.gif">
                                 <p>Esquema da arquitetura simplificado.</p>
                             </div>
 
@@ -246,8 +246,8 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                         <p>A empresa Netcraft, periodicamente, lança pesquisas que discriminam os servidores web mais utilizados, o Apache sempre
                             está na frente, em média 60%, veja figura 02.</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="funcionamento do servidor web" src="apache_estatistica01.png">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###Estatística de servidores web pelo mundo" src="apache_estatistica01.png" class="img-responsive">
                             <p>Estatística de servidores web pelo mundo</p>
                             <p>
                                 <a href="http://news.netcraft.com/archives/2012/09/10/september-2012-web-server-survey.html#more-6429" title="link-externo">Fonte: Natcraft</a>
@@ -256,8 +256,8 @@ echo "Resultado da soma de 1 + 1 = $resultado";
 
                         <p>Bom... um servidor apache pode rodar outas linguagens além do PHP, mas veja este outro gráfico:</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="-- estatística do PHP --" src="php_estatistica01.png">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###<estatística do PHP>" src="php_estatistica01.png" class="img-responsive">
                             <p>O gráfico acima mostra a repartição das 6 maiores linguagens identificáveis em 6.7 milhões de domínios onde a linguagem
                                 pôde ser determinada.</p>
                             <p>

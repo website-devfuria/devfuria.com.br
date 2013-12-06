@@ -123,8 +123,8 @@ element.onclick = function() {
                         <p>Refatorar é um arte e o seu mestre chama-se Martin Fowler, há um manual completo dizendo como, quando e porque refatorar
                             o seu código fonte. Obviamente, não vamos nos deter nisso agora, mesmo porque é cedo para adentrarmos nesse assunto.</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Livro de Martin Fowler" src="refactoringBook.jpg">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###Livro de Martin Fowler" src="refactoringBook.jpg">
                             <p>Livro: Refatoração, aperfeiçoando o projeto de código existente (Martin Fowler).</p>
                         </div>                        
 
@@ -146,21 +146,17 @@ element.onclick = function() {
 
                         <p>TDD é uma arte (ninja) e o mestre e o Kent Bech.</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Livro de Kent Bech" src="tdd-livro.jpg">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###Livro de Kent Bech" src="tdd-livro.jpg">
                             <p>Livro: Desenvolvimento Guiado por Testes (Kent Bech)</p>
                         </div>                        
 
                         <p>O conceito é muito interessante, procure ler sobre, abaixo uma figura para estigá-lo:</p>
 
-                        <div class="imagem">
-                            <img src="" alt="" />
-                        </div>
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Ciclo do TDD" src="tdd-conceito.jpg">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###### Ciclo do TDD" src="tdd-conceito.jpg">
                             <p>Ciclo do TDD</p>
                         </div>                        
-                        
 
                         <p>A refatoração é irmã siamesa do TDD. Uma não vive sem a outra.</p>
                     </div>  

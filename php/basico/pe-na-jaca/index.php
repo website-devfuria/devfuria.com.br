@@ -229,8 +229,8 @@ endereco</pre>
                             manutenção em um sistema com nomenclaturas do tipo Frankstain pode causar urticárias”.</p>
 
                         <p>A figura a seguir mostra um exemplo de convenção de nomenclatura.</p>
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Nomenclatura de variáveis" src="nomenclatura1.png">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###Nomenclatura de variáveis" src="nomenclatura1.png" class="img-responsive">
                             <p>Fonte: <a href="http://code.google.com/p/guardachuva/wiki/ConvencoesDeNomeacao" title="link-externo">Projeto Guarda Chuva</a></p>
                         </div>                        
                     </div>

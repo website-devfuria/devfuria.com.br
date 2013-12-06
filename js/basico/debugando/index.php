@@ -115,8 +115,8 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
                         <p>Em outros casos, podem aparecer diversos erros, mas que foram ocasionados por uma única linha. A correção dessa linha
                             siginifica a correção de todos os erros descobertos. Veja a tirinha baixo:</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Desenho em quadrinhos satirizando as mensagens de debugação!"  src="tirinha16-debugando.png">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###Desenho em quadrinhos satirizando as mensagens de debugação!"  src="tirinha16-debugando.png">
                             <p>Se programar já é uma arte, imagine debugar!!!</p>
                             <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/08/19/erro-nao-documentado/" title="link-externo">Vida de programador</a></p>
                         </div>                        
@@ -141,10 +141,11 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
 alert(minha_variavel);
 </code></pre>
 
-                        <div class="imagem">
-                            <img src="debug-alert.png" alt="Janela popup!" />
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="######Debugando com Janela popup!" src="debug-alert.png" />
                             <p><a href="https://courses.cs.washington.edu/courses/cse190m/11su/labs/lab5-pimpmytext.shtml" title="link-externo">Fonte da imagem acima</a></p>
-                        </div>
+                        </div>                           
+                        
 
                         <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) através do método write() do
                             objeto "document".</p>
@@ -153,8 +154,8 @@ alert(minha_variavel);
 document.write(minha_variavel);
 </code></pre>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Janela popup!"  src="debug-write.png">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###Janela popup!"  src="debug-write.png">
                             <p><a href="http://blueashes.com/2011/web-development/install-nodejs-on-windows/" title="link-externo">Fonte da imagem acima</a></p>
                         </div>  
 
@@ -178,8 +179,8 @@ console.log(minha_variavel);
                         <p>A imagem abaixo ilustra o resultado do console do firebug, repare que o desenvolvedor está usando o plugin do firebug
                             na IDE Eclipse.</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Janela popup!"  src="debug-firebug.png">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="###Janela popup!"  src="debug-firebug.png">
                             <p><a href=http://1.bp.blogspot.com/-yxbVFlzsyK8/UBUm7iInQAI/AAAAAAAAFpQ/l4ZSI-Mv4Ps/s1600/console.png" title="link-externo">Fonte da imagem acima</a></p>
                         </div>  
 
@@ -195,7 +196,7 @@ console.log(minha_variavel);
 
                         <p>De qualquer forma, vale a pena assistir ao video. É uma breve demonstração do Firebug e das funcionalidades comentadas.</p>
 
-                        <div class="bs-example bs-example-images">
+                        <div class="bs-example">
                             <iframe width="560" height="315" src="http://www.youtube.com/embed/IP8xDTGkfjc" frameborder="0" allowfullscreen></iframe>
                         </div>  
                     </div>  
