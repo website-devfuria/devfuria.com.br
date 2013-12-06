@@ -73,7 +73,7 @@ require "../../../core/boot.php";
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Desenho em quadrinhos satirizando a lógica!" src="vida_prog_25.png">
                             <p>Há... essas mulheres!.</p>
-                            <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/03/22/logica-de-programacao/">Vida de programador</a></p>
+                            <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/03/22/logica-de-programacao/" title="link-externo">Vida de programador</a></p>
                         </div>                        
 
                         <h2>Sobre o curso</h2>

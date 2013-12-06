@@ -84,7 +84,7 @@ require "../../../core/boot.php";
                             <img class="img-rounded" alt="Desenho em quadrinhos satirizando ao (mal)uso do Excel!" src="vida_prog_112.png">
                             <p>O Excel foi, é e sempre será utilizado indevidamente como banco de dados.</p>
                             <p>Fonte:
-                                <a href="http://vidadeprogramador.com.br/2011/05/24/banco-de-dados/">Vida de programador</a>
+                                <a href="http://vidadeprogramador.com.br/2011/05/24/banco-de-dados/" title="link-externo">Vida de programador</a>
                             </p>
                         </div>                        
 
@@ -232,7 +232,7 @@ Camisa Social,   15.00 -- esse é outro registro
                             <div class="bs-example bs-example-images">
                                 <img class="img-rounded" alt="Tabelas" src="ex01-tabela.jpg" />
                                 <p>Fonte da imagem: 
-                                    <a href="http://blog.thiagobelem.net/relacionamento-de-tabelas-no-mysql/">Blog do Thiago Belem</a>
+                                    <a href="http://blog.thiagobelem.net/relacionamento-de-tabelas-no-mysql/" title="link-externo">Blog do Thiago Belem</a>
                                 </p>
                             </div>                             
                         </div>
@@ -252,7 +252,7 @@ Camisa Social,   15.00 -- esse é outro registro
                             <div class="bs-example bs-example-images">
                                 <img class="img-rounded" alt="diagrama que representa um banco de dados" src="db.jpg" />
                                 <p>
-                                    <a href="http://www2.itssolucoes.com.br/banco-de-dadoss">Fonte da imagem</a>
+                                    <a href="http://www2.itssolucoes.com.br/banco-de-dadoss" title="link-externo">Fonte da imagem</a>
                                 </p>
                             </div>                              
 
