@@ -84,7 +84,7 @@ require "../../../core/boot.php";
                         <div class="page-header">
                             <h1 id="intro">Introdução</h1>
                         </div>                         
-                        <p><em>Todo programador precisa saber “levantar” seu próprio ambiente de trabalho</em>, me refiro a instalar os programas necessários
+                        <p><strong>Todo programador precisa saber “levantar” seu próprio ambiente de trabalho</strong>, me refiro a instalar os programas necessários
                             para começar o desenvolvimento. Inclua na lista: o servidor web(apache), o módulo PHP, o banco de dados, a API (interface)
                             do banco de dados, o editor de código, o controlador de versão, a escolha do sistema operacional, etc... Após instalado
                             os componentes, devemos configurar cada um deles.</p>
@@ -103,8 +103,8 @@ require "../../../core/boot.php";
                             artigo a correta instalação e configuração de cada um dos componentes.</p>
 
                         <p>Há ainda a questão da preferência. Não existe o ambiente correto, existe a preferência sobre quais ferramentas instalar
-                            e como configurá-las. Pouco se discute sobre o ambiente de desenvolvimento, mas um pensamento é unânime: <em>“o ambiente de
-                                desenvolvimento deve simular ao máximo o ambiente de produção”</em>, porém acredito que isso (por enquanto) não deva ser
+                            e como configurá-las. Pouco se discute sobre o ambiente de desenvolvimento, mas um pensamento é unânime: <strong>“o ambiente de
+                                desenvolvimento deve simular ao máximo o ambiente de produção”</strong>, porém acredito que isso (por enquanto) não deva ser
                             preocupação de um programador iniciante.</p>
 
                         <p>Se você é do mundo Linux, ótimo. Se você é do ambiente Windows, gostaria de convidá-lo a experimentar o mundo Linux.
@@ -166,15 +166,13 @@ require "../../../core/boot.php";
                         <p>Uma vez com o sistema Linux instalado (Ubuntu ou Fedora) a primeira coisa que deve ser feita e definir uma senha para o
                             usuário "root". Abra o termial (tente CTRL+ALT+U) e digite:</p>
 
-                        <pre><code>sudo passwd root
-</code></pre>
+                        <pre><code class="no-highlight">sudo passwd root</code></pre>
 
                         <p>Após digite a senha do seu usuário (definida na instalação) e na sequência digite a senha do root. Para rodar alguns
                             comandos é preciso ter autorização de root. Ou vocẽ digita "sudo" antes de cada comando (será preciso fornecer a senha
                             do root) ou vira root e vai trabalhando. Para virar root digite:</p>
 
-                        <pre><code>su root
-</code></pre>
+                        <pre><code class="no-highlight">su root</code></pre>
 
                         <p>... e forneca a senha definida anteriormente. Os comandos apresentados na sequência consideram que você seja root ou
                             que utilize o "sudo". O sinal # no início de cada comando explicita o que eu acabei de falar, logo não é necessário
@@ -190,9 +188,8 @@ require "../../../core/boot.php";
 
                         <p>Ubuntu</p>
 
-                        <pre><code>apt-get update
-apt-get upgrade
-</code></pre>
+                        <pre><code class="no-highlight">apt-get update
+apt-get upgrade</code></pre>
 
                         <p>No Fedora também temos os comandos update e upgrade, porém eles fazem coisas diferentes. Eu aconselho a utilizar a
                             interface gráfica para atualizar o sistema.</p>
@@ -206,12 +203,11 @@ apt-get upgrade
 
                         <p>No Ubuntu digite:</p>
 
-                        <pre><code>apt-get install apache2
-</code></pre>
+                        <pre><code class="no-highlight">apt-get install apache2</code></pre>
 
                         <p>no Fedora são três linhas...</p>
 
-                        <pre><code>yum install httpd
+                        <pre><code class="no-highlight">yum install httpd
 chkconfig --levels 235 httpd on
 systemctl start httpd.service
 </code></pre>
@@ -227,13 +223,11 @@ systemctl start httpd.service
 
                         <p>Na sequência instalamos o php, no terminal do Ubuntu digite:</p>
 
-                        <pre><code>apt-get install php5 libapache2-mod-php5
-</code></pre>
+                        <pre><code class="no-highlight">apt-get install php5 libapache2-mod-php5</code></pre>
 
                         <p>No terminal do Fedora digite:</p>
 
-                        <pre><code>yum install httpd php php-common // fedora
-</code></pre>
+                        <pre><code class="no-highlight">yum install httpd php php-common // fedora</code></pre>
 
                         <p>Para testar o php, crie um arquivo com onome index.php conforme mostrado abaixo e salve em /var/www (Ubuntu) e
                             /var/www/html (Fedora). É preciso ser root para inserir arquivos nesta pasta.</p>
@@ -253,14 +247,11 @@ echo phpinfo();
 
                         <p>no Ubuntu...</p>
 
-                        <pre><code>apt-get install php5-mysql php5-curl php5-gd php5-idn\ php5-dev php-pear
-</code></pre>
+                        <pre><code class="no-highlight">apt-get install php5-mysql php5-curl php5-gd php5-idn\ php5-dev php-pear</code></pre>
 
                         <p>no Fedora...</p>
 
-                        <pre><code>yum install php-pecl-apc php-cli php-pear php-pdo php-mysql php-pgsql php-pecl-mongo
-      php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
-</code></pre>
+                        <pre><code class="no-highlight">yum install php-pecl-apc php-cli php-pear php-pdo php-mysql php-pgsql php-pecl-mongo php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml</code></pre>
 
                         <p>Para que o apache, juntamente com o módulo do php execute os scripts eles devem ser ser salvos no “documentroot”
                             (raiz do documento). “DocumentRoot” nada mais é do que a pasta na qual o servidor “sabe” que contém arquivos nos quais
@@ -285,13 +276,13 @@ echo phpinfo();
                         <p>No terminal é possível utilizar alguns editores de textos como o "vi" (que já vem instalado) ou o "vim" e o "nano" (que
                             devem ser instalados). Eu gosto de utilizar o nano pois ele é mais fácil. Instale o "nano" digitando:</p>
 
-                        <pre><code>apt-get install nano // ubuntu
+                        <pre><code class="no-highlight">apt-get install nano // ubuntu
 yum install nano // fedora
 </code></pre>
 
                         <p>Com o nano instalado, digite:</p>
 
-                        <pre><code>nano /etc/php5/apache2/php.ini // ubuntu
+                        <pre><code class="no-highlight">nano /etc/php5/apache2/php.ini // ubuntu
 nano /etc/php.ini // fedora
 </code></pre>
 
@@ -311,7 +302,7 @@ html_erros = On
                         <p>Salve o arquivo digitando CRTL+O, confirme pressionando ENTER, agora feche o arquivo digitadno CTRL+W.
                             O nano é muito fácil, diz aí? Reinicie o apache:</p>
 
-                        <pre><code>/etc/init.d/apache2 restart // ubuntu
+                        <pre><code class="no-highlight">/etc/init.d/apache2 restart // ubuntu
 systemctl start httpd.service // fedora
 </code></pre>
                     </div>
@@ -326,19 +317,16 @@ systemctl start httpd.service // fedora
                             Um dia você ainda vai me agradeçer, rssss. Com o PECL(pear)pode-se instalar novos pacotes no estilo apt-get, no caso
                             vamos instalar o pacote x-debug no Ubuntu:</p>
 
-                        <pre><code>pecl install xdebug
-</code></pre>
+                        <pre><code class="no-highlight">pecl install xdebug</code></pre>
 
                         <p>Onde será que o Linux gravou a extensão x-debug? Digite e anote o caminho:</p>
 
-                        <pre><code>find/ -name 'x-debug.so'2&gt; /dev/null
-</code></pre>
+                        <pre><code class="no-highlight">find/ -name 'x-debug.so'2&gt; /dev/null</code></pre>
 
                         <p>Agora, precisamos dizer ao php que o x-debug existe. Par tal é preciso incluir um linha no final do arquivo php.ini.
                             Abra novamente o php.ini:</p>
 
-                        <pre><code>nano /etc/php5/php.ini
-</code></pre>
+                        <pre><code class="no-highlight">nano /etc/php5/php.ini</code></pre>
 
                         <p>No final do arquivo ou no fim da seção "extenções" inclua a seguinta linha:</p>
 
@@ -351,9 +339,8 @@ systemctl start httpd.service // fedora
 
                         <p>No Fedora bastam 2 linhas...</p>
 
-                        <pre><code>yum install php-pecl-xdebug
-systemctl restart httpd.service
-</code></pre>
+                        <pre><code class="no-highlight">yum install php-pecl-xdebug
+systemctl restart httpd.service</code></pre>
                     </div>
 
                     <div class="bs-docs-section">
@@ -363,32 +350,28 @@ systemctl restart httpd.service
 
                         <p>Agora chegou a vez o banco de dados, instale o mysql no Ubuntu digitando...</p>
 
-                        <pre><code>apt-get install mysql-server mysql-client
-</code></pre>
+                        <pre><code class="no-highlight">apt-get install mysql-server mysql-client</code></pre>
 
                         <p>Enquanto os arquivos são baixados e instalados o sistema lhe perguntará qual será a senha do root (para acessar o banco
                             de dados), anote-a.</p>
 
                         <p>No fedora é parecido, só que você é quem define a senha, então instale o mysql no Fedora...</p>
 
-                        <pre><code>yum install mysql mysql-server
-</code></pre>
+                        <pre><code class="no-highlight">yum install mysql mysql-server</code></pre>
 
                         <p>inicie o serviço... </p>
 
-                        <pre><code>systemctl start mysqld.service
+                        <pre><code class="no-highlight">systemctl start mysqld.service
 systemctl enable mysqld.service
 </code></pre>
 
                         <p>e habilite a senha digitando...</p>
 
-                        <pre><code>mysqladmin -u root password [your_password_here]
-</code></pre>
+                        <pre><code class="no-highlight">mysqladmin -u root password [your_password_here]</code></pre>
 
                         <p>Para saber se deu certo tente acessar o prompt do mysql digitando...</p>
 
-                        <pre><code>mysql -h localhost -u root -p
-</code></pre>
+                        <pre><code class="no-highlight">mysql -h localhost -u root -p</code></pre>
 
                         <p>O sistema solicitará a senha, digite-a. Se estiver enchergando o prompt está tudo OK, digite "exit" para sair.</p>
 
@@ -402,8 +385,7 @@ systemctl enable mysqld.service
                         <p>Na sequência instale o phpmyadmin, este aplicativo é responsável por oferecer uma interface amigável de trabalho ao
                             usuário do banco.</p>
 
-                        <pre><code>apt-get install phpmyadmin
-</code></pre>
+                        <pre><code class="no-highlight">apt-get install phpmyadmin</code></pre>
 
                         <p>Responda as perguntas que o instalardor fará (nenhum segredo) e ao final, abra o navegador e digite "localhost/phpmyadmin"
                             a tela de login deve ser exibida, digite novamente o usuario do mysql (root) e sua senha. Pronto, você está dentro do
@@ -411,7 +393,7 @@ systemctl enable mysqld.service
 
                         <p>No Fedora, após a instalação, será preciso reiniciar o apache...</p>
 
-                        <pre><code>yum install phpmyadmin
+                        <pre><code class="no-highlight">yum install phpmyadmin
 systemctl restart httpd.service
 </code></pre>
                     </div>
