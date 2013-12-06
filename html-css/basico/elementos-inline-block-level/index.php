@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('HTML & CSS');
+        $core->head->setTitle('Crie seu primeiro HTML');
+        $core->head->setDescription('Aprenda a cirar um HTML de ótima qualidade, usaremos como base o HTML do site www.csszengarden.com');
+        $core->head->setkeywords('primeiro HTML, exercício de HTML, csszengarden');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>

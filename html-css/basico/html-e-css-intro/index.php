@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('HTML & CSS');
+        $core->head->setTitle('Aprende as tags básicas de HTML e como unir o CSS ao HTML');
+        $core->head->setDescription('Aprendendo as tags básicas de HTML, como unir o CSS ao documento HTML, cores em CSS.');
+        $core->head->setkeywords('âncoras, links, tabelas, formulários, parágrafos, imagens, div e span, lista, core em css, css embeded, css linked, css inline');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>

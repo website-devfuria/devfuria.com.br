@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('PHP');
+        $core->head->setTitle('Levantando um ambiente de programação (PHP)');
+        $core->head->setDescription('Aprenda a levantar seu ambiente de programação de forma descomplicada e sem sustos');
+        $core->head->setkeywords('instalando apache no linux, instalando mysql no linux, instalando phpmyadmin no linux, instalando php no linux, php.ini, x-debug, lamp ubuntu, lamp fedora' );
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>

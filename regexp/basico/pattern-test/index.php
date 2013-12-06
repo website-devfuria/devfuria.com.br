@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('REGEXP');
+        $core->head->setTitle('pattern.test()');
+        $core->head->setDescription('Dissecando a função pattern.test() do JS');
+        $core->head->setkeywords('expressões regulares, pattern.test(), pattern.test');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>

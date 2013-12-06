@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('REGEXP');
+        $core->head->setTitle('. (ponto) nas expressões regulares');
+        $core->head->setDescription('Matéria que traz várias imagens (todas de autoria do Aurélio Marinho) ilustrando o uso do "ponto"');
+        $core->head->setkeywords('ponto, ., expressões regulares ., expressões regulares ponto');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>

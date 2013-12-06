@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('JS');
+        $core->head->setTitle('Aprenda javascript com este exemplo de código: a lâmpada');
+        $core->head->setDescription('Aprendendo código escrito em javascript que ascende e apaga uma lâmpa! Princípio de animações com JS.');
+        $core->head->setkeywords('getElementById, funções em js, eventos em js, DOM, firebug, objeto document, objeto window');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>

@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('PHP');
+        $core->head->setTitle('Debugando seus scripts em PHP');
+        $core->head->setDescription('Aprenda a debugar o código PHP utilizando var_dump() e x-debug. São formas rudimentares de debugação, porém sempre presente no dia a dia do programador.');
+        $core->head->setkeywords('debugando código, depurando código, x-debug, var_dump, var_dump()');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>

@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('JS');
+        $core->head->setTitle('Debugando com Javascript');
+        $core->head->setDescription('Aprenda a debugar seus scripts em JAVASCRIPT.');
+        $core->head->setkeywords('debugando código js, depurando código js, firebug, alert');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>

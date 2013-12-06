@@ -11,7 +11,10 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('MYSQL');
+        $core->head->setTitle('Matéria introdutória sobre SQL e Mysql');
+        $core->head->setDescription('Aprenda os  conceitos intuitivo de banco de dados, faremos a instalação do mysql e testes via console.');
+        $core->head->setkeywords('aprendendo mysql, aprendendo  sql, começando com sql, começando com mysql, mysql via console');
+        $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
