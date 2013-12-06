@@ -110,13 +110,13 @@ require "../../../core/boot.php";
                             para esses softwares, assim você terá a oportunidade de conferir sua ER antes de ficar quebrando a cabeça no código
                             fonte, algumas ferramentas interessantes:</p>
 
-                        <p><a href="http://regexpal.com/">http://regexpal.com/</a></p>
+                        <p><a href="http://regexpal.com/" title="link-externo">http://regexpal.com/</a></p>
 
-                        <p><a href="http://regex.larsolavtorvik.com/">http://regex.larsolavtorvik.com/</a></p>
+                        <p><a href="http://regex.larsolavtorvik.com/" title="link-externo">http://regex.larsolavtorvik.com/</a></p>
 
-                        <p><a href="http://www.debuggex.com/">http://www.debuggex.com/</a></p>
+                        <p><a href="http://www.debuggex.com/" title="link-externo">http://www.debuggex.com/</a></p>
 
-                        <p><a href="http://www.regexplanet.com/">http://www.regexplanet.com/</a></p>
+                        <p><a href="http://www.regexplanet.com/" title="link-externo">http://www.regexplanet.com/</a></p>
 
                         <p>Irei utilizar as duas linguagens que também possuem seus cursos aqui no site: PHP e Javascript.</p>
 
@@ -204,7 +204,7 @@ match()
 
                         <p>Veja mais informações na documentação oficial:</p>
 
-                        <p><a href="https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions">https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions</a></p>
+                        <p><a href="https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions" title="link-externo">https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions</a></p>
 
                         <p>Nas próximas matérias veremos como ficará nosso singelo "primeiro exemplo" nas duas linguagens. Até lá.</p>
 

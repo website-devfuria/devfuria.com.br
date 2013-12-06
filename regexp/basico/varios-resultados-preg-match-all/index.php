@@ -153,7 +153,7 @@ if ($resultado >= 1) {
 
                         <p>Para saber mais, inclusive sobre os demais parâmetros não comentados, veja a documentação oficial:</p>
 
-                        <p><a href="http://www.php.net/manual/pt_BR/function.preg-match-all.php">http://www.php.net/manual/pt_BR/function.preg-match-all.php</a></p>
+                        <p><a href="http://www.php.net/manual/pt_BR/function.preg-match-all.php" title="link-externo">http://www.php.net/manual/pt_BR/function.preg-match-all.php</a></p>
                         <?php
                         $core->paginacao->link_ativo = "/regexp/basico/varios-resultados-preg-match-all/";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
