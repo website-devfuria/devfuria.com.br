@@ -175,7 +175,7 @@ require "../../../core/boot.php";
                                 coisa, mas se adicionarmos ao tempero a propriedade <code>float</code> (olha ela aí denovo) a brincadeira ficará mais interessante.</p>
 
                             <p>Podemos dizer para a imagem flutuar à equerda, então o texto fluirá para o lado inverso (direita).
-                                Veja o código abaixo e o resultado <a href="p_img_e.html">aqui</a>.</p>
+                                Veja o código abaixo e o resultado <a href="p_img_e.html" title="link-externo">aqui</a>.</p>
 
                             <pre><code>&lt;p&gt;
     &lt;img src="tom-jobim.jpg" alt="Tom Jobim" style="float: left" /&gt;
@@ -198,7 +198,7 @@ require "../../../core/boot.php";
 </code></pre>
 
                             <p>... ou podemos dizer para a imagem flutuar à direita e então o texto fluirá a esquerda.
-                                Veja o código abaixo e o resultado <a href="p_img_d.html">aqui</a>.</p>
+                                Veja o código abaixo e o resultado <a href="p_img_d.html" title="link-externo">aqui</a>.</p>
 
                             <pre><code>&lt;p&gt;
     &lt;img src="tom-jobim.jpg" alt="Tom Jobim" style="float: right" /&gt;
@@ -348,7 +348,7 @@ require "../../../core/boot.php";
 
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Imagem do Pixel" src="pixel.png">
-                            <p><a href="http://pt.wikipedia.org/wiki/Pixelx">Fonte da imagem acima</a></p>
+                            <p><a href="http://pt.wikipedia.org/wiki/Pixelx" title="link-externo">Fonte da imagem acima</a></p>
                         </div>                        
 
                         <p><strong>As cores</strong> normalmente são apresentadas pela combinação das cores primárias. Dizemos ao navegador o quanto queremos de
@@ -366,7 +366,7 @@ require "../../../core/boot.php";
 
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Imagem das Cores" src="cores.png">
-                            <p><a href="http://pt.wikipedia.org/wiki/Pixelx">Fonte da imagem acima</a></p>
+                            <p><a href="http://pt.wikipedia.org/wiki/Pixelx" title="link-externo">Fonte da imagem acima</a></p>
                         </div>                        
 
                         <div class="bs-docs-section">
@@ -488,34 +488,53 @@ require "../../../core/boot.php";
                                 unidades de medidas, cores, CSS inline, CSS embeded, CSS linked. Vimos bastante coisas nesta matéria, vamos agora
                                 entender a diferênca entre os elementos <strong>in-line</strong> e <strong>level-block</strong>... na próxima matéria é lógico.</p>
                         </div>
-                        <?php
-                        $core->paginacao->link_ativo = "/html-css/basico/html-e-css-intro/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                          
-
                     </div>
 
-                </div><!-- Corpo da matéria -->
-            </div><!-- row -->
 
-        </div><!-- Matéria -->
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                        </div>
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>HTML & CSS</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
-                        $core->lista->link_ativo = "/html-css/basico/html-e-css-intro/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Livros</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item" title="">
+                                        <h4 class="list-group-item-heading">Nenhum livro sobre HTML</h4>
+                                        <p class="list-group-item-text">HTML é tão básico que eu recomendo que você pratique, pratique e pratique ao invés de ler, ler e ler.</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <?php
+                            $core->paginacao->link_ativo = "/html-css/basico/html-e-css-intro/";
+                            $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                            include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                            ?>                             
+                        </div>
+
+                    </div><!-- Corpo da matéria -->
+                </div><!-- row -->
+
+            </div><!-- Matéria -->
+
+            <footer class="bs-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>HTML & CSS</h1>
+                            <?php
+                            $core->lista->setLinks($core->links, Core::SECAO_HTML);
+                            $core->lista->link_ativo = "/html-css/basico/html-e-css-intro/";
+                            include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                            ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+            </footer>
+            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
 </html>

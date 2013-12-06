@@ -456,7 +456,7 @@ systemctl restart httpd.service
                         <dl id="leitura_adcionais">
                             <dt>Internet</dt>
                             <dd>Matéria da comunidade Ubuntu onde eles comparam e demonstram os comandos equivalentes tanto no Ubuntu como no Fedora.
-                                <a href="https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora" >https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora</a>
+                                <a href="https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora" title="link-externo">https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora</a>
                             </dd>
                         </dl>
                         <?php

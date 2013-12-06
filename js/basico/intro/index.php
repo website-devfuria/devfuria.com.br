@@ -185,7 +185,7 @@ element.onclick = function() {
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Imagem da luz apagada" id="myimage" src="pic_bulboff.gif">
                             <p>Programar é uma atividade criativa !!! Clique e confira.</p>
-                            <p>Fonte:<a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_lightbulb">w3schools</a></p>
+                            <p>Fonte:<a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_lightbulb" title="link-externo">w3schools</a></p>
                         </div>
 
                         <p>O que o código acima faz?

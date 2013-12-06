@@ -1101,21 +1101,23 @@ div.code {
     margin: 15px 0px;
 }
 div.code h6 {
-    background-color: #BBB;
+    background-color: #90EE90;
     color: #767676;
     text-align: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding-top: 3px;    
     margin-bottom: 0px;
 }
 div.code pre {
-    background-color: #EEE;
+    background-color: #F8F8FF;
     padding: 10px;
     line-height: 16px;
     color: #000;
     font-size: 12px;
     font-family: monospace;
     border-radius: 0px;
+    border-color: #90EE90;
     margin-bottom: 0px;
 }
 div.code pre.scroll {

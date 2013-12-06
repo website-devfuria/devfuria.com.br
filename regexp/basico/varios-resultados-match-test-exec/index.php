@@ -115,7 +115,7 @@ if (resultado) {
 </code></pre>
 
                         <p>Tivemos que incluir a opção "g" de "global", veja mais na
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FGlobal_Objects%2FString%2Fmatch">documentação oficial</a>.</p>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FGlobal_Objects%2FString%2Fmatch" title="link-externo">documentação oficial</a>.</p>
 
                         <p>Vamos aos resultados em cada função....</p>
                     </div>
@@ -212,7 +212,7 @@ if (resultado) {
 
                         <p>Para facilitar a sua vida, eu criei um Gist com os código fontes, assim você não precisará criar os arquivos.</p>
 
-                        <p>Acesse o link <a href="https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806" title="Gist">https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806</a>
+                        <p>Acesse o link <a href="https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806" title="link-externo">https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806</a>
                             e clique no botão "Download Gist", descompacte o arquivo e boa diversão.</p>
                         <?php
                         $core->paginacao->link_ativo = "/regexp/basico/varios-resultados-match-test-exec/";

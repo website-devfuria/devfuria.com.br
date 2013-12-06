@@ -118,12 +118,12 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Desenho em quadrinhos satirizando as mensagens de debugação!"  src="tirinha16-debugando.png">
                             <p>Se programar já é uma arte, imagine debugar!!!</p>
-                            <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/08/19/erro-nao-documentado/">Vida de programador</a></p>
+                            <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/08/19/erro-nao-documentado/" title="link-externo">Vida de programador</a></p>
                         </div>                        
 
                         <p>Debugar é também sinônimo de teste. Porém "testes" é uma palavra com escopo ampliado.</p>
 
-                        <p>Veja o que a Wikipedia tem a nos dizer: <a href="http://pt.wikipedia.org/wiki/Teste_de_software" title="Sobre 'testes'">http://pt.wikipedia.org/wiki/Teste&#95;de&#95;software</a></p>
+                        <p>Veja o que a Wikipedia tem a nos dizer: <a href="http://pt.wikipedia.org/wiki/Teste_de_software" title="link-externo">http://pt.wikipedia.org/wiki/Teste&#95;de&#95;software</a></p>
 
                         <p>Não vamos falar sobre testes agora, ok? Mas apenas formas simples de depuração.</p>
 
@@ -143,7 +143,7 @@ alert(minha_variavel);
 
                         <div class="imagem">
                             <img src="debug-alert.png" alt="Janela popup!" />
-                            <p><a href="https://courses.cs.washington.edu/courses/cse190m/11su/labs/lab5-pimpmytext.shtml">Fonte da imagem acima</a></p>
+                            <p><a href="https://courses.cs.washington.edu/courses/cse190m/11su/labs/lab5-pimpmytext.shtml" title="link-externo">Fonte da imagem acima</a></p>
                         </div>
 
                         <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) através do método write() do
@@ -155,7 +155,7 @@ document.write(minha_variavel);
 
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Janela popup!"  src="debug-write.png">
-                            <p><a href="http://blueashes.com/2011/web-development/install-nodejs-on-windows/">Fonte da imagem acima</a></p>
+                            <p><a href="http://blueashes.com/2011/web-development/install-nodejs-on-windows/" title="link-externo">Fonte da imagem acima</a></p>
                         </div>  
 
                     </div>  
@@ -169,7 +169,7 @@ document.write(minha_variavel);
                             sobre esse plugin em matérias anteriores). Se você ainda não tem ele instalado, faça isso imediatamente.</p>
 
                         <p>O FireBug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
-                            <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="FireBug">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
+                            <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="link-externo">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
 
                         <pre><code>var minha_variavel = "Hello word!";
 console.log(minha_variavel);
@@ -180,7 +180,7 @@ console.log(minha_variavel);
 
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="Janela popup!"  src="debug-firebug.png">
-                            <p><a href=http://1.bp.blogspot.com/-yxbVFlzsyK8/UBUm7iInQAI/AAAAAAAAFpQ/l4ZSI-Mv4Ps/s1600/console.png">Fonte da imagem acima</a></p>
+                            <p><a href=http://1.bp.blogspot.com/-yxbVFlzsyK8/UBUm7iInQAI/AAAAAAAAFpQ/l4ZSI-Mv4Ps/s1600/console.png" title="link-externo">Fonte da imagem acima</a></p>
                         </div>  
 
                         <p>Ele parece-se com o do navegador (document.write) mas não se engane, a janela do console tem muitas outras 

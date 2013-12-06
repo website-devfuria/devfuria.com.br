@@ -90,9 +90,9 @@ require "../../../core/boot.php";
 var element = document.getElementById('myimage');
 element.onclick = function() {
     if (element.src.match("bulbon")) {
-        element.src = "../../imagens/pic_bulboff.gif";
+        element.src = "pic_bulboff.gif";
     } else {
-        element.src = "../../imagens/pic_bulbon.gif";
+        element.src = "pic_bulbon.gif";
     }
 };
                             </pre>
@@ -123,10 +123,10 @@ element.onclick = function() {
                         <p>Refatorar é um arte e o seu mestre chama-se Martin Fowler, há um manual completo dizendo como, quando e porque refatorar
                             o seu código fonte. Obviamente, não vamos nos deter nisso agora, mesmo porque é cedo para adentrarmos nesse assunto.</p>
 
-                        <div class="imagem">
-                            <img src="../../imagens/refactoringBook.jpg" alt="Livro de Martin Fowler" />
+                        <div class="bs-example bs-example-images">
+                            <img class="img-rounded" alt="Livro de Martin Fowler" src="refactoringBook.jpg">
                             <p>Livro: Refatoração, aperfeiçoando o projeto de código existente (Martin Fowler).</p>
-                        </div>
+                        </div>                        
 
                         <p>Mas, repondendo a pergunta, vamos alterar o ćodigo no sentido de clareza, pelo menos inicialmente. O problema é que
                             não vamos utilizar nenhuma metodologia para isso, ou seja, vamos aplicar arte pura e um pouco de gosto pessoal.</p>
@@ -146,17 +146,21 @@ element.onclick = function() {
 
                         <p>TDD é uma arte (ninja) e o mestre e o Kent Bech.</p>
 
-                        <div class="imagem">
-                            <img src="../../imagens/tdd-livro.jpg" alt="Livro de Kent Bech" />
+                        <div class="bs-example bs-example-images">
+                            <img class="img-rounded" alt="Livro de Kent Bech" src="tdd-livro.jpg">
                             <p>Livro: Desenvolvimento Guiado por Testes (Kent Bech)</p>
-                        </div>
+                        </div>                        
 
                         <p>O conceito é muito interessante, procure ler sobre, abaixo uma figura para estigá-lo:</p>
 
                         <div class="imagem">
-                            <img src="../../imagens/tdd-conceito.jpg" alt="Ciclo do TDD" />
-                            <p>Ciclo do TDD</p>
+                            <img src="" alt="" />
                         </div>
+                        <div class="bs-example bs-example-images">
+                            <img class="img-rounded" alt="Ciclo do TDD" src="tdd-conceito.jpg">
+                            <p>Ciclo do TDD</p>
+                        </div>                        
+                        
 
                         <p>A refatoração é irmã siamesa do TDD. Uma não vive sem a outra.</p>
                     </div>  
@@ -515,10 +519,10 @@ var lampada = {
                             <li>true</li>
                         </ul>
 
-                        <p>Se preferir, baixe os arquivos através dos links: <a href="codigo-refatorado.js" title="Arquivo refatorado JS">codigo-refatorado.js</a>, <a href="lampadas.html" title="Arquivo HTML">lampadas.html</a>.</p>
+                        <p>Se preferir, baixe os arquivos através dos links: <a href="codigo-refatorado.js" title="link-externo">codigo-refatorado.js</a>, <a href="lampadas.html" title="Arquivo HTML">lampadas.html</a>.</p>
 
-                        <p>Baixe também as imagens das lâmpadas: <a href="../../imagens/pic_bulboff.gif" title="lâmpada off">lâmpada apagada</a>, 
-                            <a href="../../imagens/pic_bulbon.gif" title="lâmpada om">lâmpada acesa</a></p>
+                        <p>Baixe também as imagens das lâmpadas: <a href="pic_bulboff.gif" title="link-externo">lâmpada apagada</a>, 
+                            <a href="pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
 
                         <p>Agora chega de lâmpadas, na próxima matéria mudarei o assunto, até lá.</p>                      
 

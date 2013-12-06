@@ -72,7 +72,7 @@ require "../../../core/boot.php";
 
                         <p>A função preg&#95;match() refere-se a versão PCRE, versão compatível com PHP 5.3.</p>
 
-                        <p>Para iniciarmos vamos utilizar o exemplo básico da matéria de introdução (<a href="link">link</a>)</p>
+                        <p>Para iniciarmos vamos utilizar o exemplo básico da matéria de introdução (<a href="../intro/">link</a>)</p>
 
                         <p>Temos a string original:</p>
 
@@ -103,7 +103,7 @@ require "../../../core/boot.php";
                             da função.</p>
 
                         <p>Veja mais sobre a função na documentação oficial:
-                            <a href="http://php.net/manual/en/function.preg-match.php" title="">http://php.net/manual/en/function.preg-match.php</a></p>
+                            <a href="http://php.net/manual/en/function.preg-match.php" title="link-externo">http://php.net/manual/en/function.preg-match.php</a></p>
 
                         <div class="code">
                             <h6>PHP</h6>

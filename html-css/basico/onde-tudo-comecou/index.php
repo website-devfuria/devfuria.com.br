@@ -125,19 +125,19 @@ require "../../../core/boot.php";
                             A tag "p" define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:</p>
 
                         <ul>
-                            <li><em>html</em> - define o próprio documento HTML.</li>
-                            <li><em>head</em> - define o cabeçalho do documento.</li>
-                            <li><em>titlte</em> - define o título.</li>
-                            <li><em>body</em> - define o corpo.</li>
-                            <li><em>h1</em> - definie o primeiro título(o mais importante).</li>
-                            <li><em>h2</em> - definie o segudo título, e assim até o h6.</li>
-                            <li><em>a</em> -  define uma âncora, quero dizer, o famoso link.</li>
-                            <li><em>img</em> - define uma imagem</li>
+                            <li><code>html</code> - define o próprio documento HTML.</li>
+                            <li><code>head</code> - define o cabeçalho do documento.</li>
+                            <li><code>titlte</code> - define o título.</li>
+                            <li><code>body</code> - define o corpo.</li>
+                            <li><code>h1</code> - definie o primeiro título(o mais importante).</li>
+                            <li><code>h2</code> - definie o segudo título, e assim até o h6.</li>
+                            <li><code>a</code> -  define uma âncora, quero dizer, o famoso link.</li>
+                            <li><code>img</code> - define uma imagem</li>
                         </ul>
 
-                        <p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: &lt;nome da tag&gt; e toda tag aberta deve ser fechada.</p>
+                        <p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: <code>&lt;nome da tag&gt</code>; e toda tag aberta deve ser fechada.</p>
 
-                        <p>A barra para direita indica qual é a <em>tag de fechamento</em>, exemplo: &lt;p&gt;aqui é um parágrafo&lt;/p&gt;</p>
+                        <p>A barra para direita indica qual é a <em>tag de fechamento</em>, exemplo: <code>&lt;p&gt;aqui é um parágrafo&lt;/p&gt;</p></code>
 
                         <p>Abaixo conferimos um arquivo HTML na sua essência:</p>
 
@@ -170,7 +170,7 @@ require "../../../core/boot.php";
 
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="HTML basico" src="html-basico.jpg">
-                            <p><a href="http://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=1011879">Fonte da imagem acima</a></p>
+                            <p><a href="http://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=1011879" title="link-externo">Fonte da imagem acima</a></p>
                         </div>
 
 
@@ -195,7 +195,7 @@ require "../../../core/boot.php";
                                 Sim, são coisas distintas umas das outras, mas em sua essência não passam de mero HTML. Por simplificação, utilizaremos
                                 o termo HTML de forma gernérica e quando for necessário ser mais específico utilzaremos o termo correto.</p>
 
-                            <p>O HTML5 é a versão mais atual do HTML. O grupo WHATWG (<a href="http://www.whatwg.org/">http://www.whatwg.org/</a>) não teve a mesma
+                            <p>O HTML5 é a versão mais atual do HTML. O grupo WHATWG (<a href="http://www.whatwg.org/" title="link-externo">http://www.whatwg.org/</a>) não teve a mesma
                                 pasciência que o w3c e saiu na frente com as especificações da tão esperada HTML5. A nova versão excluíu alguns
                                 elementos já defazados, inseriu alguns outros mais "semânticos" e trouxe novidades como videos, armazenamento local,
                                 canvas(uma prancheta para você desenhar via código), geo-location, web off-line, campos com autofoco, placeholders e muito
@@ -204,7 +204,7 @@ require "../../../core/boot.php";
 
                             <div class="bs-example bs-example-images">
                                 <img class="img-rounded" alt="Histórico do HMTL" src="fmt-html-versions.png">
-                                <p><a href="http://www.webarchive.org.uk/ukwa/visualisation/ukwa.ds.2/fmt">Fonte da imagem acima</a></p>
+                                <p><a href="http://www.webarchive.org.uk/ukwa/visualisation/ukwa.ds.2/fmt" title="link-externo">Fonte da imagem acima</a></p>
                             </div>
 
                         </div>
@@ -316,12 +316,62 @@ p {
 
                         <p>Disponível em:
                             <a href="https://addons.mozilla.org/pt-br/firefox/addon/web-developer/" title="Web Developer">https://addons.mozilla.org/pt-br/firefox/addon/web-developer/</a></p>
+                    </div>
+                    
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                        </div>
+                        
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Livros</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item" title="">
+                                        <h4 class="list-group-item-heading">Nenhum livro sobre HTML</h4>
+                                        <p class="list-group-item-text">HTML é tão básico que eu recomendo que você pratique, pratique e pratique ao invés de ler, ler e ler.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+<!--                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manual oficial do PHP</h4>
+                                        <p class="list-group-item-text">Está aqui não é sugerida, é obrigatória. (dica: digite apenas php.net que o navegador redireciona para a url completa).</p>
+                                        <span class="label label-default">http://www.php.net</span>
+                                    </a>
+                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Trecho do manual...</h4>
+                                        <p class="list-group-item-text">... que introduz à programação em PHP.</p>
+                                        <span class="label label-default">http://www.php.net/manual/pt_BR/getting-started.php</span>
+                                    </a>
+                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Artigo de Henrique Bastos</h4>
+                                        <p class="list-group-item-text">...explicando as diferenças sobre linguagem interpretada e compiladas.</p>
+                                        <span class="label label-default">http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada</span>
+                                    </a>
+                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Notícia eletrônica falando sobre a importância das aplicações web</h4>
+                                        <span class="label label-default">http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/</span>
+                                    </a>
+                                </div>
+                            </div>                        
+                        </div>-->
                         <?php
                         $core->paginacao->link_ativo = "/html-css/basico/onde-tudo-comecou/";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                          
-                    </div>
+                        ?>                      
+                    </div>                    
+                    
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
