@@ -165,7 +165,7 @@ die();
                         <p>Nesse caso, ele trás várias informações e leitor deve acostumar-se a "extrair" essas informações.</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="### ###Debugando com echo" src="debug-erro.png">
+                            <img class="img-rounded img-responsive" alt="### ###Debugando com echo" src="debug-erro.png">
                             <p>Erro exibido pelo x-debug!</p>
                         </div>                        
 
