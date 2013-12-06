@@ -129,7 +129,7 @@ $resultado = array("exemplo")
                         <p>...veja o resultado do var_dump($resultado, $retorno);:</p>
 
                         <div class="bs-example ">
-                            <img class="img-thumbnail" alt="var_dump nas variáveis resultado e retorno" src="var-dump-resultado.png" />
+                            <img class="img-rounded" alt="### var_dump nas variáveis resultado e retorno" src="var-dump-resultado.png" />
                         </div>                        
 
                         <p>A função retorna um valor para sabermos se obtivemos sucesso ou não e, no caso do sucesso, podemos saber quais as partes
@@ -193,7 +193,7 @@ $resultado = preg_match($pattern, $subject, $retorno);
                             (outros tipos de erros também aparecem):</p>
 
                         <div class="bs-example ">
-                            <img class="img-thumbnail" alt="warning retornado pela função" src="regexp-erro.png" />
+                            <img class="img-rounded" alt="### warning retornado pela função" src="regexp-erro.png" />
                         </div> 
 
                         <p>Precisamos tratar o erro adequadamente (tudo bem, warning não é erro, mas não deixa de ser um aviso importante), porém

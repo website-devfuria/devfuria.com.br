@@ -140,12 +140,12 @@ require "../../../core/boot.php";
                         <p>Veja como fica nos testadores:</p>
 
                         <div class="bs-example ">
-                            <img class="img-thumbnail" alt="Exemplo no testador regexpal" src="exemplo-regexp.png" />
+                            <img class="img-rounded" alt="### Exemplo no testador regexpal" src="exemplo-regexp.png" />
                             <p>http://regexpal.com/</p>
                         </div>
 
                         <div class="bs-example ">
-                            <img class="img-thumbnail" alt="Exemplo no testador de Larsolav" src="exemplo-larsolav.png" />
+                            <img class="img-rounded" alt="### Exemplo no testador de Larsolav" src="exemplo-larsolav.png" />
                             <p>http://regex.larsolavtorvik.com/</p>
                         </div>
 

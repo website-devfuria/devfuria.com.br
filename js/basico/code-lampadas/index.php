@@ -133,9 +133,9 @@ element.onclick = function() {
                             script deve trocar pela imagem apagada, quando clicamos na imagem apagada o script troca pela imagem acesa. Veja as
                             figuras abaixo:</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" src="pic_bulboff.gif" alt="lámpada apagada" />
-                            <img class="img-rounded" src="pic_bulbon.gif" alt="lámpada acesa" />
+                        <div class="bs-example">
+                            <img class="img-rounded" src="pic_bulboff.gif" alt="### lámpada apagada" />
+                            <img class="img-rounded" src="pic_bulbon.gif" alt="### lámpada acesa" />
                             <p>O truque das lámpadas</p>
                         </div>                         
 

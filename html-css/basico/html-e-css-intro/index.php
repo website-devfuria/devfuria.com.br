@@ -290,8 +290,8 @@ require "../../../core/boot.php";
 
                             <p>Esse negócio é tão simples que fica até difícil de explicar. rs.</p>
 
-                            <div class="bs-example bs-example-images">
-                                <img class="img-rounded" alt="Formulário do Facebook" src="form_facebook.png">
+                            <div class="bs-example">
+                                <img class="img-rounded" alt="### Formulário do Facebook" src="form_facebook.png">
                             </div>
 
                             <p>Veja o famoso formulário do Facebook. Vamos analisar apenas a "tarja azul". Tamos os campos "login", "senha" e uma
@@ -346,8 +346,8 @@ require "../../../core/boot.php";
                         <p>A CSS também possui <strong>unidades de medidas</strong>: px(pixel), pt(pontos), em(relativo ao tamanho da fonte) e %(porcentagem).
                             A mais simples e conhecida é a <strong>pixel</strong>. Um pixel representa um ponto na tela, veja figura abaixo:</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Imagem do Pixel" src="pixel.png">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### Imagem do Pixel" src="pixel.png">
                             <p><a href="http://pt.wikipedia.org/wiki/Pixelx" title="link-externo">Fonte da imagem acima</a></p>
                         </div>                        
 
@@ -364,8 +364,8 @@ require "../../../core/boot.php";
 </code></pre>
 
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Imagem das Cores" src="cores.png">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### Imagem das Cores" src="cores.png">
                             <p><a href="http://pt.wikipedia.org/wiki/Pixelx" title="link-externo">Fonte da imagem acima</a></p>
                         </div>                        
 

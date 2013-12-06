@@ -80,8 +80,8 @@ require "../../../core/boot.php";
                             <h1 id="intro">Introdução</h1>
                         </div>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Desenho em quadrinhos satirizando ao (mal)uso do Excel!" src="vida_prog_112.png">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### Desenho em quadrinhos satirizando ao (mal)uso do Excel!" src="vida_prog_112.png">
                             <p>O Excel foi, é e sempre será utilizado indevidamente como banco de dados.</p>
                             <p>Fonte:
                                 <a href="http://vidadeprogramador.com.br/2011/05/24/banco-de-dados/" title="link-externo">Vida de programador</a>
@@ -97,7 +97,7 @@ require "../../../core/boot.php";
                             se tornar o nosso conhecido SQL (Structured Query Language, Linguagem de Consulta Estruturada).</p>
 
                         <div class="bs-example ">
-                            <img class="img-thumbnail" alt="Foto de Edgar Frank Codd" src="edgar-f-codd.jpg" />
+                            <img class="img-thumbnail" alt="### Foto de Edgar Frank Codd" src="edgar-f-codd.jpg" />
                             <p>Edgar Frank Codd (1923-2013) Pai da SEQUEL</p>
                         </div>                           
 
@@ -110,8 +110,8 @@ require "../../../core/boot.php";
 
                         <p>Você já viu pedirem experiência em T-SQL ou PL/SQL ? Vejamos os pricipais dialetos:</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Exemplos de dialetos SQL" src="sql-dialetos.png" />
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### Exemplos de dialetos SQL" src="sql-dialetos.png" />
                             <p>Dialetos SQL</p>
                         </div>                        
 
@@ -229,8 +229,8 @@ Camisa Social,   15.00 -- esse é outro registro
 
                             <p>Se juntarmos as colunas e os registros teremos as tabelas:</p>
 
-                            <div class="bs-example bs-example-images">
-                                <img class="img-rounded" alt="Tabelas" src="ex01-tabela.jpg" />
+                            <div class="bs-example">
+                                <img class="img-rounded" alt="### Tabelas" src="ex01-tabela.jpg" />
                                 <p>Fonte da imagem: 
                                     <a href="http://blog.thiagobelem.net/relacionamento-de-tabelas-no-mysql/" title="link-externo">Blog do Thiago Belem</a>
                                 </p>
@@ -249,8 +249,8 @@ Camisa Social,   15.00 -- esse é outro registro
 
                             <p>A imagem abaixo ilustra nosso banco de dados:</p>
 
-                            <div class="bs-example bs-example-images">
-                                <img class="img-rounded" alt="diagrama que representa um banco de dados" src="db.jpg" />
+                            <div class="bs-example">
+                                <img class="img-rounded" alt="### diagrama que representa um banco de dados" src="db.jpg" />
                                 <p>
                                     <a href="http://www2.itssolucoes.com.br/banco-de-dadoss" title="link-externo">Fonte da imagem</a>
                                 </p>
@@ -261,8 +261,8 @@ Camisa Social,   15.00 -- esse é outro registro
 
                             <p>Mas a figura oficial de um banco de dados é esta aqui:</p>
 
-                            <div class="bs-example bs-example-images">
-                                <img class="img-rounded" alt="diagrama oficial que representa um banco de dados" src="db02.jpg" />
+                            <div class="bs-example">
+                                <img class="img-rounded" alt="### diagrama oficial que representa um banco de dados" src="db02.jpg" />
                                 <p>Isto sim é um Banco de Dados</p>
                             </div>                              
 
@@ -372,8 +372,8 @@ root       -- informamos o usuário
                         <p>Espero que você esteja vendo o mesmo que eu:</p>
 
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="MySql via console" src="mysql-console.png" />
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### MySql via console" src="mysql-console.png" />
                             <p>Logado no MySql via console</p>
                         </div>                         
 

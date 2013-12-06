@@ -133,8 +133,8 @@ require "../../../core/boot.php";
                         <p>Se você nunca usou o linux, aconselho a leitura do livro "Linux guia prático(Morimoto)". Um livro bastante consiso, prático
                             e básico sem perder a profundidade.</p>
 
-                        <div class="bs-example bs-example-images">
-                            <img class="img-rounded" alt="Livro sobre o linux, autor Morimoto" src="linux-guia-pratico-morimoto.jpg">
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### Livro sobre o linux, autor Morimoto" src="linux-guia-pratico-morimoto.jpg">
                             <p>Ótimo livro para iniciantes no Linux</p>
                         </div>                        
                         
