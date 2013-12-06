@@ -519,10 +519,10 @@ var lampada = {
                             <li>true</li>
                         </ul>
 
-                        <p>Se preferir, baixe os arquivos através dos links: <a href="codigo-refatorado.js" title="Arquivo refatorado JS">codigo-refatorado.js</a>, <a href="lampadas.html" title="Arquivo HTML">lampadas.html</a>.</p>
+                        <p>Se preferir, baixe os arquivos através dos links: <a href="codigo-refatorado.js" title="link-externo">codigo-refatorado.js</a>, <a href="lampadas.html" title="Arquivo HTML">lampadas.html</a>.</p>
 
-                        <p>Baixe também as imagens das lâmpadas: <a href="pic_bulboff.gif" title="lâmpada off">lâmpada apagada</a>, 
-                            <a href="pic_bulbon.gif" title="lâmpada om">lâmpada acesa</a></p>
+                        <p>Baixe também as imagens das lâmpadas: <a href="pic_bulboff.gif" title="link-externo">lâmpada apagada</a>, 
+                            <a href="pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
 
                         <p>Agora chega de lâmpadas, na próxima matéria mudarei o assunto, até lá.</p>                      
 

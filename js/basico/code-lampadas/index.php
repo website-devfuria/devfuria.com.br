@@ -114,7 +114,7 @@ element.onclick = function() {
         element.src=&quot;http:&#x2F;&#x2F;www.devfuria.com.br&#x2F;js&#x2F;basico&#x2F;intro&#x2F;pic_bulbon.gif&quot;;
     }
 };</code></pre>
-<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/zFGvl'>a lâmpada</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/zFGvl' title="link-externo">a lâmpada</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti' title="link-externo">@flaviomicheletti</a>) on <a href='http://codepen.io' title="link-externo">CodePen</a></p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>                        
 
                     <div class="bs-docs-section">
@@ -148,11 +148,11 @@ element.onclick = function() {
 
                         <p>Para você me acompanhar, o ideal seria você baixar os código fontes ou redigitá-los.</p>
 
-                        <p>Baixe os arquivos através do Gist: <a href="https://gist.github.com/flaviomicheletti/6095926" title="Gist">https://gist.github.com/flaviomicheletti/6095926</a>
+                        <p>Baixe os arquivos através do Gist: <a href="https://gist.github.com/flaviomicheletti/6095926"  title="link-externo">https://gist.github.com/flaviomicheletti/6095926</a>
                             , clique no botão "Download Gist" e descompacte o arquivo.</p>
 
-                        <p>Baixe também as imagens das lâmpadas: <a href="pic_bulboff.gif" title="lâmpada off">lâmpada apagada</a>, 
-                            <a href="pic_bulbon.gif" title="lâmpada on">lâmpada acesa</a></p>
+                        <p>Baixe também as imagens das lâmpadas: <a href="pic_bulboff.gif" title="link-externo"lâmpada apagada</a>, 
+                            <a href="pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
 
                         <p>Agora, abra o arquivo html no navegador.</p>
 

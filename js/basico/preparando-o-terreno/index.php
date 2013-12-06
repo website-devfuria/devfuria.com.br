@@ -103,7 +103,7 @@ require "../../../core/boot.php";
                         <div class="bs-example bs-example-images">
                             <img class="img-rounded" alt="camadas de uma aplicação"  src="camadas.gif">
                             <p>Fonte:
-                                <a href="http://www.thiagotpc.com/entech/#slide-27">Slide em www.thiagotpc.com</a>
+                                <a href="http://www.thiagotpc.com/entech/#slide-27" title="link-externo">Slide em www.thiagotpc.com</a>
                             </p>
                         </div>
                     </div>
@@ -187,7 +187,7 @@ require "../../../core/boot.php";
                         </div>
 
                         <p>O FireBug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
-                            <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="FireBug">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
+                            <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="link-externo">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
 
                         <p>Ele será necessário para debugar-mos o código escrito em JS.</p>
 
