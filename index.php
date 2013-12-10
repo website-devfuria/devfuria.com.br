@@ -11,6 +11,10 @@ require "core/boot.php";
 <html lang="pt">
     <head>
         <?php
+        $core->head->setTitle('Cursos de programação Web');
+        $core->head->setDescription('Aprenda a programar para web');
+        $core->head->setkeywords('cursos web');
+        $core->head->setAuthor();        
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
         <style type="text/css">
