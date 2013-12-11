@@ -11,7 +11,8 @@ class Head {
     public $author;
 
     function setTitle($title) {
-        $this->title = $title . " | " . DOMINIO;
+//        $this->title = $title . " | " . DOMINIO;
+        $this->title = $title;
     }
 
     function setDescription($description) {
