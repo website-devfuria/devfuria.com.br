@@ -21,6 +21,8 @@ require "../core/boot.php";
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
+        
+        <link rel="canonical" href="<?php echo LINKS_PATH; ?>/regexp//" />
         <style type="text/css">
             h1 {
                 font-weight: bolder;
