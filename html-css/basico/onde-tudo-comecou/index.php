@@ -300,10 +300,10 @@ require "../../../core/boot.php";
                             <h1 id="ferramentas">Ferramentas</h1>
                         </div>
 
-                        <p>O <em>FireBug</em> eu já havia comentado sobre ele na matéria <a href="http://www.devfuria.com.br/js/basico/preparando-o-terreno/">http://www.devfuria.com.br/js/basico/preparando-o-terreno/</a>.</p>
+                        <p>O <em>Firebug</em> eu já havia comentado sobre ele na matéria <a href="http://www.devfuria.com.br/js/basico/preparando-o-terreno/">http://www.devfuria.com.br/js/basico/preparando-o-terreno/</a>.</p>
 
                         <p>Ele é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
-                            <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="FireBug">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
+                            <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="Firebug">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
 
                         <p>O Firebug é um verdadeiro canivete suíço, dá para fazer uma coisas impressionantes com ele e no fim acaba se saindo
                             como uma ferramenta indispensável.</p>

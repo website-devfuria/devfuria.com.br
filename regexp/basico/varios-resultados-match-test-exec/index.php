@@ -203,7 +203,7 @@ if (resultado) {
 
                         <p>Só assim você terá a garantida de que realmente incorporou os conceitos.</p>
 
-                        <p>Execute o códigos dessa matéria em sua máquina e <strong>observe os resultado no console do FireBug.</strong></p>
+                        <p>Execute o códigos dessa matéria em sua máquina e <strong>observe os resultado no console do Firebug.</strong></p>
 
                         <p>Para facilitar a sua vida, eu criei um Gist com os código fontes, assim você não precisará criar os arquivos.</p>
 

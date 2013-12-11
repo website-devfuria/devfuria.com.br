@@ -61,7 +61,7 @@ require "../../../core/boot.php";
                                 <a href="#aonde-colocar">Aonde colocar o Javascript ?</a>
                             </li>
                             <li>
-                                <a href="#firebug">FireBug</a>
+                                <a href="#firebug">Firebug</a>
                             </li>
                             <li>
                                 <a href="#seguro">Javascript é seguro?</a>
@@ -179,10 +179,10 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="firebug">FireBug?</h1>
+                            <h1 id="firebug">Firebug?</h1>
                         </div>
 
-                        <p>O FireBug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
+                        <p>O Firebug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
                             <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="link-externo">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
 
                         <p>Ele será necessário para debugar-mos o código escrito em JS.</p>
@@ -195,8 +195,8 @@ require "../../../core/boot.php";
 console.log(qualquer);</code></pre>
                         </div>
 
-                        <p>...estaremos na verdade, fazendo uso do plugin FireBug, pois a instrunção <em>console.log()</em> não é do JS e sim do plugin
-                            FireBug. O resultado do código é conferido na seção "console" do plugin.</p>
+                        <p>...estaremos na verdade, fazendo uso do plugin Firebug, pois a instrunção <em>console.log()</em> não é do JS e sim do plugin
+                            Firebug. O resultado do código é conferido na seção "console" do plugin.</p>
                     </div>
 
                     <div class="bs-docs-section">
