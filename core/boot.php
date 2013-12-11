@@ -74,13 +74,6 @@ define('KEYWORDS_PHP', "php básico; php fácil; php início; php iniciante; php
 define('KEYWORDS_JS', "javascript básico; javascript fácil; javascript início; javascript iniciante; " .
         "javascript iniciando; javascript iniciante; começando com javascript; começando no javascript; " .
         "javascript descomplicado; aprendendo javascript; matéria sobre javascript; aula sobre javascript; ");
-define('KEYWORDS_HTMLCSS', "html básico; html fácil; html início; html iniciante; " .
-        "html iniciando; html iniciante; começando com html; começando no html; " .
-        "html descomplicado; aprendendo html; matéria sobre html; aula sobre html" .
-        "css básico; css fácil; css início; css iniciante; " .
-        "css iniciando; css iniciante; começando com css; começando no css; " .
-        "css descomplicado; aprendendo css; matéria sobre css; aula sobre css;" .
-        "folhas estilo cascata, web standards, padrões web, tableless");
 define('KEYWORDS_LOGICA', "lógica básico; lógica fácil; lógica início; lógica iniciante; " .
         "lógica iniciando; lógica iniciante; começando com lógica; começando no lógica; " .
         "lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; ");
