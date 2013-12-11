@@ -167,10 +167,10 @@ document.write(minha_variavel);</code></pre>
                             <h1 id="depuradores">Depuradores (subindo um degrau)</h1>
                         </div>  
 
-                        <p>Quem desenvolve em JS e utiliza o FireFox para ver o resultado pode contar com o FireBug (já comentei um monte de vez
+                        <p>Quem desenvolve em JS e utiliza o Firefox para ver o resultado pode contar com o Firebug (já comentei um monte de vez
                             sobre esse plugin em matérias anteriores). Se você ainda não tem ele instalado, faça isso imediatamente.</p>
 
-                        <p>O FireBug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
+                        <p>O Firebug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
                             <a href="https://addons.mozilla.org/pt-br/firefox/addon/firebug" title="link-externo">https://addons.mozilla.org/pt-br/firefox/addon/firebug</a></p>
 
                         <pre><code class="language-javascript">var minha_variavel = "Hello word!";
@@ -187,7 +187,7 @@ console.log(minha_variavel);</code></pre>
                         <p>Ele parece-se com o do navegador (document.write) mas não se engane, a janela do console tem muitas outras 
                             funcionalidades e atrativos.</p>
 
-                        <p><span style="text-decoration:line-through;">Em breve, voltarei para apresentar brevemente o FireBug.</span></p>
+                        <p><span style="text-decoration:line-through;">Em breve, voltarei para apresentar brevemente o Firebug.</span></p>
 
                         <p>Já voltei. </p>
 

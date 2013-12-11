@@ -236,7 +236,7 @@ print_r($_SERVER);
 echo "&lt;/pre&gt;";
 </code></pre>
 
-                        <p>E aí, sentiu a diferênça?</p>
+                        <p>E aí, sentiu a diferença?</p>
                         <?php
                         $core->paginacao->link_ativo = "/php/basico/debugando/";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);

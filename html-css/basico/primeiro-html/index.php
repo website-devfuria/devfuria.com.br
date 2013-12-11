@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Elementos in-line e elementos block-level');
-        $core->head->setDescription('O objetivo da matéria é entender as diferênças entre os dois tipos');
+        $core->head->setDescription('O objetivo da matéria é entender as diferenças entre os dois tipos');
         $core->head->setkeywords('html in-line, html block, tag inline, tag block level');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";

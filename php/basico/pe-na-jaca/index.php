@@ -29,7 +29,7 @@ require "../../../core/boot.php";
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Antes de enfiar o pé na jáca</h1>
+                <h1>Antes de enfiar o pé na jaca</h1>
                 <p>Esta matéria traz algumas considerações sobre boas práticas, antes de você desembestar a cuspir códigos à rodo. Na verdade são quatro dicas essenciais para quem está começando a programar:</p>
             </div>
         </div>
@@ -78,7 +78,7 @@ require "../../../core/boot.php";
                         </div>
 
                         <blockquote>
-                            <p>“A questão é que o PHP é fácil demais. o que incentiva a implementar suas idéias, retornando, assim, bons
+                            <p>“A questão é que o PHP é fácil demais. O que incentiva a implementar suas idéias, retornando, assim, bons
                                 resultados. Algumas dessas facilidades são a possibilidade de digitar grande parte de seu código diretamente em suas
                                 páginas da Web, adicionar funções úteis (como um código de acesso a banco de dados) a arquivos, incluindo-as de página
                                 em página e, antes de se dar conta, você já tem um aplicativo Web em execução.</p>
@@ -151,10 +151,10 @@ else
 
                         <p>Alguns programadores defendem que a
                             endentação deve ser realizado com quatro espaços, ou seja, ao invés da tecla TAB, acionamos quatro vezes a barra de espaço.
-                            Eles dizem isso por que diferentes editores podem exibir diferetnes formatos do código fonte. Mas seja com espaços, ou
+                            Eles dizem isso por que diferentes editores podem exibir diferentes formatos do código fonte. Mas seja com espaços, ou
                             com o TAB (eu sou normal e uso o TAB) use-os!!!</p>
 
-                        <p>Outra consideração importante é: <em>ao digitar uma linha, idente-a. Não deixe para arrumar o codigo no final</em>. Sua vista
+                        <p>Outra consideração importante é: <em>ao digitar uma linha, idente-a. Não deixe para arrumar o código no final</em>. Sua vista
                             deve ir se acostumando com o codigo endentado, se deixar para o final você irá acostumar-se com código sem endentação.
                             <em>Olhe muito código de terceiro</em>, além de ajudar com o estilo, ajuda a entender da importância da endentação.</p>
                     </div>                        
@@ -251,7 +251,7 @@ endereco</code></pre>
                             for comentar o código, tenha como objetivo somente isso: auxiliar alguém quem não conhece o código e está tentando
                             entendê-lo. Se esse objetivo for cumprido, então o comentário foi nota 10.</p>
 
-                        <p>Outra coisa importante é: seja, ao menos, conciso. Quero dizer, use de português claro e objetivo. Não esqueca da
+                        <p>Outra coisa importante é: seja, ao menos, conciso. Quero dizer, use de português claro e objetivo. Não esqueça da
                             acentuar as palavras (afinal, falamos português, não é mesmo?), alguns programadores não fazem isso, eles estão
                             preocupados com o “charset” do arquivo.</p>
 
@@ -297,7 +297,7 @@ endereco</code></pre>
                             conseguimos identificar se foi Zezinho ou Luizinho quem mexeu no código, ou seja, <em>parece que foi escrito por
                                 uma só pessoa</em>, esse é o objetivo.</p>
 
-                        <p>No site do PECL (uma bibliote respeitosa de códigos PHP) encontramos alguns exemplos de estilo, vejamos:</p>
+                        <p>No site do PECL (uma biblioteca respeitosa de códigos PHP) encontramos alguns exemplos de estilo, vejamos:</p>
 
                         <div class="code">
                             <h6>PHP</h6>
@@ -312,7 +312,7 @@ if ((condition1) || (condition2)) {
 ?&gt;</code></pre>
                         </div>
 
-                        <p>Mas tem quem goste de colocar as chaves na linha de baixo, olhe a diferênça:</p>
+                        <p>Mas tem quem goste de colocar as chaves na linha de baixo, olhe a diferença:</p>
 
                         <div class="code">
                             <h6>PHP</h6>
@@ -366,7 +366,7 @@ elseif(  (condition3)&&(condition4)  ){
 
                         <p>Tudo bem, no começo, é difícil ter um parâmetro para fazer uma boa escolha do estilo, a dica é: não invente moda!!!
                             e observe muito código de terceiro, depois de uns 2 ou 3 anos programando (direto e reto) você começará a compor
-                            seu verdadeiro estilo. Mas não se esqueça dessas quatro dias:</p>
+                            seu verdadeiro estilo. Mas não se esqueça dessas quatro dicas:</p>
 
                         <ol>
                             <li>endentar o código</li>

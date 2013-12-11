@@ -104,7 +104,7 @@ require "../../../core/boot.php";
                             </ul>
 
                             <p>Outros termos surgirão e com o tempo esses conceitos irão se tornam mais claros e amadurecidos. Por enquanto, é
-                                aconselhável a não perder muito tempo com eles. <strong>Deixe seu celebro, aos poucos, se familiarizar com esse universo e
+                                aconselhável a não perder muito tempo com eles. <strong>Deixe seu cérebro, aos poucos, se familiarizar com esse universo e
                                     foque sua atenção para a liguagem</strong>.</p>
 
                             <p>O termo "Linguagem de programação do lado do servidor" é uma forma genérica de se referir a linguagem de programação que
@@ -173,10 +173,10 @@ require "../../../core/boot.php";
 
                         <p>Em contraponto ao ambiente de desenvolvimento, temos o ambiente na qual o software está rodando de verdade. Trata-se do
                             <strong>ambiente de produção</strong> seu correto funcionamento é um fator crítico para a equipe de TI. Os scripts são produzidos e
-                            testados no ambiente de desenvolvimento e posteriormente publicados (enviados) para o ambiente de produção. Após "subir
+                            testados no ambiente de desenvolvimento e posteriormente publicados (enviados) para o ambiente de produção. Após "subir"
                             o ambiente é preciso instalar programas auxiliares como um bom editor de código (Netbeans, Eclipse, etc...), um
                             controlador de versão (software que controla a versão do código fonte), um navegador de web compatível com o
-                            "webs standars" (Fire Fox, Google Chrome, etc...), uma interface (API) para o banco de dados, no caso do Mysql é
+                            "webs standars" (Firefox, Google Chrome, etc...), uma interface (API) para o banco de dados, no caso do Mysql é
                             utilizado o PhpMyAdmin, bibliotecas que auxiliam na depuração do código como o X-Debug, etc...</p>
 
                         <p>A rotina de desenvolvimento, no tocante a codificação, normalmente é esta: com o editor e navegador abertos escrevemos um
@@ -239,7 +239,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                         <div class="page-header">
                             <h1 id="porque-php">Por que PHP?</h1>
                         </div>
-                        <p>O PHP obteve, nos anos seguinte à sua criação, a colaboração da dupla Andi Gutmans e Zeev Suraski evoluíndo de forma
+                        <p>O PHP obteve, nos anos seguinte à sua criação, a colaboração da dupla Andi Gutmans e Zeev Suraski evoluindo de forma
                             surpreendente. Atualmente na versão 5.4 a linguagem conta com uma larga aceitação e utilização em centenas de projetos,
                             dos mais simples aos mais complexos. A linguagem possui vasta documentação na Internet e na literatura. Alguns bons
                             framework´s foram produzidos como por exemplo o <strong>Zend</strong> e o Symphony (entre outros). A empresa Zend, responsável pelo
@@ -257,7 +257,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                             </p>
                         </div>
 
-                        <p>Bom... um servidor apache pode rodar outas linguagens além do PHP, mas veja este outro gráfico:</p>
+                        <p>Bom... um servidor apache pode rodar outras linguagens além do PHP, mas veja este outro gráfico:</p>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### estatística do PHP" src="php_estatistica01.png" class="img-responsive">
@@ -306,7 +306,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                                     </a>
                                     <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Trecho do manual...</h4>
-                                        <p class="list-group-item-text">... que introduz à programação em PHP.</p>
+                                        <p class="list-group-item-text">... que introduz a programação em PHP.</p>
                                         <span class="label label-default">http://www.php.net/manual/pt_BR/getting-started.php</span>
                                     </a>
                                     <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">

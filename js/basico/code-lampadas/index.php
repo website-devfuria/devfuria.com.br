@@ -167,7 +167,7 @@ element.onclick = function() {
 
                             <pre><code class="no-highlight">/var/www/html/devfuria/labs/index.html</code></pre>
 
-                            <p>A diferênça é </p>
+                            <p>A diferença é </p>
 
                             <pre><code class="no-highlight">NAVEGADOR = http//localhost/[seus diretórios]
 HD        = /var/www/html/[seus diretórios]</code></pre>
