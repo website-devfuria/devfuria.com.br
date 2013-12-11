@@ -1,6 +1,6 @@
 <?php
 /**
- * index HTML
+ * index MYSQL
  */
 /**
  * Includes
@@ -11,16 +11,14 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('HTML-CSS | ' . DOMINIO);
-        $core->head->setDescription('Aprendendo HTML(5) e CSS(3)');
-        $core->head->setkeywords("tutorial html, tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
-            "html básico; html fácil; html início; html iniciante; " .
-            "html iniciando; html iniciante; começando com html; começando no html; " .
-            "html descomplicado; aprendendo html; matéria sobre html; aula sobre html" .
-            "css básico; css fácil; css início; css iniciante; " .
-            "css iniciando; css iniciante; começando com css; começando no css; " .
-            "css descomplicado; aprendendo css; matéria sobre css; aula sobre css;" .
-            "folhas estilo cascata, web standards, padrões web, tableless"
+        $core->head->setTitle('Mysql-SQL | ' . DOMINIO);
+        $core->head->setDescription('Aprendendo Mysql e SQL');
+        $core->head->setkeywords("sql; mysql; sql básico; sql fácil; sql início; sql iniciante; " .
+                "sql iniciando; sql iniciante; começando com sql; começando no sql; " .
+                "sql descomplicado; aprendendo sql; matéria sobre sql; aula sobre sql; " .
+                "mysql básico; mysql fácil; mysql início; mysql iniciante; " .
+                "mysql iniciando; mysql iniciante; começando com mysql; começando no mysql; " .
+                "mysql descomplicado; aprendendo mysql; matéria sobre mysql; aula sobre mysql; "
         );
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -36,25 +34,34 @@ require "../core/boot.php";
 
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $core->navtop->secao_ativa = Core::SECAO_MYSQL;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
-                <h1>HTML & CSS<small></small></h1>
-                <p class="lead">Curso de HTML e CSS</p>
-                <p>Falar sobre o curso!</p>
+                <h1>Mysql & SQL<small></small></h1>
+                <p class="lead">Curso de Mysql e SQL</p>
+                <p>Eu estava na dúvida se fazia um curso apenas de SQL ou se envolvia um Banco de Dados.</p>
+                <p>É certo que a SQL é um padrão (ou pelo menos deveria ser) e que indepênde de banco de dados, mas por outro lado, como aprender SQL sem ao menos um banco de dados?</p>
+
+                <p>Minha escolha pelo MySql é óbvia: é um DB "pau para toda obra", é o companheiro inseparável do PHP e é muito fácil começar por ele.</p>
+
+                <p><strong>Se o curso é sobre SQL porque chama-se Mysql?</strong></p>
+
+                <p>É porque eu não gostaria que alguém que estivesse procurando por SQL, entra-se no curso achando que vai aprender apenas SQL e na verdade irá aprender SQL juntamente com o MySql. Pode parecer bobagem mas eu quis tomar esse cuidado.</p>
+
+                <p>Esse é um curso de SQL através do MySql.</p>
             </div>
         </main>
 
-        <div class="" style="background-color: #FFF; padding:   0px 0px;" id="html-css">
+        <div class="" style="background-color: #FFF; padding:   0px 0px;" id="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>HTML & CSS</h1>
+                        <h1>Mysql-SQL</h1>
                         <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
+                        $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>

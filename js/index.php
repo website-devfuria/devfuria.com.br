@@ -13,14 +13,9 @@ require "../core/boot.php";
         <?php
         $core->head->setTitle('Javascript | ' . DOMINIO);
         $core->head->setDescription('Aprendendo Javascript');
-        $core->head->setkeywords("tutorial html, tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
-            "html básico; html fácil; html início; html iniciante; " .
-            "html iniciando; html iniciante; começando com html; começando no html; " .
-            "html descomplicado; aprendendo html; matéria sobre html; aula sobre html" .
-            "css básico; css fácil; css início; css iniciante; " .
-            "css iniciando; css iniciante; começando com css; começando no css; " .
-            "css descomplicado; aprendendo css; matéria sobre css; aula sobre css;" .
-            "folhas estilo cascata, web standards, padrões web, tableless"
+        $core->head->setkeywords("javascript; js; javascript básico; javascript fácil; javascript início; javascript iniciante; " .
+            "javascript iniciando; javascript iniciante; começando com javascript; começando no javascript; " .
+            "javascript descomplicado; aprendendo javascript; matéria sobre javascript; aula sobre javascript; "
         );
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -44,7 +39,14 @@ require "../core/boot.php";
             <div class="container">
                 <h1>Javascript<small></small></h1>
                 <p class="lead">Curso de Javascript</p>
-                <p>Falar sobre o curso!</p>
+                <p>Preciso confessar algo: <strong>tenho o maior carinho por este curso</strong>.</p>
+                <p>Adoro Javascript (JS) e estou escrevendo as matérias com muita alegria.</p>
+                <p>JS foi (talvez ainda seja) uma linguagem sempre tida como secundária.</p>
+                <p>Eu, quando comecei a programar em meados de 2007, fui apresentado ao JS como sendo um mal necessário.</p>
+                <p>Como bom aprendiz, acreditei nessa palavras tolas e por muito tempo evitei o JS.</p> 
+                <p>Em dado momento, quase como um passe de magica eu comecei a me encantar com a linguagem.</p>
+                <p>E, se pudesse voltar ao passado, jamais teria cometido a loucura de ignorá-la.</p>
+                <p>Seja bem vindo curso e espero que você também se apaixone pelo JS.</p>
             </div>
         </main>
 

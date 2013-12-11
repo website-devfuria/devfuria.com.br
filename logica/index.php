@@ -13,14 +13,8 @@ require "../core/boot.php";
         <?php
         $core->head->setTitle('Lógica de programação | ' . DOMINIO);
         $core->head->setDescription('Aprendendo Lógica de programação');
-        $core->head->setkeywords("tutorial html, tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
-            "html básico; html fácil; html início; html iniciante; " .
-            "html iniciando; html iniciante; começando com html; começando no html; " .
-            "html descomplicado; aprendendo html; matéria sobre html; aula sobre html" .
-            "css básico; css fácil; css início; css iniciante; " .
-            "css iniciando; css iniciante; começando com css; começando no css; " .
-            "css descomplicado; aprendendo css; matéria sobre css; aula sobre css;" .
-            "folhas estilo cascata, web standards, padrões web, tableless"
+        $core->head->setkeywords("lógica básico; lógica de programação; lógica para iniciantes; " .
+            "raciocio lógico; algoritmo; lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; "
         );
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -42,7 +36,7 @@ require "../core/boot.php";
         <!-- Page content of course! -->
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
-                <h1>HTML & CSS<small></small></h1>
+                <h1>Lógica de programação<small></small></h1>
                 <p class="lead">Curso de Lógica de programação</p>
                 <p>Falar sobre o curso!</p>
             </div>
@@ -52,7 +46,7 @@ require "../core/boot.php";
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Lǵica de programação</h1>
+                        <h1>Lógica de programação</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_LOG);
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";

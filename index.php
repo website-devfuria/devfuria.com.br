@@ -13,7 +13,7 @@ require "core/boot.php";
         <?php
         $core->head->setTitle('Desenvolvimento Web');
         $core->head->setDescription('Cursos, aulas, tutoriais, apostilas, matérias sobre programação web prá ninguém botar defeito!');
-        $core->head->setkeywords('cursos web');
+        $core->head->setkeywords("aplicações web; webapp; app's; desenvolvimento; desenvolvimento web; website; cursos web; webstandards;  programação; aprendendo programação; aulas de programação; tutoriais; artigos;");
         $core->head->setAuthor();        
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -36,7 +36,7 @@ require "core/boot.php";
             <div class="container">
                 <h1>DevFuria</h1>
                 <p class="lead" style="margin-bottom: 0px">Desenvolvimento web prá ninguém botar defeito!</p>
-                <p class="lead" ><small>Cursos, aulas, tutoriais, apostilas, matérias...</small></p>
+                <p class="lead" ><small>Cursos, aulas, tutoriais, matérias... tudo muito bem preparado.</small></p>
                 <!--<p class="lead">Curso sobre programação web prá ninguém botar defeito!</p>-->
                 <ul>
                     <li>Isto não é um blog!</li>

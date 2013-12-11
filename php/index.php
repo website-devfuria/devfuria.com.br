@@ -1,6 +1,6 @@
 <?php
 /**
- * index HTML
+ * index PHP
  */
 /**
  * Includes
@@ -11,16 +11,12 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('HTML-CSS | ' . DOMINIO);
-        $core->head->setDescription('Aprendendo HTML(5) e CSS(3)');
-        $core->head->setkeywords("tutorial html, tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
-            "html básico; html fácil; html início; html iniciante; " .
-            "html iniciando; html iniciante; começando com html; começando no html; " .
-            "html descomplicado; aprendendo html; matéria sobre html; aula sobre html" .
-            "css básico; css fácil; css início; css iniciante; " .
-            "css iniciando; css iniciante; começando com css; começando no css; " .
-            "css descomplicado; aprendendo css; matéria sobre css; aula sobre css;" .
-            "folhas estilo cascata, web standards, padrões web, tableless"
+        $core->head->setTitle('PHP | ' . DOMINIO);
+        $core->head->setDescription('Aprendendo PHP');
+        $core->head->setkeywords("php; php5; php6; php5.3; php5.4; tutorial php; codigos php; apostila php; " .
+            "php básico; php fácil; php início; php iniciante; php iniciando; php iniciante; " .
+            "começando com php; começando no php; php descomplicado; aprendendo php; " .
+            "matéria sobre php; aula sobre php; "
         );
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -36,14 +32,14 @@ require "../core/boot.php";
 
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $core->navtop->secao_ativa = Core::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
-                <h1>HTML & CSS<small></small></h1>
-                <p class="lead">Curso de HTML e CSS</p>
+                <h1>PHP<small></small></h1>
+                <p class="lead">Curso de PHP</p>
                 <p>Falar sobre o curso!</p>
             </div>
         </main>
@@ -52,9 +48,9 @@ require "../core/boot.php";
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>HTML & CSS</h1>
+                        <h1>PHP</h1>
                         <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
+                        $core->lista->setLinks($core->links, Core::SECAO_PHP);
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
