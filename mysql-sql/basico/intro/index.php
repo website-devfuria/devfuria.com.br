@@ -314,11 +314,11 @@ systemctl enable mysqld.service</code></pre>
 
                         <p>Para testarmos a instalação do mysql nada melhor do que acionarmos o aplicativo.</p>
 
-                        <p>O MySql utiliza o diretório <code>mysql&gt;</code> como diretório atual. Como exemlo veja o meu diretório autal:</p>
+                        <p>O MySql utiliza a "label" <code>mysql&gt;</code> na shell. Como exemlo veja a minha shell:</p>
 
                         <pre><code class="no-highlight">[flavio@localhost www.devfuria.com.br]$</code></pre>
 
-                        <p>... ao entrar no Mysql meu diretório atual fica como abaixo:</p>
+                        <p>... ao entrar no Mysql meu console fica como abaixo:</p>
 
                         <pre><code class="no-highlight">mysql&gt;</code></pre>
 
