@@ -410,7 +410,7 @@ root       -- informamos o usuário
                             </div>
                         </div>
                         <?php
-                        $core->paginacao->link_ativo = "/mysql/basico/intro/";
+                        $core->paginacao->link_ativo = "/mysql-sql/basico/intro/";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                         ?>    
@@ -427,7 +427,7 @@ root       -- informamos o usuário
                         <h1>MySql</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
-                        $core->lista->link_ativo = "/mysql/basico/intro/";
+                        $core->lista->link_ativo = "/mysql-sql/basico/intro/";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
