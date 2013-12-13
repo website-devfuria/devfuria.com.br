@@ -156,7 +156,6 @@ require "../../../core/boot.php";
                         </div>
                     </div>
 
-
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="siglas">DB = BD = SGBDR</h1>
@@ -174,7 +173,6 @@ require "../../../core/boot.php";
 
                     </div>
 
-
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="banco-dados">Banco de dados</h1>
@@ -190,7 +188,6 @@ require "../../../core/boot.php";
                         </blockquote>
 
                     </div>
-
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -271,7 +268,6 @@ Camisa Social,   15.00 -- esse é outro registro</code></pre>
                         </div>
                     </div>
 
-
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="instalando">Instalando o Mysql</h1>
@@ -305,7 +301,6 @@ systemctl enable mysqld.service</code></pre>
 
                         <p>Se tudo ocorreu bem poderemos acessar o servidor mysql via console.</p>
                     </div>
-
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -378,17 +373,51 @@ root       -- informamos o usuário
                         <pre><code class="no-highlight">exit</code></pre>
 
                         <p>O sistema responde com um simpático "Bye"... eu também, tchau!</p>
+
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            </div>
+
+                            <!--                        <div class="panel panel-success">
+                                                        <div class="panel-heading">
+                                                            <h3 class="panel-title">Livros</h3>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div class="list-group">
+                                                                <a href="#" class="list-group-item" title="">
+                                                                    <h4 class="list-group-item-heading">Nenhum livro sobre PHP</h4>
+                                                                    <p class="list-group-item-text">Nenhum livro sobre PHP é suficientemente básico, conciso e estruturado em uma sequência com começo, meio e fim. Se tratando de PHP para iniciantes, infelizmente não conheço nenhum livro na qual seja merecedor de uma indicação. Existe uma infinidades de livros bons e nos quais eu farei referência quando for oportuno, mas a abrangência é de intermediário para avançado. Aliás, essa foi uma das razões que me motivaram a realizar este projeto O ensino da linguagem de programação, de qualquer linguagem, é muito difuso, disperso, pulverizado e pouco conciso.</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>-->
+
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Internet</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="list-group">
+                                        <a href="http://dev.mysql.com/doc/index.html" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">Manual oficial do MySql</h4>
+                                            <p class="list-group-item-text">Está aqui não é sugerida, é obrigatória.</p>
+                                            <span class="label label-default">http://dev.mysql.com/doc/index.html</span>
+                                        </a>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
                         <?php
                         $core->paginacao->link_ativo = "/mysql/basico/intro/";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                                  
-
+                        ?>    
                     </div>
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
 
         <footer class="bs-footer">
