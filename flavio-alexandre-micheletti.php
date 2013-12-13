@@ -102,7 +102,7 @@ require "core/boot.php";
                             <tr>
                                 <th>Publicações (TCC)</th>
                                 <td>
-                                    <a class=""><small>ANÁLISE DAS PRINCIPAIS VULNERABILIDADES DE APLICAÇÕES WEB
+                                    <a href="tcc-flavio-alexandre-micheletti.pdf" title="link-externo" class=""><small>ANÁLISE DAS PRINCIPAIS VULNERABILIDADES DE APLICAÇÕES WEB
                                             TENDO COMO BASE A ARQUITETURA LAMP E AS
                                             TOP 10 VULNERABILIDADES DA OWASP</small>
                                     </a>
