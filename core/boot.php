@@ -13,16 +13,16 @@ session_start();
  *
  */
 define('DF', true);
-//define('GANALYTICS_ON', true); // liga
-define('GANALYTICS_ON', false); // desliga
+define('GANALYTICS_ON', true); // liga
+//define('GANALYTICS_ON', false); // desliga
 
 
 
 /**
  * Root
  */
-//define('ROOT_PATH', "http://www.devfuria.com.br");
-define('ROOT_PATH', "http://localhost/devfuria/www.devfuria.com.br");
+define('ROOT_PATH', "http://www.devfuria.com.br");
+//define('ROOT_PATH', "http://localhost/devfuria/www.devfuria.com.br");
 
 
 /**
@@ -100,14 +100,13 @@ $core->links[Core::SECAO_LOG] = array(
 );
 $core->links[Core::SECAO_HTML] = array(
     LINKS_PATH . "/html-css/basico/onde-tudo-comecou/" => "Onde tudo começou",
-//    LINKS_PATH . "/html-css/basico/html-e-css-intro/" => "HTML e CSS - Introdução",
     LINKS_PATH . "/html-css/basico/html-intro/" => "Primeiro contato com HTML",
     LINKS_PATH . "/html-css/basico/css-intro/" => "Primeiro contato com CSS",
     LINKS_PATH . "/html-css/basico/elementos-inline-block-level/" => "Elementos in-line e elementos block-level",
     LINKS_PATH . "/html-css/basico/primeiro-html/" => "Criando nosso primeiro HTML [com vídeo]",
 );
 $core->links[Core::SECAO_MYSQL] = array(
-    LINKS_PATH . "/mysql/basico/intro/" => "Banco de dados prá que?",
+    LINKS_PATH . "/mysql-sql/basico/intro/" => "Banco de dados prá que?",
 );
 $core->links[Core::SECAO_ER] = array(
     LINKS_PATH . "/regexp/basico/intro/" => "Introdução",
