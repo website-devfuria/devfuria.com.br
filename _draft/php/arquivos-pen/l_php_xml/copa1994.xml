@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<copa>
+	<nome>Copa do Mundo 1994</nome>
+	<local>Estados Unidos</local>
+	<campeao>Brasil</campeao>
+	<jogos>
+		<jogo>
+			<confronto>Brasil x Rússia</confronto>
+			<placar>2 x 0</placar>
+		</jogo>
+
+		<jogo>
+			<confronto>Brasil x Camarões</confronto>
+			<placar>3 x 0</placar>
+		</jogo>
+
+		<jogo>
+			<confronto>Brasil x Suécia</confronto>
+			<placar>1 x 1</placar>
+		</jogo>
+
+		<jogo>
+			<confronto>Brasil x Estados Unidos</confronto>
+			<placar>1 x 0</placar>
+		</jogo>
+
+		<jogo>
+			<confronto>Brasil x Holanda</confronto>
+			<placar>3 x 2</placar>
+		</jogo>
+
+		<jogo>
+			<confronto>Brasil x Suécia</confronto>
+			<placar>1 x 0</placar>
+		</jogo>
+
+		<jogo>
+			<confronto>Brasil x Itália</confronto>
+			<placar>0 x 0 - Brasil vence nos pênaltis</placar>
+		</jogo>
+
+	</jogos>
+
+	<escalacao>
+		<jogador>Taffarel</jogador>
+		<jogador>Jorginho</jogador>
+		<jogador>Aldair</jogador>
+		<jogador>Márcio Santos</jogador>
+		<jogador>Mauro Silva</jogador>
+		<jogador>Branco</jogador>
+		<jogador>Bebeto</jogador>
+		<jogador>Dunga</jogador>
+		<jogador>Zinho</jogador>
+		<jogador>Mazinho</jogador>
+		<jogador>Romário</jogador>
+	</escalacao>
+
+</copa>

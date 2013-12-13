@@ -1,0 +1,11 @@
+sudo add-apt-repository ppa:unity-2d-team/unity-2d-daily
+sudo apt-get update
+sudo apt-get install unity-2d
+
+
+Passo 1. Abra uma janela do terminal, clicando no menu Ubuntu, e digite: terminal
+Passo 2. Restaure as configurações originais do Unity com o comando: unity --reset
+Passo 3. Restaure os ícones da barra lateral do Ubuntu, também conhecida como Dock, com o comando: unity --reset-icons
+Passo 4. Se você está tendo problemas com os recursos gráficos 3D do Compiz, restaure as configurações com: gconftool-2 --recursive-unset /apps/compiz-1
+Depois, dê novamente o comando: unity --reset
+Pronto! Seu Unity está funcionando com as configurações de fábrica.

@@ -1,0 +1,97 @@
+[flavio@flavio-desk-fedora ~]$ su -
+Password: 
+[root@flavio-desk-fedora ~]# clear
+
+[root@flavio-desk-fedora ~]# cd /home/flavio/Downloads/
+[root@flavio-desk-fedora Downloads]# ls
+virtualbox.repo  virtualbox.repo~
+[root@flavio-desk-fedora Downloads]# mv virtualbox.repo /etc/yum.repos.d/
+[root@flavio-desk-fedora Downloads]# yum install dkms
+Loaded plugins: langpacks, presto, refresh-packagekit
+virtualbox                                                                                                   |  951 B     00:00     
+virtualbox/primary                                                                                           | 2.6 kB     00:00     
+virtualbox                                                                                                                      5/5
+Package dkms-2.2.0.3-3.fc17.noarch already installed and latest version
+Nothing to do
+[root@flavio-desk-fedora Downloads]# yum install VirtualBox-4.2
+Loaded plugins: langpacks, presto, refresh-packagekit
+Resolving Dependencies
+--> Running transaction check
+---> Package VirtualBox-4.2.x86_64 0:4.2.0_80737_fedora17-1 will be installed
+--> Processing Dependency: libSDL-1.2.so.0()(64bit) for package: VirtualBox-4.2-4.2.0_80737_fedora17-1.x86_64
+--> Running transaction check
+---> Package SDL.x86_64 0:1.2.14-16.fc17 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+====================================================================================================================================
+ Package                         Arch                    Version                                  Repository                   Size
+====================================================================================================================================
+Installing:
+ VirtualBox-4.2                  x86_64                  4.2.0_80737_fedora17-1                   virtualbox                   64 M
+Installing for dependencies:
+ SDL                             x86_64                  1.2.14-16.fc17                           fedora                      194 k
+
+Transaction Summary
+====================================================================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 64 M
+Installed size: 134 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/2): SDL-1.2.14-16.fc17.x86_64.rpm                                                                         | 194 kB     00:01     
+(2/2): VirtualBox-4.2-4.2.0_80737_fedora17-1.x86_64.rpm                                                      |  64 MB     05:35     
+warning: rpmts_HdrFromFdno: Header V4 DSA/SHA1 Signature, key ID 98ab5139: NOKEY
+Public key for VirtualBox-4.2-4.2.0_80737_fedora17-1.x86_64.rpm is not installed
+------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                               195 kB/s |  64 MB     05:35     
+Retrieving key from http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc
+Importing GPG key 0x98AB5139:
+ Userid     : "Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>"
+ Fingerprint: 7b0f ab3a 13b9 0743 5925 d9c9 5442 2a4b 98ab 5139
+ From       : http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc
+Is this ok [y/N]: y
+Running Transaction Check
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : SDL-1.2.14-16.fc17.x86_64                                                                                        1/2 
+  Installing : VirtualBox-4.2-4.2.0_80737_fedora17-1.x86_64                                                                     2/2 
+
+Creating group 'vboxusers'. VM users must be member of that group!
+
+No precompiled module for this kernel found -- trying to build one. Messages
+emitted during module compilation will be logged to /var/log/vbox-install.log.
+
+Stopping VirtualBox kernel modules [  OK  ]
+Uninstalling old VirtualBox DKMS kernel modules [  OK  ]
+Trying to register the VirtualBox kernel modules using DKMSError! Bad return status for module build on kernel: 3.5.3-1.fc17.x86_64 (x86_64)
+Consult /var/lib/dkms/vboxhost/4.2.0/build/make.log for more information.
+ [FAILED]
+  (Failed, trying without DKMS)
+Recompiling VirtualBox kernel modules [FAILED]
+  (Look at /var/log/vbox-install.log to find out what went wrong)
+  Verifying  : SDL-1.2.14-16.fc17.x86_64                                                                                        1/2 
+  Verifying  : VirtualBox-4.2-4.2.0_80737_fedora17-1.x86_64                                                                     2/2 
+
+Installed:
+  VirtualBox-4.2.x86_64 0:4.2.0_80737_fedora17-1                                                                                    
+
+Dependency Installed:
+  SDL.x86_64 0:1.2.14-16.fc17                                                                                                       
+
+Complete!
+[root@flavio-desk-fedora Downloads]# VirtualBox
+WARNING: The vboxdrv kernel module is not loaded. Either there is no module
+         available for the current kernel (3.5.3-1.fc17.x86_64) or it failed to
+         load. Please recompile the kernel module and install it by
+
+           sudo /etc/init.d/vboxdrv setup
+
+         You will not be able to start VMs until this problem is fixed.
+[root@flavio-desk-fedora Downloads]# logout
+[flavio@flavio-desk-fedora ~]$ ^C
+[flavio@flavio-desk-fedora ~]$ 
+

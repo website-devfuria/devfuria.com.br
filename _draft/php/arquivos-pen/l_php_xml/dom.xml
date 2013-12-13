@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<sites>
+	<site>
+		<titulo>So Matematica</titulo>
+		<url>http://www.somatematica.com.br</url>
+		<descricao>O maior portal matematico do mundo!</descricao>
+		<palavras_chave>Matematica, Algebra, Geometria</palavras_chave>
+	</site>
+
+	<site>
+		<titulo>Novatec Editora</titulo>
+		<url>http://www.novateceditora.com.br</url>
+		<descricao>Editora especializada em Informatica.</descricao>
+		<palavras_chave>Livros, Guias, Publicacoes, Informatica</palavras_chave>
+	</site>
+
+	<site>
+		<titulo>PHP.net</titulo>
+		<url>http://www.php.net</url>
+		<descricao>Site oficial da linguagem PHP.</descricao>
+		<palavras_chave>Linguagem, Programacao, Web, Script</palavras_chave>
+	</site>
+</sites>

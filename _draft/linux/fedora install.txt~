@@ -1,0 +1,229 @@
+/**************************************************************************************************************************************************
+***************************************************************************************************************************************************
+Quando atualizar o arquivo, favor anotar e avisar a todos.
+
+
+última atualização	quando
+Flávio				10/10/2012
+
+***************************************************************************************************************************************************
+**************************************************************************************************************************************************/
+
+
+Apache2
+# yum install httpd
+# chkconfig --levels 235 httpd on
+# /etc/init.d/httpd start
+ou
+# service httpd start
+----------------------------------------------------------------------------------
+
+
+Mysql
+# yum install mysql mysql-server
+
+Start and Enable Mysql service
+# systemctl start mysqld.service
+# systemctl enable mysqld.service
+
+Make  Mysql password  with  :
+# mysqladmin -u root password [your_password_here]
+
+Check the connexion  to the databae server with:
+# mysql -h localhost -u root -p
+----------------------------------------------------------------------------------
+
+
+PHP
+# yum install httpd php php-common
+
+# yum install php-pecl-apc php-cli php-pear php-pdo php-mysql php-pgsql php-pecl-mongo 
+	      php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
+
+Para exibir os erros altere o php.ini
+# nano /etc/php.ini
+
+linhas
+error_reporting = E_ALL
+display_errors = On
+track_errors = On
+html_errors = On
+
+reinicie o apache
+# service httpd restart
+----------------------------------------------------------------------------------
+
+
+
+X-DEBUG
+# yum install php-pecl-xdebug
+# service httpd restart
+----------------------------------------------------------------------------------
+
+
+
+PHPMYADMIN
+# yum install phpmyadmin
+# service httpd resstart
+----------------------------------------------------------------------------------
+
+
+SVN
+# yum install subversion
+# yum install mod_dav_svn
+----------------------------------------------------------------------------------
+
+
+Open JDK-7
+# su -c "yum install java-1.7.0-openjdk"
+----------------------------------------------------------------------------------
+
+
+NETBEANS
+baixo a última versão em http://netbeans.org  (versão para PHP)
+
+Dê permissão de execução
+# chmod 777 nome_do-arquivo
+
+e execute
+# ./nome_do_arquivo
+Talvez seja necessário reiniciar a máquina
+----------------------------------------------------------------------------------
+
+
+VIRTUALBOX
+Na pasta atual, crie um arquivo chamado "oracle_vbox.asc"
+e insira nele o seguinte conteúdo:
+	[virtualbox]
+	name=Fedora $releasever - $basearch - VirtualBox
+	baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/$releasever/$basearch
+	enabled=1
+	gpgcheck=1
+	gpgkey=http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc
+
+
+Mover para a pasta  de reposítórioa adcionais do Fedora:
+# mv virtualbox.repo /etc/yum.repos.d/
+
+# Instalar o pacot DMKS
+# yum install dkms
+
+Instalar o Vbox
+# yum install VirtualBox-4.2
+
+
+Algumas msg de erros são exebidas, checar...
+# /var/log/vbox-install.log
+# /var/lib/dkms/vboxhost/4.2.0/bulid/make.log
+# /etc/init.d/vboxdrv setup
+
+Baseado no artigo abaixo:
+http://www.zealfortechnology.com/2012/06/install-oracle-virtualbox-on-fedora.html
+----------------------------------------------------------------------------------
+
+
+
+Para acesar pendrive no virtual box precisa adicionar seu usuário ao grupo vboxusers
+# adduser seu_usuario vboxusers
+----------------------------------------------------------------------------------
+
+
+
+Quando o virtual box apresenta o seguinte erro:
+  '/etc/init.d/vboxdrv setup'
+
+...execute para corrigir
+# yum install kernel-devel
+			  kernel-headers
+			  gcc
+			  dkms
+
+e execute novamente...
+# /etc/init.d/vboxdrv setup
+----------------------------------------------------------------------------------
+
+
+
+
+FILEZILA
+# yum -y install filezilla
+----------------------------------------------------------------------------------
+
+
+
+GIT
+# yum install git
+	      git-svn
+	      git-gui
+----------------------------------------------------------------------------------
+
+
+
+Rabbit
+# yum install rabbitvcs*
+----------------------------------------------------------------------------------
+
+
+DIA
+# yum install dia
+----------------------------------------------------------------------------------
+
+
+PENCIL
+Fazer o download na página principal do projeto
+http://evoluspencil.googlecode.com/files/pencil-2.0.2-1.fc17.noarch.rpm
+dar permissões para execução
+# rpm -ivh pencil-2.0.2-1.fc17.noarch.rpm
+----------------------------------------------------------------------------------
+
+
+RAR
+# rpm -ivh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+# rpm -ivh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+# yum list all > yum_list.txt
+# grep unrar yum_list.txt 
+# yum install unrar
+----------------------------------------------------------------------------------
+
+Descobrir qual é a versão do FEDORA
+# cat /etc/*release
+----------------------------------------------------------------------------------
+
+
+
+ICEauthority
+# chown -R gdm: /var/lib/gdm
+----------------------------------------------------------------------------------
+
+Disabilitar SElinux0
+ver artigo em http://docs.fedoraproject.org/en-US/Fedora/13/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Working_with_SELinux-Enabling_and_Disabling_SELinux.html
+----------------------------------------------------------------------------------
+
+
+Lista todos os usuários
+# cat /etc/passwd | awk -F ":" '{print $1}'
+----------------------------------------------------------------------------------
+
+Tudo sobre fedora
+http://fedora.wiki.br/wiki/FAQ_do_Fedora_10
+
+Arrumando o phpmyadmin
+http://forum.wampserver.com/read.php?2,52419
+
+
+PHP Unit
+http://phpms.org/2012/03/guia-rapido-instalando-phpunit/
+http://netbeans.org/kb/docs/php/phpunit_pt_BR.html
+
+ARTIGOS de apoio
+http://fedoraproject.org/wiki/Administration_Guide_Draft/Apache
+Filezilla    http://forums.fedoraforum.org/showthread.php?t=184564
+http://www.my-guides.net/en/guides/linux/346-fedora-17-post-installation-guide
+http://www.unixmen.com/201205-howto-install-lamp-in-fedora/
+http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-fedora-11-lamp
+Para gerar cd com as atualizações         http://revisor.fedoraunity.org/
+----------------------------------------------------------------------------------
+
+
+
+
