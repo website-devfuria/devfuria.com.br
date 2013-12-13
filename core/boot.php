@@ -13,16 +13,16 @@ session_start();
  *
  */
 define('DF', true);
-define('GANALYTICS_ON', true); // liga
-//define('GANALYTICS_ON', false); // desliga
+//define('GANALYTICS_ON', true); // liga
+define('GANALYTICS_ON', false); // desliga
 
 
 
 /**
  * Root
  */
-define('ROOT_PATH', "http://www.devfuria.com.br");
-//define('ROOT_PATH', "http://localhost/devfuria/www.devfuria.com.br");
+//define('ROOT_PATH', "http://www.devfuria.com.br");
+define('ROOT_PATH', "http://localhost/devfuria/www.devfuria.com.br");
 
 
 /**

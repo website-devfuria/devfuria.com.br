@@ -12,8 +12,8 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Matéria introdutória sobre SQL e Mysql');
-        $core->head->setDescription('Aprenda os  conceitos intuitivo de banco de dados, faremos a instalação do mysql e testes via console.');
-        $core->head->setkeywords('aprendendo mysql, aprendendo  sql, começando com sql, começando com mysql, mysql via console');
+        $core->head->setDescription('Aprenda os conceitos intuitivo de banco de dados, faremos a instalação do mysql e testes via console.');
+        $core->head->setkeywords('aprendendo mysql, aprendendo  sql, começando com sql, começando com mysql, mysql via console, instalando mysql, mysql via console, T-SQL, PL/SQL');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -138,18 +138,18 @@ require "../../../core/boot.php";
                             </div>
 
                             <p>Eu estava na dúvida se fazia um curso apenas de SQL ou se envolvia um Banco de Dados. É certo que a SQL é um padrão (ou
-                                pelo menos deveria ser) e que indepênde de banco de dados, mas por outro lado, <em>como aprender SQL sem ao menos um banco
-                                    de dados?</em></p>
+                                pelo menos deveria ser) e que indepênde de banco de dados, mas por outro lado, <strong>como aprender SQL sem ao menos um banco
+                                    de dados?</strong></p>
 
                             <p>Minha escolha pelo MySql é óbvia: é um DB "pau para toda obra", é o companheiro inseparável do PHP e é muito fácil
                                 começar por ele.</p>
 
-                            <p><em>Se o curso é sobre SQL porque chama-se Mysql?</em></p>
+                            <p><strong>Se o curso é sobre SQL porque chama-se Mysql?</strong></p>
 
                             <p>É porque eu não gostaria que alguém que estivesse procurando por SQL, entra-se no curso achando que vai aprender apenas
                                 SQL e na verdade irá aprender SQL juntamente com o MySql. Pode parecer bobagem mas eu quis tomar esse cuidado.</p>
 
-                            <p>Esse é um curso de <em>SQL através do MySql</em>.</p>
+                            <p>Esse é um curso de <strong>SQL através do MySql</strong>.</p>
 
                             <p>Nós vamos começar pelo console e depois partiremos para o Phpmyadmin (interface com o banco).</p>
 
@@ -162,9 +162,9 @@ require "../../../core/boot.php";
                             <h1 id="siglas">DB = BD = SGBDR</h1>
                         </div>
 
-                        <p>"Banco de dados" abreviamos para <em>BD</em>.</p>
+                        <p>"Banco de dados" abreviamos para <code>BD</code>.</p>
 
-                        <p>Em inglês, "Data Base" abreviamos para <em>DB</em>.</p>
+                        <p>Em inglês, "Data Base" abreviamos para <code>DB</code>.</p>
 
                         <p>Alguém que não tinha nada para fazer, resolveu ajudar e criou mais um termo SGBDR, Sistema Gerenciador de Banco de Dados
                             Relacional.</p>
@@ -203,7 +203,7 @@ require "../../../core/boot.php";
                                 <h4>Colunas</h4>
                             </div>
 
-                            <p>São os <em>campos</em> de uma informação, por exemplo: </p>
+                            <p>São os <code>campos</code> de uma informação, por exemplo: </p>
 
                             <pre><code class="no-highlight">nome do produto, preco</code></pre>
 
@@ -258,7 +258,7 @@ Camisa Social,   15.00 -- esse é outro registro</code></pre>
                             </div>                              
 
                             <p>Os cilindros azul e verde representam um banco de dados, os quadros abaixo deles representam nossas tabelas,
-                                esses quadros estão no formato ER, <em>diagrama Entidade Relacionamento</em>, falaremos disso em breve.</p>
+                                esses quadros estão no formato ER, <strong>diagrama Entidade Relacionamento</strong>, falaremos disso em breve.</p>
 
                             <p>Mas a figura oficial de um banco de dados é esta aqui:</p>
 
@@ -314,7 +314,7 @@ systemctl enable mysqld.service</code></pre>
 
                         <p>Para testarmos a instalação do mysql nada melhor do que acionarmos o aplicativo.</p>
 
-                        <p>O MySql utiliza o diretório "mysql" como diretório atual. Como exemlo veja o meu diretório autal:</p>
+                        <p>O MySql utiliza o diretório <code>mysql&gt;</code> como diretório atual. Como exemlo veja o meu diretório autal:</p>
 
                         <pre><code class="no-highlight">[flavio@localhost www.devfuria.com.br]$</code></pre>
 
@@ -322,7 +322,7 @@ systemctl enable mysqld.service</code></pre>
 
                         <pre><code class="no-highlight">mysql&gt;</code></pre>
 
-                        <p>No console, é possível digitar "mysql" para entrar no servidor mysql, mas se digitar apenas isso receberemos a seguinte
+                        <p>No console, é possível digitar <code>mysql</code> para entrar no servidor mysql, mas se digitar apenas isso receberemos a seguinte
                             mensagem:</p>
 
                         <pre><code class="no-highlight">ERROR 1045 (28000): Access denied for user 'flavio'@'localhost' (using password: NO)</code></pre>
@@ -330,7 +330,7 @@ systemctl enable mysqld.service</code></pre>
                         <p>Bom começarmos com um erro pois dessa forma você irá se habituando a "encarar" essas mensagens ao invés de ignorá-las
                             (atitude comum de quem está iniciando).</p>
 
-                        <p><em>O que podemos descobrir com a menssagem?</em> Olha para ela atentamente e absorva todos os detalhes.</p>
+                        <p><strong>O que podemos descobrir com a menssagem?</strong> Olha para ela atentamente e absorva todos os detalhes.</p>
 
                         <ol>
                             <li><p>Primeiro sabemos o número do erro o que nos ajudará a fazer uma possível pesquisa na web e ter a certeza de que estamos
@@ -343,9 +343,9 @@ systemctl enable mysqld.service</code></pre>
                                     uma tentiva de login sem senha.</p></li>
                         </ol>
 
-                        <p>Viu como é importante ler atentamente as mensagens de erros? Aprendemos muito com elas.</p>
+                        <p><strong>Viu como é importante ler atentamente as mensagens de erros? Aprendemos muito com elas.</strong></p>
 
-                        <p><em>Então, como então acessamos o servidor via console?</em></p>
+                        <p>Então, como acessamos o servidor via console?</p>
 
                         <pre><code class="no-highlight">mysql -h localhost -u root -p</code></pre>
 
@@ -369,7 +369,7 @@ root       -- informamos o usuário
                             <p>Logado no MySql via console</p>
                         </div>                         
 
-                        <p>Agora já é possível testar e aprender sobre os <em>statements</em>.</p>
+                        <p>Agora já é possível testar e aprender sobre os <code>statements</code>.</p>
 
                         <h4>Saindo do mysql</h4>
 
