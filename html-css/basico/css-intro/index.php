@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('O básico do CSS');
-        $core->head->setDescription('Aprendendo o báscio do CSS, como unir o CSS ao documento HTML e cores em CSS.');
+        $core->head->setDescription('Aprendendo o básico do CSS, como unir o CSS ao documento HTML e cores em CSS.');
         $core->head->setkeywords('core em css, css embeded, css linked, css inline');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -225,12 +225,7 @@ require "../../../core/boot.php";
                                 formas quando e onde achar melhor.</p>
 
                         </div>
-
-
                     </div>                             
-
-
-
 
 
                     <div class="bs-docs-section">
