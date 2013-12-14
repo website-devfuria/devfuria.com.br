@@ -69,16 +69,16 @@ require "core/boot.php";
                                 <a href="#2013">Arquitetura Humana</a>
                             </li>
                             <li>
-                                <a href="#2012">Site DevFuria</a>
+                                <a href="#2012">DevFuria</a>
                             </li>
                             <li>
                                 <a href="#2011">Corretora</a>
                             </li>
                             <li>
-                                <a href="#2010">ACS </a>
+                                <a href="#2010">ACS</a>
                             </li>
                             <li>
-                                <a href="#2009">Digital DOM</a>
+                                <a href="#2009">SDD</a>
                             </li>
                             <li>
                                 <a href="#2007">Folha do Ocorrências</a>
@@ -296,7 +296,7 @@ require "core/boot.php";
 
                     <div id="2009" class="panel panel-danger">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Sistema Digital DOM</h3>
+                            <h3 class="panel-title">Sistema Digital Dom</h3>
                             <p>www.dombrasil.net.br</p>
                             <p>2009</p>
                         </div>
@@ -339,7 +339,7 @@ require "core/boot.php";
 
                     <div id="2007" class="panel panel-default" style="margin-bottom: 200px">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Folha do Ocorrências</h3>
+                            <h3 class="panel-title">Sistema Folha do Ocorrências</h3>
                             <p>Volkswagem (ala 17, planta Anchieta)</p>
                             <p>2007</p>
                         </div>
