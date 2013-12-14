@@ -25,7 +25,6 @@ require "../../../core/boot.php";
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
-
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
@@ -126,7 +125,7 @@ require "../../../core/boot.php";
 
                         <p>E de "quebra" diz qual é a linha.</p>
 
-                        <p>Falando sério, <strong>essas informações serão extremamente úteis quando precisar debugar sua SQL!</strong>
+                        <p><strong>Essas informações serão extremamente úteis quando precisar debugar sua SQL!</strong>
 
                         <p>Por isso, repito, acostume-se com ela e jamais a ignore.</p>
 
@@ -137,13 +136,13 @@ require "../../../core/boot.php";
                             <h1 id="listar-bases">Listar as bases de dados do MySQl</h1>
                         </div>                        
 
-                        <p>Quer saber quais são as base de dados exitente no seu servidor Mysql?</p>
+                        <p>Quer saber quais são as base de dados existente em seu servidor Mysql?</p>
 
                         <p>Então digite:</p>
 
                         <pre><code class="no-highlight">show databases;</code></pre>
 
-                        <p>Se o seu servidor estiver como o meu (zerado) ele exibirá apenas duas bases:</p>
+                        <p>Se o seu servidor estiver como o meu (zerado), ele exibirá apenas duas bases:</p>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Imagem ilustrando o comando 'show databases'" src="show-databases.png">
@@ -159,14 +158,13 @@ require "../../../core/boot.php";
                             <h1 id="sel-bases">Selecionando a base para uso</h1>
                         </div>                        
 
-                        <p>OK! Listamas todas as base, como selecionados para uso?</p>
+                        <p>OK! Listamos todas as base, como selecionamos para uso?</p>
 
                         <p>Essa é fácil:</p>
 
                         <pre><code class="no-highlight">use nome-da-base-da-dados;</code></pre>
 
                         <p>Quando formos para o PHP, deveremos lembrar desta sequência:</p>
-
 
                         <ol>
                             <li>Conectar com o DB</li>
@@ -204,7 +202,7 @@ require "../../../core/boot.php";
                         <pre><code class="no-highlight">SELECT 15 * 2;</code></pre>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT version()'" src="select-5vezes2.png">
+                            <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT 5 vezes 2'" src="select-5vezes2.png">
                         </div>                        
 
                         <p>Repare que ele traz o cálculo como sendo o nome do campo.</p>
@@ -214,7 +212,7 @@ require "../../../core/boot.php";
                         <pre><code class="no-highlight">SELECT 5 * 2 AS foo;</code></pre>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT version()'" src="select-foo.png">
+                            <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT 5 * 2 AS foo'" src="select-foo.png">
                         </div>                        
 
                         <p>O <code>AS</code> é um "alias"(apelido). Em português, "as" siginifica "como", ou seja,
@@ -240,7 +238,7 @@ require "../../../core/boot.php";
                             <h1 id="insensitive">Case INsensitive</h1>
                         </div>
 
-                        <p>O MySql não fz distinção entra caixa alta ou baixa</p>
+                        <p>O MySql não faz distinção entra caixa alta ou baixa</p>
 
                         <p>Isso significa que <code>SELECT now();</code> é igual a <code>select NOW();</code> que é 
                             igual a <code>SeLeCt NoW();</code></p>
