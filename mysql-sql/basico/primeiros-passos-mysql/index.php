@@ -159,6 +159,7 @@ require "../../../core/boot.php";
                         </div>                        
 
                         <p>Acabamos de listar todas as bases.<p/>
+
                         <p>Agora, como selecionamos uma base qualquer para uso?</p>
                         <p>Essa é fácil:</p>
                         <pre><code class="no-highlight">use nome-da-base-da-dados;</code></pre>
