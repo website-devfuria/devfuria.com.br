@@ -129,7 +129,7 @@ element.onclick = function() {
                             <p>Livro: Refatoração, aperfeiçoando o projeto de código existente (Martin Fowler).</p>
                         </div>                        
 
-                        <p>Mas, repondendo a pergunta, vamos alterar o ćodigo no sentido de clareza, pelo menos inicialmente. O problema é que
+                        <p>Mas, respondendo a pergunta, vamos alterar o ćodigo no sentido de clareza, pelo menos inicialmente. O problema é que
                             não vamos utilizar nenhuma metodologia para isso, ou seja, vamos aplicar arte pura e um pouco de gosto pessoal.</p>
 
                         <p>Meu objetivo é plantar na sua mente uma semente chamada <strong>"organização, limpeza e clareza"</strong>.</p>
@@ -301,10 +301,10 @@ element.onclick = function() {
                             <pre><code class="language-javascript">var lampada = {
     ligada: false,
     acender: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulbon.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif";
     },
     apagar: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif";
     }
 };</code></pre>
                         </div>
@@ -317,10 +317,10 @@ element.onclick = function() {
     ligada: false,
     <em>element: {},</em>
     acender: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulbon.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif";
     },
     apagar: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif";
     }
 };</code></pre>
                         </div>
@@ -334,10 +334,10 @@ element.onclick = function() {
     ligada: false,
     <em>element: document.getElementById('myimage'),</em>
     acender: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulbon.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif";
     },
     apagar: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif";
     }
 };</code></pre>
                         </div>
@@ -359,10 +359,10 @@ element.onclick = function() {
         };
     },</em>
     acender: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulbon.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif";
     },
     apagar: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif";
     }
 };</code></pre>
                         </div>
@@ -433,10 +433,10 @@ senão
         };
     },
     acender: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulbon.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif";
     },
     apagar: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif";
     }
 };</code></pre>
                         </div>
@@ -468,10 +468,10 @@ senão
         };
     },
     acender: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulbon.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif";
     },
     apagar: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif";
     }
 };
 <em>lampada.setEvento();</em></code></pre>
@@ -495,12 +495,12 @@ senão
                             <li>true</li>
                         </ul>
 
-                        <p>Se preferir, baixe os arquivos através dos links: <a href="codigo-refatorado.js" title="link-externo">codigo-refatorado.js</a>, <a href="lampadas.html" title="Arquivo HTML">lampadas.html</a>.</p>
+                        <p>Se preferir, baixe os arquivos através dos links: <a href="codigo-refatorado.js" title="link-externo">codigo-refatorado.js</a>, <a href="lampadas.html" title="link-externo">lampadas.html</a>.</p>
 
-                        <p>Baixe também as imagens das lâmpadas: <a href="pic_bulboff.gif" title="link-externo">lâmpada apagada</a>, 
-                            <a href="pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
+                        <p>Baixe também as imagens das lâmpadas: <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif" title="link-externo">lâmpada apagada</a>, 
+                            <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
 
-                        <p>Agora chega de lâmpadas, na próxima matéria mudarei o assunto, até lá.</p>                      
+                        <p>Agora chega de lâmpadas, na próxima matéria mudaremos o assunto, até lá.</p>                      
 
                         <?php
                         $core->paginacao->link_ativo = "/js/basico/code-lampadas-refatorando/";

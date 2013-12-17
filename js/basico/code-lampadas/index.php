@@ -137,8 +137,8 @@ element.onclick = function() {
                                 figuras abaixo:</p>
 
                             <div class="bs-example">
-                                <img class="img-rounded" src="pic_bulboff.gif" alt="### lámpada apagada" />
-                                <img class="img-rounded" src="pic_bulbon.gif" alt="### lámpada acesa" />
+                                <img class="img-rounded" src="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif" alt="### lámpada apagada" />
+                                <img class="img-rounded" src="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif" alt="### lámpada acesa" />
                                 <p>O truque das lámpadas</p>
                             </div>                         
 
@@ -154,8 +154,8 @@ element.onclick = function() {
                             <p>Baixe os arquivos através do Gist: <a href="https://gist.github.com/flaviomicheletti/6095926"  title="link-externo">https://gist.github.com/flaviomicheletti/6095926</a>
                                 , clique no botão "Download Gist" e descompacte o arquivo.</p>
 
-                            <p>Baixe também as imagens das lâmpadas: <a href="pic_bulboff.gif" title="link-externo"lâmpada apagada</a>, 
-                                <a href="pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
+                            <p>Baixe também as imagens das lâmpadas: <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif" title="link-externo">lâmpada apagada</a>, 
+                                <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
 
                             <p>Agora, abra o arquivo html no navegador.</p>
 
@@ -210,9 +210,9 @@ HD        = /var/www/html/[seus diretórios]</code></pre>
                                     <pre><code>var element = document.getElementById('myimage');
 element.onclick = function() {
     if (element.src.match("bulbon")) {
-        element.src="../imagens/pic_bulboff.gif";
+        element.src="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif";
     } else {
-        element.src="../imagens/pic_bulbon.gif";
+        element.src="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif";
     }
 };
 <em>console.log("comunicação estabelecida");</em></code></pre>
@@ -237,10 +237,10 @@ console.log(window);
 element.onclick = function() {
     if (element.src.match("bulbon")) {
         <em>console.log('true');</em>
-        element.src="../imagens/pic&#95;bulboff.gif";
+        element.src="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif";
     } else {
         <em>console.log('false');</em>
-        element.src="../imagens/pic&#95;bulbon.gif";
+        element.src="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif";
     }
 };</code></pre>
                                 </div>

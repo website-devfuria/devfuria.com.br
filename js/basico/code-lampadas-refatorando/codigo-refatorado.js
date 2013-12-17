@@ -13,10 +13,10 @@ var lampada = {
         };
     },
     acender: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulbon.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif";
     },
     apagar: function() {
-        lampada.element.src = "http://www.devfuria.com.br/js/imagens/pic_bulboff.gif";
+        lampada.element.src = "http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif";
     }
 };
 lampada.setEvento();
