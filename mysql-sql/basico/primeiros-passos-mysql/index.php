@@ -158,14 +158,11 @@ require "../../../core/boot.php";
                             <h1 id="sel-bases">Selecionando a base para uso</h1>
                         </div>                        
 
-                        <p>OK! Listamos todas as base, como selecionamos para uso?</p>
-
+                        <p>Acabamos de listar todas as bases.<p/>
+                        <p>Agora, como selecionamos uma base qualquer para uso?</p>
                         <p>Essa é fácil:</p>
-
                         <pre><code class="no-highlight">use nome-da-base-da-dados;</code></pre>
-
                         <p>Quando formos para o PHP, deveremos lembrar desta sequência:</p>
-
                         <ol>
                             <li>Conectar com o DB</li>
                             <li>Escolhar uma base de dados qualquer</li>
@@ -192,7 +189,7 @@ require "../../../core/boot.php";
                             <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT version()'" src="select-version.png">
                         </div>
 
-                        <p>Ops! Acho que preciso atualiar a minha versão!</p>
+                        <p>Ops! Acho que preciso atualizar a minha versão!</p>
 
                         <p>Mantenha sempre seu sistema atualizado com a última versão. Faça disso um hábito.Depois eu 
                             mostrarei como atualizar o MySql (para Linux, é óbvio).</p>
