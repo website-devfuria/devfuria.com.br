@@ -97,6 +97,7 @@ $core->links[Core::SECAO_PHP] = array(
 $core->links[Core::SECAO_LOG] = array(
     LINKS_PATH . "/logica/basico/intro/" => "Introdução",
     LINKS_PATH . "/logica/basico/bateria01/" => "Primeira Bateria",
+    LINKS_PATH . "/logica/basico/tdd/" => "Vamos de TDD?",
 );
 $core->links[Core::SECAO_HTML] = array(
     LINKS_PATH . "/html-css/basico/onde-tudo-comecou/" => "Onde tudo começou",
