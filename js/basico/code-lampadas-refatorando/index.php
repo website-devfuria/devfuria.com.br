@@ -147,19 +147,9 @@ element.onclick = function() {
 
                         <p>TDD é uma arte (ninja) e o mestre e o Kent Bech.</p>
 
-                        <div class="bs-example">
-                            <img class="img-rounded" alt="### Livro de Kent Bech" src="tdd-livro.jpg">
-                            <p>Livro: Desenvolvimento Guiado por Testes (Kent Bech)</p>
-                        </div>                        
-
-                        <p>O conceito é muito interessante, procure ler sobre, abaixo uma figura para estigá-lo:</p>
-
-                        <div class="bs-example">
-                            <img class="img-rounded" alt="### ### Ciclo do TDD" src="tdd-conceito.jpg">
-                            <p>Ciclo do TDD</p>
-                        </div>                        
-
-                        <p>A refatoração é irmã siamesa do TDD. Uma não vive sem a outra.</p>
+                        <p>O conceito é muito interessante, procure ler sobre. A refatoração é irmã siamesa do TDD. 
+                            Uma não vive sem a outra.
+                        </p>
                     </div>  
 
                     <div class="bs-docs-section">

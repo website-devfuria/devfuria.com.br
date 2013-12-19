@@ -71,11 +71,6 @@ require "../../../core/boot.php";
                             <h1 id="js-intro">Introdução</h1>
                         </div>
 
-                        <div class="bs-example">
-                            <img class="img-thumbnail" alt="### Imagem do livro 'Simple Javascript'"  src="livro-simple-js.jpg">
-                            <p>Este livro é excelente para quem está comneçando com JS.</p>
-                        </div>
-
                         <p><strong>Javascript(JS) não é brinquedo, é linguagem de programação séria</strong>.</p>
 
                         <p>Das mil definições de JS a que mais me agrada é a de
@@ -261,44 +256,104 @@ element.onclick = function() {
                             maestria".</p>
 
                         <p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>
-                        
+
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            </div>
+
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Livros</h3>
+                                </div>
+                                <div class="panel-body">
+
+                                    <div class="media">
+                                        <a class="pull-left">
+                                            <img class="media-object" src="livro-simple-js.jpg" alt="### Imagem do livro 'Simple Javascript'">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Só Javascript (Simple Javascript)</h4>
+                                            <p class="list-group-item-text">Kevin e Cameron, Editora bookman</p>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="media">
+                                        <a class="pull-left">
+                                            <img class="media-object" src="livro-melhor-js.jpg" alt="### Imagem do livro 'O Melhor do Javascript'">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">O Melhor do Javascript</h4>
+                                            <p class="list-group-item-text">Douglas Crockford, Editora Altabooks</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Internet</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="list-group">
+                                        <a href="http://phpunit.de/manual/current/pt_br/index.html" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">Manual do PHPUnit (em português)</h4>
+                                            <!--<p class="list-group-item-text">Está aqui não é sugerida, é obrigatória.</p>-->
+                                            <span class="label label-default">http://phpunit.de/manual/current/pt_br/index.html</span>
+                                        </a>
+                                    </div>
+                                    <div class="list-group">
+                                        <a href="http://qunitjs.com/" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">Site do QUnit</h4>
+                                            <!--<p class="list-group-item-text">Está aqui não é sugerida, é obrigatória.</p>-->
+                                            <span class="label label-default">http://qunitjs.com/</span>
+                                        </a>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>                        
                         <?php
                         $core->paginacao->link_ativo = "/js/basico/intro";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                          
-                    </div>
+                        ?>                        
+                    </div>                         
 
-                </div><!-- Corpo da matéria -->
-            </div><!-- row -->
-        </div><!-- Matéria -->
+                </div>
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Javascript</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_JS);
-                        $core->lista->link_ativo = "/js/basico/intro/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
+            </div><!-- Corpo da matéria -->
+        </div><!-- row -->
+    </div><!-- Matéria -->
+
+    <footer class="bs-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Javascript</h1>
+                    <?php
+                    $core->lista->setLinks($core->links, Core::SECAO_JS);
+                    $core->lista->link_ativo = "/js/basico/intro/";
+                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                    ?>
                 </div>
             </div>
-        </footer>
-        
-        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+        </div>
+    </footer>
 
-        <script type="text/javascript">
-            var element = document.getElementById('myimage');
-            element.onclick = function() {
-                if (element.src.match("bulbon")) {
-                    element.src = "pic_bulboff.gif";
-                } else {
-                    element.src = "pic_bulbon.gif";
-                }
-            };
-        </script>
-    </body>
+    <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+
+    <script type="text/javascript">
+        var element = document.getElementById('myimage');
+        element.onclick = function() {
+            if (element.src.match("bulbon")) {
+                element.src = "pic_bulboff.gif";
+            } else {
+                element.src = "pic_bulbon.gif";
+            }
+        };
+    </script>
+</body>
 </html>
