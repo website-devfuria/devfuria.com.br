@@ -78,8 +78,8 @@ $core->secoes = array(
     "php" => "PHP",
     "html-css" => "HTML & CSS",
     "logica" => "Lógica de Programação",
-    "regexp" => "RegExp",
-    "mysql" => "MySql & SQL"
+    "mysql" => "MySql & SQL",
+    "regexp" => "RegExp"
 );
 $core->links[Core::SECAO_JS] = array(
     LINKS_PATH . "/js/basico/intro/" => "Introdução",
