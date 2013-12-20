@@ -428,7 +428,7 @@ echo true;</code></pre>
                             </div>
                         </div><!--acordion -->
                         <?php
-                        $core->paginacao->link_ativo = "exercicios-de-logica de-programacao-com-respotas";
+                        $core->paginacao->link_ativo = "/logica-de-programacao/basico/exercicios-expressoes-condicionais/";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                         ?>
@@ -446,7 +446,7 @@ echo true;</code></pre>
                         <h1>Lógica de Programação</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                        $core->lista->link_ativo = "exercicios-de-logica de-programacao-com-respotas";
+                        $core->lista->link_ativo = "/logica-de-programacao/basico/exercicios-expressoes-condicionais/";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>

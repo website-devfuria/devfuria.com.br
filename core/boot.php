@@ -97,7 +97,7 @@ $core->links[Core::SECAO_PHP] = array(
 $core->links[Core::SECAO_LOG] = array(
     LINKS_PATH . "/logica-de-programacao/basico/intro/" => "Introdução",
     LINKS_PATH . "/logica-de-programacao/basico/exercicios-operadores-atribuicao/" => "Exercícios de lógica de programação (operadores de atribuição)",
-    LINKS_PATH . "/logica-de-programacao/basico/if-else/" => "Expressões Condicionais",
+    LINKS_PATH . "/logica-de-programacao/basico/if-else/" => "Expressões Condicionais (if-else)",
     LINKS_PATH . "/logica-de-programacao/basico/exercicios-expressoes-condicionais/" => "Exercícios de lógica de programação (expressões condicionais)",
     LINKS_PATH . "/logica-de-programacao/basico/tdd/" => "Vamos de TDD?",
 );
