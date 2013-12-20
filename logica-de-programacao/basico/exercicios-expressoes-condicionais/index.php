@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Exercícios de lógica de programação envolvendo expressões condicionais');
-        $core->head->setDescription('5 exercícos de lógica de programação para treinar expressões condicionais');
+        $core->head->setDescription('Exercícos resolvidos de lógica de programação (sobre expressões condicionais)');
         $core->head->setkeywords('exercícios de lógica de programação, controle de fluxo, estrutura de seleção. operadores relacionais');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";

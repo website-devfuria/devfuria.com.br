@@ -12,8 +12,8 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Exercícios de lógica de programação envolvendo operadores de atribuição');
-        $core->head->setDescription('10 exercícos de lógica de programação para quem (quase) nunca viu lógica de programação, utilizaremos pseudocódigo');
-        $core->head->setkeywords('exercícios de lógica de programação, começando com lógica de programação, exercícios resolvidos de lógica de programação');
+        $core->head->setDescription('Exercícos de lógica de programação com respostas (sobre operadores de atribuição)');
+        $core->head->setkeywords('exercícios de lógica de programação, começando com lógica de programação, exercícios resolvidos de lógica de programação; operadores de atribuição');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -825,7 +825,7 @@ FIM</code></pre>
                             </div>
                         </div><!--acordion -->
                         <?php
-                        $core->paginacao->link_ativo = "exercicios-resolvidos-de-logica-de-programacao";
+                        $core->paginacao->link_ativo = "exercicios-operadores-atribuicao";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                         ?>                                  
@@ -843,7 +843,7 @@ FIM</code></pre>
                         <h1>Lógica de Programação</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                        $core->lista->link_ativo = "exercicios-resolvidos-de-logica-de-programacao";
+                        $core->lista->link_ativo = "exercicios-operadores-atribuicao";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>

@@ -11,7 +11,7 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Exercćio de lógica de programação');
+        $core->head->setTitle('Exercício de lógica de programação');
         $core->head->setDescription('Esta é uma página de redirecionamento');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -27,7 +27,7 @@ require "../../../core/boot.php";
 
 <div class="jumbotron">
   <h1>Página não encontrada!</h1>
-  <p>Esta matéria foi compactada em: <span class="label label-info">2) Primeira bateria</span>.</p>
+  <p>Esta matéria foi compactada em: <span class="label label-info">2) Exercícios de lógica de programação (operadores de atribuição)</span></p>
   <p>Utilize o menu abaixo para se localizar:</p>
 </div>
 

@@ -95,11 +95,11 @@ $core->links[Core::SECAO_PHP] = array(
     LINKS_PATH . "/php/basico/debugando/" => "Debugando (depurando)",
 );
 $core->links[Core::SECAO_LOG] = array(
-    LINKS_PATH . "/logica/basico/intro/" => "Introdução",
-    LINKS_PATH . "/logica/basico/exercicios-resolvidos-de-logica-de-programacao/" => "Exercícios de lógica de programação (operadores de atribuição)",
-    LINKS_PATH . "/logica/basico/if-else/" => "Expressões Condicionais",
-    LINKS_PATH . "/logica/basico/exercicios-de-logica de-programacao-com-respotas/" => "Exercícios de lógica de programação (expressões condicionais)",
-    LINKS_PATH . "/logica/basico/tdd/" => "Vamos de TDD?",
+    LINKS_PATH . "/logica-de-programacao/basico/intro/" => "Introdução",
+    LINKS_PATH . "/logica-de-programacao/basico/exercicios-operadores-atribuicao/" => "Exercícios de lógica de programação (operadores de atribuição)",
+    LINKS_PATH . "/logica-de-programacao/basico/if-else/" => "Expressões Condicionais",
+    LINKS_PATH . "/logica-de-programacao/basico/exercicios-expressoes-condicionais/" => "Exercícios de lógica de programação (expressões condicionais)",
+    LINKS_PATH . "/logica-de-programacao/basico/tdd/" => "Vamos de TDD?",
 );
 $core->links[Core::SECAO_HTML] = array(
     LINKS_PATH . "/html-css/basico/onde-tudo-comecou/" => "Onde tudo começou",
