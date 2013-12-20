@@ -37,7 +37,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">25/07/2012</span>, escrito em <span class="label label-info">05/06/2012</span>.
+                Flávio Micheletti, atualizado em <span class="label label-success">25/07/2012</span>, escrito em <span class="label label-info">20/12/2013</span>.
             </div>
         </div>
 
@@ -100,13 +100,41 @@ require "../../../core/boot.php";
                                 contam). Em um curso formal (acadêmico), a disciplina lógica de programação dura um semestre inteiro. Se você nunca viu
                                 programação antes, dê-se pelo menos 6 meses de amadurecimento em lógica.</em></p>                    
 
+             
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            </div>
+
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Internet</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="list-group">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">Manual do Javascript</h4>
+                                            <p class="list-group-item-text">...falando sobre expressões e operadores. Procure por 'Assignment operators'</p>
+                                            <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators</span>
+                                        </a>
+                                    </div>
+                                    <div class="list-group">
+                                        <a href="http://www.php.net/manual/pt_BR/language.operators.assignment.php" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">Manual do PHP</h4>
+                                            <p class="list-group-item-text">... falando sobre a operadores de atribuição</p>
+                                            <span class="label label-default">http://www.php.net/manual/pt_BR/language.operators.assignment.php</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             <?php
                             $core->paginacao->link_ativo = "/logica/basico/intro/";
                             $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
                             include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                            ?>                                  
-
+                            ?>
+                        </div>                                
                     </div>
+                    
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->

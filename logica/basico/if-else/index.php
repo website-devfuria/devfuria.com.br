@@ -37,7 +37,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success"></span>, escrito em <span class="label label-info">2</span>.
+                Flávio Micheletti, atualizado em <span class="label label-success">20/12/213</span>, escrito em <span class="label label-info">20/12/213</span>.
             </div>
         </div>
 
@@ -56,33 +56,70 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">Introdução</h1>
-                        </div>         
+                        </div>
 
-                        
+
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="fluxo-if.png">
                             <p>Comentários</p>
-                        </div>                        
+                        </div>
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="fluxo-if-else.png">
                             <p>Comentários</p>
-                        </div>                        
+                        </div>
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="sintaxe-if.png">
                             <p>Comentários</p>
-                        </div>                        
-                        <div class="bs-example">
-                            <img class="img-rounded" alt="### " src="sintaxe-var.png">
-                            <p>Comentários</p>
-                        </div>                        
-                        
+                        </div>
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            </div>
+
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Internet</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="list-group">
+                                        <a href="http://www.php.net/manual/pt_BR/language.control-structures.php" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">Manual do PHP</h4>
+                                            <p class="list-group-item-text">...falando sobre estruturas de controle</p>
+                                            <span class="label label-default">http://www.php.net/manual/pt_BR/language.control-structures.php</span>
+                                        </a>
+                                    </div>
+                                    <div class="list-group">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">Manual do Javascript</h4>
+                                            <p class="list-group-item-text">... falando sobre a condicional if-else</p>
+                                            <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</span>
+                                        </a>
+                                    </div>
+                                    <div class="list-group">
+                                        <a href="http://ifelse.com/#PHP" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">http://ifelse.com/</h4>
+                                            <p class="list-group-item-text">Link legal que mostra o if-else em diversas linguagens</p>
+                                            <span class="label label-default">http://ifelse.com/</span>
+                                        </a>
+                                    </div>
+                                    <div class="list-group">
+                                        <a href="" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading"></h4>
+                                            <p class="list-group-item-text"></p>
+                                            <span class="label label-default"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             <?php
                             $core->paginacao->link_ativo = "/logica/basico/if-else/";
                             $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
                             include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                            ?>                                  
-
+                            ?>
+                        </div>
                     </div>
+
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
