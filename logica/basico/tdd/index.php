@@ -81,31 +81,31 @@ require "../../../core/boot.php";
                         <p>
                             TDD também é assunto sobre testes unitários (obviamente). A primeira vez que eu ouvi sobre
                             testes unitários eu "torci o nariz". Ora, imagine que você acabou de criar uma função e agora
-                            resolva escrever um teste para ela com o objetivo de ter certeza de que ela está funcionando
+                            resolva escrever um teste para ela com o objetivo de ter certeza de que a função está funcionando
                             corretamente. É suspeito quando o programador escreve teste para seu prórpio codigo. Essa
                             é a minha opnião. Você não acharia suspeito? Talvez seja por isso que existem os "testadores",
-                            aqueles caras que testam a aplicação que algupem codificou. Isso melhora um pouco o quadro
+                            aqueles caras que testam a aplicação que alguém codificou. Isso melhora um pouco o quadro
                             mas eu ainda continuo com a "pulga atrás da orelha".
                         </p>
                         <p>
                             Por essas e outras, eu nunca dei muita atenção para testes unitários. E se você quiser saber,
                             ainda hoje eu mantenho a mesma opnião. Acho um tanto quanto inútil testes escritos depois que
-                            o código está pronto. Essa atitude me ajudou muito, pois eu era obrigado a rever e rever e rever
-                            muito os meus códigos e, modesita a aprte, dificilmente eu inseria um bug. O que mes fez crer
+                            o código está pronto. Essa atitude me ajudou muito, pois eu era obrigado a rever, rever, rever, rever e rever
+                            muito os meus códigos e, modestia a parte, dificilmente eu inseria um bug. O que me fez crer
                             menos ainda em testes unitários.
                         </p>
                         <p>
                             Um belo dia me deparei com a sigla TDD e fui buscar seu significado: "testes unitários realizados
                             ANTES da codificação", fiquei intrigado mas não dei a devida atenção porque já tinha minha
-                            opnião formada sobre testes unitários. Cometi um erro, mas só fui descobrir isso com ajuda de
-                            um amigo.
+                            opnião formada sobre testes unitários. Cometi um erro, estava confundindo TDD com Testes unitários,
+                            mas só fui descobrir isso com ajuda de um amigo.
                         </p>
                         <p>
                             Um outro belo dia, esse meu amigo (Marcus Vinícius, evangelista PHP) apareceu lá na escritório
                             e me mostrou a técnica. De forma bem simples, prática e direta ele disse:
                         </p>
                         <p>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>1. Pense melhor no que você quer fazer</li>
                             <li>2. Escreva um teste imaginando que sua aplicação já esteja funcionando</li>
                             <li>3. Se você rodar os testes, verá que eles falharam (luz vermelha).</li>
@@ -121,7 +121,7 @@ require "../../../core/boot.php";
                             </strong>
                         </p>
                         <p>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>5. Rode o teste, luz verde? sim, então...</li>
                             <li>6. Amplie seu teste para outras possibilidades</li>
                             <li>7. Rode os testes, luz vermelha?</li>
