@@ -299,22 +299,27 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                             </div>
                             <div class="panel-body">
                                 <div class="list-group">
-                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                    <a href="http://www.php.net" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual oficial do PHP</h4>
                                         <p class="list-group-item-text">Está aqui não é sugerida, é obrigatória. (dica: digite apenas php.net que o navegador redireciona para a url completa).</p>
                                         <span class="label label-default">http://www.php.net</span>
                                     </a>
-                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                    <a href="http://www.php.net/manual/pt_BR/langref.php" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manual oficial - referência</h4>
+                                        <p class="list-group-item-text">Referência da linguagem (em português)</p>
+                                        <span class="label label-default">http://www.php.net/manual/pt_BR/langref.php</span>
+                                    </a>
+                                    <a href="http://www.php.net/manual/pt_BR/getting-started.php" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Trecho do manual...</h4>
                                         <p class="list-group-item-text">... que introduz a programação em PHP.</p>
                                         <span class="label label-default">http://www.php.net/manual/pt_BR/getting-started.php</span>
                                     </a>
-                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                    <a href="http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Artigo de Henrique Bastos</h4>
                                         <p class="list-group-item-text">...explicando as diferenças sobre linguagem interpretada e compiladas.</p>
                                         <span class="label label-default">http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada</span>
                                     </a>
-                                    <a href="http://aurelio.net/regex/guia/" class="list-group-item" title="link-externo">
+                                    <a href="http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Notícia eletrônica falando sobre a importância das aplicações web</h4>
                                         <span class="label label-default">http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/</span>
                                     </a>

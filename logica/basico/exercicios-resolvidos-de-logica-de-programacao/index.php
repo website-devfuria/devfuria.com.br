@@ -825,7 +825,7 @@ FIM</code></pre>
                             </div>
                         </div><!--acordion -->
                         <?php
-                        $core->paginacao->link_ativo = "/logica/basico/bateria01/";
+                        $core->paginacao->link_ativo = "exercicios-resolvidos-de-logica-de-programacao";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                         ?>                                  
@@ -843,7 +843,7 @@ FIM</code></pre>
                         <h1>Lógica de Programação</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                        $core->lista->link_ativo = "/logica/basico/bateria01/";
+                        $core->lista->link_ativo = "exercicios-resolvidos-de-logica-de-programacao";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
