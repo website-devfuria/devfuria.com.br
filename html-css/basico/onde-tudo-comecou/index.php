@@ -318,12 +318,44 @@ require "../../../core/boot.php";
                             <a href="https://addons.mozilla.org/pt-br/firefox/addon/web-developer/" title="Web Developer">https://addons.mozilla.org/pt-br/firefox/addon/web-developer/</a></p>
                     </div>
 
-<!--                    <div class="bs-docs-section">
+                    <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="leituras">Leituras adicionais sugeridas</h1>
                         </div>
 
-                        <div class="panel panel-info">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Livros</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="media">
+                                    <a class="pull-left">
+                                        <img class="media-object" src="livro-criando-pag-web-css.jpg" alt="### Imagem do livro 'Criando paǵinas web com CSS'">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Criando paǵinas web com CSS</h4>
+                                        <p>Budd, Moll e Collison, Editora Pearson</p>
+                                        <p>Este livro está desatualizado, mas a didática é nota 10.</p>
+                                        <p>Vale a penas comprar.</p>
+                                    </div>
+                                </div>
+
+                                <div class="media">
+                                    <a class="pull-left">
+                                        <img class="media-object" src="livro-cronstuindo-sites.jpg" alt="### Imagem do livro 'Costruindo sites com CSS e XHMTL'">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Costruindo sites com CSS e XHMTL</h4>
+                                        <p>Maurício Samt (vulgo Majour), Editora Novatec</p>
+                                        <p>Esse é outro que também está desatualizado, mas é ótimo.</p>
+                                        <p>Ambos os livros são complementares um do outro.</p>
+                                        <p>Não conheco um desenvolvedore que não tenha lido esses livros.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="panel panel-info">                            
                             <div class="panel-heading">
                                 <h3 class="panel-title">Internet</h3>
                             </div>
@@ -350,13 +382,14 @@ require "../../../core/boot.php";
                                     </a>
                                 </div>
                             </div>                        
-                        </div>-->
+                        </div>
+                        -->
                         <?php
                         $core->paginacao->link_ativo = "/html-css/basico/onde-tudo-comecou/";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                         ?>                      
-                    <!--</div>-->                    
+                    </div>                    
 
 
                 </div><!-- Corpo da matéria -->

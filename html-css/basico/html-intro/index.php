@@ -306,31 +306,11 @@ require "../../../core/boot.php";
 </code></pre>                        
                     </div>                          
 
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
-                        </div>
-
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Livros</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item" title="">
-                                        <h4 class="list-group-item-heading">Nenhum livro sobre HTML</h4>
-                                        <p class="list-group-item-text">HTML é tão básico que eu recomendo que você pratique, pratique e pratique ao invés de ler, ler e ler.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <?php
-                            $core->paginacao->link_ativo = "/html-css/basico/html-intro/";
-                            $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
-                            include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                            ?>                             
-                        </div>
-                    </div>
-
+                    <?php
+                    $core->paginacao->link_ativo = "/html-css/basico/html-intro/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                             
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

@@ -227,51 +227,32 @@ require "../../../core/boot.php";
                         </div>
                     </div>                             
 
+                    <?php
+                    $core->paginacao->link_ativo = "/html-css/basico/css-intro/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                             
 
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
-                        </div>
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
 
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Livros</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item" title="">
-                                        <h4 class="list-group-item-heading">Nenhum livro sobre CSS</h4>
-                                        <p class="list-group-item-text">CSS é tão básico que eu recomendo que você pratique, pratique e pratique ao invés de ler, ler e ler.</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <?php
-                            $core->paginacao->link_ativo = "/html-css/basico/css-intro/";
-                            $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
-                            include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                            ?>                             
-                        </div>
+        </div><!-- Matéria -->
 
-                    </div><!-- Corpo da matéria -->
-                </div><!-- row -->
-
-            </div><!-- Matéria -->
-
-            <footer class="bs-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1>HTML & CSS</h1>
-                            <?php
-                            $core->lista->setLinks($core->links, Core::SECAO_HTML);
-                            $core->lista->link_ativo = "/html-css/basico/css-intro/";
-                            include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                            ?>
-                        </div>
+        <footer class="bs-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>HTML & CSS</h1>
+                        <?php
+                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
+                        $core->lista->link_ativo = "/html-css/basico/css-intro/";
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                        ?>
                     </div>
                 </div>
-            </footer>
-            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+            </div>
+        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
 </html>
