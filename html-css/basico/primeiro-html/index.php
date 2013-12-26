@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Elementos in-line e elementos block-level');
-        $core->head->setDescription('O objetivo da matéria é entender as diferenças entre os dois tipos');
-        $core->head->setkeywords('html in-line, html block, tag inline, tag block level');
+        $core->head->setTitle('Crie seu primeiro HTML');
+        $core->head->setDescription('Aprenda a cirar um HTML de ótima qualidade, usaremos como base o HTML do site www.csszengarden.com');
+        $core->head->setkeywords('primeiro HTML, exercício de HTML, csszengarden');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
