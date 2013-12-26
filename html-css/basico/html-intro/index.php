@@ -80,7 +80,7 @@ require "../../../core/boot.php";
 
                         <p>O alvo pode estar em um nível hierarquico de pasta diferente, para baixo ou para cima.</p>
 
-                        <p>Trata-se do <strong>endereço relativo</strong>. Vamos para baixo, de pasta strong pasta, com o símbolo <code>../</code> exemplo:</p>
+                        <p>Trata-se do <strong>endereço relativo</strong>. Vamos para baixo, de pasta em pasta, com o símbolo <code>../</code> exemplo:</p>
 
                         <pre><code>&lt;a href="../../../pagina-ao-clicar.html"&gt;Isto é um link 3 pastas abaixo&lt;/a&gt;</code></pre>
 
