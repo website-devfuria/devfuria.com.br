@@ -90,7 +90,7 @@ $core->links[Core::SECAO_JS] = array(
 );
 $core->links[Core::SECAO_PHP] = array(
     LINKS_PATH . "/php/basico/um-bom-comeco/" => "Um bom começo",
-    LINKS_PATH . "/php/basico/pe-na-jaca/" => "Antes de enfiar o pé na jáca",
+    LINKS_PATH . "/php/basico/boas-praticas/" => "Antes de enfiar o pé na jáca (boas práticas)",
     LINKS_PATH . "/php/basico/instalando-o-ambiente/" => "Instalando o ambiente no estilo NEXT, NEXT, NEXT",
     LINKS_PATH . "/php/basico/debugando/" => "Debugando (depurando)",
 );
