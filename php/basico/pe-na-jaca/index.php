@@ -14,7 +14,7 @@ require "../../../core/boot.php";
         $core->head->setTitle('Boas práticas para quem está começando em PHP ');
         $core->head->setDescription('Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.'.
                 "Veremos 4 conceitos básicos: endentação, nomeação, comentários e estilos.");
-        $core->head->setkeywords('boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação');
+        $core->head->setkeywords('boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação, underline, underscore, camelcase');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -96,12 +96,12 @@ require "../../../core/boot.php";
                                 <small>Fonte: Matt Zandstra, abrindo seu livro Objetos PHP, padrões e prática.</small></p>
                         </blockquote>
 
-                        <p>Zandstra foi muito feliz ao abrir o primeiro capítulo de seu livro com um alerta. <em>Qualquer um pode desenvolver um software,
-                                mas poucos o fazem com maestria</em>. O autor refere-se aos problemas que atingem a todos os programadores: falta de planejamento;
+                        <p>Zandstra foi muito feliz ao abrir o primeiro capítulo de seu livro com um alerta. <strong>Qualquer um pode desenvolver um software,
+                                mas poucos o fazem com maestria</strong>. O autor refere-se aos problemas que atingem a todos os programadores: falta de planejamento;
                             falta de organização, falta de preparo, muita ansiedade em começar a codificação, falta de tempo (prazos irreais) e etc...
                             Por outro lado, existem sempre aquelas receitas mágicas que parecem que vão "salvar o mundo".</p>
 
-                        <p>Esta matéria traz algumas considerações sobre boas práticas, <em>antes de você desembestar a cuspir códigos à rodo</em>. Na verdade
+                        <p>Esta matéria traz algumas considerações sobre boas práticas, <strong>antes de você desembestar a cuspir códigos à rodo</strong>. Na verdade
                             são <em>quatro dicas essenciais</em> para quem está começando a programar:</p>
 
                         <ol>
@@ -154,9 +154,9 @@ else
                             Eles dizem isso por que diferentes editores podem exibir diferentes formatos do código fonte. Mas seja com espaços, ou
                             com o TAB (eu sou normal e uso o TAB) use-os!!!</p>
 
-                        <p>Outra consideração importante é: <em>ao digitar uma linha, idente-a. Não deixe para arrumar o código no final</em>. Sua vista
+                        <p>Outra consideração importante é: <strong>ao digitar uma linha, idente-a. Não deixe para arrumar o código no final</strong>. Sua vista
                             deve ir se acostumando com o codigo endentado, se deixar para o final você irá acostumar-se com código sem endentação.
-                            <em>Olhe muito código de terceiro</em>, além de ajudar com o estilo, ajuda a entender da importância da endentação.</p>
+                            <strong>Olhe muito código de terceiro</strong>, além de ajudar com o estilo, ajuda a entender da importância da endentação.</p>
                     </div>                        
 
                     <div class="bs-docs-section">
@@ -164,15 +164,15 @@ else
                             <h1 id="nomeie">2 - Nomeie (tudo) adequadamente</h1>
                         </div>                         
                         <p><strong>Nomear variáveis, funções, classes, campos de banco de dados, campos de formulário HTML e tudo o mais que vir à mente...
-                                é uma arte</strong>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de “nome”
-                            ser diferente de “Nome”, no caso estou me referindo ao “sensitive case” (caixa sensível). Existem também regras gerais e
-                            bastante disseminadas como, por exemplo, o “camel case” que diz para colocar em maiúscula  a letra da segunda palavra
-                            (umExemplo). Há também o “underline” ou “underscore” para separar os nomes das variáveis (outro&#95;exemplo). Há alguns
+                                é uma arte</strong>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de <code>nome</code>
+                            ser diferente de <code>Nome</code>, no caso estou me referindo ao <strong>sensitive case (caixa sensível)</strong>. Existem também regras gerais e
+                            bastante disseminadas como, por exemplo, o <strong>camel case</strong> que diz para colocar em maiúscula  a letra da segunda palavra
+                            (<code>umExemplo</code>). Há também o <strong>underline</strong> ou <strong>underscore</strong> para separar os nomes das variáveis (outro&#95;exemplo). Há alguns
                             estilo que diz para reservar três caracteres ao começo do nome da variável para identificar o tipo, mas como eu disse é
                             apenas um estilo.</p>
 
                         <p>Ruim mesmo é quando ocorrem duas situações: a) quando o nome não reflete a idéia da variável e b) quando há uma bagunça
-                            de regras e/ou estilos. Tomemos um exemplo simples. A tabela cliente deve conter os campos id, codigo, nome, endereco.</p>
+                            de regras e/ou estilos. Tomemos um exemplo simples. A tabela cliente deve conter os campos <code>id</code>, <code>codigo</code>, <code>nome</code>, <code>endereco</code>.</p>
 
                         <p>Surgem os nomes de campos...</p>
 
@@ -213,7 +213,7 @@ cpNome
 cpEndereco</code></pre>
                         </div>
 
-                        <p>O que siginifica “cp”? Ora, siginifica “campo”, mas precisa explicitar que é um campo? Não, não precisa. Bastasse...</p>
+                        <p>O que siginifica <code>cp</code>? Ora, siginifica <code>campo</code>, mas precisa explicitar que é um campo? Não, não precisa. Bastasse...</p>
 
                         <div class="code">
                             <h6>Texto plano</h6>
@@ -223,14 +223,14 @@ nome
 endereco</code></pre>
                         </div>
 
-                        <p>Às vezes o nome da variável é muito vago como, por exemplo, “endereco”. Mas que tipo de endereço? Endereço completo? Só
+                        <p>Às vezes o nome da variável é muito vago como, por exemplo, <code>endereco</code>. Mas que tipo de endereço? Endereço completo? Só
                             o logradouro? Logradouro mais número? Nomes muito curto ou muito longos também não são adequados.</p>
 
-                        <p>Criar nomes adequados para variáveis pode depender da lógica. Por exemplo, espera-se obter o número menor do array,
-                            então que tal “numero_menor” ? ou “numeroMenor”? As duas são adequadas. Quem tem uma boa lógica somada a visão macro do
+                        <p><strong>Criar nomes adequados para variáveis pode depender da lógica</strong>. Por exemplo, espera-se obter o número menor do array,
+                            então que tal <code>numero_menor</code> ? ou <code>numeroMenor</code>? As duas são adequadas. Quem tem uma boa lógica somada a visão macro do
                             negócio (domínio) e aliado ao exercício constante de ficar procurando por uma nomenclatura adequadas, consegue sempre
-                            uma boa nomeação. Considere pensar muito antes de nomear “as coisas”.  O ministério dos programadores adverte: “Prestar
-                            manutenção em um sistema com nomenclaturas do tipo Frankstain pode causar urticárias”.</p>
+                            uma boa nomeação. Considere pensar muito antes de nomear “as coisas”.  O ministério dos programadores adverte: <strong>“Prestar
+                            manutenção em um sistema com nomenclaturas do tipo Frankstain pode causar urticárias”</strong>.</p>
 
                         <p>A figura a seguir mostra um exemplo de convenção de nomenclatura.</p>
                         <div class="bs-example">
@@ -289,13 +289,13 @@ endereco</code></pre>
                             <h1 id="estilos">4 - Tenha um estilo ou... siga um</h1>
                         </div>
 
-                        <p>Neste contexto, "estilo" é o formato no qual seu código é apresentado. A grande dica para que está começando em um equipe é: <em>descubra e respeite
-                                o estilo da equipe, mesmo que ele não seja bem definido.</em> Mais difícil que ter um estilo e seguir um estilo.</p>
+                        <p>Neste contexto, "estilo" é o formato no qual seu código é apresentado. A grande dica para que está começando em um equipe é: <strong>descubra e respeite
+                                o estilo da equipe, mesmo que ele não seja bem definido.</strong> Mais difícil que ter um estilo e seguir um estilo.</p>
 
                         <p>Pode-se entender estilo como sendo o "padrão de codificação", mais conhecido no termo em inglês "coding standars". Uma
-                            boa equipe tem um padrão ao menos razoável e niguém "inventa moda". <em>Quando olhamos o código feito pela equipe</em> não
-                            conseguimos identificar se foi Zezinho ou Luizinho quem mexeu no código, ou seja, <em>parece que foi escrito por
-                                uma só pessoa</em>, esse é o objetivo.</p>
+                            boa equipe tem um padrão ao menos razoável e niguém "inventa moda". <strong>Quando olhamos o código feito pela equipe</strong> não
+                            conseguimos identificar se foi Zezinho ou Luizinho quem mexeu no código, ou seja, <strong>parece que foi escrito por
+                                uma só pessoa</strong>, esse é o objetivo.</p>
 
                         <p>No site do PECL (uma biblioteca respeitosa de códigos PHP) encontramos alguns exemplos de estilo, vejamos:</p>
 
