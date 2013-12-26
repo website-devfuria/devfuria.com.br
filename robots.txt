@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /furia
+Disallow: /core
+Disallow: /seg
+Disallow: /ahumana
+Allow: /html-css
+Allow: /js
+Disallow: /logica
+Allow: /logica-de-programacao
+Disallow: /mysql
+Allow: /mysql-sql
+Allow: /php
+Sitemap: http://www.devfuria.com/schemas/sitemap0-9.xml
