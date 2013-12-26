@@ -329,27 +329,28 @@ require "../../../core/boot.php";
                             include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                             ?>                             
                         </div>
+                    </div>
 
-                    </div><!-- Corpo da matéria -->
-                </div><!-- row -->
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
 
-            </div><!-- Matéria -->
+        </div><!-- Matéria -->
 
-            <footer class="bs-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1>HTML & CSS</h1>
-                            <?php
-                            $core->lista->setLinks($core->links, Core::SECAO_HTML);
-                            $core->lista->link_ativo = "/html-css/basico/html-intro/";
-                            include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                            ?>
-                        </div>
+        <footer class="bs-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>HTML & CSS</h1>
+                        <?php
+                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
+                        $core->lista->link_ativo = "/html-css/basico/html-intro/";
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                        ?>
                     </div>
                 </div>
-            </footer>
-            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+            </div>
+        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
 </html>
