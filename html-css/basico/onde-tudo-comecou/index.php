@@ -318,59 +318,45 @@ require "../../../core/boot.php";
                             <a href="https://addons.mozilla.org/pt-br/firefox/addon/web-developer/" title="Web Developer">https://addons.mozilla.org/pt-br/firefox/addon/web-developer/</a></p>
                     </div>
 
-                    <div class="bs-docs-section">
+<!--                    <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="leituras">Leituras adicionais sugeridas</h1>
                         </div>
 
-                        <div class="panel panel-success">
+                        <div class="panel panel-info">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Livros</h3>
+                                <h3 class="panel-title">Internet</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="list-group">
-                                    <a href="#" class="list-group-item" title="">
-                                        <h4 class="list-group-item-heading">Nenhum livro sobre HTML</h4>
-                                        <p class="list-group-item-text">HTML é tão básico que eu recomendo que você pratique, pratique e pratique ao invés de ler, ler e ler.</p>
+                                    <a href="" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manual oficial do PHP</h4>
+                                        <p class="list-group-item-text">Está aqui não é sugerida, é obrigatória. (dica: digite apenas php.net que o navegador redireciona para a url completa).</p>
+                                        <span class="label label-default">http://www.php.net</span>
+                                    </a>
+                                    <a href="" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Trecho do manual...</h4>
+                                        <p class="list-group-item-text">... que introduz à programação em PHP.</p>
+                                        <span class="label label-default">http://www.php.net/manual/pt_BR/getting-started.php</span>
+                                    </a>
+                                    <a href="" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Artigo de Henrique Bastos</h4>
+                                        <p class="list-group-item-text">...explicando as diferenças sobre linguagem interpretada e compiladas.</p>
+                                        <span class="label label-default">http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada</span>
+                                    </a>
+                                    <a href="" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Notícia eletrônica falando sobre a importância das aplicações web</h4>
+                                        <span class="label label-default">http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/</span>
                                     </a>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!--                        <div class="panel panel-info">
-                                                    <div class="panel-heading">
-                                                        <h3 class="panel-title">Internet</h3>
-                                                    </div>
-                                                    <div class="panel-body">
-                                                        <div class="list-group">
-                                                            <a href="" class="list-group-item" title="link-externo">
-                                                                <h4 class="list-group-item-heading">Manual oficial do PHP</h4>
-                                                                <p class="list-group-item-text">Está aqui não é sugerida, é obrigatória. (dica: digite apenas php.net que o navegador redireciona para a url completa).</p>
-                                                                <span class="label label-default">http://www.php.net</span>
-                                                            </a>
-                                                            <a href="" class="list-group-item" title="link-externo">
-                                                                <h4 class="list-group-item-heading">Trecho do manual...</h4>
-                                                                <p class="list-group-item-text">... que introduz à programação em PHP.</p>
-                                                                <span class="label label-default">http://www.php.net/manual/pt_BR/getting-started.php</span>
-                                                            </a>
-                                                            <a href="" class="list-group-item" title="link-externo">
-                                                                <h4 class="list-group-item-heading">Artigo de Henrique Bastos</h4>
-                                                                <p class="list-group-item-text">...explicando as diferenças sobre linguagem interpretada e compiladas.</p>
-                                                                <span class="label label-default">http://henriquebastos.net/2008/09/06/diferencas-entre-linguagem-compilada-e-linguagem-interpretada</span>
-                                                            </a>
-                                                            <a href="" class="list-group-item" title="link-externo">
-                                                                <h4 class="list-group-item-heading">Notícia eletrônica falando sobre a importância das aplicações web</h4>
-                                                                <span class="label label-default">http://idgnow.uol.com.br/computacao_corporativa/2009/05/27/google-diz-que-a-web-e-o-novo-modelo-de-programacao/</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>                        
-                                                </div>-->
+                            </div>                        
+                        </div>-->
                         <?php
                         $core->paginacao->link_ativo = "/html-css/basico/onde-tudo-comecou/";
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                         ?>                      
-                    </div>                    
+                    <!--</div>-->                    
 
 
                 </div><!-- Corpo da matéria -->
