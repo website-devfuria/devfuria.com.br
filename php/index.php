@@ -11,8 +11,8 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('PHP | ' . DOMINIO);
-        $core->head->setDescription('Aprendendo PHP');
+        $core->head->setTitle('PHP');
+        $core->head->setDescription('Curso de PHP (especialmente para iniciantes), aprenda PHP de uma forma descomplicada.');
         $core->head->setkeywords("php; php5; php6; php5.3; php5.4; tutorial php; codigos php; apostila php; " .
             "php básico; php fácil; php início; php iniciante; php iniciando; php iniciante; " .
             "começando com php; começando no php; php descomplicado; aprendendo php; " .

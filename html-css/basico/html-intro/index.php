@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Tags básicas de HTML');
-        $core->head->setDescription('Aprendendo as tags básicas de HTML');
+        $core->head->setDescription('Aprendendo as tags básicas de HTML (âncoras, listas, tabelas, formulários, div e span)');
         $core->head->setkeywords('âncoras, links, tabelas, formulários, parágrafos, imagens, div e span, lista');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";

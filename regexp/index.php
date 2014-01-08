@@ -11,7 +11,7 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('RegExp | ' . DOMINIO);
+        $core->head->setTitle('RegExp');
         $core->head->setDescription('Aprendendo Expressões Regulares');
         $core->head->setkeywords("regexp; regexp básico; regexp fácil; regexp início; regexp iniciante; " .
             "regexp iniciando; regexp iniciante; começando com regexp; começando no regexp; " .

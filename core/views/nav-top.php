@@ -13,7 +13,7 @@
             <ul class="nav navbar-nav">
                 <?php foreach ($core->secoes as $secao => $secao_label): ?>
                     <li class="<?php echo ($secao == $core->navtop->secao_ativa) ? "active" : null; ?>">
-                        <a href="<?php echo ROOT_PATH . "/index.php#" . $secao; ?>"><?php echo $secao_label; ?></a>
+                        <a href="<?php echo ROOT_PATH . "/#" . $secao; ?>"><?php echo $secao_label; ?></a>
                     </li>
                 <?php endforeach; ?>                        
             </ul>

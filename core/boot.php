@@ -52,9 +52,9 @@ define('VIEWS_PATH', "/views/");
 
 
 /**
- *  Domínio, utilizado nos title das páginas
+ *  Domínio, (não mais) utilizado nos title das páginas
  */
-define('DOMINIO', "devfuria.com.br");
+define('DOMINIO', "www.devfuria.com.br");
 
 
 

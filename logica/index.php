@@ -11,8 +11,8 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Lógica de programação | ' . DOMINIO);
-        $core->head->setDescription('Aprendendo Lógica de programação');
+        $core->head->setTitle('Lógica de programação');
+        $core->head->setDescription('Aprendendo Lógica de programação de forma organizada, os exercícios foram preparados para facilitar o aprendizado.');
         $core->head->setkeywords("lógica básico; lógica de programação; lógica para iniciantes; " .
             "raciocio lógico; algoritmo; lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; "
         );

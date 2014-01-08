@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('pattern.exec()');
-        $core->head->setDescription('Dissecando a função pattern.exec() do JS');
+        $core->head->setDescription('Dissecando a função pattern.exec() do JS. O método exec() executa uma pesquisa para um resultado em uma seqüência especificada. Retorna uma matriz de resultados, ou nulo.');
         $core->head->setkeywords('expressões regulares, spattern.exec(), pattern.exec');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";

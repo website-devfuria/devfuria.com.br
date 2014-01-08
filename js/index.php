@@ -11,8 +11,8 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Javascript | ' . DOMINIO);
-        $core->head->setDescription('Aprendendo Javascript');
+        $core->head->setTitle('Javascript');
+        $core->head->setDescription('Curso de Javascript (especialmente para iniciantes), aprenda Javascript da forma certa.');
         $core->head->setkeywords("javascript; js; javascript básico; javascript fácil; javascript início; javascript iniciante; " .
             "javascript iniciando; javascript iniciante; começando com javascript; começando no javascript; " .
             "javascript descomplicado; aprendendo javascript; matéria sobre javascript; aula sobre javascript; "

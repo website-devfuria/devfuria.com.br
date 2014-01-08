@@ -11,8 +11,8 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('HTML-CSS | ' . DOMINIO);
-        $core->head->setDescription('Aprendendo HTML(5) e CSS(3)');
+        $core->head->setTitle('HTML-CSS');
+        $core->head->setDescription('Curso, matérias, exercícios, artigos sobre HTML(5) e CSS(3)');
         $core->head->setkeywords("html; html5; css; css3; tutorial html; tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
             "html básico; html fácil; html início; html iniciante; " .
             "html iniciando; html iniciante; começando com html; começando no html; " .

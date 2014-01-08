@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('preg_math_all()');
-        $core->head->setDescription('Dissecando a função preg_math_all() do PHP');
+        $core->head->setDescription('Dissecando a função preg_math_all() do PHP, ela retonar um ou mais resultados.');
         $core->head->setkeywords('expressões regulares, preg_math_all(), preg_math_all');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";

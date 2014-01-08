@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('string.match()');
-        $core->head->setDescription('Dissecando a função string.match() do JS');
+        $core->head->setDescription('Dissecando a função string.match() do JS, método de expressão regular.');
         $core->head->setkeywords('expressões regulares, string.match(), string.match');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";

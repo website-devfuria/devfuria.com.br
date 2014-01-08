@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('preg_match()');
-        $core->head->setDescription('Dissecando a função preg_match() do PHP');
+        $core->head->setDescription('Dissecando a função preg_match() do PHP, método para expressão regular segundo o PCRE');
         $core->head->setkeywords('expressões regulares, preg_match(), preg_match');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";

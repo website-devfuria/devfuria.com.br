@@ -11,8 +11,8 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Mysql-SQL | ' . DOMINIO);
-        $core->head->setDescription('Aprendendo Mysql e SQL');
+        $core->head->setTitle('Mysql-SQL');
+        $core->head->setDescription('Curso de SQL através do Mysql, descubra o que o SQL pode fazer por você.');
         $core->head->setkeywords("sql; mysql; sql básico; sql fácil; sql início; sql iniciante; " .
                 "sql iniciando; sql iniciante; começando com sql; começando no sql; " .
                 "sql descomplicado; aprendendo sql; matéria sobre sql; aula sobre sql; " .
