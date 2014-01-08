@@ -175,11 +175,11 @@ require "../../../core/boot.php";
                                 <li>Dá a você uma chance de aprender todas as lições que o código tem para ensinar. Se você fizer às pressas a primeira coisa que pensar, então nunca terá tempo para pensar em uma segunda coisa melhor.</li>
                                 <li>Melhora as vidas dos usuários de seu software</li>
                                 <li>Permite que seus colegas de equipe contem com você, e você com eles.</li>
-                                <li>É bom esrevê-los</li>
+                                <li>É bom escrevê-los</li>
                             </ul>
                             <p>
                                 Mas como obtemos código limpo que funciona? Muitas forças nos desviam do código limpo, ou
-                                esmo de código que funciona. Sem pedir conselhos aos nossos medos, aqui está o que fazemos:
+                                mesmo de código que funciona. Sem pedir conselhos aos nossos medos, aqui está o que fazemos:
                                 conduzimos o desenvolvimento com testes automatizados, um estilo de desenvolvimento chamado
                                 Desenvolviemnto Guiado por Testes. No TDD:
                             </p>

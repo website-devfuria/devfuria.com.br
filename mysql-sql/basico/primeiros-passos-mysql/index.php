@@ -30,7 +30,7 @@ require "../../../core/boot.php";
             <div class="container">
                 <h1>Primeiro passos com Mysql</h1>
                 <p>Na verdade, já é o segundo, pois o primeiro nos demos na matéria anterior.</p>
-                <p>Aprenderamos como ler mensagens de erro, listar bases, selecionar base para uso, alias (apelido) 
+                <p>Aprenderemos como ler mensagens de erro, listar bases, selecionar base para uso, alias (apelido) 
                     e  funcões básicas.</p>
             </div>
         </div>
