@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Boas práticas para quem está começando em PHP ');
-        $core->head->setDescription('Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.'.
+        $core->head->setDescription('Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.' .
                 "Veremos 4 conceitos básicos: endentação, nomeação, comentários e estilos.");
         $core->head->setkeywords('boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação, underline, underscore, camelcase');
         $core->head->setAuthor();
@@ -230,7 +230,7 @@ endereco</code></pre>
                             então que tal <code>numero_menor</code> ? ou <code>numeroMenor</code>? As duas são adequadas. Quem tem uma boa lógica somada a visão macro do
                             negócio (domínio) e aliado ao exercício constante de ficar procurando por uma nomenclatura adequadas, consegue sempre
                             uma boa nomeação. Considere pensar muito antes de nomear “as coisas”.  O ministério dos programadores adverte: <strong>“Prestar
-                            manutenção em um sistema com nomenclaturas do tipo Frankstain pode causar urticárias”</strong>.</p>
+                                manutenção em um sistema com nomenclaturas do tipo Frankstain pode causar urticárias”</strong>.</p>
 
                         <p>A figura a seguir mostra um exemplo de convenção de nomenclatura.</p>
                         <div class="bs-example">
@@ -376,14 +376,12 @@ elseif(  (condition3)&&(condition4)  ){
                         </ol>
 
                         <p>... e seja feliz!</p>                        
-                        <?php
-                        $core->paginacao->link_ativo = "/php/basico/boas-praticas/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
-
                     </div>                        
-
+                    <?php
+                    $core->paginacao->link_ativo = "/php/basico/boas-praticas/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

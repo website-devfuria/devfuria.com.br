@@ -162,14 +162,12 @@ if (resultado) {
     console.log("não casou", resultado);
 }</code></pre>
                         </div>
-                        <?php
-                        $core->paginacao->link_ativo = "/regexp/basico/pattern-test/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
-
                     </div>
-
+                    <?php
+                    $core->paginacao->link_ativo = "/regexp/basico/pattern-test/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

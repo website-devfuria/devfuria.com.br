@@ -23,7 +23,7 @@ require "../../../core/boot.php";
         <?php
         $core->navtop->secao_ativa = Core::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
         <!-- Título -->
@@ -72,7 +72,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">O que é debugar ?</h1>
-                        </div>                         
+                        </div>
 
                         <blockquote>
                             <p>Precisamos debugar o programa para sabermos onde [e como] está ocorrendo o erro.
@@ -122,7 +122,7 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
                             <img class="img-rounded" alt="### Desenho em quadrinhos satirizando as mensagens de debugação!"  src="tirinha16-debugando.png">
                             <p>Se programar já é uma arte, imagine debugar!!!</p>
                             <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/08/19/erro-nao-documentado/" title="link-externo">Vida de programador</a></p>
-                        </div>                        
+                        </div>
 
                         <p>Debugar é também sinônimo de teste. Porém "testes" é uma palavra com escopo ampliado.</p>
 
@@ -135,9 +135,9 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="formas">Formas rudimentares</h1>
-                        </div>  
+                        </div>
 
-                        <p>A forma mais rudimentar de debugar em JS é exibir um alerta. Com o tempo você vai se encher com as popup e logo vai 
+                        <p>A forma mais rudimentar de debugar em JS é exibir um alerta. Com o tempo você vai se encher com as popup e logo vai
                             procurar uma alternativa.</p>
 
                         <pre><code class="language-javascript">var minha_variavel = "Hello, word";
@@ -146,8 +146,8 @@ alert(minha_variavel);</code></pre>
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Debugando com Janela popup!" src="debug-alert.png" />
                             <p><a href="https://courses.cs.washington.edu/courses/cse190m/11su/labs/lab5-pimpmytext.shtml" title="link-externo">Fonte da imagem acima</a></p>
-                        </div>                           
-                        
+                        </div>
+
 
                         <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) através do método write() do
                             objeto "document".</p>
@@ -158,14 +158,14 @@ document.write(minha_variavel);</code></pre>
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Debugando no próprio HTML"  src="debug-write.png">
                             <p><a href="http://blueashes.com/2011/web-development/install-nodejs-on-windows/" title="link-externo">Fonte da imagem acima</a></p>
-                        </div>  
+                        </div>
 
-                    </div>  
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="depuradores">Depuradores (subindo um degrau)</h1>
-                        </div>  
+                        </div>
 
                         <p>Quem desenvolve em JS e utiliza o Firefox para ver o resultado pode contar com o Firebug (já comentei um monte de vez
                             sobre esse plugin em matérias anteriores). Se você ainda não tem ele instalado, faça isso imediatamente.</p>
@@ -182,9 +182,9 @@ console.log(minha_variavel);</code></pre>
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Debugando com firebug"  src="debug-firebug.png">
                             <p><a href=http://1.bp.blogspot.com/-yxbVFlzsyK8/UBUm7iInQAI/AAAAAAAAFpQ/l4ZSI-Mv4Ps/s1600/console.png" title="link-externo">Fonte da imagem acima</a></p>
-                        </div>  
+                        </div>
 
-                        <p>Ele parece-se com o do navegador (document.write) mas não se engane, a janela do console tem muitas outras 
+                        <p>Ele parece-se com o do navegador (document.write) mas não se engane, a janela do console tem muitas outras
                             funcionalidades e atrativos.</p>
 
                         <p><span style="text-decoration:line-through;">Em breve, voltarei para apresentar brevemente o Firebug.</span></p>
@@ -198,13 +198,13 @@ console.log(minha_variavel);</code></pre>
 
                         <div class="bs-example">
                             <iframe width="560" height="315" src="http://www.youtube.com/embed/IP8xDTGkfjc" frameborder="0" allowfullscreen></iframe>
-                        </div>  
-                    </div>  
+                        </div>
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="problemas">Como saber se o código não está com problemas ?</h1>
-                        </div>    
+                        </div>
 
                         <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a linguágem é interpretada, estou me referindo ao código que demosntra erros. <strong>E como demostrar os erros?</strong>.</p>
 
@@ -213,14 +213,13 @@ console.log(minha_variavel);</code></pre>
                         <p>O teste mais básico que podemos fazer em um script JS é abrir o HTML, ligar o Firebug (acione a tecla F12), escolha a aba "console" e
                             recarrega a página con a tecla F5 ( à vezes precisamos executar um CTRl + F5, isso força a atualização).</p>
 
-                        <p>Se não aparecer nenhuma mensagem de erro, ótimo! Seu script está correto (pelo menos do ponto de vista da sintaxe).</p>                       
-                        <?php
-                        $core->paginacao->link_ativo = "js/basico/debugando/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                            
-                    </div>  
-
+                        <p>Se não aparecer nenhuma mensagem de erro, ótimo! Seu script está correto (pelo menos do ponto de vista da sintaxe).</p>
+                    </div>
+                    <?php
+                    $core->paginacao->link_ativo = "js/basico/debugando/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

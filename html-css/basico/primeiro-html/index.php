@@ -217,13 +217,12 @@ etc...</code></pre>
                             <iframe width="560" height="315" src="http://www.youtube.com/embed/IMswx5wcqA0" frameborder="0" allowfullscreen></iframe>
                             <p>Obs: A voz doce ao fundo é minha querida Joana.</p>
                         </div>
-                        <?php
-                        $core->paginacao->link_ativo = "/html-css/basico/primeiro-html/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                          
                     </div>
-
+                    <?php
+                    $core->paginacao->link_ativo = "/html-css/basico/primeiro-html/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

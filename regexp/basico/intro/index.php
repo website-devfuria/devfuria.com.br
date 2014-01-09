@@ -21,8 +21,6 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        
-        
         $core->navtop->secao_ativa = Core::SECAO_ER;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
@@ -273,15 +271,12 @@ match()
                                 </div>
                             </div>
                         </div>
-                        
-                        <?php
-                        $core->paginacao->link_ativo = "/regexp/basico/intro/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
                     </div>
-                    
-
+                    <?php
+                    $core->paginacao->link_ativo = "/regexp/basico/intro/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

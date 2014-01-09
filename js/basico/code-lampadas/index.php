@@ -428,14 +428,12 @@ se não
                                 para focar no aprendizado da linguagem, esse é o objetivo.</p>
 
                             <p>Até lá.</p>  
-
-                            <?php
-                            $core->paginacao->link_ativo = "/js/basico/code-lampadas/";
-                            $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
-                            include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                            ?>
                         </div>                      
-
+                        <?php
+                        $core->paginacao->link_ativo = "/js/basico/code-lampadas/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>
                     </div><!-- Corpo da matéria -->
                 </div><!-- row -->
             </div><!-- Matéria -->

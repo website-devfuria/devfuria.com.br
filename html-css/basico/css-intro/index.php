@@ -23,14 +23,14 @@ require "../../../core/boot.php";
         <?php
         $core->navtop->secao_ativa = Core::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Primeiro contato com CSS</h1>
-                <p>Nesta matéria veremos mega rápida introdução ao CSS, o básico de cores e também 
+                <p>Nesta matéria veremos mega rápida introdução ao CSS, o básico de cores e também
                     como unir o CSS ao arquivo HTML.</p>
             </div>
         </div>
@@ -84,7 +84,7 @@ require "../../../core/boot.php";
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Imagem do Pixel" src="pixel.png">
                             <p><a href="http://pt.wikipedia.org/wiki/Pixelx" title="link-externo">Fonte da imagem acima</a></p>
-                        </div>                        
+                        </div>
 
                         <p><strong>As cores</strong> normalmente são apresentadas pela combinação das cores primárias. Dizemos ao navegador o quanto queremos de
                             vermelho, verde e azul e assim vamos montando todas as outras cores.</p>
@@ -99,7 +99,7 @@ require "../../../core/boot.php";
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Imagem das Cores" src="cores.png">
                             <p><a href="http://pt.wikipedia.org/wiki/Pixelx" title="link-externo">Fonte da imagem acima</a></p>
-                        </div>                        
+                        </div>
 
                     </div>
 
@@ -107,7 +107,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section" id="css-unindo">
                         <div class="page-header">
                             <h1>Unindo o CSS ao HTML</h1>
-                        </div>  
+                        </div>
 
                         <p>Agora precisamos aprender como unir a CSS ao documento HTML.</p>
 
@@ -116,7 +116,7 @@ require "../../../core/boot.php";
                         <div class="bs-docs-section" id="css-inline">
                             <div class="page-header">
                                 <h3>CSS - inline (na linha)</h3>
-                            </div>                            
+                            </div>
 
                             <p>Inline o método mais simples, declaramos a regra com o emprego do atributo <code>style</code> do HTML, exemplo:</p>
 
@@ -146,13 +146,13 @@ require "../../../core/boot.php";
                                 legibilidade e NÂO permite o controle centralizado da CSS. Programadores e designs, no geral, evitam a CSS inline.
                                 Ainda não "dá cadeia" utilizar-se de CSS inline, se achar que precise dela, pode usá-la com bom censo.</p>
 
-                        </div>                            
+                        </div>
 
 
                         <div class="bs-docs-section" id="css-embeded">
                             <div class="page-header">
                                 <h3>CSS - embeded (incorporadas)</h3>
-                            </div>                              
+                            </div>
 
                             <p>Coloca-se as regras de CSS entre a tag <code>style</code> na seção <code>head</code> do HTML, veja o exemplo:</p>
 
@@ -186,12 +186,12 @@ require "../../../core/boot.php";
 
                             <p>Já é bem melhor que o método anterior: já é possível localizar a CSS com mais facilidade no documento.
                                 Mas há o método campeão...</p>
-                        </div>                              
+                        </div>
 
                         <div class="bs-docs-section" id="css-linked">
                             <div class="page-header">
                                 <h3>CSS - linked (externos)</h3>
-                            </div>                             
+                            </div>
 
                             <p>Coloca-se as regras de CSS em um arquivo separado do HTML. Normalmente a extensão do arquivo é <code>.css</code>. A "cola" é
                                 realizada através da tag <code>link</code>, veja código de exemplo:</p>
@@ -225,13 +225,13 @@ require "../../../core/boot.php";
                                 formas quando e onde achar melhor.</p>
 
                         </div>
-                    </div>                             
+                    </div>
 
                     <?php
                     $core->paginacao->link_ativo = "/html-css/basico/css-intro/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                             
+                    ?>
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->

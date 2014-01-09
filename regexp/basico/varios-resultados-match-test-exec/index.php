@@ -209,14 +209,12 @@ if (resultado) {
 
                         <p>Acesse o link <a href="https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806" title="link-externo">https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806</a>
                             e clique no botão "Download Gist", descompacte o arquivo e boa diversão.</p>
-                        <?php
-                        $core->paginacao->link_ativo = "/regexp/basico/varios-resultados-match-test-exec/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
-
                     </div>
-
+                    <?php
+                    $core->paginacao->link_ativo = "/regexp/basico/varios-resultados-match-test-exec/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

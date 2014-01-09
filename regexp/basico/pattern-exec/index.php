@@ -72,7 +72,7 @@ require "../../../core/boot.php";
                         <div class="page-header">
                             <h1 id="intro">Sobre a função</h1>
                         </div>
-                        
+
                         <p>A função <code>exec()</code> em JS possue a sintaxe parecida com a função <code>test()</code> porém o resultado é idêntico a função <code>match()</code>.</p>
 
                         <p>A forma <code>pattern.exec()</code> onde "pattern" é expressão regular, "exec()" é a função que evocamos
@@ -219,14 +219,12 @@ if (resultado) {
 
                         <p>Lembre-se que se a expressão estiver sintaticamente errada ela interromperá a excução do script, logo, o uso dos blocos
                             de tratamento de erro (try cath) se faz necessário.</p>
-                        <?php
-                        $core->paginacao->link_ativo = "/regexp/basico/pattern-exec/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
-                        
                     </div>
-
+                    <?php
+                    $core->paginacao->link_ativo = "/regexp/basico/pattern-exec/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

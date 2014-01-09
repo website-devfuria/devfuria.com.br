@@ -13,7 +13,7 @@ require "../../../core/boot.php";
         <?php
         $core->head->setTitle('Levantando um ambiente de programação (PHP)');
         $core->head->setDescription('Aprenda a levantar seu ambiente de programação de forma descomplicada e sem sustos');
-        $core->head->setkeywords('instalando apache no linux, instalando mysql no linux, instalando phpmyadmin no linux, instalando php no linux, php.ini, x-debug, lamp ubuntu, lamp fedora' );
+        $core->head->setkeywords('instalando apache no linux, instalando mysql no linux, instalando phpmyadmin no linux, instalando php no linux, php.ini, x-debug, lamp ubuntu, lamp fedora');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -140,7 +140,7 @@ require "../../../core/boot.php";
                             <img class="img-rounded" alt="### Livro sobre o linux, autor Morimoto" src="linux-guia-pratico-morimoto.jpg">
                             <p>Ótimo livro para iniciantes no Linux</p>
                         </div>                        
-                        
+
                         <p>A primeira coisa que aprende-se sobre um sistema operacional é como instalá-lo. No caso do Linux, você terá que decidir
                             entre mais de 500 distribuições(versões).</p>
 
@@ -442,14 +442,12 @@ systemctl restart httpd.service
                                 <a href="https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora" title="link-externo">https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora</a>
                             </dd>
                         </dl>
-                        <?php
-                        $core->paginacao->link_ativo = "/php/basico/instalando-o-ambiente/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
-                        
                     </div>                 
-
+                    <?php
+                    $core->paginacao->link_ativo = "/php/basico/instalando-o-ambiente/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

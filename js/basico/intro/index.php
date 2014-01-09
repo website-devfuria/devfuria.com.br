@@ -276,10 +276,10 @@ element.onclick = function() {
                                         <div class="media-body">
                                             <h4 class="media-heading">Só Javascript (Simple Javascript)</h4>
                                             <p class="list-group-item-text">Kevin e Cameron, Editora bookman</p>
-                                            
+
                                         </div>
                                     </div>
-                                    
+
                                     <div class="media">
                                         <a class="pull-left">
                                             <img class="media-object" src="livro-melhor-js.jpg" alt="### Imagem do livro 'O Melhor do Javascript'">
@@ -312,18 +312,16 @@ element.onclick = function() {
                                             <span class="label label-default">http://qunitjs.com/</span>
                                         </a>
                                     </div>
-                                </div>                        
+                                </div>
                             </div>
-                        </div>                        
-                        <?php
-                        $core->paginacao->link_ativo = "/js/basico/intro";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
-                    </div>                         
-
+                        </div>
+                    </div>
+                    <?php
+                    $core->paginacao->link_ativo = "/js/basico/intro";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>
                 </div>
-
             </div><!-- Corpo da matéria -->
         </div><!-- row -->
     </div><!-- Matéria -->

@@ -264,14 +264,12 @@ require "../../../core/boot.php";
                                 </div>
                             </div>                        
                         </div>                    
-                        <?php
-                        $core->paginacao->link_ativo = "/mysql-sql/basico/primeiros-passos-mysql/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                            
                     </div>
-
-
+                    <?php
+                    $core->paginacao->link_ativo = "/mysql-sql/basico/primeiros-passos-mysql/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                            
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

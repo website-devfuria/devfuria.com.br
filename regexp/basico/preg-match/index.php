@@ -138,8 +138,8 @@ $resultado = array("exemplo")
                         <p>A função retorna um valor para sabermos se obtivemos sucesso ou não e, no caso do sucesso, podemos saber quais as partes
                             que casaram.</p>
                     </div>
-                    
-                    
+
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="nao-casou">Se a expressão não casar</h1>
@@ -170,9 +170,9 @@ var_dump($resultado, $retorno);
 
                         <p>Você decide o que usar, eu prefiro testar o resulado da função (variável $resultado).</p>
                     </div>    
-                    
-                    
-                    
+
+
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
@@ -245,14 +245,12 @@ if ($resultado === 1) {
 }
 ?&gt;</code></pre>
                         </div>    
-                        <?php
-                        $core->paginacao->link_ativo = "/regexp/basico/preg-match/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
-
                     </div>
-
+                    <?php
+                    $core->paginacao->link_ativo = "/regexp/basico/preg-match/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

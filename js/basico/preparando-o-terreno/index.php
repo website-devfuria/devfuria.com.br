@@ -21,11 +21,9 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        
-        
         $core->navtop->secao_ativa = Core::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
         <!-- Título -->
@@ -109,7 +107,7 @@ require "../../../core/boot.php";
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="aonde-colocar">Aonde colocar o Javascript ?</h1>
@@ -202,7 +200,7 @@ console.log(qualquer);</code></pre>
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="seguro">Javascript é seguro?</h1>
-                        </div>                          
+                        </div>
 
                         <p>Vamos estender essa pergunta para: a linguagem de programação X é sergura?</p>
 
@@ -220,7 +218,7 @@ console.log(qualquer);</code></pre>
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="caracter">Características da linguagem?</h1>
-                        </div>  
+                        </div>
 
                         <p>JS é uma linguagem baseada em protótipos, em funções de primeira classe, fracamente tipada, imperativa e estruturada,
                             implementa closures.</p>
@@ -230,13 +228,13 @@ console.log(qualquer);</code></pre>
                             ensinar e aprender programação. Com este curso de JS, não será diferente. As características aqui apresentadas serão
                             explicadas ao longo do curso quando o leitor já estiver mais familizarizado com a linguagem e, dessa forma, poderá
                             aproveitar melhor o curso.</p>
-                        </div>                         
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="js-oop">JS é realmente Orientado a Objetos ?</h1>
-                        </div>                         
-                        
+                        </div>
+
                         <p>A questão se JS é ou não OOP ainda causa certa polêmica, mas segundo Douglas Crockford's (o mago do JS):</p>
 
                         <blockquote>
@@ -247,14 +245,12 @@ console.log(qualquer);</code></pre>
                         </blockquote>
 
                         <p><em>Na próxima matéria veremos como debugar (depurar) o JS.</em></p>
-                        
-                        <?php
-                        $core->paginacao->link_ativo = "/js/basico/preparando-o-terreno/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                      
-                    </div>  
-
+                    </div>
+                    <?php
+                    $core->paginacao->link_ativo = "/js/basico/preparando-o-terreno/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
@@ -272,8 +268,8 @@ console.log(qualquer);</code></pre>
                     </div>
                 </div>
             </div>
-        </footer>        
+        </footer>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-        
-</body>
+
+    </body>
 </html>

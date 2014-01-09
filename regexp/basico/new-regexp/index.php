@@ -120,13 +120,12 @@ console.log(pattern, resultado);</code></pre>
                                     </div>
                                 </div>                        
                             </div>                        
-                            <?php
-                            $core->paginacao->link_ativo = "/regexp/basico/new-regexp/";
-                            $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
-                            include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                            ?>                        
                         </div>
-
+                        <?php
+                        $core->paginacao->link_ativo = "/regexp/basico/new-regexp/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>                        
                     </div><!-- Corpo da matéria -->
                 </div><!-- row -->
 

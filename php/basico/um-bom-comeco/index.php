@@ -273,12 +273,12 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                         <p>Seja bem vindo ao curso de PHP!</p>
                     </div>
 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="leituras">Leituras adicionais sugeridas</h1>
                         </div>
-                        
+
                         <div class="panel panel-success">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Livros</h3>
@@ -292,7 +292,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="panel panel-info">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Internet</h3>
@@ -326,13 +326,12 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                                 </div>
                             </div>                        
                         </div>
-                        <?php
-                        $core->paginacao->link_ativo = "/php/basico/um-bom-comeco/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
                     </div>
-
+                    <?php
+                    $core->paginacao->link_ativo = "/php/basico/um-bom-comeco/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

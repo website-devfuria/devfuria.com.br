@@ -237,13 +237,12 @@ echo "&lt;/pre&gt;";
 </code></pre>
 
                         <p>E aí, sentiu a diferença?</p>
-                        <?php
-                        $core->paginacao->link_ativo = "/php/basico/debugando/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
                     </div>
-
+                    <?php
+                    $core->paginacao->link_ativo = "/php/basico/debugando/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

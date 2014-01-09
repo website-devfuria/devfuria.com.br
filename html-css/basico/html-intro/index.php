@@ -23,7 +23,7 @@ require "../../../core/boot.php";
         <?php
         $core->navtop->secao_ativa = Core::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
         <!-- Título -->
@@ -66,7 +66,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="html-ancora">Âncora(link)</h1>
-                        </div>                        
+                        </div>
 
                         <pre><code>&lt;a href="pagina-ao-clicar.html"&gt;Isto é um link&lt;/a&gt;</code></pre>
 
@@ -99,12 +99,12 @@ require "../../../core/boot.php";
                             de <strong>pseudoclasses</strong>, a regra CSS abaixo adiciona a cor vermelha a link apenas quando passamos o mouse sobre ele.</p>
 
                         <pre><code>a:hover {background-color: red}</code></pre>
-                    </div>                        
+                    </div>
 
                     <div class="bs-docs-section" id="html-listas">
                         <div class="page-header">
                             <h1>Listas</h1>
-                        </div>                         
+                        </div>
 
                         <pre><code>&lt;ul&gt;
     &lt;li&gt;&lt;/li&gt;
@@ -130,12 +130,12 @@ require "../../../core/boot.php";
 &lt;/ol&gt;
 </code></pre>
 
-                    </div>                         
+                    </div>
 
                     <div class="bs-docs-section" id="html-paragr-imgs">
                         <div class="page-header">
                             <h1>Parágrafos e imagens</h1>
-                        </div>                         
+                        </div>
 
                         <pre><code>&lt;p&gt;Isto é um parágrafo&lt;/p&gt;
 
@@ -199,12 +199,12 @@ require "../../../core/boot.php";
     composições, sendo a primeira gravada "Incerteza", uma parceria com Newton Mendonça, na voz de Mauricy Moura.
 &lt;/p&gt;
 </code></pre>
-                    </div>                         
+                    </div>
 
                     <div class="bs-docs-section" id="html-tabelas">
                         <div class="page-header">
                             <h1>Tabelas</h1>
-                        </div>                           
+                        </div>
 
                         <p>As tabelas acomodam dados tabulares.</p>
 
@@ -254,12 +254,12 @@ require "../../../core/boot.php";
 
 &lt;/table&gt;
 </code></pre>
-                    </div>  
+                    </div>
 
                     <div class="bs-docs-section" id="html-forms-inputs-labels">
                         <div class="page-header">
                             <h1>Formulários, inputs e labels</h1>
-                        </div>                          
+                        </div>
 
                         <p>Um formulário na web normalmente é chato de se preencher, só que ele é a alma dos aplicativos web, pois é através de seus
                             campos que o usuário faz a inserção dos dados e, dessa forma, interaje com o sistema.</p>
@@ -286,12 +286,12 @@ require "../../../core/boot.php";
 
                         <p>Essa questão da interação formulário/servidor nós trataremos no curso de PHP, ok? Aqui no curso de HTML e CSS vamos nos
                             deter apenas em seu layout e estrutura.</p>
-                    </div>                              
+                    </div>
 
                     <div class="bs-docs-section" id="html-divs-span">
                         <div class="page-header">
                             <h1>Div's e Span's</h1>
-                        </div>                              
+                        </div>
 
                         <p>A tag <code>div</code> é um elemento do tipo <strong>conteiner</strong> que acomoda outras tag's, é um <code>div</code>sor de espaços.
                             A tag <code>span</code> acomoda pequenos trechos de texto.</p>
@@ -303,14 +303,13 @@ require "../../../core/boot.php";
 &lt;/div&gt;
 
 &lt;span&gt;um pequeno texto&lt;/span&gt;
-</code></pre>                        
-                    </div>                          
-
+</code></pre>
+                    </div>
                     <?php
                     $core->paginacao->link_ativo = "/html-css/basico/html-intro/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                             
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

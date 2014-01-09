@@ -13,7 +13,7 @@ require "../../../core/boot.php";
         <?php
         $core->head->setTitle('Refatorando o códig da máteria \"Code - A lâmpada \"');
         $core->head->setDescription('Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.');
-        $core->head->setkeywords('oop em javascript, refatoração, codificação coesa, boas práticas, organizando o código');        
+        $core->head->setkeywords('oop em javascript, refatoração, codificação coesa, boas práticas, organizando o código');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -491,15 +491,12 @@ senão
                             <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
 
                         <p>Agora chega de lâmpadas, na próxima matéria mudaremos o assunto, até lá.</p>                      
-
-                        <?php
-                        $core->paginacao->link_ativo = "/js/basico/code-lampadas-refatorando/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
-
                     </div>
-
+                    <?php
+                    $core->paginacao->link_ativo = "/js/basico/code-lampadas-refatorando/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                        
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
