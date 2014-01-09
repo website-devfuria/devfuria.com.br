@@ -99,6 +99,8 @@ $core->links[Core::SECAO_LOG] = array(
     LINKS_PATH . "/logica-de-programacao/basico/exercicios-operadores-atribuicao/" => "Exercícios de lógica de programação (operadores de atribuição)",
     LINKS_PATH . "/logica-de-programacao/basico/if-else/" => "Expressões Condicionais (if-else)",
     LINKS_PATH . "/logica-de-programacao/basico/exercicios-expressoes-condicionais/" => "Exercícios de lógica de programação (expressões condicionais)",
+    LINKS_PATH . "/logica-de-programacao/basico/funcoes-procedimentos/" => "Funções",
+    LINKS_PATH . "/logica-de-programacao/basico/code-triangulo/" => "Code - Triângulo",
     LINKS_PATH . "/logica-de-programacao/basico/tdd/" => "Vamos de TDD?",
 );
 $core->links[Core::SECAO_HTML] = array(
