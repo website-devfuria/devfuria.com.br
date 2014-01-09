@@ -824,14 +824,12 @@ FIM</code></pre>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                        <?php
-                        $core->paginacao->link_ativo = "exercicios-operadores-atribuicao";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                                  
                     </div><!--seção -->                
-
-
+                    <?php
+                    $core->paginacao->link_ativo = "exercicios-operadores-atribuicao";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                                  
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

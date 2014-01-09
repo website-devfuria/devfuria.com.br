@@ -271,10 +271,6 @@ if ( ! $variavel) {
                             </p>
 
 
-
-
-
-
                             <div class="bs-docs-section">
                                 <div class="page-header">
                                     <h1 id="leituras">Leituras adicionais sugeridas</h1>
@@ -315,15 +311,13 @@ if ( ! $variavel) {
                                         </div>
                                     </div>
                                 </div>
-                                <?php
-                                $core->paginacao->link_ativo = "/logica-de-programacao/basico/if-else/";
-                                $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                                include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                                ?>
                             </div>
                         </div>
-
-
+                        <?php
+                        $core->paginacao->link_ativo = "/logica-de-programacao/basico/if-else/";
+                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        ?>
                     </div><!-- Corpo da matéria -->
                 </div><!-- row -->
 

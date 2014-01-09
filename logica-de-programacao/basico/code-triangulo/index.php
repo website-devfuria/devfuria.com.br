@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Exemplo de código que utiliza função()');
-        $core->head->setDescription('Matéria introdutória sobre funções em PHP, veremos a sintaxe básica e retornaremos no último exercício de lógica: é triângulo');
-        $core->head->setkeywords('');
+        $core->head->setTitle('Exemplo de código que utiliza funções');
+        $core->head->setDescription('Matéria introdutória ilustrando a sintaxe básica do último exercício de lógica: é triângulo');
+        $core->head->setkeywords('funções, procedimentos, exemplo de funções');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -24,7 +24,6 @@ require "../../../core/boot.php";
         $core->navtop->secao_ativa = Core::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
-
 
         <!-- Título -->
         <div class="bs-header" id="content">

@@ -100,7 +100,7 @@ require "../../../core/boot.php";
                                 contam). Em um curso formal (acadêmico), a disciplina lógica de programação dura um semestre inteiro. Se você nunca viu
                                 programação antes, dê-se pelo menos 6 meses de amadurecimento em lógica.</em></p>                    
 
-             
+
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="leituras">Leituras adicionais sugeridas</h1>
@@ -127,15 +127,13 @@ require "../../../core/boot.php";
                                     </div>
                                 </div>
                             </div>
-                            <?php
-                            $core->paginacao->link_ativo = "/logica-de-programacao/basico/intro/";
-                            $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                            include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                            ?>
                         </div>                                
                     </div>
-                    
-
+                    <?php
+                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/intro/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

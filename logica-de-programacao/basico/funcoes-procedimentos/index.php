@@ -12,8 +12,8 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Apendendo o básico sobre funções');
-        $core->head->setDescription('Matéria introdutória sobre funções em PHP, veremos a sintaxe básica e retornaremos no último exercício de lógica: é triângulo');
-        $core->head->setkeywords('');
+        $core->head->setDescription('Como criar e utilizar funcções em PHP e Javascript, máteria de nível básico introduzindo uso de funções');
+        $core->head->setkeywords('funções, procedimentos, funções em php, funções em javascript, aprendendo funções');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -30,7 +30,7 @@ require "../../../core/boot.php";
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Funções</h1>
-                <p>O básico sobre funções em PHP e Javascript</p>
+                <p>Matéria introdutória sobre funções</p>
             </div>
         </div>
 

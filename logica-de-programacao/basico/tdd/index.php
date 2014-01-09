@@ -312,7 +312,7 @@ require "../../../core/boot.php";
                                     <h3 class="panel-title">Livros</h3>
                                 </div>
                                 <div class="panel-body">
-                                    
+
                                     <div class="media">
                                         <a class="pull-left">
                                             <img class="media-object" src="tdd-livro.jpg" alt="### Imagem do livro 'TDD'">
@@ -348,13 +348,12 @@ require "../../../core/boot.php";
                                 </div>                        
                             </div>
                         </div>                        
-                        <?php
-                        $core->paginacao->link_ativo = "/logica-de-programacao/basico/tdd/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                         
                     </div>                    
-
+                    <?php
+                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/tdd/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                         
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

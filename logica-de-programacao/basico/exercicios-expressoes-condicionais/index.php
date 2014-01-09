@@ -404,7 +404,6 @@ echo false;</code></pre>
                                         </p>
                                         <p>Repare também que eu modei um pouco a lógica, veja que a comparação se faz com o sinal de maior <code>&gt;</code>.</p>
                                         <div class="code">
-
                                             <h6>PHP</h6>
                                             <pre><code class="language-php">
 if ($a > ($b + $c)) {
@@ -423,18 +422,15 @@ if ($c > ($a + $b)) {
 echo true;</code></pre>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div><!--acordion -->
-                        <?php
-                        $core->paginacao->link_ativo = "/logica-de-programacao/basico/exercicios-expressoes-condicionais/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>
                     </div><!--seção -->
-
-
+                    <?php
+                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/exercicios-expressoes-condicionais/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
