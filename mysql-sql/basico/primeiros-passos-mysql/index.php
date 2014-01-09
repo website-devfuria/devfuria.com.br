@@ -197,7 +197,7 @@ require "../../../core/boot.php";
 
                         <p>Também é posssível utilizar o <code>SELECT</code> dessa forma:</p>
 
-                        <pre><code class="no-highlight">SELECT 15 * 2;</code></pre>
+                        <pre><code class="no-highlight">SELECT 5 * 2;</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT 5 vezes 2'" src="select-5vezes2.png">
@@ -210,7 +210,7 @@ require "../../../core/boot.php";
                         <pre><code class="no-highlight">SELECT 5 * 2 AS foo;</code></pre>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT 5 * 2 AS foo'" src="select-foo.png">
+                            <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT 5 * 2 AS foo'" src="select-5vezes2-foo.png">
                         </div>                        
 
                         <p>O <code>AS</code> é um "alias"(apelido). Em português, "as" siginifica "como", ou seja,

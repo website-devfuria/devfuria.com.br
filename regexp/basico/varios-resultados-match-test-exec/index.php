@@ -115,7 +115,7 @@ if (resultado) {
                         <pre><code>pattern = /ca.a/g,
 </code></pre>
 
-                        <p>Tivemos que incluir a opção "g" de "global", veja mais na
+                        <p>Tivemos que incluir a opção <code>g</code> de "global", veja mais na
                             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FGlobal_Objects%2FString%2Fmatch" title="link-externo">documentação oficial</a>.</p>
 
                         <p>Vamos aos resultados em cada função....</p>
@@ -127,7 +127,7 @@ if (resultado) {
                             <h1 id="match">match()</h1>
                         </div>
 
-                        <p>Incluí a opção global g como descrito acima e percorri o valor da variavel resultado que agora é um array.</p>
+                        <p>Incluí a opção global <code>g</code> como descrito acima e percorri o valor da variável <code>resultado</code> que agora é um array.</p>
 
                         <div class="code">
                             <h6>JS</h6>
@@ -172,8 +172,8 @@ while(resultado = pattern.exec(string)){
                             <h1 id="test">test()</h1>
                         </div>
 
-                        <p>Diferentemente da primeira função (string.match), o valor da variável <code>resultado</code> será true ou false e a opção global
-                            "g" não funcionou, sou seja, não descobri uma forma de olhar as demais ocorrência, apenas a primeira.</p>
+                        <p>Diferentemente da primeira função (<code>string.match</code>), o valor da variável <code>resultado</code> será true ou false e a opção global
+                            <code>g</code> não funcionou, sou seja, não descobri uma forma de olhar as demais ocorrência, apenas a primeira.</p>
 
                         <div class="code">
                             <h6>JS</h6>
