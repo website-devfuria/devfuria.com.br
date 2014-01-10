@@ -1,0 +1,19 @@
+
+
+CRUD
+SELECT * FROM pet
+
+
+Read
+
+
+Update
+UPDATE pet SET birth = '1989-08-31' WHERE name = 'Bowser';
+
+
+Create
+INSERT INTO pet
+    -> VALUES ('Puffball','Diane','hamster','f','1999-03-30',NULL);
+
+Delete
+DELETE FROM pet;

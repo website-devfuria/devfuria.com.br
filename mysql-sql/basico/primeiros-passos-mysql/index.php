@@ -258,7 +258,7 @@ require "../../../core/boot.php";
                                         <span class="label label-default">http://dev.mysql.com/doc/refman/5.7/en/connecting-disconnecting.html</span>
                                     </a>
                                     <a href="http://dev.mysql.com/doc/refman/5.7/en/entering-queries.html" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading">Parte do manual na qual eu basei esta matéria</h4>
+                                        <h4 class="list-group-item-heading">Parte do manual  MySql (Referência)</h4>
                                         <span class="label label-default">http://dev.mysql.com/doc/refman/5.7/en/entering-queries.html</span>
                                     </a>
                                 </div>
