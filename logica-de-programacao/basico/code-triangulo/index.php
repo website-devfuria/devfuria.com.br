@@ -56,8 +56,8 @@ require "../../../core/boot.php";
                             <h1 id="triangulo">Revisitando o código "é triangulo"</h1>
                         </div>
 
-                        <p>Na matéria<a href="<?php echo LINKS_PATH ?>/logica-de-programacao/basico/exercicios-expressoes-condicionais/#05">
-                                (5 Exercícios de lógica de programação)</a>, o último exercício pede para identificarmos se os
+                        <p>O último exercício da matéria<a href="<?php echo LINKS_PATH ?>/logica-de-programacao/basico/exercicios-expressoes-condicionais/#05">
+                                (5 Exercícios de lógica de programação)</a> pede para identificarmos se os
                             valores passados formam um triângulo.</p>
 
                         <p>A utilização de <strong>funções</strong> para a solução do exercício "cai muito bem".</p>
@@ -80,10 +80,12 @@ require "../../../core/boot.php";
 </code></pre>
 
                         <p>Lembra que eu tinha proposto uma segunda solução?</p>
+                        
                         <p> E que não fazia muito sentido porque não estavamos utilizando <strong>funções</strong> e para
                             piorar o <code>die()</code> apareceu sujando nosso código?</p>
 
-                        <p>Abaixo, eu rescrevi o código como uma função, confira...</p>
+                        <p>Com o uso de funções, a solução porposta faz mais sentido. Abaixo, eu rescrevi o código como
+                            uma função, confira...</p>
 
                         <pre><code class="language-php">function eTriangulo($a, $b, $c) {
     if ($a > ($b + $c)) {
@@ -107,13 +109,11 @@ require "../../../core/boot.php";
 
 
                     </div>
-
                     <?php
                     $core->paginacao->link_ativo = "/logica-de-programacao/basico/code-triangulo/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>                    
-
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

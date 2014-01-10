@@ -140,7 +140,7 @@ require "../../../core/boot.php";
 echo somarDoisNumeros(5, 3);
 // print 8
 echo somarDoisNumeros(2, 4);
-// print 7
+// print 6
 
 </code></pre></div>
                     </div>
@@ -206,7 +206,7 @@ echo somarDoisNumeros(2, 4);
 console.log(somarDoisNumeros(5, 3));
 // print 8
 console.log(somarDoisNumeros(2, 4));
-// print 7
+// print 6
 
 </code></pre></div>
                     </div>
