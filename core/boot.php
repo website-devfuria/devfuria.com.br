@@ -113,6 +113,7 @@ $core->links[Core::SECAO_HTML] = array(
 $core->links[Core::SECAO_MYSQL] = array(
     LINKS_PATH . "/mysql-sql/basico/intro/" => "Banco de dados prá que?",
     LINKS_PATH . "/mysql-sql/basico/primeiros-passos-mysql/" => "Primeiros passos com MySql",
+    LINKS_PATH . "/mysql-sql/basico/criando-base-tabela/" => "Criando e populando uma tabela",
 );
 $core->links[Core::SECAO_ER] = array(
     LINKS_PATH . "/regexp/basico/intro/" => "Introdução",

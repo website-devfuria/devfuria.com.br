@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
+        $core->head->setTitle('Matéria onde criaremos nossa primeira tabela no MySql');
+        $core->head->setDescription('Aprenda a criar uma tabela no MySql e também veja um pouco sobre os comandos TRUNCATE, DROP TABLE e LOAD LOCAL DATA');
+        $core->head->setkeywords('create table; truncate; drop; load local data');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -28,9 +28,9 @@ require "../../../core/boot.php";
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Criando base e tabela</h1>
-
-                <p></p>
+                <h1>Criando e populando uma tabela</h1>
+                <p>Criaremos nossa primeira tabela via console no MySql e</p>
+                <p>também mostramos os comandos TRUNCATE, DROP, LOAD LOCAL DATA.</p>
             </div>
         </div>
 
@@ -54,7 +54,10 @@ require "../../../core/boot.php";
                                 <a href="#tabela">Criando a tabela</a>
                             </li>
                             <li>
-                                <a href="#comandos">Outros comandos</a>
+                                <a href="#comandos">Comandos úteis</a>
+                            </li>
+                            <li>
+                                <a href="#populando">Populando a tabela</a>
                             </li>
                         </ul>
                     </div>
@@ -194,7 +197,7 @@ data de óbito
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="comandos">Outros comandos</h1>
+                            <h1 id="comandos">Comandos úteis</h1>
                         </div>
 
 
@@ -231,8 +234,14 @@ data de óbito
                         <p>Provavelmete, você precisará desse comando para a seção seguinte...
 
 
-                        <h3>LOAD DATA LOCAL</h3>
+                    </div>
 
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="populando">Populando a tabela</h1>
+                        </div>
+                            
                         <p>Não está faltando alguma coisa nessa tabela? ...</p>
 
                         <p>Sim, os dados!</p>
@@ -275,9 +284,14 @@ Slim	Benny	snake	m	1996-04-29	\N
                         
                         <div class="bs-example ">
                             <img class="img-thumbnail" alt="### Resultado do comando SELECT * FROM pet " src="select-pet.png" />
-                        </div>                         
-
-                        <p>Na próxima matéria veremos como fazer o CRUD. Utilizaremos a tabela <code>pet</code>.</p>
+                        </div>
+                        
+                        <p>Se você conseguiu inserir os dados mas eles não ficaram igual ao meu exemplo limpe a tabela
+                            (<code>TRUNCATE TABLE pet;</code>)</p>
+                        
+                        <p>Se preferir peque o exemplo neste  <a href="https://gist.github.com/flaviomicheletti/8359890" title="link-externo">gist</a>.</p>
+                        
+                        <p>Na próxima matéria veremos como fazer o CRUD (continuaremos utilizando a tabela <strong>pet</strong>.</p>
                         
                     </div>
 
@@ -301,7 +315,7 @@ Slim	Benny	snake	m	1996-04-29	\N
                         </div>                    
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/mysql-sql/basico/primeiros-passos-mysql/";
+                    $core->paginacao->link_ativo = "/mysql-sql/basico/criando-base-tabela/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>                            
@@ -316,7 +330,7 @@ Slim	Benny	snake	m	1996-04-29	\N
                         <h1>MySql</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
-                        $core->lista->link_ativo = "/mysql-sql/basico/primeiros-passos-mysql/";
+                        $core->lista->link_ativo = "/mysql-sql/basico/criando-base-tabela/";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
