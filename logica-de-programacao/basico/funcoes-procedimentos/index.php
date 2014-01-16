@@ -71,7 +71,7 @@ require "../../../core/boot.php";
                         </div>
 
                         <p>Funções são uma seção nomeada de código. Em outra palavras, um pequeno (normalmente pequeno)
-                            trecho de código que pode ser chamado de diversos ponto do código</p>
+                            trecho de código que pode ser chamado de diversos ponto do código.</p>
 
                         <p>Quando o programador precisar executar um mesmo código (mesmo que ligeiramente diferente)
                             várias vezes ele, então, poderá utilizar-se de funções.</p>

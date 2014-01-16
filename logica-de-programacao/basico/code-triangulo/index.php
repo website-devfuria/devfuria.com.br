@@ -29,7 +29,7 @@ require "../../../core/boot.php";
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Code - Triângulo</h1>
-                <p>Código de exemplo, comentado ilustrando a utilização de funções</p>
+                <p>Código de exemplo ilustrando a utilização de funções</p>
             </div>
         </div>
 
@@ -60,12 +60,34 @@ require "../../../core/boot.php";
                                 (5 Exercícios de lógica de programação)</a> pede para identificarmos se os
                             valores passados formam um triângulo.</p>
 
+
                         <p>A utilização de <strong>funções</strong> para a solução do exercício "cai muito bem".</p>
 
-                        <p>Confira o resultado...</p>
+                        <h3>A primeira solução</h3>
+
+                        <p>O código abaixo é a primeira solução.</p>
+
+                        <div class="code">
+                            <h6>PHP</h6>
+                            <pre><code class="language-php">
+if ($a < ($b + $c)) {
+    if ($b < ($a + $c)) {
+        if ($c < ($a + $b)) {
+            echo true;
+        }
+    }
+}
+
+# senão ...
+echo false;</code></pre>
+                        </div>                        
 
 
-                        <pre><code class="language-php">function eTriangulo($a, $b, $c) {
+                        <p>...só que agora reescrita utilizando-se funções:</p>
+
+                        <div class="code">
+                            <h6>PHP</h6>
+                            <pre><code class="language-php">function eTriangulo($a, $b, $c) {
     if ($a < ($b + $c)) {
         if ($b < ($a + $c)) {
             if ($c < ($a + $b)) {
@@ -78,15 +100,42 @@ require "../../../core/boot.php";
     return false;
 }
 </code></pre>
+                        </div>                        
+
+
+                        <h3>A segunda solução </h3>
 
                         <p>Lembra que eu tinha proposto uma segunda solução?</p>
-                        
+
                         <p> E que não fazia muito sentido porque não estavamos utilizando <strong>funções</strong> e para
                             piorar o <code>die()</code> apareceu sujando nosso código?</p>
 
-                        <p>Com o uso de funções, a solução porposta faz mais sentido. Abaixo, eu rescrevi o código como
+                        <p>O código abaiso mostra como era a solução.</p>
+
+                        <div class="code">
+                            <h6>PHP</h6>
+                            <pre><code class="language-php">
+if ($a > ($b + $c)) {
+    echo false;
+    die();
+}
+if ($b > ($a + $c)) {
+    echo false;
+    die();
+}
+if ($c > ($a + $b)) {
+    echo false;
+    die();
+}
+
+echo true;</code></pre>
+                        </div>                        
+
+                        <p>Com o uso de funções, a solução proposta faz mais sentido. Abaixo, eu rescrevi o código como
                             uma função, confira...</p>
 
+                        <div class="code">
+                            <h6>PHP</h6>                        
                         <pre><code class="language-php">function eTriangulo($a, $b, $c) {
     if ($a > ($b + $c)) {
         return false;
@@ -101,6 +150,7 @@ require "../../../core/boot.php";
     return true;
 }
 </code></pre>
+                        </div>
 
                         <p>Nas próximas matérias, veremos o básico de OOP e TDD e continuaremos com nosso código sobre
                             triângulos.</p>
