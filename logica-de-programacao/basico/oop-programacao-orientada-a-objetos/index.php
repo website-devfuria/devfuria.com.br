@@ -1,0 +1,378 @@
+<?php
+/**
+ * Lógica
+ */
+/**
+ * Includes
+ */
+require "../../../core/boot.php";
+?>
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <?php
+        $core->head->setTitle('Matéria introdutória sobre TDD e Lógica de Programação');
+        $core->head->setDescription('Matéria que introduz o conceito e prática de TDD');
+        $core->head->setkeywords('tdd, aprendendo tddd, exercitando tdd, testes unitários, phpunit');
+        $core->head->setAuthor();
+        include BASE_PATH . VIEWS_PATH . "/head.php";
+        ?>
+    </head>
+    <body>
+
+        <?php
+        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
+        ?>
+
+
+        <!-- Título -->
+        <div class="bs-header" id="content">
+            <div class="container">
+                <h1>Vamos de TDD?</h1>
+                <p>Introdução ao Desenvolvimento Guiado por Testes</p>
+                <p>Vamos aprender logia de programação + TDD</p>
+            </div>
+        </div>
+
+        <!-- Linha abaixo do título -->
+        <div class="bs-old-docs">
+            <div class="container">
+                Flávio Micheletti, atualizado em <span class="label label-success">19/12/2013</span>, escrito em <span class="label label-info">19/12/2013</span>.
+            </div>
+        </div>
+
+        <!-- Matéria -->
+        <div class="container bs-docs-container">
+            <div class="row">
+
+                <!-- navegação lateral esquerdo -->
+                <div class="col-md-3">
+                    <div class="bs-sidebar hidden-print" role="complementary">
+                        <ul class="nav bs-sidenav">
+                            <li><a href="#intro">TDD junto com lógica ???</a></li>
+                            <li><a href="#tdd">O TDD de Kent Bech</a></li>
+                            <li><a href="#ferramentas">Ferramentas para teste unitários</a></li>
+                            <li><a href="#exerc">Exercício</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Corpo da matéria -->
+                <div class="col-md-9" role="main">
+
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="intro">TDD junto com lógica? Assim tão cedo?</h1>
+                        </div> 
+
+                        <p>
+                            Estou muito feliz de poder introduzir a técnica de TDD no curso de lógica e com isso trazer
+                            (bem cedo) a você um assunto que muitos profissionais tardaram por aprender. Confesso que
+                            esse também foi o meu caso.
+                        </p>
+                        <p>
+                            Eu não quero "vender o peixe" do TDD para você, mas me sinto obrigado a mostrar algumas boas
+                            razões do "por quê" é interessante utilizar o TDD. Vou fazer isso explicando, brevemente, como
+                            o TDD surgiu na minha vida.
+                        </p>
+                        <p>
+                            TDD também é assunto sobre testes unitários (obviamente). A primeira vez que eu ouvi sobre
+                            testes unitários eu "torci o nariz". Ora, imagine que você acabou de criar uma função e agora
+                            resolva escrever um teste para ela com o objetivo de ter certeza de que a função está funcionando
+                            corretamente. É suspeito quando o programador escreve teste para seu prórpio codigo. Essa
+                            é a minha opnião. Você não acharia suspeito? Talvez seja por isso que existem os "testadores",
+                            aqueles caras que testam a aplicação que alguém codificou. Isso melhora um pouco o quadro
+                            mas eu ainda continuo com a "pulga atrás da orelha".
+                        </p>
+                        <p>
+                            Por essas e outras, eu nunca dei muita atenção para testes unitários. E se você quiser saber,
+                            ainda hoje eu mantenho a mesma opnião. Acho um tanto quanto inútil testes escritos depois que
+                            o código está pronto. Essa atitude me ajudou muito, pois eu era obrigado a rever, rever, rever, rever e rever
+                            muito os meus códigos e, modestia a parte, dificilmente eu inseria um bug. O que me fez crer
+                            menos ainda em testes unitários.
+                        </p>
+                        <p>
+                            Um belo dia me deparei com a sigla TDD e fui buscar seu significado: "testes unitários realizados
+                            ANTES da codificação", fiquei intrigado mas não dei a devida atenção porque já tinha minha
+                            opnião formada sobre testes unitários. Cometi um erro, estava confundindo TDD com Testes unitários,
+                            mas só fui descobrir isso com ajuda de um amigo.
+                        </p>
+                        <p>
+                            Um outro belo dia, esse meu amigo (Marcus Vinícius, evangelista PHP) apareceu lá na escritório
+                            e me mostrou a técnica. De forma bem simples, prática e direta ele disse:
+                        </p>
+                        <p>
+                        <ul class="list-unstyled">
+                            <li>1. Pense melhor no que você quer fazer</li>
+                            <li>2. Escreva um teste imaginando que sua aplicação já esteja funcionando</li>
+                            <li>3. Se você rodar os testes, verá que eles falharam (luz vermelha).</li>
+                            <li>4. Então, agora escreva sua aplicação...</li>
+                        </ul>
+                        </p>
+                        <p>
+                            Eu, com sou "apressadinho", já fui logo implementando a função e o (Santo) Marcus me iluminou:
+                        </p>
+                        <p>
+                            <strong>
+                                "Negativo, codifique apenas o mínimo necessário para o teste passar."
+                            </strong>
+                        </p>
+                        <p>
+                        <ul class="list-unstyled">
+                            <li>5. Rode o teste, luz verde? sim, então...</li>
+                            <li>6. Amplie seu teste para outras possibilidades</li>
+                            <li>7. Rode os testes, luz vermelha?</li>
+                            <li>8. Codifique até que a luz fique verde</li>
+                        </ul>                            
+                        </p>
+                        <p>
+                            Neste ponto, eu o interrompi com um palavrão... ril, minha "ficha caiu".
+                        </p>
+                        <p><strong>Escrever o teste antes muda tudo!</strong></p>
+                        <p>
+                            O TDD agrega um verdadeiro valor aos testes unitários. As suspeitas de que os testes possam
+                            estar viciados ou mesmo falhos caem por água abaixo. Eu continuo não acreditando nos testes
+                            escritos "depois", mas os testes escritos "antes" fazem parte do meu dia a dia como programador.
+                        </p>
+                        <p>
+                            Importante dizer que eu não sou especialista em TDD. Eu me inspirei em incluir o TDD aqui
+                            no curso de Lógica por duas razões:
+                        <ol>
+                            <li>Há pouco material sobre o assunto</li>
+                            <li>Eu gostaria de ter aprendido sobre TDD mais cedo</li>
+                        </ol>
+                        </p>
+                        <p>
+                            Pensando nisso, surgiu a seguinte pergunta: <strong>Em que momento do tempo o programador deve aprender TDD?</strong>
+                        </p>
+                        <p>
+                            Eu estou sugerindo que o quanto antes melhor, de preferência quando aprendemos lógica de programação.
+                        </p>
+                        <p>
+                            Espero que a "ficha caia" para você também.
+                        </p>
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="tdd">O TDD de Kent Bech</h1>
+                        </div>                         
+
+                        <p>Acrônimo para Test Driven Development (desenvolvimento guiado por testes).</p>
+
+                        <p>Com vocês o culpado pelo surgimento da técnica... Kent Bech!</p>
+
+                        <blockquote>
+                            <p>
+                                <strong>Código limpo que funcione</strong>, [...] é o objetivo do TDD. Código limpo que
+                                funciona é uma meta valiosa por um bocado de razões.
+                            </p>
+                            <ul>
+                                <li>É uma forma previsível de desenvolver. Você sabe quando acabou sem ter que se preocupar com uma longa trilha de erros.</li>
+                                <li>Dá a você uma chance de aprender todas as lições que o código tem para ensinar. Se você fizer às pressas a primeira coisa que pensar, então nunca terá tempo para pensar em uma segunda coisa melhor.</li>
+                                <li>Melhora as vidas dos usuários de seu software</li>
+                                <li>Permite que seus colegas de equipe contem com você, e você com eles.</li>
+                                <li>É bom escrevê-los</li>
+                            </ul>
+                            <p>
+                                Mas como obtemos código limpo que funciona? Muitas forças nos desviam do código limpo, ou
+                                mesmo de código que funciona. Sem pedir conselhos aos nossos medos, aqui está o que fazemos:
+                                conduzimos o desenvolvimento com testes automatizados, um estilo de desenvolvimento chamado
+                                Desenvolviemnto Guiado por Testes. No TDD:
+                            </p>
+                            <ul>
+                                <li>Escrevemos código novo apenas se um teste automatizado falhou</li>
+                                <li>Eliminamos duplicação</li>
+                            </ul>
+                            <p>
+                                Essa são duas regras simples, mas geram um complexo comportamento individual e de grupo com
+                                implicações técnicas, tais como:
+                            </p>
+                            <ul>
+                                <li>Devemos projetar organicamente o código, executando e fornecendo feedback entre as decisões.</li>
+                                <li>Devemos escrever nossos prórpios testes, pois não podemos esperar 20 vezes por dia para outra pessoa escrever um teste.</li>
+                                <li>Nosso ambiente de desenvolviemnto deve fornecer resposta rápida a pequenas mudanças.</li>
+                                <li>Nosso projeto deve consistir em muitos componentes altamente coesos e fracamente acoplados para tornar os testes fáceis</li>
+                            </ul>
+                            <p>
+                                As duas regras implicam em uma ordem para as tarefas de programação.
+                            </p>
+                            <ol>
+                                <li><strong>Vermelho</strong> - Escrever um pequeno teste que não funcione e que talvez nem mesmo compile inicialmente.</li>
+                                <li><strong>Verde</strong> - Fazer rapidamente o teste funcionar, mesmo cometendo alguns pecados necessário no processo.</li>
+                                <li><strong>Refatorar</strong> - Eliminar todas as duplicatas criadas apenas para que o teste funione.</li>
+                            </ol>
+                            <strong>Vermelho/verde/refatorar - o mantra do TDD</strong>
+                            <p>
+                                <small>Fonte: Kent Bech no prefácio de seu livro "TDD Desenvolvimento Guiado por Testes"</small>
+                            </p>
+                        </blockquote>
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### Ciclo do TDD" src="tdd-conceito.jpg">
+                            <p>Eis o mantra (ciclo) do TDD</p>
+                        </div>   
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="ferramentas">Ferramentas para teste unitários</h1>
+                        </div>
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3>PHPUnit</h3>
+                            </div>
+
+                            <p> Para PHP, temos o <strong>PHPUnit</strong>, ferramenta desenvolvida por Sebastian Bergmann.</p>
+                            <p>É de fácil instalação, siga os passos neste pequeno guia:</p>
+                            <ul>
+                                <li><a href="https://github.com/flaviomicheletti/linux-cookbook-install/blob/master/php-unit/centos.md" title="link-externo">Como instalar PHPUnit no Centos</a></li>
+                                <li><a href="https://github.com/flaviomicheletti/linux-cookbook-install/blob/master/php-unit/fedora.md" title="link-externo">Como instalar PHPUnit no Fedora</a></li>
+                            </ul>
+
+                            <p>Para testar a instalação digite no terminal do linux:</p>
+
+                            <pre><code  class="no-highlight">phpunit --version</code></pre>
+
+                            <p>A versão instalada é mostrada!</p>
+
+                            <p>Para executar digite:</p>
+
+                            <pre><code  class="no-highlight">phpunit SuaClasseTest.php</code></pre>
+
+                            <p>
+                                Veja um exemplo neste Gist 
+                                <a href="https://gist.github.com/flaviomicheletti/8041173"  title="link-externo">https://gist.github.com/flaviomicheletti/8041173</a>
+                            <p>
+
+                        </div>
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3>QUnit</h3>
+                            </div>
+
+                            <p>
+                                Para javascript, temos uma boa opção (principalmente por ser fácil de usar) é o QUnit, do
+                                mesmo criador do JQuery (John Resig).
+                            </p>
+
+                            <p>Crie um HTML e um JS como o mostrado abaixo:</p>
+
+                            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;QUnit Example&lt;/title&gt;
+        &lt;link rel="stylesheet" href="/resources/qunit.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;div id="qunit"&gt;&lt;/div&gt;
+        &lt;div id="qunit-fixture"&gt;&lt;/div&gt;
+
+        &lt;script src="/resources/qunit.js"&gt;&lt;/script&gt;
+        &lt;script src="/resources/tests.js"&gt;&lt;/script&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre> 
+                            <pre><code>test( "hello test", function() {
+    ok( 1 == "1", "Passed!" );
+});</code></pre>                 
+                            <p>
+                                Abra o arquivo HMTML no navegador para ver o resultado.
+                            </p>
+                            <div class="bs-example">
+                                <img class="img-rounded" alt="### Resultado do QUnit" src="resultado-qunit.png">
+                            </div>                            
+                        </div>
+                    </div>
+
+
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="exerc">Exercício</h1>
+                        </div>
+
+                        <p>Coloque o PHPUnit e o QUnit para funcionarem.</p>
+                        <p>Utilizaremos eles na próxima matéria</p>
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            </div>
+
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Livros</h3>
+                                </div>
+                                <div class="panel-body">
+
+                                    <div class="media">
+                                        <a class="pull-left">
+                                            <img class="media-object" src="tdd-livro.jpg" alt="### Imagem do livro 'TDD'">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">TDD Desenvolvimento Guiado por Testes</h4>
+                                            <p class="list-group-item-text">Kent Bech, Editora bookman</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Internet</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="list-group">
+                                        <a href="http://phpunit.de/manual/current/pt_br/index.html" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">Manual do PHPUnit (em português)</h4>
+                                            <!--<p class="list-group-item-text">Está aqui não é sugerida, é obrigatória.</p>-->
+                                            <span class="label label-default">http://phpunit.de/manual/current/pt_br/index.html</span>
+                                        </a>
+                                    </div>
+                                    <div class="list-group">
+                                        <a href="http://qunitjs.com/" class="list-group-item" title="link-externo">
+                                            <h4 class="list-group-item-heading">Site do QUnit</h4>
+                                            <!--<p class="list-group-item-text">Está aqui não é sugerida, é obrigatória.</p>-->
+                                            <span class="label label-default">http://qunitjs.com/</span>
+                                        </a>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>                        
+                    </div>                    
+                    <?php
+                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/tdd/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>                         
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+
+        </div><!-- Matéria -->
+
+        <footer class="bs-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Lógica de Programação</h1>
+                        <?php
+                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
+                        $core->lista->link_ativo = "/logica-de-programacao/basico/tdd/";
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+    </body>
+</html>
