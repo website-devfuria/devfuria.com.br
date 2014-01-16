@@ -287,7 +287,7 @@ Slim	Benny	snake	m	1996-04-29	\N
                         </div>
                         
                         <p>Se você conseguiu inserir os dados mas eles não ficaram igual ao meu exemplo limpe a tabela
-                            (<code>TRUNCATE TABLE pet;</code>)</p>
+                            (<code>TRUNCATE TABLE pet;</code>) e tente denovo.</p>
                         
                         <p>Se preferir peque o exemplo neste  <a href="https://gist.github.com/flaviomicheletti/8359890" title="link-externo">gist</a>.</p>
                         
