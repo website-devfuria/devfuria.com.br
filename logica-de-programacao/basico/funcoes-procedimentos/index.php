@@ -237,32 +237,31 @@ console.log(somarDoisNumeros(2, 4));
                                 </div>
                             </div>
                         </div>  
-                        
+                    </div>
+                    <?php
+                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+
+        </div><!-- Matéria -->
+
+        <footer class="bs-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Lógica de Programação</h1>
                         <?php
-                        $core->paginacao->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
+                        $core->lista->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
-
-                    </div><!-- Corpo da matéria -->
-                </div><!-- row -->
-
-            </div><!-- Matéria -->
-
-            <footer class="bs-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1>Lógica de Programação</h1>
-                            <?php
-                            $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                            $core->lista->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
-                            include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                            ?>
-                        </div>
                     </div>
                 </div>
-            </footer>
-            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+            </div>
+        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

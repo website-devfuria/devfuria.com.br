@@ -75,7 +75,6 @@ require "../../../core/boot.php";
                 <!-- Corpo da matéria -->
                 <div class="col-md-9" role="main">
 
-
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">Fluxo de controle</h1>
@@ -126,7 +125,6 @@ require "../../../core/boot.php";
                         </div>
                     </div>
 
-
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="diagram">Diagrama de sintaxe</h1>
@@ -169,56 +167,57 @@ require "../../../core/boot.php";
     ... código
 }</code></pre>                    
 
+                    </div>
+                    
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="simpl">Simplificando a expressão</h1>
+                        </div>
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h1 id="simpl">Simplificando a expressão</h1>
-                            </div>
 
+                        <h3>true</h3>
+                        <p>Os códigos abaixo são equivalentes</p>
 
-                            <h3>true</h3>
-                            <p>Os códigos abaixo são equivalentes</p>
-
-                            <pre><code>// true completo
+                        <pre><code>// true completo
 if ($variavel == true) {
     ... executar código
 }</code></pre>
 
-                            <pre><code>// true simplificado
+                        <pre><code>// true simplificado
 if ($variavel) {
     ... executar código
 }</code></pre>
 
-                            <h3>false</h3>
+                        <h3>false</h3>
 
-                            <p>Da mesma forma, os código abaixo também são equivalentes</p>
+                        <p>Da mesma forma, os código abaixo também são equivalentes</p>
 
-                            <pre><code>// false completo
+                        <pre><code>// false completo
 if ($variavel == false) {
     ... executar código
 }</code></pre>
 
-                            <pre><code>// false simplificado
+                        <pre><code>// false simplificado
 if ( ! $variavel) {
     ... executar código
 }</code></pre>
-                            <p>Há programadores que detestam a versão simplificada, eu gosto!</p>
-                            <p>É só uma questão de estilo.</p>
+                        <p>Há programadores que detestam a versão simplificada, eu gosto!</p>
+                        <p>É só uma questão de estilo.</p>
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="elseif">else if</h1>
                         </div>
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h1 id="elseif">else if</h1>
-                            </div>
+                        <p>O <strong>bloco else</strong> não precisa ser executado sempre que a expressão no <strong>bloco if</strong> for <code>false</code>.</p>
+                        <p>O bloco else poderá conter um expressão também.</p>
+                        <p>
+                            No exemplo abaixo, se o <code>if</code> for falso e o <code>else</code> verdadeiro então
+                            o bloco <code>else</code> será executado
+                        </p>
 
-                            <p>O <strong>bloco else</strong> não precisa ser executado sempre que a expressão no <strong>bloco if</strong> for <code>false</code>.</p>
-                            <p>O bloco else poderá conter um expressão também.</p>
-                            <p>
-                                No exemplo abaixo, se o <code>if</code> for falso e o <code>else</code> verdadeiro então
-                                o bloco <code>else</code> será executado
-                            </p>
-
-                            <pre><code>if (expressão-condicional) {
+                        <pre><code>if (expressão-condicional) {
     ... executar código
     ... executar código
     ... executar código
@@ -228,9 +227,9 @@ if ( ! $variavel) {
     ... executar código
 }</code></pre>
 
-                            <p>Abaixo vemos o código equivalente:</p>
+                        <p>Abaixo vemos o código equivalente:</p>
 
-                            <pre><code>if (expressão-condicional) {
+                        <pre><code>if (expressão-condicional) {
     ... executar código
     ... executar código
     ... executar código
@@ -242,16 +241,16 @@ if ( ! $variavel) {
     }
 }</code></pre>
 
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="terceiro-else">if - else if - else</h1>
                         </div>
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h1 id="terceiro-else">if - else if - else</h1>
-                            </div>
+                        <p>Uma outra variação seria incluir um terceiro bloco else</p>
 
-                            <p>Uma outra variação seria incluir um terceiro bloco else</p>
-
-                            <pre><code>if (expressão-condicional) {
+                        <pre><code>if (expressão-condicional) {
     ... executar código
     ... executar código
     ... executar código
@@ -265,78 +264,77 @@ if ( ! $variavel) {
     ... executar código
 }</em></code></pre>
 
-                            <p>
-                                Neste caso, o bloco <code>else</code> apenas seria executado se o bloco<code> if</code>
-                                e bloco <code>else if</code> fossem <code>false</code>.
-                            </p>
+                        <p>
+                            Neste caso, o bloco <code>else</code> apenas seria executado se o bloco<code> if</code>
+                            e bloco <code>else if</code> fossem <code>false</code>.
+                        </p>
+                    </div>
 
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                        </div>
 
-                            <div class="bs-docs-section">
-                                <div class="page-header">
-                                    <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="http://www.php.net/manual/pt_BR/language.control-structures.php" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manual do PHP</h4>
+                                        <p class="list-group-item-text">...falando sobre estruturas de controle</p>
+                                        <span class="label label-default">http://www.php.net/manual/pt_BR/language.control-structures.php</span>
+                                    </a>
                                 </div>
-
-                                <div class="panel panel-info">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Internet</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="list-group">
-                                            <a href="http://www.php.net/manual/pt_BR/language.control-structures.php" class="list-group-item" title="link-externo">
-                                                <h4 class="list-group-item-heading">Manual do PHP</h4>
-                                                <p class="list-group-item-text">...falando sobre estruturas de controle</p>
-                                                <span class="label label-default">http://www.php.net/manual/pt_BR/language.control-structures.php</span>
-                                            </a>
-                                        </div>
-                                        <div class="list-group">
-                                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" class="list-group-item" title="link-externo">
-                                                <h4 class="list-group-item-heading">Manual do Javascript</h4>
-                                                <p class="list-group-item-text">... falando sobre a condicional if-else</p>
-                                                <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</span>
-                                            </a>
-                                        </div>
-                                        <div class="list-group">
-                                            <a href="http://ifelse.com/#PHP" class="list-group-item" title="link-externo">
-                                                <h4 class="list-group-item-heading">http://ifelse.com/</h4>
-                                                <p class="list-group-item-text">Link legal que mostra o if-else em diversas linguagens</p>
-                                                <span class="label label-default">http://ifelse.com/</span>
-                                            </a>
-                                        </div>
-                                        <div class="list-group">
-                                            <a href="" class="list-group-item" title="link-externo">
-                                                <h4 class="list-group-item-heading"></h4>
-                                                <p class="list-group-item-text"></p>
-                                                <span class="label label-default"></span>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="list-group">
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manual do Javascript</h4>
+                                        <p class="list-group-item-text">... falando sobre a condicional if-else</p>
+                                        <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</span>
+                                    </a>
+                                </div>
+                                <div class="list-group">
+                                    <a href="http://ifelse.com/#PHP" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">http://ifelse.com/</h4>
+                                        <p class="list-group-item-text">Link legal que mostra o if-else em diversas linguagens</p>
+                                        <span class="label label-default">http://ifelse.com/</span>
+                                    </a>
+                                </div>
+                                <div class="list-group">
+                                    <a href="" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading"></h4>
+                                        <p class="list-group-item-text"></p>
+                                        <span class="label label-default"></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </div>                        
+                    <?php
+                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/if-else/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                    ?>
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+
+        </div><!-- Matéria -->
+
+        <footer class="bs-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Lógica de Programação</h1>
                         <?php
-                        $core->paginacao->link_ativo = "/logica-de-programacao/basico/if-else/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
+                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
+                        $core->lista->link_ativo = "/logica-de-programacao/basico/if-else/";
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
-                    </div><!-- Corpo da matéria -->
-                </div><!-- row -->
-
-            </div><!-- Matéria -->
-
-            <footer class="bs-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1>Lógica de Programação</h1>
-                            <?php
-                            $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                            $core->lista->link_ativo = "/logica-de-programacao/basico/if-else/";
-                            include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                            ?>
-                        </div>
                     </div>
                 </div>
-            </footer>
-            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+            </div>
+        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>
