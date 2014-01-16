@@ -31,7 +31,7 @@ require "../../../core/boot.php";
             <div class="container">
                 <h1>Vamos de TDD?</h1>
                 <p>Introdução ao Desenvolvimento Guiado por Testes</p>
-                <p>Vamos aprender logia de programação + TDD</p>
+                <p>Vamos aprender logica de programação + TDD</p>
             </div>
         </div>
 
