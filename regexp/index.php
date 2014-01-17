@@ -56,7 +56,7 @@ require "../core/boot.php";
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>HTML & CSS</h1>
+                        <h1>RegExp</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_ER);
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
