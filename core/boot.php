@@ -77,8 +77,8 @@ $core->secoes = array(
     "js" => "Javascript",
     "php" => "PHP",
     "html-css" => "HTML & CSS",
-    "logica" => "Lógica de Programação",
-    "mysql" => "MySql & SQL",
+    "logica-de-programacao" => "Lógica de Programação",
+    "mysql-sql" => "MySql & SQL",
     "regexp" => "RegExp"
 );
 $core->links[Core::SECAO_JS] = array(

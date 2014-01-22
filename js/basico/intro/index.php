@@ -293,27 +293,6 @@ element.onclick = function() {
                                 </div>
                             </div>
 
-                            <div class="panel panel-info">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Internet</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="list-group">
-                                        <a href="http://phpunit.de/manual/current/pt_br/index.html" class="list-group-item" title="link-externo">
-                                            <h4 class="list-group-item-heading">Manual do PHPUnit (em português)</h4>
-                                            <!--<p class="list-group-item-text">Está aqui não é sugerida, é obrigatória.</p>-->
-                                            <span class="label label-default">http://phpunit.de/manual/current/pt_br/index.html</span>
-                                        </a>
-                                    </div>
-                                    <div class="list-group">
-                                        <a href="http://qunitjs.com/" class="list-group-item" title="link-externo">
-                                            <h4 class="list-group-item-heading">Site do QUnit</h4>
-                                            <!--<p class="list-group-item-text">Está aqui não é sugerida, é obrigatória.</p>-->
-                                            <span class="label label-default">http://qunitjs.com/</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <?php

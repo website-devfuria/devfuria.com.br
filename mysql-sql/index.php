@@ -45,6 +45,7 @@ require "../core/boot.php";
                 <h1>Mysql & SQL<small></small></h1>
                 <p class="lead">Curso de Mysql e SQL</p>
                 <p>Eu estava na dúvida se fazia um curso apenas de SQL ou se envolvia um Banco de Dados.</p>
+                
                 <p>É certo que a SQL é um padrão (ou pelo menos deveria ser) e que indepênde de banco de dados, mas por outro lado, como aprender SQL sem ao menos um banco de dados?</p>
 
                 <p>Minha escolha pelo MySql é óbvia: é um DB "pau para toda obra", é o companheiro inseparável do PHP e é muito fácil começar por ele.</p>

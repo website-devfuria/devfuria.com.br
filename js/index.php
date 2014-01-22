@@ -46,7 +46,7 @@ require "../core/boot.php";
                 <p>JS foi (talvez ainda seja) uma linguagem sempre tida como secundária.</p>
                 <p>Eu, quando comecei a programar em meados de 2007, fui apresentado ao JS como sendo um mal necessário.</p>
                 <p>Como bom aprendiz, acreditei nessa palavras tolas e por muito tempo evitei o JS.</p> 
-                <p>Em dado momento, quase como um passe de magica eu comecei a me encantar com a linguagem.</p>
+                <p>Em dado momento, quase como um passe de mágica eu comecei a me encantar com a linguagem.</p>
                 <p>E, se pudesse voltar ao passado, jamais teria cometido a loucura de ignorá-la.</p>
                 <p>Seja bem vindo curso e espero que você também se apaixone pelo JS.</p>
             </div>

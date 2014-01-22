@@ -11,8 +11,8 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Antes de programar em JS veja esta mateŕia');
-        $core->head->setDescription('Veremos Separações de interesses (separation of concerns), ondo colocar o JS e uma rápida pincelada em OOP, FIREBUG e a questão da segurança!.');
+        $core->head->setTitle('Antes de programar em JS veja esta matéria');
+        $core->head->setDescription('Veremos Separações de Interesses (separation of concerns), onde colocar o JS e uma rápida pincelada em OOP, FIREBUG e a questão da segurança!.');
         $core->head->setkeywords('separação de interesses, oop, javascript orientado a objetos, firebug, javascript segurança');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -30,7 +30,7 @@ require "../../../core/boot.php";
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Preparando o terreno</h1>
-                <p>Veremos Separações de interesses (separation of concerns), ondo colocar o JS e uma rápida pincelada
+                <p>Veremos Separações de Interesses (separation of concerns), onde colocar o JS e uma rápida pincelada
                     em OOP, FIREBUG e a questão da segurança!.
                 </p>
             </div>

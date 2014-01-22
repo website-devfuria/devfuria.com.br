@@ -39,8 +39,22 @@ require "../core/boot.php";
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
                 <h1>Lógica de programação<small></small></h1>
-                <p class="lead">Curso de Lógica de programação</p>
-                <p>Falar sobre o curso!</p>
+                <p class="lead">Curso de Lógica de programação com TDD e OOP</p>
+                <p>O curso de lógica era apenas uma matéria no meio do curso de PHP (coitado)</p>
+                <p>Com a inclusão do curso de JS eu me senti obrigado e falar de lógica de um modo geral.</p>
+                <p>Então, desmenbrei a matéria da seção PHP e nasceu o curso de lógica.</p>
+                <p>Refazendo alguns exercícios de lógica eu percebi que poderiar aplicar a técnica de TDD.</p>
+                <p>Mas antes de falar sobre TDD, somos obrigados a falar de OOP e</p>
+                <p>antes de falar de OOP sobres obrigado a falar de funções.</p>
+                <p>O curso está organizado dessa forma:</p>
+                <ul>
+                    <li>inicia com alguns exercícios para quebrar o gelo,</li>
+                    <li>depois aprendemos sobre funções,</li>
+                    <li>na sequência OOP</li>
+                    <li>e finalmente TDD</li>
+                </ul>
+                <p>Aí o "bicho pega"</p>
+
             </div>
         </main>
 
