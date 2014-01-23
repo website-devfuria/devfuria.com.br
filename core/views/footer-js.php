@@ -6,3 +6,7 @@
         <script src="<?php echo LINKS_PATH; ?>/core/highlight/highlight.pack.js"></script>
         <script src="<?php echo LINKS_PATH; ?>/core/assets/js/application.js"></script>
         <script src="<?php echo LINKS_PATH; ?>/core/core.js"></script>
+
+        <?php if (GANALYTICS_ON): ?>
+            <script src="<?php echo LINKS_PATH; ?>/core/analytics.js"></script>
+        <?php endif; ?>
