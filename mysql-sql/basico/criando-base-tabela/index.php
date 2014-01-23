@@ -242,19 +242,18 @@ data de óbito
                             <h1 id="populando">Populando a tabela</h1>
                         </div>
                             
-                        <p>Não está faltando alguma coisa nessa tabela? ...</p>
+                        <p>Não está faltando alguma coisa nessa tabela?</p>
 
                         <p>Sim, os dados!</p>
 
-                        <p>Legal, então vamos inerir um a um... não mesmo, vamos inserir isso rapidamente.</p>
+                        <p>Legal, então vamos inserir um a um... não mesmo, vamos inserir isso rapidamente.</p>
 
                         <p> Há um comando que lê um arquivo de texto separado por tabulações (tab) e insere os dados
                             na tabela para a gente, é o seguinte </p>
 
                         <pre><code class="no-highlight">LOAD DATA LOCAL INFILE '/caminho/seu-arquivo' INTO TABLE nome-da-tabela;</code></pre>
 
-                        <p>O conteúdo do arquivo <code>pet.txt</code> se parece com o seguinte:</p>
-
+                        <p>Vamos criar um arquivo chamado <code>pet.txt</code>. Seu conteúdo se parece com o seguinte:</p>
 
                         <div class="code">
                             <h6>pet.txt</h6>                        
