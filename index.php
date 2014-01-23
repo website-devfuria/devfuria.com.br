@@ -122,7 +122,7 @@ require "core/boot.php";
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>MySql</h1>
+                        <h1>MySql & SQL</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";

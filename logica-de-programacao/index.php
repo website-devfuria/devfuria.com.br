@@ -11,8 +11,8 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Lógica de programação');
-        $core->head->setDescription('Aprendendo Lógica de programação');
+        $core->head->setTitle('Lógica de Programação');
+        $core->head->setDescription('Aprendendo Lógica de Programação');
         $core->head->setkeywords("lógica básico; lógica de programação; lógica para iniciantes; " .
             "raciocio lógico; algoritmo; lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; "
         );
@@ -38,8 +38,8 @@ require "../core/boot.php";
         <!-- Page content of course! -->
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
-                <h1>Lógica de programação<small></small></h1>
-                <p class="lead">Curso de Lógica de programação (com TDD e OOP)</p>
+                <h1>Lógica de Programação<small></small></h1>
+                <p class="lead">Curso de Lógica de Programação (com TDD e OOP)</p>
                 <p>O curso de lógica era apenas uma matéria no meio do curso de PHP (coitado)</p>
                 <p>Com a inclusão do curso de JS eu me senti obrigado e falar de lógica de um modo geral.</p>
                 <p>Então, desmenbrei a matéria da seção PHP e nasceu o curso de lógica.</p>
@@ -62,7 +62,7 @@ require "../core/boot.php";
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Lógica de programação</h1>
+                        <h1>Lógica de Programação</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_LOG);
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
