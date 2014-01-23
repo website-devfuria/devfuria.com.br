@@ -43,18 +43,26 @@ require "../core/boot.php";
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
                 <h1>Mysql & SQL<small></small></h1>
-                <p class="lead">Curso de Mysql e SQL</p>
+                
+                <p class="lead">Curso de SQL através do MySql</p>
+                
                 <p>Eu estava na dúvida se fazia um curso apenas de SQL ou se envolvia um Banco de Dados.</p>
                 
-                <p>É certo que a SQL é um padrão (ou pelo menos deveria ser) e que indepênde de banco de dados, mas por outro lado, como aprender SQL sem ao menos um banco de dados?</p>
+                <p>É certo que a SQL é um padrão (ou pelo menos deveria ser) e que indepênde de banco de dados, mas por outro lado,</p>
+                
+                <p><strong>como aprender SQL sem ao menos um banco de dados?</strong></p>
 
                 <p>Minha escolha pelo MySql é óbvia: é um DB "pau para toda obra", é o companheiro inseparável do PHP e é muito fácil começar por ele.</p>
 
                 <p><strong>Se o curso é sobre SQL porque chama-se Mysql?</strong></p>
 
-                <p>É porque eu não gostaria que alguém que estivesse procurando por SQL, entra-se no curso achando que vai aprender apenas SQL e na verdade irá aprender SQL juntamente com o MySql. Pode parecer bobagem mas eu quis tomar esse cuidado.</p>
+                <p>É porque eu não gostaria que alguém que estivesse procurando por SQL, </p>
+                
+                <p>entra-se no curso achando que vai aprender apenas SQL e na verdade irá aprender SQL juntamente com o MySql.</p>
+                
+                <p>Pode parecer bobagem mas eu quis tomar esse cuidado.</p>
 
-                <p>Esse é um curso de SQL através do MySql.</p>
+                <p>Seja bem vindo ao curso!</p>
             </div>
         </main>
 

@@ -45,7 +45,7 @@ require "../core/boot.php";
                 <p>O curso de PHP foi o primeiro a aparecer, ele "abriu" o site devfuria.</p>
                 <p>Este curso não pretende ser uma referência a linguagem PHP, pois o manual do PHP já cumpre com esse papel.</p>
                 <p>Eu idealizei (como todos os demais cursos) para ser uma experiência prática e de vez em quando divertida.</p>
-                <p>Seja bom vindo ao curso!</p>
+                <p>Seja bem vindo ao curso!</p>
             </div>
         </main>
 

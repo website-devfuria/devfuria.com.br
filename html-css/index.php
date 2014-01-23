@@ -52,7 +52,7 @@ require "../core/boot.php";
                 <p>Meu conselho é: <strong>se esforce mais com eles para se esforçar menos com as línguagens de servidor e cliente</strong></p>
                 <p>Outra coisa: não caia na besteria de achar que eles são apenas para os designers, nada disso!</p>
                 <p>Desenvolvedor web que não sabe HTML e CSS não é desenvolvedor web.</p>
-                <p>Seja bem vindo ao curos!</p>
+                <p>Seja bem vindo ao curso!</p>
             </div>
         </main>
 

@@ -39,7 +39,7 @@ require "../core/boot.php";
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
                 <h1>Lógica de programação<small></small></h1>
-                <p class="lead">Curso de Lógica de programação com TDD e OOP</p>
+                <p class="lead">Curso de Lógica de programação (com TDD e OOP)</p>
                 <p>O curso de lógica era apenas uma matéria no meio do curso de PHP (coitado)</p>
                 <p>Com a inclusão do curso de JS eu me senti obrigado e falar de lógica de um modo geral.</p>
                 <p>Então, desmenbrei a matéria da seção PHP e nasceu o curso de lógica.</p>
@@ -50,11 +50,11 @@ require "../core/boot.php";
                 <ul>
                     <li>inicia com alguns exercícios para quebrar o gelo,</li>
                     <li>depois aprendemos sobre funções,</li>
-                    <li>na sequência OOP</li>
-                    <li>e finalmente TDD</li>
+                    <li>na sequência aprendemos o básico (do básico) sobre OOP</li>
+                    <li>e finalmente TDD.</li>
                 </ul>
                 <p>Aí o "bicho pega"</p>
-
+                <p>Seja bem vindo ao curso!</p>
             </div>
         </main>
 

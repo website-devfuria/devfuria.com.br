@@ -48,7 +48,7 @@ require "../core/boot.php";
                 <p>Por outro lado, meu objetivo é facilitar o aprendizado das ER, pois o assunto ja é espinhoso... logo o aprendizado deve ser facilitado.</p>
                 <p>Dito isso, convido o leitor(a) a me enviar correções e mesmo sugerir melhorias neste curso.</p>
                 <p>Lembrando que este site está no github e que toda ajuda será sempre acolhida!</p>
-                <p>Seja bom vindo ao curso!</p>
+                <p>Seja bem vindo ao curso!</p>
             </div>
         </main>
 
