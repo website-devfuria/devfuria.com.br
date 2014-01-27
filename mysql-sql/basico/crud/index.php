@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Matéria onde criaremos nossa primeira tabela no MySql');
-        $core->head->setDescription('Aprenda a criar uma tabela no MySql e também veja um pouco sobre os comandos TRUNCATE, DROP TABLE e LOAD LOCAL DATA');
-        $core->head->setkeywords('create table; truncate; drop; load local data');
+        $core->head->setTitle('CRUD SQL');
+        $core->head->setDescription('Aprenda a fazer um CRUD (create, read, update, delete) com os comandos SQL');
+        $core->head->setkeywords('crud, crud sql, create, read, update, delete');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -28,16 +28,16 @@ require "../../../core/boot.php";
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Criando e populando uma tabela</h1>
-                <p>Criaremos nossa primeira tabela via console no MySql e</p>
-                <p>também mostramos os comandos TRUNCATE, DROP, LOAD LOCAL DATA.</p>
+                <h1>Entendendo o que é CRUD</h1>
+                <p>CRUD não é para comer! Trata-se das 4 operações básicas de SQL:</p>
+                <p> create (insert), read (select), update, delete.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">10/01/2014</span>, escrito em <span class="label label-info">10/01/2014</span>.
+                Flávio Micheletti, atualizado em <span class="label label-success">//2014</span>, escrito em <span class="label label-info">//2014</span>.
             </div>
         </div>
 
@@ -49,15 +49,20 @@ require "../../../core/boot.php";
                 <div class="col-md-3">
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
-                            <li><a href="#base">Criando a base</a></li>
                             <li>
-                                <a href="#tabela">Criando a tabela</a>
+                                <a href="#crud">Eu crudo, você cruda, eles crudam</a>
                             </li>
                             <li>
-                                <a href="#comandos">Comandos úteis</a>
+                                <a href="#insert">Create (insert)</a>
                             </li>
                             <li>
-                                <a href="#populando">Populando a tabela</a>
+                                <a href="#select">Read (select)</a>
+                            </li>
+                            <li>
+                                <a href="#update">Update (update)</a>
+                            </li>
+                            <li>
+                                <a href="#delete">Delete (delete)</a>
                             </li>
                         </ul>
                     </div>
@@ -68,256 +73,256 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="base">Criando a base de dados</h1>
+                            <h1 id="crud">Eu crudo, você cruda, eles crudam</h1>
                         </div>
 
-                        <p>Para criar uma base de dados utilize o comando abaixo:</p>
-
-                        <pre><code class="no-highlight">CREATE DATABASE nome-para-a-base-de-dados;</code></pre>
-
-                        No meu caso, eu criarei uma base chamada <code>devlabs</code>. Você pode usar esse nome ou outro
-                        de sua preferência.</p>
-
-                        <pre><code class="no-highlight">CREATE DATABASE devlabs;</code></pre>
-
-                        <p>Após criada a base de dados precisamos selecioná-la para uso, fazemos isso através do comando
-                            <code>USE</code> seguido do nome da base. Veja o exemplo:</p>
-
-                        <pre><code class="no-highlight">USE devlabs;</code></pre>
-
-                        <p>Uma vez que selecionaos a base de dados, é preciso saber as tabelas que ela contém.</p>
-
-                        <p>O comando abaixo lista as tabelas.</p>
-
-                        <pre><code class="no-highlight">SHOW TABLES;</code></pre>
-
-                        <p>Não apareceu nenhuma? Não? Então vamos criar nosssa primeira tabela.</p>
-
-                    </div>
-
-
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="tabela">Criando a tabela</h1>
-                        </div>
-
-                        <p>Criar uma tabela é uma tarefa fácil e corriqueira. O trabalho pesado fica por conta da parte
-                            <strong>conceitual</strong>, explico:</p>
-
-                        <p>A criação de uma base de dados com tabelas e tudo mais depende de muito planejamento.</p>
-
-                        <p>Não existe uma fórmula única, muito pelo contrário. Desenhar a base de dados é como programar,
-                            se passar o mesmo problema a 10 desenvolvedores teremos 10 soluções diferentes, com certeza.</p>
-
-                        <p>No mais, vale lembrar que seu aprendizado está em constante evolução e que você criará
-                            bases de dados diferentes ao longo do tempo. Ex: eu não crio base de dados como criava a
-                            5 anos atrás.</p>
-
-                        <p>Junto com a questão conceital, temos os <strong>tipos de dados</strong>. Cada campo (coluna) da tabela
-                            deve ser de um tipo. Ainda não falamos sobre tipos de dados do mysql, veremos o assunto 
-                            em breve.</p>
-
-                        <h3 id="tabela-exemplo">Uma tabela de exemplo</h3>
-
-                        <p>Eu retirei o exemplo do manual do mysql.</p>
-
-                        <p>Vamos nos imaginar donos(as) de um PetShop. </p>
-                        <p>Talvez você queira registrar os nome dos bichanos e seus respectivos donos. </p>
-                        <p>Já temos dois campos:</p>
-
-                        <pre><code>nome (dos bichanos),
-dono (dos bichanos)</code></pre>
-
-                        <p>Aí você descobre que seria interessante registrar a espécie (gato, cachorro, pássaro, etc..),
-                            o gênero (sexo), a data de nascimento e a data de falecimento:</p>
-
-                        <pre><code>espécie,
-sexo,
-data de nascimento,
-data de óbito
+                        <p>O CRUD é um acrônimo para  as 4 operações básicas de um banco de dados.</p>
+                        
+                        <pre><code class='no-highlight'>creat = insert
+read = select
+update = update
+delete = delete
 </code></pre>
+                        <p>O quadro acima fará parte de seu dia a dia, a imagem abaixo também.</p>
 
-                        <p>Nossa tabela ficará assim:</p>
-
-                        <pre><code>nome | dono | espécie | sexo | nascimento | óbito</code></pre>
-
-                        <p>Os campos <code>nome</code>, <code>dono</code> e <code>espécie</code> são "string" que podem
-                            variar de tamanho. Para isso temos o tipo <code>VARCHAR</code> que traduzindo, (grosseiramente)
-                            significa caracter variante. A variação ocorre no tamanho, o limite dessa variação é
-                            especificado por parentes logo após o tipo. (falaremos dos tipo de dados em breve).</p>
-
-                        <p>Já o campo <code>sexo</code> também é do tipo string mas seu tamanho não é variável, é fixo.
-                            Podemos ter nessa coluna os seguintes valores: <code>f</code> para feminio e <code>m</code>
-                            para masculino. O tipo de dado utilizado será o <code>CHAR</code>.</p>
-
-                        <p>Os campos <code>nascimento</code> e <code>óbito</code> são do tipo "data", utilizaremos o
-                            tipo <code>DATE</code>. O mysql (e a maioria do banco de dados) armazenam a data no seguinte
-                            formato: <code>ano-mes-dia</code>, ou melhor, <code>aaaa-mm-dd</code>. Ex: a data 11/09/2001
-                            apresenta o seguinte formato: 2001-09-11.</p>
-
-                        <p>Como o exemplo é em inglês, vamos manter os nomes nessa língua:</p>
-
-                        <pre><code>name | owner | species | sex | birth | death</code></pre>
-
-                        <p>Agora que já sabemos o que vamos construir...</p>
-
-                        <h3 id="tabela-massa">Botando a mão na massa</h3>
-
-                        O comando que cria a tabela é, em sua essência, o seguinte:
-
-                        <pre><code class="no-highlight">CREATE TABLE nome-da-tabela (descrição de cada coluna);</code></pre>
-
-                        <p>Os campos são campostos pelos seu nome seguido do tipo e separados por vírgula, ex:</p>
-
-                        <pre><code class="no-highlight">nome-do-campo VARCHAR(100),</code></pre>
-
-                        <p>Para ficar mais legível, formatamos o statement sql da seguinte forma:</p>
-                        <pre><code class="no-highlight">CREATE TABLE pet (
-    name VARCHAR(20),
-    owner VARCHAR(20),
-    species VARCHAR(20),
-    sex CHAR(1),
-    birth DATE,
-    death DATE
-);</code></pre>
-
-                        <p><strong>Aí você me pergunta, como digitar isso no console?</strong><p>
-
-                        <p>Vá digitando e apertando o ENTER, pois o comando somente será enviado quando inserirmos
-                            o sinal <code>;</code></p>
-
-                        <p>Veja com eu digitei:</p>
-
-                        <div class="bs-example ">
-                            <img class="img-thumbnail" alt="### Comando CREATE TABLE pet" src="create-table-pet.png" />
-                        </div>                            
-
-                    </div>
-
-
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="comandos">Comandos úteis</h1>
-                        </div>
-
-
-                        <h3 id="comandos-describe">DESCRIBE</h3>
-
-                        <p> O comando <code>DESCRIBE</code>é muito útil pois ele é um raio-x da tabela, vamos utilizá-lo
-                            para checar se a tabela que criamos é realmente a tabela que queríamos criar.</p>
-
-                        <pre><code class="no-highlight">DESCRIBE pet;</code></pre>
-
-                        <p>O comando acima traz o resultado abaixo:</p>
-
-                        <div class="bs-example ">
-                            <img class="img-thumbnail" alt="### Resultado do comando DESCRIBE pet" src="describe-pet.png" />
+                        
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### figura ilustrando o CRUD;" src="crud.jpeg">
                         </div>                         
+                        
+                        <p>Para começarmos a brincar com o CRUD precisamos nos logar no console do Mysql...</p>
 
+                        <pre><code class="no-highlight">mysql -u root -p</code></pre>
+                        
+                        <p>... e ativarmos a base que criamos:</p>
+                        
+                        <pre><code class="no-highlight">USE devlabs;</code></pre>
+                        
+                        <p>Na matéria passada nós criamos e populamos a tabela <code>pet</code>, ela será nosso objeto
+                            de estudo. Você precisará dela se quiser acompanhar os exercícios</p>
 
-                        <h3>DROPT TABLE</h3>
-
-                        <p>Quer apagar a tabela? É isso o que o comando DROP TABLE faz.</p>
-
-                        <pre><code class="no-highlight">DROP TABLE pet;</code></pre>
-
-
-                        <h3>TRUNCATE TABLE</h3>
-
-                        <p>Truncar a tabela significa limpar todos os dados da tabela e zerar o os dados de auto incremento
-                            (calma, veremos isso em breve)</p>
-
-                        <pre><code class="no-highlight">TRUNCATE TABLE pet;</code></pre>
-
-                        <p>Por enquanto, vamos utilizar quando quizermos apagar todos os dados.</p>
-
-                        <p>Provavelmete, você precisará desse comando para a seção seguinte...
-
-
-                    </div>
-
-
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="populando">Populando a tabela</h1>
-                        </div>
+                        <p>Para saber se você já possue a tabela, utilize o comando <code>SHOW TABLES;</code>
                             
-                        <p>Não está faltando alguma coisa nessa tabela?</p>
-
-                        <p>Sim, os dados!</p>
-
-                        <p>Legal, então vamos inserir um a um... não mesmo, vamos inserir isso rapidamente.</p>
-
-                        <p> Há um comando que lê um arquivo de texto separado por tabulações (tab) e insere os dados
-                            na tabela para a gente, é o seguinte </p>
-
-                        <pre><code class="no-highlight">LOAD DATA LOCAL INFILE '/caminho/seu-arquivo' INTO TABLE nome-da-tabela;</code></pre>
-
-                        <p>Vamos criar um arquivo chamado <code>pet.txt</code>. Seu conteúdo se parece com o seguinte:</p>
-
-                        <div class="code">
-                            <h6>pet.txt</h6>                        
-                            <pre><code class="no-highlight">Fluffy	Harold	cat	f	1993-02-04	\N
-Claws	Gwen	cat	m	1994-03-17	\N
-Buffy	Harold	dog	f	1989-05-13	\N
-Fang	Benny	dog	m	1990-08-27	\N
-Bowser	Diane	dog	m	1979-08-31	1995-07-29
-Chirpy	Gwen	bird	f	1998-09-11	\N
-Whistler	Gwen	bird	\N	1997-12-09	\N
-Slim	Benny	snake	m	1996-04-29	\N
-</code></pre></div>
-
-                        <p>...onde <code>\N</code> representa valores nulos (desconhecidos).</p>
-
-                        <p>No meu caso eu salvei o arquivo na pasta <code>/home/flavio</code>. Meu statement ficou assim:</p>
-
-                        <pre><code class="no-highlight">LOAD DATA LOCAL INFILE '/home/flavio/pet.txt' INTO TABLE pet;</code></pre>
+                        <p>Se você quiser criar rapidamente a tabela esse <a href='https://gist.github.com/flaviomicheletti/8359890' title='link-externo'>Gist</a>
+                            poderá te ajudar</p>
                         
-                        <p><strong>Como saber se deu certo?</strong></p>
+                        <p>Então vamos ao CRUD...</p>
 
-                        <p>Execute...</p>
-                        
-                        <pre><code class="no-highlight">SELECT * FROM pet;</code></pre>
-                        
-                        <p>...sua tela deve parecer-se com a minha:</p>
-                        
-                        <div class="bs-example ">
-                            <img class="img-thumbnail" alt="### Resultado do comando SELECT * FROM pet " src="select-pet.png" />
-                        </div>
-                        
-                        <p>Se você conseguiu inserir os dados mas eles não ficaram igual ao meu exemplo limpe a tabela
-                            (<code>TRUNCATE TABLE pet;</code>) e tente denovo.</p>
-                        
-                        <p>Se preferir peque o exemplo neste  <a href="https://gist.github.com/flaviomicheletti/8359890" title="link-externo">gist</a>.</p>
-                        
-                        <p>Na próxima matéria veremos como fazer o CRUD (continuaremos utilizando a tabela <strong>pet</strong>.</p>
-                        
                     </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            <h1 id="insert">Create (insert)</h1>
                         </div>
 
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Internet</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="http://dev.mysql.com/doc/refman/5.7/en/database-use.html" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading">Parte do manual MySqL (Referência)</h4>
-                                        <span class="label label-default">http://dev.mysql.com/doc/refman/5.7/en/database-use.html</span>
-                                    </a>
-                                </div>
-                            </div>                        
-                        </div>                    
+                        <p>O comando <code>INSERT</code> insere dados. Veja o statement seguinte.</p>
+
+                        <pre><code class="no-highlight">INSERT INTO pet VALUES();</code></pre>
+
+                        <p>O comando acima pode ser traduzido da seguinte forma: <em>"Insira na tabela <code>pet</code>os
+                                seguintes valores (valor1, valor2, valor3)"</em></p>
+
+                        <p>Bastante intuitivo, não acha? Eu acho.</p>
+
+                        <p>Vamos utilizar o exemplo abaixo para a nossa tabela <code>pet</code>.</p>
+
+                        <pre><code class="no-highlight">INSERT INTO pet VALUES ('Puffball','Diane','hamster','f','1999-03-30',NULL);</code></pre>
+
+                        <p>O exemplo acima é curto, então ele "ainda" é legível. Se fosse uma tabela maior, escrever
+                            em um linha só tornaria a querie ilegível</p>
+
+                        <p>Uma saída para queries maiores é fazer como o exemplo abaixo.</p>
+
+
+                        <pre><code class="no-highlight">INSERT INTO pet VALUES (
+    'Puffball',
+    'Diane',
+    'hamster',
+    'f',
+    '1999-03-30',
+    NULL
+);
+</code></pre>
+                        <p>Veja como ficou o comando digitado no console.</p>
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### figura ilustrando o comando INSERT digitado" src="inserte-digitado.png">
+                            <p>Comando INSERT digitado!</p>
+                        </div>
+
+                        <p>Manteremos esse padrão quando formos programar isso do lado do servidor</p>
+
+                        <p>Em outras palavras, vá se acostumando com esse formato.</p>
+
+                        <p>Como ficou nossa tabela? É o que veremos no próximo tópico (Read).</p>
+
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="select">Read (select)</h1>
+                        </div>
+
+                        <p>Utilizamos o comando <code>SELECT</code> quando queremos resgatar dados.</p>
+
+                        <p>De longe, esse é o comando mais utilzado. O formato dele é o seguinte:</p>
+
+                        <pre><code class="no-highlight">SELECT campo1, campo2, campo3 FROM tabela;</code></pre>
+
+                        <p>Traduzindo o comando acima: <em>"selecione os campos 1, 2 e 3 da tabela xyz;"</em></p>
+
+                        <p><strong>O retorno de instrunção será um conjunto de registros, também conhecido como
+                                <em>recordeset</em></strong>.</p>
+
+                        <p>O símbolo <code>*</code> (asterisco) representa um papel importante. Ele significa <strong>"todos"</strong>.</p>
+
+                        <pre><code class="no-highlight">SELECT * FROM tabela;</code></pre>
+
+                        <p>Traduzindo o comando acima: <em>"selecione todos os campos da tabela xyz;"</em></p>
+
+                        <p>Em nosso exemplo, basta colocar o nome da tabela <code>pet</code>. Vejamos:</p>
+
+                        <pre><code class="no-highlight">SELECT * FROM pet;</code></pre>
+
+                        <p>Traduzindo o comando acima: <em>"selecione todos os campos da tabela pet;"</em></p>
+
+
+                        <h3>Filtrando os registros</h3>
+
+                        <p>Até agora, as instrunções <code>select</code> não especificaram quais os registros as serem
+                            resgatados (exibidos).</p>
+
+                        <p>Vamos traduzir por completo o último statement visto (<code>SELECT * FROM pet;</code>):</p>
+
+                        <p><em>"selecione todos os campos da tabela pet <strong>e me traga todos os registros</strong>;"</em></p>
+
+                        <p>Quando não especificamos quais registros queremos o interpretador de SQL entende que é para
+                            trazer todos os registros.</p>
+
+
+                        <p>Ok, então como dizemos ao interpretador que queremos determinado(s) registro(s)?</p>
+
+                        <p>Utilizando a cláusula <code>WHERE</code> (onde) seguida de uma <code>condição</code>, veja o statement:</p>
+
+                        <pre><code class="no-highlight">SELECT * FROM pet WHERE condição;</code></pre>
+
+                        <p>E como é a condição? Essa é fácil, não preciso em explicar, basta olhar os exemplos:</p>
+
+                        <pre><code class="no-highlight">SELECT * FROM pet WHERE species = 'cat';</code></pre>
+
+                        <p><em>"selecione todos os campos da tabela pet e me traga todos os registros <strong>onde o campo 'species'
+                                    seja igual a string 'cat'</strong>;"</em></p>
+
+                        <p>Em outras palavras, quero listar todos os registros que são 'cat'.</p>
+
+                        <p>Experimente executar o comando, sua tela deve ser parecida com a minha.</p>
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### figura ilustrando o resultado do comando SELECT * FROM pet WHERE species = 'cat';" src="select-pet-where-cat.png">
+                            <p>Todos os cat's!</p>
+                        </div>                        
+
+                        <p>Quer saber quais são os dog's?</p>
+
+                        <p>Execute o comando abaixo.</p>
+
+                        <pre><code class="no-highlight">SELECT * FROM pet WHERE species = 'dog';</code></pre>
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### figura ilustrando o resultado do comando SELECT * FROM pet WHERE species = 'dog';" src="select-pet-where-dog.png">
+                            <p>Todos os dog's!</p>
+                        </div>                        
+
+                        <p>Uma dica importante é que a condição é uma expressão muito semelhante a utilizada em (qualquer)
+                            linguagem de programação, ou seja, também podemos utilizar <code>()</code> parênteses e 
+                            operadores lógicos como o <code>AND</code>. Em breve veremos mais sobre condições.</p>
+
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="update">Update (update)</h1>
+                        </div>
+
+                        <p>O comando <code>update</code> atualiza os registros.</p>
+
+                        <pre><code class="no-highlight">UPDATE table SET campos=valores</code></pre>
+
+                        <p>Traduzindo o comando acima: <em>"atualize na tabela xyz os seguintes campos e valores"</em></p>
+
+                        <p>Um detalhe importante é que a instrunção irá <strong>atualizar todos os registros</strong> e nem
+                            sempre o queremos atualizar a tabela inteira.</p>
+
+                        <p>Para restringir a atualização em alguns poucos registros precisaremos utilizar as <code>condições</code></p>
+
+                        <p>Veja o comando como ficou.</p>
+
+                        <pre><code class="no-highlight">UPDATE table SET campos=valores WHERE condicao</code></pre>
+
+                        <p>Traduzindo o comando acima: <em>"atualize na tabela xyz os seguintes campos e valores <strong>onde a condição seja verdadeira</strong>"</em></p>
+
+                        <p>Outro detalhe é o trecho <code>SET campos=valores</code>. Depois de <code>set</code> separamos
+                            os campos e valore por virgula, veja o comando abaixo.</p>
+
+                        <pre><code class="no-highlight">UPDATE table SET campo1=valor1, campo2=valor2 WHERE condicao</code></pre>
+
+                        <p>Voltando para nossa querida tabela <code>pet</code>, imagine que queremos atualizar  os campos
+                            <code>birth</code> e <code>species</code> mas apenas do registro no qual <code>name</code>
+                            seja igual a "Bowser". É o que faz o comando abaixo.</p>
+
+                        <pre><code class="no-highlight">UPDATE pet SET birth = '1989-08-31', species = 'horse' WHERE name = 'Bowser';</code></pre>
+
+                        <p>Na construção de statement SQL devemos sempre nos preocupar com sua estética, pois isso 
+                            auxilia na sua legibilidade.</p>
+
+                        <p>Veja como ficou o comando anterior.</p>
+
+                        <pre><code class="no-highlight">UPDATE pet SET
+birth = '1989-08-31',
+species = 'horse'
+WHERE name = 'Bowser';</code></pre>
+
+                        <p>Agora veja como ficou digitado no console.</p>
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### figura ilustrando o comando UPDATE no console;" src="update.png">
+                        </div>                          
+
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="delete">Delete (delete)</h1>
+                        </div>
+
+                        <p>Adivinha o que o comando <code>delete</code> faz? Deleta registros, isso mesmo!</p>
+
+                        <p>Veja sua sintaxe.</p>
+
+                        <pre><code class="no-highlight">DELETE FROM pet;</code></pre>
+
+                        <p><strong>Cuidado!</strong> O comando acima apagará TODOS os registros da tabela.</p>
+
+                        <p>Aliás, esse é um erro muito comum para quem está começando.</p>
+
+                        <p>Para apagar um determinado registro (um único), devemos utilizar a cláusula <code>WHERE</code>
+                            e uma <em>condição que seja em específica</em>.</p>
+
+                        <p>Veja o comando abaixo.</p>
+
+                        <pre><code class="no-highlight">DELETE FROM pet WHERE id = 123;</code></pre>
+
+                        <p>Normalmente excluímos o registro pelo seu<code>id</code>. Mas como nossa tabela <code>pet</code>
+                            é desprovida de tal campo, vamos deletar pelo campo <code>name</code> mesmo.</p>
+
+                        <pre><code class="no-highlight">DELETE FROM pet WHERE name = 'Slim';</code></pre>
+
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/mysql-sql/basico/criando-base-tabela/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
+                    $core->paginacao->link_ativo = "/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                            
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
@@ -326,10 +331,10 @@ Slim	Benny	snake	m	1996-04-29	\N
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1>MySql</h1>
+                        <h1></h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
-                        $core->lista->link_ativo = "/mysql-sql/basico/criando-base-tabela/";
+                        $core->lista->link_ativo = "/";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
