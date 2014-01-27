@@ -167,7 +167,7 @@ require "../../../core/boot.php";
                         <ol>
                             <li>Conectar com o DB</li>
                             <li>Escolhar uma base de dados qualquer</li>
-                            <li>Executar os statments SQL</li>
+                            <li>Executar os statements SQL</li>
                         </ol>
 
                     </div>
@@ -214,12 +214,12 @@ require "../../../core/boot.php";
                         </div>                        
 
                         <p>O <code>AS</code> é um "alias"(apelido). Em português, "as" siginifica "como", ou seja,
-                            podemos "traduzir" o statment da seguinte forma:</p>
+                            podemos "traduzir" o statement da seguinte forma:</p>
 
                         <pre><code class="no-highlight">SELCIONE o resultado de 5 * 2 com o apelido de "foo";</code></pre>
 
                         <h2>Experimente mais...</h2>
-                        <p>"Experimentar" faz parte do aprendizado, então o que será que os statment abaixo produzem?</p>
+                        <p>"Experimentar" faz parte do aprendizado, então o que será que os statement abaixo produzem?</p>
 
                         <pre><code class="no-highlight">SELECT VERSION();</code></pre>
 
