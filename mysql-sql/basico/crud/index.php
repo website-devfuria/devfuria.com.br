@@ -37,7 +37,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">//2014</span>, escrito em <span class="label label-info">//2014</span>.
+                Flávio Micheletti, atualizado em <span class="label label-success">27/01/2014</span>, escrito em <span class="label label-info">27/01/2014</span>.
             </div>
         </div>
 
@@ -319,8 +319,8 @@ WHERE name = 'Bowser';</code></pre>
 
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                    $core->paginacao->link_ativo = "/mysql-sql/basico/crud/";
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -334,7 +334,7 @@ WHERE name = 'Bowser';</code></pre>
                         <h1></h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
-                        $core->lista->link_ativo = "/";
+                        $core->lista->link_ativo = "/mysql-sql/basico/crud/";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>

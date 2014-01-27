@@ -290,7 +290,7 @@ Slim	Benny	snake	m	1996-04-29	\N
                         
                         <p>Se preferir peque o exemplo neste  <a href="https://gist.github.com/flaviomicheletti/8359890" title="link-externo">gist</a>.</p>
                         
-                        <p>Na próxima matéria veremos como fazer o CRUD (continuaremos utilizando a tabela <strong>pet</strong>.</p>
+                        <p>Na próxima matéria veremos como fazer o CRUD (continuaremos utilizando a tabela <code>pet</code>).</p>
                         
                     </div>
 
