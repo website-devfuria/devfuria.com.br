@@ -11,7 +11,7 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Matéria introdutória sobre Lógia de Programação');
+        $core->head->setTitle('Matéria introdutória sobre Lógica de Programação');
         $core->head->setDescription('Matéria que introduz o curso de Lógica de Programação aqui no devfuria.com.br');
         $core->head->setkeywords('introdução a lógia de programação, lógica de programação, aprendendo lógica de programação,');
         $core->head->setAuthor();
