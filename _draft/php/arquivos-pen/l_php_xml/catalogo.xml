@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<catalogo>
+
+	<livro>
+		<titulo>Desenvolvendo Websites com PHP 4</titulo>
+		<descricao>O livro abrange desde noções básicas de PHP até a criação e manutenção de bancos de dados, mostrando como são feitas inclusões, exclusões, alterações e consultas a tabelas de uma base de dados.</descricao>
+	</livro>
+
+	<livro>
+		<titulo>A Fantástica História de Sílvio Santos</titulo>
+		<descricao>Conta a história de Sílvio Santos, desde os tempos em que era camelô até se tornar um grande empresário e o rei da televisão.</descricao>
+	</livro>
+
+	<livro>
+		<titulo>PostgreSQL - Guia de Consulta Rápida</titulo>
+		<descricao>Este guia contém uma referência completa dos recursos do PostgreSQL. Descreve os comandos SQL, tipos de dados, operadores, funções PHP, utilitários e muito mais.</descricao>
+	</livro>
+
+</catalogo>

@@ -1,76 +1,63 @@
 <?php
 /**
- * Lógica home
+ * index Lógica
  */
-
-
 /**
  * Includes
  */
-require "../furia/boot.php";
-
-
-/**
- * View
- */
+require "../core/boot.php";
 ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
     <head>
-        <title>Lógica | <?php echo DOMINIO; ?></title>
         <?php
-        $head_meta = array(
-            "description" => "Curso de lógica de programação",
-            "keywords" =>  KEYWORDS_LOGICA
+        $core->head->setTitle('Lógica de programação');
+        $core->head->setDescription('Aprendendo Lógica de programação de forma organizada, os exercícios foram preparados para facilitar o aprendizado.');
+        $core->head->setkeywords("lógica básico; lógica de programação; lógica para iniciantes; " .
+            "raciocio lógico; algoritmo; lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; "
         );
-        include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
+        $core->head->setAuthor();
+        include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
-        <?php include BASE_PATH.VIEWS_COMP_PATH."head_links_css.php"; ?>
+        
+        <link rel="canonical" href="<?php echo LINKS_PATH; ?>/logica/" />
         <style type="text/css">
+            h1 {
+                font-weight: bolder;
+                color: #2F4F4F
+            }
         </style>
+
     </head>
-    <body class="respiro-em-baixo">
 
+    <body>
         <?php
-        $nav_top['secao'] = Materia::LOGICA;
-        include BASE_PATH.VIEWS_COMP_PATH."nav_top.php";
+        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
-
-        <div class="container">
-
-            <div class="row">
-                <div class="span12">
-                    <header>
-                        <p>
-                            <?php include BASE_PATH.VIEWS_COMP_PATH."google_search.php"; ?>
-                        </p>
-                    </header>
-                </div>
+        <!-- Page content of course! -->
+        <main class="bs-masthead" id="content" role="main">
+            <div class="container">
+                <h1>Lógica de programação<small></small></h1>
+                <p class="lead">Curso de Lógica de programação</p>
+                <p>Falar sobre o curso!</p>
             </div>
+        </main>
 
-            <div class="row">
-                <div class="span10 offset1">
-                    <?php
-                    $tree_completa['secao'] = Materia::LOGICA;
-                    $tree_completa['nivel'] = "basico";
-                    include BASE_PATH.VIEWS_COMP_PATH."tree_completa.php";
-                    ?>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span10 offset1">
-                    <div class="furia-lista-materias">
+        <div class="" style="background-color: #FFF; padding:   0px 0px;" id="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Lógica de programação</h1>
                         <?php
-                        $lista_materias['secao'] = Materia::LOGICA;
-                        include BASE_PATH.VIEWS_COMP_PATH."lista_materias.php";                        
+                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
                 </div>
             </div>
+        </div>
 
-        </div><!-- container -->
-
-    <?php include BASE_PATH.VIEWS_COMP_PATH."rodape_js.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

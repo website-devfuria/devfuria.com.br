@@ -1,75 +1,71 @@
 <?php
 /**
- * RegExp home
+ * index RegExp
  */
-
-
 /**
  * Includes
  */
-require "../furia/boot.php";
-
-
-/**
- * View
- */
+require "../core/boot.php";
 ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
     <head>
-        <title>RegExp | <?php echo DOMINIO; ?></title>
         <?php
-        $head_meta = array(
-            "description" => "Curso de Expressões Regulares para PHP e JS",
-            "keywords" =>  KEYWORDS_REGEXP
+        $core->head->setTitle('RegExp');
+        $core->head->setDescription('Aprendendo Expressões Regulares');
+        $core->head->setkeywords("regexp; regexp básico; regexp fácil; regexp início; regexp iniciante; " .
+            "regexp iniciando; regexp iniciante; começando com regexp; começando no regexp; " .
+            "regexp descomplicado; aprendendo regexp; matéria sobre regexp; aula sobre regexp; " .
+            "expressões regulares"
         );
-        include BASE_PATH.VIEWS_COMP_PATH."head_meta.php";
+        $core->head->setAuthor();
+        include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
-        <?php include BASE_PATH.VIEWS_COMP_PATH."head_links_css.php"; ?>
+        
+        <link rel="canonical" href="<?php echo LINKS_PATH; ?>/regexp//" />
         <style type="text/css">
+            h1 {
+                font-weight: bolder;
+                color: #2F4F4F
+            }
         </style>
+
     </head>
-    <body class="respiro-em-baixo">
 
+    <body>
         <?php
-        $nav_top['secao'] = Materia::REGEXP;
-        include BASE_PATH.VIEWS_COMP_PATH."nav_top.php";
+        $core->navtop->secao_ativa = Core::SECAO_ER;
+        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
-
-        <div class="container">
-
-            <div class="row">
-                <div class="span12">
-                    <header>
-                        <p>
-                            <?php include BASE_PATH.VIEWS_COMP_PATH."google_search.php"; ?>
-                        </p>
-                    </header>
-                </div>
+        <!-- Page content of course! -->
+        <main class="bs-masthead" id="content" role="main">
+            <div class="container">
+                <h1>RegExp<small></small></h1>
+                <p class="lead">Mini curso de Expressões regulares</p>
+                <p>Este é pequeno curso sobre Expressões regulares (ER)</p>
+                <p>Como o site destina-se a programação web eu foco o uso das ER nas linguagens PHP e Javascript.</p>
+                <p>Confesso que não sou nenhum mestre em ER, é bom que você saiba disso antes de iniciar o curso!</p>
+                <p>Por outro lado, meu objetivo é facilitar o aprendizado das ER, pois o assunto ja é espinhoso... logo o aprendizado deve ser facilitado.</p>
+                <p>Dito isso, convido o leitor(a) a me enviar correções e mesmo sugerir melhorias neste curso.</p>
+                <p>Lembrando que este site está no github e que toda ajuda será sempre acolhida!</p>
+                <p>Seja bem vindo ao curso!</p>
             </div>
+        </main>
 
-            <div class="row">
-                <div class="span10 offset1">
-                    <?php
-                    $tree_completa['secao'] = Materia::REGEXP;
-                    include BASE_PATH.VIEWS_COMP_PATH."tree_completa.php";
-                    ?>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span10 offset1">
-                    <div class="furia-lista-materias">
+        <div class="" style="background-color: #FFF; padding:   0px 0px;" id="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>RegExp</h1>
                         <?php
-                        $lista_materias['secao'] = Materia::REGEXP;
-                        include BASE_PATH.VIEWS_COMP_PATH."lista_materias.php";                        
+                        $core->lista->setLinks($core->links, Core::SECAO_ER);
+                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
                 </div>
             </div>
+        </div>
 
-        </div><!-- container -->
-
-    <?php include BASE_PATH.VIEWS_COMP_PATH."rodape_js.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

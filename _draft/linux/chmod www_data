@@ -1,0 +1,8 @@
+chown flavio:www-data -R /home/flavio/NetBeansProjects
+chmod 775 -R /home/flavio/NetBeansProjects
+
+
+
+http://articles.slicehost.com/2007/9/18/apache-virtual-hosts-permissions/
+
+http://jimmyg.org/blog/2009/apache-permissions.html

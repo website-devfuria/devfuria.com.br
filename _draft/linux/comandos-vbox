@@ -1,0 +1,20 @@
+yum install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
+yum install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-PAE-devel dkms
+
+yum groupinstall 'Development Tools'
+
+chmod +x /usr/lib/virtualbox/VirtualBox
+
+KERN_DIR=/usr/src/kernels/'uname -r'
+export KERN_DIR
+
+yum install kernel-headers-$(uname -r)
+yum reinstall kernel-devel kernel-headers
+yum reinstall dkms
+
+
+rpm -i --force VirtualBox-4.2-4.2.14_86644_fedora18-1.x86_64.rpm
+su -c '/etc/init.d/vboxdrv setup'
+
+
+su -c 'yum clean all && yum install VirtualBox -y'
