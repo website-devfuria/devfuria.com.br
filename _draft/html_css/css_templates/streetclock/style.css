@@ -231,7 +231,8 @@ hr {
 	padding: 0px 5px;
 	background: url(images/img05.jpg) no-repeat left top;
 	border: none;
- text-indent: -999999px  color: #FFFFFF;
+        text-indent: -999999px;  
+        color: #FFFFFF;
 }
 
 #splash {

@@ -35,7 +35,7 @@ require "core/boot.php";
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
                 <h1>DevFuria</h1>
-                <p class="lead" style="margin-bottom: 0px">Desenvolvimento web prá ninguém botar defeito!</p>
+                <p class="lead" style="margin-bottom: 0px">Desenvolvimento web pra ninguém botar defeito!</p>
                 <p class="lead" ><small>Cursos, aulas, tutoriais, matérias... tudo muito bem preparado.</small></p>
                 <!--<p class="lead">Curso sobre programação web prá ninguém botar defeito!</p>-->
                 <ul>
