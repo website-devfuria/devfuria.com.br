@@ -37,7 +37,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">22/07/2013</span>, escrito em <span class="label label-info">22/07/2013</span>.
+                Flávio Micheletti, atualizado em <span class="label label-success">30/01/2014</span>, escrito em <span class="label label-info">22/07/2013</span>.
             </div>
         </div>
 
@@ -47,6 +47,16 @@ require "../../../core/boot.php";
 
                 <!-- navegação lateral esquerdo -->
                 <div class="col-md-3">
+                    <div class="bs-sidebar hidden-print" role="complementary">
+                        <ul class="nav bs-sidenav">
+                            <li>
+                                <a href="#quando">Quando precisamos dela?</a>
+                            </li>
+                            <li>
+                                <a href="#preg-match-all">preg&#95;math&#95;all()</a>
+                            </li>
+                        </ul>
+                    </div>                     
                 </div>
 
                 <!-- Corpo da matéria -->
@@ -54,7 +64,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">preg&#95;math&#95;all()</h1>
+                            <h1 id="quando">Quando precisamos dela?</h1>
                         </div>                        
 
                         <p>Se olharmos o primeiro exemplo da matéria anterior:</p>
@@ -109,6 +119,14 @@ if ($resultado === 1) {
 
                         <p>Como fazer para obter esse resultados?</p>
 
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="preg-match-all">preg&#95;math&#95;all()</h1>
+                        </div> 
+
+
                         <p>Uma saída é utilizar a função <code>preg&#95;math&#95;all()</code>, ela carregará a varirável <code>$retorno</code> com todos os resultados possíveis,
                             veja a figura abaixo:</p>
 
@@ -157,10 +175,30 @@ if ($resultado >= 1) {
                         <p>Isso se deve ao fato de que a função <code>preg&#95;math&#95;all()</code> retorna um número inteiro com a quantidade de ocorrências
                             encontradas, no exemplo o valor da variável <code>$resultado</code> é igual a 5 (pois temos cinco resultados).</p>
 
-                        <p>Para saber mais, inclusive sobre os demais parâmetros não comentados, veja a documentação oficial:</p>
-
-                        <p><a href="http://www.php.net/manual/pt_BR/function.preg-match-all.php" title="link-externo">http://www.php.net/manual/pt_BR/function.preg-match-all.php</a></p>
                     </div>
+                    
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="http://www.php.net/manual/pt_BR/function.preg-match-all.php" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manual do PHP (preg-match-all)</h4>
+                                        <p class="list-group-item-text">Para saber mais, inclusive sobre os demais parâmetros não comentados, veja a documentação oficial.</p>
+                                        <span class="label label-default">http://www.php.net/manual/pt_BR/function.preg-match-all.php</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    
                     <?php
                     $core->paginacao->link_ativo = "/regexp/basico/varios-resultados-preg-match-all/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
