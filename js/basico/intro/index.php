@@ -268,7 +268,6 @@ element.onclick = function() {
                                     <h3 class="panel-title">Livros</h3>
                                 </div>
                                 <div class="panel-body">
-
                                     <div class="media">
                                         <a class="pull-left">
                                             <img class="media-object" src="livro-simple-js.jpg" alt="### Imagem do livro 'Simple Javascript'">
@@ -279,7 +278,6 @@ element.onclick = function() {
 
                                         </div>
                                     </div>
-
                                     <div class="media">
                                         <a class="pull-left">
                                             <img class="media-object" src="livro-melhor-js.jpg" alt="### Imagem do livro 'O Melhor do Javascript'">
@@ -289,7 +287,6 @@ element.onclick = function() {
                                             <p class="list-group-item-text">Douglas Crockford, Editora Altabooks</p>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
 
