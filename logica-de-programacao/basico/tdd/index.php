@@ -101,8 +101,8 @@ require "../../../core/boot.php";
                             mas só fui descobrir isso com ajuda de um amigo.
                         </p>
                         <p>
-                            Um outro belo dia, esse meu amigo (Marcus Vinícius, evangelista PHP) apareceu lá na escritório
-                            e me mostrou a técnica. De forma bem simples, prática e direta ele disse:
+                            Um outro belo dia, esse meu amigo (<a href="https://github.com/marcusesa" title="link-externo">Marcus Vinícius</a>,
+                            evangelista PHP) apareceu lá na escritório e me mostrou a técnica. De forma bem simples, prática e direta ele disse:
                         </p>
                         <p>
                         <ul class="list-unstyled">
