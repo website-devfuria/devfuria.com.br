@@ -337,8 +337,6 @@ require "../../../core/boot.php";
                                             <!--<p class="list-group-item-text">Está aqui não é sugerida, é obrigatória.</p>-->
                                             <span class="label label-default">http://phpunit.de/manual/current/pt_br/index.html</span>
                                         </a>
-                                    </div>
-                                    <div class="list-group">
                                         <a href="http://qunitjs.com/" class="list-group-item" title="link-externo">
                                             <h4 class="list-group-item-heading">Site do QUnit</h4>
                                             <!--<p class="list-group-item-text">Está aqui não é sugerida, é obrigatória.</p>-->

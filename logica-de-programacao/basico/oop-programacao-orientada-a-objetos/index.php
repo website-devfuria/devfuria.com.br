@@ -411,8 +411,6 @@ objeto.metodo();</code></pre>
                                         <p class="list-group-item-text">Introduzindo a Orientação a Objetos.</p>
                                         <span class="label label-default">http://www.php.net/manual/pt_BR/language.oop5.basic.php</span>
                                     </a>
-                                </div>
-                                <div class="list-group">
                                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do JS (MDN)</h4>
                                         <p class="list-group-item-text">Introduzindo a Orientação a Objetos.</p>

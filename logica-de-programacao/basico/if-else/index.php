@@ -168,7 +168,7 @@ require "../../../core/boot.php";
 }</code></pre>                    
 
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="simpl">Simplificando a expressão</h1>
@@ -286,22 +286,16 @@ if ( ! $variavel) {
                                         <p class="list-group-item-text">...falando sobre estruturas de controle</p>
                                         <span class="label label-default">http://www.php.net/manual/pt_BR/language.control-structures.php</span>
                                     </a>
-                                </div>
-                                <div class="list-group">
                                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do Javascript</h4>
                                         <p class="list-group-item-text">... falando sobre a condicional if-else</p>
                                         <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</span>
                                     </a>
-                                </div>
-                                <div class="list-group">
                                     <a href="http://ifelse.com/#PHP" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">http://ifelse.com/</h4>
                                         <p class="list-group-item-text">Link legal que mostra o if-else em diversas linguagens</p>
                                         <span class="label label-default">http://ifelse.com/</span>
                                     </a>
-                                </div>
-                                <div class="list-group">
                                     <a href="" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading"></h4>
                                         <p class="list-group-item-text"></p>
