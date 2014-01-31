@@ -116,7 +116,7 @@ require "../../../core/boot.php";
 
                         <p>Chega de teoria e vamos testar essa "bagaça".</p>
 
-                        <p>Crie o arquivo php abaixo ou baixe tudo neste <a href="">Gist</a></p>
+                        <p>Crie o arquivo php abaixo ou baixe tudo neste <a href="https://gist.github.com/flaviomicheletti/8740560" title="link-externo">Gist</a></p>
 
                         <div class="code">
                             <h6>script-para-onde-envio-os-dados.php</h6>

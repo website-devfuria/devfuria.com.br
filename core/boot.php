@@ -93,6 +93,7 @@ $core->links[Core::SECAO_PHP] = array(
     LINKS_PATH . "/php/basico/instalando-o-ambiente/" => "Instalando o ambiente no estilo NEXT, NEXT, NEXT",
     LINKS_PATH . "/php/basico/boas-praticas/" => "Antes de enfiar o pé na jáca (boas práticas)",
     LINKS_PATH . "/php/basico/debugando/" => "Debugando (depurando)",
+    LINKS_PATH . "/php/basico/arrays-vetores-matrizes/" => "Arrays (criando, iterando, funções, explode, implode)",
     LINKS_PATH . "/php/basico/metodo-http-get-post/" => "Como funcionam os métodos GET e POST",
     LINKS_PATH . "/php/basico/enviando-dados-via-get-post/" => "Enviando dados para o script",
     LINKS_PATH . "/php/basico/recebendo-dados-via-get-post/" => "Recebendo dados",
