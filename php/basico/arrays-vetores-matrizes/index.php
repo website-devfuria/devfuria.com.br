@@ -365,6 +365,8 @@ var_dump($arr);</code></pre>
 
                         <h3>implode</h3>
 
+                        <p>Tansforma array em string.</p>
+                        
                         <pre><code class="language-php">$arr = array("Flavio", "Alexandre", "Micheletti");
 $nomeCompleto = implode("-", $arr);
 var_dump($nomeCompleto)</code></pre>
@@ -381,29 +383,16 @@ var_dump($nomeCompleto)</code></pre>
                             <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
                         </div>
 
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Livros</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item" title="">
-                                        <h4 class="list-group-item-heading"></h4>
-                                        <p class="list-group-item-text"></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="panel panel-info">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Internet</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="list-group">
-                                    <a href="l" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading"></h4>
-                                        <span class="label label-default"></span>
+                                    <a href="http://php.net/manual/pt_BR/language.types.array.php" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manula do PHP</h4>
+                                        <p>Falando sobre arrays</p>
+                                        <span class="label label-default">http://php.net/manual/pt_BR/language.types.array.php</span>
                                     </a>
                                 </div>
                             </div>

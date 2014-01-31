@@ -62,9 +62,9 @@ require "../../../core/boot.php";
                                     <li><a href="#tdd-refatorando">Refatorando</a></li>
                                     <li><a href="#tdd-ficha">A ficha ainda não caiu?</a></li>
                                 </ul>
-                            </li>                            
+                            </li>
                         </ul>
-                    </div>                    
+                    </div>
                 </div>
 
 
@@ -78,19 +78,19 @@ require "../../../core/boot.php";
 
                         <p>Finalmente vamos praticar esse tal de TDD, já era tempo.</p>
 
-                        <p>Se você não leu as materias anteriores não tem problema, mas dependendo do seu entendimento 
+                        <p>Se você não leu as materias anteriores não tem problema, mas dependendo do seu entendimento
                             (conhecimento) talvez seja bom você ler apartir da matéria <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/">Code - Triângulo</a>.</p>
 
                         <p>Nós vamos pegar o problema dos triângulos e resovê-lo com TDD.</p>
 
-                        <p>O problema dizia : <em>"Dados 3 valores quaisquer (a, b e c) representando as medidas dos lados 
-                                de um triângulo, escrever se formam ou não um triângulo.Saiba que para formar um triângulo, 
+                        <p>O problema dizia : <em>"Dados 3 valores quaisquer (a, b e c) representando as medidas dos lados
+                                de um triângulo, escrever se formam ou não um triângulo.Saiba que para formar um triângulo,
                                 o valor de cada lado deve ser menor que a soma dos outros 2 lados."</em></p>
 
-                        <p>Os arquivos desenvolvidos nesta matéria podem ser baixos neste <a href="https://gist.github.com/flaviomicheletti/8693386">Gist</a></p>
+                        <p>Os arquivos desenvolvidos nesta matéria podem ser baixos neste <a href="https://gist.github.com/flaviomicheletti/8693386" title="link-externo">Gist</a></p>
 
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="preparando">Preparando os arquivos</h1>
@@ -140,7 +140,7 @@ TrianguloTest.php</code></pre>
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="rodando">Rodando o teste</h1>
-                        </div>                        
+                        </div>
 
                         <p>Para executar o teste usamos:</p>
 
@@ -288,7 +288,7 @@ function checar() {
                             você verá é apenas a solução de um cara (no caso eu). Não quer dizer que <strong>deve</strong> ser assim.</p>
 
                         <p>
-                            E tem mais, lembra que nós já temos 2 soluções? Veja a matéria 
+                            E tem mais, lembra que nós já temos 2 soluções? Veja a matéria
                             <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/">Code - Triângulo</a>.
                             Eu procurei uma terceira solução, quer dizer,eu tentei fazer diferente do que nôs já tínhamos.
                         </p>
@@ -480,7 +480,7 @@ if($flag){
 
                         <h3 id="tdd-refatorando">Refatorando</h3>
 
-                        <p>No outro dia com mais calma (sem o cliente te "enchendo o saco") você olha o código e 
+                        <p>No outro dia com mais calma (sem o cliente te "enchendo o saco") você olha o código e
                             pensa, quem escreveu essa mer... aí lembra que foi você mesmo e então resolve dar um "talento"
                             (melhorar) o código.</p>
 
@@ -508,7 +508,7 @@ if($this->c > ($this->a + $this->b)) {
 <em>return $flag;</em>
 ...
 </code></pre>
-                        </div>                        
+                        </div>
 
                         <p>Código alterado, você não estava muito inspirado e decide parar por aí mesmo.</p>
 
@@ -535,7 +535,7 @@ if ($this->c > ($this->a + $this->b)) {
 return true;
 ...
 </code></pre>
-                        </div>                         
+                        </div>
 
 
                         <h3 id="tdd-ficha">Se sua ficha ainda não caiu ?</h3>
@@ -560,7 +560,7 @@ if ($this->a < ($this->b + $this->c)) {
 return false;
 ...
 </code></pre>
-                        </div>                         
+                        </div>
 
 
                         <p>Mas esse é um passo grande, você trocará uma algoritmo pelo outro. Bom, troque e rode os
