@@ -6,7 +6,11 @@
     </head>
     <body>
 
-        <a href="script-para-onde-envio-os-dados.php?nome=Joao da Silva&email=joado@dasilva.com">Submit me!</a>
+        <form action="script-para-onde-envio-os-dados.php" method="get">
+            Name:  <input type="text" name="username" value="João da Silva" /><br />
+            Email: <input type="text" name="email"  value="joao@dasilva.com" /><br />
+            <input type="submit" value="Submit me!" />
+        </form>
 
     </body>
 </html>
