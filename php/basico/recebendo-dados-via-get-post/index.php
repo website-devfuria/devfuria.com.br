@@ -141,7 +141,7 @@ echo $_GET['foo'];
 
                         <pre><code class="language-php">if(isset($_POST['foo'])) { echo $_POST['foo']; }</code></pre>
 
-                        <p>Voltamos a 1 única linha mas a legibilidade "foi pro saco".</p>
+                        <p>Voltamos a 1 única linha, mas a legibilidade "foi pro saco".</p>
 
 
 
@@ -244,7 +244,7 @@ $pera    = ( isset($_POST['pera']) )    ? $_POST['pera']    : null;
 $abacaxi = ( isset($_POST['abacaxi']) ) ? $_POST['abacaxi'] : null;
 
 /*
- * Apartir deste ponto podemos utilizar o(s) array(s) sem medo
+ * Apartir deste ponto podemos utilizar as variáveis sem medo
  */
 echo $laranja;
 echo $banana;
@@ -256,14 +256,14 @@ echo $abacaxi;
 
                         <p>Mas ele duplica as variáveis.</p>
 
-                        <p>O sabora da laranja está tanto em <code>$_POST['laranja']</code> como em <code>$laranja</code></p>
+                        <p>O sabora da laranja está tanto em <code>$_POST['laranja']</code> como em <code>$laranja</code>.</p>
 
                         <pre><code class="language-php">echo $_POST['laranja'];
 echo $laranja</code></pre>
 
                         <p>Termemos o mesmo resultado.</p>
 
-                        <p>Se duplicar variáveis não um problema para você então para mim também não é.</p>
+                        <p>Se duplicar variáveis não for um problema para você então para mim também não é.</p>
 
 
                     </div>

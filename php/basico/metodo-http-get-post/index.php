@@ -280,9 +280,9 @@ Server: Apache/2.2.15 (CentOS
                         <p>O método POST é mais seguro que o GET! <strong>Besteira, ele é tão inseguro quanto
                             o GET.</strong> Só porque o usuário não vê os dados na URL não quer dizer que eles (os dados) estão protegidos.</p>
                         
-                        <p>Se a questão é seguranca, eu posso de dar uma certeza: tem muita ladainha na net. Mas se quiser
+                        <p>Se a questão é seguranca, eu posso te dar uma certeza: tem muita ladainha na net. Mas se quiser
                             um lugar para começar, então veja o conteúdo da 
-                            <a href="https://www.owasp.org/index.php/Main_Page" title="link-externo">OWASP</a></p>
+                            <a href="https://www.owasp.org/index.php/Main_Page" title="link-externo">OWASP</a>.</p>
                         
                         <p>Todo controle colocado dentro do formulário web com a propriedade <code>name</code> preenchida
                             gera um par <code>nome=valor</code> para ser enviado no servidor.</p>

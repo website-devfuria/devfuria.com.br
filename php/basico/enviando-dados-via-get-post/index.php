@@ -219,11 +219,11 @@ echo $_GET['email']; // print joao@dasilva.com
                         
                         <pre><code class="no-highlight">/local/onde/esta/seu/script.php?<em>nome1=valor1</em></code></pre>
                         
-                        <p>Tendo mais de um par utilizamos o sinal <code>?</code> para serpará-los.</p>
+                        <p>Tendo mais de um par, utilizamos o sinal <code>&amp;</code> para serpará-los.</p>
 
-                        <pre><code class="no-highlight">/local/onde/esta/seu/script.php?nome1=valor1<em>&</em>nome2=valor2</code></pre>
+                        <pre><code class="no-highlight">/local/onde/esta/seu/script.php?nome1=valor1<em>&amp;</em>nome2=valor2</code></pre>
 
-                        <p>Tente memorizar o esquema.</p>
+                        <p>Tente memorizar o esquema abaixo.</p>
                         
                         <pre><code class="no-highlight"> script ?  par1  &amp;  par2  &amp;  par3  &amp; etc..</code></pre>
                         
