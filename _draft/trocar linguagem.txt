@@ -1,0 +1,25 @@
+instalação básica
+nome de variável
+mostrar na tela
+
+tipos
+string, concatenar, funções
+
+array
+
+estrutura de controles e de repetição
+funções
+
+interromper script
+
+arquivos texto
+arquivos xml
+
+conexão com banco de dados
+
+tratamento de exceção
+
+orientação a objeto
+
+bibliotecas conhecidas
+framework

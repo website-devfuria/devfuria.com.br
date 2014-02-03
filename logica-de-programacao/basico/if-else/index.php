@@ -11,9 +11,9 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('if else');
-        $core->head->setDescription('Aprendendo as Expressões condicionais (if-else)');
-        $core->head->setkeywords('expressões condicionais; valores booleanos, conditional statements, conditional expressions, conditional constructs');
+        $core->head->setTitle('Conceitos e exemplos do if-else para PHP');
+        $core->head->setDescription('Aprenda sobre a tomada de decisões no PHP com as estruturas de controle if, else e elseif.');
+        $core->head->setkeywords('if else php, expressões condicionais; estruturas de controle, if, else, elseif, diagrama de blocos, condicionais, operadores, valores booleanos, if else exemplos, desvio condicional');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -96,7 +96,7 @@ require "../../../core/boot.php";
                         <p>O <strong>bloco if</strong> só será executado se a expressão for verdadeira ou, em outras palavras,
                             retornar <code>true</code>.</p>
 
-                        <p>A imagem abaixo ilustra o fluxo:</p>
+                        <p>A imagem abaixo, um diagrama de bloco, ilustra o fluxo:</p>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="fluxo-if.png">
@@ -168,7 +168,7 @@ require "../../../core/boot.php";
 }</code></pre>                    
 
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="simpl">Simplificando a expressão</h1>
@@ -286,22 +286,16 @@ if ( ! $variavel) {
                                         <p class="list-group-item-text">...falando sobre estruturas de controle</p>
                                         <span class="label label-default">http://www.php.net/manual/pt_BR/language.control-structures.php</span>
                                     </a>
-                                </div>
-                                <div class="list-group">
                                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do Javascript</h4>
                                         <p class="list-group-item-text">... falando sobre a condicional if-else</p>
                                         <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</span>
                                     </a>
-                                </div>
-                                <div class="list-group">
                                     <a href="http://ifelse.com/#PHP" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">http://ifelse.com/</h4>
                                         <p class="list-group-item-text">Link legal que mostra o if-else em diversas linguagens</p>
                                         <span class="label label-default">http://ifelse.com/</span>
                                     </a>
-                                </div>
-                                <div class="list-group">
                                     <a href="" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading"></h4>
                                         <p class="list-group-item-text"></p>

@@ -103,8 +103,8 @@ delete = delete
 
                         <p>Para saber se você já possue a tabela, utilize o comando <code>SHOW TABLES;</code>
                             
-                        <p>Se você quiser criar rapidamente a tabela esse <a href='https://gist.github.com/flaviomicheletti/8359890' title='link-externo'>Gist</a>
-                            poderá te ajudar</p>
+                        <p>Este <a href='https://gist.github.com/flaviomicheletti/8359890' title='link-externo'>Gist</a>
+                            poderá te ajudar caso você queira criar rapidamente a tabela </p>
                         
                         <p>Então vamos ao CRUD...</p>
 

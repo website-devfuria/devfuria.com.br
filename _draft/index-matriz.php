@@ -71,14 +71,17 @@ require "../core/boot.php";
                             <h1 id="">Título 01</h1>
                         </div>
 
-                            <div class="bs-example">
-                                <img class="img-rounded" alt="### " src="">
-                                <p></p>
-                                <p>Fonte:
-                                    <a href="" title="link-externo" class="img-responsive"></a>
-                                </p>
-                            </div>                        
-                        
+
+                        <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/">Code - Triângulo</a>.</p>                        
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### " src="">
+                            <p></p>
+                            <p>Fonte:
+                                <a href="" title="link-externo" class="img-responsive"></a>
+                            </p>
+                        </div>                        
+
                         <pre><code class="no-highlight">código</code></pre>
 
                         <div class="code">
@@ -94,27 +97,27 @@ require "../core/boot.php";
                         </div>
 
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="">Título 03</h1>
                         </div>
 
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="">Título 04</h1>
                         </div>
 
                     </div>                    
-                    
-                    
+
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
                         </div>
-                        
+
                         <div class="panel panel-success">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Livros</h3>
@@ -128,7 +131,7 @@ require "../core/boot.php";
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="panel panel-info">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Internet</h3>

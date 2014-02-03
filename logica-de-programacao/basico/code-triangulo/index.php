@@ -110,7 +110,7 @@ echo false;</code></pre>
                         <p> E que não fazia muito sentido porque não estavamos utilizando <strong>funções</strong> e para
                             piorar o <code>die()</code> apareceu sujando nosso código?</p>
 
-                        <p>O código abaiso mostra como era a solução.</p>
+                        <p>O código abaixo mostra como era a solução.</p>
 
                         <div class="code">
                             <h6>PHP</h6>

@@ -11,7 +11,7 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Matéria introdutória sobre Lógia de Programação');
+        $core->head->setTitle('Matéria introdutória sobre Lógica de Programação');
         $core->head->setDescription('Matéria que introduz o curso de Lógica de Programação aqui no devfuria.com.br');
         $core->head->setkeywords('introdução a lógia de programação, lógica de programação, aprendendo lógica de programação,');
         $core->head->setAuthor();
@@ -117,8 +117,6 @@ require "../../../core/boot.php";
                                             <p class="list-group-item-text">...falando sobre expressões e operadores. Procure por 'Assignment operators'</p>
                                             <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators</span>
                                         </a>
-                                    </div>
-                                    <div class="list-group">
                                         <a href="http://www.php.net/manual/pt_BR/language.operators.assignment.php" class="list-group-item" title="link-externo">
                                             <h4 class="list-group-item-heading">Manual do PHP</h4>
                                             <p class="list-group-item-text">... falando sobre a operadores de atribuição</p>

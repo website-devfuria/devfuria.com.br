@@ -433,16 +433,69 @@ systemctl restart httpd.service
                         <p>Como navegador eu sugiro o <strong>Firefox</strong> e não se esqueça dos plugins <strong>Firebug e WebDeveloper</strong> eles quebram um galho enorme.</p>
 
                         <p>Espero que você tenha sobrevivido.</p>
-
-                        <h2>Leituras adicionais sugeridas</h2>
-
-                        <dl id="leitura_adcionais">
-                            <dt>Internet</dt>
-                            <dd>Matéria da comunidade Ubuntu onde eles comparam e demonstram os comandos equivalentes tanto no Ubuntu como no Fedora.
-                                <a href="https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora" title="link-externo">https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora</a>
-                            </dd>
-                        </dl>
                     </div>                 
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                        </div>
+
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Livros</h3>
+                            </div>
+                            <div class="panel-body">                            
+                                <div class="media">
+                                    <a class="pull-left">
+                                        <img class="media-object" src="linux-guia-pratico-morimoto.jpg" alt="### Imagem do livro 'Linux Guia prático'">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Linux Guia prático</h4>
+                                        <p class="list-group-item-text">Morimoto</p>
+                                        <a href="http://www.hardware.com.br/livros/linux/" title="link-externo">http://www.hardware.com.br/livros/linux/</a>
+
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left">
+                                        <img class="media-object" src="entendendo-sm.jpg" alt="### Imagem do livro 'Linux, Entendendo o Sistema'">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Linux, Entendendo o Sistema</h4>
+                                        <p class="list-group-item-text">Morimoto</p>
+                                        <a href="http://www.hardware.com.br/livros/entendendo-linux/" title="link-externo">http://www.hardware.com.br/livros/entendendo-linux/</a>
+
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left">
+                                        <img class="media-object" src="dominando-linux.jpg" alt="### Imagem do livro 'Entendendo e Dominando o Linux'">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Entendendo e Dominando o Linux</h4>
+                                        <p class="list-group-item-text">Morimoto</p>
+                                        <a href="http://www.hardware.com.br/livros/dominando-linux/" title="link-externo">http://www.hardware.com.br/livros/dominando-linux/</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Matéria da comunidade Ubuntu...</h4>
+                                        <p class="list-group-item-text">..onde eles comparam e demonstram os comandos equivalentes tanto no Ubuntu como no Fedora.</p>
+                                        <span class="label label-default">https://help.ubuntu.com/community/SwitchingToUbuntu/FromLinux/RedHatEnterpriseLinuxAndFedora</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                         
                     <?php
                     $core->paginacao->link_ativo = "/php/basico/instalando-o-ambiente/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
