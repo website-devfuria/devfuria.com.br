@@ -2,24 +2,24 @@ falar sobre o cross browser
 
 cheat sheet
 
-	Seção de lógica (pode colocar na index)
+	SeÃ§Ã£o de lÃ³gica (pode colocar na index)
 		operadores
-			atribuição
-			aritméticos
+			atribuiÃ§Ã£o
+			aritmÃ©ticos
 			relacionais
 
 		dfd
 		estruturas de controles
-		laço de repetiçao
+		laÃ§o de repetiÃ§ao
 
 
-PHP / JS
-	manipulando arrays
+PHP
 	manipular arquivos texto
 	manipular arquivos xml
 
 OOP
-	trabalhar com diagrama de menssagens
+	trabalhar com diagrama de menssagens
+
 Engenharia de software
 	diagramas e uml
 
