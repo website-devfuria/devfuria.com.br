@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<futebol>
+
+	<jogador>
+		<nome>Mauro Galvão</nome>
+		<idade>40</idade>
+		<altura>1.80</altura>
+		<time>Grêmio</time>
+		<posicao>Zagueiro</posicao>
+	</jogador>
+
+	<jogador>
+		<nome>Kléber</nome>
+		<idade>25</idade>
+		<altura>1.78</altura>
+		<time>Atlético-PR</time>
+		<posicao>Meio-campo</posicao>
+	</jogador>
+
+	<jogador>
+		<nome>Adãozinho</nome>
+		<idade>34</idade>
+		<altura>1.68</altura>
+		<time>São Caetano</time>
+		<posicao>Meio-campo</posicao>
+	</jogador>
+
+</futebol>
