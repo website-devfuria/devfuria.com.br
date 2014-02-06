@@ -114,6 +114,7 @@ $core->links[Core::SECAO_HTML] = array(
     LINKS_PATH . "/html-css/basico/css-intro/" => "Primeiro contato com CSS",
     LINKS_PATH . "/html-css/basico/elementos-inline-block-level/" => "Elementos in-line e elementos block-level",
     LINKS_PATH . "/html-css/basico/primeiro-html/" => "Criando nosso primeiro HTML [com vídeo]",
+    LINKS_PATH . "/html-css/basico/formularios-web/" => "Formulários Web e seus controles ",
 );
 $core->links[Core::SECAO_MYSQL] = array(
     LINKS_PATH . "/mysql-sql/basico/intro/" => "Banco de dados prá que?",
