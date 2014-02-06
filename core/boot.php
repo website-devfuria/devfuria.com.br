@@ -46,7 +46,7 @@ define('VIEWS_PATH', "/views/");
 
 
 /**
- * Pasta dos componetes (referente as views) 
+ * Pasta dos componetes (referente as views)
  */
 //define('VIEWS_COMP_PATH', "/views/comp/");
 
@@ -71,7 +71,6 @@ require (BASE_PATH . "/oop/Paginacao.php");
 /**
  * Variáveis do sistema
  */
-
 $core = new Core();
 $core->secoes = array(
     "js" => "Javascript",
@@ -99,7 +98,7 @@ $core->links[Core::SECAO_PHP] = array(
     LINKS_PATH . "/php/basico/recebendo-dados-via-get-post/" => "Recebendo dados",
 );
 $core->links[Core::SECAO_LOG] = array(
-    LINKS_PATH . "/logica-de-programacao/basico/intro/" => "Introdução",
+    LINKS_PATH . "/logica-de-programacao/basico/intro/" => "Introdução a Lógica de Progamação",
     LINKS_PATH . "/logica-de-programacao/basico/exercicios-operadores-atribuicao/" => "Exercícios de lógica de programação (operadores de atribuição)",
     LINKS_PATH . "/logica-de-programacao/basico/if-else/" => "Expressões Condicionais (if-else)",
     LINKS_PATH . "/logica-de-programacao/basico/exercicios-expressoes-condicionais/" => "Exercícios de lógica de programação (expressões condicionais)",

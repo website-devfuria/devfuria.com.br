@@ -215,9 +215,9 @@ require "../../../core/boot.php";
 
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                            <p>Essa matéria é curtinha, mas não se engane, seguir em frente sem entender (de verdade) é perca de tempo,
-                                aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.</p>
                         </div>
+                        <p>Essa matéria é curtinha, mas não se engane, seguir em frente sem entender (de verdade) é perca de tempo,
+                            aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.</p>
                     </div>
                     <?php
                     $core->paginacao->link_ativo = "/html-css/basico/elementos-inline-block-level/";

@@ -13,7 +13,7 @@ require "../../../core/boot.php";
         <?php
         $core->head->setTitle('Matéria introdutória sobre Lógica de Programação');
         $core->head->setDescription('Matéria que introduz o curso de Lógica de Programação aqui no devfuria.com.br');
-        $core->head->setkeywords('introdução a lógia de programação, lógica de programação, aprendendo lógica de programação,');
+        $core->head->setkeywords('introdução a lógica de programação, lógica de programação, aprendendo lógica de programação');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
@@ -29,7 +29,7 @@ require "../../../core/boot.php";
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Introdução</h1>
+                <h1>Introdução a Lógica de Programação</h1>
                 <p>Uma "palavrinha" rápida antes de inciarmos...</p>
             </div>
         </div>
@@ -56,7 +56,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">Introdução</h1>
-                        </div>         
+                        </div>
                         <p><em>A lógica de programação é um exercício mental</em>. Ela equivale aos exercícios físicos e todo programador deve praticar,
                             não apenas no início do aprendizado mas no decorrer de toda a “estrada”. Programar um computador é uma atividade, antes
                             de tudo, criativa. Quando a criatividade se une ao raciocínio lógico temos a lógica de programação. E <em>programar nada
@@ -77,14 +77,13 @@ require "../../../core/boot.php";
                             <img class="img-rounded" alt="### Desenho em quadrinhos satirizando a lógica!" src="vida_prog_25.png">
                             <p>Há... essas mulheres!.</p>
                             <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/03/22/logica-de-programacao/" title="link-externo">Vida de programador</a></p>
-                        </div>                        
+                        </div>
 
-                        <h2>Sobre o curso</h2>
+                        <h2>Nota antes de começarmos</h2>
 
                         <p>Não vamos criar programas completos e profissionais, nada disso. Construiremos apenas pequenos trechos de códigos para
                             exercitar o raciocínio e desenvolver uma intimidade com a linguagem.</p>
 
-                        <h3>Nota antes de começarmos</h3>
 
                         <p>Os exercícios iniciais foram adaptados para a realidade do desenvolvimento web. Em programas desktop a simples instrução
                             “leia o valor digitado do usuário” significa que o sistema fará uma pausa é esperará o usuário digitar alguma coisa.
@@ -98,7 +97,7 @@ require "../../../core/boot.php";
                                 não tiver “suado a camisa”. Normalmente, leva-se de 10 a 20 minutos em cada exercício, cronometre o seu tempo e não
                                 desista antes dos 20 minutos pensando  na solução (o tempo para desenhar o diagrama e para executar o teste de mesa não
                                 contam). Em um curso formal (acadêmico), a disciplina lógica de programação dura um semestre inteiro. Se você nunca viu
-                                programação antes, dê-se pelo menos 6 meses de amadurecimento em lógica.</em></p>                    
+                                programação antes, dê-se pelo menos 6 meses de amadurecimento em lógica.</em></p>
 
 
                         <div class="bs-docs-section">
@@ -125,7 +124,7 @@ require "../../../core/boot.php";
                                     </div>
                                 </div>
                             </div>
-                        </div>                                
+                        </div>
                     </div>
                     <?php
                     $core->paginacao->link_ativo = "/logica-de-programacao/basico/intro/";

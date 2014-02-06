@@ -11,7 +11,7 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Refatorando o códig da máteria "Code - A lâmpada"');
+        $core->head->setTitle('Refatorando o código da matéria "Code - A lâmpada"');
         $core->head->setDescription('Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.');
         $core->head->setkeywords('oop em javascript, refatoração, codificação coesa, boas práticas, organizando o código');
         $core->head->setAuthor();
@@ -23,7 +23,7 @@ require "../../../core/boot.php";
         <?php
         $core->navtop->secao_ativa = Core::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
         <!-- Título -->
@@ -79,7 +79,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">Analisando código</h1>
-                        </div>                         
+                        </div>
 
                         <p>Estou insistindo neste pequeno trecho de código com o intuito de facilitar o aprendizado. Se você já lêu a
                             matéria introdutória e a matéria anterior, então já conhece o código e terá menos trabalho para entender a matéria atual.
@@ -108,12 +108,12 @@ element.onclick = function() {
                         <p>Mas qual o objetivo da mudânça?</p>
 
                         <p>Pare e reflita um pouco!</p>
-                    </div>                         
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="ref-tdd">Refatoração e TDD (primeiro contato)</h1>
-                        </div>  
+                        </div>
 
                         <p>Quando escrevemos um código e, posteriomente, voltamos para ajustar algumas coisas, estamos praticando o <em>refactoring</em>.
                             Quero dizer, estamos refatorando o código. O conceito intuitivo da palavra traz consigo a idéia de que "refatorar" é
@@ -127,7 +127,7 @@ element.onclick = function() {
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Livro de Martin Fowler" src="refactoringBook.jpg">
                             <p>Livro: Refatoração, aperfeiçoando o projeto de código existente (Martin Fowler).</p>
-                        </div>                        
+                        </div>
 
                         <p>Mas, respondendo a pergunta, vamos alterar o ćodigo no sentido de clareza, pelo menos inicialmente. O problema é que
                             não vamos utilizar nenhuma metodologia para isso, ou seja, vamos aplicar arte pura e um pouco de gosto pessoal.</p>
@@ -147,10 +147,10 @@ element.onclick = function() {
 
                         <p>TDD é uma arte (ninja) e o mestre e o Kent Bech.</p>
 
-                        <p>O conceito é muito interessante, procure ler sobre. A refatoração é irmã siamesa do TDD. 
+                        <p>O conceito é muito interessante, procure ler sobre. A refatoração é irmã siamesa do TDD.
                             Uma não vive sem a outra.
                         </p>
-                    </div>  
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -229,12 +229,12 @@ element.onclick = function() {
                             <li>são separados por virgula.</li>
                             <li>utilzam os dois pontos como separador "nome: valor"</li>
                         </ul>
-                    </div>                        
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="alterando">Finalmente... alterando o ćodigo!</h1>
-                        </div>                        
+                        </div>
 
                         <p>A primeira coisa a fazer é criarmos um objeto para a nossa querida lâmpada:</p>
 
@@ -391,7 +391,7 @@ senão
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="quase">Código (quase) final</h1>
-                        </div>                     
+                        </div>
 
                         <p>Ufa, chegamos!</p>
 
@@ -435,7 +435,7 @@ senão
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="final">Código final!</h1>
-                        </div> 
+                        </div>
 
                         <p>Para o código funcionar de verdade, falta realizarmos a primeira chamada ao método que inicia as coisas.</p>
 
@@ -487,16 +487,16 @@ senão
 
                         <p>Se preferir, baixe os arquivos através dos links: <a href="codigo-refatorado.js" title="link-externo">codigo-refatorado.js</a>, <a href="lampadas.html" title="link-externo">lampadas.html</a>.</p>
 
-                        <p>Baixe também as imagens das lâmpadas: <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif" title="link-externo">lâmpada apagada</a>, 
+                        <p>Baixe também as imagens das lâmpadas: <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif" title="link-externo">lâmpada apagada</a>,
                             <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
 
-                        <p>Agora chega de lâmpadas, na próxima matéria mudaremos o assunto, até lá.</p>                      
+                        <p>Agora chega de lâmpadas, na próxima matéria mudaremos o assunto, até lá.</p>
                     </div>
                     <?php
                     $core->paginacao->link_ativo = "/js/basico/code-lampadas-refatorando/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
