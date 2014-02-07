@@ -134,7 +134,8 @@ element.onclick = function() {
 
                         <p>Meu objetivo é plantar na sua mente uma semente chamada <strong>"organização, limpeza e clareza"</strong>.</p>
 
-                        <p>Essa palavras faem sentido para você? Sim ? Que ótimo, pois é nesse sentido que vamos tentar alterar o cósigo fonte original de nosso exemplo.</p>
+                        <p>Essa palavras faem sentido para você? Sim ? Que ótimo, pois é nesse sentido que vamos tentar
+                            alterar o código fonte original de nosso exemplo.</p>
 
                         <p><strong>O código já está funcionando, se eu mexer poderei danificá-lo!</strong></p>
 

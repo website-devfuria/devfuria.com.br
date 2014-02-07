@@ -206,9 +206,13 @@ console.log(minha_variavel);</code></pre>
                             <h1 id="problemas">Como saber se o código não está com problemas ?</h1>
                         </div>
 
-                        <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a linguágem é interpretada, estou me referindo ao código que demosntra erros. <strong>E como demostrar os erros?</strong>.</p>
+                        <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a
+                            linguágem é interpretada, estou me referindo ao código que demonstra erros.
+                            <strong>E como demostrar os erros?</strong>.</p>
 
-                        <p>Quando executamos o arquivo (seja .html ou .php ou qualquer outra linguagem que vocẽ use) os erros podem não aparecerem, em outras palavra, alguns erros são "timidos". Para encorajá-los a sair da "toca" é preciso utilizar o console.log() e, obviamente, manter o firebug aberto.</p>
+                        <p>Quando executamos o arquivo (seja .html ou .php ou qualquer outra linguagem que você use) os
+                            erros podem não aparecerem, em outras palavra, alguns erros são "timidos". Para encorajá-los
+                            a sair da "toca" é preciso utilizar o console.log() e, obviamente, manter o firebug aberto.</p>
 
                         <p>O teste mais básico que podemos fazer em um script JS é abrir o HTML, ligar o Firebug (acione a tecla F12), escolha a aba "console" e
                             recarrega a página con a tecla F5 ( à vezes precisamos executar um CTRl + F5, isso força a atualização).</p>

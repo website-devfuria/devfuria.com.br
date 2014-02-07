@@ -351,7 +351,7 @@ require "../../../core/boot.php";
 </code></pre>
                     </div>
 
-                    <p>Nas matérias posteriores nós veremos cada controle detalhadamente</p>
+                    <p>Nas matérias posteriores nós veremos cada controle detalhadamente.</p>
 
                     <?php
                     $core->paginacao->link_ativo = "/html-css/basico/formularios-web/";
