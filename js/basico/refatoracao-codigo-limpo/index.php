@@ -157,13 +157,13 @@ require "../../../core/boot.php";
 
                         <p>Quer dizer, o que temos por horar para nos guiar?</p>
 
-                        <p>Na matéria <a href="">Antes de enfiar o pé na jáca</a> eu comento sobre 4 dicas importantes:</p>
+                        <p>Na matéria <a href="<?php echo LINKS_PATH ?>/php/basico/boas-praticas/">Antes de enfiar o pé na jáca (boas práticas)</a> eu comento sobre 4 dicas importantes:</p>
 
                         <ol>
-                            <li>endentar o código</li>
-                            <li>usar uma boa nomenclatura</li>
-                            <li>comentar o código</li>
-                            <li>ter ou seguir um estilo.</li>
+                            <li>Endentar o código</li>
+                            <li>Usar uma boa nomenclatura</li>
+                            <li>Comentar o código</li>
+                            <li>Ter ou seguir um estilo.</li>
                         </ol>
 
                         <p>Isso pode ser um começo, mas e depois?</p>
