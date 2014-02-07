@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ *
  */
 /**
  * Includes
@@ -110,11 +110,7 @@ echo $_GET['foo'];
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="undefined-index.png">
-                            <p></p>
-                            <p>Fonte:
-                                <a href="" title="link-externo" class="img-responsive"></a>
-                            </p>
-                        </div>   
+                        </div>
 
                         <p>E aí? Já sabe identificar o erro? O indice do array não foi definido (<strong>Undefined Index</strong>).</p>
 
@@ -285,7 +281,7 @@ echo $laranja</code></pre>
                                         <span class="label label-default">http://www.php.net/manual/en/reserved.variables.post.php</span>
                                     </a>
                                 </div>
-                            </div>                        
+                            </div>
                             <div class="panel-body">
                                 <div class="list-group">
                                     <a href="http://php.net/manual/pt_BR/reserved.variables.get.php" class="list-group-item" title="link-externo">
@@ -294,7 +290,7 @@ echo $laranja</code></pre>
                                         <span class="label label-default">http://php.net/manual/pt_BR/reserved.variables.get.php</span>
                                     </a>
                                 </div>
-                            </div>                        
+                            </div>
                             <div class="panel-body">
                                 <div class="list-group">
                                     <a href="http://php.net/manual/pt_BR/language.operators.comparison.php" class="list-group-item" title="link-externo">
@@ -303,7 +299,7 @@ echo $laranja</code></pre>
                                         <span class="label label-default">http://php.net/manual/pt_BR/language.operators.comparison.php</span>
                                     </a>
                                 </div>
-                            </div>                        
+                            </div>
                             <div class="panel-body">
                                 <div class="list-group">
                                     <a href="http://www.php.net/manual/pt_BR/function.isset.php" class="list-group-item" title="link-externo">
@@ -312,14 +308,14 @@ echo $laranja</code></pre>
                                         <span class="label label-default">http://www.php.net/manual/pt_BR/function.isset.php</span>
                                     </a>
                                 </div>
-                            </div>                        
-                        </div>                    
+                            </div>
+                        </div>
                     </div>
                     <?php
                     $core->paginacao->link_ativo = "/php/basico/recebendo-dados-via-get-post/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                            
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

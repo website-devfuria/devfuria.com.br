@@ -1,3 +1,8 @@
+
+ECMA explicadinho (ingles)
+http://dmitrysoshnikov.com/ecmascript/es5-chapter-1-properties-and-property-descriptors/
+
+
 Os magos do JS
 http://net.tutsplus.com/articles/web-roundups/30-developers-you-must-subscribe-to-as-a-javascript-junkie/
 

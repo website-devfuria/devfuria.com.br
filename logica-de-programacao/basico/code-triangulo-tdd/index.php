@@ -81,10 +81,10 @@ require "../../../core/boot.php";
                         <p>Se você não leu as materias anteriores não tem problema, mas dependendo do seu entendimento
                             (conhecimento) talvez seja bom você ler apartir da matéria <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/">Code - Triângulo</a>.</p>
 
-                        <p>Nós vamos pegar o problema dos triângulos e resovê-lo com TDD.</p>
+                        <p>Nós vamos pegar o problema dos triângulos e resolvê-lo com TDD.</p>
 
                         <p>O problema dizia : <em>"Dados 3 valores quaisquer (a, b e c) representando as medidas dos lados
-                                de um triângulo, escrever se formam ou não um triângulo.Saiba que para formar um triângulo,
+                                de um triângulo, escrever se formam ou não um triângulo. Saiba que para formar um triângulo,
                                 o valor de cada lado deve ser menor que a soma dos outros 2 lados."</em></p>
 
                         <p>Os arquivos desenvolvidos nesta matéria podem ser baixos neste <a href="https://gist.github.com/flaviomicheletti/8693386" title="link-externo">Gist</a></p>
@@ -99,7 +99,7 @@ require "../../../core/boot.php";
                         <p>Vamos utilizar dois arquivos: a classe e o teste. Eles podem ficar no mesmo diretório
                             para facilitar as coisas.</p>
 
-                        <p>A nome do arquivo que contém a classe deve termo mesmo nome da classe, exemplo se sua
+                        <p>A nome do arquivo que contém a classe deve termo mesmo nome da classe. Se sua
                             classe chama-se <code>Triangulo</code> o arquivo deve chamar-se <code>Triangulo.php</code></p>
 
                         <div class="code">
@@ -129,6 +129,11 @@ class TrianguloTest extends PHPUnit_Framework_TestCase
 }
 </code></pre>
                         </div>
+
+                        <p>Estou supondo que você lêu as matérias anteriores e que instalou o PHPUnit.</p>
+
+                        <p>Se ainda não instalou, tente esta dica na matéria
+                            <a href="<?php echo LINKS_PATH ?>/logica-de-programacao/basico/tdd-test-driven-development/#ferramentas" title="link-externo">Vamos de TDD ?</a></p>
 
                         <p>Se listarmos o diretório em que estamos trabalhando veremos algo parecido a isto:</p>
 
@@ -183,7 +188,7 @@ class TrianguloTest extends PHPUnit_Framework_TestCase
 
                         <h3 id="tdd-para-falhar">Escrevendo um teste (para falhar)</h3>
 
-                        <p>Vamos altera o nome da funçao de teste de <code>testAlgumMetodo</code> para <code>testChecar</code></p>
+                        <p>Vamos alterar o nome da função de teste de <code>testAlgumMetodo</code> para <code>testChecar</code>.</p>
 
                         <p>Agora pare um pouco e imagine como queremos que nossa classe se comporte (esse é o grande barato do TDD).</p>
 
@@ -198,11 +203,11 @@ $triangulo->b = 4;
 $triangulo->c = 3;
 </code></pre>
 
-                        <p>Eu utilizei os valores 5, 4 e 3 por que sei de antemão que seu resultado é verdadeiro</p>
+                        <p>Eu utilizei os valores 5, 4 e 3 por que sei de antemão que seu resultado é verdadeiro.</p>
 
                         <p>Evocamos o método a ser testado e aplicamos o "assert" <code>$this->assertTrue($triangulo->checar());</code></p>
 
-                        <p>Agora temso um teste, veja como ficou o arquivo.</p>
+                        <p>Agora temos um teste, veja como ficou o arquivo.</p>
 
                         <div class="code">
                             <h6>TrianguloTest.php</h6>
@@ -265,10 +270,10 @@ class TrianguloTest extends PHPUnit_Framework_TestCase
 
                         <p>Só que... é neste ponto que devemos ir mais devagar. E também é o ponto que eu "escorreguei",
                             se você lêu atentamente a matéria
-                            <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/tdd/">Vamos de tdd?</a>
+                            <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/tdd/">Vamos de TDD ?</a>
                             sabe do que estou falando.</p>
 
-                        <p>Então vamos dar um pequeno passo, vamos fazer nossa função simplismente retornar <code>true</code>.</p>
+                        <p>Então vamos dar um pequeno passo, vamos fazer nossa função simplesmente retornar <code>true</code>.</p>
 
                         <div class="code">
                             <h6>Triangulo.php</h6>
@@ -516,7 +521,7 @@ if($this->c > ($this->a + $this->b)) {
 
                         <p>Tudo verde? Agora sim: que coisa linda!</p>
 
-                        <p>No outro dia você volta realmente isnpirado e percebe que não precisa mais da variável <code>$flag</code>
+                        <p>No outro dia você volta realmente inspirado e percebe que não precisa mais da variável <code>$flag</code>
                             e então:</p>
 
                         <div class="code">
@@ -541,7 +546,7 @@ return true;
                         <h3 id="tdd-ficha">Se sua ficha ainda não caiu ?</h3>
 
                         <p>Imagina que passado uma semana, alguém lhe traz uma solução maravilhosa, lembra que nós
-                            já resolvemos o problema do triângulo em matérias anterioes.</p>
+                            já resolvemos o problema do triângulo em matérias anteriores.</p>
 
                         <p>Aí por curiosidade você resolve trocar o código de sua função por este aqui.</p>
 

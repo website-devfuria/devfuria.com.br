@@ -67,7 +67,7 @@ require "../../../core/boot.php";
                                 <a href="#terceiro-else">if - else if - else</a>
                             </li>
                         </ul>
-                    </div>                    
+                    </div>
                 </div>
 
 
@@ -150,7 +150,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="aninha">Condicionais aninhados</h1>
-                        </div>                        
+                        </div>
 
                         <p>Quando temos um <code>if</code> dentro do outro.</p>
 
@@ -165,7 +165,7 @@ require "../../../core/boot.php";
 
                         <pre><code>if ($a && $b && $c) {
     ... código
-}</code></pre>                    
+}</code></pre>
 
                     </div>
 
@@ -296,15 +296,10 @@ if ( ! $variavel) {
                                         <p class="list-group-item-text">Link legal que mostra o if-else em diversas linguagens</p>
                                         <span class="label label-default">http://ifelse.com/</span>
                                     </a>
-                                    <a href="" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading"></h4>
-                                        <p class="list-group-item-text"></p>
-                                        <span class="label label-default"></span>
-                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>                        
+                    </div>
                     <?php
                     $core->paginacao->link_ativo = "/logica-de-programacao/basico/if-else/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);

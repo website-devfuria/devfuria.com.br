@@ -30,7 +30,8 @@ require "../../../core/boot.php";
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Antes de enfiar o pé na jaca</h1>
-                <p>... aprenda o básico das boas práticas.São quatro dicas essenciais para quem está começando a programar</p>
+                <p>Aprenda o básico das boas práticas.</p>
+                <p>São quatro dicas essenciais para quem está começando a programar</p>
             </div>
         </div>
 
@@ -109,13 +110,13 @@ require "../../../core/boot.php";
                             <li>use uma boa nomenclatura, desde variáveis até nome de scripts, bases, formulários, métodos, classes, etc...</li>
                             <li>comente o código</li>
                             <li>programar é como pintar um quadro, cada um tem um estilo, procure o seu.</li>
-                        </ol>                        
+                        </ol>
                     </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="endente">1 - Endentar o código fonte</h1>
-                        </div> 
+                        </div>
                         <p>Endentar o código significa dar espaço determinado no começo da linha do código com o intuito de torná-lo mais claro.</p>
 
                         <p>Vejamos um código sem endentação:</p>
@@ -157,12 +158,12 @@ else
                         <p>Outra consideração importante é: <strong>ao digitar uma linha, idente-a. Não deixe para arrumar o código no final</strong>. Sua vista
                             deve ir se acostumando com o codigo endentado, se deixar para o final você irá acostumar-se com código sem endentação.
                             <strong>Olhe muito código de terceiro</strong>, além de ajudar com o estilo, ajuda a entender da importância da endentação.</p>
-                    </div>                        
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="nomeie">2 - Nomeie (tudo) adequadamente</h1>
-                        </div>                         
+                        </div>
                         <p><strong>Nomear variáveis, funções, classes, campos de banco de dados, campos de formulário HTML e tudo o mais que vir à mente...
                                 é uma arte</strong>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de <code>nome</code>
                             ser diferente de <code>Nome</code>, no caso estou me referindo ao <strong>sensitive case (caixa sensível)</strong>. Existem também regras gerais e
@@ -236,7 +237,7 @@ endereco</code></pre>
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Nomenclatura de variáveis" src="nomenclatura1.png" class="img-responsive">
                             <p>Fonte: <a href="http://code.google.com/p/guardachuva/wiki/ConvencoesDeNomeacao" title="link-externo">Projeto Guarda Chuva</a></p>
-                        </div>                        
+                        </div>
                     </div>
 
                     <div class="bs-docs-section">
@@ -271,7 +272,7 @@ endereco</code></pre>
  * Quis destacar este comentário, por isso fiz dessa forma
  * mas não é só isso, este tipo de comentário é um tanto
  * tanto quanto especial. Falaremos sobre isso em breve.
- * 
+ *
  * Ele é conhecido como "doc-block"
  *
  */
@@ -281,7 +282,7 @@ endereco</code></pre>
 #
 
 ?&gt;</code></pre>
-                        </div>                        
+                        </div>
                     </div>
 
                     <div class="bs-docs-section">
@@ -375,13 +376,13 @@ elseif(  (condition3)&&(condition4)  ){
                             <li>ter ou seguir um estilo.</li>
                         </ol>
 
-                        <p>... e seja feliz!</p>                        
-                    </div>                        
+                        <p>... e seja feliz!</p>
+                    </div>
                     <?php
                     $core->paginacao->link_ativo = "/php/basico/boas-praticas/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 
