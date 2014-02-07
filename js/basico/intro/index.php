@@ -269,7 +269,7 @@ element.onclick = function() {
                                 </div>
                                 <div class="panel-body">
                                     <div class="media">
-                                        <a class="pull-left">
+                                        <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857780542&ordem=prec#precos" title="link-externo">
                                             <img class="media-object" src="livro-simple-js.jpg" alt="### Imagem do livro 'Simple Javascript'">
                                         </a>
                                         <div class="media-body">
@@ -279,7 +279,7 @@ element.onclick = function() {
                                         </div>
                                     </div>
                                     <div class="media">
-                                        <a class="pull-left">
+                                        <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857608279&ordem=prec#precos" title="link-externo">
                                             <img class="media-object" src="livro-melhor-js.jpg" alt="### Imagem do livro 'O Melhor do Javascript'">
                                         </a>
                                         <div class="media-body">

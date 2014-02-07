@@ -314,7 +314,7 @@ require "../../../core/boot.php";
                                 <div class="panel-body">
 
                                     <div class="media">
-                                        <a class="pull-left">
+                                        <a class="pull-left" href="http://compare.buscape.com.br/tdd-desenvolvimento-guiado-por-testes-beck-kent-857780724x.html#precos" title="link-externo">
                                             <img class="media-object" src="tdd-livro.jpg" alt="### Imagem do livro 'TDD'">
                                         </a>
                                         <div class="media-body">

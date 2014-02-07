@@ -329,7 +329,7 @@ require "../../../core/boot.php";
                             </div>
                             <div class="panel-body">
                                 <div class="media">
-                                    <a class="pull-left">
+                                    <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857605122&ordem=prec#precos" title="link-externo">
                                         <img class="media-object" src="livro-criando-pag-web-css.jpg" alt="### Imagem do livro 'Criando paǵinas web com CSS'">
                                     </a>
                                     <div class="media-body">
@@ -341,7 +341,7 @@ require "../../../core/boot.php";
                                 </div>
 
                                 <div class="media">
-                                    <a class="pull-left">
+                                    <a class="pull-left" href="http://www.maujor.com/livro/livro.html" title="link-externo">
                                         <img class="media-object" src="livro-cronstuindo-sites.jpg" alt="### Imagem do livro 'Costruindo sites com CSS e XHMTL'">
                                     </a>
                                     <div class="media-body">

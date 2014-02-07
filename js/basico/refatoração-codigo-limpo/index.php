@@ -232,7 +232,7 @@ require "../../../core/boot.php";
                                     <div class="media-body">
                                         <h4 class="media-heading">A Arte de Escrever Programas Legíveis</h4>
                                         <p>Dustin Boswell, Trevor Foucher , Editora Novatec</p>
-                                        <p>Livro senssacional, vale cada centavo!</p>
+                                        <p>Livro sensacional, vale cada centavo!</p>
                                     </div>
                                 </div>
                             </div>
