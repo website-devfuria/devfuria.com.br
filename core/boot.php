@@ -85,6 +85,8 @@ $core->links[Core::SECAO_JS] = array(
     LINKS_PATH . "/js/basico/preparando-o-terreno/" => "Preparando o terreno",
     LINKS_PATH . "/js/basico/debugando/" => "Debugando (depurando) [com vídeo]",
     LINKS_PATH . "/js/basico/code-lampadas/" => "Code - A Lâmpada",
+    LINKS_PATH . "/js/basico/oop-primeiro-degrau/" => "OOP - primeiro degrau",
+    LINKS_PATH . "/js/basico/refatoração-codigo-limpo/" => "Refatoração e código limpo",
     LINKS_PATH . "/js/basico/code-lampadas-refatorando/" => "Code - A Lâmpada (refatorando)"
 );
 $core->links[Core::SECAO_PHP] = array(
