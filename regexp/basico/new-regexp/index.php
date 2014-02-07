@@ -99,7 +99,7 @@ console.log(pattern, resultado);</code></pre>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                                <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
                             </div>                        
                             <div class="panel panel-info">
                                 <div class="panel-heading">
