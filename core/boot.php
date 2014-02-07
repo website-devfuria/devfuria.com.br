@@ -105,7 +105,7 @@ $core->links[Core::SECAO_LOG] = array(
     LINKS_PATH . "/logica-de-programacao/basico/funcoes-procedimentos/" => "Funções",
     LINKS_PATH . "/logica-de-programacao/basico/code-triangulo/" => "Code - Triângulo",
     LINKS_PATH . "/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/" => "Vamos de OOP?",
-    LINKS_PATH . "/logica-de-programacao/basico/tdd/" => "Vamos de TDD?",
+    LINKS_PATH . "/logica-de-programacao/basico/tdd-test-driven-development/" => "Vamos de TDD?",
     LINKS_PATH . "/logica-de-programacao/basico/code-triangulo-tdd/" => "Code - Triângulo + TDD",
 );
 $core->links[Core::SECAO_HTML] = array(
