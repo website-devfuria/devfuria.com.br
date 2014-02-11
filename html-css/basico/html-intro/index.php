@@ -305,6 +305,27 @@ require "../../../core/boot.php";
 &lt;span&gt;um pequeno texto&lt;/span&gt;
 </code></pre>
                     </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="http://www.codecademy.com/glossary/html  " class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">HTML Glossary (codecademy)</h4>
+                                        <p class="list-group-item-text">Um pequeno glossário do site codecadmey..</p>
+                                        <span class="label label-default">http://www.codecademy.com/glossary/html  </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <?php
                     $core->paginacao->link_ativo = "/html-css/basico/html-intro/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
