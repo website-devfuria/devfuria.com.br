@@ -368,7 +368,14 @@ mostrar_alerta();</code></pre>
 
                             <pre><code class="language-javascript">var minha_funcao = function() { };</code></pre>
 
+                            <p>Se quiser saber mais sobre funções veja a matéria <a href="<?php echo LINKS_PATH ?>/logica-de-programacao/basico/funcoes-procedimentos/">Funções</a>.</p>
+
+
                         </div>
+
+
+
+
 
                         <div class="bs-docs-section">
                             <div class="page-header">
@@ -379,7 +386,7 @@ mostrar_alerta();</code></pre>
 
                             <p>E o que ela esta fazendo no meio do meu código JS?</p>
 
-                            <p>Calma, ela é faz parte do objeto que buscamos com a função getElementById().</p>
+                            <p>Calma, ela é faz parte do objeto que buscamos com a função <code>getElementById()</code>.</p>
 
                             <p>SCR é a abreviação de source e siginifica que o conteúdo da tag <code>img</code> é definido por essa tag, veja o trecho de HTML:</p>
 

@@ -1,4 +1,7 @@
 
+Ponto de referência
+http://javascriptissexy.com/
+
 ECMA explicadinho (ingles)
 http://dmitrysoshnikov.com/ecmascript/es5-chapter-1-properties-and-property-descriptors/
 
