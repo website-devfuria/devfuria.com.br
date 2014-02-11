@@ -274,8 +274,10 @@ element.onclick = function() {
                                         </a>
                                         <div class="media-body">
                                             <h4 class="media-heading">Só Javascript (Simple Javascript)</h4>
-                                            <p class="list-group-item-text">Kevin e Cameron, Editora bookman</p>
-
+                                            <p>Kevin e Cameron, Editora Bookman</p>
+                                            <p class="list-group-item-text">Esse livro é sensacional para quem está começando.</p>
+                                            <p class="list-group-item-text">A didádica tem começo, meio e fim.</p>
+                                            <p class="list-group-item-text">Nota 10, realmente muito bom.</p>
                                         </div>
                                     </div>
                                     <div class="media">
@@ -284,7 +286,11 @@ element.onclick = function() {
                                         </a>
                                         <div class="media-body">
                                             <h4 class="media-heading">O Melhor do Javascript</h4>
-                                            <p class="list-group-item-text">Douglas Crockford, Editora Altabooks</p>
+                                            <p>Douglas Crockford, Editora Altabooks</p>
+                                            <p class="list-group-item-text">Este livro não é recomendado para iniciantes, ele é nível avançado.</p>
+                                            <p class="list-group-item-text">Mas quem sou eu para subjulgar a sua capacidade?</p>
+                                            <p class="list-group-item-text">De qualquer forma é um livro para quem vai encarar o JS de verdade.</p>
+                                            <p class="list-group-item-text">Livro de cabeceira e indispensável.</p>
                                         </div>
                                     </div>
                                 </div>
