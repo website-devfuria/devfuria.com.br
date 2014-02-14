@@ -159,25 +159,25 @@ require "../../../core/boot.php";
                             <li><code>img</code> - define uma imagem</li>
                         </ul>
 
-                        <p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: <code>&lt;nome da tag&gt</code>; e toda tag aberta deve ser fechada.</p>
+                        <p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: <code>&lt;nome da tag&gt;</code>; e toda tag aberta deve ser fechada.</p>
 
-                        <p>A barra para direita indica qual é a <strong>tag de fechamento</strong>, exemplo: <code>&lt;p&gt;aqui é um parágrafo&lt;/p&gt;</p></code>
+                        <p>A barra para direita indica qual é a <strong>tag de fechamento</strong>, exemplo: <code>&lt;p&gt;aqui é um parágrafo&lt;/p&gt;;</p></code>
 
                         <p>Abaixo conferimos um arquivo HTML na sua essência:</p>
 
                         <div class="code">
                             <h6>HTML(inválido)</h6>
-                            <pre><code>&lthtml&gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-    &lt/head&gt
-    &ltbody&gt
+                            <pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
         Aqui vai a marcação HTML que fará sua página ser entendida pelo browser
         e, consequentemente, ser reenderizada pelo mesmo.
 
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                         </div>
 
                         <p>Repare que eu coloquei a palavra "inválido" alertando quanto à validade do HTML.
@@ -205,17 +205,17 @@ require "../../../core/boot.php";
 
                             <div class="code">
                                 <h6>XHTML</h6>
-                                <pre><code>&lt!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt
-&lthtml xmlns="http://www.w3.org/1999/xhtml" &gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-        &ltmeta http-equiv="Content-type" content="text/html;charset=UTF-8" /&gt
-    &lt/head&gt
-    &ltbody&gt
+                                <pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta http-equiv="Content-type" content="text/html;charset=UTF-8" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                             </div>
 
                             <p>O HTML acima é um XHTML válido porque ele atende aos requesitos básicos para poder ser
@@ -230,26 +230,29 @@ require "../../../core/boot.php";
                             <p>Nós estamos falando de XHTML, que é uma versão anterior ao HTML5. O XHTML é interessante
                                 principalmente por que estamos aprendendo HTML.</p>
 
-                            <p>Atualmente (jan/2014) niguém inicia o desenvolvimento de uma aplicação web com XHTML,
-                                utilizamos o HTML5.</p>
+                            <p>Atualmente (jan/2014) ninguém inicia o desenvolvimento de uma aplicação web com XHTML,
+                                utilizamos o HTML5. Por isso <strong>se você encontrar arquivos XHTML aqui no site é porque
+                                    ele tem um fim didático</strong>.</p>
+
+                            <p>Essa questão da validação e do uso do XHMTL para fins didáticos são importantes, mas
+                                ficarão para uma outra hora, ok?</p>
 
                             <p>Abaixo vemos um HTML 5 também válido.</p>
 
                             <div class="code">
                                 <h6>HTML 5</h6>
-                                <pre><code>&lt!DOCTYPE html&gt
-&lthtml xmlns="http://www.w3.org/1999/xhtml" &gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-        &ltmeta charset="utf-8"&gt
-    &lt/head&gt
-    &ltbody&gt
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                             </div>
 
-                            <p>Essa questão da validação é importante mas ficará para uma outra hora, ok?</p>
 
                         </div>
 
@@ -266,26 +269,26 @@ require "../../../core/boot.php";
 
                             <div class="code">
                                 <h6>HTML</h6>
-                                <pre><code>&lt!DOCTYPE html&gt
-&lthtml xmlns="http://www.w3.org/1999/xhtml" &gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-        &ltmeta charset="utf-8"&gt
-    &lt/head&gt
-    &ltbody&gt
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
-        &lth1&gtUm título qualquer&lt/h1&gt
-        &ltp&gtprimeiro parágrafo/p&gt
-        &ltp&gtsegundo parágrafo&lt/p&gt
-        &ltp&gtterceiro parágrafo&lt/p&gt
+        &lt;h1&gt;Um título qualquer&lt;/h1&gt;
+        &lt;p&gt;primeiro parágrafo/p&gt;
+        &lt;p&gt;segundo parágrafo&lt;/p&gt;
+        &lt;p&gt;terceiro parágrafo&lt;/p&gt;
 
-        &lth2&gtOutro título qualquer&lt/h2&gt
-        &ltp&gtquarto parágrafo&lt/p&gt
-        &ltp&gtquinto parágrafo&lt/p&gt
-        &ltp&gtsexto parágrafo&lt/p&gt
+        &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
+        &lt;p&gt;quarto parágrafo&lt;/p&gt;
+        &lt;p&gt;quinto parágrafo&lt;/p&gt;
+        &lt;p&gt;sexto parágrafo&lt;/p&gt;
 
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                             </div>
                         </div>
 

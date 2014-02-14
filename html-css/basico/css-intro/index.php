@@ -123,24 +123,26 @@ require "../../../core/boot.php";
 
                             <div class="code">
                                 <h6>HTML & CSS</h6>
-                                <pre><code class="language-html">&lthtml&gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-    &lt/head&gt
-    &ltbody&gt
+                                <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
-        &lth1&gtUm título qualquer&lt/h1&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtprimeiro parágrafo/p&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtsegundo parágrafo&lt/p&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtterceiro parágrafo&lt/p&gt
+        &lt;h1&gt;Um título qualquer&lt;/h1&gt;
+        &lt;p <em>style="font-size: 12px; color#767676"</em>&gt;primeiro parágrafo&lt;/p&gt;
+        &lt;p <em>style="font-size: 12px; color#767676"</em>&gt;segundo parágrafo&lt;/p&gt;
+        &lt;p <em>style="font-size: 12px; color#767676"</em>&gt;terceiro parágrafo&lt;/p&gt;
 
-        &lth2&gtOutro título qualquer&lt/h2&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtquarto parágrafo&lt/p&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtquinto parágrafo&lt/p&gt
-        &ltp &ltem&gtstyle="font-size: 12px; color#767676"&lt/em&gt&gtsexto parágrafo&lt/p&gt
+        &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
+        &lt;p <em>style="font-size: 12px; color#767676"</em>&gt;quarto parágrafo&lt;/p&gt;
+        &lt;p <em>style="font-size: 12px; color#767676"</em>&gt;quinto parágrafo&lt;/p&gt;
+        &lt;p <em>style="font-size: 12px; color#767676"</em>&gt;sexto parágrafo&lt;/p&gt;
 
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                             </div>
 
                             <p>O leitor atento notou que tivemos que repetir a regra em cada parágrafo. Essa forma além de repetir código, não ajuda na
@@ -159,30 +161,32 @@ require "../../../core/boot.php";
 
                             <div class="code">
                                 <h6>HTML e CSS</h6>
-                                <pre><code class="language-html">&lthtml&gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-        <em>&ltstyle type="text/css" media="all"&gt
+                                <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+        <em>&lt;style type="text/css" media="all"&gt;
         p {
             font-size: 12px;
             color: #767676;
         }</em>
-        &lt/style&gt
-    &lt/head&gt
-    &ltbody&gt
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
-        &lth1&gtUm título qualquer&lt/h1&gt
-        &ltp&gtprimeiro parágrafo/p&gt
-        &ltp&gtsegundo parágrafo&lt/p&gt
-        &ltp&gtterceiro parágrafo&lt/p&gt
+        &lt;h1&gt;Um título qualquer&lt;/h1&gt;
+        &lt;p&gt;primeiro parágrafo/p&gt;
+        &lt;p&gt;segundo parágrafo&lt;/p&gt;
+        &lt;p&gt;terceiro parágrafo&lt;/p&gt;
 
-        &lth2&gtOutro título qualquer&lt/h2&gt
-        &ltp&gtquarto parágrafo&lt/p&gt
-        &ltp&gtquinto parágrafo&lt/p&gt
-        &ltp&gtsexto parágrafo&lt/p&gt
+        &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
+        &lt;p&gt;quarto parágrafo&lt;/p&gt;
+        &lt;p&gt;quinto parágrafo&lt;/p&gt;
+        &lt;p&gt;sexto parágrafo&lt;/p&gt;
 
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                             </div>
 
                             <p>Já é bem melhor que o método anterior: já é possível localizar a CSS com mais facilidade no documento.
@@ -199,25 +203,27 @@ require "../../../core/boot.php";
 
                             <div class="code">
                                 <h6>HTML</h6>
-                                <pre><code class="language-html">&lthtml&gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-        <em>&ltlink rel="stylesheet" type="text/css" href="estilos.css" media="all" /&gt</em>
-    &lt/head&gt
-    &ltbody&gt
+                                <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+        <em>&lt;link rel="stylesheet" type="text/css" href="estilos.css" media="all" /&gt;</em>
+    &lt;/head&gt;
+    &lt;body&gt;
 
-        &lth1&gtUm título qualquer&lt/h1&gt
-        &ltp&gtprimeiro parágrafo/p&gt
-        &ltp&gtsegundo parágrafo&lt/p&gt
-        &ltp&gtterceiro parágrafo&lt/p&gt
+        &lt;h1&gt;Um título qualquer&lt;/h1&gt;
+        &lt;p&gt;primeiro parágrafo/p&gt;
+        &lt;p&gt;segundo parágrafo&lt;/p&gt;
+        &lt;p&gt;terceiro parágrafo&lt;/p&gt;
 
-        &lth2&gtOutro título qualquer&lt/h2&gt
-        &ltp&gtquarto parágrafo&lt/p&gt
-        &ltp&gtquinto parágrafo&lt/p&gt
-        &ltp&gtsexto parágrafo&lt/p&gt
+        &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
+        &lt;p&gt;quarto parágrafo&lt;/p&gt;
+        &lt;p&gt;quinto parágrafo&lt;/p&gt;
+        &lt;p&gt;sexto parágrafo&lt;/p&gt;
 
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                             </div>
 
                             <p>Agora sim temos um método profissional. Toda CSS fica em arquivo separado que é incluso no HTML através de uma única linha.
