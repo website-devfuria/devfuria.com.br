@@ -173,7 +173,7 @@ require "../../../core/boot.php";
 
 			<p>O conteúdo que vai dentro da tag <code>body</code> é reenderizado pelo browser. É o conteúdo de seu site/sistema.</p>
 
-			<p>A baixo temos um exemplo de conteúdo. Utilizei título (<code>h1</code>) e parágrafos (<code>p</code>).</p>
+			<p>A baixo temos um exemplo de conteúdo. Utilizei título (<code>h1</code>) e parágrafos (<code>p</code>)</p>
 
                         <div class="code">
                             <h6>HTML(inválido)</h6>
