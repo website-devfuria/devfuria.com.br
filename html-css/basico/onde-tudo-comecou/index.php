@@ -30,14 +30,15 @@ require "../../../core/boot.php";
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Onde tudo começou</h1>
-                <p></p>
+                <p>Veremos a essência de um arquivo HTML e</p>
+                <p>como estilizá-lo usando CSS.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">11/02/2013</span>, escrito em <span class="label label-info">23/01/2013. </span>
+                Flávio Micheletti, atualizado em <span class="label label-success">14/02/2014</span>, escrito em <span class="label label-info">23/01/2013. </span>
             </div>
         </div>
 
@@ -51,17 +52,18 @@ require "../../../core/boot.php";
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
                             <li>
-                                <a href="#intro">Um pouco de história...</a>
+                                <a href="#historia">Um pouco de história...</a>
+                                <ul class="nav">
+                                    <li><a href="#w3c">W3C</a></li>
+                                    <li><a href="#w3c">W3C</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#afinal">Mas afinal, o que é HTML?</a>
+                                <a href="#o-que-e-html">Mas afinal, o que é HTML?</a>
                                 <ul class="nav">
-                                    <li>
-                                        <a href="#w3c">W3C</a>
-                                    </li>
-                                    <li>
-                                        <a href="#siglas">HTML, DHTML , XHTML, HTML5</a>
-                                    </li>
+                                    <li><a href="#estrutura-basica">Estrutura básica (HTML válido)</a></li>
+                                    <li><a href="#pequeno-exemplo">Pequeno Exemplo</a></li>
+                                    <li><a href="#siglas">HTML, DHTML , XHTML, HTML5</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -84,7 +86,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Um pouco de história...</h1>
+                            <h1 id="historia">Um pouco de história...</h1>
                         </div>
 
                         <p>Tim Berners-Lee, a culpa é toda dele. No começo dos anos 90, o dito cujo, inventou o HTML (HyperText Markup Language) que
@@ -116,16 +118,35 @@ require "../../../core/boot.php";
                             <p>Tim Berners-Lee, esse é o cara!.</p>
                         </div>
 
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3 id="w3c">W3C</h3>
+                            </div>
+
+                            <p>Completando a história da HTML: o W3C é um consórcio que regulamenta as especificações tanto do HTML como do CSS. O
+                                W3C é a fonte oficial do HTML e CSS. É possível encontrar as traduções das especificações para a língua portuguesa.
+                                Dois pequenos alertas :  a) Estudar pela especificação é mais difícil (e mais chata também) e b) nem todos os navegadores
+                                implementam as especificações em sua totalidade, isso significa que a especificação diz uma coisa e seu navegador
+                                comporta-se de outro, restando para o programador e/ou desginer "se virar" para encontrar um solução.</p>
+                        </div>
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3 id=""></h3>
+                            </div>
+
+                        </div>
                     </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="afinal">Mas afinal, o que é HTML?</h1>
+                            <h1 id="o-que-e-html">Mas afinal, o que é HTML?</h1>
                         </div>
 
-                        <p><strong>HTML, originalmente, marca o conteúdo</strong>. Ele faz isso através de sua "etiquetas", ou melhor, através de suas <strong>tag's</strong>.
-                            A tag "p" define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:</p>
+                        <p><strong>HTML, originalmente, marca o conteúdo</strong>. Ele faz isso através de suas
+                            <strong>etiquetas</strong>, ou melhor, através de suas <strong>tag's</strong>.
+                            A tag <code>p</code> define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:</p>
 
                         <ul>
                             <li><code>html</code> - define o próprio documento HTML.</li>
@@ -146,14 +167,14 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>HTML(inválido)</h6>
-                            <pre><code>
-&lthtml&gt
+                            <pre><code>&lthtml&gt
     &lthead&gt
         &lttitle&gtTítulo da página&lt/title&gt
     &lt/head&gt
     &ltbody&gt
 
-	Aqui vai o código HTML que fará seu site aparecer.
+        Aqui vai a marcação HTML que fará sua página ser entendida pelo browser
+        e, consequentemente, ser reenderizada pelo mesmo.
 
     &lt/body&gt
 &lt/html&gt</code></pre>
@@ -162,25 +183,94 @@ require "../../../core/boot.php";
                         <p>Repare que eu coloquei a palavra "inválido" alertando quanto à validade do HTML.
                             O código acima não é valido e serve apenas para fins didáticos e ilustrativo.</p>
 
-			<p>Eu coloquei o HTML dessa forma para que você perceba o esquema: <strong>cabeçalho (head) e corpo (body)</strong>.</p>
+                        <p>Eu coloquei o HTML dessa forma para que você perceba o esquema: <strong>cabeçalho (head) e corpo (body)</strong>.</p>
 
-			<p>A imagem abaixo irá te ajudar.</p>
+                        <p>Me lembrei do Joel Santana na propaganda do Head & Shoulders, aqui é  Head & Body:</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="### HTML basico" src="html-basico.jpg">
-                            <p><a href="http://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=1011879" title="link-externo">Fonte da imagem acima</a></p>
+                            <img class="img-rounded" alt="### HTML básico" src="html-head-body.jpg">
+                            <p>Ess imagem é tão difundida que já não se sabe mais a fonte.</p>
                         </div>
 
-			<p>O conteúdo que vai dentro da tag <code>body</code> é reenderizado pelo browser. É o conteúdo de seu site/sistema.</p>
+                        <p>O conteúdo que vai dentro da tag <code>body</code> é reenderizado pelo browser. É o
+                            conteúdo de seu site/sistema.</p>
 
-			<p>A baixo temos um exemplo de conteúdo. Utilizei título (<code>h1</code>) e parágrafos (<code>p</code>).</p>
 
-                        <div class="code">
-                            <h6>HTML(inválido)</h6>
-                            <pre><code>
-&lthtml&gt
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3 id="estrutura-basica">Estrutura básica (HTML válido)</h3>
+                            </div>
+
+                            <p>O HTML inválido você já conhece. Agora vou lhe mostrar um HTML válido.</p>
+
+                            <div class="code">
+                                <h6>XHTML</h6>
+                                <pre><code>&lt!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt
+&lthtml xmlns="http://www.w3.org/1999/xhtml" &gt
     &lthead&gt
         &lttitle&gtTítulo da página&lt/title&gt
+        &ltmeta http-equiv="Content-type" content="text/html;charset=UTF-8" /&gt
+    &lt/head&gt
+    &ltbody&gt
+
+    &lt/body&gt
+&lt/html&gt</code></pre>
+                            </div>
+
+                            <p>O HTML acima é um XHTML válido porque ele atende aos requesitos básicos para poder ser
+                                considerado válido.</p>
+
+                            <p>Quem define os requesitos é o grupo W3C e o grupo WHATWG. O W3C disponibiliza até um
+                                validador online para efetuar a validação dos HTML (foi lá que eu testei).</p>
+
+                            <p>Se você comparar o HTML inválido com o válido, verá quais foram os elementos que
+                                faltaram para validar.</p>
+
+                            <p>Nós estamos falando de XHTML, que é uma versão anterior ao HTML5. O XHTML é interessante
+                                principalmente por que estamos aprendendo HTML.</p>
+
+                            <p>Atualmente (jan/2014) niguém inicia o desenvolvimento de uma aplicação web com XHTML,
+                                utilizamos o HTML5.</p>
+
+                            <p>Abaixo vemos um HTML 5 também válido.</p>
+
+                            <div class="code">
+                                <h6>HTML 5</h6>
+                                <pre><code>&lt!DOCTYPE html&gt
+&lthtml xmlns="http://www.w3.org/1999/xhtml" &gt
+    &lthead&gt
+        &lttitle&gtTítulo da página&lt/title&gt
+        &ltmeta charset="utf-8"&gt
+    &lt/head&gt
+    &ltbody&gt
+
+    &lt/body&gt
+&lt/html&gt</code></pre>
+                            </div>
+
+                            <p>Essa questão da validação é importante mas ficará para uma outra hora, ok?</p>
+
+                        </div>
+
+
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3 id="pequeno-exemplo">Pequeno Exemplo</h3>
+                            </div>
+
+
+                            <p>A baixo temos um exemplo de conteúdo. Utilizei título  de nível 1 (<code>h1</code>), nível 2
+                                (<code>h2</code>) e alguns parágrafos (<code>p</code>).</p>
+
+                            <div class="code">
+                                <h6>HTML</h6>
+                                <pre><code>&lt!DOCTYPE html&gt
+&lthtml xmlns="http://www.w3.org/1999/xhtml" &gt
+    &lthead&gt
+        &lttitle&gtTítulo da página&lt/title&gt
+        &ltmeta charset="utf-8"&gt
     &lt/head&gt
     &ltbody&gt
 
@@ -196,19 +286,10 @@ require "../../../core/boot.php";
 
     &lt/body&gt
 &lt/html&gt</code></pre>
-                        </div>
-
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h3 id="w3c">W3C</h3>
                             </div>
-
-                            <p>Completando a história da HTML: o W3C é um consórcio que regulamenta as especificações tanto do HTML como do CSS. O
-                                W3C é a fonte oficial do HTML e CSS. É possível encontrar as traduções das especificações para a língua portuguesa.
-                                Dois pequenos alertas :  a) Estudar pela especificação é mais difícil (e mais chata também) e b) nem todos os navegadores
-                                implementam as especificações em sua totalidade, isso significa que a especificação diz uma coisa e seu navegador
-                                comporta-se de outro, restando para o programador e/ou desginer "se virar" para encontrar um solução.</p>
                         </div>
+
+
 
                         <div class="bs-docs-section">
                             <div class="page-header">
@@ -232,6 +313,7 @@ require "../../../core/boot.php";
                             </div>
 
                         </div>
+
                     </div>
 
 
@@ -255,8 +337,43 @@ require "../../../core/boot.php";
                             <li>A CSS definie a estilização</li>
                         </ul>
 
-                        <p>A CSS é composta pelo que se chama de "regras de estilização"(rule-sets), um exemplo de regra seria: <strong>"todo parágrafo deve ter o
-                                tamanho da fonte em 12px e sua cor deve ser #767676"</strong>, traduzindo em código css ficaria assim:</p>
+                        <p>A CSS é composta pelo que se chama de "regras de estilização"(rule-sets), um exemplo de
+                            regra seria: </p>
+
+                        <pre><code class="no-highlight">todo parágrafo deve ter
+    o tamanho da fonte em 12 e
+    sua cor deve ser um tom de cinza meio escuro</code></pre>
+
+                        <p>O tamanho da fonte precisa de uma <strong>unidade de medida</strong>. As três unidades mais
+                            utilizadas são:</p>
+
+                        <ul>
+                            <li><code>px</code> pixel</li>
+                            <li><code>em</code> relativo ao tamanho da fonte</li>
+                            <li><code>%</code> porcentage</li>
+                        </ul>
+
+                        <p>Em breve falaremos mais sobre as unidades de medidas, por hora vamos acertar nosso exemplo.</p>
+
+                        <pre><code class="no-highlight">todo parágrafo deve ter
+    o tamanho da fonte em <em>12px</em>
+    sua cor deve ser um tom de cinza meio escuro</code></pre>
+
+                        <p>As cores podem ser representadas por números hexadecimais ou no esquema RGB. Cores é outro assunto que
+                            veremos os detalhes em breve. Por hora vamos acreditar que o hexadecimal <code>767676</code>
+                            precedido do sinal sharp <code>#</code> é equivalente a "um tom de cinza meio escuro"</p>
+
+                        <pre><code class="no-highlight">todo parágrafo deve ter
+    o tamanho da fonte em 12px
+    sua cor deve ser <em>#767676</em></code></pre>
+
+                        <p>Vou abreviar um pouco a regra acima, confira:</p>
+
+                        <pre><code class="no-highlight">todo parágrafo
+    tamanho da fonte: 12px
+    cor: #767676</em></code></pre>
+
+                        <p>Agora é só traduzir para CSS, veja:</p>
 
                         <div class="code">
                             <h6>CSS</h6>

@@ -92,9 +92,10 @@ require "../../../core/boot.php";
                         <p>Então devemos seguir o esquema <strong>rgb</strong> que significa red, green e blue, respectivamente. Os valores possíveis estão entre
                             0(zero) e 255, onde 0 significa que não temos nada do tom desejado e 255 significa que temos o máximo do tom desejado.</p>
 
-                        <p>Abaixo vemos a forma decimal e hexadecimal que representa a cor vermelha:</p>
+                        <p>Abaixo vemos a forma RGB e hexadecimal que representa a cor vermelha:</p>
 
-                        <pre><code>rgb(255, 0, 0)#FF0000</code></pre>
+                        <pre><code class="no-highlight">rgb(255, 0, 0)
+#FF0000</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Imagem das Cores" src="cores.png">
