@@ -56,7 +56,7 @@ require "../../../core/boot.php";
                                 <a href="#preg-match-all">preg&#95;math&#95;all()</a>
                             </li>
                         </ul>
-                    </div>                     
+                    </div>
                 </div>
 
                 <!-- Corpo da matéria -->
@@ -65,7 +65,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="quando">Quando precisamos dela?</h1>
-                        </div>                        
+                        </div>
 
                         <p>Se olharmos o primeiro exemplo da matéria anterior:</p>
 
@@ -110,7 +110,7 @@ if ($resultado === 1) {
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### apenas o primeiro resultado" src="php-preg-math.png" />
-                        </div>                         
+                        </div>
 
                         <p>Mas, se observarmos o exemplo lá no começo da matéria, a expressão casa com outras partes da string:</p>
 
@@ -124,7 +124,7 @@ if ($resultado === 1) {
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="preg-match-all">preg&#95;math&#95;all()</h1>
-                        </div> 
+                        </div>
 
 
                         <p>Uma saída é utilizar a função <code>preg&#95;math&#95;all()</code>, ela carregará a varirável <code>$retorno</code> com todos os resultados possíveis,
@@ -132,9 +132,9 @@ if ($resultado === 1) {
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### todos os resultados" src="php-preg-math-all.png" />
-                        </div>                          
+                        </div>
 
-                        <p>Segue o código alterado para a função preg&#95;math&#95;all():</p>
+                        <p>Segue o código alterado para a função <code>preg&#95;math&#95;all()</code>:</p>
 
                         <div class="code">
                             <h6>PHP</h6>
@@ -176,7 +176,7 @@ if ($resultado >= 1) {
                             encontradas, no exemplo o valor da variável <code>$resultado</code> é igual a 5 (pois temos cinco resultados).</p>
 
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
@@ -196,14 +196,14 @@ if ($resultado >= 1) {
                                 </div>
                             </div>
                         </div>
-                    </div>                    
-                    
-                    
+                    </div>
+
+
                     <?php
                     $core->paginacao->link_ativo = "/regexp/basico/varios-resultados-preg-match-all/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

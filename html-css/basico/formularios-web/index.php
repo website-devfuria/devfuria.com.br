@@ -99,9 +99,15 @@ require "../../../core/boot.php";
     &lt;body&gt;
 
         &lt;form action="script-para-onde-envio-os-dados.php" method="post"&gt;
-            Name:  &lt;input type="text" name="username" value="João da Silva" /&gt;&lt;br /&gt;
-            Email: &lt;input type="text" name="email"  value="joao@dasilva.com" /&gt;&lt;br /&gt;
-            &lt;input type="submit" value="Submit me!" /&gt;
+            &lt;p&gt;
+                Name:  &lt;input type="text" name="username" value="João da Silva" /&gt;&lt;br /&gt;
+            &lt;/p&gt;
+            &lt;p&gt;
+                Email: &lt;input type="text" name="email"  value="joao@dasilva.com" /&gt;&lt;br /&gt;
+            &lt;/p&gt;
+            &lt;p&gt;
+                &lt;input type="submit" value="Submit me!" /&gt;
+            &lt;/p&gt;
         &lt;/form&gt;
 
     &lt;/body&gt;

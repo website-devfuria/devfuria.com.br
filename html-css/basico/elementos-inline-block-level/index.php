@@ -69,8 +69,9 @@ require "../../../core/boot.php";
                             para perceber como ele foi reenderizado.</p>
 
                         <div class="code">
-                            <h6>HTML(inválido)</h6>
-                            <pre><code class="language-html">&lt;html&gt;
+                            <h6>HTML</h6>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
     &lt;head&gt;
         &lt;title&gt;elementos in-li e block-level&lt;/title&gt;
         &lt;style type="text/css"&gt;
@@ -173,9 +174,11 @@ require "../../../core/boot.php";
 
                         <div class="code">
                             <h6>HTML(inválido)</h6>
-                            <pre><code class="language-html">&lt;html&gt;
+                            <pre><code class="language-html">&lt!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
     &lt;head&gt;
         &lt;title&gt;tipos INVERTIDOS&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt
         &lt;style type="text/css"&gt;
             body * {
                 border: 1px solid #000;
@@ -203,9 +206,9 @@ require "../../../core/boot.php";
         &lt;p&gt;parágrafo a&lt;/p&gt;
         &lt;p&gt;parágrafo b&lt;/p&gt;
 
-        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
-        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
-        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
+        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png" alt=""/&gt;
+        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png" alt=""/&gt;
+        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png" alt=""/&gt;
 
         &lt;div&gt;div 1&lt;/div&gt;
         &lt;div&gt;div 2&lt;/div&gt;

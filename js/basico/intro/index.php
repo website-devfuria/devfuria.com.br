@@ -191,21 +191,21 @@ element.onclick = function() {
 
                         <div class="code">
                             <h6>HTML</h6>
-                            <pre><code class="language-html">&lt!DOCTYPE html&gt
-&lthtml&gt
-    &lthead&gt
-        &ltmeta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt
-        &lttitle&gtHello, World!&lt/title&gt
-    &lt/head&gt
-    &ltbody&gt
+                            <pre><code class="language-html">&lt!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello, World!&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
-        &ltimg id="myimage" src="../imagens/pic_bulboff.gif" alt="lampada"/&gt
-        &ltp&gtClick the light bulb to turn on/off the light&lt/p&gt
+        &lt;img id="myimage" src="pic_bulboff.gif" alt="lampada"/&gt;
+        &lt;p&gt;Click the light bulb to turn on/off the light&lt;/p&gt;
 
-        &ltscript type="text/javascript" src="codigo.js"&gt&lt/script&gt
+        &lt;script type="text/javascript" src="codigo.js"&gt;&lt;/script&gt;
 
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                         </div>
 
                         <p>Temos uma tag "img" e seu atributo "src" que aponta para uma imagem no servidor. É nesse elemento que nossa lógica irá
