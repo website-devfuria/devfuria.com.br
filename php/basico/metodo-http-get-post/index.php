@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Como funcionam os métodos GET e POST');
-        $core->head->setDescription('Introdução prática e descomplicada sobre o protocolo HTTP. Nosso objetivo é entender os métdos GEt e POST.');
+        $core->head->setDescription('Introdução prática e descomplicada sobre o protocolo HTTP. Nosso objetivo é entender os métodos GET e POST.');
         $core->head->setkeywords('http; get; post; stateless');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
