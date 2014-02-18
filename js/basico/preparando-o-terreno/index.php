@@ -122,7 +122,7 @@ require "../../../core/boot.php";
     &lt;head&gt;
         &lt;title&gt;Hello, World!&lt;/title&gt;
         &lt;meta charset="utf-8"&gt;
-        <em>&lt;script type="text/javascript" src="codigo.js" /&gt;</em>
+        <em>&lt;script type="text/javascript" src="codigo.js"&gt;&lt;/script&gt;</em>
     &lt;/head&gt;
     &lt;body&gt;
         ...
