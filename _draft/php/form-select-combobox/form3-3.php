@@ -5,6 +5,14 @@ $arrCombo = array(
     "sbc" => "São Bernardo do Campo"
 );
 $valor_selecionado = "sbc";
+
+function combobox($arrDados, $valorSelecionado) {
+    echo "<option></option>";
+    foreach ($arrDados as $key => $value) {
+        $selected = ($valorSelecionado == $key) ? "selected=\"selected\"" : null;
+        echo "<option value=\"$key\"  $selected>$value</option>";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,11 +25,7 @@ $valor_selecionado = "sbc";
         <form action="form2-action.php" method="post">
             <p>
                 <select name="pais">
-                    <option></option>
-                    <?php foreach ($arrCombo as $key => $value): ?>
-                        <?php $selected = ($valor_selecionado == $key) ? "selected=\"selected\"" : null; ?>
-                        <?php echo "<option value=\"$key\"  $selected>$value</option>"; ?>
-                    <?php endforeach; ?>
+                    <?php combobox($arrCombo, $valor_selecionado); ?>
                 </select>
             </p>
             <p>

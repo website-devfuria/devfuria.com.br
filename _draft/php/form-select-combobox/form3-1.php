@@ -8,7 +8,7 @@ $arrCombo = array(
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title> Formulário: combobox </title>
+        <title>Formulário: combobox</title>
         <meta charset="utf-8">
     </head>
     <body>
@@ -19,8 +19,8 @@ $arrCombo = array(
                     <option></option>
                     <?php foreach ($arrCombo as $key => $value): ?>
                         <?php echo "<option value=\"$key\" >$value</option>"; ?>
-                    <?php endforeach; ?>                     
-                </select>                
+                    <?php endforeach; ?>
+                </select>
             </p>
             <p>
                 <input type="submit" value="Submit me!" />

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title> Formulário: combobox </title>
+        <title>Formulário: combobox</title>
         <meta charset="utf-8">
     </head>
     <body>
@@ -13,7 +13,7 @@
                     <option value="scs">São Caetano do Sul</option>
                     <option value="sa">Santo André</option>
                     <option value="sbc">São Bernardo do Campo</option>
-                </select>                
+                </select>
             </p>
             <p>
                 <input type="submit" value="Submit me!" />
