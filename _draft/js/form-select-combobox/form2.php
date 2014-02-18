@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title> Formulário: combobox </title>
+        <title>Formulário: combobox</title>
         <meta charset="utf-8">
     </head>
     <body>
-
         <form action="form2-action.php" method="post">
             <p>
                 <select id="cboPais">
@@ -13,7 +12,7 @@
                     <option value="scs">São Caetano do Sul</option>
                     <option value="sa">Santo André</option>
                     <option value="sbc">São Bernardo do Campo</option>
-                </select>                
+                </select>
             </p>
             <p>
                 <input type="button" id="btn" value="Veja o log do Firebug" />
