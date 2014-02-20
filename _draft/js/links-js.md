@@ -1,4 +1,15 @@
 
+ ECMAScript 6 compatibility table
+http://kangax.github.io/es5-compat-table/es6/
+
+
+Novidades do ecma 6
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+
+Veja esta função querySelectorAll()
+https://developer.mozilla.org/en-US/docs/Web/API/Document.querySelectorAll
+
 Ponto de referência
 http://javascriptissexy.com/
 
