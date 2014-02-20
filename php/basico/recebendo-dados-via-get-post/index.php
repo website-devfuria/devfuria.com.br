@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * PHP
  */
 /**
  * Includes
@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Recebendo dados via GET e POST');
-        $core->head->setDescription('');
+        $core->head->setDescription('Matéria de php sobre as variáveis globais $_GET e $_POST.');
         $core->head->setkeywords('');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -47,6 +47,26 @@ require "../../../core/boot.php";
 
                 <!-- navegação lateral esquerdo -->
                 <div class="col-md-3">
+                    <div class="bs-sidebar hidden-print" role="complementary">
+                        <ul class="nav bs-sidenav">
+                            <li><a href="#get-post">Apresento-lhes GET/POST!</a></li>
+                            <li>
+                                <a href="#sem-requisicao">Sem requisição</a>
+                            </li>
+                            <li>
+                                <a href="#key-nao-existe">Quando a key(chave) não existe</a>
+                            </li>
+                            <li>
+                                <a href="#checando">Checando o valor</a>
+                            </li>
+                            <li>
+                                <a href="#op-ternario">Incializando com operador ternário</a>
+                            </li>
+                            <li>
+                                <a href="#duplicando-variaveis">Duplicando as variáveis</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Corpo da matéria -->
@@ -54,7 +74,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2 id="">Senhoras e senhores, apresento-lhes o GET e o POST!</h2>
+                            <h2 id="get-post">Senhoras e senhores, apresento-lhes o GET e o POST!</h2>
                         </div>
 
                         <p><code>$_GET</code> e <code>$_POST</code> são variáveis globais, você poderá utilizá-las em
@@ -68,7 +88,7 @@ require "../../../core/boot.php";
 
                         <p>Ambas são do tipo <strong>array</strong>.</p>
 
-                        <h3>Sem requisição</h3>
+                        <h3 id="sem-requisicao">Sem requisição</h3>
 
                         <p>Se executarmos o script abaixo, veremos o resultado <code>array empty</code>, quer dizer
                             não houve requisição alguma.</p>
@@ -93,7 +113,7 @@ var_dump($_GET, $_POST);
                         <pre><code class="language-php">$_GET['nome'] = valor</code></pre>
 
 
-                        <h3>Quando a key(chave) não existe</h3>
+                        <h3 id="key-nao-existe">Quando a key(chave) não existe</h3>
 
                         <p>Quando executamos o script abaixo sem os devidos paramêtros...</p>
 
@@ -141,7 +161,7 @@ echo $_GET['foo'];
 
 
 
-                        <h3>Incializando com operador ternário <code>(expressão) ? true : false ; </code></h3>
+                        <h3 id="op-ternario">Incializando com operador ternário <code>(expressão) ? true : false ; </code></h3>
 
                         <p>Uma variável pode ser inicaliza com o valor <code>null</code>, exemplo:</p>
 
@@ -223,7 +243,7 @@ echo $_POST['abacaxi'];
 
                         <p>Economizamos algumas linhas sem prejudicar a legibilidade (leia-se limpeza) do código.</p>
 
-                        <h3>Duplicando as variáveis</h3>
+                        <h3 id="duplicando-variaveis">Duplicando as variáveis</h3>
 
                         <p>Antigamente, a forma abaixo era muito usual.</p>
 
