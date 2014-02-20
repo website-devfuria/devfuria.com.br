@@ -124,11 +124,10 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
                             <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/08/19/erro-nao-documentado/" title="link-externo">Vida de programador</a></p>
                         </div>
 
-                        <p>Debugar é também sinônimo de teste. Porém "testes" é uma palavra com escopo ampliado.</p>
+                        <p>Superficialmente, <strong>debugar</strong> é sinônimo de teste, mas em essência são coisas 
+                            totalmente diferentes. "Testes" é uma palavra com escopo ampliado.</p>
 
-                        <p>Veja o que a Wikipedia tem a nos dizer: <a href="http://pt.wikipedia.org/wiki/Teste_de_software" title="link-externo">http://pt.wikipedia.org/wiki/Teste&#95;de&#95;software</a></p>
-
-                        <p>Não vamos falar sobre testes agora, ok? Mas apenas formas simples de depuração.</p>
+                        <p>Veja o que a Wikipedia tem a nos dizer sobre testes: <a href="http://pt.wikipedia.org/wiki/Teste_de_software" title="link-externo">http://pt.wikipedia.org/wiki/Teste&#95;de&#95;software</a></p>
 
                     </div>
 
@@ -149,8 +148,8 @@ alert(minha_variavel);</code></pre>
                         </div>
 
 
-                        <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) através do método write() do
-                            objeto "document".</p>
+                        <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) 
+                            através do método <code>write()</code> do objeto  nativo  <code>document</code>.</p>
 
                         <pre><code class="language-javascript">var minha_variavel = "Hello word";
 document.write(minha_variavel);</code></pre>
@@ -207,15 +206,15 @@ console.log(minha_variavel);</code></pre>
                         </div>
 
                         <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a
-                            linguágem é interpretada, estou me referindo ao código que demonstra erros.
+                            linguagem é interpretada, estou me referindo ao código trava por causa de um erro.
                             <strong>E como demostrar os erros?</strong>.</p>
 
-                        <p>Quando executamos o arquivo (seja .html ou .php ou qualquer outra linguagem que você use) os
+                        <p>Quando executamos o arquivo (seja <code>.html</code> ou <code>.php</code> ou qualquer outra linguagem que você use) os
                             erros podem não aparecerem, em outras palavra, alguns erros são "timidos". Para encorajá-los
-                            a sair da "toca" é preciso utilizar o console.log() e, obviamente, manter o firebug aberto.</p>
+                            a sair da "toca" é preciso utilizar o <code>console.log()</code> e, obviamente, manter o Firebug aberto.</p>
 
                         <p>O teste mais básico que podemos fazer em um script JS é abrir o HTML, ligar o Firebug (acione a tecla F12), escolha a aba "console" e
-                            recarrega a página con a tecla F5 ( à vezes precisamos executar um CTRl + F5, isso força a atualização).</p>
+                            recarrega a página cmn a tecla F5 ( à vezes precisamos executar um CTRL + F5, isso força a atualização).</p>
 
                         <p>Se não aparecer nenhuma mensagem de erro, ótimo! Seu script está correto (pelo menos do ponto de vista da sintaxe).</p>
                     </div>
