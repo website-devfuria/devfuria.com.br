@@ -1,4 +1,4 @@
-/*
+/**
  * Botão Submit
  */
 document.getElementById("btnSubmit").onclick = function() {
