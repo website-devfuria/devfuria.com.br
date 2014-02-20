@@ -131,6 +131,26 @@ require "../../../core/boot.php";
                             <li>utilzam os dois pontos como separador "nome: valor"</li>
                         </ul>
                     </div>
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manual do JS (MDN)</h4>
+                                        <p class="list-group-item-text">Introduzindo a Orientação a Objetos.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <?php
                     $core->paginacao->link_ativo = "/js/basico/oop-primeiro-degrau/";

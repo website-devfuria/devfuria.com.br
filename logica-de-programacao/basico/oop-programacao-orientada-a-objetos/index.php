@@ -66,7 +66,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">Introdução</h1>
-                        </div> 
+                        </div>
 
                         <p>O OOP (Object Oriented Programming) ou Programação Orientada a Objeto remonta a época da
                             linguagem Smalltalk.</p>
@@ -95,7 +95,7 @@ require "../../../core/boot.php";
 
                         <h3>Os conceitos</h3>
 
-                        <p>Seguindo a didática do site, não aprofundarei os conceitos de OOP (não por enquanto).</p>                        
+                        <p>Seguindo a didática do site, não aprofundarei os conceitos de OOP (não por enquanto).</p>
 
                         <p>Veremos na prática como a coisa funciona e, somente após ter experimentado, entraremos
                             com os conceitos e suas definições.</p>
@@ -124,7 +124,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="php">Implementação PHP</h1>
-                        </div> 
+                        </div>
 
                         <p>O código abaixo é denominado "código cliente", pois é ele quem faz uso da classe <code>Triangulo</code>.</p>
 
@@ -166,7 +166,7 @@ $objeto->metodo();</code></pre>
 
                         <pre><code  class="language-php">class Triangulo {
     # sua propriedades
-    
+
     # seus métodos
 }</code></pre>
 
@@ -198,7 +198,7 @@ $objeto->metodo();</code></pre>
     public $a;
     public $b;
     public $c;
-    
+
     # seus métodos
     <em>public</em> function validarForma() {
 
@@ -207,7 +207,7 @@ $objeto->metodo();</code></pre>
 }</code></pre>
 
                         <p>Dentro dos métodos, as variáveis, ou melhor, as propriedades são referenciadas pela palavra chave
-                            <code>$this</code>:</p>        
+                            <code>$this</code>:</p>
 
                         <pre><code  class="language-php">class Triangulo {
 
@@ -215,7 +215,7 @@ $objeto->metodo();</code></pre>
     public $a;
     public $b;
     public $c;
-    
+
     # seus métodos
     public function validarForma() {
         echo $this->a;
@@ -255,21 +255,21 @@ class Triangulo {
 }
 
 </code></pre>
-                        </div>                        
+                        </div>
 
                         <p>Olhando para a classe podemos afirmar que <strong>classe é um conjunto de métodos e
                                 propriedades</strong>. Isso é a única coisa em comum na implementaçã do Javascript.</p>
-                    </div>                        
+                    </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="js">Implementação Javascript</h1>
-                        </div> 
+                        </div>
 
                         <p>Esqueça tudo o que você viu sobre OOP no PHP, em Javascript "o inimigo agora é outro".</p>
 
-                        <p>JS não possue classes, isso significa que não instanciaremos classes, afinal de contas aqui 
+                        <p>JS não possue classes, isso significa que não instanciaremos classes, afinal de contas aqui
                             elas não existem.</p>
 
                         <p>Minha sugestão é que você esqueça um pouco essas questões, lembre-se que estamos na seção
@@ -285,8 +285,8 @@ class Triangulo {
 triangulo.b = 4;
 triangulo.c = 5;
 console.log(  triangulo.validarForma()  );
-</code></pre>                        
-                        </div>                  
+</code></pre>
+                        </div>
 
                         <p>Em JS invocamos os atributos e métodos através do "ponto" <code>.</code> conforme esquema a seguir:</p>
 
@@ -297,7 +297,7 @@ objeto.propriedade = 123;
 document.write( objeto.propriedade );
 
 # executando um método (uma função)
-objeto.metodo();</code></pre>                            
+objeto.metodo();</code></pre>
 
 
                         <h3>Criando o objeto</h3>
@@ -314,11 +314,11 @@ objeto.metodo();</code></pre>
     b: 0,
     c: 0,
     metodo: function() {
-    
+
     }
 }</code></pre>
 
-                        <p>Assim como o PHP, dentro dos métodos, as variáveis, ou melhor, as propriedades são 
+                        <p>Assim como o PHP, dentro dos métodos, as variáveis, ou melhor, as propriedades são
                             referenciadas pela palavra chave <code>this</code>:</p>
 
                         <pre><code  class="language-javascript">var objeto = {
@@ -330,7 +330,7 @@ objeto.metodo();</code></pre>
         console.log( this.b );
         console.log( this.c );
     }
-}</code></pre>                        
+}</code></pre>
 
                         <p>O método <code>validarForma()</code> é semelhante ao codificado em PHP na matéria
                             <a href='<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/'>Code - Triângulo </a>.
@@ -352,11 +352,11 @@ objeto.metodo();</code></pre>
             }
         } else {
             return false;
-        }    
+        }
     }
 };
 </code></pre>
-                        </div>                        
+                        </div>
 
 
                         <p>Não esqueça que para os scripts acima funcionarem você precisará de um HTML unindo-os.</p>
@@ -375,16 +375,16 @@ objeto.metodo();</code></pre>
 
         &lt;script type="text/javascript" src="Triangulo.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript" src="script-cliente.js"&gt;&lt;/script&gt;
-        
+
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                        </div>           
+                        </div>
                     </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="conclusao">Concluindo</h1>
-                        </div>                        
+                        </div>
 
                         <p>Agora estamos habilitados a resolver nossos probelmas de lógica com o paradigma de OOP. </p>
 
@@ -417,14 +417,14 @@ objeto.metodo();</code></pre>
                                         <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript</span>
                                     </a>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
-                    </div>                        
+                    </div>
                     <?php
                     $core->paginacao->link_ativo = "/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                         
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

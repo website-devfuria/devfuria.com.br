@@ -265,46 +265,73 @@ element.onclick = function() {
                         <p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>
 
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
-                            </div>
-
-                            <div class="panel panel-success">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Livros</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="media">
-                                        <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857780542&ordem=prec#precos" title="link-externo">
-                                            <img class="media-object" src="livro-simple-js.jpg" alt="### Imagem do livro 'Simple Javascript'">
-                                        </a>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Só Javascript (Simple Javascript)</h4>
-                                            <p>Kevin e Cameron, Editora Bookman</p>
-                                            <p class="list-group-item-text">Esse livro é sensacional para quem está começando.</p>
-                                            <p class="list-group-item-text">A didádica tem começo, meio e fim.</p>
-                                            <p class="list-group-item-text">Nota 10, realmente muito bom.</p>
-                                        </div>
-                                    </div>
-                                    <div class="media">
-                                        <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857608279&ordem=prec#precos" title="link-externo">
-                                            <img class="media-object" src="livro-melhor-js.jpg" alt="### Imagem do livro 'O Melhor do Javascript'">
-                                        </a>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">O Melhor do Javascript</h4>
-                                            <p>Douglas Crockford, Editora Altabooks</p>
-                                            <p class="list-group-item-text">Este livro não é recomendado para iniciantes, ele é nível avançado.</p>
-                                            <p class="list-group-item-text">Mas quem sou eu para subjulgar a sua capacidade?</p>
-                                            <p class="list-group-item-text">De qualquer forma é um livro para quem vai encarar o JS de verdade.</p>
-                                            <p class="list-group-item-text">Livro de cabeceira e indispensável.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
+
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                        </div>
+
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Livros</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="media">
+                                    <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857780542&ordem=prec#precos" title="link-externo">
+                                        <img class="media-object" src="livro-simple-js.jpg" alt="### Imagem do livro 'Simple Javascript'">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Só Javascript (Simple Javascript)</h4>
+                                        <p>Kevin e Cameron, Editora Bookman</p>
+                                        <p class="list-group-item-text">Esse livro é sensacional para quem está começando.</p>
+                                        <p class="list-group-item-text">A didádica tem começo, meio e fim.</p>
+                                        <p class="list-group-item-text">Nota 10, realmente muito bom.</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857608279&ordem=prec#precos" title="link-externo">
+                                        <img class="media-object" src="livro-melhor-js.jpg" alt="### Imagem do livro 'O Melhor do Javascript'">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">O Melhor do Javascript</h4>
+                                        <p>Douglas Crockford, Editora Altabooks</p>
+                                        <p class="list-group-item-text">Este livro não é recomendado para iniciantes, ele é nível avançado.</p>
+                                        <p class="list-group-item-text">Mas quem sou eu para subjulgar a sua capacidade?</p>
+                                        <p class="list-group-item-text">De qualquer forma é um livro para quem vai encarar o JS de verdade.</p>
+                                        <p class="list-group-item-text">Livro de cabeceira e indispensável.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/JavaScript_Vis%C3%A3o_Geral" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Visão geral do Javascript (MDN)</h4>
+                                        <span class="label label-default">https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/JavaScript_Vis%C3%A3o_Geral</span>
+                                    </a>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Guia sobre o Javascript (MDN)</h4>
+                                        <p class="list-group-item-text">Guia oficial do Javascript.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide</span>
+                                    </a>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Referência Javascript (MDN)</h4>
+                                        <p class="list-group-item-text">Referência oficial do Javascript.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                     <?php
                     $core->paginacao->link_ativo = "/js/basico/intro";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
