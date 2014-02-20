@@ -280,28 +280,16 @@ echo $laranja</code></pre>
                                         <p>Falando sobre <code>$_POST</code></p>
                                         <span class="label label-default">http://www.php.net/manual/en/reserved.variables.post.php</span>
                                     </a>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
                                     <a href="http://php.net/manual/pt_BR/reserved.variables.get.php" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do PHP</h4>
                                         <p>Falando sobre <code>$_GET</code></p>
                                         <span class="label label-default">http://php.net/manual/pt_BR/reserved.variables.get.php</span>
                                     </a>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
                                     <a href="http://php.net/manual/pt_BR/language.operators.comparison.php" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do PHP</h4>
-                                        <p>Falando sobre o operador ternário</p>
+                                        <p>Falando sobre o operador ternário <code>(boolean) ? true : false;</code></p>
                                         <span class="label label-default">http://php.net/manual/pt_BR/language.operators.comparison.php</span>
                                     </a>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
                                     <a href="http://www.php.net/manual/pt_BR/function.isset.php" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do PHP</h4>
                                         <p>Falando sobre a função <code>isset()</code></p>
