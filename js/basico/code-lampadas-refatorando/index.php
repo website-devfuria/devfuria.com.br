@@ -341,28 +341,54 @@ senão
 <em>lampada.setEvento();</em></code></pre>
                         </div>
 
+
+                        <div data-height="493" data-theme-id="2897" data-slug-hash="Jpefb" data-default-tab="js" class='codepen'><pre><code>var lampada = {
+    ligada: false,
+    element: document.getElementById(&#x27;myimage&#x27;),
+    setEvento: function() {
+        lampada.element.onclick = function(){
+            if (lampada.ligada) {
+                lampada.apagar();
+                lampada.ligada = false;
+            } else {
+                lampada.acender();
+                lampada.ligada = true;
+            }
+        };
+    },
+    acender: function() {
+        lampada.element.src = &quot;http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif&quot;;
+    },
+    apagar: function() {
+        lampada.element.src = &quot;http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif&quot;;
+    }
+};
+lampada.setEvento();</code></pre>
+                            <p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/Jpefb'>a lâmpada- refatorado</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+
+
+                        <h3>Exercício</h3>
+
                         <p>Aproveite para testar o código, digo, veja cada valor de variável, sugestões;</p>
 
-                        <p>console.log(lampada);
-                            console.log(lampada.ligada);
-                            console.log(lampada.element);
-                            console.log(lampada.acender);
-                            console.log(lampada.apagar);</p>
+                        <ul>
+                            <li><code>console.log(lampada);</code></li>
+                            <li><code>console.log(lampada.ligada);</code></li>
+                            <li><code>console.log(lampada.element);</code></li>
+                            <li><code>console.log(lampada.acender);</code></li>
+                            <li><code>console.log(lampada.apagar);</code></li>
+                        </ul>
 
                         <p>Procure variações e pontos diferentes, vá anotando os nomes que aparecem, você deve notar pelo menos os seguintes</p>
 
                         <ul>
-                            <li>object</li>
-                            <li>function()</li>
-                            <li>undefined</li>
-                            <li>false</li>
-                            <li>true</li>
+                            <li><code>object</code></li>
+                            <li><code>function()</code></li>
+                            <li><code>undefined</code></li>
+                            <li><code>false</code></li>
+                            <li><code>true</code></li>
                         </ul>
-
-                        <p>Se preferir, baixe os arquivos através dos links: <a href="codigo-refatorado.js" title="link-externo">codigo-refatorado.js</a>, <a href="lampadas.html" title="link-externo">lampadas.html</a>.</p>
-
-                        <p>Baixe também as imagens das lâmpadas: <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif" title="link-externo">lâmpada apagada</a>,
-                            <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
 
                         <p>Agora chega de lâmpadas, na próxima matéria mudaremos o assunto, até lá.</p>
                     </div>

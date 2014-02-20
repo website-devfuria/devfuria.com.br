@@ -146,7 +146,7 @@ echo $_POST['email']; // print joao@dasilva.com
 </code></pre>
 
                         <p>
-                            O que fazer com so dados nós veremos na matéria
+                            O que fazer com o dados nós veremos na matéria
                             <a href="<?php echo LINKS_PATH; ?>/php/basico/recebendo-dados-via-get-post/">Recebendo dados via GET POST</a>
                         </p>
 
@@ -316,6 +316,7 @@ echo $_GET['email']; // print joao@dasilva.com
                                 <div class="list-group">
                                     <a href="http://www.php.net/manual/en/language.variables.external.php" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do PHP</h4>
+                                        <p>Falando sobre as variáveis globais <code>$_GET</code> e <code>$_POST</code></p>
                                         <span class="label label-default">http://www.php.net/manual/en/language.variables.external.php</span>
                                     </a>
                                 </div>

@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ *
  */
 /**
  * Includes
@@ -72,7 +72,7 @@ require "../core/boot.php";
                         </div>
 
 
-                        <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/">Code - Triângulo</a>.</p>                        
+                        <?php echo Aux::getAncora("/logica-de-programacao/basico/intro/", $core->links[Core::SECAO_LOG]); ?>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="">
@@ -80,14 +80,14 @@ require "../core/boot.php";
                             <p>Fonte:
                                 <a href="" title="link-externo" class="img-responsive"></a>
                             </p>
-                        </div>                        
+                        </div>
 
                         <pre><code class="no-highlight">código</code></pre>
 
                         <div class="code">
-                            <h6>pet.txt</h6>                        
+                            <h6>pet.txt</h6>
                             <pre><code class="no-highlight">código
-</code></pre></div>                        
+</code></pre></div>
 
                     </div>
 
@@ -110,7 +110,7 @@ require "../core/boot.php";
                             <h1 id="">Título 04</h1>
                         </div>
 
-                    </div>                    
+                    </div>
 
 
                     <div class="bs-docs-section">
@@ -143,14 +143,14 @@ require "../core/boot.php";
                                         <span class="label label-default"></span>
                                     </a>
                                 </div>
-                            </div>                        
-                        </div>                    
+                            </div>
+                        </div>
                     </div>
                     <?php
                     $core->paginacao->link_ativo = "/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                            
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
