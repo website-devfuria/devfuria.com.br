@@ -93,14 +93,13 @@ require "../../../core/boot.php";
 
                         <p>Crie um arquivo chamado <code>zengarden-sample.html</code> e comece colando a estrutura básica do HTML.</p>
 
+
                         <div class="code">
                             <h6>HTML - Nossa estrutura básica </h6>
-                            <pre><code class="language-html">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-
-&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" &gt;
-
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
     &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
         &lt;title&gt;css Zen Garden: The Beauty in CSS Design&lt;/title&gt;
 
     &lt;/head&gt;
