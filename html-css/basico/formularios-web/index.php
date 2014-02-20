@@ -66,7 +66,7 @@ require "../../../core/boot.php";
                                 <a href="#nao-inputs">Controles básicos (não input)</a>
                                 <ul class="nav">
                                     <li><a href="#nao-input-combobox">Caixa de seleção (combo box)</a></li>
-                                    <li><a href="#nao-input-listbox">List box</a></li>
+                                    <li><a href="#nao-input-listbox">Caixa de multipla seleção (List box)</a></li>
                                     <li><a href="#nao-input-textarea">Text box multiline (textarea)</a></li>
                                 </ul>
                             </li>
@@ -319,7 +319,7 @@ require "../../../core/boot.php";
 
 
 
-                        <h3 id="nao-input-listbox">List box</h3>
+                        <h3 id="nao-input-listbox">Caixa de multipla seleção (List box)</h3>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Exemplo de botões" src="select-multiple-list.png">
