@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/js/basico/code-lampadas/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -103,8 +104,8 @@ require "../../../core/boot.php";
                             <h1 id="intro">Analisando código</h1>
                         </div>
 
-                        <p>Nessa matéria utilizarei o código que faz a uma lámpada ascender e apagar visto na matéria
-                            <a href="http://www.devfuria.com.br/js/basico/intro/" title="JS|Intro">Introdução</a>
+                        <p>Nessa matéria utilizarei o código que faz a uma lâmpada ascender e apagar visto na matéria
+                            <?php echo Aux::getAncora("/js/basico/intro/", $core->links[Core::SECAO_JS]); ?>
                         </p>
 
                         <p>Clique nas abas para visualizar as partes separadamente: HTML, JS e resultado.</p>
@@ -437,7 +438,7 @@ se não
                             <p>Até lá.</p>
                         </div>
                         <?php
-                        $core->paginacao->link_ativo = "/js/basico/code-lampadas/";
+                        $core->paginacao->link_ativo = $url;
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                         ?>
@@ -452,7 +453,7 @@ se não
                             <h1>Javascript</h1>
                             <?php
                             $core->lista->setLinks($core->links, Core::SECAO_JS);
-                            $core->lista->link_ativo = "/js/basico/code-lampadas/";
+                            $core->lista->link_ativo = $url;
                             include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                             ?>
                         </div>
