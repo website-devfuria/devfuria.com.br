@@ -66,6 +66,7 @@ require (BASE_PATH . "/oop/Head.php");
 require (BASE_PATH . "/oop/NavTop.php");
 require (BASE_PATH . "/oop/ListaSecao.php");
 require (BASE_PATH . "/oop/Paginacao.php");
+require (BASE_PATH . "/oop/Aux.php");
 
 
 /**

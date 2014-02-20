@@ -11,7 +11,7 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Introdução a linguagem de programação JAVASCRIPT');
+        $core->head->setTitle('Javascript: Introdução a linguagem de programação Javascript');
         $core->head->setDescription('Uma introdução ao Javascript. Acompanha 2 script para quebrar o gelo');
         $core->head->setkeywords('iniciando em javascript, aprendendo javascript, começando com javascript');
         $core->head->setAuthor();
@@ -208,12 +208,15 @@ element.onclick = function() {
 &lt;/html&gt;</code></pre>
                         </div>
 
-                        <p>Temos uma tag "img" e seu atributo "src" que aponta para uma imagem no servidor. É nesse elemento que nossa lógica irá
-                            atuar. Presisamos "pegar" a imagem via JS, para tal utilizamos a função "getElementeById" (traduzindo: pegue o elemento
-                            pelo id) e armazenamos o resultado na variável "element". Até aqui tudo bem.</p>
+                        <p>Temos a tag <code>img</code> e seu atributo <code>src</code> que aponta para uma imagem no
+                            servidor. É nesse elemento que nossa lógica irá atuar. Presisamos "pegar" a imagem via JS,
+                            para tal utilizamos a função <code>getElementeById</code>
+                        </p>
+                        <p>A função pegará o elemento através de seu <code>id</code> e então poderemos armazenar o
+                            resultado na variável <code>element</code>. Até aqui tudo bem.</p>
 
-                        <p>Na sequência, atribuímos uma função para o evento "onclick" do elemento capurado. Não entendendeu como é feito isto?
-                            Veja o código de forma mais limpa:</p>
+                        <p>Na sequência, atribuímos uma função para o evento <code>onclick</code> do elemento capurado.
+                            Não entendendeu como é feito isto? Veja o código de forma mais limpa:</p>
 
                         <div class="code">
                             <h6>JS</h6>
@@ -224,20 +227,24 @@ element.onclick = function() {
 };</em></code></pre>
                         </div>
 
-                        <p>A função que embutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ela testa se o valor de "src" do
-                            elemento é igual a "bulbon". Se for, ele troca para "pic&#95;bulboff.gif", se não ele troca para "pic&#95;bulbon.gif".</p>
+                        <p>A função que embutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ela testa
+                            se o valor de <code>src</code> do elemento é igual a  string <code>"bulbon"</code>. Se for,
+                            ele troca para <code>"pic&#95;bulboff.gif"</code>, se não ele troca para <code>"pic&#95;bulbon.gif"</code>.
+                        </p>
 
-                        <p>E assim temos a impressão de acender e apagar a lâmpada.
-                            Isso é Javascript!</p>
+                        <p>Dessa forma, temos a impressão de acender e apagar a lâmpada.</p>
+
+                        <p>Isso é Javascript!</p>
 
                         <p>No curso, iremos estudar o JS em conjunto com suas irmãs (siamesas): HTML e CSS. O leitor deve ter certa familiaridade
                             com essas tecnologias porque, JS sem elas é hardware sem software.</p>
 
-                        <p>Este curso foi, inicialmente, idealizado para iniciantes em programaçã e pessoas autodidatas que nunca frenquentaram um
+                        <p>Este curso foi, inicialmente, idealizado para iniciantes em programação e pessoas autodidatas que nunca frenquentaram um
                             curso regular de informática. Se este for o seu caso, talvez lhe falte um pouco de lógica de programação, aconselho a
-                            fazer uma leitura atenta das 6 matérias do nível zero de PHP, afinal ĺógica é lógica em qualquer linguagem.</p>
+                            fazer uma leitura atenta das matérias da seção <strong>lógica de programação</strong>, afinal
+                            ĺógica é lógica em qualquer linguagem.</p>
 
-                        <p>Atualmente (set/2012) JS disponta como o principal alicerce de um desenvolvedor front-end(client-side). Desenvolver do
+                        <p>Atualmente (set/2012), JS disponta como o principal alicerce de um desenvolvedor front-end(client-side). Desenvolver do
                             lado do cliente, desenvolvedor de interfaces, engenheiro front-end. Seja lá qual for o nome, o fato é que cada vez mais
                             a atividade está se tornando uma profissão madura e respeitada (e bem remunerada).</p>
 
