@@ -12,7 +12,7 @@ $url = "/php/basico/textbox-password-textarea/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle("HP - input type text input type password textarea");
+        $core->head->setTitle("PHP - input type text input type password textarea");
         $core->head->setDescription('Aprendendo como os campos textbox, password e textarea funcionam com o PHP.');
         $core->head->setkeywords('');
         $core->head->setAuthor();
