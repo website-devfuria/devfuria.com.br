@@ -1,11 +1,12 @@
 <?php
 /**
- *
+ * QUAL SEÇÂO ?
  */
 /**
  * Includes
  */
 require "../core/boot.php";
+$url = "";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -66,10 +67,44 @@ require "../core/boot.php";
                 <!-- Corpo da matéria -->
                 <div class="col-md-9" role="main">
 
+
+                    
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="">Título 01</h1>
                         </div>
+
+
+
+
+                    </div>
+
+
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="">Título 02</h1>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="">Título 03</h1>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="">Título 04</h1>
+                        </div>
+
+
 
 
                         <?php echo Aux::getAncora("/logica-de-programacao/basico/intro/", $core->links[Core::SECAO_LOG]); ?>
@@ -89,28 +124,12 @@ require "../core/boot.php";
                             <pre><code class="no-highlight">código
 </code></pre></div>
 
-                    </div>
 
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="">Título 02</h1>
-                        </div>
+
 
                     </div>
 
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="">Título 03</h1>
-                        </div>
 
-                    </div>
-
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="">Título 04</h1>
-                        </div>
-
-                    </div>
 
 
                     <div class="bs-docs-section">
@@ -147,7 +166,7 @@ require "../core/boot.php";
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
@@ -162,7 +181,7 @@ require "../core/boot.php";
                         <h1></h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_JS);
-                        $core->lista->link_ativo = "/";
+                        $core->lista->link_ativo = $url;
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
