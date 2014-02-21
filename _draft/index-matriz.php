@@ -6,7 +6,7 @@
  * Includes
  */
 require "../core/boot.php";
-$url = "";
+$url = "/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
