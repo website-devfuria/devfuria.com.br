@@ -1,17 +1,18 @@
 <?php
 /**
- *
+ * PHP
  */
 /**
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/php/basico/textbox-password-textarea/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('PHP-textbox-password-textarea');
+        $core->head->setTitle("HP - input type text input type password textarea");
         $core->head->setDescription('Aprendendo como os campos textbox, password e textarea funcionam com o PHP.');
         $core->head->setkeywords('');
         $core->head->setAuthor();
@@ -28,9 +29,9 @@ require "../../../core/boot.php";
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1></h1>
-                <p></p>
-                <p></p>
+                <h1>Descobrindo os controles text, password e textarea</h1>
+                <p>Veremos como enviar e receber dados através dos controles</p>
+                <p>input text, password e textarea</p>
             </div>
         </div>
 
@@ -49,15 +50,15 @@ require "../../../core/boot.php";
                 <div class="col-md-3">
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
-                            <li><a href="#">Título 01</a></li>
+                            <li><a href="#form-exemplo">Formulário de exemplo</a></li>
                             <li>
-                                <a href="#">Título 02</a>
+                                <a href="#prop-name">Propriedade <code>name=""</code></a>
                             </li>
                             <li>
-                                <a href="#">Título 03</a>
+                                <a href="#recebendo-form">Recebendo o formulário web</a>
                             </li>
                             <li>
-                                <a href="#">Título 04</a>
+                                <a href="#carregando-form">Carregando o formulário web</a>
                             </li>
                         </ul>
                     </div>
@@ -68,7 +69,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="">Título 01</h1>
+                            <h1 id="form-exemplo">Formulário de exemplo</h1>
                         </div>
 
                         <p>O formulário abaixo eu peguei do livro do Andy Budd (Criando Páginas Web com CSS)</p>
@@ -90,12 +91,12 @@ require "../../../core/boot.php";
                         <ul>
                             <li>2 campos de texto (textbox ou <code>input=text</code>)</li>
                             <li>1 campo de password (<code>input=password</code>)</li>
-                            <li>1 campo de texto multinha (<code>&lt;textarea&gt;</code>)</li>
+                            <li>1 campo de texto multilinha (<code>&lt;textarea&gt;</code>)</li>
                         </ul>
 
                         <p>
                             Nós já estudamos sobre esses controles na matéria
-                            <?php echo Aux::getAncora("/html-css/basico/formularios-web/", Core::SECAO_HTML) ?>
+                            <?php echo Aux::getAncora("/html-css/basico/formularios-web/", $core->links[Core::SECAO_HTML]) ?>
                         </p>
 
                         <p>Esses 3 controles são semelhantes quanto ao que acontece por trás dos panos (lá no lado
@@ -105,7 +106,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="">Propriedade <code>name=""</code></h1>
+                            <h1 id="prop-name">Propriedade <code>name=""</code></h1>
                         </div>
 
                         <p>O PHP depende desta propriedade HTML.</p>
@@ -126,14 +127,14 @@ require "../../../core/boot.php";
 
                         <p>
                             Já vimos isso na matéria
-                            <?php echo Aux::getAncora("/php/basico/enviando-dados-via-get-post/", Core::SECAO_PHP) ?>
+                            <?php echo Aux::getAncora("/php/basico/enviando-dados-via-get-post/", $core->links[Core::SECAO_PHP]) ?>
                         </p>
 
                     </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="">Recebendo o formulário web</h1>
+                            <h1 id="recebendo-form">Recebendo o formulário web</h1>
                         </div>
 
                         <p>Ainda não respondemos a pergunta: O que é enviado para o servidor?</p>
@@ -143,7 +144,7 @@ require "../../../core/boot.php";
                         <ul>
                             <li><code>author</code></li>
                             <li><code>email</code></li>
-                            <li><code>past</code></li>
+                            <li><code>pass</code></li>
                             <li><code>text</code></li>
                         </ul>
 
@@ -173,7 +174,7 @@ $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
 
                         <p>
                             Também já vimos isso na matéria
-                            <?php echo Aux::getAncora("/php/basico/recebendo-dados-via-get-post/", Core::SECAO_PHP) ?>
+                            <?php echo Aux::getAncora("/php/basico/recebendo-dados-via-get-post/", $core->links[Core::SECAO_PHP]) ?>
                         </p>
 
                         <h3>E agora o que fazer com os dados?</h3>
@@ -191,11 +192,11 @@ $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="">Carregando o formulário web</h1>
+                            <h1 id="carregando-form">Carregando o formulário web</h1>
                         </div>
 
                         <p>Em muito casos queremos abrir o formulário já com alguns dados, quer dizer, estamos  carregando
-                        o formulário.</p>
+                            o formulário.</p>
 
                         <p>Agora usaremos a propriedade <code>value=""</code>.</p>
 
@@ -203,50 +204,130 @@ $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
 
                         <p>Os dados que colocarmos neste propriedade será exibido no controle do formulário. Faça o teste.</p>
 
-                        <p>Será o PHP quem vai escrever os dados de forma dinâmica, automatizada, veja:</p>
+                        <p>Escrevemos os dados no campos <code>value</code> como o código seguinte:</p>
 
                         <pre><code class="language-html">&lt;input type="" name="nome-do-campo" value="<em>&lt;?php echo $valor; ?&gt;</em>" /&gt;</code></pre>
 
+                        <p>O controle <strong>textarea</strong> utilizaremos de forma diferente, escreveremos os dados entre
+                            as tags <code>textarea</code>, veja:</p>
+
+                        <pre><code class="language-html">&lt;textarea&gt;<em>&lt;?php echo $valor; ?&gt;</em>&lt;/textarea&gt;</code></pre>
+
+                        <p>Então nosso formulário ficará da seguinte forma.</p>
+
+                        <div class="code">
+                            <h6>PHP e HTML</h6>
+                            <pre><code class="language-php">&lt;?php
+
+/**
+ * Aqui teríamos algum código para
+ * recuperar de uma fonte de dados
+ * as informação do formulário.
+ *
+ * Utilizaremos o código abaixo, apenas como fins ilustrativo,
+ * imaginando que ele vem de alguma fonte.
+ */
+$author = "Tom Jobim";
+$email = "tom@jobim.com";
+$pass = "1234";
+$text = "algum texto";
+
+?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+        &lt;title&gt;Simple Form&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;form id="comments_form" action="#" method="post"&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;Your Contact Details&lt;/legend&gt;
+                &lt;p&gt;
+                    &lt;label for="author"&gt;Name: &lt;em class="required"&gt;(Required)/em&gt;&lt;/label&gt;
+                    &lt;input name="author" id="author" type="text" value="<em>&lt;?php echo $author; ?&gt;</em>" /&gt;
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    &lt;label for="email"&gt;Email Address:&lt;/label&gt;
+                    &lt;input name="email" id="email" type="text" value="<em>&lt;?php echo $email; ?&gt;</em>" /&gt;
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    &lt;label for="pass"&gt;Password:&lt;/label&gt;
+                    &lt;input name="pass" id="pass" type="password" value="<em>&lt;?php echo $pass; ?&gt;</em>" /&gt;
+                &lt;/p&gt;
+            &lt;/fieldset&gt;
+
+            &lt;fieldset&gt;
+                &lt;legend&gt;Comments&lt;/legend&gt;
+                &lt;p&gt;
+                    &lt;label for="text"&gt;Message: &lt;em class="required"&gt;(Required)&lt;/em&gt;&lt;/label&gt;
+                    &lt;textarea name="text" id="text" cols="20" rows="10"&gt;<em>&lt;?php echo $text; ?&gt;</em>&lt;/textarea&gt;
+                &lt;/p&gt;
+            &lt;/fieldset&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+
+                            <h3>Importante</h3>
+
+                            <p>Acho que este é o primeiro exemplo no site onde misturamos código PHP com HTML. Com certeza
+                                não será a última. Na verdade repetiremos muito isso ainda.</p>
+
+                            <p>Essa facilidade de misturar HTML e PHP é uma das caracteristicas mais criticadas da
+                                linguagem PHP. Chamamos de <strong>código spaghetti</strong> o código que faz essa mistura em excesso e de
+                                forma desordenada.</p>
+
+                            <p>Por isso, me sinto obrigado a lhe fazer um convite: <strong>tente ser bastante organizado em relação
+                                    a isso. Procure deixar bem claro no seu script o que é PHP e o que é HTML</strong>.</p>
+
+                            <p>Em nosso exemplo, repare que eu coloquei o <strong>PHP mais pesado</strong> na parte de cima,
+                                no começo. Após esse trecho iniciamos o HTML e utilizamos apenas o <strong>PHP mais leve.</strong></p>
+                        <div class="code">
+                            <h6>PHP</h6>
+                            <pre><code class="language-php">&lt;?php
+
+... code
+... code
+... code
+... code
+... code
+
+?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8" /&gt;
+        &lt;title&gt;Simple Form&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;?php // echo "PHP mais leve";?&gt;
+
+        &lt;?php // echo "PHP mais leve";?&gt;
+
+        &lt;?php // echo "PHP mais leve";?&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                        <p>
+                            Às vezes, para atender ao "padrão" acima, teremos que sacrificar um pouco a lógica, poderemos
+                            usar um pouco mais de memória e até codificar um algoritmo não performático.
+                        </p>
+
+                        <p>
+                            Para isso, temos uma regra simples, a organização vem sempre em primeiro lugar. Ela só será
+                            afetada em prol de outra ventages (peformance, economia de memória, etc..) apenas se realmente
+                            o programador tiver certeza que vale apena.
+                        </p>
 
                     </div>
 
-
-
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
-                        </div>
-
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Livros</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item" title="">
-                                        <h4 class="list-group-item-heading"></h4>
-                                        <p class="list-group-item-text"></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Internet</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="l" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading"></h4>
-                                        <span class="label label-default"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <?php
-                    $core->paginacao->link_ativo = "/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
@@ -261,7 +342,7 @@ $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
                         <h1></h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_PHP);
-                        $core->lista->link_ativo = "/";
+                        $core->lista->link_ativo = $url;
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
