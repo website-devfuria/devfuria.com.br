@@ -339,7 +339,7 @@ $text = "algum texto";
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1></h1>
+                        <h1>PHP</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_PHP);
                         $core->lista->link_ativo = $url;

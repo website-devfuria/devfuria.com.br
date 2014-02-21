@@ -1,3 +1,0 @@
-CREATE TABLE localizador_backup LIKE localizador;
-INSERT INTO localizador_backup SELECT * FROM localizador;
-

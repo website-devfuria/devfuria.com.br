@@ -313,7 +313,7 @@ objElem.value = "outro texto qualquer";</code></pre>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1></h1>
+                        <h1>Javascript</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_JS);
                         $core->lista->link_ativo = $url;

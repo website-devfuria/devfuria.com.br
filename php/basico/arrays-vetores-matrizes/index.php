@@ -264,7 +264,7 @@ array_push($arr, 13);
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array04" src="array04.png">
-                        </div>                        
+                        </div>
 
                         <h3>foreach(os valores e as chaves)</h3>
 
@@ -275,32 +275,32 @@ array_push($arr, 13);
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array05" src="array05.png">
-                        </div>                        
+                        </div>
 
                         <h3>Iterando com while</h3>
 
                         <p>Tanto...</p>
-                        
+
                         <pre><code class="language-php">while ($cad_pos = current($arr)) {
     $key = key($arr);
     var_dump("$key - " . $posicoes[$key]);
     next($arr);
 }</code></pre>
-                        
+
                         <p>...quanto:</p>
-                        
+
                         <pre><code class="language-php">while ($cad_pos = current($arr)) {
     $key = key($arr);
     var_dump("$key - " . $cad_pos);
     next($arr);
 }</code></pre>
-                        
+
                         <p>Chegam no mesmo resultado:</p>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array05" src="array05.png">
-                        </div>                        
-                        
+                        </div>
+
                     </div>
 
 
@@ -361,12 +361,12 @@ var_dump($arr);</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array06" src="array06.png">
-                        </div>                         
+                        </div>
 
                         <h3>implode</h3>
 
                         <p>Tansforma array em string.</p>
-                        
+
                         <pre><code class="language-php">$arr = array("Flavio", "Alexandre", "Micheletti");
 $nomeCompleto = implode("-", $arr);
 var_dump($nomeCompleto)</code></pre>
@@ -375,7 +375,7 @@ var_dump($nomeCompleto)</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array07" src="array07.png">
-                        </div>                         
+                        </div>
                     </div>
 
                     <div class="bs-docs-section">
@@ -411,7 +411,7 @@ var_dump($nomeCompleto)</code></pre>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1></h1>
+                        <h1>PHP</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_PHP);
                         $core->lista->link_ativo = "/php/basico/arrays-vetores-matrizes/";
