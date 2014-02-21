@@ -68,7 +68,7 @@ $url = "";
                 <div class="col-md-9" role="main">
 
 
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="">Título 01</h1>
@@ -105,7 +105,8 @@ $url = "";
                         </div>
 
 
-
+                        <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->links[Core::SECAO_JS]); ?>
+                        <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
 
                         <?php echo Aux::getAncora("/logica-de-programacao/basico/intro/", $core->links[Core::SECAO_LOG]); ?>
 
@@ -122,7 +123,8 @@ $url = "";
                         <div class="code">
                             <h6>pet.txt</h6>
                             <pre><code class="no-highlight">código
-</code></pre></div>
+</code></pre>
+                        </div>
 
 
 

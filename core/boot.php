@@ -66,6 +66,7 @@ require (BASE_PATH . "/oop/Head.php");
 require (BASE_PATH . "/oop/NavTop.php");
 require (BASE_PATH . "/oop/ListaSecao.php");
 require (BASE_PATH . "/oop/Paginacao.php");
+require (BASE_PATH . "/oop/Materia.php");
 require (BASE_PATH . "/oop/Aux.php");
 
 
@@ -88,7 +89,9 @@ $core->links[Core::SECAO_JS] = array(
     LINKS_PATH . "/js/basico/code-lampadas/" => "Code - A Lâmpada",
     LINKS_PATH . "/js/basico/oop-primeiro-degrau/" => "OOP - primeiro degrau",
     LINKS_PATH . "/js/basico/refatoracao-codigo-limpo/" => "Refatoração e código limpo",
-    LINKS_PATH . "/js/basico/code-lampadas-refatorando/" => "Code - A Lâmpada (refatorando)"
+    LINKS_PATH . "/js/basico/code-lampadas-refatorando/" => "Code - A Lâmpada (refatorando)",
+    LINKS_PATH . "/js/basico/textbox-password-textarea/" => "Descobrindo os controles text, password e textarea"
+
 );
 $core->links[Core::SECAO_PHP] = array(
     LINKS_PATH . "/php/basico/um-bom-comeco/" => "Um bom começo",
