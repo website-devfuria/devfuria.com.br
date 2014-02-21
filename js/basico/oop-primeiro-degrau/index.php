@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('OOP');
-        $core->head->setDescription('Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.');
+        $core->head->setDescription('Introduziremos conceito intuitivo de programação orientadação a objeto, propriedades e métodos.');
         $core->head->setkeywords('oop em javascript');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
