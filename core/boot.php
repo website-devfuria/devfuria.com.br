@@ -91,7 +91,7 @@ $core->links[Core::SECAO_JS] = array(
     LINKS_PATH . "/js/basico/refatoracao-codigo-limpo/" => "Refatoração e código limpo",
     LINKS_PATH . "/js/basico/code-lampadas-refatorando/" => "Code - A Lâmpada (refatorando)",
     LINKS_PATH . "/js/basico/textbox-password-textarea/" => "Descobrindo os controles text, password e textarea",
-    LINKS_PATH . "/js/basico/checkbox-checked/" => "Descobrindo os controles text, password e textarea"
+    LINKS_PATH . "/js/basico/checkbox-checked/" => "Manipulando check boxes"
 );
 $core->links[Core::SECAO_PHP] = array(
     LINKS_PATH . "/php/basico/um-bom-comeco/" => "Um bom começo",
