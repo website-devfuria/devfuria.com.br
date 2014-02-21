@@ -161,8 +161,11 @@ echo somarDoisNumeros(2, 4);
 }
 </code></pre></div>
 
-                        <p>Mas, essa forma não é usual. O mais comum é atribuírmos a função a uma variável, veja código
-                            abaixo:</p>
+                        <p>
+                            Essa forma não é usual, o mais comum é atribuírmos a função a uma variável. Essa técnica
+                            recebe o nome de <strong>função anônima</strong>. Repare que a função não possue nome algum,
+                            veja código abaixo:
+                        </p>
 
                         <div class="code">
                             <h6>Javascript</h6>
@@ -173,6 +176,7 @@ echo somarDoisNumeros(2, 4);
     // código
 }
 </code></pre></div>
+                        <p><code>foo</code> é o nome da variável e não o nome da função!</p>
 
                         <p>O <code>return</code> faz com que algum valor seja retornado e interrompe o funcionamento da
                             função.</p>
@@ -232,11 +236,11 @@ console.log(somarDoisNumeros(2, 4));
                                             <h4 class="list-group-item-heading">Manual do Javascript (MDN)</h4>
                                             <p class="list-group-item-text">...falando sobre funções</p>
                                             <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions</span>
-                                        </a>                                        
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <?php
                     $core->paginacao->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";

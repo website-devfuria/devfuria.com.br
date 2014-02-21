@@ -341,7 +341,8 @@ mostrar_alerta();</code></pre>
 
                             <p>Mas isso já não se usa mais.</p>
 
-                            <p>O mais usual é colocarmos a função dentro de uma variável e executamos a função referenciando-se a variável, veja:</p>
+                            <p>O mais usual é colocarmos a função dentro de uma variável e executamos a função referenciando-se a variável.
+                                Essa técnica chama-se <strong>funções anônimas</strong>, veja:</p>
 
                             <div class="code">
                                 <h6>JS</h6>
