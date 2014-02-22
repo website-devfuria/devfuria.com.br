@@ -116,10 +116,10 @@ $url = "/js/basico/textbox-password-textarea/";
                         <p>Profundo isso! rssss</p>
 
                         <p>
-                            Falando sério, Para referenciarmos os controles ou qualquer elemento HTML precisamos
+                            Falando sério, para referenciarmos os controles ou qualquer elemento HTML precisamos
                             que eles tenha a propriedade <code>id</code> "setada". Ok, isso não é via de regra e
                             não é mesmo. Podemos encontrar (referenciar) os elementos através dos nomes das tags,
-                            atraves de outras propriedades, pelo posicionamento na árvore DOM e etc...
+                            através de outras propriedades, pelo posicionamento na árvore DOM e etc...
                         </p>
 
                         <p>Mas o básico é referenciar pelo <code>id</code>.</p>

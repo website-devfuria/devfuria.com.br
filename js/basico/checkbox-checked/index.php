@@ -70,9 +70,9 @@ $url = "/checkbox-checked/";
                         </div>
 
                         <p>Checkboxes são controles "booleanos" (modo de dizer). Eles ou estão ligados (true) ou
-                        estão desligados (false).</p>
+                            estão desligados (false).</p>
 
-                        <p>Veja o abaixo o formulário web que trabalharemos.</p>
+                        <p>Veja abaixo o formulário web no qual trabalharemos.</p>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Formulário com checkboxes" src="form-checkboxes.png">
@@ -111,8 +111,8 @@ $url = "/checkbox-checked/";
                         <p>1) Programar o evento do botão "Submit me!" para que ele descubra se as duas checkboxes
                             (bike e car) estão desligadas ou não e...</p>
 
-                        <p>2) Programar o botão "Load" para carregar, aleatóriamente, as checkboxes. Simulando, dessa
-                            forma, o carregamento de um formulário com dados de verdade.</p>
+                        <p>2) Programar o botão "Load" para carregar, aleatóriamente, as checkboxes. Simulando o
+                            carregamento de um formulário com dados de verdade.</p>
 
 
 
@@ -128,7 +128,7 @@ $url = "/checkbox-checked/";
 
 
 
-                        <p>Vou utilizar uma variável <code>myApp</code> para conter todo o meu código e dessa forma
+                        <p>Vou utilizar a variável <code>myApp</code> para conter todo o meu código e, dessa forma,
                             evitar <strong>poluir o espaço global de variáveis</strong></p>
 
                         <pre><code class="language-javascript">var myApp = {}</code></pre>
@@ -165,7 +165,8 @@ myApp.init();
     }
 }.init();
 </code></pre>
-                        <p>Meu objetivo é capturar os 2 botão do nosso formulário, o "Submit me!" e o "Load".</p>
+                        <p>Dividir para conquistar: meu objetivo é capturar os 2 botão do nosso formulário, o
+                            "Submit me!" e o "Load".</p>
 
                         <pre><code class="language-javascript">var myApp = {
     init: function() {
@@ -218,7 +219,7 @@ myApp.init();
 </code></pre>
 
 
-                        <p>Vamos testar, faça as funções lançarem um log.</p>
+                        <p>Vamos testar! Faça as funções lançarem um log.</p>
 
                         <pre><code class="language-javascript">var myApp = {
     btnSubmit: document.getElementById("btnSubmit"),
@@ -342,12 +343,12 @@ var myApp = {
 
                         <p>O que mostra o console?</p>
 
-                        <p>Nós voltaremos concerteza nessa questão, ela faz parte das características que tornam o Javascript
-                            tão atraente. Por hora, vamos aprender apenas como contorná-la</p>
+                        <p>Com certeza, nós voltaremos nessa questão. Ela faz parte das características que tornam o Javascript
+                            tão atraente. Por hora, vamos aprender apenas como contorná-la.</p>
 
-                        <p>A saída, mais utilizada (e única que conheco), é anotar o <code>this</code> (o outro, o que
-                            relamente aponta para nosso objeto <code>myApp</code>) em uma variável qualquer e então
-                            utilizar essa variável. Por conveção, utiliza-se um desses 2 nomes: <code>that</code> ou
+                        <p>A saída, mais utilizada (e única que conheco), é anotar o <code>this</code>  em uma
+                            variável qualquer (o outro this, o que relamente aponta para nosso objeto <code>myApp</code>)
+                            e então utilizar essa variável. Por conveção, utiliza-se um desses 2 nomes: <code>that</code> ou
                             <code>me</code>. Eu gosto de usar <code>me</code>.</p>
 
                         <pre><code class="language-javascript">var myApp = {
@@ -467,9 +468,9 @@ var myApp = {
                         <p>Se o seu código funcionou, clique várias vezes no botão "Load". Ele anota aleatóriamente
                             as combobox, certo?</p>
 
-                        <p>Como as checkboxes trabalham com 2 valores, ligado e desligado, ou seja, 0 e 1. Eu precisava de
-                            uma função que me retorna-se (aleatóriamente) os valores 0 e 1. E é isso que temos na
-                            expressão misteriosa rsss.
+                        <p>As checkboxes trabalham com 2 valores, ligado e desligado, ou seja, 0 e 1 e eu precisava de
+                            uma função que me retorna-se (aleatóriamente) os valores 0 e 1. E é exatamente isso que
+                            temos na expressão misteriosa rsss.
                         </p>
 
                         <p>Momento Eureka: Vou abrir uma seção aqui no site que chama-se "referência" e fazer as referências
