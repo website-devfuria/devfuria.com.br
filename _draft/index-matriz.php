@@ -1,11 +1,12 @@
 <?php
 /**
- *
+ * QUAL SEÇÂO ?
  */
 /**
  * Includes
  */
-require "../../../core/boot.php";
+require "../core/boot.php";
+$url = "/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -21,7 +22,7 @@ require "../../../core/boot.php";
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $core->navtop->secao_ativa = Core::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -30,13 +31,14 @@ require "../../../core/boot.php";
             <div class="container">
                 <h1></h1>
                 <p></p>
+                <p></p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">06/01/2014</span>, escrito em <span class="label label-info">06/01/2014</span>.
+                Flávio Micheletti, atualizado em <span class="label label-success">//2014</span>, escrito em <span class="label label-info">//2014</span>.
             </div>
         </div>
 
@@ -66,47 +68,18 @@ require "../../../core/boot.php";
                 <div class="col-md-9" role="main">
 
 
+
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="">Estilo</h1>
-                        </div>
-
-
-                        <div class="bs-example">
-                            <img class="img-rounded" alt="### 1 exemplo de formulário web" src="form01.png">
-                            <p><a href="http://blog.alexandremagno.net/2012/06/twitter-bootstrap-em-portugues" title="link-externo" class="img-responsive">Fonte da imagem</a></p>
-                        </div>
-
-                        <div class="bs-example">
-                            <img class="img-rounded" alt="### 2 exemplo de formulário web " src="form02.png">
-                            <p><a href="http://www.weblovers.com.br/2011/11/25/formee-um-framework-flexivel-para-formularios-web/" title="link-externo" class="img-responsive">Fonte da imagem</a></p>
-                        </div>
-
-                        <div class="bs-example">
-                            <img class="img-rounded" alt="### 3 exemplo de formulário web" src="form03.jpg">
-                            <p><a href="http://wbraganca.com/2010/07/criando-formularios-elegantes-com-ajax-jquery-e-css/" title="link-externo" class="img-responsive">Fonte da imagem</a></p>
-                        </div>
-
-                        <div class="bs-example">
-                            <img class="img-rounded" alt="### 4 exemplo de formulário web" src="form04.png">
-                            <p><a href="http://www.emissornfeweb.com.br/" title="link-externo" class="img-responsive">Fonte da imagem</a></p>
+                            <h1 id="">Título 01</h1>
                         </div>
 
 
 
-
-                        <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/">Code - Triângulo</a>.</p>
-
-
-
-                        <pre><code class="no-highlight">código</code></pre>
-
-                        <div class="code">
-                            <h6>pet.txt</h6>
-                            <pre><code class="no-highlight">código
-</code></pre></div>
 
                     </div>
+
+
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -115,6 +88,8 @@ require "../../../core/boot.php";
 
                     </div>
 
+
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="">Título 03</h1>
@@ -122,12 +97,41 @@ require "../../../core/boot.php";
 
                     </div>
 
+
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="">Título 04</h1>
                         </div>
 
+
+                        <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->links[Core::SECAO_JS]); ?>
+                        <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
+
+                        <?php echo Aux::getAncora("/logica-de-programacao/basico/intro/", $core->links[Core::SECAO_LOG]); ?>
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### " src="">
+                            <p></p>
+                            <p>Fonte:
+                                <a href="" title="link-externo" class="img-responsive"></a>
+                            </p>
+                        </div>
+
+                        <pre><code class="no-highlight">código</code></pre>
+
+                        <div class="code">
+                            <h6>pet.txt</h6>
+                            <pre><code class="no-highlight">código
+</code></pre>
+                        </div>
+
+
+
+
                     </div>
+
+
 
 
                     <div class="bs-docs-section">
@@ -164,8 +168,8 @@ require "../../../core/boot.php";
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                    $core->paginacao->link_ativo = $url;
+                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -178,8 +182,8 @@ require "../../../core/boot.php";
                     <div class="col-md-6">
                         <h1></h1>
                         <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
-                        $core->lista->link_ativo = "/";
+                        $core->lista->setLinks($core->links, Core::SECAO_JS);
+                        $core->lista->link_ativo = $url;
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>
