@@ -109,10 +109,8 @@ require "../../../core/boot.php";
 &lt;/html&gt;</code></pre>
                         </div>
 
-                        <p>Esse não é um HTML "oficial", é apenas para fins ilustrativos. Repare que eu coloquei a palavra "inválido" no título
-                            do código, é para alertar que o HTML apresentado não é válido, ou seja, não validará se submetido as normas do w3c,
-                            falaremos disso adiante. Eu criei um CSS básico e misturei as tag's inline e block apenas para você perceber como elas
-                            se comportam.</p>
+                        <p>Esse não é um HTML "oficial", é apenas para fins ilustrativos. Eu criei um CSS básico e
+                            misturei as tag's inline e block apenas para você perceber como elas se comportam.</p>
 
                         <p>Perceber esse aspecto básico, mais do que entender, lhe ajudará a criar páginas HTML sem muita dor de cabeça.</p>
 
@@ -173,7 +171,7 @@ require "../../../core/boot.php";
                             inline e quem era inline virou block. Veja o resultado <a href="code2.html" title="link-externo">aqui</a></p>
 
                         <div class="code">
-                            <h6>HTML(inválido)</h6>
+                            <h6>HTML</h6>
                             <pre><code class="language-html">&lt!DOCTYPE html&gt;
 &lt;html lang="pt-br"&gt;
     &lt;head&gt;
