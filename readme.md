@@ -21,7 +21,11 @@ As pastas abaixo são as matérias propriamente ditas:
 * <code>regexp/</code>
 
 
+A pasta <code>_analisar/</code> é para analisar o site e não vai para o "ar".
+
 A pasta <code>_draft/</code> contém diversos rascunho e não vão para o "ar".
+
+A pasta <code>_labs/</code> são arquivos de teste, também não vão para o "ar".
 
 A pasta <code>core/</code> contém um mínimo de código para o site funcionar:
 
@@ -36,4 +40,4 @@ A pasta <code>core/</code> contém um mínimo de código para o site funcionar:
 * <code>core/views</code> contém as views (pequenos trechos de HTML que se repetem pelo site).
 
 
-Se tiver alguma dúvida, sugestão ou quiser colaborar entre em contato: feedback@devfuria.com.br 
+Se tiver alguma dúvida, sugestão ou quiser colaborar entre em contato: feedback@devfuria.com.br
