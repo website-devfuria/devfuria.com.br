@@ -108,6 +108,7 @@ $core->links[Core::SECAO_PHP] = array(
     LINKS_PATH . "/php/basico/enviando-dados-via-get-post/" => "Enviando dados para o script",
     LINKS_PATH . "/php/basico/recebendo-dados-via-get-post/" => "Recebendo dados",
     LINKS_PATH . "/php/basico/textbox-password-textarea/" => "Descobrindo os controles text, password e textarea",
+    LINKS_PATH . "/php/basico/checkbox-checked/" => "Manipulando check boxes"
 );
 $core->links[Core::SECAO_LOG] = array(
     LINKS_PATH . "/logica-de-programacao/basico/intro/" => "Introdução a Lógica de Progamação",

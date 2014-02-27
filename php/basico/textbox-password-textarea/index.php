@@ -13,7 +13,7 @@ $url = "/php/basico/textbox-password-textarea/";
     <head>
         <?php
         $core->head->setTitle("PHP - input type text input type password textarea");
-        $core->head->setDescription('Aprendendo como os campos textbox, password e textarea funcionam com o PHP.');
+        $core->head->setDescription('Manipulando checkbox com PHP. Aprenda a marcar, gravar e exbibir os valores de uma checkbox.');
         $core->head->setkeywords('');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -222,7 +222,7 @@ $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
 /**
  * Aqui teríamos algum código para
  * recuperar de uma fonte de dados
- * as informação do formulário.
+ * as informações do formulário.
  *
  * Utilizaremos o código abaixo, apenas como fins ilustrativo,
  * imaginando que ele vem de alguma fonte.
@@ -320,7 +320,7 @@ $text = "algum texto";
 
                         <p>
                             Para isso, temos uma regra simples, a organização vem sempre em primeiro lugar. Ela só será
-                            afetada em prol de outra ventages (peformance, economia de memória, etc..) apenas se realmente
+                            afetada em prol de outras vantages (peformance, economia de memória, etc..) apenas se realmente
                             o programador tiver certeza que vale apena.
                         </p>
 

@@ -69,8 +69,13 @@ $url = "/checkbox-checked/";
                             <h2 id="formulario-web">O formulário web ...</h2>
                         </div>
 
-                        <p>Checkboxes são controles "booleanos" (modo de dizer). Eles ou estão ligados (true) ou
-                            estão desligados (false).</p>
+                        <p>Checkbox é um controle com dois estados: ligado ou desligado.</p>
+
+                        <p>Até parecem nosso código na máteria
+                            <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->links[Core::SECAO_JS]); ?>
+                            <a href="<?php echo $mat->url; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
+                            . Brincadeiras à parte.
+                        </p>
 
                         <p>Veja abaixo o formulário web no qual trabalharemos.</p>
 
