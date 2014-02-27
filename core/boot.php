@@ -10,6 +10,11 @@ session_start();
 
 
 /**
+ * Timezone
+ */
+date_default_timezone_set('America/Sao_Paulo');
+
+/**
  *
  */
 define('DF', true);

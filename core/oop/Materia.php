@@ -6,15 +6,17 @@
  */
 class Materia {
 
+    public $id;
+    public $secao;
     public $codigo;
     public $url;
+    public $labelLink;
     public $titulo;
-    public $page_titulo;
-    public $page_descricao;
+    public $paginaTitulo;
+    public $paginaDescricao;
     public $autor;
-    public $dt_criacao;
-    public $dt_atualizacao;
+    public $dtCriacao;
+    public $dtAtualizacao;
 
 }
-
 ?>
