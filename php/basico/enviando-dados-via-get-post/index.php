@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Enviando dados via GET e POST');
-        $core->head->setDescription('');
+        $core->head->setDescription('Estamos no navegador (cliente) criando dois tipos de requisições GET e POST');
         $core->head->setkeywords('get post php, httpd methods, get, post, recebendo dados via post e get');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";

@@ -38,7 +38,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">22/07/213</span>, escrito em <span class="label label-info">22/07/2013</span>.
+                Flávio Micheletti, atualizado em <span class="label label-success">22/07/2013</span>, escrito em <span class="label label-info">22/07/2013</span>.
             </div>
         </div>
 
@@ -276,7 +276,7 @@ match()
                     $core->paginacao->link_ativo = "/regexp/basico/intro/";
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 

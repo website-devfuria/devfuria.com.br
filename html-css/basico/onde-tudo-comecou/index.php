@@ -12,7 +12,7 @@ require "../../../core/boot.php";
     <head>
         <?php
         $core->head->setTitle('Introdução ao HTML e ao CSS');
-        $core->head->setDescription('Aprenda sobre: tags básicas de HTML, corpo de HTML, CSS, seletores, propriedades e ferramentas que ajuadm no desenvolvimento');
+        $core->head->setDescription('Aprenda sobre: tags básicas de HTML, corpo de HTML, CSS, seletores, propriedades e ferramentas que ajudam no desenvolvimento');
         $core->head->setkeywords('começando com HTML, começando com CSS, corpo do html, tags básicas de HTML, firbug, webdeveloper');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -38,7 +38,7 @@ require "../../../core/boot.php";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">14/02/2014</span>, escrito em <span class="label label-info">23/01/2013. </span>
+                Flávio Micheletti, atualizado em <span class="label label-success">14/02/2014</span>, escrito em <span class="label label-info">23/01/2013</span>.
             </div>
         </div>
 
