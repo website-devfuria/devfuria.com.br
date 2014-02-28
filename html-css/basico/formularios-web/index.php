@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * HTML & CSS
  */
 /**
  * Includes
@@ -203,6 +203,15 @@ require "../../../core/boot.php";
                             <p>Exemplo de checkbox solitária (coitada)</p>
                         </div>
 
+                        <p>Para exibir a checkbox ticada (selecionada), usamos a propriedade <code>checked</code>.</p>
+
+                        <pre><code class="language-html">&lt;input type="checkbox" name="company" <em>checked</em>/&gt;</code></pre>
+
+                        <p>Mas a especificação diz que é para ser usado dessa forma:</p>
+
+                        <pre><code class="language-html">&lt;input type="checkbox" name="company" <em>checked="checked"</em>/&gt;</code></pre>
+
+                        <p>De qualquer forma, o navegador entenderá que a checkbox deve ser assinalada.</p>
 
 
                         <h3 id="input-radio">Botões de opção (radio buttons)</h3>
@@ -226,6 +235,11 @@ require "../../../core/boot.php";
                             <img class="img-rounded" alt="### Exemplo de radios button" src="input-radio.jpg">
                             <p>Exemplo de radio button</p>
                         </div>
+
+                        <p>Para exibir o controle radio selecionado, usamos a propriedade <code>checked</code>.</p>
+
+                        <pre><code class="language-html">&lt;input type="radio" name="company" <em>checked="checked"</em>/&gt;</code></pre>
+
 
 
 
@@ -255,6 +269,7 @@ require "../../../core/boot.php";
                             <img class="img-rounded" alt="### Exemplo de botões" src="buttons.jpg">
                             <p>Exemplo de botões</p>
                         </div>
+
 
 
 
