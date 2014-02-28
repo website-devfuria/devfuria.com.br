@@ -11,7 +11,8 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Curso programação PHP online (gratis)');
+//        $core->head->setTitle('Curso programação PHP online (gratis)');
+        $core->head->setTitle('Curso de PHP Grátis | Curso de PHP Online | Começando a programar em PHP | Aprender PHP');
         $core->head->setDescription('Aprenda a fazer sites e sistemas em PHP, veremos muito código na linguagem PHP.');
         $core->head->setkeywords("php; php5; php6; php5.3; php5.4; tutorial php; codigos php; apostila php; " .
                 "php básico; php fácil; php início; php iniciante; php iniciando; php iniciante; " .
@@ -49,7 +50,7 @@ require "../core/boot.php";
                 <p>Seja bem vindo ao curso!</p>
             </div>
         </main>
- 
+
         <div class="" style="background-color: #FFF; padding:   0px 0px;" id="html-css">
             <div class="container">
                 <div class="row">
