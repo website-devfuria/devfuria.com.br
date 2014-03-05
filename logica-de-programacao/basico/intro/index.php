@@ -30,7 +30,7 @@ require "../../../core/boot.php";
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Introdução a Lógica de Programação</h1>
-                <p>Uma "palavrinha" rápida antes de inciarmos...</p>
+                <p>Uma "palavrinha" rápida antes de iniciarmos...</p>
             </div>
         </div>
 
@@ -100,28 +100,29 @@ require "../../../core/boot.php";
                                 programação antes, dê-se pelo menos 6 meses de amadurecimento em lógica.</em></p>
 
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
-                            </div>
 
-                            <div class="panel panel-info">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Internet</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="list-group">
-                                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators" class="list-group-item" title="link-externo">
-                                            <h4 class="list-group-item-heading">Manual do Javascript</h4>
-                                            <p class="list-group-item-text">...falando sobre expressões e operadores. Procure por 'Assignment operators'</p>
-                                            <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators</span>
-                                        </a>
-                                        <a href="http://www.php.net/manual/pt_BR/language.operators.assignment.php" class="list-group-item" title="link-externo">
-                                            <h4 class="list-group-item-heading">Manual do PHP</h4>
-                                            <p class="list-group-item-text">... falando sobre a operadores de atribuição</p>
-                                            <span class="label label-default">http://www.php.net/manual/pt_BR/language.operators.assignment.php</span>
-                                        </a>
-                                    </div>
+                    </div>
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manual do Javascript</h4>
+                                        <p class="list-group-item-text">...falando sobre expressões e operadores. Procure por 'Assignment operators'</p>
+                                        <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators</span>
+                                    </a>
+                                    <a href="http://www.php.net/manual/pt_BR/language.operators.assignment.php" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Manual do PHP</h4>
+                                        <p class="list-group-item-text">... falando sobre a operadores de atribuição</p>
+                                        <span class="label label-default">http://www.php.net/manual/pt_BR/language.operators.assignment.php</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
