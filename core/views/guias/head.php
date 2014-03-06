@@ -18,7 +18,7 @@ if (!$core->head->title) {
 <link rel="shortcut icon" href="<?php echo ROOT_PATH; ?>/core/imagens/favicon_1_16x16x1.png">
 
 <link href="<?php echo LINKS_PATH; ?>/core/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="<?php echo LINKS_PATH; ?>/core/assets/css/docs.css" rel="stylesheet">
+<link href="<?php echo LINKS_PATH; ?>/core/assets/css/docs-receitas.css" rel="stylesheet">
 <link href="<?php echo LINKS_PATH; ?>/core/assets/css/pygments-manni.css" rel="stylesheet">
 <link href="<?php echo LINKS_PATH; ?>/core/highlight/styles/github.css" rel="stylesheet">
 

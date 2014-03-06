@@ -80,12 +80,23 @@ require (BASE_PATH . "/oop/Aux.php");
  */
 $core = new Core();
 $core->secoes = array(
-    "js" => "Javascript",
+    "js/?tab=curso" => "Javascript",
     "php" => "PHP",
     "html-css" => "HTML & CSS",
     "logica-de-programacao" => "Lógica de Programação",
     "mysql-sql" => "MySql & SQL",
     "regexp" => "RegExp"
+);
+$core->guias = array(
+    "js/receitas-guia-referencia/" => "Javascript"
+//    "php/receitas-guia-referencia/" => "PHP",
+//    "html-css/receitas-guia-referencia/" => "HTML & CSS",
+//    "logica-de-programacao/receitas-guia-referencia/" => "Lógica de Programação",
+//    "mysql-sql/receitas-guia-referencia/" => "MySql & SQL",
+//    "regexp/receitas-guia-referencia/" => "RegExp"
+);
+$core->links[Core::GUIA_JS] = array(
+    LINKS_PATH . "/js/receitas-guia-referencia/math-random-numero-randomico-em-javascript/" => "Como gerar números aleatórios em Javascript!",
 );
 $core->links[Core::SECAO_JS] = array(
     LINKS_PATH . "/js/basico/intro/" => "Introdução",

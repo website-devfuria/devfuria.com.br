@@ -55,7 +55,6 @@ require "../../../core/boot.php";
                                 <a href="#historia">Um pouco de história...</a>
                                 <ul class="nav">
                                     <li><a href="#w3c">W3C</a></li>
-                                    <li><a href="#w3c">W3C</a></li>
                                 </ul>
                             </li>
                             <li>
