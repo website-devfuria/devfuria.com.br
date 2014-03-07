@@ -1,3 +1,11 @@
+<?php
+/**
+ * Lista as matŕeias de cada seção
+ *
+ * Utilizado diretamente pela home e
+ * indiretamente por: index de cada seção, matérias e guias (receitas).
+ */
+?>
 <?php $interator = 1; ?>
 
 <?php if ($core->lista->label): ?>
