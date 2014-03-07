@@ -30,14 +30,6 @@ $url = "/checkbox-checked/";
         <div class="container">
             <div class="row">
 
-
-                <ol class="breadcrumb">
-                    <li><a href="<?php echo ROOT_PATH; ?>">DevFuria (home)</a></li>
-                    <li><a href="<?php echo ROOT_PATH . "/js/"; ?>">Javascript</a></li>
-                    <li><a href="<?php echo ROOT_PATH . "/js/receitas-guia-referencia"; ?>">Receitas e Guias de Referência</a></li>
-                    <li class="active">Como gerar números aleatórios em Javascript!</li>
-                </ol>
-
                 <!-- Título -->
                 <div class="bs-header" id="content">
                     <div class="container">
