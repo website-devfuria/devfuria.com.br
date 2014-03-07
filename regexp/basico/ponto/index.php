@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/regexp/basico/ponto/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -73,7 +74,7 @@ require "../../../core/boot.php";
 
                         <div class="bs-example ">
                             <img class="img-rounded" alt="### Exemplo de Expressão Regular" src="ponto-casa.png" />
-                        </div>                         
+                        </div>
 
                     </div>
 
@@ -87,8 +88,8 @@ require "../../../core/boot.php";
                             <p>Este é o primeiro exemplo</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#1" title="link-externo">Livro: Expressões Regulares 3 edição, pag 41#1</a>
-                            </p>                            
-                        </div> 
+                            </p>
+                        </div>
 
 
 
@@ -97,65 +98,56 @@ require "../../../core/boot.php";
                             <p>Palavras que foram ou não acentudas</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#2" title="link-externo">Livro: Expressões Regulares 3 edição, pag 41#2</a>
-                            </p>                            
-                        </div> 
+                            </p>
+                        </div>
 
                         <div class="bs-example ">
                             <img class="img-rounded img-responsive" alt="### Exemplo de Expressão Regular" src="ponto-pag41-maiuscula.png" />
                             <p>Palavras que começam com maiúsculas ou não</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#3" title="link-externo">Livro: Expressões Regulares 3 edição, pag 41#3</a>
-                            </p>                            
-                        </div> 
+                            </p>
+                        </div>
 
                         <div class="bs-example ">
                             <img class="img-rounded img-responsive" alt="### Exemplo de Expressão Regular" src="ponto-pag41-grafia.png" />
                             <p>Palavras com grafia possivelmente errada</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#4" title="link-externo">Livro: Expressões Regulares 3 edição, pag 41#4</a>
-                            </p>                            
-                        </div> 
+                            </p>
+                        </div>
 
                         <div class="bs-example ">
                             <img class="img-rounded img-responsive" alt="### Exemplo de Expressão Regular" src="ponto-pag42-horas.png" />
                             <p>Palavras que parcem-se com horas</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#5" title="link-externo">Livro: Expressões Regulares 3 edição, pag 42#5</a>
-                            </p>                            
-                        </div> 
+                            </p>
+                        </div>
 
                         <div class="bs-example ">
                             <img class="img-rounded img-responsive" alt="### Exemplo de Expressão Regular" src="ponto-pag42-tags.png" />
                             <p>Tags de HTML</p>
                             <p>Fonte:
                                 <a href="http://www.piazinho.com.br/ed3/exemplos.html#6" title="link-externo">Livro: Expressões Regulares 3 edição, pag 42#6</a>
-                            </p>                            
-                        </div> 
+                            </p>
+                        </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/regexp/basico/ponto/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>RegExp</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_ER);
-                        $core->lista->link_ativo = "/regexp/basico/ponto/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_ER);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

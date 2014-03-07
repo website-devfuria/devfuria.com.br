@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/regexp/basico/pattern-exec/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -126,7 +127,7 @@ resultado['input'] = ""Casa com a palavra exemplo.""
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="nao-casou">Se a expressão não casar</h1>
-                        </div> 
+                        </div>
 
                         <p>Neste caso, o valor da variável <code>resultado</code> será apenas <code>null</code></p>
 
@@ -143,12 +144,12 @@ console.log(resultado);</code></pre>
 
                         <pre><code>resultado = null;</code></pre>
 
-                    </div> 
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
-                        </div> 
+                        </div>
 
                         <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um <code>(</code> a mais.</p>
 
@@ -168,7 +169,7 @@ console.log(resultado);</code></pre>
                             <img class="img-rounded" src="exec-erro.png" alt="### exec-resultado" />
                         </div></p>
 
-                    </div> 
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -221,29 +222,20 @@ if (resultado) {
                             de tratamento de erro (try cath) se faz necessário.</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/regexp/basico/pattern-exec/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>RegExp</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_ER);
-                        $core->lista->link_ativo = "/regexp/basico/pattern-exec/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_ER);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

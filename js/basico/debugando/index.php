@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "js/basico/debugando/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -124,7 +125,7 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
                             <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/08/19/erro-nao-documentado/" title="link-externo">Vida de programador</a></p>
                         </div>
 
-                        <p>Superficialmente, <strong>debugar</strong> é sinônimo de teste, mas em essência são coisas 
+                        <p>Superficialmente, <strong>debugar</strong> é sinônimo de teste, mas em essência são coisas
                             totalmente diferentes. "Testes" é uma palavra com escopo ampliado.</p>
 
                         <p>Veja o que a Wikipedia tem a nos dizer sobre testes: <a href="http://pt.wikipedia.org/wiki/Teste_de_software" title="link-externo">http://pt.wikipedia.org/wiki/Teste&#95;de&#95;software</a></p>
@@ -148,7 +149,7 @@ alert(minha_variavel);</code></pre>
                         </div>
 
 
-                        <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) 
+                        <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML)
                             através do método <code>write()</code> do objeto  nativo  <code>document</code>.</p>
 
                         <pre><code class="language-javascript">var minha_variavel = "Hello word";
@@ -219,7 +220,7 @@ console.log(minha_variavel);</code></pre>
                         <p>Se não aparecer nenhuma mensagem de erro, ótimo! Seu script está correto (pelo menos do ponto de vista da sintaxe).</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "js/basico/debugando/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
@@ -227,20 +228,11 @@ console.log(minha_variavel);</code></pre>
             </div><!-- row -->
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Javascript</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_JS);
-                        $core->lista->link_ativo = "/js/basico/debugando/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_JS);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

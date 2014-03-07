@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/regexp/basico/new-regexp/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -66,7 +67,7 @@ require "../../../core/boot.php";
                         <p>Uma vantagem seria o fato de ser possível criar a expressão regular apartir de uma string, isto quer dizer que
                             é possível criar a expressão de forma dinâmica.</p>
 
-                        <p>Imagine que o usuário irá digitar a palavra <code>"exemplo"</code> e o sistema armazenará o valor na variável <code>regexp</code>. Agora é só 
+                        <p>Imagine que o usuário irá digitar a palavra <code>"exemplo"</code> e o sistema armazenará o valor na variável <code>regexp</code>. Agora é só
                             passar a variável para o construturor e executar a expressão.</p>
 
                         <p>Resumindo, a ER criada apartir de uma string lhe derá mair poder de flexibilidade e, obviamente, maior responsabilidade.</p>
@@ -100,7 +101,7 @@ console.log(pattern, resultado);</code></pre>
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
-                            </div>                        
+                            </div>
                             <div class="panel panel-info">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Internet</h3>
@@ -118,33 +119,24 @@ console.log(pattern, resultado);</code></pre>
                                             <span class="label label-default">http://www.php.net/manual/pt_BR/getting-started.php</span>
                                         </a>
                                     </div>
-                                </div>                        
-                            </div>                        
+                                </div>
+                            </div>
                         </div>
                         <?php
-                        $core->paginacao->link_ativo = "/regexp/basico/new-regexp/";
+                        $core->paginacao->link_ativo = $url;
                         $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>                        
+                        ?>
                     </div><!-- Corpo da matéria -->
                 </div><!-- row -->
 
             </div><!-- Matéria -->
 
-            <footer class="bs-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1>RegExp</h1>
-                            <?php
-                            $core->lista->setLinks($core->links, Core::SECAO_ER);
-                            $core->lista->link_ativo = "/regexp/basico/new-regexp/";
-                            include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_ER);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
             <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

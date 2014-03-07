@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/regexp/basico/preg-match/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -133,7 +134,7 @@ $resultado = array("exemplo")
 
                         <div class="bs-example ">
                             <img class="img-rounded" alt="### var_dump nas variáveis resultado e retorno" src="var-dump-resultado.png" />
-                        </div>                        
+                        </div>
 
                         <p>A função retorna um valor para sabermos se obtivemos sucesso ou não e, no caso do sucesso, podemos saber quais as partes
                             que casaram.</p>
@@ -143,7 +144,7 @@ $resultado = array("exemplo")
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="nao-casou">Se a expressão não casar</h1>
-                        </div>                    
+                        </div>
 
                         <p>Executando o seguinte código:</p>
 
@@ -169,14 +170,14 @@ var_dump($resultado, $retorno);
                         <pre><code>count($retorno) === 0</code></pre>
 
                         <p>Você decide o que usar, eu prefiro testar o resulado da função (variável $resultado).</p>
-                    </div>    
+                    </div>
 
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
-                        </div> 
+                        </div>
 
                         <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um ( a mais.</p>
 
@@ -197,12 +198,12 @@ $resultado = preg_match($pattern, $subject, $retorno);
 
                         <div class="bs-example ">
                             <img class="img-rounded img-responsive" alt="### warning retornado pela função" src="regexp-erro.png" />
-                        </div> 
+                        </div>
 
                         <p>Precisamos tratar o erro adequadamente (tudo bem, warning não é erro, mas não deixa de ser um aviso importante), porém
                             por enquanto não vamos nos preocupar com isso.</p>
 
-                    </div> 
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -234,42 +235,33 @@ $resultado = preg_match($pattern, $subject, $retorno);
 if ($resultado === 1) {
     print "casou";
     var_dump($retorno);
-    
+
 } else if ($resultado === 0) {
     print "não casou";
     var_dump($retorno);
-    
+
 } elseif ($resultado === false) {
     print "ocorreu um erro";
-    
+
 }
 ?&gt;</code></pre>
-                        </div>    
+                        </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/regexp/basico/preg-match/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>RegExp</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_ER);
-                        $core->lista->link_ativo = "/regexp/basico/preg-match/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_ER);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

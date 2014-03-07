@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/mysql-sql/basico/intro/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -89,20 +90,20 @@ require "../../../core/boot.php";
                             <p>Fonte:
                                 <a href="http://vidadeprogramador.com.br/2011/05/24/banco-de-dados/" title="link-externo">Vida de programador</a>
                             </p>
-                        </div>                        
+                        </div>
 
                         <p>Seu eu começasse essa seção com "Na década de 70..." a matéria perderia a graça, aprender deve ser divertido.</p>
 
                         <p>Hum Hum! tudo bem vamos lá...</p>
 
-                        <p>Na década de 70 um pesquizador chamado Edgar Frank "Ted" Codd desenvolveu um produto de modelo de dado relacional 
+                        <p>Na década de 70 um pesquizador chamado Edgar Frank "Ted" Codd desenvolveu um produto de modelo de dado relacional
                             chamado SEQUEL (Strutucred English Query Language, Linguagem de Consulta em Inglês Estruturado) que mais tarde veio a
                             se tornar o nosso conhecido SQL (Structured Query Language, Linguagem de Consulta Estruturada).</p>
 
                         <div class="bs-example ">
                             <img class="img-thumbnail" alt="### Foto de Edgar Frank Codd" src="edgar-f-codd.jpg" />
                             <p>Edgar Frank Codd (1923-2013) Pai da SEQUEL</p>
-                        </div>                           
+                        </div>
 
 
                         <p>Em pouco tempo a ANSI (American National Standards Institute) assumiu os trabalhos padronizando a SQL. Mas como tudo em
@@ -116,7 +117,7 @@ require "../../../core/boot.php";
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Exemplos de dialetos SQL" src="sql-dialetos.png" />
                             <p>Dialetos SQL</p>
-                        </div>                        
+                        </div>
 
                         <p>Na verdade, o quadro não é tão ruim assim. Se você domina um dialeto, terá facilidade para migrar para outro. Segundo
                             os irmãos Kline autores do livro "Sql - O Guia Essencial - Manual de Referência Profissional, 3 edição":</p>
@@ -229,10 +230,10 @@ Camisa Social,   15.00 -- esse é outro registro</code></pre>
 
                             <div class="bs-example">
                                 <img class="img-rounded" alt="### Tabelas" src="ex01-tabela.jpg" />
-                                <p>Fonte da imagem: 
+                                <p>Fonte da imagem:
                                     <a href="http://blog.thiagobelem.net/relacionamento-de-tabelas-no-mysql/" title="link-externo">Blog do Thiago Belem</a>
                                 </p>
-                            </div>                             
+                            </div>
                         </div>
 
 
@@ -252,7 +253,7 @@ Camisa Social,   15.00 -- esse é outro registro</code></pre>
                                 <p>
                                     <a href="http://www2.itssolucoes.com.br/banco-de-dadoss" title="link-externo">Fonte da imagem</a>
                                 </p>
-                            </div>                              
+                            </div>
 
                             <p>Os cilindros azul e verde representam um banco de dados, os quadros abaixo deles representam nossas tabelas,
                                 esses quadros estão no formato ER, <strong>diagrama Entidade Relacionamento</strong>, falaremos disso em breve.</p>
@@ -262,7 +263,7 @@ Camisa Social,   15.00 -- esse é outro registro</code></pre>
                             <div class="bs-example">
                                 <img class="img-rounded" alt="### diagrama oficial que representa um banco de dados" src="db02.jpg" />
                                 <p>Isto sim é um Banco de Dados</p>
-                            </div>                              
+                            </div>
 
                             <p>Eu quiz apenas introduzir os conceitos de forma intuitiva, falaremos exaustivamente "dessas coisas" no decorrer do curso.</p>
                         </div>
@@ -362,7 +363,7 @@ root       -- informamos o usuário
                         <div class="bs-example">
                             <img class="img-rounded" alt="### MySql via console" src="mysql-console.png" />
                             <p>Logado no MySql via console</p>
-                        </div>                         
+                        </div>
 
                         <p>Agora já é possível testar e aprender sobre os <code>statements</code>.</p>
 
@@ -392,33 +393,24 @@ root       -- informamos o usuário
                                             <span class="label label-default">http://dev.mysql.com/doc/index.html</span>
                                         </a>
                                     </div>
-                                </div>                        
+                                </div>
                             </div>
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/mysql-sql/basico/intro/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>    
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>MySql</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
-                        $core->lista->link_ativo = "/mysql-sql/basico/intro/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

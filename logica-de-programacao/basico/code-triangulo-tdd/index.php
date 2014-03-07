@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/logica-de-programacao/basico/code-triangulo-tdd/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -580,7 +581,7 @@ return false;
 
                 </div>
                 <?php
-                $core->paginacao->link_ativo = "/logica-de-programacao/basico/code-triangulo-tdd/";
+                $core->paginacao->link_ativo = $url;
                 $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
                 include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                 ?>
@@ -589,20 +590,11 @@ return false;
 
     </div><!-- Matéria -->
 
-    <footer class="bs-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Lógica de Programação</h1>
-                    <?php
-                    $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                    $core->lista->link_ativo = "/logica-de-programacao/basico/code-triangulo-tdd/";
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_LOG);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
     <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 </body>
 </html>
