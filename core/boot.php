@@ -4,7 +4,7 @@
  * Arquivo Bootstrap
  */
 /**
- *
+ * Session
  */
 session_start();
 
@@ -15,19 +15,15 @@ session_start();
 date_default_timezone_set('America/Sao_Paulo');
 
 /**
- *
+ * Const do sistema
  */
 define('DF', true);
-//define('GANALYTICS_ON', true); // liga
-define('GANALYTICS_ON', false); // desliga
-
-
 
 /**
- * Root
+ *  Google Analytics
  */
-//define('ROOT_PATH', "http://www.devfuria.com.br");
-define('ROOT_PATH', "http://localhost/devfuria/www.devfuria.com.br");
+//define('GANALYTICS_ON', true); // liga
+define('GANALYTICS_ON', false); // desliga
 
 
 /**
@@ -40,8 +36,8 @@ define('BASE_PATH', dirname(__FILE__));
  * Caminho absoluto para links e imagens
  */
 # www.devefuria.com.br
-define('LINKS_PATH', ROOT_PATH);
-
+//define('LINKS_PATH', "http://www.devfuria.com.br");
+define('LINKS_PATH', "http://localhost/devfuria/www.devfuria.com.br");
 
 
 /**
