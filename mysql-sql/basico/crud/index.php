@@ -321,7 +321,7 @@ WHERE name = 'Bowser';</code></pre>
                     </div>
                     <?php
                     $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_MYSQL]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -329,7 +329,7 @@ WHERE name = 'Bowser';</code></pre>
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
+        $core->lista->setLinks($core->paginas, Core::SECAO_MYSQL, Core::SUB_SECAO_CURSO);
         $core->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>

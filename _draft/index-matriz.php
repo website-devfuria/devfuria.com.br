@@ -105,10 +105,10 @@ $url = "/";
                         </div>
 
 
-                        <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->links[Core::SECAO_JS]); ?>
+                        <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->paginas[Core::SECAO_JS]); ?>
                         <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
 
-                        <?php echo Aux::getAncora("/logica-de-programacao/basico/intro/", $core->links[Core::SECAO_LOG]); ?>
+                        <?php echo Aux::getAncora("/logica-de-programacao/basico/intro/", $core->paginas[Core::SECAO_LOG]); ?>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="">
@@ -169,7 +169,7 @@ $url = "/";
                     </div>
                     <?php
                     $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -182,7 +182,7 @@ $url = "/";
                     <div class="col-md-6">
                         <h1></h1>
                         <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_JS);
+                        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
                         $core->lista->link_ativo = $url;
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>

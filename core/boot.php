@@ -63,12 +63,26 @@ require (BASE_PATH . "/oop/ListaSecao.php");
 require (BASE_PATH . "/oop/Paginacao.php");
 require (BASE_PATH . "/oop/Materia.php");
 require (BASE_PATH . "/oop/Aux.php");
+require (BASE_PATH . "/oop/gateways/Paginas.php");
 
+
+/**
+ * Conexão dom DB
+ */
+$pdo = new PDO($dsn = "mysql:dbname=devfuria_fulia;host=localhost", $user="root", $pass="alfa9876");
+$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+$pdo->exec("set names utf8");
 
 /**
  * Variáveis do sistema
  */
 $core = new Core();
+
+
+$model_paginas = new Paginas($pdo);
+$core->paginas = $core->criaArrayPaginas($model_paginas->getAll());;
+
+
 $core->secoes = array(
     Core::SECAO_JS => array(
         "href" => "js/?tab=curso",
@@ -95,6 +109,7 @@ $core->secoes = array(
         "label" => "RegExp"
     )
 );
+
 $core->guias = array(
     "js" => "Javascript"
 //    "php/receitas-guia-referencia/" => "PHP",
@@ -102,66 +117,4 @@ $core->guias = array(
 //    "logica-de-programacao/receitas-guia-referencia/" => "Lógica de Programação",
 //    "mysql-sql/receitas-guia-referencia/" => "MySql & SQL",
 //    "regexp/receitas-guia-referencia/" => "RegExp"
-);
-$core->links[Core::GUIA_JS] = array(
-    LINKS_PATH . "/js/math-random-numero-randomico-em-javascript/" => "Como gerar números aleatórios em Javascript!",
-);
-$core->links[Core::SECAO_JS] = array(
-    LINKS_PATH . "/js/basico/intro/" => "Introdução",
-    LINKS_PATH . "/js/basico/preparando-o-terreno/" => "Preparando o terreno",
-    LINKS_PATH . "/js/basico/debugando/" => "Debugando (depurando) [com vídeo]",
-    LINKS_PATH . "/js/basico/code-lampadas/" => "Code - A Lâmpada",
-    LINKS_PATH . "/js/basico/oop-primeiro-degrau/" => "OOP - primeiro degrau",
-    LINKS_PATH . "/js/basico/refatoracao-codigo-limpo/" => "Refatoração e código limpo",
-    LINKS_PATH . "/js/basico/code-lampadas-refatorando/" => "Code - A Lâmpada (refatorando)",
-    LINKS_PATH . "/js/basico/textbox-password-textarea/" => "Descobrindo os controles text, password e textarea",
-    LINKS_PATH . "/js/basico/checkbox-checked/" => "Manipulando check boxes"
-);
-$core->links[Core::SECAO_PHP] = array(
-    LINKS_PATH . "/php/basico/um-bom-comeco/" => "Um bom começo",
-    LINKS_PATH . "/php/basico/instalando-o-ambiente/" => "Instalando o ambiente no estilo NEXT, NEXT, NEXT",
-    LINKS_PATH . "/php/basico/boas-praticas/" => "Antes de enfiar o pé na jáca (boas práticas)",
-    LINKS_PATH . "/php/basico/debugando/" => "Debugando (depurando)",
-    LINKS_PATH . "/php/basico/arrays-vetores-matrizes/" => "Arrays (criando, iterando, funções, explode, implode)",
-    LINKS_PATH . "/php/basico/metodo-http-get-post/" => "Como funcionam os métodos GET e POST",
-    LINKS_PATH . "/php/basico/enviando-dados-via-get-post/" => "Enviando dados para o script",
-    LINKS_PATH . "/php/basico/recebendo-dados-via-get-post/" => "Recebendo dados",
-    LINKS_PATH . "/php/basico/textbox-password-textarea/" => "Descobrindo os controles text, password e textarea",
-    LINKS_PATH . "/php/basico/checkbox-checked/" => "Manipulando check boxes"
-);
-$core->links[Core::SECAO_LOG] = array(
-    LINKS_PATH . "/logica-de-programacao/basico/intro/" => "Introdução a Lógica de Progamação",
-    LINKS_PATH . "/logica-de-programacao/basico/exercicios-operadores-atribuicao/" => "Exercícios de lógica de programação (operadores de atribuição)",
-    LINKS_PATH . "/logica-de-programacao/basico/if-else/" => "Expressões Condicionais (if-else)",
-    LINKS_PATH . "/logica-de-programacao/basico/exercicios-expressoes-condicionais/" => "Exercícios de lógica de programação (expressões condicionais)",
-    LINKS_PATH . "/logica-de-programacao/basico/funcoes-procedimentos/" => "Funções",
-    LINKS_PATH . "/logica-de-programacao/basico/code-triangulo/" => "Code - Triângulo",
-    LINKS_PATH . "/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/" => "Vamos de OOP?",
-    LINKS_PATH . "/logica-de-programacao/basico/tdd-test-driven-development/" => "Vamos de TDD?",
-    LINKS_PATH . "/logica-de-programacao/basico/code-triangulo-tdd/" => "Code - Triângulo + TDD",
-);
-$core->links[Core::SECAO_HTML] = array(
-    LINKS_PATH . "/html-css/basico/onde-tudo-comecou/" => "Onde tudo começou",
-    LINKS_PATH . "/html-css/basico/html-intro/" => "Primeiro contato com HTML",
-    LINKS_PATH . "/html-css/basico/css-intro/" => "Primeiro contato com CSS",
-    LINKS_PATH . "/html-css/basico/elementos-inline-block-level/" => "Elementos in-line e elementos block-level",
-    LINKS_PATH . "/html-css/basico/primeiro-html/" => "Criando nosso primeiro HTML [com vídeo]",
-    LINKS_PATH . "/html-css/basico/formularios-web/" => "Formulários Web e seus controles ",
-);
-$core->links[Core::SECAO_MYSQL] = array(
-    LINKS_PATH . "/mysql-sql/basico/intro/" => "Banco de dados prá que?",
-    LINKS_PATH . "/mysql-sql/basico/primeiros-passos-mysql/" => "Primeiros passos com MySql",
-    LINKS_PATH . "/mysql-sql/basico/criando-base-tabela/" => "Criando e populando uma tabela",
-    LINKS_PATH . "/mysql-sql/basico/crud/" => "Entendendo o que é CRUD",
-);
-$core->links[Core::SECAO_ER] = array(
-    LINKS_PATH . "/regexp/basico/intro/" => "Introdução",
-    LINKS_PATH . "/regexp/basico/preg-match/" => "preg_match()",
-    LINKS_PATH . "/regexp/basico/string-match/" => "string.match()",
-    LINKS_PATH . "/regexp/basico/pattern-test/" => "pattern.test() ",
-    LINKS_PATH . "/regexp/basico/pattern-exec/" => "pattern.exec() ",
-    LINKS_PATH . "/regexp/basico/new-regexp/" => "new RegExp() ",
-    LINKS_PATH . "/regexp/basico/ponto/" => "ponto",
-    LINKS_PATH . "/regexp/basico/varios-resultados-preg-match-all/" => "Vários resultados - preg_match_all()",
-    LINKS_PATH . "/regexp/basico/varios-resultados-match-test-exec/" => "Vários resultados - match(), test() e exec()",
 );

@@ -85,7 +85,7 @@ $url = "/js/basico/textbox-password-textarea/";
 
                         <p>
                             Nós já estudamos sobre esses controles na matéria
-                            <?php echo Aux::getAncora("/html-css/basico/formularios-web/", $core->links[Core::SECAO_HTML]) ?>
+                            <?php echo Aux::getAncora("/html-css/basico/formularios-web/", $core->paginas[Core::SECAO_HTML]) ?>
                         </p>
 
                         <p>Escolhi esses controles pois são bastantes semelhantes quanto ao seu funcionamento</p>
@@ -93,7 +93,7 @@ $url = "/js/basico/textbox-password-textarea/";
                         <p>
                             Vamos utilizar o mesmo formulário que "pegamos emprestado" do livro do Andy Budd
                             (Criando Páginas Web com CSS) e que já foi utilizado como exemplo na matéria
-                            <?php echo Aux::getAncora("/php/basico/textbox-password-textarea/", $core->links[Core::SECAO_PHP]) ?>
+                            <?php echo Aux::getAncora("/php/basico/textbox-password-textarea/", $core->paginas[Core::SECAO_PHP]) ?>
                         </p>
 
                         <p>Clique na aba HTML para entender melhor sobre formulário web.</p>
@@ -135,7 +135,7 @@ $url = "/js/basico/textbox-password-textarea/";
 
                         <p>
                             Já falamos sobre ela na matéria...
-                            <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->links[Core::SECAO_JS]); ?>
+                            <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->paginas[Core::SECAO_JS]); ?>
                             <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>.
                         </p>
 
@@ -256,10 +256,10 @@ objElem.value = "outro texto qualquer";</code></pre>
 
                         <ul>
                             <li>
-                                <?php echo Aux::getAncora("/js/basico/oop-primeiro-degrau/", $core->links[Core::SECAO_JS]); ?>
+                                <?php echo Aux::getAncora("/js/basico/oop-primeiro-degrau/", $core->paginas[Core::SECAO_JS]); ?>
                             </li>
                             <li>
-                                <?php $mat = Aux::retMateriaAtravesURL("/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/", $core->links[Core::SECAO_LOG]); ?>
+                                <?php $mat = Aux::retMateriaAtravesURL("/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/", $core->paginas[Core::SECAO_LOG]); ?>
                                 <a href="<?php echo $mat->url . "#js"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->codigo; ?></a>.
                             </li>
                         </ul>
@@ -302,7 +302,7 @@ objElem.value = "outro texto qualquer";</code></pre>
                     </div>
                     <?php
                     $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -310,7 +310,7 @@ objElem.value = "outro texto qualquer";</code></pre>
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->links, Core::SECAO_JS);
+        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
         $core->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>

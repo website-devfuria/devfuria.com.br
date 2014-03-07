@@ -22,15 +22,15 @@ class ListaSecao {
     const LABEL_GUIA_HTML = "Receitas e Guia de Referência de HTML & CSS";
     const LABEL_GUIA_MYSQL = "Receitas e Guia de Referência de MySql & SQL";
     const LABEL_GUIA_ER = "Receitas e Guia de Referência de Expressões Regulares (regexp)";
-    
+
     /**
      * Seta os links que são exibidos nas listas de navegação das matérias
      *
      * @param type $linksTodos
      * @param type $links_secao
      */
-    function setLinks($linksTodos, $links_secao) {
-        $this->links = $linksTodos[$links_secao];
+    function setLinks($todasPaginas, $secao, $sub_secao) {
+        $this->links = $todasPaginas[$secao][$sub_secao];
     }
 
 }

@@ -13,7 +13,7 @@ class Aux {
      *
      *
      * <code>
-     * echo Aux::getAncora("/js/basico/intro/", $core->links[Core::SECAO_JS]);
+     * echo Aux::getAncora("/js/basico/intro/", $core->paginas[Core::SECAO_JS]);
      * </code>
      *
      * Obs: esta função é para ser utilizada pelas views (matérias)

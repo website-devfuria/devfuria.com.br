@@ -106,7 +106,7 @@ $url = "/checkbox-checked/";
 
 
                         <p>É parecido com o formulário da matéria
-                            <?php $mat = Aux::retMateriaAtravesURL("/js/basico/checkbox-checked/", $core->links[Core::SECAO_JS]); ?>
+                            <?php $mat = Aux::retMateriaAtravesURL("/js/basico/checkbox-checked/", $core->paginas[Core::SECAO_JS]); ?>
                             <a href="<?php echo $mat->url . "#formulario-web"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
                             na seção <a href="<?php echo LINKS_PATH . "/js/" ?>">Javascript</a>.
 
@@ -219,7 +219,7 @@ $_POST['car']  = ( isset($_POST['car']) )  ? true : null;
 
 
                         <p>Estamos falando de HTML, se você não sabe o básico de checkbox poderá querer ver esta matéria
-                            <?php $mat = Aux::retMateriaAtravesURL("/html-css/basico/formularios-web/", $core->links[Core::SECAO_HTML]); ?>
+                            <?php $mat = Aux::retMateriaAtravesURL("/html-css/basico/formularios-web/", $core->paginas[Core::SECAO_HTML]); ?>
                             <a href="<?php echo $mat->url . "#input-check"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>.
                         </p>
 
@@ -268,7 +268,7 @@ $car  = (bool) rand(0, 1) ? "checked" : null;
 
                     <?php
                     $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -276,7 +276,7 @@ $car  = (bool) rand(0, 1) ? "checked" : null;
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->links, Core::SECAO_PHP);
+        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::SUB_SECAO_CURSO);
         $core->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>

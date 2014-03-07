@@ -4,7 +4,7 @@
  *
  *          <?php
  *          $core->paginacao->link_ativo = "/js/basico/preparando-o-terreno/";
- *          $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+ *          $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS]);
  *          include BASE_PATH . VIEWS_PATH . "/paginacao.php";
  *          ?>
  *      </div>

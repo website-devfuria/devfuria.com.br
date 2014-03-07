@@ -148,7 +148,7 @@ $url = "math-random-numero-randomico-em-javascript";
 
         <?php
         $core->lista->label = ListaSecao::LABEL_GUIA_JS;
-        $core->lista->setLinks($core->links, Core::GUIA_JS);
+        $core->lista->setLinks($core->paginas, Core::GUIA_JS);
         $core->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/guias/footer.php";
         ?>

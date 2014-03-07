@@ -1,6 +1,6 @@
 <?php
 /**
- * Lista as matŕeias de cada seção
+ * Lista as matérias de cada seção
  *
  * Utilizado diretamente pela home e
  * indiretamente por: index de cada seção, matérias e guias (receitas).
@@ -16,9 +16,9 @@
 
 
 <div class="list-group">
-    <?php foreach ($core->lista->links as $path => $titulo): ?>
-        <a href="<?php echo $path ?>" class="list-group-item <?php echo (strstr($path, $core->lista->link_ativo)) ? "active" : null; ?>">
-            <?php echo "$interator) " . $titulo ?>
+    <?php foreach ($core->lista->links as $pagina): ?>
+        <a href="<?php echo $pagina->url ?>" class="list-group-item <?php echo (strstr($pagina->url, $core->lista->link_ativo)) ? "active" : null; ?>">
+            <?php echo "$interator) " . $pagina->label_link ?>
         </a>
         <?php $interator++; ?>
     <?php endforeach; ?>

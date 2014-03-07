@@ -498,7 +498,7 @@ require "../../../core/boot.php";
                     </div>
                     <?php
                     $core->paginacao->link_ativo = "/html-css/basico/onde-tudo-comecou/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -511,7 +511,7 @@ require "../../../core/boot.php";
                 <div class="row">
                     <div class="col-md-6">
                         <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
+                        $core->lista->setLinks($core->paginas, Core::SECAO_HTML, Core::SUB_SECAO_CURSO);
                         $core->lista->link_ativo = "/html-css/basico/onde-tudo-comecou/";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>

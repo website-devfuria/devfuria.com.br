@@ -76,7 +76,7 @@ require "../core/boot.php";
 
         <?php
         $core->lista->label = ListaSecao::LABEL_CURSO_JS;
-        $core->lista->setLinks($core->links, Core::SECAO_JS);
+        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
         include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
         ?>
 
@@ -93,7 +93,7 @@ require "../core/boot.php";
                 <div class="col-md-12">
                         <?php
                         $core->lista->label = ListaSecao::LABEL_GUIA_JS;
-                        $core->lista->setLinks($core->links, Core::GUIA_JS);
+                        $core->lista->setLinks($core->paginas, Core::GUIA_JS);
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                 </div>

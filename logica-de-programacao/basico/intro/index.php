@@ -130,7 +130,7 @@ $url = "/logica-de-programacao/basico/intro/";
                     </div>
                     <?php
                     $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -139,7 +139,7 @@ $url = "/logica-de-programacao/basico/intro/";
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->links, Core::SECAO_LOG);
+        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
         $core->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>

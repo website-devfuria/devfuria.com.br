@@ -105,7 +105,7 @@ $url = "/js/basico/code-lampadas/";
                         </div>
 
                         <p>Nessa matéria utilizarei o código que faz a uma lâmpada ascender e apagar visto na matéria
-                            <?php echo Aux::getAncora("/js/basico/intro/", $core->links[Core::SECAO_JS]); ?>
+                            <?php echo Aux::getAncora("/js/basico/intro/", $core->paginas[Core::SECAO_JS]); ?>
                         </p>
 
                         <p>Clique nas abas para visualizar as partes separadamente: HTML, JS e resultado.</p>
@@ -440,7 +440,7 @@ se não
                         </div>
                         <?php
                         $core->paginacao->link_ativo = $url;
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                        $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS]);
                         include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                         ?>
                     </div><!-- Corpo da matéria -->
@@ -448,7 +448,7 @@ se não
             </div><!-- Matéria -->
 
             <?php
-            $core->lista->setLinks($core->links, Core::SECAO_JS);
+            $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
             $core->lista->link_ativo = $url;
             include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
             ?>

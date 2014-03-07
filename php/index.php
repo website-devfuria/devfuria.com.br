@@ -52,7 +52,7 @@ require "../core/boot.php";
 
         <?php
         $core->lista->label = ListaSecao::LABEL_CURSO_PHP;
-        $core->lista->setLinks($core->links, Core::SECAO_PHP);
+        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::SUB_SECAO_CURSO);
         include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
         ?>
 
