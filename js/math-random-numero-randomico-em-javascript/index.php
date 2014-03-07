@@ -6,7 +6,7 @@
  * Includes
  */
 require "../../core/boot.php";
-$url = "/checkbox-checked/";
+$url = "math-random-numero-randomico-em-javascript";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -146,7 +146,12 @@ $url = "/checkbox-checked/";
         </div><!-- Matéria -->
 
 
-        <?php include BASE_PATH . VIEWS_PATH . "/guias/footer.php"; ?>
+        <?php
+        $core->lista->label = ListaSecao::LABEL_GUIA_JS;
+        $core->lista->setLinks($core->links, Core::GUIA_JS);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/guias/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>
