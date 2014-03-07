@@ -37,7 +37,7 @@ require "../core/boot.php";
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
-        <div class="" style="background-color: #FFF; padding: 30px 0px;" id="html-css">
+        <div class="" style="padding: 30px 0px;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -79,7 +79,7 @@ require "../core/boot.php";
         $core->lista->setLinks($core->links, Core::SECAO_JS);
         include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
         ?>
-    
+
     <?php elseif ($_GET['tab'] == "guia"): ?>
 
         <main class="bs-masthead" id="content" role="main">
