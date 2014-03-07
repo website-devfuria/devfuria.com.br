@@ -223,7 +223,7 @@ $url = "/html-css/basico/elementos-inline-block-level/";
                     </div>
                     <?php
                     $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML][Core::SUB_SECAO_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
 

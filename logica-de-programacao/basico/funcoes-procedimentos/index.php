@@ -244,7 +244,7 @@ console.log(somarDoisNumeros(2, 4));
                     </div>
                     <?php
                     $core->paginacao->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::SUB_SECAO_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->

@@ -336,7 +336,7 @@ Server: Apache/2.2.15 (CentOS
                     </div>
                     <?php
                     $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::SUB_SECAO_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->

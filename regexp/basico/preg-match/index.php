@@ -249,12 +249,11 @@ if ($resultado === 1) {
                     </div>
                     <?php
                     $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_ER]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_ER][Core::SUB_SECAO_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
 
         <?php
