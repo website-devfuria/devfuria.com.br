@@ -22,6 +22,7 @@ class ListaSecao {
     const LABEL_GUIA_HTML = "Receitas e Guia de Referência de HTML & CSS";
     const LABEL_GUIA_MYSQL = "Receitas e Guia de Referência de MySql & SQL";
     const LABEL_GUIA_ER = "Receitas e Guia de Referência de Expressões Regulares (regexp)";
+    
     /**
      * Seta os links que são exibidos nas listas de navegação das matérias
      *

@@ -29,6 +29,7 @@ class Core {
 
     /**
      * Array multidimensional que armazeno os inks das matérias
+     * 
      * Ex:
      * $links[secao] = array(hr => label-link)
      * $links[secao] = array(hr => label-link)
