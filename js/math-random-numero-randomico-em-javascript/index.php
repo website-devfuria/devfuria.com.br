@@ -16,10 +16,10 @@ $url = "math-random-numero-randomico-em-javascript";
         $core->head->setDescription('');
         $core->head->setkeywords('');
         $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "guias/head.php";
+        include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
-    <body>
+    <body class="receitas-body">
 
         <?php
         $core->navtop->secao_ativa = Core::SECAO_JS;
@@ -31,7 +31,7 @@ $url = "math-random-numero-randomico-em-javascript";
             <div class="row">
 
                 <!-- Título -->
-                <div class="bs-header" id="content">
+                <div class="receitas-header" id="content">
                     <div class="container">
                         <h1>Como gerar números aleatórios em Javascript!</h1>
                     </div>
