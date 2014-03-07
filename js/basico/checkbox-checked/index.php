@@ -72,7 +72,7 @@ $url = "/checkbox-checked/";
                         <p>Checkbox é um controle com dois estados: ligado ou desligado.</p>
 
                         <p>Até parecem nosso código na máteria
-                            <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->paginas[Core::SECAO_JS]); ?>
+                            <?php $mat = Aux::getPagina("/js/basico/code-lampadas/"); ?>
                             <a href="<?php echo $mat->url; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
                             . Brincadeiras à parte.
                         </p>

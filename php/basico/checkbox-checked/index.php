@@ -106,7 +106,7 @@ $url = "/checkbox-checked/";
 
 
                         <p>É parecido com o formulário da matéria
-                            <?php $mat = Aux::retMateriaAtravesURL("/js/basico/checkbox-checked/", $core->paginas[Core::SECAO_JS]); ?>
+                            <?php $mat = Aux::getPagina("/js/basico/checkbox-checked/"); ?>
                             <a href="<?php echo $mat->url . "#formulario-web"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
                             na seção <a href="<?php echo LINKS_PATH . "/js/" ?>">Javascript</a>.
 
@@ -219,7 +219,7 @@ $_POST['car']  = ( isset($_POST['car']) )  ? true : null;
 
 
                         <p>Estamos falando de HTML, se você não sabe o básico de checkbox poderá querer ver esta matéria
-                            <?php $mat = Aux::retMateriaAtravesURL("/html-css/basico/formularios-web/", $core->paginas[Core::SECAO_HTML]); ?>
+                            <?php $mat = Aux::getPagina("/html-css/basico/formularios-web/"); ?>
                             <a href="<?php echo $mat->url . "#input-check"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>.
                         </p>
 

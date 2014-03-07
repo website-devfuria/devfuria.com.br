@@ -85,7 +85,7 @@ $url = "/js/basico/textbox-password-textarea/";
 
                         <p>
                             Nós já estudamos sobre esses controles na matéria
-                            <?php echo Aux::getAncora("/html-css/basico/formularios-web/", $core->paginas[Core::SECAO_HTML]) ?>
+                            <?php echo Aux::getAncora("/html-css/basico/formularios-web/") ?>
                         </p>
 
                         <p>Escolhi esses controles pois são bastantes semelhantes quanto ao seu funcionamento</p>
@@ -135,7 +135,7 @@ $url = "/js/basico/textbox-password-textarea/";
 
                         <p>
                             Já falamos sobre ela na matéria...
-                            <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->paginas[Core::SECAO_JS]); ?>
+                            <?php $mat = Aux::getPagina("/js/basico/code-lampadas/"); ?>
                             <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>.
                         </p>
 
@@ -259,7 +259,7 @@ objElem.value = "outro texto qualquer";</code></pre>
                                 <?php echo Aux::getAncora("/js/basico/oop-primeiro-degrau/", $core->paginas[Core::SECAO_JS]); ?>
                             </li>
                             <li>
-                                <?php $mat = Aux::retMateriaAtravesURL("/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/", $core->paginas[Core::SECAO_LOG]); ?>
+                                <?php $mat = Aux::getPagina("/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/"); ?>
                                 <a href="<?php echo $mat->url . "#js"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->codigo; ?></a>.
                             </li>
                         </ul>

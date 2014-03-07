@@ -69,7 +69,7 @@ require (BASE_PATH . "/oop/gateways/Paginas.php");
 /**
  * Conexão dom DB
  */
-$pdo = new PDO($dsn = "mysql:dbname=devfuria_fulia;host=localhost", $user="root", $pass="alfa9876");
+$pdo = new PDO($dsn = "mysql:dbname=devfuria_fulia;host=localhost", $user = "root", $pass = "alfa9876");
 $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 $pdo->exec("set names utf8");
 
@@ -78,10 +78,12 @@ $pdo->exec("set names utf8");
  */
 $core = new Core();
 
-
-$model_paginas = new Paginas($pdo);
-$core->paginas = $core->criaArrayPaginas($model_paginas->getAll());;
-
+#
+# Setando a lista (array) com todas as páginas do site
+#
+$model_paginas = new Paginas();
+$core->paginas = $core->criaArrayPaginas($model_paginas->getAll());
+//var_dump($core->paginas['html-css']);die();
 
 $core->secoes = array(
     Core::SECAO_JS => array(

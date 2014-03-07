@@ -105,7 +105,7 @@ $url = "/";
                         </div>
 
 
-                        <?php $mat = Aux::retMateriaAtravesURL("/js/basico/code-lampadas/", $core->paginas[Core::SECAO_JS]); ?>
+                        <?php $mat = Aux::getPagina("/js/basico/code-lampadas/"); ?>
                         <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
 
                         <?php echo Aux::getAncora("/logica-de-programacao/basico/intro/", $core->paginas[Core::SECAO_LOG]); ?>

@@ -6,7 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
-$url = "/js/basico/code-lampadas/";
+$url = "/code-lampadas/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -104,8 +104,9 @@ $url = "/js/basico/code-lampadas/";
                             <h1 id="intro">Analisando código</h1>
                         </div>
 
-                        <p>Nessa matéria utilizarei o código que faz a uma lâmpada ascender e apagar visto na matéria
-                            <?php echo Aux::getAncora("/js/basico/intro/", $core->paginas[Core::SECAO_JS]); ?>
+                        <p>
+                            Nesta matéria utilizarei o código que faz a uma lâmpada ascender e apagar visto na matéria
+                            <?php echo Aux::getAncora("/js/basico/intro/"); ?>
                         </p>
 
                         <p>Clique nas abas para visualizar as partes separadamente: HTML, JS e resultado.</p>
