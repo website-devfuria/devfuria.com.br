@@ -8,9 +8,9 @@ class Core {
 
     const SECAO_JS = "js";
     const SECAO_PHP = "php";
-    const SECAO_LOG = "logica-de-programacao";
-    const SECAO_HTML = "html-css";
-    const SECAO_MYSQL = "mysql-sql";
+    const SECAO_LOG = "logica";
+    const SECAO_HTML = "html";
+    const SECAO_MYSQL = "mysql";
     const SECAO_ER = "regexp";
     const GUIA_JS = "js-guia";
 

@@ -70,27 +70,27 @@ require (BASE_PATH . "/oop/Aux.php");
  */
 $core = new Core();
 $core->secoes = array(
-    "js" => array(
+    Core::SECAO_JS => array(
         "href" => "js/?tab=curso",
         "label" => "Javascript"
     ),
-    "html" => array(
+    Core::SECAO_HTML => array(
         "href" => "html-css",
         "label" => "HTML & CSS"
     ),
-    "php" => array(
+    Core::SECAO_PHP => array(
         "href" => "php",
         "label" => "PHP"
     ),
-    "logica-de-programacao" => array(
+    Core::SECAO_LOG => array(
         "href" => "logica-de-programacao",
         "label" => "Lógica de Programação"
     ),
-    "mysql-sql" => array(
+    Core::SECAO_MYSQL => array(
         "href" => "mysql-sql",
         "label" => "MySql & SQL"
     ),
-    "regexp" => array(
+    Core::SECAO_ER => array(
         "href" => "regexp",
         "label" => "RegExp"
     )

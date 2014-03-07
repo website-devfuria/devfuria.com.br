@@ -3,7 +3,7 @@
 <?php if ($core->lista->label): ?>
     <h1><?php echo $core->lista->label ?></h1>
 <?php else: ?>
-    <h1><?php echo $core->secoes[$core->navtop->secao_ativa] ?></h1>
+    <h1><?php echo $core->secoes[$core->navtop->secao_ativa]['label'] ?></h1>
 <?php endif; ?>
 
 
