@@ -55,7 +55,6 @@ require "../../../core/boot.php";
                                 <a href="#historia">Um pouco de história...</a>
                                 <ul class="nav">
                                     <li><a href="#w3c">W3C</a></li>
-                                    <li><a href="#w3c">W3C</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -511,7 +510,6 @@ require "../../../core/boot.php";
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1>HTML & CSS</h1>
                         <?php
                         $core->lista->setLinks($core->links, Core::SECAO_HTML);
                         $core->lista->link_ativo = "/html-css/basico/onde-tudo-comecou/";

@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/mysql-sql/basico/primeiros-passos-mysql/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -30,7 +31,7 @@ require "../../../core/boot.php";
             <div class="container">
                 <h1>Primeiro passos com Mysql</h1>
                 <p>Na verdade, já é o segundo, pois o primeiro nos demos na matéria anterior.</p>
-                <p>Aprenderemos como ler mensagens de erro, listar bases, selecionar base para uso, alias (apelido) 
+                <p>Aprenderemos como ler mensagens de erro, listar bases, selecionar base para uso, alias (apelido)
                     e  funcões básicas.</p>
             </div>
         </div>
@@ -134,7 +135,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="listar-bases">Listar as bases de dados do MySQl</h1>
-                        </div>                        
+                        </div>
 
                         <p>Quer saber quais são as base de dados existente em seu servidor Mysql?</p>
 
@@ -156,7 +157,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="sel-bases">Selecionando a base para uso</h1>
-                        </div>                        
+                        </div>
 
                         <p>Acabamos de listar todas as bases.<p/>
 
@@ -175,11 +176,11 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="outros">Outros comandos (praticando)</h1>
-                        </div> 
+                        </div>
 
                         <p>O MySql possue algumas funções que nos auxiliam. Uma delas é a <code>version()</code>. Ela
                             retorna a versão do MySql. Mas não podemos digitar apenas <code>version()</code>, pois isso
-                            gerará um erro (adivinha qual? rsssssss), precisamos utilizar o comando <code>SELECT</code> 
+                            gerará um erro (adivinha qual? rsssssss), precisamos utilizar o comando <code>SELECT</code>
                             junto. Veja:<p>
 
                         <pre><code class="no-highlight">SELECT version();</code></pre>
@@ -192,7 +193,7 @@ require "../../../core/boot.php";
 
                         <p>Ops! Acho que preciso atualizar a minha versão!</p>
 
-                        <p>Mantenha sempre seu sistema atualizado com a última versão. Faça disso um hábito.Depois eu 
+                        <p>Mantenha sempre seu sistema atualizado com a última versão. Faça disso um hábito.Depois eu
                             mostrarei como atualizar o MySql (para Linux, é óbvio).</p>
 
                         <p>Também é posssível utilizar o <code>SELECT</code> dessa forma:</p>
@@ -201,7 +202,7 @@ require "../../../core/boot.php";
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT 5 vezes 2'" src="select-5vezes2.png">
-                        </div>                        
+                        </div>
 
                         <p>Repare que ele traz o cálculo como sendo o nome do campo.</p>
 
@@ -211,7 +212,7 @@ require "../../../core/boot.php";
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Imagem ilustrando o comando 'SELECT 5 * 2 AS foo'" src="select-5vezes2-foo.png">
-                        </div>                        
+                        </div>
 
                         <p>O <code>AS</code> é um "alias"(apelido). Em português, "as" siginifica "como", ou seja,
                             podemos "traduzir" o statement da seguinte forma:</p>
@@ -238,7 +239,7 @@ require "../../../core/boot.php";
 
                         <p>O MySql não faz distinção entra caixa alta ou baixa</p>
 
-                        <p>Isso significa que <code>SELECT now();</code> é igual a <code>select NOW();</code> que é 
+                        <p>Isso significa que <code>SELECT now();</code> é igual a <code>select NOW();</code> que é
                             igual a <code>SeLeCt NoW();</code></p>
                     </div>
 
@@ -262,32 +263,23 @@ require "../../../core/boot.php";
                                         <span class="label label-default">http://dev.mysql.com/doc/refman/5.7/en/entering-queries.html</span>
                                     </a>
                                 </div>
-                            </div>                        
-                        </div>                    
+                            </div>
+                        </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/mysql-sql/basico/primeiros-passos-mysql/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                            
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>MySql</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
-                        $core->lista->link_ativo = "/mysql-sql/basico/primeiros-passos-mysql/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

@@ -39,7 +39,7 @@ require "core/boot.php";
 
         <div class="container">
             <div class="row">
-                <a href="<?php echo ROOT_PATH ?>" class="btn btn-primary home"><span class="glyphicon glyphicon-home"></span> &nbsp;Home</a>
+                <a href="<?php echo LINKS_PATH ?>" class="btn btn-primary home"><span class="glyphicon glyphicon-home"></span> &nbsp;Home</a>
             </div>
         </div>
 

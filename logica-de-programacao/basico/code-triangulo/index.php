@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/logica-de-programacao/basico/code-triangulo/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -80,7 +81,7 @@ if ($a < ($b + $c)) {
 
 # senão ...
 echo false;</code></pre>
-                        </div>                        
+                        </div>
 
 
                         <p>...só que agora reescrita utilizando-se funções:</p>
@@ -100,7 +101,7 @@ echo false;</code></pre>
     return false;
 }
 </code></pre>
-                        </div>                        
+                        </div>
 
 
                         <h3>A segunda solução </h3>
@@ -129,13 +130,13 @@ if ($c > ($a + $b)) {
 }
 
 echo true;</code></pre>
-                        </div>                        
+                        </div>
 
                         <p>Com o uso de funções, a solução proposta faz mais sentido. Abaixo, eu rescrevi o código como
                             uma função, confira...</p>
 
                         <div class="code">
-                            <h6>PHP</h6>                        
+                            <h6>PHP</h6>
                         <pre><code class="language-php">function eTriangulo($a, $b, $c) {
     if ($a > ($b + $c)) {
         return false;
@@ -160,29 +161,20 @@ echo true;</code></pre>
 
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/code-triangulo/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                    
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Lógica de Programação</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                        $core->lista->link_ativo = "/logica-de-programacao/basico/code-triangulo/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_LOG);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

@@ -14,9 +14,9 @@ require "../core/boot.php";
         $core->head->setTitle('RegExp');
         $core->head->setDescription('Pequeno curso de Expressões Regulares, feito especialmente para o plúbico iniciante.');
         $core->head->setkeywords("regexp; regexp básico; regexp fácil; regexp início; regexp iniciante; " .
-                "regexp iniciando; regexp iniciante; começando com regexp; começando no regexp; " .
-                "regexp descomplicado; aprendendo regexp; matéria sobre regexp; aula sobre regexp; " .
-                "expressões regulares"
+            "regexp iniciando; regexp iniciante; começando com regexp; começando no regexp; " .
+            "regexp descomplicado; aprendendo regexp; matéria sobre regexp; aula sobre regexp; " .
+            "expressões regulares"
         );
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -41,7 +41,7 @@ require "../core/boot.php";
     <main class="bs-masthead" id="content" role="main">
         <div class="container">
             <h1>RegExp<small></small></h1>
-            <p class="lead">Mini curso de Expressões regulares</p>
+            <p class="lead">Expressões regulares</p>
             <p>Este é pequeno curso sobre Expressões regulares (ER)</p>
             <p>Como o site destina-se a programação web eu foco o uso das ER nas linguagens PHP e Javascript.</p>
             <p>Confesso que não sou nenhum mestre em ER, é bom que você saiba disso antes de iniciar o curso!</p>
@@ -52,19 +52,11 @@ require "../core/boot.php";
         </div>
     </main>
 
-    <div class="" style="background-color: #FFF; padding:   0px 0px;" id="">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>RegExp</h1>
-                    <?php
-                    $core->lista->setLinks($core->links, Core::SECAO_ER);
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php
+    $core->lista->label = ListaSecao::LABEL_CURSO_ER;
+    $core->lista->setLinks($core->links, Core::SECAO_ER);
+    include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
+    ?>
 
     <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 </body>

@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/php/basico/debugando/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -141,7 +142,7 @@ die();
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Debugando com var_dump()" src="debug-var_dump.png" />
                             <p>Ilustração de como é exibido os dados COM var_dump()</p>
-                        </div>                        
+                        </div>
 
                         <p>É possível passar n variáveis, basta separá-las por vírgula.</p>
                     </div>
@@ -170,7 +171,7 @@ die();
                         <div class="bs-example">
                             <img class="img-rounded img-responsive" alt="### ###Debugando com echo" src="debug-erro.png">
                             <p>Erro exibido pelo x-debug!</p>
-                        </div>                        
+                        </div>
 
                         <ol>
                             <li>Temos o tipo de erro: Warning</li>
@@ -239,29 +240,20 @@ echo "&lt;/pre&gt;";
                         <p>E aí, sentiu a diferença?</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/php/basico/debugando/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>PHP</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_PHP);
-                        $core->lista->link_ativo = "/php/basico/debugando/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_PHP);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

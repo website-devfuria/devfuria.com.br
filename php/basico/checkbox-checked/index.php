@@ -275,20 +275,11 @@ $car  = (bool) rand(0, 1) ? "checked" : null;
             </div><!-- row -->
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>PHP</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_PHP);
-                        $core->lista->link_ativo = $url;
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_PHP);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

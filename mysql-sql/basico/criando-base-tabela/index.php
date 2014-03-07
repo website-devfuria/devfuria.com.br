@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/mysql-sql/basico/criando-base-tabela/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -114,7 +115,7 @@ require "../../../core/boot.php";
                             5 anos atrás.</p>
 
                         <p>Junto com a questão conceital, temos os <strong>tipos de dados</strong>. Cada campo (coluna) da tabela
-                            deve ser de um tipo. Ainda não falamos sobre tipos de dados do mysql, veremos o assunto 
+                            deve ser de um tipo. Ainda não falamos sobre tipos de dados do mysql, veremos o assunto
                             em breve.</p>
 
                         <h3 id="tabela-exemplo">Uma tabela de exemplo</h3>
@@ -190,7 +191,7 @@ data de óbito
 
                         <div class="bs-example ">
                             <img class="img-thumbnail" alt="### Comando CREATE TABLE pet" src="create-table-pet.png" />
-                        </div>                            
+                        </div>
 
                     </div>
 
@@ -212,7 +213,7 @@ data de óbito
 
                         <div class="bs-example ">
                             <img class="img-thumbnail" alt="### Resultado do comando DESCRIBE pet" src="describe-pet.png" />
-                        </div>                         
+                        </div>
 
 
                         <h3>DROPT TABLE</h3>
@@ -241,7 +242,7 @@ data de óbito
                         <div class="page-header">
                             <h1 id="populando">Populando a tabela</h1>
                         </div>
-                            
+
                         <p>Não está faltando alguma coisa nessa tabela?</p>
 
                         <p>Sim, os dados!</p>
@@ -256,7 +257,7 @@ data de óbito
                         <p>Vamos criar um arquivo chamado <code>pet.txt</code>. Seu conteúdo se parece com o seguinte:</p>
 
                         <div class="code">
-                            <h6>pet.txt</h6>                        
+                            <h6>pet.txt</h6>
                             <pre><code class="no-highlight">Fluffy	Harold	cat	f	1993-02-04	\N
 Claws	Gwen	cat	m	1994-03-17	\N
 Buffy	Harold	dog	f	1989-05-13	\N
@@ -272,26 +273,26 @@ Slim	Benny	snake	m	1996-04-29	\N
                         <p>No meu caso eu salvei o arquivo na pasta <code>/home/flavio</code>. Meu statement ficou assim:</p>
 
                         <pre><code class="no-highlight">LOAD DATA LOCAL INFILE '/home/flavio/pet.txt' INTO TABLE pet;</code></pre>
-                        
+
                         <p><strong>Como saber se deu certo?</strong></p>
 
                         <p>Execute...</p>
-                        
+
                         <pre><code class="no-highlight">SELECT * FROM pet;</code></pre>
-                        
+
                         <p>...sua tela deve parecer-se com a minha:</p>
-                        
+
                         <div class="bs-example ">
                             <img class="img-thumbnail" alt="### Resultado do comando SELECT * FROM pet " src="select-pet.png" />
                         </div>
-                        
+
                         <p>Se você conseguiu inserir os dados mas eles não ficaram igual ao meu exemplo limpe a tabela
                             (<code>TRUNCATE TABLE pet;</code>) e tente denovo.</p>
-                        
+
                         <p>Se preferir peque o exemplo neste  <a href="https://gist.github.com/flaviomicheletti/8359890" title="link-externo">gist</a>.</p>
-                        
+
                         <p>Na próxima matéria veremos como fazer o CRUD (continuaremos utilizando a tabela <code>pet</code>).</p>
-                        
+
                     </div>
 
                     <div class="bs-docs-section">
@@ -310,32 +311,23 @@ Slim	Benny	snake	m	1996-04-29	\N
                                         <span class="label label-default">http://dev.mysql.com/doc/refman/5.7/en/database-use.html</span>
                                     </a>
                                 </div>
-                            </div>                        
-                        </div>                    
+                            </div>
+                        </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/mysql-sql/basico/criando-base-tabela/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                            
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>MySql</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
-                        $core->lista->link_ativo = "/mysql-sql/basico/criando-base-tabela/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

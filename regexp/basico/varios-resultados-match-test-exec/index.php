@@ -6,6 +6,7 @@
  * Includes
  */
 require "../../../core/boot.php";
+$url = "/regexp/basico/varios-resultados-match-test-exec/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -211,29 +212,20 @@ if (resultado) {
                             e clique no botão "Download Gist", descompacte o arquivo e boa diversão.</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/regexp/basico/varios-resultados-match-test-exec/";
+                    $core->paginacao->link_ativo = $url;
                     $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
 
         </div><!-- Matéria -->
 
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>RegExp</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_ER);
-                        $core->lista->link_ativo = "/regexp/basico/varios-resultados-match-test-exec/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        $core->lista->setLinks($core->links, Core::SECAO_ER);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 
     </body>

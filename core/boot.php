@@ -4,7 +4,7 @@
  * Arquivo Bootstrap
  */
 /**
- *
+ * Session
  */
 session_start();
 
@@ -15,19 +15,15 @@ session_start();
 date_default_timezone_set('America/Sao_Paulo');
 
 /**
- *
+ * Const do sistema
  */
 define('DF', true);
-//define('GANALYTICS_ON', true); // liga
-define('GANALYTICS_ON', false); // desliga
-
-
 
 /**
- * Root
+ *  Google Analytics
  */
-//define('ROOT_PATH', "http://www.devfuria.com.br");
-define('ROOT_PATH', "http://localhost/devfuria/www.devfuria.com.br");
+//define('GANALYTICS_ON', true); // liga
+define('GANALYTICS_ON', false); // desliga
 
 
 /**
@@ -40,20 +36,14 @@ define('BASE_PATH', dirname(__FILE__));
  * Caminho absoluto para links e imagens
  */
 # www.devefuria.com.br
-define('LINKS_PATH', ROOT_PATH);
-
+//define('LINKS_PATH', "http://www.devfuria.com.br");
+define('LINKS_PATH', "http://localhost/devfuria/www.devfuria.com.br");
 
 
 /**
  * Pasta das views
  */
 define('VIEWS_PATH', "/views/");
-
-
-/**
- * Pasta dos componetes (referente as views)
- */
-//define('VIEWS_COMP_PATH', "/views/comp/");
 
 
 /**
@@ -80,12 +70,41 @@ require (BASE_PATH . "/oop/Aux.php");
  */
 $core = new Core();
 $core->secoes = array(
-    "js" => "Javascript",
-    "php" => "PHP",
-    "html-css" => "HTML & CSS",
-    "logica-de-programacao" => "Lógica de Programação",
-    "mysql-sql" => "MySql & SQL",
-    "regexp" => "RegExp"
+    Core::SECAO_JS => array(
+        "href" => "js/?tab=curso",
+        "label" => "Javascript"
+    ),
+    Core::SECAO_HTML => array(
+        "href" => "html-css",
+        "label" => "HTML & CSS"
+    ),
+    Core::SECAO_PHP => array(
+        "href" => "php",
+        "label" => "PHP"
+    ),
+    Core::SECAO_LOG => array(
+        "href" => "logica-de-programacao",
+        "label" => "Lógica de Programação"
+    ),
+    Core::SECAO_MYSQL => array(
+        "href" => "mysql-sql",
+        "label" => "MySql & SQL"
+    ),
+    Core::SECAO_ER => array(
+        "href" => "regexp",
+        "label" => "RegExp"
+    )
+);
+$core->guias = array(
+    "js" => "Javascript"
+//    "php/receitas-guia-referencia/" => "PHP",
+//    "html-css/receitas-guia-referencia/" => "HTML & CSS",
+//    "logica-de-programacao/receitas-guia-referencia/" => "Lógica de Programação",
+//    "mysql-sql/receitas-guia-referencia/" => "MySql & SQL",
+//    "regexp/receitas-guia-referencia/" => "RegExp"
+);
+$core->links[Core::GUIA_JS] = array(
+    LINKS_PATH . "/js/math-random-numero-randomico-em-javascript/" => "Como gerar números aleatórios em Javascript!",
 );
 $core->links[Core::SECAO_JS] = array(
     LINKS_PATH . "/js/basico/intro/" => "Introdução",
