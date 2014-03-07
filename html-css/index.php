@@ -25,7 +25,7 @@ require "../core/boot.php";
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
-        
+
         <link rel="canonical" href="<?php echo LINKS_PATH; ?>/html-css/" />
         <style type="text/css">
             h1 {
@@ -45,7 +45,6 @@ require "../core/boot.php";
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
                 <h1>HTML & CSS<small></small></h1>
-                <p class="lead">Curso de HTML e CSS</p>
                 <p>HTML e CSS são divertidos.</p>
                 <p>A questão é que <strong>sem esses elementos básicos não se produz aplicação web</strong>.</p>
                 <p>Se a aplicação for uma edificação, o HTML é o cimento e o CSS a massa fina.</p>
@@ -56,20 +55,11 @@ require "../core/boot.php";
             </div>
         </main>
 
-        <div class="" style="background-color: #FFF; padding: 0px 0px;" id="html-css">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>HTML & CSS</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <?php
+        $core->lista->label = ListaSecao::LABEL_CURSO_HTML;
+        $core->lista->setLinks($core->links, Core::SECAO_HTML);
+        include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

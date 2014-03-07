@@ -42,7 +42,6 @@ require "../core/boot.php";
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
                 <h1>PHP<small></small></h1>
-                <p class="lead">Curso de PHP</p>
                 <p>O curso de PHP foi o primeiro a aparecer, ele "abriu" o site devfuria.</p>
                 <p>Este curso não pretende ser uma referência a linguagem PHP, pois o manual do PHP já cumpre com esse papel.</p>
                 <p>Eu idealizei (como todos os demais cursos) para ser uma experiência prática e de vez em quando divertida.</p>
@@ -51,19 +50,11 @@ require "../core/boot.php";
             </div>
         </main>
 
-        <div class="" style="background-color: #FFF; padding:   0px 0px;" id="html-css">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>PHP</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_PHP);
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        $core->lista->label = ListaSecao::LABEL_CURSO_PHP;
+        $core->lista->setLinks($core->links, Core::SECAO_PHP);
+        include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
+        ?>
 
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>

@@ -14,7 +14,7 @@ require "../core/boot.php";
         $core->head->setTitle('Lógica de Programação');
         $core->head->setDescription('Curso de Lógica de Programação alinhada a Orientação de Objetos e TDD.');
         $core->head->setkeywords("lógica básico; lógica de programação; lógica para iniciantes; " .
-                "raciocio lógico; algoritmo; lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; "
+            "raciocio lógico; algoritmo; lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; "
         );
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -58,20 +58,11 @@ require "../core/boot.php";
         </div>
     </main>
 
-    <div class="" style="background-color: #FFF; padding:   0px 0px;" id="">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Lógica de Programação</h1>
-                    <?php
-                    $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <?php
+    $core->lista->label = ListaSecao::LABEL_CURSO_LOG;
+    $core->lista->setLinks($core->links, Core::SECAO_LOG);
+    include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
+    ?>
     <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 </body>
 </html>

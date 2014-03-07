@@ -74,19 +74,12 @@ require "../core/boot.php";
             </div>
         </main>
 
-        <div class="" style="background-color: #FFF; padding:   0px 0px;" id="html-css">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <?php
-                        $core->lista->label = ListaSecao::LABEL_CURSO_JS;
-                        $core->lista->setLinks($core->links, Core::SECAO_JS);
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        $core->lista->label = ListaSecao::LABEL_CURSO_JS;
+        $core->lista->setLinks($core->links, Core::SECAO_JS);
+        include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
+        ?>
+    
     <?php elseif ($_GET['tab'] == "guia"): ?>
 
         <main class="bs-masthead" id="content" role="main">
