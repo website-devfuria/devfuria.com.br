@@ -28,6 +28,11 @@ class Core {
     public $secoes = array();
 
     /**
+     * Array multidimensional que armazeno os inks das matérias
+     * Ex:
+     * $links[secao] = array(hr => label-link)
+     * $links[secao] = array(hr => label-link)
+     * $links[secao] = array(hr => label-link)
      *
      * @var type
      */
@@ -35,18 +40,21 @@ class Core {
 
     /**
      * Classe que manipula o cabecalho
+     *
      * @var type
      */
     public $head;
 
     /**
      * Classe que manipula a barra de navegação
+     *
      * @var type
      */
     public $navtop;
 
     /**
      * Classe que manipula as listas de links de cada seção
+     *
      * @var type
      */
     public $lista;

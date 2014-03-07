@@ -5,7 +5,7 @@
 /**
  * Includes
  */
-require "../../../core/boot.php";
+require "../../core/boot.php";
 $url = "/checkbox-checked/";
 ?>
 <!DOCTYPE html>

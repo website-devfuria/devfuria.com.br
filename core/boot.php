@@ -51,12 +51,6 @@ define('VIEWS_PATH', "/views/");
 
 
 /**
- * Pasta dos componetes (referente as views)
- */
-//define('VIEWS_COMP_PATH', "/views/comp/");
-
-
-/**
  *  Domínio, (não mais) utilizado nos title das páginas
  */
 define('DOMINIO', "www.devfuria.com.br");
@@ -80,15 +74,33 @@ require (BASE_PATH . "/oop/Aux.php");
  */
 $core = new Core();
 $core->secoes = array(
-    "js/?tab=curso" => "Javascript",
-    "php" => "PHP",
-    "html-css" => "HTML & CSS",
-    "logica-de-programacao" => "Lógica de Programação",
-    "mysql-sql" => "MySql & SQL",
-    "regexp" => "RegExp"
+    "js" => array(
+        "href" => "js/?tab=curso",
+        "label" => "Javascript"
+    ),
+    "html" => array(
+        "href" => "html-css",
+        "label" => "HTML & CSS"
+    ),
+    "php" => array(
+        "href" => "php",
+        "label" => "PHP"
+    ),
+    "logica-de-programacao" => array(
+        "href" => "logica-de-programacao",
+        "label" => "Lógica de Programação"
+    ),
+    "mysql-sql" => array(
+        "href" => "mysql-sql",
+        "label" => "MySql & SQL"
+    ),
+    "regexp" => array(
+        "href" => "regexp",
+        "label" => "RegExp"
+    )
 );
 $core->guias = array(
-    "js/receitas-guia-referencia/" => "Javascript"
+    "js" => "Javascript"
 //    "php/receitas-guia-referencia/" => "PHP",
 //    "html-css/receitas-guia-referencia/" => "HTML & CSS",
 //    "logica-de-programacao/receitas-guia-referencia/" => "Lógica de Programação",
@@ -96,7 +108,7 @@ $core->guias = array(
 //    "regexp/receitas-guia-referencia/" => "RegExp"
 );
 $core->links[Core::GUIA_JS] = array(
-    LINKS_PATH . "/js/receitas-guia-referencia/math-random-numero-randomico-em-javascript/" => "Como gerar números aleatórios em Javascript!",
+    LINKS_PATH . "/js/math-random-numero-randomico-em-javascript/" => "Como gerar números aleatórios em Javascript!",
 );
 $core->links[Core::SECAO_JS] = array(
     LINKS_PATH . "/js/basico/intro/" => "Introdução",
