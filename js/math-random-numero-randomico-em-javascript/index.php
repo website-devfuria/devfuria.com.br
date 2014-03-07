@@ -145,14 +145,12 @@ $url = "math-random-numero-randomico-em-javascript";
             </div><!-- row -->
         </div><!-- Matéria -->
 
-
         <?php
         $core->lista->label = ListaSecao::LABEL_GUIA_JS;
-        $core->lista->setLinks($core->paginas, Core::GUIA_JS);
+        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_GUIA);
         $core->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/guias/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

@@ -111,12 +111,3 @@ $core->secoes = array(
         "label" => "RegExp"
     )
 );
-
-$core->guias = array(
-    "js" => "Javascript"
-//    "php/receitas-guia-referencia/" => "PHP",
-//    "html-css/receitas-guia-referencia/" => "HTML & CSS",
-//    "logica-de-programacao/receitas-guia-referencia/" => "Lógica de Programação",
-//    "mysql-sql/receitas-guia-referencia/" => "MySql & SQL",
-//    "regexp/receitas-guia-referencia/" => "RegExp"
-);

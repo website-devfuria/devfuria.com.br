@@ -93,7 +93,7 @@ require "../core/boot.php";
                 <div class="col-md-12">
                         <?php
                         $core->lista->label = ListaSecao::LABEL_GUIA_JS;
-                        $core->lista->setLinks($core->paginas, Core::GUIA_JS);
+                        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_GUIA);
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                 </div>
