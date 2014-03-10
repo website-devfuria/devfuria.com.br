@@ -16,13 +16,14 @@ require "../../../core/boot.php";
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
+        <meta name="robots" content="noindex">
     </head>
     <body>
 
         <?php
         $core->navtop->secao_ativa = Core::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
 <div class="jumbotron">
