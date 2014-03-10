@@ -21,8 +21,6 @@ As pastas abaixo são as matérias propriamente ditas:
 * <code>regexp/</code>
 
 
-A pasta <code>_analisar/</code> é para analisar o site e não vai para o "ar".
-
 A pasta <code>_draft/</code> contém diversos rascunho e não vão para o "ar".
 
 A pasta <code>_labs/</code> são arquivos de teste, também não vão para o "ar".
