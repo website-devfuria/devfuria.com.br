@@ -37,7 +37,7 @@ require "../../../core/boot.php";
                         <div class="col-md-6">
                             <h3>Lógica de programação</h3>
                             <?php
-                            $core->lista->setLinks($core->links, Core::SECAO_LOG);
+                            $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
                             include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                             ?>
                         </div>

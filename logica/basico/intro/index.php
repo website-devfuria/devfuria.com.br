@@ -129,7 +129,7 @@ require "../../../core/boot.php";
                             </div>
                             <?php
                             $core->paginacao->link_ativo = "/logica/basico/intro/";
-                            $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
+                            $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::SUB_SECAO_CURSO]);
                             include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                             ?>
                         </div>                                
@@ -147,7 +147,7 @@ require "../../../core/boot.php";
                     <div class="col-md-6">
                         <h1>Lógica de Programação</h1>
                         <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
+                        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
                         $core->lista->link_ativo = "/logica/basico/intro/";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>

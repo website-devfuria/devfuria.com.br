@@ -96,7 +96,7 @@ $url = "/php/basico/textbox-password-textarea/";
 
                         <p>
                             Nós já estudamos sobre esses controles na matéria
-                            <?php echo Aux::getAncora("/html-css/basico/formularios-web/", $core->links[Core::SECAO_HTML]) ?>
+                            <?php echo Aux::getAncora("/html-css/basico/formularios-web/", $core->paginas[Core::SECAO_HTML]) ?>
                         </p>
 
                         <p>Esses 3 controles são semelhantes quanto ao que acontece por trás dos panos (lá no lado
@@ -127,7 +127,7 @@ $url = "/php/basico/textbox-password-textarea/";
 
                         <p>
                             Já vimos isso na matéria
-                            <?php echo Aux::getAncora("/php/basico/enviando-dados-via-get-post/", $core->links[Core::SECAO_PHP]) ?>
+                            <?php echo Aux::getAncora("/php/basico/enviando-dados-via-get-post/", $core->paginas[Core::SECAO_PHP]) ?>
                         </p>
 
                     </div>
@@ -174,7 +174,7 @@ $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
 
                         <p>
                             Também já vimos isso na matéria
-                            <?php echo Aux::getAncora("/php/basico/recebendo-dados-via-get-post/", $core->links[Core::SECAO_PHP]) ?>
+                            <?php echo Aux::getAncora("/php/basico/recebendo-dados-via-get-post/", $core->paginas[Core::SECAO_PHP]) ?>
                         </p>
 
                         <h3>E agora o que fazer com os dados?</h3>
@@ -328,7 +328,7 @@ $text = "algum texto";
 
                     <?php
                     $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::SUB_SECAO_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -336,7 +336,7 @@ $text = "algum texto";
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->links, Core::SECAO_PHP);
+        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::SUB_SECAO_CURSO);
         $core->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
