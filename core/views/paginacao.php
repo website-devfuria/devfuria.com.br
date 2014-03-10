@@ -12,7 +12,7 @@
  */
 ?>
 
-<ul class="pager">
+<ul class="pager hidden-xs">
     <?php if ($core->paginacao->anterior['href']): ?>
         <li class="previous">
             <a href="<?php echo $core->paginacao->anterior['href']; ?>">
