@@ -326,6 +326,11 @@ element.onclick = function() {
                                         <p class="list-group-item-text">Referência oficial do Javascript.</p>
                                         <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</span>
                                     </a>
+                                    <a href="https://developer.mozilla.org/pt-BR/docs/JavaScript" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Javascript (MDN)</h4>
+                                        <p class="list-group-item-text">Página Index sobre o JS, possue muitos links interessantes.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/pt-BR/docs/JavaScript</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>

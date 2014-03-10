@@ -380,6 +380,26 @@ $url = "/html-css/basico/formularios-web/";
                     $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML][Core::SUB_SECAO_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">My first HTML form (MDN)</h4>
+                                        <p class="list-group-item-text">Exemplo básico de formulário web.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

@@ -318,10 +318,15 @@ $url = "/html-css/basico/html-intro/";
                             </div>
                             <div class="panel-body">
                                 <div class="list-group">
-                                    <a href="http://www.codecademy.com/glossary/html  " class="list-group-item" title="link-externo">
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">HTML element reference</h4>
+                                        <p class="list-group-item-text">Glossário de elementos HTML (inclui HTML5).</p>
+                                        <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</span>
+                                    </a>
+                                    <a href="http://www.codecademy.com/glossary/html" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">HTML Glossary (codecademy)</h4>
                                         <p class="list-group-item-text">Um pequeno glossário do site codecadmey..</p>
-                                        <span class="label label-default">http://www.codecademy.com/glossary/html  </span>
+                                        <span class="label label-default">http://www.codecademy.com/glossary/html</span>
                                     </a>
                                 </div>
                             </div>

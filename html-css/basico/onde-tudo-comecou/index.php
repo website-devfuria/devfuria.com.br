@@ -488,11 +488,38 @@ $url ="/html-css/basico/onde-tudo-comecou/";
                                     </a>
                                     <div class="media-body">
                                         <h4 class="media-heading">Costruindo sites com CSS e XHMTL</h4>
-                                        <p>Maurício Samt (vulgo Majour), Editora Novatec</p>
+                                        <p>Maurício Samy (vulgo Majour), Editora Novatec</p>
                                         <p>Esse é outro que também está desatualizado, mas é ótimo.</p>
                                         <p>Ambos os livros são complementares um do outro.</p>
                                         <p>Não conheco um desenvolvedore que não tenha lido esses livros.</p>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="https://developer.mozilla.org/pt-BR/docs/HTML/Introduction" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Introdução ao HTML (MDN)</h4>
+                                        <p class="list-group-item-text">Belíssima introdução ao HTML.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/pt-BR/docs/HTML/Introduction</span>
+                                    </a>
+                                    <a href="http://www.maujor.com/w3c/xhtml10_2ed.html" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Recomendações do W3C XHTML 1</h4>
+                                        <p class="list-group-item-text">Tradução do Majour.</p>
+                                        <p class="list-group-item-text">Lembrando que já estamos no HTML 5, mas não podemos esquecer o passado,
+                                                                        afinal somos cientistas da computação.</p>
+                                        <span class="label label-default">http://www.maujor.com/w3c/xhtml10_2ed.html</span>
+                                    </a>
+                                    <a href="http://www.maujor.com/tutorialcss1/css1tut.shtml" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Recomendações do W3C CSS nível 1</h4>
+                                        <p class="list-group-item-text">Tradução do Majour.</p>
+                                        <p class="list-group-item-text">Idem ao comentário anterior (já estmaos no CSS 3.</p>
+                                        <span class="label label-default">http://www.maujor.com/tutorialcss1/css1tut.shtml</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
