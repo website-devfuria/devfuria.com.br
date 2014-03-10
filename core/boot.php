@@ -87,7 +87,7 @@ $core->paginas = $core->criaArrayPaginas($model_paginas->getAll());
 
 $core->secoes = array(
     Core::SECAO_JS => array(
-        "href" => "js/?tab=curso",
+        "href" => "js",
         "label" => "Javascript"
     ),
     Core::SECAO_HTML => array(

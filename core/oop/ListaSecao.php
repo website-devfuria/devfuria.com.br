@@ -16,7 +16,7 @@ class ListaSecao {
     const LABEL_CURSO_MYSQL = "Curso de MySql & SQL";
     const LABEL_CURSO_ER = "Curso de Expressões Regulares (regexp)";
 
-    const LABEL_GUIA_JS = "Receitas e Guia de Referência de Javascript";
+    const LABEL_GUIA_JS = "Receitas, Tutoriais e Guia de Referência de Javascript";
     const LABEL_GUIA_PHP = "Receitas e Guia de Referência de PHP";
     const LABEL_GUIA_LOG = "Receitas e Guia de Referência de Lógica de Programação";
     const LABEL_GUIA_HTML = "Receitas e Guia de Referência de HTML & CSS";

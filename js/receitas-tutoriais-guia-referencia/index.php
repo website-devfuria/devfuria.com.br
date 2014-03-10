@@ -5,7 +5,7 @@
 /**
  * Includes
  */
-require "../core/boot.php";
+require "../../core/boot.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -42,10 +42,10 @@ require "../core/boot.php";
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="nav nav-tabs">
-                            <li class="active">
+                            <li>
                                 <a href="<?php echo LINKS_PATH . "/js/" ?>">Curso</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="<?php echo LINKS_PATH . "/js/receitas-tutoriais-guia-referencia" ?>">Receitas, Tutoriais e Guia de Referência</a>
                             </li>
                         </ul>
@@ -56,23 +56,21 @@ require "../core/boot.php";
 
     <main class="bs-masthead" id="content" role="main">
         <div class="container">
-            <h1>Javascript<small></small></h1>
-            <p>Preciso confessar algo: <strong>tenho o maior carinho por este curso</strong>.</p>
-            <p>Adoro Javascript (JS) e estou escrevendo as matérias com muita alegria.</p>
-            <p>JS foi (talvez ainda seja) uma linguagem sempre tida como secundária.</p>
-            <p>Eu, quando comecei a programar em meados de 2007, fui apresentado ao JS como sendo um mal necessário.</p>
-            <p>Como bom aprendiz, acreditei nessa palavras tolas e por muito tempo evitei o JS.</p>
-            <p>Em dado momento, quase como um passe de mágica eu comecei a me encantar com a linguagem.</p>
-            <p>E, se pudesse voltar ao passado, jamais teria cometido a loucura de ignorá-la.</p>
-            <p>Seja bem vindo curso e espero que você também se apaixone pelo JS.</p>
+            <h1>Javascript</h1>
         </div>
     </main>
 
-    <?php
-    $core->lista->label = ListaSecao::LABEL_CURSO_JS;
-    $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
-    include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
-    ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <?php
+                $core->lista->label = ListaSecao::LABEL_GUIA_JS;
+                $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_GUIA);
+                include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+                ?>
+            </div>
+        </div>
+    </div>
 
     <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 </body>
