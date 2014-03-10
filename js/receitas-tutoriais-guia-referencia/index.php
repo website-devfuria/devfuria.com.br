@@ -57,6 +57,10 @@ require "../../core/boot.php";
     <main class="bs-masthead" id="content" role="main">
         <div class="container">
             <h1>Javascript</h1>
+            <p>Essa <strong>sub seção</strong> foi a primeira a aparecer aqui no site</p>
+            <p>Eu estava escrevendo uma matéria e precisava explicar o usuo da função <code>Math.random()</code>.</p>
+            <p>Não caberia fazer uma matéria inteira só para a função, então nasceu as <strong>Receitas, Tutoriais e Guias</strong>.</p>
+            <p>Os artigos não possuem uma sequência lógica.</p>
         </div>
     </main>
 
