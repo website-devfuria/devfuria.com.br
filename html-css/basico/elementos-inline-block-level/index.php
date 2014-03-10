@@ -66,52 +66,12 @@ $url = "/html-css/basico/elementos-inline-block-level/";
                         <p>A diferênça básica é que o browser acomoda os elementos <strong>inline</strong> à esquerda um ao lado do outro
                             e as de <strong>bloco</strong ele coloca uma em baixo da outra ocupando a tela toda.></p>
 
-                        <p>Veja o HTML abaixo para entender e clique no <a href="code1.html" title="link-externo">link</a>
-                            para perceber como ele foi reenderizado.</p>
+                        <p>Veja o HTML abaixo para entender e perceber como ele foi reenderizado.</p>
 
-                        <div class="code">
-                            <h6>HTML</h6>
-                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-br"&gt;
-    &lt;head&gt;
-        &lt;title&gt;elementos in-li e block-level&lt;/title&gt;
-        &lt;style type="text/css"&gt;
-            body * {
-                border: 1px solid #000;
-                background-color: #F5F5F5;
-                margin: 20px;
-            }
-        &lt;/style&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
+                        <div data-height="1100" data-theme-id="2897" data-slug-hash="EiqIm" data-default-tab="null" class='codepen'><pre><code></code></pre>
+<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/EiqIm'>Elementos in-line e elementos block-level</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+</div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
-        &lt;h1&gt;Título 1&lt;/h1&gt;
-        &lt;h2&gt;Título 2&lt;/h2&gt;
-
-        &lt;span&gt;span 01&lt;/span&gt;
-        &lt;span&gt;span 02&lt;/span&gt;
-        &lt;span&gt;span 03&lt;/span&gt;
-
-
-        &lt;p&gt;parágrafo a&lt;/p&gt;
-        &lt;p&gt;parágrafo b&lt;/p&gt;
-
-        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
-        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
-        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png"/&gt;
-
-        &lt;div&gt;div 1&lt;/div&gt;
-        &lt;div&gt;div 2&lt;/div&gt;
-
-        &lt;a href="#"&gt;Link 1&lt;/a&gt;
-        &lt;a href="#"&gt;também me chamam de âncora&lt;/a&gt;
-
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-                        </div>
-
-                        <p>Esse não é um HTML "oficial", é apenas para fins ilustrativos. Eu criei um CSS básico e
-                            misturei as tag's inline e block apenas para você perceber como elas se comportam.</p>
 
                         <p>Perceber esse aspecto básico, mais do que entender, lhe ajudará a criar páginas HTML sem muita dor de cabeça.</p>
 
@@ -168,56 +128,20 @@ $url = "/html-css/basico/elementos-inline-block-level/";
 
                         <p>A tag <code>span</code> é inline, mas se aplicarmos a propriedade <code>block</code> ela se comportará como uma tag block-level.</p>
 
-                        <p>Para ilustrar eu utilizei o mesmo HTML acima e apliquei duas regras de css para "inverter as bolas", quem era block virou
-                            inline e quem era inline virou block. Veja o resultado <a href="code2.html" title="link-externo">aqui</a></p>
+                        <p>Para ilustrar, eu apenas acrescentei o css abaixo<p>
 
-                        <div class="code">
-                            <h6>HTML</h6>
-                            <pre><code class="language-html">&lt!DOCTYPE html&gt;
-&lt;html lang="pt-br"&gt;
-    &lt;head&gt;
-        &lt;title&gt;tipos INVERTIDOS&lt;/title&gt;
-        &lt;meta charset="utf-8"&gt
-        &lt;style type="text/css"&gt;
-            body * {
-                border: 1px solid #000;
-                background-color: #F5F5F5;
-                margin: 20px;
-            }
-            div, h1, h2, p {
-                display: inline;
-            }
-            span, img, a {
-                display: block;
-            }
-        &lt;/style&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-
-        &lt;h1&gt;Título 1&lt;/h1&gt;
-        &lt;h2&gt;Título 2&lt;/h2&gt;
-
-        &lt;span&gt;span 01&lt;/span&gt;
-        &lt;span&gt;span 02&lt;/span&gt;
-        &lt;span&gt;span 03&lt;/span&gt;
+                        <pre><code class="language-html">div, h1, h2, p {
+  display: inline;
+}
+span, img, a {
+  display: block;
+} </code></pre>
+                        <p>Inverti as bolas, quem era block virou inline e quem era inline virou block.</p>
 
 
-        &lt;p&gt;parágrafo a&lt;/p&gt;
-        &lt;p&gt;parágrafo b&lt;/p&gt;
+                        <p data-height="1233" data-theme-id="2897" data-slug-hash="cHzfs" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/cHzfs'>Invertendo elementos inline</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png" alt=""/&gt;
-        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png" alt=""/&gt;
-        &lt;img src="http://blog.monitor.us/wp-content/uploads/2012/04/html2.png" alt=""/&gt;
-
-        &lt;div&gt;div 1&lt;/div&gt;
-        &lt;div&gt;div 2&lt;/div&gt;
-
-        &lt;a href="#"&gt;Link 1&lt;/a&gt;
-        &lt;a href="#"&gt;também me chamam de âncora&lt;/a&gt;
-
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-                        </div>
                         <p>Essa matéria é curtinha, mas não se engane, seguir em frente sem entender (de verdade) é perca de tempo,
                             aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.</p>
                     </div>
