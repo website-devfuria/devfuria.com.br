@@ -33,14 +33,14 @@ class Paginas {
     }
 
     /**
-     * Retorna uma única página 
+     * Retorna uma única página
      *
      * @param type $codigo
      * @return type
      */
-    function getPagina($codigo) {
+    function getPagina($url) {
 
-        $res = $this->pdo->query("SELECT * FROM paginas WHERE codigo = '$codigo';");
+        $res = $this->pdo->query("SELECT * FROM paginas WHERE url = '$url';");
         return $res->fetch(\PDO::FETCH_OBJ);
     }
 

@@ -17,7 +17,7 @@
 
 <div class="list-group">
     <?php foreach ($core->lista->links as $pagina): ?>
-        <a href="<?php echo $pagina->url ?>" class="list-group-item <?php echo (strstr($pagina->url, $core->lista->link_ativo)) ? "active" : null; ?>">
+        <a href="<?php echo LINKS_PATH . $pagina->url ?>" class="list-group-item <?php echo (strstr($pagina->url, $core->lista->link_ativo)) ? "active" : null; ?>">
             <?php echo "$interator) " . $pagina->label_link ?>
         </a>
         <?php $interator++; ?>

@@ -29,10 +29,8 @@ class Aux {
             throw new Exception("Código de âncora não localizada ($codigo)!");
         }
 
-        echo "<a href=\"{$materia->url}\" title=\"{$materia->titulo}\">{$materia->codigo}</a>";
+        echo "<a href=\"" . LINKS_PATH . $materia->url . "\" title=\"{$materia->titulo}\">{$materia->url}</a>";
     }
-
-
 
     /**
      * Este método é um "alias" para a função $pag->getPagina($codigo)
@@ -45,8 +43,6 @@ class Aux {
 
         $pag = new Paginas();
         return $pag->getPagina($codigo);
-
     }
-
 
 }

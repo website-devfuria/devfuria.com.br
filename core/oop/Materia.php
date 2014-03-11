@@ -8,7 +8,6 @@ class Materia {
 
     public $id;
     public $secao;
-    public $codigo;
     public $url;
     public $labelLink;
     public $titulo;

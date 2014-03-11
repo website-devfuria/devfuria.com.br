@@ -15,7 +15,7 @@
 <ul class="pager hidden-xs">
     <?php if ($core->paginacao->anterior['href']): ?>
         <li class="previous">
-            <a href="<?php echo $core->paginacao->anterior['href']; ?>">
+            <a href="<?php echo LINKS_PATH . $core->paginacao->anterior['href']; ?>">
                 <span class="glyphicon glyphicon-arrow-left"></span>
                 <?php echo $core->paginacao->anterior['titulo']; ?>
             </a>
@@ -26,7 +26,7 @@
 
     <?php if ($core->paginacao->proxima['href']): ?>
         <li class="next">
-            <a href="<?php echo $core->paginacao->proxima['href']; ?>">
+            <a href="<?php echo LINKS_PATH . $core->paginacao->proxima['href']; ?>">
                 <?php echo $core->paginacao->proxima['titulo']; ?>
                 <span class="glyphicon glyphicon-arrow-right"></span>
             </a>
