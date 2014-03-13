@@ -5,6 +5,7 @@
  */
 class Aux {
 
+
     /**
      * Função utilizada para compor as âncoras
      *
@@ -25,6 +26,7 @@ class Aux {
         $url = self::retFragmentoURL($url);
 
         $pag = self::getPagina($url[0]);
+
 
         # se não achar a página...
         if (!$pag) {
@@ -65,5 +67,6 @@ class Aux {
 
         return $url;
     }
+
 
 }
