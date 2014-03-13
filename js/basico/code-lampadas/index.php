@@ -106,7 +106,7 @@ $url = "/code-lampadas/";
 
                         <p>
                             Nesta matéria utilizarei o código que faz a uma lâmpada ascender e apagar visto na matéria
-                            <?php echo Aux::getAncora("/js/basico/intro/"); ?>
+                            <?php Aux::getAncora("/js/basico/intro/"); ?>
                         </p>
 
                         <p>Clique nas abas para visualizar as partes separadamente: HTML, JS e resultado.</p>
@@ -198,8 +198,9 @@ HD        = /var/www/html/[seus diretórios]</code></pre>
 
                                 <p>Apareceu alguma mensagem  no console? Não? Maravilha, "parece" que não temos erros no JS.</p>
 
-                                <p>OPs, você não conhece o Firebug? Pare tudo e leia a matéria anterior a esta:
-                                    <a href="http://www.devfuria.com.br/js/basico/debugando/" title="Matéria: Debugando o JS">Debugando</a>. Vai lá que eu te espero.</p>
+                                <p>Ops, você não conhece o Firebug? Pare tudo e leia a matéria anterior a esta:
+                                    <?php echo Aux::getAncora("/js/basico/debugando/"); ?>
+                                    . Vai lá que eu te espero.</p>
 
                                 <p>Agora vamos aproveitar e estabelecer a comunicação: no arquivo <strong>"codigo.js"</strong> insira a seguinte linha</p>
 
@@ -371,7 +372,11 @@ mostrar_alerta();</code></pre>
 
                             <pre><code class="language-javascript">var minha_funcao = function() { };</code></pre>
 
-                            <p>Se quiser saber mais sobre funções veja a matéria <a href="<?php echo LINKS_PATH ?>/logica-de-programacao/basico/funcoes-procedimentos/">Funções</a>.</p>
+                            <p>
+                                Se quiser saber mais sobre funções veja a matéria
+                                <?php $mat = Aux::getPagina("/logica-de-programacao/basico/funcoes-procedimentos/"); ?>
+                                <a href="<?php echo "1".$mat->url ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
+                            </p>
 
 
                         </div>

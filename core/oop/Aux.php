@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Clase com funções auxiliares
+ * Classe com funções auxiliares
  */
 class Aux {
 
@@ -18,18 +18,25 @@ class Aux {
      * Obs: esta função é para ser utilizada pelas views (matérias)
      *
      * @param type $url
-     * @param type $secao
+     * @param type $label
+     * @throws Exception
      */
-    static function getAncora($url) {
-        $pag = new Paginas();
-        $materia = $pag->getPagina($url);
+    static function getAncora($url, $label = "") {
+        $url = self::retFragmentoURL($url);
+
+        $pag = self::getPagina($url[0]);
 
         # se não achar a página...
-        if (!$materia) {
+        if (!$pag) {
             throw new Exception("Código de âncora não localizada ($url)!");
         }
 
-        echo "<a href=\"" . LINKS_PATH . $materia->url . "\" title=\"{$materia->titulo}\">{$materia->url}</a>";
+        $ancora = array(
+            "href" => (count($url) != 1) ? $pag->url . "#" . $url[1] : $pag->url,
+            "title" => $pag->titulo,
+            "label" => ($label == "titulo") ? $pag->titulo : $pag->url
+        );
+        self::ancora($ancora);
     }
 
     /**
@@ -43,6 +50,20 @@ class Aux {
 
         $pag = new Paginas();
         return $pag->getPagina($url);
+    }
+
+    /**
+     *
+     * @param type $a
+     */
+    private static function ancora($a) {
+        echo "<a href='" . LINKS_PATH . $a['href'] . "' title=\"{$a['title']}\">{$a['label']}</a>";
+    }
+
+    private static function retFragmentoURL($url) {
+        $url = explode("#", $url);
+
+        return $url;
     }
 
 }

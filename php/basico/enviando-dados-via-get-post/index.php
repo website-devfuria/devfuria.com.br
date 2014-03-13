@@ -148,7 +148,7 @@ echo $_POST['email']; // print joao@dasilva.com
 
                         <p>
                             O que fazer com o dados nós veremos na matéria
-                            <a href="<?php echo LINKS_PATH; ?>/php/basico/recebendo-dados-via-get-post/">Recebendo dados via GET POST</a>
+                            <?php Aux::getAncora("/php/basico/recebendo-dados-via-get-post/")?>
                         </p>
 
 
