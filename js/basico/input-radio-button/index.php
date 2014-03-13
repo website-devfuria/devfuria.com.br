@@ -12,8 +12,8 @@ $url = "/js/basico/input-radio-button";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
+        $core->head->setTitle('JavaScript e Radio Buttons');
+        $core->head->setDescription('Agrupar radios buttons com o mesmo nome e descobrir se está checked');
         $core->head->setkeywords('');
         $core->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
@@ -71,8 +71,8 @@ $url = "/js/basico/input-radio-button";
 
                         <p>O input radio é um controle de opções, é uma única escolha entre as opções possíveis.</p>
 
-                        <p>Se precisar de uma maior intimidade com o HTML que compõe o controle poder querer ver
-                            aesta matéria <?php Aux::printAncora("/html-css/basico/formularios-web/#input-radio") ?></p>
+                        <p>O básico sobre o controle nós já vimos na matéria
+                           <?php Aux::printAncora("/html-css/basico/formularios-web/#input-radio") ?></p>
 
                         <p>Se quiser ver uma prévia do que produziremos nesta matéria acesse o <a href="https://gist.github.com/flaviomicheletti/9533196" title="link-externo">Gist</a>.</p>
 
