@@ -20,13 +20,13 @@ class Aux {
      * @param type $url
      * @param type $secao
      */
-    static function getAncora($codigo) {
-        $modelPaginas = new Paginas($GLOBALS['pdo']);
-        $materia = $modelPaginas->getPagina($codigo);
+    static function getAncora($url) {
+        $pag = new Paginas();
+        $materia = $pag->getPagina($url);
 
         # se não achar a página...
         if (!$materia) {
-            throw new Exception("Código de âncora não localizada ($codigo)!");
+            throw new Exception("Código de âncora não localizada ($url)!");
         }
 
         echo "<a href=\"" . LINKS_PATH . $materia->url . "\" title=\"{$materia->titulo}\">{$materia->url}</a>";
@@ -39,10 +39,10 @@ class Aux {
      * @param type $codigo
      * @return type
      */
-    static function getPagina($codigo) {
+    static function getPagina($url) {
 
         $pag = new Paginas();
-        return $pag->getPagina($codigo);
+        return $pag->getPagina($url);
     }
 
 }
