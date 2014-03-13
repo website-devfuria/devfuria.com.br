@@ -1,9 +1,10 @@
 <?php
 
 /**
- * Clase com funções auxiliares
+ * Classe com funções auxiliares
  */
 class Aux {
+
 
     /**
      * Função utilizada para compor as âncoras
@@ -18,18 +19,23 @@ class Aux {
      * Obs: esta função é para ser utilizada pelas views (matérias)
      *
      * @param type $url
-     * @param type $secao
+     * @param type $label
+     * @throws Exception
      */
-    static function getAncora($url) {
-        $pag = new Paginas();
-        $materia = $pag->getPagina($url);
+    static function getAncora($url, $label="") {
+        $pag = self::getPagina($url);
 
         # se não achar a página...
-        if (!$materia) {
+        if (!$pag) {
             throw new Exception("Código de âncora não localizada ($url)!");
         }
 
-        echo "<a href=\"" . LINKS_PATH . $materia->url . "\" title=\"{$materia->titulo}\">{$materia->url}</a>";
+        $ancora = array(
+            "href" => $pag->url,
+            "title" => $pag->titulo,
+            "label" => ($label == "titulo")? $pag->titulo :$pag->url
+        );
+        self::ancora($ancora);
     }
 
     /**
@@ -44,5 +50,14 @@ class Aux {
         $pag = new Paginas();
         return $pag->getPagina($url);
     }
+
+    /**
+     *
+     * @param type $a
+     */
+    private static function ancora($a){
+        echo "<a href='" . LINKS_PATH . $a['href'] . "' title=\"{$a['title']}\">{$a['label']}</a>";
+    }
+
 
 }
