@@ -374,14 +374,9 @@ mostrar_alerta();</code></pre>
 
                             <p>
                                 Se quiser saber mais sobre funções veja a matéria
-                                <?php $mat = Aux::getPagina("/logica-de-programacao/basico/funcoes-procedimentos/"); ?>
-                                <a href="<?php echo "1".$mat->url ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
+                                <?php Aux::getAncora("/logica-de-programacao/basico/funcoes-procedimentos/"); ?>
                             </p>
-
-
                         </div>
-
-
 
 
 

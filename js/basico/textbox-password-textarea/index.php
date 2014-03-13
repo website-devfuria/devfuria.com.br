@@ -135,8 +135,7 @@ $url = "/js/basico/textbox-password-textarea/";
 
                         <p>
                             Já falamos sobre ela na matéria...
-                            <?php Aux::getPagina("/js/basico/code-lampadas/"); ?>
-                            <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>.
+                            <?php Aux::getPagina("/js/basico/code-lampadas/#by-id"); ?>
                         </p>
 
                         <p>Ela busca e retorna o elemento através de seu identificador, a propriedade <code>id=""</code>, veja:</p>
