@@ -30,8 +30,8 @@ $url = "/checkbox-checked/";
         <div class="bs-header" id="content">
             <div class="container">
                 <h1>Manipulando check boxes com JavaScript</h1>
-                <p>checkbox.checked=true</p>
-                <p>checkbox.checked=false</p>
+                <p><code>checkbox.checked = true;</code></p>
+                <p><code>checkbox.checked = false;</code></p>
                 <p></p>
             </div>
         </div>
@@ -51,10 +51,8 @@ $url = "/checkbox-checked/";
                 <div class="col-md-3">
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
-                            <li><a href="#formulario-web">O formulário web</a></li>
-                            <li>
-                                <a href="#codando">Codando</a>
-                            </li>
+                            <li><a href="#input-checkbox">Sobre o controle</a></li>
+                            <li><a href="#codando">Codando</a></li>
                         </ul>
                     </div>
                 </div>
@@ -66,7 +64,7 @@ $url = "/checkbox-checked/";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2 id="formulario-web">O formulário web ...</h2>
+                            <h2 id="input-checkbox">Sobre o controle &lt;input type="checkbox"</h2>
                         </div>
 
                         <p>Checkbox é um controle com dois estados: ligado ou desligado.</p>
