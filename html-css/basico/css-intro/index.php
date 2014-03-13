@@ -75,15 +75,13 @@ $url = "/html-css/basico/css-intro/";
                         <p>Tudo bem, que tal não esquentarmos a cabeça com isso por enquanto? Vamos focar no básico e depois, quando estiver mais
                             familiarizado, voltamos para "fechar" esses conceitos, ok?</p>
 
-                        <p>Na matéria
-<<<<<<< HEAD
+                        <p>
+                            Na matéria
                             <?php Aux::getAncora("/html-css/basico/onde-tudo-comecou/", "titulo"); ?>
-=======
-                            <?php $mat = Aux::getAncora("/html-css/basico/onde-tudo-comecou/", "titulo"); ?>
->>>>>>> 8d28c8800a0f6a561859f346383bb482681d6bd9
                             vimos como é a estrutura de uma rule-set. Sempre que estilizamos
                             o HTML precisamos pensar primeiro em <strong>qual será o nosso(s) elemento(s) alvo?</strong> E na sequência aplicamos o rule-set.
-                            Há uma dúzia de formas diferentes de encontrar elementos HTML. Fazemos isso através dos <strong>seletores</strong>.</p>
+                            Há uma dúzia de formas diferentes de encontrar elementos HTML. Fazemos isso através dos <strong>seletores</strong>.
+                        </p>
 
                         <p>A CSS também possui <strong>unidades de medidas</strong>: px(pixel), pt(pontos), em(relativo ao tamanho da fonte) e %(porcentagem).
                             A mais simples e conhecida é a <strong>pixel</strong>. Um pixel representa um ponto na tela, veja figura abaixo:</p>

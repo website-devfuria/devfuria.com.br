@@ -22,15 +22,11 @@ class Aux {
      * @param type $label
      * @throws Exception
      */
-<<<<<<< HEAD
     static function getAncora($url, $label = "") {
         $url = self::retFragmentoURL($url);
 
         $pag = self::getPagina($url[0]);
-=======
-    static function getAncora($url, $label="") {
-        $pag = self::getPagina($url);
->>>>>>> 8d28c8800a0f6a561859f346383bb482681d6bd9
+
 
         # se não achar a página...
         if (!$pag) {
@@ -38,15 +34,9 @@ class Aux {
         }
 
         $ancora = array(
-<<<<<<< HEAD
             "href" => (count($url) != 1) ? $pag->url . "#" . $url[1] : $pag->url,
             "title" => $pag->titulo,
             "label" => ($label == "titulo") ? $pag->titulo : $pag->url
-=======
-            "href" => $pag->url,
-            "title" => $pag->titulo,
-            "label" => ($label == "titulo")? $pag->titulo :$pag->url
->>>>>>> 8d28c8800a0f6a561859f346383bb482681d6bd9
         );
         self::ancora($ancora);
     }
@@ -68,7 +58,6 @@ class Aux {
      *
      * @param type $a
      */
-<<<<<<< HEAD
     private static function ancora($a) {
         echo "<a href='" . LINKS_PATH . $a['href'] . "' title=\"{$a['title']}\">{$a['label']}</a>";
     }
@@ -78,11 +67,4 @@ class Aux {
 
         return $url;
     }
-=======
-    private static function ancora($a){
-        echo "<a href='" . LINKS_PATH . $a['href'] . "' title=\"{$a['title']}\">{$a['label']}</a>";
-    }
-
->>>>>>> 8d28c8800a0f6a561859f346383bb482681d6bd9
-
 }
