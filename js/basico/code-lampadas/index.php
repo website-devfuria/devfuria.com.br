@@ -432,10 +432,10 @@ se não
 
                             <p>Eu preferi, a partir de um exemplo, ir desenvolvendo e desenrolando as partes do código.</p>
 
-                            <p>Na próxima matéria ainda veremos este código da lâmpada, nós faremos outros experimentos com ele.</p>
-
-                            <p>Aproveitando este código, você não terá muito esforço para entender o seu funcionamento e aproveitará (assim espero)
-                                para focar no aprendizado da linguagem, esse é o objetivo.</p>
+                            <p>Ainda veremos este código da lâmpada nas próximas matérias, nós faremos outros experimentos
+                                com ele. Aproveitando este código, você não terá muito esforço para entender o seu
+                                funcionamento e aproveitará (assim espero) para focar no aprendizado da linguagem, esse é
+                                o objetivo.</p>
 
                             <p>Até lá.</p>
                         </div>
