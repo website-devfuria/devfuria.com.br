@@ -85,7 +85,7 @@ $url = "/js/basico/textbox-password-textarea/";
 
                         <p>
                             Nós já estudamos sobre esses controles na matéria
-                            <?php echo Aux::getAncora("/html-css/basico/formularios-web/") ?>
+                            <?php Aux::getAncora("/html-css/basico/formularios-web/") ?>
                         </p>
 
                         <p>Escolhi esses controles pois são bastantes semelhantes quanto ao seu funcionamento</p>
@@ -93,7 +93,7 @@ $url = "/js/basico/textbox-password-textarea/";
                         <p>
                             Vamos utilizar o mesmo formulário que "pegamos emprestado" do livro do Andy Budd
                             (Criando Páginas Web com CSS) e que já foi utilizado como exemplo na matéria
-                            <?php echo Aux::getAncora("/php/basico/textbox-password-textarea/", $core->paginas[Core::SECAO_PHP]) ?>
+                            <?php Aux::getAncora("/php/basico/textbox-password-textarea/", $core->paginas[Core::SECAO_PHP]) ?>
                         </p>
 
                         <p>Clique na aba HTML para entender melhor sobre formulário web.</p>
@@ -135,7 +135,7 @@ $url = "/js/basico/textbox-password-textarea/";
 
                         <p>
                             Já falamos sobre ela na matéria...
-                            <?php $mat = Aux::getPagina("/js/basico/code-lampadas/"); ?>
+                            <?php Aux::getPagina("/js/basico/code-lampadas/"); ?>
                             <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>.
                         </p>
 
@@ -256,11 +256,10 @@ objElem.value = "outro texto qualquer";</code></pre>
 
                         <ul>
                             <li>
-                                <?php echo Aux::getAncora("/js/basico/oop-primeiro-degrau/", $core->paginas[Core::SECAO_JS]); ?>
+                                <?php Aux::getAncora("/js/basico/oop-primeiro-degrau/"); ?>
                             </li>
                             <li>
-                                <?php $mat = Aux::getPagina("/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/"); ?>
-                                <a href="<?php echo $mat->url . "#js"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->codigo; ?></a>.
+                                <?php Aux::getAncora("/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/#js"); ?>
                             </li>
                         </ul>
 

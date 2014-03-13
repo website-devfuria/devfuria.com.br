@@ -57,9 +57,11 @@ $url = "/logica-de-programacao/basico/code-triangulo/";
                             <h1 id="triangulo">Revisitando o código "é triangulo"</h1>
                         </div>
 
-                        <p>O último exercício da matéria<a href="<?php echo LINKS_PATH ?>/logica-de-programacao/basico/exercicios-expressoes-condicionais/#05">
-                                (5 Exercícios de lógica de programação)</a> pede para identificarmos se os
-                            valores passados formam um triângulo.</p>
+                        <p>
+                            O último exercício da matéria
+                            <?php Aux::getAncora("/logica-de-programacao/basico/exercicios-expressoes-condicionais/#05", "titulo") ?>
+                            pede para identificarmos se os valores passados formam um triângulo.
+                        </p>
 
 
                         <p>A utilização de <strong>funções</strong> para a solução do exercício "cai muito bem".</p>
@@ -137,7 +139,7 @@ echo true;</code></pre>
 
                         <div class="code">
                             <h6>PHP</h6>
-                        <pre><code class="language-php">function eTriangulo($a, $b, $c) {
+                            <pre><code class="language-php">function eTriangulo($a, $b, $c) {
     if ($a > ($b + $c)) {
         return false;
     }

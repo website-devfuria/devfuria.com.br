@@ -79,8 +79,11 @@ $url = "/logica-de-programacao/basico/code-triangulo-tdd/";
 
                         <p>Finalmente vamos praticar esse tal de TDD, já era tempo.</p>
 
-                        <p>Se você não leu as materias anteriores não tem problema, mas dependendo do seu entendimento
-                            (conhecimento) talvez seja bom você ler apartir da matéria <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/">Code - Triângulo</a>.</p>
+                        <p>
+                            Se você não leu as materias anteriores não tem problema, mas dependendo do seu entendimento
+                            (conhecimento) talvez seja bom você ler apartir da matéria
+                            <?php Aux::getAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>
+                        </p>
 
                         <p>Nós vamos pegar o problema dos triângulos e resolvê-lo com TDD.</p>
 
@@ -133,8 +136,10 @@ class TrianguloTest extends PHPUnit_Framework_TestCase
 
                         <p>Estou supondo que você lêu as matérias anteriores e que instalou o PHPUnit.</p>
 
-                        <p>Se ainda não instalou, tente esta dica na matéria
-                            <a href="<?php echo LINKS_PATH ?>/logica-de-programacao/basico/tdd-test-driven-development/#ferramentas" title="link-externo">Vamos de TDD ?</a></p>
+                        <p>
+                            Se ainda não instalou, tente esta dica na matéria
+                            <?php Aux::getAncora("/logica-de-programacao/basico/tdd-test-driven-development/#ferramentas", "titulo") ?>
+                        </p>
 
                         <p>Se listarmos o diretório em que estamos trabalhando veremos algo parecido a isto:</p>
 
@@ -269,10 +274,12 @@ class TrianguloTest extends PHPUnit_Framework_TestCase
 
                         <p>Agora podemos escrever o codigo da classe <code>Triangulo</code> e ver o teste passar.</p>
 
-                        <p>Só que... é neste ponto que devemos ir mais devagar. E também é o ponto que eu "escorreguei",
+                        <p>
+                            Só que... é neste ponto que devemos ir mais devagar. E também é o ponto que eu "escorreguei",
                             se você lêu atentamente a matéria
-                            <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/tdd/">Vamos de TDD ?</a>
-                            sabe do que estou falando.</p>
+                            <?php Aux::getAncora("/logica-de-programacao/basico/tdd/", "titulo") ?>
+                            sabe do que estou falando.
+                        </p>
 
                         <p>Então vamos dar um pequeno passo, vamos fazer nossa função simplesmente retornar <code>true</code>.</p>
 
@@ -295,7 +302,7 @@ function checar() {
 
                         <p>
                             E tem mais, lembra que nós já temos 2 soluções? Veja a matéria
-                            <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/">Code - Triângulo</a>.
+                            <?php Aux::getAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>
                             Eu procurei uma terceira solução, quer dizer,eu tentei fazer diferente do que nôs já tínhamos.
                         </p>
 
@@ -590,11 +597,11 @@ return false;
 
     </div><!-- Matéria -->
 
-        <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+    <?php
+    $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
+    $core->lista->link_ativo = $url;
+    include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+    ?>
     <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 </body>
 </html>

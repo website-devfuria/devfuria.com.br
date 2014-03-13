@@ -225,8 +225,11 @@ $objeto->metodo();</code></pre>
     }
 }</code></pre>
 
-                        <p>Quem leu a matéria <a href='<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/'>Code - Triângulo </a>
-                            já conhece o código da função <code>validarForma()</code>. Abaixo segue o código completo, nossa classe com 3 propriedades e 1 método:</p>
+                        <p>
+                            Quem leu a matéria
+                            <?php AUx::getAncora("/logica-de-programacao/basico/code-triangulo/", "titulo"); ?>
+                            já conhece o código da função <code>validarForma()</code>. Abaixo segue o código completo, nossa classe com 3 propriedades e 1 método:
+                        </p>
 
                         <div class="code">
                             <h6>Triangulo.php</h6>
@@ -334,7 +337,7 @@ objeto.metodo();</code></pre>
 }</code></pre>
 
                         <p>O método <code>validarForma()</code> é semelhante ao codificado em PHP na matéria
-                            <a href='<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/'>Code - Triângulo </a>.
+                            <?php Aux::getAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>.
                             O script abaixo não é uma classe, é um objeto já pronto (instanciado) para uso...</p>
 
 
@@ -431,11 +434,11 @@ objeto.metodo();</code></pre>
 
         </div><!-- Matéria -->
 
-            <?php
-            $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
-            $core->lista->link_ativo = $url;
-            include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-            ?>
+        <?php
+        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
+        $core->lista->link_ativo = $url;
+        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

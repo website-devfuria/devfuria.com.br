@@ -108,7 +108,7 @@ $url = "/";
                         <?php $mat = Aux::getPagina("/js/basico/code-lampadas/"); ?>
                         <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
 
-                        <?php echo Aux::getAncora("/logica-de-programacao/basico/intro/", $core->paginas[Core::SECAO_LOG]); ?>
+                        <?php Aux::getAncora("/logica-de-programacao/basico/intro/"); ?>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="">
