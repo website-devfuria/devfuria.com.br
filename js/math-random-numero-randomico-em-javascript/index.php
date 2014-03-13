@@ -48,14 +48,14 @@ $url = "math-random-numero-randomico-em-javascript";
 
                         <blockquote>
                             A função <code>Math.random()</code> retorna um ponto flutuante, número
-                            pseudo-aleatório no intervalo <strong>[0, 1)</strong>, isto é, de 0 (inclusive) até, mas
-                            não incluindo 1 (exclusive), que você pode, em seguida, dimensionar para o intervalo desejado.
+                            pseudo-aleatório no intervalo <strong>[0, 1)</strong>, isto é, de 0 (inclusive) até 1, mas
+                            não incluindo 1 (exclusive) e que você pode, em seguida, dimensionar para o intervalo desejado.
                             <small>Fonte:
                                 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" title="link-externo">
                                     Mozilla Developer Network / Math.random()</a></small>
                         </blockquote>
 
-                        <p>En outras palavras, a função retornará um número entre 0 e 1 (podendo incluir o 0 mas não o 1),
+                        <p>Em outras palavras, a função retornará um número entre 0 e 1 (podendo incluir o 0 mas não o 1),
                             veja os resultados:</p>
                         <pre><code class="no-highlight">0.5824683890332182
 0.15599339785628574

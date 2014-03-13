@@ -60,7 +60,9 @@ require "../../core/boot.php";
             <p>Essa <strong>sub seção</strong> foi a primeira a aparecer aqui no site</p>
             <p>Eu estava escrevendo uma matéria e precisava explicar o usuo da função <code>Math.random()</code>.</p>
             <p>Não caberia fazer uma matéria inteira só para a função, então nasceu as <strong>Receitas, Tutoriais e Guias</strong>.</p>
-            <p>Os artigos não possuem uma sequência lógica.</p>
+            <p>Os artigos serão curtinhos, não possuem menu lateral, a idéia é ser bem objetivo.</p>
+            <p>Diferentemente dos cursos, não possuem uma sequência lógica com começo, meio e fim.</p>
+            <p>Se eles forem um pouco extenso é por causa da receita.</p>
         </div>
     </main>
 
