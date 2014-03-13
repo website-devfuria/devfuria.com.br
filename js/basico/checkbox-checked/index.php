@@ -73,7 +73,11 @@ $url = "/checkbox-checked/";
 
                         <p>
                             Até parecem nosso código na máteria
+<<<<<<< HEAD
                             <?php Aux::getAncora("/js/basico/code-lampadas/", "titulo"); ?>.
+=======
+                            <?php $mat = Aux::getAncora("/js/basico/code-lampadas/", "titulo"); ?>.
+>>>>>>> 8d28c8800a0f6a561859f346383bb482681d6bd9
                             Brincadeiras à parte.
                         </p>
 

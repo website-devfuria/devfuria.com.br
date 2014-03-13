@@ -76,7 +76,11 @@ $url = "/html-css/basico/css-intro/";
                             familiarizado, voltamos para "fechar" esses conceitos, ok?</p>
 
                         <p>Na matéria
+<<<<<<< HEAD
                             <?php Aux::getAncora("/html-css/basico/onde-tudo-comecou/", "titulo"); ?>
+=======
+                            <?php $mat = Aux::getAncora("/html-css/basico/onde-tudo-comecou/", "titulo"); ?>
+>>>>>>> 8d28c8800a0f6a561859f346383bb482681d6bd9
                             vimos como é a estrutura de uma rule-set. Sempre que estilizamos
                             o HTML precisamos pensar primeiro em <strong>qual será o nosso(s) elemento(s) alvo?</strong> E na sequência aplicamos o rule-set.
                             Há uma dúzia de formas diferentes de encontrar elementos HTML. Fazemos isso através dos <strong>seletores</strong>.</p>
