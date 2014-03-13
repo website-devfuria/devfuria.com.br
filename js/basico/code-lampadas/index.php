@@ -106,7 +106,7 @@ $url = "/code-lampadas/";
 
                         <p>
                             Nesta matéria utilizarei o código que faz a uma lâmpada ascender e apagar visto na matéria
-                            <?php Aux::getAncora("/js/basico/intro/"); ?>
+                            <?php Aux::printAncora("/js/basico/intro/"); ?>
                         </p>
 
                         <p>Clique nas abas para visualizar as partes separadamente: HTML, JS e resultado.</p>
@@ -199,7 +199,7 @@ HD        = /var/www/html/[seus diretórios]</code></pre>
                                 <p>Apareceu alguma mensagem  no console? Não? Maravilha, "parece" que não temos erros no JS.</p>
 
                                 <p>Ops, você não conhece o Firebug? Pare tudo e leia a matéria anterior a esta:
-                                    <?php echo Aux::getAncora("/js/basico/debugando/"); ?>
+                                    <?php echo Aux::printAncora("/js/basico/debugando/"); ?>
                                     . Vai lá que eu te espero.</p>
 
                                 <p>Agora vamos aproveitar e estabelecer a comunicação: no arquivo <strong>"codigo.js"</strong> insira a seguinte linha</p>
@@ -374,7 +374,7 @@ mostrar_alerta();</code></pre>
 
                             <p>
                                 Se quiser saber mais sobre funções veja a matéria
-                                <?php Aux::getAncora("/logica-de-programacao/basico/funcoes-procedimentos/"); ?>
+                                <?php Aux::printAncora("/logica-de-programacao/basico/funcoes-procedimentos/"); ?>
                             </p>
                         </div>
 

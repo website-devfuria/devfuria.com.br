@@ -82,7 +82,7 @@ $url = "/logica-de-programacao/basico/code-triangulo-tdd/";
                         <p>
                             Se você não leu as materias anteriores não tem problema, mas dependendo do seu entendimento
                             (conhecimento) talvez seja bom você ler apartir da matéria
-                            <?php Aux::getAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>
+                            <?php Aux::printAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>
                         </p>
 
                         <p>Nós vamos pegar o problema dos triângulos e resolvê-lo com TDD.</p>
@@ -138,7 +138,7 @@ class TrianguloTest extends PHPUnit_Framework_TestCase
 
                         <p>
                             Se ainda não instalou, tente esta dica na matéria
-                            <?php Aux::getAncora("/logica-de-programacao/basico/tdd-test-driven-development/#ferramentas", "titulo") ?>
+                            <?php Aux::printAncora("/logica-de-programacao/basico/tdd-test-driven-development/#ferramentas", "titulo") ?>
                         </p>
 
                         <p>Se listarmos o diretório em que estamos trabalhando veremos algo parecido a isto:</p>
@@ -277,7 +277,7 @@ class TrianguloTest extends PHPUnit_Framework_TestCase
                         <p>
                             Só que... é neste ponto que devemos ir mais devagar. E também é o ponto que eu "escorreguei",
                             se você lêu atentamente a matéria
-                            <?php Aux::getAncora("/logica-de-programacao/basico/tdd/", "titulo") ?>
+                            <?php Aux::printAncora("/logica-de-programacao/basico/tdd/", "titulo") ?>
                             sabe do que estou falando.
                         </p>
 
@@ -302,7 +302,7 @@ function checar() {
 
                         <p>
                             E tem mais, lembra que nós já temos 2 soluções? Veja a matéria
-                            <?php Aux::getAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>
+                            <?php Aux::printAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>
                             Eu procurei uma terceira solução, quer dizer,eu tentei fazer diferente do que nôs já tínhamos.
                         </p>
 

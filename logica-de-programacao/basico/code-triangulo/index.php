@@ -59,7 +59,7 @@ $url = "/logica-de-programacao/basico/code-triangulo/";
 
                         <p>
                             O último exercício da matéria
-                            <?php Aux::getAncora("/logica-de-programacao/basico/exercicios-expressoes-condicionais/#05", "titulo") ?>
+                            <?php Aux::printAncora("/logica-de-programacao/basico/exercicios-expressoes-condicionais/#05", "titulo") ?>
                             pede para identificarmos se os valores passados formam um triângulo.
                         </p>
 

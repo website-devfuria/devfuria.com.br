@@ -96,7 +96,7 @@ $url = "/php/basico/textbox-password-textarea/";
 
                         <p>
                             Nós já estudamos sobre esses controles na matéria
-                            <?php Aux::getAncora("/html-css/basico/formularios-web/", $core->paginas[Core::SECAO_HTML]) ?>
+                            <?php Aux::printAncora("/html-css/basico/formularios-web/", $core->paginas[Core::SECAO_HTML]) ?>
                         </p>
 
                         <p>Esses 3 controles são semelhantes quanto ao que acontece por trás dos panos (lá no lado
@@ -127,7 +127,7 @@ $url = "/php/basico/textbox-password-textarea/";
 
                         <p>
                             Já vimos isso na matéria
-                            <?php Aux::getAncora("/php/basico/enviando-dados-via-get-post/", $core->paginas[Core::SECAO_PHP]) ?>
+                            <?php Aux::printAncora("/php/basico/enviando-dados-via-get-post/", $core->paginas[Core::SECAO_PHP]) ?>
                         </p>
 
                     </div>
@@ -174,7 +174,7 @@ $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
 
                         <p>
                             Também já vimos isso na matéria
-                            <?php Aux::getAncora("/php/basico/recebendo-dados-via-get-post/", $core->paginas[Core::SECAO_PHP]) ?>
+                            <?php Aux::printAncora("/php/basico/recebendo-dados-via-get-post/", $core->paginas[Core::SECAO_PHP]) ?>
                         </p>
 
                         <h3>E agora o que fazer com os dados?</h3>

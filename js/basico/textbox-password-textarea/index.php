@@ -85,7 +85,7 @@ $url = "/js/basico/textbox-password-textarea/";
 
                         <p>
                             Nós já estudamos sobre esses controles na matéria
-                            <?php Aux::getAncora("/html-css/basico/formularios-web/") ?>
+                            <?php Aux::printAncora("/html-css/basico/formularios-web/") ?>
                         </p>
 
                         <p>Escolhi esses controles pois são bastantes semelhantes quanto ao seu funcionamento</p>
@@ -93,7 +93,7 @@ $url = "/js/basico/textbox-password-textarea/";
                         <p>
                             Vamos utilizar o mesmo formulário que "pegamos emprestado" do livro do Andy Budd
                             (Criando Páginas Web com CSS) e que já foi utilizado como exemplo na matéria
-                            <?php Aux::getAncora("/php/basico/textbox-password-textarea/", $core->paginas[Core::SECAO_PHP]) ?>
+                            <?php Aux::printAncora("/php/basico/textbox-password-textarea/", $core->paginas[Core::SECAO_PHP]) ?>
                         </p>
 
                         <p>Clique na aba HTML para entender melhor sobre formulário web.</p>
@@ -255,10 +255,10 @@ objElem.value = "outro texto qualquer";</code></pre>
 
                         <ul>
                             <li>
-                                <?php Aux::getAncora("/js/basico/oop-primeiro-degrau/"); ?>
+                                <?php Aux::printAncora("/js/basico/oop-primeiro-degrau/"); ?>
                             </li>
                             <li>
-                                <?php Aux::getAncora("/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/#js"); ?>
+                                <?php Aux::printAncora("/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/#js"); ?>
                             </li>
                         </ul>
 

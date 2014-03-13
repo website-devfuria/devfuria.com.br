@@ -106,7 +106,7 @@ $url = "/checkbox-checked/";
 
 
                         <p>É parecido com o formulário da matéria
-                            <?php Aux::getAncora("/js/basico/checkbox-checked/#formulario-web", "titulo"); ?>
+                            <?php Aux::printAncora("/js/basico/checkbox-checked/#formulario-web", "titulo"); ?>
                             na seção <a href="<?php echo LINKS_PATH . "/js/" ?>">Javascript</a>.
 
                         </p>
@@ -218,7 +218,7 @@ $_POST['car']  = ( isset($_POST['car']) )  ? true : null;
 
                         <p>
                             Estamos falando de HTML, se você não sabe o básico de checkbox poderá querer ver esta matéria
-                            <?php Aux::getAncora("/html-css/basico/formularios-web/", "titulo"); ?>.
+                            <?php Aux::printAncora("/html-css/basico/formularios-web/", "titulo"); ?>.
                         </p>
 
                         <p>Nosso formulário web ficou da seguinte forma.</p>

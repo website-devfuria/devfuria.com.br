@@ -73,7 +73,7 @@ $url = "/checkbox-checked/";
 
                         <p>
                             Até parecem nosso código na máteria
-                            <?php Aux::getAncora("/js/basico/code-lampadas/", "titulo"); ?>.
+                            <?php Aux::printAncora("/js/basico/code-lampadas/", "titulo"); ?>.
                             Brincadeiras à parte.
                         </p>
 

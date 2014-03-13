@@ -13,7 +13,7 @@ class Aux {
      * O código em questão é a url, só uma parte dela, ex: "js/basico/intro"
      *
      * <code>
-     * echo Aux::getAncora("/js/basico/intro/");
+     * echo Aux::printAncora("/js/basico/intro/");
      * </code>
      *
      * Obs: esta função é para ser utilizada pelas views (matérias)
@@ -22,11 +22,9 @@ class Aux {
      * @param type $label
      * @throws Exception
      */
-    static function getAncora($url, $label = "") {
+    static function printAncora($url, $label = "") {
         $url = self::retFragmentoURL($url);
-
         $pag = self::getPagina($url[0]);
-
 
         # se não achar a página...
         if (!$pag) {
@@ -55,6 +53,7 @@ class Aux {
     }
 
     /**
+     * Abstrai a âncora html
      *
      * @param type $a
      */
@@ -62,6 +61,13 @@ class Aux {
         echo "<a href='" . LINKS_PATH . $a['href'] . "' title=\"{$a['title']}\">{$a['label']}</a>";
     }
 
+    /**
+     * Se passarmos uma url "past/pasta/past/#outra-parte"
+     * ele serparará seguno o sinal de sharpe (#)
+     *
+     * @param type $url
+     * @return type
+     */
     private static function retFragmentoURL($url) {
         $url = explode("#", $url);
 

@@ -227,7 +227,7 @@ $objeto->metodo();</code></pre>
 
                         <p>
                             Quem leu a matéria
-                            <?php AUx::getAncora("/logica-de-programacao/basico/code-triangulo/", "titulo"); ?>
+                            <?php AUx::printAncora("/logica-de-programacao/basico/code-triangulo/", "titulo"); ?>
                             já conhece o código da função <code>validarForma()</code>. Abaixo segue o código completo, nossa classe com 3 propriedades e 1 método:
                         </p>
 
@@ -337,7 +337,7 @@ objeto.metodo();</code></pre>
 }</code></pre>
 
                         <p>O método <code>validarForma()</code> é semelhante ao codificado em PHP na matéria
-                            <?php Aux::getAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>.
+                            <?php Aux::printAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>.
                             O script abaixo não é uma classe, é um objeto já pronto (instanciado) para uso...</p>
 
 
