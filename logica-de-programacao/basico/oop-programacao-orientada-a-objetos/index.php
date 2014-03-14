@@ -113,12 +113,16 @@ $url = "/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/";
 
                         <p>Posso adiantar que o que você aprenderá sobre OOP em PHP não se aplica a JS e vice e versa.</p>
 
-                        <p>Aconselho ainda que o leitor procure por um terceira linguagem, de preferência fortemente
-                            tipada (pois PHP é fracamnte tipada). Essa questão da tipagem também muda tudo. Java e C#
-                            são duas boas opções.</p>
+                        <p>
+                            Aconselho ainda que o leitor procure por um terceira linguagem, de preferência uma que seja
+                            fortemente tipada (pois PHP é fracamente tipada). Essa questão da tipagem também muda tudo,
+                            Java e C# são duas boas opções, ambas fortemente tipadas.
+                        </p>
 
-                        <p>Dito isso, podemos concluir que <strong>aprender OOP em uma única linguagem não é aprender
-                                OOP de fato</strong>.</p>
+                        <p>
+                            Dito isso, podemos concluir que <strong>aprender OOP em uma única linguagem não é aprender
+                                OOP de fato</strong>.
+                        </p>
 
                     </div>
 
@@ -390,7 +394,7 @@ objeto.metodo();</code></pre>
                             <h1 id="conclusao">Concluindo</h1>
                         </div>
 
-                        <p>Agora estamos habilitados a resolver nossos probelmas de lógica com o paradigma de OOP. </p>
+                        <p>Agora estamos habilitados a resolver nossos problemas de lógica com o paradigma de OOP. </p>
 
                         <p>Consequentemente, utilizando o OOP estaremos habilitados a praticar TDD, assunto da próxima matéria.
 
