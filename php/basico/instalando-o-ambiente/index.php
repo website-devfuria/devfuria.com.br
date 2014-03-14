@@ -420,11 +420,15 @@ systemctl restart httpd.service
                         <p>Ufa!!! Mas ainda falta algumas "coisinhas". Ainda temos o editor de código, o controlador de versão, os navegadores e
                             seus plugins, e etc.. Só que neste ponto, a escolha dos aplicativos é uma questão pessoal, então fica apenas a sugestão.</p>
 
-                        <p>Como <strong>editor de código</strong> eu sugiro o <strong>Netbeans</strong>, ele é open source e tem umas funcionalidades muito interessantes. Para
+                        <p>
+                            Como <strong>editor de código</strong> eu sugiro o
+                            <strong><a href="http://pt.slideshare.net/slideshow/embed_code/32247784" title="link-externo">Netbeans</a></strong>
+                            , ele é open source e tem umas funcionalidades muito interessantes. Para
                             instalá-lo é preciso, primeiramente, ter o java (JDK) previamente instalado. Tente instalar a versão openJavaX (onde x
                             é a versão do java) via Softer Center (ainda estamos no ubuntu). Após isso, basta baixar o arquivo de instalação do
                             Netbeans, procure pela versão PHP que tem aproximadamente 50MB. É preciso dar permissão de execução no arquivo e em
-                            seguida executá-lo (obviamente).</p>
+                            seguida executá-lo (obviamente).
+                        </p>
 
                         <p>Como controlador de versão eu sugiro o <strong>svn</strong> que ainda é muito utilizado. Dá para instalar pelo repositório da distro, eu
                             utilizava o svn no windows e sentia falta de uma interface no nautilus (o gerenciador de arquivos do linux) então eu
