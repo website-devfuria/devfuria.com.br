@@ -32,7 +32,6 @@ $url = "/checkbox-checked/";
                 <h1>Manipulando check boxes com PHP</h1>
                 <p>Veremos como enviar e receber dados através do controle</p>
                 <p>checkbox (input type="check")</p>
-                <p></p>
             </div>
         </div>
 
