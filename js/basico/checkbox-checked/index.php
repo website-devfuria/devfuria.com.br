@@ -6,16 +6,17 @@
  * Includes
  */
 require "../../../core/boot.php";
-$url = "/checkbox-checked/";
+$pagina = new Paginas();
+$pagina = $pagina->getPagina("/js/basico/checkbox-checked/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Javascript - Ler valores dos checkbox que estiverem checkados');
-        $core->head->setDescription('Controle de checkbox em javascript, verificar se os CheckBox foram marcados.');
+        $core->head->setTitle($pagina->paginaTitulo);
+        $core->head->setDescription($pagina->paginaDescricao);
         $core->head->setkeywords('');
-        $core->head->setAuthor();
+        $core->head->setAuthor($pagina->autor);
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
@@ -29,7 +30,7 @@ $url = "/checkbox-checked/";
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Manipulando check boxes com JavaScript</h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p><code>checkbox.checked = true;</code></p>
                 <p><code>checkbox.checked = false;</code></p>
                 <p></p>
@@ -39,7 +40,7 @@ $url = "/checkbox-checked/";
         <!-- Linha abaixo do título -->
         <div class="bs-old-docs">
             <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">21/02/2014</span>, escrito em <span class="label label-info">21/02/2014</span>.
+                Flávio Micheletti, atualizado em <span class="label label-success"><?php echo $pagina->dtAtualizacao ?></span>, escrito em <span class="label label-info"><?php echo $pagina->dtCriacao ?></span>.
             </div>
         </div>
 
@@ -59,8 +60,6 @@ $url = "/checkbox-checked/";
 
                 <!-- Corpo da matéria -->
                 <div class="col-md-9" role="main">
-
-
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -530,7 +529,7 @@ var myApp = {
                     </div>
 
                     <?php
-                    $core->paginacao->link_ativo = $url;
+                    $core->paginacao->link_ativo = $pagina->url;
                     $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::SUB_SECAO_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
@@ -540,10 +539,9 @@ var myApp = {
 
         <?php
         $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $core->lista->link_ativo = $pagina->url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

@@ -13,7 +13,7 @@ class Paginas {
      *
      * @param type $conexao
      */
-    function __construct() {
+    function __construct($url="") {
         $this->pdo = $GLOBALS['pdo'];
     }
 
