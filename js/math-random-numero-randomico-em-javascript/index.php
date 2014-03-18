@@ -108,7 +108,7 @@ $url = "math-random-numero-randomico-em-javascript";
                         <p>
                             Mas queremos transformar isso em uma função reutilizá-vel, então podemos substituir
                             o valor <code>5</code> pela variável <code>max</code> e o valor <code>3</code>pela variável
-                            <code>min</code>
+                            <code>min</code>.
                         </p>
 
                         <pre><code class="language-javascript">Math.floor(Math.random() * (max - min + 1) + min);</code></pre>
@@ -139,9 +139,21 @@ $url = "math-random-numero-randomico-em-javascript";
     return Math.floor(Math.random() * max + 1)
 }</code></pre>
                         </div>
-                    </div><!-- Corpo da matéria -->
-                </div>
+                    </div>
 
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>Como gerar um número randômico entre 0 e 1!</h2>
+                        </div>
+
+                        <div class="code">
+                            <h6>Javascript</h6>
+                            <pre><code class="language-javascript">Math.floor(Math.random() * 2);</code></pre>
+                        </div>
+                    </div>
+
+                </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
 
