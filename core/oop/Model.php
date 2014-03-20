@@ -80,7 +80,11 @@ class Model {
         $pagina->status = $pagina_db->status;
         $pagina->dtCriacao = $pagina_db->dtCriacao;
         $pagina->dtAtualizacao = $pagina_db->dtAtualizacao;
-        $pagina->autor = $pagina_db->autor;
+        if ($pagina_db->autor) {
+            $pagina->autor = $pagina_db->autor;
+        } else {
+            $pagina->autor = "Flávio Alexandre Micheletti";
+        }        
 
         return $pagina;
     }

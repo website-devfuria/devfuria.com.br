@@ -69,7 +69,7 @@ require (BASE_PATH . "/oop/Paginacao.php");
 /**
  * Conexão dom DB
  */
-$pdo = new PDO($dsn = "mysql:dbname=devfuria_fulia;host=localhost", $user = "root", $pass = "alfa9876");
+$pdo = new PDO($dsn = "mysql:dbname=devfuria_fulia;host=localhost", $user = "root", $pass = "1234");
 $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 $pdo->exec("set names utf8");
 
