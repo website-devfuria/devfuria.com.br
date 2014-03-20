@@ -13,8 +13,8 @@ require "core/boot.php";
         <?php
         $view->head->setTitle('Desenvolvimento Web');
         $view->head->setDescription('Cursos, aulas, tutoriais, apostilas, matérias sobre programação web prá ninguém botar defeito!');
-        $view->head->setkeywords("aplicações web; webapp; app's; desenvolvimento; desenvolvimento web; website; cursos web; webstandards;  programação; aprendendo programação; aulas de programação; tutoriais; artigos;");
-        $view->head->setAuthor();
+//        $view->head->setkeywords("aplicações web; webapp; app's; desenvolvimento; desenvolvimento web; website; cursos web; webstandards;  programação; aprendendo programação; aulas de programação; tutoriais; artigos;");
+//        $view->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
         <style type="text/css">

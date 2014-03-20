@@ -14,12 +14,12 @@ require "../core/boot.php";
 //        $view->head->setTitle('Curso programação PHP online (gratis)');
         $view->head->setTitle('Curso de PHP Grátis | Curso de PHP Online | Começando a programar em PHP | Aprender PHP');
         $view->head->setDescription('Aprenda a fazer sites e sistemas em PHP, veremos muito código na linguagem PHP.');
-        $view->head->setkeywords("php; php5; php6; php5.3; php5.4; tutorial php; codigos php; apostila php; " .
-                "php básico; php fácil; php início; php iniciante; php iniciando; php iniciante; " .
-                "começando com php; começando no php; php descomplicado; aprendendo php; " .
-                "matéria sobre php; aula sobre php; "
-        );
-        $view->head->setAuthor();
+//        $view->head->setkeywords("php; php5; php6; php5.3; php5.4; tutorial php; codigos php; apostila php; " .
+//                "php básico; php fácil; php início; php iniciante; php iniciando; php iniciante; " .
+//                "começando com php; começando no php; php descomplicado; aprendendo php; " .
+//                "matéria sobre php; aula sobre php; "
+//        );
+//        $view->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
 
@@ -53,7 +53,7 @@ require "../core/boot.php";
         <?php
         $view->lista->label = ListaSecao::LABEL_CURSO_PHP;
         $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
-        include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
+        include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
         ?>
 
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
