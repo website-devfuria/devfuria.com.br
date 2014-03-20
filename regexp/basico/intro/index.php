@@ -12,17 +12,17 @@ $url = "/regexp/basico/intro/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Introdução aos conceitos intuitivo de ER.');
-        $core->head->setDescription('Aprenda o básico das Expressões Regulares para PHP e JS');
-        $core->head->setkeywords('regexp, começando com regexp, aprendendo expressões regulares, expressões regulares para iniciantes');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Introdução aos conceitos intuitivo de ER.');
+        $conteudo->head->setDescription('Aprenda o básico das Expressões Regulares para PHP e JS');
+        $conteudo->head->setkeywords('regexp, começando com regexp, aprendendo expressões regulares, expressões regulares para iniciantes');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_ER;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_ER;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -104,7 +104,7 @@ $url = "/regexp/basico/intro/";
                         </div>
 
                         <p>Eu preparei (e ainda estou preparando) este curso sobre ER's para ser bem básico, o intuito é que você leia a matéria
-                            e entenda (e também decore) sobre cada aspecto comentado.</p>
+                            e entenda (e também deconteudo) sobre cada aspecto comentado.</p>
 
                         <p>Mas para facilitar ainda mais o seu aprendizado (o meu também foi mais fácil dessa forma) aconselho a utilizar alguns
                             software online apenas para testar as ER's, ou seja, ao invés de você partir direto para o código fonte, parta primeiro
@@ -274,8 +274,8 @@ match()
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_ER][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_ER][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -284,8 +284,8 @@ match()
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_ER, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_ER, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

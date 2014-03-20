@@ -12,17 +12,17 @@ $url = "/mysql-sql/basico/intro/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Matéria introdutória sobre SQL e Mysql');
-        $core->head->setDescription('Aprenda os conceitos intuitivo de banco de dados, faremos a instalação do mysql e testes via console.');
-        $core->head->setkeywords('aprendendo mysql, aprendendo  sql, começando com sql, começando com mysql, mysql via console, instalando mysql, mysql via console, T-SQL, PL/SQL');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Matéria introdutória sobre SQL e Mysql');
+        $conteudo->head->setDescription('Aprenda os conceitos intuitivo de banco de dados, faremos a instalação do mysql e testes via console.');
+        $conteudo->head->setkeywords('aprendendo mysql, aprendendo  sql, começando com sql, começando com mysql, mysql via console, instalando mysql, mysql via console, T-SQL, PL/SQL');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_MYSQL;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_MYSQL;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -398,8 +398,8 @@ root       -- informamos o usuário
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_MYSQL][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_MYSQL][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -407,8 +407,8 @@ root       -- informamos o usuário
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_MYSQL, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_MYSQL, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

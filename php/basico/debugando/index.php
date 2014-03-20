@@ -12,17 +12,17 @@ $url = "/php/basico/debugando/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Debugando seus scripts em PHP');
-        $core->head->setDescription('Aprenda a debugar o código PHP utilizando var_dump() e x-debug. São formas rudimentares de debugação, porém sempre presente no dia a dia do programador.');
-        $core->head->setkeywords('debugando código, depurando código, x-debug, var_dump, var_dump()');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Debugando seus scripts em PHP');
+        $conteudo->head->setDescription('Aprenda a debugar o código PHP utilizando var_dump() e x-debug. São formas rudimentares de debugação, porém sempre presente no dia a dia do programador.');
+        $conteudo->head->setkeywords('debugando código, depurando código, x-debug, var_dump, var_dump()');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -240,8 +240,8 @@ echo "&lt;/pre&gt;";
                         <p>E aí, sentiu a diferença?</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -250,8 +250,8 @@ echo "&lt;/pre&gt;";
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

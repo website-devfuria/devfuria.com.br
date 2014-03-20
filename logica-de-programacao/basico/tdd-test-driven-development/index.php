@@ -12,17 +12,17 @@ $url = "/logica-de-programacao/basico/tdd-test-driven-development/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Matéria introdutória sobre TDD e Lógica de Programação');
-        $core->head->setDescription('Matéria que introduz o conceito e prática de TDD');
-        $core->head->setkeywords('tdd, aprendendo tddd, exercitando tdd, testes unitários, phpunit');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Matéria introdutória sobre TDD e Lógica de Programação');
+        $conteudo->head->setDescription('Matéria que introduz o conceito e prática de TDD');
+        $conteudo->head->setkeywords('tdd, aprendendo tddd, exercitando tdd, testes unitários, phpunit');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -349,8 +349,8 @@ $url = "/logica-de-programacao/basico/tdd-test-driven-development/";
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_LOG][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -359,8 +359,8 @@ $url = "/logica-de-programacao/basico/tdd-test-driven-development/";
         </div><!-- Matéria -->
 
             <?php
-            $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
-            $core->lista->link_ativo = $url;
+            $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
+            $conteudo->lista->link_ativo = $url;
             include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
             ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

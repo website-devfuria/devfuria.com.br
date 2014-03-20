@@ -8,9 +8,9 @@ header("HTTP/1.1 301 Moved Permanently");
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Exercício de lógica de programação');
-        $core->head->setDescription('Esta é uma página de redirecionamento');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Exercício de lógica de programação');
+        $conteudo->head->setDescription('Esta é uma página de redirecionamento');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
         <meta name="robots" content="noindex">
@@ -18,7 +18,7 @@ header("HTTP/1.1 301 Moved Permanently");
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -33,7 +33,7 @@ header("HTTP/1.1 301 Moved Permanently");
                     <div class="row">
                         <div class="col-md-6">
                             <?php
-                            $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
+                            $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
                             include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                             ?>
                         </div>

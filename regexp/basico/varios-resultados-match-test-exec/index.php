@@ -12,17 +12,17 @@ $url = "/regexp/basico/varios-resultados-match-test-exec/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('match(), test() e exec()');
-        $core->head->setDescription('Dissecando as funções match(), test() e exec() do JS');
-        $core->head->setkeywords('expressões regulares, match(), test(),  exec()');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('match(), test() e exec()');
+        $conteudo->head->setDescription('Dissecando as funções match(), test() e exec() do JS');
+        $conteudo->head->setkeywords('expressões regulares, match(), test(),  exec()');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_ER;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_ER;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -212,8 +212,8 @@ if (resultado) {
                             e clique no botão "Download Gist", descompacte o arquivo e boa diversão.</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_ER][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_ER][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -222,8 +222,8 @@ if (resultado) {
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_ER, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_ER, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

@@ -11,14 +11,14 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('RegExp');
-        $core->head->setDescription('Pequeno curso de Expressões Regulares, feito especialmente para o plúbico iniciante.');
-        $core->head->setkeywords("regexp; regexp básico; regexp fácil; regexp início; regexp iniciante; " .
+        $conteudo->head->setTitle('RegExp');
+        $conteudo->head->setDescription('Pequeno curso de Expressões Regulares, feito especialmente para o plúbico iniciante.');
+        $conteudo->head->setkeywords("regexp; regexp básico; regexp fácil; regexp início; regexp iniciante; " .
             "regexp iniciando; regexp iniciante; começando com regexp; começando no regexp; " .
             "regexp descomplicado; aprendendo regexp; matéria sobre regexp; aula sobre regexp; " .
             "expressões regulares"
         );
-        $core->head->setAuthor();
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
 
@@ -34,7 +34,7 @@ require "../core/boot.php";
 
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_ER;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_ER;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
@@ -53,8 +53,8 @@ require "../core/boot.php";
     </main>
 
     <?php
-    $core->lista->label = ListaSecao::LABEL_CURSO_ER;
-    $core->lista->setLinks($core->paginas, Core::SECAO_ER, Core::SUB_SECAO_CURSO);
+    $conteudo->lista->label = ListaSecao::LABEL_CURSO_ER;
+    $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_ER, Conteudo::CATEGORIA_CURSO);
     include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
     ?>
 

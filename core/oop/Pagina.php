@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Classe Materia
+ * Representa uma pagina web no site
  *
  */
-class Materia {
+class Pagina {
 
     public $id;
     public $secao;

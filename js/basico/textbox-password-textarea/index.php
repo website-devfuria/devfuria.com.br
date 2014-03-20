@@ -12,17 +12,17 @@ $url = "/js/basico/textbox-password-textarea/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle("Javascript - input type text input type password textarea");
-        $core->head->setDescription('Aprendendo como os campos textbox, password e textarea funcionam com o Javascript.');
-        $core->head->setkeywords('');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle("Javascript - input type text input type password textarea");
+        $conteudo->head->setDescription('Aprendendo como os campos textbox, password e textarea funcionam com o Javascript.');
+        $conteudo->head->setkeywords('');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -93,7 +93,7 @@ $url = "/js/basico/textbox-password-textarea/";
                         <p>
                             Vamos utilizar o mesmo formulário que "pegamos emprestado" do livro do Andy Budd
                             (Criando Páginas Web com CSS) e que já foi utilizado como exemplo na matéria
-                            <?php Aux::printAncora("/php/basico/textbox-password-textarea/", $core->paginas[Core::SECAO_PHP]) ?>
+                            <?php Aux::printAncora("/php/basico/textbox-password-textarea/", $conteudo->paginas[Conteudo::SECAO_PHP]) ?>
                         </p>
 
                         <p>Clique na aba HTML para entender melhor sobre formulário web.</p>
@@ -299,8 +299,8 @@ objElem.value = "outro texto qualquer";</code></pre>
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -308,8 +308,8 @@ objElem.value = "outro texto qualquer";</code></pre>
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

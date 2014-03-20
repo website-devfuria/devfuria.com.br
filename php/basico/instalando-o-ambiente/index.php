@@ -12,17 +12,17 @@ $url = "/php/basico/instalando-o-ambiente/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Levantando um ambiente de programação (PHP)');
-        $core->head->setDescription('Aprenda a levantar seu ambiente de programação de forma descomplicada e sem sustos');
-        $core->head->setkeywords('instalando apache no linux, instalando mysql no linux, instalando phpmyadmin no linux, instalando php no linux, php.ini, x-debug, lamp ubuntu, lamp fedora');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Levantando um ambiente de programação (PHP)');
+        $conteudo->head->setDescription('Aprenda a levantar seu ambiente de programação de forma descomplicada e sem sustos');
+        $conteudo->head->setkeywords('instalando apache no linux, instalando mysql no linux, instalando phpmyadmin no linux, instalando php no linux, php.ini, x-debug, lamp ubuntu, lamp fedora');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -496,8 +496,8 @@ systemctl restart httpd.service
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -506,8 +506,8 @@ systemctl restart httpd.service
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

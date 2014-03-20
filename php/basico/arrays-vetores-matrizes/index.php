@@ -12,17 +12,17 @@ $url = "/php/basico/arrays-vetores-matrizes/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Arrays em PHP');
-        $core->head->setDescription('Aprenda o básico de arrays em PHP, veremos como criar, iterar(foreach e while) e funções internas como "explode" e "implode".');
-        $core->head->setkeywords('array, array associativo, vetores, matrizes, arrays; explode; implode; array_in, foreach');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Arrays em PHP');
+        $conteudo->head->setDescription('Aprenda o básico de arrays em PHP, veremos como criar, iterar(foreach e while) e funções internas como "explode" e "implode".');
+        $conteudo->head->setkeywords('array, array associativo, vetores, matrizes, arrays; explode; implode; array_in, foreach');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -400,8 +400,8 @@ var_dump($nomeCompleto)</code></pre>
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -409,8 +409,8 @@ var_dump($nomeCompleto)</code></pre>
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

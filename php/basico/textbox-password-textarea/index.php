@@ -12,17 +12,17 @@ $url = "/php/basico/textbox-password-textarea/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle("PHP - input type text input type password textarea");
-        $core->head->setDescription('Manipulando checkbox com PHP. Aprenda a marcar, gravar e exbibir os valores de uma checkbox.');
-        $core->head->setkeywords('');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle("PHP - input type text input type password textarea");
+        $conteudo->head->setDescription('Manipulando checkbox com PHP. Aprenda a marcar, gravar e exbibir os valores de uma checkbox.');
+        $conteudo->head->setkeywords('');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -96,7 +96,7 @@ $url = "/php/basico/textbox-password-textarea/";
 
                         <p>
                             Nós já estudamos sobre esses controles na matéria
-                            <?php Aux::printAncora("/html-css/basico/formularios-web/", $core->paginas[Core::SECAO_HTML]) ?>
+                            <?php Aux::printAncora("/html-css/basico/formularios-web/", $conteudo->paginas[Conteudo::SECAO_HTML]) ?>
                         </p>
 
                         <p>Esses 3 controles são semelhantes quanto ao que acontece por trás dos panos (lá no lado
@@ -127,7 +127,7 @@ $url = "/php/basico/textbox-password-textarea/";
 
                         <p>
                             Já vimos isso na matéria
-                            <?php Aux::printAncora("/php/basico/enviando-dados-via-get-post/", $core->paginas[Core::SECAO_PHP]) ?>
+                            <?php Aux::printAncora("/php/basico/enviando-dados-via-get-post/", $conteudo->paginas[Conteudo::SECAO_PHP]) ?>
                         </p>
 
                     </div>
@@ -174,7 +174,7 @@ $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
 
                         <p>
                             Também já vimos isso na matéria
-                            <?php Aux::printAncora("/php/basico/recebendo-dados-via-get-post/", $core->paginas[Core::SECAO_PHP]) ?>
+                            <?php Aux::printAncora("/php/basico/recebendo-dados-via-get-post/", $conteudo->paginas[Conteudo::SECAO_PHP]) ?>
                         </p>
 
                         <h3>E agora o que fazer com os dados?</h3>
@@ -327,8 +327,8 @@ $text = "algum texto";
                     </div>
 
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -336,8 +336,8 @@ $text = "algum texto";
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

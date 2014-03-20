@@ -11,15 +11,15 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-//        $core->head->setTitle('Curso programação PHP online (gratis)');
-        $core->head->setTitle('Curso de PHP Grátis | Curso de PHP Online | Começando a programar em PHP | Aprender PHP');
-        $core->head->setDescription('Aprenda a fazer sites e sistemas em PHP, veremos muito código na linguagem PHP.');
-        $core->head->setkeywords("php; php5; php6; php5.3; php5.4; tutorial php; codigos php; apostila php; " .
+//        $conteudo->head->setTitle('Curso programação PHP online (gratis)');
+        $conteudo->head->setTitle('Curso de PHP Grátis | Curso de PHP Online | Começando a programar em PHP | Aprender PHP');
+        $conteudo->head->setDescription('Aprenda a fazer sites e sistemas em PHP, veremos muito código na linguagem PHP.');
+        $conteudo->head->setkeywords("php; php5; php6; php5.3; php5.4; tutorial php; codigos php; apostila php; " .
                 "php básico; php fácil; php início; php iniciante; php iniciando; php iniciante; " .
                 "começando com php; começando no php; php descomplicado; aprendendo php; " .
                 "matéria sobre php; aula sobre php; "
         );
-        $core->head->setAuthor();
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
 
@@ -35,7 +35,7 @@ require "../core/boot.php";
 
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
@@ -51,8 +51,8 @@ require "../core/boot.php";
         </main>
 
         <?php
-        $core->lista->label = ListaSecao::LABEL_CURSO_PHP;
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::SUB_SECAO_CURSO);
+        $conteudo->lista->label = ListaSecao::LABEL_CURSO_PHP;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
         include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
         ?>
 

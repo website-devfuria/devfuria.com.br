@@ -12,17 +12,17 @@ $url = "/html-css/basico/elementos-inline-block-level/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Elementos in-line e elementos block-level');
-        $core->head->setDescription('O objetivo da matéria é entender as diferenças entre os dois tipos');
-        $core->head->setkeywords('html in-line, html block, tag inline, tag block level');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Elementos in-line e elementos block-level');
+        $conteudo->head->setDescription('O objetivo da matéria é entender as diferenças entre os dois tipos');
+        $conteudo->head->setkeywords('html in-line, html block, tag inline, tag block level');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -146,8 +146,8 @@ span, img, a {
                             aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_HTML][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
 
@@ -157,8 +157,8 @@ span, img, a {
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_HTML, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

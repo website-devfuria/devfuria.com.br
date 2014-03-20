@@ -12,17 +12,17 @@ $url = "/js/basico/oop-primeiro-degrau/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('OOP');
-        $core->head->setDescription('Introduziremos conceito intuitivo de programação orientadação a objeto, propriedades e métodos.');
-        $core->head->setkeywords('oop em javascript');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('OOP');
+        $conteudo->head->setDescription('Introduziremos conceito intuitivo de programação orientadação a objeto, propriedades e métodos.');
+        $conteudo->head->setkeywords('oop em javascript');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -154,8 +154,8 @@ $url = "/js/basico/oop-primeiro-degrau/";
                     </div>
 
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -163,8 +163,8 @@ $url = "/js/basico/oop-primeiro-degrau/";
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

@@ -12,17 +12,17 @@ $url = "/logica-de-programacao/basico/code-triangulo/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Exemplo de código que utiliza funções');
-        $core->head->setDescription('Matéria introdutória ilustrando a sintaxe básica do último exercício de lógica: é triângulo');
-        $core->head->setkeywords('funções, procedimentos, exemplo de funções');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Exemplo de código que utiliza funções');
+        $conteudo->head->setDescription('Matéria introdutória ilustrando a sintaxe básica do último exercício de lógica: é triângulo');
+        $conteudo->head->setkeywords('funções, procedimentos, exemplo de funções');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -163,8 +163,8 @@ echo true;</code></pre>
 
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_LOG][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -173,8 +173,8 @@ echo true;</code></pre>
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

@@ -12,17 +12,17 @@ $url = "/logica-de-programacao/basico/if-else/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Conceitos e exemplos do if-else para PHP');
-        $core->head->setDescription('Aprenda sobre a tomada de decisões no PHP com as estruturas de controle if, else e elseif.');
-        $core->head->setkeywords('if else php, expressões condicionais; estruturas de controle, if, else, elseif, diagrama de blocos, condicionais, operadores, valores booleanos, if else exemplos, desvio condicional');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Conceitos e exemplos do if-else para PHP');
+        $conteudo->head->setDescription('Aprenda sobre a tomada de decisões no PHP com as estruturas de controle if, else e elseif.');
+        $conteudo->head->setkeywords('if else php, expressões condicionais; estruturas de controle, if, else, elseif, diagrama de blocos, condicionais, operadores, valores booleanos, if else exemplos, desvio condicional');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -302,8 +302,8 @@ if ( ! $variavel) {
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_LOG][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -312,8 +312,8 @@ if ( ! $variavel) {
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

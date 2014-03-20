@@ -12,17 +12,17 @@ $url = "/js/basico/preparando-o-terreno/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Antes de programar em JS veja esta matéria');
-        $core->head->setDescription('Veremos Separações de Interesses (separation of concerns), onde colocar o JS e uma rápida pincelada em OOP, FIREBUG e a questão da segurança!.');
-        $core->head->setkeywords('separação de interesses, oop, javascript orientado a objetos, firebug, javascript segurança');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Antes de programar em JS veja esta matéria');
+        $conteudo->head->setDescription('Veremos Separações de Interesses (separation of concerns), onde colocar o JS e uma rápida pincelada em OOP, FIREBUG e a questão da segurança!.');
+        $conteudo->head->setkeywords('separação de interesses, oop, javascript orientado a objetos, firebug, javascript segurança');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -91,7 +91,7 @@ $url = "/js/basico/preparando-o-terreno/";
                             etc...), de tudo aquilo que pode beneficiar a interface do sistema.</p>
 
                         <p>O <strong>CSS se encarrega-rá da apresentação da página</strong>. Pensou em estilizar, formatar, desenhar, cuidar da aparência, layout,
-                            cores, fontes, bordas, espaçamento, disposição dos elementos ...pensou em CSS. Ele cuidará da embalagem, do roupagem
+                            conteudos, fontes, bordas, espaçamento, disposição dos elementos ...pensou em CSS. Ele cuidará da embalagem, do roupagem
                             que sua página web irá vestir. Estilizar é com o CSS.</p>
 
                         <p><strong>Sobrou para o HTML deixar claro qual é o conteúdo</strong>, marcando o conteúdo. Em outras palavras: "tudo que é necessário para
@@ -231,8 +231,8 @@ console.log(qualquer);</code></pre>
                         <p>Na próxima matéria veremos como debugar (depurar) o JS.</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::SUB_SECAO_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -240,8 +240,8 @@ console.log(qualquer);</code></pre>
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

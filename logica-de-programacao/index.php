@@ -11,12 +11,12 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Lógica de Programação');
-        $core->head->setDescription('Curso de Lógica de Programação alinhada a Orientação de Objetos e TDD.');
-        $core->head->setkeywords("lógica básico; lógica de programação; lógica para iniciantes; " .
+        $conteudo->head->setTitle('Lógica de Programação');
+        $conteudo->head->setDescription('Curso de Lógica de Programação alinhada a Orientação de Objetos e TDD.');
+        $conteudo->head->setkeywords("lógica básico; lógica de programação; lógica para iniciantes; " .
             "raciocio lógico; algoritmo; lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; "
         );
-        $core->head->setAuthor();
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
 
@@ -32,7 +32,7 @@ require "../core/boot.php";
 
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
@@ -59,8 +59,8 @@ require "../core/boot.php";
     </main>
 
     <?php
-    $core->lista->label = ListaSecao::LABEL_CURSO_LOG;
-    $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
+    $conteudo->lista->label = ListaSecao::LABEL_CURSO_LOG;
+    $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
     include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
     ?>
     <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
