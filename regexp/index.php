@@ -54,7 +54,7 @@ require "../core/boot.php";
 
     <?php
     $core->lista->label = ListaSecao::LABEL_CURSO_ER;
-    $core->lista->setLinks($core->paginas, Core::SECAO_ER, Core::SUB_SECAO_CURSO);
+    $core->lista->setLinks($core->paginas, Core::SECAO_ER, Core::CATEGORIA_CURSO);
     include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
     ?>
 

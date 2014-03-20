@@ -33,7 +33,7 @@ header("HTTP/1.1 301 Moved Permanently");
                     <div class="row">
                         <div class="col-md-6">
                             <?php
-                            $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
+                            $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::CATEGORIA_CURSO);
                             include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                             ?>
                         </div>

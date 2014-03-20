@@ -28,7 +28,7 @@ class Paginas {
      */
     function getAll() {
 
-        $res = $this->pdo->query("SELECT * FROM paginas ORDER BY secao, sub_secao, id");
+        $res = $this->pdo->query("SELECT * FROM paginas ORDER BY secao, categoria, id");
         return $res->fetchAll(\PDO::FETCH_OBJ);
     }
 

@@ -12,9 +12,9 @@ class Core {
     const SECAO_HTML = "html-css";
     const SECAO_MYSQL = "mysql";
     const SECAO_ER = "regexp";
-    const SUB_SECAO_CURSO = "curso";
-    const SUB_SECAO_GUIA = "receita-guia";
-    const GUIA_JS = "js-guia";
+    const CATEGORIA_CURSO = "curso";
+    const CATEGORIA_GUIA = "receita-guia";
+//    const GUIA_JS = "js-guia";
 
     /**
      * Define quais as seções
@@ -33,9 +33,9 @@ class Core {
      * Array multidimensional que armazena as páginas do site
      *
      * Ex:
-     * $paginas[secao][sub_secao] = objeto página
-     * $paginas[secao][sub_secao] = objeto página
-     * $paginas[secao][sub_secao] = objeto página
+     * $paginas[secao][categoria] = objeto página
+     * $paginas[secao][categoria] = objeto página
+     * $paginas[secao][categoria] = objeto página
      *
      * @var type
      */
@@ -75,7 +75,7 @@ class Core {
     function criaArrayPaginas($paginas_db) {
         $arr = array();
         foreach ($paginas_db as $pagina) {
-            $arr[$pagina->secao][$pagina->sub_secao][] = $pagina;
+            $arr[$pagina->secao][$pagina->categoria][] = $pagina;
         }
         return $arr;
     }

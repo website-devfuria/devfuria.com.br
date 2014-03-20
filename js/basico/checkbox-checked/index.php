@@ -530,7 +530,7 @@ var myApp = {
 
                     <?php
                     $core->paginacao->link_ativo = $pagina->url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::SUB_SECAO_CURSO]);
+                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -538,7 +538,7 @@ var myApp = {
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
+        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::CATEGORIA_CURSO);
         $core->lista->link_ativo = $pagina->url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
