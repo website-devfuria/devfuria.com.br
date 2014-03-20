@@ -21,7 +21,7 @@ $pagina = $model->getPagina("/php/basico/um-bom-comeco/");
     <body>
 
         <?php
-        $conteudo->navtop->secao_ativa = $pagina->secao;
+        $conteudo->navtop->secaoAtiva = $pagina->secao;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -339,7 +339,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
 
         <?php
         $conteudo->lista->setLinks($conteudo->paginas, $pagina->secao, $pagina->categoria);
-        $conteudo->lista->link_ativo = $pagina->url;
+        $conteudo->lista->urlAtual = $pagina->url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

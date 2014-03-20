@@ -6,18 +6,20 @@
  */
 class Pagina {
 
-    public $id;
+    public $ordem;
+    public $url;
+    public $urlLabel;
+    public $titulo;
+    public $descricao;
+    public $metaTitle;
+    public $metaDescr;
     public $secao;
     public $categoria;
     public $status;
-    public $url;
-    public $labelLink;
-    public $titulo;
-    public $paginaTitulo;
-    public $paginaDescricao;
-    public $autor;
     public $dtCriacao;
     public $dtAtualizacao;
+    public $autor;
 
 }
+
 ?>
