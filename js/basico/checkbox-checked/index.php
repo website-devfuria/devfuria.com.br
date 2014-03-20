@@ -75,6 +75,11 @@ $url = "/checkbox-checked/";
                             Brincadeiras à parte.
                         </p>
 
+                        <p>
+                            Mas se precisar entender melhor sobre o controle veja a matéria
+                            <?php Aux::printAncora("/html-css/basico/formularios-web/#input-check", "titulo"); ?>.
+                        </p>                        
+                        
                         <p>Veja abaixo o formulário web no qual trabalharemos.</p>
 
                         <div class="bs-example">

@@ -72,6 +72,11 @@ $url = "/checkbox-checked/";
                         <p>Checkboxes são controles "booleanos" (modo de dizer). Eles ou estão ligados (true) ou
                             estão desligados (false).</p>
 
+                        <p>
+                            Se precisar entender melhor sobre o controle veja a matéria
+                            <?php Aux::printAncora("/html-css/basico/formularios-web/#input-check", "titulo"); ?>.
+                        </p>
+                        
                         <p>Abaixo vemos o formulário web no qual trabalharemos</p>
 
                         <div class="bs-example">
