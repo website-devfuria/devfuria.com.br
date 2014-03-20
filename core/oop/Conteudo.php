@@ -33,9 +33,9 @@ class Conteudo {
      * Array multidimensional que armazena as páginas do site
      *
      * Ex:
-     * $paginas[secao][categoria] = objeto página
-     * $paginas[secao][categoria] = objeto página
-     * $paginas[secao][categoria] = objeto página
+     * $paginas[secao][categoria] = objeto Pagina
+     * $paginas[secao][categoria] = objeto Pagina
+     * $paginas[secao][categoria] = objeto Pagina
      *
      * @var type
      */
@@ -74,7 +74,7 @@ class Conteudo {
 
     /**
      * Função utilizada no boot
-     * 
+     *
      * @param type $paginas_db
      * @return type
      */

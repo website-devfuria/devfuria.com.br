@@ -27,9 +27,7 @@ require "core/boot.php";
     </head>
 
     <body>
-        <?php
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/nav-top.php"; ?>
 
         <!-- Page content of course! -->
     <main class="bs-masthead" id="content" role="main">

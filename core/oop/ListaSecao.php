@@ -6,7 +6,7 @@
 class ListaSecao {
 
     public $links;       # links escolhido (Seção)
-    public $link_ativo;  # link ativo (matéria)
+    public $urlAtual;    # url atual (matéria)
     public $label;       # Nome da lista (se for diferente do padrão)
 
     const LABEL_CURSO_JS = "Curso de Javascript";

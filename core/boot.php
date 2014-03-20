@@ -69,7 +69,7 @@ require (BASE_PATH . "/oop/Paginacao.php");
 /**
  * Conexão dom DB
  */
-$pdo = new PDO($dsn = "mysql:dbname=devfuria_fulia;host=localhost", $user = "root", $pass = "1234");
+$pdo = new PDO($dsn = "mysql:dbname=devfuria_fulia;host=localhost", $user = "root", $pass = "alfa9876");
 $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 $pdo->exec("set names utf8");
 
@@ -77,10 +77,11 @@ $pdo->exec("set names utf8");
  * Variáveis do sistema
  */
 $conteudo = new Conteudo();
+$model = new Model();
 
 # Setando a lista (array) com todas as páginas do site
-$model = new Model();
-$conteudo->paginas = $conteudo->criaArrayPaginas($model->getAll());
-//var_dump($conteudo->paginas['html-css']);die();
-
+$conteudo->paginas = $conteudo->criaArrayPaginas($model->getPaginaAll());
 $conteudo->secoes = $model->getArrSecoes();
+
+
+

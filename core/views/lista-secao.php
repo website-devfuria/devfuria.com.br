@@ -15,8 +15,8 @@
 
 <div class="list-group">
     <?php foreach ($conteudo->lista->links as $pagina): ?>
-        <a href="<?php echo LINKS_PATH . $pagina->url ?>" class="list-group-item <?php echo (strstr($pagina->url, $conteudo->lista->link_ativo)) ? "active" : null; ?>">
-            <?php echo $pagina->label_link ?>
+        <a href="<?php echo LINKS_PATH . $pagina->url ?>" class="list-group-item <?php echo (strstr($pagina->url, $conteudo->lista->urlAtual)) ? "active" : null; ?>">
+            <?php echo $pagina->labelLink ?>
         </a>
     <?php endforeach; ?>
 </div>

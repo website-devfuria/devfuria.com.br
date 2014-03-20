@@ -8,6 +8,8 @@ class Pagina {
 
     public $id;
     public $secao;
+    public $categoria;
+    public $status;
     public $url;
     public $labelLink;
     public $titulo;

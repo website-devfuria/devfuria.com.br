@@ -1,12 +1,11 @@
 <?php
 /**
- * PHP
- */
-/**
- * Includes
+ * Começando com PHP
  */
 require "../../../core/boot.php";
-$url = "/php/basico/um-bom-comeco/";
+$pagina = $model->getPagina("/php/basico/um-bom-comeco/");
+//var_dump($pagina);die();
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -22,7 +21,7 @@ $url = "/php/basico/um-bom-comeco/";
     <body>
 
         <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = $pagina->secao;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -329,8 +328,8 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                         </div>
                     </div>
                     <?php
-                    $conteudo->paginacao->link_ativo = $url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $pagina->url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[$pagina->secao][$pagina->categoria]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -339,8 +338,8 @@ echo "Resultado da soma de 1 + 1 = $resultado";
         </div><!-- Matéria -->
 
         <?php
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
-        $conteudo->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, $pagina->secao, $pagina->categoria);
+        $conteudo->lista->link_ativo = $pagina->url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

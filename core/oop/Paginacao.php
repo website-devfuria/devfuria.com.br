@@ -7,7 +7,7 @@ class Paginacao {
 
     public $anterior;
     public $proxima;
-    public $link_ativo;
+    public $urlAtual;
 
     function __construct() {
         $this->anterior = array(
@@ -23,13 +23,13 @@ class Paginacao {
     /**
      * O desafio desta função é descobrir o item anterior e próximo de um array quando o valor bater.
      *
-     * <code>else if (strstr($href, $this->link_ativo)) {</code>
+     * <code>else if (strstr($href, $this->urlAtual)) {</code>
      * nos diz se bateu ou não
      *
      * Obs:
-     * se $this->link_ativo for o primeiro então
+     * se $this->urlAtual for o primeiro então
      *      anterior = ''
-     * se $this->link_ativo for o primeiro então
+     * se $this->urlAtual for o primeiro então
      *      proximo = ''
      *
      * genial!!!
@@ -40,7 +40,7 @@ class Paginacao {
      * $arrLinksDaSecao[href-completo] = "titulo"
      */
     function descobrirAnteriorProxima($arrLinksDaSecao) {
-        if (!$this->link_ativo) {
+        if (!$this->urlAtual) {
             return false;
         }
 
@@ -60,7 +60,7 @@ class Paginacao {
                 }
             }
             # bateu? sim? então...
-            else if (strstr($pagina->url, $this->link_ativo)) {
+            else if (strstr($pagina->url, $this->urlAtual)) {
                 # ... anota que a anterior já foi armazenada
                 $flag_ja_preenchemos_anterior = true;
             }

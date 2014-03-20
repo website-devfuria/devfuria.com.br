@@ -2,16 +2,8 @@
 /**
  * Faz a paginação das matérias
  *
- *          <?php
- *          $conteudo->paginacao->link_ativo = "/js/basico/preparando-o-terreno/";
- *          $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
- *          include BASE_PATH . VIEWS_PATH . "/paginacao.php";
- *          ?>
- *      </div>
- * </div><!-- Corpo da matéria -->
  */
 ?>
-
 <ul class="pager hidden-xs">
     <?php if ($conteudo->paginacao->anterior['href']): ?>
         <li class="previous">
