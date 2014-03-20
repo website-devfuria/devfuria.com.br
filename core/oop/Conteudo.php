@@ -17,19 +17,6 @@ class Conteudo {
 //    const GUIA_JS = "js-guia";
 
     /**
-     * Define quais as seções
-     * Obs: As seções são caregadas no arquivo de boot
-     *
-     * Ex:
-     * $secoes['secao-ativa'] = "secao label";
-     * $secoes['secao-ativa'] = "secao label";
-     * $secoes['secao-ativa'] = "secao label";
-     *
-     * @var type
-     */
-    public $secoes = array();
-
-    /**
      * Array multidimensional que armazena as páginas do site
      *
      * Ex:
@@ -41,36 +28,6 @@ class Conteudo {
      */
     public $paginas = array();
 
-    /**
-     * Classe que manipula o cabecalho
-     *
-     * @var type
-     */
-    public $head;
-
-    /**
-     * Classe que manipula a barra de navegação
-     *
-     * @var type
-     */
-    public $navtop;
-
-    /**
-     * Classe que manipula as listas de links de cada seção
-     *
-     * @var type
-     */
-    public $lista;
-
-    /**
-     * Construct
-     */
-    function __construct() {
-        $this->head = new Head();
-        $this->navtop = new NavTop();
-        $this->lista = new ListaSecao();
-        $this->paginacao = new Paginacao();
-    }
 
     /**
      * Função utilizada no boot

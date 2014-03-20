@@ -5,21 +5,21 @@
  */
 ?>
 <ul class="pager hidden-xs">
-    <?php if ($conteudo->paginacao->anterior['href']): ?>
+    <?php if ($view->paginacao->anterior['href']): ?>
         <li class="previous">
-            <a href="<?php echo LINKS_PATH . $conteudo->paginacao->anterior['href']; ?>">
+            <a href="<?php echo LINKS_PATH . $view->paginacao->anterior['href']; ?>">
                 <span class="glyphicon glyphicon-arrow-left"></span>
-                <?php echo $conteudo->paginacao->anterior['titulo']; ?>
+                <?php echo $view->paginacao->anterior['titulo']; ?>
             </a>
         </li>
     <?php else: ?>
         <li class="previous"></li>
     <?php endif; ?>
 
-    <?php if ($conteudo->paginacao->proxima['href']): ?>
+    <?php if ($view->paginacao->proxima['href']): ?>
         <li class="next">
-            <a href="<?php echo LINKS_PATH . $conteudo->paginacao->proxima['href']; ?>">
-                <?php echo $conteudo->paginacao->proxima['titulo']; ?>
+            <a href="<?php echo LINKS_PATH . $view->paginacao->proxima['href']; ?>">
+                <?php echo $view->paginacao->proxima['titulo']; ?>
                 <span class="glyphicon glyphicon-arrow-right"></span>
             </a>
         </li>

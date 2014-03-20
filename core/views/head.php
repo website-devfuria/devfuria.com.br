@@ -3,17 +3,17 @@
  * Este script é o cabeçalho padrão
  */
 # título padrão
-if (!$conteudo->head->title) {
-    $conteudo->head->title = DOMINIO;
+if (!$view->head->title) {
+    $view->head->title = DOMINIO;
 }
 ?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title><?php echo $conteudo->head->title; ?></title>
-<meta name="description" content="<?php echo $conteudo->head->description; ?>">
-<meta name="keywords" content="<?php echo $conteudo->head->keywords; ?>">
-<meta name="author" content="<?php echo $conteudo->head->author; ?>">
+<title><?php echo $view->head->title; ?></title>
+<meta name="description" content="<?php echo $view->head->description; ?>">
+<meta name="keywords" content="<?php echo $view->head->keywords; ?>">
+<meta name="author" content="<?php echo $view->head->author; ?>">
 
 <link rel="shortcut icon" href="<?php echo LINKS_PATH; ?>/core/imagens/favicon_1_16x16x1.png">
 

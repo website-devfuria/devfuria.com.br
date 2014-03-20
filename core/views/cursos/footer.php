@@ -1,3 +1,8 @@
+<?ph
+/**
+ * 1) 12 colunas
+ */
+?>
 <footer class="bs-footer">
     <div class="container">
         <div class="row">

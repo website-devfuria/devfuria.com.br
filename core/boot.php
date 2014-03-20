@@ -3,6 +3,7 @@
 /**
  * Arquivo Bootstrap
  */
+
 /**
  * Session
  */
@@ -58,13 +59,13 @@ define('DOMINIO', "www.devfuria.com.br");
  */
 require (BASE_PATH . "/oop/Model.php");
 require (BASE_PATH . "/oop/Conteudo.php");
+require (BASE_PATH . "/oop/View.php");
 require (BASE_PATH . "/oop/Pagina.php");
 require (BASE_PATH . "/oop/Aux.php");
 require (BASE_PATH . "/oop/Head.php");
 require (BASE_PATH . "/oop/NavTop.php");
 require (BASE_PATH . "/oop/ListaSecao.php");
 require (BASE_PATH . "/oop/Paginacao.php");
-
 
 /**
  * Conexão dom DB
@@ -76,12 +77,12 @@ $pdo->exec("set names utf8");
 /**
  * Variáveis do sistema
  */
+$model    = new Model();
+
 $conteudo = new Conteudo();
-$model = new Model();
-
-# Setando a lista (array) com todas as páginas do site
 $conteudo->paginas = $conteudo->criaArrayPaginas($model->getPaginaAll());
-$conteudo->secoes = $model->getArrSecoes();
 
+$view     = new View();
+$view->secoes = $model->getArrSecoes();
 
 

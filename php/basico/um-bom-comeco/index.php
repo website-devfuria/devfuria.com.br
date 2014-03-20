@@ -4,24 +4,26 @@
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/php/basico/um-bom-comeco/");
-//var_dump($pagina);die();
+
+
+//var_dump($view);die();
 
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
         <?php
-        $conteudo->head->setTitle('Começando com PHP');
-        $conteudo->head->setDescription('Tenha um primeiro contato com a linguagem PHP, esta matéria é para quem nunca viu PHP ou para que não sabe nada sobre PHP');
-        $conteudo->head->setkeywords('iniciando em php, aprendendo php, começando com php');
-        $conteudo->head->setAuthor();
+        $view->head->setTitle('Começando com PHP');
+        $view->head->setDescription('Tenha um primeiro contato com a linguagem PHP, esta matéria é para quem nunca viu PHP ou para que não sabe nada sobre PHP');
+        $view->head->setkeywords('iniciando em php, aprendendo php, começando com php');
+        $view->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $conteudo->navtop->secaoAtiva = $pagina->secao;
+        $view->navtop->secaoAtiva = $pagina->secao;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -328,8 +330,8 @@ echo "Resultado da soma de 1 + 1 = $resultado";
                         </div>
                     </div>
                     <?php
-                    $conteudo->paginacao->link_ativo = $pagina->url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[$pagina->secao][$pagina->categoria]);
+                    $view->paginacao->urlAtual = $pagina->url;
+                    $view->paginacao->descobrirAnteriorProxima($conteudo->paginas[$pagina->secao][$pagina->categoria]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -338,8 +340,8 @@ echo "Resultado da soma de 1 + 1 = $resultado";
         </div><!-- Matéria -->
 
         <?php
-        $conteudo->lista->setLinks($conteudo->paginas, $pagina->secao, $pagina->categoria);
-        $conteudo->lista->urlAtual = $pagina->url;
+        $view->lista->setLinks($conteudo->paginas, $pagina->secao, $pagina->categoria);
+        $view->lista->urlAtual = $pagina->url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
