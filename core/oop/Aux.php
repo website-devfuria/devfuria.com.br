@@ -48,8 +48,8 @@ class Aux {
      */
     static function getPagina($url) {
 
-        $pag = new Paginas();
-        return $pag->getPagina($url);
+        $model = new Model();
+        return $model->getPagina($url);
     }
 
     /**

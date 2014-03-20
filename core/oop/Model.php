@@ -38,6 +38,9 @@ class Model {
      * @return type
      */
     function getPagina($url) {
+        
+        # deveria instanciar a classe Pagina
+        # setar os valores e retornar o objeto pagina
 
         $res = $this->pdo->query("SELECT * FROM paginas WHERE url = '$url';");
         return $res->fetch(\PDO::FETCH_OBJ);
