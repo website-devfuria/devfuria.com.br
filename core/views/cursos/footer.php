@@ -1,7 +1,6 @@
-<?ph
-/**
- * 1) 12 colunas
- */
+<?php
+$view->lista->setLinks($conteudo->paginas, $pagina->secao, $pagina->categoria);
+$view->lista->urlAtual = $pagina->url;
 ?>
 <footer class="bs-footer">
     <div class="container">

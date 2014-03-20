@@ -13,6 +13,7 @@ class Pagina {
     public $descricao;
     public $metaTitle;
     public $metaDescr;
+    public $metaKeywords;
     public $secao;
     public $categoria;
     public $status;

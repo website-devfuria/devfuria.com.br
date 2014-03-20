@@ -2,8 +2,20 @@
 /**
  * Lista as matérias de cada seção
  *
- * Utilizado diretamente pela home e
- * indiretamente por: index de cada seção, matérias e guias (receitas).
+ * home
+ *     $view->lista->label = ListaSecao::LABEL_CURSO_JS;
+ *     $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+ *     include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+ *
+ * index cursos
+ *     $view->lista->label = ListaSecao::LABEL_CURSO_PHP;
+ *     $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
+ *     include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
+ *
+ * matérias cursos
+ *     $view->lista->setLinks($conteudo->paginas, $pagina->secao, $pagina->categoria);
+ *     $view->lista->urlAtual = $pagina->url;
+ *     include BASE_PATH . VIEWS_PATH . "/lista-secao.php"; ?>
  */
 ?>
 <h1><?php echo $view->lista->label ?></h1>
