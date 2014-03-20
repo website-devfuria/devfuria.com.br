@@ -56,7 +56,7 @@ define('DOMINIO', "www.devfuria.com.br");
 /**
  * Classes diversas
  */
-require (BASE_PATH . "/oop/gateways/Paginas.php");
+require (BASE_PATH . "/oop/Model.php");
 require (BASE_PATH . "/oop/Conteudo.php");
 require (BASE_PATH . "/oop/Pagina.php");
 require (BASE_PATH . "/oop/Aux.php");
@@ -79,8 +79,8 @@ $pdo->exec("set names utf8");
 $conteudo = new Conteudo();
 
 # Setando a lista (array) com todas as páginas do site
-$model_paginas = new Paginas();
-$conteudo->paginas = $conteudo->criaArrayPaginas($model_paginas->getAll());
+$model = new Model();
+$conteudo->paginas = $conteudo->criaArrayPaginas($model->getAll());
 //var_dump($conteudo->paginas['html-css']);die();
 
-$conteudo->secoes = $model_paginas->getArrSecoes();
+$conteudo->secoes = $model->getArrSecoes();

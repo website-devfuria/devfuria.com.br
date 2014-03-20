@@ -3,7 +3,7 @@
 /**
  *
  */
-class Paginas {
+class Model {
 
     private $pdo;
 
