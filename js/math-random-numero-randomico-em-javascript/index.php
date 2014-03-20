@@ -12,17 +12,17 @@ $url = "math-random-numero-randomico-em-javascript";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Geração de números aleatórios Javascript | Math.random()');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Geração de números aleatórios Javascript | Math.random()');
+        $conteudo->head->setDescription('');
+        $conteudo->head->setkeywords('');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body class="receitas-body">
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -158,9 +158,9 @@ $url = "math-random-numero-randomico-em-javascript";
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->label = ListaSecao::LABEL_GUIA_JS;
-        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::CATEGORIA_GUIA);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->label = ListaSecao::LABEL_GUIA_JS;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_GUIA);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/guias/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

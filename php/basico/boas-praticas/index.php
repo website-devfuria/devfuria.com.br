@@ -12,18 +12,18 @@ $url = "/php/basico/boas-praticas/"
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Boas práticas para quem está começando em PHP ');
-        $core->head->setDescription('Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.' .
+        $conteudo->head->setTitle('Boas práticas para quem está começando em PHP ');
+        $conteudo->head->setDescription('Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.' .
                 "Veremos 4 conceitos básicos: endentação, nomeação, comentários e estilos.");
-        $core->head->setkeywords('boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação, underline, underscore, camelcase');
-        $core->head->setAuthor();
+        $conteudo->head->setkeywords('boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação, underline, undersconteudo, camelcase');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -169,7 +169,7 @@ else
                                 é uma arte</strong>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de <code>nome</code>
                             ser diferente de <code>Nome</code>, no caso estou me referindo ao <strong>sensitive case (caixa sensível)</strong>. Existem também regras gerais e
                             bastante disseminadas como, por exemplo, o <strong>camel case</strong> que diz para colocar em maiúscula  a letra da segunda palavra
-                            (<code>umExemplo</code>). Há também o <strong>underline</strong> ou <strong>underscore</strong> para separar os nomes das variáveis (outro&#95;exemplo). Há alguns
+                            (<code>umExemplo</code>). Há também o <strong>underline</strong> ou <strong>undersconteudo</strong> para separar os nomes das variáveis (outro&#95;exemplo). Há alguns
                             estilo que diz para reservar três caracteres ao começo do nome da variável para identificar o tipo, mas como eu disse é
                             apenas um estilo.</p>
 
@@ -380,8 +380,8 @@ elseif(  (condition3)&&(condition4)  ){
                         <p>... e seja feliz!</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -390,8 +390,8 @@ elseif(  (condition3)&&(condition4)  ){
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

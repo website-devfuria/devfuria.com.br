@@ -3,8 +3,8 @@
  * Faz a paginação das matérias
  *
  *          <?php
- *          $core->paginacao->link_ativo = "/js/basico/preparando-o-terreno/";
- *          $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::CATEGORIA_CURSO]);
+ *          $conteudo->paginacao->link_ativo = "/js/basico/preparando-o-terreno/";
+ *          $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
  *          include BASE_PATH . VIEWS_PATH . "/paginacao.php";
  *          ?>
  *      </div>
@@ -13,21 +13,21 @@
 ?>
 
 <ul class="pager hidden-xs">
-    <?php if ($core->paginacao->anterior['href']): ?>
+    <?php if ($conteudo->paginacao->anterior['href']): ?>
         <li class="previous">
-            <a href="<?php echo LINKS_PATH . $core->paginacao->anterior['href']; ?>">
+            <a href="<?php echo LINKS_PATH . $conteudo->paginacao->anterior['href']; ?>">
                 <span class="glyphicon glyphicon-arrow-left"></span>
-                <?php echo $core->paginacao->anterior['titulo']; ?>
+                <?php echo $conteudo->paginacao->anterior['titulo']; ?>
             </a>
         </li>
     <?php else: ?>
         <li class="previous"></li>
     <?php endif; ?>
 
-    <?php if ($core->paginacao->proxima['href']): ?>
+    <?php if ($conteudo->paginacao->proxima['href']): ?>
         <li class="next">
-            <a href="<?php echo LINKS_PATH . $core->paginacao->proxima['href']; ?>">
-                <?php echo $core->paginacao->proxima['titulo']; ?>
+            <a href="<?php echo LINKS_PATH . $conteudo->paginacao->proxima['href']; ?>">
+                <?php echo $conteudo->paginacao->proxima['titulo']; ?>
                 <span class="glyphicon glyphicon-arrow-right"></span>
             </a>
         </li>

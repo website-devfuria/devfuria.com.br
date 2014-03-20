@@ -12,17 +12,17 @@ $url = "/js/basico/intro";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Javascript: Introdução a linguagem de programação Javascript');
-        $core->head->setDescription('Uma introdução ao Javascript. Acompanha 2 script para quebrar o gelo');
-        $core->head->setkeywords('iniciando em javascript, aprendendo javascript, começando com javascript');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Javascript: Introdução a linguagem de programação Javascript');
+        $conteudo->head->setDescription('Uma introdução ao Javascript. Acompanha 2 script para quebrar o gelo');
+        $conteudo->head->setkeywords('iniciando em javascript, aprendendo javascript, começando com javascript');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -339,8 +339,8 @@ element.onclick = function() {
 
 
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div>
@@ -349,8 +349,8 @@ element.onclick = function() {
     </div><!-- Matéria -->
 
     <?php
-    $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::CATEGORIA_CURSO);
-    $core->lista->link_ativo = $url;
+    $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+    $conteudo->lista->link_ativo = $url;
     include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
     ?>
 

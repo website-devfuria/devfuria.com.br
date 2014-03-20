@@ -12,17 +12,17 @@ $url = "/mysql-sql/basico/criando-base-tabela/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Matéria onde criaremos nossa primeira tabela no MySql');
-        $core->head->setDescription('Aprenda a criar uma tabela no MySql e também veja um pouco sobre os comandos TRUNCATE, DROP TABLE e LOAD LOCAL DATA');
-        $core->head->setkeywords('create table; truncate; drop; load local data');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Matéria onde criaremos nossa primeira tabela no MySql');
+        $conteudo->head->setDescription('Aprenda a criar uma tabela no MySql e também veja um pouco sobre os comandos TRUNCATE, DROP TABLE e LOAD LOCAL DATA');
+        $conteudo->head->setkeywords('create table; truncate; drop; load local data');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_MYSQL;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_MYSQL;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -315,8 +315,8 @@ Slim	Benny	snake	m	1996-04-29	\N
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_MYSQL][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_MYSQL][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -324,8 +324,8 @@ Slim	Benny	snake	m	1996-04-29	\N
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_MYSQL, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_MYSQL, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

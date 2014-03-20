@@ -12,17 +12,17 @@ $url = "/logica-de-programacao/basico/exercicios-expressoes-condicionais/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Exercícios de lógica de programação envolvendo expressões condicionais');
-        $core->head->setDescription('Exercícos resolvidos de lógica de programação (sobre expressões condicionais)');
-        $core->head->setkeywords('exercícios de lógica de programação, controle de fluxo, estrutura de seleção. operadores relacionais');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Exercícios de lógica de programação envolvendo expressões condicionais');
+        $conteudo->head->setDescription('Exercícos resolvidos de lógica de programação (sobre expressões condicionais)');
+        $conteudo->head->setkeywords('exercícios de lógica de programação, controle de fluxo, estrutura de seleção. operadores relacionais');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -428,8 +428,8 @@ echo true;</code></pre>
                         </div><!--acordion -->
                     </div><!--seção -->
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_LOG][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -437,8 +437,8 @@ echo true;</code></pre>
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

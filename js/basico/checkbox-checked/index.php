@@ -13,17 +13,17 @@ $pagina = $pagina->getPagina("/js/basico/checkbox-checked/");
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle($pagina->paginaTitulo);
-        $core->head->setDescription($pagina->paginaDescricao);
-        $core->head->setkeywords('');
-        $core->head->setAuthor($pagina->autor);
+        $conteudo->head->setTitle($pagina->paginaTitulo);
+        $conteudo->head->setDescription($pagina->paginaDescricao);
+        $conteudo->head->setkeywords('');
+        $conteudo->head->setAuthor($pagina->autor);
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -529,8 +529,8 @@ var myApp = {
                     </div>
 
                     <?php
-                    $core->paginacao->link_ativo = $pagina->url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $pagina->url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -538,8 +538,8 @@ var myApp = {
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $pagina->url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $pagina->url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

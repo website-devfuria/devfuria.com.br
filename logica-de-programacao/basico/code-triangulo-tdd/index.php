@@ -12,17 +12,17 @@ $url = "/logica-de-programacao/basico/code-triangulo-tdd/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('TDD passo a passo');
-        $core->head->setDescription('Matéria que demonstra a técnica do TDD. Lógica de programação alida ao TDD.');
-        $core->head->setkeywords('tdd, refatorar, kent bech, aprendendo tdd, tdd passo a passo');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('TDD passo a passo');
+        $conteudo->head->setDescription('Matéria que demonstra a técnica do TDD. Lógica de programação alida ao TDD.');
+        $conteudo->head->setkeywords('tdd, refatorar, kent bech, aprendendo tdd, tdd passo a passo');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -588,8 +588,8 @@ return false;
 
                 </div>
                 <?php
-                $core->paginacao->link_ativo = $url;
-                $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::CATEGORIA_CURSO]);
+                $conteudo->paginacao->link_ativo = $url;
+                $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_LOG][Conteudo::CATEGORIA_CURSO]);
                 include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                 ?>
             </div><!-- Corpo da matéria -->
@@ -598,8 +598,8 @@ return false;
     </div><!-- Matéria -->
 
     <?php
-    $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::CATEGORIA_CURSO);
-    $core->lista->link_ativo = $url;
+    $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
+    $conteudo->lista->link_ativo = $url;
     include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
     ?>
     <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

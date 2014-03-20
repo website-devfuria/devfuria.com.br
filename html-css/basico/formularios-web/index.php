@@ -12,17 +12,17 @@ $url = "/html-css/basico/formularios-web/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Formulários Web e seus controles');
-        $core->head->setDescription('Matéria demonstrando os controles básicos de HTML: input, select, textarea, etc...');
-        $core->head->setkeywords('formulários web; controles web; input; input file; textbox; combobox; listbox');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Formulários Web e seus controles');
+        $conteudo->head->setDescription('Matéria demonstrando os controles básicos de HTML: input, select, textarea, etc...');
+        $conteudo->head->setkeywords('formulários web; controles web; input; input file; textbox; combobox; listbox');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -376,8 +376,8 @@ $url = "/html-css/basico/formularios-web/";
                     <p>Nas matérias posteriores nós veremos cada controle detalhadamente.</p>
 
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_HTML][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                     <div class="bs-docs-section">
@@ -405,8 +405,8 @@ $url = "/html-css/basico/formularios-web/";
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_HTML, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

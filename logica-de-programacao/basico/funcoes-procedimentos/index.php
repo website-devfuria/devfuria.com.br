@@ -11,17 +11,17 @@ require "../../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Apendendo o básico sobre funções');
-        $core->head->setDescription('Como criar e utilizar funcções em PHP e Javascript, máteria de nível básico introduzindo uso de funções');
-        $core->head->setkeywords('funções, procedimentos, funções em php, funções em javascript, aprendendo funções');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Apendendo o básico sobre funções');
+        $conteudo->head->setDescription('Como criar e utilizar funcções em PHP e Javascript, máteria de nível básico introduzindo uso de funções');
+        $conteudo->head->setkeywords('funções, procedimentos, funções em php, funções em javascript, aprendendo funções');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -243,8 +243,8 @@ console.log(somarDoisNumeros(2, 4));
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_LOG][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -258,8 +258,8 @@ console.log(somarDoisNumeros(2, 4));
                     <div class="col-md-6">
                         <h1>Lógica de Programação</h1>
                         <?php
-                        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::CATEGORIA_CURSO);
-                        $core->lista->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
+                        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
+                        $conteudo->lista->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>

@@ -12,17 +12,17 @@ $url = "/html-css/basico/html-intro/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Tags básicas de HTML');
-        $core->head->setDescription('Aprendendo as tags básicas de HTML (âncoras, listas, tabelas, formulários, div e span)');
-        $core->head->setkeywords('âncoras, links, tabelas, formulários, parágrafos, imagens, div e span, lista');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Tags básicas de HTML');
+        $conteudo->head->setDescription('Aprendendo as tags básicas de HTML (âncoras, listas, tabelas, formulários, div e span)');
+        $conteudo->head->setkeywords('âncoras, links, tabelas, formulários, parágrafos, imagens, div e span, lista');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -333,8 +333,8 @@ $url = "/html-css/basico/html-intro/";
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_HTML][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -343,8 +343,8 @@ $url = "/html-css/basico/html-intro/";
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_HTML, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

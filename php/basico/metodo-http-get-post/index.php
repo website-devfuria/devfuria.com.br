@@ -12,17 +12,17 @@ $url = "/php/basico/metodo-http-get-post/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Como funcionam os métodos GET e POST');
-        $core->head->setDescription('Introdução prática e descomplicada sobre o protocolo HTTP. Nosso objetivo é entender os métodos GET e POST.');
-        $core->head->setkeywords('http; get; post; stateless');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Como funcionam os métodos GET e POST');
+        $conteudo->head->setDescription('Introdução prática e descomplicada sobre o protocolo HTTP. Nosso objetivo é entender os métodos GET e POST.');
+        $conteudo->head->setkeywords('http; get; post; stateless');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -335,8 +335,8 @@ Server: Apache/2.2.15 (CentOS
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -344,8 +344,8 @@ Server: Apache/2.2.15 (CentOS
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

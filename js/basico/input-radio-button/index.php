@@ -12,17 +12,17 @@ $url = "/js/basico/input-radio-button";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('JavaScript e Radio Buttons');
-        $core->head->setDescription('Agrupar radios buttons com o mesmo nome e descobrir se está checked');
-        $core->head->setkeywords('');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('JavaScript e Radio Buttons');
+        $conteudo->head->setDescription('Agrupar radios buttons com o mesmo nome e descobrir se está checked');
+        $conteudo->head->setkeywords('');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -149,7 +149,7 @@ $url = "/js/basico/input-radio-button";
 
                         <ol>
                             <li>Pegue os radios buttons do mesmo grupo</li>
-                            <li>Percorendo cada radio (laço)...</li>
+                            <li>Perconteudondo cada radio (laço)...</li>
                             <li>diga se está ou não "checado"</li>
                         </ol>
 
@@ -397,8 +397,8 @@ document.getElementById("btnLoad").onclick = function() {
 
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -411,8 +411,8 @@ document.getElementById("btnLoad").onclick = function() {
                     <div class="col-md-6">
                         <h1></h1>
                         <?php
-                        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::CATEGORIA_CURSO);
-                        $core->lista->link_ativo = $url;
+                        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+                        $conteudo->lista->link_ativo = $url;
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>

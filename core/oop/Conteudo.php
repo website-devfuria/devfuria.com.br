@@ -4,7 +4,7 @@
  * Classe principal
  * Instanciada no boot
  */
-class Core {
+class Conteudo {
 
     const SECAO_JS = "js";
     const SECAO_PHP = "php";
@@ -13,7 +13,7 @@ class Core {
     const SECAO_MYSQL = "mysql";
     const SECAO_ER = "regexp";
     const CATEGORIA_CURSO = "curso";
-    const CATEGORIA_GUIA = "receita-guia";
+    const CATEGORIA_GUIA = "receitas-tuto-guia";
 //    const GUIA_JS = "js-guia";
 
     /**
@@ -72,6 +72,12 @@ class Core {
         $this->paginacao = new Paginacao();
     }
 
+    /**
+     * Função utilizada no boot
+     * 
+     * @param type $paginas_db
+     * @return type
+     */
     function criaArrayPaginas($paginas_db) {
         $arr = array();
         foreach ($paginas_db as $pagina) {

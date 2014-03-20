@@ -12,17 +12,17 @@ $url = "js/basico/debugando/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Debugando com Javascript');
-        $core->head->setDescription('Aprenda a debugar seus scripts em Javascript, este é o primeiro passo na depurarção de código.');
-        $core->head->setkeywords('debugando código js, depurando código js, firebug, alert');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Debugando com Javascript');
+        $conteudo->head->setDescription('Aprenda a debugar seus scripts em Javascript, este é o primeiro passo na depurarção de código.');
+        $conteudo->head->setkeywords('debugando código js, depurando código js, firebug, alert');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -220,8 +220,8 @@ console.log(minha_variavel);</code></pre>
                         <p>Se não aparecer nenhuma mensagem de erro, ótimo! Seu script está correto (pelo menos do ponto de vista da sintaxe).</p>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -229,8 +229,8 @@ console.log(minha_variavel);</code></pre>
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

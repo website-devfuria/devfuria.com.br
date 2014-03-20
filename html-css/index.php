@@ -11,9 +11,9 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('HTML-CSS');
-        $core->head->setDescription('Curso, matérias, exercícios, artigos sobre HTML(5) e CSS(3)');
-        $core->head->setkeywords("html; html5; css; css3; tutorial html; tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
+        $conteudo->head->setTitle('HTML-CSS');
+        $conteudo->head->setDescription('Curso, matérias, exercícios, artigos sobre HTML(5) e CSS(3)');
+        $conteudo->head->setkeywords("html; html5; css; css3; tutorial html; tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
             "html básico; html fácil; html início; html iniciante; " .
             "html iniciando; html iniciante; começando com html; começando no html; " .
             "html descomplicado; aprendendo html; matéria sobre html; aula sobre html" .
@@ -22,7 +22,7 @@ require "../core/boot.php";
             "css descomplicado; aprendendo css; matéria sobre css; aula sobre css;" .
             "folhas estilo cascata; web standards; padrões web; tableless"
         );
-        $core->head->setAuthor();
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
 
@@ -38,7 +38,7 @@ require "../core/boot.php";
 
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
@@ -56,8 +56,8 @@ require "../core/boot.php";
         </main>
 
         <?php
-        $core->lista->label = ListaSecao::LABEL_CURSO_HTML;
-        $core->lista->setLinks($core->paginas, Core::SECAO_HTML, Core::CATEGORIA_CURSO);
+        $conteudo->lista->label = ListaSecao::LABEL_CURSO_HTML;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::CATEGORIA_CURSO);
         include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

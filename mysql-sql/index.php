@@ -11,16 +11,16 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Mysql-SQL');
-        $core->head->setDescription('Curso de SQL através do Mysql, descubra o que o SQL pode fazer por você.');
-        $core->head->setkeywords("sql; mysql; sql básico; sql fácil; sql início; sql iniciante; " .
+        $conteudo->head->setTitle('Mysql-SQL');
+        $conteudo->head->setDescription('Curso de SQL através do Mysql, descubra o que o SQL pode fazer por você.');
+        $conteudo->head->setkeywords("sql; mysql; sql básico; sql fácil; sql início; sql iniciante; " .
             "sql iniciando; sql iniciante; começando com sql; começando no sql; " .
             "sql descomplicado; aprendendo sql; matéria sobre sql; aula sobre sql; " .
             "mysql básico; mysql fácil; mysql início; mysql iniciante; " .
             "mysql iniciando; mysql iniciante; começando com mysql; começando no mysql; " .
             "mysql descomplicado; aprendendo mysql; matéria sobre mysql; aula sobre mysql; "
         );
-        $core->head->setAuthor();
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
 
@@ -36,7 +36,7 @@ require "../core/boot.php";
 
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_MYSQL;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_MYSQL;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
@@ -67,8 +67,8 @@ require "../core/boot.php";
         </main>
 
         <?php
-        $core->lista->label = ListaSecao::LABEL_CURSO_MYSQL;
-        $core->lista->setLinks($core->paginas, Core::SECAO_MYSQL, Core::CATEGORIA_CURSO);
+        $conteudo->lista->label = ListaSecao::LABEL_CURSO_MYSQL;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_MYSQL, Conteudo::CATEGORIA_CURSO);
         include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

@@ -12,17 +12,17 @@ $url = "/regexp/basico/ponto/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('. (ponto) nas expressões regulares');
-        $core->head->setDescription('Matéria que traz várias imagens (todas de autoria do Aurélio Marinho) ilustrando o uso do "ponto"');
-        $core->head->setkeywords('ponto, ., expressões regulares ., expressões regulares ponto');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('. (ponto) nas expressões regulares');
+        $conteudo->head->setDescription('Matéria que traz várias imagens (todas de autoria do Aurélio Marinho) ilustrando o uso do "ponto"');
+        $conteudo->head->setkeywords('ponto, ., expressões regulares ., expressões regulares ponto');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_ER;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_ER;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -134,8 +134,8 @@ $url = "/regexp/basico/ponto/";
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_ER][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_ER][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -144,8 +144,8 @@ $url = "/regexp/basico/ponto/";
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_ER, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_ER, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

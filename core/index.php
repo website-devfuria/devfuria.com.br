@@ -1,6 +1,6 @@
 <?php
 /**
- * INdex do core
+ * INdex do conteudo
  */
 /**
  * Includes
@@ -11,9 +11,9 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle(LINKS_PATH . "/core/");
-        $core->head->setDescription('Esta é uma página de redirecionamento');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle(LINKS_PATH . "/core/");
+        $conteudo->head->setDescription('Esta é uma página de redirecionamento');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
@@ -24,8 +24,8 @@ require "../core/boot.php";
         ?> 
 
         <div class="jumbotron">
-            <h1>Área "core"</h1>
-            <p>Este é a pasta core do site.</p>
+            <h1>Área "conteudo"</h1>
+            <p>Este é a pasta conteudo do site.</p>
             <p>Se quiser conhecer mais sobre a estrutura do site visite: <a href="https://github.com/flaviomicheletti/www.devfuria.com.br" title="link-externo">Projeto no GitHub</a></p>
         </div>
 

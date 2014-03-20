@@ -12,17 +12,17 @@ $url = "/checkbox-checked/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('PHP - input type check checkbox');
-        $core->head->setDescription('Controle de checkbox em PHP, verificar se os CheckBox foram marcados.');
-        $core->head->setkeywords('');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('PHP - input type check checkbox');
+        $conteudo->head->setDescription('Controle de checkbox em PHP, verificar se os CheckBox foram marcados.');
+        $conteudo->head->setkeywords('');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -264,8 +264,8 @@ $car  = (bool) rand(0, 1) ? "checked" : null;
                     </div>
 
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -273,8 +273,8 @@ $car  = (bool) rand(0, 1) ? "checked" : null;
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

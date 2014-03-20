@@ -12,17 +12,17 @@ $url ="/php/basico/enviando-dados-via-get-post/";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Enviando dados via GET e POST');
-        $core->head->setDescription('Estamos no navegador (cliente) criando dois tipos de requisições GET e POST');
-        $core->head->setkeywords('get post php, httpd methods, get, post, recebendo dados via post e get');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Enviando dados via GET e POST');
+        $conteudo->head->setDescription('Estamos no navegador (cliente) criando dois tipos de requisições GET e POST');
+        $conteudo->head->setkeywords('get post php, httpd methods, get, post, recebendo dados via post e get');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -325,8 +325,8 @@ echo $_GET['email']; // print joao@dasilva.com
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -334,8 +334,8 @@ echo $_GET['email']; // print joao@dasilva.com
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

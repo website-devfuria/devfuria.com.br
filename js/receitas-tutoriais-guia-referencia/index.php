@@ -11,13 +11,13 @@ require "../../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Javascript');
-        $core->head->setDescription('Curso, matérias, exercícios, artigos sobre Javascript (especialmente para iniciantes). Aprenda Javascript de uma forma produtiva.');
-        $core->head->setkeywords("javascript; js; javascript básico; javascript fácil; javascript início; javascript iniciante; " .
+        $conteudo->head->setTitle('Javascript');
+        $conteudo->head->setDescription('Curso, matérias, exercícios, artigos sobre Javascript (especialmente para iniciantes). Aprenda Javascript de uma forma produtiva.');
+        $conteudo->head->setkeywords("javascript; js; javascript básico; javascript fácil; javascript início; javascript iniciante; " .
                 "javascript iniciando; javascript iniciante; começando com javascript; começando no javascript; " .
                 "javascript descomplicado; aprendendo javascript; matéria sobre javascript; aula sobre javascript; "
         );
-        $core->head->setAuthor();
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
 
@@ -33,7 +33,7 @@ require "../../core/boot.php";
 
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -70,8 +70,8 @@ require "../../core/boot.php";
         <div class="row">
             <div class="col-md-12">
                 <?php
-                $core->lista->label = ListaSecao::LABEL_GUIA_JS;
-                $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::CATEGORIA_GUIA);
+                $conteudo->lista->label = ListaSecao::LABEL_GUIA_JS;
+                $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_GUIA);
                 include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                 ?>
             </div>

@@ -12,17 +12,17 @@ $url = "/html-css/basico/primeiro-html/"
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Crie seu primeiro HTML');
-        $core->head->setDescription('Aprenda a cirar um HTML de ótima qualidade, usaremos como base o HTML do site www.csszengarden.com');
-        $core->head->setkeywords('primeiro HTML, exercício de HTML, csszengarden');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Crie seu primeiro HTML');
+        $conteudo->head->setDescription('Aprenda a cirar um HTML de ótima qualidade, usaremos como base o HTML do site www.csszengarden.com');
+        $conteudo->head->setkeywords('primeiro HTML, exercício de HTML, csszengarden');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -87,7 +87,7 @@ $url = "/html-css/basico/primeiro-html/"
                                 adequado para o conteúdo?</strong></p>
 
                         <p>Uma página da web, uma página de um portal ou uma página de um sistema web (nosso foco) é composta por algum tipo de
-                            conteúdo: texto, cores, links, imagens, gráficos, filmes, audio. Mas principalmente texto.</p>
+                            conteúdo: texto, conteudos, links, imagens, gráficos, filmes, audio. Mas principalmente texto.</p>
 
                         <p>Imagine que você irá construi apenas uma página simples. Você já possui o texto. Na verdade é tudo muito simples, teremos
                             apenas títulos e parágrafos.</p>
@@ -219,8 +219,8 @@ etc...</code></pre>
                         </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML][Core::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_HTML][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -229,8 +229,8 @@ etc...</code></pre>
         </div><!-- Matéria -->
 
         <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_HTML, Core::CATEGORIA_CURSO);
-        $core->lista->link_ativo = $url;
+        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::CATEGORIA_CURSO);
+        $conteudo->lista->link_ativo = $url;
         include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

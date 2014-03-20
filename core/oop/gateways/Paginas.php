@@ -7,13 +7,12 @@ class Paginas {
 
     private $pdo;
 
-
     /**
      * Na construção busca a conexão com o DB
      *
      * @param type $conexao
      */
-    function __construct($url="") {
+    function __construct($url = "") {
         $this->pdo = $GLOBALS['pdo'];
     }
 
@@ -42,6 +41,42 @@ class Paginas {
 
         $res = $this->pdo->query("SELECT * FROM paginas WHERE url = '$url';");
         return $res->fetch(\PDO::FETCH_OBJ);
+    }
+
+    /**
+     * Retorna um array com as seções
+     * Utilizado para compor a navegação do site
+     * 
+     * @return type
+     */
+    function getArrSecoes() {
+        
+        return array(
+            Conteudo::SECAO_JS => array(
+                "href" => "js",
+                "label" => "Javascript"
+            ),
+            Conteudo::SECAO_HTML => array(
+                "href" => "html-css",
+                "label" => "HTML & CSS"
+            ),            
+            Conteudo::SECAO_PHP => array(
+                "href" => "php",
+                "label" => "PHP"
+            ),
+            Conteudo::SECAO_MYSQL => array(
+                "href" => "mysql-sql",
+                "label" => "MySql & SQL"
+            ),
+            Conteudo::SECAO_ER => array(
+                "href" => "regexp",
+                "label" => "RegExp"
+            ),
+            Conteudo::SECAO_LOG => array(
+                "href" => "logica-de-programacao",
+                "label" => "Lógica de Programação"
+            )            
+        );
     }
 
 }
