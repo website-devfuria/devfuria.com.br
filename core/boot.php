@@ -3,7 +3,6 @@
 /**
  * Arquivo Bootstrap
  */
-
 /**
  * Session
  */
@@ -77,12 +76,12 @@ $pdo->exec("set names utf8");
 /**
  * Variáveis do sistema
  */
-$model    = new Model();
+$model = new Model();
 
 $conteudo = new Conteudo();
 $conteudo->paginas = $conteudo->criaArrayPaginas($model->getPaginaAll());
 
-$view     = new View();
+$view = new View();
 $view->secoes = $model->getArrSecoes();
 
 
