@@ -21,6 +21,12 @@ class ListaSecao {
         $this->links = $todasPaginas[$secao][$categoria];
     }
 
+    /**
+     * Descobre a label do curso segundo a seção
+     *
+     * @param type $secao
+     * @return string
+     */
     function retLabelCursoSegundoSecao($secao) {
 
         # estes dados deveriam vir do DB?
@@ -36,6 +42,12 @@ class ListaSecao {
         return $labelDosCursos[$secao];
     }
 
+    /**
+     * Descobre a label da referência segundo a seção
+     * 
+     * @param type $secao
+     * @return type
+     */
     function retLabelReferenciaSegundoSecao($secao) {
 
         $prefixo = "Receitas, Tutoriais e Guia de Referência";
