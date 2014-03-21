@@ -1,9 +1,3 @@
-<?ph
-/**
- * 1) 9 colunas
- * 2) Tem uma css a mais!
- */
-?>
 <footer class="bs-footer receitas-footer">
     <div class="container">
         <div class="row">

@@ -2,21 +2,19 @@
 /**
  * Este script é o cabeçalho padrão
  *
- * home e index
+ * # Sete os dados
+ * $view->head->setTitle('titulo');
+ * $view->head->setDescription('Descrição');
+ * $view->head->setkeywords("keywords");
+ * $view->head->setAuthor("autor");
+ * include BASE_PATH . VIEWS_PATH . "/head.php";
  *
- *     $view->head->setTitle('Desenvolvimento Web');
- *     $view->head->setDescription('Cursos, aulas, tutoriais, apostilas, matérias sobre programação web prá ninguém botar defeito!');
- *     $view->head->setkeywords("aplicações web; webapp; app's; desenvolvimento; desenvolvimento web; website; cursos web; webstandards;  programação; aprendendo programação; aulas de programação; tutoriais; artigos;");
- *     $view->head->setAuthor();
- *     include BASE_PATH . VIEWS_PATH . "/head.php";
- *
- * cursos
- *
- *     $view->head->setTitle($pagina->metaTitle);
- *     $view->head->setDescription($pagina->metaDescr);
- *     $view->head->setkeywords($pagina->metaKeywords);
- *     $view->head->setAuthor($pagina->autor);
- *     include BASE_PATH . VIEWS_PATH . "/head.php";
+ * # Se não tiver algum dado, não chame a função, ex:
+ * $view->head->setTitle('titulo');
+ * $view->head->setDescription('Descrição');
+ * //$view->head->setkeywords();
+ * //$view->head->setAuthor();
+ * include BASE_PATH . VIEWS_PATH . "/head.php";
  *
  */
 # título padrão
