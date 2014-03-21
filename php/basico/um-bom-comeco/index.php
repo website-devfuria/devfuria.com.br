@@ -1,7 +1,7 @@
 <?php
 /**
  * Começando com PHP
- * 'iniciando em php, aprendendo php, começando com php'
+ * iniciando em php, aprendendo php, começando com php'
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/php/basico/um-bom-comeco/");

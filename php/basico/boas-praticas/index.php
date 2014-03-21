@@ -1,31 +1,19 @@
 <?php
 /**
- * PHP
- */
-/**
- * Includes
+ * Boas práticas para quem está começando em PHP
+ * boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação, underline,
+ * undersconteudo, camelcase
  */
 require "../../../core/boot.php";
-$url = "/php/basico/boas-praticas/"
+$pagina = $model->getPagina("/php/basico/boas-praticas/");        
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('Boas práticas para quem está começando em PHP ');
-        $conteudo->head->setDescription('Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.' .
-                "Veremos 4 conceitos básicos: endentação, nomeação, comentários e estilos.");
-        $conteudo->head->setkeywords('boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação, underline, undersconteudo, camelcase');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -37,11 +25,7 @@ $url = "/php/basico/boas-praticas/"
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">11/09/2012</span>, escrito em <span class="label label-info">05/06/2012</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
 
         <!-- Matéria -->
@@ -379,22 +363,11 @@ elseif(  (condition3)&&(condition4)  ){
 
                         <p>... e seja feliz!</p>
                     </div>
-                    <?php
-                    $conteudo->paginacao->link_ativo = $url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <?php
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
-        $conteudo->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>
