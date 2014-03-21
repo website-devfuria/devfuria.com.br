@@ -1,31 +1,18 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * Javascript - Ler valores dos checkbox que estiverem checkados
+ *
  */
 require "../../../core/boot.php";
-$pagina = new Paginas();
-$pagina = $pagina->getPagina("/js/basico/checkbox-checked/");
+$pagina = $model->getPagina("/js/basico/checkbox-checked/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle($pagina->paginaTitulo);
-        $conteudo->head->setDescription($pagina->paginaDescricao);
-        $conteudo->head->setkeywords('');
-        $conteudo->head->setAuthor($pagina->autor);
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -38,11 +25,7 @@ $pagina = $pagina->getPagina("/js/basico/checkbox-checked/");
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success"><?php echo $pagina->dtAtualizacao ?></span>, escrito em <span class="label label-info"><?php echo $pagina->dtCriacao ?></span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -527,21 +510,11 @@ var myApp = {
 </code></pre>
                         </div>
                     </div>
-
-                    <?php
-                    $conteudo->paginacao->link_ativo = $pagina->url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <?php
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
-        $conteudo->lista->link_ativo = $pagina->url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

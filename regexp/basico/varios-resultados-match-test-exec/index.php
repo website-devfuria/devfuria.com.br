@@ -1,46 +1,30 @@
 <?php
 /**
- * RegExp
- */
-/**
- * Includes
+ * match(), test() e exec()
+ * expressões regulares, match(), test(),  exec()
  */
 require "../../../core/boot.php";
-$url = "/regexp/basico/varios-resultados-match-test-exec/";
+$pagina = $model->getPagina("/regexp/basico/varios-resultados-match-test-exec/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('match(), test() e exec()');
-        $conteudo->head->setDescription('Dissecando as funções match(), test() e exec() do JS');
-        $conteudo->head->setkeywords('expressões regulares, match(), test(),  exec()');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+    <head>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_ER;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Vários resultados - match(), test() e exec()</h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p>Dissecando as funções do JS</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">22/07/2013</span>, escrito em <span class="label label-info">22/07/2013</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -211,22 +195,11 @@ if (resultado) {
                         <p>Acesse o link <a href="https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806" title="link-externo">https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806</a>
                             e clique no botão "Download Gist", descompacte o arquivo e boa diversão.</p>
                     </div>
-                    <?php
-                    $conteudo->paginacao->link_ativo = $url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_ER][Conteudo::CATEGORIA_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <?php
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_ER, Conteudo::CATEGORIA_CURSO);
-        $conteudo->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

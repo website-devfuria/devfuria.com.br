@@ -1,31 +1,18 @@
 <?php
 /**
- * Lógica
- */
-/**
- * Includes
+ * Exercícios de lógica de programação envolvendo expressões condicionais
+ * exercícios de lógica de programação, controle de fluxo, estrutura de seleção. operadores relacionais
  */
 require "../../../core/boot.php";
-$url = "/logica-de-programacao/basico/exercicios-expressoes-condicionais/";
+$pagina = $model->getPagina("/logica-de-programacao/basico/exercicios-expressoes-condicionais/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('Exercícios de lógica de programação envolvendo expressões condicionais');
-        $conteudo->head->setDescription('Exercícos resolvidos de lógica de programação (sobre expressões condicionais)');
-        $conteudo->head->setkeywords('exercícios de lógica de programação, controle de fluxo, estrutura de seleção. operadores relacionais');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -36,11 +23,7 @@ $url = "/logica-de-programacao/basico/exercicios-expressoes-condicionais/";
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">20/12/2013</span>, escrito em <span class="label label-info">20/12/2013</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -427,21 +410,11 @@ echo true;</code></pre>
                             </div>
                         </div><!--acordion -->
                     </div><!--seção -->
-                    <?php
-                    $conteudo->paginacao->link_ativo = $url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_LOG][Conteudo::CATEGORIA_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <?php
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
-        $conteudo->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

@@ -1,47 +1,30 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * JavaScript e Radio Buttons
+ *
  */
 require "../../../core/boot.php";
-$url = "/js/basico/input-radio-button";
+$pagina = $model->getPagina("/js/basico/input-radio-button/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('JavaScript e Radio Buttons');
-        $conteudo->head->setDescription('Agrupar radios buttons com o mesmo nome e descobrir se está checked');
-        $conteudo->head->setkeywords('');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Manipulando radios buttons com JavaScript</h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p><code>radios[i].checked = true;</code></p>
                 <p><code>radios[i].checked = false;</code></p>
-                <p></p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">13/03/2014</span>, escrito em <span class="label label-info">13/03/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -72,7 +55,7 @@ $url = "/js/basico/input-radio-button";
                         <p>O input radio é um controle de opções, é uma única escolha entre as opções possíveis.</p>
 
                         <p>O básico sobre o controle nós já vimos na matéria
-                           <?php Aux::printAncora("/html-css/basico/formularios-web/#input-radio") ?></p>
+                            <?php Aux::printAncora("/html-css/basico/formularios-web/#input-radio") ?></p>
 
                         <p>Se quiser ver uma prévia do que produziremos nesta matéria acesse o <a href="https://gist.github.com/flaviomicheletti/9533196" title="link-externo">Gist</a>.</p>
 
@@ -396,30 +379,11 @@ document.getElementById("btnLoad").onclick = function() {
                         <p>Se preferir acesse o <a href="https://gist.github.com/flaviomicheletti/9533196" title="link-externo">Gist</a>.</p>
 
                     </div>
-                    <?php
-                    $conteudo->paginacao->link_ativo = $url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1></h1>
-                        <?php
-                        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
-                        $conteudo->lista->link_ativo = $url;
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

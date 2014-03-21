@@ -1,49 +1,30 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * Aprenda javascript com este exemplo de código: a lâmpada
+ * getElementById, funções em js, eventos em js, DOM, firebug, objeto document, objeto window
  */
 require "../../../core/boot.php";
-$url = "/code-lampadas/";
+$pagina = $model->getPagina("/js/basico/code-lampadas/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('Aprenda javascript com este exemplo de código: a lâmpada');
-        $conteudo->head->setDescription('Aprendendo código escrito em javascript que ascende e apaga uma lâmpa! Princípio de animações com JS.');
-        $conteudo->head->setkeywords('getElementById, funções em js, eventos em js, DOM, firebug, objeto document, objeto window');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Code - A lâmpada</h1>
-                <p>Revendo o código do "primeiro script" aprenderemos um pouco de tudo:
-                    getElementById, funções, eventos, DOM, firebug, document e window.
-                </p>
+                <h1><?php echo $pagina->titulo ?></h1>
+                <p>Revendo o código do "primeiro script" aprenderemos um pouco de tudo:</p>
+                <p>getElementById, funções, eventos, DOM, firebug, document e window.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">30/04/2013</span>, escrito em <span class="label label-info">10/04/2013</span>.
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -439,21 +420,11 @@ se não
 
                             <p>Até lá.</p>
                         </div>
-                        <?php
-                        $conteudo->paginacao->link_ativo = $url;
-                        $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>
+                        <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                     </div><!-- Corpo da matéria -->
                 </div><!-- row -->
             </div><!-- Matéria -->
-
-            <?php
-            $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
-            $conteudo->lista->link_ativo = $url;
-            include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-            ?>
+            <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
             <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

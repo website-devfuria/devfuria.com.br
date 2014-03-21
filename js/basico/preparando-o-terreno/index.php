@@ -2,48 +2,30 @@
 /**
  * JS
  */
-/**
- * Includes
- */
 require "../../../core/boot.php";
-$url = "/js/basico/preparando-o-terreno/";
+$pagina = $model->getPagina("/js/basico/preparando-o-terreno/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('Antes de programar em JS veja esta matéria');
-        $conteudo->head->setDescription('Veremos Separações de Interesses (separation of concerns), onde colocar o JS e uma rápida pincelada em OOP, FIREBUG e a questão da segurança!.');
-        $conteudo->head->setkeywords('separação de interesses, oop, javascript orientado a objetos, firebug, javascript segurança');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Preparando o terreno</h1>
-                <p>Veremos Separações de Interesses (separation of concerns), onde colocar o JS e uma rápida pincelada
+                <h1><?php echo $pagina->titulo?></h1>
+                <p>
+                    Veremos Separações de Interesses (separation of concerns), onde colocar o JS e uma rápida pincelada
                     em OOP, FIREBUG e a questão da segurança!.
                 </p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">08/11/2012</span>, escrito em <span class="label label-info">08/10/2012</span>.
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -230,21 +212,11 @@ console.log(qualquer);</code></pre>
 
                         <p>Na próxima matéria veremos como debugar (depurar) o JS.</p>
                     </div>
-                    <?php
-                    $conteudo->paginacao->link_ativo = $url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <?php
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
-        $conteudo->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

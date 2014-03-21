@@ -1,30 +1,18 @@
 <?php
 /**
- * Lógica/
- */
-/**
- * Includes
+ * TDD passo a passo
+ * tdd, refatorar, kent bech, aprendendo tdd, tdd passo a passo
  */
 require "../../../core/boot.php";
-$url = "/logica-de-programacao/basico/code-triangulo-tdd/";
+$pagina = $model->getPagina("/logica-de-programacao/basico/code-triangulo-tdd/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('TDD passo a passo');
-        $conteudo->head->setDescription('Matéria que demonstra a técnica do TDD. Lógica de programação alida ao TDD.');
-        $conteudo->head->setkeywords('tdd, refatorar, kent bech, aprendendo tdd, tdd passo a passo');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -36,11 +24,7 @@ $url = "/logica-de-programacao/basico/code-triangulo-tdd/";
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">30/01/2014</span>, escrito em <span class="label label-info">30/01/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -277,7 +261,7 @@ class TrianguloTest extends PHPUnit_Framework_TestCase
                         <p>
                             Só que... é neste ponto que devemos ir mais devagar. E também é o ponto que eu "escorreguei",
                             se você lêu atentamente a matéria
-                            <?php Aux::printAncora("/logica-de-programacao/basico/tdd/", "titulo") ?>
+                            <?php Aux::printAncora("/logica-de-programacao/basico/tdd-test-driven-development/", "titulo") ?>
                             sabe do que estou falando.
                         </p>
 
@@ -587,21 +571,11 @@ return false;
                     <p>Aliás, é o que estou precisando! vou dormir, tchau!</p>
 
                 </div>
-                <?php
-                $conteudo->paginacao->link_ativo = $url;
-                $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_LOG][Conteudo::CATEGORIA_CURSO]);
-                include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                ?>
-            </div><!-- Corpo da matéria -->
-        </div><!-- row -->
-
-    </div><!-- Matéria -->
-
-    <?php
-    $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
-    $conteudo->lista->link_ativo = $url;
-    include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-    ?>
-    <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-</body>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+        </div><!-- Matéria -->
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+    </body>
 </html>
