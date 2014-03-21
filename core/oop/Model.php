@@ -78,8 +78,8 @@ class Model {
         $pagina->secao = $pagina_db->secao;
         $pagina->categoria = $pagina_db->categoria;
         $pagina->status = $pagina_db->status;
-        $pagina->dtCriacao = $pagina_db->dtCriacao;
-        $pagina->dtAtualizacao = $pagina_db->dtAtualizacao;
+        $pagina->dtCriacao = Aux::data_converte_para_visualizar($pagina_db->dtCriacao);
+        $pagina->dtAtualizacao = Aux::data_converte_para_visualizar($pagina_db->dtAtualizacao);
         if ($pagina_db->autor) {
             $pagina->autor = $pagina_db->autor;
         } else {
