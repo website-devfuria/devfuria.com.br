@@ -2,45 +2,28 @@
 /**
  *
  */
-/**
- * Includes
- */
 require "../../../core/boot.php";
-$url ="/php/basico/enviando-dados-via-get-post/";
+$pagina = $model->getPagina("/php/basico/enviando-dados-via-get-post/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('Enviando dados via GET e POST');
-        $conteudo->head->setDescription('Estamos no navegador (cliente) criando dois tipos de requisições GET e POST');
-        $conteudo->head->setkeywords('get post php, httpd methods, get, post, recebendo dados via post e get');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Enviando dados para o script</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Estamos no navegador (browser) criando dois tipos de requisições</p>
                 <p>GET e POST</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">30/01/2014</span>, escrito em <span class="label label-info">30/01/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -148,7 +131,7 @@ echo $_POST['email']; // print joao@dasilva.com
 
                         <p>
                             O que fazer com o dados nós veremos na matéria
-                            <?php Aux::printAncora("/php/basico/recebendo-dados-via-get-post/")?>
+                            <?php Aux::printAncora("/php/basico/recebendo-dados-via-get-post/") ?>
                         </p>
 
 
@@ -324,21 +307,11 @@ echo $_GET['email']; // print joao@dasilva.com
                             </div>
                         </div>
                     </div>
-                    <?php
-                    $conteudo->paginacao->link_ativo = $url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <?php
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
-        $conteudo->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

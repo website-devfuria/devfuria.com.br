@@ -1,46 +1,29 @@
 <?php
 /**
- * PHP
- */
-/**
- * Includes
+ *
  */
 require "../../../core/boot.php";
-$url = "/php/basico/instalando-o-ambiente/";
+$pagina = $model->getPagina("/php/basico/instalando-o-ambiente/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('Levantando um ambiente de programação (PHP)');
-        $conteudo->head->setDescription('Aprenda a levantar seu ambiente de programação de forma descomplicada e sem sustos');
-        $conteudo->head->setkeywords('instalando apache no linux, instalando mysql no linux, instalando phpmyadmin no linux, instalando php no linux, php.ini, x-debug, lamp ubuntu, lamp fedora');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_PHP;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Instalando o Ambiente no estilo NEXT, NEXT, NEXT.</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Vamos instalar o ambiente em nosso próprio desktop.</p>
                 <p>Alerta: esse não é o ideal... mas calma, estamos apenas começando</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">11/09/2012</span>, escrito em <span class="label label-info">05/06/2012</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
 
         <!-- Matéria -->
@@ -495,22 +478,11 @@ systemctl restart httpd.service
                             </div>
                         </div>
                     </div>
-                    <?php
-                    $conteudo->paginacao->link_ativo = $url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_PHP][Conteudo::CATEGORIA_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <?php
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
-        $conteudo->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

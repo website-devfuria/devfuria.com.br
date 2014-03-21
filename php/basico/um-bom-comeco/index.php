@@ -18,7 +18,7 @@ $pagina = $model->getPagina("/php/basico/um-bom-comeco/");
         <div class="bs-header" id="content">
             <div class="container">
                 <h1><?php echo $pagina->titulo?></h1>
-                <p><?php echo $pagina->descricao?></p>
+                <p>Introdução a linguagem PHP e ao desenvolvimento web.</p>
             </div>
         </div>
 

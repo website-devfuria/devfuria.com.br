@@ -5,7 +5,7 @@
  * undersconteudo, camelcase
  */
 require "../../../core/boot.php";
-$pagina = $model->getPagina("/php/basico/boas-praticas/");        
+$pagina = $model->getPagina("/php/basico/boas-praticas/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -18,7 +18,7 @@ $pagina = $model->getPagina("/php/basico/boas-praticas/");
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Antes de enfiar o pé na jaca</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Aprenda o básico das boas práticas.</p>
                 <p>São quatro dicas essenciais para quem está começando a programar</p>
             </div>
