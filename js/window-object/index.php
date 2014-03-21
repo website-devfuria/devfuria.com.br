@@ -4,9 +4,6 @@
  * Nesta receita veremos as propriedades, métodos e eventos do objeto principal e que possue hierarquia mais alta na linguagem Javascript: window!
  *
  */
-/**
- * Includes
- */
 require "../../core/boot.php";
 $pagina = $model->getPagina("/js/window-object/");
 ?>
@@ -71,6 +68,15 @@ $pagina = $model->getPagina("/js/window-object/");
                                 <h3><code>document</code></h3>
                                 <p>A propriedade <code>document</code> é o segundo objeto mais importante pois ele representa
                                     o documento HTML.</p>
+
+                                <p>Antigamente (entre 2000 e 2010), era comum nos depararmos com o seguinte trecho:</p>
+
+                                <pre><code>window.document.getElementById('id-input');</code></pre>
+
+                                <p>Mas logo descobriu-se o atalho, e simplificamos para...</p>
+
+                                <pre><code>document.getElementById('id-input');</code></pre>
+
                             </li>
                             <li>
                                 <h3><code>location</code></h3>
@@ -165,6 +171,7 @@ $pagina = $model->getPagina("/js/window-object/");
     </p>
 </div>
 -->
+
                     </div>
 
                 </div><!-- Corpo da matéria -->

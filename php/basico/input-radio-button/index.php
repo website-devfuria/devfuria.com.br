@@ -16,7 +16,7 @@ $pagina = $model->getPagina("/php/basico/input-radio-button/");
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1><?php echo $pagina->titulo?></h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p>Veremos como enviar e receber dados através do controle</p>
                 <p>radio button (input type="radio")</p>
             </div>
@@ -54,6 +54,11 @@ $pagina = $model->getPagina("/php/basico/input-radio-button/");
 
                         <p>Radio buttons são controles de opção.</p>
 
+                        <p>
+                            Se precisar entender melhor sobre o controle veja a matéria
+                            <?php Aux::printAncora("/html-css/basico/formularios-web/#input-radio", "titulo"); ?>.
+                        </p>
+
                         <p>Abaixo vemos o formulário web no qual trabalharemos</p>
 
                         <div class="bs-example">
@@ -85,7 +90,7 @@ $pagina = $model->getPagina("/php/basico/input-radio-button/");
 </code></pre>
                         </div>
 
-                        <p>Repare que utilzamos a propriedade <code>name</code> igual para os 3 inputs.</p>
+                        <p>Repare que a propriedade <code>name</code> é idêntica para os três inputs.</p>
 
                     </div>
 
@@ -110,12 +115,12 @@ $pagina = $model->getPagina("/php/basico/input-radio-button/");
                         <p>Tudo bem, sem choro então. </p>
 
                         <pre><code>if (isset($_POST['band-rock'])) {
-    var_dump("escolheu ". $_POST['band-rock']);
+    var_dump("escolheu " . $_POST['band-rock']);
 } else {
     var_dump("não escolheu nenhuma banda de rock");
 }</code></pre>
 
-                        <p>Seguindo o mesmo estilo da mateŕia anterior, podemos encurtar o código. Exemplo:</p>
+                        <p>Seguindo o mesmo estilo da matéria anterior, podemos encurtar o código. Exemplo:</p>
 
                         <pre><code>$_POST['band-rock'] = ( isset($_POST['band-rock']) ) ? true : null;</code></pre>
 
@@ -190,26 +195,6 @@ $bandRock = "pink-floyd";
                             A linha estava comprida e dificultava a leitura do código, então eu formatei o HTML  de um
                             geito "maroto" só para o código ficar mais legível, mas não tome isso como um estilo, ok?
                         </p>
-
-                        <div class="alert alert-warning">
-                            <p>
-                                Essa matéria ficou bem suscinta! Curta, sem muito texto. Eu acho isso bom, pois podemos ir
-                                direto ao ponto.
-                            </p>
-
-                            <p>
-                                A matéria é curta porque isto é um curso, quero dizer, já vimos alguns detalhes em
-                                matérias anteriores e seria redundância (além de chato) falar deles novamente.
-                            </p>
-                            <p>
-                                Por outro lado, isto aqui também é a Internet. Quero dizer, você pode ter caído de
-                                paraquedas nesta página e ainda não teve a oportunidade de ver as outras matérias.
-                            </p>
-                            <p>
-                                Se este for o seu caso e se estiver sentindo com pouco explicação, entre em contato
-                                <span class="label label-info">feedback@devfuria.com.br</span>.
-                            </p>
-                        </div>
                     </div>
                     <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
