@@ -1,46 +1,29 @@
 <?php
 /**
- * RegExp
- */
-/**
- * Includes
+ * pattern.exec()
+ * expressões regulares, spattern.exec(), pattern.exec
  */
 require "../../../core/boot.php";
-$url = "/regexp/basico/pattern-exec/";
+$pagina = $model->getPagina("/regexp/basico/pattern-exec/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('pattern.exec()');
-        $core->head->setDescription('Dissecando a função pattern.exec() do JS. O método exec() executa uma pesquisa para um resultado em uma seqüência especificada. Retorna uma matriz de resultados, ou nulo.');
-        $core->head->setkeywords('expressões regulares, spattern.exec(), pattern.exec');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_ER;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>pattern.exec()</h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p>Dissecando a função do JS</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">22/07/2013</span>, escrito em <span class="label label-info">22/07/2013</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -221,22 +204,11 @@ if (resultado) {
                         <p>Lembre-se que se a expressão estiver sintaticamente errada ela interromperá a excução do script, logo, o uso dos blocos
                             de tratamento de erro (try cath) se faz necessário.</p>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_ER][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_ER, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

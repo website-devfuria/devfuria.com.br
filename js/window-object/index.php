@@ -1,30 +1,19 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * Explorando o objeto window em Javascript | window object
+ * Nesta receita veremos as propriedades, métodos e eventos do objeto principal e que possue hierarquia mais alta na linguagem Javascript: window!
+ *
  */
 require "../../core/boot.php";
-$url = "window-object";
+$pagina = $model->getPagina("/js/window-object/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Explorando o objeto window em Javascript | window object');
-        $core->head->setDescription('Nesta receita veremos as propriedades, métodos e eventos do objeto principal e que possue hierarquia mais alta na linguagem Javascript: window!');
-        $core->head->setkeywords('');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body class="receitas-body">
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Matéria -->
         <div class="container">
@@ -170,28 +159,24 @@ $url = "window-object";
 
                         <blockquote>
                             Fonte:
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" title="link-externo">
-                                Mozilla Developer Network / window object</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" title="link-externo">
+                                    Mozilla Developer Network / window object</a>
 
                         </blockquote>
 
-                        <!--                        <div class="alert alert-danger">
-                                                    <p>Se você procura a referência completa, acesse
-                                                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" title="link-externo">MDN / window object</a>
-                                                    </p>
-                                                </div>-->
+<!--
+<div class="alert alert-danger">
+    <p>Se você procura a referência completa, acesse
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" title="link-externo">MDN / window object</a>
+    </p>
+</div>
+-->
                     </div>
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <?php
-        $core->lista->label = ListaSecao::LABEL_GUIA_JS;
-        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_GUIA);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/guias/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/refers/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

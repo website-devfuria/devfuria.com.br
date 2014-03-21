@@ -56,15 +56,15 @@ define('DOMINIO', "www.devfuria.com.br");
 /**
  * Classes diversas
  */
-require (BASE_PATH . "/oop/Core.php");
+require (BASE_PATH . "/oop/Model.php");
+require (BASE_PATH . "/oop/Conteudo.php");
+require (BASE_PATH . "/oop/View.php");
+require (BASE_PATH . "/oop/Pagina.php");
+require (BASE_PATH . "/oop/Aux.php");
 require (BASE_PATH . "/oop/Head.php");
 require (BASE_PATH . "/oop/NavTop.php");
 require (BASE_PATH . "/oop/ListaSecao.php");
 require (BASE_PATH . "/oop/Paginacao.php");
-require (BASE_PATH . "/oop/Materia.php");
-require (BASE_PATH . "/oop/Aux.php");
-require (BASE_PATH . "/oop/gateways/Paginas.php");
-
 
 /**
  * Conexão dom DB
@@ -76,38 +76,10 @@ $pdo->exec("set names utf8");
 /**
  * Variáveis do sistema
  */
-$core = new Core();
+$model = new Model();
 
-#
-# Setando a lista (array) com todas as páginas do site
-#
-$model_paginas = new Paginas();
-$core->paginas = $core->criaArrayPaginas($model_paginas->getAll());
-//var_dump($core->paginas['html-css']);die();
+$conteudo = new Conteudo();
+$conteudo->paginas = $conteudo->criaArrayPaginas($model->getPaginaAll());
 
-$core->secoes = array(
-    Core::SECAO_JS => array(
-        "href" => "js",
-        "label" => "Javascript"
-    ),
-    Core::SECAO_HTML => array(
-        "href" => "html-css",
-        "label" => "HTML & CSS"
-    ),
-    Core::SECAO_PHP => array(
-        "href" => "php",
-        "label" => "PHP"
-    ),
-    Core::SECAO_LOG => array(
-        "href" => "logica-de-programacao",
-        "label" => "Lógica de Programação"
-    ),
-    Core::SECAO_MYSQL => array(
-        "href" => "mysql-sql",
-        "label" => "MySql & SQL"
-    ),
-    Core::SECAO_ER => array(
-        "href" => "regexp",
-        "label" => "RegExp"
-    )
-);
+$view = new View();
+$view->secoes = $model->getArrSecoes();

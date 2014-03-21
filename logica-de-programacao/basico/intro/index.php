@@ -1,31 +1,18 @@
 <?php
 /**
- * Lógica
- */
-/**
- * Includes
+ * Matéria introdutória sobre Lógica de Programação
+ * introdução a lógica de programação, lógica de programação, aprendendo lógica de programação
  */
 require "../../../core/boot.php";
-$url = "/logica-de-programacao/basico/intro/";
+$pagina = $model->getPagina("/logica-de-programacao/basico/intro/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Matéria introdutória sobre Lógica de Programação');
-        $core->head->setDescription('Matéria que introduz o curso de Lógica de Programação aqui no devfuria.com.br');
-        $core->head->setkeywords('introdução a lógica de programação, lógica de programação, aprendendo lógica de programação');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -36,11 +23,7 @@ $url = "/logica-de-programacao/basico/intro/";
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">25/07/2012</span>, escrito em <span class="label label-info">20/12/2013</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -128,21 +111,11 @@ $url = "/logica-de-programacao/basico/intro/";
                             </div>
                         </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

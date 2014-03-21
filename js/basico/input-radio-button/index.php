@@ -1,47 +1,30 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * JavaScript e Radio Buttons
+ *
  */
 require "../../../core/boot.php";
-$url = "/js/basico/input-radio-button";
+$pagina = $model->getPagina("/js/basico/input-radio-button/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('JavaScript e Radio Buttons');
-        $core->head->setDescription('Agrupar radios buttons com o mesmo nome e descobrir se está checked');
-        $core->head->setkeywords('');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Manipulando radios buttons com JavaScript</h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p><code>radios[i].checked = true;</code></p>
                 <p><code>radios[i].checked = false;</code></p>
-                <p></p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">13/03/2014</span>, escrito em <span class="label label-info">13/03/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -149,7 +132,7 @@ $url = "/js/basico/input-radio-button";
 
                         <ol>
                             <li>Pegue os radios buttons do mesmo grupo</li>
-                            <li>Percorendo cada radio (laço)...</li>
+                            <li>Perconteudondo cada radio (laço)...</li>
                             <li>diga se está ou não "checado"</li>
                         </ol>
 
@@ -396,30 +379,11 @@ document.getElementById("btnLoad").onclick = function() {
                         <p>Se preferir acesse o <a href="https://gist.github.com/flaviomicheletti/9533196" title="link-externo">Gist</a>.</p>
 
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1></h1>
-                        <?php
-                        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
-                        $core->lista->link_ativo = $url;
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

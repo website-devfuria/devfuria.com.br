@@ -1,47 +1,30 @@
 <?php
 /**
- * HTML & CSS
- */
-/**
- * Includes
+ * Elementos in-line e elementos block-level
+ * html in-line, html block, tag inline, tag block level
  */
 require "../../../core/boot.php";
-$url = "/html-css/basico/elementos-inline-block-level/";
+$pagina = $model->getPagina("/html-css/basico/elementos-inline-block-level/");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Elementos in-line e elementos block-level');
-        $core->head->setDescription('O objetivo da matéria é entender as diferenças entre os dois tipos');
-        $core->head->setkeywords('html in-line, html block, tag inline, tag block level');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Elementos in-line e elementos block-level</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>O objetivo da matéria é entender as diferênças entre os dois tipos</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">11/02/2013</span>, escrito em <span class="label label-info">23/01/2013</span>.
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container" id="materia">
@@ -145,23 +128,11 @@ span, img, a {
                         <p>Essa matéria é curtinha, mas não se engane, seguir em frente sem entender (de verdade) é perca de tempo,
                             aproveite para praticar e como exercício crie algum HTML com a CSS desse exemplo para firmar o conceito.</p>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
-
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_HTML, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

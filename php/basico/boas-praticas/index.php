@@ -1,47 +1,31 @@
 <?php
 /**
- * PHP
- */
-/**
- * Includes
+ * Boas práticas para quem está começando em PHP
+ * boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação, underline,
+ * undersconteudo, camelcase
  */
 require "../../../core/boot.php";
-$url = "/php/basico/boas-praticas/"
+$pagina = $model->getPagina("/php/basico/boas-praticas/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Boas práticas para quem está começando em PHP ');
-        $core->head->setDescription('Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.' .
-                "Veremos 4 conceitos básicos: endentação, nomeação, comentários e estilos.");
-        $core->head->setkeywords('boas práticas, endentação, nomeação de código, comentando código fonte, estilo de codificação, underline, underscore, camelcase');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Antes de enfiar o pé na jaca</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Aprenda o básico das boas práticas.</p>
                 <p>São quatro dicas essenciais para quem está começando a programar</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">11/09/2012</span>, escrito em <span class="label label-info">05/06/2012</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
 
         <!-- Matéria -->
@@ -169,7 +153,7 @@ else
                                 é uma arte</strong>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de <code>nome</code>
                             ser diferente de <code>Nome</code>, no caso estou me referindo ao <strong>sensitive case (caixa sensível)</strong>. Existem também regras gerais e
                             bastante disseminadas como, por exemplo, o <strong>camel case</strong> que diz para colocar em maiúscula  a letra da segunda palavra
-                            (<code>umExemplo</code>). Há também o <strong>underline</strong> ou <strong>underscore</strong> para separar os nomes das variáveis (outro&#95;exemplo). Há alguns
+                            (<code>umExemplo</code>). Há também o <strong>underline</strong> ou <strong>undersconteudo</strong> para separar os nomes das variáveis (outro&#95;exemplo). Há alguns
                             estilo que diz para reservar três caracteres ao começo do nome da variável para identificar o tipo, mas como eu disse é
                             apenas um estilo.</p>
 
@@ -379,22 +363,11 @@ elseif(  (condition3)&&(condition4)  ){
 
                         <p>... e seja feliz!</p>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_PHP][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_PHP, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

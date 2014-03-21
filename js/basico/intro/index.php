@@ -1,47 +1,29 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * Javascript: Introdução a linguagem de programação Javascript
+ * iniciando em javascript, aprendendo javascript, começando com javascript
  */
 require "../../../core/boot.php";
-$url = "/js/basico/intro";
+$pagina = $model->getPagina("/js/basico/intro/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Javascript: Introdução a linguagem de programação Javascript');
-        $core->head->setDescription('Uma introdução ao Javascript. Acompanha 2 script para quebrar o gelo');
-        $core->head->setkeywords('iniciando em javascript, aprendendo javascript, começando com javascript');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Introdução ao Javascript</h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p>Acompanha um pequeno script de exemplo para quebrar o gelo..</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">08/11/2012</span>, escrito em <span class="label label-info">08/10/2012</span>.
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -334,37 +316,22 @@ element.onclick = function() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
-                </div>
-            </div><!-- Corpo da matéria -->
-        </div><!-- row -->
-    </div><!-- Matéria -->
-
-    <?php
-    $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
-    $core->lista->link_ativo = $url;
-    include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-    ?>
-
-    <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
-    <script type="text/javascript">
-        var element = document.getElementById('myimage');
-        element.onclick = function() {
-            if (element.src.match("bulbon")) {
-                element.src = "pic_bulboff.gif";
-            } else {
-                element.src = "pic_bulbon.gif";
-            }
-        };
-    </script>
-</body>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+        </div><!-- Matéria -->
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+        <script type="text/javascript">
+            var element = document.getElementById('myimage');
+            element.onclick = function() {
+                if (element.src.match("bulbon")) {
+                    element.src = "pic_bulboff.gif";
+                } else {
+                    element.src = "pic_bulbon.gif";
+                }
+            };
+        </script>
+    </body>
 </html>

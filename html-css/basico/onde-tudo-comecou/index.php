@@ -1,48 +1,30 @@
 <?php
 /**
- * HTML & CSS
- */
-/**
- * Includes
+ * Introdução ao HTML e ao CSS
+ * começando com HTML, começando com CSS, corpo do html, tags básicas de HTML, firbug, webdeveloper
  */
 require "../../../core/boot.php";
-$url ="/html-css/basico/onde-tudo-comecou/";
+$pagina = $model->getPagina("/html-css/basico/onde-tudo-comecou/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Introdução ao HTML e ao CSS');
-        $core->head->setDescription('Aprenda sobre: tags básicas de HTML, corpo de HTML, CSS, seletores, propriedades e ferramentas que ajudam no desenvolvimento');
-        $core->head->setkeywords('começando com HTML, começando com CSS, corpo do html, tags básicas de HTML, firbug, webdeveloper');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Onde tudo começou</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Veremos a essência de um arquivo HTML e</p>
                 <p>como estilizá-lo usando CSS.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">14/02/2014</span>, escrito em <span class="label label-info">23/01/2013</span>.
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -329,7 +311,7 @@ $url ="/html-css/basico/onde-tudo-comecou/";
 
                         <blockquote>
                             <p>Folha de estilo em cascata é um mecanismo simples para adicionar estilos
-                                ( por exemplo: fontes, cores, espaçamentos) aos documentos web.
+                                ( por exemplo: fontes, conteudos, espaçamentos) aos documentos web.
                                 <small>Fonte: W3c</small></p>
                         </blockquote>
 
@@ -362,7 +344,7 @@ $url ="/html-css/basico/onde-tudo-comecou/";
     o tamanho da fonte em <em>12px</em>
     sua cor deve ser um tom de cinza meio escuro</code></pre>
 
-                        <p>As cores podem ser representadas por números hexadecimais ou no esquema RGB. Cores é outro assunto que
+                        <p>As conteudos podem ser representadas por números hexadecimais ou no esquema RGB. Conteudos é outro assunto que
                             veremos os detalhes em breve. Por hora vamos acreditar que o hexadecimal <code>767676</code>
                             precedido do sinal sharp <code>#</code> é equivalente a "um tom de cinza meio escuro"</p>
 
@@ -393,7 +375,7 @@ $url ="/html-css/basico/onde-tudo-comecou/";
                         <p><code>12px</code> e <code>#767676</code> são seus respectivos valores.
                             A regra CSS pode conter várias declarações separadas por ponto e vírgula.</p>
 
-                        <p>Obs: #767676 é um  hexadecimal representando uma cor (um cinza escuro). Há outras formas de referênciar as cores,
+                        <p>Obs: #767676 é um  hexadecimal representando uma cor (um cinza escuro). Há outras formas de referênciar as conteudos,
                             voltaremos nelas em breve.</p>
 
                         <p>Se uma imagem vale por mil palavras, vou lhe mandar 4 imagens, espero que valham 4 mil palavras...</p>
@@ -524,22 +506,11 @@ $url ="/html-css/basico/onde-tudo-comecou/";
                             </div>
                         </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_HTML, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

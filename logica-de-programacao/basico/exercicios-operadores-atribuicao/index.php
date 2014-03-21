@@ -1,31 +1,18 @@
 <?php
 /**
- * Lógica
- */
-/**
- * Includes
+ * Exercícios de lógica de programação envolvendo operadores de atribuição
+ * exercícios de lógica de programação, começando com lógica de programação, exercícios resolvidos de lógica de programação; operadores de atribuição
  */
 require "../../../core/boot.php";
-$url = "exercicios-operadores-atribuicao";
+$pagina = $model->getPagina("/logica-de-programacao/basico/exercicios-operadores-atribuicao/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Exercícios de lógica de programação envolvendo operadores de atribuição');
-        $core->head->setDescription('Exercícos de lógica de programação com respostas (sobre operadores de atribuição)');
-        $core->head->setkeywords('exercícios de lógica de programação, começando com lógica de programação, exercícios resolvidos de lógica de programação; operadores de atribuição');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -36,11 +23,7 @@ $url = "exercicios-operadores-atribuicao";
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">11/08/2013</span>, escrito em <span class="label label-info">05/06/2013</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -826,21 +809,11 @@ FIM</code></pre>
                             </div>
                         </div><!--acordion -->
                     </div><!--seção -->
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

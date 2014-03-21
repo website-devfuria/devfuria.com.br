@@ -1,48 +1,30 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * Refatorando o código da matéria "Code - A lâmpada"
+ * refatoração, oop
  */
 require "../../../core/boot.php";
-$url = "/js/basico/code-lampadas-refatorando/";
+$pagina = $model->getPagina("/js/basico/code-lampadas-refatorando/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Refatorando o código da matéria "Code - A lâmpada"');
-        $core->head->setDescription('Matéria onde mostramos a prática de organizar e refatorar o código JS.');
-        $core->head->setkeywords('refatoração, oop');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Code - A lâmpada (refatorando)</h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p>Em matérias anteriores vimos o básico do OOP, refatoração e código limpo.</p>
                 <p>Nesta matéria vamos praticar tudo isso!</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">07/02/2014</span>, escrito em <span class="label label-info">08/07/2013</span>.
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -393,21 +375,11 @@ lampada.setEvento();</code></pre>
 
                         <p>Agora chega de lâmpadas, na próxima matéria mudaremos o assunto, até lá.</p>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_JS][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_JS, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

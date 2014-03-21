@@ -1,45 +1,29 @@
 <?php
 /**
- * HTML & CSS
- */
-/**
- * Includes
+ * Formulários Web e seus controles
+ * formulários web; controles web; input; input file; textbox; combobox; listbox
  */
 require "../../../core/boot.php";
-$url = "/html-css/basico/formularios-web/";
+$pagina = $model->getPagina("/html-css/basico/formularios-web/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Formulários Web e seus controles');
-        $core->head->setDescription('Matéria demonstrando os controles básicos de HTML: input, select, textarea, etc...');
-        $core->head->setkeywords('formulários web; controles web; input; input file; textbox; combobox; listbox');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Formulários Web e seus controles</h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p>Veremos os controles básicos de HTML</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">06/01/2014</span>, escrito em <span class="label label-info">06/01/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -374,12 +358,6 @@ $url = "/html-css/basico/formularios-web/";
                     </div>
 
                     <p>Nas matérias posteriores nós veremos cada controle detalhadamente.</p>
-
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_HTML][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
@@ -400,16 +378,11 @@ $url = "/html-css/basico/formularios-web/";
                             </div>
                         </div>
                     </div>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <?php
-        $core->lista->setLinks($core->paginas, Core::SECAO_HTML, Core::SUB_SECAO_CURSO);
-        $core->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

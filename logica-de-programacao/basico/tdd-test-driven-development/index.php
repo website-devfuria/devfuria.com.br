@@ -1,31 +1,18 @@
 <?php
 /**
- * Lógica
- */
-/**
- * Includes
+ * Matéria introdutória sobre TDD e Lógica de Programação
+ * tdd, aprendendo tddd, exercitando tdd, testes unitários, phpunit
  */
 require "../../../core/boot.php";
-$url = "/logica-de-programacao/basico/tdd-test-driven-development/";
+$pagina = $model->getPagina("/logica-de-programacao/basico/tdd-test-driven-development/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Matéria introdutória sobre TDD e Lógica de Programação');
-        $core->head->setDescription('Matéria que introduz o conceito e prática de TDD');
-        $core->head->setkeywords('tdd, aprendendo tddd, exercitando tdd, testes unitários, phpunit');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -348,21 +335,11 @@ $url = "/logica-de-programacao/basico/tdd-test-driven-development/";
                             </div>
                         </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = $url;
-                    $core->paginacao->descobrirAnteriorProxima($core->paginas[Core::SECAO_LOG][Core::SUB_SECAO_CURSO]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-            <?php
-            $core->lista->setLinks($core->paginas, Core::SECAO_LOG, Core::SUB_SECAO_CURSO);
-            $core->lista->link_ativo = $url;
-            include BASE_PATH . VIEWS_PATH . "/cursos/footer.php";
-            ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

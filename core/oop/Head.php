@@ -23,12 +23,8 @@ class Head {
         $this->keywords = $keywords;
     }
 
-    function setAuthor($author=null) {
-        if($author) {
-            $this->author = $author;
-        } else {
-            $this->author = "Flávio Alexandre Micheletti";
-        }
+    function setAuthor($author) {
+        $this->author = $author;
     }
 
 }
