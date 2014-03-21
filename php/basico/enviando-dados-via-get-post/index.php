@@ -1,6 +1,7 @@
 <?php
 /**
- *
+ * Enviando dados via GET e POST
+ * get post php, httpd methods, get, post, recebendo dados via post e get
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/php/basico/enviando-dados-via-get-post/");

@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * PHP - radio button
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/php/basico/input-radio-button/");

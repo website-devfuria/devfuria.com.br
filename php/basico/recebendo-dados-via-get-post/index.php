@@ -1,6 +1,7 @@
 <?php
 /**
- *
+ * Recebendo dados via GET e POST
+ * Matéria de php sobre as variáveis globais $_GET e $_POST.
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/php/basico/recebendo-dados-via-get-post/");

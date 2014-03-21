@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ *  PHP - input type check checkbox
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/php/basico/checkbox-checked/");

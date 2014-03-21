@@ -1,6 +1,7 @@
 <?php
 /**
- *
+ * Arrays
+ * array, array associativo, vetores, matrizes, arrays; explode; implode; array_in, foreach
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/php/basico/arrays-vetores-matrizes/");
@@ -16,9 +17,8 @@ $pagina = $model->getPagina("/php/basico/arrays-vetores-matrizes/");
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Arrays</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Como criar, iterar(foreach e while) e funções internas como "explode" e "implode".</p>
-                <p></p>
             </div>
         </div>
 

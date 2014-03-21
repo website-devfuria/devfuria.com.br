@@ -1,6 +1,7 @@
 <?php
 /**
- *
+ * Como funcionam os métodos GET e POST
+ * http; get; post; stateless
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/php/basico/metodo-http-get-post/");

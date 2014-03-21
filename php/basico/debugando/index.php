@@ -1,6 +1,7 @@
 <?php
 /**
- *
+ * Debugando seus scripts em PHP
+ * debugando código, depurando código, x-debug, var_dump, var_dump()
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/php/basico/debugando/");
