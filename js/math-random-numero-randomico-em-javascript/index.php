@@ -1,30 +1,17 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * Como gerar números aleatórios em Javascript!
  */
 require "../../core/boot.php";
-$url = "math-random-numero-randomico-em-javascript";
+$pagina = $model->getPagina("/js/math-random-numero-randomico-em-javascript/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $conteudo->head->setTitle('Geração de números aleatórios Javascript | Math.random()');
-        $conteudo->head->setDescription('');
-        $conteudo->head->setkeywords('');
-        $conteudo->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body class="receitas-body">
-
-        <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Matéria -->
         <div class="container">
@@ -156,13 +143,7 @@ $url = "math-random-numero-randomico-em-javascript";
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <?php
-        $conteudo->lista->label = ListaSecao::LABEL_GUIA_JS;
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_GUIA);
-        $conteudo->lista->link_ativo = $url;
-        include BASE_PATH . VIEWS_PATH . "/guias/footer.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/refers/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

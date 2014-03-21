@@ -2,9 +2,6 @@
 /**
  * HOME, index do site
  */
-/**
- * Includes
- */
 require "core/boot.php";
 ?>
 <!DOCTYPE html>
@@ -14,7 +11,7 @@ require "core/boot.php";
         $view->head->setTitle('Desenvolvimento Web');
         $view->head->setDescription('Cursos, aulas, tutoriais, apostilas, matérias sobre programação web prá ninguém botar defeito!');
 //        $view->head->setkeywords("aplicações web; webapp; app's; desenvolvimento; desenvolvimento web; website; cursos web; webstandards;  programação; aprendendo programação; aulas de programação; tutoriais; artigos;");
-//        $view->head->setAuthor();
+        $view->head->setkeywords("aplicações web; desenvolvimento web; cursos web; tutoriais; artigos;");
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
         <style type="text/css">
@@ -61,7 +58,7 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <?php
-                    $view->lista->label = ListaSecao::LABEL_CURSO_JS;
+                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_JS);
                     $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
                     include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                     ?>
@@ -77,7 +74,7 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <?php
-                    $view->lista->label = ListaSecao::LABEL_CURSO_PHP;
+                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_PHP);
                     $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::CATEGORIA_CURSO);
                     include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                     ?>
@@ -91,7 +88,7 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <?php
-                    $view->lista->label = ListaSecao::LABEL_CURSO_HTML;
+                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_HTML);
                     $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::CATEGORIA_CURSO);
                     include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                     ?>
@@ -105,7 +102,7 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <?php
-                    $view->lista->label = ListaSecao::LABEL_CURSO_LOG;
+                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_LOG);
                     $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
                     include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                     ?>
@@ -119,7 +116,7 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <?php
-                    $view->lista->label = ListaSecao::LABEL_CURSO_MYSQL;
+                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_MYSQL);
                     $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_MYSQL, Conteudo::CATEGORIA_CURSO);
                     include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                     ?>
@@ -133,7 +130,7 @@ require "core/boot.php";
             <div class="row">
                 <div class="col-md-12">
                     <?php
-                    $view->lista->label = ListaSecao::LABEL_CURSO_ER;
+                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_ER);
                     $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_ER, Conteudo::CATEGORIA_CURSO);
                     include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                     ?>

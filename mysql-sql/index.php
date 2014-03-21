@@ -1,9 +1,6 @@
 <?php
 /**
- * index MYSQL
- */
-/**
- * Includes
+ * MYSQL & SQL - index
  */
 require "../core/boot.php";
 ?>
@@ -11,16 +8,16 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $conteudo->head->setTitle('Mysql-SQL');
-        $conteudo->head->setDescription('Curso de SQL através do Mysql, descubra o que o SQL pode fazer por você.');
-        $conteudo->head->setkeywords("sql; mysql; sql básico; sql fácil; sql início; sql iniciante; " .
-            "sql iniciando; sql iniciante; começando com sql; começando no sql; " .
-            "sql descomplicado; aprendendo sql; matéria sobre sql; aula sobre sql; " .
-            "mysql básico; mysql fácil; mysql início; mysql iniciante; " .
-            "mysql iniciando; mysql iniciante; começando com mysql; começando no mysql; " .
-            "mysql descomplicado; aprendendo mysql; matéria sobre mysql; aula sobre mysql; "
-        );
-        $conteudo->head->setAuthor();
+        $view->head->setTitle('Mysql-SQL');
+        $view->head->setDescription('Curso de SQL através do Mysql, descubra o que o SQL pode fazer por você.');
+        $view->head->setkeywords("curso de mysql; curso de sql; curso gratuito de mysql");
+//        $view->head->setkeywords("sql; mysql; sql básico; sql fácil; sql início; sql iniciante; " .
+//            "sql iniciando; sql iniciante; começando com sql; começando no sql; " .
+//            "sql descomplicado; aprendendo sql; matéria sobre sql; aula sobre sql; " .
+//            "mysql básico; mysql fácil; mysql início; mysql iniciante; " .
+//            "mysql iniciando; mysql iniciante; começando com mysql; começando no mysql; " .
+//            "mysql descomplicado; aprendendo mysql; matéria sobre mysql; aula sobre mysql; "
+//        );
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
 
@@ -31,12 +28,10 @@ require "../core/boot.php";
                 color: #2F4F4F
             }
         </style>
-
     </head>
-
     <body>
         <?php
-        $conteudo->navtop->secao_ativa = Conteudo::SECAO_MYSQL;
+        $view->navtop->secao_ativa = Conteudo::SECAO_MYSQL;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
@@ -65,11 +60,10 @@ require "../core/boot.php";
                 <p>Seja bem vindo ao curso!</p>
             </div>
         </main>
-
         <?php
-        $conteudo->lista->label = ListaSecao::LABEL_CURSO_MYSQL;
-        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_MYSQL, Conteudo::CATEGORIA_CURSO);
-        include BASE_PATH . VIEWS_PATH . "/cursos/lista-secao.php";
+        $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_MYSQL);
+        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_MYSQL, Conteudo::CATEGORIA_CURSO);
+        include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>

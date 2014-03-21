@@ -83,5 +83,3 @@ $conteudo->paginas = $conteudo->criaArrayPaginas($model->getPaginaAll());
 
 $view = new View();
 $view->secoes = $model->getArrSecoes();
-
-

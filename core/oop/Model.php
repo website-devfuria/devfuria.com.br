@@ -27,6 +27,10 @@ class Model {
                 ->query("SELECT * FROM paginas WHERE url = '$url';")
                 ->fetch(\PDO::FETCH_OBJ);
 
+        if(!$pagina_db){
+            throw new Exception("Página não encontrada ($url)");
+        }
+
         return $this->fabricaPagina($pagina_db);
     }
 
@@ -84,7 +88,7 @@ class Model {
             $pagina->autor = $pagina_db->autor;
         } else {
             $pagina->autor = "Flávio Alexandre Micheletti";
-        }        
+        }
 
         return $pagina;
     }
