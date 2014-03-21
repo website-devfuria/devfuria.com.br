@@ -53,6 +53,11 @@ $pagina = $model->getPagina("/php/basico/input-radio-button/");
                         </div>
 
                         <p>Radio buttons são controles de opção.</p>
+                        
+                        <p>
+                            Se precisar entender melhor sobre o controle veja a matéria
+                            <?php Aux::printAncora("/html-css/basico/formularios-web/#input-radio", "titulo"); ?>.
+                        </p>
 
                         <p>
                             Se precisar entender melhor sobre o controle veja a matéria

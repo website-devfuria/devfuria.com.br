@@ -171,7 +171,6 @@ $pagina = $model->getPagina("/js/window-object/");
     </p>
 </div>
 -->
-
                     </div>
 
                 </div><!-- Corpo da matéria -->

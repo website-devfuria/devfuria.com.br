@@ -55,11 +55,7 @@ $pagina = $model->getPagina("/js/basico/input-radio-button/");
                         <p>O input radio é um controle de opções, é uma única escolha entre as opções possíveis.</p>
 
                         <p>O básico sobre o controle nós já vimos na matéria
-<<<<<<< HEAD
-                            <?php Aux::printAncora("/html-css/basico/formularios-web/#input-radio") ?></p>
-=======
                            <?php Aux::printAncora("/html-css/basico/formularios-web/#input-radio", "titulo") ?></p>
->>>>>>> master
 
                         <p>Se quiser ver uma prévia do que produziremos nesta matéria acesse o <a href="https://gist.github.com/flaviomicheletti/9533196" title="link-externo">Gist</a>.</p>
 
