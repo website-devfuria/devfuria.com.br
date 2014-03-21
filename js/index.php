@@ -3,8 +3,7 @@
  * JS - index
  */
 require "../core/boot.php";
-
-$curso = ($_SERVER['QUERY_STRING'] == "curso") ? true : false ;
+$curso = ($_SERVER['QUERY_STRING'] == "curso" || $_SERVER['QUERY_STRING'] == "") ? true : false ;
 ?>
 <!DOCTYPE html>
 <html lang="pt">
