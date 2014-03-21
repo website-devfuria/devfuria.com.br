@@ -1,4 +1,37 @@
-DROP TABLE paginas;
+CREATE TABLE IF NOT EXISTS `secoes` (
+  `id` int(11) NOT NULL,
+  `codigo` varchar(20) NOT NULL,
+  `href` varchar(255) NOT NULL,
+  `label` varchar(50) NOT NULL,
+  `ativo` tinyint(4) NOT NULL DEFAULT '1',
+  `ordem` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `codigo` (`codigo`,`href`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `secoes` (`id`, `codigo`, `href`, `label`, `ativo`, `ordem`) VALUES
+(1, 'html-css', 'html-css', 'HTML & CSS', 1, 1),
+(2, 'logica', 'logica-de-programacao', 'Lógica de Programação', 1, 2),
+(3, 'js', 'js', 'Javascript', 1, 3),
+(4, 'php', 'php', 'PHP', 1, 4),
+(5, 'mysql', 'mysql-sql', 'MySql & SQL', 1, 5),
+(6, 'regexp', 'regexp', 'RegExp', 1, 6);
+
+
+
+CREATE TABLE IF NOT EXISTS `categorias` (
+  `id` int(11) NOT NULL,
+  `codigo` varchar(20) NOT NULL,
+  `label` varchar(150) NOT NULL,
+  `ativo` tinyint(2) NOT NULL,
+  `ordem` int(11) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `categorias` (`id`, `codigo`, `label`, `ativo`, `ordem`) VALUES
+(1, 'curso', 'Cursos', 1, 1),
+(2, 'receitas-tuto-guia', 'Receitas, Tutoriais e Guia de Referência', 1, 2);
+
+
+
 CREATE TABLE IF NOT EXISTS `paginas` (
   `ordem` int(11) NOT NULL,
   `url` varchar(255) DEFAULT NULL,
@@ -16,6 +49,7 @@ CREATE TABLE IF NOT EXISTS `paginas` (
   KEY `secao` (`secao`),
   KEY `categoria` (`categoria`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `categoria`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) VALUES
 (3, '/html-css/basico/css-intro/', 'Primeiro contato com CSS', 'Primeiro contato com CSS', NULL, 'O básico do CSS', 'Aprendendo o básico do CSS, como unir o CSS ao documento HTML e cores em CSS.', 'html-css', 'curso', 'on', '2013-01-23', '2013-12-13', ''),
 (4, '/html-css/basico/elementos-inline-block-level/', 'Elementos in-line e elementos block-level', 'Elementos in-line e elementos block-level', NULL, 'Elementos in-line e elementos block-level', 'O objetivo da matéria é entender as diferenças entre os dois tipos', 'html-css', 'curso', 'on', '2013-01-23', '2013-02-11', ''),
@@ -46,7 +80,7 @@ INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaT
 (1, '/mysql-sql/basico/intro/', 'Banco de dados prá que?', 'Banco de dados prá que?', NULL, 'Matéria introdutória sobre SQL e Mysql', 'Aprenda os conceitos intuitivo de banco de dados, faremos a instalação do mysql e testes via console.', 'mysql', 'curso', 'on', '2013-06-05', '2013-09-11', ''),
 (2, '/mysql-sql/basico/primeiros-passos-mysql/', 'Primeiros passos com MySql', 'Primeiro passos com Mysql', NULL, 'Matéria pós-introdutória sobre SQL e Mysql', 'Aprenderemos a interpretar erros, show databases, use, outros comandos básicos, use e case insensitive.', 'mysql', 'curso', 'on', '2013-12-13', '2013-12-13', ''),
 (5, '/php/basico/arrays-vetores-matrizes/', 'Arrays (criando, iterando, funções, explode, implode)', 'Arrays', NULL, 'Arrays em PHP', 'Aprenda o básico de arrays em PHP, veremos como criar, iterar(foreach e while) e funções internas como ', 'php', 'curso', 'on', '2014-01-31', '2014-01-31', ''),
-(3, '/php/basico/boas-praticas/', 'Antes de enfiar o pé na jáca (boas práticas)', 'Antes de enfiar o pé na jaca', 'Boas práticas, essenciais, e que não podem faltar em seu repertório como programador. Veremos 4 conceitos básicos: endentação, nomeação, comentários e estilos.', 'Boas práticas para quem está começando em PHP ', 'Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.Veremos 4 conceitos básicos: endentação, nomeação, comentários e estilos.', 'php', 'curso', 'on', '2012-06-05', '2012-09-11', ''),
+(3, '/php/basico/boas-praticas/', 'Antes de enfiar o pé na jáca (boas práticas)', 'Antes de enfiar o pé na jaca', NULL, 'Boas práticas para quem está começando em PHP ', 'Boas práticas, essenciais, e que não podem faltar em seu repertório como programador.Veremos 4 conceitos básicos: endentação, nomeação, comentários e estilos.', 'php', 'curso', 'on', '2012-06-05', '2012-09-11', ''),
 (10, '/php/basico/checkbox-checked/', 'Manipulando check boxes', 'Manipulando check boxes com PHP', NULL, 'PHP - input type check checkbox', 'Controle de checkbox em PHP, verificar se os CheckBox foram marcados.', 'php', 'curso', 'on', '2014-02-27', '2014-02-27', ''),
 (4, '/php/basico/debugando/', 'Debugando (depurando)', 'Debugando (depurando)', NULL, 'Debugando seus scripts em PHP', 'Aprenda a debugar o código PHP utilizando var_dump() e x-debug. São formas rudimentares de debugação, porém sempre presente no dia a dia do programador.', 'php', 'curso', 'on', '2013-04-10', '2013-04-10', ''),
 (7, '/php/basico/enviando-dados-via-get-post/', 'Enviando dados para o script', 'Enviando dados para o script', NULL, 'Enviando dados via GET e POST', 'Estamos no navegador (cliente) criando dois tipos de requisições GET e POST', 'php', 'curso', 'on', '2014-01-30', '2014-01-30', ''),
@@ -54,7 +88,7 @@ INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaT
 (6, '/php/basico/metodo-http-get-post/', 'Como funcionam os métodos GET e POST', 'Como funcionam os métodos GET e POST', NULL, 'Como funcionam os métodos GET e POST', 'Introdução prática e descomplicada sobre o protocolo HTTP. Nosso objetivo é entender os métodos GET e POST.', 'php', 'curso', 'on', '2014-01-31', '2014-01-31', ''),
 (8, '/php/basico/recebendo-dados-via-get-post/', 'Recebendo dados', 'Recebendo dados via GET POST', NULL, 'Recebendo dados via GET e POST', 'Matéria de php sobre as variáveis globais $_GET e $_POST.', 'php', 'curso', 'on', '2014-01-30', '2014-01-30', ''),
 (9, '/php/basico/textbox-password-textarea/', 'Descobrindo os controles text, password e textarea', 'Descobrindo os controles text, password e textarea', NULL, 'PHP - input type text input type password textarea', 'Manipulando checkbox com PHP. Aprenda a marcar, gravar e exbibir os valores de uma checkbox.', 'php', 'curso', 'on', '2014-02-20', '2014-02-20', ''),
-(1, '/php/basico/um-bom-comeco/', 'Um bom começo', 'Um bom começo', NULL, 'Começando com PHP', 'Tenha um primeiro contato com a linguagem PHP, esta matéria é para quem nunca viu PHP ou para que não sabe nada sobre PHP', 'php', 'curso', 'on', '2012-06-05', '2012-09-11', ''),
+(1, '/php/basico/um-bom-comeco/', 'Um bom começo', 'Um bom começo', 'Introdução a linguagem PHP e ao desenvolvimento web.', 'Começando com PHP', 'Tenha um primeiro contato com a linguagem PHP, esta matéria é para quem nunca viu PHP ou para que não sabe nada sobre PHP', 'php', 'curso', 'on', '2012-06-05', '2012-09-11', ''),
 (1, '/regexp/basico/intro/', 'Introdução', 'O básico das Expressões Regulares', NULL, 'Introdução aos conceitos intuitivo de ER.', 'Aprenda o básico das Expressões Regulares para PHP e JS', 'regexp', 'curso', 'on', '2013-07-22', '2013-07-22', ''),
 (6, '/regexp/basico/new-regexp/', 'new RegExp() ', 'new RegExp()', NULL, 'Compilando Expressões Regulares', 'Essa matéria, curtinha diga-se de passagem, mostra como compilar uma ER.', 'regexp', 'curso', 'on', '2013-07-22', '2013-07-22', ''),
 (5, '/regexp/basico/pattern-exec/', 'pattern.exec() ', 'pattern.exec()', NULL, 'pattern.exec()', 'Dissecando a função pattern.exec() do JS. O método exec() executa uma pesquisa para um resultado em uma seqüência especificada. Retorna uma matriz de resultados, ou nulo.', 'regexp', 'curso', 'on', '2013-07-22', '2013-07-22', ''),
@@ -68,6 +102,7 @@ INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaT
 (10, '/js/basico/input-radio-button/', 'Manipulando radios buttons', 'Manipulando radios buttons com JavaScript', NULL, 'JavaScript e Radio Buttons', 'Agrupar radios com o mesmo nome e descobrir se está checked', 'js', 'curso', 'on', '2014-03-13', '2014-03-13', NULL),
 (11, '/php/basico/input-radio-button/', 'Manipulando radio buttons', 'Manipulando radio button com PHP', NULL, 'PHP -radio button', 'Tutorial de como trabalhar com radio buttons em formulários web.', 'php', 'curso', 'on', '2014-03-14', '2014-03-14', NULL),
 (2, '/js/window-object/', 'Explorando o objeto window em Javascript!', 'Explorando o objeto <code>window</code> em Javascript!', NULL, 'Explorando o objeto window em Javascript | window object', 'Nesta receita veremos as propriedades, métodos e eventos do objeto principal e que possue hierarquia mais alta na linguagem Javascript: window!', 'js', 'receitas-tuto-guia', 'on', '2014-03-17', '2014-03-17', NULL);
+
 ALTER TABLE `paginas`
   ADD CONSTRAINT `paginas_ibfk_1` FOREIGN KEY (`secao`) REFERENCES `secoes` (`codigo`),
   ADD CONSTRAINT `paginas_ibfk_2` FOREIGN KEY (`categoria`) REFERENCES `categorias` (`codigo`);
@@ -75,16 +110,5 @@ ALTER TABLE `paginas`
 
 
 
-CREATE TABLE IF NOT EXISTS `categorias` (
-  `id` int(11) NOT NULL,
-  `codigo` varchar(20) NOT NULL,
-  `label` varchar(150) NOT NULL,
-  `ativo` tinyint(2) NOT NULL,
-  `ordem` int(11) NOT NULL,
-  PRIMARY KEY (`codigo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-INSERT INTO `categorias` (`id`, `codigo`, `label`, `ativo`, `ordem`) VALUES
-(1, 'curso', 'Cursos', 1, 1),
-(2, 'receitas-tuto-guia', 'Receitas, Tutoriais e Guia de Referência', 1, 2);
-ALTER TABLE `paginas`
-ADD FOREIGN KEY ( `categoria` ) REFERENCES `devfuria_fulia`.`categorias` (`codigo`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
