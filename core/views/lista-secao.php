@@ -20,6 +20,20 @@
            class="list-group-item <?php echo (strstr($pagina->url, $view->lista->urlAtual)) ? "active" : null; ?>"
            >
             <?php echo $pagina->urlLabel ?>
+            <?php
+            $mesDiff = $pagina->retDiferencEntreHojeDtAtualizacao();
+            echo $mesDiff;
+            if ($mesDiff == 0) {
+                $css = "label-primary";
+            } else if ($mesDiff == 1 || $mesDiff == 2) {
+                $css = "label-info";
+            } else {
+                $css = "label-default";
+            }
+            ?>
+            <span class="label <?php echo $css; ?> pull-right">
+                <?php echo date("M-Y", strtotime($pagina->dtAtualizacao)); ?>
+            </span>
         </a>
     <?php endforeach; ?>
 </div>
