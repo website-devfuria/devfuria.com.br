@@ -34,12 +34,8 @@ $pagina = $model->getPagina("/php/basico/input-radio-button/");
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
                             <li><a href="#form-exemplo">Formulário de exemplo</a></li>
-                            <li>
-                                <a href="#recebendo-form">Recebendo o formulário web</a>
-                            </li>
-                            <li>
-                                <a href="#carregando-form">Carregando o formulário web</a>
-                            </li>
+                            <li><a href="#recebendo-form">Recebendo o formulário web</a></li>
+                            <li><a href="#carregando-form">Carregando o formulário web</a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,11 +49,6 @@ $pagina = $model->getPagina("/php/basico/input-radio-button/");
                         </div>
 
                         <p>Radio buttons são controles de opção.</p>
-                        
-                        <p>
-                            Se precisar entender melhor sobre o controle veja a matéria
-                            <?php Aux::printAncora("/html-css/basico/formularios-web/#input-radio", "titulo"); ?>.
-                        </p>
 
                         <p>
                             Se precisar entender melhor sobre o controle veja a matéria
@@ -119,7 +110,7 @@ $pagina = $model->getPagina("/php/basico/input-radio-button/");
 
                         <p>Tudo bem, sem choro então. </p>
 
-                        <pre><code>if (isset($_POST['band-rock'])) {
+                        <pre><code class="language-php">if (isset($_POST['band-rock'])) {
     var_dump("escolheu " . $_POST['band-rock']);
 } else {
     var_dump("não escolheu nenhuma banda de rock");

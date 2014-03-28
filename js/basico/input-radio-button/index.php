@@ -128,7 +128,7 @@ $pagina = $model->getPagina("/js/basico/input-radio-button/");
                             Se estiver checado, então nos avise.
                         </p>
 
-                        <p>Passando "à limpo" a idéia:</p>
+                        <p>Passando à limpo a idéia:</p>
 
                         <ol>
                             <li>Pegue os radios buttons do mesmo grupo</li>
@@ -324,7 +324,7 @@ for(var i = 0;  i < radios.length; i++) {
                         <p>
                             Dessa vez não brincaremos com um valor
                             <?php $pag = Aux::getPagina("/js/math-random-numero-randomico-em-javascript/"); ?>
-                            <a href="<?php echo LINKS_PATH . $pag->url ?>" title="<?php echo $pag->paginaTitulo ?>">randômico</a>,
+                            <a href="<?php echo LINKS_PATH . $pag->url ?>" title="<?php echo $pag->titulo ?>">randômico</a>,
                             vamos colocar um valor arbitrário, por exemplo <code>"led-zeppelin"</code>.
                         </p>
 
