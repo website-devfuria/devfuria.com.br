@@ -641,3 +641,11 @@ div.code pre em, div.code pre code em, pre em {
         margin-right: 0;
     }
 }
+
+/*
+ * Lista seção
+ */
+small.lista-secao {
+    color: #CCCCCC;
+    font-size: 0.9em;
+}

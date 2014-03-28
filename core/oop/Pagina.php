@@ -21,6 +21,21 @@ class Pagina {
     public $dtAtualizacao;
     public $autor;
 
+    public function getDtCriacao() {
+        return Aux::data_converte_para_visualizar($this->dtCriacao);
+    }
+
+    public function getDtAtualizacao() {
+        return Aux::data_converte_para_visualizar($this->dtAtualizacao);
+    }
+
+    function retDiferencEntreHojeDtAtualizacao() {
+        $datetime1 = new DateTime($this->dtAtualizacao);
+        $datetime2 = new DateTime(date("Y-m-d"));
+//        return $datetime1->diff($datetime2)->format('%R%a');
+        return $datetime1->diff($datetime2)->format('%m');
+    }
+
 }
 
 ?>
