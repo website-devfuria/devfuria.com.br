@@ -1,45 +1,29 @@
 <?php
 /**
- * PHP
- */
-/**
- * Includes
+ *
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/php/basico/instalando-o-ambiente/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Levantando um ambiente de programação (PHP)');
-        $core->head->setDescription('Aprenda a levantar seu ambiente de programação de forma descomplicada e sem sustos');
-        $core->head->setkeywords('instalando apache no linux, instalando mysql no linux, instalando phpmyadmin no linux, instalando php no linux, php.ini, x-debug, lamp ubuntu, lamp fedora');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Instalando o Ambiente no estilo NEXT, NEXT, NEXT.</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Vamos instalar o ambiente em nosso próprio desktop.</p>
                 <p>Alerta: esse não é o ideal... mas calma, estamos apenas começando</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">11/09/2012</span>, escrito em <span class="label label-info">05/06/2012</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
 
         <!-- Matéria -->
@@ -79,14 +63,14 @@ require "../../../core/boot.php";
                             </li>
                         </ul>
                     </div>
-                </div>        
+                </div>
 
                 <!-- Corpo da matéria -->
-                <div class="col-md-9" role="main">                
+                <div class="col-md-9" role="main">
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">Introdução</h1>
-                        </div>                         
+                        </div>
                         <p><strong>Todo programador precisa saber “levantar” seu próprio ambiente de trabalho</strong>, me refiro a instalar os programas necessários
                             para começar o desenvolvimento. Inclua na lista: o servidor web(apache), o módulo PHP, o banco de dados, a API (interface)
                             do banco de dados, o editor de código, o controlador de versão, a escolha do sistema operacional, etc... Após instalado
@@ -128,7 +112,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="massa">Botando a mão na massa</h1>
-                        </div> 
+                        </div>
 
                         <p>Não vou explicar em detalhes como fazer a instalação, já existe bons artigos sobre o assunto, veremos dicas práticas que
                             poderão lhe ajudar.</p>
@@ -139,7 +123,7 @@ require "../../../core/boot.php";
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Livro sobre o linux, autor Morimoto" src="linux-guia-pratico-morimoto.jpg">
                             <p>Ótimo livro para iniciantes no Linux</p>
-                        </div>                        
+                        </div>
 
                         <p>A primeira coisa que aprende-se sobre um sistema operacional é como instalá-lo. No caso do Linux, você terá que decidir
                             entre mais de 500 distribuições(versões).</p>
@@ -180,12 +164,12 @@ require "../../../core/boot.php";
                         <p>... e forneça a senha definida anteriormente. Os comandos apresentados na sequência consideram que você seja root ou
                             que utilize o "sudo". O sinal # no início de cada comando explicita o que eu acabei de falar, logo não é necessário
                             digitá-lo junto com o comando, rs.</p>
-                    </div>                 
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h2>Atualizando o sistema (via terminal)</h2>
-                        </div>                 
+                        </div>
 
                         <p>Abra o Ubuntu e digite:</p>
 
@@ -197,12 +181,12 @@ apt-get upgrade</code></pre>
                         <p>No Fedora também temos os comandos update e upgrade, porém eles fazem coisas diferentes. Eu aconselho a utilizar a
                             interface gráfica para atualizar o sistema.</p>
 
-                    </div>                 
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="apache">Instalando o Apache2</h1>
-                        </div>                 
+                        </div>
 
                         <p>No Ubuntu digite:</p>
 
@@ -217,12 +201,12 @@ systemctl start httpd.service
 
                         <p>Para ter certeza de que o apache foi instalado corretamente, abra um navegador qualquer é digite http://localhost. É
                             exibido uma página simples com a frase “It’s work”.</p>
-                    </div> 
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="php">Instalando o PHP</h1>
-                        </div>                 
+                        </div>
 
                         <p>Na sequência instalamos o php, no terminal do Ubuntu digite:</p>
 
@@ -274,7 +258,7 @@ echo phpinfo();
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="php-ini">Alterando o php.ini</h1>
-                        </div>                 
+                        </div>
 
                         <p>No terminal é possível utilizar alguns editores de textos como o "vi" (que já vem instalado) ou o "vim" e o "nano" (que
                             devem ser instalados). Eu gosto de utilizar o nano pois ele é mais fácil. Instale o "nano" digitando:</p>
@@ -311,7 +295,7 @@ systemctl start httpd.service // fedora
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="xdebug">Instalando o X-Debug</h1>
-                        </div>                 
+                        </div>
 
                         <p>O X-debug é uma ferramenta útil pra cara... Ele ajuda a formatar a saída dos dados e é possível utilizá-lo com a interface
                             do NetBeans. Neste momento, talvez você não entenda o que ele é, nem seu potencial, mas aproveite para instalá-lo agora.
@@ -347,7 +331,7 @@ systemctl restart httpd.service</code></pre>
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="mysql">Instalando o MySql</h1>
-                        </div>                 
+                        </div>
 
                         <p>Agora chegou a vez o banco de dados, instale o mysql no Ubuntu digitando...</p>
 
@@ -376,12 +360,12 @@ systemctl enable mysqld.service
 
                         <p>O sistema solicitará a senha, digite-a. Se estiver enchergando o prompt está tudo OK, digite "exit" para sair.</p>
 
-                    </div>  
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="phpmyadmin">Instalando o PhpMyAdmin</h1>
-                        </div>                 
+                        </div>
 
                         <p>Na sequência instale o phpmyadmin, este aplicativo é responsável por oferecer uma interface amigável de trabalho ao
                             usuário do banco.</p>
@@ -402,7 +386,7 @@ systemctl restart httpd.service
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="fechando">Fechando a conta</h1>
-                        </div>                 
+                        </div>
 
                         <p>Anotou tudo que instalamos até aqui? vamos lá:</p>
 
@@ -419,11 +403,15 @@ systemctl restart httpd.service
                         <p>Ufa!!! Mas ainda falta algumas "coisinhas". Ainda temos o editor de código, o controlador de versão, os navegadores e
                             seus plugins, e etc.. Só que neste ponto, a escolha dos aplicativos é uma questão pessoal, então fica apenas a sugestão.</p>
 
-                        <p>Como <strong>editor de código</strong> eu sugiro o <strong>Netbeans</strong>, ele é open source e tem umas funcionalidades muito interessantes. Para
+                        <p>
+                            Como <strong>editor de código</strong> eu sugiro o
+                            <strong><a href="http://pt.slideshare.net/slideshow/embed_code/32247784" title="link-externo">Netbeans</a></strong>
+                            , ele é open source e tem umas funcionalidades muito interessantes. Para
                             instalá-lo é preciso, primeiramente, ter o java (JDK) previamente instalado. Tente instalar a versão openJavaX (onde x
                             é a versão do java) via Softer Center (ainda estamos no ubuntu). Após isso, basta baixar o arquivo de instalação do
                             Netbeans, procure pela versão PHP que tem aproximadamente 50MB. É preciso dar permissão de execução no arquivo e em
-                            seguida executá-lo (obviamente).</p>
+                            seguida executá-lo (obviamente).
+                        </p>
 
                         <p>Como controlador de versão eu sugiro o <strong>svn</strong> que ainda é muito utilizado. Dá para instalar pelo repositório da distro, eu
                             utilizava o svn no windows e sentia falta de uma interface no nautilus (o gerenciador de arquivos do linux) então eu
@@ -433,49 +421,43 @@ systemctl restart httpd.service
                         <p>Como navegador eu sugiro o <strong>Firefox</strong> e não se esqueça dos plugins <strong>Firebug e WebDeveloper</strong> eles quebram um galho enorme.</p>
 
                         <p>Espero que você tenha sobrevivido.</p>
-                    </div>                 
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
                         </div>
 
                         <div class="panel panel-success">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Livros</h3>
                             </div>
-                            <div class="panel-body">                            
+                            <div class="panel-body">
                                 <div class="media">
-                                    <a class="pull-left">
+                                    <a class="pull-left" href="http://www.hardware.com.br/livros/linux/" title="link-externo">
                                         <img class="media-object" src="linux-guia-pratico-morimoto.jpg" alt="### Imagem do livro 'Linux Guia prático'">
                                     </a>
                                     <div class="media-body">
                                         <h4 class="media-heading">Linux Guia prático</h4>
                                         <p class="list-group-item-text">Morimoto</p>
-                                        <a href="http://www.hardware.com.br/livros/linux/" title="link-externo">http://www.hardware.com.br/livros/linux/</a>
-
                                     </div>
                                 </div>
                                 <div class="media">
-                                    <a class="pull-left">
+                                    <a class="pull-left" href="http://www.hardware.com.br/livros/entendendo-linux/" title="link-externo">
                                         <img class="media-object" src="entendendo-sm.jpg" alt="### Imagem do livro 'Linux, Entendendo o Sistema'">
                                     </a>
                                     <div class="media-body">
                                         <h4 class="media-heading">Linux, Entendendo o Sistema</h4>
                                         <p class="list-group-item-text">Morimoto</p>
-                                        <a href="http://www.hardware.com.br/livros/entendendo-linux/" title="link-externo">http://www.hardware.com.br/livros/entendendo-linux/</a>
-
                                     </div>
                                 </div>
                                 <div class="media">
-                                    <a class="pull-left">
+                                    <a class="pull-left" href="http://www.hardware.com.br/livros/dominando-linux/" title="link-externo">
                                         <img class="media-object" src="dominando-linux.jpg" alt="### Imagem do livro 'Entendendo e Dominando o Linux'">
                                     </a>
                                     <div class="media-body">
                                         <h4 class="media-heading">Entendendo e Dominando o Linux</h4>
                                         <p class="list-group-item-text">Morimoto</p>
-                                        <a href="http://www.hardware.com.br/livros/dominando-linux/" title="link-externo">http://www.hardware.com.br/livros/dominando-linux/</a>
-
                                     </div>
                                 </div>
                             </div>
@@ -495,32 +477,12 @@ systemctl restart httpd.service
                                 </div>
                             </div>
                         </div>
-                    </div>                         
-                    <?php
-                    $core->paginacao->link_ativo = "/php/basico/instalando-o-ambiente/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    </div>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>PHP</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_PHP);
-                        $core->lista->link_ativo = "/php/basico/instalando-o-ambiente/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

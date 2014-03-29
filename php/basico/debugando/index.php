@@ -1,45 +1,30 @@
 <?php
 /**
- * PHP
- */
-/**
- * Includes
+ * Debugando seus scripts em PHP
+ * debugando código, depurando código, x-debug, var_dump, var_dump()
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/php/basico/debugando/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Debugando seus scripts em PHP');
-        $core->head->setDescription('Aprenda a debugar o código PHP utilizando var_dump() e x-debug. São formas rudimentares de debugação, porém sempre presente no dia a dia do programador.');
-        $core->head->setkeywords('debugando código, depurando código, x-debug, var_dump, var_dump()');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Debugando (depurando)</h1>
+                <h1><?php echo $pagina->titulo?>)</h1>
                 <p>O primeiro passo para quem precisa "investigar" o que o computador está executando.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">10/04/2013</span>, escrito em <span class="label label-info">10/04/2013</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -141,7 +126,7 @@ die();
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Debugando com var_dump()" src="debug-var_dump.png" />
                             <p>Ilustração de como é exibido os dados COM var_dump()</p>
-                        </div>                        
+                        </div>
 
                         <p>É possível passar n variáveis, basta separá-las por vírgula.</p>
                     </div>
@@ -170,7 +155,7 @@ die();
                         <div class="bs-example">
                             <img class="img-rounded img-responsive" alt="### ###Debugando com echo" src="debug-erro.png">
                             <p>Erro exibido pelo x-debug!</p>
-                        </div>                        
+                        </div>
 
                         <ol>
                             <li>Temos o tipo de erro: Warning</li>
@@ -235,34 +220,13 @@ echo "&lt;/pre&gt;";
 print_r($_SERVER);
 echo "&lt;/pre&gt;";
 </code></pre>
-
                         <p>E aí, sentiu a diferença?</p>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "/php/basico/debugando/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>PHP</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_PHP);
-                        $core->lista->link_ativo = "/php/basico/debugando/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

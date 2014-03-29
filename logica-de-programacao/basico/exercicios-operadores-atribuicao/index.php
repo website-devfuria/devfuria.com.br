@@ -1,30 +1,18 @@
 <?php
 /**
- * Lógica
- */
-/**
- * Includes
+ * Exercícios de lógica de programação envolvendo operadores de atribuição
+ * exercícios de lógica de programação, começando com lógica de programação, exercícios resolvidos de lógica de programação; operadores de atribuição
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/logica-de-programacao/basico/exercicios-operadores-atribuicao/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Exercícios de lógica de programação envolvendo operadores de atribuição');
-        $core->head->setDescription('Exercícos de lógica de programação com respostas (sobre operadores de atribuição)');
-        $core->head->setkeywords('exercícios de lógica de programação, começando com lógica de programação, exercícios resolvidos de lógica de programação; operadores de atribuição');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -35,11 +23,7 @@ require "../../../core/boot.php";
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">11/08/2013</span>, escrito em <span class="label label-info">05/06/2013</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -78,7 +62,7 @@ require "../../../core/boot.php";
                             </li>
                             <li>
                                 <a href="#10">10) Juros simples</a>
-                            </li>                            
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -93,7 +77,7 @@ require "../../../core/boot.php";
                             <p>Escreva um algoritmo que armazene o valor 10 em uma variável denominada “num&#95;a” e
                                 também o valor 20 em uma variável denominada “num&#95;b”.
                                 Agora, (apenas com o uso de atribuições) passe o valor de num&#95;a para num&#95;b e imprima os resultados.</p>
-                        </div>                        
+                        </div>
                         <div class="panel-group" >
                             <div class="panel panel-info">
                                 <div class="panel-heading">
@@ -199,7 +183,7 @@ echo “$num_a, $num_b”;
                             <h1 id="02">Área Quadrada</h1>
                             <p>Escreva um algoritmo que mostre a área quadrada de um espaço qualquer
                                 (os valores desse espaço são atribuídos arbitrariamente pelo programador).</p>
-                        </div>                        
+                        </div>
                         <div class="panel-group" >
 
                             <div class="panel panel-info">
@@ -220,7 +204,7 @@ echo “$num_a, $num_b”;
                                         <p>Se este exercício estivesse escrito assim “escreva um algoritmo para calcular as área de um retângulo de dimensões
                                             quaisquer” ele teria a mesma solução, então vamos à ela.</p>
 
-                                        <p>Sabendo que temos que multiplicar dois números para encontrar o metro quadrado a solução aparece rapidamente...</p> 
+                                        <p>Sabendo que temos que multiplicar dois números para encontrar o metro quadrado a solução aparece rapidamente...</p>
                                     </div>
                                 </div>
 
@@ -247,19 +231,19 @@ $metro_quadrado = $lado_um * $lado_dois;
 
 echo $metro_quadrado; // mostra na tela “14”
 ?&gt;</code></pre>
-                                        </div>                                        
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                    </div><!--seção -->                    
+                    </div><!--seção -->
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="03">Média Simples</h1>
                             <p>Faça um programa que mostra a média simples (aritmética) de 3 valores quaisquer.</p>
-                        </div>                        
+                        </div>
                         <div class="panel-group" >
 
                             <div class="panel panel-info">
@@ -306,12 +290,12 @@ media = (valor1 + valor2 + valor3) / 3
 
 // exibir
 mostrar media // 20</code></pre>
-                                        </div>                                        
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                    </div><!--seção -->                 
+                    </div><!--seção -->
 
 
                     <div class="bs-docs-section">
@@ -319,7 +303,7 @@ mostrar media // 20</code></pre>
                             <h1 id="04">Eleitores e votos</h1>
                             <p>Sendo o número total de eleitores de um município = 25.639, o número de votos brancos = 1507, nulos = 2312 e
                                 válidos = 21.820. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.</p>
-                        </div>                        
+                        </div>
                         <div class="panel-group" >
 
                             <div class="panel panel-info">
@@ -377,12 +361,12 @@ perVotosValidos = 21.820 / total_eleitores * 100
 
 // Exibir resultado
 mostrar perVotosBrancos, perVotosNulos, perVotosValidos</code></pre>
-                                        </div>                                                                          
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                    </div><!--seção -->                 
+                    </div><!--seção -->
 
 
                     <div class="bs-docs-section">
@@ -390,7 +374,7 @@ mostrar perVotosBrancos, perVotosNulos, perVotosValidos</code></pre>
                             <h1 id="05">Salário e reajuste</h1>
                             <p>Faça um algoritmo que mostre e calcule o reajuste de um salário qualquer.
                                 O salário e o reajuste serão valores quaisquer e a saída mostrará o valor do reajuste e o salário reajustado.</p>
-                        </div>                        
+                        </div>
                         <div class="panel-group" >
 
                             <div class="panel panel-info">
@@ -439,19 +423,19 @@ salario_reajustado = salario + valor_reajuste
 mostrar valor_reajuste, salario_reajustado
 
 FIM</code></pre>
-                                        </div>                                                                          
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                    </div><!--seção --> 
+                    </div><!--seção -->
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="06">Dias e meses</h1>
                             <p>Calcular o total de dias de n meses, considerando que os meses tenham 30 dias.</p>
-                        </div>                        
+                        </div>
                         <div class="panel-group">
 
                             <div class="panel panel-info">
@@ -503,7 +487,7 @@ FIM</code></pre>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                    </div><!--seção --> 
+                    </div><!--seção -->
 
 
                     <div class="bs-docs-section">
@@ -511,7 +495,7 @@ FIM</code></pre>
                             <h1 id="07">Idade em dias</h1>
                             <p>Faça um algoritmo, sendo a data de nascimento um valor qualquer, que expresse a idade de uma pessoa em dias.</p>
 
-                        </div>                        
+                        </div>
                         <div class="panel-group">
 
                             <div class="panel panel-info">
@@ -572,12 +556,12 @@ data_atual_ano = 2012
 anos = data_atual_ano - data_nasc_ano
 total_meses = anos * 12
 total_meses = total_meses + anos</code></pre>
-                                        </div>                                                     
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                    </div><!--seção -->                     
+                    </div><!--seção -->
 
 
                     <div class="bs-docs-section">
@@ -587,7 +571,7 @@ total_meses = total_meses + anos</code></pre>
                                 (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escreva um
                                 algoritmo para calcular e escrever o custo final ao consumidor. Como custo de fábrica utilize um valor arbitrário,
                                 por exemplo, 20.000.</p>
-                        </div>                        
+                        </div>
                         <div class="panel-group">
 
                             <div class="panel panel-info">
@@ -669,20 +653,20 @@ custo_final = custo_final + (custo_fabrica * perc_impostos)
 mostrar custo_final
 
 FIM</code></pre>
-                                        </div>                                        
+                                        </div>
 
                                     </div>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                    </div><!--seção -->                     
+                    </div><!--seção -->
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="09">Antecessor e sucessor</h1>
                             <p>Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.</p>
-                        </div>                        
+                        </div>
                         <div class="panel-group">
                             <div class="panel panel-info">
                                 <div class="panel-heading">
@@ -732,19 +716,19 @@ numero_suc = numero + 1
 mostrar numero_suc, numero_ant
 
 FIM</code></pre>
-                                        </div>                                      
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                    </div><!--seção -->                 
+                    </div><!--seção -->
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="10">Juros Simples</h1>
                             <p>Calcular o juros simples produzido pelo empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.</p>
-                        </div>                        
+                        </div>
                         <div class="panel-group">
 
                             <div class="panel panel-info">
@@ -818,37 +802,18 @@ juros_simlpes = capital * taxa * periodo
 mostrar juros simples
 
 FIM</code></pre>
-                                        </div>                                        
+                                        </div>
 
                                     </div>
                                 </div>
                             </div>
                         </div><!--acordion -->
-                    </div><!--seção -->                
-                    <?php
-                    $core->paginacao->link_ativo = "exercicios-operadores-atribuicao";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                                  
+                    </div><!--seção -->
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Lógica de Programação</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                        $core->lista->link_ativo = "exercicios-operadores-atribuicao";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

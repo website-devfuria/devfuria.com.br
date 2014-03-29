@@ -1,45 +1,31 @@
 <?php
 /**
- * MySql
- */
-/**
- * Includes
+ * CRUD SQL
+ * crud, crud sql, create, read, update, delete
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/mysql-sql/basico/crud/");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('CRUD SQL');
-        $core->head->setDescription('Aprenda a fazer um CRUD (create, read, update, delete) com os comandos SQL');
-        $core->head->setkeywords('crud, crud sql, create, read, update, delete');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_MYSQL;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Entendendo o que é CRUD</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>CRUD não é para comer! Trata-se das 4 operações básicas de SQL:</p>
                 <p> create (insert), read (select), update, delete.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">27/01/2014</span>, escrito em <span class="label label-info">27/01/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -77,7 +63,7 @@ require "../../../core/boot.php";
                         </div>
 
                         <p>O CRUD é um acrônimo para  as 4 operações básicas de um banco de dados.</p>
-                        
+
                         <pre><code class='no-highlight'>creat = insert
 read = select
 update = update
@@ -85,27 +71,27 @@ delete = delete
 </code></pre>
                         <p>O quadro acima fará parte de seu dia a dia, a imagem abaixo também.</p>
 
-                        
+
                         <div class="bs-example">
                             <img class="img-rounded" alt="### figura ilustrando o CRUD;" src="crud.jpeg">
-                        </div>                         
-                        
+                        </div>
+
                         <p>Para começarmos a brincar com o CRUD precisamos nos logar no console do Mysql...</p>
 
                         <pre><code class="no-highlight">mysql -u root -p</code></pre>
-                        
+
                         <p>... e ativarmos a base que criamos:</p>
-                        
+
                         <pre><code class="no-highlight">USE devlabs;</code></pre>
-                        
+
                         <p>Na matéria passada nós criamos e populamos a tabela <code>pet</code>, ela será nosso objeto
                             de estudo. Você precisará dela se quiser acompanhar os exercícios</p>
 
                         <p>Para saber se você já possue a tabela, utilize o comando <code>SHOW TABLES;</code>
-                            
+
                         <p>Este <a href='https://gist.github.com/flaviomicheletti/8359890' title='link-externo'>Gist</a>
                             poderá te ajudar caso você queira criar rapidamente a tabela </p>
-                        
+
                         <p>Então vamos ao CRUD...</p>
 
                     </div>
@@ -220,7 +206,7 @@ delete = delete
                         <div class="bs-example">
                             <img class="img-rounded" alt="### figura ilustrando o resultado do comando SELECT * FROM pet WHERE species = 'cat';" src="select-pet-where-cat.png">
                             <p>Todos os cat's!</p>
-                        </div>                        
+                        </div>
 
                         <p>Quer saber quais são os dog's?</p>
 
@@ -231,10 +217,10 @@ delete = delete
                         <div class="bs-example">
                             <img class="img-rounded" alt="### figura ilustrando o resultado do comando SELECT * FROM pet WHERE species = 'dog';" src="select-pet-where-dog.png">
                             <p>Todos os dog's!</p>
-                        </div>                        
+                        </div>
 
                         <p>Uma dica importante é que a condição é uma expressão muito semelhante a utilizada em (qualquer)
-                            linguagem de programação, ou seja, também podemos utilizar <code>()</code> parênteses e 
+                            linguagem de programação, ou seja, também podemos utilizar <code>()</code> parênteses e
                             operadores lógicos como o <code>AND</code>. Em breve veremos mais sobre condições.</p>
 
                     </div>
@@ -272,7 +258,7 @@ delete = delete
 
                         <pre><code class="no-highlight">UPDATE pet SET birth = '1989-08-31', species = 'horse' WHERE name = 'Bowser';</code></pre>
 
-                        <p>Na construção de statement SQL devemos sempre nos preocupar com sua estética, pois isso 
+                        <p>Na construção de statement SQL devemos sempre nos preocupar com sua estética, pois isso
                             auxilia na sua legibilidade.</p>
 
                         <p>Veja como ficou o comando anterior.</p>
@@ -286,7 +272,7 @@ WHERE name = 'Bowser';</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### figura ilustrando o comando UPDATE no console;" src="update.png">
-                        </div>                          
+                        </div>
 
                     </div>
 
@@ -318,30 +304,11 @@ WHERE name = 'Bowser';</code></pre>
                         <pre><code class="no-highlight">DELETE FROM pet WHERE name = 'Slim';</code></pre>
 
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "/mysql-sql/basico/crud/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_MYSQL]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1></h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_MYSQL);
-                        $core->lista->link_ativo = "/mysql-sql/basico/crud/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

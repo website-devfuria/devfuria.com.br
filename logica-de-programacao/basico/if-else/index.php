@@ -1,30 +1,19 @@
 <?php
 /**
- * Lógica
- */
-/**
- * Includes
+ * Conceitos e exemplos do if-else para PHP
+ * if else php, expressões condicionais; estruturas de controle, if, else, elseif, diagrama de blocos,
+ * condicionais, operadores, valores booleanos, if else exemplos, desvio condicional
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/logica-de-programacao/basico/if-else/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Conceitos e exemplos do if-else para PHP');
-        $core->head->setDescription('Aprenda sobre a tomada de decisões no PHP com as estruturas de controle if, else e elseif.');
-        $core->head->setkeywords('if else php, expressões condicionais; estruturas de controle, if, else, elseif, diagrama de blocos, condicionais, operadores, valores booleanos, if else exemplos, desvio condicional');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -35,11 +24,7 @@ require "../../../core/boot.php";
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">20/12/213</span>, escrito em <span class="label label-info">20/12/213</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -67,7 +52,7 @@ require "../../../core/boot.php";
                                 <a href="#terceiro-else">if - else if - else</a>
                             </li>
                         </ul>
-                    </div>                    
+                    </div>
                 </div>
 
 
@@ -150,7 +135,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="aninha">Condicionais aninhados</h1>
-                        </div>                        
+                        </div>
 
                         <p>Quando temos um <code>if</code> dentro do outro.</p>
 
@@ -165,7 +150,7 @@ require "../../../core/boot.php";
 
                         <pre><code>if ($a && $b && $c) {
     ... código
-}</code></pre>                    
+}</code></pre>
 
                     </div>
 
@@ -272,7 +257,7 @@ if ( ! $variavel) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
                         </div>
 
                         <div class="panel panel-info">
@@ -296,39 +281,15 @@ if ( ! $variavel) {
                                         <p class="list-group-item-text">Link legal que mostra o if-else em diversas linguagens</p>
                                         <span class="label label-default">http://ifelse.com/</span>
                                     </a>
-                                    <a href="" class="list-group-item" title="link-externo">
-                                        <h4 class="list-group-item-heading"></h4>
-                                        <p class="list-group-item-text"></p>
-                                        <span class="label label-default"></span>
-                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>                        
-                    <?php
-                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/if-else/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    </div>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Lógica de Programação</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                        $core->lista->link_ativo = "/logica-de-programacao/basico/if-else/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

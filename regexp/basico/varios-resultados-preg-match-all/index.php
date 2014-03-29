@@ -1,45 +1,29 @@
 <?php
 /**
- * RegExp
- */
-/**
- * Includes
+ * PHP preg match all, preg-match-all, preg_math_all()
+ * expressões regulares, preg_math_all(), pre_match_all, preg match all, preg, match, all
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/regexp/basico/varios-resultados-preg-match-all/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('preg_math_all()');
-        $core->head->setDescription('Dissecando a função preg_math_all() do PHP, ela retonar um ou mais resultados.');
-        $core->head->setkeywords('expressões regulares, preg_math_all(), preg_math_all');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_ER;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Vários resultados - preg&#95;match&#95;all()</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Dissecando a função do PHP</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">30/01/2014</span>, escrito em <span class="label label-info">22/07/2013</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -56,7 +40,7 @@ require "../../../core/boot.php";
                                 <a href="#preg-match-all">preg&#95;math&#95;all()</a>
                             </li>
                         </ul>
-                    </div>                     
+                    </div>
                 </div>
 
                 <!-- Corpo da matéria -->
@@ -65,7 +49,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="quando">Quando precisamos dela?</h1>
-                        </div>                        
+                        </div>
 
                         <p>Se olharmos o primeiro exemplo da matéria anterior:</p>
 
@@ -110,7 +94,7 @@ if ($resultado === 1) {
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### apenas o primeiro resultado" src="php-preg-math.png" />
-                        </div>                         
+                        </div>
 
                         <p>Mas, se observarmos o exemplo lá no começo da matéria, a expressão casa com outras partes da string:</p>
 
@@ -124,7 +108,7 @@ if ($resultado === 1) {
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="preg-match-all">preg&#95;math&#95;all()</h1>
-                        </div> 
+                        </div>
 
 
                         <p>Uma saída é utilizar a função <code>preg&#95;math&#95;all()</code>, ela carregará a varirável <code>$retorno</code> com todos os resultados possíveis,
@@ -132,9 +116,9 @@ if ($resultado === 1) {
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### todos os resultados" src="php-preg-math-all.png" />
-                        </div>                          
+                        </div>
 
-                        <p>Segue o código alterado para a função preg&#95;math&#95;all():</p>
+                        <p>Segue o código alterado para a função <code>preg&#95;math&#95;all()</code>:</p>
 
                         <div class="code">
                             <h6>PHP</h6>
@@ -176,10 +160,10 @@ if ($resultado >= 1) {
                             encontradas, no exemplo o valor da variável <code>$resultado</code> é igual a 5 (pois temos cinco resultados).</p>
 
                     </div>
-                    
+
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
                         </div>
 
                         <div class="panel panel-info">
@@ -196,34 +180,12 @@ if ($resultado >= 1) {
                                 </div>
                             </div>
                         </div>
-                    </div>                    
-                    
-                    
-                    <?php
-                    $core->paginacao->link_ativo = "/regexp/basico/varios-resultados-preg-match-all/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_ER]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                        
+                    </div>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>RegExp</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_ER);
-                        $core->lista->link_ativo = "/regexp/basico/varios-resultados-preg-match-all/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

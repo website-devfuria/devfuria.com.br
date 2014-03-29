@@ -1,46 +1,28 @@
 <?php
 /**
- * HTML & CSS
- */
-/**
- * Includes
+ * Crie seu primeiro HTML
+ * primeiro HTML, exercício de HTML, csszengarden
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/html-css/basico/primeiro-html/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Crie seu primeiro HTML');
-        $core->head->setDescription('Aprenda a cirar um HTML de ótima qualidade, usaremos como base o HTML do site www.csszengarden.com');
-        $core->head->setkeywords('primeiro HTML, exercício de HTML, csszengarden');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Criando nosso primeiro HTML</h1>
-                <p></p>
+                <h1><?php echo $pagina->titulo?></h1>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">12/04/2013</span>, escrito em <span class="label label-info">12/04/2013. </span>
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -86,21 +68,20 @@ require "../../../core/boot.php";
                                 adequado para o conteúdo?</strong></p>
 
                         <p>Uma página da web, uma página de um portal ou uma página de um sistema web (nosso foco) é composta por algum tipo de
-                            conteúdo: texto, cores, links, imagens, gráficos, filmes, audio. Mas principalmente texto.</p>
+                            conteúdo: texto, conteudos, links, imagens, gráficos, filmes, audio. Mas principalmente texto.</p>
 
                         <p>Imagine que você irá construi apenas uma página simples. Você já possui o texto. Na verdade é tudo muito simples, teremos
                             apenas títulos e parágrafos.</p>
 
                         <p>Crie um arquivo chamado <code>zengarden-sample.html</code> e comece colando a estrutura básica do HTML.</p>
 
+
                         <div class="code">
                             <h6>HTML - Nossa estrutura básica </h6>
-                            <pre><code class="language-html">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-
-&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" &gt;
-
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
     &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
         &lt;title&gt;css Zen Garden: The Beauty in CSS Design&lt;/title&gt;
 
     &lt;/head&gt;
@@ -218,31 +199,11 @@ etc...</code></pre>
                             <p>Obs: A voz doce ao fundo é minha querida Joana.</p>
                         </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "/html-css/basico/primeiro-html/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>HTML & CSS</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
-                        $core->lista->link_ativo = "/html-css/basico/primeiro-html/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

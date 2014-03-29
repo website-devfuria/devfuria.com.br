@@ -1,28 +1,26 @@
 <?php
-/**
- * Lógica
- */
-/**
- * Includes
- */
 require "../../../core/boot.php";
+
+// Permanent redirection
+header("HTTP/1.1 301 Moved Permanently");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Exercício de lógica de programação');
-        $core->head->setDescription('Esta é uma página de redirecionamento');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('Exercício de lógica de programação');
+        $conteudo->head->setDescription('Esta é uma página de redirecionamento');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
+        <meta name="robots" content="noindex">
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
+        ?>
 
 
 <div class="jumbotron">
@@ -34,9 +32,8 @@ require "../../../core/boot.php";
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <h3>Lógica de programação</h3>
                             <?php
-                            $core->lista->setLinks($core->links, Core::SECAO_LOG);
+                            $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
                             include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                             ?>
                         </div>

@@ -1,45 +1,30 @@
 <?php
 /**
- * 
- */
-/**
- * Includes
+ * Como funcionam os métodos GET e POST
+ * http; get; post; stateless
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/php/basico/metodo-http-get-post/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Como funcionam os métodos GET e POST');
-        $core->head->setDescription('Introdição prática e descomplicada sobre o protocolo HTTP. Nosso objetivo é entender os métdos GEt e POST.');
-        $core->head->setkeywords('http; get; post;');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Como funcionam os métodos GET e POST</h1>
-                <p></p>
-                <p></p>
+                <h1><?php echo $pagina->titulo ?></h1>
+                <p>Um breve introdução ao protocolo HTTP</p>
+                <p>Entenda a questão da perda de estado (state less)</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">31/01/2014</span>, escrito em <span class="label label-info">31/01/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -62,6 +47,9 @@ require "../../../core/boot.php";
                             <li>
                                 <a href="#post">POST</a>
                             </li>
+                            <li>
+                                <a href="#stateless">Sem estado (state less)</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +67,7 @@ require "../../../core/boot.php";
                         <p>O protocolo HTTP é a roda que faz girar toda a internet, ele está na camada mais alta
                             do modelo OSI (não confuda OSI com ISO).</p>
 
-                        <p>O que é camada de rede? Espere aí, estamos fugindo do escopo deste artigo, mas é um 
+                        <p>O que é camada de rede? Espere aí, estamos fugindo do escopo deste artigo, mas é um
                             assunto básico (para quem está estudando redes de computadores), então fica a imagem só para
                             estigá-lo(a).</p>
 
@@ -88,7 +76,7 @@ require "../../../core/boot.php";
                             <p>
                                 <a href="http://tucones.blogspot.com.br/2010/11/redenetwork-explicacao-resumida-camada.html" title="link-externo" class="img-responsive">Fonte da imagem</a>
                             </p>
-                        </div>  
+                        </div>
 
                         <p>O HTTP trabalha com requisições (request) e respotas (response).</p>
 
@@ -103,10 +91,10 @@ require "../../../core/boot.php";
                             <p>
                                 <a href="http://marceloweb.info/principais-diferencas-entre-os-metodos-http-get-e-post/" title="link-externo" class="img-responsive">Fonte da imagem</a>
                             </p>
-                        </div> 
+                        </div>
 
                         <blockquote>
-                            <p>Se você digita um endereço na barra de endereço seu navegador e aperta a tecla enter o 
+                            <p>Se você digita um endereço na barra de endereço seu navegador e aperta a tecla enter o
                                 navegador faz uma requisição HTTP para o servidor do endereço digitado e o método dessa
                                 requisição é o GET.</p>
 
@@ -123,7 +111,7 @@ require "../../../core/boot.php";
                             <p>
                                 <a href="http://www.devmedia.com.br/como-funcionam-as-aplicacoes-web/25888" title="link-externo" class="img-responsive">Fonte da imagem</a>
                             </p>
-                        </div> 
+                        </div>
 
                         <p>Existem outros métodos além do GET e POST, veja o quadro abaixo.</p>
 
@@ -132,17 +120,17 @@ require "../../../core/boot.php";
                             <p>
                                 <a href="http://andreiabohner.org/symfony2docs/book/http_fundamentals.html" title="link-externo" class="img-responsive">Fonte da imagem</a>
                             </p>
-                        </div>                         
+                        </div>
 
                         <p>Eles servirão quando o assunto for sobre REST, por enquanto ficaremos apenas com GET e POST.</p>
 
-                    </div> 
+                    </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="requisicao">Requisição</h1>
-                        </div>                        
+                        </div>
 
                         <p>A requisição comprende três elementos:</p>
 
@@ -169,7 +157,7 @@ username=João da Silva</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="form.png">
-                        </div>                         
+                        </div>
 
                         <p>Repare que os campos viraram um par <code>nome=valor</code> no corpo do pedido.</p>
 
@@ -180,7 +168,7 @@ username=João da Silva</code></pre>
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="resposta">Resposta</h1>
-                        </div>                        
+                        </div>
 
                         <p>A resposta também comprende três elementos:</p>
 
@@ -233,39 +221,39 @@ Server: Apache/2.2.15 (CentOS
                                     <td>INTERNAL ERROR</td>
                                     <td class="text-left">O servidor encontrou uma condição inesperada que o impediu de satisfazer o pedido (às vezes acontecem coisas aos servidores…)</td>
                                 </tr>
-                            </table>                            
+                            </table>
                             <p>
-                                As descrições foram retiradas deste 
+                                As descrições foram retiradas deste
                                 <a href="http://pt.kioskea.net/contents/266-o-protocolo-http" title="link-externo" >artigo</a> (O cara foi "comédia")
                             </p>
-                        </div> 		 
+                        </div>
                     </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="get">GET</h1>
                         </div>
-                        
-                            <p>O método pode ser gerado por um formulário web e também por um link em sua página HTML.
-                                Ele de limite de capacidade e a URL só aceita (obviamente) strings,
-                                se você precisar passar arquivos deverá utilizar o POST.</p>
 
-                            <blockquote>
-                                <p>
-                                    O método GET utiliza a própria URI (normalmente chamada de URL) para enviar dados ao servidor, 
-                                    quando enviamos um formulário pelo método GET, o navegador pega as informações do formulário
-                                    e coloca junto com a URI de onde o formulário vai ser enviado e envia, separando o endereço
-                                    da URI dos dados do formulário por um “?” (ponto de interrogação).
-                                </p>
-                                <p><small>Fonte: http://www.comocriarsites.com/html/como-funciona-os-metodos-get-e-post-diferencas/</small></p>
-                            </blockquote>
+                        <p>O método pode ser gerado por um formulário web e também por um link em sua página HTML.
+                            Ele de limite de capacidade e a URL só aceita (obviamente) strings,
+                            se você precisar passar arquivos deverá utilizar o POST.</p>
 
-                            <p>Ao final da URL colocamos o sinal <code>?</code> e utilizamos a combinação <code>nome=valor</code> separados
-                                pelo sinal <code>&</code>.</p>
+                        <blockquote>
+                            <p>
+                                O método GET utiliza a própria URI (normalmente chamada de URL) para enviar dados ao servidor,
+                                quando enviamos um formulário pelo método GET, o navegador pega as informações do formulário
+                                e coloca junto com a URI de onde o formulário vai ser enviado e envia, separando o endereço
+                                da URI dos dados do formulário por um “?” (ponto de interrogação).
+                            </p>
+                            <p><small>Fonte: http://www.comocriarsites.com/html/como-funciona-os-metodos-get-e-post-diferencas/</small></p>
+                        </blockquote>
 
-                            <p>Também podemos utilizar o formulário web com a propriedade  <code>metho</code> "setada" como <code>get</code>, exemplo:</p>
+                        <p>Ao final da URL colocamos o sinal <code>?</code> e utilizamos a combinação <code>nome=valor</code> separados
+                            pelo sinal <code>&</code>.</p>
 
-                            <pre><code class="no-highlight">&lt;form method="get"&gt; </code></pre>
+                        <p>Também podemos utilizar o formulário web com a propriedade  <code>metho</code> "setada" como <code>get</code>, exemplo:</p>
+
+                        <pre><code class="no-highlight">&lt;form method="get"&gt; </code></pre>
                     </div>
 
                     <div class="bs-docs-section">
@@ -278,18 +266,37 @@ Server: Apache/2.2.15 (CentOS
                             URL e enviar tudo via AJAX, mas essa é história para outra matéria.</p>
 
                         <p>O método POST é mais seguro que o GET! <strong>Besteira, ele é tão inseguro quanto
-                            o GET.</strong> Só porque o usuário não vê os dados na URL não quer dizer que eles (os dados) estão protegidos.</p>
-                        
-                        <p>Se a questão é seguranca, eu posso de dar uma certeza: tem muita ladainha na net. Mas se quiser
-                            um lugar para começar, então veja o conteúdo da 
-                            <a href="https://www.owasp.org/index.php/Main_Page" title="link-externo">OWASP</a></p>
-                        
+                                o GET.</strong> Só porque o usuário não vê os dados na URL não quer dizer que eles (os dados) estão protegidos.</p>
+
+                        <p>Se a questão é seguranca, eu posso te dar uma certeza: tem muita ladainha na net. Mas se quiser
+                            um lugar para começar, então veja o conteúdo da
+                            <a href="https://www.owasp.org/index.php/Main_Page" title="link-externo">OWASP</a>.</p>
+
                         <p>Todo controle colocado dentro do formulário web com a propriedade <code>name</code> preenchida
                             gera um par <code>nome=valor</code> para ser enviado no servidor.</p>
-                        
+
                         <p>Na matéria seguinte veremos passo a passo como gerar as requisições, tanto em GET como em POST.</p>
 
                     </div>
+
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="stateless">Sem estado (state less)</h1>
+                        </div>
+
+                        <p>Eis o ponto central de uma aplicação web: ela é construida sobre um protocolo sem estado.</p>
+
+                        <p>Por "sem estado", qeremos dizer que cada requisição não tem conhecimento de outra requisição e
+                            isso muda tudo.</p>
+
+                        <p>Muda a lógica, muda a organização, muda a arquitetura.</p>
+
+                        <p>Você precisará entender e se acostumar com essa característica das aplicações web. Alias
+                            iremos conquistar isso na prática.</p>
+
+                    </div>
+
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -308,33 +315,14 @@ Server: Apache/2.2.15 (CentOS
                                         <span class="label label-default">http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html</span>
                                     </a>
                                 </div>
-                            </div>                        
-                        </div>                    
+                            </div>
+                        </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "/php/basico/metodo-http-get-post/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                            
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1></h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_PHP);
-                        $core->lista->link_ativo = "/php/basico/metodo-http-get-post/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

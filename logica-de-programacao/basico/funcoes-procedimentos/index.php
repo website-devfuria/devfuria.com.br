@@ -1,30 +1,18 @@
 <?php
 /**
- * Lógica/
- */
-/**
- * Includes
+ * Apendendo o básico sobre funções
+ * funções, procedimentos, funções em php, funções em javascript, aprendendo funções
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/logica-de-programacao/basico/funcoes-procedimentos/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Apendendo o básico sobre funções');
-        $core->head->setDescription('Como criar e utilizar funcções em PHP e Javascript, máteria de nível básico introduzindo uso de funções');
-        $core->head->setkeywords('funções, procedimentos, funções em php, funções em javascript, aprendendo funções');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -35,11 +23,7 @@ require "../../../core/boot.php";
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">09/01/2014</span>, escrito em <span class="label label-info">09/01/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -161,8 +145,11 @@ echo somarDoisNumeros(2, 4);
 }
 </code></pre></div>
 
-                        <p>Mas, essa forma não é usual. O mais comum é atribuírmos a função a uma variável, veja código
-                            abaixo:</p>
+                        <p>
+                            Essa forma não é usual, o mais comum é atribuírmos a função a uma variável. Essa técnica
+                            recebe o nome de <strong>função anônima</strong>. Repare que a função não possue nome algum,
+                            veja código abaixo:
+                        </p>
 
                         <div class="code">
                             <h6>Javascript</h6>
@@ -173,6 +160,7 @@ echo somarDoisNumeros(2, 4);
     // código
 }
 </code></pre></div>
+                        <p><code>foo</code> é o nome da variável e não o nome da função!</p>
 
                         <p>O <code>return</code> faz com que algum valor seja retornado e interrompe o funcionamento da
                             função.</p>
@@ -213,7 +201,7 @@ console.log(somarDoisNumeros(2, 4));
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
                         </div>
 
                         <div class="panel panel-info">
@@ -232,36 +220,17 @@ console.log(somarDoisNumeros(2, 4));
                                             <h4 class="list-group-item-heading">Manual do Javascript (MDN)</h4>
                                             <p class="list-group-item-text">...falando sobre funções</p>
                                             <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions</span>
-                                        </a>                                        
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Lógica de Programação</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                        $core->lista->link_ativo = "/logica-de-programacao/basico/funcoes-procedimentos/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

@@ -1,45 +1,29 @@
 <?php
 /**
- * PHP
- */
-/**
- * Includes
+ * Arrays
+ * array, array associativo, vetores, matrizes, arrays; explode; implode; array_in, foreach
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/php/basico/arrays-vetores-matrizes/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Arrays em PHP');
-        $core->head->setDescription('Aprenda o básico de arrays em PHP, veremos como criar, iterar(foreach e while) e funções internas como "explode" e "implode".');
-        $core->head->setkeywords('array, array associativo, vetores, matrizes, arrays; explode; implode; array_in, foreach');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Arrays</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Como criar, iterar(foreach e while) e funções internas como "explode" e "implode".</p>
-                <p></p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">31/01/2014</span>, escrito em <span class="label label-info">31/01/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -264,7 +248,7 @@ array_push($arr, 13);
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array04" src="array04.png">
-                        </div>                        
+                        </div>
 
                         <h3>foreach(os valores e as chaves)</h3>
 
@@ -275,32 +259,32 @@ array_push($arr, 13);
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array05" src="array05.png">
-                        </div>                        
+                        </div>
 
                         <h3>Iterando com while</h3>
 
                         <p>Tanto...</p>
-                        
+
                         <pre><code class="language-php">while ($cad_pos = current($arr)) {
     $key = key($arr);
     var_dump("$key - " . $posicoes[$key]);
     next($arr);
 }</code></pre>
-                        
+
                         <p>...quanto:</p>
-                        
+
                         <pre><code class="language-php">while ($cad_pos = current($arr)) {
     $key = key($arr);
     var_dump("$key - " . $cad_pos);
     next($arr);
 }</code></pre>
-                        
+
                         <p>Chegam no mesmo resultado:</p>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array05" src="array05.png">
-                        </div>                        
-                        
+                        </div>
+
                     </div>
 
 
@@ -361,12 +345,12 @@ var_dump($arr);</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array06" src="array06.png">
-                        </div>                         
+                        </div>
 
                         <h3>implode</h3>
 
                         <p>Tansforma array em string.</p>
-                        
+
                         <pre><code class="language-php">$arr = array("Flavio", "Alexandre", "Micheletti");
 $nomeCompleto = implode("-", $arr);
 var_dump($nomeCompleto)</code></pre>
@@ -375,7 +359,7 @@ var_dump($nomeCompleto)</code></pre>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### array07" src="array07.png">
-                        </div>                         
+                        </div>
                     </div>
 
                     <div class="bs-docs-section">
@@ -398,30 +382,11 @@ var_dump($nomeCompleto)</code></pre>
                             </div>
                         </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "/php/basico/arrays-vetores-matrizes/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1></h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_PHP);
-                        $core->lista->link_ativo = "/php/basico/arrays-vetores-matrizes/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

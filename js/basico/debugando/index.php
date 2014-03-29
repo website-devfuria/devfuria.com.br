@@ -1,46 +1,29 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * Aprenda a debugar seus scripts em Javascript, este é o primeiro passo na depurarção de código.
+ * debugando código js, depurando código js, firebug, alert
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/js/basico/debugando/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Debugando com Javascript');
-        $core->head->setDescription('Aprenda a debugar seus scripts em Javascript, este é o primeiro passo na depurarção de código.');
-        $core->head->setkeywords('debugando código js, depurando código js, firebug, alert');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Debugando (depurando) JS</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Aprenda a debugar o JS com FIREBUG.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">30/04/2013</span>, escrito em <span class="label label-info">10/04/2013</span>.
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -124,11 +107,10 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
                             <p>Fonte:<a href="http://vidadeprogramador.com.br/2011/08/19/erro-nao-documentado/" title="link-externo">Vida de programador</a></p>
                         </div>
 
-                        <p>Debugar é também sinônimo de teste. Porém "testes" é uma palavra com escopo ampliado.</p>
+                        <p>Superficialmente, <strong>debugar</strong> é sinônimo de teste, mas em essência são coisas
+                            totalmente diferentes. "Testes" é uma palavra com escopo ampliado.</p>
 
-                        <p>Veja o que a Wikipedia tem a nos dizer: <a href="http://pt.wikipedia.org/wiki/Teste_de_software" title="link-externo">http://pt.wikipedia.org/wiki/Teste&#95;de&#95;software</a></p>
-
-                        <p>Não vamos falar sobre testes agora, ok? Mas apenas formas simples de depuração.</p>
+                        <p>Veja o que a Wikipedia tem a nos dizer sobre testes: <a href="http://pt.wikipedia.org/wiki/Teste_de_software" title="link-externo">http://pt.wikipedia.org/wiki/Teste&#95;de&#95;software</a></p>
 
                     </div>
 
@@ -149,8 +131,8 @@ alert(minha_variavel);</code></pre>
                         </div>
 
 
-                        <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) através do método write() do
-                            objeto "document".</p>
+                        <p>Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML)
+                            através do método <code>write()</code> do objeto  nativo  <code>document</code>.</p>
 
                         <pre><code class="language-javascript">var minha_variavel = "Hello word";
 document.write(minha_variavel);</code></pre>
@@ -206,39 +188,25 @@ console.log(minha_variavel);</code></pre>
                             <h1 id="problemas">Como saber se o código não está com problemas ?</h1>
                         </div>
 
-                        <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a linguágem é interpretada, estou me referindo ao código que demosntra erros. <strong>E como demostrar os erros?</strong>.</p>
+                        <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a
+                            linguagem é interpretada, estou me referindo ao código trava por causa de um erro.
+                            <strong>E como demostrar os erros?</strong>.</p>
 
-                        <p>Quando executamos o arquivo (seja .html ou .php ou qualquer outra linguagem que vocẽ use) os erros podem não aparecerem, em outras palavra, alguns erros são "timidos". Para encorajá-los a sair da "toca" é preciso utilizar o console.log() e, obviamente, manter o firebug aberto.</p>
+                        <p>Quando executamos o arquivo (seja <code>.html</code> ou <code>.php</code> ou qualquer outra linguagem que você use) os
+                            erros podem não aparecerem, em outras palavra, alguns erros são "timidos". Para encorajá-los
+                            a sair da "toca" é preciso utilizar o <code>console.log()</code> e, obviamente, manter o Firebug aberto.</p>
 
                         <p>O teste mais básico que podemos fazer em um script JS é abrir o HTML, ligar o Firebug (acione a tecla F12), escolha a aba "console" e
-                            recarrega a página con a tecla F5 ( à vezes precisamos executar um CTRl + F5, isso força a atualização).</p>
+                            recarrega a página cmn a tecla F5 ( à vezes precisamos executar um CTRL + F5, isso força a atualização).</p>
 
                         <p>Se não aparecer nenhuma mensagem de erro, ótimo! Seu script está correto (pelo menos do ponto de vista da sintaxe).</p>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "js/basico/debugando/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Javascript</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_JS);
-                        $core->lista->link_ativo = "/js/basico/debugando/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
+</html>ody>
 </html>

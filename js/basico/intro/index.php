@@ -1,46 +1,29 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * Javascript: Introdução a linguagem de programação Javascript
+ * iniciando em javascript, aprendendo javascript, começando com javascript
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/js/basico/intro/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Introdução a linguagem de programação JAVASCRIPT');
-        $core->head->setDescription('Uma introdução ao Javascript. Acompanha 2 script para quebrar o \"gelo\"');
-        $core->head->setkeywords('iniciando em javascript, aprendendo javascript, começando com javascript');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Introdução ao Javascript</h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p>Acompanha um pequeno script de exemplo para quebrar o gelo..</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">08/11/2012</span>, escrito em <span class="label label-info">08/10/2012</span>.
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -68,7 +51,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="js-intro">Introdução</h1>
+                            <h2 id="js-intro">Introdução</h1>
                         </div>
 
                         <p><strong>Javascript(JS) não é brinquedo, é linguagem de programação séria</strong>.</p>
@@ -191,29 +174,32 @@ element.onclick = function() {
 
                         <div class="code">
                             <h6>HTML</h6>
-                            <pre><code class="language-html">&lt!DOCTYPE html&gt
-&lthtml&gt
-    &lthead&gt
-        &ltmeta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt
-        &lttitle&gtHello, World!&lt/title&gt
-    &lt/head&gt
-    &ltbody&gt
+                            <pre><code class="language-html">&lt!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello, World!&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
-        &ltimg id="myimage" src="../imagens/pic_bulboff.gif" alt="lampada"/&gt
-        &ltp&gtClick the light bulb to turn on/off the light&lt/p&gt
+        &lt;img id="myimage" src="pic_bulboff.gif" alt="lampada"/&gt;
+        &lt;p&gt;Click the light bulb to turn on/off the light&lt;/p&gt;
 
-        &ltscript type="text/javascript" src="codigo.js"&gt&lt/script&gt
+        &lt;script type="text/javascript" src="codigo.js"&gt;&lt;/script&gt;
 
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                         </div>
 
-                        <p>Temos uma tag "img" e seu atributo "src" que aponta para uma imagem no servidor. É nesse elemento que nossa lógica irá
-                            atuar. Presisamos "pegar" a imagem via JS, para tal utilizamos a função "getElementeById" (traduzindo: pegue o elemento
-                            pelo id) e armazenamos o resultado na variável "element". Até aqui tudo bem.</p>
+                        <p>Temos a tag <code>img</code> e seu atributo <code>src</code> que aponta para uma imagem no
+                            servidor. É nesse elemento que nossa lógica irá atuar. Presisamos "pegar" a imagem via JS,
+                            para tal utilizamos a função <code>getElementeById</code>
+                        </p>
+                        <p>A função pegará o elemento através de seu <code>id</code> e então poderemos armazenar o
+                            resultado na variável <code>element</code>. Até aqui tudo bem.</p>
 
-                        <p>Na sequência, atribuímos uma função para o evento "onclick" do elemento capurado. Não entendendeu como é feito isto?
-                            Veja o código de forma mais limpa:</p>
+                        <p>Na sequência, atribuímos uma função para o evento <code>onclick</code> do elemento capurado.
+                            Não entendendeu como é feito isto? Veja o código de forma mais limpa:</p>
 
                         <div class="code">
                             <h6>JS</h6>
@@ -224,20 +210,24 @@ element.onclick = function() {
 };</em></code></pre>
                         </div>
 
-                        <p>A função que embutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ela testa se o valor de "src" do
-                            elemento é igual a "bulbon". Se for, ele troca para "pic&#95;bulboff.gif", se não ele troca para "pic&#95;bulbon.gif".</p>
+                        <p>A função que embutimos faz exatamente o que a nossa lógica ditou: troca a imagem. Ela testa
+                            se o valor de <code>src</code> do elemento é igual a  string <code>"bulbon"</code>. Se for,
+                            ele troca para <code>"pic&#95;bulboff.gif"</code>, se não ele troca para <code>"pic&#95;bulbon.gif"</code>.
+                        </p>
 
-                        <p>E assim temos a impressão de acender e apagar a lâmpada.
-                            Isso é Javascript!</p>
+                        <p>Dessa forma, temos a impressão de acender e apagar a lâmpada.</p>
+
+                        <p>Isso é Javascript!</p>
 
                         <p>No curso, iremos estudar o JS em conjunto com suas irmãs (siamesas): HTML e CSS. O leitor deve ter certa familiaridade
                             com essas tecnologias porque, JS sem elas é hardware sem software.</p>
 
-                        <p>Este curso foi, inicialmente, idealizado para iniciantes em programaçã e pessoas autodidatas que nunca frenquentaram um
+                        <p>Este curso foi, inicialmente, idealizado para iniciantes em programação e pessoas autodidatas que nunca frenquentaram um
                             curso regular de informática. Se este for o seu caso, talvez lhe falte um pouco de lógica de programação, aconselho a
-                            fazer uma leitura atenta das 6 matérias do nível zero de PHP, afinal ĺógica é lógica em qualquer linguagem.</p>
+                            fazer uma leitura atenta das matérias da seção <strong>lógica de programação</strong>, afinal
+                            ĺógica é lógica em qualquer linguagem.</p>
 
-                        <p>Atualmente (set/2012) JS disponta como o principal alicerce de um desenvolvedor front-end(client-side). Desenvolver do
+                        <p>Atualmente (set/2012), JS disponta como o principal alicerce de um desenvolvedor front-end(client-side). Desenvolver do
                             lado do cliente, desenvolvedor de interfaces, engenheiro front-end. Seja lá qual for o nome, o fato é que cada vez mais
                             a atividade está se tornando uma profissão madura e respeitada (e bem remunerada).</p>
 
@@ -258,76 +248,90 @@ element.onclick = function() {
                         <p>JS é fantástico... e divertido! Seja bem vindo ao curso!</p>
 
 
-                        <div class="bs-docs-section">
-                            <div class="page-header">
-                                <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                    </div>
+
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                        </div>
+
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Livros</h3>
                             </div>
-
-                            <div class="panel panel-success">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Livros</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="media">
-                                        <a class="pull-left">
-                                            <img class="media-object" src="livro-simple-js.jpg" alt="### Imagem do livro 'Simple Javascript'">
-                                        </a>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Só Javascript (Simple Javascript)</h4>
-                                            <p class="list-group-item-text">Kevin e Cameron, Editora bookman</p>
-
-                                        </div>
-                                    </div>
-                                    <div class="media">
-                                        <a class="pull-left">
-                                            <img class="media-object" src="livro-melhor-js.jpg" alt="### Imagem do livro 'O Melhor do Javascript'">
-                                        </a>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">O Melhor do Javascript</h4>
-                                            <p class="list-group-item-text">Douglas Crockford, Editora Altabooks</p>
-                                        </div>
+                            <div class="panel-body">
+                                <div class="media">
+                                    <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857780542&ordem=prec#precos" title="link-externo">
+                                        <img class="media-object" src="livro-simple-js.jpg" alt="### Imagem do livro 'Simple Javascript'">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Só Javascript (Simple Javascript)</h4>
+                                        <p>Kevin e Cameron, Editora Bookman</p>
+                                        <p class="list-group-item-text">Esse livro é sensacional para quem está começando.</p>
+                                        <p class="list-group-item-text">A didádica tem começo, meio e fim.</p>
+                                        <p class="list-group-item-text">Nota 10, realmente muito bom.</p>
                                     </div>
                                 </div>
+                                <div class="media">
+                                    <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857608279&ordem=prec#precos" title="link-externo">
+                                        <img class="media-object" src="livro-melhor-js.jpg" alt="### Imagem do livro 'O Melhor do Javascript'">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">O Melhor do Javascript</h4>
+                                        <p>Douglas Crockford, Editora Altabooks</p>
+                                        <p class="list-group-item-text">Este livro não é recomendado para iniciantes, ele é nível avançado.</p>
+                                        <p class="list-group-item-text">Mas quem sou eu para subjulgar a sua capacidade?</p>
+                                        <p class="list-group-item-text">De qualquer forma é um livro para quem vai encarar o JS de verdade.</p>
+                                        <p class="list-group-item-text">Livro de cabeceira e indispensável.</p>
+                                    </div>
+                                </div>
                             </div>
-
+                        </div>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/JavaScript_Vis%C3%A3o_Geral" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Visão geral do Javascript (MDN)</h4>
+                                        <span class="label label-default">https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/JavaScript_Vis%C3%A3o_Geral</span>
+                                    </a>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Guia sobre o Javascript (MDN)</h4>
+                                        <p class="list-group-item-text">Guia oficial do Javascript.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide</span>
+                                    </a>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Referência Javascript (MDN)</h4>
+                                        <p class="list-group-item-text">Referência oficial do Javascript.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</span>
+                                    </a>
+                                    <a href="https://developer.mozilla.org/pt-BR/docs/JavaScript" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Javascript (MDN)</h4>
+                                        <p class="list-group-item-text">Página Index sobre o JS, possue muitos links interessantes.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/pt-BR/docs/JavaScript</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "/js/basico/intro";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
-                </div>
-            </div><!-- Corpo da matéria -->
-        </div><!-- row -->
-    </div><!-- Matéria -->
-
-    <footer class="bs-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Javascript</h1>
-                    <?php
-                    $core->lista->setLinks($core->links, Core::SECAO_JS);
-                    $core->lista->link_ativo = "/js/basico/intro/";
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
-    <script type="text/javascript">
-        var element = document.getElementById('myimage');
-        element.onclick = function() {
-            if (element.src.match("bulbon")) {
-                element.src = "pic_bulboff.gif";
-            } else {
-                element.src = "pic_bulbon.gif";
-            }
-        };
-    </script>
-</body>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+        </div><!-- Matéria -->
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+        <script type="text/javascript">
+            var element = document.getElementById('myimage');
+            element.onclick = function() {
+                if (element.src.match("bulbon")) {
+                    element.src = "pic_bulboff.gif";
+                } else {
+                    element.src = "pic_bulbon.gif";
+                }
+            };
+        </script>
+    </body>
 </html>

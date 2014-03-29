@@ -1,45 +1,30 @@
 <?php
 /**
- * 
- */
-/**
- * Includes
+ * Recebendo dados via GET e POST
+ * Matéria de php sobre as variáveis globais $_GET e $_POST.
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/php/basico/recebendo-dados-via-get-post/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Recebendo dados via GET e POST');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_PHP;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Recebendo dados via GET POST</h1>
+                <h1><?php echo $pagina->titulo?></h1>
                 <p>Estamos no lado do servidor recebendo os dados das requisições</p>
                 <p>GET e POST</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">30/01/2014</span>, escrito em <span class="label label-info">30/01/2014</span>.
-            </div>
-        </div>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -47,6 +32,26 @@ require "../../../core/boot.php";
 
                 <!-- navegação lateral esquerdo -->
                 <div class="col-md-3">
+                    <div class="bs-sidebar hidden-print" role="complementary">
+                        <ul class="nav bs-sidenav">
+                            <li><a href="#get-post">Apresento-lhes GET/POST!</a></li>
+                            <li>
+                                <a href="#sem-requisicao">Sem requisição</a>
+                            </li>
+                            <li>
+                                <a href="#key-nao-existe">Quando a key(chave) não existe</a>
+                            </li>
+                            <li>
+                                <a href="#checando">Checando o valor</a>
+                            </li>
+                            <li>
+                                <a href="#op-ternario">Incializando com operador ternário</a>
+                            </li>
+                            <li>
+                                <a href="#duplicando-variaveis">Duplicando as variáveis</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Corpo da matéria -->
@@ -54,7 +59,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2 id="">Senhoras e senhores, apresento-lhes o GET e o POST!</h2>
+                            <h2 id="get-post">Senhoras e senhores, apresento-lhes o GET e o POST!</h2>
                         </div>
 
                         <p><code>$_GET</code> e <code>$_POST</code> são variáveis globais, você poderá utilizá-las em
@@ -68,7 +73,7 @@ require "../../../core/boot.php";
 
                         <p>Ambas são do tipo <strong>array</strong>.</p>
 
-                        <h3>Sem requisição</h3>
+                        <h3 id="sem-requisicao">Sem requisição</h3>
 
                         <p>Se executarmos o script abaixo, veremos o resultado <code>array empty</code>, quer dizer
                             não houve requisição alguma.</p>
@@ -93,7 +98,7 @@ var_dump($_GET, $_POST);
                         <pre><code class="language-php">$_GET['nome'] = valor</code></pre>
 
 
-                        <h3>Quando a key(chave) não existe</h3>
+                        <h3 id="key-nao-existe">Quando a key(chave) não existe</h3>
 
                         <p>Quando executamos o script abaixo sem os devidos paramêtros...</p>
 
@@ -110,11 +115,7 @@ echo $_GET['foo'];
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### " src="undefined-index.png">
-                            <p></p>
-                            <p>Fonte:
-                                <a href="" title="link-externo" class="img-responsive"></a>
-                            </p>
-                        </div>   
+                        </div>
 
                         <p>E aí? Já sabe identificar o erro? O indice do array não foi definido (<strong>Undefined Index</strong>).</p>
 
@@ -141,11 +142,11 @@ echo $_GET['foo'];
 
                         <pre><code class="language-php">if(isset($_POST['foo'])) { echo $_POST['foo']; }</code></pre>
 
-                        <p>Voltamos a 1 única linha mas a legibilidade "foi pro saco".</p>
+                        <p>Voltamos a 1 única linha, mas a legibilidade "foi pro saco".</p>
 
 
 
-                        <h3>Incializando com operador ternário <code>(expressão) ? true : false ; </code></h3>
+                        <h3 id="op-ternario">Incializando com operador ternário <code>(expressão) ? true : false ; </code></h3>
 
                         <p>Uma variável pode ser inicaliza com o valor <code>null</code>, exemplo:</p>
 
@@ -227,7 +228,7 @@ echo $_POST['abacaxi'];
 
                         <p>Economizamos algumas linhas sem prejudicar a legibilidade (leia-se limpeza) do código.</p>
 
-                        <h3>Duplicando as variáveis</h3>
+                        <h3 id="duplicando-variaveis">Duplicando as variáveis</h3>
 
                         <p>Antigamente, a forma abaixo era muito usual.</p>
 
@@ -244,7 +245,7 @@ $pera    = ( isset($_POST['pera']) )    ? $_POST['pera']    : null;
 $abacaxi = ( isset($_POST['abacaxi']) ) ? $_POST['abacaxi'] : null;
 
 /*
- * Apartir deste ponto podemos utilizar o(s) array(s) sem medo
+ * Apartir deste ponto podemos utilizar as variáveis sem medo
  */
 echo $laranja;
 echo $banana;
@@ -256,14 +257,14 @@ echo $abacaxi;
 
                         <p>Mas ele duplica as variáveis.</p>
 
-                        <p>O sabora da laranja está tanto em <code>$_POST['laranja']</code> como em <code>$laranja</code></p>
+                        <p>O sabora da laranja está tanto em <code>$_POST['laranja']</code> como em <code>$laranja</code>.</p>
 
                         <pre><code class="language-php">echo $_POST['laranja'];
 echo $laranja</code></pre>
 
                         <p>Termemos o mesmo resultado.</p>
 
-                        <p>Se duplicar variáveis não um problema para você então para mim também não é.</p>
+                        <p>Se duplicar variáveis não for um problema para você então para mim também não é.</p>
 
 
                     </div>
@@ -284,61 +285,30 @@ echo $laranja</code></pre>
                                         <p>Falando sobre <code>$_POST</code></p>
                                         <span class="label label-default">http://www.php.net/manual/en/reserved.variables.post.php</span>
                                     </a>
-                                </div>
-                            </div>                        
-                            <div class="panel-body">
-                                <div class="list-group">
                                     <a href="http://php.net/manual/pt_BR/reserved.variables.get.php" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do PHP</h4>
                                         <p>Falando sobre <code>$_GET</code></p>
                                         <span class="label label-default">http://php.net/manual/pt_BR/reserved.variables.get.php</span>
                                     </a>
-                                </div>
-                            </div>                        
-                            <div class="panel-body">
-                                <div class="list-group">
                                     <a href="http://php.net/manual/pt_BR/language.operators.comparison.php" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do PHP</h4>
-                                        <p>Falando sobre o operador ternário</p>
+                                        <p>Falando sobre o operador ternário <code>(boolean) ? true : false;</code></p>
                                         <span class="label label-default">http://php.net/manual/pt_BR/language.operators.comparison.php</span>
                                     </a>
-                                </div>
-                            </div>                        
-                            <div class="panel-body">
-                                <div class="list-group">
                                     <a href="http://www.php.net/manual/pt_BR/function.isset.php" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Manual do PHP</h4>
                                         <p>Falando sobre a função <code>isset()</code></p>
                                         <span class="label label-default">http://www.php.net/manual/pt_BR/function.isset.php</span>
                                     </a>
                                 </div>
-                            </div>                        
-                        </div>                    
+                            </div>
+                        </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "/php/basico/recebendo-dados-via-get-post/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_PHP]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                            
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1></h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_PHP);
-                        $core->lista->link_ativo = "/php/basico/recebendo-dados-via-get-post/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

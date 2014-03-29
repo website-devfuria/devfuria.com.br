@@ -1,48 +1,30 @@
 <?php
 /**
- * JS
- */
-/**
- * Includes
+ * Aprenda javascript com este exemplo de código: a lâmpada
+ * getElementById, funções em js, eventos em js, DOM, firebug, objeto document, objeto window
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/js/basico/code-lampadas/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Aprenda javascript com este exemplo de código: a lâmpada');
-        $core->head->setDescription('Aprendendo código escrito em javascript que ascende e apaga uma lâmpa! Princípio de animações com JS.');
-        $core->head->setkeywords('getElementById, funções em js, eventos em js, DOM, firebug, objeto document, objeto window');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?> 
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Code - A lâmpada</h1>
-                <p>Revendo o código do "primeiro script" aprenderemos um pouco de tudo:
-                    getElementById, funções, eventos, DOM, firebug, document e window.
-                </p>
+                <h1><?php echo $pagina->titulo ?></h1>
+                <p>Revendo o código do "primeiro script" aprenderemos um pouco de tudo:</p>
+                <p>getElementById, funções, eventos, DOM, firebug, document e window.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">30/04/2013</span>, escrito em <span class="label label-info">10/04/2013</span>.
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -101,10 +83,11 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">Analisando código</h1>
-                        </div>                         
+                        </div>
 
-                        <p>Nessa matéria utilizarei o código que faz a uma lámpada ascender e apagar visto na matéria
-                            <a href="http://www.devfuria.com.br/js/basico/intro/" title="JS|Intro">Introdução</a>
+                        <p>
+                            Nesta matéria utilizarei o código que faz a uma lâmpada ascender e apagar visto na matéria
+                            <?php Aux::printAncora("/js/basico/intro/"); ?>
                         </p>
 
                         <p>Clique nas abas para visualizar as partes separadamente: HTML, JS e resultado.</p>
@@ -118,14 +101,14 @@ element.onclick = function() {
     }
 };</code></pre>
                             <p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/zFGvl' title="link-externo">a lâmpada</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti' title="link-externo">@flaviomicheletti</a>) on <a href='http://codepen.io' title="link-externo">CodePen</a></p>
-                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>                        
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="maos-obra">Mãos a obra</h1>
                             </div>
 
-                            <p>Primeiro, não posso deixar de comentar que programar no lado cliente é uma tarefa que exige muita criatividade. Esse 
+                            <p>Primeiro, não posso deixar de comentar que programar no lado cliente é uma tarefa que exige muita criatividade. Esse
                                 exemplo ilustra bem isso.</p>
 
                             <p>O objetivo do script é dar a sensação de que estamos apagando e acendendo uma lâmpada.</p>
@@ -140,21 +123,21 @@ element.onclick = function() {
                                 <img class="img-rounded" src="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif" alt="### lámpada apagada" />
                                 <img class="img-rounded" src="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif" alt="### lámpada acesa" />
                                 <p>O truque das lámpadas</p>
-                            </div>                         
+                            </div>
 
                         </div>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="funcionar">Faça o script funcionar localmente</h1>
-                            </div>                    
+                            </div>
 
                             <p>Para você me acompanhar, o ideal seria você baixar os código fontes ou redigitá-los.</p>
 
                             <p>Baixe os arquivos através do Gist: <a href="https://gist.github.com/flaviomicheletti/6095926"  title="link-externo">https://gist.github.com/flaviomicheletti/6095926</a>
                                 , clique no botão "Download Gist" e descompacte o arquivo.</p>
 
-                            <p>Baixe também as imagens das lâmpadas: <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif" title="link-externo">lâmpada apagada</a>, 
+                            <p>Baixe também as imagens das lâmpadas: <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulboff.gif" title="link-externo">lâmpada apagada</a>,
                                 <a href="http://www.devfuria.com.br/js/basico/intro/pic_bulbon.gif" title="link-externo">lâmpada acesa</a></p>
 
                             <p>Agora, abra o arquivo html no navegador.</p>
@@ -175,20 +158,20 @@ HD        = /var/www/html/[seus diretórios]</code></pre>
                             <div class="bs-docs-section">
                                 <div class="page-header">
                                     <h3 id="teste01">Primeiro teste</h3>
-                                </div> 
+                                </div>
 
                                 <p>Ao clicar na lâmpada, ela (na verdade o link) aciona a função que alterna entre a uma imagem e outra.</p>
 
                                 <p>Deu certo? Ótimo.</p>
 
-                                <p>Deu errado? Ótimo também, aproveite para olhar a aba Network ("redes" em português) do Firebug para ver qual arquivo 
+                                <p>Deu errado? Ótimo também, aproveite para olhar a aba Network ("redes" em português) do Firebug para ver qual arquivo
                                     está faltando, provavelmente é isso que está errado.</p>
-                            </div> 
+                            </div>
 
                             <div class="bs-docs-section">
                                 <div class="page-header">
                                     <h3 id="teste02">Segundo teste</h3>
-                                </div>                     
+                                </div>
 
                                 <p>Vamos nos comunicar com o Firebug. Acione a tecla F12 para abrir o dito cujo e escolha a aba "console".</p>
 
@@ -196,8 +179,9 @@ HD        = /var/www/html/[seus diretórios]</code></pre>
 
                                 <p>Apareceu alguma mensagem  no console? Não? Maravilha, "parece" que não temos erros no JS.</p>
 
-                                <p>OPs, você não conhece o Firebug? Pare tudo e leia a matéria anterior a esta: 
-                                    <a href="http://www.devfuria.com.br/js/basico/debugando/" title="Matéria: Debugando o JS">Debugando</a>. Vai lá que eu te espero.</p>
+                                <p>Ops, você não conhece o Firebug? Pare tudo e leia a matéria anterior a esta:
+                                    <?php echo Aux::printAncora("/js/basico/debugando/"); ?>
+                                    . Vai lá que eu te espero.</p>
 
                                 <p>Agora vamos aproveitar e estabelecer a comunicação: no arquivo <strong>"codigo.js"</strong> insira a seguinte linha</p>
 
@@ -218,7 +202,7 @@ element.onclick = function() {
 <em>console.log("comunicação estabelecida");</em></code></pre>
                                 </div>
 
-                                <p>Desse ponto em diante eu explicarei partes do ćodigo, caso fique na dúvida, tente descobrir o valor das variáveis 
+                                <p>Desse ponto em diante eu explicarei partes do ćodigo, caso fique na dúvida, tente descobrir o valor das variáveis
                                     através do <code>console.log()</code></p>
 
                                 <p>Experimente (teste) tudo:</p>
@@ -244,15 +228,15 @@ element.onclick = function() {
     }
 };</code></pre>
                                 </div>
-                            </div>                         
-                        </div>                    
+                            </div>
+                        </div>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="by-id">getElementById</h1>
-                            </div> 
+                            </div>
 
-                            <p>Uma coisa que fazemos com muita frequência em JS é referenciar (ou talvez a palavra mais adequada seja <strong>buscar</strong>) 
+                            <p>Uma coisa que fazemos com muita frequência em JS é referenciar (ou talvez a palavra mais adequada seja <strong>buscar</strong>)
                                 elementos HTML. Estamos buscando um elemento na árvore DOM (Document Object Model), mas isso comentaremos em outro momento.</p>
 
                             <p>Mas é exatamente isso o que estamos fazendo com o a função <code>getElementById()</code>.</p>
@@ -260,12 +244,12 @@ element.onclick = function() {
                             <p>Ela buscará um elemento HTML através da propriedade "id" desse elemento, ou seja, é necessário ter o elemento HTML para
                                 que a função funcione corretamente.</p>
 
-                            <p>Se a função encontrar o elemento procurado, ela retornará esse elemento. Então atribuimos o resultado a uma variável 
+                            <p>Se a função encontrar o elemento procurado, ela retornará esse elemento. Então atribuimos o resultado a uma variável
                                 para podermos manipular essa variável. Isso tudo acontece na linha 01 do código (veja o codepen no início da matéria),
                                 atribuímos o resultado de função na variável <strong>"elemento"</strong> (poderia ser qualquer outro nome, obviamente).</p>
 
-                            <p>Caso o elemnto HTML não exista, a função não dispara erro algum, ela é silenciosa. Ela apenas retornará <code>null</code>, esse 
-                                será o valor que atribuiremos a variável <strong>"elemento"</strong>. Então, na linha 02, quando usamos o método "onclick" o JS dispara 
+                            <p>Caso o elemnto HTML não exista, a função não dispara erro algum, ela é silenciosa. Ela apenas retornará <code>null</code>, esse
+                                será o valor que atribuiremos a variável <strong>"elemento"</strong>. Então, na linha 02, quando usamos o método "onclick" o JS dispara
                                 o erro: </p>
 
                             <pre><code class="no-highlight">TypeError: element is null</code></pre>
@@ -280,14 +264,14 @@ null.onclick = ...
 
                             <p>E se tivéssemos vários elementos com o mesmo id? Hum! Me responda você.</p>
 
-                            <p>Porque seu HTML possue vários elemento id quando cada deveria aparecer apenas uma única vez (alias, essa é a 
+                            <p>Porque seu HTML possue vários elemento id quando cada deveria aparecer apenas uma única vez (alias, essa é a
                                 especificação o HTML)?</p>
-                        </div> 
+                        </div>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="document">document</h1>
-                            </div> 
+                            </div>
 
                             <p>E esse <code>document</code> antes da função, o que siginifica?</p>
 
@@ -296,17 +280,17 @@ null.onclick = ...
 
                             <pre><code class="language-javascript">window.document.getElementById();</code></pre>
 
-                            <p>...mas isso é verboso demais. O objeto <code>window</code> pôde ser suprimido, mas ele ainda existe nos navegadores (muito 
-                                provavelmente para garantir a retocompatibilidade).</p>
+                            <p>...mas isso é verboso demais. O objeto <code>window</code> pôde ser suprimido, mas ele ainda existe nos navegadores (muito
+                                provavelmente para garantir a retrocompatibilidade).</p>
 
-                            <p>Para simplificar as coisas, vamos encarar o <code>document</code> como um objeto importante e que contém funções importantes como a 
+                            <p>Para simplificar as coisas, vamos encarar o <code>document</code> como um objeto importante e que contém funções importantes como a
                                 que acabamos de aprender.</p>
-                        </div> 
+                        </div>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="onclick">onclick=""</h1>
-                            </div> 
+                            </div>
 
                             <p>Já ouviu falar em eventos? Isso mesmo <code>onclick</code> nada mais é do que o evento click.</p>
 
@@ -315,12 +299,12 @@ null.onclick = ...
                             <pre><code class="language-javascript">element.onclick = ...aqui entra uma função!!!</code></pre>
 
                             <p>Ao clicarmos na imagem... disparamos o evento.</p>
-                        </div> 
+                        </div>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="function">function()</h1>
-                            </div> 
+                            </div>
 
                             <p>Uma função é uma função (momento KISS).</p>
 
@@ -340,7 +324,8 @@ mostrar_alerta();</code></pre>
 
                             <p>Mas isso já não se usa mais.</p>
 
-                            <p>O mais usual é colocarmos a função dentro de uma variável e executamos a função referenciando-se a variável, veja:</p>
+                            <p>O mais usual é colocarmos a função dentro de uma variável e executamos a função referenciando-se a variável.
+                                Essa técnica chama-se <strong>funções anônimas</strong>, veja:</p>
 
                             <div class="code">
                                 <h6>JS</h6>
@@ -348,12 +333,12 @@ mostrar_alerta();</code></pre>
 mostrar_alerta();</code></pre>
                             </div>
 
-                            <p>Para dar uma charme no estilo da codificação, aplicamos uma quebra de linha (ENTER) após a primeira chave da função, 
+                            <p>Para dar uma charme no estilo da codificação, aplicamos uma quebra de linha (ENTER) após a primeira chave da função,
                                 veja:</p>
 
                             <div class="code">
                                 <h6>JS</h6>
-                                <pre><code class="language-javascript">var mostrar_alerta = function () { 
+                                <pre><code class="language-javascript">var mostrar_alerta = function () {
     alert('chamou a função');
 };
 mostrar_alerta();</code></pre>
@@ -368,30 +353,36 @@ mostrar_alerta();</code></pre>
 
                             <pre><code class="language-javascript">var minha_funcao = function() { };</code></pre>
 
-                        </div> 
+                            <p>
+                                Se quiser saber mais sobre funções veja a matéria
+                                <?php Aux::printAncora("/logica-de-programacao/basico/funcoes-procedimentos/"); ?>
+                            </p>
+                        </div>
+
+
 
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="src">src=""</h1>
-                            </div> 
+                            </div>
 
                             <p>Esse <code>scr</code> nada mais é do que uma propriedade HTML, isso mesmo, HTML!</p>
 
                             <p>E o que ela esta fazendo no meio do meu código JS?</p>
 
-                            <p>Calma, ela é faz parte do objeto que buscamos com a função getElementById().</p>
+                            <p>Calma, ela é faz parte do objeto que buscamos com a função <code>getElementById()</code>.</p>
 
                             <p>SCR é a abreviação de source e siginifica que o conteúdo da tag <code>img</code> é definido por essa tag, veja o trecho de HTML:</p>
 
                             <pre><code>&lt;img src="local-da-imagem-no-seu-hd"&gt;</code></pre>
 
                             <p>E podemos acessar esse e outras propriedades via JS.</p>
-                        </div> 
+                        </div>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="match">match()</h1>
-                            </div>                     
+                            </div>
 
                             <p>Função nativa do JS utilizada para executar uma Expressão Regular (regexp), não me pergunte o que é isso ok? Brincadeira
                                 visite a seção "RegExp" se quiser saber mais sobre expressões regulares.</p>
@@ -407,12 +398,12 @@ mostrar_alerta();</code></pre>
 se não
     ligue a lâmpada</code></pre>
                             </div>
-                        </div>                     
+                        </div>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
                                 <h1 id="conclusao">Conclusão</h1>
-                            </div>                      
+                            </div>
                             <p>Se você sobreviveu até aqui, parabéns!</p>
 
                             <p>Vimos algumas coisas bem básicas, o objetivo era lhe proporcionar um primeiro contato com a linguagem de forma prática
@@ -422,37 +413,18 @@ se não
 
                             <p>Eu preferi, a partir de um exemplo, ir desenvolvendo e desenrolando as partes do código.</p>
 
-                            <p>Na próxima matéria ainda veremos este código da lâmpada, nós faremos outros experimentos com ele.</p>
+                            <p>Ainda veremos este código da lâmpada nas próximas matérias, nós faremos outros experimentos
+                                com ele. Aproveitando este código, você não terá muito esforço para entender o seu
+                                funcionamento e aproveitará (assim espero) para focar no aprendizado da linguagem, esse é
+                                o objetivo.</p>
 
-                            <p>Aproveitando este código, você não terá muito esforço para entender o seu funcionamento e aproveitará (assim espero)
-                                para focar no aprendizado da linguagem, esse é o objetivo.</p>
-
-                            <p>Até lá.</p>  
-                        </div>                      
-                        <?php
-                        $core->paginacao->link_ativo = "/js/basico/code-lampadas/";
-                        $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
-                        include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                        ?>
+                            <p>Até lá.</p>
+                        </div>
+                        <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                     </div><!-- Corpo da matéria -->
                 </div><!-- row -->
             </div><!-- Matéria -->
-
-            <footer class="bs-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1>Javascript</h1>
-                            <?php
-                            $core->lista->setLinks($core->links, Core::SECAO_JS);
-                            $core->lista->link_ativo = "/js/basico/code-lampadas/";
-                            include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
             <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

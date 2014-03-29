@@ -1,29 +1,18 @@
 <?php
 /**
- * Lógica
- */
-/**
- * Includes
+ * Matéria introdutória sobre OOP e Lógica de Programação
+ * oop, programação orientada a objetos, oop php, oop js
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Matéria introdutória sobre OOP e Lógica de Programação');
-        $core->head->setDescription('Matéria que introduz o conceito e prática de OOP para que possamos utilizar a lógica aliada a orientação a objetos. ');
-        $core->head->setkeywords('oop, programação orientada a objetos, orientação a objetos, lógica de programação orientada a objetos, oop php, oop js');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
@@ -66,7 +55,7 @@ require "../../../core/boot.php";
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="intro">Introdução</h1>
-                        </div> 
+                        </div>
 
                         <p>O OOP (Object Oriented Programming) ou Programação Orientada a Objeto remonta a época da
                             linguagem Smalltalk.</p>
@@ -95,7 +84,7 @@ require "../../../core/boot.php";
 
                         <h3>Os conceitos</h3>
 
-                        <p>Seguindo a didática do site, não aprofundarei os conceitos de OOP (não por enquanto).</p>                        
+                        <p>Seguindo a didática do site, não aprofundarei os conceitos de OOP (não por enquanto).</p>
 
                         <p>Veremos na prática como a coisa funciona e, somente após ter experimentado, entraremos
                             com os conceitos e suas definições.</p>
@@ -112,19 +101,23 @@ require "../../../core/boot.php";
 
                         <p>Posso adiantar que o que você aprenderá sobre OOP em PHP não se aplica a JS e vice e versa.</p>
 
-                        <p>Aconselho ainda que o leitor procure por um terceira linguagem, de preferência fortemente
-                            tipada (pois PHP é fracamnte tipada). Essa questão da tipagem também muda tudo. Java e C#
-                            são duas boas opções.</p>
+                        <p>
+                            Aconselho ainda que o leitor procure por um terceira linguagem, de preferência uma que seja
+                            fortemente tipada (pois PHP é fracamente tipada). Essa questão da tipagem também muda tudo,
+                            Java e C# são duas boas opções, ambas fortemente tipadas.
+                        </p>
 
-                        <p>Dito isso, podemos concluir que <strong>aprender OOP em uma única linguagem não é aprender
-                                OOP de fato</strong>.</p>
+                        <p>
+                            Dito isso, podemos concluir que <strong>aprender OOP em uma única linguagem não é aprender
+                                OOP de fato</strong>.
+                        </p>
 
                     </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="php">Implementação PHP</h1>
-                        </div> 
+                        </div>
 
                         <p>O código abaixo é denominado "código cliente", pois é ele quem faz uso da classe <code>Triangulo</code>.</p>
 
@@ -166,7 +159,7 @@ $objeto->metodo();</code></pre>
 
                         <pre><code  class="language-php">class Triangulo {
     # sua propriedades
-    
+
     # seus métodos
 }</code></pre>
 
@@ -198,7 +191,7 @@ $objeto->metodo();</code></pre>
     public $a;
     public $b;
     public $c;
-    
+
     # seus métodos
     <em>public</em> function validarForma() {
 
@@ -207,7 +200,7 @@ $objeto->metodo();</code></pre>
 }</code></pre>
 
                         <p>Dentro dos métodos, as variáveis, ou melhor, as propriedades são referenciadas pela palavra chave
-                            <code>$this</code>:</p>        
+                            <code>$this</code>:</p>
 
                         <pre><code  class="language-php">class Triangulo {
 
@@ -215,7 +208,7 @@ $objeto->metodo();</code></pre>
     public $a;
     public $b;
     public $c;
-    
+
     # seus métodos
     public function validarForma() {
         echo $this->a;
@@ -224,8 +217,11 @@ $objeto->metodo();</code></pre>
     }
 }</code></pre>
 
-                        <p>Quem leu a matéria <a href='<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/'>Code - Triângulo </a>
-                            já conhece o código da função <code>validarForma()</code>. Abaixo segue o código completo, nossa classe com 3 propriedades e 1 método:</p>
+                        <p>
+                            Quem leu a matéria
+                            <?php AUx::printAncora("/logica-de-programacao/basico/code-triangulo/", "titulo"); ?>
+                            já conhece o código da função <code>validarForma()</code>. Abaixo segue o código completo, nossa classe com 3 propriedades e 1 método:
+                        </p>
 
                         <div class="code">
                             <h6>Triangulo.php</h6>
@@ -255,21 +251,21 @@ class Triangulo {
 }
 
 </code></pre>
-                        </div>                        
+                        </div>
 
                         <p>Olhando para a classe podemos afirmar que <strong>classe é um conjunto de métodos e
                                 propriedades</strong>. Isso é a única coisa em comum na implementaçã do Javascript.</p>
-                    </div>                        
+                    </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="js">Implementação Javascript</h1>
-                        </div> 
+                        </div>
 
                         <p>Esqueça tudo o que você viu sobre OOP no PHP, em Javascript "o inimigo agora é outro".</p>
 
-                        <p>JS não possue classes, isso significa que não instanciaremos classes, afinal de contas aqui 
+                        <p>JS não possue classes, isso significa que não instanciaremos classes, afinal de contas aqui
                             elas não existem.</p>
 
                         <p>Minha sugestão é que você esqueça um pouco essas questões, lembre-se que estamos na seção
@@ -285,8 +281,8 @@ class Triangulo {
 triangulo.b = 4;
 triangulo.c = 5;
 console.log(  triangulo.validarForma()  );
-</code></pre>                        
-                        </div>                  
+</code></pre>
+                        </div>
 
                         <p>Em JS invocamos os atributos e métodos através do "ponto" <code>.</code> conforme esquema a seguir:</p>
 
@@ -297,7 +293,7 @@ objeto.propriedade = 123;
 document.write( objeto.propriedade );
 
 # executando um método (uma função)
-objeto.metodo();</code></pre>                            
+objeto.metodo();</code></pre>
 
 
                         <h3>Criando o objeto</h3>
@@ -314,11 +310,11 @@ objeto.metodo();</code></pre>
     b: 0,
     c: 0,
     metodo: function() {
-    
+
     }
 }</code></pre>
 
-                        <p>Assim como o PHP, dentro dos métodos, as variáveis, ou melhor, as propriedades são 
+                        <p>Assim como o PHP, dentro dos métodos, as variáveis, ou melhor, as propriedades são
                             referenciadas pela palavra chave <code>this</code>:</p>
 
                         <pre><code  class="language-javascript">var objeto = {
@@ -330,10 +326,10 @@ objeto.metodo();</code></pre>
         console.log( this.b );
         console.log( this.c );
     }
-}</code></pre>                        
+}</code></pre>
 
                         <p>O método <code>validarForma()</code> é semelhante ao codificado em PHP na matéria
-                            <a href='<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/'>Code - Triângulo </a>.
+                            <?php Aux::printAncora("/logica-de-programacao/basico/code-triangulo/", "titulo") ?>.
                             O script abaixo não é uma classe, é um objeto já pronto (instanciado) para uso...</p>
 
 
@@ -352,11 +348,11 @@ objeto.metodo();</code></pre>
             }
         } else {
             return false;
-        }    
+        }
     }
 };
 </code></pre>
-                        </div>                        
+                        </div>
 
 
                         <p>Não esqueça que para os scripts acima funcionarem você precisará de um HTML unindo-os.</p>
@@ -375,18 +371,18 @@ objeto.metodo();</code></pre>
 
         &lt;script type="text/javascript" src="Triangulo.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript" src="script-cliente.js"&gt;&lt;/script&gt;
-        
+
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                        </div>           
+                        </div>
                     </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="conclusao">Concluindo</h1>
-                        </div>                        
+                        </div>
 
-                        <p>Agora estamos habilitados a resolver nossos probelmas de lógica com o paradigma de OOP. </p>
+                        <p>Agora estamos habilitados a resolver nossos problemas de lógica com o paradigma de OOP. </p>
 
                         <p>Consequentemente, utilizando o OOP estaremos habilitados a praticar TDD, assunto da próxima matéria.
 
@@ -397,7 +393,7 @@ objeto.metodo();</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
                         </div>
 
                         <div class="panel panel-info">
@@ -417,33 +413,14 @@ objeto.metodo();</code></pre>
                                         <span class="label label-default">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript</span>
                                     </a>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
-                    </div>                        
-                    <?php
-                    $core->paginacao->link_ativo = "/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_LOG]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                         
+                    </div>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Lógica de Programação</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                        $core->lista->link_ativo = "/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

@@ -1,46 +1,30 @@
 <?php
 /**
- * HTML & CSS
- */
-/**
- * Includes
+ * Introdução ao HTML e ao CSS
+ * começando com HTML, começando com CSS, corpo do html, tags básicas de HTML, firbug, webdeveloper
  */
 require "../../../core/boot.php";
+$pagina = $model->getPagina("/html-css/basico/onde-tudo-comecou/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php
-        $core->head->setTitle('Introdução ao HTML e ao CSS');
-        $core->head->setDescription('Aprenda sobre: tags básicas de HTML, corpo de HTML, CSS, seletores, propriedades e ferramentas que ajuadm no desenvolvimento');
-        $core->head->setkeywords('começando com HTML, começando com CSS, corpo do html, tags básicas de HTML, firbug, webdeveloper');
-        $core->head->setAuthor();
-        include BASE_PATH . VIEWS_PATH . "/head.php";
-        ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
     </head>
     <body>
-
-        <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
-        include BASE_PATH . VIEWS_PATH . "/nav-top.php";
-        ?>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1>Onde tudo começou</h1>
-                <p></p>
+                <h1><?php echo $pagina->titulo?></h1>
+                <p>Veremos a essência de um arquivo HTML e</p>
+                <p>como estilizá-lo usando CSS.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <div class="bs-old-docs">
-            <div class="container">
-                Flávio Micheletti, atualizado em <span class="label label-success">11/02/2013</span>, escrito em <span class="label label-info">23/01/2013. </span>
-            </div>
-        </div>
-
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -51,17 +35,17 @@ require "../../../core/boot.php";
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
                             <li>
-                                <a href="#intro">Um pouco de história...</a>
+                                <a href="#historia">Um pouco de história...</a>
+                                <ul class="nav">
+                                    <li><a href="#w3c">W3C</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#afinal">Mas afinal, o que é HTML?</a>
+                                <a href="#o-que-e-html">Mas afinal, o que é HTML?</a>
                                 <ul class="nav">
-                                    <li>
-                                        <a href="#w3c">W3C</a>
-                                    </li>
-                                    <li>
-                                        <a href="#siglas">HTML, DHTML , XHTML, HTML5</a>
-                                    </li>
+                                    <li><a href="#estrutura-basica">Estrutura básica (HTML válido)</a></li>
+                                    <li><a href="#pequeno-exemplo">Pequeno Exemplo</a></li>
+                                    <li><a href="#siglas">HTML, DHTML , XHTML, HTML5</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -84,7 +68,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Um pouco de história...</h1>
+                            <h1 id="historia">Um pouco de história...</h1>
                         </div>
 
                         <p>Tim Berners-Lee, a culpa é toda dele. No começo dos anos 90, o dito cujo, inventou o HTML (HyperText Markup Language) que
@@ -116,16 +100,35 @@ require "../../../core/boot.php";
                             <p>Tim Berners-Lee, esse é o cara!.</p>
                         </div>
 
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3 id="w3c">W3C</h3>
+                            </div>
+
+                            <p>Completando a história da HTML: o W3C é um consórcio que regulamenta as especificações tanto do HTML como do CSS. O
+                                W3C é a fonte oficial do HTML e CSS. É possível encontrar as traduções das especificações para a língua portuguesa.
+                                Dois pequenos alertas :  a) Estudar pela especificação é mais difícil (e mais chata também) e b) nem todos os navegadores
+                                implementam as especificações em sua totalidade, isso significa que a especificação diz uma coisa e seu navegador
+                                comporta-se de outro, restando para o programador e/ou desginer "se virar" para encontrar um solução.</p>
+                        </div>
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3 id=""></h3>
+                            </div>
+
+                        </div>
                     </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="afinal">Mas afinal, o que é HTML?</h1>
+                            <h1 id="o-que-e-html">Mas afinal, o que é HTML?</h1>
                         </div>
 
-                        <p><strong>HTML, originalmente, marca o conteúdo</strong>. Ele faz isso através de sua "etiquetas", ou melhor, através de suas <strong>tag's</strong>.
-                            A tag "p" define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:</p>
+                        <p><strong>HTML, originalmente, marca o conteúdo</strong>. Ele faz isso através de suas
+                            <strong>etiquetas</strong>, ou melhor, através de suas <strong>tag's</strong>.
+                            A tag <code>p</code> define um parágrafo, por exemplo. Vejamos algumas tag's bem conhecidas:</p>
 
                         <ul>
                             <li><code>html</code> - define o próprio documento HTML.</li>
@@ -138,55 +141,140 @@ require "../../../core/boot.php";
                             <li><code>img</code> - define uma imagem</li>
                         </ul>
 
-                        <p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: <code>&lt;nome da tag&gt</code>; e toda tag aberta deve ser fechada.</p>
+                        <p>As tag's devem ser abraçadas pelos sinais de maior e menor, dessa forma: <code>&lt;nome da tag&gt;</code>; e toda tag aberta deve ser fechada.</p>
 
-                        <p>A barra para direita indica qual é a <strong>tag de fechamento</strong>, exemplo: <code>&lt;p&gt;aqui é um parágrafo&lt;/p&gt;</p></code>
+                        <p>A barra para direita indica qual é a <strong>tag de fechamento</strong>, exemplo: <code>&lt;p&gt;aqui é um parágrafo&lt;/p&gt;;</p></code>
 
                         <p>Abaixo conferimos um arquivo HTML na sua essência:</p>
 
                         <div class="code">
                             <h6>HTML(inválido)</h6>
-                            <pre><code>
-&lthtml&gt
-    &lthead&gt
-        &lttitle&gtTítulo da página&lt/title&gt
-    &lt/head&gt
-    &ltbody&gt
+                            <pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
 
-        &lth1&gtUm título qualquer&lt/h1&gt
-        &ltp&gtprimeiro parágrafo/p&gt
-        &ltp&gtsegundo parágrafo&lt/p&gt
-        &ltp&gtterceiro parágrafo&lt/p&gt
+        Aqui vai a marcação HTML que fará sua página ser entendida pelo browser
+        e, consequentemente, ser reenderizada pelo mesmo.
 
-        &lth2&gtOutro título qualquer&lt/h2&gt
-        &ltp&gtquarto parágrafo&lt/p&gt
-        &ltp&gtquinto parágrafo&lt/p&gt
-        &ltp&gtsexto parágrafo&lt/p&gt
-
-    &lt/body&gt
-&lt/html&gt</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                         </div>
 
                         <p>Repare que eu coloquei a palavra "inválido" alertando quanto à validade do HTML.
-                            O código acima não é valido e serve apenas para fins didâticos e ilustrativo.</p>
+                            O código acima não é valido e serve apenas para fins didáticos e ilustrativo.</p>
+
+                        <p>Eu coloquei o HTML dessa forma para que você perceba o esquema: <strong>cabeçalho (head) e corpo (body)</strong>.</p>
+
+                        <p>Me lembrei do Joel Santana na propaganda do Head & Shoulders, aqui é  Head & Body:</p>
 
                         <div class="bs-example">
-                            <img class="img-rounded" alt="### HTML basico" src="html-basico.jpg">
-                            <p><a href="http://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=1011879" title="link-externo">Fonte da imagem acima</a></p>
+                            <img class="img-rounded" alt="### HTML básico" src="html-head-body.jpg">
+                            <p>Ess imagem é tão difundida que já não se sabe mais a fonte.</p>
                         </div>
+
+                        <p>O conteúdo que vai dentro da tag <code>body</code> é reenderizado pelo browser. É o
+                            conteúdo de seu site/sistema.</p>
 
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h3 id="w3c">W3C</h3>
+                                <h3 id="estrutura-basica">Estrutura básica (HTML válido)</h3>
                             </div>
 
-                            <p>Completando a história da HTML: o W3C é um consórcio que regulamenta as especificações tanto do HTML como do CSS. O
-                                W3C é a fonte oficial do HTML e CSS. É possível encontrar as traduções das especificações para a língua portuguesa.
-                                Dois pequenos alertas :  a) Estudar pela especificação é mais difícil (e mais chata também) e b) nem todos os navegadores
-                                implementam as especificações em sua totalidade, isso significa que a especificação diz uma coisa e seu navegador
-                                comporta-se de outro, restando para o programador e/ou desginer "se virar" para encontrar um solução.</p>
+                            <p>O HTML inválido você já conhece. Agora vou lhe mostrar um HTML válido.</p>
+
+                            <div class="code">
+                                <h6>XHTML</h6>
+                                <pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta http-equiv="Content-type" content="text/html;charset=UTF-8" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+
+                            <p>O HTML acima é um XHTML válido porque ele atende aos requesitos básicos para poder ser
+                                considerado válido.</p>
+
+                            <p>Quem define os requesitos é o grupo W3C e o grupo WHATWG. O W3C disponibiliza até um
+                                validador online para efetuar a validação dos HTML (foi lá que eu testei).</p>
+
+                            <p>Se você comparar o HTML inválido com o válido, verá quais foram os elementos que
+                                faltaram para validar.</p>
+
+                            <p>Nós estamos falando de XHTML, que é uma versão anterior ao HTML5. O XHTML é interessante
+                                principalmente por que estamos aprendendo HTML.</p>
+
+                            <p>Atualmente (jan/2014) ninguém inicia o desenvolvimento de uma aplicação web com XHTML,
+                                utilizamos o HTML5. Por isso <strong>se você encontrar arquivos XHTML aqui no site é porque
+                                    ele tem um fim didático</strong>.</p>
+
+                            <p>Essa questão da validação e do uso do XHMTL para fins didáticos são importantes, mas
+                                ficarão para uma outra hora, ok?</p>
+
+                            <p>Abaixo vemos um HTML 5 também válido.</p>
+
+                            <div class="code">
+                                <h6>HTML 5</h6>
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+
+
                         </div>
+
+
+
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h3 id="pequeno-exemplo">Pequeno Exemplo</h3>
+                            </div>
+
+
+                            <p>A baixo temos um exemplo de conteúdo. Utilizei título  de nível 1 (<code>h1</code>), nível 2
+                                (<code>h2</code>) e alguns parágrafos (<code>p</code>).</p>
+
+                            <div class="code">
+                                <h6>HTML</h6>
+                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;Um título qualquer&lt;/h1&gt;
+        &lt;p&gt;primeiro parágrafo/p&gt;
+        &lt;p&gt;segundo parágrafo&lt;/p&gt;
+        &lt;p&gt;terceiro parágrafo&lt;/p&gt;
+
+        &lt;h2&gt;Outro título qualquer&lt;/h2&gt;
+        &lt;p&gt;quarto parágrafo&lt;/p&gt;
+        &lt;p&gt;quinto parágrafo&lt;/p&gt;
+        &lt;p&gt;sexto parágrafo&lt;/p&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+                        </div>
+
+
 
                         <div class="bs-docs-section">
                             <div class="page-header">
@@ -210,6 +298,7 @@ require "../../../core/boot.php";
                             </div>
 
                         </div>
+
                     </div>
 
 
@@ -222,7 +311,7 @@ require "../../../core/boot.php";
 
                         <blockquote>
                             <p>Folha de estilo em cascata é um mecanismo simples para adicionar estilos
-                                ( por exemplo: fontes, cores, espaçamentos) aos documentos web.
+                                ( por exemplo: fontes, conteudos, espaçamentos) aos documentos web.
                                 <small>Fonte: W3c</small></p>
                         </blockquote>
 
@@ -233,8 +322,43 @@ require "../../../core/boot.php";
                             <li>A CSS definie a estilização</li>
                         </ul>
 
-                        <p>A CSS é composta pelo que se chama de "regras de estilização"(rule-sets), um exemplo de regra seria: <strong>"todo parágrafo deve ter o
-                                tamanho da fonte em 12px e sua cor deve ser #767676"</strong>, traduzindo em código css ficaria assim:</p>
+                        <p>A CSS é composta pelo que se chama de "regras de estilização"(rule-sets), um exemplo de
+                            regra seria: </p>
+
+                        <pre><code class="no-highlight">todo parágrafo deve ter
+    o tamanho da fonte em 12 e
+    sua cor deve ser um tom de cinza meio escuro</code></pre>
+
+                        <p>O tamanho da fonte precisa de uma <strong>unidade de medida</strong>. As três unidades mais
+                            utilizadas são:</p>
+
+                        <ul>
+                            <li><code>px</code> pixel</li>
+                            <li><code>em</code> relativo ao tamanho da fonte</li>
+                            <li><code>%</code> porcentage</li>
+                        </ul>
+
+                        <p>Em breve falaremos mais sobre as unidades de medidas, por hora vamos acertar nosso exemplo.</p>
+
+                        <pre><code class="no-highlight">todo parágrafo deve ter
+    o tamanho da fonte em <em>12px</em>
+    sua cor deve ser um tom de cinza meio escuro</code></pre>
+
+                        <p>As conteudos podem ser representadas por números hexadecimais ou no esquema RGB. Conteudos é outro assunto que
+                            veremos os detalhes em breve. Por hora vamos acreditar que o hexadecimal <code>767676</code>
+                            precedido do sinal sharp <code>#</code> é equivalente a "um tom de cinza meio escuro"</p>
+
+                        <pre><code class="no-highlight">todo parágrafo deve ter
+    o tamanho da fonte em 12px
+    sua cor deve ser <em>#767676</em></code></pre>
+
+                        <p>Vou abreviar um pouco a regra acima, confira:</p>
+
+                        <pre><code class="no-highlight">todo parágrafo
+    tamanho da fonte: 12px
+    cor: #767676</em></code></pre>
+
+                        <p>Agora é só traduzir para CSS, veja:</p>
 
                         <div class="code">
                             <h6>CSS</h6>
@@ -251,7 +375,7 @@ require "../../../core/boot.php";
                         <p><code>12px</code> e <code>#767676</code> são seus respectivos valores.
                             A regra CSS pode conter várias declarações separadas por ponto e vírgula.</p>
 
-                        <p>Obs: #767676 é um  hexadecimal representando uma cor (um cinza escuro). Há outras formas de referênciar as cores,
+                        <p>Obs: #767676 é um  hexadecimal representando uma cor (um cinza escuro). Há outras formas de referênciar as conteudos,
                             voltaremos nelas em breve.</p>
 
                         <p>Se uma imagem vale por mil palavras, vou lhe mandar 4 imagens, espero que valham 4 mil palavras...</p>
@@ -320,7 +444,7 @@ require "../../../core/boot.php";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas</h1>
+                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
                         </div>
 
                         <div class="panel panel-success">
@@ -329,7 +453,7 @@ require "../../../core/boot.php";
                             </div>
                             <div class="panel-body">
                                 <div class="media">
-                                    <a class="pull-left">
+                                    <a class="pull-left" href="http://compare.buscape.com.br/prod_unico?idu=1857605122&ordem=prec#precos" title="link-externo">
                                         <img class="media-object" src="livro-criando-pag-web-css.jpg" alt="### Imagem do livro 'Criando paǵinas web com CSS'">
                                     </a>
                                     <div class="media-body">
@@ -341,12 +465,12 @@ require "../../../core/boot.php";
                                 </div>
 
                                 <div class="media">
-                                    <a class="pull-left">
+                                    <a class="pull-left" href="http://www.maujor.com/livro/livro.html" title="link-externo">
                                         <img class="media-object" src="livro-cronstuindo-sites.jpg" alt="### Imagem do livro 'Costruindo sites com CSS e XHMTL'">
                                     </a>
                                     <div class="media-body">
                                         <h4 class="media-heading">Costruindo sites com CSS e XHMTL</h4>
-                                        <p>Maurício Samt (vulgo Majour), Editora Novatec</p>
+                                        <p>Maurício Samy (vulgo Majour), Editora Novatec</p>
                                         <p>Esse é outro que também está desatualizado, mas é ótimo.</p>
                                         <p>Ambos os livros são complementares um do outro.</p>
                                         <p>Não conheco um desenvolvedore que não tenha lido esses livros.</p>
@@ -354,32 +478,39 @@ require "../../../core/boot.php";
                                 </div>
                             </div>
                         </div>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Internet</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="https://developer.mozilla.org/pt-BR/docs/HTML/Introduction" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Introdução ao HTML (MDN)</h4>
+                                        <p class="list-group-item-text">Belíssima introdução ao HTML.</p>
+                                        <span class="label label-default">https://developer.mozilla.org/pt-BR/docs/HTML/Introduction</span>
+                                    </a>
+                                    <a href="http://www.maujor.com/w3c/xhtml10_2ed.html" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Recomendações do W3C XHTML 1</h4>
+                                        <p class="list-group-item-text">Tradução do Majour.</p>
+                                        <p class="list-group-item-text">Lembrando que já estamos no HTML 5, mas não podemos esquecer o passado,
+                                                                        afinal somos cientistas da computação.</p>
+                                        <span class="label label-default">http://www.maujor.com/w3c/xhtml10_2ed.html</span>
+                                    </a>
+                                    <a href="http://www.maujor.com/tutorialcss1/css1tut.shtml" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Recomendações do W3C CSS nível 1</h4>
+                                        <p class="list-group-item-text">Tradução do Majour.</p>
+                                        <p class="list-group-item-text">Idem ao comentário anterior (já estmaos no CSS 3.</p>
+                                        <span class="label label-default">http://www.maujor.com/tutorialcss1/css1tut.shtml</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <?php
-                    $core->paginacao->link_ativo = "/html-css/basico/onde-tudo-comecou/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_HTML]);
-                    include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
-
         </div><!-- Matéria -->
-
-        <footer class="bs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>HTML & CSS</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
-                        $core->lista->link_ativo = "/html-css/basico/onde-tudo-comecou/";
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
-
     </body>
 </html>

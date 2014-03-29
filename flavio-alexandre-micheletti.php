@@ -1,6 +1,6 @@
 <?php
 /**
- * HOME, index do site
+ * Quem vôs fala!
  */
 /**
  * Includes
@@ -21,7 +21,7 @@ require "core/boot.php";
                 margin: 60px 10px;
             }
             .jumbotron {
-                background-image: url("core/imagens/ale.png");
+                background-image: url("conteudo/imagens/ale.png");
                 background-repeat: no-repeat;
                 background-position: center left;
                 color: #000;
@@ -39,7 +39,7 @@ require "core/boot.php";
 
         <div class="container">
             <div class="row">
-                <a href="<?php echo ROOT_PATH ?>" class="btn btn-primary home"><span class="glyphicon glyphicon-home"></span> &nbsp;Home</a>
+                <a href="<?php echo LINKS_PATH ?>" class="btn btn-primary home"><span class="glyphicon glyphicon-home"></span> &nbsp;Home</a>
             </div>
         </div>
 

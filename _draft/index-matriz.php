@@ -1,27 +1,28 @@
 <?php
 /**
- * 
+ * QUAL SEÇÂO ?
  */
 /**
  * Includes
  */
 require "../core/boot.php";
+$url = "/";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('');
-        $core->head->setDescription('');
-        $core->head->setkeywords('');
-        $core->head->setAuthor();
+        $conteudo->head->setTitle('');
+        $conteudo->head->setDescription('');
+        $conteudo->head->setkeywords('');
+        $conteudo->head->setAuthor();
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
     </head>
     <body>
 
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_JS;
+        $conteudo->navtop->secao_ativa = Conteudo::SECAO_JS;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
 
@@ -66,30 +67,19 @@ require "../core/boot.php";
                 <!-- Corpo da matéria -->
                 <div class="col-md-9" role="main">
 
+
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="">Título 01</h1>
                         </div>
 
 
-                        <a href="<?php echo LINKS_PATH; ?>/logica-de-programacao/basico/code-triangulo/">Code - Triângulo</a>.</p>                        
 
-                        <div class="bs-example">
-                            <img class="img-rounded" alt="### " src="">
-                            <p></p>
-                            <p>Fonte:
-                                <a href="" title="link-externo" class="img-responsive"></a>
-                            </p>
-                        </div>                        
-
-                        <pre><code class="no-highlight">código</code></pre>
-
-                        <div class="code">
-                            <h6>pet.txt</h6>                        
-                            <pre><code class="no-highlight">código
-</code></pre></div>                        
 
                     </div>
+
+
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -98,6 +88,8 @@ require "../core/boot.php";
 
                     </div>
 
+
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="">Título 03</h1>
@@ -105,12 +97,41 @@ require "../core/boot.php";
 
                     </div>
 
+
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h1 id="">Título 04</h1>
                         </div>
 
-                    </div>                    
+
+                        <?php $mat = Aux::getPagina("/js/basico/code-lampadas/"); ?>
+                        <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>"><?php echo $mat->titulo; ?></a>
+
+                        <?php Aux::printAncora("/logica-de-programacao/basico/intro/"); ?>
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### " src="">
+                            <p></p>
+                            <p>Fonte:
+                                <a href="" title="link-externo" class="img-responsive"></a>
+                            </p>
+                        </div>
+
+                        <pre><code class="no-highlight">código</code></pre>
+
+                        <div class="code">
+                            <h6>pet.txt</h6>
+                            <pre><code class="no-highlight">código
+</code></pre>
+                        </div>
+
+
+
+
+                    </div>
+
+
 
 
                     <div class="bs-docs-section">
@@ -143,14 +164,14 @@ require "../core/boot.php";
                                         <span class="label label-default"></span>
                                     </a>
                                 </div>
-                            </div>                        
-                        </div>                    
+                            </div>
+                        </div>
                     </div>
                     <?php
-                    $core->paginacao->link_ativo = "/";
-                    $core->paginacao->descobrirAnteriorProxima($core->links[Core::SECAO_JS]);
+                    $conteudo->paginacao->link_ativo = $url;
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
-                    ?>                            
+                    ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
@@ -161,8 +182,8 @@ require "../core/boot.php";
                     <div class="col-md-6">
                         <h1></h1>
                         <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_JS);
-                        $core->lista->link_ativo = "/";
+                        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+                        $conteudo->lista->link_ativo = $url;
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>
                     </div>

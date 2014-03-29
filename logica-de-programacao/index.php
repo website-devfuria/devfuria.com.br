@@ -1,9 +1,6 @@
 <?php
 /**
- * index Lógica
- */
-/**
- * Includes
+ * Lógica de programação- index
  */
 require "../core/boot.php";
 ?>
@@ -11,15 +8,15 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('Lógica de Programação');
-        $core->head->setDescription('Aprendendo Lógica de Programação');
-        $core->head->setkeywords("lógica básico; lógica de programação; lógica para iniciantes; " .
-            "raciocio lógico; algoritmo; lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; "
-        );
-        $core->head->setAuthor();
+        $view->head->setTitle('Lógica de Programação');
+        $view->head->setDescription('Curso de Lógica de Programação alinhada a Orientação de Objetos e TDD.');
+        $view->head->setkeywords("curso de lógica de programação; exercícios de lógica de programação");
+//        $view->head->setkeywords("lógica básico; lógica de programação; lógica para iniciantes; " .
+//            "raciocio lógico; algoritmo; lógica descomplicado; aprendendo lógica; matéria sobre lógica; aula sobre lógica; "
+//        );
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
-        
+
         <link rel="canonical" href="<?php echo LINKS_PATH; ?>/logica/" />
         <style type="text/css">
             h1 {
@@ -27,12 +24,10 @@ require "../core/boot.php";
                 color: #2F4F4F
             }
         </style>
-
     </head>
-
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_LOG;
+        $view->navtop->secao_ativa = Conteudo::SECAO_LOG;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
@@ -57,21 +52,11 @@ require "../core/boot.php";
                 <p>Seja bem vindo ao curso!</p>
             </div>
         </main>
-
-        <div class="" style="background-color: #FFF; padding:   0px 0px;" id="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>Lógica de Programação</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_LOG);
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <?php
+        $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_LOG);
+        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
+        include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

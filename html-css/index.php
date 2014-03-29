@@ -1,9 +1,6 @@
 <?php
 /**
- * index HTML
- */
-/**
- * Includes
+ * HTML & CSS - index
  */
 require "../core/boot.php";
 ?>
@@ -11,21 +8,20 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $core->head->setTitle('HTML-CSS');
-        $core->head->setDescription('Curso, matérias, exercícios, artigos sobre HTML(5) e CSS(3)');
-        $core->head->setkeywords("html; html5; css; css3; tutorial html; tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
-            "html básico; html fácil; html início; html iniciante; " .
-            "html iniciando; html iniciante; começando com html; começando no html; " .
-            "html descomplicado; aprendendo html; matéria sobre html; aula sobre html" .
-            "css básico; css fácil; css início; css iniciante; " .
-            "css iniciando; css iniciante; começando com css; começando no css; " .
-            "css descomplicado; aprendendo css; matéria sobre css; aula sobre css;" .
-            "folhas estilo cascata; web standards; padrões web; tableless"
-        );
-        $core->head->setAuthor();
+        $view->head->setTitle('HTML-CSS');
+        $view->head->setDescription('Curso, matérias, exercícios, artigos sobre HTML(5) e CSS(3)');
+        $view->head->setkeywords("htnl5; css3; curso de html; curso de css;");
+//        $view->head->setkeywords("html; html5; css; css3; tutorial html; tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
+//            "html básico; html fácil; html início; html iniciante; " .
+//            "html iniciando; html iniciante; começando com html; começando no html; " .
+//            "html descomplicado; aprendendo html; matéria sobre html; aula sobre html" .
+//            "css básico; css fácil; css início; css iniciante; " .
+//            "css iniciando; css iniciante; começando com css; começando no css; " .
+//            "css descomplicado; aprendendo css; matéria sobre css; aula sobre css;" .
+//            "folhas estilo cascata; web standards; padrões web; tableless"
+//        );
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
-        
         <link rel="canonical" href="<?php echo LINKS_PATH; ?>/html-css/" />
         <style type="text/css">
             h1 {
@@ -33,19 +29,16 @@ require "../core/boot.php";
                 color: #2F4F4F
             }
         </style>
-
     </head>
-
     <body>
         <?php
-        $core->navtop->secao_ativa = Core::SECAO_HTML;
+        $view->navtop->secao_ativa = Conteudo::SECAO_HTML;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
         <!-- Page content of course! -->
         <main class="bs-masthead" id="content" role="main">
             <div class="container">
                 <h1>HTML & CSS<small></small></h1>
-                <p class="lead">Curso de HTML e CSS</p>
                 <p>HTML e CSS são divertidos.</p>
                 <p>A questão é que <strong>sem esses elementos básicos não se produz aplicação web</strong>.</p>
                 <p>Se a aplicação for uma edificação, o HTML é o cimento e o CSS a massa fina.</p>
@@ -55,21 +48,11 @@ require "../core/boot.php";
                 <p>Seja bem vindo ao curso!</p>
             </div>
         </main>
-
-        <div class="" style="background-color: #FFF; padding: 0px 0px;" id="html-css">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>HTML & CSS</h1>
-                        <?php
-                        $core->lista->setLinks($core->links, Core::SECAO_HTML);
-                        include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <?php
+        $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_HTML);
+        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::CATEGORIA_CURSO);
+        include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
+        ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>
