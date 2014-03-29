@@ -132,11 +132,48 @@ $pagina = $model->getPagina("/js/math-random-numero-randomico-em-javascript/");
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h2>Como gerar um número randômico entre 0 e 1!</h2>
+                            <p>Booleanos.</p>
                         </div>
 
                         <div class="code">
                             <h6>Javascript</h6>
                             <pre><code class="language-javascript">Math.floor(Math.random() * 2);</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>Como gerar um número randômico entre 0 e 256!</h2>
+                            <p>Bytes ou Octet</p>
+                        </div>
+
+                        <div class="code">
+                            <h6>Javascript</h6>
+                            <pre><code class="language-javascript">Math.floor(Math.random() * 256);</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>Como gerar um número randômico entre 0 e 65536!</h2>
+                            <p>Range dos inteiros positivos.</p>
+                        </div>
+
+                        <div class="code">
+                            <h6>Javascript</h6>
+                            <pre><code class="language-javascript">Math.floor(Math.random() * 65536);</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>Como gerar um número randômico entre -32768 e 65536!</h2>
+                            <p>Range dos inteiros incluindo os negativos.</p>
+                        </div>
+
+                        <div class="code">
+                            <h6>Javascript</h6>
+                            <pre><code class="language-javascript">Math.floor(Math.random() * 65536) - 32768;</code></pre>
                         </div>
                     </div>
 
