@@ -18,7 +18,7 @@ $pagina = $model->getPagina("/php/basico/combobox-input-form-select/");
             <div class="container">
                 <h1><?php echo $pagina->titulo ?></h1>
                 <p>Veremos como enviar e receber dados através do controle</p>
-                <p>comboboxradio button (input-form-select)</p>
+                <p>combobox (input-form-select)</p>
             </div>
         </div>
 
