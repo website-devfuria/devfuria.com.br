@@ -72,7 +72,7 @@ $pagina = $model->getPagina("/php/basico/combobox-input-form-select/");
 
         &lt;form action="form-action.php" method="post"&gt;
             &lt;p&gt;
-                &lt;select name="pais"&gt;
+                &lt;select name="cidades"&gt;
                     &lt;option value=""&gt;&lt;/option&gt;
                     &lt;option value="scs"&gt;São Caetano do Sul&lt;/option&gt;
                     &lt;option value="sa"&gt;Santo André&lt;/option&gt;
@@ -108,9 +108,9 @@ $pagina = $model->getPagina("/php/basico/combobox-input-form-select/");
                             da tag <code>select</code>.
                         </p>
 
-                        <p>Se o selecionar o item "Santo Andé" o seguinte para valor será enviado para o servidor.</p>
+                        <p>Se o usuário selecionar o item "Santo André" o seguinte par nome-valor será enviado para o servidor.</p>
 
-                        <pre><code>pais=sa</code></pre>
+                        <pre><code>cidades=sa</code></pre>
 
                         <p>
                             Se precisar entender melhor sobre o controle veja a matéria
@@ -137,12 +137,11 @@ $pagina = $model->getPagina("/php/basico/combobox-input-form-select/");
 # prova:
 (array() == false) # retorna true</code></pre>
 
-                        <p>
-                            Outro cenário é quando temos option's mas o usuário escolhe a primeira opção.</p>
+                        <p>Outro cenário é quando temos option's mas o usuário escolhe a primeira opção.</p>
 
                         <p>Em nosso exemplo, é aquela opção acima de "São Caetano do Sul" a <strong>string de comprimento zero</strong>.</p>
 
-                        <pre><code class="language-html">&lt;select name="pais"&gt;
+                        <pre><code class="language-html">&lt;select name="cidades"&gt;
     <em>&lt;option value=""&gt;&lt;/option&gt;</em>
     &lt;option value="scs"&gt;São Caetano do Sul&lt;/option&gt;
     &lt;option value="sa"&gt;Santo André&lt;/option&gt;
@@ -177,7 +176,7 @@ if ($foo == true) {
 
                         <p>Agora ficou fácil, trocamos nossa variável <code>$foo</code> pelo array global <code>$_POST</code>.</p>
 
-                        <pre><code class="language-php">if ($_POST['pais'] == true) {
+                        <pre><code class="language-php">if ($_POST['cidades'] == true) {
     echo "executando bloco if";
 } else {
     echo "executando bloco else";
@@ -185,7 +184,7 @@ if ($foo == true) {
 
                         <p>Pequena simplificação...</p>
 
-                        <pre><code class="">if ($_POST['pais']) {
+                        <pre><code class="">if ($_POST['cidades']) {
     echo "executando bloco if";
 } else {
     echo "executando bloco else";
@@ -196,8 +195,8 @@ if ($foo == true) {
                             veremos esse código. Apenas alterei o texto para dar uma idéia melhor...
                         </p>
 
-                        <pre><code class="">if ($_POST['pais']) {
-    echo "armazenar '{$_POST['pais']}'";
+                        <pre><code class="">if ($_POST['cidades']) {
+    echo "armazenar '{$_POST['cidades']}'";
 } else {
     echo "não armazenar nada!";
 }</code></pre>
@@ -210,27 +209,27 @@ if ($foo == true) {
                         </p>
 
                         <p>
-                            Se isto acontecer o se script irá lançar um erro, pois estamos acessando a chave <code>pais</code>
+                            Se isto acontecer o se script irá lançar um erro, pois estamos acessando a chave <code>cidades</code>
                             do array <code>$_POST</code> sem antes checar se a chave existe.
                         </p>
 
                         <p>
-                            A solução é perguntar se <code>$_POST['pais']</code> está "setada", caso não esteja, atribuiremos <code>null</code>.
+                            A solução é perguntar se <code>$_POST['cidades']</code> está "setada", caso não esteja, atribuiremos <code>null</code>.
                         </p>
 
-                        <pre><code class="">$_POST['pais'] = isset($_POST['pais']) ? $_POST['pais'] : null;</code></pre>
+                        <pre><code class="">$_POST['cidades'] = isset($_POST['cidades']) ? $_POST['cidades'] : null;</code></pre>
 
                         <p>Juntando tudo temos o resultado final.</p>
 
                         <div class="code">
                             <h6>form-action.php</h6>
-                            <pre><code class=""># Inicializando a variável $_POST['pais']
-$_POST['pais'] = isset($_POST['pais']) ? $_POST['pais'] : null;
+                            <pre><code class=""># Inicializando a variável $_POST['cidades']
+$_POST['cidades'] = isset($_POST['cidades']) ? $_POST['cidades'] : null;
 
 # Caso o valor de $_POST seja verdadeiro (diferente de "" ou null)
 # executaremso o bloco if
-if ($_POST['pais']) {
-    echo "armazenar '{$_POST['pais']}'";
+if ($_POST['cidades']) {
+    echo "armazenar '{$_POST['cidades']}'";
 } else {
     echo "não armazenar nada!";
 }</code></pre>
@@ -290,7 +289,7 @@ $arrCombo = array(
 
         &lt;form action="form2-action.php" method="post"&gt;
             &lt;p&gt;
-                &lt;select name="pais"&gt;
+                &lt;select name="cidades"&gt;
                     &lt;option&gt;&lt;/option&gt;
                     &lt;?php foreach ($arrCombo as $key =&gt; $value): ?&gt;
                         &lt;?php echo "&lt;option value=\"$key\" &gt;$value&lt;/option&gt;"; ?&gt;
@@ -352,7 +351,7 @@ $valor_selecionado = "sbc";
 
         &lt;form action="form2-action.php" method="post"&gt;
             &lt;p&gt;
-                &lt;select name="pais"&gt;
+                &lt;select name="cidades"&gt;
                     &lt;option&gt;&lt;/option&gt;
                     &lt;?php foreach ($arrCombo as $key =&gt; $value): ?&gt;
                         &lt;?php $selected = ($valor_selecionado == $key) ? "selected=\"selected\"" : null; ?&gt;
@@ -429,7 +428,7 @@ $valor_selecionado = "sbc";
 
         &lt;form action="form2-action.php" method="post"&gt;
             &lt;p&gt;
-                &lt;select name="pais"&gt;
+                &lt;select name="cidades"&gt;
                     &lt;?php combobox($arrCombo, $valor_selecionado); ?&gt;
                 &lt;/select&gt;
                 &lt;input type="submit" value="Submit me!" /&gt;

@@ -7,7 +7,11 @@
     <body>
         <form action="#" method="post">
             <p>
-                <select id="cboPais">
+                <select id="cboCidades">
+                    <option value=""></option>
+                    <option value="scs">São Caetano do Sul</option>
+                    <option value="sa">Santo André</option>
+                    <option value="sbc">São Bernardo do Campo</option>                    
                 </select>
             </p>
             <p>
@@ -18,6 +22,6 @@
                 <input type="button" id="btnRemoverTodos" value="Remover todos os itens" />
             </p>
         </form>
-        <script type="text/javascript"  src="combobox-v2.js"></script>
+        <script type="text/javascript"  src="combobox.js"></script>
     </body>
 </html>

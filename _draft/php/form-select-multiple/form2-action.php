@@ -1,6 +1,6 @@
 <?php
 
-//var_dump($_POST);
+var_dump($_POST);
 
 $_POST['pais'] = isset($_POST['pais']) ? $_POST['pais'] : null;
 
