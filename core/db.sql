@@ -50,6 +50,15 @@ CREATE TABLE IF NOT EXISTS `paginas` (
   KEY `categoria` (`categoria`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+ALTER TABLE `paginas`
+  ADD CONSTRAINT `paginas_ibfk_1` FOREIGN KEY (`secao`) REFERENCES `secoes` (`codigo`),
+  ADD CONSTRAINT `paginas_ibfk_2` FOREIGN KEY (`categoria`) REFERENCES `categorias` (`codigo`);
+
+
+
+--
+-- Páginas
+--
 INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `categoria`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) VALUES
 (3, '/html-css/basico/css-intro/', 'Primeiro contato com CSS', 'Primeiro contato com CSS', NULL, 'O básico do CSS', 'Aprendendo o básico do CSS, como unir o CSS ao documento HTML e cores em CSS.', 'html-css', 'curso', 'on', '2013-01-23', '2013-12-13', ''),
 (4, '/html-css/basico/elementos-inline-block-level/', 'Elementos in-line e elementos block-level', 'Elementos in-line e elementos block-level', NULL, 'Elementos in-line e elementos block-level', 'O objetivo da matéria é entender as diferenças entre os dois tipos', 'html-css', 'curso', 'on', '2013-01-23', '2013-02-11', ''),
@@ -98,17 +107,9 @@ INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaT
 (3, '/regexp/basico/string-match/', 'string.match()', 'string.match()', NULL, 'string.match()', 'Dissecando a função string.match() do JS, método de expressão regular.', 'regexp', 'curso', 'on', '2013-07-22', '2013-07-22', ''),
 (9, '/regexp/basico/varios-resultados-match-test-exec/', 'Vários resultados - match(), test() e exec()', 'Vários resultados - match(), test() e exec()', NULL, 'match(), test() e exec()', 'Dissecando as funções match(), test() e exec() do JS', 'regexp', 'curso', 'on', '2013-07-22', '2013-07-22', ''),
 (8, '/regexp/basico/varios-resultados-preg-match-all/', 'Vários resultados - preg_match_all()', 'Vários resultados - preg&#95;match&#95;all()', NULL, 'PHP preg match all, preg-match-all, preg_math_all()', 'Dissecando a função preg_math_all() do PHP, ela retonar um ou mais resultados.', 'regexp', 'curso', 'on', '2013-07-22', '2014-01-30', ''),
-(1, '/js/math-random-numero-randomico-em-javascript/', 'Como gerar números aleatórios em Javascript', 'Como gerar números aleatórios em Javascript', NULL, 'Geração de números aleatórios Javascript | Math.random()', NULL, 'js', 'receitas-tuto-guia', 'on', '2014-03-06', '2014-03-06', NULL),
+(1, '/js/math-random-numero-randomico-em-javascript/', 'Como gerar números aleatórios em Javascript', 'Como gerar números aleatórios em Javascript', NULL, 'Geração de números aleatórios Javascript | Math.random()', 'Várias receitas para gerar números aleatórios em Javascript!', 'js', 'receitas-tuto-guia', 'on', '2014-03-06', '2014-03-06', NULL),
 (10, '/js/basico/input-radio-button/', 'Manipulando radios buttons', 'Manipulando radios buttons com JavaScript', NULL, 'JavaScript e Radio Buttons', 'Agrupar radios com o mesmo nome e descobrir se está checked', 'js', 'curso', 'on', '2014-03-13', '2014-03-13', NULL),
 (11, '/php/basico/input-radio-button/', 'Manipulando radio buttons', 'Manipulando radio button com PHP', NULL, 'PHP -radio button', 'Tutorial de como trabalhar com radio buttons em formulários web.', 'php', 'curso', 'on', '2014-03-14', '2014-03-14', NULL),
-(2, '/js/window-object/', 'Explorando o objeto window em Javascript!', 'Explorando o objeto <code>window</code> em Javascript!', NULL, 'Explorando o objeto window em Javascript | window object', 'Nesta receita veremos as propriedades, métodos e eventos do objeto principal e que possue hierarquia mais alta na linguagem Javascript: window!', 'js', 'receitas-tuto-guia', 'on', '2014-03-17', '2014-03-17', NULL);
-
-ALTER TABLE `paginas`
-  ADD CONSTRAINT `paginas_ibfk_1` FOREIGN KEY (`secao`) REFERENCES `secoes` (`codigo`),
-  ADD CONSTRAINT `paginas_ibfk_2` FOREIGN KEY (`categoria`) REFERENCES `categorias` (`codigo`);
-
-
-
-
-
-
+(2, '/js/window-object-global/', 'Objeto Window, Global e WindowProxy', 'O objeto <code>window</code> e o epaço global em Javascript!', NULL, 'Explorando o objeto window em Javascript | window object', 'Neste guia veremos os objetos window, global e WindowProxy. Além de como (não) poluir o espaço global.', 'js', 'receitas-tuto-guia', 'on', '2014-03-29', '2014-03-29', NULL),
+(12, '/php/basico/combobox-input-form-select/', 'Manipulando combobox', 'Manipulando combobox com PHP', 'Aprenda a manipular o controle combobox', 'PHP - trabalhando com combobox', 'Aprenda nasta matéria como carregar e receber os dados de uma combobox.', 'php', 'curso', 'draft', '2014-03-28', '2014-03-28', NULL),
+(11, '/js/basico/select-combobox/', 'Manipulando combobox (select)', 'Manipulando combobox (select) com Javascript', NULL, 'Manipulando combobox (select) com Javascript', 'Aprenda a carregar, deletar e colher informações de uma combobox com Javascript', 'js', 'curso', 'on', '2014-03-30', '2014-03-30', NULL);
