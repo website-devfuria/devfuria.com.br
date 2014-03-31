@@ -6,7 +6,7 @@ ini_set('error_reporting', E_ALL);
 error_reporting(E_ALL);
 
 require "../core/boot.php";
-$paginas = new Paginas();
+$model = new Model();
 $hoje = date("Y-m-d");
 header("Content-Type: application/xml; charset=UTF-8");
 echo '<?xml version="1.0" encoding="UTF-8"?>';
@@ -46,11 +46,11 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
         <lastmod><?php echo $hoje; ?></lastmod>
         <changefreq>monthly</changefreq>
     </url>
-    <?php foreach ($paginas->getAll() as $pagina): ?>
+    <?php foreach ($model->getPaginaAll() as $pagina): ?>
         <url>
             <loc><?php echo LINKS_PATH . $pagina->url ?></loc>
             <lastmod><?php echo $pagina->dtAtualizacao ?></lastmod>
-            <changefreq>daily</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.1</priority>
         </url>
     <?php endforeach; ?>
