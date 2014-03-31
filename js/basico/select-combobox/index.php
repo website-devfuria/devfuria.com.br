@@ -55,17 +55,16 @@ $pagina = $model->getPagina("/js/basico/select-combobox/");
                             as demais opções da lista.
                         </p>
 
-                        <p>
-                            Vamos criar uma combo "cidades", teremos alguns nomes de cidades nesta combo.
-                            Nossa combo se parecerá como a da figura abaixo:
-                        </p>
+                        <p>Vamos criar uma combo "cidades", teremos alguns nomes de cidades nesta combo.</p>
+
+                        <p>Nossa combo se parecerá como a da figura abaixo:</p>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### Exemplo de combobox" src="input-form-select.png">
                         </div>
 
                         <p>
-                            Eu vou utilizar 4 elementos: 3 cidades e 1 opção em branco (nula). Nosso HTML será como
+                            Eu vou utilizar 4 elementos: 3 cidades e 1 opção em branco (nulo, ""). Nosso HTML será como
                             o seguinte:
                         </p>
 
@@ -92,7 +91,7 @@ $pagina = $model->getPagina("/js/basico/select-combobox/");
 
                         <p>
                             A variável <code>comboCidades</code> possue a combobox, então podemos acessar algumas propriedades
-                            como, por exemplo, <code>selectedIndex</code>. Ele contém um valor inteiro com o índice do
+                            como, por exemplo, <code>selectedIndex</code> que contém um valor inteiro com o índice do
                             item (option) selecionado.
                         </p>
 
@@ -126,8 +125,9 @@ $pagina = $model->getPagina("/js/basico/select-combobox/");
 
                         <pre><code class="language-javascript">console.log(comboCidades.selectedIndex);</code></pre>
 
-                        <p>Outra propriedade muito útil é a <code>length</code>, representa o total de elementos de uma combo.</p>
-                        <p>Se a combo não tiver elementos o valor de <code>length</code> será 0.</p>
+                        <p>Outra propriedade muito útil é a <code>length</code>, ela representa o total de elementos de uma combo.</p>
+
+                        <p>Se a combo não tiver elementos, o valor de <code>length</code> será 0.</p>
 
                         <p>
                             Sabendo o total de elementos, podemos percorrer a coleção <code>options</code> (outra propriedade importante)
@@ -185,18 +185,18 @@ $pagina = $model->getPagina("/js/basico/select-combobox/");
                             <h2 id="carregando-a-combobox">Carregando a combobox</h2>
                         </div>
 
-                        <p>Para carregar a combo vamos utilizar o botão <code>btnCarregar</code>, adicione a seu HTML:</p>
+                        <p>Para carregar a combo vamos utilizar o botão <code>btnCarregar</code>, adicione ao seu HTML:</p>
 
                         <pre><code class="language-html">&lt;input type="button" id="btnCarregar" value="Carregar combobox" /&gt;</code></pre>
 
-                        <p>Temos que criar cada <code>option</code> na mão, é na unha mesmo.</p>
+                        <p>Temos que criar cada <code>option</code> na mão, na unha mesmo.</p>
 
-                        <p>A idéa é criar um elemento HTML com Javascript, lançamos mão da função <code>document.createElement('tag')</code>.</p>
+                        <p>A idéa é criar um elemento HTML com Javascript, utilizaremos a função <code>document.createElement('tag')</code>.</p>
 
-                        <p>Armazenamos em uma variável qualquer, por exemplo <code>elem</code> e então adicionamos dinamicamente
-                            2 propriedades.</p>
-
-                        <p>Adivinha quais? <code>text</code> e <code>value</code>.</p>
+                        <p>
+                            Armazenamos em uma variável qualquer, por exemplo <code>elem</code> e então adicionamos dinamicamente
+                            2 propriedades: <code>text</code> e <code>value</code>.
+                        </p>
 
                         <pre><code class="language-javascript">var elem = document.createElement('tag')
 elem.value = "scs";
@@ -280,8 +280,9 @@ comboCidades.add(elem, comboCidades.options[0]);
 
                         <pre><code class="language-javascript">Math.floor(Math.random() * comboCidades.length)</code></pre>
 
+                        <p>Não se assuste com o código acima!</p>
                         <p>
-                            Não se assuste, veja a matéria
+                            Se precisar, veja a matéria
                             <?php Aux::printAncora("/js/math-random-numero-randomico-em-javascript/", "titulo") ?>
                             sobre números randômicos em Javascript.
                         </p>
@@ -297,7 +298,8 @@ comboCidades.add(elem, comboCidades.options[0]);
     comboCidades.selectedIndex = Math.floor(Math.random() * comboCidades.length);
 };</code></pre>
 
-                        <p>Não se esqueca de criar o botão no arquivo HTML, não vou nem mostrar como.</p>
+                        <p>Não se esqueça de criar o botão no arquivo HTML.</p>
+
                     </div>
 
 
@@ -313,7 +315,7 @@ comboCidades.add(elem, comboCidades.options[0]);
     comboCidades.remove(0);
 };</code></pre>
                         <p>
-                            O método acima esta removendo sempre o elemento de índice 0 (zero). Em outras palavras, ele
+                            O método acima está removendo sempre o elemento de índice 0 (zero). Em outras palavras, ele
                             está removendo o primeiro item.
                         </p>
 
@@ -335,21 +337,23 @@ comboCidades.add(elem, comboCidades.options[0]);
     comboCidades.remove(i);
 }</code></pre>
 
-                        <p>
-                            Mas aqui tem uma pegadinha, seu código não funcionará, pois ao remover o elemento o índice
-                            da combo se refaz. Então, optei por coloar sempre o índice 0. Dessa forma o laço intera
-                            a coleção da combobox e retira sempre o primeiro <code>option</code> seja ele qual for.
-                        </p>
+                        <p>Mas aqui tem uma pegadinha e seu código não funcionará.</p>
+
+                        <p>Ao remover o elemento, o índice da combo (a propriedade <code>comboCidades.length</code>) se refaz e bagunça tudo.</p>
+
+                        <p>Solução, optei por colocar sempre o índice 0 (zero).</p>
+
+                        <p>Dessa forma, o laço intera a coleção da combobox e retira sempre o primeiro <code>option</code> seja ele qual for.</p>
 
                         <pre><code class="language-javascript">for (i = 0; i < comboCidades.length; i = i + 1) {
     comboCidades.remove(0);
 }</code></pre>
-                        
+
                         <p>
                             Mas esse 0 (zero) fixo mes fez lembrar que não preciso do "interador" <code>i</code> e
-                            consequentemete, não preciso do laço <code>for</code>. Utilizei um laço <code>while</code>:
+                            consequentemete, não preciso do laço <code>for</code>, então utilizei um laço <code>while</code>:
                         </p>
-                        
+
                         <pre><code class="language-javascript">document.getElementById("btnRemoverTodos").onclick = function() {
     var comboCidades = document.getElementById("cboCidades");
     while (comboCidades.length) {
@@ -366,8 +370,8 @@ comboCidades.add(elem, comboCidades.options[0]);
                             <h2 id="resultado-final">Resultado final</h2>
                         </div>
 
-<p data-height="311" data-theme-id="2897" data-slug-hash="BdHDG" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/BdHDG/'>Exemlo de combobox</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//codepen.io/assets/embed/ei.js"></script>
+                        <p data-height="311" data-theme-id="2897" data-slug-hash="BdHDG" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/BdHDG/'>Exemlo de combobox</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
                     </div>
