@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^code2\.html$ code2.php [L]
