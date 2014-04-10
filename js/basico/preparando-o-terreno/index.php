@@ -183,7 +183,7 @@ console.log(qualquer);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="caracter">Características da linguagem?</h1>
+                            <h1 id="caracter">Características da linguagem</h1>
                         </div>
 
                         <p>JS é uma linguagem baseada em protótipos, em funções de primeira classe, fracamente tipada, imperativa,
