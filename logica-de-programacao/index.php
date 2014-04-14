@@ -54,7 +54,7 @@ require "../core/boot.php";
         </main>
         <?php
         $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_LOG);
-        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
+        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::SUB_SECAO_CURSO);
         include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

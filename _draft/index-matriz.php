@@ -169,7 +169,7 @@ $url = "/";
                     </div>
                     <?php
                     $conteudo->paginacao->link_ativo = $url;
-                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::CATEGORIA_CURSO]);
+                    $conteudo->paginacao->descobrirAnteriorProxima($conteudo->paginas[Conteudo::SECAO_JS][Conteudo::SUB_SECAO_CURSO]);
                     include BASE_PATH . VIEWS_PATH . "/paginacao.php";
                     ?>
                 </div><!-- Corpo da matéria -->
@@ -182,7 +182,7 @@ $url = "/";
                     <div class="col-md-6">
                         <h1></h1>
                         <?php
-                        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+                        $conteudo->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_CURSO);
                         $conteudo->lista->link_ativo = $url;
                         include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                         ?>

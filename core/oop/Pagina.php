@@ -15,7 +15,7 @@ class Pagina {
     public $metaDescr;
     public $metaKeywords;
     public $secao;
-    public $categoria;
+    public $subSecao;
     public $status;
     public $dtCriacao;
     public $dtAtualizacao;

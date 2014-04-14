@@ -32,7 +32,7 @@ header("HTTP/1.1 301 Moved Permanently");
                     <div class="row">
                         <div class="col-md-6">
                             <?php
-                            $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::CATEGORIA_CURSO);
+                            $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::SUB_SECAO_CURSO);
                             include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
                             ?>
                         </div>

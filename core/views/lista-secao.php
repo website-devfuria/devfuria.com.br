@@ -6,7 +6,7 @@
  * $view->lista->label = ListaSecao::LABEL_CURSO_JS;
  *
  * # diga os links
- * $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::CATEGORIA_CURSO);
+ * $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_CURSO);
  *
  * # chame a view
  * include BASE_PATH . VIEWS_PATH . "/lista-secao.php";

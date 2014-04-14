@@ -1,4 +1,5 @@
-DROP TABLES paginas, categorias, secoes;
+DROP TABLES IF EXISTS paginas, secoes;
+DROP VIEW  IF EXISTS viewTotalDePaginas, viewTotalPorMesSecao, viewTotalPorSecao;
 
 CREATE TABLE IF NOT EXISTS `secoes` (
   `id` int(11) NOT NULL,
@@ -12,26 +13,12 @@ CREATE TABLE IF NOT EXISTS `secoes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `secoes` (`id`, `codigo`, `href`, `label`, `ativo`, `ordem`) VALUES
-(1, 'html-css', 'html-css', 'HTML & CSS', 1, 1),
-(2, 'logica', 'logica-de-programacao', 'Lógica de Programação', 1, 2),
-(3, 'js', 'js', 'Javascript', 1, 3),
-(4, 'php', 'php', 'PHP', 1, 4),
-(5, 'mysql', 'mysql-sql', 'MySql & SQL', 1, 5),
-(6, 'regexp', 'regexp', 'RegExp', 1, 6);
-
-CREATE TABLE IF NOT EXISTS `categorias` (
-  `id` int(11) NOT NULL,
-  `codigo` varchar(20) NOT NULL,
-  `label` varchar(150) NOT NULL,
-  `ativo` tinyint(2) NOT NULL,
-  `ordem` int(11) NOT NULL,
-  PRIMARY KEY (`codigo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-INSERT INTO `categorias` (`id`, `codigo`, `label`, `ativo`, `ordem`) VALUES
-(3, 'canvas', 'Canvas', 1, 3),
-(1, 'curso', 'Cursos', 1, 1),
-(2, 'receitas-tuto-guia', 'Receitas, Tutoriais e Guia de Referência', 1, 2);
+(1, 'html-css', 'html-css', 'HTML & CSS', 1, 2),
+(2, 'logica', 'logica-de-programacao', 'Lógica de Programação', 1, 7),
+(3, 'js', 'js', 'Javascript', 1, 1),
+(4, 'php', 'php', 'PHP', 1, 3),
+(5, 'mysql', 'mysql-sql', 'MySql & SQL', 1, 4),
+(6, 'regexp', 'regexp', 'RegExp', 1, 5);
 
 CREATE TABLE IF NOT EXISTS `paginas` (
   `ordem` int(11) NOT NULL,
@@ -42,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `paginas` (
   `metaTitle` varchar(255) DEFAULT NULL,
   `metaDescr` varchar(255) DEFAULT NULL,
   `secao` varchar(50) NOT NULL,
-  `categoria` varchar(20) NOT NULL,
+  `subSecao` varchar(20) NOT NULL DEFAULT 'curso',
   `nivel` varchar(13) NOT NULL DEFAULT 'basico',
   `status` varchar(20) NOT NULL DEFAULT 'draft',
   `dtCriacao` date DEFAULT NULL,
@@ -50,10 +37,32 @@ CREATE TABLE IF NOT EXISTS `paginas` (
   `autor` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`url`),
   KEY `secao` (`secao`),
-  KEY `categoria` (`categoria`)
+  KEY `sub-secao` (`subSecao`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `categoria`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) VALUES
+ALTER TABLE `paginas`
+  ADD CONSTRAINT `paginas_ibfk_1` FOREIGN KEY (`secao`) REFERENCES `secoes` (`codigo`);
+
+-- viewListaPaginasCrono
+
+-- viewListaPaginasResumo
+
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalDePaginas` AS
+select count(0) AS total from paginas;
+
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalPorMesSecao` AS
+select date_format(`paginas`.`dtCriacao`,'%Y-%m') AS `mes`,`paginas`.`secao` AS `secao`,count(`paginas`.`secao`) AS `total`
+from `paginas`
+group by date_format(`paginas`.`dtCriacao`,'%Y-%m'),`paginas`.`secao`
+order by `paginas`.`dtCriacao` desc;
+
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalPorSecao` AS
+select `paginas`.`secao` AS `secao`,count(`paginas`.`secao`) AS `porSecao`
+from `paginas`
+group by `paginas`.`secao`;
+
+
+INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) VALUES
 (3, '/html-css/basico/css-intro/', 'Primeiro contato com CSS', 'Primeiro contato com CSS', NULL, 'O básico do CSS', 'Aprendendo o básico do CSS, como unir o CSS ao documento HTML e cores em CSS.', 'html-css', 'curso', 'basico', 'on', '2013-01-23', '2013-12-13', NULL),
 (4, '/html-css/basico/elementos-inline-block-level/', 'Elementos in-line e elementos block-level', 'Elementos in-line e elementos block-level', NULL, 'Elementos in-line e elementos block-level', 'O objetivo da matéria é entender as diferenças entre os dois tipos', 'html-css', 'curso', 'basico', 'on', '2013-01-23', '2013-02-11', NULL),
 (6, '/html-css/basico/formularios-web/', 'Formulários Web e seus controles ', 'Formulários Web e seus controles', NULL, 'Formulários Web e seus controles', 'Matéria demonstrando os controles básicos de HTML: input, select, textarea, etc...', 'html-css', 'curso', 'basico', 'on', '2014-01-06', '2014-01-06', NULL),
@@ -107,7 +116,3 @@ INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaT
 (3, '/regexp/basico/string-match/', 'string.match()', 'string.match()', NULL, 'string.match()', 'Dissecando a função string.match() do JS, método de expressão regular.', 'regexp', 'curso', 'basico', 'on', '2013-07-22', '2013-07-22', NULL),
 (9, '/regexp/basico/varios-resultados-match-test-exec/', 'Vários resultados - match(), test() e exec()', 'Vários resultados - match(), test() e exec()', NULL, 'match(), test() e exec()', 'Dissecando as funções match(), test() e exec() do JS', 'regexp', 'curso', 'basico', 'on', '2013-07-22', '2013-07-22', NULL),
 (8, '/regexp/basico/varios-resultados-preg-match-all/', 'Vários resultados - preg_match_all()', 'Vários resultados - preg&#95;match&#95;all()', NULL, 'PHP preg match all, preg-match-all, preg_math_all()', 'Dissecando a função preg_math_all() do PHP, ela retonar um ou mais resultados.', 'regexp', 'curso', 'basico', 'on', '2013-07-22', '2014-01-30', NULL);
-
-ALTER TABLE `paginas`
-  ADD CONSTRAINT `paginas_ibfk_1` FOREIGN KEY (`secao`) REFERENCES `secoes` (`codigo`),
-  ADD CONSTRAINT `paginas_ibfk_2` FOREIGN KEY (`categoria`) REFERENCES `categorias` (`codigo`);

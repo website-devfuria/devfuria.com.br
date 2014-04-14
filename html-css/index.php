@@ -50,7 +50,7 @@ require "../core/boot.php";
         </main>
         <?php
         $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_HTML);
-        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::CATEGORIA_CURSO);
+        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::SUB_SECAO_CURSO);
         include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
         ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

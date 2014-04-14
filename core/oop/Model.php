@@ -44,7 +44,7 @@ class Model {
      *
      * @return type
      */
-    function getPaginaAll($sql = "SELECT * FROM paginas ORDER BY secao, categoria, ordem") {
+    function getPaginaAll($sql = "SELECT * FROM paginas ORDER BY secao, ordem") {
         $sth = $this->pdo->query($sql);
         return $this->retArrInstanciasDePagina($sth);
     }
@@ -80,7 +80,7 @@ class Model {
         $pagina->metaTitle = $pagina_db->metaTitle;
         $pagina->metaDescr = $pagina_db->metaDescr;
         $pagina->secao = $pagina_db->secao;
-        $pagina->categoria = $pagina_db->categoria;
+        $pagina->subSecao = $pagina_db->subSecao;
         $pagina->status = $pagina_db->status;
         $pagina->dtCriacao = $pagina_db->dtCriacao;
         $pagina->dtAtualizacao = $pagina_db->dtAtualizacao;
