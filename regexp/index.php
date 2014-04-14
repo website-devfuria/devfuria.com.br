@@ -49,7 +49,7 @@ require "../core/boot.php";
 
         <?php
             $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_ER);
-        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_ER, Conteudo::CATEGORIA_CURSO);
+        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_ER, Conteudo::SUB_SECAO_CURSO);
         include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
         ?>
 

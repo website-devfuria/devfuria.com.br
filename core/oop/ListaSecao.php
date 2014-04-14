@@ -17,8 +17,8 @@ class ListaSecao {
      * @param type $linksTodos
      * @param type $links_secao
      */
-    function setLinks($todasPaginas, $secao, $categoria) {
-        $this->links = $todasPaginas[$secao][$categoria];
+    function setLinks($todasPaginas, $secao, $subSecao) {
+        $this->links = $todasPaginas[$secao][$subSecao];
     }
 
     /**

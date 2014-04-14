@@ -1,3 +1,5 @@
 --
 -- Atualizações
 --
+DROP TABLES categorias;
+

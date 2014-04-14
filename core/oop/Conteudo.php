@@ -12,17 +12,17 @@ class Conteudo {
     const SECAO_HTML = "html-css";
     const SECAO_MYSQL = "mysql";
     const SECAO_ER = "regexp";
-    const CATEGORIA_CURSO = "curso";
-    const CATEGORIA_GUIA = "receitas-tuto-guia";
+    const SUB_SECAO_CURSO = "curso";
+    const SUB_SECAO_GUIA = "receitas-tuto-guia";
 //    const GUIA_JS = "js-guia";
 
     /**
      * Array multidimensional que armazena as páginas do site
      *
      * Ex:
-     * $paginas[secao][categoria] = objeto Pagina
-     * $paginas[secao][categoria] = objeto Pagina
-     * $paginas[secao][categoria] = objeto Pagina
+     * $paginas[secao][sub_secao] = objeto Pagina
+     * $paginas[secao][sub_secao] = objeto Pagina
+     * $paginas[secao][sub_secao] = objeto Pagina
      *
      * @var type
      */
@@ -38,7 +38,7 @@ class Conteudo {
     function criaArrayPaginas($paginas_db) {
         $arr = array();
         foreach ($paginas_db as $pagina) {
-            $arr[$pagina->secao][$pagina->categoria][] = $pagina;
+            $arr[$pagina->secao][$pagina->subSecao][] = $pagina;
         }
         return $arr;
     }
