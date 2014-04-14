@@ -1,5 +1,6 @@
 --
 -- Atualizações
 --
-DROP TABLES categorias;
 
+-- atualizar db: escrt(OK), dialhost(OK), casa
+DROP TABLE categorias

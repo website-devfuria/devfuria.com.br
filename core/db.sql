@@ -1,4 +1,5 @@
-DROP TABLES paginas, secoes;
+DROP TABLES IF EXISTS paginas, secoes;
+DROP VIEW  IF EXISTS viewTotalDePaginas, viewTotalPorMesSecao, viewTotalPorSecao;
 
 CREATE TABLE IF NOT EXISTS `secoes` (
   `id` int(11) NOT NULL,
@@ -41,6 +42,25 @@ CREATE TABLE IF NOT EXISTS `paginas` (
 
 ALTER TABLE `paginas`
   ADD CONSTRAINT `paginas_ibfk_1` FOREIGN KEY (`secao`) REFERENCES `secoes` (`codigo`);
+
+-- viewListaPaginasCrono
+
+-- viewListaPaginasResumo
+
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalDePaginas` AS
+select count(0) AS total from paginas;
+
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalPorMesSecao` AS
+select date_format(`paginas`.`dtCriacao`,'%Y-%m') AS `mes`,`paginas`.`secao` AS `secao`,count(`paginas`.`secao`) AS `total`
+from `paginas`
+group by date_format(`paginas`.`dtCriacao`,'%Y-%m'),`paginas`.`secao`
+order by `paginas`.`dtCriacao` desc;
+
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalPorSecao` AS
+select `paginas`.`secao` AS `secao`,count(`paginas`.`secao`) AS `porSecao`
+from `paginas`
+group by `paginas`.`secao`;
+
 
 INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) VALUES
 (3, '/html-css/basico/css-intro/', 'Primeiro contato com CSS', 'Primeiro contato com CSS', NULL, 'O básico do CSS', 'Aprendendo o básico do CSS, como unir o CSS ao documento HTML e cores em CSS.', 'html-css', 'curso', 'basico', 'on', '2013-01-23', '2013-12-13', NULL),
@@ -96,5 +116,3 @@ INSERT INTO `paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaT
 (3, '/regexp/basico/string-match/', 'string.match()', 'string.match()', NULL, 'string.match()', 'Dissecando a função string.match() do JS, método de expressão regular.', 'regexp', 'curso', 'basico', 'on', '2013-07-22', '2013-07-22', NULL),
 (9, '/regexp/basico/varios-resultados-match-test-exec/', 'Vários resultados - match(), test() e exec()', 'Vários resultados - match(), test() e exec()', NULL, 'match(), test() e exec()', 'Dissecando as funções match(), test() e exec() do JS', 'regexp', 'curso', 'basico', 'on', '2013-07-22', '2013-07-22', NULL),
 (8, '/regexp/basico/varios-resultados-preg-match-all/', 'Vários resultados - preg_match_all()', 'Vários resultados - preg&#95;match&#95;all()', NULL, 'PHP preg match all, preg-match-all, preg_math_all()', 'Dissecando a função preg_math_all() do PHP, ela retonar um ou mais resultados.', 'regexp', 'curso', 'basico', 'on', '2013-07-22', '2014-01-30', NULL);
-
-
