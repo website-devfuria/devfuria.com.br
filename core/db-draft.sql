@@ -2,5 +2,6 @@
 -- Atualizações
 --
 
--- atualizar db: escrt(OK), dialhost(OK), casa
-DROP TABLE categorias
+
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `subsecoes` AS
+SELECT DISTINCT subsecao FROM paginas ORDER BY subsecao;
