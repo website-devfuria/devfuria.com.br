@@ -17,7 +17,7 @@
 <div class="list-group">
     <?php foreach ($view->lista->links as $pagina): ?>
         <a href="<?php echo LINKS_PATH . $pagina->url ?>"
-           class="list-group-item <?php echo (strstr($pagina->url, $view->lista->urlAtual)) ? "active" : null; ?>"
+           class="list-group-item <?php echo (strstr($pagina->url, $view->lista->urlAtual)) ? "active" : null; ?> clearfix"
            title="<?php echo $pagina->metaTitle ?>"
            >
             <?php echo $pagina->urlLabel ?>
