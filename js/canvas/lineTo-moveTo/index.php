@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ *
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/math-random-numero-randomico-em-javascript/");
@@ -17,8 +17,10 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
                 -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
                 box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+                width: 330px;
+                margin-top: 10px;
             }
-        </style>        
+        </style>
     </head>
     <body class="">
         <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
@@ -35,53 +37,75 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 </div>
 
                 <!-- Corpo da matéria -->
-                <div class="col-md-9" role="main">
+                <div class="col-md-12" role="main">
+
+                    <p>
+                        Para desenharmos uma linha utilizamos a função <code>lineTo(x, y)</code>, onde <code>x</code>
+                        é o ponto horizontal final de nossa reta e o <code>y</code> é o ponto final vertical.
+                    </p>
+
+                    <blockquote>
+                        <p>
+                            Esse método destina-se a desenhar uma linha reta desde a posição na qual se encontra a pena
+                            até as coordenadas <code>x</code> e <code>y</code>.
+                        </p>
+                        <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 148)</small>
+                    </blockquote>
+
+                    <p>
+                        Se ele desenha até determinado ponto, então precisamos indicar onde é o começo, fazemos isso
+                        utilizando a função <code>moveTo(x, y)</code>
+                    </p>
+
+                    <blockquote>
+                        <p>
+                            Esse método destina-se a posicionar a pena de desenho nas coordeandas <code>x</code> e <code>y</code>.
+                        </p>
+                        <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 148)</small>
+                    </blockquote>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>Precisamos de pelo menos um `moveTo`</h2>
-                        </div> 
+                            <h2>Precisamos de pelo menos um <code>moveTo()</code></h2>
+                        </div>
 
-                        <p>Para o `lineTo` funcionar precisamos de pelo menos um `moveTo`</p>
-                        <p>Para o `lineTo` funcionar precisamos de pelo menos um `moveTo`</p>
-                        <p>Para o `lineTo` funcionar precisamos de pelo menos um `moveTo`</p>
+                        <p>O canvas abaixo está em branco porque o código não funfou (não funcionou).</p>
 
                         <div class="row">
-                            <div class="col-md-5">
-                                <canvas id='ex01' width='300' height='150'>Canvas not supported</canvas>
+                            <div class="col-md-4">
+                                <canvas id='ex01' height='150'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex01');
                                     var context = canvas.getContext('2d');
+                                    // falta o moveTo()
                                     context.lineTo(100, 50);
                                     context.stroke();
-                                </script>                            
+                                </script>
 
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-8">
                                 <p></p>
 
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
+// falta o moveTo()
 context.lineTo(100, 50);
-context.stroke();                                    
+context.stroke();
 </code></pre>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>O mínimo para o `linteTo` funcionar</h2>
-                        </div> 
+                            <h2>O mínimo para o <code>linteTo()</code> funcionar</h2>
+                        </div>
 
-                        <p>O mínimo para o `linteTo` funcionar</p>
-                        <p>O mínimo para o `linteTo` funcionar</p>
-                        <p>O mínimo para o `linteTo` funcionar</p>
-                        <p>O mínimo para o `linteTo` funcionar</p>
+                        <p>O <code>lineTo()</code> precisa de um ponto incial.</p>
 
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <canvas id='ex02' width='300' height='150'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex02');
@@ -89,34 +113,34 @@ context.stroke();
                                     context.moveTo(10, 10);
                                     context.lineTo(100, 50);
                                     context.stroke();
-                                </script>                           
+                                </script>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-8">
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
-context.moveTo(10, 10);
-context.lineTo(100, 50);
-context.stroke();                                    
+context.moveTo(10, 10); // Movemos a pena em 10px tanto no eixo x como no eixo y
+context.lineTo(100, 50);// Desenhamos uma diagonal de 100px,
+                        // seu ponto final é 50px abaixo do ponto inicial
+context.stroke();
 </code></pre>
                             </div>
                         </div>
-                    </div>                        
+                    </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>um moveTo para escrever várias linhas</h2>
-                        </div>  
+                            <h2>Um único <code>moveTo()</code> para escrever várias linhas</h2>
+                        </div>
 
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
+                        <p>Precisamos chamar  pelo menos uma vez o método <code>moveTo()</code>.</p>
+
+                        <p>Por outro lado, podemos escrever quantas linhas quizermos.</p>
+
+                        <p>O <strong>ponto inicial</strong> da próxima linha será o <strong>ponto final</strong> da linha anterior.</p>
 
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <canvas id='ex03' width='300' height='150'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex03');
@@ -126,23 +150,20 @@ context.stroke();
                                     context.lineTo(50, 110);
                                     context.lineTo(110, 120);
                                     context.stroke();
-                                </script>                          
+                                </script>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-8">
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 context.moveTo(10, 10);
 context.lineTo(100, 50);
 context.lineTo(50, 110);
 context.lineTo(110, 120);
-context.stroke();                                   
-</code></pre>                                
-                                <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                                <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                                <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                                <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
+context.stroke();
+</code></pre>
+                                <p>Repare que chamamos várias vezes o método <code>lineTo()</code>.</p>
                             </div>
-                        </div>                          
+                        </div>
                     </div>
 
                 </div><!-- Corpo da matéria -->

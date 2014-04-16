@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ *
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/math-random-numero-randomico-em-javascript/");
@@ -17,8 +17,10 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
                 -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
                 box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+                width: 330px;
+                margin-top: 10px;
             }
-        </style>        
+        </style>
     </head>
     <body class="">
         <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
@@ -30,119 +32,167 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Desenhando linhas</h1>
+                        <h1>Cantos das linhas <code>lineJoin</code></h1>
                     </div>
                 </div>
 
                 <!-- Corpo da matéria -->
-                <div class="col-md-9" role="main">
+                <div class="col-md-12" role="main">
+
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>Precisamos de pelo menos um `moveTo`</h2>
-                        </div> 
-
-                        <p>Para o `lineTo` funcionar precisamos de pelo menos um `moveTo`</p>
-                        <p>Para o `lineTo` funcionar precisamos de pelo menos um `moveTo`</p>
-                        <p>Para o `lineTo` funcionar precisamos de pelo menos um `moveTo`</p>
+                            <h2>lineWidth</h2>
+                        </div>
 
                         <div class="row">
-                            <div class="col-md-5">
-                                <canvas id='ex01' width='300' height='150'>Canvas not supported</canvas>
+                            <div class="col-md-4">
+                                <canvas id='ex01' height='150'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex01');
                                     var context = canvas.getContext('2d');
-                                    context.lineTo(100, 50);
-                                    context.stroke();
-                                </script>                            
+
+context.moveTo(60, 60);
+context.lineTo(240, 60);
+context.lineWidth = 2;
+context.stroke();
+                                </script>
 
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-8">
                                 <p></p>
 
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
-context.lineTo(100, 50);
-context.stroke();                                    
+
+context.moveTo(60, 60);
+context.lineTo(240, 60);
+context.lineWidth = 2;
+context.stroke();
 </code></pre>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>O mínimo para o `linteTo` funcionar</h2>
-                        </div> 
+                            <h2>O tamanho padrão</h2>
+                        </div>
 
-                        <p>O mínimo para o `linteTo` funcionar</p>
-                        <p>O mínimo para o `linteTo` funcionar</p>
-                        <p>O mínimo para o `linteTo` funcionar</p>
-                        <p>O mínimo para o `linteTo` funcionar</p>
+                        <p>Parece que o padrão da largura da linha é 1.</p>
+
+                        <p>Quando omitimos a propriedade o tamanha padrão parece-se com 1px.</p>
 
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <canvas id='ex02' width='300' height='150'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex02');
                                     var context = canvas.getContext('2d');
-                                    context.moveTo(10, 10);
-                                    context.lineTo(100, 50);
-                                    context.stroke();
-                                </script>                           
+
+context.beginPath();
+context.moveTo(60, 50);
+context.lineTo(200, 50);
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 60);
+context.lineTo(200, 60);
+context.lineWidth = 1;
+context.stroke();
+                                </script>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-8">
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
-context.moveTo(10, 10);
-context.lineTo(100, 50);
-context.stroke();                                    
+
+context.beginPath();
+context.moveTo(60, 50);
+context.lineTo(200, 50);
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 60);
+context.lineTo(200, 60);
+context.lineWidth = 1;
+context.stroke();
 </code></pre>
                             </div>
                         </div>
-                    </div>                        
+                    </div>
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>um moveTo para escrever várias linhas</h2>
-                        </div>  
+                            <h2>Tamanho menores que 1px</h2>
+                        </div>
 
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                        <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
+                        <p>O tamanho menor que 1 funciona.</p>
+
+                        <p>Mas repare que precisamos chamar o método <code>beginPath()</code>, sem o ele o esquema não funciona.</p>
 
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <canvas id='ex03' width='300' height='150'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex03');
                                     var context = canvas.getContext('2d');
-                                    context.moveTo(10, 10);
-                                    context.lineTo(100, 50);
-                                    context.lineTo(50, 110);
-                                    context.lineTo(110, 120);
-                                    context.stroke();
-                                </script>                          
+context.beginPath();
+context.moveTo(60, 50);
+context.lineTo(200, 50);
+context.lineWidth = 0.1;
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 60);
+context.lineTo(200, 60);
+context.lineWidth = 0.3;
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 70);
+context.lineTo(200, 70);
+context.lineWidth = 0.5;
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 80);
+context.lineTo(200, 80);
+context.lineWidth = 1;
+context.stroke();
+                                </script>
                             </div>
-                            <div class="col-md-7">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex03');
+                            <div class="col-md-8">
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
-context.moveTo(10, 10);
-context.lineTo(100, 50);
-context.lineTo(50, 110);
-context.lineTo(110, 120);
-context.stroke();                                   
-</code></pre>                                
-                                <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                                <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                                <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
-                                <p>Precisamos de apenas um moveTo para escrever várias linhas</p>
+
+context.beginPath();
+context.moveTo(60, 50);
+context.lineTo(200, 50);
+context.lineWidth = 0.1;
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 60);
+context.lineTo(200, 60);
+context.lineWidth = 0.3;
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 70);
+context.lineTo(200, 70);
+context.lineWidth = 0.5;
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 80);
+context.lineTo(200, 80);
+context.lineWidth = 1;
+context.stroke();
+</code></pre>
                             </div>
-                        </div>                          
+                        </div>
                     </div>
 
                 </div><!-- Corpo da matéria -->
