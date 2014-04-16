@@ -10,17 +10,6 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 <html lang="pt">
     <head>
         <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
-        <style>
-            canvas {
-                background: #ffffff;
-                cursor: pointer;
-                -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
-                -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
-                box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
-                width: 330px;
-                margin-top: 10px;
-            }
-        </style>
     </head>
     <body class="">
         <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>

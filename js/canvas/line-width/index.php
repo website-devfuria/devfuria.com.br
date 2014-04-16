@@ -10,17 +10,6 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 <html lang="pt">
     <head>
         <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
-        <style>
-            canvas {
-                background: #ffffff;
-                cursor: pointer;
-                -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
-                -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
-                box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
-                width: 330px;
-                margin-top: 10px;
-            }
-        </style>
     </head>
     <body class="">
         <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
@@ -32,13 +21,38 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Cantos das linhas <code>lineJoin</code></h1>
+                        <h1>Tamanho das linhas <code>lineWidth</code></h1>
                     </div>
                 </div>
 
+                <blockquote>
+                    <p>
+                        Esse atributo destina-se a definir a espessura das linhas, em pixel, do elemento gráfico criado.
+                        Os valores possíveis são os números inteiros. Não sendo definida a espessura com uso desse
+                        atributo, o padrão é zero e a linha não será visualizada.
+                    </p>
+                    <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 145)</small>
+                </blockquote>
+
+                <p>Errado 2x.</p>
+
+                <p>O valor padrão parece ser 1px e não zero.</p>
+
+                <p>E o valores menores que 1 (fracionários) são válidos também.</p>
+
+                <blockquote>
+                    O atributo dá a largura das linhas. Se consultado, ele deve retornar o valor atual. Por definição,
+                    zero, valores negativos, infinito e NaN devem ser ignorados, deixando o valor inalterado.
+                    <small>
+                        Fonte:
+                        <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#dom-context-2d-linewidth" title="link-externo">whatwg</a>
+                    </small>
+                </blockquote>
+
+                <p>Consultando o valor de <code>lineWidth</code> ele realmente é por padrão <code>1px</code>.</p>
+
                 <!-- Corpo da matéria -->
                 <div class="col-md-12" role="main">
-
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -52,10 +66,10 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                                     var canvas = document.getElementById('ex01');
                                     var context = canvas.getContext('2d');
 
-context.moveTo(60, 60);
-context.lineTo(240, 60);
-context.lineWidth = 2;
-context.stroke();
+                                    context.moveTo(60, 60);
+                                    context.lineTo(240, 60);
+                                    context.lineWidth = 2;
+                                    context.stroke();
                                 </script>
 
                             </div>
@@ -82,7 +96,7 @@ context.stroke();
 
                         <p>Parece que o padrão da largura da linha é 1.</p>
 
-                        <p>Quando omitimos a propriedade o tamanha padrão parece-se com 1px.</p>
+                        <p>Quando omitimos a propriedade prevalece o tamanho padrão 1px.</p>
 
                         <div class="row">
                             <div class="col-md-4">
@@ -91,16 +105,16 @@ context.stroke();
                                     var canvas = document.getElementById('ex02');
                                     var context = canvas.getContext('2d');
 
-context.beginPath();
-context.moveTo(60, 50);
-context.lineTo(200, 50);
-context.stroke();
+                                    context.beginPath();
+                                    context.moveTo(60, 50);
+                                    context.lineTo(200, 50);
+                                    context.stroke();
 
-context.beginPath();
-context.moveTo(60, 60);
-context.lineTo(200, 60);
-context.lineWidth = 1;
-context.stroke();
+                                    context.beginPath();
+                                    context.moveTo(60, 60);
+                                    context.lineTo(200, 60);
+                                    context.lineWidth = 1;
+                                    context.stroke();
                                 </script>
                             </div>
                             <div class="col-md-8">
@@ -130,7 +144,9 @@ context.stroke();
 
                         <p>O tamanho menor que 1 funciona.</p>
 
-                        <p>Mas repare que precisamos chamar o método <code>beginPath()</code>, sem o ele o esquema não funciona.</p>
+                        <p>Mas repare que precisamos chamar o método <code>beginPath()</code>, sem ele o esquema não funciona.</p>
+
+                        <p>Repare também que há um degradê na linha.</p>
 
                         <div class="row">
                             <div class="col-md-4">
@@ -138,29 +154,29 @@ context.stroke();
                                 <script>
                                     var canvas = document.getElementById('ex03');
                                     var context = canvas.getContext('2d');
-context.beginPath();
-context.moveTo(60, 50);
-context.lineTo(200, 50);
-context.lineWidth = 0.1;
-context.stroke();
+                                    context.beginPath();
+                                    context.moveTo(60, 50);
+                                    context.lineTo(200, 50);
+                                    context.lineWidth = 0.1;
+                                    context.stroke();
 
-context.beginPath();
-context.moveTo(60, 60);
-context.lineTo(200, 60);
-context.lineWidth = 0.3;
-context.stroke();
+                                    context.beginPath();
+                                    context.moveTo(60, 60);
+                                    context.lineTo(200, 60);
+                                    context.lineWidth = 0.3;
+                                    context.stroke();
 
-context.beginPath();
-context.moveTo(60, 70);
-context.lineTo(200, 70);
-context.lineWidth = 0.5;
-context.stroke();
+                                    context.beginPath();
+                                    context.moveTo(60, 70);
+                                    context.lineTo(200, 70);
+                                    context.lineWidth = 0.5;
+                                    context.stroke();
 
-context.beginPath();
-context.moveTo(60, 80);
-context.lineTo(200, 80);
-context.lineWidth = 1;
-context.stroke();
+                                    context.beginPath();
+                                    context.moveTo(60, 80);
+                                    context.lineTo(200, 80);
+                                    context.lineWidth = 1;
+                                    context.stroke();
                                 </script>
                             </div>
                             <div class="col-md-8">
