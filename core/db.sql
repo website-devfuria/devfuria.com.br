@@ -1,5 +1,5 @@
 DROP TABLES IF EXISTS paginas, secoes;
-DROP VIEW  IF EXISTS viewTotalDePaginas, viewTotalPorMesSecao, viewTotalPorSecao;
+DROP VIEW  IF EXISTS subsecoes, viewTotalDePaginas, viewTotalPorMesSecao, viewTotalPorSecao;
 
 CREATE TABLE IF NOT EXISTS `secoes` (
   `id` int(11) NOT NULL,
@@ -19,6 +19,7 @@ INSERT INTO `secoes` (`id`, `codigo`, `href`, `label`, `ativo`, `ordem`) VALUES
 (4, 'php', 'php', 'PHP', 1, 3),
 (5, 'mysql', 'mysql-sql', 'MySql & SQL', 1, 4),
 (6, 'regexp', 'regexp', 'RegExp', 1, 5);
+
 
 CREATE TABLE IF NOT EXISTS `paginas` (
   `ordem` int(11) NOT NULL,
@@ -46,6 +47,9 @@ ALTER TABLE `paginas`
 -- viewListaPaginasCrono
 
 -- viewListaPaginasResumo
+
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `subsecoes` AS 
+select distinct `paginas`.`subSecao` AS `subsecao` from `paginas` order by `paginas`.`subSecao`;
 
 CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalDePaginas` AS
 select count(0) AS total from paginas;
