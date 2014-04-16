@@ -4,6 +4,11 @@
  */
 require "../core/boot.php";
 $curso = ($_SERVER['QUERY_STRING'] == "curso" || $_SERVER['QUERY_STRING'] == "") ? true : false ;
+if($curso) {
+    $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_CURSO;
+} else {
+    $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_GUIA;
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -40,10 +45,10 @@ $curso = ($_SERVER['QUERY_STRING'] == "curso" || $_SERVER['QUERY_STRING'] == "")
                         <div class="col-md-12">
                             <ul class="nav nav-tabs">
                                 <li class="active">
-                                    <a href="<?php echo LINKS_PATH . "/js/?curso" ?>">Curso</a>
+                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_CURSO ?>">Curso</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo LINKS_PATH . "/js/?receitas-tutoriais-guia-referencia" ?>">Receitas, Tutoriais e Guia de Referência</a>
+                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_GUIA ?>">Receitas, Tutoriais e Guia de Referência</a>
                                 </li>
                             </ul>
                         </div>
@@ -75,10 +80,10 @@ $curso = ($_SERVER['QUERY_STRING'] == "curso" || $_SERVER['QUERY_STRING'] == "")
                         <div class="col-md-12">
                             <ul class="nav nav-tabs">
                                 <li>
-                                    <a href="<?php echo LINKS_PATH . "/js/?curso" ?>">Curso</a>
+                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_CURSO ?>">Curso</a>
                                 </li>
                                 <li class="active">
-                                    <a href="<?php echo LINKS_PATH . "/js/?receitas-tutoriais-guia-referencia" ?>">Receitas, Tutoriais e Guia de Referência</a>
+                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_GUIA ?>">Receitas, Tutoriais e Guia de Referência</a>
                                 </li>
                             </ul>
                         </div>

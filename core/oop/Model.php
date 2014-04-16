@@ -27,13 +27,12 @@ class Model {
                 ->query("SELECT * FROM paginas WHERE url = '$url';")
                 ->fetch(\PDO::FETCH_OBJ);
 
-        if(!$pagina_db){
+        if (!$pagina_db) {
             throw new Exception("Página não encontrada ($url)");
         }
 
         return $this->fabricaPagina($pagina_db);
     }
-
 
     /**
      * Retorna a lista de paginas
@@ -103,7 +102,7 @@ class Model {
 
         return array(
             Conteudo::SECAO_JS => array(
-                "href" => "js",
+                "href" => "js/?" . Conteudo::SUB_SECAO_CURSO,
                 "label" => "Javascript"
             ),
             Conteudo::SECAO_HTML => array(
