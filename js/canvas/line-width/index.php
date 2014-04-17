@@ -25,34 +25,36 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                     </div>
                 </div>
 
-                <blockquote>
-                    <p>
-                        Esse atributo destina-se a definir a espessura das linhas, em pixel, do elemento gráfico criado.
-                        Os valores possíveis são os números inteiros. Não sendo definida a espessura com uso desse
-                        atributo, o padrão é zero e a linha não será visualizada.
-                    </p>
-                    <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 145)</small>
-                </blockquote>
-
-                <p>Errado 2x.</p>
-
-                <p>O valor padrão parece ser 1px e não zero.</p>
-
-                <p>E o valores menores que 1 (fracionários) são válidos também.</p>
-
-                <blockquote>
-                    O atributo dá a largura das linhas. Se consultado, ele deve retornar o valor atual. Por definição,
-                    zero, valores negativos, infinito e NaN devem ser ignorados, deixando o valor inalterado.
-                    <small>
-                        Fonte:
-                        <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#dom-context-2d-linewidth" title="link-externo">whatwg</a>
-                    </small>
-                </blockquote>
-
-                <p>Consultando o valor de <code>lineWidth</code> ele realmente é por padrão <code>1px</code>.</p>
-
                 <!-- Corpo da matéria -->
                 <div class="col-md-12" role="main">
+
+                    <div class="bs-docs-section">
+                        <blockquote>
+                            <p>
+                                Esse atributo destina-se a definir a espessura das linhas, em pixel, do elemento gráfico criado.
+                                Os valores possíveis são os números inteiros. Não sendo definida a espessura com uso desse
+                                atributo, o padrão é zero e a linha não será visualizada.
+                            </p>
+                            <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 145)</small>
+                        </blockquote>
+
+                        <p>Errado 2x.</p>
+
+                        <p>O valor padrão parece ser 1px e não zero.</p>
+
+                        <p>E o valores menores que 1 (fracionários) são válidos também.</p>
+
+                        <blockquote>
+                            O atributo dá a largura das linhas. Se consultado, ele deve retornar o valor atual. Por definição,
+                            zero, valores negativos, infinito e NaN devem ser ignorados, deixando o valor inalterado.
+                            <small>
+                                Fonte:
+                                <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#dom-context-2d-linewidth" title="link-externo">whatwg</a>
+                            </small>
+                        </blockquote>
+
+                        <p>Consultando o valor de <code>lineWidth</code> ele realmente é por padrão <code>1px</code>.</p>
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -87,7 +89,6 @@ context.stroke();
                             </div>
                         </div>
                     </div>
-
 
                     <div class="bs-docs-section">
                         <div class="page-header">
@@ -135,7 +136,6 @@ context.stroke();
                             </div>
                         </div>
                     </div>
-
 
                     <div class="bs-docs-section">
                         <div class="page-header">

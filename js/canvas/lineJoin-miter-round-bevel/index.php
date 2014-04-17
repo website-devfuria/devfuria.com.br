@@ -25,11 +25,16 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                     </div>
                 </div>
 
-
-
                 <!-- Corpo da matéria -->
                 <div class="col-md-12" role="main">
 
+                    <div class="bs-docs-section">
+
+                        <p>Texto introdutório</p>
+
+                        <p>O que é lineJoin?</p>
+
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
