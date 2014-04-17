@@ -11,33 +11,33 @@ body {
 * Menu superior
 */
 .bs-docs-nav {
-  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
-  background-color: #000;
-  border-color: #2F4F4F;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    background-color: #000;
+    border-color: #2F4F4F;
 }
 .bs-docs-nav .navbar-collapse {
-  border-color: #463265;
+    border-color: #463265;
 }
 .bs-docs-nav .navbar-brand {
-  color: #fff;
+    color: #fff;
 }
 .bs-docs-nav .navbar-nav > li > a {
-  color: #767676;
+    color: #767676;
 }
 .bs-docs-nav .navbar-nav > li > a:hover {
-  color: #fff;
+    color: #fff;
 }
 .bs-docs-nav .navbar-nav > .active > a,
 .bs-docs-nav .navbar-nav > .active > a:hover {
-  color: #fff;
-  background-color: #2F4F4F;
+    color: #fff;
+    background-color: #2F4F4F;
 }
 .bs-docs-nav .navbar-toggle {
-  border-color: #2F4F4F;
+    border-color: #2F4F4F;
 }
 .bs-docs-nav .navbar-toggle:hover {
-  background-color: #2F4F4F;
-  border-color: #2F4F4F;
+    background-color: #2F4F4F;
+    border-color: #2F4F4F;
 }
 /*
  * Footer
@@ -648,4 +648,14 @@ div.code pre em, div.code pre code em, pre em {
 small.lista-secao {
     color: #9D9D9D;
     font-size: 0.9em;
+}
+
+canvas {
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    width: 330px;
+    margin-top: 10px;
 }
