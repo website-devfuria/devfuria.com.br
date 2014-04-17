@@ -73,7 +73,7 @@ class ListaSecao {
      */
     function retLabelSubsecaoCanvas() {
 
-        $prefixo = "Canvas (HTML5)";
+        $prefixo = "Canvas";
         return $prefixo;
     }
 }

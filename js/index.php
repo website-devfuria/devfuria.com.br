@@ -144,7 +144,7 @@ if ($aba == "curso" || $aba == "") {
                 </div>
             </main>
             <?php
-            $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_JS);
+            $view->lista->label = $view->lista->retLabelSubsecaoCanvas();
             $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_CANVAS);
             include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
             ?>
