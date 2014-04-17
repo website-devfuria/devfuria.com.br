@@ -3,7 +3,7 @@
  *
  */
 require "../../../core/boot.php";
-$pagina = $model->getPagina("/js/math-random-numero-randomico-em-javascript/");
+$pagina = $model->getPagina("/js/canvas/line-width/");
 $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 ?>
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 
                         <p>O valor padrão parece ser 1px e não zero.</p>
 
-                        <p>E o valores menores que 1 (fracionários) são válidos também.</p>
+                        <p>E o valores menores que 1 são válidos também.</p>
 
                         <blockquote>
                             O atributo dá a largura das linhas. Se consultado, ele deve retornar o valor atual. Por definição,
@@ -214,7 +214,7 @@ context.stroke();
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-        <?php include BASE_PATH . VIEWS_PATH . "/refers/footer.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/canvas/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

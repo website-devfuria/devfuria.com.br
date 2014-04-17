@@ -3,7 +3,7 @@
  *
  */
 require "../../../core/boot.php";
-$pagina = $model->getPagina("/js/math-random-numero-randomico-em-javascript/");
+$pagina = $model->getPagina("/js/canvas/lineJoin-miter-round-bevel/");
 $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 ?>
 <!DOCTYPE html>
@@ -156,7 +156,7 @@ context.stroke();
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-        <?php include BASE_PATH . VIEWS_PATH . "/refers/footer.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/canvas/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>
