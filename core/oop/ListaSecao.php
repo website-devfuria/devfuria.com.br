@@ -44,7 +44,7 @@ class ListaSecao {
 
     /**
      * Descobre a label da referência segundo a seção
-     * 
+     *
      * @param type $secao
      * @return type
      */
@@ -65,6 +65,17 @@ class ListaSecao {
         return $labelDasReferecias[$secao];
     }
 
+    /**
+     * Retorna a label da subsecao canvas
+     *
+     * @param type $secao
+     * @return type
+     */
+    function retLabelSubsecaoCanvas() {
+
+        $prefixo = "Canvas (HTML5)";
+        return $prefixo;
+    }
 }
 
 ?>

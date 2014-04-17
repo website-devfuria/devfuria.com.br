@@ -14,6 +14,7 @@ class Conteudo {
     const SECAO_ER = "regexp";
     const SUB_SECAO_CURSO = "curso";
     const SUB_SECAO_GUIA = "receitas-tuto-guia";
+    const SUB_SECAO_CANVAS = "canvas";
 //    const GUIA_JS = "js-guia";
 
     /**
