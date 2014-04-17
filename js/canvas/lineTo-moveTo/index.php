@@ -33,25 +33,52 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                         é o ponto horizontal final de nossa reta e o <code>y</code> é o ponto final vertical.
                     </p>
 
-                    <blockquote>
-                        <p>
-                            Esse método destina-se a desenhar uma linha reta desde a posição na qual se encontra a pena
-                            até as coordenadas <code>x</code> e <code>y</code>.
-                        </p>
-                        <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 148)</small>
-                    </blockquote>
-
                     <p>
                         Se ele desenha até determinado ponto, então precisamos indicar onde é o começo, fazemos isso
                         utilizando a função <code>moveTo(x, y)</code>
                     </p>
 
-                    <blockquote>
-                        <p>
-                            Esse método destina-se a posicionar a pena de desenho nas coordeandas <code>x</code> e <code>y</code>.
-                        </p>
-                        <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 148)</small>
-                    </blockquote>
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>O método <code>lineTo()</code></code></h2>
+                        </div>
+
+                        <blockquote>
+                            <p>
+                                Adiciona uma linha ao caminho (path) partindo do ponto atual.
+                                até as coordenadas <code>x</code> e <code>y</code>.
+                            </p>
+                            <small>Danny Goodman (Javascript - Guia prático, pag 369)</small>
+                        </blockquote>
+
+                        <blockquote>
+                            <p>
+                                Esse método destina-se a desenhar uma linha reta desde a posição na qual se encontra a pena
+                                até as coordenadas <code>x</code> e <code>y</code>.
+                            </p>
+                            <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 148)</small>
+                        </blockquote>
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>O método <code>moveTo()</code></h2>
+                        </div>
+
+                        <blockquote>
+                            <p>
+                                Move um ponto para um lugar específico.
+                            </p>
+                            <small>Danny Goodman (Javascript - Guia prático, pag 369)</small>
+                        </blockquote>
+
+                        <blockquote>
+                            <p>
+                                Esse método destina-se a posicionar a pena de desenho nas coordeandas <code>x</code> e <code>y</code>.
+                            </p>
+                            <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 148)</small>
+                        </blockquote>
+                    </div>
 
                     <div class="bs-docs-section">
                         <div class="page-header">

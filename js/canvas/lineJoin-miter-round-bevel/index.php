@@ -30,9 +30,16 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 
                     <div class="bs-docs-section">
 
-                        <p>Texto introdutório</p>
+                        <p>O que faz o método <code>lineJoin()</code>?</p>
 
-                        <p>O que é lineJoin?</p>
+                        <blockquote>
+                            <p>
+                                Estilo de ligação entre linhas no ponto de encontro.
+                            </p>
+                            <small>Danny Goodman (Javascript - Guia prático, pag 371)</small>
+                        </blockquote>
+
+                        <p>Os valores podem ser <code>"miter"</code>, <code>"round"</code> e <code>"bevel"</code>.</p>
 
                     </div>
 

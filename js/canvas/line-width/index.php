@@ -95,9 +95,9 @@ context.stroke();
                             <h2>O tamanho padrão</h2>
                         </div>
 
-                        <p>Parece que o padrão da largura da linha é 1.</p>
+                        <p>O padrão da largura da linha é 1px.</p>
 
-                        <p>Quando omitimos a propriedade prevalece o tamanho padrão 1px.</p>
+                        <p>Quando omitimos a propriedade, prevalecerá o tamanho padrão 1px.</p>
 
                         <div class="row">
                             <div class="col-md-4">

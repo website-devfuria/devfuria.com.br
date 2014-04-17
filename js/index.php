@@ -135,10 +135,12 @@ if ($aba == "curso" || $aba == "") {
             <main class="bs-masthead" id="content" role="main">
                 <div class="container">
                     <h1>Javascript<small> - Canvas</small></h1>
-                    <p>Preciso confessar algo: <strong>tenho o maior carinho por este curso</strong>.</p>
-                    <p>Adoro Javascript (JS) e estou escrevendo as matérias com muita alegria.</p>
-                    <p>JS foi (talvez ainda seja) uma linguagem sempre tida como secundária.</p>
-                    <p>Seja bem vindo curso e espero que você também se apaixone pelo JS.</p>
+                    <p>Porque colocamos o CANVAS na seção Javascript?</p>
+                    <p>
+                        O <strong>canvas</strong> é um tópico de <strong>HTML5</strong>, e o que ele está fazendo
+                        aqui na seção <strong>Javascript</strong> do site?
+                    </p>
+                    <p>Não tive escolha, na verdade eu tive e preferi (por razões óbvias) anexar o assunto a seção Javascript.</p>
                 </div>
             </main>
             <?php
