@@ -3,6 +3,7 @@ Definições
 
 
 ### CURSO
+
 Programa de formação educacional em determinado campo e constituído de uma série de períodos, matérias, lições
 
 Conjunto de matérias que fazem parte de um estudo.
