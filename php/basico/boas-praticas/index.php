@@ -18,7 +18,7 @@ $pagina = $model->getPagina("/php/basico/boas-praticas/");
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1><?php echo $pagina->titulo?></h1>
+                <h1><?php echo $pagina->titulo ?></h1>
                 <p>Aprenda o básico das boas práticas.</p>
                 <p>São quatro dicas essenciais para quem está começando a programar</p>
             </div>
@@ -212,17 +212,20 @@ endereco</code></pre>
                         <p>Às vezes o nome da variável é muito vago como, por exemplo, <code>endereco</code>. Mas que tipo de endereço? Endereço completo? Só
                             o logradouro? Logradouro mais número? Nomes muito curto ou muito longos também não são adequados.</p>
 
-                        <p><strong>Criar nomes adequados para variáveis pode depender da lógica</strong>. Por exemplo, espera-se obter o número menor do array,
-                            então que tal <code>numero_menor</code> ? ou <code>numeroMenor</code>? As duas são adequadas. Quem tem uma boa lógica somada a visão macro do
-                            negócio (domínio) e aliado ao exercício constante de ficar procurando por uma nomenclatura adequadas, consegue sempre
-                            uma boa nomeação. Considere pensar muito antes de nomear “as coisas”.  O ministério dos programadores adverte: <strong>“Prestar
-                                manutenção em um sistema com nomenclaturas do tipo Frankstain pode causar urticárias”</strong>.</p>
+                        <p>
+                            <strong>Criar nomes adequados para variáveis pode depender da lógica</strong>. Por exemplo,
+                            espera-se obter o número menor do array, então que tal <code>numero_menor</code> ? ou
+                            <code>numeroMenor</code>? As duas são adequadas. Quem tem uma boa lógica somada a visão macro
+                            do negócio (domínio) e aliado ao exercício constante de ficar procurando por uma nomenclatura
+                            adequadas, consegue sempre uma boa nomeação. Considere pensar muito antes de nomear “as coisas”.
+                        </p>
 
-                        <p>A figura a seguir mostra um exemplo de convenção de nomenclatura.</p>
-                        <div class="bs-example">
-                            <img class="img-rounded" alt="### Nomenclatura de variáveis" src="nomenclatura1.png" class="img-responsive">
-                            <p>Fonte: <a href="http://code.google.com/p/guardachuva/wiki/ConvencoesDeNomeacao" title="link-externo">Projeto Guarda Chuva</a></p>
-                        </div>
+                        <p>O ministério dos programadores adverte: </p>
+                        
+                        <p>
+                            <strong>“Prestar manutenção em um sistema com nomenclaturas do tipo Frankstain pode causar urticárias”</strong>.
+                        </p>
+
                     </div>
 
                     <div class="bs-docs-section">
