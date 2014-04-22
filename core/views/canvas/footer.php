@@ -1,3 +1,8 @@
+<?php
+/**
+ * Footer das páginas sobre o Canvas (JS)
+ */
+?>
 <footer class="bs-footer">
     <div class="container">
         <div class="row">

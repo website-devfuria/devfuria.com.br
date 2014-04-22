@@ -1,3 +1,8 @@
+<?php
+/**
+ * Footer das páginas index.php
+ */
+?>
         <script src="<?php echo LINKS_PATH; ?>/core/assets/js/jquery.js"></script>
         <script src="<?php echo LINKS_PATH; ?>/core/dist/js/bootstrap.min.js"></script>
 

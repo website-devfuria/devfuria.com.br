@@ -1,6 +1,11 @@
 <?php
 /**
- * Faz a paginação das matérias
+ * Faz a paginação das páginas
+ * ===========================
+ *
+ * As páginas podems ser matérias (cursos).
+ * Os guias (rtg) não estão utilizando.
+ * O canvas também não.
  *
  */
 ?>

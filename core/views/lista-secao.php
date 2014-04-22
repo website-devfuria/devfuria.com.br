@@ -1,15 +1,23 @@
 <?php
 /**
  * Lista as matérias de cada seção
+ * ===============================
  *
- * # diga o label (h1)
- * $view->lista->label = ListaSecao::LABEL_CURSO_JS;
+ * Onde...
  *
- * # diga os links
- * $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_CURSO);
+ *      $view->lista = new ListaSecao();
  *
- * # chame a view
- * include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
+ * Diga o label (h1)
+ *
+ *      $view->lista->label = ListaSecao::LABEL_CURSO_JS;
+ *
+ * Diga os links
+ *
+ *      $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_CURSO);
+ *
+ * Chame a view
+ *
+ *      include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
  */
 ?>
 <h1><?php echo $view->lista->label ?></h1>

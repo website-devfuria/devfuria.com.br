@@ -1,3 +1,8 @@
+<?php
+/**
+ * Footer das páginas de curso
+ */
+?>
 <footer class="bs-footer">
     <div class="container">
         <div class="row">

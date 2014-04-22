@@ -1,26 +1,30 @@
 <?php
 /**
- * Este script é o cabeçalho padrão
+ * Cabeçalho padrão
+ * ================
  *
- * # Sete os dados
- * $view->head->setTitle('titulo');
- * $view->head->setDescription('Descrição');
- * $view->head->setkeywords("keywords");
- * $view->head->setAuthor("autor");
- * include BASE_PATH . VIEWS_PATH . "/head.php";
+ * Sete os dados
  *
- * # Se não tiver algum dado, não chame a função, ex:
- * $view->head->setTitle('titulo');
- * $view->head->setDescription('Descrição');
- * //$view->head->setkeywords();
- * //$view->head->setAuthor();
- * include BASE_PATH . VIEWS_PATH . "/head.php";
+ *      $view->head->setTitle('titulo');
+ *      $view->head->setDescription('Descrição');
+ *      $view->head->setkeywords("keywords");
+ *      $view->head->setAuthor("autor");
+ *      include BASE_PATH . VIEWS_PATH . "/head.php";
+ *
+ * Se não tiver algum dado, não chame a função, ex:
+ *      $view->head->setTitle('titulo');
+ *      $view->head->setDescription('Descrição');
+ *      //$view->head->setkeywords();
+ *      //$view->head->setAuthor();
+ *      include BASE_PATH . VIEWS_PATH . "/head.php";
  *
  */
+
 # título padrão
 if (!$view->head->title) {
     $view->head->title = DOMINIO;
 }
+
 ?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
