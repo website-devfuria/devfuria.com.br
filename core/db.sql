@@ -48,20 +48,26 @@ ALTER TABLE `paginas`
 
 -- viewListaPaginasResumo
 
-CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `subsecoes` AS
+CREATE ALGORITHM = UNDEFINED
+VIEW `subsecoes` AS
 select distinct `paginas`.`subSecao` AS `subsecao` from `paginas` order by `paginas`.`subSecao`;
 
-CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalDePaginas` AS
+CREATE ALGORITHM = UNDEFINED VIEW `viewTotalDePaginas` AS
 select count(0) AS total from paginas;
 
-CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalPorMesSecao` AS
+CREATE ALGORITHM = UNDEFINED
+VIEW `viewTotalPorMesSecao` AS
 select date_format(`paginas`.`dtCriacao`,'%Y-%m') AS `mes`,`paginas`.`secao` AS `secao`,count(`paginas`.`secao`) AS `total`
 from `paginas`
 group by date_format(`paginas`.`dtCriacao`,'%Y-%m'),`paginas`.`secao`
 order by `paginas`.`dtCriacao` desc;
 
-CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalPorSecao` AS
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `viewTotalPorSecao` AS
 select `paginas`.`secao` AS `secao`,count(`paginas`.`secao`) AS `porSecao`
 from `paginas`
 group by `paginas`.`secao`;
+
+CREATE ALGORITHM = UNDEFINED
+VIEW `viewSubSecoes` AS
+SELECT DISTINCT subSecao FROM paginas ORDER BY subSecao
 

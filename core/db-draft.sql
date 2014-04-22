@@ -16,3 +16,11 @@ WHERE `paginas`.`url` = '/logica-de-programacao/basico/exercicios-operadores-atr
 UPDATE `devfuria_fulia`.`paginas`
 SET `metaDescr` = 'Introduziremos o conceito intuitivo de programação orientada a objetos, propriedades e métodos.'
 WHERE `paginas`.`url` = '/js/basico/oop-primeiro-degrau/';
+
+CREATE ALGORITHM = UNDEFINED
+VIEW `viewSubSecoes` AS
+SELECT DISTINCT subSecao FROM paginas ORDER BY subSecao
+
+UPDATE paginas
+SET subSecao  = "rtg"
+WHERE subSecao = "receitas-tuto-guia"
