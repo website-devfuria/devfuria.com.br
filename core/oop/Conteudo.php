@@ -6,16 +6,22 @@
  */
 class Conteudo {
 
-    const SECAO_JS = "js";
-    const SECAO_PHP = "php";
-    const SECAO_LOG = "logica";
-    const SECAO_HTML = "html-css";
+    /**
+     * São os mesmos dados da tabela "secoes"
+     */
+    const SECAO_JS    = "js";
+    const SECAO_PHP   = "php";
+    const SECAO_LOG   = "logica";
+    const SECAO_HTML  = "html-css";
     const SECAO_MYSQL = "mysql";
-    const SECAO_ER = "regexp";
-    const SUB_SECAO_CURSO = "curso";
-    const SUB_SECAO_GUIA = "receitas-tuto-guia";
+    const SECAO_ER    = "regexp";
+
+    /**
+     * São os mesmos dados do campo "subSecao" da tabela "paginas"
+     */
+    const SUB_SECAO_CURSO  = "curso";
+    const SUB_SECAO_GUIA   = "rtg";
     const SUB_SECAO_CANVAS = "canvas";
-//    const GUIA_JS = "js-guia";
 
     /**
      * Array multidimensional que armazena as páginas do site

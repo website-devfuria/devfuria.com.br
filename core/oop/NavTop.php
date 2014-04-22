@@ -22,7 +22,7 @@ class NavTop {
     /**
      * Seção ativa
      *
-     * A seção aqui anotada será assinalada no componetne 'views/nav-top.php'
+     * A seção aqui anotada será assinalada no componente 'views/nav-top.php'
      * O valor é a chave da seção
      *
      */
