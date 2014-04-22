@@ -204,7 +204,7 @@ if (resultado) {
                         <p>Lembre-se que se a expressão estiver sintaticamente errada ela interromperá a excução do script, logo, o uso dos blocos
                             de tratamento de erro (try cath) se faz necessário.</p>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

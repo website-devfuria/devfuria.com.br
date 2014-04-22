@@ -298,7 +298,7 @@ Slim	Benny	snake	m	1996-04-29	\N
                             </div>
                         </div>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

@@ -195,7 +195,7 @@ if (resultado) {
                         <p>Acesse o link <a href="https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806" title="link-externo">https://gist.github.com/flaviomicheletti/cbb755999ceb4f2a6806</a>
                             e clique no botão "Download Gist", descompacte o arquivo e boa diversão.</p>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

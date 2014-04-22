@@ -212,7 +212,7 @@ console.log(qualquer);</code></pre>
 
                         <p>Na próxima matéria veremos como debugar (depurar) o JS.</p>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

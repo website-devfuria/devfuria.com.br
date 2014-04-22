@@ -294,9 +294,8 @@ if (canvas.getContext) {
                             Eis o site do maluco
                             <a href="http://andrew-hoyer.com/" title="link-externo">http://andrew-hoyer.com/</a>
                         </p>
-
-
                     </div>
+
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
@@ -338,7 +337,7 @@ if (canvas.getContext) {
                             </div>
                         </div>
                     </div>
-
+                    <?php include BASE_PATH . VIEWS_PATH . "/canvas/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

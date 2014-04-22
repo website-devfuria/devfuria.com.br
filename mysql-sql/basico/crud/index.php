@@ -304,7 +304,7 @@ WHERE name = 'Bowser';</code></pre>
                         <pre><code class="no-highlight">DELETE FROM pet WHERE name = 'Slim';</code></pre>
 
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

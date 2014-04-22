@@ -192,7 +192,7 @@ $bandRock = "pink-floyd";
                             geito "maroto" só para o código ficar mais legível, mas não tome isso como um estilo, ok?
                         </p>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

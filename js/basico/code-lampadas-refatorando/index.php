@@ -375,7 +375,7 @@ lampada.setEvento();</code></pre>
 
                         <p>Agora chega de lâmpadas, na próxima matéria mudaremos o assunto, até lá.</p>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/cursos/paginacao.php"; ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
