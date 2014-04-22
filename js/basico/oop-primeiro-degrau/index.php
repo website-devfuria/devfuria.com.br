@@ -55,7 +55,7 @@ $pagina = $model->getPagina("/js/basico/oop-primeiro-degrau/");
 
                         <pre><code class="language-javascript">var foo = {};</code></pre>
 
-                        <p>Objeto coma algumas prorpiedades:</p>
+                        <p>Objeto com algumas propriedades:</p>
 
                         <pre><code class="language-javascript">var personagem = {
     nome: "Zé Colméia",
@@ -87,7 +87,7 @@ $pagina = $model->getPagina("/js/basico/oop-primeiro-degrau/");
                         <pre><code class="language-javascript">personagem.chamarCatatau();
 </code></pre>
 
-                        <p><em>Preciso que você faça um esforço mental para entender e decorar o seguinte código</em>:</p>
+                        <p><em>Preciso que você faça um esforço mental para entender e decorar o seguinte esquema</em>:</p>
 
                         <div class="code">
                             <h6>JS</h6>
