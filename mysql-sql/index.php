@@ -63,8 +63,14 @@ require "../core/boot.php";
         <?php
         $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_MYSQL);
         $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_MYSQL, Conteudo::SUB_SECAO_CURSO);
-        include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
         ?>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php include BASE_PATH . VIEWS_PATH . "/lista-secao.php"; ?>
+                </div>
+            </div>
+        </div>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

@@ -1,3 +1,8 @@
+<?php
+/**
+ * Footer das páginas sobre do conteúdo RTG (receitas, tutos e guias)
+ */
+?>
 <footer class="bs-footer">
     <div class="container">
         <div class="row">

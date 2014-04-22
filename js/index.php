@@ -75,8 +75,15 @@ if ($aba == "curso" || $aba == "") {
             <?php
             $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_JS);
             $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_CURSO);
-            include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
             ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <?php include BASE_PATH . VIEWS_PATH . "/lista-secao.php"; ?>
+                    </div>
+                </div>
+            </div>
+
         <?php elseif ($aba == Conteudo::SUB_SECAO_GUIA): ?>
             <div class="" style="padding: 30px 0px;">
                 <div class="container">
@@ -110,8 +117,14 @@ if ($aba == "curso" || $aba == "") {
             <?php
             $view->lista->label = $view->lista->retLabelReferenciaSegundoSecao(Conteudo::SECAO_JS);
             $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_GUIA);
-            include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
             ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <?php include BASE_PATH . VIEWS_PATH . "/lista-secao.php"; ?>
+                    </div>
+                </div>
+            </div>
         <?php else: ?>
             <div class="" style="padding: 30px 0px;">
                 <div class="container">
@@ -146,8 +159,14 @@ if ($aba == "curso" || $aba == "") {
             <?php
             $view->lista->label = $view->lista->retLabelSubsecaoCanvas();
             $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_CANVAS);
-            include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
             ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <?php include BASE_PATH . VIEWS_PATH . "/lista-secao.php"; ?>
+                    </div>
+                </div>
+            </div>
         <?php endif; ?>
 
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>

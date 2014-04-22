@@ -3,20 +3,21 @@
  * Lista as matérias de cada seção
  * ===============================
  *
- * Onde...
+ * Utilizado pela home e pelos conteúdo (curso, rtg, canvas, etc...)
  *
- *      $view->lista = new ListaSecao();
  *
- * Diga o label (h1)
+ * ### Como utilizar
  *
+ *      // Entenda que...
+ *      //$view->lista = new ListaSecao();
+ *
+ *      // Diga o label (h1)
  *      $view->lista->label = ListaSecao::LABEL_CURSO_JS;
  *
- * Diga os links
- *
+ *      // Diga os links
  *      $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_CURSO);
  *
- * Chame a view
- *
+ *      // Chame a view
  *      include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
  */
 ?>

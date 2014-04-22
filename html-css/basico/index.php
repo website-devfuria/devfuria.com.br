@@ -2,7 +2,7 @@
 /**
  * HTML & CSS - index
  */
-require "../../core/boot.php";
+require "../core/boot.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -11,6 +11,15 @@ require "../../core/boot.php";
         $view->head->setTitle('HTML-CSS');
         $view->head->setDescription('Curso, matérias, exercícios, artigos sobre HTML(5) e CSS(3)');
         $view->head->setkeywords("htnl5; css3; curso de html; curso de css;");
+//        $view->head->setkeywords("html; html5; css; css3; tutorial html; tags html; html tabela; codigos html; apostila html; comandos html; html basico; " .
+//            "html básico; html fácil; html início; html iniciante; " .
+//            "html iniciando; html iniciante; começando com html; começando no html; " .
+//            "html descomplicado; aprendendo html; matéria sobre html; aula sobre html" .
+//            "css básico; css fácil; css início; css iniciante; " .
+//            "css iniciando; css iniciante; começando com css; começando no css; " .
+//            "css descomplicado; aprendendo css; matéria sobre css; aula sobre css;" .
+//            "folhas estilo cascata; web standards; padrões web; tableless"
+//        );
         include BASE_PATH . VIEWS_PATH . "/head.php";
         ?>
         <link rel="canonical" href="<?php echo LINKS_PATH; ?>/html-css/" />
@@ -42,8 +51,14 @@ require "../../core/boot.php";
         <?php
         $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_HTML);
         $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::SUB_SECAO_CURSO);
-        include BASE_PATH . VIEWS_PATH . "/cursos-index/lista-secao.php";
         ?>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php include BASE_PATH . VIEWS_PATH . "/lista-secao.php"; ?>
+                </div>
+            </div>
+        </div>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>
