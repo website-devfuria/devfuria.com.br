@@ -48,7 +48,7 @@ class ListaSecao {
      * @param type $secao
      * @return type
      */
-    function retLabelReferenciaSegundoSecao($secao) {
+    function retLabelRtgSegundoSecao($secao) {
 
         $prefixo = "Receitas, Tutoriais e Guia de Referência";
 

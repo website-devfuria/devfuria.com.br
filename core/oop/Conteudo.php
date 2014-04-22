@@ -20,7 +20,7 @@ class Conteudo {
      * São os mesmos dados do campo "subSecao" da tabela "paginas"
      */
     const SUB_SECAO_CURSO  = "curso";
-    const SUB_SECAO_GUIA   = "rtg";
+    const SUB_SECAO_RTG   = "rtg";
     const SUB_SECAO_CANVAS = "canvas";
 
     /**

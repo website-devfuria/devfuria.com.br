@@ -6,8 +6,8 @@ require "../core/boot.php";
 $aba = $_SERVER['QUERY_STRING'];
 if ($aba == "curso" || $aba == "") {
     $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_CURSO;
-} elseif ($aba == Conteudo::SUB_SECAO_GUIA) {
-    $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_GUIA;
+} elseif ($aba == Conteudo::SUB_SECAO_RTG) {
+    $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_RTG;
 } elseif ($aba == "canvas") {
     $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 }
@@ -49,7 +49,7 @@ if ($aba == "curso" || $aba == "") {
                                     <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_CURSO ?>">Curso</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_GUIA ?>">Receitas, Tutoriais e Guia de Referência</a>
+                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_RTG ?>">Receitas, Tutoriais e Guia de Referência</a>
                                 </li>
                                 <li>
                                     <a href="<?php echo LINKS_PATH . "/js/?canvas" ?>">Canvas</a>
@@ -84,7 +84,7 @@ if ($aba == "curso" || $aba == "") {
                 </div>
             </div>
 
-        <?php elseif ($aba == Conteudo::SUB_SECAO_GUIA): ?>
+        <?php elseif ($aba == Conteudo::SUB_SECAO_RTG): ?>
             <div class="" style="padding: 30px 0px;">
                 <div class="container">
                     <div class="row">
@@ -94,7 +94,7 @@ if ($aba == "curso" || $aba == "") {
                                     <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_CURSO ?>">Curso</a>
                                 </li>
                                 <li class="active">
-                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_GUIA ?>">Receitas, Tutoriais e Guia de Referência</a>
+                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_RTG ?>">Receitas, Tutoriais e Guia de Referência</a>
                                 </li>
                                 <li>
                                     <a href="<?php echo LINKS_PATH . "/js/?canvas" ?>">Canvas</a>
@@ -115,8 +115,8 @@ if ($aba == "curso" || $aba == "") {
                 </div>
             </main>
             <?php
-            $view->lista->label = $view->lista->retLabelReferenciaSegundoSecao(Conteudo::SECAO_JS);
-            $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_GUIA);
+            $view->lista->label = $view->lista->retLabelRtgSegundoSecao(Conteudo::SECAO_JS);
+            $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_RTG);
             ?>
             <div class="container">
                 <div class="row">
@@ -135,7 +135,7 @@ if ($aba == "curso" || $aba == "") {
                                     <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_CURSO ?>">Curso</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_GUIA ?>">Receitas, Tutoriais e Guia de Referência</a>
+                                    <a href="<?php echo LINKS_PATH . "/js/?" . Conteudo::SUB_SECAO_RTG ?>">Receitas, Tutoriais e Guia de Referência</a>
                                 </li>
                                 <li class="active">
                                     <a href="<?php echo LINKS_PATH . "/js/?canvas" ?>">Canvas</a>

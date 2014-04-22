@@ -4,7 +4,7 @@
  */
 require "../../core/boot.php";
 $pagina = $model->getPagina("/js/math-random-numero-randomico-em-javascript/");
-$view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_GUIA;
+$view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_RTG;
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -181,7 +181,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_GUIA;
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-        <?php include BASE_PATH . VIEWS_PATH . "/refers/footer.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/rtg/footer.php"; ?>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>
