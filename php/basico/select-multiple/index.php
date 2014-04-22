@@ -87,7 +87,7 @@ $pagina = $model->getPagina("/php/basico/select-multiple/");
 </code></pre>
                         </div>
                         <p>
-                            Por se tratar de um controle do tipo <strong>combobox</strong> podemos dizer que o que é 
+                            Por se tratar de um controle do tipo <strong>combobox</strong> podemos dizer que o que é
                             válido para o controle...
                         </p>
 
@@ -98,18 +98,22 @@ $pagina = $model->getPagina("/php/basico/select-multiple/");
                         <pre><code class="language-html">&lt;select multiple&gt;</code></pre>
 
                         <p>
-                            Em outras palvaras, quero dizer que se você não conhece nada sobre o controle então é 
+                            Em outras palvaras, quero dizer que se você não conhece nada sobre o controle então é
                             melhor ler a matéria anterior <?php Aux::printAncora("/php/basico/combobox-input-form-select/", "titulo"); ?>
-                            que explica como manipular o controle controle <code>select</code>.
+                            que explica como manipular o controle <code>select</code>.
                         </p>
 
-                        <p>O único detalhe que merece atenção é  propriedade <code>name</code> do controle.</p>
+                        <p>
+                            O único detalhe que merece atenção é a propriedade <code>name</code>. Ela foi
+                            acrescida dos sinais <code>[]</code>.
+                        </p>
 
-                        <p>Ela foi acrescida dos sinais <code>[]</code>.</p>
+                        <p>
+                            Sem os colchetes, o servidor não entenderia que estamos enviando multiplos valores. Ele
+                            interpretará como um par valor <code>cidade="apenas-uma-cidade"</code>.
+                        </p>
 
-                        <p>Sem os colchetes, o servidor não entenderia que estamos enviando multiplos valores.</p>
-
-                        <p>Com os colchetes, o servidor entende os dados como um array, ex:</p>
+                        <p>Com os colchetes, o servidor entenderá os dados como um array, ex: <code>array("sa", "sbc")</code>.</p>
 
                     </div>
 
@@ -154,39 +158,39 @@ if ($_POST['cidades']) {
                         </div>
 
                         <p>Para carregar o formulário basta percorrer o array e "printar" as "options".</p>
-                        
+
                         <pre><code class='language-php'>&lt;?php foreach ($arrCombo as $key =&gt; $value): ?&gt;
     &lt;?php echo "&lt;option value=\"$key\"  $selected&gt;$value&lt;/option&gt;"; ?&gt;
-&lt;?php endforeach; ?&gt;</code></pre> 
-                        
+&lt;?php endforeach; ?&gt;</code></pre>
+
                         <p>Mas queremos marcar as "options" segundo os valores selecionados.</p>
-                        
+
                         <p>
                             Os valores selecionados seriam um array como o abaixo, lembrando que ele seria dinâmico e não
                             estático como em nosso exemplo.
                         </p>
-                        
+
                         <pre><code class='language-php'>$valores_selecionados = array(
-   "scs", 
+   "scs",
    "sbc"
-);</code></pre> 
-                        
+);</code></pre>
+
                         <p>
                             O "pulo do gato" é, dentro do laço, perguntar se a chave (<code>$key</code>) está contida no
                             array <code>$valores_selecionados</code>.
                         </p>
-                        
+
                         <p>Fazemos isso com a função <code>in_array()</code>.</p>
-                        
+
                         <p>
                             O código abaixo retornará <code>true</code> caso encontre a <code>$key</code> dentro do arraye
                             <code>$valores_selecionados</code>.
                         </p>
-                        
-                        <pre><code class='language-php'>(in_array($key, $valores_selecionados)) ? "selected=\"selected\"" : null; </code></pre>                         
-                        
-                        <h3>Resultado</h3> 
-                        
+
+                        <pre><code class='language-php'>(in_array($key, $valores_selecionados)) ? "selected=\"selected\"" : null; </code></pre>
+
+                        <h3>Resultado</h3>
+
                         <div class="code">
                             <h6>form.php</h6>
                             <pre><code class="language-php">&lt;?php
@@ -200,7 +204,7 @@ $arrCombo = array(
 
 # Array com os os valores que devem ser selecionados
 $valores_selecionados = array(
-   "scs", 
+   "scs",
    "sbc"
 );
 
