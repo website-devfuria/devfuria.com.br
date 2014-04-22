@@ -1,6 +1,6 @@
 <?php
 /**
- * Nav-top das páginas curso, rtg, canvas, etc...
+ * Nav-top da família 01  (cursos, rtg, canvas, etc...)
  */
 
 # anota a seção ativa

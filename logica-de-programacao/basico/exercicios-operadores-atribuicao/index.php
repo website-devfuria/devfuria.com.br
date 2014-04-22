@@ -9,10 +9,10 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/exercicios-operadores
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/familia01/head.php"; ?>
     </head>
     <body>
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/familia01/nav-top.php"; ?>
 
         <!-- Título -->
         <div class="bs-header" id="content">

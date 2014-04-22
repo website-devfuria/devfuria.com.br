@@ -9,10 +9,10 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/familia01/head.php"; ?>
     </head>
     <body class="">
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/familia01/nav-top.php"; ?>
 
         <!-- Matéria -->
         <div class="container">
@@ -337,7 +337,7 @@ if (canvas.getContext) {
                             </div>
                         </div>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/canvas/paginacao.php"; ?>
+                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

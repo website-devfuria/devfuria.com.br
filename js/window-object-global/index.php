@@ -11,10 +11,10 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_GUIA;
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/head.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/familia01/head.php"; ?>
     </head>
     <body class="receitas-body">
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/nav-top.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/familia01/nav-top.php"; ?>
 
         <!-- Matéria -->
         <div class="container">

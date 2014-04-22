@@ -1,6 +1,6 @@
 <?php
 /**
- * Head dos cursos
+ * Head da família 01  (cursos, rtg, canvas, etc...)
  */
 
 # Setando dados
