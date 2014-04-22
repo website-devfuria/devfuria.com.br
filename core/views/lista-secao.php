@@ -3,7 +3,7 @@
  * Lista as matérias de cada seção
  * ===============================
  *
- * Utilizado pela home e pelos conteúdo (curso, rtg, canvas, etc...)
+ * Utilizado pela home, index e pelos conteúdo (curso, rtg, canvas, etc...)
  *
  *
  * ### Como utilizar

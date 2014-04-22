@@ -3,7 +3,7 @@
  * Faz a paginação das páginas
  * ===========================
  *
- * As páginas podems ser matérias (cursos), canvas, etc...
+ * As páginas podem ser matérias (cursos), canvas, etc...
  *
  * Os guias (rtg) não devem utilizar (não tem sequencia lógica).
  *

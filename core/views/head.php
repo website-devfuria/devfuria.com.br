@@ -12,6 +12,7 @@
  *      include BASE_PATH . VIEWS_PATH . "/head.php";
  *
  * Se não tiver algum dado, não chame a função, ex:
+ * 
  *      $view->head->setTitle('titulo');
  *      $view->head->setDescription('Descrição');
  *      //$view->head->setkeywords();
