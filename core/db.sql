@@ -1,5 +1,5 @@
 DROP TABLES IF EXISTS paginas, secoes;
-DROP VIEW  IF EXISTS subsecoes, viewTotalDePaginas, viewTotalPorMesSecao, viewTotalPorSecao;
+DROP VIEW  IF EXISTS subsecoes, viewTotalDePaginas, viewTotalPorMesSecao, viewTotalPorSecao, viewSubSecoes;
 
 CREATE TABLE IF NOT EXISTS `secoes` (
   `id` int(11) NOT NULL,
@@ -48,9 +48,6 @@ ALTER TABLE `paginas`
 
 -- viewListaPaginasResumo
 
-CREATE ALGORITHM = UNDEFINED
-VIEW `subsecoes` AS
-select distinct `paginas`.`subSecao` AS `subsecao` from `paginas` order by `paginas`.`subSecao`;
 
 CREATE ALGORITHM = UNDEFINED VIEW `viewTotalDePaginas` AS
 select count(0) AS total from paginas;
