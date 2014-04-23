@@ -21,71 +21,82 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Desenhando linhas</h1>
+                        <h1>Paths (Caminhos)</h1>
                     </div>
                 </div>
 
                 <!-- Corpo da matéria -->
                 <div class="col-md-12" role="main">
-
-                    <p>
-                        Para desenharmos uma linha utilizamos a função <code>lineTo(x, y)</code>, onde <code>x</code>
-                        é o ponto horizontal final de nossa reta e o <code>y</code> é o ponto final vertical.
-                    </p>
-
-                    <p>
-                        Se ele desenha até determinado ponto, então precisamos indicar onde é o começo, fazemos isso
-                        utilizando a função <code>moveTo(x, y)</code>
-                    </p>
-
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>O método <code>lineTo()</code></code></h2>
+                            <h2>O método <code>beginPath()</code></code></h2>
                         </div>
 
                         <blockquote>
                             <p>
-                                Adiciona uma linha ao caminho (path) partindo do ponto atual.
-                                até as coordenadas <code>x</code> e <code>y</code>.
+                                Creates a new path. Once created, future drawing commands are directed into the path and used to build the path up.
                             </p>
-                            <small>Danny Goodman (Javascript - Guia prático, pag 369)</small>
+                            <small>MDN</small>
                         </blockquote>
-
-                        <blockquote>
-                            <p>
-                                Esse método destina-se a desenhar uma linha reta desde a posição na qual se encontra a pena
-                                até as coordenadas <code>x</code> e <code>y</code>.
-                            </p>
-                            <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 148)</small>
-                        </blockquote>
-                    </div>
+                    </div>                
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>O método <code>moveTo()</code></h2>
+                            <h2>O método <code>closePath()</code></code></h2>
                         </div>
 
                         <blockquote>
                             <p>
-                                Move um ponto para um lugar específico.
+                                Closes the path so that future drawing commands are once again directed to the context..
                             </p>
-                            <small>Danny Goodman (Javascript - Guia prático, pag 369)</small>
+                            <small>MDN</small>
                         </blockquote>
-
-                        <blockquote>
-                            <p>
-                                Esse método destina-se a posicionar a pena de desenho nas coordeandas <code>x</code> e <code>y</code>.
-                            </p>
-                            <small>Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 148)</small>
-                        </blockquote>
-                    </div>
+                    </div>                
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>Precisamos de pelo menos um <code>moveTo()</code></h2>
+                            <h2>O método <code>stroke()</code></code></h2>
                         </div>
 
-                        <p>O canvas abaixo está em branco porque o código não funfou (não funcionou).</p>
+                        <blockquote>
+                            <p>
+                                Draws the shape by stroking its outline..
+                            </p>
+                            <small>MDN</small>
+                        </blockquote>
+                    </div>                
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>O método <code>fill()</code></code></h2>
+                        </div>
+
+                        <blockquote>
+                            <p>
+                                Draws a solid shape by filling the path's content area.
+                            </p>
+                            <small>MDN</small>
+                        </blockquote>
+                    </div>                
+
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>Uso básico de <code>beginPath()</code> e <code>closePath()</code></h2>
+                        </div>
+
+                        <p> O caminho (path) está entre as chamadas das funções <code>beginPath()</code> e <code>closePath()</code>
+                            e desehar um triangulo é o exemplo que mais ilustra o caminho (path).
+                        </p>
+
+                        <p>Primeira coisa é tentar entender as coordenadas.</p>
+
+                        <p>
+                            Segunda coisa, repare que só traçamos duas linhas (<code>lineTo</code>). O método 
+                            <code>closePath()</code> executou última linha, ou seja, fechou nosso caminho.
+                        </p>
+
+                        <p>Ele pintou a linha até o ponto inicial (<code>beginPath</code>) que era <code>x=30</code> e <code>y=120</code></p>
 
                         <div class="row">
                             <div class="col-md-4">
@@ -93,8 +104,11 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                                 <script>
                                     var canvas = document.getElementById('ex01');
                                     var context = canvas.getContext('2d');
-                                    // falta o moveTo()
-                                    context.lineTo(100, 50);
+                                    context.beginPath();
+                                    context.moveTo(30, 120);
+                                    context.lineTo(45, 90);
+                                    context.lineTo(60, 120);
+                                    context.closePath();
                                     context.stroke();
                                 </script>
 
@@ -104,40 +118,113 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
-// falta o moveTo()
-context.lineTo(100, 50);
-context.stroke();
+
+context.beginPath();     // iniciamos o path
+context.moveTo(30, 120); // movemos a pena para x=30 e y=120 (canto esquerdo)
+context.lineTo(45, 90);  // traçamos uma diagonal até x=45 e y=90 (canto superiror)
+context.lineTo(60, 120); // diagonal até x=60 e y=120 (canto direito)
+context.closePath();     // fecha o caminho (traça uma reta até x=30 e y=120 - beginPath)
+context.stroke();        // pinta o caminho
 </code></pre>
                             </div>
                         </div>
+
+                        <h3>Imporante</h3>
+
+                        <ul>
+                            <li>Sem o <code>beginPath()</code> o <code>closePath()</code> incrivelmente funciona. Pelo menos neste caso simples.</li>
+                            <li>A ordem é importante, quero dizer que <code>closePath</code> deve vir sempre antes de <code>stroke()</code>.</li>
+                        </ul>
                     </div>
+
 
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>O mínimo para o <code>linteTo()</code> funcionar</h2>
+                            <h2>Outro triângulo</h2>
                         </div>
 
-                        <p>O <code>lineTo()</code> precisa de um ponto incial.</p>
+
+                        <p>Este triângulo começa no canto esquerdo em <code>x=75, y=50</code>.</p>
+
+                        <p>Traçamos uma diagonal até <code>x=100, y=75</code>, canto inferior.</p>
+
+                        <p>E etão subimos com uma reta até <code>x=100, y=25</code>, canto superior.</p>
+
+                        <p>Novamente, o método <code>closePath()</code> completa nosso triângulo.</p>
 
                         <div class="row">
                             <div class="col-md-4">
-                                <canvas id='ex02' width='300' height='150'>Canvas not supported</canvas>
+                                <canvas id='ex02' height='150'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex02');
                                     var context = canvas.getContext('2d');
-                                    context.moveTo(10, 10);
-                                    context.lineTo(100, 50);
+                                    context.beginPath();
+                                    context.moveTo(75, 50);
+                                    context.lineTo(100, 75);
+                                    context.lineTo(100, 25);
+                                    context.closePath();
                                     context.stroke();
                                 </script>
+
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
+                                <p></p>
+
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
-context.moveTo(10, 10); // Movemos a pena em 10px tanto no eixo x como no eixo y
-context.lineTo(100, 50);// Desenhamos uma diagonal de 100px,
-                        // seu ponto final é 50px abaixo do ponto inicial
+
+context.beginPath();
+context.moveTo(75,50);
+context.lineTo(100,75);
+context.lineTo(100,25);
+context.closePath();
 context.stroke();
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>Exemplo do método <code>fill()</code></h2>
+                        </div>
+
+                        <p>Esse triângulo começa em <code>x=30, y=30</code>, canto esquerdo.</p>
+
+                        <p>Pinta uma reta até <code>x=90, y=30</code>.</p>
+
+                        <p>Uma diagonal até <code>x=30, y=90</code></p>
+
+                        <p>O <code>fill()</code> desenha a última reta e preenche o triângulo.</p>
+
+                        <p>Repare que ele substituiu tanto o método <code>closePath()</code> quanto o <code>stroke()</code>.</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <canvas id='ex03' height='150'>Canvas not supported</canvas>
+                                <script>
+                                    var canvas = document.getElementById('ex03');
+                                    var context = canvas.getContext('2d');
+                                    context.beginPath();
+                                    context.moveTo(30, 30);
+                                    context.lineTo(90, 30);
+                                    context.lineTo(30, 90);
+                                    context.fill();
+                                </script>
+
+                            </div>
+                            <div class="col-md-8">
+                                <p></p>
+
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+var context = canvas.getContext('2d');
+
+context.beginPath(); 
+context.moveTo(30, 30);
+context.lineTo(90, 30);  
+context.lineTo(30, 90);
+context.fill();  
 </code></pre>
                             </div>
                         </div>
@@ -146,41 +233,45 @@ context.stroke();
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>Um único <code>moveTo()</code> para escrever várias linhas</h2>
+                            <h2>Exemplo de caminho com método <code>bezierCurveTo()</code></h2>
                         </div>
 
-                        <p>Precisamos chamar  pelo menos uma vez o método <code>moveTo()</code>.</p>
-
-                        <p>Por outro lado, podemos escrever quantas linhas quizermos.</p>
-
-                        <p>O <strong>ponto inicial</strong> da próxima linha será o <strong>ponto final</strong> da linha anterior.</p>
-
+                        <p>Ok, ainda não falamos do método <code>bezierCurveTo()</code>.</p>
+                        
+                        <p>Mas não pude deixar de mostar o exemplo.</p>
+                        
                         <div class="row">
                             <div class="col-md-4">
-                                <canvas id='ex03' width='300' height='150'>Canvas not supported</canvas>
+                                <canvas id='ex04' height='150'>Canvas not supported</canvas>
                                 <script>
-                                    var canvas = document.getElementById('ex03');
+                                    var canvas = document.getElementById('ex04');
                                     var context = canvas.getContext('2d');
+                                    context.beginPath();
                                     context.moveTo(10, 10);
-                                    context.lineTo(100, 50);
-                                    context.lineTo(50, 110);
-                                    context.lineTo(110, 120);
-                                    context.stroke();
+                                    context.lineTo(90, 90);
+                                    context.bezierCurveTo(30, 30, 30, 60, 60, 150);
+                                    context.fill();
                                 </script>
+
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex03');
+                                <p></p>
+
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
-context.moveTo(10, 10);
-context.lineTo(100, 50);
-context.lineTo(50, 110);
-context.lineTo(110, 120);
-context.stroke();
+
+context.beginPath();  
+context.moveTo(10, 10);  
+context.lineTo(90, 90);  
+context.bezierCurveTo(30, 30, 30, 60, 60, 150);   
+context.fill();  
 </code></pre>
-                                <p>Repare que chamamos várias vezes o método <code>lineTo()</code>.</p>
                             </div>
                         </div>
                     </div>
+
+
+
 
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
