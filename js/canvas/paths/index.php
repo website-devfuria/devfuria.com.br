@@ -3,7 +3,7 @@
  *
  */
 require "../../../core/boot.php";
-$pagina = $model->getPagina("/js/canvas/lineTo-moveTo/");
+$pagina = $model->getPagina("/js/canvas/paths/");
 $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Paths (Caminhos)</h1>
+                        <h1>Paths (caminhos)</h1>
                     </div>
                 </div>
 
