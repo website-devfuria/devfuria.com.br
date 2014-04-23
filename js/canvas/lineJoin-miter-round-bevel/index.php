@@ -58,22 +58,48 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                                     context.moveTo(60, 100);
                                     context.lineTo(110, 50);
                                     context.lineTo(160, 100);
-                                    context.lineJoin = 'miter'; // <----
+                                    context.lineJoin = 'miter';
                                     context.lineWidth = 25;
                                     context.stroke();
                                 </script>
-
                             </div>
                             <div class="col-md-8">
-                                <p></p>
-
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 
 context.moveTo(60, 100);
 context.lineTo(110, 50);
 context.lineTo(160, 100);
-context.lineJoin = 'miter'; // <----
+context.lineJoin = 'miter';
+context.lineWidth = 25;
+context.stroke();
+</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <canvas id='ex01-1' height='150'>Canvas not supported</canvas>
+                                <script>
+                                    var canvas = document.getElementById('ex01-1');
+                                    var context = canvas.getContext('2d');
+
+                                    context.moveTo(50, 50);
+                                    context.lineTo(130, 50);
+                                    context.lineTo(130, 130);
+                                    context.lineJoin = "miter";
+                                    context.lineWidth = 25;
+                                    context.stroke();
+                                </script>
+                            </div>
+                            <div class="col-md-8">
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+var context = canvas.getContext('2d');
+
+context.moveTo(50, 50);
+context.lineTo(130, 50);
+context.lineTo(130, 130);
+context.lineJoin = "miter";
 context.lineWidth = 25;
 context.stroke();
 </code></pre>
@@ -97,7 +123,7 @@ context.stroke();
                                     context.moveTo(60, 100);
                                     context.lineTo(110, 50);
                                     context.lineTo(160, 100);
-                                    context.lineJoin = 'round'; // <-----
+                                    context.lineJoin = 'round';
                                     context.lineWidth = 25;
                                     context.stroke();
                                 </script>
@@ -109,7 +135,35 @@ var context = canvas.getContext('2d');
 context.moveTo(60, 100);
 context.lineTo(110, 50);
 context.lineTo(160, 100);
-context.lineJoin = 'round'; // <----
+context.lineJoin = 'round';
+context.lineWidth = 25;
+context.stroke();
+</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <canvas id='ex02-1' width='300' height='150'>Canvas not supported</canvas>
+                                <script>
+                                    var canvas = document.getElementById('ex02-1');
+                                    var context = canvas.getContext('2d');
+
+                                    context.moveTo(50, 50);
+                                    context.lineTo(130, 50);
+                                    context.lineTo(130, 130);
+                                    context.lineJoin = "round";
+                                    context.lineWidth = 25;
+                                    context.stroke();
+                                </script>
+                            </div>
+                            <div class="col-md-8">
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
+var context = canvas.getContext('2d');
+
+context.moveTo(50, 50);
+context.lineTo(130, 50);
+context.lineTo(130, 130);
+context.lineJoin = "round";
 context.lineWidth = 25;
 context.stroke();
 </code></pre>
@@ -130,12 +184,12 @@ context.stroke();
                                 <script>
                                     var canvas = document.getElementById('ex03');
                                     var context = canvas.getContext('2d');
-context.moveTo(60, 100);
-context.lineTo(110, 50);
-context.lineTo(160, 100);
-context.lineJoin = 'bevel'; // <----
-context.lineWidth = 25;
-context.stroke();
+                                    context.moveTo(60, 100);
+                                    context.lineTo(110, 50);
+                                    context.lineTo(160, 100);
+                                    context.lineJoin = 'bevel';
+                                    context.lineWidth = 25;
+                                    context.stroke();
                                 </script>
                             </div>
                             <div class="col-md-8">
@@ -145,7 +199,34 @@ var context = canvas.getContext('2d');
 context.moveTo(60, 100);
 context.lineTo(110, 50);
 context.lineTo(160, 100);
-context.lineJoin = 'bevel'; // <----
+context.lineJoin = 'bevel';
+context.lineWidth = 25;
+context.stroke();
+</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <canvas id='ex03-1' width='300' height='150'>Canvas not supported</canvas>
+                                <script>
+                                    var canvas = document.getElementById('ex03-1');
+                                    var context = canvas.getContext('2d');
+context.moveTo(50, 50);
+context.lineTo(130, 50);
+context.lineTo(130, 130);
+context.lineJoin = "bevel";
+context.lineWidth = 25;
+context.stroke();
+                                </script>
+                            </div>
+                            <div class="col-md-8">
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
+var context = canvas.getContext('2d');
+
+context.moveTo(50, 50);
+context.lineTo(130, 50);
+context.lineTo(130, 130);
+context.lineJoin = "bevel";
 context.lineWidth = 25;
 context.stroke();
 </code></pre>

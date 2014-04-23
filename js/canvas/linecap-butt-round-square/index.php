@@ -115,6 +115,34 @@ context.stroke();
 </code></pre>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <canvas id='ex02' width='300' height='150'>Canvas not supported</canvas>
+                                <script>
+                                    var canvas = document.getElementById('ex02');
+                                    var context = canvas.getContext('2d');
+
+context.beginPath();
+context.moveTo(50, 140);
+context.lineTo(150, 140);
+context.lineTo(150, 260);
+context.lineJoin = "round";
+context.stroke();
+                                </script>
+                            </div>
+                            <div class="col-md-8">
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
+var context = canvas.getContext('2d');
+
+context.beginPath();
+context.moveTo(50, 140);
+context.lineTo(150, 140);
+context.lineTo(150, 260);
+context.lineJoin = "round";
+context.stroke();
+</code></pre>
+                            </div>
+                        </div>
                     </div>
 
 
