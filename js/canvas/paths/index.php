@@ -27,57 +27,97 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 
                 <!-- Corpo da matéria -->
                 <div class="col-md-12" role="main">
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h2>O método <code>beginPath()</code></code></h2>
-                        </div>
 
-                        <blockquote>
-                            <p>
-                                Creates a new path. Once created, future drawing commands are directed into the path and used to build the path up.
-                            </p>
-                            <small>MDN</small>
-                        </blockquote>
-                    </div>                
+                    <blockquote>
+                        <p>Cada objeto que implementa a interface <strong>CanvasPathMethods</strong> possue um caminho.</p>
 
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h2>O método <code>closePath()</code></code></h2>
-                        </div>
+                        <p>Sâo eles:</p>
 
-                        <blockquote>
-                            <p>
-                                Closes the path so that future drawing commands are once again directed to the context..
-                            </p>
-                            <small>MDN</small>
-                        </blockquote>
-                    </div>                
+                        <ul>
+                            <li>closePath</li>
+                            <li>moveTo</li>
+                            <li>lineTo</li>
+                            <li>quadraticCurveTo</li>
+                            <li>bezierCurveTo</li>
+                            <li>arcTo</li>
+                            <li>rect</li>
+                            <li>arc</li>
+                            <li>ellipse</li>
+                        </ul>
 
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h2>O método <code>stroke()</code></code></h2>
-                        </div>
+                        <p>Um caminho tem uma lista de zero ou mais subpaths.</p>
 
-                        <blockquote>
-                            <p>
-                                Draws the shape by stroking its outline..
-                            </p>
-                            <small>MDN</small>
-                        </blockquote>
-                    </div>                
+                        <p>
+                            Cada subpath consiste de uma lista de um ou mais pontos, ligados por segmentos de linhas retas
+                            ou curvas, e um sinalizador que indica se o subpath está fechado ou não.
+                        </p>
+
+                        <p>
+                            <small>Fonte:
+                                <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#concept-path" title="link-externo">
+                                    WHATWG - concept-path
+                                </a>
+                            </small>
+                        </p>
+                    </blockquote>
+
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2>O método <code>fill()</code></code></h2>
+                            <h2>Criando caminhos (paths)</h2>
                         </div>
 
-                        <blockquote>
-                            <p>
-                                Draws a solid shape by filling the path's content area.
-                            </p>
-                            <small>MDN</small>
-                        </blockquote>
-                    </div>                
+                        <p>A documentação da MDN diz que é preciso 3 passos para criar um caminho (path):</p>
+
+                        <h3>1 passo</h3>
+
+                        <p>O primeiro passo para criar um caminho (path) é chamar o método<code>beginPath()</code>.</p>
+
+                        <p>
+                            Internamente, os caminhos são armazenados como uma lista de sub-caminhos (linhas, arcos, etc)
+                            que juntos formam uma forma (shape).
+                        </p>
+
+                        <h3>2 passo</h3>
+
+                        <p>O segundo passo é chamar os métodos que realmente especificam os caminhos a ser desenhado.</p>
+
+                        <h3>3 passo</h3>
+
+                        <p>A terceira (opcional), é  chamar  afunção <code>closePath()</code>.</p>
+
+                        <p>Este método tenta fechar a forma (shape) desenhando uma linha reta do ponto atual para o início.</p>
+
+                        <p>Se a forma já foi fechada ou há apenas um ponto na lista, esta função não faz nada.</p>
+
+                    </div>
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>Métodos utilizados</h2>
+                        </div>
+
+                        <h3><code>beginPath()</code></code></h3>
+                        <p>Cria um novo caminho e reinicia o atual.</p>
+                        <p>Toda vez que este método é chamado, a lista é redefinida e podemos começar a desenhar novas formas.</p>
+
+                        <h3><code>closePath()</code></code></h3>
+                        <p>
+                            Fecha o subpath atual e começa um novo subpath que tem um ponto de partida que é igual
+                            ao da extremidade do subpath fechada.
+                        </p>
+
+                        <h3><code>stroke()</code></code></h3>
+                        <p>Desenha o caminho que você definiu usando os estilos de traçado atuais.</p>
+
+                        <h3><code>fill()</code></code></h3>
+                        <p>Prenche o path atual (caminho) usando o estilo de preenchimento atual</p>
+                        <p>A cor padrão é preto</p>
+                        <p>
+                            Quando você chama o método <code>fill()</code>, todas as formas (shapes) abertas são fechadas automaticamente,
+                            assim você não tem que chamar <code>closePath()</code>.
+                        </p>
+                    </div>
 
 
                     <div class="bs-docs-section">
@@ -86,21 +126,21 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                         </div>
 
                         <p> O caminho (path) está entre as chamadas das funções <code>beginPath()</code> e <code>closePath()</code>
-                            e desehar um triangulo é o exemplo que mais ilustra o caminho (path).
+                            e desenhar um triângulo é o exemplo que mais ilustra o caminho (path).
                         </p>
 
-                        <p>Primeira coisa é tentar entender as coordenadas.</p>
+                        <p>Primeira coisa é tentar entender as coordenadas (veja os comentários).</p>
 
                         <p>
-                            Segunda coisa, repare que só traçamos duas linhas (<code>lineTo</code>). O método 
-                            <code>closePath()</code> executou última linha, ou seja, fechou nosso caminho.
+                            Segunda coisa, repare que só traçamos duas linhas (<code>lineTo</code>). O método
+                            <code>closePath()</code> executou a última linha, ou seja, fechou nosso caminho.
                         </p>
 
                         <p>Ele pintou a linha até o ponto inicial (<code>beginPath</code>) que era <code>x=30</code> e <code>y=120</code></p>
 
                         <div class="row">
                             <div class="col-md-4">
-                                <canvas id='ex01' height='150'>Canvas not supported</canvas>
+                                <canvas id='ex01'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex01');
                                     var context = canvas.getContext('2d');
@@ -129,11 +169,11 @@ context.stroke();        // pinta o caminho
                             </div>
                         </div>
 
-                        <h3>Imporante</h3>
+                        <h3>Importante</h3>
 
                         <ul>
-                            <li>Sem o <code>beginPath()</code> o <code>closePath()</code> incrivelmente funciona. Pelo menos neste caso simples.</li>
-                            <li>A ordem é importante, quero dizer que <code>closePath</code> deve vir sempre antes de <code>stroke()</code>.</li>
+                            <li>Sem o <code>beginPath()</code>, o <code>closePath()</code> incrivelmente funciona. Pelo menos neste caso simples.</li>
+                            <li>A ordem é importante, se o objetivo é fechar o caminho então <code>closePath</code> deve vir sempre antes de <code>stroke()</code>.</li>
                         </ul>
                     </div>
 
@@ -144,18 +184,17 @@ context.stroke();        // pinta o caminho
                             <h2>Outro triângulo</h2>
                         </div>
 
-
                         <p>Este triângulo começa no canto esquerdo em <code>x=75, y=50</code>.</p>
 
                         <p>Traçamos uma diagonal até <code>x=100, y=75</code>, canto inferior.</p>
 
-                        <p>E etão subimos com uma reta até <code>x=100, y=25</code>, canto superior.</p>
+                        <p>E então subimos com uma reta até <code>x=100, y=25</code>, canto superior.</p>
 
                         <p>Novamente, o método <code>closePath()</code> completa nosso triângulo.</p>
 
                         <div class="row">
                             <div class="col-md-4">
-                                <canvas id='ex02' height='150'>Canvas not supported</canvas>
+                                <canvas id='ex02'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex02');
                                     var context = canvas.getContext('2d');
@@ -198,11 +237,9 @@ context.stroke();
 
                         <p>O <code>fill()</code> desenha a última reta e preenche o triângulo.</p>
 
-                        <p>Repare que ele substituiu tanto o método <code>closePath()</code> quanto o <code>stroke()</code>.</p>
-
                         <div class="row">
                             <div class="col-md-4">
-                                <canvas id='ex03' height='150'>Canvas not supported</canvas>
+                                <canvas id='ex03'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex03');
                                     var context = canvas.getContext('2d');
@@ -220,14 +257,21 @@ context.stroke();
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 
-context.beginPath(); 
+context.beginPath();
 context.moveTo(30, 30);
-context.lineTo(90, 30);  
+context.lineTo(90, 30);
 context.lineTo(30, 90);
-context.fill();  
+context.fill();
 </code></pre>
                             </div>
                         </div>
+
+                        <h3>Importante</h3>
+
+                        <ul>
+                            <li>Repare que ele substituiu tanto o método <code>closePath()</code> quanto o <code>stroke()</code>.</li>
+                        </ul>
+
                     </div>
 
 
@@ -236,13 +280,13 @@ context.fill();
                             <h2>Exemplo de caminho com método <code>bezierCurveTo()</code></h2>
                         </div>
 
-                        <p>Ok, ainda não falamos do método <code>bezierCurveTo()</code>.</p>
-                        
-                        <p>Mas não pude deixar de mostar o exemplo.</p>
-                        
+                        <p>Ok, ainda não falamos (e continuaremos não falando) do método <code>bezierCurveTo()</code>.</p>
+
+                        <p>Mas não pude deixar de mostrar o exemplo.</p>
+
                         <div class="row">
                             <div class="col-md-4">
-                                <canvas id='ex04' height='150'>Canvas not supported</canvas>
+                                <canvas id='ex04'>Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex04');
                                     var context = canvas.getContext('2d');
@@ -260,17 +304,163 @@ context.fill();
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 
-context.beginPath();  
-context.moveTo(10, 10);  
-context.lineTo(90, 90);  
-context.bezierCurveTo(30, 30, 30, 60, 60, 150);   
-context.fill();  
+context.beginPath();
+context.moveTo(10, 10);
+context.lineTo(90, 90);
+context.bezierCurveTo(30, 30, 30, 60, 60, 150);
+context.fill();
 </code></pre>
                             </div>
                         </div>
                     </div>
 
 
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h2>O que as linhas tem a nos ensinar?</h2>
+                        </div>
+
+                        <p>Quanto será que o <strong>path</strong> influencia nosso paint? Muito, compare os exemplos abaixo.</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <canvas id='ex05'>Canvas not supported</canvas>
+                                <script>
+                                    var canvas = document.getElementById('ex05');
+                                    var context = canvas.getContext('2d');
+                                    context.beginPath();
+                                    context.moveTo(60, 30);
+                                    context.lineTo(240, 30);
+                                    context.stroke();
+
+                                    context.beginPath();
+                                    context.moveTo(60, 60);
+                                    context.lineTo(240, 60);
+                                    context.stroke();
+
+                                    context.beginPath();
+                                    context.moveTo(60, 90);
+                                    context.lineTo(240, 90);
+                                    context.stroke();
+
+                                    context.beginPath();
+                                    context.moveTo(60, 120);
+                                    context.lineTo(240, 120);
+                                    context.stroke();
+                                </script>
+
+                            </div>
+                            <div class="col-md-8">
+                                <p></p>
+
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+var context = canvas.getContext('2d');
+
+context.beginPath();
+context.moveTo(60, 30);
+context.lineTo(240, 30);
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 60);
+context.lineTo(240, 60);
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 90);
+context.lineTo(240, 90);
+context.stroke();
+
+context.beginPath();
+context.moveTo(60, 120);
+context.lineTo(240, 120);
+context.stroke();
+</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <canvas id='ex06'>Canvas not supported</canvas>
+                                <script>
+                                    var canvas = document.getElementById('ex06');
+                                    var context = canvas.getContext('2d');
+                                    //                                    context.beginPath();
+                                    context.moveTo(60, 30);
+                                    context.lineTo(240, 30);
+                                    context.stroke();
+
+                                    //                                    context.beginPath();
+                                    context.moveTo(60, 60);
+                                    context.lineTo(240, 60);
+                                    context.stroke();
+
+                                    //                                    context.beginPath();
+                                    context.moveTo(60, 90);
+                                    context.lineTo(240, 90);
+                                    context.stroke();
+
+                                    //                                    context.beginPath();
+                                    context.moveTo(60, 120);
+                                    context.lineTo(240, 120);
+                                    context.stroke();
+                                </script>
+
+                            </div>
+                            <div class="col-md-8">
+                                <p></p>
+
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+var context = canvas.getContext('2d');
+
+//context.beginPath();
+context.moveTo(60, 30);
+context.lineTo(240, 30);
+context.stroke();
+
+//context.beginPath();
+context.moveTo(60, 60);
+context.lineTo(240, 60);
+context.stroke();
+
+//context.beginPath();
+context.moveTo(60, 90);
+context.lineTo(240, 90);
+context.stroke();
+
+//context.beginPath();
+context.moveTo(60, 120);
+context.lineTo(240, 120);
+context.stroke();
+</code></pre>
+                            </div>
+                        </div>
+
+                        <p>Repare que no segundo exemplo o <code>beginPath()</code> foi comentado (anulado).</p>
+
+                        <p>Qual é a diferênca entre os resultados?</p>
+
+                        <p>A princípo percebe-se uma inconsistencia no exemplo sem o <code>beginPath</code>.</p>
+
+                        <p>Então podemos afirmar que o <strong>path</strong> ajuda na consistencia de nosso desenho.</p>
+
+
+                        <h3>Desafio</h3>
+
+                        <p>
+                            No primeiro exemplo, fazemos uso da função <code>beginPath()</code> mas não fechamos os
+                            caminhos (<code>closePath()</code>).
+                        </p>
+
+                        <p>O que isso siginifca?</p>
+
+                        <p>Que o <code>beginPath()</code> seguido de outro <code>beginPath()</code> inicia um <strong>subPath</strong> ?</p>
+
+                        <p>ou...</p>
+
+                        <p>Que o <code>beginPath()</code> seguido de outro <code>beginPath()</code> funciona também como <code>closePath()</code>?</p>
+
+                    </div>
 
 
                 </div><!-- Corpo da matéria -->
