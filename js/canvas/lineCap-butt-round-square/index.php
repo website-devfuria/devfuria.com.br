@@ -34,12 +34,8 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 
                         <p>Os valores podem ser <code>"butt"</code>, <code>"round"</code> e <code>"square"</code>.</p>
 
-                    </div>
 
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h2>Linhas guias</h2>
-                        </div>
+                        <p>Criei a função <code>desenharLinhasGuias()</code> para ajudar no entendimento deste artigo.</p>
 
                         <div class="row">
                             <div class="col-md-4">
