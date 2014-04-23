@@ -222,7 +222,6 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                                 <canvas id='ex01' >Canvas not supported</canvas>
                                 <script>
                                     var canvas = document.getElementById('ex01');
-                                    var context = canvas.getContext('2d');
 
                                     if (canvas.getContext) {
                                         var context = canvas.getContext("2d");
@@ -240,7 +239,6 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                                 <p></p>
 
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
-var context = canvas.getContext('2d');
 
 if (canvas.getContext) {
     var context = canvas.getContext("2d");

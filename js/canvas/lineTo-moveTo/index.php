@@ -110,6 +110,36 @@ context.stroke();
 </code></pre>
                             </div>
                         </div>
+
+                        <p>Ou pelo menos dois <code>lineTo()</code>.</p>
+
+                        <p>Isso porque o método <code>lineTo</code> cria um <strong>subpath</strong>. Sinistro.</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <canvas id='ex01-1' height='150'>Canvas not supported</canvas>
+                                <script>
+                                    var canvas = document.getElementById('ex01-1');
+                                    var context = canvas.getContext('2d');
+                                    // falta o moveTo()
+                                    context.lineTo(100, 50);
+                                    context.lineTo(130, 50);
+                                    context.stroke();
+                                </script>
+
+                            </div>
+                            <div class="col-md-8">
+                                <p></p>
+
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+var context = canvas.getContext('2d');
+context.lineTo(100, 50); // funcionou como moveTo()
+context.lineTo(130, 50);
+context.stroke();
+</code></pre>
+                            </div>
+                        </div>
+
                     </div>
 
 
