@@ -76,8 +76,6 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 
                             </div>
                             <div class="col-md-8">
-                                <p></p>
-
                                 <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 
