@@ -1,11 +1,17 @@
 --
 -- Atualizações
 --
+UPDATE `devfuria_fulia`.`paginas` 
+SET `metaDescr` = 'Método lineJoin(''miter, round, bevel'')' 
+WHERE `paginas`.`url` = '/js/canvas/lineJoin-miter-round-bevel/';
 
+UPDATE `devfuria_fulia`.`paginas`
+SET `ordem` = '3'
+WHERE `paginas`.`url` = '/js/canvas/line-width/';
 
-
-
-
+UPDATE `devfuria_fulia`.`paginas`
+SET `ordem` = '4'
+WHERE `paginas`.`url` = '/js/canvas/lineJoin-miter-round-bevel/';
 
 
 
