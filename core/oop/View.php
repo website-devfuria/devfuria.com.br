@@ -32,19 +32,6 @@ class View {
      */
     public $paginacao;
 
-    /**
-     * Define quais as seções
-     * Obs: As seções são caregadas no arquivo de boot
-     *
-     * Ex:
-     * $secoes['secao-ativa'] = "secao label";
-     * $secoes['secao-ativa'] = "secao label";
-     * $secoes['secao-ativa'] = "secao label";
-     *
-     * @var type Array
-     */
-    public $secoes = array();
-
     function __construct() {
         $this->head = new Head();
         $this->navtop = new NavTop();
@@ -53,5 +40,4 @@ class View {
     }
 
 }
-
 ?>
