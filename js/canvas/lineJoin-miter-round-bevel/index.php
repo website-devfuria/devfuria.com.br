@@ -21,7 +21,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" .  Conteudo::SUB_SECAO_CANVAS
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Junção das linhas <code>lineJoin</code></h1>
+                        <h1><?php echo $pagina->titulo ?></h1>
                     </div>
                 </div>
 
