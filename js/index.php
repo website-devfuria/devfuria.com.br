@@ -4,13 +4,6 @@
  */
 require "../core/boot.php";
 $aba = $_SERVER['QUERY_STRING'];
-if ($aba == "curso" || $aba == "") {
-    $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_CURSO;
-} elseif ($aba == Conteudo::SUB_SECAO_RTG) {
-    $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_RTG;
-} elseif ($aba == "canvas") {
-    $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
-}
 ?>
 <!DOCTYPE html>
 <html lang="pt">
