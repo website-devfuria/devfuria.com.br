@@ -2,6 +2,8 @@
 -- Atualizações
 --
 
+
+/*
 INSERT INTO `devfuria_fulia`.`paginas`
 (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`)
 VALUES ('6', '/js/canvas/paths/', 'Paths (caminhos)', 'Paths (caminhos)', NULL, 'CANVAS - Paths (caminhos)', 'O básico sobre paths e subpaths', 'js', 'canvas', 'basico', 'done', '2014-04-23', '2014-04-23', NULL);
