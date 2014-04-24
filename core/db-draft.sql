@@ -2,6 +2,15 @@
 -- Atualizações
 --
 
+DELETE FROM `devfuria_fulia`.`paginas` WHERE ulr = "/php/basico/arrays-vetores-matrizes/"
+
+INSERT INTO `devfuria_fulia`.`paginas`
+(`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`)
+VALUES ('2', '/php/arrays-funcoes-basicas/', 'Funções básicas de arrays', 'Funções básicas de arrays', NULL, 'Funções básicas de arrays', 'implode, explode, count, in_array, unset, array_unshift, array_shift e array_pop', 'php', 'rtg', 'basico', 'done', '2014-01-31', '2014-01-31', NULL);
+
+INSERT INTO `devfuria_fulia`.`paginas`
+(`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) 
+VALUES (1, '/php/arrays-vetores-matrizes/', 'Criando e iterando um array em PHP', 'Criando e iterando um array em PHP', '', 'Criando e iterando um array em PHP', 'Aprenda como criar e iterar arrays em php com foreach e while', 'php', 'rtg', 'basico', 'done', '2014-01-31', '2014-01-31', NULL);
 
 /*
 INSERT INTO `devfuria_fulia`.`paginas`

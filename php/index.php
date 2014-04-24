@@ -3,6 +3,7 @@
  * PHP - index
  */
 require "../core/boot.php";
+$aba = $_SERVER['QUERY_STRING'];
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -35,29 +36,15 @@ require "../core/boot.php";
         $view->navtop->secaoAtiva = Conteudo::SECAO_PHP;
         include BASE_PATH . VIEWS_PATH . "/nav-top.php";
         ?>
-        <!-- Page content of course! -->
-        <main class="bs-masthead" id="content" role="main">
-            <div class="container">
-                <h1>PHP<small></small></h1>
-                <p>O curso de PHP foi o primeiro a aparecer, ele "abriu" o site devfuria.</p>
-                <p>Este curso não pretende ser uma referência a linguagem PHP, pois o manual do PHP já cumpre com esse papel.</p>
-                <p>Eu idealizei (como todos os demais cursos) para ser uma experiência prática e de vez em quando divertida.</p>
-                <p>O curso é totalmente gratuito e feito especialmente para quem pretende ser um programador php de primeira linha.</p>
-                <p>Seja bem vindo ao curso!</p>
-            </div>
-        </main>
-
+        
         <?php
-        $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_PHP);
-        $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::SUB_SECAO_CURSO);
-        ?>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php include BASE_PATH . VIEWS_PATH . "/lista-secao.php"; ?>
-                </div>
-            </div>
-        </div>
+        if ($aba == "curso" || $aba == ""){
+            require "index-aba-curso.php";
+        } elseif ($aba == Conteudo::SUB_SECAO_RTG) {
+            require "index-aba-rtg.php";
+        }
+        ?>        
+
         <footer class="bs-footer"></footer>    
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
