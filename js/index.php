@@ -16,8 +16,9 @@ if ($aba == "curso" || $aba == "") {
 <html lang="pt">
     <head>
         <?php
-        $view->head->setTitle('Javascript');
-        $view->head->setDescription('Curso, matérias, exercícios, artigos sobre Javascript (especialmente para iniciantes). Aprenda Javascript de uma forma produtiva.');
+        $view->head->setTitle('Javascript - Curso, matérias, exercícios, artigos sobre Javascript (especialmente para iniciantes)');
+        $view->head->setDescription('Curso de Javascript para iniciantes, contempla o Canvas.');
+//        $view->head->setDescription('Curso, matérias, exercícios, artigos sobre Javascript (especialmente para iniciantes). Aprenda Javascript de uma forma produtiva.');
         $view->head->setkeywords("curso de javascript; javascript básico; javascript iniciante;");
 //        $view->head->setkeywords("javascript; js; javascript básico; javascript fácil; javascript início; javascript iniciante; " .
 //                "javascript iniciando; javascript iniciante; começando com javascript; começando no javascript; " .
