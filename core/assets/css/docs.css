@@ -45,7 +45,7 @@ body {
  */
 .bs-footer {
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 300px;/* respiro no footer*/
     margin-top: 100px;
     color: #777;
     text-align: center;
