@@ -51,6 +51,7 @@ if ($aba == "curso" || $aba == "") {
         }
         ?>
 
+        <footer class="bs-footer"></footer>
         <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>
