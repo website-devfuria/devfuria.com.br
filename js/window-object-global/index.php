@@ -237,13 +237,11 @@ console.log(window.outraVariavel); // undefined
 console.log(window.objContainer.outraVariavel); // 456
 </code></pre>
 
-
-
-
-                    </div><!-- Corpo da matéria -->
-                </div><!-- row -->
-            </div><!-- Matéria -->
-            <?php include BASE_PATH . VIEWS_PATH . "/rtg/footer.php"; ?>
-            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+                    </div>
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+        </div><!-- Matéria -->
+        <?php include BASE_PATH . VIEWS_PATH . "/rtg/footer.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>
