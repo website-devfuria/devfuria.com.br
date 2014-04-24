@@ -13,8 +13,15 @@
  *
  *     include BASE_PATH . VIEWS_PATH . "/nav-top.php";
  */
-?>
 
+# Se tivermos a paginas, quero dizer
+# se é uma matéria, rtg, canvas, etc...
+if (isset($pagina)) {
+    # atualiza o link da nav-top coma aba correta
+    $view->navtop->atualizarSecoes($pagina->secao, $pagina->subSecao);
+}
+
+?>
 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
     <div class="container">
         <div class="navbar-header">
