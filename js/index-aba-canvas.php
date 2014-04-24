@@ -20,12 +20,17 @@
 <main class="bs-masthead" id="content" role="main">
     <div class="container">
         <h1>Javascript<small> - Canvas</small></h1>
-        <p>Porque colocamos o CANVAS na seção Javascript?</p>
-        <p>
-            O <strong>canvas</strong> é um tópico de <strong>HTML5</strong>, e o que ele está fazendo
-            aqui na seção <strong>Javascript</strong> do site?
-        </p>
-        <p>Não tive escolha, na verdade eu tive e preferi (por razões óbvias) anexar o assunto a seção Javascript.</p>
+        
+        <p>O Canvas é um elemento da especificação HTML5.</p>
+        
+        <p>Obviamente, junto com o elemento, temos a API Canvas (funções que manipulam o elemento canvas).</p>
+        
+        <p>O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser.</p>
+        
+        <p>O limite é seu conhecimento e sua imaginação.</p>
+        
+        <p>Então? Vamos quebrar esses limites?</p>
+        
     </div>
 </main>
 <?php
