@@ -59,7 +59,10 @@ $pagina = $model->getPagina("/regexp/basico/preg-match/");
 
                         <p>A função preg&#95;match() refere-se a versão PCRE, versão compatível com PHP 5.3.</p>
 
-                        <p>Para iniciarmos vamos utilizar o exemplo básico da matéria de introdução (<a href="../intro/">link</a>)</p>
+                        <p>
+                            Para iniciarmos vamos utilizar o exemplo básico da matéria de introdução 
+                            <?php Aux::printAncora("/regexp/basico/intro/")?>.
+                        </p>
 
                         <p>Temos a string original:</p>
 
@@ -73,8 +76,9 @@ $pagina = $model->getPagina("/regexp/basico/preg-match/");
 
                         <p>Porque não utilizar uma função qualquer para encontra a string?</p>
 
-                        <p>Sim claro, você tem toda razão, mas vamos combinar o seguinte: nossos exemplos serão fácies (e talvez sem sentido prático)
-                            apenas para facilitar seu aprendizado.</p>
+                        <p>
+                            Sim claro, você tem toda razão, mas vamos combinar o seguinte: nossos exemplos serão fáceis
+                            (e talvez sem sentido prático) mas apenas para facilitar seu aprendizado.</p>
 
                         <p>Em breve faremos voôs mais altos, ok? "Tudo a seu tempo".</p>
 
@@ -86,11 +90,17 @@ $pagina = $model->getPagina("/regexp/basico/preg-match/");
                             <li><p>O terceiro parâmetro é um array que armazenará os resultados (partes) da string original</p></li>
                         </ol>
 
-                        <p>Estou utilizando também o terceiro parâmetro e inclusive uma variável $resultado para pegar o resultado de execução
-                            da função.</p>
+                        <p>
+                            Estou utilizando também o terceiro parâmetro e inclusive uma variável <code>$resultado</code>
+                            para pegar o resultado de execução da função.
+                        </p>
 
-                        <p>Veja mais sobre a função na documentação oficial:
-                            <a href="http://php.net/manual/en/function.preg-match.php" title="link-externo">http://php.net/manual/en/function.preg-match.php</a></p>
+                        <p>
+                            Veja mais sobre a função na documentação oficial:
+                            <a href="http://php.net/manual/en/function.preg-match.php" title="link-externo">
+                                http://php.net/manual/en/function.preg-match.php
+                            </a>
+                        </p>
 
                         <div class="code">
                             <h6>PHP</h6>
