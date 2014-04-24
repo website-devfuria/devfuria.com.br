@@ -2,7 +2,7 @@
 -- Atualizações
 --
 
-DELETE FROM `devfuria_fulia`.`paginas` WHERE ulr = "/php/basico/arrays-vetores-matrizes/"
+DELETE FROM `devfuria_fulia`.`paginas` WHERE url = "/php/basico/arrays-vetores-matrizes/";
 
 INSERT INTO `devfuria_fulia`.`paginas`
 (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`)
