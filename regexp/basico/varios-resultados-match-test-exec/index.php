@@ -19,7 +19,7 @@ $pagina = $model->getPagina("/regexp/basico/varios-resultados-match-test-exec/")
         <div class="bs-header" id="content">
             <div class="container">
                 <h1><?php echo $pagina->titulo ?></h1>
-                <p>Dissecando as funções do JS</p>
+                <p>O básico sobre as funções do Javascript</p>
             </div>
         </div>
 
@@ -63,10 +63,9 @@ $pagina = $model->getPagina("/regexp/basico/varios-resultados-match-test-exec/")
 
                         <p>Aqui, temos o mesmo problema da matéria anterior:</p>
 
-                        <p><strong>Como trabalhamos com mais de um resultado?</strong></p>
+                        <p>Como trabalhamos com mais de um resultado?</p>
 
-                        <p>Se você caiu de paraquêdas nesta página aconselho a ler atentamente pelo menos as duas matérias anteriores a esta,
-                            veja no final desta página na árvore de navegação: "Veja também..."</p>
+                        <p>Se você caiu de paraquêdas nesta página aconselho a ler atentamente pelo menos as duas matérias anteriores a esta.</p>
 
                         <p>Continuando... vamos utilizar o mesmo exemplo matéria "ponto":</p>
 
@@ -74,9 +73,9 @@ $pagina = $model->getPagina("/regexp/basico/varios-resultados-match-test-exec/")
 regexp: "/ca.a/"
 </code></pre>
 
-                        <p>Notamos que a ER casa com mais de um resultado.</p>
+                        <p>Notamos que a expressão regular casa com mais de um resultado.</p>
 
-                        <p>E aí? Repito a pergunta: como programamos isso? Vamos ao ćodigo...</p>
+                        <p>Como programamos isso? Vamos ao código...</p>
 
                         <div class="code">
                             <h6>JS forma1-string-match.js</h6>
@@ -94,8 +93,8 @@ if (resultado) {
 }</code></pre>
                         </div>
 
-                        <p>Se a ER casar com a string então a variável <code>resultado</code> conterá um array com a parte que casou, mas <strong>apenas a primeira
-                                ocorrência.</strong> Se você precisar das demais ocorrências terá que fazer uma pequena alteração na ER, veja:</p>
+                        <p>Se a expressão regular casar com a string então a variável <code>resultado</code> conterá um array com a parte que casou, mas <strong>apenas a primeira
+                                ocorrência.</strong> Se você precisar das demais ocorrências terá que fazer uma pequena alteração na expressão regular, veja:</p>
 
                         <pre><code>pattern = /ca.a/g,
 </code></pre>
@@ -157,8 +156,11 @@ while(resultado = pattern.exec(string)){
                             <h1 id="test">test()</h1>
                         </div>
 
-                        <p>Diferentemente da primeira função (<code>string.match</code>), o valor da variável <code>resultado</code> será true ou false e a opção global
-                            <code>g</code> não funcionou, sou seja, não descobri uma forma de olhar as demais ocorrência, apenas a primeira.</p>
+                        <p>
+                            Diferentemente da primeira função <code>string.match</code>, o valor da variável <code>resultado</code>
+                            será <code>true</code> ou <code>false</code> e a opção global <code>g</code> não funcionou,
+                            ou seja, não descobri uma forma de olhar as demais ocorrência, apenas a primeira.
+                        </p>
 
                         <div class="code">
                             <h6>JS</h6>
@@ -188,7 +190,7 @@ if (resultado) {
 
                         <p>Só assim você terá a garantida de que realmente incorporou os conceitos.</p>
 
-                        <p>Execute o códigos dessa matéria em sua máquina e <strong>observe os resultado no console do Firebug.</strong></p>
+                        <p>Execute o códigos dessa matéria em sua máquina e observe os resultado no console do Firebug.</p>
 
                         <p>Para facilitar a sua vida, eu criei um Gist com os código fontes, assim você não precisará criar os arquivos.</p>
 

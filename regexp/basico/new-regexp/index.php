@@ -18,7 +18,7 @@ $pagina = $model->getPagina("/regexp/basico/new-regexp/");
         <div class="bs-header" id="content">
             <div class="container">
                 <h1><?php echo $pagina->titulo ?></h1>
-                <p>Essa matéria, curtinha diga-se de passagem, mostra como compilar uma ER.</p>
+                <p>Essa matéria, curtinha diga-se de passagem, mostra como compilar uma expressão regular.</p>
             </div>
         </div>
 
@@ -38,25 +38,30 @@ $pagina = $model->getPagina("/regexp/basico/new-regexp/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Sobre a função</h1>
+                            <h1 id="intro">RegExp()</h1>
                         </div>
 
-                        <p>Utilizando-se do construtor <code>RegExp()</code> podemos compilar a expressão regular antes de usá-la. </p>
+                        <p>Utilizando-se do construtor <code>RegExp()</code> podemos compilar a expressão regular antes de usá-la.</p>
 
                         <p>Isso é uma vantagem? Não exatamente.</p>
 
                         <p>Caso sua expressão esteja sintaticamente errada o erro existirá como nos demais exemplos e seu código irá travar.</p>
 
-                        <p>Uma vantagem seria o fato de ser possível criar a expressão regular apartir de uma string, isto quer dizer que
-                            é possível criar a expressão de forma dinâmica.</p>
+                        <p>
+                            Uma vantagem seria o fato de ser possível criar a expressão regular apartir de uma string,
+                            isto quer dizer que é possível criar a expressão de forma dinâmica.
+                        </p>
 
-                        <p>Imagine que o usuário irá digitar a palavra <code>"exemplo"</code> e o sistema armazenará o valor na variável <code>regexp</code>. Agora é só
-                            passar a variável para o construturor e executar a expressão.</p>
+                        <p>
+                            Imagine que o usuário irá digitar a palavra <code>"exemplo"</code> e o sistema armazenará o
+                            valor na variável <code>regexp</code>. Agora é só passar a variável para o construtor e
+                            executar a expressão.
+                        </p>
 
-                        <p>Resumindo, a ER criada apartir de uma string lhe derá mair poder de flexibilidade e, obviamente, maior responsabilidade.</p>
+                        <p>Resumindo, a expressão regular criada apartir de uma string lhe derá mair poder de flexibilidade e, obviamente, maior responsabilidade.</p>
 
                         <div class="code">
-                            <h6>JS</h6>
+                            <h6>Javascript</h6>
                             <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern,
     resultado;
@@ -79,7 +84,7 @@ resultado = string.match(pattern);
 console.log(pattern, resultado);</code></pre>
                         </div>
 
-                        <p>Uma vez com a ER compilada podemos executá-la em qualquer uma das três formas já discutidas nas matérias anteirores.</p>
+                        <p>Uma vez com a expressão regular compilada podemos executá-la em qualquer uma das três formas já discutidas nas matérias anteriores.</p>
 
                         <div class="bs-docs-section">
                             <div class="page-header">

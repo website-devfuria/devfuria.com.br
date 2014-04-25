@@ -1,6 +1,6 @@
 <?php
 /**
- * O básico das Expressões Regulare
+ * O básico das Expressões Regulares
  * regexp, começando com regexp, aprendendo expressões regulares, expressões regulares para iniciantes
  */
 require "../../../core/boot.php";
@@ -17,9 +17,9 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1><?php echo $pagina->titulo?></h1>
-                <p>Introdução aos conceitos intuitivo de ER.</p>
-                <p>Veremos um pequeno exemplo e como é o mundo das Er's em JS e PHP</p>
+                <h1><?php echo $pagina->titulo ?></h1>
+                <p>Introdução aos conceitos intuitivo de expressão regular.</p>
+                <p>Veremos um pequeno exemplo e como é o mundo das Er's em Javascript e PHP</p>
             </div>
         </div>
 
@@ -72,8 +72,10 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
                         <h2>Para que servem ?</h2>
 
                         <blockquote>
-                            <p>Basicamente, servem para você dizer algo abrangente de forma específica.
-                                <small>Expressões Regulares, Uma Abordagem divertida (Aurélio Marinho, pag 36 da 3 edição).</small></p>
+                            <p>
+                                Basicamente, servem para você dizer algo abrangente de forma específica.
+                                <small>Expressões Regulares, Uma Abordagem divertida (Aurélio Marinho, pag 36 da 3 edição).</small>
+                            </p>
                         </blockquote>
 
                         <p>Elas servem para muita coisas e podem salver sua pele, se souber usá-las.</p>
@@ -86,13 +88,16 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
                             <h1 id="sobre">Sobre o curso</h1>
                         </div>
 
-                        <p>Eu preparei (e ainda estou preparando) este curso sobre ER's para ser bem básico, o intuito é que você leia a matéria
-                            e entenda (e também deconteudo) sobre cada aspecto comentado.</p>
+                        <p>Eu preparei (e ainda estou preparando) este curso sobre expressão regulares's para ser bem básico</p>
+                        
+                        <p>O intuito é que você leia a matéria e compreenda sobre cada aspecto comentado.</p>
 
                         <p>Mas para facilitar ainda mais o seu aprendizado (o meu também foi mais fácil dessa forma) aconselho a utilizar alguns
-                            software online apenas para testar as ER's, ou seja, ao invés de você partir direto para o código fonte, parta primeiro
-                            para esses softwares, assim você terá a oportunidade de conferir sua ER antes de ficar quebrando a cabeça no código
-                            fonte, algumas ferramentas interessantes:</p>
+                            softwares online apenas para testar as expressão regulares's, ou seja, ao invés de você partir direto para o código fonte, parta primeiro
+                            para esses softwares, assim você terá a oportunidade de conferir sua expressão regular antes de ficar quebrando a cabeça no código
+                            fonte.</p>
+                        
+                        <p>Algumas ferramentas interessantes:</p>
 
                         <p><a href="http://regexpal.com/" title="link-externo">http://regexpal.com/</a></p>
 
@@ -104,7 +109,7 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                         <p>Irei utilizar as duas linguagens que também possuem seus cursos aqui no site: PHP e Javascript.</p>
 
-                        <p>Conforme vamos evoluíndo com as ER's, vamos evoluindo com as linguagens.</p>
+                        <p>Conforme vamos evoluíndo com as expressão regulares's, vamos evoluindo com as linguagens.</p>
                     </div>
 
 
@@ -121,7 +126,7 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                         <pre><code>"exemplo"</code></pre>
 
-                        <p>Veja como fica nos testadores:</p>
+                        <p>Veja como fica nas ferramentas:</p>
 
                         <div class="bs-example ">
                             <img class="img-rounded" alt="### Exemplo no testador regexpal" src="exemplo-regexp.png" />
@@ -133,7 +138,10 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
                             <p>http://regex.larsolavtorvik.com/</p>
                         </div>
 
-                        <p>Os testadores ajudam muito, principalmente no começo, aprenda a utilizá-los, é divertido!</p>
+                        <p>As ferrametas ajudam muito, principalmente no começo.</p>
+                        
+                        <p>Aprenda a utilizá-las, é divertido!</p>
+                        
                     </div>
 
 
@@ -146,16 +154,18 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                         <p>A versão PREC é a mais atual.</p>
 
-                        <p>Segundo o Marinho, as funções PCRE são mais rápidas que as POSIX e para funcionarem o PHP deverá ser compilado com
-                            suporte a bilioteca PCRE.</p>
+                        <p>
+                            Segundo o Marinho, as funções PCRE são mais rápidas que as POSIX e para funcionarem o PHP
+                            deverá ser compilado com suporte a bilioteca PCRE.
+                        </p>
 
-                        <p>Em PHP as ER's devem ser tratadas como strings entre aspas, exemplo:</p>
+                        <p>Em PHP as expressão regulares's devem ser tratadas como strings entre aspas, exemplo:</p>
 
                         <pre><code>'/sua expressão regular/'</code></pre>
 
-                        <p>As funções POSIX são derivdas de <em>ereg()</em>;</p>
+                        <p>As funções POSIX são derivadas de <code>ereg()</code>;</p>
 
-                        <p>As funções do PREC são derivadas de <em>preg_macth()</em>;</p>
+                        <p>As funções do PREC são derivadas de <code>preg_macth()</code>;</p>
 
                         <p>Veja mais informações na documentação oficial:</p>
 
@@ -168,21 +178,16 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="js">Javascript e suas funções ER</h1>
+                            <h1 id="js">Javascript e suas funções expressão regular</h1>
                         </div>
 
-                        <p>Em JS temos 3 funções para tratarmos as ER's:</p>
+                        <p>
+                            Em Javascript temos 3 funções para tratarmos as expressão regular's: <code>test()</code>, <code>texec()</code> e <code>tmatch()</code>.
+                        </p>
 
-                        <pre><code>test()
-exec()
-match()
-</code></pre>
+                        <p>E também temos o construtuor <code>RegExp();</code>.</p>
 
-                        <p>E também temos o construtuor</p>
-
-                        <pre><code>RegExp();</code></pre>
-
-                        <p>Em JS (diferentemente de PHP) as ER's devem ser embebidas por barras, sem aspas, exemplo:</p>
+                        <p>Em Javascript (diferentemente de PHP) as expressão regulares's devem ser embebidas por barras, sem aspas, exemplo:</p>
 
                         <pre><code>/sua expressão regular/</code></pre>
 
@@ -218,7 +223,7 @@ match()
                                     <a href="http://novatec.com.br/livros/regexpcookbook/" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Expressões Regulares Cookbook</h4>
                                         <p class="list-group-item-text">Ótimo livro, não é tão fácil começar por ele, mas é muito bom, o que
-                                            mais gostei é que os autores tratam os diversos sabores das ER.</p>
+                                            mais gostei é que os autores tratam os diversos sabores das expressão regular.</p>
                                         <span class="label label-default">http://novatec.com.br/livros/regexpcookbook/</span>
                                     </a>
                                     <a href="http://www.altabooks.com.br/dominando-expressoes-regulares.html" class="list-group-item" title="link-externo">
@@ -229,9 +234,9 @@ match()
                                     </a>
                                     <a href="http://regex.info/book.html" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Mastering Regular Expressions</h4>
-                                        <p class="list-group-item-text">A bíblia das ER, também não li, dúvido muito que eu lerei um dia. Se o seu
+                                        <p class="list-group-item-text">A bíblia das expressão regular, também não li, dúvido muito que eu lerei um dia. Se o seu
                                             objetivo for dominar as ERs então compre e leia o livro. Mas se, assim como eu, o seu objetivo for
-                                            trafegar tranquilamente pelas ER e não domniná-las então está dispensado.</p>
+                                            trafegar tranquilamente pelas expressão regular e não domniná-las então está dispensado.</p>
                                         <span class="label label-default">http://regex.info/book.html</span>
                                     </a>
                                 </div>

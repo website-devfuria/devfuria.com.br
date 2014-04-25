@@ -1,6 +1,6 @@
 <?php
 /**
- * ER - index
+ * expressão regular - index
  */
 require "../core/boot.php";
 ?>
@@ -8,7 +8,7 @@ require "../core/boot.php";
 <html lang="pt">
     <head>
         <?php
-        $view->head->setTitle('RegExp');
+        $view->head->setTitle('RegExp - expressões regulares | expressão regular');
         $view->head->setDescription('Pequeno curso de Expressões Regulares, feito especialmente para o plúbico iniciante.');
         $view->head->setkeywords("curos de expressões regulares; aprendendo expresões regulares, curso de regexp");
 //        $view->head->setkeywords("regexp; regexp básico; regexp fácil; regexp início; regexp iniciante; " .
@@ -37,10 +37,10 @@ require "../core/boot.php";
             <div class="container">
                 <h1>RegExp<small></small></h1>
                 <p class="lead">Expressões regulares</p>
-                <p>Este é pequeno curso sobre Expressões regulares (ER)</p>
-                <p>Como o site destina-se a programação web eu foco o uso das ER nas linguagens PHP e Javascript.</p>
-                <p>Confesso que não sou nenhum mestre em ER, é bom que você saiba disso antes de iniciar o curso!</p>
-                <p>Por outro lado, meu objetivo é facilitar o aprendizado das ER, pois o assunto ja é espinhoso... logo o aprendizado deve ser facilitado.</p>
+                <p>Este é pequeno curso sobre Expressões regulares (expressão regular)</p>
+                <p>Como o site destina-se a programação web eu foco o uso das expressão regular nas linguagens PHP e Javascript.</p>
+                <p>Confesso que não sou nenhum mestre em expressão regular, é bom que você saiba disso antes de iniciar o curso!</p>
+                <p>Por outro lado, meu objetivo é facilitar o aprendizado das expressão regular, pois o assunto ja é espinhoso... logo o aprendizado deve ser facilitado.</p>
                 <p>Dito isso, convido o leitor(a) a me enviar correções e mesmo sugerir melhorias neste curso.</p>
                 <p>Lembrando que este site está no github e que toda ajuda será sempre acolhida!</p>
                 <p>Seja bem vindo ao curso!</p>

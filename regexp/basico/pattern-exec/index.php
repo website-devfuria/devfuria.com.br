@@ -18,7 +18,7 @@ $pagina = $model->getPagina("/regexp/basico/pattern-exec/");
         <div class="bs-header" id="content">
             <div class="container">
                 <h1><?php echo $pagina->titulo ?></h1>
-                <p>Dissecando a função do JS</p>
+                <p>O básico sobre a função do Javascript</p>
             </div>
         </div>
 
@@ -34,7 +34,7 @@ $pagina = $model->getPagina("/regexp/basico/pattern-exec/");
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
                             <li>
-                                <a href="#intro">Sobre a função</a>
+                                <a href="#intro">exec()</a>
                             </li>
                             <li>
                                 <a href="#nao-casou">Expressão não casa</a>
@@ -54,20 +54,23 @@ $pagina = $model->getPagina("/regexp/basico/pattern-exec/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Sobre a função</h1>
+                            <h1 id="intro">exec()</h1>
                         </div>
 
-                        <p>A função <code>exec()</code> em JS possue a sintaxe parecida com a função <code>test()</code> porém o resultado é idêntico a função <code>match()</code>.</p>
+                        <p>A função <code>exec()</code> em Javascript possue a sintaxe parecida com a função <code>test()</code> porém o resultado é idêntico a função <code>match()</code>.</p>
 
-                        <p>A forma <code>pattern.exec()</code> onde "pattern" é expressão regular, "exec()" é a função que evocamos
-                            para executar a ER e o parâmetro 'string passado na função é a nosso texto de pesquisa (assunto).</p>
+                        <p>
+                            Explicando a forma <code>pattern.exec()</code>. <code>pattern</code> é expressão regular,
+                            <code>exec()</code> é a função que evocamos para executar a expressão regular e o parâmetro <code>string</code>
+                            passado na função é a nosso texto de pesquisa (assunto).
+                        </p>
 
                         <p>Também é uma forma bastante usual e comentada.</p>
 
-                        <p>Viu? A sintaxe é parecida com a função <code>test()</code>, já os resultado é parecido com a função <code>match()</code>.</p>
+                        <p>A sintaxe é parecida com a função <code>test()</code>, já os resultado é parecido com a função <code>match()</code>.</p>
 
                         <div class="code">
-                            <h6>JS</h6>
+                            <h6>Javascript</h6>
                             <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
     resultado;
@@ -80,11 +83,11 @@ console.log(resultado);</code></pre>
                         <p>O texto, daqui para baixo, é idêntido ao da matéria <a href="../../basico/string-match" title="Matéria da função string.match()">string-match</a>.
                             Estou repetindo caso você tenha chegado por aqui diretamente e ainda não leu as matérias anteriores.</p>
 
-                        <p>Se a ER casar com a string então a variável <code>resultado</code> conterá um array com a parte que casou, mas apenas a primeira
+                        <p>Se a expressão regular casar com a string então a variável <code>resultado</code> conterá um array com a parte que casou, mas apenas a primeira
                             ocorrência.</p>
 
                         <p>Se olharmos mais atentamente poderemos observar que a função <code>exec()</code> não apenas retorna um array como também um objeto
-                            (arrays são objetos em JS).</p>
+                            (arrays são objetos em Javascript).</p>
 
                         <p>A janela do Firebug mostra o sinal "+" se clicar em cima dele o objeto se expandirá conforme a figura abaixo:</p>
 
@@ -99,7 +102,7 @@ resultado['index'] = 19
 resultado['input'] = ""Casa com a palavra exemplo.""
 </code></pre>
 
-                        <p><code>resultado[0]</code> é o array retorando pela função, ele contém o valor da parte que casou.</p>
+                        <p><code>resultado[0]</code> é o array retornado pela função, ele contém o valor da parte que casou.</p>
 
                         <p><code>resultado['index']</code> é um inteiro, ele indica a primeira posição dentro da string que coincidiu com o valor procurado.</p>
 
@@ -115,7 +118,7 @@ resultado['input'] = ""Casa com a palavra exemplo.""
                         <p>Neste caso, o valor da variável <code>resultado</code> será apenas <code>null</code></p>
 
                         <div class="code">
-                            <h6>JS</h6>
+                            <h6>Javascript</h6>
                             <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /não existe/,
     resultado;
@@ -137,7 +140,7 @@ console.log(resultado);</code></pre>
                         <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um <code>(</code> a mais.</p>
 
                         <div class="code">
-                            <h6>JS</h6>
+                            <h6>Javascript</h6>
                             <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     <em>pattern = /(exemplo/,</em>
     resultado;
@@ -164,7 +167,7 @@ console.log(resultado);</code></pre>
 
                         <p>Como, então, faremos para checar se o obtevemos sucesso ou não?</p>
 
-                        <p>Bom, ao especionarmos o valor da variável <code>resultado</code> ela retorna primeiro o array, conforme trecho abaixo:</p>
+                        <p>Bom, ao inspecionarmos o valor da variável <code>resultado</code> ela retorna primeiro o array, conforme trecho abaixo:</p>
 
                         <pre><code class="language-javascript">resultado = ['exemplo'];</code></pre>
 
@@ -175,7 +178,10 @@ console.log(resultado['index']) // exibibe 19
 console.log(resultado['input']) // exibibe 'string "Casa com a palavra exemplo"'
 </code></pre>
 
-                        <p>Caso a expressão não case, então o resultado será null, logo, nosssa lógia poderá ficar como mostrado abaixo:</p>
+                        <p>
+                            Caso a expressão não case, então o resultado será <code>null</code>, logo, nossa lógica
+                            poderá ficar como mostrado abaixo:
+                        </p>
 
                         <pre><code class="language-javascript">se casou então
     print "casou"
@@ -186,7 +192,7 @@ senão
                         <p>E o nosso código ficará como se segue:</p>
 
                         <div class="code">
-                            <h6>JS - código final</h6>
+                            <h6>Javascript - código final</h6>
                             <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
     resultado;
@@ -201,8 +207,10 @@ if (resultado) {
 }</code></pre>
                         </div>
 
-                        <p>Lembre-se que se a expressão estiver sintaticamente errada ela interromperá a excução do script, logo, o uso dos blocos
-                            de tratamento de erro (try cath) se faz necessário.</p>
+                        <p>
+                            Lembre-se que se a expressão estiver sintaticamente errada ela interromperá a excução do
+                            script, portanto, o uso dos blocos de tratamento de erro (try cath) se faz necessário.
+                        </p>
                     </div>
                     <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->

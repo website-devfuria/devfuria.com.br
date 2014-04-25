@@ -2,6 +2,10 @@
 -- Atualizações
 --
 
+
+-- regexp
+
+/*
 DELETE FROM `devfuria_fulia`.`paginas` WHERE url = "/php/basico/arrays-vetores-matrizes/";
 
 INSERT INTO `devfuria_fulia`.`paginas`
@@ -12,7 +16,7 @@ INSERT INTO `devfuria_fulia`.`paginas`
 (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) 
 VALUES (1, '/php/arrays-vetores-matrizes/', 'Criando e iterando um array em PHP', 'Criando e iterando um array em PHP', '', 'Criando e iterando um array em PHP', 'Aprenda como criar e iterar arrays em php com foreach e while', 'php', 'rtg', 'basico', 'done', '2014-01-31', '2014-01-31', NULL);
 
-/*
+
 INSERT INTO `devfuria_fulia`.`paginas`
 (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`)
 VALUES ('6', '/js/canvas/paths/', 'Paths (caminhos)', 'Paths (caminhos)', NULL, 'CANVAS - Paths (caminhos)', 'O básico sobre paths e subpaths', 'js', 'canvas', 'basico', 'done', '2014-04-23', '2014-04-23', NULL);

@@ -18,7 +18,7 @@ $pagina = $model->getPagina("/regexp/basico/varios-resultados-preg-match-all/");
         <div class="bs-header" id="content">
             <div class="container">
                 <h1><?php echo $pagina->titulo?></h1>
-                <p>Dissecando a função do PHP</p>
+                <p>O básico sobre a função do PHP</p>
             </div>
         </div>
 
@@ -34,7 +34,7 @@ $pagina = $model->getPagina("/regexp/basico/varios-resultados-preg-match-all/");
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
                             <li>
-                                <a href="#quando">Quando precisamos dela?</a>
+                                <a href="#quando">Quando usar?</a>
                             </li>
                             <li>
                                 <a href="#preg-match-all">preg&#95;math&#95;all()</a>
@@ -48,7 +48,7 @@ $pagina = $model->getPagina("/regexp/basico/varios-resultados-preg-match-all/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="quando">Quando precisamos dela?</h1>
+                            <h1 id="quando">Quando usar?</h1>
                         </div>
 
                         <p>Se olharmos o primeiro exemplo da matéria anterior:</p>
@@ -57,9 +57,9 @@ $pagina = $model->getPagina("/regexp/basico/varios-resultados-preg-match-all/");
 regexp: "/ca.a/"
 </code></pre>
 
-                        <p>Notamos que a ER casa com mais de um resultado.</p>
+                        <p>Notamos que a expressão regular casa com mais de um resultado.</p>
 
-                        <p><strong>Como trabalhamos com mais de um resultado?</strong> Bom, vejamos o código...</p>
+                        <p>Como trabalhamos com mais de um resultado?  Vejamos o código...</p>
 
                         <div class="code">
                             <h6>PHP</h6>
@@ -89,8 +89,9 @@ if ($resultado === 1) {
 ?&gt;</code></pre>
                         </div>
 
-                        <p>...podemos notar que o resultado retornado pela função <code>preg&#95;math()</code> foi o primeiro valor que casou no caso a sttring "casa",
-                            veja a figura abaixo:</p>
+                        <p>
+                            Note que o resultado retornado pela função <code>preg&#95;math()</code> foi o primeiro valor
+                            que casou no caso a sttring "casa", veja a figura abaixo:</p>
 
                         <div class="bs-example">
                             <img class="img-rounded" alt="### apenas o primeiro resultado" src="php-preg-math.png" />
@@ -98,8 +99,7 @@ if ($resultado === 1) {
 
                         <p>Mas, se observarmos o exemplo lá no começo da matéria, a expressão casa com outras partes da string:</p>
 
-                        <pre><code>"casa, cana, cama, casa, cava"
-</code></pre>
+                        <pre><code>"casa, cana, cama, casa, cava"</code></pre>
 
                         <p>Como fazer para obter esse resultados?</p>
 
@@ -111,7 +111,7 @@ if ($resultado === 1) {
                         </div>
 
 
-                        <p>Uma saída é utilizar a função <code>preg&#95;math&#95;all()</code>, ela carregará a varirável <code>$retorno</code> com todos os resultados possíveis,
+                        <p>Utilize a função <code>preg&#95;math&#95;all()</code>, ela carregará a varirável <code>$retorno</code> com todos os resultados possíveis,
                             veja a figura abaixo:</p>
 
                         <div class="bs-example">
@@ -148,7 +148,7 @@ if ($resultado >= 1) {
 ?&gt;</code></pre>
                         </div>
 
-                        <p>Obsever que eu também alterei o "primeiro if" de:</p>
+                        <p>Observe que eu também alterei o primeiro <code>if</code> de:</p>
 
                         <pre><code>if ($resultado === 1) {</code></pre>
 
@@ -156,8 +156,11 @@ if ($resultado >= 1) {
 
                         <pre><code>if ($resultado &gt;= 1) {</code></pre>
 
-                        <p>Isso se deve ao fato de que a função <code>preg&#95;math&#95;all()</code> retorna um número inteiro com a quantidade de ocorrências
-                            encontradas, no exemplo o valor da variável <code>$resultado</code> é igual a 5 (pois temos cinco resultados).</p>
+                        <p>
+                            Isso se deve ao fato de que a função <code>preg&#95;math&#95;all()</code> retorna um número
+                            inteiro com a quantidade de ocorrências encontradas. </p>
+                        
+                        <p>No exemplo, o valor da variável <code>$resultado</code> é igual a 5 (pois temos cinco resultados).</p>
 
                     </div>
 

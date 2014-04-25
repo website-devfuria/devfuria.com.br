@@ -17,8 +17,8 @@ $pagina = $model->getPagina("/regexp/basico/pattern-test/");
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1><?php echo $pagina->titulo?></h1>
-                <p>Dissecando a função do JS</p>
+                <h1><?php echo $pagina->titulo ?></h1>
+                <p>O básico sobre a função do Javascript</p>
             </div>
         </div>
 
@@ -34,7 +34,7 @@ $pagina = $model->getPagina("/regexp/basico/pattern-test/");
                     <div class="bs-sidebar hidden-print" role="complementary">
                         <ul class="nav bs-sidenav">
                             <li>
-                                <a href="#intro">Sobre a função</a>
+                                <a href="#intro">pattern.test()</a>
                             </li>
                             <li>
                                 <a href="#nao-casou">Expressão não casa</a>
@@ -54,17 +54,20 @@ $pagina = $model->getPagina("/regexp/basico/pattern-test/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Sobre a função</h1>
+                            <h1 id="intro">pattern.test()</h1>
                         </div>
 
 
-                        <p>Em JS também temos a forma <code>pattern.test()</code> onde "pattern" é expressão regular, "test()" é a função que evocamos
-                            para executar a ER e o parâmetro 'string passado na função é a nosso texto de pesquisa (assunto).</p>
+                        <p>
+                            Em Javascript também temos a forma <code>pattern.test()</code> onde <code>pattern</code> é
+                            a expressão regular, <code>test()</code> é a função que evocamos para executar a expressão regular e o
+                            parâmetro <code>string</code> passado na função é a nosso texto de pesquisa (assunto).
+                        </p>
 
                         <p>Essa é a forma mais usual, ou pelo menos é a mais comentada.</p>
 
                         <div class="code">
-                            <h6>JS</h6>
+                            <h6>Javascript</h6>
                             <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
     resultado;
@@ -74,7 +77,10 @@ resultado = pattern.test(string);
 console.log(resultado);</code></pre>
                         </div>
 
-                        <p>Diferentemente da primeira função <code>(string.match)</code>, o valor da variável <code>resultado</code> será true ou false.</p>
+                        <p>
+                            Diferentemente da primeira função <code>(string.match)</code>, o valor da variável 
+                            <code>resultado</code> será <code>true</code> ou <code>false</code>.
+                        </p>
                     </div>
 
                     <div class="bs-docs-section">
@@ -85,7 +91,7 @@ console.log(resultado);</code></pre>
                         <p>A função retorna <code>false</code> neste caso.</p>
 
                         <div class="code">
-                            <h6>JS</h6>
+                            <h6>Javascript</h6>
                             <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /não existe/,
     resultado;
@@ -102,10 +108,10 @@ console.log(resultado);</code></pre>
                             <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
                         </div>
 
-                        <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um ( a mais.</p>
+                        <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um <code>(</code> a mais.</p>
 
                         <div class="code">
-                            <h6>JS</h6>
+                            <h6>Javascript</h6>
                             <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /(exemplo/,
     resultado;
@@ -115,7 +121,11 @@ resultado = pattern.test(string);
 console.log(resultado);</code></pre>
                         </div>
 
-                        <p>Igualmente a função match(), a execução do código será interrompida e o Firebug mostrará a seguinte mensagem:
+                        <p>
+                            Igualmente a função <code>match()</code>, a execução do código será interrompida e o 
+                            Firebug mostrará a seguinte mensagem:
+                        </p>
+
                         <div class="bs-example">
                             <img class="img-rounded" src="../string-match/match-erro.png" alt="### match-erro" />
                         </div></p>
@@ -127,12 +137,12 @@ console.log(resultado);</code></pre>
                             <h1 id="code">Código</h1>
                         </div>
 
-                        <p>Como a função retorna apenas true ou false, fica facíl deduzirmos o código final.</p>
+                        <p>Como a função retorna apenas <code>true</code> ou <code>false</code>, fica facíl deduzirmos o código final.</p>
 
-                        <p>Porém, é válida a mesma observação quanto ao uso do bloco <code>try cath</code> (no caso da expressão estar sintáticamente errada).</p>
+                        <p>Também é válida a mesma observação quanto ao uso do bloco <code>try cath</code> (no caso da expressão estar sintáticamente errada).</p>
 
                         <div class="code">
-                            <h6>JS - código final</h6>
+                            <h6>Javascript - código final</h6>
                             <pre><code class="language-javascript">var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
     resultado;

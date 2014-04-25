@@ -18,7 +18,7 @@ $pagina = $model->getPagina("/regexp/basico/preg-match/");
         <div class="bs-header" id="content">
             <div class="container">
                 <h1><?php echo $pagina->titulo?></h1>
-                <p>Dissecando a função do PHP</p>
+                <p>O básico sobre a função do PHP</p>
             </div>
         </div>
 
@@ -57,10 +57,10 @@ $pagina = $model->getPagina("/regexp/basico/preg-match/");
                             <h1 id="intro">Sobre a função</h1>
                         </div>
 
-                        <p>A função preg&#95;match() refere-se a versão PCRE, versão compatível com PHP 5.3.</p>
+                        <p>A função <code>preg&#95;match()</code> refere-se a versão PCRE, versão compatível com PHP 5.3.</p>
 
                         <p>
-                            Para iniciarmos vamos utilizar o exemplo básico da matéria de introdução 
+                            Para iniciarmos, vamos utilizar o exemplo básico da matéria de introdução 
                             <?php Aux::printAncora("/regexp/basico/intro/")?>.
                         </p>
 
@@ -123,14 +123,15 @@ var_dump($resultado, $retorno);
 $resultado = array("exemplo")
 </code></pre>
 
-                        <p>...veja o resultado do var_dump($resultado, $retorno);:</p>
+                        <p>...veja o resultado do <code>var_dump($resultado, $retorno);</code> :</p>
 
                         <div class="bs-example ">
                             <img class="img-rounded" alt="### var_dump nas variáveis resultado e retorno" src="var-dump-resultado.png" />
                         </div>
 
-                        <p>A função retorna um valor para sabermos se obtivemos sucesso ou não e, no caso do sucesso, podemos saber quais as partes
-                            que casaram.</p>
+                        <p>
+                            A função retorna um valor para sabermos se obtivemos sucesso ou não e, no caso do sucesso,
+                            podemos saber quais as partes que casaram.</p>
                     </div>
 
 
@@ -154,7 +155,8 @@ var_dump($resultado, $retorno);
 ?&gt;</code></pre>
                         </div>
 
-                        <p>...recebemos um int 0  na variável $resultado e um array vazio na variável $retorno.</p>
+                        <p>...recebemos um <code>(int) 0</code>  na variável <code>$resultado</code> e um array vazio
+                            na variável <code>$retorno</code>.</p>
 
                         <p>Isso siginifica que a função retorna 1 caso a expressão case e 0 (zero) caso NÂO case, até rimou.</p>
 
@@ -162,7 +164,7 @@ var_dump($resultado, $retorno);
 
                         <pre><code>count($retorno) === 0</code></pre>
 
-                        <p>Você decide o que usar, eu prefiro testar o resulado da função (variável $resultado).</p>
+                        <p>Você decide o que usar, eu prefiro testar o resultado da função (variável $resultado).</p>
                     </div>
 
 
@@ -172,7 +174,7 @@ var_dump($resultado, $retorno);
                             <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
                         </div>
 
-                        <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um ( a mais.</p>
+                        <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um <code>(</code> a mais.</p>
 
                         <div class="code">
                             <h6>PHP</h6>
@@ -186,8 +188,10 @@ $resultado = preg_match($pattern, $subject, $retorno);
 ?&gt;</code></pre>
                         </div>
 
-                        <p>Tanto a variável $resultado será igual a false como receberemos um <em>warning</em> dizendo que a compilação da expressão falhou
-                            (outros tipos de erros também aparecem):</p>
+                        <p>
+                            A variável <code>$resultado</code> será igual a <code>false</code> e receberemos um
+                            <strong>warning</strong> dizendo que a compilação da expressão falhou (outros tipos de erros também aparecem):
+                        </p>
 
                         <div class="bs-example ">
                             <img class="img-rounded img-responsive" alt="### warning retornado pela função" src="regexp-erro.png" />
@@ -213,7 +217,7 @@ se o valor é igual a false então
     print "ocorreu um erro"
 </code></pre>
 
-                        <p>E aí fica fácil escrevermos o ćodigo final.</p>
+                        <p>E aí fica fácil escrevermos o código final.</p>
 
                         <div class="code">
                             <h6>PHP</h6>
