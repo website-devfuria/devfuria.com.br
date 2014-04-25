@@ -461,8 +461,7 @@ context.stroke();
                         <p>Que o <code>beginPath()</code> seguido de outro <code>beginPath()</code> funciona também como <code>closePath()</code>?</p>
 
                     </div>
-
-
+                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->

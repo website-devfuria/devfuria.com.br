@@ -234,7 +234,6 @@ context.stroke();
                         </div>
                     </div>
                     <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
-
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
