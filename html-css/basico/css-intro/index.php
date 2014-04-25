@@ -48,7 +48,7 @@ $pagina = $model->getPagina("/html-css/basico/css-intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="css-intro">Introdução</h1>
+                            <h2 id="css-intro">Introdução</h2>
                         </div>
 
                         <p>Quem começa a aprender CSS logo se pergunta: <strong>o que será esse negócio de cascata?</strong>. É um conceito. Ainda temos a
@@ -94,7 +94,7 @@ $pagina = $model->getPagina("/html-css/basico/css-intro/");
 
                     <div class="bs-docs-section" id="css-unindo">
                         <div class="page-header">
-                            <h1>Unindo o CSS ao HTML</h1>
+                            <h2>Unindo o CSS ao HTML</h2>
                         </div>
 
                         <p>Agora precisamos aprender como unir a CSS ao documento HTML.</p>

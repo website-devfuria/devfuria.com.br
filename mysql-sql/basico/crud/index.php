@@ -59,7 +59,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/crud/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="crud">Eu crudo, você cruda, eles crudam</h1>
+                            <h2 id="crud">Eu crudo, você cruda, eles crudam</h2>
                         </div>
 
                         <p>O CRUD é um acrônimo para  as 4 operações básicas de um banco de dados.</p>
@@ -98,7 +98,7 @@ delete = delete
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="insert">Create (insert)</h1>
+                            <h2 id="insert">Create (insert)</h2>
                         </div>
 
                         <p>O comando <code>INSERT</code> insere dados. Veja o statement seguinte.</p>
@@ -146,7 +146,7 @@ delete = delete
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="select">Read (select)</h1>
+                            <h2 id="select">Read (select)</h2>
                         </div>
 
                         <p>Utilizamos o comando <code>SELECT</code> quando queremos resgatar dados.</p>
@@ -227,7 +227,7 @@ delete = delete
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="update">Update (update)</h1>
+                            <h2 id="update">Update (update)</h2>
                         </div>
 
                         <p>O comando <code>update</code> atualiza os registros.</p>
@@ -278,7 +278,7 @@ WHERE name = 'Bowser';</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="delete">Delete (delete)</h1>
+                            <h2 id="delete">Delete (delete)</h2>
                         </div>
 
                         <p>Adivinha o que o comando <code>delete</code> faz? Deleta registros, isso mesmo!</p>

@@ -62,7 +62,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/if-else/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Fluxo de controle</h1>
+                            <h2 id="intro">Fluxo de controle</h2>
                         </div>
 
                         <p>As instrunções condicionais alterão o fluxo de controle de seu programa.</p>
@@ -112,7 +112,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/if-else/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="diagram">Diagrama de sintaxe</h1>
+                            <h2 id="diagram">Diagrama de sintaxe</h2>
                         </div>
 
                         <p>A ilustração abaixo é genial, trata-se de um diagrama de sintaxe elabora pelo mago do JS
@@ -134,7 +134,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/if-else/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="aninha">Condicionais aninhados</h1>
+                            <h2 id="aninha">Condicionais aninhados</h2>
                         </div>
 
                         <p>Quando temos um <code>if</code> dentro do outro.</p>
@@ -156,7 +156,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/if-else/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="simpl">Simplificando a expressão</h1>
+                            <h2 id="simpl">Simplificando a expressão</h2>
                         </div>
 
 
@@ -192,7 +192,7 @@ if ( ! $variavel) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="elseif">else if</h1>
+                            <h2 id="elseif">else if</h2>
                         </div>
 
                         <p>O <strong>bloco else</strong> não precisa ser executado sempre que a expressão no <strong>bloco if</strong> for <code>false</code>.</p>
@@ -230,7 +230,7 @@ if ( ! $variavel) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="terceiro-else">if - else if - else</h1>
+                            <h2 id="terceiro-else">if - else if - else</h2>
                         </div>
 
                         <p>Uma outra variação seria incluir um terceiro bloco else</p>
@@ -257,7 +257,7 @@ if ( ! $variavel) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

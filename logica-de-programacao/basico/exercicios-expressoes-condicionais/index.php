@@ -58,7 +58,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/exercicios-expressoes
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="01">Número maior ou menor</h1>
+                            <h2 id="01">Número maior ou menor</h2>
                             <p>
                                 Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso
                                 contrário escrever NÃO É MAIOR QUE 10!
@@ -114,7 +114,7 @@ FIM</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="02">Positivo ou negativo</h1>
+                            <h2 id="02">Positivo ou negativo</h2>
                             <p>
                                 Ler um valor e escrever se é positivo ou negativo (considere o valor zero como positivo)
                             </p>
@@ -203,7 +203,7 @@ if (numero % 2) == 0) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="03">Mostrar o maior</h1>
+                            <h2 id="03">Mostrar o maior</h2>
                             <p>
                                 Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles
                             </p>
@@ -262,7 +262,7 @@ FIM</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="04">Mostrar em ordem ascendente</h1>
+                            <h2 id="04">Mostrar em ordem ascendente</h2>
                             <p>
                                 Ler dois valores (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.
                             </p>
@@ -321,7 +321,7 @@ FIM</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="05">É triangulo?</h1>
+                            <h2 id="05">É triangulo?</h2>
                             <p>
                                 Dados 3 valores quaisquer (a, b e c) representando as medidas dos lados de um triângulo,
                                 escrever se formam ou não um triângulo.

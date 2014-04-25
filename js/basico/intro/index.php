@@ -51,7 +51,7 @@ $pagina = $model->getPagina("/js/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2 id="js-intro">Introdução</h1>
+                            <h2 id="js-intro">Introdução</h2>
                         </div>
 
                         <p><strong>Javascript(JS) não é brinquedo, é linguagem de programação séria</strong>.</p>
@@ -253,7 +253,7 @@ element.onclick = function() {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-success">

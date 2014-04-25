@@ -45,7 +45,7 @@ $pagina = $model->getPagina("/php/basico/select-multiple/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="form-exemplo">Formulário de exemplo</h1>
+                            <h2 id="form-exemplo">Formulário de exemplo</h2>
                         </div>
 
                         <p>
@@ -119,7 +119,7 @@ $pagina = $model->getPagina("/php/basico/select-multiple/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="recebendo-form">Recebendo o formulário web</h1>
+                            <h2 id="recebendo-form">Recebendo o formulário web</h2>
                         </div>
 
                         <p>O controle enviará todas as opções que o usário escolher no array <code>$_POST['cidades']</code> </p>
@@ -154,7 +154,7 @@ if ($_POST['cidades']) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="carregando-form">Carregando o formulário web</h1>
+                            <h2 id="carregando-form">Carregando o formulário web</h2>
                         </div>
 
                         <p>Para carregar o formulário basta percorrer o array e "printar" as "options".</p>

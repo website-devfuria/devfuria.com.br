@@ -82,7 +82,7 @@ $pagina = $model->getPagina("/js/basico/code-lampadas/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Analisando código</h1>
+                            <h2 id="intro">Analisando código</h2>
                         </div>
 
                         <p>
@@ -105,7 +105,7 @@ element.onclick = function() {
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="maos-obra">Mãos a obra</h1>
+                                <h2 id="maos-obra">Mãos a obra</h2>
                             </div>
 
                             <p>Primeiro, não posso deixar de comentar que programar no lado cliente é uma tarefa que exige muita criatividade. Esse
@@ -129,7 +129,7 @@ element.onclick = function() {
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="funcionar">Faça o script funcionar localmente</h1>
+                                <h2 id="funcionar">Faça o script funcionar localmente</h2>
                             </div>
 
                             <p>Para você me acompanhar, o ideal seria você baixar os código fontes ou redigitá-los.</p>
@@ -233,7 +233,7 @@ element.onclick = function() {
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="by-id">getElementById</h1>
+                                <h2 id="by-id">getElementById</h2>
                             </div>
 
                             <p>Uma coisa que fazemos com muita frequência em JS é referenciar (ou talvez a palavra mais adequada seja <strong>buscar</strong>)
@@ -270,7 +270,7 @@ null.onclick = ...
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="document">document</h1>
+                                <h2 id="document">document</h2>
                             </div>
 
                             <p>E esse <code>document</code> antes da função, o que siginifica?</p>
@@ -289,7 +289,7 @@ null.onclick = ...
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="onclick">onclick=""</h1>
+                                <h2 id="onclick">onclick=""</h2>
                             </div>
 
                             <p>Já ouviu falar em eventos? Isso mesmo <code>onclick</code> nada mais é do que o evento click.</p>
@@ -303,7 +303,7 @@ null.onclick = ...
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="function">function()</h1>
+                                <h2 id="function">function()</h2>
                             </div>
 
                             <p>Uma função é uma função (momento KISS).</p>
@@ -363,7 +363,7 @@ mostrar_alerta();</code></pre>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="src">src=""</h1>
+                                <h2 id="src">src=""</h2>
                             </div>
 
                             <p>Esse <code>scr</code> nada mais é do que uma propriedade HTML, isso mesmo, HTML!</p>
@@ -381,7 +381,7 @@ mostrar_alerta();</code></pre>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="match">match()</h1>
+                                <h2 id="match">match()</h2>
                             </div>
 
                             <p>Função nativa do JS utilizada para executar uma Expressão Regular (regexp), não me pergunte o que é isso ok? Brincadeira
@@ -402,7 +402,7 @@ se não
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="conclusao">Conclusão</h1>
+                                <h2 id="conclusao">Conclusão</h2>
                             </div>
                             <p>Se você sobreviveu até aqui, parabéns!</p>
 

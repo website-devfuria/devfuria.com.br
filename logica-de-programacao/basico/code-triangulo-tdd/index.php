@@ -58,7 +58,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/code-triangulo-tdd/")
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="code">Código "é triangulo" agora com TDD</h1>
+                            <h2 id="code">Código "é triangulo" agora com TDD</h2>
                         </div>
 
                         <p>Finalmente vamos praticar esse tal de TDD, já era tempo.</p>
@@ -81,7 +81,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/code-triangulo-tdd/")
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="preparando">Preparando os arquivos</h1>
+                            <h2 id="preparando">Preparando os arquivos</h2>
                         </div>
 
                         <p>Vamos utilizar dois arquivos: a classe e o teste. Eles podem ficar no mesmo diretório
@@ -134,7 +134,7 @@ TrianguloTest.php</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="rodando">Rodando o teste</h1>
+                            <h2 id="rodando">Rodando o teste</h2>
                         </div>
 
                         <p>Para executar o teste usamos:</p>
@@ -172,7 +172,7 @@ class TrianguloTest extends PHPUnit_Framework_TestCase
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="tdd">Praticando o TDD</h1>
+                            <h2 id="tdd">Praticando o TDD</h2>
                         </div>
 
 

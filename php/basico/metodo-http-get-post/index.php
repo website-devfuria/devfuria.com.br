@@ -59,7 +59,7 @@ $pagina = $model->getPagina("/php/basico/metodo-http-get-post/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="http">O protocolo HTTP</h1>
+                            <h2 id="http">O protocolo HTTP</h2>
                         </div>
 
                         <p>O funcionamento do PHP depende do Apache e o apache depende do protocolo HTTP.</p>
@@ -129,7 +129,7 @@ $pagina = $model->getPagina("/php/basico/metodo-http-get-post/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="requisicao">Requisição</h1>
+                            <h2 id="requisicao">Requisição</h2>
                         </div>
 
                         <p>A requisição comprende três elementos:</p>
@@ -167,7 +167,7 @@ username=João da Silva</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="resposta">Resposta</h1>
+                            <h2 id="resposta">Resposta</h2>
                         </div>
 
                         <p>A resposta também comprende três elementos:</p>
@@ -231,7 +231,7 @@ Server: Apache/2.2.15 (CentOS
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="get">GET</h1>
+                            <h2 id="get">GET</h2>
                         </div>
 
                         <p>O método pode ser gerado por um formulário web e também por um link em sua página HTML.
@@ -258,7 +258,7 @@ Server: Apache/2.2.15 (CentOS
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="post">POST</h1>
+                            <h2 id="post">POST</h2>
                         </div>
 
                         <p>O método só ṕode ser gerado através de um formulário web (ou através de AJAX), não dá para
@@ -282,7 +282,7 @@ Server: Apache/2.2.15 (CentOS
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="stateless">Sem estado (state less)</h1>
+                            <h2 id="stateless">Sem estado (state less)</h2>
                         </div>
 
                         <p>Eis o ponto central de uma aplicação web: ela é construida sobre um protocolo sem estado.</p>
@@ -300,7 +300,7 @@ Server: Apache/2.2.15 (CentOS
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

@@ -73,7 +73,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/exercicios-operadores
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="01">Duas variáveis</h1>
+                            <h2 id="01">Duas variáveis</h2>
                             <p>Escreva um algoritmo que armazene o valor 10 em uma variável denominada “num&#95;a” e
                                 também o valor 20 em uma variável denominada “num&#95;b”.
                                 Agora, (apenas com o uso de atribuições) passe o valor de num&#95;a para num&#95;b e imprima os resultados.</p>
@@ -180,7 +180,7 @@ echo “$num_a, $num_b”;
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="02">Área Quadrada</h1>
+                            <h2 id="02">Área Quadrada</h2>
                             <p>Escreva um algoritmo que mostre a área quadrada de um espaço qualquer
                                 (os valores desse espaço são atribuídos arbitrariamente pelo programador).</p>
                         </div>
@@ -241,7 +241,7 @@ echo $metro_quadrado; // mostra na tela “14”
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="03">Média Simples</h1>
+                            <h2 id="03">Média Simples</h2>
                             <p>Faça um programa que mostra a média simples (aritmética) de 3 valores quaisquer.</p>
                         </div>
                         <div class="panel-group" >
@@ -300,7 +300,7 @@ mostrar media // 20</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="04">Eleitores e votos</h1>
+                            <h2 id="04">Eleitores e votos</h2>
                             <p>Sendo o número total de eleitores de um município = 25.639, o número de votos brancos = 1507, nulos = 2312 e
                                 válidos = 21.820. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.</p>
                         </div>
@@ -371,7 +371,7 @@ mostrar perVotosBrancos, perVotosNulos, perVotosValidos</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="05">Salário e reajuste</h1>
+                            <h2 id="05">Salário e reajuste</h2>
                             <p>Faça um algoritmo que mostre e calcule o reajuste de um salário qualquer.
                                 O salário e o reajuste serão valores quaisquer e a saída mostrará o valor do reajuste e o salário reajustado.</p>
                         </div>
@@ -433,7 +433,7 @@ FIM</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="06">Dias e meses</h1>
+                            <h2 id="06">Dias e meses</h2>
                             <p>Calcular o total de dias de n meses, considerando que os meses tenham 30 dias.</p>
                         </div>
                         <div class="panel-group">
@@ -492,7 +492,7 @@ FIM</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="07">Idade em dias</h1>
+                            <h2 id="07">Idade em dias</h2>
                             <p>Faça um algoritmo, sendo a data de nascimento um valor qualquer, que expresse a idade de uma pessoa em dias.</p>
 
                         </div>
@@ -566,7 +566,7 @@ total_meses = total_meses + anos</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="08">Custo de um carro</h1>
+                            <h2 id="08">Custo de um carro</h2>
                             <p>O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos
                                 (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escreva um
                                 algoritmo para calcular e escrever o custo final ao consumidor. Como custo de fábrica utilize um valor arbitrário,
@@ -664,7 +664,7 @@ FIM</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="09">Antecessor e sucessor</h1>
+                            <h2 id="09">Antecessor e sucessor</h2>
                             <p>Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.</p>
                         </div>
                         <div class="panel-group">
@@ -726,7 +726,7 @@ FIM</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="10">Juros Simples</h1>
+                            <h2 id="10">Juros Simples</h2>
                             <p>Calcular o juros simples produzido pelo empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.</p>
                         </div>
                         <div class="panel-group">

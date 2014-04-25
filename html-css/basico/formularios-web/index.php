@@ -64,7 +64,7 @@ $pagina = $model->getPagina("/html-css/basico/formularios-web/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="form-web">Formulário web</h1>
+                            <h2 id="form-web">Formulário web</h2>
                         </div>
 
                         <p>Um formulário web é a porta de entradas dos dados de sua aplicação.</p>
@@ -116,7 +116,7 @@ $pagina = $model->getPagina("/html-css/basico/formularios-web/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="input">Controles básicos (input)</h1>
+                            <h2 id="input">Controles básicos (input)</h2>
                         </div>
 
                         <p>Existem os controles básicos e os criados pelo programador ou por alguma biblioteca.</p>
@@ -281,7 +281,7 @@ $pagina = $model->getPagina("/html-css/basico/formularios-web/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="nao-inputs">Controles básicos (não input)</h1>
+                            <h2 id="nao-inputs">Controles básicos (não input)</h2>
                         </div>
 
                         <p>Nesta categoria encontram-se os controles "combo box", "list box" e "text box multiline".</p>
@@ -360,7 +360,7 @@ $pagina = $model->getPagina("/html-css/basico/formularios-web/");
                     <p>Nas matérias posteriores nós veremos cada controle detalhadamente.</p>
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

@@ -60,7 +60,7 @@ $pagina = $model->getPagina("/php/basico/boas-praticas/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="merda">Vai dar merda...</h1>
+                            <h2 id="merda">Vai dar merda...</h2>
                         </div>
 
                         <blockquote>
@@ -100,7 +100,7 @@ $pagina = $model->getPagina("/php/basico/boas-praticas/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="endente">1 - Endentar o código fonte</h1>
+                            <h2 id="endente">1 - Endentar o código fonte</h2>
                         </div>
                         <p>Endentar o código significa dar espaço determinado no começo da linha do código com o intuito de torná-lo mais claro.</p>
 
@@ -147,7 +147,7 @@ else
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="nomeie">2 - Nomeie (tudo) adequadamente</h1>
+                            <h2 id="nomeie">2 - Nomeie (tudo) adequadamente</h2>
                         </div>
                         <p><strong>Nomear variáveis, funções, classes, campos de banco de dados, campos de formulário HTML e tudo o mais que vir à mente...
                                 é uma arte</strong>. Existem algumas regras básicas pertinentes à línguaguem de programação como, por exemplo, o fato de <code>nome</code>
@@ -230,7 +230,7 @@ endereco</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="comente">3 - Comente o código... e faça-o de forma concisa</h1>
+                            <h2 id="comente">3 - Comente o código... e faça-o de forma concisa</h2>
                         </div>
                         <p><strong>Comentar código, assim como nomear variáveis, também é uma arte</strong>. Existem programadores que não comentam o código, há
                             também os que comentam demais. Há, ainda, aqueles que acham que o comentário do código é a documentação do sistema, não é.</p>
@@ -275,7 +275,7 @@ endereco</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="estilos">4 - Tenha um estilo ou... siga um</h1>
+                            <h2 id="estilos">4 - Tenha um estilo ou... siga um</h2>
                         </div>
 
                         <p>Neste contexto, "estilo" é o formato no qual seu código é apresentado. A grande dica para que está começando em um equipe é: <strong>descubra e respeite

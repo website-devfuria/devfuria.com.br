@@ -68,7 +68,7 @@ $pagina = $model->getPagina("/html-css/basico/onde-tudo-comecou/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="historia">Um pouco de história...</h1>
+                            <h2 id="historia">Um pouco de história...</h2>
                         </div>
 
                         <p>Tim Berners-Lee, a culpa é toda dele. No começo dos anos 90, o dito cujo, inventou o HTML (HyperText Markup Language) que
@@ -123,7 +123,7 @@ $pagina = $model->getPagina("/html-css/basico/onde-tudo-comecou/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="o-que-e-html">Mas afinal, o que é HTML?</h1>
+                            <h2 id="o-que-e-html">Mas afinal, o que é HTML?</h2>
                         </div>
 
                         <p><strong>HTML, originalmente, marca o conteúdo</strong>. Ele faz isso através de suas
@@ -135,7 +135,7 @@ $pagina = $model->getPagina("/html-css/basico/onde-tudo-comecou/");
                             <li><code>head</code> - define o cabeçalho do documento.</li>
                             <li><code>titlte</code> - define o título.</li>
                             <li><code>body</code> - define o corpo.</li>
-                            <li><code>h1</code> - definie o primeiro título(o mais importante).</li>
+                            <li><code>h2</code> - definie o primeiro título(o mais importante).</li>
                             <li><code>h2</code> - definie o segudo título, e assim até o h6.</li>
                             <li><code>a</code> -  define uma âncora, quero dizer, o famoso link.</li>
                             <li><code>img</code> - define uma imagem</li>
@@ -304,7 +304,7 @@ $pagina = $model->getPagina("/html-css/basico/onde-tudo-comecou/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="css">E esse tal de CSS?</h1>
+                            <h2 id="css">E esse tal de CSS?</h2>
                         </div>
 
                         <p>CSS (Cascading Style Sheet) determina a estilização do contéudo.</p>
@@ -421,7 +421,7 @@ $pagina = $model->getPagina("/html-css/basico/onde-tudo-comecou/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="ferramentas">Ferramentas</h1>
+                            <h2 id="ferramentas">Ferramentas</h2>
                         </div>
 
                         <p>O <em>Firebug</em> eu já havia comentado sobre ele na matéria <a href="http://www.devfuria.com.br/js/basico/preparando-o-terreno/">http://www.devfuria.com.br/js/basico/preparando-o-terreno/</a>.</p>
@@ -444,7 +444,7 @@ $pagina = $model->getPagina("/html-css/basico/onde-tudo-comecou/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-success">

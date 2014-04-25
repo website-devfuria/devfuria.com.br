@@ -112,7 +112,7 @@ $pagina = $model->getPagina("/js/basico/checkbox-checked/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="codando">Codando</h1>
+                            <h2 id="codando">Codando</h2>
                         </div>
 
 

@@ -50,7 +50,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/primeiros-passos-mysql/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Refrescando a memória</h1>
+                            <h2 id="intro">Refrescando a memória</h2>
                         </div>
 
                         <p>Na matéria anterior vimos como se conectar com o banco de dados via console e é isso que vamos continuar fazendo aqui</p>
@@ -62,7 +62,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/primeiros-passos-mysql/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="erro-1064">Começando com um erro (1064)!</h1>
+                            <h2 id="erro-1064">Começando com um erro (1064)!</h2>
                         </div>
 
                         <p>Beleza hein? Vamos começar bem rssss</p>
@@ -118,7 +118,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/primeiros-passos-mysql/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="listar-bases">Listar as bases de dados do MySQl</h1>
+                            <h2 id="listar-bases">Listar as bases de dados do MySQl</h2>
                         </div>
 
                         <p>Quer saber quais são as base de dados existente em seu servidor Mysql?</p>
@@ -140,7 +140,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/primeiros-passos-mysql/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="sel-bases">Selecionando a base para uso</h1>
+                            <h2 id="sel-bases">Selecionando a base para uso</h2>
                         </div>
 
                         <p>Acabamos de listar todas as bases.<p/>
@@ -159,7 +159,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/primeiros-passos-mysql/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="outros">Outros comandos (praticando)</h1>
+                            <h2 id="outros">Outros comandos (praticando)</h2>
                         </div>
 
                         <p>O MySql possue algumas funções que nos auxiliam. Uma delas é a <code>version()</code>. Ela
@@ -218,7 +218,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/primeiros-passos-mysql/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="insensitive">Case INsensitive</h1>
+                            <h2 id="insensitive">Case INsensitive</h2>
                         </div>
 
                         <p>O MySql não faz distinção entra caixa alta ou baixa</p>
@@ -229,7 +229,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/primeiros-passos-mysql/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

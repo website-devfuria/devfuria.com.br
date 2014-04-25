@@ -54,7 +54,7 @@ $pagina = $model->getPagina("/js/basico/debugando/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">O que é debugar ?</h1>
+                            <h2 id="intro">O que é debugar ?</h2>
                         </div>
 
                         <blockquote>
@@ -116,7 +116,7 @@ O dev novamente reflexivo: O valor é "", o tipo é string. Acho que vou "parar"
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="formas">Formas rudimentares</h1>
+                            <h2 id="formas">Formas rudimentares</h2>
                         </div>
 
                         <p>A forma mais rudimentar de debugar em JS é exibir um alerta. Com o tempo você vai se encher com as popup e logo vai
@@ -146,7 +146,7 @@ document.write(minha_variavel);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="depuradores">Depuradores (subindo um degrau)</h1>
+                            <h2 id="depuradores">Depuradores (subindo um degrau)</h2>
                         </div>
 
                         <p>Quem desenvolve em JS e utiliza o Firefox para ver o resultado pode contar com o Firebug (já comentei um monte de vez
@@ -185,7 +185,7 @@ console.log(minha_variavel);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="problemas">Como saber se o código não está com problemas ?</h1>
+                            <h2 id="problemas">Como saber se o código não está com problemas ?</h2>
                         </div>
 
                         <p>Estou mereferindo ao código quebrado, aquele que nem compila ou, em nosso caso, onde a

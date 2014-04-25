@@ -58,7 +58,7 @@ $pagina = $model->getPagina("/php/basico/um-bom-comeco/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Introdução</h1>
+                            <h2 id="intro">Introdução</h2>
                         </div>
 
                         <p><strong>PHP é uma linguagem de programação para uso geral</strong>. Inicialmente, projetada por Rasmus Lerdorf na década de 1990, tinha
@@ -133,7 +133,7 @@ $pagina = $model->getPagina("/php/basico/um-bom-comeco/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="que-troco-e-esse">LAMP, WAMP, XAMP, que troço é esse?</h1>
+                            <h2 id="que-troco-e-esse">LAMP, WAMP, XAMP, que troço é esse?</h2>
                         </div>
 
                         <p>Todo esse processo roda sobre um sistema operacional, podendo ser tanto o Linux como o Windows. Quando utilizamos o Linux,
@@ -173,7 +173,7 @@ $pagina = $model->getPagina("/php/basico/um-bom-comeco/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="sintaxe-basica">Sintaxe Básica</h1>
+                            <h2 id="sintaxe-basica">Sintaxe Básica</h2>
                         </div>
 
                         <p>A <strong>sintaxe básica</strong> pode ser conferida nos trechos de códigos seguintes:</p>
@@ -222,7 +222,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="porque-php">Por que PHP?</h1>
+                            <h2 id="porque-php">Por que PHP?</h2>
                         </div>
                         <p>O PHP obteve, nos anos seguinte à sua criação, a colaboração da dupla Andi Gutmans e Zeev Suraski evoluindo de forma
                             surpreendente. Atualmente na versão 5.4 a linguagem conta com uma larga aceitação e utilização em centenas de projetos,
@@ -261,7 +261,7 @@ echo "Resultado da soma de 1 + 1 = $resultado";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-success">

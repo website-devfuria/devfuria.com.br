@@ -53,7 +53,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/tdd-test-driven-devel
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">TDD junto com lógica? Assim tão cedo?</h1>
+                            <h2 id="intro">TDD junto com lógica? Assim tão cedo?</h2>
                         </div>
 
                         <p>
@@ -146,7 +146,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/tdd-test-driven-devel
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="tdd">O TDD de Kent Bech</h1>
+                            <h2 id="tdd">O TDD de Kent Bech</h2>
                         </div>
 
                         <p>Acrônimo para Test Driven Development (desenvolvimento guiado por testes).</p>
@@ -207,7 +207,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/tdd-test-driven-devel
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="ferramentas">Ferramentas para teste unitários</h1>
+                            <h2 id="ferramentas">Ferramentas para teste unitários</h2>
                         </div>
 
                         <div class="bs-docs-section">
@@ -284,7 +284,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/tdd-test-driven-devel
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="exerc">Exercício</h1>
+                            <h2 id="exerc">Exercício</h2>
                         </div>
 
                         <p>Coloque o PHPUnit e o QUnit para funcionarem.</p>
@@ -292,7 +292,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/tdd-test-driven-devel
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                                <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                             </div>
 
                             <div class="panel panel-success">

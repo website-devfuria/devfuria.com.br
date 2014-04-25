@@ -45,7 +45,7 @@ $pagina = $model->getPagina("/php/basico/combobox-input-form-select/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="form-exemplo">Formulário de exemplo</h1>
+                            <h2 id="form-exemplo">Formulário de exemplo</h2>
                         </div>
 
                         <p>Combobox é o controle HTML <code>select</code>.</p>
@@ -121,7 +121,7 @@ $pagina = $model->getPagina("/php/basico/combobox-input-form-select/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="recebendo-form">Recebendo o formulário web</h1>
+                            <h2 id="recebendo-form">Recebendo o formulário web</h2>
                         </div>
 
                         <p>
@@ -239,7 +239,7 @@ if ($_POST['cidades']) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="carregando-form">Carregando o formulário web</h1>
+                            <h2 id="carregando-form">Carregando o formulário web</h2>
                         </div>
 
                         <p>Carregar o formulário é mais divertido do que recebê-lo, você verá.</p>

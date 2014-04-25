@@ -54,7 +54,7 @@ $pagina = $model->getPagina("/regexp/basico/pattern-exec/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">exec()</h1>
+                            <h2 id="intro">exec()</h2>
                         </div>
 
                         <p>A função <code>exec()</code> em Javascript possue a sintaxe parecida com a função <code>test()</code> porém o resultado é idêntico a função <code>match()</code>.</p>
@@ -112,7 +112,7 @@ resultado['input'] = ""Casa com a palavra exemplo.""
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="nao-casou">Se a expressão não casar</h1>
+                            <h2 id="nao-casou">Se a expressão não casar</h2>
                         </div>
 
                         <p>Neste caso, o valor da variável <code>resultado</code> será apenas <code>null</code></p>
@@ -134,7 +134,7 @@ console.log(resultado);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
+                            <h2 id="sintax-errada">Se a expressão estiver sintaticamente errada</h2>
                         </div>
 
                         <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um <code>(</code> a mais.</p>
@@ -159,7 +159,7 @@ console.log(resultado);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="code">Código</h1>
+                            <h2 id="code">Código</h2>
                         </div>
 
                         <p>Quando a expressão casa com uma parte do texto, ou seja, quando encontramos algo na string de pesquisa, a função retorna

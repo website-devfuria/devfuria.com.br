@@ -52,7 +52,7 @@ $pagina = $model->getPagina("/php/basico/textbox-password-textarea/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="form-exemplo">Formulário de exemplo</h1>
+                            <h2 id="form-exemplo">Formulário de exemplo</h2>
                         </div>
 
                         <p>O formulário abaixo eu peguei do livro do Andy Budd (Criando Páginas Web com CSS)</p>
@@ -89,7 +89,7 @@ $pagina = $model->getPagina("/php/basico/textbox-password-textarea/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="prop-name">Propriedade <code>name=""</code></h1>
+                            <h2 id="prop-name">Propriedade <code>name=""</code></h2>
                         </div>
 
                         <p>O PHP depende desta propriedade HTML.</p>
@@ -117,7 +117,7 @@ $pagina = $model->getPagina("/php/basico/textbox-password-textarea/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="recebendo-form">Recebendo o formulário web</h1>
+                            <h2 id="recebendo-form">Recebendo o formulário web</h2>
                         </div>
 
                         <p>Ainda não respondemos a pergunta: O que é enviado para o servidor?</p>
@@ -175,7 +175,7 @@ $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="carregando-form">Carregando o formulário web</h1>
+                            <h2 id="carregando-form">Carregando o formulário web</h2>
                         </div>
 
                         <p>Em muito casos queremos abrir o formulário já com alguns dados, quer dizer, estamos  carregando

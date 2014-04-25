@@ -54,7 +54,7 @@ $pagina = $model->getPagina("/regexp/basico/string-match/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">string.match()</h1>
+                            <h2 id="intro">string.match()</h2>
                         </div>
 
                         <p>Em Javascript temos a forma <code>string.match()</code> onde <code>"string"</code> é a variável contendo a sua string e <code>"match()"</code> é a função que evocamos
@@ -101,7 +101,7 @@ resultado['input'] = ""Casa com a palavra exemplo.""
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="nao-casou">Se a expressão não casar</h1>
+                            <h2 id="nao-casou">Se a expressão não casar</h2>
                         </div>
 
                         <p>Neste caso, o valor da variável <code>resultado</code> será apenas <code>null</code></p>
@@ -122,7 +122,7 @@ console.log(resultado);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
+                            <h2 id="sintax-errada">Se a expressão estiver sintaticamente errada</h2>
                         </div>
 
                         <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um <code>(</code> a mais.</p>
@@ -148,7 +148,7 @@ console.log(resultado);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="code">Código</h1>
+                            <h2 id="code">Código</h2>
                         </div>
 
                         <p>Quando a expressão casa com uma parte do texto, ou seja, quando encontramos algo na string de pesquisa, a função retorna

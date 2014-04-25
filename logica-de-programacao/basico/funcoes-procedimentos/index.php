@@ -51,7 +51,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/funcoes-procedimentos
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">O que são funções?</h1>
+                            <h2 id="intro">O que são funções?</h2>
                         </div>
 
                         <p>Funções são uma seção nomeada de código. Em outra palavras, um pequeno (normalmente pequeno)
@@ -77,7 +77,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/funcoes-procedimentos
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="php">PHP</h1>
+                            <h2 id="php">PHP</h2>
                         </div>
 
                         <p>Eis a sintaxe básica de uma função que não retorna valor, mais conhecida como <strong>procedimento
@@ -131,7 +131,7 @@ echo somarDoisNumeros(2, 4);
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="js">Javascript</h1>
+                            <h2 id="js">Javascript</h2>
                         </div>
 
                         <p>Em Javascript podemos escrever funções igualmente como em PHP, veja código abaixo:</p>
@@ -201,7 +201,7 @@ console.log(somarDoisNumeros(2, 4));
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

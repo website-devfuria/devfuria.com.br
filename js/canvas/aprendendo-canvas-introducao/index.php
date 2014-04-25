@@ -293,7 +293,7 @@ if (canvas.getContext) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

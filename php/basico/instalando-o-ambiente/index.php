@@ -69,7 +69,7 @@ $pagina = $model->getPagina("/php/basico/instalando-o-ambiente/");
                 <div class="col-md-9" role="main">
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Introdução</h1>
+                            <h2 id="intro">Introdução</h2>
                         </div>
                         <p><strong>Todo programador precisa saber “levantar” seu próprio ambiente de trabalho</strong>, me refiro a instalar os programas necessários
                             para começar o desenvolvimento. Inclua na lista: o servidor web(apache), o módulo PHP, o banco de dados, a API (interface)
@@ -111,7 +111,7 @@ $pagina = $model->getPagina("/php/basico/instalando-o-ambiente/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="massa">Botando a mão na massa</h1>
+                            <h2 id="massa">Botando a mão na massa</h2>
                         </div>
 
                         <p>Não vou explicar em detalhes como fazer a instalação, já existe bons artigos sobre o assunto, veremos dicas práticas que
@@ -185,7 +185,7 @@ apt-get upgrade</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="apache">Instalando o Apache2</h1>
+                            <h2 id="apache">Instalando o Apache2</h2>
                         </div>
 
                         <p>No Ubuntu digite:</p>
@@ -205,7 +205,7 @@ systemctl start httpd.service
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="php">Instalando o PHP</h1>
+                            <h2 id="php">Instalando o PHP</h2>
                         </div>
 
                         <p>Na sequência instalamos o php, no terminal do Ubuntu digite:</p>
@@ -257,7 +257,7 @@ echo phpinfo();
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="php-ini">Alterando o php.ini</h1>
+                            <h2 id="php-ini">Alterando o php.ini</h2>
                         </div>
 
                         <p>No terminal é possível utilizar alguns editores de textos como o "vi" (que já vem instalado) ou o "vim" e o "nano" (que
@@ -294,7 +294,7 @@ systemctl start httpd.service // fedora
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="xdebug">Instalando o X-Debug</h1>
+                            <h2 id="xdebug">Instalando o X-Debug</h2>
                         </div>
 
                         <p>O X-debug é uma ferramenta útil pra cara... Ele ajuda a formatar a saída dos dados e é possível utilizá-lo com a interface
@@ -330,7 +330,7 @@ systemctl restart httpd.service</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="mysql">Instalando o MySql</h1>
+                            <h2 id="mysql">Instalando o MySql</h2>
                         </div>
 
                         <p>Agora chegou a vez o banco de dados, instale o mysql no Ubuntu digitando...</p>
@@ -364,7 +364,7 @@ systemctl enable mysqld.service
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="phpmyadmin">Instalando o PhpMyAdmin</h1>
+                            <h2 id="phpmyadmin">Instalando o PhpMyAdmin</h2>
                         </div>
 
                         <p>Na sequência instale o phpmyadmin, este aplicativo é responsável por oferecer uma interface amigável de trabalho ao
@@ -385,7 +385,7 @@ systemctl restart httpd.service
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="fechando">Fechando a conta</h1>
+                            <h2 id="fechando">Fechando a conta</h2>
                         </div>
 
                         <p>Anotou tudo que instalamos até aqui? vamos lá:</p>
@@ -425,7 +425,7 @@ systemctl restart httpd.service
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-success">

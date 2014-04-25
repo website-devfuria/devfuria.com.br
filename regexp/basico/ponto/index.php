@@ -37,7 +37,7 @@ $pagina = $model->getPagina("/regexp/basico/ponto/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Conceito</h1>
+                            <h2 id="intro">Conceito</h2>
                         </div>
 
                         <p>O <strong>ponto</strong> casa com qualquer caracter inclusive com as quebras de linhas (<code>\r e \n</code>).</p>
@@ -52,7 +52,7 @@ $pagina = $model->getPagina("/regexp/basico/ponto/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="exemplo">Exemplo</h1>
+                            <h2 id="exemplo">Exemplo</h2>
                         </div>
 
                         <div class="bs-example ">
@@ -63,7 +63,7 @@ $pagina = $model->getPagina("/regexp/basico/ponto/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="exemplo-marinho">Exemplos do Marinho:</h1>
+                            <h2 id="exemplo-marinho">Exemplos do Marinho:</h2>
                         </div>
 
                         <div class="bs-example ">

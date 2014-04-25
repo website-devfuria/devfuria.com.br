@@ -55,7 +55,7 @@ $pagina = $model->getPagina("/js/basico/code-lampadas-refatorando/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Analisando código</h1>
+                            <h2 id="intro">Analisando código</h2>
                         </div>
 
                         <p>Estou insistindo neste pequeno trecho de código com o intuito de facilitar o aprendizado. Se você já lêu a
@@ -90,7 +90,7 @@ element.onclick = function() {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="alterando">Alterando (refatorando?) o ćodigo!</h1>
+                            <h2 id="alterando">Alterando (refatorando?) o ćodigo!</h2>
                         </div>
 
                         <p>A primeira coisa a fazer é criarmos um objeto para a nossa querida lâmpada:</p>
@@ -247,7 +247,7 @@ senão
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="quase">Código (quase) final</h1>
+                            <h2 id="quase">Código (quase) final</h2>
                         </div>
 
                         <p>Ufa, chegamos!</p>
@@ -291,7 +291,7 @@ senão
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="final">Código final!</h1>
+                            <h2 id="final">Código final!</h2>
                         </div>
 
                         <p>Para o código funcionar de verdade, falta realizarmos a primeira chamada ao método que inicia as coisas.</p>

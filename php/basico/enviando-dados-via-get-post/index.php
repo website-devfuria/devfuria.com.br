@@ -50,7 +50,7 @@ $pagina = $model->getPagina("/php/basico/enviando-dados-via-get-post/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="post">POST</h1>
+                            <h2 id="post">POST</h2>
                         </div>
 
                         <p>Criar uma requisição do tipo POST depende de um formulário web, se você entende um pouco
@@ -140,7 +140,7 @@ echo $_POST['email']; // print joao@dasilva.com
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="get-form">GET <small>(via formulário)</small></h1>
+                            <h2 id="get-form">GET <small>(via formulário)</small></h2>
                         </div>
 
                         <p>Para criar uma requisição GET altere a propriedade <code>method</code> para "get" do nosso HTML.</p>
@@ -198,7 +198,7 @@ echo $_GET['email']; // print joao@dasilva.com
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="get-url">GET <small>(via URL)</small></h1>
+                            <h2 id="get-url">GET <small>(via URL)</small></h2>
                         </div>
 
                         <p>A requisição do tipo GET não depende exclusivamente de um formulário. Ela pode ser feita
@@ -290,7 +290,7 @@ echo $_GET['email']; // print joao@dasilva.com
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

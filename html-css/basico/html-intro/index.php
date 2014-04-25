@@ -48,7 +48,7 @@ $pagina = $model->getPagina("/html-css/basico/html-intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="html-ancora">Âncora(link)</h1>
+                            <h2 id="html-ancora">Âncora(link)</h2>
                         </div>
 
                         <pre><code>&lt;a href="pagina-ao-clicar.html"&gt;Isto é um link&lt;/a&gt;</code></pre>
@@ -86,7 +86,7 @@ $pagina = $model->getPagina("/html-css/basico/html-intro/");
 
                     <div class="bs-docs-section" id="html-listas">
                         <div class="page-header">
-                            <h1>Listas</h1>
+                            <h2>Listas</h2>
                         </div>
 
                         <pre><code>&lt;ul&gt;
@@ -117,7 +117,7 @@ $pagina = $model->getPagina("/html-css/basico/html-intro/");
 
                     <div class="bs-docs-section" id="html-paragr-imgs">
                         <div class="page-header">
-                            <h1>Parágrafos e imagens</h1>
+                            <h2>Parágrafos e imagens</h2>
                         </div>
 
                         <pre><code>&lt;p&gt;Isto é um parágrafo&lt;/p&gt;
@@ -186,7 +186,7 @@ $pagina = $model->getPagina("/html-css/basico/html-intro/");
 
                     <div class="bs-docs-section" id="html-tabelas">
                         <div class="page-header">
-                            <h1>Tabelas</h1>
+                            <h2>Tabelas</h2>
                         </div>
 
                         <p>As tabelas acomodam dados tabulares.</p>
@@ -241,7 +241,7 @@ $pagina = $model->getPagina("/html-css/basico/html-intro/");
 
                     <div class="bs-docs-section" id="html-forms-inputs-labels">
                         <div class="page-header">
-                            <h1>Formulários, inputs e labels</h1>
+                            <h2>Formulários, inputs e labels</h2>
                         </div>
 
                         <p>Um formulário na web normalmente é chato de se preencher, só que ele é a alma dos aplicativos web, pois é através de seus
@@ -273,7 +273,7 @@ $pagina = $model->getPagina("/html-css/basico/html-intro/");
 
                     <div class="bs-docs-section" id="html-divs-span">
                         <div class="page-header">
-                            <h1>Div's e Span's</h1>
+                            <h2>Div's e Span's</h2>
                         </div>
 
                         <p>A tag <code>div</code> é um elemento do tipo <strong>conteiner</strong> que acomoda outras tag's, é um <code>div</code>sor de espaços.
@@ -291,7 +291,7 @@ $pagina = $model->getPagina("/html-css/basico/html-intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

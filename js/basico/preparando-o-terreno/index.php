@@ -62,7 +62,7 @@ $pagina = $model->getPagina("/js/basico/preparando-o-terreno/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">O terreno...</h1>
+                            <h2 id="intro">O terreno...</h2>
                         </div>
 
                         <p>Na matéria de introdução eu comentei que vamos aprender JS junto com HTML e CSS. Na verdade vamos aprender as coisas
@@ -93,7 +93,7 @@ $pagina = $model->getPagina("/js/basico/preparando-o-terreno/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="aonde-colocar">Aonde colocar o Javascript ?</h1>
+                            <h2 id="aonde-colocar">Aonde colocar o Javascript ?</h2>
                         </div>
 
                         <p>O ideal é escrevermos o código JS em um arquivo texto com extensão <code>.js</code> e
@@ -143,7 +143,7 @@ $pagina = $model->getPagina("/js/basico/preparando-o-terreno/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="firebug">Firebug?</h1>
+                            <h2 id="firebug">Firebug?</h2>
                         </div>
 
                         <p>O Firebug é um plugin do navegador Firefox, ele é opensource e está disponível para download em:
@@ -165,7 +165,7 @@ console.log(qualquer);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="seguro">Javascript é seguro?</h1>
+                            <h2 id="seguro">Javascript é seguro?</h2>
                         </div>
 
                         <p>Vamos estender essa pergunta para: a linguagem de programação X é sergura?</p>
@@ -183,7 +183,7 @@ console.log(qualquer);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="caracter">Características da linguagem</h1>
+                            <h2 id="caracter">Características da linguagem</h2>
                         </div>
 
                         <p>JS é uma linguagem baseada em protótipos, em funções de primeira classe, fracamente tipada, imperativa,
@@ -198,7 +198,7 @@ console.log(qualquer);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="js-oop">JS é realmente Orientado a Objetos ?</h1>
+                            <h2 id="js-oop">JS é realmente Orientado a Objetos ?</h2>
                         </div>
 
                         <p>A questão se JS é ou não OOP ainda causa certa polêmica, mas segundo Douglas Crockford's (o mago do JS):</p>

@@ -54,7 +54,7 @@ $pagina = $model->getPagina("/regexp/basico/preg-match/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Sobre a função</h1>
+                            <h2 id="intro">Sobre a função</h2>
                         </div>
 
                         <p>A função <code>preg&#95;match()</code> refere-se a versão PCRE, versão compatível com PHP 5.3.</p>
@@ -137,7 +137,7 @@ $resultado = array("exemplo")
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="nao-casou">Se a expressão não casar</h1>
+                            <h2 id="nao-casou">Se a expressão não casar</h2>
                         </div>
 
                         <p>Executando o seguinte código:</p>
@@ -171,7 +171,7 @@ var_dump($resultado, $retorno);
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
+                            <h2 id="sintax-errada">Se a expressão estiver sintaticamente errada</h2>
                         </div>
 
                         <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um <code>(</code> a mais.</p>
@@ -204,7 +204,7 @@ $resultado = preg_match($pattern, $subject, $retorno);
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="code">Código</h1>
+                            <h2 id="code">Código</h2>
                         </div>
 
                         <p>Sabendo como a função se comporta, podemos esboçar nossa lógica da seguinte forma:</p>

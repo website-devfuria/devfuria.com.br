@@ -49,7 +49,7 @@ $pagina = $model->getPagina("/js/basico/input-radio-button/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="input-radio">Sobre o controle &lt;input type="radio"</h1>
+                            <h2 id="input-radio">Sobre o controle &lt;input type="radio"</h2>
                         </div>
 
                         <p>O input radio é um controle de opções, é uma única escolha entre as opções possíveis.</p>
@@ -97,7 +97,7 @@ $pagina = $model->getPagina("/js/basico/input-radio-button/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="o-problema">O problema e a solução</h1>
+                            <h2 id="o-problema">O problema e a solução</h2>
                         </div>
 
                         <p>Se uma radio é uma opção entre pelo menos duas, sabemos que nunca teremos uma única rádio apenas.</p>
@@ -145,7 +145,7 @@ $pagina = $model->getPagina("/js/basico/input-radio-button/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="logica">Nossa lógica</h1>
+                            <h2 id="logica">Nossa lógica</h2>
                         </div>
 
                         <p>Queria te convidar para uma viagem de transformação.</p>
@@ -216,7 +216,7 @@ for(var i = 0;  i < radios.length; i++) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="codando">Codando...</h1>
+                            <h2 id="codando">Codando...</h2>
                         </div>
 
                         <h3>...o evento do botão "submit"</h3>

@@ -65,7 +65,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Introdução</h1>
+                            <h2 id="intro">Introdução</h2>
                         </div>
 
                         <div class="bs-example">
@@ -143,7 +143,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="siglas">DB = BD = SGBDR</h1>
+                            <h2 id="siglas">DB = BD = SGBDR</h2>
                         </div>
 
                         <p>"Banco de dados" abreviamos para <code>BD</code>.</p>
@@ -160,7 +160,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="banco-dados">Banco de dados</h1>
+                            <h2 id="banco-dados">Banco de dados</h2>
                         </div>
 
                         <p>Banco de dados nada mais é que um sistema capaz de armazenar e recuperar uma grande quantidade de dados.</p>
@@ -176,7 +176,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="tabelas">Tabelas, Registros e Colunas</h1>
+                            <h2 id="tabelas">Tabelas, Registros e Colunas</h2>
                         </div>
 
 
@@ -255,7 +255,7 @@ Camisa Social,   15.00 -- esse é outro registro</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="instalando">Instalando o Mysql</h1>
+                            <h2 id="instalando">Instalando o Mysql</h2>
                         </div>
 
                         <p>O software, normalmente, se divide em duas partes: servidor e cliente.</p>
@@ -289,7 +289,7 @@ systemctl enable mysqld.service</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="via-console">MsySql via console (terminal)</h1>
+                            <h2 id="via-console">MsySql via console (terminal)</h2>
                         </div>
 
                         <p>Para testarmos a instalação do mysql nada melhor do que acionarmos o aplicativo.</p>
@@ -362,7 +362,7 @@ root       -- informamos o usuário
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                                <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                             </div>
 
                             <div class="panel panel-info">

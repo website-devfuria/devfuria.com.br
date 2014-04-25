@@ -47,7 +47,7 @@ $pagina = $model->getPagina("/html-css/basico/primeiro-html/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Um HTML de primeira qualidade</h1>
+                            <h2 id="intro">Um HTML de primeira qualidade</h2>
                         </div>
 
                         <p>O site <a href="http://www.csszengarden.com/" title="link-externo">csszengarden.com</a> é notório por seus esforços em promover e divulgar <strong>o poder do
@@ -169,7 +169,7 @@ A banda usada por este site está sendo graciosamente doada por mediatemple.</co
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="solucao">Solução</h1>
+                            <h2 id="solucao">Solução</h2>
                         </div>
 
                         <div class="code">

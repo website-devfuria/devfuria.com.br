@@ -53,7 +53,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/criando-base-tabela/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="base">Criando a base de dados</h1>
+                            <h2 id="base">Criando a base de dados</h2>
                         </div>
 
                         <p>Para criar uma base de dados utilize o comando abaixo:</p>
@@ -83,7 +83,7 @@ $pagina = $model->getPagina("/mysql-sql/basico/criando-base-tabela/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="tabela">Criando a tabela</h1>
+                            <h2 id="tabela">Criando a tabela</h2>
                         </div>
 
                         <p>Criar uma tabela é uma tarefa fácil e corriqueira. O trabalho pesado fica por conta da parte
@@ -182,7 +182,7 @@ data de óbito
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="comandos">Comandos úteis</h1>
+                            <h2 id="comandos">Comandos úteis</h2>
                         </div>
 
 
@@ -224,7 +224,7 @@ data de óbito
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="populando">Populando a tabela</h1>
+                            <h2 id="populando">Populando a tabela</h2>
                         </div>
 
                         <p>Não está faltando alguma coisa nessa tabela?</p>
@@ -281,7 +281,7 @@ Slim	Benny	snake	m	1996-04-29	\N
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

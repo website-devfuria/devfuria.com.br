@@ -58,7 +58,7 @@ $pagina = $model->getPagina("/regexp/basico/varios-resultados-match-test-exec/")
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Introdução</h1>
+                            <h2 id="intro">Introdução</h2>
                         </div>
 
                         <p>Aqui, temos o mesmo problema da matéria anterior:</p>
@@ -108,7 +108,7 @@ if (resultado) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="match">match()</h1>
+                            <h2 id="match">match()</h2>
                         </div>
 
                         <p>Incluí a opção global <code>g</code> como descrito acima e percorri o valor da variável <code>resultado</code> que agora é um array.</p>
@@ -132,7 +132,7 @@ for(i = 0; i < resultado.length; i++){
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="exec">exec()</h1>
+                            <h2 id="exec">exec()</h2>
                         </div>
 
                         <p>Repare apenas que a opção global <code>g</code> teve que ser utilizada, sem ela o navegador (FireFox 19) entra em um loop infinito.</p>
@@ -153,7 +153,7 @@ while(resultado = pattern.exec(string)){
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="test">test()</h1>
+                            <h2 id="test">test()</h2>
                         </div>
 
                         <p>
@@ -183,7 +183,7 @@ if (resultado) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="exercicio">Exercício prático</h1>
+                            <h2 id="exercicio">Exercício prático</h2>
                         </div>
 
                         <p>Dúvido muito que você conseguirá absorver o conteúdo desta matéria apenas lendo, então ponha a <strong>mão na massa</strong>. </p>

@@ -41,7 +41,7 @@ $pagina = $model->getPagina("/html-css/basico/elementos-inline-block-level/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Os 2 tipos essenciais de tags</h1>
+                            <h2 id="intro">Os 2 tipos essenciais de tags</h2>
                         </div>
 
                         <p>Há dois tipos básicos de tag's: as <code>in-line</code> e de <code>block-level</code>.</p>

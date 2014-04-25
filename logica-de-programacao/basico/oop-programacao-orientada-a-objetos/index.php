@@ -54,7 +54,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/oop-programacao-orien
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Introdução</h1>
+                            <h2 id="intro">Introdução</h2>
                         </div>
 
                         <p>O OOP (Object Oriented Programming) ou Programação Orientada a Objeto remonta a época da
@@ -116,7 +116,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/oop-programacao-orien
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="php">Implementação PHP</h1>
+                            <h2 id="php">Implementação PHP</h2>
                         </div>
 
                         <p>O código abaixo é denominado "código cliente", pois é ele quem faz uso da classe <code>Triangulo</code>.</p>
@@ -260,7 +260,7 @@ class Triangulo {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="js">Implementação Javascript</h1>
+                            <h2 id="js">Implementação Javascript</h2>
                         </div>
 
                         <p>Esqueça tudo o que você viu sobre OOP no PHP, em Javascript "o inimigo agora é outro".</p>
@@ -379,7 +379,7 @@ objeto.metodo();</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="conclusao">Concluindo</h1>
+                            <h2 id="conclusao">Concluindo</h2>
                         </div>
 
                         <p>Agora estamos habilitados a resolver nossos problemas de lógica com o paradigma de OOP. </p>
@@ -393,7 +393,7 @@ objeto.metodo();</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

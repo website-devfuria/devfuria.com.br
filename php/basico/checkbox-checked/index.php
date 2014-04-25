@@ -49,7 +49,7 @@ $pagina = $model->getPagina("/php/basico/checkbox-checked/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="form-exemplo">Formulário de exemplo</h1>
+                            <h2 id="form-exemplo">Formulário de exemplo</h2>
                         </div>
 
                         <p>Checkboxes são controles "booleanos" (modo de dizer). Eles ou estão ligados (true) ou
@@ -116,7 +116,7 @@ $pagina = $model->getPagina("/php/basico/checkbox-checked/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="recebendo-form">Recebendo o formulário web</h1>
+                            <h2 id="recebendo-form">Recebendo o formulário web</h2>
                         </div>
 
                         <p>Você deve estar pensando que o <strong>checkbox</strong> funciona de forma idêntica ao controle
@@ -178,7 +178,7 @@ $_POST['car']  = ( isset($_POST['car']) )  ? true : null;
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="carregando-form">Carregando o formulário web</h1>
+                            <h2 id="carregando-form">Carregando o formulário web</h2>
                         </div>
 
                         <p>Para carregar as checkboxes do nosso formulário não trabalheremos com a propriedade <code>value=""</code></p>

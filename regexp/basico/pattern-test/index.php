@@ -54,7 +54,7 @@ $pagina = $model->getPagina("/regexp/basico/pattern-test/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">pattern.test()</h1>
+                            <h2 id="intro">pattern.test()</h2>
                         </div>
 
 
@@ -85,7 +85,7 @@ console.log(resultado);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="nao-casou">Se a expressão não casar</h1>
+                            <h2 id="nao-casou">Se a expressão não casar</h2>
                         </div>
 
                         <p>A função retorna <code>false</code> neste caso.</p>
@@ -105,7 +105,7 @@ console.log(resultado);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="sintax-errada">Se a expressão estiver sintaticamente errada</h1>
+                            <h2 id="sintax-errada">Se a expressão estiver sintaticamente errada</h2>
                         </div>
 
                         <p>Se executarmos o código abaixo, ele falhará. Eu coloquei um <code>(</code> a mais.</p>
@@ -134,7 +134,7 @@ console.log(resultado);</code></pre>
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="code">Código</h1>
+                            <h2 id="code">Código</h2>
                         </div>
 
                         <p>Como a função retorna apenas <code>true</code> ou <code>false</code>, fica facíl deduzirmos o código final.</p>

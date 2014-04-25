@@ -58,7 +58,7 @@ $pagina = $model->getPagina("/php/basico/debugando/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">Introdução</h1>
+                            <h2 id="intro">Introdução</h2>
                         </div>
 
                         <p>Debugar é um esforço para encontrar determinado ponto (às vezes vários pontos) "defeituoso" no código para que seja
@@ -104,7 +104,7 @@ echo $minha_var;
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="var-dump">var_dump()</h1>
+                            <h2 id="var-dump">var_dump()</h2>
                         </div>
 
                         <p>Para contornar isso, o php conta com a função "var_dump()";</p>
@@ -134,7 +134,7 @@ die();
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="x-debug">x-debug()</h1>
+                            <h2 id="x-debug">x-debug()</h2>
                         </div>
 
                         <p>Para se beneficiar 100% da função var_dump() devemos ter instalado o programa x-debug.</p>
@@ -197,7 +197,7 @@ echo "&lt;/pre&gt;";
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="valor-da-variavel">Mas eu só queria ver o valor de uma variável!!!</h1>
+                            <h2 id="valor-da-variavel">Mas eu só queria ver o valor de uma variável!!!</h2>
                         </div>
 
                         <p>O nosso exemplo é bem simples e talvez o leitor não tenha notado o quanto é importante essa questão da exibição.</p>

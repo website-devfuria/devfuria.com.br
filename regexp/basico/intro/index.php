@@ -61,7 +61,7 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">O que são Expressões Regulares ?</h1>
+                            <h2 id="intro">O que são Expressões Regulares ?</h2>
                         </div>
 
                         <p>Expressões Regulares é uma técnica para procurar, de forma bem específica, um texto abrangente.</p>
@@ -85,7 +85,7 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="sobre">Sobre o curso</h1>
+                            <h2 id="sobre">Sobre o curso</h2>
                         </div>
 
                         <p>Eu preparei (e ainda estou preparando) este curso sobre expressão regulares's para ser bem básico</p>
@@ -115,7 +115,7 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="exemplo">Primeiro Exemplo</h1>
+                            <h2 id="exemplo">Primeiro Exemplo</h2>
                         </div>
 
                         <p>Temos a string original:</p>
@@ -147,7 +147,7 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="php">PHP e os dois mudos: PCRE e POSIX</h1>
+                            <h2 id="php">PHP e os dois mudos: PCRE e POSIX</h2>
                         </div>
 
                         <p>As funções da versão POSIX estão depreciadas na versão 5.3 do PHP.</p>
@@ -178,7 +178,7 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="js">Javascript e suas funções expressão regular</h1>
+                            <h2 id="js">Javascript e suas funções expressão regular</h2>
                         </div>
 
                         <p>
@@ -203,7 +203,7 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
 

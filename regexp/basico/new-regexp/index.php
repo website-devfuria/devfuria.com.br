@@ -38,7 +38,7 @@ $pagina = $model->getPagina("/regexp/basico/new-regexp/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="intro">RegExp()</h1>
+                            <h2 id="intro">RegExp()</h2>
                         </div>
 
                         <p>Utilizando-se do construtor <code>RegExp()</code> podemos compilar a expressão regular antes de usá-la.</p>
@@ -88,7 +88,7 @@ console.log(pattern, resultado);</code></pre>
 
                         <div class="bs-docs-section">
                             <div class="page-header">
-                                <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                                <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                             </div>
                             <div class="panel panel-info">
                                 <div class="panel-heading">

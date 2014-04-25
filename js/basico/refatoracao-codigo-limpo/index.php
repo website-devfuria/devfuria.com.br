@@ -54,7 +54,7 @@ $pagina = $model->getPagina("/js/basico/refatoracao-codigo-limpo/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="refatoracao">Refatoração</h1>
+                            <h2 id="refatoracao">Refatoração</h2>
                         </div>
 
                         <p>Quando escrevemos um código e, posteriomente, voltamos para ajustar algumas coisas, estamos
@@ -81,7 +81,7 @@ $pagina = $model->getPagina("/js/basico/refatoracao-codigo-limpo/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="antes-de-alterar">Antes de alterar seu código...</h1>
+                            <h2 id="antes-de-alterar">Antes de alterar seu código...</h2>
                         </div>
 
                         <p><strong>O código já está funcionando, se eu mexer poderei danificá-lo!</strong></p>
@@ -109,7 +109,7 @@ $pagina = $model->getPagina("/js/basico/refatoracao-codigo-limpo/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="codigo-limpo">Código limpo</h1>
+                            <h2 id="codigo-limpo">Código limpo</h2>
                         </div>
 
                         <p>Código limpo independe de OOP e de refatoração.</p>
@@ -174,7 +174,7 @@ $pagina = $model->getPagina("/js/basico/refatoracao-codigo-limpo/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="conclusao">Concluindo</h1>
+                            <h2 id="conclusao">Concluindo</h2>
                         </div>
 
                         <p>Na matéria seguinte vamos colocar a mão na massa e praticar a refatoração.</p>
@@ -189,7 +189,7 @@ $pagina = $model->getPagina("/js/basico/refatoracao-codigo-limpo/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-success">

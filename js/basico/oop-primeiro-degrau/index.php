@@ -38,7 +38,7 @@ $pagina = $model->getPagina("/js/basico/oop-primeiro-degrau/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="oop">OOP</h1>
+                            <h2 id="oop">OOP</h2>
                         </div>
                         <p>Vamos introduzir a orientação a objeto (vulgo OOP) na sua vida de progamador(ra).</p>
 
@@ -115,7 +115,7 @@ $pagina = $model->getPagina("/js/basico/oop-primeiro-degrau/");
                     </div>
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">

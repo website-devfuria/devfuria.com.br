@@ -38,7 +38,7 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/code-triangulo/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="triangulo">Revisitando o código "é triangulo"</h1>
+                            <h2 id="triangulo">Revisitando o código "é triangulo"</h2>
                         </div>
 
                         <p>

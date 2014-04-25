@@ -48,7 +48,7 @@ $pagina = $model->getPagina("/regexp/basico/varios-resultados-preg-match-all/");
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="quando">Quando usar?</h1>
+                            <h2 id="quando">Quando usar?</h2>
                         </div>
 
                         <p>Se olharmos o primeiro exemplo da matéria anterior:</p>
@@ -107,7 +107,7 @@ if ($resultado === 1) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="preg-match-all">preg&#95;math&#95;all()</h1>
+                            <h2 id="preg-match-all">preg&#95;math&#95;all()</h2>
                         </div>
 
 
@@ -166,7 +166,7 @@ if ($resultado >= 1) {
 
                     <div class="bs-docs-section">
                         <div class="page-header">
-                            <h1 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h1>
+                            <h2 id="leituras">Leituras adicionais sugeridas <small>(Referências)</small></h2>
                         </div>
 
                         <div class="panel panel-info">
