@@ -4,7 +4,7 @@
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/lineTo-moveTo/");
-$view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
+$view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_CANVAS;
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -21,7 +21,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Desenhando linhas</h1>
+                        <h1><?php echo $pagina->titulo ?></h1>
                     </div>
                 </div>
 

@@ -4,7 +4,6 @@
  */
 require "../../core/boot.php";
 $pagina = $model->getPagina("/js/math-random-numero-randomico-em-javascript/");
-$view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_RTG;
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -21,7 +20,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_RTG;
                 <!-- Título -->
                 <div class="receitas-header" id="content">
                     <div class="container">
-                        <h1>Como gerar números aleatórios em Javascript!</h1>
+                        <h1><?php echo $pagina->titulo ?></h1>
                     </div>
                 </div>
 

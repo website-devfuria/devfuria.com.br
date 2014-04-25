@@ -4,7 +4,6 @@
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/line-width/");
-$view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -21,7 +20,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Tamanho das linhas <code>lineWidth</code></h1>
+                        <h1><?php echo $pagina->titulo ?></h1>
                     </div>
                 </div>
 

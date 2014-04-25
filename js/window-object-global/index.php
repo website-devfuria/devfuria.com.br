@@ -6,7 +6,6 @@
  */
 require "../../core/boot.php";
 $pagina = $model->getPagina("/js/window-object-global/");
-$view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_RTG;
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -23,7 +22,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_RTG;
                 <!-- Título -->
                 <div class="receitas-header" id="content">
                     <div class="container">
-                        <h1>Entendendo o objeto <code>global</code> e o <code>window</code></h1>
+                        <h1><?php echo $pagina->titulo ?></h1>
                     </div>
                 </div>
 
@@ -238,13 +237,11 @@ console.log(window.outraVariavel); // undefined
 console.log(window.objContainer.outraVariavel); // 456
 </code></pre>
 
-
-
-
-                    </div><!-- Corpo da matéria -->
-                </div><!-- row -->
-            </div><!-- Matéria -->
-            <?php include BASE_PATH . VIEWS_PATH . "/rtg/footer.php"; ?>
-            <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+                    </div>
+                </div><!-- Corpo da matéria -->
+            </div><!-- row -->
+        </div><!-- Matéria -->
+        <?php include BASE_PATH . VIEWS_PATH . "/rtg/footer.php"; ?>
+        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
     </body>
 </html>

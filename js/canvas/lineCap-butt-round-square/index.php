@@ -4,7 +4,6 @@
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/lineCap-butt-round-square/");
-$view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -21,7 +20,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Limite das linhas <code>lineCap</code></h1>
+                        <h1><?php echo $pagina->titulo ?></h1>
                     </div>
                 </div>
 
@@ -34,12 +33,8 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 
                         <p>Os valores podem ser <code>"butt"</code>, <code>"round"</code> e <code>"square"</code>.</p>
 
-                    </div>
 
-                    <div class="bs-docs-section">
-                        <div class="page-header">
-                            <h2>Linhas guias</h2>
-                        </div>
+                        <p>Criei a função <code>desenharLinhasGuias()</code> para ajudar no entendimento deste artigo.</p>
 
                         <div class="row">
                             <div class="col-md-4">

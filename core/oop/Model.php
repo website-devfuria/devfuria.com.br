@@ -102,7 +102,7 @@ class Model {
 
         return array(
             Conteudo::SECAO_JS => array(
-                "href" => "js/?" . Conteudo::SUB_SECAO_CURSO,
+                "href" => "js",
                 "label" => "Javascript"
             ),
             Conteudo::SECAO_HTML => array(

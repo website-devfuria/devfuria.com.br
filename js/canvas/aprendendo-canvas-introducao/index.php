@@ -4,7 +4,6 @@
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/aprendendo-canvas-introducao/");
-$view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
 ?>
 <!DOCTYPE html>
 <html lang="pt">

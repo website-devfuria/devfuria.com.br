@@ -28,6 +28,14 @@ class NavTop {
      */
     public $secaoAtiva = "";
 
+
+    public function atualizarSecoes($secao, $subsecao) {
+        
+        $novaHRef =  $this->secoes[$secao]['href'] . "/?" . $subsecao;
+
+        $this->secoes[$secao]['href'] = $novaHRef;
+    }
+
 }
 
 ?>

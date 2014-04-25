@@ -21,7 +21,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Paths (caminhos)</h1>
+                        <h1><?php echo $pagina->titulo ?></h1>
                     </div>
                 </div>
 
