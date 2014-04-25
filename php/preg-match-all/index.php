@@ -21,7 +21,7 @@ $pagina = $model->getPagina("/php/arrays-funcoes-basicas/");
                 <!-- Título -->
                 <div class="receitas-header" id="content">
                     <div class="container">
-                        <!--<h1><?php #echo $pagina->titulo                  ?></h1>-->
+                        <!--<h1><?php #echo $pagina->titulo                      ?></h1>-->
                         <h1>preg_match_all()</h1>
                     </div>
                 </div>
@@ -40,8 +40,8 @@ $pagina = $model->getPagina("/php/arrays-funcoes-basicas/");
                         </p>
 
                         <p>
-                            O 5&ordm parâmetro (<code>$offset</code>) indica em que lugar, na string de pesquisa (<code>$subject</code>),
-                            a pesquisa deve iniciar.
+                            O 5&ordm parâmetro (<code>$offset</code>) indica em que posição, na string de pesquisa
+                            (<code>$subject</code>), a pesquisa deve iniciar.
                         </p>
 
 
@@ -61,58 +61,82 @@ $pagina = $model->getPagina("/php/arrays-funcoes-basicas/");
                 string $pattern,
                 string $subject
                 [, array &$matches
-                [, int $flags = PREG_PATTERN_ORDER [, int $offset = 0 ]]]
+                [, int $flags = PREG_PATTERN_ORDER
+                [, int $offset = 0 ]]]
             )</code></pre>
 
+                    </div>
 
+
+                    <div class="bs-docs-section" id="array_pop">
+                        <div class="page-header">
+                            <h2>Parâmetros</h2>
+                        </div>
 
                         <h3>pattern</h3>
-
-                        <p>The pattern to search for, as a string.</p>
+                        <p>A expressão regular propriamente dita.</p>
+                        <p>String de padrão de procura.</p>
 
                         <h3>subject</h3>
+                        <p>Texto que será vasculhado por nossa expresão regular.</p>
+                        <p>String de entrada.</p>
 
-                        <p>The input string</p>
+                        <h3>matches <small>(opcional)</small></h3>
+                        <p>O que nossa expressão regular encontrou.</p>
+                        <p>Array multidimensional ordenado de acordo com o 4&ordm parâmetro (<code>$flags</code>)</p>
 
-                        <h3>matches</h3>
-
-                        <p>Array of all matches in multi-dimensional array ordered according to flags</p>
-
-                        <h3>flags</h3>
-
-                        <p>A ordem do array resultado (<code>$matches</code>) é influenciado pelo 4 parâmetro, que pode ser:</p>
-
+                        <h3>flags <small>(opcional)</small></h3>
+                        <p>
+                            Define a ordem do array resultado (<code>$matches</code>), pode ser:
+                            <code>PREG_PATTERN_ORDER</code> ou <code>PREG_SET_ORDER</code>.
+                        </p>
                         <p>Quando omitido, o valor pardão é <code>PREG_PATTERN_ORDER</code>.</p>
 
-                        <ul>
-                            <li>
-                                PREG_PATTERN_ORDER
-                                <p><code>$matches[0]</code> será um array com todas as ocorrências.</p>
-                                <p><code>$matches[1]</code> será um array com todas as ocorrências que combina com a primeira expressão em parênteses.</p>
-                                <pre><code class="language-php">$pattern = "|<[^>]+>(.*)</[^>]+>|U";
-$subject = "&lt;b&gt;example: &lt;/b&gt;&lt;div align=left&gt;this is a test&lt;/div&gt;";
-$resultado = preg_match_all($pattern, $subject, $matches, PREG_PATTERN_ORDER);
-
-echo $matches[0][0] . ", " . $matches[0][1] . "\n";
-echo $matches[1][0] . ", " . $matches[1][1] . "\n";</code></pre>
-
-                            </li>
-                            <li>
-                                PREG_SET_ORDER
-                                <p><code>$matches[0]</code> será um array com elementos realcionados pela primeira expressão regular entre parênteses.</p>
-                                <p><code>$matches[1]</code> será um array com elementos realcionados pela segunda expressão regular entre parênteses.</p>
-                                <pre><code class="language-php">$resultado = preg_match_all($pattern, $subject, $matches, PREG_SET_ORDER);</code></pre>
-                            </li>
-                        </ul>
-
-
-
-                        <h3>offset</h3>
-
+                        <h3>offset <small>(opcional)</small></h3>
                         <p>
-                            O 5&ordm parâmetro (<code>$offset</code>) indica em que lugar, na string de pesquisa (<code>$subject</code>),
+                            Indica em que posição, na string de pesquisa (<code>$subject</code>),
                             a pesquisa deve iniciar.
-                        </p>                        
+                        </p>
+
+                    </div>
+
+
+                    <div class="bs-docs-section" id="array_pop">
+                        <div class="page-header">
+                            <h2>Mais sobre o quarto parâmetro (<code>$flags</code>)</h2>
+                        </div>
+
+                        <p>Quando a flag é <code>PREG_PATTERN_ORDER</code> temos o seguinte quadro:</p>
+
+                        <p><code>$matches[0]</code> será um array com todas as ocorrências.</p>
+
+                        <p><code>$matches[1]</code> será um array com todas as ocorrências que combina com a primeira expressão em parênteses.</p>
+
+                        <p>Exemplo:</p>
+
+                        <pre><code class="language-php">$pattern = "|<[^>]+>(.*)</[^>]+>|U";
+$subject = "&lt;b&gt;example: &lt;/b&gt;&lt;div align=left&gt;this is a test&lt;/div&gt;";
+preg_match_all($pattern, $subject, $matches, PREG_PATTERN_ORDER);
+var_dump($matches);</code></pre>
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### Resultado de PREG_PATTERN_ORDER" src="PREG_PATTERN_ORDER.png">
+                        </div>
+
+                        <p>Quando a flag é <code>PREG_SET_ORDER</code> temos o seguinte quadro:</p>
+
+                        <p><code>$matches[0]</code> será um array com elementos realcionados pela primeira expressão regular entre parênteses.</p>
+
+                        <p><code>$matches[1]</code> será um array com elementos relacionados pela segunda expressão regular entre parênteses.</p>
+
+                        <pre><code class="language-php">$pattern = "|<[^>]+>(.*)</[^>]+>|U";
+$subject = "&lt;b&gt;example: &lt;/b&gt;&lt;div align=left&gt;this is a test&lt;/div&gt;";
+preg_match_all($pattern, $subject, $matches, PREG_SET_ORDER);
+var_dump($matches);</code></pre>
+
+                        <div class="bs-example">
+                            <img class="img-rounded" alt="### Resultado de PREG_SET_ORDER" src="PREG_SET_ORDER.png">
+                        </div>
 
                         <blockquote>
                             <p>
@@ -124,10 +148,9 @@ echo $matches[1][0] . ", " . $matches[1][1] . "\n";</code></pre>
 
                                 </small>
                             </p> 
-                        </blockquote>                        
-
+                        </blockquote>                         
+                        
                     </div>
-
 
                     <div class="bs-docs-section" id="array_pop">
                         <div class="page-header">
@@ -138,27 +161,27 @@ echo $matches[1][0] . ", " . $matches[1][1] . "\n";</code></pre>
                             <pre><code class="language-php">&lt;?php
 $subject = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.";
 $pattern = "/ca.a/";
-$retorno = array();
+$matches = array();
 
 # Executa nossa expressão
-$resultado = preg_match_all($pattern, $subject, $retorno);
+$resultado = preg_match_all($pattern, $subject, $matches);
 
 if ($resultado >= 1) {
 
     print "casou";
-    var_dump($retorno);
+    var_dump($matches);
 
 } else if ($resultado === 0) {
 
     print "não casou";
-    var_dump($retorno);
+    var_dump($matches);
 
 } elseif ($resultado === false) {
 
     print "ocorreu um erro";
 
 }
-?&gt;</code></pre>                        
+?&gt;</code></pre>
 
 
                         </div>
