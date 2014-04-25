@@ -2,6 +2,10 @@
 -- Atualizações
 --
 
+INSERT INTO `devfuria_fulia`.`paginas`
+(`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`)
+VALUES ('3', '/php/preg-match-all/', 'Referência da função preg_match_all()', 'preg_math_all()', NULL, 'PHP preg match all, preg-match-all, preg_math_all()', 'O que você precisa saber sobre a função preg_match_all()', 'php', 'rtg', 'basico', 'done', '2014-04-25', '2014-04-25', NULL);
+
 
 -- regexp
 

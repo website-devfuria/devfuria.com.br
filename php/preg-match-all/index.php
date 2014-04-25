@@ -4,7 +4,7 @@
  *
  */
 require "../../core/boot.php";
-$pagina = $model->getPagina("/php/arrays-funcoes-basicas/");
+$pagina = $model->getPagina("/php/preg-match-all/");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
