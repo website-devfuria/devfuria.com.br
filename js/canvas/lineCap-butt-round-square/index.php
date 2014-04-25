@@ -1,6 +1,6 @@
 <?php
 /**
- * http://www.w3resource.com/html5-canvas/html5-canvas-lines.php
+ * Limite das linhas lineCap
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/lineCap-butt-round-square/");

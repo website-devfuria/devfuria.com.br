@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Introdução ao Canvas (HTML5)
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/aprendendo-canvas-introducao/");
@@ -20,7 +20,7 @@ $pagina = $model->getPagina("/js/canvas/aprendendo-canvas-introducao/");
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <h1>Introdução ao Canvas <small>(HTML5)</small></h1>
+                        <h1><?php echo $pagina->titulo ?></h1>
                     </div>
                 </div>
 

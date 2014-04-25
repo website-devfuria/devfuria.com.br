@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Desenhando linhas (lineTo e moveTo)
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/lineTo-moveTo/");

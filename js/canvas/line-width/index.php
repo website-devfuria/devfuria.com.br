@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Tamanho das linhas lineWidth
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/line-width/");

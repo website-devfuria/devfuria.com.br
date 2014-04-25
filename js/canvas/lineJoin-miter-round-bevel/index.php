@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Junção das linhas lineJoin
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/lineJoin-miter-round-bevel/");
