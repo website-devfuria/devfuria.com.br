@@ -617,7 +617,8 @@ div.code pre.scroll {
 }
 div.code pre em, div.code pre code em, pre em {
     font-weight: 900;
-    background-color: #FFFF00;
+    /*background-color: #FFFF00;*/
+    background-color: #FFF8DC;
 }
 
 /*
