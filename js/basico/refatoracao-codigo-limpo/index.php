@@ -139,7 +139,11 @@ $pagina = $model->getPagina("/js/basico/refatoracao-codigo-limpo/");
 
                         <p>Quer dizer, o que temos por horar para nos guiar?</p>
 
-                        <p>Na matéria <a href="<?php echo LINKS_PATH ?>/php/basico/boas-praticas/">Antes de enfiar o pé na jáca (boas práticas)</a> eu comento sobre 4 dicas importantes:</p>
+                        <p>
+                            Na matéria
+                            <?php Aux::printAncora("/php/basico/boas-praticas/", "titulo")?>
+                            vimos um pouco de...
+                        </p>
 
                         <ol>
                             <li>Endentar o código</li>
