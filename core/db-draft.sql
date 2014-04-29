@@ -2,23 +2,6 @@
 -- Atualizações
 --
 
-UPDATE `devfuria_fulia`.`paginas` SET 
-`url` = '/regexp/basico/match-test-exec/',
-`titulo` = 'match(), test() e exec()'
-WHERE `paginas`.`url` = '/regexp/basico/varios-resultados-match-test-exec/';
-
-UPDATE `devfuria_fulia`.`paginas` SET
-`url` = '/regexp/basico/preg-match-all/',
-`metaTitle` = 'O básico sobre a função preg math all'
-WHERE `paginas`.`url` = '/regexp/basico/varios-resultados-preg-match-all/';
-
-INSERT INTO `devfuria_fulia`.`paginas`
-(`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`)
-VALUES ('3', '/php/preg-match-all/', 'Referência da função preg_match_all()', 'preg_math_all()', NULL, 'PHP preg match all, preg-match-all, preg_math_all()', 'O que você precisa saber sobre a função preg_match_all()', 'php', 'rtg', 'basico', 'done', '2014-04-25', '2014-04-25', NULL);
-
-
--- regexp
-
 /*
 DELETE FROM `devfuria_fulia`.`paginas` WHERE url = "/php/basico/arrays-vetores-matrizes/";
 
@@ -70,3 +53,28 @@ WHERE `paginas`.`url` = '/logica-de-programacao/basico/exercicios-operadores-atr
 UPDATE `devfuria_fulia`.`paginas`
 SET `metaDescr` = 'Introduziremos o conceito intuitivo de programação orientada a objetos, propriedades e métodos.'
 WHERE `paginas`.`url` = '/js/basico/oop-primeiro-degrau/';
+*/
+
+
+-- regexp
+
+
+UPDATE `devfuria_fulia`.`paginas` SET 
+`url` = '/regexp/basico/match-test-exec/',
+`titulo` = 'match(), test() e exec()'
+WHERE `paginas`.`url` = '/regexp/basico/varios-resultados-match-test-exec/';
+
+UPDATE `devfuria_fulia`.`paginas` SET
+`url` = '/regexp/basico/preg-match-all/',
+`metaTitle` = 'O básico sobre a função preg math all'
+WHERE `paginas`.`url` = '/regexp/basico/varios-resultados-preg-match-all/';
+
+INSERT INTO `devfuria_fulia`.`paginas`
+(`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`)
+VALUES ('3', '/php/preg-match-all/', 'Referência da função preg_match_all()', 'preg_math_all()', NULL, 'PHP preg match all, preg-match-all, preg_math_all()', 'O que você precisa saber sobre a função preg_match_all()', 'php', 'rtg', 'basico', 'done', '2014-04-25', '2014-04-25', NULL);
+
+
+-- 29/04/2014
+INSERT INTO `devfuria_fulia`.`paginas` 
+(`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`)
+VALUES ('7', '/js/canvas/canvas-linhas-rando-coloridas/', 'Canvas - linhas randômicas coloridas', 'Canvas - linhas randômicas coloridas', NULL, 'Canvas (HTML5) - linhas randômicas coloridas', 'Exemplo básico porém interessante do Canvas (HTML5)', 'js', 'canvas', 'basico', 'done', '2014-04-29', '2014-04-29', NULL);
