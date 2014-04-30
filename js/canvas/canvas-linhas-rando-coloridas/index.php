@@ -60,7 +60,7 @@ $pagina = $model->getPagina("/js/canvas/canvas-linhas-rando-coloridas/");
                                             return Math.round(Math.random() * 255);
                                         },
                                         retStrokeStyleColor: function() {
-                                            return "rgb(" + coor.retRandom0_255() + "," + coor.retRandom0_255() + "," + coor.retRandom0_255() + ")";
+                                            return "rgb(" + this.retRandom0_255() + "," + this.retRandom0_255() + "," + this.retRandom0_255() + ")";
                                         }
                                     };
 
@@ -99,13 +99,13 @@ $pagina = $model->getPagina("/js/canvas/canvas-linhas-rando-coloridas/");
                             <a href="https://github.com/flaviomicheletti/canvas/tree/master/linhas-rando-coloridas" title="link-externo">Fork me on GitHub</a> 
                             <small> (O código fonte você também encontrará depois da seção "codando")</small>
                         </p>
-                        
+
                         <p>Este canvas é um exercício para mim e para os leitores do devfuria.</p>
-                        
+
                         </p>Se você quiser "forkar" o
-                            projeto para também se exercitar e até sugerir modificações interessantes, será um prazer.
+                        projeto para também se exercitar e até sugerir modificações interessantes, será um prazer.
                         </p>
-                        
+
                         <p>Boa leitura!</p>
 
                     </div>
@@ -121,7 +121,7 @@ $pagina = $model->getPagina("/js/canvas/canvas-linhas-rando-coloridas/");
                             linha <code>draw()</code>.
                         </p>
 
-                        <p>O objeto <code>coord</code> será passado por parâmetro para a função <code>draw()</code></p>
+                        <p>O objeto <code>coor</code> será passado por parâmetro para a função <code>draw()</code></p>
 
                         <p>
                             A função <code>draw()</code> desenhará uma linha de cada vez apartir do centro do canvas e
@@ -153,7 +153,7 @@ setInterval(function() {
 
                         <p>
                             A função <code>draw()</code> criará um caminho (<strong>path</strong>) para cada linha, então
-                            termos as chamadas das funções <code>beginPath()</code> e <code>stroke()</code> e entre elas
+                            teremos as chamadas das funções <code>beginPath()</code> e <code>stroke()</code>. Entre elas,
                             o código para posicionar nossa <strong>"pena"</strong>.
                         </p>
 
@@ -169,7 +169,7 @@ setInterval(function() {
                         <pre><code class="language-javascript">var canvas = document.getElementById('myCanvas')
 var context = canvas.getContext('2d');</code></pre>
 
-                        <p>Mas, por conveniencia, eu preferi deixar o objeto <strong>canvas</strong> junto ao objeto
+                        <p>Mas, por conveniência, eu preferi deixar o objeto <strong>canvas</strong> junto ao objeto
                             <code>coor</code> e a variável <code>context</code> será criada dentro da função <code>draw()</code>.</p>
 
                         <pre><code class="language-javascript">var coor = {
@@ -187,8 +187,8 @@ function draw(coor) {
 };</code></pre>
 
                         <p>
-                            Voltando a nossa função <code>draw()</code>, sabemos que desenharemos uma linha, logo utilizaremos
-                            os métodos <code>moveTo()</code> e <code>lineTo()</code>, veja:</p>
+                            Voltando a nossa função <code>draw()</code>, sabemos que ela desenhará uma linha, para isso
+                            utilizaremos os métodos <code>moveTo()</code> e <code>lineTo()</code>, veja:</p>
 
                         <pre><code class="language-javascript">function draw(coor) {
     var context = coor.canvas.getContext('2d');
@@ -200,20 +200,20 @@ function draw(coor) {
     context.lineTo(x, y);
     context.stroke();
 };</code></pre>
-                        <p>O <code>moveTo</code> é nosso ponto inicial, e <strong>qual será essa coordenada?</strong></p>
+                        <p>O <code>moveTo</code> é nosso ponto inicial, e qual será essa coordenada?</p>
 
                         <p>É um ponto no centro do <strong>canvas</strong>.</p>
 
                         <p>
-                            O nosso objeto <code>coord</code> deverá nos fornecer essa informação através dos métodos
+                            O objeto <code>coor</code> é quem fornece essa informação. Ele faz isso através dos métodos
                             <code>retCentroX()</code> e <code>retCentroY()</code>.
                         </p>
 
                         <p>E o ponto final, qual será?</p>
 
                         <p>
-                            É um ponto randômico. Obtemos a resposta com o objeto <code>coor</code> através dos métodos
-                            <code>retRandomX()</code> e <code>retRandomY()</code>.
+                            É um ponto randômico. Novamente, é o objeto <code>coor</code>, através dos métodos
+                            <code>retRandomX()</code> e <code>retRandomY()</code> quem nos dá a resposta.
                         </p>
 
                         <p>A idéia é "vá para o centro do canvas e desenhe uma linha até um ponto qualquer".</p>
@@ -233,7 +233,7 @@ function draw(coor) {
                         <p>Ok, agora como serão implementado os métodos no objeto <code>coor</code>?</p>
 
                         <p>
-                            <code>retCentroX()</code> e <code>retCentroY()</code> devem dividir o tamanho da largura e
+                            Tanto <code>retCentroX()</code> como <code>retCentroY()</code> devem dividir o tamanho da largura e
                             altura do canvas por
                             <code>2</code>, respectivamente.
                         </p>
@@ -250,9 +250,9 @@ function draw(coor) {
     }
 };</code></pre>
 
-                        <p>As funções <code>retRandomX()</code> e <code>retRandomY()</code> não podiam serem mais fáceis.</p>
+                        <p>As funções <code>retRandomX()</code> e <code>retRandomY()</code> não poderiam ser mais fáceis.</p>
 
-                        <p>Elas devem retornar um número randômico até limite do canvas.</p>
+                        <p>Elas devem retornar um número randômico até o limite do canvas.</p>
 
                         <p>
                             Se você precisa saber como gerar números randômicos de uma forma simples, veja esta matéria
@@ -260,7 +260,7 @@ function draw(coor) {
                         </p>
 
                         <p>
-                            Agora, sabemos que <code>Math.random() * foo</code> retornará nosso número randômico até o limite
+                            Concordamos que <code>Math.random() * foo</code> retornará nosso número randômico até o limite
                             definido por <code>foo</code>.
                         </p>
 
@@ -282,7 +282,7 @@ function draw(coor) {
     }
 };</code></pre>
                         <p>
-                            Se você sobreviveu até aqui, ótimo! pois chegou a parte mais simples. Criar o colorido
+                            Se você sobreviveu até aqui, ótimo! pois chegou a parte mais simples, criar o colorido
                             das linhas.
                         </p>
 
@@ -291,13 +291,23 @@ function draw(coor) {
                             antes que eu me esqueca, <code>lineWidth</code>.
                         </p>
 
-                        <p>A propriedade <code>lineWidth</code> nós já vimos na matéria "<?php Aux::printAncora("/js/canvas/line-width/", "titulo") ?>"</p>
+                        <?php $mat = Aux::getPagina("/js/canvas/line-width/"); ?>
+                        <p>A propriedade <code>lineWidth</code> nós já vimos na matéria 
+                            <a href="<?php echo $mat->url . "#by-id"; ?>" title="<?php echo $mat->titulo; ?>">Tamanho das Linhas</a>.                            
+                        </p>
 
                         <p>
                             A propriedade <code>strokeStyle</code> aceita uma string no formato 
                             <a href="http://pt.wikipedia.org/wiki/RGB" title="link-externo">RGB</a>
                             <code>"rgb(0,0,0)"</code> onde os 0 (zeros) são um inteiro no "range" de 1 a 255.
                         </p>
+
+                        <p>
+                            E é exatamente isto o que deve retornar a função <code>retStrokeStyleColor()</code>
+                            do objeto <code>coor</code>.
+                        </p>
+                        
+                        <p>Como queremos colorido, os valores devem ser randômicos.</p>
 
                         <pre><code class="language-javascript">function draw(coor) {
     var context = coor.canvas.getContext('2d');
@@ -309,18 +319,14 @@ function draw(coor) {
     context.stroke();
 };</code></pre>                        
 
-                        <p>
-                            Queremos cores aleatórias. A função <code>retStrokeStyleColor()</code> do objeto <code>coor</code>
-                            ficará encarregada de nos fornecer essa informação.
-                        </p>
 
-                        <p>Precisaremos de números aleatórios dentro do "range" de 1 a 255</p>
+                        <p>Então precisaremos de números aleatórios dentro do "range" de 1 a 255</p>
 
                         <p>Para tal, criei a função <code>retRandom0_255()</code> com o seguinte código <code>return Math.round(Math.random() * 255)</code>
                             dentro do objeto <code>coor</code>.
                         </p>
 
-                        <p>A função <code>retStrokeStyleColor()</code> você já consegue visualizar?</p>
+                        <p>Você já consegue visualizar a implementação da função <code>retStrokeStyleColor()</code>?</p>
 
                         <p>Veja como ficou nosso objeto <code>coor</code>.</p>
 
@@ -412,9 +418,9 @@ setInterval(function() {
     draw(coor);
 }, 10);</code></pre>
                         </div>                        
-                        
+
                         <p>Inspirado no trabalho de <a href="http://webmediadev.wordpress.com/2011/10/14/js-exercise-random-lines/">webmediadev</a></p>                        
-                        
+
                     </div>                    
 
 
