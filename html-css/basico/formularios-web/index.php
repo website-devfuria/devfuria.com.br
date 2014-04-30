@@ -188,7 +188,7 @@ $pagina = $model->getPagina("/html-css/basico/formularios-web/");
                             <p>Exemplo de checkbox solitária (coitada)</p>
                         </div>
 
-                        <p>Para exibir a checkbox ticada (selecionada), usamos a propriedade <code>checked</code>.</p>
+                        <p>Para dizer qual a checkbox foi ticada (selecionada), usamos a propriedade <code>checked</code>.</p>
 
                         <pre><code class="language-html">&lt;input type="checkbox" name="company" <em>checked</em>/&gt;</code></pre>
 
@@ -197,6 +197,20 @@ $pagina = $model->getPagina("/html-css/basico/formularios-web/");
                         <pre><code class="language-html">&lt;input type="checkbox" name="company" <em>checked="checked"</em>/&gt;</code></pre>
 
                         <p>De qualquer forma, o navegador entenderá que a checkbox deve ser assinalada.</p>
+
+                        <p>Uma coisa importante de se dizer é que a propriedade <code>value</code> é inútil, explico:</p>
+
+                        <p>Se o controle fo clicado o valor que é enviado para o servidor é <code>value=on</code>.</p>
+
+                        <p>E se NÂO clicado o valor é <code>value=off</code></p>
+
+                        <p>Certo??? Errado, e isso é muito triste.</p>
+
+                        <p>Quando o controle não é clicado ele não envia nada, nada mesmo.</p>
+
+                        <p>Quando é clicado ele envia o valor que você especificar na propriedade <code>value</code>.</p>
+
+                        <p>Isso faz sentido para você? Pra mim não, mas tudo bem. Lá na seção PHP enfrentaremos esse problema.</p>
 
 
                         <h3 id="input-radio">Botões de opção (radio buttons)</h3>
@@ -225,7 +239,15 @@ $pagina = $model->getPagina("/html-css/basico/formularios-web/");
 
                         <pre><code class="language-html">&lt;input type="radio" name="company" <em>checked="checked"</em>/&gt;</code></pre>
 
+                        <p>
+                            O <strong>botão radio</strong> sofre do mesmo problema que o <strong>botão checkbox</strong>,
+                            quando não clicado ele nada enviará para o servidor.
+                        </p>
 
+                        <p>
+                            Mas o problema pode ser suavisado, uma vez que você pode definir um valor na hora de carregar
+                            o controle. Quero dizer que ele virá selecionado, ou seja, não haverá controle não ticado.
+                        </p>
 
 
                         <h3 id="input-button">Botões button, submit e reset</h3>
@@ -310,13 +332,55 @@ $pagina = $model->getPagina("/html-css/basico/formularios-web/");
 
                         <p>Dessa forma (options mais select), temos o controle combobox:</p>
 
-                        <pre><code class="language-html">&lt;select&gt;
+                        <pre><code class="language-html">&lt;select id=cbPais&gt;
+    &lt;option&gt;Select Country&lt;/option&gt;
     &lt;option&gt;Usa&lt;/option&gt;
     &lt;option&gt;Canada&lt;/option&gt;
     &lt;option&gt;Mexico&lt;/option&gt;
 &lt;/select&gt;
 </code></pre>
+                        <p>
+                            Se, por exemplo, o usuário clicar na opção "Canada" será enviado para o servidor o par/valor
+                            <code>cboPais=Canada</code>. O valor assumiu o texto contido entre as tags options.
+                        </p>
 
+                        <p>De forma mais comum, utilizamos a propriedade <code>value</code> em cada tag option, veja:</p>
+
+                        <pre><code class="language-html">&lt;select id=cbPais&gt;
+    &lt;option value="" &gt;Select Country&lt;/option&gt;
+    &lt;option value="usa" &gt;Usa&lt;/option&gt;
+    &lt;option value="ca" &gt;Canada&lt;/option&gt;
+    &lt;option value="me" &gt;Mexico&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+                        <p>
+                            Dessa forma, quando o usuário clicar novamente na opção "Canada" será enviado o par/valor 
+                            <code>cboPais=ca</code>
+                        </p>
+
+                        <p>Repare que em nosso exemplo a primeira opção era "Select Country". Isso ajuda a experiência do usuário.</p>
+
+                        <p>Nesse sentido também podemos colocar um valor "em branco", exemplo:</p>
+
+                        <pre><code class="language-html">&lt;select id=cbPais&gt;
+    &lt;option value="" &gt;&lt;/option&gt;
+    &lt;option value="usa" &gt;Usa&lt;/option&gt;
+    &lt;option value="ca" &gt;Canada&lt;/option&gt;
+    &lt;option value="me" &gt;Mexico&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+                        <p>
+                            Para selecionarmos uma opção utilizamos a propriedade <code>selected="selected"</code> na
+                            tag option que desejamos que seja selecionada.
+                        </p>
+
+                        <pre><code class="language-html">&lt;select id=cbPais&gt;
+    &lt;option value="" &gt;&lt;/option&gt;
+    &lt;option value="usa" &gt;Usa&lt;/option&gt;
+    &lt;option value="ca" selected="selected" &gt;Canada&lt;/option&gt;
+    &lt;option value="me" &gt;Mexico&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
 
 
                         <h3 id="nao-input-listbox">Caixa de multipla seleção (List box)</h3>
@@ -338,6 +402,10 @@ $pagina = $model->getPagina("/html-css/basico/formularios-web/");
 &lt;/select&gt;
 </code></pre>
 
+                        <p>
+                            Tudo que foi dito para a combobox é válido para a listbox, na verdade é o mesmo controle,
+                            só mudamos uma propriedade.
+                        </p>
 
 
                         <h3 id="nao-input-textarea">Text box multiline (textarea)</h3>

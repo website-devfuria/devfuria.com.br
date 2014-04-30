@@ -463,8 +463,15 @@ var myApp = {
                             temos na expressão misteriosa rsss.
                         </p>
 
-                        <p>Momento Eureka: Vou abrir uma seção aqui no site que chama-se "referência" e fazer as referências
-                            para estes casos.</p>
+                        <p><strike>
+                            Momento Eureka: Vou abrir uma seção aqui no site que chama-se "referência" e fazer as referências
+                            para estes casos.
+                        </strike></p>
+                        
+                        <p>
+                            Abri, dá uma olhada no primeiro artigo
+                            <?php Aux::printAncora("/js/math-random-numero-randomico-em-javascript/", "titulo"); ?>
+                        </p>
 
                         <p>Mas só para fechar a matéria, segue o código final.</p>
 

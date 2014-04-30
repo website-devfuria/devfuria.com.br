@@ -114,7 +114,7 @@ $pagina = $model->getPagina("/js/basico/textbox-password-textarea/");
                             <h2 id="getElementById">getElementById().value</h2>
                         </div>
 
-                        <p>A função nativa em Javascript <code>getElementById()</code>nos auxiliará.</p>
+                        <p>A função nativa em Javascript <code>getElementById()</code> nos auxiliará.</p>
 
                         <p>
                             Já falamos sobre ela na matéria...
@@ -125,7 +125,7 @@ $pagina = $model->getPagina("/js/basico/textbox-password-textarea/");
 
                         <pre><code class="language-javascript">document.getElementById("id");</code></pre>
 
-                        <p>O resultado (o elemento) nós armazenas em uma variável (com um nome bem bacana) para podermos
+                        <p>O resultado (o elemento) nós armazenamos em uma variável (com um nome bem bacana) para podermos
                             acessar suas propriedades, exemplo:</p>
 
                         <pre><code class="language-javascript">var objElem = document.getElementById("id");</code></pre>
@@ -143,8 +143,7 @@ console.log(objElem.value);</code></pre>
                         <pre><code class="language-javascript">var objElem = document.getElementById("id");
 objElem.value = "outro texto qualquer";</code></pre>
 
-                        <p>Poderíamos ser sucinto, como o título desta seção, e utilizarmos a propriedade diretamente
-                            na função, quero dizer:</p>
+                        <p>De forma mais sucinta:</p>
 
                         <pre><code class="language-javascript">document.getElementById("id").value = "outro texto qualquer";</code></pre>
 
@@ -181,7 +180,7 @@ objElem.value = "outro texto qualquer";</code></pre>
 &lt;input type="submit" <em>id="btnSubmit"</em> value="Submit!" /&gt;
 ...</code></pre>
 
-                        <p>Agora, vamos atribuír uma <strong>função anônima</strong> para o evento <code>onclick</code> de
+                        <p>Agora, vamos Atribuir uma <strong>função anônima</strong> para o evento <code>onclick</code> de
                             nosso controle.</p>
 
                         <pre><code class="language-javascript">document.getElementById("btnSubmit").onclick = function() {
@@ -189,7 +188,7 @@ objElem.value = "outro texto qualquer";</code></pre>
                         <p>Lembra que o botão do tipo submit (<code>&lt;input type="submit"</code>) dispara o evento
                             <code>submit</code> do formulário web?</p>
 
-                        <p>Atribuír uma função ao evento <code>onclick</code> não anulará a <strong>ação padrão</strong>.</p>
+                        <p>Atribuir uma função ao evento <code>onclick</code> não anulará a <strong>ação padrão</strong>.</p>
 
                         <p>Então precisamos mudar nosso HTML mais uma vez. O botão passa a ser do tipo "button", veja:</p>
 
