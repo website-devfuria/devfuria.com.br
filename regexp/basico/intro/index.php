@@ -218,6 +218,8 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
                                         <p class="list-group-item-text">Nesse livro Aurélio Marinho Jargas dá um show de didádica simples e objetiva. E,
                                             como o título promete, muito divertida também. Esse aqui é um ótimo começo e não é sugerida mas sim obrigatório.
                                             Veja mais informações no site oficial:</p>
+                                        <p></p>
+                                        
                                         <span class="label label-default">http://www.piazinho.com.br/</span>
                                     </a>
                                     <a href="http://novatec.com.br/livros/regexpcookbook/" class="list-group-item" title="link-externo">
@@ -256,6 +258,10 @@ $pagina = $model->getPagina("/regexp/basico/intro/");
                                     <a href="http://aurelio.net/regex/#links" class="list-group-item" title="link-externo">
                                         <h4 class="list-group-item-heading">Links e outras dicas do Marinho (só dá ele)</h4>
                                         <span class="label label-default">http://aurelio.net/regex/#link</span>
+                                    </a>
+                                    <a href="http://www.pinceladasdaweb.com.br/blog/2014/02/19/review-do-livro-expressoes-regulares-uma-abordagem-divertida/" class="list-group-item" title="link-externo">
+                                        <h4 class="list-group-item-heading">Excelente Review do Livro – Expressões Regulares uma abordagem divertida <small>(por Marco Bruno)</small></h4>
+                                        <span class="label label-default">http://www.pinceladasdaweb.com.br/blog/2014/02/19/review-do-livro-expressoes-regulares-uma-abordagem-divertida/</span>
                                     </a>
                                 </div>
                             </div>
