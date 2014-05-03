@@ -58,7 +58,7 @@ WHERE `paginas`.`url` = '/js/basico/oop-primeiro-degrau/';
 
 -- regexp
 
-
+/*
 UPDATE `devfuria_fulia`.`paginas` SET 
 `url` = '/regexp/basico/match-test-exec/',
 `titulo` = 'match(), test() e exec()'
@@ -78,3 +78,10 @@ VALUES ('3', '/php/preg-match-all/', 'Referência da função preg_match_all()',
 INSERT INTO `devfuria_fulia`.`paginas` 
 (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`)
 VALUES ('7', '/js/canvas/canvas-linhas-rando-coloridas/', 'Canvas - linhas randômicas coloridas', 'Canvas - linhas randômicas coloridas', NULL, 'Canvas (HTML5) - linhas randômicas coloridas', 'Exemplo básico porém interessante do Canvas (HTML5)', 'js', 'canvas', 'basico', 'done', '2014-04-29', '2014-04-29', NULL);
+*/
+
+UPDATE `devfuria_fulia`.`paginas`
+SET `metaTitle` = 'O que você precisa saber sobre a função Math.random de JavaScript'
+WHERE `paginas`.`url` = '/js/math-random-numero-randomico-em-javascript/';
+
+
