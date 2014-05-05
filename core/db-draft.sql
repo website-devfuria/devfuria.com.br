@@ -87,3 +87,11 @@ WHERE `paginas`.`url` = '/js/math-random-numero-randomico-em-javascript/';
 INSERT INTO `devfuria_fulia`.`paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) 
 VALUES ('8', '/js/canvas/canvas-grid/', 'Canvas - grid lines', 'Canvas - grid lines', NULL, 'Canvas (HTML5) - grid lines', 'Exemplo básico de um grid line em Canvas (HTML5)', 'js', 'canvas', 'basico', 'done', '2014-05-05', '2014-05-05', NULL);
 
+
+INSERT INTO `devfuria_fulia`.`paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) 
+VALUES ('9', '/js/canvas/rect-strokeRect-fillRect/', 'Desenhando retângulos', 'Desenhando retângulos (strokeRect, fillRect, clearRect e rect)', '', 'Canvas - strokeRect, fillRect, clearRect, rect', 'Aprendendo a desenhar retângulos em canvas (HMTL5).', 'js', 'canvas', 'basico', 'done', '2014-05-05', '2014-05-05', NULL);
+
+UPDATE `devfuria_fulia`.`paginas`
+SET `metaDescr` = 'Aprendendo a desenhar retângulos com os métodos strokeRect, fillRect, clearRect e rect.'
+WHERE `paginas`.`url` = '/js/canvas/rect-strokeRect-fillRect/';
+

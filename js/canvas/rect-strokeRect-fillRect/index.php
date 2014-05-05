@@ -3,7 +3,7 @@
  * Desenhando retêngulos
  */
 require "../../../core/boot.php";
-$pagina = $model->getPagina("/js/canvas/lineTo-moveTo/");
+$pagina = $model->getPagina("/js/canvas/rect-strokeRect-fillRect/");
 $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_CANVAS;
 ?>
 <!DOCTYPE html>
@@ -21,8 +21,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_CANVAS;
                 <!-- Título -->
                 <div class="" id="content">
                     <div class="container">
-                        <!--<h1><?php //echo $pagina->titulo             ?></h1>-->
-                        <h1>Desenhando retângulos</h1>
+                        <h1><?php echo $pagina->titulo  ?></h1>
                     </div>
                 </div>
 
