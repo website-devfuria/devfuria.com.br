@@ -68,7 +68,7 @@ $pagina = $model->getPagina("/js/canvas/canvas-grid/");
                         <p><strong>Função utilitária para teste visual.</strong></p>
 
                         <p>
-                            <a href="https://github.com/flaviomicheletti/canvas/tree/master/linhas-rando-coloridas" title="link-externo">Fork me on GitHub</a> 
+                            <a href="https://github.com/flaviomicheletti/canvas/tree/master/grid" title="link-externo">Fork me on GitHub</a> 
                         </p>
 
                         <p>Este canvas é bem simples, ele desenha um grid para checarmos visualmente se o resultado está de acordo.</p>
