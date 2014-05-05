@@ -1,6 +1,6 @@
 <?php
 /**
- * Tamanho das linhas lineWidth
+ * CANVAS - linhas randômicas coloridas
  */
 require "../../../core/boot.php";
 $pagina = $model->getPagina("/js/canvas/canvas-linhas-rando-coloridas/");
