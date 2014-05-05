@@ -84,4 +84,6 @@ UPDATE `devfuria_fulia`.`paginas`
 SET `metaTitle` = 'O que você precisa saber sobre a função Math.random de JavaScript'
 WHERE `paginas`.`url` = '/js/math-random-numero-randomico-em-javascript/';
 
+INSERT INTO `devfuria_fulia`.`paginas` (`ordem`, `url`, `urlLabel`, `titulo`, `descricao`, `metaTitle`, `metaDescr`, `secao`, `subSecao`, `nivel`, `status`, `dtCriacao`, `dtAtualizacao`, `autor`) 
+VALUES ('8', '/js/canvas/canvas-grid/', 'Canvas - grid lines', 'Canvas - grid lines', NULL, 'Canvas (HTML5) - grid lines', 'Exemplo básico de um grid line em Canvas (HTML5)', 'js', 'canvas', 'basico', 'done', '2014-05-05', '2014-05-05', NULL);
 
