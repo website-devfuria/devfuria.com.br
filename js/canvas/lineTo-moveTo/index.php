@@ -27,17 +27,18 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_CANVAS;
 
                 <!-- Corpo da matéria -->
                 <div class="col-md-12" role="main">
+                    <div class="bs-docs-section">
+                        <p>
+                            Para desenharmos uma linha utilizamos a função <code>lineTo(x, y)</code>, onde <code>x</code>
+                            é o ponto horizontal final de nossa reta e o <code>y</code> é o ponto final vertical.
+                        </p>
 
-                    <p>
-                        Para desenharmos uma linha utilizamos a função <code>lineTo(x, y)</code>, onde <code>x</code>
-                        é o ponto horizontal final de nossa reta e o <code>y</code> é o ponto final vertical.
-                    </p>
-
-                    <p>
-                        Se ele desenha até determinado ponto, então precisamos indicar onde é o começo, fazemos isso
-                        utilizando a função <code>moveTo(x, y)</code>
-                    </p>
-
+                        <p>
+                            Se ele desenha até determinado ponto, então precisamos indicar onde é o começo, fazemos isso
+                            utilizando a função <code>moveTo(x, y)</code>
+                        </p>
+                    </div>
+                    
                     <div class="bs-docs-section">
                         <div class="page-header">
                             <h2>O método <code>lineTo()</code></code></h2>
