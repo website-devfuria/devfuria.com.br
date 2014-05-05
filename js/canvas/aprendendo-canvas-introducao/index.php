@@ -79,13 +79,13 @@ $pagina = $model->getPagina("/js/canvas/aprendendo-canvas-introducao/");
                             <small>Mark Pilgrim</small>
                         </blockquote>
 
-                        <p>Utilizamos a função <code>beginPath()</code> do objeto contexto para iniciar um caminho (path) ou
+                        <p>Utilizamos a função <code>beginPath()</code> do objeto contexto para iniciar um path (caminho) ou
                             subcaminho (subpath).</p>
 
 
                         <h3>Desenhando a tinta</h3>
 
-                        <p>Para imprimir o caminho no canvas usamos o método <code>stroke()</code></p>
+                        <p>Para imprimir o path (caminho) no canvas usamos o método <code>stroke()</code></p>
 
                         <blockquote>
                             <p>

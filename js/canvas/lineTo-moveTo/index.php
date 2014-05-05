@@ -46,7 +46,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . Conteudo::SUB_SECAO_CANVAS;
 
                         <blockquote>
                             <p>
-                                Adiciona uma linha ao caminho (path) partindo do ponto atual.
+                                Adiciona uma linha ao path (caminho) partindo do ponto atual.
                                 até as coordenadas <code>x</code> e <code>y</code>.
                             </p>
                             <small>Danny Goodman (Javascript - Guia prático, pag 369)</small>
@@ -112,7 +112,7 @@ context.stroke();
 
                         <p>Ou pelo menos dois <code>lineTo()</code>.</p>
 
-                        <p>Isso porque o método <code>lineTo</code> cria um <strong>subpath</strong>. Sinistro.</p>
+                        <p>Isso porque o método <code>lineTo</code> cria um <strong>subpath</strong> (subcaminho). Sinistro.</p>
 
                         <div class="row">
                             <div class="col-md-4">

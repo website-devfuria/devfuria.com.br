@@ -152,7 +152,7 @@ setInterval(function() {
 }, 10);</code></pre>
 
                         <p>
-                            A função <code>draw()</code> criará um caminho (<strong>path</strong>) para cada linha, então
+                            A função <code>draw()</code> criará um path (<strong>caminho</strong>) para cada linha, então
                             teremos as chamadas das funções <code>beginPath()</code> e <code>stroke()</code>. Entre elas,
                             o código para posicionar nossa <strong>"pena"</strong>.
                         </p>

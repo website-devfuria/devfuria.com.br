@@ -29,7 +29,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                 <div class="col-md-12" role="main">
 
                     <blockquote>
-                        <p>Cada objeto que implementa a interface <strong>CanvasPathMethods</strong> possue um caminho.</p>
+                        <p>Cada objeto que implementa a interface <strong>CanvasPathMethods</strong> possue um path (caminho).</p>
 
                         <p>Sâo eles:</p>
 
@@ -45,7 +45,7 @@ $view->secoes[Conteudo::SECAO_JS]['href'] = "js/?" . "canvas";
                             <li>ellipse</li>
                         </ul>
 
-                        <p>Um caminho tem uma lista de zero ou mais subpaths.</p>
+                        <p>Um path (caminho) tem uma lista de zero ou mais subpaths (subcaminhos).</p>
 
                         <p>
                             Cada subpath consiste de uma lista de um ou mais pontos, ligados por segmentos de linhas retas
