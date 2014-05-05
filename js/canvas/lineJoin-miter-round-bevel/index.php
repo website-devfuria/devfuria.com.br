@@ -92,7 +92,7 @@ context.stroke();
                                 </script>
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01-1');
 var context = canvas.getContext('2d');
 
 context.moveTo(50, 50);
@@ -156,7 +156,7 @@ context.stroke();
                                 </script>
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02-1');
 var context = canvas.getContext('2d');
 
 context.moveTo(50, 50);
@@ -192,7 +192,7 @@ context.stroke();
                                 </script>
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 
 context.moveTo(60, 100);
@@ -219,7 +219,7 @@ context.stroke();
                                 </script>
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex03-1');
 var context = canvas.getContext('2d');
 
 context.moveTo(50, 50);

@@ -210,7 +210,7 @@ context.stroke();        // pinta o caminho
                             <div class="col-md-8">
                                 <p></p>
 
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
 
 context.beginPath();
@@ -254,7 +254,7 @@ context.stroke();
                             <div class="col-md-8">
                                 <p></p>
 
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 
 context.beginPath();
@@ -301,7 +301,7 @@ context.fill();
                             <div class="col-md-8">
                                 <p></p>
 
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex04');
 var context = canvas.getContext('2d');
 
 context.beginPath();
@@ -353,7 +353,7 @@ context.fill();
                             <div class="col-md-8">
                                 <p></p>
 
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex05');
 var context = canvas.getContext('2d');
 
 context.beginPath();
@@ -410,7 +410,7 @@ context.stroke();
                             <div class="col-md-8">
                                 <p></p>
 
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex06');
 var context = canvas.getContext('2d');
 
 //context.beginPath();

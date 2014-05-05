@@ -127,7 +127,7 @@ context.stroke();
 
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01-1');
 var context = canvas.getContext('2d');
 context.lineTo(100, 50); // funcionou como moveTo()
 context.lineTo(130, 50);

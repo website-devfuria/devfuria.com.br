@@ -177,7 +177,7 @@ context.stroke();
                                 </script>
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 
 context.beginPath();

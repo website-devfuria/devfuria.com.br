@@ -59,7 +59,7 @@ $pagina = $model->getPagina("/js/canvas/lineCap-butt-round-square/");
 
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex01');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex00');
 var context = canvas.getContext('2d');
 
 function desenharLinhasGuias(context){
@@ -185,7 +185,7 @@ desenharLinhasGuias(context);
                                 </script>
                             </div>
                             <div class="col-md-8">
-                                <pre><code class="language-javascript">var canvas = document.getElementById('ex02');
+                                <pre><code class="language-javascript">var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 
 context.beginPath();
