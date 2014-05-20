@@ -95,3 +95,5 @@ UPDATE `devfuria_fulia`.`paginas`
 SET `metaDescr` = 'Aprendendo a desenhar retângulos com os métodos strokeRect, fillRect, clearRect e rect.'
 WHERE `paginas`.`url` = '/js/canvas/rect-strokeRect-fillRect/';
 
+UPDATE `devfuria_fulia`.`paginas` SET `metaTitle` = 'O básico sobre a função preg match all' WHERE `paginas`.`url` = '/regexp/basico/preg-match-all/';
+
