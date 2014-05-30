@@ -24,11 +24,21 @@ require "core/boot.php";
     </head>
 
     <body>
-        <?php include BASE_PATH . VIEWS_PATH . "/nav-top.php"; ?>
+        <?php //include BASE_PATH . VIEWS_PATH . "/nav-top.php"; ?>
+
+
+        <div class="container">
+            <div class="alert alert-info">
+                <p><strong>O site está sendo reformulado.</strong> Aguardem novidades!</p>
+                <p>Todo o contéudo continua ativo e poderá ser acessado através dos links abaixo.</p>
+            </div>
+        </div>        
+
 
         <!-- Page content of course! -->
     <main class="bs-masthead" id="content" role="main">
         <div class="container">
+
             <h1>DevFuria</h1>
             <p class="lead" style="margin-bottom: 0px">Desenvolvimento web pra ninguém botar defeito!</p>
             <p class="lead" ><small>Cursos, aulas, tutoriais, matérias... tudo muito bem preparado.</small></p>
@@ -43,7 +53,26 @@ require "core/boot.php";
     </main>
 
     <footer class="container" role="contentinfo">
+
         <ul class="bs-masthead-links">
+            <li>
+                <a href="./js">Javascript</a>
+            </li>
+            <li>
+                <a href="./html-css">HTML & CSS</a>
+            </li>
+            <li>
+                <a href="./php">PHP</a>
+            </li>
+            <li>
+                <a href="./mysql-sql">MySql & SQL</a>
+            </li>
+            <li>
+                <a href="./regexp">RegExp</a>
+            </li>
+            <li>
+                <a href="./logica-de-programacao">Lógica de Programação</a>
+            </li>
             <li>
                 <a href="https://github.com/flaviomicheletti/www.devfuria.com.br" title="link-externo">Projeto no GitHub</a>
             </li>
@@ -52,92 +81,6 @@ require "core/boot.php";
             </li>
         </ul>
     </footer>
-
-    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="js">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php
-                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_JS);
-                    $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_JS, Conteudo::SUB_SECAO_CURSO);
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="php">
-        <div class="container" >
-            <div class="row">
-                <div class="col-md-12">
-                    <?php
-                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_PHP);
-                    $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_PHP, Conteudo::SUB_SECAO_CURSO);
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="html-css">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php
-                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_HTML);
-                    $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_HTML, Conteudo::SUB_SECAO_CURSO);
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="logica">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php
-                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_LOG);
-                    $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_LOG, Conteudo::SUB_SECAO_CURSO);
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="mysql">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php
-                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_MYSQL);
-                    $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_MYSQL, Conteudo::SUB_SECAO_CURSO);
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="" style="background-color: #FFF; padding: 80px 0px;" id="regexp">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php
-                    $view->lista->label = $view->lista->retLabelCursoSegundoSecao(Conteudo::SECAO_ER);
-                    $view->lista->setLinks($conteudo->paginas, Conteudo::SECAO_ER, Conteudo::SUB_SECAO_CURSO);
-                    include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
 </body>
