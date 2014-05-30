@@ -21,7 +21,7 @@
  *      include BASE_PATH . VIEWS_PATH . "/lista-secao.php";
  */
 ?>
-<h1><?php echo $view->lista->label ?></h1>
+<h2><?php echo $view->lista->label ?></h2>
 
 <div class="list-group">
     <?php foreach ($view->lista->links as $pagina): ?>
