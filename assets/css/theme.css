@@ -111,7 +111,11 @@ sup {
 .breadcrumb > .active {
   color: #999999;
 }
+h1:first-child{
+    line-height: 1.52em;
+    font-size: 300%;
 
+}
 
 .hll { background-color: #ffffcc }
 .c { color: #408080; font-style: italic } /* Comment */

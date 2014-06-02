@@ -3,7 +3,6 @@ layout:     materia
 title:      Desenhando retângulos (strokeRect, fillRect, clearRect e rect)
 ---
 
-
 Existem 4 métodos para desenharmos um retângulo: strokeRect, fillRect, clearRect e rect
 
 Todos os métodos esperam 2 argumentos [na verdade 4] que especificam um canto do retângulo, seguidos de sua largura e altura.
