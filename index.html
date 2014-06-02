@@ -1,13 +1,27 @@
 ---
-layout: post
+layout: materia
 ---
+
+<a  href="test-theme.html">theme</a>
+
+
 <ul>
-  {% for post in site.posts %}
+    {% for page in site.pages %}
     <li>
-      <a href="./{{ post.url }}">{{ post.title }}</a>
+        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
     </li>
-  {% endfor %}
+    {% endfor %}
 </ul>
 
 
-<a  href="./test-theme.html">theme</a>
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
+<pre>
+  <code class="ruby">
+    puts "hello"
+  </code>
+</pre>

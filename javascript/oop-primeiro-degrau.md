@@ -1,8 +1,6 @@
 ---
-layout:     post
+layout:     materia
 title:      OOP - primeiro degrau
-permalink:  oop-primeiro-degrau
-categories: javascript oop
 ---
 
 Vamos introduzir a orientação a objeto (vulgo OOP) na sua vida de progamador(ra).

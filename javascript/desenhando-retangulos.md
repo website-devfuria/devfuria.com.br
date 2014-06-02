@@ -1,8 +1,6 @@
 ---
-layout:     post
+layout:     materia
 title:      Desenhando retângulos (strokeRect, fillRect, clearRect e rect)
-permalink:  desenhando-retangulos
-categories: javascript canvas
 ---
 
 Existem 4 métodos para desenharmos um retângulo: strokeRect, fillRect, clearRect e rect

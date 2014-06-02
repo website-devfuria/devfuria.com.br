@@ -1,8 +1,6 @@
 ---
-layout:     post
+layout:     materia
 title:      Como gerar números aleatórios em Javascript
-permalink:  numeros-aleatorios/
-categories: javascript
 ---
 
 A função `random()` do objeto `Math` retorna um número pseudo-aleatório.
