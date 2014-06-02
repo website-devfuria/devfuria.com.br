@@ -1,8 +1,7 @@
 ---
 layout:     post
 title:      Como gerar números aleatórios em Javascript
-date:       2014-03-06
-permalink:  numeros-aleatorios-Javascript/
+permalink:  numeros-aleatorios/
 categories: javascript
 ---
 
@@ -28,7 +27,7 @@ Para gerar números aleatórios na casa do inteiros, devemos multiplicar o méto
 
     Math.random() * 10
 
-Agora devemos utilizar a função `Math.floor()` para retriar a parte flutuante (números decimais).
+Agora devemos utilizar a função `Math.floor()` para retirar a parte flutuante (números decimais).
 
 
     Math.floor(Math.random() * 10)

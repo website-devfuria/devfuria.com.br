@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      Desenhando retângulos (strokeRect, fillRect, clearRect e rect)
-date:       2014-05-05
 permalink:  desenhando-retangulos
 categories: javascript canvas
 ---

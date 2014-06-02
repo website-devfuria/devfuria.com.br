@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      OOP - primeiro degrau
-date:       2014-07-02
 permalink:  oop-primeiro-degrau
 categories: javascript oop
 ---

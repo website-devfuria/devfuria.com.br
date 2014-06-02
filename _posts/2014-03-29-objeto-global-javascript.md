@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      O objeto window e o espaço global em Javascript!
-date:       2014-03-29
 permalink:  objeto-global-javascript
 categories: javascript
 ---
