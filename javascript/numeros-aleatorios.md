@@ -113,7 +113,7 @@ Como gerar um número randômico entre 2 números quaisquer
 
 Como exemplo, vamos imaginar que queiramos gerar números aleatórios entre 3 e 5 (range 3, 4 e 5).
 
-Antes que você fique ansioso(sa), eis aqui nossa função:
+Antes que você fique ansioso(a), eis aqui nossa função:
 
 {% highlight javascript %}
 function getRandomInt(min, max) {
