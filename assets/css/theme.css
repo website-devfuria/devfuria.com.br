@@ -122,6 +122,9 @@ h2 {
     margin-top:3em;
     border: none;
 }
+h3 {
+    margin-top:3em;
+}
 @media screen and (min-width: 914px) {
    body {
       width: 960px;
