@@ -85,6 +85,7 @@ Quando a flag é `PREG_PATTERN_ORDER` temos o seguinte quadro:
 Exemplo:
 
 {% highlight php %}
+<?php
 $pattern = "|<[^>]+>(.*)]+>|U";
 $subject = "<b>example: </b><div align=left>this is a test</div>";
 preg_match_all($pattern, $subject, $matches, PREG_PATTERN_ORDER);
@@ -100,6 +101,7 @@ Quando a flag é `PREG_SET_ORDER` temos o seguinte quadro:
 `$matches[1]` será um array com elementos relacionados pela segunda expressão regular entre parênteses.
 
 {% highlight php %}
+<?php
 $pattern = "|<[^>]+>(.*)]+>|U";
 $subject = "<b>example: </b><div align=left>this is a test</div>";
 preg_match_all($pattern, $subject, $matches, PREG_SET_ORDER);
