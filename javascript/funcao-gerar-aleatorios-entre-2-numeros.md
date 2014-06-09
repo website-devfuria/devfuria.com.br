@@ -17,14 +17,8 @@ function getRandomInt(min, max) {
 }
 {% endhighlight %}
 
-Para entrender, passo a passo, como desenvolvemos a função veja o artigo
-[Como gerar um número randômico entre 2 números quaisquer](/javascript/gerar-numero-randomico-entre-2-numeros-quaisquer/ "Como gerar um número randômico entre 2 números quaisquer")
 
-Fonte: [MDN - Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random "link-externo")
-
-
-
-### Exemplos
+Exemplos:
 
 {% highlight javascript %}
 console.log(  getRandomInt(0, 3)  ); // retornará 0, 1, 2 e 3.
@@ -35,4 +29,13 @@ console.log(  getRandomInt(5, 10)  ); // retornará 5, 6, 7, 8, 9 e 10
 {% endhighlight %}
 
 
+<hr>
+Fonte: [MDN - Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random "link-externo")
 
+
+Veja Também
+---
+
+- [Como gerar um número randômico entre 2 números quaisquer](/javascript/gerar-numero-randomico-entre-2-numeros-quaisquer/ "Como gerar um número randômico entre 2 números quaisquer")
+Para entrender, passo a passo, como desenvolvemos a função.
+- [Como gerar números aleatórios em Javascript](/javascript/numeros-aleatorios/ "Como gerar números aleatórios em Javascript")

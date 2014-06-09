@@ -66,40 +66,39 @@ function getRandom(max) {
 
 
 
-Veja outras receitas
-----
-
-Como gerar um número randômico booleano (entre 0 e 1):
+### Como gerar um número randômico booleano (entre 0 e 1):
 
 {% highlight javascript %}
     Math.floor(Math.random() * 2);
 {% endhighlight %}
 
 
-
-
-Como gerar um número randômico tipo bytes ou octet (entre 0 e 256):
+### Como gerar um número randômico tipo bytes ou octet (entre 0 e 256):
 
 {% highlight javascript %}
     Math.floor(Math.random() * 256);
 {% endhighlight %}
 
 
-
-
-
-
-Como gerar um número randômico no "range" dos inteiros positivos (entre 0 e 65536):
+### Como gerar um número randômico no "range" dos inteiros positivos (entre 0 e 65536):
 
 {% highlight javascript %}
     Math.floor(Math.random() * 65536);
 {% endhighlight %}
 
 
-
-
-Como gerar um número randômico no "range" dos inteiros incluindo os negativos (entre -32768 e 65536):
+### Como gerar um número randômico no "range" dos inteiros incluindo os negativos (entre -32768 e 65536):
 
 {% highlight javascript %}
     Math.floor(Math.random() * 65536) - 32768;
 {% endhighlight %}
+
+
+
+Veja também
+---
+
+- [Como gerar um número randômico entre 2 números quaisquer](/javascript/gerar-numero-randomico-entre-2-numeros-quaisquer/ "Como gerar um número randômico entre 2 números quaisquer")
+- [Função para gerar um número randômico entre 2 números quaisquer](/javascript/funcao-gerar-aleatorios-entre-2-numeros/ "Função para gerar um número randômico entre 2 números quaisquer")
+
+
