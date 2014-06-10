@@ -1,6 +1,7 @@
 ---
-layout:     materia
-title:      O básico sobre a função preg match
+layout:      materia
+title:       O básico sobre a função preg match
+description: Descubra e aprenda o básico sobre a função preg_match()
 ---
 
 Vamos utilizar o seguinte exemplo, temos a string original:

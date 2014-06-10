@@ -1,6 +1,7 @@
 ---
-layout:     materia
-title:      Referência da função preg_match_all()
+layout:      materia
+title:       Referência da função preg_match_all()
+description: Uma referência prática da função preg match all
 ---
 
 
