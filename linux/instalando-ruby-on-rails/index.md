@@ -1,59 +1,209 @@
 ---
 layout: materia
-title: Instalando Ruby
+title: Instalando o Ruby On Rails
+---
+
+A instalação do __Ruby__ (tanto via fonte como repositório) deve ser feita em 3 passos:
+
+1. Instalar o __Ruby__
+2. Instalar o gerenciador de pacotes __RubyGems__
+3. Instalar o __Rails__
+
+A instalação do __Rails__ via código fonte foi muito mais fácil que via repositório (yum).
+
+Então eu vou mostrar primeiro como instalar compilando os fontes.
+
+A receita abaixo foi utilizada em um __Centos 6.4__.
+
+
+
+
+
+Compilando os fontes
 ---
 
 
+### Instalando o Ruby
 
-Via repositório
+Baixe o código fonte do __Ruby__ no site oficial
+
+[http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz](http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz "link-externo")
+
+Quando escrevo este artigo, a versão mais atual do __Ruby__ é a 2.1.2.
+
+Utilize a versão mais atual.
+
+Devemos dar permissão de execução no arquivo.
+
+    # chmod 777 ruby-2.1.2.tar.gz
+
+Vamos descompactar o arquivo.
+
+Eu prefiro mover o arquivo para minha home, no meu computador seria `/home/flavio/`, mas você pode descompactar onde quiser.
+
+Para descompactar execute:
+
+    # tar -xvcf ruby-2.1.2.tar.gz
+
+Ele irá criar uma pasta chamada `ruby-2.1.2`. Entre nela `cd /ruby-2.1.2`
+
+Execute tudo como root.
+
+    # ./configure
+    # make
+    # make install
+
+Pronto! __Ruby__ instalado.
+
+Para checar execute:
+
+    # ruby --version
+
+
+### Instalando o RubyGems
+ 
+O __RubyGems__ é o administrador de repositórios do Ruby. Com ele instalado, poderemos instalar qualquer "gens" dessa forma
+`gem install nome-da-gem`.
+
+Baixe o código fonte no site oficial 
+[http://rubygems.org/pages/download](http://rubygems.org/pages/download "link-externo")
+
+Também devemos dar permissão de execução no arquivo.
+
+    # chmod 777 rubygems-2.2.2
+
+Para descompactar execute:
+
+    # tar -xvcf rubygems-2.2.2
+
+Agora, entre na pasta e execute:
+
+    # ruby setup.rb
+
+
+### Instalando o Rails
+
+Execute:
+
+    # gem install rails
+
+
+<hr>
+Fonte:
+
+- [https://www.ruby-lang.org/en/installation/#building-from-source](https://www.ruby-lang.org/en/installation/#building-from-source "link-externo")
+- [https://www.ruby-lang.org/pt/downloads/](https://www.ruby-lang.org/pt/downloads/ "link-externo")
+
+
+
+
+
+Via repositório (yum install rails)
 ---
 
+
+### Instalando o Ruby
+
+Começamos com o Ruby.
+
+    # yum install ruby 
+
+
+As dependências.
+
+    # yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel
+    # yum install ruby-rdoc ruby-devel
+
+
+É recomendável instalar o "Development Tools"
+
+    # yum groupinstall "Development Tools" 
+
+
+Ruby instalado! Para checar execute:
+
+    # ruby --version
+
+Putz! Ele instalou uma versão bem mais antiga que a dos fontes.
+
+
+### Instalando o RubyGems
+
+Agora instalamos o RubyGems.
+
+    # yum install rubygems 
+
+Atualizamos:
+
+    # gem update
+    # gem update --system 
+
+Até aqui tudo foi tranquilo.
+
+
+### Instalando o Rails
+
+Torça os dedos e execute:
+
+    # gem install rails
+
+Para mim, apareceu a seguinte mensagem de erro: `can't find header files for ruby at /usr/lib/ruby/ruby.h`
+
+Procurando o erro na net, encontrei:
+
+    # yum -y install gcc ruby-devel rubygems
+
+Se você reparar, já instalamos essa dependências, mas agora utlizamos o `-y`
+
+Tentei novamente:
+
     gem install rails
 
-msg de erro: `can't find header files for ruby at /usr/lib/ruby/ruby.h`
-procurando o erro na net:
+Mais um erro: `Error installing rails: activesupport requires Ruby version >= 1.9.3.`
 
-    yum -y install gcc ruby-devel rubygems
+Ele precisa da versão do Ruby 1.9.3 e a minha era 1.8.
 
-ai, novamente:
+E vai na net fuçar, achei um dica para executar o utilitário __RVM__. Ele instala o Ruby na versão que quisermos, então
+fiz uma pausa na instalação do __Rails__ para...
 
-    gem install rails
 
-msg de erro: `Error installing rails: activesupport requires Ruby version >= 1.9.3.`
+### Instalando (novamente) o __Ruby_ através do __RVM__
 
-e vai na net fuçar, achei um dica para executar o utilitário
+Fui de cara e executei:
 
-    rvm install 1.9.3
+    # rvm install 1.9.3
 
-Deu erro, o utilitário rvm não existia.
+Obviamente, deu erro, o utilitário não existia.
 
-Acessando o site `https://rvm.io/rvm/install`, logo na home, encontrei e excutei:
+Para instalar o RVM, excute:
 
-    \curl -sSL https://get.rvm.io | bash
+    # \curl -sSL https://get.rvm.io | bash
 
-ok, de novo
+
+OK, RMV instalado, agora vai...
     
-    rvm install 1.9.3
+    # rvm install 1.9.3
 
-Negativo, resolvi reiniciar a máquina só depois tentar novamente:
+Negativo, resolvi reiniciar a máquina.
 
-    rvm install 1.9.3
+Mais uma vez...
 
-Parecia que ia tudo bem...
+    # rvm install 1.9.3
 
-msg de erro: `Missing required packages: libyaml-devel libffi-devel readline-devel`
+Agora foi. Parecia que ia tudo bem... pamm mensagem de erro `Missing required packages: libyaml-devel libffi-devel readline-devel`
 
-Tentei...
+Ele está reclamnado das dependências listadas. Tentei...
 
-    yum install libyaml-devel libffi-devel readline-devel
+    # yum install libyaml-devel libffi-devel readline-devel
 
-__libffi-devel__ e __readline-devel__ tudo ok, agora o __libyaml-devel__ o yum não achou.
 
-Lendo a msg de erro com mais calma, descobri que podia habilitar o autolibs, l vou eu de novo...
+Resultado, __libffi-devel__ e __readline-devel__ tudo ok, agora o __libyaml-devel__ o yum não achou.
 
-    rvm autolibs enable
+Lendo a documentação com mais calma, descobri que poderia habilitar o `autolibs` do __RVM__...
 
-Acionei o Enter, não aconteceu nada. Então arrisquei...
+    # rvm autolibs enable
+
+Acionei o Enter, não aconteceu nada, então arrisquei...
     
     rvm install 1.9.3
 
@@ -62,46 +212,25 @@ O instalador ainda me deu bronca, me "disse" que eu deveria atualizar para a ver
 
 Bom será que instalou a versão 1.9.3?
     
-    ruby --version
-    ruby 1.9.3p547 (2014-05-14 revision 45962) [x86_64-linux]
+    # ruby --version
+      ruby 1.9.3p547 (2014-05-14 revision 45962) [x86_64-linux]
 
-belexa, então...
+O __RVM__ troca de versão com uma facilidade incrivel. Achei isso super bacana, veja:
 
-    rvm use 1.9.3
-    Using /usr/local/rvm/gems/ruby-1.9.3-p547
+    # rvm use 1.9.3
+      Using /usr/local/rvm/gems/ruby-1.9.3-p547
 
-e finalmente
+E finalmente pude continuar com o __Rails__.
 
-    gem install rails
+    # gem install rails
 
-o processo foi meio devagar mas chegou até o fim com sucesso, obtive:
+O processo foi meio devagar mas chegou até o fim com sucesso, obtive:
 
     28 gems installed
 
 
+<hr>
+Fonte:
 
-Compilando os fontes
----
-
-
-### Primeiro o Ruby
-Fonte: https://www.ruby-lang.org/en/installation/#building-from-source
-
-Execute tudo como root.
-
-    $ ./configure
-    $ make
-    $ sudo make install
-
-
-### Segundo o rubygems
- 
-Baixe o rubygems http://rubygems.org/pages/download
-Descompacte o arquivo, entre na pasta e execute:
-
-     ruby setup.rb
-
-### Rails
-
-    gem install rails
-
+- [https://rvm.io/rvm/install](https://rvm.io/rvm/install)
+- [http://www.vivaolinux.com.br/dica/Como-instalar-o-Ruby-on-Rails-no-CentOS-6](http://www.vivaolinux.com.br/dica/Como-instalar-o-Ruby-on-Rails-no-CentOS-6)
