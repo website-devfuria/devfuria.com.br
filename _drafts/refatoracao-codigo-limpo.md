@@ -4,6 +4,10 @@ title: Refatoração e código limpo
 description: Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.
 ---
 
+veja:
+http://books.google.com.br/books?id=0rGtKCNAoN0C&printsec=frontcover&dq=inauthor:%22Martin+Fowler%22&hl=pt-BR&sa=X&ei=v9WVU4qvDuTgsATCtoGgDQ&ved=0CCwQ6AEwAA#v=onepage&q&f=false
+
+
 Quando escrevemos um código e, posteriomente, voltamos para ajustar algumas coisas, estamos praticando  a refatoração 
 (refactoring). Quero dizer, estamos refatorando o código. O conceito intuitivo da palavra traz consigo a idéia de que
 "refatorar" é simplificar uma expressão. Não é isso o que vem a sua mente? 
