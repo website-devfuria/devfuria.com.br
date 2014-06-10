@@ -1,6 +1,7 @@
 ---
-layout:     materia
-title:      Função para gerar um número randômico entre 2 números quaisquer
+layout:      materia
+title:       Função para gerar um número randômico entre 2 números quaisquer
+description: Função em JavaScript para gerar um número randômico entre 2 números quaisquer
 ---
 
 Função em JavaScript que gera um número aleatório inteiro entre 2 números quaisquer.
