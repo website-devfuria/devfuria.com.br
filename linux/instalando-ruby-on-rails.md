@@ -157,7 +157,7 @@ Se você reparar, já instalamos essa dependências, mas agora utlizamos o `-y`
 
 Tentei novamente:
 
-    gem install rails
+    # gem install rails
 
 Mais um erro: `Error installing rails: activesupport requires Ruby version >= 1.9.3.`
 
@@ -167,7 +167,7 @@ E vai na net fuçar, achei um dica para executar o utilitário __RVM__. Ele inst
 fiz uma pausa na instalação do __Rails__ para...
 
 
-### Instalando (novamente) o __Ruby_ através do __RVM__
+### Instalando (novamente) o __Ruby__ através do __RVM__
 
 Fui de cara e executei:
 
@@ -175,12 +175,12 @@ Fui de cara e executei:
 
 Obviamente, deu erro, o utilitário não existia.
 
-Para instalar o RVM, excute:
+Para instalar o __RVM__, excute:
 
     # \curl -sSL https://get.rvm.io | bash
 
 
-OK, RMV instalado, agora vai...
+OK, __RVM__ instalado, agora vai...
     
     # rvm install 1.9.3
 
@@ -190,16 +190,16 @@ Mais uma vez...
 
     # rvm install 1.9.3
 
-Agora foi. Parecia que ia tudo bem... pamm mensagem de erro `Missing required packages: libyaml-devel libffi-devel readline-devel`
+Agora foi. Parecia que ia tudo bem... mas mostrou a mensagem de erro `Missing required packages: libyaml-devel libffi-devel readline-devel`
 
-Ele está reclamnado das dependências listadas. Tentei...
+Ele está reclamando de algumas dependências. Tentei...
 
     # yum install libyaml-devel libffi-devel readline-devel
 
 
-Resultado, __libffi-devel__ e __readline-devel__ tudo ok, agora o __libyaml-devel__ o yum não achou.
+Resultado, __libffi-devel__ e __readline-devel__ tudo ok, agora o __libyaml-devel__ o __yum__ não achou.
 
-Lendo a documentação com mais calma, descobri que poderia habilitar o `autolibs` do __RVM__...
+Lendo a documentação com mais calma, descobri que poderia habilitar o __autolibs__ do __RVM__...
 
     # rvm autolibs enable
 
