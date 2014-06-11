@@ -30,7 +30,7 @@ Configure para inciar junto com o sistema operacional.
 
 Para testar, abra o navegador e acesse `http://localhost`.
 
-Uma página intitulada "Apache HTTP Server Test Page powered by CentOS" será exibida.
+Uma página intitulada __"Apache HTTP Server Test Page powered by CentOS"__ será exibida.
 
 
 
@@ -55,7 +55,7 @@ Coloque o __Apache__ para iniciar junto com o sistema operacional:
     
 Para testar, abra o navegador e acesse `http://localhost`. 
 
-Uma página intitulada "Fedora Test Page" será exibida.
+Uma página intitulada __"Fedora Test Page"__ será exibida.
 
 
 
@@ -66,8 +66,8 @@ UBUNTU 12
 
 Atualize o sistema.
 
-    # sudo apt-get update
-    # sudo apt-get upgrade 
+    # apt-get update
+    # apt-get upgrade 
 
 Instale o __Apache__.
 
@@ -75,14 +75,12 @@ Instale o __Apache__.
 
 Para testar, abra o navegador e acesse `http://localhost`.
 
-A mensagem "It works" deve aparecer.
+A mensagem __"It works"__ deve aparecer.
 
 
 
 
-<hr>
-
-Fontes:
+### Fontes:
 
 - [http://www.hardware.com.br/livros/servidores-linux/instalando-apache.html](http://www.hardware.com.br/livros/servidores-linux/instalando-apache.html "link-externo")
 - [http://www.vivaolinux.com.br/dica/Instalando-servidor-Apache-+-PHP-+-MySQL-+-phpMyadmin-+-noip-no-Ubuntu-6.10-Server](http://www.vivaolinux.com.br/dica/Instalando-servidor-Apache-+-PHP-+-MySQL-+-phpMyadmin-+-noip-no-Ubuntu-6.10-Server "link-externo")
