@@ -7,5 +7,6 @@ description: "Site de desenvolvimento web"
 markdown: kramdown
 permalink: pretty
 
-host:        0.0.0.0
-port:        4000
+host: 0.0.0.0
+port: 4000
+url: http://www.devfuria.com.br/

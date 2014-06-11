@@ -1,6 +1,6 @@
 {% assign breadcrumbs = page.url | split: '/' %}
 <ul class="breadcrumb">
-    <li><a href="http://localhost:4000/">www.devfuria.com.br</a>
+    <li><a href="{{ site.url }}">www.devfuria.com.br</a>
     {% for crumbs in breadcrumbs %}
         {% if crumbs != "" %}
         
