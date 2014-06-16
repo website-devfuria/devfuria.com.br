@@ -192,7 +192,7 @@ Mais uma vez...
 
 Agora foi. Parecia que ia tudo bem... mas mostrou a mensagem de erro `Missing required packages: libyaml-devel libffi-devel readline-devel`
 
-Ele está reclamando de algumas dependências. Tentei...
+Ele está reclamando das dependências listadas. Tentei...
 
     # yum install libyaml-devel libffi-devel readline-devel
 
@@ -210,7 +210,7 @@ Acionei o Enter, não aconteceu nada, então arrisquei...
 Funfou, que lindo!
 O instalador ainda me deu bronca, me "disse" que eu deveria atualizar para a versão 2.1 (eu ainda chego lá).
 
-Bom será que instalou a versão 1.9.3?
+Bom, será que instalou a versão 1.9.3?
     
     # ruby --version
       ruby 1.9.3p547 (2014-05-14 revision 45962) [x86_64-linux]
