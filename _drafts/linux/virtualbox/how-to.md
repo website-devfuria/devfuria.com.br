@@ -60,4 +60,5 @@ Execute  em seguida:
 (Draft) Compartilhando pastas
 ---
 
+https://forums.virtualbox.org/viewtopic.php?t=15868
 http://www.vivaolinux.com.br/dica/Compartilhamento-de-pastas-no-VirtualBox
