@@ -39,6 +39,7 @@ Agora devemos utilizar a função `Math.floor()` para retirar a parte flutuante 
 
 O código acima irá gerar números aleatórios no seguinte "range" 0, 1, 2, 3, 4, 5, 6, 7, 8, e 9.
 
+Agora que sabemos como gerar números randômicos, podemos ver algumas receitas...
 
 
 ### Como gerar um número randômico até um valor máximo qualquer!
