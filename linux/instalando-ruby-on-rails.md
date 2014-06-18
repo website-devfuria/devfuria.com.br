@@ -98,7 +98,7 @@ Fonte:
 
 
 
-Via repositório (yum install rails)
+Via repositório (yum install ruby)
 ---
 
 
