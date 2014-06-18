@@ -1,6 +1,6 @@
 ---
 layout: materia
-title: CentOS - Como tirar um screenshot
+title: Como tirar um screenshot (CentOS)
 ---
 
 Sabe quando você quer tirar um print-screen da tela? 
@@ -18,6 +18,4 @@ Instalando o __gnome-utils__ instalamos  o __gnome-screenshot__.
     yum install gnome-utils -y
 
 
-### Fonte
-
-(http://senecacd.wordpress.com/2012/11/06/taking-screenshots-on-centos-gnome-screenshot-util/ "link-externo")
+[Fonte](http://senecacd.wordpress.com/2012/11/06/taking-screenshots-on-centos-gnome-screenshot-util/ "link-externo")
