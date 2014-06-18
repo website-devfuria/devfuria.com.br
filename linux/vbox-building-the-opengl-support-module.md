@@ -6,9 +6,7 @@ title:  Resolvendo o erro "Building the OpenGL support module"
 
 Ao instalar o __Guest Additions__ para __Virtual Box__ no Linux, as vezes, pode aparecer o erro __"Building the OpenGL support module"__.
 
-Para resolver precisaremos criar alguns linsk simbólicos, veja:
-
-Criar alguns links simbólicos para a seguinte pasta `/kernels/versao-do-seu-kernel`.
+Para resolver precisaremos criar alguns linsk simbólicos para a seguinte pasta `/usr/src/kernels/versao-do-seu-kernel/include/drm`.
 
 Para descobrir a versão de seu kernel, execute
 
@@ -27,6 +25,10 @@ Agora é só criar os links:
 
 
 Agora tente reinstalar o __GuestAdditions__.
+
+
+Veja também
+---
 
 - [Resolvendo o erro "headers for the current running kernel were not found"](/linux/vbox-headers-for-the-current-running-kernel-were-not-found/ "Resolvendo o erro 'headers for the current running kernel were not found'")
 - [Como instalar o GuestAdditions (CentOS)](/linux/vbox-guest-additions/ "Como instalar o GuestAdditions via console (CentOS)")

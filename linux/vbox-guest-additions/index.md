@@ -24,9 +24,9 @@ Instale também o GCC (compilador da GNU), se não você verá a seguinte menssa
     # yum install gcc
 
 
-### Instalando o Guest Addtions (adicionais de convidados)
+### Instalando o Guest Additions (adicionais de convidados)
 
-Para habilitar a pasta com os arquivos de instalação é preciso clicar no menu __"Devices"__ e  depois na opção 
+Primeiro precisamos habilitar a pasta com os arquivos de instalação, clique no menu __"Devices"__ e  depois na opção 
 __"Install Guest Additions"__.
 
 ![Figura com o resultado de preg-set-order](devices-install-guest-additions.jpg "preg-set-order")
@@ -36,11 +36,14 @@ sua instalação.
 
 ![Figura com o resultado de preg-set-order](vbox-linux-additions-run.png "preg-set-order")
 
-Então, vamos até a pasta 
+O Linux monta as unidades na pasta `media/`. Quando clicamos no menu acima indicado, o Virtual Box montou a unidade
+"VBOXADDITIONS_XXX" na pasta, então vamos até ala, digite:
 
-    # cd /media/VBOXADDITIONS_4.2.18.88780
+    # cd /media/VBOXADDITIONS_XXX
 
-E executamos o instalador:
+Lembre-se de trocar `XXX` pela sua versão. A minha é `4.2.18.88780` então eu digitei `cd /media/VBOXADDITIONS_4.2.18.88780`.
+
+Agora é só executarmos o instalador:
 
     # ./VBoxLinuxAdditions.run
 
