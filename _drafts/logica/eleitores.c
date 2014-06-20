@@ -1,11 +1,11 @@
 // Considerando a tabela abaixo...
 //
-// total de eleitores = 25.639
-// votos brancos      = 1507
-// nulos              = 2312
-// válidos            = 21.820
+// total de eleitores = 1000
+// válidos            = 800
+// votos brancos      = 150
+// nulos              = 50
 //
-// Calcular o percentual do votos brancos, nulos e válidos em relação ao total
+// Calcular o percentual do votos válidos, brancos e nulos em relação ao total
 // de eleitores.
 //
 // gcc eleitores.c -o executavel.run
@@ -16,14 +16,62 @@
 
 int main (){
 
+	float totalEleitores = 1000,
+		  validos = 800,
+		  brancos = 150,
+		  nulos = 50,
+		  percValidos,
+		  percBrancos,
+		  percNulos;
+
+	percValidos = validos / totalEleitores;
+	percBrancos = brancos / totalEleitores;
+	percNulos   = nulos   / totalEleitores; 
 
 	// Testes
-	assert();
-
+	assert(0.8f == percValidos);
+	assert(0.15f == percBrancos);
+	assert(0.05f == percNulos);
 
 	return 0;
 }
 /*
 
+
+1
+	assert(0.8f == 800.0f / 1000.0f);
+
+
+2
+	float totalEleitores = 1000,
+		  validos = 800;
+
+	// Testes
+	assert(0.8f == validos / totalEleitores);
+
+
+3
+	float totalEleitores = 1000,
+		  validos = 800,
+		  percValidos;
+
+	
+	percValidos = validos / totalEleitores;
+
+
+	// Testes
+	assert(0.8f == percValidos);
+
+4
+	float totalEleitores = 1000,
+		  validos = 800,
+		  percValidos;
+
+	percValidos = validos / totalEleitores;
+
+	// Testes
+	assert(0.8f == percValidos);
+	assert(0.15f == percBrancos);
+	assert(0.05f == percNulos);
 
 */

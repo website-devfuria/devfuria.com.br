@@ -1,6 +1,6 @@
 // Considerando que todos os meses tenham 30 dias, calcular o total de dias de n meses, 
 //
-// gcc foo-01.c -o executavel.run
+// gcc dia-n-meses.c -o executavel.run
 #include <stdio.h>
 #include <assert.h>
 
