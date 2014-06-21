@@ -1,7 +1,7 @@
 // Sabendo que a área quadrada é dada pela multiplicacao dos lados, qual seria
 // a área do seguinte espaço 10x5? Utilize as variaveis "lado1" e "lado2".
 //
-// gcc foo-01.c -o executavel.run
+// gcc area-quadrada.c -o executavel.run
 //
 #include <stdio.h>
 #include <assert.h>
