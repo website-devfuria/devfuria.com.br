@@ -18,9 +18,9 @@ Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o p
 Aqui, mantenho um guia prático de instalações de aplicativos para Linux.
 
 <div class="list-group">
-    <a href="./linux/instalando-ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
-    <a href="./linux/instalando-apache-via-yum-apt-get/" class="list-group-item">Instalando e configurando o Apache no Linux</a>
-    <a href="./linux/instalando-7z/" class="list-group-item">Instalando 7-Zip (7z, 7zip, sevenzip)</a>
+    <a href="/linux/instalando-ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
+    <a href="/linux/instalando-apache-via-yum-apt-get/" class="list-group-item">Instalando e configurando o Apache no Linux</a>
+    <a href="/linux/instalando-7z/" class="list-group-item">Instalando 7-Zip (7z, 7zip, sevenzip)</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
@@ -30,9 +30,9 @@ Pequeno guia de How-to-now (saber como fazer)
 ---
 
 <div class="list-group">
-    <a href="./linux/vbox-guest-additions/" class="list-group-item">Como instalar o GuestAdditions (CentOS)</a>
-    <a href="./linux/gnome-screenshot/" class="list-group-item">Como tirar um screenshot (CentOS)</a>
-    <a href="./linux/como-saber-qual-versao-do-linux-esta-instalada/" class="list-group-item">Como saber qual versão do Linux está instalada</a>
+    <a href="/linux/vbox-guest-additions/" class="list-group-item">Como instalar o GuestAdditions (CentOS)</a>
+    <a href="/linux/gnome-screenshot/" class="list-group-item">Como tirar um screenshot (CentOS)</a>
+    <a href="/linux/como-saber-qual-versao-do-linux-esta-instalada/" class="list-group-item">Como saber qual versão do Linux está instalada</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
@@ -49,6 +49,15 @@ páginas de referência. Valeu cada centavo.
 trás uma visão panorâmica ao mesmo tempo que mantém uma riqueza de detalhes. Eu comprei o livro impresso por $70 pilas mas é possível
 ler o livro (gratuitamente) no site do morimoto: [www.hardware.com.br/livros/linux/](http://www.hardware.com.br/livros/linux/ "link-externo").
 <br/> ![Figura da capa do livro 'Linux, guia prático'](linux-guia-pratico-morimoto.jpg "linux")
+
+
+Comunidade
+---
+
+Alguns lugares interessantes para pesquisar.
+
+- [http://www.vivaolinux.com.br/linux/](http://www.vivaolinux.com.br/linux/ "link-externo")
+- [http://www.guiafoca.org/](http://www.guiafoca.org/ "link-externo")
 
 
 

@@ -57,12 +57,23 @@ Se traçarmos a minha linha de tempo teremos:
 
     Ubuntu -> Kubuntu -> Fedora -> CentoOs
 
-Essa sequencia funcinou comigo, não posso afirmar que isso vai funcionar com você, mas fica aí a sugestão.
+Essa sequencia funcionou comigo, não posso afirmar que isso vai funcionar com você, mas fica aí a sugestão.
+
+Leia mais sobre em [http://www.hardware.com.br/tutoriais/arvore-genealogica-linux/](http://www.hardware.com.br/tutoriais/arvore-genealogica-linux/ "link-externo")
+
+
+
+### Descobrindo o Linux com o Ubuntu
+
+Se você optar pelo Ubuntu, baixe o sistema nos sites:
 
 [http://ubuntu-br.org/](http://ubuntu-br.org/ "link-externo")
 
 [http://www.ubuntu.com/](http://www.ubuntu.com/ "link-externo")
 
+E veja um pouco deste tutorial no guia do hardware
+
+[http://www.hardware.com.br/tutoriais/ubuntu/](http://www.hardware.com.br/tutoriais/ubuntu/ "link-externo")
 
 
 ### Iniciando suavemente (sem impacto, sem traumas, sem sustos)
