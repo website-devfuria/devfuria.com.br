@@ -29,12 +29,12 @@ Instale também o GCC (compilador da GNU), se não você verá a seguinte menssa
 Primeiro precisamos habilitar a pasta com os arquivos de instalação, clique no menu __"Devices"__ e  depois na opção 
 __"Install Guest Additions"__.
 
-![Figura com o resultado de preg-set-order](devices-install-guest-additions.jpg "preg-set-order")
+![Figura como instalar o guest additions](devices-install-guest-additions.jpg "como instalar o guest additions")
 
 Após isso o __Vbox__ irá montar uma pasta (como se fosse um CD-ROM) com o nome `VBOXADDTIONS_XXX` onde XXX é a versão de
 sua instalação. 
 
-![Figura com o resultado de preg-set-order](vbox-linux-additions-run.png "preg-set-order")
+![Figura CD da pasta guest additions](vbox-linux-additions-run.png "CD da pasta guest additions")
 
 O Linux monta as unidades na pasta `media/`. Quando clicamos no menu acima indicado, o Virtual Box montou a unidade
 "VBOXADDITIONS_XXX" na pasta, então vamos até ala, digite:
