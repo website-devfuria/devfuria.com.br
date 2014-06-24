@@ -9,22 +9,24 @@ class Money {
         $this->currency = $currency;
     }    
     
-    static function dollar($amount) {
-        return new Dollar($amount, "USD");
-    }
-
     static function franc($amount) {
-        return new Franc($amount, "CHF");
+        return new Money($amount, "CHF");
+    }
+    
+    static function dollar($amount) {
+        return new Money($amount, "USD");
     }
 
     function equals($money) {
-//        # pag 54:
-//        $this->getClass()->equals($money->getClass());
-        return ($this->amount == $money->amount) && (get_class($this) == get_class($money));
+        return ($this->amount == $money->amount) && ($this->currency == $money->currency);
     }
 
     function currency() {
         return $this->currency;
     }
-
+    
+    function times($multiplier) {
+        return new Money($this->amount * $multiplier, $this->currency);
+    } 
+    
 }
