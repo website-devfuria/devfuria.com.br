@@ -17,7 +17,7 @@ class FooTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(Money::franc(10), $five->times(2));
         $this->assertEquals(Money::franc(15), $five->times(3));
     }
-    
+
     public function testEquality() {
         $d = Money::dollar(5);
         $this->assertTrue($d->equals(Money::dollar(5)));
@@ -28,7 +28,12 @@ class FooTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($f->equals(Money::franc(5)));
         $f = Money::franc(5);
         $this->assertFalse($f->equals(Money::franc(6)));
-        
+
         $this->assertFalse($f->equals($d));
+    }
+
+    public function testCurrency() {
+        $this->assertEquals("USD", Money::dollar(1)->currency());
+        $this->assertEquals("CHF", Money::franc(1)->currency());
     }
 }
