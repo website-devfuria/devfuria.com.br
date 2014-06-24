@@ -28,5 +28,7 @@ class FooTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($f->equals(new Franc(5)));
         $f = new Franc(5);
         $this->assertFalse($f->equals(new Franc(6)));
+        
+        $this->assertFalse($f->equals($d));
     }
 }

@@ -4,6 +4,8 @@ class Money {
     protected $amount;    
     
     function equals($money) {
-        return ($this->amount == $money->amount);
+//        # pag 54:        
+//        $this->getClass()->equals($money->getClass());
+        return ($this->amount == $money->amount) && (get_class($this) == get_class($money));
     }    
 }
