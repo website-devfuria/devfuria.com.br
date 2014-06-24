@@ -1,9 +1,38 @@
 <?php
 
+require "Bank.php";
+require "Sum.php";
 require "Money.php";
 
 class FooTest extends PHPUnit_Framework_TestCase
 {
+    public function testSimpleAddition() {
+        $five = Money::dollar(5);
+        $sum  = $five->plus($five);
+        $bank = new Bank();
+        $moneyReduced = $bank->reduce($sum, "USD");
+        $this->assertEquals(Money::dollar(10), $moneyReduced);
+    }
+
+    public function testPlusReturnSum() {
+        $five   = Money::dollar(5);
+        $sum = $five->plus($five);
+        $this->assertEquals($five, $sum->augend);
+        $this->assertEquals($five, $sum->addend);
+    }
+
+    public function testReduceSum() {
+        $sum = new Sum(Money::dollar(3), Money::dollar(4));
+        $bank = new Bank();
+        $result = $bank->reduce($sum, "USD");
+        $this->assertEquals(Money::dollar(7), $result);
+    }
+
+    public function testReduceMoney() {
+        $bank = new Bank();
+        $result = $bank->reduce(Money::dollar(1), "USD");
+        $this->assertEquals(Money::dollar(1), $result);
+    }
 
     public function testMultiplicattion(){
         $five = Money::dollar(5);
@@ -18,12 +47,12 @@ class FooTest extends PHPUnit_Framework_TestCase
         $this->assertFalse($d->equals(Money::dollar(6)));
 
         $f = Money::franc(5);
-        $this->assertFalse($f->equals($d));
+        $this->assertFalse($f->equals(Money::dollar(5)));
     }
 
     public function testCurrency() {
         $this->assertEquals("USD", Money::dollar(1)->currency());
         $this->assertEquals("CHF", Money::franc(1)->currency());
     }
-    
+
 }
