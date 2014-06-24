@@ -21,8 +21,12 @@ class FooTest extends PHPUnit_Framework_TestCase
     public function testEquality() {
         $d = new Dollar(5);
         $this->assertTrue($d->equals(new Dollar(5)));
-        
         $d = new Dollar(5);
         $this->assertFalse($d->equals(new Dollar(6)));
+
+        $f = new Franc(5);
+        $this->assertTrue($f->equals(new Franc(5)));
+        $f = new Franc(5);
+        $this->assertFalse($f->equals(new Franc(6)));
     }
 }

@@ -1,19 +1,13 @@
 <?php
+require_once "Money.php";
 
-class Dollar {
+class Dollar extends Money {
 
-    private $amount;
-    
     function __construct($amount) {
         $this->amount = $amount;
     }
     
     function times($multiplier) {
-        //$this->amount *= 2;
         return new Dollar($this->amount * $multiplier);
-    }
-    
-    function equals($dollar) {
-        return ($this->amount == $dollar->amount);
     }
 }
