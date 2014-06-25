@@ -10,7 +10,18 @@ class Sum {
     }
     
     function reduce($bank, $to) {
+//        $amount = $this->augend->amount + $this->addend->amount;
+
+        $this->augend = $this->augend->reduce($bank, $to);
+        $this->addend = $this->addend->reduce($bank, $to);
+        
         $amount = $this->augend->amount + $this->addend->amount;
+        
         return new Money($amount, $to);        
     }
+    
+    function plus($addend) {
+        return null;
+    }    
+    
 }

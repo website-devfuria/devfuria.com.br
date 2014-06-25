@@ -38,7 +38,6 @@ class Money {
 //        return $this;
 //        $rate = ($this->currency == "CHF" && $to == "USD") ? 2 : 1;
         $rate = $bank->rate($this->currency, $to);
-
         return new Money($this->amount / $rate, $to);
     }  
 

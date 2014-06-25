@@ -9,10 +9,9 @@ class FooTest extends PHPUnit_Framework_TestCase
     public function testSimpleAddition() {
         $five = Money::dollar(5);
         $sum  = $five->plus($five);
-        
         $bank = new Bank();
+        $bank->addRate("USD", "USD", 1);
         $moneyReduced = $bank->reduce($sum, "USD");
-        
         $this->assertEquals(Money::dollar(10), $moneyReduced);
     }
 
@@ -26,6 +25,7 @@ class FooTest extends PHPUnit_Framework_TestCase
     public function testReduceSum() {
         $sum  = new Sum(Money::dollar(3), Money::dollar(4));
         $bank = new Bank();
+        $bank->addRate("USD", "USD", 1);
         $this->assertEquals(Money::dollar(7), $bank->reduce($sum, "USD"));
     }
 
@@ -41,6 +41,16 @@ class FooTest extends PHPUnit_Framework_TestCase
         $bank->addRate("CHF", "USD", 2);
         $result = $bank->reduce(Money::franc(2), "USD");
         $this->assertEquals(Money::dollar(1), $result);
+    }
+    
+    public function testMixedAddition() {
+        $fiveBucks = Money::dollar(5);
+        $tenFrancs = Money::franc(10);
+        $bank = new Bank();
+        $bank->addRate("USD", "USD", 1);
+        $bank->addRate("CHF", "USD", 2);
+        $result = $bank->reduce($fiveBucks->plus($tenFrancs), "USD");
+        $this->assertEquals(Money::dollar(10), $result);
     }
 
     public function testMultiplicattion(){
