@@ -1,7 +1,7 @@
 // Escreva uma função para cada uma das quatro operações matemáticas simples
 // (adição, subitrair, multiplicar e dividir)
 //
-// gcc foo-01.c -o executavel.run
+// gcc operacoes-mat.c -o executavel.run
 #include <stdio.h>
 #include <assert.h>
 
