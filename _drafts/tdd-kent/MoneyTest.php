@@ -9,28 +9,37 @@ class FooTest extends PHPUnit_Framework_TestCase
     public function testSimpleAddition() {
         $five = Money::dollar(5);
         $sum  = $five->plus($five);
+        
         $bank = new Bank();
         $moneyReduced = $bank->reduce($sum, "USD");
+        
         $this->assertEquals(Money::dollar(10), $moneyReduced);
     }
 
     public function testPlusReturnSum() {
-        $five   = Money::dollar(5);
+        $five = Money::dollar(5);
         $sum = $five->plus($five);
         $this->assertEquals($five, $sum->augend);
         $this->assertEquals($five, $sum->addend);
     }
 
     public function testReduceSum() {
-        $sum = new Sum(Money::dollar(3), Money::dollar(4));
+        $sum  = new Sum(Money::dollar(3), Money::dollar(4));
         $bank = new Bank();
-        $result = $bank->reduce($sum, "USD");
-        $this->assertEquals(Money::dollar(7), $result);
+        $this->assertEquals(Money::dollar(7), $bank->reduce($sum, "USD"));
     }
 
     public function testReduceMoney() {
         $bank = new Bank();
-        $result = $bank->reduce(Money::dollar(1), "USD");
+        $bank->addRate("USD", "USD", 1);
+        $moneyReduced = $bank->reduce(Money::dollar(100), "USD");
+        $this->assertEquals(Money::dollar(100), $moneyReduced);
+    }
+    
+    public function testReduceMoneyDifferentCurrency() {
+        $bank = new Bank();
+        $bank->addRate("CHF", "USD", 2);
+        $result = $bank->reduce(Money::franc(2), "USD");
         $this->assertEquals(Money::dollar(1), $result);
     }
 

@@ -9,7 +9,7 @@ class Sum {
         $this->addend = $addend;
     }
     
-    function reduce($to) {
+    function reduce($bank, $to) {
         $amount = $this->augend->amount + $this->addend->amount;
         return new Money($amount, $to);        
     }

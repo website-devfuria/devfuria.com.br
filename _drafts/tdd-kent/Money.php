@@ -32,11 +32,14 @@ class Money {
     function plus($addend) {
         return new Sum($this, $addend);
 //        return new Money($this->amount + $addend->amount, $this->currency);
-        
     }
     
-    function reduce($to) {
-        return $this;
+    function reduce($bank, $to) {
+//        return $this;
+//        $rate = ($this->currency == "CHF" && $to == "USD") ? 2 : 1;
+        $rate = $bank->rate($this->currency, $to);
+
+        return new Money($this->amount / $rate, $to);
     }  
 
 }
