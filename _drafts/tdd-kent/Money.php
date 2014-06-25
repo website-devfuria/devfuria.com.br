@@ -2,7 +2,7 @@
 
 class Money {
     public $amount;
-    public $currency;
+    private $currency;
 
     function __construct($amount, $currency) {
         $this->amount = $amount;
