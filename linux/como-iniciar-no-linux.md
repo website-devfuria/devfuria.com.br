@@ -3,10 +3,10 @@ layout: materia
 title: Como iniciar no Linux
 ---
 
-Gostaria de lhe dizer que usar o Linux é fácil, mas não é (embora isso seja muito relativo). Mas posso garantir que é
+Gostaria de lhe dizer que usar o __Linux__ é fácil, mas não é (embora isso seja muito relativo). Mas posso garantir que é
 uma viagem muito empolgante e, na maioria das vezes, pode ser bastante divertido trabalhar no Linux.
 
-Para quem vem do Windows é 2x mais difícil pois a gente tenta encontrar as "coisas parecidas" no Linux. Eu vim do Windows
+Para quem vem do Windows é 2x mais difícil pois a gente tenta encontrar as "coisas parecidas" no Linux, eu vim do Windows
 e se este é o seu caso aconselho a não tentar fazer isso. Esqueça os softwares que você usa no Windows, esqueça as 
 ferramentas, esqueça tudo. Limpe sua mente, entre no Linux de cabeça aberta, afinal foi dessa forma que você iniciou com
 o Windows.
@@ -25,10 +25,10 @@ Nada animador isso né?
 
 Mas saiba que existem pouco menos de 10 distros principais, as demais são tudo pequenas variações.
 
-As duas distro mais populares são a Red Hat e o Debian. E as distro que estão logo abaixo chamamos de família __Red Hat__ ou
-família Debian.
+As duas distro mais populares são a Red Hat e o Debian. E as distro que estão logo abaixo chamamos de família __Red Hat__ 
+e a outra de família __Debian__.
 
-Grotescamente, a árvore de distros nas quais eu aconselho que você experiemente primeiro ficaria mais ou menos assim:
+Grotescamente, a árvore de distros, nas quais eu aconselho que você experiemente primeiro, ficaria mais ou menos assim:
 
     Debian -> Ubuntu
            -> Kubuntu
@@ -85,8 +85,9 @@ pode perder seus arquivos e até mesmo ter que reinstalar o __Windows__.
 
 Experimente:
 
-1. [Live Cd's](http://pt.wikipedia.org/wiki/Live_CD "link-externo"). É um cd vivo (como o nome sugere) onde você coloca o cd na bandeja e inicia a máquia e em instantes tem um
-sistema operacional na memória. Ao reiniciar sua máquina (e retirar o cd da bandeja) tudo estará como sempre esteve.
+1. [Live Cd's](http://pt.wikipedia.org/wiki/Live_CD "link-externo"). É um cd vivo (como o nome sugere) onde você coloca
+o cd na bandeja e (re)inicia seu computador e em instantes obtem um sistema operacional na memória. Ao reiniciar sua 
+máquina (e retirar o cd da bandeja) tudo estará como sempre esteve.
 
 2. [Máquinas virtuais](http://en.wikipedia.org/wiki/List_of_live_CDs "link-externo"). É um aplicativo que simula uma máquina no seu computador. O [Virtual Box](https://www.virtualbox.org/ "link-externo")
 é a __"vm"__  mais fácil para começar.
@@ -97,7 +98,7 @@ o __Linux__.
 
 E quem sabe um dia, você estufa o peito e instala apenas o __Linux__ como sistema operacional. Aí você poderá fazer 
 exatamente o inverso: instalar o __Windows__ como uma máquina virtual caso precise de algum aplicativo que não tem no 
-Linux (como o Office, por exemplo).
+__Linux__ (como o Office, por exemplo).
 
 
 
@@ -106,16 +107,17 @@ Linux (como o Office, por exemplo).
 E o que o torna tão popular entre os desenvolvedores?
 
 Essa pergunta é difícil de ser respondida de forma genérica, porém é fácil quando falamos de forma bem pessoal. Quero
-dizer que cada um tem suas próprias razões para usar/gostar do Linux. Como não posso falar por todo mundo, vou falar 
+dizer que cada um tem suas próprias razões para usar/gostar do __Linux__. Como não posso falar por todo mundo, vou falar 
 apenas por mim.
 
-Eu gosto do Linux porque com ele eu tenho o desafio constante, quase que diário, de aprendizado. Todo dia aprendo uma 
+Eu gosto do Linux porque com ele eu tenho o desafio constante, quase que diário, de aprendizado. Todo dia, aprendo uma 
 coisa nova e interessante sobre sistemas operacionais, aplicativos, ferramentas e etc...
 
-Gosto do Linux porque ele é da bandeira __Software livre__. Poder olhar e alterar o código fonte de um  aplicativo é
+Gosto do __Linux__ porque ele é da bandeira __Software livre__. Poder olhar e alterar o código fonte de um  aplicativo é
 algo muito empolgante (momento nerd).
 
-Uma vez que se aprende a usuar o terminal, a gente fica meio que viciado nisso e parece impossível viver sem ele.
+Uma vez que se aprende a usuar o __terminal__ (linha de comando), a gente fica meio que viciado nisso e parece impossível
+viver sem ele.
 
 Essas são as minhas razões, espero que você encontre as suas.
 
