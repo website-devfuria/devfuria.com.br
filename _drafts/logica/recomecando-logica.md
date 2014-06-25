@@ -11,8 +11,7 @@ Introduzir
 Sinto lhe informar, mas a forma como ensinaram lógica de programação está errada.
 Talvez a palavara ou termo mais adequado seria "pouco eficiente".
 
-Se você continuasse a programar da forma como lhe ensinaram como em uma crescente linear,
-seu código seria macarrônico.
+Se você continuasse a programar da forma como lhe ensinaram em pouco tempo seu código seria macarrônico.
 
 Os programadores precisam desaprender ou melhor, reaprender a programar.
 Se deparam com TDD
