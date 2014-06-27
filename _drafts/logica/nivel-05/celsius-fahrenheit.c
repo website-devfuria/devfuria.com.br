@@ -29,3 +29,21 @@ int main (){
 
 	return 0;
 }
+/*
+
+1
+    int celsius    = 100;
+    int fahrenheit = 212;
+
+	assert(celsius == toCelsius(fahrenheit));
+	assert(fahrenheit == toFahrenheit(celsius));
+
+2
+int toCelsius(int fahrenheit) {
+    return 100;
+}
+int toFahrenheit(int celsius) {
+    return 212;
+}
+
+ */
