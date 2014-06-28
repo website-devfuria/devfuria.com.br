@@ -1,31 +1,21 @@
-// Crie duas funções para conversão de temperaturas. Uma converterá celsius
-// em fahrenheit e a outra fará o inverso.
-//
-// Saiba que 100c é igual a 212f, veja fórmula:
-//
-//     C          F - 32
-//  -------  =  ---------
-//     5            9
 //
 // gcc foo-01.c -o executavel.run
 #include <stdio.h>
 #include <assert.h>
 
-int toCelsius(int fahrenheit) {
-    return 5 * (fahrenheit - 32) / 9;
-}
-int toFahrenheit(int celsius) {
-    return celsius / 5 * 9 + 32;
+int retornaVetor() {
+    int foo[2];
+    
+    foo[0] = 1;
+    foo[1] = 2;
+    foo[2] = 3;
+    return foo;
 }
 
 
 int main (){
 
-    int celsius    = 100;
-    int fahrenheit = 212;
-
-	assert(celsius == toCelsius(fahrenheit));
-	assert(fahrenheit == toFahrenheit(celsius));
+    //assert(1 == retornaVetor());
 
 	return 0;
 }
