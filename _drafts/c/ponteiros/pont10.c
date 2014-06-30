@@ -1,5 +1,3 @@
-//
-// gcc foo-01.c -o executavel.run
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
