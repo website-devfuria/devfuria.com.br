@@ -45,8 +45,8 @@ e não te deixa na mão, nem tem aquelas explicações vagas e subjetivas. Pague
 páginas de referência. Valeu cada centavo.
 <br/> ![Figura da capa do livro 'Linux, um guia prático'](livro-linux-guia-pratico.jpeg "linux")
 
- - __Linux guia prático__ - Excelente. O Morimoto é mestre no assunto e deu um show neste livro. O legal é que ele dá
-trás uma visão panorâmica ao mesmo tempo que mantém uma riqueza de detalhes. Eu comprei o livro impresso por $70 pilas mas é possível
+ - __Linux guia prático__ - Excelente. O Morimoto é mestre no assunto e deu um show neste livro. O legal é que ele trás 
+uma visão panorâmica ao mesmo tempo que mantém uma riqueza de detalhes. Eu comprei o livro impresso por $70 pilas mas é possível
 ler o livro (gratuitamente) no site do morimoto: [www.hardware.com.br/livros/linux/](http://www.hardware.com.br/livros/linux/ "link-externo").
 <br/> ![Figura da capa do livro 'Linux, guia prático'](linux-guia-pratico-morimoto.jpg "linux")
 
