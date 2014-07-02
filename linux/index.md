@@ -10,7 +10,7 @@ Se você nunca utilizou o Linux e está precisando de um empurrão veja a matér
 
 
 
-Receitas (cookbook) de instalação de softwares no Linux
+Cookbook - receitas de instalação de softwares no Linux
 ---
 
 Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o pessoal iniciante.
@@ -26,7 +26,7 @@ Aqui, mantenho um guia prático de instalações de aplicativos para Linux.
 
 
 
-Pequeno guia de How-to-now (saber como fazer)
+How-to-now - pequeno guia de "saber como fazer"
 ---
 
 <div class="list-group">
@@ -35,6 +35,17 @@ Pequeno guia de How-to-now (saber como fazer)
     <a href="/linux/como-saber-qual-versao-do-linux-esta-instalada/" class="list-group-item">Como saber qual versão do Linux está instalada</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
+
+
+Error - Resolvendo erros
+---
+
+<div class="list-group">
+    <a href="/linux/vbox-building-the-opengl-support-module/" class="list-group-item">Resolvendo o erro "Building the OpenGL support module"</a>
+    <a href="/linux/vbox-headers-for-the-current-running-kernel-were-not-found/" class="list-group-item">Resolvendo o erro "headers for the current running kernel were not found"</a>
+    <!--<a href="" class="list-group-item"></a>-->
+</div> 
+
 
 
 Livros sobre Linux - para iniciantes
