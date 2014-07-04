@@ -1,4 +1,3 @@
-// g++ foo.cpp -o executavel.run
 #include <iostream>
 using namespace std;
 
