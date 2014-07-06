@@ -8,7 +8,7 @@
 // i = taxa de empréstimo e
 // n = períodos.
 //                                            
-// gcc foo-01.c -o executavel.run
+// gcc juros-simples.c -o executavel.run
 #include <stdio.h>
 #include <assert.h>
 

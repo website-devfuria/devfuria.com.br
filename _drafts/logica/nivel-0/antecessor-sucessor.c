@@ -1,6 +1,6 @@
 // Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.
 //
-// gcc foo-01.c -o executavel.run
+// gcc antecessor-sucessor.c -o executavel.run
 #include <stdio.h>
 #include <assert.h>
 

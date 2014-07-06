@@ -1,7 +1,7 @@
 // Sendo o salário de 1.000,00 e o reajuste de 15%, faça um algoritmo que calcule
 // o reajuste de um salário.
 //
-// gcc foo-01.c -o executavel.run
+// gcc salario-reajuste.c -o executavel.run
 #include <stdio.h>
 #include <assert.h>
 

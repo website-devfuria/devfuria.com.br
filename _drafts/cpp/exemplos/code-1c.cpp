@@ -14,7 +14,7 @@ public:
     // interface to outside world
     int getTotal() {
         return total;
-    };
+    }
 private:
     // hidden data from outside world
     int total;
