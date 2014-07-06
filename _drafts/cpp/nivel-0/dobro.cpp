@@ -19,4 +19,3 @@ int main() {
     testDobro();
     return 0;
 }
-

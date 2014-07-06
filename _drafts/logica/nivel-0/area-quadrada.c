@@ -1,27 +1,37 @@
-// Sabendo que a área quadrada é dada pela multiplicacao dos lados, qual seria
-// a área do seguinte espaço 10x5? Utilize as variaveis "lado1" e "lado2".
+// Sabendo que a área quadrada é dada pela multiplicacao, escreva um algoritmo
+// que mostre a área quadrada de um espaço qualquer.
 //
-// gcc area-quadrada.c -o executavel.run
-//
+// gcc area-quadra2.c -o executavel.run
 #include <stdio.h>
 #include <assert.h>
 
 int main (){
 
+	int lado1, lado2, area;
+	
+	lado1 = 3;
+	lado2 = 9;
+	area = lado1 * lado2;
 
-	int lado1, lado2;
-
-	lado1 = 10;
-	lado2 = 5;
-
-	// Testes 
-	assert(50 == lado1 * lado2);
+    assert(27 == area);
 
 	return 0;
 }
 /*
 
-	// Testes 
-	assert(50 == 10 * 5);
+
+1
+    assert(27 == 3 * 9);
+
+2
+	int lado1, lado2;
+	
+	lado1 = 3;
+	lado2 = 9;
+
+    assert(27 == lado1 * lado2);
+
+
+
 
 */
