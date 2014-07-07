@@ -33,6 +33,7 @@ How-to-now - pequeno guia de "saber como fazer"
     <a href="/linux/vbox-guest-additions/" class="list-group-item">Como instalar o GuestAdditions (CentOS)</a>
     <a href="/linux/gnome-screenshot/" class="list-group-item">Como tirar um screenshot (CentOS)</a>
     <a href="/linux/como-saber-qual-versao-do-linux-esta-instalada/" class="list-group-item">Como saber qual versão do Linux está instalada</a>
+    <a href="/linux/redirecionar-a-saida-do-terminal-para-arquivo/" class="list-group-item">Como redirecionar as saida do terminal (mysql) para um arquivo</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
