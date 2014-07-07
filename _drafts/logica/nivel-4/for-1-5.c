@@ -1,6 +1,5 @@
 // Escreva um algoritmo para carregar um vetor com os números de 1 (inclusive) a
 // 10 (inclusive) em ordem crescente.
-//
 #include <stdio.h>
 #include <assert.h>
 
@@ -23,7 +22,7 @@ int main() {
 /*
 1. Desafio:
 
-Os códigos abaixo trazem o mesmo resultado do código do exercício.
+Os códigos abaixo trazem o mesmo resultado do código do exercício acima.
 Faça o teste de mesa de cada um deles para entender o porque são equivalentes.
 
 for (i = 1; i < 6; i++) {
