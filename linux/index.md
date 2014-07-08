@@ -38,10 +38,11 @@ How-to-now - pequeno guia de "saber como fazer"
 </div> 
 
 
-Error - Resolvendo erros
+Error - Resolvendo erros e problemas
 ---
 
 <div class="list-group">
+    <a href="/linux/problemas-instalacao-debian-7-5/" class="list-group-item">Problemas na instalação do Debian 7.5 (netinst)</a>
     <a href="/linux/vbox-building-the-opengl-support-module/" class="list-group-item">Resolvendo o erro "Building the OpenGL support module"</a>
     <a href="/linux/vbox-headers-for-the-current-running-kernel-were-not-found/" class="list-group-item">Resolvendo o erro "headers for the current running kernel were not found"</a>
     <!--<a href="" class="list-group-item"></a>-->
@@ -68,8 +69,6 @@ Comunidade
 
 Alguns lugares interessantes para pesquisar.
 
+- [http://www.hardware.com.br/](http://www.hardware.com.br "link-externo")
 - [http://www.vivaolinux.com.br/linux/](http://www.vivaolinux.com.br/linux/ "link-externo")
 - [http://www.guiafoca.org/](http://www.guiafoca.org/ "link-externo")
-
-
-
