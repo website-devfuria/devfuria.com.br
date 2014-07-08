@@ -1,0 +1,1 @@
+// http://www.programmingsimplified.com/c/source-code/c-program-find-hcf-and-lcm
