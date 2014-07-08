@@ -38,6 +38,15 @@ How-to-now - pequeno guia de "saber como fazer"
 </div> 
 
 
+What it is this - para esclarecer dúvidas frequentes
+---
+
+<div class="list-group">
+    <a href="/linux/imagem-cd-iso/" class="list-group-item">O que é uma "imagem de CD"?</a>
+    <!--<a href="" class="list-group-item"></a>-->
+</div> 
+
+
 Error - Resolvendo erros e problemas
 ---
 

@@ -89,8 +89,8 @@ Experimente:
 o cd na bandeja e (re)inicia seu computador e em instantes obtem um sistema operacional na memória. Ao reiniciar sua 
 máquina (e retirar o cd da bandeja) tudo estará como sempre esteve.
 
-2. [Máquinas virtuais](http://en.wikipedia.org/wiki/List_of_live_CDs "link-externo"). É um aplicativo que simula uma máquina no seu computador. O [Virtual Box](https://www.virtualbox.org/ "link-externo")
-é a __"vm"__  mais fácil para começar.
+2. [Máquinas virtuais](http://en.wikipedia.org/wiki/List_of_live_CDs "link-externo"). É um aplicativo que simula uma 
+máquina no seu computador. O [Virtual Box](https://www.virtualbox.org/ "link-externo") é a __"vm"__  mais fácil para começar.
 
 Após você ter tido uma ou as duas experiências acima aí poderá partir para a aventura de instalar o __Linux__ sobre o 
 __Windows__ como __dual boot__. Sempre que você ligar seu computador poderá escolhar entre inicializar o __Windows__ ou 
@@ -100,6 +100,7 @@ E quem sabe um dia, você estufa o peito e instala apenas o __Linux__ como siste
 exatamente o inverso: instalar o __Windows__ como uma máquina virtual caso precise de algum aplicativo que não tem no 
 __Linux__ (como o Office, por exemplo).
 
+Em ambos os casos, utilizamos um arquivo do tipo __iso__ para gravar uma [imagem no CD](/linux/imagem-cd-iso/).
 
 
 ### O Linux é um sistema operacional muito utilizado por desenvolvedores de softwares
