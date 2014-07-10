@@ -1,0 +1,1 @@
+Instale via software center
