@@ -35,7 +35,11 @@ criar um link simbólico dessa forma:
 
     ln -s /opt/firefox/firefox /usr/bin/firefox
 
+### Dicas
 
+No Debian você não mais precisará do iceweasel, então pode desinstalar:
+
+    apt-get remove iceweasel 
 
 <hr>
 Fonte

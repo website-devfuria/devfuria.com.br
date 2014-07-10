@@ -18,6 +18,7 @@ Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o p
 Aqui, mantenho um guia prático de instalações de aplicativos para Linux.
 
 <div class="list-group">
+    <a href="/linux/instalando-firefox/" class="list-group-item">Instalando o última versão do Firefox</a>
     <a href="/linux/instalando-ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
     <a href="/linux/instalando-apache-via-yum-apt-get/" class="list-group-item">Instalando e configurando o Apache no Linux</a>
     <a href="/linux/instalando-7z/" class="list-group-item">Instalando 7-Zip (7z, 7zip, sevenzip)</a>
