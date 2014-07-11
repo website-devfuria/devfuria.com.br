@@ -20,5 +20,12 @@ apt-get install curl
 apt-get install gawk  libsqlite3-dev sqlite3 autoconf libncurses5-dev automake libtool bison pkg-config libffi-dev
 
 
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.2 --rails
+
+
+
+
+
 gem install rails --source https://rubygems.org
 gem update --system
