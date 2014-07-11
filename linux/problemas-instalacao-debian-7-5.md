@@ -10,7 +10,7 @@ obter um número de IP válido.
 A consequência é que os pacotes com os softwares (incluíndo interface gráfica) não serão instalados, em outras palavras,
 apenas o sistema básico é instalado (modo texto). Ao iniciar a máquina, você fica apenas com o prompt de comando.
 
-Acontece que vocẽ só descobre isso quando chega a hora do instalador adicionar os pacotes dos repositórios. __O instalador
+Acontece que você só descobre isso quando chega a hora do instalador adicionar os pacotes dos repositórios. __O instalador
 responde que o repositório não é compatível com seu release.__ Mas não é bem isso, o problema, normalmente, é que não
 houve conexão com a rede/Internet. 
 
@@ -49,7 +49,7 @@ Se você tiver certeza dessas informações fique tranquilo pois a interface de 
 Se o problema for o reconhecimento da placa de rede (e não a configuração)
 ---
 
-Não é um passo a passo e sim uma série de comandos que vo lhe ajduar a diagnosticar o problema.
+Não é um passo a passo e sim uma série de comandos que devem lhe ajduar a diagnosticar o problema.
 
 Na interface de instalação digite __CRTL + ALT + F1__ para alternar para um terminal.
 
