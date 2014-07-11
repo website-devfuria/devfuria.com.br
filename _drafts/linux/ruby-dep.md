@@ -1,30 +1,15 @@
 ruby
 
 
-apt-get update
+sudo apt-get install curl gawk libreadline6-dev zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libncurses5-dev automake libtool bison pkg-config libffi-dev
 
-apt-get install libgcrypt11-dev zlib1g-dev
-
-apt-get install build-essential
-
-apt-get install libssl-dev
-
-apt-get install libreadline-dev
-
-apt-get install  openssl libopenssl-ruby1.9.1 libruby1.9.1 git-core
-
-./configure CONFIGURE_OPTS=--disable-install-doc
-
-apt-get install curl
-
-apt-get install gawk  libsqlite3-dev sqlite3 autoconf libncurses5-dev automake libtool bison pkg-config libffi-dev
-
+apt-get install build-essential libgcrypt11-dev zlib1g-dev libreadline-dev openssl libopenssl-ruby1.9.1 libruby1.9.1 git-core
 
 
 \curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.2 --rails
 
 
-
+./configure CONFIGURE_OPTS=--disable-install-doc
 
 
 gem install rails --source https://rubygems.org
