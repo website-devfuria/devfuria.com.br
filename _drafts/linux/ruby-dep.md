@@ -6,12 +6,18 @@ ruby on debian
 
     apt-get install build-essential libgcrypt11-dev libreadline-dev libruby1.9.1 git-core
 
-
-    \curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.2 --rails
-
-
     ./configure CONFIGURE_OPTS=--disable-install-doc
+    make
+    make install
 
+
+    reinicializar
+    
+    gem update --system
+
+    reinicializar
 
     gem install rails --source https://rubygems.org
-    gem update --system
+
+
+    \curl -sSL https://get.rvm.io | bash -s stable --ruby=2.1.2 --rails
