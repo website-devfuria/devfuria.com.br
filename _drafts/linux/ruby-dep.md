@@ -2,9 +2,8 @@ ruby on debian
 ===
 
 
-    apt-get install curl gawk libreadline6-dev zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libncurses5-dev automake libtool bison pkg-config libffi-dev
+    apt-get install gcc g++ make build-essential  git-core automake autoconf curl gawk libgcrypt11-dev libreadline-dev libruby1.9.1 libreadline6-dev zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3  libncurses5-dev  libtool bison pkg-config libffi-dev
 
-    apt-get install build-essential libgcrypt11-dev libreadline-dev libruby1.9.1 git-core
 
     ./configure CONFIGURE_OPTS=--disable-install-doc
     make
