@@ -20,6 +20,7 @@ Aqui, mantenho um guia prático de instalações de aplicativos para Linux.
 <div class="list-group">
     <a href="/linux/instalando-nodejs/" class="list-group-item">Instalando o nodejs</a>
     <a href="/linux/instalando-npm/" class="list-group-item">Instalando o npm</a>
+    <a href="/linux/instalando-filezilla/" class="list-group-item">Instalando o Filezilla (FTP)</a>
     <a href="/linux/instalando-firefox/" class="list-group-item">Instalando o última versão do Firefox</a>
     <a href="/linux/instalando-java/" class="list-group-item">Instalando o Java (jdk)</a>
     <a href="/linux/instalando-ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
