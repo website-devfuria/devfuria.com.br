@@ -18,6 +18,7 @@ Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o p
 Aqui, mantenho um guia prático de instalações de aplicativos para Linux.
 
 <div class="list-group">
+    <a href="/linux/instalando-git/" class="list-group-item">Instalando o git</a>
     <a href="/linux/instalando-nodejs/" class="list-group-item">Instalando o nodejs</a>
     <a href="/linux/instalando-npm/" class="list-group-item">Instalando o npm</a>
     <a href="/linux/instalando-filezilla/" class="list-group-item">Instalando o Filezilla (FTP)</a>
