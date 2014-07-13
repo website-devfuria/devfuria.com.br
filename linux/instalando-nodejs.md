@@ -23,7 +23,7 @@ Compilando:
 
     ./configure --openssl-libpath=/usr/lib/ssl
     make
-    make isntall
+    make install
 
 Para testar execute:
 
