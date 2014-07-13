@@ -35,16 +35,37 @@ criar um link simbólico dessa forma:
 
     ln -s /opt/firefox/firefox /usr/bin/firefox
 
-### Dicas
-
-No Debian você não mais precisará do iceweasel, então pode desinstalar:
-
-    apt-get remove iceweasel 
-
 <hr>
 Fonte
 - [https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux](https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux "link-externo")
 
+
+
+
+Instalando o Firefox via repositório (Debian whezzy)
+---
+
+No Debian é preciso adicionar um canal de repositório:
+
+Altere o arquivo `/etc/apt/sources.list`, inclua a seguinte linha:
+
+    deb http://packages.linuxmint.com/ debian main upstream import
+
+Atualizamos o __apt-get__:
+
+    apt-get update
+
+Agora é só instalar:
+
+    apt-get install firefoz
+
+Dica, você não mais precisará do iceweasel, então pode desinstalar:
+
+    apt-get remove iceweasel 
+
+<hr>
+Fonte:
+- [http://linuxconfig.org/easy-way-to-install-firefox-browser-on-debian-7-wheezy](http://linuxconfig.org/easy-way-to-install-firefox-browser-on-debian-7-wheezy "link-externo")
 
 
 Instalando o Firefox via repositório (CentOS)
