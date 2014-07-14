@@ -1,6 +1,6 @@
 ---
 layout: materia
-title: Introdução de TCC sobre OWASP e PHP (segurança da informação)
+title: OWASP top ten 2010 - Introdução
 ---
 
 Atualmente não é mais possível imaginarmos uma organização sem que a
