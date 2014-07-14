@@ -1,10 +1,10 @@
 ---
 layout: materia
-title: Problemas na instalação do Debian 7.5 (netinst)
+title: Problemas na instalação do Debian 7 (netinst)
 ---
 
 
-Ao instalar o __Debian 7.5__ (cd netinst) o instalador pode não reconhecer sua placa de rede ou, o pior, não conseguir
+Ao instalar o __Debian 7__ (cd netinst) o instalador pode não reconhecer sua placa de rede ou, o pior, não conseguir
 obter um número de IP válido.
 
 A consequência é que os pacotes com os softwares (incluíndo interface gráfica) não serão instalados, em outras palavras,
@@ -68,7 +68,7 @@ Rode o comando `mii-tool` para saber se o cabo de rede estiver conectado a placa
 Como descobrir qual é o seu problema de fato
 ---
 
-Quando estiver instalando o __DEBIAN__ você poderá acionar as teclas __CRTL + ALT + F4__ para ver o terminal e o que
+Quando estiver instalando o __Debian__ você poderá acionar as teclas __CRTL + ALT + F4__ para ver o terminal e o que
 está acontecendo (inclusivo aonde está parando).
 
 Digite __CRTL + ALT + F5__ para voltar para a tela de instalação.
@@ -79,4 +79,4 @@ Digite __CRTL + ALT + F1__ para abrir o terminal se precisar executar alguns com
 <hr>
 Fonte
 
-- [Capítulo 6 do livro "Linux Guia prático, Morimoto"](http://www.hardware.com.br/livros/linux/capitulo-debian-como-desktop.html "link-externo")
+- [Debain como desktop "Capítulo 6 do livro Linux Guia prático, Morimoto"](http://www.hardware.com.br/livros/linux/capitulo-debian-como-desktop.html "link-externo")

@@ -42,7 +42,7 @@ Fonte
 
 
 
-Instalando o Firefox via repositório (Debian whezzy)
+Instalando o Firefox via repositório (Debian wheezy)
 ---
 
 No Debian é preciso adicionar um canal de repositório:

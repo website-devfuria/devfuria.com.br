@@ -31,7 +31,7 @@ Fonte: [http://wiki.ubuntu-br.org/FileZilla](http://wiki.ubuntu-br.org/FileZilla
 
 
 
-### Debian 7.5 (whezzy)
+### Debian 7.5 (wheezy)
 
 É preciso adicionar algum canal de repositório.
 
