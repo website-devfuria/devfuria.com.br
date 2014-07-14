@@ -1,6 +1,6 @@
 ---
 layout: materia
-title: Esquece o que lhe ensinaram sobre lógica na Faculdade
+title: Esqueca o que lhe ensinaram sobre lógica na Faculdade
 ---
 
 

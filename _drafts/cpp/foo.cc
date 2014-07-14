@@ -1,36 +1,38 @@
-// Dados 3 valores quaisquer (a, b e c) representando as medidas dos lados de um triângulo,
-// faça um algorítimo para descobrir se formam ou não um triângulo.
-// Saiba que para formar um triângulo, o valor de cada lado deve ser menor que a soma dos outros 2 lados
-
+// g++ foo.cpp -o executavel.run
 #include <iostream>
 #include <assert.h>
-using namespace std;
 
-class Triangulo {
+class Area {
 public:
-    int a, b, c;
-
-    bool ehTriangulo() {
-        if (a < (b + c)) {
-            if (b < (a + c)) {
-                if (c < (a + b)) {
-                    return true;
-                }
-            }
-        }
+    int lado1, lado2, lado3;
+    
+    int quadrada() {
+        return lado1 * lado2;
+    }
+    int cubica() {
+        return lado1 * lado2 * lado3;
     }
 };
 
-void testEhTriangulo() {
+void testAreaQuadrada() {
+    Area area;
+    
+    area.lado1 = 3;
+    area.lado2 = 9;
+    assert(27 == area.quadrada());
+}
 
-    Triangulo tri;
-    tri.a = 3;
-    tri.b = 4;
-    tri.c = 5;
-    assert(tri.ehTriangulo());
+void testAreaCubica() {
+    Area area;
+    
+    area.lado1 = 3;
+    area.lado2 = 6;
+    area.lado3 = 2;
+    assert(36 == area.cubica());
 }
 
 int main() {
-    testEhTriangulo();
+    testAreaQuadrada();
+    testAreaCubica();
     return 0;
 }
