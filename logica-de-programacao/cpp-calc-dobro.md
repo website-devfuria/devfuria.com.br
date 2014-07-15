@@ -82,8 +82,8 @@ Código completo
 {% highlight c %}
 #include <iostream>
 #include <assert.h>
-using namespace std;
 
+// Sua classe ...
 class Calc {
 public:
     int dobro(int num) {
@@ -91,6 +91,7 @@ public:
     }
 };
 
+// Seu teste ..
 void testDobro() {
     Calc c;
     assert(10 == c.dobro(5));

@@ -2,13 +2,15 @@
 #include <stdio.h>
 #include <assert.h>
 
-int dobro(int num) {
-    return 2 * num;
-}
-
 int main (){
-    
-	assert(10 == dobro(5));
-	assert(12 == dobro(6));
+
+	int lado1, lado2, area;
+	
+	lado1 = 3;
+	lado2 = 9;
+	area = lado1 * lado2;
+
+    assert(27 == area);
+
 	return 0;
 }
