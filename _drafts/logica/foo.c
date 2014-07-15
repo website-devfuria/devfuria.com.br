@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <assert.h>
 
-int main() {
+int dobro(int num) {
+    return 2 * num;
+}
 
-    int num, dobro;
+int main (){
     
-    num   = 5;
-    dobro = 2 * num;
-    assert(10 == dobro);
-
-    return 0;
+	assert(10 == dobro(5));
+	assert(12 == dobro(6));
+	return 0;
 }

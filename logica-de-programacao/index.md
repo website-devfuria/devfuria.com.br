@@ -13,10 +13,10 @@ Este curso é diferente de tudo o que você viu sobre lógica (bem diferente daq
 
 Eu parti do pressuposto de que é preciso programar de forma a __separar as responsabilidades__ do código fonte.
 
-__Nada de juntar entrada-processamento-saída__, nada disso, vamos atacar cada problema individualmente.
+Nada de juntar __entrada-processamento-saída__, nada disso, vamos atacar cada problema individualmente.
 
 Além disso, a forma como você está habituado a "testar" seu (pequeno) programa irá mudar. Rodar o software,
-fazer alguns inputs e ver a saída __é a pior forma da se testar um software__, pleo menos do ponto de vista de quem está
+fazer alguns inputs e ver a saída __é um teste pouco prático__, pelo menos do ponto de vista de quem está
 programando.
 
 O ideal é escrever um __teste automático__, ver ele falhar, e codificar apenas o código necessário para ver ele
@@ -26,7 +26,7 @@ Resumindo, __este é um curso de lógica de programação aliado a técnica TDD_
 
 Você precisa ter conhecimento de TDD? Não, nenhum pouco. Eu vou ensinar lógica junto com o TDD (mais lógica do que TDD, rss).
 
-Nós utilizaremos o comando `assert()` para simular um teste. Leia esse parágrafo novamente.
+Nós utilizaremos o comando `assert()` para simular um teste. Eu disse "simular".
 
 Não é para utilizar o `assert()` a torto e direito, Vamos pegá-lo emprestado apenas para simular os testes, só isso!
 
@@ -46,7 +46,8 @@ Exercícios na linguagem C
 ---
 
 <div class="list-group">
-    <a href="/logica-de-programacao/c-dobro/" class="list-group-item">O dobro de um número qualquer</a>
+    <a href="/logica-de-programacao/c-dobro/" class="list-group-item">O dobro de um número qualquer (puramente estruturado)</a>
+    <a href="/logica-de-programacao/c-dobro-func/" class="list-group-item">O dobro de um número qualquer (funções)</a>
 </div> 
 
 
@@ -56,7 +57,7 @@ Exercícios na linguagem C++
 ---
 
 <div class="list-group">
-    <a href="/logica-de-programacao/cpp-calc-dobro/" class="list-group-item">O dobro de um número qualquer</a>
+    <a href="/logica-de-programacao/cpp-calc-dobro/" class="list-group-item">O dobro de um número qualquer (oop)</a>
     <a href="/logica-de-programacao/cpp-area-quadra-cubo/" class="list-group-item">Area quadrada e área cúbica</a>
 </div> 
 
