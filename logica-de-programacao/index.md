@@ -30,9 +30,6 @@ Nós utilizaremos o comando `assert()` para simular um teste. Eu disse "simular"
 
 Não é para utilizar o `assert()` a torto e direito, Vamos pegá-lo emprestado apenas para simular os testes, só isso!
 
-
-Preparei
-
 Não é necessário mas se estiver curioso ou achar que precisa então leia:
 
 - [O que você precisa saber sobre a linguagem C para começar]()

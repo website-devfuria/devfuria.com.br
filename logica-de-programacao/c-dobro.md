@@ -58,13 +58,13 @@ Vamos entender o que fizemos.
 
 Deveríamos ter um número qualquer, mas o melhor que chegamos foi com um número arbitrário.
 
-    num   = 5;
+    num = 5;
 
 O principal de seu programa resume-se em uma única linha.
 
     dobro = 2 * num;
 
-Como eu sei que ela funciona?
+Como eu sei que ele funciona?
 
 Hora, temos um teste confirmando que sua lógica funciona, veja:
     
@@ -97,7 +97,22 @@ int main (){
 {% endhighlight %}
 
 
-Se você duvida que seu código funciona, experimente trocar o valor de `num` por um outro número qualquer.
-(Não esqueça de mudar o teste também).
 
+
+Palavras finais
+---
+
+Para realizar outros testes, experimente trocar o valor de `num` e do teste também.
+
+Isso você fazia nas aulas de lógica, mas com uma significativa diferença. Para testar, você realizava o __input__ dos
+dados e imprimia (__output__) os resultados e, por fim, conferia visualmente.
+
+Eis a grande diferânça! Com os teste você __não__ confere visualmente e __sim__ automaticamente.
+
+Outra coisa, a entrada e a saída do programa confundia-se com a lógica principal (`dobro = 2 * num`).
+
+Com os testes você verá que seu programa ficará muito mais __coeso__, muito mais __claro__, mais __limpo__ e,
+o melhor de tudo, funcioando!
+
+Quem garante que seu código funciona? O teste.
 
