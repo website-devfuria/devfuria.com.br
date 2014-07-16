@@ -30,11 +30,7 @@ Nós utilizaremos o comando `assert()` para simular um teste. Eu disse "simular"
 
 Não é para utilizar o `assert()` a torto e direito, Vamos pegá-lo emprestado apenas para simular os testes, só isso!
 
-Não é necessário mas se estiver curioso ou achar que precisa então leia:
 
-- [O que você precisa saber sobre a linguagem C para começar]()
-- [O que você precisa saber sobre TDD]()
-- [O que você precisa saber sobre o comando `assert()`]()
 
 
 
@@ -42,9 +38,22 @@ Não é necessário mas se estiver curioso ou achar que precisa então leia:
 Exercícios na linguagem C
 ---
 
+__O que você precisa saber sobre a linguagem C para começar:__
+
+- [Introdução a linguagem c (apenas o suficiente para realizarmos os exercícios)]()
+- [Como compilar no Linux]()
+- [Como compilar no Windows]()
+- [Me explica melhor esse negócio de TDD ]()
+- [Entenda o comando `assert()`]()
+- ["Rodando os testes" ou "compilando e executando", socorro ?]()
+
+
+### Exercícios nível 0 (mais fácil que a Seleção Brasileira...)
+
+
+
 <div class="list-group">
     <a href="/logica-de-programacao/c-dobro/" class="list-group-item">O dobro de um número qualquer (puramente estruturado)</a>
-    <a href="/logica-de-programacao/c-dobro-func/" class="list-group-item">O dobro de um número qualquer (funções)</a>
     <a href="/logica-de-programacao/c-area-quadrada/" class="list-group-item">Área quadrada</a>
     <a href="/logica-de-programacao/c-antecessor-sucessor/" class="list-group-item">Antecessor e sucessor de um número qualquer</a>
     <a href="/logica-de-programacao/c-media-simples/" class="list-group-item">Média simples de 3 números</a>
@@ -53,25 +62,35 @@ Exercícios na linguagem C
 </div> 
 
 
+### Exercícios nível 1
 
+
+Em construção (sorry!)
+
+
+### Exercícios nível 2
+
+Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
+
+- [O que você precisa saber sobre funções]()
+
+<div class="list-group">
+    <a href="/logica-de-programacao/c-dobro-func/" class="list-group-item">O dobro de um número qualquer (funções)</a>
+</div> 
 
 Exercícios na linguagem C++
 ---
+
+### O que você precisa saber sobre a linguagem C++ para começar
+
+Faremos todos os exercícios praticando programação orientada a objetos.
+
+Se você não sabe nada sobre orientação a objetos, talvez queira ler...
+
+- [Introdução a Orientação a Objetos, vulgo OOP (o básico do básico)]()
+
 
 <div class="list-group">
     <a href="/logica-de-programacao/cpp-calc-dobro/" class="list-group-item">O dobro de um número qualquer (oop)</a>
     <a href="/logica-de-programacao/cpp-area-quadra-cubo/" class="list-group-item">Area quadrada e área cúbica</a>
 </div> 
-
-
-
-
-
-
-
-
-Veja também
----
-
-- [Site oficial](http://git-scm.com/ "link-externo")
-- [Livro Pro Git, na web e em português](http://git-scm.com/book/pt-br/ "link-externo")
