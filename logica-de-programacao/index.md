@@ -49,6 +49,7 @@ Exercícios na linguagem C
     <a href="/logica-de-programacao/c-antecessor-sucessor/" class="list-group-item">Antecessor e sucessor de um número qualquer</a>
     <a href="/logica-de-programacao/c-media-simples/" class="list-group-item">Média simples de 3 números</a>
     <a href="/logica-de-programacao/c-dias-n-meses/" class="list-group-item">Descobrir os dias de 'n' meses</a>
+    <a href="/logica-de-programacao/c-duas-variaveis/" class="list-group-item">Trocar o valor de duas variáveis</a>
 </div> 
 
 
