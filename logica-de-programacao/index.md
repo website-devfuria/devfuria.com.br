@@ -45,7 +45,8 @@ Exercícios na linguagem C
 <div class="list-group">
     <a href="/logica-de-programacao/c-dobro/" class="list-group-item">O dobro de um número qualquer (puramente estruturado)</a>
     <a href="/logica-de-programacao/c-dobro-func/" class="list-group-item">O dobro de um número qualquer (funções)</a>
-    <a href="/logica-de-programacao/c-area-quadra/" class="list-group-item">Área quadrada</a>
+    <a href="/logica-de-programacao/c-area-quadrada/" class="list-group-item">Área quadrada</a>
+    <a href="/logica-de-programacao/c-antecessor-sucessor/" class="list-group-item">Antecessor e sucessor de um número qualquer</a>
 </div> 
 
 
