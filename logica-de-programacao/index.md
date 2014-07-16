@@ -41,7 +41,7 @@ Exercícios na linguagem C
 __O que você precisa saber sobre a linguagem C para começar:__
 
 - [Introdução a linguagem c (apenas o suficiente para realizarmos os exercícios)]()
-- [Como compilar no Linux]()
+- [Como compilar no Linux](/logica-de-programacao/como-compilar-no-linux/)
 - [Como compilar no Windows]()
 - [Me explica melhor esse negócio de TDD ]()
 - [Entenda o comando `assert()`]()
