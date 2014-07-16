@@ -94,3 +94,23 @@ Se você não sabe nada sobre orientação a objetos, talvez queira ler...
     <a href="/logica-de-programacao/cpp-calc-dobro/" class="list-group-item">O dobro de um número qualquer (oop)</a>
     <a href="/logica-de-programacao/cpp-area-quadra-cubo/" class="list-group-item">Area quadrada e área cúbica</a>
 </div> 
+
+
+
+Veja também
+---
+
+- [Lista (compactada) de todos os exercícios de lógica apresentados]()
+- [Repostas dos exercícios (da lista acima)]()
+
+
+Mas... e o básico sobre lógica de programação?
+---
+
+Eu não expliquei as partes conceituais, o que é DFD, o que é um teste de mesa, pseudocódigo, essa coisas...
+
+Então acho justo deixar alguns links valiosos e que podem lhe ajudar, caso precise "dessas coisas".
+
+- [link 1]( "link-externo")
+- [link 2]( "link-externo")
+- [link 3]( "link-externo")
