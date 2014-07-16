@@ -29,3 +29,6 @@ RewriteRule ^mysql-sql\/basico\/intro\/?$ "http\:\/\/www\.devfuria\.com\.br\/mys
 
 RewriteCond %{HTTP_HOST} ^
 RewriteRule ^flavio.alexandre-micheletti.php "http\:\/\/www\.devfuria\.com\.br\/flavio-alexandre-micheletti.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^
+RewriteRule ^index.php "http\:\/\/www\.devfuria\.com\.br" [R=301,L]
