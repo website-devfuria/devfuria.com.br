@@ -48,6 +48,7 @@ Exercícios na linguagem C
     <a href="/logica-de-programacao/c-area-quadrada/" class="list-group-item">Área quadrada</a>
     <a href="/logica-de-programacao/c-antecessor-sucessor/" class="list-group-item">Antecessor e sucessor de um número qualquer</a>
     <a href="/logica-de-programacao/c-media-simples/" class="list-group-item">Média simples de 3 números</a>
+    <a href="/logica-de-programacao/c-dias-n-meses/" class="list-group-item">Descobrir os dias de 'n' meses</a>
 </div> 
 
 
