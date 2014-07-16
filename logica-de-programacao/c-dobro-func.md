@@ -32,7 +32,7 @@ A solução é bem simples, mas vamos aproveitar para entender melhor esse tal d
 
 O __TDD__ diz que devemos saber dar passos pequenos.
 
-Não quer dizer que devemos dar passos pequenos sempre, mas quando a solução está obscura é bom dar poder dar passos
+Não quer dizer que devemos dar passos pequenos sempre, mas quando a solução está obscura é bom poder dar passos
 pequenos.
 
 É o que vamos fazer agora. Ao invés de "jogar" o resultado (que é bem óbvio) vamos dar passos pequenos.
@@ -55,7 +55,7 @@ Então escrevemos (sempre em passos pequenos):
 
 Os testes passam? Sim? Ótimo.
 
-Agora o resultado ficou mais que óbvio. trocaremos o núemro 5 pela variável `num`.
+Agora o resultado ficou mais que óbvio. Trocaremos o número 5 pela variável `num`.
 
     int dobro(int num) {
         return 2 * num;
@@ -66,9 +66,9 @@ Execute os testes (compile e rode o programa). Eles passaram? Deveriam ter passa
 
 ### O que o TDD nos ensinou ?
 
-1. Que podemos, quando nos sentirmos inseguros, dar passos pequeninos em direção do resultado esperado.
+1. Que podemos, quando nos sentirmos inseguros, dar passos pequeninos em direção ao resultado esperado.
 
-2. Não é preciso pensar tanto na codificação e sim trabalhar em um processo de __tentativa e erro__.
+2. Não é preciso pensar tanto na codificação, mas sim trabalhar em um processo de __tentativa e erro__.
 
 
 ### Para finalizar

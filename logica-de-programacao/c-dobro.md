@@ -111,8 +111,8 @@ Eis a grande diferânça! Com os teste você __não__ confere visualmente e __si
 
 Outra coisa, a entrada e a saída do programa confundia-se com a lógica principal (`dobro = 2 * num`).
 
-Com os testes você verá que seu programa ficará muito mais __coeso__, muito mais __claro__, mais __limpo__ e,
-o melhor de tudo, funcioando!
+Com os testes, você verá que seu programa ficará muito mais __coeso__, muito mais __claro__, mais __limpo__ e,
+o melhor de tudo, funcionando!
 
-Quem garante que seu código funciona? O teste.
+E quem garante que seu código funciona? O teste.
 

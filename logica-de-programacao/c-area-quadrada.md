@@ -51,7 +51,7 @@ Pronto. O código não compila, sabemos disso. Então vamos fazer o mínimo para
 	lado2 = 9;
 	area = lado1 * lado2;
 
-Após compilar, execute para rodar o teste e ver se está tudo funcioando.
+Após compilar, execute para rodar o teste e ver se está tudo funcionando.
 
 
 
