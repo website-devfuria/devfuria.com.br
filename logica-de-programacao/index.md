@@ -65,7 +65,9 @@ __O que você precisa saber sobre a linguagem C para começar:__
 ### Exercícios nível 1
 
 
-Em construção (sorry!)
+<div class="list-group">
+    <a href="/logica-de-programacao/c-custo-carro/" class="list-group-item">Custo de fabricação de um carro</a>
+</div> 
 
 
 ### Exercícios nível 2
