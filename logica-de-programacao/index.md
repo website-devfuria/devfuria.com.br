@@ -67,6 +67,7 @@ __O que você precisa saber sobre a linguagem C para começar:__
 <div class="list-group">
     <a href="/logica-de-programacao/c-custo-carro/" class="list-group-item">Custo de fabricação de um carro</a>
     <a href="/logica-de-programacao/c-juros-simples/" class="list-group-item">Juros simples</a>
+    <a href="/logica-de-programacao/c-salario-reajuste/" class="list-group-item">Reajustando o salário</a>
 </div> 
 
 
