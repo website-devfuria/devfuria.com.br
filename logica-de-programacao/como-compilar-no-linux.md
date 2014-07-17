@@ -7,7 +7,7 @@ description:
 
 Não, não é coisa de outro mundo. Usar c/c++ no Linux é muito fácil.
 
-Obviamente, voê precisará ter o Linux isntalado, nem que seja em uma máquina virtual.
+Obviamente, voê precisará ter o Linux instalado, nem que seja em uma máquina virtual.
 
 Depois o mais importante é o compilador, no caso o __gcc__.
 
