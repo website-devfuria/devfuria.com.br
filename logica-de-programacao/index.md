@@ -48,9 +48,8 @@ __O que você precisa saber sobre a linguagem C para começar:__
 - ["Rodando os testes" ou "compilando e executando", socorro ?]()
 
 
+
 ### Exercícios nível 0 (mais fácil que a Seleção Brasileira...)
-
-
 
 <div class="list-group">
     <a href="/logica-de-programacao/c-dobro/" class="list-group-item">O dobro de um número qualquer (puramente estruturado)</a>
@@ -62,12 +61,15 @@ __O que você precisa saber sobre a linguagem C para começar:__
 </div> 
 
 
-### Exercícios nível 1
 
+### Exercícios nível 1
 
 <div class="list-group">
     <a href="/logica-de-programacao/c-custo-carro/" class="list-group-item">Custo de fabricação de um carro</a>
+    <a href="/logica-de-programacao/c-juros-simples/" class="list-group-item">Juros simples</a>
 </div> 
+
+
 
 
 ### Exercícios nível 2
