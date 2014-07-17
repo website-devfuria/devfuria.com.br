@@ -1,6 +1,7 @@
 ---
 layout: materia
 title: Linux
+description: Tudo o que você precisa saber sobre o Linux!
 ---
 
 Seja bem vindo(a) a seção Linux!

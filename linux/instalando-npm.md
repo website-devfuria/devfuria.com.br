@@ -1,6 +1,7 @@
 ---
 layout: materia
 title: Instalando o npm
+description: Receita de como instalar o npm, o gerenciador de pacotes do node.
 ---
 
 

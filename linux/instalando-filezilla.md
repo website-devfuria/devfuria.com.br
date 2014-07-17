@@ -1,6 +1,7 @@
 ---
 layout: materia
 title: Instalando o Filezilla (FTP)
+description: Aprenda a isntalar o Filezilla no Linux
 ---
 
 O [Filezilla](https://filezilla-project.org/ "link-externo") é um cliente de

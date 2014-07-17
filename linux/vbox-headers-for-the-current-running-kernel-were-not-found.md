@@ -1,6 +1,7 @@
 ---
 layout: materia
 title:  Resolvendo o erro "headers for the current running kernel were not found"
+description: fix error "headers for the current running kernel were not found"
 ---
 
 Ao instalar o __Guest Additions__ para __Virtual Box__ no Linux, as vezes, nos esquecemos de instalar os headers do kernel.

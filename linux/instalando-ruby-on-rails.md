@@ -1,6 +1,7 @@
 ---
 layout: materia
 title: Instalando o Ruby On Rails
+description: Aprenda a instalar a linguagem Ruby tanto via repositório como compilando os fontes
 ---
 
 A instalação do __Ruby__ (tanto via fonte como repositório) deve ser feita em 3 passos:

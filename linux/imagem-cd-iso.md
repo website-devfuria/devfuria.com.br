@@ -1,6 +1,7 @@
 ---
 layout: materia
 title: O que é uma "imagem de CD" ?
+description: O que é um arquivo com extensão .iso?
 ---
 
 ### ... e o que é um arquivo .iso ?

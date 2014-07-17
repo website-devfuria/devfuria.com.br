@@ -1,6 +1,7 @@
 ---
 layout: materia
 title: Instalando o nodejs
+description: Veja 3 formas de instalar o nodejs no Linux
 ---
 
 Eu descobri 3 formas de instalar o __nodejs__ no Debian:

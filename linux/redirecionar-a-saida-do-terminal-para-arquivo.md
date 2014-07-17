@@ -1,6 +1,7 @@
 ---
 layout:  materia
 title:   Como redirecionar as saida do terminal (mysql) para um arquivo
+description: Descubra como fazer para salvar seus comandos sql em um arquivo qualquer
 ---
 
 Imagina que você queira executar um comando no terminal (mysql) do Linux e em seguida guardar a resposta em um arquivo qualquer.

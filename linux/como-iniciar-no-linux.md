@@ -1,6 +1,7 @@
 ---
 layout: materia
 title: Como iniciar no Linux
+descriptin: Decubra como começar no Linux sem mistérios.
 ---
 
 Gostaria de lhe dizer que usar o __Linux__ é fácil, mas não é (embora isso seja muito relativo). Mas posso garantir que é

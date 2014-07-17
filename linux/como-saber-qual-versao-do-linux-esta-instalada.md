@@ -1,6 +1,7 @@
 ---
 layout:  materia
 title:   Como saber qual versão do Linux está instalada
+description: Comando que mostra qual é a versão do Linux
 ---
 
 
