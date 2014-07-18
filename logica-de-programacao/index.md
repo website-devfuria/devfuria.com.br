@@ -83,6 +83,7 @@ Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
 <div class="list-group">
     <a href="/logica-de-programacao/c-dobro-func/" class="list-group-item">O dobro de um número qualquer (funções)</a>
     <a href="/logica-de-programacao/c-positivo/" class="list-group-item">Valor positivo ou negativo</a>
+    <a href="/logica-de-programacao/c-maior-que-dez/" class="list-group-item">Maior que 10</a>
 </div> 
 
 Exercícios na linguagem C++
