@@ -96,7 +96,7 @@ Faremos todos os exercícios praticando programação orientada a objetos.
 
 Se você não sabe nada sobre orientação a objetos, talvez queira ler...
 
-- [Introdução a Orientação a Objetos, vulgo OOP (o básico do básico)]()
+- [O básico do básico sobre Orientação a Objetos (vulgo OOP)]()
 
 
 <div class="list-group">
@@ -104,13 +104,6 @@ Se você não sabe nada sobre orientação a objetos, talvez queira ler...
     <a href="/logica-de-programacao/cpp-area-quadra-cubo/" class="list-group-item">Area quadrada e área cúbica</a>
 </div> 
 
-
-
-Veja também
----
-
-- [Lista (compactada) de todos os exercícios de lógica apresentados]()
-- [Repostas dos exercícios (da lista acima)]()
 
 
 Mas... e o básico sobre lógica de programação?
