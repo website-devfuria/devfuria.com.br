@@ -38,7 +38,7 @@ Não é para utilizar o `assert()` a torto e direito, Vamos pegá-lo emprestado 
 Exercícios na linguagem C
 ---
 
-__O que você precisa saber sobre a linguagem C para começar:__
+O que você precisa saber sobre a linguagem C para começar:
 
 - [Introdução a linguagem c (apenas o suficiente para realizarmos os exercícios)]()
 - [Como compilar no Linux](/logica-de-programacao/como-compilar-no-linux/)
@@ -82,12 +82,13 @@ Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
 
 <div class="list-group">
     <a href="/logica-de-programacao/c-dobro-func/" class="list-group-item">O dobro de um número qualquer (funções)</a>
+    <a href="/logica-de-programacao/c-positivo/" class="list-group-item">Valor positivo ou negativo</a>
 </div> 
 
 Exercícios na linguagem C++
 ---
 
-### O que você precisa saber sobre a linguagem C++ para começar
+O que você precisa saber sobre a linguagem C++ para começar
 
 Faremos todos os exercícios praticando programação orientada a objetos.
 
