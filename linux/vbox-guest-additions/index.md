@@ -64,6 +64,7 @@ Reinicie a máquina.
 Veja também
 ---
 
+- [Compartilhando pastas no Virtual Box ](/linux/vbox-compartilhando-pastas/ "Compartilhando pastas no Virtual Box")
 - [Resolvendo o erro "Building the OpenGL support module"](/linux/vbox-building-the-opengl-support-module/ "Resolvendo o erro 'Building the OpenGL support module'")
 - [Resolvendo o erro "headers for the current running kernel were not found"](/linux/vbox-headers-for-the-current-running-kernel-were-not-found/ "Resolvendo o erro 'headers for the current running kernel were not found'")
 

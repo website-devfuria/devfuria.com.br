@@ -40,6 +40,7 @@ How-to-now - pequeno guia de "saber como fazer"
 
 <div class="list-group">
     <a href="/linux/vbox-guest-additions/" class="list-group-item">Como instalar o GuestAdditions (CentOS)</a>
+    <a href="/linux/vbox-compartilhando-pastas/" class="list-group-item">Compartilhando pastas no Virtual Box</a>
     <a href="/linux/gnome-screenshot/" class="list-group-item">Como tirar um screenshot (CentOS)</a>
     <a href="/linux/como-saber-qual-versao-do-linux-esta-instalada/" class="list-group-item">Como saber qual versão do Linux está instalada</a>
     <a href="/linux/redirecionar-a-saida-do-terminal-para-arquivo/" class="list-group-item">Como redirecionar as saida do terminal (mysql) para um arquivo</a>
