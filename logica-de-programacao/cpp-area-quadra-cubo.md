@@ -4,8 +4,8 @@ title:       Área quadrada e área cúbica - linguagem c++"
 description: Exercício de lógica de programação resolvido cujo objetivo é, com o auxílio de classes, encontrar a área quadra e cúbica.
 ---
 
-__Seu objetivo é construir uma classe denominada `Area` que calcule tanto a área quadrada (primeiro método) como a
-área cúbica (segundo método).__
+Seu objetivo é construir uma classe denominada `Area` que calcule tanto a área quadrada (primeiro método) como a
+área cúbica (segundo método).
 
 
 Solução passo a passo

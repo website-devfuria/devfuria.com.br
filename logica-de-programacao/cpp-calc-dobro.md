@@ -1,10 +1,10 @@
 ---
 layout:      materia
 title:       "O dobro de um número qualquer - linguagem c++"
-description: Exercício de lógica de programação reoslvido. O objetivo é criar uma classe para calcular o dobro de um número qualquer.
+description: Exercício de lógica de programação resolvido. O objetivo é criar uma classe para calcular o dobro de um número qualquer.
 ---
 
-__Seu objetivo é fazer uma classe denominada `Calc` com um método que retorne o dobro de um número.__
+Seu objetivo é fazer uma classe denominada `Calc` com um método que retorne o dobro de um número.
 
 
 Solução passo a passo
