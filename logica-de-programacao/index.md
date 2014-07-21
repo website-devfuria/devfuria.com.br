@@ -52,7 +52,7 @@ O que você precisa saber sobre a linguagem C para começar:
 ### Exercícios nível 0 (mais fácil que a Seleção Brasileira...)
 
 <div class="list-group">
-    <a href="/logica-de-programacao/c-dobro/" class="list-group-item">O dobro de um número qualquer (puramente estruturado)</a>
+    <a href="/logica-de-programacao/c-dobro/" class="list-group-item">O dobro de um número qualquer</a>
     <a href="/logica-de-programacao/c-area-quadrada/" class="list-group-item">Área quadrada</a>
     <a href="/logica-de-programacao/c-antecessor-sucessor/" class="list-group-item">Antecessor e sucessor de um número qualquer</a>
     <a href="/logica-de-programacao/c-media-simples/" class="list-group-item">Média simples de 3 números</a>
@@ -102,6 +102,7 @@ Se você não sabe nada sobre orientação a objetos, talvez queira ler...
 <div class="list-group">
     <a href="/logica-de-programacao/cpp-calc-dobro/" class="list-group-item">O dobro de um número qualquer (oop)</a>
     <a href="/logica-de-programacao/cpp-area-quadra-cubo/" class="list-group-item">Area quadrada e área cúbica</a>
+    <a href="/logica-de-programacao/cpp-antecessor-sucessor/" class="list-group-item">Antecessor e sucessor de um número qualquer (oop)</a>
 </div> 
 
 
