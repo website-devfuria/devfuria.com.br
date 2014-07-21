@@ -115,6 +115,9 @@ Eu não expliquei as partes conceituais, o que é DFD, o que é um teste de mesa
 
 Então acho justo deixar alguns links valiosos e que podem lhe ajudar, caso precise "dessas coisas".
 
-- [link 1]( "link-externo")
-- [link 2]( "link-externo")
-- [link 3]( "link-externo")
+
+
+- [PDF de professor da USP ](http://www.ime.usp.br/~slago/pl-1.pdf "link-externo")
+- [PDF da Federal de RG](http://www.dca.ufrn.br/~affonso/DCA800/pdf/algoritmos_parte1.pdf "link-externo")
+- [Sequencia de videos sobre Lógica](http://www.cursou.com.br/informatica/curso-logica-de-programacao/ "link-externo")
+ (Não recomendado caso você já esteja com sôno)
