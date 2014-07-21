@@ -4,9 +4,10 @@ title:       "Trocar o valor de duas variáveis - linguagem c"
 description: Exercício de lógica de programação para trocar o valor de duas variáveis.
 ---
 
-__Escreva um algoritmo que armazene o valor 999 na variável `a` e o valor 555 na variável `b`.__
-__A seguir (utilizando apenas atribuições entre variáveis) troque os seus conteúdos__
-__fazendo com que o valor que está em `a` passe para `b` e vice-versa.__
+Escreva um algoritmo que armazene o valor 999 na variável `a` e o valor 555 na variável `b`.
+
+A seguir (utilizando apenas atribuições entre variáveis) troque os seus conteúdos
+fazendo com que o valor que está em `a` passe para `b` e vice-versa.
 
 
 

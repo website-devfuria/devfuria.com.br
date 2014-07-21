@@ -4,8 +4,8 @@ title:       "Área quadrada - linguagem c"
 description: Exercício de lógica de programação resolvido onde o objetivo é encontrar a área quadrada.
 ---
 
-__Sabendo que a área quadrada é dada pela multiplicação dos lados, escreva um algoritmo que mostre a área quadrada de
-um espaço qualquer.__
+Sabendo que a área quadrada é dada pela multiplicação dos lados, escreva um algoritmo que mostre a área quadrada de
+um espaço qualquer.
 
 Exemplo:
 

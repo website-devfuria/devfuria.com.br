@@ -4,7 +4,7 @@ title:       "O dobro de um número qualquer - linguagem c"
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular o dobro de um número qualquer.
 ---
 
-__Faça um programa que calcule o dobro de um número.__
+Faça um programa que calcule o dobro de um número.
 
 
 

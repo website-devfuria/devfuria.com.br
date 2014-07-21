@@ -6,7 +6,7 @@ description: Exercício de lógica de programação resolvido onde o objetivo é
 
 
 
-__Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.__
+Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.
 
 
 

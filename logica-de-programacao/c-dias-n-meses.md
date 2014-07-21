@@ -5,7 +5,7 @@ description: Exercício de lógica de programação para descobrir os dias de n 
 ---
 
 
-__Considerando que todos os meses tenham 30 dias, calcular o total de dias de n meses.__
+Considerando que todos os meses tenham 30 dias, calcular o total de dias de n meses.
 
 
 

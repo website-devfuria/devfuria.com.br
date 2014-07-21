@@ -6,9 +6,9 @@ description: Exercício de lógica de programação resolvido onde o objetivo é
 
 
 
-__Faça um programa que calcule a média simples (aritmética) de 3 valores quaisquer.__
+Faça um programa que calcule a média simples (aritmética) de 3 valores quaisquer.
 
-__Utilize as variáveis `valor1`, `valor2` e `valor3`.__
+Utilize as variáveis `valor1`, `valor2` e `valor3`.
 
 
 
