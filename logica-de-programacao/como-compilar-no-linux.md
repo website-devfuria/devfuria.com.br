@@ -13,17 +13,17 @@ Depois o mais importante é o compilador, no caso o __gcc__.
 
 Para instalar é muito fácil.
 
-    apt-get install gcc // Ubunto, Debian
-    yum install         // Fedora, Centos
+    apt-get install gcc  // Ubunto, Debian
+    yum install gcc      // Fedora, Centos
 
 
 
 Editor de texto
 ---
 
-Esse também não pode faltar. O __gedit__ é o editor de texto padrão em diversão distro, quer dizer nem precisa instalar.
+Esse também não pode faltar. O __gedit__ é o editor de texto padrão em diversas distro's, quer dizer nem precisa instalar.
 
-É como se fosse __notpad__ só que muito, muuiiito melhor.
+É como se fosse __notpad__ só que muito, muuuuiiiito melhor.
 
 
 
@@ -36,13 +36,15 @@ A linha de comando que compila é essa:
 
 Vamos quebrá-la para entendê-la.
 
-    gcc seucodigo.c    // compile o código  
+    gcc seucodigo.c      // compile o código  
     -o seuprograma.run   // e gere o arquivo binário (executável)
 
 
 A extensão `run` é facultativa. Quero dizer, posso colocar qualquer coisa.
 
 O Linux não é como o Windows, no Linux não precisa nem de extensão, ok?
+
+Ao invés de `.run` poderia ser `.exe`, `.bin` ou poderia até não ter extensão alguma.
 
 
 Executando
@@ -54,7 +56,7 @@ Como executar um arquivo binário (executável) no Linux ?
 
 
 
-Código para minimalista para teste
+Código minimalista para teste
 ---
 
 Experimente compilar este código.
@@ -65,7 +67,7 @@ Experimente compilar este código.
 
 Esse é o menor código na __linguagem c__ possível de ser compilado.
 
-Por ser minusculo, você não conseguirá fazer nada com ele, então vamos dar um "up".
+Por ser minúsculo, você não conseguirá fazer nada com ele, então vamos dar um "up".
 
     #include <stdio.h>
 
