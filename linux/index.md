@@ -1,6 +1,6 @@
 ---
-layout: materia
-title: Linux
+layout:      materia
+title:       Linux
 description: Tudo o que você precisa saber sobre o Linux!
 ---
 
@@ -19,6 +19,7 @@ Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o p
 Aqui, mantenho um guia prático de instalações de aplicativos para Linux.
 
 <div class="list-group">
+    <a href="/linux/instalando-putty/" class="list-group-item">Instalando o putty (acesso remoto)</a>
     <a href="/linux/instalando-django/" class="list-group-item">Instalando o Django (python)</a>
     <a href="/linux/instalando-pip/" class="list-group-item">Instalando o pip (gerenciados de pacotes do python)</a>
     <a href="/linux/instalando-git/" class="list-group-item">Instalando o git</a>
@@ -39,6 +40,7 @@ How-to-now - pequeno guia de "saber como fazer"
 ---
 
 <div class="list-group">
+    <a href="/linux/como-acessar-servidor-remotamente/" class="list-group-item">SSH - acessando o Linux remotamente</a>
     <a href="/linux/vbox-guest-additions/" class="list-group-item">Como instalar o GuestAdditions (CentOS)</a>
     <a href="/linux/vbox-compartilhando-pastas/" class="list-group-item">Compartilhando pastas no Virtual Box</a>
     <a href="/linux/gnome-screenshot/" class="list-group-item">Como tirar um screenshot (CentOS)</a>
