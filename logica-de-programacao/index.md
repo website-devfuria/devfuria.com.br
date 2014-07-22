@@ -73,7 +73,6 @@ O que você precisa saber sobre a linguagem C para começar:
 
 
 
-
 ### Exercícios nível 2
 
 Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
@@ -85,6 +84,7 @@ Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
     <a href="/logica-de-programacao/c-positivo/" class="list-group-item">Valor positivo ou negativo</a>
     <a href="/logica-de-programacao/c-maior-que-dez/" class="list-group-item">Maior que 10</a>
     <a href="/logica-de-programacao/c-operacoes-mat/" class="list-group-item">Funções para as 4 operações artiméticas</a>
+    <a href="/logica-de-programacao/c-celsius-fahrenheit/" class="list-group-item">Conversor Celsius/Fahrenheit</a>
 </div> 
 
 Exercícios na linguagem C++
