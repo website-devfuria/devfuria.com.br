@@ -85,6 +85,7 @@ Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
     <a href="/logica-de-programacao/c-maior-que-dez/" class="list-group-item">Maior que 10</a>
     <a href="/logica-de-programacao/c-operacoes-mat/" class="list-group-item">Funções para as 4 operações artiméticas</a>
     <a href="/logica-de-programacao/c-celsius-fahrenheit/" class="list-group-item">Conversor Celsius/Fahrenheit</a>
+    <a href="/logica-de-programacao/c-equacao-2grau/" class="list-group-item">Equação de 2 grau</a>
 </div> 
 
 Exercícios na linguagem C++
