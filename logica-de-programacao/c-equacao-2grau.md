@@ -4,7 +4,7 @@ title:       "Equação de 2 grau - linguagem c"
 description: Exercício de lógica de programação - bhaskar.
 ---
 
-Utilizando funções, faça um programa que calcule as raízes da equação do 2 grau comforme a fórmula de Bhaskar.
+Utilizando funções, faça um programa que calcule as raízes da equação do 2 grau conforme a fórmula de Bhaskar.
 
 Lembrando:
 
