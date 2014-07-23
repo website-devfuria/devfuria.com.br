@@ -45,7 +45,7 @@ O que você precisa saber sobre a linguagem C para começar:
 - [Como compilar no Linux](/logica-de-programacao/como-compilar-no-linux/)
 - [Como compilar no Windows]()
 - [Me explica melhor esse negócio de TDD ]()
-- [Entenda o comando `assert()`]()
+- [Entenda a função `assert()`](/logica-de-programacao/entendendo-o-assert-c/)
 - ["Rodando os testes" ou "compilando e executando", socorro ?]()
 
 
