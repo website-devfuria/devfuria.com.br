@@ -1,6 +1,7 @@
 ---
-layout: materia
-title: Lógica de programação
+layout:     materia
+title:      Lógica de programação
+decription: Tudo o que você precisa para aprender lógica de programção
 ---
 
 Seja bem vindo(a) a seção Lógica de programação!

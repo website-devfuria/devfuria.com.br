@@ -1,7 +1,7 @@
 ---
 layout:      materia
 title:       "Votos em relação ao total de eleitores- linguagem c"
-description: Exercício de lógica de programação onde calculamos o percentual de votos em relação ao total de eleitores.
+description: Exercício de lógica de programação onde calculamos o porcentual de votos em relação ao total de eleitores.
 ---
 
 Considerando a tabela abaixo...
