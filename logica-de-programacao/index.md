@@ -1,7 +1,7 @@
 ---
-layout:     materia
-title:      Lógica de programação
-decription: Tudo o que você precisa para aprender lógica de programção
+layout:      materia
+title:       "Lógica de programação"
+description: Tudo o que você precisa para aprender lógica de programação
 ---
 
 Seja bem vindo(a) a seção Lógica de programação!
@@ -46,7 +46,7 @@ O que você precisa saber sobre a linguagem C para começar:
 - [Como compilar no Windows]()
 - [Me explica melhor esse negócio de TDD ]()
 - [Entenda a função `assert()`](/logica-de-programacao/entendendo-o-assert-c/)
-- ["Rodando os testes" ou "compilando e executando", socorro ?]()
+- ["Rodando os testes" ou "compilando e executando", socorro ?](/logica-de-programacao/rodando-os-testes/)
 
 
 
