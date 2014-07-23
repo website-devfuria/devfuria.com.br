@@ -34,8 +34,6 @@ Não é para utilizar o `assert()` a torto e direito, Vamos pegá-lo emprestado 
 
 
 
-
-
 Exercícios na linguagem C
 ---
 
@@ -44,7 +42,7 @@ O que você precisa saber sobre a linguagem C para começar:
 - [Introdução a linguagem c (apenas o suficiente para realizarmos os exercícios)]()
 - [Como compilar no Linux](/logica-de-programacao/como-compilar-no-linux/)
 - [Como compilar no Windows]()
-- [Me explica melhor esse negócio de TDD ]()
+- [Uma breve noção sobre o que é TDD](/logica-de-programacao/o-que-e-tdd/)
 - [Entenda a função `assert()`](/logica-de-programacao/entendendo-o-assert-c/)
 - ["Rodando os testes" ou "compilando e executando", socorro ?](/logica-de-programacao/rodando-os-testes/)
 
@@ -88,6 +86,9 @@ Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
     <a href="/logica-de-programacao/c-celsius-fahrenheit/" class="list-group-item">Conversor Celsius/Fahrenheit</a>
     <a href="/logica-de-programacao/c-equacao-2grau/" class="list-group-item">Equação de 2 grau</a>
 </div> 
+
+
+
 
 Exercícios na linguagem C++
 ---
