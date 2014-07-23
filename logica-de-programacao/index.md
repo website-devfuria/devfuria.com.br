@@ -39,7 +39,7 @@ Exercícios na linguagem C
 
 O que você precisa saber sobre a linguagem C para começar:
 
-- [Introdução a linguagem c (apenas o suficiente para realizarmos os exercícios)]()
+- [Rápida introdução a linguagem C (apenas o suficiente para realizarmos os exercícios)](/logica-de-programacao/introducao-linguagem-c/)
 - [Como compilar no Linux](/logica-de-programacao/como-compilar-no-linux/)
 - [Como compilar no Windows]()
 - [Uma breve noção sobre o que é TDD](/logica-de-programacao/o-que-e-tdd/)
