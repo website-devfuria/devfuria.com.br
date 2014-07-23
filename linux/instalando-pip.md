@@ -46,7 +46,7 @@ Mas no meu caso, ele perdeu a referência para o arquivo, veja a mensagem de err
 Por isso não aconselho a atualizar o __pip__ (pelo menos não no Debian wheezy).
 
 
-Se você encontrou o mesmo problema, fique tranquilo, nada que um `apt-get remove pip` e um `apt-get install pip` na sequencia
+Se você encontrou o mesmo problema, fique tranquilo, nada que um `apt-get remove pip` e um `apt-get install pip` na sequência
 não resolvam.
 
 

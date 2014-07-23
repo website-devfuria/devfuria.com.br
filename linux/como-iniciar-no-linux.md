@@ -58,7 +58,7 @@ Se traçarmos a minha linha de tempo teremos:
 
     Ubuntu -> Kubuntu -> Fedora -> CentoOs
 
-Essa sequencia funcionou comigo, não posso afirmar que isso vai funcionar com você, mas fica aí a sugestão.
+Essa sequência funcionou comigo, não posso afirmar que isso vai funcionar com você, mas fica aí a sugestão.
 
 Leia mais sobre em [http://www.hardware.com.br/tutoriais/arvore-genealogica-linux/](http://www.hardware.com.br/tutoriais/arvore-genealogica-linux/ "link-externo")
 
