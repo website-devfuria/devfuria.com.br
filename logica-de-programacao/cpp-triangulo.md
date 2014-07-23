@@ -57,7 +57,7 @@ Vamos criar a estrutura primeiro.
         return 0;
     }
 
-O códiog compila mas o teste não passa (red).
+O código compila mas o teste não passa (red).
 
 Agora é só implementar o método `ehTriangulo`
 
@@ -104,8 +104,8 @@ int main() {
 Um mês depois...
 ---
 
-Se chefe vou para você e diz que "o programa __também__ deverá informar se os valores formam um triângulo equilátero, 
-isósceles ou escaleno". Além disso, ele entrega a você as seguintes regras:
+Seu chefe olha para você e diz que "o programa __também__ deverá informar se os valores formam um triângulo equilátero, 
+isósceles ou escaleno" e entrega a você as seguintes regras:
 
 - Triângulo Equilátero: três lados iguais;
 - Triângulo Isósceles: quaisquer dois lados iguais;
@@ -116,12 +116,12 @@ OK, vamos alterar a classe `Triangulo` para acomodar as novas funcionalidades.
 Mas lembre-se que se passaram um mês e como sua equipe é grande, estamos preocupado se alguém mexeu no seu código.
 
 Você poderia olhar os logs do sistema de versionamento, mas de qualquer forma fica a pergunta: "será que o código ainda está
-funcioando? Será que niguém o quebrou?".
+funcioando? Será que ninguém o quebrou?".
 
 Pergunte para os testes! Como? Rode os testes, se eles passarem (green) seu sistema funciona e você poderá trabalhar
 tranquilamente.
 
-Aqui entra uma lição importante de __TDD__ (ou talvez testes unitários): antes de mexer no código rode os testes.
+Uma lição importante de __TDD__ (ou talvez testes unitários): antes de mexer no código rode os testes.
 
 Crie este hábito.
 
@@ -138,7 +138,6 @@ Olhando o teste já escrito, eu percebo que os valores compõem um triangulo esc
         tri.c = 5;
         assert(tri.ehEscaleno());
     }
-
 
     int main() {
         testEhTriangulo();
@@ -162,8 +161,8 @@ Ops... retorna sim e o valor está sendo considerado como verdadeiro. Isso é si
 2. Precisaremos, em breve, descobrir um bom framework de testes.
 3. Nosso conhecimento sobre a linguagem não parece muito bom.
 
-As 3 afirmações acima, são verdadeiras. Mas pensando que nosso objetivo primario é lógica de programação e não
-conhecer a fundo os detalhes da linguagem __c__/__c++__ seguiremos em frente apeasr do incômodo.
+As 3 afirmações acima, são verdadeiras. Mas pensando que nosso objetivo primário é __lógica de programação__ e não
+conhecer a fundo os detalhes da linguagem __c__/__c++__, seguiremos em frente apesar do incômodo.
 
 Vamos dar um pequeno passo (baby step).
 
@@ -191,7 +190,6 @@ O escaleno foi fácil. Encorajado, corri para o isósceles...
         bool ehIsosceles() {
             return true;
         }
-
 
     };
 
@@ -279,7 +277,9 @@ Com os testes no vermelho, tentei...
         }
     }
 
-E tudo passou (green).  Fui para o equilátero (3 lados iguais). 
+E tudo passou (green).
+
+Fui para o equilátero (3 lados iguais). 
 
 Pô, esse é o inverso do escaleno. Darei uma passo grande, eis o teste:
 

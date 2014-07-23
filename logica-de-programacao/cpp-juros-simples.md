@@ -12,8 +12,8 @@ Onde:
 
     J = juros,
     C = capital,
-    i = taxa de empréstimo e
-    n = períodos.
+    i = taxa de empréstimo
+    n = períodos
 
 Utilize orientação a objetos para resolver o problema.
 

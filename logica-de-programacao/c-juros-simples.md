@@ -12,8 +12,8 @@ Onde:
 
     J = juros,
     C = capital,
-    i = taxa de empréstimo e
-    n = períodos.
+    i = taxa de empréstimo
+    n = períodos
 
 
 Solução passo a passo
