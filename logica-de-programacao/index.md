@@ -88,6 +88,17 @@ Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
 </div> 
 
 
+### Exercícios nível 4
+
+Utilizaremos vetores! Se você não sabe nada sobre vetores é melhor ler...
+
+- [O que você precisa saber sobre vetores]()
+
+<div class="list-group">
+    <a href="/logica-de-programacao/c-vetor-simples/" class="list-group-item">Vetor simples</a>
+</div> 
+
+
 
 
 Exercícios na linguagem C++
