@@ -95,9 +95,9 @@ Utilizaremos vetores! Se você não sabe nada sobre vetores é melhor ler...
 - [O que você precisa saber sobre vetores]()
 
 <div class="list-group">
-    <a href="/logica-de-programacao/c-vetor-simples/" class="list-group-item">Vetor simples</a>
-    <a href="/logica-de-programacao/c-vetor-soma/" class="list-group-item">Função para somar vetor</a>
-    <a href="/logica-de-programacao/c-vetor-copia/" class="list-group-item">Vetor cópia</a>
+    <a href="/logica-de-programacao/c-vetor-simples/" class="list-group-item">Vetor simples - algoritmo para carregar um vetor</a>
+    <a href="/logica-de-programacao/c-vetor-soma/" class="list-group-item">Vetor soma - função para somar vetor</a>
+    <a href="/logica-de-programacao/c-vetor-copia/" class="list-group-item">Vetor cópia - algorítimo para copiar um vetor</a>
     <a href="/logica-de-programacao/c-vetor-maior-menor-indice/" class="list-group-item">Maior e menor índice do vetor</a>
 </div> 
 
