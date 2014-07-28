@@ -88,6 +88,16 @@ Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
 </div> 
 
 
+### Exercícios nível 3
+
+Exercícios um pouco mais elaborados. Utilizaremos função e provavelmente laços de repetição.
+
+- [O que você precisa saber sobre laços de repetição]()
+
+<div class="list-group">
+    <a href="/logica-de-programacao/c-primo/" class="list-group-item">Número primo</a>
+</div> 
+
 ### Exercícios nível 4
 
 Utilizaremos vetores! Se você não sabe nada sobre vetores é melhor ler...
