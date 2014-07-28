@@ -36,7 +36,7 @@ Aqui, mantenho um guia prático de instalações de aplicativos para Linux.
 
 
 
-How-to-now - pequeno guia de "saber como fazer"
+Know how to - pequeno guia de "saber como fazer"
 ---
 
 <div class="list-group">
@@ -50,7 +50,7 @@ How-to-now - pequeno guia de "saber como fazer"
 </div> 
 
 
-What it is this - para esclarecer dúvidas frequentes
+What is this - para esclarecer dúvidas frequentes
 ---
 
 <div class="list-group">
