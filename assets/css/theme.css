@@ -125,11 +125,14 @@ h2 {
 h3 {
     margin-top:3em;
 }
+.text-left {text-align: left}
+.text-right {text-align: right}
 @media screen and (min-width: 914px) {
    body {
       width: 960px;
    }
 }
+
 
 
 
