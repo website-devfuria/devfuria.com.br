@@ -57,6 +57,7 @@ description: Python - listas
     (p == p[:6])  # True
     (p == p[:])   # True
 
+Veja também Advanced Topics in Python 7/18
 
 
 ### append()
@@ -163,3 +164,9 @@ Semelhante a utilização de `del()`:
             print a
         else:
             print b
+
+
+
+### Avançado
+
+Advanced Topics in Python 4/18

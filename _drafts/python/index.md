@@ -6,6 +6,20 @@ description: Python
 
 Título: Descubra a sintaxe de Python (colocar menu esquerdo)
 
+
+Variáveis
+---
+
+Uma variável não pode ser utilizada em uma expressão sem ter sido inicializada
+
+Não existe “criação automática” de variáveis
+
+### Atribuição
+
+    reais = euros * taxa
+
+
+
 Saídas
 ---
 
@@ -58,12 +72,43 @@ Entradas
     "and your favorite color is %s." % (name, quest, color)
 
 
-Tipos
+Tipos de dados básicos
 ---
 
-### Booleanos
-
-    `True` ou `False`
+<table>
+    <tr>
+        <th class="text-right">Números: </th>
+        <td>int, long, float, complex</td>
+    </tr>
+    <tr>
+        <th class="text-right">Strings: </th>
+        <td>str e unicode</td>
+    </tr>
+    <tr>
+        <th class="text-right">Listas e tuplas: </th>
+        <td>list, tuple</td>
+    </tr>
+    <tr>
+        <th class="text-right">Dicionários: </th>
+        <td>dict</td>
+    </tr>
+    <tr>
+        <th class="text-right">Arquivos: </th>
+        <td>file</td>
+    </tr>
+    <tr>
+        <th class="text-right">Booleanos: </th>
+        <td>bool (True, False)</td>
+    </tr>
+    <tr>
+        <th class="text-right">Conjuntos: </th>
+        <td>set, frozenset</td>
+    </tr>
+    <tr>
+        <th class="text-right">None: </th>
+        <td></td>
+    </tr>
+</table>
 
 
 Endentação
@@ -418,4 +463,114 @@ Dicionários (dictionaries)
 </div>
 
 
-Advanced Topics in Python 4/18
+
+Lambdas
+---
+
+Advanced Topics in Python 12/18
+
+
+
+OOP - Programação Orientada a Objetos
+---
+
+
+
+    class Foo(object):
+        pass
+
+<hr>
+    class Triangle(object):
+        def __init__(self, angle1, angle2, angle3):
+            self.angle1 = angle1
+            self.angle2 = angle2
+            self.angle3 = angle3
+
+
+<hr>
+    class Triangle(object):
+
+        number_of_sides = 3
+
+        def __init__(self, angle1, angle2, angle3):
+            self.angle1 = angle1
+            self.angle2 = angle2
+            self.angle3 = angle3
+
+        def soma_triangulo(self):
+            return self.angle1 + self.angle2 + self.angle3
+
+        def check_angles(self):
+            if(self.soma_triangulo() == 180):
+                return True
+            else:
+                return False
+
+
+<hr>
+    class Animal(object):
+        def __init__(self, name):
+            self.name = name
+
+    zebra = Animal("Jeffrey")
+    print zebra.name
+
+
+<hr>
+    class Animal(object):
+        """Makes cute animals."""
+        is_alive = True
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+        # Add your method here!
+        def description(self):
+            print self.name
+            print self.age
+
+    hippo = Animal("me", 999);
+    hippo.description()
+
+
+
+### Herança
+
+    class Shape(object):
+        """Makes shapes!"""
+        def __init__(self, number_of_sides):
+            self.number_of_sides = number_of_sides
+
+    # Add your Triangle class below!
+    class Triangle(Shape):
+        def __init__(self, side1, side2, side3):
+           self.side1 = side1
+           self.side2 = side2
+           self.side3 = side3
+
+
+Blocos
+---
+
+
+Todos os comandos que aceitam blocos:
+
++ if/elif/else
++ for/else
++ while/else
++ def
++ try/except  /finally/else
++ class
++ with
+
+Se o bloco tem apenas um comando, pode-se escrever tudo em uma linha:
+
+    if n < 0: print 'Valor inválido'
+
+
+
+
+<hr>
+### Fontes
+
+- [Python:apresentando a sintaxe (Luciano Ramalho, PDF de slides)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf"link-externo")
+- []("link-externo")
