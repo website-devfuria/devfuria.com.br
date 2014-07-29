@@ -1,8 +1,11 @@
-Fedora 18, Aptana
+---
+layout:      materia
+title:       Instalando Aptana no Fedora
+description: Aprenda como instalar o Aptana no Fedora
+---
 
 
-
-Realize o download do Aptana por meio do site e extraia na pasta home
+Realize o download do __Aptana__ por meio do site e extraia na pasta home
 	
 	# www.aptana.org/products/studio3/download 
 
@@ -22,7 +25,6 @@ Insira a seguinte linhha no arquivo:
 
 	# PATH=$PATH:/usr/local/bin/Aptana_Studio_3 
 
-
 Para adicionar um ícone, vá até o seguinte caminho:
 
 	# cd /usr/share/applications 
@@ -40,15 +42,6 @@ Adicione no arquivo:
 	Type=Application Categories=Development 
 
 
-Fonte:
+### Fontes:
 
-* http://stackoverflow.com/questions/10607534/aptana-studio-3-install-using-yum
-
-
-
-
-
-
-
-
-
+- [http://stackoverflow.com/questions/10607534/aptana-studio-3-install-using-yum](http://stackoverflow.com/questions/10607534/aptana-studio-3-install-using-yum "link-externo")
