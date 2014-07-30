@@ -110,6 +110,16 @@ Tipos de dados básicos
     </tr>
 </table>
 
+    type("text") # <type 'text'>
+
+    type(1)      # <type 'int'>
+
+    type(0.99)   # <type 'float'>
+
+    type(1) == int      # True
+
+    type(0.99) == float # True
+
 
 Endentação
 ---
@@ -176,6 +186,21 @@ Operadores matemáticos
     5 % 2 = 1
 
 
+Funções Matemáticas
+---
+
+    max(5, 6, 7) # 7
+
+    min(5, 6, 7) # 5
+
+    abs(-1) # 1
+
+
+Números randômicos
+---
+
+    import random
+    random.randint(1, 10)
 
 
 Strings
@@ -185,6 +210,13 @@ Strings
 
     "Spam " + "and" + " eggs"
     "The value of pi is around " + str(3.14)
+
+
+### Escapando caracteres (scape)
+
+    'There's a snake in my boot!'
+
+    'There\'s a snake in my boot!'
 
 
 ### Métodos básicos de string
@@ -217,14 +249,7 @@ Strings
 </tr>
 </table>
 
-
-
-### Escapando caracteres (scape)
-
-    'There's a snake in my boot!'
-
-    'There\'s a snake in my boot!'
-
+Exemplo, `"flavio.upper()"` equivale a `FLAVIO`.
 
 
 ### Acessando pelo index
@@ -241,6 +266,9 @@ Strings
     "python"[3] # 'h'
     "python"[4] # 'o'
     "python"[5] # 'n'
+
+Leia mais sobre [fatimanento de sequencias](../sequencias/ "Python - Sequencias").
+
 
 
 ### Percorrendo strings (string lopping)
@@ -313,15 +341,13 @@ Funções
 
     print foo() "retorno da função"
 
-<hr>
+Outro exemplo
+
     def add_two(a, b):
       c = a + b
       return c
 
-<hr>
-    def add_two(a, b):
-      return a + b
-
+Leia mais sobre [funções](../functions/ "Python - funções(functions)").
 
 
 Imports
@@ -361,36 +387,6 @@ Datas
 
 
 
-Números randômicos
----
-
-    import random
-    random.randint(1, 10)
-
-
-
-
-Funções  internas (built-in functions)
----
-
-    max(5, 6, 7) # 7
-
-    min(5, 6, 7) # 5
-
-    abs(-1) # 1
-
-    type("text") # <type 'text'>
-
-    type(1)      # <type 'int'>
-
-    type(0.99)   # <type 'float'>
-
-    type(1) == int      # True
-
-    type(0.99) == float # True
-
-
-
 Listas (lists)
 ---
 
@@ -404,15 +400,14 @@ Listas (lists)
     animals[3] # 'dog'
     animals[4] # IndexError: list index out of range
 
-<div class="list-group">
-    <a href="../listas/" class="list-group-item">Leia mais sobre Listas (lists)</a>
-</div>
+Leia mais sobre [listas](../listas/ "Python - listas(list)").
+
 
 
 range() 
 --- 
 
-The range() function returns a list of integers, the sequence of which is defined by the arguments passed to it.
+The `range()` function returns a list of integers, the sequence of which is defined by the arguments passed to it.
 Syntax
 
     argument variations:
@@ -447,8 +442,6 @@ Dicionários (dictionaries)
         "skylls": ['python', 'ruby', 'php']
     }
 
-    print people['age']= 40
-
     print people['name']
     print people['age']
     print people['skylls']
@@ -457,10 +450,8 @@ Dicionários (dictionaries)
     # 40
     # ['python', 'ruby', 'php']
 
+Leia mais sobre [dicinonários](../dicionarios-dictionaries/ "Python - dicionários (dctionaries)").
 
-<div class="list-group">
-    <a href="../dicionarios-dictionaries/" class="list-group-item">Leia mais sobre Dicionários (dictionaries)</a>
-</div>
 
 
 

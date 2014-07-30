@@ -12,28 +12,27 @@ Sequências são coleções ordenadas embutidas: strings, listas, tuplas, buffer
 
 Operadores:
 
-+ ´s[i]´ acesso a um item
-+ ´s[-i]´ acesso a um item pelo final
-+ ´s+z´ concatenação
-+ ´s*n n´ cópias de s concatenadas
-+ ´i in s´ teste de inclusão
-+ ´i not in s´ teste de inclusão negativo
++ `s[-i]`      acesso a um item pelo final
++ `s+z`        concatenação
++ `s*n n`      cópias de `s` concatenadas
++ `i in s`     teste de inclusão
++ `i not in s` teste de inclusão negativo
 
 
 
-### Fatiamento de sequências
+### Fatiamento de sequências (slicing)
 
-+ ´s[a:b]´ cópia de ´a´ (inclusive) até ´b´ (exclusive)
-+ ´s[a:]´ cópia ´a´ partir de ´a´ (inclusive)
-+ ´s[:b]´ cópia até ´b´ (exclusive)
-+ ´s[:]´ cópia total de ´s´
-+ ´s[a:b:n]´ cópia de ´n´ em ´n´ itens 
++ `s[a:b]` cópia de `a` (inclusive) até `b` (exclusive)
++ `s[a:]` cópia `a` partir de `a` (inclusive)
++ `s[:b]` cópia até `b` (exclusive)
++ `s[:]` cópia total de `s`
++ `s[a:b:n]` cópia de `n` em `n` itens 
 
-!["a"](abacaxi-fatiado.png "b")
+!["Figura ilustrando o fatiamento de sequencias em Python"](abacaxi-fatiado.png "Figura ilustrando o fatiamento de sequencias em Python")
 
 ### Atribuição em fatias:
 
-+ ´s[2:5] = [4,3,2,1]´  válida apenas em sequências mutáveis
++ `s[2:5] = [4,3,2,1]`  válida apenas em sequências mutáveis
 
 
 ### Funções nativas p/ sequências

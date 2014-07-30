@@ -5,7 +5,27 @@ description: Python - funções
 ---
 
 
+Exemplo de funções.
 
+    def foo():
+        return "retorno da função"
+
+    print foo() "retorno da função"
+
+
+Outro exemplo.
+
+    def add_two(a, b):
+        c = a + b
+        return c
+
+Exemplo anterior simplificado
+
+    def add_two(a, b):
+        return a + b
+
+
+### Argumentos da função
 
     def biggest_number(*args):
         print max(args)

@@ -5,14 +5,51 @@ description: Python - dicionários
 ---
 
 
+    
+Criando o dicionário;
 
-<hr>
-    dic = {} # Empty dictionary
-    dic['hardware'] = "o que chutamos"
-    dic['software'] = "o que xingamos"
+    people = {
+        "name": "joao",
+        "age": 39,
+        "skylls": ['python', 'ruby', 'php']
+    }
+
+Atribuindo valores:
+
+    print people['age']= 40
+
+Acessando os dados:
+
+    print people['name']
+    print people['age']
+    print people['skylls']
+
+    # joao
+    # 40
+    # ['python', 'ruby', 'php']
+
+
+Dicionários também podem ser criados dinamicamente como no exemplo baixo.
+
+    dic = {}
+    dic['name'] = "joao"
+    dic['age']  = "39"
 
 
 ### Percorrendo dicionários (dictionaries looping)
+
+    d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
+
+    for key in d:
+        print key + " " + d[key]
+
+    """
+    a apple
+    c cherry
+    b berry
+    """
+
+Abaixo, mais um exemplo.
 
     webster = {
         "Aardvark" : "A star of a popular children's cartoon show.",
@@ -32,18 +69,7 @@ description: Python - dicionários
     None
     '''
 
-<hr>
-    d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
-
-    for key in d:
-        print key + " " + d[key]
-
-    """
-    a apple
-    c cherry
-    b berry
-    """
-
+### Funções para dicionários
 
 <hr>
     my_dict = {
@@ -52,16 +78,8 @@ description: Python - dicionários
         "3": "c"
     }
 
-    print my_dict.items()
-
-<hr>
-    my_dict = {
-        "1": "a",
-        "2": "b",
-        "3": "c"
-    }
-
-    print my_dict.keys()
-    print my_dict.values()
+    print my_dict.items()  #
+    print my_dict.keys()   #
+    print my_dict.values() #
 
 

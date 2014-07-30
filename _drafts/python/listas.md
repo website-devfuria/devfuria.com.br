@@ -8,7 +8,7 @@ description: Python - listas
 
 
 
-### Slicing
+### Fatiamento (slicing)
 
 <hr>
     p = ["p", "y", "t", "h", "o", "n"] 
@@ -57,8 +57,12 @@ description: Python - listas
     (p == p[:6])  # True
     (p == p[:])   # True
 
+Leia mais sobre [fatimanento de sequencias](../sequencias/ "Python - Sequencias").
+
 Veja também Advanced Topics in Python 7/18
 
+
+### Funções nativas p/ listas
 
 ### append()
 
@@ -109,7 +113,17 @@ Semelhante a utilização de `del()`:
     print animals # ["bat", "cat"]
 
 
-### Juntando listas (join lists)
+### sort()
+
+    lista = ["c", "b", "a"]
+    print lista # ['c', 'b', 'a']
+
+    lista.sort()
+    print lista # ['a', 'b', 'c']
+
+
+Juntando listas (join lists)
+---
 
     m = [1, 2, 3]
     n = [4, 5, 6]
@@ -120,16 +134,8 @@ Semelhante a utilização de `del()`:
     print o # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
-### sort()
-
-    lista = ["c", "b", "a"]
-    print lista # ['c', 'b', 'a']
-
-    lista.sort()
-    print lista # ['a', 'b', 'c']
-
-
-### Percorrendo a lista (list looping)
+Percorrendo a lista (list looping)
+---
 
     myList = [1, 2, 3, 4]
     for number in myList:
