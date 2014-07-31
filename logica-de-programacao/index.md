@@ -96,6 +96,7 @@ Exercícios um pouco mais elaborados. Utilizaremos função e provavelmente laç
 
 <div class="list-group">
     <a href="/logica-de-programacao/c-primo/" class="list-group-item">Número primo</a>
+    <a href="/logica-de-programacao/c-soma-digitos/" class="list-group-item">Soma dos dígitos</a>
 </div> 
 
 ### Exercícios nível 4
