@@ -1,4 +1,11 @@
-FEDORA 17+
+---
+layout:      materia
+title:       Instalando o PHP  no Linux
+description: Como instalar PHP no Linux
+---
+
+
+### Fedora
 
 
 Instale o software:
@@ -10,3 +17,13 @@ Instale o software:
 Reinicie o apache:
 
 	# systemctl restart httpd.service
+
+
+
+### Ubuntu
+
+	# apt-get install php5 libapache2-mod-php5 php5-curl php5-gd php5-idn\
+
+Reinicie o apache:
+	
+	# /etc/init.d/apache2 restart

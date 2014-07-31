@@ -1,4 +1,9 @@
-UBUNTU 12
+---
+layout:      materia
+title:       Instalando drivers nvidia no Ubuntu
+description: Como instalar drivers para placa de vídeo nvidia no Ubuntu
+---
+
 
 Adicione o repositório:
 
