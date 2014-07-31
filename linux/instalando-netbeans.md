@@ -1,7 +1,7 @@
 ---
 layout:      materia
-title:       Instalando o Sublime no Fedora
-description: Como instalar o Sublime no Fedora
+title:       Instalando o Netbeans no Linux
+description: Como instalar o Netbeans no Linux
 ---
 
 

@@ -31,6 +31,16 @@ description: Guia prático de instalações de softwares para Linux
 
 
 
+### PHP
+
+<div class="list-group">
+    <a href="/linux/instalando-php/" class="list-group-item">Instalando o PHP  no Linux</a>
+    <a href="/linux/instalando-phpunit/" class="list-group-item">nstalando o PHPUnit no Linux</a>
+    <a href="/linux/instalando-xdebug/" class="list-group-item">Instalando o x-debug no Linux</a>
+</div>
+
+
+
 ### Apache
 
 <div class="list-group">
@@ -42,16 +52,18 @@ description: Guia prático de instalações de softwares para Linux
 ### Mysql
 
 <div class="list-group">
+    <a href="/linux/instalando-mysql/" class="list-group-item">Instalando o MySql no Linux</a>
     <a href="/linux/instalando-mysql-workbench" class="list-group-item">Instalando Workbench & Utilities no CentOS 6</a>
 </div>
 
 
 
-###  Mozilla
+###  Navegadores web (browser)
 
 <div class="list-group">
     <a href="/linux/instalando-filezilla/" class="list-group-item">Instalando o Filezilla (FTP)</a>
     <a href="/linux/instalando-firefox/" class="list-group-item">Instalando o última versão do Firefox</a>
+    <a href="/linux/instalando-opera" class="list-group-item">Instalando navegador Opera no Fedorax</a>
 </div>
 
 
@@ -59,10 +71,22 @@ description: Guia prático de instalações de softwares para Linux
 ###  Audio & Som
 
 <div class="list-group">
-    <a href="/linux/instalando-aptana" class="list-group-item">Instalando Aptana no Fedora</a>
-    <a href="/linux/instalando-gtk-recordmydesktop" class="list-group-item">Instalando gravador de desktop (recordmydesktop) para Fedora</a>
-    <a href="/linux/instalando-kino.md" class="list-group-item">Instalando o Kino no Fedora</a>
-    <a href="/linux/instalando-nautilus-image-converter" class="list-group-item">Instalando um conversor de imagens para o Nautilius (Fedora)</a>
+    <a href="/linux/iinstalando-vlc/" class="list-group-item">Instalando VLC no CentOS</a>
+    <a href="/linux/instalando-gtk-recordmydesktop/" class="list-group-item">Instalando gravador de desktop (recordmydesktop) para Fedora</a>
+    <a href="/linux/instalando-kino/" class="list-group-item">Instalando o Kino no Fedora</a>
+    <a href="/linux/instalando-nautilus-image-converter/" class="list-group-item">Instalando um conversor de imagens para o Nautilius (Fedora)</a>
+    <a href="/linux/instalando-winff/" class="list-group-item">Instalando o conversor de vídeos winFF no Fedora</a>
+    <a href="/linux/instalando-wodim/" class="list-group-item">nstalando o Wodim no CentOS</a>
+    <a href="/linux/instalando-drivers-nvidia/" class="list-group-item">Instalando drivers nvidia no Ubuntu</a>
+</div>
+
+
+###  IDE's
+
+<div class="list-group">
+    <a href="/linux/instalando-netbeans/" class="list-group-item">Instalando o Netbeans no Linux</a>
+    <a href="/linux/instalando-sublime/" class="list-group-item">Instalando o Sublime no Fedora</a>
+    <a href="/linux/instalando-aptana/" class="list-group-item">nstalando Aptana no Fedora</a>
 </div>
 
 
@@ -74,9 +98,14 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/instalando-java/" class="list-group-item">Instalando o Java (jdk)</a>
     <a href="/linux/instalando-7z/" class="list-group-item">Instalando 7-Zip (7z, 7zip, sevenzip)</a>
     <a href="/linux/instalando-putty/" class="list-group-item">Instalando o putty (acesso remoto)</a>
-    <a href="/linux/instalando-bcompiler" class="list-group-item">Instalando bcompiler no CentOS</a>
-    <a href="/linux/instalando-flash-plugin" class="list-group-item">Instalando flash-plugin no Firefox</a>
-    <a href="/linux/instalando-fonts-windows" class="list-group-item">Instalando fontes igual do windows no Ubuntu</a>
-    <a href="/linux/instalando-calculadoras" class="list-group-item">Instalando calculadores no Linux</a>
-    <!--<a href="/linux" class="list-group-item"></a>-->
+    <a href="/linux/instalando-bcompiler/" class="list-group-item">Instalando bcompiler no CentOS</a>
+    <a href="/linux/instalando-flash-plugin/" class="list-group-item">Instalando flash-plugin no Firefox</a>
+    <a href="/linux/instalando-fonts-windows/" class="list-group-item">Instalando fontes igual do Windows no Ubuntu</a>
+    <a href="/linux/instalando-calculadoras/" class="list-group-item">Instalando calculadores no Linux</a>
+    <a href="/linux/instalando-libre-office/" class="list-group-item">Instalando o Libre Office no Linux</a>
+    <a href="/linux/instalando-pencil/" class="list-group-item">nstalando o Pencil no Fedora</a>
+    <a href="/linux/instalando-rar/" class="list-group-item">Instalando o rar no Fedora</a>
+    <a href="/linux/instalando-samba/" class="list-group-item">Instalando o samba no Fedora</a>
+    <a href="/linux/instalando-skype/" class="list-group-item">Instalando o Skype no Fedora</a>
+    <!--<a href="/linux//" class="list-group-item"></a>-->
 </div>

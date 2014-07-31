@@ -1,7 +1,7 @@
 ---
 layout:      materia
-title:       Instalando o php-unit no Linux
-description: Como instalar o php-unit no Linux
+title:       Instalando o PHPUnit no Linux
+description: Como instalar o PHPUnit no Linux
 ---
 
 
