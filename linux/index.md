@@ -16,7 +16,7 @@ Cookbook - receitas de instalação de softwares no Linux
 
 Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o pessoal iniciante.
 
-Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](index-receitas-instalacoes.md). veja os mais acessados
+Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](index-receitas-instalacoes). veja os mais acessados
 
 <div class="list-group">
     <a href="/linux/instalando-django/" class="list-group-item">Instalando o Django (python)</a>
