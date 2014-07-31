@@ -1,7 +1,9 @@
 ---
-layout: materia
-title: index do canvas
+layout:     materia
+title:      Canvas
+descriptin: Seção sobre Canvas (html5 + javascript)
 ---
+
 
 
 Internet

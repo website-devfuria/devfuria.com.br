@@ -1,7 +1,7 @@
 ---
 layout:      materia
 title:       Javascript
-description: 
+description: Cursos, artigos, tudo sobre JavScript (inclui Canvas) 
 ---
 
 
