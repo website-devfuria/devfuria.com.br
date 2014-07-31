@@ -1,6 +1,6 @@
 ---
-layout: materia
-title: Como tirar um screenshot (CentOS)
+layout:     materia
+title:      Como tirar um screenshot (CentOS)
 descrition: No Linux, você precisa tirar um print-screen da tela e não sabe como?
 ---
 
