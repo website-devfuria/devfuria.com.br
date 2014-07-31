@@ -19,6 +19,9 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^js\/window\-object\-global\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/objeto\-global\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^js\/canvas\/aprendendo-canvas-introducao\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/introducao\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^regexp\/basico\/preg\-match\-all\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-all\-basico\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
