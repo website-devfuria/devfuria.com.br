@@ -16,21 +16,16 @@ Cookbook - receitas de instalação de softwares no Linux
 
 Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o pessoal iniciante.
 
-Aqui, mantenho um guia prático de instalações de aplicativos para Linux.
+Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](index-receitas-instalacoes.md). veja os mais acessados
 
 <div class="list-group">
-    <a href="/linux/instalando-putty/" class="list-group-item">Instalando o putty (acesso remoto)</a>
     <a href="/linux/instalando-django/" class="list-group-item">Instalando o Django (python)</a>
     <a href="/linux/instalando-pip/" class="list-group-item">Instalando o pip (gerenciados de pacotes do python)</a>
     <a href="/linux/instalando-git/" class="list-group-item">Instalando o git</a>
     <a href="/linux/instalando-nodejs/" class="list-group-item">Instalando o nodejs</a>
     <a href="/linux/instalando-npm/" class="list-group-item">Instalando o npm</a>
-    <a href="/linux/instalando-filezilla/" class="list-group-item">Instalando o Filezilla (FTP)</a>
-    <a href="/linux/instalando-firefox/" class="list-group-item">Instalando o última versão do Firefox</a>
     <a href="/linux/instalando-java/" class="list-group-item">Instalando o Java (jdk)</a>
     <a href="/linux/instalando-ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
-    <a href="/linux/instalando-apache-via-yum-apt-get/" class="list-group-item">Instalando e configurando o Apache no Linux</a>
-    <a href="/linux/instalando-7z/" class="list-group-item">Instalando 7-Zip (7z, 7zip, sevenzip)</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
