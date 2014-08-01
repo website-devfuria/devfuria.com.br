@@ -51,6 +51,9 @@ Preciso falar mais alguma coisa?
 Exemplo
 ---
 
+Nosso objetivo será fazer um inversor de palavras. Ele inverte, por exemplo,  "animal" em "lamina".
+
+Mas antes...
 
 ### Precisamos de uma linguagem imaginária
 
@@ -74,7 +77,6 @@ Esse será nosso __framework de testes__ imaginário.
 ### Praticando.
 
 
-__Objetivo__: fazer um inversor de palavras, ele inverte "animal" em "lamina".
 
 
 Começe pelo teste. 

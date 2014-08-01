@@ -127,6 +127,16 @@ h3 {
 }
 .text-left {text-align: left}
 .text-right {text-align: right}
+canvas, .canvas {
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    width: 330px;
+    /*margin-top: 10px;*/
+    margin-bottom: 10px;
+}
 @media screen and (min-width: 914px) {
    body {
       width: 960px;

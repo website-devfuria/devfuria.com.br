@@ -1,6 +1,6 @@
 ---
 layout:      materia
-title:       Instalando calculadores no Linux
+title:       Instalando calculadoras no Linux
 description: Aprenda como instalar as calculadores Speedcrunh e Gcalctool no Linux
 ---
 
