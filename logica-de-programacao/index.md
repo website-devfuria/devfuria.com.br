@@ -97,6 +97,8 @@ Exercícios um pouco mais elaborados. Utilizaremos função e provavelmente laç
 <div class="list-group">
     <a href="/logica-de-programacao/c-primo/" class="list-group-item">Número primo</a>
     <a href="/logica-de-programacao/c-soma-digitos/" class="list-group-item">Soma dos dígitos</a>
+    <a href="/logica-de-programacao/c-mdc/" class="list-group-item">MDC máximo divisor comum</a>
+    <a href="/logica-de-programacao/c-mmc/" class="list-group-item">MMC mínimo múltiplo comum</a>
 </div> 
 
 ### Exercícios nível 4

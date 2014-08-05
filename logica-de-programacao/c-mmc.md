@@ -23,7 +23,7 @@ Invertendo as contas, temos MMC = a . b / MDC
 int mmc(int num1, int num2) {
 
     int resto, a, b;
-    
+
     a = num1;
     b = num2;
 
@@ -45,15 +45,14 @@ int main() {
 
     return 0;
 }
+{% endhighlight %}
+
 
 
 
 Segunda solução
 ---
 
-
-
-{% endhighlight %}
 {% highlight c %}
 #include <stdio.h>
 #include <assert.h>
@@ -61,7 +60,7 @@ Segunda solução
 int mmc(int num1, int num2) {
 
     int mmc, aux, i;
-    
+
     for (i = 2; i <= num2; i++) {
         aux = num1 * i;
         if ((aux % num2) == 0) {
