@@ -4,38 +4,23 @@ title:       Instalando o PHPUnit no Linux
 description: Como instalar o PHPUnit no Linux
 ---
 
+Esta é a receita oficial do __PHPUnit__.
+
+Instalamos o __PHPUnit__ em qualquer distro através do PHP Archive (PHAR).
 
 
-### CentOS 6.4
 
-    # yum install php-pear-PHPUnit
-
-
-Quando aparecer o alerta na execução do teste...
-
-    PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/modules/module.so' - /usr/lib/php/modules/module.so: cannot open shared object file: No such file or directory in Unknown on line 0
+    wget https://phar.phpunit.de/phpunit.phar
+    chmod +x phpunit.phar
+    mv phpunit.phar /usr/local/bin/phpunit
 
 
-Simplesmente digite no terminal
-
-    # yum downgrade php-mcrypt
+Obs: Antigamente podíamos instalar através do __Pear__, mas esse processo não será
+mais suportado.
 
 <hr>
 Fonte
 
-- http://lucidit.blogspot.com.br/2013/04/php-startup-unable-to-load-dynamic.html
-- http://phpms.org/2012/03/guia-rapido-instalando-phpunit/
-- http://netbeans.org/kb/docs/php/phpunit_pt_BR.html
+- [PHPUnit - manual 4.1 - installation](http://phpunit.de/manual/4.1/en/installation.html "link-externo")
 
 
-
-
-### Fedora 17 e 18
-
-	# yum install php-pear-PHPUnit
-
-<hr>
-Fonte
-
-- http://phpms.org/2012/03/guia-rapido-instalando-phpunit/
-- http://netbeans.org/kb/docs/php/phpunit_pt_BR.html
