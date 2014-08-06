@@ -61,9 +61,9 @@ description: Guia prático de instalações de softwares para Linux
 ###  Navegadores web (browser)
 
 <div class="list-group">
-    <a href="/linux/instalando-filezilla/" class="list-group-item">Instalando o Filezilla (FTP)</a>
     <a href="/linux/instalando-firefox/" class="list-group-item">Instalando o última versão do Firefox</a>
-    <a href="/linux/instalando-opera" class="list-group-item">Instalando navegador Opera no Fedorax</a>
+    <a href="/linux/instalando-opera" class="list-group-item">Instalando navegador Opera no Fedora</a>
+    <a href="/linux/instalando-flash-plugin/" class="list-group-item">Instalando flash-plugin no Firefox</a>
 </div>
 
 
@@ -99,7 +99,7 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/instalando-7z/" class="list-group-item">Instalando 7-Zip (7z, 7zip, sevenzip)</a>
     <a href="/linux/instalando-putty/" class="list-group-item">Instalando o putty (acesso remoto)</a>
     <a href="/linux/instalando-bcompiler/" class="list-group-item">Instalando bcompiler no CentOS</a>
-    <a href="/linux/instalando-flash-plugin/" class="list-group-item">Instalando flash-plugin no Firefox</a>
+    <a href="/linux/instalando-filezilla/" class="list-group-item">Instalando o Filezilla (FTP)</a>
     <a href="/linux/instalando-fonts-windows/" class="list-group-item">Instalando fontes igual do Windows no Ubuntu</a>
     <a href="/linux/instalando-calculadoras/" class="list-group-item">Instalando calculadores no Linux</a>
     <a href="/linux/instalando-libre-office/" class="list-group-item">Instalando o Libre Office no Linux</a>

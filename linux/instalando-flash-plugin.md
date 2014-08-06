@@ -5,6 +5,10 @@ description: Aprenda como instalar flash-plugin no Firefox
 ---
 
 
+### Debian (wheezy)
+
+    # apt-get install flashplugin-nonfree
+
 ### Fedora 19
 
 Digite no terminal
