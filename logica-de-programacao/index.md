@@ -117,9 +117,9 @@ Utilizaremos vetores! Se você não sabe nada sobre vetores é melhor ler...
 </div> 
 
 
-### Exercícios nível 5 (quase 4)
+### Exercícios nível 4.1
 
-Utilizaremos strings! Se você não sabe nada sobre vetores é melhor ler...
+Continuaremos a praticar vetores mas agora com strings! Se você não sabe nada sobre strings é melhor ler...
 
 - [O que você precisa saber sobre strings]()
 
