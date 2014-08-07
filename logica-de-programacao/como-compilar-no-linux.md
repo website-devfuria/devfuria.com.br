@@ -6,7 +6,7 @@ description: Como compilar códigos em c/c++ no Linux
 
 Não, não é coisa de outro mundo. Usar __c/c++__ no __Linux__ é muito fácil.
 
-Obviamente, você precisará ter o Linux instalado, nem que seja em uma máquina virtual.
+Obviamente, você precisará ter o [Linux]("/../../../linux) instalado, nem que seja em uma máquina virtual.
 
 Depois o mais importante é o compilador, no caso o __gcc__.
 
@@ -16,7 +16,7 @@ Se estivar no Ubuntu, Debian:
 
     apt-get install gcc
 
-Se estiver no // Fedora, Centos, HedHat
+Se estiver no Fedora, Centos:
 
     yum install gcc      
 
@@ -69,7 +69,7 @@ Experimente compilar este código.
         return 0;
     }
 
-Esse é o menor código na __linguagem c__ possível de ser compilado.
+Esse é o menor código na [linguagem c](../introducao-linguagem-c) possível de ser compilado.
 
 Por ser minúsculo, você não conseguirá fazer nada com ele, então vamos dar um "up".
 

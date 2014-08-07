@@ -6,9 +6,9 @@ description: Uma pequena e rápida introdução a linguagem c
 
 Rápida introdução a __linguagem C__.
 
-Ela é curta porque o objetivo é suprir o mínimo para você poder praticar os __[exercícios de lógica de programação__.
+Ela é curta porque o objetivo é suprir o mínimo para você poder praticar os __exercícios de lógica de programação__.
 
-Se você chegou até esta página por vias externas veja o índice  de [lógica da programação](/../logica-de-programacao/)
+Se você chegou até esta página por vias externas, veja o índice  de [lógica da programação](/../logica-de-programacao/)
 para entender melhor a proposta.
 
 Vamos experimentar a __linguagem C__ através do [Linux](/../linux/).
@@ -195,7 +195,7 @@ Mas com a ajuda do parênteses `()` podemos alterar a precedência.
 ### Relacionais
 
 
-Com os opradores relacionais podemos montar __expressões__ para tomada de decisão.
+Com os operadores relacionais podemos montar __expressões__ para tomada de decisão.
 
 O resultado de uma expressão é sempre verdadeiro (true) ou falso (false), normalmente colocamos as expressões entre parênteses.
 
@@ -261,6 +261,7 @@ Com os opradores lógicos podemos montar __expressões__ mais elaboradas, por ex
         <td>negação (not)</td>
     </tr>
 </table>
+
 
 
 

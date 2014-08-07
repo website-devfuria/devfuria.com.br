@@ -56,8 +56,8 @@ Se o `assert()` falhar (a expressão for falsa), os testes também falharam.
 Exemplo (true)
 ---
 
-O código abaixo compila corretamente e ao ser executado ele "não faz nada", fica em silêncio (oK, o __assert()__ é 
-verdadeiro).
+O código abaixo compila corretamente e ao ser executado ele "não faz nada", fica em silêncio (a expressão testada pelo
+ __assert()__ é verdadeira).
 
 {% highlight c %}
 #include <stdio.h>
@@ -66,7 +66,7 @@ verdadeiro).
 int main (){
 
     int  dobro;
-    dobro = 2 * 50;// ok dobro será 100
+    dobro = 2 * 50;// dobro será 100
 
     // Simulando o  teste
     assert(100 == dobro);
