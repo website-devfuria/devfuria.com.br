@@ -5,7 +5,7 @@ description: Aprenda como instalar o Django no Linux
 ---
 
 
-O que é__django__ ?
+O que é __django__ ?
 
 
 > Django é um framework, construído usando a linguagem Python.
@@ -19,7 +19,7 @@ O que é__django__ ?
 > (http://www.aprendendodjango.com/)
 
 
-Existem mais do que uma única forma de instalar o __Django__. Consulteo site oficial para ver outras opções de instalação.
+Existem mais do que uma única forma de instalar o __Django__. Consulte o site oficial para ver outras opções de instalação.
 
 
 Instalando o Django através do pip
