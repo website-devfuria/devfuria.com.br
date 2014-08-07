@@ -86,9 +86,7 @@ pode perder seus arquivos e até mesmo ter que reinstalar o __Windows__.
 
 Experimente:
 
-1. [Live Cd's](http://pt.wikipedia.org/wiki/Live_CD "link-externo"). É um cd vivo (como o nome sugere) onde você coloca
-o cd na bandeja e inicia o seu computador, em instantes obtém o sistema operacional na memória. Ao reiniciar sua 
-máquina (e retirar o cd da bandeja) tudo estará como sempre esteve.
+1. [Live Cd's](http://pt.wikipedia.org/wiki/Live_CD "link-externo"). É um cd vivo (como o nome diz) onde você coloca o cd na bandeja e inicia seu computador; dentro de instantes terá o sistema operacional na memória. Ao reiniciar sua máquina (e retirar o cd da bandeja) tudo estará como sempre esteve.
 
 2. [Máquinas virtuais](http://en.wikipedia.org/wiki/List_of_live_CDs "link-externo"). É um aplicativo que simula uma 
 máquina no seu computador. O [Virtual Box](https://www.virtualbox.org/ "link-externo") é a __"vm"__  mais fácil para começar.
