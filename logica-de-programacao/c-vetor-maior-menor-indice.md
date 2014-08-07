@@ -9,7 +9,7 @@ Dado um vetor qualquer sem valores repetidos, descubra qual é o __índice do ma
 Utilize vetores e o laço "do-while".
 
 
-### Código completo (maior valor)
+### Código completo
 
 {% highlight c %}
 #include <stdio.h>
