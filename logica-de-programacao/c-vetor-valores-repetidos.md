@@ -7,7 +7,8 @@ description: Exercício de lógica de programação para descobrir se em um dete
 Faça um programa que identifique se em um determinado vetor, existem ou não valores repetidos.
 
 
-### Código completo
+Código completo
+---
 
 {% highlight c %}
 #include <stdio.h>
