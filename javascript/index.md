@@ -1,13 +1,32 @@
 ---
 layout:      materia
 title:       JavaScript
-description: Cursos, artigos, tudo sobre JavaScript (inclui Canvas) 
+description: Tudo o que você precisa saber sobre javascript a apartir do zero
 ---
 
+> "Javascript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos, 
+> baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de 
+> script da Web. Também utilizada em vários outros ambientes como __node.js__ e __Apache CouchDB__.".
+>
+> Mozilla Fundation
+
+Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).
 
 
 
-https://developer.mozilla.org/en-US/learn/javascript
+Como começar
+---
+
+Você pode executar JavaScript em um navegador web, dê preferência o [FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo").
+
+Mas também pode executá-lo em linho de comando através do [node.js](http://nodejs.org/ "link-externo").
+
+Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/tracks/javascript "link-externo").
+
+Site Oficial
+---
+
+[https://developer.mozilla.org/en-US/learn/javascript](https://developer.mozilla.org/en-US/learn/javascript "link-externo")
 
 
 
@@ -15,25 +34,14 @@ https://developer.mozilla.org/en-US/learn/javascript
 Livros sobre JavaScript
 ---
 
+Para quem nunca viu Javacript, aconselho o livro da dupla Kevin Yank e Cameron Adams __Simple JavaScript__.
+Ele cumpre o que promete __"tudo o que você precisa saber sobre javascript a apartir do zero"__.
 
-Para quem nunca viu Javacript:
+Apesar do livro ser um pouco velho (foi lançado em 2007) ele ainda é muito útil. Isso porque os autores se preocuparam
+em cobrir o essencial do JavaScript.
+
+A didática é excelente, o comprometimento com a qualidade é sem igual.
 
 !["Livro Só Javascript"](livro-simple-js.jpg "Livro Só Javascript")
 
-Para quem já conhece mas ainda não é muito íntimo.
-
-1. Eloquent JS (haverbek)
-2. O Melhor do JS (Crockford)
-3. Padrões JS (Stefanov)
-4. Java script o guia definito (Flanagan)
-
-Livros avançados
-
-- Closure (The Definitive Guide)
-- Functional JavaScript
-- Testable JavaScript
-- Single Page Web Applications (JavaScript end-to-end)
-- JavaScript Enlightnment
-- JavaScript for Web Develpers
-
-Incluíndo a lista [http://lifeofjs.com/](http://lifeofjs.com/)
+Leia mais sobre [Livros sobre JavaScript](./livros-javascript/).
