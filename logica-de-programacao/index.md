@@ -101,6 +101,7 @@ Exercícios um pouco mais elaborados. Utilizaremos função e provavelmente laç
     <a href="/logica-de-programacao/c-mmc/" class="list-group-item">MMC mínimo múltiplo comum</a>
 </div> 
 
+
 ### Exercícios nível 4
 
 Utilizaremos vetores! Se você não sabe nada sobre vetores é melhor ler...
@@ -113,6 +114,17 @@ Utilizaremos vetores! Se você não sabe nada sobre vetores é melhor ler...
     <a href="/logica-de-programacao/c-vetor-copia/" class="list-group-item">Vetor cópia - algorítimo para copiar um vetor</a>
     <a href="/logica-de-programacao/c-vetor-maior-menor-indice/" class="list-group-item">Maior e menor índice do vetor</a>
     <a href="/logica-de-programacao/c-vetor-valores-repetidos/" class="list-group-item">Valores repetidos em vetor</a>
+</div> 
+
+
+### Exercícios nível 5 (quase 4)
+
+Utilizaremos strings! Se você não sabe nada sobre vetores é melhor ler...
+
+- [O que você precisa saber sobre strings]()
+
+<div class="list-group">
+    <a href="/logica-de-programacao/c-strings-comparar/" class="list-group-item">Comparar duas strings</a>
 </div> 
 
 
