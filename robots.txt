@@ -3,6 +3,7 @@ Disallow: /furia
 Disallow: /core
 Disallow: /seg
 Disallow: /ahumana
+Disallow: /schemas/gerar-sitemap.php
 Allow: /html-css
 Allow: /js
 Disallow: /logica

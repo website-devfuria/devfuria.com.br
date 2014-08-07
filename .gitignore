@@ -1,1 +1,3 @@
-furia/boot.php
+_site
+/nbproject/
+*.run

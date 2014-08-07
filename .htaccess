@@ -12,3 +12,26 @@ RewriteRule ^old\/php\/nivel\-zero\/logica\-de\-programacao\/?$ "http\:\/\/www\.
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^old\/?$ "http\:\/\/www\.devfuria\.com\.br\/" [R=301,L]
 
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^js\/math\-random\-numero\-randomico\-em\-javascript\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/gerar\-numero\-randomico\-entre\-2\-numeros\-quaisquer\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^js\/window\-object\-global\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/objeto\-global\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^js\/canvas\/aprendendo-canvas-introducao\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/introducao\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^regexp\/basico\/preg\-match\-all\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-all\-basico\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^regexp\/basico\/preg\-match\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-basico\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^mysql-sql\/basico\/intro\/?$ "http\:\/\/www\.devfuria\.com\.br\/mysql-sql\/intro\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^
+RewriteRule ^flavio.alexandre-micheletti.php "http\:\/\/www\.devfuria\.com\.br\/flavio-alexandre-micheletti.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^
+RewriteRule ^index.php "http\:\/\/www\.devfuria\.com\.br" [R=301,L]

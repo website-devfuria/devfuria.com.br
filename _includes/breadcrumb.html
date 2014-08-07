@@ -1,0 +1,23 @@
+{% assign breadcrumbs = page.url | split: '/' %}
+<ul class="breadcrumb">
+    <li><a href="{{ site.url }}">www.devfuria.com.br</a>
+    {% for crumbs in breadcrumbs %}
+        {% if crumbs != "" %}
+        
+            {% if forloop.index == 2 %}
+                {% assign foo = "../../../" %}
+            {% endif %}
+            
+            {% if forloop.index == 3 %}
+                {% assign foo = "../../" %}
+            {% endif %}
+        
+            {% if forloop.last %}
+                <li class="active">{{ crumbs }}</li>
+            {% else %}
+                <li><a href="{{ foo }}{{ crumbs  }}">{{ crumbs }}</a>
+            {% endif %}
+        {% endif %}
+    {% endfor %}   
+</ul>
+
