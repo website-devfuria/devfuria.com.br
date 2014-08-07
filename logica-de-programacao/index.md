@@ -112,6 +112,7 @@ Utilizaremos vetores! Se você não sabe nada sobre vetores é melhor ler...
     <a href="/logica-de-programacao/c-vetor-soma/" class="list-group-item">Vetor soma - função para somar vetor</a>
     <a href="/logica-de-programacao/c-vetor-copia/" class="list-group-item">Vetor cópia - algorítimo para copiar um vetor</a>
     <a href="/logica-de-programacao/c-vetor-maior-menor-indice/" class="list-group-item">Maior e menor índice do vetor</a>
+    <a href="/logica-de-programacao/c-vetor-valores-repetidos/" class="list-group-item">Valores repetidos em vetor</a>
 </div> 
 
 
