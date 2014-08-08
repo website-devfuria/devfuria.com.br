@@ -4,98 +4,146 @@ title:      Javascript - sintaxe
 descriptin: Javascript - sintaxe
 ---
 
+### Strings
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Other_types
+Para incluir uma string literalmente em um programa JavaScript, basta colocar os caracteres da string dentro de um par
+combinado de aspas simples ou duplas.
 
-### Switch
+{% highlight javascript %}
+"" string de cumprimento zero
+'testing'
+"other testing"
+{% endhighlight %}
+
+Para concatenar strings utilizamos o operador `+`.
+
+{% highlight javascript %}
+var msg = "Hello " + "word"; // "Hello word"
+msg = "Welcome to my blog, " + name;
+{% endhighlight %}
+
+A propriedade `length` determina o tamanho da string.
+
+    "palavra".lenght // 7
 
 
-    switch(action) {
-        case 'draw':
-            drawit();
-            break;
-        case 'eat':
-            eatit();
-            break;
-        default:
-            donothing();
-    }
+### Condicional - if / else
 
+{% highlight javascript %}
+if (n == 1) {
+    // executa este bloco if
+} else if () {
+    // executa este bloco else if
+} else {
+    // executa este bloco else
+}
+{% endhighlight %}
 
-### For
+### Condicional - switch
 
+{% highlight javascript %}
+switch(action) {
+    case 'draw':
+        drawit();
+        break;
+    case 'eat':
+        eatit();
+        break;
+    default:
+        donothing();
+}
+{% endhighlight %}
 
-    for (var i = 0; i < 5; i++) {
-      // Will execute 5 times
-    }
+### Laço for
 
+{% highlight javascript %}
+for (var i = 0; i < 5; i++) {
+    // Will execute 5 times
+}
+{% endhighlight %}
 
 
 ### Arrays
 
-    var a = new Array();
-    a[0] = "dog";
-    a[1] = "cat";
-    a[2] = "hen";
-    a.length
-    3
+{% highlight javascript %}
+var a = new Array();
+a[0] = "dog";
+a[1] = "cat";
+a[2] = "hen";
+a.length // 3
+{% endhighlight %}
 
-A more convenient notation is to use an array literal:
+Uma forma mais conveniente de utilização de um __array__, na verdade a mais usada:
 
-    var a = ["dog", "cat", "hen"];
-    a.length
+{% highlight javascript %}
+var a = ["dog", "cat", "hen"];
+a.length // 3
+{% endhighlight %}
 
 
 ### Funções
 
-
-    function add(x, y) {
-        var total = x + y;
-        return total;
-    }
-
+{% highlight javascript %}
+function add(x, y) {
+    var total = x + y;
+    return total;
+}
+{% endhighlight %}
 
 ### Objetos
 
-<hr>
-    var obj = new Object();
 
-<hr>
-    var obj = {};
+Para criar um objeto vazio:
 
-<hr>
+{% highlight javascript %}var obj = {};{% endhighlight %}
 
-    function Person(name, age)
-    {
-      this.name = name;
-      this.age = age;
+Podemos criar um objeto com propriedades e métodos: 
+
+{% highlight javascript %}
+var obj = {
+    name: "Carrot",
+    "for": "Max",
+    details: {
+        color: "orange",
+        size: 12
     }
+}
+{% endhighlight %}
 
-    // Define a object
-    var You = new Person("You", 36);
+E acessar as propriedades dessa forma:
 
-<hr>
-    obj.name = "Simon";
-    var name = obj.name;
+{% highlight javascript %}
+obj.details.color      // orange
+obj["details"]["size"] // 12
+{% endhighlight %}
 
-<hr>
-    obj["name"] = "Simon";
-    var name = obj["name"];
+Outro exemplo.
 
-<hr>
-    var obj = {
-        name: "Carrot",
-        "for": "Max",
-        details: {
-            color: "orange",
-            size: 12
-        }
-    }
+Funções também se comportam como objetos.
+
+{% highlight javascript %}
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+{% endhighlight %}
+
+Instaciamos o objeto.
+
+{% highlight javascript %}
+var obj = new Person("You", 36);
+{% endhighlight %}
+
+Alteramos os valores das propriedades.
+
+{% highlight javascript %}
+obj.name = "Simon";
+obj.name; // print 'Simon'
+{% endhighlight %}
 
 
-Attribute access can be chained together:
+### Fontes
 
-    obj.details.color
-    orange
-    obj["details"]["size"]
-    12
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript]("link-externo")
+
+

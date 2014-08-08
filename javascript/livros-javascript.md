@@ -33,3 +33,8 @@ Livros avançados
 - JavaScript for Web Develpers
 
 Incluíndo a lista [http://lifeofjs.com/](http://lifeofjs.com/)
+
+
+### Outras fontes
+
+- [http://www.funnyant.com/giveaways/javascriptbooks/?lucky=2248](http://www.funnyant.com/giveaways/javascriptbooks/?lucky=2248"link-externo")
