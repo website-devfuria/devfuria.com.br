@@ -177,7 +177,7 @@ Aspas simples também funciona.
 Números
 ---
 
-Python possue `+ - * /`, nem precisava falar!. 
+Python possui `+ - * /`, nem precisava falar!. 
 
 Mas talvez você se pergunte como calcular uma potência.
 
