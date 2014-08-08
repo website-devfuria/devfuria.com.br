@@ -1,10 +1,15 @@
+---
+layout:      materia
+title:       Django e mysql
+description: 
+---
 
 
 alterar... /mysite/settings.py
 
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'ENGINE': 'django.db.backends.mysql',
             'NAME': 'mydatabase',
             'USER': 'mydatabaseuser',
             'PASSWORD': 'mypassword',
@@ -12,18 +17,45 @@ alterar... /mysite/settings.py
         }
     }
 
-    python manage.py runserver
+
+Valide os models (inclue o arquivo sttings, uma vez que ele vai precisar para testar os models)
+
+	python manage.py validate
+
+Se passaram, sincronize com o DB.
+
+	python manage.py syncdb
+
+Como teste final rode o servidor `python manage.py runserver`.
+
+
+
+
+Error loading MySQLdb module: No module named MySQLdb
+===
+
+Se estiver criando um projeto __Django__ e configurando ele para trabalhar com
+o __MySql__. Ao rodar o servidor com o comando `python manage.py runserver` e
+receber a seguinte mensagem
 
         Error loading MySQLdb module: No module named MySQLdb
 
-    pip install MySQL-python
+Tente instalar o pacote `MySQL-python` através do __PIP__, veja o comando:
+
+	pip install MySQL-python
+
+Um erro atrás do outro. No meu caso, a instalação reclamou do __mysql_config__.
 
         EnvironmentError: mysql_config not found
 
-    apt-get install python-mysqldb
+Corriga executando instalando o pacot __python-mysqldb__ pelo __apt-get__:
 
-    pip install MySQL-python (já não é mais necessário)
+	apt-get install python-mysqldb
 
-        Requirement already satisfied
+OK, aí tentei novamente instalar o __mysql_config__ `pip install MySQL-python` e... 
+    
+    Requirement already satisfied
 
-    python manage.py runserver ( só para testar)
+Para fazer o teste final rode o servidor do Django `python manage.py runserver`.
+
+
