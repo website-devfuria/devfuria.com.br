@@ -36,8 +36,6 @@ Código completo
 #include <assert.h>
 
 int compararStrings(char str1[], char str2[]) {
-    int i;
-
     int i = 0;
 
     do {
