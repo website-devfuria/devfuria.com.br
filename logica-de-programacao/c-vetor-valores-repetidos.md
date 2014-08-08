@@ -22,7 +22,7 @@ int main() {
     vet[0] = 100;
     vet[1] = 200;
     vet[2] = 300;
-    vet[3] = 300; // valor repitido
+    vet[3] = 300; // valor repetido
     vet[4] = 500;
 
     for (i = 0; i <= tamanho; i++) {
