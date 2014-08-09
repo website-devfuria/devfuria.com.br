@@ -1,7 +1,7 @@
 ---
 layout:     materia
 title:      Canvas - Desenhando linhas (lineTo e moveTo)
-descriptin: Descubra como desenhar linhas co os métodos lineTo() e moveTo()
+descriptin: Descubra como desenhar linhas com os métodos lineTo() e moveTo()
 ---
 
 
