@@ -28,6 +28,9 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^js\/canvas\/line-width\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/line-width\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^js\/canvas\/lineJoin-miter-round-bevel\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/linejoin-miter-round-bevel\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^regexp\/basico\/preg\-match\-all\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-all\-basico\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
