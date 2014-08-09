@@ -8,25 +8,46 @@ description: Tudo o que você precisa saber sobre javascript a apartir do zero
 > baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de 
 > script da Web. Também utilizada em vários outros ambientes como __node.js__ e __Apache CouchDB__.".
 >
-> Mozilla Fundation
+> (Mozilla Fundation)
+
+> JavaScript é uma linguagem orientada a objetos. Isso significa que, em vez de ter funções definidas globalmente para
+> operar em valores de vários tipos, os próprios tipos definem __métodos__ para trabalhar com valores. Para classificar
+> os elementos de um array `a`, por exemplo, não passamos `a` para uma função `sort()`. Em vez disso, chamamos o método
+> `sort()` de `a`:
+>
+> `a.sort() // A versão orientada a objetos de sort(a)`
+>
+> (Flanagan, pag 29 - JavaScript, o guia definitivo)
+
 
 Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).
 
 
 
-Como começar
+Onde executar (rodar) JavaScript
 ---
 
 Você pode executar JavaScript em um navegador web, dê preferência o [FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo").
 
-Mas também pode executá-lo em linho de comando através do [node.js](http://nodejs.org/ "link-externo").
+Mas também pode executá-lo em linha de comando através do [node.js](http://nodejs.org/ "link-externo").
+
+Leia mais sobre [aqui](./).
+
+
+Como começar
+---
+
+Conheca [o básico da sintaxe de JavaScript](./sintaxe-basica/) através deste artigo.
 
 Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/tracks/javascript "link-externo").
+
+
+
 
 Site Oficial
 ---
 
-[https://developer.mozilla.org/en-US/learn/javascript](https://developer.mozilla.org/en-US/learn/javascript "link-externo")
+- [Mozzila - JavaScript](https://developer.mozilla.org/en-US/learn/javascript "link-externo")
 
 
 
