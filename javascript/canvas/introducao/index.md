@@ -152,9 +152,9 @@ Exemplos
 
 ### MDN
 
-Abaixo temos o exemplo básico da MDN
+Abaixo temos o exemplo básico da MDN.
 
-<p><img src="canvas-exemplo-mdn.png" alt="foo" title="fig" class="canvas"/></p>
+<p><img src="canvas-exemplo-mdn.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
 
 {% highlight javascript %}
