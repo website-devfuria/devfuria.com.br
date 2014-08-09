@@ -33,7 +33,7 @@ Os tipos em JavaScript podem ser divididos em duas categorias:
 
 Os tipo primitivos incluem números, strings e valores booleanos.
 
-Os valores especiais `null` e `undefined` são valores primitivos mas não são números, nme string e nem booleanos.
+Os valores especiais `null` e `undefined` são valores primitivos mas não são números, nem string e nem booleanos.
 
 Qualquer valor em JavaScript que não seja número, string, booleano, null ou undefined é um objeto.
 
@@ -96,14 +96,14 @@ Os valores booleanos são representados por `true` e `false`.
 
 
 
-
 ### null e undefined
 
 A palavra chave `null` indica a ausência de um valor.
 
 Mas também há um segundo valor que indica ausência de valor: `undefined`.
 
-O valor indefinido representa uma aussência mais profunda. É o valor de variáveis que não foram inicializadas e também
+O valor indefinido representa uma ausência mais profunda. É o valor de variáveis que não foram inicializadas.
+
 
 
 ### Conversão
@@ -266,8 +266,9 @@ obj.name; // print 'Simon'
 {% endhighlight %}
 
 
+
 ### Fontes
 
-- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript]("link-externo")
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript "link-externo")
 
 

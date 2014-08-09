@@ -4,20 +4,20 @@ title:       JavaScript
 description: Tudo o que você precisa saber sobre javascript a apartir do zero
 ---
 
-> "Javascript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos, 
-> baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de 
-> script da Web. Também utilizada em vários outros ambientes como __node.js__ e __Apache CouchDB__.".
->
-> (Mozilla Fundation)
 
-> JavaScript é uma linguagem orientada a objetos. Isso significa que, em vez de ter funções definidas globalmente para
-> operar em valores de vários tipos, os próprios tipos definem __métodos__ para trabalhar com valores. Para classificar
-> os elementos de um array `a`, por exemplo, não passamos `a` para uma função `sort()`. Em vez disso, chamamos o método
-> `sort()` de `a`:
->
-> `a.sort() // A versão orientada a objetos de sort(a)`
->
-> (Flanagan, pag 29 - JavaScript, o guia definitivo)
+"Javascript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos, 
+baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de 
+script da Web. Também utilizada em vários outros ambientes como __node.js__ e __Apache CouchDB__.".
+(Mozilla Fundation)
+
+JavaScript é uma linguagem orientada a objetos. Isso significa que, em vez de ter funções definidas globalmente para
+operar em valores de vários tipos, os próprios tipos definem __métodos__ para trabalhar com valores. Para classificar
+os elementos de um array `a`, por exemplo, não passamos `a` para uma função `sort()`. 
+(Flanagan, pag 29 - JavaScript, o guia definitivo)
+
+Em vez disso, chamamos o método `sort()` de `a`: 
+
+    a.sort() // A versão orientada a objetos de sort(a)
 
 
 Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).
@@ -27,7 +27,7 @@ Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).
 Onde executar (rodar) JavaScript
 ---
 
-Você pode executar JavaScript em um navegador web, dê preferência o [FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo").
+Você pode executar JavaScript em um navegador web, dê preferência ao [FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo").
 
 Mas também pode executá-lo em linha de comando através do [node.js](http://nodejs.org/ "link-externo").
 
