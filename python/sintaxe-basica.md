@@ -4,11 +4,10 @@ title:       Python - O básico da sintaxe
 description: Um guia rápido e básico da linguagem Python.
 ---
 
-
-
 Este é um pequeno guia sobre a sintaxe de Python.
 
 Recomendado para quem nunca viu Python.
+
 
 
 Variáveis
@@ -50,6 +49,74 @@ Entradas
 
     print "Ah, so your name is %s, your quest is %s, " \
     "and your favorite color is %s." % (name, quest, color)
+
+
+
+Endentação
+---
+
+Em Python devemos endentar corretamente o código fonte.
+
+Abaixo vemos um código endentado de forma errada:
+
+    def spam():
+    eggs = 12
+    return eggs
+
+    print spam()
+
+Abaixo, vemos o mesmo código corrigido:
+
+    def spam():
+        eggs = 12
+        return eggs
+
+    print spam()
+
+
+### Blocos
+
+Todos os comandos que aceitam blocos:
+
++ if/elif/else
++ for/else
++ while/else
++ def
++ try/except  /finally/else
++ class
++ with
+
+Se o bloco tem apenas um comando, pode-se escrever tudo em uma linha:
+
+    if n < 0: print 'Valor inválido'
+
+
+
+Comentários
+---
+
+Em linha.
+
+    # comentário de linha
+    """ Esse é de bloco mas está em uma linha só """
+
+Em bloco.
+
+    """
+    comentários
+    comentários
+    comentários
+    """
+
+Aspas simples também funciona.
+
+    '''
+    this is
+    a multi-line
+    comment, i am handy for commenting out whole
+    chunks of code very fast
+    '''
+
 
 
 Tipos de dados básicos
@@ -107,72 +174,6 @@ Também é possível elaborar as seguintes expressões.
     type(0.99) == float # True
 
 
-Endentação
----
-
-Em Python devemos endentar corretamente o código fonte.
-
-Abaixo vemos um código endentado de forma errada:
-
-    def spam():
-    eggs = 12
-    return eggs
-
-    print spam()
-
-Abaixo, vemos o mesmo código corrigido:
-
-    def spam():
-        eggs = 12
-        return eggs
-
-    print spam()
-
-
-### Blocos
-
-Todos os comandos que aceitam blocos:
-
-+ if/elif/else
-+ for/else
-+ while/else
-+ def
-+ try/except  /finally/else
-+ class
-+ with
-
-Se o bloco tem apenas um comando, pode-se escrever tudo em uma linha:
-
-    if n < 0: print 'Valor inválido'
-
-
-
-
-Comentários
----
-
-Em linha.
-
-    # comentário de linha
-    """ Esse é de bloco mas está em uma linha só """
-
-Em bloco.
-
-    """
-    comentários
-    comentários
-    comentários
-    """
-
-Aspas simples também funciona.
-
-    '''
-    this is
-    a multi-line
-    comment, i am handy for commenting out whole
-    chunks of code very fast
-    '''
-
 
 Números
 ---
@@ -223,7 +224,6 @@ Escapamos (scape) caracters com o sinal `\`
 
 ### Métodos básicos de string
 
-
 <table>
     <tr>
         <th>função</th>
@@ -272,7 +272,6 @@ Exemplo, `"flavio.upper()"` equivale a `FLAVIO`.
 Leia mais sobre [fatimanento de sequencias](../sequencias/ "Python - Sequencias").
 
 
-
 ### Percorrendo strings (string lopping)
 
     for letter in "python":
@@ -286,6 +285,7 @@ Leia mais sobre [fatimanento de sequencias](../sequencias/ "Python - Sequencias"
     o
     n
     """
+
 
 
 Controle de fluxo (condicionais)
@@ -305,6 +305,7 @@ Controle de fluxo (condicionais)
         return -1
     else:
         return 0
+
 
 
 Laços de repetição
@@ -338,6 +339,7 @@ Exemplo com __break__:
     # 1 2 3 4 5
 
 
+
 Funções
 ---
 
@@ -355,6 +357,7 @@ Outro exemplo
 Leia mais sobre [funções](../functions/ "Python - funções(functions)").
 
 
+
 Imports
 ---
 
@@ -370,6 +373,7 @@ O código acima importará todos os módulos de `math`, para importar apenas o n
 Podemos importar todas as funções de `math` dessa forma:
 
     from math import *
+
 
 
 Datas
@@ -410,7 +414,6 @@ A função `len()` retorna o tamanho da lista.
     len(animals) # 4
 
 Leia mais sobre [listas](../listas/ "Python - listas(list)").
-
 
 
 ### range() 
@@ -462,6 +465,7 @@ Dicionários (dictionaries)
 Leia mais sobre [dicinonários](../dicionarios-dictionaries/ "Python - dicionários (dctionaries)").
 
 
+
 Lambdas
 ---
 
@@ -477,9 +481,6 @@ Para facilitar o entendimento, veja código abaixo, ele é similar.
         return x * 2
     print f(6)
     # 12
-
-
-
 
 
 
@@ -523,6 +524,7 @@ Abaixo, criamos mais métodos para nossa class `Triangle`.
             else:
                 return False
 
+
 ### Instanciando
 
 Abaixo vemos um exemplo de utilização da classe.
@@ -533,7 +535,6 @@ Abaixo vemos um exemplo de utilização da classe.
 
     zebra = Animal("Jeffrey")
     print zebra.name
-
 
 
 ### Herança
