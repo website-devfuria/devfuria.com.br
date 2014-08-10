@@ -1,7 +1,7 @@
 ---
 layout:     materia
 title:      Canvas
-descriptin: Seção sobre Canvas (html5 + javascript)
+description: Seção sobre Canvas (html5 + javascript)
 ---
 
 O Canvas é um elemento da especificação HTML5.
@@ -27,9 +27,9 @@ Exemplos de Canvas
 ---
 
 <div class="list-group">
-    <a href="/javascript/canvas/" class="list-group-item"></a>
-    <a href="/javascript/canvas/" class="list-group-item"></a>
-    <a href="/javascript/canvas/" class="list-group-item"></a>
+    <a href="/javascript/canvas/col-linhas-rando/" class="list-group-item">Linhas randômicas</a>
+    <a href="/javascript/canvas/col-linhas-grade/" class="list-group-item">Linhas de grade (grid lines)</a>
+    <a href="/javascript/canvas/col-retangulos/" class="list-group-item">Retângulos randômicos</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
