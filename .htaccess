@@ -31,10 +31,13 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^js\/canvas\/lineJoin-miter-round-bevel\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/linejoin-miter-round-bevel\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^js\/canvas\/lineCap-butt-round-square/\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/linecap-butt-round-square/\/" [R=301,L]
+RewriteRule ^js\/canvas\/lineCap-butt-round-square\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/linecap-butt-round-square\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^js\/canvas\/paths/\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/paths/\/" [R=301,L]
+RewriteRule ^js\/canvas\/paths\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/paths/\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^js\/canvas\/rect-strokeRect-fillRect\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/rect-strokerect-fillrect\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^regexp\/basico\/preg\-match\-all\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-all\-basico\/" [R=301,L]
