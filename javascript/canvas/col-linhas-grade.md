@@ -1,7 +1,7 @@
 ---
-layout:     materia
-title:      Canvas exemplo - grid Lines
-description: 
+layout:      materia
+title:       Canvas exemplo - grid Lines
+description: Um exemplo grid line para Canvas, com ele é possível testar visualmente os desenhos em canvas.
 ---
 
 <canvas id='myCanvas' height='150'>Canvas not supported</canvas>
