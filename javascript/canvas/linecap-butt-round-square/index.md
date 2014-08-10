@@ -1,7 +1,7 @@
 ---
 layout:     materia
 title:      Canvas - Limite das linhas (lineCap)
-descriptin: Artigo demonstrando como manipular os limites da linha de um Canvas
+description: Artigo demonstrando como manipular os limites da linha de um Canvas
 ---
 
 O método Estilo `lineCap()` define as extremidades das linhas.

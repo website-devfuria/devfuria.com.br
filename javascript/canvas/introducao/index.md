@@ -1,7 +1,7 @@
 ---
 layout:     materia
 title:      Introdução ao Canvas
-descriptin: Artigo introduzindo o canvas (HTML5)
+description: Artigo introduzindo o canvas (HTML5)
 ---
 
 

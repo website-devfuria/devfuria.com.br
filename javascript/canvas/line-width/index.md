@@ -1,7 +1,7 @@
 ---
 layout:     materia
 title:      Canvas - Tamanho das linhas  (lineWidth)
-descriptin: Descubra como alterar o comprimento (width) das linhas em Canvas
+description: Descubra como alterar o comprimento (width) das linhas em Canvas
 ---
 
 

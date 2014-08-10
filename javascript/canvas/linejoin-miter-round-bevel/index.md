@@ -1,7 +1,7 @@
 ---
 layout:     materia
 title:      Canvas - Junção das linhas (lineJoin)
-descriptin: Entenda o método lineJoin() do Canvas e suas propriedades (miter, round e bevel)
+description: Entenda o método lineJoin() do Canvas e suas propriedades (miter, round e bevel)
 ---
 
 

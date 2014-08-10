@@ -1,7 +1,7 @@
 ---
 layout:     materia
 title:      Canvas - Paths (caminhos)
-descriptin: Descubrindo os caminhos (paths) do Canvas.
+description: Descubrindo os caminhos (paths) do Canvas.
 ---
 
 

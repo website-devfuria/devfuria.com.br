@@ -1,7 +1,7 @@
 ---
 layout:     materia
 title:      JavaScript - O básico da sintaxe
-descriptin: Um guia rápido e básico da linguagem JavaScript.
+description: Um guia rápido e básico da linguagem JavaScript.
 ---
 
 

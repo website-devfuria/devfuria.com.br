@@ -1,7 +1,7 @@
 ---
 layout:     materia
 title:      Canvas - Desenhando retângulos (strokeRect, fillRect, clearRect e rect)
-descriptin: Aprenda a desenhar retângulos no elemento Canvas.
+description: Aprenda a desenhar retângulos no elemento Canvas.
 ---
 
 
