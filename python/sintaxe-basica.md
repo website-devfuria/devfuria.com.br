@@ -178,7 +178,7 @@ Também é possível elaborar as seguintes expressões.
 Números
 ---
 
-Python possue `+ - * /`, nem precisava falar!. 
+Python possui `+ - * /`, nem precisava falar!. 
 
 Mas talvez você se pergunte como calcular uma potência.
 
