@@ -34,7 +34,7 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^js\/canvas\/lineCap-butt-round-square\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/linecap-butt-round-square\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^js\/canvas\/paths\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/paths/\/" [R=301,L]
+RewriteRule ^js\/canvas\/paths\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/paths\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^js\/canvas\/rect-strokeRect-fillRect\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/rect-strokerect-fillrect\/" [R=301,L]
