@@ -34,6 +34,7 @@ Mas também pode executá-lo em linha de comando através do [node.js](http://no
 Leia mais sobre [aqui](./).
 
 
+
 Como começar
 ---
 
@@ -42,6 +43,17 @@ Conheca [o básico da sintaxe de JavaScript](./sintaxe-basica/) através deste a
 Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/tracks/javascript "link-externo").
 
 
+
+Canvas
+---
+
+O Canvas é um elemento da especificação HTML5.
+
+Obviamente, junto com o elemento, temos a API Canvas (funções que manipulam o elemento canvas).
+
+O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser.
+
+[Aprenda mais sobre o canvas](/javascript/canvas/ "link-externo").
 
 
 Site Oficial
