@@ -134,16 +134,12 @@ canvas, .canvas {
     -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
     box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
     width: 330px;
-    /*margin-top: 10px;*/
-    margin-bottom: 10px;
 }
 @media screen and (min-width: 914px) {
    body {
       width: 960px;
    }
 }
-
-
 
 
 a.list-group-item:first-child {
