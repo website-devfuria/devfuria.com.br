@@ -40,6 +40,12 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^js\/canvas\/rect-strokeRect-fillRect\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/rect-strokerect-fillrect\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^js\/canvas\/canvas-linhas-rando-coloridas\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/col-linhas-rando\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^js\/canvas\/canvas-grid/\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/col-linhas-grade\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^regexp\/basico\/preg\-match\-all\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-all\-basico\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
