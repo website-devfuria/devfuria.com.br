@@ -47,14 +47,6 @@ Este canvas é bem simples, ele desenha um grid para checarmos visualmente se o 
 Código fonte
 ---
 
-A função `drawGrid` utiliza-se de 2 laços `for` para desenhar as linhas.
-
-O primeiro laço move o pincel até (i, 0) e traça uma linha vertical até o final do canvas (i, altura-do-canvas).
-Ele vai horizontalmente desenhando linhas verticais.
-
-O segundo laço move o pincel até (0, i) e traça uma linha horizontal até o final do canvas (largura-do-canvas, i).
-Ele vai verticalmente desenhando linhas horizontais.
-
 {% highlight javascript %}
 /**
  * Função que retorna um grid
