@@ -125,6 +125,7 @@ Continuaremos a praticar vetores mas agora com strings! Se você não sabe nada 
 
 <div class="list-group">
     <a href="/logica-de-programacao/c-strings-comparar/" class="list-group-item">Comparar duas strings</a>
+    <a href="/logica-de-programacao/c-strings-concatenar/" class="list-group-item">Concatenar duas strings</a>
 </div> 
 
 
