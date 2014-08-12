@@ -124,6 +124,7 @@ Continuaremos a praticar vetores mas agora com strings! Se você não sabe nada 
 - [O que você precisa saber sobre strings]()
 
 <div class="list-group">
+    <a href="/logica-de-programacao/c-strings-contar/" class="list-group-item">Contar quantidade de caracter da string</a>
     <a href="/logica-de-programacao/c-strings-comparar/" class="list-group-item">Comparar duas strings</a>
     <a href="/logica-de-programacao/c-strings-concatenar/" class="list-group-item">Concatenar duas strings</a>
 </div> 
