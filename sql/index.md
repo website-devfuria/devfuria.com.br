@@ -18,7 +18,7 @@ Apesar de utilizar o MySQL, eu foquei o curso na linguagem SQL. Então, mesmo qu
 acredito que será possível acompanhar o curso. O único porém é que eu faço uso constante do terminal.
 
 Para você que não conhece nada sobre banco de dados, talvez queira ler uma
-[Introdução ao conceito intuitivo de banco de dados](/sql/intro/)
+[Introdução ao conceito intuitivo de banco de dados](/sql/intro/).
 
 
 {% include lista-mysql-titulo.html %}

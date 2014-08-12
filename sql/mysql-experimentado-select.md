@@ -5,9 +5,11 @@ description: Seus primeiros passos com a instrução 'select'
 ---
 
 
-O MySQL possue algumas funções que nos auxiliam. Uma delas é a `version()`. Ela retorna a versão do MySQL. 
+O MySQL possue algumas funções que nos auxiliam.
 
-Mas não podemos digitar apenas `version()`, pois isso gerará um [erro 1064](/sql/mysql-erro-1064), precisamos utilizar 
+Uma delas é a `version()`, ela retorna a versão do MySQL. 
+
+Mas não podemos digitar apenas `version()`, pois isso gerará um [erro 1064](../mysql-erro-1064), precisamos utilizar 
 o comando `SELECT` junto, dessa forma:
 
     SELECT version();
@@ -60,6 +62,6 @@ Experimente mais...
 Case INsensitive
 ---
 
-O MySql não faz distinção entra caixa alta ou baixa.
+O MySQL não faz distinção entra caixa alta ou baixa.
 
 Isso significa que `SELECT now();` é igual a `select NOW();` que é igual a `SeLeCt NoW();`.

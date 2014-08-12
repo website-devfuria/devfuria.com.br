@@ -36,4 +36,11 @@ e habilite a senha digitando...
 
     mysqladmin -u root password [your_password_here]
 
-Se tudo ocorreu bem poderemos acessar o servidor __mysql via console__.
+
+
+Para testar a instalação
+---
+
+Se tudo ocorreu bem poderemos [acessar o servidor MySQL via console](../mysql-pelo-terminal)
+e saber se ele está ou não funcionando.
+

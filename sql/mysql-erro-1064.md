@@ -4,7 +4,7 @@ title:       Erro 1064 - aprendendo a ler mensagens de erro
 description: Aprenderemos como ler mensagens de erro do MySQL.
 ---
 
-Na matéria anterior vimos como se conectar com o banco de dados via console e é isso que vamos continuar fazendo aqui
+Na [matéria anterior](../mysql-pelo-terminal/) vimos como se conectar com o banco de dados via console e é isso que vamos continuar fazendo aqui
 
 O que fazer depois que acabamos de logar-se no DB?
 
@@ -16,7 +16,7 @@ Quais são os primeiros comandos?
 Começando com um erro (1064)!
 ---
 
-Vamos começar bem rssss
+Vamos começar bem!!! rssss
 
 Após logar-se no MySQL, acreditando que você está no console conforme abaixo:
 
@@ -69,3 +69,7 @@ E de "quebra" diz qual é a linha.
 __Essas informações serão extremamente úteis quando precisar debugar sua SQL!__
 
 Por isso, repito, acostume-se com ela e jamais a ignore.
+
+Já sabemos como logar no MySQL pelo terminal e sabemos também como ler as mensagens de erro.
+
+Então vamos para o próximo passo: [Listar e selecionar bases de dados](../mysql-listar-base/).

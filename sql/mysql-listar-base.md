@@ -42,3 +42,5 @@ Quando formos para uma linguagem do lado do servidor (como PHP), deveremos lembr
 2. Escolhar uma base de dados qualquer
 3. Executar os statements SQL
 
+
+Já logamos, já escolhemos a base e escolhemos a tabela. Então [vamos brincar com a instrução 'select'](../mysql-experimentado-select).
