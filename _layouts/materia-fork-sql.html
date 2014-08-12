@@ -10,11 +10,13 @@
             </header>
 
             {% include fork-me.html %}
-            
+
             <article>
                 {{ content }}
             </article>
         </div>
-        <footer></footer>
+        <footer>
+            {% include footer-sql.html %}
+        </footer>
     </body>
 </html>
