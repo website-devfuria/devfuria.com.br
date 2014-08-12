@@ -1,9 +1,8 @@
 ---
-layout: materia
-title: Introdução ao conceito intuitivo de banco de dados
+layout:      materia-fork-sql
+title:       Introdução ao conceito intuitivo de banco de dados
+description: O que é um banco de dados? O que é uma tabela? O que são registros?
 ---
-
-
 
 ![Desenho em quadrinhos satirizando ao (mal)uso do Excel!](vida_prog_112.png "O Excel foi, é e sempre será utilizado 
 indevidamente como banco de dados.")
@@ -128,40 +127,7 @@ Eu quiz apenas introduzir os conceitos de forma intuitiva, falaremos exaustivame
 
 
 
-Instalando o MySQL
----
 
-O software, normalmente, se divide em duas partes: servidor e cliente.
-
-Existe a aplicação que roda lá no servidor e existe um pequeno emaranhado do código que roda no cliente.
-
-Como desenvolvedor, eu instalo na minha máquina as duas partes.
-
-### Ubuntu (família Debian)
-
-No terminal digite:
-
-    apt-get install mysql-server mysql-client
-
-Enquanto os arquivos são baixados e instalados o sistema lhe perguntará qual será a senha do root (para acessar o banco
-de dados), anote-a.
-
-### Fedora (família Had-Hat)
-
-O processo é parecido, só que você é quem define a senha:
-
-    yum install mysql mysql-server
-
-inicie o serviço...
-
-    systemctl start mysqld.service
-    systemctl enable mysqld.service
-
-e habilite a senha digitando...
-
-    mysqladmin -u root password [your_password_here]
-
-Se tudo ocorreu bem poderemos acessar o servidor __mysql via console__.
 
 
 
@@ -247,7 +213,3 @@ O sistema responde com um simpático "Bye"... eu também, tchau!
 Fonte
 
 * [Manual oficial do MySQL](http://dev.mysql.com/doc/index.html "link-externo") 
-
-
-
-{% include lista-mysql.html %}
