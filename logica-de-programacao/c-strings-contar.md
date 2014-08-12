@@ -56,9 +56,7 @@ int main() {
 Desafio
 ---
 
-A função abaixo também funciona, porém a implementação é um pouco diferente.
-
-O desafio é entender o que está acontecendo.
+As funções abaixo também funcionam, porém a implementação é um pouco diferente.
 
     int contaChar(const char *str) {
         int i = 0;
@@ -66,3 +64,10 @@ O desafio é entender o que está acontecendo.
         return i;
     }
 
+A solução abaixo é do professor da [USP Paulo Feofiloff](http://www.ime.usp.br/~pf/algoritmos/aulas/bubi2.html "link-externo").
+
+    unsigned int strlen( string s) {
+       int i;
+       for (i = 0; s[i] != '\0'; ++i) ;
+       return i;
+    }
