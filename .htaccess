@@ -55,7 +55,7 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^regexp\/basico\/preg\-match\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-basico\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^mysql-sql\/basico\/intro\/?$ "http\:\/\/www\.devfuria\.com\.br\/mysql-sql\/intro\/" [R=301,L]
+RewriteRule ^mysql-sql\/basico\/intro\/?$ "http\:\/\/www\.devfuria\.com\.br\/sql\/intro\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^
 RewriteRule ^flavio.alexandre-micheletti.php "http\:\/\/www\.devfuria\.com\.br\/flavio-alexandre-micheletti.html" [R=301,L]
