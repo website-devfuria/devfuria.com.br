@@ -19,7 +19,7 @@ Não existe “criação automática” de variáveis
 
 Exemplo de atribuição:
 
-    reais = euros * taxa
+{% highlight python %}reais = euros * taxa{% endhighlight %}
 
 As variáveis `euros` e  `taxa` devem ser inicializadas, senão o erro `name 'euros' is not defined` será exibido.
 
@@ -30,26 +30,29 @@ Saídas
 
 Saída simples.
 
-    print "Welcome to Python!"
+{% highlight python %}print "Welcome to Python!"{% endhighlight %}
 
 Saída mais elaborada.
 
-    string_1 = "Camelot"
-    string_2 = "place"
-    print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+{% highlight python %}
+string_1 = "Camelot"
+string_2 = "place"
+print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+{% endhighlight %}
 
 
 
 Entradas
 ---
 
-    name  = raw_input("What is your name?")
-    quest = raw_input("What is your quest?")
-    color = raw_input("What is your favorite color?")
+{% highlight python %}
+name  = raw_input("What is your name?")
+quest = raw_input("What is your quest?")
+color = raw_input("What is your favorite color?")
 
-    print "Ah, so your name is %s, your quest is %s, " \
-    "and your favorite color is %s." % (name, quest, color)
-
+print "Ah, so your name is %s, your quest is %s, " \
+"and your favorite color is %s." % (name, quest, color)
+{% endhighlight %}
 
 
 Endentação
@@ -59,19 +62,23 @@ Em Python devemos endentar corretamente o código fonte.
 
 Abaixo vemos um código endentado de forma errada:
 
-    def spam():
-    eggs = 12
-    return eggs
+{% highlight python %}
+def spam():
+eggs = 12
+return eggs
 
-    print spam()
+print spam()
+{% endhighlight %}
 
 Abaixo, vemos o mesmo código corrigido:
 
-    def spam():
-        eggs = 12
-        return eggs
+{% highlight python %}
+def spam():
+    eggs = 12
+    return eggs
 
-    print spam()
+print spam()
+{% endhighlight %}
 
 
 ### Blocos
@@ -88,7 +95,7 @@ Todos os comandos que aceitam blocos:
 
 Se o bloco tem apenas um comando, pode-se escrever tudo em uma linha:
 
-    if n < 0: print 'Valor inválido'
+{% highlight python %}if n < 0: print 'Valor inválido'{% endhighlight %}
 
 
 
@@ -97,25 +104,31 @@ Comentários
 
 Em linha.
 
-    # comentário de linha
-    """ Esse é de bloco mas está em uma linha só """
+{% highlight python %}
+# comentário de linha
+""" Esse é de bloco mas está em uma linha só """
+{% endhighlight %}
 
 Em bloco.
 
-    """
-    comentários
-    comentários
-    comentários
-    """
+{% highlight python %}
+"""
+comentários
+comentários
+comentários
+"""
+{% endhighlight %}
 
 Aspas simples também funciona.
 
-    '''
-    this is
-    a multi-line
-    comment, i am handy for commenting out whole
-    chunks of code very fast
-    '''
+{% highlight python %}
+'''
+this is
+a multi-line
+comment, i am handy for commenting out whole
+chunks of code very fast
+'''
+{% endhighlight %}
 
 
 
@@ -159,19 +172,23 @@ Tipos de dados básicos
 
 Se, por exemplo, você digitar no console `dict` ele retornará:
 
-    <type 'dict'>
+{% highlight python %}<type 'dict'>{% endhighlight %}
 
 
 A função `type()` mostra o tipo do dado, veja alguns exemplos.
 
-    type("text")        # <type 'text'>
-    type(1)             # <type 'int'>
-    type(0.99)          # <type 'float'>
+{% highlight python %}
+type("text")        # <type 'text'>
+type(1)             # <type 'int'>
+type(0.99)          # <type 'float'>
+{% endhighlight %}
 
 Também é possível elaborar as seguintes expressões.
 
-    type(1) == int      # True
-    type(0.99) == float # True
+{% highlight python %}
+type(1) == int      # True
+type(0.99) == float # True
+{% endhighlight %}
 
 
 
@@ -182,24 +199,30 @@ Python possui `+ - * /`, nem precisava falar!.
 
 Mas talvez você se pergunte como calcular uma potência.
 
-    10 ** 2 # print 100
+{% highlight python %}10 ** 2 # print 100{% endhighlight %}
 
 Ou o resto da divisão com o operador módulo `%`.
 
-    3 % 2 = 1
-    5 % 2 = 1
+{% highlight python %}
+3 % 2 = 1
+5 % 2 = 1
+{% endhighlight %}
 
 Veja também algumas funções Matemáticas
 
-    max(5, 6, 7) # 7
-    min(5, 6, 7) # 5
-    abs(-1)      # 1
+{% highlight python %}
+max(5, 6, 7) # 7
+min(5, 6, 7) # 5
+abs(-1)      # 1
+{% endhighlight %}
 
 
 Para trabalhar com números randômicos será preciso importar o módulo `random`.
 
-    import random
-    random.randint(1, 10)
+{% highlight python %}
+import random
+random.randint(1, 10)
+{% endhighlight %}
 
 O código acima irá gerar números randômicos entre 1 e 10 (incluindo o 1 e o 10).
 
@@ -210,16 +233,18 @@ Strings
 
 Concatenamos strings com o sinal `+`.
 
-    "Spam " + "and" + " eggs"
+{% highlight python %}"Spam " + "and" + " eggs"{% endhighlight %}
 
 Quando concatenamos com um número, precisamos fazer a conversão.
 
-    "The value of pi is around " + str(3.14)
+{% highlight python %}"The value of pi is around " + str(3.14){% endhighlight %}
 
 Escapamos (scape) caracters com o sinal `\`
 
-    'There's a snake in my boot!'  # errado
-    'There\'s a snake in my boot!' # correto
+{% highlight python %}
+'There's a snake in my boot!'  # errado
+'There\'s a snake in my boot!' # correto
+{% endhighlight %}
 
 
 ### Métodos básicos de string
@@ -256,55 +281,62 @@ Exemplo, `"flavio.upper()"` equivale a `FLAVIO`.
 
 ### Acessando pelo index
 
-    +---+---+---+---+---+---+
-    | p | y | t | h | o | n |
-    +---+---+---+---+---+---+
-      0   1   2   3   4   5
+{% highlight python %}
++---+---+---+---+---+---+
+| p | y | t | h | o | n |
++---+---+---+---+---+---+
+  0   1   2   3   4   5
+{% endhighlight %}
 
-<hr>
-    "python"[0] # 'p'
-    "python"[1] # 'y'
-    "python"[2] # 't'
-    "python"[3] # 'h'
-    "python"[4] # 'o'
-    "python"[5] # 'n'
+{% highlight python %}
+"python"[0] # 'p'
+"python"[1] # 'y'
+"python"[2] # 't'
+"python"[3] # 'h'
+"python"[4] # 'o'
+"python"[5] # 'n'
+{% endhighlight %}
 
 Leia mais sobre [fatimanento de sequencias](../sequencias/ "Python - Sequencias").
 
 
 ### Percorrendo strings (string lopping)
 
-    for letter in "python":
-        print letter
+{% highlight python %}
+for letter in "python":
+    print letter
 
-    """
-    p
-    y
-    t
-    h
-    o
-    n
-    """
+"""
+p
+y
+t
+h
+o
+n
+"""
+{% endhighlight %}
 
 
 
 Controle de fluxo (condicionais)
 ---
 
+{% highlight python %}
+if expressao == True:
+    print "true"
+else:
+    print "false"
+{% endhighlight %}
 
-    if expressao == True:
-        print "true"
-    else:
-        print "false"
 
-<hr>
-
-    if answer > 5:
-        return 1
-    elif answer < 5:
-        return -1
-    else:
-        return 0
+{% highlight python %}
+if answer > 5:
+    return 1
+elif answer < 5:
+    return -1
+else:
+    return 0
+{% endhighlight %}
 
 
 
@@ -313,46 +345,54 @@ Laços de repetição
 
 ### while
 
-    count = 0
-    while count <= 5:
-        print "Hello, I am a while and count is", count
-        count += 1
-    
-    """
-    Hello, I am a while and count is 0
-    Hello, I am a while and count is 1
-    Hello, I am a while and count is 2
-    Hello, I am a while and count is 3
-    Hello, I am a while and count is 4
-    Hello, I am a while and count is 5
-    """
+{% highlight python %}
+count = 0
+while count <= 5:
+    print "Hello, I am a while and count is", count
+    count += 1
+
+"""
+Hello, I am a while and count is 0
+Hello, I am a while and count is 1
+Hello, I am a while and count is 2
+Hello, I am a while and count is 3
+Hello, I am a while and count is 4
+Hello, I am a while and count is 5
+"""
+{% endhighlight %}
 
 Exemplo com __break__:
 
-    count = 0
-    while True:
-        print count
-        count += 1
-        if count >= 5:
-            break
+{% highlight python %}
+count = 0
+while True:
+    print count
+    count += 1
+    if count >= 5:
+        break
 
-    # 1 2 3 4 5
+# 1 2 3 4 5
+{% endhighlight %}
 
 
 
 Funções
 ---
 
-    def foo():
-        return "retorno da função"
+{% highlight python %}
+def foo():
+    return "retorno da função"
 
-    print foo() "retorno da função"
+print foo() "retorno da função"
+{% endhighlight %}
 
 Outro exemplo
 
-    def add_two(a, b):
-        c = a + b
-        return c
+{% highlight python %}
+def add_two(a, b):
+    c = a + b
+    return c
+{% endhighlight %}
 
 Leia mais sobre [funções](../functions/ "Python - funções(functions)").
 
@@ -363,55 +403,63 @@ Imports
 
 Para importar um módulo utilizamos o `import`.
 
-    import math
-    print math.sqrt(25)
+{% highlight python %}
+import math
+print math.sqrt(25)
+{% endhighlight %}
 
 O código acima importará todos os módulos de `math`, para importar apenas o necessário utilizamos `from`.
 
-    from math import sqrt
+{% highlight python %}from math import sqrt{% endhighlight %}
 
 Podemos importar todas as funções de `math` dessa forma:
 
-    from math import *
+{% highlight python %}
+from math import *
+{% endhighlight %}
 
 
 
 Datas
 ---
 
-    from datetime import datetime
-    now = datetime.now()
-    print now
-    print now.year
-    print now.month
-    print now.day
+{% highlight python %}
+from datetime import datetime
+now = datetime.now()
+print now
+print now.year
+print now.month
+print now.day
+{% endhighlight %}
 
 Para imprimir a data no formato brasileiro:
 
-    print '%s/%s/%s' % (now.day, now.month, now.year)
+{% highlight python %}print '%s/%s/%s' % (now.day, now.month, now.year){% endhighlight %}
 
 Imprimindo as horas:
 
-    print '%s:%s:%s' % (now.hour, now.minute, now.second)
+{% highlight python %}print '%s:%s:%s' % (now.hour, now.minute, now.second){% endhighlight %}
 
 
 
 Listas (lists)
 ---
 
-    animals = ["pangolin", "cassowary", "sloth", "dog"];
-    animals[0]   # 'pangolin'
-    animals[1]   # 'cassowary'
-    animals[2]   # 'sloth'
-    animals[3]   # 'dog'
+{% highlight python %}
+animals = ["pangolin", "cassowary", "sloth", "dog"];
+animals[0]   # 'pangolin'
+animals[1]   # 'cassowary'
+animals[2]   # 'sloth'
+animals[3]   # 'dog'
+{% endhighlight %}
 
 Ao acessar um índice inexistente recebemos um erro.
 
-    animals[4]   # IndexError: list index out of range
+{% highlight python %}animals[4]   # IndexError: list index out of range{% endhighlight %}
 
 A função `len()` retorna o tamanho da lista.
 
-    len(animals) # 4
+{% highlight python %}len(animals) # 4{% endhighlight %}
 
 Leia mais sobre [listas](../listas/ "Python - listas(list)").
 
@@ -426,41 +474,47 @@ A função `range()` retorna uma lista de inteiros. Seu conteúdo é definido pe
 
 Exemplos:
 
-    range(4)
-    [0, 1, 2, 3]
+{% highlight python %}
+range(4)
+[0, 1, 2, 3]
 
-    range(2, 8)
-    [2, 3, 4, 5, 6, 7]
+range(2, 8)
+[2, 3, 4, 5, 6, 7]
 
-    range(2, 13, 3)
-    [2, 5, 8, 11]
+range(2, 13, 3)
+[2, 5, 8, 11]
+{% endhighlight %}
 
 
 Percorrendo (lopping):
 
-    for i in range(20):
-        print i
+{% highlight python %}
+for i in range(20):
+    print i
+{% endhighlight %}
 
 
 
 Dicionários (dictionaries)
 ---
 
-    people = {
-        "name": "joao",
-        "age": 39,
-        "skylls": ['python', 'ruby', 'php']
-    }
+{% highlight python %}
+people = {
+    "name": "joao",
+    "age": 39,
+    "skylls": ['python', 'ruby', 'php']
+}
 
-    print people['name']
-    print people['age']
-    print people['skylls']
+print people['name']
+print people['age']
+print people['skylls']
 
-    """
-    joao
-    40
-    ['python', 'ruby', 'php']
-    """
+"""
+joao
+40
+['python', 'ruby', 'php']
+"""
+{% endhighlight %}
 
 Leia mais sobre [dicinonários](../dicionarios-dictionaries/ "Python - dicionários (dctionaries)").
 
@@ -471,16 +525,20 @@ Lambdas
 
 Exemplo:
 
-    g = lambda x: x * 2
-    print g(6) 
-    # 12
+{% highlight python %}
+g = lambda x: x * 2
+print g(6) 
+# 12
+{% endhighlight %}
 
 Para facilitar o entendimento, veja código abaixo, ele é similar.
 
-    def f(x):
-        return x * 2
-    print f(6)
-    # 12
+{% highlight python %}
+def f(x):
+    return x * 2
+print f(6)
+# 12
+{% endhighlight %}
 
 
 
@@ -493,63 +551,73 @@ A palavra `pass` serve para criarmos um classe vazia.
 
 Abaixo, criamos a classe vazia `Foo` que herda de `object`
 
-    class Foo(object):
-        pass
+{% highlight python %}
+class Foo(object):
+    pass
+{% endhighlight %}
 
 Abaixo, criamos a classe `Triangle` com um método construtor `__init__`
 
-    class Triangle(object):
-        def __init__(self, angle1, angle2, angle3):
-            self.angle1 = angle1
-            self.angle2 = angle2
-            self.angle3 = angle3
+{% highlight python %}
+class Triangle(object):
+    def __init__(self, angle1, angle2, angle3):
+        self.angle1 = angle1
+        self.angle2 = angle2
+        self.angle3 = angle3
+{% endhighlight %}
 
 Todo método deve aceitar como parâmetro a palavra `self`, que se refere ao próprio objeto.
 
 Abaixo, criamos mais métodos para nossa class `Triangle`.
 
-    class Triangle(object):
+{% highlight python %}
+class Triangle(object):
 
-        def __init__(self, angle1, angle2, angle3):
-            self.angle1 = angle1
-            self.angle2 = angle2
-            self.angle3 = angle3
+    def __init__(self, angle1, angle2, angle3):
+        self.angle1 = angle1
+        self.angle2 = angle2
+        self.angle3 = angle3
 
-        def soma_triangulo(self):
-            return self.angle1 + self.angle2 + self.angle3
+    def soma_triangulo(self):
+        return self.angle1 + self.angle2 + self.angle3
 
-        def check_angles(self):
-            if(self.soma_triangulo() == 180):
-                return True
-            else:
-                return False
+    def check_angles(self):
+        if(self.soma_triangulo() == 180):
+            return True
+        else:
+            return False
+{% endhighlight %}
 
 
 ### Instanciando
 
 Abaixo vemos um exemplo de utilização da classe.
 
-    class Animal(object):
-        def __init__(self, name):
-            self.name = name
+{% highlight python %}
+class Animal(object):
+    def __init__(self, name):
+        self.name = name
 
-    zebra = Animal("Jeffrey")
-    print zebra.name
+zebra = Animal("Jeffrey")
+print zebra.name
+{% endhighlight %}
 
 
 ### Herança
 
 Um exemplo simples.
 
-    class Shape(object):
-        def __init__(self, number_of_sides):
-            self.number_of_sides = number_of_sides
+{% highlight python %}
+class Shape(object):
+    def __init__(self, number_of_sides):
+        self.number_of_sides = number_of_sides
 
-    class Triangle(Shape):
-        def __init__(self, side1, side2, side3):
-           self.side1 = side1
-           self.side2 = side2
-           self.side3 = side3
+class Triangle(Shape):
+    def __init__(self, side1, side2, side3):
+       self.side1 = side1
+       self.side2 = side2
+       self.side3 = side3
+{% endhighlight %}
 
 
 ### Fontes
