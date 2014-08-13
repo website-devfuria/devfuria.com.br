@@ -13,6 +13,15 @@ Seja bem vindo(a) a seção Git!
 > (Site oficial)
 
 
+Como começar
+---
+
+Para treinar os comandos no terminal experiemente o [curso (gratuito) da Code Schooll](https://try.github.io/levels/1/challenges/1 "link-externo").
+
+Para entender sobre o __conceito de branches__ experimente o site [Learn Git Branching](http://pcottle.github.io/learnGitBranching/ "link-externo")
+
+
+
 Artigos
 ---
 
