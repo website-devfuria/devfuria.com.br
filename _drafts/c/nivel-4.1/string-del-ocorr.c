@@ -35,8 +35,3 @@ void del(char str[], char ch) {
 
     printf("ncorrected string is : %s", str1);
 }
-//Output:
-//
-//Enter the string : abhiman
-//Enter character which you want to delete : a
-//Corrected string is : bhimn
