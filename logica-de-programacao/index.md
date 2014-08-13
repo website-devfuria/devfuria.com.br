@@ -128,6 +128,7 @@ Continuaremos a praticar vetores mas agora com strings! Se você não sabe nada 
     <a href="/logica-de-programacao/c-strings-contar-vogais/" class="list-group-item">Contar quantidade de vogais</a>
     <a href="/logica-de-programacao/c-strings-comparar/" class="list-group-item">Comparar duas strings</a>
     <a href="/logica-de-programacao/c-strings-concatenar/" class="list-group-item">Concatenar duas strings</a>
+    <a href="/logica-de-programacao/c-strings-reverse/" class="list-group-item">Inverter string </a>
 </div> 
 
 
