@@ -31,12 +31,6 @@ Nós utilizaremos o comando `assert()` para simular um teste. Eu disse "simular"
 
 Não é para utilizar o `assert()` a torto e direito, Vamos pegá-lo emprestado apenas para simular os testes, só isso!
 
-
-
-
-Exercícios na linguagem C
----
-
 O que você precisa saber sobre a linguagem C para começar:
 
 - [Rápida introdução a linguagem C (apenas o suficiente para realizarmos os exercícios)](/logica-de-programacao/introducao-linguagem-c/)
@@ -48,6 +42,9 @@ O que você precisa saber sobre a linguagem C para começar:
 
 
 
+Exercícios na linguagem C
+---
+
 ### Exercícios nível 0 (mais fácil que a Seleção Brasileira...)
 
 <div class="list-group">
@@ -58,7 +55,6 @@ O que você precisa saber sobre a linguagem C para começar:
     <a href="/logica-de-programacao/c-dias-n-meses/" class="list-group-item">Descobrir os dias de 'n' meses</a>
     <a href="/logica-de-programacao/c-duas-variaveis/" class="list-group-item">Trocar o valor de duas variáveis</a>
 </div> 
-
 
 
 ### Exercícios nível 1
@@ -74,9 +70,7 @@ O que você precisa saber sobre a linguagem C para começar:
 
 ### Exercícios nível 2
 
-Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
-
-- [O que você precisa saber sobre funções]()
+Exercícios de lógica envolvendo [funções]().
 
 <div class="list-group">
     <a href="/logica-de-programacao/c-dobro-func/" class="list-group-item">O dobro de um número qualquer (funções)</a>
@@ -90,9 +84,7 @@ Utilizaremos funções! Se você não sabe nada sobre funções é melhor ler...
 
 ### Exercícios nível 3
 
-Exercícios um pouco mais elaborados. Utilizaremos função e provavelmente laços de repetição.
-
-- [O que você precisa saber sobre laços de repetição]()
+Exercícios para treinar [laços de repetição na linguagem C]().
 
 <div class="list-group">
     <a href="/logica-de-programacao/c-primo/" class="list-group-item">Número primo</a>
@@ -104,9 +96,7 @@ Exercícios um pouco mais elaborados. Utilizaremos função e provavelmente laç
 
 ### Exercícios nível 4
 
-Utilizaremos vetores! Se você não sabe nada sobre vetores é melhor ler...
-
-- [O que você precisa saber sobre vetores]()
+Exercícios para treinar [vetores na linguagem C]().
 
 <div class="list-group">
     <a href="/logica-de-programacao/c-vetor-simples/" class="list-group-item">Vetor simples - algoritmo para carregar um vetor</a>
@@ -116,12 +106,7 @@ Utilizaremos vetores! Se você não sabe nada sobre vetores é melhor ler...
     <a href="/logica-de-programacao/c-vetor-valores-repetidos/" class="list-group-item">Valores repetidos em vetor</a>
 </div> 
 
-
-### Exercícios nível 4.1
-
-Continuaremos a praticar vetores mas agora com strings! Se você não sabe nada sobre strings é melhor ler...
-
-- [O que você precisa saber sobre strings]()
+Ainda exercícios para treinar vetores, mas desta vez utilizando [strings]().
 
 <div class="list-group">
     <a href="/logica-de-programacao/c-strings-contar/" class="list-group-item">Contar quantidade de caracter da string</a>
@@ -137,14 +122,10 @@ Continuaremos a praticar vetores mas agora com strings! Se você não sabe nada 
 Exercícios na linguagem C++
 ---
 
-O que você precisa saber sobre a linguagem C++ para começar
-
 Faremos todos os exercícios praticando programação orientada a objetos.
 
 Se você não sabe nada sobre orientação a objetos, talvez queira ler...
-
-- [O básico do básico sobre Orientação a Objetos (vulgo OOP)]()
-
+[O básico do básico sobre Orientação a Objetos (vulgo OOP)]().
 
 <div class="list-group">
     <a href="/logica-de-programacao/cpp-calc-dobro/" class="list-group-item">O dobro de um número qualquer (oop)</a>
@@ -163,9 +144,12 @@ Eu não expliquei as partes conceituais, o que é DFD, o que é um teste de mesa
 
 Então acho justo deixar alguns links valiosos e que podem lhe ajudar, caso precise "dessas coisas".
 
-
-
 - [PDF de professor da USP ](http://www.ime.usp.br/~slago/pl-1.pdf "link-externo")
 - [PDF da Federal de RG](http://www.dca.ufrn.br/~affonso/DCA800/pdf/algoritmos_parte1.pdf "link-externo")
 - [Sequencia de videos sobre Lógica](http://www.cursou.com.br/informatica/curso-logica-de-programacao/ "link-externo")
  (Não recomendado caso você já esteja com sôno)
+
+
+![Figura satirizando a logica de programação](vida-prog-25.png "Tirinha satirizando a logica de programação")
+
+Fonte da imagem: [Vida de programador](http://vidadeprogramador.com.br/2011/03/22/logica-de-programacao/ "link-externo")
