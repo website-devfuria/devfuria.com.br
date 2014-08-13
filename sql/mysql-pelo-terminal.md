@@ -7,7 +7,7 @@ description: Aprenda a acesar o MySQL via terminal no Linux.
 
 Para testarmos a instalação do MySQL nada melhor do que acionarmos o aplicativo.
 
-O MySql utiliza a “label” `mysql>` na shell. Como exemplo veja a minha shell:
+O MySQL utiliza a “label” `mysql>` na shell. Como exemplo veja a minha shell:
 
     [flavio@localhost www.devfuria.com.br]$
 
