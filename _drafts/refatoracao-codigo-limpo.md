@@ -4,6 +4,14 @@ title: Refatoração e código limpo
 description: Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.
 ---
 
+
+onde entra isso...
+
++ YAGNI = You Aren't Going Need It
++ DRY = Don't Repeat Yourself
++ KISS = Keep It Simple, Stupid
+
+
 veja:
 http://books.google.com.br/books?id=0rGtKCNAoN0C&printsec=frontcover&dq=inauthor:%22Martin+Fowler%22&hl=pt-BR&sa=X&ei=v9WVU4qvDuTgsATCtoGgDQ&ved=0CCwQ6AEwAA#v=onepage&q&f=false
 
