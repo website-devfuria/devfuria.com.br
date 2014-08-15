@@ -46,24 +46,17 @@ Se você tiver certeza dessas informações fique tranquilo pois a interface de 
 
 
 
-
 Se o problema for o reconhecimento da placa de rede (e não a configuração)
 ---
 
-Não é um passo a passo e sim uma série de comandos que devem lhe ajduar a diagnosticar o problema.
+Aí você realmente está com azar pois eu não poderei te ajudar neste ponto.
 
-Na interface de instalação digite __CRTL + ALT + F1__ para alternar para um terminal.
+Meu conhecimento tem limites!
 
-Utilize o comando `ifconfig -a` para  listar todas as placas conectadas.
+Você terá que verificar a instalação da rede, a começar pela sua laca, depois o número IP, "pingar" na rede etc...
 
-O comando `lspci -v` lista as placas pci.
+Boa sorte!
 
-Utilize o comando `iwconfig` para saber se a placa está ok. Ele é uma espécie de __ifconfig__, porém específico para 
-redes sem fio. O comando lhe dará detalhes da força do sinal, uso de criptografia, nome de SSID, etc...
-
-O comando `dmesg | grep eth` procura por informações sobre placas ethernet, eth0, eth1, etc...
-
-Rode o comando `mii-tool` para saber se o cabo de rede estiver conectado a placa, provavelmente ela será listada.
 
 
 Como descobrir qual é o seu problema de fato
