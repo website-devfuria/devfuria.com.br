@@ -21,7 +21,7 @@
         <canvas id='myCanvas' width='300' height='150'>
             Canvas not supported
         </canvas>
-        <!--<script src="assets/drawGrid.js"></script>-->
+        <!--<script src="drawGrid.js"></script>-->
         <script>
             var canvas = document.getElementById('myCanvas');
             var context = canvas.getContext('2d');
