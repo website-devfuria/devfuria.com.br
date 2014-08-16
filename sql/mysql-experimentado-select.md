@@ -9,7 +9,7 @@ O MySQL possue algumas funções que nos auxiliam.
 
 Uma delas é a `version()`, ela retorna a versão do MySQL. 
 
-Mas não podemos digitar apenas `version()`, pois isso gerará um [erro 1064](../mysql-erro-1064), precisamos utilizar 
+Mas não podemos digitar apenas `version()`, pois isso gerará um [erro 1064](../mysql-ler-mensagens-erro), precisamos utilizar 
 o comando `SELECT` junto, dessa forma:
 
     SELECT version();
@@ -47,6 +47,14 @@ teremos:
     SELCIONE o resultado de 5 * 2 com o apelido de "foo";
 
 
+### Case INsensitive
+
+O MySQL não faz distinção entra caixa alta ou baixa.
+
+Isso significa que `SELECT now();` é igual a `select NOW();` que é igual a `SeLeCt NoW();`.
+
+
+
 Experimente mais...
 ---
 
@@ -58,10 +66,5 @@ Experimente mais...
     SELECT USER();
 
 
+Bom... agora que tal [aprendermos a criar uma base de dados?](../mysql-criando-base-de-dados/)
 
-Case INsensitive
----
-
-O MySQL não faz distinção entra caixa alta ou baixa.
-
-Isso significa que `SELECT now();` é igual a `select NOW();` que é igual a `SeLeCt NoW();`.

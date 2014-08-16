@@ -7,7 +7,7 @@ description: Aprenda como listar e selecionar uma base de dado no MySQl
 
 Quer saber __quais são as base de dados__ existente em seu servidor MySQL?
 
-Então digite:
+A instrução [show](http://dev.mysql.com/doc/refman/5.7/en/show-databases.html "link-externo") nos ajudará:
 
     show databases;
 
@@ -32,14 +32,15 @@ Acabamos de listar todas as bases.
 
 Agora, como selecionamos uma base qualquer para uso?
 
-Essa é fácil:
+Com a instrução [use](http://dev.mysql.com/doc/refman/5.7/en/use.html "link-externo"), veja:
 
     use nome-da-base-da-dados;
 
-Quando formos para uma linguagem do lado do servidor (como PHP), deveremos lembrar desta sequência:
+Quando formos para uma linguagem de programação do lado do servidor (como PHP, Ruby, Python e etc...), devemos nos lembrar
+desta sequência:
 
 1. Conectar com o DB
-2. Escolhar uma base de dados qualquer
+2. Escolher uma base de dados qualquer
 3. Executar os statements SQL
 
 

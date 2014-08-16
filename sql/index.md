@@ -23,3 +23,7 @@ Para você que não conhece nada sobre banco de dados, talvez queira ler uma
 
 {% include lista-mysql-titulo.html %}
 {% include lista-mysql.html %}
+
+
+<hr>
+* [Manual oficial do MySQL](http://dev.mysql.com/doc/index.html "link-externo") 

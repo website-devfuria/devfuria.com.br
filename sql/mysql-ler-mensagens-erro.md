@@ -1,6 +1,6 @@
 ---
 layout:      materia-fork-sql
-title:       Erro 1064 - aprendendo a ler mensagens de erro
+title:       Aprendendo a ler mensagens de erro
 description: Aprenderemos como ler mensagens de erro do MySQL.
 ---
 

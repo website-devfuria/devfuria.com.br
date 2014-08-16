@@ -11,7 +11,7 @@ O MySQL utiliza a “label” `mysql>` na shell. Como exemplo veja a minha shell
 
     [flavio@localhost www.devfuria.com.br]$
 
-Ao entrar no Mysql meu console fica como abaixo:
+Ao entrar no MySQL meu console fica como abaixo:
 
     mysql>
 
@@ -51,7 +51,7 @@ Vamos entender o comando acima.
     -p         -- dizemos que o próximo dado é referente a senha
 
 Não vamos digitar a senha porque pode ter alguém bisbilhotando (rsrs). Então acionamos o Enter e adivinhe? O console 
-solicita a senha do usuário infrmado. Agora sim pode digitar, pois a senha não é mostrada.
+solicita a senha do usuário informado. Agora sim pode digitar, pois a senha não é mostrada.
 
 Espero que você esteja vendo o mesmo que eu:
 
@@ -69,8 +69,8 @@ Espero que você esteja vendo o mesmo que eu:
 
     mysql> 
 
-Agora já é possível testar e aprender sobre os statements e devemos 
-[aprender como ler as mensagens de erros](../mysql-erro-1064/).
+Agora já é possível testar e praticar instruções sql e devemos 
+[aprender como ler as mensagens de erros](../mysql-ler-mensagens-erro/).
 
 Para sair do MySQL digite:
 
@@ -81,4 +81,4 @@ O sistema responde com um simpático “Bye” e eu também.
 <hr>
 Fonte
 
-* [Manual oficial do MySQL](http://dev.mysql.com/doc/index.html "link-externo") 
+* [Manual do MySQL - Connecting to and Disconnecting from the Server](http://dev.mysql.com/doc/refman/5.7/en/connecting-disconnecting.html "link-externo") 
