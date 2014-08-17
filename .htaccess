@@ -27,10 +27,9 @@ RewriteRule ^js\/canvas\/canvas-grid/\/?$                            "http\:\/\/
 RewriteRule ^regexp\/basico\/preg\-match\-all\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-all\-basico\/" [R=301,L]
 RewriteRule ^regexp\/basico\/preg\-match\/?$      "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-basico\/" [R=301,L]
 
+RewriteRule ^mysql-sql\/basico\/crud\/?$                  "http\:\/\/www\.devfuria\.com\.br\/sql\/mysql-crud\/" [R=301,L]
 RewriteRule ^mysql-sql\/basico\/primeiros-passos\/?$      "http\:\/\/www\.devfuria\.com\.br\/sql\/" [R=301,L]
 RewriteRule ^mysql-sql\/basico\/primeiros-passos-mysql/?$ "http\:\/\/www\.devfuria\.com\.br\/sql\/" [R=301,L]
 RewriteRule ^mysql-sql\/basico\/intro\/?$                 "http\:\/\/www\.devfuria\.com\.br\/sql\/intro\/" [R=301,L]
 RewriteRule ^mysql-sql\/intro\/?$                         "http\:\/\/www\.devfuria\.com\.br\/sql\/intro\/" [R=301,L]
 RewriteRule ^mysql-sql\/?$                                "http\:\/\/www\.devfuria\.com\.br\/sql\/" [R=301,L]
-
-
