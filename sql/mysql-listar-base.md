@@ -44,4 +44,4 @@ desta sequência:
 3. Executar os statements SQL
 
 
-Já logamos, já escolhemos a base e escolhemos a tabela. Então [vamos brincar com a instrução 'select'](../mysql-experimentado-select).
+Já logamos, já escolhemos a base...então [vamos experimentar a instrução 'select'](../mysql-experimentado-select).

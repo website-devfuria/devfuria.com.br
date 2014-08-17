@@ -60,7 +60,8 @@ e tente novamente.
 
 Se preferir peque o exemplo neste [gist](https://gist.github.com/flaviomicheletti/8359890 "link-externo").
 
-Na próxima matéria veremos como fazer o CRUD (continuaremos utilizando a tabela pet).
+Na próxima matéria veremos como [manipular nossa tabela](../mysql-instrucoes-tabelas/), para isso utilizaremos algumas 
+instruções muito úteis (continuaremos utilizando a tabela pet).
 
 <hr>
 Fonte
@@ -83,11 +84,3 @@ Se você estiver no console será fácil resolver, basta logar-se ao MySQL com a
     mysql --local-infile -u root -p
 
 Para maiores detalhes veja [Manual do MySQL - Security Issues with LOAD DATA LOCAL](http://dev.mysql.com/doc/refman/5.7/en/load-data-local.html "link-externo").
-
-
-Próximo passo
----
-
-Agora precisamos [manipular nossa tabela](../mysql-instrucoes-tabelas/), para isso utilizaremos algumas instruções muito úteis. 
-
-
