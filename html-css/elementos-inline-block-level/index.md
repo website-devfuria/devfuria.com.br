@@ -4,14 +4,14 @@ title:       HTML - Elementos in-line e elementos block-level
 description: Entenda a diferênça e como são renderizados os elementos HTML do tipo inline e block level.
 ---
 
-![](inline-blocklevel-b.jpeg)
+![Figura ilustrando elementos htmtl do tipo inline e block level](inline-blocklevel-b.jpeg "Figura ilustrando elementos htmtl do tipo inline e block level")
 
 O objetivo da matéria é entender as diferênças entre os dois tipos essenciais de tags:  __in-line__ e de __block-level__.
 
 A diferênça básica é que o browser acomoda os elementos de __bloco__ um abaixo do outro e os __inline__ à esquerda
 um ao lado do outro.
 
-![](inline-blocklevel-a.jpeg)
+![Figura ilustrando elementos htmtl do tipo inline e block level](inline-blocklevel-a.jpeg "Figura ilustrando elementos htmtl do tipo inline e block level")
 
 
 
