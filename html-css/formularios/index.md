@@ -29,3 +29,11 @@ Quando o usuário preencher os dados e clicar no botão "Entrar" o servidor pode
 
 Essa questão da interação __formulário/servidor__ nós veremos em outro momento, ok? Aqui, no curso de HTML e CSS vamos 
 nos deter apenas em seu layout e estrutura.
+
+
+<hr>
+Fonte:
+
+- [My first HTML form (MDN) - Exemplo básico de formulário web](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form "link-externo")
+
+
