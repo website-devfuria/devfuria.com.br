@@ -25,7 +25,7 @@ Livros sobre HTML e CSS - para iniciantes
 
  - __Criando paǵinas web com CSS__ - Budd, Moll e Collison, Editora Pearson.
 Este livro está desatualizado, mas a didática é nota 10.
-Vale a penas comprar.
+Vale a pena comprar.
 <br/> ![Figura da capa do livro 'Criando paǵinas web com CSS'](livro-criando-pag-web-css.jpg "Criando paǵinas web com CSS")
 
  - __Costruindo sites com CSS e XHMTL__ - Maurício Samy (vulgo Majour), Editora Novatec. 
