@@ -21,7 +21,7 @@ Exemplo de atribuição:
 
 {% highlight python %}reais = euros * taxa{% endhighlight %}
 
-As variáveis `euros` e  `taxa` devem ser inicializadas, senão o erro `name 'euros' is not defined` será exibido.
+As variáveis `euros` e  `taxa` devem ser inicializadas, se não o erro `name 'euros' is not defined` será exibido.
 
 
 
@@ -201,14 +201,14 @@ Mas talvez você se pergunte como calcular uma potência.
 
 {% highlight python %}10 ** 2 # print 100{% endhighlight %}
 
-Ou o resto da divisão com o operador módulo `%`.
+...ou o resto da divisão com o operador módulo `%`.
 
 {% highlight python %}
 3 % 2 = 1
 5 % 2 = 1
 {% endhighlight %}
 
-Veja também algumas funções Matemáticas
+Veja também algumas funções matemáticas:
 
 {% highlight python %}
 max(5, 6, 7) # 7
@@ -297,7 +297,7 @@ Exemplo, `"flavio.upper()"` equivale a `FLAVIO`.
 "python"[5] # 'n'
 {% endhighlight %}
 
-Leia mais sobre [fatimanento de sequencias](../sequencias/ "Python - Sequencias").
+Leia mais sobre [fatimanento de sequencias](../sequencias-fatiamento/ "Python - Sequencias").
 
 
 ### Percorrendo strings (string lopping)
@@ -622,5 +622,5 @@ class Triangle(Shape):
 
 ### Fontes
 
+- [Python: apresentando a sintaxe (Luciano Ramalho)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf" link-externo")
 - [Codeacademy - Python Glossary](http://www.codecademy.com/glossary/python" link-externo")
-- [Python: apresentando a sintaxe (Luciano Ramalho, PDF de slides)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf" link-externo")

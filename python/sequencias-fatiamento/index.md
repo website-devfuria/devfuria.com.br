@@ -1,9 +1,8 @@
 ---
 layout:      materia
-title:       Python - Sequências
-description: Python - Operadores e fatiamento de sequências
+title:       Python - Operadores e fatiamento de sequências
+description: Aprenda sobre operadores e fatiamento de sequências em Python
 ---
-
 
 
 ### Operações com sequências
@@ -19,7 +18,6 @@ Operadores:
 + `i not in s` teste de inclusão negativo
 
 
-
 ### Fatiamento de sequências (slicing)
 
 + `s[a:b]` cópia de `a` (inclusive) até `b` (exclusive)
@@ -28,7 +26,8 @@ Operadores:
 + `s[:]` cópia total de `s`
 + `s[a:b:n]` cópia de `n` em `n` itens 
 
-!["Figura ilustrando o fatiamento de sequencias em Python"](abacaxi-fatiado.png "Figura ilustrando o fatiamento de sequencias em Python")
+![figura](python-fatiamento.png)
+
 
 ### Atribuição em fatias:
 
@@ -50,7 +49,7 @@ Algumas funções com strings
 + `repr(x)` conversão de objeto para sua representação explícita em Python
 + `len(s)` número de bytes da string
 
+<hr>
+Fonte:
 
-
-
-Fonte py_sintaxe.pdf
+- [Slide 34 de "Python: apresentando a sintaxe" (Luciano Ramalho)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf "link-externo")
