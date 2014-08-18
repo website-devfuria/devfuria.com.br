@@ -1,7 +1,7 @@
 ---
 layout:      materia
-title:       Mega ultra rápida hitória do HTML
-description: Mega ultra rápida hitória do HTML
+title:       Mega ultra rápida história do HTML
+description: Mega ultra rápida história do HTML
 ---
 
 
