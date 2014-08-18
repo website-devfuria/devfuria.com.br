@@ -71,13 +71,13 @@ A regra CSS pode conter várias declarações separadas por ponto e vírgula.
 Se uma imagem vale por mil palavras, vou lhe mandar 4 imagens, espero que valham 4 mil palavras...
 
 
-![](css-syntax01.png)
+![Figura ilustrando uma rouler set](css-syntax01.png "Figura ilustrando uma rouler set")
 
-![](css-syntax02.png)
+![Figura ilustrando uma rouler set](css-syntax02.png "Figura ilustrando uma rouler set")
 
-![](css-syntax03.png)
+![Figura ilustrando uma rouler set](css-syntax03.png "Figura ilustrando uma rouler set")
 
-![](css-syntax04.png)
+![Figura ilustrando uma rouler set](css-syntax04.png "Figura ilustrando uma rouler set")
 
 A CSS é uma realidade incontestável para quem desenvolve aplicações web. Não dá para caminhar sem ela, na verdade não dá
 nem para sair do lugar. Quero dizer que é preciso aprender CSS para poder desenvolver bem, ou você domina ela ou ela te domina.
