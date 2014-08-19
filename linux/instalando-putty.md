@@ -12,7 +12,7 @@ Se você está no __Linux__ é quer acessar outra máquina __Linux__ faz isso va
 Veja o link abaixo para maiores informações.
 
 <div class="list-group">
-    <a href="./linux/como-acessar-servidor-remotamente" class="list-group-item">SSH - acessando o Linux remotamente</a>
+    <a href="/linux/como-acessar-servidor-remotamente/" class="list-group-item">SSH - acessando o Linux remotamente</a>
 </div>
 
 Se de qualquer forma você quer instalar o __Putty__ no __Linux__, seguem as receitas:

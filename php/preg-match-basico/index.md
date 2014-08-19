@@ -47,7 +47,7 @@ que casou.
 
 Você deve estar pensando que pelo fato de `$matches`ser um array, poderá conter vários resultados? Errado, para obter
 vários resultados (quando nossa pesquisa trás vários resultados) devemos utilizar a função 
-[preg_match_all()](/php/preg-match-all-referencia/ "Referencia a função preg match all").
+[preg_match_all()](/php/preg-match-all/ "Referencia a função preg match all").
 
 Se a expressão não casar
 ---

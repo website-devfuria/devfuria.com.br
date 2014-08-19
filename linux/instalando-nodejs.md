@@ -87,7 +87,7 @@ Então boa sorte:
 
 <hr>
 Fonte
-- [https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager]("https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager" link-externo")
+- [https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager "link-externo")
 
 
 

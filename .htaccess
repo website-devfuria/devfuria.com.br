@@ -2,16 +2,48 @@ RewriteOptions inherit
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^.*$
 
-RewriteRule ^old\/?$ "http\:\/\/www\.devfuria\.com\.br\/" [R=301,L]
 RewriteRule ^index.php "http\:\/\/www\.devfuria\.com\.br" [R=301,L]
+RewriteRule ^ROOT_PATH "http\:\/\/www\.devfuria\.com\.br" [R=301,L]
+RewriteRule ^old\/?$ "http\:\/\/www\.devfuria\.com\.br\/" [R=301,L]
+RewriteRule ^furia\/?$ "http\:\/\/www\.devfuria\.com\.br\/" [R=301,L]
+RewriteRule ^furia\/biblio\/?$ "http\:\/\/www\.devfuria\.com\.br\/" [R=301,L]
+RewriteRule ^furia\/biblio\/jquery-ui-1.10.0.custom\/?$ "http\:\/\/www\.devfuria\.com\.br\/" [R=301,L]
+RewriteRule ^furia\/biblio\/jquery-ui-1.10.0.custom\/js\/?$ "http\:\/\/www\.devfuria\.com\.br\/" [R=301,L]
+RewriteRule ^www\.pibrasil\.com?$ "http\:\/\/www.pibrasil.com\/" [R=301,L]
+RewriteRule ^views\/frm-feedback\.php?$ "http\:\/\/www.devfuria.com\.br" [R=301,L]
+RewriteRule ^views\/secoes\.php?$ "http\:\/\/www.devfuria.com\.br" [R=301,L]
+RewriteRule ^\_draft\/index-matriz\.php?$ "http\:\/\/www.devfuria.com\.br" [R=301,L]
+RewriteRule ^\_draft\/regexp?$      "http\:\/\/www\.devfuria\.com\.br\/regexp\/" [R=301,L]
+RewriteRule ^\_draft\/misc?$      "http\:\/\/www\.devfuria\.com\.br\/" [R=301,L]
+
+RewriteRule ^schemas\/?$ "http\:\/\/www.devfuria.com\.br\/sitemap\.xml" [R=301,L]
+RewriteRule ^schemas\/sitemap0-9.xml?$ "http\:\/\/www.devfuria.com\.br\/sitemap\.xml" [R=301,L]
+
 RewriteRule ^flavio.alexandre-micheletti.php "http\:\/\/www\.devfuria\.com\.br\/flavio-alexandre-micheletti.html" [R=301,L]
 
-RewriteRule ^old\/php\/nivel\-zero\/logica\-de\-programacao\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/basico\/logica\-de\-programacao\/" [R=301,L]
-RewriteRule ^logica\-de\-programacao\/basico\/intro\/?$ "http\:\/\/www\.devfuria\.com\.br\/logica\-de\-programacao\/" [R=301,L]
+RewriteRule ^logica\/basico\/exercicio04\/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^logica\/basico\/exercicio10\/index.php?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 
-RewriteRule ^php\/nivel\-zero\/instalando\-o\-ambiente\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/basico\/instalando\-o\-ambiente\/" [R=301,L]
 
+RewriteRule ^php\/nivel-zero\/antes-de-enfiar-o-pe-na-jaca\/index.php?$ "http\:\/\/www\.devfuria\.com\.br\/php\/" [R=301,L]
+RewriteRule ^php\/preg-match-all-referencia\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg-match-all\/" [R=301,L]
+RewriteRule ^php\/basico\/estudos-de-logica-6-ao-10/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^php\/basico\/estudos-de-logica-1-ao-5/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^php\/basico\/logica-de-programacao\/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^php\/basico\/logica-de-programacao\/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^php\/nivel\-zero\/intalando\-o\-ambiente\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/basico\/instalando\-o\-ambiente\/" [R=301,L]
+
+RewriteRule ^python\/sequencias\/?$ "http\:\/\/www\.devfuria\.com\.br\/python\/sequencias-fatiamento\/" [R=301,L]
+RewriteRule ^linux\/instalando-putty\/linux\/como-acessar-servidor-remotamente\/?$ "http\:\/\/www\.devfuria\.com\.br\/linux\/como-acessar-servidor-remotamente\/" [R=301,L]
+RewriteRule ^linux/iinstalando-vlc\/?$ "http\:\/\/www\.devfuria\.com\.br\/linux\/instalando-vlc\/" [R=301,L]
+
+
+RewriteRule ^js\/basico\/preparando-o-terreno\/materia.md?$    "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
+RewriteRule ^js\/receitas-tutoriais-guia-referencia\/?$    "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
+RewriteRule ^js\/basico/draft\/?$                          "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
+RewriteRule ^js\/basico/draft\/links-js?$                          "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/math\-random\-numero\-randomico\-em\-javascript\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/gerar\-numero\-randomico\-entre\-2\-numeros\-quaisquer\/" [R=301,L]
+RewriteRule ^js\/math\-random\-numero\-randomico\-em\-javascript\/index.php?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/gerar\-numero\-randomico\-entre\-2\-numeros\-quaisquer\/" [R=301,L]
 RewriteRule ^js\/window\-object\-global\/?$                          "http\:\/\/www\.devfuria\.com\.br\/javascript\/objeto\-global\/" [R=301,L]
 RewriteRule ^js\/window\-object\/?$                                  "http\:\/\/www\.devfuria\.com\.br\/javascript\/objeto\-global\/" [R=301,L]
 RewriteRule ^js\/canvas\/aprendendo-canvas-introducao\/?$            "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/introducao\/" [R=301,L]
@@ -24,12 +56,27 @@ RewriteRule ^js\/canvas\/rect-strokeRect-fillRect\/?$                "http\:\/\/
 RewriteRule ^js\/canvas\/canvas-linhas-rando-coloridas\/?$           "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/col-linhas-rando\/" [R=301,L]
 RewriteRule ^js\/canvas\/canvas-grid/\/?$                            "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/col-linhas-grade\/" [R=301,L]
 
+RewriteRule ^html-css\/basico\/validando-html-e-css\/materia.mrk?$     "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
+RewriteRule ^html-css\/basico\/validando-html-e-css\/code1.html?$     "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
+RewriteRule ^html-css\/basico\/reset-css\/?$                          "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
+RewriteRule ^html-css\/basico\/formularios-web\/?$                    "http\:\/\/www\.devfuria\.com\.br\/html-css\/formularios-web\/" [R=301,L]
+RewriteRule ^html-css\/basico\/elementos-inline-block-level\/?$       "http\:\/\/www\.devfuria\.com\.br\/html-css\/elementos-inline-block-level\/" [R=301,L]
+RewriteRule ^html-css\/basico\/elementos-inline-block-level\/code1.html?$  "http\:\/\/www\.devfuria\.com\.br\/html-css\/elementos-inline-block-level\/" [R=301,L]
+RewriteRule ^html-css\/basico\/onde-tudo-comecou\/?$                  "http\:\/\/www\.devfuria\.com\.br\/html-css\/historia-html\/" [R=301,L]
+RewriteRule ^html-css\/basico/html-intro\/?$                          "http\:\/\/www\.devfuria\.com\.br\/html-css\/introducao-html\/" [R=301,L]
+RewriteRule ^html-css\/basico\/css-intro\/?$                          "http\:\/\/www\.devfuria\.com\.br\/html-css\/introducao-css\/" [R=301,L]
+
 RewriteRule ^regexp\/basico\/preg\-match\-all\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-all\-basico\/" [R=301,L]
 RewriteRule ^regexp\/basico\/preg\-match\/?$      "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-basico\/" [R=301,L]
 
+
+
+RewriteRule ^sql\/mysql-erro-1064\/?$                     "http\:\/\/www\.devfuria\.com\.br\/sql\/mysql-ler-mensagens-erro\/" [R=301,L]
 RewriteRule ^mysql-sql\/basico\/crud\/?$                  "http\:\/\/www\.devfuria\.com\.br\/sql\/mysql-crud\/" [R=301,L]
 RewriteRule ^mysql-sql\/basico\/primeiros-passos\/?$      "http\:\/\/www\.devfuria\.com\.br\/sql\/" [R=301,L]
 RewriteRule ^mysql-sql\/basico\/primeiros-passos-mysql/?$ "http\:\/\/www\.devfuria\.com\.br\/sql\/" [R=301,L]
 RewriteRule ^mysql-sql\/basico\/intro\/?$                 "http\:\/\/www\.devfuria\.com\.br\/sql\/intro\/" [R=301,L]
 RewriteRule ^mysql-sql\/intro\/?$                         "http\:\/\/www\.devfuria\.com\.br\/sql\/intro\/" [R=301,L]
 RewriteRule ^mysql-sql\/?$                                "http\:\/\/www\.devfuria\.com\.br\/sql\/" [R=301,L]
+RewriteRule ^mysql-sql\/index.md?$                                "http\:\/\/www\.devfuria\.com\.br\/sql\/" [R=301,L]
+

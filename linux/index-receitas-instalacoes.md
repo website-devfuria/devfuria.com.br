@@ -71,7 +71,7 @@ description: Guia prático de instalações de softwares para Linux
 ###  Audio & Som
 
 <div class="list-group">
-    <a href="/linux/iinstalando-vlc/" class="list-group-item">Instalando VLC no CentOS</a>
+    <a href="/linux/instalando-vlc/" class="list-group-item">Instalando VLC no CentOS</a>
     <a href="/linux/instalando-gtk-recordmydesktop/" class="list-group-item">Instalando gravador de desktop (recordmydesktop) para Fedora</a>
     <a href="/linux/instalando-kino/" class="list-group-item">Instalando o Kino no Fedora</a>
     <a href="/linux/instalando-nautilus-image-converter/" class="list-group-item">Instalando um conversor de imagens para o Nautilius (Fedora)</a>
