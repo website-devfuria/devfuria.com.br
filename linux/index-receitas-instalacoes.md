@@ -19,6 +19,7 @@ description: Guia prático de instalações de softwares para Linux
 <div class="list-group">
     <a href="/linux/instalando-django/" class="list-group-item">Instalando o Django (python)</a>
     <a href="/linux/instalando-pip/" class="list-group-item">Instalando o pip (gerenciados de pacotes do python)</a>
+    <a href="/linux/instalando-pil/" class="list-group-item">Instalando PIL (Python Imaging Library) no Debian</a>
 </div>
 
 
