@@ -8,6 +8,7 @@ Seja bem vindo a seção de HTML e CSS!
 
 Para quem nunca viu "esses caras" deve começar por aqui:
 
+- [Mega ultra rápida história do HTML](/html-css/historia-html/)
 - [Introdução ao HTML](/html-css/introducao-html/)
 - [Introdução ao CSS](/html-css/introducao-css/)
 
