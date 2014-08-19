@@ -1,7 +1,7 @@
 ---
 layout:      materia
-title:       Formulários web
-description: Tudo o que você precisa saber so bre Formulários Web.
+title:       Formulários web e seus controles
+description: Tudo o que você precisa saber sobre Formulários Web e seus controles.
 ---
 
 Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
@@ -18,7 +18,7 @@ Abaixo, temos um exemplo de formulário.
     </form>
 {% endhighlight %}
 
-Leia mais sobre [formulário web](formularios-web/).
+Leia mais sobre [formulário web](../formularios-web/).
 
 
 

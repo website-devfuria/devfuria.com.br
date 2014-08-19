@@ -26,12 +26,10 @@ Veja também:
 - [Um pequeno glossário do site codecademy.](http://www.codecademy.com/glossary/html "link-externo")
 
 
-Formulários Web
+Formulários web e seus controles
 ---
 
 Esta é a subseção sobre [formulários web](/html-css/formularios/).
-
-Não sabe o que é um formulário web? Leia [Sobre formulários web](/html-css/formularios/formularios-web/).
 
 A lista abaixo compõem os controles básicos do tipo __input__:
 
