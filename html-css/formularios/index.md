@@ -1,9 +1,8 @@
 ---
 layout:      materia
-title:       HTML - Formulário web
-description: Formulários Web e seus controles, veremos os controles básicos de HTML.
+title:       Formulários web
+description: Tudo o que você precisa saber so bre Formulários Web.
 ---
-
 
 Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
 
@@ -12,73 +11,48 @@ Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
 Abaixo, temos um exemplo de formulário.
 
 {% highlight html %}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" >
-    <head>
-        <title> Nosso singelo formulário </title>
-    </head>
-    <body>
-
-        <form action="script-para-onde-envio-os-dados.php" method="post">
-            <p>
-                Name:  <input type="text" name="username" value="João da Silva" /><br />
-            </p>
-            <p>
-                Email: <input type="text" name="email"  value="joao@dasilva.com" /><br />
-            </p>
-            <p>
-                <input type="submit" value="Submit me!" />
-            </p>
-        </form>
-
-    </body>
-</html>
+    <form action="script-para-onde-envio-os-dados.php" method="post">
+        <p>Name:  <input type="text" name="username" value="João da Silva" /></p>
+        <p>Email: <input type="text" name="email"  value="joao@dasilva.com" /></p>
+        <p><input type="submit" value="Submit me!" /></p>
+    </form>
 {% endhighlight %}
 
-O formulário pega os dados digitados pelo usuário, associa cada dado a um nome de campo e os envia ao servidor. 
-Lá no outro lado (no servidor), um linguagem de servidor recebe os dados e faz alguma coisa com eles, seguindo a lógica
-do script criado pelo programador.
-
-A tag `form` é o início do formulário.
-
-{% highlight html %}
-<form>
-
-</form>
-{% endhighlight %}
-
-Dentro das tags `form` colocamos os controles (inputs), labels e alguns botões.
-
-Um formulário na web normalmente é chato de se preencher, só que ele é a alma dos aplicativos web, pois é através de seus
-campos que o usuário faz a inserção dos dados e, dessa forma, interaje com o sistema.
-
-Um formulário pode (e deve) conter elementos que formam um par `nome=valor`.
-
-Por exemplo, um __campo de entrada de texto__ (uma text box) chama-se `pais` e o seu valor é o texto `Brasil`. Quando
-esse formulário submeter seus dados para o servidor, ele poderá trabalhar com a variável `pais` e seu valor será `Brasil`.
-
-Esse negócio é tão simples que fica até difícil de explicar, rs.
-
-Veja o famoso formulário do Facebook. Vamos analisar apenas a "tarja azul". Temos os campos `login`, `senha` e uma chekbox
- "mantanha-me conectado".
+Leia mais sobre [formulário web](formularios-web/).
 
 
-!["falhou"](form-facebook.png)
 
-Quando o usuário preencher os dados e clicar no botão "Entrar" o servidor poderá trabalhar com os seguintes dados:
+### Controles básicos (input)
 
-    login=email@digitado
-    senha=1234
-    manter=false
+A tag `input` compõem a maioria dos controles básicos.
 
-Essa questão da interação __formulário/servidor__ nós veremos em outro momento, ok? Aqui, no curso de HTML e CSS vamos 
-nos deter apenas em seu layout e estrutura.
+{% highlight html %}<input type="" name=""/>{% endhighlight %}
+
+A propriedade `name` será associada ao valor do campo.
+
+Se o propriedade `name` for, por exemplo, "idade" e o valor digitado pelo usuário for `36` os dados para o servidor serão:
+
+{% highlight html %}idade=36{% endhighlight %}
+
+Alterando-se a propriedade `type` podemos obter os seguintes controles:
+
+<div class="list-group">
+    <a href="/html-css/formularios/text-box/" class="list-group-item">Textbox - input type=text</a>
+    <a href="/html-css/formularios/password/" class="list-group-item">Campos de senha - input type=password</a>
+    <a href="/html-css/formularios/checkbox/" class="list-group-item">Caixa de checagem - input type=checkbox</a>
+    <a href="/html-css/formularios/radio-buttons" class="list-group-item">Botões de opção - input type=radio</a>
+    <a href="/html-css/formularios/button-submit-reset" class="list-group-item">Botões - button, submit e reset</a>
+    <a href="/html-css/formularios/input-file/" class="list-group-item">Enviando arquivos - input type="file"</a>
+</div>
 
 
-<hr>
-Fonte:
 
-- [My first HTML form (MDN) - Exemplo básico de formulário web](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form "link-externo")
+### Controles básicos (não input)
 
+Nesta categoria encontram-se os controles "combo box", "list box" e "text box multiline":
 
+<div class="list-group">
+    <a href="/html-css/formularios/combobox/" class="list-group-item">Caixa de seleção - combo box</a>
+    <a href="/html-css/formularios/listbox/" class="list-group-item">Caixa de multipla seleção - List box</a>
+    <a href="/html-css/formularios/text-area/" class="list-group-item">Text box multiline - text area</a>
+</div>
