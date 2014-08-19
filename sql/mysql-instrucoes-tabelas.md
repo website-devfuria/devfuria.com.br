@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       Instruções úteis para manipular tabelas no MySQL
 description: Instruções SQL para manipular tabelas no MySQL .
 ---

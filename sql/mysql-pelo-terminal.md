@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       Acessando o MySQL via console (terminal)
 description: Aprenda a acesar o MySQL via terminal no Linux.
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       Experimentando a instrução "select"
 description: Seus primeiros passos com a instrução 'select'
 ---

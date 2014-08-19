@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       CRUD - C de create, é o nosso insert!
 description: Entenda o sql INSERT, para quem nunca viu SQL!
 ---

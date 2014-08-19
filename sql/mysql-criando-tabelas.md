@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       Criando tabelas no MySQL
 description: Aprenda como criar tabelas no MySQL.
 ---

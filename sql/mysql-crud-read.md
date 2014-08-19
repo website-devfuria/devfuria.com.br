@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       CRUD - R de read, é o nosso select!
 description: Entenda o sql SELECT, para quem nunca viu SQL!
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       CRUD - D de delete, é o nosso delete!
 description: Entenda o sql DELETE, para quem nunca viu SQL!
 ---

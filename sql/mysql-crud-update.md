@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       CRUD - U de update, é  o nosso update!
 description: Entenda o sql UPDATE, para quem nunca viu SQL!
 ---

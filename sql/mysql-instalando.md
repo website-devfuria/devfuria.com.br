@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       Instalando o MySQL e acessando via terminal
 description: Aprenda a instalar e acessar o MySQL no terminal do Linux.
 ---

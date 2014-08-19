@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       Criando uma base de dados no MySQL
 description: Aprenda como criar base de dados com create databases; no MySQL.
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      materia-fork-sql
+layout:      materia-sql
 title:       Aprendendo a ler mensagens de erro
 description: Aprenderemos como ler mensagens de erro do MySQL.
 ---
