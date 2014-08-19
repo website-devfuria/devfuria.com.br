@@ -1,9 +1,54 @@
 ---
 layout:      materia
-title:       HTML - Formulários e controles (inputs e labels)
-description: 
+title:       HTML - Formulário web
+description: Formulários Web e seus controles, veremos os controles básicos de HTML.
 ---
 
+
+Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
+
+É nele que seu usuário faz a entrada de dados.
+
+Abaixo, temos um exemplo de formulário.
+
+{% highlight html %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" >
+    <head>
+        <title> Nosso singelo formulário </title>
+    </head>
+    <body>
+
+        <form action="script-para-onde-envio-os-dados.php" method="post">
+            <p>
+                Name:  <input type="text" name="username" value="João da Silva" /><br />
+            </p>
+            <p>
+                Email: <input type="text" name="email"  value="joao@dasilva.com" /><br />
+            </p>
+            <p>
+                <input type="submit" value="Submit me!" />
+            </p>
+        </form>
+
+    </body>
+</html>
+{% endhighlight %}
+
+O formulário pega os dados digitados pelo usuário, associa cada dado a um nome de campo e os envia ao servidor. 
+Lá no outro lado (no servidor), um linguagem de servidor recebe os dados e faz alguma coisa com eles, seguindo a lógica
+do script criado pelo programador.
+
+A tag `form` é o início do formulário.
+
+{% highlight html %}
+<form>
+
+</form>
+{% endhighlight %}
+
+Dentro das tags `form` colocamos os controles (inputs), labels e alguns botões.
 
 Um formulário na web normalmente é chato de se preencher, só que ele é a alma dos aplicativos web, pois é através de seus
 campos que o usuário faz a inserção dos dados e, dessa forma, interaje com o sistema.
