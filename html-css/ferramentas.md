@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      materia-html-artigos
 title:       Ferramentas para trabalhar com HTML e CSS
 description: Pequenas lista de ferramentas para trabalhar com HTML e CSS
 ---

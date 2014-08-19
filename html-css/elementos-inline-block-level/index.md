@@ -1,6 +1,6 @@
 ---
-layout:      materia
-title:       HTML - Elementos in-line e elementos block-level
+layout:      materia-html-artigos
+title:       Elementos in-line e elementos block-level
 description: Entenda a diferênça e como são renderizados os elementos HTML do tipo inline e block level.
 ---
 

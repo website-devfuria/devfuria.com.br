@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      materia-html-artigos
 title:       Criando um HTML de primeira qualidade
 description: Aprenda a desenvolver um HTML de primeria qualidade com este exemplo da csszengarden.com
 ---

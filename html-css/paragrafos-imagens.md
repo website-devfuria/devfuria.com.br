@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      materia-html-elem
 title:       HTML - Parágrafos e imagens 
 description: 
 ---

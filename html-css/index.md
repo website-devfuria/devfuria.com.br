@@ -4,19 +4,50 @@ title:       HTML & CSS
 description: 
 ---
 
-HTML e CSS são divertidos.
+Seja bem vindo a seção de HTML e CSS!
 
-A questão é que sem esses elementos básicos não se produz aplicação web.
+Para quem nunca viu "esses caras" deve começar por aqui:
 
-Se a aplicação for uma edificação, o __HTML__ é o cimento e o __CSS__ a massa fina.
+- [Introdução ao HTML](/html-css/introducao-html/)
+- [Introdução ao CSS](/html-css/introducao-css/)
 
-Meu conselho é: se esforce mais com eles para se esforçar menos com as linguagens de servidor e cliente.
+Veja também essa belíssima introdução ao HTML do pessoal da Mozilla:
 
-Outra coisa: não caia na besteria de achar que eles são apenas para os designers, nada disso!
+- [Introdução ao HTML- Mozilla.](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction "link-externo")
 
-Desenvolvedor web que não sabe HTML e CSS não é desenvolvedor web.
 
-Seja bem vindo ao curso!
+
+{% include lista-html-elem-titulo.html %}
+{% include lista-html-elem.html %}
+
+Veja também:
+
+- [Glossário de elementos HTML (inclui HTML5).](https://developer.mozilla.org/en-US/docs/Web/HTML/Element "link-externo")
+- [Um pequeno glossário do site codecademy.](http://www.codecademy.com/glossary/html "link-externo")
+
+
+Formulários Web
+---
+
+Esta é a subseção sobre [formulários web](/html-css/formularios/).
+
+Não sabe o que é um formulário web? Leia [Sobre formulários web](/html-css/formularios/formularios-web/).
+
+A lista abaixo compõem os controles básicos do tipo __input__:
+
+{% include lista-html-forms1.html %}
+
+
+A lista abaixo compõem os controles básicos do tipo __não input__:
+
+{% include lista-html-forms2.html %}
+
+
+{% include lista-html-artigos-titulo.html %}
+{% include lista-html-artigos.html %}
+
+
+
 
 
 
@@ -36,12 +67,8 @@ Não conheco um desenvolvedore que não tenha lido esses livros.
 
 
 
-
 Veja também
 ---
 
-- [Belíssima introdução ao HTML do pessoal da Mozilla.](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction "link-externo")
 - [Recomendações do W3C XHTML 1 - Tradução do Majour](http://www.maujor.com/w3c/xhtml10_2ed.html "link-externo")
 - [Recomendações do W3C CSS nível 1 - Tradução do Majour](http://www.maujor.com/tutorialcss1/css1tut.shtml "link-externo")
-- [Glossário de elementos HTML (inclui HTML5).](https://developer.mozilla.org/en-US/docs/Web/HTML/Element "link-externo")
-- [Um pequeno glossário do site codecademy.](http://www.codecademy.com/glossary/html "link-externo")

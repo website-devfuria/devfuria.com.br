@@ -1,5 +1,5 @@
 ---
-layout:      materia-html-forms
+layout:      materia
 title:       Formulários web
 description: Tudo o que você precisa saber so bre Formulários Web.
 ---

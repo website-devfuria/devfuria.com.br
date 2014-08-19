@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      materia-html-artigos
 title:       Unindo o CSS ao HTML
 description: "Aprenda como unir o CSS ao arquivo HTML através das formas: in line, embeded e linked."
 ---
