@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: /core
-Disallow: /seg
 Disallow: /ahumana
 Disallow: /schemas/gerar-sitemap.php
 Allow: /git
