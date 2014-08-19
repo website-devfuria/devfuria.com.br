@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      materia-html-forms
 title:       Caixa de checagem (input type=checkbox)
 description: 
 ---

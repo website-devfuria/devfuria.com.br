@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      materia-html-forms
 title:       Botões de opção (input type=radio)
 description: 
 ---

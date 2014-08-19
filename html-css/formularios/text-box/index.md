@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      materia-html-forms
 title:       Textbox (input type=text)
 description: 
 ---
