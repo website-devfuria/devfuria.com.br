@@ -36,7 +36,7 @@ Fontes
 Instalando o Pillow
 ---
 
-O Pillow é um fork do PIL.
+O Pillow é um fork do PIL. Ele suporta Python3 e seu desenvolvimento "parece" que é mais ativo do que o PIL.
 
 Ele depende dos pacotes *python-devel* e *python-setuptools*,  para instalar esses pacotes no Debian (whezzy) bastou:
 
@@ -60,3 +60,4 @@ Fontes
 
 - [Pillow v2.5.0 (PIL fork) - Installation](http://pillow.readthedocs.org/en/latest/installation.html#simple-installation "link-externo")
 - [Pillow on GitHub](https://github.com/python-pillow/Pillow "link-externo")
+- [docs.python-guide.org - Image Manipulation(http://docs.python-guide.org/en/latest/scenarios/imaging/#python-imaging-library "link-externo")
