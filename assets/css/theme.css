@@ -179,6 +179,10 @@ footer h2 {
     margin-top: 10px;
     color: #fff;
 }
+span.regex {
+    color: red;
+    background-color: #ffff00;
+}
 
 /* pygments highlight */
 .hll { background-color: #ffffcc }

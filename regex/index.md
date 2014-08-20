@@ -81,4 +81,9 @@ Dentro da lista, todo mundo é normal e traço indica intervalo.
     </tbody>
 </table>
 
-![qwert](regex-ex-lista-aeiou.png)
+
+
+
+
+
+
