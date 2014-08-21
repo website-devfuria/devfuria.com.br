@@ -31,8 +31,6 @@ Você pode executar JavaScript em um navegador web, dê preferência ao [FireFox
 
 Mas também pode executá-lo em linha de comando através do [node.js](http://nodejs.org/ "link-externo").
 
-Leia mais sobre [aqui](./).
-
 
 
 Como começar
