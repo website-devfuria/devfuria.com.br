@@ -124,7 +124,7 @@ Expressão regular `[:-@]`:
 
 <pre>
  !"#$%&'()*+,-./0123456789<span class="regex">:;<=>?
-</span>@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+@</span>ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
 `abcdefghijklmnopqrstuvwxyz{|}~¡
 ¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂ
 ÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâ
@@ -204,7 +204,7 @@ casando<span class="regex">]</span>com<span class="regex">]</span>números<span 
 
 ### Letras acentuadas
 
-Para incluir acentos devemos recorrer as __classes POSIX__. Elas levam em conta a localidade do sistema.
+Para incluir acentos devemos recorrer as __classes POSIX__, elas levam em conta a localidade do sistema.
 
 <table>
     <thead>
