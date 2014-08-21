@@ -6,7 +6,7 @@ description: "Site de desenvolvimento web"
 # Build settings
 markdown: kramdown
 permalink: pretty
-#exclude: [linux, logica-de-programacao, git, javascript, php, seguranca-da-informacao, python, sql, html-css]
+exclude: [linux, logica-de-programacao, git, javascript, php, seguranca-da-informacao, python, sql, html-css, regex]
 
 host: 0.0.0.0
 port: 4000
