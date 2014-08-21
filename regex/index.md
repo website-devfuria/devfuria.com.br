@@ -3,83 +3,52 @@ layout: materia
 ---
 
 
-### O ponto .
 
-O ponto casa com qualquer coisa.
+__O que são Expressões Regulares ?__
 
-O ponto casa com o ponto.
+Expressões Regulares é uma técnica para procurar, de forma bem específica, um texto abrangente.
 
-O ponto é um curinga para casar um caractere
-
-<table>
-    <thead>
-        <tr>
-            <th>expressão</th>
-            <th>casa com...</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>.teclado</code></td>
-            <td>teclado, Teclado</td>
-        </tr>
-        <tr>
-            <td><code><.></code></td>
-            <td>&lt;b&gt;, &lt;i&gt;, &lt;p&gt;</td>
-        </tr>
-        <tr>
-            <td><code>n.a</code></td>
-            <td>não, nao</td>
-        </tr>
-        <tr>
-            <td><code>e.tendido</code></td>
-            <td>estendido, extendido, eztendido</td>
-        </tr>
-        <tr>
-            <td><code>12.45</code></td>
-            <td>12:45, 12 45, 12.45</td>
-        </tr>
-    </tbody>
-</table>
-
-
-
-### A lista [ ]
-
-A lista casa com quem ela conhece e tem suas próprias regras.
-
-Dentro da lista, todo mundo é normal e traço indica intervalo.
+A expressão regular relaciona todas as ocorrências (__matches__) de um padrão (__pattern__) em um trecho de texto
+(__subject__).
 
 <table>
     <thead>
         <tr>
-            <th>expressão</th>
-            <th>casa com...</th>
+            <th>termo</th>
+            <th>significado</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><code>[Tt]eclado</code></td>
-            <td>teclado, Teclado</td>
+            <td>matches</td>
+            <td>Casar, encontrar, combinar, ocorrências, conferir, encaixar e igualar.</td>
         </tr>
         <tr>
-            <td><code>[&lt;bpi&gt;]</code></td>
-            <td>&lt;b&gt;, &lt;i&gt;, &lt;p&gt;</td>
+            <td>pattern</td>
+            <td>Padrão, a expressão regular propriamente dita. String de padrão de procura.</td>
         </tr>
         <tr>
-            <td><code>n[ãa]o</code></td>
-            <td>não, nao</td>
-        </tr>
-        <tr>
-            <td><code>e[sxz]tendido</code></td>
-            <td>estendido, extendido, eztendido</td>
-        </tr>
-        <tr>
-            <td><code>12[:. ]45</code></td>
-            <td>12:45, 12 45, 12.45</td>
+            <td>subject</td>
+            <td>Texto que será vasculhado por nossa expresão regular.</td>
         </tr>
     </tbody>
 </table>
+
+O exemplo mais simples possível de uma expressão regular seria a busca pelo "termo exato":
+
+O assunto (subject) seria `Casa com a palavra exemplo`.
+
+E queremos encontrar o padrão (nossa expressão regular ) `exemplo`.
+
+O resultado (matches) seria:
+
+<pre>
+Casa com a palavra <span class="regex">exemplo</span>
+</pre>
+
+
+
+
 
 
 
