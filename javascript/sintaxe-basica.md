@@ -7,8 +7,7 @@ description: Um guia rápido e básico da linguagem JavaScript.
 
 ### Variáveis
 
-Antes de usar uma variável em um programa JavaScript, você deve declará-la. As variáveis são declaradas com a palavra
-chave `var`, como segue:
+As variáveis são declaradas com a palavra chave `var`, como segue:
 
     var i;
     var sum;
@@ -21,6 +20,8 @@ E pode-se combinar a declaração da variável com sua inicialização:
 
     var i = 0, j = 0, k = 0;
     var nome = "Fulano";
+
+Antes de usar uma variável em um programa JavaScript, você deve declará-la. 
 
 
 
@@ -37,7 +38,7 @@ Os valores especiais `null` e `undefined` são valores primitivos mas não são 
 
 Qualquer valor em JavaScript que não seja número, string, booleano, null ou undefined é um objeto.
 
-O `typeof` é um operador unário colocado antes de seu operando, o qual pode ser de qualquer tipo. Seu valor é uma string 
+O [typeof](../refs/typeof/) é um operador unário colocado antes de seu operando, o qual pode ser de qualquer tipo. Seu valor é uma string 
 que especifica o tipo do operando.
 
     typeof "foo"; // 'string'
@@ -102,7 +103,7 @@ A palavra chave `null` indica a ausência de um valor.
 
 Mas também há um segundo valor que indica ausência de valor: `undefined`.
 
-O valor indefinido representa uma ausência mais profunda. É o valor de variáveis que não foram inicializadas.
+O valor indefinido representa uma ausência mais profunda, é o valor de variáveis que não foram inicializadas.
 
 
 
@@ -133,7 +134,7 @@ if (n == 1) {
 {% endhighlight %}
 
 
-É possível obter resultados semelhantes usando o operador condicional `(true) ? true : false`.
+É possível obter resultados semelhantes usando o operador condicional [(true) ? true : false](../refs/operador-condicional-ternario/).
 
 O operador condicional é o único operador ternário de JavaScript.
 
@@ -180,7 +181,8 @@ for (var i = 0; i < 5; i++) {
 
 ### Arrays
 
-Em JavaScript, arrays são um tipo especial de objeto que representam um conjunto ordenado de valors numerados.
+Em JavaScript, [arrays](../refs/arrays/) são um tipo especial de objeto que representam um conjunto ordenado de valores
+numerados.
 
 {% highlight javascript %}
 var a = new Array();
@@ -201,7 +203,7 @@ a.length // 3
 
 ### Funções
 
-Uma função é um objeto que tem código executável associado. Uma função pode ser chamada para executar esse código
+Uma [função](../refs/funcoes/) é um objeto que tem código executável associado. Uma função pode ser chamada para executar esse código
 executável e retornar um valor calculado.
 
 {% highlight javascript %}
