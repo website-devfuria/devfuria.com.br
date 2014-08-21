@@ -17,13 +17,10 @@ A popularidade se deu pelo fato de que JavaScript fazia o que nenhuma outra ling
 estáticas em algo dinâmico sem ter que "viajar" até o servidor. Estamos falando do lado do cliente (front end).
 
 Quem programa para a web, trabalha com uma linguagem do lado do servidor e conta sempre com o apoio de JavaScript. 
-Por exemplo, quem conhece [PHP](http://php.net/manual/pt_BR/index.php "link-externo") conhece JavaScript. Quem conhece ASP,
-conhece JavaScript. Quem conhece [Python](https://www.python.org/ "link-externo"), conhece JavaScript.
-Até quem conhece Java, conhece JavaScript.
 
 A empresa [ECMA](http://www.ecma-international.org/ "link-externo") resolveu padronizar a linguagem e criou o padrão
 [ECMAscript](http://www.ecmascript.org/ "link-externo"), na verdade este é o nome oficial adotado para a linguagem, 
-mas que não pega (nem a pau). 
+mas que não "cola" de jeito nenhum. 
 
 Porque temos um padrão? Porque cada navegador implementa a linguagem de forma diferente, em outras palavras, escrever um
 trecho de código JavaScript válido que funciona no Firefox, por exemplo, pode não funcionar no IE (sempre o IE!). 
@@ -50,3 +47,5 @@ para o lado do servidor, e está cada vez mais popular.
 > script da Web. Também utilizada em vários outros ambientes como __node.js__ e __Apache CouchDB__.".
 >
 > Mozilla Fundation
+
+Agora, que tal dar um olhada na [sintaxe de JavaScript](/javascript/sintaxe-basica/)?
