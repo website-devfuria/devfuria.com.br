@@ -134,9 +134,7 @@ if (n == 1) {
 {% endhighlight %}
 
 
-É possível obter resultados semelhantes usando o operador condicional [(true) ? true : false](../refs/operador-condicional-ternario/).
-
-O operador condicional é o único operador ternário de JavaScript.
+É possível obter resultados semelhantes usando o [operador condicional ternário](../refs/operador-condicional-ternario/) `condition ? expr1 : expr2`.
 
 {% highlight javascript %}
 resultado = (a > b) ? "a é maior que b" : "b é maior que a";

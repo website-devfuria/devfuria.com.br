@@ -45,7 +45,7 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 Canvas
 ---
 
-O Canvas é um elemento da especificação HTML5.
+O Canvas é um elemento da especificação [HTML5](http://www.w3.org/TR/html5/ "link-externo").
 
 Obviamente, junto com o elemento, temos a API Canvas (funções que manipulam o elemento canvas).
 

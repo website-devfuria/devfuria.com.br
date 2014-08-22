@@ -11,6 +11,7 @@ O operador condicional ternário é um atalho para o condicional `if`.
 - `condition` é uma expressão que é avaliada como true ou false.
 - `expr1, expr2` são expressões com valores de qualquer tipo. 
 
+O operador condicional é o único operador ternário de JavaScript.
 
 
 ### Exemplo 1
@@ -30,6 +31,23 @@ console.log(fee);
 isMenber = false;
 "The fee is " + (isMenber ? "$2.00" : "$10.00")
 // The fee is $10.00
+{% endhighlight %}
+
+
+### Exemplo 3
+
+{% highlight javascript %}
+resultado = (a > b) ? "a é maior que b" : "b é maior que a";
+{% endhighlight %}
+
+O código acima é equivalente ao de baixo:
+
+{% highlight javascript %}
+if (a > b) {
+    resultado = "a é maior que b";
+} else {
+    resultado = "b é maior que a";
+}
 {% endhighlight %}
 
 
