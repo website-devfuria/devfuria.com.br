@@ -15,9 +15,11 @@ Entre no diretório /mysite (`cd /mysite`) e inicio o servidor para que você po
 
     python manage.py runserver
 
-Pelo navegador web acesse  [http://127.0.0.1:8000/](http://127.0.0.1:8000/ "link-externo") ou [http://localhost:8000/](http://localhost:8000/ "link-externo")
+Pelo navegador web acesse  [http://127.0.0.1:8000/](http://127.0.0.1:8000/ "link-externo") ou
+[http://localhost:8000/](http://localhost:8000/ "link-externo")
 
-Você deve estar recebendo a seguinte menssagem __Congratulations on your first Django-powered page__.
+Você deve estar recebendo a seguinte mensagem __Congratulations on your first Django-powered page__.
+
 
 
 ### Configurando o DB
@@ -33,12 +35,13 @@ Edite o arquivo `mysite/settings.py`
 
 Rode o comando `python manage.py syncdb` para sincronizar o banco de dados com a aplicação Django.
 
-Ele irá criar as tabeas necessárias e aproveita para instalar o usuário "super":
+Ele irá criar as tabelas necessárias e aproveita para instalar o usuário "super":
 
     You just installed Django's auth system, which means you don't have any superusers defined.
     Would you like to create one now? (yes/no):
 
-Se responder que sim anote os dados pois precisaremos dele lá na frente.
+Se você responder que sim, anote os dados pois precisaremos dele lá na frente.
+
 
 
 ### Criando o módulo Polls
@@ -50,6 +53,8 @@ Sua estrutura de pastas deve ser como abaixo.
     mysite/
         mysite/
         polls/
+
+
 
 ### Alterando o model do módulo Polls
 
@@ -99,8 +104,7 @@ Crie os comandos SQL relativo ao módulo executando `python manage.py sql polls`
 
     COMMIT;
 
-Novamente precisaremos sincronizar o DB. Rode `python manage.py syncdb`.
+Novamente precisaremos sincronizar o DB, execute `python manage.py syncdb`.
 
 Agora chegou a hora de testar a shell interativa.
 
-Acesse a continuação do tutorial:

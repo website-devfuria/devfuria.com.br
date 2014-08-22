@@ -57,10 +57,9 @@ Valide o model `python manage.py validate`.
 
 As vezes pode dar erro de endentação. 
 
-Se começou com TABS, use sempre TABS. Se começou co 4 espaços, use sempre 4 espaços.
+Se começou com TABS, use sempre TABS. Se começou com 4 espaços, use sempre 4 espaços.
 
 Reinicie o shel `python manage.py shell`.
-
 
 
     from polls.models import Poll, Choice

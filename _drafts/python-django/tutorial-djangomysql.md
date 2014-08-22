@@ -4,6 +4,7 @@ title:       Django e mysql
 description: 
 ---
 
+Você deve criar o banco de dados antes.
 
 alterar... /mysite/settings.py
 
@@ -18,13 +19,16 @@ alterar... /mysite/settings.py
     }
 
 
-Valide os models (inclue o arquivo sttings, uma vez que ele vai precisar para testar os models)
+Valide os models (inclue o arquivo setings, uma vez que ele vai precisar para testar os models)
 
 	python manage.py validate
 
 Se passaram, sincronize com o DB.
 
 	python manage.py syncdb
+	
+O comando acima irá criar as tabelas básicas para o Django funcionar e também perguntará se deseja criar a conta do 
+"super usuário" (você poderá fazer isso outra hora).
 
 Como teste final rode o servidor `python manage.py runserver`.
 
