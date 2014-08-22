@@ -52,6 +52,8 @@ p[5:] # 'n'
 p[6:] # ''
 {% endhighlight %}
 
+O trecho abaixo é para ilustrar como vários caminhos chegam no mesmo lugar.
+
 {% highlight python %}
 p = ["p", "y", "t", "h", "o", "n"] 
 (p == p[0:6]) # True
@@ -59,12 +61,23 @@ p = ["p", "y", "t", "h", "o", "n"]
 (p == p[:])   # True
 {% endhighlight %}
 
+...ou seja, se aplicarmos um "print" nas formas acima, o resultado será exatamente o mesmo, veja:
+
+{% highlight python %}
+print p       // ['p', 'y', 't', 'h', 'o', 'n']
+print p[0:6]  // ['p', 'y', 't', 'h', 'o', 'n']
+print p[:6]   // ['p', 'y', 't', 'h', 'o', 'n']
+print p[:]    // ['p', 'y', 't', 'h', 'o', 'n']
+{% endhighlight %}
+
+
 Leia mais sobre [fatimanento de sequencias](../sequencias-fatiamento/ "Python - Sequencias").
 
 
 
 Funções nativas p/ listas
 ---
+
 
 ### append()
 
@@ -75,7 +88,7 @@ print nums # ['um']
 nums.append("dois")
 nums.append("tres")
 nums.append("quatro")
-print  nums # ['um', 'dois', 'tres', 'quatro']
+print nums # ['um', 'dois', 'tres', 'quatro']
 {% endhighlight %}
 
 

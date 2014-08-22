@@ -87,7 +87,7 @@ my_dict = {
     "3": "c"
 }
 
-print my_dict.items()  #
-print my_dict.keys()   #
-print my_dict.values() #
+my_dict.items()  # dict_items([('1', 'a'), ('3', 'c'), ('2', 'b')])
+my_dict.keys()   # dict_keys(['1', '3', '2'])
+my_dict.values() # dict_values(['a', 'c', 'b'])
 {% endhighlight %}

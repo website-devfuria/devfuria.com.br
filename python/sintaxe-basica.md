@@ -568,7 +568,7 @@ class Triangle(object):
 
 Todo método deve aceitar como parâmetro a palavra `self`, que se refere ao próprio objeto.
 
-Abaixo, criamos mais métodos para nossa class `Triangle`.
+Abaixo, criamos alguns métodos para nossa classe `Triangle`.
 
 {% highlight python %}
 class Triangle(object):
@@ -591,7 +591,7 @@ class Triangle(object):
 
 ### Instanciando
 
-Abaixo vemos um exemplo de utilização da classe.
+Abaixo vemos um exemplo simples de como utilizar (instanciar) uma classe em Python.
 
 {% highlight python %}
 class Animal(object):
