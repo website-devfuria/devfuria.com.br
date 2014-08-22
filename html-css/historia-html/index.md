@@ -62,11 +62,16 @@ A imagem abaixo é velha, mas serve para der uma visão panorâmica da evoluçã
 W3C
 ---
 
-O W3C é um consórcio que regulamenta as especificações tanto do __HTML__ como do __CSS__. É a __fonte oficial__ do HTML 
-e CSS. É possível encontrar as traduções das especificações para a língua portuguesa. 
+O [W3C](http://www.w3.org/ "link-externo") é um consórcio que regulamenta as especificações tanto do __HTML__ como do __CSS__,
+é a __fonte oficial__ do HTML e CSS.
+
+É possível encontrar as traduções das especificações para a língua portuguesa: 
+
+- [Recomendações do W3C XHTML 1 - Tradução do Majour](http://www.maujor.com/w3c/xhtml10_2ed.html "link-externo")
+- [Recomendações do W3C CSS nível 1 - Tradução do Majour](http://www.maujor.com/tutorialcss1/css1tut.shtml "link-externo")
 
 Dois pequenos alertas:
 
-1. Estudar pela especificação é mais difícil (e mais chata também) e 
+1. Estudar pela especificação é mais difícil (e mais chato também) e 
 2. Nem todos os navegadores implementam as especificações em sua totalidade, isso significa que a especificação diz uma 
 coisa e seu navegador comporta-se de outro, restando para o programador e/ou desginer "se virar" para encontrar um solução.

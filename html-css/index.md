@@ -27,6 +27,7 @@ Veja também:
 - [Um pequeno glossário do site codecademy.](http://www.codecademy.com/glossary/html "link-externo")
 
 
+
 Formulários web e seus controles
 ---
 
@@ -44,8 +45,6 @@ A lista abaixo compõem os controles básicos do tipo __não input__:
 
 {% include lista-html-artigos-titulo.html %}
 {% include lista-html-artigos.html %}
-
-
 
 
 
@@ -71,3 +70,13 @@ Veja também
 
 - [Recomendações do W3C XHTML 1 - Tradução do Majour](http://www.maujor.com/w3c/xhtml10_2ed.html "link-externo")
 - [Recomendações do W3C CSS nível 1 - Tradução do Majour](http://www.maujor.com/tutorialcss1/css1tut.shtml "link-externo")
+
+
+
+Sites Oficiais
+---
+
+- [W3C - HTML5](http://www.w3.org/TR/html5/ "link-externo")
+- [WeC - HTML 5.1 (drafts)](http://www.w3.org/html/wg/drafts/html/master/ "link-externo")
+- [MDN - HTML](https://developer.mozilla.org/en-US/learn/html "link-externo")
+- [whatwg](http://www.whatwg.org "link-externo")
