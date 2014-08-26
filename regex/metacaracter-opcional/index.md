@@ -3,7 +3,7 @@ layout: materia
 title:  "Metacaracter opcional ?"
 ---
 
-O opcional é um quantificador indica que pode ter ou não a ocorrência da entidade anterior, pois ele a repete 0 ou 1 vez.
+O quantificador opcional indica que pode ter ou não a ocorrência da entidade anterior, pois ele a repete 0 ou 1 vez.
 
 O opcional é útil para procurar palavras no singular e plural.
 
