@@ -101,33 +101,40 @@ Veja mais sobre o [metacaracter chaves](../metacaracter-chaves/)
 Metacaracter ^	circunflexo
 ---
 
+Em breve!
+
 
 Metacaracter $	cifrão
 ---
 
+Em breve!
 
 
 Metacaracter \b	borda
 ---
 
-
+Em breve!
 
 
 Metacaracter \	escape
 ---
 
+Em breve!
 
 
 Metacaracter |	ou
 ---
 
+Em breve!
 
 
 Metacaracter ()	grupo
 ---
 
+Em breve!
 
 
 Metacaracter \1	retrovisor
 ---
 
+Em breve!

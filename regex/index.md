@@ -19,6 +19,8 @@ A primeira coisa que precisamos responder é [o que são Expressões Regulares](
 
 [metacaracter opcional](metacaracter-opcional/)
 
+[metacaracter chaves](metacaracter-chaves/)
+
 [aquela-intro](aquela-intro/)
 
 [exemplos](exemplos/)
@@ -41,9 +43,12 @@ sabores: Pytho, Ruby, .NET, GO, Haskell, Java, JavaSript, etc...
 Fontes
 ---
 
-[Aurélio Marinho](http://aurelio.net/regex/ "link-externo") é a autoridade máxima Brasileira a respeitos das Expressões Regulares. Seu livro 
-[Expressões Regulares - uma abordargem divertida](http://www.piazinho.com.br/ "link-externo") encontra-se na 4 edição
-(Novatec). Também é possível ler online a [1 edição do livro](http://aurelio.net/regex/guia/ "link-externo").
+[Aurélio Marinho](http://aurelio.net/regex/ "link-externo") é a autoridade máxima Brasileira a respeitos das Expressões Regulares.
+
+Seu livro [Expressões Regulares - uma abordargem divertida](http://www.piazinho.com.br/ "link-externo") encontra-se na 4 edição
+(Novatec).
+
+Também é possível ler online a [1 edição do livro](http://aurelio.net/regex/guia/ "link-externo").
 
 
 
