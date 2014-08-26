@@ -3,6 +3,7 @@ layout: materia
 title:  Expressões Regulares - metacaracteres
 ---
 
+
 Metacaracter ponto .
 ---
 
@@ -43,18 +44,17 @@ Exemplo, a expressão regular `[^0-9]` casa com qualquer coisa menos os números
 Veja mais sobre o [metacaracter lista negada](../metacaracter-lista-negada/)
 
 
+
 Metacaracter opcional ?
 ---
 
-O opcional é um quantificador indica que pode ter ou não a ocorrência da entidade anterior, pois ele a repete 0 ou 1 vez.
+O quantificador opcional indica que pode ter ou não a ocorrência da entidade anterior, pois ele a repete 0 ou 1 vez.
 
 A expressão `fala[r!]?` casa com `fala`, `fala!` e `falar`.
 
 ![Figura ilustrando o metacaracter opcional](../metacaracter-opcional/regex-fala.png "Expresão regular: metacaracter opcional")
 
 Veja mais sobre o [metacaracter opcional](../metacaracter-opcional/)
-
-
 
 
 
@@ -87,6 +87,14 @@ Veja mais sobre o [metacaracter mais](../metacaracter-mais/)
 
 Metacaracter {}	chaves
 ---
+
+O quantificador chaves funciona como uma repetição mais controlada, onde `{n,m}` significa de `n` até `m` vezes.
+
+A expressão `n{1,4}` casa "n", "nn", "nnn" e "nnnn" (exatamente isso; nem mais, nem menos).
+
+![Figura ilustrando o metacaracter chaves](../metacaracter-chaves/regex-n14.png "Expresão regular: metacaracter chaves")
+
+Veja mais sobre o [metacaracter chaves](../metacaracter-chaves/)
 
 
 
