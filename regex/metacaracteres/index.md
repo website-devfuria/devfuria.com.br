@@ -77,6 +77,13 @@ Metacaracter +	mais
 O mais tem funcionamento idêntico ao do asterisco, a única diferença é que o mais não é opcional, então a entidade 
 anterior deve casar pelo menos uma vez, e pode ter várias.
 
+A expressão `6+0` casa com `60`, `660`, `6660`, `6666666666660`.
+
+![Figura ilustrando o metacaracter mais](../metacaracter-mais/regex-60.png "Expresão regular: metacaracter mais")
+
+Veja mais sobre o [metacaracter mais](../metacaracter-mais/)
+
+
 
 Metacaracter {}	chaves
 ---
