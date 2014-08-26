@@ -48,7 +48,7 @@ Metacaracter opcional ?
 
 O opcional é um quantificador indica que pode ter ou não a ocorrência da entidade anterior, pois ele a repete 0 ou 1 vez.
 
-A exressão `fala[r!]?` casa com `fala`, `fala!` e `falar`.
+A expressão `fala[r!]?` casa com `fala`, `fala!` e `falar`.
 
 ![Figura ilustrando o metacaracter opcional](../metacaracter-opcional/regex-fala.png "Expresão regular: metacaracter opcional")
 
@@ -61,11 +61,21 @@ Veja mais sobre o [metacaracter opcional](../metacaracter-opcional/)
 Metacaracter *	asterisco
 ---
 
+O asterisco repete em qualquer quantidade
+
+A expressão `6*0` casa com `0`, `60`, `660`, `6660`, `6666666666660`.
+
+![Figura ilustrando o metacaracter asterisco](../metacaracter-asterisco/regex-60.png "Expresão regular: metacaracter asterisco")
+
+Veja mais sobre o [metacaracter asterisco](../metacaracter-asterisco/)
+
 
 
 Metacaracter +	mais
 ---
 
+O mais tem funcionamento idêntico ao do asterisco, a única diferença é que o mais não é opcional, então a entidade 
+anterior deve casar pelo menos uma vez, e pode ter várias.
 
 
 Metacaracter {}	chaves
