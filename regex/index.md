@@ -8,44 +8,36 @@ Seja bem vindo(a) a seção sobre Expressões Regulares!
 
 A primeira coisa que precisamos responder é [o que são Expressões Regulares](expressoes-regulares/) ?   
 
+A segunda pode ser um [resumo dos metacarecteres](/regex/metacaracteres/).
 
-[metacaracteres](metacaracteres/)
+Ou talvez você queria estudar cada metacaracter separadamente e com mais detalhes...
 
-[metacaracter ponto](metacaracter-ponto/)
+{% include lista-regex-metacaracteres.html %}
 
-[metacaracter lista](metacaracter-lista/)
-
-[metacaracter lista negada](metacaracter-lista-negada/)
-
-[metacaracter opcional](metacaracter-opcional/)
-
-[metacaracter chaves](metacaracter-chaves/)
-
-[aquela-intro](aquela-intro/)
-
-[exemplos](exemplos/)
 
 
 Testadores Online
 ---
 
-O [regexpal](http://regexpal.com/ "link-externo") é o mais famoso, ele implementa apenas o "sabor" JavaScript, e de vez
+O [regexpal](http://regexpal.com/ "link-externo") é o mais famoso, porém ele implementa apenas o "sabor" JavaScript, e de vez
 em quando você não consegue acessar o site.
 
-Tanto o [debuggex](https://www.debuggex.com/ "link-externo") quanto o [regexper](http://www.regexper.com/ "link-externo")
+Tanto o [regexper](http://www.regexper.com/ "link-externo") quanto o [debuggex](https://www.debuggex.com/ "link-externo")
 transformam sua expressão regular em um gráfico, o que ajuda a compreendê-las.
 
 No site [regexplanet](http://www.regexplanet.com/ "link-externo") é possível testar as expressões regulares em diversos
-sabores: Pytho, Ruby, .NET, GO, Haskell, Java, JavaSript, etc...
+sabores: Python, Ruby, .NET, GO, Haskell, Java, JavaSript, etc...
 
 
 
 Fontes
 ---
 
-[Aurélio Marinho](http://aurelio.net/regex/ "link-externo") é a autoridade máxima Brasileira a respeitos das Expressões Regulares.
+[Aurélio Marinho](http://aurelio.net/regex/ "link-externo") é a autoridade máxima Brasileira a respeitos das Expressões
+Regulares.
 
-Seu livro [Expressões Regulares - uma abordargem divertida](http://www.piazinho.com.br/ "link-externo") encontra-se na 4 edição
+Seu livro [Expressões Regulares - uma abordargem divertida](http://www.piazinho.com.br/ "link-externo") é leitura obrigatória,
+encontra-se na 4 edição
 (Novatec).
 
 Também é possível ler online a [1 edição do livro](http://aurelio.net/regex/guia/ "link-externo").
