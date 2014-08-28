@@ -101,11 +101,13 @@ Veja mais sobre o [metacaractere chaves](../metacaractere-chaves/)
 Metacaractere ^	circunflexo
 ---
 
+O metacaractere circunflexo marca o começo de uma linha, serve para procurar no começo da linha.
 
+A expressão `^[0-9]` casa com um número que estiver no começo da linha (linhas que começam com um número).
 
+![Figura ilustrando o metacaractere circunflexo](regex-circun09.png "Expresão regular: metacaractere circunflexo")
 
-
-Em breve!
+Veja mais sobre o [metacaractere circunflexo ^](../metacaractere-circunflexo/)
 
 
 Metacaractere $	cifrão
