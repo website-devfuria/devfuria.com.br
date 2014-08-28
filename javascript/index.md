@@ -17,7 +17,9 @@ os elementos de um array `a`, por exemplo, não passamos `a` para uma função `
 
 Em vez disso, chamamos o método `sort()` de `a`: 
 
-    a.sort() // A versão orientada a objetos de sort(a)
+{% highlight javascript %}
+    a.sort() // A versão orientada a objetos de "sort(a)"
+{% endhighlight %}
 
 
 Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).

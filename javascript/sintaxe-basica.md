@@ -9,17 +9,23 @@ description: Um guia rápido e básico da linguagem JavaScript.
 
 As variáveis são declaradas com a palavra chave `var`, como segue:
 
-    var i;
-    var sum;
+{% highlight javascript %}
+var i;
+var sum;
+{% endhighlight %}
 
 Também é possível declarar varias variáveis com a mesma palavra chave `var`:
 
-    var i, sum;
+{% highlight javascript %}
+var i, sum;
+{% endhighlight %}
 
 E pode-se combinar a declaração da variável com sua inicialização:
 
-    var i = 0, j = 0, k = 0;
-    var nome = "Fulano";
+{% highlight javascript %}
+var i = 0, j = 0, k = 0;
+var nome = "Fulano";
+{% endhighlight %}
 
 Antes de usar uma variável em um programa JavaScript, você deve declará-la. 
 
@@ -41,8 +47,10 @@ Qualquer valor em JavaScript que não seja número, string, booleano, null ou un
 O [typeof](../refs/typeof/) é um operador unário colocado antes de seu operando, o qual pode ser de qualquer tipo. Seu valor é uma string 
 que especifica o tipo do operando.
 
-    typeof "foo"; // 'string'
-    typeof 123;   // 'number'
+{% highlight javascript %}
+typeof "foo"; // 'string'
+typeof 123;   // 'number'
+{% endhighlight %}
 
 
 
