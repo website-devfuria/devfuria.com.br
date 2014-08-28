@@ -383,7 +383,7 @@ Funções
 def foo():
     return "retorno da função"
 
-print foo() "retorno da função"
+print foo() # retorno da função"
 {% endhighlight %}
 
 Outro exemplo
