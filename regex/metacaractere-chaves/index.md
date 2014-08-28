@@ -1,13 +1,13 @@
 ---
 layout: materia
-title:  "Metacaracter chaves { }"
+title:  "Metacaractere chaves { }"
 ---
 
 O quantificador chaves funciona como uma repetição mais controlada, onde `{n,m}` significa de `n` até `m` vezes.
 
 A expressão `n{1,4}` casa "n", "nn", "nnn" e "nnnn" (exatamente isso; nem mais, nem menos).
 
-![Figura ilustrando o metacaracter chaves](../metacaracter-chaves/regex-n14.png "Expresão regular: metacaracter chaves")
+![Figura ilustrando o metacaractere chaves](../metacaractere-chaves/regex-n14.png "Expresão regular: metacaractere chaves")
 
 Você pode especificar um número exato, um mínimo, um máximo, ou uma faixa numérica:
 

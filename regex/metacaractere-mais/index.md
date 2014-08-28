@@ -1,6 +1,6 @@
 ---
 layout: materia
-title:  "Metacaracter mais +"
+title:  "Metacaractere mais +"
 ---
 
 O mais tem funcionamento idêntico ao do asterisco, a única diferença é que o mais não é opcional, então a entidade 
@@ -21,7 +21,7 @@ anterior deve casar pelo menos uma vez, e pode ter várias.
         <tr>
             <td><code>6+0</code></td>
             <td>60, 660, 6660, 6666666666660</td>
-            <td><img src="regex-60.png" alt="Figura ilustrando o metacaracter mais" title="Expresão regular: metacaracter mais" /></td>
+            <td><img src="regex-60.png" alt="Figura ilustrando o metacaractere mais" title="Expresão regular: metacaractere mais" /></td>
         </tr>
 
     </tbody>

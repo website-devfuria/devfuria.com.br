@@ -1,6 +1,6 @@
 ---
 layout: materia
-title:  "Metacaracter ponto ."
+title:  "Metacaractere ponto ."
 ---
 
 O ponto casa com qualquer coisa.
@@ -21,17 +21,17 @@ O ponto é um curinga para casar um caractere
         <tr>
             <td><code>e.tendido</code></td>
             <td>estendido, extendido, eztendido</td>
-            <td><img src="regex-entendido.png" alt="Figura ilustrando o metacaracter ponto" title="Expresão regular: metacaracter ponto" /></td>
+            <td><img src="regex-entendido.png" alt="Figura ilustrando o metacaractere ponto" title="Expresão regular: metacaractere ponto" /></td>
         </tr>
         <tr>
             <td><code><.></code></td>
             <td>&lt;b&gt;, &lt;i&gt;, &lt;p&gt;</td>
-            <td><img src="regex-tags.png" alt="Figura ilustrando o metacaracter ponto" title="Expresão regular: metacaracter ponto" /></td>
+            <td><img src="regex-tags.png" alt="Figura ilustrando o metacaractere ponto" title="Expresão regular: metacaractere ponto" /></td>
         </tr>
         <tr>
             <td><code>12.45</code></td>
             <td>12:45, 12 45, 12.45</td>
-            <td><img src="regex-horas.png" alt="Figura ilustrando o metacaracter ponto" title="Expresão regular: metacaracter ponto" /></td>
+            <td><img src="regex-horas.png" alt="Figura ilustrando o metacaractere ponto" title="Expresão regular: metacaractere ponto" /></td>
         </tr>
     </tbody>
 </table>

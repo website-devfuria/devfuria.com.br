@@ -10,7 +10,7 @@ A primeira coisa que precisamos responder é [o que são Expressões Regulares](
 
 A segunda pode ser um [resumo dos metacarecteres](/regex/metacaracteres/).
 
-Ou talvez você queria estudar cada metacaracter separadamente e com mais detalhes...
+Ou talvez você queria estudar cada metacaractere separadamente e com mais detalhes...
 
 {% include lista-regex-metacaracteres.html %}
 
