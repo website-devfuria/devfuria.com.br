@@ -10,11 +10,11 @@ A primeira coisa que precisamos responder é [o que são Expressões Regulares](
 
 A segunda pode ser um [resumo dos metacarecteres](/regex/metacaracteres/).
 
-Ou talvez você queria estudar cada metacaractere separadamente e com mais detalhes...
+Talvez você queria estudar cada metacaractere separadamente e com mais detalhes...
 
 {% include lista-regex-metacaracteres.html %}
 
-
+Está procurando uma visão geral sobre os metacaracteres? Veja [cheat-sheet-matacaracteres](/regex/cheat-sheet-matacaracteres/).
 
 Testadores Online
 ---
