@@ -17,7 +17,7 @@ Representantes
     <tbody>
         <tr>
             <td><code>.</code></td>
-            <td>ponto</td>
+            <td><a href="../metacaractere-ponto/">ponto</a></td>
             <td>
                 <ul>
                     <li>curinga de um caractere</li>
@@ -26,7 +26,7 @@ Representantes
         </tr>
         <tr>
             <td><code>[]</code></td>
-            <td>lista</td>
+            <td><a href="../metacaractere-lista/">lista</a></td>
             <td>
                 <ul>
                     <li>dentro todos são normais,</li>
@@ -37,7 +37,7 @@ Representantes
         </tr>
         <tr>
             <td><code>[^]</code></td>
-            <td>lista negada</td>
+            <td><a href="../metacaractere-lista-negada/">lista negada</a></td>
             <td>
                 <ul>
                     <li>sempre casa algo, </li>
@@ -64,7 +64,7 @@ Quantificadores - gulosos
     <tbody>
         <tr>
             <td><code>?</code></td>
-            <td>opcional</td>
+            <td><a href="../metacaractere-opcional/">opcional</a></td>
             <td>
                 <ul>
                     <li>0 ou 1</li>
@@ -74,7 +74,7 @@ Quantificadores - gulosos
         </tr>
         <tr>
             <td><code>*</code></td>
-            <td>asterisco</td>
+            <td><a href="../metacaractere-asterisco/">asterisco</a></td>
             <td>
                 <ul>
                     <li>0 ou mais</li>
@@ -84,7 +84,7 @@ Quantificadores - gulosos
         </tr>
         <tr>
             <td><code>+</code></td>
-            <td>mais</td>
+            <td><a href="../metacaractere-mais/">mais</a></td>
             <td>
                 <ul>
                     <li>1 ou mais</li>
@@ -95,7 +95,7 @@ Quantificadores - gulosos
         </tr>
         <tr>
             <td><code>{n,m}</code></td>
-            <td>chaves</td>
+            <td><a href="../metacaractere-chaves/">chaves</a></td>
             <td>
                 <ul>
                     <li>número exato</li>
@@ -118,11 +118,6 @@ Quantificadores - não gulosos
         <tr>
             <th>metacaractere</th>
             <th>mnemônico</th>
-            <td>
-                <ul>
-                    <li>[:POSIX:] tem acentuação</li>
-                </ul>
-            </td>
             <th>dica</th>
         </tr>
     </thead>
@@ -185,7 +180,7 @@ Quantificadores - não gulosos
     <tbody>
         <tr>
             <td><code>^</code></td>
-            <td>circunflexo</td>
+            <td><a href="../metacaractere-circunflexo/">circunflexo</a></td>
             <td>
                 <ul>
                     <li>casa o começo da linha</li>
