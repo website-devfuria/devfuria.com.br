@@ -34,14 +34,26 @@ A expressão regular relaciona todas as ocorrências (__matches__) de um padrão
     </tbody>
 </table>
 
+
+
+Exemplos
+---
+
 O exemplo mais simples possível de uma expressão regular seria a busca pelo "termo exato":
 
-O assunto (subject) seria `Casa com a palavra exemplo`.
+Imagine que queremos procurar a palavra `exemplo` dentro da frase "Casa com a palavra exemplo".
 
-E queremos encontrar o padrão (nossa expressão regular ) `exemplo`.
+O __assunto (subject)__ é "Casa com a palavra exemplo" e a __expressão regular__ é "exemplo", logo o resultado seria:
 
-O resultado (matches) seria:
+![Figura ilustrando o 1 exemplo de expressão regular](exemplo1-expressoes-regulares.png)
 
-<pre>
-Casa com a palavra <span class="regex">exemplo</span>
-</pre>
+
+Outro exemplo, é a expressão regular `ca.a`.
+
+O sinal `.` [ponto](../metacaractere-ponto/) é um metacaractere que representa qualquer coisa, ou melhor, qualquer caracter.
+
+Veja os resultados (matches) da expressão abaixo:
+
+![Figura ilustrando o 2 exemplo de expressão regular](exemplo2-expressoes-regulares.png)
+
+
