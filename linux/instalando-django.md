@@ -31,7 +31,7 @@ Após isso você poderá instalar o __Django__ da seguinte forma.
 
     pip install Django==1.6.5
 
-Note que os números 1.6.5. eram a versão amis atual enquanto eu escrevia este artigo. Você deve saber qual a versão 
+Note que os números 1.6.5. eram a versão mais atual enquanto eu escrevia este artigo. Você deve saber qual a versão 
 mais atual para poder alterar esses números de acordo.
 
 Acesse a página de download...
