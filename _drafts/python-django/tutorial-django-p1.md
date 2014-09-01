@@ -11,7 +11,7 @@ Vá para sua pasta de "projetos" e crie um novo projeto Django digitando no term
 
     django-admin.py startproject mysite
 
-Entre no diretório /mysite (`cd /mysite`) e inicio o servidor para que você possa ver o resultado.
+Entre no diretório /mysite (`cd /mysite`) e inicie o servidor para que você possa ver o resultado.
 
     python manage.py runserver
 
@@ -58,7 +58,7 @@ Sua estrutura de pastas deve ser como abaixo.
 
 ### Alterando o model do módulo Polls
 
-Abra o arquivo `polls/models.py` e subistitua o conteúdo por:
+Abra o arquivo `polls/models.py` e substitua o conteúdo por:
 
     from django.db import models
 
