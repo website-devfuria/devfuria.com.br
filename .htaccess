@@ -66,10 +66,9 @@ RewriteRule ^html-css\/basico\/onde-tudo-comecou\/?$                  "http\:\/\
 RewriteRule ^html-css\/basico/html-intro\/?$                          "http\:\/\/www\.devfuria\.com\.br\/html-css\/introducao-html\/" [R=301,L]
 RewriteRule ^html-css\/basico\/css-intro\/?$                          "http\:\/\/www\.devfuria\.com\.br\/html-css\/introducao-css\/" [R=301,L]
 
+RewriteRule ^regexp\/basico\/ponto\/?$            "http\:\/\/www\.devfuria\.com\.br\/regex\/metacaractere-ponto\/" [R=301,L]
 RewriteRule ^regexp\/basico\/preg\-match\-all\/?$ "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-all\-basico\/" [R=301,L]
 RewriteRule ^regexp\/basico\/preg\-match\/?$      "http\:\/\/www\.devfuria\.com\.br\/php\/preg\-match\-basico\/" [R=301,L]
-
-
 
 RewriteRule ^sql\/mysql-erro-1064\/?$                     "http\:\/\/www\.devfuria\.com\.br\/sql\/mysql-ler-mensagens-erro\/" [R=301,L]
 RewriteRule ^mysql-sql\/basico\/crud\/?$                  "http\:\/\/www\.devfuria\.com\.br\/sql\/mysql-crud\/" [R=301,L]
