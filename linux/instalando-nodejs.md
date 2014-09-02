@@ -4,17 +4,50 @@ title: Instalando o nodejs
 description: Veja 3 formas de instalar o nodejs no Linux
 ---
 
-Eu descobri 3 formas de instalar o __nodejs__ no Debian:
+Eu descobri <strike> 3 formas</strike>  4 formas de instalar o __nodejs__ no Debian:
+
+Mas esta primeira é a melhor:
 
 
-### Compilando os fontes via git-hub (Debian-wheezy)
+Instalando o node.js através do nvm
+---
+
+O [nvm](https://github.com/creationix/nvm "link-externo") é a sigla de "Node Version Manager", trata-se de um gerenciador
+de versão do __nodejs__.
+
+__Nota__: execute tudo como usuário normal (não como __root__).
+
+Primeiro teremos que instalar o __nvm__:
+
+    git clone git://github.com/creationix/nvm.git ~/.nvm
+    printf "\n\n# NVM\nif [ -s ~/.nvm/nvm.sh ]; then\n\tNVM_DIR=~/.nvm\n\tsource ~/.nvm/nvm.sh\nfi" >> ~/.bashrc
+    NVM_DIR=~/.nvm
+    source ~/.nvm/nvm.sh
+
+E agora o __nodejs__:
+
+    nvm install v0.10.29
+    nvm alias default 0.10
+    nvm use 0.10
+
+<hr>
+Fonte
+- [Bevry's Learning Centre - Install Node.js](http://learn.bevry.me/node/install#via-node-version-manager-https-github-com-creationix-nvm- "linl-externo")
+
+
+A seguir, as demais receitas....
+
+
+
+Compilando os fontes via git-hub (Debian-wheezy)
+---
 
 Atualize o sistema e instale as dependências via __apt-get__:
 
     apt-get update && apt-get install git-core curl build-essential openssl libssl-dev
 
 
-Vamos baixar os fontes diretamente do __git-hub__:
+Vamos baixar os fontes diretamente do [git-hub](https://github.com/joyent/node "link-externo"):
 
     git clone https://github.com/joyent/node.git
 
@@ -31,7 +64,8 @@ Para testar execute:
     node -v
 
 
-### Compilando os fontes - segunda forma (Debian-wheezy)
+Compilando os fontes(Debian-wheezy)
+---
 
 Atualize o sistema e instale as dependências via __apt-get__:
 
@@ -69,29 +103,32 @@ Fonte
 
 
 
-### Compilando os fontes - terceira forma (Debian-wheezy)
+Via pacote deb (Debian-wheezy)
+---
 
-Esta é a forma idicada na documentação do repositório (veja link da fonte).
+Esta é a forma recomendado na documentação, mas comigo não funcionou! Então, boa sorte...
 
-Comigo não funcionou, o __Debian-wheezy__ não encontra a biblioteca __checkinstall__
+Você precisará do [curl(http://curl.haxx.se/ "link-externo"):
 
-Então boa sorte:
+    apt-get install curl
 
-    apt-get install python g++ make checkinstall fakeroot
-    src=$(mktemp -d) && cd $src
-    wget -N http://nodejs.org/dist/node-latest.tar.gz
-    tar xzvf node-latest.tar.gz && cd node-v*
-    ./configure
-    fakeroot checkinstall -y --install=no --pkgversion $(echo $(pwd) | sed -n -re's/.+node-v(.+)$/\1/p') make -j$(($(nproc)+1)) install
-    dpkg -i node_*
+Agora baixe o pacote debian
+
+    curl -sL https://deb.nodesource.com/setup | bash -
+
+E só instalar...
+
+    apt-get install nodejs nodejs-legacy
 
 <hr>
 Fonte
 - [https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager "link-externo")
 
 
-
 Veja também
 ---
 
 - [Instalando o npm](/linux/instalando-npm/)
+- [Node.js no GitHub](https://github.com/joyent/node "link-externo")
+- [Node.js](http://nodejs.org/ "link-externo")
+- [Tutorial nodeschool](http://nodeschool.io/ "link-externo")
