@@ -1,7 +1,7 @@
 ---
 layout:      materia
 title:       Expressões Regulares em JavaScript
-description: 
+description: Expressões Regulares em JavaScript
 ---
 
 

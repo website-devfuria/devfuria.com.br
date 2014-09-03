@@ -46,6 +46,22 @@ Também é possível aprender Expressões Regulares em JavaScript de forma inter
 
 
 
+PHP Expressões Regulares
+---
+
+Em PHP temos os dois mudos: PCRE e POSIX.
+
+As funções POSIX são derivadas de `ereg()`.
+
+As funções do PREC são derivadas de `preg_macth()`.
+
+Veremos as funções
+[preg match all](/php/preg-match-all-basico/ "O básico sobre a função preg match all") e
+[preg match](/php/preg-match-basico/ "O básico sobre a função preg match").
+
+[Continue lendo...](/regex/php-expressoes-regulares/)
+
+
 
 Testadores Online
 ---
