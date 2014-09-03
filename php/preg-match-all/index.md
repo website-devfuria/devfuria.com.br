@@ -117,4 +117,5 @@ Fonte: [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/functi
 Veja também
 ---
 
+- [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
 - [O básico sobre a função preg match all](/php/preg-match-all-basico/ "O básico sobre a função preg match all")

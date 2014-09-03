@@ -139,6 +139,6 @@ if ($resultado === 1) {
 
 ## Veja também
 
-1. Manual do PHP - preg_match()
-[http://php.net/manual/en/function.preg-match.php](http://php.net/manual/en/function.preg-match.php "link-externo")
+- [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
+- [Manual do PHP - preg_match()](http://php.net/manual/en/function.preg-match.php "link-externo")
 

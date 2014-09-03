@@ -74,4 +74,5 @@ A função `preg_math_all()` carregará a varirável `$matches` com todos as oco
 Veja Também
 ---
 
+- [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
 - [Referência da função preg_match_all()](/php/preg-match-all/ "Referência da função preg_match_all()")
