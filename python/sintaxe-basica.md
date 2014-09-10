@@ -58,7 +58,7 @@ print "Ah, so your name is %s, your quest is %s, " \
 Endentação
 ---
 
-Em Python devemos endentar corretamente o código fonte.
+Python usa endentação como delimitação de bloco, portanto devemos endentar corretamente o código fonte.
 
 Abaixo vemos um código endentado de forma errada:
 
@@ -83,7 +83,9 @@ print spam()
 
 ### Blocos
 
-Todos os comandos que aceitam blocos:
+Como visto acima, Python usa endentação como delimitação de bloco.
+
+Abaixo vemos os comandos que aceitam blocos:
 
 + if/elif/else
 + for/else
