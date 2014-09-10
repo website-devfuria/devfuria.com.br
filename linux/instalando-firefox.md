@@ -15,11 +15,7 @@ Baixe a última versão do Firefox através do link oficial
 No linux os downloads são salvos na pasta `/home/seu-usuario/Downloads`, vamos
 utilizar esta pasta tranquilamente, pois depois iremos apagar nossos vestígios.
 
-Dê permissão de execussão ao arquivo:
-
-    chmod 777 firefox-*.tar.bz2
-
-Extraia o arquivo:
+Dê [permissão de execução](../como-dar-permissao-de-execucao) e. em seguida, extraia o arquivo:
 
     tar xjf firefox-*.tar.bz2
 

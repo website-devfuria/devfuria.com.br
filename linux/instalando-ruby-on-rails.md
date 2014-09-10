@@ -34,9 +34,7 @@ Quando escrevo este artigo, a versão mais atual do __Ruby__ é a 2.1.2.
 
 Utilize a versão mais atual.
 
-Devemos dar permissão de execução no arquivo.
-
-    # chmod 777 ruby-2.1.2.tar.gz
+Devemos dar [permissão de execução](../como-dar-permissao-de-execucao) no arquivo.
 
 Vamos descompactar o arquivo.
 
@@ -69,9 +67,7 @@ O __RubyGems__ é o administrador de repositórios do Ruby. Com ele instalado, p
 Baixe o código fonte no site oficial 
 [http://rubygems.org/pages/download](http://rubygems.org/pages/download "link-externo")
 
-Também devemos dar permissão de execução no arquivo.
-
-    # chmod 777 rubygems-2.2.2
+Também devemos dar [permissão de execução](../como-dar-permissao-de-execucao) no arquivo.
 
 Para descompactar execute:
 

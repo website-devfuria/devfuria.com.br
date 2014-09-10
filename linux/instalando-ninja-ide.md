@@ -16,7 +16,7 @@ na linguagem [Python](python/).
 
 No site oficial é sugerido o download de um [pacote Debian](http://pt.wikipedia.org/wiki/.deb "link-externo").
 
-Fiz o download, dei [permissão de execução]() e rodei o pacote normalmente:
+Fiz o download, dei [permissão de execução](../como-dar-permissao-de-execucao) e rodei o pacote normalmente:
 
     dpkg -i ninja-ide_2.3+r597~saucy1_all.deb
 
