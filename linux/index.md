@@ -35,6 +35,7 @@ Know how to - pequeno guia de "saber como fazer"
 ---
 
 <div class="list-group">
+    <a href="/linux/como-dar-permissao-de-execucao/" class="list-group-item">Como dar permissão de execução em um arquivo no Linux</a>
     <a href="/linux/como-acessar-servidor-remotamente/" class="list-group-item">SSH - acessando o Linux remotamente</a>
     <a href="/linux/vbox-guest-additions/" class="list-group-item">Como instalar o GuestAdditions (CentOS)</a>
     <a href="/linux/vbox-compartilhando-pastas/" class="list-group-item">Compartilhando pastas no Virtual Box</a>
