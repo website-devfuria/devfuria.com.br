@@ -88,6 +88,7 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/instalando-netbeans/" class="list-group-item">Instalando o Netbeans no Linux</a>
     <a href="/linux/instalando-sublime/" class="list-group-item">Instalando o Sublime no Fedora</a>
     <a href="/linux/instalando-aptana/" class="list-group-item">Instalando Aptana no Fedora</a>
+    <a href="/linux/instalando-ninja-ide/" class="list-group-item">Instalando o Ninja IDE no Linux (Debian wheezy)</a>
 </div>
 
 
