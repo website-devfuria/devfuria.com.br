@@ -9,12 +9,12 @@ description: Como instalar o Ninja IDE no Linux (Debian wheezy)
 NINJA-IDE é o acrónimo "Ninja-IDE Is Not Just Another IDE" (Ninja-IDE Não é apenas outro IDE).
 
 É uma [IDE](http://pt.wikipedia.org/wiki/Ambiente_de_desenvolvimento_integrado "link-externo") para desenvolvimento
-na linguagem [Python](python/).
+na linguagem [Python](/python/).
 
 
-### Receita de instalação 
+### Instalando via pacote .deb
 
-No site oficial é sugerido o download de um [pacote Debian](http://pt.wikipedia.org/wiki/.deb "link-externo").
+No site oficial é sugerido o [download](http://ninja-ide.org/downloads/) de um pacote Debian.
 
 Fiz o download, dei [permissão de execução](../como-dar-permissao-de-execucao) e rodei o pacote normalmente:
 
@@ -35,8 +35,22 @@ Infelizmente deu erro de dependências:
     Errors were encountered while processing:
      ninja-ide
 
+Mas repare na mensagem que ele instalou a IDE mas deixou desconfigurada ("leaving unconfigured").
 
-Novamente no site oficial, abaixo do link para download estava um receita de instalação via 
+Apenas para constar: fazendo o teste em outra máquina, ele reclamou de outros pacotes: `python-pyinotify-doc python-qt4-dbg`.
+
+Para resolver o problema basta executar:
+
+    apt-get -f install
+
+...e executar novamente a instalação `dpkg -i ninja-ide_2.3+r597~saucy1_all.deb`.
+
+
+### Instalando via PPA
+
+O legal desta receita é que ela também serve para __Ubuntu__.
+
+Novamente no site oficial, abaixo do link para download, estava um receita de instalação via 
 [ppa](http://www.diolinux.com.br/2013/02/como-adicionar-um-ppa-no-ubuntu.html "link-externo"), só que para Ubuntu.
 
 Será que funciona para Debian? Sim, funciona.
