@@ -1,6 +1,6 @@
 ---
 layout:      materia-sql
-title:       CRUD - D de delete, é o nosso delete!
+title:       CRUD - D de delete
 description: Entenda o sql DELETE, para quem nunca viu SQL!
 ---
 

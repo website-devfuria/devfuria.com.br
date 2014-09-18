@@ -1,6 +1,6 @@
 ---
 layout:      materia-sql
-title:       CRUD - U de update, é  o nosso update!
+title:       CRUD - U de update
 description: Entenda o sql UPDATE, para quem nunca viu SQL!
 ---
 
@@ -59,4 +59,4 @@ Agora veja como ficou digitado no console.
 
 Você já aprendeu sobre o [insert](../mysql-crud-create/), [select](../mysql-crud-read/) e update. 
 
-Agora só falta o delete [CRUD - D de delete, é o nosso delete!](../mysql-crud-delete/)
+Agora só falta o delete [CRUD - D de delete](../mysql-crud-delete/)

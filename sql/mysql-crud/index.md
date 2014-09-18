@@ -35,8 +35,8 @@ rapidamente a tabela
 Então vamos ao CRUD...
 
 <div class="list-group">
-    <a href="../mysql-crud-create/" class="list-group-item">CRUD - C de create, é o nosso insert!</a>
-    <a href="../mysql-crud-read/" class="list-group-item">CRUD - R de read, é o nosso select!</a>
-    <a href="../mysql-crud-update/" class="list-group-item">CRUD - U de update, é  o nosso update!</a>
-    <a href="../mysql-crud-delete/" class="list-group-item">CRUD - D de delete, é o nosso delete!</a>
+    <a href="../mysql-crud-create/" class="list-group-item">CRUD - C de create (insert)</a>
+    <a href="../mysql-crud-read/" class="list-group-item">CRUD - R de read (select)</a>
+    <a href="../mysql-crud-update/" class="list-group-item">CRUD - U de update</a>
+    <a href="../mysql-crud-delete/" class="list-group-item">CRUD - D de delete</a>
 </div> 

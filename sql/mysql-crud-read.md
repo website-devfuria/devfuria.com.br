@@ -1,6 +1,6 @@
 ---
 layout:      materia-sql
-title:       CRUD - R de read, é o nosso select!
+title:       CRUD - R de read (select)
 description: Entenda o sql SELECT, para quem nunca viu SQL!
 ---
 
