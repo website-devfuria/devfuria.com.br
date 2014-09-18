@@ -4,14 +4,12 @@ title:       Cookbook - receitas de instalação de softwares no Linux
 description: Guia prático de instalações de softwares para Linux
 ---
 
-
 ### NodeJs
 
 <div class="list-group">
     <a href="/linux/instalando-nodejs/" class="list-group-item">Instalando o nodejs</a>
     <a href="/linux/instalando-npm/" class="list-group-item">Instalando o npm</a>
 </div>
-
 
 
 ### Python
@@ -23,13 +21,11 @@ description: Guia prático de instalações de softwares para Linux
 </div>
 
 
-
 ### Ruby
 
 <div class="list-group">
     <a href="/linux/instalando-ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
 </div>
-
 
 
 ### PHP
@@ -41,13 +37,11 @@ description: Guia prático de instalações de softwares para Linux
 </div>
 
 
-
 ### Apache
 
 <div class="list-group">
     <a href="/linux/instalando-apache-via-yum-apt-get/" class="list-group-item">Instalando e configurando o Apache no Linux</a>
 </div>
-
 
 
 ### Mysql
@@ -56,7 +50,6 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/instalando-mysql/" class="list-group-item">Instalando o MySql no Linux</a>
     <a href="/linux/instalando-mysql-workbench" class="list-group-item">Instalando Workbench & Utilities no CentOS 6</a>
 </div>
-
 
 
 ###  Navegadores web (browser)
@@ -68,20 +61,6 @@ description: Guia prático de instalações de softwares para Linux
 </div>
 
 
-
-###  Audio & Som
-
-<div class="list-group">
-    <a href="/linux/instalando-vlc/" class="list-group-item">Instalando VLC no CentOS</a>
-    <a href="/linux/instalando-gtk-recordmydesktop/" class="list-group-item">Instalando gravador de desktop (recordmydesktop) para Fedora</a>
-    <a href="/linux/instalando-kino/" class="list-group-item">Instalando o Kino no Fedora</a>
-    <a href="/linux/instalando-nautilus-image-converter/" class="list-group-item">Instalando um conversor de imagens para o Nautilius (Fedora)</a>
-    <a href="/linux/instalando-winff/" class="list-group-item">Instalando o conversor de vídeos winFF no Fedora</a>
-    <a href="/linux/instalando-wodim/" class="list-group-item">nstalando o Wodim no CentOS</a>
-    <a href="/linux/instalando-drivers-nvidia/" class="list-group-item">Instalando drivers nvidia no Ubuntu</a>
-</div>
-
-
 ###  IDE's
 
 <div class="list-group">
@@ -90,7 +69,6 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/instalando-aptana/" class="list-group-item">Instalando Aptana no Fedora</a>
     <a href="/linux/instalando-ninja-ide/" class="list-group-item">Instalando o Ninja IDE no Linux (Debian wheezy)</a>
 </div>
-
 
 
 ###  Útils
@@ -110,4 +88,17 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/instalando-samba/" class="list-group-item">Instalando o samba no Fedora</a>
     <a href="/linux/instalando-skype/" class="list-group-item">Instalando o Skype no Fedora</a>
     <!--<a href="/linux//" class="list-group-item"></a>-->
+</div>
+
+
+###  Audio & Som
+
+<div class="list-group">
+    <a href="/linux/instalando-vlc/" class="list-group-item">Instalando VLC no CentOS</a>
+    <a href="/linux/instalando-gtk-recordmydesktop/" class="list-group-item">Instalando gravador de desktop (recordmydesktop) para Fedora</a>
+    <a href="/linux/instalando-kino/" class="list-group-item">Instalando o Kino no Fedora</a>
+    <a href="/linux/instalando-nautilus-image-converter/" class="list-group-item">Instalando um conversor de imagens para o Nautilius (Fedora)</a>
+    <a href="/linux/instalando-winff/" class="list-group-item">Instalando o conversor de vídeos winFF no Fedora</a>
+    <a href="/linux/instalando-wodim/" class="list-group-item">nstalando o Wodim no CentOS</a>
+    <a href="/linux/instalando-drivers-nvidia/" class="list-group-item">Instalando drivers nvidia no Ubuntu</a>
 </div>
