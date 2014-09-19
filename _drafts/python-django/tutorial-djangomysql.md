@@ -52,7 +52,7 @@ Um erro atrás do outro. No meu caso, a instalação reclamou do __mysql_config_
 
         EnvironmentError: mysql_config not found
 
-Corriga executando instalando o pacot __python-mysqldb__ pelo __apt-get__:
+Corriga executando instalando o pacote __python-mysqldb__ pelo __apt-get__:
 
 	apt-get install python-mysqldb
 
