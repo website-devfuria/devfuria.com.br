@@ -5,6 +5,9 @@ description: Python - saídas (output)
 ---
 
 
+https://docs.python.org/3.0/whatsnew/3.0.html#print-is-a-function
+
+http://docs.pythonsprints.com/python3_porting/py-porting.html#printing
 
     print "Welcome to Python!"
     print ("Welcome to Python!")
