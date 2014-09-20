@@ -28,18 +28,20 @@ As variáveis `euros` e  `taxa` devem ser inicializadas, se não o erro `name 'e
 Saídas
 ---
 
-Saída simples.
+Saída simples válido para a versão 3 de Python.
 
-{% highlight python %}print "Welcome to Python!"{% endhighlight %}
+{% highlight python %}print("Welcome to Python!"){% endhighlight %}
 
 Saída mais elaborada.
 
 {% highlight python %}
 string_1 = "Camelot"
 string_2 = "place"
-print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+print("Let's not go to %s. 'Tis a silly %s." % (string_1, string_2))
 {% endhighlight %}
 
+Veja na documentação oficial as 
+[diferenças entre as versões 2 e 3](https://docs.python.org/3.0/whatsnew/3.0.html#print-is-a-function "link-externo").
 
 
 Entradas
