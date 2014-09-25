@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid-12
 title:       Introdução a Expressões Regulares
 description: 
 ---

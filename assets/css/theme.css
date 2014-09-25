@@ -74,11 +74,11 @@ sup {
 * {
     -webkit-print-color-adjust: exact;
 }
-@media (max-width: 840px) {
+/*@media (max-width: 840px) {
     body {
         padding: 0.7em;
     }
-}
+}*/
 @media screen and (min-width: 914px) {
     .wrap {
         width: 854px;
