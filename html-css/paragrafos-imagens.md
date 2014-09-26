@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-elem
+layout:      grid-9-3
 title:       HTML - Parágrafos e imagens 
-description: 
+description:
+menu:        html-elementos  
 ---
 
 A tag `p` é muito comum, ela representa um parágrafo e, obviamente, acomoda textos.
