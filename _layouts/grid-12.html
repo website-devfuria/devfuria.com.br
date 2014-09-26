@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+<div class="grid grid-pad">
+    <div class="col-1-1">
+        <div class="content">
+            {% include breadcrumb.html %}
+            <header>
+                <h1>{{ page.title }}</h1>
+                <small>{{ page.date | date: "%-d-%b-%Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small>
+            </header>
+            {{ content }}
+    </div>
+</div>

@@ -60,4 +60,4 @@ Fontes
 
 - [Pillow v2.5.0 (PIL fork) - Installation](http://pillow.readthedocs.org/en/latest/installation.html#simple-installation "link-externo")
 - [Pillow on GitHub](https://github.com/python-pillow/Pillow "link-externo")
-- [docs.python-guide.org - Image Manipulation(http://docs.python-guide.org/en/latest/scenarios/imaging/#python-imaging-library "link-externo")
+- [docs.python-guide.org - Image Manipulation](http://docs.python-guide.org/en/latest/scenarios/imaging/#python-imaging-library "link-externo")
