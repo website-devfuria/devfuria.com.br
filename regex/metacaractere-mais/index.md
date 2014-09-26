@@ -1,6 +1,8 @@
 ---
-layout: materia
-title:  "Metacaractere mais +"
+layout:      grid-9-3
+title:       "Metacaractere mais +"
+description: 
+menu:        regex
 ---
 
 O mais tem funcionamento idêntico ao do asterisco, a única diferença é que o mais não é opcional, então a entidade 

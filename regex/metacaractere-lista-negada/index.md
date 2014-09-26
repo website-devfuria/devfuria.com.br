@@ -1,6 +1,8 @@
 ---
-layout: materia
-title:  "Metacaractere lista negada [^]"
+layout:      grid-9-3
+title:       "Metacaractere lista negada [^]"
+description: 
+menu:        regex
 ---
 
 Ela casará com qualquer coisa fora os componentes listados.

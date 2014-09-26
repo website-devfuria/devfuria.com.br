@@ -1,6 +1,7 @@
 ---
-layout: materia
-title:  Cheat sheet - Metacaracteres
+layout:       grid-12
+title:        Cheat sheet - Metacaracteres
+deswcription: 
 ---
 
 Representantes

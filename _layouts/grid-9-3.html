@@ -30,6 +30,10 @@ layout: base
                     {% else %}
                         {% if page.menu == "mysql" %}
                             {% include menu-mysql.html %}
+                        {% else %}
+                            {% if page.menu == "regex" %}
+                                {% include menu-regex-metacaracteres.html %}
+                            {% endif %}
                         {% endif %}
                     {% endif %}
                 {% endif %}

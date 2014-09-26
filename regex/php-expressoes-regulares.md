@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid-12
 title:       Expressões Regulares em PHP
 description: Expressões Regulares em PHP
 ---

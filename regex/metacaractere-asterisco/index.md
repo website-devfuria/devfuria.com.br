@@ -1,6 +1,8 @@
 ---
-layout: materia
-title:  "Metacaractere asterisco *"
+layout:      grid-9-3
+title:       "Metacaractere asterisco *"
+description: 
+menu:        regex
 ---
 
 O asterisco repete em qualquer quantidade

@@ -1,6 +1,8 @@
 ---
-layout: materia
-title:  "Metacaractere lista [ ]"
+layout:      grid-9-3
+title:       "Metacaractere lista [ ]"
+description: 
+menu:        regex
 ---
 
 A lista casa com quem ela conhece e tem suas próprias regras.

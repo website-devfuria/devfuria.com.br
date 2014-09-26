@@ -1,6 +1,8 @@
 ---
-layout: materia
-title:  "Metacaractere opcional ?"
+layout:      grid-9-3
+title:       "Metacaractere opcional ?"
+description: 
+menu:        regex
 ---
 
 O quantificador opcional indica que pode ter ou não a ocorrência da entidade anterior, pois ele a repete 0 ou 1 vez.

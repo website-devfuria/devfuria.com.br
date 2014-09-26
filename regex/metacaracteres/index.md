@@ -1,6 +1,7 @@
 ---
-layout: materia
-title:  Expressões Regulares - metacaracteres
+layout:      grid-12
+title:       Expressões Regulares - metacaracteres
+description: 
 ---
 
 

@@ -1,6 +1,8 @@
 ---
-layout: materia
-title:  "Metacaractere ponto ."
+layout:      grid-9-3
+title:       "Metacaractere ponto ."
+description: 
+menu:        regex         
 ---
 
 O ponto casa com qualquer coisa.

@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid-12
 title:       Expressões Regulares
 description: Descomplicamos as expressões regulares
 ---
@@ -12,7 +12,7 @@ A segunda pode ser um [resumo dos metacarecteres](/regex/metacaracteres/).
 
 Talvez você queria estudar cada metacaractere separadamente e com mais detalhes...
 
-{% include lista-regex-metacaracteres.html %}
+{% include menu-regex-metacaracteres.html %}
 
 Está procurando uma visão geral sobre os metacaracteres? Veja [cheat-sheet-matacaracteres](/regex/cheat-sheet-matacaracteres/).
 
