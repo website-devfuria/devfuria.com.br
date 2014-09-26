@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid-9-3
 title:       Aprendendo a ler mensagens de erro
 description: Aprenderemos como ler mensagens de erro do MySQL.
+menu:        mysql
 ---
 
 Na [matéria anterior](../mysql-pelo-terminal/) vimos como se conectar com o banco de dados via console e é isso que vamos continuar fazendo aqui

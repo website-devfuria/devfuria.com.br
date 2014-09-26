@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid-9-3
 title:       Acessando o MySQL via console (terminal)
 description: Aprenda a acesar o MySQL via terminal no Linux.
+menu:        mysql
 ---
 
 

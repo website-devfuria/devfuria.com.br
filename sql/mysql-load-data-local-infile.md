@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid-9-3
 title:       Populando tabela a partir de uma arquivo de texto no MySQL
 description: Vamos aprender como popular uma tabela no MySQL apartir de um arquivo de texto.
+menu:        mysql
 ---
 
 A instrução [load data local infile](http://dev.mysql.com/doc/refman/5.7/en/load-data.html "link-externo") lê um 

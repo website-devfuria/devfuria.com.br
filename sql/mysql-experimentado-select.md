@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid-9-3
 title:       Experimentando a instrução "select"
 description: Seus primeiros passos com a instrução 'select'
+menu:        mysql
 ---
 
 

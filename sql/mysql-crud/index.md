@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid-9-3
 title:       Eu crudo, você cruda, eles crudam
 description: "Entendendo o que é CRUD, CRUD não é para comer! Trata-se das 4 operações básicas de SQL: create (insert), read (select), update, delete."
+menu:        mysql
 ---
 
 O CRUD é um acrônimo para as 4 operações básicas de um banco de dados.

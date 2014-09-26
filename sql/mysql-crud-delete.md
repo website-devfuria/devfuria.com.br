@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid-9-3
 title:       CRUD - D de delete, é o nosso delete!
 description: Entenda o sql DELETE, para quem nunca viu SQL!
+menu:        mysql
 ---
 
 Esta matéria é indicada para quem está começando a aprender os comandos básicos de SQL. Ela faz parte de uma sequência, se

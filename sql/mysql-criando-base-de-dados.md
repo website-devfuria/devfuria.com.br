@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid-9-3
 title:       Criando uma base de dados no MySQL
 description: Aprenda como criar base de dados com create databases; no MySQL.
+menu:        mysql
 ---
 
 A instrução [create database](http://dev.mysql.com/doc/refman/5.7/en/create-database.html "link-externo") cria uma base de dados;

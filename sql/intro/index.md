@@ -1,5 +1,5 @@
 ---
-layout:      materia-sql
+layout:      grid-12
 title:       Introdução ao conceito intuitivo de banco de dados
 description: O que é um banco de dados? O que é uma tabela? O que são registros?
 ---

@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid-9-3
 title:       Listar e selecionar bases de dados
 description: Aprenda como listar e selecionar uma base de dado no MySQl
+menu:        mysql
 ---
 
 
