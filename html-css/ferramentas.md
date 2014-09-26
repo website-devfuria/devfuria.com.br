@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-artigos
+layout:      grid-9-3
 title:       Ferramentas para trabalhar com HTML e CSS
 description: Pequenas lista de ferramentas para trabalhar com HTML e CSS
+menu:        html-artigos
 ---
 
 Firebug

@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-artigos
+layout:      grid-9-3
 title:       Criando um HTML de primeira qualidade
 description: Aprenda a desenvolver um HTML de primeria qualidade com este exemplo da csszengarden.com
+menu:        html-artigos
 ---
 
 O site [www.csszengarden.com](http://www.csszengarden.com/ "link-externo") é notório por seus esforços em promover e 
@@ -181,3 +182,4 @@ Assista ao vídeo da solução que acompanha esta matéria.
 <iframe width="560" height="315" src="http://www.youtube.com/embed/IMswx5wcqA0" frameborder="0" allowfullscreen></iframe>
 
 Obs: A voz doce ao fundo é minha querida Joana.
+
