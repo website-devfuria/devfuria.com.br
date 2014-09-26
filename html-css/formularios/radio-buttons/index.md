@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-forms
+layout:      grid-9-3
 title:       Botões de opção (input type=radio)
 description: 
+menu:        html-forms
 ---
 
 Os __radio buttons__ são como uma opção entre, no mínimo, duas.

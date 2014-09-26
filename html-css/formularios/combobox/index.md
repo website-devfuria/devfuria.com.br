@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-forms
+layout:      grid-9-3
 title:       Caixa de seleção (combo box)
 description: 
+menu:        html-forms
 ---
 
 A caixa de seleção, vulgo __combobox__ é um controle parecido com um "menu de opções", veja a imagem abaixo.

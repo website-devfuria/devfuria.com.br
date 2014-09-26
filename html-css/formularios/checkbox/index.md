@@ -1,10 +1,9 @@
 ---
-layout:      materia-html-forms
+layout:      grid-9-3
 title:       Caixa de checagem (input type=checkbox)
 description: 
+menu:        html-forms
 ---
-
-
 
 
 As checkboxe's são como uma escolha booleana: true ou false, sim ou não.

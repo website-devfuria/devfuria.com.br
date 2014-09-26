@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-forms
+layout:      grid-9-3
 title:       Caixa de multipla seleção (List box)
 description: 
+menu:        html-forms
 ---
 
 As __list box__ são as [combobox](../combobox/) de multipla escolha, para isso adicionamos a propriedade

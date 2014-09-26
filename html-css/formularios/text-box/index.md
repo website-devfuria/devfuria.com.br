@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-forms
+layout:      grid-9-3
 title:       Textbox (input type=text)
 description: 
+menu:        html-forms
 ---
 
 A caixa de texto, de longe, é o controle mais utilizado.
