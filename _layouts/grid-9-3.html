@@ -27,6 +27,10 @@ layout: base
                 {% else %}
                     {% if page.menu == "html-artigos" %}
                         {% include menu-html-artigos.html %}
+                    {% else %}
+                        {% if page.menu == "mysql" %}
+                            {% include menu-mysql.html %}
+                        {% endif %}
                     {% endif %}
                 {% endif %}
             {% endif %}
