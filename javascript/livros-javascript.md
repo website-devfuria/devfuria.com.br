@@ -27,6 +27,7 @@ Mas ainda não se sente muito íntimo com a linguagem, aconselho:
 3. Padrões JS (Stefanov)
 4. Java script o guia definito (Flanagan)
 
+
 ### Livros avançados:
 
 - Closure (The Definitive Guide)
@@ -36,9 +37,13 @@ Mas ainda não se sente muito íntimo com a linguagem, aconselho:
 - JavaScript Enlightnment
 - JavaScript for Web Develpers
 
-Considere também a seguinte lista [http://lifeofjs.com/](http://lifeofjs.com/ "link-externo")
 
 
-### Outras fontes
+
+### Veja também
+
+- Belíssimo artigo do [Vitor Brito - The book is on the table](http://www.vitorbritto.com.br/blog/the-book-is-on-the-table/ "link-externo")
+
+- Considere também a seguinte lista [http://lifeofjs.com/](http://lifeofjs.com/ "link-externo")
 
 - [http://www.funnyant.com/giveaways/javascriptbooks/?lucky=2248](http://www.funnyant.com/giveaways/javascriptbooks/?lucky=2248"link-externo")
