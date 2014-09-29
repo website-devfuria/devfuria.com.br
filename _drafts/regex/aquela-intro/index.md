@@ -1,5 +1,5 @@
 ---
-layout: materia
+layout: grid12-article
 ---
 
 A expressão regular `n.a` casa com "não" e "nao", e também com coisas indesejáveis como "n-o", "n5o", "n o" e etc...

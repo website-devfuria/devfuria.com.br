@@ -1,5 +1,5 @@
 ---
-layout: materia
+layout: grid12-article
 title:  Caminho de redirecionamento do Apache (centOS)
 ---
 

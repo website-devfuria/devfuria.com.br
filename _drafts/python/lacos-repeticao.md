@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Python - laços de repetição
 description: Python - laços de repetição
 ---

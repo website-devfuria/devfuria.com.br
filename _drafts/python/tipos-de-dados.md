@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Python - tipos de dados
 description: Python - tipos de dados
 ---
