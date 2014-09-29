@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Python - O básico de listas
 description: O básico de lista em Python
 ---

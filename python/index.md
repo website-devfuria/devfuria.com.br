@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-index
 title:       Python
 description: Aprenda a programar em Python de forma descomplicada.
 ---

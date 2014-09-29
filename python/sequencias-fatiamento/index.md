@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Python - Operadores e fatiamento de sequências
 description: Aprenda sobre operadores e fatiamento de sequências em Python
 ---
