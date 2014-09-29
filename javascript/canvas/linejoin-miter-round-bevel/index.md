@@ -1,7 +1,8 @@
 ---
-layout:     grid12-article
-title:      Canvas - Junção das linhas (lineJoin)
+layout:      grid93-article
+title:       Canvas - Junção das linhas (lineJoin)
 description: Entenda o método lineJoin() do Canvas e suas propriedades (miter, round e bevel)
+menu:        javascript-canvas
 ---
 
 

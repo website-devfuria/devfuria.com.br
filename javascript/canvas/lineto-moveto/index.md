@@ -1,7 +1,8 @@
 ---
-layout:     grid12-article
-title:      Canvas - Desenhando linhas (lineTo e moveTo)
+layout:      grid93-article
+title:       Canvas - Desenhando linhas (lineTo e moveTo)
 description: Descubra como desenhar linhas com os métodos lineTo() e moveTo()
+menu:        javascript-canvas
 ---
 
 

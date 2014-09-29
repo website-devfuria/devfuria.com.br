@@ -1,7 +1,8 @@
 ---
-layout:     grid12-article
-title:      Canvas - Paths (caminhos)
+layout:      grid93-article
+title:       Canvas - Paths (caminhos)
 description: Descubrindo os caminhos (paths) do Canvas.
+menu:        javascript-canvas
 ---
 
 

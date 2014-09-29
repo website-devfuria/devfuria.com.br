@@ -1,7 +1,8 @@
 ---
-layout:     grid12-article
-title:      Introdução ao Canvas
+layout:      grid93-article
+title:       Introdução ao Canvas
 description: Artigo introduzindo o canvas (HTML5)
+menu:        javascript-canvas
 ---
 
 
