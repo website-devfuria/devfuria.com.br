@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Dicas de configuração do git
 description: Algumas dicas que facilitam a utilização do git em noss dia a dia
 ---

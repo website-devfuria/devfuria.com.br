@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Para não ter que ficar redigitando a senha
 description: Aprenda a configurar o git para não pedir senha
 ---
