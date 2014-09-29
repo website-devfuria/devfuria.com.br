@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Metacaractere asterisco *"
 description: 
-menu:        regex
+menu:        regex-metacaracteres
 ---
 
 O asterisco repete em qualquer quantidade

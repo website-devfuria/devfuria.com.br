@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Metacaractere mais +"
 description: 
-menu:        regex
+menu:        regex-metacaracteres
 ---
 
 O mais tem funcionamento idêntico ao do asterisco, a única diferença é que o mais não é opcional, então a entidade 

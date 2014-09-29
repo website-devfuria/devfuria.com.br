@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Metacaractere lista negada [^]"
 description: 
-menu:        regex
+menu:        regex-metacaracteres
 ---
 
 Ela casará com qualquer coisa fora os componentes listados.

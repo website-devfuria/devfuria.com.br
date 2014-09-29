@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Metacaractere ponto ."
 description: 
-menu:        regex         
+menu:        regex-metacaracteres         
 ---
 
 O ponto casa com qualquer coisa.
