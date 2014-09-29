@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando Aptana no Fedora
 description: Aprenda como instalar o Aptana no Fedora
 ---

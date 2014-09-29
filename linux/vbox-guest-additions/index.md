@@ -1,5 +1,5 @@
 ---
-layout: materia
+layout: grid12-article
 title:  Como instalar o GuestAdditions (CentOS)
 description: Aprenda a instalar os adicionais de convidados no Centos
 ---

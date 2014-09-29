@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando o Ninja IDE no Linux (Debian wheezy)
 description: Como instalar o Ninja IDE no Linux (Debian wheezy)
 ---

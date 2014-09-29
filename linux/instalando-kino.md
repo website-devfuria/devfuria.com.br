@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando o Kino no Fedora
 description: Aprenda como instalar o Kino no Fedora
 ---

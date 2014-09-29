@@ -1,5 +1,5 @@
 ---
-layout: materia
+layout: grid12-article
 title:  Resolvendo o erro "headers for the current running kernel were not found"
 description: fix error "headers for the current running kernel were not found"
 ---

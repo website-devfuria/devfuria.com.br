@@ -1,5 +1,5 @@
 ---
-layout: materia
+layout: grid12-article
 title: Instalando o npm
 description: Receita de como instalar o npm, o gerenciador de pacotes do node.
 ---

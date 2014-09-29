@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-article
 title:      Como tirar um screenshot (CentOS)
 descrition: No Linux, você precisa tirar um print-screen da tela e não sabe como?
 ---

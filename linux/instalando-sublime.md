@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando o Sublime no Fedora
 description: Como instalar o Sublime no Fedora
 ---

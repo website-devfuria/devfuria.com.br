@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando o pip (gerenciados de pacotes do python)
 description: Descubra como instalar o pip (gerenciados de pacotes do python) no Linux
 ---

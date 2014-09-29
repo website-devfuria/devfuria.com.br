@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando o MySql no Linux
 description: Aprenda como instalar o banco de dados MySql no Linux
 ---

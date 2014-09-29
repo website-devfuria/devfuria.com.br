@@ -1,5 +1,5 @@
 ---
-layout: materia
+layout: grid12-article
 title:  Resolvendo o erro "Building the OpenGL support module"
 description: Matéria que ajuda a resolver erros na instalação do virtualbox
 ---

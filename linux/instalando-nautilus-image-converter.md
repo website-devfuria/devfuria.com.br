@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando um conversor de imagens para o Nautilius (Fedora)
 description: Aprenda como instalar um conversor de imagens para o Nautilius (Fedora)
 ---

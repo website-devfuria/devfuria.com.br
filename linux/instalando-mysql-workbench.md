@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando Workbench & Utilities no CentOS 6
 description: Aprenda como instalar o Workbench & Utilities no CentOS 6
 ---

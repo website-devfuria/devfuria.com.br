@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Como dar permissão de execução em um arquivo no Linux
 description: Como dar permissão de execução em um arquivo no Linux
 ---
