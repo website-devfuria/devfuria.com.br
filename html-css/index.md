@@ -21,7 +21,7 @@ Veja também essa belíssima introdução ao HTML do pessoal da Mozilla:
 Elementos básicos de HTML
 ---
 
-{% include menu-html-elementos.html %}
+{% include /menus/html-elementos.html %}
 
 Veja também:
 
@@ -37,18 +37,18 @@ Esta é a subseção sobre [formulários web](/html-css/formularios/).
 
 A lista abaixo compõem os controles básicos do tipo __input__:
 
-{% include menu-html-forms-input.html %}
+{% include /menus/html-forms-input.html %}
 
 
 A lista abaixo compõem os controles básicos do tipo __não input__:
 
-{% include menu-html-forms-ninput.html %}
+{% include /menus/html-forms-ninput.html %}
 
 
 Artigos
 ---
 
-{% include menu-html-artigos.html %}
+{% include /menus/html-artigos.html %}
 
 
 

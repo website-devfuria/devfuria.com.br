@@ -40,7 +40,7 @@ Se o propriedade `name` for, por exemplo, "idade" e o valor digitado pelo usuár
 Alterando-se a propriedade `type` podemos obter os seguintes controles:
 
 
-{% include menu-html-forms-input.html %}
+{% include /menus/html-forms-input.html %}
 
 
 
@@ -49,4 +49,4 @@ Controles básicos (não input)
 
 Nesta categoria encontram-se os controles "combo box", "list box" e "text box multiline":
 
-{% include menu-html-forms-ninput.html %}
+{% include /menus/html-forms-ninput.html %}

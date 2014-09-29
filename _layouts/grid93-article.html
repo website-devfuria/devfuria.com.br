@@ -19,19 +19,19 @@ layout: base
     <div class="col-3-12">
         <div class="content">
             {% if page.menu == "html-forms" %}
-                {% include menu-html-forms.html %}
+                {% include /menus/html-forms.html %}
             {% else %}
                 {% if page.menu == "html-elementos" %}
-                    {% include menu-html-elementos.html %}
+                    {% include /menus/html-elementos.html %}
                 {% else %}
                     {% if page.menu == "html-artigos" %}
-                        {% include menu-html-artigos.html %}
+                        {% include /menus/html-artigos.html %}
                     {% else %}
                         {% if page.menu == "mysql" %}
-                            {% include menu-mysql.html %}
+                            {% include /menus/mysql.html %}
                         {% else %}
                             {% if page.menu == "regex" %}
-                                {% include menu-regex-metacaracteres.html %}
+                                {% include /menus/regex-metacaracteres.html %}
                             {% endif %}
                         {% endif %}
                     {% endif %}

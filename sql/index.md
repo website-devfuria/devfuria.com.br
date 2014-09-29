@@ -24,7 +24,7 @@ Para você que não conhece nada sobre banco de dados, talvez queira ler uma
 Curso introdutório de SQL com banco de dados MySQL
 ---
 
-{% include menu-mysql.html %}
+{% include menus/mysql.html %}
 
 
 <hr>
