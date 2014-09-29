@@ -18,24 +18,8 @@ layout: base
     </div>
     <div class="col-3-12">
         <div class="content">
-            {% if page.menu == "html-forms" %}
-                {% include /menus/html-forms.html %}
-            {% else %}
-                {% if page.menu == "html-elementos" %}
-                    {% include /menus/html-elementos.html %}
-                {% else %}
-                    {% if page.menu == "html-artigos" %}
-                        {% include /menus/html-artigos.html %}
-                    {% else %}
-                        {% if page.menu == "mysql" %}
-                            {% include /menus/mysql.html %}
-                        {% else %}
-                            {% if page.menu == "regex" %}
-                                {% include /menus/regex-metacaracteres.html %}
-                            {% endif %}
-                        {% endif %}
-                    {% endif %}
-                {% endif %}
+            {% if page.menu %}  
+                {% include {{ page.menu | prepend:'/menus/' | append:'.html' }} %}
             {% endif %}
         </div>
     </div>
