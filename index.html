@@ -1,92 +1,70 @@
-<!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout:      base
+title:       Desenvolvimento Web
+description: "Cursos, aulas, tutoriais, apostilas, matérias sobre programação web prá ninguém botar defeito!"
+---
 
-        <title>Desenvolvimento Web</title>
-        <meta name="description" content="Cursos, aulas, tutoriais, apostilas, matérias sobre programação web prá ninguém botar defeito!">
-        <meta name="keywords" content="aplicações web; desenvolvimento web; cursos web; tutoriais; artigos;">
-        <meta name="author" content="Flávio Alexandre Micheletti">
+<link href="http://www.devfuria.com.br/core/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://www.devfuria.com.br/core/assets/css/docs.css" rel="stylesheet">
+<style type="text/css">
+    body {
+        padding-top: 0px;
+    }
+    .bs-masthead {
+        padding: 0px 15px;
+    }
+    h1 {
+        font-weight: bolder;
+        color: #2F4F4F
+    }
+    .btn {
+        margin-bottom: 3px;
+        width: 90%;
+    }
+    @media (min-width:  700px) {
+        .btn {
+            width: 40%;
+        }
+    }
+    @media (min-width:  992px) {
+        .btn {
+            width: 21%;
+        }
+    }
+</style>
 
-        <link rel="shortcut icon" href="http://www.devfuria.com.br/core/imagens/favicon_1_16x16x1.png">
+<main class="bs-masthead" id="content" role="main">
+    <div class="container">
 
-        <link href="http://www.devfuria.com.br/core/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="http://www.devfuria.com.br/core/assets/css/docs.css" rel="stylesheet">
+        <h1>DevFuria</h1>
+        <p class="lead" style="margin-bottom: 0px"><small>Desenvolvimento web pra ninguém botar defeito!</small></p>
+        <p class="lead" ><small>Cursos, aulas, tutoriais, matérias... tudo muito bem preparado.</small></p>
+        <ul>
+            <li>Isto não é um blog!</li>
+            <li>É gratuito e sempre será!</li>
+            <li>Feito especialmente para o público iniciante.</li>
+            <li>Seja bem vindo e espero que você divirta-se aprendendo.</li>
+        </ul>
 
-        <link rel="shortcut icon" type="imagens/gif" href="http://www.devfuria.com.br/core/imagens/favicon.ico">
-        <meta property="og:image" content="http://www.devfuria.com.br/core/imagens/favicon_1_16x16x1.png"/>
-        <style type="text/css">
-            body {
-                padding-top: 0px;
-            }
-            .bs-masthead {
-                padding: 0px 15px;
-            }
-            h1 {
-                font-weight: bolder;
-                color: #2F4F4F
-            }
-            .btn {
-                margin-bottom: 3px;
-                width: 90%;
-            }
-            @media (min-width:  700px) {
-                .btn {
-                    width: 40%;
-                }
-            }
-            @media (min-width:  992px) {
-                .btn {
-                    width: 21%;
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-        <a href="https://github.com/devfuria/www.devfuria.com.br"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-
-    <main class="bs-masthead" id="content" role="main">
-        <div class="container">
-
-            <h1>DevFuria</h1>
-            <p class="lead" style="margin-bottom: 0px"><small>Desenvolvimento web pra ninguém botar defeito!</small></p>
-            <p class="lead" ><small>Cursos, aulas, tutoriais, matérias... tudo muito bem preparado.</small></p>
-            <ul>
-                <li>Isto não é um blog!</li>
-                <li>É gratuito e sempre será!</li>
-                <li>Feito especialmente para o público iniciante.</li>
-                <li>Seja bem vindo e espero que você divirta-se aprendendo.</li>
-            </ul>
-
-            <p class="secoes">
-                <a class="btn btn-primary btn-lg" role="button" href="./logica-de-programacao/">Lógica de programação</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./javascript">JavaScript</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./python">Python</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./php">PHP</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./linux/">Linux</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./git/">Git</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./html-css">HTML & CSS</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./sql">SQL</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./regex">Expressões Regulares</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./seguranca-da-informacao/">Segurança da Informação</a>
-            </p>
-            <ul class="bs-masthead-links">
-                <li>
-                    <a href="https://github.com/devfuria" title="link-externo">Projeto no GitHub</a>
-                </li>
-                <li>
-                    <a href="flavio-alexandre-micheletti.html">Quem vôs fala</a>
-                </li>
-            </ul>
-        </div>
-    </main>
-
-    <footer class="container" role="contentinfo">
-    </footer>
-    {% include footer-js.html %}
-    <script src="/assets/js/analytics.js"></script>
-    <script src=""{{ "/assets/js/core.js" | prepend: site.baseurl }}""></script>    
-</body>
-</html>
+        <p class="secoes">
+            <a class="btn btn-primary btn-lg" role="button" href="./logica-de-programacao/">Lógica de programação</a>
+            <a class="btn btn-primary btn-lg" role="button" href="./javascript">JavaScript</a>
+            <a class="btn btn-primary btn-lg" role="button" href="./python">Python</a>
+            <a class="btn btn-primary btn-lg" role="button" href="./php">PHP</a>
+            <a class="btn btn-primary btn-lg" role="button" href="./linux/">Linux</a>
+            <a class="btn btn-primary btn-lg" role="button" href="./git/">Git</a>
+            <a class="btn btn-primary btn-lg" role="button" href="./html-css">HTML & CSS</a>
+            <a class="btn btn-primary btn-lg" role="button" href="./sql">SQL</a>
+            <a class="btn btn-primary btn-lg" role="button" href="./regex">Expressões Regulares</a>
+            <a class="btn btn-primary btn-lg" role="button" href="./seguranca-da-informacao/">Segurança da Informação</a>
+        </p>
+        <ul class="bs-masthead-links">
+            <li>
+                <a href="https://github.com/devfuria" title="link-externo">Projeto no GitHub</a>
+            </li>
+            <li>
+                <a href="flavio-alexandre-micheletti.html">Quem vôs fala</a>
+            </li>
+        </ul>
+    </div>
+</main>
