@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-article
 title:      Canvas - Desenhando linhas (lineTo e moveTo)
 description: Descubra como desenhar linhas com os métodos lineTo() e moveTo()
 ---

@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-article
 title:      Canvas - Paths (caminhos)
 description: Descubrindo os caminhos (paths) do Canvas.
 ---

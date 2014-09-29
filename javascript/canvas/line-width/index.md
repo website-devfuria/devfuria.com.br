@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-article
 title:      Canvas - Tamanho das linhas  (lineWidth)
 description: Descubra como alterar o comprimento (width) das linhas em Canvas
 ---

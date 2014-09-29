@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-article
 title:      O objeto window e o espaço global em Javascript!
 ---
 

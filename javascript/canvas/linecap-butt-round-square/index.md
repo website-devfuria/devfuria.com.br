@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-article
 title:      Canvas - Limite das linhas (lineCap)
 description: Artigo demonstrando como manipular os limites da linha de um Canvas
 ---

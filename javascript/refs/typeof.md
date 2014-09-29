@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       JavaScript - typeof
 description: Referência prática de typeof - JavaScript
 ---

@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-index
 title:      Canvas
 description: Seção sobre Canvas (html5 + javascript)
 ---

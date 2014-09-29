@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-article
 title:      Introdução ao Canvas
 description: Artigo introduzindo o canvas (HTML5)
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       JavaScript - arrays
 description: Referência prática de arrays - JavaScript
 ---

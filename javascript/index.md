@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-index
 title:       JavaScript
 description: Tudo o que você precisa saber sobre javascript a apartir do zero
 ---

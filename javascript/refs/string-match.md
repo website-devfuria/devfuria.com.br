@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       JavaScript - string.match()
 description: Referência prática da função match() - JavaScript
 ---

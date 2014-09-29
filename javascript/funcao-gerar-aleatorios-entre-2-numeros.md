@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Função para gerar um número randômico entre 2 números quaisquer
 description: Função em JavaScript para gerar um número randômico entre 2 números quaisquer
 ---
