@@ -1,5 +1,5 @@
 ---
-layout:      grid-9-3
+layout:      grid93-article
 title:       Acessando o MySQL via console (terminal)
 description: Aprenda a acesar o MySQL via terminal no Linux.
 menu:        mysql

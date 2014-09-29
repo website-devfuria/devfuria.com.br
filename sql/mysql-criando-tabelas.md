@@ -1,5 +1,5 @@
 ---
-layout:      grid-9-3
+layout:      grid93-article
 title:       Criando tabelas no MySQL
 description: Aprenda como criar tabelas no MySQL.
 menu:        mysql

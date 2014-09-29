@@ -1,5 +1,5 @@
 ---
-layout:      grid-9-3
+layout:      grid93-article
 title:       Instalando o MySQL e acessando via terminal
 description: Aprenda a instalar e acessar o MySQL no terminal do Linux.
 menu:        mysql

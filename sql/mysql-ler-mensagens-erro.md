@@ -1,5 +1,5 @@
 ---
-layout:      grid-9-3
+layout:      grid93-article
 title:       Aprendendo a ler mensagens de erro
 description: Aprenderemos como ler mensagens de erro do MySQL.
 menu:        mysql
