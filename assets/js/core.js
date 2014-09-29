@@ -4,7 +4,8 @@ var furia = {
     },
     apontar_links_para_fora: function() {
         $('a[title="link-externo"]').each(function() {
-            $(this).attr('target', "_blanck");
+            $(this).attr('target', "_blanck")
+                    .addClass("link-externo");
         });
     }
 }.init();
