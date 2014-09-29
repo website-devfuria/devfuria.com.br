@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       O básico sobre a função preg match all
 description: Aprenda o básico sobre a função preg_match_all() + exemplo
 ---
