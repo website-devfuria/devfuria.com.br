@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Concatenar duas strings - linguagem c"
 description: Exercício de lógica de programação para concatenar duas strings.
 ---

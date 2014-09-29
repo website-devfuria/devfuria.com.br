@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Valores repetidos em vetor - linguagem c"
 description: Exercício de lógica de programação para descobrir se em um determinado vetor existem ou não valores repetidos.
 ---

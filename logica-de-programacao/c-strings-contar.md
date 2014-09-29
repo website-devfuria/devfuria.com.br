@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Contar string - linguagem c"
 description: Exercício de lógica de programação para contar a quantidade de caracteres de uma string qualquer.
 ---

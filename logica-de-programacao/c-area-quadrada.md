@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Área quadrada - linguagem c"
 description: Exercício de lógica de programação resolvido onde o objetivo é encontrar a área quadrada.
 ---

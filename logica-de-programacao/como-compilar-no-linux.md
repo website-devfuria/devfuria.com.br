@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Como compilar no Linux
 description: Como compilar códigos em c/c++ no Linux
 ---

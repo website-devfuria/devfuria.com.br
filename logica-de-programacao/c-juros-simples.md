@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Juros simples - linguagem c"
 description: Exercício de lógica de programação - como calcular o juros simples.
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Maior que 10 - linguagem c"
 description: Exercício de lógica de programação para descobrir se valor é maior ou menor que 10.
 ---

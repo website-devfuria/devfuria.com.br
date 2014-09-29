@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Área quadrada e área cúbica - linguagem c++"
 description: Exercício de lógica de programação resolvido cujo objetivo é, com o auxílio de classes, encontrar a área quadra e cúbica.
 ---

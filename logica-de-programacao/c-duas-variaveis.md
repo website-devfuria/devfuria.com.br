@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Trocar o valor de duas variáveis - linguagem c"
 description: Exercício de lógica de programação para trocar o valor de duas variáveis.
 ---

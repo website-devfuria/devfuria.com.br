@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Função para somar vetor - linguagem c"
 description: "Exercício de lógica de programação: criar função para somar vetor."
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Antecessor e sucessor de um número qualquer - linguagem c"
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular o sucessor e o antecessor de um número qualquer.
 ---

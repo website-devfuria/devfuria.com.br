@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Maior e menor índice do vetor - linguagem c"
 description: Exercício de lógica de programação para descobrir o índice do maior e o menor valor do vetor.
 ---

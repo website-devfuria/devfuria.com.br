@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Descobrir os dias de 'n' meses - linguagem c"
 description: Exercício de lógica de programação para descobrir os dias de n meses.
 ---
