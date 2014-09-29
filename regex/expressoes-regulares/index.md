@@ -1,5 +1,5 @@
 ---
-layout:      grid-12
+layout:      grid12-article
 title:       Introdução a Expressões Regulares
 description: 
 ---
