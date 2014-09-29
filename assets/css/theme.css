@@ -74,15 +74,34 @@ sup {
 * {
     -webkit-print-color-adjust: exact;
 }
-/*@media (max-width: 840px) {
-    body {
-        padding: 0.7em;
-    }
-}*/
-@media screen and (min-width: 914px) {
+
+
+
+/* Enxertos devfuria */
+
+/* Extra small devices (phones, less than 768px)
+ * No media query since this is the default in Bootstrap
+ * Small devices (tablets, 768px and up)
+ */
+@media (min-width: 768px) { }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
     .wrap {
-        width: 854px;
         margin:0 auto;
+        /*width: 854px;*/
+        width: 960px;
+    }
+    article {
+        background-color: #FFFFFF;
+        margin-bottom: 15px;
+        padding: 3px 10px;
+        border-radius: 3px;
+        box-shadow: 4px 5px 10px;
+       -webkit-box-shadow: 4px 5px 10px #000000;    
     }
 }
 @media print {
@@ -94,17 +113,6 @@ sup {
     }
 }
 
-
-
-/* Enxertos devfuria */
-article {
-    background-color: #FFFFFF;
-    margin-bottom: 15px;
-    padding: 3px 10px;
-    border-radius: 3px;
-    box-shadow: 4px 5px 10px;
-   -webkit-box-shadow: 4px 5px 10px #000000;    
-}
 .breadcrumb {
     padding: 8px 15px;
     margin-bottom: 20px;
@@ -147,11 +155,7 @@ canvas, .canvas {
     box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
     width: 330px;
 }
-@media screen and (min-width: 914px) {
-    .wrap {
-        width: 960px;
-    }
-}
+
 
 a.list-group-item:first-child {
     border-top-left-radius: 4px;
