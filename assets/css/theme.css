@@ -97,6 +97,14 @@ sup {
 
 
 /* Enxertos devfuria */
+article {
+    background-color: #FFFFFF;
+    margin-bottom: 15px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    box-shadow: 4px 5px 10px;
+   -webkit-box-shadow: 4px 5px 10px #000000;    
+}
 .breadcrumb {
     padding: 8px 15px;
     margin-bottom: 20px;
