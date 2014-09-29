@@ -37,12 +37,14 @@ resultado abaixo.
 
 Obs: eu coloquei `5px` de margem só para melhorar um pouco.
 
-<div data-height="432" data-theme-id="2897" data-slug-hash="eIJDv" data-default-tab="null" class='codepen'><pre><code></code></pre>
+
+<div data-height="428" data-theme-id="2897" data-slug-hash="eIJDv" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
 <p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/eIJDv/'>Tom jobim - float left</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Ou podemos dizer para a imagem flutuar à direita e então o texto fluirá a esquerda, vejao resultado:
 
-<div data-height="430" data-theme-id="2897" data-slug-hash="fIqtC" data-default-tab="null" class='codepen'><pre><code></code></pre>
+Ou podemos dizer para a imagem flutuar à direita e então o texto fluirá a esquerda, veja o resultado:
+
+<div data-height="457" data-theme-id="2897" data-slug-hash="fIqtC" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
 <p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/fIqtC/'>Tom jobim - float right</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
