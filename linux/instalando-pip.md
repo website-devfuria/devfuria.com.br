@@ -30,7 +30,7 @@ Atualizando
 
 Após instalar o __pip__ no Debain (wheezy) via __apt-get__ eu decobri que ele instalou a versão 1.1.
 
-Para atualizar para a versão mais recente (enquanto escrevo este aritog a 1.5) utilizei o próprio __pip__.
+Para atualizar para a versão mais recente (enquanto escrevo este artigo a 1.5) utilizei o próprio __pip__.
 (aliás boa hora para ver se o "negócio" está funcionando).
 
     pip install -U pip
