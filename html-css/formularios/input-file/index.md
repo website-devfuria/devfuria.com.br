@@ -1,5 +1,5 @@
 ---
-layout:      grid-9-3
+layout:      grid93-article
 title:       Enviando arquivos (input type="file")
 description: 
 menu:        html-forms

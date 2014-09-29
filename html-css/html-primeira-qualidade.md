@@ -1,5 +1,5 @@
 ---
-layout:      grid-9-3
+layout:      grid93-article
 title:       Criando um HTML de primeira qualidade
 description: Aprenda a desenvolver um HTML de primeria qualidade com este exemplo da csszengarden.com
 menu:        html-artigos

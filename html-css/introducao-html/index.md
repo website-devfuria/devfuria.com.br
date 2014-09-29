@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Introdução ao HTML
 description: Artigo introduzindo o assunto HTML e HTML5
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      grid-9-3
+layout:      grid93-article
 title:       Botões de opção (input type=radio)
 description: 
 menu:        html-forms

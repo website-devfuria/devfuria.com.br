@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Introdução ao CSS
 description: Artigo introdutorio sobre CSS - Cascading Style Sheet
 ---

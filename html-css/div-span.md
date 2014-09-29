@@ -1,5 +1,5 @@
 ---
-layout:      grid-9-3
+layout:      grid93-article
 title:       HTML - Div e Span 
 description:
 menu:        html-elementos  

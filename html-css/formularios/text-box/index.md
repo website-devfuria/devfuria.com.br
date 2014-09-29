@@ -1,5 +1,5 @@
 ---
-layout:      grid-9-3
+layout:      grid93-article
 title:       Textbox (input type=text)
 description: 
 menu:        html-forms
