@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-index
 title:       HTML & CSS
 description: 
 ---
@@ -18,8 +18,10 @@ Veja também essa belíssima introdução ao HTML do pessoal da Mozilla:
 
 
 
-{% include lista-html-elem-titulo.html %}
-{% include lista-html-elem.html %}
+Elementos básicos de HTML
+---
+
+{% include /menus/html-elementos.html %}
 
 Veja também:
 
@@ -35,16 +37,18 @@ Esta é a subseção sobre [formulários web](/html-css/formularios/).
 
 A lista abaixo compõem os controles básicos do tipo __input__:
 
-{% include lista-html-forms1.html %}
+{% include /menus/html-forms-input.html %}
 
 
 A lista abaixo compõem os controles básicos do tipo __não input__:
 
-{% include lista-html-forms2.html %}
+{% include /menus/html-forms-ninput.html %}
 
 
-{% include lista-html-artigos-titulo.html %}
-{% include lista-html-artigos.html %}
+Artigos
+---
+
+{% include /menus/html-artigos.html %}
 
 
 

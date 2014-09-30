@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       O que é JavaScript?
 description: Introdução desprentensiosa sobre a linguagem JavaScript.
 ---

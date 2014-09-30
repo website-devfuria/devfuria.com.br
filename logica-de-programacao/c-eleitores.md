@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Votos em relação ao total de eleitores- linguagem c"
 description: Exercício de lógica de programação onde calculamos o porcentual de votos em relação ao total de eleitores.
 ---

@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-artigos
+layout:      grid93-article
 title:       Elementos in-line e elementos block-level
 description: Entenda a diferênça e como são renderizados os elementos HTML do tipo inline e block level.
+menu:        html-artigos
 ---
 
 ![Figura ilustrando elementos htmtl do tipo inline e block level](inline-blocklevel-b.jpeg "Figura ilustrando elementos htmtl do tipo inline e block level")

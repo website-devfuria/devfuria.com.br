@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "MDC máximo divisor comum - linguagem c"
 description: Exercício de lógica de programação ara descubrir o MDC (máximo divisor comum).
 ---

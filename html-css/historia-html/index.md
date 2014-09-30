@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Mega ultra rápida história do HTML
 description: Mega ultra rápida história do HTML
 ---

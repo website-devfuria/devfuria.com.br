@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Triângulo - linguagem c++"
 description: Exercício de lógica de programação com OOP e TDD - triângulos.
 ---

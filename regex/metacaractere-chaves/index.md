@@ -1,6 +1,8 @@
 ---
-layout: materia
-title:  "Metacaractere chaves { }"
+layout:      grid93-article
+title:       "Metacaractere chaves { }"
+description: 
+menu:        regex-metacaracteres
 ---
 
 O quantificador chaves funciona como uma repetição mais controlada, onde `{n,m}` significa de `n` até `m` vezes.

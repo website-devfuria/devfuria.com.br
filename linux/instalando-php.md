@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando o PHP  no Linux
 description: Como instalar PHP no Linux
 ---

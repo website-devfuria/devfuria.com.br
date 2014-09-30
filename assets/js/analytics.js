@@ -1,3 +1,4 @@
+/*
 (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
     i[r] = i[r] || function() {
@@ -10,3 +11,4 @@
 })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 ga('create', 'UA-34523500-1', 'devfuria.com.br'); // Substituir pela seu ID de propriedade 
 ga('send', 'pageview');
+*/

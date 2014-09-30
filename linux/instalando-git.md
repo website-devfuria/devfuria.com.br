@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando o git
 description: Aprenda como instalar o git no Linux
 ---

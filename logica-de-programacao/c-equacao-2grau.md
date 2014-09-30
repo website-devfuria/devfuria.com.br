@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Equação de 2 grau - linguagem c"
 description: Exercício de lógica de programação - bhaskar.
 ---

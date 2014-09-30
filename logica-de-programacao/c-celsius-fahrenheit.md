@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Conversor Celsius/Fahrenheit - linguagem c"
 description: Exercício de lógica de programação para converter celsius em fahrenheit e vice versa.
 ---

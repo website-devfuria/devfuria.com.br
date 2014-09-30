@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Número primo - linguagem c"
 description: Exercício de lógica de programação para descobrir se um número é primo.
 ---

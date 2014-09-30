@@ -1,6 +1,8 @@
 ---
-layout: materia
-title:  "Metacaractere lista negada [^]"
+layout:      grid93-article
+title:       "Metacaractere lista negada [^]"
+description: 
+menu:        regex-metacaracteres
 ---
 
 Ela casará com qualquer coisa fora os componentes listados.

@@ -1,7 +1,8 @@
 ---
-layout:     materia
-title:      Canvas - Limite das linhas (lineCap)
+layout:      grid93-article
+title:       Canvas - Limite das linhas (lineCap)
 description: Artigo demonstrando como manipular os limites da linha de um Canvas
+menu:        javascript-canvas
 ---
 
 O método Estilo `lineCap()` define as extremidades das linhas.
@@ -92,3 +93,9 @@ context.stroke();
 
 desenharLinhasGuias(context);
 {% endhighlight %}
+
+
+Próxima matéria
+---
+
+[Canvas - Paths (caminhos)](/javascript/canvas/paths/)

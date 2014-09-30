@@ -1,7 +1,8 @@
 ---
-layout:     materia
-title:      Canvas - Tamanho das linhas  (lineWidth)
+layout:      grid93-article
+title:       Canvas - Tamanho das linhas  (lineWidth)
 description: Descubra como alterar o comprimento (width) das linhas em Canvas
+menu:        javascript-canvas
 ---
 
 
@@ -108,8 +109,13 @@ context.stroke();
 {% endhighlight %}
 
 
-
-<hr>
-Fonte:
+### Fonte
 
 - [whatwg](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#dom-context-2d-linewidth "link-externo")
+
+
+
+Próxima matéria
+---
+
+[Canvas - Junção das linhas (lineJoin)](/javascript/canvas/linejoin-miter-round-bevel/)

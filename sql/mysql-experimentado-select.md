@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid93-article
 title:       Experimentando a instrução "select"
 description: Seus primeiros passos com a instrução 'select'
+menu:        mysql
 ---
 
 
@@ -44,7 +45,7 @@ Repare que ele traz o cálculo como sendo o nome do campo. Agora, tente dessa fo
 O `AS` é um "alias" (apelido). Em português, "as" siginifica "como". Se "traduzirmos" o statement para a língua portuguêsa,
 teremos:
 
-    SELCIONE o resultado de 5 * 2 com o apelido de "foo";
+    Selecione o resultado de 5 * 2 com o apelido de "foo";
 
 
 ### Case INsensitive
@@ -58,7 +59,7 @@ Isso significa que `SELECT now();` é igual a `select NOW();` que é igual a `Se
 Experimente mais...
 ---
 
-"Experimentar" faz parte do aprendizado, então o que será que os statement abaixo produzem?
+Experimentar faz parte do aprendizado, então o que será que os statement abaixo produzem?
 
     SELECT VERSION();
     SELECT CURRENT_DATE();

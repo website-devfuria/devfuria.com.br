@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-index
 title:       Formulários web e seus controles
 description: Tudo o que você precisa saber sobre Formulários Web e seus controles.
 ---
@@ -23,7 +23,9 @@ Leia mais sobre [formulário web](../formularios-web/).
 
 
 
-{% include lista-html-forms1-titulo.html %}
+Controles básicos (input)
+---
+
 
 A tag `input` compõem a maioria dos controles básicos.
 
@@ -37,13 +39,14 @@ Se o propriedade `name` for, por exemplo, "idade" e o valor digitado pelo usuár
 
 Alterando-se a propriedade `type` podemos obter os seguintes controles:
 
-{% include lista-html-forms1.html %}
+
+{% include /menus/html-forms-input.html %}
 
 
 
-{% include lista-html-forms2-titulo.html %}
+Controles básicos (não input)
+---
 
 Nesta categoria encontram-se os controles "combo box", "list box" e "text box multiline":
 
-{% include lista-html-forms2.html %}
-
+{% include /menus/html-forms-ninput.html %}

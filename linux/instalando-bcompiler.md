@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando bcompiler no CentOS
 description: Aprenda como instalar o bcomipler no CentOS
 ---

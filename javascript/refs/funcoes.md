@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       JavaScript - funções
 description: Referência prática de funções - JavaScript
 ---

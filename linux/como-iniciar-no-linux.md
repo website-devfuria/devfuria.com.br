@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-article
 title:      Como iniciar no Linux
 descriptin: Descubra como começar no Linux sem mistérios.
 ---

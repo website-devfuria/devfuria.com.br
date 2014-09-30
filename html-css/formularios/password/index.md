@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-forms
+layout:      grid93-article
 title:       Campos de senha (input type=password)
 description: 
+menu:        html-forms
 ---
 
 Os campos de senha são semelhantes as [textboxs](../text-box/), a diferença é que os __dados aparecem escondidos__

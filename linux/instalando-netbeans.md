@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando o Netbeans no Linux
 description: Como instalar o Netbeans no Linux
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Compartilhando pastas no Virtual Box
 description: 
 ---

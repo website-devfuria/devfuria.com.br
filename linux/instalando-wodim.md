@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Instalando o Wodim no CentOS
 description: Aprenda como instalar o gravador de isos Wodim no CentOS
 ---

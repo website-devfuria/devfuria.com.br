@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Contar vogais - linguagem c"
 description: Exercício de lógica de programação para contar a quantidade de vogais de uma string.
 ---

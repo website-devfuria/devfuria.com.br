@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-index
 title:       Expressões Regulares em JavaScript
 description: Expressões Regulares em JavaScript
 ---

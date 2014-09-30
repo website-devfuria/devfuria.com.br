@@ -1,5 +1,5 @@
 ---
-layout:     materia
+layout:     grid12-article
 title:      Como gerar um número randômico entre 2 números quaisquer
 description: Aprenda com este artigo a criar uma função para gerar um número randômico entre 2 números quaisquer
 ---

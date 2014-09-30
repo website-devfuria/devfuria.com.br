@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       JavaScript - pattern.exec()
 description: Referência prática da função exec() - JavaScript
 ---

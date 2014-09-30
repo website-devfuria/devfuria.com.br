@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Comparar duas strings - linguagem c"
 description: Exercício de lógica de programação para comparar duas strings.
 ---

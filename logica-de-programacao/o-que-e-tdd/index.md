@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Uma breve noção sobre o que é TDD
 description: Noção básica sobre o que é TDD, apenas o suficiente para seguirmos com o curso de lógica.
 ---
@@ -81,7 +81,7 @@ Esse será nosso __framework de testes__ imaginário.
 
 Começe pelo teste. 
 
-    palavra_original = "animal"
+    palavra = "animal"
     ok("lamina" == inverterPalavra(palavra))
 
 Rode os testes!

@@ -1,6 +1,8 @@
 ---
-layout: materia
-title:  "Metacaractere circunflexo ^"
+layout:      grid93-article
+title:       "Metacaractere circunflexo ^"
+description: 
+menu:        regex-metacaracteres
 ---
 
 O metacaractere circunflexo marca o começo de uma linha, serve para procurar no começo da linha.

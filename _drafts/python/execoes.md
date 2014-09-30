@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Python - tratamento de exeções
 description: Python - tratamento de exeções
 ---

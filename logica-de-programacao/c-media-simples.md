@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Média simples de 3 números - linguagem c"
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular a média simples.
 ---

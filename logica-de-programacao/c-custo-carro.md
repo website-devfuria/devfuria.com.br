@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Custo de fabricação de um carro - linguagem c"
 description: Exercício de lógica de programação resolvido para descobrir o custo final de um carro.
 ---

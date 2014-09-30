@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Valor positivo ou negativo - linguagem c"
 description: Exercício de lógica de programação para descobrir se um número é positivo ou negativo.
 ---

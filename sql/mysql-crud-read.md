@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid93-article
 title:       CRUD - R de read (select)
 description: Entenda o sql SELECT, para quem nunca viu SQL!
+menu:        mysql
 ---
 
 Esta matéria é indicada para quem está começando a aprender os comandos básicos de SQL. Ela faz parte de uma sequência, se

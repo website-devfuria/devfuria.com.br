@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Vetor simples - linguagem c"
 description: Exercício de lógica de programação envolvendo vetor e os diversos tipos de laços.
 ---

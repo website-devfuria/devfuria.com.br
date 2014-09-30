@@ -1,6 +1,6 @@
 ---
-layout:     materia
-title:      Canvas
+layout:      grid12-index
+title:       Canvas
 description: Seção sobre Canvas (html5 + javascript)
 ---
 
@@ -10,16 +10,7 @@ Obviamente, junto com o elemento, temos a API Canvas (funções que manipulam o 
 
 O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser.
 
-<div class="list-group">
-    <a href="/javascript/canvas/introducao/" class="list-group-item">Introdução ao Canvas</a>
-    <a href="/javascript/canvas/lineto-moveto/" class="list-group-item">Desenhando linhas (lineTo e moveTo)</a>
-    <a href="/javascript/canvas/line-width/" class="list-group-item">Tamanho das linhas  (lineWidth)</a>
-    <a href="/javascript/canvas/linejoin-miter-round-bevel/" class="list-group-item">Junção das linhas (lineJoin)</a>
-    <a href="/javascript/canvas/linecap-butt-round-square/" class="list-group-item">Limite das linhas (lineCap)</a>
-    <a href="/javascript/canvas/paths/" class="list-group-item">Paths (caminhos)</a>
-    <a href="/javascript/canvas/rect-strokerect-fillrect" class="list-group-item">Desenhando retângulos (strokeRect, fillRect, clearRect e rect)</a>
-    <!--<a href="" class="list-group-item"></a>-->
-</div> 
+{% include  /menus/javascript-canvas.html %}
 
 
 

@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "O dobro de um número qualquer - linguagem c++"
 description: Exercício de lógica de programação resolvido. O objetivo é criar uma classe para calcular o dobro de um número qualquer.
 ---

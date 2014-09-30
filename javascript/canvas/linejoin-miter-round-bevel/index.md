@@ -1,7 +1,8 @@
 ---
-layout:     materia
-title:      Canvas - Junção das linhas (lineJoin)
+layout:      grid93-article
+title:       Canvas - Junção das linhas (lineJoin)
 description: Entenda o método lineJoin() do Canvas e suas propriedades (miter, round e bevel)
+menu:        javascript-canvas
 ---
 
 
@@ -128,3 +129,10 @@ context.lineJoin = "bevel";
 context.lineWidth = 25;
 context.stroke();
 {% endhighlight %}
+
+
+
+Próxima matéria
+---
+
+[Canvas - Limite das linhas (lineCap)](/javascript/canvas/linecap-butt-round-square/)

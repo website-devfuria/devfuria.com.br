@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Inverter string - linguagem c"
 description: Exercício de lógica de programação para inverter uma string.
 ---

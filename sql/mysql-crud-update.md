@@ -1,7 +1,8 @@
 ---
-layout:      materia-sql
+layout:      grid93-article
 title:       CRUD - U de update
 description: Entenda o sql UPDATE, para quem nunca viu SQL!
+menu:        mysql
 ---
 
 Esta matéria é indicada para quem está começando a aprender os comandos básicos de SQL. Ela faz parte de uma sequência, se

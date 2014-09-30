@@ -1,7 +1,8 @@
 ---
-layout:      materia-html-forms
+layout:      grid93-article
 title:       Botões (button, submit e reset)
 description: 
+menu:        html-forms
 ---
 
 Um botão simples (button) precisa de um código javascipt para funcionar.

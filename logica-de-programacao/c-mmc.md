@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "MMC mínimo múltiplo comum - linguagem c"
 description: Exercício de lógica de programação ara descubrir o MMC (mínimo múltiplo comum).
 ---

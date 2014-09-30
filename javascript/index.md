@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-index
 title:       JavaScript
 description: Tudo o que você precisa saber sobre javascript a apartir do zero
 ---
@@ -53,7 +53,7 @@ Obviamente, junto com o elemento, temos a API Canvas (funções que manipulam o 
 
 O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser.
 
-[Aprenda mais sobre o canvas](/javascript/canvas/ "link-externo").
+[Aprenda mais sobre o canvas](/javascript/canvas/).
 
 
 Site Oficial

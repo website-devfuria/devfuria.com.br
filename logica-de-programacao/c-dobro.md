@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "O dobro de um número qualquer - linguagem c"
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular o dobro de um número qualquer.
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Reajustando o salário- linguagem c"
 description: Exercício de lógica de programação - calcular o reajuste do salário.
 ---

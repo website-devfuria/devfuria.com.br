@@ -1,0 +1,35 @@
+---
+layout: base
+---
+
+<div class="grid grid-pad">
+    <div class="col-1-1">
+        {% include breadcrumb.html %}
+    </div>
+
+    <div class="col-9-12">
+        <article  class="content">
+            <header>
+                <h1>{{ page.title }}</h1>
+                <small>{{ page.date | date: "%-d-%b-%Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small>
+            </header>
+            {{ content }}
+        </article>
+    </div>
+    <div class="col-3-12">
+        <div class="content">
+            {% if page.menu %}  
+                {% include {{ page.menu | prepend:'/menus/' | append:'.html' }} %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="grid grid-pad">
+    <div class="col-1-1">
+        {% include discus.html %}
+    </div>
+</div>
+
+
+{% include fork-me.html %}

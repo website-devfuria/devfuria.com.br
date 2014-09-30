@@ -1,7 +1,8 @@
 ---
-layout:     materia
-title:      Introdução ao Canvas
+layout:      grid93-article
+title:       Introdução ao Canvas
 description: Artigo introduzindo o canvas (HTML5)
+menu:        javascript-canvas
 ---
 
 
@@ -179,9 +180,13 @@ Andrew Hoyer é o maluco que fez isso [http://andrew-hoyer.com/experiments/cloth
 Para ver o código [https://github.com/ndrwhr/cloth-simulation](https://github.com/ndrwhr/cloth-simulation "link-externo")
 
 
-
-Fontes
----
+### Fontes
 
 - [Uso básico do canvas (MDN)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Canvas_tutorial/Basic_usage "link-externo")
 - [Capítulo 4 do livro "HTML5 Entendendo e Executando"](http://diveintohtml5.com.br/canvas.html "link-externo") disponível para consulta na web, traduzido pela comunidade.
+
+
+Próxima matéria
+---
+
+[Canvas - Desenhando linhas (lineTo e moveTo)](/javascript/canvas/lineto-moveto/)

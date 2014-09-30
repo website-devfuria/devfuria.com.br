@@ -1,5 +1,5 @@
 ---
-layout:  materia
+layout:  grid12-article
 title:   Como redirecionar as saida do terminal (mysql) para um arquivo
 description: Descubra como fazer para salvar seus comandos sql em um arquivo qualquer
 ---

@@ -1,5 +1,5 @@
 ---
-layout: materia
+layout: grid12-index
 title: Segurança da Informação
 ---
 

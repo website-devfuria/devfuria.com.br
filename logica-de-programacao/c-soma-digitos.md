@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Somar dígitos - linguagem c"
 description: Exercício de lógica de programação para dígitos de um inteiro.
 ---

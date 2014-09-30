@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-index
 title:       SQL - Structured Query Language
 description: Curso prático de SQL, aprenda a utilizar a SQL de forma descomplicada.
 ---
@@ -21,8 +21,10 @@ Para você que não conhece nada sobre banco de dados, talvez queira ler uma
 [Introdução ao conceito intuitivo de banco de dados](/sql/intro/).
 
 
-{% include lista-mysql-titulo.html %}
-{% include lista-mysql.html %}
+Curso introdutório de SQL com banco de dados MySQL
+---
+
+{% include menus/mysql.html %}
 
 
 <hr>

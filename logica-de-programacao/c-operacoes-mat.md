@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       "Funções para as 4 operações artiméticas - linguagem c"
 description: Escreva uma função para cada uma das quatro operações matemáticas simples.
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       Referência da função preg_match_all()
 description: Uma referência prática da função preg match all
 ---

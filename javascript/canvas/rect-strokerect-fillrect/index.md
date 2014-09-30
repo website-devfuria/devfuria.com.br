@@ -1,7 +1,8 @@
 ---
-layout:     materia
-title:      Canvas - Desenhando retângulos (strokeRect, fillRect, clearRect e rect)
+layout:      grid93-article
+title:       Canvas - Desenhando retângulos (strokeRect, fillRect, clearRect e rect)
 description: Aprenda a desenhar retângulos no elemento Canvas.
+menu:        javascript-canvas
 ---
 
 

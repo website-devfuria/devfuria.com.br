@@ -1,5 +1,5 @@
 ---
-layout:      materia
+layout:      grid12-article
 title:       JavaScript - operador ternário condicional
 description: Referência prática do operador ternário condicional - JavaScript
 ---
