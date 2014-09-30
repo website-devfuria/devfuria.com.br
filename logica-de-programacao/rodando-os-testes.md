@@ -4,7 +4,10 @@ title:       "'Rodando os testes' ou 'compilando e executando', socorro ?"
 description: Entendendo como o assert nos ajudará.
 ---
 
-Estamos no curso de lógica de programação aliada a prática do __TDD__.
+Estamos no curso de lógica de programação aliada a prática do __TDD__. Se você leu as matérias anteriores deve estar
+um pouco confuso em relação ao processo, afinal de contas __estamos "rodando os testes" ou "compilando e executando"__?
+
+É isso o que eu quero esclarecer.
 
 __TDD__ é o ato de escrever testes unitários antes de codificar. É muito mais do que isso, mas por enquanto essa idéia basta.
 
@@ -20,8 +23,8 @@ A evolução mais corriqueira na vida de um programador é a seguinte sequência
 Como ensinar lógica de programação e __TDD__ sem antes ensinar programação orientada a objetos, framework de testes,
 testes unitários?
 
-Eu tentei simplificar utilizando a função "assert()". A consequencia é que o significado de "rodar os testes" passa a ser
-"compile e execute". Isso devido ao funcionamento da função `assert()`. E a confusão em torno disso pode nos atrapalhar.
+Eu tentei simplificar utilizando a função "assert()". A consequencia é que, devido ao funcionamento da função `assert()`,
+o significado de "rodar os testes" passa a ser "compile e execute" e a confusão em torno disso pode nos atrapalhar.
 
 
 
@@ -31,7 +34,7 @@ Eu escrevo testes com ajuda de um framework, normalmente baseado no [xUnit](http
 
 Eu "rodo os testes" através do framework, é ele quem me diz se o código está ou não funcionando.
 
-O código produzido é inteiramente orientado a objetos. Pois a menor unidade é um método. E esse método está detro de
+O código produzido é inteiramente orientado a objetos. Pois a menor unidade é um método e esse método está dentro de
 uma classe.
 
 

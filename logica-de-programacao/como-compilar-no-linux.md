@@ -4,13 +4,11 @@ title:       Como compilar no Linux
 description: Como compilar códigos em c/c++ no Linux
 ---
 
-Não, não é coisa de outro mundo. Usar __c/c++__ no __Linux__ é muito fácil.
+Não, não é coisa de outro mundo, usar __c/c++__ no __Linux__ é muito fácil.
 
 Obviamente, você precisará ter o [Linux]("/../../../linux) instalado, nem que seja em uma máquina virtual.
 
-Depois o mais importante é o compilador, no caso o __gcc__.
-
-Para instalar é muito fácil.
+Depois o mais importante é o compilador, no caso o __gcc__, sua instalação é muito fácil.
 
 Se estivar no Ubuntu, Debian:
 

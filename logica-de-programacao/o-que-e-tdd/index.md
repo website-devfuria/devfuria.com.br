@@ -81,7 +81,7 @@ Esse será nosso __framework de testes__ imaginário.
 
 Começe pelo teste. 
 
-    palavra_original = "animal"
+    palavra = "animal"
     ok("lamina" == inverterPalavra(palavra))
 
 Rode os testes!
