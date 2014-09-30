@@ -93,3 +93,9 @@ context.stroke();
 
 desenharLinhasGuias(context);
 {% endhighlight %}
+
+
+Próxima matéria
+---
+
+[Canvas - Paths (caminhos)](/javascript/canvas/paths/)

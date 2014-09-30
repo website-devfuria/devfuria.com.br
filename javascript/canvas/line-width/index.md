@@ -109,8 +109,13 @@ context.stroke();
 {% endhighlight %}
 
 
-
-<hr>
-Fonte:
+### Fonte
 
 - [whatwg](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#dom-context-2d-linewidth "link-externo")
+
+
+
+Próxima matéria
+---
+
+[Canvas - Junção das linhas (lineJoin)](/javascript/canvas/linejoin-miter-round-bevel/)

@@ -129,3 +129,10 @@ context.lineJoin = "bevel";
 context.lineWidth = 25;
 context.stroke();
 {% endhighlight %}
+
+
+
+Próxima matéria
+---
+
+[Canvas - Limite das linhas (lineCap)](/javascript/canvas/linecap-butt-round-square/)

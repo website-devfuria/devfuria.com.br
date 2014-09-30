@@ -104,9 +104,14 @@ context.stroke();
 Repare que chamamos várias vezes o método `lineTo()`.
 
 
-
-Fontes
----
+### Fontes
 
 - Danny Goodman (Javascript - Guia prático, pag 369)
 - Maujor (HTML5 - A linguagem de marcação que revolucionou a web, pag 148)
+
+
+
+Próxima matéria
+---
+
+[Canvas - Tamanho das linhas (lineWidth)](/javascript/canvas/line-width/)

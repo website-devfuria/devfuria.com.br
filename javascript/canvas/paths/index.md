@@ -249,5 +249,13 @@ ou...
 
 Que o `beginPath()` seguido de outro `beginPath()` funciona também como `closePath()`?
 
-<hr>
-Fonte: [WHATWG - concept-path](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#concept-path "link-externo")
+
+### Fonte
+
+- [WHATWG - concept-path](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#concept-path "link-externo")
+
+
+Próxima matéria
+---
+
+[Canvas - Desenhando retângulos (strokeRect, fillRect, clearRect e rect)](/javascript/canvas/rect-strokerect-fillrect/)
