@@ -33,11 +33,6 @@ Para saber se você já possui a tabela, utilize o comando `SHOW TABLES`;
 Este [Gist](https://gist.github.com/flaviomicheletti/8359890 "link-externo") poderá te ajudar caso você queira criar 
 rapidamente a tabela
 
-Então vamos ao CRUD...
+Então vamos a primeira letra do CRUD, a letra "c" de "create" ou melhor, "insert":
 
-<div class="list-group">
-    <a href="../mysql-crud-create/" class="list-group-item">CRUD - C de create (insert)</a>
-    <a href="../mysql-crud-read/" class="list-group-item">CRUD - R de read (select)</a>
-    <a href="../mysql-crud-update/" class="list-group-item">CRUD - U de update</a>
-    <a href="../mysql-crud-delete/" class="list-group-item">CRUD - D de delete</a>
-</div> 
+[CRUD - C de create (insert)](/sql/mysql-crud-create/)

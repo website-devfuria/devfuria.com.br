@@ -34,4 +34,4 @@ Antes de deletar um registro talvez você queira executar um `select` para saber
 
 E após a exclusão, talvez você queira executar novamente o `select` para ter certeza de que o registro foi excluído.
 
-Pata tal, utilizamos a instrução `select` já visto em matérias anteriores ([CRUD - R de read, é o nosso select!](../mysql-crud-read/)).
+Pata tal, utilizamos a instrução [select](/sql/mysql-crud-read/) já visto em matérias anteriores.
