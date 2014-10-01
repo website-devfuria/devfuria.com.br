@@ -61,7 +61,7 @@ description: Guia prático de instalações de softwares para Linux
 </div>
 
 
-###  IDE's
+###  IDE's e editores de texto
 
 <div class="list-group">
     <a href="/linux/instalando-netbeans/" class="list-group-item">Instalando o Netbeans no Linux</a>

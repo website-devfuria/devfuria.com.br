@@ -9,7 +9,7 @@ Adicione o repositório
 	
 	# yum-config-manager --add-repo http://repo.cloudhike.com/sublime2/fedora/sublime2.repo
 
-Habilite po repostitório
+Habilite o repositório
 
 	# yum-config-manager --enable
 
