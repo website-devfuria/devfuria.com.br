@@ -47,6 +47,13 @@ está executando.
 Leia mais sobre [como debugar em PHP](/php/debugando/).
 
 
+### Artigos
+
+<div class="list-group">
+    <a href="/php/arrays-funcoes-basicas/" class="list-group-item">Funções básicas de arrays</a>
+</div>
+
+
 ### Expressões Regulares
 
 Em PHP temos os dois mudos: PCRE e POSIX. As funções da versão POSIX estão depreciadas na versão 5.3 do PHP. A versão 
