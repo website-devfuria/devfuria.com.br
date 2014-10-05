@@ -50,6 +50,7 @@ Leia mais sobre [como debugar em PHP](/php/debugando/).
 ### Artigos
 
 <div class="list-group">
+    <a href="/php/arrays-vetores-matrizes/" class="list-group-item">Criando e iterando um array em PHP</a>
     <a href="/php/arrays-funcoes-basicas/" class="list-group-item">Funções básicas de arrays</a>
 </div>
 
