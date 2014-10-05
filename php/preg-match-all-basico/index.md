@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       O básico sobre a função preg match all
 description: Aprenda o básico sobre a função preg_match_all() + exemplo
+menu:        php-regex
 ---
 
 
@@ -69,10 +70,7 @@ A função `preg_math_all()` carregará a varirável `$matches` com todos as oco
 
 ![Figura com o resultado de preg match all](php-preg-match-all.png "preg match all")
 
+<hr>
+Fonte
 
-
-Veja Também
----
-
-- [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
-- [Referência da função preg_match_all()](/php/preg-match-all/ "Referência da função preg_match_all()")
+- [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php "link-externo")

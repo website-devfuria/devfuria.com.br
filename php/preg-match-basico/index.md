@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       O básico sobre a função preg match
 description: Descubra e aprenda o básico sobre a função preg_match()
+menu:        php-regex
 ---
 
 Vamos utilizar o seguinte exemplo, temos a string original:
@@ -137,8 +138,7 @@ if ($resultado === 1) {
 {% endhighlight %}
 
 
-## Veja também
+<hr/>
+Fonte
 
-- [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
 - [Manual do PHP - preg_match()](http://php.net/manual/en/function.preg-match.php "link-externo")
-

@@ -46,3 +46,20 @@ está executando.
 
 Leia mais sobre [como debugar em PHP](/php/debugando/).
 
+
+### Expressões Regulares
+
+Em PHP temos os dois mudos: PCRE e POSIX. As funções da versão POSIX estão depreciadas na versão 5.3 do PHP. A versão 
+PREC é a mais atual. Em PHP, as expressão regulares devem ser tratadas como strings entre aspas, exemplo:
+
+    '/sua expressão regular/'
+
+As funções POSIX são derivadas de `ereg()`, já as funções do PREC são derivadas de `preg_macth()`.
+
+{% include /menus/php-regex.html %}
+
+<hr/>
+Veja também
+
+- [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php "link-externo")
+- [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php "link-externo")
