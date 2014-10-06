@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Referência da função preg_match_all()
 description: Uma referência prática da função preg match all
+menu:        php-regex
 ---
 
 
@@ -111,11 +112,6 @@ var_dump($matches);
 ![Figura com o resultado de preg-set-order](php-preg-set-order.png "preg-set-order")
 
 <hr>
-Fonte: [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php "link-externo")
+Fonte 
 
-
-Veja também
----
-
-- [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
-- [O básico sobre a função preg match all](/php/preg-match-all-basico/ "O básico sobre a função preg match all")
+- [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php "link-externo")
