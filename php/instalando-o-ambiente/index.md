@@ -43,7 +43,7 @@ No Fedora são três linhas...
 Para ter certeza de que o Apache foi instalado corretamente, abra um navegador qualquer é digite `http://localhost`. É 
 exibido uma página simples com a frase “It’s work”.
 
-Leia mais sobre na seção do Linux [Instalando e configurando o Apache no Linux](/linux/instalando-apache-via-yum-apt-get/).
+Leia mais sobre [como instalar e configurar o Apache](/linux/instalando-apache-via-yum-apt-get/) na seção Linux.
 
 
 
@@ -98,7 +98,7 @@ Além das configurações do Apache pode-se alterar as configurações do própr
 `php.ini` e alterar o que for necessário. Normalmente configura-se o ambiente de desenvolvimento para que seja exibido 
 todos os erros e o que mais preferir.
 
-Leia mais sobre na seção do Linux [Instalando o PHP no Linux](/linux/instalando-php/).
+Leia mais sobre [como instalar o PHP](/linux/instalando-php/) na seção Linux .
 
 
 
@@ -162,7 +162,7 @@ No Fedora é amis façil,  bastam 2 linhas...
     yum install php-pecl-xdebug
     systemctl restart httpd.service
 
-Leia mais sobre na seção do Linux [Instalando o x-debug no Linux](/linux/instalando-xdebug/).
+Leia amis sobre [como instalar o x-debug](/linux/instalando-xdebug/) na seção Linux.
 
 
 
@@ -196,7 +196,7 @@ Para saber se deu certo tente acessar o prompt do MySQL digitando...
 
 O sistema solicitará a senha, digite-a. Se estiver enxergando o "prompt" está tudo OK, digite `exit` para sair.
 
-Leia mais sobre na seção do Linux [Instalando o MySql no Linux](/linux/instalando-mysql/).
+Leia mais sobre [como instalar o MySql](/linux/instalando-mysql/) na seção Linux.
 
 
 
