@@ -31,21 +31,22 @@ de planejamento; falta de organização, falta de preparo, muita ansiedade em co
 O objetivo deste pequeno artigo é apresentar o projeto [PHP The Right Way](http://br.phptherightway.com/ "link-externo") 
 (PHP do jeito certo). Eu acho o projeto um pouco pretensioso... "do jeito certo" como se qualquer outro caminho fosse errado.
 
-Se mudasem o título para "PHP - boas práticas" seria perfeito! mas isso não importa e também não invalida o projeto.
+Se mudassem o título para "PHP - boas práticas" seria perfeito! mas isso não importa e também não invalida o projeto.
+Talvez a tradução de "right way" pudesse ser "melhor caminho", mas como disse, não importa!
 
-O projeto trás informações valiosas sobre qual caminho seguir. Talvez a tradução de "right way" pudesse ser "melhor caminho",
-como disse não importa!
+O projeto tras informações valiosas sobre qual caminho seguir. 
 
-__Aconselho par quem quer ser ninja me PHP__.
+__Aconselho o projeto para quem quer ficar ninja em PHP__.
 
+O problema é que ele é extenso demais para quem está começando! 
 
-O problema é que ele é extenso demais para quem está começando! Então deixo 4 dicas e 4 dicas essenciais para quem está começando:
+Então deixo 4 dicas essenciais para quem está começando:
 
-- Endente seu código (eu lhe imploro)
+- Endente seu código (eu lhe imploro).
 - Use uma boa nomenclatura, desde variáveis até nome de scripts, bases, formulários, métodos, classes, etc...
-- Comente o código
+- Comente o código.
 - Programar é como pintar um quadro, cada um tem um estilo, procure o seu.
 
 Leia mais sobre [Boas práticas para quem está começando a codificar]().
 
-Só você é iniciante, elas são o suficiente.
+Só você é iniciante, essas 4 dicas são o suficiente.
