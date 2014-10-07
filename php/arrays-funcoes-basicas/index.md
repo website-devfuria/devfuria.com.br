@@ -8,9 +8,9 @@ description: Aprenda as funções básicas de array
 
 Para remover um valor no final do array:
 
-    array_pop($arr, "valor");
+    array_pop($arr);
 
-Fonte: [Manual do PHP - array-pop](http://www.php.net/manual/pt_BR/function.array-pop.php "link-externo")
+Veja mais em [PHP - Função array_pop()](/php/refs/array_pop/)
 
 
 
