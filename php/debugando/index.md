@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       PHP - debugando
+title:       Debugando código me PHP
 description: "O primeiro passo para quem precisa investigar o que o computador está executando."
 ---
 

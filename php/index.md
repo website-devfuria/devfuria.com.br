@@ -51,15 +51,17 @@ Leia mais sobre [como debugar em PHP](/php/debugando/).
 
 ### Formulários
 
-Aprenda a trabalhar com cada controle de um formulário web.
+Aprenda a trabalhar com cada controle de um [formulário web](/php/forms/).
 
 {% include /menus/php-forms.html %}
 
 
 
-### Artigos
+### Artigos de referência
 
-{% include /menus/php-artigos.html %}
+Uma [referência prática](/php/refs/), direta e abrangente sobre a linguagem.
+
+{% include /menus/php-refs.html %}
 
 
 
@@ -79,3 +81,8 @@ Veja também
 
 - [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php "link-externo")
 - [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php "link-externo")
+
+
+### Relação completa de artigos
+
+Veja aqui a [relação completa de artigos sobre PHP](/php/relacao-completa/)
