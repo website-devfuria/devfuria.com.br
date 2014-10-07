@@ -51,7 +51,7 @@ Leia mais sobre [como debugar em PHP](/php/debugando/).
 
 ### Formulários
 
-Aprenda a trabalhar com cada controle de um fomrulário web.
+Aprenda a trabalhar com cada controle de um formulário web.
 
 {% include /menus/php-forms.html %}
 
