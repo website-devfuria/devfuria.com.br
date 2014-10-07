@@ -1,7 +1,8 @@
 ---
-layout:      grid12-index
+layout:      grid93-article
 title:       Enviado dados via GET e POST
 description: Estamos no navegador (browser) criando dois tipos de requisições GET e POST
+menu:        php-forms
 ---
 
 
