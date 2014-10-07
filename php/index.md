@@ -52,6 +52,7 @@ Leia mais sobre [como debugar em PHP](/php/debugando/).
 <div class="list-group">
     <a href="/php/arrays-vetores-matrizes/" class="list-group-item">Criando e iterando um array em PHP</a>
     <a href="/php/arrays-funcoes-basicas/" class="list-group-item">Funções básicas de arrays</a>
+    <a href="/php/recebendo-dados-via-get-post/" class="list-group-item">Recebendo dados via GET e POST</a>
     <a href="/php/textbox-password-textarea/" class="list-group-item">Descobrindo os controles text, password e textarea</a>
     <a href="/php/checkbox/" class="list-group-item">Manipulando check boxes</a>
     <a href="/php/radio-button/" class="list-group-item">Manipulando radio button</a>
