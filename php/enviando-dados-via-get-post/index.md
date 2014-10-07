@@ -66,7 +66,7 @@ Então, abra o HTML e clique no botão "Submit me", você deve estar vendo a seg
 
 !["Figura ilustrando uma pequena requisição HTTP"](var-dump-requisicao.png "Figura ilustrando uma pequena requisição HTTP")
 
-Como `$_POST` é um [array](/php/arrays-vetores-matrizes/) podemos alterar o script PHP para:
+Como `$_POST` é um [array]() podemos alterar o script PHP para:
 
     echo $_POST['username']; // print João da Silva
     echo $_POST['email'];    // print joao@dasilva.com
