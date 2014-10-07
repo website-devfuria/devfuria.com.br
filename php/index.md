@@ -37,6 +37,7 @@ Leia mais sobre como [instalar o ambiente LAMP](/php/instalando-o-ambiente/).
 Leia mais sobre [PHP The Right Way](/php/phptherightway/).
 
 
+
 ### Debugando
 
 Debugar é um esforço para encontrar determinado ponto (às vezes vários pontos) "defeituoso" no código para que seja corrigido.
@@ -47,9 +48,19 @@ está executando.
 Leia mais sobre [como debugar em PHP](/php/debugando/).
 
 
+
+### Formulários
+
+Aprenda a trabalhar com cada controle de um fomrulário web.
+
+{% include /menus/php-forms.html %}
+
+
+
 ### Artigos
 
 {% include /menus/php-artigos.html %}
+
 
 
 ### Expressões Regulares
