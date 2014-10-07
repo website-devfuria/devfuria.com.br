@@ -31,10 +31,10 @@ de planejamento; falta de organização, falta de preparo, muita ansiedade em co
 O objetivo deste pequeno artigo é apresentar o projeto [PHP The Right Way](http://br.phptherightway.com/ "link-externo") 
 (PHP do jeito certo). Eu acho o projeto um pouco pretensioso... "do jeito certo" como se qualquer outro caminho fosse errado.
 
-Se mudassem o título para "PHP - boas práticas" seria perfeito! mas isso não importa e também não invalida o projeto.
+Se mudassem o título para "Trilha PHP" seria perfeito! mas isso não importa e também não invalida o projeto.
 Talvez a tradução de "right way" pudesse ser "melhor caminho", mas como disse, não importa!
 
-O projeto tras informações valiosas sobre qual caminho seguir. 
+O projeto trás informações valiosas sobre qual caminho seguir. 
 
 __Aconselho o projeto para quem quer ficar ninja em PHP__.
 
@@ -50,3 +50,54 @@ Então deixo 4 dicas essenciais para quem está começando:
 Leia mais sobre [Boas práticas para quem está começando a codificar]().
 
 Só você é iniciante, essas 4 dicas são o suficiente.
+
+
+
+
+PHP spaghetti
+---
+
+Usamos o PHP no meio do HTML, ou HTML no meio do PHP?
+
+Essa facilidade de misturar HTML e PHP é uma das caracteristicas mais criticadas da linguagem PHP. Chamamos de código
+spaghetti o código que faz essa mistura em excesso e de forma desordenada.
+
+Por isso, me sinto obrigado a lhe fazer um convite: __tente ser bastante organizado em relação a isso__. Procure deixar 
+bem claro no seu script o que é PHP e o que é HTML.
+
+Como exemplo, podemos colocar o "PHP mais pesado" na parte de cima, no começo. Após esse trecho iniciamos o HTML e 
+utilizamos apenas o "PHP mais leve".
+
+{% highlight php %}
+<?php
+
+... code
+... code
+... code
+... code
+... code
+
+?>
+<!DOCTYPE html>
+<lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Simple Form</title>
+    </head>
+    <body>
+
+        <?php // echo "PHP mais leve";?>
+
+        <?php // echo "PHP mais leve";?>
+
+        <?php // echo "PHP mais leve";?>
+
+    </body>
+</html>
+{% endhighlight %}
+
+Às vezes, para atender ao "padrão" acima, teremos que sacrificar um pouco a lógica, poderemos usar um pouco mais de 
+memória e até codificar um algoritmo não performático.
+
+Para isso, temos uma regra simples, a organização vem sempre em primeiro lugar. Ela só será afetada em prol de outras 
+vantagens (performance, economia de memória, etc..) apenas se realmente o programador tiver certeza que vale apena.
