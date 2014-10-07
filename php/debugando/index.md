@@ -1,5 +1,5 @@
 ---
-layout:      grid12-index
+layout:      grid12-article
 title:       PHP - debugando
 description: "O primeiro passo para quem precisa investigar o que o computador está executando."
 ---
