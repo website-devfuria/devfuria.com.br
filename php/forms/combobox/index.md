@@ -233,7 +233,7 @@ $arrCombo = array(
     </head>
     <body>
 
-        <form action="form2-action.php" method="post">
+        <form action="form-action.php" method="post">
             <p>
                 <select name="cidades">
                     <option></option>
@@ -294,7 +294,7 @@ $valor_selecionado = "sbc";
     </head>
     <body>
 
-        <form action="form2-action.php" method="post">
+        <form action="form-action.php" method="post">
             <p>
                 <select name="cidades">
                     <option></option>
@@ -367,7 +367,7 @@ $valor_selecionado = "sbc";
     </head>
     <body>
 
-        <form action="form2-action.php" method="post">
+        <form action="form-action.php" method="post">
             <p>
                 <select name="cidades">
                     <?php combobox($arrCombo, $valor_selecionado); ?>
@@ -379,3 +379,6 @@ $valor_selecionado = "sbc";
     </body>
 </html>
 {% endhighlight %}
+
+Veja o código completo deste exemplo no GitHub
+[php-exemplo/forms/combobox/](https://github.com/devfuria/php-exemplos/tree/master/forms/combobox "link-externo").
