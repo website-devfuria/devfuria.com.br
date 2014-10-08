@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Descobrindo os controles text, password e textarea
+title:       Manipulando os controles text, password e textarea
 description: Veremos como enviar e receber dados através dos controles input text, password e textarea
 menu:        php-forms
 ---
@@ -89,9 +89,27 @@ __E agora o que fazer com os dados?__
 
 Aí entra a lógica de sua aplicação, em outras palavras, entra as regras de negócios de seu sistema.
 
-Fora as regras de negócios, ainda podemos discutir sobre algumas estratégias. Por exemplo, qual será o fluxo dos dados, se ele vai do script form.php para o script form-action.php ou se ele vai fazer uma requisição para ele próprio e etc...
+Fora as regras de negócios, ainda podemos discutir sobre algumas estratégias. Por exemplo, qual será o fluxo dos dados, 
+se ele vai do `script form.php` para o script `form-action.php` ou se ele vai fazer uma requisição para ele próprio e etc...
 
 Há uma centena de possibilidades, mas abordaremos isso em outra matéria, ok?
+
+Nosso arquivo `form-action.php` terá o seguinte conteúdo...
+
+{% highlight php %}
+<?php
+
+$_POST['author'] = ( isset($_POST['author']) ) ? $_POST['author'] : null;
+$_POST['email']  = ( isset($_POST['email']) )  ? $_POST['email']  : null;
+$_POST['pass']   = ( isset($_POST['pass']) )   ? $_POST['pass']   : null;
+$_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
+
+# Visualizando os dados
+var_dump($_POST);
+
+# Apartir deste ponto, entra em cena a lógica de seu programa.
+# Em outras palavras, é o que faremos com os dados recebidos.
+{% endhighlight %}
 
 
 
@@ -113,11 +131,10 @@ O __controle textarea__ utilizaremos de forma diferente, escreveremos os dados e
 
     <textarea><?php echo $valor; ?></textarea>
     
-Então nosso formulário ficará da seguinte forma:
+Então nosso formulário (arquivo `form.php`) ficará da seguinte forma:
 
 {% highlight php %}
 <?php
-
 /**
  * Aqui teríamos algum código para
  * recuperar de uma fonte de dados
@@ -136,14 +153,15 @@ $text = "algum texto";
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="theme.css"></link>
         <title>Simple Form</title>
     </head>
     <body>
-        <form id="comments_form" action="#" method="post">
+        <form id="comments_form" action="form-action.php" method="post">
             <fieldset>
                 <legend>Your Contact Details</legend>
                 <p>
-                    <label for="author">Name: <em class="required">(Required)/em></label>
+                    <label for="author">Name: <em class="required">(Required)</em></label>
                     <input name="author" id="author" type="text" value="<?php echo $author; ?>" />
                 </p>
 
@@ -165,6 +183,11 @@ $text = "algum texto";
                     <textarea name="text" id="text" cols="20" rows="10"><?php echo $text; ?></textarea>
                 </p>
             </fieldset>
+            
+            <p>
+              <input type="submit" value="Submit!" />
+            </p>            
+            
         </form>
     </body>
 </html>
