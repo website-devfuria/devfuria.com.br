@@ -11,6 +11,8 @@ Abaixo vemos o formulário web no qual trabalharemos.
 
 !["Imagem ilustrando o controle radio button"](form-radios-button.png "Imagem ilustrando o controle radio button")
 
+Crie o arquivo `form.php` com o conteúdo abaixo:
+
 {% highlight html %}
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -61,10 +63,18 @@ if (isset($_POST['band-rock'])) {
 }
 {% endhighlight %}
 
-Encurtando o código temos:
+Encurtando o código, o arquivo `form-action.php` deve ser:
 
 {% highlight php %}
-$_POST['band-rock'] = ( isset($_POST['band-rock']) ) ? true : null;
+<?php
+
+$_POST['band-rock'] = ( isset($_POST['band-rock']) ) ? $_POST['band-rock'] : null;
+
+# Visualizando os dados
+var_dump($_POST);
+
+# Apartir deste ponto, entra em cena a lógica de seu programa.
+# Em outras palavras, é o que faremos com os dados recebidos.
 {% endhighlight %}
 
 
@@ -79,6 +89,7 @@ A propriedade `checked` assinala a opção escolhida.
 A minha estratégia é perguntar para a variável `$bandRock` se o valor que ela contém é igual a `"The Beatles"`, 
 `"Led Zeppelin"` ou `"Pink Floy"` e assinalar o __input__ que satisfazer a condição. 
 
+Altere o arquivo `form.php` conforme o conteúdo abaixo:
 
 {% highlight php %}
 <?php
@@ -132,3 +143,8 @@ $bandRock = "pink-floyd";
 
 A linha estava comprida e dificultava a leitura do código, então eu formatei o HTML de um jeito "maroto" só para o 
 código ficar mais legível, mas __não tome isso como um estilo__, ok? 
+
+
+Veja o código completo deste exemplo no GitHub
+[php-exemplo/forms/radio/](https://github.com/devfuria/php-exemplos/tree/master/forms/radio "link-externo").
+
