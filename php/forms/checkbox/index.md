@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Manipulando check boxes com PHP
+title:       Manipulando checkboxes com PHP
 description: 'Veremos como enviar e receber dados através do controle checkbox (input type="check")'
 menu:        php-forms
 ---
@@ -90,7 +90,8 @@ Mas ficou um monte de linhas, imagina que você receberá 10 checkbox!
 
 Faça os cálculos. 10 x 5 = 50 linhas... opâ!
 
-Vamos fazer nosso código tomar as __Pílulas Nanicolinas__ e diminuir um pouco esse negócio.
+Vamos fazer nosso código tomar as __Pílulas Nanicolinas__ e diminuir um pouco esse negócio. O arquivo `form-action.php`
+ficará com abaixo:
 
 {% highlight php %}
 <?php
