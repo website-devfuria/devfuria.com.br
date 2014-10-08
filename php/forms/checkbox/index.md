@@ -12,7 +12,9 @@ Leia mais sobre o [controle checkobox](/html-css/formularios/checkbox/) na seç�
 
 Abaixo vemos o formulário web no qual trabalharemos.
 
-![](form-checkboxes.png)
+!["Figura ilustrando os controles checkboxes"](form-checkboxes.png "Figura ilustrando os controles checkboxes")
+
+Crie o arquivo `form.php` e insira o seguinte conteúdo:
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -91,8 +93,16 @@ Faça os cálculos. 10 x 5 = 50 linhas... opâ!
 Vamos fazer nosso código tomar as __Pílulas Nanicolinas__ e diminuir um pouco esse negócio.
 
 {% highlight php %}
+<?php
+
 $_POST['bike'] = ( isset($_POST['bike']) ) ? true : null;
 $_POST['car']  = ( isset($_POST['car']) )  ? true : null;
+
+# Visualizando os dados
+var_dump($_POST);
+
+# Apartir deste ponto, entra em cena a lógica de seu programa.
+# Em outras palavras, é o que faremos com os dados recebidos.
 {% endhighlight %}
 
 Pronto! Agora sabemos que se a variável `$_POST['bike']` for igual a `true` o usuário selecionou a checkbox. Se ele não
@@ -126,7 +136,7 @@ Retomando, se tivéssemos uma variável, por exemplo, `$bike` com a string `"che
 
     <input type="checkbox" name="bike" value="on" <?php echo $bike; ?> >
 
-Nosso formulário web ficou da seguinte forma:
+Altere o conteúdo do arquivo `form.php` como se segue:
 
 {% highlight php %}
 <?php
@@ -164,3 +174,6 @@ $car  = (bool) rand(0, 1) ? "checked" : null;
     </body>
 </html>
 {% endhighlight %}
+
+Veja o código completo deste exemplo no GitHub
+[php-exemplo/forms/checkbox/](https://github.com/devfuria/php-exemplos/tree/master/forms/checkbox "link-externo").
