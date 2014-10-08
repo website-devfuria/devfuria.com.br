@@ -11,11 +11,11 @@ Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
 Abaixo, temos um exemplo de formulário.
 
 {% highlight html %}
-    <form action="script-para-onde-envio-os-dados.php" method="post">
-        <p>Name:  <input type="text" name="username" value="João da Silva" /></p>
-        <p>Email: <input type="text" name="email"  value="joao@dasilva.com" /></p>
-        <p><input type="submit" value="Submit me!" /></p>
-    </form>
+<form action="script-para-onde-envio-os-dados.php" method="post">
+    <p>Name:  <input type="text" name="username" value="João da Silva" /></p>
+    <p>Email: <input type="text" name="email"  value="joao@dasilva.com" /></p>
+    <p><input type="submit" value="Submit me!" /></p>
+</form>
 {% endhighlight %}
 
 Leia mais sobre [formulário web](../formularios-web/).
