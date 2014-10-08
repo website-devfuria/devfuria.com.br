@@ -169,3 +169,6 @@ $valores_selecionados = array (
     </body>
 </html>
 {% endhighlight %}
+
+Veja o código completo deste exemplo no GitHub
+[php-exemplo/forms/listbox/](https://github.com/devfuria/php-exemplos/tree/master/forms/listbox "link-externo").
