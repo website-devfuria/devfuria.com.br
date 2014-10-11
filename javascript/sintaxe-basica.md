@@ -1,6 +1,6 @@
 ---
-layout:     grid12-article
-title:      JavaScript - O básico da sintaxe
+layout:      grid12-article
+title:       JavaScript - O básico da sintaxe
 description: Um guia rápido e básico da linguagem JavaScript.
 ---
 
