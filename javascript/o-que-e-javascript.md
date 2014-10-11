@@ -33,8 +33,8 @@ Isso mesmo, JavaScript sofre do mesmo problema que o HTML e o CSS, cada navegado
 
 ...por isso o padrão ECMA é tão importante.
 
-O JavaScript já deixou de ser uma linguagem só front end. O [node.js](http://nodejs.org/ "link-externo") levou a linguagem
-para o lado do servidor, e está cada vez mais popular.
+O JavaScript já deixou de ser uma linguagem só front end, o [node.js](http://nodejs.org/ "link-externo") levou a linguagem
+para o lado do servidor e está cada vez mais popular.
 
 > "Parece algo que você pode dominar em uma tarde, JS parece simples, contudo, em seus 10 anos de história até aqui [a edição
 > era de 2007], as melhores práticas de JS pareciam mudar com as estações.".
