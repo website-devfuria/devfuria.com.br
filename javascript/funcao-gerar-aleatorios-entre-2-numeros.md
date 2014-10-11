@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Função para gerar um número randômico entre 2 números quaisquer
 description: Função em JavaScript para gerar um número randômico entre 2 números quaisquer
+menu:        javascript-rando
 ---
 
 Função em JavaScript que gera um número aleatório inteiro entre 2 números quaisquer.
@@ -32,11 +33,3 @@ console.log(  getRandomInt(5, 10)  ); // retornará 5, 6, 7, 8, 9 e 10
 
 <hr>
 Fonte: [MDN - Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random "link-externo")
-
-
-Veja Também
----
-
-- [Como gerar um número randômico entre 2 números quaisquer](/javascript/gerar-numero-randomico-entre-2-numeros-quaisquer/ "Como gerar um número randômico entre 2 números quaisquer")
-Para entrender, passo a passo, como desenvolvemos a função.
-- [Como gerar números aleatórios em Javascript](/javascript/numeros-aleatorios/ "Como gerar números aleatórios em Javascript")

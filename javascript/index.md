@@ -44,6 +44,13 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 
 
 
+Artigos
+---
+
+{% include /menus/javascript-artigos.html %}
+
+
+
 Canvas
 ---
 

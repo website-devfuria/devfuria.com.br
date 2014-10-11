@@ -1,13 +1,14 @@
 ---
-layout:      grid12-article
-title:       Como gerar um número randômico entre 2 números quaisquer
+layout:      grid93-article
+title:       Um número randômico entre 2 números quaisquer
 description: Aprenda com este artigo a criar uma função para gerar um número randômico entre 2 números quaisquer
+menu:        javascript-rando
 ---
 
 Este artigo ensina passo a passo como criar uma função em JavaScript que retorna um número aleatório entre 2 números quaisquer.
 
-Se estava procurando apenas pela função (pronta para uso) acesse o seguinte artigo
-[Função para gerar um número randômico entre 2 números quaisquer](/javascript/funcao-gerar-aleatorios-entre-2-numeros/ "Função para gerar um número randômico entre 2 números quaisquer")
+Se estava procurando apenas pela função (pronta para uso) acesse o este artigo
+[função para gerar número randômico](/javascript/funcao-gerar-aleatorios-entre-2-numeros/ "Função para gerar um número randômico entre 2 números quaisquer").
 
 Vamos imaginar que queiramos gerar números aleatórios entre 3 e 5 (range 3, 4 e 5).
 
@@ -76,12 +77,3 @@ function getRandomInt(min, max) {
 
 <hr>
 Fonte: [MDN - Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random "link-externo")
-
-
-Veja também
----
-
-- [Como gerar números aleatórios em Javascript](/javascript/numeros-aleatorios/ "Como gerar números aleatórios em Javascript")
-- [Função para gerar um número randômico entre 2 números quaisquer](/javascript/funcao-gerar-aleatorios-entre-2-numeros/ "Função para gerar um número randômico entre 2 números quaisquer")
-
-

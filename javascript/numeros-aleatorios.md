@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Como gerar números aleatórios em Javascript
 description: Aprenda sobre a função Math.random de JavaScript e como gerar um número randômico entre 0 e 1 entre outras receitas
+menu:        javascript-rando
 ---
 
 A função `random()` do objeto `Math` retorna um número pseudo-aleatório.
@@ -94,13 +95,3 @@ function getRandom(max) {
 {% highlight javascript %}
     Math.floor(Math.random() * 65536) - 32768;
 {% endhighlight %}
-
-
-
-Veja também
----
-
-- [Como gerar um número randômico entre 2 números quaisquer](/javascript/gerar-numero-randomico-entre-2-numeros-quaisquer/ "Como gerar um número randômico entre 2 números quaisquer")
-- [Função para gerar um número randômico entre 2 números quaisquer](/javascript/funcao-gerar-aleatorios-entre-2-numeros/ "Função para gerar um número randômico entre 2 números quaisquer")
-
-
