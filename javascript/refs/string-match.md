@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       JavaScript - string.match()
 description: Referência prática da função match() - JavaScript
+menu:        javascript-regex
 ---
 
 Em JavaScript também temos a forma `string.match()`.

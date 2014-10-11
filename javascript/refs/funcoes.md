@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       JavaScript - funções
 description: Referência prática de funções - JavaScript
+menu:        javascript-refs
 ---
 
 

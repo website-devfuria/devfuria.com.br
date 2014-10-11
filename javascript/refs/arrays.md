@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       JavaScript - arrays
 description: Referência prática de arrays - JavaScript
+menu:        javascript-refs
 ---
 
 Em JavaScript, arrays são um tipo especial de objeto que representam um conjunto ordenado de valores numerados.

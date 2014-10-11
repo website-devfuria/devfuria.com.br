@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       O que é JavaScript?
-description: Introdução desprentensiosa sobre a linguagem JavaScript.
+description: Introdução despretensiosa sobre a linguagem JavaScript.
 ---
 
 JavaScript é a linguagem de programação que a [Netscape](http://pt.wikipedia.org/wiki/Netscape "link-externo") criou 
@@ -48,4 +48,43 @@ para o lado do servidor e está cada vez mais popular.
 >
 > Mozilla Fundation
 
-Agora, que tal dar um olhada na [sintaxe de JavaScript](/javascript/sintaxe-basica/)?
+
+### JS é realmente Orientado a Objetos ?
+
+Segundo [Douglas Crockford's](http://www.crockford.com/ "link-externo") (o mago do JS):
+
+> O JavaScript é orientado à objetos? Bem, ele contém objetos que podem conter dados e métodos que agem sobre esses 
+> dados. Objetos podem conter outros objetos. O JavaScript não possui classes, mas possui construtores que são capazes 
+> de fazer o que as classes fazem, incluindo agir como contêineres para classes de variáveis e métodos. Ele não possui 
+> herança orientada a classe, mas tem herança orientada a protótipo.
+
+
+### Javascript é seguro?
+
+Vamos estender essa pergunta para: a linguagem de programação X é segura?
+
+Nenhuma linguagem de programação é segura ou insegura, a pergunta correta seria:
+
+O desenvolvedor programa de forma segura?
+
+O que acontece com JS é que o código fica exposto a qualquer usuário, por isso, percebemos erroneamente, que JS é 
+inseguro, mas isto não é verdade. Seguro ou inseguro, como já disse, é a forma como se programa.
+
+Obviamente, tendo em vista que o código fica exposto, não criaremos nenhum __código sensível__ (um código que possa ser
+explorado por um hacker causando danos a aplicação).
+
+
+
+O primeiro script a gente nunca esquece
+---
+
+Crie um arquivo texto e salve com o nome `index.html`. Agora insira nele o seguinte código:
+
+{% highlight javascript %}
+var foo = "Eu sou javascript";
+alert(foo);
+{% endhighlight %}
+
+Abra o arquivo em um navegador qualquer.
+
+Agora, que tal descobrir o que você precisa para [iniciar em JavaScript](/javascript/iniciando-com-javascript/)?

@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       JavaScript - pattern.test()
 description: Referência prática da função test() - JavaScript
+menu:        javascript-regex
 ---
 
 Em JavaScript também temos a forma `pattern.test()`.
