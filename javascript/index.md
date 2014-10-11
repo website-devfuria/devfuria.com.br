@@ -50,6 +50,10 @@ Artigos
 {% include /menus/javascript-artigos.html %}
 
 
+Série sobre números aleatórios em JavaScript (abaixo):
+
+{% include /menus/javascript-rando.html %}
+
 
 Canvas
 ---
