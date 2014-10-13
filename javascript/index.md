@@ -7,8 +7,7 @@ description: Tudo o que você precisa saber sobre javascript a apartir do zero
 
 "Javascript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos, 
 baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de 
-script da Web. Também utilizada em vários outros ambientes como __node.js__ e __Apache CouchDB__.".
-(Mozilla Fundation)
+script da Web.
 
 JavaScript é uma linguagem orientada a objetos. Isso significa que, em vez de ter funções definidas globalmente para
 operar em valores de vários tipos, os próprios tipos definem __métodos__ para trabalhar com valores. Para classificar
