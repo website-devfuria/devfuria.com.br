@@ -4,7 +4,7 @@ title:       Iniciando em JavaScript
 description: Primeiros passos com a linguagem JavaScript
 ---
 
-Antes de começar a escrever em JavaScript é bom saber separa as obrigações de seu código.
+Antes de começar a escrever em JavaScript é bom saber separar as obrigações de seu código.
 
 O __JavaScript__ será encarregado do comportamento da página, da interação com o usuário, dos eventos possíveis (click, 
 duplo click, teclado, movimentação do mouse, e etc...), de tudo aquilo que pode beneficiar a interface do sistema.
