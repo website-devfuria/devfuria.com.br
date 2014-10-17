@@ -65,6 +65,14 @@ Uma [referência prática](/php/refs/), direta e abrangente sobre a linguagem.
 
 
 
+### Arrays
+
+Aprenda a trabalhar com arrays em PHP com esta sériea de artigos.
+
+{% include /menus/php-arrays.html %}
+
+
+
 ### Expressões Regulares
 
 Em PHP temos os dois mudos: PCRE e POSIX. As funções da versão POSIX estão depreciadas na versão 5.3 do PHP. A versão 
