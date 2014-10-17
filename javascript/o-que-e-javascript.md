@@ -58,8 +58,19 @@ Segundo [Douglas Crockford's](http://www.crockford.com/ "link-externo") (o mago 
 > de fazer o que as classes fazem, incluindo agir como contêineres para classes de variáveis e métodos. Ele não possui 
 > herança orientada a classe, mas tem herança orientada a protótipo.
 
+JavaScript é uma linguagem orientada a objetos. Isso significa que, em vez de ter funções definidas globalmente para
+operar em valores de vários tipos, os próprios tipos definem __métodos__ para trabalhar com valores. Para classificar
+os elementos de um array `a`, por exemplo, não passamos `a` para uma função `sort()`. 
+(Flanagan, pag 29 - JavaScript, o guia definitivo)
 
-### Javascript é seguro?
+Em vez disso, chamamos o método `sort()` de `a`: 
+
+{% highlight javascript %}
+    a.sort() // A versão orientada a objetos de "sort(a)"
+{% endhighlight %}
+
+
+### JavaScript é seguro?
 
 Vamos estender essa pergunta para: a linguagem de programação X é segura?
 

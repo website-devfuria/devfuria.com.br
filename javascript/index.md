@@ -9,18 +9,6 @@ description: Tudo o que você precisa saber sobre javascript a apartir do zero
 baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de 
 script da Web.
 
-JavaScript é uma linguagem orientada a objetos. Isso significa que, em vez de ter funções definidas globalmente para
-operar em valores de vários tipos, os próprios tipos definem __métodos__ para trabalhar com valores. Para classificar
-os elementos de um array `a`, por exemplo, não passamos `a` para uma função `sort()`. 
-(Flanagan, pag 29 - JavaScript, o guia definitivo)
-
-Em vez disso, chamamos o método `sort()` de `a`: 
-
-{% highlight javascript %}
-    a.sort() // A versão orientada a objetos de "sort(a)"
-{% endhighlight %}
-
-
 Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).
 
 
