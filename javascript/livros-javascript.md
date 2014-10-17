@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       Livros sobre JavaScript?
+title:       Livros sobre JavaScript
 description: Lista de livros sobre JavaScript
 ---
 

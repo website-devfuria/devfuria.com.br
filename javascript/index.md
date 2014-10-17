@@ -41,7 +41,9 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 
 
 
-### Série sobre números aleatórios em JavaScript
+### Números aleatórios
+
+Aprenda com esta série como trabalhar com números randômicos em JS.
 
 {% include /menus/javascript-rando.html %}
 
@@ -74,10 +76,8 @@ O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o q
 ### Livros sobre JavaScript
 
 Para quem nunca viu Javacript, aconselho o livro da dupla Kevin Yank e Cameron Adams __Simple JavaScript__.
-Ele cumpre o que promete __"tudo o que você precisa saber sobre javascript a apartir do zero"__.
 
-Apesar do livro ser um pouco velho (foi lançado em 2007) ele ainda é muito útil. Isso porque os autores se preocuparam
-em cobrir o essencial do JavaScript.
+Ele cumpre o que promete __"tudo o que você precisa saber sobre javascript a apartir do zero"__.
 
 A didática é excelente, o comprometimento com a qualidade é sem igual.
 
