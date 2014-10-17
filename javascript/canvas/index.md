@@ -17,12 +17,7 @@ O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o q
 Exemplos de Canvas
 ---
 
-<div class="list-group">
-    <a href="/javascript/canvas/col-linhas-rando/" class="list-group-item">Linhas randômicas</a>
-    <a href="/javascript/canvas/col-linhas-grade/" class="list-group-item">Linhas de grade (grid lines)</a>
-    <a href="/javascript/canvas/col-retangulos/" class="list-group-item">Retângulos randômicos</a>
-    <!--<a href="" class="list-group-item"></a>-->
-</div> 
+{% include  /menus/javascript-canvas-ex.html %}
 
 
 

@@ -9,25 +9,20 @@ description: Tudo o que você precisa saber sobre javascript a apartir do zero
 baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de 
 script da Web.
 
-Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).
-
-
-
-### Onde executar (rodar) JavaScript
-
 Você pode executar JavaScript do lado do cliente (__front end__) em um navegador web, dê preferência ao 
 [FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou google chrome.
 
 Também pode-rá executá-lo do lado do servidor (__back end__) em linha de comando através do 
 [node.js](http://nodejs.org/ "link-externo").
 
+Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).
 
 
 ### Como começar a programar em JavaScript
 
 Sugiro as seguintes matérias:
 
-1. [Iniciando  em JavaScript](/javascript/iniciando-com-javascript/)
+1. [Iniciando  em JavaScript](./javascript/iniciando-com-javascript/)
 2. [O básico da sintaxe de JavaScript](./sintaxe-basica/)
 
 Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/tracks/javascript "link-externo").
@@ -55,7 +50,7 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 ### Expressões Regulares
 
 Em JavaScript temos 3 funções para tratarmos as [expressões regulares](/regex/): `test()`, `exec()` e `match()` e a
-função contrutora `RegExp()`.
+função construtora `RegExp()`.
 
 {% include /menus/javascript-regex.html %}
 
@@ -72,13 +67,7 @@ Obviamente, junto com o elemento, temos a API Canvas (funções que manipulam o 
 
 O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser.
 
-[Aprenda mais sobre o canvas](/javascript/canvas/).
-
-
-
-### Site Oficial
-
-- [Mozzila - JavaScript](https://developer.mozilla.org/en-US/learn/javascript "link-externo")
+[Aprenda mais sobre o canvas](./canvas/).
 
 
 
@@ -95,3 +84,15 @@ A didática é excelente, o comprometimento com a qualidade é sem igual.
 !["Livro Só Javascript"](livro-simple-js.jpg "Livro Só Javascript")
 
 Leia mais sobre [Livros sobre JavaScript](./livros-javascript/).
+
+
+
+### Relação completa de artigos
+
+Veja aqui a [relação completa de artigos sobre JavaScript](./relacao-completa/)
+
+
+
+### Site Oficial
+
+- [Mozzila - JavaScript](https://developer.mozilla.org/en-US/learn/javascript "link-externo")

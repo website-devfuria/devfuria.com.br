@@ -86,8 +86,17 @@ explorado por um hacker causando danos a aplicação).
 
 
 
-O primeiro script a gente nunca esquece
----
+### Onde executar (rodar) JavaScript
+
+Você pode executar JavaScript do lado do cliente (__front end__) em um navegador web, dê preferência ao 
+[FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou google chrome.
+
+Também pode-rá executá-lo do lado do servidor (__back end__) em linha de comando através do 
+[node.js](http://nodejs.org/ "link-externo").
+
+
+
+### O primeiro script a gente nunca esquece
 
 Crie um arquivo texto e salve com o nome `index.html`. Agora insira nele o seguinte código:
 
