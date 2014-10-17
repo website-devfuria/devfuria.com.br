@@ -54,7 +54,7 @@ temos o [objeto window](/javascript/objeto-global/) e o correto era escrever ass
 
 ### onclick
 
-Já ouviu falar em eventos? Isso mesmo [onclick](javascript/refs/onclick) nada mais é do que o evento click.
+Já ouviu falar em eventos? Isso mesmo [onclick](/javascript/refs/onclick/) nada mais é do que o evento click.
 
 Mas de quem é esse evento? Os eventos são anexados aos elementos, em nosso exemplo anexamos o evento a tag `img`.
 
@@ -70,7 +70,7 @@ Uma função é uma função (momento KISS).
 
 Mas ela pode ser atribuída a uma variável? Pode... seja bem vindo ao mundo do JavaScript (rs).
 
-Uma [função em JavaScript](javascript/refs/funcoes/) parece-se com a mostrada a baixo:
+Uma [função em JavaScript](/javascript/refs/funcoes/) parece-se com a mostrada a baixo:
 
     function mostrar_alerta () {
         alert('chamou a função');
@@ -78,7 +78,7 @@ Uma [função em JavaScript](javascript/refs/funcoes/) parece-se com a mostrada 
     mostrar_alerta();
 
 O mais usual é colocarmos a função dentro de uma variável e executamos a função referenciando-se a variável, essa técnica
-chama-se [funções anônimas](javascript/funcoes-anonimas/), veja:
+chama-se [funções anônimas](/javascript/funcoes-anonimas/), veja:
 
     var mostrar_alerta = function () {
         alert('chamou a função');
