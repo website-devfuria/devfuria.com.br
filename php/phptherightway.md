@@ -47,8 +47,6 @@ Então deixo 4 dicas essenciais para quem está começando:
 - Comente o código.
 - Programar é como pintar um quadro, cada um tem um estilo, procure o seu.
 
-Leia mais sobre [Boas práticas para quem está começando a codificar]().
-
 Só você é iniciante, essas 4 dicas são o suficiente.
 
 
