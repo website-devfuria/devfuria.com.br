@@ -77,7 +77,7 @@ O botão passa a ser do tipo "button", veja:
 ...
 {% endhighlight %}
 
-Nossa função fará o seguinte (o óbvio), buscará os controles e mostrará no console do FireBug seus valores, veja como ficou:
+Nossa função fará o óbvio, buscará os controles e mostrará no console do FireBug seus valores, veja como ficou:
 
 
 {% highlight javascript %}
