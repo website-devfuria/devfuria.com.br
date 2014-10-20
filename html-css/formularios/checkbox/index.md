@@ -48,5 +48,3 @@ Quando o controle não é clicado ele não envia nada, nada mesmo.
 Quando é clicado, ele envia o valor que você especificar na propriedade `value`.
 
 Isso faz sentido para você? Pra mim não, mas tudo bem.
-
-Lá na seção [PHP](/php/) enfrentaremos esse problema.
