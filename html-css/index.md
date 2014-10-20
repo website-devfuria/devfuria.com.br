@@ -61,10 +61,10 @@ Este livro está desatualizado, mas a didática é nota 10.
 Vale a pena comprar.
 <br/> ![Figura da capa do livro 'Criando paǵinas web com CSS'](livro-criando-pag-web-css.jpg "Criando paǵinas web com CSS")
 
- - __Costruindo sites com CSS e XHMTL__ - Maurício Samy (vulgo Majour), Editora Novatec. 
+ - __Cosntruindo sites com CSS e XHMTL__ - Maurício Samy (vulgo Majour), Editora Novatec. 
 Esse é outro que também está desatualizado, mas é ótimo.
 Ambos os livros são complementares um do outro.
-Não conheco um desenvolvedore que não tenha lido esses livros.
+Não conheco um desenvolvedor que não tenha lido esses livros.
 <br/> ![Figura da capa do livro 'Criando paǵinas web com CSS'](livro-cronstuindo-sites.jpg "Costruindo sites com CSS e XHMT")
 
 
