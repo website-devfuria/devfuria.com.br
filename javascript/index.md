@@ -22,7 +22,7 @@ Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).
 
 Sugiro as seguintes matérias:
 
-1. [Iniciando  em JavaScript](./javascript/iniciando-com-javascript/)
+1. [Iniciando  em JavaScript](./iniciando-com-javascript/)
 2. [O básico da sintaxe de JavaScript](./sintaxe-basica/)
 
 Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/tracks/javascript "link-externo").
