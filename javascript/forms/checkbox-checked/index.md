@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Manipulando checkboxes com JavaScript
-description: Aprendendo como manipular um checkbox em JavaScritp
+description: Aprendendo como manipular um checkbox em JavaScript
 menu:        javascript-forms
 ---
 

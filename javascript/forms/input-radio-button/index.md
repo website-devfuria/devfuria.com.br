@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Manipulando radios buttons com JavaScript
-description: Aprendendo como manipular um radios buttons em JavaScritp
+description: Aprendendo como manipular um radios buttons em JavaScript
 menu:        javascript-forms
 ---
 
