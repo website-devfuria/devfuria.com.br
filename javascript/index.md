@@ -41,6 +41,14 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 
 
 
+### Formulários web
+
+Aprenda a trabalhar com cada controle de um formulário web.
+
+{% include /menus/javascript-forms.html %}
+
+
+
 ### Números aleatórios
 
 Aprenda com esta série como trabalhar com números randômicos em JS.

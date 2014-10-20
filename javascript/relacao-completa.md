@@ -23,9 +23,19 @@ description: Artigos sobre JavaScript
 
 
 
+### Formulários web
+
+Aprenda a trabalhar com cada controle de um formulário web.
+
+{% include /menus/javascript-forms.html %}
+
+
+
 ### Série sobre números aleatórios em JavaScript
 
 {% include /menus/javascript-rando.html %}
+
+
 
 ### Javascript e expressões regulares
 
