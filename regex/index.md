@@ -30,8 +30,7 @@ Também é possível ler online a [1 edição do livro](http://aurelio.net/regex
 
 
 
-JavaScript Expressões Regulares
----
+### JavaScript Expressões Regulares
 
 Em JavaScript temos 3 funções para tratarmos as expressão regular's: 
 [test()](/javascript/refs/pattern-test/), 
@@ -46,8 +45,7 @@ Também é possível aprender Expressões Regulares em JavaScript de forma inter
 
 
 
-PHP Expressões Regulares
----
+### PHP Expressões Regulares
 
 Em PHP temos os dois mudos: PCRE e POSIX.
 
@@ -63,8 +61,7 @@ Veremos as funções
 
 
 
-Testadores Online
----
+### Testadores Online
 
 O [regexpal](http://regexpal.com/ "link-externo") é o mais famoso, porém ele implementa apenas o "sabor" JavaScript, e de vez
 em quando você não consegue acessar o site.
@@ -75,3 +72,8 @@ transformam sua expressão regular em um gráfico, o que ajuda a compreendê-las
 No site [regexplanet](http://www.regexplanet.com/ "link-externo") é possível testar as expressões regulares em diversos
 sabores: Python, Ruby, .NET, GO, Haskell, Java, JavaSript, etc...
 
+
+
+### Relação completa de artigos
+
+Veja aqui a [relação completa de artigos sobre Expressões Regulares](/regex/relacao-completa/)

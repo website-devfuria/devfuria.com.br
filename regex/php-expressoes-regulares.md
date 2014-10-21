@@ -21,15 +21,15 @@ As funções POSIX são derivadas de `ereg()`.
 
 As funções do PREC são derivadas de `preg_macth()`.
 
-### Veja as matérias:
-
-- [Referência da função preg_match_all()](/php/preg-match-all/ "Referência da função preg_match_all()")
-- [O básico sobre a função preg match all](/php/preg-match-all-basico/ "O básico sobre a função preg match all")
-- [O básico sobre a função preg match](/php/preg-match-basico/ "O básico sobre a função preg match")
 
 
-Veja também
----
+### Veja as matérias na seção PHP:
+
+{% include menus/php-regex.html %}
+
+
+
+### Veja também
 
 - [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php "link-externo")
 - [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php "link-externo")
