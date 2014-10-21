@@ -42,6 +42,21 @@ RewriteRule ^python\/sequencias\/?$      "http\:\/\/www\.devfuria\.com\.br\/pyth
 RewriteRule ^linux\/instalando-putty\/linux\/como-acessar-servidor-remotamente\/?$ "http\:\/\/www\.devfuria\.com\.br\/linux\/como-acessar-servidor-remotamente\/" [R=301,L]
 RewriteRule ^linux/iinstalando-vlc\/?$   "http\:\/\/www\.devfuria\.com\.br\/linux\/instalando-vlc\/" [R=301,L]
 
+RewriteRule ^js\/?$                                  "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
+RewriteRule ^js\/basico\/intro\/?$                   "http\:\/\/www\.devfuria\.com\.br\/javascript\/iniciando-com-javascript\/" [R=301,L]
+RewriteRule ^js\/basico\/preparando-o-terreno\/?$    "http\:\/\/www\.devfuria\.com\.br\/javascript\/o-que-e-javascript\/" [R=301,L]
+RewriteRule ^js\/basico\/debugando\/?$               "http\:\/\/www\.devfuria\.com\.br\/javascript\/debugando\/" [R=301,L]
+RewriteRule ^js\/basico\/code-lampadas\/?$           "http\:\/\/www\.devfuria\.com\.br\/javascript\/code-lampada\/" [R=301,L]
+RewriteRule ^js\/basico\/oop-primeiro-degrau\/?$     "http\:\/\/www\.devfuria\.com\.br\/javascript\/oop-primeiro-degrau\/" [R=301,L]
+RewriteRule ^js\/basico\/textbox-password-textarea\/?$  "http\:\/\/www\.devfuria\.com\.br\/javascript\/forms\/textbox-password-textarea\/" [R=301,L]
+RewriteRule ^js\/basico\/checkbox-checked\/?$           "http\:\/\/www\.devfuria\.com\.br\/javascript\/forms\/checkbox-checked\/" [R=301,L]
+RewriteRule ^js\/basico\/input-radio-button\/?$         "http\:\/\/www\.devfuria\.com\.br\/javascript\/forms\/input-radio-button\/" [R=301,L]
+RewriteRule ^js\/basico\/select-combobox\/?$            "http\:\/\/www\.devfuria\.com\.br\/javascript\/forms\/select-combobox\/" [R=301,L]
+RewriteRule ^js\/basico\/code-lampadas-refatorando\/?$  "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
+RewriteRule ^js\/basico\/refatoracao-codigo-limpo\/?$   "http\:\/\/www\.devfuria\.com\.br\/javascript\/refatoracao-codigo-limpo\/" [R=301,L]
+
+
+
 RewriteRule ^js\/basico\/preparando-o-terreno\/materia.md?$                   "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/receitas-tutoriais-guia-referencia\/?$                       "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/basico/draft\/?$                                             "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
