@@ -29,8 +29,8 @@ Se você precisar configurar uma __lista de sources__, este [gist](https://gist.
 <hr>
 Fontes
 
-- [Python Imaging Library (PIL)](http://www.pythonware.com/products/pil/"link-externo")
-- [The Python Imaging Library Handbook](http://effbot.org/imagingbook/"link-externo")
+- [Python Imaging Library (PIL)](http://www.pythonware.com/products/pil/ "link-externo")
+- [The Python Imaging Library Handbook](http://effbot.org/imagingbook/ "link-externo")
 
 
 Instalando o Pillow

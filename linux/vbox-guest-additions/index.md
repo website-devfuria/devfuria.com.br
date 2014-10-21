@@ -54,11 +54,11 @@ Reinicie a máquina.
 
 ### Fontes:
 
-- [https://www.virtualbox.org/manual/ch04.html#idp55330864](https://www.virtualbox.org/manual/ch04.html#idp55330864)
-- [https://www.virtualbox.org/manual/ch02.html#install-linux-host](https://www.virtualbox.org/manual/ch02.html#install-linux-host)
-- [https://forums.virtualbox.org/viewtopic.php?f=3&t=39975](https://forums.virtualbox.org/viewtopic.php?f=3&t=39975)
-- [http://www.vivaolinux.com.br/dica/Como-instalar-o-Guest-Additions-no-Debian-do-Virtualbox](http://www.vivaolinux.com.br/dica/Como-instalar-o-Guest-Additions-no-Debian-do-Virtualbox)
-- [http://unix.stackexchange.com/questions/18435/how-to-install-virtualbox-guest-additions-on-centos-via-command-line-only](http://unix.stackexchange.com/questions/18435/how-to-install-virtualbox-guest-additions-on-centos-via-command-line-only)
+- [https://www.virtualbox.org/manual/ch04.html#idp55330864](https://www.virtualbox.org/manual/ch04.html#idp55330864  "link-externo")
+- [https://www.virtualbox.org/manual/ch02.html#install-linux-host](https://www.virtualbox.org/manual/ch02.html#install-linux-host  "link-externo")
+- [https://forums.virtualbox.org/viewtopic.php?f=3&t=39975](https://forums.virtualbox.org/viewtopic.php?f=3&t=39975  "link-externo")
+- [http://www.vivaolinux.com.br/dica/Como-instalar-o-Guest-Additions-no-Debian-do-Virtualbox](http://www.vivaolinux.com.br/dica/Como-instalar-o-Guest-Additions-no-Debian-do-Virtualbox  "link-externo")
+- [http://unix.stackexchange.com/questions/18435/how-to-install-virtualbox-guest-additions-on-centos-via-command-line-only](http://unix.stackexchange.com/questions/18435/how-to-install-virtualbox-guest-additions-on-centos-via-command-line-only  "link-externo")
 
 
 Veja também
