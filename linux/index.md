@@ -11,8 +11,7 @@ Se você nunca utilizou o Linux e está precisando de um empurrão veja a matér
 
 
 
-Cookbook - receitas de instalação de softwares no Linux
----
+### Cookbook - receitas de instalação de softwares no Linux
 
 Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o pessoal iniciante.
 
@@ -31,8 +30,7 @@ Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](ind
 
 
 
-Know how to - pequeno guia de "saber como fazer"
----
+### Know how to - pequeno guia de "saber como fazer"
 
 <div class="list-group">
     <a href="/linux/como-dar-permissao-de-execucao/" class="list-group-item">Como dar permissão de execução em um arquivo no Linux</a>
@@ -46,8 +44,8 @@ Know how to - pequeno guia de "saber como fazer"
 </div> 
 
 
-What is this - para esclarecer dúvidas frequentes
----
+
+### What is this - para esclarecer dúvidas frequentes
 
 <div class="list-group">
     <a href="/linux/imagem-cd-iso/" class="list-group-item">O que é uma "imagem de CD"?</a>
@@ -55,8 +53,8 @@ What is this - para esclarecer dúvidas frequentes
 </div> 
 
 
-Error - Resolvendo erros e problemas
----
+
+### Error - Resolvendo erros e problemas
 
 <div class="list-group">
     <a href="/linux/problemas-instalacao-debian-7-5/" class="list-group-item">Problemas na instalação do Debian 7.5 (netinst)</a>
@@ -67,8 +65,7 @@ Error - Resolvendo erros e problemas
 
 
 
-Livros sobre Linux - para iniciantes
----
+### Livros sobre Linux - para iniciantes
 
  - __Linux um guia prático de comando, editores e programação de Shell__ - Recomendadíssimo. Ótimo livro, conteúdo de uma qualidade impressionante. Ele é passo a passo
 e não te deixa na mão, nem tem aquelas explicações vagas e subjetivas. Paguei $105 pilas por 600 páginas da conteúdo + 300
@@ -81,8 +78,8 @@ ler o livro (gratuitamente) no site do morimoto: [www.hardware.com.br/livros/lin
 <br/> ![Figura da capa do livro 'Linux, guia prático'](linux-guia-pratico-morimoto.jpg "linux")
 
 
-Comunidade
----
+
+### Comunidade
 
 Alguns lugares interessantes para pesquisar.
 
