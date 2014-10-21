@@ -13,8 +13,7 @@ Seja bem vindo(a) a seção Git!
 > (Site oficial)
 
 
-Como começar
----
+### Como começar
 
 Para treinar os comandos no terminal experimente o [curso (gratuito) da Code Schooll](https://try.github.io/levels/1/challenges/1 "link-externo").
 
@@ -22,8 +21,7 @@ Para entender sobre o __conceito de branches__ experimente o site [Learn Git Bra
 
 
 
-Artigos
----
+### Artigos
 
 <div class="list-group">
     <a href="/linux/instalando-git/" class="list-group-item">Instalando o git</a>
@@ -34,8 +32,7 @@ Artigos
 
 
 
-Veja também
----
+### Veja também
 
 - [Site oficial](http://git-scm.com/ "link-externo")
 - [Livro Pro Git, na web e em português](http://git-scm.com/book/pt-br/ "link-externo")
