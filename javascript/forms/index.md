@@ -1,6 +1,6 @@
 ---
 layout:      grid12-index
-title:       JavaCcrip - Trabalhando com formulário web
+title:       JavaScript - Trabalhando com formulário web
 description: Um sub seção que trata formulários web e JavaScript
 ---
 

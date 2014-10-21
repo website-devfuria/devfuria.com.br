@@ -15,15 +15,12 @@ Você pode executar JavaScript do lado do cliente (__front end__) em um navegado
 Também pode-rá executá-lo do lado do servidor (__back end__) em linha de comando através do 
 [node.js](http://nodejs.org/ "link-externo").
 
-Leia mais sobre [o que é JavaScript](./o-que-e-javascript/).
 
 
-### Como começar a programar em JavaScript
+### Como começar a programar em JavaScript?
 
-Sugiro as seguintes matérias:
+{% include /menus/javascript-artigos-intro.html %}
 
-1. [Iniciando  em JavaScript](./iniciando-com-javascript/)
-2. [O básico da sintaxe de JavaScript](./sintaxe-basica/)
 
 Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/tracks/javascript "link-externo").
 
