@@ -16,8 +16,8 @@ principalmente pela excelência de técnica utilizada na construção do HTML e 
 O site possui tradução para o português e também disponibiliza uma lista de links que auxiliarão em sua jornada, não 
 deixe de conferir.
 
-__Neste artigo/exercício, nós iremos utilizar esse HTML para os próximos exercícios, não vamos focar no design (obviamente)
-vamos exercitar apenas a construção de um bom HTML e algumas estilizações básicas.__
+Neste artigo/exercício, nós iremos utilizar esse HTML para os próximos exercícios, não vamos focar no design (obviamente)
+vamos exercitar apenas a construção de um bom HTML e algumas estilizações básicas.
 
 O objetivo deste exercício é familiarizar-se com o desafio de decidir qual tag utilizar, ou melhor, 
 __qual marcação mais adequado para o conteúdo?__
