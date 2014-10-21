@@ -7,7 +7,15 @@ menu:        javascript-refs
 
 Se vc caiu nesta página de para quedas não deixe de ler a [página principal sobre JavaScript](/javascript/)
 
+### Artigos de referência
+
 {% include /menus/javascript-refs.html %}
+
+
+### Artigos sobre Expressões Regulares e JavaScript
+
+{% include /menus/javascript-regex.html %}
+
 
 <hr/>
 Fonte
