@@ -42,6 +42,7 @@ RewriteRule ^php\/arrays-vetores-matrizes\/?$            "http\:\/\/www\.devfuri
 RewriteRule ^python\/sequencias\/?$      "http\:\/\/www\.devfuria\.com\.br\/python\/sequencias-fatiamento\/" [R=301,L]
 RewriteRule ^linux\/instalando-putty\/linux\/como-acessar-servidor-remotamente\/?$ "http\:\/\/www\.devfuria\.com\.br\/linux\/como-acessar-servidor-remotamente\/" [R=301,L]
 RewriteRule ^linux/iinstalando-vlc\/?$   "http\:\/\/www\.devfuria\.com\.br\/linux\/instalando-vlc\/" [R=301,L]
+RewriteRule ^linux/instalando-(.*)?$      "http\:\/\/www\.devfuria\.com\.br\/linux\/cookbook\/$1" [R=301,L]
 
 RewriteRule ^js\/?$                                  "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/basico\/intro\/?$                   "http\:\/\/www\.devfuria\.com\.br\/javascript\/iniciando-com-javascript\/" [R=301,L]
