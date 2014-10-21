@@ -95,12 +95,6 @@ Leia mais sobre [Livros sobre JavaScript](./livros-javascript/).
 
 
 
-### Relação completa de artigos
-
-Veja aqui a [relação completa de artigos sobre JavaScript](./relacao-completa/)
-
-
-
 ### Site Oficial
 
 - [Mozzila - JavaScript](https://developer.mozilla.org/en-US/learn/javascript "link-externo")

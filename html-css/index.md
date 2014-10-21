@@ -62,12 +62,6 @@ Não conheco um desenvolvedor que não tenha lido esses livros.
 
 
 
-### Relação completa de artigos
-
-Veja aqui a [relação completa de artigos sobre HTML e CSS](/html-css/relacao-completa/)
-
-
-
 ### Veja também
 
 

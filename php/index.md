@@ -89,8 +89,3 @@ Veja também
 
 - [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php "link-externo")
 - [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php "link-externo")
-
-
-### Relação completa de artigos
-
-Veja aqui a [relação completa de artigos sobre PHP](/php/relacao-completa/)
