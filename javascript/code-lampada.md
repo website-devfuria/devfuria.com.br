@@ -78,7 +78,7 @@ Uma [função em JavaScript](/javascript/refs/funcoes/) parece-se com a mostrada
     mostrar_alerta();
 
 O mais usual é colocarmos a função dentro de uma variável e executamos a função referenciando-se a variável, essa técnica
-chama-se [funções anônimas](/javascript/funcoes-anonimas/), veja:
+chama-se [funções anônimas](/javascript/refs/funcoes-anonimas/), veja:
 
     var mostrar_alerta = function () {
         alert('chamou a função');
