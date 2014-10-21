@@ -56,8 +56,6 @@ RewriteRule ^js\/basico\/select-combobox\/?$            "http\:\/\/www\.devfuria
 RewriteRule ^js\/basico\/code-lampadas-refatorando\/?$  "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/basico\/refatoracao-codigo-limpo\/?$   "http\:\/\/www\.devfuria\.com\.br\/javascript\/refatoracao-codigo-limpo\/" [R=301,L]
 
-
-
 RewriteRule ^js\/basico\/preparando-o-terreno\/materia.md?$                   "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/receitas-tutoriais-guia-referencia\/?$                       "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/basico/draft\/?$                                             "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
@@ -66,6 +64,7 @@ RewriteRule ^js\/math\-random\-numero\-randomico\-em\-javascript\/?$          "h
 RewriteRule ^js\/math\-random\-numero\-randomico\-em\-javascript\/index.php?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/gerar\-numero\-randomico\-entre\-2\-numeros\-quaisquer\/" [R=301,L]
 RewriteRule ^js\/window\-object\-global\/?$                          "http\:\/\/www\.devfuria\.com\.br\/javascript\/objeto\-global\/" [R=301,L]
 RewriteRule ^js\/window\-object\/?$                                  "http\:\/\/www\.devfuria\.com\.br\/javascript\/objeto\-global\/" [R=301,L]
+
 RewriteRule ^js\/canvas\/aprendendo-canvas-introducao\/?$            "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/introducao\/" [R=301,L]
 RewriteRule ^js\/canvas\/lineTo-moveTo\/?$                           "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/lineto-moveto\/" [R=301,L]
 RewriteRule ^js\/canvas\/line-width\/?$                              "http\:\/\/www\.devfuria\.com\.br\/javascript\/canvas\/line-width\/" [R=301,L]
@@ -90,6 +89,7 @@ RewriteRule ^regexp\/basico\/string\-match\/?$      "http\:\/\/www\.devfuria\.co
 RewriteRule ^regexp\/basico\/pattern\-exec\/?$      "http\:\/\/www\.devfuria\.com\.br\/javascript\/refs\/pattern\-exec\/" [R=301,L]
 RewriteRule ^regexp\/basico\/pattern\-test\/?$      "http\:\/\/www\.devfuria\.com\.br\/javascript\/refs\/pattern\-test\/" [R=301,L]
 RewriteRule ^regexp\/basico\/new\-regexp\/?$        "http\:\/\/www\.devfuria\.com\.br\/javascript\/refs\/regexp\/" [R=301,L]
+RewriteRule ^regexp\/basico/match-test-exec\/?$     "http\:\/\/www\.devfuria\.com\.br\/javascript\/refs\/global-g\/" [R=301,L]
 
 RewriteRule ^sql\/mysql-erro-1064\/?$                     "http\:\/\/www\.devfuria\.com\.br\/sql\/mysql-ler-mensagens-erro\/" [R=301,L]
 RewriteRule ^mysql-sql\/basico\/crud\/?$                  "http\:\/\/www\.devfuria\.com\.br\/sql\/mysql-crud\/" [R=301,L]
