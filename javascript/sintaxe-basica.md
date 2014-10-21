@@ -141,6 +141,9 @@ if (n == 1) {
 }
 {% endhighlight %}
 
+Leia mais sobre [Condicional if-else em JavaScript](/javascript/refs/if-else/)
+
+### Operador Condicional Ternário
 
 É possível obter resultados semelhantes usando o [operador condicional ternário](../refs/operador-condicional-ternario/) `condition ? expr1 : expr2`.
 
