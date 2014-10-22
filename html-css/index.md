@@ -35,7 +35,8 @@ Veja também:
 
 ### Formulários web e seus controles
 
-Esta é a subseção sobre [formulários web](/html-css/formularios/).
+Esta é a subseção sobre [formulários web](/html-css/formularios/) e talvez você queira ler uma
+[introdução  aos formulários web](/html-css/formularios/intro-formularios-web).
 
 A lista abaixo compõem os controles básicos do tipo __input__:
 
