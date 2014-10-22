@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Caixa de multipla seleção (List box)
-description: 
+description: Artigo a respeito do controle list box (formulário web) - HTML e CSS
 menu:        html-forms
 ---
 

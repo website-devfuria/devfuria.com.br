@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Botões de opção (input type=radio)
-description: 
+description: Artigo a respeito do controle radio button (formulário web) - HTML e CSS
 menu:        html-forms
 ---
 

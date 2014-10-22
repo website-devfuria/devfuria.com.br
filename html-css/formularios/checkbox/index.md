@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Caixa de checagem (input type=checkbox)
-description: 
+description: Artigo a respeito do controle checkbox (formulário web) - HTML e CSS
 menu:        html-forms
 ---
 
