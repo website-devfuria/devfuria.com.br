@@ -1,30 +1,72 @@
-<?php
-/**
- * Como funcionam os métodos GET e POST
- * http; get; post; stateless
- */
-require "../../core/boot.php";
-$pagina = $model->getPagina("/php/basico/metodo-http-get-post/");
-?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php include BASE_PATH . VIEWS_PATH . "/familia01/head.php"; ?>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Como funcionam os métodos GET e POST</title>
+        <meta name="description" content="Introdução prática e descomplicada sobre o protocolo HTTP. Nosso objetivo é entender os métodos GET e POST.">
+        <meta name="keywords" content="">
+        <meta name="author" content="Flávio Alexandre Micheletti">
+
+        <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
+        <meta property="og:image" content="/assets/imgs/favicon.ico"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link href="/assets/css/docs.css" rel="stylesheet">
     </head>
     <body>
-        <?php include BASE_PATH . VIEWS_PATH . "/familia01/nav-top.php"; ?>
-
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="http://www.devfuria.com.br/" class="navbar-brand">DevFuria</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/js">Javascript</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/html-css">HTML & CSS</a>
+                        </li>
+                        <li class="active">
+                            <a href="http://www.devfuria.com.br/php/?curso">PHP</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/mysql-sql">MySql & SQL</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/regexp">RegExp</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/logica-de-programacao">Lógica de Programação</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1><?php echo $pagina->titulo ?></h1>
+                <h1>Como funcionam os métodos GET e POST</h1>
                 <p>Um breve introdução ao protocolo HTTP</p>
                 <p>Entenda a questão da perda de estado (state less)</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
+        <div class = "bs-old-docs">
+            <div class = "container">
+                Flávio Alexandre Micheletti,
+                atualizado em <span class = "label label-info">31/01/2014</span>,
+                escrito em <span class = "label label-success">31/01/2014</span>.
+            </div>
+        </div>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -318,11 +360,24 @@ Server: Apache/2.2.15 (CentOS
                             </div>
                         </div>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
-                </div><!-- Corpo da matéria -->
+                    <ul class="pager hidden-xs">
+                        <li class="previous">
+                            <a href="http://www.devfuria.com.br/php/basico/debugando/">
+                                <span class="glyphicon glyphicon-arrow-left"></span>
+                                Debugando (depurando)            </a>
+                        </li>
+
+                        <li class="next">
+                            <a href="http://www.devfuria.com.br/php/basico/enviando-dados-via-get-post/">
+                                Enviando dados para o script                <span class="glyphicon glyphicon-arrow-right"></span>
+                            </a>
+                        </li>
+                    </ul>                </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
-        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+        <footer class="bs-footer">
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>        
     </body>
 </html>
