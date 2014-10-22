@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt">
     {% include head.html %}
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="/assets/css/docs.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 0px;
+        }
+        .bs-masthead {
+            padding: 0px 15px;
+        }
+        h1 {
+            font-weight: bolder;
+            color: #2F4F4F
+        }
+        .btn {
+            margin-bottom: 3px;
+            width: 90%;
+        }
+        @media (min-width:  700px) {
+            .btn {
+                width: 40%;
+            }
+        }
+        @media (min-width:  992px) {
+            .btn {
+                width: 21%;
+            }
+        }
+    </style>    
     <body>
         {{ content }}
     </body>
