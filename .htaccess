@@ -22,6 +22,8 @@ RewriteRule ^flavio.alexandre-micheletti.php "http\:\/\/www\.devfuria\.com\.br\/
 
 RewriteRule ^logica-de-programacao\/basico\/(.*)\/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 RewriteRule ^logica-de-programacao\/if-else\/?$      "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^logica-de-programacao\/funcoes-procedimentos\/?$                     "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^logica-de-programacao\/oop-programacao-orientada-a-objetos\/?$      "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 RewriteRule ^logica\/basico\/(.*)\/?$                "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 RewriteRule ^logica$                                 "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 
