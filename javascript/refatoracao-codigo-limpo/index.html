@@ -1,29 +1,72 @@
-<?php
-/**
- * JS
- */
-require "../../core/boot.php";
-$pagina = $model->getPagina("/js/basico/refatoracao-codigo-limpo/");
-?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php include BASE_PATH . VIEWS_PATH . "/familia01/head.php"; ?>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Refatoração e código limpo</title>
+        <meta name="description" content="Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.">
+        <meta name="keywords" content="">
+        <meta name="author" content="Flávio Alexandre Micheletti">
+
+        <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
+        <meta property="og:image" content="/assets/imgs/favicon.ico"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link href="/assets/css/docs.css" rel="stylesheet">
     </head>
     <body>
-        <?php include BASE_PATH . VIEWS_PATH . "/familia01/nav-top.php"; ?>
-
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="http://www.devfuria.com.br/" class="navbar-brand">DevFuria</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="http://www.devfuria.com.br/js/?curso">Javascript</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/html-css">HTML & CSS</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/php">PHP</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/mysql-sql">MySql & SQL</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/regexp">RegExp</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/logica-de-programacao">Lógica de Programação</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
-                <h1><?php echo $pagina->titulo ?></h1>
+                <h1>Refatoração e código limpo</h1>
                 <p>Introduziremos conceito intuitivo de refatoração e</p>
                 <p>aprenderemos um pouco sobre como organizar seu código.</p>
             </div>
         </div>
 
         <!-- Linha abaixo do título -->
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/autor-data.php"; ?>
+        <div class = "bs-old-docs">
+            <div class = "container">
+                Flávio Alexandre Micheletti,
+                atualizado em <span class = "label label-info">7/02/2014</span>,
+                escrito em <span class = "label label-success">8/07/2013</span>.
+            </div>
+        </div>
 
         <!-- Matéria -->
         <div class="container bs-docs-container">
@@ -141,8 +184,7 @@ $pagina = $model->getPagina("/js/basico/refatoracao-codigo-limpo/");
 
                         <p>
                             Na matéria
-                            <?php Aux::printAncora("/php/basico/boas-praticas/", "titulo")?>
-                            vimos um pouco de...
+                            <a href='http://www.devfuria.com.br/php/basico/boas-praticas/' title="Antes de enfiar o pé na jaca">Antes de enfiar o pé na jaca</a>                            vimos um pouco de...
                         </p>
 
                         <ol>
@@ -224,11 +266,23 @@ $pagina = $model->getPagina("/js/basico/refatoracao-codigo-limpo/");
                             </div>
                         </div>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
+                    <ul class="pager hidden-xs">
+                        <li class="previous">
+                            <a href="http://www.devfuria.com.br/js/basico/oop-primeiro-degrau/">
+                                <span class="glyphicon glyphicon-arrow-left"></span>
+                                OOP - primeiro degrau            </a>
+                        </li>
+
+                        <li class="next">
+                            <a href="http://www.devfuria.com.br/js/basico/code-lampadas-refatorando/">
+                                Code - A lâmpada (refatorando)                <span class="glyphicon glyphicon-arrow-right"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
-        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>   
     </body>
 </html>
