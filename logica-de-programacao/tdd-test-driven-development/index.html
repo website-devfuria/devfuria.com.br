@@ -1,19 +1,55 @@
-<?php
-/**
- * Matéria introdutória sobre TDD e Lógica de Programação
- * tdd, aprendendo tddd, exercitando tdd, testes unitários, phpunit
- */
-require "../../core/boot.php";
-$pagina = $model->getPagina("/logica-de-programacao/basico/tdd-test-driven-development/");
-?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <?php include BASE_PATH . VIEWS_PATH . "/familia01/head.php"; ?>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Matéria introdutória sobre TDD e Lógica de Programação</title>
+        <meta name="description" content="Matéria que introduz o conceito e prática de TDD">
+        <meta name="keywords" content="">
+        <meta name="author" content="Flávio Alexandre Micheletti">
+
+        <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
+        <meta property="og:image" content="/assets/imgs/favicon.ico"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link href="/assets/css/docs.css" rel="stylesheet">
     </head>
     <body>
-        <?php include BASE_PATH . VIEWS_PATH . "/familia01/nav-top.php"; ?>
-
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="http://www.devfuria.com.br/" class="navbar-brand">DevFuria</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/js">Javascript</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/html-css">HTML & CSS</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/php">PHP</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/mysql-sql">MySql & SQL</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.devfuria.com.br/regexp">RegExp</a>
+                        </li>
+                        <li class="active">
+                            <a href="http://www.devfuria.com.br/logica-de-programacao/?curso">Lógica de Programação</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <!-- Título -->
         <div class="bs-header" id="content">
             <div class="container">
@@ -335,11 +371,24 @@ $pagina = $model->getPagina("/logica-de-programacao/basico/tdd-test-driven-devel
                             </div>
                         </div>
                     </div>
-                    <?php include BASE_PATH . VIEWS_PATH . "/paginacao.php"; ?>
-                </div><!-- Corpo da matéria -->
+                    <ul class="pager hidden-xs">
+                        <li class="previous">
+                            <a href="http://www.devfuria.com.br/logica-de-programacao/basico/oop-programacao-orientada-a-objetos/">
+                                <span class="glyphicon glyphicon-arrow-left"></span>
+                                Vamos de OOP?            </a>
+                        </li>
+
+                        <li class="next">
+                            <a href="http://www.devfuria.com.br/logica-de-programacao/basico/code-triangulo-tdd/">
+                                Code - Triângulo com TDD                <span class="glyphicon glyphicon-arrow-right"></span>
+                            </a>
+                        </li>
+                    </ul>                </div><!-- Corpo da matéria -->
             </div><!-- row -->
         </div><!-- Matéria -->
-        <?php include BASE_PATH . VIEWS_PATH . "/cursos/footer.php"; ?>
-        <?php include BASE_PATH . VIEWS_PATH . "/footer-js.php"; ?>
+        <footer class="bs-footer">
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </body>
 </html>
