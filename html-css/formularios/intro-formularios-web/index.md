@@ -1,10 +1,9 @@
 ---
 layout:      grid93-article
-title:       Formulários web
-description: 
-menu:        html-artigos
+title:       Introdução aos formulários web
+description: Uma rápida intrpdução aos formulários web.
+menu:        html-forms
 ---
-
 
 Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
 

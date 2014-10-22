@@ -15,9 +15,21 @@ Veja também essa belíssima introdução ao HTML do pessoal da Mozilla:
 - [Introdução ao HTML- Mozilla.](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction "link-externo")
 
 
+
 ### Artigos
 
 {% include /menus/html-artigos.html %}
+
+
+
+### Elementos básicos de HTML
+
+{% include /menus/html-elementos.html %}
+
+Veja também:
+
+- [Glossário de elementos HTML (inclui HTML5).](https://developer.mozilla.org/en-US/docs/Web/HTML/Element "link-externo")
+- [Um pequeno glossário do site codecademy.](http://www.codecademy.com/glossary/html "link-externo")
 
 
 
@@ -33,17 +45,6 @@ A lista abaixo compõem os controles básicos do tipo __input__:
 A lista abaixo compõem os controles básicos do tipo __não input__:
 
 {% include /menus/html-forms-ninput.html %}
-
-
-
-### Elementos básicos de HTML
-
-{% include /menus/html-elementos.html %}
-
-Veja também:
-
-- [Glossário de elementos HTML (inclui HTML5).](https://developer.mozilla.org/en-US/docs/Web/HTML/Element "link-externo")
-- [Um pequeno glossário do site codecademy.](http://www.codecademy.com/glossary/html "link-externo")
 
 
 

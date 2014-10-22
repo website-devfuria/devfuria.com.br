@@ -18,7 +18,7 @@ Abaixo, temos um exemplo de formulário.
 </form>
 {% endhighlight %}
 
-Leia mais sobre [formulário web](../formularios-web/).
+Leia mais sobre [formulário web](/html-css/formularios/intro-formularios-web/).
 
 
 
