@@ -75,7 +75,7 @@ Uma [referência prática](/php/refs/), direta e abrangente sobre a linguagem.
 
 ### Arrays
 
-Aprenda a trabalhar com arrays em PHP com esta sériea de artigos.
+Aprenda a trabalhar com arrays em PHP com esta série de artigos.
 
 {% include /menus/php-arrays.html %}
 
