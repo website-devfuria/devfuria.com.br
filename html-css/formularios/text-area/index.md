@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Text box multiline (textarea)
-description:Artigo a respeito do controle textbox-multline (formulário web) - HTML e CSS
+description: Artigo a respeito do controle textbox-multline (formulário web) - HTML e CSS
 menu:        html-forms
 ---
 
