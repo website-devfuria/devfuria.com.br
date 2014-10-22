@@ -1,107 +1,79 @@
 ---
-layout:      base
+layout:      home
 title:       "Flávio Alexandre Micheletti - portifólio"
 description: "Portifólio eletrônico de Flávio Alexandre Micheletti"
 permalink:   flavio-alexandre-micheletti.html
 ---
 
-<link href="http://www.devfuria.com.br/core/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="http://www.devfuria.com.br/core/assets/css/docs.css" rel="stylesheet">
-<style type="text/css">
-    .panel-body .row {
-        margin: 10px;
-    }
-    .panel {
-        margin: 60px 10px;
-    }
-    .jumbotron {
-        background-image: url("conteudo/imagens/ale.png");
-        background-repeat: no-repeat;
-        background-position: center left;
-        color: #000;
-        font-weight: 900;
-    }    
-    .home {
-        position: fixed;
-        top: 10px;
-        margin-left: 14px;
-        z-index: 1;
-    }            
-</style>
-
 <div class="container">
     <div class="row">
-        <a href="http://www.devfuria.com.br" class="btn btn-primary home"><span class="glyphicon glyphicon-home"></span> &nbsp;Home</a>
-    </div>
-</div>
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">Flávio Alexandre Micheletti</li>
+        </ol>
 
-<div class="jumbotron">
-    <h1>Flávio Alexandre Micheletti</h1>
-    <ul>
-        <li>Analista de Sistemas desde 2007.</li>
-        <li>Formado em Segurança da Informação pela Fatec SCS (2011)</li>
-        <li>Ultimamente, dedicando meu tempo na programação front-end.</li>
-    </ul>
-</div>
-
-<div class="container">
-    <div class="col-md-offset-2 col-md-10  hidden-xs">
+        <div class="jumbotron">
+            <h1>Flávio Alexandre Micheletti</h1>
+            <ul>
+                <li>Analista de Sistemas desde 2007.</li>
+                <li>Formado em Segurança da Informação pela Fatec SCS (2011)</li>
+                <li>Ultimamente, dedicando meu tempo na programação front-end.</li>
+            </ul>
+        </div>
 
     </div>
 </div>
+
 
 <div class="container bs-docs-container">
     <div class="row">
 
-        <!-- navegação lateral esquerdo -->
-        <div class="col-md-3">
-            <div class="bs-sidebar hidden-print" role="complementary">
-                <ul class="nav bs-sidenav">
-                    <li>
-                        <a href="#2013">Arquitetura Humana</a>
-                    </li>
-                    <li>
-                        <a href="#2012">DevFuria</a>
-                    </li>
-                    <li>
-                        <a href="#2011">Corretora</a>
-                    </li>
-                    <li>
-                        <a href="#2010">ACS</a>
-                    </li>
-                    <li>
-                        <a href="#2009">SDD</a>
-                    </li>
-                    <li>
-                        <a href="#2007">Folha do Ocorrências</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-9" role="main">
+        <div class="col-md-12" role="main">
 
             <div class="page-header">
                 <h1>Técnica</h1>
             </div>
 
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <tr>
-                        <th>GitHub</th>
-                        <td><a href="https://github.com/flaviomicheletti/">https://github.com/flaviomicheletti/</a></td>
-                    </tr>
-                    <tr>
-                        <th>Publicações (TCC)</th>
-                        <td>
-                            <a href="tcc-flavio-alexandre-micheletti.pdf" title="link-externo" class=""><small>ANÁLISE DAS PRINCIPAIS VULNERABILIDADES DE APLICAÇÕES WEB
-                                    TENDO COMO BASE A ARQUITETURA LAMP E AS
-                                    TOP 10 VULNERABILIDADES DA OWASP</small>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>                    
+            <div id="2013" class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3  class="panel-title">GitHub</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="list-group">
+                                <a href="https://github.com/devfuria" class="list-group-item">
+                                    <h4 class="list-group-item-heading">Códigos do DevFuria</h4>
+                                    <p class="list-group-item-text">https://github.com/devfuria</p>
+                                </a>
+                                <a href="https://github.com/flaviomicheletti/" class="list-group-item">
+                                    <h4 class="list-group-item-heading">Meus códigos</h4>
+                                    <p class="list-group-item-text">https://github.com/flaviomicheletti/</p>
+                                </a>
+                            </div>                        
+                        </div>                        
+                    </div>
+                </div>
+            </div>         
+
+
+            <div id="2013" class="panel panel-danger">
+                <div class="panel-heading">
+                    <h3  class="panel-title">Publicações (TCC)</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="list-group">
+                                <a href="tcc-flavio-alexandre-micheletti.pdf" class="list-group-item">
+                                    <h4 class="list-group-item-heading">ANÁLISE DAS PRINCIPAIS VULNERABILIDADES DE APLICAÇÕES WEB - TOP 10 OWASP</h4>
+                                    <p class="list-group-item-text">tcc-flavio-alexandre-micheletti.pdf</p>
+                                </a>
+                            </div>                        
+                        </div>                        
+                    </div>
+                </div>
+            </div>                
 
             <div class="page-header">
                 <h1>Portifólio</h1>
@@ -167,7 +139,7 @@ permalink:   flavio-alexandre-micheletti.html
                 </div>
             </div>
 
-            <div id="2012" class="panel panel-default">
+            <div id="2012" class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">Site DevFuria</h3>
                     <a href="http://www.devfuria.com.br">www.devfuria.com.br</a>
@@ -175,13 +147,15 @@ permalink:   flavio-alexandre-micheletti.html
                 </div>
                 <div class="panel-body">
                     <div class="row">
-                        <p>Site que tem como objetivo ajudar na boa formação de desenvolvedores (web).</p>
-                        <p>
-                            Projeto pessoal e Open Source (<a href="https://github.com/flaviomicheletti/www.devfuria.com.br">fontes no github</a>)
-                            no qual eu sou o único culpado
-                        </p>
-                        <p>(mentor, mantenedor, desenvolvedor, designer, colunista, revisor técnico, etc..).</p>
-                        <p><span class="label label-default">PHP e Bootstrap</span></p>
+                        <div class="col-md-12">
+                            <p>Site que tem como objetivo ajudar na boa formação de desenvolvedores (web).</p>
+                            <p>
+                                Projeto pessoal e Open Source (<a href="https://github.com/flaviomicheletti/www.devfuria.com.br">fontes no github</a>)
+                                no qual eu sou o único culpado
+                            </p>
+                            <p>(mentor, mantenedor, desenvolvedor, designer, colunista, revisor técnico, etc..).</p>
+                            <p><span class="label label-default">PHP e Bootstrap</span></p>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3">
@@ -203,7 +177,7 @@ permalink:   flavio-alexandre-micheletti.html
                 </div>
             </div>
 
-            <div id="2011" class="panel panel-success">
+            <div id="2011" class="panel panel-info">
                 <div class="panel-heading">
                     <h3 class="panel-title">Sistema Corretora de Seguros</h3>
                     <p>2011</p>
@@ -377,4 +351,3 @@ permalink:   flavio-alexandre-micheletti.html
         </div>
     </div><!-- row -->
 </div>
-<script src="http://www.devfuria.com.br/core/dist/js/bootstrap.min.js"></script>
