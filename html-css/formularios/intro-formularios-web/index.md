@@ -77,10 +77,3 @@ nos deter apenas em seu layout e estrutura.
 Fonte:
 
 - [My first HTML form (MDN) - Exemplo básico de formulário web](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form "link-externo")
-
-
-
-Veja também
----
-
-- [A subseção sobre formulários web](/html-css/formularios/).
