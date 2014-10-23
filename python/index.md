@@ -18,10 +18,13 @@ Começando com Python
 ---
 
 
-Conheca o básico da sintaxe de Python através deste artigo [O básico da sintaxe de Python](./sintaxe-basica/).
+Conheça o básico da sintaxe de Python através deste artigo [O básico da sintaxe de Python](./sintaxe-basica/).
 
 Se você, assim como eu, gosta de aprender de forma "suave", aconselho a iniciar pelo Python através do
 [Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
+
+
+{% include menus/python-artigos.html %}
 
 
 Site Oficial

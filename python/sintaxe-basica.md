@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Python - O básico da sintaxe
 description: Um guia rápido e básico da linguagem Python.
+menu:        python-artigos
 ---
 
 Este é um pequeno guia sobre a sintaxe de Python.

@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Python - O básico de funções
 description: O básico de funções em Python
+menu:        python-artigos
 ---
 
 
