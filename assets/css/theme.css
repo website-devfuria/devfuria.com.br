@@ -37,11 +37,12 @@ pre code {
     font-size:12px;
     background-color:#f0f0f0;
     border:none;
+    color: #000;
 }
 code {
     font-size:12px;
     /*background-color:#ffff99;*/
-    /*color:#8b0000;*/
+    color: #8b0000;
     padding:0.1em 0.3em;
     border-radius: 3px;
 }
@@ -136,12 +137,14 @@ h1:first-child {
     font-size: 300%;
 }
 h2 {
+    color: #122b3b;
     line-height: 1.52em;
     font-size:200%;
     margin-top:3em;
     border: none;
 }
 h3 {
+    color: #122b3b;
     margin-top:3em;
 }
 .text-left {text-align: left}
