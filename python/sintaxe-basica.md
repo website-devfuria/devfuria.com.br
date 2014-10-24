@@ -1,8 +1,7 @@
 ---
-layout:      grid93-article
+layout:      grid12-article
 title:       Python - O básico da sintaxe
 description: Um guia rápido e básico da linguagem Python.
-menu:        python-artigos
 ---
 
 Este é um pequeno guia sobre a sintaxe de Python.
@@ -627,5 +626,5 @@ class Triangle(Shape):
 
 ### Fontes
 
-- [Python: apresentando a sintaxe (Luciano Ramalho)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf" link-externo")
-- [Codeacademy - Python Glossary](http://www.codecademy.com/glossary/python" link-externo")
+- [Python: apresentando a sintaxe (Luciano Ramalho)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf "link-externo")
+- [Codeacademy - Python Glossary](http://www.codecademy.com/glossary/python "link-externo")
