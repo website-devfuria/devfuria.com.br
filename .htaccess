@@ -103,3 +103,5 @@ RewriteRule ^mysql-sql\/intro\/?$                         "http\:\/\/www\.devfur
 RewriteRule ^mysql-sql\/?$                                "http\:\/\/www\.devfuria\.com\.br\/sql\/" [R=301,L]
 RewriteRule ^mysql-sql\/index.md?$                        "http\:\/\/www\.devfuria\.com\.br\/sql\/" [R=301,L]
 
+RewriteRule ^git\/nao-pedir-senha\/?$      "http\:\/\/www\.devfuria\.com\.br\/git\/netrc-nao-pedir-senha\/" [R=301,L]
+
