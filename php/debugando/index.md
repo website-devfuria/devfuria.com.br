@@ -80,10 +80,10 @@ A imagem abaixo mostra o resultado do `var_dump()`:
 Para se beneficiar 100% da função `var_dump()` devemos ter instalado o programa __x-debug__. Ele exibi-rá o resultado de
 uma forma mais legível.
 
-Veja o artigo [Instalando o x-debug no Linux](/linux/instalando-xdebug/) para aprender como insta-lá-lo.
+Veja o artigo [Instalando o x-debug no Linux](/linux/cookbook/xdebug/) para aprender como insta-lá-lo.
 
 Obviamente, não é só essa a função do x-debug, ele faz muito mais do que isso, inclusive pode ser integrado a IDE 
-[Netbeans](/linux/instalando-netbeans/) e outras "pequeñas cosas".
+[Netbeans](/linux/cookbook/netbeans/) e outras "pequeñas cosas".
 
 Caso o seu script gere um erro me tempo de execução o x-debug mostrará o rastro que seu script deixou. Dá para ver o 
 caminho percorrido facilitando, dessa forma, a depuração.

@@ -25,7 +25,7 @@ Existem mais do que uma única forma de instalar o __Django__. Consulte o site o
 Instalando o Django através do pip
 ---
 
-Obviamente que você deverá ter o [pip](/linux/instalando-pip/ "Aprenda a instalar o pip") instalado.
+Obviamente que você deverá ter o [pip](/linux/cookbook/pip/ "Aprenda a instalar o pip") instalado.
 
 Após isso você poderá instalar o __Django__ da seguinte forma.
 

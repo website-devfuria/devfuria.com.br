@@ -43,7 +43,7 @@ No Fedora são três linhas...
 Para ter certeza de que o Apache foi instalado corretamente, abra um navegador qualquer é digite `http://localhost`. É 
 exibido uma página simples com a frase “It’s work”.
 
-Leia mais sobre [como instalar e configurar o Apache](/linux/instalando-apache-via-yum-apt-get/) na seção Linux.
+Leia mais sobre [como instalar e configurar o Apache](/linux/cookbook/apache-via-yum-apt-get/) na seção Linux.
 
 
 
@@ -98,7 +98,7 @@ Além das configurações do Apache pode-se alterar as configurações do própr
 `php.ini` e alterar o que for necessário. Normalmente configura-se o ambiente de desenvolvimento para que seja exibido 
 todos os erros e o que mais preferir.
 
-Leia mais sobre [como instalar o PHP](/linux/instalando-php/) na seção Linux .
+Leia mais sobre [como instalar o PHP](/linux/cookbook/php/) na seção Linux .
 
 
 
@@ -162,7 +162,7 @@ No Fedora é amis façil,  bastam 2 linhas...
     yum install php-pecl-xdebug
     systemctl restart httpd.service
 
-Leia amis sobre [como instalar o x-debug](/linux/instalando-xdebug/) na seção Linux.
+Leia amis sobre [como instalar o x-debug](/linux/cookbook/xdebug/) na seção Linux.
 
 
 
@@ -196,7 +196,7 @@ Para saber se deu certo tente acessar o prompt do MySQL digitando...
 
 O sistema solicitará a senha, digite-a. Se estiver enxergando o "prompt" está tudo OK, digite `exit` para sair.
 
-Leia mais sobre [como instalar o MySql](/linux/instalando-mysql/) na seção Linux.
+Leia mais sobre [como instalar o MySql](/linux/cookbook/mysql/) na seção Linux.
 
 
 
@@ -237,15 +237,15 @@ Anotou tudo que instalamos até aqui? vamos lá:
 Ufa!!! Mas ainda falta algumas "coisinhas". Ainda temos o editor de código, o controlador de versão, os navegadores e 
 seus plugins, e etc.. Só que neste ponto, a escolha dos aplicativos é uma questão pessoal, então fica apenas a sugestão.
 
-Como editor de código eu sugiro o [Netbeans](/linux/instalando-netbeans/), ele é open source e tem umas funcionalidades 
-muito interessantes. Para instalá-lo é preciso, primeiramente, ter o [java (JDK)](http://www.devfuria.com.br/linux/instalando-java/)
+Como editor de código eu sugiro o [Netbeans](/linux/cookbook/netbeans/), ele é open source e tem umas funcionalidades 
+muito interessantes. Para instalá-lo é preciso, primeiramente, ter o [java (JDK)](http://www.devfuria.com.br/linux/cookbook/java/)
 previamente instalado. Tente instalar a versão __openJavaX__ (onde x é a versão do java) via Softer Center (ainda estamos
  no ubuntu). 
 
 Atualmente, o controle de versão mais utilizado e divulgado é o [Git](http://git-scm.com/ "link-externo"), aprenda mais
 sobre este controlador de versão na seção [Git](/git/).
 
-Como navegador eu sugiro o [Firefox](/linux/instalando-firefox/) e não se esqueça dos plugins __Firebug__ e __WebDeveloper__
+Como navegador eu sugiro o [Firefox](/linux/cookbook/firefox/) e não se esqueça dos plugins __Firebug__ e __WebDeveloper__
 eles quebram um galho enorme.
 
 Espero que você tenha sobrevivido!

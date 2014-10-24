@@ -26,4 +26,4 @@ de versão e gerenciamento de dependências.
 Veja também
 ---
 
-- [Instalando o nodejs](/linux/instalando-nodejs/)
+- [Instalando o nodejs](/linux/cookbook/nodejs/)
