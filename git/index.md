@@ -26,7 +26,7 @@ Para entender sobre o __conceito de branches__ experimente o site [Learn Git Bra
 <div class="list-group">
     <a href="/linux/cookbook/git/" class="list-group-item">Instalando o git</a>
     <a href="/git/dicas-configuracao/" class="list-group-item">Dicas de configuração do git</a>
-    <a href="/git/nao-pedir-senha/" class="list-group-item">Para não ter que ficar redigitando a senha</a>
+    <a href="/git/netrc-nao-pedir-senha/" class="list-group-item">Para não ter que ficar redigitando a senha</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
