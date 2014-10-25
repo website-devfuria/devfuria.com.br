@@ -63,6 +63,7 @@ os valores excedentes serão ignorados. Se for o inverso, ´undefined´ será at
 checagem de tipo em valores de argumento: qualquer tipo de valor pode ser passado a qualquer parâmetro.
 (Crockford, O melhor do JavaScript, pág 24)
 
+
 Veja um exemplo:
 
 {% highlight javascript %}
@@ -77,6 +78,7 @@ function findMax() {
     }
     return max;
 } {% endhighlight %}
+
 
 <hr>
 Fontes
