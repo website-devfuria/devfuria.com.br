@@ -4,6 +4,26 @@ title:       Iniciando em JavaScript
 description: Primeiros passos com a linguagem JavaScript
 ---
 
+Você pode executar JavaScript do lado do cliente (__front end__) em um navegador web, dê preferência ao 
+[FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou google chrome.
+
+Também pode-rá executá-lo do lado do servidor (__back end__) em linha de comando através do 
+[node.js](http://nodejs.org/ "link-externo").
+
+Neste primeiro exemplo, vamos executá-lo no navegador (lado cliente).
+
+Crie um arquivo de texto simples, salve com o nome `index.html` e insira nele o seguinte código:
+
+{% highlight javascript %}
+var foo = "Eu sou javascript";
+alert(foo);
+{% endhighlight %}
+
+Abra o arquivo em um navegador qualquer.
+
+
+### Cada um o seu quadrado (separando as obrigações)
+
 Antes de começar a escrever em JavaScript é bom saber separar as obrigações de seu código.
 
 O __JavaScript__ será encarregado do comportamento da página, da interação com o usuário, dos eventos possíveis (click, 
@@ -26,12 +46,9 @@ Organizando o raciocínio, temos:
 
 
 
-Aonde colocar o Javascript ?
----
+### Aonde colocar o Javascript ?
 
 O ideal é escrevermos o código JavaScript em um arquivo texto com extensão `.js` e incluí-lo no arquivo HTML dessa forma:
-index.html
-
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -47,9 +64,14 @@ index.html
 </html>
 {% endhighlight %}
 
-As abordagem acima sofre de um pequeno inconveniente: a ordem em que o arquivo é lido e executado pelo browser. Os navegadores executam arquivos JavaScript assim que o código é baixado e depois continua a reenderizar o HTML restante. Isso significa que se o seu código depender do HTML, e acredite vai depender, ele não conseguirá executar corretamente.
+As abordagem acima sofre de um pequeno inconveniente: a ordem em que o arquivo é lido e executado pelo browser. Os 
+navegadores executam arquivos JavaScript assim que o código é baixado e depois continua a reenderizar o HTML restante. 
+Isso significa que se o seu código depender do HTML, e acredite vai depender, ele não conseguirá executar corretamente.
 
-Atualmente há algumas saídas para este problema, a abordagem mais utilizada é a boa e velha dica: Coloque o script no final do HTML !!!, pronto resolvido. Isso garante que seu JavaScript será executado após todo o HTML ter sido carregado e de quebra sua página obtem um ganho de performance. Em outra matéria, falarei mais sobre essa questão. Por hora vejamos como ficou nosso HTML:
+Atualmente há algumas saídas para este problema, a abordagem mais utilizada é a boa e velha dica: coloque o script no 
+final do HTML !!!, pronto resolvido. Isso garante que seu JavaScript será executado após todo o HTML ter sido carregado
+ e de quebra sua página obtém um ganho de performance. Em outra matéria, falarei mais sobre essa questão. Por hora,
+vejamos como ficou nosso HTML:
 
 
 {% highlight html %}
@@ -66,6 +88,10 @@ Atualmente há algumas saídas para este problema, a abordagem mais utilizada é
 </html>
 {% endhighlight %}
 
-Colocamos o código JavaScript no final do HTML.
+__Colocamos o código JavaScript no final do HTML__.
 
-Agora, que tal dar um olhada na [sintaxe de JavaScript](/javascript/sintaxe-basica/)?
+
+Leia em seguida
+---
+
+Que tal dar um olhada na [sintaxe de JavaScript](/javascript/sintaxe-basica/)?

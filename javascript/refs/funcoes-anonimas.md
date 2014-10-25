@@ -13,8 +13,9 @@ Em JavaScript podemos escrever funções naturalmente como o exemplo abaixo:
         // código
     }
 
-Porém, essa forma não é a mais usual, o mais comum é atribuírmos a função a uma variável.Essa técnica recebe o nome de
-__função anônima__, repare que a função não possui nome algum, veja código abaixo:
+Porém, essa forma não é a mais usual, o mais comum é atribuírmos a função a uma variável.
+
+Essa técnica recebe o nome de __função anônima__, repare que a função não possui nome algum, veja código abaixo:
 
     var foo = function() {
         // código
