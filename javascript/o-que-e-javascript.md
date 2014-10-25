@@ -85,26 +85,7 @@ Obviamente, tendo em vista que o código fica exposto, não criaremos nenhum __c
 explorado por um hacker causando danos a aplicação).
 
 
+Leia em seguida
+---
 
-### Onde executar (rodar) JavaScript
-
-Você pode executar JavaScript do lado do cliente (__front end__) em um navegador web, dê preferência ao 
-[FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou google chrome.
-
-Também pode-rá executá-lo do lado do servidor (__back end__) em linha de comando através do 
-[node.js](http://nodejs.org/ "link-externo").
-
-
-
-### O primeiro script a gente nunca esquece
-
-Crie um arquivo texto e salve com o nome `index.html`. Agora insira nele o seguinte código:
-
-{% highlight javascript %}
-var foo = "Eu sou javascript";
-alert(foo);
-{% endhighlight %}
-
-Abra o arquivo em um navegador qualquer.
-
-Agora, que tal descobrir o que você precisa para [iniciar em JavaScript](/javascript/iniciando-com-javascript/)?
+Que tal descobrir o que você precisa para [iniciar em JavaScript](/javascript/iniciando-com-javascript/)?
