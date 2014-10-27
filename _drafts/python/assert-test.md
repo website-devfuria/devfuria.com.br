@@ -18,13 +18,13 @@ def test(expression1, expression2):
 {% endhighlight %}
 
 {% highlight python %}
+# http://code.google.com/edu/languages/google-python-class/
 def test(got, expected):
   if got == expected:
     prefix = ' OK '
   else:
     prefix = '  X '
-
-  print '%s got: %s expected: %s' % (prefix, repr(got), repr(expected))
+  print("%s got: %s expected: %s" % (prefix, repr(got), repr(expected)))
 {% endhighlight %}
 
 
