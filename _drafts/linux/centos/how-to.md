@@ -45,9 +45,6 @@ Habilitando a biblioteca libcrypto:
     #su -c "ln -s /lib/libcrypto.so.0.9.8b /lib/libcrypto.so"
 
 
-Desabilite o Selinux:
-
-
 Realize o Download do HPLIP:
 
     # http://sourceforge.net/projects/hplip/files/hplip/3.13.9/hplip-3.13.9.tar.gz/download?use_mirror=ufpr

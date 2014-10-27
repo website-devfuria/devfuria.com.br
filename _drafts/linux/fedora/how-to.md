@@ -1,30 +1,3 @@
-Como desabilitar SElinux0
--------------------------
-
-Procure o arquivo "config" na pasta "/etc/selinux/"
-
-	# nano /etc/selinux/config
-
-Altere a linha SELINUX=enable para SELINUX=disabled
-
-Reinicie o linux.
-
-Teste executando:
-
-	# /usr/sbin/getenforce
-	Disabled
-
-Veja mais no artigo abaixo:
-
-http://docs.fedoraproject.org/en-US/Fedora/13/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Working_with_SELinux-Enabling_and_Disabling_SELinux.html
-
-
-
-
-Como descobrir qual é a versão do FEDORA
-----------------------------------------
-
-	# cat /etc/*release
 
 
 
@@ -101,3 +74,28 @@ http://www.abouthack.com/articles/linux/playing-mp3-in-fedora-17.html
 
 
 
+Referências sobre fedora
+-----------------
+
+
+http://www.devin.com.br/gerenciador-de-pacotes-yum/
+
+http://fedora.wiki.br/wiki/FAQ_do_Fedora_10
+
+http://fedoraproject.org/wiki/Administration_Guide_Draft/Apache
+
+http://forums.fedoraforum.org/showthread.php?t=184564
+
+http://www.my-guides.net/en/guides/linux/346-fedora-17-post-installation-guide
+
+http://www.unixmen.com/201205-howto-install-lamp-in-fedora/
+
+http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-fedora-11-lamp
+
+
+
+Tudo sobre fedora
+-----------------
+
+http://fedora.wiki.br/wiki/FAQ_do_Fedora_10
+http://fedoraproject.org/wiki/Administration_Guide_Draft/Apache
