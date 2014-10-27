@@ -40,7 +40,6 @@ Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](/li
     <a href="/linux/gnome-screenshot/" class="list-group-item">Como tirar um screenshot (CentOS)</a>
     <a href="/linux/como-saber-qual-versao-do-linux-esta-instalada/" class="list-group-item">Como saber qual versão do Linux está instalada</a>
     <a href="/linux/redirecionar-a-saida-do-terminal-para-arquivo/" class="list-group-item">Como redirecionar as saida do terminal (mysql) para um arquivo</a>
-    <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
 
@@ -49,7 +48,6 @@ Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](/li
 
 <div class="list-group">
     <a href="/linux/imagem-cd-iso/" class="list-group-item">O que é uma "imagem de CD"?</a>
-    <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
 
@@ -57,10 +55,10 @@ Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](/li
 ### Error - Resolvendo erros e problemas
 
 <div class="list-group">
+    <a href="/linux/net-registered-protocol-family-2/" class="list-group-item">Resolvendo o erro "NET Registered protocol family 2" no Virtual Box</a>
     <a href="/linux/problemas-instalacao-debian-7-5/" class="list-group-item">Problemas na instalação do Debian 7.5 (netinst)</a>
     <a href="/linux/vbox-building-the-opengl-support-module/" class="list-group-item">Resolvendo o erro "Building the OpenGL support module"</a>
     <a href="/linux/vbox-headers-for-the-current-running-kernel-were-not-found/" class="list-group-item">Resolvendo o erro "headers for the current running kernel were not found"</a>
-    <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
 
