@@ -33,6 +33,7 @@ Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](/li
 ### Know how to - pequeno guia de "saber como fazer"
 
 <div class="list-group">
+    <a href="/linux/como-desabilitar-selinux/" class="list-group-item">Como desabilitar SElinux0 (Fedora e CentOS)</a>
     <a href="/linux/como-dar-permissao-de-execucao/" class="list-group-item">Como dar permissão de execução em um arquivo no Linux</a>
     <a href="/linux/como-acessar-servidor-remotamente/" class="list-group-item">SSH - acessando o Linux remotamente</a>
     <a href="/linux/vbox-guest-additions/" class="list-group-item">Como instalar o GuestAdditions (CentOS)</a>
