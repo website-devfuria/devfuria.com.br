@@ -5,8 +5,138 @@ description: Aprenda sobre operadores e fatiamento de sequências em Python
 menu:        python-artigos
 ---
 
+Contamos o índice a partir do zero.
 
-### Operações com sequências
+{% highlight python %}
++---+---+---+---+---+---+
+| p | y | t | h | o | n |
++---+---+---+---+---+---+
+  0   1   2   3   4   5
+{% endhighlight %}
+
+A segunda coisa que precisamos saber sobre o fatiamento de sequências é um pouco óbvio mas vale reforçar:
+
+-   ao fatiar uma __string__ teremos como resultado uma nova string fatiada:
+    
+    `"python"[:3]` retornará `"pyt"`
+
+-   ao fatiar um __lista__ teremos como resultado uma nova lista com os "pedaços":
+  
+    `["p", "y", "t", "h", "o", "n"][:3]` retornará `["p", "y", "t"]`.
+
+Veja mais exemplos:
+
+{% highlight python %}
+p = "python"
+p[0] # 'p'
+p[1] # 'y'
+p[2] # 't'
+p[3] # 'h'
+p[4] # 'o'
+p[5] # 'n'
+{% endhighlight %}
+
+{% highlight python %}
+p = "python"
+p[-1] # 'n'
+p[-2] # 'o'
+p[-3] # 'h'
+p[-4] # 't'
+p[-5] # 'y'
+p[-6] # 'p'
+{% endhighlight %}
+
+Curiosidade, `p[-0]` é igual a `p[0]`, ambos resultam em `'p'`.
+
+Operador `[a:b]`, de `a` (inclusive) até `b`(exclusive):
+
+{% highlight python %}
+p = "python"
+p[0:0] # ''
+p[0:1] # 'p'
+p[1:2] # 'y'
+p[2:3] # 't'
+p[3:4] # 'h'
+p[4:5] # 'o'
+p[5:6] # 'n'
+p[6:6] # ''
+{% endhighlight %}
+
+Operador `[:b]`, até `b` (exclusive):
+
+{% highlight python %}
+p = "python"
+p[:1] # 'p'
+p[:2] # 'py'
+p[:3] # 'pyt'
+p[:4] # 'pyth'
+p[:5] # 'pytho'
+p[:6] # 'python'
+{% endhighlight %}
+
+...equivalente a:
+
+{% highlight python %}
+p = "python"
+p[0:0] # ''
+p[0:1] # 'p'
+p[0:2] # 'py'
+p[0:3] # 'pyt'
+p[0:4] # 'pyth'
+p[0:5] # 'pytho'
+p[0:6] # 'python'
+{% endhighlight %}
+
+Operador `[a:]`, a partir de `a`(inclusive):
+
+{% highlight python %}
+p = "python"
+p[:]  # 'python'
+p[1:] # 'ython'
+p[2:] # 'thon'
+p[3:] # 'hon'
+p[4:] # 'on'
+p[5:] # 'n'
+p[6:] # ''
+{% endhighlight %}
+
+{% highlight python %}
+p = "python"
+p[-6:] # 'python'
+p[-5:] # 'ython'
+p[-4:] # 'thon'
+p[-3:] # 'hon'
+p[-2:] # 'on'
+p[-1:] # 'n'
+{% endhighlight %}
+
+O trecho abaixo é para ilustrar como vários caminhos chegam no mesmo lugar.
+
+{% highlight python %}
+p = ["p", "y", "t", "h", "o", "n"] 
+(p == p[0:6]) # True
+(p == p[:6])  # True
+(p == p[:])   # True
+{% endhighlight %}
+
+...ou seja, se aplicarmos um "print" nas formas acima, o resultado será exatamente o mesmo, veja:
+
+{% highlight python %}
+print p       // ['p', 'y', 't', 'h', 'o', 'n']
+print p[0:6]  // ['p', 'y', 't', 'h', 'o', 'n']
+print p[:6]   // ['p', 'y', 't', 'h', 'o', 'n']
+print p[:]    // ['p', 'y', 't', 'h', 'o', 'n']
+{% endhighlight %}
+
+Operador `[:]` representa o total da lista (ou string).
+
+E há ainda o operador `[a:b:n]` que representa de `n` em `n` itens.
+
+
+
+
+Operações com sequências
+---
 
 Sequências são coleções ordenadas embutidas: strings, listas, tuplas e buffers.
 
@@ -43,45 +173,6 @@ Sequências são coleções ordenadas embutidas: strings, listas, tuplas e buffe
 </table>
 
 
-
-### Fatiamento de sequências (slicing)
-
-
-<table>
-    <thead>
-        <tr>
-            <th>Operadores</th>
-            <th>Descrição</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>s[a:b]</code></td>
-            <td>cópia de <code>a</code> (inclusive) até <code>b</code>(exclusive)</td>
-        </tr>
-        <tr>
-            <td><code>s[a:]</code></td>
-            <td>cópia <code>a</code> partir de <code>a</code>(inclusive)</td>
-        </tr>
-        <tr>
-            <td><code>s[:b]</code></td>
-            <td>+ <code></code> cópia até <code>b</code>(exclusive)</td>
-        </tr>
-        <tr>
-            <td><code>s[:]</code></td>
-            <td>cópia total de <code>s</code></td>
-        </tr>
-        <tr>
-            <td><code>s[a:b:n]</code></td>
-            <td>cópia de <code>n</code> em <code>n</code>itens</td>
-        </tr>
-    </tbody>
-</table>
- 
-
-![figura](python-fatiamento.png)
-
-
 ### Atribuição em fatias:
 
 <table>
@@ -94,7 +185,7 @@ Sequências são coleções ordenadas embutidas: strings, listas, tuplas e buffe
     <tbody>
         <tr>
             <td><code>s[2:5] = [4,3,2,1]</code></td>
-            <td>álida apenas em sequências mutáveis</td>
+            <td>válida apenas em sequências mutáveis</td>
         </tr>
     </tbody>
 </table>
