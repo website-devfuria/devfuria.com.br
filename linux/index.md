@@ -30,38 +30,24 @@ Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](/li
 
 
 
-### Know how to - pequeno guia de "saber como fazer"
+### Artigos
 
 <div class="list-group">
     <a href="/linux/como-desabilitar-selinux/" class="list-group-item">Como desabilitar SElinux0 (Fedora e CentOS)</a>
     <a href="/linux/como-dar-permissao-de-execucao/" class="list-group-item">Como dar permissão de execução em um arquivo no Linux</a>
     <a href="/linux/como-acessar-servidor-remotamente/" class="list-group-item">SSH - acessando o Linux remotamente</a>
-    <a href="/linux/vbox-guest-additions/" class="list-group-item">Como instalar o GuestAdditions (CentOS)</a>
-    <a href="/linux/vbox-compartilhando-pastas/" class="list-group-item">Compartilhando pastas no Virtual Box</a>
     <a href="/linux/gnome-screenshot/" class="list-group-item">Como tirar um screenshot (CentOS)</a>
     <a href="/linux/como-saber-qual-versao-do-linux-esta-instalada/" class="list-group-item">Como saber qual versão do Linux está instalada</a>
     <a href="/linux/redirecionar-a-saida-do-terminal-para-arquivo/" class="list-group-item">Como redirecionar as saida do terminal (mysql) para um arquivo</a>
-</div> 
-
-
-
-### What is this - para esclarecer dúvidas frequentes
-
-<div class="list-group">
     <a href="/linux/imagem-cd-iso/" class="list-group-item">O que é uma "imagem de CD"?</a>
-</div> 
-
-
-
-### Error - Resolvendo erros e problemas
-
-<div class="list-group">
-    <a href="/linux/net-registered-protocol-family-2/" class="list-group-item">Resolvendo o erro "NET Registered protocol family 2" no Virtual Box</a>
     <a href="/linux/problemas-instalacao-debian-7-5/" class="list-group-item">Problemas na instalação do Debian 7.5 (netinst)</a>
-    <a href="/linux/vbox-building-the-opengl-support-module/" class="list-group-item">Resolvendo o erro "Building the OpenGL support module"</a>
-    <a href="/linux/vbox-headers-for-the-current-running-kernel-were-not-found/" class="list-group-item">Resolvendo o erro "headers for the current running kernel were not found"</a>
 </div> 
 
+
+
+### Série sobre o Virtual Box
+
+{% include /menus/linux-vbox.html %}
 
 
 ### Livros sobre Linux - para iniciantes

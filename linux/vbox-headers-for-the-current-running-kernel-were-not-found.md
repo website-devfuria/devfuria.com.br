@@ -1,7 +1,8 @@
 ---
-layout: grid12-article
-title:  Resolvendo o erro "headers for the current running kernel were not found"
-description: fix error "headers for the current running kernel were not found"
+layout:      grid93-article
+title:       Resolvendo o erro "headers for the current running kernel were not found"
+description: Resolvendo o erro fix error "headers for the current running kernel were not found"
+menu:        linux-vbox
 ---
 
 Ao instalar o __Guest Additions__ para __Virtual Box__ no Linux, as vezes, nos esquecemos de instalar os headers do kernel.
@@ -28,10 +29,3 @@ E instale o kernel-devel
 Aproveite para instalar o gcc
 
 Agora tente reinstalar o __GuestAdditions__.
-
-
-Veja também
----
-
-- [Resolvendo o erro "Building the OpenGL support module"](/linux/vbox-building-the-opengl-support-module/ "Resolvendo o erro 'Building the OpenGL support module'")
-- [Como instalar o GuestAdditions (CentOS)](/linux/vbox-guest-additions/ "Como instalar o GuestAdditions via console (CentOS)")
