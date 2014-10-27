@@ -10,7 +10,7 @@ Você precisa acessar um servidor remotamente? utilize o __SSH__.
 > Ele se baseia no uso de criptografia assimétrica para criar um túnel seguro onde são transmitidos os dados, garantindo a
 > segurança mesmo em casos onde a transmissão pode ser interceptada, como no caso de uma rede wireless sem encriptação.
 >
-> (http://www.hardware.com.br/tutoriais/ssh-iniciantes/)
+> Fonte: Guia do Hardware - SSH na prática, para iniciantes
 
 
 
@@ -31,9 +31,8 @@ Instalando no Ubuntu
 
 
 
-Referências
----
+### Fontes
 
-- [www.hardware.com.br - SSH na prática, para iniciantes](http://www.hardware.com.br/tutoriais/ssh-iniciantes/"link-externo")
-- [www.hardware.com.br - Dominando o SSH](http://www.hardware.com.br/tutoriais/dominando-ssh/pagina2.html"link-externo")
-- [www.hardware.com.br - Guia de Acesso Remoto (SSH, NX Server, VNC e WTS)](http://www.hardware.com.br/guias/acesso-remoto/"link-externo")
+- [Guia do Hardware - SSH na prática, para iniciantes](http://www.hardware.com.br/tutoriais/ssh-iniciantes/ "link-externo")
+- [Guia do Hardware - Dominando o SSH](http://www.hardware.com.br/tutoriais/dominando-ssh/pagina2.html "link-externo")
+- [Guia do Hardware - Guia de Acesso Remoto (SSH, NX Server, VNC e WTS)](http://www.hardware.com.br/guias/acesso-remoto/ "link-externo")
