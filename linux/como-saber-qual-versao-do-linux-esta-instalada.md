@@ -19,8 +19,22 @@ No CentOS (Red Hat) também funciona o comando abaixo
 
 O retorno deve ser algo parecido com `CentOS release 6.5 (Final)`.
 
+
+
+### Como descobrir a arquitetura ?
+
 Um retorno mais "completo" que inclui a arquitetura seria `uname -a`
 
+Possíveis retornos para 32 bits são:
+
+    i386
+    i486
+    i586
+    i686 
+
+E para 64 bits:
+
+    x86_64 
 
 ### Fonte
 
