@@ -5,7 +5,7 @@ description: O básico de lista em Python
 menu:        python-artigos
 ---
 
-Primeiro exemplo:
+Abaixo temos um exemplo de uma lista:
 
 {% highlight python %}
 animals = ["pangolin", "cassowary", "sloth", "dog"];
@@ -15,29 +15,21 @@ animals[2]   # 'sloth'
 animals[3]   # 'dog'
 {% endhighlight %}
 
+Contamos o índice da lista a partir do zero, veja:
+
+{% highlight python %}
++-------------+-------------+-------------+-------------+-------------+
+| "pangolin"  | "cassowary" |   "sloth"   |    "dog"    |lanca um erro|
++-------------+-------------+-------------+-------------+-------------+
+      0              1             2              3            4
+{% endhighlight %}
+
 Ao acessar um índice inexistente recebemos um erro.
 
 {% highlight python %}animals[4]   # IndexError: list index out of range{% endhighlight %}
 
-Segundo exemplo:
-
-{% highlight python %}
-+---+---+---+---+---+---+
-| p | y | t | h | o | n |
-+---+---+---+---+---+---+
-  0   1   2   3   4   5
-{% endhighlight %}
-
-{% highlight python %}
-"python"[0] # 'p'
-"python"[1] # 'y'
-"python"[2] # 't'
-"python"[3] # 'h'
-"python"[4] # 'o'
-"python"[5] # 'n'
-{% endhighlight %}
-
-Leia mais sobre [fatiamento de sequencias](../sequencias-fatiamento/ "Python - Sequencias").
+Podemos fatiar (leia-se acessar) um lista de diversas formas, veja a matéria sobre
+[fatiamento de sequencias](../sequencias-fatiamento/ "Python - Sequencias").
 
 
 
@@ -98,9 +90,8 @@ print o # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 
-Funções nativas p/ listas
+Funções nativas para listas
 ---
-
 
 ### append()
 
