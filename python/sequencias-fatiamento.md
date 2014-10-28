@@ -5,7 +5,11 @@ description: Aprenda sobre operadores e fatiamento de sequências em Python
 menu:        python-artigos
 ---
 
-Contamos o índice a partir do zero.
+O que é uma sequência? 
+
+Sequências são coleções ordenadas embutidas: strings, [listas](/python/listas/), tuplas e buffers.
+
+Contamos o índice de determinada sequência a partir do zero.
 
 {% highlight python %}
 +---+---+---+---+---+---+
@@ -14,7 +18,7 @@ Contamos o índice a partir do zero.
   0   1   2   3   4   5
 {% endhighlight %}
 
-A segunda coisa que precisamos saber sobre o fatiamento de sequências é um pouco óbvio mas vale reforçar:
+Outra coisa que precisamos saber sobre o fatiamento de sequências é um pouco óbvio mas vale reforçar:
 
 -   ao fatiar uma __string__ teremos como resultado uma nova string fatiada:
     
@@ -48,7 +52,7 @@ p[-6] # 'p'
 
 Curiosidade, `p[-0]` é igual a `p[0]`, ambos resultam em `'p'`.
 
-Operador `[a:b]`, de `a` (inclusive) até `b`(exclusive):
+O operador `[a:b]` possui o comprimento de `a` (inclusive) até `b`(exclusive):
 
 {% highlight python %}
 p = "python"
@@ -62,7 +66,7 @@ p[5:6] # 'n'
 p[6:6] # ''
 {% endhighlight %}
 
-Operador `[:b]`, até `b` (exclusive):
+O operador `[:b]` possui o comprimento até `b` (exclusive)":
 
 {% highlight python %}
 p = "python"
@@ -87,7 +91,7 @@ p[0:5] # 'pytho'
 p[0:6] # 'python'
 {% endhighlight %}
 
-Operador `[a:]`, a partir de `a`(inclusive):
+O operador `[a:]` possui o comprimento a partir de `a`(inclusive):
 
 {% highlight python %}
 p = "python"
@@ -98,16 +102,6 @@ p[3:] # 'hon'
 p[4:] # 'on'
 p[5:] # 'n'
 p[6:] # ''
-{% endhighlight %}
-
-{% highlight python %}
-p = "python"
-p[-6:] # 'python'
-p[-5:] # 'ython'
-p[-4:] # 'thon'
-p[-3:] # 'hon'
-p[-2:] # 'on'
-p[-1:] # 'n'
 {% endhighlight %}
 
 O trecho abaixo é para ilustrar como vários caminhos chegam no mesmo lugar.
@@ -128,17 +122,14 @@ print p[:6]   // ['p', 'y', 't', 'h', 'o', 'n']
 print p[:]    // ['p', 'y', 't', 'h', 'o', 'n']
 {% endhighlight %}
 
-Operador `[:]` representa o total da lista (ou string).
+O operador `[:]` representa o total da lista (ou string).
 
 E há ainda o operador `[a:b:n]` que representa de `n` em `n` itens.
 
 
 
 
-Operações com sequências
----
-
-Sequências são coleções ordenadas embutidas: strings, listas, tuplas e buffers.
+### Operações com sequências
 
 
 <table>
@@ -209,11 +200,15 @@ Sequências são coleções ordenadas embutidas: strings, listas, tuplas e buffe
         </tr>
         <tr>
             <td><code>min(s)</code></td>
-            <td><code>max(s)</code> valores mínimo e máximo contido em <code>s</code></td>
+            <td>valores mínimo contido em <code>s</code></td>
+        </tr>
+        <tr>
+            <td><code>max(s)</code></td>
+            <td>valores máximo contido em <code>s</code></td>
         </tr>
         <tr>
             <td><code>sorted(s)</code></td>
-            <td>devolve uma lista com itens de s em ordem ascendente <code>sorted(s, cmp=None, key=None reversed=False)</code></td>
+            <td>devolve uma lista com itens de s em ordem ascendente</td>
         </tr>
         <tr>
             <td><code>reversed(s)</code></td>
@@ -237,15 +232,15 @@ Algumas funções com strings
     <tbody>
         <tr>
             <td><code>chr(n)</code></td>
-            <td>retorna uma string com um caractere de 8-bits cujo código é n</td>
+            <td>retorna uma string com um caractere de 8-bits cujo código é <code>n</code></td>
         </tr>
         <tr>
             <td><code>unichr(n)</code></td>
-            <td>retorna uma string com um caractere Unicode cujo código é n</td>
+            <td>retorna uma string com um caractere Unicode cujo código é <code>n</code></td>
         </tr>
         <tr>
             <td><code>ord(c)</code></td>
-            <td>retorna o código numérico do caractere c (pode ser Unicode)</td>
+            <td>retorna o código numérico do caractere <code>c</code> (pode ser Unicode)</td>
         </tr>
         <tr>
             <td><code>repr(x)</code></td>
@@ -253,7 +248,7 @@ Algumas funções com strings
         </tr>
         <tr>
             <td><code>len(s)</code></td>
-            <td>número de bytes da string</td>
+            <td>número de bytes da string <code>s</code></td>
         </tr>
     </tbody>
 </table>
