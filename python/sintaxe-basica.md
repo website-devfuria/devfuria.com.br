@@ -6,7 +6,7 @@ description: Um guia rápido e básico da linguagem Python.
 
 Este é um pequeno guia sobre a sintaxe de Python.
 
-Recomendado para quem nunca viu Python.
+Recomendado para quem está começando a aprender sobre Python ou para quem nunca viu Python.
 
 
 
