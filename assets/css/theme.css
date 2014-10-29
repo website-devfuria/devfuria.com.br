@@ -161,9 +161,8 @@ canvas, .canvas {
 
 a.link-externo {
   color: #c93900;
-  margin-left: 5px;
-  padding-left: 15px;
-  background: url(/assets/imgs/icon-external-link.gif) center left no-repeat;
+  padding-right: 15px;
+  background: url(/assets/imgs/icon-external-link.gif) right top no-repeat;
 }
 
 a.list-group-item:first-child {
