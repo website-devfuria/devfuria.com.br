@@ -134,8 +134,8 @@ Se você acabou de instalar o git, talvez tenha se esquecido das configurações
 
 Configure seu email e nome que serão exebidos em cada commit.
 
-    $ git config --global user.name "Seu nome para exibição"
-    $ git config --global user.email "seu-email@email.com"
+    git config --global user.name "Seu nome para exibição"
+    git config --global user.email "seu-email@email.com"
 
 
 
