@@ -13,12 +13,10 @@ Seja bem vindo(a) a seção Git!
 > (Site oficial)
 
 
-### Como começar
 
-Para treinar os comandos no terminal experimente o [curso (gratuito) da Code Schooll](https://try.github.io/levels/1/challenges/1 "link-externo").
+### Para começar a aprender sobre o git
 
-Para entender sobre o __conceito de branches__ experimente o site [Learn Git Branching](http://pcottle.github.io/learnGitBranching/ "link-externo")
-
+Leia o artigo [Iniciando com o git](/git/iniciando-com-git/).
 
 
 ### Artigos
@@ -29,6 +27,14 @@ Para entender sobre o __conceito de branches__ experimente o site [Learn Git Bra
     <a href="/git/netrc-nao-pedir-senha/" class="list-group-item">Para não ter que ficar redigitando a senha</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
+
+
+
+### Onde praticar ?
+
+Para treinar os comandos no terminal experimente o [curso (gratuito) da Code Schooll](https://try.github.io/levels/1/challenges/1 "link-externo").
+
+Para praticar o __conceito de branches__ experimente o site [Learn Git Branching](http://pcottle.github.io/learnGitBranching/ "link-externo")
 
 
 
