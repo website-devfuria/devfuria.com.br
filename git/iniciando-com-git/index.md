@@ -8,12 +8,22 @@ Esta é uma introdução prática ao Git e GitHub, indicado para quem está dand
 
 [Git]( "link-externo") é um sistema distribuído de controle de versão de código.
 
-[GitHub]( "link-externo") é o local onde você hospeda o seu git na web. Você não está preso ao GitHub, existe um 
-infinidade de outros "hopedeiros", alguns pagos outros gratuitos. O GitHub é gratuíto para projetos abertos e pago para 
+[GitHub]( "link-externo") é o local onde você hospeda o seu git na web. 
+
+Você não está preso ao GitHub, existe um 
+infinidade de outros "hospedeiros", alguns pagos outros gratuitos. O GitHub é gratuíto para projetos abertos e pago para 
 projetos privados.
 
 Antes de iniciar com o git, seria bom se você entendesse o conceito de __versionamento de código__, mas talvez você 
 esteja justamente experimentando o Git para poder entender o que é versionamento, então vamos lá...
+
+Neste artigos nós veremos como:
+
+- Criar um repositório localmente
+- Adicionar (add) e comitar (commit)
+- Criar um repositório no GitHub
+- Conectando ambos os repositórios (o local e o servidor)
+- Sincronizar ambos os repositórios
 
 
 ### Criando um repositório local
@@ -41,6 +51,7 @@ O resultado deve ser parecido com isto...
 "Nada para comitar"... bom, então vamos inserir um arquivo e "comitar".
 
 
+
 ### Adicionado e comitando
 
 Considerando que você já criou o seu repositório git e está na pasta do repositório.
@@ -62,6 +73,7 @@ Veja os comandos:
     git commit -m "my first commit"
 
 
+
 ### Criando um repositório no GitHub
 
 Primeiro, crie um conta no GitHub. 
@@ -77,11 +89,12 @@ Por enquanto, ignore as outras opções. Depois, com calma, você mesmo aprender
 
 Como seu repositório está vazio, o GitHub lhe dará algumas dicas, sua tela deve parecer-se com esta:
 
-![](create-new.png)
+![Imagem ilustrando a criação de um novo repositório no GitHub](create-new.png "Imagem ilustrando a criação de um novo repositório no GitHub")
 
 Apenas anote a URL exibida no campo __HTTP__, vamos precisar dela daqui a pouco.
 
 Agora, temos um repositório no GitHub e um localmente, então vamos conectá-los.
+
 
 
 ### Conectando ambos os repositórios
@@ -104,8 +117,7 @@ Para testar, execute `git remote -v`, sua tela deve ser parecida com a seguinte:
 
 
 
-
-### Sincronizando o repositório no GitHub
+### Sincronizando os repositórios
 
 Você já criou um repositório local e outro no GitHub.
 
@@ -125,4 +137,14 @@ Lembrando que __origin__ é o apelido para seu repositório na web e __master__ 
 Se tudo deu certo, acesse novamente (ou atualize) a página de seu repositório, você deve estar vendo algo parecido
 com a figura abaixo.
 
-![](repo.png)
+![Imagem ilustrando um repositório no GitHub](repo.png "Imagem ilustrando um repositório no GitHub")
+
+Este [repositório](https://github.com/devfuria/foo "link-externo") existe de verdade!
+
+Eu criei ele para você poder treinar, bagunçar, testar, brincar, fazer o que você quiser com ele,
+sem a preocupação de acertar. 
+
+Só não pode não fazer nada.
+
+Faça um __fork__ do projeto, crie um arquivo de texto qualquer com alguma mensagem tipo "oi, me chamo... e passei por aqui"
+e envie através de um __pull request__.

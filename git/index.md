@@ -10,6 +10,7 @@ Seja bem vindo(a) a seção Git!
 
 > Git é um sistema distribuído de controle de versão livre e de código aberto projetado para lidar com tudo, desde 
 > pequenos a grandes projetos com velocidade e eficiência.
+>
 > (Site oficial)
 
 
