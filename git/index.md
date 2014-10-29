@@ -17,16 +17,24 @@ Seja bem vindo(a) a seção Git!
 
 ### Para começar a aprender sobre o git
 
+O git é famoso por ter sua curva de aprendizado acentuada.
+
+Eu preparei um artigo extremamente prático que vai direto ao ponto, espero com isso ajudar a amenizar sua curva de aprendizado.
+
 Leia o artigo [Iniciando com o git](/git/iniciando-com-git/).
+
+
+
+### Aprenda como instalar o git
+
+Lei o artigo [Instalando o git](/linux/cookbook/git/) na seção Linux e descubra como instalar o git no Linux, Windows ou Mac.
 
 
 ### Artigos
 
 <div class="list-group">
-    <a href="/linux/cookbook/git/" class="list-group-item">Instalando o git</a>
     <a href="/git/dicas-configuracao/" class="list-group-item">Dicas de configuração do git</a>
     <a href="/git/netrc-nao-pedir-senha/" class="list-group-item">Para não ter que ficar redigitando a senha</a>
-    <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
 

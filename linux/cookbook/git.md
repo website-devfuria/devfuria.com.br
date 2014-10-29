@@ -4,24 +4,32 @@ title:       Instalando o git
 description: Aprenda como instalar o git no Linux
 ---
 
+No Linux podemos instalar o git através dos pacotes do sistema.
 
-### FEDORA 17+
+Na família HadHat (Fedora, CentOS, etc...) execute:
 
-	# yum install git git-gui
+	# yum install git-core
 
-### UBUNTU 12+
+Na família Debian (Ubuntu) execute:
 
-	# apt-get install git-core git-gui gitk
+    # apt-get install git
 
-### Debian Whezzy
+Você também pode compilar os fontes, leia o capítulo 
+[Primeiros passos - Instalando Git](http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git "link-externo")
+do livro Pro Git para saber como.
 
-    # apt-get install git-core
+Neste mesmo capítulo você encontrará as receitas para instalação no __Windows__ e no __Mac__.
+ 
+Talvez você queira aproveitar e instalar os utilitários de interface __gitk__ e __git gui__, basta executar:
+
+    # yum install gitk git-gui        // hadhat
+    # apt-get install gitk git-gui    // debian
 
 
-
-### Compilando os fontes
+Veja tamém
 ---
 
-Como instalar o git compilando os fontes (versão mais atual):
-- [Site oficial - Primeiros-passos-Instalando-Git](http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git "link-externo")
+Que tal aprender um pouco mais sobre o git?
+
+Leia a nossa [seção sobre git](/git/).
 

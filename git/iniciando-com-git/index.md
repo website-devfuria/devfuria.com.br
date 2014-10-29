@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Iniciando com o git
-description: 
+description: Aprenda a trabalhar com git e github, artigo introdutório bastante prático e que promete reduzir a curva de aprendizado da ferramenta.
 ---
 
 Esta é uma introdução prática ao Git e GitHub, indicado para quem está dando os primeiros passos com o Git.
@@ -49,7 +49,6 @@ O resultado deve ser parecido com isto...
     nothing to commit (create/copy files and use "git add" to track)
 
 "Nada para comitar"... bom, então vamos inserir um arquivo e "comitar".
-
 
 
 ### Adicionado e comitando
@@ -131,6 +130,14 @@ Agora só falta enviar as informações do repositório local para o repositóri
 
 Lembrando que __origin__ é o apelido para seu repositório na web e __master__ é o seu branch principal.
 
+Se você acabou de instalar o git, talvez tenha se esquecido das configurações globais.
+
+Configure seu email e nome que serão exebidos em cada commit.
+
+    $ git config --global user.name "Seu nome para exibição"
+    $ git config --global user.email "seu-email@email.com"
+
+
 
 ### Fechando a conta
 
@@ -144,7 +151,5 @@ Este [repositório](https://github.com/devfuria/foo "link-externo") existe de ve
 Eu criei ele para você poder treinar, bagunçar, testar, brincar, fazer o que você quiser com ele,
 sem a preocupação de acertar. 
 
-Só não pode não fazer nada.
-
-Faça um __fork__ do projeto, crie um arquivo de texto qualquer com alguma mensagem tipo "oi, me chamo... e passei por aqui"
+Só não pode não fazer nada, faça um __fork__ do projeto, crie um arquivo de texto qualquer com alguma mensagem tipo "oi, me chamo... e passei por aqui"
 e envie através de um __pull request__.
