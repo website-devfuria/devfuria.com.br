@@ -4,24 +4,43 @@ title:       Configurando o git com o arquivo .netrc
 description: Aprenda a configurar o git para não pedir senha com o arquivo netrc
 ---
 
-Essa matéria mata "dois coelhos com uma cajada só":
+Essa matéria "mata dois coelhos com uma cajada só":
 
 - Como configurar os repositórios no [google code](https://code.google.com/ "link-externo") e também
 - Como configurar o [GitHub](https://github.com/ "link-externo") para não ficar pedindo senha a cada push/pull
 
-Crie um arquivo oculto (inicia-se com ponto) na pasta `/home/seu-usuario` com o seguinte nome:
+
+
+### Configurando
+
+Crie um arquivo oculto na pasta `/home/seu-usuario` com o seguinte nome:
 
     .netrc
 
+Arquivos ocultos, no Linux, iniciam-se com o sinal `.`(ponto).
 
-Para configurar o __GitHub__:
+Repare que não é na pasta `home/`, nem na pasta `home/seu-usuario/documents`, mas sim na pasta `home/seu-usuario/`.
+
+Se for configurar o __GitHub__, insira no arquivo o seguinte conteúdo:
 
     machine github.com login seu-login-no-github password sua-senha-no-github
 
 
-Para configurar  no __google-code__:
+Se for configurar o __google-code__ insira o seguinte conteúdo:
 
     machine code.google.com login seu-login-no-google-code password sua-senha-no-google-code
+
+
+
+### Testando
+
+Para __testar__ se está funcionando, basta "comitar" algumas alterações e aplicar um __push__, exemplo:
+
+    git add .
+    git commit -m "minhas alterações"
+    git push origin master
+
+Se deu certo, o git não pediu a senha para realizar o push.
 
 
 
@@ -29,8 +48,13 @@ Para configurar  no __google-code__:
 
 O conteúdo é auto explicativo, mas em todo caso vamos lá...
 
-    machine  servidor.git        // endereço do servidor git
-    login    seu-login           // login
-    password sua-senha           // senha
+Quebrando o comando em algumas linhas temos:
 
+    machine  endereço-do-servidor  // servidor
+    login    seu-login             // login
+    password sua-senha             // senha
+
+Agora em um linha só:
+
+    machine endereço-do-servidor login seu-login password sua-senha
 
