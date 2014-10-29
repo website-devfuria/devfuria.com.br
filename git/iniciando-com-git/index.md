@@ -4,7 +4,16 @@ title:       Iniciando com o git
 description: Aprenda a trabalhar com git e github, artigo introdutório bastante prático e que promete reduzir a curva de aprendizado da ferramenta.
 ---
 
-Esta é uma introdução prática ao Git e GitHub, indicado para quem está dando os primeiros passos com o Git.
+Esta é uma introdução prática ao Git e GitHub, indicado para quem está dando os primeiros passos com o Git. Neste artigo
+nós veremos como:
+
+- Criar um repositório localmente
+- Adicionar (add) e comitar (commit)
+- Criar um repositório no GitHub
+- Conectar o repositório local com o da web
+- Sincronizar ambos os repositórios
+
+Antes de tudo, é preciso saber que git não é GitHub.
 
 [Git]( "link-externo") é um sistema distribuído de controle de versão de código.
 
@@ -17,13 +26,7 @@ projetos privados.
 Antes de iniciar com o git, seria bom se você entendesse o conceito de __versionamento de código__, mas talvez você 
 esteja justamente experimentando o Git para poder entender o que é versionamento, então vamos lá...
 
-Neste artigos nós veremos como:
 
-- Criar um repositório localmente
-- Adicionar (add) e comitar (commit)
-- Criar um repositório no GitHub
-- Conectando ambos os repositórios (o local e o servidor)
-- Sincronizar ambos os repositórios
 
 
 ### Criando um repositório local
@@ -77,10 +80,9 @@ Veja os comandos:
 
 Primeiro, crie um conta no GitHub. 
 
-Utilize um nome de guerra que transmita seriedade, ele será visto por todos inclusive
-seu futuro empregador.
+Utilize um nome de guerra que transmita seriedade, ele será visto por todos, inclusive seu futuro empregador.
 
-Agora procure o ícone com um sinal de mais(+) chamado "Create new...".
+Agora procure o ícone com um sinal de mais (+) chamado "Create new...".
 
 Defina um nome para seu novo repositório.
 
@@ -96,7 +98,7 @@ Agora, temos um repositório no GitHub e um localmente, então vamos conectá-lo
 
 
 
-### Conectando ambos os repositórios
+### Conectando o repositório local com o da web
 
 O seu QG (quartel general) é o seu repositório local. A partir dele, você enviará ou receberá informações do repositório
 na web (no GitHub).
@@ -122,7 +124,7 @@ Você já criou um repositório local e outro no GitHub.
 
 Já adicionou alguns arquivos e "comitou" algumas modificações (localmente).
 
-Ambos o repositório estão conectados.
+O su repositório local já está conectado com o da web (possui uma referência para ele).
 
 Agora só falta enviar as informações do repositório local para o repositório na web (no GitHub):
 
@@ -132,11 +134,12 @@ Lembrando que __origin__ é o apelido para seu repositório na web e __master__ 
 
 Se você acabou de instalar o git, talvez tenha se esquecido das configurações globais.
 
-Configure seu email e nome que serão exebidos em cada commit.
+Configure seu email e nome que serão exibidos em cada commit.
 
     git config --global user.name "Seu nome para exibição"
     git config --global user.email "seu-email@email.com"
 
+Você deve configurar antes de realizar o  __push__.
 
 
 ### Fechando a conta
@@ -151,5 +154,7 @@ Este [repositório](https://github.com/devfuria/foo "link-externo") existe de ve
 Eu criei ele para você poder treinar, bagunçar, testar, brincar, fazer o que você quiser com ele,
 sem a preocupação de acertar. 
 
-Só não pode não fazer nada, faça um __fork__ do projeto, crie um arquivo de texto qualquer com alguma mensagem tipo "oi, me chamo... e passei por aqui"
+Só não pode não fazer nada, então vamos praticar....
+
+Faça um __fork__ do projeto, crie um arquivo de texto qualquer com alguma mensagem tipo "oi, me chamo... e passei por aqui"
 e envie através de um __pull request__.
