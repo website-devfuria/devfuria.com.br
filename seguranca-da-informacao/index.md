@@ -12,7 +12,7 @@ OWASP - top ten 2010
 ---
 
 <div class="list-group">
-    <a href="/seguranca-da-informacao/owasp-topten-2010-introducao/" class="list-group-item">OWASP top ten 2010 - Introdução</a>
+    <a href="/seguranca-da-informacao/owasp-topten-2010/" class="list-group-item">OWASP top ten 2010 - Introdução</a>
 </div> 
 
 

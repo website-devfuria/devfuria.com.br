@@ -34,7 +34,7 @@ Em 25/05/2009 o departamento jornalístico do portal Softpedia publicou que
 um Gray-hat (hacker de chapéu cinza que está entre um hacker de chapéu branco e
 o hacker de chapéu preto, sendo um bem intencionado e outro mal intencionado
 respectivamente) Romeno chamado Unu através de um ataque de injeção de
-SQL(vide capítulo 2) expôs as senhas de 245.000 usuários da empresa de
+SQL expôs as senhas de 245.000 usuários da empresa de
 telecomunicações francesa Orange. O sistema da Orange estava sob os cuidados
 do estrategista-chefe de segurança da IBM Internet Security Systems.
 
@@ -101,8 +101,8 @@ desenvolvida, tendo como objetivo contribuir para o desenvolvimento seguro de
 aplicações web escritas em PHP e que usam como banco de dados o MySql. De
 forma mais específica, os objetivos são: identificar e estudar as principais
 vulnerabilidades e riscos que podem comprometer um aplicação web e além de
-propor meios para mitigá-los.. As vulnerabilidades são apontadas pelo projeto
-OWASP Top 10 (2010), que será apresentado no capítulo 1. Cada vulnerabilidade
+propor meios para mitigá-los. As vulnerabilidades são apontadas pelo projeto
+OWASP Top 10 (2010), cada vulnerabilidade
 terá seu próprio capítulo no qual serão discutidos conceitos básicos a respeito da
 vulnerabilidade, código fonte de exemplo será construído e, por fim, como aplicar a
 devida prevenção. Apesar do presente estudo fechar o escopo em torno da
@@ -146,60 +146,48 @@ determinados indivíduos, profissões, condições, instituições, grupos ou
 comunidades, com a finalidade de obter generalizações". No caso desta pesquisa,
 são estudadas as condições de vulnerabilidade de aplicações Web.
 
-O presente trabalho está organizado em 12 capítulos, sendo que a maior
-parte desses capítulos será dedicada a apresentação das Top 10 vulnerabilidades e
-medidas que visam mitigá-las.
+O presente trabalho está organizado em 10 capítulos, um para cada vulnerabilidade do projeto TOP TEN da Owasp (2010).
 
-O [capítulo 1]( # "Alguns conceitos prévios") é de caráter introdutório e estabelece conceitos necessário para
-o bom entendimento deste trabalho, traz também informações sobre a OWASP e
-sore a arquitetura LAMP.
+O capítulo sobre [A1-Injection](a01-injection/) tratará da Injeção de instruções SQL, método com o qual um usuário mal intencionado 
+pode executar códigos em linguagem SQL danificando banco de dados e comprometendo, dessa forma, a aplicação web.
 
-O [capítulo 2]( # "Injeção(Injection)") tratará da Injeção de instruções SQL(A1), método com o qual um
-usuário mal intencionado pode executar códigos em linguagem SQL danificando
-banco de dados e comprometendo, dessa forma, a aplicação web.
+O capítulo sobre [A2-Cross-Site Scripting (XSS)](a02-cross-site-scripting/) tratará das 3 formas de XSS: refletido, armazenado e baseado no 
+modelo DOM. Ambas permitem ao atacante a execução de scripts no navegador da vítima com o intuito de “roubar” a sessão 
+de navegação, alterar sites da internet (pichar) ou, até mesmo, redirecionar os usuários para sites maliciosos.
 
-O [capítulo 3]() tratará das 3 formas de XSS(A2): refletido, armazenado e
-baseado no modelo DOM. Ambas permitem ao atacante a execução de scripts no
-navegador da vítima com o intuito de “roubar” a sessão de navegação, alterar sites
-da internet (pichar) ou, até mesmo, redirecionar os usuários para sites maliciosos.
+O capítulo sobre [A3-Broken Authentication and Session Management](a03-broken-authentication/) tratará da quebra de autenticação que explora as 
+funções de autenticação e gestão de sessões. Quando essas funções são implementadas de forma incorreta e exploradas, 
+permite ao atacante assumir a identidade de outro utilizador devido a descoberta de senhas, chaves e identificadores de 
+sessão.
 
-O [capítulo 4]() tratará da quebra de autenticação(A3) que explora as funções de
-autenticação e gestão de sessões. Quando essas funções são implementadas de
-forma incorreta e exploradas, permite ao atacante assumir a identidade de outro
-utilizador devido a descoberta de senhas, chaves e identificadores de sessão.
+O capítulo sobre [A4-Insecure Direct Object References](a04-insecure-direct-object/) tratará de referências inseguras diretas a objetos, a 
+exploração dessa vulnerabilidade permite ao atacante acessar informações não-autorizadas ferindo, dessa forma, a 
+confidencialidade da informação.
 
-O [capítulo 5]() tratará de referências inseguras diretas a objetos (A4), a
-exploração dessa vulnerabilidade permite ao atacante acessar informações não-
-autorizadas ferindo, dessa forma, a confidencialidade da informação.
+O capítulo sobre [A5-Cross-Site Request Forgery (CSRF)](a05-csrf/) tratará de CSRF , tal falha permite ao atacante forçar o
+navegador da vítima a criar requisições HTTP forjados, no qual a aplicação web aceita como requisições legítimas 
+oriundas da vítima.
 
-O [capítulo 6]() tratará de CSRF (A5), tal falha permite ao atacante forçar o
-navegador da vítima a criar requisições HTTP forjados, no qual a aplicação web
-aceita como requisições legítimas oriundas da vítima.
+O capítulo sobre [A6-Security Misconfiguration](a06-security-misconfiguration/) abordará a vulnerabilidade de Configuração Incorreta de Segurança. A 
+segurança da aplicação depende, também, da existência de configurações adequadas e boas práticas na manutenção do 
+ambiente no qual a aplicação web estará alojada.
 
-O [capítulo 7]() abordará a vulnerabilidade de Configuração Incorreta de
-Segurança (A6). A segurança da aplicação depende, também, da existência de
-configurações adequadas e boas práticas na manutenção do ambiente no qual a
-aplicação web estará alojada.
+O capítulo sobre [A7-Insecure Cryptographic Storage](a07-insecure-cryptographic-storage/) tratará do assunto criptografia . O ponto chave dessa
+vulnerabilidade (armazenamento criptográfico inseguro) está, não somente nos dados criptografados, mas nas chaves de 
+criptografia, pois comumente elas são mal protegidas.
 
-O [capítulo 8]() tratará do assunto criptografia (A7). O ponto chave dessa
-vulnerabilidade (armazenamento criptográfico inseguro) está, não somente nos
-dados criptografados, mas nas chaves de criptografia, pois comumente elas são mal
-protegidas.
-
-O [capítulo 9]() tratará de falhas nas restrições de acesso(A8). Esconder uma
-URL e validar apenas do lado do cliente são erros comuns encontrados nas
-aplicações web, não obstante, a exploração dessa vulnerabilidade seja considerada
-de nível fácil. A aplicação não pode permitir que páginas sejam acessadas sem a
+O capítulo sobre [A8-Failure to Restrict URL Access](a08-failure-to-restrict-url/) tratará de falhas nas restrições de acesso. Esconder uma URL e 
+validar apenas do lado do cliente são erros comuns encontrados nas aplicações web, não obstante, a exploração dessa 
+vulnerabilidade seja considerada de nível fácil. A aplicação não pode permitir que páginas sejam acessadas sem a
 devida autenticação.
 
 
-O [capítulo 10]() tratará da insuficiente proteção da camada de transporte(A9)e
-sensibiliza quanto a correta utilização do protocolo SSL, em outras palavras, auxilia
-na correta implementação de um certificado digital. A exploração dessa
-vulnerabilidade, normalmente, é realizada através de monitoramento da rede.
+O capítulo sobre [A9-Insufficient Transport Layer Protection](a09-transport-layer/) tratará da insuficiente proteção da camada de transporte
+e sensibiliza quanto a correta utilização do protocolo SSL, em outras palavras, auxilia na correta implementação de um
+certificado digital. A exploração dessa vulnerabilidade, normalmente, é realizada através de monitoramento da rede.
 
 
-O [capítulo 11]() tratará de redirecionamento inválidos(A10). Aproveitando-se de
+O capítulo sobre [A10-Unvalidated Redirects and Forwards](a10-unvalidated-redirects-forwards/) tratará de redirecionamento inválidos(A10). Aproveitando-se de
 validações inadequadas, os atacantes redirecionam a vítima para sites de maliciosos
 (caracterizando ataque de phishing ou de malware) ou aproveitam-se do
 encaminhamento para acessar páginas não autorizadas e, finalmente, o capítulo 12
