@@ -1,5 +1,6 @@
 ---
 layout:      grid12-article
-title:       A10 Unvalidated Redirects and Forwards <small>(OWASP top ten 2010)</small>
+title:       A10 Unvalidated Redirects and Forwards
 description: 
+meta:        (OWASP top ten 2010)
 ---
