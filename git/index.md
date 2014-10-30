@@ -14,6 +14,17 @@ Seja bem vindo(a) a seção Git!
 > (Site oficial)
 
 
+### Como é trabalhar com o Git
+
+Eu preparei dois artigos que demonstram o dia a dia de quem utiliza o Git como versionamento de código.
+
+É uma história fictícia, portanto qualquer semelhança com a vida real será mera coincidência.
+
+<div class="list-group">
+    <a href="/git/git-de-manha/" class="list-group-item">Git pela manhã</a>
+    <a href="/git/git-de-tarde/" class="list-group-item">Git a tarde</a>
+</div>
+
 
 ### Para iniciar no Git com o pé direito
 
