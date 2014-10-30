@@ -6,7 +6,7 @@ title: Git
 Seja bem vindo(a) a seção Git!
    
 
-### O que é git?
+### O que é Git?
 
 > Git é um sistema distribuído de controle de versão livre e de código aberto projetado para lidar com tudo, desde 
 > pequenos a grandes projetos com velocidade e eficiência.
@@ -15,25 +15,25 @@ Seja bem vindo(a) a seção Git!
 
 
 
-### Para começar a aprender sobre o git
+### Para iniciar no Git com o pé direito
 
-O git é famoso por ter sua curva de aprendizado acentuada.
+O Git é famoso por ter sua curva de aprendizado acentuada.
 
-Eu preparei um artigo extremamente prático que vai direto ao ponto, espero com isso ajudar a amenizar sua curva de aprendizado.
+Eu preparei um tutotial extremamente prático que vai direto ao ponto, espero com isso ajudar a amenizar a curva.
 
-Leia o artigo [Iniciando com o git](/git/iniciando-com-git/).
+Leia [tutorial iniciando com o Git](/git/tutorial-iniciando-git/).
 
 
 
-### Aprenda como instalar o git
+### Aprenda como instalar o Git
 
-Lei o artigo [Instalando o git](/linux/cookbook/git/) na seção Linux e descubra como instalar o git no Linux, Windows ou Mac.
+Lei o artigo [Instalando o Git](/linux/cookbook/git/) na seção Linux e descubra como instalar o Git no Linux, Windows ou Mac.
 
 
 ### Artigos
 
 <div class="list-group">
-    <a href="/git/dicas-configuracao/" class="list-group-item">Dicas de configuração do git</a>
+    <a href="/git/dicas-configuracao/" class="list-group-item">Dicas de configuração do Git</a>
     <a href="/git/netrc-nao-pedir-senha/" class="list-group-item">Para não ter que ficar redigitando a senha</a>
 </div> 
 

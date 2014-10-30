@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Configurando o git com o arquivo .netrc
-description: Aprenda a configurar o git para não pedir senha com o arquivo netrc
+title:       Configurando o Git com o arquivo .netrc
+description: Aprenda a configurar o Git para não pedir senha com o arquivo netrc
 ---
 
 Essa matéria "mata dois coelhos com uma cajada só":
@@ -40,7 +40,7 @@ Para __testar__ se está funcionando, basta "comitar" algumas alterações e apl
     git commit -m "minhas alterações"
     git push origin master
 
-Se deu certo, o git não pediu a senha para realizar o push.
+Se deu certo, o Git não pediu a senha para realizar o push.
 
 
 
