@@ -152,6 +152,8 @@ E aí, terminou? Então pode ver a solução
 Solução
 ---
 
+Veja o arquivo orginal no [GitHub](https://github.com/flaviomicheletti/html-css-exemplos/tree/master/zengarden-sample "link-externo").
+
 {% highlight html %}
 <h1>css Zen Garden</h1>
 
@@ -183,4 +185,3 @@ Assista ao vídeo da solução que acompanha esta matéria.
 
 Obs: A voz doce ao fundo é minha querida Joana.
 
-Veja o arquivo orginal no [GitHub](https://github.com/flaviomicheletti/html-css-exemplos/tree/master/zengarden-sample).
