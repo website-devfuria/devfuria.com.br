@@ -46,13 +46,19 @@ code {
     padding:0.1em 0.3em;
     border-radius: 3px;
 }
-img{border:0;max-width:100%;}
+
+img{
+    border: 1px solid #f5f5f5;
+    padding: 3px;
+    max-width: 100%;
+}
+
 abbr{border-bottom:none;}
 a{color:#4183c4;text-decoration:none;}
 a:hover{text-decoration:underline;}
 a code,a:link code,a:visited code{color:#4183c4;}
-h2,h3{margin:1em 0;}
-h1,h2,h3,h4,h5,h6{border:0;}
+h2,h3{margin:1em 0 0.5em 0;}
+h1,h2,h3,h4,h5,h6{border:0;color: #122b3b;}
 h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
 h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
 h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
@@ -140,12 +146,12 @@ h2 {
     color: #122b3b;
     line-height: 1.52em;
     font-size:200%;
-    margin-top:3em;
+    margin-top:1.8em;
     border: none;
 }
 h3 {
     color: #122b3b;
-    margin-top:3em;
+    margin-top:1.8em;
 }
 .text-left {text-align: left}
 .text-right {text-align: right}
