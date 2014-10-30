@@ -10,7 +10,7 @@ nós veremos como:
 - Criar um repositório localmente
 - Adicionar (add) e comitar (commit)
 - Criar um repositório no GitHub
-- Conectar o repositório local com o da web
+- Conectar o repositório local com o repositório público
 - Sincronizar ambos os repositórios
 
 Antes de tudo, é preciso saber que git não é GitHub.
@@ -124,7 +124,7 @@ Você já criou um repositório local e outro no GitHub.
 
 Já adicionou alguns arquivos e "comitou" algumas modificações (localmente).
 
-O su repositório local já está conectado com o da web (possui uma referência para ele).
+O seu repositório local já está conectado com o da web (possui uma referência para ele).
 
 Agora só falta enviar as informações do repositório local para o repositório na web (no GitHub):
 
