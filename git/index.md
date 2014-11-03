@@ -14,6 +14,15 @@ Seja bem vindo(a) a seção Git!
 > (Site oficial)
 
 
+### Para iniciar no Git com o pé direito
+
+O Git é famoso por ter sua curva de aprendizado acentuada.
+
+Eu preparei um tutotial extremamente prático que vai direto ao ponto, espero com isso ajudar a amenizar a curva.
+
+Leia [tutorial iniciando com o Git](/git/tutorial-iniciando-git/).
+
+
 ### Como é trabalhar com o Git
 
 Eu preparei dois artigos que demonstram o dia a dia de quem utiliza o Git como versionamento de código.
@@ -24,16 +33,6 @@ Eu preparei dois artigos que demonstram o dia a dia de quem utiliza o Git como v
     <a href="/git/git-de-manha/" class="list-group-item">Git pela manhã</a>
     <a href="/git/git-de-tarde/" class="list-group-item">Git a tarde</a>
 </div>
-
-
-### Para iniciar no Git com o pé direito
-
-O Git é famoso por ter sua curva de aprendizado acentuada.
-
-Eu preparei um tutotial extremamente prático que vai direto ao ponto, espero com isso ajudar a amenizar a curva.
-
-Leia [tutorial iniciando com o Git](/git/tutorial-iniciando-git/).
-
 
 
 ### Aprenda como instalar o Git

@@ -6,7 +6,7 @@ description: Essa é uma história fictícia para demonstrar como é o dia dia d
 
 Essa é uma história fictícia para demonstrar como é o dia dia de quem utiliza o Git.
 
-O fluxo de trabalho é o mais simples, a equipe é pequena. Todos possuem permissão de leitura e escrita no repositório
+O fluxo de trabalho é o mais simples, a equipe é pequena, todos possuem permissão de leitura e escrita no repositório
 central.
 
 
@@ -24,15 +24,15 @@ A primeira coisa que me pergunto é "será que estou no [branch](/git/o-que-e-br
 Após executar `git status` e descubro qual branch está ativo, é o `issue53`. OK, ainda trabalho no mesmo branch do dia
 anterior.
 
-Segundo o tradutor do Google, [issue]() é um substativo que pode significar: questão, edição, entrega, produção em
+Segundo o tradutor do Google, __issue__ é um substativo que pode significar: questão, edição, entrega, produção em
 dado momento.
 
 Essa última é "matadora" __produção em dado momento__, perfeito!
 
 Não fui eu quem criou a issue, então questionei meu colega do porquê do nome, ele me disse que prefere identificar suas
-issues pelo id. Se eu abrir o [GitHub](https://github.com/ "link-externo") e procurar na seção de issues, encontrarei a 
-referida issue além de informações detalhadas sobre o que se trata. O mais legal é dá para fazer comentários como se 
-fosse um post e, dessa forma, manter uma documentação muita rica sobre o processo.
+issues pelo id. Se eu abrir o projeto no GitHub e procurar na seção "issues", encontrarei a referida issue além de 
+informações detalhadas sobre o que se trata. O mais legal é dá para fazer comentários como se fosse um post e, dessa 
+forma, manter uma documentação muita rica sobre o processo.
 
 Continuando meu trabalho, o comando `git status` não apenas me indica em qual branch estou trabalhando mas também trás
 informações sobre minha árvore de trabalho, os arquivos propriamente dito. Ele me diz o que está selecionado para ser
@@ -51,15 +51,15 @@ repositório remoto. Esse é um dos pontos fortes sobre o Git que a comunidade a
 Quando eu comecei no Git, meus commits eram grandes,
 haviam muita coisa neles. Depois, fui aprendendo que menor é melhor, o menor commit possível é uma única linha em um 
 único arquivo. Acredite, isso é muito bom, mas nem sempre precisa ser assim. Veja repositórios de outras pessoas para
-saber como elas separam seus próprio commits.
+saber como elas separam seus próprios commits.
 
 O ciclo se repetiu ao longo daquela manhã, desenvolvia em passos pequenos, adicionava e "comitava" na mesma medida. A 
-sequencia de comandos...
+sequencia de comandos abaixo...
 
     git add .
     git commit -m "mensagem do commit"
 
-... logo se torna uma rotina.
+... rapidamente torna-se algo trivial.
 
 Certo tempo depois, meu trabalho estava completo, porém meu colega trabalhava mo mesmo branch e eu achei melhor atualizar
 o meu branch com as alterações que ele já havia publicado.
@@ -75,8 +75,8 @@ eu resolvi publicar minhas alterações para que meu colega também pudesse ver 
 
 Este é o inverso do comando anterior, ele diz: *empurre minhas alterações para o repositório origin no branch denominado issue53*.
 
-Os comandos `git pull` e `git push` também se tornam corriqueiros, primeiro eu atualizo localmente puxando (pull) as
-informações, depois eu empurro (push) minhas alterações para o repositório remoto.
+Com o tempo, os comandos `git pull` e `git push`, também se tonaram corriqueiros, primeiro eu atualizo localmente 
+puxando (pull) as informações, depois eu empurro (push) minhas alterações para o repositório remoto.
 
 Agora era só fazer um __merge__ com o branch principal (master). Fizemos isso na intercafe do GitHub, pois lá fica
 registrado cada __pull request__. Na aba "Pull requests" há um botão verde chamado "New pull request". Localmente, na minha
@@ -93,9 +93,7 @@ Mas também preciso deletar ele do repositório remoto.
 
     git push origin :issue53
 
-Estranho esse comando? Também acho, poderia ser algo parecido com `git push origin del issue53`.
-Sei lá, parece verboso demais.
-
+Estranho esse comando? Também acho, mas para decorá-lo é fácil, mentalmente, troque o sinal `:` por `del`.
 
 
 Revendo os comandos
@@ -129,4 +127,4 @@ E assim terminou aquela manhã.
 Continuação
 ---
 
-Lei o artigo seguinte [Git após o almoço](/git/git-de-tarde/)
+Lei o artigo seguinte [Git a tarde](/git/git-de-tarde/)
