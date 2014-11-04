@@ -4,6 +4,10 @@ title:       Git - Resumo dos principais comandos
 description: 
 ---
 
+Para inicializar um repositório:
+
+    git init
+
 
 Para obter o status do repositório:
 
