@@ -34,6 +34,14 @@ Para empurrar (enviar) o histórico do servidor remoto:
 Branchs
 ---
 
+Para listar branchs
+
+    git branch
+
+Para trocar, alternar de branch:
+
+    git checkout nome-do-branch
+
 Para criar um branch e selecioná-lo:
 
     git branch nome-do-branch
@@ -50,14 +58,6 @@ Para deletar um branch local:
 Para deletar um branch remoto
 
     git push origin :nome-do-branch
-
-Para listar branchs
-
-    git branch
-
-Para trocar, alternar de branch:
-
-    git checkout nome-do-branch
 
 
 Merge
