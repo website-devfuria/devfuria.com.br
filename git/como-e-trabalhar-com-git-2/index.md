@@ -1,19 +1,15 @@
 ---
 layout:      grid12-article
-title:       Git a tarde
+title:       Como é trabalhar com Git - parte 2
 description: Essa é uma história fictícia para demonstrar como é o dia dia de quem utiliza o Git
 ---
 
 Eis aqui uma história fictícia para ilustrar como é o dia a dia de quem trabalha com Git e GitHUb.
 
-A matéria anterior a esta chama-se [Git de manhã](/git/git-de-manha/), não há uma ligação profunda entre as duas matérias. Nesta, eu 
-apenas subi um degrau no quesito dificuldade.
+Este artigo iniciou-se na [matéria anterior](/git/como-e-trabalhar-com-git-1/), porém não há uma ligação profunda entre 
+as duas matérias.
 
-
-De tarde
----
-
-Na matéria anterior, para descobrir o branch atual eu executei `git status`. OK, isso funciona, porém o mais correto
+Anteriormente, para descobrir o branch atual eu executei `git status`. OK, isso funciona, porém o mais correto
 (para descobrir qual é o branch ativo) seria o comando abaixo.
 
     git branch
@@ -134,4 +130,4 @@ __Também aprendemos como resolver conflitos!__
 Leia também
 ---
 
-Lei o artigo anterior [Git de manhã](/git/git-de-manha/)
+O artigo anterior [Como é trabalhar com Git - parte 1](/git/como-e-trabalhar-com-git-1/)

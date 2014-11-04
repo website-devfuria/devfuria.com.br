@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       Git pela manhã
+title:       Como é trabalhar com Git - parte 1
 description: Essa é uma história fictícia para demonstrar como é o dia dia de quem utiliza o Git
 ---
 
@@ -9,15 +9,9 @@ Essa é uma história fictícia para demonstrar como é o dia dia de quem utiliz
 O fluxo de trabalho é o mais simples, a equipe é pequena, todos possuem permissão de leitura e escrita no repositório
 central.
 
+Trabalhar com o Git é ter o terminal sempre por perto, abro o terminal e vou até minha pasta de projeto.
 
-De manhã
----
-
-
-Chego no escritório, abro o terminal (trabalhar com o Git é ter o terminal sempre por perto) e vou até minha pasta de
-projeto.
-
-A primeira coisa que me pergunto é "será que estou no [branch](/git/o-que-e-branch/) correto para trabalhar?".
+A primeira coisa que me pergunto é "será que estou no [branch](/git/branchs/) correto para trabalhar?".
 
     git status
 
@@ -120,11 +114,8 @@ Para deletar branchs locais e remotos:
     git push origin :nome-do-branch  // deletar branch remoto
 
 
-E assim terminou aquela manhã. 
-
-
 
 Continuação
 ---
 
-Lei o artigo seguinte [Git a tarde](/git/git-de-tarde/)
+Lei o artigo seguinte [Como é trabalhar com Git - parte 2](/git/como-e-trabalhar-com-git-2/)

@@ -11,7 +11,7 @@ Essa matéria "mata dois coelhos com uma cajada só":
 
 
 
-### Configurando
+## Configurando
 
 Crie um arquivo oculto na pasta `/home/seu-usuario` com o seguinte nome:
 
@@ -32,7 +32,7 @@ Se for configurar o __google-code__ insira o seguinte conteúdo:
 
 
 
-### Testando
+## Testando
 
 Para __testar__ se está funcionando, basta "comitar" algumas alterações e aplicar um __push__, exemplo:
 
@@ -44,7 +44,7 @@ Se deu certo, o Git não pediu a senha para realizar o push.
 
 
 
-### Entendendo melhor o arquivo .netrc
+## Entendendo melhor o arquivo .netrc
 
 O conteúdo é auto explicativo, mas em todo caso vamos lá...
 
