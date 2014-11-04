@@ -1,6 +1,7 @@
 ---
 layout:      grid12-article
-title:       Fazendo pull request
+title:       git reset
 description: 
 ---
+
 

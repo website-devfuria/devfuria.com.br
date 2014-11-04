@@ -14,16 +14,37 @@ Seja bem vindo(a) a seção Git!
 > (Site oficial)
 
 
-### Para iniciar no Git com o pé direito
-
 O Git é famoso por ter sua curva de aprendizado acentuada.
 
-Eu preparei um tutotial extremamente prático que vai direto ao ponto, espero com isso ajudar a amenizar a curva.
+Pensando nisso, eu preparei a seção sobre o Git de forma extremamente prática, indo direto ao ponto.
 
-Leia [tutorial iniciando com o Git](/git/tutorial-iniciando-git/).
+
+### Aprenda como instalar o Git
+
+Lei o artigo [Instalando o Git](/linux/cookbook/git/) na seção Linux e descubra como instalar o Git no Linux, Windows ou Mac.
+
+O próximo passo é praticar um pouco. 
+
+
+### Primeiros passo com o Git
+
+
+Se você conseguiu instalar o git, poderá experimentar seguir este tutorial:
+
+<div class="list-group">
+    <a href="/git/tutorial-iniciando-git/" class="list-group-item">Tutorial para iniciar com o Git e GitHub</a>
+</div>
+
+
+Se você ainda não instalou, experimente usar o git neste tutorial interativo via web da 
+[Code Schooll](https://try.github.io/levels/1/challenges/1 "link-externo").
+
+Importante dizer que você deve fazer as duas coisas, não importa a ordem.
 
 
 ### Como é trabalhar com o Git
+
+Após ter dados seus primeiros passos, talvez você se pergunte "como é trabalhar com o git?"
 
 Eu preparei dois artigos que demonstram o dia a dia de quem utiliza o Git como versionamento de código.
 
@@ -34,10 +55,8 @@ Eu preparei dois artigos que demonstram o dia a dia de quem utiliza o Git como v
     <a href="/git/git-de-tarde/" class="list-group-item">Git a tarde</a>
 </div>
 
+Como complemento, experimente o site [Learn Git Branching](http://pcottle.github.io/learnGitBranching/ "link-externo")
 
-### Aprenda como instalar o Git
-
-Lei o artigo [Instalando o Git](/linux/cookbook/git/) na seção Linux e descubra como instalar o Git no Linux, Windows ou Mac.
 
 
 ### Artigos
@@ -49,11 +68,7 @@ Lei o artigo [Instalando o Git](/linux/cookbook/git/) na seção Linux e descubr
 
 
 
-### Onde praticar ?
 
-Para treinar os comandos no terminal experimente o [curso (gratuito) da Code Schooll](https://try.github.io/levels/1/challenges/1 "link-externo").
-
-Para praticar o __conceito de branches__ experimente o site [Learn Git Branching](http://pcottle.github.io/learnGitBranching/ "link-externo")
 
 
 

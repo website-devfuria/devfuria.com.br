@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       git diff - Visualizando Suas Mudanças Selecionadas e Não Selecionadas
-description: git diff - Visualizando Suas Mudanças Selecionadas e Não Selecionadas
+title:       git diff
+description: Visualizando suas mudanças selecionadas e não selecionadas
 ---
 
 

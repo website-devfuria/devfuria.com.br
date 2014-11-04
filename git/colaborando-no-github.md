@@ -13,4 +13,6 @@ Entenda as tags e releases.
 
 Pull requests
 
-Merege automáticos
+Merge automáticos
+
+fazendo pull requests

@@ -26,7 +26,7 @@ isso, porém a tradução mais comum é __ramificação__. Um branch é uma mane
 funcionalidade mas sem interromper os trabalhos principais". O trabalho principal conhecemos como __master__ e as novas
 funcionalidades (features, issues, etc...) colocamos os nomes que acharmos mais adequado.
 
-![](../branch01.png)
+![](branch01.png)
 
 A imagem acima ilustra um ramo (branch). Só não confunda a direção das setas, você deve ir em sentido contrário. Repare
 que, em nossa linha de tempo, o passado (old base) fica mais a esquerda, este é o nosso ponto de partida. A direção é
@@ -44,7 +44,8 @@ Crie o seu branch.
 
     git branch new-issue
 
-Liste os branchs, repare que criar um branch não ativa ele automaticamente, você deve fazer isso com o __checkout__.
+Liste os branchs (`git branch`), repare que criar um branch não ativa ele automaticamente, você deve fazer isso com o
+__checkout__.
 
     git checkout new-issue
 
@@ -54,15 +55,15 @@ São dois passos, mas há um atalho.
 
 O comando acima cria o branch e imediatamente torna-se seu branch ativo.
 
-Seguimos trabalhando em nossa nova funcionalidade, a sequência de comandos abaixo vira uma rotina.
+Seguimos trabalhando em nossa nova funcionalidade, a sequência de comandos abaixo, aos poucos, deve se tornar uma rotina.
 
     git add .
     git commit -m ""
 
-Vimos eles na matéria anterior [Git pela manhã](/git/git-de-manha/).
+Vimos eles na matéria anterior.
 
 De repente, o cliente liga e lhe informa sobre um bug no sistema. Você não pode resolver o bug em seu branch atual
-pois as você ainda não terminou seu trabalho. O que fazer agora?
+pois as você ainda não terminou seu trabalho, o que fazer agora?
 
 Vamos voltar para o branch principal (master) e resolver o bug lá.
 
@@ -72,26 +73,28 @@ Após agluns commits, resolvemos o bug. Agora podemos continuar com nossa funcio
 
     git checkout new-issue
 
-Você não precisa, mas sabe que pode atualizar su novo-branch com o branch master. VocẼ poderia fazer isso mais tarde,
-as quanto antes fizer mais fácil será. Igualamos os branch com o comando `merge`.
+Você não precisa, mas sabe que pode atualizar seu novo-branch com o branch master. Você poderia fazer isso mais tarde,
+o quanto antes fizer mais fácil será. Igualamos os branch com o comando `merge`.
 
     git merge master
 
-Agora podemos continuar em nosso branch e após mais alguns commits resolvemos publicar nosso trabalho no repositório 
+O comando acima está dizendo *"pegue as últimas alterações do branch master e atualize o branch atual (new-issue)"*.
+
+Agora podemos continuar em nosso branch, após mais alguns commits resolvemos publicar nosso trabalho no repositório 
 remoto. Mas antes de empurrar (push) devemos atualizar puxando (pull) as alterações de nossos colegas.
 
     git pull origin new-issue
 
-Só que nesse pull nós não fomoz feliz e deu __conflito__. Tudo bem o negócio é simples, eu e meu colega mexemos na 
-mesmíssima parte de códig e entção o git ficom com uma dúvida: "o que eu faço, fico com o seu trabalho ou o do seu amigo?".
+Só que nesse pull nós não fomos feliz e deu __conflito__. Tudo bem, o negócio é simples! Eu e meu colega mexemos na 
+mesmíssima parte de código e então o git ficou com uma dúvida: "o que eu faço, fico com o seu trabalho ou o do seu amigo?".
 
 O git nos informa onde está o problema adicionando alguns caracteres, como ilustrado na figura abaixo.
 
-![](../conflitos.jpeg)
+![](conflitos.jpeg)
 
-Basta deletar os caracteres, escolher qual é o código correto e commitar novamente, pronto! Conflito resolvido.
+Basta deletar os caracteres, escolher qual é o código correto e "comitar" novamente, pronto!
 
-Agora que eu terminei já resolvi os conflitos, preciso disponibilizar os trabalho para meus colegas.
+Resolvido os conflitos, preciso disponibilizar os trabalho para meus colegas.
 
     git push origin new-issue
 
@@ -123,8 +126,9 @@ Para igualar o branch atual com determinado branch:
 
     git merge issue53
 
-Supondo que o branch atual seja o __master__, o comando acima diz: "atuaize o master com o branch issue53".
+Supondo que o branch atual seja o __master__, o comando acima diz: "atualize o master com o branch issue53".
 
+__Também aprendemos como resolver conflitos!__
 
 
 Leia também
