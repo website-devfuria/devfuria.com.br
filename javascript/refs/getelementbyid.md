@@ -6,34 +6,47 @@ menu:        javascript-refs
 ---
 
 
-Isto é um rascunho!
+Ela busca e retorna o elemento através de seu identificador, a propriedade `id=""`.
+
+{% highlight html %}
+<p>
+    <a id="sirius" href="sirius.html">Journey to the stars</a>
+</p>
+{% endhighlight %}
+
+{% highlight javascript %}
+var elementRef = document.getElementById("sirius");
+{% endhighlight %}
 
 
-Ela busca e retorna o elemento através de seu identificador, a propriedade id="", veja:
+Value
+---
 
-document.getElementById("id");
+Pensando em um controle HTML do tipo textbox, password ou uma textarea.
 
-O resultado (o elemento) nós armazenamos em uma variável (com um nome bem bacana) para podermos acessar suas propriedades, exemplo:
+Poderemos utilizar a propriedade `value`, ela refere-se ao valor do campo.
 
-var objElem = document.getElementById("id");
+Recuperando o valor:
 
-De posse do elemento, utilizaremos a propriedade value. Ela refere-se ao valor do campo, seja ele uma textbox, um password ou uma textarea.
+    var elem = document.getElementById("nome-identificador");
+    console.log(elem.value);
 
-Podemos recuperar o valor:
+Alterando o valor:
 
-var objElem = document.getElementById("id");
-console.log(objElem.value);
+    var elem = document.getElementById("nome-identificador");
+    elem.value = "outro texto qualquer";
 
-Ou alterar o valor:
+Alterando de forma mais sucinta:
 
-var objElem = document.getElementById("id");
-objElem.value = "outro texto qualquer";
+    document.getElementById("nome-identificador").value = "outro texto qualquer";
 
-De forma mais sucinta:
 
-document.getElementById("id").value = "outro texto qualquer";
 
 <hr/>
 Fonte
 
 - Manual do JS (MDN) falando sobre a função [getElementById()](https://developer.mozilla.org/en-US/docs/Web/API/document.getElementById "link-externo")
+
+<!--
+Veja pág 88, capitulo 5 do livro JS Anthology
+-->
