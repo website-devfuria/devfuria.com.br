@@ -91,14 +91,6 @@ Como estamos simulando o carregamento do formulário, eu precisava de um valor r
 Se o seu código funcionou, clique várias vezes no botão "Load", ele anotará aleatóriamente as combobox, certo?
 
 As checkboxes trabalham com 2 valores, ligado e desligado, ou seja, 0 e 1 e eu precisava de __uma função que me retorna-se
-aleatóriamente os valores 0 e 1__.
+aleatóriamente os valores 0 e 1__. É exatamente isso que temos na expressão misteriosa rsss.
 
-É exatamente isso que temos na expressão misteriosa rsss.
-
-<del>Momento Eureka: em breve abrirei uma seção que chama-se "referência" e farei as referências para estes casos.</del>
-
-OK, já voltei! Dê uma olhada nesta pequena série sobre números aleatórios em JavaScript:
-
-{% include /menus/javascript-rando.html %}
-
-Até a próxima!
+Leia a matéria [Como gerar números aleatórios em Javascript](/javascript/numeros-aleatorios/) para saber como gerar números aleatórios.
