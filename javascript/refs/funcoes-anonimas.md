@@ -6,36 +6,39 @@ description: Entenda o que são e como funcionam as funções anônimas em JavaS
 
 Em JavaScript podemos escrever funções naturalmente como o exemplo abaixo:
 
-    function foo() {
-        // código
-        // código
-        // código
-        // código
-    }
-
+{% highlight javascript %}
+function foo() {
+    // código
+    // código
+    // código
+    // código
+}
+{% endhighlight %}
 Porém, essa forma não é a mais usual, o mais comum é atribuírmos a função a uma variável.
 
 Essa técnica recebe o nome de __função anônima__, repare que a função não possui nome algum, veja código abaixo:
 
-    var foo = function() {
-        // código
-        // código
-        // código
-        // código
-    }
-
+{% highlight javascript %}
+var foo = function() {
+    // código
+    // código
+    // código
+    // código
+}
+{% endhighlight %}
 
 A palavra `foo` é o nome da variável e não o nome da função!
 
 O `return` faz com que algum valor seja retornado e interrompe o funcionamento da função.
 
-    var foo = function() {
-        // código
-        // código
-        // código
-        return "alguma coisa";
-    }
-
+{% highlight javascript %}
+var foo = function() {
+    // código
+    // código
+    // código
+    return "alguma coisa";
+}
+{% endhighlight %}
 Uma função pode aceitar parâmetros (dados para serem trabalhos dentro da função).
 
 Abaixo conferimos um exemplo de função que soma dois números.
