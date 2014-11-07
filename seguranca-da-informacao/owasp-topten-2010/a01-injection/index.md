@@ -18,7 +18,7 @@ Scanner e Fuzzers poderão ajudar os atacantes a encontrá-las. O impacto para o
 prejudicar toda a base de dados e pode também dar acesso total do sistema ao atacante. A tabela 02 sintetiza a 
 classificação do risco.
 
-    ---> falta a tabela 02
+![Mapeamento de risco da SQL Injection](tabela-risco.png "Mapeamento de risco da SQL Injection")
 
 Todo formulário web pode servir como porta de entrada(uma vulnerabilidade) para o ataque de Injeção de SQL. É mais 
 comum este ataque acontecer na tela de login, pois este é o primeiro formulário do sistema e normalmente é mais exposto
@@ -37,21 +37,50 @@ campos do banco de dados. conforme relata Pessoa (2007, p. 108)
 Importante salientar que a utilização de nomes de variáveis diferentes não impedirá o ataque de injeção de SQL. 
 Pessoa (2007, p. 108)
 
-Como exemplo de aplicação vamos considerar o formulário de login como o apresentado na figura 03 e pelo código 1.1.
+Como exemplo de aplicação vamos considerar o formulário de login apresentado abaixo.
 
-![Figura 03 – Exemplo de formulário web. Tela de login](figura03.png "Figura 03 – Exemplo de formulário web. Tela de login")
+![Figura 03 – Exemplo de formulário web. Tela de login](form-login.png "Figura 03 – Exemplo de formulário web. Tela de login")
 
-Figura 03 – Exemplo de formulário web. Tela de login
+{% highlight html %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+  <head>
+    <title>Página de login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  </head>
+  <body>
+      <p>Está é a tela de login!!!</p>
+      <form action="receber_formulario.php" method="post">
+          <p>Login:<input type="text" name="login" value="" /></p>
+          <p>Senha:<input type="text" name="senha" value="" /></p>
+          <p><input type="submit" value="Efetuar login" /></p>
+      </form>
+  </body>
+</html>
+{% endhighlight %}
 
-    ---> Exemplo de formulário web.
-
-
-O código que interage com o formulário da figura 02 deve receber os dados vindo do formulário, conectar-se com o banco 
+O código que interage com o formulário deve receber os dados vindo do formulário, conectar-se com o banco 
 de dados, montar a declaração SQL, enviá-la para o banco de dados (o interpretador) e checar se houve êxito na execução
 da declaração.
 
-    --->  Código em PHP que recebe e processa os dados de um formulário web
+{% highlight php linenos %}
+<?php
+$login  = $_POST['login'];
+$senha  = $_POST['senha'];
 
+$mysqli = new mysqli("localhost", "desenvolvedor", "12345678", "teste");
+
+$sql    = "SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'";
+$result = $mysqli->query($sql);
+
+if( $result->num_rows )
+    echo "Você foi logado no sistema!!!";
+else
+    echo "Você não foi logado no sistema!!!";
+
+var_dump($sql);
+{% endhighlight %}
 
 As linhas 2 e 3 recebem os dados vindos do formulário via método `post` e armazenam em suas respectivas variáveis. A 
 linha 5 conecta-se com o banco de dados. A linha 7 cria dinamicamente a declaração SQL. A linha 8 envia e executa a
@@ -59,7 +88,7 @@ declaração SQL para o banco de dados. A linha 10 testa o resultado e em caso a
 credenciais do usuário no sistema. A linha 15 utiliza-se da função PHP `var_dump()` para debugar o código, ela mostra o 
 conteúdo e tipo da variável. Neste exemplo, é preciso ver o que aconteceu com a variável `$sql`.
 
-O se torna vulnerável, principalmente, pelo fato de construir a declaração SQL dinamicamente (vide linha 7). Os dados 
+O código se torna vulnerável, principalmente, pelo fato de construir a declaração SQL dinamicamente (vide linha 7). Os dados 
 que chegam do formulário não são tratados adequadamente e acabam por compor uma declaração SQL maliciosa.
 
 Segundo Wichers e Manico (2011) a vulnerabilidade de Injeção pode ser prevenida de três formas distintas:
@@ -75,14 +104,40 @@ No PHP é possível contar com a extensão PDO para utilizar-se de consultas par
 interface consistente para acesso a banco de dados em PHP. Ela facilita a manutenção do código fonte e auxilia a troca
 de banco de dados utilizado na codificação. (GILMORE, 2008 p.631)
 
-O código abaixo faz uso da extensão PDO, entre as linhas 2 e 10 ocorre a conexão com o banco de dados, na linha 8 é 
-instanciada a classe PDO. As linhas 12 e 13 recebem os dados do formulário. A linha 15 utiliza o método prepare() do 
+O código abaixo faz uso da extensão PDO, entre as linhas 3 e 11 ocorre a conexão com o banco de dados, na linha 9 é 
+instanciada a classe PDO. As linhas 13 e 14 recebem os dados do formulário. A linha 16 utiliza o método prepare() do 
 objeto instanciado para preparar o comando SQL, repare que não é passado os parâmetros diretamente na declaração SQL, 
 em seu lugar estão apenas as referências “:login” e “:senha”. A função principal é a bindParam() que “liga-se um 
 parâmetro para o nome da variável especificada” (Manual Oficial do PHP, 2011) é ela quem faz todo o trabalho de 
-sanitização. A linha 19 executa o comando e, entre as linhas 21 e 26, é checado o resultado da consulta.
+sanitização. A linha 20 executa o comando e, entre as linhas 22 e 25, é checado o resultado da consulta.
 
-    --->  Prevenindo injeção com consultas parametrizadas
+{% highlight php linenos %}
+<?php
+$dsn        = 'mysql:dbname=teste;host=localhost';
+$user       = 'desenvolvedor';
+$password   = '12345678';
+
+try {
+    $dbh = new PDO($dsn, $user, $password);
+} catch (PDOException $e) {
+    $log = $e->getMessage();
+    # gravar o log
+}
+
+$login = $_POST['login'];
+$senha = $_POST['senha'];
+
+$sth = $dbh->prepare("SELECT * FROM usuarios ".
+                     "WHERE login = :login AND senha = :senha");
+$sth->bindParam(':login', $login);
+$sth->bindParam(':senha', $senha);
+$sth->execute();
+
+if( $sth->rowCount() )
+	echo "reusultado: true";
+else
+	echo "reusultado: false";
+{% endhighlight %}
 
 A segunda forma, stored procedures (SP), são procedimentos previamente armazenados no SGBD. Seu funcionamento é similar
 as funções em uma linguagem de programação. SP podem receber ou não parâmetros e podem retornar ou não algum valor. A 
@@ -99,12 +154,47 @@ o comando SQL que faz “chamada” para a SP e o índice 1 recupera o valor ret
 do índice o(zero). A linha 16 executa o comando SQL de índice 1 e guarda o seu resultado na variável `$res`. A linha 17
 apenas transforma o resultado da consulta em um objeto. Entre as linhas 20 e 24 checamos o resultado da consulta.
 
-    ---> Prevenindo injeção com Stored Procedures
+{% highlight php linenos %}
+<?php
+$mysqli = new mysqli("localhost", "desenvolvedor", "12345678", "teste");
+if (mysqli_connect_errno()) {
+    $log = "Falha na conexão:". mysqli_connect_error();
+    # gravar log
+}
+
+$login   = $_POST['login'];
+$senha   = $_POST['senha'];
+
+$query   = array();
+$query[] = "CALL testarLogin(@valor, '".$login."', '".$senha."')";
+$query[] = "SELECT @valor";
+
+$mysqli->query($query[0]);
+$res     = $mysqli->query($query[1]);
+$valor   = $res->fetch_object();
+$nome    = "@valor";
+
+if( $valor->$nome )
+    echo "reusltado: true";
+else
+    echo "reusltado: false";
+
+$mysqli->close();
+?>
+{% endhighlight %}
 
 A stored procedure utilizada é ilustrada pelo código abaixo.
 
-    --->  Stored procedure utilizada na prevenção de injeção SQL
-
+{% highlight sql %}
+CREATE PROCEDURE testarLogin(
+    OUT quant INT,
+    IN param1 VARCHAR(200),
+    IN param2 VARCHAR(20)
+)
+BEGIN
+    SELECT COUNT(*) INTO quant FROM usuarios WHERE login = param1 AND senha = param2;
+END #
+{% endhighlight %}
 
 A terceira e última forma, codificação de saída de caractere, também conhecida como “escapar caractere”, é utilizar 
 determinada função com o objetivo de codificar a saída de caracteres indesejados, no caso `'`(aspa simples), `''`
@@ -113,7 +203,30 @@ e também podem ser aplicadas diferentes abordagens para codificação de saída
 função nativa do SGBD Mysql `mysql_real_escape_string()` seja utilizada para codificação de caracteres. O uso dessa 
 função é implementada no código abaixo.
 
-    --->  Prevenindo injeção codificando os caracteres
+{% highlight php linenos %}
+<?php
+$link = mysql_connect('localhost', 'desenvolvedor', '12345678');
+mysql_select_db("teste");
+if (!$link) {
+    die('Falha na conexão!');
+}
+
+$login = $_POST['login'];
+$senha = $_POST['senha'];
+
+$login = mysql_real_escape_string($login, $link);
+$senha = mysql_real_escape_string($senha, $link);
+
+$sql = "SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'";
+
+$result = mysql_query($sql);
+
+if( mysql_num_rows($result) == 1 ){
+	echo "reusltado: true";
+}else{
+	echo "reusltado: false";
+}
+{% endhighlight %}
 
 Observando o código nota-se que entre a linha 2 e 6 é feita a conexão com o banco de dados feito através do driver mysql.
 As linhas 8 e 9 recebem os dados do formulário. As linhas 11 e 12 fazem o trabalho de codificação de saída dos caracteres
