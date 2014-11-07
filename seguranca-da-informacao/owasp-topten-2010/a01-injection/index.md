@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       A1 Injection
+title:       A1 SQL Injection
 description:
 meta:        (OWASP top ten 2010)
 ---
