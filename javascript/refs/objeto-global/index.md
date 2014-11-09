@@ -1,9 +1,9 @@
 ---
-layout:     grid12-article
-title:      O objeto window e o espaço global em Javascript!
+layout:      grid93-article
+title:       O objeto window e o espaço global em Javascript!
+description: Referência prática do objeto global - JavaScript
+menu:        javascript-refs
 ---
-
-
 
 O objeto `window` é o principal objeto de Javascript, é nele onde as coisas começam... principalmente a 
 __"poluição do espaço global"__
