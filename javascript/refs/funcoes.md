@@ -66,17 +66,18 @@ checagem de tipo em valores de argumento: qualquer tipo de valor pode ser passad
 Veja um exemplo:
 
 {% highlight javascript %}
-x = findMax(1, 123, 500, 115, 44, 88);
+// Cria um função que soma um monte de coisas.
 
-function findMax() {
-    var i, max = 0;
-    for (i = 0; i < arguments.length; i++) {
-        if (arguments[i] > max) {
-            max = arguments[i];
-        }
+var sum = function (  ) {
+    var i, sum = 0;
+    for (i = 0; i < arguments.length; i += 1) {
+        sum += arguments[i];
     }
-    return max;
-} {% endhighlight %}
+    return sum;
+};
+
+console.log(sum(4, 8, 15, 16, 23, 42)); // 108
+{% endhighlight %}
 
 
 <hr>
@@ -86,7 +87,6 @@ Fontes
 - [MDN - JavaScript reference - Statements and declarations - Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function "link-externo")
 - [MDN - JavaScript reference - Expressions and operators - Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function "link-externo")
 - [MDN - Glossary - Function](https://developer.mozilla.org/en-US/docs/Glossary/Function "link-externo")
-
 
 
 Veja também
