@@ -38,11 +38,10 @@ function add(x, y) {
 - __statements__: as declarações que compreende o corpo da função
 
 
-Talvez você já conheça a noção de função com o nome de sub-rotina ou procedimento, As funções em JavaScript são 
-parametrizadas: um definição de função pode incluir uma lista de identificadores, conhecidos como parâmetros, que
-funcionam como varáveis locais para o corpo da função. Frequentemente, as funções utilizam seus  valores de
-argumentos para calcular um valor de retorno, que se torna o valor da expressão da chamada de função. Além dos 
-argumentos, cada chamada tem outro valor - o contexto da chamada -, que é o valor da palavra chave `this`. 
+As funções em JavaScript são parametrizadas: um definição de função pode incluir uma lista de identificadores, 
+conhecidos como parâmetros, que funcionam como varáveis locais para o corpo da função. Frequentemente, as funções 
+utilizam seus  valores de argumentos para calcular um valor de retorno, que se torna o valor da expressão da chamada de
+ função. Além dos argumentos, cada chamada tem outro valor - o contexto da chamada -, que é o valor da palavra chave `this`. 
 (Flanagan, JavaScript O guia definitivo, pág 150)
 
 Além dos parâmetros declarados, toda função recebe dois adicionais: __this__ e __arguments__. O parâmetro `this` é muito
