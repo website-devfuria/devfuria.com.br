@@ -7,7 +7,7 @@ menu:        javascript-rando
 
 Função em JavaScript que gera um número aleatório inteiro entre 2 números quaisquer.
 
-Veja o código no [GitHub](https://github.com/devfuria/javascript-exemplos/tree/master/aleatorio).
+Veja o código no [GitHub](https://github.com/devfuria/javascript-exemplos/tree/master/aleatorio "link-externo").
 
 
 {% highlight javascript %}
@@ -26,7 +26,7 @@ function getRandomInt(min, max) {
 Exemplos:
 
 {% highlight javascript %}
-console.log(  getRandomInt(0, 3)  ); // retornará 0, 1, 2 e 3.
+console.log(  getRandomInt(0, 3)  );  // retornará 0, 1, 2 e 3.
 {% endhighlight %}
 
 {% highlight javascript %}

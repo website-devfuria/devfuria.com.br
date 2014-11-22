@@ -13,9 +13,10 @@ atribuído a nenhum parâmetro nomeado. Isso torna possível escrever funções 
 Veja um exemplo:
 
 {% highlight javascript %}
-// Cria um função que soma um monte de coisas.
-
-var sum = function (  ) {
+/*
+ * Cria um função que soma um monte de coisas.
+ */
+function sum() {
     var i, sum = 0;
     for (i = 0; i < arguments.length; i += 1) {
         sum += arguments[i];
@@ -23,7 +24,7 @@ var sum = function (  ) {
     return sum;
 };
 
-console.log(sum(4, 8, 15, 16, 23, 42)); // 108
+console.log( sum(4, 8, 15, 16, 23, 42) ); // 108
 {% endhighlight %}
 
 Veja outro exemplo:
@@ -41,7 +42,7 @@ function findMax() {
     }
     return max;
 }
-console.log(findMax(4, 8, 15, 16, 23, 42)); // 42
+console.log( findMax(4, 8, 15, 16, 23, 42) ); // 42
 {% endhighlight %}
 
 
