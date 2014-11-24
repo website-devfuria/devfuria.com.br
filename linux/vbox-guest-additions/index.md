@@ -6,7 +6,7 @@ menu:        linux-vbox
 ---
 
 
-Essa receita foi testada com __CentOS 6.4__ tanto na máquina (hospedeira) como na máquina virtual (convidado).
+Essa receita foi testada em um __CentOS 6.4__ tanto na máquina (hospedeira) como na máquina virtual (convidado).
 
 
 
