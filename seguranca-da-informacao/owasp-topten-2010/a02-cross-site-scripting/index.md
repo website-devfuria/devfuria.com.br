@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       A2 Cross-Site Scripting (XSS)
-description: 
+description: Artigo sobre a vulnerabilidade XSS, segundo da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
 ---
 
