@@ -24,7 +24,7 @@ A zlib-dev ele não achou
 	make
 	make altinstall
 
-Nenhuma menssagem de erro.
+Nenhuma mensagem de erro.
 
 	ln -s /usr/local/bin/python3 /usr/bin/python3
 
