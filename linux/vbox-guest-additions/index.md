@@ -40,7 +40,7 @@ sua instalação.
 ![Figura CD da pasta guest additions](vbox-linux-additions-run.png "CD da pasta guest additions")
 
 O Linux monta as unidades na pasta `media/`. Quando clicamos no menu acima indicado, o Virtual Box montou a unidade
-"VBOXADDITIONS_XXX" na pasta, então vamos até ala, digite:
+"VBOXADDITIONS_XXX" na pasta, então vamos até ela, digite:
 
     # cd /media/VBOXADDITIONS_XXX
 
