@@ -146,7 +146,7 @@ Quando o usuário clicar em uma opção da combobox, o seguinte código mostrar�
 
     console.log(comboCidades.selectedIndex);
 
-Além dissop, cada __option__ possui pelo menos 2 propriedades interessantes: text e value:
+Além disso, cada __option__ possui pelo menos 2 propriedades interessantes: text e value:
 
 - text é a "label"', o texto entre as tags &lt;options&gt;&lt;/options&gt;.
 
@@ -184,7 +184,7 @@ Selecionando um valor para a combobox
 Agora precisamos selecionar uma valor para a nossa combo. Fazemos isso através da propriedade __selectedIndex__, pois
 ela é leitura e escrita.
 
-EM outra palavras, podemos atribuir o índice que desejamos que fique selecionado:
+Em outra palavras, podemos atribuir o índice que desejamos que fique selecionado:
 
     comboCidades.selectedIndex = 2; // atribuindo um índice qualquer
 
