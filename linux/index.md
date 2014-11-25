@@ -18,6 +18,7 @@ Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o p
 Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](/linux/cookbook/). veja como instalar...
 
 <div class="list-group">
+    <a href="/linux/cookbook/python/" class="list-group-item">Instalando o Python 3</a>
     <a href="/linux/cookbook/django/" class="list-group-item">Instalando o Django (python)</a>
     <a href="/linux/cookbook/pip/" class="list-group-item">Instalando o pip (gerenciador de pacotes do python)</a>
     <a href="/linux/cookbook/git/" class="list-group-item">Instalando o git</a>

@@ -24,6 +24,12 @@ linguagem de programação Python
     pip --version
 
 
+Uma forma alternativa de instalação indicada para quem usa o Python 3 é a seguinte:
+
+    cd opt/
+    wget https://bootstrap.pypa.io/get-pip.py
+    python3 get-pip.py
+
 
 Atualizando
 ---
