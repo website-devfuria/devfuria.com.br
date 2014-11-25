@@ -14,17 +14,31 @@ Digite `python` no terminal, o console interativo será aberto é você poderá 
 Não foi fácil?
 
 
+
 Começando com Python
 ---
 
-
 Conheça o básico da sintaxe de Python através deste artigo [O básico da sintaxe de Python](./sintaxe-basica/).
 
-Se você, assim como eu, gosta de aprender de forma "suave", aconselho a iniciar pelo Python através do
-[Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
-
-
 {% include menus/python-artigos.html %}
+
+Aconselho também a iniciar pelo Python através do [Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
+
+
+
+Lista de exercícios da Google (Basic Python Exercises)
+---
+
+O [Google](https://developers.google.com/edu/python/exercises/basic "link-externo") mantém um breve tutorial e alguns
+exercícios sobre Python, eu apenas traduzi os enunciados.
+
+O legal dos exercícios é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código 
+deveria funcionar e implementa as funções até os testes passarem.
+
+<div class="list-group">
+    <a href="/python/google-exercises-string1/" class="list-group-item">Básico - Strings 1</a>
+    <a href="/python/google-exercises-string2/" class="list-group-item">Básico - Strings 2</a>
+</div>
 
 
 Site Oficial
