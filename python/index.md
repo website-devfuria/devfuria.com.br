@@ -36,8 +36,9 @@ O legal dos exercícios é que eles vem com os testes prontos, ou seja, você ol
 deveria funcionar e implementa as funções até os testes passarem.
 
 <div class="list-group">
-    <a href="/python/google-exercises-string1/" class="list-group-item">Básico - Strings 1</a>
-    <a href="/python/google-exercises-string2/" class="list-group-item">Básico - Strings 2</a>
+    <a href="/python/google-exercises-string1/" class="list-group-item">Exercícios Básicos - Strings 1</a>
+    <a href="/python/google-exercises-string2/" class="list-group-item">Exercícios Básicos - Strings 2</a>
+    <a href="/python/google-exercises-list1/" class="list-group-item">Exercícios Básicos - List 1</a>
 </div>
 
 
