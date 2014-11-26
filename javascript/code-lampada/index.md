@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Code - A lâmpada
-description: Aprendendo código em JavaScript que acende e apaga uma lâmpada (princípio de animações com JS)!
+description: Código em JavaScript que acende e apaga uma lâmpada (princípio de animações com JS)!
 ---
 
 Nesta matéria utilizarei o código que faz a uma lâmpada acender e apagar.
@@ -12,7 +12,7 @@ Clique nas abas para visualizar as partes separadamente: HTML, JS e resultado.
 <p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/zFGvl/'>a lâmpada</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Veja o código no [GitHub](https://github.com/devfuria/javascript-exemplos/tree/master/lampada).
+Veja o código no [GitHub](https://github.com/devfuria/javascript-exemplos/tree/master/lampada "link-externo").
 
 
 
