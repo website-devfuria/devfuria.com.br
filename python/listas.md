@@ -35,6 +35,8 @@ Podemos fatiar (leia-se acessar) um lista de diversas formas, veja a matéria so
 
 ### Percorrendo a lista (list looping)
 
+Abaixo vemos um exemplo de como percorrer um lista na sua forma mas simples.
+
 {% highlight python %}
 myList = [1, 2, 3, 4]
 for number in myList:
@@ -45,32 +47,40 @@ for number in myList:
 # 8
 {% endhighlight %}
 
+Abaixo incrementamos a implementação com a função interna [enumarate()](https://docs.python.org/3.4/library/functions.html#enumerate "link-externo").
+ela irá numerar a lista.
+
 {% highlight python %}
 choices = ['pizza', 'pasta', 'salad', 'nachos']
 
 print 'Your choices are:'
 for index, item in enumerate(choices):
-    print index + 1, item
+    print index, item
 
 """
 Your choices are:
-1 pizza
-2 pasta
-3 salad
-4 nachos
+0 pizza
+1 pasta
+2 salad
+3 nachos
 """
 {% endhighlight %}
 
-{% highlight python %}
-list_a = [3, 9, 17, 15, 19]
-list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
+Abaixo incrementamos o exemplo utilizando a função interna [zip()](https://docs.python.org/3.4/library/functions.html#zip "link-externo"),
+ela casa (agrega) as duas listas.
 
-for a, b in zip(list_a, list_b):
-    # Add your code here!
-    if a > b:
-        print a
-    else:
-        print b
+{% highlight python %}
+list_a = [6, 7, 8, 9]
+list_b = [1, 2, 3, 4, 5]
+
+for x in zip(list_a, list_b):
+    print(x)
+"""
+(6, 1)
+(7, 2)
+(8, 3)
+(9, 4)
+"""
 {% endhighlight %}
 
 
@@ -82,10 +92,10 @@ for a, b in zip(list_a, list_b):
 m = [1, 2, 3]
 n = [4, 5, 6]
 o = m + n
-print o # [1, 2, 3, 4, 5, 6]
+print(o) # [1, 2, 3, 4, 5, 6]
 
 o += [7, 8, 9]
-print o # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(o) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 {% endhighlight %}
 
 
@@ -97,12 +107,12 @@ Funções nativas para listas
 
 {% highlight python %}
 nums = ["um"]
-print nums # ['um']
+print(nums) # ['um']
 
 nums.append("dois")
 nums.append("tres")
 nums.append("quatro")
-print nums # ['um', 'dois', 'tres', 'quatro']
+print(nums) # ['um', 'dois', 'tres', 'quatro']
 {% endhighlight %}
 
 
@@ -119,7 +129,7 @@ print animals.index("bat") # 1
 {% highlight python %}
 animals = ["ant", "bat", "cat"]
 animals.insert(1, "dog")
-print animals # ["ant", "dog", "bat", "cat"]
+print(animals) # ["ant", "dog", "bat", "cat"]
 {% endhighlight %}
 
 
@@ -129,7 +139,7 @@ Remove através do valor
 {% highlight python %}
 animals = ["ant", "bat", "cat"]
 animals.remove("ant")
-print animals # ["bat", "cat"]
+print(animals) # ["bat", "cat"]
 {% endhighlight %}
 
 
@@ -140,7 +150,7 @@ Remove através do índice (retorna o valor removido).
 animals = ["ant", "bat", "cat"]
 animals.pop(0)
 # 'ant'
-print animals # ["bat", "cat"]
+print(animals) # ["bat", "cat"]
 {% endhighlight %}
 
 Semelhante a utilização de `del()`:
@@ -148,7 +158,7 @@ Semelhante a utilização de `del()`:
 {% highlight python %}
 animals = ["ant", "bat", "cat"]
 del(animals[0])
-print animals # ["bat", "cat"]
+print(animals) # ["bat", "cat"]
 {% endhighlight %}
 
 
@@ -156,8 +166,16 @@ print animals # ["bat", "cat"]
 
 {% highlight python %}
 lista = ["c", "b", "a"]
-print lista # ['c', 'b', 'a']
+print(lista) # ['c', 'b', 'a']
 
 lista.sort()
-print lista # ['a', 'b', 'c']
+print(lista) # ['a', 'b', 'c']
 {% endhighlight %}
+
+Para ordenar uma lista também é possível utilizar a função interna
+[sorted()](https://docs.python.org/3.4/library/functions.html#sorted "link-externo"), exemplo:
+
+{% highlight python %}
+sorted([5, 2, 3, 1, 4]) # [1, 2, 3, 4, 5]
+{% endhighlight %}
+
