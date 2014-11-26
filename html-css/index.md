@@ -1,14 +1,18 @@
 ---
 layout:      grid12-index
 title:       HTML & CSS
-description: 
+description: Guia prático e conciso sobre HTML e CSS.
 ---
 
 Seja bem vindo a seção de HTML e CSS!
 
 Para quem nunca viu "esses caras" deve começar por aqui:
 
-{% include /menus/html-artigos-intro.html %}
+<div class="list-group">
+    <a href="/html-css/primeiro-html/" class="list-group-item">Primeiro HTML</a>
+    <a href="/html-css/introducao-css/" class="list-group-item">Introdução ao CSS</a>
+    <a href="/html-css/html-primeira-qualidade/" class="list-group-item">Criando um HTML de primeira qualidade</a>
+</div>
 
 Veja também essa belíssima introdução ao HTML do pessoal da Mozilla:
 
