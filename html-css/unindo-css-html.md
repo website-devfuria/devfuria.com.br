@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       Unindo o CSS ao HTML
 description: "Aprenda como unir o CSS ao arquivo HTML através das formas: in line, embeded e linked."
-menu:        html-artigos
+menu:        html-artigos-intro
 ---
 
 Vamos aprender como unir a CSS ao documento HTML.
@@ -84,7 +84,7 @@ Mas há o método campeão...
 
 ### CSS - linked (externos)
 
-Coloca-se as regras de CSS em um arquivo separado do HTML. Normalmente a extensão do arquivo é `.css`.
+Coloca-se as regras de CSS em um arquivo separado do HTML, normalmente a extensão do arquivo é `.css`.
 
 A "cola" é realizada através da tag `link`, veja código de exemplo:
 
