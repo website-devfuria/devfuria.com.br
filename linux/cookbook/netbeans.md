@@ -6,7 +6,7 @@ description: Como instalar o Netbeans no Linux
 
 
 Baixe a última versão no site oficial [http://netbeans.org](http://netbeans.org "link-externo") e dê 
-[permissão de execução](../como-dar-permissao-de-execucao)
+[permissão de execução](/linux/como-dar-permissao-de-execucao)
 
 Execute o arquivo (como usuário normal: 
 

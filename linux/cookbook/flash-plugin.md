@@ -29,7 +29,7 @@ Na verdade os dois são __rpm's__, não sei porque fizeram essa distinção.
 
 Eu testei depois de instalados, então não sei dizer qual que realmente resolveu o problema.
 
-Dê [permissão de execução](../como-dar-permissao-de-execucao) para os arquivos __rpm__ (precisa ser root) e, em seguida,
+Dê [permissão de execução](/linux/como-dar-permissao-de-execucao) para os arquivos __rpm__ (precisa ser root) e, em seguida,
 instale via rpm:
 
     # rpm -ivh nome-do-pacote.rpm
