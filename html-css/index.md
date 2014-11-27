@@ -8,21 +8,7 @@ Seja bem vindo a seção de HTML e CSS!
 
 Para quem nunca viu "esses caras" deve começar por aqui:
 
-<div class="list-group">
-    <a href="/html-css/primeiro-html/" class="list-group-item">Primeiro HTML</a>
-    <a href="/html-css/introducao-css/" class="list-group-item">Introdução ao CSS</a>
-    <a href="/html-css/html-primeira-qualidade/" class="list-group-item">Criando um HTML de primeira qualidade</a>
-</div>
-
-Veja também essa belíssima introdução ao HTML do pessoal da Mozilla:
-
-- [Introdução ao HTML- Mozilla.](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction "link-externo")
-
-
-
-### Artigos
-
-{% include /menus/html-artigos.html %}
+{% include /menus/html-artigos-intro.html %}
 
 
 
@@ -50,6 +36,12 @@ A lista abaixo compõem os controles básicos do tipo __input__:
 A lista abaixo compõem os controles básicos do tipo __não input__:
 
 {% include /menus/html-forms-ninput.html %}
+
+
+
+### Artigos
+
+{% include /menus/html-artigos.html %}
 
 
 
