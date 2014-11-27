@@ -5,14 +5,11 @@ description: Referência prática sobre o perador condicional if / else - JavaSc
 menu:        javascript-refs
 ---
 
-
-Fluxo de controle
-
 As instruções condicionais alteram o fluxo de controle de seu programa.
 
 Elas dizem se devem ir para a "direita" ou para a "esquerda"
 
-A instrução condicional mais comum é o `if`
+A instrução condicional mais comum é o `if`.
 
     if (expressão-condicional) {
         ... executar código
@@ -53,7 +50,7 @@ A ilustração abaixo é genial, trata-se de um diagrama de sintaxe elabora pelo
 
 ![Diagrama da sintaxe do if](sintaxe-if.png "Diagrama da sintaxe do if")
 
-Ela demonstra a instrução __if-else no Javascript__.
+Ela demonstra a instrução __if-else no JavaScript__.
 
 A primeira vez que eu vi esse diagrama achei meio confuso, logo pensei: "mais um diagrama". Depois que eu o compreendi,
 achei genial.
