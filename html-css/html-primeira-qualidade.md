@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       Criando um HTML de primeira qualidade
 description: Aprenda a desenvolver um HTML de primeria qualidade com este exemplo da csszengarden.com
-menu:        html-artigos
+menu:        html-artigos-intro
 ---
 
 O site [www.csszengarden.com](http://www.csszengarden.com/ "link-externo") é notório por seus esforços em promover e 
@@ -50,11 +50,11 @@ Crie um arquivo chamado `zengarden-sample.html` e coloque a estrutura básica do
 </html>
 {% endhighlight %}
 
-Após ter lido atentamente o texto, olhe para ele e pergunte-se: aonde e quais tag's você utilizaria?
+Após ter lido atentamente o texto (abaixo), olhe para ele e pergunte-se: aonde e quais tag's você utilizaria?
 
 Esse é seu exercício!
 
-- Cole o texto (abaixo) dentro do corpo do HTML ( entre as tag's "body").
+- Cole o referido texto dentro do corpo do HTML (entre as tag's "body").
 - Inclua as tag's que achar necessário
 
 Dica: o sinal "#" indicam um subtítulo, você pode e deve removê-los.
@@ -184,4 +184,11 @@ Assista ao vídeo da solução que acompanha esta matéria.
 <iframe width="560" height="315" src="http://www.youtube.com/embed/IMswx5wcqA0" frameborder="0" allowfullscreen></iframe>
 
 Obs: A voz doce ao fundo é minha querida Joana.
+
+
+
+Veja a próxima matéria
+---
+
+- [Introdução ao CSS](/html-css/introducao-css/)
 
