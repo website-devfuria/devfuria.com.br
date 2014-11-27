@@ -5,6 +5,11 @@ description:
 menu:        html-elementos 
 ---
 
+Sem links a web não faria sentido.
+
+São eles que permitem que você siga um rastro de informações de uma página web à próxima e de uma idéia à outra, 
+independente do local em que se encontra o servidor do site.
+
 {% highlight html %}
 <a href="pagina-ao-clicar.html">Isto é um link</a>
 {% endhighlight %}
@@ -39,12 +44,44 @@ o segundo é o valor dessa variável (mas isso nos veremos mais afundo quando es
 <a href="script.php?varA=valor1&varB=valor2">Isto é um link com dois parâmetros</a>
 {% endhighlight %}
 
-O link pode sofrer estilizações interessantes. É muito comum estilizar o link como se fosse um botão e há também um efeito
-que é acionado quando passamos o mouse por cima: é o __hover__ (por cima, pairar).
 
-Para estilizar o "hover" utiliza-se de __pseudoclasses__, a regra CSS abaixo adiciona a cor vermelha a link apenas quando
-passamos o mouse sobre ele.
+Estilizando
+---
+
+O link pode sofrer estilizações interessantes. É muito comum estilizar o link como se fosse um botão e há também um efeito
+que é acionado quando passamos o mouse por cima: é o __hover__ (por cima, pairar). Para isso utilizamos pseudoclasses
+em CSS, boa hora para você entender comom fucionam.
+
+- O seletor de pseudoclasse `:link` afeta links que não foram visitados
+- O seletor de pseudoclasse `:visited` afeta links visitados
+- O seletor de pseudoclasse `:hover` afeta links quando o mouse é posicionado sobre
+- O seletor de pseudoclasse `:active` afeta links quando ele é ativado (clique e segure)
+
+
+O mais comum é desativar o sublihado e reativá-los quando o mouse é posicionado sobre eles, veja a CSS:
 
 {% highlight css %}
-a:hover {background-color: red}
+a:link, a:visited {text-decoration: none}
+a:hover, a:active {text-decoration: underline}
 {% endhighlight %}
+
+
+Você pode querer transformar seu link em um botão. Para tal, configure a propriedade `display` como `block`.
+
+{% highlight css %}
+a {
+  display: block;
+  width: 6em;
+  padding: 0.2em;
+  line-height: 1.4;
+  background-color: #94B8E9;
+  border: 1px solid black;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+{% endhighlight %}
+
+<div data-height="280" data-theme-id="2897" data-slug-hash="raVQKX" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
+<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/raVQKX/'>raVQKX</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
