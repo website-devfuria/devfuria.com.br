@@ -112,6 +112,17 @@ A "cola" é realizada através da tag `link`, veja código de exemplo:
 </html>
 {% endhighlight %}
 
+Eis o arquivo que compõem a folha de estilo `estilos.css`.
+
+{% highlight css %}
+/* Folha de estilo: estilos.css */
+p {
+    font-size: 12px;
+    color: green;
+}
+{% endhighlight %}
+
+
 Agora sim temos um método profissional. Toda CSS fica em arquivo separado que é incluso no HTML através de uma única linha.
 
 Há vantagens e desvantagens em cada um dos métodos, discutiremos isso em breve, por hora saiba que esse é o método mais

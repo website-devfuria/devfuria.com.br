@@ -47,71 +47,7 @@ A letra `p` é o __seletor__, é o alvo da regra CSS.
 
 Entre as chaves `{}`, neste exemplo, há duas propriedades: `font-size` e `color` sendo `12px` e `green` seus respectivos valores.
 
-
-Unindo o CSS ao HTML
----
-
 Há 3 formas de unir o CSS ao HTML: inline, embed e linked.
-
-O exemplo abaixo ilustra a forma inline.
-
-{% highlight html %}
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>Seu primeiro HTML</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <p style="font-size: 12px; color: green;">Aqui é onde as coisas acontecem, o corpo de seu HTML</p>
-    </body>
-</html>{% endhighlight %}
-
-O exemplo abaixo ilustra a forma embeded.
-
-{% highlight html %}
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>Seu primeiro HTML</title>
-        <meta charset="utf-8">
-        <style type="text/css" media="all">
-        p {
-            font-size: 12px;
-            color: green;
-        }
-        </style>
-    </head>
-    <body>
-        <p>Aqui é onde as coisas acontecem, o corpo de seu HTML</p>
-    </body>
-</html>{% endhighlight %}
-
-O exemplo abaixo ilustra a forma linked.
-
-{% highlight html %}
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>Seu primeiro HTML</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="estilos.css" media="all" />
-    </head>
-    <body>
-        <p>Aqui é onde as coisas acontecem, o corpo de seu HTML</p>
-    </body>
-</html>
-{% endhighlight %}
-
-Eis o arquivo que compõem a folha de estilo `estilo.css`.
-
-{% highlight css %}
-/* Folha de estilo: estilo.css */
-p {
-    font-size: 12px;
-    color: green;
-}
-{% endhighlight %}
 
 
 Veja a próxima matéria
