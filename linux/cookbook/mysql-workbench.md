@@ -14,7 +14,7 @@ Primeiro baixe os arquivos __rpm__ no site oficial
 
 Eu abaixei o "Utilities" também e instalei separadamente.
 
-Vá até a sua pasta de download e dê [permissão de execução](../como-dar-permissao-de-execucao).
+Vá até a sua pasta de download e dê [permissão de execução](/linux/como-dar-permissao-de-execucao).
 
 Segundo o [manual do mysql](http://dev.mysql.com/doc/workbench/en/wb-installing-linux.html "link-externo") basta executar:
 

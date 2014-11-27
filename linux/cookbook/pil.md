@@ -43,7 +43,7 @@ Ele depende dos pacotes *python-devel* e *python-setuptools*,  para instalar ess
     apt-get install python3-dev python3-setuptools
 
 
-Eu instalei através do [pip](linux/cookbook/pip/) dessa forma:
+Eu instalei através do [pip](/linux/cookbook/pip/) dessa forma:
 
     pip install Pillow
 

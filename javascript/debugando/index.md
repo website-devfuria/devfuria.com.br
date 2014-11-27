@@ -73,7 +73,7 @@ procurar uma alternativa.
 
 
 Outra forma, também rudimentar, seria mostrar o resultado na própria página (nosso HTML) através do método `write()` do
-objeto nativo [document](/javascript/refs/docuement).
+objeto nativo [document](/javascript/refs/document/).
 
     var minha_variavel = "Hello word";
     document.write(minha_variavel);
