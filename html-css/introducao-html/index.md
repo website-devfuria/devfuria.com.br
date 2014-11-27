@@ -63,7 +63,7 @@ A barra para direita indica qual é a tag de fechamento, exemplo: `<p>aqui é um
 
 
 
-W3C
+Quem define a especificação do HTML e CSS?
 ---
 
 O [W3C](http://www.w3.org/ "link-externo") é um consórcio que regulamenta as especificações tanto do __HTML__ como do __CSS__,
