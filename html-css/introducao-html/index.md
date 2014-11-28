@@ -90,7 +90,7 @@ Sim, são coisas distintas umas das outras, mas em sua essência não passam de 
 Por simplificação, utilizaremos o termo HTML de forma gernérica e quando for necessário ser mais específico utilizaremos
 o termo correto.
 
-O [HTML5](html-css/html5/) é a versão mais atual do HTML. O grupo [WHATWG](http://www.whatwg.org/ "link-externo") não 
+O [HTML5](/html-css/html5/) é a versão mais atual do HTML. O grupo [WHATWG](http://www.whatwg.org/ "link-externo") não 
 teve a mesma pasciência que o pesoal da [W3C](http://www.w3.org/ "link-externo") e saiu na frente com as especificações.
 A nova versão excluíu alguns elementos já defazados, inseriu alguns outros mais "semânticos" e trouxe novidades como 
 videos, armazenamento local, canvas(uma prancheta para você desenhar via código), geo-location, web off-line, campos 
