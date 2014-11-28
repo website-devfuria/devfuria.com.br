@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       HTML - Âncoras (links)
-description:
+title:       HTML & CSS - Âncoras (links)
+description: Aprenda comom criar e estilizar links (âncoras) em HTML e CSS
 menu:        html-elementos 
 ---
 
@@ -66,14 +66,20 @@ a:hover, a:active {text-decoration: underline}
 {% endhighlight %}
 
 
-Você pode querer transformar seu link em um botão. Para tal, configure a propriedade `display` como `block`.
+Você pode querer transformar seu link em um botão. Para tal, utilize a propriedade `display` como `block`.
+
+A primeira parte da regra de CSS abaixo refere-se a questão mais estrutural do botão e a segunda parte refere-se mais a
+a questão de estética.
 
 {% highlight css %}
 a {
+  /* primeira parte */
   display: block;
-  width: 6em;
-  padding: 0.2em;
-  line-height: 1.4;
+  width: 150px;
+  padding: 5px;
+  line-height: 1.4em;
+  
+  /* segunda parte */
   background-color: #94B8E9;
   border: 1px solid black;
   color: #000;
@@ -82,6 +88,26 @@ a {
 }
 {% endhighlight %}
 
-<div data-height="280" data-theme-id="2897" data-slug-hash="raVQKX" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
-<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/raVQKX/'>raVQKX</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+O CSS acima resulta em...
+
+![](botao-css.png)
+
+O único comentário vai para a propriedade `line-height`, porque estamos utilizando `line-height` para controlar a altura
+do botão em vez de simplesmente `height`? Isso é um truque para centralizar verticalmente o botão. Se fosse configurar
+uma altura, você provavelmente teria de utilizar preenchimento para empurrar o texto para baixo e criar uma centralização
+vertical falsa. Entretanto, o texto sempre é centralizado verticalmente em uma caixa de linha; portanto, utilizando
+`line-heigth`, o texto sempre será posicionado no centro da caixa. Mas há uma desvantagem, se houver duas quebras de
+linhas no texto do seu botão, esse botão terá o dobro da altura desejada. A única maneira de evitar isso é dimensionar
+seus botões e o texto de tal maneira que o texto não mude de linha. (Andy Budd, Criando Páginas Web com CSS, pág 82)
+
+
+
+### Rollover simples
+
+O uso da pseudoclasse `:hover` permite criar efeitos de rollover. Você pode estender o exemplo anterior para incluir
+um efeito de rollover muito simples, configurando apenas a cor de fundo e a cor de texto do link quando o mouse é
+posicionado sobre ele, veja o exemplo abaixo.
+
+![](botao-css-hover.png)
+
