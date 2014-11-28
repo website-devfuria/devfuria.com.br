@@ -5,7 +5,9 @@ description:
 menu:        html-artigos-intro
 ---
 
-
+Um documento HTML bem estruturado fornece a estrutura à qual seus estilos são aplicados, Para poder estilizar um
+determinado elemento HTML utilizando CSS, você precisa ter uma maneira de selecionar esses elementos. Na CSS a parte
+de uma regra de estile que faz isso é chamada de __seletor__.
 
 ### Seletor tipo (tags)
 
