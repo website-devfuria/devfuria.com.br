@@ -114,7 +114,7 @@ fácil validar. Ainda como prevenção o OWASP Top 10 (2007) reitera que, é nec
 observamos abaixo:
 
 * Sempre que possível, evitar a exposição de referências de objetos privados a usuários, como chaves primárias e nomes de arquivos.
-* Através da abordagem “aceite o reconhecido como bom”(whit list) validar cada referência privada a objetos.
+* Através da abordagem "aceite o reconhecido como bom"(whit list) validar cada referência privada a objetos.
 * Verificar a autorização de todos os objetos referenciados. O método mais indicado é usar um valor de índice ou um mapa 
 de referência para prevenir ataques de manipulação de parâmetros
 * Se expor referências diretas aos registros de banco de dados certifique-se que as declarações SQL e outros métodos de 

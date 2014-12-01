@@ -8,8 +8,8 @@ meta:        (OWASP top ten 2010)
 A Injeção caracteriza-se quando o atacante, incluindo utilizadores internos e administradores, podem enviar dados não 
 confiáveis ao sistema, ou seja, sem tratamento adequado. Esses dados (na verdade trata-se de strings que formam uma
 consulta, queries) chegam até o sistema e atingem um interpretador de comandos. A injeção pode ocorrer como consultas
-SQL, LDAP ou Xpath. “...este método é particularmente perigoso, pois consiste na inserção de código SQL não previsto e,
-de modo arbitrário, compromete toda a funcionalidade do sistema e também da base de dados.” (SICA; REAL, 2007, p 65)
+SQL, LDAP ou Xpath. "...este método é particularmente perigoso, pois consiste na inserção de código SQL não previsto e,
+de modo arbitrário, compromete toda a funcionalidade do sistema e também da base de dados." (SICA; REAL, 2007, p 65)
 
 Segundo o projeto OWASP Top 10 (2010) a classificação do risco é enquadrado da seguinte forma: o vetor de ataque é 
 considerado fácil pois pode ser constituído por qualquer fonte de dados. A detecção é considerada média porque é fácil
@@ -107,8 +107,8 @@ de banco de dados utilizado na codificação. (GILMORE, 2008 p.631)
 O código abaixo faz uso da extensão PDO, entre as linhas 3 e 11 ocorre a conexão com o banco de dados, na linha 9 é 
 instanciada a classe PDO. As linhas 13 e 14 recebem os dados do formulário. A linha 16 utiliza o método prepare() do 
 objeto instanciado para preparar o comando SQL, repare que não é passado os parâmetros diretamente na declaração SQL, 
-em seu lugar estão apenas as referências “:login” e “:senha”. A função principal é a bindParam() que “liga-se um 
-parâmetro para o nome da variável especificada” (Manual Oficial do PHP, 2011) é ela quem faz todo o trabalho de 
+em seu lugar estão apenas as referências ":login" e ":senha". A função principal é a bindParam() que "liga-se um 
+parâmetro para o nome da variável especificada" (Manual Oficial do PHP, 2011) é ela quem faz todo o trabalho de 
 sanitização. A linha 20 executa o comando e, entre as linhas 22 e 25, é checado o resultado da consulta.
 
 {% highlight php linenos %}
@@ -150,7 +150,7 @@ garantindo assim a integridade da declaração SQL.
 No código abaixo, entre as linhas 2 e 6 o código faz a conexão com o banco de dados através do driver mysqli (conjunto 
 de código com o objetivo de realizar e gerenciar a conexão entre o código fonte e o SGBD). As linhas 8 e 9 recebem os
 dados vindos do formulário. Entre as linhas 11 e 13 é montado um array na variável `$query` onde o índice 0 (zero) contém
-o comando SQL que faz “chamada” para a SP e o índice 1 recupera o valor retornado pela SP. A linha 15 executa o comando SQL
+o comando SQL que faz "chamada" para a SP e o índice 1 recupera o valor retornado pela SP. A linha 15 executa o comando SQL
 do índice o(zero). A linha 16 executa o comando SQL de índice 1 e guarda o seu resultado na variável `$res`. A linha 17
 apenas transforma o resultado da consulta em um objeto. Entre as linhas 20 e 24 checamos o resultado da consulta.
 
@@ -196,7 +196,7 @@ BEGIN
 END #
 {% endhighlight %}
 
-A terceira e última forma, codificação de saída de caractere, também conhecida como “escapar caractere”, é utilizar 
+A terceira e última forma, codificação de saída de caractere, também conhecida como "escapar caractere", é utilizar 
 determinada função com o objetivo de codificar a saída de caracteres indesejados, no caso `'`(aspa simples), `''`
 (aspas duplas), `\` (barras), `\n` (quebra de linhas) e `\r` (recuo de carro). Existem várias funções com esse objetivo
 e também podem ser aplicadas diferentes abordagens para codificação de saída de caracteres. Wichers (2011) Sugere que a

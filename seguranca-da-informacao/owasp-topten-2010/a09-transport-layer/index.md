@@ -61,7 +61,7 @@ A prevenção primaria referente a camada de transporte poderá ser feita atrav�
 
 {% highlight php %}
 <?php
-setcookie(“nome_do_cookie”, $valor, $tempo_experiar, $dominio, true);
+setcookie("nome_do_cookie", $valor, $tempo_experiar, $dominio, true);
 {% endhighlight %}
 
 * Configurar o fornecedor SSL para suportar apenas algoritmos robustos, preferencialmente os compatíveis com a FIPS 140-2

@@ -14,14 +14,14 @@ externo (apontando para fora da aplicação, outro domínio). A tabela abaixo si
 
 Para fazer com que a vítima acesse a URL maliciosa o atacante utiliza-se de engenharia social. Ele escolhe a empresa com
 um sistema web que contém a vulnerabilidade, reproduz um e-mail que será enviado para várias endereços eletrônico com a
-URL maliciosa. A mensagem deste e-mail ilude a vítima pedindo, por exemplo, que ela “acesse o link para liberar novo
-módulo de segurança para acesso a conta corrente”. Costumam ser mensagens que induzem a vítima a uma ação imediata,
+URL maliciosa. A mensagem deste e-mail ilude a vítima pedindo, por exemplo, que ela "acesse o link para liberar novo
+módulo de segurança para acesso a conta corrente". Costumam ser mensagens que induzem a vítima a uma ação imediata,
 fazendo-a agir primeiro e pensar depois.
 
 Para fazer com que a vítima acesse a URL maliciosa o atacante utiliza-se de engenharia social. Ele escolhe a empresa com
 um sistema web que contém a vulnerabilidade, reproduz um e-mail que será enviado para várias endereços eletrônico com a
-URL maliciosa. A mensagem deste e-mail ilude a vítima pedindo, por exemplo, que ela “acesse o link para liberar novo
-módulo de segurança para acesso a conta corrente”. Costumam ser mensagens que induzem a vítima a uma ação imediata,
+URL maliciosa. A mensagem deste e-mail ilude a vítima pedindo, por exemplo, que ela "acesse o link para liberar novo
+módulo de segurança para acesso a conta corrente". Costumam ser mensagens que induzem a vítima a uma ação imediata,
 fazendo-a agir primeiro e pensar depois.
 
 

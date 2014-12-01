@@ -44,10 +44,10 @@ monitoramento de redes, DMZ (demilitarized zone), Biometria, etc... quando bem
 aplicados, fazem seu trabalho de forma eficiente e pontual e garantem uma maior
 proteção ao sistema computacional. É possível afirmar que todas as camadas da
 rede estão bem desenvolvidas quanto a segurança exceto para a camada de
-aplicação. Conforme Albuquerque e Ribeiro (2002, p. 1), “o desenvolvimento de
+aplicação. Conforme Albuquerque e Ribeiro (2002, p. 1), "o desenvolvimento de
 sistemas é uma das áreas mais afetadas pelos aspectos da segurança. Muitos dos
 problemas de segurança existentes hoje, não são, nem físicos e nem de
-procedimento, mas sim, devidos a erros de programação ou de arquitetura.”
+procedimento, mas sim, devidos a erros de programação ou de arquitetura."
 
 
 Existem dois motivos básicos que justifica a razão da necessidade de
@@ -152,7 +152,7 @@ O capítulo sobre [A1-Injection](a01-injection/) tratará da Injeção de instru
 pode executar códigos em linguagem SQL danificando banco de dados e comprometendo, dessa forma, a aplicação web.
 
 O capítulo sobre [A2-Cross-Site Scripting (XSS)](a02-cross-site-scripting/) tratará das 3 formas de XSS: refletido, armazenado e baseado no 
-modelo DOM. Ambas permitem ao atacante a execução de scripts no navegador da vítima com o intuito de “roubar” a sessão 
+modelo DOM. Ambas permitem ao atacante a execução de scripts no navegador da vítima com o intuito de "roubar" a sessão 
 de navegação, alterar sites da internet (pichar) ou, até mesmo, redirecionar os usuários para sites maliciosos.
 
 O capítulo sobre [A3-Broken Authentication and Session Management](a03-broken-authentication/) tratará da quebra de autenticação que explora as 
