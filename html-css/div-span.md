@@ -26,7 +26,7 @@ Para entender melhor essa questão dos elementos de bloco ou inline leia a maté
 
 A tag `span` acomoda pequenos trechos de texto.
 
-{% highlight javascript %}
+{% highlight html %}
 <span>um pequeno texto</span>
 {% endhighlight %}
 
