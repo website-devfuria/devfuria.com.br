@@ -54,13 +54,14 @@ Prevenção
 A prevenção primaria referente a camada de transporte poderá ser feita através das recomendações do OWASP Top 10 (2010):
 
 * Solicitar SSL para todas as páginas sensíveis. Pedidos não-SSL para estas páginas deverão  ser redirecionados para a página SSL.
-* Colocar a opção “secure” em todos os cookies sensíveis. A função setcookie criar um cookie caso nenhuma saída tenha 
+* Colocar a opção "secure" em todos os cookies sensíveis. A função setcookie criar um cookie caso nenhuma saída tenha 
   sido enviada para o navegador. O quinto parâmetro da função aceita um valor booleano e por padrão é false. Quando o 
-  valor desse parâmetro for true, a opção “secure” será ativada, isto é, o cookie só poderá ser transimitido sob uma 
-  conexão segura HTTPS do cliente. O código abaixo ilustra a utilização da opção “secure”.
+  valor desse parâmetro for `true`, a opção "secure" será ativada, isto é, o cookie só poderá ser transmitido sob uma 
+  conexão segura HTTPS do cliente. O código abaixo ilustra a utilização da opção "secure".
 
-{% highlight html %}
-code 9.1
+{% highlight php %}
+<?php
+setcookie(“nome_do_cookie”, $valor, $tempo_experiar, $dominio, true);
 {% endhighlight %}
 
 * Configurar o fornecedor SSL para suportar apenas algoritmos robustos, preferencialmente os compatíveis com a FIPS 140-2
