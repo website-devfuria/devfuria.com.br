@@ -199,7 +199,7 @@ li:first-child a {
 }
 {% endhighlight %}
 
-Como consequência, simplificamos o nosso HTML, pois não precisaremos anotar a classe ao elemento HTML
+Como consequência, simplificamos o nosso HTML, pois não precisaremos anotar a classe ao elemento HTML.
 
 {% highlight html %}
 <li class="selected"><a href="home.htm">Home</a></li>
