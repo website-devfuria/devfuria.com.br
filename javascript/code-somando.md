@@ -34,7 +34,8 @@ function mostrar(valor) {
 </div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
-Preciso alertar que essa implementação não é a forma ideal de se programar em JavaScript.
+Preciso alertar que essa implementação não é a forma ideal de se programar em JavaScript. Na verdade, essa era a forma
+ideal praticada no anos 90. Hoje (nov/2014), podemos/devemos ao menos fazer algumas observações...
 
 Primeiro, estamos [poluindo o espaço global](/javascript/refs/objeto-global/). A variável `num` e nossas 3 funções estão
 "soltas", elas deveriam estar em um container, por exemplo:
@@ -54,7 +55,7 @@ var app = {
 }
 {% endhighlight %}
 
-Segundo, estamos utilizando a propriedade `onclick` dos botões HTML, não que isso seja proibido, mas normalmente 
+Segundo, estamos utilizando a propriedade [onclick](/javascript/refs/onclick/) dos botões HTML, não que isso seja proibido, mas normalmente 
 "buscamos" o elemento via JavaScript e atribuímos a função desejada via código, exemplo:
 
 {% highlight javascript %}
