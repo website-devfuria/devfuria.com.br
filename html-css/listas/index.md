@@ -90,7 +90,7 @@ Começaremos com seguinte HTML:
 
 {% highlight html %}
 <ul>
-    <li class="first selected"><a href="home.htm">Home</a></li>
+    <li><a href="home.htm">Home</a></li>
     <li><a href="about.htm">About</a></li>
     <li><a href="services.htm">Our Services</a></li>
     <li><a href="work.htm">Our Work</a></li>
@@ -166,11 +166,41 @@ Agora, o efeito colateral é no primeria linha (na parte superior) ela não é m
 precisa redefinir a altura da primeira âncora como 40 pixels ( a altura máxima da imagem). Faremos isso aplicando uma 
 classe chamada `.first` ao primeiro item da lista.
 
-{% highlight html %}
+{% highlight css %}
 .first a {
     height: 40px;
     line-height: 40px;
 }
 {% endhighlight %}
 
+Não se esquece de adicionar a classe ao elemento HTML, veja:
 
+{% highlight html %}
+<li class="first"><a href="home.htm">Home</a></li>
+{% endhighlight %}
+
+Caso queiramos destacar o primeiro item (por ele ter sido o selecionado) poderemos utilizar as duas classes juntas, veja:
+
+{% highlight html %}
+<li class="first selected"><a href="home.htm">Home</a></li>
+{% endhighlight %}
+
+
+Aqui vale um alerta, tome cuidado com exemplos antigos de CSS e que não exploram todos os poderes da CSS (no caso a CSS 3).
+
+O exemplo acima seria válido caso a pseudoclasse `:first-child` da CSS 3 não estivesse em vigor. Ela (a pseudoclasse 
+`:first-child`) aplicará o estilo apenas ao primeiro filho. Aproveitando-se disso, podemos aplicar o estilo da classe 
+`.first` ao primeiro elemento de nossa lista, veja:
+
+{% highlight css %}
+li:first-child a {
+    height: 40px;
+    line-height: 40px;
+}
+{% endhighlight %}
+
+Como consequência, simplificamos o nosso HTML, pois não precisaremos anotar a classe ao elemento HTML
+
+{% highlight html %}
+<li class="selected"><a href="home.htm">Home</a></li>
+{% endhighlight %}
