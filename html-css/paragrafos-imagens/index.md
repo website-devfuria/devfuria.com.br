@@ -29,10 +29,16 @@ Abaixo, apresento as duas tag's juntas para ilustrar como elas (podem) interagem
 </p>
 {% endhighlight %}
 
-As duas tag's sozinhas não fazem muita coisa, mas se adicionarmos ao tempero a propriedade CSS __float__ a brincadeira 
-ficará mais interessante.
 
-Podemos dizer para a imagem flutuar à equerda, então o texto fluirá para o lado inverso (direita), veja o código e o 
+
+
+Estilizando
+---
+
+As duas tag's sozinhas não fazem muita coisa, mas se adicionarmos ao tempero a propriedade CSS [float](/html-css/float/)
+a brincadeira ficará mais interessante.
+
+Podemos dizer para a imagem flutuar à esquerda, então o texto fluirá para o lado inverso (direita), veja o código e o 
 resultado abaixo.
 
 Obs: eu coloquei `5px` de margem só para melhorar um pouco.
