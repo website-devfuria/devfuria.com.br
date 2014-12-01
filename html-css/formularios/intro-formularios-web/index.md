@@ -33,7 +33,12 @@ Abaixo, temos um exemplo de formulário.
 </html>
 {% endhighlight %}
 
-O formulário pega os dados digitados pelo usuário, associa cada dado a um nome de campo e os envia ao servidor. 
+
+
+Como os formulários web funcionam?
+---
+
+O formulário "pega" os dados digitado pelo usuário, associa cada dado a um nome de campo e os envia ao servidor. 
 Lá no outro lado (no servidor), um linguagem de servidor recebe os dados e faz alguma coisa com eles, seguindo a lógica
 do script criado pelo programador.
 
@@ -48,7 +53,7 @@ A tag `form` é o início do formulário.
 Dentro das tags `form` colocamos os controles (inputs), labels e alguns botões.
 
 Um formulário na web normalmente é chato de se preencher, só que ele é a alma dos aplicativos web, pois é através de seus
-campos que o usuário faz a inserção dos dados e, dessa forma, interaje com o sistema.
+campos que o usuário faz a inserção dos dados e, dessa forma, interage com o sistema.
 
 Um formulário pode (e deve) conter elementos que formam um par `nome=valor`.
 
@@ -57,11 +62,10 @@ esse formulário submeter seus dados para o servidor, ele poderá trabalhar com 
 
 Esse negócio é tão simples que fica até difícil de explicar, rs.
 
-Veja o famoso formulário do Facebook. Vamos analisar apenas a "tarja azul". Temos os campos `login`, `senha` e uma chekbox
- "mantanha-me conectado".
+Veja o famoso formulário horizontal do Facebook. Vamos analisar apenas a "tarja azul", temos os campos `login`, `senha` e uma
+chekbox "mantanha-me conectado".
 
-
-!["falhou"](form-facebook.png)
+!["formulário web de exemplo"](form-facebook.png "formulário web de exemplo")
 
 Quando o usuário preencher os dados e clicar no botão "Entrar" o servidor poderá trabalhar com os seguintes dados:
 
@@ -69,10 +73,17 @@ Quando o usuário preencher os dados e clicar no botão "Entrar" o servidor pode
     senha=1234
     manter=false
 
-Essa questão da interação __formulário/servidor__ nós veremos em outro momento, ok? Aqui, no curso de HTML e CSS vamos 
-nos deter apenas em seu layout e estrutura.
+Essa questão da interação __formulário/servidor__  é assunto para as linguagens de servidores. Aqui, no curso de HTML e
+CSS vamos nos deter apenas em seu layout e estrutura.
 
 <hr>
 Fonte:
 
 - [My first HTML form (MDN) - Exemplo básico de formulário web](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form "link-externo")
+
+
+
+Estilizando
+---
+
+
