@@ -9,7 +9,7 @@ A XSS ocorre quando a aplicação inclui dados fornecidos pelo atacante numa pá
 alguma validação ou filtragem tenha sido feita. Pode ser, também, considerado como inserção HTML. O atacante utiliza-se
  da linguagem do lado do cliente (client-side) como o Java Script, por ser uma poderosa ferramenta de scripting, mas 
 qualquer linguagem de script suportada pelo navegador da vítima é um alvo potencial para este ataque inclusive 
-interpretadores como, por exemplo, Flash, SilverLight, ActiveX, VBScript e até mesmo “comportamentos não padrão” do 
+interpretadores como, por exemplo, Flash, SilverLight, ActiveX, VBScript e até mesmo "comportamentos não padrão" do 
 navegador podem introduzir vetores de ataques sutis, dificultando, dessa forma, a detecção da vulnerabilidade.
 
 > Essa modalidade de ataque ocorre quando uma aplicação web aceita dados do usuário sem nenhum tipo de tratamento. 
@@ -34,7 +34,7 @@ validar ou filtrar os dados.
 
 Importante frisar que o Javascript permite o uso do protocolo XmlHttpRequest que por sua vez permite o uso da 
 tecnologia AJAX. O uso do XmlHttpRequest permite, em alguns casos, contornar a política do navegador conhecida como 
-“same source origination” encaminhado os dados da vítima para sites hostis e criando worms complexos e zumbis maliciosos.
+"same source origination" encaminhado os dados da vítima para sites hostis e criando worms complexos e zumbis maliciosos.
 
 Segundo o projeto OWASP Top 10 (2010) a classificação do risco é enquadrado da seguinte forma: o Impacto técnico desta 
 vulnerabilidade é moderada podendo o atacante executar scripts no navegador da vítima para sequestrar dados de sessão, 
@@ -66,9 +66,9 @@ O ataque XSS se concretiza quando a aplicação não trata os dados quando estes
 servidor cliente).
 
 Um exemplo mais concreto seria o mencionado no projeto OWASP Top 10 (2010). O atacante envia um trecho de código escrito
- em JavaScript que retorna o cookie do navegador através da função “document.cookie” e redireciona essa informação 
-utilizando-se da função “document.location” para o site do atacante denominado www.attacker.com . Neste site, um script
-escrito em cgi denominado “cookie.cgi” se encarregará de receber e armazenar o cookie roubado. Neste ataque, o atacante
+ em JavaScript que retorna o cookie do navegador através da função "document.cookie" e redireciona essa informação 
+utilizando-se da função "document.location" para o site do atacante denominado www.attacker.com . Neste site, um script
+escrito em cgi denominado "cookie.cgi" se encarregará de receber e armazenar o cookie roubado. Neste ataque, o atacante
  está preocupado com o ID de sessão de navegação da vítima, com posse dessa informação o atacante poderá criar 
 requisições para o site verdadeiro como um usuário real. Os códigos abaixo ilustram este ataque:
 
@@ -162,7 +162,7 @@ Este sinais podem (devem) ser trocados pelos indicados na tabela abaixo.
 </table>
 
 
-É possível ainda fazer uso da ESAPI com módulo “HTML entity escaping and unescaping” conforme ilustrado no código abaixo.
+É possível ainda fazer uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme ilustrado no código abaixo.
 
 {% highlight php %}
 <?php
@@ -181,9 +181,9 @@ código abaixo e pode ser compreendida da seguinte forma:
 
     <div attr=...NÂO COLOCAR DADOS INSEGUROS AQUI...->content</div>
     <div attr='...NÂO COLOCAR DADOS INSEGUROS AQUI...-'>content</div>
-    <div attr="...NÂO COLOCAR DADOS INSEGUROS AQUI...”->content</div>
+    <div attr="...NÂO COLOCAR DADOS INSEGUROS AQUI..."->content</div>
 
-É possível ainda fazer uso da ESAPI com módulo “HTML entity escaping and unescaping” conforme demonstrado no código abaixo.
+É possível ainda fazer uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme demonstrado no código abaixo.
 Repare que o método chamado difere do método chamado na utilização da ESAPI para a Regra 1.
 
 {% highlight php %}
@@ -216,7 +216,7 @@ utilize parâmetros, atribuição à variáveis e principalmente tratadores de e
     <script>x='...NÂO COLOCAR DADOS INSEGUROS AQUI...'</script>
     <div onmouseover="x='...NÂO COLOCAR DADOS INSEGUROS AQUI...'"</div>    
 
-É possível fazer uso da ESAPI com módulo “HTML entity escaping and unescaping” conforme demonstrado no código abaixo.
+É possível fazer uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme demonstrado no código abaixo.
 
 {% highlight php %}
 <?php
@@ -234,7 +234,7 @@ código HTML abaixo ilustrada os locais que não devem ser colocados dados não 
     <style>selector { property : "...NÂO COLOCAR DADOS INSEGUROS AQUI..."; } </style>
     <span style="property : ...NÂO COLOCAR DADOS INSEGUROS AQUI...">text</style>
 
-É possível fazer uso da ESAPI com módulo “HTML entity escaping and unescaping” conforme demonstrado no código abaixo.
+É possível fazer uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme demonstrado no código abaixo.
 
 {% highlight php %}
 <?php
@@ -250,7 +250,7 @@ os dados não confiáveis:
 
     <a href="http://www.somesite.com?test=...NÂO COLOCAR DADOS INSEGUROS AQUI...">link</a >
 
-Para esta regra poderá ser feito o uso da ESAPI com módulo ”HTML entity escaping and unescaping” conforme demonstrado 
+Para esta regra poderá ser feito o uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme demonstrado 
 pelo código abaixo.
 
 {% highlight php %}
@@ -285,7 +285,7 @@ ataques XSS em geral.
 
 
 Para a devida prevenção de XSS baseado no DOM é preciso utilizar a ESAPI, porém não existe nenhum método específico 
-contra XSS baseado em DOM. É preciso usar uma combinação dos métodos “encoders” fornecida pela API. A questão é saber 
+contra XSS baseado em DOM. É preciso usar uma combinação dos métodos "encoders" fornecida pela API. A questão é saber 
 qual método utilizar, pois cada subcontexto necessita de seu método de prevenção. Por subcontexto é compreendido que um
 ataque de XSS baseado no DOM utiliza-se de código JavaScript concomitante uma tecnologia ou particularidade desta 
 tecnologia, por exemplo, é possível fazer um ataque que utiliza-se de código JavaScript e código HTML, no caso 

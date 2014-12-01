@@ -35,11 +35,12 @@ tornar dispendiosa.
 Exemplo de sistema aplicação vulnerável
 ---
 
-O principal método de ataque é chamado de “navegação forçada” (forced browsing), na qual envolve técnicas de adivinhação
-de links (“guessing”) e força bruta (brute force) para achar páginas desprotegidas. O atacante pode forçar a navegação 
+O principal método de ataque é chamado de "navegação forçada" (forced browsing), na qual envolve técnicas de adivinhação
+de links ("guessing") e força bruta (brute force) para achar páginas desprotegidas. O atacante pode forçar a navegação 
 das URL ́s alvo. As URL's listadas no código abaixo exemplificam áreas do sistema que requerem autenticação.
 
-    código 8.1
+    http://sistemavulneravil.com/app/getAppInfo
+    http://sistemavulneravil.com/app/admin_getAppifo
 
 As áreas  (pastas) listas abaixo são exemplos de pastas do Sistema Operacional Linux. São muito conhecidas e
 por essa razão podem ser alvos fáceis.
@@ -50,22 +51,41 @@ por essa razão podem ser alvos fáceis.
     /admin/
     /test/
 
-Este tipo de ataque também é conhecido como “path transversal”, ele ataca as pastas do sistema operacional através do 
+Este tipo de ataque também é conhecido como "path transversal", ele ataca as pastas do sistema operacional através do 
 sistema web vulnerável. O código seguinte exemplifica um sistema vulnerável. A linha 02 armazena na variável `$template`
 o valor referente ao templete padrão `blue.php`. A linha 03 e 04 recebe os dados do cookie `template`, parâmetro este,
 acessível ao usuário e que pode ser manipulado pelo atacante. A linha 05 expressa a vulnerabilidade, ela concatena o 
 valor do parâmetro (malicioso) e busca o arquivo no disco rígido.
 
-    código 8.3
+{% highlight php linenos %}
+<?php
+
+$template = 'blue.php';
+
+if (  isset($_COOKIE['template'])  ){
+
+    $template = $_COOKIE['template'];
+    include ( "/home/users/phpguru/templates/" . $template );
+
+}
+
+?>
+{% endhighlight %}
 
 O atacante poderia forjar a requisição conforme ilustrado abaixo.
 
-    código 8.4
+    GET /vulnerable.php HTTP/1.0
+    Cookie: TEMPLATE=../../../../../../../../../etc/passwd
 
 Neste caso, o servidor da aplicação geraria a seguinte informação:
 
-   código 8.5
+    HTTP/1.0 200 OK
+    Content-Type: text/html
+    Server: Apache
 
+    root:fi3sED95ibqR6:0:1:System Operator:/:/bin/ksh 
+    daemon:*:1:1::/tmp: 
+    phpguru:f8fk3j1OIf31.:182:100:Developer:/home/users/phpguru/:/bin/csh
 
 
 As seguintes funções do PHP merecem atenção especial, quando for realizada a revisão do código: `include()`, 
@@ -89,15 +109,27 @@ em cada página do sistema. O OWASP Top 10 (2010) sugere as seguintes recomenda�
 * As políticas de autenticação e autorização devem ser baseadas em papéis/perfis minimizando, dessa forma, esforços de
 manutenção dos mesmo. Implementar perfis de acesso é criar papéis que podem ser associados aos usuários, dessa forma a 
 configuração se faz no perfil e não em cada usuário o que torna o trabalho de permissão e restrição de acesso mais 
-preciso e menos penoso. Como exemplo um sistema pode ter dois perfis de acesso: “administradores” e “básicos”, esses 
+preciso e menos penoso. Como exemplo um sistema pode ter dois perfis de acesso: "administradores" e "básicos", esses 
 papéis são associados aos usuários e podem, inclusive, ser utilizados para um grupo de usuários.
 
 * O mecanismo de controle de acesso deve proteger todas as URL ́s do sistema web verificando as funções e direitos do 
 usuário antes que qualquer processamento ocorra. Para pulverizar o mecanismo de controle o mesmo deve ser de fácil 
-implementação. O código abaio demonstra um exemplo de implementação.
+implementação. O código abaixo demonstra um exemplo de implementação.
 
-{% highlight html %}
-código 8.6
+{% highlight php linenos %}
+<?php
+try{
+    $ESAPI->accessController()->assertAuthorized("businessFunction", runtimeData);
+    //a aplicação segue se curso normalmente
+    if ( $ESAPI->accessController()->isAuthorized("businessFunction", runtimeData) )
+        echo "<a href=\"/doAdminFunction\">ADMIN</a>";
+    else
+        echo "<a href=\"/doNormalFunction\">NORMAL</a>";
+
+} catch ($ESAPI->AccessControlException) {
+      // um ataque pode estar acontecendo
+}
+?>
 {% endhighlight %}
 
 * As política de autenticação não devem ser codificadas diretamente nas aplicações o que a tornaria pouco flexível. 
@@ -123,14 +155,16 @@ web (document root).
 * Proteção por obscuridade não é suficiente para proteger dados e funções sensíveis, não suponha que as URL's estarão 
 fora do alcance do atacante. Assegure-se que ações com privilégios altos e administrativos estejam protegidos.
 
-* Bloquear acesso a todos os tipos de arquivos que não sejam do tipo executável(.php). Este
-filtro deve seguir a abordagem “accept know good” . Arquivos com extensões .xml, .ini, .txt,
-arquivos de log e outros não devem ser executados diretamente. Essa proteção se faz
-através da utilização do arquivo .htaccess. O código abaixo exemplifica uma restrição aos tipos
-de arquivos citados.
+* Bloquear acesso a todos os tipos de arquivos que não sejam do tipo executável(.php). Este filtro deve seguir a 
+abordagem "accept know good" . Arquivos com extensões `.xml`, `.ini`, `.txt`,  arquivos de log e outros não devem ser
+executados diretamente. Essa proteção se faz através da utilização do arquivo `.htaccess`. O código abaixo exemplifica
+uma restrição aos tipos de arquivos citados.
 
-{% highlight html %}
-código 8.7
+{% highlight PowerShell %}
+# www/.htaccess
+ReswriteEngine On
+# RewriteBase/
+RewriteRule !\,(js|ico|txt|gif|jpg|png|css)$index.php
 {% endhighlight %}
 
 * Manter o antivírus atualizado e as correções de segurança principalmente para os componentes que manipulam arquivos 

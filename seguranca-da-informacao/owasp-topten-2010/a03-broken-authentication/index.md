@@ -7,7 +7,7 @@ meta:        (OWASP top ten 2010)
 
 Esta vulnerabilidade está relacionada com a autenticação e o gerenciamento de sessão da aplicação web. Esta 
 vulnerabilidade se caracteriza quando a aplicação apresenta falhas em áreas como a saída de sessão (logout), gestão de
-palavras chave, expiração de sessões, sistemas do tipo “lembre- me” (remember me), questões secretas e atualizações de
+palavras chave, expiração de sessões, sistemas do tipo "lembre- me" (remember me), questões secretas e atualizações de
 conta. Dentro do universo de autenticação e gerenciamento de sessões essas funções são consideradas menos importantes e,
 por essa razão, as mais atacadas. Não obstante, falhas no mecanismo principal não são incomuns.
 
@@ -34,7 +34,7 @@ OWASP Top 10 (2010)
 
 Quando os processos de expiração da sessão não estão implementados de forma adequada o sistemas encontra-se vulnerável,
 por exemplo, o usuário utiliza um computador público para acessar a um sistema web, ao termino de sua utilização ele em
-vez de selecionar a opção de “logout” para sair da sessão, ele simplesmente fecha a janela do navegador web e vai-se 
+vez de selecionar a opção de "logout" para sair da sessão, ele simplesmente fecha a janela do navegador web e vai-se 
 embora. Um atacante pode utilizar o mesmo navegador web uma hora mais tarde e mesmo assim a sessão original continua 
 ativa e devidamente autenticada.
 
@@ -44,9 +44,9 @@ que o identificador da sessão acompanha a URL. Quando um de seus amigos acessar
 sessão como também os dados pertinentes à sua conta de acesso, como por exemplo, número de cartão de crédito associado a
 sessão.
 
-Um atacante mais experiente, notando que o sistema lhe pede para  responder a uma pergunta como por exemplo, “Qual é a 
-sua cor favorita?”, poderá recuperar a senha de acesso utilizando-se um aplicativo para aplicar um ataque do tipo 
-“task force” até que seja descoberta a cor correta que satisfaça a pergunta. O aplicativo de “task force” é configurado
+Um atacante mais experiente, notando que o sistema lhe pede para  responder a uma pergunta como por exemplo, "Qual é a 
+sua cor favorita?", poderá recuperar a senha de acesso utilizando-se um aplicativo para aplicar um ataque do tipo 
+"task force" até que seja descoberta a cor correta que satisfaça a pergunta. O aplicativo de "task force" é configurado
 para realizar requisições subsequentes e em cada uma delas uma cor será testada, a cor correta é descoberta pela 
 resposta de cabeçalho HTTP da aplicação que quando a cor está errada envia uma resposta negativa e quando a cor está 
 correta envia uma resposta afirmativa.
@@ -63,7 +63,7 @@ A recomendação primária do OWASP Top 10 (2010) é:
 
 * Tornar disponível para os programadores um conjunto único de controles de autenticação forte e de gestão de sessões. 
   Este controles devem ser capazes de atender a todos os requisitos para autenticação e gestão de sessões definidos no
-  documento “Application Security Verification Standar(ASVS)” em particular as seções V2(Autenticação) e V3 (Gestão de
+  documento "Application Security Verification Standar(ASVS)" em particular as seções V2(Autenticação) e V3 (Gestão de
   Sessões) e também, ter uma interface simples para os programadores. (considere o autenticador da ESAPI).
 * Grandes esforços devem ser igualmente realizados para evitar a ocorrência da falhas XSS que podem ser utilizadas
   para furto de identificadores de sessão (Veja A2).
@@ -76,7 +76,7 @@ Enquanto que no OWASP Top 10 (2007) é preciso considerar ainda as seguintes rec
 2. Não aceite novos identificadores de sessão, pré configurados ou inválidos na URL ou em requisições. Isto é conhecido
    como ataque de sessão fixada (session fixation attack ).
 3. Limite ou limpe seu código de cookies personalizados com propósito de autenticação de gerenciamento de sessão, como
-   funções “lembrar meu usuário” ou funções domésticas de autenticação centralizadas como o Single Sign-On(SSO). Isto 
+   funções "lembrar meu usuário" ou funções domésticas de autenticação centralizadas como o Single Sign-On(SSO). Isto 
    não se aplica as soluções de autenticação federadas robustas ou SSO reconhecidas.
 4. Use um mecanismo único de autenticação com dimensão e números de fatores apropriados. Certifique-se que este mecanismo
    não estará facilmente sujeito à ataques ou fraudes. Não faça esse mecanismo complicado demais, pois ele pode se 
