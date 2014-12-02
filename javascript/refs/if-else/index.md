@@ -52,7 +52,7 @@ A ilustração abaixo é genial, trata-se de um diagrama de sintaxe elabora pelo
 
 Ela demonstra a instrução __if-else no JavaScript__.
 
-A primeira vez que eu vi esse diagrama achei meio confuso, logo pensei: "mais um diagrama". Depois que eu o compreendi,
+A primeira vez que eu vi esse diagrama achei meio confuso, logo pensei: "mais um diagrama", depois que eu o compreendi,
 achei genial.
 
 Repare que você pode seguir a linha o diagrama e dependendo de onde entrar só poderá segui em frente.
