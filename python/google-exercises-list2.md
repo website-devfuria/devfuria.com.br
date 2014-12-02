@@ -19,14 +19,12 @@ O exercício acaba quando todos os testes estiverem passando.
 # coding: utf-8
 import unittest
 
-
 # Dado um a lista de números, retorna uma lista onde
 # todo elemento adjacente e repetido será deletado reduzindo a um único elemento.
 # Então, [1, 2, 2, 3] retornará [1, 2, 3]
 # Você pode criar uma nova lista ou modificar a lista atual.
 def remove_adjacent(nums):
     pass
-
 
 # Dado duas listas ordenadas em ordem crescente, criar e retornar uma 
 # lista de todos os elementos em ordem algabética.
@@ -77,7 +75,7 @@ def remove_adjacent(nums):
 
   return result 
 
-# Esta é a solução da Google!
+# Esta é a solução do Google!
 # Eu achei que apesar de ficar mais enxuto
 # ficou mais difícil de descobrir a intenção do código.
 def remove_adjacent1(nums):
