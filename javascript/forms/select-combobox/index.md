@@ -211,7 +211,7 @@ document.getElementById("btnAleatoriamente").onclick = function() {
 Não se esqueça de criar o botão no arquivo HTML.
 
 Não se assuste com o código acima! Se precisar, veja a matéria 
-[como gerar números aleatórios em Javascript](/javascript/numeros-randomicos/)/
+[como gerar números aleatórios em Javascript](/javascript/numeros-aleatorios/)/
 
 
 
