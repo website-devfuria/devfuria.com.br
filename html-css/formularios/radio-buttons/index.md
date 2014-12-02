@@ -22,13 +22,23 @@ Veja um conjunto de radios como exemplo.
 
 ![Ilustração de um campo radio button](input-radio.jpg "Ilustração de um campo radio button")
 
+
+Como os radiobuttons (botões de opção) funcionam?
+---
+
 Para exibir o controle radio selecionado, usamos a propriedade `checked`.
 
 {% highlight html %}
 <input type="radio" name="company" checked="checked"/>
 {% endhighlight %}
 
-O botão radio sofre do mesmo problema que o botão [checkbox](../checkbox), quando __não clicado__ ele nada enviará para o servidor.
+O botão radio sofre do mesmo problema que o botão [checkbox](../checkbox), quando __não clicado__ ele não envia nenhum
+informação para o servidor, absolutamente nada.
 
-Mas o problema pode ser amenizado, uma vez que você pode definir um valor na hora de carregar o formulário. Quero dizer que
-ele virá selecionado, ou seja, não haverá controle "não ticado".
+Mas o problema pode ser amenizado, uma vez que você pode definir um valor na hora de carregar o formulário. Quero dizer
+que ele virá pré selecionado, ou seja, não haverá controle "não ticado", pois pelo menos uma opção já foi selecionada 
+no carregamento do formulário.
+
+
+Estilizando
+---
