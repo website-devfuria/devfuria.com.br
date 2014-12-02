@@ -53,7 +53,8 @@ Verifica se o array contém um determinado valor:
 
     in_array($arr, "valor");
 
-Fonte: [Manual do PHP - in-array](http://www.php.net/manual/pt_BR/function.in-array.php "link-externo")
+Veja mais em [PHP - Função in_array()](/php/refs/in_array/)
+
 
 
 ### count
