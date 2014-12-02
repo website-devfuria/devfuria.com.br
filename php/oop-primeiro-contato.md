@@ -21,35 +21,25 @@ Quando você for programar orientado a objeto deve ter em mente essas duas coisa
 
 Quando esses dois itens são alcançados, podemos arriscar dizer que nossa programação está no caminho certo da OOP.
 
-
-
-### Os conceitos
-
-Seguindo a didática do site, não aprofundarei os conceitos de OOP (não por enquanto).
-
-Veremos na prática como a coisa funciona e, somente após ter experimentado, entraremos com os conceitos e suas definições.
-
-Os poucos conceitos que apareceram são: classe, instância, objetos, métodos (funções) e propriedades (variáveis).
-
-
-
-### Conselho
+Nesta matéria veremos na prática como funcionam: classe, instância, objetos, métodos (funções) e propriedades (variáveis).
 
 Para complementar seus estudos aconselho que o leitor procure por um terceira linguagem, de preferência uma que seja 
 fortemente tipada (pois PHP é fracamente tipada). Essa questão da tipagem também muda tudo, Java e C# são duas boas 
-opções, ambas fortemente tipadas. VocẼ verá como é bom respirar outros "ares".
+opções, ambas fortemente tipadas. Você verá como é bom respirar outros "ares".
 
 Dito isso, podemos concluir que aprender OOP em uma única linguagem não é aprender OOP de fato.
 
 
-### Exemplo
+Exemplos
+---
 
 O código abaixo é denominado "código cliente", pois é ele quem faz uso da classe `Triangulo`.
 
-O __require__ é para incluir um arquivo, no caso o arquivos que contém a classe.
+O [require](/php/refs/require/) é para incluir um arquivo, no caso o arquivos que contém a classe.
 
 
 {% highlight php %}
+<?php
 // script-cliente.php
 require "Triangulo.php";
 
@@ -64,11 +54,12 @@ A linha abaixo tira uma cópia (instância) da classe `Triangulo` e armazena na 
 
     $triangulo = new Triangulo();
 
-Agora a variável $triangulo é um objeto.
+Agora a variável `$triangulo` é um objeto.
 
-Podemos invocar os atributos e métodos através da "seta" -> conforme esquema a seguir:
+Podemos invocar os atributos e métodos através da "seta" `->` conforme esquema a seguir:
 
 {% highlight php %}
+<?php
 # armazenando um valor
 $objeto->propriedade = 123;
 
@@ -87,42 +78,50 @@ class Triangulo {
 }
 {% endhighlight %}
 
-As propriedades ficam no topo da classe e são precedidas por sua visibilidade:
+As propriedades ficam no topo da classe e são precedidas por sua [visibilidade](/php/oop-visibilidade/):
 
 - public
 - protected
 - private
 
-    class Triangulo {
+{% highlight php %}
+<?php
+class Triangulo {
 
-        # sua propriedades
-        public $a;
-        public $b;
-        public $c;
+    # sua propriedades
+    public $a;
+    public $b;
+    public $c;
 
-        # seus métodos
-    }
+    # seus métodos
+}
+{% endhighlight %}
 
 
 Os métodos são o equivalente as funções e, como as propriedades, também possuem visibilidade, veja:
 
-    class Triangulo {
+{% highlight php %}
+<?php
+class Triangulo {
 
-        # sua propriedades
-        public $a;
-        public $b;
-        public $c;
+    # suas propriedades
+    public $a;
+    public $b;
+    public $c;
 
-        # seus métodos
-        public function validarForma() {
-
-
-        }
+    # seus métodos
+    public function validarForma() {
+        ...
+        ...
+        ...
     }
+}
+{% endhighlight %}
 
-Dentro dos métodos, as variáveis, ou melhor, as propriedades são referenciadas pela palavra chave __$this__:
+Dentro dos métodos, as variáveis, ou melhor, as propriedades são referenciadas pela palavra chave `$this`:
 
 {% highlight php %}
+<?php
 class Triangulo {
 
     # sua propriedades
