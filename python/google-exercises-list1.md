@@ -33,7 +33,7 @@ def front_x(words):
   pass
 
 # Dado uma lista de tuplas não vazias, retornar uma lista ordenada
-# pelo último elementoa de cada tupla.
+# pelo último elemento de cada tupla.
 # Dica: use um função personalizada para extrair o último elemento, ela
 # deve ser passada no segundo parâmetro da função sorted()
 def sort_last(tuples):
@@ -101,7 +101,7 @@ def front_x(words):
   return lista_x + lista_normal
 
 # Dado uma lista de tuplas não vazias, retornar uma lista ordenada
-# pelo último elementoa de cada tupla.
+# pelo último elemento de cada tupla.
 # Dica: use um função personalizada para extrair o último elemento, ela
 # deve ser passada no segundo parâmetro da função sorted()
 def sort_last(tuples):
