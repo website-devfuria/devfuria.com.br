@@ -16,7 +16,7 @@ Escolhi esses controles pois são bastantes semelhantes quanto ao seu funcioname
 
 Vamos utilizar o mesmo formulário que "pegamos emprestado" do livro do Andy Budd (Criando Páginas Web com CSS).
 
-Clique na aba [HTML](/html-css/) para entender melhor sobre formulário web
+Clique na aba __HTML__ para entender melhor sobre formulário web
 
 <div data-height="542" data-theme-id="2897" data-slug-hash="hAKpl" data-default-tab="null" class='codepen'><pre><code></code></pre>
 <p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/hAKpl'>simple-html</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
@@ -26,8 +26,9 @@ Clique na aba [HTML](/html-css/) para entender melhor sobre formulário web
 Em [PHP](/php/) podemos enviar e receber os dados do formulário, também podemos carregar o formulário. Quer dizer, podemos abrir 
 o formulário com dados pré carregados.
 
-Em JavaScript poderemos fazer as mesmas requisições que o [PHP](/php/), utilizando um negócio chamado XMLHttpRequest (vulgo AJAX),
-Haaaa mas não vamos falar sobre AJAX, é um pouco cedo. Por enquanto vamos fazer coisas mais simples.
+Em JavaScript poderemos fazer as mesmas requisições que o [PHP](/php/), utilizando um negócio chamado
+[XMLHttpRequest (vulgo AJAX)](/javascript/ajax/), haaaa mas não vamos falar sobre AJAX, é um pouco cedo, por enquanto 
+vamos fazer coisas mais simples.
 
 Então, o que faremos em JavaScript?
 
