@@ -179,3 +179,16 @@ Para ordenar uma lista também é possível utilizar a função interna
 sorted([5, 2, 3, 1, 4]) # [1, 2, 3, 4, 5]
 {% endhighlight %}
 
+Uma observação importante é que a função `sort()` não retorna a lista, então...
+
+{% highlight python %}
+lista = ["c", "b", "a"]
+print(lista.sort()) # None
+{% endhighlight %}
+
+... já a função `sorted()` retorna a lista:
+{% highlight python %}
+lista = ["c", "b", "a"]
+print(sorted(lista)) # ['a', 'b', 'c']
+{% endhighlight %}
+
