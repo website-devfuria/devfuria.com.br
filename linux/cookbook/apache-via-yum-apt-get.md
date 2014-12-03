@@ -24,7 +24,7 @@ Inicie o serviço.
     # /etc/init.d/httpd start
 
 
-Configure para inciar junto com o sistema operacional.
+Configure para iniciar junto com o sistema operacional.
 
     # chkconfig httpd on
 
