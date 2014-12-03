@@ -39,6 +39,7 @@ deveria funcionar e implementa as funções até os testes passarem.
     <a href="/python/google-exercises-string1/" class="list-group-item">Exercícios Básicos - Strings 1</a>
     <a href="/python/google-exercises-string2/" class="list-group-item">Exercícios Básicos - Strings 2</a>
     <a href="/python/google-exercises-list1/" class="list-group-item">Exercícios Básicos - List 1</a>
+    <a href="/python/google-exercises-list2/" class="list-group-item">Exercícios Básicos - List 2</a>
 </div>
 
 

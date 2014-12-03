@@ -53,7 +53,10 @@ Leia mais sobre [como debugar em PHP](/php/debugando/).
 Veremos como PHP implementa o OOP, saiba que cada linguagem pode implementar o paradigma de forma variada. O PHP 
 implementou (descentemente) OOP a partir da versão 5.
 
-Leia mais sobre [Programação Orientada a Objetos e PHP - primeiro contato](/php/oop-primeiro-contato/).
+<div class="list-group">
+    <a href="/php/oop-primeiro-contato/" class="list-group-item">Programação Orientada a Objetos e PHP - primeiro contato</a>
+    <a href="/php/oop-visibilidade/" class="list-group-item">Visibilidade das propriedades</a>
+</div>
 
 
 
