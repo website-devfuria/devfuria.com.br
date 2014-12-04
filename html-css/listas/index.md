@@ -73,7 +73,7 @@ li {
 }
 {% endhighlight %}
 
-O código acima restula em...
+O código acima resulta em...
 
 ![](simple-list.png)
 
@@ -99,7 +99,7 @@ Começaremos com seguinte HTML:
 </ul>
 {% endhighlight %}
 
-E com a seguite CSS:
+E com a seguinte CSS:
 
 {% highlight css %}
 a {
@@ -120,7 +120,7 @@ Páginas Web com CSS de Andy Budd__ mas a técnica é obra de Petr Stanícek e c
 
 ![](pixy-rollover.gif)
 
-A imagem possue 400 pixel de cumprimemto. Os primeiros 200 pixels da imagem ilustram o link na posição de "descanço" e 
+A imagem possui 400 pixel de cumprimemto. Os primeiros 200 pixels da imagem ilustram o link na posição de "descanço" e 
 os 200 pixels restantes ilustra o link na posição "sobre" (hover). Veja a pseudoclasse  `a:hover`, ela desloca a imagem 
 para a direita segundo a configuração de plano de fundo `background-position: right top`.
 
@@ -145,7 +145,7 @@ empilhadas verticalmente, as bordas na parte superior e inferior dobrarão, veja
 
 ![](menu-margens.png)
 
-Para evitar o problema, corte a linha superior alinhando as imanges de fundo com a parte inferior da âncora e, então,
+Para evitar o problema, corte a linha superior alinhando as imagens de fundo com a parte inferior da âncora e, então,
 reduza a altura dos links em 1 pixel:
 
 {% highlight css %}
@@ -162,8 +162,8 @@ a {
 }
 {% endhighlight %}
 
-Agora, o efeito colateral é no primeria linha (na parte superior) ela não é mais exibida. Para exibi-la novamente, você
-precisa redefinir a altura da primeira âncora como 40 pixels ( a altura máxima da imagem). Faremos isso aplicando uma 
+Agora, o efeito colateral é na primeira linha (na parte superior) ela não é mais exibida. Para exibí-la novamente, você
+precisa redefinir a altura da primeira âncora como 40 pixels (a altura máxima da imagem). Faremos isso aplicando uma 
 classe chamada `.first` ao primeiro item da lista.
 
 {% highlight css %}
@@ -189,8 +189,8 @@ Caso queiramos destacar o primeiro item (por ele ter sido o selecionado) poderem
 Aqui vale um alerta, tome cuidado com exemplos antigos de CSS e que não exploram todos os poderes da CSS (no caso a CSS 3).
 
 O exemplo acima seria válido caso a pseudoclasse `:first-child` da CSS 3 não estivesse em vigor. Ela (a pseudoclasse 
-`:first-child`) aplicará o estilo apenas ao primeiro filho. Aproveitando-se disso, podemos aplicar o estilo da classe 
-`.first` ao primeiro elemento de nossa lista, veja:
+`:first-child`) aplicará o estilo apenas ao primeiro filho. Ao invés de criar uma classe extra (`.first`) utilizamos a
+pseudoclasse:
 
 {% highlight css %}
 li:first-child a {

@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       HTML - Tabelas 
+title:       HTML & CSS - Tabelas 
 description:
 menu:        html-elementos  
 ---
@@ -9,7 +9,7 @@ menu:        html-elementos
 As tabelas acomodam dados tabulares.
 
 Isso parece óbvio, mas não foi assim no começo da internet. Pela falta de recursos apropriados e pela instabilidade 
-advinda dos navegadores, muitos desenvolvedores utilizavam-se de tabelas para fazer o layout da página. Isso é uma 
+advindo dos navegadores, muitos desenvolvedores utilizavam-se de tabelas para fazer o layout da página. Isso é uma 
 prática condenável e seu remédio chama-se __tableless__, que nada mais é do que um conceito (ou talvez um princípio)
 onde evita-se utilizar a tabela em algo que não seja dados tabulares.
 

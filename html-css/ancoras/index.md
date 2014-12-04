@@ -50,7 +50,7 @@ Estilizando
 
 O link pode sofrer estilizações interessantes. É muito comum estilizar o link como se fosse um botão e há também um efeito
 que é acionado quando passamos o mouse por cima: é o __hover__ (por cima, pairar). Para isso utilizamos pseudoclasses
-em CSS, boa hora para você entender comom fucionam.
+em CSS, boa hora para você entender como funcionam.
 
 - O seletor de pseudoclasse `:link` afeta links que não foram visitados
 - O seletor de pseudoclasse `:visited` afeta links visitados
@@ -58,7 +58,7 @@ em CSS, boa hora para você entender comom fucionam.
 - O seletor de pseudoclasse `:active` afeta links quando ele é ativado (clique e segure)
 
 
-O mais comum é desativar o sublihado e reativá-los quando o mouse é posicionado sobre eles, veja a CSS:
+O mais comum é desativar o sublinhado e reativá-los quando o mouse é posicionado sobre eles, veja a CSS:
 
 {% highlight css %}
 a:link, a:visited {text-decoration: none}
