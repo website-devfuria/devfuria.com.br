@@ -62,8 +62,8 @@ esse formulário submeter seus dados para o servidor, ele poderá trabalhar com 
 
 Esse negócio é tão simples que fica até difícil de explicar, rs.
 
-Veja o famoso formulário horizontal do Facebook. Vamos analisar apenas a "tarja azul", temos os campos `login`, `senha` e uma
-chekbox "mantanha-me conectado".
+Veja o famoso formulário horizontal do Facebook. Vamos analisar apenas a "tarja azul", temos os campos `login`, `senha` 
+e uma chekbox "mantanha-me conectado".
 
 !["formulário web de exemplo"](form-facebook.png "formulário web de exemplo")
 
@@ -137,7 +137,7 @@ input {
 }
 {% endhighlight %}
 
-Uma maneira de evitar esse problema é utilizar o seletor de atribuot para selecionar a input específica.
+Uma maneira de evitar esse problema é utilizar o seletor de atributo para selecionar a input específica.
 
 {% highlight css %}
 input[type="radio"], input[type="checkbox"], input[type="submit"] {
@@ -161,16 +161,17 @@ O autor (este exemplo é do Andy Budd) justifica a utilização do elemento de t
 delas (as labels) só funcionam para elementos individuais. Poderíamos utilizar outro fieldset para esse pequeno
 grupo mas novamente o autor justifica problemas de incompatibilidade entre os navegadores estragaria o layout, o autor
 elaborou o exemplo em uma época que o IE6 e o IE7 eram os navegadores mais utilizados, ficará a cargo do leitor decidir
-qual seria a melhor estratégia para alcançar tal objetivo.
+qual seria a melhor estratégia para alcançar tal objetivo. A solução do Budd é definir o `id` ao `fieldset` para receber
+estilização exclusiva e utilizar o elemento `h2` simulando uma label:
 
 {% highlight html %}
-    ...
-        <fieldset id="favoriteColor">
-            <h2>Favorite Color:</h2>
-    ...
+...
+    <fieldset id="favoriteColor">
+        <h2>Favorite Color:</h2>
+...
 {% endhighlight %}
 
-Na sequência, vem as estilizações para nosso grupo checkboxe's:
+Veja as estilizações:
 
 {% highlight css %}
 #favoriteColor {

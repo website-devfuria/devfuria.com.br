@@ -6,11 +6,11 @@ menu:        html-elementos
 ---
 
 
-A tag `div` é um elemento do tipo __conteiner__ que acomoda outras tag's, é um divisor de espaços.
+A tag `div` é um elemento do tipo __container__ que acomoda outras tag's, é um divisor de espaços.
 
 Um elemento que pode ajudar a adicionar estrutura a um documento é um elemento `div`. Muitas pessoas acreditam
 equivocadamente que um elemento `div` não tem nenhum significado semântico. Mas, na verdade, significa __divisão__ e
-fornece uma maneira de dividir um documento em áreas sigificativas.
+fornece uma maneira de dividir um documento em áreas sigficativas.
 
 {% highlight html %}
 <div>
@@ -32,7 +32,5 @@ A tag `span` acomoda pequenos trechos de texto.
 
 
 Apesar de, aparentemente, não fazerem nada, ambas as tag's são muito utilizadas. 
-
-
 
 A utilização visa sofrer alguma estilização posterior, com ajuda do CSS.
