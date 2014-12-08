@@ -1,7 +1,7 @@
 ---
-layout:     grid12-article
-title:      Como iniciar no Linux
-descriptin: Descubra como começar no Linux sem mistérios.
+layout:      grid12-article
+title:       Como iniciar no Linux
+description: Descubra como começar no Linux sem mistérios.
 ---
 
 Gostaria de lhe dizer que usar o __Linux__ é fácil, mas não é (embora isso seja muito relativo). Mas posso garantir que é
