@@ -107,7 +107,9 @@ Antes de executar, teste se você possui o Python instalado e se o arquivo está
 
 Para saber se o Python está instalado digite no terminal `python --version`.
 
-Para executar o arquivo digite `python foo.py`.
+Crie o arquivo em seu editor preferido, salve com o nome `foo.py` e insira o conteúdo abaixo.
+
+Teste o arquivo no terminal antes de tentar acessar via browser executando `python foo.py`.
 
 É preciso dar permissão de execução no arquivo, execute `chmod 775 foo.py`.
 
@@ -129,7 +131,9 @@ Antes de executar, teste se você possui o Perl instalado e se o arquivo está f
 
 Para saber se o Python está instalado digite no terminal `perl --version`.
 
-Para executar o arquivo digite `perl foo.pl`.
+Crie o arquivo em seu editor preferido, salve com o nome `foo.pl` e insira o conteúdo abaixo.
+
+Teste o arquivo no terminal antes de tentar acessar via browser executando `perl foo.pl`.
 
 É preciso dar permissão de execução no arquivo, execute `chmod 775 foo.pl`.
 
@@ -146,7 +150,10 @@ print "</html>";
 
 ### Exemplo CGI - Shel script
 
-Antes de executar, teste o arquivo digitando no terminal `./foo.sh`.
+
+Crie o arquivo em seu editor preferido, salve com o nome `foo.sh` e insira o conteúdo abaixo.
+
+Teste o arquivo no terminal antes de tentar acessar via browser executando `./foo.sh`.
 
 É preciso dar permissão de execução no arquivo, execute `chmod 775 foo.sh`.
 
