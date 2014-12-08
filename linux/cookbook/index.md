@@ -19,6 +19,7 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/cookbook/django/" class="list-group-item">Instalando o Django (python)</a>
     <a href="/linux/cookbook/pip/" class="list-group-item">Instalando o pip (gerenciados de pacotes do python)</a>
     <a href="/linux/cookbook/pil/" class="list-group-item">Instalando PIL (Python Imaging Library) no Debian</a>
+    <a href="/linux/cookbook/virtualenv/" class="list-group-item">Instalando o VirtualEnv (python) no Linux</a>
 </div>
 
 
