@@ -34,6 +34,7 @@ Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](/li
 ### Artigos
 
 <div class="list-group">
+    <a href="/linux/django-error-loading-mysqldb-module/" class="list-group-item">Django, resolvendo o erro: Error loading MySQLdb module: No module named MySQLdb</a>
     <a href="/linux/como-desabilitar-selinux/" class="list-group-item">Como desabilitar SElinux0 (Fedora e CentOS)</a>
     <a href="/linux/como-dar-permissao-de-execucao/" class="list-group-item">Como dar permissão de execução em um arquivo no Linux</a>
     <a href="/linux/como-acessar-servidor-remotamente/" class="list-group-item">SSH - acessando o Linux remotamente</a>
