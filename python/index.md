@@ -43,6 +43,16 @@ deveria funcionar e implementa as funções até os testes passarem.
 </div>
 
 
+
+
+Livros sobre Python
+---
+
+Leia este belo artigo de Eric Hideki onde o autor indica alguns bons livros (em português) sobre Python
+[Livros de Python, quais são as boas indicações?](http://blog.pycursos.com/livros-de-python-quais-sao-as-boas-indicacoes/#comment-21243 "link-externo")
+
+
+
 Site Oficial
 ---
 
