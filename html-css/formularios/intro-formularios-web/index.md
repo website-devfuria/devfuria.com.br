@@ -96,7 +96,7 @@ Antes de olhar para o CSS, veja a estrutura do HTML.
 </div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 A Primeira coisa a ser comentado é que cada controle está acompanhado do elemento `label`. Esse elemento pode ajudar a
-adicionar estrutura e aumentar a acessibilidae aos formulários web. Em muitos navegadores, clicar no elemento label 
+adicionar estrutura e aumentar a acessibilidade aos formulários web. Em muitos navegadores, clicar no elemento label 
 fará com que o elemento do formulário ganhe o foco, veja o exemplo:
 
 {% highlight html %}
@@ -110,8 +110,8 @@ Posicionar os __labels__ de modo que eles apareçam verticalmente acima dos elem
 __Labels__ são [elementos inline](html-css/elementos-inline-block-level/) por padrão. Entretanto, configurar sua propriedade
  `display` como `block` fará com que eles gerem sua própria caixa de bloco, forçando os elementos "de entrada" (inputs)
 para a linha de baixo. A largura das caixas de entrada de texto varia entre diferentes navegadores, portanto, para
-consistência, você deve cofigurar explicitamente a largura das suas caixas de texto. Nesse exemplo, __pixels__ são usados,
-mas, naturalmente, você poderia utilizar __ems__ para criar um laytou de formulário mais auto-ajustável.
+consistência, você deve configurar explicitamente a largura das suas caixas de texto. Nesse exemplo, __pixels__ são usados,
+mas, naturalmente, você poderia utilizar __ems__ para criar um layout de formulário mais auto-ajustável.
 
 {% highlight css %}
 label {
@@ -129,23 +129,23 @@ input {
 
 Alterando a regra de estilização das __labels__ como abaixo...
 
-{% highlight html %}
+{% highlight css %}
 label {
   float: left;
   width: 10em;
 }
 {% endhighlight %}
 
-..teremos um arranjo diferente, veja:
+...teremos um arranjo diferente, veja:
 
 <div data-height="346" data-theme-id="2897" data-slug-hash="MYKoeQ" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
 <p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/MYKoeQ/'>formulário-web 2</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Essa é a única diferença entre este e o exemplo anterior. Porém eu acrescentei estilização extra para posicionar o botão
+Essa é a diferença mais significante entre este e o exemplo anterior, porém eu acrescentei estilização extra para posicionar o botão
 à direita:
 
-{% highlight html %}
+{% highlight css %}
 p.botoes {
   text-align: right;
 }
