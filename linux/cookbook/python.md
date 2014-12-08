@@ -83,20 +83,22 @@ Ao executar `/usr/bin/python --version` ou simplesmente `python --version` obtem
 
 Se você seguiu a receita de instalação com sucesso, então teremos o Python 3 instalado neste local `/usr/local/bin/`
 
-Execute `ls -l /usr/local/bin/python*` para checar visualmente.
+Execute `ls -l /usr/local/bin/python*` para ver aonde foi instalado o python 3.
 
-Experimente `/usr/local/bin/python3.4 --version `.
+No meu caso, o Python 3 foi instalado em `/usr/local/bin/python3.4`, então para testar posso executar 
+`/usr/local/bin/python3.4 --version`.
 
 
 
 Finalizando
 ---
 
-Não queremos digitar `/usr/local/bin/python3.4` sempre que precisarmos executar o Python 3, é melhor criar um link simbólico.
+Não queremos digitar `/usr/local/bin/python3.4` sempre que precisarmos executar o Python 3, então é melhor criarmos um
+link simbólico.
 
 	ln -s /usr/local/bin/python3.4 /usr/bin/python3
 
-Agora podemos utilizar simplesmente `python3`.
+Agora podemos utilizar o atalho `python3`.
 
 Experimente...
 
