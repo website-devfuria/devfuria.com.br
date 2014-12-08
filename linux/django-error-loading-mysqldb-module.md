@@ -94,8 +94,7 @@ Apenas o manage.py validate que retorna:
 
     System check identified no issues (0 silenced)
 
-Comento isso porque fora do virtualenv, ao executar `python3 manage.py runser` ele
-para na mesma mensagem (System check identified no issues (0 silenced)).
+Comento isso porque fora do virtualenv, ao executar `python3 manage.py runserver` ele para na mesma mensagem.
 
 
 
