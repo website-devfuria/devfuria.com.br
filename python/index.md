@@ -5,7 +5,7 @@ description: Aprenda a programar em Python de forma descomplicada.
 ---
 
 
-Python é uma linguagem de programação de alto nível. É possível pragramamar tanto para desktop quanto para web.
+Python é uma linguagem de programação de alto nível. É possível programar tanto para desktop quanto para web.
 
 Se você é usuário de __Linux__ sua vida será fácil, pois o Python já vem instalado. 
 
