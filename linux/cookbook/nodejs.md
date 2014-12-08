@@ -1,6 +1,6 @@
 ---
-layout: grid12-article
-title: Instalando o nodejs
+layout:      grid12-article
+title:       Instalando o nodejs
 description: Veja 3 formas de instalar o nodejs no Linux
 ---
 
