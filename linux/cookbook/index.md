@@ -86,6 +86,7 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/cookbook/libre-office/" class="list-group-item">Instalando o Libre Office no Linux</a>
     <a href="/linux/cookbook/pencil/" class="list-group-item">Instalando o Pencil no Fedora</a>
     <a href="/linux/cookbook/rar/" class="list-group-item">Instalando o rar no Fedora</a>
+    <a href="/linux/cookbook/wine/" class="list-group-item">Instalando o wine</a>
     <a href="/linux/cookbook/samba/" class="list-group-item">Instalando o samba no Fedora</a>
     <a href="/linux/cookbook/skype/" class="list-group-item">Instalando o Skype no Fedora</a>
 </div>
