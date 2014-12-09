@@ -98,3 +98,34 @@ Para selecionarmos uma opção utilizamos a propriedade `selected="selected"` na
 
 Estilizando
 ---
+
+O exemplo abaixo mostra dois elementos __select__, o primeiro recebeu altura e largura. O Segundo, além de altura e
+borda, alteramos a cor de fundo e retiramos as bordas.
+
+No FireFox, as setas duplas foram substituídas por um única seta após a inclusão da propriedade `border: 0;`. No Google
+Chrome, não há setas duplas. Essas pequenas discrepâncias podem ser somadas ao que chamamos de [Cross Browser]().
+
+<div data-height="269" data-theme-id="2897" data-slug-hash="xbZyjY" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
+<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/xbZyjY/'>Simple select - css</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+O legal desse exemplo é que utilizamos duas classes CSS e, dessa forma, poderemos fazer a combinação que quizermos.
+
+{% highlight css %}
+select.basic {
+    ...
+}
+select.simple {
+    ...
+}
+{% endhighlight %}
+
+O elemento __select__ poderá sofrer estilização de uma das classes: `<select class="basic">` ou `<select class="simple">`.
+Ou ainda utilizar as classes em combinação:
+
+{% highlight html %}
+<select class="simple basic">
+{% endhighlight %}
+
+Ao estilizar esse tipo de controle, você logo perceberá que faltam propriedades mais flexíveis e poderosas além dos
+problemas inerentes ao CrossBrowser. Por essa razão, existem tantos plugins/blibliotecas especializados nesse controle.
