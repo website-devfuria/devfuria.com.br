@@ -21,3 +21,5 @@ Tudo que foi dito para a combobox é válido para a __listbox__, na verdade é o
 só mudamos uma propriedade. 
 
 ![Ilustração de um campo list box ](select-multiple-list.png "Ilustração de um campo listobox")
+
+http://codepen.io/flaviomicheletti/pen/JoGBrV
