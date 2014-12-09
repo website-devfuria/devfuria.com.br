@@ -79,7 +79,7 @@ O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o q
 
 ### Livros sobre JavaScript
 
-Para quem nunca viu Javacript, aconselho o livro da dupla Kevin Yank e Cameron Adams __Simple JavaScript__.
+Para quem nunca viu JavaScript, aconselho o livro da dupla Kevin Yank e Cameron Adams __Simple JavaScript__.
 
 Ele cumpre o que promete __"tudo o que você precisa saber sobre javascript a apartir do zero"__.
 

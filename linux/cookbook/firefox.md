@@ -1,6 +1,6 @@
 ---
-layout: grid12-article
-title: Instalando o última versão do Firefox
+layout:      grid12-article
+title:       Instalando o última versão do Firefox
 description: Como instalar ou atualizar o Firefox para a versão mais recente
 ---
 

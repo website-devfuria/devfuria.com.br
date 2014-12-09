@@ -1,6 +1,6 @@
 ---
-layout: grid12-article
-title: Instalando o Ruby On Rails
+layout:      grid12-article
+title:       Instalando o Ruby On Rails
 description: Aprenda a instalar a linguagem Ruby tanto via repositório como compilando os fontes
 ---
 

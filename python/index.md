@@ -5,7 +5,7 @@ description: Aprenda a programar em Python de forma descomplicada.
 ---
 
 
-Python é uma linguagem de programação de alto nível. É possível pragramamar tanto para desktop quanto para web.
+Python é uma linguagem de programação de alto nível. É possível programar tanto para desktop quanto para web.
 
 Se você é usuário de __Linux__ sua vida será fácil, pois o Python já vem instalado. 
 
@@ -41,6 +41,16 @@ deveria funcionar e implementa as funções até os testes passarem.
     <a href="/python/google-exercises-list1/" class="list-group-item">Exercícios Básicos - List 1</a>
     <a href="/python/google-exercises-list2/" class="list-group-item">Exercícios Básicos - List 2</a>
 </div>
+
+
+
+
+Livros sobre Python
+---
+
+Leia este belo artigo de Eric Hideki onde o autor indica alguns bons livros (em português) sobre Python
+[Livros de Python, quais são as boas indicações?](http://blog.pycursos.com/livros-de-python-quais-sao-as-boas-indicacoes/#comment-21243 "link-externo")
+
 
 
 Site Oficial

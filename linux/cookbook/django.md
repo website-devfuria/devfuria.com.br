@@ -21,6 +21,13 @@ O que é __django__ ?
 
 Existem mais do que uma única forma de instalar o __Django__. Consulte o site oficial para ver outras opções de instalação.
 
+Antes de começar, você deverá decidir qual versão instalar:
+
+- Para __Python 2__ instale Django __1.6__
+- Para __Python 3__ instale Django __1.7__
+
+
+
 
 Instalando o Django através do pip
 ---
@@ -29,9 +36,9 @@ Obviamente que você deverá ter o [pip](/linux/cookbook/pip/ "Aprenda a instala
 
 Após isso você poderá instalar o __Django__ da seguinte forma.
 
-    pip install Django==1.6.5
+    pip install Django==1.7.1
 
-Note que os números 1.6.5. eram a versão mais atual enquanto eu escrevia este artigo. Você deve saber qual a versão 
+Note que os números 1.7.1. eram a versão mais atual enquanto eu escrevia este artigo. Você deve saber qual a versão 
 mais atual para poder alterar esses números de acordo.
 
 Acesse a página de download...
@@ -43,7 +50,7 @@ No canto direito da tela, procure por __Latest release__ e você descobrirá qua
 
 Para saber qual a sua versão instalado do Django
 
-Acesse o terinal do __Python__	digitando simplesmente `python`.
+Acesse o terminal do __Python__	digitando simplesmente `python`.
 
 Agora digite:
 
