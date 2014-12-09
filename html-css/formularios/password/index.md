@@ -15,3 +15,5 @@ pelo sinal de asterisco (*).
 Veja na imagem abaixo o uso de 3 campos de senha.
 
 ![Ilustração de um campo de senha](input-pass.png "Ilustração de um campo password")
+
+Os campos de senha podem ser estilizados como as [textboxes](/html-css/formularios/text-box/).
