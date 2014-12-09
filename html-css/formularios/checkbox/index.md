@@ -50,3 +50,21 @@ Isso faz sentido para você? Pra mim não, mas tudo bem.
 Estilizando
 ---
 
+O que mais incomoda em relação aos __checkboxes__ são a falta de alinhamento com o elemento __label__ e, obviamente,
+a inconsistência entre os navegadores.
+
+Uma forma simples de deixar a __label__ alinhado com a __checkbox__ é configurar a propriedade "alinhamento vertical"
+no meio e ajustar a altura com a propriedade `top`. Para `top` funcionar, o elemento precisa estar posicionado relativamente.
+
+{% highlight css %}
+input {
+  margin:0 12px 0 0;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+{% endhighlight %}
+
+<div data-height="178" data-theme-id="2897" data-slug-hash="myVadR" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
+<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/myVadR/'>Aligning Checkbox with label </a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
