@@ -19,15 +19,18 @@ Digite `exit` para sair.
 
 
 
-### CentOS
+CentOS
+---
 
 Instalar o software:
 
 	# yum install mysql mysql-server -y 
 
-Iniciar e habilitar o serviço:
+Antes de tudo, inicie o serviço:
 
 	# /etc/init.d/mysqld start
+
+Habilite o serviço para que seja inicializado junto com o sistema operacional.
 	
 	# chkconfig mysqld on 
 
@@ -37,7 +40,8 @@ Setar uma senha para o root (do mysql):
 
 
 
-### Fedora 17
+Fedora 17
+---
 
 	# yum install mysql mysql-server
 
@@ -53,7 +57,8 @@ Setar uma senha para o root (do mysql):
 
 
 
-### Ubuntu
+Ubuntu
+---
 
 	# apt-get install mysql-server mysql-client
 

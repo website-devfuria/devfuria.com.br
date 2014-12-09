@@ -30,6 +30,14 @@ Uma forma alternativa de instalação indicada para quem usa o Python 3 é a seg
     wget https://bootstrap.pypa.io/get-pip.py
     python3 get-pip.py
 
+Se você seguiu a forma alternativa, executar `pip --version` talvez retorne
+
+    bash: pip: command not found
+
+Muito provavelmente, a intalação criou o atalho `pip3` ou `pip3.2` ou ainda `pip3.4`, o nome do link (atalho) vai 
+depender da versão do Python instalado (`python --version`).
+
+
 
 Atualizando
 ---

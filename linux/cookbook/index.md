@@ -19,6 +19,7 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/cookbook/django/" class="list-group-item">Instalando o Django (python)</a>
     <a href="/linux/cookbook/pip/" class="list-group-item">Instalando o pip (gerenciados de pacotes do python)</a>
     <a href="/linux/cookbook/pil/" class="list-group-item">Instalando PIL (Python Imaging Library) no Debian</a>
+    <a href="/linux/cookbook/virtualenv/" class="list-group-item">Instalando o VirtualEnv (python) no Linux</a>
 </div>
 
 
@@ -86,6 +87,7 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/cookbook/libre-office/" class="list-group-item">Instalando o Libre Office no Linux</a>
     <a href="/linux/cookbook/pencil/" class="list-group-item">Instalando o Pencil no Fedora</a>
     <a href="/linux/cookbook/rar/" class="list-group-item">Instalando o rar no Fedora</a>
+    <a href="/linux/cookbook/wine/" class="list-group-item">Instalando o wine</a>
     <a href="/linux/cookbook/samba/" class="list-group-item">Instalando o samba no Fedora</a>
     <a href="/linux/cookbook/skype/" class="list-group-item">Instalando o Skype no Fedora</a>
 </div>
