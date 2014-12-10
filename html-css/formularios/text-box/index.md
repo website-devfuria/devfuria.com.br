@@ -51,7 +51,7 @@ input[type="text"] {
 
 ### Imagem de background:
 
-Este exemplo usa esta [imagem como background](textbox-background.png).
+Este exemplo usa esta [imagem](textbox-background.png) como background.
 
 ![](textbox-exemplo03.png)
 
@@ -109,7 +109,7 @@ input[type="text"] {
 
 ### Gradiente 1:
 
-Este exemplo usa esta [imagem como background](textbox-gradient.png).
+Este exemplo usa esta [imagem](textbox-gradient.jpg) como background.
 
 ![](textbox-exemplo07.png)
 
@@ -128,7 +128,7 @@ input[type="text"] {
 
 ### Gradiente 2:
 
-Este exemplo aproveita a mesma [imagem do exemplo "Imagem de background"](textbox-background.png).
+Este exemplo aproveita a mesma [imagem](textbox-gradient.png) do exemplo "Imagem de background".
 
 ![](textbox-exemplo08.png)
 
@@ -147,7 +147,7 @@ input[type="text"] {
 
 ### Imagem dentro da textbox:
 
-Este exemplo usa uma [imagem como background](textbox-search.png).
+Este exemplo usa uma [imagem](textbox-search.png) como background.
 
 ![](textbox-exemplo09.png)
 
