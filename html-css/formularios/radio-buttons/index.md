@@ -42,3 +42,13 @@ no carregamento do formulário.
 
 Estilizando
 ---
+
+Os __radios__, igualmente as [checkboxes](/html-css/formularios/checkbox/) sofrem do mesmo problema de alinhamento 
+com as __labels__.
+
+Há inúmeras soluções, uma delas é configurar a propriedade “alinhamento vertical” no meio e ajustar a altura com a 
+propriedade top. Para `top` funcionar, o elemento precisa estar posicionado relativamente.
+
+<div data-height="142" data-theme-id="2897" data-slug-hash="WbrByv" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
+<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/WbrByv/'>Aligning radio with label </a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
