@@ -54,7 +54,8 @@ O que mais incomoda em relação aos __checkboxes__ são a falta de alinhamento 
 a inconsistência entre os navegadores.
 
 Uma forma simples de deixar a __label__ alinhado com a __checkbox__ é configurar a propriedade "alinhamento vertical"
-no meio e ajustar a altura com a propriedade `top`. Para `top` funcionar, o elemento precisa estar posicionado relativamente.
+no meio e ajustar a altura com a propriedade `top`. Para `top` funcionar, o elemento precisa estar posicionado 
+relativamente.
 
 {% highlight css %}
 input {
