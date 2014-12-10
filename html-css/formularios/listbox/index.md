@@ -22,4 +22,20 @@ só mudamos uma propriedade.
 
 ![Ilustração de um campo list box ](select-multiple-list.png "Ilustração de um campo listobox")
 
-http://codepen.io/flaviomicheletti/pen/JoGBrV
+Se você quiser separar o conteúdo por grupo, poderá utilizar a tag `optgroup` como o exemplo abaixo.
+
+{% highlight html %}
+<optgroup label="Option group 1">
+    <option>Sub option 1</option>
+    <option>Sub option 2</option>
+    <option>Sub option 3</option>
+</optgroup>
+{% endhighlight %}
+
+Veja o resultado:
+
+<div data-height="398" data-theme-id="2897" data-slug-hash="JoGBrV" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
+<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/JoGBrV/'>Multi-Select with Optgroup sub selection</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
