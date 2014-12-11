@@ -66,8 +66,7 @@ checagem de tipo em valores de argumento: qualquer tipo de valor pode ser passad
 Veja um exemplo:
 
 {% highlight javascript %}
-// Cria um função que soma um monte de coisas.
-
+// Função que soma um monte de coisas.
 var sum = function (  ) {
     var i, sum = 0;
     for (i = 0; i < arguments.length; i += 1) {
