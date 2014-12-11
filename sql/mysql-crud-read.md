@@ -102,4 +102,4 @@ condições (expressões).
 
 Depois de inserido o registro, talvez queiramos alterar/atualizar os dados.
 
-Utilizamos a instrução `update` que é assunto do próximo tópico [CRUD - U de update, é  o nosso update!](../mysql-crud-update/).
+Utilizamos a instrução `update` que é assunto do próximo tópico [CRUD - U de update](../mysql-crud-update/).

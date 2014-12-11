@@ -35,7 +35,7 @@ inicie o serviço...
 
 e habilite a senha digitando...
 
-    mysqladmin -u root password [your_password_here]
+    mysqladmin -u root password sua-senha-aqui
 
 
 
