@@ -1,5 +1,5 @@
 ---
-layout:      grid12-index
+layout:      grid12-article
 title:       Expressões Regulares em PHP
 description: Expressões Regulares em PHP
 ---
