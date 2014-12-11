@@ -65,7 +65,7 @@ elem.onclick = function() {
 }
 {% endhighlight %}
 
-Terceiro, ainda na questão do evento __onclick__, há duas formas de se atribuir uma função a um evento:
+Terceiro, ainda na questão do evento __onclick__, há duas formas de se [atribuir uma função a um evento](/javascript/tratando-eventos/):
 
 1. Atribuindo uma única função (como demonstrado acima) e
 2. Anexando um ou mais funções com receptores de eventos (`addEventListener()`)

@@ -32,7 +32,7 @@ Se a função encontrar o elemento procurado, ela retornará esse elemento. Atri
 podermos manipular essa variável. 
 
 Caso o elemento HTML não exista, a função não dispara erro algum, ela é silenciosa. Ela apenas retornará `null`, esse 
-será o valor que atribuiremos a variável `elemento`. Quando usamos o método `onclick` o JS dispara o erro:
+será o valor que atribuiremos a variável `elemento`. Quando usamos o método `onclick` o JavaScript dispara o erro:
 
     TypeError: element is null
 
@@ -57,7 +57,8 @@ temos o [objeto window](/javascript/objeto-global/) e o correto era escrever ass
 Já ouviu falar em eventos? Isso mesmo [onclick](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers.onclick "link-externo")
 nada mais é do que o evento "click".
 
-Mas de quem é esse evento? Os eventos são atribuído aos elementos, em nosso exemplo atribuímos o evento a tag `img`.
+Mas de quem é esse evento? Os [eventos são atribuído aos elementos](/javascript/tratando-eventos/), em nosso exemplo 
+atribuímos o evento __onclick__ a tag `img`.
 
     element.onclick = ...aqui entra uma função!!!
 
