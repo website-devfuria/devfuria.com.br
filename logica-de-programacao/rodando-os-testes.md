@@ -84,7 +84,7 @@ Rodando os testes...
     ./seuprograma.run
 
 
-__Testes passando (bandeira verde)__
+Testes passando (bandeira verde).
 
 
 
@@ -117,7 +117,7 @@ Rodando os testes...
     executavel.run: foo.c:11: main: Assertion `100 == dobro' failed.
     Aborted
 
-__Testes falhando (bandeira vermelha)__
+Testes falhando (bandeira vermelha).
 
 
 

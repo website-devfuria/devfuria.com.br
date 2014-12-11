@@ -70,7 +70,7 @@ Se declararmos uma variável com o nome `soma` ela será diferente de `Soma`, `S
 
 Os seguintes nomes são válidos: `minhaVariavel`, `minha_variavel` e `var1`.
 
-Os seguintes nomes são inválidos: `minha-variavel` e `1var`.
+Os seguintes nomes são inválidos: `minha-variavel` e `2var`.
 
 Variáveis são espaços alocados na memória do computador.
 

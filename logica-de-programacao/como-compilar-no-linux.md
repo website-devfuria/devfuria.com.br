@@ -25,7 +25,7 @@ Editor de texto
 
 Esse também não pode faltar. O __gedit__ é o editor de texto padrão em diversas distro's, quer dizer nem precisa instalar.
 
-É como se fosse __notpad__ só que muito, muuuuiiiito melhor.
+É como se fosse __notpad__ só que muito, muito melhor.
 
 
 
