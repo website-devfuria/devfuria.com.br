@@ -55,8 +55,8 @@ var app = {
 }
 {% endhighlight %}
 
-Segundo, estamos utilizando a propriedade [onclick](/javascript/refs/onclick/) dos botões HTML, não que isso seja proibido, mas normalmente 
-"buscamos" o elemento via JavaScript e atribuímos a função desejada via código, exemplo:
+Segundo, estamos utilizando a propriedade [onclick](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers.onclick "link-externo")
+dos botões HTML, não que isso seja proibido, mas normalmente "buscamos" o elemento via JavaScript e atribuímos a função desejada via código, exemplo:
 
 {% highlight javascript %}
 var elem = document.getElementById("id-do-seu-botao");
@@ -67,6 +67,8 @@ elem.onclick = function() {
 
 Terceiro, ainda na questão do evento __onclick__, há duas formas de se atribuir uma função a um evento:
 
-1. Atribuindo uma única função
-2. Anexando um ou mais funções
+1. Atribuindo uma única função (como demonstrado acima) e
+2. Anexando um ou mais funções com receptores de eventos (`addEventListener()`)
+
+O ideal é utilizarmos sempre a segunda forma.
 

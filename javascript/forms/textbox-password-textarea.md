@@ -59,7 +59,8 @@ através dos nomes das tags, através de outras propriedades, pelo posicionament
 Mas o básico é referenciar pelo __id__.
 
 
-Agora, vamos atribuir uma função anônima para o evento [onclick](/javascript/refs/onclick/) de nosso controle.
+Agora, vamos atribuir uma função anônima para o evento [onclick](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers.onclick "link-externo")
+de nosso controle.
 
 {% highlight javascript %}
 document.getElementById("btnSubmit").onclick = function() {

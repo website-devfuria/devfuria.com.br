@@ -54,9 +54,10 @@ temos o [objeto window](/javascript/objeto-global/) e o correto era escrever ass
 
 ### onclick
 
-Já ouviu falar em eventos? Isso mesmo [onclick](/javascript/refs/onclick/) nada mais é do que o evento click.
+Já ouviu falar em eventos? Isso mesmo [onclick](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers.onclick "link-externo")
+nada mais é do que o evento "click".
 
-Mas de quem é esse evento? Os eventos são anexados aos elementos, em nosso exemplo anexamos o evento a tag `img`.
+Mas de quem é esse evento? Os eventos são atribuído aos elementos, em nosso exemplo atribuímos o evento a tag `img`.
 
     element.onclick = ...aqui entra uma função!!!
 
