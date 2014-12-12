@@ -1,14 +1,20 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Nodeschool - exemplo 02 baby steps
 description: 
+menu:        javascript-ns
 ---
+
+{% include /menus/javascript-ns-paraquedas.html %}
+
+
+### Exercício
 
 Escreva um programa que aceita um ou mais números como argumentos de linha de comando e imprime a soma desses números
 no console.
 
 
-### DICAS
+### Dicas
 
 Você pode acessar os argumentos da linha de comando através do objeto global `process`. Tal objeto possui a propriedade
 `argv`, um array contendo os argumentos da linha de comando.
@@ -49,8 +55,16 @@ var length = process.argv.length,
     sum = 0;
 
 for (i = 2; i < length; i++) {
-	sum += Number(process.argv[i]);
+    sum += Number(process.argv[i]);
 };
 
 console.log(sum);
 {% endhighlight %}
+
+
+
+
+Próximo exercício
+---
+
+- [My First I/O!](/javascript/node.js/ns-02-baby-steps/)
