@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       Nodeschool - exemplo 02 (baby steps)
+title:       Nodeschool - exemplo 02 baby steps
 description: 
 ---
 

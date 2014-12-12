@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       Nodeschool - exemplo 01 (hello word)
+title:       Nodeschool - exemplo 01 hello word
 description: 
 ---
 
