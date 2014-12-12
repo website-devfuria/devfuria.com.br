@@ -5,33 +5,46 @@ description: Aprenda Node.js
 ---
 
 
-Leia este artigo para aprender como [instalar o Node.js](/linux/cookbook/nodejs/).
+__Node.js__ é JavaScript do lado do servidor!
+
+Imagine que seu código __JavaScript__ esteja em um arquivo denominado `program.js`.
+
+Para executá-lo com o __Node.js__, digite no terminal `node program.js`.
+
+O __Node.js__ também possui um terminal interativo, para acessá-lo basta digitar `node` no terminal e se divertir!
+
+    node
+    >
+
+Instalando o Node.js
+---
+
+Leia este artigo para aprender [como instalar o Node.js no Linux](/linux/cookbook/nodejs/).
 
 
-### Nodeschool
 
-- [Nodeschool](http://nodejs.org/ "link-externo")
+Nodeschool
+---
+
+A Nodeschool mantém uma séria de tutoriais interativos, um deles (acho que o primeiro) foi o __learnyounode__.
+
+- [Nodeschool](http://nodeschool.io/ "link-externo")
 - [Nodeschool - traduzido](https://github.com/lucasfcosta/learnyounode-pt-br "link-externo")
 
-<div class="list-group">
-    <a href="/node.js/ns-01-hello-word/" class="list-group-item">Hello word</a>
-    <a href="/node.js/ns-02-baby-steps/" class="list-group-item">Baby steps</a>
-    <a class="list-group-item">My First I/O! (em breve)</a>
-    <a class="list-group-item">My First Async I/O! (em breve)</a>
-    <a class="list-group-item">Filtered LS (em breve)</a>
-    <a class="list-group-item">Make it modular (em breve)</a>
-    <a class="list-group-item">HTTP client (em breve)</a>
-    <a class="list-group-item">HTTP collect (em breve)</a>
-    <a class="list-group-item">Juggling Async (em breve)</a>
-    <a class="list-group-item">Time server (em breve)</a>
-    <a class="list-group-item">HTTP file server (em breve)</a>
-    <a class="list-group-item">HTTP uppercaserer (em breve)</a>
-    <a class="list-group-item">HTTP Json API server (em breve)</a>
-</div> 
+A ideía é você aprender com o próprio __Node.js__, ou seja pelo terminal você instalará um programa __Node.js__ (learnyounode),
+depois criará arquivos em __JavaScript__ que serão executados no terminal pelo __learnyounode__.
+
+Eu não acho que essa é a melhor forma para inicar seu aprendizado com o __Node.js__.
+
+Talvez você precisa de nossa ajuda com uma [introdução ao 'learn you node'](ns-learyounode/), caso contrário pode
+partir para a lista de exercícios...
+
+{% include /menus/javascript-ns.html %}
 
 
 
-### Site Oficial
+Site Oficial
+---
 
 - [Node.js](http://nodejs.org/ "link-externo")
 - [Node.js - comunidade Brasileira](http://nodebr.com/ "link-externo")
