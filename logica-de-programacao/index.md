@@ -35,8 +35,7 @@ O que você precisa saber sobre a linguagem C para começar:
 
 - [Rápida introdução a linguagem C (apenas o suficiente para realizarmos os exercícios)](/logica-de-programacao/introducao-linguagem-c/)
 - [Como compilar no Linux](/logica-de-programacao/como-compilar-no-linux/)
-- Como compilar no Windows (Em breve)
-- [Uma breve noção sobre o que é TDD](/logica-de-programacao/o-que-e-tdd/)
+- [Uma breve noção sobre o que é TDD](/tdd/o-que-e-tdd/) (você irá para a seção __TDD__)
 - [Entenda a função `assert()`](/logica-de-programacao/entendendo-o-assert-c/)
 - ["Rodando os testes" ou "compilando e executando", socorro ?](/logica-de-programacao/rodando-os-testes/)
 

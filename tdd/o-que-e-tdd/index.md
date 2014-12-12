@@ -1,13 +1,13 @@
 ---
 layout:      grid12-article
 title:       Uma breve noção sobre o que é TDD
-description: Noção básica sobre o que é TDD, apenas o suficiente para seguirmos com o curso de lógica.
+description: Noção básica sobre o que é TDD, apenas o suficiente para um primeiro contato com TDD (test driven development).
 ---
 
-![Imagem ilustrando o cliclo de TDD](tdd-conceito.jpg "Cliclo de TDD")
+Este é um artigo introduzindo a idéia de TDD (test driven development), ele é bastante básico e vou apresentar a idéia
+intuitiva do que é o TDD.
 
-Para você que caiu nesta página de para quedas: estamos no curso de lógica de programação com TDD e vou apresentar
-a idéia conceitual do TDD.
+![Imagem ilustrando o cliclo de TDD](tdd-conceito.jpg "Cliclo de TDD")
 
 __TDD__: acrônimo para __Test Driven Development__ (desenvolvimento guiado por testes).
 
