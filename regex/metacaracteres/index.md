@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Expressões Regulares - metacaracteres
-description: 
+description: Este artigo é um resumo dos metacaracteres das Expressões Regulares.
 ---
 
 
