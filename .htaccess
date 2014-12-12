@@ -22,6 +22,7 @@ RewriteRule ^flavio.alexandre-micheletti.php "http\:\/\/www\.devfuria\.com\.br\/
 
 RewriteRule ^logica-de-programacao\/basico\/(.*)\/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 RewriteRule ^logica-de-programacao\/if-else\/?$      "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^logica-de-programacao\/o-que-e-tdd\/?$  "http\:\/\/www\.devfuria\.com\.br\/tdd\/o-que-e-tdd\/" [R=301,L]
 RewriteRule ^logica-de-programacao\/funcoes-procedimentos\/?$                     "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 RewriteRule ^logica-de-programacao\/oop-programacao-orientada-a-objetos\/?$      "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 RewriteRule ^logica\/basico\/(.*)\/?$                "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
@@ -49,6 +50,7 @@ RewriteRule ^linux\/instalando-(.*)?$               "http\:\/\/www\.devfuria\.co
 RewriteRule ^linux\/index\-receitas\-instalacoes\/?$  "http\:\/\/www\.devfuria\.com\.br\/linux\/cookbook\/" [R=301,L]
 
 RewriteRule ^js\/?$                                  "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
+RewriteRule ^javascript\/refs\/onclick\/?$           "http\:\/\/www\.devfuria\.com\.br\/javascript\/tratando-eventos\/" [R=301,L]
 RewriteRule ^javascript\/objeto-global\/?$           "http\:\/\/www\.devfuria\.com\.br\/javascript\/refs\/objeto-global\/" [R=301,L]
 RewriteRule ^javascript\/numeros-randomicos\/?$      "http\:\/\/www\.devfuria\.com\.br\/javascript\/numeros-aleatorios\/" [R=301,L]
 RewriteRule ^js\/basico\/?$                          "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
