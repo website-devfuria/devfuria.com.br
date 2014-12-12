@@ -199,6 +199,14 @@ span.regex {
     color: red;
     background-color: #ffff00;
 }
+/** menssagens inicialmente utilizadas na seção node.js */
+#alterta {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1px 20px;
+    background-color: #ffffdd;
+    color: #aaa;
+}
 
 /*pygmentize -S native -f html > highlight.css*/
 pre .hll { background-color: #ffffcc }
