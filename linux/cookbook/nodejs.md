@@ -129,6 +129,7 @@ Veja também
 ---
 
 - [Instalando o npm](/linux/instalando-npm/)
+- [Aprenda Node.js](/javascript/node.js/)
 - [Node.js no GitHub](https://github.com/joyent/node "link-externo")
 - [Node.js](http://nodejs.org/ "link-externo")
 - [Tutorial nodeschool](http://nodeschool.io/ "link-externo")

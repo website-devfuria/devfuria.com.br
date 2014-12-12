@@ -4,6 +4,10 @@ title:       Node.js
 description: Aprenda Node.js
 ---
 
+
+Leia este artigo para aprender como [instalar o Node.js](/linux/cookbook/nodejs/).
+
+
 ### Nodeschool
 
 - [Nodeschool](http://nodejs.org/ "link-externo")

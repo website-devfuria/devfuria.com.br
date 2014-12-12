@@ -12,7 +12,7 @@ Você pode executar JavaScript do lado do cliente (__front end__) em um navegado
 [FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou [Google Chrome](https://www.google.com/chrome/ "link-externo").
 
 Também pode-rá executá-lo do lado do servidor (__back end__) em linha de comando através do 
-[node.js](http://nodejs.org/ "link-externo").
+[Node.js](/javascript/node.js/).
 
 
 

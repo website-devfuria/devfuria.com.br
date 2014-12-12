@@ -45,11 +45,10 @@ Solução
 ---
 
 {% highlight javascript %}
-var length= process.argv.length,
-	sum = 0,
-	i = 2;
+var length = process.argv.length,
+    sum = 0;
 
-for (; i < length; i++) {
+for (i = 2; i < length; i++) {
 	sum += Number(process.argv[i]);
 };
 
