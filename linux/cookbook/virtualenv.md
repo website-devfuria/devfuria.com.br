@@ -22,7 +22,7 @@ Obviamente que você deve checar se os links apontam para as versões corretas, 
 
 Leia este artigo para [instalar o Python 3](/linux/cookbook/python/).
 
-Leia a [documentação oficial](https://virtualenv.pypa.io/en/latest/virtualenv.html "links-externo") para outras forma de instalação.
+Leia a [documentação oficial](https://virtualenv.pypa.io/en/latest/virtualenv.html "link-externo") para outras forma de instalação.
 
 Verifique se instalou corretamente
 
