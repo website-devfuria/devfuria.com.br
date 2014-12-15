@@ -5,15 +5,15 @@ description: Aprenda com esta receita como isntalar o Python 3 sem afetar o Linu
 ---
 
 Esta é uma receita de instalação do Python 3 no Linux. A questão é que o Linux já vem com o Python instalado e, muito 
-provavelmente, é a versão 2.X. 
+provavelmente, é a versão 2x. 
 
 O cuidado que você deve ter ao instalar o __Python 3__ é não interferir com o __Python 2__, 
-pois sua distribuição Linux depende de muito código em Python, então teremos em nossa máquina as duas versões.
+pois sua distribuição Linux depende de muito código em Python 2x, então teremos em nossa máquina as duas versões.
 
 Para descobrir qual é a sua versão do Python execute `python --version`.
 
-Após seguir esta receita, você poderá executar o Python 2.X através do comando `python` e o Python 3 através do 
-comando `python3`.
+Após seguir esta receita, teremos Python 2 e 3 instalados na máquina e você poderá executar o Python 2.X através do
+comando `python` e o Python 3 através do comando `python3`.
 
 
 
@@ -34,7 +34,7 @@ Instalamos as dependências.
 Instalando
 ---
 
-Procure no site oficial a versão deseja do Python, escolhe aqui sua versão 
+Procure no site oficial a versão deseja do Python, escolha aqui sua versão 
 [https://www.python.org/ftp/python/](https://www.python.org/ftp/python/ "link-externo")
 
 Neste exemplo utilizarei a versão 3.4.2.
@@ -55,9 +55,9 @@ Extraia.
 
 	tar -xvf Python-3.4.2.tar
 
-Entre na pasta `Python-3.4.2`
+Entre na pasta `/Python-3.4.2`
 
-	cd Python-3.4.2
+	cd /Python-3.4.2
 
 Compile.
     
@@ -81,9 +81,9 @@ Execute `ls -l /usr/bin/python*` para checar visualmente.
 
 Ao executar `/usr/bin/python --version` ou simplesmente `python --version` obtemos o mesmo resultado.
 
-Se você seguiu a receita de instalação com sucesso, então teremos o Python 3 instalado neste local `/usr/local/bin/`
+Se você seguiu a receita de instalação com sucesso, então teremos o Python 3 instalado neste local `/usr/local/bin/`.
 
-Execute `ls -l /usr/local/bin/python*` para ver aonde foi instalado o python 3.
+Execute `ls -l /usr/local/bin/python*` para ver aonde foi instalado o Python 3.
 
 No meu caso, o Python 3 foi instalado em `/usr/local/bin/python3.4`, então para testar posso executar 
 `/usr/local/bin/python3.4 --version`.
