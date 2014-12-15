@@ -6,11 +6,13 @@ description: Aprenda como instalar o banco de dados MySql no Linux
 
 MySql é um banco de dados opensource.
 
-Ao término de cada receita, você poderá checar se a instalação foi bem sucedido seguindo os passos:
+Ao término de cada receita, você poderá checar se a instalação foi bem sucedido acessando o MySQL.:
 
-	# mysql -h localhost -u root -p
+	mysql -h localhost -u root -p
 
-Pedirá a senha que você acabou de definir e mostrará o prompt do MySql como abaixo:
+Alternativamente, você poderá digitar apenas `mysql -p`.
+
+Ambos comando acima, pedirá a senha e mostrará o prompt do MySQL como abaixo:
 
 	mysql>
 
