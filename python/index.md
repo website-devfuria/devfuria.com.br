@@ -43,6 +43,16 @@ deveria funcionar e implementa as funções até os testes passarem.
 </div>
 
 
+Experimente Python 3
+---
+
+Python 3 é a versão mais atual da linguagem. Para ser mais exato, enquanto escrevo (dez/2014), a versão mais atual é
+__3.4.2__. 
+
+Antes da versão 3, a última versão de Python 2 é a famosa __2.7__ (o Linux vem com a versão 2x instalado).
+
+Para instalar a versão 3 de Python siga este tutorial
+[Instalando o Python 3 (junto com o Python 2)](/linux/cookbook/python/).
 
 
 Livros sobre Python
