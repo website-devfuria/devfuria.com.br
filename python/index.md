@@ -54,6 +54,14 @@ Antes da versão 3, a última versão de Python 2 é a famosa __2.7__ (o Linux v
 Para instalar a versão 3 de Python siga este tutorial
 [Instalando o Python 3 (junto com o Python 2)](/linux/cookbook/python/).
 
+Aprenda a [instalar o Django](/linux/cookbook/django/).
+
+Aprenda a [instalar o Pip](/linux/cookbook/pip/).
+
+Aprenda a [instalar o virutalenv](/linux/cookbook/virtualenv/).
+
+Aprenda a [instalar o pil](/linux/cookbook/pil/).
+
 
 Livros sobre Python
 ---

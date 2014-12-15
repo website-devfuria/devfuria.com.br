@@ -81,3 +81,10 @@ Quando terminar poderá digitar
     deactivated
 
 Toda vez que quiser rodar seu projeto, o __virtualenv__ deve estar habilitado.
+
+
+
+Leia também
+---
+
+Aprenda a programar em nossa seção sobre a [linguagem Python](/python/).

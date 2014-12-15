@@ -104,3 +104,9 @@ Experimente...
 
     python --version
     python3 --version
+
+
+Leia também
+---
+
+Aprenda a programar em nossa seção sobre a [linguagem Python](/python/).

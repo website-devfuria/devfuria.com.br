@@ -7,7 +7,7 @@ description: Descubra como instalar o pip (gerenciados de pacotes do python) no 
 ### O que pip?
 
 __pip__ é um sistema de gerenciamento de pacotes usado para instalar e gerenciar pacotes de software escritos na
-linguagem de programação Python
+linguagem de programação [Python](/python/).
 ( [wikipedia](http://pt.wikipedia.org/wiki/Pip_%28Python%29 "link-externo") ).
 
 
@@ -24,7 +24,7 @@ linguagem de programação Python
     pip --version
 
 
-Uma forma alternativa de instalação indicada para quem usa o Python 3 é a seguinte:
+Uma forma alternativa de instalação indicada para quem usa o [Python 3](/linux/cookbook/python) é a seguinte:
 
     cd opt/
     wget https://bootstrap.pypa.io/get-pip.py
@@ -34,8 +34,8 @@ Se você seguiu a forma alternativa, executar `pip --version` talvez retorne
 
     bash: pip: command not found
 
-Muito provavelmente, a intalação criou o atalho `pip3` ou `pip3.2` ou ainda `pip3.4`, o nome do link (atalho) vai 
-depender da versão do Python instalado (`python --version`).
+Muito provavelmente, a instalação criou o atalho `pip3` ou `pip3.2` ou ainda `pip3.4`, o nome do link (atalho) vai 
+depender da versão do [Python](/linux/cookbook/python) instalado (`python --version`).
 
 
 
@@ -67,3 +67,9 @@ não resolvam.
 ### Fontes:
 
 - [Site oficial: https://pip.pypa.io/en/latest/](https://pip.pypa.io/en/latest/ "link-externo")
+
+
+Leia também
+---
+
+Aprenda a programar em nossa seção sobre a [linguagem Python](/python/).

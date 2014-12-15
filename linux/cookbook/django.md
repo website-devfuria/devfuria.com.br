@@ -8,7 +8,7 @@ description: Aprenda como instalar o Django no Linux
 O que é __django__ ?
 
 
-> Django é um framework, construído usando a linguagem Python.
+> Django é um framework, construído usando a linguagem [Python](/python/).
 > 
 > Framework é uma caixa de ferramentas. Mas não é apenas isso, o Django é uma caixa de ferramentas com um manual dentro,
 > e as ferramentas combinam muito bem umas com as outras. Você usa as ferramentas que quiser, e se você quiser substituir
@@ -23,8 +23,8 @@ Existem mais do que uma única forma de instalar o __Django__. Consulte o site o
 
 Antes de começar, você deverá decidir qual versão instalar:
 
-- Para __Python 2__ instale Django __1.6__
-- Para __Python 3__ instale Django __1.7__
+- Para [Python 2](/linux/cookbook/python) instale Django __1.6__
+- Para [Python 3](/linux/cookbook/python) instale Django __1.7__
 
 
 
@@ -48,7 +48,7 @@ No canto direito da tela, procure por __Latest release__ e você descobrirá qua
 
 Para saber qual a sua versão instalado do Django
 
-Acesse o terminal do __Python__	digitando simplesmente `python`.
+Acesse o terminal do [Python](/linux/cookbook/python)	digitando simplesmente `python`.
 
 Agora digite:
 
@@ -65,3 +65,9 @@ Similarmente, você poderá digitar (sem entrar no console do python, ou seja, n
 
 - [Site oficial: https://www.djangoproject.com/](https://www.djangoproject.com/ "link-externo")
 - [http://docs.djangobrasil.org/index.html](http://docs.djangobrasil.org/index.html "link-externo")
+
+
+Leia também
+---
+
+Aprenda a programar em nossa seção sobre a [linguagem Python](/python/).
