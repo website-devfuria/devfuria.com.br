@@ -6,22 +6,28 @@ description:
 
 Você deve criar o banco de dados antes.
 
-alterar... /mysite/settings.py
+Altere o arquivo  `/mysite/settings.py` de...
 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'mydatabase',
-            'USER': 'mydatabaseuser',
-            'PASSWORD': 'mypassword',
-            'HOST': '127.0.0.1'
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 
+Para:
 
-Valide os models (inclue o arquivo setings, uma vez que ele vai precisar para testar os models)
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nome-da-database',
+        'USER': 'root',
+        'PASSWORD': 'senha-do-root',
+        'HOST': '127.0.0.1',
+    }
+
+Valide os models (inclua o arquivo setings, uma vez que ele vai precisar para testar os models)
 
 	python manage.py validate
+
+Neste momento pode ser que dê um erro "No module named MySQLdb", veja no final deste artigo como resolvê-lo.
 
 Se passaram, sincronize com o DB.
 
@@ -36,30 +42,13 @@ Como teste final rode o servidor `python manage.py runserver`.
 
 
 Error loading MySQLdb module: No module named MySQLdb
-===
+---
 
-Se estiver criando um projeto __Django__ e configurando ele para trabalhar com
-o __MySql__. Ao rodar o servidor com o comando `python manage.py runserver` e
-receber a seguinte mensagem
+Se estiver criando um projeto __Django__ e configurando ele para trabalhar com o __MySql__. Ao rodar o servidor com o
+comando `python manage.py runserver` e receber a seguinte mensagem:
 
         Error loading MySQLdb module: No module named MySQLdb
 
-Tente instalar o pacote `MySQL-python` através do __PIP__, veja o comando:
-
-	pip install MySQL-python
-
-Um erro atrás do outro. No meu caso, a instalação reclamou do __mysql_config__.
-
-        EnvironmentError: mysql_config not found
-
-Corriga executando instalando o pacote __python-mysqldb__ pelo __apt-get__:
-
-	apt-get install python-mysqldb
-
-OK, aí tentei novamente instalar o __mysql_config__ `pip install MySQL-python` e... 
-    
-    Requirement already satisfied
-
-Para fazer o teste final rode o servidor do Django `python manage.py runserver`.
+Você deve seguir este artigo [Resolvendo Error loading MySQLdb module: No module named MySQLdb]()
 
 
