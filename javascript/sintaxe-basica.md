@@ -276,10 +276,8 @@ obj.name = "Simon";
 obj.name; // print 'Simon'
 {% endhighlight %}
 
-
+Talvez você queira saber mais sobre [programação orientada a objetos](/javascript/oop-primeiro-degrau/).
 
 ### Fontes
 
-- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript "link-externo")
-
-
+- [MDN - A re-introduction to JavaScript ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript "link-externo")

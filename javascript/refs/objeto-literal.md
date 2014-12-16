@@ -44,4 +44,4 @@ var obj = {
 
 
 <hr>
-Fonte: Padrões JavaSCript, Stefanov, pág 58]
+Fonte: Padrões JavaScript, Stefanov, pág. 58]
