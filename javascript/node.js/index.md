@@ -13,8 +13,10 @@ Para executá-lo com o __Node.js__, digite no terminal `node program.js`.
 
 O __Node.js__ também possui um terminal interativo, para acessá-lo basta digitar `node` no terminal e se divertir!
 
-    node
+    $ node
     >
+    > 10 + 2
+    12
 
 Instalando o Node.js
 ---
@@ -34,7 +36,7 @@ A Nodeschool mantém uma séria de tutoriais interativos, um deles (acho que o p
 A ideía é você aprender com o próprio __Node.js__, ou seja pelo terminal você instalará um programa __Node.js__ (learnyounode),
 depois criará arquivos em __JavaScript__ que serão executados no terminal pelo __learnyounode__.
 
-Eu não acho que essa é a melhor forma para inicar seu aprendizado com o __Node.js__.
+Eu acho que essa é uma ótima forma para iniciar seu estudos com o __Node.js__.
 
 Talvez você precisa de nossa ajuda com uma [introdução ao 'learn you node'](ns-learyounode/), caso contrário pode
 partir para a lista de exercícios...
