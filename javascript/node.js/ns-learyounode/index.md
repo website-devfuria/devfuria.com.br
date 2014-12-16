@@ -5,8 +5,9 @@ description: Uma introdução ao aplicativo learyounode mantido pela Nodeschool
 ---
 
 A Nodeschool teve uma idéia genial, criou um curso interativo de __Node.js__, o mais legal é que ele é gratuito.
-Digo mais, ele self service! Você instala o programa __learyounode__ que é escrito em __JavaScritp__ e feito para rodar
-no __Node.js__. Ele possui uma lista com 13 execícios que você vai desenvolvendo e conferindo com a ajuda do programa.
+Digo mais, ele é do tipo "self service"! Você instala o programa __learyounode__ que é escrito em __JavaScritp__ e 
+feito para rodar no __Node.js__. Ele possui uma lista com 13 execícios que você vai desenvolvendo e conferindo com a 
+ajuda do programa.
 
 A primeira coisa que você precisa fazer é [instalar o Node.js no Linux](/linux/cookbook/nodejs/).
 
