@@ -1,7 +1,8 @@
 ---
-layout:      grid12-article
-title:       Funções anônimas
+layout:      grid93-article
+title:       JavaScript - Funções anônimas
 description: Entenda o que são e como funcionam as funções anônimas em JavaScript
+menu:        javascript-refs
 ---
 
 Em JavaScript podemos escrever funções naturalmente como o exemplo abaixo:
@@ -14,7 +15,8 @@ function foo() {
     // código
 }
 {% endhighlight %}
-Porém, essa forma não é a mais usual, o mais comum é atribuírmos a função a uma variável.
+
+Porém, essa forma não é a mais usual, o mais comum é atribuir-mos a função a uma variável.
 
 Essa técnica recebe o nome de __função anônima__, repare que a função não possui nome algum, veja código abaixo:
 
@@ -39,7 +41,9 @@ var foo = function() {
     return "alguma coisa";
 }
 {% endhighlight %}
-Uma função pode aceitar parâmetros (dados para serem trabalhos dentro da função).
+
+Uma função pode aceitar uma quantidade fixa de parâmetros (dados para serem trabalhos dentro da função) e também 
+uma quantidade desconhecida de parâmetros através da matriz [arguments](/javascript/refs/funcoes-argumentos/).
 
 Abaixo conferimos um exemplo de função que soma dois números.
 
