@@ -84,7 +84,7 @@ coisa e seu navegador comporta-se de outro, restando para o programador e/ou des
 HTML,   DHTML , XHTML, HTML5... no final das contas é tudo HTML!
 ---
 
-No início era apenas __HTML__, depois veio __DHTML__ (o "d" era de Dynamic), depois o __XHTML__ e hoje temos o [HTML5](html-css/html5/).
+No início era apenas __HTML__, depois veio __DHTML__ (o "d" era de Dynamic), depois o __XHTML__ e hoje temos o [HTML5](/html-css/html5/).
 Sim, são coisas distintas umas das outras, mas em sua essência não passam de mero HTML.
 
 Por simplificação, utilizaremos o termo HTML de forma gernérica e quando for necessário ser mais específico utilizaremos
