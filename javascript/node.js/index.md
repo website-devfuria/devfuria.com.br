@@ -32,7 +32,7 @@ Primeiro passos com Node
 ---
 
 Leia este artigo para aprender mais sobre
-[como programar com o Node com esta minúscula biblioteca (utils-merge)](a-menor-biblioteca-para-node).
+[como programar com o Node com esta minúscula biblioteca (utils-merge)](programando-com-node-utils-merge).
 
 
 
