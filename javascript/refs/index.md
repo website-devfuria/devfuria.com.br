@@ -5,7 +5,7 @@ description: Uma referência prática da linguagem JavaScript
 menu:        javascript-refs
 ---
 
-Se vc caiu nesta página de para quedas não deixe de ler a [página principal sobre JavaScript](/javascript/)
+Se você caiu nesta página de para quedas não deixe de ler a [página principal sobre JavaScript](/javascript/)
 
 ### Artigos de referência
 
