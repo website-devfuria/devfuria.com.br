@@ -53,6 +53,16 @@ exercícios...
 
 
 
+Testes unitários (Unit Test) com Node.js
+---
+
+Em breve, uma série de arquivos falando sobre __testes unitários__ e JavaScript no lado do servidor.
+
+<div class="list-group">
+    <a href="/javascript/node.js/mocha-teste-seu-javascript/" class="list-group-item">Testando JavaScript com o Mocha</a>
+</div>
+
+
 Site Oficial
 ---
 
