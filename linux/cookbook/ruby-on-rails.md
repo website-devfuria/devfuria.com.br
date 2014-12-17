@@ -229,5 +229,5 @@ O processo foi meio devagar mas chegou até o fim com sucesso, obtive:
 <hr>
 Fonte:
 
-- [https://rvm.io/rvm/install](https://rvm.io/rvm/install)
-- [http://www.vivaolinux.com.br/dica/Como-instalar-o-Ruby-on-Rails-no-CentOS-6](http://www.vivaolinux.com.br/dica/Como-instalar-o-Ruby-on-Rails-no-CentOS-6)
+- [https://rvm.io/rvm/install](https://rvm.io/rvm/install "link-externo")
+- [http://www.vivaolinux.com.br/dica/Como-instalar-o-Ruby-on-Rails-no-CentOS-6](http://www.vivaolinux.com.br/dica/Como-instalar-o-Ruby-on-Rails-no-CentOS-6 "link-externo")
