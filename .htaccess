@@ -95,6 +95,7 @@ RewriteRule ^html-css\/basico\/(.*)?$             "http\:\/\/www\.devfuria\.com\
 RewriteRule ^html-css\/formularios-web\/$         "http\:\/\/www\.devfuria\.com\.br\/html-css\/formularios\/" [R=301,L]
 RewriteRule ^html-css\/index.php$                 "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
 RewriteRule ^html-css\/historia-html\/$           "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
+RewriteRule ^html-css\/historia-html$             "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
 
 RewriteRule ^regexp\/(.*)?$                           "http\:\/\/www\.devfuria\.com\.br\/regex\/" [R=301,L]
 RewriteRule ^regexp\/basico\/draft\/?$            "http\:\/\/www\.devfuria\.com\.br\/regex\/" [R=301,L]
