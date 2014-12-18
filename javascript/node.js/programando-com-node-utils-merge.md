@@ -10,9 +10,9 @@ básicos e práticos, um artigo "mão na massa".
 Iremos utilizar o pacote [utils-merge](https://www.npmjs.com/package/utils-merge "link-externo") como exemplo.
 Vamos aprender a instalar o pacote via [npm](/linux/cookbook/npm/), vamos também [clonar](/git/git-clone/) o projeto
 do [github](/git/ "link-externo") e rodar os teste com o [mocha](/javascript/mocha-teste-seu-javascript/ "link-externo").
-Portanto, eu espero que você tenha um conhecimento mínimo do [git e git-hub](/git/ "link-externo") e também tenha uma
-certa intimidade com o [terminal do Linux](http://www.hardware.com.br/livros/linux/usando-terminal.html "link-externo"),
-sem se esquecer do próprio [Linux](/linux/). Você também deve ter [instalado o Node](/linux/cookbook/nodejs/) e ter 
+Portanto, eu espero que você tenha um conhecimento mínimo do [git e git-hub](/git/) e também tenha uma certa intimidade 
+com o [terminal do Linux](http://www.hardware.com.br/livros/linux/usando-terminal.html "link-externo"), sem se esquecer 
+do próprio [Linux](/linux/). Você também deve ter [instalado o Node](/linux/cookbook/nodejs/) e ter 
 praticado um pouco de [JavaScript](/javascript/).
 
 
