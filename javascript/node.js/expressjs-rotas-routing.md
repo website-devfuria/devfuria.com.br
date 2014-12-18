@@ -5,7 +5,7 @@ description: Este artigo ensina como montar rotas básicas no framework Express.
 ---
 
 Este é o segundo artigo sobre o framework [Express.js](http://expressjs.com/ "link-externo"). Estou assumindo que você
-já leu, praticou e entendeu o primeiro artigo.
+já leu, praticou e entendeu o artigo de [introdução ao Express](/javascript/node.js/expressjs-introducao/).
 
 Abaixo vemos um exemplo simplista para algumas rotas definidas.
 
@@ -51,12 +51,9 @@ Abra seu navegador e experimente as seguites url's:
 
 ### Indo além...
 
-O. __Express.js__ vem equipado com funções para de rotamento para beneficiar-se do conceito 
-[REST](http://pt.wikipedia.org/wiki/REST "link-externo").
+O. __Express.js__ vem equipado com funções para de rotamento para beneficiar-se do conceito __REST__.
 
-Para você compreender de fato os exemplos abaixo, não tem jeito, deve saber o básico sobre __REST__.
-
-Abaixo, todas as rotas apontas para a url `/user` porém, são distintas pelo método (verbo) utilizado.
+As seguintes rotas apontam todas para a url `/user` porém, são distintas pelo método (verbo) utilizado.
 
 {% highlight javascript %}
 app.post('/user', function (req, res) {
@@ -71,6 +68,18 @@ app.delete('/user', function (req, res) {
   res.send('Got a DELETE request at /user');
 })
 {% endhighlight %}
+
+
+Para você compreender de fato os exemplos acima, não tem jeito, deve saber o básico sobre [REST](http://pt.wikipedia.org/wiki/REST "link-externo").
+
+Nós podemos acessar, por exemplo, usuários (users) sobre o protocolo __HTTTP__ usando o CRUD (Create, Read, Update e
+ Delete) mapeada para uma API __REST__.
+
+- __GET /users__ – Método index que retorna a lista de usuários
+- __POST /users/__ – Cria um novo usuário
+- __GET /users/:id__ – Retorna um único usuário através de seu `id`
+- __PUT /users/:id__ – Atualiza um único usuário através de seu `id`
+- __DELETE /users/:id__ – Deleta um único usuário através de seu `id`
 
 
 <hr>
