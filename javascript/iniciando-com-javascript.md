@@ -6,8 +6,9 @@ description: Primeiros passos com a linguagem JavaScript
 
 Este é um pequeno artigo sobre como iniciar sua experiência com a linguagem __JavaScript__. Ele á bastante prático e 
 direto, o objeto é você entrar rapidamente em ação. Mas talvez você precise de mais detalhes de como 
-[iniciar os estudos com JavaScript (artigo de Vitor Britto)](http://www.vitorbritto.com.br/blog/iniciando-os-estudos-com-javascript/ "link-externo")
-Eu pressuponho que você sabe [o que é JavaScript](/javascript/o-que-e-javascript/).
+[iniciar os estudos com JavaScript 
+(artigo de Vitor Britto)](http://www.vitorbritto.com.br/blog/iniciando-os-estudos-com-javascript/ "link-externo")
+também pressuponho que você saiba [o que é JavaScript](/javascript/o-que-e-javascript/).
 
 Veremos neste artigo:
 

@@ -30,6 +30,8 @@ Quem programa para a web, trabalha com uma linguagem do lado do servidor e conta
 >
 > Mozilla Fundation
 
+O JavaScript já deixou de ser uma linguagem só front end, o [node.js](/javascript/node.js/) levou a linguagem para o 
+lado do servidor, trouxe uma perspectiva muito interessante e a cada dia se torna mais popular.
 
 
 ### Padronização
@@ -50,10 +52,6 @@ Isso mesmo, JavaScript sofre do mesmo problema que o HTML e o CSS, cada navegado
 
 Se estiver curioso(a) veja neste artigo qual é a relação 
 [padrão ECMA X versão da linguagem](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/JavaScript_Vis%C3%A3o_Geral#Relationship_between_JavaScript_Versions_and_ECMAScript_Editions "link-externo").
-
-
-O JavaScript já deixou de ser uma linguagem só front end, o [node.js](/javascript/node.js/) levou a linguagem para o 
-lado do servidor, trouxe uma perspectiva muito interessante e a cada dia se torna mais popular.
 
 
 
