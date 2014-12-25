@@ -4,13 +4,20 @@ title:       Ajax - Aprenda a utilizar Ajax com PHP e Jquery
 description: Aprenda a utilizar Ajax com PHP e JQuery
 ---
 
-Este artigo ensina como utilizar Ajax com PHPe JQuery
+Este artigo ensina como utilizar Ajax com PHP e JQuery. Pressuponho que você tenha um servidor web instalado, como o 
+__Apache__ por exemplo e a linguagem __PHP__ também devidamente instalada e habilitada. Além de ter um conhecimento mínimo
+das linguagem __JavaScript__ e __PHP__.
+
+- [JQuery](http://jquery.com/ "link-externo") é uma biblioteca __JavaScript__ criado por [John Resig](http://jquery.com/ "link-externo")
+- [PHP](/php/) é uma linguagem de programação do lado do servidor [Rasmus](http://lerdorf.com/bio/ "link-externo")
 
 Se vc caiu de paraquedas nesta página, não deixe de ver as matérias anteriores relacionados ao final deste artigo.
 
-[JQuery](http://jquery.com/ "link-externo") é uma biblioteca __JavaScript__ criado por [John Resig](http://jquery.com/ "link-externo")
+Nosso objeto é criar um arquivo [HTML](/html-css/) incluindo a biblioteca __Jquery__ e criar um requisição __AJAX__ 
+simples através do método `$.ajax()` "apontando" para o arquivo __PHP__ denominado `script.php`. Obteremos como resposta
+um texto plano com o valor da variável global `$_POST`.
 
-Utilizaremos o [HTML](/html-css/) abaixo como modelo.
+Utilizaremos o HTML abaixo como modelo.
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -44,19 +51,27 @@ A propriedade `dataType` refere-se ao tipo de dado que o servidor deve retornar 
 
 {% highlight javascript %}
 var request = $.ajax({
+
     url: "script.php",
     type: "POST",
     data: "campo1=dado1&campo2=dado2&campo3=dado3",
     dataType: "html"
+
 });
 request.done(function(resposta) {
+
     console.log(resposta)
+
 });
 request.fail(function(jqXHR, textStatus) {
+
     console.log("Request failed: " + textStatus);
+
 });
 request.always(function() {
+
     console.log("completou");
+
 });
 {% endhighlight %}
 
@@ -70,20 +85,28 @@ Podemos encadear os métodos `done()`, `fail()` e `always()` tornando o código 
 
 {% highlight javascript %}
 $.ajax({
+
     url: "script.php",
     type: "POST",
     data: "campo1=dado1&campo2=dado2&campo3=dado3",
     dataType: "html"
+
 }).done(function(resposta) {
+
     console.log(resposta);
+
 }).fail(function(jqXHR, textStatus ) {
+
     console.log("Request failed: " + textStatus);
+
 }).always(function() {
+
     console.log("completou");
+
 });
 {% endhighlight %}
 
-A requisição aponta para um arquivo em __PHP__ denominado `script.php` e com o seguinte conteúdo.
+A requisição aponta para um arquivo em __PHP__ denominado `script.php` que contém o seguinte conteúdo.
 
 {% highlight php %}
 <?php
@@ -170,5 +193,5 @@ Documentação Oficial: [jQuery.getJSON](http://api.jquery.com/jQuery.getJSON/ "
 Veja também
 ---
 
-- [Ajax - Como deve ser utilizado hoje em dia](/javascript/ajax/)
+- [Ajax - Introdução](/javascript/ajax/)
 - [Ajax - Como era utilizado no começo](/javascript/ajax-no-inicio/)

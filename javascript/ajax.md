@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Ajax - Como deve ser utilizado hoje em dia
-description: Este artigo é uma introdução a técnica Ajax baseado no objeto XMLHttpdRequest
+title:       Ajax - Introdução
+description: Este artigo é uma introdução a técnica Ajax e ao objeto XMLHttpdRequest
 ---
 
 __Ajax__ é o acrônimo (sem letras maiúsculas) de Asynchronous JavaScript and XML
@@ -182,4 +182,4 @@ Veja também
 ---
 
 - [Ajax - Como era utilizado no começo](/javascript/ajax-no-inicio/)
-- [Aprenda a utilizar Ajax com PHP e Jquery](/javascript/ajax-php-jquery/)
+- [Ajax - Aprenda a utilizar Ajax com PHP e Jquery](/javascript/ajax-php-jquery/)
