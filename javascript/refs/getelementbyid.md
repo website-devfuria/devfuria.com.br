@@ -26,7 +26,7 @@ var elementRef = document.getElementById("sirius");
 {% endhighlight %}
 
 
-Utilizando a p ropriedade value
+Utilizando a propriedade value
 ---
 
 Pensando em um controle HTML do tipo __textbox__, __password__ ou uma __textarea__, poderemos utilizar a propriedade 
