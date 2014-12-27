@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Code - Somando
-description: Código em JavaScript que soma e subtrai um número (fins didâtico).
+description: Código em JavaScript que soma e subtrai um número.
 ---
 
 Este é um exemplo de JavaScript extremamente simples.
@@ -65,10 +65,19 @@ elem.onclick = function() {
 }
 {% endhighlight %}
 
-Terceiro, ainda na questão do evento __onclick__, há duas formas de se [atribuir uma função a um evento](/javascript/tratando-eventos/):
+Ainda na questão do evento __onclick__, quando fazemos `elem.onclick = function(){}` ficamos limitados a atribuir uma
+única função ao evento __onclick__ além de estarmos utilizando uma técnica ultrapassada (`elem.onclick`).
 
-1. Atribuindo uma única função (como demonstrado acima) e
-2. Anexando um ou mais funções com receptores de eventos (`addEventListener()`)
+A forma ideal seria anexar funções com os recepetores de eventos (`addEventListener()`), veja exemplo:
 
-O ideal é utilizarmos sempre a segunda forma.
+{% highlight javascript %}
+var elem = document.getElementById("id-do-seu-botao");
+var foo = function () {
+    ...
+}
+elem.addEventListener('click', foo, false);
+{% endhighlight %}
+
+Para mais informações sobre como trabalhar com eventos no JavaScript leia 
+[Tratando Eventos (de navegadores)](/javascript/tratando-eventos/).
 
