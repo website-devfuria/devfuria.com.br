@@ -20,7 +20,7 @@ Veremos neste artigo:
 ### Como executar o JavaScript
 
 Você pode executar JavaScript do lado do cliente (__front end__) em um navegador web, dê preferência ao 
-[FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou ao
+[Firefox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou ao
 [Google Chrome](https://www.google.com.br/chrome/browser/desktop/index.html "link-externo").
 
 Também pode-rá executá-lo do lado do servidor (__back end__) em linha de comando através do 

@@ -86,7 +86,7 @@ objeto nativo [document](/javascript/refs/document/).
 Depuradores (subindo um degrau)
 ---
 
-Quem desenvolve em JavaScript e utiliza o [FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") para ver
+Quem desenvolve em JavaScript e utiliza o [Firefox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") para ver
 o resultado pode contar com o [Firebug](https://getfirebug.com/ "link-externo") (já comentei um monte de vez sobre esse
 plugin em matérias anteriores). Se você ainda não tem ele instalado, faça isso imediatamente.
 
