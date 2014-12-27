@@ -1,7 +1,7 @@
 ---
 layout:      grid12-index
 title:       JavaScript
-description: Tudo o que você precisa saber sobre javascript a apartir do zero
+description: Tudo o que você precisa saber sobre JavaScript a apartir do zero
 ---
 
 
