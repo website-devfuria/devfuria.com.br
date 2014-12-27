@@ -50,6 +50,24 @@ Entre as chaves `{}`, neste exemplo, há duas propriedades: `font-size` e `color
 Há 3 formas de unir o CSS ao HTML: inline, embed e linked.
 
 
+
+As versões da CSS
+---
+
+CSS é um padrão relativamente antigo. CSS 1 foi adotado em dezembro de 1996 e define propriedades para especificar cores,
+fontes, margens, bordas e outros estilos básicos. A segunda edição do padrão, CSS 2, foi adotada em maio de 1998. Ela
+define vários recursos mais avançados, mais notadamente o suporte para posicionamento absoluto de elementos. CSS 2.1
+esclarece e corrige CSS 2, eliminando recursos que os fornecedores de navegador nunca implementaram. Os navegadores atuais
+têm suporte basicamente completo a CSS2,1, embora as versões do IE anteriores ao IE8 tenham omissões notáveis. 
+
+O trabalho em CSS continua. Para a versão 3, a especificação CSS foi dividida em vários módulos especializados que estão
+passando pelo processo de padronização separadamente. A especificadamente CSS e os documentos de trabalho podem ser
+encontrados no endereço abaixo.
+
+[www.w3.org/Style/CSS/](http://www.w3.org/Style/CSS/ "link-externo")
+
+
+
 Veja a próxima matéria
 ---
 
