@@ -4,13 +4,14 @@ email: feedback@devfuria.com.br
 description: "Site de desenvolvimento web"
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+markdown: redcarpet
+highlighter: pygments
 permalink: pretty
 #exclude: [linux, logica-de-programacao, git, javascript, php, seguranca-da-informacao, python, sql, html-css, regex, misc]
 
 host: 0.0.0.0
 port: 4000
-url: http://www.devfuria.com.br
 
 sitemap:
     file: "/sitemap.xml"
