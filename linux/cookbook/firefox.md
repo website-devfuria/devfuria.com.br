@@ -43,7 +43,7 @@ As seguintes instruções instalarão o __Firefox__ em sua pasta "Home", e somen
 ### Passo a passo de como instalar o Firefox
 
 1. Baixe o Firefox através da [página de download](https://www.mozilla.org/en-US/firefox/new/?icn=tabz "link-externo") do Firefox, para a sua pasta "Home".
-2. Abra o Terminal e siga para o diretório home: `cd ~`
+2. Abra o terminal e siga para o diretório home: `cd ~`
 3. Extraia o conteúdo do arquivo baixado: `tar xvjf firefox-*.tar.bz2`
 4. Feche todas as janelas do Firefox se tiver alguma aberta.
 5. Para iniciar o Firefox, execute o script firefox presente na pasta firefox: `~/firefox/firefox`
@@ -51,9 +51,10 @@ As seguintes instruções instalarão o __Firefox__ em sua pasta "Home", e somen
 Se você tentar iniciar o Firefox através de um Terminal com o comando `firefox` ele irá tentar iniciar a versão instalada
 pelo gerenciador de arquivos ou dirá que o programa não está instalado.
 
-Atente para o comando correto `~/firefox/firefox`.
+Atente para o comando correto `~/firefox/firefox`, caso você se já encontre na pasta certa (`~/firefox`) então 
+digite apenas `./firefox`.
 
-Para corrigir o menu do Debina, pois ele ainda aponta para a versão antiga, utilize a interface do sistema: 
+Para corrigir o menu do Debian, pois ele ainda aponta para a versão antiga, utilize a interface do sistema: 
 
     aplications -> accessories -> mainMenu
 
