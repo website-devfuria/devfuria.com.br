@@ -53,7 +53,7 @@ pelo gerenciador de arquivos ou dirá que o programa não está instalado.
 
 Atente para o comando correto `~/firefox/firefox`.
 
-Para corrigir o menu do Debina, pois ele ainda aponta para a versão antiga, utilize a interface do sistema: 
+Para corrigir o menu do Debian, pois ele ainda aponta para a versão antiga, utilize a interface do sistema: 
 
     aplications -> accessories -> mainMenu
 
