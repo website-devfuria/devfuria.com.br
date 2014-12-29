@@ -102,7 +102,7 @@ Estilizando
 O exemplo abaixo mostra dois elementos __select__, o primeiro recebeu altura e largura. O Segundo, além de altura e
 borda, alteramos a cor de fundo e retiramos as bordas.
 
-No FireFox, as setas duplas foram substituídas por um única seta após a inclusão da propriedade `border: 0;`. No Google
+No Firefox, as setas duplas foram substituídas por um única seta após a inclusão da propriedade `border: 0;`. No Google
 Chrome, não há setas duplas. Essas pequenas discrepâncias podem ser somadas ao que chamamos de [Cross Browser]().
 
 <div data-height="269" data-theme-id="2897" data-slug-hash="xbZyjY" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>

@@ -10,6 +10,7 @@ sucesso de [Java](http://www.oracle.com/br/technologies/java/overview/index.html
 O resultado é que até hoje (2014) há uma confusão enorme. __JavaScript não é Java__ (e vice e vesa). O pai dela chama-se
 [Brendan Eich](http://en.wikipedia.org/wiki/Brendan_Eich "link-externo").
 
+
 A Netscape foi vendida e deu lugar para a [fundação Mozila](https://www.mozilla.org/pt-BR/ "link-externo") tomar conta do
 negócio e ela vem fazendo um ótimo trabalho.
 
@@ -18,12 +19,28 @@ estáticas em algo dinâmico sem ter que "viajar" até o servidor. Estamos falan
 
 Quem programa para a web, trabalha com uma linguagem do lado do servidor e conta sempre com o apoio de JavaScript. 
 
-A empresa [ECMA](http://www.ecma-international.org/ "link-externo") resolveu padronizar a linguagem e criou o padrão
-[ECMAscript](http://www.ecmascript.org/ "link-externo"), na verdade este é o nome oficial adotado para a linguagem, 
-mas que não "cola" de jeito nenhum. 
+> "Parece algo que você pode dominar em uma tarde, JS parece simples, contudo, em seus 10 anos de história até aqui [a edição
+> era de 2007], as melhores práticas de JS pareciam mudar com as estações.".
+> 
+> Kevin Yank e Cameron Adams (Simple JavaScript)
+
+> "JavaScript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos, 
+> baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de 
+> script da Web. Também utilizada em vários outros ambientes como __node.js__ e __Apache CouchDB__.".
+>
+> Mozilla Fundation
+
+O JavaScript já deixou de ser uma linguagem só front end, o [node.js](/javascript/node.js/) levou a linguagem para o 
+lado do servidor, trouxe uma perspectiva muito interessante e a cada dia se torna mais popular.
+
+
+### Padronização
+
+[ECMAScript](http://www.ecmascript.org/ "link-externo") é a padronização que rege a linguagem __JavaScript__, na verdade
+este é o nome oficial adotado para a linguagem, mas que não "cola" de jeito nenhum. 
 
 Porque temos um padrão? Porque cada navegador implementa a linguagem de forma diferente, em outras palavras, escrever um
-trecho de código JavaScript válido que funciona no Firefox, por exemplo, pode não funcionar no IE (sempre o IE!). 
+trecho de código JavaScript que funciona no Firefox, por exemplo, pode não funcionar no IE (sempre o IE!). 
 Isso mesmo, JavaScript sofre do mesmo problema que o HTML e o CSS, cada navegador implementa ao seu sabor. 
 
 > "Em teoria, a padronização obriga as empresas fabricantes de navegadores a implementarem no mínimo aquele conjunto de
@@ -33,30 +50,17 @@ Isso mesmo, JavaScript sofre do mesmo problema que o HTML e o CSS, cada navegado
 
 ...por isso o padrão ECMA é tão importante.
 
-O JavaScript já deixou de ser uma linguagem só front end, o [node.js](http://nodejs.org/ "link-externo") levou a linguagem
-para o lado do servidor e está cada vez mais popular.
+Se estiver curioso(a) veja neste artigo qual é a relação 
+[padrão ECMA X versão da linguagem](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/JavaScript_Vis%C3%A3o_Geral#Relationship_between_JavaScript_Versions_and_ECMAScript_Editions "link-externo").
 
-> "Parece algo que você pode dominar em uma tarde, JS parece simples, contudo, em seus 10 anos de história até aqui [a edição
-> era de 2007], as melhores práticas de JS pareciam mudar com as estações.".
-> 
-> Kevin Yank e Cameron Adams (Simple JavaScript)
-
-
-> "JavaScript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos, 
-> baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de 
-> script da Web. Também utilizada em vários outros ambientes como __node.js__ e __Apache CouchDB__.".
->
-> Mozilla Fundation
 
 
 ### JS é realmente Orientado a Objetos ?
 
-Segundo [Douglas Crockford's](http://www.crockford.com/ "link-externo") (o mago do JS):
-
-> O JavaScript é orientado à objetos? Bem, ele contém objetos que podem conter dados e métodos que agem sobre esses 
-> dados. Objetos podem conter outros objetos. O JavaScript não possui classes, mas possui construtores que são capazes 
-> de fazer o que as classes fazem, incluindo agir como contêineres para classes de variáveis e métodos. Ele não possui 
-> herança orientada a classe, mas tem herança orientada a protótipo.
+O JavaScript é orientado à objetos? Bem, ele contém objetos que podem conter dados e métodos que agem sobre esses 
+dados. Objetos podem conter outros objetos. O JavaScript não possui classes, mas possui construtores que são capazes 
+de fazer o que as classes fazem, incluindo agir como contêineres para classes de variáveis e métodos. Ele não possui 
+herança orientada a classe, mas tem herança orientada a protótipo.(Douglas Crockford's, o mago do JS)
 
 JavaScript é uma linguagem orientada a objetos. Isso significa que, em vez de ter funções definidas globalmente para
 operar em valores de vários tipos, os próprios tipos definem __métodos__ para trabalhar com valores. Para classificar
@@ -68,6 +72,7 @@ Em vez disso, chamamos o método `sort()` de `a`:
 {% highlight javascript %}
     a.sort() // A versão orientada a objetos de "sort(a)"
 {% endhighlight %}
+
 
 
 ### JavaScript é seguro?
@@ -83,6 +88,7 @@ inseguro, mas isto não é verdade. Seguro ou inseguro, como já disse, é a for
 
 Obviamente, tendo em vista que o código fica exposto, não criaremos nenhum __código sensível__ (um código que possa ser
 explorado por um hacker causando danos a aplicação).
+
 
 
 Leia em seguida

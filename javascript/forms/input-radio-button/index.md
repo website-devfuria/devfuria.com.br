@@ -11,7 +11,7 @@ O __input radio__ é um controle de opções, é uma única escolha entre as op�
 
 Veja a imagem abaixo com um exemplo simples de formulário web com radios buttons.
 
-![imagem ilustrando radios buttons](form-radios-buttons.png "imagem ilustrando radios buttons")
+![imagem ilustrando radios buttons](form-radios-button.png "imagem ilustrando radios buttons")
 
 Agora veja o código HTML:
 

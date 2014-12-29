@@ -4,8 +4,6 @@ title:       Tratando Eventos (de navegadores)
 description: Trabalhando com eventos no JavaScript
 ---
 
-Isto é um rascunho...
-
 Eventos são ações geradas pelo navegador Web quando acontece algu interessante no documento, no próprio navegador ou em
 algum elemento ou objeto associado a ele. São ocorrências a respeito das quais seu programa vai ser notificado pelo 
 navegador. (David Flanagan em seu livro "JavaScript: O guia definitivo", capítulo 17)
@@ -54,6 +52,14 @@ var foo = function () {
 
 e.addEventListener('click', foo, false);
 {% endhighlight %}
+
+Quando você anexa um listener (ouvinte) de eventos a um elemento em uma página, na verdade você está fornecendo um
+ponteiro para uma função __callback__ que será chamada quando o evento ocorrer. A maior parte da programação de navegador
+no lado do cliente é orientada a eventos. Quando a página termina de carregar, ela dispara um evento __load__. Então o
+usuário interage com a página e causa o disparo de inúmeros eventos, como click, keypress, mouseover, mousemove e assim
+por diante. O JavaScript é especialmente capacitado para programação orientada a eventos por causa do __padrão callback__,
+que permite a seus programas serem executados de maneira __assincrona__, ou, em outras palavras, fora de ordem 
+(Padrões JavaScript, Stefanov, pág 85.).
 
 <!--
 http://eloquentjavascript.net/1st_edition/chapter13.html

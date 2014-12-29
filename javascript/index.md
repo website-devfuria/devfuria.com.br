@@ -1,7 +1,7 @@
 ---
 layout:      grid12-index
 title:       JavaScript
-description: Tudo o que você precisa saber sobre javascript a apartir do zero
+description: Tudo o que você precisa saber sobre JavaScript a apartir do zero
 ---
 
 
@@ -9,7 +9,7 @@ Javascript (às vezes chamado apenas de JS) é uma linguagem de programação, l
 baseada em protótipos e em funções de primeira classe.
 
 Você pode executar JavaScript do lado do cliente (__front end__) em um navegador web, dê preferência ao 
-[FireFox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou [Google Chrome](https://www.google.com/chrome/ "link-externo").
+[Firefox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou [Google Chrome](https://www.google.com/chrome/ "link-externo").
 
 Também pode-rá executá-lo do lado do servidor (__back end__) em linha de comando através do 
 [Node.js](/javascript/node.js/).

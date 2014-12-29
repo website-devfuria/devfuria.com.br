@@ -66,7 +66,7 @@ for(i = 0; i < resultado.length; i++){
 
 ### exec()
 
-Repare apenas que a opção global `g` teve que ser utilizada, sem ela o navegador (FireFox) entra em um loop infinito.
+Repare apenas que a opção global `g` teve que ser utilizada, sem ela o navegador (Firefox) entra em um loop infinito.
 
 {% highlight javascript %}
 var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",

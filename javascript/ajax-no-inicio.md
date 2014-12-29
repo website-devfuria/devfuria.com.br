@@ -4,15 +4,22 @@ title:       Ajax como era utilizado no começo
 description: Este artigo apresenta a sintaxe de como era utilizado o objeto __XMLHttpdRequest__ no início.
 ---
 
-Este artigo apresenta a sintaxe de como era utilizado o objeto __XMLHttpRequest__ no início.
+Este artigo apresenta a sintaxe de como era utilizado o objeto __XMLHttpRequest__ no início da utlização da técnica __AJAX__.
 
-Se você caiu de paraquedas nesta página, não deixe de ver as matérias anteriores relacionados ao final deste artigo.
+A primeira forma de utilização do objeto __XMLHttpRequest__ incluía o manipulador de evento `onreadystatechange`. Na [especifiação
+do objeto](https://xhr.spec.whatwg.org/ "link-externo") data em dezembro de 2014 o evento `onreadystatechange` ainda 
+é suportado, quer dizer que ele não saiu de uso. Porém, a especificação apresenta novas formas de lidar com o objeto 
+(veja a matéria [Ajax - Introdução](/javascript/ajax/)).
 
+Vamos focar nossa atenção para o evento `onreadystatechange`. Ele é acionado a cada alteração da propriedade 
+`readyState`, ou seja, a cada troca de valor dessa propriedade o evento `onreadystatechange` é executado. 
 
 {% highlight javascript %}
 var xhr = new XMLHttpRequest();
+
 xhr.open("GET", "foo.txt", true);
 xhr.send();
+
 xhr.onreadystatechange = function () {
   if(this.readyState == this.DONE) {
     // success!
@@ -25,11 +32,10 @@ xhr.onreadystatechange = function () {
       console.log(this.status)
     }
   }
+
 }
 {% endhighlight %}
 
-Vamos focar nossa atenção para o evento `onreadystatechange`. Ele é acionado a cada alteração da propriedade 
-`readyState`, ou seja, a cada troca de valor dessa propriedade o evento `onreadystatechange` é executado. 
 
 A propriedade `readyState` pode ter um dos valores abaixo:
 
@@ -93,5 +99,5 @@ Fonte [MDN - Começando com Ajax](https://developer.mozilla.org/pt-BR/docs/Ajax/
 Veja também
 ---
 
-- [Ajax - Como deve ser utilizado hoje em dia](/javascript/ajax/)
-- [Aprenda a utilizar Ajax com PHP e Jquery](/javascript/ajax-php-jquery/)
+- [Ajax - Introdução](/javascript/ajax/)
+- [Ajax - Aprenda a utilizar Ajax com PHP e JQuery](/javascript/ajax-php-jquery/)

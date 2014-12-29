@@ -11,18 +11,14 @@ Para desenharmos uma linha utilizamos a função `lineTo(x, y)`, onde `x` é o p
 
 Se ele desenha até determinado ponto, então precisamos indicar onde é o começo, fazemos isso utilizando a função `moveTo(x, y)`.
 
+### O método lineTo()
 
-
-O método lineTo()
----
-
-Adiciona uma linha ao path (caminho) partindo do ponto atual. até as coordenadas `x` e `y`.
+Adiciona uma linha ao path (caminho) partindo do ponto atual até as coordenadas `x` e `y`.
 
 Esse método destina-se a desenhar uma linha reta desde a posição na qual se encontra a pena até as coordenadas `x` e `y`.
 
 
-O método moveTo()
---
+### O método moveTo()
 
 Move um ponto para um lugar específico.
 

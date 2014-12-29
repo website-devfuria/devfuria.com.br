@@ -28,7 +28,7 @@ O gerenciador de aplicativos também possui alguns pontos negativos:
 Antes de instalar o __Firefox__, certifique-se que o seu computador possua as bibliotecas necessárias Instaladas.
 Bibliotecas faltando podem causar o não funcionamento ou funcionamento incorreto do __Firefox__.
 
-Em meu caso, eu já possuía o FireFox instalado via __apt-get__(gerenciador de aplicativos), quer dizer que eu não
+Em meu caso, eu já possuía o Firefox instalado via __apt-get__(gerenciador de aplicativos), quer dizer que eu não
 precisei instalar as bibliotecas, pois elas já tinham sido instaladas.
 
 Se é a primeira vez que você vai instalar, então atente para os 
@@ -40,7 +40,7 @@ programa através do código fonte.
 
 As seguintes instruções instalarão o __Firefox__ em sua pasta "Home", e somente o usuário atual poderá rodar a aplicação.
 
-### Passo a passo de como instalar o FireFox
+### Passo a passo de como instalar o Firefox
 
 1. Baixe o Firefox através da [página de download](https://www.mozilla.org/en-US/firefox/new/?icn=tabz "link-externo") do Firefox, para a sua pasta "Home".
 2. Abra o Terminal e siga para o diretório home: `cd ~`
