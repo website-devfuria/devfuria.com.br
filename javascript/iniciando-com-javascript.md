@@ -14,10 +14,10 @@ Neste primeiro exemplo, vamos executá-lo no navegador (lado cliente).
 
 Crie um arquivo de texto simples, salve com o nome `index.html` e insira nele o seguinte código:
 
-{% highlight javascript %}
+```javascript
 var foo = "Eu sou javascript";
 alert(foo);
-{% endhighlight %}
+```
 
 Abra o arquivo em um navegador qualquer.
 
