@@ -4,6 +4,10 @@ title:       Expressões Regulares - metacaracteres
 description: Este artigo é um resumo dos metacaracteres das Expressões Regulares.
 ---
 
+Este artigo é um resumo dos metacaracteres, você verá uma síntese de cada metacaracter e logo abaixo um link para 
+aprofundar o assunto.
+
+
 
 Metacaractere ponto .
 ---
