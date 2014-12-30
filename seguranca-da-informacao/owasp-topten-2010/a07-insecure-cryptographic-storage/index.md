@@ -57,24 +57,24 @@ de dados é inútil se a conexão de banco de dados permite acessos não criptog
 A função hash do código abaixo utiliza dois parâmetros. O primeiro escolhe o algorítimo utilizado para gerar o hash e o 
 segundo é o valor utilizado para gerar o hash.
 
-{% highlight php %}
+```php
 <?php
 
 echo hash('sha256', 'senha');
 
 ?> 
-{% endhighlight %}
+```
 
 Se executarmos o código seguinte ele gerará um array contendo todos os algorítimos que podem ser utilizados como 
 parâmetro na função `hash()`;
 
-{% highlight php %}
+```php
 <?php
 
 print_r( hash_algos() );
 
 ?>
-{% endhighlight %}
+```
 
 A seguinte seguinte ilustra todos os algorítimos que podem ser usados juntos com a função `hash()`. A funcção `hash_algos()`
 não lsita todos os algoritmos possíveis, mas sim todos os a os algoritmos que foram compilados e instalados.

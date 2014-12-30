@@ -11,7 +11,7 @@ Em JavaScript também temos a forma `pattern.test()`.
 - `test()` é a função que evocamos para executar a expressão regular e
 - o parâmetro `string` passado na função é a nosso texto de pesquisa (assunto).
 
-{% highlight javascript %}
+```javascript
 var string = "Casa com a palavra exemplo",
     pattern = /exemplo/,
     resultado;
@@ -23,7 +23,7 @@ if (resultado) {
 } else {
     console.log("não casou", resultado);
 }
-{% endhighlight %}
+```
 
 O valor da variável `resultado` será `true` ou `false`.
 

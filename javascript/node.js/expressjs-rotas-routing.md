@@ -9,7 +9,7 @@ já leu, praticou e entendeu o artigo de [introdução ao Express](/javascript/n
 
 Abaixo vemos um exemplo simplista para algumas rotas definidas.
 
-{% highlight javascript %}
+```javascript
 var express = require('express')
 var app = express()
 
@@ -36,7 +36,7 @@ var server = app.listen(3000, function () {
   console.log('Example app listening at http://%s:%s', host, port)
 
 })
-{% endhighlight %}
+```
 
 Crie um arquivo qualquer, por exemplo, `exemplo.js`, insira o conteúdo acima e execute no terminal:
 
@@ -55,7 +55,7 @@ O. __Express.js__ vem equipado com funções para de rotamento para beneficiar-s
 
 As seguintes rotas apontam todas para a url `/user` porém, são distintas pelo método (verbo) utilizado.
 
-{% highlight javascript %}
+```javascript
 app.post('/user', function (req, res) {
   res.send('Got a POST request at /user');
 })
@@ -67,7 +67,7 @@ app.put('/user', function (req, res) {
 app.delete('/user', function (req, res) {
   res.send('Got a DELETE request at /user');
 })
-{% endhighlight %}
+```
 
 
 Para você compreender de fato os exemplos acima, não tem jeito, deve saber o básico sobre [REST](http://pt.wikipedia.org/wiki/REST "link-externo").

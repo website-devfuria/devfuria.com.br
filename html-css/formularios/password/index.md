@@ -8,9 +8,9 @@ menu:        html-forms
 Os campos de senha são semelhantes as [textboxs](../text-box/), a diferença é que os __dados aparecem escondidos__
 pelo sinal de asterisco (*).
 
-{% highlight html %}
+```html
 <input type="password" name="old-pass" />
-{% endhighlight %}
+```
 
 Veja na imagem abaixo o uso de 3 campos de senha.
 

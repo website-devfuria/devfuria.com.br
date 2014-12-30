@@ -66,7 +66,7 @@ bem claro no seu script o que é PHP e o que é HTML.
 Como exemplo, podemos colocar o "PHP mais pesado" na parte de cima, no começo. Após esse trecho iniciamos o HTML e 
 utilizamos apenas o "PHP mais leve".
 
-{% highlight php %}
+```php
 <?php
 
 ... code
@@ -92,7 +92,7 @@ utilizamos apenas o "PHP mais leve".
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 Às vezes, para atender ao "padrão" acima, teremos que sacrificar um pouco a lógica, poderemos usar um pouco mais de 
 memória e até codificar um algoritmo não performático.

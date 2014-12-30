@@ -79,7 +79,7 @@ Que tal isso?
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <iostream>
 #include <assert.h>
 
@@ -101,7 +101,7 @@ int main() {
     testDobro();
     return 0;
 }
-{% endhighlight %}
+```
 
 
 Experimente escrever outras asserções, por exemplo:

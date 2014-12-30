@@ -17,32 +17,32 @@ do formulário. Em muitos navegadores, clicar no elemento __label__ fará com qu
 
 A estrutura básica de cada controle deve ser semelhante ao seguinte trecho:
 
-{% highlight html %}
+```html
 <p>
     <label for="url">Web Address:</label>
     <input name="url" id="url" type="text" />
 </p>
-{% endhighlight %}
+```
 
 Para que as labels fiquem à esquerda e os campos à direita, aplicamos a propriedade [float](/html-css/float/) e um tamanho
 adequado no elemento `label`.
 
-{% highlight css %}
+```css
 label {
     float: left;
     width: 10em;
 }
-{% endhighlight %}
+```
 
 Os controle de opção no fieldset "remember-me" estão agora a `10em` de distância um do outro. Se você quiser, por exemplo,
 diminuir para `4em` a distância entre eles sem interferir nos demais controle podemos colocar um `id` no fileadset e
 aplicar uma regra as labels.
 
-{% highlight css %}
+```css
 #remember-me label {
     width: 4em;
 }
-{% endhighlight %}
+```
 
 A largura das caixas de texto foi definida aplicando-se uma largura ao elemento de entrada `input`. Entretanto, esse
 elemento (`input`) abrange outros recursos de formulário como 
@@ -51,29 +51,29 @@ elemento (`input`) abrange outros recursos de formulário como
 [botões de envio](/html-css/formularios/button-submit-reset/).
 Dessa forma, configurando o elemento input com uma largura de 200 pixles, todos os elementos input terão 200 pixels.
 
-{% highlight css %}
+```css
 input {
     width: 200px;
 }
-{% endhighlight %}
+```
 
 Uma maneira de evitar esse problema é utilizar o seletor de atributo para selecionar a input específica.
 
-{% highlight css %}
+```css
 input[type="radio"], input[type="checkbox"], input[type="submit"] {
     width: auto;
 }
-{% endhighlight %}
+```
 
 Fazer com que os botões de opção flutuem à esquerda irá trazê-los de volta ao mesmo nível dos seus labels, e uma pequena
 quantidade de margem direita fornecerá o espaçamento desejado entro os dois elementos.
 
-{% highlight css %}
+```css
 input[type="radio"] {
     float: left;
     margin-right: 1em;
 }
-{% endhighlight %}
+```
 
 
 Criar um layout de duas colunas para grandes grupos de caixas de seleção ou de botões de opção é um pouco mais complexo.
@@ -84,16 +84,16 @@ elaborou o exemplo em uma época que o IE6 e o IE7 eram os navegadores mais util
 qual seria a melhor estratégia para alcançar tal objetivo. A solução do Budd é definir o `id` ao `fieldset` para receber
 estilização exclusiva e utilizar o elemento `h2` simulando uma label:
 
-{% highlight html %}
+```html
 ...
     <fieldset id="favoriteColor">
         <h2>Favorite Color:</h2>
 ...
-{% endhighlight %}
+```
 
 Veja as estilizações:
 
-{% highlight css %}
+```css
 #favoriteColor {
     margin: 0;
     padding: 0;
@@ -118,13 +118,13 @@ Veja as estilizações:
 #favoriteColor p {
     margin: 0.3em 0;
 }
-{% endhighlight %}
+```
 
 A campo data de aniversário útiliza-se de 3 elementos em sua composição: 2 textbox e 1 combobox. Esse formato é
 considerado uma entrada facilita para esse tipo de campo e, apesar de antigo, ainda bastante encontrado nos sites atuais
 (pelo menos enquanto escrevo o este artigo). O CSS é bastante intuitivo e dispensa comentários, então vou apenas ilustrá-los:
 
-{% highlight css %}
+```css
 #monthOfBirthLabel, #yearOfBirthLabel {
     /**
     A intenção do autor foi esconder a label das vistas
@@ -143,12 +143,12 @@ considerado uma entrada facilita para esse tipo de campo e, apesar de antigo, ai
 #yearOfBirth {
     width: 5em;
 }
-{% endhighlight %}
+```
 
 Para finalizar, os formulários precisarão de algum tipo de mensagem de feedback a fim de destacar os campos ausentes ou
 aqueles incorretamente preenchidos. Para isso usamos o a regra abaixo:
 
-{% highlight css %}
+```css
 label .feedback {
     position: absolute;
     margin-left: 11em;
@@ -159,16 +159,16 @@ label .feedback {
     padding-left: 18px;
     background: url(http://www.devfuria.com.br/html-css/formularios/intro-formularios-web/error.png) no-repeat left top;
 }
-{% endhighlight %}
+```
 
 E o HTML deve ser...
 
-{% highlight html %}
+```html
 <p>
     <label for="email">Email Address: <span class="feedback">Incorrect email address. Please try again.</span></label>
     <input name="email" id="email" type="text" />
 </p>
-{% endhighlight %}
+```
 
 
 <hr>

@@ -16,7 +16,7 @@ Abaixo vemos o formulário web no qual trabalharemos.
 
 Crie o arquivo `form.php` e insira o seguinte conteúdo:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -37,7 +37,7 @@ Crie o arquivo `form.php` e insira o seguinte conteúdo:
         </form>
     </body>
 </html>
-{% endhighlight %}
+```
 
 O PHP depende da propriedade `name` já o JS depende da propriedade `id`.
 
@@ -70,7 +70,7 @@ Por alguma razão, quando o controle não é ticado, ele não envia nada, triste
 Mas "nada poderá nos deter". Poderemos receber da seguinte forma:
 
 
-{% highlight php %}
+```php
 // check BIKE
 if (isset($_POST['bike'])) {
     var_dump("escolheu 'bike'");
@@ -84,7 +84,7 @@ if (isset($_POST['car'])) {
 } else {
     var_dump("não escolheu 'car'");
 }
-{% endhighlight %}
+```
 
 Mas ficou um monte de linhas, imagina que você receberá 10 checkbox!
 
@@ -93,7 +93,7 @@ Faça os cálculos. 10 x 5 = 50 linhas... opâ!
 Vamos fazer nosso código tomar as __Pílulas Nanicolinas__ e diminuir um pouco esse negócio. O arquivo `form-action.php`
 ficará com abaixo:
 
-{% highlight php %}
+```php
 <?php
 
 $_POST['bike'] = ( isset($_POST['bike']) ) ? true : null;
@@ -104,7 +104,7 @@ var_dump($_POST);
 
 # Apartir deste ponto, entra em cena a lógica de seu programa.
 # Em outras palavras, é o que faremos com os dados recebidos.
-{% endhighlight %}
+```
 
 Pronto! Agora sabemos que se a variável `$_POST['bike']` for igual a `true` o usuário selecionou a checkbox. Se ele não
 ticar, o valor será `null`.
@@ -139,7 +139,7 @@ Retomando, se tivéssemos uma variável, por exemplo, `$bike` com a string `"che
 
 Altere o conteúdo do arquivo `form.php` como se segue:
 
-{% highlight php %}
+```php
 <?php
 
 /**
@@ -174,7 +174,7 @@ $car  = (bool) rand(0, 1) ? "checked" : null;
         </form>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Veja o código completo deste exemplo no GitHub
 [php-exemplo/forms/checkbox/](https://github.com/devfuria/php-exemplos/tree/master/forms/checkbox "link-externo").

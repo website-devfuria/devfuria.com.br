@@ -82,11 +82,11 @@ com informações sobre a tela:
 O objeto window possue o `handler onload`, um dos mais importantes mecanismo de tratamento de evento. Ele é disparado 
 quando o conteúdo do documento exibido na janela está estável e pronto para ser manipulado. (Flanagan)
 
-{% highlight javascript %}
+```javascript
 window.onload = function() {
     //código executado após carregamento da página
 }
-{% endhighlight %}
+```
 
 
 
@@ -99,18 +99,18 @@ Há diversas formas de poluir o espaço global: utilzar variáveis sem a palavra
 Para entender melhor o que é poluir o espaço global, olhe para o código abaixo:
 
 
-{% highlight javascript %}
+```javascript
 // Criamos uma variável gobal
 suasVariaveis = 123;
 
 // Agora ela faz parte do objeto window e
 // está poluindo o escopo global(window)
 console.log(window.suasVariaveis); // 123
-{% endhighlight %}
+```
 
 Por isso que vários autores de Javascript pregam a utilização de um "objeto container", exemplo:
 
-{% highlight javascript %}
+```javascript
 // Criando o objeto
 objContainer = {}
 
@@ -124,7 +124,7 @@ objContainer.outraVariavel = 456;
 // Prova:
 console.log(window.outraVariavel); // undefined
 console.log(window.objContainer.outraVariavel); // 456
-{% endhighlight %}
+```
 
 
 

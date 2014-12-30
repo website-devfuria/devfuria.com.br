@@ -13,17 +13,17 @@ menu:        javascript-refs
 > David Flanagan em seu livro “JavaScript: O guia definitivo” pág. 354
 
 
-{% highlight html %}
+```html
 <p>
     <a id="sirius" href="sirius.html">Journey to the stars</a>
 </p>
-{% endhighlight %}
+```
 
 A função busca e retorna o elemento através de seu identificador, a propriedade `id`.
 
-{% highlight javascript %}
+```javascript
 var elementRef = document.getElementById("sirius");
-{% endhighlight %}
+```
 
 
 Utilizando a propriedade value
@@ -32,7 +32,7 @@ Utilizando a propriedade value
 Pensando em um controle HTML do tipo __textbox__, __password__ ou uma __textarea__, poderemos utilizar a propriedade 
 `value`, ela refere-se ao valor do campo.
 
-{% highlight javascript %}
+```javascript
 var elem = document.getElementById("nome-identificador");
 
 // Recuperando o valor:
@@ -40,13 +40,13 @@ console.log(elem.value);
 
 // Alterando o valor:
 elem.value = "outro texto qualquer";
-{% endhighlight %}
+```
 
 Se não houver a necessidade de utiliar uma variável poderemos , então, acessar a propriedade diretamente, veja exemplo:
 
-{% highlight javascript %}
+```javascript
 document.getElementById("nome-identificador").value = "outro texto qualquer";
-{% endhighlight %}
+```
 
 <hr/>
 Fonte

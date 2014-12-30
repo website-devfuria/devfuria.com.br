@@ -31,7 +31,7 @@ Então alteramos até encontrar o resultado esperado.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -55,7 +55,7 @@ int main() {
     assert(1 == compararStrings(ola, ola2));
     return 0;
 }
-{% endhighlight %}
+```
 
 
 Desafio

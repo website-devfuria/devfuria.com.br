@@ -47,7 +47,7 @@ Este canvas é bem simples, ele desenha um grid para checarmos visualmente se o 
 Código fonte
 ---
 
-{% highlight javascript %}
+```javascript
 /**
  * Função que retorna um grid
  */
@@ -74,4 +74,4 @@ function drawGrid(context, color, stepx, stepy) {
 // Utilização
 var ctx = document.getElementById('myCanvas').getContext('2d');
 drawGrid(ctx, 'lightgray', 10, 10);
-{% endhighlight %}
+```

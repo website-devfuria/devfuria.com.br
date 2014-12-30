@@ -5,27 +5,27 @@ description: Python - propriedades
 ---
 
 
-{% highlight python %}
+```python
 class Car(object):
     estado = "desconhecido"
-{% endhighlight %}
+```
 
-{% highlight python %}
+```python
 porsche = Car()
 ferrari = Car()
 bmw = Car()
-{% endhighlight %}
+```
 
-{% highlight python %}
+```python
 porsche.estado = "usado"
 ferrari.estado = "novo"
-{% endhighlight %}
+```
 
-{% highlight python %}
+```python
 print porsche.estado # usado
 print ferrari.estado # novo
 print bmw.estado     # desconhecido
-{% endhighlight %}
+```
 
 
 

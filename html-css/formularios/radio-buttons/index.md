@@ -9,12 +9,12 @@ Os __radio buttons__ são como uma opção entre, no mínimo, duas.
 
 No exemplo abaixo eu coloquei três radios para fazer mais sentido.
 
-{% highlight html %}
+```html
 <input type="radio" name="band-rock" value="beatles"/>
 <input type="radio" name="band-rock" value="led-zeppelin"/>
 <input type="radio" name="band-rock" value="pink-floyd"/>
 
-{% endhighlight %}
+```
 Repare que a propriedade `name` é igual para o mesmo grupo de opções e que a propriedade `value` deve ser definida pelo
 programador.
 
@@ -28,9 +28,9 @@ Como os radiobuttons (botões de opção) funcionam?
 
 Para exibir o controle radio selecionado, usamos a propriedade `checked`.
 
-{% highlight html %}
+```html
 <input type="radio" name="company" checked="checked"/>
-{% endhighlight %}
+```
 
 O botão radio sofre do mesmo problema que o botão [checkbox](../checkbox), quando __não clicado__ ele não envia nenhum
 informação para o servidor, absolutamente nada.

@@ -7,27 +7,27 @@ menu:        html-elementos
 
 A tag `p` é muito comum, ela representa um parágrafo e, obviamente, acomoda textos.
 
-{% highlight html %}
+```html
 <p>Isto é um parágrafo</p>
-{% endhighlight %}
+```
 
 
 A tag `img` representa uma imagem. A propriedade `src` diz aonde a imagem se encontra gravada (no hard disk).
 
 Já a propriedade `alt` é um texto alternativo que será exibido caso o caminho para a imagem seja inválido.
 
-{% highlight html %}
+```html
 <img src="imagem.png" alt="texto alternativo" />
-{% endhighlight %}
+```
 
 Abaixo, apresento as duas tag's juntas para ilustrar como elas (podem) interagem.
 
-{% highlight html %}
+```html
 <p>
     Este parágrafo contém uma imagem
     <img src="imagem.png" alt="texto alternativo" />
 </p>
-{% endhighlight %}
+```
 
 
 

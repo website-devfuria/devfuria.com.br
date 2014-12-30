@@ -9,23 +9,23 @@ description: Um guia rápido e básico da linguagem JavaScript.
 
 As variáveis são declaradas com a palavra chave `var`, como segue:
 
-{% highlight javascript %}
+```javascript
 var i;
 var sum;
-{% endhighlight %}
+```
 
 Também é possível declarar varias variáveis com a mesma palavra chave `var`:
 
-{% highlight javascript %}
+```javascript
 var i, sum;
-{% endhighlight %}
+```
 
 E pode-se combinar a declaração da variável com sua inicialização:
 
-{% highlight javascript %}
+```javascript
 var i = 0, j = 0, k = 0;
 var nome = "Fulano";
-{% endhighlight %}
+```
 
 Antes de usar uma variável em um programa JavaScript, você deve declará-la. 
 
@@ -47,10 +47,10 @@ Qualquer valor em JavaScript que não seja número, string, booleano, null ou un
 O [typeof](../refs/typeof/) é um operador unário colocado antes de seu operando, o qual pode ser de qualquer tipo. Seu valor é uma string 
 que especifica o tipo do operando.
 
-{% highlight javascript %}
+```javascript
 typeof "foo"; // 'string'
 typeof 123;   // 'number'
-{% endhighlight %}
+```
 
 
 
@@ -78,24 +78,24 @@ Literais em ponto flutuante:
 Para incluir uma string literal em um programa JavaScript, basta colocar os caracteres da string dentro de um par combinado
 de aspas simples ou duplas.
 
-{% highlight javascript %}
+```javascript
 "" string de cumprimento zero
 'testing'
 "other testing"
-{% endhighlight %}
+```
 
 Para concatenar strings utilizamos o operador `+`.
 
-{% highlight javascript %}
+```javascript
 var msg = "Hello " + "word"; // "Hello word"
 msg = "Welcome to my blog, " + name;
-{% endhighlight %}
+```
 
 A propriedade `length` determina o tamanho da string.
 
-{% highlight javascript %}
+```javascript
 "palavra".length // 7
-{% endhighlight %}
+```
 
 
 
@@ -131,7 +131,7 @@ Se você usa um valor não booleano onde é esperado um booleano, JavaScript con
 
 ### Condicional - if / else
 
-{% highlight javascript %}
+```javascript
 if (n == 1) {
     // executa este bloco if
 } else if () {
@@ -139,7 +139,7 @@ if (n == 1) {
 } else {
     // executa este bloco else
 }
-{% endhighlight %}
+```
 
 Leia mais sobre [Condicional if-else em JavaScript](/javascript/refs/if-else/)
 
@@ -147,25 +147,25 @@ Leia mais sobre [Condicional if-else em JavaScript](/javascript/refs/if-else/)
 
 É possível obter resultados semelhantes usando o [operador condicional ternário](../refs/operador-condicional-ternario/) `condition ? expr1 : expr2`.
 
-{% highlight javascript %}
+```javascript
 resultado = (a > b) ? "a é maior que b" : "b é maior que a";
-{% endhighlight %}
+```
 
 O código acima é equivalente ao de baixo:
 
-{% highlight javascript %}
+```javascript
 if (a > b) {
     resultado = "a é maior que b";
 } else {
     resultado = "b é maior que a";
 }
-{% endhighlight %}
+```
 
 
 
 ### Condicional - switch
 
-{% highlight javascript %}
+```javascript
 switch(action) {
     case 'draw':
         drawit();
@@ -176,15 +176,15 @@ switch(action) {
     default:
         donothing();
 }
-{% endhighlight %}
+```
 
 ### Laço for
 
-{% highlight javascript %}
+```javascript
 for (var i = 0; i < 5; i++) {
     // Will execute 5 times
 }
-{% endhighlight %}
+```
 
 
 
@@ -193,20 +193,20 @@ for (var i = 0; i < 5; i++) {
 Em JavaScript, [arrays](../refs/arrays/) são um tipo especial de objeto que representam um conjunto ordenado de valores
 numerados.
 
-{% highlight javascript %}
+```javascript
 var a = new Array();
 a[0] = "dog";
 a[1] = "cat";
 a[2] = "hen";
 a.length // 3
-{% endhighlight %}
+```
 
 Uma forma mais conveniente de utilização de um __array__, na verdade a mais usada:
 
-{% highlight javascript %}
+```javascript
 var a = ["dog", "cat", "hen"];
 a.length // 3
-{% endhighlight %}
+```
 
 
 
@@ -215,12 +215,12 @@ a.length // 3
 Uma [função](../refs/funcoes/) é um objeto que tem código executável associado. Uma função pode ser chamada para executar esse código
 executável e retornar um valor calculado.
 
-{% highlight javascript %}
+```javascript
 function add(x, y) {
     var total = x + y;
     return total;
 }
-{% endhighlight %}
+```
 
 
 
@@ -230,11 +230,13 @@ Um objeto em JavaScript é um conjunto não ordenado de valores nomeados.
 
 Para criar um objeto vazio:
 
-{% highlight javascript %}var obj = {};{% endhighlight %}
+```javascript
+var obj = {};
+```
 
 Podemos criar um objeto com propriedades e métodos: 
 
-{% highlight javascript %}
+```javascript
 var obj = {
     name: "Carrot",
     "for": "Max",
@@ -243,38 +245,38 @@ var obj = {
         size: 12
     }
 }
-{% endhighlight %}
+```
 
 E acessar as propriedades dessa forma:
 
-{% highlight javascript %}
+```javascript
 obj.details.color      // orange
 obj["details"]["size"] // 12
-{% endhighlight %}
+```
 
 Outro exemplo.
 
 Funções também se comportam como objetos.
 
-{% highlight javascript %}
+```javascript
 function Person(name, age) {
     this.name = name;
     this.age = age;
 }
-{% endhighlight %}
+```
 
 Instanciamos o objeto.
 
-{% highlight javascript %}
+```javascript
 var obj = new Person("You", 36);
-{% endhighlight %}
+```
 
 Alteramos os valores das propriedades.
 
-{% highlight javascript %}
+```javascript
 obj.name = "Simon";
 obj.name; // print 'Simon'
-{% endhighlight %}
+```
 
 Talvez você queira saber mais sobre [programação orientada a objetos](/javascript/oop-primeiro-degrau/).
 

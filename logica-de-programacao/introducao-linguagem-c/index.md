@@ -340,7 +340,7 @@ Os operadores de formatação são os mesmos dos de saída.
 
 Veja um exemplo básico:
 
-{% highlight c %}
+```c
 #include <stdio.h>
 
 int main()
@@ -351,7 +351,7 @@ int main()
 
     printf("O numero digitado foi: %d", numero);
 }
-{% endhighlight %}
+```
 
 Ao utilizar a função `scanf()`, repare que a acrescentamos o operador unário `&` antes do nome da variável:
 

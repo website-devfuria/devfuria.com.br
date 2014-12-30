@@ -50,7 +50,7 @@ para cada exercício.
 Solução
 ---
 
-{% highlight javascript %}
+```javascript
 var length = process.argv.length,
     sum = 0;
 
@@ -59,7 +59,7 @@ for (i = 2; i < length; i++) {
 };
 
 console.log(sum);
-{% endhighlight %}
+```
 
 
 

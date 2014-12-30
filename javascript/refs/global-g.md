@@ -14,7 +14,7 @@ Considerando o exemplo abaixo, notamos que a ER casa com mais de um resultado.
 
 Como programamos isso? Vejamos o código abaixo.
 
-{% highlight javascript %}
+```javascript
 var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/,
     resultado;
@@ -27,7 +27,7 @@ if (resultado) {
 } else {
     console.log("não casou", resultado);
 }
-{% endhighlight %}
+```
 
 
 Se a ER casar com a string então a variável `resultado` conterá um array com a parte que casou, mas *apenas a primeira
@@ -49,7 +49,7 @@ Vamos aos resultados em cada função....
 Incluí a opção global `g` como descrito acima e percorri o valor da variável `resultado` que agora é um array.
 
 
-{% highlight javascript %}
+```javascript
 var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/g,
     resultado,
@@ -61,14 +61,14 @@ resultado = string.match(pattern)
 for(i = 0; i < resultado.length; i++){
     console.log(resultado[i]);
 }
-{% endhighlight %}
+```
 
 
 ### exec()
 
 Repare apenas que a opção global `g` teve que ser utilizada, sem ela o navegador (Firefox) entra em um loop infinito.
 
-{% highlight javascript %}
+```javascript
 var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/g,
     resultado;
@@ -77,7 +77,7 @@ var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.
 while(resultado = pattern.exec(string)){
     console.log("casou", resultado);
 }
-{% endhighlight %}
+```
 
 
 ###  test()
@@ -87,7 +87,7 @@ Diferentemente da função `string.match`, o valor da variável `resultado` ser�
 
 
 
-{% highlight javascript %}
+```javascript
 var string = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.",
     pattern = /ca.a/,
     resultado;
@@ -100,7 +100,7 @@ if (resultado) {
 } else {
     console.log("não casou", resultado);
 }
-{% endhighlight %}
+```
 
 
 Veja também

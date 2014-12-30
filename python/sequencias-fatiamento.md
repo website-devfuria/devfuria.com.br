@@ -11,12 +11,12 @@ Sequências são coleções ordenadas embutidas: strings, [listas](/python/lista
 
 Contamos o índice de determinada sequência a partir do zero.
 
-{% highlight python %}
+```python
 +---+---+---+---+---+---+
 | p | y | t | h | o | n |
 +---+---+---+---+---+---+
   0   1   2   3   4   5
-{% endhighlight %}
+```
 
 Outra coisa que precisamos saber sobre o fatiamento de sequências é um pouco óbvio mas vale reforçar:
 
@@ -30,7 +30,7 @@ Outra coisa que precisamos saber sobre o fatiamento de sequências é um pouco �
 
 Veja mais exemplos:
 
-{% highlight python %}
+```python
 p = "python"
 p[0] # 'p'
 p[1] # 'y'
@@ -38,9 +38,9 @@ p[2] # 't'
 p[3] # 'h'
 p[4] # 'o'
 p[5] # 'n'
-{% endhighlight %}
+```
 
-{% highlight python %}
+```python
 p = "python"
 p[-1] # 'n'
 p[-2] # 'o'
@@ -48,13 +48,13 @@ p[-3] # 'h'
 p[-4] # 't'
 p[-5] # 'y'
 p[-6] # 'p'
-{% endhighlight %}
+```
 
 Curiosidade, `p[-0]` é igual a `p[0]`, ambos resultam em `'p'`.
 
 O operador `[a:b]` possui o comprimento de `a` (inclusive) até `b`(exclusive):
 
-{% highlight python %}
+```python
 p = "python"
 p[0:0] # ''
 p[0:1] # 'p'
@@ -64,11 +64,11 @@ p[3:4] # 'h'
 p[4:5] # 'o'
 p[5:6] # 'n'
 p[6:6] # ''
-{% endhighlight %}
+```
 
 O operador `[:b]` possui o comprimento até `b` (exclusive)":
 
-{% highlight python %}
+```python
 p = "python"
 p[:1] # 'p'
 p[:2] # 'py'
@@ -76,11 +76,11 @@ p[:3] # 'pyt'
 p[:4] # 'pyth'
 p[:5] # 'pytho'
 p[:6] # 'python'
-{% endhighlight %}
+```
 
 ...equivalente a:
 
-{% highlight python %}
+```python
 p = "python"
 p[0:0] # ''
 p[0:1] # 'p'
@@ -89,11 +89,11 @@ p[0:3] # 'pyt'
 p[0:4] # 'pyth'
 p[0:5] # 'pytho'
 p[0:6] # 'python'
-{% endhighlight %}
+```
 
 O operador `[a:]` possui o comprimento a partir de `a`(inclusive):
 
-{% highlight python %}
+```python
 p = "python"
 p[:]  # 'python'
 p[1:] # 'ython'
@@ -102,25 +102,25 @@ p[3:] # 'hon'
 p[4:] # 'on'
 p[5:] # 'n'
 p[6:] # ''
-{% endhighlight %}
+```
 
 O trecho abaixo é para ilustrar como vários caminhos chegam no mesmo lugar.
 
-{% highlight python %}
+```python
 p = ["p", "y", "t", "h", "o", "n"] 
 (p == p[0:6]) # True
 (p == p[:6])  # True
 (p == p[:])   # True
-{% endhighlight %}
+```
 
 ...ou seja, se aplicarmos um "print" nas formas acima, o resultado será exatamente o mesmo, veja:
 
-{% highlight python %}
+```python
 print p       // ['p', 'y', 't', 'h', 'o', 'n']
 print p[0:6]  // ['p', 'y', 't', 'h', 'o', 'n']
 print p[:6]   // ['p', 'y', 't', 'h', 'o', 'n']
 print p[:]    // ['p', 'y', 't', 'h', 'o', 'n']
-{% endhighlight %}
+```
 
 O operador `[:]` representa o total da lista (ou string).
 

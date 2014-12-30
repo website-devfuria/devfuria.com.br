@@ -12,7 +12,7 @@ Nesta caixa podemos selecionar 0 (zero), uma ou mais opções.
 ![](input-form-select-01.png)
 
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -36,16 +36,20 @@ Nesta caixa podemos selecionar 0 (zero), uma ou mais opções.
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 
 Por se tratar de um controle do tipo __combobox__ podemos dizer que o que é válido para o controle...
 
-{% highlight html %}<select>{% endhighlight %}
+```html
+<select>
+```
 
 também é valido para o controle...
 
-{% highlight html %}<select multiple>{% endhighlight %}
+```html
+<select multiple>
+```
 
 
 Talvez você queria fazer uma pausa e ver a matéria sobre o controle combobox ([Manipulando combobox com PHP]()).
@@ -68,7 +72,7 @@ O controle enviará todas as opções que o usário escolher no array `$_POST['c
 
 Sendo um array, podemos então percorrê-lo com um `foreach`.
 
-{% highlight php %}
+```php
 <?php
 # Inicializando a variável $_POST['cidades']
 $_POST['cidades'] = isset($_POST['cidades']) ? $_POST['cidades'] : null;
@@ -85,7 +89,7 @@ if ($_POST['cidades']) {
     echo "usuário não escolheu nada ('null')";
 
 }
-{% endhighlight %}
+```
 
 
 
@@ -95,24 +99,24 @@ Carregando o formulário web
 
 Para carregar o formulário basta percorrer o array e "printar" as "options".
 
-{% highlight php %}
+```php
 <?php foreach ($arrCombo as $key => $value): ?>
     <?php echo "<option value=\"$key\"  $selected>$value</option>"; ?>
 <?php endforeach; ?>
-{% endhighlight %}
+```
 
 
 Mas queremos marcar as "options" segundo os valores selecionados.
 
 Os valores selecionados seriam um array como o abaixo, lembrando que ele seria dinâmico e não estático como em nosso exemplo.
 
-{% highlight php %}
+```php
 <?php
 $valores_selecionados = array (
    "scs",
    "sbc"
 );
-{% endhighlight %}
+```
 
 O "pulo do gato" é, dentro do laço, perguntar se a chave `$key` está contida no array `$valores_selecionados`.
 
@@ -120,14 +124,14 @@ Fazemos isso com a função `in_array()`.
 
 O código abaixo retornará true caso encontre a `$key` dentro do array `$valores_selecionados`.
 
-{% highlight php %}
+```php
 <?php
 (in_array($key, $valores_selecionados)) ? "selected=\"selected\"" : null; 
-{% endhighlight %}
+```
 
 
 
-{% highlight php %}
+```php
 <?php
 
 # Array com os dados de nossa combo
@@ -168,7 +172,7 @@ $valores_selecionados = array (
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 Veja o código completo deste exemplo no GitHub
 [php-exemplo/forms/listbox/](https://github.com/devfuria/php-exemplos/tree/master/forms/listbox "link-externo").

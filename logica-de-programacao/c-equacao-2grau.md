@@ -69,7 +69,7 @@ Agora a segunda raiz é com você.
 Código comleto
 ---
 
-{% highlight c %}
+```c
 #include <math.h>
 #include <stdio.h>
 #include <assert.h>
@@ -97,4 +97,4 @@ int main() {
     
     return 0;
 }
-{% endhighlight %}        
+```        

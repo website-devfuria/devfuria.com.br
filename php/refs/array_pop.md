@@ -13,13 +13,13 @@ A função __array_pop()__ retira e retorna o último elemento do array.
 
 Exemplo:
 
-{% highlight php %}
+```php
 <?php
 $cesta = array("laranja", "banana", "melancia", "morango");
 $fruta = array_pop($cesta);
 print_r($cesta);
 ?>
-{% endhighlight %}
+```
 
 O resultado será
 

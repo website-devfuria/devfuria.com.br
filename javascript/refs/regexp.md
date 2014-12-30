@@ -22,7 +22,7 @@ Agora é só passar a variável para o construtor e executar a expressão regula
 Resumindo, a expressão regular criada a partir de uma string lhe derá __mais flexibilidade__.
 
 
-{% highlight javascript %}
+```javascript
 var string  = "Casa com a palavra exemplo",
     pattern = {},
     regexp  = /exemplo/;
@@ -38,7 +38,7 @@ console.log(pattern.exec(string)); // ["exemplo", 19, "Casa com a palavra exempl
 // string.match
 pattern = new RegExp(regexp);
 console.log(string.match(pattern)); // ["exemplo", 19, "Casa com a palavra exemplo"]
-{% endhighlight %}
+```
 
 
 Uma vez com a expressão regular compilada podemos executá-la em qualquer uma das três formas já discutidas:

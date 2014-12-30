@@ -48,9 +48,9 @@ Qualquer elemento HTML pode ter um atributo `id`. O valor desse atributo deve se
 elementos no mesmo documento não podem ter a mesma identificação. Você pode selecionar um elemento com base nessa
 identificação exclusiva com o método `getElementById()` do objeto __document__.
 
-{% highlight javascript %}
+```javascript
 var elemento = document.getElementById("identificacao");
-{% endhighlight %}
+```
 
 Leia mais sobre a função [getElementById()](/javascript/refs/getelementbyid/)
 
@@ -68,9 +68,9 @@ podem ter o mesmo nome e isso é comum no caso de [botões de seleção](/html-c
 [img](http://www.devfuria.com.br/html-css/formularios/intro-formularios-web/).
 
 
-{% highlight javascript %}
+```javascript
 var elementos = document.getElementByName("nome-dos-elementos");
-{% endhighlight %}
+```
 
 Leia mais sobre a função [getElementByName()](/javascript/refs/getelementbyname/)
 
@@ -80,9 +80,9 @@ Leia mais sobre a função [getElementByName()](/javascript/refs/getelementbynam
 Para obter um objeto semelhante a um array somente leitura, contendo os objetos __Element__ de todos os elementos `span`
 em um documento, por exemplo, você poderia escrever:
 
-{% highlight javascript %}
+```javascript
 var spans = document.getElementByTagName("span");
-{% endhighlight %}
+```
 
 Leia mais sobre a função [getElementByTagName()](/javascript/refs/getelementbytagname/)
 
@@ -96,9 +96,9 @@ atributo `class` fazem parte do mesmo conjunto.
 A [HTML 5](/html-css/) define um método `getElementByClassName()` que nos permite selecionar conjuntos de elementos de
 documento com base nos identificadores que estão em seu atributo `class`.
 
-{% highlight javascript %}
+```javascript
 var elementos = document.getElementByClassName("nome-da-classe");
-{% endhighlight %}
+```
 
 Leia mais sobre a função [getElementByClassName()](/javascript/refs/getelementbyclassname/)
 
@@ -131,9 +131,9 @@ elemento do documento, às vezes você precisa encontrar partes estruturalmente 
 Todo nó de elemento possui um pai, execeto o nó do documento. Consequentemente, cada nó de elemento tem uma propriedade
 chamada `parentNode`, uma referência para o pai do elemento distinto.
 
-{% highlight javascript %}
+```javascript
 elem.parentNode
-{% endhighlight %}
+```
 
 
 ### Localizando filhos (childrens)
@@ -142,35 +142,35 @@ Um elemento só pode ter um pai (parent), maspode ter muitos filhos (childrens).
 um elemento, usando a propriedade `childNodes`. Ela é, na verdade, uma lista de nós que contém todos os filhos do elemento,
 no ordem de origem.
 
-{% highlight javascript %}
+```javascript
 elem.childNodes     // lista completa de filhos
 elem.childNodes[0]  //
 elem.childNodes[1]  // Acessando filhos individualmente
 elem.childNodes[2]  //
 //etc...
-{% endhighlight %}
+```
 
 Podemos também localizar o primeiro filho:
 
-{% highlight javascript %}
+```javascript
 elem.firstChild
-{% endhighlight %}
+```
 
 Ou o último filho:
 
-{% highlight javascript %}
+```javascript
 elem.lastChild
-{% endhighlight %}
+```
 
 ### Localizando irmãos (siblings)
 
 Assim como podemos navegar para cima e para baixo na árvore __DOM__, também podemos ir de um lado para o outro, obtendo
 o próximo nó ou o anterior (ambos no mesmo nível). As propriedades que utilizamos para isso são `nextSibling` e `previousSibling`.
 
-{% highlight javascript %}
+```javascript
 var proximoIrmao  = elem.nextSibling
 var anteriorIrmao = elem.previousSibling
-{% endhighlight %}
+```
 
 
 

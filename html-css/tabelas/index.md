@@ -14,7 +14,7 @@ onde evita-se utilizar a tabela em algo que não seja dados tabulares.
 
 Uma tabela contém linhas `tr` e campos `td`.
 
-{% highlight html %}
+```html
 <table>
     <tr>
         <td>campo1</td><td>campo2</td><td>campo3</td>
@@ -26,7 +26,7 @@ Uma tabela contém linhas `tr` e campos `td`.
         <td>campo1</td><td>campo2</td><td>campo3</td>
     </tr>
 </table>
-{% endhighlight %}
+```
 
 Podemos utilizar as tag's `thead`, `tbody` e `tfoot` que representam o cabeçalho, o corpo e o rodapé da tabela,
 respectivamente. Essas ags permitem que o desenvovedor divida as tabelas em seções lógicas. Por exemplo, você pode colocar
@@ -41,7 +41,7 @@ melhor o cabeçalho.
 
 Veja um exemplo mais completo:
 
-{% highlight html %}
+```html
 <table>
     <thead>
         <tr>
@@ -71,7 +71,7 @@ Veja um exemplo mais completo:
         Este é o rodapé
     </tfoot>
 </table>
-{% endhighlight %}
+```
 
 <hr>
 Fontes:
@@ -104,49 +104,49 @@ Se você não possui muita prática em criar imagens com degrade como a demonstr
 
 Para zebrar a tabela criamos a regra `.even`.
 
-{% highlight css %}
+```css
 .even {
   background-color:#edf5ff;
 }
-{% endhighlight %}
+```
 
 Como conhecemos previamente a tabela (é uma tabela estática) podemos aplicar manualmente a regra a cada linha par.
 
-{% highlight html %}
+```html
 ...
 <tr class="odd">
 ...
-{% endhighlight %}
+```
 
 Alerto para as estilizações antigas e fora de uso que encontramos na Internet, a que eu acabei de demonstrar é uma delas.
 Essa foi uma forma muito comum de zebrar tabelas, caso sua tabela fosse dinâmica (de tamanho variável, desconhecido), 
 uma linguagem do lado do servidor poderia ajudar a zebrar a lista. JavaScript também foi muito utilizado para tal.
 Atualmente podemos lançar mão dos __seletores CSS 3__, no caso o seletor `:nth-child`. Atualizando nosso CSS temos:
 
-{% highlight css %}
+```css
 tr:nth-child(even) {
     background-color: #edf5ff;
 }
-{% endhighlight %}
+```
 
 O efeito __hover__ nas linhas da tabela utiliza-se da pseudoclasse `:hover` no elemento `tr`.
 
-{% highlight html %}
+```html
 tr:hover {
   background-color:#3d80df;
   color: #fff;
 }
-{% endhighlight %}
+```
 
 Indevidamente, o efeito é aplicado a linha do cabeçalho (primeira linha). Para "desligar" o efeito na linha do cabeçalho
 podemos escrever o inverso para as linhas (`tr`) do elemento `thead`, veja:
 
-{% highlight css %}
+```css
 thead tr:hover {
   background-color: transparent;
   color: inherit;
 }
-{% endhighlight %}
+```
 
 
 <hr>

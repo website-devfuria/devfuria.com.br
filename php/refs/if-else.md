@@ -48,22 +48,22 @@ O código abaixo é equivalente:
 
 Os códigos abaixo são equivalentes
 
-{% highlight php %}
+```php
 <?php
 // true completo
 if ($variavel == true) {
     ... executar código
 }
-{% endhighlight %}
+```
 
-{% highlight php %}
+```php
 <?php
 // true simplificado
 if ($variavel) {
     ... executar código
 }
 
-{% endhighlight %}
+```
 
 
 
@@ -71,21 +71,21 @@ if ($variavel) {
 
 Da mesma forma, os código abaixo também são equivalentes
 
-{% highlight php %}
+```php
 <?php
 // false completo
 if ($variavel == false) {
     ... executar código
 }
-{% endhighlight %}
+```
 
-{% highlight php %}
+```php
 <?php
 // false simplificado
 if ( ! $variavel) {
     ... executar código
 }
-{% endhighlight %}
+```
 
 Há programadores que detestam a versão simplificada, eu gosto!
 
@@ -100,7 +100,7 @@ O bloco __else__ poderá conter um expressão também.
 
 No exemplo abaixo, se o __if__ for falso e o __else__ verdadeiro então o bloco __else__ será executado
 
-{% highlight php %}
+```php
 <?php
 if (expressão-condicional) {
     ... executar código
@@ -111,11 +111,11 @@ if (expressão-condicional) {
     ... executar código
     ... executar código
 }
-{% endhighlight %}
+```
 
 Abaixo vemos o código equivalente:
 
-{% highlight php %}
+```php
 <?php
 if (expressão-condicional) {
     ... executar código
@@ -128,7 +128,7 @@ if (expressão-condicional) {
         ... executar código
     }
 }
-{% endhighlight %}
+```
 
 
 
@@ -137,7 +137,7 @@ if (expressão-condicional) {
 Uma outra variação seria incluir um terceiro bloco __else__.
 
 
-{% highlight php %}
+```php
 <?php
 if (expressão-condicional) {
     ... executar código
@@ -152,6 +152,6 @@ if (expressão-condicional) {
     ... executar código
     ... executar código
 }
-{% endhighlight %}
+```
 
 Neste caso, o bloco `else` apenas seria executado se o bloco `if` e bloco `else if` fossem `false`.

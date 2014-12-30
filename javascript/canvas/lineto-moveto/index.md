@@ -31,13 +31,13 @@ Precisamos de pelo menos um moveTo()
 
 O código abaixo dá a impressão de que fará algo, mas não faz nada. Falta pelo menos um `moveTo()`.
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 // falta o moveTo()
 context.lineTo(100, 50);
 context.stroke();
-{% endhighlight %}
+```
 
 Ou pelo menos dois `lineTo()`.
 
@@ -45,13 +45,13 @@ Isso porque o método `lineTo()` cria um __subpath__ (subcaminho). Sinistro!!!.
 
 <p><img src="canvas1.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex01-1');
 var context = canvas.getContext('2d');
 context.lineTo(100, 50); // funcionou como moveTo()
 context.lineTo(130, 50);
 context.stroke();
-{% endhighlight %}
+```
 
 
 
@@ -64,14 +64,14 @@ O `lineTo()` precisa de um ponto incial.
 
 <p><img src="canvas2.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
 context.moveTo(10, 10);  // Movemos a pena em 10px tanto no eixo x como no eixo y
 context.lineTo(100, 50); // Desenhamos uma diagonal de 100px,
                          // seu ponto final é 50px abaixo do ponto inicial
 context.stroke();
-{% endhighlight %}
+```
 
 
 
@@ -87,7 +87,7 @@ O ponto inicial da próxima linha será o ponto final da linha anterior.
 
 <p><img src="canvas2.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 context.moveTo(10, 10);
@@ -95,7 +95,7 @@ context.lineTo(100, 50);
 context.lineTo(50, 110);
 context.lineTo(110, 120);
 context.stroke();
-{% endhighlight %}
+```
 
 Repare que chamamos várias vezes o método `lineTo()`.
 

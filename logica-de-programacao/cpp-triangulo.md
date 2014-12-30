@@ -66,7 +66,7 @@ Agora é só implementar o método `ehTriangulo`
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <iostream>
 #include <assert.h>
 
@@ -98,7 +98,7 @@ int main() {
     testEhTriangulo();
     return 0;
 }
-{% endhighlight %}
+```
 
 
 Um mês depois...
@@ -314,7 +314,7 @@ Tudo passou!.
 Código final
 ---
 
-{% highlight c %}
+```c
 #include <iostream>
 #include <assert.h>
 
@@ -416,7 +416,7 @@ int main() {
     testEhEquilatero();
     return 0;
 }
-{% endhighlight %}
+```
 
 Código limpo e funcionando.
 

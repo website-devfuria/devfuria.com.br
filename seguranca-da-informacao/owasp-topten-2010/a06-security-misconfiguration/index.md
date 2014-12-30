@@ -43,7 +43,7 @@ executa a linha 04 que, por sua vez, interrompe a execução do script através 
 parâmetro do tipo string e exibe esse valor no navegador. No exemplo será enviado ao navegador o resultado da função
 `mysql_error()`.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 $link = mysql_connect('localhost', 'mysql_user', 'mysql_password');
 if (!$link) {
@@ -76,7 +76,7 @@ da função `usuario_autenticado()` é testado. Se verdadeiro é atribuído `tru
 testado o valor da variável `$autorizado`, se verdadeiro o script segue sua execução normalmente, acreditando-se que o 
 usuário foi realmente autenticado.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 if (  usuario_autenticado()  ) {
     $autorizado = true;

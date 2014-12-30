@@ -96,7 +96,7 @@ Há uma centena de possibilidades, mas abordaremos isso em outra matéria, ok?
 
 Nosso arquivo `form-action.php` terá o seguinte conteúdo...
 
-{% highlight php %}
+```php
 <?php
 
 $_POST['author'] = ( isset($_POST['author']) ) ? $_POST['author'] : null;
@@ -109,7 +109,7 @@ var_dump($_POST);
 
 # Apartir deste ponto, entra em cena a lógica de seu programa.
 # Em outras palavras, é o que faremos com os dados recebidos.
-{% endhighlight %}
+```
 
 
 
@@ -133,7 +133,7 @@ O __controle textarea__ utilizaremos de forma diferente, escreveremos os dados e
     
 Então nosso formulário (arquivo `form.php`) ficará da seguinte forma:
 
-{% highlight php %}
+```php
 <?php
 /**
  * Aqui teríamos algum código para
@@ -191,7 +191,7 @@ $text = "algum texto";
         </form>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Veja o código completo deste exemplo no GitHub
 [php-exemplo/forms/textbox/](https://github.com/devfuria/php-exemplos/tree/master/forms/textbox "link-externo").

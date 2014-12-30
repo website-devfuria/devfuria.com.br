@@ -9,7 +9,7 @@ menu:        html-artigos-intro
 
 Para criar um HTML você deve abrir um editor de texto simples e inserir o seguinte conteúdo:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -20,7 +20,7 @@ Para criar um HTML você deve abrir um editor de texto simples e inserir o segui
         <p>Aqui é onde as coisas acontecem, o corpo de seu HTML</p>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Salve o arquivo com a extensão `.html` ou `.htm` e abra o arquivo com seu navegador web preferido (espero que não seja
 o IE), o resultado deve ser parecido com o abaixo:
@@ -30,7 +30,7 @@ o IE), o resultado deve ser parecido com o abaixo:
 
 ### Explicando o código
 
-{% highlight html linenos %}
+{% highlight html linenos %} 
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>

@@ -6,9 +6,9 @@ menu:        javascript-rando
 ---
 
 A função `random()` do objeto `Math` retorna um número pseudo-aleatório.
-{% highlight javascript %}
+```javascript
     Math.random();
-{% endhighlight %}
+```
 
 
 > A função `Math.random()` retorna um ponto flutuante, número pseudo-aleatório no intervalo [0, 1), isto é, de 0 (inclusive)
@@ -26,16 +26,16 @@ Em outras palavras, a função retornará um número entre 0 e 1 (podendo inclui
 
 
 Para gerar números aleatórios na casa do inteiros, devemos multiplicar o método por um inteiro qualquer:
-{% highlight javascript %}
+```javascript
     Math.random() * 10
-{% endhighlight %}
+```
 
 
 Agora devemos utilizar a função `Math.floor()` para retirar a parte flutuante (números decimais).
 
-{% highlight javascript %}
+```javascript
     Math.floor(Math.random() * 10)
-{% endhighlight %}
+```
 
 
 O código acima irá gerar números aleatórios no seguinte "range" 0, 1, 2, 3, 4, 5, 6, 7, 8, e 9.
@@ -50,9 +50,9 @@ Se nossa preocupação fosse apenas um teto máximo para o número aleatório, b
 
 O código abaixo gera números aleatórios entre 1 e 10.
 
-{% highlight javascript %}
+```javascript
     Math.floor(Math.random() * 10 + 1)
-{% endhighlight %}
+```
 
 
 
@@ -61,37 +61,37 @@ e, somente depois, somamos uma unidade.
 
 Podemos transformar nosso código em uma função onde recebemos como parâmetro o valor máximo aleatório.
 
-{% highlight javascript %}
+```javascript
 function getRandom(max) {
     return Math.floor(Math.random() * max + 1)
 }
-{% endhighlight %}
+```
 
 
 
 ### Como gerar um número randômico booleano (entre 0 e 1):
 
-{% highlight javascript %}
+```javascript
     Math.floor(Math.random() * 2);
-{% endhighlight %}
+```
 
 
 ### Como gerar um número randômico tipo bytes ou octet (entre 0 e 256):
 
-{% highlight javascript %}
+```javascript
     Math.floor(Math.random() * 256);
-{% endhighlight %}
+```
 
 
 ### Como gerar um número randômico no "range" dos inteiros positivos (entre 0 e 65536):
 
-{% highlight javascript %}
+```javascript
     Math.floor(Math.random() * 65536);
-{% endhighlight %}
+```
 
 
 ### Como gerar um número randômico no "range" dos inteiros incluindo os negativos (entre -32768 e 65536):
 
-{% highlight javascript %}
+```javascript
     Math.floor(Math.random() * 65536) - 32768;
-{% endhighlight %}
+```

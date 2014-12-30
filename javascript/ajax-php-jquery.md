@@ -19,7 +19,7 @@ um texto plano com o valor da variável global `$_POST`.
 
 Utilizaremos o HTML abaixo como modelo.
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -36,7 +36,7 @@ Utilizaremos o HTML abaixo como modelo.
     </script>
     </body>
 </html>
-{% endhighlight %}
+```
 
 
 O método `ajax()` aceita um objeto __JavaScript__ como parâmtros contendo a configuração de sua chamada Ajax.
@@ -49,7 +49,7 @@ A propriedade `data` são os dados de sua aplicação.
 
 A propriedade `dataType` refere-se ao tipo de dado que o servidor deve retornar a requisição.
 
-{% highlight javascript %}
+```javascript
 var request = $.ajax({
 
     url: "script.php",
@@ -73,7 +73,7 @@ request.always(function() {
     console.log("completou");
 
 });
-{% endhighlight %}
+```
 
 O método `done()` recebe uma função de callback que será executada caso a requisição tenha sucesso.
 
@@ -83,7 +83,7 @@ O método `always()` recebe uma função de callback que será executada quando 
 
 Podemos encadear os métodos `done()`, `fail()` e `always()` tornando o código mais sucinto.
 
-{% highlight javascript %}
+```javascript
 $.ajax({
 
     url: "script.php",
@@ -104,23 +104,23 @@ $.ajax({
     console.log("completou");
 
 });
-{% endhighlight %}
+```
 
 A requisição aponta para um arquivo em __PHP__ denominado `script.php` que contém o seguinte conteúdo.
 
-{% highlight php %}
+```php
 <?php
 var_dump($_POST);
-{% endhighlight %}
+```
 
 Os dados de resposta, em nosso exemplo, serão:
 
-{% highlight html %}
+```html
 array (size=3)
   'campo1' => string 'dado1' (length=5)
   'campo2' => string 'dado2' (length=5)
   'campo3' => string 'dado3' (length=5)
-{% endhighlight %}
+```
 
 
 <hr>
@@ -133,18 +133,18 @@ Métodos mais curtos
 
 ### JQuery.post
 
-{% highlight javascript %}
+```javascript
 $.post("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) {
     console.log(data);
 });
-{% endhighlight %}
+```
   
 Para testar o código acima, utiliza o `script.php` abaixo.
 
-{% highlight php %}
+```php
 <?php
 var_dump($_POST);
-{% endhighlight %}  
+```  
 
 <hr>
 Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-externo")
@@ -152,18 +152,18 @@ Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-e
 
 ### JQuery.get
 
-{% highlight javascript %}
+```javascript
 $.get("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) {
     console.log(data);
 });
-{% endhighlight %}    
+```    
   
 Para testar o código acima, utiliza o `script.php` abaixo.
 
-{% highlight php %}
+```php
 <?php
 var_dump($_GET);
-{% endhighlight %}  
+```  
 
 <hr>
 Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-externo")
@@ -171,19 +171,19 @@ Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-e
     
 ### jQuery.getJSON
 
-{% highlight javascript %}
+```javascript
 $.getJSON("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) {
     console.log(data);
 });
-{% endhighlight %}    
+```    
 
 Para testar o código, acima o `script.php` deve retornar um string [JSON](http://www.json.org/ "link-externo"), algo 
 parecido como o exemplo abaixo.
 
-{% highlight php %}
+```php
 <?php
 echo json_encode(array("nome" => "fulano", "idade" => "alguns-anos"));
-{% endhighlight %}
+```
 
 <hr>
 Documentação Oficial: [jQuery.getJSON](http://api.jquery.com/jQuery.getJSON/ "link-externo")

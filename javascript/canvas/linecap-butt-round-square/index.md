@@ -13,7 +13,7 @@ Criei a função `desenharLinhasGuias()` para ajudar no entendimento deste artig
 
 <p><img src="canvas1.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex00');
 var context = canvas.getContext('2d');
 
@@ -29,7 +29,7 @@ function desenharLinhasGuias(context){
     context.closePath();
 }
 desenharLinhasGuias(context);
-{% endhighlight %}
+```
 
 
 
@@ -38,7 +38,7 @@ Butt
 
 <p><img src="canvas2.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 
@@ -50,7 +50,7 @@ context.lineWidth = 15;
 context.stroke();
 
 desenharLinhasGuias(context);
-{% endhighlight %}
+```
 
 
 
@@ -59,7 +59,7 @@ Round
 
 <p><img src="canvas3.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
 
@@ -71,7 +71,7 @@ context.lineWidth = 15;
 context.stroke();
 
 desenharLinhasGuias(context);
-{% endhighlight %}
+```
 
 
 
@@ -80,7 +80,7 @@ Square
 
 <p><img src="canvas3.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 
@@ -92,7 +92,7 @@ context.lineWidth = 15;
 context.stroke();
 
 desenharLinhasGuias(context);
-{% endhighlight %}
+```
 
 
 Próxima matéria

@@ -34,7 +34,7 @@ Criando o HTML
 
 Crie um arquivo chamado `zengarden-sample.html` e coloque a estrutura básica do HTML.
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -48,7 +48,7 @@ Crie um arquivo chamado `zengarden-sample.html` e coloque a estrutura básica do
     </body>
 
 </html>
-{% endhighlight %}
+```
 
 Após ter lido atentamente o texto (abaixo), olhe para ele e pergunte-se: aonde e quais tag's você utilizaria?
 
@@ -154,7 +154,7 @@ Solução
 
 Veja o arquivo orginal no [GitHub](https://github.com/flaviomicheletti/html-css-exemplos/tree/master/zengarden-sample "link-externo").
 
-{% highlight html %}
+```html
 <h1>css Zen Garden</h1>
 
 <h2>A Beleza de um Design CSS</h2>
@@ -170,7 +170,7 @@ de estilo da lista para carregar um novo design nesta página.</p>
 DOMs incompatíveis e falta de suporte correto ao padrão CSS.</p>
 
 etc...
-{% endhighlight %}
+```
 
 
 Essa foi fácil!

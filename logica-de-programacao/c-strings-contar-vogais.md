@@ -34,7 +34,7 @@ Agora, implemente até que o teste passe.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -59,7 +59,7 @@ int main() {
     assert(6 == contaVogais(plavra));
     return 0;
 }
-{% endhighlight %}
+```
 
 <hr>
 Fonte: [http://www.ime.usp.br/~pf/algoritmos/aulas/string.html](http://www.ime.usp.br/~pf/algoritmos/aulas/string.html "link-externo")

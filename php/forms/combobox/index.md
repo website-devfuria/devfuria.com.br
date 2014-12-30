@@ -16,7 +16,7 @@ Abaixo vemos o formulário web no qual trabalharemos.
 
 !["Figura ilustrando o controle combobox"](input-form-select-02.png "Figura ilustrando o controle combobox")
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -40,7 +40,7 @@ Abaixo vemos o formulário web no qual trabalharemos.
     </body>
 </html>
 
-{% endhighlight %}
+```
 
 Os itens são representados pela tag `option`, cada item é uma `option`.
 
@@ -73,32 +73,32 @@ Você já viu alguém fazer uma combo sem nenhuma `option`?
 
 Se isso acontecer, saiba que um array vazio (array empty) é considerado como `false`.
 
-{% highlight php %}
+```php
 # afirmação: array() é igual a false
 # prova:
 (array() == false) # retorna true
-{% endhighlight %}
+```
 
 Outro cenário é quando temos option's mas o usuário escolhe a primeira opção.
 
 Em nosso exemplo, é aquela opção acima de "São Caetano do Sul" a __string de comprimento zero__.
 
-{% highlight html %}
+```html
 <select name="cidades">
     <option value=""></option>
     <option value="scs">São Caetano do Sul</option>
     <option value="sa">Santo André</option>
     <option value="sbc">São Bernardo do Campo</option>
 </select>
-{% endhighlight %}
+```
 
 A string `""` é considerada como `false`.
 
-{% highlight php %}
+```php
 # afirmação: "" é igual a false
 # prova:
 ("" == false) # retorna true
-{% endhighlight %}
+```
 
 
 
@@ -106,7 +106,7 @@ A string `""` é considerada como `false`.
 
 Podemos fazer um único teste para os 2 casos apresentados? Sim podemos.
 
-{% highlight php %}
+```php
 /**
  * Caso 1 $foo = array()
  * Caso 2 $foo = ""
@@ -117,38 +117,38 @@ if ($foo == true) {
 } else {
     echo "executando bloco else";
 }
-{% endhighlight %}
+```
 
 Agora ficou fácil, trocamos nossa variável `$foo` pelo array global `$_POST`.
 
-{% highlight php %}
+```php
 if ($_POST['cidades'] == true) {
     echo "executando bloco if";
 } else {
     echo "executando bloco else";
 }
-{% endhighlight %}
+```
 
 Pequena simplificação...
 
-{% highlight php %}
+```php
 if ($_POST['cidades']) {
     echo "executando bloco if";
 } else {
     echo "executando bloco else";
 }
-{% endhighlight %}
+```
 
 Dentro dos blocos `if {} else {}` introduziremos código para fazer alguma coisa com o valor da combobox. Normalmente 
 persistimos em um banco de dados, mas por hora não veremos esse código. Apenas alterei o texto para dar uma idéia melhor...
 
-{% highlight php %}
+```php
 if ($_POST['cidades']) {
     echo "armazenar '{$_POST['cidades']}'";
 } else {
     echo "não armazenar nada!";
 }
-{% endhighlight %}
+```
 
 
 
@@ -162,12 +162,14 @@ checar se a chave existe.
 
 A solução é perguntar se `$_POST['cidades']` está "setada", caso não esteja, atribuiremos `null`.
 
-{% highlight php %}$_POST['cidades'] = isset($_POST['cidades']) ? $_POST['cidades'] : null;{% endhighlight %}
+```php
+$_POST['cidades'] = isset($_POST['cidades']) ? $_POST['cidades'] : null;
+```
     
 
 Juntando tudo temos o resultado final:
 
-{% highlight php %}
+```php
 <?php
 // Arquivo "form-action.php"
 
@@ -181,7 +183,7 @@ if ($_POST['cidades']) {
 } else {
     echo "não armazenar nada!";
 }
-{% endhighlight %}
+```
 
 
 
@@ -197,27 +199,27 @@ Temos "n" options, logo teremos que percorrer um laço de repetição e observar
 
 Sendo mais prático, os valores da combobox ficarão contidos em um array como o exemplo seguinte
 
-{% highlight php %}
+```php
 $arrCombo = array(
     "scs" => "São Caetano do Sul",
     "sa"  => "Santo André",
     "sbc" => "São Bernardo do Campo"
 );
-{% endhighlight %}
+```
 
 Em outro momento, aprenderemos como carregar esse array a partir do banco de dados.
 
 Por enquanto vamos aprender como percorreremos o array.
 
-{% highlight php %}
+```php
 foreach ($arrCombo as $key => $value) {
     echo "<option value=\"$key\">$value</option>";
 }
-{% endhighlight %}
+```
 
 Agora basta juntar os código acima com nosso HTML, veja o resultado:
 
-{% highlight php %}
+```php
 <?php
 $arrCombo = array(
     "scs" => "São Caetano do Sul",
@@ -247,7 +249,7 @@ $arrCombo = array(
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 
 
@@ -261,7 +263,7 @@ Para determinar um valor carregado, usamos a propriedade HTML `selected="selecte
 Então, se dissermos que o valor deve ser `"sbc"` precisaremos, ao percorre o laço, checar se a chave (`$key`) é igual ao
 valor selecionado.
 
-{% highlight php %}
+```php
 $arrCombo = array(
     "scs" => "São Caetano do Sul",
     "sa"  => "Santo André",
@@ -272,12 +274,12 @@ foreach ($arrCombo as $key => $value) {
     $selected = ($valor_selecionado == $key) ? "selected=\"selected\"" : null;
     echo "<option value=\"$key\" $selected >$value</option>";
 }
-{% endhighlight %}
+```
 
 Juntando tudo no formulário HTML temos...
 
 
-{% highlight php %}
+```php
 <?php
 $arrCombo = array(
     "scs" => "São Caetano do Sul",
@@ -309,7 +311,7 @@ $valor_selecionado = "sbc";
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 
 
@@ -324,7 +326,7 @@ A solução é correr na frente e não atrás (momento filosófico), então que 
 Que tal uma função que aceite 2 parâmetros. O primeiro será nosso array de dados (`$arrDados`) e o segundo será o valor
 selecionado (`$valorSelecionado`).
 
-{% highlight php %}
+```php
 function combobox($arrDados, $valorSelecionado = null) {
     echo "<option></option>";
     foreach ($arrDados as $key => $value) {
@@ -332,12 +334,12 @@ function combobox($arrDados, $valorSelecionado = null) {
         echo "<option value=\"$key\"  $selected>$value</option>";
     }
 }
-{% endhighlight %}
+```
 
 Nosso código ficaria assim...
 
 
-{% highlight php %}
+```php
 <?php
 
 # Função que ajuda a desenhar o controle HTML select
@@ -378,7 +380,7 @@ $valor_selecionado = "sbc";
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 Veja o código completo deste exemplo no GitHub
 [php-exemplo/forms/combobox/](https://github.com/devfuria/php-exemplos/tree/master/forms/combobox "link-externo").

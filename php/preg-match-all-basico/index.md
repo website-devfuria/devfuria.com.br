@@ -42,7 +42,7 @@ Como fazer para obter esses resultados?
 Utilize a função `preg_math_all()` conforme o exemplo abaixo:
 
 
-{% highlight php %}
+```php
 <?php
 $subject = "casa, castanha, carpinteiro, cana de açucar, cama, casar, cavalo.";
 $pattern = "/ca.a/";
@@ -64,7 +64,7 @@ if ($resultado >= 1) {
 
 }
 ?>
-{% endhighlight %}
+```
 
 A função `preg_math_all()` carregará a varirável `$matches` com todos as ocorrências possíveis, veja a figura abaixo:
 

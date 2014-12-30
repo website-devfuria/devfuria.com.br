@@ -33,7 +33,7 @@ Testes passando, trabalho acabado.
 Código quase final
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -49,7 +49,7 @@ int main (){
 
     return 0;
 }
-{% endhighlight %}
+```
 
 
 Bom, pelo menos até o seu chefe chegar e dizer que não era exatamente este o comportamento esperado.
@@ -93,7 +93,7 @@ Os testes passaram, porém...
 Código complicado
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -112,7 +112,7 @@ int main (){
 
     return 0;
 }
-{% endhighlight %}
+```
 
 
 Algum tempo depois você foi contratado(a) para trabalhar com a gente e se deparou com o nosso código.
@@ -137,7 +137,7 @@ Ufa, agora sim fim da linha.
 Código refatorado
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -156,4 +156,4 @@ int main (){
 
     return 0;
 }
-{% endhighlight %}
+```

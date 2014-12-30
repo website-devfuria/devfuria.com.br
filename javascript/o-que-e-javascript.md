@@ -69,9 +69,9 @@ os elementos de um array `a`, por exemplo, não passamos `a` para uma função `
 
 Em vez disso, chamamos o método `sort()` de `a`: 
 
-{% highlight javascript %}
+```javascript
     a.sort() // A versão orientada a objetos de "sort(a)"
-{% endhighlight %}
+```
 
 
 

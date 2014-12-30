@@ -16,7 +16,7 @@ Se calcularmos o __MDC__ poderemos utilizar a propriedade:
 Invertendo as contas, temos MMC = a . b / MDC
 
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -45,7 +45,7 @@ int main() {
 
     return 0;
 }
-{% endhighlight %}
+```
 
 
 
@@ -53,7 +53,7 @@ int main() {
 Segunda solução
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -78,4 +78,4 @@ int main() {
 
     return 0;
 }
-{% endhighlight %}
+```

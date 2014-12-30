@@ -14,7 +14,7 @@ Copie o conteúdo abaixo em um arquivo chamado `string2.py` e execute no termina
 
 O exercício acaba quando todos os testes estiverem passando.
 
-{% highlight python %}
+```python
 #!/usr/bin/python -tt
 # coding: utf-8
 import unittest
@@ -66,13 +66,13 @@ class MyTest(unittest.TestCase):
 
 if __name__ == '__main__':
   unittest.main()
-{% endhighlight %}
+```
 
 
 Resposta
 ---
 
-{% highlight python %}
+```python
 #!/usr/bin/python -tt
 # coding: utf-8
 import unittest
@@ -148,4 +148,4 @@ class MyTest(unittest.TestCase):
 
 if __name__ == '__main__':
   unittest.main()
-{% endhighlight %}
+```

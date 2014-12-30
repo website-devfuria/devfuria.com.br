@@ -55,7 +55,7 @@ Crie um arquivo __JavaScript__ com um nome qualquer (eu utilizei `primeiro-teste
 
 Obviamente, salve o arquivo dentro da pasta `test`, ficará assim `/foo/test/primeiro-teste.js` .
 
-{% highlight javascript %}
+```javascript
 var assert = require('assert');
  
 describe('Alguns testes de exemplo', function(){
@@ -69,7 +69,7 @@ describe('Alguns testes de exemplo', function(){
     });
 
 }); 
-{% endhighlight %}
+```
 
 No terminal, tenha a certeza de estar na pasta `/foo`, digite `pwd` para descobrir.
 
@@ -113,7 +113,7 @@ Segundo exemplo com o Mocha
 
 Este exemplo é o mesmo apresentado na documentação.
 
-{% highlight javascript linenos %}
+```javascript
 var assert = require("assert")
 
 describe('Array', function(){
@@ -128,7 +128,7 @@ describe('Array', function(){
   })
 
 })
-{% endhighlight %}
+```
 
 
 
@@ -144,7 +144,7 @@ Para tal, eu utilizei o recurso CDN, veja onde conseguir os links CDN.
 
 O exemplo abaixo pode ser considerado como "template".
 
-{% highlight javascript %}
+```javascript
 mocha.setup('bdd')
 expect = chai.expect
 
@@ -153,13 +153,13 @@ expect = chai.expect
  */
 
 mocha.run();
-{% endhighlight %}
+```
 
 
 Abaixo veja um exemplo completo. Se preferir, pode rodar a [demo](http://mochajs.org/example/tests.html "link-externo").
 
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -261,8 +261,8 @@ Abaixo veja um exemplo completo. Se preferir, pode rodar a [demo](http://mochajs
       mocha.run();
     </script>
   </body>
-</html>{% endhighlight %}
-
+</html>
+```
 
 
 

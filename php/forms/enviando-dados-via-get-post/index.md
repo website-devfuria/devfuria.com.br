@@ -30,15 +30,15 @@ usuário não digitar nada o servidor receberá `""` (__string de comprimento ze
 Chega de teoria e vamos testar essa "bagaça". Crie um arquivo denominado `script-para-onde-envio-os-dados.php` e insira
 as seguintes linhas nele:
 
-{% highlight php %}
+```php
 <?php
 var_dump($_POST);
 ?>
-{% endhighlight %}
+```
 
 Agora crie o html abaixo:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -61,7 +61,7 @@ Agora crie o html abaixo:
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 Então, abra o HTML e clique no botão "Submit me", você deve estar vendo a seguinte informação:
 
@@ -85,11 +85,11 @@ Para criar uma requisição GET altere a propriedade `method` para "get" do noss
 
 E, obviamente, altere o script PHP como mostrado abaixo:
 
-{% highlight php %}
+```php
 <?php
 var_dump($_GET);
 ?>
-{% endhighlight %}
+```
 
 Temos o mesmo resultado, veja a figura:
 
@@ -150,7 +150,7 @@ Isso significa que podemos criar [âncoras](/html-css/ancoras/) com URL igual a 
 
 Altere o HTML como demonstrado abaixo, repare que eu apaguei o formulário e inseri uma âncora com nossa URL.
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -165,6 +165,6 @@ Altere o HTML como demonstrado abaixo, repare que eu apaguei o formulário e ins
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 Obs: Para que o HTML continue válido é preciso substituir os sinais `&` por `&amp;`.

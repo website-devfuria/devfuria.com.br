@@ -37,7 +37,7 @@ Sua primeira aplicação com o Express - Hello Word
 
 Na pasta `myspp`, crie um arquivo denominado `program.js` e cole o conteúdo abaixo dentro dele.
 
-{% highlight javascript %}
+```javascript
 var express = require('express')
 var app = express()
 
@@ -53,7 +53,7 @@ var server = app.listen(3000, function () {
   console.log('Example app listening at http://%s:%s', host, port)
 
 })
-{% endhighlight %}
+```
 
 Salve e volte para o terminal, execute o arquivo.
 

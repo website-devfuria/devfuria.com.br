@@ -11,7 +11,7 @@ ficará para um próximo artigo.
 
 Abaixo vemos um exemplo da sintaxe do __Jade__:
 
-{% highlight jade %}
+```jade
 doctype html
 html(lang="en")
   head
@@ -28,11 +28,11 @@ html(lang="en")
       p.
         Jade is a terse and simple templating language with a
         strong focus on performance and powerful features.
-{% endhighlight %}
+```
 
 Que, após convertido, se transformará em...
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,7 +49,7 @@ Que, após convertido, se transformará em...
     </div>
   </body>
 </html>
-{% endhighlight %}
+```
 
 No __Jade__ é preciso respeitar o espaçamento entre as tags separando cada tag por tabulação ou por espaços. Não é permitido
 ter uma página utilizando os dois meios, ou é um ou é outro.

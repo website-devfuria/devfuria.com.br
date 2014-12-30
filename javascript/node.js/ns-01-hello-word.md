@@ -38,9 +38,9 @@ Solução
 
 Essa foi fácil!
 
-{% highlight javascript %}
+```javascript
 console.log("HELLO WORLD");
-{% endhighlight %}
+```
 
 
 

@@ -19,37 +19,37 @@ adquirem essa nova propriedade e esse novo valor. (Danny Goodman, JavaScript & D
 
 Definimos a função `Coworker()` e instanciamos os objetos `c1` e `c2`.
 
-{% highlight javascript %}
+```javascript
 function Coworker(name) {
   this.name = name;
 }
 
 var c1 = new Coworker("João");
 var c2 = new Coworker("Maria");
-{% endhighlight %}
+```
 
 Ao adicionar a propriedade `status` ao objeto `prototype` ambas as instâncias são atualizadas.
 
-{% highlight javascript %}
+```javascript
 Coworker.prototype.status = "trabalhando"
 
 console.log(c1) // Coworker { name="João", status="trabalhando"}
 console.log(c2) // Coworker { name="Maria", status="trabalhando"}
-{% endhighlight %}
+```
 
 A partir desse ponto, a atualização da propriedade de uma das instâncias não afetará a outra. 
 
-{% highlight javascript %}
+```javascript
 c1.status = "férias";
 console.log(c1) // Coworker { name="João", status="férias"}
 console.log(c2) // Coworker { name="Maria", status="trabalhando"}
-{% endhighlight %}
+```
 
 Se, após as modificaões citadas acima, você alterar o valor da propriedade do protótipo, os valores da propriedade do
 protótipo designados individualmente não refletirão a alteração do protótipo.
 
-{% highlight javascript %}
+```javascript
 Coworker.prototype.status = "quase de férias"
 console.log(c1) // Coworker { name="João", status="férias"}
 console.log(c2) // Coworker { name="Maria", status="quase de férias"}
-{% endhighlight %}
+```

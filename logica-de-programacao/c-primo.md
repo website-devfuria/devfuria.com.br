@@ -118,7 +118,7 @@ Aqui passou! Não se esqueça dos comentários.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -175,4 +175,4 @@ int main (){
     assert(1 == ehPrimo(13));
     return 0;
 }
-{% endhighlight %}
+```
