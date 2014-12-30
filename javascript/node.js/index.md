@@ -7,6 +7,9 @@ description: Aprenda Node.js
 
 __Node.js__ é JavaScript do lado do servidor!
 
+É um ambiente de execução para usar JavaScript fora do navegador!
+Ele incorpora a "engine" de JavaScript Google V8, a mesma do Google Chrome (ECMAScript 5)
+
 Imagine que seu código __JavaScript__ esteja em um arquivo denominado `program.js`.
 
 Para executá-lo com o __Node.js__, digite no terminal `node program.js`.
@@ -15,8 +18,13 @@ O __Node.js__ também possui um terminal interativo, para acessá-lo basta digit
 
     $ node
     >
-    > 10 + 2
-    12
+    > 111 * 111
+    12321
+
+Do lado do servidor, temos a variável `process` que seria equivalente a conhecida 
+[variável global window](/javascript/refs/objeto-global/) do lado do cliente.
+
+Assista este vídeo para saber mais sobre [o que é o Node.js](https://www.youtube.com/watch?v=B0hc7hmpCD4 "link-externo")
 
 
 
