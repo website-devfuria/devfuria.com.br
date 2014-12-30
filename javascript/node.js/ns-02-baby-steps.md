@@ -47,8 +47,7 @@ para cada exercício.
 
 
 
-Solução
----
+### Solução
 
 ```javascript
 var length = process.argv.length,
@@ -62,9 +61,6 @@ console.log(sum);
 ```
 
 
-
-
-Próximo exercício
----
+### Próximo exercício
 
 - [My First I/O!](/javascript/node.js/ns-02-baby-steps/)
