@@ -10,15 +10,29 @@ description: Aprenda como criar e iterar arrays em php com foreach e while
 > implementação de mapa), dicionário, coleção, pilha, fila e provavelmente mais. Como você pode ter outro array PHP como 
 >um valor, você pode facilmente simular árvores.
 >
-> <small>Fonte: Manual do PHP - arrays</small>
+> <small>[Fonte: Manual do PHP - arrays](http://php.net/manual/pt_BR/language.types.array.php "link-externo")</small>
+
+Um array em PHP é equivalente ao conceito de __vetor__ normalmente ensinado nas faculdades.
+
+O conceito de __matriz__ é equivalente a um array multidimensional, ou seja, um array composto de outros array's.
 
 O índice do primeiro valor é zero.
 
 ![Figura ilustrando as chaves de um array](indice-zero.jpeg "Figura ilustrando as chaves de um array")
 
+Neste artigo veremos...
+
+- Criar um array
+- Criar um array dinâmicamente
+- Especificando as chaves de um array
+- Array numérico
+- Array associativo
+- Iterando um array com foreach
+- Iterando um array com while
+- Curso em vídeo de PHP – 18 – Vetores e Matrizes (Parte 1)
 
 
-Criando
+Criar um array
 ---
 
 
@@ -53,7 +67,7 @@ Quando o array acima cresce e fica grande demais para caber em 120 colunas temos
 
 
 
-Criando dinâmicamente
+Criar um array dinâmicamente
 ---
 
 Essa é uma forma interessante, simplesmente vamos atribuindo valores ao array.
@@ -75,7 +89,7 @@ A função interna do PHP `array_push` ilustrada abaixo faz exatamente o mesmo q
 
 
 
-Especificando as chaves
+Especificando as chaves de um array
 ---
 
 Podemos especificar as chaves do array no momento da criação.
@@ -137,7 +151,7 @@ Também dá para fazer o array misto (associativo e numérico)
 
 
 
-Iterando com foreach
+Iterando um array com foreach
 ---
 
 Tomando o último array como exemplo:
@@ -176,7 +190,7 @@ Fonte: [Manual do PHP - foreach](http://www.php.net/manual/pt_BR/control-structu
 
 
 
-Iterando com while
+Iterando um array com while
 ---
 
 Tanto...
@@ -201,3 +215,13 @@ Chegam no mesmo resultado:
 
 
 Fonte: [Manual do PHP - while](http://www.php.net/manual/pt_BR/control-structures.while.php "link-externo")
+
+
+Curso em vídeo de PHP – 18 – Vetores e Matrizes (Parte 1)
+---
+
+Vídeo aula do professor Gustavo Guanabara sobre Vetores e Matrizes em PHP.
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/g8Gr2NIMxQQ" frameborder="0" allowfullscreen></iframe>
+
+Fonte: [Curso em video - php-iniciante](http://www.cursoemvideo.com/course/curso-php-iniciante/ "link-externo")
