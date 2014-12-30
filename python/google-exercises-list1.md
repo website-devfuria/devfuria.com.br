@@ -1,18 +1,11 @@
 ---
-layout:      grid12-index
+layout:      grid93-article
 title:       Lista de exercícios da Google - list 1
 description: Exercícios de lógica em Python acompanhados de testes unitários. Esta é a terceira lista e de exercícios do Google Python Exercise.
+menu:        python-google
 ---
 
-O [Google](https://developers.google.com/edu/python/exercises/basic "link-externo") mantém um breve tutorial e alguns
-exercícios sobre Python, eu apenas traduzi os enunciados.
-
-O legal dos exercícios é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código 
-deveria funcionar e implementa as funções até os testes passarem. 
-
-Copie o conteúdo abaixo em um arquivo chamado `list1.py` e execute no terminal `python list1.py`.
-
-O exercício acaba quando todos os testes estiverem passando.
+{% include /menus/python-google-paraquedas.html %}
 
 ```python
 #!/usr/bin/python -tt

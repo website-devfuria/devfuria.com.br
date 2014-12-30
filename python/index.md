@@ -35,13 +35,9 @@ exercícios sobre Python, eu apenas traduzi os enunciados.
 O legal dos exercícios é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código 
 deveria funcionar e implementa as funções até os testes passarem.
 
-<div class="list-group">
-    <a href="/python/google-exercises-string1/" class="list-group-item">Exercícios Básicos - Strings 1</a>
-    <a href="/python/google-exercises-string2/" class="list-group-item">Exercícios Básicos - Strings 2</a>
-    <a href="/python/google-exercises-list1/" class="list-group-item">Exercícios Básicos - List 1</a>
-    <a href="/python/google-exercises-list2/" class="list-group-item">Exercícios Básicos - List 2</a>
-    <a href="/python/google-exercises-hello-sys-argv.md/" class="list-group-item">Hello Word com sys.argv</a>
-</div>
+{% include menus/python-google.html %}
+
+
 
 
 Experimente Python 3
