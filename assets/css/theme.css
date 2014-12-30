@@ -201,7 +201,6 @@ span.regex {
 }
 /** menssagens inicialmente utilizadas na seção node.js */
 #alterta {
-    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 1px 20px;
     background-color: #ffffdd;
