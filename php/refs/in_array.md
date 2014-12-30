@@ -21,26 +21,26 @@ Exemplos
 
 Utilização simples:
 
-{% highlight php %}
+```php
 <?php
 $haystack = array(100, 200, 300, 400); 
 echo in_array(200, $haystack) ? 'true' : 'false' ;   // 'true'
 echo in_array(900, $haystack) ? 'true' : 'false' ;   // 'false'
-{% endhighlight %}
+```
 
 
 Ilustrando o terceiro parâmetro:
 
-{% highlight php %}
+```php
 <?php
 $haystack = array(100, 200, 300, 400); 
 echo in_array("200", $haystack) ? 'true' : 'false' ;   // 'false'
-{% endhighlight %}
+```
 
 
 Quando `$neddle` também é um array:
 
-{% highlight php %}
+```php
 <?php
 $haystack = array(
     array(100, 200),
@@ -50,7 +50,7 @@ $haystack = array(
 echo in_array(array(100, 200), $haystack) ? 'true' : 'false' ;   // 'true'
 echo in_array(array(600, 700), $haystack) ? 'true' : 'false' ;   // 'false'
 echo in_array(500, $arr) ? 'true' : 'false' ;               // 'true'
-{% endhighlight %}
+```
 
 
 <hr>

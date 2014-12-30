@@ -14,7 +14,7 @@ do objeto](https://xhr.spec.whatwg.org/ "link-externo") data em dezembro de 2014
 Vamos focar nossa atenção para o evento `onreadystatechange`. Ele é acionado a cada alteração da propriedade 
 `readyState`, ou seja, a cada troca de valor dessa propriedade o evento `onreadystatechange` é executado. 
 
-{% highlight javascript %}
+```javascript
 var xhr = new XMLHttpRequest();
 
 xhr.open("GET", "foo.txt", true);
@@ -34,7 +34,7 @@ xhr.onreadystatechange = function () {
   }
 
 }
-{% endhighlight %}
+```
 
 
 A propriedade `readyState` pode ter um dos valores abaixo:
@@ -48,46 +48,46 @@ A propriedade `readyState` pode ter um dos valores abaixo:
 Ao utilização do objeto __XMLHttpdRequest__ implica em passar passar por esses estados. Por curiosidade você poderá
 executar o seguinte código.
 
-{% highlight javascript %}
+```javascript
 ...
 ...
 ...
 xhr.onreadystatechange = function () {
     console.log(this.readyState);
 }
-{% endhighlight %}
+```
 
 A resposta do servidor estará pronta quando `readyState` for igual a `1`, podemos fazer isso:
 
-{% highlight javascript %}
+```javascript
 xhr.onreadystatechange = function () {
   if(this.readyState == 1) {
   }
 }
-{% endhighlight %}
+```
 
 Mas preferimos utilizar as contantes do objeto __XMLHttpRequest__.
 
-{% highlight javascript %}
+```javascript
 xhr.onreadystatechange = function () {
   if(this.readyState == this.DONE) {
   }
 }
-{% endhighlight %}
+```
 
 
 Após observar que a requisição está pronta para uso, devemos saber qual foi o 
 [código de resposta do HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Response_codes "link-externo"). Fazemos
 isso checando o valor da proprieda `status`.
 
-{% highlight javascript %}
+```javascript
 xhr.onreadystatechange = function () {
   if(this.readyState == this.DONE) {
     if(this.status == 200) {
     }
   }
 }
-{% endhighlight %}
+```
 
 A partir deste ponto, podemos obter os dados em dois formatos: __texto plano__ e __XML__. As propriedades para acessar
 os dados são, respectivamente, `responseText` e `responseXML`.

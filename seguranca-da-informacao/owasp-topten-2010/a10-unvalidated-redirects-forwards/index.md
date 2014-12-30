@@ -34,14 +34,14 @@ A aplicação possui um script(página) chamado `redireciona.php` que utiliza ap
 O script tem como objetivo redirecionar o usuário para determinada página dentro ou fora da aplicação. Vejamos um exemplo
 no abaixo:
 
-{% highlight php %}
+```php
 <?php
 
 $ir_para_url = $_GET['url_destino'];
 header("Location: $ir_para_url");
 
 ?>
-{% endhighlight %}
+```
 
 
 O atacante, percebendo este detalhe, criará uma URL maliciosa apontando para um site(servidor) que, uma vez acessado,
@@ -61,10 +61,10 @@ O OWASP Top 10 (2010) sugere como prevenção:
 3. Se os parâmetros de destino não podem ser evitados, tenha certeza de fornecer um valor válido e autorizado para o
 utilizador. É possível fazer uso da ESAPI conforme seguinte.
 
-{% highlight php %}
+```php
 <?php
 $ir_para_url = $_GET['url_destino'];
 $ir_para_url = $ESAPI->HTTPUtilities->sendRedirect("response", request.getParameter("$ir_para_url"));
 header("Location: $ir_para_url");
 ?>
-{% endhighlight %}
+```

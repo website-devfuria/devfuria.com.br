@@ -15,7 +15,7 @@ Veja a imagem abaixo com um exemplo simples de formulário web com radios button
 
 Agora veja o código HTML:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -37,7 +37,7 @@ Agora veja o código HTML:
         <script type="text/javascript" src="radios-v1.0.js"></script>
     </body>
 </html>
-{% endhighlight %}
+```
 
 
 Se uma radio é uma opção entre pelo menos duas, sabemos que nunca teremos uma única rádio apenas.
@@ -68,7 +68,7 @@ Passando à limpo a idéia:
 
 Ops! Nosso problema acaba de virar solução, o código completo você confere abaixo:
 
-{% highlight javascript %}
+```javascript
 /**
  * Botão Submit
  */
@@ -93,7 +93,7 @@ document.getElementById("btnLoad").onclick = function() {
         }
     }
 };
-{% endhighlight %}
+```
 
 
 ### Explicando o código do botão "Submit"

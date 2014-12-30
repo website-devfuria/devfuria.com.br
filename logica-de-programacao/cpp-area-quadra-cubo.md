@@ -98,7 +98,7 @@ Tudo verde? Coisa linda.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <iostream>
 #include <assert.h>
 
@@ -136,5 +136,5 @@ int main() {
     testAreaCubica();
     return 0;
 }
-{% endhighlight %}
+```
 

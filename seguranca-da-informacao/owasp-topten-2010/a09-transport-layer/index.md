@@ -59,10 +59,10 @@ A prevenção primaria referente a camada de transporte poderá ser feita atrav�
   valor desse parâmetro for `true`, a opção "secure" será ativada, isto é, o cookie só poderá ser transmitido sob uma 
   conexão segura HTTPS do cliente. O código abaixo ilustra a utilização da opção "secure".
 
-{% highlight php %}
+```php
 <?php
 setcookie("nome_do_cookie", $valor, $tempo_experiar, $dominio, true);
-{% endhighlight %}
+```
 
 * Configurar o fornecedor SSL para suportar apenas algoritmos robustos, preferencialmente os compatíveis com a FIPS 140-2
 * Assegurar que o certificado é válido, não expirado, não revogado e que mapeia todos domínios utilizados pelo site web.

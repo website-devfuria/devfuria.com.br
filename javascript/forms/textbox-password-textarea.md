@@ -36,17 +36,17 @@ Que tratamento daremos ao pequeno formulário do Andy Budd?
 
 Que tal começarmos referenciando o botão submit?
 
-{% highlight javascript %}
+```javascript
     document.getElementById("btnSubmit")
-{% endhighlight %}
+```
 
 Não se esqueça que você precisará do id, por tanto, altere o [HTML](/html-css/) incluindo a propriedade id.
 
-{% highlight javascript %}
+```javascript
 ...
 <input type="submit" id="btnSubmit" value="Submit!" />
 ...
-{% endhighlight %}
+```
 
 
 A propriedade `id` está para o JavaScript assim como a propriedade `name` está para o [PHP](/php/).
@@ -62,10 +62,10 @@ Mas o básico é referenciar pelo __id__.
 Agora, vamos atribuir uma função anônima para o evento [onclick](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers.onclick "link-externo")
 de nosso controle.
 
-{% highlight javascript %}
+```javascript
 document.getElementById("btnSubmit").onclick = function() {
 }
-{% endhighlight %}
+```
 
 
 Lembra que o botão do tipo submit (`<input type="submit"`) dispara o evento submit do formulário web?
@@ -73,16 +73,16 @@ Lembra que o botão do tipo submit (`<input type="submit"`) dispara o evento sub
 Atribuir uma função ao evento __onclick__ não anulará a ação padrão, então precisaremos mudar nosso [HTML](/html-css/) mais uma vez.
 O botão passa a ser do tipo "button", veja:
 
-{% highlight javascript %}
+```javascript
 ...
 <input type="button" id="btnSubmit" value="Submit!" />
 ...
-{% endhighlight %}
+```
 
 Nossa função fará o óbvio, buscará os controles e mostrará no console do FireBug seus valores, veja como ficou:
 
 
-{% highlight javascript %}
+```javascript
 document.getElementById("btnSubmit").onclick = function() {
 
     var txtAutor   = document.getElementById("author");
@@ -97,4 +97,4 @@ document.getElementById("btnSubmit").onclick = function() {
 
     // código para efetuar o submit (provavelmente AJAX)
 }
-{% endhighlight %}
+```

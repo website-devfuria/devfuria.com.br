@@ -9,15 +9,15 @@ description:
 Test()
 ---
 
-{% highlight python %}
+```python
 def test(expression1, expression2):
     if expression1 == expression2:
         return 'Pass'
     else:
         return 'Fail'
-{% endhighlight %}
+```
 
-{% highlight python %}
+```python
 # http://code.google.com/edu/languages/google-python-class/
 def test(got, expected):
   if got == expected:
@@ -25,10 +25,10 @@ def test(got, expected):
   else:
     prefix = '  X '
   print("%s got: %s expected: %s" % (prefix, repr(got), repr(expected)))
-{% endhighlight %}
+```
 
 
-{% highlight python %}
+```python
 import sys
 
 def test(did_pass):
@@ -50,10 +50,10 @@ def test_suite():
     test(absolute_value(-3.14) == 3.14)
 
 test_suite()        # Here is the call to run the tests
-{% endhighlight %}
+```
 
 
-{% highlight python %}
+```python
 def test(actual, expected):
     """ Compare the actual to the expected value,
         and print a suitable message.
@@ -66,7 +66,7 @@ def test(actual, expected):
         msg = ("Test on line {0} failed. Expected '{1}', but got '{2}'."
                                      . format(linenum, expected, actual))
     print(msg)
-{% endhighlight %}
+```
 
 
 

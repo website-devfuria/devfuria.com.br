@@ -40,7 +40,7 @@ ideal praticada no anos 90. Hoje (nov/2014), podemos/devemos ao menos fazer algu
 Primeiro, estamos [poluindo o espaço global](/javascript/refs/objeto-global/). A variável `num` e nossas 3 funções estão
 "soltas", elas deveriam estar em um container, por exemplo:
 
-{% highlight javascript %}
+```javascript
 var app = {
     num: 0,
     add: function() {
@@ -53,30 +53,30 @@ var app = {
         ...
     }
 }
-{% endhighlight %}
+```
 
 Segundo, estamos utilizando a propriedade [onclick](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers.onclick "link-externo")
 dos botões HTML, não que isso seja proibido, mas normalmente "buscamos" o elemento via JavaScript e atribuímos a função desejada via código, exemplo:
 
-{% highlight javascript %}
+```javascript
 var elem = document.getElementById("id-do-seu-botao");
 elem.onclick = function() {
     ...
 }
-{% endhighlight %}
+```
 
 Ainda na questão do evento __onclick__, quando fazemos `elem.onclick = function(){}` ficamos limitados a atribuir uma
 única função ao evento __onclick__ além de estarmos utilizando uma técnica ultrapassada (`elem.onclick`).
 
 A forma ideal seria anexar funções com os recepetores de eventos (`addEventListener()`), veja exemplo:
 
-{% highlight javascript %}
+```javascript
 var elem = document.getElementById("id-do-seu-botao");
 var foo = function () {
     ...
 }
 elem.addEventListener('click', foo, false);
-{% endhighlight %}
+```
 
 Para mais informações sobre como trabalhar com eventos no JavaScript leia 
 [Tratando Eventos (de navegadores)](/javascript/tratando-eventos/).

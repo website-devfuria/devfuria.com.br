@@ -35,11 +35,11 @@ Quando a key(chave) não existe
 
 Quando executamos o script abaixo sem os devidos paramêtros...
 
-{% highlight php %}
+```php
 <?php
 echo $_GET['foo'];
 ?>
-{% endhighlight %}
+```
 
 ...recebemos um erro:
 
@@ -116,16 +116,16 @@ Perfeito! Agora podemos dar `echo` à vontade.
 
 O código final ficou assim:
 
-{% highlight php %}
+```php
 $_POST['foo'] = ( isset($_POST['foo']) ) ? $_POST['foo'] : null;
 echo $_POST['foo'];
-{% endhighlight %}
+```
 
 
 Então podemos combinar o seguinte: no começo do script recebemos os dados e ficamos tranquilo para utilizar no restante
 do script, veja:
 
-{% highlight php %}
+```php
 <?php
 
 /*
@@ -143,7 +143,7 @@ echo $_POST['laranja'];
 echo $_POST['banana'];
 echo $_POST['pera'];
 echo $_POST['abacaxi'];
-{% endhighlight %}
+```
 
 Economizamos algumas linhas sem prejudicar a legibilidade (leia-se limpeza) do código.
 
@@ -154,7 +154,7 @@ Duplicando as variáveis
 
 A forma abaixo jṕa foi muito usual:
 
-{% highlight php %}
+```php
 <?php
 
 /*
@@ -172,7 +172,7 @@ echo $laranja;
 echo $banana;
 echo $pera;
 echo $abacaxi;
-{% endhighlight %}
+```
 
 
 Mas ele duplica as variáveis.

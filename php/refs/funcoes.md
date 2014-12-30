@@ -51,7 +51,7 @@ por hora deixaremos esses assuntos para outra matéria.
 
 Abaixo conferimos um exemplo de função que soma dois números.
 
-{% highlight php %}
+```php
 <?php
 function somarDoisNumeros($parametro1, $parametro2) {
     $soma = $parametro1 + $parametro2;
@@ -62,4 +62,4 @@ echo somarDoisNumeros(5, 3);
 // print 8
 echo somarDoisNumeros(2, 4);
 // print 6
-{% endhighlight %}
+```

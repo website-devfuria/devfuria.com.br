@@ -9,21 +9,21 @@ menu:        html-forms
 
 O botão abaixo precisaria de um código [JavaScript](/javascript/) para realizar a submissão da página.
 
-{% highlight html %}
+```html
 <input type="button" value="Enviar formulário" />
-{% endhighlight %}
+```
 
 O botão submit "já vem pré programado" para realizar o __submit__, ou seja, não precisaremos "codar" em [JavaScript](/javascript/).
 
-{% highlight html %}
+```html
 <input type="submit" value="Enviar formulário" />
-{% endhighlight %}
+```
 
 O botão reset já não se usa mais, ele limpa as entradas do campos e, como o __botão submit__, ele já vem pré programado.
 
-{% highlight html %}
+```html
 <input type="reset" value="Apagar formulário" />
-{% endhighlight %}
+```
 
 Visualmente eles são muito parecidos, mas "por de baixo do pano" são bem diferentes.
 
@@ -37,9 +37,9 @@ Repare que a propriedade `value` de ambos os botões servem como uma estampa (la
 A tag `<button>` é o que temos de mais atual quando falamos de botões HTML. Ela é mais fácil de estilizar, pois dentro
 dela podemos inserir tags como por exemplo `<em>`, `<strong>` ou `<img>`.
 
-{% highlight html %}
+```html
 <button name="button">Enviar formulário</button>
-{% endhighlight %}
+```
 
 Da mesma forma que o elemento __input__, o atributo `type` também se faz presente, podendo conter um dos valores abaixo:
 
@@ -58,13 +58,13 @@ Estilizando
 O desafio de estilizar botões é manter um "set" de classes que possam ser utilizados em conjunto. Tomemos como exemplo
 as classes do framework [Bootstrap](http://getbootstrap.com/ "link-externo"):
 
-{% highlight html %}
+```html
 <button class="btn btn-info">Enviar formulário</button>
-{% endhighlight %}
+```
 
 A CSS para o HTML acima poderia ser...
 
-{% highlight css %}
+```css
 
 .btn {
     /** Estilização comum a todos o botões */
@@ -72,16 +72,16 @@ A CSS para o HTML acima poderia ser...
 .btn-info {
     /** Estilização específica para os botões do tipo "info" */
 }
-{% endhighlight %}
+```
 
 Outro ponto interessante no caso do botões são os estados __hover__ (sobre), __focus__(focado) e __active__(ativo).
 Podemos definir estilização para cada um dos estados com a auda das pseudoclasses que recebem o mesmo nome:
 
-{% highlight css %}
+```css
 .btn-info:hover, .btn-info:focus, .btn-info:acitive {
     /** Estilização para todos os 3 estados do botão info*/
 }
-{% endhighlight %}
+```
 
 O exemplo abaixo aviso é bastante simplista, porém dá um a idéia geral de como seu código CSS pode ser inteligente.
 

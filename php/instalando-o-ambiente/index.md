@@ -64,12 +64,12 @@ Para testar o PHP, crie um arquivo com o nome `index.php` conforme mostrado abai
 
 É preciso ser root para inserir arquivos nesta pasta.
 
-{% highlight php  %}
+```php
 <?php
 // index.php
 echo phpinfo(); 
 ?>
-{% endhighlight %}
+```
 
 Este arquivo dá um "print" no resultado da função `phpinfo()`, essa função traz dados preciosos sobre a instalação. Abra
 o navegador e digite novamente `http://localhost`, agora aparecerá a tela do PHP e as informações da instalação.

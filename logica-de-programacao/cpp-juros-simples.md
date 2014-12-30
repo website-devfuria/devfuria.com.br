@@ -66,7 +66,7 @@ Agora é so implementar a lógica da função `simples`.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <iostream>
 #include <assert.h>
 
@@ -96,4 +96,4 @@ int main() {
     testJurosSimples();
     return 0;
 }
-{% endhighlight %}
+```

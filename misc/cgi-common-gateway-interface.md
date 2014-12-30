@@ -33,7 +33,7 @@ o Apache guarda as informações de Virtual Hosts. Na minha máquina possuo algu
 nenhum, mas o que estamos procurando é o "host" principal o "default". No meu caso, é o arquivo denominado simplesmente
 `default`, sem extensão. Abaixo, eu copiei (na íntegra) o arquivo da minha máquina `/etc/apache2/sites-available/default`.
 
-{% highlight linux-config linenos %}
+{% highlight linux-config linenos %} 
 <VirtualHost *:80>
         ServerAdmin webmaster@localhost
 
@@ -66,7 +66,6 @@ nenhum, mas o que estamos procurando é o "host" principal o "default". No meu c
 
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-
 {% endhighlight %}
 
 Você deve atentar apenas o trecho entre as linhas 16 e 23, é ele quem faz a coisa toda funcionar.
@@ -113,7 +112,7 @@ Teste o arquivo no terminal antes de tentar acessar via browser executando `pyth
 
 É preciso dar permissão de execução no arquivo, execute `chmod 775 foo.py`.
 
-{% highlight python %}
+```python
 #!/usr/bin/python
 
 print 'Content-type: text/html'
@@ -122,7 +121,7 @@ print '<html>'
 print '<head><title>CGI - python</title></head>'
 print '<body><h1>CGI - python</h1>Seu CGI esta funcionando</body>'
 print '</html>'
-{% endhighlight %}
+```
 
 
 ### Exemplo CGI - Perl
@@ -137,7 +136,7 @@ Teste o arquivo no terminal antes de tentar acessar via browser executando `perl
 
 É preciso dar permissão de execução no arquivo, execute `chmod 775 foo.pl`.
 
-{% highlight perl %}
+```perl
 #! /usr/bin/perl
 
 print "Content-type: text/html\n\n";
@@ -145,7 +144,7 @@ print "<html>";
 print "<head><title>CGI - perl</title></head>";
 print "<body><h1>CGI - perl</h1>Seu CGI esta funcionando</body>";
 print "</html>";
-{% endhighlight %}
+```
 
 
 ### Exemplo CGI - Shel script
@@ -157,7 +156,7 @@ Teste o arquivo no terminal antes de tentar acessar via browser executando `./fo
 
 É preciso dar permissão de execução no arquivo, execute `chmod 775 foo.sh`.
 
-{% highlight sh %}
+```sh
 #! /bin/sh
 
 echo 'Content-type: text/html\n\n'
@@ -165,7 +164,7 @@ echo '<html>'
 echo '<head><title>CGI - shel script</title></head>'
 echo '<body><h1>CGI - shel script</h1>Seu CGI esta funcionando</body>'
 echo '</html>'
-{% endhighlight %}
+```
 
 
 
@@ -179,7 +178,7 @@ com o seguinte comando:
 
 Para testar, execute no teminal `./foo.bin`.
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -193,7 +192,7 @@ int main(int argc, char** argv) {
 
     return 0;
 }
-{% endhighlight %}
+```
 
 
 

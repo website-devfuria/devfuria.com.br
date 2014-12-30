@@ -62,7 +62,7 @@ Exemplo (true)
 O código abaixo compila corretamente e ao ser executado ele "não faz nada", fica em silêncio (a expressão testada pelo
  __assert()__ é verdadeira).
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -76,7 +76,7 @@ int main (){
 
     return 0;
 }
-{% endhighlight %}
+```
 
 Rodando os testes...
 
@@ -94,7 +94,7 @@ Exemplo (false)
 O código abaixo também compilará, mas ao executar ele será interrompido pela função `assert()`.
 
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -108,7 +108,7 @@ int main (){
 
     return 0;
 }
-{% endhighlight %}
+```
 
 Rodando os testes...
 

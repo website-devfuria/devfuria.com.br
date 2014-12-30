@@ -9,7 +9,7 @@ Faça um programa para calcular o MDC (máximo divisor comum) entre dois número
 Utilize o método de divisões sucessivas.
 
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -33,4 +33,4 @@ int main() {
     assert(10 == mdc(30, 20));
     return 0;
 }
-{% endhighlight %}
+```

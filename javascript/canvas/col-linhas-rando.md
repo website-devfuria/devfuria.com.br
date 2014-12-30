@@ -91,7 +91,7 @@ Para dar o efeito principal (várias linhas), a função será repetida em deter
 
 Assim, temos o esqueleto inicial abaixo.
 
-{% highlight javascript %}
+```javascript
 var coor = {
 ...
 ...
@@ -107,12 +107,12 @@ function draw(coor) {
 setInterval(function() {
     draw(coor);
 }, 10);
-{% endhighlight %}
+```
 
 
 Veja o código completo:
 
-{% highlight javascript %}
+```javascript
 /**
  * Objeto com as coordenadas
  */
@@ -167,6 +167,6 @@ function draw(coor) {
 setInterval(function() {
     draw(coor);
 }, 10);
-{% endhighlight %}
+```
 
 Inspirado no trabalho de [webmediadev](http://webmediadev.wordpress.com/2011/10/14/js-exercise-random-lines/ "link-externo")

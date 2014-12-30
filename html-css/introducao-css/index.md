@@ -35,13 +35,13 @@ A CSS é composta pelo que se chama de "regras de estilização"(rule-sets), um 
 
 A regra CSS pode conter várias declarações separadas por ponto e vírgula, como no exemplo abaixo:
 
-{% highlight css %}
+```css
 /* CSS também possuem comentários e você deve utilizá-los */
 p {
     font-size: 12px;
     color: green;
 }
-{% endhighlight %}
+```
 
 A letra `p` é o __seletor__, é o alvo da regra CSS.
 

@@ -12,7 +12,7 @@ Solução(ões)
 
 Começamos pelo teste...
 
-{% highlight c %}
+```c
 #include<stdio.h>
 #include<string.h>
 #include<assert.h>
@@ -26,12 +26,12 @@ int main() {
     assert(strcmp("abcdefg", str1) == 0);    
     return (0);
 }
-{% endhighlight %}
+```
 
 
 ### Primeira solução
 
-{% highlight c %}
+```c
 int concatenar(char s1[], char s2[]) {
     int i, j;
 
@@ -40,12 +40,12 @@ int concatenar(char s1[], char s2[]) {
         s1[i] = s2[j];
     }
 }
-{% endhighlight %}
+```
 
 
 ### Segunda solução
 
-{% highlight c %}
+```c
 void concatenar(char s[], char t[]) {
     int i = 0, j = 0;
 
@@ -55,12 +55,12 @@ void concatenar(char s[], char t[]) {
 
     while ((s[i++] = t[j++]) != '\0');
 }
-{% endhighlight %}
+```
 
 
 ### Terceira solução
 
-{% highlight c %}
+```c
 void concatenar(char s1[], char s2[]) {
     int i, j;
 
@@ -72,12 +72,12 @@ void concatenar(char s1[], char s2[]) {
 
     s1[i] = "";
 }
-{% endhighlight %}
+```
 
 
 ### Quarta solução
 
-{% highlight c %}
+```c
 void concatenar(char *original, char *add) {
     while (*original)
         original++;
@@ -89,13 +89,13 @@ void concatenar(char *original, char *add) {
     }
     *original = '\0';
 }
-{% endhighlight %}
+```
 
 
 ### Quinta solução
 
-{% highlight c %}
+```c
 void concatenar(char str1[], char str2[]) {
     strcat(str1, str2);
 }
-{% endhighlight %}
+```

@@ -27,7 +27,7 @@ A função aceita 5 parâmetros, sendo os dois primeiros obrigatórios.
 
 Veja um exemplo:
 
-{% highlight php %}
+```php
 <?php
 $pattern = "/exemplo/";
 $subject = "Casa com a palavra exemplo";
@@ -37,7 +37,7 @@ $matches = array();
 $resultado = preg_match($pattern, $subject, $matches);
 var_dump($resultado, $matches);
 ?>
-{% endhighlight %}
+```
 
 ...veja o resultado do `var_dump($resultado, $matches);` :
 
@@ -55,7 +55,7 @@ Se a expressão não casar
 
 Executando o seguinte código:
 
-{% highlight php %}
+```php
 <?php
 $pattern = "/não existe/";
 $subject = "Casa com a palavra exemplo";
@@ -65,7 +65,7 @@ $matches = array();
 $resultado = preg_match($pattern, $subject, $matches);
 var_dump($resultado, $matches);
 ?>
-{% endhighlight %}
+```
 
 
 ...recebemos um 0 (zero) na variável `$resultado` e um array vazio na variável `$matches`.
@@ -79,7 +79,7 @@ Se a expressão estiver sintaticamente errada
 
 Se executarmos o código abaixo, ele falhará. Eu coloquei um `(` a mais.
 
-{% highlight php %}
+```php
 <?php
 $pattern = "/(exemplo/";
 $subject = "Casa com a palavra exemplo";
@@ -88,7 +88,7 @@ $matches = array();
 # Executa nossa expressão
 $resultado = preg_match($pattern, $subject, $matches);
 ?>
-{% endhighlight %}
+```
 
 A variável `$resultado` será igual a false e receberemos um __warning__ dizendo que a compilação da expressão falhou 
 (outros tipos de erros também aparecem):
@@ -113,7 +113,7 @@ Sabendo como a função se comporta, podemos esboçar nossa lógica da seguinte 
 
 E aí fica fácil escrevermos o código final.
 
-{% highlight javascript %}
+```javascript
 <?php
 $pattern = "/exemplo/";
 $subject = "Casa com a palavra exemplo";
@@ -135,7 +135,7 @@ if ($resultado === 1) {
 
 }
 ?>
-{% endhighlight %}
+```
 
 
 <hr/>

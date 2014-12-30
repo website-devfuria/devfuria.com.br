@@ -68,7 +68,7 @@ Acredito que você poderá fazer isso sozinho(a). Boa sorte.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <iostream>
 #include <assert.h>
 
@@ -96,4 +96,4 @@ int main() {
     testSucessor();
     return 0;
 }
-{% endhighlight %}
+```

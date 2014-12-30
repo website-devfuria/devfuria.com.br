@@ -21,13 +21,13 @@ praticado um pouco de [JavaScript](/javascript/).
 
 Imagine que você precisa de uma função para juntar a propriedade de dois objetos, algo como o exemplo abaixo.
 
-{% highlight javascript %}
+```javascript
 var a = { foo: 'bar' }
   , b = { bar: 'baz' };
 
 merge(a, b);
 // { foo: 'bar', bar: 'baz' }
-{% endhighlight %}
+```
 
 Você acha que consegue implementar uma função para realizar o esperado acima?
 
@@ -71,14 +71,14 @@ Repare que o [npm](/linux/cookbook/npm/) criou um pasta chamada `node_modules` e
 Tenha a certeza de estar na pasta `seu-projeto`, execute `pwd`. Agora, crie um arquivo qualquer, por exemplo 
 `programa.js` e insira o seguinte conteúdo:
 
-{% highlight javascript %}
+```javascript
 var merge = require('utils-merge');
 
 var a = { foo: 'bar' }
   , b = { bar: 'baz' };
 
 console.log(merge(a, b));
-{% endhighlight %}
+```
 
 Volte para o terminal e execute `node programa.js`, o resultado deve ser:
 

@@ -10,7 +10,7 @@ Faça um programa que identifique se em um determinado vetor, existem ou não va
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -36,4 +36,4 @@ int main() {
     assert(1== resp);
     return (0);
 }
-{% endhighlight %}
+```

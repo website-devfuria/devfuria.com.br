@@ -38,7 +38,7 @@ O código abaixo é denominado "código cliente", pois é ele quem faz uso da cl
 O [require](/php/refs/require/) é para incluir um arquivo, no caso o arquivos que contém a classe.
 
 
-{% highlight php %}
+```php
 <?php
 // script-cliente.php
 require "Triangulo.php";
@@ -48,7 +48,7 @@ $triangulo->a = 3;                          # atribuímos valor
 $triangulo->b = 4;                          # idem
 $triangulo->c = 5;                          # idem
 var_dump(  $triangulo->validarForma()  );   # executamos um método
-{% endhighlight %}
+```
 
 A linha abaixo tira uma cópia (instância) da classe `Triangulo` e armazena na variável `$triangulo`.
 
@@ -58,7 +58,7 @@ Agora a variável `$triangulo` é um objeto.
 
 Podemos invocar os atributos e métodos através da "seta" `->` conforme esquema a seguir:
 
-{% highlight php %}
+```php
 <?php
 # armazenando um valor
 $objeto->propriedade = 123;
@@ -76,7 +76,7 @@ class Triangulo {
 
     # seus métodos
 }
-{% endhighlight %}
+```
 
 As propriedades ficam no topo da classe e são precedidas por sua [visibilidade](/php/oop-visibilidade/):
 
@@ -84,7 +84,7 @@ As propriedades ficam no topo da classe e são precedidas por sua [visibilidade]
 - protected
 - private
 
-{% highlight php %}
+```php
 <?php
 class Triangulo {
 
@@ -95,12 +95,12 @@ class Triangulo {
 
     # seus métodos
 }
-{% endhighlight %}
+```
 
 
 Os métodos são o equivalente as funções e, como as propriedades, também possuem visibilidade, veja:
 
-{% highlight php %}
+```php
 <?php
 class Triangulo {
 
@@ -116,11 +116,11 @@ class Triangulo {
         ...
     }
 }
-{% endhighlight %}
+```
 
 Dentro dos métodos, as variáveis, ou melhor, as propriedades são referenciadas pela palavra chave `$this`:
 
-{% highlight php %}
+```php
 <?php
 class Triangulo {
 
@@ -136,12 +136,12 @@ class Triangulo {
         echo $this->c;
     }
 }
-{% endhighlight %}
+```
 
 Eis o código completo:
 
 
-{% highlight php %}
+```php
 <?php
 // Triangulo.php
 
@@ -168,7 +168,7 @@ class Triangulo {
         }
     }
 }
-{% endhighlight %}
+```
 
 Olhando para a classe podemos afirmar que classe é um conjunto de métodos e propriedades.
 

@@ -16,14 +16,14 @@ Nossa combo se parecerá como a da figura abaixo:
 
 Eu vou utilizar 4 elementos: 3 cidades e 1 opção em branco (nulo, ""), o HTML da combo será como o seguinte: 
 
-{% highlight html %}
+```html
 <select id="cboCidades">
     <option value=""></option>
     <option value="scs">São Caetano do Sul</option>
     <option value="sa">Santo André</option>
     <option value="sbc">São Bernardo do Campo</option>
 </select>
-{% endhighlight %}
+```
 
 A propriedade `id` da combo será `cboCidades`, logo poderemos encontrar o controle da seguinte forma:
 
@@ -108,7 +108,7 @@ Resumindo, é isto aqui:
 
 Então teremos que repetir o trecho acima para cada option, veja:
 
-{% highlight javascript %}
+```javascript
 document.getElementById("btnCarregar").onclick = function() {
     var comboCidades = document.getElementById("cboCidades");
 
@@ -133,7 +133,7 @@ document.getElementById("btnCarregar").onclick = function() {
     comboCidades.add(opt3, comboCidades.options[3]);
 
 };
-{% endhighlight %}
+```
 
 
 
@@ -164,14 +164,14 @@ Ao HTML adicionamos:
 
 E nosso código JavaScript será:
 
-{% highlight javascript %}
+```javascript
 document.getElementById("btnInfo").onclick = function() {
     var comboCidades = document.getElementById("cboCidades");
     console.log("O indice é: " + comboCidades.selectedIndex);
     console.log("O texto é: " + comboCidades.options[comboCidades.selectedIndex].text);
     console.log("A chave é: " + comboCidades.options[comboCidades.selectedIndex].value);
 };
-{% endhighlight %}
+```
 
 Pronto! com as informações da combobox em mãos você poderá tomar qualquer direção: enviar os dados via Ajax,
 exibir outros dados, etc...
@@ -221,12 +221,12 @@ Removendo elementos da combobox
 
 O método [remove(indice)](/javascript/refs/dom-remove/) remove o elemento.
 
-{% highlight javascript %}
+```javascript
 document.getElementById("btnRemoverItem").onclick = function() {
     var comboCidades = document.getElementById("cboCidades");
     comboCidades.remove(0);
 };
-{% endhighlight %}
+```
 
 O método acima está removendo sempre o elemento de índice 0 (zero), em outras palavras, ele está removendo o primeiro item. 
 
@@ -265,14 +265,14 @@ Dessa forma, o laço itera a coleção da combobox e retira sempre o primeiro op
 Mas esse 0 (zero) fixo me fez lembrar que não preciso do iterador `i` e consequentemete, não preciso do laço for, então
 utilizei um laço while:
 
-{% highlight javascript %}
+```javascript
 document.getElementById("btnRemoverTodos").onclick = function () {
     var comboCidades = document.getElementById("cboCidades");
     while (comboCidades.length) {
         comboCidades.remove(0);
     }
 };
-{% endhighlight %}
+```
 
 
 

@@ -35,7 +35,7 @@ Crie um arquivo denominado `foo.txt` e insira nela uma única linha com o seguin
 Para executar o código abaixo você poderá utilizar as ferramentas do navegador. Eu estou no Firefox e estou utilizando
 o FireBug, se você estiver usando o Chrome, aperte a tecla `F12` para abrir o plugin equivalente.
    
-{% highlight javascript linenos %}
+{% highlight javascript linenos %} 
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "foo.txt", true);
 xhr.send();
@@ -78,7 +78,7 @@ Lendo arquivos XML
 O mesmo exemplo poderá ser utilizado para ler um arquivo __XML__. Crie um arquivo denominado `arquivo.xml` e insira o
 seguinte conteúdo.
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <receita nome="pão" tempo_de_preparo="5 minutos" tempo_de_cozimento="1 hora">
   <titulo>Pão simples</titulo>
@@ -94,12 +94,12 @@ seguinte conteúdo.
     <passo>Misture novamente, coloque numa bandeja e asse num forno.</passo>
   </instrucoes>
 </receita>
-{% endhighlight %}
+```
 
 O código abaixo fará uma requisição __Ajax__ para ler o conteúdo de um arquivo __XML__. Repare que o valor da propriedade
 `responseType` é `document` e não `xml`.
 
-{% highlight javascript linenos %}
+{% highlight javascript linenos %} 
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "arquivo.xml", true);
 xhr.send();
@@ -119,7 +119,7 @@ devemos utilizar a função `setRequestHeader()` para setar o cabeçalho da resp
 
 Passamos os dados (campos e valores) como parâmetro para a função `send()`.
 
-{% highlight javascript %}
+```javascript
 var xhr = new XMLHttpRequest();
 xhr.open("POST", "script.php", true);
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
@@ -128,14 +128,14 @@ xhr.responseType = "text";
 xhr.onload = function(){
   console.log(this.response);
 }
-{% endhighlight %}
+```
 
 O arquivo `script.php` deve ser como abaixo.
 
-{% highlight php %}
+```php
 <?php
 var_dump($_POST);
-{% endhighlight %}
+```
 
 
 
@@ -145,7 +145,7 @@ GET
 A requisição __GET__ não precisa do método `setRequestHeader()` mas é sempre uma boa pratica utilizá-lo. Para passar os
 dados (campos e valores) devemos concatenar a string junto com o segundo parâmetro do método `open()`.
 
-{% highlight javascript %}
+```javascript
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "script.php?campo1=dado1&campo2=dado2&campo3=dado3", true);
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
@@ -154,14 +154,14 @@ xhr.responseType = "text";
 xhr.onload = function(){
   console.log(this.response);
 }
-{% endhighlight %}
+```
 
 O arquivo `script.php` deve ser como abaixo.
 
-{% highlight php %}
+```php
 <?php
 var_dump($_GET);
-{% endhighlight %}
+```
 
 
 <hr>

@@ -28,11 +28,11 @@ Na verdade essa é a forma mais rudimentar de depuração, porém é bastante ef
 
 Em PHP, podemos simplesmente pedir para o script mostrar o valor de determinada variável.
 
-{% highlight php %}
+```php
 <?php
 $minha_var = "qualquer coisa";
 echo $minha_var;
-{% endhighlight %}
+```
 
 
 O `echo` mostrará apenas o valor da variável e não mostrará outras informações como, por exemplo, o tipo de dado.
@@ -48,15 +48,15 @@ Para contornar isso, o php conta com a função `var_dump()`.
 
 Devemos pasar como parâmetro a variável a ser analisada.
 
-{% highlight php %}
+```php
 <?php
 $minha_var = "qualquer coisa";
 var_dump($minha_var);
-{% endhighlight %}
+```
 
 Dependendo do seu objetivo, devemos interromper o script, para isso usamos a função `die()`;
 
-{% highlight php %}
+```php
 <?php
 $minha_var = "qualquer coisa";
 var_dump($minha_var);
@@ -65,7 +65,7 @@ die();
 ...mais códigos
 ...mais códigos
 ...mais códigos
-{% endhighlight %}
+```
 
 A imagem abaixo mostra o resultado do `var_dump()`:
 
@@ -114,13 +114,13 @@ Por essa razão, considero ser uma saída paliativa. Ótima opara quando não po
 
 Normalmente o ambiente de produção não possui o x-debug instalado, então lanço mão do seguinte código:
 
-{% highlight php %}
+```php
 <?php
 $minha_var = "qualquer coisa";
 echo "<pre>";
 print_r($minha_var);
 echo "</pre>";
-{% endhighlight %}
+```
 
 
 O código acima utiliza a função `print_r()` junto com as tag HTML `<pre></pre>`. O resultado exibe os dados na forma em

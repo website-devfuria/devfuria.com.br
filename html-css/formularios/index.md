@@ -10,13 +10,13 @@ Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
 
 Abaixo, temos um exemplo de formulário.
 
-{% highlight html %}
+```html
 <form action="script-para-onde-envio-os-dados.php" method="post">
     <p>Name:  <input type="text" name="username" value="João da Silva" /></p>
     <p>Email: <input type="text" name="email"  value="joao@dasilva.com" /></p>
     <p><input type="submit" value="Submit me!" /></p>
 </form>
-{% endhighlight %}
+```
 
 Leia uma [Introdução aos formulários web](/html-css/formularios/intro-formularios-web/).
 
@@ -29,13 +29,17 @@ Controles básicos (input)
 
 A tag `input` compõem a maioria dos controles básicos.
 
-{% highlight html %}<input type="" name=""/>{% endhighlight %}
+```html
+<input type="" name=""/>
+```
 
 A propriedade `name` será associada ao valor do campo.
 
 Se o propriedade `name` for, por exemplo, "idade" e o valor digitado pelo usuário for `36` os dados para o servidor serão:
 
-{% highlight html %}idade=36{% endhighlight %}
+```html
+idade=36
+```
 
 Alterando-se a propriedade `type` podemos obter os seguintes controles:
 

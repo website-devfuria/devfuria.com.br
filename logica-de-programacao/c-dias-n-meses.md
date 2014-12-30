@@ -41,7 +41,7 @@ Rode o teste (compile e execute). Se passarem, nosso trabalhou acabou.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -60,7 +60,7 @@ int main (){
 
     return 0;
 }
-{% endhighlight %}
+```
 
 
 

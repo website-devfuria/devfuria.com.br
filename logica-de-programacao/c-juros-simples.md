@@ -47,7 +47,7 @@ Rode os testes (compile e execute).
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -65,4 +65,4 @@ int main (){
 	assert(2560 == juros);
 	return 0;
 }
-{% endhighlight %}
+```

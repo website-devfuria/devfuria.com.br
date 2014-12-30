@@ -4,7 +4,7 @@ title:       Validando o HTML
 description: 
 ---
 
-{% highlight html %}
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
@@ -16,7 +16,7 @@ description:
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 O HTML acima é um __XHTML__ válido porque ele atende aos requisitos básicos para poder ser considerado válido.
 
@@ -32,7 +32,7 @@ Por isso se você encontrar arquivos XHTML aqui no site é porque ele tem um fim
 
 Abaixo vemos um __HTML__ 5 também válido.
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -43,5 +43,5 @@ Abaixo vemos um __HTML__ 5 também válido.
 
     </body>
 </html>
-{% endhighlight %}
+```
 

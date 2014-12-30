@@ -15,7 +15,7 @@ Veja a imagem abaixo com um exemplo simples de formulário web com checkboxes.
 
 Agora veja o código HTML:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -38,7 +38,7 @@ Agora veja o código HTML:
         <script type="text/javascript" src="checkboxes-v1.0.js"></script>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Nossos objetivos serão:
 
@@ -49,7 +49,7 @@ formulário com dados de verdade.
 
 O código completo você confere abaixo:
 
-{% highlight javascript %}
+```javascript
 var chkBike = document.getElementById("chkBike");
 var chkCar = document.getElementById("chkCar");
 
@@ -80,7 +80,7 @@ document.getElementById("btnLoad").onclick = function () {
         chkCar.checked = false;
     }
 };
-{% endhighlight %}
+```
 
 Há um elemento estranho aí, veja:
 

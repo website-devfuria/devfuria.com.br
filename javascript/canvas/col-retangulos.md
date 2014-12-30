@@ -68,7 +68,7 @@ Boa leitura!
 Código fonte
 ---
 
-{% highlight javascript %}
+```javascript
 /**
  * Objeto com as coordenadas
  */
@@ -112,4 +112,4 @@ function draw(coor) {
 setInterval(function() {
     draw(coor);
 }, 500);
-{% endhighlight %}
+```

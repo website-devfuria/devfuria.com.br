@@ -14,7 +14,7 @@ Vamos aprender como unir a CSS ao documento HTML.
 
 CSS in line o método mais simples, declaramos a regra com o emprego do atributo `style` do HTML, exemplo:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -35,7 +35,7 @@ CSS in line o método mais simples, declaramos a regra com o emprego do atributo
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 O leitor atento notou que tivemos que repetir a regra em cada parágrafo. Essa forma além de repetir código, não ajuda na
  legibilidade e NÂO permite o controle centralizado da CSS. Programadores e designs, no geral, evitam a CSS inline. Ainda
@@ -47,7 +47,7 @@ O leitor atento notou que tivemos que repetir a regra em cada parágrafo. Essa f
 
 Coloca-se as regras de CSS entre a tag style na seção head do HTML, veja o exemplo:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -74,7 +74,7 @@ Coloca-se as regras de CSS entre a tag style na seção head do HTML, veja o exe
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 Já é bem melhor que o método anterior: já é possível localizar a CSS com mais facilidade no documento.
 
@@ -88,7 +88,7 @@ Coloca-se as regras de CSS em um arquivo separado do HTML, normalmente a extens�
 
 A "cola" é realizada através da tag `link`, veja código de exemplo:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -110,17 +110,17 @@ A "cola" é realizada através da tag `link`, veja código de exemplo:
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 Eis o arquivo que compõem a folha de estilo `estilos.css`.
 
-{% highlight css %}
+```css
 /* Folha de estilo: estilos.css */
 p {
     font-size: 12px;
     color: green;
 }
-{% endhighlight %}
+```
 
 
 Agora sim temos um método profissional. Toda CSS fica em arquivo separado que é incluso no HTML através de uma única linha.

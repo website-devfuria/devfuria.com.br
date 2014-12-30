@@ -4,8 +4,8 @@ title:  Exemplo simples de herança
 ---
 
 
-{% highlight javascript %}
-{% endhighlight %}function Lutador(){
+```javascript
+```function Lutador(){
 this.attackPlayer = function(){
 return true;
 }

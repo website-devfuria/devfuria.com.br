@@ -100,7 +100,7 @@ Fim da linha, transformamos uma suposição em afirmação.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -119,4 +119,4 @@ int main() {
     return 0;
     
 }
-{% endhighlight %}
+```

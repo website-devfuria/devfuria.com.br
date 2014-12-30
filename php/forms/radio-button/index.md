@@ -13,7 +13,7 @@ Abaixo vemos o formulário web no qual trabalharemos.
 
 Crie o arquivo `form.php` com o conteúdo abaixo:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -34,7 +34,7 @@ Crie o arquivo `form.php` com o conteúdo abaixo:
         <script type="text/javascript" src="radios.js"></script>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Repare que a propriedade `name` é idêntica para os três inputs.
 
@@ -55,17 +55,17 @@ O __radio__, igualmente como o controle checkbox, não envia nada quando o contr
 Ele poderia enviar o __par/valor__ sem o valor, exemplo: `$_POST['bandRock'] = ""`, mas como não é isso o que acontece
 precisaremos testar os dados com `isset()`;
 
-{% highlight php %}
+```php
 if (isset($_POST['band-rock'])) {
     var_dump("escolheu " . $_POST['band-rock']);
 } else {
     var_dump("não escolheu nenhuma banda de rock");
 }
-{% endhighlight %}
+```
 
 Encurtando o código, o arquivo `form-action.php` deve ser:
 
-{% highlight php %}
+```php
 <?php
 
 $_POST['band-rock'] = ( isset($_POST['band-rock']) ) ? $_POST['band-rock'] : null;
@@ -75,7 +75,7 @@ var_dump($_POST);
 
 # Apartir deste ponto, entra em cena a lógica de seu programa.
 # Em outras palavras, é o que faremos com os dados recebidos.
-{% endhighlight %}
+```
 
 
 
@@ -91,7 +91,7 @@ A minha estratégia é perguntar para a variável `$bandRock` se o valor que ela
 
 Altere o arquivo `form.php` conforme o conteúdo abaixo:
 
-{% highlight php %}
+```php
 <?php
 /**
  * Aqui teríamos algum código para
@@ -139,7 +139,7 @@ $bandRock = "pink-floyd";
         </form>
     </body>
 </html>
-{% endhighlight %}
+```
 
 A linha estava comprida e dificultava a leitura do código, então eu formatei o HTML de um jeito "maroto" só para o 
 código ficar mais legível, mas __não tome isso como um estilo__, ok? 

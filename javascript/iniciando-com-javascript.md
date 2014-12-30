@@ -66,7 +66,7 @@ Organizando o raciocínio, temos:
 
 O ideal é escrevermos o código JavaScript em um arquivo texto com extensão `.js` e incluí-lo no arquivo HTML dessa forma:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -78,7 +78,7 @@ O ideal é escrevermos o código JavaScript em um arquivo texto com extensão `.
         ...
     </body>
 </html>
-{% endhighlight %}
+```
 
 As abordagem acima sofre de um pequeno inconveniente: a ordem em que o arquivo é lido e executado pelo browser. Os 
 navegadores executam arquivos JavaScript assim que o código é baixado e depois continua a reenderizar o HTML restante. 
@@ -90,7 +90,7 @@ final do HTML !!!, pronto resolvido. Isso garante que seu JavaScript será execu
 vejamos como ficou nosso HTML:
 
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -102,7 +102,7 @@ vejamos como ficou nosso HTML:
     <script type="text/javascript" src="codigo.js"></script>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Colocamos o código JavaScript no final do HTML.
 

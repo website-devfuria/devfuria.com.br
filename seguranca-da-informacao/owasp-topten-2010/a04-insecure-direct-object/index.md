@@ -45,7 +45,7 @@ simplificação do entendimento. A linha 02 recebe os dados, no caso a chave de 
 6 montam executam a instrução SQL. Repare que mesmo a aplicação estando protegida contra Injeção (vide A1- Injeção)
 ele não está, necessariamente, protegida contra Referências Inseguras Diretas a Objetos.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 $idCliente = $_POST['idCliente'];
 
@@ -60,7 +60,7 @@ Outro exemplo de aplicação vulnerável é ilustrado pelo formulário do códig
 `get` o valor do controle HTML do tipo "select" denominado idioma. O script PHP responsável por trocar o idioma faz acesso
 direto ao objeto tornando, dessa forma, o código vulnerável.
 
-{% highlight html %}
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
@@ -81,13 +81,13 @@ direto ao objeto tornando, dessa forma, o código vulnerável.
       </form>
   </body>
 </html>
-{% endhighlight %}
+```
 
 
 O atacante poderia alterar o parâmetro para, por exemplo, `/etc/passwd` e assim obter acesso ao arquivo de usuários do
 sistema operacional Linux, conforme ilustra o código abaixo.
 
-{% highlight php %}
+```php
 <?php
 
 require $_REQUEST['idioma'];
@@ -96,7 +96,7 @@ require $_REQUEST['idioma'];
 
 ?>
 
-{% endhighlight %}
+```
 
 
 
@@ -124,7 +124,7 @@ O código 4.1 corrigido deve apresentar-se como o código abaixo. A principal al
 a instrução SQL, na clausula `WHERE` além de filtrar por cliente a instrução filtra por usuário, ou seja, apenas o 
 usuário previsto para aquele registro poderá realmente acessá-lo.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 $idCliente = $_POST['idCliente'];
 $idUsuario = $usuario->getId();
@@ -143,7 +143,7 @@ inicializa a variável `$idioma_seguro`. A Linha 7 utiliza-se expressão regular
 o parâmetro recebido. A linha 8 checa o parâmetro recebido com o "mapa" construído na linha 2 e em caso positivo 
 concatena o valor de `$idioma_suspeito` com a string `".php"`(linha 9). A linha 11 executa o código normalmente.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 $array_idiomas   = array("en", "pt");
 

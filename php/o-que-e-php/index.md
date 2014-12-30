@@ -61,7 +61,7 @@ Exemplos
 
 Podemos alterar o título e conteúdo de uma página conforme o valor nossas variáveis.
 
-{% highlight php %}
+```php
 <?php
 /**
  * Este arquivo parece ser um HTML mas na verdade é um script php
@@ -76,25 +76,25 @@ Podemos alterar o título e conteúdo de uma página conforme o valor nossas var
         <?php echo $content?>
     </body>
 </html>
-{% endhighlight %}
+```
 
 No exemplo acima, você deve estar se perguntando "de onde vem as variáveis `$title` e `$content`?".
 
 Obviamente, elas devem ser "preparadas" antes do código HTML. Um script anterior pode fazer isso: 
 
-{% highlight php %}
+```php
 <?php
 $title   = "Um título qualquer";
 $content = "o conteúdo de nossa página HTML";
 
 require "nossa-view.php";
-{% endhighlight %}
+```
 
 Outro exemplo seria o carregamento de um [formulário web](/html-css/formularios-web) com valores vindos do banco de dados,
 veja o código:
 
 
-{% highlight php %}
+```php
 <?php
 /**
  * Aqui teríamos algum código para
@@ -146,13 +146,13 @@ $text   = "algum texto";
         </form>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Abaixo temos um exemplo mais sofisticado! 
 
 Estamos nos conectando com o banco de dados através da classe `PDO` e iteramos os resultados através do `foreach`:
 
-{% highlight php %}
+```php
 <?php
 
 // Dados de conexão
@@ -186,4 +186,4 @@ $query = "SELECT * FROM sua-tabela";
         <?php endforeach;?>
     </body>
 </html>
-{% endhighlight %}
+```

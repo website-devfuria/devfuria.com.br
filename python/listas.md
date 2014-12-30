@@ -7,26 +7,28 @@ menu:        python-artigos
 
 Abaixo temos um exemplo de uma lista:
 
-{% highlight python %}
+```python
 animals = ["pangolin", "cassowary", "sloth", "dog"];
 animals[0]   # 'pangolin'
 animals[1]   # 'cassowary'
 animals[2]   # 'sloth'
 animals[3]   # 'dog'
-{% endhighlight %}
+```
 
 Contamos o índice da lista a partir do zero, veja:
 
-{% highlight python %}
+```python
 +-------------+-------------+-------------+-------------+-------------+
 | "pangolin"  | "cassowary" |   "sloth"   |    "dog"    |lanca um erro|
 +-------------+-------------+-------------+-------------+-------------+
       0              1             2              3            4
-{% endhighlight %}
+```
 
 Ao acessar um índice inexistente recebemos um erro.
 
-{% highlight python %}animals[4]   # IndexError: list index out of range{% endhighlight %}
+```python
+animals[4]   # IndexError: list index out of range
+```
 
 Podemos fatiar (leia-se acessar) um lista de diversas formas, veja a matéria sobre
 [fatiamento de sequencias](../sequencias-fatiamento/ "Python - Sequencias").
@@ -37,7 +39,7 @@ Podemos fatiar (leia-se acessar) um lista de diversas formas, veja a matéria so
 
 Abaixo vemos um exemplo de como percorrer um lista na sua forma mas simples.
 
-{% highlight python %}
+```python
 myList = [1, 2, 3, 4]
 for number in myList:
     print number * 2
@@ -45,12 +47,12 @@ for number in myList:
 # 4
 # 6
 # 8
-{% endhighlight %}
+```
 
 Abaixo incrementamos a implementação com a função interna [enumarate()](https://docs.python.org/3.4/library/functions.html#enumerate "link-externo").
 ela irá numerar a lista.
 
-{% highlight python %}
+```python
 choices = ['pizza', 'pasta', 'salad', 'nachos']
 
 print 'Your choices are:'
@@ -64,12 +66,12 @@ Your choices are:
 2 salad
 3 nachos
 """
-{% endhighlight %}
+```
 
 Abaixo incrementamos o exemplo utilizando a função interna [zip()](https://docs.python.org/3.4/library/functions.html#zip "link-externo"),
 ela casa (agrega) as duas listas.
 
-{% highlight python %}
+```python
 list_a = [6, 7, 8, 9]
 list_b = [1, 2, 3, 4, 5]
 
@@ -81,14 +83,14 @@ for x in zip(list_a, list_b):
 (8, 3)
 (9, 4)
 """
-{% endhighlight %}
+```
 
 
 
 
 ### Juntando listas (join lists)
 
-{% highlight python %}
+```python
 m = [1, 2, 3]
 n = [4, 5, 6]
 o = m + n
@@ -96,7 +98,7 @@ print(o) # [1, 2, 3, 4, 5, 6]
 
 o += [7, 8, 9]
 print(o) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
-{% endhighlight %}
+```
 
 
 
@@ -105,7 +107,7 @@ Funções nativas para listas
 
 ### append()
 
-{% highlight python %}
+```python
 nums = ["um"]
 print(nums) # ['um']
 
@@ -113,82 +115,82 @@ nums.append("dois")
 nums.append("tres")
 nums.append("quatro")
 print(nums) # ['um', 'dois', 'tres', 'quatro']
-{% endhighlight %}
+```
 
 
 ### index()
 
-{% highlight python %}
+```python
 animals = ["ant", "bat", "cat"]
 print animals.index("bat") # 1
-{% endhighlight %}
+```
 
 
 ### insert()
 
-{% highlight python %}
+```python
 animals = ["ant", "bat", "cat"]
 animals.insert(1, "dog")
 print(animals) # ["ant", "dog", "bat", "cat"]
-{% endhighlight %}
+```
 
 
 ### remove()
 
 Remove através do valor
-{% highlight python %}
+```python
 animals = ["ant", "bat", "cat"]
 animals.remove("ant")
 print(animals) # ["bat", "cat"]
-{% endhighlight %}
+```
 
 
 ### pop()
 
 Remove através do índice (retorna o valor removido).
-{% highlight python %}
+```python
 animals = ["ant", "bat", "cat"]
 animals.pop(0)
 # 'ant'
 print(animals) # ["bat", "cat"]
-{% endhighlight %}
+```
 
 Semelhante a utilização de `del()`:
 
-{% highlight python %}
+```python
 animals = ["ant", "bat", "cat"]
 del(animals[0])
 print(animals) # ["bat", "cat"]
-{% endhighlight %}
+```
 
 
 ### sort()
 
-{% highlight python %}
+```python
 lista = ["c", "b", "a"]
 print(lista) # ['c', 'b', 'a']
 
 lista.sort()
 print(lista) # ['a', 'b', 'c']
-{% endhighlight %}
+```
 
 Para ordenar uma lista também é possível utilizar a função interna
 [sorted()](https://docs.python.org/3.4/library/functions.html#sorted "link-externo"), exemplo:
 
-{% highlight python %}
+```python
 sorted([5, 2, 3, 1, 4]) # [1, 2, 3, 4, 5]
-{% endhighlight %}
+```
 
 Uma observação importante é que a função `sort()` não retorna a lista, então...
 
-{% highlight python %}
+```python
 lista = ["c", "b", "a"]
 print(lista.sort()) # None
-{% endhighlight %}
+```
 
 ... já a função `sorted()` retorna a lista:
-{% highlight python %}
+```python
 lista = ["c", "b", "a"]
 print(sorted(lista)) # ['a', 'b', 'c']
-{% endhighlight %}
+```
 

@@ -58,7 +58,7 @@ Após compilar, execute para rodar o teste e ver se está tudo funcionando.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -78,4 +78,4 @@ int main (){
 
     return 0;
 }
-{% endhighlight %}
+```

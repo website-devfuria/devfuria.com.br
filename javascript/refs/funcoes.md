@@ -11,7 +11,7 @@ Uma função pode ser chamada para executar esse código executável e retornar 
 
 Exemplos:
 
-{% highlight javascript %}
+```javascript
 
 // Soma dois números
 function add(x, y) {
@@ -23,7 +23,7 @@ function add(x, y) {
 function add(x, y) {
     return x + y;
 }
-{% endhighlight %}
+```
 
 
 
@@ -65,7 +65,7 @@ checagem de tipo em valores de argumento: qualquer tipo de valor pode ser passad
 
 Veja um exemplo:
 
-{% highlight javascript %}
+```javascript
 // Função que soma um monte de coisas.
 var sum = function (  ) {
     var i, sum = 0;
@@ -76,7 +76,7 @@ var sum = function (  ) {
 };
 
 console.log(sum(4, 8, 15, 16, 23, 42)); // 108
-{% endhighlight %}
+```
 
 
 <hr>

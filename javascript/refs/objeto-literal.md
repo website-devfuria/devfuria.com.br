@@ -12,16 +12,16 @@ utilizar, mais vai amá-la. Essencialmente, as regras de sintaxe são:
 
 - Encapsule o objeto entre chaves `{}`.
 
-{% highlight javascript %}
+```javascript
 var obj = {}
-{% endhighlight %}
+```
 
 - delimite as propriedades e métodos com vírgulas dentro do objeto. Uma vírgula final após o último par nome-valor é
 permitido mas produz erros no IE (sempre o IE), então não faça isso.
 
 - Separe nomes de propriedades e valores  com um sinal de dois-pontos `:`.
 
-{% highlight javascript %}
+```javascript
 var obj = {
     a: "",
     b: "",
@@ -30,17 +30,17 @@ var obj = {
     funcao2: fucntion (){},
     funcao3: fucntion (){}
 }
-{% endhighlight %}
+```
 
 - Ao atribuir o objeto a uma variável, não se esqueça do ponto e vírgula após a chave de fechamento.
 
-{% highlight javascript %}
+```javascript
 var obj = {
     // seu código
     // seu código
     // seu código
 }; 
-{% endhighlight %}
+```
 
 
 <hr>

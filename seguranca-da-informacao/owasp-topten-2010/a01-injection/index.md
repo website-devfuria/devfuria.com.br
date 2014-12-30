@@ -41,7 +41,7 @@ Como exemplo de aplicação vamos considerar o formulário de login apresentado 
 
 ![Figura 03 – Exemplo de formulário web. Tela de login](form-login.png "Figura 03 – Exemplo de formulário web. Tela de login")
 
-{% highlight html %}
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
@@ -58,13 +58,13 @@ Como exemplo de aplicação vamos considerar o formulário de login apresentado 
       </form>
   </body>
 </html>
-{% endhighlight %}
+```
 
 O código que interage com o formulário deve receber os dados vindo do formulário, conectar-se com o banco 
 de dados, montar a declaração SQL, enviá-la para o banco de dados (o interpretador) e checar se houve êxito na execução
 da declaração.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 $login  = $_POST['login'];
 $senha  = $_POST['senha'];
@@ -111,7 +111,7 @@ em seu lugar estão apenas as referências ":login" e ":senha". A função princ
 parâmetro para o nome da variável especificada" (Manual Oficial do PHP, 2011) é ela quem faz todo o trabalho de 
 sanitização. A linha 20 executa o comando e, entre as linhas 22 e 25, é checado o resultado da consulta.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 $dsn        = 'mysql:dbname=teste;host=localhost';
 $user       = 'desenvolvedor';
@@ -154,7 +154,7 @@ o comando SQL que faz "chamada" para a SP e o índice 1 recupera o valor retorna
 do índice o(zero). A linha 16 executa o comando SQL de índice 1 e guarda o seu resultado na variável `$res`. A linha 17
 apenas transforma o resultado da consulta em um objeto. Entre as linhas 20 e 24 checamos o resultado da consulta.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 $mysqli = new mysqli("localhost", "desenvolvedor", "12345678", "teste");
 if (mysqli_connect_errno()) {
@@ -185,7 +185,7 @@ $mysqli->close();
 
 A stored procedure utilizada é ilustrada pelo código abaixo.
 
-{% highlight sql %}
+```sql
 CREATE PROCEDURE testarLogin(
     OUT quant INT,
     IN param1 VARCHAR(200),
@@ -194,7 +194,7 @@ CREATE PROCEDURE testarLogin(
 BEGIN
     SELECT COUNT(*) INTO quant FROM usuarios WHERE login = param1 AND senha = param2;
 END #
-{% endhighlight %}
+```
 
 A terceira e última forma, codificação de saída de caractere, também conhecida como "escapar caractere", é utilizar 
 determinada função com o objetivo de codificar a saída de caracteres indesejados, no caso `'`(aspa simples), `''`
@@ -203,7 +203,7 @@ e também podem ser aplicadas diferentes abordagens para codificação de saída
 função nativa do SGBD Mysql `mysql_real_escape_string()` seja utilizada para codificação de caracteres. O uso dessa 
 função é implementada no código abaixo.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 $link = mysql_connect('localhost', 'desenvolvedor', '12345678');
 mysql_select_db("teste");

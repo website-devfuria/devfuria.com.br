@@ -10,7 +10,7 @@ Função em JavaScript que gera um número aleatório inteiro entre 2 números q
 Veja o código no [GitHub](https://github.com/devfuria/javascript-exemplos/tree/master/aleatorio "link-externo").
 
 
-{% highlight javascript %}
+```javascript
 /**
  * Retorna um número inteiro aleatório entre max e min
  * incluindo max e min.
@@ -20,18 +20,18 @@ Veja o código no [GitHub](https://github.com/devfuria/javascript-exemplos/tree/
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-{% endhighlight %}
+```
 
 
 Exemplos:
 
-{% highlight javascript %}
+```javascript
 console.log(  getRandomInt(0, 3)  );  // retornará 0, 1, 2 e 3.
-{% endhighlight %}
+```
 
-{% highlight javascript %}
+```javascript
 console.log(  getRandomInt(5, 10)  ); // retornará 5, 6, 7, 8, 9 e 10
-{% endhighlight %}
+```
 
 
 <hr>

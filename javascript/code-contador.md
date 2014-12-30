@@ -14,12 +14,12 @@ executada em um intervalo de `n` milesegundos. A cada iteração a função de c
 como se fosse um __função recursiva__. A função `setInterval` retorna um identificar que nos é muito útil quando queremos
 para a animação, para tal utilizamos a função `clearInterval(identificador)`, exemplo:
 
-{% highlight javascript %}
+```javascript
 // iniciar a animação
 var identificador = setInterval(callback, 1000);
 // parar a animação
 clearInterval(identificador);
-{% endhighlight %}
+```
 
 É o que estamos fazendo com a variável `id`.
 
@@ -54,14 +54,14 @@ continua sendo válido (`true`). Precisamos atribuir `null` explicitamente para 
 
 Você deve ter reparado na [estrutura if](/javascript/refs/if-else/) do botão "Start count!"...
 
-{% highlight javascript %}
+```javascript
 if(!id) {
   // A mágica...
     ...
     ...
     ...
 }
-{% endhighlight %}
+```
 
 ...ele evita que a animação seja novamente inicializada uma vez que ela já esteja rodando.
 

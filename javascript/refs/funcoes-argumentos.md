@@ -12,7 +12,7 @@ atribuído a nenhum parâmetro nomeado. Isso torna possível escrever funções 
 
 Veja um exemplo:
 
-{% highlight javascript %}
+```javascript
 /*
  * Cria um função que soma um monte de coisas.
  */
@@ -25,11 +25,11 @@ function sum() {
 };
 
 console.log( sum(4, 8, 15, 16, 23, 42) ); // 108
-{% endhighlight %}
+```
 
 Veja outro exemplo:
 
-{% highlight javascript %}
+```javascript
 /**
  * Retorna o maior dos argumentos passados
  */
@@ -43,7 +43,7 @@ function findMax() {
     return max;
 }
 console.log( findMax(4, 8, 15, 16, 23, 42) ); // 42
-{% endhighlight %}
+```
 
 
 

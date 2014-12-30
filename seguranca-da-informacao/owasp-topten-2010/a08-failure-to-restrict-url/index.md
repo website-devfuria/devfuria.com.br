@@ -57,7 +57,7 @@ o valor referente ao templete padrão `blue.php`. A linha 03 e 04 recebe os dado
 acessível ao usuário e que pode ser manipulado pelo atacante. A linha 05 expressa a vulnerabilidade, ela concatena o 
 valor do parâmetro (malicioso) e busca o arquivo no disco rígido.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 
 $template = 'blue.php';
@@ -116,7 +116,7 @@ papéis são associados aos usuários e podem, inclusive, ser utilizados para um
 usuário antes que qualquer processamento ocorra. Para pulverizar o mecanismo de controle o mesmo deve ser de fácil 
 implementação. O código abaixo demonstra um exemplo de implementação.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 try{
     $ESAPI->accessController()->assertAuthorized("businessFunction", runtimeData);
@@ -160,12 +160,12 @@ abordagem "accept know good" . Arquivos com extensões `.xml`, `.ini`, `.txt`,  
 executados diretamente. Essa proteção se faz através da utilização do arquivo `.htaccess`. O código abaixo exemplifica
 uma restrição aos tipos de arquivos citados.
 
-{% highlight PowerShell %}
+```PowerShell
 # www/.htaccess
 ReswriteEngine On
 # RewriteBase/
 RewriteRule !\,(js|ico|txt|gif|jpg|png|css)$index.php
-{% endhighlight %}
+```
 
 * Manter o antivírus atualizado e as correções de segurança principalmente para os componentes que manipulam arquivos 
 fornecidos por usuários.

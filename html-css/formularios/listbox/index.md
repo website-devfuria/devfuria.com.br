@@ -8,14 +8,14 @@ menu:        html-forms
 As __list box__ são as [combobox](../combobox/) de multipla escolha, para isso adicionamos a propriedade
 `multiple`.
 
-{% highlight html %}
+```html
 <select multiple>
     <option>Arts</option>
     <option>Politics</option>
     <option>Science</option>
     <option>Computers and internet</option>
 </select>
-{% endhighlight %}
+```
 
 Tudo que foi dito para a combobox é válido para a __listbox__, na verdade é o mesmo controle,
 só mudamos uma propriedade. 
@@ -24,13 +24,13 @@ só mudamos uma propriedade.
 
 Se você quiser separar o conteúdo por grupo, poderá utilizar a tag `optgroup` como o exemplo abaixo.
 
-{% highlight html %}
+```html
 <optgroup label="Option group 1">
     <option>Sub option 1</option>
     <option>Sub option 2</option>
     <option>Sub option 3</option>
 </optgroup>
-{% endhighlight %}
+```
 
 Veja o resultado:
 

@@ -12,11 +12,11 @@ Um elemento que pode ajudar a adicionar estrutura a um documento é um elemento 
 equivocadamente que um elemento `div` não tem nenhum significado semântico. Mas, na verdade, significa __divisão__ e
 fornece uma maneira de dividir um documento em áreas sigficativas.
 
-{% highlight html %}
+```html
 <div>
 
 </div>
-{% endhighlight %}
+```
 
 Embora divs posssam ser utilizados para agrupar elementos no nível de bloco, spans podem ser utilizados para agrupar ou
 identificar elementos inline.
@@ -26,9 +26,9 @@ Para entender melhor essa questão dos elementos de bloco ou inline leia a maté
 
 A tag `span` acomoda pequenos trechos de texto.
 
-{% highlight html %}
+```html
 <span>um pequeno texto</span>
-{% endhighlight %}
+```
 
 
 Apesar de, aparentemente, não fazerem nada, ambas as tag's são muito utilizadas. 

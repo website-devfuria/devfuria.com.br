@@ -8,9 +8,9 @@ menu:        html-forms
 
 As checkboxe's são como uma escolha booleana: true ou false, sim ou não.
 
-{% highlight html %}
+```html
 <input type="checkbox" name="company" />
-{% endhighlight %}
+```
 
 Normalmente vem em grupo, como a imagem abaixo.
 
@@ -28,15 +28,15 @@ Como as checkboxes funcionam?
 
 Para dizer qual a checkbox foi ticada (selecionada), usamos a propriedade `checked`.
 
-{% highlight html %}
+```html
 <input type="checkbox" name="company" checked/>
-{% endhighlight %}
+```
 
 Mas a especificação diz que é para ser usado dessa forma:
 
-{% highlight html %}
+```html
 <input type="checkbox" name="company" checked="checked"/>
-{% endhighlight %}
+```
 
 De qualquer forma, o navegador entenderá que a __checkbox__ deve ser assinalada. Uma coisa importante de se dizer é que
 a propriedade `value` é inútil. Explico, se o controle for clicado, o valor que é enviado para o servidor é `value=on`
@@ -57,14 +57,14 @@ Uma forma simples de deixar a __label__ alinhado com a __checkbox__ é configura
 no meio e ajustar a altura com a propriedade `top`. Para `top` funcionar, o elemento precisa estar posicionado 
 relativamente.
 
-{% highlight css %}
+```css
 input {
   margin:0 12px 0 0;
   vertical-align: middle;
   position: relative;
   top: -1px;
 }
-{% endhighlight %}
+```
 
 <div data-height="178" data-theme-id="2897" data-slug-hash="myVadR" data-default-tab="null" data-user="flaviomicheletti" class='codepen'><pre><code></code></pre>
 <p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/myVadR/'>Aligning Checkbox with label </a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>

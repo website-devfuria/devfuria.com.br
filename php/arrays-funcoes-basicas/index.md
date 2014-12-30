@@ -70,12 +70,12 @@ Fonte: [Manual do PHP - count](http://www.php.net/manual/pt_BR/function.count.ph
 
 Transforma string em array.
 
-{% highlight php %}
+```php
 <?php
 $arr = array();
 $arr = explode("/", "20/01/2001");
 var_dump($arr);
-{% endhighlight %}
+```
 
 Resultado:
 
@@ -90,12 +90,12 @@ Fonte: [Manual do PHP - explode](http://www.php.net/manual/pt_BR/function.explod
 Tansforma array em string.
 
 
-{% highlight php %}
+```php
 <?php
 $arr = array("Flavio", "Alexandre", "Micheletti");
 $nomeCompleto = implode("-", $arr);
 var_dump($nomeCompleto)
-{% endhighlight %}
+```
 
 Resultado:
 

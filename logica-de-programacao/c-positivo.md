@@ -86,7 +86,7 @@ Compile e execute. Tudo certo?
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -108,7 +108,7 @@ int main (){
 
     return 0;
 }
-{% endhighlight %}
+```
 
 
 Repare como o teste nos ajuda representando a documentação do sistema.

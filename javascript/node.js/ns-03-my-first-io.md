@@ -48,13 +48,13 @@ usar esse método você vai acabar tendo um __array__ com um elemento a mais do 
 Solução
 ---
 
-{% highlight javascript %}
+```javascript
 var fs = require('fs')
 
 var contents = fs.readFileSync(process.argv[2])
 var lines = contents.toString().split('\n').length - 1
 console.log(lines)
-{% endhighlight %}
+```
 
 
 

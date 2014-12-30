@@ -10,11 +10,11 @@ Sabe aquelas textbox grandonas? São as textbox de várias linhas ou __textbox m
 
 Em HTML usamos a tag `textarea` para criar o controle.
 
-{% highlight html %}
+```html
 <textarea>
 ...
 </textarea>
-{% endhighlight %}
+```
 
 ![Ilustração de um campo text area](textarea.jpg "Ilustração de um campo text area")
 

@@ -14,37 +14,37 @@ outra linguagem e que definimos ele através das chaves `{ }`.
 
 Objeto vazio (e solto):
 
-{% highlight javascript %}
+```javascript
 {}
-{% endhighlight %}
+```
 
 Objeto vazio atribuído a uma variável qualquer:
 
-{% highlight javascript %}
+```javascript
 var foo = {};
-{% endhighlight %}
+```
 
 Objeto com algumas propriedades:
 
 
-{% highlight javascript %}
+```javascript
 var personagem = {
     nome: "Zé Colméia",
     peso: "gordinho",
     tipo: "bicho"
 };
-{% endhighlight %}
+```
 
 Agora podemos referenciar as propriedades:
 
-{% highlight javascript %}
+```javascript
 console.log(personagem.nome);
 // saída: "Zé Colméia"
-{% endhighlight %}
+```
 
 Acrescentando um método:
 
-{% highlight javascript %}
+```javascript
 var personagem = {
     nome: "Zé Colméia",
     peso: "gordinho",
@@ -53,17 +53,17 @@ var personagem = {
         // código para chamar o colega Catatau
     }
 };
-{% endhighlight %}
+```
 
 Executando esse método:
 
-{% highlight javascript %}
+```javascript
 personagem.chamarCatatau();
-{% endhighlight %}
+```
 
 Preciso que você faça um esforço mental para entender e decorar o seguinte esquema:
 
-{% highlight javascript %}
+```javascript
 var objeto = {
     propriedade: "podemos iniciar a variável com algum valor",
     metodo: function() {
@@ -78,7 +78,7 @@ var objeto = {
     }
 };
 
-{% endhighlight %}
+```
 
 Repare que tanto as propriedades quanto os métodos:
 
@@ -112,7 +112,7 @@ Abaixo temos o esqueleto de um objeto em JS (repare que trocamos o termo classe 
 
 As propriedades e métodos são separados pela vírgula:
 
-{% highlight javascript %}
+```javascript
     var objeto = {
         a: 0,
         b: 0,
@@ -121,12 +121,12 @@ As propriedades e métodos são separados pela vírgula:
 
         }
     }
-{% endhighlight %}
+```
 
 Dentro dos métodos, as variáveis, ou melhor, as propriedades são referenciadas pela palavra chave `this`:
 
 
-{% highlight javascript %}
+```javascript
     var objeto = {
         a: 0,
         b: 0,
@@ -137,12 +137,12 @@ Dentro dos métodos, as variáveis, ou melhor, as propriedades são referenciada
             console.log( this.c );
         }
     }
-{% endhighlight %}
+```
 
 
 O código abaixo representa um triângulo e possui apenas um método: `validarForma()`.
 
-{% highlight javascript %}
+```javascript
 var Triangulo = {
     a: 0,
     b: 0,
@@ -159,7 +159,7 @@ var Triangulo = {
         }
     }
 };
-{% endhighlight %}
+```
 
 
 

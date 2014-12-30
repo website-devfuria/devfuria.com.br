@@ -9,7 +9,7 @@ Faça um programa para somar os dígitos de um inteiro
 Sem utilizar recursos de string, ou seja, trabalhe apenas com tipos numéricos.
 
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -28,4 +28,4 @@ void main() {
     assert(6 == somarDigitos(2013));
     assert(15 == somarDigitos(456));
 }
-{% endhighlight %}
+```

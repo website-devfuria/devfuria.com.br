@@ -31,7 +31,7 @@ Agora implemente até que o teste passe.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -50,7 +50,7 @@ int main() {
     assert(7 == contaChar(ola));
     return 0;
 }
-{% endhighlight %}
+```
 
 
 Desafio

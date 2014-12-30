@@ -54,7 +54,7 @@ Meus testes passram, espero que o seus também.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -77,4 +77,4 @@ int main (){
     assert(0 == ehMaiorQue10(9));
     return 0;
 }
-{% endhighlight %}        
+```        

@@ -84,7 +84,7 @@ Mas nada no impede de inserirmos um outro teste, de forma a não restar dúvidas
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -100,7 +100,7 @@ int main (){
 	assert(12 == dobro(6));
 	return 0;
 }
-{% endhighlight %}
+```
 
 
 

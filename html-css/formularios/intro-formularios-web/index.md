@@ -10,7 +10,7 @@ Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
 
 Abaixo, temos um exemplo de formulário.
 
-{% highlight html %}
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" >
@@ -31,7 +31,7 @@ Abaixo, temos um exemplo de formulário.
         </form>
     </body>
 </html>
-{% endhighlight %}
+```
 
 
 
@@ -44,11 +44,11 @@ do script criado pelo programador.
 
 A tag `form` é o início do formulário.
 
-{% highlight html %}
+```html
 <form>
 
 </form>
-{% endhighlight %}
+```
 
 Dentro das tags `form` colocamos os controles (inputs), labels e alguns botões.
 
@@ -99,12 +99,12 @@ A Primeira coisa a ser comentado é que cada controle está acompanhado do eleme
 adicionar estrutura e aumentar a acessibilidade aos formulários web. Em muitos navegadores, clicar no elemento label 
 fará com que o elemento do formulário ganhe o foco, veja o exemplo:
 
-{% highlight html %}
+```html
 <p>
   <label for="author">Name: </label>
   <input name="author" id="author" type="text" />
 </p>
-{% endhighlight %}
+```
 
 Posicionar os __labels__ de modo que eles apareçam verticalmente acima dos elementos do formulário é realmente muito simples.
 __Labels__ são [elementos inline](html-css/elementos-inline-block-level/) por padrão. Entretanto, configurar sua propriedade
@@ -113,14 +113,14 @@ para a linha de baixo. A largura das caixas de entrada de texto varia entre dife
 consistência, você deve configurar explicitamente a largura das suas caixas de texto. Nesse exemplo, __pixels__ são usados,
 mas, naturalmente, você poderia utilizar __ems__ para criar um layout de formulário mais auto-ajustável.
 
-{% highlight css %}
+```css
 label {
     display: block;
 }
 input {
     width: 300px;
 }
-{% endhighlight %}
+```
 
  
 
@@ -129,12 +129,12 @@ input {
 
 Alterando a regra de estilização das __labels__ como abaixo...
 
-{% highlight css %}
+```css
 label {
   float: left;
   width: 10em;
 }
-{% endhighlight %}
+```
 
 ...teremos um arranjo diferente, veja:
 
@@ -145,11 +145,11 @@ label {
 Essa é a diferença mais significante entre este e o exemplo anterior, porém eu acrescentei estilização extra para posicionar o botão
 à direita:
 
-{% highlight css %}
+```css
 p.botoes {
   text-align: right;
 }
 #btnSubmit {
   width: 100px;
 }
-{% endhighlight %}
+```

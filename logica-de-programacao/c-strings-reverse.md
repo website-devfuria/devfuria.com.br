@@ -32,7 +32,7 @@ Agora, implemente até que o teste passe.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include<stdio.h>
 #include<string.h>
 #include<assert.h>
@@ -56,4 +56,4 @@ int main() {
     assert(strcmp("animal", str) == 0);
     return (0);
 }
-{% endhighlight %}
+```

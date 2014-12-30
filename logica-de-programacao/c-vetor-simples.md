@@ -26,7 +26,7 @@ A solução vem naturalmente.
 Código completo
 ---
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -45,7 +45,7 @@ int main() {
     assert(5 == vetor[4]);
     return 0;
 }
-{% endhighlight %}
+```
 
 Se achou esse exercício sem graça, espere para ver os desafios!
 

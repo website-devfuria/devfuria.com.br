@@ -37,7 +37,7 @@ corrente da vítima que está logada no sistema) o valor da variável `montante`
 ação. Note que o formulário utiliza-se do método get o que facilita a exploração do CSRF e, note também a ausência de 
 um identificador único e imprevisível.
 
-{% highlight html %}
+```html
 <form action="transferirFundos.php" method="GET" name="frm">
     <label for="montante">Digite o valor que deseja transferir:</label>
     <input type="text" name="montante" id="montante"/>
@@ -47,7 +47,7 @@ um identificador único e imprevisível.
     
     <input type="submit" value="Efetuar operação" />
 </form>
-{% endhighlight %}
+```
 
 
 O código seguinte é responsável por receber os dados vindo do formulário e por efetuar a operação de transação entre as
@@ -58,7 +58,7 @@ variável foi inicializada retornando `true` em caso positivo e `false` em caso 
 da função `isset()` for `true` o código que efetua a transação é executado. As linhas 3 e 4 são hipotéticas e por esta 
 razão estão comentadas (não surtem efeito algum), elas apenas ilustram como seria a operação de transação entre contas. 
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 if(  isset($_COOKIE['cliente_autenticado'])  ){
     echo "";
@@ -78,9 +78,9 @@ de imagem incluída no e-mail, a vítima verá apenas uma pequena caixa que indi
 imagem. No entanto, o navegador continua a enviar a solicitação para seu destino (www.aplicacaovulneravel.com.br). Dessa 
 forma o código é camuflado e não há qualquer indicação visual de que a transferência tenha ocorrido.
 
-{% highlight html %}
+```html
 <img src="http://www.aplicacaovulneravel.com.br/app/trasnferirFundos.php?montante=1500&contaDestino=4673243243"  />
-{% endhighlight %}
+```
 
 
 
@@ -96,7 +96,7 @@ para gerar o token que é armazenado na variável `$token`. A linha 3 atribui o 
 Um campo do tipo hidden (invisível apenas no layout da página HTML) armazenará o valor do token que por sua vez será
 submetido com os demais dados do formulário.
 
-{% highlight php linenos %}
+{% highlight php linenos %} 
 <?php
 $token = $ESAPI->httpUtilities()->getCSRFToken();
 $_SESSION['csrfToken'] = $token;
@@ -119,17 +119,17 @@ $_SESSION['csrfToken'] = $token;
 Caso a submissão dos dados tenha que ser feita via método get é possível utilizar-se, então, de função 
 `ESAPI.httpUtilities().addCSRFToken()` da seguinte forma:
 
-{% highlight php %}
+```php
 <?php
 $url = $ESAPI->httpUtilities()->addCSRFToken("http://www.site.br/action?param1=1"); 
-{% endhighlight %}
+```
 
 
 Do lado do servidor, o script `transferirFundos.php`, também deve ser corrigido. A linha 2 confere se o token enviado 
 pelo formulário é o mesmo que o gerado anteriormente. Em caso positivo a execução pode seguir normalmente.
 Em caso negativo é recomendado que grave-se um log, o token deve ser reinicializado e a solicitação deve ser abortada.
 
-{% highlight php %}
+```php
 <?php 
 if (  $_SESSION["csrfToken "] == $_POST["csrfToken"]  ){
     if(  isset($_COOKIE['cliente_autenticado'])  ){
@@ -142,4 +142,4 @@ if (  $_SESSION["csrfToken "] == $_POST["csrfToken"]  ){
     # solicitação deve ser abortada
 }
 ?>
-{% endhighlight %}
+```
