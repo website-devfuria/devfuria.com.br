@@ -33,8 +33,7 @@ Seu programa será testado, um relatório será gerado e a lição será marcada
 tenha sucesso.
 
 
-Solução
----
+### Solução
 
 Essa foi fácil!
 
@@ -44,7 +43,6 @@ console.log("HELLO WORLD");
 
 
 
-Próximo exercício
----
+### Próximo exercício
 
 - [Baby steps](/javascript/node.js/ns-02-baby-steps/)
