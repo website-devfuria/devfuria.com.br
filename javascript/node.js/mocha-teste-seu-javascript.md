@@ -6,7 +6,7 @@ description: Aprenda neste artigo como testar JavaScript com o Mocha
 
 O __Mocha__ é um framework de testes unitários simples e bastante prático.
 
-Você poderá testar ele no lado do servidor com o __Node__ ou na lado do cliente, em eu navegador.
+Você poderá testar ele no lado do servidor com o __Node__ ou no lado do cliente, em seu navegador.
 
 
 
