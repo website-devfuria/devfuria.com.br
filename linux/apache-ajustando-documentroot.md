@@ -1,11 +1,11 @@
 ---
 layout: grid12-article
-title:  Ajustando o DocumentRoot
+title:  Ajustando o DocumentRoot no Apache
 ---
 
+Isto é um rascunho...
 
-Ajustando o DocumentRoot no Ubuntu
-----------------------------------
+### Ajustando o DocumentRoot no Ubuntu
 
 Altere o arquivo "default" no seguinte local:
 
@@ -27,8 +27,7 @@ Reinicie apache
 
 
 
-Ajustando o DocumentRoot no Fedora
-----------------------------------
+### Ajustando o DocumentRoot no Fedora
 
 Eu não consegui alterar o local, então 
 optei por dar permissão de escrita e alterar o dono das pastas.

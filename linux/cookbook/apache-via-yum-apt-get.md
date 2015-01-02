@@ -10,9 +10,12 @@ Na família __HedHat__ (Fedora, CentoOS) normalmente utilizamos o __yum__ para i
 
 Na família __Debiain__ (Ubuntu) normalmente utilizamos o __apt-get__. O Apache é referenciado por `apache2`.
 
+Para o pessoal do windows, siga este tutorial [Instalando o servidor Apache no Windows](http://www.superdownloads.com.br/materias/instalando-servidor-apache-no-windows-linux.html "link-externo")
 
 
-CENTOS 6.4
+
+
+Centos 6.4
 ---
 
 Instale o __Apache__ via __yum__:
@@ -34,9 +37,9 @@ Uma página intitulada __"Apache HTTP Server Test Page powered by CentOS"__ ser�
 
 
 
+
 FEDORA 17
 ---
-
 
 Instale o __Apache__ via __yum__:
 
@@ -60,7 +63,6 @@ Uma página intitulada __"Fedora Test Page"__ será exibida.
 
 
 
-
 UBUNTU 12
 ---
 
@@ -80,8 +82,21 @@ A mensagem __"It works"__ deve aparecer.
 
 
 
-### Fontes:
+Como reiniciar o Apache
+---
 
-- [http://www.hardware.com.br/livros/servidores-linux/instalando-apache.html](http://www.hardware.com.br/livros/servidores-linux/instalando-apache.html "link-externo")
-- [http://www.vivaolinux.com.br/dica/Instalando-servidor-Apache-+-PHP-+-MySQL-+-phpMyadmin-+-noip-no-Ubuntu-6.10-Server](http://www.vivaolinux.com.br/dica/Instalando-servidor-Apache-+-PHP-+-MySQL-+-phpMyadmin-+-noip-no-Ubuntu-6.10-Server "link-externo")
-- [http://wiki.locaweb.com.br/pt-br/Instalando_e_configurando_Apache_no_Debian_6_Squeeze](http://wiki.locaweb.com.br/pt-br/Instalando_e_configurando_Apache_no_Debian_6_Squeeze"link-externo")
+No Ubuntu/Debian podemos utilizar o comando abaixo.
+
+    /etc/apache2/conf.d/apache2 restart
+
+Como alternativa, o comando abaixo também funciona.
+
+    service apache2 reload
+
+No Centos/HedHat utilizamos o seguinte comando:
+
+    /etc/init.d/httpd start
+
+No Fedora, com alternativa, podemos utilizar o comando:
+
+    systemctl resstart mysqld.service
