@@ -3,6 +3,9 @@ layout:      grid12-article
 title:       Python - repr()
 description: Python - repr()
 ---
+
+
+
 https://docs.python.org/2/library/functions.html#func-repr
 http://stackoverflow.com/questions/7784148/understanding-repr-function-in-python
 http://turing.com.br/pydoc/2.7/tutorial/inputoutput.html

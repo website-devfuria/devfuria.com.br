@@ -5,8 +5,8 @@ description: Python -
 ---
 
 
-No link abaixo temos um exempo legal de escopo, bem simples.
-( relacionado a função)
+No link abaixo temos um exemplo legal de escopo, bem simples.
+(relacionado a função)
 
 http://www.python.org.br/wiki/PerguntasFrequentes/SobreProgramacao#O_Python_n.2BAOM-o_gostou_do_meu_editor_de_textos---
 
