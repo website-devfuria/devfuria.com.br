@@ -14,7 +14,7 @@ Imagine que seu código __JavaScript__ esteja em um arquivo denominado `program.
 
 Para executá-lo com o __Node.js__, digite no terminal `node program.js`.
 
-O __Node.js__ também possui um terminal interativo, para acessá-lo basta digitar `node` no terminal e se divertir!
+O __Node.js__ também possui um terminal interativo, digite `node` no terminal e se diverta-se!
 
     $ node
     >

@@ -132,4 +132,4 @@ instalado, poderá testar via terminal.
 Site Oficial
 ---
 
-- __Express.js__
+- [Express.js](http://expressjs.com/ "link-externo")
