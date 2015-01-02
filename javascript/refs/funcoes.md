@@ -44,8 +44,8 @@ utilizam seus  valores de argumentos para calcular um valor de retorno, que se t
  função. Além dos argumentos, cada chamada tem outro valor - o contexto da chamada -, que é o valor da palavra chave `this`. 
 (Flanagan, JavaScript O guia definitivo, pág 150)
 
-Além dos parâmetros declarados, toda função recebe dois adicionais: __this__ e __arguments__. O parâmetro `this` é muito
-importante na programação orientada a objeto, seu valor é determinado pelo padrão de invocação.
+Além dos parâmetros declarados, toda função recebe dois adicionais: __this__ e [arguments](/javascript/refs/funcoes-argumentos/). 
+O parâmetro `this` é muito importante na programação orientada a objeto, seu valor é determinado pelo padrão de invocação.
 
 Há quatro padrões de invocação em JavaScript:
 
