@@ -5,7 +5,7 @@ description: Como instalar o Sublime no Linux
 ---
 
 
-### Instalando o Sublime no Debian (whezzy)
+### Instalando o Sublime no Debian (wheezy)
 
 Esta é uma forma bastante prática de instalar o Sublime no Debian, o link é meio suspeito e a versõa é mais antiga
 (build 3047) mas tudo funcionou perfeitamente.

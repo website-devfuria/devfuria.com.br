@@ -39,7 +39,7 @@ Instalando o Pillow
 O Pillow é um fork do PIL. Ele suporta [Python](/python/) e seu desenvolvimento "parece" que é mais ativo
 do que o PIL.
 
-Ele depende dos pacotes *python-devel* e *python-setuptools*,  para instalar esses pacotes no Debian (whezzy) bastou:
+Ele depende dos pacotes *python-devel* e *python-setuptools*,  para instalar esses pacotes no Debian (wheezy) bastou:
 
     apt-get install python3-dev python3-setuptools
 
