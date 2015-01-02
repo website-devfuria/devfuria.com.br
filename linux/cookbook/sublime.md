@@ -1,9 +1,36 @@
 ---
 layout:      grid12-article
-title:       Instalando o Sublime no Fedora
-description: Como instalar o Sublime no Fedora
+title:       Instalando o Sublime no Linux
+description: Como instalar o Sublime no Linux
 ---
 
+
+### Instalando o Sublime no Debian (whezzy)
+
+Esta é uma forma bastante prática de instalar o Sublime no Debian, o link é meio suspeito e a versõa é mais antiga
+(build 3047) mas tudo funcionou perfeitamente.
+
+
+Para arquitetura x64:
+
+    wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3047_amd64.deb
+    sudo dpkg -i sublime-text_build-3047_amd64.deb
+
+Para arquitetura x86:
+
+    wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3047_i386.deb
+    sudo dpkg -i sublime-text_build-3047_i386.deb
+
+<hr>
+Fonte:
+
+- [www.simonewebdesign.it/](http://www.simonewebdesign.it/how-to-install-sublime-text-3-on-debian/ "link-externo")
+
+
+
+
+
+### Instalando o Sublime no Fedora
 
 Adicione o repositório
 	
@@ -16,8 +43,6 @@ Habilite o repositório
 Instale
 	
 	# yum install sublime-text
-
-
 
 <hr>
 Fonte:
