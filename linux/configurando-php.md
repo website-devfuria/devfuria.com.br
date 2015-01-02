@@ -1,5 +1,14 @@
-Exibir erros
 ---
+layout:      grid12-article
+title:       Configurando o PHP
+description: 
+---
+
+Isto é um rascunho...
+
+
+
+### Para fazer o PHP mostrar erros
 
 Altere o php.ini. Utilize seu editor preferido, utilizei o "nano";
 
@@ -10,7 +19,6 @@ Localização do arquivo no Fedora:
 Localização do arquivo no Ubunto:
 
 	# nano /etc/php5/apache2/php.ini
-
 
 Procure pelas linhas abaixo e altere os valores como se segue:
 
@@ -29,17 +37,11 @@ Reinicie o apache:
 
 
 
-Corrigir msg de erro ao executar php -v "Unable to load dynamic library '/usr/lib/php/modules/module.so'"
----
+### Corrigir msg de erro ao executar php -v "Unable to load dynamic library '/usr/lib/php/modules/module.so'"
 
 Afeta também ao phpunit.
 
-
-	
-
-editar o arquivo abaixo
-
-    /etc/php.d/mcrypt.ini
+Editar o arquivo `/etc/php.d/mcrypt.ini`.
 
 de:
 
@@ -48,19 +50,20 @@ de:
 
 para:
 
-; Enable mcrypt extension module
-extension=mcrypt.so
+    ; Enable mcrypt extension module
+    extension=mcrypt.so
 
 
-Eu reinicie o apache.
+Reinicie o apache.
 
 Execute 
 
     php -v
 
-A msg de erro não deve aparecer.
+A msg de erro não deve aparecer mais.
 
 
+<br>
 Fonte
     
-    http://stackoverflow.com/questions/16677558/startup-unable-to-load-dynamic-library-usr-lib-php-modules-module-so
+- [stackoverflow.com/questions/16677558](http://stackoverflow.com/questions/16677558/startup-unable-to-load-dynamic-library-usr-lib-php-modules-module-so "link-externo")    
