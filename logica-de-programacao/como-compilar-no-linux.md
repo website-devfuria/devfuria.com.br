@@ -14,7 +14,7 @@ Se estivar no Ubuntu, Debian:
 
     apt-get install gcc
 
-Se estiver no Fedora, Centos:
+Se estiver no Fedora, CentOS:
 
     yum install gcc      
 

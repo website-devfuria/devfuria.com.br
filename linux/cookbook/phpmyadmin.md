@@ -5,7 +5,7 @@ description: Aprenda como instalar e configurar o PHPMyAdmin no Linux
 ---
 
 
-### Centos
+### CentOS
 
 
 Talvez seja preciso instalar o EPEL antes:

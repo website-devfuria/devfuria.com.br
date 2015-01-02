@@ -61,7 +61,7 @@ Reinicialize novamente a máquina.
 
 
 
-Instalando o Ruby no Centos (6.4)
+Instalando o Ruby no CentOS (6.4)
 ---
 
 Primeiro vamos resolver algumas dependências.

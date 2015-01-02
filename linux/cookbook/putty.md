@@ -30,11 +30,11 @@ Se de qualquer forma você quer instalar o __Putty__ no __Linux__, seguem as rec
     apt-get install putty
 
 
-### Instalando o Putty no Centos 6
+### Instalando o Putty no CentOS 6
 
     yum -y install putty
 
-### Compilando a partir do código fonte (Centos)
+### Compilando a partir do código fonte (CentOS)
 
 Veja o tutorial abaixo para proceder com a compilação dos fontes.
 

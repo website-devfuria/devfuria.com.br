@@ -10,12 +10,12 @@ description: Aprenda a instalar o jdk do Java
 	apt-get install openjdk-7-jre
 
 
-### Centos 6.5+
+### CentOS 6.5+
 
     su -c "yum install java-1.7.0-openjdk"
 
 
-### FEDORA 14+
+### Fedora
 
 	
 	# su -c "yum install java-1.7.0-openjdk"

@@ -14,7 +14,7 @@ de como compilar os fontes e tire suas próprias conclusões.
 Abaixo seguem receitas de como instalar via __apt-get__ / __yum__:
 
 
-### Centos 6.4+
+### CentOS 6.4+
 
 	# yum -y install filezilla
 

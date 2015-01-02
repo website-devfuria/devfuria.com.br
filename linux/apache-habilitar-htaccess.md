@@ -6,7 +6,7 @@ title:  Habilitar .htaccess
 Em breve!
 
 <!--
-Habilitar .htaccess no Centos
+Habilitar .htaccess no CentOS
 ---
 
 	http://dev.antoinesolutions.com/apache-server/mod_rewrite

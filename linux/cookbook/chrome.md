@@ -6,7 +6,7 @@ description: Como instalar o navegador Google Chrome no Linux
 
 
 
-Centos
+CentOS
 ---
 
 Adicione ao repositório do Chrome criando o seguinte arquivo.
