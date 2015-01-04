@@ -27,7 +27,7 @@ function add(x, y) {
 
 
 
-### Protótipo de função
+### Sintaxe da função
 
     function name([param,[, param,[..., param]]]) {
        [statements]
