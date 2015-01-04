@@ -51,4 +51,5 @@ Uma vez com a expressão regular compilada podemos executá-la em qualquer uma d
 Veja também
 ---
 
-- [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
+...nossa seção sobre [expressões regulares](/regex/) e a matéria [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
+na mesma seção.

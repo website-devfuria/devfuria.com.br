@@ -35,4 +35,5 @@ Se a expressão estiver sintaticamente errada o script será interrompido.
 Veja também
 ---
 
-- [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
+...nossa seção sobre [expressões regulares](/regex/) e a matéria [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
+na mesma seção.
