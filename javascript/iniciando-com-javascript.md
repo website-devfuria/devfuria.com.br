@@ -5,28 +5,22 @@ description: Primeiros passos com a linguagem JavaScript
 ---
 
 Este é um pequeno artigo sobre como iniciar sua experiência com a linguagem __JavaScript__. Ele á bastante prático e 
-direto, o objeto é você entrar rapidamente em ação. Mas talvez você precise de mais detalhes de como 
-[iniciar os estudos com JavaScript 
-(artigo de Vitor Britto)](http://www.vitorbritto.com.br/blog/iniciando-os-estudos-com-javascript/ "link-externo")
-também pressuponho que você saiba [o que é JavaScript](/javascript/o-que-e-javascript/).
+direto, o objeto é você entrar rapidamente em ação. Pressuponho que você saiba [o que é JavaScript](/javascript/o-que-e-javascript/).
 
-Veremos neste artigo:
 
-- [Como executar o JavaScript](#como-executar-o-javascript)
-- [Cada um no seu quadrado (separando as obrigações)](#cada-um-no-seu-quadrado-separando-as-obrigaes)
-- [Aonde colocar o Javascript ?](#aonde-colocar-o-javascript-)
+Experimentando JavaScript no lado do servidor
+----
 
+
+
+Experimentando JavaScript no lado do cliente (navegador)
+----
 
 ### Como executar o JavaScript
 
 Você pode executar JavaScript do lado do cliente (__front end__) em um navegador web, dê preferência ao 
 [Firefox](https://www.mozilla.org/pt-BR/firefox/new/ "link-externo") ou ao
 [Google Chrome](https://www.google.com.br/chrome/browser/desktop/index.html "link-externo").
-
-Também pode-rá executá-lo do lado do servidor (__back end__) em linha de comando através do 
-[node.js](/javascript/node.js/).
-
-Neste primeiro exemplo, vamos executá-lo no navegador (lado cliente).
 
 Crie um arquivo de texto simples, salve com o nome `index.html` e insira nele o seguinte código:
 
