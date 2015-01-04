@@ -111,7 +111,7 @@ A palavra chave `null` indica a ausência de um valor.
 
 Mas também há um segundo valor que indica ausência de valor: `undefined`.
 
-O valor indefinido representa uma ausência mais profunda, é o valor de variáveis que não foram inicializadas.
+O valor indefinido (`undefined`) representa uma ausência mais profunda, é o valor de variáveis que não foram inicializadas.
 
 
 
