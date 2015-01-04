@@ -1,19 +1,22 @@
 ---
 layout:      grid12-article
 title:       Iniciando em JavaScript
-description: Primeiros passos com a linguagem JavaScript
+description: Este é um pequeno artigo sobre como iniciar sua experiência com a linguagem __JavaScript__, veremos como iniciar em JavaScript tanto no lado do servidor como no lado do cliente
 ---
 
-Este é um pequeno artigo sobre como iniciar sua experiência com a linguagem __JavaScript__. Ele á bastante prático e 
-direto, o objeto é você entrar rapidamente em ação. Pressuponho que você saiba [o que é JavaScript](/javascript/o-que-e-javascript/).
+Este é um pequeno artigo, bastante prático e direto, sobre como iniciar sua experiência com a linguagem __JavaScript__.
+O objeto é você entrar rapidamente em ação, veremos como iniciar em JavaScript tanto no lado do servidor como no lado
+do cliente.
+
+Pressuponho que você saiba [o que é JavaScript](/javascript/o-que-e-javascript/).
 
 
-Experimentando JavaScript no lado do servidor
+Iniciando em JavaScript no lado do servidor (Node.js)
 ----
 
 
 
-Experimentando JavaScript no lado do cliente (navegador)
+Iniciando em JavaScript no lado do cliente (navegador)
 ----
 
 ### Como executar o JavaScript

@@ -4,9 +4,9 @@ title:       O que é JavaScript?
 description: 
 ---
 
-No início, a linguagem JavaScript foi criada para funcionar no lado do cliente, ela rodava e ainda roda nos navegadores
-web. A base da programação no lado do cliente consiste em escrever um script e fazer ele funcionar no navegador sem ter 
-que viajar até o servidor para ser executado.
+No início, a linguagem JavaScript foi criada para funcionar no lado do cliente, ela era executada exclusivamente nos 
+navegadores web. A base da programação no lado do cliente consiste em escrever um script e fazer ele funcionar no
+navegador sem ter que viajar até o servidor para ser executado.
 
 "Rodar no navegador" significa que o navegador terá possibilidades de interpretar e executar a linguagem. Ele faz isso
 através de seus motores (engines) e cada navegador possui o seu. Se pesquisar na Internet por __engines javascript__ verá
