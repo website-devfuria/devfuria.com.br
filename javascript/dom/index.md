@@ -26,7 +26,7 @@ implementados de forma inconsistente nos navegadores. É por isso que usar uma [
 que abstraia as diferenças dos navegadores, pode acelerar significativamente o desenvolvimento. Considere ao menos
 aprender 2 ou 3 bibliotecas JavaScript.
 
-O acessoa o __DOM__ é caro; ele é o maior gargalo no que diz respetio a desempenho no JavaScript. É por isso qeu o __DOM__
+O acesso ao __DOM__ é caro; ele é o maior gargalo no que diz respeito a desempenho no JavaScript. É por isso qeu o __DOM__
 costuma ser implementado separadamente do mecanismo JavaScript. Do ponto de vista de um programador, faz sentido usar essa
 abordagem, porque uma aplicação JavaScript pode nem precisar do __DOM__. O ponto principal é que é o acesso ao __DOM__
 deveria ser reduzido ao mínimo, leia o artigo [Reduzindo o acesso ao DOM]() para obter mais informações.
