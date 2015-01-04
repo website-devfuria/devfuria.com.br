@@ -15,7 +15,7 @@ Para o pessoal do windows, siga este tutorial [Instalando o servidor Apache no W
 
 
 
-Centos 6.4
+CentOS
 ---
 
 Instale o __Apache__ via __yum__:
@@ -38,7 +38,7 @@ Uma página intitulada __"Apache HTTP Server Test Page powered by CentOS"__ ser�
 
 
 
-FEDORA 17
+Fedora
 ---
 
 Instale o __Apache__ via __yum__:
@@ -63,7 +63,7 @@ Uma página intitulada __"Fedora Test Page"__ será exibida.
 
 
 
-UBUNTU 12
+Ubuntu
 ---
 
 Atualize o sistema.
@@ -93,7 +93,7 @@ Como alternativa, o comando abaixo também funciona.
 
     service apache2 reload
 
-No Centos/HedHat utilizamos o seguinte comando:
+No CentOS/HedHat utilizamos o seguinte comando:
 
     /etc/init.d/httpd start
 

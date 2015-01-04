@@ -6,7 +6,7 @@ description: Aprenda como instalar o Libre Office no Linux
 
 
 
-### CENTOS 6.4
+### CentOS 6.4
 
 
 Vá até od iretório `/tmp` e crie um pasta chamada `/libre` (será de uso temporário, depois o sistema apagará).

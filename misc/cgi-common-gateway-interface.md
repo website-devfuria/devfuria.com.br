@@ -14,7 +14,7 @@ Configurando o Apache (virtual hosts)
 ---
 
 Esta é a parte que irá te dar mais trabalho, a não ser que você seja ninja com o Apache. Neste exemplo eu utilizo o
-__Debian 7 (wheezy)__ como desktop. Futuramente, eu pretendo acrescentar a esta matéria como configurar no Centos (família
+__Debian 7 (wheezy)__ como desktop. Futuramente, eu pretendo acrescentar a esta matéria como configurar no CentOS (família
 HedHat). Por enquanto, posso deixar a dica para o pessoal do HedHat: faça as alterações no arquivo `httpd.conf`.
 
 Continuando, nosso objetivo é acessar via navegador o script CGI e este, por sua vez, devolver um trecho de HTML. Digitaremos 

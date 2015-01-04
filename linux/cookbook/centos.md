@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       Centos
+title:       CentOS
 description: 
 ---
 

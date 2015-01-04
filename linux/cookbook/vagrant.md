@@ -5,7 +5,7 @@ description: Aprenda como instalar o Vagrant no Linux
 ---
 
 
-### Centos
+### CentOS
 
 Baixe o pacote .rpm e execute
 
