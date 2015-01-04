@@ -88,4 +88,4 @@ Leia mais sobre o construtor [RegExp()](/javascript/refs/regexp/).
 Referência
 ---
 
-- [MDN (site oficial](https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions "link-externo")
+- [MDN (site oficial)](https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions "link-externo")
