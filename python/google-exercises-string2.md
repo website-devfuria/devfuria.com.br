@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Lista de exercícios da Google - strings 2
-description: Exercícios de lógica em Python acompanhados de testes unitários. Esta é a segunda lista e de exercícios do Google Python Exercise.
+description: Exercícios de lógica em Python acompanhados de testes unitários. Esta é a segunda lista de exercícios do Google Python Exercise.
 menu:        python-google
 ---
 
