@@ -12,7 +12,7 @@ navegador sem ter que viajar até o servidor para ser executado.
 através de seus motores (engines) e cada navegador possui o seu. Se pesquisar na Internet por __engines javascript__ verá
 nomes como V8, WebKit, SipderMoney, TraceMonkey, Gecko, Chakra, etc...
 
-O engine mais notável é o __V8__ lançado pela Google e embutido em seu navegador Chrome. Sua popularidade, sem sombra
+O engine mais notável é o [V8](https://developers.google.com/v8/ "link-externo") lançado pela Google e embutido em seu navegador Chrome. Sua popularidade, sem sombra
 de dúvidas, se deve ao fato de ser utilizado pelo Node.js. Como dito, inicialmente a linguagem se prestava para resolver
 problemas de interatividade de páginas web, ela ficava no lado do cliente (no navegador) fazendo o que não cabia as
 linguagens do lado do servidor fazer. Em contra partida, JavaScript estava limitado a realizar melhorias em páginas web,
