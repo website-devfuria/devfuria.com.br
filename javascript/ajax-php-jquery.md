@@ -5,11 +5,11 @@ description: Aprenda a utilizar Ajax com PHP e JQuery
 ---
 
 Este artigo ensina como utilizar Ajax com PHP e JQuery. Pressuponho que você tenha um servidor web instalado, como o 
-__Apache__ por exemplo e a linguagem __PHP__ também devidamente instalada e habilitada. Além de ter um conhecimento mínimo
+Apache por exemplo e a linguagem __PHP__ também devidamente instalada e habilitada. Além de ter um conhecimento mínimo
 das linguagem __JavaScript__ e __PHP__.
 
-- [JQuery](http://jquery.com/ "link-externo") é uma biblioteca __JavaScript__ criado por [John Resig](http://jquery.com/ "link-externo")
-- [PHP](/php/) é uma linguagem de programação do lado do servidor [Rasmus](http://lerdorf.com/bio/ "link-externo")
+- [JQuery](http://jquery.com/ "link-externo") é uma biblioteca JavaScript criado por John Resig.
+- [PHP](/php/) é uma linguagem de programação do lado do servidor criada po Rasmus Lerdof.
 
 Se vc caiu de paraquedas nesta página, não deixe de ver as matérias anteriores relacionados ao final deste artigo.
 
@@ -39,7 +39,7 @@ Utilizaremos o HTML abaixo como modelo.
 ```
 
 
-O método `ajax()` aceita um objeto __JavaScript__ como parâmtros contendo a configuração de sua chamada Ajax.
+O método `ajax()` aceita um objeto __JavaScript__ como parâmetros contendo a configuração de sua chamada Ajax.
 
 A propriedade `url` é local, arquivo, script, alvo de su requisição.
 
@@ -51,27 +51,19 @@ A propriedade `dataType` refere-se ao tipo de dado que o servidor deve retornar 
 
 ```javascript
 var request = $.ajax({
-
     url: "script.php",
     type: "POST",
     data: "campo1=dado1&campo2=dado2&campo3=dado3",
     dataType: "html"
-
 });
 request.done(function(resposta) {
-
     console.log(resposta)
-
 });
 request.fail(function(jqXHR, textStatus) {
-
     console.log("Request failed: " + textStatus);
-
 });
 request.always(function() {
-
     console.log("completou");
-
 });
 ```
 
@@ -85,24 +77,16 @@ Podemos encadear os métodos `done()`, `fail()` e `always()` tornando o código 
 
 ```javascript
 $.ajax({
-
     url: "script.php",
     type: "POST",
     data: "campo1=dado1&campo2=dado2&campo3=dado3",
     dataType: "html"
-
 }).done(function(resposta) {
-
     console.log(resposta);
-
 }).fail(function(jqXHR, textStatus ) {
-
     console.log("Request failed: " + textStatus);
-
 }).always(function() {
-
     console.log("completou");
-
 });
 ```
 
