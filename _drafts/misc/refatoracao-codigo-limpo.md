@@ -1,7 +1,7 @@
 ---
-layout: grid12-article
-title: Refatoração e código limpo
-description: Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.
+layout:       grid12-article
+title:        Refatoração e código limpo
+description:  Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.
 ---
 
 
