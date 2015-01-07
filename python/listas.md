@@ -148,10 +148,10 @@ print(animals) # ["bat", "cat"]
 ### pop()
 
 Remove através do índice (retorna o valor removido).
+
 ```python
 animals = ["ant", "bat", "cat"]
-animals.pop(0)
-# 'ant'
+animals.pop(0) # 'ant'
 print(animals) # ["bat", "cat"]
 ```
 

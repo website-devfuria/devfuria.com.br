@@ -5,9 +5,13 @@ description: Referência prática do objeto prototype - JavaScript
 menu:        javascript-refs
 ---
 
+A propriedade `prototype` é usada quando uma função atua como construtora. Ela se refere a um objeto que serve
+como protótipo para uma classe de objetos inteira. Qualquer objeto criado pela construtora herda todas as 
+propriedades do objeto referido pela propriedade `prototype`. (Flanagan, JavaScritpt, O guia definitivo, pág. 764)
+
 Um protótipo é um objeto (o que não é uma surpresa) e toda função que você cria recebe automaticamente uma propriedade
 `prototype` que aponta pra um novo objeto em branco. Esse objeto é quase idêntico a um objeto criado a partir de um
-[objeto literal](/javascript/refs/objeto-literal/) ou pelo construtor `Object()`, exceto que sua proprieade `constructor`
+[objeto literal](/javascript/refs/objeto-literal/) ou pelo construtor `Object()`, exceto que sua propriedade `constructor`
 aponta para a função que você criou, e não para o objeto embutido `Object()`. Você pode adicionar membros a esse objeto
 em branco e, mais tarde, ter outros objetos herdando desse objeto e utilizando as propriedades dele como se fossem
 criadas por você. (Crockford, O melhor do JavaScript, pág. 21)
@@ -45,7 +49,7 @@ console.log(c1) // Coworker { name="João", status="férias"}
 console.log(c2) // Coworker { name="Maria", status="trabalhando"}
 ```
 
-Se, após as modificaões citadas acima, você alterar o valor da propriedade do protótipo, os valores da propriedade do
+Se, após as modificações citadas acima, você alterar o valor da propriedade do protótipo, os valores da propriedade do
 protótipo designados individualmente não refletirão a alteração do protótipo.
 
 ```javascript
