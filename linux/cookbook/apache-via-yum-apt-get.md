@@ -100,3 +100,18 @@ No CentOS/HedHat utilizamos o seguinte comando:
 No Fedora, com alternativa, podemos utilizar o comando:
 
     systemctl resstart mysqld.service
+
+
+
+Lendo logs de erro no terminal
+---
+
+Você pode, caso precise, ler os logs de erro ao trabalhar com o Apache.
+
+Família HedHat:
+
+    tail /var/log/httpd/error_log
+
+Família Debian:
+
+    tail /var/log/apache2/error.log

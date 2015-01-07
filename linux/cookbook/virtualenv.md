@@ -1,18 +1,18 @@
 ---
 layout:      grid12-article
-title:       Instalando o virtualenv (python) no Linux
-description: Aprenda como instalar o virtualenv (python) no Linux
+title:       Instalando o Virtualenv (python) no Linux
+description: Aprenda como instalar o Virtualenv (python) no Linux
 ---
 
-O __virtualenv__ é um simulador de ambiente para [Python](/python/), com ele é possível instalar em determinado diretório
+O __Virtualenv__ é um simulador de ambiente para [Python](/python/), com ele é possível instalar em determinado diretório
 os pacotes com as versões necessários para o seu projeto sem interferir no seu sistema operacional e também nos demais
 projetos.
 
-Para instalar o VirtualEnv com Python 2:
+Para instalar o Virtualenv com Python 2:
 
 	pip install virtualenv
 
-Para instalar o VirtualEnv com Python 3:
+Para instalar o Virtualenv com Python 3:
 
 	pip3 install virtualenv
 
@@ -54,14 +54,14 @@ Em ambos os casos chegaremos no mesmo resultado e você verá em sua tela algo s
     Also creating executable in foo/bin/python
     Installing setuptools, pip...done.
 
-Seguindo o exemplo acima, o __virtualenv__...
+Seguindo o exemplo acima, o __Virtualenv__...
 
 - criou um atalho para o [Python](/python/), toda vez que você digitar `python` ele executará `foo/bin/python3.4`
 - instalou o __setuptools__ e
 - instalou o __pip__.
 
 Neste momento, você desejará instalar aplicativos e outras bibliotecas para seu projeto. Para tal, você deve ativar
-o __virtualenv__, execute:
+o __Virtualenv__, execute:
 
 	source /bin/activate
 
@@ -80,7 +80,7 @@ Quando terminar poderá digitar
 
     deactivated
 
-Toda vez que quiser rodar seu projeto, o __virtualenv__ deve estar habilitado.
+Toda vez que quiser rodar seu projeto, o __Virtualenv__ deve estar habilitado.
 
 
 
