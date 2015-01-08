@@ -14,6 +14,40 @@ Pressuponho que você saiba [o que é JavaScript](/javascript/o-que-e-javascript
 Iniciando em JavaScript no lado do servidor (Node.js)
 ----
 
+Você precisa ter o [Node.js](/javascript/node.js/) instalado, se estiver no Linux veja esta matéria ["Instalando o Node.js"](/linux/cookbook/nodejs/).
+
+No terminal, digite `node -v` para saber qual a versão instalada.
+
+Digite apenas `node` para iniciar o terminal interativo [(REPEL)](http://nodejs.org/api/repl.html "link-externo"), seu 
+prompt mudará para o sinal de maior `>`.
+
+    $ node -v
+    v0.10.29
+    $ node
+    > 
+
+Agora você tem o JavaScript nas pontas dos dedos, vamos experimentar...
+
+    var foo = "Eu sou javascript";
+    foo
+    'Eu sou javascript'
+
+Repare que não precisamos utilizar `console.log(foo)` para ver o valor de `foo`, mas se fosse o caso, então...
+
+    var foo = "Eu sou javascript";
+    console.log(foo);
+    Eu sou javascript
+
+Digite CTRL + C duas vezes para sair.
+
+Outra maneira é criar um arquivo de texto simple com a extensão `.js`, por exemplo, `script.js` e inserir nosso exemplo
+nele. Neste caso, vamos precisar do `console.log`.
+
+    // arquivo script.js
+    var foo = "Eu sou javascript";
+    console.log(foo);
+
+No terminal execute o arquivo dessa forma `node script.js`
 
 
 Iniciando em JavaScript no lado do cliente (navegador)
