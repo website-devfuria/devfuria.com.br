@@ -1,12 +1,12 @@
 ---
 layout:      grid12-article
 title:       Instalando o nodejs
-description: Veja 3 formas de instalar o nodejs no Linux
+description: Veja 4 formas de instalar o nodejs no Linux
 ---
 
-Eu descobri <strike> 3 formas</strike>  4 formas de instalar o __nodejs__ no Debian:
+Eu descobri <strike> 3 formas</strike>  4 formas de instalar o __nodejs__ no Debian (Debian-wheezy).
 
-Mas esta primeira é a melhor:
+Esta primeira é a mais interessante.
 
 
 Instalando o node.js através do nvm
@@ -39,7 +39,7 @@ A seguir, as demais receitas....
 
 
 
-Compilando os fontes via git-hub (Debian-wheezy)
+Compilando os fontes do git-hub 
 ---
 
 Atualize o sistema e instale as dependências via __apt-get__:
@@ -64,7 +64,7 @@ Para testar execute:
     node -v
 
 
-Compilando os fontes(Debian-wheezy)
+Compilando os fontes do site oficial
 ---
 
 Atualize o sistema e instale as dependências via __apt-get__:
@@ -108,15 +108,15 @@ Via pacote deb (Debian-wheezy)
 
 Esta é a forma recomendado na documentação, mas comigo não funcionou! Então, boa sorte...
 
-Você precisará do [curl(http://curl.haxx.se/ "link-externo"):
+Você precisará do [curl](http://curl.haxx.se/ "link-externo"):
 
     apt-get install curl
 
-Agora baixe o pacote debian
+Agora baixe o pacote Debian.
 
     curl -sL https://deb.nodesource.com/setup | bash -
 
-E só instalar...
+E instale...
 
     apt-get install nodejs nodejs-legacy
 
