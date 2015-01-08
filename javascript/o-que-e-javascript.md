@@ -35,9 +35,8 @@ Seja você iniciante ou não, ainda existem outras questões...
 - Em qual eu devo me dedicar mais?
 
 Não há uma única resposta para a questões e deixo aqui apenas a minha opinião. Você deve aprender as duas formas, comece
-pela que se sentir mais a vontade e se especialize na que mais gostar, porém nunca ignore o outro lado. Entramos na questão
-de sua carreira e fugimos um pouco do assunto do artigo (o que é JavaScript?), mas se você quiser mais informações procure
-entender as diferenças entre um programador __server-side__ e um __front-end__.
+pela que se sentir mais a vontade e se especialize na que mais gostar, porém nunca ignore o outro lado, se você precisar
+de mais informações procure entender as diferenças entre um programador __server-side__ e um __front-end__.
 
 
 ### Afinal, o que é JavaScript?
