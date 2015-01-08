@@ -37,7 +37,7 @@ Que tratamento daremos ao pequeno formulário do Andy Budd?
 Que tal começarmos referenciando o botão submit?
 
 ```javascript
-    document.getElementById("btnSubmit")
+document.getElementById("btnSubmit")
 ```
 
 Não se esqueça que você precisará do id, por tanto, altere o [HTML](/html-css/) incluindo a propriedade id.
