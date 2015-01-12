@@ -80,7 +80,7 @@ Variáveis são espaços alocados na memória do computador.
 Tipos
 ---
 
-A __linguagem C__ possue diversos tipos, mas para começar basta:
+A __linguagem C__ possui diversos tipos, mas para começar basta:
 
 <table>
     <tr>
@@ -122,7 +122,7 @@ O tipo `int` comporta os números inteiros.
 Os tipos `float` e `double` comportam números reais, só que o `double` é de maior precisão. Também chamamos de 
 "ponto flutuante" e "ponto flutuante de dupla precisão", respectivamente.
 
-Cada tipo de dados possue uma extensão (range) diferente e ocupa um determinado espaço na memória. Inicialmente, isso não
+Cada tipo de dados possui uma extensão (range) diferente e ocupa um determinado espaço na memória. Inicialmente, isso não
 é algo com que devemos nôs preocupar.
 
 

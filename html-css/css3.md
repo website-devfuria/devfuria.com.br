@@ -5,7 +5,7 @@ description:
 ---
 
 
-A CSS possue várias versões, ou "níveis", portanto, é importante saber qual versão utilizar. A CSS 1 tornou-se uma
+A CSS possui várias versões, ou "níveis", portanto, é importante saber qual versão utilizar. A CSS 1 tornou-se uma
 recomendação no final de 1996 e contém propriedades muito básicas, como fontes, cores e margens. A CSS 2 aprimorou isso
 e adicionou conceitos avançados, como flutuação e posicionamento, a essa combinação e seletores avançados, como filho,
 irmão adjancente e seletores universais. 

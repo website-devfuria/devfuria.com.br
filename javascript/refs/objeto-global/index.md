@@ -79,7 +79,7 @@ com informações sobre a tela:
 - `screen.width`
 
 
-O objeto window possue o `handler onload`, um dos mais importantes mecanismo de tratamento de evento. Ele é disparado 
+O objeto window possui o `handler onload`, um dos mais importantes mecanismo de tratamento de evento. Ele é disparado 
 quando o conteúdo do documento exibido na janela está estável e pronto para ser manipulado. (Flanagan)
 
 ```javascript

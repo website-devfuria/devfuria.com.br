@@ -32,7 +32,7 @@ A propriedade `id` da combo será `cboCidades`, logo poderemos encontrar o contr
 A variável `comboCidades` possui a combobox, então podemos acessar algumas propriedades como, por exemplo, `selectedIndex`
 que contém um valor inteiro com o índice do item (option) selecionado.
 
-Explicando melhor, cada tag `option` possue um índice, em nosso exemplo temos o seguinte:
+Explicando melhor, cada tag `option` possui um índice, em nosso exemplo temos o seguinte:
 
 <table>
     <thead>

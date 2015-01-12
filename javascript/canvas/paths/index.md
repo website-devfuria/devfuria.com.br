@@ -6,7 +6,7 @@ menu:        javascript-canvas
 ---
 
 
-Cada objeto que implementa a interface __CanvasPathMethods__ possue um path (caminho).
+Cada objeto que implementa a interface __CanvasPathMethods__ possui um path (caminho).
 
 São eles:
     

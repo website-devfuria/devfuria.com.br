@@ -6,7 +6,7 @@ menu:        mysql
 ---
 
 
-O MySQL possue algumas funções que nos auxiliam.
+O MySQL possui algumas funções que nos auxiliam.
 
 Uma delas é a `version()`, ela retorna a versão do MySQL. 
 
