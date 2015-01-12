@@ -4,11 +4,9 @@ title:       Canvas
 description: Seção sobre Canvas (html5 + javascript)
 ---
 
-O Canvas é um elemento da especificação HTML5.
-
-Obviamente, junto com o elemento, temos a API Canvas (funções que manipulam o elemento canvas).
-
-O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser.
+O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser. Ele é um elemento da especificação 
+[HTML5](http://www.w3.org/TR/html5/ "link-externo"), obviamente, junto com o elemento, temos a API Canvas (funções que 
+manipulam o elemento).
 
 {% include  /menus/javascript-canvas.html %}
 

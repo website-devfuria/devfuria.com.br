@@ -67,11 +67,9 @@ Veja também na seção sobre expressões regulares a matéria
 
 ### Canvas
 
-O Canvas é um elemento da especificação [HTML5](http://www.w3.org/TR/html5/ "link-externo").
-
-Obviamente, junto com o elemento, temos a API Canvas (funções que manipulam o elemento canvas).
-
-O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser.
+O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser. Ele é um elemento da especificação 
+[HTML5](http://www.w3.org/TR/html5/ "link-externo"), obviamente, junto com o elemento, temos a API Canvas (funções que 
+manipulam o elemento).
 
 [Aprenda mais sobre o canvas](./canvas/).
 
