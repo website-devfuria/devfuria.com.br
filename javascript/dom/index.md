@@ -54,7 +54,7 @@ aprender 2 ou 3 bibliotecas JavaScript.
 O acesso ao __DOM__ é caro; ele é o maior gargalo no que diz respeito a desempenho no JavaScript. É por isso que o __DOM__
 costuma ser implementado separadamente do mecanismo JavaScript. Do ponto de vista de um programador, faz sentido usar essa
 abordagem, porque uma aplicação JavaScript pode nem precisar do __DOM__. O ponto principal é que é o acesso ao __DOM__
-deveria ser reduzido ao mínimo, leia o artigo [Reduzindo o acesso ao DOM]() para obter mais informações.
+deveria ser reduzido ao mínimo, leia o artigo [Reduzindo o acesso ao DOM](/javascript/dom-reduzindo-acesso-ao-dom/) para obter mais informações.
 
 
 
