@@ -5,9 +5,9 @@ description:
 menu:        html-artigos-intro
 ---
 
-Um documento HTML bem estruturado fornece a estrutura à qual seus estilos são aplicados, Para poder estilizar um
+Um documento HTML bem estruturado fornece a estrutura à qual seus estilos são aplicados. Para poder estilizar um
 determinado elemento HTML utilizando CSS, você precisa ter uma maneira de selecionar esses elementos. Na CSS a parte
-de uma regra de estile que faz isso é chamada de __seletor__.
+de uma regra de estilo que faz isso é chamada de __seletor__.
 
 ### Seletor tipo (tags)
 
@@ -30,7 +30,7 @@ Os estilos acima irão refletir em todos o elementos `p` e `h1` da página.
 
 Para aplicar uma regra CSS comum a vários seletores você pode agrupá-los.
 
-Abaixo vemos um regra em comum.
+Abaixo vemos algumas regras em comum.
 
 ```css
 h1 {color: red;}
@@ -38,7 +38,7 @@ h2 {color: red;}
 p {color: red;}
 ```
 
-Aqui ela foi agrupada.
+Aqui elas foram agrupadas.
 
 ```css
 h1, h2, p {color: red;}
@@ -63,7 +63,7 @@ A CSS deve começar com um `.` (ponto) imediatamente seguido pelo nome da classe
 }
 ```
 
-O uso do seletor classe possibilita estilos diferentes para o mesmo tipo de elemento, exemplo:
+O uso do seletor de classe possibilita estilos diferentes para o mesmo tipo de elemento, exemplo:
 
 ```css
 p {
