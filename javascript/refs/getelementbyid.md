@@ -42,7 +42,7 @@ console.log(elem.value);
 elem.value = "outro texto qualquer";
 ```
 
-Se não houver a necessidade de utiliar uma variável poderemos , então, acessar a propriedade diretamente, veja exemplo:
+Se não houver a necessidade de utilizar uma variável poderemos , então, acessar a propriedade diretamente, veja exemplo:
 
 ```javascript
 document.getElementById("nome-identificador").value = "outro texto qualquer";

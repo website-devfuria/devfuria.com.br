@@ -4,11 +4,28 @@ title:       DOM - Document Object Model
 description: O que você precisa saber sobre o DOM (Document Object Model)
 ---
 
-Isto é um rascunho...
+__DOM__ é um acrônimo para Document Object Model (Modelo de Objetos de Documento) ele representa os objetos de uma página
+HTML em forma de uma árvore. O __DOM__ é importante pois é através dele que acessamos os elementos dentro de uma página
+HTML. Em outra palavras, obtemos acesso ao documento HTML através do __DOM__.
 
+O exemplo abaixo...
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample Document</title>
+    </head>
+    <body>
+        <h1>An HTML Docuemnt</h1>
+        <p>This is a <i>simple</i> document</p>
+    </body>
+</html>
+```
+
+.. gera a seguinte árvore __DOM__:
 
 ![Figura ilustrando o DOM - Document Object Model](arvore-dom-1.gif "Figura ilustrando o DOM - Document Object Model" )
-
 
 Quando um documento HTML é baixado no navegador, esse navegador precisa transformar em uma página Web o que é basicamente
 uma longa string de caracteres. Para tanto, o navegador decide quais partes são parágrafos, quais são cabeçalhos, quais
@@ -19,6 +36,7 @@ de elementos aninhados, marcados com tags de início e fim - o __DOM__ cria um o
 vincula cada objeto de elemento ao seu elemento circundante (ou elemento pai). Isso cria uma relação pai-filho 
 (parent-children) explícita entre os elementos e torna mais imediata a visualização do __DOM__ como uma estrutura em árvore.
 
+Abaixo vemos outro exemplo da árvore __DOM__, repare que os nós de texto também foram incluídos.
 
 ![Figura ilustrando o DOM - Document Object Model](arvore-dom-2.gif "Figura ilustrando o DOM - Document Object Model")
 
@@ -33,10 +51,10 @@ implementados de forma inconsistente nos navegadores. É por isso que usar uma [
 que abstraia as diferenças dos navegadores, pode acelerar significativamente o desenvolvimento. Considere ao menos
 aprender 2 ou 3 bibliotecas JavaScript.
 
-O acesso ao __DOM__ é caro; ele é o maior gargalo no que diz respeito a desempenho no JavaScript. É por isso qeu o __DOM__
+O acesso ao __DOM__ é caro; ele é o maior gargalo no que diz respeito a desempenho no JavaScript. É por isso que o __DOM__
 costuma ser implementado separadamente do mecanismo JavaScript. Do ponto de vista de um programador, faz sentido usar essa
 abordagem, porque uma aplicação JavaScript pode nem precisar do __DOM__. O ponto principal é que é o acesso ao __DOM__
-deveria ser reduzido ao mínimo, leia o artigo [Reduzindo o acesso ao DOM]() para obter mais informações.
+deveria ser reduzido ao mínimo, leia o artigo [Reduzindo o acesso ao DOM](/javascript/dom-reduzindo-acesso-ao-dom/) para obter mais informações.
 
 
 
@@ -140,7 +158,7 @@ elemento do documento, às vezes você precisa encontrar partes estruturalmente 
 
 ### Localizando um pai (parent)
 
-Todo nó de elemento possui um pai, execeto o nó do documento. Consequentemente, cada nó de elemento tem uma propriedade
+Todo nó de elemento possui um pai, exceto o nó do documento. Consequentemente, cada nó de elemento tem uma propriedade
 chamada `parentNode`, uma referência para o pai do elemento distinto.
 
 ```javascript
@@ -150,7 +168,7 @@ elem.parentNode
 
 ### Localizando filhos (childrens)
 
-Um elemento só pode ter um pai (parent), maspode ter muitos filhos (childrens). Você pode encontrar todos os filhos de 
+Um elemento só pode ter um pai (parent), mas pode ter muitos filhos (childrens). Você pode encontrar todos os filhos de 
 um elemento, usando a propriedade `childNodes`. Ela é, na verdade, uma lista de nós que contém todos os filhos do elemento,
 no ordem de origem.
 
@@ -233,3 +251,8 @@ Especificações
 - [w3.org/DOM](http://www.w3.org/DOM/DOMTR "link-externo")
 - [developer.mozilla.org/fi/docs/DOM](https://developer.mozilla.org/fi/docs/DOM "link-externo")
 - [dom.spec.whatwg.org/](https://dom.spec.whatwg.org/ "link-externo")
+
+
+### Leia também
+
+- Artigo do w3c falando sobre as [diferenças entre as versões anteriores do DOM e a do HTML 5](http://www.w3c.br/cursos/html5/conteudo/capitulo16.html "link-externo")

@@ -36,3 +36,7 @@ promover métodos
 classes individuais
 diagramas uml
 este e exercício te levará para os Design Patern
+
+
+
+conceito SOLID
