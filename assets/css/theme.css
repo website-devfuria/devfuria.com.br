@@ -63,7 +63,10 @@ h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
 h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
 h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
 h3{margin-top:1em;}
-hr{border:1px solid #ddd;}
+hr{
+    border:1px solid #ddd;
+    margin-top: 5px;
+}
 ul{margin:1em 0 1em 2em;}
 ol{margin:1em 0 1em 2em;}
 ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
@@ -174,6 +177,11 @@ a.link-externo {
 a.list-group-item:first-child {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+}
+a.list-group-item:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-bottom: 0px;
 }
 a.list-group-item {
     background-color: #fff;
