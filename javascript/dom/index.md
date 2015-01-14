@@ -4,7 +4,10 @@ title:       DOM - Document Object Model
 description: O que você precisa saber sobre o DOM (Document Object Model)
 ---
 
-Isto ainda é um rascunho...
+Isto é um rascunho...
+
+
+![Figura ilustrando o DOM - Document Object Model](arvore-dom-1.gif "Figura ilustrando o DOM - Document Object Model" )
 
 
 Quando um documento HTML é baixado no navegador, esse navegador precisa transformar em uma página Web o que é basicamente
@@ -15,6 +18,10 @@ __Document Object Model__ ou __DOM__. Como resultado da maneira pela qual o cód
 de elementos aninhados, marcados com tags de início e fim - o __DOM__ cria um objeto diferente para cada elemento, mas
 vincula cada objeto de elemento ao seu elemento circundante (ou elemento pai). Isso cria uma relação pai-filho 
 (parent-children) explícita entre os elementos e torna mais imediata a visualização do __DOM__ como uma estrutura em árvore.
+
+
+![Figura ilustrando o DOM - Document Object Model](arvore-dom-2.gif "Figura ilustrando o DOM - Document Object Model")
+
 
 __Document Object Model__ ou __DOM__, é a API fundamental para representar e manipular o conteúdo de documentos
 __HTML__ e __XML__. A API não é especialmente complicada, mas existem vários detalhes de arquitetura  que precisam ser
@@ -117,6 +124,9 @@ Leia mais sobre a função [queryselectorall()](/javascript/refs/queryselectoral
 Navegando pela árvore DOM
 ---
 
+![Figura ilustrando o DOM - Document Object Model](dom-02.png "Figura ilustrando o DOM - Document Object Model")
+
+
 Os métodos para encontrar elementos __DOM__ que descrevemos até aqui foram muito direcionados, estamos pulando 
 diretamente para um nó específico na árvore, sem nos preocuparmos com as conexões no meio. Após ter selecionado um 
 elemento do documento, às vezes você precisa encontrar partes estruturalmente relacionada:
@@ -124,6 +134,8 @@ elemento do documento, às vezes você precisa encontrar partes estruturalmente 
 - parent (pais)
 - siblings (irmãos)
 - childrens (filhos)
+
+![Figura ilustrando o DOM - Document Object Model](dom-01.gif "Figura ilustrando o DOM - Document Object Model")
 
 
 ### Localizando um pai (parent)
@@ -177,20 +189,47 @@ var anteriorIrmao = elem.previousSibling
 Acessando os atributos
 ---
 
-Em breve!
+Os elementos HTML  consistem em um nome de tag e um conjunto de pares nome/valor conhecidos como atributos. Por exemplo,
+o elemento `<a>` que define um hiperlink utiliza o valor de seu atributo `href` como destino do link.
+
+    <a href="www.defuria.com.br" id="um-link-qualquer">link</a>"
+
+Os valores de atributo dos elementos HTML estão disponíveis como propriedades dos objetos HTMLElement que representam 
+esses elementos. Dessa forma
+
+```javascript
+var link = document.getElementById("um-link-qualquer");
+console.log(link.href);
+```
+
+O __DOM__ também oferece outras API's para obter e configurar os valores de atributos HTML não pradonizados, mas que
+também funcionam com os demais atributos.
+
+```javascript
+var link = document.getElementById("um-link-qualquer");
+link.setAtributte("href", "http://www.w3.org/")
+console.log(link.getAtributte("href"));
+
+```
+
+### Resumo
+
+- `elem.[nome do atributo]` para leitura e escrita
+- `elem.getElementById("nome do atributo")` para leitura
+- `elem.setAtributte("nome do atributo", "valor do atributo")` para escrita
+
 
 
 Manipulando o DOM
 ---
 
+Em breve!
 
-<!--
 
-Lista de especificações
-http://www.w3.org/DOM/DOMTR
 
-https://developer.mozilla.org/fi/docs/DOM
+Especificações
+---
 
-https://dom.spec.whatwg.org/
-
--->
+- [w3.org/DOM](http://www.w3.org/DOM/DOMTR "link-externo")
+- [developer.mozilla.org/fi/docs/DOM](https://developer.mozilla.org/fi/docs/DOM "link-externo")
+- [dom.spec.whatwg.org/](https://dom.spec.whatwg.org/ "link-externo")
