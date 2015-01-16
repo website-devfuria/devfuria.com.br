@@ -106,10 +106,10 @@ Para obter um objeto semelhante a um array somente leitura, contendo os objetos 
 em um documento, por exemplo, você poderia escrever:
 
 ```javascript
-var spans = document.getElementByTagName("span");
+var spans = document.getElementsByTagName("span");
 ```
 
-Leia mais sobre a função [getElementByTagName()](/javascript/refs/getelementbytagname/)
+Leia mais sobre a função [getElementByTagName()](/javascript/refs/getelementsbytagname/)
 
 
 ### Selecionando elementos pela classe CSS
@@ -241,7 +241,57 @@ console.log(link.getAtributte("href"));
 Manipulando o DOM
 ---
 
-Em breve!
+Podemos criar, inserir e excluir elementos da árvore DOM.
+
+A função `document.createElement()` aceita como parâmetro o nome da tag e retorna o elemento recém criado (mas ainda não inserido).
+
+```javascript
+var elem = document.createElement("li");
+console.log(elem);
+// <li>
+```
+
+Inserimos o elemento com a função `elemento_pai.appendChild()`, mas ainda precisamos criar um nó de texto para o elemento, 
+caso contrário, estaremos inserindo apenas o elemento, sem texto. Para criar um nó de texto utilizamos a função 
+`document.createTextNode()`.
+
+```javascript
+var texto = document.createTextNode("mais um item");
+console.log(texto);
+// "mais um item"
+```
+
+Antes de inserir o elemento, devemos anexar o nó de texto a ele.
+
+```javascript
+elem.appendChild(texto);
+```
+
+De posse de um elemento completo, podemos então, anexá-lo a um elemento `<ul>` já existente em nossa página HTML. A função 
+`elemento_pai.appendChild()` insere o novo elemento filho ao final do elemento pai.
+
+```javascript
+// Recuperar o elemento lista
+var lista = document.getElementsByTagName('ul')[0];
+
+// Anexar o elemento <li> ao final de nossa lista <ul>
+lista.appendChild(elem);
+```
+
+Também podemos inserir um elemento através da função `elemento_pai.insertBefore()`, ela aceita dois parâmetros: o primeiro
+é o elemento filho e o segundo é o elemento que servirá de referência para inserir o elemento filho.
+
+Para remover um elemento utilizamos a função `elemento_pai.removeChid(elemento_filho)`.
+
+Leia o artigo [Manipulando o DOM](/javascript/dom-manipulando-o-dom/) para obter mais detalhes.
+
+### Resumo
+
+- `document.createElement("nome-da-tag")` para criar um elemento
+- `document.createTextNode("algum texto")` para criar um nó de texto
+- `elemento_pai.appendChild(elemento_filho)` para inserir um elemento na última posição
+- `elemento_pai.insertBefore(elemento_filho, elemento_anterior)` pra inserir um elemento em posição específica
+- `elemento_pai.removeChild(elemento_filho)` para remover um elemento
 
 
 
