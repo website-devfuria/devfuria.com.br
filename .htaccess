@@ -51,6 +51,7 @@ RewriteRule ^linux\/index\-receitas\-instalacoes\/?$  "http\:\/\/www\.devfuria\.
 
 RewriteRule ^js\/?$                                  "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^javascript\/refs\/onclick\/?$           "http\:\/\/www\.devfuria\.com\.br\/javascript\/tratando-eventos\/" [R=301,L]
+RewriteRule ^javascript\/refs\/dom-add\/?$           "http\:\/\/www\.devfuria\.com\.br\/javascript\/dom\/" [R=301,L]
 RewriteRule ^javascript\/objeto-global\/?$           "http\:\/\/www\.devfuria\.com\.br\/javascript\/refs\/objeto-global\/" [R=301,L]
 RewriteRule ^javascript\/numeros-randomicos\/?$      "http\:\/\/www\.devfuria\.com\.br\/javascript\/numeros-aleatorios\/" [R=301,L]
 RewriteRule ^js\/basico\/?$                          "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]

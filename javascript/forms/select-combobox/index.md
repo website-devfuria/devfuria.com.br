@@ -92,8 +92,7 @@ Armazenamos em uma variável qualquer, por exemplo `elem` e então definimos 2 p
     elem.value = "scs";
     elem.text  = "São Caetano do Sul";
 
-Uma vez criado os elementos, basta adicioná-los a nossa combobox, fazemos isso através do método
-[add(elem, elem[])](/javascript/refs/dom-add/).
+Uma vez criado os elementos, basta adicioná-los a nossa combobox, fazemos isso através do método `add(elem, elem[]`.
 
 - O primeiro parâmetro é fácil, é o elemento que acabamos de criar.
 
