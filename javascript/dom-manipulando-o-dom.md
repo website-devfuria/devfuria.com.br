@@ -6,6 +6,15 @@ description: Aprenda a manipular o elemento DOM Document Object Model
 
 Isto é um rascunho...
 
+Veremos as funções de manipulação do __DOM__:
+
+- [document.createElement()]()
+- [document.createTextNode()]()
+- [appendChild()]()
+- [insertBefore()]()
+- [removeChild()]()
+
+
 Podemos criar, inserir e excluir elementos da árvore DOM.
 
 A função `document.createElement()` aceita como parâmetro o nome da tag e retorna o elemento recém criado (mas ainda não inserido).
