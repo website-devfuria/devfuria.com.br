@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript - Remove (DOM)
+title:       JavaScript - Remove Child (DOM)
 description: Referência prática da função remove() - JavaScript
 menu:        javascript-refs
 ---
