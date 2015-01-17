@@ -10,6 +10,17 @@ Se você precisa saber mais sobre o DOM aconselho a ler o artigo [DOM - Document
 
 Veremos as funções de manipulação do __DOM__:
 
+- [document.createElement()]()
+- [document.createTextNode()]()
+- [appendChild()]()
+- [insertBefore()]()
+- [removeChild()]()
+
+
+Podemos criar, inserir e excluir elementos da árvore DOM.
+
+Veremos as funções de manipulação do __DOM__:
+
 - [document.createElement()](/javascript/refs/dom-create-element/)
 - [document.createTextNode()](/javascript/refs/dom-create-text-node/)
 - [appendChild()](/javascript/refs/dom-append-child/)
