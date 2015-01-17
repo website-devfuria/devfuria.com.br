@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       JavaScript - getElementByName()
 description: Referência prática da função getElementByName() - JavaScript
-menu:        javascript-refs
+menu:        javascript-dom
 ---
 
 Isto é um racunho!

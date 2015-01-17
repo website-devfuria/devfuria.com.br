@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       JavaScript - Insert Before (DOM)
 description: Referência prática da função insertBefore() - JavaScript
-menu:        javascript-refs
+menu:        javascript-dom
 ---
 
 Isto é um rascunho!

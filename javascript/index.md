@@ -25,16 +25,19 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 
 
 
-### Artigos
+### Artigos 
 
 {% include /menus/javascript-artigos.html %}
 
 
-
-### Artigos de referência
+### Referência
 
 {% include /menus/javascript-refs.html %}
 
+
+### DOM - Document Object Model
+
+{% include /menus/javascript-dom.html %}
 
 
 ### Formulários web
