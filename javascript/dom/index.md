@@ -247,8 +247,6 @@ A função `document.createElement()` aceita como parâmetro o nome da tag e ret
 
 ```javascript
 var elem = document.createElement("li");
-console.log(elem);
-// <li>
 ```
 
 Inserimos o elemento com a função `elemento_pai.appendChild()`, mas ainda precisamos criar um nó de texto para o elemento, 
@@ -257,8 +255,6 @@ caso contrário, estaremos inserindo apenas o elemento, sem texto. Para criar um
 
 ```javascript
 var texto = document.createTextNode("mais um item");
-console.log(texto);
-// "mais um item"
 ```
 
 Antes de inserir o elemento, devemos anexar o nó de texto a ele.
@@ -267,21 +263,25 @@ Antes de inserir o elemento, devemos anexar o nó de texto a ele.
 elem.appendChild(texto);
 ```
 
-De posse de um elemento completo, podemos então, anexá-lo a um elemento `<ul>` já existente em nossa página HTML. A função 
-`elemento_pai.appendChild()` insere o novo elemento filho ao final do elemento pai.
+Imaginado que temos um único elemento `ul` em nosso documento podemos fazer uso da função `getElementsByTagName()`.
+Ela retorna um coleção, um array de elementos, como sabemos de previamente que precisamos do primeira item acessamos
+essa coleção dessa forma `colecao[0]`, mais resumidamente `getElementsByTagName()[0]`, veja:
 
 ```javascript
-// Recuperar o elemento lista
 var lista = document.getElementsByTagName('ul')[0];
+```
 
-// Anexar o elemento <li> ao final de nossa lista <ul>
+De posse de um elemento completo, podemos então, anexá-lo a um elemento `<ul>` já existente em nossa página HTML. 
+A função `elemento_pai.appendChild()` insere o novo elemento filho ao final do elemento pai.
+
+```javascript
 lista.appendChild(elem);
 ```
 
-Também podemos inserir um elemento através da função `elemento_pai.insertBefore()`, ela aceita dois parâmetros: o primeiro
+Também podemos inserir um elemento através da função `insertBefore()`, ela aceita dois parâmetros: o primeiro
 é o elemento filho e o segundo é o elemento que servirá de referência para inserir o elemento filho.
 
-Para remover um elemento utilizamos a função `elemento_pai.removeChid(elemento_filho)`.
+Para remover um elemento utilizamos a função `removeChild()`.
 
 Leia o artigo [Manipulando o DOM](/javascript/dom-manipulando-o-dom/) para obter mais detalhes.
 
