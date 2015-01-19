@@ -4,20 +4,9 @@ title:       Manipulando o DOM - Document Object Model
 description: Aprenda a manipular o elemento DOM Document Object Model
 ---
 
-Este é um artigo que demonstra como manipular o DOM (Document Object Model).
+Este artigo demonstra, de forma simples, como manipular o DOM (Document Object Model).
 
-Se você precisa saber mais sobre o DOM aconselho a ler o artigo [DOM - Document Object Model](/javascript/dom/).
-
-Veremos as funções de manipulação do __DOM__:
-
-- [document.createElement()]()
-- [document.createTextNode()]()
-- [appendChild()]()
-- [insertBefore()]()
-- [removeChild()]()
-
-
-Podemos criar, inserir e excluir elementos da árvore DOM.
+Se você precisa saber mais sobre o DOM, aconselho a ler o artigo [DOM - Document Object Model](/javascript/dom/).
 
 Veremos as funções de manipulação do __DOM__:
 
