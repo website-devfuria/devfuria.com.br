@@ -1,10 +1,16 @@
 ---
 layout:       grid12-article
-title:        Pytohn, CGI, FastCGi e WSGI!
+title:        Python, servindo páginas HTML com CGI
 description:  
 ---
 
-http://klauslaube.com.br/2012/11/02/entendendo-o-cgi-fastcgi-e-wsgi.html
+
+
+
+
+
+
+
 
 ```python
 #!/usr/bin/python
@@ -29,3 +35,7 @@ def app(environ, start_response):
 
 CGIHandler().run(app)
 ```
+
+
+
+http://klauslaube.com.br/2012/11/02/entendendo-o-cgi-fastcgi-e-wsgi.html
