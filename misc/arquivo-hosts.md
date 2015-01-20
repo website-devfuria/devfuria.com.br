@@ -68,9 +68,9 @@ Todos os endereços apontam para `127.0.0.1`, portanto, o redirecionamento para 
 ser realizada e configurada através do virtualhosts.
 
 Você pode utilizar o nome exato de seu domínio. Imaginando que ele seja, por exemplo, `www.foo.com.br`, você poderá incluir
-em seu arquivo hosts a seguinte linha.
+em seu arquivo `hosts` a seguinte linha.
 
-    127.0.`hosts`0.1       www.foo.com.br
+    127.0.0.1       www.foo.com.br
 
 Essa abordagem não permitirá a você acessar o endereço `www.foo.com.br` na web, pois ele aponta para sua máquina local. 
 Mas, e se você quiser voltar a acessá-lo normalmente? Você terá que modificar o arquivo. Para evitar isso, você poderá 
@@ -78,8 +78,12 @@ utilizar nomes semelhantes, como por exemplo:
 
     www.foo
     www.foo.dev
-    foo
     foo.dev
 
-Chegamos ao fim do artigo, achou o que estava procurando? Faltou alguma informação? Alguma parte ficou mal redigida?
+Chegamos ao fim do artigo, achou o que estava procurando?
+
+Faltou alguma informação? 
+
+Alguma parte ficou mal redigida?
+
 Posso melhorar o artigo de alguma forma? Deixe seu feedback, é muito importante!
