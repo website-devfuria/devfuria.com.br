@@ -15,7 +15,7 @@ Variáveis
 
 Uma variável não pode ser utilizada em uma expressão sem ter sido inicializada
 
-Não existe “criação automática” de variáveis
+Não existe "criação automática" de variáveis.
 
 Exemplo de atribuição:
 
