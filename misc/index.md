@@ -6,16 +6,6 @@ title:  Miscellaneous
 Seja bem vindo(a) a seção Miscellaneous (diversos)
    
 
-### Apache - Configurando Virtual Hosts
-
-Virtual Hosts (sites virtuais) é um recurso que permite servir mais de um site no mesmo servidor. Podem ser usadas 
-diretivas específicas para o controle do site virtual, como nome do administrador, erros de acesso a página, controle de
-acesso e outros dados úteis para personalizar e gerenciar o site.
-
-Leia mais no artigo [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/)
-
-
-
 ### Arquivo hosts (/etc/hosts)
 
 O arquivo hosts presente em sistemas operacionais Linux, Windows e Mac's, tem a função de mapear um nome para um 
@@ -25,6 +15,15 @@ utilizar o mapeamento do arquivo hosts para apontar para nossa virtualhost. Se v
 repente, se perguntou "o que é e como funciona o arquivo hosts? " este artigo é para você.
 
 Leia mais no artigo [Arquivo hosts (/etc/hosts)](/misc/arquivo-hosts/)
+
+
+### Apache - Configurando Virtual Hosts
+
+Virtual Hosts (sites virtuais) é um recurso que permite servir mais de um site no mesmo servidor. Podem ser usadas 
+diretivas específicas para o controle do site virtual, como nome do administrador, erros de acesso a página, controle de
+acesso e outros dados úteis para personalizar e gerenciar o site.
+
+Leia mais no artigo [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/)
 
 
 ### CGI Servindo páginas web (html)
