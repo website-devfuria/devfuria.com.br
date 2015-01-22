@@ -7,8 +7,8 @@ description:
 Gerar páginas web com Python é uma das primeiras perguntas que fazemos quando iniciamos os estudos em Python.
 
 Para que páginas web sejam servidas por scripts Python devemos ter o servidor web devidamente configurado e também 
-precisaremos entender os diferentes protocolos que fazem a ponte entre os scrips Python e o servidor we. Pois, o servidor
-web, sozinho, não saberá como fazer a ligação entre a requisição e a linguagem Python.
+precisaremos entender os diferentes protocolos que fazem a ponte entre os scrips Python e o Servidor Web. Pois, sozinho,
+o servidor não saberá como fazer a ligação entre a requisição e a linguagem Python.
 
 Neste artigo utilizaremos o Apache como servidor web e vamos cobrir o protocolo CGI.
 
@@ -22,16 +22,23 @@ O objetivo e acessarmos o endereço `www.foo.local/cgi-bin` e  encontramos o res
 Configurando o Apache
 ---
 
-Organizando o raciocínio, nosso objeto compreende:
+Organizando o raciocínio, nosso objetivo compreende:
 
-- acessar no navegador `www.foo.local/cgi-bin` e
-- encontramos o resultado de nossos script em CGI na pasta `/pasta/de/projetos/foo/cgi-bin/`.
+- acessar `www.foo.local/cgi-bin` e
+- executar os scripts da pasta `/pasta/de/projetos/foo/cgi-bin/`.
 
-Vamos incluir a seguinte linha no arquivo `/etc/hots`:
+Nossa estrutura de arquivos será parecida com a seguinte.
+
+    /projetos/
+        /foo/
+            /cgi-bin/
+                index.py
+
+OK, primeiro, precisamos incluir a seguinte linha no arquivo `/etc/hots`:
 
     127.0.0.1 www.foo.local
 
-Vamos criar o seguinte Virtual Host:
+Segundo, criaremos o seguinte Virtual Host:
 
 ```linux-config
 <VirtualHost *:80>
@@ -50,10 +57,22 @@ Vamos criar o seguinte Virtual Host:
 </VirtualHost>
 ```
 
-Você precisa habilitar o Virtual Host e reiniciar o Apche para que as alterações tenha efeito.
+Na pasta `/etc/apache2/sites-available` crie um arquivo denominado `foo.local` e insira o Virtual Host apresentado acima.
 
-Infelizmente, a configuração pode não ser tão simples assim, veja as matérias abaixo para entender melhor o que você 
-deve fazer para configurar corretamente.
+Terceiro, habilite o Virtual Host com o comando `a2ensite`:
+
+```linux-config
+# vá até a pasta `sites-available`
+cd /etc/apache2/sites-available
+
+# habilite o virtual host
+a2ensite teste-wsgi
+```
+   
+Quarto e último, reinicie o Apache para que as alterações tenha efeito.
+
+Infelizmente, a configuração pode não ser tão simples assim. Se precisar de mais detalhes, veja as matérias abaixo para 
+entender melhor o que você deve fazer para configurar o Apache corretamente.
 
 - [Arquivo hosts (/etc/hosts)](/misc/arquivo-hosts/)
 - [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/)
@@ -64,7 +83,9 @@ deve fazer para configurar corretamente.
 Exemplos de arquivos CGI em Python
 ---
 
-Abaixo vemos um exemplo básico de script CGI feito em Python.
+Abaixo vemos um (primeiro) exemplo básico de script CGI feito em Python.
+
+Crie um arquivo denominado `primeiro-exemplo.py` na pasta `/pasta/de/projetos/foo/cgi-bin/` e acesse a URL `www.foo.local/cgi-bin/primeiro-exemplo.py`
 
 ```python
 #!/usr/bin/python
@@ -77,7 +98,9 @@ print '<body><h1>CGI - python</h1>Seu CGI esta funcionando</body>'
 print '</html>'
 ```
 
-O exemplo a seguit utiliza o módulo __CGIHandler__.
+O (segundo) exemplo seguinte utiliza o módulo __CGIHandler__.
+
+Crie um arquivo denominado `segundo-exemplo.py` na pasta `/pasta/de/projetos/foo/cgi-bin/` e acesse a URL `www.foo.local/cgi-bin/segundo-exemplo.py`
 
 ```python
 #!/usr/bin/python
