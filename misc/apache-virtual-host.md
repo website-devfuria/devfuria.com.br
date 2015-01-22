@@ -39,19 +39,19 @@ acesso e outros dados úteis para personalizar e gerenciar o site. ([wikibooks.o
 Imagine que você precise servir 2 sites distintos: `www.joao.com.br` e `www.maria.com.br`, cada qual com sua configuração.
 Precisaremos de duas Virtual Host, exemplo:
 
-    // arquivo "local-do-apache/sites-available/joao"
+    // arquivo "/etc/apache2/sites-available/joao"
     <VirtualHost *:80>
         ServerName www.joao.com.br
         DocumentRoot /var/www/joao
     </VirtualHost>
 
-    // arquivo "local-do-apache/sites-available/maria"
+    // arquivo "/etc/apache2/sites-available/maria"
     <VirtualHost *:80>
         ServerName www.maria.com.br
         DocumentRoot /var/www/maria
     </VirtualHost>
 
-Se listarmos o diretório `local-do-apache/sites-available/` veremos o seguinte resultado:
+Se listarmos o diretório `/etc/apache2/sites-available/` veremos o seguinte resultado:
 
     default
     joao
