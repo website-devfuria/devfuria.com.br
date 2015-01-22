@@ -8,12 +8,12 @@ O servidor Apache pode ser configurado para servir apenas a um site, o que é na
 o servidor. Neste caso, a pasta principal (documentroot) `/var/www/` responderá por todos os sistemas ali instalados e
 haverá uma única configuração para os diversos sistemas.
 
-O Apache também pode ser configurado para hospedar vários sites no mesmo servidor, cada um com sua própria configuração.
-Fazemos isso através do [Virtual Host](http://httpd.apache.org/docs/2.4/ "link-externo").
+O Apache também pode ser configurado para hospedar vários sites no mesmo servidor, cada um com sua própria configuração,
+fazemos isso através do [Virtual Host](http://httpd.apache.org/docs/2.4/ "link-externo").
 
 Configurar o Apache com a intenção de administrá-lo é um trabalho para os profissionais de infraestrutura, porém neste 
 artigo nos vamos aprender a configurar o Apache apenas para adequar o ambiente de desenvolvimento. Digo isto para que
-você percebe a diferença de abordagens:
+você percebe a diferença entre as abordagens:
 
     1. Configurar o Apache para atender a diversos sites e sistemas (ambiente de produção)
     2. Configurar o Apache para desenvolver softwares (ambiente de desenvolvimento)
@@ -36,8 +36,8 @@ Virtual Hosts (sites virtuais) é um recurso que permite servir mais de um site 
 diretivas específicas para o controle do site virtual, como nome do administrador, erros de acesso a página, controle de
 acesso e outros dados úteis para personalizar e gerenciar o site. ([wikibooks.org - Guia do Linux](http://pt.wikibooks.org/wiki/Guia_do_Linux/Avan%C3%A7ado/Apache/Virtual_Hosts "link-externo"))
 
-Imagine que você precise servir 2 sites distintos: `www.joao.com.br` e `www.maria.com.br`, cada qual com sua configuração.
-Precisaremos de duas Virtual Host, exemplo:
+Imagine que você precise servir 2 sites distintos: `www.joao.com.br` e `www.maria.com.br`, cada qual com sua configuração, 
+exemplo:
 
     // arquivo "/etc/apache2/sites-available/joao"
     <VirtualHost *:80>
@@ -149,3 +149,15 @@ Novamente, acesse a URL `www.foo.loca`, você deve ver o HTML acima renderizado.
 
 Se encontra algum problema tente ver os logs do Apache `tail /var/log/apache2/error.log` no Debian ou 
 `tail /var/log/httpd/error_log` para família RedHat.
+
+
+
+Veja também
+---
+
+__CGI__ é um acrónimo para a expressão inglesa __Common Gateway Interface__. Consiste numa importante tecnologia que 
+permite gerar páginas dinâmicas, permitindo a um navegador passar parâmetros para um programa alojado num servidor web.
+Assim, designam-se por __scripts CGI__ os pequenos programas (veja exemplos ao longo da matéria) que interpretam esses
+parâmetros e geram a página depois de os processar.
+
+Leia mais no artigo [CGI Servindo páginas web (html)](/misc/cgi-common-gateway-interface/)
