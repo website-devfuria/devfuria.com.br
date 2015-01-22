@@ -6,10 +6,41 @@ title:  Miscellaneous
 Seja bem vindo(a) a seção Miscellaneous (diversos)
    
 
-O primeiro artigo que abre esta seção é sobre como criar scripts CGI e também como configurar o Apache para serví-los.
+### Apache - Configurando Virtual Hosts
+
+Virtual Hosts (sites virtuais) é um recurso que permite servir mais de um site no mesmo servidor. Podem ser usadas 
+diretivas específicas para o controle do site virtual, como nome do administrador, erros de acesso a página, controle de
+acesso e outros dados úteis para personalizar e gerenciar o site.
+
+Leia mais no artigo [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/)
 
 
+
+### Arquivo hosts (/etc/hosts)
+
+O arquivo hosts presente em sistemas operacionais Linux, Windows e Mac's, tem a função de mapear um nome para um 
+endereço IP. Normalmente, é utilizado em conjunto com uma virtualhost para configurar um ambiente de desenvolvimento, 
+porém ele pode ser usado para diversos fins. Quando criamos uma virtualhost percebemos que temos um passo opcional: 
+utilizar o mapeamento do arquivo hosts para apontar para nossa virtualhost. Se você estava criando uma e, de 
+repente, se perguntou "o que é e como funciona o arquivo hosts? " este artigo é para você.
+
+Leia mais no artigo [Arquivo hosts (/etc/hosts)](/misc/arquivo-hosts/)
+
+
+### CGI Servindo páginas web (html)
+
+__CGI__ é um acrónimo para a expressão inglesa __Common Gateway Interface__. Consiste numa importante tecnologia que 
+permite gerar páginas dinâmicas, permitindo a um navegador passar parâmetros para um programa alojado num servidor web.
+Assim, designam-se por __scripts CGI__ os pequenos programas (veja exemplos ao longo da matéria) que interpretam esses
+parâmetros e geram a página depois de os processar.
+
+Leia mais no artigo [CGI Servindo páginas web (html)](/misc/cgi-common-gateway-interface/)
+
+
+<!--
 <div class="list-group">
-    <a href="/misc/cgi-common-gateway-interface/" class="list-group-item">CGI Servindo páginas web (html)</a>
+    <a href="/misc/apache-virtual-host/" class="list-group-item">Apache - Configurando Virtual Hosts</a>
     <a href="/misc/arquivo-hosts/" class="list-group-item">Arquivo hosts (/etc/hosts)</a>
-</div> 
+    <a href="/misc/cgi-common-gateway-interface/" class="list-group-item">CGI Servindo páginas web (html)</a>
+</div>
+-->
