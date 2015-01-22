@@ -10,6 +10,7 @@ Assim, designam-se por __scripts CGI__ os pequenos programas (veja exemplos ao l
 parâmetros e geram a página depois de os processar. (wikipedia)
 
 
+
 Configurando o Apache (virtual hosts)
 ---
 
@@ -17,87 +18,121 @@ Esta é a parte que irá te dar mais trabalho, a não ser que você seja ninja c
 __Debian 7 (wheezy)__ como desktop. Futuramente, eu pretendo acrescentar a esta matéria como configurar no CentOS (família
 HedHat). Por enquanto, posso deixar a dica para o pessoal do HedHat: faça as alterações no arquivo `httpd.conf`.
 
-Continuando, nosso objetivo é acessar via navegador o script CGI e este, por sua vez, devolver um trecho de HTML. Digitaremos 
-`http://localhost/cgi-bin/foo.py` no navegador e como resultado veremos o mencionado HTML. Estou usando um arquivo Python
-como exemplo, mas você poderá escolher entre shel script, perl ou c++.
+Nosso objetivo é acessar via navegador o script CGI e este, por sua vez, devolver um trecho de HTML.
 
-Para tal, devemos salvar os scripts CGI na pasta `/usr/lib/cgi-bin/`, essa é uma configuração meio que padrão. A questão
-mais importante é NÂO deixar seus scripts no document root, depois com mais experiência você poderá escolher outra pasta
-para armazenar seus scripts CGI.
+Vamos utilizar um domínio fictício de exemplo, iremos digitar `www.foo.local` no navegador e esperaremos receber o 
+resultado de nosso script CGI.
 
-Em nosso exemplo, precisamos ensinar ao Apache como ele deve redirecionar `http://localhost/cgi-bin/foo.py` para
-`/usr/lib/cgi-bin/foo.py`.
 
-Pelo terminal, como root (ou sudo) vamos até a pasta do Apache `cd /etc/apache2/sites-available/`, é nesta pasta que
-o Apache guarda as informações de Virtual Hosts. Na minha máquina possuo alguns Virtual Hosts, na sua talvez não tenha
-nenhum, mas o que estamos procurando é o "host" principal o "default". No meu caso, é o arquivo denominado simplesmente
-`default`, sem extensão. Abaixo, eu copiei (na íntegra) o arquivo da minha máquina `/etc/apache2/sites-available/default`.
 
-{% highlight linux-config linenos %} 
+### Redirecionando
+
+Primeiro, devemos fazer o redirecionamento de `www.foo.local` para `localhost`, utilizaremos o arquivo `/etc/hosts` para
+tal. Acesse seu arquivo hosts no enderço `etc/hosts` (voce precisará ser root) e inclua a seguinte linha:
+
+    127.0.0.1 www.foo.local
+
+Salve o arquivo e experimente acessar a URL `www.foo.local`, ela deve ter o mesmo resultado de `localhost`.
+
+Leio o artigo [Arquivo hosts (/etc/hosts)](/misc/arquivo-hosts/) para saber mais.
+
+
+
+### Virtual Host
+
+Com o redirecionamento funcionado, vamos criar uma Virtual Host simples.
+
+Crie um arquivo denominado `foo` na pasta `/etc/apache2/sites-available/` com o seguinte conteúdo:
+
+```linux-config
 <VirtualHost *:80>
-        ServerAdmin webmaster@localhost
-
-        DocumentRoot /var/www
-        <Directory />
-                Options FollowSymLinks
-                AllowOverride AuthConfig
-        </Directory>
-        <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride AuthConfig
-                Order allow,deny
-                allow from all
-        </Directory>
-
-        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
-        <Directory "/usr/lib/cgi-bin">
-                AllowOverride None
-                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-                AddHandler cgi-script .pl .py .bin .sh
-                Order allow,deny
-                Allow from all
-        </Directory>
-
-        ErrorLog ${APACHE_LOG_DIR}/error.log
-
-        # Possible values include: debug, info, notice, warn, error, crit,
-        # alert, emerg.
-        LogLevel warn
-
-        CustomLog ${APACHE_LOG_DIR}/access.log combined
+    ServerName www.foo.local
+    DocumentRoot /pasta/de/projetos/foo
 </VirtualHost>
-{% endhighlight %}
+```
 
-Você deve atentar apenas o trecho entre as linhas 16 e 23, é ele quem faz a coisa toda funcionar.
+Habilite seu Virtual Host com o comando `a2ensite`, vá até a pasta `/etc/apache2/sites-available/` e execute:
 
-Na linha 16 temos a diretiva `ScriptAlias`, ela define um diretório para o Apache onde serão armazenados os scripts CGI.
-Todos os arquivos que estiverem neste diretório serão interpretados pelo Apache como programas CGI, assim ele tentará 
-executá-los. Adicione ou descomente a seguinte linha no seu arquivo 
+    a2ensite foo
 
-    ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/ 
+Agora, precisaremos reiniciar o Apache `service apache2 reload`.
+
+Antes de testar com um script CGI, que tal testar com um simples HTML?
+
+Você pode utilizar o HTML abaixo.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Criando Virtual Host</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>Ok, sua Virtual Host foi configurada corretamente!</p>
+    </body>
+</html>
+```
+
+Tente acessar o endereço `www.foo.local`, ele deve mostrar o conteúdo do arquivo HTML que acabamos de criar.
+
+Se precisar saber mais sobre Virtual Host, leia a matéria [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/).
+
+
+
+### Virtual Host + CGI
+
+Agora vem a configuração para os script CGI.
+
+Altere o arquivo `foo` para o exemplo abaixo.
+
+```linux-config
+<VirtualHost *:80>
+    ServerName www.foo.local
+    DocumentRoot /pasta/de/projetos/foo
+
+    ScriptAlias /cgi-bin /pasta/de/projetos/foo/cgi-bin/
+    <Directory "/pasta/de/projetos/foo/cgi-bin">
+        AllowOverride None
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        AddHandler cgi-script .pl .py .bin .sh
+        Order allow,deny
+        Allow from all
+    </Directory>
+ 
+</VirtualHost>
+```
+
+Explicando...
+
+A diretiva `ScriptAlias` define um diretório para o Apache onde serão armazenados os scripts CGI. Todos os arquivos que 
+estiverem neste diretório serão interpretados pelo Apache como programas CGI, assim ele tentará executá-los. Como no
+exemplo, vamos digitar `www.foo.local/cgi-bin/` e vermos os resultados dos scripts CGI.
 
 Logo abaixo da diretiva, você deve especificar um diretório particular e dar permissão para a execução de CGIs.
 
-    <Directory "/usr/lib/cgi-bin">
-        Options +ExecCGI
+    <Directory "/pasta/de/projetos/foo/cgi-bin">
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
     </Directory>
 
-O trecho acima permite a execução de CGIs, repare que em meu arquivo a linha `Options +ExecCGI` vem seguido de 
-` -MultiViews +SymLinksIfOwnerMatch`.
-
-Agora você precisa avisar o Apache que tipo de arquivos CGIs ele poderá executar, para isso adicionamos:
+Agora, você precisa avisar o Apache que tipo de arquivos CGIs ele poderá executar, para isso adicionamos:
 
     AddHandler cgi-script .pl .py .bin .sh
 
 As demais diretivas são mais conhecidas e não estão diretamente relacionadas ao nosso objetivo (executar scripts CGI),
 você pode procurar pela internet a respeito delas.
 
-Salve seu arquivo e reinicie o Apache `/etc/apache2/conf.d/apache2 restart`.
+Salve seu arquivo e reinicie o Apache.
 
 Se você não encontrou problemas até aqui, então chegou a hora da diversão.
 
 Crie seu script CGI (veja os exemplos abaixo) e tente acessá-lo via browser.
 
+
+
+
+Exemplos de arquivos CGI em diversas linguagens
+---
 
 
 ### Exemplo CGI - Python
