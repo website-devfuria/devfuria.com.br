@@ -1,11 +1,21 @@
 ---
 layout:      grid12-article
 title:       CGI Servindo páginas web (html)
-description: 
+description: Este artigo é um exemplo de utilização de scripts CGI sendo servidos pelo Apache
 ---
 
+Este artigo é um exemplo de utilização de scripts CGI sendo servidos pelo Apache. Irei mostrar como configurar o Apache 
+para executar os scripts CGI. Os scripts podem estar escritos em qualquer linguagem, neste artigo veremos exemplos de
+CGI em Python, Pearl, C e em Shel Script.
+
+Eu utilizo o __Debian 7 (wheezy)__ como desktop. Futuramente, eu pretendo acrescentar a esta matéria como configurar no
+CentOS (família HedHat). 
+
+
+### O que é CGI ?
+
 __CGI__ é um acrónimo para a expressão inglesa __Common Gateway Interface__. Consiste numa importante tecnologia que 
-permite gerar páginas dinâmicas, permitindo a um navegador passar parâmetros para um programa alojado num servidor web.
+permite gerar páginas dinâmicas, permitindo a um navegador passar parâmetros para um programa alojado em um servidor web.
 Assim, designam-se por __scripts CGI__ os pequenos programas (veja exemplos ao longo da matéria) que interpretam esses
 parâmetros e geram a página depois de os processar. (wikipedia)
 
@@ -14,9 +24,7 @@ parâmetros e geram a página depois de os processar. (wikipedia)
 Configurando o Apache (virtual hosts)
 ---
 
-Esta é a parte que irá te dar mais trabalho, a não ser que você seja ninja com o Apache. Neste exemplo eu utilizo o
-__Debian 7 (wheezy)__ como desktop. Futuramente, eu pretendo acrescentar a esta matéria como configurar no CentOS (família
-HedHat). Por enquanto, posso deixar a dica para o pessoal do HedHat: faça as alterações no arquivo `httpd.conf`.
+Esta é a parte que irá te dar mais trabalho, a não ser que você seja ninja com o Apache. 
 
 Nosso objetivo é acessar via navegador o script CGI e este, por sua vez, devolver um trecho de HTML.
 
@@ -74,6 +82,8 @@ Você pode utilizar o HTML abaixo.
 </html>
 ```
 
+Crie um arquivo chamado `index.html` na pasta `/pasta/de/projetos/foo` e insira o código acima.
+
 Tente acessar o endereço `www.foo.local`, ele deve mostrar o conteúdo do arquivo HTML que acabamos de criar.
 
 Se precisar saber mais sobre Virtual Host, leia a matéria [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/).
@@ -84,7 +94,10 @@ Se precisar saber mais sobre Virtual Host, leia a matéria [Apache - Configurand
 
 Agora vem a configuração para os script CGI.
 
-Altere o arquivo `foo` para o exemplo abaixo.
+Altere o arquivo `foo` para o exemplo abaixo e reinicie o Apache.
+
+Estamos considerando que os scripts em CGI estão armazenados na pasta `/pasta/de/projetos/foo/cgi-bin/` e que para 
+acessá-los via browser você terá que usar a URL `http://www.foo.local/cgi-bin/nome-do-arquivo-cgi`, por exemplo.
 
 ```linux-config
 <VirtualHost *:80>
