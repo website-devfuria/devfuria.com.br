@@ -1,9 +1,8 @@
 ---
 layout:      grid12-article
-title:       WSGI Servindo páginas web (html)
-description: 
+title:       Python, servindo páginas HTML com WSGI
+description: Neste artigo vamos executar script Python utilizando o WSGI.
 ---
-
 
 Neste artigo vamos configurar o Apache para executarmos script Python utilizando o WSGI.
 
@@ -45,7 +44,7 @@ Nossa estrutura de arquivos será parecida com a seguinte.
 
     /projetos/
         /foo/
-            /cgi-bin/
+            /wsgi-bin/
                 index.py
 
 OK, primeiro, precisamos incluir a seguinte linha no arquivo `/etc/hots`:

@@ -39,6 +39,20 @@ deveria funcionar e implementa as funções até os testes passarem.
 
 
 
+Gerar páginas web (HTML) com Python
+---
+
+Para que páginas web sejam servidas por scripts Python devemos ter o servidor web devidamente configurado e também 
+precisaremos entender os diferentes protocolos que fazem a ponte entre os scrips Python e o Servidor Web. Pois, sozinho,
+o servidor não saberá como fazer a ligação entre a requisição e a linguagem Python.
+
+<div class="list-group">
+    <a href="/python/servindo-paginas-html-com-cgi/" class="list-group-item">Python, servindo páginas HTML com CGI</a>
+    <a href="/python/servindo-paginas-html-com-wsgi/" class="list-group-item">Python, servindo páginas HTML com WSGI</a>
+</div>
+
+
+
 
 Experimente Python 3
 ---
