@@ -124,7 +124,7 @@ Na seção Python (atual):
 
 - [Python, servindo páginas HTML com WSGI](/python/servindo-paginas-html-com-wsgi/)
 
-Na seção [Miscellaneous](/misc/)
+Na seção [Miscellaneous](/misc/):
 
 - [Arquivo hosts (/etc/hosts)](/misc/arquivo-hosts/)
 - [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/)

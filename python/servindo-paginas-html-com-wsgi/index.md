@@ -22,14 +22,17 @@ e vice-versa.
 
 !["wsgi"](diagrama-wsgi-servidor.png "wsgi")
 
-###O que o WSGI NÂO é...
+### O que o WSGI NÂO é...
 
 Não é mais um framework web em Python, nem é uma especificação enorme e assustadora que deve ser evitada a todo custo.
 
-
-
 <hr>
-Fonte [slideshare.net/wsgi](http://www.slideshare.net/hdiogenes/wsgi-a-resposta-para-a-questo-definitiva-sobre-python-a-web-e-tudo-mais-368429 "link-externo")
+Fontes
+
+- [slideshare.net/wsgi](http://www.slideshare.net/hdiogenes/wsgi-a-resposta-para-a-questo-definitiva-sobre-python-a-web-e-tudo-mais-368429 "link-externo")
+- [code.google.com - modwsgi](https://code.google.com/p/modwsgi/ "link-externo")
+- [wsgi.org/](http://wsgi.readthedocs.org/en/latest/ "link-externo")
+- [PEP 333 (Python Enhancement proposal #333)](https://www.python.org/dev/peps/pep-0333/ "link-externo")
 
 
 
@@ -199,9 +202,16 @@ Crie um arquivo denominado `terceiro-exemplo.py` na pasta `/pasta/de/projetos/fo
 
 
 
-Referências
+
+Veja Também
 ---
 
-- [code.google.com - modwsgi](https://code.google.com/p/modwsgi/ "link-externo")
-- [wsgi.org/](http://wsgi.readthedocs.org/en/latest/ "link-externo")
-- [PEP 333 (Python Enhancement proposal #333)](https://www.python.org/dev/peps/pep-0333/ "link-externo")
+Na seção Python (atual):
+
+- [Python, servindo páginas HTML com CGI](/python/servindo-paginas-html-com-cgi/)
+
+Na seção [Miscellaneous](/misc/):
+
+- [Arquivo hosts (/etc/hosts)](/misc/arquivo-hosts/)
+- [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/)
+- [CGI Servindo páginas web (html)](/misc/cgi-common-gateway-interface/)
