@@ -4,7 +4,7 @@ title:        Python, servindo páginas HTML com CGI
 description:  Neste artigo escreveremos alguns scripts CGI em Ptyhon e veremos eles funcionando através do navegador como páginas HTML
 ---
 
-__Gerar páginas web com Python__ é uma das primeiras perguntas que fazemos quando iniciamos os estudos em Python.
+__Como gerar páginas web com Python ?__ é uma das primeiras perguntas que fazemos quando iniciamos os estudos em Python.
 
 Para que páginas web sejam servidas por scripts Python devemos ter o servidor web devidamente configurado e também 
 precisaremos entender os diferentes protocolos que fazem a ponte entre os scrips Python e o Servidor Web. Pois, sozinho,
@@ -15,8 +15,8 @@ Apache como servidor web. Mostrarei como fazer a configuração do Apache, mas o
 o que é como configurar uma __Virtual Host__. Outra coisa, meu sistema operacional é o Debian (Wheezy), se você estiver 
 em um Linux da família HedHat, terá que adequar as configurações.
 
-Neste exemplo, nosso objetivo será acessarmos o endereço `www.foo.local/cgi-bin` e  encontramos o resultado de nossos 
-scripts CGI na pasta `/pasta/de/projetos/foo/cgi-bin/`.
+Neste exemplo, nosso objetivo será acessar o endereço `www.foo.local/cgi-bin` e  encontrar o resultado de nossos scripts
+ CGI na pasta `/pasta/de/projetos/foo/cgi-bin/`.
 
 
 
@@ -114,3 +114,18 @@ def app(environ, start_response):
 
 CGIHandler().run(app)
 ```
+
+
+
+Veja Também
+---
+
+Na seção Python (atual):
+
+- [Python, servindo páginas HTML com WSGI](/python/servindo-paginas-html-com-wsgi/)
+
+Na seção [Miscellaneous](/misc/)
+
+- [Arquivo hosts (/etc/hosts)](/misc/arquivo-hosts/)
+- [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/)
+- [CGI Servindo páginas web (html)](/misc/cgi-common-gateway-interface/)
