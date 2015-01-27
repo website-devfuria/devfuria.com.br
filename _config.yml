@@ -8,12 +8,10 @@ description: "Site de desenvolvimento web"
 markdown: redcarpet
 highlighter: pygments
 permalink: pretty
-exclude: [linux, logica-de-programacao, git, python, javascript, php, seguranca-da-informacao, sql, html-css, regex, misc, tdd]
+#exclude: [linux, logica-de-programacao, git, python, javascript, php, seguranca-da-informacao, sql, html-css, regex, misc, tdd]
 
 host: 0.0.0.0
 port: 4000
 
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/foo.html"
+gems:
+  - jekyll-sitemap
