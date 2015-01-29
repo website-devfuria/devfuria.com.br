@@ -63,10 +63,14 @@ Na pasta `/etc/apache2/sites-available` crie um arquivo denominado `foo.local` e
 Terceiro, habilite o Virtual Host com o comando `a2ensite`:
 
 ```linux-config
-# vá até a pasta `sites-available`
+#
+# Vá até a pasta `sites-available`
+#
 cd /etc/apache2/sites-available
 
+#
 # habilite o virtual host
+#
 a2ensite teste-wsgi
 ```
    
