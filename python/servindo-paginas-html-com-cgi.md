@@ -1,22 +1,23 @@
 ---
 layout:       grid12-article
 title:        Python, servindo páginas HTML com CGI
-description:  
+description:  Neste artigo escreveremos alguns scripts CGI em Ptyhon e veremos eles funcionando através do navegador como páginas HTML
 ---
 
-Gerar páginas web com Python é uma das primeiras perguntas que fazemos quando iniciamos os estudos em Python.
+__Como gerar páginas web com Python ?__ é uma das primeiras perguntas que fazemos quando iniciamos os estudos em Python.
 
 Para que páginas web sejam servidas por scripts Python devemos ter o servidor web devidamente configurado e também 
 precisaremos entender os diferentes protocolos que fazem a ponte entre os scrips Python e o Servidor Web. Pois, sozinho,
 o servidor não saberá como fazer a ligação entre a requisição e a linguagem Python.
 
-Neste artigo utilizaremos o Apache como servidor web e vamos cobrir o protocolo CGI.
+Neste artigo escreveremos alguns __scripts CGI em Ptyhon e veremos eles funcionando através do navegador__, utilizaremos o 
+Apache como servidor web. Mostrarei como fazer a configuração do Apache, mas o ideal é que você saiba o que é o __arquivo /etc/hosts__ e também 
+o que é como configurar uma __Virtual Host__. Outra coisa, meu sistema operacional é o Debian (Wheezy), se você estiver 
+em um Linux da família HedHat, terá que adequar as configurações.
 
-Mostrarei como fazer a configuração do Apache, mas o ideal é que você saiba o que é o __arquivo /etc/hosts__ e também 
-o que é como configurar uma __Virtual Host__.
+Neste exemplo, nosso objetivo será acessar o endereço `www.foo.local/cgi-bin` e  encontrar o resultado de nossos scripts
+ CGI na pasta `/pasta/de/projetos/foo/cgi-bin/`.
 
-O objetivo e acessarmos o endereço `www.foo.local/cgi-bin` e  encontramos o resultado de nossos script em CGI na pasta
-`/pasta/de/projetos/foo/cgi-bin/`.
 
 
 Configurando o Apache
@@ -100,7 +101,8 @@ print '</html>'
 
 O (segundo) exemplo seguinte utiliza o módulo __CGIHandler__.
 
-Crie um arquivo denominado `segundo-exemplo.py` na pasta `/pasta/de/projetos/foo/cgi-bin/` e acesse a URL `www.foo.local/cgi-bin/segundo-exemplo.py`
+Crie um arquivo denominado `segundo-exemplo.py` na pasta `/pasta/de/projetos/foo/cgi-bin/` e acesse a URL 
+`www.foo.local/cgi-bin/segundo-exemplo.py`
 
 ```python
 #!/usr/bin/python
@@ -112,3 +114,18 @@ def app(environ, start_response):
 
 CGIHandler().run(app)
 ```
+
+
+
+Veja Também
+---
+
+Na seção Python (atual):
+
+- [Python, servindo páginas HTML com WSGI](/python/servindo-paginas-html-com-wsgi/)
+
+Na seção [Miscellaneous](/misc/):
+
+- [Arquivo hosts (/etc/hosts)](/misc/arquivo-hosts/)
+- [Apache - Configurando Virtual Hosts](/misc/apache-virtual-host/)
+- [CGI Servindo páginas web (html)](/misc/cgi-common-gateway-interface/)

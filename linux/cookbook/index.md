@@ -43,6 +43,7 @@ description: Guia prático de instalações de softwares para Linux
 
 <div class="list-group">
     <a href="/linux/cookbook/apache-via-yum-apt-get/" class="list-group-item">Instalando e configurando o Apache no Linux</a>
+    <a href="/linux/cookbook/apache-wsgi/" class="list-group-item">Instalando o módulo WSGI</a>
 </div>
 
 
