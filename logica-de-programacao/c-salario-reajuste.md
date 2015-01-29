@@ -1,15 +1,20 @@
 ---
-layout:      grid12-article
-title:       "Reajustando o salário- linguagem c"
+layout:      grid93-article
+title:       "Reajustando o salário <small>(linguagem C)</small>"
 description: Exercício de lógica de programação - calcular o reajuste do salário.
+menu:        logica-exerc-nivel-01
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Sendo o salário de 1.000,00 e o reajuste de 15%, faça um algoritmo que calcule o reajuste de um salário.
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Escreva o teste.
 
@@ -30,8 +35,9 @@ Substituímos os valores por variáveis.
 
 Testes passando, trabalho acabado. 
 
-Código quase final
----
+
+
+### Código quase final
 
 ```c
 #include <stdio.h>
@@ -90,8 +96,7 @@ Só que eu não pesei nisso tudo, eu simplesmente programei, e meu código ficou
 Os testes passaram, porém...
 
 
-Código complicado
----
+### Código complicado
 
 ```c
 #include <stdio.h>
@@ -134,8 +139,7 @@ Mas como saber se seu código funciona? Rode os testes.
 Ufa, agora sim fim da linha.
 
 
-Código refatorado
----
+### Código refatorado
 
 ```c
 #include <stdio.h>

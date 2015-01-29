@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Votos em relação ao total de eleitores- linguagem c"
+layout:      grid93-article
+title:       "Votos em relação ao total de eleitores <small>(linguagem C)</small>"
 description: Exercício de lógica de programação onde calculamos o porcentual de votos em relação ao total de eleitores.
+menu:        logica-exerc-nivel-01
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Considerando a tabela abaixo...
@@ -17,8 +23,7 @@ __Dica:__ "em relação ao total" significa que você deve dividir pelo total de
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Vou começar com os votos válidos (800).
 
@@ -46,8 +51,9 @@ Agora é só seguir essa mesma linha de raciocínio.
 Boa sorte!
 
 
-Código completo
----
+
+
+### Código completo
 
 ```c
 #include <stdio.h>

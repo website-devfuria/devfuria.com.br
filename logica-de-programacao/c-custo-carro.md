@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Custo de fabricação de um carro - linguagem c"
+layout:      grid93-article
+title:       "Custo de fabricação de um carro <small>(linguagem C)</small>"
 description: Exercício de lógica de programação resolvido para descobrir o custo final de um carro.
+menu:        logica-exerc-nivel-01
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 O custo de um carro novo ao consumidor é obtido com a seguinte fómula:
@@ -17,8 +23,7 @@ Considerando os valores abaixo, faça um programa para calcular o custo de fabri
     Percentual dos Impostos  = 45%
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Este exercício é ótimo para praticar __TDD__, pois o problema é grande mas o __TDD__ nos ensina que podemos dar passsos
 pequenos quando nos sentimos "inseguro" quanto a solução do problema.
@@ -97,8 +102,7 @@ E já podemos, também, subistituir os `10000.0f` pela variável `custoFabrica`.
 Fim da linha, transformamos uma suposição em afirmação.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

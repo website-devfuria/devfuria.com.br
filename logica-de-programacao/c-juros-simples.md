@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Juros simples - linguagem c"
+layout:      grid93-article
+title:       "Juros simples <small>(linguagem C)</small>"
 description: Exercício de lógica de programação - como calcular o juros simples.
+menu:        logica-exerc-nivel-01
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Calcular o juros simples produzido pelo empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
@@ -16,8 +22,7 @@ Onde:
     n = períodos
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Escreva um teste.
 
@@ -44,8 +49,7 @@ Rode os testes (compile e execute).
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

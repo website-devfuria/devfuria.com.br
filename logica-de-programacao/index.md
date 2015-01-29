@@ -46,17 +46,12 @@ Exercícios na linguagem C
 
 ### Exercícios nível 0 (mais fácil que a Seleção Brasileira...)
 
-{% include /menus/logica-exerc-nivel-01.html %}
+{% include /menus/logica-exerc-nivel-00.html %}
 
 
 ### Exercícios nível 1
 
-<div class="list-group">
-    <a href="/logica-de-programacao/c-custo-carro/" class="list-group-item">Custo de fabricação de um carro</a>
-    <a href="/logica-de-programacao/c-juros-simples/" class="list-group-item">Juros simples</a>
-    <a href="/logica-de-programacao/c-salario-reajuste/" class="list-group-item">Reajustando o salário</a>
-    <a href="/logica-de-programacao/c-eleitores/" class="list-group-item">Votos em relação ao total de eleitores</a>
-</div> 
+{% include /menus/logica-exerc-nivel-01.html %}
 
 
 
