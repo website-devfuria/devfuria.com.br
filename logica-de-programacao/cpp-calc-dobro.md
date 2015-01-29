@@ -1,15 +1,19 @@
 ---
-layout:      grid12-article
-title:       "O dobro de um número qualquer - linguagem c++"
+layout:      grid93-article
+title:       "O dobro de um número qualquer <small>(linguagem C++)</small>"
 description: Exercício de lógica de programação resolvido. O objetivo é criar uma classe para calcular o dobro de um número qualquer.
+menu:        logica-exerc-oop-00
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Seu objetivo é fazer uma classe denominada `Calc` com um método que retorne o dobro de um número.
 
 
-Solução passo a passo
----
-
+### Solução passo a passo
 
 Começamos sempre com o teste.
 
@@ -76,8 +80,7 @@ Que tal isso?
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <iostream>

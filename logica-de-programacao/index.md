@@ -91,13 +91,7 @@ Faremos todos os exercícios praticando programação orientada a objetos.
 Se você não sabe nada sobre orientação a objetos, talvez queira ler...
 [O básico do básico sobre Orientação a Objetos (vulgo OOP)]().
 
-<div class="list-group">
-    <a href="/logica-de-programacao/cpp-calc-dobro/" class="list-group-item">O dobro de um número qualquer (oop)</a>
-    <a href="/logica-de-programacao/cpp-area-quadra-cubo/" class="list-group-item">Area quadrada e área cúbica</a>
-    <a href="/logica-de-programacao/cpp-antecessor-sucessor/" class="list-group-item">Antecessor e sucessor de um número qualquer (oop)</a>
-    <a href="/logica-de-programacao/cpp-juros-simples/" class="list-group-item">Juros simples (oop)</a>
-    <a href="/logica-de-programacao/cpp-triangulo/" class="list-group-item">Triangulo</a>
-</div> 
+{% include /menus/logica-exerc-oop-00.html %}
 
 
 

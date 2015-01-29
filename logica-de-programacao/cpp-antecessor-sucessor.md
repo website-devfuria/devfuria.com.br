@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Antecessor e sucessor de um número qualquer - linguagem c++"
+layout:      grid93-article
+title:       "Antecessor e sucessor de um número qualquer <small>(linguagem C++)</small>"
 description: Exercício de lógica de programação resolvido cujo objetivo é, com o auxílio de classes, encontrar o sucessor e antecessor de um número qualquer.
+menu:        logica-exerc-oop-00
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Seu objetivo é construir uma classe denominada `Calc` com duas funções.
@@ -12,10 +18,7 @@ A segunda função mostrará o sucessocer de um número qualquer.
 
 
 
-
-Solução passo a passo
----
-
+### Solução passo a passo
 
 Nós já resolvemos esse problema de forma estruturada em outra matéria (linguagem c).
 
@@ -65,8 +68,7 @@ Acredito que você poderá fazer isso sozinho(a). Boa sorte.
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <iostream>

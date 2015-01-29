@@ -1,15 +1,20 @@
 ---
-layout:      grid12-article
-title:       Área quadrada e área cúbica - linguagem c++"
+layout:      grid93-article
+title:       Área quadrada e área cúbica <small>(linguagem C++)</small>"
 description: Exercício de lógica de programação resolvido cujo objetivo é, com o auxílio de classes, encontrar a área quadra e cúbica.
+menu:        logica-exerc-oop-00
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Seu objetivo é construir uma classe denominada `Area` que calcule tanto a área quadrada (primeiro método) como a
 área cúbica (segundo método).
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Ok, vamos dividir para conquistar. Ataquemos a primeira função, a área quadrada.
 
@@ -94,9 +99,7 @@ Vemos o teste falhar (red) e partimos para o esforço de vê-lo passar (green).
 Tudo verde? Coisa linda.
 
 
-
-Código completo
----
+### Código completo
 
 ```c
 #include <iostream>

@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Triângulo - linguagem c++"
+layout:      grid93-article
+title:       "Triângulo <small>(linguagem C++)</small>"
 description: Exercício de lógica de programação com OOP e TDD - triângulos.
+menu:        logica-exerc-oop-00
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Dados 3 valores quaisquer (a, b e c) representando as medidas dos lados de um triângulo,
@@ -13,8 +19,9 @@ Utilize programação orientada a objetos.
 
 Obs: no final do exercício há um complemento, vale apena ver.
 
-Solução passo a passo
----
+
+
+### Solução passo a passo
 
 OK, meu objetivo é criar uma função para determinar se é os dados compõem ou não um triângulo.
 
@@ -63,8 +70,7 @@ Agora é só implementar o método `ehTriangulo`
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <iostream>
@@ -101,8 +107,7 @@ int main() {
 ```
 
 
-Um mês depois...
----
+### Um mês depois...
 
 Seu chefe olha para você e diz que "o programa __também__ deverá informar se os valores formam um triângulo equilátero, 
 isósceles ou escaleno" e entrega a você as seguintes regras:
@@ -311,8 +316,8 @@ Pô, esse é o inverso do escaleno. Darei uma passo grande, eis o teste:
 Tudo passou!.
 
 
-Código final
----
+
+### Código final
 
 ```c
 #include <iostream>
@@ -421,8 +426,7 @@ int main() {
 Código limpo e funcionando.
 
 
-Um mês depois
----
 
+### Um mês depois
 
 Chega! É brincadeira!
