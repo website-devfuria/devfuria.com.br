@@ -53,6 +53,17 @@ o servidor não saberá como fazer a ligação entre a requisição e a linguage
 
 
 
+Framework Flask
+---
+
+O Flask é um framework minimalista para Python.
+
+<div class="list-group">
+    <a href="/python/flask/" class="list-group-item">Flask - Introdução</a>
+    <a href="/python/flask-apache/" class="list-group-item">Flask - Fazendo deploy com Apache</a>
+</div>
+
+
 
 Experimente Python 3
 ---

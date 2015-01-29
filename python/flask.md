@@ -1,8 +1,18 @@
 ---
 layout:      grid93-article
 title:       Python Flask - Introdução
-description: 
+description: Este artigo é uma breve introdução ao framework Flask e pode servir como um tutorial prático para quem quer dar os primeiros passos com o Flask
 ---
+
+Este artigo é uma breve introdução ao framework [Flask](http://flask.pocoo.org/ "link-externo") e pode servir como um
+tutorial prático para quem quer dar os primeiros passos com o Flask.
+
+Irei mostrar como instalar o Flask de modo bem simples e também mostrar o "Hello World!" com Flask, além de uma breve
+noção do que vem a ser esse tal de Fask...
+
+
+
+### O que é Flask ?
 
 Flask é um micro-framework para Python, segundo a documentação...
 
@@ -31,7 +41,7 @@ entre aplicações web Python e servidores HTTP para desenvolvimento e implanta�
 Se você executar o comando `pip install Flask` estará partindo para uma instalação "global" no seu desktop, imaginando 
 que você está no Linux e possui o [pip](/linux/cookbook/pip/) instalado além do próprio [Python](linux/cookbook/python/),
 é claro. Com esse tipo de instalação, a instrução `from flask import Flask` poderá ser executada de qualquer "lugar", 
-esse é o ideal ? Não! O politicamente correto seria partir para um instalação que faz uso do 
+esse é o ideal ? Não! O "politicamente correto" seria partir para um instalação que faz uso do 
 [Virtualenv](/linux/cookbook/virtualenv/). Imaginado que você esteja começando com universo Python, minha
 sugestão é dividir para conquistar:
 
@@ -58,17 +68,27 @@ if __name__ == "__main__":
     app.run()
 ```
 
-Agora, execute o arquivo a partir do terminal e acesse o resultado através do endereço `http://127.0.0.1:5000/, você
+Agora, execute o arquivo a partir do terminal e acesse o resultado através do endereço `http://127.0.0.1:5000/`, você
 deve estar vendo a mensagem "Hello World!".
 
     python hello.py
     * Running on http://127.0.0.1:5000/
 
-Dica: Se você não quiser abandonar o terminal e abrir o navegador para testar a URL, experimente o utilitário __curl__
-do Linux. Você poderá, no terminal, acessar a URL, veja:
+Dica: Se você não quiser abandonar o terminal ao abrir o navegador para testar a URL, experimente o utilitário __curl__
+do Linux. Com ele você poderá, no terminal, acessar a URL, veja:
 
     curl http://127.0.0.1:5000/
     Hello World!
 
 
 
+### Fechando a conta
+
+E aí, conseguiu instalar o Flask e vê-lo funcionado ?
+
+Espero que sim, pois esse era o objetivo do artigo.
+
+Se você não conseguiu seguir o passo a passo deste tutorial e se achou que faltou alguma informação, fique à vontade
+para expor seu comentário. Este artigo é para te ajudar com um "ponta pé" inicial. Se você instalou o Flask e rodou o 
+"Hello World!" deve estar-se perguntando: __"O que vem depois ?"__ Por enquanto, vou deixá-lo com a documentação do
+[Flask](http://flask.pocoo.org/docs/0.10/ "link-externo"), em breve escreverei mais artigos sobre o framework.
