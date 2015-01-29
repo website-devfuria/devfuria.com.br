@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "O dobro de um número qualquer <small>(linguagem C)</small>"
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular o dobro de um número qualquer.
-menu:        logica-exerc-nivel-01
+menu:        logica-exerc-nivel-00
 ---
 
 {% include /menus/logica-paraquedas.html %}

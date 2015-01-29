@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Descobrir os dias de 'n' meses <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para descobrir os dias de n meses.
-menu:        logica-exerc-nivel-01
+menu:        logica-exerc-nivel-00
 ---
 
 {% include /menus/logica-paraquedas.html %}

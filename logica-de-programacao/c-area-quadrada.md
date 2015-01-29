@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Área quadrada <small>(linguagem C)</small>"
 description: Exercício de lógica de programação resolvido onde o objetivo é encontrar a área quadrada.
-menu:        logica-exerc-nivel-01
+menu:        logica-exerc-nivel-00
 ---
 
 {% include /menus/logica-paraquedas.html %}
