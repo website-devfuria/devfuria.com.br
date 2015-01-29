@@ -9,8 +9,7 @@ description: Aprenda como instalar o módulo WSGI para servir páginas em HTML
 WSGI é um acrônimo para __Web Server Gateway Interface__, trata-se de uma forma para servidores conversarem com frameworks,
 e vice-versa.
 
-<hr>
-Fontes
+Leia mais em ...
 
 - [code.google.com - modwsgi](https://code.google.com/p/modwsgi/ "link-externo")
 - [wsgi.org/](http://wsgi.readthedocs.org/en/latest/ "link-externo")
