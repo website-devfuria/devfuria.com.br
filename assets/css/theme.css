@@ -9,7 +9,6 @@ body {
 p {
     margin:1em 0;
     line-height:1.5em;
-    text-align: justify;
 }
 table {
     font-size:inherit;
@@ -87,7 +86,9 @@ sup {
 
 
 /* Enxertos devfuria */
-
+article p {
+    text-align: justify;
+}
 /* Extra small devices (phones, less than 768px)
  * No media query since this is the default in Bootstrap
  * Small devices (tablets, 768px and up)
