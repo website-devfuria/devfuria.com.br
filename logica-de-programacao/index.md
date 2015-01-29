@@ -67,13 +67,7 @@ Exercícios de lógica envolvendo [funções]().
 
 Exercícios para treinar [laços de repetição na linguagem C]().
 
-<div class="list-group">
-    <a href="/logica-de-programacao/c-primo/" class="list-group-item">Número primo</a>
-    <a href="/logica-de-programacao/c-soma-digitos/" class="list-group-item">Soma dos dígitos</a>
-    <a href="/logica-de-programacao/c-mdc/" class="list-group-item">MDC máximo divisor comum</a>
-    <a href="/logica-de-programacao/c-mmc/" class="list-group-item">MMC mínimo múltiplo comum</a>
-</div> 
-
+{% include /menus/logica-exerc-nivel-03.html %}
 
 ### Exercícios nível 4
 

@@ -1,12 +1,19 @@
 ---
-layout:      grid12-article
-title:       "Somar dígitos - linguagem c"
+layout:      grid93-article
+title:       "Somar dígitos <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para dígitos de um inteiro.
+menu:        logica-exerc-nivel-03
 ---
 
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
 Faça um programa para somar os dígitos de um inteiro
 
 Sem utilizar recursos de string, ou seja, trabalhe apenas com tipos numéricos.
+
+### Código completo
 
 
 ```c

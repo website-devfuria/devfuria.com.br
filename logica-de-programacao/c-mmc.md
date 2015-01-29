@@ -1,13 +1,19 @@
 ---
-layout:      grid12-article
-title:       "MMC mínimo múltiplo comum - linguagem c"
+layout:      grid93-article
+title:       "MMC mínimo múltiplo comum <small>(linguagem C)</small>"
 description: Exercício de lógica de programação ara descubrir o MMC (mínimo múltiplo comum).
+menu:        logica-exerc-nivel-03
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Faça um programa para calcular o MMC (mínimo múltiplo comum) entre dois números.
 
-Primeira solução
----
+
+### Primeira solução
 
 Se calcularmos o __MDC__ poderemos utilizar a propriedade:
 
@@ -48,10 +54,7 @@ int main() {
 ```
 
 
-
-
-Segunda solução
----
+### Segunda solução
 
 ```c
 #include <stdio.h>

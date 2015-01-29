@@ -1,9 +1,14 @@
 ---
-layout:      grid12-article
-title:       "Número primo - linguagem c"
+layout:      grid93-article
+title:       "Número primo <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para descobrir se um número é primo.
+menu:        logica-exerc-nivel-03
 ---
 
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
 
 Faça um programa para identificar se um número é primo.
 
@@ -11,12 +16,11 @@ Saiba que: número primo, é um número natural, maior que 1, apenas divisível 
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Existem n formas para encontrar um número primo. Vou utilizar a forma mais simples de todas.
 
-De posse de uma tabela de números primos, idealizei  a base:
+De posse de uma tabela de números primos, idealizei a base:
 
     int ehPrimo(int num) {
         return 1;
@@ -115,8 +119,7 @@ Perguntaremos para o teste, acrescente mais este:
 Aqui passou! Não se esqueça dos comentários.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>
