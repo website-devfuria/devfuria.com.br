@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Equação de 2 grau - linguagem c"
+layout:      grid93-article
+title:       "Equação de 2 grau <small>(linguagem C)</small>"
 description: Exercício de lógica de programação - bhaskar.
+menu:        logica-exerc-nivel-02
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Utilizando funções, faça um programa que calcule as raízes da equação do 2 grau conforme a fórmula de Bhaskar.
@@ -17,8 +23,7 @@ Lembrando:
 
 
 
-Código completo
----
+### Solução passo a passo
 
 O primeiro objeto é encontrar o __delta__. Que tal uma função para ele?
 
@@ -66,8 +71,7 @@ incluir a biblio `math.h`.
 Agora a segunda raiz é com você.
 
 
-Código comleto
----
+### Código completo
 
 ```c
 #include <math.h>

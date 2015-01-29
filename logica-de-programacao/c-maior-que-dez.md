@@ -1,14 +1,19 @@
 ---
-layout:      grid12-article
-title:       "Maior que 10 - linguagem c"
+layout:      grid93-article
+title:       "Maior que 10 <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para descobrir se valor é maior ou menor que 10.
+menu:        logica-exerc-nivel-02
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
         
 Crie uma função que descubra se um valor é maior ou menor que 10.
 
         
-Solução passo a passo
----
+### Solução passo a passo
 
 O Primeiro teste me pareceu simples.
 
@@ -51,8 +56,7 @@ Que tal isso...
 Meus testes passram, espero que o seus também.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

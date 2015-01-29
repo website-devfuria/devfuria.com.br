@@ -1,14 +1,19 @@
 ---
-layout:      grid12-article
-title:       "Valor positivo ou negativo - linguagem c"
+layout:      grid93-article
+title:       "Valor positivo ou negativo <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para descobrir se um número é positivo ou negativo.
+menu:        logica-exerc-nivel-02
 ---
-        
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
+     
 Crie uma função que descubra se um valor é positivo ou negativo (considere o valor zero como positivo)
 
         
-Solução passo a passo
----
+### Solução passo a passo
 
 Utilizando-se funções, o nosso curso de lógica começa a fazer mais sentido, pois o teste unitário refere-se a uma unidade
 (como o nome sugere). Essa unidade é a nossa função.
@@ -83,8 +88,7 @@ Escrevendo outro teste.
 Compile e execute. Tudo certo?
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

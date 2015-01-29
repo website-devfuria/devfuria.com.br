@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Conversor Celsius/Fahrenheit - linguagem c"
+layout:      grid93-article
+title:       "Conversor Celsius/Fahrenheit <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para converter celsius em fahrenheit e vice versa.
+menu:        logica-exerc-nivel-02
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
         
 Crie duas funções para conversão de temperaturas. 
@@ -16,8 +22,7 @@ Saiba que 100c é igual a 212f, veja fórmula:
        
 
  
-Solução passo a passo
----
+### Solução passo a passo
 
 Primeiro os testes.
 
@@ -40,8 +45,7 @@ O mínimo para eles (os testes) passarem.
 Só nos resta a lógica, agora é com você
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

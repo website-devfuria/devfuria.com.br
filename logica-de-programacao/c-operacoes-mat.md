@@ -1,15 +1,20 @@
 ---
-layout:      grid12-article
-title:       "Funções para as 4 operações artiméticas - linguagem c"
+layout:      grid93-article
+title:       "Funções para as 4 operações artiméticas <small>(linguagem C)</small>"
 description: Escreva uma função para cada uma das quatro operações matemáticas simples.
+menu:        logica-exerc-nivel-02
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Escreva uma função para cada uma das quatro operações matemáticas simples
 (adição, subtrair, multiplicar e dividir).
 
         
-Solução passo a passo
----
+### Solução passo a passo
 
 Quatro operações é muito trabalho. Vamos dividir para conquistar, comecemos pela adição.
    
@@ -55,8 +60,7 @@ Acredito que você já possa andar sozinho(a). O que acha?
 Então termine o exercício.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

@@ -1,15 +1,21 @@
 ---
-layout:      grid12-article
-title:       "O dobro de um número qualquer (funções) - linguagem c"
+layout:      grid93-article
+title:       "O dobro de um número qualquer (funções) <small>(linguagem C)</small>"
 description: Exercício de lógica de programação resolvido onde o objetivo é criar uma função para calcular o dobro de um número qualquer.
+menu:        logica-exerc-nivel-02
 ---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
+
 
 Faça uma função para calcular o dobro de um número qualquer.
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Podemos criar uma função que aceite um número como parâmetro e retorne o dobro deste núemro, certo?
 
@@ -81,8 +87,7 @@ Mas nada no impede de inserirmos um outro teste, de forma a não restar dúvidas
 	assert(12 == dobro(6));
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>
@@ -101,7 +106,3 @@ int main (){
 	return 0;
 }
 ```
-
-
-
-
