@@ -1,10 +1,14 @@
 ---
-layout:      grid12-article
-title:       "Média simples de 3 números - linguagem c"
+layout:      grid93-article
+title:       "Média simples de 3 números <small>(linguagem C)</small>"
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular a média simples.
+menu:        logica-exerc-nivel-01
 ---
 
+{% include /menus/logica-paraquedas.html %}
 
+Exercício de lógica de programação
+---
 
 Faça um programa que calcule a média simples (aritmética) de 3 valores quaisquer.
 
@@ -12,8 +16,7 @@ Utilize as variáveis `valor1`, `valor2` e `valor3`.
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Precisamos de um resultado para escrevermos o teste: `7 = (6 + 7 + 8) / 3`. Este serve.
 
@@ -50,8 +53,7 @@ Mexeu no código? Então rode o teste (compile e execute).
 Se tiver passando (green), chegamos ao final.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

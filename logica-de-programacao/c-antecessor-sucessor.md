@@ -1,17 +1,20 @@
 ---
-layout:      grid12-article
-title:       "Antecessor e sucessor de um número qualquer - linguagem c"
+layout:      grid93-article
+title:       "Antecessor e sucessor de um número qualquer <small>(linguagem C)</small>"
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular o sucessor e o antecessor de um número qualquer.
+menu:        logica-exerc-nivel-01
 ---
 
+{% include /menus/logica-paraquedas.html %}
 
+Exercício de lógica de programação
+---
 
 Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Se o número fosse o `10`, por exemplo, qual seria o próximo (sucessor) e o anterior (antecessor)?
 
@@ -56,8 +59,7 @@ A variável `numero` precisa interagir com as demais para termos o processamento
 Rode os testes. Passaram? Tudo verde? Sim? Seu trabalho acabou.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

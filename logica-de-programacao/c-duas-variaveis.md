@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Trocar o valor de duas variáveis - linguagem c"
+layout:      grid93-article
+title:       "Trocar o valor de duas variáveis <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para trocar o valor de duas variáveis.
+menu:        logica-exerc-nivel-01
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Escreva um algoritmo que armazene o valor 999 na variável `a` e o valor 555 na variável `b`.
@@ -11,8 +17,7 @@ fazendo com que o valor que está em `a` passe para `b` e vice-versa.
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Pelo raciocínio lógico, o que queremos fazer deve se parecer com isto.
 
@@ -46,8 +51,7 @@ E, finalmente, sobrescrever o valor de `b` pelo valor de `temp` (nosso `a` origi
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

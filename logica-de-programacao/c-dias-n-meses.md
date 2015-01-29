@@ -1,16 +1,20 @@
 ---
-layout:      grid12-article
-title:       "Descobrir os dias de 'n' meses - linguagem c"
+layout:      grid93-article
+title:       "Descobrir os dias de 'n' meses <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para descobrir os dias de n meses.
+menu:        logica-exerc-nivel-01
 ---
 
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
 
 Considerando que todos os meses tenham 30 dias, calcular o total de dias de n meses.
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Precisamos de um exemplo. Que tal `7 meses * 30 dias = 210 dias` ?
 
@@ -38,8 +42,7 @@ Rode o teste (compile e execute). Se passarem, nosso trabalhou acabou.
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

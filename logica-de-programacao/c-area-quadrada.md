@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Área quadrada - linguagem c"
+layout:      grid93-article
+title:       "Área quadrada <small>(linguagem C)</small>"
 description: Exercício de lógica de programação resolvido onde o objetivo é encontrar a área quadrada.
+menu:        logica-exerc-nivel-01
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Sabendo que a área quadrada é dada pela multiplicação dos lados, escreva um algoritmo que mostre a área quadrada de
@@ -13,8 +19,7 @@ Exemplo:
 * 3 . 9 = 27
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 O enunciado já nos deu a solução. Então vamos começar pelo teste.
 
@@ -55,8 +60,7 @@ Após compilar, execute para rodar o teste e ver se está tudo funcionando.
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>
