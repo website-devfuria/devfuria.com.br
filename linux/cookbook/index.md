@@ -77,6 +77,7 @@ description: Guia prático de instalações de softwares para Linux
 ###  Útils
 
 <div class="list-group">
+    <a href="/linux/cookbook/virtualbox/" class="list-group-item">Instalando o VirtualBox no Linux</a>
     <a href="/linux/cookbook/git/" class="list-group-item">Instalando o git</a>
     <a href="/linux/cookbook/java/" class="list-group-item">Instalando o Java (jdk)</a>
     <a href="/linux/cookbook/7z/" class="list-group-item">Instalando 7-Zip (7z, 7zip, sevenzip)</a>
