@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Maior e menor índice do vetor - linguagem c"
+layout:      grid93-article
+title:       "Maior e menor índice do vetor <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para descobrir o índice do maior e o menor valor do vetor.
+menu:        logica-exerc-nivel-04v
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Dado um vetor qualquer sem valores repetidos, descubra qual é o __índice do maior valor__ e o __índice do menor valor__.

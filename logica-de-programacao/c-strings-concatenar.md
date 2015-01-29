@@ -1,14 +1,23 @@
 ---
-layout:      grid12-article
-title:       "Concatenar duas strings - linguagem c"
+layout:      grid93-article
+title:       "Concatenar duas strings <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para concatenar duas strings.
+menu:        logica-exerc-nivel-04s
 ---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
+
 
 Faça um programa para concatenar duas strings.
 
 
+
 Solução(ões)
 ---
+
 
 Começamos pelo teste...
 

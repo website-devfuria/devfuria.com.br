@@ -73,23 +73,12 @@ Exercícios para treinar [laços de repetição na linguagem C]().
 
 Exercícios para treinar [vetores na linguagem C]().
 
-<div class="list-group">
-    <a href="/logica-de-programacao/c-vetor-simples/" class="list-group-item">Vetor simples - algoritmo para carregar um vetor</a>
-    <a href="/logica-de-programacao/c-vetor-soma/" class="list-group-item">Vetor soma - função para somar vetor</a>
-    <a href="/logica-de-programacao/c-vetor-copia/" class="list-group-item">Vetor cópia - algorítimo para copiar um vetor</a>
-    <a href="/logica-de-programacao/c-vetor-maior-menor-indice/" class="list-group-item">Maior e menor índice do vetor</a>
-    <a href="/logica-de-programacao/c-vetor-valores-repetidos/" class="list-group-item">Valores repetidos em vetor</a>
-</div> 
+{% include /menus/logica-exerc-nivel-04v.html %}
 
 Ainda exercícios para treinar vetores, mas desta vez utilizando [strings]().
 
-<div class="list-group">
-    <a href="/logica-de-programacao/c-strings-contar/" class="list-group-item">Contar quantidade de caracter da string</a>
-    <a href="/logica-de-programacao/c-strings-contar-vogais/" class="list-group-item">Contar quantidade de vogais</a>
-    <a href="/logica-de-programacao/c-strings-comparar/" class="list-group-item">Comparar duas strings</a>
-    <a href="/logica-de-programacao/c-strings-concatenar/" class="list-group-item">Concatenar duas strings</a>
-    <a href="/logica-de-programacao/c-strings-reverse/" class="list-group-item">Inverter string </a>
-</div> 
+{% include /menus/logica-exerc-nivel-04s.html %}
+
 
 
 

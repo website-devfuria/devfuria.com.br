@@ -1,14 +1,20 @@
 ---
-layout:      grid12-article
-title:       "Inverter string - linguagem c"
+layout:      grid93-article
+title:       "Inverter string <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para inverter uma string.
+menu:        logica-exerc-nivel-04s
 ---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
+
 
 Faça um programa que inverta uma string, exemplo: "animal" em "lamina".
 
 
-Passo a passo
----
+### Solução passo a passo
 
 Primeiro o teste:
 
@@ -29,8 +35,7 @@ Faça o teste compilar.
 Agora, implemente até que o teste passe.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include<stdio.h>

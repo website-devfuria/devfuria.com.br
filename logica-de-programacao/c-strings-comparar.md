@@ -1,15 +1,20 @@
 ---
-layout:      grid12-article
-title:       "Comparar duas strings - linguagem c"
+layout:      grid93-article
+title:       "Comparar duas strings <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para comparar duas strings.
+menu:        logica-exerc-nivel-04s
 ---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
+
 
 Faça um programa para comparar se duas strings são iguas.
 
 
-
-Passo a passo
----
+### Solução passo a passo
 
 Começamos pelo teste.
 
@@ -28,8 +33,7 @@ Então alteramos até encontrar o resultado esperado.
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

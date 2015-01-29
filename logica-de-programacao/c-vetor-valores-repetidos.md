@@ -1,14 +1,19 @@
 ---
-layout:      grid12-article
-title:       "Valores repetidos em vetor - linguagem c"
+layout:      grid93-article
+title:       "Valores repetidos em vetor <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para descobrir se em um determinado vetor existem ou não valores repetidos.
+menu:        logica-exerc-nivel-04v
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Faça um programa que identifique se em um determinado vetor, existem ou não valores repetidos.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

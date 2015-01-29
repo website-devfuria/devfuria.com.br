@@ -1,16 +1,20 @@
 ---
-layout:      grid12-article
-title:       "Função para somar vetor - linguagem c"
+layout:      grid93-article
+title:       "Função para somar vetor <small>(linguagem C)</small>"
 description: "Exercício de lógica de programação: criar função para somar vetor."
+menu:        logica-exerc-nivel-04v
 ---
 
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
 
 Crie uma função que retorna a soma de um vetor qualquer
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Inicie pelo teste. Você consegue imaginar uma forma fácil de resolver o problema? 
 
@@ -129,8 +133,7 @@ E corrigir a função para:
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

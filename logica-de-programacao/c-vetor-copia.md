@@ -1,7 +1,13 @@
 ---
-layout:      grid12-article
-title:       "Vetor cópia - linguagem c"
+layout:      grid93-article
+title:       "Vetor cópia <small>(linguagem C)</small>"
 description: Exercício de lógica de programação envolvendo vetor e os diversos tipos de laços.
+menu:        logica-exerc-nivel-04v
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Crie um algoritimo para copiar um vetor (utilize laço de repetição).
@@ -10,8 +16,7 @@ Use a nomenclatura `vetor1` para o vetor original e `vetor2` para o vetor copiad
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Imaginando que o primeiro vetor poderia ser pequeno como este aqui: `vetor1[3] = {10, 20, 30}`.
 
@@ -25,8 +30,7 @@ Então, os testes seriam:
 E a solução poderá ser esta...
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>
@@ -51,10 +55,8 @@ int main() {
 
 
 
-Desafio
----
+### Desafio
 
-Nesse exercício nós utilizamos valor arbitrários. O ideal seia constuir um código reutilizável.
+Nesse exercício nós utilizamos valor arbitrários. O ideal seria construir um código reutilizável.
 
 Refaça o exercício utilizando funções, teste 2 vetores diferentes (ao invés de um só).
-

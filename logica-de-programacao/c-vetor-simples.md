@@ -1,14 +1,19 @@
 ---
-layout:      grid12-article
-title:       "Vetor simples - linguagem c"
+layout:      grid93-article
+title:       "Vetor simples <small>(linguagem C)</small>"
 description: Exercício de lógica de programação envolvendo vetor e os diversos tipos de laços.
+menu:        logica-exerc-nivel-04v
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Escreva um algoritmo para carregar um vetor com os números de 1 (inclusive) a 5 (inclusive) em ordem crescente.
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Primeiro exercício envolvendo vetor.
 
@@ -23,8 +28,7 @@ Começamos pelos testes.
 A solução vem naturalmente.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

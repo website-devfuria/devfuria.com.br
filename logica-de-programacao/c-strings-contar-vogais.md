@@ -1,15 +1,21 @@
 ---
-layout:      grid12-article
-title:       "Contar vogais - linguagem c"
+layout:      grid93-article
+title:       "Contar vogais <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para contar a quantidade de vogais de uma string.
+menu:        logica-exerc-nivel-04s
 ---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
+---
+
 
 Faça um programa que descubra a quantidade de vogais de uma determinada string.
 
 
 
-Passo a passo
----
+### Solução passo a passo
 
 Primeiro o teste:
 
@@ -31,8 +37,7 @@ Faça o teste compilar.
 Agora, implemente até que o teste passe.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>

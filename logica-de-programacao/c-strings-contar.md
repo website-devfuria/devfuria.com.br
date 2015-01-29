@@ -1,15 +1,20 @@
 ---
-layout:      grid12-article
-title:       "Contar string - linguagem c"
+layout:      grid93-article
+title:       "Contar string <small>(linguagem C)</small>"
 description: Exercício de lógica de programação para contar a quantidade de caracteres de uma string qualquer.
+menu:        logica-exerc-nivel-04s
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Faça um programa para contar a quantidade de caracteres que ela contêm.
 
 
 
-Passo a passo
----
+### Solução passo a passo
 
 Primeiro o teste:
 
@@ -28,8 +33,7 @@ Faça o teste compilar.
 Agora implemente até que o teste passe.
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>
@@ -53,8 +57,7 @@ int main() {
 ```
 
 
-Desafio
----
+### Desafio
 
 As funções abaixo também funcionam, porém a implementação é um pouco diferente.
 
