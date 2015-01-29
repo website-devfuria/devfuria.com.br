@@ -9,6 +9,7 @@ body {
 p {
     margin:1em 0;
     line-height:1.5em;
+    text-align: justify;
 }
 table {
     font-size:inherit;
