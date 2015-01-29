@@ -1,15 +1,20 @@
 ---
-layout:      grid12-article
-title:       "O dobro de um número qualquer - linguagem c"
+layout:      grid93-article
+title:       "O dobro de um número qualquer <small>(linguagem C)</small>"
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular o dobro de um número qualquer.
+menu:        logica-exerc-nivel-01
+---
+
+{% include /menus/logica-paraquedas.html %}
+
+Exercício de lógica de programação
 ---
 
 Faça um programa que calcule o dobro de um número.
 
 
 
-Solução passo a passo
----
+### Solução passo a passo
 
 Primeiro, escrevemos o teste.
 
@@ -51,8 +56,7 @@ Comipile e rode. Não quebrou nada? Testes passando? Sim?
 Então seu trabalho acabou!
 
 
-Entendendo melhor
---
+### Entendendo melhor
 
 Vamos entender o que fizemos.
 
@@ -72,8 +76,7 @@ Hora, temos um teste confirmando que sua lógica funciona, veja:
 
 
 
-Código completo
----
+### Código completo
 
 ```c
 #include <stdio.h>
@@ -98,9 +101,7 @@ int main (){
 
 
 
-
-Palavras finais
----
+### Palavras finais
 
 Para realizar outros testes, experimente trocar o valor de `num` e do teste também.
 
@@ -115,4 +116,3 @@ Com os testes, você verá que seu programa ficará muito mais __coeso__, muito 
 o melhor de tudo, funcionando!
 
 E quem garante que seu código funciona? O teste.
-
