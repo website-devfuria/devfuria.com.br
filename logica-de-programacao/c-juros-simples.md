@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Juros simples <small>(linguagem C)</small>"
-description: Exercício de lógica de programação - como calcular o juros simples.
+title:       "Juros simples"
+description: Exercício de lógica de programação em Python e C - como calcular o juros simples.
 menu:        logica-exerc-nivel-01
 ---
 
@@ -10,7 +10,7 @@ menu:        logica-exerc-nivel-01
 Exercício de lógica de programação
 ---
 
-Calcular o juros simples produzido pelo empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
+Faça um programa para calcular o juros simples segundo a fórmula abaixo.
 
     J = C.i.n
 
@@ -21,35 +21,14 @@ Onde:
     i = taxa de empréstimo
     n = períodos
 
-
-### Solução passo a passo
-
-Escreva um teste.
-
-	float juros;
-	
-	juros = 16000.0f * 0.04f * 4;
-
-	assert(2560 == juros);
-
-
-O __TDD__ nos ensina a dar passos pequenos, mas não é proibido dar um salto maior. Então vamos subistituir
-os valores pelas devidas variáveis.
-
-	float juros, capital, taxa;
-	int n_periodos;	
-	
-	capital    = 16000;
-	taxa       = 0.04;
-	n_periodos = 4;
-	
-	juros = capital * taxa * n_periodos;
-
-Rode os testes (compile e execute).
+Vamos imaginar o seguinte cenário: um empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
 
 
 
-### Código completo
+Linguagem C
+---
+
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
 #include <stdio.h>
@@ -57,16 +36,91 @@ Rode os testes (compile e execute).
 
 int main (){
 
+    // Para escrever o pequeno teste precisamos da variável `juros`.
+    // Declare aqui as variáveis que você utilizar.
+	float juros;
+	
+
+    // Aqui entra a lógica do programa.
+    // Estamos atribuindo um valor arbitrário a variável `juros`,
+    // você deve fazer o programa calcular o juros.
+	juros = 2560;
+
+
+    // Este é o nosso teste.
+    // Sabemos que 16000 * 0.04 * 4 = 2650, logo
+    // a variável `juros` deve ter o valor igual a 2650.
+	assert(2560 == juros);
+	return 0;
+}
+```
+
+### Exercício resolvido
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main (){
+
+    // Para escrever o pequeno teste precisamos da variável `juros`.
+    // Declare aqui as variáveis que você utilizar.
 	float juros, capital, taxa;
 	int n_periodos;	
-	
+
+    // Aqui entra a lógica do programa.
+    // Estamos atribuindo um valor arbitrário a variável `juros`,
+    // você deve fazer o programa calcular o juros.
 	capital    = 16000;
 	taxa       = 0.04;
 	n_periodos = 4;
 	
 	juros = capital * taxa * n_periodos;
 
+    // Este é o nosso teste.
+    // Sabemos que 16000 * 0.04 * 4 = 2650, logo
+    // a variável `juros` deve ter o valor igual a 2650.
 	assert(2560 == juros);
 	return 0;
 }
+```
+
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+# Aqui entra a lógica do programa.
+# Estamos atribuindo um valor arbitrário a variável `juros`,
+# você deve fazer o programa calcular o juros.
+juros = 2560;
+
+# Este é o nosso teste.
+# Sabemos que 16000 * 0.04 * 4 = 2650, logo
+# a variável `juros` deve ter o valor igual a 2650.
+assert 2560 == juros, "juros deve ser igual a 2560"
+```
+
+### Exercício resolvido
+
+```python
+# -*- coding: utf-8 -*-
+
+# Aqui entra a lógica do programa.
+# Estamos atribuindo um valor arbitrário a variável `juros`,
+# você deve fazer o programa calcular o juros.
+capital    = 16000;
+taxa       = 0.04;
+n_periodos = 4;
+
+juros = capital * taxa * n_periodos;
+
+# Este é o nosso teste.
+# Sabemos que 16000 * 0.04 * 4 = 2650, logo
+# a variável `juros` deve ter o valor igual a 2650.
+assert 2560 == juros, "juros deve ser igual a 2560"
 ```

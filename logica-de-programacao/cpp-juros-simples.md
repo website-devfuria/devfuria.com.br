@@ -55,7 +55,7 @@ void testJurosSimples() {
 }
 
 //
-// Seu programa começa aqui
+// Início do programa
 //
 int main() {
 	// Chamamos o teste unitário
@@ -105,7 +105,7 @@ void testJurosSimples() {
 }
 
 //
-// Seu programa começa aqui
+// Início do programa
 //
 int main() {
 	// Chamamos o teste unitário
