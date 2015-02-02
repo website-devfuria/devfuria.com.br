@@ -43,9 +43,7 @@ usar esse método você vai acabar tendo um __array__ com um elemento a mais do 
 
 ### Solução
 
-A primeira coisa que você precisará para este exercício srerá um arquivo de texto ximples como exemplo, eu estou me
-baseando no arquivo abaixo:
-
+A primeira coisa que você precisará para este exercício será um arquivo de texto simples, veja um exemplo abaixo.
 
     1 linha 01
     2 linha 02
