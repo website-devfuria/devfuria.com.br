@@ -91,6 +91,16 @@ manipulam o elemento).
 
 
 
+### Backbone
+
+Artigos sobre o framework Backbone
+
+<div class="list-group">
+    <a href="/javascript/backbone/" class="list-group-item">Backbone - Views</a>
+</div>
+
+
+
 ### Livros sobre JavaScript
 
 Para quem nunca viu JavaScript, aconselho o livro da dupla Kevin Yank e Cameron Adams __Simple JavaScript__.
