@@ -5,6 +5,8 @@ description:
 ---
 
 
+https://docs.python.org/2/reference/simple_stmts.html#the-assert-statement
+http://stackoverflow.com/questions/5142418/what-is-the-use-of-assert-in-python
 
 Test()
 ---
