@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Área quadrada <small>(linguagem C)</small>"
+title:       "Área quadrada "
 description: Exercício de lógica de programação resolvido onde o objetivo é encontrar a área quadrada.
 menu:        logica-exerc-nivel-00
 ---

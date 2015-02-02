@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "O dobro de um número qualquer <small>(linguagem C++)</small>"
+title:       "O dobro de um número qualquer "
 description: Exercício de lógica de programação resolvido. O objetivo é criar uma classe para calcular o dobro de um número qualquer.
 menu:        logica-exerc-oop-00
 ---

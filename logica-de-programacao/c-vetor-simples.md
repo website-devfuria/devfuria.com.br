@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Vetor simples <small>(linguagem C)</small>"
+title:       "Vetor simples "
 description: Exercício de lógica de programação envolvendo vetor e os diversos tipos de laços.
 menu:        logica-exerc-nivel-04v
 ---

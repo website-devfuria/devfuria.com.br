@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Conversor Celsius/Fahrenheit <small>(linguagem C)</small>"
+title:       "Conversor Celsius/Fahrenheit "
 description: Exercício de lógica de programação para converter celsius em fahrenheit e vice versa.
 menu:        logica-exerc-nivel-02
 ---
