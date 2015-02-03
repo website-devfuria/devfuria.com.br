@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Funções para as 4 operações artiméticas <small>(linguagem C)</small>"
+title:       "Funções para as 4 operações artiméticas "
 description: Escreva uma função para cada uma das quatro operações matemáticas simples.
 menu:        logica-exerc-nivel-02
 ---

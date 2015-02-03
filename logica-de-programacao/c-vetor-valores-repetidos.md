@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Valores repetidos em vetor <small>(linguagem C)</small>"
+title:       "Valores repetidos em vetor "
 description: Exercício de lógica de programação para descobrir se em um determinado vetor existem ou não valores repetidos.
 menu:        logica-exerc-nivel-04v
 ---

@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Triângulo <small>(linguagem C++)</small>"
+title:       "Triângulo "
 description: Exercício de lógica de programação com OOP e TDD - triângulos.
 menu:        logica-exerc-oop-00
 ---

@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Área quadrada e área cúbica <small>(linguagem C++)</small>"
+title:       Área quadrada e área cúbica "
 description: Exercício de lógica de programação resolvido cujo objetivo é, com o auxílio de classes, encontrar a área quadra e cúbica.
 menu:        logica-exerc-oop-00
 ---

@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "O dobro de um número qualquer <small>(linguagem C)</small>"
+title:       "O dobro de um número qualquer "
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular o dobro de um número qualquer.
 menu:        logica-exerc-nivel-00
 ---

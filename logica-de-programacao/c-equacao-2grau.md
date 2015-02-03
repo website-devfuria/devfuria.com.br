@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Equação de 2 grau <small>(linguagem C)</small>"
+title:       "Equação de 2 grau "
 description: Exercício de lógica de programação - bhaskar.
 menu:        logica-exerc-nivel-02
 ---

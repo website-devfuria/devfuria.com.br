@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "MDC máximo divisor comum <small>(linguagem C)</small>"
+title:       "MDC máximo divisor comum "
 description: Exercício de lógica de programação ara descubrir o MDC (máximo divisor comum).
 menu:        logica-exerc-nivel-03
 ---
