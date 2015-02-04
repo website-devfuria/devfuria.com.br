@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Backbone - Exemplos de Views
-description: 
+title:       Backbone - Exemplo de utilização de Views
+description: Um breve exemplo ilustrando como é uma View no framework Backbone (JavaScript)
 menu:        javascript-backbone
 ---
 

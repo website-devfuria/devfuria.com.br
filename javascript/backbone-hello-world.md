@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone - Hello World (introdução)
-description: 
+description: Este artigo é uma introdução ao framework Backbone para JavaScript, acompanha um Hello World.
 menu:        javascript-backbone
 ---
 
