@@ -1,16 +1,17 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Backbone - Exemplos de Views
 description: 
+menu:        javascript-backbone
 ---
 
-### Primeiro exemplo
+Este exemplo de utilização das Views do Backbone é bastante simples e só utlizaremos a classe __View__.
 
-Este primeiro exemplo de utilização das Views do Backbone é...
+O objetivo desta minúscula aplicação é inserir elementos de lista (`li`) comform digitamos o contṕeudo em um caixa de texto.
 
 ![](backbone-exemplo-1.png)
 
-Este exempo é tão simple que dá para mostrar em um único arquivo HTML, veja o código.
+O exemplo é tão simples que dá para mostrar em um único arquivo HTML, veja o código.
 
 ```html
 <!DOCTYPE HTML>
@@ -43,17 +44,17 @@ Este exempo é tão simple que dá para mostrar em um único arquivo HTML, veja 
             el: $("#app-container"),
 
             initialize: function(){
-              this.$lista   = $('#lista-container');
-              this.$txtItem = $('#txt-item');
+                this.$lista   = $('#lista-container');
+                this.$txtItem = $('#txt-item');
             },
 
             events: {
-              "click #btn-salvar" : "salvar"
+                "click #btn-salvar" : "salvar"
             },
 
             salvar: function() {
-              var li = "<li>" + this.$txtItem.val() + "</li>";
-              this.$lista.append(li);
+                var li = "<li>" + this.$txtItem.val() + "</li>";
+                this.$lista.append(li);
             }
         });
         var app_view = new AppView();
@@ -63,11 +64,11 @@ Este exempo é tão simple que dá para mostrar em um único arquivo HTML, veja 
 </html>
 ```
 
-Eu acho que o código dispensa explicações, mas en todo caso vamos lá...
+Eu acho que o código dispensa explicações, mas em todo caso vamos lá...
 
 Minha visão (view) ficará armazena na variável `AppView` pois ela representa a aplicação ("app"). O elemento principal
 da view é o a div `"#app-container"`. O método `initialize()` está iniciando duas variáveis, uma referencia a tag lista
 (`ul`), a outra referencia a caixa de texto. Usamos a propriedade `events` para definir o evento do botão.
 Implementamos o método de callback `salvar()`.
 
-Agora me diga, você que está vendo este código pela primeira vez, faltou alguma explicação ? 
+Veja a demo no [jsfiddle](http://jsfiddle.net/r2jms18w/4/ "link-externo").
