@@ -1,11 +1,16 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Backbone - Views e Templates
 description: 
+menu:        javascript-backbone
 ---
 
+Este artigo é um segundo passo com as views do framework Backbone. Nele veremos o que são templates, códigos de exemplo 
+e como armazenar temlates no próprio arquivo HTML.
 
-As views devem trabalhar alinhadas a um template.
+Podemos dizer que os templates são pequenos trechos de HTML controlados pela View.
+
+As views devem trabalhar alinhadas a um ou mais templates.
 
 Iniciamos um template a partir da biblioteca __underscore__ dessa forma: `_.template()`.
 
@@ -140,7 +145,7 @@ Vejamos o exemplo abaixo, o template é denominado `formulario-template` e será
     ...
 ```
 
-O código para recuperar elemento `script` utiliza-se da função `.html()` da biblioteca Jquery.
+O código para recuperar elemento `script` utiliza-se da função `.html()` da biblioteca jQuery.
 
     $("#search-template").html()
 
@@ -159,7 +164,7 @@ var SearchView = Backbone.View.extend({
     },
     render: function(){
 
-        // Recuperamos o template através da Jquery e
+        // Recuperamos o template através da jQuery e
         // passamos o resultado para a função `_.template` da Underscore
         this.template = _.template( $("#formulario-template").html(), {} );
 
@@ -169,3 +174,9 @@ var SearchView = Backbone.View.extend({
 });
 var search_view = new SearchView();
 ```
+
+
+Próximo artigo
+--
+
+- [Backbone - Views e eventos](/javascript/backbone-views-eventos/)
