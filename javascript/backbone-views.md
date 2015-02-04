@@ -1,10 +1,25 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Backbone - Views
 description: 
+menu:        javascript-backbone
 ---
 
-Este artigo é um primeiro passo com as views.
+Este artigo é um primeiro passo com as views do framework e, também, um primeiro contato com o próprio framework.
+
+As __Views__ são as partes de seu programa que, normalmente, podem ser reutilizados e que irão ter alguns eventos atrelados
+e também estarão associadas a um __Modelo__ de dados.
+
+Uma view pode incluir outras views aninhas e também pode ter nenhum, um ou vários templates.
+
+Os __templates__ são as partes HTML que compõem a View. Para facilitar o entendimento, tenha em mente o seguinte:
+
+- Templates nos lembram pequenos trechos em HTML
+- Views nos lembra um objeto em JavaScript que controla um intrínseco conjunto de templates.
+
+
+
+### Criando e definindo uma View
 
 O código abaixo define um objeto de visão (view), ele é nosso ponto de partida.
 
@@ -14,9 +29,8 @@ var ViewExemplo = Backbone.View.extend({
 });
 ```
 
-Precisamos definir os métodos do objeto View. 
-
-Vamos definir, por exemplo, o método `initialize()` que sempre será executado ao instanciarmos a view.
+Agroa, precisamos definir os métodos do objeto View. Vamos definir, por exemplo, o método `initialize()` que sempre é
+executado ao instanciarmos a view.
 
 ```javascript
 var ViewExemplo = Backbone.View.extend({
@@ -25,15 +39,13 @@ var ViewExemplo = Backbone.View.extend({
     }
 });
 ```
-
 Para surtir efeito, criamos a instância dessa forma:
 
 ```javascript
 var view1 = new ViewExemplo();
 ```
 
-
-Juntando tudo, temos o menor exemplo para utilizarmos as views do Backbone. 
+Juntando tudo, temos um exemplo minimalista para utilizarmos as views do Backbone. 
 
 ```javascript
 //
@@ -56,9 +68,7 @@ var view1 = new ViewExemplo();
 ```
 
 
-
-Método render()
----
+### Método render()
 
 O exemplo abaixo é uma extensão do anterior, estamos utilizando a função `render` para gerar o conteúdo.
 
@@ -75,9 +85,7 @@ var view1 = new ViewExemplo();
 ```
 
 
-
-Propriedade el
----
+### Propriedade el
 
 No próximo exemplo, estamos fazendo uso da propriedade `el`, dentro do objeto view a propriedade pode ser acessada dessa
 forma `$(this.el)`...
@@ -112,3 +120,9 @@ var ViewExemplo = Backbone.View.extend({
 });
 var view1 = new ViewExemplo();
 ```
+
+
+Próximo artigo
+--
+
+- [Backbone - Views e Templates](/javascript/backbone-views-templates/)
