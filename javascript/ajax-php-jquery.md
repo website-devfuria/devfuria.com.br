@@ -1,14 +1,14 @@
 ---
 layout:      grid12-article
-title:       Ajax - Aprenda a utilizar Ajax com PHP e Jquery
-description: Aprenda a utilizar Ajax com PHP e JQuery
+title:       Ajax - Aprenda a utilizar Ajax com PHP e jQuery
+description: Aprenda a utilizar Ajax com PHP e jQuery
 ---
 
-Este artigo ensina como utilizar Ajax com PHP e JQuery. Pressuponho que você tenha um servidor web instalado, como o 
+Este artigo ensina como utilizar Ajax com PHP e jQuery. Pressuponho que você tenha um servidor web instalado, como o 
 Apache por exemplo e a linguagem __PHP__ também devidamente instalada e habilitada. Além de ter um conhecimento mínimo
 das linguagem __JavaScript__ e __PHP__.
 
-- [JQuery](http://jquery.com/ "link-externo") é uma biblioteca JavaScript criado por John Resig.
+- [jQuery](http://jquery.com/ "link-externo") é uma biblioteca JavaScript criado por John Resig.
 - [PHP](/php/) é uma linguagem de programação do lado do servidor criada po Rasmus Lerdof.
 
 Se vc caiu de paraquedas nesta página, não deixe de ver as matérias anteriores relacionados ao final deste artigo.
@@ -142,7 +142,7 @@ Documentação Oficial: [jQuery.ajax](http://api.jquery.com/jQuery.ajax/ "link-e
 Métodos mais curtos
 ---
 
-### JQuery.post
+### jQuery.post
 
 ```javascript
 $.post("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) {
@@ -161,7 +161,7 @@ var_dump($_POST);
 Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-externo")
 
 
-### JQuery.get
+### jQuery.get
 
 ```javascript
 $.get("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) {

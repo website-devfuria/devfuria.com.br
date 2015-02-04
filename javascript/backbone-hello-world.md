@@ -4,28 +4,30 @@ title:       Backbone - Hello World (introdução)
 description: 
 ---
 
-[Backbone](http://backbonejs.org/ "link-externo") é um framework MVC (há controvérsias) para Javascript.
+[Backbone](http://backbonejs.org/ "link-externo") é um framework MVC para Javascript, porém aviso que há controvérsias
+em relação ao "quanto" o framework é ou não MVC. De qualquer forma, ioso não invalida o framework.
 
-Ele faz uso intensivo da biblioteca [underscorejs](http://underscorejs.org/ "link-externo"), sua maior dependência. E
-também precisa da biliboteca JQuery, sua menor dependência. Digo isso pois você poderá optar pela Zepto, ao invés da JQuery.
+O Backbone faz uso intensivo da biblioteca [underscorejs](http://underscorejs.org/ "link-externo"), sua maior dependência.
+O framework também precisa da biliboteca jQuery, sua menor dependência. Digo isso pois você poderá optar pela Zepto, ao invés da 
+jQuery.
 
 Aconselho o estudo do Backbone para quem já possui uma certa experiência, você se sentirá mais tranquilo se...
 
 - Conhecer o paradigma MVC (Model, View e Controller)
-- Conhecer a JQuery
+- Conhecer a jQuery
 - Ter prática com os consoles de navegadores (Firefox ou Chrome)
 
 
 
-### Como eu preparei o (mini)curso do Backbone ?
+### Como eu preparei este (mini) curso do Backbone ?
 
-A documentação do Backbone começa falando dos modelos (models), aí tudo quanto é tutorial começa faland dos models.
+A documentação do Backbone começa falando dos modelos (models), aí tudo quanto é tutorial começa falando dos models.
 
 Eu achei mais prático começar pelas views.
 
 
 
-### Boirletplate (setup inicial)
+### Setup inicial
 
 Abaixo temos um arquivo HTML que nos servirá como boirleplate (esqueleto, matriz) para testar o framework Backbone.
 
@@ -43,7 +45,7 @@ Abaixo temos um arquivo HTML que nos servirá como boirleplate (esqueleto, matri
 </html>
 ```
 
-Como você pode perceber, você precisará, além do próprio Backbone, das bibliotecas JQuery e Underscore.
+Como você pode perceber, você precisará, além do próprio Backbone, das bibliotecas jQuery e Underscore.
 
 Se você preferir pode baixar cada uma individualmente em seus respectivos sites.
 
@@ -74,50 +76,14 @@ Abaixo temos um exemplo.
 </html>
 ```
 
-Outro exemplo de CDN você confere abaixo, repare que também foi incluso o complemento "Backbone LocalStorege".
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Hello World in Backbone.js</title>
-  </head>
-  <body>
-
-    <!-- ========= -->
-    <!-- Your HTML -->
-    <!-- ========= -->
-
-    <!-- ========= -->
-    <!-- Libraries -->
-    <!-- ========= -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js" type="text/javascript"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js" type="text/javascript"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.0/backbone.localStorage-min.js" type="text/javascript"></script>  
-
-    <!-- =============== -->
-    <!-- Javascript code -->
-    <!-- =============== -->
-    <script type="text/javascript">
-    // your JS code goes here
-    </script>
-
-  </body>
-</html>
-```
-
 
 Hello World
 ---
 
-Não sei se é bem um "Hello World!", mas serve para você testar se tudo está funcionado corretamente.
-
 ```html
 <html>
-  <head>
+  <head></head>
+  <body>
 
     <!--- CDN scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
@@ -130,15 +96,43 @@ Não sei se é bem um "Hello World!", mas serve para você testar se tudo está 
     });
     </script>
 
-  </head>
-  
-  <body></body>
-
+  </body>
 </html>
 ```
 
+Não sei isso é bem um "Hello World!", mas serve para você realizar um teste inicial. Além disso, repare que utilizamos 
+o evento `ready` do documento e fizemos isso com ajuda da jQuery. Me refiro a este trecho de código:
+
+```javascript
+$(document).ready(function() {
+    //
+    // seu código
+    //
+});
+```
+
+A idéia e esperar que todo elemento DOM seja carregado antes de processar o JavaScript, apesar que já estamos lidando
+com isso colocando o nosso script bem ao final do documento, veja um resumo...
+
+```html
+<html>
+  <head></head>
+  <body>
+
+    <!-- 1) seu HTML "normal" --> 
+
+    <!-- 2) as dependências --> 
+
+    <!-- 3) seu script --> 
+
+  </body>
+</html>
+```
 
 Site oficial
 ---
 
+Como dito, o Backbone a maior dependência é a biblioteca Underscore, então sua documentação também deve ser considerada.
+
 - [backbonejs.org](http://backbonejs.org/ "link-externo")
+- [nderscorejs.org/](http://underscorejs.org/ "link-externo")

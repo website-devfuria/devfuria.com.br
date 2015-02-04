@@ -182,4 +182,4 @@ Veja também
 ---
 
 - [Ajax - Como era utilizado no começo](/javascript/ajax-no-inicio/)
-- [Ajax - Aprenda a utilizar Ajax com PHP e Jquery](/javascript/ajax-php-jquery/)
+- [Ajax - Aprenda a utilizar Ajax com PHP e jQuery](/javascript/ajax-php-jquery/)
