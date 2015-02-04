@@ -95,10 +95,7 @@ manipulam o elemento).
 
 Artigos sobre o framework Backbone
 
-<div class="list-group">
-    <a href="/javascript/backbone/" class="list-group-item">Backbone - Views</a>
-</div>
-
+{% include /menus/javascript-backbone.html %}
 
 
 ### Livros sobre JavaScript
