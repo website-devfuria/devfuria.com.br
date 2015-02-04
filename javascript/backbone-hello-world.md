@@ -22,36 +22,14 @@ Aconselho o estudo do Backbone para quem já possui uma certa experiência, voc�
 ### Como eu preparei este (mini) curso do Backbone ?
 
 A documentação do Backbone começa falando dos modelos (models), aí tudo quanto é tutorial começa falando dos models.
-
-Eu achei mais prático começar pelas views.
+Mas as coisas acontecem primeiro nas Views e também acho mais prático começar por elas. Então eu preparei este tutorial
+iniciando-se pelas Views.
 
 
 
 ### Setup inicial
 
 Abaixo temos um arquivo HTML que nos servirá como boirleplate (esqueleto, matriz) para testar o framework Backbone.
-
-```html
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Backbone.js Tutorial</title>
-</head>
-<body>
-  <script src="js/jQuery.js"></script>
-  <script src="js/underscore.js"></script>
-  <script src="js/backbone.js"></script>
-  </body>
-</html>
-```
-
-Como você pode perceber, você precisará, além do próprio Backbone, das bibliotecas jQuery e Underscore.
-
-Se você preferir pode baixar cada uma individualmente em seus respectivos sites.
-
-Mas se quiser pular esta etapa, afinal estamos em uma fase experimental, você poderá utilizar algum canal de CDN.
-
-Abaixo temos um exemplo.
 
 ```html
 <!DOCTYPE HTML>
@@ -62,10 +40,48 @@ Abaixo temos um exemplo.
   </head>
   <body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
-    <script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
-    
+    <!-- 1) seu HTML "normal" --> 
+
+    <!-- 2) as dependências --> 
+    <script src="js/jQuery.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+
+    <!-- 3) seu script --> 
+    <script type="text/javascript">
+    //
+    // seu código
+    //
+    </script>
+
+  </body>
+</html>
+```
+
+Como você pode perceber, você precisará, além do próprio Backbone, das bibliotecas jQuery e Underscore.
+
+Se você preferir pode baixar cada uma individualmente em seus respectivos sites.
+
+Mas se quiser pular esta etapa, afinal estamos em uma fase experimental, você poderá utilizar algum canal de CDN, veja
+o exemplo abaixo.
+
+```html
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+
+    <!-- 1) seu HTML "normal" --> 
+
+    <!-- 2) as dependências --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+
+    <!-- 3) seu script --> 
     <script type="text/javascript">
     //
     // seu código
@@ -85,7 +101,6 @@ Hello World
   <head></head>
   <body>
 
-    <!--- CDN scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
@@ -111,7 +126,7 @@ $(document).ready(function() {
 });
 ```
 
-A idéia e esperar que todo elemento DOM seja carregado antes de processar o JavaScript, apesar que já estamos lidando
+A idéia e esperar que todo elemento [DOM](/javascript/dom/) seja carregado antes de processar o JavaScript, apesar que já estamos lidando
 com isso colocando o nosso script bem ao final do documento, veja um resumo...
 
 ```html
@@ -121,13 +136,21 @@ com isso colocando o nosso script bem ao final do documento, veja um resumo...
 
     <!-- 1) seu HTML "normal" --> 
 
-    <!-- 2) as dependências --> 
+    <!-- 2) as dependências   --> 
 
-    <!-- 3) seu script --> 
+    <!-- 3) seu script        --> 
 
   </body>
 </html>
 ```
+
+
+Próximo artigo
+--
+
+- [Backbone - Views](/javascript/backbone-views/)
+
+
 
 Site oficial
 ---
