@@ -48,8 +48,8 @@ int main (){
 
 
     // Este é o nosso teste.
-    // Sabemos que 16000 * 0.04 * 4 = 2650, logo
-    // a variável `juros` deve ter o valor igual a 2650.
+    // Sabemos que 16000 * 0.04 * 4 = 2560, logo
+    // a variável `juros` deve ter o valor igual a 2560.
 	assert(2560 == juros);
 	return 0;
 }
@@ -78,8 +78,8 @@ int main (){
 	juros = capital * taxa * n_periodos;
 
     // Este é o nosso teste.
-    // Sabemos que 16000 * 0.04 * 4 = 2650, logo
-    // a variável `juros` deve ter o valor igual a 2650.
+    // Sabemos que 16000 * 0.04 * 4 = 2560, logo
+    // a variável `juros` deve ter o valor igual a 2560.
 	assert(2560 == juros);
 	return 0;
 }
@@ -100,8 +100,8 @@ Abaixo nosso código inicial escrito em Python, utilize ele para resolver o prob
 juros = 2560;
 
 # Este é o nosso teste.
-# Sabemos que 16000 * 0.04 * 4 = 2650, logo
-# a variável `juros` deve ter o valor igual a 2650.
+# Sabemos que 16000 * 0.04 * 4 = 2560, logo
+# a variável `juros` deve ter o valor igual a 2560.
 assert 2560 == juros, "juros deve ser igual a 2560"
 ```
 
@@ -120,7 +120,7 @@ n_periodos = 4;
 juros = capital * taxa * n_periodos;
 
 # Este é o nosso teste.
-# Sabemos que 16000 * 0.04 * 4 = 2650, logo
-# a variável `juros` deve ter o valor igual a 2650.
+# Sabemos que 16000 * 0.04 * 4 = 2560, logo
+# a variável `juros` deve ter o valor igual a 2560.
 assert 2560 == juros, "juros deve ser igual a 2560"
 ```
