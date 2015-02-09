@@ -40,7 +40,7 @@ apenas a tag `h1` foi inserida, falta o nó de texto. Quer dizer, temos o result
 ```
 
 ...e precisamos de um texto para a tag `h1`. Para criar o nó de texto utilizamos a função `createTextNode()` e também
-anexar o nó ao elemento em questão, resumidamente:
+utilizaremos a função `appendChild()` para anexar o nó ao elemento em questão, resumidamente:
 
 ```javascript
 var titulo = document.createElement('h1');
@@ -74,7 +74,7 @@ Aí então, chegaremos ao resultado esperado:
 
 ## textContent
 
-Outra forma de chegar ao mesmo resultado é utilizar a prorpiedade `textContent`. Ao invés de criar e anexarmos um nó de 
+Outra forma de chegar ao mesmo resultado é utilizar a propriedade `textContent`. Ao invés de criar e anexarmos um nó de 
 texto podemos lançar mão da propriedade `textContent` do elemento que estamos criando.
 
 As duas linhas abaixo criam o elemento e seu texto equivalente.
