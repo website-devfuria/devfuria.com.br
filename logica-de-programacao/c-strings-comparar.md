@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Comparar duas strings <small>(linguagem C)</small>"
+title:       "Comparar duas strings "
 description: Exercício de lógica de programação para comparar duas strings.
 menu:        logica-exerc-nivel-04s
 ---

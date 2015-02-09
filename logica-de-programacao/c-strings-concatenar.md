@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Concatenar duas strings <small>(linguagem C)</small>"
+title:       "Concatenar duas strings "
 description: Exercício de lógica de programação para concatenar duas strings.
 menu:        logica-exerc-nivel-04s
 ---

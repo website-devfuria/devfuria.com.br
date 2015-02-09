@@ -1,14 +1,14 @@
 ---
 layout:      grid12-article
-title:       Ajax - Aprenda a utilizar Ajax com PHP e Jquery
-description: Aprenda a utilizar Ajax com PHP e JQuery
+title:       Ajax - Aprenda a utilizar Ajax com PHP e jQuery
+description: Aprenda a utilizar Ajax com PHP e jQuery
 ---
 
-Este artigo ensina como utilizar Ajax com PHP e JQuery. Pressuponho que você tenha um servidor web instalado, como o 
+Este artigo ensina como utilizar Ajax com PHP e jQuery. Pressuponho que você tenha um servidor web instalado, como o 
 Apache por exemplo e a linguagem __PHP__ também devidamente instalada e habilitada. Além de ter um conhecimento mínimo
 das linguagem __JavaScript__ e __PHP__.
 
-- [JQuery](http://jquery.com/ "link-externo") é uma biblioteca JavaScript criado por John Resig.
+- [jQuery](http://jquery.com/ "link-externo") é uma biblioteca JavaScript criado por John Resig.
 - [PHP](/php/) é uma linguagem de programação do lado do servidor criada po Rasmus Lerdof.
 
 Se vc caiu de paraquedas nesta página, não deixe de ver as matérias anteriores relacionados ao final deste artigo.
@@ -16,6 +16,13 @@ Se vc caiu de paraquedas nesta página, não deixe de ver as matérias anteriore
 Nosso objeto é criar um arquivo [HTML](/html-css/) incluindo a biblioteca __Jquery__ e criar um requisição __AJAX__ 
 simples através do método `$.ajax()` "apontando" para o arquivo __PHP__ denominado `script.php`. Obteremos como resposta
 um texto plano com o valor da variável global `$_POST`.
+
+Mostrar a estrutura de arquivos facilita o entendimento do que vamos fazer, então nossa estrutura será...
+
+    /var/www/
+        projeto/
+            script.php
+            indexhtml
 
 Utilizaremos o HTML abaixo como modelo.
 
@@ -41,39 +48,56 @@ Utilizaremos o HTML abaixo como modelo.
 
 O método `ajax()` aceita um objeto __JavaScript__ como parâmetros contendo a configuração de sua chamada Ajax.
 
-A propriedade `url` é local, arquivo, script, alvo de su requisição.
-
-A propriedade `type` é o verbo HTTP (GET, POST, HEAD, etc...)
-
-A propriedade `data` são os dados de sua aplicação.
-
-A propriedade `dataType` refere-se ao tipo de dado que o servidor deve retornar a requisição.
-
 ```javascript
 var request = $.ajax({
+
+    //
+    // A propriedade `url` é local, arquivo, script, alvo de sua requisição.
+    //
     url: "script.php",
+
+    //
+    // A propriedade `type` é o verbo HTTP (GET, POST, HEAD, etc...)
+    // 
     type: "POST",
+
+    //
+    // A propriedade `data` são os dados de sua aplicação.
+    //
     data: "campo1=dado1&campo2=dado2&campo3=dado3",
+
+    //
+    // A propriedade `dataType` refere-se ao tipo de dado que o servidor deve retornar a requisição.
+    //
     dataType: "html"
 });
+
+// 
+// O método `done()` recebe uma função de callback
+// que será executada caso a requisição tenha sucesso.
+//
 request.done(function(resposta) {
     console.log(resposta)
 });
+
+//
+// O método `fail()`recebe uma função de callback
+// que será executada caso a requisição falhe.
+//
 request.fail(function(jqXHR, textStatus) {
     console.log("Request failed: " + textStatus);
 });
+
+//
+// O método `always()` recebe uma função de callback
+// que será executada quando a requisição de sucesso estiver completa.
+//
 request.always(function() {
     console.log("completou");
 });
 ```
 
-O método `done()` recebe uma função de callback que será executada caso a requisição tenha sucesso.
-
-O método `fail()`recebe uma função de callback que será executada caso a requisição falhe.
-
-O método `always()` recebe uma função de callback que será executada quando a requisição de sucesso estiver completa.
-
-Podemos encadear os métodos `done()`, `fail()` e `always()` tornando o código mais sucinto.
+Podemos encadear os métodos `done()`, `fail()` e `always()` tornando o código mais sucinto, veja:
 
 ```javascript
 $.ajax({
@@ -81,10 +105,13 @@ $.ajax({
     type: "POST",
     data: "campo1=dado1&campo2=dado2&campo3=dado3",
     dataType: "html"
+
 }).done(function(resposta) {
     console.log(resposta);
+
 }).fail(function(jqXHR, textStatus ) {
     console.log("Request failed: " + textStatus);
+
 }).always(function() {
     console.log("completou");
 });
@@ -115,7 +142,7 @@ Documentação Oficial: [jQuery.ajax](http://api.jquery.com/jQuery.ajax/ "link-e
 Métodos mais curtos
 ---
 
-### JQuery.post
+### jQuery.post
 
 ```javascript
 $.post("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) {
@@ -134,7 +161,7 @@ var_dump($_POST);
 Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-externo")
 
 
-### JQuery.get
+### jQuery.get
 
 ```javascript
 $.get("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) {

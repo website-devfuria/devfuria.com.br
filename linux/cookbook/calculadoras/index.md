@@ -17,6 +17,9 @@ Instalar
     # rpm -Uvh speedcrunch-0.10.1-3.x86_64.rpm
 
 
+![](calculadora-scrunch.jpeg)
+
+
 
 Gcalctool
 ---
@@ -24,6 +27,10 @@ Gcalctool
 Executar
 
     # yum -y install gcalctool 
+
+
+![](calculadora-gcalctool.png)
+
 
 
 ### Fontes:

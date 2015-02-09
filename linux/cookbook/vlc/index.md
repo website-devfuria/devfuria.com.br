@@ -4,9 +4,18 @@ title:       Instalando VLC no CentOS
 description: Como instalar o player de audio e video VLCs no Linux
 ---
 
+![](vlc-ubuntu.jpg)
 
-O __VLC__ é um player de audio e video muito bom para linux.
 
+
+### O que é VLC ?
+
+O __VLC__ é um player de audio e video muito bom e completo para Linux, também há versão para Windows e Mac.
+
+
+
+
+### Instalando no CentOS
 
 Vá até o diretório:
 
@@ -19,3 +28,14 @@ E adicione o seguinte repositório:
 Instale o aplicativo via `yum`:
 
     yum install vlc
+
+
+![](vlc-linux.png)
+
+
+
+Site Oficcial
+---
+
+[www.videolan.org](http://www.videolan.org/vlc/ "link-externo")
+

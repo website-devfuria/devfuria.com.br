@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Trocar o valor de duas variáveis <small>(linguagem C)</small>"
+title:       "Trocar o valor de duas variáveis "
 description: Exercício de lógica de programação para trocar o valor de duas variáveis.
 menu:        logica-exerc-nivel-00
 ---

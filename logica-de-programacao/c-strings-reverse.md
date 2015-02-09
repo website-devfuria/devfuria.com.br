@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Inverter string <small>(linguagem C)</small>"
+title:       "Inverter string "
 description: Exercício de lógica de programação para inverter uma string.
 menu:        logica-exerc-nivel-04s
 ---

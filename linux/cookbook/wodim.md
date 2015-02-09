@@ -13,13 +13,19 @@ Wodim é um gravador de imagens iso.
     # yum install wodim
 
 
-### Como utilizar
+### Como utilizar o Wodim
 
-Para gravar o __iso__, execute:
+Assista um video para aprender a utilizar.
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/BH42OJUdLeI" frameborder="0" allowfullscreen></iframe>
+
+Ou leia o texto...
+
+Para gravar o [iso](/linux/imagem-cd-iso/), execute:
 
     wodim path/to/image.iso
 
-O programa tenta descobrir qual é o dispositivo de CD (DVD). Se ele não encontrar, execute:
+O programa tenta descobrir qual é o dispositivo de CD (DVD), se ele não encontrar, execute:
 
     wodim --devices
 
@@ -39,3 +45,4 @@ Agora execute:
 Fonte
 
 - [http://paradadigital.com/2010/09/25/gravar-imagem-iso-em-cd-dvd-no-linux-debian-ubuntu-pelo-terminal.html](http://paradadigital.com/2010/09/25/gravar-imagem-iso-em-cd-dvd-no-linux-debian-ubuntu-pelo-terminal.html "link-externo")
+

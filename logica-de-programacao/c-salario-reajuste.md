@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Reajustando o salário <small>(linguagem C)</small>"
+title:       "Reajustando o salário "
 description: Exercício de lógica de programação - calcular o reajuste do salário.
 menu:        logica-exerc-nivel-01
 ---

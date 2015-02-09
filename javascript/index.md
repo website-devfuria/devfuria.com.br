@@ -48,7 +48,7 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 <div class="list-group">
     <a href="/javascript/ajax/" class="list-group-item">Ajax - Introdução</a>
     <a href="/javascript/ajax-no-inicio/" class="list-group-item">Ajax - Como era utilizado no começo</a>
-    <a href="/javascript/ajax-php-jquery/" class="list-group-item">Ajax - Aprenda a utilizar Ajax com PHP e JQuery</a>
+    <a href="/javascript/ajax-php-jquery/" class="list-group-item">Ajax - Aprenda a utilizar Ajax com PHP e jQuery</a>
 </div> 
 
 
@@ -89,6 +89,13 @@ manipulam o elemento).
 
 [Aprenda mais sobre o canvas](./canvas/).
 
+
+
+### Backbone
+
+Artigos sobre o framework Backbone
+
+{% include /menus/javascript-backbone.html %}
 
 
 ### Livros sobre JavaScript

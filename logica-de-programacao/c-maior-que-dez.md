@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Maior que 10 <small>(linguagem C)</small>"
+title:       "Maior que 10 "
 description: Exercício de lógica de programação para descobrir se valor é maior ou menor que 10.
 menu:        logica-exerc-nivel-02
 ---

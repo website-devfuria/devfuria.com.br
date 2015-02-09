@@ -100,4 +100,4 @@ Veja também
 ---
 
 - [Ajax - Introdução](/javascript/ajax/)
-- [Ajax - Aprenda a utilizar Ajax com PHP e JQuery](/javascript/ajax-php-jquery/)
+- [Ajax - Aprenda a utilizar Ajax com PHP e jQuery](/javascript/ajax-php-jquery/)

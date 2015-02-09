@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Vetor cópia <small>(linguagem C)</small>"
+title:       "Vetor cópia "
 description: Exercício de lógica de programação envolvendo vetor e os diversos tipos de laços.
 menu:        logica-exerc-nivel-04v
 ---
