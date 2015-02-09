@@ -102,11 +102,11 @@ Artigos sobre o framework Backbone
 
 Para quem nunca viu JavaScript, aconselho o livro da dupla Kevin Yank e Cameron Adams __Simple JavaScript__.
 
-Ele cumpre o que promete __"tudo o que você precisa saber sobre javascript a apartir do zero"__.
+Ele cumpre o que promete __"tudo o que você precisa saber sobre JavaScript a apartir do zero"__.
 
 A didática é excelente, o comprometimento com a qualidade é sem igual.
 
-!["Livro Só Javascript"](livro-simple-js.jpg "Livro Só Javascript")
+!["Livro Só JavaScript"](livro-simple-js.jpg "Livro Só JavaScript")
 
 Leia mais sobre [Livros sobre JavaScript](./livros-javascript/).
 
