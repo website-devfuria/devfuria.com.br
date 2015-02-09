@@ -1,5 +1,5 @@
 ---
-layout:      grid93-article
+layout:      grid12-article
 title:       "Simples exemplo de TDD - Reajustando o salário"
 description: Este artigo é um exemplo extremamente simples de TDD (Test Driven Development) escrito na linguagem C.
 ---
