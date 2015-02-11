@@ -72,3 +72,10 @@ da view é o a div `"#app-container"`. O método `initialize()` está iniciando 
 Implementamos o método de callback `salvar()`.
 
 Veja a demo no [jsfiddle](http://jsfiddle.net/r2jms18w/4/ "link-externo").
+
+
+
+Próximo artigo
+--
+
+- [Backbone - Models](/javascript/backbone-models/)

@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Backbone - models
-description: 
+title:       Backbone - Models
+description: Aprenda o básico sobre Models no framework Backbone (javascript)
 menu:        javascript-backbone
 ---
 
@@ -171,3 +171,9 @@ person.set({ name: "Alexandre", age: 40});
 //"alterando age para: 40"
 
 ```
+
+
+Próximo artigo
+--
+
+- [Backbone - Collections](/javascript/backbone-collections/)

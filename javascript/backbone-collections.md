@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Backbone - collections
-description: 
+title:       Backbone - Collections
+description: Aprenda o básico sobre Collections  no framework Backbone (javascript)
 menu:        javascript-backbone
 ---
 
@@ -129,7 +129,7 @@ var theBeatles = new Backbone.Collection({
 // Definindo uma função de callbak para o evento `add`
 //
 theBeatles.on('add', function (model) {
-    console.log('something got added');
+    console.log('alguma coisa foi adicionada');
 });
 
 //
@@ -137,5 +137,6 @@ theBeatles.on('add', function (model) {
 // disparando o callback do evento `add`.
 //
 theBeatles.add([{ firstName: 'John', lastName: 'Lennon'}]);
+// Após a linha acima ser executa veremos no console do navegador:
 // "alguma coisa foi adicionada"
 ```
