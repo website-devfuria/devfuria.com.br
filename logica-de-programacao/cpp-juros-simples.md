@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       "Juros simples (linguagem C++)"
-description: Exercício de lógica de programação com OOP e TDD - como calcular o juros simples.
+description: Exercício de lógica de programação (com testes unitários) para calcular o juros simples.
 menu:        logica-exerc-oop-00
 ---
 
