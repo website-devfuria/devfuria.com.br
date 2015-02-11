@@ -1,16 +1,10 @@
 ---
 layout:      grid12-article
 title:       "Simples exemplo de TDD - Reajustando o salário"
-description: Este artigo é um exemplo extremamente simples de TDD (Test Driven Development) escrito na linguagem C.
+description: 
 ---
 
-<div id="alerta">
-
-<p>Este artigo é um exemplo extremamente simples de TDD (Test Driven Development) escrito na linguagem C.
-Ele compõem uma sequência de excercícios igualmente simples. Indicado para o desenvolvedor que quer aprender a técnica
-de TDD mas não conhece muito sobre testes unitários e nem sobre arquitetura.</p>
-
-</div>
+{% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
 
 ### Praticando TDD
