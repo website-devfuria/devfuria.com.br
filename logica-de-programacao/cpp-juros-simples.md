@@ -27,6 +27,9 @@ Utilize orientação a objetos para resolver o problema.
 
 Já temos o teste escrito, você deve implementar a classe `Juros`.
 
+Linguagem C
+---
+
 ```c
 #include <iostream>
 #include <assert.h>
@@ -65,11 +68,8 @@ int main() {
 ```
 
 
+### Solução na linguagem C
 
-
-
-Exercício resolvido
----
 
 ```c
 #include <iostream>
