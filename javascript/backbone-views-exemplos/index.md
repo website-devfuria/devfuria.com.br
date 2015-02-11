@@ -5,9 +5,9 @@ description: Um breve exemplo ilustrando como é uma View no framework Backbone 
 menu:        javascript-backbone
 ---
 
-Este exemplo de utilização das Views do Backbone é bastante simples e só utlizaremos a classe __View__.
+Este exemplo de utilização das Views do Backbone é bastante simples e só utilizaremos a classe __View__.
 
-O objetivo desta minúscula aplicação é inserir elementos de lista (`li`) comform digitamos o contṕeudo em um caixa de texto.
+O objetivo desta minúscula aplicação é inserir elementos de lista (`li`) conforme digitamos o conteúdo em um caixa de texto.
 
 ![](backbone-exemplo-1.png)
 
