@@ -5,9 +5,9 @@ description: Aprenda o básico sobre Models no framework Backbone (javascript)
 menu:        javascript-backbone
 ---
 
-O __models__ refere-se ao modelo, aos dados, as regras de negócio. No Backbone não é diferente.
+O __models__ refere-se ao modelo, aos dados, as regras de negócio... no Backbone não é diferente.
 
-Podemos definir um model, como se fosse uma classe (posteriormente será instanciada) dessa forma:
+Podemos definir um model como se fosse uma classe (posteriormente será instanciada) dessa forma:
 
 ```javascript
 Model = Backbone.Model.extend({});
