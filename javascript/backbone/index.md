@@ -11,7 +11,7 @@ dos modelos e como ele pode interagir com a visão.
 
 Iremos construir um formulário com dois campos de textos: nome (name) e idade (age).
 
-Um [formulário web](/html-css/formularios/) depende da tag `<formulário>`, mas neste exemplo ela não se faz necessário.
+Um [formulário web](/html-css/formularios/) depende da tag `<formulário>`, mas neste exemplo ela não se fez necessário.
 
 Veja nosso HTML:
 
@@ -74,7 +74,10 @@ var AppView = Backbone.View.extend({
 // Iniciamos a aplicação
 //
 var view = new AppView();
+
+//
 // Alteramos o modelo
+//
 view.model.set({name: 'flavio', age: 36});
 ```
 
@@ -88,10 +91,12 @@ famigerado formulário) deve ser atualizada.
 Ressalto que o envento `change` escuta todas as propriedades do modelo, que dizer, a alteração em uma ou mais 
 propriedade disparará o evento e, consequentemente, renderizará a visão.
 
+
+
 ### Use o console do navegador
 
-Se você possui uma certa experiência com o console do navegador conseguirá alterar o modelo e ver as alterações conforme
-as imagens abaixo.
+Se você possui uma certa experiência com o console do navegador, conseguirá alterar o modelo e ver as alterações 
+acontecendo. Tentei ilustrar o processo com as imagens abaixo.
 
 ![backbone](backbone-1.png "backbone")
 
