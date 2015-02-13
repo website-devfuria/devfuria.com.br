@@ -1,14 +1,14 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Equação de 2 grau"
-description: bhaskar.
+description: Este artigo é um exemplo de TDD escrito na linguagem C, nosso exercício consiste em fazer um programa que calcule as raízes da equação do 2 grau conforme a fórmula de Bhaskar.
 menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-
-Utilizando funções, faça um programa que calcule as raízes da equação do 2 grau conforme a fórmula de Bhaskar.
+Este artigo é um exemplo de TDD escrito na linguagem C, nosso exercício consiste em fazer um programa que calcule as 
+raízes da equação do 2 grau conforme a fórmula de Bhaskar, utilizando funções.
 
 Lembrando:
 
@@ -18,14 +18,9 @@ Lembrando:
     x1    = ( (-b + √Δ)/2a)
     x2    = ( (-b - √Δ)/2a)
 
+O primeiro objeto é encontrar o __delta__, que tal uma função para ele?
 
-
-
-### Solução passo a passo
-
-O primeiro objeto é encontrar o __delta__. Que tal uma função para ele?
-
-Não sem antes escrever o teste .
+Não sem antes escrever o teste.
 
     int main() {
 
@@ -36,7 +31,7 @@ Não sem antes escrever o teste .
     }
 
 
-Eu utilizei os  valores abaixo, mas fique a vontade para utilizar outros valores.
+Eu utilizei os valores abaixo, mas fique a vontade para utilizar outros valores.
 
     1x(2) + 0x -16 = 0
 
@@ -60,7 +55,7 @@ E implementamos a função `raiz1`.
         return (-b + sqrt(delta(a, b, c))) / 2 * a;
     }
 
-Eu estou utilizando a função interna `sqrt()` da linguagem __c__ para retornar a raiz quadrada. Para tal precisamos
+Eu estou utilizando a função interna `sqrt()` da __linguagem C__ para retornar a raiz quadrada. Para tal precisamos
 incluir a biblio `math.h`.
 
     
@@ -106,4 +101,4 @@ int main() {
 Próximo exemplo
 ---
 
-- []()
+- [Simples exemplo de TDD - Número primo](/tdd/exemplo-tdd-primo/)
