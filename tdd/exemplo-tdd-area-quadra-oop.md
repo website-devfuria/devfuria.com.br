@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD - Área quadrada e área cúbica"
+title:       "Simples exemplo de TDD - Área quadrada (OOP)"
 description: Este artigo é um exemplo de TDD escrito na linguagem C++ que tem como objetivo criar uma classe para representar a área (geometria)
 menu:        tdd-exemplos-simples-cpp
 ---
