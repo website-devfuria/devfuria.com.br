@@ -1,21 +1,21 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Número primo"
-description: descobrir se um número é primo.
+description: Este artigo é um  exemplo de TDD envolvendo um programa para identificar se um número é primo, estamos utilizando a linguagem C.
 menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Faça um programa para identificar se um número é primo.
+Este artigo é um belo exemplo de TDD envolvendo um programa para identificar se um número é primo.
 
-Saiba que: número primo, é um número natural, maior que 1, apenas divisível por si próprio e pela unidade.
+Estamos utilizando a __linguagem C__.
 
+Para começar, precisamos saber que:
 
+- número primo, é um número natural, maior que 1, apenas divisível por si próprio e pela unidade.
 
-### Solução passo a passo
-
-Existem n formas para encontrar um número primo. Vou utilizar a forma mais simples de todas.
+Existem n formas para encontrar um número primo, vou utilizar a forma mais simples de todas.
 
 De posse de uma tabela de números primos, idealizei a base:
 
@@ -28,7 +28,7 @@ De posse de uma tabela de números primos, idealizei a base:
         return 0;
     }
 
-O código compila e passa no teste. Acrescentei:
+O código compila e passa no teste, acrescentei:
 
     assert(1 == ehPrimo(3));
 
@@ -176,9 +176,3 @@ int main (){
     return 0;
 }
 ```
-
-
-Próximo exemplo
----
-
-- []()
