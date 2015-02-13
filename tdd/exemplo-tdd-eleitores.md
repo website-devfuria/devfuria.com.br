@@ -7,6 +7,8 @@ menu:        tdd-exemplos-simples-c
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
+Com o apoio
+
 Considerando a tabela abaixo...
 
     total de eleitores = 1000
@@ -26,7 +28,7 @@ Vou começar com os votos válidos (800).
 
 Sei que 800 / 1000 = 80%. Opâ, já posso escrever um teste.
 
-Vamos subistituir os valores por variáveis.
+Vamos substituir os valores por variáveis.
 
 	float totalEleitores = 1000,
 		  validos = 800;

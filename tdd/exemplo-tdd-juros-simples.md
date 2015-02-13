@@ -32,7 +32,7 @@ Escreva um teste.
 	assert(2560 == juros);
 
 
-O __TDD__ nos ensina a dar passos pequenos, mas não é proibido dar um salto maior. Então vamos subistituir
+O __TDD__ nos ensina a dar passos pequenos, mas não é proibido dar um salto maior, então vamos substituir
 os valores pelas devidas variáveis.
 
 	float juros, capital, taxa;
