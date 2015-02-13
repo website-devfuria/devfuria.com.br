@@ -54,7 +54,7 @@ publicas RSA, SHA-256 ou superior para hash.
 * Dados armazenados criptografados no disco não devem ser fáceis de descriptografar, por exemplo, criptografia de banco 
 de dados é inútil se a conexão de banco de dados permite acessos não criptografados.
 
-A função hash do código abaixo utiliza dois parâmetros. O primeiro escolhe o algorítimo utilizado para gerar o hash e o 
+A função hash do código abaixo utiliza dois parâmetros. O primeiro escolhe o algoritmo utilizado para gerar o hash e o 
 segundo é o valor utilizado para gerar o hash.
 
 ```php

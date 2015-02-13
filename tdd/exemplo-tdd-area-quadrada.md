@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Área quadrada"
-description: Neste exemplo de Test Driven Development (na linguagem C) iremos encontrar desenvolver um pequeno algorítimo para descobrir área quadrada.
+description: Neste exemplo de Test Driven Development (na linguagem C) iremos encontrar desenvolver um pequeno algoritmo para descobrir área quadrada.
 menu:        tdd-exemplos-simples-c
 ---
 
