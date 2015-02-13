@@ -7,8 +7,6 @@ description:
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
 
-### Praticando TDD
-
 Nosso objetivo é escrever um pequeno programa que calcule o reajuste de um salário.
 
 Como exemplo, sendo o salário de 1.000,00 e o reajuste de 15%, nosso programa deve calcular o valor do reajuste. 

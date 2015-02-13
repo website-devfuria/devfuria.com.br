@@ -11,8 +11,9 @@ O primeiro artigo que abre esta seção é sobre a ídeia básica do que é __TD
 
 Leia o primeiro artigo [Uma breve noção sobre o que é TDD](/tdd/o-que-e-tdd/)
 
-<!--
-<div class="list-group">
-    <a href="/tdd/o-que-e-tdd/" class="list-group-item">Uma breve noção sobre o que é TDD</a>
-</div> 
--->
+
+
+### Praticando TDD na linguagem C++
+
+
+{% include menus/tdd-exemplos-simples-cpp.html %}

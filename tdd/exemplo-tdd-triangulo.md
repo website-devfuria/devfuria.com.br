@@ -1,13 +1,13 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD - Triângulo "
-description: 
+title:       "Simples exemplo de TDD - Triângulo"
+description: Exemplo de TDD na linguagem C++, portanto, fazendo uso de programação orientada a objeto onde construirmos uma classe que representa um triângulo (geometria)
+menu:        tdd-exemplos-simples-cpp
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-
-### Praticando TDD
+Vamos construindo um pequeno código na __linguagem C++__ utilizando programação orientada a objetos.
 
 Inicialmente, nosso objetivo é escrever uma classe com um método para testar se os valores de `a`, `b` e `c`  (lados do
 triângulo) são válidos, ou seja, se realmente formam um triângulo.
@@ -16,7 +16,7 @@ Saiba que para formar um triângulo, o valor de cada lado deve ser menor que a s
 
 O primeiro passo será criar uma função para determinar se é os dados compõem ou não um triângulo.
 
-Minha classe se chamara `triangulo` e minha função será `ehTriangulo()`.
+Minha classe se chamara `Triangulo` e minha função será `ehTriangulo()`.
 
 Se a função vai dizer sim ou não, então ela poderá retornar um tipo "booleano".
 
@@ -308,7 +308,6 @@ Tudo passou!.
 ### Código final
 
 ```c
-/** Pequeno código em C++ com fins didáticos. */
 #include <iostream>
 #include <assert.h>
 
