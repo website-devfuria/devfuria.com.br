@@ -1,15 +1,13 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Juros simples"
-description: Pequeno exemplo de TDD na linguagem C++ utilizando-se de programação orientada a objeto para criar uma classe com um método que retorne o juros simnples.
+description:  como calcular o juros simples.
 menu:        tdd-exemplos-simples-cpp
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Neste artigo iremos construir um pequeno código na __linguagem C++__ utilizando, obviamente, a técnica de programação orientada a objetos.
-
-Nosso objetivo definir uma classe para calcular o juros simples segundo a fórmula abaixo.
+Faça um programa para calcular o juros simples segundo a fórmula abaixo.
 
     J = C.i.n
 
@@ -22,95 +20,94 @@ Onde:
 
 Vamos imaginar o seguinte cenário: um empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
 
-Utilize orientação a objetos para resolver o problema.
-
-Começando pelo teste.
-
-    void testJurosSimples() {
-
-        Juros juros;
-
-        juros.capital = 16000;
-        juros.taxa = 0.04;
-        juros.periodo = 4;
-
-        assert(2560 == juros.simples());
-    }
-
-    int main() {
-        testJurosSimples();
-        return 0;
-    }
-
-O código não compila pois não temos a classe `Juros` nem o método `simples()`, muito menos as propriedades.
-
-Vamos fazer o código compilar.
 
 
-    class Juros {
-    public:
-        float capital, taxa;
-        int periodo;
+Linguagem C
+---
 
-        int simples() {
-        }
-    };
-
-Agora é so implementar a lógica da função `simples`.
-
-    int simples() {
-        return capital * taxa * periodo;
-    }
-
-
-
-### Código final
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
-#include <iostream>
+#include <stdio.h>
 #include <assert.h>
 
-//
-// Classe Juros
-//
-class Juros {
-public:
-    float capital, taxa;
-    int periodo;
+int main (){
 
-    // Função que retorna o juros simples
-    // J = c . i . n
-    int simples() {
-        return capital * taxa * periodo;
-    }
-};
+    // Para escrever o pequeno teste precisamos da variável `juros`.
+    // Declare aqui as variáveis que você utilizar.
+	float juros;
+	
 
-//
-// Teste Unitário
-//
-void testJurosSimples() {
+    // Aqui entra a lógica do programa.
+	juros = 0;
 
-    Juros juros;
 
-    juros.capital = 16000;
-    juros.taxa = 0.04;
-    juros.periodo = 4;
-
-    assert(2560 == juros.simples());
+    // Este é o nosso teste.
+    // Sabemos que 16000 * 0.04 * 4 = 2560, logo
+    // a variável `juros` deve ter o valor igual a 2560.
+	assert(2560 == juros);
+	return 0;
 }
+```
 
-//
-// Início do programa
-//
-int main() {
-	// Chamamos o teste unitário
-    testJurosSimples();
-    return 0;
+### Solução na linguagem C
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main (){
+
+    // Para escrever o pequeno teste precisamos da variável `juros`.
+    // Declare aqui as variáveis que você utilizar.
+	float juros, capital, taxa;
+	int n_periodos;	
+
+    // Aqui entra a lógica do programa.
+	capital    = 16000;
+	taxa       = 0.04;
+	n_periodos = 4;
+	
+	juros = capital * taxa * n_periodos;
+
+    // Este é o nosso teste.
+    // Sabemos que 16000 * 0.04 * 4 = 2560, logo
+    // a variável `juros` deve ter o valor igual a 2560.
+	assert(2560 == juros);
+	return 0;
 }
 ```
 
 
-Próximo exemplo de TDD
+Linguagem Python
 ---
 
-- [Simples exemplo de TDD - Triângulo](/tdd/exemplo-tdd-triangulo/)
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+# Aqui entra a lógica do programa.
+juros = 0;
+
+# Este é o nosso teste.
+# Sabemos que 16000 * 0.04 * 4 = 2560, logo...
+assert 2560 == juros, "juros deve ser igual a 2560"
+```
+
+### Solução na linguagem Python
+
+```python
+# -*- coding: utf-8 -*-
+
+# Aqui entra a lógica do programa.
+capital    = 16000;
+taxa       = 0.04;
+n_periodos = 4;
+
+juros = capital * taxa * n_periodos;
+
+# Este é o nosso teste.
+# Sabemos que 16000 * 0.04 * 4 = 2560, logo...
+assert 2560 == juros, "juros deve ser igual a 2560"
+```

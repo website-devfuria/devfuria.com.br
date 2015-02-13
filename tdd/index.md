@@ -13,7 +13,18 @@ Leia o primeiro artigo [Uma breve noção sobre o que é TDD](/tdd/o-que-e-tdd/)
 
 
 
+### Praticando TDD na linguagem C
+
+Sequência de exemplos de TDD escritos na linguagem C. Todos os exemplos são muito fáceis de seguir, pois simplificamos 
+utilizando a função `assert()` para simular os testes e NÂO fazemos uso de programação orientada a objetos.
+
+{% include menus/tdd-exemplos-simples-c.html %}
+
+
+
 ### Praticando TDD na linguagem C++
 
+Esta é uma sequência de exemplos de TDD escritos na linguagem C++ e, portanto, utilizando-se de programação orientada
+a objetos.
 
 {% include menus/tdd-exemplos-simples-cpp.html %}
