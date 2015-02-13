@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD - Juros simples"
+title:       "Simples exemplo de TDD - Juros simples (OOP)"
 description: Pequeno exemplo de TDD na linguagem C++ utilizando-se de programação orientada a objeto para criar uma classe com um método que retorne o juros simnples.
 menu:        tdd-exemplos-simples-cpp
 ---

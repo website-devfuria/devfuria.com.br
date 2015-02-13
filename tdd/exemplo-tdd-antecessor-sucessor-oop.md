@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD - Antecessor e sucessor de um número qualquer (oop)"
+title:       "Simples exemplo de TDD - Antecessor e sucessor de um número qualquer (OOP)"
 description: Exemplo de TDD escrito na lingugam C++ onde devemos criar duas funções, uma para mostrar o sucessor de um número e a outra para mostrar o antecessor.
 menu:        tdd-exemplos-simples-cpp
 ---
