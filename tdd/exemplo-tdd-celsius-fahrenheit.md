@@ -1,28 +1,25 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Conversor Celsius/Fahrenheit"
-description: converter celsius em fahrenheit e vice versa.
+description: Neste exemplo de TDD criaremos duas funções para conversão de temperaturas. Uma função converterá celsius em fahrenheit e a outra fará o inverso.
 menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-        
-Crie duas funções para conversão de temperaturas. 
+Neste exemplo de TDD criaremos duas funções para conversão de temperaturas. Uma função converterá celsius em fahrenheit 
+e a outra fará o inverso.
 
-Uma converterá celsius em fahrenheit e a outra fará o inverso.
+Lembrando que estamos utilizando a linguagem C e funções.
 
-Saiba que 100c é igual a 212f, veja fórmula:
+Sabendo que 100c é igual a 212f, veja fórmula:
 
        C          F - 32
     -------  =  ---------
        5            9 
        
 
- 
-### Solução passo a passo
-
-Primeiro os testes.
+Podemos crair os primeiros os testes.
 
     int celsius    = 100;
     int fahrenheit = 212;
@@ -40,7 +37,7 @@ O mínimo para eles (os testes) passarem.
         return 212;
     }
 
-Só nos resta a lógica, agora é com você
+Só nos resta a lógica, agora é com você.
 
 
 ### Código completo
@@ -73,4 +70,4 @@ int main (){
 Próximo exemplo
 ---
 
-- []()
+- [Simples exemplo de TDD - Equação de 2 grau](/tdd/exemplo-tdd-equacao-2grau/)

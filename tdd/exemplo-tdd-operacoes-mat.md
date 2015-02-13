@@ -1,20 +1,16 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD - Funções para as 4 operações artiméticas"
-description: função para cada uma das quatro operações matemáticas simples.
+title:       "Simples exemplo de TDD - Funções para as 4 operações aritméticas"
+description: Este é um exemplo de TDD que envolverá a construção de 4 funções, uma para cada operação matemática simples (adição, subtrair, multiplicar e dividir).
 menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
+Este é um exemplo de TDD que envolverá a construção de 4 funções, uma para cada operação matemática simples (adição, 
+subtrair, multiplicar e dividir).
 
-Escreva uma função para cada uma das quatro operações matemáticas simples
-(adição, subtrair, multiplicar e dividir).
-
-        
-### Solução passo a passo
-
-Quatro operações é muito trabalho. Vamos dividir para conquistar, comecemos pela adição.
+Quatro operações é muito trabalho, então vamos dividir para conquistar, comecemos pela adição.
    
 	assert(12 == somar(10, 2));
 
@@ -29,7 +25,7 @@ Lembrando que __TDD__ não diz para ficar dando passo pequenos mas sim __saber__
         return num + add;
     }
 
-Agora podemos atacar a subtração. Escreva o teste.
+Agora podemos atacar a subtração, escreva o teste.
 
 	assert(8 == subtrair(10, 2));
 
@@ -53,7 +49,7 @@ Continuando, a subtração poderá ser resolvida da seguinte forma.
 
 Testes rodando? Sim? Então poderemos atacar a multiplicação e a divisão.
 
-Acredito que você já possa andar sozinho(a). O que acha?
+Acredito que, neste ponto, você já consegue andar sozinho(a), o que acha?
 
 Então termine o exercício.
 
@@ -96,4 +92,4 @@ int main (){
 Próximo exemplo
 ---
 
-- []()
+- [Simples exemplo de TDD - Conversor Celsius/Fahrenheit](/tdd/exemplo-tdd-celsius-fahrenheit/)
