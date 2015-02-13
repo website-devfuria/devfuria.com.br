@@ -7,7 +7,10 @@ menu:        tdd-exemplos-simples-c
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Com o apoio
+
+### Introdução
+
+Com o apoio de TDD, iremos desenvolver na linguagem C, um programa que calculará o resultado de uma eleição.
 
 Considerando a tabela abaixo...
 
@@ -16,13 +19,13 @@ Considerando a tabela abaixo...
     votos brancos      = 150
     nulos              = 50
 
-Calcular o percentual do votos válidos, brancos e nulos em relação ao total de eleitores.
+Devemos saber o percentual do votos válidos, brancos e nulos em relação ao total de eleitores.
 
 __Dica:__ "em relação ao total" significa que você deve dividir pelo total de eleitores.
 
 
 
-### Solução passo a passo
+### Praticando TDD
 
 Vou começar com os votos válidos (800).
 
@@ -48,8 +51,6 @@ Sei também que o resultado de `validos / totalEleitores` deveriam estar em uma 
 Agora é só seguir essa mesma linha de raciocínio.
 
 Boa sorte!
-
-
 
 
 ### Código completo
@@ -84,4 +85,4 @@ int main (){
 Próximo exemplo
 ---
 
-- []()
+- [Simples exemplo de TDD - O dobro de um número qualquer (funções)](/tdd/exemplo-tdd-dobro-func/)
