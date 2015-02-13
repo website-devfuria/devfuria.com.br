@@ -127,7 +127,7 @@ $(document).ready(function() {
 });
 ```
 
-A idéia e esperar que todo elemento [DOM](/javascript/dom/) seja carregado antes de processar o JavaScript, apesar que já estamos lidando
+A idéia é esperar que todo elemento [DOM](/javascript/dom/) seja carregado antes de processar o JavaScript, apesar que já estamos lidando
 com isso colocando o nosso script bem ao final do documento, veja um resumo...
 
 ```html

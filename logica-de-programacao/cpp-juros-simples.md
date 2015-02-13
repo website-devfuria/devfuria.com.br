@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       "Juros simples (linguagem C++)"
-description: Exercício de lógica de programação com OOP e TDD - como calcular o juros simples.
+description: Exercício de lógica de programação (com testes unitários) para calcular o juros simples.
 menu:        logica-exerc-oop-00
 ---
 
@@ -26,6 +26,9 @@ Vamos imaginar o seguinte cenário: um empréstimo de R$ 16.000,00 sobre a taxa 
 Utilize orientação a objetos para resolver o problema.
 
 Já temos o teste escrito, você deve implementar a classe `Juros`.
+
+Linguagem C
+---
 
 ```c
 #include <iostream>
@@ -65,11 +68,8 @@ int main() {
 ```
 
 
+### Solução na linguagem C
 
-
-
-Exercício resolvido
----
 
 ```c
 #include <iostream>

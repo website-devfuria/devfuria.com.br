@@ -14,85 +14,90 @@ Seu objetivo é construir uma classe denominada `Calc` com duas funções.
 
 A primeira função mostrará o antecessor de um número qualquer.
 
-A segunda função mostrará o sucessocer de um número qualquer.
+A segunda função mostrará o sucessor de um número qualquer.
 
 
-
-### Solução passo a passo
-
-Nós já resolvemos esse problema de forma estruturada em outra matéria (linguagem c).
-
-Agora teremos a chance de resolvê-lo no âmbito do OOP (programação orienteda a objetos).
-
-Primeiro, que tal fazer-mos o código compilar?
-
-    class Calc {
-    public:
-    };
-
-
-    int main() {
-        return 0;
-    }
-
-Escrevemos o primeiro teste.
-
-    void testAntecessor() {
-        Calc c;
-        assert(9 == c.antecessor(10));
-    }
-
-Chamamos o teste na função `main`.
-
-    int main() {
-        testAntecessor();
-        return 0;
-    }
-
-Sabemos que o programa compila mas o teste não passa.
-
-Aqui começa o nosso trabalho (de lógica).
-
-Vamos fazer o teste passar
-
-    class Calc {
-    public:
-        int antecessor(int num) {
-            return num - 1;
-        }
-    };
-
-Teste passando (green). Então, pode "atacar" a segunda função.
-
-Acredito que você poderá fazer isso sozinho(a). Boa sorte.
-
-
-
-### Código completo
+Linguagem C
+---
 
 ```c
 #include <iostream>
 #include <assert.h>
 
+//
+// Classe Calc
+//
+class Calc {
+    //
+    // seu código
+    //
+};
+
+//
+// Testes unitários...
+//
+void testAntecessor() {
+    Calc c;
+    assert(9 == c.antecessor(10));
+}
+
+void testSucessor() {
+    Calc c;
+    assert(11 == c.sucessor(10));
+}
+// ...fim dos testes.
+
+//
+// Início do programa
+//
+int main() {
+    testAntecessor();
+    testSucessor();
+    return 0;
+}
+```
+
+
+### Solução na linguagem C
+
+```c
+#include <iostream>
+#include <assert.h>
+
+//
+// Classe Calc
+//
 class Calc {
 public:
+    
+    // retorna o antecessor de um número
     int antecessor(int num) {
         return num - 1;
     }
+
+    // retorna o sucessor de um número
     int sucessor(int num) {
         return num + 1;
     }
 };
 
+//
+// Testes unitários...
+//
 void testAntecessor() {
     Calc c;
     assert(9 == c.antecessor(10));
 }
+
 void testSucessor() {
     Calc c;
     assert(11 == c.sucessor(10));
 }
+// ...fim dos testes.
 
+//
+// Início do programa
+//
 int main() {
     testAntecessor();
     testSucessor();
