@@ -7,14 +7,9 @@ menu:        tdd-exemplos-simples-c
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Escreva um algoritmo que armazene o valor 999 na variável `a` e o valor 555 na variável `b`.
-
-A seguir (utilizando apenas atribuições entre variáveis) troque os seus conteúdos
-fazendo com que o valor que está em `a` passe para `b` e vice-versa.
-
-
-
-### Solução passo a passo
+Este artigo é um exemplo de TDD, vamos escrever um algoritmo que armazene o valor 999 na variável `a` e o valor 555 na
+variável `b` e , utilizando apenas atribuições entre variáveis, troque os seus conteúdos fazendo com que o valor que 
+está em `a` passe para `b` e vice-versa.
 
 Pelo raciocínio lógico, o que queremos fazer deve se parecer com isto.
 
@@ -33,7 +28,6 @@ Mas para ser mais econômico, apenas `temp`;
 
 	int a, b, temp;
 
-
 Vou guardar o valor de `a` em `temp`;
 
 	temp = a;
@@ -45,7 +39,6 @@ Agora posso sobrescrever `a` com o valor de `b`.
 E, finalmente, sobrescrever o valor de `b` pelo valor de `temp` (nosso `a` original).
 
 	b = temp;
-
 
 
 ### Código completo
@@ -80,4 +73,4 @@ int main (){
 Próximo exemplo
 ---
 
-- []()
+- [Simples exemplo de TDD - Custo de fabricação de um carro](/tdd/exemplo-tdd-custo-carro/)
