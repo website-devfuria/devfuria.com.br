@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - O dobro de um número qualquer"
-description: 
+description: Primeiro artigo de uma série de exemplos básicos de TDD (Test Driven Development) na linguagem C
 menu:        tdd-exemplos-simples-c
 ---
 
@@ -12,8 +12,6 @@ menu:        tdd-exemplos-simples-c
 Este é o primeiro exemplo de TDD da séria de exemplos na __linguagem C__.
 
 Vamos simplificar os testes com a ajuda da função `assert()`.
-
-Este exemplo está escrito na forma estruturada.
 
 
 ### Praticando TDD na linguagem C
