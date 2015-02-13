@@ -1,13 +1,15 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Juros simples"
-description:  como calcular o juros simples.
+description: "Neste artigo, apoiados pelo TDD, criaremos um pequeno programa para calcular o juros simples"
 menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Faça um programa para calcular o juros simples segundo a fórmula abaixo.
+Neste artigo, apoiados pelo TDD, criaremos um pequeno programa para calcular o juros simples na linguagem C.
+
+O juros simples é obtido através da seguinte fórmula.
 
     J = C.i.n
 
@@ -21,99 +23,56 @@ Onde:
 Vamos imaginar o seguinte cenário: um empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
 
 
+Escreva um teste.
 
-Linguagem C
----
-
-Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
-
-```c
-#include <stdio.h>
-#include <assert.h>
-
-int main (){
-
-    // Para escrever o pequeno teste precisamos da variável `juros`.
-    // Declare aqui as variáveis que você utilizar.
 	float juros;
 	
+	juros = 16000.0f * 0.04f * 4;
 
-    // Aqui entra a lógica do programa.
-	juros = 0;
-
-
-    // Este é o nosso teste.
-    // Sabemos que 16000 * 0.04 * 4 = 2560, logo
-    // a variável `juros` deve ter o valor igual a 2560.
 	assert(2560 == juros);
-	return 0;
-}
-```
 
-### Solução na linguagem C
 
-```c
-#include <stdio.h>
-#include <assert.h>
+O __TDD__ nos ensina a dar passos pequenos, mas não é proibido dar um salto maior. Então vamos subistituir
+os valores pelas devidas variáveis.
 
-int main (){
-
-    // Para escrever o pequeno teste precisamos da variável `juros`.
-    // Declare aqui as variáveis que você utilizar.
 	float juros, capital, taxa;
 	int n_periodos;	
-
-    // Aqui entra a lógica do programa.
+	
 	capital    = 16000;
 	taxa       = 0.04;
 	n_periodos = 4;
 	
 	juros = capital * taxa * n_periodos;
 
-    // Este é o nosso teste.
-    // Sabemos que 16000 * 0.04 * 4 = 2560, logo
-    // a variável `juros` deve ter o valor igual a 2560.
+Rode os testes (compile e execute).
+
+
+
+Código completo
+---
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main (){
+
+	float juros, capital, taxa;
+	int n_periodos;	
+	
+	capital    = 16000;
+	taxa       = 0.04;
+	n_periodos = 4;
+	
+	juros = capital * taxa * n_periodos;
+
 	assert(2560 == juros);
 	return 0;
 }
 ```
 
 
-Linguagem Python
----
-
-Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
-
-```python
-# -*- coding: utf-8 -*-
-
-# Aqui entra a lógica do programa.
-juros = 0;
-
-# Este é o nosso teste.
-# Sabemos que 16000 * 0.04 * 4 = 2560, logo...
-assert 2560 == juros, "juros deve ser igual a 2560"
-```
-
-### Solução na linguagem Python
-
-```python
-# -*- coding: utf-8 -*-
-
-# Aqui entra a lógica do programa.
-capital    = 16000;
-taxa       = 0.04;
-n_periodos = 4;
-
-juros = capital * taxa * n_periodos;
-
-# Este é o nosso teste.
-# Sabemos que 16000 * 0.04 * 4 = 2560, logo...
-assert 2560 == juros, "juros deve ser igual a 2560"
-```
-
-
 Próximo exemplo
 ---
 
-- []()
+- [Simples exemplo de TDD - Reajustando o salário](/tdd/exemplo-tdd-salario-reajuste/)
