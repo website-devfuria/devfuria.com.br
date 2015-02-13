@@ -1,13 +1,13 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       "Simples exemplo de TDD - Reajustando o salário"
-description: 
+description: Exemplo, na linguagem C, desenvolvido com o apoio de TDD para calcular o reajusta de um salário qualquer
 menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Nosso objetivo é escrever um pequeno programa que calcule o reajuste de um salário.
+Nosso objetivo é escrever um pequeno programa, na linguaggem C, que calcule o reajuste de um salário.
 
 Como exemplo, sendo o salário de 1.000,00 e o reajuste de 15%, nosso programa deve calcular o valor do reajuste. 
 
@@ -163,4 +163,4 @@ int main (){
 Próximo exemplo
 ---
 
-- []()
+- [Simples exemplo de TDD - Votos em relação ao total de eleitores](/tdd/exemplo-tdd-eleitores/)
