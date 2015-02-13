@@ -123,6 +123,6 @@ E quem garante que seu código funciona? Os testes.
 Próximo exemplo
 ---
 
--[Simples exemplo de TDD - Área quadrada](/tdd/exemplo-tdd-area-quadrada/)
+- [Simples exemplo de TDD - Área quadrada](/tdd/exemplo-tdd-area-quadrada/)
 
 

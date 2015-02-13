@@ -82,4 +82,4 @@ int main (){
 Próximo exemplo
 ---
 
--[Simples exemplo de TDD - Média simples de 3 números](/tdd/exemplo-tdd-media-simples/)
+- [Simples exemplo de TDD - Média simples de 3 números](/tdd/exemplo-tdd-media-simples/)
