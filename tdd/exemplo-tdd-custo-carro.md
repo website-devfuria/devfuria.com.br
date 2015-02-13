@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Custo de fabricação de um carro"
 description:  para descobrir o custo final de um carro.
-menu:        tdd-exemplos-simples-cpp
+menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

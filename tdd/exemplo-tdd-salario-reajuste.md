@@ -2,10 +2,10 @@
 layout:      grid12-article
 title:       "Simples exemplo de TDD - Reajustando o salário"
 description: 
+menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
-
 
 Nosso objetivo é escrever um pequeno programa que calcule o reajuste de um salário.
 

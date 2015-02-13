@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Votos em relação ao total de eleitores"
 description: calculamos o percentual de votos em relação ao total de eleitores.
-menu:        tdd-exemplos-simples-cpp
+menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

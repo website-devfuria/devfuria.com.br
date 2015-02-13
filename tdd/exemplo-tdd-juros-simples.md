@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Juros simples"
 description:  como calcular o juros simples.
-menu:        tdd-exemplos-simples-cpp
+menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
