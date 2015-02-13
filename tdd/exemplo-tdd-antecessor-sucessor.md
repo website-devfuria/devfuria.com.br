@@ -1,13 +1,14 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Antecessor e sucessor de um número qualquer"
-description: Exercício de lógica de programação resolvido onde o objetivo é calcular o sucessor e o antecessor de um número qualquer.
+description: Algoritmo escrito em C para calcular o sucessor e o antecessor de um número qualquer desenvolvido com ajuda da técnica TDD (Test Driven Development).
 menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.
+Vamos desenvolver um pequeno código, auxiliados pela técnica de TDD (Test Driven Development), que mostra o sucessor e o
+antecessor de um número qualquer.
 
 Se o número fosse o `10`, por exemplo, qual seria o próximo (sucessor) e o anterior (antecessor)?
 
@@ -81,4 +82,4 @@ int main (){
 Próximo exemplo
 ---
 
--[]()
+-[Simples exemplo de TDD - Média simples de 3 números](/tdd/exemplo-tdd-media-simples/)
