@@ -7,7 +7,18 @@ menu:        tdd-exemplos-simples-c
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Faça um programa que calcule o dobro de um número.
+### Introdução
+
+Este é o primeiro exemplo de TDD da séria de exemplos na __linguagem C__.
+
+Vamos simplificar os testes com a ajuda da função `assert()`.
+
+Este exemplo está escrito na forma estruturada.
+
+
+### Praticando TDD na linguagem C
+
+O objetivo é fazer um programa que calcule o dobro de um número.
 
 Primeiro, escrevemos o teste.
 
@@ -23,15 +34,15 @@ Vamos declarar a variável.
 
 	assert(10 == dobro);
 
-Agora o compilador não reclama. Mas ao rodar o programa, o nosso teste falha.
+Agora o compilador não reclama, mas ao rodar o programa, o nosso teste falha.
 
     Assertion `10 == dobro' failed
 
-Isso é um progresso. Agora precisamos codificar o mínimo para o teste passar.
+Isso é um progresso! Agora precisamos codificar o mínimo para o teste passar.
 
     dobro = 2 * 5;
 
-Compile e rode o programa. Agora os testes passam, mas... o `5` deveria ser "um número qualquer".
+Compile e rode o programa. Os testes passam, mas... o `5` deveria ser "um número qualquer".
 
 Não sei como fazer isso imediatamente, mas que tal dar um passo pequenino?
 
@@ -44,7 +55,7 @@ Vamos colocar ele em uma variável denominada `num`.
 
 	assert(10 == dobro);
 
-Comipile e rode. Não quebrou nada? Testes passando? Sim?
+Compile e rode. Não quebrou nada? Testes passando? Sim?
 
 Então seu trabalho acabou!
 
@@ -101,11 +112,19 @@ Para realizar outros testes, experimente trocar o valor de `num` e do teste tamb
 Isso você fazia nas aulas de lógica, mas com uma significativa diferença. Para testar, você realizava o __input__ dos
 dados e imprimia (__output__) os resultados e, por fim, conferia visualmente.
 
-Eis a grande diferânça! Com os teste você __não__ confere visualmente e __sim__ automaticamente.
+Eis a grande diferença! Com os teste você __não__ confere visualmente e __sim__ automaticamente.
 
 Outra coisa, a entrada e a saída do programa confundia-se com a lógica principal (`dobro = 2 * num`).
 
 Com os testes, você verá que seu programa ficará muito mais __coeso__, muito mais __claro__, mais __limpo__ e,
 o melhor de tudo, funcionando!
 
-E quem garante que seu código funciona? O teste.
+E quem garante que seu código funciona? Os testes.
+
+
+Próximo exemplo
+---
+
+-[Simples exemplo de TDD - Área quadrada](/tdd/exemplo-tdd-area-quadrada/)
+
+
