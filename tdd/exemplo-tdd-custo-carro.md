@@ -7,22 +7,22 @@ menu:        tdd-exemplos-simples-c
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-O custo de um carro novo ao consumidor é obtido com a seguinte fórula:
+Este é mais um exemplo de TDD escrito na linguagem C, desenvolveremos um pequeno programa para calcular o custo de um 
+carro.
+
+Sabemos que o custo de um carro novo ao consumidor é obtido com a seguinte fórmula:
   
     custo final = custo de fábrica +
 			     (custo de fábrica * percentual do distribuidor) +
 			     (custo de fábrica * percentual de impostos)
 
-Considerando os valores abaixo, faça um programa para calcular o custo de fabricação.
+Considerando os valores abaixo, iremos construir um programa para calcular o custo de fabricação.
  
     Custo de fábrica = 10.000,00
     Percentual do distribuidor = 28%
     Percentual dos Impostos  = 45%
 
-
-### Solução passo a passo
-
-Este exercício é ótimo para praticar __TDD__, pois o problema é grande mas o __TDD__ nos ensina que podemos dar passsos
+Este exemplo é ótimo para praticar __TDD__, pois o problema é grande mas o __TDD__ nos ensina que podemos dar passos
 pequenos quando nos sentimos "inseguro" quanto a solução do problema.
 
 Outra coisa interessante sobre o __TDD__ é que ele nos ajuda a pensar menos. Ao invés do desenvolvedor ficar matutando 
@@ -59,7 +59,7 @@ Se você acompanhou os exercícios anteriores, sabe que precisamos rodar os test
 
 E que "rodar os testes", em nosso caso, nada mais é do que compilar e executar o programa.
 
-Então, faça isso quando achar necessário. Eu não vou mais ficar avisando, ok?
+Então, faça isso quando achar necessário, eu não vou mais ficar avisando, ok?
 
 Continuando, agora podemos substituir os `10000.0f` pela variável `custoFabrica`.
 
@@ -77,7 +77,7 @@ de rodar os testes).
 		  custoImpostos,
 		  custoFinal;
 
-Agora atribuímos os devidos valores a cada variável
+Agora atribuímos os devidos valores a cada variável.
 
 	custoDistribuidor = 2800.0f;
 	custoImpostos     = 4500.0f;
@@ -86,12 +86,13 @@ Em seguida, acertamos o calculo do `custo final.
 
 	custoFinal = custoFabrica + custoDistribuidor + custoImpostos;  
 
-OK, mas esses valores apareceram como mágica? Não, nos calculamos na mão. Entao vamos fazer o computador calcular para a gente.
+OK, mas esses valores apareceram como mágica? Não, nós calculamos na mão, então vamos fazer o computador calcular para 
+a gente.
 
 	custoDistribuidor = 10000.0f * 0.28f;
 	custoImpostos     = 10000.0f * 0.45f;
 
-E já podemos, também, subistituir os `10000.0f` pela variável `custoFabrica`.
+E já podemos, também, substituir os `10000.0f` pela variável `custoFabrica`.
 
 	custoDistribuidor = custoFabrica * 0.28f;
 	custoImpostos     = custoFabrica * 0.45f;
@@ -126,4 +127,4 @@ int main() {
 Próximo exemplo
 ---
 
-- []()
+- [Simples exemplo de TDD - Juros simples](/tdd/exemplo-tdd-juros-simples/)
