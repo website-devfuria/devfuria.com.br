@@ -1,109 +1,78 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Antecessor e sucessor de um número qualquer"
-description: Exemplo de TDD escrito na lingugam C++ onde devemos criar duas funções, uma para mostrar o sucessor de um número e a outra para mostrar o antecessor.
-menu:        tdd-exemplos-simples-cpp
+description: Exercício de lógica de programação resolvido onde o objetivo é calcular o sucessor e o antecessor de um número qualquer.
+menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Neste exercício de TDD  utilizaremos a __linguagem C++__ e programação orientada a objetos.
+Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.
 
-Seu objetivo é construir uma classe denominada `Calc` com duas funções.
+Se o número fosse o `10`, por exemplo, qual seria o próximo (sucessor) e o anterior (antecessor)?
 
-A primeira função mostrará o antecessor de um número qualquer.
+Já consegue visualizar os testes?
 
-A segunda função mostrará o sucessor de um número qualquer.
+Que tal isso...
 
-Faremos uso de programação orientada a objetos, que tal começar pela classe?
-
-    class Calc {
-    public:
-    };
+    assert(9 == antecessor);
+    assert(11 == sucessor);
 
 
-    int main() {
-        return 0;
-    }
+Para compilar precisaremos declarar as variáveis.
 
-Escrevemos o primeiro teste.
+	int antecessor, sucessor;
 
-    void testAntecessor() {
-        Calc c;
-        assert(9 == c.antecessor(10));
-    }
+Mas os testes não passam (red). Aqui começa o nosso trabalho "real", é neste ponto que começamos a resolver, de fato,
+o problema.
 
-Chamamos o teste na função `main`.
+Vamos fazer os teste passarem.
 
-    int main() {
-        testAntecessor();
-        return 0;
-    }
+	antecessor = 9;
+	sucessor   = 11;
 
-Sabemos que o programa compila mas o teste não passa.
+O objetivo é obter esse resultado de um número qualquer, certo?
 
-Aqui começa o nosso trabalho (de lógica).
+Então, cadê esse "número qualquer"?
 
-Vamos fazer o teste passar.
+	int numero, antecessor, sucessor;
 
-    class Calc {
-    public:
-        int antecessor(int num) {
-            return num - 1;
-        }
-    };
+	numero     = 10;
+	antecessor = 9;
+	sucessor   = 11;
 
-Teste passando (green), então, pode "atacar" a segunda função.
+Mexemos no código, será que quebramos o progama? Rode o teste (compile e execute) e saberá.
 
-Acredito que você poderá fazer isso sozinho(a), boa sorte!
+A variável `numero` precisa interagir com as demais para termos o processamento esperado.
 
+	numero     = 10;
+	antecessor = numero - 1;
+	sucessor   = numero + 1;
+
+Rode os testes. Passaram? Tudo verde? Sim? Seu trabalho acabou.
 
 
 ### Código completo
 
 ```c
-#include <iostream>
+#include <stdio.h>
 #include <assert.h>
 
-//
-// Classe para abstrair cálculos matemáticos
-//
-class Calc {
-public:
-    int antecessor(int num) {
-        return num - 1;
-    }
-    int sucessor(int num) {
-        return num + 1;
-    }
-};
+int main (){
 
-//
-// Testes...
-//
-void testAntecessor() {
-    Calc c;
-    assert(9 == c.antecessor(10));
-}
+    int numero, antecessor, sucessor;
 
-void testSucessor() {
-    Calc c;
-    assert(11 == c.sucessor(10));
-}
-// ...fim dos testes
+    // Um número arbitrário
+    numero     = 10;
 
-//
-// Início do programa
-//
-int main() {
-    testAntecessor();
-    testSucessor();
+    // Sua lógica (seu código)
+    antecessor = numero - 1;
+    sucessor   = numero + 1;
+
+    // Seu teste
+    assert(9 == antecessor);
+    assert(11 == sucessor);
+
     return 0;
 }
 ```
-
-
-Próximo exemplo de TDD
----
-
-- [Simples exemplo de TDD - Juros simples](/tdd/exemplo-tdd-juros-simples/)
