@@ -1,35 +1,30 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Média simples de 3 números"
-description: o objetivo é calcular a média simples.
+description: Exemplo de TDD na linguagem C, pequeno algoritmo para calcular a média simples.
 menu:        tdd-exemplos-simples-c
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Faça um programa que calcule a média simples (aritmética) de 3 valores quaisquer.
+Com a juda da técnia TDD (Test Driven Development), vamos desenvolver um pequeno algoritmo que calcula a média simples 
+(aritmética) de 3 valores quaisquer.
 
-Utilize as variáveis `valor1`, `valor2` e `valor3`.
-
-
-
-### Solução passo a passo
-
-Precisamos de um resultado para escrevermos o teste: `7 = (6 + 7 + 8) / 3`. Este serve.
+Precisamos de um resultado para escrevermos o teste: `7 = (6 + 7 + 8) / 3`,.este serve.
 
 Em nosso exemplo, já sabemos a média, é `7`. Então, podemos escreve o teste.
 
 	assert(7 == media);
 
-Vamos dar dois passos. Para compilar, precisamos declarar a variável `media` e para passar no teste precisaremos atribuir
-o valor `7` a ela.
+Vamos dar dois passos: 1) para compilar, precisamos declarar a variável `media` e  2) para passar no teste precisaremos 
+atribuir o valor `7` a ela.
 
     int media;
     media = 7;
 
 Código compilando e passando no teste (green).
 
-Não sei você, mas eu estou com vontade de trocar o `7` pelo calculo.
+Não sei você, mas eu estou com vontade de trocar o `7` pelo cálculo.
 
     media = (6 + 7 + 8) / 3;
 
@@ -80,4 +75,4 @@ int main (){
 Próximo exemplo
 ---
 
-- []()
+- [Simples exemplo de TDD - Descobrir os dias de 'n' meses](/tdd/exemplo-tdd-dias-n-meses/)
