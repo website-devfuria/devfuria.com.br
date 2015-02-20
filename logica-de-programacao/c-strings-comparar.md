@@ -11,34 +11,49 @@ Exercício de lógica de programação
 ---
 
 
-Faça um programa para comparar se duas strings são iguas.
-
-
-### Solução passo a passo
-
-Começamos pelo teste.
-
-    char ola[]  = "ola";
-    char ola2[] = "ola";
-
-    assert(1 == compararStrings(ola, ola2));
-
-Agora fazemos o código compilar com o mínimo para passar no teste.
-
-    int compararStrings(char str1[], char str2[]) {
-        return 1;
-    }
-
-Então alteramos até encontrar o resultado esperado.
+Faça um programa para comparar se duas strings são iguais.
 
 
 
-### Código completo
+Linguagem C
+---
 
 ```c
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Fun.ão que compara se duas string são iguais
+//
+int compararStrings(char str1[], char str2[]) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+//
+// Testes
+//
+int main() {
+
+    char ola[]  = "ola";
+    char ola2[] = "ola";
+    assert(1 == compararStrings(ola, ola2));
+
+    return 0;
+}
+```
+
+
+### Solução na linguagem C
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+//
+// Fun.ão que compara se duas string são iguais
+//
 int compararStrings(char str1[], char str2[]) {
     int i = 0;
 
@@ -52,11 +67,15 @@ int compararStrings(char str1[], char str2[]) {
     return 1;
 }
 
+//
+// Testes
+//
 int main() {
+
     char ola[]  = "ola";
     char ola2[] = "ola";
-
     assert(1 == compararStrings(ola, ola2));
+
     return 0;
 }
 ```

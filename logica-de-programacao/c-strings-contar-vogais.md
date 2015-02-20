@@ -15,34 +15,44 @@ Faça um programa que descubra a quantidade de vogais de uma determinada string.
 
 
 
-### Solução passo a passo
-
-Primeiro o teste:
-
-    int main() {
-        char plavra[] = "abecedario";
-        assert(6 == contaVogais(plavra));
-        return 0;
-    }
-
-
-Faça o teste compilar.
-
-    int contaVogais(char palavra[]) {
-        int numVogais = 0;
-        return numVogais;
-    }
-
-
-Agora, implemente até que o teste passe.
-
-
-### Código completo
+Linguagem C
+---
 
 ```c
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Função para contar quantidade de vogais de determinada string
+//
+int contaVogais(char palavra[]) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+//
+// Testes
+//
+int main() {
+
+    char plavra[] = "abecedario";
+    assert(6 == contaVogais(plavra));
+
+    return 0;
+}
+```
+
+
+### Solução na linguagem C
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+//
+// Função para contar quantidade de vogais de determinada string
+//
 int contaVogais(char palavra[]) {
     char vogais[] = "aeiouAEIOU";
     int numVogais = 0, i, j;
@@ -59,9 +69,14 @@ int contaVogais(char palavra[]) {
     return numVogais;
 }
 
+//
+// Testes
+//
 int main() {
+
     char plavra[] = "abecedario";
     assert(6 == contaVogais(plavra));
+
     return 0;
 }
 ```

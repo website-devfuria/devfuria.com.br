@@ -14,28 +14,8 @@ Exercício de lógica de programação
 Faça um programa que inverta uma string, exemplo: "animal" em "lamina".
 
 
-### Solução passo a passo
-
-Primeiro o teste:
-
-    int main() {
-        assert(strcmp("animal", str) == 0);
-        return (0);
-    }
-
-
-Faça o teste compilar.
-
-    int main() {
-        char str[] = "lamina";
-        assert(strcmp("animal", str) == 0);
-        return (0);
-    }
-
-Agora, implemente até que o teste passe.
-
-
-### Código completo
+Linguagem C
+---
 
 ```c
 #include<stdio.h>
@@ -43,6 +23,29 @@ Agora, implemente até que o teste passe.
 #include<assert.h>
 
 int main() {
+
+    // Aqui entra a lógica do programa.
+
+
+    //
+    // Teste
+    //
+    assert(strcmp("animal", str) == 0);
+
+    return (0);
+}
+```
+
+
+### Solução na linguagem C
+
+```c
+#include<stdio.h>
+#include<string.h>
+#include<assert.h>
+
+int main() {
+
     char str[] = "lamina";
     char temp;
     int i, j;
@@ -58,7 +61,12 @@ int main() {
         j--;
     }
 
+
+    //
+    // Teste
+    //
     assert(strcmp("animal", str) == 0);
+
     return (0);
 }
 ```
