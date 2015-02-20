@@ -11,7 +11,7 @@ Exercício de lógica de programação
 ---
 
 Dados 3 valores quaisquer (a, b e c) representando as medidas dos lados de um triângulo,
-faça um algorítimo para descobrir se formam ou não um triângulo.
+faça um algoritmo para descobrir se formam ou não um triângulo.
 
 Saiba que para formar um triângulo, o valor de cada lado deve ser menor que a soma dos outros 2 lados.
 

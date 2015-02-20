@@ -10,11 +10,11 @@ Se você precisa saber mais sobre o DOM, aconselho a ler o artigo [DOM - Documen
 
 Veremos as funções de manipulação do __DOM__:
 
-- [document.createElement()](/javascript/refs/dom-create-element/)
-- [document.createTextNode()](/javascript/refs/dom-create-text-node/)
-- [appendChild()](/javascript/refs/dom-append-child/)
-- [insertBefore()](/javascript/refs/dom-insert-before/)
-- [removeChild()](/javascript/refs/dom-remove-child/)
+- [document.createElement()](/javascript/dom-create-element/)
+- [document.createTextNode()](/javascript/dom-create-text-node/)
+- [appendChild()](/javascript/dom-append-child/)
+- [insertBefore()](/javascript/dom-insert-before/)
+- [removeChild()](/javascript/dom-remove-child/)
 
 
 Criando, inserindo e removendo
@@ -130,8 +130,8 @@ O código acima, se executado uma única vez, obterá o seguinte resultado:
 
 ### Removendo
 
-Para remover um nó utilizamos a função `removeChild()`. Devemos chamar a função a partir do elemnto pai (no caso `lista`) 
-e passar como parâmetro o elmento a ser removido. Novamente precisaremos da coleção de itens da lista (variável `itens`).
+Para remover um nó utilizamos a função `removeChild()`. Devemos chamar a função a partir do elemento pai (no caso `lista`) 
+e passar como parâmetro o elemento a ser removido. Novamente precisaremos da coleção de itens da lista (variável `itens`).
 
 ```javascript
 // Obtendo referências
