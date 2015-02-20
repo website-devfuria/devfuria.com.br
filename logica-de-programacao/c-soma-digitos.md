@@ -9,17 +9,55 @@ menu:        logica-exerc-nivel-03
 
 Exercício de lógica de programação
 ---
+
 Faça um programa para somar os dígitos de um inteiro
 
 Sem utilizar recursos de string, ou seja, trabalhe apenas com tipos numéricos.
 
-### Código completo
+
+
+
+Linguagem C
+---
 
 
 ```c
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Função que soma os dígitos de um número 
+//
+int somarDigitos(int numero) {
+
+
+    // Aqui entra a lógica do programa.
+
+
+}
+
+//
+// Testes
+//
+int main() {
+
+    assert(6 == somarDigitos(2013));
+    assert(15 == somarDigitos(456));
+
+    return 0;
+}
+```
+
+
+### Solução na linguagem C
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+//
+// Função que soma os dígitos de um número 
+//
 int somarDigitos(int numero) {
     int soma = 0;
 
@@ -31,6 +69,9 @@ int somarDigitos(int numero) {
     return soma;
 }
 
+//
+// Testes
+//
 void main() {
     assert(6 == somarDigitos(2013));
     assert(15 == somarDigitos(456));
