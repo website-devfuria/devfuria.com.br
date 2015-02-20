@@ -135,7 +135,7 @@ que coincidem com determinado [seletor CSS](/html-css/seletores-css/). O segredo
 ele recebe um argumento de string contendo um seletor CSS e retorna um objeto [NodeList](/javascript/dom-nodelist/) 
 representando  todos os elementos do documento que correspondem ao seletor.
 
-Leia mais sobre a função [queryselectorall()](/javascript/queryselectorall/)
+Leia mais sobre a função [querySelectorAll()](/javascript/queryselectorall/)
 
 
 
