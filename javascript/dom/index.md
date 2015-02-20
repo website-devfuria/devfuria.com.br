@@ -243,15 +243,16 @@ Manipulando o DOM
 
 Podemos criar, inserir e excluir elementos da árvore DOM.
 
-A função `document.createElement()` aceita como parâmetro o nome da tag e retorna o elemento recém criado (mas ainda não inserido).
+A função [document.createElement()](/javascript/dom-create-element/) aceita como parâmetro o nome da tag e retorna o 
+elemento recém criado (mas ainda não inserido).
 
 ```javascript
 var elem = document.createElement("li");
 ```
 
-Inserimos o elemento com a função `elemento_pai.appendChild()`, mas ainda precisamos criar um nó de texto para o elemento, 
-caso contrário, estaremos inserindo apenas o elemento, sem texto. Para criar um nó de texto utilizamos a função 
-`document.createTextNode()`.
+Inserimos o elemento com a função [elemento_pai.appendChild()](/javascript/dom-append-child/), mas ainda precisamos 
+criar um nó de texto para o elemento, caso contrário, estaremos inserindo apenas o elemento, sem texto. Para criar um 
+nó de texto utilizamos a função [document.createTextNode()](/javascript/dom-create-text-node/).
 
 ```javascript
 var texto = document.createTextNode("mais um item");
@@ -278,10 +279,10 @@ A função `elemento_pai.appendChild()` insere o novo elemento filho ao final do
 lista.appendChild(elem);
 ```
 
-Também podemos inserir um elemento através da função `insertBefore()`, ela aceita dois parâmetros: o primeiro
-é o elemento filho e o segundo é o elemento que servirá de referência para inserir o elemento filho.
+Também podemos inserir um elemento através da função [insertBefore()](/javascript/dom-insert-before/), ela aceita dois 
+parâmetros: o primeiro é o elemento filho e o segundo é o elemento que servirá de referência para inserir o elemento filho.
 
-Para remover um elemento utilizamos a função `removeChild()`.
+Para remover um elemento utilizamos a função [removeChild()](/javascript/dom-remove-child/).
 
 Leia o artigo [Manipulando o DOM](/javascript/dom-manipulando-o-dom/) para obter mais detalhes.
 
