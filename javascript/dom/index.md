@@ -118,14 +118,14 @@ A atributo `class` de uma HTML é uma lista separada de zero ou mais identificad
 de definir conjuntos de elementos relacionados do documento: todos os elementos que têm o mesmo identificador em seu
 atributo `class` fazem parte do mesmo conjunto.
 
-A [HTML 5](/html-css/) define um método `getElementByClassName()` que nos permite selecionar conjuntos de elementos de
+A [HTML 5](/html-css/) define um método `getElementsByClassName()` que nos permite selecionar conjuntos de elementos de
 documento com base nos identificadores que estão em seu atributo `class`.
 
 ```javascript
-var elementos = document.getElementByClassName("nome-da-classe");
+var elementos = document.getElementsByClassName("nome-da-classe");
 ```
 
-Leia mais sobre a função [getElementByClassName()](/javascript/getelementbyclassname/)
+Leia mais sobre a função [getElementsByClassName()](/javascript/getelementsbyclassname/)
 
 
 ### Selecionando elementos através dos seletores CSS
