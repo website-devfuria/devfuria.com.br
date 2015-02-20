@@ -17,41 +17,8 @@ fazendo com que o valor que está em `a` passe para `b` e vice-versa.
 
 
 
-### Solução passo a passo
-
-Pelo raciocínio lógico, o que queremos fazer deve se parecer com isto.
-
-	int a, b;
-
-	a = 999;
-	b = 555;
-
-	assert(a == 555);
-	assert(b == 999);
-
-Vamos precisar trocar os valores!
-
-Para isso faz-se necessário mais uma variável. Só que do tipo "reciclável", então darei o nome de `temporaria`.
-Mas para ser mais econômico, apenas `temp`;
-
-	int a, b, temp;
-
-
-Vou guardar o valor de `a` em `temp`;
-
-	temp = a;
-
-Agora posso sobrescrever `a` com o valor de `b`.
-
-	a = b;
-
-E, finalmente, sobrescrever o valor de `b` pelo valor de `temp` (nosso `a` original).
-
-	b = temp;
-
-
-
-### Código completo
+Linguagem C
+---
 
 ```c
 #include <stdio.h>
@@ -61,10 +28,38 @@ int main (){
 
     int a, b, temp;
 
+    //
+    // Sua lógica
+    //
+
+
+
+
+    // Testes 
+    assert(a == 555);
+    assert(b == 999);
+
+    return 0;
+}
+```
+
+
+
+### Solução na linguagem C
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main (){
+
+    int a, b, temp;
+
+    //
+    // Sua lógica
+    //
     a = 999;
     b = 555;
-
-    // Lógica
     temp = a;	  // registramos o valor de 'a' em 'temp'
     a    = b;	  // sobrescrever 'a' com o valor de 'b'
     b    = temp;  // sobrescrever 'b' com o valor que era de 'a' (e foi registrado em 'temp')
