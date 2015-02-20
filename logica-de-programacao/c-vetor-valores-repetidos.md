@@ -13,7 +13,30 @@ Exercício de lógica de programação
 Faça um programa que identifique se em um determinado vetor, existem ou não valores repetidos.
 
 
-### Código completo
+Linguagem C
+---
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main() {
+
+
+    // Aqui entra a lógica do programa.
+
+
+    //
+    // Teste
+    //
+    assert(1== resp);
+
+    return (0);
+}
+```
+
+
+### Solução na linguagem C
 
 ```c
 #include <stdio.h>
@@ -38,7 +61,11 @@ int main() {
         }
     }
 
+    //
+    // Teste
+    //
     assert(1== resp);
+
     return (0);
 }
 ```
