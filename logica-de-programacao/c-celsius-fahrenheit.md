@@ -22,43 +22,73 @@ Saiba que 100c é igual a 212f, veja fórmula:
        
 
  
-### Solução passo a passo
-
-Primeiro os testes.
-
-    int celsius    = 100;
-    int fahrenheit = 212;
-
-	assert(celsius == toCelsius(fahrenheit));
-	assert(fahrenheit == toFahrenheit(celsius));
-
-O mínimo para eles (os testes) passarem.
-
-    int toCelsius(int fahrenheit) {
-        return 100;
-    }
-
-    int toFahrenheit(int celsius) {
-        return 212;
-    }
-
-Só nos resta a lógica, agora é com você
+Linguagem C
+---
 
 
-### Código completo
 
 ```c
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Converte fahrenheit em celsius
+//
+int toCelsius(int fahrenheit) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+//
+// Converte celsius em fahrenheit
+//
+int toFahrenheit(int celsius) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+//
+// Testes
+//
+int main (){
+
+    int celsius    = 100;
+    int fahrenheit = 212;
+
+    assert(celsius == toCelsius(fahrenheit));
+    assert(fahrenheit == toFahrenheit(celsius));
+
+    return 0;
+}
+``` 
+
+
+
+### Solução na linguagem C
+       
+```c
+#include <stdio.h>
+#include <assert.h>
+
+//
+// Converte fahrenheit em celsius
+//
 int toCelsius(int fahrenheit) {
     return 5 * (fahrenheit - 32) / 9;
 }
 
+//
+// Converte celsius em fahrenheit
+//
 int toFahrenheit(int celsius) {
     return celsius / 5 * 9 + 32;
 }
 
+//
+// Testes
+//
 int main (){
 
     int celsius    = 100;
