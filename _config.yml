@@ -8,7 +8,7 @@ description: "Site de desenvolvimento web"
 markdown: redcarpet
 highlighter: pygments
 permalink: pretty
-#exclude: [linux, logica-de-programacao, git, python, javascript, php, seguranca-da-informacao, sql, html-css, regex, misc, tdd]
+#exclude: [python, logica-de-programacao, javascript, linux, html-css, regex, misc, tdd, git, php, sql, seguranca-da-informacao]
 
 host: 0.0.0.0
 port: 4000
