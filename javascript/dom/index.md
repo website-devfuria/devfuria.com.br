@@ -77,7 +77,7 @@ identificação exclusiva com o método `getElementById()` do objeto __document_
 var elemento = document.getElementById("identificacao");
 ```
 
-Leia mais sobre a função [getElementById()](/javascript/refs/getelementbyid/)
+Leia mais sobre a função [getElementById()](/javascript/getelementbyid/)
 
 
 ### Selecionando elementos pelo nome
@@ -97,7 +97,7 @@ podem ter o mesmo nome e isso é comum no caso de [botões de seleção](/html-c
 var elementos = document.getElementsByName("nome-dos-elementos");
 ```
 
-Leia mais sobre a função [getElementsByName()](/javascript/refs/getelementsbyname/)
+Leia mais sobre a função [getElementsByName()](/javascript/getelementsbyname/)
 
 
 ### Selecionando elementos pela tag
@@ -109,7 +109,7 @@ em um documento, por exemplo, você poderia escrever:
 var spans = document.getElementsByTagName("span");
 ```
 
-Leia mais sobre a função [getElementsByTagName()](/javascript/refs/getelementsbytagname/)
+Leia mais sobre a função [getElementsByTagName()](/javascript/getelementsbytagname/)
 
 
 ### Selecionando elementos pela classe CSS
@@ -125,17 +125,17 @@ documento com base nos identificadores que estão em seu atributo `class`.
 var elementos = document.getElementByClassName("nome-da-classe");
 ```
 
-Leia mais sobre a função [getElementByClassName()](/javascript/refs/getelementbyclassname/)
+Leia mais sobre a função [getElementByClassName()](/javascript/getelementbyclassname/)
 
 
 ### Selecionando elementos através dos seletores CSS
 
 O padrão da W3C conhecido como [API de Seletores]( "link-externo") define métodos JavaScript para obter os elementos
 que coincidem com determinado [seletor CSS](/html-css/seletores-css/). O segredo dessa API é o método `querySelectorAll()`,
-ele recebe um argumento de string contendo um seletor CSS e retorna um objeto [NodeList](/javascript/refs/dom-nodelist/) 
+ele recebe um argumento de string contendo um seletor CSS e retorna um objeto [NodeList](/javascript/dom-nodelist/) 
 representando  todos os elementos do documento que correspondem ao seletor.
 
-Leia mais sobre a função [queryselectorall()](/javascript/refs/queryselectorall/)
+Leia mais sobre a função [queryselectorall()](/javascript/queryselectorall/)
 
 
 
