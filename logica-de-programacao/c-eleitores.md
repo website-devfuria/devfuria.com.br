@@ -23,37 +23,10 @@ __Dica:__ "em relação ao total" significa que você deve dividir pelo total de
 
 
 
-### Solução passo a passo
 
-Vou começar com os votos válidos (800).
+Linguagem C
+---
 
-Sei que 800 / 1000 = 80%. Opâ, já posso escrever um teste.
-
-Vamos subistituir os valores por variáveis.
-
-	float totalEleitores = 1000,
-		  validos = 800;
-
-	assert(0.8f == validos / totalEleitores);
-
-Sei também que o resultado de `validos / totalEleitores` deveriam estar em uma variável denominada, por exemplo, `percValidos`.
-
-	float totalEleitores = 1000,
-		  validos = 800,
-		  percValidos;
-
-	percValidos = validos / totalEleitores;
-
-	assert(0.8f == percValidos);
-
-Agora é só seguir essa mesma linha de raciocínio.
-
-Boa sorte!
-
-
-
-
-### Código completo
 
 ```c
 #include <stdio.h>
@@ -61,6 +34,7 @@ Boa sorte!
 
 int main (){
 
+    // Variáveis
 	float totalEleitores = 1000,
 		  validos = 800,
 		  brancos = 150,
@@ -69,10 +43,52 @@ int main (){
 		  percBrancos,
 		  percNulos;
 
+    //
+    // Sua lógica entra aqui
+    //
 	percValidos = validos / totalEleitores;
 	percBrancos = brancos / totalEleitores;
 	percNulos   = nulos   / totalEleitores; 
 
+    //
+    // Teste
+    //
+	assert(0.8f == percValidos);
+	assert(0.15f == percBrancos);
+	assert(0.05f == percNulos);
+
+	return 0;
+}
+```
+
+
+### Solução na linguagem C
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main (){
+
+    // Variáveis
+	float totalEleitores = 1000,
+		  validos = 800,
+		  brancos = 150,
+		  nulos = 50,
+		  percValidos,
+		  percBrancos,
+		  percNulos;
+
+    //
+    // Sua lógica entra aqui
+    //
+	percValidos = validos / totalEleitores;
+	percBrancos = brancos / totalEleitores;
+	percNulos   = nulos   / totalEleitores; 
+
+    //
+    // Teste
+    //
 	assert(0.8f == percValidos);
 	assert(0.15f == percBrancos);
 	assert(0.05f == percNulos);
