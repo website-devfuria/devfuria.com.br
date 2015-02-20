@@ -77,7 +77,7 @@ identificação exclusiva com o método `getElementById()` do objeto __document_
 var elemento = document.getElementById("identificacao");
 ```
 
-Leia mais sobre a função [getElementById()](/javascript/refs/getelementbyid/)
+Leia mais sobre a função [getElementById()](/javascript/getelementbyid/)
 
 
 ### Selecionando elementos pelo nome
@@ -94,10 +94,10 @@ podem ter o mesmo nome e isso é comum no caso de [botões de seleção](/html-c
 
 
 ```javascript
-var elementos = document.getElementByName("nome-dos-elementos");
+var elementos = document.getElementsByName("nome-dos-elementos");
 ```
 
-Leia mais sobre a função [getElementByName()](/javascript/refs/getelementbyname/)
+Leia mais sobre a função [getElementsByName()](/javascript/getelementsbyname/)
 
 
 ### Selecionando elementos pela tag
@@ -109,7 +109,7 @@ em um documento, por exemplo, você poderia escrever:
 var spans = document.getElementsByTagName("span");
 ```
 
-Leia mais sobre a função [getElementByTagName()](/javascript/refs/getelementsbytagname/)
+Leia mais sobre a função [getElementsByTagName()](/javascript/getelementsbytagname/)
 
 
 ### Selecionando elementos pela classe CSS
@@ -118,24 +118,24 @@ A atributo `class` de uma HTML é uma lista separada de zero ou mais identificad
 de definir conjuntos de elementos relacionados do documento: todos os elementos que têm o mesmo identificador em seu
 atributo `class` fazem parte do mesmo conjunto.
 
-A [HTML 5](/html-css/) define um método `getElementByClassName()` que nos permite selecionar conjuntos de elementos de
+A [HTML 5](/html-css/) define um método `getElementsByClassName()` que nos permite selecionar conjuntos de elementos de
 documento com base nos identificadores que estão em seu atributo `class`.
 
 ```javascript
-var elementos = document.getElementByClassName("nome-da-classe");
+var elementos = document.getElementsByClassName("nome-da-classe");
 ```
 
-Leia mais sobre a função [getElementByClassName()](/javascript/refs/getelementbyclassname/)
+Leia mais sobre a função [getElementsByClassName()](/javascript/getelementsbyclassname/)
 
 
 ### Selecionando elementos através dos seletores CSS
 
 O padrão da W3C conhecido como [API de Seletores]( "link-externo") define métodos JavaScript para obter os elementos
 que coincidem com determinado [seletor CSS](/html-css/seletores-css/). O segredo dessa API é o método `querySelectorAll()`,
-ele recebe um argumento de string contendo um seletor CSS e retorna um objeto [NodeList](/javascript/refs/dom-nodelist/) 
+ele recebe um argumento de string contendo um seletor CSS e retorna um objeto [NodeList](/javascript/dom-nodelist/) 
 representando  todos os elementos do documento que correspondem ao seletor.
 
-Leia mais sobre a função [queryselectorall()](/javascript/refs/queryselectorall/)
+Leia mais sobre a função [querySelectorAll()](/javascript/queryselectorall/)
 
 
 
@@ -243,15 +243,16 @@ Manipulando o DOM
 
 Podemos criar, inserir e excluir elementos da árvore DOM.
 
-A função `document.createElement()` aceita como parâmetro o nome da tag e retorna o elemento recém criado (mas ainda não inserido).
+A função [document.createElement()](/javascript/dom-create-element/) aceita como parâmetro o nome da tag e retorna o 
+elemento recém criado (mas ainda não inserido).
 
 ```javascript
 var elem = document.createElement("li");
 ```
 
-Inserimos o elemento com a função `elemento_pai.appendChild()`, mas ainda precisamos criar um nó de texto para o elemento, 
-caso contrário, estaremos inserindo apenas o elemento, sem texto. Para criar um nó de texto utilizamos a função 
-`document.createTextNode()`.
+Inserimos o elemento com a função [elemento_pai.appendChild()](/javascript/dom-append-child/), mas ainda precisamos 
+criar um nó de texto para o elemento, caso contrário, estaremos inserindo apenas o elemento, sem texto. Para criar um 
+nó de texto utilizamos a função [document.createTextNode()](/javascript/dom-create-text-node/).
 
 ```javascript
 var texto = document.createTextNode("mais um item");
@@ -278,10 +279,10 @@ A função `elemento_pai.appendChild()` insere o novo elemento filho ao final do
 lista.appendChild(elem);
 ```
 
-Também podemos inserir um elemento através da função `insertBefore()`, ela aceita dois parâmetros: o primeiro
-é o elemento filho e o segundo é o elemento que servirá de referência para inserir o elemento filho.
+Também podemos inserir um elemento através da função [insertBefore()](/javascript/dom-insert-before/), ela aceita dois 
+parâmetros: o primeiro é o elemento filho e o segundo é o elemento que servirá de referência para inserir o elemento filho.
 
-Para remover um elemento utilizamos a função `removeChild()`.
+Para remover um elemento utilizamos a função [removeChild()](/javascript/dom-remove-child/).
 
 Leia o artigo [Manipulando o DOM](/javascript/dom-manipulando-o-dom/) para obter mais detalhes.
 

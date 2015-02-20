@@ -1,30 +1,21 @@
 ---
 layout:      grid93-article
-title:       "Antecessor e sucessor de um número qualquer "
-description: Exercício de lógica de programação resolvido cujo objetivo é, com o auxílio de classes, encontrar o sucessor e antecessor de um número qualquer.
-menu:        logica-exerc-oop-00
+title:       "Simples exemplo de TDD - Antecessor e sucessor de um número qualquer (OOP)"
+description: Exemplo de TDD escrito na lingugam C++ onde devemos criar duas funções, uma para mostrar o sucessor de um número e a outra para mostrar o antecessor.
+menu:        tdd-exemplos-simples-cpp
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Exercício de lógica de programação
----
+Neste exercício de TDD  utilizaremos a __linguagem C++__ e programação orientada a objetos.
 
 Seu objetivo é construir uma classe denominada `Calc` com duas funções.
 
 A primeira função mostrará o antecessor de um número qualquer.
 
-A segunda função mostrará o sucessocer de um número qualquer.
+A segunda função mostrará o sucessor de um número qualquer.
 
-
-
-### Solução passo a passo
-
-Nós já resolvemos esse problema de forma estruturada em outra matéria (linguagem c).
-
-Agora teremos a chance de resolvê-lo no âmbito do OOP (programação orienteda a objetos).
-
-Primeiro, que tal fazer-mos o código compilar?
+Faremos uso de programação orientada a objetos, que tal começar pela classe?
 
     class Calc {
     public:
@@ -53,7 +44,7 @@ Sabemos que o programa compila mas o teste não passa.
 
 Aqui começa o nosso trabalho (de lógica).
 
-Vamos fazer o teste passar
+Vamos fazer o teste passar.
 
     class Calc {
     public:
@@ -62,9 +53,9 @@ Vamos fazer o teste passar
         }
     };
 
-Teste passando (green). Então, pode "atacar" a segunda função.
+Teste passando (green), então, pode "atacar" a segunda função.
 
-Acredito que você poderá fazer isso sozinho(a). Boa sorte.
+Acredito que você poderá fazer isso sozinho(a), boa sorte!
 
 
 
@@ -74,6 +65,9 @@ Acredito que você poderá fazer isso sozinho(a). Boa sorte.
 #include <iostream>
 #include <assert.h>
 
+//
+// Classe para abstrair cálculos matemáticos
+//
 class Calc {
 public:
     int antecessor(int num) {
@@ -84,18 +78,32 @@ public:
     }
 };
 
+//
+// Testes...
+//
 void testAntecessor() {
     Calc c;
     assert(9 == c.antecessor(10));
 }
+
 void testSucessor() {
     Calc c;
     assert(11 == c.sucessor(10));
 }
+// ...fim dos testes
 
+//
+// Início do programa
+//
 int main() {
     testAntecessor();
     testSucessor();
     return 0;
 }
 ```
+
+
+Próximo exemplo de TDD
+---
+
+- [Simples exemplo de TDD - Juros simples](/tdd/exemplo-tdd-juros-simples/)

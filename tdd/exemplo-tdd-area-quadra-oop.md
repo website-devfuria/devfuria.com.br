@@ -1,20 +1,15 @@
 ---
 layout:      grid93-article
-title:       Área quadrada e área cúbica "
-description: Exercício de lógica de programação resolvido cujo objetivo é, com o auxílio de classes, encontrar a área quadra e cúbica.
-menu:        logica-exerc-oop-00
+title:       "Simples exemplo de TDD - Área quadrada (OOP)"
+description: Este artigo é um exemplo de TDD escrito na linguagem C++ que tem como objetivo criar uma classe para representar a área (geometria)
+menu:        tdd-exemplos-simples-cpp
 ---
 
-{% include /menus/logica-paraquedas.html %}
-
-Exercício de lógica de programação
----
+{% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
 Seu objetivo é construir uma classe denominada `Area` que calcule tanto a área quadrada (primeiro método) como a
-área cúbica (segundo método).
-
-
-### Solução passo a passo
+área cúbica (segundo método). Como o exemplo é na __linguagem C++__ faremos uso de programação orientada a objetos, 
+obviamente.
 
 Ok, vamos dividir para conquistar. Ataquemos a primeira função, a área quadrada.
 
@@ -28,7 +23,7 @@ Começamos pelo teste.
         assert(27 == area.quadrada());
     }
 
-O código não compila porque não temos nem a classe e nem o método. Então vamos lá.
+O código não compila porque não temos nem a classe e nem o método, então vamos lá.
 
     class Area {
     public:
@@ -47,7 +42,7 @@ Lembre-se de adequar o corpo do programa:
 
 Agora ele compila mas não passa nos teste (red).
 
-Nosso mantra: um teste falhando é sinal de progresso.
+Um dos mantras do TDD: __teste falhando é sinal de progresso__.
 
 Podemos escrever o mínimo de código para o teste passar.
 
@@ -55,11 +50,9 @@ Podemos escrever o mínimo de código para o teste passar.
         return lado1 * lado2;
     }
 
-Agora o teste passa (green). Primeira função concluída.
+Agora o teste passa (green), primeira função concluída.
 
-Vamos para a segunda? O cubo.
-
-Escrevemos o teste.
+Vamos para a segunda, o cubo. Novamente, iniciamos escrevendo o teste.
 
     void testAreaCubica() {
         Area area;
@@ -87,7 +80,6 @@ Esquecemos de declarar a terceira variável `lado3`.
     public:
         int lado1, lado2, lado3;
 
-
 Agora vai! Compile e execute.
 
 Vemos o teste falhar (red) e partimos para o esforço de vê-lo passar (green).
@@ -105,18 +97,33 @@ Tudo verde? Coisa linda.
 #include <iostream>
 #include <assert.h>
 
+//
+// Classe para abstrair cálculos geométricos
+// referente a área.
+//
 class Area {
 public:
     int lado1, lado2, lado3;
     
+    //
+    // Retorna a área quadrada
+    //
     int quadrada() {
         return lado1 * lado2;
     }
+
+    //
+    // Retorna a área cúbica
+    //
     int cubica() {
         return lado1 * lado2 * lado3;
     }
 };
 
+
+//
+// Testes...
+//
 void testAreaQuadrada() {
     Area area;
     
@@ -133,7 +140,11 @@ void testAreaCubica() {
     area.lado3 = 2;
     assert(36 == area.cubica());
 }
+// ...fim dos testes
 
+//
+// Início do programa
+//
 int main() {
     testAreaQuadrada();
     testAreaCubica();
@@ -141,3 +152,9 @@ int main() {
 }
 ```
 
+
+
+Próximo exemplo de TDD
+---
+
+- [Simples exemplo de TDD - Antecessor e sucessor de um número qualquer](/tdd/exemplo-tdd-antecessor-sucessor/)

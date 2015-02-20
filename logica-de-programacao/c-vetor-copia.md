@@ -10,7 +10,7 @@ menu:        logica-exerc-nivel-04v
 Exercício de lógica de programação
 ---
 
-Crie um algoritimo para copiar um vetor (utilize laço de repetição).
+Crie um algoritmo para copiar um vetor (utilize laço de repetição).
 
 Use a nomenclatura `vetor1` para o vetor original e `vetor2` para o vetor copiado.
 
