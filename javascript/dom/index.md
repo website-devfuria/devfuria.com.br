@@ -94,10 +94,10 @@ podem ter o mesmo nome e isso é comum no caso de [botões de seleção](/html-c
 
 
 ```javascript
-var elementos = document.getElementByName("nome-dos-elementos");
+var elementos = document.getElementsByName("nome-dos-elementos");
 ```
 
-Leia mais sobre a função [getElementByName()](/javascript/refs/getelementbyname/)
+Leia mais sobre a função [getElementsByName()](/javascript/refs/getelementsbyname/)
 
 
 ### Selecionando elementos pela tag
