@@ -109,7 +109,7 @@ em um documento, por exemplo, você poderia escrever:
 var spans = document.getElementsByTagName("span");
 ```
 
-Leia mais sobre a função [getElementByTagName()](/javascript/refs/getelementsbytagname/)
+Leia mais sobre a função [getElementsByTagName()](/javascript/refs/getelementsbytagname/)
 
 
 ### Selecionando elementos pela classe CSS
