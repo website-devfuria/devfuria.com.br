@@ -47,7 +47,7 @@ int main() {
 ```
 
 
-### Solução na linguaem C
+### Solução na linguagem C
 
 ```c
 #include <iostream>
