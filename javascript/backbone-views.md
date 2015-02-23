@@ -7,8 +7,8 @@ menu:        javascript-backbone
 
 Este artigo é um primeiro passo com as views do framework e, também, um primeiro contato com o próprio framework.
 
-As __Views__ são as partes de seu programa que, normalmente, podem ser reutilizados e que irão ter alguns eventos atrelados
-e também estarão associadas a um __Modelo__ de dados.
+As __Views__ são as partes de seu programa que, normalmente, podem ser reutilizados. Provavelmente, terão alguns eventos 
+atrelados e também estarão associadas a um __Modelo__ de dados.
 
 Uma view pode incluir outras views aninhas e também pode ter nenhum, um ou vários templates.
 

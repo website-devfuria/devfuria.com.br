@@ -103,4 +103,4 @@ Veja o resultado do código acima ilustrado pela imagem abaixo.
 Próximo artigo
 --
 
-- [Backbone - Exemplos de Views](/javascript/backbone-views-exemplos/)
+- [Backbone - Exemplos de utilização de Views](/javascript/backbone-views-exemplos/)
