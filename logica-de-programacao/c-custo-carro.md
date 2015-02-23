@@ -26,6 +26,7 @@ Considerando os valores abaixo, faça um programa para calcular o custo de fabri
 Linguagem C
 ---
 
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
 #include <stdio.h>
@@ -58,6 +59,8 @@ int main() {
 
 ### Solução na linguagem C
 
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
+
 ```c
 #include <stdio.h>
 #include <assert.h>
@@ -85,4 +88,60 @@ int main() {
     return 0;
     
 }
+```
+
+
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+#
+# Variáveis
+#
+custoFabrica 	  = 10000
+custoDistribuidor = 0
+custoImpostos 	  = 0
+custoFinal 		  = 0
+
+#
+# Sua lógica entra aqui
+#
+
+
+
+
+
+#
+# Teste
+#
+assert 17300 == custoFinal, "'custoFinal' deve ser igual a 17300";
+```
+
+
+### Solução na linguagem Python
+
+
+```python
+#
+# Variáveis
+#
+custoFabrica 	  = 10000
+custoDistribuidor = 0
+custoImpostos 	  = 0
+custoFinal 		  = 0
+
+#
+# Sua lógica entra aqui
+#
+custoDistribuidor = custoFabrica * 0.28;
+custoImpostos     = custoFabrica * 0.45;
+custoFinal        = custoFabrica + custoDistribuidor + custoImpostos;
+
+#
+# Teste
+#
+assert 17300 == custoFinal, "'custoFinal' deve ser igual a 17300";
 ```

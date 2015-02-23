@@ -19,7 +19,8 @@ Considerando a tabela abaixo...
 
 Calcular o percentual do votos válidos, brancos e nulos em relação ao total de eleitores.
 
-__Dica:__ "em relação ao total" significa que você deve dividir pelo total de eleitores.
+__Dica:__ "em relação ao total" significa que você deve dividir, por exemplo, "nulos" pelo total de eleitores, válidos
+pelo total de eleitores, etc...
 
 
 
@@ -27,6 +28,7 @@ __Dica:__ "em relação ao total" significa que você deve dividir pelo total de
 Linguagem C
 ---
 
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
 #include <stdio.h>
@@ -46,12 +48,12 @@ int main (){
     //
     // Sua lógica entra aqui
     //
-	percValidos = validos / totalEleitores;
-	percBrancos = brancos / totalEleitores;
-	percNulos   = nulos   / totalEleitores; 
+
+
+
 
     //
-    // Teste
+    // Testes
     //
 	assert(0.8f == percValidos);
 	assert(0.15f == percBrancos);
@@ -87,7 +89,7 @@ int main (){
 	percNulos   = nulos   / totalEleitores; 
 
     //
-    // Teste
+    // Testes
     //
 	assert(0.8f == percValidos);
 	assert(0.15f == percBrancos);
@@ -95,4 +97,82 @@ int main (){
 
 	return 0;
 }
+```
+
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis para acomodar os dados da
+# nossa tabela
+#
+totalEleitores = 1000
+validos 	   = 800
+brancos 	   = 150
+nulos 		   = 50
+
+#
+# Variáveis para acomodar a respostas (saídas) do programa
+#
+percValidos    = 0
+percBrancos	   = 0
+percNulos      = 0
+
+#    
+# Sua lógica entra aqui
+#    
+percValidos = validos / totalEleitores;
+percBrancos = brancos / totalEleitores;
+percNulos   = nulos   / totalEleitores; 
+
+#
+# Testes
+#
+assert 0.8  == percValidos, "'percValidos' deve ser igual a 0.8"
+assert 0.15 == percBrancos, "'percBrancos' deve ser igual a 0.15"
+assert 0.05 == percNulos, "percNulos deve ser igual a 0.05"
+```
+
+
+### Solução na linguagem Python
+
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis para acomodar os dados da
+# nossa tabela
+#
+totalEleitores = 1000
+validos 	   = 800
+brancos 	   = 150
+nulos 		   = 50
+
+#
+# Variáveis para acomodar a respostas (saídas) do programa
+#
+percValidos    = 0
+percBrancos	   = 0
+percNulos      = 0
+
+#    
+# Sua lógica entra aqui
+#    
+percValidos = validos / totalEleitores;
+percBrancos = brancos / totalEleitores;
+percNulos   = nulos   / totalEleitores; 
+
+#
+# Testes
+#
+assert 0.8  == percValidos, "'percValidos' deve ser igual a 0.8"
+assert 0.15 == percBrancos, "'percBrancos' deve ser igual a 0.15"
+assert 0.05 == percNulos, "percNulos deve ser igual a 0.05"
 ```
