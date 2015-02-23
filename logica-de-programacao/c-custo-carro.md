@@ -123,7 +123,6 @@ assert 17300 == custoFinal, "'custoFinal' deve ser igual a 17300";
 
 ### Solução na linguagem Python
 
-
 ```python
 #
 # Variáveis
