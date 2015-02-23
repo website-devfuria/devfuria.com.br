@@ -27,6 +27,18 @@ As variáveis `euros` e  `taxa` devem ser inicializadas, se não o erro `name 'e
 
 
 
+Valor nulo (null)
+---
+
+Em Python, `None` equivale ao valor nulo (null).
+
+Podemos iniciar as variáveis com o valor `None`.
+
+```python
+reais = None
+```
+
+
 Saídas
 ---
 
