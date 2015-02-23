@@ -156,7 +156,7 @@ view.model.set({name: 'Alexandre', age: 30});
 view.model.set({name: 'Micheletti', age: 40});
 ```
 
-Veja a demo no [jsfiddle](http://jsfiddle.net/flaviomicheletti/mwkf7pog/1/ "link-externo")
+Veja a demo no [http://jsfiddle.net/flaviomicheletti/gtkm6sn9/](http://jsfiddle.net/flaviomicheletti/gtkm6sn9/ "link-externo")
 
 
 
