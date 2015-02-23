@@ -23,6 +23,8 @@ Exemplo:
 Linguagem C
 ---
 
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
+
 ```c
 #include <stdio.h>
 #include <assert.h>
@@ -37,7 +39,9 @@ int main (){
 
 
 
+    //
     // Seu teste
+    //
     assert(27 == area);
 
     return 0;
@@ -63,9 +67,63 @@ int main (){
     lado2 = 9;
     area  = lado1 * lado2;
 
+    //
     // Seu teste
+    //
     assert(27 == area);
 
     return 0;
 }
+```
+
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis
+#
+lado1 = 3
+lado2 = 9
+area  = None
+
+#
+# Sua lógica (seu código)
+#
+
+
+
+#
+# Seu teste
+#
+assert 27 == area
+```
+
+
+### Solução na linguagem Python
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis
+#
+lado1 = 3
+lado2 = 9
+area  = None
+
+#
+# Sua lógica (seu código)
+#
+area  = lado1 * lado2
+
+#
+# Seu teste
+#
+assert 27 == area
 ```

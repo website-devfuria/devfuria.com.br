@@ -17,6 +17,8 @@ Faça um programa que calcule o dobro de um número.
 Linguagem C
 ---
 
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
+
 ```c
 #include <stdio.h>
 #include <assert.h>
@@ -30,7 +32,9 @@ int main (){
     //
 
 
+    //
     // Seu teste
+    //
     assert(10 == dobro);
 
     return 0;
@@ -55,9 +59,61 @@ int main (){
     num = 5;
     dobro = 2 * num;
 
+    //
     // Seu teste
+    //
     assert(10 == dobro);
 
     return 0;
 }
+```
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis
+#
+num   = 5
+dobro = None
+
+#
+# Sua lógica (seu código)
+#
+
+
+
+
+#
+# Seu teste
+#
+assert 10 == dobro
+```
+
+
+### Solução na linguagem Python
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis
+#
+num   = 5
+dobro = None
+
+#
+# Sua lógica (seu código)
+#
+dobro = 2 * num
+
+#
+# Seu teste
+#
+assert 10 == dobro
 ```

@@ -18,6 +18,7 @@ Utilize as variáveis `valor1`, `valor2` e `valor3`.
 Linguagem C
 ---
 
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
 #include <stdio.h>
@@ -33,7 +34,9 @@ int main (){
 
 
 
+    //
     // Seu teste
+    //
     assert(7 == media);
 
     return 0;
@@ -60,7 +63,9 @@ int main (){
     valor3 = 8;
     media = (valor1 + valor2 + valor3) / 3;
 
+    //
     // Seu teste
+    //
     assert(7 == media);
 
     return 0;
@@ -68,4 +73,54 @@ int main (){
 ```
 
 
+Linguagem Python
+---
 
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis
+#
+
+
+
+
+
+#
+# Sua lógica
+#
+media = (valor1 + valor2 + valor3) / 3
+
+#
+# Seu teste
+#
+assert 7 == media
+```
+
+
+### Solução na linguagem Python
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis
+#
+valor1 = 6
+valor2 = 7
+valor3 = 8
+
+
+#
+# Sua lógica
+#
+media = (valor1 + valor2 + valor3) / 3
+
+#
+# Seu teste
+#
+assert 7 == media
+```

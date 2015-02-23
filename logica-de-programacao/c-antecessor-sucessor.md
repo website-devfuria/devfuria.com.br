@@ -17,6 +17,7 @@ Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualqu
 Linguagem C
 ---
 
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
 #include <stdio.h>
@@ -32,7 +33,9 @@ int main (){
 
 
 
-    // Seu teste
+    //
+    // Testes
+    //
     assert(9 == antecessor);
     assert(11 == sucessor);
 
@@ -59,10 +62,68 @@ int main (){
     antecessor = numero - 1;
     sucessor   = numero + 1;
 
-    // Seu teste
+    //
+    // Testes
+    //
     assert(9 == antecessor);
     assert(11 == sucessor);
 
     return 0;
 }
+```
+
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis
+#
+numero     = 10;
+antecessor = 0;
+sucessor   = 0;
+
+#
+# Sua lógica (seu código)
+#
+
+
+
+
+#
+# Testes
+#
+assert antecessor == 9
+assert sucessor == 11
+```
+
+
+### Solução na linguagem Python
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis
+#
+numero     = 10;
+antecessor = 0;
+sucessor   = 0;
+
+#
+# Sua lógica (seu código)
+#
+antecessor = numero - 1;
+sucessor   = numero + 1;
+
+#
+# Testes
+#
+assert antecessor == 9
+assert sucessor == 11
 ```
