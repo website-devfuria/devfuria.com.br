@@ -91,6 +91,22 @@ console.log(john.attributes);
 // Object { id: 1, firstName: "john", lastName: "Lennon" }
 ```
 
+### Visualizando a coleção
+
+Uma maneira simples de visualizar a coleção no console do navegador é codificar (stringfy) os objetos no formato JSON,
+para isso execute o comando abaixo.
+
+```javascript
+console.log(JSON.stringify(colecao.models));
+```
+
+O resultado do trecho acima é semelhante a...
+
+    "[{"id":1,"firstName":"john","lastName":"Lennon"},
+      {"id":2,"firstName":"paul","lastName":"McCartney"},
+      {"id":3,"firstName":"george","lastName":"Harrison"},
+      {"id":4,"firstName":"ringo","lastName":"Starr"}]"
+
 
 
 
@@ -152,6 +168,75 @@ Todos os exemplos acima chegam no mesmo resultado, veja:
     "3 - Starr"
 
 Repare que as propriedades `index` e `id` são distintas.
+
+
+
+
+Ordenando a coleção
+---
+
+Ordenar uma coleção é uma funcionalidade muito útil, principalmente porte podemos escutar o evento `sort`, ou seja, a 
+cada nova ordenação podemos executar uma função de callback.
+
+Para ordernar a coleção precisamos evocar o método collection.sort, masantes disso é preciso dizer qual campo servirá
+de referência. Fazemos isso atribuindo um string com o nome do campo a propriedade `comparator` da coleção.
+
+```javascript
+// Instanciando a coleção
+var colecao = new Backbone.Collection();
+
+// Adicionando os modelos
+colecao.add([{id: 1, firstName: 'john',   lastName: 'Lennon'}])
+colecao.add([{id: 2, firstName: 'paul',   lastName: 'McCartney'}])
+colecao.add([{id: 3, firstName: 'george', lastName: 'Harrison'}])
+colecao.add([{id: 4, firstName: 'ringo',  lastName: 'Starr'}])
+```
+
+Abaixo vemos a coleção em seu estado original.
+
+```javascript
+//
+// Estado original
+//
+console.log(JSON.stringify(colecao));
+// "[{"id":1,"firstName":"john","lastName":"Lennon"},
+// {"id":2,"firstName":"paul","lastName":"McCartney"},
+// {"id":3,"firstName":"george","lastName":"Harrison"},
+// {"id":4,"firstName":"ringo","lastName":"Starr"}]"
+```
+
+Abaixo vemos a coleção ordenada pela propriedade `firstName`.
+
+```javascript
+//
+// ordenado por `firstName`
+//
+colecao.comparator = "firstName";
+colecao.sort();
+console.log(JSON.stringify(colecao));
+// "[{"id":3,"firstName":"george","lastName":"Harrison"},
+// {"id":1,"firstName":"john","lastName":"Lennon"},
+// {"id":2,"firstName":"paul","lastName":"McCartney"},
+// {"id":4,"firstName":"ringo","lastName":"Starr"}]"
+
+
+```
+
+Abaixo vemos a coleção ordenada pela propriedade `lastName`. Coincidentemente, o resultado é igual ao anterior.
+
+```javascript
+//
+// ordenado por `lastName`
+//
+colecao.comparator = "lastName";
+colecao.sort();
+console.log(JSON.stringify(colecao));
+// "[{"id":3,"firstName":"george","lastName":"Harrison"},
+// {"id":1,"firstName":"john","lastName":"Lennon"},
+// {"id":2,"firstName":"paul","lastName":"McCartney"},
+// {"id":4,"firstName":"ringo","lastName":"Starr"}]"
+
+```
 
 
 
