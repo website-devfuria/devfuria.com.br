@@ -13,6 +13,10 @@ Exercício de lógica de programação
 Faça um programa para calcular o MMC (mínimo múltiplo comum) entre dois números.
 
 
+
+Linguagem C
+---
+
 ### Primeira solução
 
 Se calcularmos o __MDC__ poderemos utilizar a propriedade:
@@ -26,6 +30,34 @@ Invertendo as contas, temos MMC = a . b / MDC
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Função mmc
+//
+int mmc(int num1, int num2) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+//
+// Testes
+//
+int main() {
+
+    // 2 * 2 * 3 * 5 = 60
+    assert(60 == mmc(12, 20));
+
+    return 0;
+}
+```
+
+
+### Primeira solução na linguagem C
+
+```c
+//
+// Função mmc
+//
 int mmc(int num1, int num2) {
 
     int resto, a, b;
@@ -43,23 +75,15 @@ int mmc(int num1, int num2) {
 
     return ( num1 * num2) / a;
 }
-
-int main() {
-
-    // 2 * 2 * 3 * 5 = 60
-    assert(60 == mmc(12, 20));
-
-    return 0;
-}
 ```
 
 
-### Segunda solução
+### Segunda solução na linguagem C
 
 ```c
-#include <stdio.h>
-#include <assert.h>
-
+//
+// FUnção mmc
+//
 int mmc(int num1, int num2) {
 
     int mmc, aux, i;
@@ -72,13 +96,5 @@ int mmc(int num1, int num2) {
         }
     }
     return mmc;
-}
-
-int main() {
-
-    // 2 * 2 * 3 * 5 = 60
-    assert(60 == mmc(12, 20));
-
-    return 0;
 }
 ```

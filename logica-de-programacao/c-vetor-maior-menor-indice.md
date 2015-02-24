@@ -15,7 +15,36 @@ Dado um vetor qualquer sem valores repetidos, descubra qual é o __índice do ma
 Utilize vetores e o laço "do-while".
 
 
-### Código completo
+
+Linguagem C
+---
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main() {
+
+
+    // Aqui entra a lógica do programa.
+
+
+    //
+    // teste do maior índice
+    //
+    assert(3 == iMaior);
+
+    //
+    // teste do menor índice
+    //
+    assert(2 == iMenor);
+
+    return 0;
+}
+```
+
+
+### Solução na linguagem C
 
 ```c
 #include <stdio.h>
@@ -46,10 +75,14 @@ int main() {
 
     } while (i < 5);
 
+    //
     // teste do maior índice
+    //
     assert(3 == iMaior);
 
+    //
     // teste do menor índice
+    //
     assert(2 == iMenor);
 
     return 0;

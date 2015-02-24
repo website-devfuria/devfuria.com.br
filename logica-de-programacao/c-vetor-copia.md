@@ -16,21 +16,31 @@ Use a nomenclatura `vetor1` para o vetor original e `vetor2` para o vetor copiad
 
 
 
-### Solução passo a passo
+Linguagem C
+---
 
-Imaginando que o primeiro vetor poderia ser pequeno como este aqui: `vetor1[3] = {10, 20, 30}`.
+```c
+#include <stdio.h>
+#include <assert.h>
 
-Então, os testes seriam:
+int main() {
 
+
+    // Aqui entra a lógica do programa.
+
+
+    //
+    // Testes
+    //    
     assert(vetor2[0] == 10);
     assert(vetor2[1] == 20);
     assert(vetor2[2] == 30);
 
+    return 0;
+}
+```
 
-E a solução poderá ser esta...
-
-
-### Código completo
+### Solução na linguagem C
 
 ```c
 #include <stdio.h>
@@ -44,7 +54,10 @@ int main() {
     for(i = 0; i < 3; i++) {
         vetor2[i] = vetor1[i];
     }
-    
+
+    //
+    // Testes
+    //    
     assert(vetor2[0] == 10);
     assert(vetor2[1] == 20);
     assert(vetor2[2] == 30);
@@ -57,6 +70,6 @@ int main() {
 
 ### Desafio
 
-Nesse exercício nós utilizamos valor arbitrários. O ideal seria construir um código reutilizável.
+Nesse exercício nós utilizamos valor arbitrários, o ideal seria construir um código reutilizável.
 
 Refaça o exercício utilizando funções, teste 2 vetores diferentes (ao invés de um só).

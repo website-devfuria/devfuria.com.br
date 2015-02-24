@@ -1,12 +1,11 @@
 ---
 layout:      grid93-article
-title:       Backbone - Hello World (introdução)
+title:       Backbone - Introdução (Hello World)
 description: Este artigo é uma introdução ao framework Backbone para JavaScript, acompanha um Hello World.
 menu:        javascript-backbone
 ---
 
-[Backbone](http://backbonejs.org/ "link-externo") é um framework MVC para Javascript, porém aviso que há controvérsias
-em relação ao "quanto" o framework é ou não MVC. De qualquer forma, ioso não invalida o framework.
+[Backbone](http://backbonejs.org/ "link-externo") é um framework MVC para Javascript.
 
 O Backbone faz uso intensivo da biblioteca [underscorejs](http://underscorejs.org/ "link-externo"), sua maior dependência.
 O framework também precisa da biliboteca jQuery, sua menor dependência. Digo isso pois você poderá optar pela Zepto, ao invés da 
@@ -22,9 +21,9 @@ Aconselho o estudo do Backbone para quem já possui uma certa experiência, voc�
 
 ### Como eu preparei este (mini) curso do Backbone ?
 
-A documentação do Backbone começa falando dos modelos (models), aí tudo quanto é tutorial começa falando dos models.
-Mas as coisas acontecem primeiro nas Views e também acho mais prático começar por elas. Então eu preparei este tutorial
-iniciando-se pelas Views.
+A documentação do Backbone começa falando dos modelos (models), aí tudo quanto é tutorial que você encontra na Internet
+também começa falando dos models. Eu resolvi fazer diferente, como as coisas acontecem primeiro nas Views e também acho 
+mais prático começar por elas, então eu preparei este tutorial iniciando-se pelas Views.
 
 
 

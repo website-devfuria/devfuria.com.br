@@ -23,73 +23,85 @@ Lembrando:
 
 
 
-### Solução passo a passo
-
-O primeiro objeto é encontrar o __delta__. Que tal uma função para ele?
-
-Não sem antes escrever o teste .
-
-    int main() {
-
-        int a, b, c;
-
-        a = 1; b = 0; c = -16;
-        assert(64 == delta(a, b, c));
-    }
+Linguagem C
+---
 
 
-Eu utilizei os  valores abaixo, mas fique a vontade para utilizar outros valores.
-
-    1x(2) + 0x -16 = 0
-
-    delta =  64
-    x1    =  4
-    x2    = -4
-
-Agora sim a função.
-
-    int delta(int a, int b, int c) {
-        return b * b -4 * a * c;
-    }
-
-Sabemos que a primeira raíz será `4`, então escrevemos o teste.
-
-    assert(4 == raiz1(a, b, c));
-
-E implementamos a função `raiz1`.
-
-    int raiz1(int a, int b, int c) {
-        return (-b + sqrt(delta(a, b, c))) / 2 * a;
-    }
-
-Eu estou utilizando a função interna `sqrt()` da linguagem __c__ para retornar a raiz quadrada. Para tal precisamos
-incluir a biblio `math.h`.
-
-    
-    #include <math.h>
-
-Agora a segunda raiz é com você.
-
-
-### Código completo
 
 ```c
 #include <math.h>
 #include <stdio.h>
 #include <assert.h>
 
+// Retorna o valor de delta
+int delta(int a, int b, int c) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+// Retorna o valor de primeira raiz
+int raiz1(int a, int b, int c) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+// Retorna o valor de segunda raiz
+int raiz2(int a, int b, int c) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+//
+// Testes
+//
+int main() {
+
+    int a, b, c;
+
+    a = 1; b = 0; c = -16;
+    assert(64 == delta(a, b, c));
+    assert(4 == raiz1(a, b, c));
+    assert(-4 == raiz2(a, b, c));
+    
+    return 0;
+}
+```  
+      
+
+### Solução na linguagem C
+
+```c
+#include <math.h>
+#include <stdio.h>
+#include <assert.h>
+
+//
+// Retorna o valor de delta
+//
 int delta(int a, int b, int c) {
     return b * b -4 * a * c;
 }
 
+//
+// Retorna o valor de primeira raiz
+//
 int raiz1(int a, int b, int c) {
     return (-b + sqrt(delta(a, b, c))) / 2 * a;
 }
 
+//
+// Retorna o valor de segunda raiz
+//
 int raiz2(int a, int b, int c) {
     return (-b - sqrt(delta(a, b, c))) / 2 * a;
 }
 
+//
+// Testes
+//
 int main() {
 
     int a, b, c;

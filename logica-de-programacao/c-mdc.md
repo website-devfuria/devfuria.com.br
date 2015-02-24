@@ -15,12 +15,46 @@ Faça um programa para calcular o MDC (máximo divisor comum) entre dois número
 Utilize o método de divisões sucessivas.
 
 
-### Código completo
+
+
+Linguagem C
+---
 
 ```c
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Função mdc
+//
+int mdc(int num1, int num2) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+//
+// Testes
+//
+int main() {
+
+    assert(3 == mdc(24, 9));
+    assert(10 == mdc(30, 20));
+
+    return 0;
+}
+```
+
+
+### Solução na linguagem C
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+//
+// Função mdc
+//
 int mdc(int num1, int num2) {
 
     int resto;
@@ -36,9 +70,14 @@ int mdc(int num1, int num2) {
     return num1;
 }
 
+//
+// Testes
+//
 int main() {
+
     assert(3 == mdc(24, 9));
     assert(10 == mdc(30, 20));
+
     return 0;
 }
 ```

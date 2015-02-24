@@ -19,41 +19,16 @@ Considerando a tabela abaixo...
 
 Calcular o percentual do votos válidos, brancos e nulos em relação ao total de eleitores.
 
-__Dica:__ "em relação ao total" significa que você deve dividir pelo total de eleitores.
-
-
-
-### Solução passo a passo
-
-Vou começar com os votos válidos (800).
-
-Sei que 800 / 1000 = 80%. Opâ, já posso escrever um teste.
-
-Vamos subistituir os valores por variáveis.
-
-	float totalEleitores = 1000,
-		  validos = 800;
-
-	assert(0.8f == validos / totalEleitores);
-
-Sei também que o resultado de `validos / totalEleitores` deveriam estar em uma variável denominada, por exemplo, `percValidos`.
-
-	float totalEleitores = 1000,
-		  validos = 800,
-		  percValidos;
-
-	percValidos = validos / totalEleitores;
-
-	assert(0.8f == percValidos);
-
-Agora é só seguir essa mesma linha de raciocínio.
-
-Boa sorte!
+__Dica:__ "em relação ao total" significa que você deve dividir, por exemplo, "nulos" pelo total de eleitores, válidos
+pelo total de eleitores, etc...
 
 
 
 
-### Código completo
+Linguagem C
+---
+
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
 #include <stdio.h>
@@ -61,6 +36,7 @@ Boa sorte!
 
 int main (){
 
+    // Variáveis
 	float totalEleitores = 1000,
 		  validos = 800,
 		  brancos = 150,
@@ -69,14 +45,134 @@ int main (){
 		  percBrancos,
 		  percNulos;
 
-	percValidos = validos / totalEleitores;
-	percBrancos = brancos / totalEleitores;
-	percNulos   = nulos   / totalEleitores; 
+    //
+    // Sua lógica entra aqui
+    //
 
+
+
+
+    //
+    // Testes
+    //
 	assert(0.8f == percValidos);
 	assert(0.15f == percBrancos);
 	assert(0.05f == percNulos);
 
 	return 0;
 }
+```
+
+
+### Solução na linguagem C
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main (){
+
+    // Variáveis
+	float totalEleitores = 1000,
+		  validos = 800,
+		  brancos = 150,
+		  nulos = 50,
+		  percValidos,
+		  percBrancos,
+		  percNulos;
+
+    //
+    // Sua lógica entra aqui
+    //
+	percValidos = validos / totalEleitores;
+	percBrancos = brancos / totalEleitores;
+	percNulos   = nulos   / totalEleitores; 
+
+    //
+    // Testes
+    //
+	assert(0.8f == percValidos);
+	assert(0.15f == percBrancos);
+	assert(0.05f == percNulos);
+
+	return 0;
+}
+```
+
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis para acomodar os dados da
+# nossa tabela
+#
+totalEleitores = 1000
+validos 	   = 800
+brancos 	   = 150
+nulos 		   = 50
+
+#
+# Variáveis para acomodar a respostas (saídas) do programa
+#
+percValidos    = 0
+percBrancos	   = 0
+percNulos      = 0
+
+#    
+# Sua lógica entra aqui
+#    
+percValidos = validos / totalEleitores;
+percBrancos = brancos / totalEleitores;
+percNulos   = nulos   / totalEleitores; 
+
+#
+# Testes
+#
+assert 0.8  == percValidos, "'percValidos' deve ser igual a 0.8"
+assert 0.15 == percBrancos, "'percBrancos' deve ser igual a 0.15"
+assert 0.05 == percNulos, "percNulos deve ser igual a 0.05"
+```
+
+
+### Solução na linguagem Python
+
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Variáveis para acomodar os dados da
+# nossa tabela
+#
+totalEleitores = 1000
+validos 	   = 800
+brancos 	   = 150
+nulos 		   = 50
+
+#
+# Variáveis para acomodar a respostas (saídas) do programa
+#
+percValidos    = 0
+percBrancos	   = 0
+percNulos      = 0
+
+#    
+# Sua lógica entra aqui
+#    
+percValidos = validos / totalEleitores;
+percBrancos = brancos / totalEleitores;
+percNulos   = nulos   / totalEleitores; 
+
+#
+# Testes
+#
+assert 0.8  == percValidos, "'percValidos' deve ser igual a 0.8"
+assert 0.15 == percBrancos, "'percBrancos' deve ser igual a 0.15"
+assert 0.05 == percNulos, "percNulos deve ser igual a 0.05"
 ```

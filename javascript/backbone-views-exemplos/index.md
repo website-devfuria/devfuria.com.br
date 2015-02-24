@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Backbone - Exemplo de utilização de Views
+title:       Backbone - Um exemplo de visão (views)
 description: Um breve exemplo ilustrando como é uma View no framework Backbone (JavaScript)
 menu:        javascript-backbone
 ---
@@ -71,7 +71,7 @@ da view é o a div `"#app-container"`. O método `initialize()` está iniciando 
 (`ul`), a outra referencia a caixa de texto. Usamos a propriedade `events` para definir o evento do botão.
 Implementamos o método de callback `salvar()`.
 
-Veja a demo no [jsfiddle](http://jsfiddle.net/r2jms18w/4/ "link-externo").
+Veja a demo no [jsfiddle.net/flaviomicheletti/mwkf7pog/](http://jsfiddle.net/flaviomicheletti/mwkf7pog/ "link-externo").
 
 
 

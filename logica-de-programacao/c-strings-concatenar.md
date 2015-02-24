@@ -15,7 +15,7 @@ Faça um programa para concatenar duas strings.
 
 
 
-Solução(ões)
+Linguagem C
 ---
 
 
@@ -26,13 +26,24 @@ Começamos pelo teste...
 #include<string.h>
 #include<assert.h>
 
+int concatenar(char s1[], char s2[]) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+//
+// Testes
+//
 int main() {
+
     char str1[] = "abc";
     char str2[] = "defg";
 
     concatenar(str1, str2);
 
     assert(strcmp("abcdefg", str1) == 0);    
+
     return (0);
 }
 ```
