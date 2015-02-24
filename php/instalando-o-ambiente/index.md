@@ -9,7 +9,7 @@ para começar o desenvolvimento. Não pense que existe um tutorial mágico que l
 porque realmente não existe.
 
 Pouco se discute sobre o ambiente de desenvolvimento, mas um pensamento é unânime: __“o ambiente de desenvolvimento deve
-simular ao máximo o ambiente de produção”__. Atualmente, utilizamos o [Vagrantup](https://www.vagrantup.com/), ele isola
+simular ao máximo o ambiente de produção”__. Atualmente, utilizamos o [Vagrant](https://www.vagrantup.com/), ele isola
 sua máquina da máquina de desenvolvimento. Não vou cobrir o Vagrant, porque para quem está começando, é importante aprender
 a instalar primeiro em seu próprio desktop (apesar desse não ser o ideal).
 
@@ -146,8 +146,9 @@ Onde será que o Linux gravou a extensão x-debug? Digite e anote o caminho:
 
     find/ -name 'x-debug.so'2> /dev/null
 
-Agora, precisamos dizer ao PHP que o x-debug existe. Par tal é preciso incluir um linha no final do arquivo `php.ini`. 
-Abra novamente o php.ini:
+Agora, precisamos dizer ao PHP que o x-debug existe. Par tal, é preciso incluir um linha no final do arquivo `php.ini`. 
+
+Abra novamente o `php.ini`:
 
     nano /etc/php5/php.ini
 
@@ -157,7 +158,7 @@ No final do arquivo ou no fim da seção "extensões" inclua a seguinte linha:
 
 Reinicie o apache (o comando nós já vimos).
 
-No Fedora é amis façil,  bastam 2 linhas...
+No Fedora é mais fácil,  bastam 2 linhas...
 
     yum install php-pecl-xdebug
     systemctl restart httpd.service
