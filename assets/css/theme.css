@@ -216,6 +216,14 @@ span.regex {
     background-color: #ffffdd;
     color: #aaa;
 }
+.btn-rodape {
+    display: inline-block;
+    padding: 8px;
+    margin: 4px 2px;
+    border-radius: 6px;    
+    background-color: #357EBD;
+    color: #FFF;
+}
 
 /*pygmentize -S native -f html > highlight.css*/
 pre .hll { background-color: #ffffcc }
