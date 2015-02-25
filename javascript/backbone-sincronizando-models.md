@@ -7,7 +7,8 @@ menu:        javascript-backbone
 
 
 
-### fetch
+Carregando o modelo (fetch)
+---
 
 Verbo GET.
 
@@ -19,18 +20,34 @@ p1.fetch();                         // Sincronizando com o servidor
 
     Error: A "url" property or function must be specified
 
+Apesar da mensagem reclamar da propriedade `url` utilizaremos a propriedade `urlRoot`.
+
 ```javascript
 Person = Backbone.Model.extend({
     urlRoot: 'person'
 });
 
+// Sem o id o Backbone 
 var p1 = new Person();
+p1.fetch();
+```
+
+A URL está apontando para `http://localhost/person`, ao contrário de nosso objetivo que é apontar para 
+`http://localhost/person/1`. Então, devemos "setar" a propriedade `id` de nosso recém criado objeto para que o Backbone 
+saiba montar a URL corretamente.
+
+```javascript
+Person = Backbone.Model.extend({
+    urlRoot: 'person'
+});
+
+var p1 = new Person({id: 1});
 p1.fetch();
 ```
 
     http://localhost/person/1
 
-A url está correta mas a requisição não encontra o caminho, o script. Sabemos disso porque estamos vendo o console.
+Agora, a URL está correta mas a requisição não encontra o caminho, o script. Sabemos disso porque estamos vendo o console.
 
 Para temos mais controle devemos usar os métodos `success` e `error`.
 
@@ -39,7 +56,7 @@ Person = Backbone.Model.extend({
     urlRoot: 'person'
 });
 
-var p1 = new Person();
+var p1 = new Person({id: 1});
 
 p1.fetch({
     success: function (response) {
@@ -66,8 +83,6 @@ Person = Backbone.Model.extend({
     }
 });
 
-// Estamos passando um objeto
-// com a propriedade `id` definida
 var p1 = new Person({id: 1});
 
 p1.fetch({
@@ -104,22 +119,22 @@ echo '{}';
 
 ```
 
-Temos nosso primeiro "OK.
+Temos nosso primeiro "OK".
 
-Novamente, podemos alterar um pouco mais o nosso script PHP para que ele retorno algo mais significativo.
+Novamente, iremos alterar o nosso script PHP para que ele retorno algo mais significativo. Vale comentar que o script 
+PHP apresentado abaixo esta incompleto, apesar de funcionar. Ele deveria receber o valor da variável ´id´ enviada na 
+requisição, consultar em um banco de dados o registro segundo o id informado, carregar o objeto e transformá-lo em uma 
+string JSON. Mas isso não está acontecendo, o script se limita a imprimir uma string JSON arbitrária.
+
+Consulte a seção [PHP](/php/) para saber mais sobre a linguagem PHP.
 
 ```php
 <?php
 header('Content-Type: application/json; charset=utf-8');
-
-$obj = new stdClass();
-$obj->id   = 1;
-$obj->name = 'alexandre';
-
-echo json_encode($obj);
+echo '{"id":1,"name":"alexandre"}';
 ```
 
-Agora podemos ver a resposta da requisição, conforme código abaixo.
+Agora, podemos ver a resposta da requisição conforme código abaixo.
 
 ```javascript
 Person = Backbone.Model.extend({
@@ -142,7 +157,52 @@ p1.fetch({
 });
 
 // Obs: Neste trecho não adiantaria executar `p1.get('name')` pois
-// lembre-se que a requisição AJAX é assíncrona, ou seja, a
-// execução do JavaScript continuará independente da resposta.
+// a requisição AJAX é assíncrona, portanto, a execução do
+// script continuará independente da resposta.
 console.log(typeof p1.get('name')); // "undefined"
+```
+
+
+Salvando o modelo
+---
+
+
+```javascript
+Person = Backbone.Model.extend({
+    url: function() {
+        if (this.get('id')) {
+        	return 'person/?id=' + this.get('id');      
+        } else {
+			return 'person/';
+        }
+    }
+});
+
+var p1 = new Person({id: 9, name: 'flavio'});
+
+
+p1.save({
+  success: function() {
+  	console.log('aaaaaa');
+  }
+});
+
+```
+
+
+```php
+<?php
+
+// recebendo requisição PUT ou PATH
+$dadosString = file_get_contents("php://input");
+
+// decodificando string JSON em objeto
+$objetoDecodificado = json_decode($dadosString);
+
+// exibindo objeto
+var_dump($objetoDecodificado);
+
+// object(stdClass)[1]
+//  public 'id' => int 1
+//  public 'name' => string 'flavio' (length=6)
 ```
