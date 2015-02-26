@@ -10,7 +10,7 @@ No paradigma MVC, os __models__ referem-se ao modelo, aos dados, as regras de ne
 Podemos definir um model como se fosse uma classe (posteriormente será instanciada) dessa forma:
 
 ```javascript
-    var Person = Backbone.Model.extend({ });
+var Person = Backbone.Model.extend({ });
 ```
 
 Ao definir a classe, poderemos utilizar todos os métodos disponíveis no Backbone, por exemplo o método `initialize()`.
