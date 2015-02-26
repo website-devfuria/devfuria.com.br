@@ -13,7 +13,7 @@ atribuído a nenhum parâmetro nomeado. Isso torna possível escrever funções 
 Veja um exemplo:
 
 ```javascript
-/*
+/**
  * Cria um função que soma um monte de coisas.
  */
 function sum() {
