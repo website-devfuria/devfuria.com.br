@@ -1,8 +1,10 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       DOM - Document Object Model
 description: O que você precisa saber sobre o DOM (Document Object Model)
+menu:        javascript-dom
 ---
+
 
 __DOM__ é um acrônimo para Document Object Model (Modelo de Objetos de Documento) ele representa os objetos de uma página
 HTML em forma de uma árvore. O __DOM__ é importante pois é através dele que acessamos os elementos dentro de uma página
