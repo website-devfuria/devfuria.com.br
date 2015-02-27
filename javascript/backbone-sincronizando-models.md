@@ -61,7 +61,7 @@ p1.save({}, {
 
 ### Update - save()
 
-```javascrip
+```javascript
 //
 // PUT (para atualizar)
 //
