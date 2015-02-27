@@ -13,7 +13,7 @@ Com o x-debug, o resultado de `var_dump($array)` virá bem formatado, e será f�
 Obviamente que `var_dump($array)` é só um exemplo simples, você também poderá olhar "dentro" de objetos. Sem contar que,
 quando o script PHP lançar uma erro o x-debug exibirá o __traceback__ completo.
 
-O site Oficial é[xdebug.org](http://xdebug.org/index.php "link-externo").
+O site Oficial é [xdebug.org](http://xdebug.org/index.php "link-externo").
 
 
 
@@ -63,7 +63,9 @@ Dica: com você terá que executar o __phpize__, instale antes essas pacotes `ap
     // Zend Module Api No:      20100525
     // Zend Extension Api No:   220100525
 
+    //
     // Compile
+    //
     ./configure
     make
 
