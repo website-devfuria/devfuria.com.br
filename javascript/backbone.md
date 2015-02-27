@@ -26,4 +26,11 @@ Documentação oficial
 ---
 
 - [backbonejs.org](http://backbonejs.org/ "link-externo")
+- [hosted on GitHub](https://github.com/jashkenas/backbone/ "link-externo")
+- [annotated source code V 1.1.2](http://backbonejs.org/docs/backbone.html "link-externo")
+- [annotated source code V 1.0.0](http://documentcloud.github.io/backbone/docs/backbone.html "link-externo")
+
+
+### Dependências
+
 - [underscorejs.org](http://underscorejs.org/ "link-externo")
