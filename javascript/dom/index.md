@@ -79,7 +79,7 @@ identificação exclusiva com o método `getElementById()` do objeto __document_
 var elemento = document.getElementById("identificacao");
 ```
 
-Leia mais sobre a função [getElementById()](/javascript/getelementbyid/)
+Leia mais sobre a função [getElementById()](/javascript/dom-getelementbyid/)
 
 
 ### Selecionando elementos pelo nome
@@ -99,7 +99,7 @@ podem ter o mesmo nome e isso é comum no caso de [botões de seleção](/html-c
 var elementos = document.getElementsByName("nome-dos-elementos");
 ```
 
-Leia mais sobre a função [getElementsByName()](/javascript/getelementsbyname/)
+Leia mais sobre a função [getElementsByName()](/javascript/dom-getelementsbyname/)
 
 
 ### Selecionando elementos pela tag
@@ -111,7 +111,7 @@ em um documento, por exemplo, você poderia escrever:
 var spans = document.getElementsByTagName("span");
 ```
 
-Leia mais sobre a função [getElementsByTagName()](/javascript/getelementsbytagname/)
+Leia mais sobre a função [getElementsByTagName()](/javascript/dom-getelementsbytagname/)
 
 
 ### Selecionando elementos pela classe CSS
@@ -127,7 +127,7 @@ documento com base nos identificadores que estão em seu atributo `class`.
 var elementos = document.getElementsByClassName("nome-da-classe");
 ```
 
-Leia mais sobre a função [getElementsByClassName()](/javascript/getelementsbyclassname/)
+Leia mais sobre a função [getElementsByClassName()](/javascript/dom-getelementsbyclassname/)
 
 
 ### Selecionando elementos através dos seletores CSS
@@ -137,7 +137,7 @@ que coincidem com determinado [seletor CSS](/html-css/seletores-css/). O segredo
 ele recebe um argumento de string contendo um seletor CSS e retorna um objeto [NodeList](/javascript/dom-nodelist/) 
 representando  todos os elementos do documento que correspondem ao seletor.
 
-Leia mais sobre a função [querySelectorAll()](/javascript/queryselectorall/)
+Leia mais sobre a função [querySelectorAll()](/javascript/dom-queryselectorall/)
 
 
 
@@ -267,8 +267,8 @@ elem.appendChild(texto);
 ```
 
 Imaginado que temos um único elemento `ul` em nosso documento podemos fazer uso da função `getElementsByTagName()`.
-Ela retorna um coleção, um array de elementos, como sabemos de previamente que precisamos do primeira item acessamos
-essa coleção dessa forma `colecao[0]`, mais resumidamente `getElementsByTagName()[0]`, veja:
+Ela retorna um coleção, um array de elementos. Como sabemos previamente que precisamos do primeiro item, acessaremos a
+coleção dessa forma `colecao[0]` ou mais resumidamente `getElementsByTagName()[0]`, veja:
 
 ```javascript
 var lista = document.getElementsByTagName('ul')[0];
