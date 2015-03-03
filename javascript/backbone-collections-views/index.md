@@ -67,3 +67,9 @@ O resultado deve ser semelhante a imagem abaixo.
 !["Resultado gerado pelo framework Backbone"](collections-e-views.png "Resultado gerado pelo framework Backbone")
 
 Veja a demo no [jsfiddle.net/flaviomicheletti/hcL4jg6v/](http://jsfiddle.net/flaviomicheletti/hcL4jg6v/ "link-externo")
+
+
+Próximo artigo
+--
+
+- [Backbone - Sincronizando um modelo (model)](/javascript/backbone-sincronizando-models/)
