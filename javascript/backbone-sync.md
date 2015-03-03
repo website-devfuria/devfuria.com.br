@@ -1,11 +1,16 @@
 ---
 layout:      grid93-article
-title:       Backbone - sync
+title:       Backbone - Explorando o sync
 description: 
 menu:        javascript-backbone
 ---
 
+Se vocâ caiu de paraquedas nesta página, estamos na seção __Backbone__ procurando entender como funciona o sync.
 
+Como o [sync]( "link-externo") é possível sobrescrever a função na qual passam todos os métodos do Backbone, em outras
+palavras, o que você escrever no sync substituirá as funções `model.fetch()`, `model.save()` e `model.delete()`.
+
+O exemplo abaixo diz tudo.
 
 ```javascript
 Backbone.sync = function(method, model, options) {
@@ -20,9 +25,14 @@ foo.destroy();
 
 // read
 // update
-//delete
+// delete
 ```
 
+O próximo exemplo nós criamos um enorme `switch` para tratar cada método separadamente.
+
+Observe o comportamento do método `save()`, se não passamos um identificador (`id`) ele entende que estamos na letra 
+__C__ do CRUD, ou seja, estamos efetuando um ato de criar (create). Agora se passamos o identificador o método é 
+inteligente o bastante apra efetuar uma operação de atualização (update).
 
 
 ```javascript
@@ -58,41 +68,66 @@ foo.destroy();
 // say: delete
 ```
 
+OK, mas você deve estar se perguntado: "o que eu faço agora?" Bom, já rompemos com o framework escrevendo nos mesmo o 
+que ele deve ou não fazer, logo, a partir deste ponto é com você. Não há uma resposta certa, pois existem vários caminhos.
+
+Um ponto importante há ser observado é que do jeito que estamos fazendo acima todos os métodos de qualquer modelo será
+sobrescrito. Então temos de ter o cuidado de escrever uma API consistente.
+
+E se quisesse-mos sobrescrever  apenas um modelo em particular sem afetar os demais, é possível?
 
 
-Sincronizando diretamento o modelo
+
+Sincronizando um modelo sem afetar os demais
 ---
+
+OK, podemos aplicar um override em um determinado modelo (model) sem interferir nos demais.
+
+Aqui também conseguimos responder a pergunta "o que eu faço agora?", pois estamos dando continuidade ao processo definido
+um API particular as nossas necessidades. Como exemplo, optei por utilizar o seguinte esquema de URL's:
+
+    POST person/read/?id=
+    POST person/create/
+    POST person/update/?id=
+    POST person/delete/?id=
+
+Explicando, vamos utilizar o verbo HTTP __POST__, quer dizer, todas as requisições fogem do REST e aplicam o bom e velho
+POST. Também teremos uma pasta específica para cada operação.
 
 ```javascript
 var Person = Backbone.Model.extend({
-  getCustomUrl: function (method) {
-    switch (method) {
-      case 'read':
-        return 'http://localhost/person/read/?id=' + this.id;
-        break;
-      case 'create':
-        return 'http://localhost/person/create/?id=' + this.id;
-        break;
-      case 'update':
-        return 'http://localhost/person/update/?id=' + this.id;
-        break;
-      case 'delete':
-        return 'http://localhost/person/delete/?id=' + this.id;
-        break;
-    }
-  },
   //
-  // Override the sync function to use our custom URLs
+  // Override
   //
   sync: function (method, model, options) {
     options || (options = {});
-
-    options.url = this.getCustomUrl(method.toLowerCase());
-    // Lets notify backbone to use our URLs and do follow default course
+    
+    switch (method) {
+      case 'read':
+        options.url = 'http://localhost/person/read/?id=' + this.id;
+        break;
+      case 'create':
+        options.url = 'http://localhost/person/create/';
+        break;
+      case 'update':
+        options.url = 'http://localhost/person/update/?id=' + this.id;
+        break;
+      case 'delete':
+       options.url =  'http://localhost/person/delete/?id=' + this.id;
+        break;
+    }
+    
+    // Notificamos o Backbone para aplicar as alterações
     return Backbone.sync.apply(this, arguments);
   }
 });
+```
 
+Agora podemo executar os métodos do Backbone para ver o resultado.
+
+Eu vou deixar apenas o exemplo do método `save()` mas você pode e deve realizar o `fecth()`e o `delete()`.
+
+```
 
 var p1 = new Person({id: 568});
 p1.save({}, {
@@ -104,7 +139,24 @@ p1.save({}, {
 
 ```
 
+O método `save()` acima irá criar uma requisição para a url `http://localhost/person/update/?id=568`, se quiser que sua
+requisição tenha sucesso, você deverá escrever um script no lado do servidor para retorna uma string JSON.
 
-O HTML simplesmente...
+Para encurtar caminho, podemos simplesmente deixar um HTML retornando a string JSON (você deve ter pelo menos um 
+servidor web configurado e instalado). Teremos uma resposta sempre igual, fixa, mas o suficiente para testarmos nosso
+código.
+
+Crie um arquivo denominando` index.html` na pasta `[documentroot]/person/update/` com o seguinte conteúdo...
 
     {"id":1,"name":"alexandre"}
+
+Só isso, apenas a linha acima, nada de tags `body`, `head` ou `html`.
+
+Execute novamente seu código JavaScript e veja sua requisição obter sucesso.
+
+
+
+Próximo artigo
+--
+
+- [Backbone - Definindo rotas (router)](/javascript/backbone-router/)
