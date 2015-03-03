@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone - Unindo Models e Views
-description: Artigo, com exemplos, que mostra como unir um modelo(model) a uma visão (view) no framework Backbone para JavaScript
+description: Artigo, com exemplos, que mostra como unir um modelo (model) a uma visão (view) no framework Backbone para JavaScript
 menu:        javascript-backbone
 ---
 

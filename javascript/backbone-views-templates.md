@@ -1,12 +1,12 @@
 ---
 layout:      grid93-article
 title:       Backbone - Views e Templates
-description: Artigo/tutorial que demonstra o funcionamento dos templates nas views do framework Backbone (JavaScript)
+description: Artigo/tutorial que demonstra o funcionamento dos templates nas views do framework Backbone para JavaScript
 menu:        javascript-backbone
 ---
 
 Este artigo é um segundo passo com as views do framework Backbone. Nele veremos o que são templates, códigos de exemplo 
-e como armazenar temlates no próprio arquivo HTML.
+e como armazenar templates no próprio arquivo HTML.
 
 Podemos dizer que os templates são pequenos trechos de HTML controlados pela View.
 
@@ -122,7 +122,7 @@ Criamos templates mais elaborados utilizando-se a tag `<script>` junto com a pro
     <script type="text/template">
 
 Tal propriedade não será reconhecida pelos navegadores e o HTML inserido entre a tag `<scrip>` não será renderizado, ou
-seja, não será vizível.
+seja, não será visível.
 
 Para exibir o template, ou melhor, renderizar o template, precisaremos de uma tag extra que servirá como um "container".
 

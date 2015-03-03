@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone - Sincronizando coleções (collections)
-description: 
+description: Breve artigo demonstrando como sincronizar um collection d(o framewokr Backbone em JavaScript com o servidor através de uma requisição AJAX.
 menu:        javascript-backbone
 ---
 

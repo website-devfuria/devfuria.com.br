@@ -1,13 +1,13 @@
 ---
 layout:      grid93-article
 title:       Backbone - Explorando o sync
-description: 
+description: Veremos neste artigo como explorar a função sync do framework Backbone em JavaScript para realizar requisições aos servidor do tipo AJAX.
 menu:        javascript-backbone
 ---
 
-Se vocâ caiu de paraquedas nesta página, estamos na seção __Backbone__ procurando entender como funciona o sync.
+Se você caiu de paraquedas nesta página, estamos na seção __Backbone__ procurando entender como funciona o sync.
 
-Como o [sync]( "link-externo") é possível sobrescrever a função na qual passam todos os métodos do Backbone, em outras
+Como o [sync](http://backbonejs.org/#Sync "link-externo") é possível sobrescrever a função na qual passam todos os métodos do Backbone, em outras
 palavras, o que você escrever no sync substituirá as funções `model.fetch()`, `model.save()` e `model.delete()`.
 
 O exemplo abaixo diz tudo.
@@ -32,7 +32,7 @@ O próximo exemplo nós criamos um enorme `switch` para tratar cada método sepa
 
 Observe o comportamento do método `save()`, se não passamos um identificador (`id`) ele entende que estamos na letra 
 __C__ do CRUD, ou seja, estamos efetuando um ato de criar (create). Agora se passamos o identificador o método é 
-inteligente o bastante apra efetuar uma operação de atualização (update).
+inteligente o bastante para efetuar uma operação de atualização (update).
 
 
 ```javascript

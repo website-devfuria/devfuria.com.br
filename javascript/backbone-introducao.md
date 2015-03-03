@@ -8,7 +8,7 @@ menu:        javascript-backbone
 [Backbone](http://backbonejs.org/ "link-externo") é um framework MVC para Javascript.
 
 O Backbone faz uso intensivo da biblioteca [underscorejs](http://underscorejs.org/ "link-externo"), sua maior dependência.
-O framework também precisa da biliboteca jQuery, sua menor dependência. Digo isso pois você poderá optar pela Zepto, ao invés da 
+O framework também precisa da biblioteca jQuery, sua menor dependência. Digo isso pois você poderá optar pela Zepto, ao invés da 
 jQuery.
 
 Aconselho o estudo do Backbone para quem já possui uma certa experiência, você se sentirá mais tranquilo se...
@@ -16,7 +16,7 @@ Aconselho o estudo do Backbone para quem já possui uma certa experiência, voc�
 - Conhecer o paradigma MVC (Model, View e Controller)
 - Conhecer a jQuery
 - Ter prática com os consoles de navegadores (Firefox ou Chrome)
-
+- Estar familiarizado com o conceito REETfull (usaremos nos models)
 
 
 ### Como eu preparei este (mini) curso do Backbone ?
@@ -29,7 +29,7 @@ mais prático começar por elas, então eu preparei este tutorial iniciando-se p
 
 ### Setup inicial
 
-Abaixo temos um arquivo HTML que nos servirá como boirleplate (esqueleto, matriz) para testar o framework Backbone.
+Abaixo temos um arquivo HTML que nos servirá como esqueleto (matriz) para testar o framework Backbone.
 
 ```html
 <!DOCTYPE HTML>
@@ -40,7 +40,16 @@ Abaixo temos um arquivo HTML que nos servirá como boirleplate (esqueleto, matri
   </head>
   <body>
 
+
+
+
+
     <!-- 1) seu HTML "normal" --> 
+
+
+
+
+
 
     <!-- 2) as dependências --> 
     <script src="js/jQuery.js"></script>
@@ -74,7 +83,15 @@ o exemplo abaixo.
   </head>
   <body>
 
+
+
+
+
     <!-- 1) seu HTML "normal" --> 
+
+
+
+
 
     <!-- 2) as dependências --> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>

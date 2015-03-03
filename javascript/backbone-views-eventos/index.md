@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone - Views e Eventos
-description: Artigo que faz parte da série de tutorial sobre o framework Backbone (JavaSCcript) e que demonstra, de forma prática, como trabalhar com eventos nas Views.
+description: Artigo que demonstra, de forma prática, como trabalhar com eventos e views no framework Backbone (JavaSCcript).
 menu:        javascript-backbone
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone - Views
-description: Artigo/tutorial para aprender como as Views do rframeworkd Backbone (JavaScript) funcionam.
+description: Artigo/tutorial para aprender como as Views do framework Backbone (JavaScript) funcionam.
 menu:        javascript-backbone
 ---
 

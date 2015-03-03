@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone - Sincronizando um modelo (model)
-description: 
+description: Como fazer requisições AJAX através de um model do framework Backbone considerando o conceito Restfull, veremos os métodos fetch(), save()  destroy().
 menu:        javascript-backbone
 ---
 

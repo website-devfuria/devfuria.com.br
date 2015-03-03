@@ -1,7 +1,7 @@
 ---
 layout:      grid12-index
 title:       Framework Backbone (Javascript)
-description: Série de artigos (tutorial) sobre o framework Backbone JavaScript
+description: Série de artigos (tutoriais) sobre o framework Backbone para JavaScript
 ---
 
 A documentação do Backbone começa falando dos modelos (models), aí tudo quanto é tutorial que você encontra na Internet
