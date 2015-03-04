@@ -16,7 +16,8 @@ Há os mais variados tipos de eventos:
 - etc...
 
 Veja os [eventos](http://www.w3.org/TR/1998/REC-html40-19980424/interact/scripts.html#h-18.2.3 "link-externo")
-que foram especificados na HTML4 (ainda na 4).
+que foram especificados na HTML4 (ainda na 4) e veja também os 
+[eventos](https://developer.mozilla.org/en-US/docs/Web/API/Window#Event_handlers "link-externo") na documentação do Mozilla.
 
 Antigamente, atribuíamos o evento diretamente no elemento HTML como no exemplo abaixo.
 
