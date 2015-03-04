@@ -5,7 +5,7 @@ description: Artigo, com exemplos, que mostra como unir uma coleção (collectio
 menu:        javascript-backbone
 ---
 
-Este artigo é um exemplo de integração da Collections (coleção) e da View (visão) do framework Backbone. Indicado para 
+Este artigo é um exemplo de integração da Collections (coleção) e da View (visão) do framework Backbone. Indicado para
 quem já conhece um mínimo do Backbone e/ou leu os artigos anteriores. O objetivo é demonstrar como podem interagir a
 collection e a view. Faremos isso criando um lista (`ul`) e inserindo alguns itens.
 
@@ -67,6 +67,85 @@ O resultado deve ser semelhante a imagem abaixo.
 !["Resultado gerado pelo framework Backbone"](collections-e-views.png "Resultado gerado pelo framework Backbone")
 
 Veja a demo no [jsfiddle.net/flaviomicheletti/hcL4jg6v/](http://jsfiddle.net/flaviomicheletti/hcL4jg6v/ "link-externo")
+
+
+
+
+
+Um exemplo mais completo
+---
+
+O exemplo anterior nós criamos uma coleção e mostramos o resultado na view, algo bem trivial.
+
+Neste exemplo daremos um passo a frente, já sabemos como funcionam os eventos das coleções (collections), então vamos
+atribuir um função de callback da visão a cada modelo adicionado na coleção. Em outras palavras, a coleção fica escutando
+o evento `add` e executará uma função de callback cada vez que inserirmos um modelo.
+
+```javascript
+//
+// Model
+//
+Friend = Backbone.Model.extend({});
+
+//
+// Collection
+//
+Friends = Backbone.Collection.extend({
+    // Repare que estamos fazendo uso do segundo parâmetro "options"
+    initialize: function (models, options) {
+        // Para cada modelo adicionado nesta coleção
+        // executamos a função callback "view.render()"
+		this.on('add',  options.view.render, this);
+    }
+});
+
+//
+// View
+//
+AppView = Backbone.View.extend({
+    el: $('body'),
+    initialize: function () {
+        // Criamos a coleção e criamos um referência a esta visão
+        // passando como segundo parâmetro as opções (options).
+        this.friends = new Friends(null, {view: this});
+    },
+    events: {
+        'click #add-friend': 'showPrompt',
+    },
+    showPrompt: function () {
+        // Que coisa mais ultrapassada é essa ?
+        var friend_name  = prompt('Who is your friend?');
+        // Criamos um objeto com o nome fornecido pelo usuário
+        var friend_model = new Friend({name: friend_name});
+        // Adicionamos e modelo a coleção e, consequentemente,
+        // disparamos o callback definido na collection.
+        this.friends.add(friend_model);
+    },
+    render: function (model) {
+        $('#friends-list').append('<li>' + model.get('name') + '</li>');
+    }
+});
+
+// Aqui é o ponto inicial
+var appview = new AppView;
+```
+
+Os trechos de código não comentados devem ser triviais para o leitor (veja os artigos anteriores).
+
+Não podemos esquecer da parte referente ao HTML.
+
+```html
+...
+<body>
+    <button id="add-friend">Add Friend</button>
+    <ul id="friends-list"></ul>
+</body>
+...
+```
+Este exemplo é original do artigo [Backbone  introduction](http://thomasdavis.github.io/2011/02/01/backbone-introduction.html "link-externo")
+
+
+
 
 
 Próximo artigo
