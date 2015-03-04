@@ -29,7 +29,7 @@ var ViewExemplo = Backbone.View.extend({
 });
 ```
 
-Agroa, precisamos definir os métodos do objeto View. Vamos definir, por exemplo, o método `initialize()` que sempre é
+Agora, precisamos definir os métodos do objeto View. Vamos definir, por exemplo, o método `initialize()` que sempre é
 executado ao instanciarmos a view.
 
 ```javascript
