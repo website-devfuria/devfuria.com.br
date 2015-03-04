@@ -26,7 +26,7 @@ Lei o artigo [Instalando o Git](/linux/cookbook/git/) na seção Linux e descubr
 
 O Git é famoso por ter sua curva de aprendizado acentuada.
 
-Pensando nisso, eu preparei esta sequencia em 5 passos que vai direto ao ponto.
+Pensando nisso, eu preparei esta sequência em 5 passos que vai direto ao ponto.
 
 - Passo 1 [Tutorial para iniciar com o Git e GitHub](/git/tutorial-iniciando-git/)
 - Passo 2 [Code Schooll](https://try.github.io/levels/1/challenges/1 "link-externo")

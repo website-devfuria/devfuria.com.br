@@ -77,7 +77,7 @@ Importante
 
 O `assert()` não é para ser utilizado em seus programas reais. A não ser que você tenha outra razão para utilizá-lo.
 
-Nesse curso de lógica, utilizaremos ele com frequencia. A razão é porque ele nos ajuda a simular um teste unitário, mas
+Nesse curso de lógica, utilizaremos ele com frequência. A razão é porque ele nos ajuda a simular um teste unitário, mas
 apenas isso, para __simular um teste unitário__.
 
 Ao laborar o curso, eu procurava o forma mais simples de fazer um teste sem complicar as coisas, essa forma foi através

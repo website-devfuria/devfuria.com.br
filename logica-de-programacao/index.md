@@ -104,7 +104,7 @@ Então acho justo deixar alguns links valiosos e que podem lhe ajudar, caso prec
 
 - [PDF de professor da USP ](http://www.ime.usp.br/~slago/pl-1.pdf "link-externo")
 - [PDF da Federal de RG](http://www.dca.ufrn.br/~affonso/DCA800/pdf/algoritmos_parte1.pdf "link-externo")
-- [Sequencia de videos sobre Lógica](http://www.cursou.com.br/informatica/curso-logica-de-programacao/ "link-externo")
+- [Sequência de videos sobre Lógica](http://www.cursou.com.br/informatica/curso-logica-de-programacao/ "link-externo")
  (Não recomendado caso você já esteja com sôno)
 
 

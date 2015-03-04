@@ -327,7 +327,7 @@ Exemplo, `"flavio.upper()"` equivale a `FLAVIO`.
 "python"[5] # 'n'
 ```
 
-Leia mais sobre [fatiamento de sequencias](../sequencias-fatiamento/ "Python - Sequencias").
+Leia mais sobre [fatiamento de sequências](../sequencias-fatiamento/ "Python - Sequências").
 
 
 ### Percorrendo strings (string lopping)
