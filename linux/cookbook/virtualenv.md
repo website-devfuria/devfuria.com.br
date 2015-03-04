@@ -38,12 +38,12 @@ Iniciando
 Se você já possui uma pasta para o projeto, por exemplo `foo`, execute:
 
     cd /path/para/seus/projetos/foo
-    virutalenv
+    virtualenv
 
 Se você ainda não possui uma pasta para o projeto, execute
 
     cd /path/para/seus/projetos/
-    virutalenv foo
+    virtualenv foo
 
 Ele criará a pasta `foo` para você.
 
