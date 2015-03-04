@@ -7,7 +7,7 @@ menu:        javascript-backbone
 
 [Backbone](http://backbonejs.org/ "link-externo") é um framework MVC para Javascript.
 
-O Backbone faz uso intensivo da biblioteca [underscorejs](http://underscorejs.org/ "link-externo"), sua maior dependência.
+O Backbone faz uso intensivo da biblioteca [Underscorejs](http://underscorejs.org/ "link-externo"), sua maior dependência.
 O framework também precisa da biblioteca jQuery, sua menor dependência. Digo isso pois você poderá optar pela Zepto, ao invés da 
 jQuery.
 
@@ -16,7 +16,7 @@ Aconselho o estudo do Backbone para quem já possui uma certa experiência, voc�
 - Conhecer o paradigma MVC (Model, View e Controller)
 - Conhecer a jQuery
 - Ter prática com os consoles de navegadores (Firefox ou Chrome)
-- Estar familiarizado com o conceito REETfull (usaremos nos models)
+- Estar familiarizado com o conceito RESTfull (usaremos nos models)
 
 
 ### Como eu preparei este (mini) curso do Backbone ?
@@ -164,7 +164,7 @@ AppView = Backbone.View.extend({
 });
 
 //
-// Aqui é o sua palicação Backbone é, de fato, inicializada.
+// Onde sua aplicação Backbone é, de fato, inicializada.
 //
 var appview = new AppView;
 ```
@@ -176,6 +176,9 @@ renderizar uma view.
 As views também possuem eventos, mas eles referem-se aos "listeners" que habitualmente anexamos aos elementos HTML e
 que, diga-se de passagem, já devem fazer parte de seu dia a dia como programador JavaScript.
 
+Outra particularidade das views são os __templates__. NEste caso você pode fazer uma leitura atenta na documentação do
+Underscore, isso mesmo, Underscore!. Podemos dizer que o Backbone extende os templates do Underscore e boa parte do
+você precisa saber sobre eles você encontrará na documentação do Underscore.
 
 
 ### Site oficial
@@ -183,7 +186,7 @@ que, diga-se de passagem, já devem fazer parte de seu dia a dia como programado
 Como dito, o Backbone a maior dependência é a biblioteca Underscore, então sua documentação também deve ser considerada.
 
 - [backbonejs.org](http://backbonejs.org/ "link-externo")
-- [nderscorejs.org/](http://underscorejs.org/ "link-externo")
+- [underscorejs.org/](http://underscorejs.org/ "link-externo")
 
 
 

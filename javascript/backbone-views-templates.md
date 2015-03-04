@@ -135,7 +135,7 @@ Vejamos o exemplo abaixo, o template é denominado `formulario-template` e será
 
         <!-- Template -->
         <script type="text/template" id="formulario-template">
-          <label>Search</label>
+          <label>Pesquisar</label>
           <input type="text" id="txtTermo" />
           <input type="button" id="btnBuscar" value="Buscar" />
         </script>
@@ -147,15 +147,15 @@ Vejamos o exemplo abaixo, o template é denominado `formulario-template` e será
 
 O código para recuperar elemento `script` utiliza-se da função `.html()` da biblioteca jQuery.
 
-    $("#search-template").html()
+    $("#formulario-template").html()
 
-Passamos o resultado da função para o método `_.template()` da underscore e o resultado deste, por sua vez, poderá ser 
+Passamos o resultado da função para o método `_.template()` da Underscore e o resultado deste, por sua vez, poderá ser 
 passado para `this.$el.html()`;
 
-    _.template( $("#search-template").html(), {} )
+    _.template( $("#formulario-template").html(), {} )
 
 ```javascript
-var SearchView = Backbone.View.extend({
+var PesquisaView = Backbone.View.extend({
     // Este é o elemento que servirá de container
     // para exibirmos o template
     el: $("#formulario-container"),
@@ -172,7 +172,7 @@ var SearchView = Backbone.View.extend({
         this.$el.html( this.template );
     }
 });
-var search_view = new SearchView();
+var pesquisa_view = new PesquisaView();
 ```
 
 
