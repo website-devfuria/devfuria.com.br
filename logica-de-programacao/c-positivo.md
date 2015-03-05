@@ -38,9 +38,9 @@ int ehPositivo(int numero) {
 //
 int main (){
 
-    assert(ehPositivo(8) == 0);
-    assert(ehPositivo(7) != 0);
-    assert(ehPositivo(0) == 0);
+    assert(ehPositivo(100) == 1);
+    assert(ehPositivo(0) == 1);
+    assert(ehPositivo(-100) == 0);
 
     return 0;
 }
@@ -59,7 +59,11 @@ int main (){
 // retornará 0 caso negativo
 //
 int ehPositivo(int numero) {
-    return numero % 2;
+	if(numero >= 0) {
+		return 1;
+	} else {
+		return 0;
+	}
 }
 
 //
@@ -67,10 +71,61 @@ int ehPositivo(int numero) {
 //
 int main (){
 
-    assert(ehPositivo(8) == 0);
-    assert(ehPositivo(7) != 0);
-    assert(ehPositivo(0) == 0);
+    assert(ehPositivo(100) == 1);
+    assert(ehPositivo(0) == 1);
+    assert(ehPositivo(-100) == 0);
 
     return 0;
 }
+```
+
+
+
+Linguagem Python
+---
+
+```python
+# -*- coding: utf-8 -*-
+
+# Função que descobre se um número é positivo ou negativo
+#
+# retornará 1 caso positivo
+# retornará 0 caso negativo
+#
+def ehPositivo(numero):
+    pass
+
+
+#
+# Seus testes
+#
+assert ehPositivo(100) == 1
+assert ehPositivo(0) == 1
+assert ehPositivo(-100) == 0
+```
+
+
+### Solução na linguagem Python
+
+
+```python
+# -*- coding: utf-8 -*-
+
+# Função que descobre se um número é positivo ou negativo
+#
+# retornará 1 caso positivo
+# retornará 0 caso negativo
+#
+def ehPositivo(numero):
+	if numero >= 0:
+		return 1
+	else:
+		return 0
+
+#
+# Seus testes
+#
+assert ehPositivo(100) == 1
+assert ehPositivo(0) == 1
+assert ehPositivo(-100) == 0
 ```
