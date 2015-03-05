@@ -60,7 +60,7 @@ Testes Unitários e TDD
 ---
 
 <div class="list-group">
-    <a href="/python/tdd-primeiros-passos-com-teste-unitarios/" class="list-group-item">Primeiros passos com teste unitários em Python</a>
+    <a href="/python/tdd-primeiros-passos-com-testes-unitarios/" class="list-group-item">Primeiros passos com teste unitários em Python</a>
 </div>
 
 
