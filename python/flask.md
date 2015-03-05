@@ -1,5 +1,5 @@
 ---
-layout:      grid93-article
+layout:      grid12-article
 title:       Python Flask - Introdução
 description: Este artigo é uma breve introdução ao framework Flask e pode servir como um tutorial prático para quem quer dar os primeiros passos com o Flask
 ---
