@@ -9,8 +9,8 @@ menu:        logica-exerc-nivel-02
 
 Exercício de lógica de programação
 ---
-        
-Crie duas funções para conversão de temperaturas. 
+
+Crie duas funções para conversão de temperaturas.
 
 Uma converterá celsius em fahrenheit e a outra fará o inverso.
 
@@ -18,10 +18,10 @@ Saiba que 100c é igual a 212f, veja fórmula:
 
        C          F - 32
     -------  =  ---------
-       5            9 
-       
+       5            9
 
- 
+
+
 Linguagem C
 ---
 
@@ -62,12 +62,12 @@ int main (){
 
     return 0;
 }
-``` 
+```
 
 
 
 ### Solução na linguagem C
-       
+
 ```c
 #include <stdio.h>
 #include <assert.h>
@@ -99,4 +99,63 @@ int main (){
 
     return 0;
 }
-```        
+```
+
+
+
+Linguagem Python
+---
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Converte fahrenheit em celsius
+#
+def toCelsius(fahrenheit):
+	pass
+
+#
+# Converte celsius em fahrenheit
+#
+def toFahrenheit(celsius):
+	pass
+
+#
+# Testes
+#
+celsius    = 100
+fahrenheit = 212
+
+assert celsius == toCelsius(fahrenheit)
+assert fahrenheit == toFahrenheit(celsius)
+```
+
+
+### Solução na linguagem Python
+
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Converte fahrenheit em celsius
+#
+def toCelsius(fahrenheit):
+	return 5 * (fahrenheit - 32) / 9;
+
+#
+# Converte celsius em fahrenheit
+#
+def toFahrenheit(celsius):
+	return celsius / 5 * 9 + 32;
+
+#
+# Testes
+#
+celsius    = 100
+fahrenheit = 212
+
+assert celsius == toCelsius(fahrenheit)
+assert fahrenheit == toFahrenheit(celsius)
+```
