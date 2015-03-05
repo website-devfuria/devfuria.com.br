@@ -22,7 +22,11 @@ Conheça o básico da sintaxe de Python através deste artigo [O básico da sint
 
 {% include menus/python-artigos.html %}
 
-Após ter vista a sintaxe básica de Python, talvez você queria colocar a mão na massa e realizar alguns exercícios de 
+
+Lógica de programação
+---
+
+Após ter visto a sintaxe básica de Python, talvez você queria colocar a mão na massa e realizar alguns exercícios de 
 lógica de programação. Eu preparei a seção __Lógica de programação__ com exercícios nas linguagens C, C++ e Python. 
 Isso é muito bacana, pois se você acabou de sair da faculdade, deve estar familiarizado com a sintaxe de C e irá se 
 sentir muito à vontade. Como eu resolvo os exercícios com Python você pode, além de aprender Python, fazer um comparativo 
@@ -35,6 +39,10 @@ programar desde início com testes unitários.
 
 Vá até a seção de [lógica de programação](/logica-de-programacao/) e pratique os exercícios.
 
+
+Basic Python Exercises
+---
+
 Aconselho também a experimentar o Python através do [Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
 
 Após essa maratona de exercícios, eu sugiro que você pratique os exercícios de lógica preparado pelo Google denominado 
@@ -44,6 +52,17 @@ as funções até os testes passarem. Os exercícios, por serem mais elaborados,
 desenvolvimento de software. Eu apenas traduzi os  enunciados...
 
 {% include menus/python-google.html %}
+
+
+
+
+Testes Unitários e TDD
+---
+
+<div class="list-group">
+    <a href="/python/tdd-primeiros-passos-com-teste-unitarios/" class="list-group-item">Primeiros passos com teste unitários em Python</a>
+</div>
+
 
 
 
