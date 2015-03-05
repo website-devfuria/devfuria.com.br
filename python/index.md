@@ -22,18 +22,26 @@ Conheça o básico da sintaxe de Python através deste artigo [O básico da sint
 
 {% include menus/python-artigos.html %}
 
-Aconselho também a iniciar pelo Python através do [Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
+Após ter vista a sintaxe básica de Python, talvez você queria colocar a mão na massa e realizar alguns exercícios de 
+lógica de programação. Eu preparei a seção __Lógica de programação__ com exercícios nas linguagens C, C++ e Python. 
+Isso é muito bacana, pois se você acabou de sair da faculdade, deve estar familiarizado com a sintaxe de C e irá se 
+sentir muito à vontade. Como eu resolvo os exercícios com Python você pode, além de aprender Python, fazer um comparativo 
+entre as linguagens. O nível dos exercícios começam com "estupidamente fácil" e vai evoluindo evoluindo gradativamente.
 
+Mas não é só isso, tem mais! Além de você ver o exercício de lógica resolvido em 2 linguagens (Pythone e C) também aplico
+o conceito e prática de testes unitários, ou seja, você irá aprender lógica de programação e testar seu programa de forma
+profissional, nada de ficar executando o programa, inserindo dados e ver se deu certo ou não, nada disso. Aprenda a 
+programar desde início com testes unitários.
 
+Vá até a seção de [lógica de programação](/logica-de-programacao/) e pratique os exercícios.
 
-Lista de exercícios da Google (Basic Python Exercises)
----
+Aconselho também a experimentar o Python através do [Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
 
-O [Google](https://developers.google.com/edu/python/exercises/basic "link-externo") mantém um breve tutorial e alguns
-exercícios sobre Python, eu apenas traduzi os enunciados.
-
-O legal dos exercícios é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código 
-deveria funcionar e implementa as funções até os testes passarem.
+Após essa maratona de exercícios, eu sugiro que você pratique os exercícios de lógica preparado pelo Google denominado 
+[Basic Python Exercises](https://developers.google.com/edu/python/exercises/basic "link-externo"). O legal dos exercícios 
+é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código deveria funcionar e implementa 
+as funções até os testes passarem. Os exercícios, por serem mais elaborados, são mais próximos da realidade do 
+desenvolvimento de software. Eu apenas traduzi os  enunciados...
 
 {% include menus/python-google.html %}
 
