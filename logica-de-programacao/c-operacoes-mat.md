@@ -10,15 +10,17 @@ menu:        logica-exerc-nivel-02
 Exercício de lógica de programação
 ---
 
-Escreva uma função para cada uma das quatro operações matemáticas simples
-(adição, subtrair, multiplicar e dividir).
+Escreva uma função para cada uma das quatro operações matemáticas simples:
+
+- adição,
+- subtrair,
+- multiplicar e
+- dividir
 
       
   
 Linguagem C
 ---
-
-
 
 ```c
 #include <stdio.h>
@@ -104,4 +106,144 @@ int main (){
     
 	return 0;
 }
-```    
+```  
+
+
+
+Linguagem Python
+---
+
+```python
+# -*- coding: utf-8 -*-
+
+# as funções são tão pequenas e tão concisas
+# que nem precisam de comentários
+
+def somar(num, add):
+    pass
+
+def subtrair(num, sub):
+    pass
+
+def multiplicar(num, mult):
+    pass
+
+def dividir(num, divisor):
+    pass
+
+#
+# Testes
+# 
+assert 12 == somar(10, 2)
+assert 8 == subtrair(10, 2)
+assert 20 == multiplicar(10, 2)
+assert 5 == dividir(10, 2)
+```
+
+
+### Solução na linguagem Python
+
+
+```python
+# -*- coding: utf-8 -*-
+
+# as funções são tão pequenas e tão concisas
+# que nem precisam de comentários
+
+def somar(num, add):
+    return num + add
+
+def subtrair(num, sub):
+    return num - sub
+
+def multiplicar(num, mult):
+    return num * mult
+
+def dividir(num, divisor):
+    return num / divisor
+
+#
+# Testes
+# 
+assert 12 == somar(10, 2)
+assert 8 == subtrair(10, 2)
+assert 20 == multiplicar(10, 2)
+assert 5 == dividir(10, 2)
+```  
+
+
+
+Linguagem Python
+---
+
+```python
+# -*- coding: utf-8 -*-
+import math
+
+#
+# Retorna o valor de delta
+#
+def delta(a, b, c):
+    pass
+
+#
+# Retorna o valor de primeira raiz
+#
+def raiz1(a, b, c):
+    pass
+
+#
+# Retorna o valor de segunda raiz
+#
+def raiz2(a, b, c):
+    pass
+
+#
+# Testes
+#
+a = 1
+b = 0
+c = -16
+
+assert 64 == delta(a, b, c)
+assert  4 == raiz1(a, b, c)
+assert -4 == raiz2(a, b, c)
+```
+
+
+### Solução na linguagem Python
+
+
+```python
+# -*- coding: utf-8 -*-
+import math
+
+#
+# Retorna o valor de delta
+#
+def delta(a, b, c):
+    return b * b -4 * a * c
+
+#
+# Retorna o valor de primeira raiz
+#
+def raiz1(a, b, c):
+    return (-b + math.sqrt(delta(a, b, c))) / 2 * a
+
+#
+# Retorna o valor de segunda raiz
+#
+def raiz2(a, b, c):
+    return (-b - math.sqrt(delta(a, b, c))) / 2 * a
+
+#
+# Testes
+#
+a = 1
+b = 0
+c = -16
+
+assert 64 == delta(a, b, c)
+assert  4 == raiz1(a, b, c)
+assert -4 == raiz2(a, b, c)
+```
