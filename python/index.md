@@ -120,6 +120,21 @@ Leia este belo artigo de Eric Hideki onde o autor indica alguns bons livros (em 
 
 
 
+
+Além do devfuria.com.br
+---
+
+Recomendo...
+
+- [O tutorial de Python](http://turing.com.br/pydoc/2.7/tutorial/index.html "link-externo")  Um tutorial amigável, passo
+a passo em 6 capítulos, para quem nunca programou aprender usando Python, uma das linguagens mais indicadas para principiantes.
+
+- [Aprenda a Programar](http://turing.com.br/material/appy/ "link-externo") O tutorial de Python oficial, escrito pelo 
+criador da linguagem, Guido van Rossum, traduzido para o português pela comunidade Python brasileira.
+
+
+
+
 Site Oficial
 ---
 
