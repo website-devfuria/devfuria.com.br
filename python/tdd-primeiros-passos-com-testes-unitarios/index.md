@@ -2,11 +2,13 @@
 layout:      grid12-article
 title:       Primeiros passos com testes unitários em Python.
 description: Se você precisa escrever testes unitário em Python e não sabe por onde começar, este artigo é para você!
+ogimage:     img.png
 ---
 
-Em Python, quando queremos escrever teste unitários podemos lançar mãos desde um simples `assert`, passando por funções
-auxiliares até um framework de testes unitários completo, neste artigo vou mostrar rapidamente como funciona o statement
-`assert`. Mostrar algumas funções que também podem ser úteis e termino mostrando um "Hello world" do __Unit testing framework__.
+Em Python, quando queremos escrever testes unitários podemos lançar mãos desde um simples `assert`, passando por funções
+auxiliares até um framework de testes unitários completo. Neste artigo vou mostrar rapidamente como funciona o statement
+`assert` e mostrar também algumas funções que também podem ser úteis, termino mostrando um "Hello world" do 
+__Unit testing framework__.
 
 assert
 ---
