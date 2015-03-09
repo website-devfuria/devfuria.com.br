@@ -77,6 +77,10 @@ int main (){
     assert(0 == ehPrimo(10));
     assert(0 == ehPrimo(12));
 
+    // E aí, vamos testar até aonde?
+    // Difícil determinar até onde devem ir os testes
+    // nestes casos.
+
     return 0;
 }
 ```
