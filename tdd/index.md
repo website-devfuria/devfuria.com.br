@@ -15,8 +15,9 @@ Leia o primeiro artigo [Uma breve noção sobre o que é TDD](/tdd/o-que-e-tdd/)
 
 ### Praticando TDD na linguagem Python
 
-Sequência de exemplos de TDD escritos nas linguagens Pythone e C. Todos os exemplos são muito fáceis de seguir, pois simplificamos 
-utilizando a declaração `assert` para simular os testes.
+Sequência de exemplos de TDD escritos nas linguagens Pythone e C. 
+
+Todos os exemplos são muito fáceis de seguir, pois simplificamos utilizando a declaração `assert` para simular os testes.
 
 Ao todo são 16 exemplos, comece pelo primeiro: 
 [Simples exemplo de TDD - O dobro de um número qualquer (estruturado)](/tdd/exemplo-tdd-dobro/)
