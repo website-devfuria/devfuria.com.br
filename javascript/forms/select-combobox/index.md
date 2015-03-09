@@ -84,7 +84,7 @@ Para carregar a combo vamos utilizar o botão `btnCarregar`, adicione ao seu HTM
 Temos que criar cada __option__ na mão, na unha mesmo.
 
 A idéa é criar um elemento HTML com JavaScript, utilizaremos a função
-[document.createElement('tag')](/javascript/refs/dom-create-element/).
+[document.createElement('tag')](/javascript/dom-create-element/).
 
 Armazenamos em uma variável qualquer, por exemplo `elem` e então definimos 2 propriedades: __text__ e __value__.
 
@@ -218,7 +218,7 @@ Não se assuste com o código acima! Se precisar, veja a matéria
 Removendo elementos da combobox
 ---
 
-O método [remove(indice)](/javascript/refs/dom-remove/) remove o elemento.
+O método [remove(indice)](/javascript/dom-remove-child/) remove o elemento.
 
 ```javascript
 document.getElementById("btnRemoverItem").onclick = function() {
@@ -235,7 +235,7 @@ O método acima está removendo sempre o elemento de índice 0 (zero), em outras
 Removendo todos os itens
 ---
 
-Para remover todos os itens basta percorrer a coleção options e aplicar a função [remove(indice)](/javascript/refs/dom-remove/).
+Para remover todos os itens basta percorrer a coleção options e aplicar a função [remove(indice)](/javascript/dom-remove-child/).
 
 Eu mostrei como percorrer a coleção lá no começo do artigo, veja:
 
