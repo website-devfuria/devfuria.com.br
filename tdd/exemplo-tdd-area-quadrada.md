@@ -16,38 +16,35 @@ Exemplo:
 
 Vamos começar pelo teste.
 
-    assert(27 == 3 * 9);
-
-Nosso código compila e o teste passa (green).
+    assert 27 == 3 * 9
+    
+Nosso código compila (é interpretado) e o teste passa (green).
 
 Mas nosso trabalho ainda não acabou. Sabemos que `3` e `9` deveriam ser variáveis, logo:
 
-	int lado1, lado2;
+    lado1 = 3
+    lado2 = 9
 
-	lado1 = 3;
-	lado2 = 9;
+    assert 27 == lado1 * lado2
 
-    assert(27 == lado1 * lado2);
+Executando o script percebemos que os testes continuam passando (green).
 
-Rode o teste (compile e execute o programa), eles devem passar (green).
-
-Para o código ficar mais significativo vamos fazer uma alteração. Isso que nós vamos fazer chama-se __refatoração__.
+Para o código ficar mais significativo vamos fazer uma alteração.
 
 Pense comigo, `lado1 * lado2` é o resultado da área, então vamos utilizar uma variável para armazenar a área.
 
 Mas atenção: __antes de mudar o código, mudamos primeiro o teste__.
 
-Primeiro, acertamos o teste.
+    assert 27 == area
 
-    assert(27 == area);
+Em seguida, fazemos o mínimo para ele rodar.
 
-Pronto, o código não compila, sabemos disso. Então vamos fazer o mínimo para ele rodar.
+    lado1 = 3
+    lado2 = 9
 
-	int lado1, lado2, area;
+    area  = lado1 * lado2
 
-	lado1 = 3;
-	lado2 = 9;
-	area = lado1 * lado2;
+    assert 27 == lado1 * lado2
 
 Após compilar, execute para rodar o teste e ver se está tudo funcionando.
 
@@ -55,26 +52,24 @@ Após compilar, execute para rodar o teste e ver se está tudo funcionando.
 
 ### Código completo
 
-```c
-#include <stdio.h>
-#include <assert.h>
+```python
+# -*- coding: utf-8 -*-
 
-int main (){
+#
+# Variáveis
+#
+lado1 = 3
+lado2 = 9
 
-    int lado1, lado2, area;
+#
+# Sua lógica (seu código)
+#
+area  = lado1 * lado2
 
-    // Valores arbitrários
-    lado1 = 3;
-    lado2 = 9;
-
-    // Sua lógica (seu código)
-    area  = lado1 * lado2;
-
-    // Seu teste
-    assert(27 == area);
-
-    return 0;
-}
+#
+# Seu teste
+#
+assert 27 == area
 ```
 
 
