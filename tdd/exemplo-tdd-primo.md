@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Número primo"
 description: Este artigo é um  exemplo de TDD envolvendo um programa para identificar se um número é primo, estamos utilizando a linguagem C.
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Trocar o valor de duas variáveis"
 description: trocar o valor de duas variáveis.
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

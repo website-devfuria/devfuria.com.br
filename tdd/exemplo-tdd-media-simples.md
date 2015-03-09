@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Média simples de 3 números"
 description: Exemplo de TDD na linguagem C, pequeno algoritmo para calcular a média simples.
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

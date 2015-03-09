@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Juros simples"
 description: "Neste artigo, apoiados pelo TDD, criaremos um pequeno programa para calcular o juros simples"
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Funções para as 4 operações aritméticas"
 description: Este é um exemplo de TDD que envolverá a construção de 4 funções, uma para cada operação matemática simples (adição, subtrair, multiplicar e dividir).
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

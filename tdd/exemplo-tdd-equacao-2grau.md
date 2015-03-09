@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Equação de 2 grau"
 description: Este artigo é um exemplo de TDD escrito na linguagem C, nosso exercício consiste em fazer um programa que calcule as raízes da equação do 2 grau conforme a fórmula de Bhaskar.
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

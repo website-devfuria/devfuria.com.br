@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Valor positivo ou negativo"
 description: Vamos criar um programa na linguagem C utilizando funções e TDD, nosso objetivo será criar uma função que descubra se um valor é positivo ou negativo.
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

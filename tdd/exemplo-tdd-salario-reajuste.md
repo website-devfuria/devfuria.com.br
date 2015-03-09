@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Reajustando o salário"
 description: Exemplo, na linguagem C, desenvolvido com o apoio de TDD para calcular o reajusta de um salário qualquer
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

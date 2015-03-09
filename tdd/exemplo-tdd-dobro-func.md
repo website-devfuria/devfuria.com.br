@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - O dobro de um número qualquer (funções)"
 description: Artigo da série que envolve funções, iremos desenvolver uma função para calcular o dobro de um número qualquer.
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

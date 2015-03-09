@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Maior que 10"
 description: Neste exemplo de TDD (com linguagem C) iremos criar uma função que descubra se um valor é maior ou menor que 10
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

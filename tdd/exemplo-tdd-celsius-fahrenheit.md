@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Conversor Celsius/Fahrenheit"
 description: Neste exemplo de TDD criaremos duas funções para conversão de temperaturas. Uma função converterá celsius em fahrenheit e a outra fará o inverso.
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
