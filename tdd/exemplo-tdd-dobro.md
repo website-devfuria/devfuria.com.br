@@ -9,51 +9,47 @@ menu:        tdd-exemplos-simples-c
 
 ### Introdução
 
-Este é o primeiro exemplo de TDD da séria de exemplos na __linguagem C__.
+Este é o primeiro exemplo de TDD da séria de exemplos na __linguagem Python__.
 
-Vamos simplificar os testes com a ajuda da função `assert()`.
+Vamos simplificar os testes com a ajuda da declaração (statement) `assert`.
 
 
-### Praticando TDD na linguagem C
+### Praticando TDD na linguagem Python
 
 O objetivo é fazer um programa que calcule o dobro de um número.
 
 Primeiro, escrevemos o teste.
 
-	assert(10 == dobro);
+	assert 10 == dobro
 
-Compile! O compilador deve reclamar de que está faltando a variável `dobro`:
+Ao execute o script `python foo.py` (onde `foo.py` é o nome dado ao script) o interpretador reclamar de que está 
+faltando a variável `dobro`:
 
-    'dobro' undeclared
+    NameError: name 'dobro' is not defined
 
-Vamos declarar a variável.
+Vamos declarar a variável inicializando-a com o valor `None`.
 
-    int dobro;
+    dobro = None
 
-	assert(10 == dobro);
-
-Agora o compilador não reclama, mas ao rodar o programa, o nosso teste falha.
-
-    Assertion `10 == dobro' failed
+Agora o interpretador não reclama, porém, o nosso teste falha.
 
 Isso é um progresso! Agora precisamos codificar o mínimo para o teste passar.
 
-    dobro = 2 * 5;
+    dobro = 2 * 5
 
-Compile e rode o programa. Os testes passam, mas... o `5` deveria ser "um número qualquer".
+Ao executar o programa, os testes passam, mas... o `5` deveria ser "um número qualquer".
 
 Não sei como fazer isso imediatamente, mas que tal dar um passo pequenino?
 
 Vamos colocar ele em uma variável denominada `num`.
 
-    int num, dobro;
-    
-    num   = 5;
-    dobro = 2 * num;
+    num   = 5
 
-	assert(10 == dobro);
+    dobro = 2 * num
 
-Compile e rode. Não quebrou nada? Testes passando? Sim?
+    assert 10 == dobro
+
+Execute o script. Não quebrou nada? Testes passando? Sim?
 
 Então seu trabalho acabou!
 
@@ -64,41 +60,37 @@ Vamos entender o que fizemos.
 
 Deveríamos ter um número qualquer, mas o melhor que chegamos foi com um número arbitrário.
 
-    num = 5;
+    num = 5
 
 O principal de seu programa resume-se em uma única linha.
 
-    dobro = 2 * num;
+    dobro = 2 * num
 
 Como eu sei que ele funciona?
 
 Hora, temos um teste confirmando que sua lógica funciona, veja:
     
-    assert(10 == dobro);
+    assert 10 == dobro
 
 
 
 ### Código completo
 
-```c
-#include <stdio.h>
-#include <assert.h>
+```python
+#
+# Um número arbitrário
+#
+num   = 5
 
-int main (){
+#
+# Sua lógica (seu código)
+#
+dobro = 2 * num
 
-    int num, dobro;
-
-    // Um número arbitrário
-    num   = 5;
-
-    // Sua lógica (seu código)
-    dobro = 2 * num;
-
-    // Seu teste
-    assert(10 == dobro);
-
-    return 0;
-}
+#
+# Seu teste
+#
+assert 10 == dobro
 ```
 
 
