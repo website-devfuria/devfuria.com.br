@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Instalando o Python 3 (junto com o Python 2)
-description: Aprenda com esta receita como isntalar o Python 3 sem afetar o Linux
+description: Aprenda com esta receita como instalar o Python 3 sem afetar o Linux
 ---
 
 Esta é uma receita de instalação do Python 3 no Linux. A questão é que o Linux já vem com o Python instalado e, muito 
@@ -57,7 +57,7 @@ Extraia.
 
 Entre na pasta `/Python-3.4.2`
 
-	cd /Python-3.4.2
+	cd Python-3.4.2/
 
 Compile.
     
