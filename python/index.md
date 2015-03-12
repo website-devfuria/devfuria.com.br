@@ -56,11 +56,13 @@ desenvolvimento de software. Eu apenas traduzi os  enunciados...
 
 
 
-Testes Unitários e TDD
+Artigos diversos
 ---
 
 <div class="list-group">
     <a href="/python/tdd-primeiros-passos-com-testes-unitarios/" class="list-group-item">Primeiros passos com teste unitários em Python</a>
+    <a href="/python/virtualenv/" class="list-group-item">Virtualenv</a>
+    <a href="/python/sys-argv/" class="list-group-item">sys-argv</a>
 </div>
 
 
