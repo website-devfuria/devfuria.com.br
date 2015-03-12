@@ -94,7 +94,7 @@ assert 15 == somarDigitos(456), "a soma dos dígitos de 456 devem ser 15"
 ```
 
 
-### Solução em Python imitando a linguagem C
+### Solução em Python (imitando a linguagem C)
 
 Nós poderíamos simplesmente imitar a solução apresentada para a linguagem C, e porque não?
 
@@ -125,7 +125,7 @@ O mais legal é que o código acima possui um bug, entra em loop infinito.
 
 Você consegue dizer o porquê?
 
-No momento em que atribuímos `numero / 10` à variável `numero` a linguagem C converte o valor decimal para inteiro pois
+No momento em que atribuímos `numero / 10` à variável `numero` a linguagem C converte o valor decimal para inteiro, pois
 o tipo da variável `numero` é `int`. Só que essa conversão implica em um arredondamento... e esse arredondamento está
 implícito em nossa lógica ao resolver o problema desse jeito.
 
@@ -151,10 +151,10 @@ assert 15 == somarDigitos(456), "a soma dos dígitos de 456 devem ser 15"
 ```
 
 
-### Solução em Python 
+### Solução em Python (procurando outro caminho)
 
 
-Pensando apenas em Python, esquecendo a forma como implementamos em C, imaginei que poderíamos fazer isso...
+Pensando apenas em Python e esquecendo a forma como implementamos em C, imaginei que poderíamos fazer isso...
 
 ```python
 #
@@ -212,6 +212,4 @@ for n in numStr:
 ```
 
 Legal, descobri que não há uma conversão direta de número para lista em Python e, após um longa divagação, percebe-se
-que todas as soluções recaem na solução inicial.
-
-Como dizia um professor meu: "O processo é lento mas o barato é loco".
+que todas as soluções recaem na solução inicial, portanto, a primeira solução é a mais indicada.
