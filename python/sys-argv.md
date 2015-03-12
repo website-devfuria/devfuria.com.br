@@ -18,11 +18,12 @@ menu:        python-artigos
 Crie um arquivo chamado `foo.py` com o seguinte conteúdo.
 
 ```python
+# -*- coding: utf-8 -*-
+
 import sys
 
-for arg in sys.argv: 1
-    print arg
-
+for arg in sys.argv:
+    print(arg)
 ```
 
 Executando no terminal `python foo.py arg1 arg2 arg3`, o resultado será:
