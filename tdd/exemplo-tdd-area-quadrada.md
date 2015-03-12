@@ -7,6 +7,8 @@ menu:        tdd-exemplos-simples
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
+Este é o Segundo exemplo de TDD da série de exemplos na linguagem Python.
+
 Nosso objetivo é escrever um algoritmo que mostre a área quadrada de um espaço qualquer.
 
 Exemplo:

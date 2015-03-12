@@ -1,8 +1,8 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD - Triângulo"
-description: Exemplo de TDD na linguagem C++, portanto, fazendo uso de programação orientada a objeto onde construirmos uma classe que representa um triângulo (geometria)
-menu:        tdd-exemplos-simples-cpp
+description: Exemplo de TDD na linguagem Python, portanto, fazendo uso de programação orientada a objeto onde construirmos uma classe que representa um triângulo (geometria)
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

@@ -9,7 +9,7 @@ menu:        tdd-exemplos-simples
 
 ### Introdução
 
-Este é o primeiro exemplo de TDD da séria de exemplos na __linguagem Python__.
+Este é o primeiro exemplo de TDD da série de exemplos na __linguagem Python__.
 
 Vamos simplificar os testes com a ajuda da declaração (statement) `assert`.
 
