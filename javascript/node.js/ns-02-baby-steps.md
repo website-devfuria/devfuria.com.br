@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Nodeschool - exemplo 02 baby steps
-description: 
+title:       Nodeschool - baby steps
+description: Segundo exercício (baby steps) do Node.js da lista learnyounode da Nodeschool
 menu:        javascript-ns
 ---
 
