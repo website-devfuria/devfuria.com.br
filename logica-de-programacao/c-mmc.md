@@ -80,9 +80,12 @@ int mmc(int num1, int num2) {
 
 ### Segunda solução na linguagem C
 
+Sempre há mais de uma solução para um mesmo problema. O desafio é realizar o teste de mesa e procurar entender o 
+funcionamento do código.
+
 ```c
 //
-// FUnção mmc
+// Função mmc
 //
 int mmc(int num1, int num2) {
 
@@ -97,4 +100,58 @@ int mmc(int num1, int num2) {
     }
     return mmc;
 }
+```
+
+
+
+Linguagem Python
+---
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Função mmc
+#
+def mmc(num1, num2):
+    pass
+
+#
+# Teste
+#
+# 2 * 2 * 3 * 5 = 60
+assert 60 == mmc(12, 20)
+```
+
+
+### Solução na linguagem Python
+
+Segue o mesmo raciocínio, primeiro extraímos o MDC e depois aplicamos a fórmula `MMC = a . b / MDC`
+
+"Sejam __a__ e __b__ dois ou mais números naturais não nulos temos que MMC(a, b) . MDC(a, b) = a . b."
+
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Função mmc
+#
+def mmc(num1, num2):
+    a = num1
+    b = num2
+
+    resto = None
+    while resto is not 0:
+        resto = a % b
+        a  = b
+        b  = resto
+
+    return (num1 * num2) / a
+
+#
+# Teste
+#
+# 2 * 2 * 3 * 5 = 60
+assert 60 == mmc(12, 20)
 ```
