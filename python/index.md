@@ -39,11 +39,12 @@ programar desde início com testes unitários.
 
 Vá até a seção de [lógica de programação](/logica-de-programacao/) e pratique os exercícios.
 
+Aconselho também a experimentar o Python através do [Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
+
+
 
 Basic Python Exercises
 ---
-
-Aconselho também a experimentar o Python através do [Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
 
 Após essa maratona de exercícios, eu sugiro que você pratique os exercícios de lógica preparado pelo Google denominado 
 [Basic Python Exercises](https://developers.google.com/edu/python/exercises/basic "link-externo"). O legal dos exercícios 
