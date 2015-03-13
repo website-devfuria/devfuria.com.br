@@ -43,6 +43,7 @@ console.log("HELLO WORLD");
 
 
 
-### Próximo exercício
+Próximo exercício
+---
 
-- [Baby steps](/javascript/node.js/ns-02-baby-steps/)
+- [Baby steps](/javascript/node.js/nodejs-02-baby-steps/)

@@ -145,7 +145,3 @@ você terá uma string, exemplo:
 
     fs.readFileSync(process.argv[2], 'utf8').split('\n').length - 1
 
-
-### Próximo exercício
-
-- [My First Async I/O!](/javascript/node.js/ns-02-baby-steps/)

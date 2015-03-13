@@ -61,6 +61,7 @@ console.log(sum);
 ```
 
 
-### Próximo exercício
+Próximo exercício
+---
 
-- [My First I/O!](/javascript/node.js/ns-02-baby-steps/)
+- [My First I/O!](/javascript/node.js/nodejs-03-my-first-io/)
