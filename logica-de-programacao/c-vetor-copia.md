@@ -88,5 +88,5 @@ Podemos compara as listas diretamente.
 lista1 = [10, 20, 30]
 lista2 = [10, 20, 30]
 
-assert lista1 = lista2
+assert lista1 == lista2
 ```
