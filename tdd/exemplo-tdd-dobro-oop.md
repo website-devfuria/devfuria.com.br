@@ -7,113 +7,100 @@ menu:        tdd-exemplos-simples
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Este primeiro exercício é um quebra gelo, a lógica é muito simples (o dobro de um número). O objetivo deste artigo é
+Este primeiro exercício é um quebra gelo, o objetivo é muito simples (). O objetivo deste artigo é
 dar o primeiro passo em relação as Classes (programação orientada a objetos) na __linguagem C++__ e também demonstrar 
 como faremos os testes utilizando a instrução `assert()`.
+
+Este primeiro exercício é um quebra gelo, continuamos no mesmo problema: o dobro de um número qualquer. Mas agora 
+utilizaremos programação orientada a objetos e também um substituiremos o `assert` por um framework de testes. 
 
 Sua tarefa é fazer uma classe denominada `Calc` com um método que retorne o dobro de um número.
 
 Começamos sempre com o teste, vamos combinar de colocar o prefixo `test` antes do nome da função.
 
-    void testDobro() {
-        Calc c;
-        assert(10 == c.dobro(5));
-    }
+    def testDobro(self):
+        obj = Calc()
+        self.assertEqual(17, obj.dobro(8))
 
-Adequamos o corpo do programa para executar o teste.
+Mas se esse é o seu primeiro contado com Python e OOP então talvez esteja na dúvida de onde colocar o teste acima
+escrito. OK, veja o arquivo completo abaixo.
 
-    int main() {
-        testDobro();
-        return 0;
-    }
 
-__Pausa...__
+    # -*- coding: utf-8 -*-
+    import unittest
 
-O `main` está fazendo o papel do "framework de teste".
+    class MyCalcTest(unittest.TestCase):
+        def testDobro(self):
+            obj = Calc()
+            self.assertEqual(16, obj.dobro(8))
 
-Quero dizer que ao executar o programa, na verdade estaremos executando os testes.
+    if __name__ == '__main__':
+        unittest.main()
 
-Na vida real é exatamente o inverso, rodamos os testes... e os testes é quem executam o programa.
+Salve o conteúdo acima em um arquivo chamado, por exemplo, `foo.py`.
 
-Mas ainda estamos simulando o mundo de "framework de testes", entenda que esse é um código com fins didáticos, ou seja,
-nem de longe é um código profissional pronto para ser utilizado em produção.
+Se executarmos o script  (no console do Linux) `python foo.py` ele nos devolve a seguinte informação.
 
-__Continuando...__
+    E
+    ======================================================================
+    ERROR: testDobro (__main__.MyCalcTest)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "foo.py", line 7, in testDobro
+        obj = Calc()
+    NameError: global name 'Calc' is not defined
 
-Temos o teste e temos a função `main` chamando esse teste, mas ao compilar ele (o compilador) nos devolve a seguinte
-informação.
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.000s
 
-    ‘Calc’ was not declared in this scope
-    ...
-    ...
+    FAILED (errors=1)
 
-Vamos fazer o sistema compilar.
 
-    class Calc {
-    public:
-        int dobro(int num) {
-        }
-    }
+Informação suficiente para analisarmos aonde está acontecendo o erro.
 
-Agora ele compila, mas ao rodar o programa o teste falha.
+A parte que nos interessa é `'Calc' is not defined`, ou seja, a classe não foi definida.
 
-    void testDobro(): Assertion `10 == c.dobro(5)' failed
+Vamo definir a classe, mas só isso e nada mais.
 
-Progresso! Agora precisamos codificar o mínimo para o teste passar.
+    class Calc():
+        pass
 
-É aqui que entra o seu trabalho, aqui que entra a lógica de seu programa.
+E ao executar o script temos a seguinte mensagem.            
 
-Que tal isso?
+    AttributeError: 'Calc' object has no attribute 'dobro'
 
-    class Calc {
-    public:
-        int dobro(int num) {
-            return num * 2;
-        }
-    };
+Sim, já sabemos! Falta a função, novamente vamos definir a função sem implementá-la por completo (se segure, rsss).
 
-Veja o código completo abaixo.
+    class Calc():
+        def dobro(self, num):
+            pass
 
-```c
-#include <iostream>
-#include <assert.h>
+Executamos o script e agora temos um teste falhando (e não um erro de execução).
 
-//
-// Classe para abstrair cálculos matemáticos
-//
-class Calc {
-public:
-    int dobro(int num) {
-        return num * 2;
-    }
-};
+    AssertionError: 16 != None
 
-//
-// Testes...
-//
-void testDobro() {
-    Calc c;
-    assert(10 == c.dobro(5));
-}
+Teste falhando = Progresso! Agora sim podemos codificar o mínimo para o teste passar.
 
-//
-// Início do programa
-//
-int main() {
-    testDobro();
-    return 0;
-}
+    def dobro(self, num):
+        return num * 2
+
+
+```python
+# -*- coding: utf-8 -*-
+import unittest
+
+class Calc:
+    def dobro(self, num):
+        return num * 2
+
+class MyCalcTest(unittest.TestCase):
+    def testDobro(self):
+        obj = Calc()
+        self.assertEqual(17, obj.dobro(8))
+
+if __name__ == '__main__':
+    unittest.main()
 ```
-
-
-Experimente escrever outras asserções, por exemplo:
-
-    void testDobro() {
-        Calc c;
-        assert(10 == c.dobro(5));
-        assert(20 == c.dobro(10));
-        assert(50 == c.dobro(25));
-    }
 
 
 

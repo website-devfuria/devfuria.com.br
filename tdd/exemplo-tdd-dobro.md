@@ -7,22 +7,19 @@ menu:        tdd-exemplos-simples
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-### Introdução
-
 Este é o primeiro exemplo de TDD da série de exemplos na __linguagem Python__.
-
-Vamos simplificar os testes com a ajuda da declaração (statement) `assert`.
-
-
-### Praticando TDD na linguagem Python
 
 O objetivo é fazer um programa que calcule o dobro de um número.
 
-Primeiro, escrevemos o teste.
+Eu e você sabemos que o dobro de um número é `numero * 2`, ok. Não precisamos de TDD para fazer isso, obviamente.
+Mas a idéia é simplificar ao máximo para que um desenvolvedor com conhecimento básico/mediano possa pelo menos
+vislumbrar a técnica de TDD.
+
+Sempre começamos pelo teste e vamos simplificar os testes com a ajuda da declaração (statement) `assert`.
 
 	assert 10 == dobro
 
-Ao execute o script `python foo.py` (onde `foo.py` é o nome dado ao script) o interpretador reclamar de que está 
+Ao executar o script `python foo.py` (onde `foo.py` é o nome dado ao script) o interpretador reclama de que está 
 faltando a variável `dobro`:
 
     NameError: name 'dobro' is not defined
@@ -31,9 +28,12 @@ Vamos declarar a variável inicializando-a com o valor `None`.
 
     dobro = None
 
-Agora o interpretador não reclama, porém, o nosso teste falha.
+Agora o interpretador não reclama, porém, o nosso teste falha e é aqui que realmente começa o TDD, com um teste falhando.
 
-Isso é um progresso! Agora precisamos codificar o mínimo para o teste passar.
+Faça uma pausa e pense. Você tinha um objetivo e agora além do objetivo você tem um teste confirmando que você ainda
+não o alcançou.
+
+Continuando, agora precisamos __codificar o mínimo para o teste passar__.
 
     dobro = 2 * 5
 
@@ -51,12 +51,50 @@ Vamos colocar ele em uma variável denominada `num`.
 
 Execute o script. Não quebrou nada? Testes passando? Sim?
 
-Então seu trabalho acabou!
+Então seu trabalho acabou! (pelo menos por enquanto)
+
+
+### Código completo
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Um número arbitrário
+#
+num   = 5
+
+#
+# Seu código
+#
+dobro = 2 * num
+
+#
+# Seu teste
+#
+assert 10 == dobro
+```
+
 
 
 ### Entendendo melhor
 
 Vamos entender o que fizemos.
+
+Traçamos um objetivo e ao invés de partir para a solução do problema, apesar de óbvio, resolvemos escrever um teste e
+ver ele falhar 
+
+Após ver o teste falhar, ao invés de codificarmos a solução em uma tacada só, codificamos o mínimo necessário para ver 
+o teste passar.
+
+Com o teste passando resolvemos alterar o código (também conhecido como refatorar o código). Após essa pequena alteração
+como sabemos que não quebramos nada? Rodando o teste, ou melhor, em nosso caso simplesmente executando o script.
+
+
+
+
+### Palavras finais
+
 
 Deveríamos ter um número qualquer, mas o melhor que chegamos foi com um número arbitrário.
 
@@ -72,39 +110,17 @@ Hora, temos um teste confirmando que sua lógica funciona, veja:
     
     assert 10 == dobro
 
-
-
-### Código completo
-
-```python
-#
-# Um número arbitrário
-#
-num   = 5
-
-#
-# Sua lógica (seu código)
-#
-dobro = 2 * num
-
-#
-# Seu teste
-#
-assert 10 == dobro
-```
-
-
-
-### Palavras finais
-
 Para realizar outros testes, experimente trocar o valor de `num` e do teste também.
 
-Isso você fazia nas aulas de lógica, mas com uma significativa diferença. Para testar, você realizava o __input__ dos
-dados e imprimia (__output__) os resultados e, por fim, conferia visualmente.
+Este primeiro exercício de TDD serve para eu justificar esse tutorial de TDD para iniciantes. Nas aulas de lógica das
+Faculdades você aprendeu que para testar o seu pequeno código você executava o mesmo e realizava o a entrada de dados
+(__input__ ) e imprimia os resultados (__output__) e, por fim, conferia visualmente.
 
-Eis a grande diferença! Com os teste você __não__ confere visualmente e __sim__ automaticamente.
+Eis a grande diferença! Com os teste você não confere visualmente e sim automaticamente.
 
-Outra coisa, a entrada e a saída do programa confundia-se com a lógica principal (`dobro = 2 * num`).
+O pior de tudo é que essa prática adotada pelas faculdades prejudicam o raciocínio. Em outras palavras a lógica
+principal de seu programa confundia-se com a entrada e a saída. Seu código fica em estado "macarrônico" além disso o
+desenvolvedor dificilmente corrompe com essa cultura, quer dizer ele vai produzir código sujo por um bom tempo ainda.
 
 Com os testes, você verá que seu programa ficará muito mais __coeso__, muito mais __claro__, mais __limpo__ e,
 o melhor de tudo, funcionando!
@@ -115,6 +131,6 @@ E quem garante que seu código funciona? Os testes.
 Próximo exemplo
 ---
 
-- [Simples exemplo de TDD - Área quadrada](/tdd/exemplo-tdd-area-quadrada/)
+- [Simples exemplo de TDD - O dobro de um número qualquer (funções)](/tdd/exemplo-tdd-dobro-func/)
 
 
