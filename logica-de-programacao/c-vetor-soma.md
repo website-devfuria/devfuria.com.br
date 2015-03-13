@@ -57,9 +57,6 @@ int main() {
 ### Solução na linguagem C
 
 ```c
-#include <stdio.h>
-#include <assert.h>
-
 //
 // Função que retorna a soma de dois vetores
 //
@@ -73,25 +70,51 @@ int retSomaVetor(int vt[], int i) {
 
     return soma;
 }
+```
 
-//
-// Testes
-//
-int main() {
-    int vetor[4];
 
-    vetor[0] = 10;
-    vetor[1] = 20;
-    vetor[2] = 30;
-    vetor[3] = 0;
-    assert(60 == retSomaVetor(vetor, 4));
 
-    vetor[0] = 10;
-    vetor[1] = 20;
-    vetor[2] = 30;
-    vetor[3] = 40;
-    assert(100 == retSomaVetor(vetor, 4));
 
-    return 0;
-}
+Linguagem Python
+---
+
+Em Python facilita até a escrita do teste.
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Seu código
+#
+def somarLista(lista):
+    pass
+
+#
+# Seu teste
+#
+lista = [10, 20, 30, 0]
+assert 60 == somarLista(lista)
+```
+
+
+### Solução na linguagem Python
+
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Seu código
+#
+def somarLista(lista):
+    soma = 0
+    for n in lista:
+        soma += n
+    return soma
+
+#
+# Seu teste
+#
+lista = [10, 20, 30, 0]
+assert 60 == somarLista(lista)
 ```
