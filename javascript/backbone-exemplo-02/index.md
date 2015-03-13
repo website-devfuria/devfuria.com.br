@@ -5,7 +5,7 @@ description:
 menu:        javascript-backbone
 ---
 
-Este é o segundo exemplo demonstrando o Backbone, ele é uma extensão do primeiro ( o anterior). Por tanto, se você não
+Este é o segundo exemplo demonstrando o Backbone, ele é uma extensão do primeiro (o anterior). Por tanto, se você não
 conseguir entender este código, aconselho a tentar entender o anterior.
 
 Neste exemplo mostraremos como utilizar uma view aninhada (nested).

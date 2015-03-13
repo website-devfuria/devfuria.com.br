@@ -12,7 +12,7 @@ Neste exemplo utilizaremos templates e o evento `add` da coleção.
 
 Também faremos uso do framework [bootstrap](getbootstrap.com "link-externo")
 
-Ao clicar no botão "Add list item" o script incluirá um novo elemento `li`, veja a imagem abaixo.
+Ao clicar no botão "Add list item" o script incluirá um novo elemento `tr`, veja a imagem abaixo.
 
 !["exemplo backbone"](img-tabela.png "exemplo backbone")
 
