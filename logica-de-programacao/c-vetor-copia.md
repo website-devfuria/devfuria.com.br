@@ -73,3 +73,20 @@ int main() {
 Nesse exercício nós utilizamos valor arbitrários, o ideal seria construir um código reutilizável.
 
 Refaça o exercício utilizando funções, teste 2 vetores diferentes (ao invés de um só).
+
+
+
+
+Linguagem Python
+---
+
+Em Python, a princípio, não precisamos nem de lógica.
+
+Podemos compara as listas diretamente.
+
+```python
+lista1 = [10, 20, 30]
+lista2 = [10, 20, 30]
+
+assert lista1 = lista2
+```
