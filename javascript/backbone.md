@@ -6,7 +6,7 @@ description: Série de artigos (tutoriais) sobre o framework Backbone para JavaS
 
 [Backbone](http://backbonejs.org/ "link-externo") é um framework MVC para Javascript.
 
-O Backbone faz uso intensivo da biblioteca [Underscorejs](http://underscorejs.org/ "link-externo"), sua maior dependência.
+O Backbone faz uso intensivo da biblioteca [Underscore.js](http://underscorejs.org/ "link-externo"), sua maior dependência.
 O framework também precisa da biblioteca jQuery, sua menor dependência. Digo isso pois você poderá optar pela Zepto, ao invés da 
 jQuery.
 
