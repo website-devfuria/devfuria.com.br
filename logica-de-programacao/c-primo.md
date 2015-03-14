@@ -159,17 +159,18 @@ assert not ehPrimo(12)
 
 ### Solução na linguagem Python
 
+Se quisermos imitar o que fizemos em C, aqui vai...
 
 ```python
 def ehPrimo(num):
-	quantDivisores = 0
+	divisores = 0
 	i = 1
 	while i <= num:
 		if num % i == 0 :
-			quantDivisores = quantDivisores + 1
+			divisores = divisores + 1
 		i = i + 1
 
-	if quantDivisores == 2:
+	if divisores == 2:
 		return True
 	else:
 		return False
@@ -178,13 +179,27 @@ def ehPrimo(num):
 Você pode alterar o laço `while` por um laço `for`, veja exemplo abaixo.
 
 ```python
-def ehPrimo(num):
-	quantDivisores = 0
-	i = 1
+    ...
+    ...
+    ...
     for i in range(1, num + 1):
+    	...
+    	...
     	...
 ```
 
+Agora se quisermos partir para uma solução __um pouco mais__ pythonica, que tal...
+
+```python
+def ehPrimo(num):
+    if num < 2:
+        return False
+    else:
+        for n in range(2, num):
+            if num % n == 0:
+               return False
+        return True
+```
 
 
 
