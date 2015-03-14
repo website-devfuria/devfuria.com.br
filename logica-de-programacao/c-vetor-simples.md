@@ -96,10 +96,12 @@ for (i = 4; i > -1; i--) {
 
 **2)** Transcrever tudo para while, exemplo:
 
-    while(i < 5){
-        vetor[i] = i + 1;
-        i++;
-    }
+```c
+while(i < 5){
+    vetor[i] = i + 1;
+    i++;
+}
+```
 
 Boa sorte!
 
