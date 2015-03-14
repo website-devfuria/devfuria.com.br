@@ -56,6 +56,12 @@ int main() {
 
 ### Solução na linguagem C
 
+Na linguagem C tivemos que passar o tamanho do vetor na variável `i`. Isso significa que não há um métodos simples
+que descubra o tamanho de um vetor, eu disse não há um __método simples__, obviamente que existe um jeito, mas não
+tem nada de simples.
+
+Se quer um desafio na linguagem C tente desenvolver um código que descubra qual é o tamanho do vetor.
+
 ```c
 //
 // Função que retorna a soma de dois vetores
@@ -78,7 +84,7 @@ int retSomaVetor(int vt[], int i) {
 Linguagem Python
 ---
 
-Em Python facilita até a escrita do teste.
+Em Python, a escrita do teste é um tanto mais fácil.
 
 ```python
 # -*- coding: utf-8 -*-
@@ -99,6 +105,7 @@ assert 60 == somarLista(lista)
 
 ### Solução na linguagem Python
 
+Repare que não precisamos passar o tamanho do vetor como fazemos na linguagem C.
 
 ```python
 # -*- coding: utf-8 -*-
@@ -118,3 +125,8 @@ def somarLista(lista):
 lista = [10, 20, 30, 0]
 assert 60 == somarLista(lista)
 ```
+
+A esta altura é bom lembrar que, nem de longe, estamos dizendo que Python é melhor que C, isso é bobagem.
+
+Esses exercícios com vetores são legais pois, estamos tendo a oportunidade de ver duas perspectivas diferentes: 
+a de uma linguagem da baixo e a de uma linguagem de alto nível.
