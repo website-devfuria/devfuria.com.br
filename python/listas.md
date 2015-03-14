@@ -86,6 +86,31 @@ for x in zip(list_a, list_b):
 ```
 
 
+### Copiando listas
+
+Se quisermos copiar uma lista podemos realizar uma simples atribuição, mas manteremos uma relação entre as duas, ou 
+melhor, ambas apontam para o mesmo objeto e as alterações em uma afetará a outra.
+
+```python
+list_a = [6, 7, 8, 9]
+list_b = lista_a
+```
+
+Temos uma cópia mas ambas apontam para o mesmo objeto.
+
+
+
+### Clonando listas
+
+Se quisermos copiar uma lista sem manter a referência entre elas, podemos utilizar o operador de fatia `[:]`.
+
+```python
+list_a = [6, 7, 8, 9]
+list_b = lista_a[:]
+```
+
+Temos cópias independentes, um clone.
+
 
 
 ### Juntando listas (join lists)
@@ -99,6 +124,10 @@ print(o) # [1, 2, 3, 4, 5, 6]
 o += [7, 8, 9]
 print(o) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
+
+
+
+
 
 
 
@@ -138,6 +167,7 @@ print(animals) # ["ant", "dog", "bat", "cat"]
 ### remove()
 
 Remove através do valor
+
 ```python
 animals = ["ant", "bat", "cat"]
 animals.remove("ant")
