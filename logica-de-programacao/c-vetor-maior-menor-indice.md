@@ -10,14 +10,15 @@ menu:        logica-exerc-nivel-04v
 Exercício de lógica de programação
 ---
 
-Dado um vetor qualquer sem valores repetidos, descubra qual é o __índice do maior valor__ e o __índice do menor valor__.
+Dado um vetor qualquer sem valores repetidos, descubra qual é o índice do maior valor e o índice do menor valor.
 
-Utilize vetores e o laço "do-while".
-
+Repare que eu quero o índice e não o valor daquele índice.
 
 
 Linguagem C
 ---
+
+Utilize vetores e o laço "do-while".
 
 ```c
 #include <stdio.h>
@@ -29,14 +30,10 @@ int main() {
     // Aqui entra a lógica do programa.
 
 
-    //
     // teste do maior índice
-    //
     assert(3 == iMaior);
 
-    //
     // teste do menor índice
-    //
     assert(2 == iMenor);
 
     return 0;
@@ -75,16 +72,96 @@ int main() {
 
     } while (i < 5);
 
-    //
     // teste do maior índice
-    //
     assert(3 == iMaior);
 
-    //
     // teste do menor índice
-    //
     assert(2 == iMenor);
 
     return 0;
 }
+```
+
+
+
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+lista  = [6, 10, 4, 21, 9]
+iMaior = 0
+iMenor = 0
+
+#
+# Sua lógica
+#
+
+
+
+
+#
+# Testes
+#
+assert iMaior == 3
+assert iMenor == 2
+```
+
+
+### Solução na linguagem Python
+
+Em Python não temos o laço `do...while`, então vamos utilizar o que temos.
+
+```python
+# -*- coding: utf-8 -*-
+
+lista  = [6, 10, 4, 21, 9]
+iMaior = 0
+iMenor = 0
+
+i = 0
+while i < len(lista):
+
+	if lista[i] > lista[iMaior]:
+		iMaior = i
+
+	if lista[i] < lista[iMenor]:
+		iMenor = i
+
+	i = i + 1
+
+#
+# Testes
+#
+assert iMaior == 3
+assert iMenor == 2
+
+```
+
+Podemos deixar o código mais pythonico utilizando a função `enumarete`.
+
+```python
+# -*- coding: utf-8 -*-
+
+lista  = [6, 10, 4, 21, 9]
+iMaior = 0
+iMenor = 0
+
+for index, item in enumerate(lista):
+
+	if lista[index] > lista[iMaior]:
+		iMaior = index
+
+	if lista[index] < lista[iMenor]:
+		iMenor = index
+
+#
+# Testes
+#
+assert iMaior == 3
+assert iMenor == 2
 ```
