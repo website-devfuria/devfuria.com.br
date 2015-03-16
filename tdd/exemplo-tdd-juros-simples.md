@@ -1,15 +1,16 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD - Juros simples"
-description: "Neste artigo, apoiados pelo TDD, criaremos um pequeno programa para calcular o juros simples"
+title:       "Simples exemplo de TDD - Juros simples (OOP)"
+description: Pequeno exemplo de TDD na linguagem Python utilizando-se de programação orientada a objeto para criar uma classe com um método que retorne o juros simnples.
 menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Neste artigo, apoiados pelo TDD, criaremos um pequeno programa para calcular o juros simples na linguagem C.
+Neste artigo iremos construir um pequeno código na __linguagem Python__ utilizando, obviamente, a técnica de 
+programação orientada a objetos.
 
-O juros simples é obtido através da seguinte fórmula.
+Nosso objetivo definir uma classe para calcular o juros simples segundo a fórmula abaixo.
 
     J = C.i.n
 
@@ -22,57 +23,69 @@ Onde:
 
 Vamos imaginar o seguinte cenário: um empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
 
+Utilize orientação a objetos para resolver o problema.
 
-Escreva um teste.
+Começando pelo teste.
 
-	float juros;
-	
-	juros = 16000.0f * 0.04f * 4;
+```python
+# -*- coding: utf-8 -*-
+import unittest
 
-	assert(2560 == juros);
+class MyCalcTest(unittest.TestCase):
+    def testSimples(self):
+        calcJuros = Juros()
+        calcJuros.capital    = 16000;
+        calcJuros.taxa       = 0.04;
+        calcJuros.n_periodos = 4;
 
+        self.assertEqual(2560, calcJuros.simples())
 
-O __TDD__ nos ensina a dar passos pequenos, mas não é proibido dar um salto maior, então vamos substituir
-os valores pelas devidas variáveis.
-
-	float juros, capital, taxa;
-	int n_periodos;	
-	
-	capital    = 16000;
-	taxa       = 0.04;
-	n_periodos = 4;
-	
-	juros = capital * taxa * n_periodos;
-
-Rode os testes (compile e execute).
-
-
-
-Código completo
----
-
-```c
-#include <stdio.h>
-#include <assert.h>
-
-int main (){
-
-	float juros, capital, taxa;
-	int n_periodos;	
-	
-	capital    = 16000;
-	taxa       = 0.04;
-	n_periodos = 4;
-	
-	juros = capital * taxa * n_periodos;
-
-	assert(2560 == juros);
-	return 0;
-}
+if __name__ == '__main__':
+    unittest.main()
 ```
 
+O código não é executado pois não temos a classe `Juros` nem o método `simples()`, muito menos as propriedades.
 
-Próximo exemplo
+Vamos fazer o mínimo para código rodar sem problemas.
+
+    class Juros:
+        def simples(self):
+
+Agora temos um teste falhando (sinal de progresso) e só nos resta implementar a função `simples()`.
+
+    def simples(self):
+        return self.capital * self.taxa * self.n_periodos
+
+
+### Código final
+
+```c
+# -*- coding: utf-8 -*-
+import unittest
+
+class Juros:
+    def simples(self):
+        return self.capital * self.taxa * self.n_periodos
+
+class MyCalcTest(unittest.TestCase):
+    def testSimples(self):
+        calcJuros = Juros()
+        calcJuros.capital    = 16000;
+        calcJuros.taxa       = 0.04;
+        calcJuros.n_periodos = 4;
+
+        self.assertEqual(2560, calcJuros.simples())
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+Este exemplo é simples e curto, mas ele passa um lição importante, que é mais de testes unitários do que de TDD:
+
+Os testes ajudam a documentar o funcionamento do código.
+
+
+Próximo exemplo de TDD
 ---
 
-- [Simples exemplo de TDD - Reajustando o salário](/tdd/exemplo-tdd-salario-reajuste/)
+- [Simples exemplo de TDD - Triângulo](/tdd/exemplo-tdd-triangulo/)
