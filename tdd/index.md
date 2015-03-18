@@ -12,26 +12,26 @@ Quer aprender TDD? Lei o livro do mestre...
 !["Livro Test Driven Development"](index-livro-tdd.jpg "Livro Test Driven Development")
 
 Kent Bach, de longe, é primeiro grande divulgador da técnica TDD que nada mais é do escrever os testes antes de 
-começarmos a codificar, isso muda tudo! TDD está relacionado diretamente com a questão da arquitetura. É preciso que o desenvolvedor tenha um bom conhecimento
-sobre **OOP** (Programação Orientada a Objetos) e també sobre **testes unitários**.
+começarmos a codificar, isso muda tudo! **TDD está relacionado diretamente com a questão da arquitetura**. 
 
-Mas este site é dedicado aos iniciantes, então eu tive que simplificar muitas coisas para facilitar (e até incentivar) 
-   o aprendizado.
+É preciso que o desenvolvedor tenha um bom conhecimento sobre OOP (Programação Orientada a Objetos) e também sobre 
+testes unitários. Mas este site é dedicado aos iniciantes, então eu tive que simplificar muitas coisas para facilitar
+e, inclusive,incentivar o aprendizado.
 
-O primeiro artigo que abre esta seção é sobre a ídeia básica do que é __TDD__.
+O primeiro artigo que abre esta seção é sobre a idéia básica do que é TDD.
 
 Leia o primeiro artigo [Uma breve noção sobre o que é TDD](/tdd/o-que-e-tdd/)
 
 Agora podemos partir para a prática! Aí eu caí em outro grande problema: qual linguagem usar? Por que não usar Ruby, PHP
 ou qualquer outra linguagem ? Não há a melhor escolha, mas inevitavelmente, haverá uma escolha. Eu optei por Python pois 
-acho a sintaxe muito simples e convidativa. E o melhor, já vem instalado no Linux, para iniciar basta digitar no console 
-`python` e sair brincando.
+acho a sintaxe muito simples e convidativa. E o melhor, além de vir instalado no Linux, o framework de teste também
+acompanha a instalação. Para iniciar, basta digitar no console `python` e sair brincando.
 
 
 ### Praticando TDD na linguagem Python
 
-Sequência de exemplos de TDD escritos nas linguagens Pythone. 
+Sequência de exemplos de TDD escritos nas linguagens Python. 
 
-Todos os exemplos são muito fáceis de seguir, pois simplificamos utilizando a declaração `assert` para simular os testes.
+Todos os exemplos são muito fáceis de seguir, eles são indicados para os "iniciantes iniciando" em TDD.
 
 {% include /menus/tdd-exemplos-simples.html %}
