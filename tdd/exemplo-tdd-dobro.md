@@ -7,9 +7,14 @@ menu:        tdd-exemplos-simples
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Este é o primeiro exemplo de TDD da série de exemplos na __linguagem Python__.
+Este é o primeiro exemplo de TDD da série de exemplos na __linguagem Python__. Ele é extremamente simples por razões
+didáticas. Ela reflete pouco, ou quase nada (me lembrei do seu Madruga), de TDD. Mas deve ajudar, assim espero, a quem
+não sabe nada sobre TDD e, além disso, está começando a programar.
 
 O objetivo é fazer um programa que calcule o dobro de um número.
+
+
+### Um iniciante iniciando em TDD...
 
 Eu e você sabemos que o dobro de um número é `numero * 2`, ok. Não precisamos de TDD para fazer isso, obviamente.
 Mas a idéia é simplificar ao máximo para que um desenvolvedor com conhecimento básico/mediano possa pelo menos
@@ -90,12 +95,6 @@ o teste passar.
 Com o teste passando resolvemos alterar o código (também conhecido como refatorar o código). Após essa pequena alteração
 como sabemos que não quebramos nada? Rodando o teste, ou melhor, em nosso caso simplesmente executando o script.
 
-
-
-
-### Palavras finais
-
-
 Deveríamos ter um número qualquer, mas o melhor que chegamos foi com um número arbitrário.
 
     num = 5
@@ -112,14 +111,18 @@ Hora, temos um teste confirmando que sua lógica funciona, veja:
 
 Para realizar outros testes, experimente trocar o valor de `num` e do teste também.
 
-Este primeiro exercício de TDD serve para eu justificar esse tutorial de TDD para iniciantes. Nas aulas de lógica das
-Faculdades você aprendeu que para testar o seu pequeno código você executava o mesmo e realizava o a entrada de dados
-(__input__ ) e imprimia os resultados (__output__) e, por fim, conferia visualmente.
+
+
+### Palavras finais
+
+Este primeiro exercício de TDD serviu para eu justificar esse tutorial de TDD para iniciantes. Nas aulas de lógica das
+Faculdades você aprendeu que para testar o seu pequeno código você o executava,  realizava a entrada de dados 
+(__input__ ), imprimia os resultados (__output__) e, por fim, conferia visualmente.
 
 Eis a grande diferença! Com os teste você não confere visualmente e sim automaticamente.
 
 O pior de tudo é que essa prática adotada pelas faculdades prejudicam o raciocínio. Em outras palavras a lógica
-principal de seu programa confundia-se com a entrada e a saída. Seu código fica em estado "macarrônico" além disso o
+principal de seu programa confundia-se com a entrada e a saída, seu código fica em estado "macarrônico". Além disso, o
 desenvolvedor dificilmente corrompe com essa cultura, quer dizer ele vai produzir código sujo por um bom tempo ainda.
 
 Com os testes, você verá que seu programa ficará muito mais __coeso__, muito mais __claro__, mais __limpo__ e,
