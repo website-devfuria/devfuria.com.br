@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD - Juros simples (OOP)"
+title:       "Simples exemplo de TDD - Juros simples"
 description: Pequeno exemplo de TDD na linguagem Python utilizando-se de programação orientada a objeto para criar uma classe com um método que retorne o juros simnples.
 menu:        tdd-exemplos-simples
 ---
@@ -59,14 +59,20 @@ Agora temos um teste falhando (sinal de progresso) e só nos resta implementar a
 
 ### Código final
 
-```c
+```python
 # -*- coding: utf-8 -*-
 import unittest
 
+#
+# Código limpo e funcionando
+#
 class Juros:
     def simples(self):
         return self.capital * self.taxa * self.n_periodos
 
+#
+# Testes
+#
 class MyCalcTest(unittest.TestCase):
     def testSimples(self):
         calcJuros = Juros()
@@ -80,12 +86,12 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-Este exemplo é simples e curto, mas ele passa um lição importante, que é mais de testes unitários do que de TDD:
+Este exemplo é simples e curto, mas ele passa um lição importante, que está mais relacionado a testes unitários do que 
+com TDD, __os testes ajudam a documentar o funcionamento do código.__
 
-Os testes ajudam a documentar o funcionamento do código.
 
 
 Próximo exemplo de TDD
 ---
 
-- [Simples exemplo de TDD - Triângulo](/tdd/exemplo-tdd-triangulo/)
+- [Simples exemplo de TDD - Cálculo da área](/tdd/exemplo-tdd-area-quadra/)
