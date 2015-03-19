@@ -16,88 +16,65 @@ Saiba que para formar um triângulo, o valor de cada lado deve ser menor que a s
 
 O primeiro passo será criar uma função para determinar se é os dados compõem ou não um triângulo.
 
-Minha classe se chamara `Triangulo` e minha função será `ehTriangulo()`.
+Minha classe se chamará `Triangulo` e minha função será `ehTriangulo()`.
 
-Se a função vai dizer sim ou não, então ela poderá retornar um tipo "booleano".
+Se a função vai dizer sim ou não, então ela poderá retornar um tipo "booleano", vejamos o teste.
 
-Vejamos o teste.
+    def testEhTriangulo(self):
+        tri = Triangulo()
+        tri.a = 3
+        tri.b = 4
+        tri.c = 5
+        self.assertTrue(tri.ehTriangulo())
 
-    Triangulo tri;
-    tri.a = 3;
-    tri.b = 4;
-    tri.c = 5;
-    assert(tri.ehTriangulo());
 
-Esse teste deve retornar um valor verdadeiro, pois os valores obedecem a regra: __o valor de cada lado deve ser menor 
-que a soma dos outros 2 lados__.
+Esse teste deve retornar um valor verdadeiro, pois os valores  de `a`, `b` e `c` obedecem a regra "o valor de cada lado 
+deve ser menor que a soma dos outros 2 lados". Antes, deixa eu mostrar a estrutura do arquivo.
 
-Vamos criar a estrutura primeiro.
+    # -*- coding: utf-8 -*-
+    import unittest
 
-    class Triangulo {
-    public:
-        int a, b, c;
+    #
+    # Sua classe
+    #
+    class Triangulo:
 
-        bool ehTriangulo() {
-        }
-    };
+        def ehEquilatero(self):
+            pass
 
-    void testEhTriangulo() {
 
-        Triangulo tri;
-        tri.a = 3;
-        tri.b = 4;
-        tri.c = 5;
-        assert(tri.ehTriangulo());
-    }
+    #
+    # Testes
+    #
+    class MyCalcTest(unittest.TestCase):
 
-    int main() {
-        testEhTriangulo();
-        return 0;
-    }
+        def testEhEquilatero(self):
+            tri = Triangulo()
+            tri.a = 4
+            tri.b = 4
+            tri.c = 4
+            self.assertTrue(tri.ehEquilatero())
 
-O código compila mas o teste não passa (red), precisamos implementar o método `ehTriangulo`, que tal...
+    if __name__ == '__main__':
+        unittest.main()
 
-```c
-#include <iostream>
-#include <assert.h>
+O código executa mas o teste não passa (red), precisamos implementar o método `ehTriangulo`, que tal...
 
-class Triangulo {
-public:
-    int a, b, c;
+    def ehTriangulo(self):
+        if self.a < (self.b + self.c):
+            if self.b < (a + self.c):
+                if self.c < (a + self.b):
+                    return True
 
-    bool ehTriangulo() {
-        if (a < (b + c)) {
-            if (b < (a + c)) {
-                if (c < (a + b)) {
-                    return true;
-                }
-            }
-        }
-    }
-};
-
-void testEhTriangulo() {
-
-    Triangulo tri;
-    tri.a = 3;
-    tri.b = 4;
-    tri.c = 5;
-    assert(tri.ehTriangulo());
-}
-
-int main() {
-    testEhTriangulo();
-    return 0;
-}
-```
-
-Neste ponto terminamos nosso trabalho. Tínhamos um objetivo, escrevemos um teste, vemos ele falhar e codificamos até os
+Neste ponto terminamos nosso trabalho. Tínhamos um objetivo, escrevemos um teste, vimos ele falhar e codificamos até os
 testes passarem.
 
-O que se segue, são possíveis cenários de alterações.
 
 
-### Um mês depois... (primeira alteração)
+
+
+Um mês depois... (primeira alteração)
+---
 
 Seu chefe olha para você e diz que "o programa __também__ deverá informar se os valores formam um triângulo equilátero, 
 isósceles ou escaleno" e entrega a você as seguintes regras:
@@ -110,196 +87,130 @@ OK, vamos alterar a classe `Triangulo` para acomodar as novas funcionalidades.
 
 Mas lembre-se que se passaram um mês e como sua equipe é grande, estamos preocupado se alguém mexeu no seu código.
 
-Você poderia olhar os logs do sistema de versionamento, mas de qualquer forma fica a pergunta: "será que o código ainda está
-funcioando? Será que ninguém o quebrou?".
+Você poderia olhar os logs do sistema de versionamento, mas de qualquer forma fica a pergunta: "será que o código ainda 
+está funcionando? Será que ninguém o quebrou?".
 
 Pergunte para os testes! Como? Rode os testes, se eles passarem (green) seu sistema funciona e você poderá trabalhar
-tranquilamente.
+tranquilamente. Antes de mexer no código rode os testes), crie este hábito.
 
-Uma lição importante de __TDD__ (ou talvez testes unitários): antes de mexer no código rode os testes.
-
-Crie este hábito.
-
-
-__Testes rodando, vamos trabalhar.__
+Testes rodando, vamos trabalhar.
 
 Olhando o teste já escrito, eu percebo que os valores compõem um triângulo escaleno. Escrevo um novo teste.
 
-    void testEhEscaleno() {
+    def ehEscaleno(self):
+        pass
 
-        Triangulo tri;
-        tri.a = 3;
-        tri.b = 4;
-        tri.c = 5;
-        assert(tri.ehEscaleno());
-    }
+    def testEhEscaleno(self):
+        tri = Triangulo()
+        tri.a = 3
+        tri.b = 4
+        tri.c = 5
+        self.assertTrue(tri.ehEscaleno())
 
-    int main() {
-        testEhTriangulo();
-        testEhEscaleno();
-        return 0;
-    }
+Podemos dar um pequeno passo (baby step).
 
-Sei que o código não compila, façamos compilar.
+    def ehEscaleno(self):
+        return True
 
-    ...
-    bool ehEscaleno() {
-    }
+E seguimos com a implementação da função.
 
-
-Se você executar o programa do jeito que está, veremos o teste passar quando não deveria passar, afinal a função 
-`ehEscaleno` não retorna nada. Ops... retorna sim e o valor está sendo considerado como verdadeiro, isso é sinal de que:
-
-1. Nosso famingerado `assert()` está nos deixando na mão.
-2. Precisaremos, em breve, descobrir um bom framework de testes.
-3. Nosso conhecimento sobre a linguagem não parece muito bom.
-
-As 3 afirmações acima, são verdadeiras. Mas vamos levar em conta a questão da didática, estou querendo deixar as coisas 
-o mais simples possível para, então não vamos ir a fundo com os detalhes da linguagem __c__/__c++__, seguiremos em 
-frente, apesar do incômodo.
-
-Vamos dar um pequeno passo (baby step).
-
-    ...
-    bool ehEscaleno() {
-        return true;
-    }
-
-Pronto, a "coisa toda" volta a fazer sentido e podemos seguir com a implementação da função.
-
-    bool ehEscaleno() {
-        if(a != b && a != c && b != c) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    def ehEscaleno(self):
+        if self.a != self.b and self.a != self.c and self.b != self.c:
+            return True
+        else:
+            return False
 
 O escaleno foi fácil. Encorajado, corri para o isósceles... 
 
-    class Triangulo {
-    public:
 
-        ...
-        bool ehIsosceles() {
-            return true;
-        }
+    def ehIsosceles(self):
+        return True
 
-    };
+    def testEhIsosceles(self):
+        tri = Triangulo()
 
-    void testEhIsosceles() {
+        tri.a = 3
+        tri.b = 3
+        tri.c = 5
+        self.assertTrue(tri.ehIsosceles())
 
-        Triangulo tri;
+Na hora de implementar a função... travei! Não consegui pensar em uma solução imediata para o problema.
 
-        tri.a = 3;
-        tri.b = 3;
-        tri.c = 5;
-        assert(tri.ehIsosceles());
-
-    }
-
-    int main() {
-        ...
-        testEhIsosceles();
-        return 0;
-    }
-
-
-Na hora de implementar a função... travei! Não consegui pensar em uma solução imediata para o problema, olhando a regra:
-
-- Triângulo Isósceles: quaisquer dois lados iguais;
-
-Em minha mente, logo veio que eu teria que comparar os 3 lados com os próprios 3 lados.
+Olhando a regra "triângulo Isósceles possui quaisquer dois lados iguais" ...em minha mente, logo veio que eu teria que
+comparar os 3 lados com os próprios 3 lados.
 
 Aí o  __TDD__ "entra como uma luva", ao invés de pensar muito, posso fazer suposições e ver se elas se tornam verdadeiras.
 
-        if(a == b) {
-            return true;
-        } else {
-            return false;
-        }
+        if self.a == self.b:
+            return True
+        else:
+            return False
 
-A primeira suposição passou, então fiz mais uma, meu teste ficou assim...
+A primeira suposição passou, então fiz mais uma e tive que alterar meu teste...
 
-    void testEhIsosceles() {
+    def testEhIsosceles(self):
+        tri = Triangulo()
 
-        Triangulo tri;
+        tri.a = 3
+        tri.b = 3
+        tri.c = 5
+        self.assertTrue(tri.ehIsosceles())
 
-        tri.a = 3;
-        tri.b = 3;
-        tri.c = 5;
-        assert(tri.ehIsosceles());
-
-        tri.a = 3;
-        tri.b = 5;
-        tri.c = 3;
-        assert(tri.ehIsosceles());
-
-    }
+        tri.a = 3
+        tri.b = 5
+        tri.c = 3
+        self.assertTrue(tri.ehIsosceles())
 
 O teste não passa (red). Sem pensar muito, experimentei o óbvio.
 
-    bool ehIsosceles() {
-        if(a == b) {
-            return true;
-        } else if(a == c) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    def ehIsosceles(self):
+        if self.a == self.b:
+            return True
+        elif self.a == self.c:
+            return True
+        else:
+            return False
 
 OK, testes passando. Só me restava acrescentar mais uma asserção,
 
-    tri.a = 5;
-    tri.b = 3;
-    tri.c = 3;
-    assert(tri.ehIsosceles());
+    tri.a = 5
+    tri.b = 3
+    tri.c = 3
+    self.assertTrue(tri.ehIsosceles())
 
 Com os testes no vermelho, tentei...
 
-    bool ehIsosceles() {
-        if(a == b) {
-            return true;
-        } else if(a == c) {
-            return true;
-        } else if(b == c) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    def ehIsosceles(self):
+        if self.a == self.b:
+            return True
+        elif self.a == self.c:
+            return True
+        elif self.b == self.c:
+            return True
+        else:
+            return False
 
 E tudo passou (green).
 
 Fui para o equilátero (3 lados iguais). 
 
-Pô, esse é o inverso do escaleno. Darei uma passo grande, eis o teste:
+Pô, esse é o inverso do escaleno. Arriscarei dar um passo grande, eis o teste:
 
-    void testEhEquilatero() {
-
-        Triangulo tri;
-        tri.a = 4;
-        tri.b = 4;
-        tri.c = 4;
-        assert(tri.ehEquilatero());
-    }
-
-    int main() {
-        ...
-        testEhEquilatero();
-        return 0;
-    }
+    def testEhEquilatero(self):
+        tri = Triangulo()
+        tri.a = 4
+        tri.b = 4
+        tri.c = 4
+        self.assertTrue(tri.ehEquilatero())
 
 ...e a implementação:
 
-    bool ehEquilatero() {
-        if(a == b && a == c && b == c) {
-            return true;
-        } else {
-            return false;
-        }
-    }  
+    def ehEquilatero(self):
+        if self.a == self.b and self.a == self.c and self.b == self.c:
+            return True
+        else:
+            return False
+ 
 
 Tudo passou!.
 
@@ -307,133 +218,108 @@ Tudo passou!.
 
 ### Código final
 
-```c
-#include <iostream>
-#include <assert.h>
+```python
+# -*- coding: utf-8 -*-
+import unittest
 
-//
-// Classe que representa um triângulo
-//
-class Triangulo {
-public:
-    int a, b, c;
+#
+# Classe que representa um triângulo
+#
+class Triangulo:
 
-    // 
-    // Confirma se as medidas compõem um triângulo
-    //
-    bool ehTriangulo() {
-        if (a < (b + c)) {
-            if (b < (a + c)) {
-                if (c < (a + b)) {
-                    return true;
-                }
-            }
-        }
-    }
+    # 
+    # Confirma se as medidas compõem um triângulo
+    #
+    def ehTriangulo(self):
+        if self.a < (self.b + self.c):
+            if self.b < (self.a + self.c):
+                if self.c < (self.a + self.b):
+                    return True
 
-    //
-    // Confirma se o triângulo é escaleno
-    //
-    bool ehEscaleno() {
-        if(a != b && a != c && b != c) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    
-    //
-    // Confirma se o triângulo é isosceles
-    //
-    bool ehIsosceles() {
-        if(a == b) {
-            return true;
-        } else if(a == c) {
-            return true;
-        } else if(b == c) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    #
+    # Confirma se o triângulo é escaleno
+    #
+    def ehEscaleno(self):
+        if self.a != self.b and self.a != self.c and self.b != self.c:
+            return True
+        else:
+            return False
 
-    //
-    // Confirma se o triângulo é equilátero
-    //
-    bool ehEquilatero() {
-        if(a == b && a == c && b == c) {
-            return true;
-        } else {
-            return false;
-        }
-    }    
-    
-};
+    #
+    # Confirma se o triângulo é isosceles
+    #
+    def ehIsosceles(self):
+        if self.a == self.b:
+            return True
+        elif self.a == self.c:
+            return True
+        elif self.b == self.c:
+            return True
+        else:
+            return False
 
-//
-// Testes...
-//
-void testEhTriangulo() {
+    #
+    # Confirma se o triângulo é equilátero
+    #
+    def ehEquilatero(self):
+        if self.a == self.b and self.a == self.c and self.b == self.c:
+            return True
+        else:
+            return False
 
-    Triangulo tri;
-    tri.a = 3;
-    tri.b = 4;
-    tri.c = 5;
-    assert(tri.ehTriangulo());
-}
 
-void testEhEscaleno() {
+#
+# Testes
+#
+class MyCalcTest(unittest.TestCase):
 
-    Triangulo tri;
-    tri.a = 3;
-    tri.b = 4;
-    tri.c = 5;
-    assert(tri.ehEscaleno());
-}
+    def testEhTriangulo(self):
+        tri = Triangulo()
+        tri.a = 3
+        tri.b = 4
+        tri.c = 5
+        self.assertTrue(tri.ehTriangulo())
 
-void testEhIsosceles() {
+    def testEhEquilatero(self):
+        tri = Triangulo()
+        tri.a = 4
+        tri.b = 4
+        tri.c = 4
+        self.assertTrue(tri.ehEquilatero())
 
-    Triangulo tri;
-    
-    tri.a = 3;
-    tri.b = 3;
-    tri.c = 5;
-    assert(tri.ehIsosceles());
-    
-    tri.a = 3;
-    tri.b = 5;
-    tri.c = 3;
-    assert(tri.ehIsosceles());
-    
-    tri.a = 5;
-    tri.b = 3;
-    tri.c = 3;
-    assert(tri.ehIsosceles());
-}
+    def testEhIsosceles(self):
+        tri = Triangulo()
 
-void testEhEquilatero() {
+        tri.a = 3
+        tri.b = 3
+        tri.c = 5
+        self.assertTrue(tri.ehIsosceles())
 
-    Triangulo tri;
-    tri.a = 4;
-    tri.b = 4;
-    tri.c = 4;
-    assert(tri.ehEquilatero());
-}
-// fim dos testes.
+        tri.a = 3
+        tri.b = 5
+        tri.c = 3
+        self.assertTrue(tri.ehIsosceles())
 
-//
-// Início do programa
-//
-int main() {
-    testEhTriangulo();
-    testEhEscaleno();
-    testEhIsosceles();
-    testEhEquilatero();
-    return 0;
-}
+        tri.a = 5
+        tri.b = 3
+        tri.c = 3
+        self.assertTrue(tri.ehIsosceles())
+
+    def testEhEscaleno(self):
+        tri = Triangulo()
+        tri.a = 3
+        tri.b = 4
+        tri.c = 5
+        self.assertTrue(tri.ehEscaleno())
+
+if __name__ == '__main__':
+    unittest.main()
 ```
+
+
+
 
 Próximo exemplo
 ---
 
-- []()
+Este é o último exercício sobre TDD da série "básico".

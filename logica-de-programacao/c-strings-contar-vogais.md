@@ -18,6 +18,8 @@ Faça um programa que descubra a quantidade de vogais de uma determinada string.
 Linguagem C
 ---
 
+Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
+
 ```c
 #include <stdio.h>
 #include <assert.h>
@@ -45,6 +47,12 @@ int main() {
 
 
 ### Solução na linguagem C
+
+Em C temos que perguntar se determinado caracter está contido dentro do vetor pesquisado. Fazemos isso, com um aninhamento
+de laços de repetição, ou melhor, com um laço dentro de outro. 
+
+O código de solução (mostrado abaixo) se parece em muito com o código do problema de 
+[vetor com valores repetidos](/logica-de-programacao/c-vetor-valores-repetidos/).
 
 ```c
 #include <stdio.h>
@@ -83,3 +91,81 @@ int main() {
 
 <hr>
 Fonte: [http://www.ime.usp.br/~pf/algoritmos/aulas/string.html](http://www.ime.usp.br/~pf/algoritmos/aulas/string.html "link-externo")
+
+
+
+
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+# Função que descobre a quantidade de vogais
+# de uma determinada string
+def contarVogais():
+    pass
+
+#
+# Teste
+#
+palavra = "abecedario";
+assert 6 == contarVogais(palavra)
+```
+
+
+### Solução na linguagem Python
+
+Brincando no terminal, podemos fazer uso do operador `in` e confirmamos o seguinte...
+
+```python
+>>> vogais = "aeiou"
+>>> "a" in vogais
+True
+>>> "b" in vogais
+False
+>>> "c" in vogais
+False
+```
+
+E a solução não demora para chegar...
+
+```python
+# -*- coding: utf-8 -*-
+
+# Função que descobre a quantidade de vogais
+# de uma determinada string
+def contarVogais(palavra):
+    vogais = "aeiou"
+    totalVogal = 0
+
+    for letra in palavra:
+        if letra in vogais:
+            totalVogal += 1
+
+    return totalVogal
+
+#
+# Teste
+#
+palavra = "abecedario";
+assert 6 == contarVogais(palavra)
+```
+
+### Estendendo a solução
+
+Nessa mesma linha de raciocínio, podemos estender nossa solução para contar, além da vogais, as consoantes.
+
+A solução seria algo algo parecido com isto....
+
+```python
+if letra in vogais:
+  print "Vogal"
+elif letra.isalpha():
+  print "Consoante"
+else:
+  print "Não é uma letra"
+```

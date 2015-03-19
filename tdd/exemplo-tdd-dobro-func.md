@@ -7,7 +7,7 @@ menu:        tdd-exemplos-simples
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Este é o segundo exercício de TDD, seria bom se você já tivesse lido o exemplo anterior. Ele é uma continuação do primeiro.
+Este é o segundo exercício de TDD, seria bom se você já tivesse lido o exemplo anterior.
 
 Neste exercício iremos desenvolver uma função para calcular o dobro de um número qualquer. 
 
@@ -33,7 +33,7 @@ falharem, então seu código funciona.
 Teste unitários nos dá uma segurança em relação ao código, concorda?
 
 Agora sim, se olhar para o código, verá que ele não faz nada de mais, é pouco útil. O próximo passo seria arrastar a
-parte lógica uma função. Uma função nada mais é que "código para depois".
+parte lógica para dentro de uma função. Uma função nada mais é que "código para depois".
 
 Vamos alterar o código! Não, não, não... não devemos alterar o código se não tivermos um teste falhando.
 
@@ -114,9 +114,14 @@ assert 10 == dobro(5)
 
 O que aprendemos com o TDD?
 
-1. Que podemos, quando nos sentirmos inseguros, dar passos pequeninos em direção ao resultado esperado.
+1. Não é preciso pensar tanto na codificação, mas sim trabalhar em um processo de __tentativa e erro__.
 
-2. Não é preciso pensar tanto na codificação, mas sim trabalhar em um processo de __tentativa e erro__.
+2. Que podemos, quando nos sentirmos inseguros, dar passos pequeninos em direção ao resultado esperado.
+
+3. Não mexa no código sem antes ter um teste falhando (ele é seu guia).
+
+4. Um teste falhando é sinal de progresso.
+
 
 
 

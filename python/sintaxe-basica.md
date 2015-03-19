@@ -585,30 +585,7 @@ print f(6)
 OOP - Programação Orientada a Objetos
 ---
 
-Uma classe consiste da palavra chave `class` seguida de seu nome e da classe herdada entre parênteses.
-
-A palavra `pass` serve para criarmos um classe vazia.
-
-Abaixo, criamos a classe vazia `Foo` que herda de `object`
-
-```python
-class Foo(object):
-    pass
-```
-
-Abaixo, criamos a classe `Triangle` com um método construtor `__init__`
-
-```python
-class Triangle(object):
-    def __init__(self, angle1, angle2, angle3):
-        self.angle1 = angle1
-        self.angle2 = angle2
-        self.angle3 = angle3
-```
-
-Todo método deve aceitar como parâmetro a palavra `self`, que se refere ao próprio objeto.
-
-Abaixo, criamos alguns métodos para nossa classe `Triangle`.
+Abaixo vemos um exemplo de classe em Python.
 
 ```python
 class Triangle(object):
@@ -618,48 +595,27 @@ class Triangle(object):
         self.angle2 = angle2
         self.angle3 = angle3
 
-    def soma_triangulo(self):
+    def sum_triangle(self):
         return self.angle1 + self.angle2 + self.angle3
 
     def check_angles(self):
-        if(self.soma_triangulo() == 180):
+        if(self.triangle() == 180):
             return True
         else:
             return False
 ```
 
-
-### Instanciando
-
-Abaixo vemos um exemplo simples de como utilizar (instanciar) uma classe em Python.
+Abaixo vemos um exemplo simples de como __instanciar__ uma classe em Python.
 
 ```python
-class Animal(object):
-    def __init__(self, name):
-        self.name = name
-
-zebra = Animal("Jeffrey")
-print zebra.name
+figure = Triangle(30, 40, 50)
 ```
 
-
-### Herança
-
-Um exemplo simples.
-
-```python
-class Shape(object):
-    def __init__(self, number_of_sides):
-        self.number_of_sides = number_of_sides
-
-class Triangle(Shape):
-    def __init__(self, side1, side2, side3):
-       self.side1 = side1
-       self.side2 = side2
-       self.side3 = side3
-```
+Leia mais sobre [Programação Orientada a Objetos](../programacao-orientada-objetos/ "Programação Orientada a Objetos em Python").
 
 
+
+<hr>
 ### Fontes
 
 - [Python: apresentando a sintaxe (Luciano Ramalho)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf "link-externo")

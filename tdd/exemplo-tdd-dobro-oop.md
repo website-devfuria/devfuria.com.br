@@ -7,12 +7,11 @@ menu:        tdd-exemplos-simples
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Este primeiro exercício é um quebra gelo, o objetivo é muito simples (). O objetivo deste artigo é
-dar o primeiro passo em relação as Classes (programação orientada a objetos) na __linguagem C++__ e também demonstrar 
-como faremos os testes utilizando a instrução `assert()`.
+Este exercício é um quebra gelo, o objetivo é muito simples (). O objetivo deste artigo é dar o primeiro passo em 
+relação a Programação Orientada a Objetos.
 
-Este primeiro exercício é um quebra gelo, continuamos no mesmo problema: o dobro de um número qualquer. Mas agora 
-utilizaremos programação orientada a objetos e também um substituiremos o `assert` por um framework de testes. 
+Continuamos com o mesmo problema visto nos artigos anteriores: o dobro de um número qualquer. Mas agora utilizaremos 
+Programação Orientada a Objetos e também um substituiremos o `assert` por um framework de testes. 
 
 Sua tarefa é fazer uma classe denominada `Calc` com um método que retorne o dobro de um número.
 
@@ -89,10 +88,16 @@ Teste falhando = Progresso! Agora sim podemos codificar o mínimo para o teste p
 # -*- coding: utf-8 -*-
 import unittest
 
+#
+# Código limpo e funcionando
+#
 class Calc:
     def dobro(self, num):
         return num * 2
 
+#
+# Testes
+#
 class MyCalcTest(unittest.TestCase):
     def testDobro(self):
         obj = Calc()
@@ -108,4 +113,4 @@ if __name__ == '__main__':
 Próximo exemplo de TDD
 ---
 
-- [Simples exemplo de TDD - Área quadrada e área cúbica](/tdd/exemplo-tdd-area-quadra-cubo/)
+- [Simples exemplo de TDD - Juros simples](/tdd/exemplo-tdd-juros-simples/)

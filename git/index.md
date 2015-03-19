@@ -41,22 +41,22 @@ Após estes passos talvez você queria ter em mãos um [resumo dos principais co
 
 
 <div class="list-group">
-    <a href="/git/colaborando-no-github/" class="list-group-item">Colaborando no Git Hub</a>
-    <a href="/git/os-3-estados/" class="list-group-item">Os 3 estados - Working Directory, Index e HEAD</a>
     <a href="/git/dicas-configuracao/" class="list-group-item">Dicas de configuração do Git</a>
     <a href="/git/netrc-nao-pedir-senha/" class="list-group-item">Para não ter que ficar redigitando a senha</a>
+    <a href="/git/colaborando-no-github/" class="list-group-item">Colaborando no Git Hub (em breve)</a>
+    <a href="/git/os-3-estados/" class="list-group-item">Os 3 estados - Working Directory, Index e HEAD (em breve)</a>
 </div> 
 
 
 ### Artigos de referência
 
 <div class="list-group">
-    <a href="/git/git-clone/" class="list-group-item">clone</a>
-    <a href="/git/git-diff/" class="list-group-item">diff</a>
-    <a href="/git/git-merge/" class="list-group-item">merge</a>
-    <a href="/git/git-reset/" class="list-group-item">reset</a>
-    <a href="/git/git-rm/" class="list-group-item">rm</a>
-    <a href="/git/git-tags/" class="list-group-item">tags</a>
+    <a href="/git/git-clone/" class="list-group-item">clone (em breve)</a>
+    <a href="/git/git-diff/" class="list-group-item">diff (em breve)</a>
+    <a href="/git/git-merge/" class="list-group-item">merge (em breve)</a>
+    <a href="/git/git-reset/" class="list-group-item">reset (em breve)</a>
+    <a href="/git/git-rm/" class="list-group-item">rm (em breve)</a>
+    <a href="/git/git-tags/" class="list-group-item">tags (em breve)</a>
 </div> 
 
 
