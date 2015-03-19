@@ -37,7 +37,7 @@ Instalando
 Procure no site oficial a versão deseja do Python, escolha aqui sua versão 
 [https://www.python.org/ftp/python/](https://www.python.org/ftp/python/ "link-externo")
 
-Neste exemplo utilizarei a versão 3.4.2.
+Neste exemplo utilizarei a versão 3.4.2, __nos comandos abaixo troque [`3.4.2`] pela versão que você está instalando__.
 
 Agora, vamos até a pasta `/opt`.
 
@@ -45,7 +45,7 @@ Agora, vamos até a pasta `/opt`.
 
 Baixe os fontes.
 
-	wget https://www.python.org/ftp/python/3.4.2/Python-X.tar.xz
+	wget https://www.python.org/ftp/python/3.4.2/Python-3.4.2.tar.xz
 
 Descompacte.
 
