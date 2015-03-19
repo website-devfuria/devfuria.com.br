@@ -29,7 +29,7 @@ Para utilizarmos um vetor como se fosse um string, seguimos o seguinte exemplo..
 Para encontrar a solução você poderá percorre esse vetor e checar se chegou ao fim da "string" comparando o valor atual
 do vetor com zero dessa forma `ola[i] != 0`.
 
-Espere ái, eu já estou lhe dando o resultado do problema! Não, não estou. É que a solução deste problema está mais 
+Espere aí, eu já estou lhe dando o resultado do problema! Não, não estou. É que a solução deste problema está mais 
 relacionada com o conhecimento que temos (ou não) da linguagem do que com a lógica.
 
 
@@ -118,7 +118,9 @@ Em Python temos a função `len()` que aceita como parâmetro uma string e retor
 Em outras palavras, se o objetivo é saber o tamanho da string, não precisamos gastar nosso raciocínio.
 
 Puxa vida, como a linguagem C é horrível e Python é maravilhosa... não pare de bobagem, não é nada disso e nem é esse a
-proposta deste breve curso de lógica. A idéia é percebermos as diferenças entre as linguagens, mas sem preconceitos.
+proposta deste breve curso de lógica. A idéia é percebermos as diferenças entre as linguagens, mas sem preconceitos tolos.
+Outra coisa, na linguagem C, se incluirmos a biblioteca `string.h` teremos uma vasta quantidade de funções prontas para
+trabalharmos com strings, inclusive uma para determinar o tamanho de uma string `strlen()`.
 
 ```python
 s = "palavra"
