@@ -346,6 +346,7 @@ n
 """
 ```
 
+Leia mais sobre [strings](../strings/ "Python - Strings").
 
 
 Controle de fluxo (condicionais)
