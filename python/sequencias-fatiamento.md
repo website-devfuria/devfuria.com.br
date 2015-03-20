@@ -218,42 +218,6 @@ E há ainda o operador `[a:b:n]` que representa de `n` em `n` itens.
 </table>
 
 
-Algumas funções com strings
-
-
-
-<table>
-    <thead>
-        <tr>
-            <th>Operadores</th>
-            <th>Descrição</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>chr(n)</code></td>
-            <td>retorna uma string com um caractere de 8-bits cujo código é <code>n</code></td>
-        </tr>
-        <tr>
-            <td><code>unichr(n)</code></td>
-            <td>retorna uma string com um caractere Unicode cujo código é <code>n</code></td>
-        </tr>
-        <tr>
-            <td><code>ord(c)</code></td>
-            <td>retorna o código numérico do caractere <code>c</code> (pode ser Unicode)</td>
-        </tr>
-        <tr>
-            <td><code>repr(x)</code></td>
-            <td>conversão de objeto para sua representação explícita em Python</td>
-        </tr>
-        <tr>
-            <td><code>len(s)</code></td>
-            <td>número de bytes da string <code>s</code></td>
-        </tr>
-    </tbody>
-</table>
-
-
 <hr>
 Fonte:
 
