@@ -70,3 +70,54 @@ int main() {
     return (0);
 }
 ```
+
+
+
+Linguagem Python
+---
+
+E aí, será que em Ptyhon existe alguma função mágica para invertermos uma string?
+
+Em quanto você procura na Internet a solução (rssss) segue aqui o esqueleto para você praticar lógica...
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Seu código
+#
+def reverseString(text):
+    pass
+
+#
+# Seu teste
+#
+palavra = "animal"
+assert "lamina" == reverseString(palavra)
+```
+
+
+
+### Solução na linguagem Python
+
+
+```python
+def reverseString(text):
+    l = list(text)
+    l.reverse()
+    return ''.join(l)
+```
+
+Se você pesquisar na Internet verá soluções variantes como as propostas a baixo.
+
+```python
+def reverseString(text):
+    return ''.join(reversed(text))
+```
+
+```python
+def reverseString(text):
+    return text[::-1]
+```
+
+Que tal pesquisar outras soluções?

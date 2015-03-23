@@ -10,7 +10,6 @@ menu:        logica-exerc-nivel-04s
 Exercício de lógica de programação
 ---
 
-
 Faça um programa para concatenar duas strings.
 
 
@@ -18,8 +17,7 @@ Faça um programa para concatenar duas strings.
 Linguagem C
 ---
 
-
-Começamos pelo teste...
+Para facilitar a escrita dos testes vamos incluir a biblioteca `string.h`.
 
 ```c
 #include<stdio.h>
@@ -97,6 +95,8 @@ void concatenar(char s1[], char s2[]) {
 
 ### Quarta solução
 
+Esta solução utiliza-se de ponteiros.
+
 ```c
 void concatenar(char *original, char *add) {
     while (*original)
@@ -114,8 +114,26 @@ void concatenar(char *original, char *add) {
 
 ### Quinta solução
 
+Esta solução é ótima pois, ela aproveita que incluímos a biblioteca `string.h` e utiliza uma função pronta para resolver
+este problema.
+
 ```c
 void concatenar(char str1[], char str2[]) {
     strcat(str1, str2);
 }
+```
+
+
+
+
+Linguagem Python
+---
+
+Como já era de se esperar, em toda linguagem de alto nível, será extremamente simples concatenar duas strings.
+
+Executando Python no terminal...
+
+```python
+>>> "Hello" + "world"
+'Helloworld'
 ```

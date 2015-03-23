@@ -10,20 +10,25 @@ menu:        logica-exerc-nivel-04s
 Exercício de lógica de programação
 ---
 
-
 Faça um programa para comparar se duas strings são iguais.
+
+__Comentários:__ este é mais um exercício para exercitarmos laços de repetição. Esta série referem-se as strings pois,
+sabemos que em C as strings se assemelham a um vetor (`char string[]`).
 
 
 
 Linguagem C
 ---
 
+Na linguagem C, como dito, sabemos que as strings em questão são 2 vetores e que o caminho mais provável seja comparar
+os valores de ambos os vetores um a um. Utilize o código abaixo para encontrar a sua solução.
+
 ```c
 #include <stdio.h>
 #include <assert.h>
 
 //
-// Fun.ão que compara se duas string são iguais
+// Função que compara se duas string são iguais
 //
 int compararStrings(char str1[], char str2[]) {
 
@@ -48,11 +53,8 @@ int main() {
 ### Solução na linguagem C
 
 ```c
-#include <stdio.h>
-#include <assert.h>
-
 //
-// Fun.ão que compara se duas string são iguais
+// Função que compara se duas string são iguais
 //
 int compararStrings(char str1[], char str2[]) {
     int i = 0;
@@ -66,23 +68,10 @@ int compararStrings(char str1[], char str2[]) {
     
     return 1;
 }
-
-//
-// Testes
-//
-int main() {
-
-    char ola[]  = "ola";
-    char ola2[] = "ola";
-    assert(1 == compararStrings(ola, ola2));
-
-    return 0;
-}
 ```
 
 
-Desafio
----
+### Desafio na linguagem C
 
 A função abaixo também funciona, porém a implementação dela é bem diferente.
 
@@ -102,3 +91,66 @@ O desafio é entender o que está acontecendo.
     }
 
 
+
+
+
+Linguagem Python
+---
+
+Em Python, no terminal, vemos que nosso objetivo (compara duas strings) é facilmente alcançado.
+
+```python
+>>> "palavra" == "palavra"
+True
+```
+
+Como seria a solução se tivéssemos que construir um laço de repetição?
+
+Vamos praticar...
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Seu código
+#
+def compararString(a, b):
+    pass
+
+
+#
+# Seu teste
+#
+cor1 = "laranja"
+cor2 = "amarelo"
+assert not compararString(cor1, cor2)
+assert compararString(cor1, cor1)
+```
+
+
+### Solução na linguagem Python
+
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Seu código
+#
+def compararString(a, b):
+    i = 0
+    while i < len(a):
+        if a[i] != b[i]:
+            return False
+            break
+        i += 1
+    return True
+
+#
+# Seu teste
+#
+cor1 = "laranja"
+cor2 = "amarelo"
+assert not compararString(cor1, cor2)
+assert compararString(cor1, cor1)
+```
