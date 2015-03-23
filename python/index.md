@@ -63,6 +63,7 @@ Artigos diversos
 <div class="list-group">
     <a href="/python/programacao-orientada-objetos/" class="list-group-item">Programação Orientada a Objetos em Python</a>
     <a href="/python/tdd-primeiros-passos-com-testes-unitarios/" class="list-group-item">Primeiros passos com teste unitários em Python</a>
+    <a href="/python/codificacao-de-caracteres/" class="list-group-item">Codificando caracteres no início do script Python </a>
     <a href="/python/virtualenv/" class="list-group-item">Virtualenv</a>
     <a href="/python/sys-argv/" class="list-group-item">sys-argv</a>
 </div>
