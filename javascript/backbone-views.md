@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone - Views
-description: Artigo/tutorial para aprender como as Views do rframeworkd Backbone (JavaScript) funcionam.
+description: Artigo/tutorial para aprender como as Views do framework Backbone (JavaScript) funcionam.
 menu:        javascript-backbone
 ---
 
@@ -29,7 +29,7 @@ var ViewExemplo = Backbone.View.extend({
 });
 ```
 
-Agroa, precisamos definir os métodos do objeto View. Vamos definir, por exemplo, o método `initialize()` que sempre é
+Agora, precisamos definir os métodos do objeto View. Vamos definir, por exemplo, o método `initialize()` que sempre é
 executado ao instanciarmos a view.
 
 ```javascript

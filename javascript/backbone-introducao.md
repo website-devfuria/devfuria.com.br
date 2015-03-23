@@ -7,8 +7,8 @@ menu:        javascript-backbone
 
 [Backbone](http://backbonejs.org/ "link-externo") é um framework MVC para Javascript.
 
-O Backbone faz uso intensivo da biblioteca [underscorejs](http://underscorejs.org/ "link-externo"), sua maior dependência.
-O framework também precisa da biliboteca jQuery, sua menor dependência. Digo isso pois você poderá optar pela Zepto, ao invés da 
+O Backbone faz uso intensivo da biblioteca [Underscorejs](http://underscorejs.org/ "link-externo"), sua maior dependência.
+O framework também precisa da biblioteca jQuery, sua menor dependência. Digo isso pois você poderá optar pela Zepto, ao invés da 
 jQuery.
 
 Aconselho o estudo do Backbone para quem já possui uma certa experiência, você se sentirá mais tranquilo se...
@@ -16,7 +16,7 @@ Aconselho o estudo do Backbone para quem já possui uma certa experiência, voc�
 - Conhecer o paradigma MVC (Model, View e Controller)
 - Conhecer a jQuery
 - Ter prática com os consoles de navegadores (Firefox ou Chrome)
-
+- Estar familiarizado com o conceito RESTfull (usaremos nos models)
 
 
 ### Como eu preparei este (mini) curso do Backbone ?
@@ -25,11 +25,23 @@ A documentação do Backbone começa falando dos modelos (models), aí tudo quan
 também começa falando dos models. Eu resolvi fazer diferente, como as coisas acontecem primeiro nas Views e também acho 
 mais prático começar por elas, então eu preparei este tutorial iniciando-se pelas Views.
 
+A ordem didática desta sequência de tutoriais é mais ou menos como segue:
+
+- Views
+- Views e templates
+- Views e eventos
+- Models
+- Models e eventos
+- Collections
+- Collections e eventos
+- Persistindo os dados (requisições AJAX através da API REST)
+- Sync (requisições AJAX através da API definida pelo usuário)
+- Routers
 
 
 ### Setup inicial
 
-Abaixo temos um arquivo HTML que nos servirá como boirleplate (esqueleto, matriz) para testar o framework Backbone.
+Abaixo temos um arquivo HTML que nos servirá como esqueleto (matriz) para testar o framework Backbone.
 
 ```html
 <!DOCTYPE HTML>
@@ -40,19 +52,29 @@ Abaixo temos um arquivo HTML que nos servirá como boirleplate (esqueleto, matri
   </head>
   <body>
 
+
+
+
     <!-- 1) seu HTML "normal" --> 
+
+
+
 
     <!-- 2) as dependências --> 
     <script src="js/jQuery.js"></script>
     <script src="js/underscore.js"></script>
     <script src="js/backbone.js"></script>
 
+
     <!-- 3) seu script --> 
     <script type="text/javascript">
-    //
-    // seu código
-    //
+
+        //
+        // seu código
+        //
+
     </script>
+
 
   </body>
 </html>
@@ -66,35 +88,22 @@ Mas se quiser pular esta etapa, afinal estamos em uma fase experimental, você p
 o exemplo abaixo.
 
 ```html
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-  </head>
-  <body>
-
-    <!-- 1) seu HTML "normal" --> 
-
+...
+...
+...
     <!-- 2) as dependências --> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
-
-    <!-- 3) seu script --> 
-    <script type="text/javascript">
-    //
-    // seu código
-    //
-    </script>
-
-  </body>
-</html>
+...
+...
+...
 ```
 
 
-Hello World
----
+### Hello World
+
+Não sei isso é bem um "Hello World!", mas serve para você realizar um teste inicial.
 
 ```html
 <html>
@@ -106,56 +115,82 @@ Hello World
     <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
     
     <script>
-    $(document).ready(function() {
-        console.log(Backbone);
-    });
+
+    console.log(Backbone);
+
     </script>
 
   </body>
 </html>
 ```
 
-Não sei isso é bem um "Hello World!", mas serve para você realizar um teste inicial. Além disso, repare que utilizamos 
-o evento `ready` do documento e fizemos isso com ajuda da jQuery. Me refiro a este trecho de código:
+
+
+### O que você verá daqui para frente - preview
+
+Ainda na onda do "Hello World", eu queria lhe mostrar um prévia do que está por vir e de como é a estrutura básica de 
+um pequeno exemplo escrito em Backbone (JavaScript).
+
+Começamos definindo um modelo (model) e, em seguida, definimos uma coleção (collection). Após isso, definimos a visão 
+(view), é ela quem fica responsável por iniciar sua aplicação. Não sei já podemos considerar uma aplicação, pois veremos
+pequenos trechos de códigos.
 
 ```javascript
-$(document).ready(function() {
-    //
-    // seu código
-    //
+//
+// Model
+//
+Friend = Backbone.Model.extend({
+    ...
+    ...
+    ...
 });
+
+//
+// Collection
+//
+Friends = Backbone.Collection.extend({
+    ...
+    ...
+    ...
+});
+
+//
+// View
+//
+AppView = Backbone.View.extend({
+    ...
+    ...
+    ...
+});
+
+//
+// Onde sua aplicação Backbone é, de fato, inicializada.
+//
+var appview = new AppView;
 ```
 
-A idéia é esperar que todo elemento [DOM](/javascript/dom/) seja carregado antes de processar o JavaScript, apesar que já estamos lidando
-com isso colocando o nosso script bem ao final do documento, veja um resumo...
+Os elementos serão conectados, uns aos outros, através dos eventos. Models e Collections possuem eventos que ao serem
+disparados podem executar funções de callback que, por sua vez, podem fazer algo interessante como, por exemplo, 
+renderizar uma view.
 
-```html
-<html>
-  <head></head>
-  <body>
+As views também possuem eventos, mas eles referem-se aos "listeners" que habitualmente anexamos aos elementos HTML e
+que, diga-se de passagem, já devem fazer parte de seu dia a dia como programador JavaScript.
 
-    <!-- 1) seu HTML "normal" --> 
-
-    <!-- 2) as dependências   --> 
-
-    <!-- 3) seu script        --> 
-
-  </body>
-</html>
-```
+Outra particularidade das views são os __templates__. NEste caso você pode fazer uma leitura atenta na documentação do
+Underscore, isso mesmo, Underscore!. Podemos dizer que o Backbone extende os templates do Underscore e boa parte do
+você precisa saber sobre eles você encontrará na documentação do Underscore.
 
 
-Próximo artigo
---
-
-- [Backbone - Views](/javascript/backbone-views/)
-
-
-
-Site oficial
----
+### Site oficial
 
 Como dito, o Backbone a maior dependência é a biblioteca Underscore, então sua documentação também deve ser considerada.
 
 - [backbonejs.org](http://backbonejs.org/ "link-externo")
-- [nderscorejs.org/](http://underscorejs.org/ "link-externo")
+- [underscorejs.org/](http://underscorejs.org/ "link-externo")
+
+
+
+Próximo artigo
+---
+
+- [Backbone - Views](/javascript/backbone-views/)

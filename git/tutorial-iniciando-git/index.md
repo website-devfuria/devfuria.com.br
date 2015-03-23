@@ -64,7 +64,7 @@ Você deve criar um arquivo qualquer, utilize seu editor de texto ou então util
 
 O comando touch é um utilitário do Linux.
 
-Antes de comitar, devemos adicionar, a sequencia é sempre esta:
+Antes de comitar, devemos adicionar, a sequência é sempre esta:
 
 - Adicionar (`add`)
 - Comitar (`commit -m "mensagem"`)

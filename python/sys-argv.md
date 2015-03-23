@@ -1,8 +1,7 @@
 ---
-layout:      grid93-article
+layout:      grid12-article
 title:       Python - sys.argv
-description: 
-menu:        python-artigos
+description: Neste artigo veremos o funcionamento de sys.argv na linguagem Python
 ---
 
 `sys.argv` é a [lista](/python/listas/) de argumentos passado para um script Python.
@@ -18,11 +17,12 @@ menu:        python-artigos
 Crie um arquivo chamado `foo.py` com o seguinte conteúdo.
 
 ```python
+# -*- coding: utf-8 -*-
+
 import sys
 
-for arg in sys.argv: 1
-    print arg
-
+for arg in sys.argv:
+    print(arg)
 ```
 
 Executando no terminal `python foo.py arg1 arg2 arg3`, o resultado será:

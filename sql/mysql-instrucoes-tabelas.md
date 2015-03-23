@@ -41,6 +41,6 @@ Truncar a tabela significa limpar todos os dados da tabela e zerar o os dados de
 
 Por enquanto, vamos utilizar quando quisermos apagar todos os dados.
 
-Continuando a sequencia, agora aprenderemos como efetuar as [operações básicas (crud)](/sql/mysql-crud) `create`, `read`,
+Continuando a sequência, agora aprenderemos como efetuar as [operações básicas (crud)](/sql/mysql-crud) `create`, `read`,
 `update` e `delete`.
 

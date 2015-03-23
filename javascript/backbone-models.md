@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone - Models
-description: Aprenda o básico sobre Models no framework Backbone (javascript)
+description: Aprenda o básico sobre Models no framework Backbone para JavaScript, veremos as funções get(), set() e toJSON().
 menu:        javascript-backbone
 ---
 
@@ -10,7 +10,7 @@ No paradigma MVC, os __models__ referem-se ao modelo, aos dados, as regras de ne
 Podemos definir um model como se fosse uma classe (posteriormente será instanciada) dessa forma:
 
 ```javascript
-    var Person = Backbone.Model.extend({ });
+var Person = Backbone.Model.extend({ });
 ```
 
 Ao definir a classe, poderemos utilizar todos os métodos disponíveis no Backbone, por exemplo o método `initialize()`.
@@ -62,7 +62,7 @@ console.log(person.attributes)
 
 ### Método get()
 
-O método `get()` acessa o valor da propriedade. Conforme nosso exemplo, temos...
+O método `get()` acessa o valor da propriedade, conforme nosso exemplo, temos...
 
 ```javascript
 console.log(person.get('name'));

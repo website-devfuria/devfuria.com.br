@@ -2,31 +2,60 @@
 layout:      grid93-article
 title:       "Simples exemplo de TDD - O dobro de um número qualquer (funções)"
 description: Artigo da série que envolve funções, iremos desenvolver uma função para calcular o dobro de um número qualquer.
-menu:        tdd-exemplos-simples-c
+menu:        tdd-exemplos-simples
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Este é o primeiro artigo da série que envolve funções. Iremos desenvolver uma função para calcular o dobro de um número 
-qualquer. Utilizando-se funções, os nossos exemplos começam a fazer mais sentido, pois o teste unitário refere-se a uma 
-unidade (como o nome sugere). Essa unidade é a nossa função.
+Este é o segundo exercício de TDD, seria bom se você já tivesse lido o exemplo anterior.
 
-Podemos criar uma função que aceite um número como parâmetro e retorne o dobro deste número, certo?
+Neste exercício iremos desenvolver uma função para calcular o dobro de um número qualquer. 
 
-    dobro(5)
+Utilizando-se funções, os nossos exemplos começam a fazer mais sentido, pois o teste unitário refere-se a uma unidade 
+(como o nome sugere) e essa unidade é a nossa função.
 
-O retorno da função seria `10`. Já podemos escrever o teste:
+Vamos dar uma olhada no código anterior.
 
-	assert(10 == dobro(5));
+```python
+# Um número arbitrário
+num   = 5
 
-Se compilarmos neste instante, veremos o compilador reclamar que `dobro()` não foi definida.
+# Seu código
+dobro = 2 * num
+
+# Seu teste
+assert 10 == dobro
+```
+
+A primeira pergunta é o código acima funciona? Não, não olhe para o código, execute e veja se o teste falha. Se não
+falharem, então seu código funciona.
+
+Teste unitários nos dá uma segurança em relação ao código, concorda?
+
+Agora sim, se olhar para o código, verá que ele não faz nada de mais, é pouco útil. O próximo passo seria arrastar a
+parte lógica para dentro de uma função. Uma função nada mais é que "código para depois".
+
+Vamos alterar o código! Não, não, não... não devemos alterar o código se não tivermos um teste falhando.
+
+Então vamos reescrever o teste, que tal...
+
+    assert 10 == dobro(num)
+
+Ele vai dar um erro estranho `TypeError: 'int' object is not callable`, é porque estamos atibuindo um valor numérico
+para variável `dobro` e depois estamos evocado-a como uma função. Então vamos comentar a linha de atribuição.
+
+    # Seu código
+    # dobro = 2 * num
+
+
+Se executarmos neste instante, veremos o script reclamar que `dobro()` não foi definida.
 
 Então vamos defini-la. Criamos a função vazia, sem nada, só o corpo dela.
 
-    int dobro(int num) {
-    }
+    def dobro(num):
+        pass
 
-Agora o programa compila... mas não passa no teste.
+Agora o programa não passa no teste. Lembre-se: teste falhando sinal de progresso.
 
 A solução é bem simples, mas vamos aproveitar para entender melhor esse tal de __TDD__?
 
@@ -39,66 +68,64 @@ Então me responda, __qual é o menor passo para ver o teste passar__?
 
 O teste espera um `10`, essa é a resposta.
 
-    int dobro(int num) {
-        return 10;
-    }
+    def dobro(num):
+        return 10
 
-Agora os testes passam, mas precisamos retirar essa redundância (temos dois 10's), então escrevemos:
+Agora os testes passam, mas precisamos retirar essa redundância (temos dois 10's, um no teste e outro no código), 
+então escrevemos:
 
-    int dobro(int num) {
-        return 2 * 5;
-    }
+    def dobro(num):
+        return 10 * 2
 
 Os testes passam? Sim? Ótimo.
 
-Agora o resultado ficou mais que óbvio. Trocaremos o número 5 pela variável `num`.
+Agora o resultado ficou mais que óbvio, trocaremos o número 10 pela variável `num`.
 
-    int dobro(int num) {
-        return 2 * num;
-    }
+    def dobro(num):
+        return num * 2
 
-Execute os testes (compile e rode o programa). Eles passaram? Deveriam ter passado.
+Execute os testes, eles passaram?
 
-
-### O que o TDD nos ensinou ?
-
-1. Que podemos, quando nos sentirmos inseguros, dar passos pequeninos em direção ao resultado esperado.
-
-2. Não é preciso pensar tanto na codificação, mas sim trabalhar em um processo de __tentativa e erro__.
-
-
-### Para finalizar
-
-Acho o teste `assert(10 == dobro(5));` suficiente para expressar o que o código deve fazer.
-
-Mas nada no impede de inserirmos um outro teste, de forma a não restar dúvidas quanto ao devido funcionamento do código.
-
-	assert(10 == dobro(5));
-	assert(12 == dobro(6));
 
 
 ### Código completo
 
-```c
-#include <stdio.h>
-#include <assert.h>
 
-//
-// Função que retorna o dobro de um número qualquer
-//
-int dobro(int num) {
-    return 2 * num;
-}
+```python
+# -*- coding: utf-8 -*-
 
-int main (){
-	assert(10 == dobro(5));
-	assert(12 == dobro(6));
-	return 0;
-}
+#
+# Um número arbitrário
+#
+num   = 5
+
+#
+# Seu código
+#
+def dobro(num):
+    return num * 2
+
+#
+# Seu teste
+#
+assert 10 == dobro(5)
 ```
+
+
+O que aprendemos com o TDD?
+
+1. Não é preciso pensar tanto na codificação, mas sim trabalhar em um processo de __tentativa e erro__.
+
+2. Que podemos, quando nos sentirmos inseguros, dar passos pequeninos em direção ao resultado esperado.
+
+3. Não mexa no código sem antes ter um teste falhando (ele é seu guia).
+
+4. Um teste falhando é sinal de progresso.
+
+
 
 
 Próximo exemplo
 ---
 
-- [Simples exemplo de TDD - Valor positivo ou negativo](/tdd/exemplo-tdd-positivo/)
+- [Simples exemplo de TDD - O dobro de um número qualquer (OOP)](/tdd/exemplo-tdd-dobro-oop/)

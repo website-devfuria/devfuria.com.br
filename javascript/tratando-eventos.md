@@ -16,7 +16,13 @@ Há os mais variados tipos de eventos:
 - etc...
 
 Veja os [eventos](http://www.w3.org/TR/1998/REC-html40-19980424/interact/scripts.html#h-18.2.3 "link-externo")
-que foram especificados na HTML4 (ainda na 4).
+que foram especificados na HTML4 (ainda na 4) e veja também os 
+[eventos](https://developer.mozilla.org/en-US/docs/Web/API/Window#Event_handlers "link-externo") na documentação do Mozilla.
+
+
+
+Inline events
+---
 
 Antigamente, atribuíamos o evento diretamente no elemento HTML como no exemplo abaixo.
 
@@ -40,8 +46,18 @@ e.onclick = function () {
 O HTML não mais precisará da propriedade `onclick=""`.
 
 Notamos o esforço para anexar a função ao evento sem apelar para ajuda do HTML, mas essa ainda não é o ideal, essa forma
-é condizente com a especificação do __DOM 1__. Já a especificação do __DOM 2__ trouxe os __receptores de eventos__, 
-essa é a forma ideal, veja exemplo:
+é condizente com a especificação do __DOM 1__. Já a especificação do __DOM 2__ trouxe os __receptores de eventos__ 
+(Event Listeners), essa é a forma ideal.
+
+
+
+Event Listeners
+---
+
+Os receptores de eventos foram uma revolução especialmente pelo fato tornar possível anexar mais de um evento a um mesmo
+elemento.
+
+Abaixo vemos um exemplo de receptores de evento ou listeners.
 
 ```javascript
 var e = document.getElementById('btn');
@@ -58,7 +74,3 @@ usuário interage com a página e causa o disparo de inúmeros eventos, como cli
 por diante. O JavaScript é especialmente capacitado para programação orientada a eventos por causa do __padrão callback__,
 que permite a seus programas serem executados de maneira __assincrona__, ou, em outras palavras, fora de ordem 
 (Padrões JavaScript, Stefanov, pág 85.).
-
-<!--
-http://eloquentjavascript.net/1st_edition/chapter13.html
--->

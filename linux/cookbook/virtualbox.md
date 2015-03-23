@@ -57,7 +57,7 @@ Fontes
 
 
 Fedora 18
-===
+---
 
 Baixe o rpm e instale.
 
@@ -67,7 +67,7 @@ http://download.virtualbox.org/virtualbox/rpm/fedora/18/x86_64/VirtualBox-4.2-4.
 
 Neste link, procure a versão do seu fedora e baixe o rpm, aí é só executar:
 
-	rpm -ivh VirtualBox.....[restante do arquivo].....rpm
+	rpm -ivh VirtualBox[restante do arquivo].rpm
 
 
 

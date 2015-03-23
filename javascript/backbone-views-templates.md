@@ -1,12 +1,12 @@
 ---
 layout:      grid93-article
 title:       Backbone - Views e Templates
-description: Artigo/tutorial que demonstra o funcionamento dos templates nas views do framework Backbone (JavaScript)
+description: Artigo/tutorial que demonstra o funcionamento dos templates nas views do framework Backbone para JavaScript
 menu:        javascript-backbone
 ---
 
 Este artigo é um segundo passo com as views do framework Backbone. Nele veremos o que são templates, códigos de exemplo 
-e como armazenar temlates no próprio arquivo HTML.
+e como armazenar templates no próprio arquivo HTML.
 
 Podemos dizer que os templates são pequenos trechos de HTML controlados pela View.
 
@@ -122,7 +122,7 @@ Criamos templates mais elaborados utilizando-se a tag `<script>` junto com a pro
     <script type="text/template">
 
 Tal propriedade não será reconhecida pelos navegadores e o HTML inserido entre a tag `<scrip>` não será renderizado, ou
-seja, não será vizível.
+seja, não será visível.
 
 Para exibir o template, ou melhor, renderizar o template, precisaremos de uma tag extra que servirá como um "container".
 
@@ -135,7 +135,7 @@ Vejamos o exemplo abaixo, o template é denominado `formulario-template` e será
 
         <!-- Template -->
         <script type="text/template" id="formulario-template">
-          <label>Search</label>
+          <label>Pesquisar</label>
           <input type="text" id="txtTermo" />
           <input type="button" id="btnBuscar" value="Buscar" />
         </script>
@@ -147,15 +147,15 @@ Vejamos o exemplo abaixo, o template é denominado `formulario-template` e será
 
 O código para recuperar elemento `script` utiliza-se da função `.html()` da biblioteca jQuery.
 
-    $("#search-template").html()
+    $("#formulario-template").html()
 
-Passamos o resultado da função para o método `_.template()` da underscore e o resultado deste, por sua vez, poderá ser 
+Passamos o resultado da função para o método `_.template()` da Underscore e o resultado deste, por sua vez, poderá ser 
 passado para `this.$el.html()`;
 
-    _.template( $("#search-template").html(), {} )
+    _.template( $("#formulario-template").html(), {} )
 
 ```javascript
-var SearchView = Backbone.View.extend({
+var PesquisaView = Backbone.View.extend({
     // Este é o elemento que servirá de container
     // para exibirmos o template
     el: $("#formulario-container"),
@@ -172,7 +172,7 @@ var SearchView = Backbone.View.extend({
         this.$el.html( this.template );
     }
 });
-var search_view = new SearchView();
+var pesquisa_view = new PesquisaView();
 ```
 
 

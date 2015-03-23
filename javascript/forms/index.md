@@ -10,7 +10,3 @@ Aprenda a trabalhar com cada controle de um formulário web.
 
 {% include /menus/javascript-forms.html %}
 
-<hr/>
-Fonte
-
-- [Mozzila - JavaScript](https://developer.mozilla.org/en-US/learn/javascript "link-externo")

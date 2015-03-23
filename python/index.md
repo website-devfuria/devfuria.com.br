@@ -22,20 +22,54 @@ Conheça o básico da sintaxe de Python através deste artigo [O básico da sint
 
 {% include menus/python-artigos.html %}
 
-Aconselho também a iniciar pelo Python através do [Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
 
-
-
-Lista de exercícios da Google (Basic Python Exercises)
+Lógica de programação
 ---
 
-O [Google](https://developers.google.com/edu/python/exercises/basic "link-externo") mantém um breve tutorial e alguns
-exercícios sobre Python, eu apenas traduzi os enunciados.
+Após ter visto a sintaxe básica de Python, talvez você queria colocar a mão na massa e realizar alguns exercícios de 
+lógica de programação. Eu preparei a seção __Lógica de programação__ com exercícios nas linguagens C, C++ e Python. 
+Isso é muito bacana, pois se você acabou de sair da faculdade, deve estar familiarizado com a sintaxe de C e irá se 
+sentir muito à vontade. Como eu resolvo os exercícios com Python você pode, além de aprender Python, fazer um comparativo 
+entre as linguagens. O nível dos exercícios começam com "estupidamente fácil" e vai evoluindo evoluindo gradativamente.
 
-O legal dos exercícios é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código 
-deveria funcionar e implementa as funções até os testes passarem.
+Mas não é só isso, tem mais! Além de você ver o exercício de lógica resolvido em 2 linguagens (Pythone e C) também aplico
+o conceito e prática de testes unitários, ou seja, você irá aprender lógica de programação e testar seu programa de forma
+profissional, nada de ficar executando o programa, inserindo dados e ver se deu certo ou não, nada disso. Aprenda a 
+programar desde início com testes unitários.
+
+Vá até a seção de [lógica de programação](/logica-de-programacao/) e pratique os exercícios.
+
+Aconselho também a experimentar o Python através do [Codeacademy - Python](http://www.codecademy.com/pt-BR/tracks/python-pt-BR "link-externo")
+
+
+
+Basic Python Exercises
+---
+
+Após essa maratona de exercícios, eu sugiro que você pratique os exercícios de lógica preparado pelo Google denominado 
+[Basic Python Exercises](https://developers.google.com/edu/python/exercises/basic "link-externo"). O legal dos exercícios 
+é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código deveria funcionar e implementa 
+as funções até os testes passarem. Os exercícios, por serem mais elaborados, são mais próximos da realidade do 
+desenvolvimento de software. Eu apenas traduzi os  enunciados...
 
 {% include menus/python-google.html %}
+
+
+
+
+Artigos diversos
+---
+
+<div class="list-group">
+    <a href="/python/programacao-orientada-objetos/" class="list-group-item">Programação Orientada a Objetos em Python</a>
+    <a href="/python/tdd-primeiros-passos-com-testes-unitarios/" class="list-group-item">Primeiros passos com teste unitários em Python</a>
+    <a href="/python/codificacao-de-caracteres/" class="list-group-item">Codificando caracteres no início do script Python </a>
+    <a href="/python/virtualenv/" class="list-group-item">Virtualenv</a>
+    <a href="/python/sys-argv/" class="list-group-item">Python - sys.argv</a>
+    <a href="/python/os/" class="list-group-item">Python - os</a>
+    <a href="/python/os.path/" class="list-group-item">Python - os.path</a>
+</div>
+
 
 
 
@@ -90,6 +124,21 @@ Livros sobre Python
 
 Leia este belo artigo de Eric Hideki onde o autor indica alguns bons livros (em português) sobre Python
 [Livros de Python, quais são as boas indicações?](http://blog.pycursos.com/livros-de-python-quais-sao-as-boas-indicacoes/#comment-21243 "link-externo")
+
+
+
+
+Além do devfuria.com.br
+---
+
+Recomendo...
+
+- [O tutorial de Python](http://turing.com.br/pydoc/2.7/tutorial/index.html "link-externo")  Um tutorial amigável, passo
+a passo em 6 capítulos, para quem nunca programou aprender usando Python, uma das linguagens mais indicadas para principiantes.
+
+- [Aprenda a Programar](http://turing.com.br/material/appy/ "link-externo") O tutorial de Python oficial, escrito pelo 
+criador da linguagem, Guido van Rossum, traduzido para o português pela comunidade Python brasileira.
+
 
 
 

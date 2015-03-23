@@ -1,8 +1,10 @@
 ---
-layout:      grid12-article
+layout:      grid93-article
 title:       Manipulando o DOM - Document Object Model
 description: Aprenda a manipular o elemento DOM Document Object Model
+menu:        javascript-dom
 ---
+
 
 Este artigo demonstra, de forma simples, como manipular o DOM (Document Object Model).
 

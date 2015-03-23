@@ -48,7 +48,7 @@ haviam muita coisa neles. Depois, fui aprendendo que menor é melhor, o menor co
 saber como elas separam seus próprios commits.
 
 O ciclo se repetiu ao longo daquela manhã, desenvolvia em passos pequenos, adicionava e "comitava" na mesma medida. A 
-sequencia de comandos abaixo...
+sequência de comandos abaixo...
 
     git add .
     git commit -m "mensagem do commit"

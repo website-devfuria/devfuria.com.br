@@ -69,60 +69,51 @@ O script `wordcount.py` possui o seguinte conteúdo.
 # coding: utf-8
 import sys
 
-"""
-Opção '--count'
-
-Imprimir as palavras em ordem alfabética + total de ocorrências, ex:
-
-<word a> <count>
-<word b> <count>
-<word c> <count>
-"""
+# Opção '--count'
+# Imprimir as palavras em ordem alfabética + total de ocorrências, ex:
+# 
+# <word a> <count>
+# <word b> <count>
+# <word c> <count>
 def print_words(filename):
   word_count = word_count_dict(filename)
   #
   # seu código
   # 
 
-"""
-Opção '--topcount'
-Imprimir as palavras em ordem alfabética + total de ocorrências, ex:
 
-<word b> <6>
-<word c> <4>
-<word a> <3>
-
-Utilize a função sorted().
-Imprima somente os 20 primeiros resultados
-"""
+# Opção '--topcount'
+# Imprimir as palavras em ordem alfabética + total de ocorrências, ex:
+# 
+# <word b> <6>
+# <word c> <4>
+# <word a> <3>
+# 
+# Utilize a função sorted().
+# Imprima somente os 20 primeiros resultados
+# 
 def print_top(filename):
   word_count = word_count_dict(filename)
   #
   # seu código
   # 
 
-"""
-Função auxiliar para "print_top()"
 
-Obs: Ela já está definida, não precisa mexer em nada.
-"""
+# Função auxiliar para "print_top()"
+# Obs: Ela já está definida, não precisa mexer em nada.
 def get_count(word_count_tuple):
   return word_count_tuple[1]
 
 
-"""
-Função para ler o conteúdo de determinado arquivo e contar 
-a ocorrência de cada palavra encontrada.
-
-Armazena as palavras em caixa baixa ( string.lower() ).
-
-Deve retornar um dicionário como por exemplo:
-
-word_count[palavra1] = n ocorrências
-word_count[palavra2] = n ocorrências
-word_count[palavra3] = n ocorrências
-etc...
-"""
+# Função para ler o conteúdo de determinado arquivo e contar 
+# a ocorrência de cada palavra encontrada.
+# Armazena as palavras em caixa baixa ( string.lower() ).
+# Deve retornar um dicionário como por exemplo:
+# 
+# word_count[palavra1] = n ocorrências
+# word_count[palavra2] = n ocorrências
+# word_count[palavra3] = n ocorrências
+# etc...
 def word_count_dict(filename):
   word_count = {}  # Mapa de cada palavra contada
   #
@@ -130,7 +121,9 @@ def word_count_dict(filename):
   # 
   return word_count  
 
-
+# 
+#  
+# 
 def main():
   if len(sys.argv) != 3:
     print 'usage: ./wordcount.py {--count | --topcount} file'
@@ -192,7 +185,7 @@ for line in input_file:
 O __terceiro passo__ será implementar `print_top()`. Você precisará ordenar por ordem de ocorrência, utilize a função
 `sorted()` conforme abaixo:
 
-  items = sorted(word_count.items(), key=get_count, reverse=True)
+    items = sorted(word_count.items(), key=get_count, reverse=True)
 
 Leia mais sobre a função [sorted()](https://docs.python.org/3.4/library/functions.html#sorted "link-externo")
 
@@ -201,19 +194,6 @@ A função auxiliar `get__count()` já está definida, não é preciso alterar n
 Veja a solução completa.
 
 ```python
-# coding: utf-8
-import sys
-
-
-"""
-Opção '--count'
-
-Imprimir as palavras em ordem alfabética + total de ocorrências, ex:
-
-<word a> <count>
-<word b> <count>
-<word c> <count>
-"""
 def print_words(filename):
   word_count = word_count_dict(filename)
   # pegamos as chaves de forma ordenada
@@ -223,17 +203,6 @@ def print_words(filename):
     # ...e  imprimimos <word> <count>
     print word, word_count[word]
 
-"""
-Opção '--topcount'
-Imprimir as palavras em ordem alfabética + total de ocorrências, ex:
-
-<word b> <6>
-<word c> <4>
-<word a> <3>
-
-Utilize a função sorted().
-Imprima somente os 20 primeiros resultados
-"""
 def print_top(filename):
   word_count = word_count_dict(filename)
 
@@ -245,28 +214,9 @@ def print_top(filename):
   for item in items[:20]:
     print item[0], item[1]
 
-"""
-Função auxiliar para "print_top()"
-
-Obs: Ela já está definida, não precisa mexer em nada.
-"""
 def get_count(word_count_tuple):
   return word_count_tuple[1]
 
-
-"""
-Função para ler o conteúdo de determinado arquivo e contar 
-a ocorrência de cada palavra encontrada.
-
-Armazena as palavras em caixa baixa ( string.lower() ).
-
-Deve retornar um dicionário como por exemplo:
-
-word_count[palavra1] = n ocorrências
-word_count[palavra2] = n ocorrências
-word_count[palavra3] = n ocorrências
-etc...
-"""
 def word_count_dict(filename):
   word_count = {}  # Mapa de cada palavra contada
   input_file = open(filename, 'r')
@@ -284,24 +234,4 @@ def word_count_dict(filename):
   
   input_file.close()  # Não estritamente necessário, mas é uma boa forma.
   return word_count  
-
-
-def main():
-  if len(sys.argv) != 3:
-    print 'usage: ./wordcount.py {--count | --topcount} file'
-    sys.exit(1)
-
-  option = sys.argv[1]
-  filename = sys.argv[2]
-
-  if option == '--count':
-    print_words(filename)
-  elif option == '--topcount':
-    print_top(filename)
-  else:
-    print 'unknown option: ' + option
-    sys.exit(1)
-
-if __name__ == '__main__':
-  main()
 ```

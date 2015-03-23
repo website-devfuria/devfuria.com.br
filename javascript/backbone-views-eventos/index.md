@@ -1,12 +1,12 @@
 ---
 layout:      grid93-article
 title:       Backbone - Views e Eventos
-description: Artigo que faz parte da série de tutorial sobre o framework Backbone (JavaSCcript) e que demonstra, de forma prática, como trabalhar com eventos nas Views.
+description: Artigo que demonstra, de forma prática, como trabalhar com eventos e views no framework Backbone (JavaSCcript).
 menu:        javascript-backbone
 ---
 
 Este artigo mostra como atribuir funções aos eventos de uma visão (view) em Backbone (framework JavaScript). O artigo
-faz parte de uma série, veja menu a direita para visualizar a sequencia de artigos.
+faz parte de uma série, veja menu a direita para visualizar a sêquencia de artigos.
 
 Obviamente, suas visões terão elementos que visam sofrer algum tipo de evento do usuário. Com Backbone há 2 ou 3 formas
 para atribuírmos os eventos. Mas a primeira forma que você deve aprender é a que utiliza a propriedade `events` das Views.

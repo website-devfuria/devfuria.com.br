@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Nodeschool - exemplo 01 hello word
-description: 
+title:       Nodeschool - hello world
+description: Primeiro exercício (hello world) do Node.js da lista learnyounode da Nodeschool
 menu:        javascript-ns
 ---
 
@@ -43,6 +43,7 @@ console.log("HELLO WORLD");
 
 
 
-### Próximo exercício
+Próximo exercício
+---
 
-- [Baby steps](/javascript/node.js/ns-02-baby-steps/)
+- [Baby steps](/javascript/node.js/nodejs-02-baby-steps/)

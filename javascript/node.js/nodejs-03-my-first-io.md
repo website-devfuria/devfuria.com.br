@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Nodeschool - exemplo 03 My First I/O!
-description: 
+title:       Nodeschool - My First I/O!
+description: Terceiro exercício (My First I/O!) do Node.js da lista learnyounode da Nodeschool
 menu:        javascript-ns
 ---
 
@@ -145,7 +145,3 @@ você terá uma string, exemplo:
 
     fs.readFileSync(process.argv[2], 'utf8').split('\n').length - 1
 
-
-### Próximo exercício
-
-- [My First Async I/O!](/javascript/node.js/ns-02-baby-steps/)

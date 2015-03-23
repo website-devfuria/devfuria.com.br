@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Nodeschool - exemplo 02 baby steps
-description: 
+title:       Nodeschool - baby steps
+description: Segundo exercício (baby steps) do Node.js da lista learnyounode da Nodeschool
 menu:        javascript-ns
 ---
 
@@ -61,6 +61,7 @@ console.log(sum);
 ```
 
 
-### Próximo exercício
+Próximo exercício
+---
 
-- [My First I/O!](/javascript/node.js/ns-02-baby-steps/)
+- [My First I/O!](/javascript/node.js/nodejs-03-my-first-io/)
