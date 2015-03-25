@@ -7,9 +7,31 @@ description:  Este artigo é para quem está começando em Python e ainda não e
 Quem está começando a aprender Python pode ter dificuldade em entender o que significa o trecho 
 `if __name__ == '__main__':`. Este artigo tenta explicar isso da forma mais simples possível.
 
-Existem algumas situações aonde queremos que nosso código seja executado apenas sob condições especiais, é o caso dos 
-módulos principais. Só queremos que nossa função `main()` seja executada se o módulo for o principal. Caso ele tenha 
-sido importado, a aplicação só deverá ser executada se `main()` for chamado explicitamente.
+Veja o exemplo abaixo...
+
+```python
+# -*- iso-8859-1 -*-
+
+"""Módulo principal.
+"""
+
+import strformat
+
+def main():
+    """Função principal da aplicação.
+    """
+    print strformat.frmt_bytes(502356)
+    print strformat.strip_html("<b>Texto</b>")
+
+if __name__ == "__main__":
+    main()
+```
+
+> Existem algumas situações aonde queremos que nosso código seja executado apenas sob condições especiais, é o caso dos 
+> módulos principais. Só queremos que nossa função `main()` seja executada se o módulo for o principal. Caso ele tenha 
+> sido importado, a aplicação só deverá ser executada se `main()` for chamado explicitamente.
+>
+> Fonte Python brasil - Módulos e Pacotes
 
 Confuso? Também acho, então vamos tentar algo mais simples...
 
@@ -94,4 +116,4 @@ if __name__ == '__main__':
 Fonte:
 
 - [Python Help - Por que __name__ == “__main__” ?](https://pythonhelp.wordpress.com/2012/06/15/por-que-__name__-__main__/ "link-externo")
-- [Python brasil - Módulos e Pacotes](http://wiki.python.org.br/ModulosPacotes "link-externo")
+- [Python Brasil - Módulos e Pacotes](http://wiki.python.org.br/ModulosPacotes "link-externo")
