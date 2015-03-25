@@ -12,6 +12,8 @@ A princípio, que está começando com a linguagem Python estará mais preocupad
 alerto para o fato de que é importante saber, talvez em um segundo momento, o conceito de 
 [módulos e pacotes](/python/modulos-pacotes) em Python.
 
+
+
 ### import package
 
 Para importar um módulo utilizamos o `import`.
@@ -105,3 +107,18 @@ Neste momento, esqueça o funcionamento dos scripts, foque sua atenção para a 
     from myapp import app as application
 
 Ela está dizendo "do arquivo `myapp.py` importe a variável `app` com o apelido `application`".
+
+
+
+A tabela de símbolos e a função dir()
+---
+
+Em qualquer um dos casos visto acima podemos lançar mão da função `dir()` para descobrirmos o que exatamente foi 
+importado para o seu script.
+
+A função embutida __dir()__ é usada para se descobrir quais nomes são definidos por um módulo, ela devolve a tabela
+de símbolos (uma lista ordenada de strings).
+
+Uma __tabela de símbolos__ é um dicionário de dados que cada módulo possui, onde são armazenadas todas as variáveis, 
+funções e classes definidas neste módulo.
+
