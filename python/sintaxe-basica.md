@@ -454,6 +454,9 @@ from math import *
 Em geral, a prática do `import *` de um módulo ou pacote é desaprovada, uma vez que muitas vezes dificulta a leitura do 
 código.
 
+Leia mais sobre [imports](../imports/ "Importando módulos no Python (imports)").
+
+
 
 Datas
 ---
