@@ -46,11 +46,11 @@ Aconselho também a experimentar o Python através do [Codeacademy - Python](htt
 Basic Python Exercises
 ---
 
-Após essa maratona de exercícios, eu sugiro que você pratique os exercícios de lógica preparado pelo Google denominado 
+Após essa maratona de exercícios (acima), eu sugiro que você pratique os exercícios de lógica preparado pelo Google denominado 
 [Basic Python Exercises](https://developers.google.com/edu/python/exercises/basic "link-externo"). O legal dos exercícios 
 é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código deveria funcionar e implementa 
 as funções até os testes passarem. Os exercícios, por serem mais elaborados, são mais próximos da realidade do 
-desenvolvimento de software. Eu apenas traduzi os  enunciados...
+desenvolvimento de software, eu apenas traduzi os  enunciados.
 
 {% include menus/python-google.html %}
 
