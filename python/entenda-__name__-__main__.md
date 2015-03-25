@@ -1,13 +1,15 @@
 ---
 layout:      grid12-article
 title:       Entenda o __name__ == "__main__"
-description:  Este artigo é para quem está começando em Python e ainda não entendeu o funcionamento de __name__ == '__main__'
+description: Este artigo é para quem está começando em Python e ainda não entendeu o funcionamento de __name__ == '__main__'
 ---
 
 Quem está começando a aprender Python pode ter dificuldade em entender o que significa o trecho 
-`if __name__ == '__main__':`. Este artigo tenta explicar isso da forma mais simples possível.
+`if __name__ == '__main__':`, este artigo tenta explicar isso da forma mais simples possível. Faço apenas uma observação
+antes de começarmos: facilita o entendimento se você souber o conceito de [/módulos e pacotes](python/modulos-pacotes) 
+na linguagem Python.
 
-Veja o exemplo abaixo...
+Vamos começar com o exemplo abaixo...
 
 ```python
 # -*- iso-8859-1 -*-
@@ -112,8 +114,36 @@ if __name__ == '__main__':
 
 ```
 
-<hr>
-Fonte:
+
+
+Exemplo
+---
+
+Abaixo temos um exemplo do "hello world" do framework [Flask](/python/flask/).
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+
+if __name__ == "__main__":
+    app.run()
+```
+
+O mais importante do script é a variável `app` (segunda linha) que contém a sua aplicação [Flask](/python/flask/).
+
+Se executarmos o script via terminal, a última linha `app.run()` será executada e nossa aplicação será inicializada.
+
+Em outro momento, poderemos importar este script para outros scripts e, neste caso, não queremos que a aplicação seja inicializada
+"automaticamente".
+
+
+
+Fontes
+---
 
 - [Python Help - Por que __name__ == “__main__” ?](https://pythonhelp.wordpress.com/2012/06/15/por-que-__name__-__main__/ "link-externo")
 - [Python Brasil - Módulos e Pacotes](http://wiki.python.org.br/ModulosPacotes "link-externo")
