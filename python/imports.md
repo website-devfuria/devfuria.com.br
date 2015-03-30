@@ -4,13 +4,13 @@ title:       Importando módulos no Python (imports)
 description: Artigo que esclarece o funcionamento do comando imports da linguagem Python
 ---
 
-Este artigo é um segundo passo (longe de ser o último) no sentido de esclarecer como podemos importar módulos na 
+Este artigo é mais um passo (longe de ser o último) no sentido de esclarecer como podemos importar módulos na 
 linguagem Python. Veremos como importar um módulo em sua totalidade e parcialmente, além de ilustrar que também podemos
 fazer isso com simples scripts Python, uma vez que um script Python na verdade é (também) um módulo.
 
-A princípio, que está começando com a linguagem Python estará mais preocupado com o funcionamento do `imports`. Mas 
-alerto para o fato de que é importante saber, talvez em um segundo momento, o conceito de 
-[módulos e pacotes](/python/modulos-pacotes) em Python.
+Quem inicia seus estudos em Python estará mais preocupado com o funcionamento do `imports` do que com o conceito de 
+módulos e pacotes, porém alerto para o fato de que também é importante saber, talvez em um segundo momento, os conceitos 
+de [módulos e pacotes](/python/modulos-pacotes).
 
 
 
@@ -122,3 +122,19 @@ de símbolos (uma lista ordenada de strings).
 Uma __tabela de símbolos__ é um dicionário de dados que cada módulo possui, onde são armazenadas todas as variáveis, 
 funções e classes definidas neste módulo.
 
+Como exemplo, no terminal, temos...
+
+    $ python3
+    >>> dir()
+    ['__builtins__', '__doc__', '__name__', '__package__']
+
+
+
+
+Leia também
+---
+
+Talvez agora você queira dar uma olhada no seguinte artigo:
+
+
+- [Módulos e Pacotes em Python](/python/modulos-pacotes/)
