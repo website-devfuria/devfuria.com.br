@@ -12,7 +12,6 @@ na linguagem Python.
 Vamos começar com o exemplo abaixo...
 
 ```python
-# -*- iso-8859-1 -*-
 
 """Módulo principal.
 """
