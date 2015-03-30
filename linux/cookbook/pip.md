@@ -26,7 +26,7 @@ linguagem de programação [Python](/python/).
 
 Uma forma alternativa de instalação indicada para quem usa o [Python 3](/linux/cookbook/python) é a seguinte:
 
-    cd opt/
+    cd /opt
     wget https://bootstrap.pypa.io/get-pip.py
     python3 get-pip.py
 
