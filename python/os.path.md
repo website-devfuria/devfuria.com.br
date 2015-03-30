@@ -273,4 +273,4 @@ os.path.dirname(os.path.abspath("path/to/project/foo.py"))
 Leia também
 ---
 
-- [Python - os](python/os/)
+- [Python - os](/python/os/)
