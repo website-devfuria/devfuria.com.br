@@ -46,7 +46,7 @@ Vamos utilizar a  seguinte estrutura de arquivos.
 
 Este exemplo se baseia no sistema Linux, logo, eu sugiro que o caminho `/projeto` seja na verdade algo parecido com isto:
 
-    /home/seu-usuario/sua-pasta-de-projetos
+    /home/seu-usuario/projetos
         /flask-test
             myapp.py
             wsgi.py
@@ -55,6 +55,7 @@ Por que? Porque  dessa forma você terá acesso indiscriminado a pasta de projet
 colocar o exemplo na pasta `/projetos` você precisará ter acesso à ela como `root` ou dar permissões para seu usuário.
 Você deve decidir onde colocar o exemplo deste tutorial.
 
+Lembre-se de trocar o trecho `/seu-usuario/` por seu usuário de verdade.
 
 
 Os arquivos
@@ -87,7 +88,7 @@ abaixo. Atente para o endereço após o trecho `sis.path.insert(0, `, ele deve a
 #
 import sys
 
-sys.path.insert(0, "/projetos/flask-test")
+sys.path.insert(0, "/home/seu-usuario/projetos/flask-test")
 
 from myapp import app as application
 ```
@@ -131,9 +132,9 @@ Na pasta `/etc/apache2/sites-available` crie um arquivo de texto simples denomin
     ServerName www.flask-test.loc
 
     WSGIDaemonProcess flaskTest threads=5
-    WSGIScriptAlias / /projetos/flask-test/wsgi.py
+    WSGIScriptAlias / /home/seu-usuario/projetos/flask-test/wsgi.py
 
-    <Directory /projetos/flask-test/>
+    <Directory /home/seu-usuario/projetos/flask-test/>
         WSGIProcessGroup flaskTest
         WSGIApplicationGroup %{GLOBAL}
         WSGIScriptReloading On

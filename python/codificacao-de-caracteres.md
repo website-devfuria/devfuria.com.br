@@ -41,8 +41,7 @@ ou
     # coding: latin-1
 
 
-<hr>
-Fontes:
+### Fontes:
 
 - [Python brasil - Módulos e Pacotes](http://wiki.python.org.br/ModulosPacotes "link-externo")
 - [codare - Declarar a codificação dos fontes (encoding)](http://codare.net/2007/01/02/python-declarar-a-codificacao-dos-fontes-encoding/ "link-externo")

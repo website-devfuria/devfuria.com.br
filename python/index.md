@@ -46,11 +46,11 @@ Aconselho também a experimentar o Python através do [Codeacademy - Python](htt
 Basic Python Exercises
 ---
 
-Após essa maratona de exercícios, eu sugiro que você pratique os exercícios de lógica preparado pelo Google denominado 
+Após essa maratona de exercícios (acima), eu sugiro que você pratique os exercícios de lógica preparado pelo Google denominado 
 [Basic Python Exercises](https://developers.google.com/edu/python/exercises/basic "link-externo"). O legal dos exercícios 
 é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código deveria funcionar e implementa 
 as funções até os testes passarem. Os exercícios, por serem mais elaborados, são mais próximos da realidade do 
-desenvolvimento de software. Eu apenas traduzi os  enunciados...
+desenvolvimento de software, eu apenas traduzi os  enunciados.
 
 {% include menus/python-google.html %}
 
@@ -63,7 +63,10 @@ Artigos diversos
 <div class="list-group">
     <a href="/python/programacao-orientada-objetos/" class="list-group-item">Programação Orientada a Objetos em Python</a>
     <a href="/python/tdd-primeiros-passos-com-testes-unitarios/" class="list-group-item">Primeiros passos com teste unitários em Python</a>
-    <a href="/python/codificacao-de-caracteres/" class="list-group-item">Codificando caracteres no início do script Python </a>
+    <a href="/python/codificacao-de-caracteres/" class="list-group-item">Codificando caracteres no início do script Python</a>
+    <a href="/python/entenda-__name__-__main__/" class="list-group-item">Entenda o __name__ == "__main__"</a>
+    <a href="/python/imports/" class="list-group-item">Importando módulos no Python (imports)</a>
+    <a href="/python/modulos-pacotes/" class="list-group-item">Módulos e Pacotes em Python</a>
     <a href="/python/virtualenv/" class="list-group-item">Virtualenv</a>
     <a href="/python/sys-argv/" class="list-group-item">Python - sys.argv</a>
     <a href="/python/os/" class="list-group-item">Python - os</a>

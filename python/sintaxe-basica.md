@@ -68,8 +68,8 @@ name  = raw_input("What is your name?")
 quest = raw_input("What is your quest?")
 color = raw_input("What is your favorite color?")
 
-print "Ah, so your name is %s, your quest is %s, " \
-"and your favorite color is %s." % (name, quest, color)
+print("Ah, so your name is %s, your quest is %s, " \
+"and your favorite color is %s." % (name, quest, color) )
 ```
 
 
@@ -85,7 +85,7 @@ def spam():
 eggs = 12
 return eggs
 
-print spam()
+print(spam())
 ```
 
 Abaixo, vemos o mesmo código corrigido:
@@ -95,7 +95,7 @@ def spam():
     eggs = 12
     return eggs
 
-print spam()
+print(spam())
 ```
 
 
@@ -116,7 +116,7 @@ Abaixo vemos os comandos que aceitam blocos:
 Se o bloco tem apenas um comando, pode-se escrever tudo em uma linha:
 
 ```python
-if n < 0: print 'Valor inválido'
+if n < 0: print('Valor inválido')
 ```
 
 
@@ -224,7 +224,7 @@ Python possui `+ - * /`, nem precisava falar!.
 Mas talvez você se pergunte como calcular uma potência.
 
 ```python
-10 ** 2 # print 100
+10 ** 2 # print(100)
 ```
 
 ...ou o resto da divisão com o operador módulo `%`.
@@ -334,7 +334,7 @@ Leia mais sobre [fatiamento de sequências](../sequencias-fatiamento/ "Python - 
 
 ```python
 for letter in "python":
-    print letter
+    print(letter)
 
 """
 p
@@ -354,9 +354,9 @@ Controle de fluxo (condicionais)
 
 ```python
 if expressao == True:
-    print "true"
+    print("true")
 else:
-    print "false"
+    print("false")
 ```
 
 
@@ -379,7 +379,7 @@ Laços de repetição
 ```python
 count = 0
 while count <= 5:
-    print "Hello, I am a while and count is", count
+    print("Hello, I am a while and count is", count)
     count += 1
 
 """
@@ -397,7 +397,7 @@ Exemplo com __break__:
 ```python
 count = 0
 while True:
-    print count
+    print(count)
     count += 1
     if count >= 5:
         break
@@ -414,7 +414,7 @@ Funções
 def foo():
     return "retorno da função"
 
-print foo() # retorno da função"
+print(foo()) # retorno da função"
 ```
 
 Outro exemplo
@@ -436,7 +436,7 @@ Para importar um módulo utilizamos o `import`.
 
 ```python
 import math
-print math.sqrt(25)
+print(math.sqrt(25))
 ```
 
 O código acima importará todos os módulos de `math`, para importar apenas o necessário utilizamos `from`.
@@ -445,11 +445,16 @@ O código acima importará todos os módulos de `math`, para importar apenas o n
 from math import sqrt
 ```
 
-Podemos importar todas as funções de `math` dessa forma:
+No terminal, para diminuir a digitação, costuma-se importar todas as funções de `math` dessa forma:
 
 ```python
 from math import *
 ```
+
+Em geral, a prática do `import *` de um módulo ou pacote é desaprovada, uma vez que muitas vezes dificulta a leitura do 
+código.
+
+Leia mais sobre [imports](../imports/ "Importando módulos no Python (imports)").
 
 
 
@@ -459,22 +464,22 @@ Datas
 ```python
 from datetime import datetime
 now = datetime.now()
-print now
-print now.year
-print now.month
-print now.day
+print(now)
+print(now.year)
+print(now.month)
+print(now.day)
 ```
 
 Para imprimir a data no formato brasileiro:
 
 ```python
-print '%s/%s/%s' % (now.day, now.month, now.year)
+print('%s/%s/%s' % (now.day, now.month, now.year))
 ```
 
 Imprimindo as horas:
 
 ```python
-print '%s:%s:%s' % (now.hour, now.minute, now.second)
+print('%s:%s:%s' % (now.hour, now.minute, now.second))
 ```
 
 
@@ -531,7 +536,7 @@ Percorrendo (lopping):
 
 ```python
 for i in range(20):
-    print i
+    print(i)
 ```
 
 
@@ -546,9 +551,9 @@ people = {
     "skylls": ['python', 'ruby', 'php']
 }
 
-print people['name']
-print people['age']
-print people['skylls']
+print(people['name'])
+print(people['age'])
+print(people['skylls'])
 
 """
 joao
@@ -568,7 +573,7 @@ Exemplo:
 
 ```python
 g = lambda x: x * 2
-print g(6) 
+print(g(6))
 # 12
 ```
 
@@ -577,7 +582,7 @@ Para facilitar o entendimento, veja código abaixo, ele é similar.
 ```python
 def f(x):
     return x * 2
-print f(6)
+print(f(6))
 # 12
 ```
 
