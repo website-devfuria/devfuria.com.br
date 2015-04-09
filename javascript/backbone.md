@@ -14,10 +14,11 @@ A documentação do Backbone começa falando dos modelos (models), aí tudo quan
 também começa falando dos models. Eu resolvi fazer diferente, como as coisas acontecem primeiro nas Views e também acho 
 mais prático começar por elas, então eu preparei este tutorial iniciando-se pelas Views.
 
+Se você procura por [códigos de exemplo](https://github.com/devfuria/backbone-exemplos "link-externo"), eu separei no 
+GitHub um repositório apenas com os códigos deste tutorial.
+
 {% include /menus/javascript-backbone.html %}
 
-Se você procura por [códigos de exemplo](https://github.com/devfuria/backbone-exemplos), eu separei no 
-GitHub um repositório apenas com os códigos deste tutorial.
 
 
 
