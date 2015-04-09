@@ -27,7 +27,7 @@ Nosso HTML continua o mesmo...
 
 Porém, vamos utilizar um template no HTML....
 
-```html
+```
 <script type="text/template" id="linha">
     <td><%= id %></td>
     <td><%= part1 %> <%= part2 %></td>            
