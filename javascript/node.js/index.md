@@ -35,15 +35,6 @@ Leia este artigo para aprender [como instalar o Node.js no Linux](/linux/cookboo
 
 
 
-
-Primeiro passos com Node
----
-
-Leia este artigo para aprender mais sobre
-[como programar com o Node com esta minúscula biblioteca (utils-merge)](programando-com-node-utils-merge).
-
-
-
 Nodeschool
 ---
 
@@ -60,6 +51,14 @@ exercícios...
 {% include /menus/javascript-ns.html %}
 
 
+Explorando bibliotecas
+---
+
+Descubra algumas das mais utilizadas bibliotecas para Node.js.
+
+- [utils-merge)](programando-com-node-utils-/).
+
+
 
 Testes unitários (Unit Test) com Node.js
 ---
@@ -68,6 +67,7 @@ Em breve, uma série de arquivos falando sobre __testes unitários__ e JavaScrip
 
 <div class="list-group">
     <a href="/javascript/node.js/mocha-teste-seu-javascript/" class="list-group-item">Testando JavaScript com o Mocha</a>
+    <a href="/javascript/node.js/shouldjs/" class="list-group-item">Should.js   </a>
 </div>
 
 
