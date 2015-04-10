@@ -36,6 +36,15 @@ parâmetros e geram a página depois de os processar.
 Leia mais no artigo [CGI Servindo páginas web (html)](/misc/cgi-common-gateway-interface/)
 
 
+### Gulp - Automatize suas tarefas repetitivas de forma simples e rápida
+
+O __Gulp__ é uma ferramenta que automatiza algumas tarefas do dia a dia do desenvolvimento de software. Principalmente
+aquelas tarefas repetitivas como por exemplo: minificar, concatenar, entre outros. O Gulp é uma ferramente para Nodejs, 
+logo, você deve ter o Node devidamente instalado e também poderemos utilizar o __npm__ para a instalação do Gulp.
+
+Leia mais no artigo [Gulp](/misc/gulp/)
+
+
 <!--
 <div class="list-group">
     <a href="/misc/apache-virtual-host/" class="list-group-item">Apache - Configurando Virtual Hosts</a>
