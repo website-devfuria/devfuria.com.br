@@ -112,33 +112,7 @@ Abaixo temos o esqueleto de um objeto em JS (repare que trocamos o termo classe 
 
 As propriedades e métodos são separados pela vírgula:
 
-```javascript
-    var objeto = {
-        a: 0,
-        b: 0,
-        c: 0,
-        metodo: function() {
-
-        }
-    }
-```
-
 Dentro dos métodos, as variáveis, ou melhor, as propriedades são referenciadas pela palavra chave `this`:
-
-
-```javascript
-    var objeto = {
-        a: 0,
-        b: 0,
-        c: 0,
-        metodo: function() {
-            console.log( this.a );
-            console.log( this.b );
-            console.log( this.c );
-        }
-    }
-```
-
 
 O código abaixo representa um triângulo e possui apenas um método: `validarForma()`.
 
