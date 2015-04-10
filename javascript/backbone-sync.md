@@ -7,8 +7,9 @@ menu:        javascript-backbone
 
 Se você caiu de paraquedas nesta página, estamos na seção __Backbone__ procurando entender como funciona o sync.
 
-Como o [sync](http://backbonejs.org/#Sync "link-externo") é possível sobrescrever a função na qual passam todos os métodos do Backbone, em outras
-palavras, o que você escrever no sync substituirá as funções `model.fetch()`, `model.save()` e `model.delete()`.
+Como o [sync](http://backbonejs.org/#Sync "link-externo") é possível sobrescrever a função na qual passam todos os 
+métodos de persistência do Backbone, em outras palavras, o que você escrever no sync substituirá as funções 
+`model.fetch()`, `model.save()` e `model.delete()`.
 
 O exemplo abaixo diz tudo.
 
