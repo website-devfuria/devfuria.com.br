@@ -1,13 +1,15 @@
 ---
 layout:      grid12-article
-title:       Instalando bcompiler no CentOS
-description: Aprenda como instalar o bcomipler no CentOS
+title:       Instalando bcompiler no CentOS (compilador de PHP bytecode)
+description: Aprenda como instalar a extensão bcompiler para PHP na CentOS trata-se de um compilador de PHP bytecode
 ---
 
+O __bcompiler__ é um módulo experimental em PHP que compila seu código fonte.
 
-Verifique a última versão no site: http://pecl.php.net/package/bcompiler
+Você deve instalar o útlima versão, no momentoe em que escrevo este artigo a versão mais atual é a 1.0.2.
+Verifique a última versão no site [pecl.php.net/package/bcompiler](http://pecl.php.net/package/bcompiler "link-externo")
 
-Pré requisitos: apache, php e pacotes de dependência.
+Os pré requisitos para instalação são __apache__, __php__ e pacotes de dependência.
 
 Como root, digite os comandos:
     
@@ -35,8 +37,38 @@ Reinicie o apache
 
         service httpd restart
 
-Para ver se está tudo certo, execute o _phpinfo()_ e verifique se as informações do __bcompile__ estão lá, 
-tal como "bcompiler version", "current bytecode version", entre outros.
+Para ver se está tudo certo, execute o `phpinfo()` e verifique se as informações do "bcompile" estão lá, 
+tal como `bcompiler version`, `current bytecode version`, entre outros.      
 
-        
 
+### Exemplo
+
+```php
+<?php
+#
+# Cria um arquivo novo
+#
+$fh = fopen("foo.phb","w");
+
+#
+# Direciona o compilador para o arquivo ainda vazio
+#
+bcompiler_write_header($fh);
+
+#
+# Grava o conteudo da nossa classe no novo arquivo
+#
+bcompiler_write_file($fh, "SuaClass.php");
+bcompiler_write_footer($fh);
+
+#
+# Fecha o arquivo compilado
+#
+fclose($fh);
+```
+
+
+Documentação
+---
+
+- [Compilador de PHP bytecode ](http://php.net/manual/pt_BR/intro.bcompiler.php "link-externo")
