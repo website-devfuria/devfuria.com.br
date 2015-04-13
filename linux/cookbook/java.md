@@ -1,11 +1,18 @@
 ---
 layout:      grid12-article
-title:       Instalando o java (jdk)
-description: Aprenda a instalar o jdk do Java
+title:       Instalando conjunto de utilitários JDK (Java Development Kit)
+description: Aprenda a instalar o conjunto de utilitários JDK (Java Development Kit)
 ---
 
+Repare que que as receitas abaixo instalam a versão "OpenJDK".  Aversão atual enquanto escreve este artigo era a 7, 
+procure pela versão mais atual.
 
-### Debian-wheezy
+Ao final da instalação o comando `java -version` deve trazer informação sobre`OpenJDK Runtime Environment`.
+
+Se você buscava isntlar a versão Java da Oracle veja esta outra receita 
+[Instalando conjunto de utilitários JDK (Java Development Kit) versão Oracle](/linux/cookbook/java-oracle/)
+
+### Debian (wheezy)
 
 	apt-get install openjdk-7-jre
 
@@ -21,7 +28,7 @@ description: Aprenda a instalar o jdk do Java
 	# su -c "yum install java-1.7.0-openjdk"
 
 
-### UBUNTU 12+
+### Ubuntu 12+
 
 Via software-center é mais fácil, procure por
 
