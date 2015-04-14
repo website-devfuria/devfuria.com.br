@@ -79,7 +79,8 @@ description: Guia prático de instalações de softwares para Linux
 <div class="list-group">
     <a href="/linux/cookbook/virtualbox/" class="list-group-item">Instalando o VirtualBox no Linux</a>
     <a href="/linux/cookbook/git/" class="list-group-item">Instalando o git</a>
-    <a href="/linux/cookbook/java/" class="list-group-item">Instalando o Java (jdk)</a>
+    <a href="/linux/cookbook/java/" class="list-group-item">Instalando conjunto de utilitários JDK (Java Development Kit)</a>
+    <a href="/linux/cookbook/java-oracle/" class="list-group-item">Instalando conjunto de utilitários JDK (Java Development Kit) versão Oracle</a>
     <a href="/linux/cookbook/7z/" class="list-group-item">Instalando 7-Zip (7z, 7zip, sevenzip)</a>
     <a href="/linux/cookbook/putty/" class="list-group-item">Instalando o putty (acesso remoto)</a>
     <a href="/linux/cookbook/bcompiler/" class="list-group-item">Instalando bcompiler no CentOS</a>
