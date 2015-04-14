@@ -24,5 +24,5 @@ Merge automáticos
 
 https://github.com/nfephp-org/nfephp/wiki/Contribuindo-usando-o-GitHub
 http://www.akitaonrails.com/2008/09/21/colaborando-no-github#.VFj2LeJXaiv
-
+http://imasters.com.br/gerencia-de-ti/fluxo-de-desenvolvimento-com-gitflow/
 -->
