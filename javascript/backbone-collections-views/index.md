@@ -121,6 +121,9 @@ AppView = Backbone.View.extend({
         // disparamos o callback definido na collection.
         this.friends.add(friend_model);
     },
+    //
+    // De onde vem o parâmetro 'model' ?
+    //
     render: function (model) {
         $('#friends-list').append('<li>' + model.get('name') + '</li>');
     }
@@ -129,8 +132,6 @@ AppView = Backbone.View.extend({
 // Aqui é o ponto inicial
 var appview = new AppView;
 ```
-
-Os trechos de código não comentados devem ser triviais para o leitor (veja os artigos anteriores).
 
 Não podemos esquecer da parte referente ao HTML.
 
@@ -142,9 +143,43 @@ Não podemos esquecer da parte referente ao HTML.
 </body>
 ...
 ```
+
 Este exemplo é original do artigo [Backbone  introduction](http://thomasdavis.github.io/2011/02/01/backbone-introduction.html "link-externo")
 
+Os trechos de código JavaScript não comentados, devem ser triviais para o leitor (veja os artigos anteriores).
 
+O único trecho que acredito deixar dúvidas é a função `render()` da view, a questão é "de onde vem o parâmetro 'model'" ?
+
+O modelo é retransmitido como parâmetro para o a função de callback pela coleção, veja código abaixo.
+
+```javascript
+Friends = Backbone.Collection.extend({
+    // Lembrando que ao inicializar a coleção podemos passar como
+    // primeiro parâmetro: um lista com os modelos e
+    // segundo parâmetro:  um objeto com opções
+    initialize: function (models, options) {
+        this.on('add',  options.callback, this);
+    }
+});
+
+options = {
+    // O parâmetro `model` será transmitido
+    // ao callback  pela coleção quando disparamos
+    // o evento através da função `add()`
+    callback: function (model) {
+        console.log(model.get('name'));
+    }
+}
+
+// Criamos a coleção com uma lista vazia (primeiro parâmetro) e
+// como segundo parâmetro passamos o nosso objeto de opções que
+// contém o callback
+var friends = new Friends(null, options);
+
+// Ao adicionar um modelo `{name: "fulano"}` ele é retransmitido
+// como parâmetro para a função de callback
+friends.add({name: "fulano"});
+```
 
 
 

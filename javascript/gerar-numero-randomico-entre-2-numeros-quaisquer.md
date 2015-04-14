@@ -15,7 +15,7 @@ Vamos imaginar que queiramos gerar números aleatórios entre 3 e 5 (range 3, 4 
 Para gerarmos números aleatórios inteiros, devemos utilizar a função `Math.floor` que arredonda para baixo o ponto flutuante.
 
 ```javascript
-    Math.floor(Math.random());
+Math.floor(Math.random());
 ```
 
 
@@ -23,7 +23,7 @@ O código acima gera sempre o valor 0, então para obter números aleatórios at
 multiplicar pelo número desejado (no caso 5).
 
 ```javascript
-    Math.floor(Math.random() * 5);
+Math.floor(Math.random() * 5);
 ```
 
 
@@ -32,7 +32,7 @@ O código acima irá gerar 0, 1, 2, 3 e 4
 Para incluir o número 5 (nosso limite maximo) nos resultados precisamos somar com 1.
 
 ```javascript
-    Math.floor(Math.random() * (5 + 1));
+Math.floor(Math.random() * (5 + 1));
 ```
 
 
@@ -43,7 +43,7 @@ Agora podemos estabelecer um limite mínimo, por exemplo, 3.
 Então precisaremos somar 3 no resultado final (cuidado! eu disse somar no resultado final).
 
 ```javascript
-    Math.floor(Math.random() * (5 + 1) + 3);
+Math.floor(Math.random() * (5 + 1) + 3);
 ```
 
 
@@ -53,7 +53,7 @@ Conseguimos um limite mínimo (3), mas estoramos o limite máximo (5). Podemos r
 do valor máximo (5).
 
 ```javascript
-    Math.floor(Math.random() * (5 - 3 + 1) + 3);
+Math.floor(Math.random() * (5 - 3 + 1) + 3);
 ```
 
 
@@ -63,7 +63,7 @@ Mas queremos transformar isso em uma função reutilizá-vel, então podemos sub
 valor 3 pela variável `min`.
 
 ```javascript
-    Math.floor(Math.random() * (max - min + 1) + min);
+Math.floor(Math.random() * (max - min + 1) + min);
 ```
 
 

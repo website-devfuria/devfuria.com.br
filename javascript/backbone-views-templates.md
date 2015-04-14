@@ -90,7 +90,7 @@ var ViewExemplo = Backbone.View.extend({
 // Instanciamos normalmente, mas...
 var view1 = new ViewExemplo();  
 
-// como não definimos o método `initialize`
+// ...como não definimos o método `initialize`
 // temos que evocar o método `render()`
 view1.render();
 

@@ -7,7 +7,7 @@ menu:        javascript-rando
 
 A função `random()` do objeto `Math` retorna um número pseudo-aleatório.
 ```javascript
-    Math.random();
+Math.random();
 ```
 
 
@@ -27,14 +27,14 @@ Em outras palavras, a função retornará um número entre 0 e 1 (podendo inclui
 
 Para gerar números aleatórios na casa do inteiros, devemos multiplicar o método por um inteiro qualquer:
 ```javascript
-    Math.random() * 10
+Math.random() * 10
 ```
 
 
 Agora devemos utilizar a função `Math.floor()` para retirar a parte flutuante (números decimais).
 
 ```javascript
-    Math.floor(Math.random() * 10)
+Math.floor(Math.random() * 10)
 ```
 
 
@@ -51,7 +51,7 @@ Se nossa preocupação fosse apenas um teto máximo para o número aleatório, b
 O código abaixo gera números aleatórios entre 1 e 10.
 
 ```javascript
-    Math.floor(Math.random() * 10 + 1)
+Math.floor(Math.random() * 10 + 1)
 ```
 
 
@@ -72,26 +72,26 @@ function getRandom(max) {
 ### Como gerar um número randômico booleano (entre 0 e 1):
 
 ```javascript
-    Math.floor(Math.random() * 2);
+Math.floor(Math.random() * 2);
 ```
 
 
 ### Como gerar um número randômico tipo bytes ou octet (entre 0 e 256):
 
 ```javascript
-    Math.floor(Math.random() * 256);
+Math.floor(Math.random() * 256);
 ```
 
 
 ### Como gerar um número randômico no "range" dos inteiros positivos (entre 0 e 65536):
 
 ```javascript
-    Math.floor(Math.random() * 65536);
+Math.floor(Math.random() * 65536);
 ```
 
 
 ### Como gerar um número randômico no "range" dos inteiros incluindo os negativos (entre -32768 e 65536):
 
 ```javascript
-    Math.floor(Math.random() * 65536) - 32768;
+Math.floor(Math.random() * 65536) - 32768;
 ```

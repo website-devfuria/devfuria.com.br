@@ -133,14 +133,14 @@ colecao.add({id: 2})
 // "added"
 
 colecao.remove(0);
-"removed"
+// "removed"
 
 colecao.comparator = "firstName";
 colecao.sort();
-"sorted"
+// "sorted"
 
 colecao.reset();
-"was-reset"
+// "was-reset"
 ```
 
 
@@ -175,8 +175,6 @@ colecao.on("change:firstName", function(model) {
     //
 });
 ```
-
-Se quisermos
 
 OK, agora a cada alteração realizada em qualquer um dos modelos será disparado o evento da coleção. Vale lembrar que
 a coleção poderia chamar um função para renderizar a visão (view).

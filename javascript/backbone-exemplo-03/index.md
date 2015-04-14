@@ -27,13 +27,13 @@ Nosso HTML continua o mesmo...
 
 Porém, vamos utilizar um template no HTML....
 
-```html
-    <script type="text/template" id="linha">
-        <td><%= id %></td>
-        <td><%= part1 %> <%= part2 %></td>            
-        <td><a href="" class="swap">swap</a></td>            
-        <td><a href="" class="delete">delete</a></td>            
-    </script> 
+```
+<script type="text/template" id="linha">
+    <td><%= id %></td>
+    <td><%= part1 %> <%= part2 %></td>            
+    <td><a href="" class="swap">swap</a></td>            
+    <td><a href="" class="delete">delete</a></td>            
+</script> 
 ```
 
 Veja uma prévia da interface.
