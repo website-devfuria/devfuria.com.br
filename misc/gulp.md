@@ -7,6 +7,8 @@ description: Rápida introdução a ferramenta de automação de tarefas Gulp (N
 O __Gulp__ é uma ferramenta que automatiza algumas tarefas do dia a dia do desenvolvimento de software. Principalmente
 aquelas tarefas repetitivas como por exemplo: minificar, concatenar, entre outros.
 
+Ele é escrito em JavaScript e portanto necessita ter o Node.js devidamente instalado.
+
 
 ### Instalação
 
@@ -89,7 +91,7 @@ quere instalar alguns plugins. Temos plugin para quase tudo, no exemplo abaixo v
     $ npm install gulp-util --save-dev
     $ npm install gulp-uglify --save-dev
 
-No arquivo `gulpfile.js` você incluir os pluigns...
+No arquivo `gulpfile.js` você deve incluir os pluigns...
 
 
 ```javascript
