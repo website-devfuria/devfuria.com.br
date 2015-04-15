@@ -4,20 +4,38 @@ title:       Programação Orientada a Objetos em Python
 description: Python - propriedades
 ---
 
+__Isto é um rascunho...__
 
-Isto é um rascunho...
-
+Este artigo é um primeiro passo em direção a programação orientada a objetos através da linguagem Python.
 
 Uma classe consiste da palavra chave `class` seguida de seu nome e da classe herdada entre parênteses.
 
-A palavra `pass` serve para criarmos um classe vazia.
-
-Abaixo, criamos a classe vazia `Car` que herda de `object`
+Abaixo, criamos a classe vazia `Car` que herda de `object`.
 
 ```python
 class Carro(object):
     pass
 ```
+
+A palavra `pass` serve para criarmos um classe vazia.
+
+Podemos definir a classe sem especificar a herança como no exemplo abaixo.
+
+```python
+class Carro():
+    pass
+
+```
+
+Mas é uma convenção comum sempre herdar de `object`, a não ser, obviamente, que você decida herdar de outra classe.
+
+As classes antigas que não seguem esse estilo são consideradas "old style".
+
+
+
+
+Instanciando
+---
 
 Para instanciar a classe não é preciso o operador `new`, muito comum em outras linguagens.
 
@@ -25,26 +43,62 @@ Para instanciar a classe não é preciso o operador `new`, muito comum em outras
 Fusca = Carro()
 ```
 
-Podemos definir as propriedades dinamicamente.
+
+Instâncias Abertas
+---
+
+> Instâncias podem receber atributos (propriedades) dinamicamente, por isso às vezes é útil criar classes vazias. 
+(Luciano Ramalho)
+
+Em outras palavras, podemos definir as propriedades dinamicamente.
 
 ```python
-Fusca = Carro()
+class Carro(object):
+    pass
+
+Fusca = Carro(object)
 fusca.estado = "novo"
 print(fusca.estado) # novo
 ```
 
-Podemos definir a propriedade na classe.
+O atributo definido dessa forma é considerado __da instância__.
+
+
+
+Atributos da classe
+---
+
+Podemos definir a propriedade (o atributo) na classe.
 
 ```python
 class Carro(object):
    estado = "novo"
  
+print(Carro.estado) # 'novo'
+```
+
+Note bem o código acima, reparou que não precisamos instanciar a classe ? Simplesmente acessamos o atributo (que é da 
+classe) diretamente `Carro.estado`.
+
+POr outro lado, repare também que a propriedade também se encontra disponível nas intâncias.
+
+
+```python
 c = Carro()
 print(c.estado) # novo
 ```
 
-Dentro da classe, fazemos referência a ela através da palavra `self`e todo método deve aceitar como parâmetro a 
-palavra `self`, que se refere ao próprio objeto.
+Em Python precisamos atentar que "as coisas" ou são da classe ou são da instância.
+
+
+
+self explícito
+---
+
+Esta é uma peculiaridade da linguagem.
+
+Fazemos referência a classe através da palavra `self` e todo método deve aceitar como (primeiro) parâmetro a palavra 
+`self`, que se refere ao próprio objeto.
 
 ```python
 class Carro(object):
@@ -82,7 +136,8 @@ print(ferrari.estado) # novo
 
 
 
-### Método construtor __init__
+Método construtor \_\_init\_\_
+---
 
 Abaixo, criamos a classe `Carro` com um método construtor `__init__`. Neste exemplo somos obrigados a instanciar a classe
 passando exatamente um parâmetro, nem mais nem menos.
@@ -97,7 +152,8 @@ print(bmw.estado) # 'semi-novo'
 ```
 
 
-### Herança
+Herança
+---
 
 ```python
 class Veiculo(object):
