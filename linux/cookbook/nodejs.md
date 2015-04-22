@@ -128,7 +128,7 @@ Fonte
 Veja também
 ---
 
-- [Instalando o npm](/linux/instalando-npm/)
+- [Instalando o npm](/linux/cookbook/npm/)
 - [Aprenda Node.js](/javascript/node.js/)
 - [Node.js no GitHub](https://github.com/joyent/node "link-externo")
 - [Node.js](http://nodejs.org/ "link-externo")
