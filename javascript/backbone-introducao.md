@@ -176,14 +176,14 @@ renderizar uma view.
 As views também possuem eventos, mas eles referem-se aos "listeners" que habitualmente anexamos aos elementos HTML e
 que, diga-se de passagem, já devem fazer parte de seu dia a dia como programador JavaScript.
 
-Outra particularidade das views são os __templates__. NEste caso você pode fazer uma leitura atenta na documentação do
+Outra particularidade das views são os __templates__. Neste caso você pode fazer uma leitura atenta na documentação do
 Underscore, isso mesmo, Underscore!. Podemos dizer que o Backbone extende os templates do Underscore e boa parte do
 você precisa saber sobre eles você encontrará na documentação do Underscore.
 
 
 ### Site oficial
 
-Como dito, o Backbone a maior dependência é a biblioteca Underscore, então sua documentação também deve ser considerada.
+Como dito, a maior dependência do Backbone é a biblioteca Underscore, então sua documentação também deve ser considerada.
 
 - [backbonejs.org](http://backbonejs.org/ "link-externo")
 - [underscorejs.org/](http://underscorejs.org/ "link-externo")

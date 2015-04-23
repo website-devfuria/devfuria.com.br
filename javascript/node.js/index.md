@@ -67,6 +67,7 @@ Em breve, uma série de arquivos falando sobre __testes unitários__ e JavaScrip
 
 <div class="list-group">
     <a href="/javascript/node.js/mocha-teste-seu-javascript/" class="list-group-item">Testando JavaScript com o Mocha</a>
+    <a href="/javascript/node.js/mocha-configurando-repositorio/" class="list-group-item">Configurando seu repositório Git para trabalhar com o Mocha</a>
     <a href="/javascript/node.js/shouldjs/" class="list-group-item">Should.js   </a>
 </div>
 
