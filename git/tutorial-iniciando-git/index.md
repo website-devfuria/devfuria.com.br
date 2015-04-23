@@ -19,9 +19,10 @@ Antes de tudo, é preciso saber que Git não é GitHub.
 
 [GitHub]( "link-externo") é o local onde você hospeda o seu Git na web. 
 
-Você não está preso ao GitHub, existe um 
-infinidade de outros "hospedeiros", alguns pagos outros gratuitos. O GitHub é gratuíto para projetos abertos e pago para 
-projetos privados.
+![Git e GitHub são coisas distintas](git-e-github.png "Git e GitHub são coisas distintas")
+
+Você não está preso ao GitHub, existe uma infinidade de outros "hospedeiros", alguns pagos outros gratuitos. O GitHub é 
+gratuíto para projetos abertos e pago para projetos privados.
 
 Antes de iniciar com o Git, seria bom se você entendesse o conceito de __versionamento de código__, mas talvez você 
 esteja justamente experimentando o Git para poder entender o que é versionamento, então vamos lá...
