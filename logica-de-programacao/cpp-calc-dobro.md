@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "O dobro de um número qualquer "
+title:       "O dobro de um número qualquer (OOP) "
 description: Exercício de lógica de programação resolvido onde o objetivo é criar uma classe para calcular o dobro de um número qualquer.
 menu:        logica-exerc-oop-00
 ---

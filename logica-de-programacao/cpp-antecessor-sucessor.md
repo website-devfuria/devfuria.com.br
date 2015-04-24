@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Antecessor e sucessor de um número qualquer "
+title:       "Antecessor e sucessor de um número qualquer (OOP)"
 description: Exercício de lógica de programação resolvido cujo objetivo é, com o auxílio de classes, encontrar o sucessor e antecessor de um número qualquer.
 menu:        logica-exerc-oop-00
 ---
