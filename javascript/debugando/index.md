@@ -1,9 +1,8 @@
 ---
 layout:      grid12-article
 title:       Debugando (depurando) JS
-description: Aprenda a debugar o JS com FIREBUG.
+description: Primeiros passos na arte de debugar JavaScript com FIREBUG, debugar é um esforço para encontrar determinado ponto (às vezes vários pontos) "defeituoso" no código para que seja corrigido.
 ---
-
 
 O que é debugar ?
 

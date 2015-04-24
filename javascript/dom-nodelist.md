@@ -1,12 +1,12 @@
 ---
 layout:      grid93-article
 title:       JavaScript - NodeList (DOM)
-description: Referência prática de NodeList - JavaScript
+description: Este artigo é uma referência prática ao NodeList (JavaScript). As funções que acessam e selecionam elementos HTML em um página web retornam sempre um conjunto  de elementos. Esse conjunto é denominado __NodeList__.
 menu:        javascript-dom
 ---
 
-As funções que acessam e selecionam elementos HTML em um página web retornam sempre um conjunto  de elementos. Esse 
-conjunto é denominado __NodeList__. Veja abaixo as funções:
+Este artigo é uma referência prática ao NodeList (JavaScript). As funções que acessam e selecionam elementos HTML em um 
+página web retornam sempre um conjunto  de elementos. Esse conjunto é denominado __NodeList__. Veja abaixo as funções:
 
 - document.getElementsByName()
 - document.getElementsByTagName()

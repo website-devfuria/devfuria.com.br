@@ -1,7 +1,7 @@
 ---
 layout:      grid12-index
 title:       HTML & CSS
-description: Guia prático e conciso sobre HTML e CSS.
+description: Guia prático e conciso sobre HTML (HyperText Markup Language) e CSS (Cascading Style Sheet).
 ---
 
 Seja bem vindo a seção de HTML e CSS!
