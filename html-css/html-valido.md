@@ -26,7 +26,7 @@ para efetuar a validação dos HTML.
 Nós estamos falando de XHTML, que é uma versão anterior ao HTML5. O XHTML é interessante principalmente por que estamos
 aprendendo HTML.
 
-Atualmente (jan/2014) ninguém inicia o desenvolvimento de uma aplicação web com XHTML, utilizamos o [HTML5](html-css/html5/).
+Atualmente (jan/2014) ninguém inicia o desenvolvimento de uma aplicação web com XHTML, utilizamos o [HTML5](/html-css/html5/).
 Por isso se você encontrar arquivos XHTML aqui no site é porque ele tem um fim didático.
 
 

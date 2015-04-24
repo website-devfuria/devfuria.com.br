@@ -107,7 +107,7 @@ A URL do projeto é `https://github.com/jaredhanson/utils-merge.git`.
 
 Agora sim podemos rodar os comando sugeridos na pasta onde foi clonado o repositório.
 
-Ao executar `npm install` ele instala as dependências dos testes, o [chai e o mocha](/javascript/mocha-teste-seu-javascript/).
+Ao executar `npm install` ele instala as dependências dos testes, o [chai e o mocha](/javascript/node.js/mocha-teste-seu-javascript/).
 
     chai@1.10.0 node_modules/chai
     ├── assertion-error@1.0.0

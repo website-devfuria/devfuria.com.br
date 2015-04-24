@@ -107,7 +107,7 @@ fará com que o elemento do formulário ganhe o foco, veja o exemplo:
 ```
 
 Posicionar os __labels__ de modo que eles apareçam verticalmente acima dos elementos do formulário é realmente muito simples.
-__Labels__ são [elementos inline](html-css/elementos-inline-block-level/) por padrão. Entretanto, configurar sua propriedade
+__Labels__ são [elementos inline](/html-css/elementos-inline-block-level/) por padrão. Entretanto, configurar sua propriedade
  `display` como `block` fará com que eles gerem sua própria caixa de bloco, forçando os elementos "de entrada" (inputs)
 para a linha de baixo. A largura das caixas de entrada de texto varia entre diferentes navegadores, portanto, para
 consistência, você deve configurar explicitamente a largura das suas caixas de texto. Nesse exemplo, __pixels__ são usados,

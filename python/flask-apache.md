@@ -31,7 +31,7 @@ Neste artigo mostrarei como fazer o deploy do Flask com o Apache (utilizando o m
 
 O exemplo consiste em definir uma URL para o projeto, por exemplo `www.flask-test.loc` e, após acessar a URL, ver o 
 resultado "Hello World!". Você precisará ter o [módulo WSGI instalado](/linux/cookbook/apache-wsgi/) além do próprio
-[Apache](/linux/cookbook/apache-via-yum-apt-get.md/).
+[Apache](/linux/cookbook/apache-via-yum-apt-get/).
 
 
 A estrutura de arquivos

@@ -6,7 +6,7 @@ description: Este artigo é para quem está começando em Python e ainda não en
 
 Quem está começando a aprender Python pode ter dificuldade em entender o que significa o trecho 
 `if __name__ == '__main__':`, este artigo tenta explicar isso da forma mais simples possível. Faço apenas uma observação
-antes de começarmos: facilita o entendimento se você souber o conceito de [/módulos e pacotes](python/modulos-pacotes) 
+antes de começarmos: facilita o entendimento se você souber o conceito de [módulos e pacotes](/python/modulos-pacotes) 
 na linguagem Python.
 
 Vamos começar com o exemplo abaixo...

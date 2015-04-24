@@ -11,7 +11,7 @@ central.
 
 Trabalhar com o Git é ter o terminal sempre por perto, abro o terminal e vou até minha pasta de projeto.
 
-A primeira coisa que me pergunto é "será que estou no [branch](/git/branchs/) correto para trabalhar?".
+A primeira coisa que me pergunto é "será que estou no [branch](/git/branch/) correto para trabalhar?".
 
     git status
 

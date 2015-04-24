@@ -39,7 +39,7 @@ O Flask depende de duas bibliotecas externas, Werkzeug e Jinja2. Werkzeug é um 
 entre aplicações web Python e servidores HTTP para desenvolvimento e implantação. Jinja2 renderiza templates.
 
 Se você executar o comando `pip install Flask` estará partindo para uma instalação "global" no seu desktop, imaginando 
-que você está no Linux e possui o [pip](/linux/cookbook/pip/) instalado além do próprio [Python](linux/cookbook/python/),
+que você está no Linux e possui o [pip](/linux/cookbook/pip/) instalado além do próprio [Python](/linux/cookbook/python/),
 é claro. Com esse tipo de instalação, a instrução `from flask import Flask` poderá ser executada de qualquer "lugar", 
 esse é o ideal ? Não! O "politicamente correto" seria partir para um instalação que faz uso do 
 [Virtualenv](/linux/cookbook/virtualenv/). Imaginado que você esteja começando com universo Python, minha
