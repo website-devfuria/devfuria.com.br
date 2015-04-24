@@ -2,7 +2,6 @@
 layout:      grid93-article
 title:       Canvas - Paths (caminhos)
 description: Descubrindo os caminhos (paths) do Canvas (HTML5). Um path (caminho) tem uma lista de zero ou mais subpaths (subcaminhos).
-.
 menu:        javascript-canvas
 ---
 
