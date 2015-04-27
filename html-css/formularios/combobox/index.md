@@ -26,7 +26,7 @@ Os opções (que vão dentro da tag `select`) utilizam a tag `option`:
 Dessa forma, "options" mais "select", temos __o controle combobox__:
 
 ```html
-<select id=cbPais>
+<select id=cboPais>
     <option>Select Country</option>
     <option>Usa</option>
     <option>Canada</option>
