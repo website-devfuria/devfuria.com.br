@@ -26,7 +26,7 @@ Os opções (que vão dentro da tag `select`) utilizam a tag `option`:
 Dessa forma, "options" mais "select", temos __o controle combobox__:
 
 ```html
-<select id=cboPais>
+<select id=cbPais>
     <option>Select Country</option>
     <option>Usa</option>
     <option>Canada</option>
@@ -40,7 +40,7 @@ Dessa forma, "options" mais "select", temos __o controle combobox__:
 Como funcionam as comboboxes ?
 ---
 
-Se, por exemplo, o usuário clicar na opção "Canada" será enviado para o servidor o __par/valor__ `cboPais=Canada`.
+Se, por exemplo, o usuário clicar na opção "Canada" será enviado para o servidor o __par/valor__ `cbPais=Canada`.
 Quando não definimos a propriedade `value` o valor passa a ser o texto contido entre as tags options.
 
 ```html
