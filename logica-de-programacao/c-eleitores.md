@@ -218,7 +218,7 @@ try {
 ```
 
 
-### Solução na linguagem JavaScript (Node.js
+### Solução na linguagem JavaScript (Node.js)
 
 
 ```javascript

@@ -39,7 +39,7 @@ int ehPar(int numero) {
 int main (){
 
     assert(ehPar(8) == 0);
-    assert(ehPar(7) != 0);
+    assert(ehPar(7) == 1);
     assert(ehPar(0) == 0);
 
     return 0;
@@ -68,7 +68,7 @@ int ehPar(int numero) {
 int main (){
 
     assert(ehPar(8) == 0);
-    assert(ehPar(7) != 0);
+    assert(ehPar(7) == 1);
     assert(ehPar(0) == 0);
 
     return 0;
@@ -93,7 +93,7 @@ def ehPar(numero):
 # Testes
 #
 assert ehPar(8) == 0
-assert ehPar(7) != 0
+assert ehPar(7) == 1
 assert ehPar(0) == 0
 ```
 
@@ -116,6 +116,69 @@ def ehPar(numero):
 # Testes
 #
 assert ehPar(8) == 0
-assert ehPar(7) != 0
+assert ehPar(7) == 1
 assert ehPar(0) == 0
 ```
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+// Função que descobre se um número é par ou ímpar
+//
+// retornará 1 caso positivo
+// retornará 0 caso negativo
+//
+var ehPar = function(numero) {
+
+
+
+}
+
+//
+// Testes
+//
+try {
+    assert.equal(0, ehPar(8));
+    assert.equal(1, ehPar(7));
+    assert.equal(0, ehPar(0));
+} catch(e) {
+    console.log(e);
+}
+
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+// Função que descobre se um número é par ou ímpar
+//
+// retornará 1 caso positivo
+// retornará 0 caso negativo
+//
+var ehPar = function(numero) {
+    return numero % 2;
+}
+
+//
+// Testes
+//
+try {
+    assert.equal(0, ehPar(8));
+    assert.equal(1, ehPar(7));
+    assert.equal(0, ehPar(0));
+} catch(e) {
+    console.log(e);
+}
+
+``` 

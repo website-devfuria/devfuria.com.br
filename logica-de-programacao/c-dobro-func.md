@@ -15,7 +15,7 @@ Faça uma função para calcular o dobro de um número qualquer.
 
 __Comentários__: Este é o primeiro exercício envolvendo o conceito de funções, nós já resolvemos esse problema sem o uso
 de funções. Acredito que a partir deste exercício a questão dos testes unitários comecem a fazer mais sentido, pois a
-menor unidade cabível de ser testada é um pequena função.
+menor unidade cabível de ser testada é uma pequena função.
 
 
 
@@ -112,4 +112,60 @@ def dobro(num):
 # Seus testes
 #
 assert 10 == dobro(5), "o dobro de 5 deve ser 10"
+```
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Função que retorna o dobro de um número qualquer
+//
+var dobro = function(num) {
+
+
+}
+
+//
+// Testes
+//
+try {
+    assert.equal(10, dobro(5));
+} catch(e) {
+    console.log(e);
+}
+
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Função que retorna o dobro de um número qualquer
+//
+var dobro = function(num) {
+
+    // Aqui entra a lógica do programa.
+
+}
+
+//
+// Testes
+//
+try {
+    assert.equal(10, dobro(5));
+} catch(e) {
+    console.log(e);
+}
+
 ```
