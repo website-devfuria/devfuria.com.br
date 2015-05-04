@@ -114,3 +114,62 @@ juros = capital * taxa * n_periodos;
 # Sabemos que 16000 * 0.04 * 4 = 2560, logo...
 assert 2560 == juros, "juros deve ser igual a 2560"
 ```
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+// Variáveis
+var juros, capital, taxa, n_periodos; 
+
+// Aqui entra a lógica do programa.
+
+
+
+
+
+
+// Este é o nosso teste.
+// Sabemos que 16000 * 0.04 * 4 = 2560, logo
+// a variável `juros` deve ter o valor igual a 2560.
+try {
+    assert.equal(2560, juros);
+} catch(e) {
+    console.log(e);
+}
+
+```
+
+
+### Solução na linguagem JavaScript (Node.js
+
+
+```javascript
+var assert = require('assert');
+
+// Variáveis
+var juros, capital, taxa, n_periodos; 
+
+// Aqui entra a lógica do programa.
+capital    = 16000;
+taxa       = 0.04;
+n_periodos = 4;
+
+juros = capital * taxa * n_periodos;
+
+// Este é o nosso teste.
+// Sabemos que 16000 * 0.04 * 4 = 2560, logo
+// a variável `juros` deve ter o valor igual a 2560.
+try {
+    assert.equal(2560, juros);
+} catch(e) {
+    console.log(e);
+}
+
+```

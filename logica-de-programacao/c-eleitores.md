@@ -176,3 +176,79 @@ assert 0.8  == percValidos, "'percValidos' deve ser igual a 0.8"
 assert 0.15 == percBrancos, "'percBrancos' deve ser igual a 0.15"
 assert 0.05 == percNulos, "percNulos deve ser igual a 0.05"
 ```
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+// Variáveis
+var totalEleitores = 1000,
+    validos = 800,
+    brancos = 150,
+    nulos = 50,
+    percValidos,
+    percBrancos,
+    percNulos;
+
+//
+// Sua lógica entra aqui
+//
+
+
+
+
+
+//
+// Testes
+//
+try {
+    assert.equal(0.8, percValidos);
+    assert.equal(0.15, percBrancos);
+    assert.equal(0.05, percNulos);
+} catch(e) {
+    console.log(e);
+}
+
+```
+
+
+### Solução na linguagem JavaScript (Node.js
+
+
+```javascript
+var assert = require('assert');
+
+// Variáveis
+var totalEleitores = 1000,
+    validos = 800,
+    brancos = 150,
+    nulos = 50,
+    percValidos,
+    percBrancos,
+    percNulos;
+
+//
+// Sua lógica entra aqui
+//
+percValidos = validos / totalEleitores;
+percBrancos = brancos / totalEleitores;
+percNulos   = nulos   / totalEleitores; 
+
+//
+// Testes
+//
+try {
+    assert.equal(0.8, percValidos);
+    assert.equal(0.15, percBrancos);
+    assert.equal(0.05, percNulos);
+} catch(e) {
+    console.log(e);
+}
+
+```
