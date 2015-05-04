@@ -56,7 +56,7 @@ Explorando bibliotecas
 
 Descubra algumas das mais utilizadas bibliotecas para Node.js.
 
-- [utils-merge](programando-com-node-utils-/).
+- [utils-merge](programando-com-node-utils-merge/).
 
 
 
