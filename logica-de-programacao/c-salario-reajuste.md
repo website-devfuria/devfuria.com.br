@@ -103,3 +103,61 @@ reajusteValor = salario * reajustePorc;
 # Sabemos que 1000 * 0.15 = 150, logo...
 assert 150 == reajusteValor, 'reajusteValor deve ser igual a 150'
 ```
+
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+// Para escrever o pequeno teste precisamos da variável `reajusteValor`.
+// Declare aqui as variáveis que você utilizar.
+var salario, reajustePorc, reajusteValor;
+
+// Aqui entra a lógica do programa.
+salario       = 1000;
+reajustePorc  = 0.15;
+reajusteValor = salario * reajustePorc;
+
+// Este é o nosso teste.
+// Sabemos que 1000 * 0.15 = 150, logo
+// a variável `reajusteValor` deve ter o valor igual a 150.
+try {
+    assert.equal(150, reajusteValor);
+} catch(e) {
+    console.log(e);
+}
+
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+// Para escrever o pequeno teste precisamos da variável `reajusteValor`.
+// Declare aqui as variáveis que você utilizar.
+var salario, reajustePorc, reajusteValor;
+
+// Aqui entra a lógica do programa.
+salario       = 1000;
+reajustePorc  = 0.15;
+reajusteValor = salario * reajustePorc;
+
+// Este é o nosso teste.
+// Sabemos que 1000 * 0.15 = 150, logo
+// a variável `reajusteValor` deve ter o valor igual a 150.
+try {
+    assert.equal(150, reajusteValor);
+} catch(e) {
+    console.log(e);
+}
+
+```

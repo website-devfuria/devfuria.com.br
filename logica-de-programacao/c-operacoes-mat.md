@@ -172,78 +172,90 @@ assert 5 == dividir(10, 2)
 ```  
 
 
-
-Linguagem Python
+Linguagem JavaScript (Node.js)
 ---
 
-```python
-# -*- coding: utf-8 -*-
-import math
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
 
-#
-# Retorna o valor de delta
-#
-def delta(a, b, c):
-    pass
 
-#
-# Retorna o valor de primeira raiz
-#
-def raiz1(a, b, c):
-    pass
+```javascript
+var assert = require('assert');
 
-#
-# Retorna o valor de segunda raiz
-#
-def raiz2(a, b, c):
-    pass
+//
+// Funções...
+//
 
-#
-# Testes
-#
-a = 1
-b = 0
-c = -16
+var somar = function(num, add) {
 
-assert 64 == delta(a, b, c)
-assert  4 == raiz1(a, b, c)
-assert -4 == raiz2(a, b, c)
+}
+
+var subtrair = function(num, sub) {
+
+}
+
+var multiplicar = function(num, mult) {
+
+}
+
+var dividir = function(num, divisor) {
+
+}
+
+//
+// Testes
+//
+try {
+    var num = 10;
+
+    assert.equal(12, somar(num, 2));
+    assert.equal(8, subtrair(num, 2));
+    assert.equal(20, multiplicar(num, 2));
+    assert.equal(5, dividir(num, 2));
+} catch(e) {
+    console.log(e);
+}
+
 ```
 
 
-### Solução na linguagem Python
+### Solução na linguagem JavaScript (Node.js)
 
 
-```python
-# -*- coding: utf-8 -*-
-import math
+```javascript
+var assert = require('assert');
 
-#
-# Retorna o valor de delta
-#
-def delta(a, b, c):
-    return b * b -4 * a * c
+//
+// Funções...
+//
 
-#
-# Retorna o valor de primeira raiz
-#
-def raiz1(a, b, c):
-    return (-b + math.sqrt(delta(a, b, c))) / 2 * a
+var somar = function(num, add) {
+    return num + add;
+}
 
-#
-# Retorna o valor de segunda raiz
-#
-def raiz2(a, b, c):
-    return (-b - math.sqrt(delta(a, b, c))) / 2 * a
+var subtrair = function(num, sub) {
+    return num - sub;
+}
 
-#
-# Testes
-#
-a = 1
-b = 0
-c = -16
+var multiplicar = function(num, mult) {
+    return num * mult;
+}
 
-assert 64 == delta(a, b, c)
-assert  4 == raiz1(a, b, c)
-assert -4 == raiz2(a, b, c)
+var dividir = function(num, divisor) {
+    return num / divisor;
+}
+
+//
+// Testes
+//
+try {
+    var num = 10;
+
+    assert.equal(12, somar(num, 2));
+    assert.equal(8, subtrair(num, 2));
+    assert.equal(20, multiplicar(num, 2));
+    assert.equal(5, dividir(num, 2));
+} catch(e) {
+    console.log(e);
+}
+
 ```

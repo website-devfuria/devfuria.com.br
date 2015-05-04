@@ -124,3 +124,70 @@ media = (valor1 + valor2 + valor3) / 3
 #
 assert 7 == media
 ```
+
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Variáveis
+//
+var valor1, valor2, valor3, media;
+
+//
+// Sua lógica
+//
+
+
+
+
+
+
+//
+// Seu teste
+//
+try {
+    assert.equal(7, media, "deve retornar a média");
+} catch(e) {
+    console.log(e);
+}
+
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Variáveis
+//
+var valor1, valor2, valor3, media;
+
+//
+// Sua lógica
+//
+valor1 = 6;
+valor2 = 7;
+valor3 = 8;
+media  = (valor1 + valor2 + valor3) / 3;
+
+//
+// Seu teste
+//
+try {
+    assert.equal(7, media, "deve retornar a média");
+} catch(e) {
+    console.log(e);
+}
+
+```

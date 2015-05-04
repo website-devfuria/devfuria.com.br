@@ -129,3 +129,70 @@ assert ehPositivo(100) == 1
 assert ehPositivo(0) == 1
 assert ehPositivo(-100) == 0
 ```
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+// Função que descobre se um número é positivo ou negativo
+//
+// retornará 1 caso positivo
+// retornará 0 caso negativo
+//
+var ehPositivo = function(numero) {
+
+
+
+
+
+}
+
+//
+// Testes
+//
+try {
+    assert.equal(1, ehPositivo(100));
+    assert.equal(1, ehPositivo(0));
+    assert.equal(0, ehPositivo(-100));
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+// Função que descobre se um número é positivo ou negativo
+//
+// retornará 1 caso positivo
+// retornará 0 caso negativo
+//
+var ehPositivo = function(numero) {
+    if(numero >= 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+//
+// Testes
+//
+try {
+    assert.equal(1, ehPositivo(100));
+    assert.equal(1, ehPositivo(0));
+    assert.equal(0, ehPositivo(-100));
+} catch(e) {
+    console.log(e);
+}
+```

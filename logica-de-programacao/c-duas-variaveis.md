@@ -134,3 +134,72 @@ b    = temp   # sobrescrever 'b' com o valor que era de 'a' (e foi registrado em
 assert a == 555
 assert b == 999
 ```
+
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Variáveis
+//
+var a, b, temp;
+
+//
+// Sua lógica
+//
+
+
+
+
+
+//
+// Seu teste
+//
+try {
+    assert.equal(555, a);
+    assert.equal(999, b);
+} catch(e) {
+    console.log(e);
+}
+
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Variáveis
+//
+var a, b, temp;
+
+//
+// Sua lógica
+//
+a    = 999;
+b    = 555;
+temp = a;     // registramos o valor de 'a' em 'temp'
+a    = b;     // sobrescrever 'a' com o valor de 'b'
+b    = temp;  // sobrescrever 'b' com o valor que era de 'a' (e foi registrado em 'temp')
+
+//
+// Seu teste
+//
+try {
+    assert.equal(555, a);
+    assert.equal(999, b);
+} catch(e) {
+    console.log(e);
+}
+
+```

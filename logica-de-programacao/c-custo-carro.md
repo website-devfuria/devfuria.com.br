@@ -144,3 +144,73 @@ custoFinal        = custoFabrica + custoDistribuidor + custoImpostos;
 #
 assert 17300 == custoFinal, "'custoFinal' deve ser igual a 17300";
 ```
+
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Variáveis
+//
+var custoFabrica = 10000,
+    custoDistribuidor,
+    custoImpostos,
+    custoFinal;
+
+//
+// Sua lógica entra aqui
+//
+
+
+
+
+//
+// Seu teste
+//
+try {
+    assert.equal(17300, custoFinal);
+} catch(e) {
+    console.log(e);
+}
+
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Variáveis
+//
+var custoFabrica = 10000,
+    custoDistribuidor,
+    custoImpostos,
+    custoFinal;
+
+//
+// Sua lógica entra aqui
+//
+custoDistribuidor = custoFabrica * 0.28;
+custoImpostos     = custoFabrica * 0.45;
+custoFinal        = custoFabrica + custoDistribuidor + custoImpostos; 
+
+//
+// Seu teste
+//
+try {
+    assert.equal(17300, custoFinal);
+} catch(e) {
+    console.log(e);
+}
+
+```
