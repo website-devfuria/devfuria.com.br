@@ -57,3 +57,36 @@ Coworker.prototype.status = "quase de férias"
 console.log(c1) // Coworker { name="João", status="férias"}
 console.log(c2) // Coworker { name="Maria", status="quase de férias"}
 ```
+
+
+
+Extendendo tipos primitivos
+---
+
+A primeira coisa que precisamos saber sobre extender tipos primitivos da linguagem é que NÂO é uma boa prática e deve
+ser evitado. Vamos nos permitir esse deslize apenas para entendermos mais do assunto.
+
+Vamos direto para um exemplo prático. Imagine que queiramos clonar um array, no caso "clonar"  significa que a cópia
+será independente, ou melhor, não terá vínculo com o array original.
+
+Para criarmos um clone de um array qualquer podemos fazer...
+
+    var a = []
+    var b = a.slice();
+
+Mas e se ao invés de evocarmos `a.slice()`, quiséssemos fazer algo mais direto como por exemplo `a.clone()`. Sabemos
+que a função `clone()` não existe e teríamos que criá-la. Espero que você perceba que criar tal função para cada
+array é algo inviável. A solução é criarmos a função `clone()` uma vez só no protótipo do tipo primitivo `Array` e ela
+estará automaticamente disponível para todos arrays, tanto para os criados antes e após a definição.
+
+```javascript
+//
+// Alternado o tipo primitivo `Array`
+//
+Array.prototype.clone = function() {
+    return this.slice();
+};
+
+var a = [];
+var b = a.clone()
+```
