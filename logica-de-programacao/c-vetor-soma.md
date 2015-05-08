@@ -130,3 +130,103 @@ A esta altura é bom lembrar que, nem de longe, estamos dizendo que Python é me
 
 Esses exercícios com vetores são legais pois, estamos tendo a oportunidade de ver duas perspectivas diferentes: 
 a de uma linguagem da baixo e a de uma linguagem de alto nível.
+
+E em JavaScript, com seria?
+
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Seu código
+//
+var somarLista = function(lista){
+
+
+
+
+}
+
+//
+// Seu teste
+//
+try {
+
+    lista = [10, 20, 30, 0]
+    assert.equal(60, somarLista(lista));
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Seu código
+//
+var somarLista = function(lista){
+    var soma = 0;
+    for (chave in lista) {
+        soma += lista[chave]
+    }
+    return soma;
+}
+
+//
+// Seu teste
+//
+try {
+
+    lista = [10, 20, 30, 0]
+    assert.equal(60, somarLista(lista));
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Outra solução na linguagem JavaScript (Node.js)
+
+A solução acima equipara-se a solução do Python. Estamos utilizando o laço "for-in", porém esse tipo de laço foi 
+introduzido na linguagem posteriormente, ou seja, como nós resolveríamos o problema (no passado)? Usando um laço "for"
+convencional e também da propriedade `length` de nosso array.
+
+```javascript
+var assert = require('assert');
+
+//
+// Seu código
+//
+var somarLista = function(lista){
+    var soma = 0;
+    for(var i = 0; i < lista.length; i++){
+        soma += lista[i];
+    }
+    return soma;
+}
+//
+// Seu teste
+//
+try {
+
+    lista = [10, 20, 30, 0]
+    assert.equal(60, somarLista(lista));
+
+} catch(e) {
+    console.log(e);
+}
+```
