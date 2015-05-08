@@ -12,7 +12,7 @@ Exercício de lógica de programação
 
 Escreva um algoritmo para carregar um vetor com os números de 1 (inclusive) a 5 (inclusive) em ordem crescente.
 
-**Comentários:** Este é o primeiro exercício envolvendo vetores e, portanto, iremos entender a diferença entre uma 
+**Comentários:** Este é o primeiro exercício envolvendo vetores e começamos a notar a grande diferença entre uma 
 linguagem de alto nível e uma de baixo nível. Obviamente que "nível" refere-se a distancia do hardware ou a proximidade
 com o "humano", não tem nada a ver com qualidade, ok?
 
@@ -155,3 +155,63 @@ assert 5 == vetor[4]
 ```
 
 Para saber mais sobre [listas](/python/listas/) lei o artigo na seção __Python__.
+
+
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Em JavaScript também não precisamos de muito para criarmos um vetor.
+
+
+```javascript
+var assert = require('assert');
+
+var vetor = [1, 2, 3, 4, 5]
+
+//
+// Testes
+//
+try {
+
+    assert.equal(1, vetor[0]);
+    assert.equal(2, vetor[1]);
+    assert.equal(3, vetor[2]);
+    assert.equal(4, vetor[3]);
+    assert.equal(5, vetor[4]);
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+E também podemos criar o vetor com um laço de repetição, veja...
+
+```javascript
+var assert = require('assert');
+
+
+var i, vetor = [];
+
+for(i = 1; i < 6; i++ ){
+    vetor.push(i)
+}
+
+//
+// Testes
+//
+try {
+
+    assert.equal(1, vetor[0]);
+    assert.equal(2, vetor[1]);
+    assert.equal(3, vetor[2]);
+    assert.equal(4, vetor[3]);
+    assert.equal(5, vetor[4]);
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+Obs: O conceito de vetor em JavaScript resume-se em um array, ou seja, um vetor é equivalente a um array unidimensional.
