@@ -213,3 +213,67 @@ for n in numStr:
 
 Legal, descobri que não há uma conversão direta de número para lista em Python e, após um longa divagação, percebe-se
 que todas as soluções recaem na solução inicial, portanto, a primeira solução é a mais indicada.
+
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+var somarDigitos = function(numero) {
+
+
+
+}
+
+
+//
+// Testes
+//
+try {
+
+    assert.equal(8, somarDigitos(2015));
+    assert.equal(15, somarDigitos(456));
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+Da mesma forma que Python, em Javascript precisamos converter o resultado da divisão para o tipo inteiro.
+
+```javascript
+var assert = require('assert');
+
+var somarDigitos = function(numero) {
+    var soma = 0;
+
+    while (numero != 0) {
+        soma   += numero % 10;
+        numero  = parseInt(numero / 10); // <--- atenção
+    }
+
+    return soma;
+}
+
+
+//
+// Testes
+//
+try {
+
+    assert.equal(8, somarDigitos(2015));
+    assert.equal(15, somarDigitos(456));
+
+} catch(e) {
+    console.log(e);
+}
+```
