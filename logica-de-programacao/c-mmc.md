@@ -155,3 +155,78 @@ def mmc(num1, num2):
 # 2 * 2 * 3 * 5 = 60
 assert 60 == mmc(12, 20)
 ```
+
+
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Função mmc
+//
+var mmc = function(num1, num2) {
+
+
+}
+
+
+//
+// Testes
+//
+try {
+
+    // 2 * 2 * 3 * 5 = 60
+    assert.equal(60 == mmc(12, 20));
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Função mmc
+//
+var mmc = function(num1, num2) {
+    resto, a, b;
+
+    a = num1;
+    b = num2;
+
+    do {
+        resto = a % b;
+
+        a = b;
+        b = resto;
+
+    } while (resto != 0);
+
+    return ( num1 * num2) / a;
+}
+
+
+//
+// Testes
+//
+try {
+
+    // 2 * 2 * 3 * 5 = 60
+    assert.equal(60 == mmc(12, 20));
+
+} catch(e) {
+    console.log(e);
+}
+```
