@@ -165,3 +165,70 @@ for index, item in enumerate(lista):
 assert iMaior == 3
 assert iMenor == 2
 ```
+
+
+
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+//
+// Sua lógica
+//
+
+
+
+
+
+//
+// Seu teste
+//
+try {
+
+    assert.equal(3, iMaior);
+    assert.equal(2, iMenor);
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+
+```javascript
+var assert = require('assert');
+
+var arr    = [6, 10, 4, 21, 9],
+    iMaior = 0,
+    iMenor = 0,
+    i =0;
+
+for(i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[iMaior]) {
+        iMaior = i;
+    }
+
+    if (arr[i] < arr[iMenor]) {
+       iMenor = i;        
+    }
+}
+
+//
+// Seu teste
+//
+try {
+
+    assert.equal(3, iMaior);
+    assert.equal(2, iMenor);
+
+} catch(e) {
+    console.log(e);
+}
+```
