@@ -76,7 +76,7 @@ int main() {
 Linguagem Python
 ---
 
-Dica: em Python tente remover os duplicados e depois comparar os tamanho da lista original.
+Dica: em Python tente remover os duplicados e depois comparar os tamanhos das listas.
 
 Se os tamanhos forem iguais sabemos que não houve alteração, nem tão pouco valores repetidos. 
 
@@ -120,7 +120,7 @@ def haDuplicados(lista):
         return False
 ```
 
-Olhando para o código percebo que tenho uma função com duas responsabilidades: remover duplicados e comparar tamanhos.
+Olhando para o código percebo que tenho uma função com duas responsabilidades: a) remover duplicados e b) comparar tamanhos.
 
 Resolvo separar as obrigações em duas funções...
 
@@ -144,9 +144,9 @@ def haDuplicados(lista):
 Já melhorou! Agora é nítido que o código funciona em duas etapas. Isso faz toda a diferença, por que agora estou olhando
 individualmente para cada função. 
 
-Estou olhando para `removerDuplicados()` e me pergunto: dá para simplificar?
+Estou olhando para `removerDuplicados()` e me pergunto dá para simplificar?
 
-Fuçando na "net" descobri que posso resolver a função em uma única linha utilizando `set()`.
+Fuçando na Internet descobri que posso resolver a função em uma única linha utilizando `set()`.
 
 ```python
 def removerDuplicados(duplicado):
@@ -195,6 +195,116 @@ Agora ficou ninja! Resolvemos tudo em um única linha.
 
 
 
+Linguagem JavaScript (Node.js)
+---
+
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
+
+
+```javascript
+var assert = require('assert');
+
+var haDuplicados = function(arr) {
+
+
+    // aqui entra a sua lógica
+
+
+}
+
+//
+// Seu teste
+//
+try {
+
+    assert.equal(true, haDuplicados([100, 200, 300, 300, 500]));
+    assert.equal(false, haDuplicados([100, 200, 300, 400, 500]));
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Solução na linguagem JavaScript (Node.js)
+
+Nós poderíamos imitar a linguagem C na solução, mas não precisamos nem perder o nosso tempo com isso. Também poderíamos 
+resolver em 2 passos, semelhante a solução em Python (removemos e depois comparamos o tamanho das listas). 
+Mas eu quero tentar algo diferente, será que conseguiremos descobrir se há ou não repetidos sem mexer no array?
+
+Sim! Veja o código...
+
+```javascript
+var assert = require('assert');
+
+var haDuplicados = function(arr) {
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        if(arr.indexOf(arr[i]) != i) {
+            return true;    
+        };
+    }
+    return false;
+}
+
+//
+// Seu teste
+//
+try {
+
+    assert.equal(true, haDuplicados([100, 200, 300, 300, 500]));
+    assert.equal(false, haDuplicados([100, 200, 300, 400, 500]));
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+Vou explicar o truque.
+
+O segredo está na utilização da função embutida `indexOf()`, ela retorna o índice do valor procurado, por exemplo...
+
+    var arr = [100, 200, 300, 300, 500];
+    console.log(arr.indexOf(100)); // 0
+    console.log(arr.indexOf(200)); // 1
+    console.log(arr.indexOf(300)); // 2
+    console.log(arr.indexOf(300)); // 2 <--- atenção
+    console.log(arr.indexOf(500)); // 4
+
+A função retorná sempre o primeiro valor encontrado e aqui está a mágica. Quando houver repetido, teremos um pequeno 
+desencontro entre valor e índice, veja as expressões abaixo...
+
+    arr.indexOf(100) == 0; // true
+    arr.indexOf(200) == 1; // true
+    arr.indexOf(300) == 2; // true
+    arr.indexOf(300) == 3; // false <--- aqui temos o valor repetido
+    arr.indexOf(500) == 4; // true
+
+Resumindo, sempre que houver valores repetidos teremos ao menos um valor `false`, logo basta percorrer o array e checar 
+se o valor atual bate com o índice (do laço, da iteração). Se ainda não entendeu, veja o código comentado abaixo.
+
+```javascript
+var haDuplicados = function(arr) {
+    var i;
+    //
+    // Vamos percorrer o array e...
+    //
+    for(i = 0; i < arr.length; i++) {
+        // ..se o índice do valor atual "indexOf(arr[i])"
+        // for diferente do índice corrente "i"
+        // retornamos "true"
+        if(arr.indexOf(arr[i]) != i) {
+            return true;    
+        };
+    }
+    // Se não houver repetido
+    // retornamos false
+    return false;
+}
+```
+
+
+
 Outras linguagens
 ---
 
@@ -202,6 +312,6 @@ Este exercício me fez refletir um pouco mais.
 
 Se por um lado "escovamos bit" na linguagem C, pelo outro usamos algo bem particular da linguagem Python. Então creio que
 ficamos em 8 e 80, dois extremos. Eu já estou me perguntando como seria essa solução em outras linguagens como, por 
-exemplo, PHP, JavaScript, Ruby, Java, etc...
+exemplo, PHP, Ruby, Java, etc...
 
 Em breve voltarei aqui para experimentar outra soluções, mas se você quiser colaborar fique à vontade!
