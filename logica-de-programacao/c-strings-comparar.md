@@ -154,3 +154,13 @@ cor2 = "amarelo"
 assert not compararString(cor1, cor2)
 assert compararString(cor1, cor1)
 ```
+
+
+Linguagem JavaScript
+---
+
+Abaixo nosso código inicial escrito em JavaScript, utilize ele para resolver o problema.
+
+```javascript
+
+```
