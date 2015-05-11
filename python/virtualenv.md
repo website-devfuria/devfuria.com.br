@@ -78,7 +78,7 @@ em outros projetos, muito menos em seu desktop.
 
 Quando terminar poderá digitar
 
-    deactivated
+    deactivate
 
 Toda vez que quiser rodar seu projeto, o __Virtualenv__ deve estar habilitado.
 
