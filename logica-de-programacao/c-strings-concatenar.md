@@ -134,6 +134,29 @@ Como já era de se esperar, em toda linguagem de alto nível, será extremamente
 Executando Python no terminal...
 
 ```python
->>> "Hello" + "world"
-'Helloworld'
+>>> "abc" + "defg"
+'abcdefg'
+```
+
+
+
+Linguagem JavaScript
+---
+
+Idem...
+
+```javascript
+> "abc" + "defg"
+'abcdefg'
+```
+
+
+
+Linguagem JavaScript
+---
+
+
+
+```javascript
+
 ```
