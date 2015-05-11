@@ -15,7 +15,7 @@ Se você nunca utilizou o Linux e está precisando de um empurrão veja a matér
 
 Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o pessoal iniciante.
 
-Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](/linux/cookbook/). veja como instalar...
+Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, veja como instalar...
 
 <div class="list-group">
     <a href="/linux/cookbook/python/" class="list-group-item">Instalando o Python 3</a>
@@ -29,6 +29,7 @@ Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](/li
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
+Veja mais [receitas de instalação](/linux/cookbook/).
 
 
 ### Artigos
