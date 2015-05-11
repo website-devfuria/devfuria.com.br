@@ -159,8 +159,14 @@ assert compararString(cor1, cor1)
 Linguagem JavaScript
 ---
 
-Abaixo nosso código inicial escrito em JavaScript, utilize ele para resolver o problema.
+Em JS temos a mesma facilidade....
 
 ```javascript
-
+> "laranja" == "laranja"
+true
+> "laranja" != "amarelo"
+true
+> 
 ```
+
+O laço de repetição é trivial.
