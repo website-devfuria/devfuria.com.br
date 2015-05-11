@@ -174,3 +174,15 @@ r
 a
 """
 ```
+
+
+
+Linguagem JavaScript
+---
+
+Sem comentários...
+
+```javascript
+> "palavra".length
+7
+```
