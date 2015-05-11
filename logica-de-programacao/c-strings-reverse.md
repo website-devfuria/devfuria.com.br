@@ -39,6 +39,10 @@ int main() {
 
 ### Solução na linguagem C
 
+Eu imagino que você encontrou uma solução diferente da mostrada abaixo.
+
+O desafio é realizar o teste de mesa do código abaixo e entender o seu funcionamento.
+
 ```c
 #include<stdio.h>
 #include<string.h>
@@ -121,3 +125,67 @@ def reverseString(text):
 ```
 
 Que tal pesquisar outras soluções?
+
+
+
+Linguagem JavaScript
+---
+
+Abaixo nosso código inicial escrito em JavaScript, utilize ele para resolver o problema.
+
+```javascript
+var assert = require('assert');
+
+var reverseString = function(s) {
+
+
+
+
+}
+
+
+//
+// Seu teste
+//
+try {
+    assert.equal("lamina", reverseString("animal"));
+} catch(e) {
+    console.log(e);
+}
+
+```
+
+
+### Solução na linguagem JavaScript
+
+Se quisermos imitar o Python podemos fazer...
+
+```javascript
+var reverseString = function(text) {
+    var l = text.split('');
+    l.reverse();
+    return l.join('');
+}
+```
+
+A mesmíssima coisa só que de forma mais sucinta...
+
+```javascript
+var reverseString = function(text) {
+    return text.split('').reverse().join('');
+}
+```
+
+
+Mas também podemos fazer um laço "negativo"...
+
+```javascript
+var reverseString = function(text) {
+    var backward = [];
+    for (var i = text.length - 1, j = 0; i >= 0; i--, j++)
+        backward[j] = text[i];
+    return backward.join('');
+}
+```
+
+[Fonte das soluções em JavaScript](http://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/ "link-externo")
