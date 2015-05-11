@@ -27,7 +27,7 @@ Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 //
 // Função para contar quantidade de vogais de determinada string
 //
-int contaVogais(char palavra[]) {
+int contarVogais(char palavra[]) {
 
     // Aqui entra a lógica do programa.
 
@@ -38,8 +38,8 @@ int contaVogais(char palavra[]) {
 //
 int main() {
 
-    char plavra[] = "abecedario";
-    assert(6 == contaVogais(plavra));
+    char palavra[] = "abecedario";
+    assert(6 == contarVogais(palavra));
 
     return 0;
 }
@@ -61,7 +61,7 @@ O código de solução (mostrado abaixo) se parece em muito com o código do pro
 //
 // Função para contar quantidade de vogais de determinada string
 //
-int contaVogais(char palavra[]) {
+int contarVogais(char palavra[]) {
     char vogais[] = "aeiouAEIOU";
     int numVogais = 0, i, j;
 
@@ -82,8 +82,8 @@ int contaVogais(char palavra[]) {
 //
 int main() {
 
-    char plavra[] = "abecedario";
-    assert(6 == contaVogais(plavra));
+    char palavra[] = "abecedario";
+    assert(6 == contarVogais(palavra));
 
     return 0;
 }
