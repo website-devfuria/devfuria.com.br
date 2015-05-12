@@ -82,11 +82,11 @@ var objeto = {
 
 Repare que tanto as propriedades quanto os métodos:
 
-- são separados por virgula.
+- são separados por vírgula.
 - utilizam os dois pontos como separador "nome: valor"
 
 
-Em JS invocamos os atributos e métodos através do "ponto" . conforme esquema a seguir:
+Em JS invocamos os atributos e métodos através do "ponto" `.` conforme esquema a seguir:
 
     # armazenando um valor
     objeto.propriedade = 123;
@@ -128,9 +128,8 @@ var Triangulo = {
                     return true;
                 }
             }
-        } else {
-            return false;
         }
+        return false;
     }
 };
 ```
