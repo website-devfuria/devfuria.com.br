@@ -80,7 +80,7 @@ print(Carro.estado) # 'novo'
 Note bem o código acima, reparou que não precisamos instanciar a classe ? Simplesmente acessamos o atributo (que é da 
 classe) diretamente `Carro.estado`.
 
-POr outro lado, repare também que a propriedade também se encontra disponível nas intâncias.
+Por outro lado, repare que a propriedade também se encontra disponível nas instâncias.
 
 
 ```python
