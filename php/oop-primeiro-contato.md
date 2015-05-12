@@ -68,11 +68,11 @@ echo $objeto->propriedade;
 
 # executando um método (uma função)
 $objeto->metodo();
-Criando a classe servidora
-O código abaixo é o esqueleto de uma classe qualquer
 
+# Criando a classe servidora
+# O código abaixo é o esqueleto de uma classe qualquer
 class Triangulo {
-    # sua propriedades
+    # suas propriedades
 
     # seus métodos
 }
@@ -88,7 +88,7 @@ As propriedades ficam no topo da classe e são precedidas por sua [visibilidade]
 <?php
 class Triangulo {
 
-    # sua propriedades
+    # suas propriedades
     public $a;
     public $b;
     public $c;
@@ -124,7 +124,7 @@ Dentro dos métodos, as variáveis, ou melhor, as propriedades são referenciada
 <?php
 class Triangulo {
 
-    # sua propriedades
+    # suas propriedades
     public $a;
     public $b;
     public $c;
