@@ -27,7 +27,7 @@ Utilize orientação a objetos para resolver o problema.
 
 Já temos o teste escrito, você deve implementar a classe `Juros`.
 
-Linguagem C
+Linguagem C++
 ---
 
 ```c
@@ -68,7 +68,7 @@ int main() {
 ```
 
 
-### Solução na linguagem C
+### Solução na linguagem C++
 
 
 ```c
@@ -111,5 +111,66 @@ int main() {
 	// Chamamos o teste unitário
     testJurosSimples();
     return 0;
+}
+```
+
+
+
+Linguagem JavaScript
+---
+
+Dessa vez não utilizaremos a função construtora como nos exemplos anteriores. Vamos fazer algo bem arcaico, diga-se de
+passagem, vamos criar um variável e instanciar o tipo primitivo `Object`. O exemplo é só para ilustrar como a programação 
+orientada a objeto pode diferenciar e muito de uma linguagem para outra.
+
+```javascript
+var assert = require('assert');
+
+var juros = new Object();
+
+juros.simples = function() {
+
+    //
+    // Aqui entra a sua lógica
+    //
+
+}
+
+try {
+
+    //
+    // Teste
+    //
+    juros.capital = 16000;
+    juros.taxa = 0.04;
+    juros.periodo = 4;
+    assert.equal(2560, juros.simples());
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Solução na linguagem JavaScript
+
+```javascript
+var assert = require('assert');
+
+var juros = new Object();
+
+juros.simples = function() {
+    return this.capital * this.taxa * this.periodo;
+}
+
+try {
+
+    juros.capital = 16000;
+    juros.taxa = 0.04;
+    juros.periodo = 4;
+    assert.equal(2560, juros.simples());
+
+} catch(e) {
+    console.log(e);
 }
 ```
