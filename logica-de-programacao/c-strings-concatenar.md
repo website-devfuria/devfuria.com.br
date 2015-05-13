@@ -151,12 +151,4 @@ Idem...
 ```
 
 
-
-Linguagem JavaScript
----
-
-
-
-```javascript
-
-```
+{% include /menus/logica-feedback.html %}

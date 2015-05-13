@@ -205,3 +205,5 @@ try {
     console.log(e);
 }
 ```
+
+{% include /menus/logica-feedback.html %}

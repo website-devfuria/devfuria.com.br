@@ -170,3 +170,7 @@ true
 ```
 
 O laço de repetição é trivial.
+
+
+
+{% include /menus/logica-feedback.html %}

@@ -186,3 +186,5 @@ Sem comentários...
 > "palavra".length
 7
 ```
+
+{% include /menus/logica-feedback.html %}

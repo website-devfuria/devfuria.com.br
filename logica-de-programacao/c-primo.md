@@ -344,3 +344,6 @@ Para você entender melhor essa questão sugiro a leitura do seguinte artigo:
 
 - [wiki.python.org.br/DeterminandoPrimos](http://wiki.python.org.br/DeterminandoPrimos "link-externo")
 
+
+
+{% include /menus/logica-feedback.html %}

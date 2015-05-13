@@ -304,14 +304,4 @@ var haDuplicados = function(arr) {
 ```
 
 
-
-Outras linguagens
----
-
-Este exercício me fez refletir um pouco mais.
-
-Se por um lado "escovamos bit" na linguagem C, pelo outro usamos algo bem particular da linguagem Python. Então creio que
-ficamos em 8 e 80, dois extremos. Eu já estou me perguntando como seria essa solução em outras linguagens como, por 
-exemplo, PHP, Ruby, Java, etc...
-
-Em breve voltarei aqui para experimentar outra soluções, mas se você quiser colaborar fique à vontade!
+{% include /menus/logica-feedback.html %}

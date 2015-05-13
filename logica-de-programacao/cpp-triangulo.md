@@ -209,3 +209,5 @@ function Triangulo(a, b, c) {
     };
 };
 ```
+
+{% include /menus/logica-feedback.html %}

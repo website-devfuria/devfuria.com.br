@@ -186,3 +186,5 @@ function Area(){
     }
 };
 ```
+
+{% include /menus/logica-feedback.html %}

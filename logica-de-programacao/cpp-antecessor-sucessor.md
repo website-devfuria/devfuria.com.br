@@ -164,3 +164,5 @@ var Calc = {
     }
 }
 ```
+
+{% include /menus/logica-feedback.html %}

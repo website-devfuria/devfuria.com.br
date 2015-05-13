@@ -189,3 +189,8 @@ var reverseString = function(text) {
 ```
 
 [Fonte das soluções em JavaScript](http://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/ "link-externo")
+
+
+
+
+{% include /menus/logica-feedback.html %}

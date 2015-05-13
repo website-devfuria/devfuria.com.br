@@ -215,3 +215,7 @@ try {
 ```
 
 Obs: O conceito de vetor em JavaScript resume-se em um array, ou seja, um vetor é equivalente a um array unidimensional.
+
+
+
+{% include /menus/logica-feedback.html %}

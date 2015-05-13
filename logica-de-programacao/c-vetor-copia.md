@@ -211,3 +211,7 @@ try {
 ```
 
 Para comparar dois arrays precisamos usar `deepEqual()` ao invés de `equal()`.
+
+
+
+{% include /menus/logica-feedback.html %}

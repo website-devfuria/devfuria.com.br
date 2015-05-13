@@ -231,3 +231,5 @@ try {
 }
 
 ```
+
+{% include /menus/logica-feedback.html %}
