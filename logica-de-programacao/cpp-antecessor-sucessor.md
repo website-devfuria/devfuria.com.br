@@ -17,7 +17,7 @@ A primeira função mostrará o antecessor de um número qualquer.
 A segunda função mostrará o sucessor de um número qualquer.
 
 
-Linguagem C
+Linguagem C++
 ---
 
 ```c
@@ -58,7 +58,7 @@ int main() {
 ```
 
 
-### Solução na linguagem C
+### Solução na linguagem C++
 
 ```c
 #include <iostream>
@@ -72,12 +72,20 @@ public:
     
     // retorna o antecessor de um número
     int antecessor(int num) {
-        return num - 1;
+
+        //
+        // sua lógica
+        //
+
     }
 
     // retorna o sucessor de um número
     int sucessor(int num) {
-        return num + 1;
+
+        //
+        // sua lógica
+        //
+
     }
 };
 
@@ -102,5 +110,57 @@ int main() {
     testAntecessor();
     testSucessor();
     return 0;
+}
+```
+
+
+Linguagem JavaScript
+---
+
+Em JavaScript eu resolvi utilizar a notação de [objeto literal](/javascript/refs/objeto-literal).
+
+O que isso significa? Significa que não iremos instanciar classe alguma, repare que temos um objeto literal e não uma
+"classe literal".
+
+```javascript
+var assert = require('assert');
+
+//
+// Um objeto literal
+//
+var Calc = {
+
+    // Método
+    antecessor: function(num){
+        return num - 1;
+    }, // reparou na vírgula ?
+
+    // Método
+    sucessor: function(num){
+        return num + 1;
+    }
+}
+
+try {
+
+    assert.equal(9, Calc.antecessor(10));
+    assert.equal(11, Calc.sucessor(10));
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Solução na linguagem JavaScript
+
+```javascript
+var Calc = {
+    antecessor: function(num){
+        return num - 1;
+    },
+    sucessor: function(num){
+        return num + 1;
+    }
 }
 ```
