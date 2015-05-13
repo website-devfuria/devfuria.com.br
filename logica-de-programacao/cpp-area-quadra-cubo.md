@@ -15,7 +15,7 @@ Seu objetivo é construir uma classe denominada `Area` que calcule tanto a área
 
 
 
-Linguagem C
+Linguagem C++
 ---
 
 ```c
@@ -53,7 +53,7 @@ void testAreaCubica() {
 // .. fim dos testes
 
 //
-// Início od programa
+// Início do programa
 //
 int main() {
     testAreaQuadrada();
@@ -62,7 +62,7 @@ int main() {
 }
 ```
 
-### Solução na linguagem C
+### Solução na linguagem C++
 
 ```c
 #include <iostream>
@@ -108,7 +108,7 @@ void testAreaCubica() {
 // .. fim dos testes
 
 //
-// Início od programa
+// Início do programa
 //
 int main() {
     testAreaQuadrada();
@@ -117,3 +117,72 @@ int main() {
 }
 ```
 
+
+
+Linguagem JavaScript
+---
+
+Em JavaScript, até especificação ECMAscript 5, não temos classe. Mas as funções podem representar uma classe e mais uma
+vez (já fizemos isso no exercício anterior) iremos utilizar uma função como classe.
+
+```javascript
+var assert = require('assert');
+
+//
+// Classe
+//
+function Area(){
+
+    //
+    // Método
+    //
+    this.quadrada = function(){
+        
+        // sua lógica
+
+    }
+
+    //
+    // Método
+    //
+    this.cubica = function(){
+        
+        // sua lógica
+
+    }
+
+};
+
+try {
+
+    var area = new Area();
+
+    // testando a área quadrada
+    area.lado1 = 3;
+    area.lado2 = 9;    
+    assert.equal(27, area.quadrada());
+
+    // testando a área cúbica
+    area.lado1 = 3;
+    area.lado2 = 6;    
+    area.lado3 = 2;    
+    assert.equal(36, area.cubica());
+
+} catch(e) {
+    console.log(e);
+}
+```
+
+
+### Solução na linguagem JavaScript
+
+```javascript
+function Area(){
+    this.quadrada = function(){
+        return this.lado1 * this.lado2;
+    }
+    this.cubica = function(){
+        return this.lado1 * this.lado2 * this.lado3;
+    }
+};
+```
