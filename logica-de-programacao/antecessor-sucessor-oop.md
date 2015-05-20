@@ -132,12 +132,20 @@ var Calc = {
 
     // Método
     antecessor: function(num){
-        return num - 1;
+
+        //
+        // sua lógica
+        //
+
     }, // reparou na vírgula ?
 
     // Método
     sucessor: function(num){
-        return num + 1;
+
+        //
+        // sua lógica
+        //
+
     }
 }
 
@@ -164,5 +172,32 @@ var Calc = {
     }
 }
 ```
+
+
+
+Linguagem Python
+---
+
+Em Python eu farei um paralelo, procurarei não instanciar a classe. Será possível? Sim, pois em Python temos:
+
+- os atributos do objeto e
+- os atributos da classe.
+
+Em nosso exemplo, estamos utilizando os atributos da classe, isso se assemelha um pouco as variáveis estáticas em outras
+linguagens, mas não o são. Variáveis estáticas em Python tomam outro caminho.
+
+```python
+# -*- coding: utf-8 -*-
+
+class Calc(object):
+    def antecessor(num):
+        return num - 1
+    def sucessor(num):
+        return num + 1
+
+assert 9 == Calc.antecessor(10)
+assert 11 == Calc.sucessor(10)
+```
+
 
 {% include /menus/logica-feedback.html %}
