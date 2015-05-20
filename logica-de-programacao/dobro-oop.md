@@ -12,6 +12,14 @@ Exercício de lógica de programação
 
 Seu objetivo é fazer uma classe denominada `Calc` com um método que retorne o dobro de um número.
 
+Este exercício nós já fizemos a versão estruturada e a versão utilizando funções, além disso a solução é estupidamente
+simples. Como é o primeiro exercício envolvendo programação orientada a objetos e, diga-se de passagem, é aqui que os
+testes unitários começam a fazer mais sentido, eu suponho que você tenho o mínimo conhecimentos sobre OOP.
+
+Para quem vem acompanhando os exercícios devemos reparar é que antes utilizávamos o compilador `gcc` (linguagem C) e 
+iremos utilizar o compilador g++ (linugagem C++).
+
+
 
 Linguagem C++
 ---
@@ -92,12 +100,57 @@ Experimente escrever outras asserções, por exemplo:
 
 
 
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Classe
+#
+class Calc(object):
+    def dobro(self, num):
+        pass
+
+
+#
+# Teste
+#
+calc = Calc()
+assert 10 == calc.dobro(5)
+```
+
+
+### Solução na linguagem Python
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Classe
+#
+class Calc(object):
+    def dobro(self, num):
+        return num * 2
+
+
+#
+# Teste
+#
+calc = Calc()
+assert 10 == calc.dobro(5)
+```
+
+
 
 Linguagem JavaScript
 ---
 
-Em JavaScript, até especificação ECMAscript 5, não temos classe. Mas as funções podem representar uma classe, é 
-exatamente o que estamos fazendo abaixo.
+Em JavaScript não temos classe (até a especificação ECMAscript 5). Porém as funções podem representar uma classe e é 
+exatamente isso o que estamos fazendo abaixo.
 
 
 ```javascript
@@ -133,6 +186,10 @@ try {
 
 
 ### Solução na linguagem JavaScript
+
+A versõa ES6 (EcmaSCript 6) já contempla a utilização de classes para JavaScript, poderíamos resolver o exercício já
+com os novos recurso da linguagem, mas por um bom tempo (escrevo este artigo em maio/2015) veremos a forma abaixo como
+a solução mais comumente encontrada.
 
 ```javascript
 var assert = require('assert');
