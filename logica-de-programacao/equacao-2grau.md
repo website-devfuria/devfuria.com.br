@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Equação de 2 grau "
 description: Exercício de lógica de programação - bhaskar.
-menu:        logica-exerc-nivel-02
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

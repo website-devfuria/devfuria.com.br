@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Média simples de 3 números "
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular a média simples.
-menu:        logica-exerc-nivel-00
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

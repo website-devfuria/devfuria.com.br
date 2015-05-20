@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Inverter string "
 description: Exercício de lógica de programação para inverter uma string.
-menu:        logica-exerc-nivel-04s
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

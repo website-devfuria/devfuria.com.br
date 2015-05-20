@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Triângulo "
 description: Exercício de lógica de programação (com testes unitários e OOP) para descobrir se os lados informados formam ou não um triângulo.
-menu:        logica-exerc-oop-00
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Concatenar duas strings "
 description: Exercício de lógica de programação para concatenar duas strings.
-menu:        logica-exerc-nivel-04s
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

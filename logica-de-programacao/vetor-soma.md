@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Função para somar vetor "
 description: "Exercício de lógica de programação: criar função para somar vetor."
-menu:        logica-exerc-nivel-04v
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

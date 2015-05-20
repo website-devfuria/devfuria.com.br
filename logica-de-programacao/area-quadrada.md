@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Área quadrada "
 description: Exercício de lógica de programação resolvido onde o objetivo é encontrar a área quadrada.
-menu:        logica-exerc-nivel-00
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

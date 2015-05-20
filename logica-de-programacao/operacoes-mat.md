@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Funções para as 4 operações artiméticas "
 description: Escreva uma função para cada uma das quatro operações matemáticas simples.
-menu:        logica-exerc-nivel-02
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

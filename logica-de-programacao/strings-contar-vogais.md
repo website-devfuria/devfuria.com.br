@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Contar vogais "
 description: Exercício de lógica de programação para contar a quantidade de vogais de uma string.
-menu:        logica-exerc-nivel-04s
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

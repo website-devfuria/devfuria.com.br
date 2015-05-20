@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Somar dígitos "
 description: Exercício de lógica de programação para dígitos de um inteiro.
-menu:        logica-exerc-nivel-03
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

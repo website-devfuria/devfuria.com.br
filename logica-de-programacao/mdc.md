@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "MDC máximo divisor comum "
 description: Exercício de lógica de programação ara descubrir o MDC (máximo divisor comum).
-menu:        logica-exerc-nivel-03
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

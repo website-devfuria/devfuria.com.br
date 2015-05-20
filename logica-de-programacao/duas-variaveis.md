@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Trocar o valor de duas variáveis "
 description: Exercício de lógica de programação para trocar o valor de duas variáveis.
-menu:        logica-exerc-nivel-00
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

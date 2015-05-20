@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Custo de fabricação de um carro "
 description: Exercício de lógica de programação resolvido para descobrir o custo final de um carro.
-menu:        logica-exerc-nivel-01
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Votos em relação ao total de eleitores "
 description: Exercício de lógica de programação onde calculamos o porcentual de votos em relação ao total de eleitores.
-menu:        logica-exerc-nivel-01
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}

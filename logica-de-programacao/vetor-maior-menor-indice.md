@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       "Maior e menor índice do vetor "
 description: Exercício de lógica de programação para descobrir o índice do maior e o menor valor do vetor.
-menu:        logica-exerc-nivel-04v
+menu:        logica-exercicios
 ---
 
 {% include /menus/logica-paraquedas.html %}
