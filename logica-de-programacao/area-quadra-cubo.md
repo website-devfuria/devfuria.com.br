@@ -13,6 +13,8 @@ Exercício de lógica de programação
 Seu objetivo é construir uma classe denominada `Area` que calcule tanto a área quadrada (primeiro método) como a
 área cúbica (segundo método).
 
+Utilize programação orientada a objetos.
+
 
 
 Linguagem C++
@@ -116,6 +118,60 @@ int main() {
     return 0;
 }
 ```
+
+
+
+
+Linguagem Python
+---
+
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
+
+```python
+# -*- coding: utf-8 -*-
+
+#
+# Classe
+#
+class Area(object):
+    def quadrada(self):
+        pass
+
+    def cubica(self):
+        pass
+
+#
+# Testes
+#
+area = Area()
+
+# testando a área quadrada
+area.lado1 = 3
+area.lado2 = 9    
+assert 27 == area.quadrada()
+
+# testando a área cúbica
+area.lado1 = 3
+area.lado2 = 6    
+area.lado3 = 2    
+assert 36 == area.cubica()
+```
+
+
+### Solução na linguagem Python
+
+```python
+#
+# Classe
+#
+class Area(object):
+    def quadrada(self):
+        return self.lado1 * self.lado2
+
+    def cubica(self):
+        return self.lado1 * self.lado2 * self.lado3
+```
+
 
 
 
