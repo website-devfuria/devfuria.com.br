@@ -20,15 +20,20 @@ RewriteRule ^schemas\/sitemap0-9.xml?$ "http\:\/\/www.devfuria.com\.br\/sitemap\
 
 RewriteRule ^flavio.alexandre-micheletti.php "http\:\/\/www\.devfuria\.com\.br\/flavio-alexandre-micheletti.html" [R=301,L]
 
-RewriteRule ^logica-de-programacao\/cpp-(.*)?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/$1" [R=301,L]
-RewriteRule ^logica-de-programacao\/c-(.*)?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/$1" [R=301,L]
+RewriteRule ^logica-de-programacao\/introducao-linguagem-c\/?$ "http\:\/\/www\.devfuria\.com\.br\/c\/introducao-linguagem-c\/" [R=301,L]
+RewriteRule ^logica-de-programacao\/como-compilar-no-linux\/?$ "http\:\/\/www\.devfuria\.com\.br\/c\/como-compilar-no-linux\/" [R=301,L]
+RewriteRule ^logica-de-programacao\/entendendo-o-assert-c\/?$  "http\:\/\/www\.devfuria\.com\.br\/c\/entendendo-o-assert-c\/" [R=301,L]
+RewriteRule ^logica-de-programacao\/rodando-os-testes\/?$      "http\:\/\/www\.devfuria\.com\.br\/c\/rodando-os-testes\/" [R=301,L]
+
+RewriteRule ^logica-de-programacao\/cpp-(.*)?$       "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/$1" [R=301,L]
+RewriteRule ^logica-de-programacao\/c-(.*)?$         "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/$1" [R=301,L]
 RewriteRule ^logica-de-programacao\/basico\/(.*)\/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 RewriteRule ^logica-de-programacao\/if-else\/?$      "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 RewriteRule ^logica-de-programacao\/o-que-e-tdd\/?$  "http\:\/\/www\.devfuria\.com\.br\/tdd\/o-que-e-tdd\/" [R=301,L]
-RewriteRule ^logica-de-programacao\/funcoes-procedimentos\/?$                     "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
-RewriteRule ^logica-de-programacao\/oop-programacao-orientada-a-objetos\/?$      "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^logica-de-programacao\/funcoes-procedimentos\/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^logica-de-programacao\/oop-programacao-orientada-a-objetos\/?$ "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 RewriteRule ^logica\/basico\/(.*)\/?$                "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
-RewriteRule ^logica\/?$                                 "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
+RewriteRule ^logica\/?$                              "http\:\/\/www\.devfuria\.com\.br\/logica-de-programacao\/" [R=301,L]
 
 RewriteRule ^php\/relacao-completa\/?$               "http\:\/\/www\.devfuria\.com\.br\/php\/" [R=301,L]
 RewriteRule ^php\/nivel-zero\/(.*)\/?$               "http\:\/\/www\.devfuria\.com\.br\/php\/" [R=301,L]
