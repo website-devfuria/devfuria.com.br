@@ -94,4 +94,4 @@ com TDD, __os testes ajudam a documentar o funcionamento do código.__
 Próximo exemplo de TDD
 ---
 
-- [Simples exemplo de TDD - Cálculo da área](/tdd/exemplo-tdd-area-quadra/)
+- [Simples exemplo de TDD - Cálculo da área](/tdd/exemplo-tdd-area/)
