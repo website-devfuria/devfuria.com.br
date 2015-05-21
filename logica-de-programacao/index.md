@@ -10,18 +10,18 @@ Eu criei essa seção (re)pensando uma forma mais eficiente de ensinar a lógica
 
 Este curso é diferente de tudo o que você viu sobre lógica (bem diferente daqueles exercícios toscos da faculdade).
 
-Veremos lógica do ponto de vista de 2 linguagens: C e Python e ambas acompanhadas de testes unitários.
+Veremos lógica do ponto de vista de 3 linguagens: C (e C++), Python e JavaScript (Node.js) todas elas acompanhadas de 
+__testes unitários__. Ou seja, você saberá que o seu código está certo quando os testes estiverem passando.
 
-Aposto que você nunca viu um curso de lógica apoiado por 2 linguagens e testes unitários!
+Se precisa de informações sobre as linguagens, veja as seções abaixo...
 
-O que você precisa saber sobre a linguagem C para começar:
+- [C](/c)
+- [Python](/python)
+- [JavaScript](/javascript)
+- [Node.js](/javascript/node.js)
 
-- [Rápida introdução a linguagem C (apenas o suficiente para realizarmos os exercícios)](/logica-de-programacao/introducao-linguagem-c/)
-- [Como compilar no Linux](/logica-de-programacao/como-compilar-no-linux/)
-- [Entenda a função `assert()`](/logica-de-programacao/entendendo-o-assert-c/)
-- ["Rodando os testes" ou "compilando e executando", socorro ?](/logica-de-programacao/rodando-os-testes/)
-
-
+Talvez você precise saber um pouco sobre [testes unitários](/tdd/) e também um pouco sobre o [Linux]() pois iremos
+utilizar muito o terminal.
 
 
 ### Exercícios nível 0 (mais fácil que a Seleção Brasileira...)
