@@ -52,18 +52,25 @@ RewriteRule ^php\/imagens\/artigo2.dia?$ "http\:\/\/www\.devfuria\.com\.br\/php\
 RewriteRule ^python\/sequencias\/?$               "http\:\/\/www\.devfuria\.com\.br\/python\/sequencias-fatiamento\/" [R=301,L]
 RewriteRule ^python\/google-exercises-list1/_1?$  "http\:\/\/www\.devfuria\.com\.br\/python\/google-exercises-list1\/" [R=301,L]
 RewriteRule ^python\/google-exercises-list1/_2?$  "http\:\/\/www\.devfuria\.com\.br\/python\/google-exercises-list1\/" [R=301,L]
+RewriteRule ^python\/os.path\/python\/os\/?$      "http\:\/\/www\.devfuria\.com\.br\/python\/os.path\/" [R=301,L]
+RewriteRule ^python\/entenda-__name__-__main__/python/modulos-pacotes?$      "http\:\/\/www\.devfuria\.com\.br\/python\/modulos-pacotes\/" [R=301,L]
+RewriteRule ^python\/flask\/linux\/cookbook\/python\/?$ "http\:\/\/www\.devfuria\.com\.br\/linux\/cookbook\/python\/" [R=301,L]
 
 RewriteRule ^linux\/instalando-putty\/linux\/como-acessar-servidor-remotamente\/?$ "http\:\/\/www\.devfuria\.com\.br\/linux\/como-acessar-servidor-remotamente\/" [R=301,L]
 RewriteRule ^linux\/iinstalando-vlc\/?$             "http\:\/\/www\.devfuria\.com\.br\/linux\/instalando-vlc\/" [R=301,L]
 RewriteRule ^linux\/instalando-(.*)?$               "http\:\/\/www\.devfuria\.com\.br\/linux\/cookbook\/$1" [R=301,L]
 RewriteRule ^linux\/index\-receitas\-instalacoes\/?$  "http\:\/\/www\.devfuria\.com\.br\/linux\/cookbook\/" [R=301,L]
+RewriteRule ^linux\/cookbook\/apache-via-yum-apt-get.md\/?$  "http\:\/\/www\.devfuria\.com\.br\/linux\/cookbook\/apache-via-yum-apt-get\/" [R=301,L]
 
 RewriteRule ^javascript\/objeto-global\/?$             "http\:\/\/www\.devfuria\.com\.br\/javascript\/refs\/objeto-global\/" [R=301,L]
 RewriteRule ^javascript\/numeros-randomicos\/?$        "http\:\/\/www\.devfuria\.com\.br\/javascript\/numeros-aleatorios\/" [R=301,L]
 RewriteRule ^javascript\/backbone-hello-world\/?$      "http\:\/\/www\.devfuria\.com\.br\/javascript\/backbone-introducao\/" [R=301,L]
-RewriteRule ^javascript\/node.js/ns-03-my-first-io\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/node.js\/nodejs-03-my-first-io\/" [R=301,L]
+RewriteRule ^javascript\/node.js/ns-03-my-first-io\/?$    "http\:\/\/www\.devfuria\.com\.br\/javascript\/node.js\/nodejs-03-my-first-io\/" [R=301,L]
 RewriteRule ^javascript\/node.js/nodejs03-my-first-io\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/node.js\/nodejs-03-my-first-io\/" [R=301,L]
-RewriteRule ^javascript\/node.js/ns-02-baby-steps\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/node.js\/nodejs-02-baby-steps\/" [R=301,L]
+RewriteRule ^javascript\/node.js/ns-02-baby-steps\/?$     "http\:\/\/www\.devfuria\.com\.br\/javascript\/node.js\/nodejs-02-baby-steps\/" [R=301,L]
+RewriteRule ^javascript\/node.js/ns-01-hello-word\/?$     "http\:\/\/www\.devfuria\.com\.br\/javascript\/node.js\/nodejs-01-hello-world\/" [R=301,L]
+RewriteRule ^javascript\/node.js/programando-com-node-utils-\/?$ "http\:\/\/www\.devfuria\.com\.br\/javascript\/node.js\/programando-com-node-utils-merge\/" [R=301,L]
+RewriteRule ^javascript\/mocha-teste-seu-javascript\/?$   "http\:\/\/www\.devfuria\.com\.br\/javascript\/node.js\/mocha-teste-seu-javascript\/" [R=301,L]
 
 RewriteRule ^javascript\/refs\/onclick\/?$                "http\:\/\/www\.devfuria\.com\.br\/javascript\/tratando-eventos\/" [R=301,L]
 RewriteRule ^javascript\/refs\/dom-add\/?$                "http\:\/\/www\.devfuria\.com\.br\/javascript\/dom\/" [R=301,L]
@@ -135,10 +142,11 @@ RewriteRule ^js\/canvas\/canvas-grid/\/?$                   "http\:\/\/www\.devf
 
 RewriteRule ^html-css\/basico\/primeiro-html\/$   "http\:\/\/www\.devfuria\.com\.br\/html-css\/primeiro-html\/" [R=301,L]
 RewriteRule ^html-css\/basico\/(.*)?$             "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
-RewriteRule ^html-css\/formularios-web\/$         "http\:\/\/www\.devfuria\.com\.br\/html-css\/formularios\/" [R=301,L]
+RewriteRule ^html-css\/formularios-web$         "http\:\/\/www\.devfuria\.com\.br\/html-css\/formularios\/" [R=301,L]
 RewriteRule ^html-css\/index.php$                 "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
 RewriteRule ^html-css\/historia-html\/$           "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
 RewriteRule ^html-css\/historia-html$             "http\:\/\/www\.devfuria\.com\.br\/html-css\/" [R=301,L]
+RewriteRule ^html-css\/html-valido\/html-css\/html5\/$ "http\:\/\/www\.devfuria\.com\.br\/html-css\/html5\/" [R=301,L]
 
 RewriteRule ^regexp?$                             "http\:\/\/www\.devfuria\.com\.br\/regex\/" [R=301,L]
 RewriteRule ^regexp\/(.*)?$                       "http\:\/\/www\.devfuria\.com\.br\/regex\/" [R=301,L]
@@ -191,5 +199,6 @@ RewriteRule ^tdd\/exemplo-tdd-salario-reajuste\/?$        "http\:\/\/www\.devfur
 RewriteRule ^tdd\/exemplo-tdd-antecessor-sucessor\/?$     "http\:\/\/www\.devfuria\.com\.br\/tdd\/" [R=301,L]
 RewriteRule ^tdd\/exemplo-tdd-media-simples\/?$           "http\:\/\/www\.devfuria\.com\.br\/tdd\/" [R=301,L]
 RewriteRule ^tdd\/exemplo-tdd-positivo\/?$                "http\:\/\/www\.devfuria\.com\.br\/tdd\/" [R=301,L]
+RewriteRule ^tdd\/exemplo-tdd-juros-simples-oop\/?$       "http\:\/\/www\.devfuria\.com\.br\/tdd\/exemplo-tdd-juros-simples\/" [R=301,L]
 
 

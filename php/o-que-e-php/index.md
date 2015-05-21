@@ -90,7 +90,7 @@ $content = "o conteúdo de nossa página HTML";
 require "nossa-view.php";
 ```
 
-Outro exemplo seria o carregamento de um [formulário web](/html-css/formularios-web) com valores vindos do banco de dados,
+Outro exemplo seria o carregamento de um [formulário web](/html-css/formularios/) com valores vindos do banco de dados,
 veja o código:
 
 
