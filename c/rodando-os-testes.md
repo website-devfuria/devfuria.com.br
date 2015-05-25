@@ -4,27 +4,24 @@ title:       "'Rodando os testes' ou 'compilando e executando', socorro ?"
 description: Entendendo como o assert nos ajudará.
 ---
 
-Estamos no curso de lógica de programação aliada a prática do __TDD__. Se você leu as matérias anteriores deve estar
-um pouco confuso em relação ao processo, afinal de contas __estamos "rodando os testes" ou "compilando e executando"__?
+Estamos na seção da linguagem C/C++ tentando entender o mínimo sobra a linguagem para poder realizar os exercícios
+ de [lógica de programação (aliadas a testes unitários)](/logica-de-programacao/) propostos na mesma seção.
+
+Se você leu as matérias anteriores deve estar um pouco confuso em relação ao processo, afinal de contas __estamos 
+"rodando os testes" ou "compilando e executando"__?
 
 É isso o que eu quero esclarecer.
 
-__TDD__ é o ato de escrever testes unitários antes de codificar. É muito mais do que isso, mas por enquanto essa idéia basta.
+Ao juntar as duas coisas (lógica de programação e testes unitários) eu inseri um "complicador": os próprios testes unitários.
+Em outra palavras, testes unitários não é um assunto básico e, por tanto, me deparei com a seguinte questão:
 
-Ao juntar as duas coisas (lógica de programação e TDD) eu inseri um "complicador": os testes unitários.
-
-A evolução mais corriqueira na vida de um programador é a seguinte sequência:
-
-1. Lógica de programação
-2. Programação orientada a objeto
-3. Testes unitários (incluindo um framework de testes)
-4. TDD
-
-Como ensinar lógica de programação e __TDD__ sem antes ensinar programação orientada a objetos, framework de testes,
-testes unitários?
+Como ensinar lógica de programação juntamente com testes unitários sem antes ensinar programação orientada a objetos, 
+framework de testes, e as questões relacionados ao universo de testes unitários?
 
 Eu tentei simplificar utilizando a função "assert()". A consequencia é que, devido ao funcionamento da função `assert()`,
 o significado de "rodar os testes" passa a ser "compile e execute" e a confusão em torno disso pode nos atrapalhar.
+
+Vamos colocar os pingos nos is...
 
 
 
@@ -141,3 +138,15 @@ __Executando (rodando os testes):__
 Se o `assert()` ficar em silêncio, testes passando (green).
 
 Se o `assert()` gritar, testes falhando (red).
+
+
+
+E agora?
+---
+
+Agora acredito que você está pronto para praticar os exercícios de lógica de programação aliados a prática de testes
+unitários.
+
+- [Lógica de programação aliada a testes unitários](/logica-de-programacao/)
+
+ Bons estudos!

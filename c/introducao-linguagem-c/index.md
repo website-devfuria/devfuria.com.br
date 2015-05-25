@@ -57,7 +57,7 @@ Vem do cabeçalho `stdio` , que é a abreviação de "standar I/O" (input/output
 
 Digite o código acima em um editor de texto qualquer e depois compile/rode.
 
-Você deve saber como [compilar](/logica-de-programacao/como-compilar-no-linux/) o código no terminal.
+Você deve saber como [compilar](/c/como-compilar-no-linux/) o código no terminal.
 
 
 
@@ -356,3 +356,9 @@ int main()
 Ao utilizar a função `scanf()`, repare que a acrescentamos o operador unário `&` antes do nome da variável:
 
     scanf("%d", &numero);
+
+
+Leia agora
+---
+
+- [Como compilar códigos em C/C++ no Linux](/c/como-compilar-no-linux/)

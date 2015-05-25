@@ -1,10 +1,10 @@
 ---
 layout:      grid12-article
-title:       Como compilar no Linux
-description: Como compilar códigos em c/c++ no Linux
+title:       Como compilar códigos em C/C++ no Linux
+description: Como compilar códigos em C/C++ no Linux
 ---
 
-Não, não é coisa de outro mundo, usar __c/c++__ no __Linux__ é muito fácil.
+Não, não é coisa de outro mundo, usar __C/C++__ no __Linux__ é muito fácil.
 
 Obviamente, você precisará ter o [Linux]("/../../../linux) instalado, nem que seja em uma máquina virtual.
 
@@ -23,9 +23,10 @@ Se estiver no Fedora, CentOS:
 Editor de texto
 ---
 
-Esse também não pode faltar. O __gedit__ é o editor de texto padrão em diversas distro's, quer dizer nem precisa instalar.
+Esse também não pode faltar, o __gedit__ é o editor de texto padrão em diversas distro's, quer dizer nem precisa instalar.
+É como se fosse __notpad__ no Windows.
 
-É como se fosse __notpad__ só que muito, muito melhor.
+Obviamente, utilize o seu editor preferido.
 
 
 
@@ -42,7 +43,7 @@ Vamos quebrá-la para entendê-la.
     -o seuprograma.run   // e gere o arquivo binário (executável)
 
 
-A extensão `run` é facultativa. Quero dizer, posso colocar qualquer coisa.
+A extensão `run` é facultativa, quero dizer, posso colocar qualquer coisa.
 
 O Linux não é como o Windows, no Linux não precisa nem de extensão, ok?
 
@@ -87,3 +88,10 @@ Dicas rápidas de uso do terminal
 - `seta para cima` pesquisa histórico de comandos
 - `CTRL + U` limpa linha
 - `TAB` Acione a tecla __TAB__ para usufruir do "autocomplete"
+
+
+
+Leia agora
+---
+
+- [Entenda a função assert()](/c/entendendo-o-assert-c/)

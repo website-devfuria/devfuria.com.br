@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Entenda a função assert()
-description: Aprenda como utilizar a função assert() na linguagem c
+description: Aprenda como utilizar a função assert() na linguagem C
 ---
 
 
@@ -69,7 +69,7 @@ O exemplo anterior "false" funcionará corretamente (silenciosamente), veja:
         return 0;
     }
 
-É como se a linha `assert(1 == 2);` não estivesse alí, ela é ignorada.
+É como se a linha `assert(1 == 2);` não estivesse ali, ela é ignorada.
 
 
 Importante
@@ -83,10 +83,13 @@ apenas isso, para __simular um teste unitário__.
 Ao laborar o curso, eu procurava o forma mais simples de fazer um teste sem complicar as coisas, essa forma foi através
 do `assert()`.
 
-Nâo vá pensar que é para utilizar o `assert()` a "torto e direito", vamos utilizá-lo apenas em quanto ele for útil
-para o aprendizado de lógia de programação com __TDD__.
+Não vá pensar que é para utilizar o `assert()` a "torto e direito", vamos utilizá-lo apenas em quanto ele for útil
+para o aprendizado de lógica de programação juntamente com testes unitários.
 
 
 
 
+Leia agora
+---
 
+- ['Rodando os testes' ou 'compilando e executando', socorro ?](/c/rodando-os-testes/)
