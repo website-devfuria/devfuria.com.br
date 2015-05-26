@@ -2,15 +2,24 @@
 layout: base
 ---
 
-<div class="grid grid-pad">
-    <div class="col-1-1">
-        {% include breadcrumb.html %}
-        <div class="content">
-            <header>
-                <h1>{{ page.title }}</h1>
-                <small>{{ page.date | date: "%-d-%b-%Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small>
-            </header>
-            {{ content }}
+<div class="container">
+    <div class="col-lg-12">
+        <div class="row">
+            {% include breadcrumb.html %}
+        </div>
+
+        <div class="page-header text-center" style="background-color: #286090; border-radius: 6px;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 style="color: #FFF">{{ page.title }}</h1>
+                    </div>        
+                </div>        
+        </div>        
+
+        <div class="row">
+            <div class="col-lg-12">
+                {{ content }}
+            </div>
         </div>
     </div>
 </div>
