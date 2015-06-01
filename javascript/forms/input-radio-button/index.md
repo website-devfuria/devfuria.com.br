@@ -1,11 +1,9 @@
 ---
 layout:      grid93-article
 title:       Manipulando radios buttons com JavaScript
-description: Aprendendo como manipular um radios buttons em JavaScript
+description: Nesta matéria vamos aprender como trabalhar com radios buttons através do JavaScript
 menu:        javascript-forms
 ---
-
-Nesta matéria vamos aprender como trabalhar com radios buttons através do JavaScript.
 
 O __input radio__ é um controle de opções, é uma única escolha entre as opções possíveis.
 

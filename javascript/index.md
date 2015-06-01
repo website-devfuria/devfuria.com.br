@@ -46,9 +46,9 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 ### Ajax
 
 <div class="list-group">
-    <a href="/javascript/ajax/" class="list-group-item">Ajax - Introdução</a>
-    <a href="/javascript/ajax-no-inicio/" class="list-group-item">Ajax - Como era utilizado no começo</a>
-    <a href="/javascript/ajax-php-jquery/" class="list-group-item">Ajax - Aprenda a utilizar Ajax com PHP e jQuery</a>
+    <a href="/javascript/ajax/" class="list-group-item">Introdução ao Ajax</a>
+    <a href="/javascript/ajax-no-inicio/" class="list-group-item">Como era utilizado o Ajax no começo</a>
+    <a href="/javascript/ajax-php-jquery/" class="list-group-item">Aprenda a utilizar Ajax com PHP e jQuery</a>
 </div> 
 
 

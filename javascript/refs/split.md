@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       JavaScript - split()
-description: Referência prática ao método split() - JavaScript
+description: Referência prática ao método split()
 menu:        javascript-refs
 ---
 

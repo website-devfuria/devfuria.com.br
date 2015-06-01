@@ -1,7 +1,7 @@
 ---
 layout:      grid12-index
 title:       JavaScript - Trabalhando com formulário web
-description: Um sub seção que trata formulários web e JavaScript
+description: Sub seção que trata formulários web e JavaScript onde veremos artigos que ensinam como trabalhar com cada controle de um formulário web.
 ---
 
 Se vc caiu nesta página de para quedas não deixe de ler a [página principal sobre JavaScript](/javascript/)

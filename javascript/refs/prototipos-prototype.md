@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       JavaScript - objeto prototype
-description: Referência prática do objeto prototype - JavaScript
+description: A propriedade `prototype` é usada quando uma função atua como construtora. <br>Ela se refere a um objeto que serve como protótipo <br>para uma classe de objetos inteira
 menu:        javascript-refs
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       Ajax - Introdução
+title:       Introdução ao Ajax
 description: Este artigo é uma introdução a técnica Ajax e ao objeto XMLHttpdRequest
 ---
 
@@ -181,5 +181,5 @@ Fontes
 Veja também
 ---
 
-- [Ajax - Como era utilizado no começo](/javascript/ajax-no-inicio/)
-- [Ajax - Aprenda a utilizar Ajax com PHP e jQuery](/javascript/ajax-php-jquery/)
+- [Como era utilizado o Ajax no começo](/javascript/ajax-no-inicio/)
+- [Aprenda a utilizar Ajax com PHP e jQuery](/javascript/ajax-php-jquery/)

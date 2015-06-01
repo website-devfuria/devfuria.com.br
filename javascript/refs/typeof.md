@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       JavaScript - typeof
-description: Referência prática de typeof - JavaScript
+description: Referência prática de typeof
 menu:        javascript-refs
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Iniciando em JavaScript
-description: Este é um pequeno artigo sobre como iniciar sua experiência com a linguagem __JavaScript__, veremos como iniciar em JavaScript tanto no lado do servidor como no lado do cliente
+description: Este é um pequeno artigo sobre como iniciar sua experiência com a linguagem JavaScript,<br/>veremos como iniciar em JavaScript tanto no lado do servidor como no lado do cliente.
 ---
 
 Este é um pequeno artigo, bastante prático e direto, sobre como iniciar sua experiência com a linguagem __JavaScript__.

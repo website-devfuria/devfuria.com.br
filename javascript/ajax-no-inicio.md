@@ -1,10 +1,10 @@
 ---
 layout:      grid12-article
-title:       Ajax como era utilizado no começo
-description: Este artigo apresenta a sintaxe de como era utilizado o objeto __XMLHttpdRequest__ no início.
+title:       Como era utilizado o Ajax no começo
+description: Este artigo apresenta a sintaxe de como era utilizado o objeto XMLHttpdRequest no início.
 ---
 
-Este artigo apresenta a sintaxe de como era utilizado o objeto __XMLHttpRequest__ no início da utlização da técnica __AJAX__.
+Este artigo apresenta a sintaxe de como era utilizado o objeto __XMLHttpRequest__ no início da utilização da técnica __AJAX__.
 
 A primeira forma de utilização do objeto __XMLHttpRequest__ incluía o manipulador de evento `onreadystatechange`. Na [especifiação
 do objeto](https://xhr.spec.whatwg.org/ "link-externo") data em dezembro de 2014 o evento `onreadystatechange` ainda 
@@ -99,5 +99,5 @@ Fonte [MDN - Começando com Ajax](https://developer.mozilla.org/pt-BR/docs/Ajax/
 Veja também
 ---
 
-- [Ajax - Introdução](/javascript/ajax/)
-- [Ajax - Aprenda a utilizar Ajax com PHP e jQuery](/javascript/ajax-php-jquery/)
+- [Introdução ao Ajax](/javascript/ajax/)
+- [Aprenda a utilizar Ajax com PHP e jQuery](/javascript/ajax-php-jquery/)

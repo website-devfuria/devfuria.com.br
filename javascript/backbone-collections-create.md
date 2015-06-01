@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Backbone - Collections.create()
+title:       Backbone<br/>Collections.create()
 description: 
 menu:        javascript-backbone
 ---

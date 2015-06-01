@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Backbone exemplo 03
-description: Pequeno exemplo de script Backbone (JavaScript) onde exploro templates no HTML e os eventos de modelos disparando ações da visão.
+title:       "Backbone exemplo 03:<br>tTmplates e eventos de Modelos"
+description: Pequeno exemplo de script Backbone (JavaScript) onde exploro<br>templates no HTML e os eventos de modelos disparando ações da visão.
 menu:        javascript-backbone
 ---
 

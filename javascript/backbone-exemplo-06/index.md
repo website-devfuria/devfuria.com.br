@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Backbone exemplo 06
-description: Pequeno exemplo de script Backbone (JavaScript) onde exploramos o controle HTML checkbox juntamente com o framework Bootstrap
+title:       "Backbone exemplo 06:<br>checkbox + Bootstrap"
+description: Pequeno exemplo de script Backbone (JavaScript) onde<br>exploramos o controle HTML checkbox juntamente com o framework Bootstrap
 menu:        javascript-backbone
 ---
 

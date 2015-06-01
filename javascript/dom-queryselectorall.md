@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       JavaScript - querySelectorAll()
-description: Referência prática da função querySelectorAll() - JavaScript
+description: Referência prática da função querySelectorAll()
 menu:        javascript-dom
 ---
 

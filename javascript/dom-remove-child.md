@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       JavaScript - Remove Child (DOM)
-description: Referência prática da função removeChild() - JavaScript
+description: Referência prática da função removeChild()
 menu:        javascript-dom
 ---
 

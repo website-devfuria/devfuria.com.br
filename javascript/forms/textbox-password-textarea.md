@@ -1,10 +1,9 @@
 ---
 layout:      grid93-article
-title:       Manipulando os controles text, password e textarea com JavaScript
+title:       Manipulando os caixas de texto (textbox)<br> com JavaScript
 description: Aprendendo como os campos textbox, password e textarea funcionam com o Javascript
 menu:        javascript-forms
 ---
-
 
 Nesta matéria veremos como o JavaScript pode trabalhar com os controles:
 

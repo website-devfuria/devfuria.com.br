@@ -1,11 +1,9 @@
 ---
 layout:      grid93-article
 title:       Manipulando checkboxes com JavaScript
-description: Aprendendo como manipular um checkbox em JavaScript
+description: Nesta matéria vamos aprender como trabalhar com checkboxes através do JavaScript
 menu:        javascript-forms
 ---
-
-Nesta matéria vamos aprender como trabalhar com checkboxes através do JavaScript.
 
 Checkbox é um controle com dois estados: ligado ou desligado.
 
