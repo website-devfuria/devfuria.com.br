@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD - Triângulo"
-description: Exemplo de TDD na linguagem Python, portanto, fazendo uso de programação orientada a objeto onde construirmos uma classe que representa um triângulo (geometria)
+title:       "Simples exemplo de TDD <br>Triângulo"
+description: Exemplo de TDD na linguagem Python fazendo uso de programação orientada a objetos onde <br>construirmos uma classe que representa um triângulo (geometria)
 menu:        tdd-exemplos-simples
 ---
 

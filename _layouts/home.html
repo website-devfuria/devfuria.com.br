@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt">
-    {% include head.html %}
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href="/assets/css/docs.css" rel="stylesheet">
-    <style type="text/css">
-        body {
-            padding-top: 0px;
-        }
-        .bs-masthead {
-            padding: 0px 15px;
-        }
-        h1 {
-            font-weight: bolder;
-            color: #2F4F4F
-        }
-        .btn {
-            margin-bottom: 3px;
-            width: 90%;
-        }
-        @media (min-width:  700px) {
-            .btn {
-                width: 40%;
+    <head>
+        {% include head.html %}
+        <style type="text/css">
+            h3 {
+                margin-top: 10px;
+                font-weight: normal;
             }
-        }
-        @media (min-width:  992px) {
             .btn {
-                width: 21%;
+                margin-bottom: 3px;
+                width: 90%;
             }
-        }
-    </style>    
+            @media (min-width:  700px) {
+                .btn {
+                    width: 40%;
+                }
+            }
+            @media (min-width:  992px) {
+                .btn {
+                    width: 21%;
+                }
+            }
+        </style>         
+    </head>
     <body>
         {{ content }}
     </body>
-    {% include footer-js.html %}
+    {% include footer-js.html %}    
 </html>
