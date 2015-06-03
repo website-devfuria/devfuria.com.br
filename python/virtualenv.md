@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Virtualenv
-description: Matéria que mostra como dar os primeiros passos com o Virtualenv um simulador de ambientes para Python
+description: Matéria que mostra como dar os primeiros passos<br> com o Virtualenv um simulador de ambientes para Python
 menu:        python-artigos
 ---
 
@@ -28,7 +28,7 @@ Para instalar o Virtualenv com Python 3:
 Se você já possui uma pasta para o projeto, por exemplo `foo`, execute:
 
     cd /path/para/seus/projetos/foo
-    virtualenv
+    virtualenv .
 
 Se você ainda não possui uma pasta para o projeto, execute
 
