@@ -1,39 +1,126 @@
 ---
 layout:       grid12-article
-title:        Refatoração e código limpo
-description:  Dandos os primeiros passos na refatoração de código. Aprenda a codificar de forma mais coesa.
+title:        Código limpo
+description:  
 ---
 
+Como codificar de forma limpa e coesa? Pergunta difícil!
 
-onde entra isso...
+Trata-se de uma pergunta bastante aberta, não há uma única resposta.
 
-+ YAGNI = You Aren't Going Need It
-+ DRY = Don't Repeat Yourself
-+ KISS = Keep It Simple, Stupid
+Neste artigo elenco "técnicas" que nós ajudam a alcançar o objetivo: código limpo! Não é um lista muito longa, nem tão
+pouco um lista completa. Mas penso que é uma boa lista, eu gostaria de ter lido isso quando iniciei minha carreira.
+
+Antes de tudo, é preciso atentarmos para o fato de que existem dois momentos:
+
+1. quando escrevemos código e 
+2. quando reescrevemos código. 
+
+São momentos distintos e você já deve ter experimentado as duas situações.
+
+Outro problema é que o programador, sendo iniciante, não "verá" aonde o código pode ser mais legível. E mesmo que ele 
+veja que pode melhorar, melhorar de que forma? Não adianta trocar 6 por meia dúzia. É preciso saber identificar código 
+ruim e saber como resolver.
+
+Código limpo é algo que se adquire com a prática e não com teoria, na verdade adquirimos com a teoria sim, mas é muito 
+pouco. O ideal é praticar muito, ou seja, programar, programar, programar... Com o tempo você começará a perceber que 
+seu próprio código ou de terceiro está saindo dos trilhos e sentirá vontade de alterá-lo. É aí que entra as técnicas
+apresentadas neste artigo.
 
 
-veja:
-http://books.google.com.br/books?id=0rGtKCNAoN0C&printsec=frontcover&dq=inauthor:%22Martin+Fowler%22&hl=pt-BR&sa=X&ei=v9WVU4qvDuTgsATCtoGgDQ&ved=0CCwQ6AEwAA#v=onepage&q&f=false
+
+### Pecados que todos cometem no início
+
+Verdade, tudo mundo cometeu, poucos admitem. Eu cometi muito! O importante é aprender a identificar o problema e, além 
+de saber corrigir, começar a evitá-lo. Lá vai os "5 mandamentos"...
+
+1. __Endentar o código corretamente__, não mostre seu código a ninguém antes de ter certeza de que ele está devidamente 
+endentado. Código com endentação imprecisa dá nojo, não faça isso!
+    
+2. Procure __bons nomes__ para suas variáveis, métodos, classes, nomes de campos de tabelas, nomes de formulários, etc...
+Ao programar, pare um instante para pensar em um nome significativo, se dê esse tempo.
+
+3. __Comente o código__, mas faça isso de forma maestral. Não comente o que óbvio, não escreve muito, não escreva pouco,
+escreve o necessário. De tempo em tempo volte para ler seus comentários, não se surpreenda se o seguinte pensamento
+surgir em sua mente: "Nossa! Fui eu mesmo quem escreveu esse negócio!"
+
+4. __Siga o estilo__ e tenha seu próprio estilo. Procure por um, crie um, tudo bem! Melhor do que ter um estilo é saber 
+seguir outro. Nada mais desanimador que um novo integrante da equipe que não segue o padrão estabelecido, mesmo que ele 
+não exista.
+
+5. __Não duplique código__.  
+   Artigo 153 do código penal Internacional
+   Duplicar código, mesmo que seja uma única linha.
+   Pena - reclusão, de 1 (um) a 2 (dois) anos.
+   Parágrafo único. Incide na mesma pena quem ordena, autoriza ou realiza operação de duplicação de código, próprio ou de terceiro.
 
 
-Quando escrevemos um código e, posteriomente, voltamos para ajustar algumas coisas, estamos praticando  a refatoração 
-(refactoring). Quero dizer, estamos refatorando o código. O conceito intuitivo da palavra traz consigo a idéia de que
-"refatorar" é simplificar uma expressão. Não é isso o que vem a sua mente? 
+
+
+### A Arte de Escrever Programas Legíveis
+
+![](programas-legiveis.gif)
+
+Este pequeno livro de Dustine e Trevor vale cada centavo! Ele é de fácil leitura, recomendo fortemente.
+
+O livro trás o seguinte conceito de código limpo: >> Códigos devem ser escritos de modo a minimizar o tempo necessário 
+para sua compreensão.
+
+Além disso aborda temas como por exemplo...
+
+- O que torna um código “melhor”?
+- Por acaso o tempo-para-entender entra em conflito com outros objetivos?
+- E outras preocupações, como tornar o código eficiente, bem projetado, fácil de testar e assim por diante?
+- Objetivos como esses não entram, às vezes, em conflito com a meta de tornar o código fácil de entender?
+
+
+Livro de cabeceira!
+
+
+### Código Limpo, Habilidades Práticas do Agile Software
+
+Outro livro sensacional, com quase 400 páginas o autor Robert C. Martin amplia o assunto e cobre tópicos como por 
+exemplo:
+
+- Nomes significativos
+- Funções
+- Formatação
+- Objetos e estrutura de dados
+- Tratamento de erros
+- Teste de unidades
+- Classes
+- Comentários
+
+Para ficar com vontade...
+
+> Esse era meu teste! Depois que o vi funcionar e mostrei aos meus colegas, joguei o código de teste fora.
+> Como eu disse, nossa profissão evoluiu. Eu isolaria meu código do resto do sistema operacional em vez de apenas 
+> invocar funções padrões de contagem [...] progredimos bastante mas ainda podemos ir mais longe.
+> (Robert)
+
+
+### Refatoração, Aperfeiçoando o Projeto de Código Existente
+
+Quando escrevemos um código e, posteriormente, voltamos para ajustar algumas coisas, estamos praticando a refatoração 
+(refactoring), ou seja, estamos __refatorando o código__. 
+
+O conceito intuitivo do termo traz consigo a idéia de que "refatorar" é simplificar uma expressão, não é isso o que vem 
+a sua mente? 
 
 OK, mas simplificar o que exatamente? E de que forma?
 
-Vamos alterar o código no sentido de clareza, pelo menos inicialmente. O problema é que não vamos utilizar nenhuma 
-metodologia para isso, ou seja, vamos aplicar arte pura.
+Quando alteramos o código, fazemos isso buscando algum objetivo, mesmo que ele não esteja muito claro. Normalmente,
+alterarmos código com o objetivo de alcançar maior clareza. Só que "maior clareza" é muito subjetivo, muito solto.
+Deveria-mos ter os objetivos de forma bem clara.
 
-Refatorar é uma arte e o seu mestre chama-se Martin Fowler, há um manual completo dizendo como, quando e porque refatorar
-o seu código fonte.
+> Refatoração é uma alteração feita na estrutura interna do software para torná-lo mais fácil de ser entendido e menos 
+> custoso de ser modificado sem alterar seu comportamento observável. (Martin Fowler)
 
-Meu objetivo é plantar na sua mente uma semente chamada "organização, limpeza e clareza".É nesse sentido que vamos 
-tentar alterar o código fonte original de nosso exemplo
+Aconselho a leitura do livro Refatoração, Aperfeiçoando o Projeto de Código Existente de Martin Fowler.
 
 
-Antes de alterar seu código...
---
+
+### Testes Unitários (depois de codificado)
 
 O código já está funcionando, se eu mexer poderei danificá-lo!
 
@@ -41,84 +128,70 @@ Poderá e com certeza irá danificá-lo.
 
 Então, como alterar o código já existente (e funcionando) de forma que ele não se quebre?
 
-Remédio: TDD (Test Driven Development) que nada mais é do que escrever um teste antes de codificar. Tudo bem vai, não é 
-tão simples assim.
+Esteja certo de que seu código está coberto por testes unitários. 
 
-Se escrever um teste antes de codificar é importante, ter um teste antes de alterar o código é igualmente importante.
+O problema é que antes de escrevermos um teste unitário temos que considerar essa unidade. E a unidade, normalmente,
+está apoiado em um classe e "classe" já é outro assunto: programação orientada a objetos.
 
-Mas, novamente caímos em um tema que é avançado e estamos ainda no nível básico. Vamos alterar nosso código sem ter os 
-teste de cobertura.
+Você deve procurar o que são testes unitários, comece utilizando um framework de teste de sua linguagem preferida.
 
-TDD é uma arte (ninja) e o mestre é o Kent Bech (entre outros).
+Exemplo!!! Asserções
 
-O conceito é muito interessante, procure ler sobre. A refatoração é irmã siamesa do TDD. Uma não vive sem a outra.
-
-
-
-Código limpo
----
+> Os testes são essenciais porque, embora eu siga refatorações estruturadas para evitar a maioria das chances de 
+> introdução de falhas, ainda sou humano e ainda cometo erros. Assim, preciso de testes sólidos.
 
 
-Código limpo independe de OOP e de refatoração.
 
-O que eu quero dizer é que seu código pode fazer uso intensivo de OOP e mesmo assim estar bastante ilegível e desorganizado.
+### Teste Unitários (antes de codificar)
 
-Da mesma forma que refatorar um código ilegível não o tornará mais legível ou organizado.
+Se escrever um teste após codificar é importante, escrever um teste antes de codificar é igualmente importante.
 
-Em outras palavras, podemos dizer que OOP e refatoração não garantem um código limpo e organizado.
+O ato de escrever um teste antes de codificar é conhecido pelas siglas [TDD](/tdd).
 
-OOP e Refatoração são "caminhos" e não salvadores de código ilegível.
+A prática do TDD tem como objetivo primário "Código limpa e que funciona", olha que lindo! Além de código limpo teremos
+código funcionando de verdade.
 
-Dito isso, ainda nos resta a pergunta: o que fazer para codificar de forma limpa e coesa?
-
-Pergunta difícil!
-
-O problema é que o programdor, sendo inciante, não "verá" aonde o código pode ser mais legível.
-
-Isso nos leva a acreditar que:
-
-Código limpo é algo que se adquire com a prática e não com teoria. Na verdade adquirimos com a teoria sim, mas é muito pouco.
+falar mais sobre o TDD!!!
 
 
-### E o que temos para hoje?
 
-Quer dizer, o que temos por horar para nos guiar?
+### DRY (Don't Repeat Yourself)
 
-Na matéria Antes de enfiar o pé na jaca vimos um pouco de...
+Esse conceito foi cunhado por Andrew Hunt and David Thomas no seu ótimo livro The Pragmatic Programmer. Lá eles dizem:
 
-    Endentar o código
-    Usar uma boa nomenclatura
-    Comentar o código
-    Ter ou seguir um estilo.
+> DRY—Don’t Repeat Yourself
+> Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
 
-Isso pode ser um começo, mas e depois?
-
-A boa notćia é que eu conheço um livro ótimo A Arte de Escrever Programas Legíveis de Dustine e Trevor. Veja a referência
-no final da mateŕia.
-
-No livro o autor tras respotas para perguntas como por exemplo:
-
-O que torna um código “melhor”?
-
-Por acaso o tempo-para-entender entra em conflito com outros objetivos?
-
-E outras preocupações, como tornar o código eficiente, bem projetado, fácil de testar e assim por diante?
-
-Objetivos como esses não entram, às vezes, em conflito com a meta de tornar o código fácil de entender?
-
-Códigos devem ser escritos de modo a minimizar o tempo necessário para sua compreensão.
-
-O livro também trás o conceito de código limpo:
-
-    Códigos devem ser escritos de modo a minimizar o tempo necessário para sua compreensão.
+A idéia é simples "Don't Repeat Yourself" significa "Não se Repita!", estamos falando novamente sobre duplicação de 
+código. Não adianta eu buzinar isso no seu ouvido, quando você tiver com vontade de duplicar código, vá em frente!
+Depois quando você se arrepender, pronto! estará aprendido.
 
 
-Concluindo
----
+### DIE = Duplication is Evil
 
-Na matéria seguinte vamos colocar a mão na massa e praticar a refatoração.
+Duplicar é ruim, sinônimo de DRY.
 
-Mas faremos isso de forma bem livre, sem muita preocupação com a técnica de refatoração.
 
-Seria difícil eu dizer: "vamos refatorar o código" sem ao menos introduzir, mesmo que pobremente, a idéia de refatoração
-e a prática de código limpo. Esse foi o objetivo desta matéria.
+### KISS = Keep It Simple, Stupid
+
+mantenha-o simples, idiota
+
+
+### YAGNI = You Aren’t Going Need It
+
+“Você não vai precisar disso”, para de inventar!
+
+
+
+###  SOLID
+
+[S]ingle Responsability Principle
+[O]pen/Closed Principle
+[L]iskov Substitution Principle
+[I]nterface Segregation Principle
+[D]ependency Inversion Principle
+
+
+### YAGNI = You Aren't Going Need It
+
+
