@@ -127,7 +127,7 @@ Não pergunte para mim, pergunte para os testes (execute eles).
 
 Depois de tanto imaginar, vamos ter que imaginar que os testes passaram (esse era meu objetivo).
 
-Outra coisa, se você estar incomodado(a) com o código (eu espero que esteja) você poderá alterá-lo.
+Outra coisa, se você estiver incomodado(a) com o código (eu espero que esteja) você poderá alterá-lo.
 
 Mas quem garante que o código irá funcionar depois que você mexer neles?
 
