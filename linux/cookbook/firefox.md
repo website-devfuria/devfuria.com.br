@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Instalando o última versão do Firefox
-description: Como instalar ou atualizar o __Firefox__ para a versão mais recente
+description: Como instalar ou atualizar o Firefox para a versão mais recente
 ---
 
 
