@@ -134,7 +134,7 @@ orientada a objeto pode diferenciar e muito de uma linguagem para outra.
 var assert = require('assert');
 
 //
-// Criamos um objeto vazio diretamente do tipo primito `Object`
+// Criamos um objeto vazio a partir do tipo primitivo `Object`
 //
 var juros = new Object();
 
@@ -206,7 +206,6 @@ A sintaxe em JavaScript é um pouco mais intuitiva (minha opnião), por isso eu 
 #
 # Definimos uma classe vazia (como em JS)
 #
-
 class Juros(object):
     pass
 
@@ -245,12 +244,14 @@ class Juros(object):
     pass
 
 #
-# Atenção: este método não faz parte da classe acima
+# Atenção: este método não faz parte da classe acima...
 #
 def simples(obj):
     return obj.capital * obj.taxa * obj.periodo
 
-
+#
+# ... para tal, precisaremos instanciar a classe
+# e atribuir a função ao método do objeto `juros`.
 juros = Juros()
 juros.simples = simples
 
