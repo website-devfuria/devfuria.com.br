@@ -31,7 +31,7 @@ Podemos tornar opcionais caracteres e metacaracteres.
             <td><img src="regex-fala.png" alt="Figura ilustrando o metacaractere opcional" title="Expresão regular: metacaractere opcional" /></td>
         </tr>
         <tr>
-            <td><code></?[bip]></code></td>
+            <td><code>&lt;/?[bip]&gt;</code></td>
             <td>&lt;b&gt;, &lt;/b&gt;, &lt;i&gt;, &lt;/i&gt;, &lt;p&gt; e &lt;/p&gt;</td>
             <td><img src="regex-tags-bip.png" alt="Figura ilustrando o metacaractere opcional" title="Expresão regular: metacaractere opcional" /></td>
         </tr>
