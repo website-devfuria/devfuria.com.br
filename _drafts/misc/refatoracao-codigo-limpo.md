@@ -1,7 +1,7 @@
 ---
 layout:       grid12-article
-title:        Código limpo
-description:  
+title:        A trilha para alcançar<br>um código limpo
+description:  Pequena lista, despretenciosa, que lhe ajudará<br>na busca pela boa codificação
 ---
 
 Como codificar de forma limpa e coesa? Pergunta difícil!
@@ -19,7 +19,7 @@ Antes de tudo, é preciso atentarmos para o fato de que existem dois momentos:
 São momentos distintos e você já deve ter experimentado as duas situações.
 
 Outro problema é que o programador, sendo iniciante, não "verá" aonde o código pode ser mais legível. E mesmo que ele 
-veja que pode melhorar, melhorar de que forma? Não adianta trocar 6 por meia dúzia. É preciso saber identificar código 
+veja que pode melhorar, melhorar de que forma? Não adianta trocar 6 por meia dúzia, é preciso saber identificar código 
 ruim e saber como resolver.
 
 Código limpo é algo que se adquire com a prática e não com teoria, na verdade adquirimos com a teoria sim, mas é muito 
@@ -63,16 +63,15 @@ não exista.
 
 Este pequeno livro de Dustine e Trevor vale cada centavo! Ele é de fácil leitura, recomendo fortemente.
 
-O livro trás o seguinte conceito de código limpo: >> Códigos devem ser escritos de modo a minimizar o tempo necessário 
+O livro traz o seguinte conceito de código limpo: >> Códigos devem ser escritos de modo a minimizar o tempo necessário 
 para sua compreensão.
 
 Além disso aborda temas como por exemplo...
 
 - O que torna um código “melhor”?
 - Por acaso o tempo-para-entender entra em conflito com outros objetivos?
-- E outras preocupações, como tornar o código eficiente, bem projetado, fácil de testar e assim por diante?
+- Como tornar o código eficiente, bem projetado, fácil de testar e assim por diante?
 - Objetivos como esses não entram, às vezes, em conflito com a meta de tornar o código fácil de entender?
-
 
 Livro de cabeceira!
 
@@ -133,7 +132,7 @@ Esteja certo de que seu código está coberto por testes unitários.
 O problema é que antes de escrevermos um teste unitário temos que considerar essa unidade. E a unidade, normalmente,
 está apoiado em um classe e "classe" já é outro assunto: programação orientada a objetos.
 
-Você deve procurar o que são testes unitários, comece utilizando um framework de teste de sua linguagem preferida.
+Você deve procurar saber o que são testes unitários, comece utilizando um framework de teste de sua linguagem preferida.
 
 Exemplo!!! Asserções
 
@@ -157,7 +156,7 @@ falar mais sobre o TDD!!!
 
 ### DRY (Don't Repeat Yourself)
 
-Esse conceito foi cunhado por Andrew Hunt and David Thomas no seu ótimo livro The Pragmatic Programmer. Lá eles dizem:
+Esse conceito foi cunhado por Andrew Hunt and David Thomas no seu ótimo livro The Pragmatic Programmer:
 
 > DRY—Don’t Repeat Yourself
 > Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
@@ -192,6 +191,22 @@ mantenha-o simples, idiota
 [D]ependency Inversion Principle
 
 
-### YAGNI = You Aren't Going Need It
 
+Conclusão
+---
 
+Acho que a lista ficou extensa, mais do que eu imaginei no começo.
+
+Se você me perguntasse "por onde começar?" eu diria 2 coisas :
+
+1. fique com o livro do Dustine e Trevor (A Arte de Escrever Programas Legíveis)
+2. Aprenda (muito) sobre testes unitários, antes mesmo de aprender programação orientada a objeto.
+
+Essas duas coisas seriam um bom começo. Por outro lado, preciso avisar que a lista completa você irá carregá-la até o
+fim de sua carreira. Alguns itens irão perder a importância, outros irão ganhar destaque, alguns irão se renovar. Mas,
+invariavelmente, eles estarão aí, não é prudente ignorá-los.
+
+Imagino que você deve ter percebido, mas não custa nada avisar: eu apenas listei as técnicas, não expliquei, então 
+ficará a seu cargo buscar mais informações sobre cada uma delas.
+
+Abs!
