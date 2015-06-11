@@ -8,7 +8,7 @@ Como codificar de forma limpa e coesa? Pergunta difícil!
 
 Trata-se de uma pergunta bastante aberta, não há uma única resposta.
 
-Neste artigo elenco "técnicas" que nós ajudam a alcançar o objetivo: código limpo! Não é um lista muito longa, nem tão
+Neste artigo elenco "técnicas" que nos ajudam a alcançar o objetivo: código limpo! Não é um lista muito longa, nem tão
 pouco um lista completa. Mas penso que é uma boa lista, eu gostaria de ter lido isso quando iniciei minha carreira.
 
 Antes de tudo, é preciso atentarmos para o fato de que existem dois momentos:
