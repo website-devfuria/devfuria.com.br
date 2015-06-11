@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       DJANGO - Error loading MySQLdb module: No module named MySQLdb
+title:       "DJANGO - Error loading MySQLdb module: No module named MySQLdb"
 description: 
 ---
 
