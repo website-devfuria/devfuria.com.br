@@ -20,6 +20,14 @@ Digite `exit` para sair.
 
 
 
+Ubuntu 15.4 (Vivid Vervet)
+---
+
+	# apt-get install mysql-server mysql-client
+    
+O instalador solicitará o cadastramento da senha para o usuário root, anote-a.
+
+
 
 CentOS
 ---
@@ -52,17 +60,6 @@ Iniciar e habilitar o serviço:
 	# systemctl start mysqld.service
 	
 	# systemctl enable mysqld.service
-
-Setar uma senha para o root (do mysql):
-
-	# mysqladmin -u root password sua_senha_aqui
-
-
-
-Ubuntu
----
-
-	# apt-get install mysql-server mysql-client
 
 Setar uma senha para o root (do mysql):
 
