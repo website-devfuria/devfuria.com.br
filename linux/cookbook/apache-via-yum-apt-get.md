@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Instalando e configurando o Apache no Linux
-description: Aprenda como instalar o Apache no Linux (Ubuntu, Fedora e CentOS)
+title:       Instalando e configurando<br> o Apache no Linux
+description: Aprenda como instalar o Apache<br> no Linux (Ubuntu, Fedora e CentOS)
 ---
 
 O __Apache__, de longe, é o servidor web mais popular do mundo.
