@@ -1,12 +1,22 @@
 ---
 layout:      grid12-article
-title:       Instalando Workbench & Utilities no CentOS 6
-description: Aprenda como instalar o Workbench & Utilities no CentOS 6
+title:       Instalando Workbench & Utilities no Linux
+description: Aprenda como instalar o Workbench & Utilities no Linux
 ---
 
+MySQL Workbench é uma ferramenta que ajuda a gerenciar o banco MySQL.
+
+Antes de prosseguir é preciso ter o banco de dados [MySQL](/linux/cookbook/mysql/) devidamente instalado.
 
 
-### Workbench
+
+### Ubuntu 15.4 (vivid Vervet)
+
+    apt-get install mysql-workbench
+
+
+
+### CentOS 6
 
 Primeiro baixe os arquivos __rpm__ no site oficial
 
@@ -20,7 +30,8 @@ Segundo o [manual do mysql](http://dev.mysql.com/doc/workbench/en/wb-installing-
 
 	rpm -i nome-do-arquivo.prm
 
-Mas no meu caso deu erro dependência. Uma olhada rápida neste [link](http://certcollection.org/forum/topic/141624-how-to-install-mysql-workbench-in-centos-6/ "link-externo")
+Mas no meu caso deu erro dependência. Uma olhada rápida neste 
+[link](http://certcollection.org/forum/topic/141624-how-to-install-mysql-workbench-in-centos-6/ "link-externo")
 eu descobri que posso fazer isso:
 
 	yum install nome-do-arquivo.rpm
