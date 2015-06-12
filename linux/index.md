@@ -35,6 +35,9 @@ Veja mais [receitas de instalação](/linux/cookbook/).
 ### Artigos
 
 <div class="list-group">
+    <a href="/linux/utilitario-cat/" class="list-group-item">Utilitário de terminal cat (Linux)</a>
+    <a href="/linux/reiniciar-servidor-apache/" class="list-group-item">Como reiniciar o servidor Apache</a>
+    <a href="/linux/qual-a-versao-do-ubuntu/" class="list-group-item">Qual é a versão do Ubuntu?</a>
     <a href="/linux/mysql-error-cant-connect-to-local-mysql-server-through-socket/" class="list-group-item">MySQL, resolvendo o erro 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)</a>
     <a href="/linux/django-error-loading-mysqldb-module/" class="list-group-item">Django, resolvendo o erro: Error loading MySQLdb module: No module named MySQLdb</a>
     <a href="/linux/como-desabilitar-selinux/" class="list-group-item">Como desabilitar SElinux0 (Fedora e CentOS)</a>
