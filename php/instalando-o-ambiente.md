@@ -27,27 +27,6 @@ WAMP (Windows, Apache, Mysql e PHP) e quando ela é híbrida, garantindo assim s
 Linux, diz-se XAMP, onde o “X” representa o sistema operacional.
 
 
-Instalando o Apache2
----
-
-No Ubuntu digite:
-
-    apt-get install apache2
-
-No Fedora são três linhas...
-
-    yum install httpd
-    chkconfig --levels 235 httpd on
-    systemctl start httpd.service
-
-Para ter certeza de que o Apache foi instalado corretamente, abra um navegador qualquer é digite `http://localhost`. É 
-exibido uma página simples com a frase “It’s work”.
-
-Leia mais sobre [como instalar e configurar o Apache](/linux/cookbook/apache-via-yum-apt-get/) na seção Linux.
-
-
-
-
 Instalando o PHP
 ---
 
@@ -168,57 +147,6 @@ Leia amis sobre [como instalar o x-debug](/linux/cookbook/xdebug/) na seção Li
 
 
 
-Instalando o MySql
----
-
-Agora chegou a vez o banco de dados, instale o MySql no Ubuntu digitando...
-
-    apt-get install mysql-server mysql-client
-
-Enquanto os arquivos são baixados e instalados o sistema lhe perguntará qual será a senha do __root__ (para acessar o 
-banco de dados), anote-a.
-
-No Fedora é parecido, só que você é quem define a senha, então instale o MySQL no Fedora...
-
-    yum install mysql mysql-server
-
-Inicie o serviço...
-
-    systemctl start mysqld.service
-    systemctl enable mysqld.service
-
-E habilite a senha digitando...
-
-    mysqladmin -u root password [your_password_here]
-
-Para saber se deu certo tente acessar o prompt do MySQL digitando...
-
-    mysql -h localhost -u root -p
-
-O sistema solicitará a senha, digite-a. Se estiver enxergando o "prompt" está tudo OK, digite `exit` para sair.
-
-Leia mais sobre [como instalar o MySql](/linux/cookbook/mysql/) na seção Linux.
-
-
-
-
-Instalando o PhpMyAdmin
----
-
-Na sequência, instale o PhpMyAdmin, este aplicativo é responsável por oferecer uma interface amigável de trabalho ao
-usuário do banco.
-
-    apt-get install phpmyadmin
-
-Responda as perguntas do instalador e, ao final, abra o navegador, digite `localhost/phpmyadmin`. A tela de "login" deve
-ser exibida, digite novamente o usuário do MySql (root) e sua senha. Pronto, você está dentro do sistema, agora é possível
-manipular o MySql com um interface amigável.
-
-No Fedora, após a instalação, será preciso reiniciar o Apache...
-
-    yum install phpmyadmin
-    systemctl restart httpd.service
-
 
 
 
@@ -229,11 +157,8 @@ Anotou tudo que instalamos até aqui? vamos lá:
 
     Com o sistema Linux instalado, definimos uma senha para o root.
     Atualizamos o sistema (linux).
-    Instalamos o servidor web apache
     Instalamos o módulo php e alteramos o php.ini para exibir os erros.
     Instalamos o x-debug para nos ajudar na debugação.
-    Instalamos o banco de dados MySql.
-    Instalamos o PhpMyAdmin, uma interface para o MySql.
 
 Ufa!!! Mas ainda falta algumas "coisinhas". Ainda temos o editor de código, o controlador de versão, os navegadores e 
 seus plugins, e etc.. Só que neste ponto, a escolha dos aplicativos é uma questão pessoal, então fica apenas a sugestão.
