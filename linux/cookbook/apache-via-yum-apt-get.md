@@ -89,17 +89,12 @@ No Ubuntu/Debian podemos utilizar o comando abaixo.
 
     /etc/apache2/conf.d/apache2 restart
 
-Como alternativa, o comando abaixo também funciona.
-
-    service apache2 reload
-
 No CentOS/HedHat utilizamos o seguinte comando:
 
-    /etc/init.d/httpd start
+    /etc/init.d/httpd restart
 
-No Fedora, com alternativa, podemos utilizar o comando:
+Leia o artigo [Como reiniciar o servidor Apache](/linux/reiniciar-servidor-apache/) para maiores informações.
 
-    systemctl resstart mysqld.service
 
 
 
