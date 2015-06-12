@@ -25,7 +25,9 @@ Primeiro é preciso fazer o download.
 Mas como saber qual a versão correta para o seus sistema?
 
 Aí entra o "pulo do gato". O site do x-debug disponibiliza uma página onde você encontrará uma caixa de texto grande.
-Nela você deve inserir o conteúdo de seu `phpinfo()`, isso mesmo! Maluco né? Vou explicar melhor...
+Nela você deve inserir o conteúdo de seu `phpinfo()`, isso mesmo!
+
+Maluco né? Vou explicar melhor...
 
 Crie um arquivo denominado `info.php` e salve no documentroot `/var/www/`. Insira no arquivo o seguinte conteúdo:
 
@@ -38,7 +40,7 @@ Copie todo o conteúdo desta página, acione __CTRL + A__ e depois copie.
 
 Vá até a página do [x-debug](http://xdebug.org/wizard.php "link-externo") e cole a informação dentro daquela caixa de texto.
 
-CLique no botão __"Analyse my phpinfo() output"__ e bingo! A página seguinte será o passo a passo para instalação
+Clique no botão __"Analyse my phpinfo() output"__ e bingo! A página seguinte será o passo a passo para instalação
 do x-debug (personalizado para sua máquina). Inclusive com o link para o download da versão correta do x-debug.
 
 Para você ter um idéia do resultado, eu vou lhe mostrar o guia para a minha máquina:
@@ -83,12 +85,30 @@ Dica: com você terá que executar o __phpize__, instale antes essas pacotes `ap
     /etc/init.d/apache2 restart
 
 
-
-
-Ubuntu
+Ubuntu 15.4 (Vivid Vervet)
 ---
 
-Dica: talvez seja muito mais fácil instalar pelo Software-center, caso não consiga...
+Brother, eu fui pelo Software Center, sem sofrimentos!
+
+Para conferir a instalação execute o comando abaixo.
+
+    php -v
+
+Sua tela deve ser algo semelhante ao exibido abaixo.
+
+    PHP 5.6.4-4ubuntu6 (cli) (built: Apr 17 2015 15:47:51) 
+    Copyright (c) 1997-2014 The PHP Group
+    Zend Engine v2.6.0, Copyright (c) 1998-2014 Zend Technologies
+        with Zend OPcache v7.0.4-dev, Copyright (c) 1999-2014, by Zend Technologies
+        with Xdebug v2.2.6, Copyright (c) 2002-2014, by Derick Rethans
+
+A última linha indica que o __xdebug__ foi instalado.
+
+
+Ubuntu (versões antigas)
+---
+
+Dica: talvez seja muito mais fácil instalar pelo Software-Center, caso não consiga...
 
 Instale os seguintes pacotes:
 
@@ -122,11 +142,6 @@ Fedora
  __Apache__ e o __PHP__ devem estar instalados.
 
 
-Execute.
+Execute o comando abaixo e [reinicie o apache](/linux/reiniciar-servidor-apache/)
 
 	# yum install php-pecl-xdebug
-
-
-Reinicie o apache.
-
-	# systemctl restart httpd.service
