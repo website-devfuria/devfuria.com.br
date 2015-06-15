@@ -47,13 +47,15 @@ description: Guia prático de instalações de softwares para Linux
 </div>
 
 
-### Mysql
+### Bancos de dados
 
 <div class="list-group">
     <a href="/linux/cookbook/mysql/" class="list-group-item">Instalando o MySql no Linux</a>
+    <a href="/linux/cookbook/mysql-workbench/" class="list-group-item">Instalando Workbench & Utilities no CentOS 6</a>
     <a href="/linux/cookbook/phpmyadmin/" class="list-group-item">Instalando e configurando o PHPMyAdmin no Linux</a>
-    <a href="/linux/cookbook/mysql-workbench" class="list-group-item">Instalando Workbench & Utilities no CentOS 6</a>
+    <a href="/linux/cookbook/sqlite/" class="list-group-item">Instalando o sqlite no Linux</a>
 </div>
+
 
 
 ###  Navegadores web (browser)
