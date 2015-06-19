@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Backbone<br/>Views e Eventos
+title:       Backbone<br />Views e Eventos
 description: Artigo que demonstra, de forma prática, como trabalhar<br> com eventos e views no framework Backbone (JavaSCcript).
 menu:        javascript-backbone
 ---

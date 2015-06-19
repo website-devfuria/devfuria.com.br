@@ -60,17 +60,17 @@ Veja mais [receitas de instalação](/linux/cookbook/).
 ### Livros sobre Linux - para iniciantes
 
  - __Dominando o Linux__ livro online disponílvel em [www.hardware.com.br/livros/dominando-linux/](http://www.hardware.com.br/livros/dominando-linux/ "link-externo")
-<br/> ![Figura da capa do livro 'Linux, um guia prático'](livro-entendendo-dominando-linux-morimoto.jpg "linux")
+<br /> ![Figura da capa do livro 'Linux, um guia prático'](livro-entendendo-dominando-linux-morimoto.jpg "linux")
 
  - __Linux guia prático__ - Excelente! Outro livro na qual o Morimoto deu um show. O legal é que ele trás uma visão 
 panorâmica ao mesmo tempo que mantém uma riqueza de detalhes. Eu comprei o livro impresso por $70 pilas mas é possível
 ler o livro (gratuitamente) no site do morimoto: [www.hardware.com.br/livros/linux/](http://www.hardware.com.br/livros/linux/ "link-externo").
-<br/> ![Figura da capa do livro 'Linux, guia prático'](linux-guia-pratico-morimoto.jpg "linux")
+<br /> ![Figura da capa do livro 'Linux, guia prático'](linux-guia-pratico-morimoto.jpg "linux")
 
  - __Linux um guia prático de comando, editores e programação de Shell__ - Recomendadíssimo. Ótimo livro, conteúdo de uma qualidade impressionante. Ele é passo a passo
 e não te deixa na mão, nem tem aquelas explicações vagas e subjetivas. Paguei $105 pilas por 600 páginas da conteúdo + 300
 páginas de referência. Valeu cada centavo.
-<br/> ![Figura da capa do livro 'Linux, um guia prático'](livro-linux-guia-pratico.jpeg "linux")
+<br /> ![Figura da capa do livro 'Linux, um guia prático'](livro-linux-guia-pratico.jpeg "linux")
 
 
 

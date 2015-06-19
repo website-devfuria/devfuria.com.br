@@ -21,8 +21,8 @@ Só é especial no começo da expressão regular.
         <tr>
             <td><code>^a</code></td>
             <td>
-                <code>a</code>brir<br/>
-                bolar<br/>
+                <code>a</code>brir<br />
+                bolar<br />
                 colar
             </td>
             <td><img src="regex-a.png" alt="Figura ilustrando o metacaractere circunflexo" title="Expresão regular: metacaractere circunflexo" /></td>
@@ -30,8 +30,8 @@ Só é especial no começo da expressão regular.
         <tr>
             <td><code>^b</code></td>
             <td>
-                abrir<br/>
-                <code>b</code>olar<br/>
+                abrir<br />
+                <code>b</code>olar<br />
                 colar
             </td>
             <td><img src="regex-b.png" alt="Figura ilustrando o metacaractere circunflexo" title="Expresão regular: metacaractere circunflexo" /></td>
@@ -39,8 +39,8 @@ Só é especial no começo da expressão regular.
         <tr>
             <td><code>^c</code></td>
             <td>
-                abrir<br/>
-                bolar<br/>
+                abrir<br />
+                bolar<br />
                 <code>c</code>olar
             </td>
             <td><img src="regex-c.png" alt="Figura ilustrando o metacaractere circunflexo" title="Expresão regular: metacaractere circunflexo" /></td>
@@ -48,8 +48,8 @@ Só é especial no começo da expressão regular.
         <tr>
             <td><code>^[abc]</code></td>
             <td>
-                <code>a</code>brir<br/>
-                <code>b</code>olar<br/>
+                <code>a</code>brir<br />
+                <code>b</code>olar<br />
                 <code>c</code>olar
             </td>
             <td><img src="regex-abc.png" alt="Figura ilustrando o metacaractere circunflexo" title="Expresão regular: metacaractere circunflexo" /></td>

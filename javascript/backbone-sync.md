@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Backbone<br/>Explorando o sync
+title:       Backbone<br />Explorando o sync
 description: Veremos neste artigo como explorar a função sync<br>do framework Backbone em JavaScript para realizar<br>requisições aos servidor do tipo AJAX.
 menu:        javascript-backbone
 ---
