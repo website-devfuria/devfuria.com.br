@@ -5,8 +5,8 @@ description:
 menu:        regex-metacaracteres
 ---
 
-O mais tem funcionamento idêntico ao do asterisco, a única diferença é que o mais não é opcional, então a entidade 
-anterior deve casar pelo menos uma vez, e pode ter várias.
+O metacaracter `+` (mais) tem funcionamento idêntico ao do `*` (asterisco), a única diferença é que o mais não é 
+opcional, então a entidade anterior deve casar pelo menos uma vez, e pode ter várias.
 
 * ter (pelo menos uma vez), 
 * ou ter vários.
