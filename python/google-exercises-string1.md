@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Lista de exercícios da Google - strings 1
-description: Exercícios de lógica em Python acompanhados de testes unitários. Esta é a primeira lista de exercícios do Google Python Exercise.
+title:       Lista de exercícios da Google<br />strings 1
+description: Exercício extraído da lista Google Python Exercise<br /> onde veremos o básico de funções e estrutura if
 menu:        python-google
 ---
 

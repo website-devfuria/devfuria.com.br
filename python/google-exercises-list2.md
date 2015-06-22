@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Lista de exercícios da Google - list 2
-description: Exercícios de lógica em Python acompanhados de testes unitários. Esta é a quarta lista de exercícios do Google Python Exercise.
+title:       Lista de exercícios da Google<br />list 2
+description: Exercício extraído da lista Google Python Exercise<br /> onde veremos como fazer um 'merge' com as listas
 menu:        python-google
 ---
 

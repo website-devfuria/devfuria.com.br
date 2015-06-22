@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Lista de exercícios da Google - strings 2
-description: Exercícios de lógica em Python acompanhados de testes unitários. Esta é a segunda lista de exercícios do Google Python Exercise.
+title:       Lista de exercícios da Google<br />strings 2
+description: Exercício extraído da lista Google Python Exercise<br /> onde veremos a função .find(), operador módulo (%) e fatiamento de sequencias
 menu:        python-google
 ---
 

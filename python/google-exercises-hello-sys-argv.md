@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Hello Word com sys.argv
-description: Este artigo mostra o Hello World utilizando a propriedade sys.argv, da lista de exercícios do Google Python Exercise.
+description: Artigo baseado na lista de exercícios do Google Python Exercise<br />que demosntra um 'Hello World' utilizando a propriedade sys.argv
 menu:        python-google
 ---
 
