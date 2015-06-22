@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Backbone<br/>Definindo rotas (router)
+title:       Backbone<br />Definindo rotas (router)
 description: Neste artigo veremos como definir rotas através<br> de hashtags no framework Backbone em JavsScript.
 menu:        javascript-backbone
 ---

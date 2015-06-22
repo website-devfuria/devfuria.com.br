@@ -49,13 +49,13 @@ A lista abaixo compõem os controles básicos do tipo __não input__:
 
  - __Criando paǵinas web com CSS__ - Budd, Moll e Collison, Editora Pearson.
 Este livro está desatualizado, mas a didática é nota 10 e vale a pena comprar.
-<br/> ![Figura da capa do livro 'Criando paǵinas web com CSS'](livro-criando-pag-web-css.jpg "Criando paǵinas web com CSS")
+<br /> ![Figura da capa do livro 'Criando paǵinas web com CSS'](livro-criando-pag-web-css.jpg "Criando paǵinas web com CSS")
 
  - __Cosntruindo sites com CSS e XHMTL__ - Maurício Samy (vulgo Majour), Editora Novatec. 
 Esse é outro que também está desatualizado, mas é ótimo.
 Ambos os livros são complementares um do outro.
 Não conheço um desenvolvedor que não tenha lido um desses livros.
-<br/> ![Figura da capa do livro 'Criando paǵinas web com CSS'](livro-cronstuindo-sites.jpg "Costruindo sites com CSS e XHMT")
+<br /> ![Figura da capa do livro 'Criando paǵinas web com CSS'](livro-cronstuindo-sites.jpg "Costruindo sites com CSS e XHMT")
 
 
 

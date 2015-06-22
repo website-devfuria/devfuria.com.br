@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Backbone<br/>Models e Eventos
+title:       Backbone<br />Models e Eventos
 description: Este artigo demonstra como funcionam os eventos dos<br>modelos do framework Backbone para JavaScript
 menu:        javascript-backbone
 ---
