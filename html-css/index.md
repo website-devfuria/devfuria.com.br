@@ -22,6 +22,10 @@ Veja também:
 - [Um pequeno glossário do site codecademy.](http://www.codecademy.com/glossary/html "link-externo")
 
 
+### Propriedades CSS
+
+{% include /menus/html-propriedades-css.html %}
+
 
 ### Formulários web e seus controles
 
