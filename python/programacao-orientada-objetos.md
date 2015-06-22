@@ -1,12 +1,11 @@
 ---
 layout:      grid12-article
-title:       Programação Orientada a Objetos em Python
-description: Python - propriedades
+title:       Programação Orientada a Objetos<br />em Python
+description: Este artigo é um primeiro passo em direção a<br />programação orientada a objetos<br />através da linguagem Python
 ---
 
 __Isto é um rascunho...__
 
-Este artigo é um primeiro passo em direção a programação orientada a objetos através da linguagem Python.
 
 Uma classe consiste da palavra chave `class` seguida de seu nome e da classe herdada entre parênteses.
 

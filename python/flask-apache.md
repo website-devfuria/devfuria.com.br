@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Python Flask - Fazendo deploy com Apache
-description: 
+title:       Python Flask<br />Fazendo deploy com Apache
+description: Aprendar a configurar o servidor Apache<br /> com a aplicação Flask (Python)
 ---
 
 Quando você construir uma aplicação em [Flask](/python/flask/), com certeza irá querer ver o resultado dela em um navegador.

@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Codificando caracteres no início do script Python
-description: As primeiras linhas de um script Python especifica explicitamente qual a codificação de caracteres utilizada em nosso script.
+title:       Codificando caracteres<br />no início do script Python
+description: As primeiras linhas de um script Python<br />especificam explicitamente qual a<br />codificação de caracteres utilizada em nosso script.
 ---
 
 Se você está começando a aprender Python, deve ter notado que no início dos scripts temos uma linha semelhante a esta...

@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Importando módulos no Python (imports)
-description: Artigo que esclarece o funcionamento do comando imports da linguagem Python
+title:       Importando módulos<br />no Python (imports)
+description: Artigo que esclarece o funcionamento do comando<br />imports da linguagem Python
 ---
 
 Este artigo é mais um passo (longe de ser o último) no sentido de esclarecer como podemos importar módulos na 
