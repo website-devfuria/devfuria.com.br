@@ -6,7 +6,7 @@ description:
 
 A propriedade CSS __marigin__ define a margem do elemento.
 
-![CSS marigin](margin-css-web-design-help.gif "CSS marigin" )
+![CSS marigin](margin-css.gif "CSS marigin" )
 
 [Fonte da imagem](http://www.ironpaper.com/current/2009/09/css-margin-web-design-help/#.VYhtU6PSOis "link-externo")
 
