@@ -4,6 +4,7 @@ title:       Uma introdução ao CSS 3
 description: 
 ---
 
+Isto é um racunho...
 
 A CSS possui várias versões, ou "níveis", portanto, é importante saber qual versão utilizar. A CSS 1 tornou-se uma
 recomendação no final de 1996 e contém propriedades muito básicas, como fontes, cores e margens. A CSS 2 aprimorou isso
