@@ -69,13 +69,12 @@ foo.destroy();
 // say: delete
 ```
 
-OK, mas você deve estar se perguntado: "o que eu faço agora?" Bom, já rompemos com o framework escrevendo nos mesmo o 
-que ele deve ou não fazer, logo, a partir deste ponto é com você. Não há uma resposta certa, pois existem vários caminhos.
+OK, mas você deve estar se perguntado: "o que eu faço agora?" Bom, já rompemos com o framework dizendo o que ele  deve 
+ou não fazer, logo, a partir deste ponto é com você. Não há uma resposta certa, pois existem vários caminhos.
+Outro ponto importante há ser observado é que, do jeito que estamos fazendo acima, todos os métodos de qualquer modelo será
+sobrescrito, então temos de ter o cuidado de escrever uma API consistente.
 
-Um ponto importante há ser observado é que do jeito que estamos fazendo acima todos os métodos de qualquer modelo será
-sobrescrito. Então temos de ter o cuidado de escrever uma API consistente.
-
-E se quisesse-mos sobrescrever  apenas um modelo em particular sem afetar os demais, é possível?
+E se quisesse-mos sobrescrever apenas um modelo em particular sem afetar os demais, é possível?
 
 
 
