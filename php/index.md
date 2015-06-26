@@ -59,6 +59,13 @@ implementou (descentemente) OOP a partir da versão 5.
 </div>
 
 
+### Slim a micro framework for PHP
+
+Slim é um framework para PHP que ajuda quando sua necessidade maior for criar API`s REST.
+
+Leia mais sobre [Slim um micro framework para PHP](/php/php-slimframework/).
+
+
 
 ### Formulários
 
