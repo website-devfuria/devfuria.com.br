@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Introdução a Expressões Regulares
-description: 
+description: Uma pequena e rápida introdução<br />as Expressões Regulares
 ---
 
 __O que são Expressões Regulares ?__
