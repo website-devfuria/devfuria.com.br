@@ -18,7 +18,7 @@ O ponto é um curinga para casar um caractere
 
 A expressão `e.tendido` casa com `estendido`, `extendido`, `eztendido` e etc...
 
-![Figura ilustrando o metacaractere ponto](../metacaractere-ponto/regex-entendido.png "Expresão regular: metacaractere ponto")
+![Figura ilustrando o metacaractere ponto](../metacaractere-ponto/regex-entendido.png "Expressão Regular: metacaractere ponto")
 
 Veja mais sobre o [metacaractere ponto](../metacaractere-ponto/)
 
@@ -31,7 +31,7 @@ A lista casa com quem ela conhece e tem suas próprias regras.
 
 A expressão `[tT]eclado` casa com `teclado` e `Teclado`.
 
-![Figura ilustrando o metacaractere lista](../metacaractere-lista/regex-teclado.png "Expresão regular: metacaractere lista")
+![Figura ilustrando o metacaractere lista](../metacaractere-lista/regex-teclado.png "Expressão Regular: metacaractere lista")
 
 Veja mais sobre o [metacaractere lista](../metacaractere-lista/)
 
@@ -44,7 +44,7 @@ Ela casará com qualquer coisa fora os componentes listados.
 
 Exemplo, a expressão regular `[^0-9]` casa com qualquer coisa menos os números.
 
-![Figura ilustrando o metacaractere lista](../metacaractere-lista-negada/regex-neg0-9.png "Expresão regular: metacaractere lista")
+![Figura ilustrando o metacaractere lista](../metacaractere-lista-negada/regex-neg0-9.png "Expressão Regular: metacaractere lista")
 
 Veja mais sobre o [metacaractere lista negada](../metacaractere-lista-negada/)
 
@@ -57,7 +57,7 @@ O quantificador opcional indica que pode ter ou não a ocorrência da entidade a
 
 A expressão `fala[r!]?` casa com `fala`, `fala!` e `falar`.
 
-![Figura ilustrando o metacaractere opcional](../metacaractere-opcional/regex-fala.png "Expresão regular: metacaractere opcional")
+![Figura ilustrando o metacaractere opcional](../metacaractere-opcional/regex-fala.png "Expressão Regular: metacaractere opcional")
 
 Veja mais sobre o [metacaractere opcional](../metacaractere-opcional/)
 
@@ -70,7 +70,7 @@ O asterisco repete em qualquer quantidade
 
 A expressão `6*0` casa com `0`, `60`, `660`, `6660`, `6666666666660`.
 
-![Figura ilustrando o metacaractere asterisco](../metacaractere-asterisco/regex-60.png "Expresão regular: metacaractere asterisco")
+![Figura ilustrando o metacaractere asterisco](../metacaractere-asterisco/regex-60.png "Expressão Regular: metacaractere asterisco")
 
 Veja mais sobre o [metacaractere asterisco](../metacaractere-asterisco/)
 
@@ -84,7 +84,7 @@ anterior deve casar pelo menos uma vez, e pode ter várias.
 
 A expressão `6+0` casa com `60`, `660`, `6660`, `6666666666660`.
 
-![Figura ilustrando o metacaractere mais](../metacaractere-mais/regex-60.png "Expresão regular: metacaractere mais")
+![Figura ilustrando o metacaractere mais](../metacaractere-mais/regex-60.png "Expressão Regular: metacaractere mais")
 
 Veja mais sobre o [metacaractere mais](../metacaractere-mais/)
 
@@ -97,7 +97,7 @@ O quantificador chaves funciona como uma repetição mais controlada, onde `{n,m
 
 A expressão `n{1,4}` casa "n", "nn", "nnn" e "nnnn" (exatamente isso; nem mais, nem menos).
 
-![Figura ilustrando o metacaractere chaves](../metacaractere-chaves/regex-n14.png "Expresão regular: metacaractere chaves")
+![Figura ilustrando o metacaractere chaves](../metacaractere-chaves/regex-n14.png "Expressão Regular: metacaractere chaves")
 
 Veja mais sobre o [metacaractere chaves](../metacaractere-chaves/)
 
@@ -110,7 +110,7 @@ O metacaractere circunflexo marca o começo de uma linha, serve para procurar no
 
 A expressão `^[0-9]` casa com um número que estiver no começo da linha (linhas que começam com um número).
 
-![Figura ilustrando o metacaractere circunflexo](regex-circun09.png "Expresão regular: metacaractere circunflexo")
+![Figura ilustrando o metacaractere circunflexo](../metacaractere-circunflexo/regex-circun09.png "Expressão Regular: metacaractere circunflexo")
 
 Veja mais sobre o [metacaractere circunflexo ^](../metacaractere-circunflexo/)
 
@@ -118,7 +118,11 @@ Veja mais sobre o [metacaractere circunflexo ^](../metacaractere-circunflexo/)
 Metacaractere $	cifrão
 ---
 
-Em breve!
+O metacaracter cifrão marca o fim de uma linha e só é válido no final de uma ER.
+
+![Figura ilustrando o metacaractere cifrão](../metacaractere-cifrao/metacaracter-cifrao-01.png "Expressão Regular: metacaracter cifrão")
+
+Veja mais sobre o [metacaractere cifrão $](../metacaractere-cifrao/)
 
 
 Metacaractere \b	borda
