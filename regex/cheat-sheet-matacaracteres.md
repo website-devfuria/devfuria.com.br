@@ -237,7 +237,7 @@ Outros
         </tr>
         <tr>
             <td><code>|</code></td>
-            <td>ou</td>
+            <td><a href="../metacaractere-ou/">ou</a></td>
             <td>
                 <ul>
                     <li>indica alternativas</li>

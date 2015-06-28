@@ -158,7 +158,14 @@ Veja mais sobre o [metacaractere escape \](../metacaractere-escape/)
 Metacaractere |	ou
 ---
 
-Em breve!
+O metacaractere "ou" | serve para os casos em que temos mais de uma alternativa possível.
+
+A expressão regular `boa-tarde|boa-noite` casa com a duas opções.
+
+![Figura ilustrando o metacaractere ou](../metacaractere-ou/metacaractere-ou-01.png "Expressão Regular: metacaractere ou")
+
+Veja mais sobre o [metacaractere ou |](../metacaractere-ou/)
+
 
 
 Metacaractere ()	grupo
