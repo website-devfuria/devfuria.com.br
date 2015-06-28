@@ -227,7 +227,7 @@ Outros
     </thead>
         <tr>
             <td><code>\</code></td>
-            <td>escape</td>
+            <td><a href="../metacaractere-escape/">escape</a></td>
             <td>
                 <ul>
                     <li>escapa um meta, tira seu poder</li>

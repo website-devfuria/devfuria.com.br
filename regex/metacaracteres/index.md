@@ -144,7 +144,15 @@ Veja mais sobre o [metacaractere borda \b](../metacaractere-borda/)
 Metacaractere \	escape
 ---
 
-Em breve!
+O metacaractere escape \ permite o uso do valor literal determinado símbolo que coincide com um metacaratere existente.
+
+Em outras palavras, imagine que você precise casar o termo "meio*maluco", você precisa daquele asterisco no meio do 
+termo.
+
+A expressão `meio\*maluco` casa com o termo exato `meio\*maluco`.
+
+Veja mais sobre o [metacaractere escape \](../metacaractere-escape/)
+
 
 
 Metacaractere |	ou
