@@ -191,7 +191,7 @@ Quantificadores - não gulosos
         </tr>
         <tr>
             <td><code>$</code></td>
-            <td>cifrão</td>
+            <td><a href="../metacaractere-cifrao/">cifrão</a></td>
             <td>
                 <ul>
                     <li>casa o fim da linha</li>
@@ -201,7 +201,7 @@ Quantificadores - não gulosos
         </tr>
         <tr>
             <td><code>\b</code></td>
-            <td>borda</td>
+            <td><a href="../metacaractere-borda/">borda</a></td>
             <td>
                 <ul>
                     <li>limita uma palavra</li>
