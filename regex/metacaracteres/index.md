@@ -118,17 +118,27 @@ Veja mais sobre o [metacaractere circunflexo ^](../metacaractere-circunflexo/)
 Metacaractere $	cifrão
 ---
 
-O metacaracter cifrão marca o fim de uma linha e só é válido no final de uma ER.
+O metacaractere cifrão marca o fim de uma linha e só é válido no final de uma ER.
 
-![Figura ilustrando o metacaractere cifrão](../metacaractere-cifrao/metacaracter-cifrao-01.png "Expressão Regular: metacaracter cifrão")
+![Figura ilustrando o metacaractere cifrão](../metacaractere-cifrao/metacaractere-cifrao-01.png "Expressão Regular: metacaractere cifrão")
 
 Veja mais sobre o [metacaractere cifrão $](../metacaractere-cifrao/)
 
 
-Metacaractere \b	borda
+Metacaractere \b borda
 ---
 
-Em breve!
+O metacaractere borda marca a borda de um "trecho" (letras, números e sublinhado).
+
+A borda é útil para marcar palavras exatas e não parciais.
+
+A expressão `\bdia\b` casa com a palavra inteira "dia".
+
+Já com a parcial "dia" da palavra "diafragma" ela não casa.
+
+![Figura ilustrando o metacaractere borda](../metacaractere-borda/metacaractere-borda-01.png "Expressão Regular: metacaractere borda")
+
+Veja mais sobre o [metacaractere borda \b](../metacaractere-borda/)
 
 
 Metacaractere \	escape
