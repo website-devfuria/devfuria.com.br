@@ -18,9 +18,9 @@ Antes de tudo, é preciso atentarmos para o fato de que existem dois momentos:
 
 São momentos distintos e você já deve ter experimentado as duas situações.
 
-Outro problema é que o programador, sendo iniciante, não "verá" aonde o código pode ser mais legível. E mesmo que ele 
-veja que pode melhorar, melhorar de que forma? Não adianta trocar 6 por meia dúzia, é preciso saber identificar código 
-ruim e saber como resolver.
+Outra ponto a ser considerado é que o programador, sendo iniciante, não "verá" aonde o código pode ser mais legível. 
+E mesmo que ele veja que pode melhorar, melhorar de que forma? Não adianta trocar 6 por meia dúzia, é preciso saber 
+identificar código ruim e saber como resolver.
 
 Código limpo é algo que se adquire com a prática e não com teoria, na verdade adquirimos com a teoria sim, mas é muito 
 pouco. O ideal é praticar muito, ou seja, programar, programar, programar... Com o tempo você começará a perceber que 
@@ -35,7 +35,7 @@ Verdade, tudo mundo cometeu, poucos admitem. Eu cometi muito! O importante é ap
 de saber corrigir, começar a evitá-lo. Lá vai os "5 mandamentos"...
 
 1. __Endentar o código corretamente__, não mostre seu código a ninguém antes de ter certeza de que ele está devidamente 
-endentado. Código com endentação imprecisa dá nojo, não faça isso!
+endentado. Código com endentação imprecisa é vergonhoso, não faça isso!
     
 2. Procure __bons nomes__ para suas variáveis, métodos, classes, nomes de campos de tabelas, nomes de formulários, etc...
 Ao programar, pare um instante para pensar em um nome significativo, se dê esse tempo.
@@ -117,11 +117,8 @@ Deveria-mos ter os objetivos de forma bem clara.
 
 Aconselho a leitura do livro Refatoração, Aperfeiçoando o Projeto de Código Existente de Martin Fowler.
 
-
-
-### Testes Unitários (depois de codificado)
-
-O código já está funcionando, se eu mexer poderei danificá-lo!
+O primeiro mandamento da refatoração é "ter um testes no cobrindo"... pois o código já está funcionando e se eu mexer 
+poderei danificá-lo!
 
 Poderá e com certeza irá danificá-lo.
 
@@ -129,15 +126,53 @@ Então, como alterar o código já existente (e funcionando) de forma que ele n�
 
 Esteja certo de que seu código está coberto por testes unitários. 
 
-O problema é que antes de escrevermos um teste unitário temos que considerar essa unidade. E a unidade, normalmente,
-está apoiado em um classe e "classe" já é outro assunto: programação orientada a objetos.
 
-Você deve procurar saber o que são testes unitários, comece utilizando um framework de teste de sua linguagem preferida.
 
-Exemplo!!! Asserções
+### Testes Unitários (depois de codificado)
+
+Não seria ótimo se você pudesse perguntar para o computador se o seu código está ou não funcionado?
+
+Ou ainda, qual é a garantia de que seu código realmente está funcionando?
+
+A resposta é: testes unitários!
+
+Depois que codificamos, podemos escrever um testes unitário para comprovar o funcionamento de determinada unidade. 
+Escrever testes unitários irá mudar radicalmente sua forma de programar. O legal dos testes unitários é que eles são 
+automáticos, ou melhor, podemos executar todos os testes em uma única linha de comando e ver se todos estão passando.
+
+O problema é que você precisa ter um mínimo de conhecimento sobre Programação Orientada a Objetos. Antes de escrevermos 
+um teste unitário temos que considerar essa unidade. E a unidade, normalmente, está apoiada em um classe e "classe" já 
+é outro assunto: programação orientada a objetos. 
+
+Um testes é baseado em uma asserção, uma assertiva, de forma mais simples: uma afirmação.
+
+    #
+    # Eis sua unidade
+    #
+    somaDoisNumeros(a, b)
+        return a + b
+
+    #
+    # Eis o seu teste
+    #
+    valorObtido    = somaDoisNumeros(3, 4)
+    varlorEsperado = 7
+    assertEquals(varlorEsperado, valorObtido)
+
+Se o código acima foi suficientemente intuitivo, você deve ter percebido que a função `assert()` compara se o valor
+esperado é igual ao valor obtido. E não precisamos de todas essas variáveis, normalmente fazemos assim...
+
+    #
+    # Eis o seu teste
+    #
+    assertEquals(7, somaDoisNumeros(3, 4))
+
+Essa é a afirmação: que o resultado da função `somaDoisNumeros()` com os valores `3` e `4` será `7`.
 
 > Os testes são essenciais porque, embora eu siga refatorações estruturadas para evitar a maioria das chances de 
 > introdução de falhas, ainda sou humano e ainda cometo erros. Assim, preciso de testes sólidos.
+
+Cada linguagem de programação possui seu próprio framework de testes, procure o seu e comece agora mesmo a praticar.
 
 
 
@@ -145,12 +180,26 @@ Exemplo!!! Asserções
 
 Se escrever um teste após codificar é importante, escrever um teste antes de codificar é igualmente importante.
 
-O ato de escrever um teste antes de codificar é conhecido pelas siglas [TDD](/tdd).
+O ato de escrever um teste antes de codificar é conhecido pelas siglas __TDD__ (Test Driven Development), 
+desenvolvimento guiado por testes.
 
 A prática do TDD tem como objetivo primário "Código limpa e que funciona", olha que lindo! Além de código limpo teremos
 código funcionando de verdade.
 
-falar mais sobre o TDD!!!
+Não é apenas escrever um teste para um método, mas sim escrever um teste e, somente após termos o teste, seguir com o 
+desenvolvimento. É como o próprio nome diz, o desenvolvimento é guiado pelos testes. Se escrevemos um código e depois 
+testamos aí não é TDD, é simplesmente teste unitário. Para ser TDD o teste deve vir antes do código.
+
+Mas não é só isso, nem é tão simples quanto parece. Dentre outras coisas, o  universo do TDD compreende:
+
+- Cilco de desenvolvimento (green, red, refactor)
+- Babys steps (passos pequenos)
+ 
+Eu escrevi um tutorial (para os inciantes) sobre [TDD](/tdd).
+
+Se você já programa a um tempo e ainda não experimentou o TDD sugiro a leitura do livro __Test Driven Development By exemple__
+de Kent Bach (há a versão em português).
+
 
 
 
