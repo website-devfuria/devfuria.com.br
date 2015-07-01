@@ -143,10 +143,17 @@ class MyTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
 ```
 
-O exemplo abaixo demonstra como testar uma pequena classe.
+O resultado de `python foo.py` você confere abaixo.
+    
+    .
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.000s
+
+    OK
+
+O exemplo seguinte demonstra como testar uma pequena classe.
 
 ```python
 import unittest
@@ -162,5 +169,13 @@ class MyFunTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
 ```
+
+O resultado é semelhante ao anterior.
+    
+    .
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.000s
+
+    OK
+
