@@ -134,7 +134,7 @@ Não seria ótimo se você pudesse perguntar para o computador se o seu código 
 
 Ou ainda, qual é a garantia de que seu código realmente está funcionando?
 
-A resposta é: testes unitários!
+É possível saber se determinado código está cumprindo seu objetivo, estamos falando de testes unitários!
 
 Depois que codificamos, podemos escrever um testes unitário para comprovar o funcionamento de determinada unidade. 
 Escrever testes unitários irá mudar radicalmente sua forma de programar. O legal dos testes unitários é que eles são 
@@ -160,7 +160,9 @@ Um testes é baseado em uma asserção, uma assertiva, de forma mais simples: um
     assertEquals(varlorEsperado, valorObtido)
 
 Se o código acima foi suficientemente intuitivo, você deve ter percebido que a função `assert()` compara se o valor
-esperado é igual ao valor obtido. E não precisamos de todas essas variáveis, normalmente fazemos assim...
+esperado é igual ao valor obtido. 
+
+E não precisamos de todas essas variáveis, normalmente fazemos assim...
 
     #
     # Eis o seu teste
