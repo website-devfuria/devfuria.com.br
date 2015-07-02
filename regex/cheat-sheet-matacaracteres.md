@@ -257,8 +257,8 @@ Outros
             </td>
         </tr>
         <tr>
-            <td><code>\1</code></td>
-            <td>retrovisor</td>
+            <td><code>\1 ... \9</code></td>
+            <td><a href="../metacaractere-retrorreferencia/">retrorreferência</a></td>
             <td>
                 <ul>
                     <li>usado com o grupo</li>

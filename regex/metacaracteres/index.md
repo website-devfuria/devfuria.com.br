@@ -168,7 +168,7 @@ Veja mais sobre o [metacaractere ou |](../metacaractere-ou/)
 
 
 
-Metacaractere ()	grupo
+Metacaractere () grupo
 ---
 
 Grupos servem para agrupar.
@@ -183,7 +183,13 @@ Veja mais sobre o [metacaractere grupo ()](../metacaractere-grupo/)
 
 
 
-Metacaractere \1	retrovisor
+Metacaractere \1 ... \9	retrorreferência
 ---
 
-Em breve!
+A utilização do [metacaractere grupo](/regex/metacaractere-grupo/) possibilita a captura de um trecho de texto casado 
+pela expressão regular que fica armazenado em um cantinho especial e pode ser usado em outras partes da mesa expresão. 
+
+A expressão `in(d)ol(or) é sem \1\2` casa inteiramente com o texto "indolor é sem dor".
+
+![Figura ilustrando o metacaractere retrorreferência](../metacaractere-retrorreferencia/metacaractere-retrorreferencia-01.png "Expresão regular: metacaractere retrorreferência")
+
