@@ -1,10 +1,9 @@
 ---
 layout:      grid93-article
-title:       Manipulando checkboxes com PHP
-description: 'Veremos como enviar e receber dados através do controle checkbox (input type="check")'
+title:       Manipulando checkboxes<br />com PHP
+description: "Veremos como enviar e receber dados<br />através do controlecheckbox (input type='check')"
 menu:        php-forms
 ---
-
 
 Checkboxes são controles "booleanos" (modo de dizer), eles ou estão ligados (true) ou estão desligados (false).
 
@@ -54,11 +53,12 @@ E elas podem ser iguais ou diferentes.
 Recebendo o formulário web
 ---
 
-Você deve estar pensando que o __checkbox__ funciona de forma idêntica ao controle __textbox__. Mas eles funcionam de forma diferente.
+Você deve estar pensando que o __checkbox__ funciona de forma idêntica ao controle __textbox__, mas eles funcionam de 
+forma diferente.
 
-O checkbox, quando clicado (caixa ticada), enviará o par `nome=valor` para o servidor.
+O checkbox, quando clicado, enviará o par `nome=valor` para o servidor.
 
-Agora, quando ele não é clicado (caixa não ticada), ele enviará o quê para o servidor??? Isto `name=""` ?
+Agora, quando ele não é clicado, ele enviará o quê para o servidor? Isto `name=""` ?
 
 Negativo, ele não envia nada, absolutamente nada. Nenhum par de valor, nenhuma referência vazia, nada!
 
@@ -67,7 +67,7 @@ quando não ticado.
 
 Por alguma razão, quando o controle não é ticado, ele não envia nada, triste isso né?
 
-Mas "nada poderá nos deter". Poderemos receber da seguinte forma:
+Mas "nada poderá nos deter", poderemos receber da seguinte forma:
 
 
 ```php
