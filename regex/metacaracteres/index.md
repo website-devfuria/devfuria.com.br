@@ -171,7 +171,16 @@ Veja mais sobre o [metacaractere ou |](../metacaractere-ou/)
 Metacaractere ()	grupo
 ---
 
-Em breve!
+Grupos servem para agrupar.
+
+Podem conter outros metacaracteres e inclusive outros grupos.
+
+A expressão regular `boa-(tarde|noite)` casa com `boa-tarde` e `boa-noite`, mas não casa com  `boa-sorte` e `bom-dia`.
+
+![Figura ilustrando o metacaractere grupo](../metacaractere-grupo/metacaractere-grupo-01.png "Expresão regular: metacaractere grupo")
+
+Veja mais sobre o [metacaractere grupo ()](../metacaractere-grupo/)
+
 
 
 Metacaractere \1	retrovisor

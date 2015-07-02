@@ -247,7 +247,7 @@ Outros
         </tr>
         <tr>
             <td><code>()</code></td>
-            <td>grupo</td>
+            <td><a href="../metacaractere-grupo/">grupo</a></td>
             <td>
                 <ul>
                     <li>agrupa</li>
