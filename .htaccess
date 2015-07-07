@@ -122,6 +122,7 @@ RewriteRule ^js\/basico\/input-radio-button\/?$         "http\:\/\/www\.devfuria
 RewriteRule ^js\/basico\/select-combobox\/?$            "http\:\/\/www\.devfuria\.com\.br\/javascript\/forms\/select-combobox\/" [R=301,L]
 RewriteRule ^js\/basico\/code-lampadas-refatorando\/?$  "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/basico\/code-lampadas-refatorando\/index.php?$  "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
+RewriteRule ^js\/basico\/code-lampadas-refatorando\/lampadas.html?$  "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/basico\/refatoracao-codigo-limpo\/?$   "http\:\/\/www\.devfuria\.com\.br\/javascript\/refatoracao-codigo-limpo\/" [R=301,L]
 RewriteRule ^js\/basico\/preparando-o-terreno\/materia.md?$                   "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
 RewriteRule ^js\/basico/draft\/?$                                             "http\:\/\/www\.devfuria\.com\.br\/javascript\/" [R=301,L]
@@ -186,7 +187,7 @@ RewriteRule ^git\/iniciando-com-git\/?$  "http\:\/\/www\.devfuria\.com\.br\/git\
 RewriteRule ^git\/branchs\/?$             "http\:\/\/www\.devfuria\.com\.br\/git\/branch\/" [R=301,L]
 RewriteRule ^seguranca-da-informacao\/owasp-topten-2010-introducao\/?$  "http\:\/\/www\.devfuria\.com\.br\/seguranca-da-informacao\/owasp-topten-2010\/" [R=301,L]
 
-#RewriteRule ^tdd\/exemplo-tdd-area-quadra\/?$        "http\:\/\/www\.devfuria\.com\.br\/tdd\/" [R=301,L]
+RewriteRule ^tdd\/exemplo-tdd-area-quadra\/?$        "http\:\/\/www\.devfuria\.com\.br\/tdd\/exemplo-tdd-area\/" [R=301,L]
 RewriteRule ^tdd\/exemplo-tdd-area-quadrada\/?$      "http\:\/\/www\.devfuria\.com\.br\/tdd\/exemplo-tdd-area\/" [R=301,L]
 RewriteRule ^tdd\/exemplo-tdd-equacao-2grau\/?$      "http\:\/\/www\.devfuria\.com\.br\/tdd\/" [R=301,L]
 RewriteRule ^tdd\/exemplo-tdd-custo-carro\/?$        "http\:\/\/www\.devfuria\.com\.br\/tdd\/" [R=301,L]
