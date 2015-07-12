@@ -1,6 +1,21 @@
+Exemplos de regex
 ---
-layout: grid12-article
----
+
+
+### Curinga .*
+
+A expressão `relatório.*amanhã` casa com
+
+<pre>
+Oi,
+
+Tudo bem?
+
+Preciso do <strong>relatório de vendas pra amanhã</strong>.
+
+Pode ser?
+Abraço.
+</pre>
 
 
 ### Exemplos simples
@@ -8,36 +23,43 @@ layout: grid12-article
 Expressão regular `n.a`:
 
 <pre>
-<span class="regex">não</span> <span class="regex">nao</span> <span class="regex">n-o</span> <span class="regex">n5o</span> <span class="regex">n o</span> 
+<strong>não</strong> <strong>nao</strong> <strong>n-o</strong> <strong>n5o</strong> <strong>n o</strong> 
 </pre>
 
 
 Expressão regular `n[ãa]o`:
 
 <pre>
-<span class="regex">não </span> <span class="regex">nao</span>
+<strong>não </strong> <strong>nao</strong>
 </pre>
 
 
 
 ### Números
 
-Tanto a expressão regular `[0123456789]` como a expressão `[0-9]` produzem:
+A expressão regular `[0123456789]` casa com todos os números de um texto.
 
-<pre>Este exemplo está na página <span class="regex">31</span> do livro</pre>
-
-Dê preferência para a forma reduzida.
+Podemos simplificar a expressão regular acima para `[0-9]`.
 
 
+### Para incluir o literal hífen -
+
+...coloque ele no __final da lista__, como no exemplo abaixo.
+
+Expressão regular `[0-9-]`:
+
+<pre>
+casando<strong>-</strong>com<strong>-</strong>números<strong>-</strong>(<strong>1</strong>, <strong>2</strong>, <strong>3</strong>, etc...)<strong>-</strong>e<strong>-</strong>o<strong>-</strong>hífen
+</pre>
 
 ### Horas
 
 Expressão regular `[0-9][0-9]:[0-9][0-9]`:
 
 <pre>
-<span class="regex">08:30</span>
-<span class="regex">22:50</span>
-<span class="regex">99:00</span>
+<strong>08:30</strong>
+<strong>22:50</strong>
+<strong>99:00</strong>
 </pre>
 
 Mas a expressão acima também casa com valores que não são horas, exemplo "99:99".
@@ -45,9 +67,9 @@ Mas a expressão acima também casa com valores que não são horas, exemplo "99
 Expressão regular `[012][0-9]:[0-5][0-9]`:
 
 <pre>
-<span class="regex">08:30</span>
-<span class="regex">22:50</span>
-<span class="regex">29:00</span>
+<strong>08:30</strong>
+<strong>22:50</strong>
+<strong>29:00</strong>
 </pre>
 
 Já melhorou um pouco, mas ainda casa com "29:00".
@@ -59,7 +81,7 @@ Já melhorou um pouco, mas ainda casa com "29:00".
 Expressão regular `[aeiou]`:
 
 <pre>
-<span class="regex">a</span>bcd<span class="regex">e</span>fgh<span class="regex">i</span>jklmn<span class="regex">o</span>pqrst<span class="regex">u</span>vwxyz
+<strong>a</strong>bcd<strong>e</strong>fgh<strong>i</strong>jklmn<strong>o</strong>pqrst<strong>u</strong>vwxyz
 </pre>
 
 
@@ -69,7 +91,7 @@ Expressão regular `[aeiou]`:
 Expressão regular `[a-z]`:
 
 <pre>
-<span class="regex">abcdefghijklmnopqrstuvwxyz</span>
+<strong>abcdefghijklmnopqrstuvwxyz</strong>
 </pre>
 
 
@@ -79,19 +101,19 @@ Expressão regular `[a-z]`:
 Expressão regular `[a-k]`:
 
 <pre>
-<span class="regex">abcdefghijk</span>lmnopqrstuvwxyz
+<strong>abcdefghijk</strong>lmnopqrstuvwxyz
 </pre>
 
 Expressão regular `[^a-k]`:
 
 <pre>
-abcdefghijk<span class="regex">lmnopqrstuvwxyz</span>
+abcdefghijk<strong>lmnopqrstuvwxyz</strong>
 </pre>
 
 Expressão regular `[a-el-o]`:
 
 <pre>
-<span class="regex">abcde</span>fghijk<span class="regex">lmno</span>pqrstuvwxyz
+<strong>abcde</strong>fghijk<strong>lmno</strong>pqrstuvwxyz
 </pre>
 
 
@@ -100,7 +122,7 @@ Expressão regular `[a-el-o]`:
 Expressão regular `[A-Z]`:
 
 <pre>
-<span class="regex">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+<strong>ABCDEFGHIJKLMNOPQRSTUVWXYZ</strong>
 </pre>
 
 
@@ -110,9 +132,9 @@ Expressão regular `[A-Z]`:
 Expressão regular `[A-Za-z0-9]`:
 
 <pre>
-<span class="regex">0123456789
+<strong>0123456789
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
-abcdefghijklmnopqrstuvwxyz</span>
+abcdefghijklmnopqrstuvwxyz</strong>
 </pre>
 
 
@@ -123,8 +145,8 @@ abcdefghijklmnopqrstuvwxyz</span>
 Expressão regular `[:-@]`:
 
 <pre>
- !"#$%&'()*+,-./0123456789<span class="regex">:;<=>?
-@</span>ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+ !"#$%&'()*+,-./0123456789<strong>:;<=>?
+@</strong>ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
 `abcdefghijklmnopqrstuvwxyz{|}~¡
 ¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂ
 ÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâ
@@ -134,7 +156,7 @@ Expressão regular `[:-@]`:
 Expressão regular `[.,!?:]`:
 
 <pre>
- <span class="regex">!</span>"#$%&'()*+<span class="regex">,</span>-<span class="regex">.</span>/0123456789<span class="regex">:</span>;<=><span class="regex">?</span>
+ <strong>!</strong>"#$%&'()*+<strong>,</strong>-<strong>.</strong>/0123456789<strong>:</strong>;<=><strong>?</strong>
 @ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
 `abcdefghijklmnopqrstuvwxyz{|}~¡
 ¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂ
@@ -147,8 +169,8 @@ Não utilize a expressão regular `[A-z]`, ela vai pegar algo a mais além das l
 
 <pre>
  !"#$%&'()*+,-./0123456789:;<=>?
-@<span class="regex">ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
-`abcdefghijklmnopqrstuvwxyz</span>{|}~¡
+@<strong>ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+`abcdefghijklmnopqrstuvwxyz</strong>{|}~¡
 ¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂ
 ÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâ
 ãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
@@ -158,35 +180,31 @@ Não utilize a expressão regular `[A-z]`, ela vai pegar algo a mais além das l
 Todos os caracteres da tabela ASCII menos os __numéricos__, expressão regular `[^0-9]`:
 
 <pre>
-<span class="regex"> !"#$%&'()*+,-./</span>0123456789<span class="regex">:;<=>?
+<strong> !"#$%&'()*+,-./</strong>0123456789<strong>:;<=>?
 @ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
 `abcdefghijklmnopqrstuvwxyz{|}~¡
 ¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂ
 ÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâ
-ãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ</span>
+ãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ</strong>
 </pre>
 
 Todos os caracteres da tabela ASCII menos os alfa numéricos, expressão regular `[^A-Za-z0-9]`:
 
 <pre>
-<span class="regex"> !"#$%&'()*+,-./</span>0123456789<span class="regex">:;<=>?
-@</span>ABCDEFGHIJKLMNOPQRSTUVWXYZ<span class="regex">[\]^_
-`</span>abcdefghijklmnopqrstuvwxyz<span class="regex">{|}~¡
+<strong> !"#$%&'()*+,-./</strong>0123456789<strong>:;<=>?
+@</strong>ABCDEFGHIJKLMNOPQRSTUVWXYZ<strong>[\]^_
+`</strong>abcdefghijklmnopqrstuvwxyz<strong>{|}~¡
 ¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂ
 ÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâ
-ãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ</span>
+ãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ</strong>
 </pre>
 
 
-### Para incluir o literal hífen -
 
-...coloque ele no __final da lista__, como no exemplo abaixo.
-
-Expressão regular `[0-9-]`:
 
 
 <pre>
-casando<span class="regex">-</span>com<span class="regex">-</span>números<span class="regex">-</span>(<span class="regex">1</span>, <span class="regex">2</span>, <span class="regex">3</span>, etc...)<span class="regex">-</span>e<span class="regex">-</span>o<span class="regex">-</span>hífen
+casando<strong>-</strong>com<strong>-</strong>números<strong>-</strong>(<strong>1</strong>, <strong>2</strong>, <strong>3</strong>, etc...)<strong>-</strong>e<strong>-</strong>o<strong>-</strong>hífen
 </pre>
 
 ### Para incluir o literal colchete que fecha ]
@@ -197,7 +215,7 @@ Expressão regular `[]0-9]`:
 
 
 <pre>
-casando<span class="regex">]</span>com<span class="regex">]</span>números<span class="regex">]</span>(<span class="regex">1</span>, <span class="regex">2</span>, <span class="regex">3</span>, etc...)<span class="regex">]</span>e<span class="regex">]</span>o<span class="regex">]</span>colchete
+casando<strong>]</strong>com<strong>]</strong>números<strong>]</strong>(<strong>1</strong>, <strong>2</strong>, <strong>3</strong>, etc...)<strong>]</strong>e<strong>]</strong>o<strong>]</strong>colchete
 </pre>
 
 
@@ -249,17 +267,13 @@ A correta utilização é __uma classe POSIX dentro de uma lista__:
 
 
 
-### Curinga .*
 
-A expressão `relatório.*amanhã` casa com
 
-<pre>
-Oi,
 
-Tudo bem?
 
-Preciso do <span class="regex">relatório de vendas pra amanhã</span>.
+### Exemplo <p[^>]*>
+					
+This will select the opening `p` tag. 
+Use what ever tag you need in place of the 'p'.
 
-Pode ser?
-Abraço.
-</pre>
+Fonte http://www.mywebref.com/Code_Helper/pages/33.html
