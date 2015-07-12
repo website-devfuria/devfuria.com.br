@@ -23,13 +23,21 @@ As funções do PREC são derivadas de `preg_macth()`.
 
 
 
-### Veja as matérias na seção PHP:
+### Leia as matérias na seção PHP:
 
 {% include menus/php-regex.html %}
 
 
 
-### Veja também
+
+Referência
+---
 
 - [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php "link-externo")
 - [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php "link-externo")
+
+
+Leia também
+---
+
+- [Expressões Regulares - metacaracteres](/regex/metacaracteres/)

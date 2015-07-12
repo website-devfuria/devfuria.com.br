@@ -1,12 +1,10 @@
 ---
 layout:      grid12-article
-title:       Expressões Regulares - metacaracteres
-description: Este artigo é um resumo dos metacaracteres das Expressões Regulares.
+title:       Expressões Regulares<br />metacaracteres
+description: Este artigo é uma breve apresentação dos principais metacaracteres das Expressões Regulares.
 ---
 
-Este artigo é um resumo dos metacaracteres, você verá uma síntese de cada metacaracter e logo abaixo um link para 
-aprofundar o assunto.
-
+Neste artigo você verá uma síntese de cada metacaracter e logo abaixo um link para se aprofundar o assunto.
 
 
 Metacaractere ponto .

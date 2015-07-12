@@ -85,7 +85,17 @@ console.log(string.match(pattern));// ["exemplo", 19, "Casa com a palavra exempl
 Leia mais sobre o construtor [RegExp()](/javascript/refs/regexp/).
 
 
+
+
 Referência
 ---
 
-- [MDN (site oficial)](https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions "link-externo")
+- [MDN - Regular Expressions (site oficial)](https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions "link-externo")
+
+
+Leia também
+---
+
+- [Expressões Regulares - metacaracteres](/regex/metacaracteres/)
+
+Também é possível aprender Expressões Regulares em JavaScript de forma interativa no site [tryregex](http://tryregex.com/ "link-externo")

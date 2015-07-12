@@ -6,58 +6,31 @@ description: Descomplicamos as expressões regulares
 
 Seja bem vindo(a) a seção sobre Expressões Regulares!
 
-A primeira coisa que precisamos responder é [o que são Expressões Regulares](expressoes-regulares/) ?   
 
-A segunda pode ser um [resumo dos metacarecteres](/regex/metacaracteres/).
+### Artigos introdutórios
 
-Talvez você queria estudar cada metacaractere separadamente e com mais detalhes...
+{% include menus/regex-artigos.html %}
+
+
+### Metacracteres
 
 {% include menus/regex-metacaracteres.html %}
 
-Está procurando uma visão geral sobre os metacaracteres? Veja [cheat-sheet-matacaracteres](/regex/cheat-sheet-matacaracteres/).
 
 
-### A fonte...
+### JavaScript e Expressões Regulares
 
-[Aurélio Marinho](http://aurelio.net/regex/ "link-externo") é a autoridade máxima Brasileira a respeitos das Expressões
-Regulares.
+Subceção sobre [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
 
-Seu livro [Expressões Regulares - uma abordargem divertida](http://www.piazinho.com.br/ "link-externo") é leitura obrigatória,
-encontra-se na 4 edição
-(Novatec).
-
-Também é possível ler online a [1 edição do livro](http://aurelio.net/regex/guia/ "link-externo").
+{% include menus/javascript-regex.html %}
 
 
 
-### JavaScript Expressões Regulares
+### PHP e Expressões Regulares
 
-Em JavaScript temos 3 funções para tratarmos as expressão regular's: 
-[test()](/javascript/refs/pattern-test/), 
-[exec()](/javascript/refs/pattern-exec/) e 
-[match()](/javascript/refs/string-match/).
+Subceção sobre [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
 
-E também temos o construtor [RegExp()](/javascript/refs/regexp/).
-
-Também é possível aprender Expressões Regulares em JavaScript de forma interativa no site [tryregex](http://tryregex.com/ "link-externo").
-
-[Continue lendo...](/regex/javascript-expressoes-regulares/)
-
-
-
-### PHP Expressões Regulares
-
-Em PHP temos os dois mudos: PCRE e POSIX.
-
-As funções POSIX são derivadas de `ereg()`.
-
-As funções do PREC são derivadas de `preg_macth()`.
-
-Veremos as funções
-[preg match all](/php/preg-match-all-basico/ "O básico sobre a função preg match all") e
-[preg match](/php/preg-match-basico/ "O básico sobre a função preg match").
-
-[Continue lendo...](/regex/php-expressoes-regulares/)
+{% include menus/php-regex.html %}
 
 
 
@@ -74,6 +47,13 @@ sabores: Python, Ruby, .NET, GO, Haskell, Java, JavaSript, etc...
 
 
 
-### Relação completa de artigos
+### A fonte...
 
-Veja aqui a [relação completa de artigos sobre Expressões Regulares](/regex/relacao-completa/)
+[Aurélio Marinho](http://aurelio.net/regex/ "link-externo") é a autoridade máxima Brasileira a respeitos das Expressões
+Regulares.
+
+Seu livro [Expressões Regulares - uma abordargem divertida](http://www.piazinho.com.br/ "link-externo") é leitura obrigatória,
+encontra-se na 4 edição
+(Novatec).
+
+Também é possível ler online a [1 edição do livro](http://aurelio.net/regex/guia/ "link-externo").

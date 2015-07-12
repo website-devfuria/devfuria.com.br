@@ -57,3 +57,8 @@ Veja os resultados (matches) da expressão abaixo:
 ![Figura ilustrando o 2 exemplo de expressão regular](exemplo2-expressoes-regulares.png)
 
 
+
+Leia em seguida
+---
+
+- [Apresentação dos Metacaracteres](/regex/metacaracteres/)
