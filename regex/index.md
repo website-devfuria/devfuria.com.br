@@ -57,3 +57,5 @@ encontra-se na 4 edição
 (Novatec).
 
 Também é possível ler online a [1 edição do livro](http://aurelio.net/regex/guia/ "link-externo").
+
+
