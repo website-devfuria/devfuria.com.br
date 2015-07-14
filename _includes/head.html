@@ -11,11 +11,13 @@
 </title>
 
 {% if page.description %}
-    <meta name="description" content="{{ page.description | replace:'<br>','' }}" />
+    <meta name="description" content="{{ page.description | replace:'<br />','' }}" />
+    <meta name="og:description" content="{{ page.description | replace:'<br />','' }}" />
 {% endif %}
 
 <meta name="author" content="Flávio Alexandre Micheletti">
 
+<meta property="og:type" content="website" /> 
 <meta property="og:title" content="{{ page.title }}"/>
 <meta property="og:url" content="http://www.devfuria.com.br{{ page.url }}" />
 <meta property="og:image" content="http://www.devfuria.com.br{% if page.ogimage %}{{ page.ogimage | prepend: page.url }}{% else %}{{ "/assets/imgs/favicon.png" }}{% endif %}"/>
