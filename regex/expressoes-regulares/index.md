@@ -2,6 +2,7 @@
 layout:      grid12-article
 title:       Introdução a Expressões Regulares
 description: Uma pequena e rápida introdução<br />as Expressões Regulares
+ogimage:     expressoes-regulares.png
 ---
 
 __O que são Expressões Regulares ?__

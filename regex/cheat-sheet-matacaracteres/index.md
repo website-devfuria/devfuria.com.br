@@ -1,7 +1,8 @@
 ---
 layout:      grid12-article
 title:       Cheat sheet - Metacaracteres
-description: Este artigo é uma cheat sheet (folha de cola) dos metacaracteres de Expressões Regulares.
+description: Este artigo é uma cheat sheet (folha de cola)<br /> dos metacaracteres de Expressões Regulares
+ogimage:     cheat-sheet-metacaracteres.png
 ---
 
 Representantes
