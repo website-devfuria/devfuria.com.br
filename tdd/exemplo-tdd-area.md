@@ -8,7 +8,7 @@ menu:        tdd-exemplos-simples
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
 Seu objetivo é construir uma classe denominada `Area` que calcule tanto a área quadrada (primeiro método) como a
-área cúbica (segundo método). Como o exemplo é na __linguagem C++__ faremos uso de programação orientada a objetos, 
+área cúbica (segundo método). Faremos uso de programação orientada a objetos, 
 obviamente.
 
 Ok, vamos dividir para conquistar. Ataquemos a primeira função, a área quadrada.

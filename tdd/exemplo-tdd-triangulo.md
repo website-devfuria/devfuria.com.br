@@ -7,7 +7,7 @@ menu:        tdd-exemplos-simples
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Vamos construindo um pequeno código na __linguagem C++__ utilizando programação orientada a objetos.
+Vamos construindo um pequeno código na linguagem Python utilizando programação orientada a objetos.
 
 Inicialmente, nosso objetivo é escrever uma classe com um método para testar se os valores de `a`, `b` e `c`  (lados do
 triângulo) são válidos, ou seja, se realmente formam um triângulo.
