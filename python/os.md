@@ -4,8 +4,8 @@ title:       Python - os
 description: Neste artigo veremos o funcionamento<br />do módulo python.os bem como as funções<br />listdir(), exists(), isdir(), isfile()
 ---
 
-O módulo __os__ acredito que é um dos principais em Python, ele trás informações sobre o sistema operacional com a 
-demonstrado abaixo no terminal.
+O módulo __os__ acredito que é um dos principais em Python, ele trás informações sobre o sistema operacional como 
+demonstrado abaixo (via terminal).
 
 ```python
 >>> import os
@@ -13,7 +13,7 @@ demonstrado abaixo no terminal.
 'posix'
 ```
 
-Ele é muito útil quando o trabalho refere-se a mexer no sistema de arquivos.
+Ele é muito útil quando você precisar mexer no sistema de arquivos.
 
 ```python
 #
@@ -30,7 +30,7 @@ for file in dirs:
 
 ```python
 #
-# Exemplo 0w
+# Exemplo 02
 #
 import os
 
