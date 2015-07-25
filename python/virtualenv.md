@@ -69,6 +69,11 @@ O seu __bash__ foi modificado, antes do comando era...
 
     (foo)[voce@localhost foo]$ 
 
+Opcional: quando você ativar pela primeira vez, talvez queira atualizar o pip, então certifique-se de ter ativado o
+virtualenv (seu bash estará modificado) e execute o comando abaixo.
+
+    (bash modificado)$ pip install --upgrade pip
+
 
 
 ### Desativando
