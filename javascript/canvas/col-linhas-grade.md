@@ -38,7 +38,7 @@ description: Um exemplo grid line para Canvas, com ele é possível testar visua
 
 __Função utilitária para teste visual.__
 
-[Fork me on GitHub](https://github.com/flaviomicheletti/canvas/tree/master/grid "link-externo")
+[Fork me on GitHub](https://github.com/devfuria/canvas-exemplos/tree/master/grid "link-externo")
 
 Este canvas é bem simples, ele desenha um grid para checarmos visualmente se o resultado está de acordo.
 
