@@ -1,8 +1,7 @@
 ---
-layout:      grid93-article
+layout:      grid12-article
 title:       Python - Expressões Regulares
 description: O básico sobre Expressões Regulares (regex) na linguagem Python
-menu:        python-artigos
 ---
 
 Para aprender sobre expressões regulares em Python é necessário, antes de tudo, entendermos sobre as próprias expressões
