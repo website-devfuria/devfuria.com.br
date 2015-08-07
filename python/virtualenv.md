@@ -1,8 +1,7 @@
 ---
-layout:      grid93-article
+layout:      grid12-article
 title:       Virtualenv
 description: Matéria que mostra como dar os primeiros passos<br> com o Virtualenv um simulador de ambientes para Python
-menu:        python-artigos
 ---
 
 O __Virtualenv__ é um simulador de ambiente para [Python](/python/), com ele é possível instalar em determinado diretório
