@@ -200,7 +200,7 @@ mostrar a resposta.
 
 Para utilizarmos funções anônimas em Python devemos lançar mão da expressão `lambda`.
 
-A sintaxe em JavaScript é um pouco mais intuitiva (minha opnião), por isso eu mostrei ela em primeiro lugar.
+A sintaxe em JavaScript é um pouco mais intuitiva (minha opinião), por isso eu mostrei ela em primeiro lugar.
 
 ```python
 #
