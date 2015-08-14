@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Instalando e configurando<br>o PHPMyAdmin no Linux
-description: Aprenda como instalar e configurar<br>o PHPMyAdmin no Linux
+title:       Instalando e configurando< />o PHPMyAdmin no Linux
+description: Aprenda como instalar e configurar<br />o PHPMyAdmin no Linux
 ---
 
 O PhpMyAdmin é um aplicativo responsável por oferecer uma interface amigável de trabalho ao usuário do banco.

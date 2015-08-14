@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Qual é a versão do Ubuntu?
-description: Artigo que mostra como identificar<br> a versão do Ubuntu em modo texto <br>(pelo terminal)
+description: Artigo que mostra como identificar<br /> a versão do Ubuntu em modo texto <br />(pelo terminal)
 ---
 
 As vezes precisamos saber qual a versão correta instalada na máquina, para isso podemos contar com dois rápidos comandos.

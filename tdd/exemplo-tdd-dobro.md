@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD <br> O dobro de um número qualquer"
-description: Primeiro artigo de uma série de exemplos básicos de <br>TDD (Test Driven Development) nas linguagens C, Python e JavaScript
+title:       "Simples exemplo de TDD <br /> O dobro de um número qualquer"
+description: Primeiro artigo de uma série de exemplos básicos de <br />TDD (Test Driven Development) nas linguagens C, Python e JavaScript
 menu:        tdd-exemplos-simples
 ---
 

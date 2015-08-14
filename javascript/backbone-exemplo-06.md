@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Backbone exemplo 05: <br />Duas visões e uma função de callback"
+title:       "Backbone exemplo 06: <br />Privilegiômetro"
 description: Exemplo de código Backbone (JavaScript) que cria uma combobox<br /> utilizando-se duas visões e uma função de callback.
 menu:        javascript-backbone
 ---
