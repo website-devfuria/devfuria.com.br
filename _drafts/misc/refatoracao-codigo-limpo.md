@@ -241,7 +241,7 @@ mantenha-o simples, idiota
 [I]nterface Segregation Principle
 [D]ependency Inversion Principle
 
-
+http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
 
 Conclusão
 ---
