@@ -254,9 +254,7 @@ obj.details.color      // orange
 obj["details"]["size"] // 12
 ```
 
-Outro exemplo.
-
-Funções também se comportam como objetos.
+Funções também se comportam como objetos, veja o exemplo abaixo.
 
 ```javascript
 function Person(name, age) {
