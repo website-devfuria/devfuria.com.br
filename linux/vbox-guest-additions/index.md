@@ -17,12 +17,12 @@ Atualize seu sistema
 
     # yum update
 
-Instale os headers do kernel, se não você verá a seguinte menssagem de erro 
+Instale os headers do kernel, se não você verá a seguinte mensagem de erro 
 [The headers for the current running kernel were not found](../vbox-headers-for-the-current-running-kernel-were-not-found/ "The headers for the current running kernel were not found")
 
     # yum install kernel-devel
 
-Instale também o GCC (compilador da GNU), se não você verá a seguinte menssagem de erro __"The gcc utility was not found"__.
+Instale também o GCC (compilador da GNU), se não você verá a seguinte mensagem de erro __"The gcc utility was not found"__.
 
     # yum install gcc
 
