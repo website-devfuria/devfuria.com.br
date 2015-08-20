@@ -80,8 +80,8 @@ context.stroke();        // pinta o caminho
 
 ### Importante
 
-- Sem o `beginPath()`, o `closePath()` incrivelmente funciona. Pelo menos neste caso simples.
-- A ordem é importante, se o objetivo é fechar o caminho então `closePath()` deve vir sempre antes de `stroke()`
+- Sem o `beginPath()` o `closePath()`, incrivelmente, funciona. Pelo menos neste caso simples.
+- A ordem é importante, se o objetivo é fechar o caminho, então `closePath()` deve vir sempre antes de `stroke()`
 
 
 
