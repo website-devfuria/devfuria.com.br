@@ -7,7 +7,7 @@ menu:        php-forms
 
 Checkboxes são controles "booleanos" (modo de dizer), eles ou estão ligados (true) ou estão desligados (false).
 
-Leia mais sobre o [controle checkobox](/html-css/formularios/checkbox/) na seção HTML.
+Leia mais sobre o [controle checkbox](/html-css/formularios/checkbox/) na seção HTML.
 
 Abaixo vemos o formulário web no qual trabalharemos.
 
@@ -40,13 +40,13 @@ Crie o arquivo `form.php` e insira o seguinte conteúdo:
 
 O PHP depende da propriedade `name` já o JS depende da propriedade `id`.
 
-E as 2 propriedades podem ser utilizadas juntas?
+E as duas propriedades podem ser utilizadas juntas?
 
 Sim podem, veja:
 
     <input type="checkbox" name="" id=""
 
-E elas podem ser iguais ou diferentes.
+Elas também podem ser iguais ou diferentes.
 
 
 
@@ -177,4 +177,4 @@ $car  = (bool) rand(0, 1) ? "checked" : null;
 ```
 
 Veja o código completo deste exemplo no GitHub
-[php-exemplo/forms/checkbox/](https://github.com/devfuria/php-exemplos/tree/master/forms/checkbox "link-externo").
+[GitHub](https://github.com/devfuria/php-exemplos/tree/master/forms/checkbox "link-externo").
