@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Acessando o MySQL via console (terminal)
-description: Aprenda a acesar o MySQL via terminal no Linux.
+title:       Acessando o MySQL<br /> via console (terminal)
+description: mysql -h localhost -u root -p<br /><br />Para entender o comando acima leia o artigo abaixo.
 menu:        mysql
 ---
 
