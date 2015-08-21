@@ -327,7 +327,7 @@ Exemplo, `"flavio.upper()"` equivale a `FLAVIO`.
 "python"[5] # 'n'
 ```
 
-Leia mais sobre [fatiamento de sequências](../sequencias-fatiamento/ "Python - Sequências").
+Leia mais sobre [fatiamento de sequências](/python/sequencias-fatiamento/ "Python - Sequências").
 
 
 ### Percorrendo strings (string lopping)
@@ -346,7 +346,7 @@ n
 """
 ```
 
-Leia mais sobre [strings](../strings/ "Python - Strings").
+Leia mais sobre [strings](/python/strings/ "Python - Strings").
 
 
 Controle de fluxo (condicionais)
@@ -425,7 +425,7 @@ def add_two(a, b):
     return c
 ```
 
-Leia mais sobre [funções](../functions/ "Python - funções(functions)").
+Leia mais sobre [funções](/python/functions/ "Python - funções(functions)").
 
 
 
@@ -454,7 +454,7 @@ from math import *
 Em geral, a prática do `import *` de um módulo ou pacote é desaprovada, uma vez que muitas vezes dificulta a leitura do 
 código.
 
-Leia mais sobre [imports](../imports/ "Importando módulos no Python (imports)").
+Leia mais sobre [imports](/python/imports/ "Importando módulos no Python (imports)").
 
 
 
@@ -507,7 +507,7 @@ A função `len()` retorna o tamanho da lista.
 len(animals) # 4
 ```
 
-Leia mais sobre [listas](../listas/ "Python - listas(list)").
+Leia mais sobre [listas](/python/listas/ "Python - listas(list)").
 
 
 ### range() 
@@ -562,7 +562,7 @@ joao
 """
 ```
 
-Leia mais sobre [dicinonários](../dicionarios-dictionaries/ "Python - dicionários (dctionaries)").
+Leia mais sobre [dicinonários](/python/dicionarios-dictionaries/ "Python - dicionários (dctionaries)").
 
 
 
@@ -617,7 +617,7 @@ Abaixo vemos um exemplo simples de como __instanciar__ uma classe em Python.
 figure = Triangle(30, 40, 50)
 ```
 
-Leia mais sobre [Programação Orientada a Objetos](../programacao-orientada-objetos/ "Programação Orientada a Objetos em Python").
+Leia mais sobre [Programação Orientada a Objetos](/python/programacao-orientada-objetos/ "Programação Orientada a Objetos em Python").
 
 
 
