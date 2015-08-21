@@ -359,7 +359,6 @@ else:
     print("false")
 ```
 
-
 ```python
 if answer > 5:
     return 1
@@ -369,6 +368,7 @@ else:
     return 0
 ```
 
+Leia mais sobre [estruturas condicionais](/python/estruturas-condicionais/ "Python - Estruturas- Condicionais").
 
 
 Laços de repetição
