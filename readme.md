@@ -35,5 +35,5 @@ Para gerar o site utilize o jekyll.
 Contato
 ---
 
-feedback@devfuria.com.br
+flaviomicheletti@hotmail.com
 
