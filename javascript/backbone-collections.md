@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone - Collections
-description: Aprenda o básico sobre Collections no framework Backbone para JavaScript,<br>veremos diversas forma de percorre uma coleção<br>além de como ordenar uma collection.
+description: Aprenda o básico sobre Collections no framework Backbone para JavaScript,<br />veremos diversas forma de percorre uma coleção<br />além de como ordenar uma collection.
 menu:        javascript-backbone
 ---
 

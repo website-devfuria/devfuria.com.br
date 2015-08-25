@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Code - A lâmpada
-description: Código em JavaScript que acende e apaga uma lâmpada<br>(princípio de animações com JS)!
+description: Código em JavaScript que acende e apaga uma lâmpada<br />(princípio de animações com JS)!
 ---
 
 Nesta matéria utilizarei o código que faz a uma lâmpada acender e apagar.

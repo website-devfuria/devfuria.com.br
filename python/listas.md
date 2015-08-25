@@ -218,9 +218,11 @@ lista = ["c", "b", "a"]
 print(lista.sort()) # None
 ```
 
-... já a função `sorted()` retorna a lista:
+... já a função `sorted()` retorna a lista `['a', 'b', 'c']` veja:
+
 ```python
 lista = ["c", "b", "a"]
-print(sorted(lista)) # ['a', 'b', 'c']
+print(sorted(lista))
+# ['a', 'b', 'c']
 ```
 

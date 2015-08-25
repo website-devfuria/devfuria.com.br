@@ -1,6 +1,6 @@
 ---
 layout:       grid12-article
-title:        A trilha para alcançar<br>um código limpo
+title:        A trilha para alcançar<br />um código limpo
 description:  Pequena lista, despretenciosa, que lhe ajudará<br>na busca pela boa codificação
 ---
 
@@ -241,7 +241,7 @@ mantenha-o simples, idiota
 [I]nterface Segregation Principle
 [D]ependency Inversion Principle
 
-
+http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
 
 Conclusão
 ---

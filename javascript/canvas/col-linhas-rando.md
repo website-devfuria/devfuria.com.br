@@ -66,7 +66,7 @@ description: Exemplo de canvas, linhas coloridas e aleatórias que partem do cen
 
 __Linhas coloridas e aleatórias que partem do centro do canvas.__
 
-[Fork me on GitHub](https://github.com/devfuria/canvas/tree/master/linhas-rando-coloridas "link-externo") (O código 
+[Fork me on GitHub](https://github.com/devfuria/canvas-exemplos/tree/master/linhas-rando-coloridas "link-externo") (O código 
 fonte você também encontrará depois da seção "codando")
 
 Este canvas é um exercício para mim e para os leitores do devfuria.

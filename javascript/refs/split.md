@@ -78,5 +78,5 @@ names.split(/\s*;\s*/)
 Veja a nossa seção para aprender sobre [expressões regulares](/regex/).
 
 
-<br>
+<br />
 Fonte: - [MDN - split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split "link-externo")

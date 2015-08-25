@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Tutorial para iniciar com o Git e GitHub
-description: Aprenda a trabalhar com Git e github, artigo introdutório bastante prático e que promete reduzir a curva de aprendizado da ferramenta.
+title:       Tutorial para iniciar com<br /> o Git e o GitHub
+description: Aprenda a trabalhar com Git e github,<br />artigo introdutório bastante prático e que<br />promete reduzir a curva de aprendizado da ferramenta.
 ---
 
 Esta é uma introdução prática ao Git e GitHub, indicado para quem está dando os primeiros passos com o Git. Neste artigo
@@ -17,14 +17,14 @@ Antes de tudo, é preciso saber que Git não é GitHub.
 
 [Git]( "link-externo") é um sistema distribuído de controle de versão de código.
 
-[GitHub]( "link-externo") é o local onde você hospeda o seu Git na web. 
+[GitHub]( "link-externo") é o local onde você hospeda o seu Git na web.
 
 ![Git e GitHub são coisas distintas](git-e-github.png "Git e GitHub são coisas distintas")
 
-Você não está preso ao GitHub, existe uma infinidade de outros "hospedeiros", alguns pagos outros gratuitos. O GitHub é 
+Você não está preso ao GitHub, existe uma infinidade de outros "hospedeiros", alguns pagos outros gratuitos. O GitHub é
 gratuíto para projetos abertos e pago para projetos privados.
 
-Antes de iniciar com o Git, seria bom se você entendesse o conceito de __versionamento de código__, mas talvez você 
+Antes de iniciar com o Git, seria bom se você entendesse o conceito de __versionamento de código__, mas talvez você
 esteja justamente experimentando o Git para poder entender o que é versionamento, então vamos lá...
 
 
@@ -79,7 +79,7 @@ Veja os comandos:
 
 ### Criando um repositório no GitHub
 
-Primeiro, crie um conta no GitHub. 
+Primeiro, crie um conta no GitHub.
 
 Utilize um nome de guerra que transmita seriedade, ele será visto por todos, inclusive seu futuro empregador.
 
@@ -106,7 +106,7 @@ na web (no GitHub).
 
 Para "conectar" os repositórios executamos o comando abaixo.
 
-    git remote add origin https://github.com/flaviomicheletti/foo.git
+    git remote add origin https://github.com/flaviomicheletti/github-foo.git
 
 Onde __origin__ signifca um apelido para seu repositório, poderia ser qualquer outro nome.
 
@@ -114,8 +114,8 @@ E no lugar da minha URL você deve utilizar a sua URL, eu avisei que precisaría
 
 Para testar, execute `git remote -v`, sua tela deve ser parecida com a seguinte:
 
-    origin	https://github.com/flaviomicheletti/foo.git (fetch)
-    origin	https://github.com/flaviomicheletti/foo.git (push)
+    origin	https://github.com/flaviomicheletti/github-foo.git (fetch)
+    origin	https://github.com/flaviomicheletti/github-foo.git (push)
 
 
 
@@ -153,7 +153,7 @@ com a figura abaixo.
 Este [repositório](https://github.com/devfuria/foo "link-externo") existe de verdade!
 
 Eu criei ele para você poder treinar, bagunçar, testar, brincar, fazer o que você quiser com ele,
-sem a preocupação de acertar. 
+sem a preocupação de acertar.
 
 Só não pode não fazer nada, então vamos praticar....
 

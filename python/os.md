@@ -4,7 +4,7 @@ title:       Python - os
 description: Neste artigo veremos o funcionamento<br />do módulo python.os bem como as funções<br />listdir(), exists(), isdir(), isfile()
 ---
 
-O módulo __os__ acredito que é um dos principais em Python, ele trás informações sobre o sistema operacional como 
+O módulo __os__ acredito que é um dos principais em Python, ele traz informações sobre o sistema operacional como 
 demonstrado abaixo (via terminal).
 
 ```python

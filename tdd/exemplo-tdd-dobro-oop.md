@@ -1,8 +1,8 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD <br>O dobro de um número qualquer (OOP)"
-description: Este artigo é um exemplo de TDD escrito na linguagem Python <br>onde nosso objetivo é criar uma pequena classe, portanto faremos uso de OOP, <br>contendo um único método que nos informe o dobro de um número qualquer
-menu:        tdd-exemplos-simples
+description: Este artigo é um exemplo de TDD escrito na linguagem Python <br />onde nosso objetivo é criar uma pequena classe, portanto faremos uso de OOP, <br />contendo um único método que nos informe o dobro de um número qualquer
+menu:        tdd-exemplos-simples 
 ---
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}

@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Backbone<br />Um exemplo de visão (views)
-description: Um breve exemplo ilustrando como é uma View<br>no framework Backbone (JavaScript)
+description: Um breve exemplo ilustrando como é uma View<br />no framework Backbone (JavaScript)
 menu:        javascript-backbone
 ---
 

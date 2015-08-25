@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD <br>Cálculo da área"
-description: Este artigo é um exemplo de TDD escrito na linguagem Python <br>que tem como objetivo criar uma classe para representar <br>a área (geometria)
+title:       "Simples exemplo de TDD <br />Cálculo da área"
+description: Este artigo é um exemplo de TDD escrito na linguagem Python <br />que tem como objetivo criar uma classe para representar <br />a área (geometria)
 menu:        tdd-exemplos-simples
 ---
 

@@ -7,7 +7,7 @@ descrition: No Linux, você precisa tirar um print-screen da tela e não sabe co
 Sabe quando você quer tirar um print-screen da tela? 
 
 No CentOS 6.3, o utilitário que realiza esta tarefa não vem instalado por padrão e ao prescionar a tecla __"Print Screen"__
-a seguinte menssagem de erro aparece:
+a seguinte mensagem de erro aparece:
 
     "gnome-screenshot" (No such file or directory)
 

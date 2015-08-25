@@ -31,7 +31,7 @@ def not_bad(s):
     pass
 
 # Considere dividir uma string em duas metades.
-# Se o comprimento for par, a parte da frete(front) e a parte de trás (back) são do mesmo tamanho.
+# Se o comprimento for par, a parte da frete (front) e a parte de trás (back) são do mesmo tamanho.
 # Se o comprimento for ímpar, o caracter extra irá para a aprte da frente.
 #
 # Dado 2 strings, 'a' e 'b', retornar um string na forma

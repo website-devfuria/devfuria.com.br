@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Como gerar números aleatórios<br>em Javascript
-description: Aprenda sobre a função Math.random() e<br>como gerar um número randômico<br>entre 0 e 1 entre outras receitas
+title:       Como gerar números aleatórios<br />em Javascript
+description: Aprenda sobre a função Math.random() e<br />como gerar um número randômico<br />entre 0 e 1 entre outras receitas
 menu:        javascript-rando
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Backbone exemplo 06:<br>checkbox + Bootstrap"
-description: Pequeno exemplo de script Backbone (JavaScript) onde<br>exploramos o controle HTML checkbox juntamente com o framework Bootstrap
+title:       "Backbone exemplo 06:<br />checkbox + Bootstrap"
+description: Pequeno exemplo de script Backbone (JavaScript) onde<br />exploramos o controle HTML checkbox juntamente com o framework Bootstrap
 menu:        javascript-backbone
 ---
 
@@ -55,17 +55,17 @@ O código JavaScript não traś novidades além da utilização do filtro [where
 $(function(){
 
 	var Service = Backbone.Model.extend({
-
-		//
-		// Ao acionar a função a propriedade `checked` é invertida
-		//
+		// A cada execução a propriedade `checked` é invertida
+		// O model, por si só, foi capaz de conter a lógica
+        // pois o controle checked é true ou false (liga, desliga)
+        // Em outros controles, deveremos saber quais os dados que 
+        // deverão ser alterados.
 		toggle: function(){
 			this.set('checked', !this.get('checked'));
 		}
 	});
 
 	var ServiceList = Backbone.Collection.extend({
-
 		//
 		// Filtra os modelos com a propriedade `checked` igual a `true`
 		//
@@ -104,7 +104,7 @@ $(function(){
 		el: $('#main'),
 		initialize: function(){
 
-			// Aluguns elementos HTML em cache
+			// Alguns elementos HTML em cache
 			this.elList  = $('#services');
 			this.elTotal = $('#total span');
 			

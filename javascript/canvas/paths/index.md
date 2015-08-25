@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Canvas - Paths (caminhos)
-description:  Um path (caminho) tem uma lista de zero ou mais subpaths (subcaminhos).<br>Descubrindo os caminhos (paths) do Canvas (HTML5).
+description: Descobrindo os caminhos (paths) do Canvas (HTML5).
 menu:        javascript-canvas
 ---
 
@@ -21,7 +21,8 @@ São eles:
 
 Um path (caminho) tem uma lista de zero ou mais subpaths (subcaminhos).
 
-Cada subpath consiste de uma lista de um ou mais pontos, ligados por segmentos de linhas retas ou curvas, e um sinalizador que indica se o subpath está fechado ou não.
+Cada subpath consiste de uma lista de um ou mais pontos, ligados por segmentos de linhas retas ou curvas, e um sinalizador 
+que indica se o subpath está fechado ou não.
 
 
 
@@ -79,8 +80,8 @@ context.stroke();        // pinta o caminho
 
 ### Importante
 
-- Sem o `beginPath()`, o `closePath()` incrivelmente funciona. Pelo menos neste caso simples.
-- A ordem é importante, se o objetivo é fechar o caminho então `closePath()` deve vir sempre antes de `stroke()`
+- Sem o `beginPath()` o `closePath()`, incrivelmente, funciona. Pelo menos neste caso simples.
+- A ordem é importante, se o objetivo é fechar o caminho, então `closePath()` deve vir sempre antes de `stroke()`
 
 
 
