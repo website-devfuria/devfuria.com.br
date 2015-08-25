@@ -371,39 +371,39 @@ else:
 Leia mais sobre [estruturas condicionais](/python/estruturas-condicionais/ "Python - Estruturas- Condicionais").
 
 
+
 Laços de repetição
 ---
 
-### while
+Exemplo com `for`...
+
+```python
+lista = ["p", "y", "t", "h", "o", "n"]
+for item in lista:
+    print item
+"""
+p
+y
+t
+h
+o
+n
+"""
+```
+
+Exempo com `while`...
 
 ```python
 count = 0
 while count <= 5:
-    print("Hello, I am a while and count is", count)
-    count += 1
-
-"""
-Hello, I am a while and count is 0
-Hello, I am a while and count is 1
-Hello, I am a while and count is 2
-Hello, I am a while and count is 3
-Hello, I am a while and count is 4
-Hello, I am a while and count is 5
-"""
-```
-
-Exemplo com __break__:
-
-```python
-count = 0
-while True:
     print(count)
     count += 1
-    if count >= 5:
-        break
+# 0 1 2 3 4 5
 
-# 1 2 3 4 5
 ```
+
+Leia mais sobre [laços de repetição](/python/lacos-de-repeticao/ "Python - Laços de repetição").
+
 
 
 
@@ -621,8 +621,8 @@ Leia mais sobre [Programação Orientada a Objetos](/python/programacao-orientad
 
 
 
-<hr>
-### Fontes
+Fontes
+---
 
 - [Python: apresentando a sintaxe (Luciano Ramalho)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf "link-externo")
 - [Codeacademy - Python Glossary](http://www.codecademy.com/glossary/python "link-externo")
