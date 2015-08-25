@@ -72,6 +72,7 @@ Artigos diversos
     <a href="/python/sys-argv/" class="list-group-item">Python - sys.argv</a>
     <a href="/python/os/" class="list-group-item">Python - os</a>
     <a href="/python/os.path/" class="list-group-item">Python - os.path</a>
+    <a href="/python/django-error-loading-mysqldb/" class="list-group-item">Django - Error loading MySQLdb module: No module named MySQLdb</a>
 </div>
 
 
