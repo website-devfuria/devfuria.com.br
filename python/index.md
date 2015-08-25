@@ -76,6 +76,8 @@ Artigos diversos
 
 
 
+{% include menus/python-built-in.html %}
+
 
 Gerar páginas web (HTML) com Python
 ---
