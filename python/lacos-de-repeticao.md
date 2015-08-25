@@ -29,7 +29,7 @@ n
 """
 ```
 
-Se for necessário um índice numérico, utilize a função embutida [enumerate](/python/built-in/enumerate).
+Se for necessário um índice numérico, utilize a função interna [enumerate](/python/built-in/enumerate).
 
 ```python
 for key, value in enumerate(["p", "y", "t", "h", "o", "n"]):

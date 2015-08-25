@@ -49,7 +49,7 @@ for number in myList:
 # 8
 ```
 
-Abaixo incrementamos a implementação com a função interna [enumarate()](https://docs.python.org/3.4/library/functions.html#enumerate "link-externo").
+Abaixo incrementamos a implementação com a função interna [enumarate()](/python/built-in/enumerate).
 ela irá numerar a lista.
 
 ```python
