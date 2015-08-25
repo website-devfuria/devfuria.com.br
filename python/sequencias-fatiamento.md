@@ -1,8 +1,8 @@
 ---
 layout:      grid93-article
-title:       Python - Operadores e fatiamento de sequências
+title:       Python - Operadores e<br /> fatiamento de sequências
 description: Aprenda sobre operadores e fatiamento de sequências em Python
-menu:        python-artigos
+menu:        python-basico
 ---
 
 O que é uma sequência? 

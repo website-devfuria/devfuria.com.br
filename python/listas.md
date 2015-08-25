@@ -2,7 +2,7 @@
 layout:      grid93-article
 title:       Python - O básico de listas
 description: O básico de lista em Python
-menu:        python-artigos
+menu:        python-basico
 ---
 
 Abaixo temos um exemplo de uma lista:

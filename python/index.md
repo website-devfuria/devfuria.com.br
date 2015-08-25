@@ -20,7 +20,7 @@ Começando com Python
 
 Conheça o básico da sintaxe de Python através deste artigo [O básico da sintaxe de Python](./sintaxe-basica/).
 
-{% include menus/python-artigos.html %}
+{% include menus/python-basico.html %}
 
 
 Lógica de programação
