@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Manipulando checkboxes<br />com PHP
-description: "Veremos como enviar e receber dados<br />através do controlecheckbox (input type='check')"
+description: "Veremos como enviar e receber dados<br />através do controle checkbox (input type='check')"
 menu:        php-forms
 ---
 
