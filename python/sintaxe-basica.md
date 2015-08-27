@@ -195,16 +195,15 @@ Tipos de dados básicos
 Se, por exemplo, você digitar no console `dict` ele retornará:
 
 ```python
-<type 'dict'>
+<class 'dict'>
 ```
-
 
 A função `type()` mostra o tipo do dado, veja alguns exemplos.
 
 ```python
-type("text")        # <type 'text'>
-type(1)             # <type 'int'>
-type(0.99)          # <type 'float'>
+type("text")        # <class 'str'>
+type(1)             # <class 'int'>
+type(0.99)          # <class 'float'>
 ```
 
 Também é possível elaborar as seguintes expressões.
@@ -414,7 +413,7 @@ Funções
 def foo():
     return "retorno da função"
 
-print(foo()) # retorno da função"
+print(foo()) # "retorno da função"
 ```
 
 Outro exemplo
