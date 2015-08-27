@@ -137,10 +137,10 @@ print(o) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 
-Funções nativas para listas
----
+### Funções nativas para listas
 
-### append()
+
+#### append()
 
 ```python
 nums = ["um"]
@@ -153,7 +153,7 @@ print(nums) # ['um', 'dois', 'tres', 'quatro']
 ```
 
 
-### index()
+#### index()
 
 ```python
 animals = ["ant", "bat", "cat"]
@@ -161,7 +161,7 @@ print animals.index("bat") # 1
 ```
 
 
-### insert()
+#### insert()
 
 ```python
 animals = ["ant", "bat", "cat"]
@@ -170,7 +170,7 @@ print(animals) # ["ant", "dog", "bat", "cat"]
 ```
 
 
-### remove()
+#### remove()
 
 Remove através do valor
 
@@ -180,8 +180,7 @@ animals.remove("ant")
 print(animals) # ["bat", "cat"]
 ```
 
-
-### pop()
+#### pop()
 
 Remove através do índice (retorna o valor removido).
 
@@ -200,7 +199,7 @@ print(animals) # ["bat", "cat"]
 ```
 
 
-### sort()
+#### sort()
 
 ```python
 lista = ["c", "b", "a"]
