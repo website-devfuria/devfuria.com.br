@@ -34,6 +34,34 @@ Podemos fatiar (leia-se acessar) um lista de diversas formas, veja a matéria so
 [fatiamento de sequencias](../sequencias-fatiamento/ "Python - Sequencias").
 
 
+### Para criar uma lista
+
+Podemos criar uma lista vazia.
+
+```python
+lis = []
+```
+
+Podemos criar uma lista com alguns itens separados por vírgula.
+
+```python
+lis = ['a', 'b', 'c']
+```
+
+Podemos criar uma lista através do "list comprehension"
+
+```python
+[x for x in iterable]
+```
+
+Ou também podemos utilizar a função interna (built in) [list()](/python/built-in/list/).
+
+```python
+lis = list() # equivalente a l = []
+lis = list(['a', 'b, 'c']) # equivalente a l = ['a', 'b, 'c']
+```
+
+
 
 ### Percorrendo a lista (list looping)
 
@@ -67,24 +95,6 @@ Your choices are:
 3 nachos
 """
 ```
-
-Abaixo incrementamos o exemplo utilizando a função interna [zip()](https://docs.python.org/3.4/library/functions.html#zip "link-externo"),
-ela casa (agrega) as duas listas.
-
-```python
-list_a = [6, 7, 8, 9]
-list_b = [1, 2, 3, 4, 5]
-
-for x in zip(list_a, list_b):
-    print(x)
-"""
-(6, 1)
-(7, 2)
-(8, 3)
-(9, 4)
-"""
-```
-
 
 ### Copiando listas
 
@@ -124,10 +134,6 @@ print(o) # [1, 2, 3, 4, 5, 6]
 o += [7, 8, 9]
 print(o) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-
-
-
-
 
 
 
