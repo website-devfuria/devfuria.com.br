@@ -36,7 +36,7 @@ As classes antigas que não seguem esse estilo são consideradas "old style".
 Instanciando
 ---
 
-Para instanciar a classe não é preciso o operador `new`, muito comum em outras linguagens.
+Para instanciar a classe não é preciso o operador `new` muito comum em outras linguagens.
 
 ```python
 Fusca = Carro()
@@ -97,7 +97,7 @@ self explícito
 Esta é uma peculiaridade da linguagem.
 
 Fazemos referência a classe através da palavra `self` e todo método deve aceitar como (primeiro) parâmetro a palavra 
-`self`, que se refere ao próprio objeto.
+`self` que se refere ao próprio objeto.
 
 ```python
 class Carro(object):
@@ -116,7 +116,7 @@ Podemos alterar as propriedades através dos métodos.
 ```python
 class Carro(object):
     estado = "novo"
-    dirigir(self):
+    def dirigir(self):
         self.estado = "usado"
 
 #
@@ -138,8 +138,8 @@ print(ferrari.estado) # novo
 Método construtor \_\_init\_\_
 ---
 
-Abaixo, criamos a classe `Carro` com um método construtor `__init__`. Neste exemplo somos obrigados a instanciar a classe
-passando exatamente um parâmetro, nem mais nem menos.
+Abaixo, criamos a classe `Carro` com um método construtor `__init__`. 
+Neste exemplo, somos obrigados a instanciar a classe passando exatamente um parâmetro, nem mais nem menos.
 
 ```python
 class Carro(object):
@@ -158,7 +158,7 @@ Herança
 class Veiculo(object):
     estado = "novo"
 
-class Carro(veiculo):
+class Carro(Veiculo):
     pass
 
 
