@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Python - Função interna enumarate
-description: Exemplos práticos sobre a função interna enumarate
+title:       Python - Função interna enumarate()
+description: Exemplos práticos sobre a função interna enumarate()
 ---
 
 A função `enumarate()` retorna um objeto iterável.
@@ -12,7 +12,7 @@ A função `enumarate()` retorna um objeto iterável.
 <enumerate object at 0x7fb6d35f4ea0>
 ```
 
-Se aplicarmos outra função interna [list](/python/built-in/list/) obteremos o seguinte resultado...
+Se aplicarmos outra função interna [list](/python/built-in/list/), obteremos o seguinte resultado...
 
 ```python
 >>> list(enumerate(seasons))
