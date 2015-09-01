@@ -25,6 +25,15 @@ reais = euros * taxa
 
 As variáveis `euros` e  `taxa` devem ser inicializadas, se não o erro `name 'euros' is not defined` será exibido.
 
+Também podemos inicializar mais de uma variável dessa forma...
+
+```python
+>>> a, b = 10, 20
+>>> a
+10
+>>> b
+20
+```
 
 
 Valor nulo (null)
