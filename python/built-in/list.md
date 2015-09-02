@@ -4,7 +4,7 @@ title:       Python - Função interna list()
 description: Exemplos práticos sobre a função interna list()
 ---
 
-A função interna `list` é a representação do tipo lista, é a classe `list` e muito útil quando queremos converter outras
+A função interna `list` é a representação do tipo lista. É a classe `list`, muito útil quando queremos converter outras
 sequências (iterables) em lista. Veja algumas conversões.
 
 Podemos converte uma string em uma lista.
