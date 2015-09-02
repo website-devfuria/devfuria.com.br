@@ -57,4 +57,4 @@ O tutorial que acompanha a documentação também ajuda a elucidar...
 >
 > [Fonte](http://turing.com.br/pydoc/2.7/tutorial/inputoutput.html): Documentação Pyton traduzida pela turing.com.br 
 
-{% include /menus/python-built-in.html %}
+{% include /menus/python-built-in-index.html %}

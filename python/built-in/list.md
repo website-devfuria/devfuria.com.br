@@ -35,4 +35,4 @@ Para transformar essa sequência em uma lista utilizamos a função `list()`.
 [0, 2, 4, 6, 8]
 ```
 
-{% include /menus/python-built-in.html %}
+{% include /menus/python-built-in-index.html %}
