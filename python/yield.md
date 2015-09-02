@@ -1,9 +1,17 @@
 ---
 layout:      grid12-article
-title:       yield
-description: 
+title:       Python - yield
+description: Apresentação pragmática da palavra reservada yield (Python)
 ---
 
+Isto é um rascunho (um bom rascunho diga-se de passagem)...
+
+Há uma dificuldade inerente quanto o entendimento da palavra reservada __yield__. Pois para compreender de fato seu 
+funcionamento precisamos possuir conceitos vizinhos como iteradores (iterators), geradores (generators) e expressões 
+geradoras (generator expressions). A maioria dos artigos começam explicando esses conceitos e deixam para o final 
+(quando normalmente já perdemos o fôlego) a introdução ao yield. Eu preferi atacar o assunto diretamente, por isso disse 
+"apresentação pragmática", por outro lado não creio que ao ler este breve artigo o leitor estará seguro quanto ao correto 
+entendimento do yield, de qualquer forma vamos lá!
 
 O __yield__ só pode ser usado dentro de uma função.
 

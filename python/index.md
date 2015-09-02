@@ -69,6 +69,7 @@ Artigos diversos
     <a href="/python/imports/" class="list-group-item">Importando módulos no Python (imports)</a>
     <a href="/python/modulos-pacotes/" class="list-group-item">Módulos e Pacotes em Python</a>
     <a href="/python/virtualenv/" class="list-group-item">Virtualenv</a>
+    <a href="/python/yield/" class="list-group-item">Python - yield</a>
     <a href="/python/sys-argv/" class="list-group-item">Python - sys.argv</a>
     <a href="/python/os/" class="list-group-item">Python - os</a>
     <a href="/python/os.path/" class="list-group-item">Python - os.path</a>
@@ -135,10 +136,12 @@ Leia este belo artigo de Eric Hideki onde o autor indica alguns bons livros (em 
 
 
 
-Além do devfuria.com.br
+Comunidade (indo além!)
 ---
 
-Recomendo...
+Eu também sou estudante da linguagem e uma das coisas que me surpreende no universo Python é o engajamento da comunidade.
+
+Seguem alguns links na qual eu também bebo da fonte...
 
 - [O tutorial de Python](http://turing.com.br/pydoc/2.7/tutorial/index.html "link-externo")  Um tutorial amigável, passo
 a passo em 6 capítulos, para quem nunca programou aprender usando Python, uma das linguagens mais indicadas para principiantes.
@@ -146,6 +149,13 @@ a passo em 6 capítulos, para quem nunca programou aprender usando Python, uma d
 - [Aprenda a Programar](http://turing.com.br/material/appy/ "link-externo") O tutorial de Python oficial, escrito pelo 
 criador da linguagem, Guido van Rossum, traduzido para o português pela comunidade Python brasileira.
 
+- [Site - Python Brasil](http://www.python.org.br/ "link-externo")
+
+- [Grupo Facebook - Python Brasil Programadores](https://www.facebook.com/groups/python.brasil/ "link-externo")
+
+- [GitHub - Python Brasil Programadores](https://github.com/Python-Devs-Brasil "link-externo") Coleção de repos do grupo do Facebook.
+
+- [Blog - ericstk.wordpress.com](https://ericstk.wordpress.com/ "link-externo")
 
 
 
@@ -154,4 +164,3 @@ Site Oficial
 
 - [Site Oficial Python](https://www.python.org/ "link-externo")
 - [Documentação Oficial Python 3](https://docs.python.org/3/ "link-externo")
-- [Comunidade Brasileira](http://www.python.org.br/ "link-externo")
