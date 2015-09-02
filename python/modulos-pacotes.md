@@ -21,7 +21,7 @@ conceitos definidos com certa formalidade.
 - Um pacote pode conter vários outros módulos, chamamos de submódulos.
 
 Ao criarmos um pacote, além de organizarmos nosso programa, temos a possibilidade de importarmos os módulos de forma
-bastante flexível. Seria legal você entender como se importa módulos e pacote em Pytno, para isso veja o artigo
+bastante flexível. Seria legal você entender como se importa módulos e pacote em Python, para isso veja o artigo
 [Importando módulos no Python](/python/imports/).
 
 
