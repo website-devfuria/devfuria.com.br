@@ -61,6 +61,8 @@ Artigos diversos
 ---
 
 <div class="list-group">
+    <a href="/python/manipulando-arquivos-de-texto/" class="list-group-item">Manipulando arquivos de texto em Python</a>
+    <a href="/python/receitas-para-manipular-arquivos-de-texto/" class="list-group-item">Receitas para manipular arquivos de texto em Python (para quem está com pressa)</a>
     <a href="/python/regex/" class="list-group-item">Expressões Regulares em Python</a>
     <a href="/python/programacao-orientada-objetos/" class="list-group-item">Programação Orientada a Objetos em Python</a>
     <a href="/python/tdd-primeiros-passos-com-testes-unitarios/" class="list-group-item">Primeiros passos com testes unitários em Python</a>
