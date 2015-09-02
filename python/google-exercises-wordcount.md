@@ -207,7 +207,7 @@ def print_top(filename):
   word_count = word_count_dict(filename)
 
   # Ordenamos as chaves conforme as ocorrências (valor de 'count')
-  # Utilazamos a função "get_count()" cpara auxiliar a extrair o valor de 'count'
+  # Utilizamos a função "get_count()" para auxiliar a extrair o valor de 'count'
   items = sorted(word_count.items(), key=get_count, reverse=True)
 
   # Imprimimos apenas os 20 primeiros resultados
