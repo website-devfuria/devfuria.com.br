@@ -10,7 +10,7 @@ arquivos-texto na tela (terminal).
 O nome cat é derivado de uma das funções desse utilitário, *catenate* (concatenar), que significa juntar sequencialmente,
 ou de fim a fim.
 
-Se você precisa ver o conteú do um arquivo que não seja texto utilize o utilitário __od__.
+Se você precisa ver o conteúdo um arquivo que não seja texto utilize o utilitário __od__.
 
 
 
