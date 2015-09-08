@@ -10,7 +10,7 @@ arquivos-texto na tela (terminal).
 O nome cat é derivado de uma das funções desse utilitário, *catenate* (concatenar), que significa juntar sequencialmente,
 ou de fim a fim.
 
-Se você precisa ver o conteúdo um arquivo que não seja texto utilize o utilitário __od__.
+Se você precisa ver o conteúdo de um arquivo que não seja texto utilize o utilitário __od__.
 
 
 
@@ -18,34 +18,37 @@ Se você precisa ver o conteúdo um arquivo que não seja texto utilize o utilit
 
     $ cat sample.txt
 
-Lembrando que em Linux não pe necessário a extensão `.txt`, logo o comando poderia ser simplesmente...
+Lembrando que em Linux não é necessário a extensão `.txt`, logo o comando poderia ser simplesmente...
 
     $ cat sample
 
 ### Concatena
 
-Imaginando que `page1`, `letter` e `memo` sejam arquivos de texto, o conteúdo deles será escriot no arquivo `all`.
+Imaginando que `page1`, `letter` e `memo` sejam arquivos de texto, o conteúdo deles será escrito no arquivo `all`.
 
     $ cat page1 letter memo > all
 
 
 ### Criar arquivos
 
-Outra ótima utilidade é que o cat ajuda a criar arquivos pequenos rapidamente.
+Outra ótima utilidade é que o cat ajuda a criar pequenos arquivos rapidamente.
 
     $ cat > arquivo
     Digite aqui o seu texto
-    E vá pressionando a tacla ENTER
+    E vá pressionando a tecla ENTER
     para indicar quebra de linha
     Quando quiser terminar pressione
-    CONTROL- D
+    CONTROL + d
     $
 
-
+Para entender o comando acima nada melhor que abrir o terminal e colocar a mão na massa.
 
  
 -----------------------------------------------------------------------------------------
-Fonte: Linux Um Guia Prático de Comando, Editore e Pragramação Shell (Mark G. Sobel, pág 115)
+
+Fonte: Linux Um Guia Prático de Comando, Editores e Pragramação Shell (Mark G. Sobel, pág 115)
+
+![Figura da capa do livro 'Linux, um guia prático'](../livro-linux-guia-pratico.jpeg "linux")
 
 
 
