@@ -11,12 +11,12 @@ Quer aprender TDD? Leia o livro do mestre...
 
 !["Livro Test Driven Development"](index-livro-tdd.jpg "Livro Test Driven Development")
 
-Kent Bach, de longe, é primeiro grande divulgador da técnica TDD que nada mais é do escrever os testes antes de 
-começarmos a codificar, isso muda tudo! **TDD está relacionado diretamente com a questão da arquitetura**. 
+Kent Bach, de longe, é o primeiro grande divulgador da técnica TDD que nada mais é do que escrever testes de unidades
+antes de começarmos a codificar, isso muda tudo! **TDD está relacionado diretamente com a questão da arquitetura**. 
 
 É preciso que o desenvolvedor tenha um bom conhecimento sobre OOP (Programação Orientada a Objetos) e também sobre 
 testes unitários. Mas este site é dedicado aos iniciantes, então eu tive que simplificar muitas coisas para facilitar
-e, inclusive,incentivar o aprendizado.
+e, inclusive, incentivar o aprendizado.
 
 O primeiro artigo que abre esta seção é sobre a idéia básica do que é TDD.
 
