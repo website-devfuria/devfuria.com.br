@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       "Simples exemplo de TDD <br />Juros simples"
-description: Pequeno exemplo de TDD na linguagem Python utilizando-se de programação orientada a objeto <br />para criar uma classe com um método que retorne o<br />juros simples.
+description: Pequeno exemplo de TDD na linguagem Python<br />utilizando-se de programação orientada a objeto <br />para criar uma classe com um método <br />que retorne o juros simples.
 menu:        tdd-exemplos-simples
 ---
 

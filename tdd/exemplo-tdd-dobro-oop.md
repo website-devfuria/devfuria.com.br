@@ -7,8 +7,7 @@ menu:        tdd-exemplos-simples
 
 {% include /menus/tdd-exemplos-simples-paraquedas.html %}
 
-Este exercício é um quebra gelo, o objetivo é muito simples (). O objetivo deste artigo é dar o primeiro passo em 
-relação a Programação Orientada a Objetos.
+Este exercício é um quebra gelo, o objetivo é dar o primeiro passo em relação a Programação Orientada a Objetos.
 
 Continuamos com o mesmo problema visto nos artigos anteriores: o dobro de um número qualquer. Mas agora utilizaremos 
 Programação Orientada a Objetos e também um substituiremos o `assert` por um framework de testes. 
@@ -38,7 +37,7 @@ escrito. OK, veja o arquivo completo abaixo.
 
 Salve o conteúdo acima em um arquivo chamado, por exemplo, `foo.py`.
 
-Se executarmos o script  (no console do Linux) `python foo.py` ele nos devolve a seguinte informação.
+Se executarmos o script  (no console do Linux) `python foo.py` ele devolve-rá a seguinte informação.
 
     E
     ======================================================================
@@ -68,7 +67,7 @@ E ao executar o script temos a seguinte mensagem.
 
     AttributeError: 'Calc' object has no attribute 'dobro'
 
-Sim, já sabemos! Falta a função, novamente vamos definir a função sem implementá-la por completo (se segure, rsss).
+Tudo bem, falta a função! Porém, vamos definir a função sem implementá-la por completo (se segure, rsss).
 
     class Calc():
         def dobro(self, num):
