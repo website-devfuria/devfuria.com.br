@@ -7,7 +7,7 @@ Seja bem vindo(a) a seção TDD (Test Driven Development)!
    
 __TDD__ é acrônimo para __Test Driven Development__ (desenvolvimento guiado por testes)
 
-Quer aprender TDD? Lei o livro do mestre...
+Quer aprender TDD? Leia o livro do mestre...
 
 !["Livro Test Driven Development"](index-livro-tdd.jpg "Livro Test Driven Development")
 
