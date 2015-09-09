@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Uma breve noção sobre o que é TDD
-description: Noção básica sobre o que é TDD, apenas o suficiente para um primeiro contato com TDD (test driven development).
+title:       Uma breve noção sobre <br />o que é TDD
+description: Noção básica sobre o que é TDD,<br />apenas o suficiente para um primeiro contato com TDD<br />(test driven development).
 ---
 
 Este é um artigo introduzindo a idéia de TDD (test driven development), ele é bastante básico e vou apresentar a idéia
@@ -59,7 +59,7 @@ Mas antes...
 
 Como estamos no curso de lógica e talvez você conheca muito pouco sobre linguagens de programação, vou inventar uma.
 
-Parece-se com pseudocódigo, mas nãos e preocupe com isso.
+Parece-se com pseudocódigo, mas não se preocupe com isso.
 
 
 ### Precisamos de um framework de testes imaginário.
@@ -114,7 +114,8 @@ Como nosso exemplo é muito simples, "refatorar" significa "achar a solução".
         pedacos = quebreStringEmPedacos(palavra)
         
         percorra pedacos {
-            i = (pedacos.tamanho - i) + 1
+            // 'key' será o índice de 'pedacos' (0, 1, 2, 3, 4, e 5)
+            i = (pedacos.tamanho - 1) - key
             palavraInvertida[] = pedacos[i] 
         }
 
