@@ -3,12 +3,12 @@ layout:      grid12-article
 title:       Code - Somando (refatorado)
 ---
 
-Este artigo é rapido! Vou mostrar como ficou o código [Code - Somando](/javascript/code-somando/) refatorado.
+Este artigo é rápido! Vou mostrar como ficou o código [Code - Somando](/javascript/code-somando/) refatorado.
 
-Se você não leu os 2 artigos anteriores aconselho a ler, se não pode ser que não faça muito sentido este artigo para
+Se você não leu os 2 artigos anteriores aconselho a ler. Se não, pode ser que não faça muito sentido este artigo para
 você.
 
-Na primeira versão do código tíhamos o problema das variáveis globais, o que u fiz foi criar um container  `app = {}`
+Na primeira versão do código tínhamos o problema das variáveis globais, o que eu fiz foi criar um container  `app = {}`
 para acomodar a variável `num` e as funções `add()` e `sub()`.
 
 Conteúdo do arquivo `tests.js`:
