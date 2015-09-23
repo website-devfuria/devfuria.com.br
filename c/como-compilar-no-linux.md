@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Como compilar códigos em C/C++ no Linux
-description: Como compilar códigos em C/C++ no Linux
+title:       Como compilar códigos <br />em C/C++ no Linux
+description: Compile códigos no terminal do Linux<br /> linguagem C.
 ---
 
 Não, não é coisa de outro mundo, usar __C/C++__ no __Linux__ é muito fácil.
