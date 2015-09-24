@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Juros simples (OOP)"
-description: Exercício de lógica de programação (com testes unitários) para calcular o juros simples.
+title:       Juros simples (OOP)
+description: Exercício de lógica de programação<br />(com testes unitários)<br />para calcular o juros simples.
 menu:        logica-exercicios
 ---
 

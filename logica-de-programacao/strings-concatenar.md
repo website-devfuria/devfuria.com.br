@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       "Concatenar duas strings "
+title:       Concatenar duas strings
 description: Exercício de lógica de programação para concatenar duas strings.
 menu:        logica-exercicios
 ---

@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Contar string "
-description: Exercício de lógica de programação para contar a quantidade de caracteres de uma string qualquer.
+title:       Contar string
+description: Exercício de lógica de programação<br />para contar a quantidade de caracteres de uma string qualquer.
 menu:        logica-exercicios
 ---
 

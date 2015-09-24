@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Valor positivo ou negativo"
-description: Exercício de lógica de programação para descobrir se um número é positivo ou negativo.
+title:       Valor positivo ou negativo
+description: Exercício de lógica de programação<br />para descobrir se um número é positivo ou negativo.
 menu:        logica-exercicios
 ---
 

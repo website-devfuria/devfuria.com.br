@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Juros simples"
-description: Exercício de lógica de programação em Python e C - como calcular o juros simples.
+title:       Juros simples
+description: Exercício de lógica de programação.<br />Como calcular o juros simples ?.
 menu:        logica-exercicios
 ---
 

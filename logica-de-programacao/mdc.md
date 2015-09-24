@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "MDC máximo divisor comum "
-description: Exercício de lógica de programação ara descubrir o MDC (máximo divisor comum).
+title:       MDC<br />máximo divisor comum
+description: Exercício de lógica de programação <br />para descobrir o MDC (máximo divisor comum).
 menu:        logica-exercicios
 ---
 

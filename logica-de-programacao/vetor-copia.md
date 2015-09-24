@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Vetor cópia "
-description: Exercício de lógica de programação envolvendo vetor e os diversos tipos de laços.
+title:       Vetor cópia
+description: Exercício de lógica de programação<br />envolvendo vetor e os diversos tipos de laços.
 menu:        logica-exercicios
 ---
 
