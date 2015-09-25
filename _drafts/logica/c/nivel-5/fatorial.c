@@ -1,81 +1,22 @@
-
-
 #include <stdio.h>
- 
-int main()
-{
-  int c, n, fact = 1;
- 
-  printf("Enter a number to calculate it's factorial\n");
-  scanf("%d", &n);
- 
-  for (c = 1; c <= n; c++)
-    fact = fact * c;
- 
-  printf("Factorial of %d = %d\n", n, fact);
- 
-  return 0;
+#include <assert.h>
+
+int fatorial(int n) {
+    if(n <= 1)
+        return 1;
+    else
+        return ( n * fatorial(n-1) );
 }
 
+int main() {
+    assert(1 == fatorial(0));
+    assert(1 == fatorial(1));
+    assert(2 == fatorial(2));
+    assert(6 == fatorial(3));
+    assert(6 == fatorial(3));
+    assert(24 == fatorial(4));
+    assert(120 == fatorial(5));
+    assert(720 == fatorial(6));
 
-
-#include <stdio.h>
- 
-long factorial(int);
- 
-int main()
-{
-  int number;
-  long fact = 1;
- 
-  printf("Enter a number to calculate it's factorial\n");
-  scanf("%d", &number);
- 
-  printf("%d! = %ld\n", number, factorial(number));
- 
-  return 0;
-}
- 
-long factorial(int n)
-{
-  int c;
-  long result = 1;
- 
-  for (c = 1; c <= n; c++)
-    result = result * c;
- 
-  return result;
-}
-
-
-
-#include<stdio.h>
- 
-long factorial(int);
- 
-int main()
-{
-  int n;
-  long f;
- 
-  printf("Enter an integer to find factorial\n");
-  scanf("%d", &n); 
- 
-  if (n < 0)
-    printf("Negative integers are not allowed.\n");
-  else
-  {
-    f = factorial(n);
-    printf("%d! = %ld\n", n, f);
-  }
- 
-  return 0;
-}
- 
-long factorial(int n)
-{
-  if (n == 0)
-    return 1;
-  else
-    return(n * factorial(n-1));
+    return 0;
 }
