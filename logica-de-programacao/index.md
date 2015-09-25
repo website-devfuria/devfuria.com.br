@@ -67,9 +67,22 @@ Ainda exercícios para treinar vetores, mas desta vez utilizando __strings__.
 
 
 
-### Aqui começam os exercícios envolvendo OOP
+### Exercícios nível 5
 
-{% include /menus/logica-exerc-oop-00.html %}
+Exercícios para treinar __programação orientada a objetos__.
+
+Neste nível veremos como aliar os exercícios de lógico com a programação orientada a objetos. Você perceberá que os 
+exercícios são de fácil resolução, pois o objetivo é mais entender o paradigma OOP do que exercitar o raciocínio lógico.
+
+{% include /menus/logica-exerc-nivel-05.html %}
+
+
+
+### Exercícios nível 6
+
+Exercícios para treinar __recursividade__.
+
+{% include /menus/logica-exerc-nivel-06.html %}
 
 
 
