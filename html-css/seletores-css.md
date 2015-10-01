@@ -47,9 +47,8 @@ h1, h2, p {color: red;}
 
 ### Seletor de classe
 
-Seletores CSS não estão restritos às tags HTML, podemos aplicar o seletor ao atributo `class` de qualquer elemento HTML.
-Se a intenção é aplicar a mesma regra CSS a diferentes elementos, você pode utilizar um __seletor de classe__,
-veja exemplo:
+Podemos aplicar o seletor ao atributo `class` de qualquer elemento HTML. Se a intenção é aplicar a mesma regra CSS a 
+diferentes elementos, você pode utilizar um __seletor de classe__, segue exemplo:
 
 ```html
 <p class="diferente">Este parágrafo sairá diferente por causa da estilização</p>
@@ -92,7 +91,7 @@ O identificador `id` pode ser aplicado a maioria dos elementos HTML só que ele 
 <div id="main">...</div>
 ```
 
-A CSS deve ser precedidada pelo sinal `#` e imdiatamente seguida pelo nome, veja:
+A CSS deve ser precedidada pelo sinal `#` e imediatamente seguida pelo nome, veja:
 
 ```css
 #main {
