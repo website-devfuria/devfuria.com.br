@@ -7,7 +7,7 @@ ogimage:     expressoes-regulares.png
 
 __O que são Expressões Regulares ?__
 
-Expressões Regulares é uma técnica para procurar, de forma bem específica, um texto abrangente.
+Expressões Regulares é uma técnica para procurar, de forma bem específica, um texto abrangente. Basicamente uma expressão regular é um conjunto de caracteres que define um padrão para ser procurado dentro de uma string.
 
 A expressão regular relaciona todas as ocorrências (__matches__) de um padrão (__pattern__) em um trecho de texto
 (__subject__).
