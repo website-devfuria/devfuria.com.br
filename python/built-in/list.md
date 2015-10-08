@@ -35,4 +35,20 @@ Para transformar essa sequência em uma lista utilizamos a função `list()`.
 [0, 2, 4, 6, 8]
 ```
 
+Não podemos converter inteiros em uma lista porque o tipo `int` não é iterável.
+
+```python
+>>> list(123)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+```
+
+Mas podemos convertê-los para string e, em seguida, converter para lista.
+
+```python
+>>> list(str(123))
+['1', '2', '3']
+```
+
 {% include /menus/python-built-in-index.html %}

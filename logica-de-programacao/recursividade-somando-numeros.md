@@ -22,7 +22,7 @@ __Comentários__:
 
 Já vimos no artigo anterior uma introdução sobre a recursividade (algoritmos de recursão).
 
-Este exercício parece com a sequência de Fibonacci, parece mas não é! Cuidado para não confundir.
+Este exercício se parece com a sequência de Fibonacci, parece mas não é! Cuidado para não confundir.
 
 
 Linguagem C

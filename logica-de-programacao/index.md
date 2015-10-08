@@ -86,6 +86,14 @@ Exercícios para treinar __recursividade__.
 
 
 
+### Exercícios nível 8
+
+Exercícios para treinar __ponteiros__.
+
+{% include /menus/logica-exerc-nivel-08.html %}
+
+
+
 ![Figura satirizando a lógica de programação](vida-prog-25.png "Tirinha satirizando a logica de programação")
 
 Fonte da imagem: [Vida de programador](http://vidadeprogramador.com.br/2011/03/22/logica-de-programacao/ "link-externo")

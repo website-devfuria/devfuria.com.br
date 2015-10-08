@@ -155,10 +155,32 @@ print(nums) # ['um', 'dois', 'tres', 'quatro']
 
 #### index()
 
+A função `index()` retorna o index de determinado elemento.
+
 ```python
 animals = ["ant", "bat", "cat"]
-print animals.index("bat") # 1
+print(animals.index("bat")) # 1
 ```
+
+Se você procurar por um item que não existe um erro será lançado.
+
+```python
+print(animals.index("dog")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 'dog' is not in list
+```
+
+Por tanto, se o seu objetivo é saber se um item pertence a lista utilize o operador de teste de inlclusão `in`.
+
+```python
+>>> animals = ["ant", "bat", "cat"]
+>>> 'dog' in animals
+False
+>>> 'cat' in animals
+True
+```
+
 
 
 #### insert()
