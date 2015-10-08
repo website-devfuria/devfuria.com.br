@@ -71,7 +71,7 @@ Ainda exercícios para treinar vetores, mas desta vez utilizando __strings__.
 
 Exercícios para treinar __programação orientada a objetos__.
 
-Neste nível veremos como aliar os exercícios de lógico com a programação orientada a objetos. Você perceberá que os 
+Neste nível veremos como aliar os exercícios de lógica com a programação orientada a objetos. Você perceberá que os 
 exercícios são de fácil resolução, pois o objetivo é mais entender o paradigma OOP do que exercitar o raciocínio lógico.
 
 {% include /menus/logica-exerc-nivel-05.html %}
