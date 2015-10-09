@@ -86,6 +86,14 @@ Exercícios para treinar __recursividade__.
 
 
 
+### Exercícios nível 7
+
+Exercícios para treinar algoritmos já consagrados.
+
+{% include /menus/logica-exerc-nivel-07.html %}
+
+
+
 ### Exercícios nível 8
 
 Exercícios para treinar __ponteiros__.
