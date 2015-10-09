@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Introdução ao<br />algoritmo de ordenação<br />Bubble Sort
+title:       Introdução ao<br /> algoritmo de ordenação<br /> Bubble Sort
 description: 
 menu:        logica-exercicios
 ogimage:     algoritmo-bubble-sort.png 
@@ -16,7 +16,7 @@ Faça um algoritmo que ordene o vetor acima.
 
 Existem vários algoritmos para esse fim, neste artigo veremos o mais simples dele: __Bubble Sort__.
 
-> O algortimo de "ordenação bolha", ou "bubble sort", recebeu este nome pela imagem pitoresca usada para descrevê-lo: 
+> O algoritmo de "ordenação bolha", ou "bubble sort", recebeu este nome pela imagem pitoresca usada para descrevê-lo: 
 > os elementos maiores são mais leves, e sobem como bolhas até suas posições corretas.
 >
 > W. Celes e J. L. Rangel
