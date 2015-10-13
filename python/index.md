@@ -61,6 +61,7 @@ Artigos diversos
 ---
 
 <div class="list-group">
+    <a href="/python/convertendo-listas/" class="list-group-item">Convertendo listas em strings</a>
     <a href="/python/manipulando-arquivos-de-texto/" class="list-group-item">Manipulando arquivos de texto em Python</a>
     <a href="/python/receitas-para-manipular-arquivos-de-texto/" class="list-group-item">Receitas para manipular arquivos de texto em Python (para quem está com pressa)</a>
     <a href="/python/regex/" class="list-group-item">Expressões Regulares em Python</a>

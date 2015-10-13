@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Convertendo listas em string
+title:       Convertendo listas em strings
 description: Aprenda a converter listas em strings<br />(Python)
 ---
 
@@ -35,7 +35,7 @@ Se você quiser converter um lista de inteiros em um string separadas por vírgu
 '10, 20, 30'
 ```
 
-Agora imagine que você queira transforma a lista em uma string separadas por traços (`-`) ao invés de virgulas.
+Agora imagine que você queira transforma a lista em uma string separadas por traços (`-`) ao invés de vírgulas.
 
 Para isso utilize a função interna (bulti in) `map()`.
 
