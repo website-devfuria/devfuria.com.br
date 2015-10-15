@@ -102,6 +102,27 @@ Exercícios para treinar __ponteiros__.
 
 
 
+### Exercícios nível 9
+
+Introdução ao [Projeto Euler](https://projecteuler.net/ "link-externo").
+
+{% include /menus/logica-exerc-nivel-09.html %}
+
+
+
+### Chuck Norris
+
+Se você chegou até aqui e não se deu por satisfeito é porque você é discípulo de Chuck Norris, rssssss.
+
+Bom, aconselho os trabalhos do professor de Ciência da Computação da USP Paulo Feofiloff.
+
+- [Projeto de Algoritmos em C](http://www.ime.usp.br/~pf/algoritmos/ "link-externo")
+
+Mas esse não é o único, veja outras publicações do professor no link abaixo.
+
+- [http://www.ime.usp.br/~pf/](http://www.ime.usp.br/~pf/ "link-externo")
+ 
+
 ![Figura satirizando a lógica de programação](vida-prog-25.png "Tirinha satirizando a logica de programação")
 
 Fonte da imagem: [Vida de programador](http://vidadeprogramador.com.br/2011/03/22/logica-de-programacao/ "link-externo")
