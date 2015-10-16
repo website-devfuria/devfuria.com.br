@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript - arrays
+title:       JavaScript <br />arrays
 description: Referência prática de arrays
 menu:        javascript-refs
 ---

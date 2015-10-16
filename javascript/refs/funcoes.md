@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript - funções
+title:       JavaScript <br />funções
 description: Referência prática de funções
 menu:        javascript-refs
 ---

@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript - pattern.test()
+title:       JavaScript <br />pattern.test()
 description: Referência prática da função test()
 menu:        javascript-regex
 ---

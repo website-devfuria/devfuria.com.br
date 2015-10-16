@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript - objeto literal
+title:       JavaScript <br />objeto literal
 description: Referência prática ao objeto literal
 menu:        javascript-refs
 ---

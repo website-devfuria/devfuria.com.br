@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript - typeof
+title:       JavaScript <br />typeof
 description: Referência prática de typeof
 menu:        javascript-refs
 ---
