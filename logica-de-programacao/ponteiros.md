@@ -164,9 +164,11 @@ Qualquer alteração em `x` refletirá em `y`.
 Concluindo
 ---
 
-A idéia essencial está aqui...
+A idéia essencial é que um ponteiro, diferentemente de uma variável comum, armazena os endereço de memória.
 
-`y` recebe o valor de `x` (por valor):
+Veja também a principal diferença entre os dois exemplos:
+
+No primeiro exemplo `y` recebe o valor de `x` (por valor).
 
 ```c
 y = x;
@@ -174,7 +176,7 @@ y = x;
 
 Neste caso, alterar o valor de `x` não influencia `y`.
 
-`y` recebe o endereço de `x` (por referência):
+No segundo exemplo `y` recebe o endereço de `x` (por referência):
 
 ```c
 y = &x;
