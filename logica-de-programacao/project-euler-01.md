@@ -100,11 +100,11 @@ ___Exemplo 1:___
 k = list(range(1000))
 x = list()
 for i in k:
-    if i%5 == 0 or i%3 == 0:
+    if i%3 == 0 or i%5 == 0:
         x.append(i)
     else:
         continue
-print sum(x)
+print(sum(x))
 ```
 
 ___Exemplo 2:___

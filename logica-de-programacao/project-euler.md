@@ -8,7 +8,7 @@ menu:        logica-exercicios
 > "Project Euler exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the 
 > fascinating world of mathematics."
 > 
-> ("Projeto Euler existe para encorajar, desafiar e desenvolver as habilidades e gozo de qualquer pessoa com interesse 
+> "Projeto Euler existe para encorajar, desafiar e desenvolver as habilidades e gozo de qualquer pessoa com interesse 
 > no fascinante mundo da matemática."
 >
 > Projetc Euler
