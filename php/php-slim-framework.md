@@ -81,6 +81,12 @@ Após a instalação, sua estrutura de arquivos deverá ser semelhante a exibida
 
 Para testar  basta acessar via navegador `http://localhost/foo/hello/fulano`.
 
-Caso você receba o erro `500 Internal Server Error` poderá consultar os arquivos de log do Apache. No Ubuntu, o arquivo
-encontra-se no seguinte local `var/log/apache2/error.log` você poderá abrí-lo em um editor de texto qualquer ou ainda
-visualizar pelo terminal através do utilitário [cat](/linux/utilitario-cat/) dessa forma `cat var/log/apache2/error.log`.
+Caso você receba o erro `500 Internal Server Error` poderá consultar os arquivos de log do Apache. 
+
+No Ubuntu, o arquivo encontra-se no seguinte local `var/log/apache2/error.log` você poderá abrí-lo em um editor de texto qualquer ou ainda
+visualizar pelo terminal através do utilitário [cat](/linux/utilitario-cat/) dessa forma...
+
+    cat var/log/apache2/error.log
+
+Normalmente aparece o erro `RewriteEngine not allowed here` é por que esquecemos de 
+[habilitar o mod_rewrite no Apache](/linux/apache-habilitar-mod_rewrite-no-apache-mod/).

@@ -11,10 +11,12 @@ Vou mostrar como fazer isso no servidor Apache em uma máquina Debian/Ubuntu.
 Vamos habilitar o módulo de reescrita.
 
     $ cd /etc/apache2/mods-available
-    # a2enmode
+    # a2enmod rewrite
 
 Também precisamos fazer uma pequena alteração no arquivo de configuração do Apache, o problema aqui é você encontrar o
-dito cujo. Normalemnte ele se encontra neste local
+dito cujo. 
+
+Normalmente ele se encontra neste local...
 
     /etc/apache2/sites-available/default
 
@@ -32,11 +34,14 @@ De qualquer forma você deve procurar o trecho abaixo.
 
 E alterar conforme abaixo.
 
-<Directory /var/www/>
-        Options Indexes FollowSymLinks
-        AllowOverride All # <---- ATENÇÂO
-        Require all granted
-</Directory>
+    <Directory /var/www/>
+            Options Indexes FollowSymLinks
+            AllowOverride All # <---- ATENÇÂO
+            Require all granted
+    </Directory>
 
-Agora basta [reiniciar o Apache](/linux/apache-como-reiniciar-servidor-apache/) `/etc/init.d/apache2 restart`, você deve executar como root ou utilizar `sudo` no
-início do comando.
+Agora basta [reiniciar o Apache](/linux/apache-como-reiniciar-servidor-apache/).
+
+    /etc/init.d/apache2 restart
+
+Você deve executar o comando acima como root ou utilizar `sudo` no início do comando.
