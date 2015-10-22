@@ -47,41 +47,44 @@ Para você ter um idéia do resultado, eu vou lhe mostrar o guia para a minha m�
 
 Dica: com você terá que executar o __phpize__, instale antes essas pacotes `apt-get install php5-dev php-pear`.
 
+No meu caso o link será o exibio abaixo, vocçe precisa seguir o que foi dito acima para descobrir qual o seu link.
 
-    // este será o link
     Download xdebug-2.3.0.tgz
-    
-    // descompactar
+
+Descompactar.
+
     tar -xvzf xdebug-2.3.0.tgz
     
-    // entre na pasta
+Entre na pasta.
+
     cd xdebug-2.3.0
 
-    // execute o phpize
-    phpize
-    // você verá algo próximo a isso:
-    // Configuring for:
-    // ...
-    // Zend Module Api No:      20100525
-    // Zend Extension Api No:   220100525
+Execute o __phpize__, você verá algo próximo a isso:
 
-    //
-    // Compile
-    //
+    Configuring for:
+    ...
+    Zend Module Api No:      20100525
+    Zend Extension Api No:   220100525
+
+Compile.
+
     ./configure
     make
 
-    // copie o módulo
+Copie o módulo
+
     cp modules/xdebug.so /usr/lib/php5/20100525
 
-    // Atualize seu arquivi `php.ini`
-    // eu utilizo o editor "nano"
+Atualize seu arquivo `php.ini`,  eu utilizo o editor "nano", então...
+
     nano /etc/php5/apache2/php.ini
 
-    // acrescente esta linha
+Acrescente esta linha ao arquivo. 
+
     zend_extension = /usr/lib/php5/20100525/xdebug.so
 
-    // reinicie o ervidor web (apache)
+Reinicie o servidor web (apache)
+
     /etc/init.d/apache2 restart
 
 
@@ -116,19 +119,21 @@ Instale os seguintes pacotes:
 
 Com o PECL (pear) pode-se instalar novos pacotes no estilo `apt-get`, instale o x-debug:
 
-	# pecl install xdebug
+    # pecl install xdebug
 
-Agora é preciso atualizar o arquivo `php.ini` com a inclusão da extensão __x-debug__. Mas antes, precisamos saber aonde
-está a extensão, execute:
+Onde será que o Linux gravou a extensão x-debug? Digite e anote o caminho:
 
-	# find/ -name 'x-debug.sos'2> /dev/null
+    # find / -name 'xdebug.so' 2> /dev/null
 
-O sistema lhe mostra o caminho, anote-o.
+Agora, precisamos dizer ao PHP que o x-debug existe. Par tal, é preciso incluir um linha no final do arquivo `php.ini`. 
 
-Abra o arquivo __php.ini__ (`/etc/php5/apache2/php.ini`) e no final do arquivo ou na seção de extensões,
-inclua a seguinte linha:
+Abra o `php.ini`:
 
-	Zend_extension="/usr/lib/php5/caminho-anotado"
+    # nano /etc/php5/php.ini
+
+No final do arquivo ou no fim da seção "extensões" inclua a seguinte linha:
+
+    zend_extension = caminho_anotado
 
 Reinicie o apache
 
