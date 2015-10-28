@@ -67,6 +67,13 @@ Leia mais sobre [Slim um micro framework para PHP](/php/php-slim-framework/).
 
 
 
+### Twig - template engine
+
+O Twig é um sistema de templates para PHP.
+
+Leia mais sobre [Twig](/php/twig/).
+
+
 ### Formulários
 
 Aprenda a trabalhar com cada controle de um [formulário web](/php/forms/).
