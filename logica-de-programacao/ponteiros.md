@@ -145,8 +145,8 @@ Mas voltando ao nosso pequeno trecho de código `y = &x`, atribuímos a `y` o en
 Podemos dizer, em outras palavras, que `y` está *amarrado* em `x`, pois se mudarmos o valor de `x`, o valor de `y` também
 será alterado. Quer dizer, `y` é um ponteiro para a variável `x`.
 
-Obs: A utilidade de ponteiros não é ficar apontando para outras variáveis. Estamos estudando um exemplo bobo que tem como
-objetivo ser apenas didático.
+Obs: A utilidade de ponteiros não é ficar apontando para outras variáveis. Estamos estudando um exemplo "bobo" que tem 
+como objetivo ser apenas didático.
 
 Se continuarmos a ler o código...
 
@@ -184,9 +184,9 @@ y = &x;
 
 Neste caso, `y` aponta para `x` e que estiver em `x`, obviamente, estará em `y`.
 
-Esse é pode ser o seu primeiro passo no entendimento de ponteiros da linguagem C. Eu procurei extrair os elementos mais
-simples do assunto __ponteiros__ para não "travarmos* no entendimento e obviamente não terminamos aqui, ainda há muita 
-coisa para aprendermos sobre ponteiros.
+Talvez esse seja o seu primeiro passo no entendimento de ponteiros da linguagem C, por tanto eu procurei extrair os 
+elementos mais simples do assunto __ponteiros__ para não "travarmos" no entendimento. Obviamente não terminamos aqui, 
+ainda há muita coisa para aprendermos sobre ponteiros.
 
 Que tal vermos como eles agem sobre uma função?
 
