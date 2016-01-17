@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Equação de 2 grau
-description: Exercício de lógica de programação - bhaskar.
+description: Exercício de lógica de programação - bhaskara.
 menu:        logica-exercicios
 ---
 
@@ -10,7 +10,7 @@ menu:        logica-exercicios
 Exercício de lógica de programação
 ---
 
-Utilizando funções, faça um programa que calcule as raízes da equação do 2 grau conforme a fórmula de Bhaskar.
+Utilizando funções, faça um programa que calcule as raízes da equação do 2 grau conforme a fórmula de Bhaskara.
 
 Lembrando:
 
@@ -65,11 +65,11 @@ int main() {
     assert(64 == delta(a, b, c));
     assert(4 == raiz1(a, b, c));
     assert(-4 == raiz2(a, b, c));
-    
+
     return 0;
 }
-```  
-      
+```
+
 
 ### Solução na linguagem C
 
@@ -104,10 +104,10 @@ int main() {
     assert(64 == delta(a, b, c));
     assert(4 == raiz1(a, b, c));
     assert(-4 == raiz2(a, b, c));
-    
+
     return 0;
 }
-``` 
+```
 
 
 
