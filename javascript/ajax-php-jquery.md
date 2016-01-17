@@ -4,7 +4,7 @@ title:       Aprenda a utilizar Ajax com PHP e jQuery
 description: "Aprenda neste artigo a utilizar Ajax com PHP e jQuery, <br />também veremos os métodos curtos: <br />jQuery.post(), jQuery.get() e jQuery.getJSON()"
 ---
 
-Aprenda neste artigo a utilizar Ajax com PHP e jQuery. Pressuponho que você tenha um servidor web instalado, como o 
+Aprenda neste artigo a utilizar Ajax com PHP e jQuery. Pressuponho que você tenha um servidor web instalado, como o
 Apache por exemplo e a linguagem __PHP__ também devidamente instalada e habilitada. Além de ter um conhecimento mínimo
 das linguagem __JavaScript__ e __PHP__.
 
@@ -13,7 +13,7 @@ das linguagem __JavaScript__ e __PHP__.
 
 Se vc caiu de paraquedas nesta página, não deixe de ver as matérias anteriores relacionados ao final deste artigo.
 
-Nosso objeto é criar um arquivo [HTML](/html-css/) incluindo a biblioteca __Jquery__ e criar um requisição __AJAX__ 
+Nosso objeto é criar um arquivo [HTML](/html-css/) incluindo a biblioteca __Jquery__ e criar um requisição __AJAX__
 simples através do método `$.ajax()` "apontando" para o arquivo __PHP__ denominado `script.php`. Obteremos como resposta
 um texto plano com o valor da variável global `$_POST`.
 
@@ -22,7 +22,7 @@ Mostrar a estrutura de arquivos facilita o entendimento do que vamos fazer, ent�
     /var/www/
         projeto/
             script.php
-            indexhtml
+            index.html
 
 Utilizaremos o HTML abaixo como modelo.
 
@@ -58,7 +58,7 @@ var request = $.ajax({
 
     //
     // A propriedade `type` é o verbo HTTP (GET, POST, HEAD, etc...)
-    // 
+    //
     type: "POST",
 
     //
@@ -72,7 +72,7 @@ var request = $.ajax({
     dataType: "html"
 });
 
-// 
+//
 // O método `done()` recebe uma função de callback
 // que será executada caso a requisição tenha sucesso.
 //
@@ -149,13 +149,13 @@ $.post("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) 
     console.log(data);
 });
 ```
-  
+
 Para testar o código acima, utiliza o `script.php` abaixo.
 
 ```php
 <?php
 var_dump($_POST);
-```  
+```
 
 <hr>
 Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-externo")
@@ -167,28 +167,28 @@ Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-e
 $.get("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) {
     console.log(data);
 });
-```    
-  
+```
+
 Para testar o código acima, utiliza o `script.php` abaixo.
 
 ```php
 <?php
 var_dump($_GET);
-```  
+```
 
 <hr>
 Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-externo")
 
-    
+
 ### jQuery.getJSON
 
 ```javascript
 $.getJSON("script.php", "campo1=dado1&campo2=dado2&campo3=dado3", function( data ) {
     console.log(data);
 });
-```    
+```
 
-Para testar o código, acima o `script.php` deve retornar um string [JSON](http://www.json.org/ "link-externo"), algo 
+Para testar o código, acima o `script.php` deve retornar um string [JSON](http://www.json.org/ "link-externo"), algo
 parecido como o exemplo abaixo.
 
 ```php
@@ -199,8 +199,8 @@ echo json_encode(array("nome" => "fulano", "idade" => "alguns-anos"));
 <hr>
 Documentação Oficial: [jQuery.getJSON](http://api.jquery.com/jQuery.getJSON/ "link-externo")
 
-    
-    
+
+
 Veja também
 ---
 
