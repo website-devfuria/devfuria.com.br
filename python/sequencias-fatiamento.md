@@ -208,7 +208,7 @@ E há ainda o operador `[a:b:n]` que representa de `n` em `n` itens.
         </tr>
         <tr>
             <td><code>sorted(s)</code></td>
-            <td>devolve uma lista com itens de s em ordem ascendente</td>
+            <td>devolve uma lista com itens de <code>s</code> em ordem ascendente</td>
         </tr>
         <tr>
             <td><code>reversed(s)</code></td>
