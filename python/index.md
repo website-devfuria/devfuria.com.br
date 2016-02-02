@@ -32,7 +32,7 @@ Isso é muito bacana, pois se você acabou de sair da faculdade, deve estar fami
 sentir muito à vontade. Como eu resolvo os exercícios com Python você pode, além de aprender Python, fazer um comparativo 
 entre as linguagens. O nível dos exercícios começam com "estupidamente fácil" e vai evoluindo evoluindo gradativamente.
 
-Mas não é só isso, tem mais! Além de você ver o exercício de lógica resolvido em 2 linguagens (Pythone e C) também aplico
+Mas não é só isso, tem mais! Além de você ver o exercício de lógica resolvido em 2 linguagens (Python e C) também aplico
 o conceito e prática de testes unitários, ou seja, você irá aprender lógica de programação e testar seu programa de forma
 profissional, nada de ficar executando o programa, inserindo dados e ver se deu certo ou não, nada disso. Aprenda a 
 programar desde início com testes unitários.
