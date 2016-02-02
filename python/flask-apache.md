@@ -144,8 +144,8 @@ Na pasta `/etc/apache2/sites-available` crie um arquivo de texto simples denomin
 </VirtualHost>
 ```
 
-Cada arquivo na referida refere-se a um Virtual Host, porém ainda não estão disponíveis. Para habilitar um Virtual Host
-siga os passos abaixo.
+Cada arquivo na pasta acima mencionada refere-se a um Virtual Host, porém ainda não estão disponíveis. Para habilitar um 
+Virtual Host siga os passos abaixo.
 
 ```linux-config
 #
