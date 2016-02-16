@@ -64,6 +64,17 @@ Se você encontrou o mesmo problema, fique tranquilo, nada que um `apt-get remov
 não resolvam.
 
 
+### Criar arquivo com os pacotes já instalados
+
+    pip freeze > requirements.txt
+
+Entende melhor o comando:
+
+O comando `freeze` lista os pacotes que já foram instalados.
+
+O fragmento `> fop.txt` faz com que o resultado do comando `freeze` ,seja enviado para o referido arquivo.
+
+
 ### Fontes:
 
 - [Site oficial: https://pip.pypa.io/en/latest/](https://pip.pypa.io/en/latest/ "link-externo")
