@@ -119,7 +119,7 @@ console.log(lines)
 ```
 
 E não podemos nos esquecer de que o nome do arquivo deve chegar como um parâmetro de entrada na execução do script.
-Vimos como fazer isso no exercício [02 baby steps](/javascript/node.js/ns-02-baby-steps/).
+Vimos como fazer isso no exercício [02 baby steps](/javascript/node.js/nodejs-02-baby-steps/).
 
 ```javascript
 ...
