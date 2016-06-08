@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Módulos
-description: É importante entender como funciona o sistema de módulos do Node.js, este artigo é um primeiro passo nessa direção.
+description: É importante entender como funciona o sistema de módulos do Node.js,<br />este artigo é um primeiro passo nessa direção.
 ---
 
 É importante entender como funciona o sistema de módulos do Node.js, este artigo é um primeiro passo nessa direção.
