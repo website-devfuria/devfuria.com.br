@@ -1,15 +1,15 @@
 ---
 layout:      grid12-article
 title:       Instalando o Filezilla (FTP)
-description: Aprenda a isntalar o Filezilla no Linux
+description: Aprenda a instalar o Filezilla no Linux
 ---
 
 O [Filezilla](https://filezilla-project.org/ "link-externo") é um cliente de
 [FTP](http://pt.wikipedia.org/wiki/File_Transfer_Protocol "link-externo").
 
-Compilar seu código fonte é um desafio, veja a 
-[documentação oficial](https://wiki.filezilla-project.org/Client_Compile "link-externo") 
-de como compilar os fontes e tire suas próprias conclusões. 
+Compilar seu código fonte é um desafio, veja a
+[documentação oficial](https://wiki.filezilla-project.org/Client_Compile "link-externo")
+de como compilar os fontes e tire suas próprias conclusões.
 
 Abaixo seguem receitas de como instalar via __apt-get__ / __yum__:
 
