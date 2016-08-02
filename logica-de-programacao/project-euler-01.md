@@ -9,7 +9,7 @@ Este é o primeiro problema do Projeto Euler.
 
 O meu conselho é que você tente resolvê-lo sozinho, vai lá é fácil!
 
-Depois volte aqui para compara o seu resultado com o meu.
+Depois volte aqui para comparar o seu resultado com o meu.
 
 > If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
 > The sum of these multiples is 23.
@@ -93,7 +93,7 @@ Após resolvermos o problema no Projeto Euler um Fórum nos é mostrado para que
 participantes.
 
 Mostrarei aqui alguns que achei significativo.
- 
+
 ___Exemplo 1:___
 
 ```python
