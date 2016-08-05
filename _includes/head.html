@@ -20,10 +20,10 @@
 <meta property="og:type" content="website" /> 
 <meta property="og:title" content="{{ page.title }}"/>
 <meta property="og:url" content="http://www.devfuria.com.br{{ page.url }}" />
-<meta property="og:image" content="http://www.devfuria.com.br{% if page.ogimage %}{{ page.ogimage | prepend: page.url }}{% else %}{{ "/assets/imgs/favicon.png" }}{% endif %}"/>
+<meta property="og:image" content="http://www.devfuria.com.br{% if page.ogimage %}{{ page.ogimage | prepend: page.url }}{% else %}{{ "/assets/images/favicon.png" }}{% endif %}"/>
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="shortcut icon" type="imagens/gif" href="/assets/imgs/favicon.ico">    
+<link rel="shortcut icon" type="imagens/gif" href="/assets/images/favicon.ico">    
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <link rel="stylesheet" href="{{ "/assets/css/devfuria.css" | prepend: site.baseurl }}">
