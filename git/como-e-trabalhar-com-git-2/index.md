@@ -1,12 +1,12 @@
 ---
 layout:      grid12-article
 title:       Como é trabalhar com Git - parte 2
-description: Essa é a segunda parte de uma história fictícia que ilustra o dia dia de quem utiliza o GitHub como versionmento de código
+description: Essa é a segunda parte de uma história fictícia que ilustra o dia dia de quem utiliza o GitHub como versionamento de código
 ---
 
 Eis aqui uma história fictícia para ilustrar como é o dia a dia de quem trabalha com Git e GitHUb.
 
-Este artigo iniciou-se na [matéria anterior](/git/como-e-trabalhar-com-git-1/), porém não há uma ligação profunda entre 
+Este artigo iniciou-se na [matéria anterior](/git/como-e-trabalhar-com-git-1/), porém não há uma ligação profunda entre
 as duas matérias.
 
 Anteriormente, para descobrir o branch atual eu executei `git status`. OK, isso funciona, porém o mais correto
@@ -18,7 +18,7 @@ Ele lista todos os branchs locais e coloca um asterisco no branch ativo.
 
 
 __O que é um branch?__ No dicionário, branch significa: ramo, galho, ramificação, bifurcar, separar, etc... Sim, é tudo
-isso, porém a tradução mais comum é __ramificação__. Um branch é uma maneira de dizer "quero trabalhar em uma nova 
+isso, porém a tradução mais comum é __ramificação__. Um branch é uma maneira de dizer "quero trabalhar em uma nova
 funcionalidade mas sem interromper os trabalhos principais". O trabalho principal conhecemos como __master__ e as novas
 funcionalidades (features, issues, etc...) colocamos os nomes que acharmos mais adequado.
 
@@ -76,12 +76,12 @@ o quanto antes fizer mais fácil será. Igualamos os branch com o comando `merge
 
 O comando acima está dizendo *"pegue as últimas alterações do branch master e atualize o branch atual (new-issue)"*.
 
-Agora podemos continuar em nosso branch, após mais alguns commits resolvemos publicar nosso trabalho no repositório 
+Agora podemos continuar em nosso branch, após mais alguns commits resolvemos publicar nosso trabalho no repositório
 remoto. Mas antes de empurrar (push) devemos atualizar puxando (pull) as alterações de nossos colegas.
 
     git pull origin new-issue
 
-Só que nesse pull nós não fomos feliz e deu __conflito__. Tudo bem, o negócio é simples! Eu e meu colega mexemos na 
+Só que nesse pull nós não fomos feliz e deu __conflito__. Tudo bem, o negócio é simples! Eu e meu colega mexemos na
 mesmíssima parte de código e então o git ficou com uma dúvida: "o que eu faço, fico com o seu trabalho ou o do seu amigo?".
 
 O git nos informa onde está o problema adicionando alguns caracteres, como ilustrado na figura abaixo.
