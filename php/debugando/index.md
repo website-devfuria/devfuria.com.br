@@ -105,12 +105,11 @@ Ele é uma "mão na roda", depois que você se acostuma, não consegue mais vive
 
 
 
-Caso você não tenha o x-debug instalado
----
+### Caso você não tenha o x-debug instalado
 
 Há uma saída simples, mas cansa ficar digitando isso sempre.
 
-Por essa razão, considero ser uma saída paliativa. Ótima opara quando não possui ( ou não pode ter ) o x-debug instalado.
+Por essa razão, considero ser uma saída paliativa. Ótima para quando não possui ( ou não pode ter ) o x-debug instalado.
 
 Normalmente o ambiente de produção não possui o x-debug instalado, então lanço mão do seguinte código:
 
