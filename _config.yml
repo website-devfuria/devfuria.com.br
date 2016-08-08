@@ -7,9 +7,9 @@ markdown:    kramdown
 markdown:    redcarpet
 highlighter: pygments
 permalink:   pretty
-exclude:     [test-theme.html, readme.md, composer.json, composer.lock, .gitignore]
+exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
 gems:
   - jekyll-sitemap
 
 # Para atualizar mais rápido...
-exclude: [javascript, python, logica-de-programacao, tdd, linux, html-css, regex, misc, git, php, sql, c, seguranca-da-informacao]
+#exclude: [javascript, python, logica-de-programacao, tdd, linux, html-css, regex, misc, git, php, sql, c, seguranca-da-informacao]
