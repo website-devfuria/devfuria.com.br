@@ -43,6 +43,9 @@ a.link-externo {
 a:hover, a:focus {
     color: #666;
 }
+h1, h2 {
+	text-transform: uppercase;    
+}
 h2 {
     color: #122b3b;
     line-height: 1.52em;
@@ -54,7 +57,7 @@ h3 {
     color: #122b3b;
     margin-top:1.8em;
 }
-h2, h3, h4 {font-weight: bold}
+/*h2, h3, h4 {font-weight: bold}*/
 
 table {
     font-size:inherit;
