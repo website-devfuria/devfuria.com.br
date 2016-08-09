@@ -2,6 +2,12 @@
 <html lang="pt">
     <head>
         {% include head.html %}
+        <style type="text/css" >
+            #home {
+                background: none;
+                background-color: #222;
+            }            
+        </style>
     </head>
     <body>
         <!-- Preloader -->
@@ -26,7 +32,6 @@
                     </span>
                 </div>
             </a>
-
         </section>
 
         <!-- Home end -->
@@ -67,9 +72,9 @@
 
         <!-- Navigation end -->
 
-        <div class="container" id="conteudo" >
+        <article class="container" id="conteudo" >
             {{ content }}
-        </div>
+        </article>
 
         <!-- CallToAction start -->
 
