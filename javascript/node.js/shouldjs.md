@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Shoudjs
 description: Pequena referência ao framework de asserção Shouldjs
 ---

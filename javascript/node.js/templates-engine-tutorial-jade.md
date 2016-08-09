@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Tutorial sobre o template Jade (node + express)
 description: Aprenda com este tutorial os primeiros passos com o template Jade (express.js)
 ---

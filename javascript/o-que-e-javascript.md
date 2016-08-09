@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       O que é JavaScript?
 description: 
 ---

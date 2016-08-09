@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Simples assert() com Node.js
 description: Descubra como fazer uma simples asserção<br /> com o módulo assert() do Node.js (JavaScript)
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Introdução ao Ajax
 description: Este artigo é uma introdução a técnica Ajax e ao objeto XMLHttpdRequest
 ---

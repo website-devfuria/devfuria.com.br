@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Tratando Eventos (de navegadores)
 description: Trabalhando com eventos no JavaScript
 ---

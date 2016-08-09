@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       OOP - primeiro degrau
 description: Introduziremos conceito intuitivo de<br />Programação Orientada a Objetos em JavaScript
 ---

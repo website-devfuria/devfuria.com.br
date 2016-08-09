@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Módulos
 description: É importante entender como funciona o sistema de módulos do Node.js,<br />este artigo é um primeiro passo nessa direção.
 ---

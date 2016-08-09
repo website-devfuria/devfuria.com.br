@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Iniciando em JavaScript
 description: Este é um pequeno artigo sobre como iniciar sua experiência com a linguagem JavaScript,<br />veremos como iniciar em JavaScript tanto no lado do servidor como no lado do cliente.
 ---
@@ -12,7 +12,7 @@ Pressuponho que você saiba [o que é JavaScript](/javascript/o-que-e-javascript
 
 
 Iniciando em JavaScript no lado do servidor (Node.js)
-----
+---
 
 Você precisa ter o [Node.js](/javascript/node.js/) instalado, se estiver no Linux veja esta matéria ["Instalando o Node.js"](/linux/cookbook/nodejs/).
 
@@ -51,7 +51,7 @@ No terminal execute o arquivo dessa forma `node script.js`
 
 
 Iniciando em JavaScript no lado do cliente (navegador)
-----
+---
 
 ### Como executar o JavaScript
 

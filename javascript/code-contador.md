@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Code - Liga e desliga contador
 description: Código em JavaScript que liga e desliga um contador com setInterval().
 ---

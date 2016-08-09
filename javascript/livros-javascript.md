@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Livros sobre JavaScript
 description: Este artigo apresenta alguns livros sobre JavaScript<br />que podem ser muito úteis e auxiliar no aprendizado<br />de quem está iniciando com JavaScript.
 ---

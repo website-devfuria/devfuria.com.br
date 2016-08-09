@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Debugando (depurando) JS
 description: Primeiros passos na arte de debugar JavaScript através do FIREBUG, <br />debugar é um esforço para encontrar determinado ponto defeituoso <br />no código para que seja corrigido.
 ---

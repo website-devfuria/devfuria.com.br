@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Code - Somando (refatorado)
 ---
 

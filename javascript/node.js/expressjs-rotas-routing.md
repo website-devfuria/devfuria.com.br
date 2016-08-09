@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       O básico sobre rotas no Express.js
 description: Este artigo ensina como montar rotas básicas<br />no framework Express.js (Node.js).
 ---

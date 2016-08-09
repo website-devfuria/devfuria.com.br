@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      article
 title:       Code - Somando (testado)
 description: Este artigo é um exemplo básico de<br />como escrever testes de unidade em JavaScript<br />utilizando o framework QUnit
 ---
