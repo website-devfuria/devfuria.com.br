@@ -2,6 +2,8 @@
 layout:      article
 title:       Iniciando em JavaScript
 description: Este é um pequeno artigo sobre como iniciar sua experiência com a linguagem JavaScript, veremos exemplos tanto no lado do servidor como no lado do cliente.
+author:      Flávio Micheletti
+date:        Junho/2012
 ---
 
 Este é um pequeno artigo, bastante prático e direto, sobre como iniciar sua experiência com a linguagem __JavaScript__.
