@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript <br />pattern.exec()
+title:       JavaScript  pattern.exec()
 description: Referência prática da função exec()
 menu:        javascript-regex
 ---

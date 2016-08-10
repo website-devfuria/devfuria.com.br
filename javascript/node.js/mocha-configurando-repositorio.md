@@ -1,7 +1,7 @@
 ---
 layout:      article
-title:       Configurando seu repositório Git<br />para trabalhar com o Mocha
-description: Este artigo é uma dica de como configurar seu repositório no GitHub<br />ao utilizar o framework de testes mocha (JavaScript - Node.js)
+title:       Configurando seu repositório Git para trabalhar com o Mocha
+description: Este artigo é uma dica de como configurar seu repositório no GitHub ao utilizar o framework de testes mocha (JavaScript - Node.js)
 ---
 
 Este artigo é uma dica de como configurar seu repositório no [GitHub](/git/) uma vez que você pretende criar uma aplicação

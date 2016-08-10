@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Expressões Regulares<br />metacaracteres
-description: Este artigo é uma breve apresentação dos<br />principais metacaracteres das Expressões Regulares
+title:       Expressões Regulares metacaracteres
+description: Este artigo é uma breve apresentação dos principais metacaracteres das Expressões Regulares
 ogimage:     expressoes-regulares-metacaracteres.png
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout:      article
 title:       Introdução ao Canvas
-description: Artigo introduzindo o canvas (HTML5)<br />uma tela bitmap de resolução dependente que pode ser usada para renderizar<br />gráficos, jogos, ou outras imagens em tempo real
+description: Artigo introduzindo o canvas (HTML5) uma tela bitmap de resolução dependente que pode ser usada para renderizar gráficos, jogos, ou outras imagens em tempo real
 menu:        javascript-canvas
 ---
 

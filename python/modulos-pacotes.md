@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Módulos e Pacotes em Python
-description: Artigo, com exemplo, ilustrando o funcionamento de<br />módulos e pacotes em Python
+description: Artigo, com exemplo, ilustrando o funcionamento de módulos e pacotes em Python
 ---
 
 Módulos e pacotes são conceitos básicos para se trabalhar com Python. Explico neste artigo, através de exemplos, o 

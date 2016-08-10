@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Backbone<br />Unindo Collections e Views"
-description: Artigo, com exemplos, que mostra como unir<br /> uma coleção (collections) a uma visão (view)<br /> no framework Backbone para JavaScript
+title:       "Backbone Unindo Collections e Views"
+description: Artigo, com exemplos, que mostra como unir  uma coleção (collections) a uma visão (view)  no framework Backbone para JavaScript
 menu:        javascript-backbone
 ---
 

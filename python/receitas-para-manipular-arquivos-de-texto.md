@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       Receitas para manipular arquivos<br />de texto em Python
+title:       Receitas para manipular arquivos de texto em Python
 description: 
 ---
 

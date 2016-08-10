@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Votos em relação ao<br />total de eleitores "
-description: Exercício de lógica de programação<br />onde calculamos o percentual de votos<br />em relação ao total de eleitores.
+title:       "Votos em relação ao total de eleitores "
+description: Exercício de lógica de programação onde calculamos o percentual de votos em relação ao total de eleitores.
 menu:        logica-exercicios
 ---
 

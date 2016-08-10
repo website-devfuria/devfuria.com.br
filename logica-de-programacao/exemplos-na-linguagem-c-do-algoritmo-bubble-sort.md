@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       Exemplos na linguagem C<br />do algoritmo Bubble Sort
+title:       Exemplos na linguagem C do algoritmo Bubble Sort
 description: 
 menu:        logica-exercicios
 ---

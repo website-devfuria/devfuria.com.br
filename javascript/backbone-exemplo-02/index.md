@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Backbone exemplo 02:<br />Views aninhadas"
-description: Pequeno exemplo de script Backbone (JavaScript)<br /> onde exploro views aninhadas.
+title:       "Backbone exemplo 02: Views aninhadas"
+description: Pequeno exemplo de script Backbone (JavaScript)  onde exploro views aninhadas.
 menu:        javascript-backbone
 ---
 

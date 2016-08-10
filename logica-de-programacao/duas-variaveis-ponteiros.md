@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Trocar o valor de duas variáveis<br /> (utilizando ponteiros)
-description: Criar uma função para trocar o<br />valor de duas variáveis.
+title:       Trocar o valor de duas variáveis  (utilizando ponteiros)
+description: Criar uma função para trocar o valor de duas variáveis.
 menu:        logica-exercicios
 ---
 

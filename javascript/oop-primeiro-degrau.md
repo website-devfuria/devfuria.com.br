@@ -1,7 +1,7 @@
 ---
 layout:      article
 title:       OOP - primeiro degrau
-description: Introduziremos conceito intuitivo de<br />Programação Orientada a Objetos em JavaScript
+description: Introduziremos conceito intuitivo de Programação Orientada a Objetos em JavaScript
 ---
 
 Neste artigo introduziremos o conceito intuitivo de programação orientação a objeto em JavaScript.

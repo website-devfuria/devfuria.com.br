@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Área quadrada e área cúbica
-description: Exercício de lógica de programação<br />resolvido cujo objetivo é<br />encontrar a área quadra e cúbica.
+description: Exercício de lógica de programação resolvido cujo objetivo é encontrar a área quadra e cúbica.
 menu:        logica-exercicios
 ---
 

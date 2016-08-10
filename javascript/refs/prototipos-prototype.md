@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       JavaScript <br />objeto prototype
-description: A propriedade `prototype` é utilizada <br />quando uma função atua como construtora.
+title:       JavaScript  objeto prototype
+description: A propriedade `prototype` é utilizada  quando uma função atua como construtora.
 menu:        javascript-refs
 ---
 

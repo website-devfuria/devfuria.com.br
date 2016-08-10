@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       Slim framework<br /> um micro framework para PHP
+title:       Slim framework  um micro framework para PHP
 description: Este artigo é um Hello World com o micro framework Slim
 ---
 

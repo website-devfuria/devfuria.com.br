@@ -1,6 +1,6 @@
 ---
 layout:       grid12-article
-title:        A trilha para alcançar<br />um código limpo
+title:        A trilha para alcançar um código limpo
 description:  Pequena lista, despretenciosa, que lhe ajudará<br>na busca pela boa codificação
 ---
 

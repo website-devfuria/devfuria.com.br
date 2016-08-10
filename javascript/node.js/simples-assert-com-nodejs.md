@@ -1,7 +1,7 @@
 ---
 layout:      article
 title:       Simples assert() com Node.js
-description: Descubra como fazer uma simples asserção<br /> com o módulo assert() do Node.js (JavaScript)
+description: Descubra como fazer uma simples asserção  com o módulo assert() do Node.js (JavaScript)
 ---
 
 O Node.js possui o módulo [assert](https://nodejs.org/api/assert.html "link-externo"), com ele é possível escrever

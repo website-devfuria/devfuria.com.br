@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Triângulo
-description: Exercício de lógica de programação (com testes unitários e OOP)<br />para descobrir se os lados informados<br />formam ou não um triângulo.
+description: Exercício de lógica de programação (com testes unitários e OOP) para descobrir se os lados informados formam ou não um triângulo.
 menu:        logica-exercicios
 ---
 

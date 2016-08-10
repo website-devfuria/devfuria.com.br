@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Uma breve noção sobre <br />o que é TDD
-description: Noção básica sobre o que é TDD,<br />apenas o suficiente para um primeiro contato com TDD<br />(test driven development).
+title:       Uma breve noção sobre  o que é TDD
+description: Noção básica sobre o que é TDD, apenas o suficiente para um primeiro contato com TDD (test driven development).
 ---
 
 Este é um artigo introduzindo a idéia de TDD (test driven development), ele é bastante básico e vou apresentar a idéia

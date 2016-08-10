@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript <br />operador ternário condicional
+title:       JavaScript  operador ternário condicional
 description: Referência prática do operador ternário condicional
 menu:        javascript-refs
 ---

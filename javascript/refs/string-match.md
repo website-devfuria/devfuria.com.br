@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript <br />string.match()
+title:       JavaScript  string.match()
 description: Referência prática da função match()
 menu:        javascript-regex
 ---

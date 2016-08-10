@@ -1,6 +1,6 @@
 ---
 layout:      grid93-article
-title:       JavaScript <br />split()
+title:       JavaScript  split()
 description: Referência prática ao método split()
 menu:        javascript-refs
 ---
@@ -78,5 +78,5 @@ names.split(/\s*;\s*/)
 Veja a nossa seção para aprender sobre [expressões regulares](/regex/).
 
 
-<br />
+ 
 Fonte: - [MDN - split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split "link-externo")

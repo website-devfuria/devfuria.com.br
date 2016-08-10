@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
-title:       Entenda o<br />__name__ == "__main__"
-description: Este artigo é para quem está começando em Python e<br />ainda não entendeu o funcionamento de<br />__name__ == '__main__'
+title:       Entenda o __name__ == "__main__"
+description: Este artigo é para quem está começando em Python e ainda não entendeu o funcionamento de __name__ == '__main__'
 ---
 
 Quem está começando a aprender Python pode ter dificuldade em entender o que significa o trecho 

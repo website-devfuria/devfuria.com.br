@@ -1,6 +1,6 @@
 ---
 layout:      grid12-index
-title:       Referência da linguagem <br />JavaScript
+title:       Referência da linguagem  JavaScript
 description: Uma referência prática da linguagem JavaScript
 menu:        javascript-refs
 ---

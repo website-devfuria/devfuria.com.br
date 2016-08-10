@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD <br /> O dobro de um número qualquer"
-description: Primeiro artigo de uma série de exemplos básicos de <br />TDD (Test Driven Development) escrito na linguagen Python
+title:       "Simples exemplo de TDD   O dobro de um número qualquer"
+description: Primeiro artigo de uma série de exemplos básicos de  TDD (Test Driven Development) escrito na linguagen Python
 menu:        tdd-exemplos-simples
 ---
 

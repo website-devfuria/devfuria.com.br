@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Simples exemplo de TDD <br />O dobro de um número qualquer (funções)"
-description: Exemplo básico de TDD onde<br />iremos desenvolver uma função para<br />calcular o dobro de um número qualquer.
+title:       "Simples exemplo de TDD  O dobro de um número qualquer (funções)"
+description: Exemplo básico de TDD onde iremos desenvolver uma função para calcular o dobro de um número qualquer.
 menu:        tdd-exemplos-simples
 ---
 

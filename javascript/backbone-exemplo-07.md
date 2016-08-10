@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       "Backbone exemplo 07: <br />Privilegiômetro"
-description: Primeiro exemplo real de código Backbone (JavaScript)<br />
+title:       "Backbone exemplo 07:  Privilegiômetro"
+description: Primeiro exemplo real de código Backbone (JavaScript) 
 menu:        javascript-backbone
 ---
 

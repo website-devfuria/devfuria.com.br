@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       MMC<br />mínimo múltiplo comum
-description: Exercício de lógica de programação<br />para descobrir o MMC (mínimo múltiplo comum).
+title:       MMC mínimo múltiplo comum
+description: Exercício de lógica de programação para descobrir o MMC (mínimo múltiplo comum).
 menu:        logica-exercicios
 ---
 

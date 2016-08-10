@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Lista de exercícios da Google<br />list 2
-description: Exercício extraído da lista Google Python Exercise<br /> onde veremos como fazer um 'merge' com as listas
+title:       Lista de exercícios da Google list 2
+description: Exercício extraído da lista Google Python Exercise  onde veremos como fazer um 'merge' com as listas
 menu:        python-google
 ---
 

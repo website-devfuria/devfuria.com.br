@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
-title:       Antecessor e sucessor<br />de um número qualquer<br >(versão orientado a objeto)
-description: Exercício de lógica de programação<br />resolvido cujo objetivo é<br />encontrar o sucessor e antecessor de um número qualquer.
+title:       Antecessor e sucessor de um número qualquer<br >(versão orientado a objeto)
+description: Exercício de lógica de programação resolvido cujo objetivo é encontrar o sucessor e antecessor de um número qualquer.
 menu:        logica-exercicios
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout:      grid12-article
-title:       Instalando o Virtualenv (python)<br /> no Linux
+title:       Instalando o Virtualenv (python)  no Linux
 description: Aprenda como instalar o Virtualenv (python) no Linux
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout:      grid12-article
 title:       Instalando o pip
-description: Descubra como instalar o pip <br />o gerenciador de pacotes do Python no Linux
+description: Descubra como instalar o pip  o gerenciador de pacotes do Python no Linux
 ---
 
 ### O que pip?

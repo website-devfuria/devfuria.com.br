@@ -1,7 +1,7 @@
 ---
 layout:      grid93-article
 title:       Maior que 10
-description: Exercício de lógica de programação<br />para descobrir se valor é maior ou menor que 10.
+description: Exercício de lógica de programação para descobrir se valor é maior ou menor que 10.
 menu:        logica-exercicios
 ---
 
