@@ -370,7 +370,7 @@ textarea.form-control {
 .intro {
 	position: absolute;
 	width: 100%;
-	top: 50%;
+	top: 40%;
 	left: 0;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);
