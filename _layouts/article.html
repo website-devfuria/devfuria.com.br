@@ -23,15 +23,22 @@
             <div class="intro">
                 <h1>{{ page.title }}</h1>
                 <div class="start">{{page.description}}</div>
+                <p>
+                    <small>
+                        {% if page.date %}
+                            {{ page.date | date: "%b-%Y" }}
+                            {{ "•"}}
+                        {% endif %}
+                        {% if page.author %}
+                            {{ page.author }}
+                            {{ "•"}}
+                        {% endif %}
+                    </small>
+                </p>
             </div>
 
-            <a href="#conteudo">
-                <div class="scroll-down">
-                    <span>
-                        <i class="fa fa-angle-down fa-2x"></i>
-                    </span>
-                </div>
-            </a>
+            <!-- Button -->
+            <a href="#conteudo"><div class="scroll-down"><span><i class="fa fa-angle-down fa-2x"></i></span></div></a>
         </section>
 
         <!-- Home end -->
@@ -76,6 +83,15 @@
             {{ content }}
         </article>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% include discus.html %}
+            </div>
+        </div>
+    </div>        
+        
+        
         <!-- CallToAction start -->
 
         <section class="calltoaction">
