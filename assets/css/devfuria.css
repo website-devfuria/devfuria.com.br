@@ -15,6 +15,9 @@ header p {
     .intro {
         padding: 0 20em;
     }
+    .start {
+        padding: 0 10em;
+    }
     header h1 {
         font-size: 4.75em;
     }
