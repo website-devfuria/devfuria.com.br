@@ -1,5 +1,5 @@
 ---
-layout:      grid12-index
+layout:      article
 title:       Referência da linguagem PHP
 description: Uma referência prática da linguagem PHP
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      grid12-index
+layout:      article
 title:       Cookbook - receitas de instalação de softwares no Linux
 description: Guia prático de instalações de softwares para Linux
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      grid93-article
+layout:      article
 title:       Coffescript
 description: Um introdução ao compilador de JavaScript CoffeeScript
 menu:        javascript-artigos

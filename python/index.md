@@ -1,5 +1,5 @@
 ---
-layout:      grid12-index
+layout:      article
 title:       Python
 description: Aprenda a programar em Python de forma descomplicada.
 ---

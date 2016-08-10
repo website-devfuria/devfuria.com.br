@@ -1,5 +1,5 @@
 ---
-layout:      grid12-index
+layout:      article
 title:       Canvas
 description: Esta é a seção sobre Canvas (html5 + javascript), canvas é uma tela de bitmap que você pode desenhar e dar animação para o que quiser.
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      grid12-index
+layout:      article
 title:       PHP - Trabalhando com formulário web
 description: Um sub seção que trata formulários web e PHP
 ---

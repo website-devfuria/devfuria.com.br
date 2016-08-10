@@ -1,5 +1,5 @@
 ---
-layout:      grid12-index
+layout:      article
 title:       Linux
 description: Tudo o que você precisa saber sobre o Linux!
 ---

@@ -1,5 +1,5 @@
 ---
-layout:      grid12-index
+layout:      article
 title:       Expressões Regulares
 description: Descomplicamos as expressões regulares
 ---

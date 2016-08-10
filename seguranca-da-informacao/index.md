@@ -1,5 +1,5 @@
 ---
-layout: grid12-index
+layout: article
 title: Segurança da Informação
 ---
 
