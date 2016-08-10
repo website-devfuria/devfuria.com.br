@@ -63,11 +63,19 @@
 
                     <div class="collapse navbar-collapse" id="custom-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#razao">Por que?</a></li>
-                            <li><a href="#categorias">Categorias</a></li>
-                            <li><a href="#depoimentos">Depoimentos</a></li>
-                            <li><a href="#contato">Contato</a></li>
+                            <li><a href="/#home">Home</a></li>
+                            <li><a href="/#categorias">JavaScript</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">JavaScript</a></li>
+                                    <li><a href="#">PHP</a></li>
+                                    <li><a href="#">Lógica de Programação</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Linux</a></li>
+                                    <li><a href="#">Canvas</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
 
@@ -83,15 +91,15 @@
             {{ content }}
         </article>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                {% include discus.html %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    {% include discus.html %}
+                </div>
             </div>
-        </div>
-    </div>        
-        
-        
+        </div>        
+
+
         <!-- CallToAction start -->
 
         <section class="calltoaction">
