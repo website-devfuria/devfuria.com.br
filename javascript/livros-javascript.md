@@ -1,7 +1,7 @@
 ---
 layout:      article
 title:       Livros sobre JavaScript
-description: Este artigo apresenta alguns livros sobre JavaScript<br />que podem ser muito úteis e auxiliar no aprendizado<br />de quem está iniciando com JavaScript.
+description: Este artigo apresenta alguns livros sobre JavaScript que podem ser muito úteis e auxiliar no aprendizado de quem está iniciando com JavaScript.
 ---
 
 Este artigo apresenta alguns (poucos) livros sobre __JavaScript__ que podem ser muito úteis e auxiliar no aprendizado
