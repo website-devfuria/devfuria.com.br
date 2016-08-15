@@ -6,7 +6,7 @@
             #home {
                 background: none;
                 background-color: #222;
-            }            
+            }
         </style>
     </head>
     <body>
@@ -66,17 +66,16 @@
                             <li><a href="/#home">Home</a></li>
                             <li><a href="/#categorias">Categorias</a></li>
                             <li><a href="/regex">Regex</a></li>
+                            {% if page.menu %}
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esta série<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">JavaScript</a></li>
-                                    <li><a href="#">PHP</a></li>
-                                    <li><a href="#">Lógica de Programação</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Linux</a></li>
-                                    <li><a href="#">Canvas</a></li>
+                                {% for menu in site.data.menus[page.menu]  %}
+                                    <li><a href="{{ menu.href }}">{{ menu.label }}</a></li>
+                                {% endfor %}
                                 </ul>
                             </li>
+                            {% endif %}
                         </ul>
                     </div>
 
@@ -92,9 +91,9 @@
             {{ content }}
         </article>
 
-        
-        
-        
+
+
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -193,50 +192,26 @@
                                 <a href="#" class="btn btn-lg btn-block btn-danger">Go for It!</a>
                             </div>
                         </div>
-                    </div> 
-                    
-                    
+                    </div>
+
+
                 </div>
             </div>
-        </div>        
+        </div>
 
 
-                    
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     {% if jekyll.environment == "production" %}
                        {% include disqus.html %}
-                    {% endif %}                    
+                    {% endif %}
                 </div>
             </div>
-        </div>        
+        </div>
 
 
-        <!-- CallToAction start -->
-
-        <section class="calltoaction">
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-md-12 col-lg-12">
-                        <h2 class="wow slideInRight" data-wow-delay=".1s">Ta esperando o quê?</h2>
-                        <div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
-                            <p>Demorou para estudar com a gente!</p>
-                            <p>E não é porque é grátis não, é que aqui tem qualidade!</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
-                        <a href="/#categorias" class="btn btn-lg">Escolha uma categoria</a>
-                    </div>
-
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section>
-
-        <!-- CallToAction end -->
 
 
 
@@ -279,5 +254,5 @@
             <a href="#home"><i class="fa fa-angle-up"></i></a>
         </div>
     </body>
-    {% include footer-js.html %}    
+    {% include footer-js.html %}
 </html>
