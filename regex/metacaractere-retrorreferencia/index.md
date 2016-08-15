@@ -1,5 +1,5 @@
 ---
-layout:      grid93-article
+layout:      regex
 title:       "Metacaractere retrorreferência \\1 ... \\9"
 description: 
 menu:        regex-metacaracteres

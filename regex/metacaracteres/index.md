@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      regex
 title:       Expressões Regulares metacaracteres
 description: Este artigo é uma breve apresentação dos principais metacaracteres das Expressões Regulares
 ogimage:     expressoes-regulares-metacaracteres.png

@@ -1,5 +1,5 @@
 ---
-layout:      grid93-article
+layout:      regex
 title:       "Metacaractere grupo ()"
 description: 
 menu:        regex-metacaracteres

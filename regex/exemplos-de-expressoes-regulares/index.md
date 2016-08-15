@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      regex
 title:       Exemplos de Expressões Regulares
 description: Já leu o básico sobre expressões regulares?  Agora que tal olhar alguns exemplos?
 ogimage:     exemplos-expressoes-regulares.png

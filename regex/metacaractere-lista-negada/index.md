@@ -1,5 +1,5 @@
 ---
-layout:      grid93-article
+layout:      regex
 title:       "Metacaractere lista negada [^]"
 description: 
 menu:        regex-metacaracteres

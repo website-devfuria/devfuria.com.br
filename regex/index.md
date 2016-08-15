@@ -1,5 +1,5 @@
 ---
-layout:      article
+layout:      regex
 title:       Expressões Regulares
 description: Descomplicamos as expressões regulares
 ---

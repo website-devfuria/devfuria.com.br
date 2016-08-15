@@ -1,5 +1,5 @@
 ---
-layout:      grid93-article
+layout:      regex
 title:       "Metacaractere circunflexo ^"
 description: 
 menu:        regex-metacaracteres
