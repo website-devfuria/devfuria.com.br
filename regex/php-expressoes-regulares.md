@@ -37,7 +37,10 @@ Referência
 - [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php "link-externo")
 
 
-Leia também
----
-
-- [Expressões Regulares - metacaracteres](/regex/metacaracteres/)
+{% include call.html
+    style="success"
+    title="Leia em seguida..."
+    descr="Expressões Regulares - metacaracteres"
+    href="/regex/metacaracteres/"
+    label="Ver matéria!"
+%}

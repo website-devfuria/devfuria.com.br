@@ -61,7 +61,7 @@ Veja os resultados (matches) da expressão abaixo:
 {% include call.html
     style="success"
     title="Leia em seguida..."
-    descr="Apresentação dos Metacaracteres"
+    descr="Expressões Regulares - metacaracteres"
     href="/regex/metacaracteres/"
     label="Ver matéria!"
 %}
