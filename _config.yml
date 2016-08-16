@@ -1,9 +1,11 @@
 #
 # Configurações
 #
+enable_disqus:    true
+enable_analytics: false
 
 # Antes era com kramdown
-markdown:    kramdown
+# markdown:    kramdown
 markdown:    redcarpet
 highlighter: pygments
 permalink:   pretty

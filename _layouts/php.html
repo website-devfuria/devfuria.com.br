@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        
+        {% include preloader.html %}
+        {% include artigos-jumbo.html %}
+        {% include artigos-nav.html secao_label="PHP" secao_href="/php" %}
+        
+        <article id="conteudo" class="container">
+            {{ content }}
+        </article>
+        
+        {% include disqus.html %}
+        {% include footer.html %}
+        {% include scroll-to-top.html %}
+        
+    </body>
+    {% include footer-js.html %}
+</html>
