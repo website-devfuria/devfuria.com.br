@@ -1,5 +1,5 @@
 ---
-layout:      regex
+layout:      regex-serie
 title:       "Metacaractere opcional ?"
 description: 
 menu:        regex-metacaracteres

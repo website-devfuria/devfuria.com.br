@@ -1,5 +1,5 @@
 ---
-layout:      regex
+layout:      regex-serie
 title:       "Metacaractere borda \b"
 description: 
 menu:        regex-metacaracteres

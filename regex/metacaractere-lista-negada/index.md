@@ -1,5 +1,5 @@
 ---
-layout:      regex
+layout:      regex-serie
 title:       "Metacaractere lista negada [^]"
 description: 
 menu:        regex-metacaracteres

@@ -1,5 +1,5 @@
 ---
-layout:      regex
+layout:      regex-serie
 title:       "Metacaractere lista [ ]"
 description: 
 menu:        regex-metacaracteres

@@ -1,5 +1,5 @@
 ---
-layout:      regex
+layout:      regex-serie
 title:       "Metacaractere retrorreferência \\1 ... \\9"
 description: 
 menu:        regex-metacaracteres
