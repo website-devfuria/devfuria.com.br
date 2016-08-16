@@ -1,177 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
     <head>
         {% include head.html %}
-        <style type="text/css" >
-            #home {
-                background: none;
-                background-color: #222;
-            }
-        </style>
     </head>
     <body>
-        <!-- Preloader -->
-        <div id="preloader">
-            <div id="status"></div>
-        </div>
-
-        <!-- Home start -->
-        <section id="home" class="pfblock-image screen-height">
-            <div class="home-overlay"></div>
-            <div class="intro">
-                <h1>{{ page.title }}</h1>
-                <div class="start">{{page.description}}</div>
-                <p>
-                    <small>
-                        {% if page.date %}
-                        {{ page.date | date: "%b-%Y" }}
-                        {{ "•"}}
-                        {% endif %}
-                        {% if page.author %}
-                        {{ page.author }}
-                        {{ "•"}}
-                        {% endif %}
-                    </small>
-                </p>
-            </div>
-
-            <!-- Button -->
-            <a href="#conteudo"><div class="scroll-down"><span><i class="fa fa-angle-down fa-2x"></i></span></div></a>
-        </section>
-        <!-- Home end -->
-
-        <!-- Navigation start -->
-        <header class="header">
-            <nav class="navbar navbar-custom" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="/#home">DevFuria</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="custom-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <!--<li><a href="/#home">Home</a></li>-->
-                            <li><a href="/#categorias">Categorias</a></li>
-                            <li><a href="/regex">Regex</a></li>
-                            {% if page.menu %}
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esta série<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    {% assign menus = site.data.menus[page.menu] %}
-                                    {% for menu in menus  %}
-                                        {% assign index_next = forloop.index0 | plus: 1 %}
-                                        {% assign index_prev = forloop.index0 | minus: 1 %}
-                                        {% if page.url == menu.href %}
-                                            {% assign page_next = menus[index_next] %}
-                                            {% assign page_prev = menus[index_prev] %}
-                                            <li><a href="{{ menu.href }}"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ menu.label }}</a></li>
-                                        {% else %}
-                                            <li><a href="{{ menu.href }}"> {{ menu.label }} </a></li>
-                                        {% endif %}
-                                    {% endfor %}
-                                </ul>
-                            </li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                </div><!-- .container -->
-            </nav>
-        </header>
-        <!-- Navigation end -->
-
-        <article class="container" id="conteudo" >
+        
+        {% include preloader.html %}
+        {% include artigos-jumbo.html %}
+        {% include artigos-nav.html %}
+        
+        <article id="conteudo" class="container">
             {{ content }}
         </article>
-
-
-        <div class="jumbotron">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="pagination">Navegue na série!</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a class="btn btn-default btn-lg btn-block pagination" href="{{ page_prev.href }}">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            {{ page_prev.label }}
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a class="btn btn-primary btn-lg btn-block pagination" href="{{ page_next.href }}">
-                            {{ page_next.label }}
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Comentários</h2>
-                    {% include disqus.html %}
-                </div>
-            </div>
-        </div>
-
-        {% if jekyll.environment == "production" %}
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    {% include disqus.html %}
-                </div>
-            </div>
-        </div>
-        {% endif %}
-
-
-
-        <!-- Footer start -->
-
-        <footer id="footer">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-12">
-
-                        <ul class="social-links">
-                            <li><a href="https://www.facebook.com/devfuria/" class="wow fadeInUp" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://github.com/devfuria" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-github-square"></i></a></li>
-                        </ul>
-
-                        <p>
-                            Este obra está licenciado sob a
-                            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
-                                Creative Commons Atribuição 4.0 Internacional
-                            </a>.
-                        </p>
-                        <p>
-                            <a href="/">www.devfuria.com.br</a> (desde 2012)
-                        </p>
-                        <p>
-                            <a href="http://scripteden.com/download/clean-one-page-personal-portfolio-template/" target="_blank">Theme</a>
-                        </p>
-                    </div>
-
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </footer>
-
-        <!-- Footer end -->
-
-        <!-- Scroll to top -->
-
-        <div class="scroll-up">
-            <a href="#home"><i class="fa fa-angle-up"></i></a>
-        </div>
+        
+        {% include disqus.html %}
+        {% include footer.html %}
+        {% include scroll-to-top.html %}
+        
     </body>
     {% include footer-js.html %}
 </html>

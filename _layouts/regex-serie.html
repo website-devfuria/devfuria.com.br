@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+
+        {% include preloader.html %}
+        {% include artigos-jumbo.html %}
+        {% include artigos-nav.html %}
+
+        <article id="conteudo" class="container">
+            {{ content }}
+        </article>
+
+       {% comment %}
+       As variáveis do bolco abaixo estão sendo criadas no include "artigos-nav"
+       {% endcomment %} 
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="pagination">Navegue nesta série!</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="btn btn-default btn-lg btn-block pagination" href="{{ page_prev.href }}">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            {{ page_prev.label }}
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="btn btn-primary btn-lg btn-block pagination" href="{{ page_next.href }}">
+                            {{ page_next.label }}
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include disqus.html %}
+        {% include footer.html %}
+        {% include scroll-to-top.html %}
+
+    </body>
+    {% include footer-js.html %}
+</html>
