@@ -58,8 +58,10 @@ Veja os resultados (matches) da expressão abaixo:
 ![Figura ilustrando o 2 exemplo de expressão regular](exemplo2-expressoes-regulares.png)
 
 
-
-Leia em seguida
----
-
-- [Apresentação dos Metacaracteres](/regex/metacaracteres/)
+{% include call.html
+    style="success"
+    title="Leia em seguida..."
+    descr="Apresentação dos Metacaracteres"
+    href="/regex/metacaracteres/"
+    label="Ver matéria!"
+%}
