@@ -26,6 +26,15 @@ header p {
     }
 }
 
+/*
+Tirando a imagem de fundo dos artigos
+<section id="home"
+*/
+#home.artigos {
+    background: none;
+    background-color: #222;
+} 
+
 canvas, .canvas {
     background: #ffffff;
     cursor: pointer;
