@@ -1,0 +1,43 @@
+<!-- Navigation start -->
+<header class="header">
+    <nav class="navbar navbar-custom" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/#home">DevFuria</a>
+            </div>
+            <div class="collapse navbar-collapse" id="custom-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li><a href="/#home">Home</a></li>-->
+                    <li><a href="/#categorias">Categorias</a></li>
+                    <li><a href="/regex">Regex</a></li>
+                    {% if page.menu %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esta série<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            {% assign menus = site.data.menus[page.menu] %}
+                            {% for menu in menus  %}
+                                {% assign index_next = forloop.index0 | plus: 1 %}
+                                {% assign index_prev = forloop.index0 | minus: 1 %}
+                                {% if page.url == menu.href %}
+                                    {% assign page_next = menus[index_next] %}
+                                    {% assign page_prev = menus[index_prev] %}
+                                    <li><a href="{{ menu.href }}"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ menu.label }}</a></li>
+                                    {% else %}
+                                    <li><a href="{{ menu.href }}"> {{ menu.label }} </a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div><!-- .container -->
+    </nav>
+</header>
+<!-- Navigation end -->

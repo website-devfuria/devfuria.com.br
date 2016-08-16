@@ -1,0 +1,6 @@
+{% if page.description %}
+<meta name="og:description" content="{{ page.description  }}" />
+{% endif %}
+<meta property="og:type"    content="{{ page.title }}"/>
+<meta property="og:url"     content="http://www.devfuria.com.br{{ page.url }}" />
+<meta property="og:image"   content="http://www.devfuria.com.br{% if page.ogimage %}{{ page.ogimage | prepend: page.url }}{% else %}{{ "/assets/images/favicon.png" }}{% endif %}"/>
