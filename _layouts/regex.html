@@ -69,10 +69,9 @@
                                         {% if page.url == menu.href %}
                                             {% assign page_next = menus[index_next] %}
                                             {% assign page_prev = menus[index_prev] %}
-                                            {{ page_prev }}
-                                            <li><a href="{{ menu.href }}">{{ forloop.index0 }} <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ menu.label }}</a></li>
+                                            <li><a href="{{ menu.href }}"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ menu.label }}</a></li>
                                         {% else %}
-                                            <li><a href="{{ menu.href }}">{{ forloop.index0 }} {{ menu.label }} </a></li>
+                                            <li><a href="{{ menu.href }}"> {{ menu.label }} </a></li>
                                         {% endif %}
                                     {% endfor %}
                                 </ul>
@@ -87,134 +86,41 @@
 
         <article class="container" id="conteudo" >
             {{ content }}
-            <nav aria-label="...">
-                <ul class="pager">
-                    <li class="next">
-                        <a href="{{ page_next.href }}">
-                            {{ page_next.label }}
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li class="previous">
-                        <a href="{{ page_prev.href }}">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            {{ page_prev.label }}
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </article>
 
 
-
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <div class="bs-calltoaction bs-calltoaction-default">
-                        <div class="row">
-                            <div class="col-md-9 cta-contents">
-                                <h1 class="cta-title">Its a Call To Action</h1>
-                                <div class="cta-desc">
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 cta-button">
-                                <a href="#" class="btn btn-lg btn-block btn-default">Go for It!</a>
-                            </div>
-                        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Navegue na série!</h2>
                     </div>
-
-                    <div class="bs-calltoaction bs-calltoaction-primary">
-                        <div class="row">
-                            <div class="col-md-9 cta-contents">
-                                <h1 class="cta-title">Its a Call To Action</h1>
-                                <div class="cta-desc">
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 cta-button">
-                                <a href="#" class="btn btn-lg btn-block btn-primary">Go for It!</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="btn btn-default btn-lg btn-block" href="{{ page_prev.href }}">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            {{ page_prev.label }}
+                        </a>
                     </div>
-
-                    <div class="bs-calltoaction bs-calltoaction-info">
-                        <div class="row">
-                            <div class="col-md-9 cta-contents">
-                                <h1 class="cta-title">Its a Call To Action</h1>
-                                <div class="cta-desc">
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 cta-button">
-                                <a href="#" class="btn btn-lg btn-block btn-info">Go for It!</a>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+                        <a class="btn btn-primary btn-lg btn-block" href="{{ page_next.href }}">
+                            {{ page_next.label }}
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        </a>
                     </div>
-
-                    <div class="bs-calltoaction bs-calltoaction-success">
-                        <div class="row">
-                            <div class="col-md-9 cta-contents">
-                                <h1 class="cta-title">Its a Call To Action</h1>
-                                <div class="cta-desc">
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 cta-button">
-                                <a href="#" class="btn btn-lg btn-block btn-success">Go for It!</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bs-calltoaction bs-calltoaction-warning">
-                        <div class="row">
-                            <div class="col-md-9 cta-contents">
-                                <h1 class="cta-title">Its a Call To Action</h1>
-                                <div class="cta-desc">
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 cta-button">
-                                <a href="#" class="btn btn-lg btn-block btn-warning">Go for It!</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bs-calltoaction bs-calltoaction-danger">
-                        <div class="row">
-                            <div class="col-md-9 cta-contents">
-                                <h1 class="cta-title">Its a Call To Action</h1>
-                                <div class="cta-desc">
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 cta-button">
-                                <a href="#" class="btn btn-lg btn-block btn-danger">Go for It!</a>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
         </div>
 
-
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Comentários</h2>
+                    {% include disqus.html %}
+                </div>
+            </div>
+        </div>
 
         {% if jekyll.environment == "production" %}
         <div class="container">
@@ -225,7 +131,6 @@
             </div>
         </div>
         {% endif %}
-
 
 
 
