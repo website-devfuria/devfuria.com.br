@@ -250,3 +250,13 @@ http://bootsnipp.com/snippets/featured/call-to-action-with-dark-background
 .bs-calltoaction.bs-calltoaction-danger .cta-button .btn{
     border-color:#fff;
 }
+
+/*
+Paginação das séries
+*/
+h2.pagination{
+    margin-top:0em;
+}
+a.pagination{
+    margin: 20px 0px;
+}
