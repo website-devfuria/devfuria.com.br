@@ -1,0 +1,5 @@
+<div class="list-group">
+    {% for menu in include.menus %}
+        <a href="{{ menu.href }}" class="list-group-item">{{ menu.label }}</a>
+    {% endfor %}
+</div>
