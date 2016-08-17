@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      php
 title:       Criando e iterando um array em PHP
 description: Aprenda como criar e iterar arrays em php com foreach e while
 ---

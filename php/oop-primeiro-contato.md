@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      php
 title:       PHP e OOP - primeiro contato
 description: Introdução a programação orientada a objetos na linguagem PHP
 ---

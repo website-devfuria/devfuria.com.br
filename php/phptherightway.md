@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      php
 title:       Boas práticas em PHP - The right way
 description: PHP do jeito certo (PHP The right way))
 ---

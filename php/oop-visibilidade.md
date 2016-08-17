@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      php
 title:       PHP e OOP - Visibilidade das propriedades
 description: 
 ---

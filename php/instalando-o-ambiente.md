@@ -1,5 +1,5 @@
 ---
-layout:      grid12-article
+layout:      php
 title:       Instalando o ambiente LAMP
 description: Aprenda a instalar o ambiente de programação do PHP no Linux
 ---
