@@ -1,5 +1,8 @@
+{% comment %}
+As variáveis do bloco abaixo estão sendo criadas no include "artigos-nav"
+{% endcomment %} 
 <div class="list-group">
-    {% for menu in include.menus %}
-        <a href="{{ menu.href }}" class="list-group-item">{{ menu.label }}</a>
+    {% for artigo in serie %}
+        <a href="{{ artigo.url }}" class="list-group-item">{{ artigo.title }}</a>
     {% endfor %}
 </div>

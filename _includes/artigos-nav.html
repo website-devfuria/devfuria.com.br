@@ -16,25 +16,23 @@
                     <!--<li><a href="/#home">Home</a></li>-->
                     <li><a href="/#categorias">Categorias</a></li>
                     <li><a href="{{ include.secao_href }}">{{ include.secao_label }}</a></li>
-                    {% if page.menu %}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esta série<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            {% assign menus = site.data.menus[page.menu] %}
-                            {% for menu in menus  %}
+                            {% include get-serie.html page_serie=page.serie%}                            
+                            {% for artigo in serie  %}
                                 {% assign index_next = forloop.index0 | plus: 1 %}
                                 {% assign index_prev = forloop.index0 | minus: 1 %}
-                                {% if page.url == menu.href %}
-                                    {% assign page_next = menus[index_next] %}
-                                    {% assign page_prev = menus[index_prev] %}
-                                    <li><a href="{{ menu.href }}"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ menu.label }}</a></li>
+                                {% if artigo.url == page.url %}
+                                    {% assign artigo_next = serie[index_next] %}
+                                    {% assign artigo_prev = serie[index_prev] %}
+                                    <li><a href="{{ artigo.url }}"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ artigo.title }}</a></li>
                                     {% else %}
-                                    <li><a href="{{ menu.href }}"> {{ menu.label }} </a></li>
+                                    <li><a href="{{ artigo.url }}"> {{ artigo.title }} </a></li>
                                 {% endif %}
                             {% endfor %}
                         </ul>
                     </li>
-                    {% endif %}
                 </ul>
             </div>
         </div><!-- .container -->

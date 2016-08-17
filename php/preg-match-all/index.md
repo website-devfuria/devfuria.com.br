@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
+layout:      php-serie
 title:       Referência da função preg_match_all()
 description: Uma referência prática da função preg match all
-menu:        php-regex
+serie:       expressao-regular
 ---
 
 
