@@ -21,7 +21,7 @@ exclude:
     - logica-de-programacao
     - html-css
     - sql
-    - misc
+#    - misc
 #    - regex
     - tdd
     - git
@@ -33,12 +33,16 @@ exclude:
 defaults:
   -
     scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
       path: "php"
     values:
       category:
         label: "PHP"
         url:   "/php"
-      layout: "articles"
   -
     scope:
       path: "regex"
@@ -46,4 +50,3 @@ defaults:
       category:
         label: "Expressões Regulares"
         url:   "/regex"
-      layout: "articles"
