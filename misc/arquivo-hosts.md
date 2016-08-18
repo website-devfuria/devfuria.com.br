@@ -1,5 +1,4 @@
 ---
-layout:       grid12-article
 title:        Arquivo hosts (/etc/hosts)
 description:  Este artigo é uma breve explicação do funcionamento do arquivo /etc/hosts.
 ---

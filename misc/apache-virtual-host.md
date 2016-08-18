@@ -1,5 +1,4 @@
 ---
-layout:       grid12-article
 title:        Apache - Configurando Virtual Hosts
 description:  Aprenda a utilizar Virtual Host no Apache, acompanha um exemplo prático.
 ---
