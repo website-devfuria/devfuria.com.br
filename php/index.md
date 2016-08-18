@@ -1,5 +1,4 @@
 ---
-layout:      php
 title:       PHP
 description: Aprenda PHP de verdade!
 ---

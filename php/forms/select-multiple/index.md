@@ -1,5 +1,4 @@
 ---
-layout:      php
 title:       Manipulando listbox com PHP
 description: Veremos como enviar e receber dados através do controle select multiple
 serie:       Formulários Web

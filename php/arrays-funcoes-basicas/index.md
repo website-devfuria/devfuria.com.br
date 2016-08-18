@@ -1,5 +1,4 @@
 ---
-layout:      php
 title:       PHP - Funções básicas de arrays
 description: Aprenda as funções básicas de array
 ---

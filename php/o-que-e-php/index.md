@@ -1,5 +1,4 @@
 ---
-layout:      php
 title:       O que é php?
 description: Artigo introdutório sobre PHP
 ---

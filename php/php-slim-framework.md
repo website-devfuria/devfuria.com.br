@@ -1,5 +1,4 @@
 ---
-layout:      php
 title:       Slim framework  um micro framework para PHP
 description: Este artigo é um Hello World com o micro framework Slim
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      php
 title:       Recebendo dados via GET e POST
 description: Estamos no lado do servidor recebendo os dados das requisições GET e POST
 serie:       Formulários Web

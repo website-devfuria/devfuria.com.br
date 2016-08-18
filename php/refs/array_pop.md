@@ -1,5 +1,4 @@
 ---
-layout:      php
 title:       PHP - Função array_pop()
 description: Referência prática da função array_pop - PHP
 menu:        php-refs

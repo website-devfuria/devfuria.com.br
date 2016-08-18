@@ -1,5 +1,4 @@
 ---
-layout:      php
 title:       PHP - Funcões
 description: Referência prática sobre Funcões - PHP
 ---
