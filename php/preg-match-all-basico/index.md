@@ -2,7 +2,7 @@
 layout:      php-serie
 title:       O básico sobre a função preg match all
 description: Aprenda o básico sobre a função preg_match_all() + exemplo
-serie:       expressao-regular
+serie:       PHP e Expressão Regular
 ---
 
 

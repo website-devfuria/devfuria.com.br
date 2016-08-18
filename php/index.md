@@ -118,7 +118,7 @@ PREC é a mais atual. Em PHP, as expressão regulares devem ser tratadas como st
 As funções POSIX são derivadas de `ereg()`, já as funções do PREC são derivadas de `preg_macth()`.
 
 
-{% include get-serie.html page_serie="expressao-regular" %} 
+{% include get-serie.html page_serie="PHP e Expressão Regular" %} 
 {% include menus.html %} 
 
 <hr/>

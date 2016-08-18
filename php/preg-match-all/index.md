@@ -2,7 +2,7 @@
 layout:      php-serie
 title:       Referência da função preg_match_all()
 description: Uma referência prática da função preg match all
-serie:       expressao-regular
+serie:       PHP e Expressão Regular
 ---
 
 

@@ -2,7 +2,7 @@
 layout:      php-serie
 title:       O básico sobre a função preg match
 description: Descubra e aprenda o básico sobre a função preg_match()
-serie:       expressao-regular
+serie:       PHP e Expressão Regular
 ---
 
 Vamos utilizar o seguinte exemplo...
