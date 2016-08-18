@@ -1,5 +1,4 @@
 ---
-layout:      regex
 title:       Cheat sheet - Metacaracteres
 description: Este artigo é uma cheat sheet (folha de cola)  dos metacaracteres de Expressões Regulares
 ogimage:     cheat-sheet-metacaracteres.png

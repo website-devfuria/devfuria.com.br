@@ -1,5 +1,4 @@
 ---
-layout:      regex
 title:       Expressões Regulares
 description: Descomplicamos as expressões regulares
 ---
@@ -19,7 +18,8 @@ Seja bem vindo(a) a seção sobre Expressões Regulares!
 
 ### Metacracteres
 
-{% include menus.html menus=site.data.menus.regex-metacaracteres %}
+{% include get-serie.html page_serie="Metacaracteres" %} 
+{% include menus.html %} 
 
 
 

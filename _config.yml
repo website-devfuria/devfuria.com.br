@@ -9,25 +9,25 @@ enable_analytics: false
 markdown:    redcarpet
 highlighter: pygments
 permalink:   pretty
-exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
+#exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
 gems:
   - jekyll-sitemap
 
 # Para atualizar mais rápido...
-#exclude: 
-#    - javascript
+exclude: 
+    - javascript
 #    - php
-#    - python
-#    - logica-de-programacao
-#    - html-css
-#    - sql
-#    - misc
+    - python
+    - logica-de-programacao
+    - html-css
+    - sql
+    - misc
 #    - regex
-#    - tdd
-#    - git
-#    - c
-#    - seguranca-da-informacao
-#    - linux
+    - tdd
+    - git
+    - c
+    - seguranca-da-informacao
+    - linux
 
 
 defaults:
@@ -37,5 +37,13 @@ defaults:
     values:
       category:
         label: "PHP"
-        url:  "/php"
+        url:   "/php"
+      layout: "articles"
+  -
+    scope:
+      path: "regex"
+    values:
+      category:
+        label: "Expressões Regulares"
+        url:   "/regex"
       layout: "articles"

@@ -1,8 +1,8 @@
 ---
-layout:      regex-serie
 title:       "Metacaractere mais +"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        6
 ---
 
 O metacaracter `+` (mais) tem funcionamento idêntico ao do `*` (asterisco), a única diferença é que o mais não é 

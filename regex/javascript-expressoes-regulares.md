@@ -1,5 +1,4 @@
 ---
-layout:      regex
 title:       Expressões Regulares em JavaScript
 description: Expressões Regulares em JavaScript
 ---

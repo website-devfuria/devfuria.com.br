@@ -1,5 +1,4 @@
 ---
-layout:      regex
 title:       Introdução a Expressões Regulares
 description: Uma pequena e rápida introdução as Expressões Regulares
 ogimage:     expressoes-regulares.png

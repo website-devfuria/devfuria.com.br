@@ -1,8 +1,8 @@
 ---
-layout:      regex-serie
 title:       "Metacaractere circunflexo ^"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        8
 ---
 
 O metacaractere circunflexo marca o começo de uma linha, serve para procurar no começo da linha.

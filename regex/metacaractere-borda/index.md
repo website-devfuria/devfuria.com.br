@@ -1,8 +1,8 @@
 ---
-layout:      regex-serie
-title:       "Metacaractere borda \b"
+title:       "Metacaractere borda \\b"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        10
 ---
 
 O metacaractere borda marca a borda de um "trecho" (letras, números e sublinhado).

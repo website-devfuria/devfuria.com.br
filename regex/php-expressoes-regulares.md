@@ -1,5 +1,4 @@
 ---
-layout:      regex
 title:       Expressões Regulares em PHP
 description: Expressões Regulares em PHP
 ---
@@ -25,7 +24,8 @@ As funções do PREC são derivadas de `preg_macth()`.
 
 ### Leia as matérias na seção PHP:
 
-{% include menus/php-regex.html %}
+{% include get-serie.html page_serie="PHP e Expressão Regular" %} 
+{% include menus.html %} 
 
 
 

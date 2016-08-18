@@ -1,8 +1,8 @@
 ---
-layout:      regex-serie
 title:       "Metacaractere retrorreferência \\1 ... \\9"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        14
 ---
 
 A utilização do [metacaractere grupo](/regex/metacaractere-grupo/) possibilita a captura de um trecho de texto casado 

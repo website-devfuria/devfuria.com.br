@@ -1,8 +1,8 @@
 ---
-layout:      regex-serie
 title:       "Metacaractere grupo ()"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        13
 ---
 
 O metacaractere grupo agrupa opções, dentro do grupo podemos ter um ou mais caracteres, metacaracteres e outros grupo.

@@ -1,8 +1,8 @@
 ---
-layout:      regex-serie
 title:       "Metacaractere ou |"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        12
 ---
 
 O metacaractere "ou" | serve para os casos em que temos mais de uma alternativa possível.
