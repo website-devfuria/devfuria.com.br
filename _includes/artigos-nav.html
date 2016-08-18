@@ -16,10 +16,11 @@
                     <!--<li><a href="/#home">Home</a></li>-->
                     <li><a href="/#categorias">Categorias</a></li>
                     <li><a href="{{ include.secao_href }}">{{ include.secao_label }}</a></li>
+                    {% if page.serie %}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esta série<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            {% include get-serie.html page_serie=page.serie%}                            
+                            {% include get-serie.html page_serie=page.serie%}
                             {% for artigo in serie  %}
                                 {% assign index_next = forloop.index0 | plus: 1 %}
                                 {% assign index_prev = forloop.index0 | minus: 1 %}
@@ -33,6 +34,7 @@
                             {% endfor %}
                         </ul>
                     </li>
+                    {% endif %}
                 </ul>
             </div>
         </div><!-- .container -->
