@@ -78,7 +78,8 @@ Leia mais sobre [Twig](/php/twig/).
 
 Aprenda a trabalhar com cada controle de um [formulário web](/php/forms/).
 
-{% include /menus/php-forms.html %}
+{% include get-serie.html page_serie="Formularios Web" %} 
+{% include menus.html %} 
 
 
 
@@ -94,7 +95,10 @@ Uma [referência prática](/php/refs/), direta e abrangente sobre a linguagem.
 
 Aprenda a trabalhar com arrays em PHP com esta série de artigos.
 
-{% include /menus/php-arrays.html %}
+<div class="list-group">
+    <a href="/php/criando-iterando-um-array/" class="list-group-item">Criando e iterando um array em PHP</a>
+    <a href="/php/arrays-funcoes-basicas/" class="list-group-item">Funções básicas de arrays</a>
+</div>
 
 
 
