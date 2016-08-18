@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       A4 Insecure Direct Object References
 description: Artigo sobre a vulnerabilidade Referências Inseguras Diretas a Objetos, quarta da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)

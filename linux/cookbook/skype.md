@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o Skype no Fedora
 description: Aprenda como instalar o Skype no Fedora
 ---

@@ -1,7 +1,6 @@
 ---
-layout:      grid93-article
-title:       Manipulando<br /> caixas de texto (textbox)<br /> com JavaScript
-description: Aprendendo como os campos <br />textbox, password e textarea<br /> funcionam com o Javascript
+title:       Manipulando  caixas de texto (textbox)  com JavaScript
+description: Aprendendo como os campos  textbox, password e textarea  funcionam com o Javascript
 menu:        javascript-forms
 ---
 

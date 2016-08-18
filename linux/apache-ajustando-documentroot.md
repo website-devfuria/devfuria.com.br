@@ -1,5 +1,4 @@
 ---
-layout: grid12-article
 title:  Ajustando o DocumentRoot no Apache
 ---
 

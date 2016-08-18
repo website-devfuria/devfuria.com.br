@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       Recebendo dados via GET e POST
 description: Estamos no lado do servidor recebendo os dados das requisições GET e POST
-menu:        php-forms
+serie:       Formulários Web
+ordem:       3
 ---
 
 `$_GET` e `$_POST` são variáveis globais, você poderá utilizá-las em qualquer parte do código.

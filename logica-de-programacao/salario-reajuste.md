@@ -1,7 +1,6 @@
 ---
-layout:      grid93-article
 title:       Reajustando o salário
-description: Exercício de lógica de programação.<br />Calcular o reajuste do salário.
+description: Exercício de lógica de programação. Calcular o reajuste do salário.
 menu:        logica-exercicios
 ---
 

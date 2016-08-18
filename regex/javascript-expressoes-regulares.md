@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Expressões Regulares em JavaScript
 description: Expressões Regulares em JavaScript
 ---
@@ -93,9 +92,17 @@ Referência
 - [MDN - Regular Expressions (site oficial)](https://developer.mozilla.org/pt-BR/docs/JavaScript/Guide/Regular_Expressions "link-externo")
 
 
-Leia também
----
+{% include call.html
+    style="success"
+    title="Leia em seguida..."
+    descr="Expressões Regulares - metacaracteres"
+    href="/regex/metacaracteres/"
+    label="Ver matéria!"
+%}
 
-- [Expressões Regulares - metacaracteres](/regex/metacaracteres/)
-
-Também é possível aprender Expressões Regulares em JavaScript de forma interativa no site [tryregex](http://tryregex.com/ "link-externo")
+{% include call.html
+    title="Link Externo"
+    descr="Também é possível aprender Expressões Regulares em JavaScript de forma interativa no site..."
+    href="http://tryregex.com/"
+    label="tryregex.com"
+%}

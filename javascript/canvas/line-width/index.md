@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Canvas - Tamanho das linhas  (lineWidth)
 description: Descubra como alterar o comprimento (width) das linhas em Canvas
 menu:        javascript-canvas

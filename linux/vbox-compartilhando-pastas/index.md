@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Compartilhando pastas no Virtual Box
 description: Aprenda como compartilhar pastas no Virtual Box
 menu:        linux-vbox

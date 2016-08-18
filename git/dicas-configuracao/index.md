@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Dicas de configuração do Git
 description: Algumas dicas que facilitam a utilização do Git em noss dia a dia
 ---

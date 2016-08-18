@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Configurando o PHP
 description: 
 ---

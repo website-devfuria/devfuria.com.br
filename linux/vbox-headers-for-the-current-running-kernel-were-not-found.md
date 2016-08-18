@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Resolvendo o erro "headers for the current running kernel were not found"
 description: Resolvendo o erro fix error "headers for the current running kernel were not found"
 menu:        linux-vbox

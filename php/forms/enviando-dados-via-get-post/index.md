@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       Enviado dados via GET e POST
 description: Estamos no navegador (browser) criando dois tipos de requisições GET e POST
-menu:        php-forms
+serie:       Formulários Web
+ordem:       2
 ---
 
 
@@ -49,10 +49,10 @@ Agora crie o html abaixo:
 
         <form action="script-para-onde-envio-os-dados.php" method="post">
             <p>
-                Name:  <input type="text" name="username" value="João da Silva" /><br />
+                Name:  <input type="text" name="username" value="João da Silva" />
             </p>
             <p>
-                Email: <input type="text" name="email"  value="joao@dasilva.com" /><br />
+                Email: <input type="text" name="email"  value="joao@dasilva.com" />
             </p>
             <p>
                 <input type="submit" value="Submit me!" />

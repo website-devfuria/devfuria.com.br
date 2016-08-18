@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       Manipulando combobox com PHP
 description: Veremos como enviar e receber dados através do controle combobox (input-form-select)
-menu:        php-forms
+serie:       Formulários Web
+ordem:       7
 ---
 
 

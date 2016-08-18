@@ -1,5 +1,4 @@
 ---
-layout:      grid12-index
 title:       Formulários web e seus controles
 description: Tudo o que você precisa saber sobre Formulários Web e seus controles.
 ---

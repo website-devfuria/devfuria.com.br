@@ -1,268 +1,40 @@
-/*!
- * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-/* Global Styles */
-
-html,
-body {
-    width: 100%;
-    height: 100%;
+/* Mobile */
+header h1 {
+    font-size: 2.75em;
+}
+header p {
+    font-size: 1.75em;
 }
 
-body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+#conteudo {
+    padding-top: 120px;
 }
 
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
-}
-
-/* Custom Button Styles */
-
-.btn-dark {
-    border-radius: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
-}
-
-/* Custom Horizontal Rule */
-
-hr.small {
-    max-width: 100px;
-}
-
-/* Side Menu */
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    margin-right: -250px;
-    overflow-y: auto;
-    background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#menu-toggle {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.toggle {
-    margin: 5px 5px 0 0;
-}
-
-/* Header */
-
-.header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /*background: url(../img/bg.jpg) no-repeat center center scroll;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* About */
-
-.about {
-    padding: 50px 0;
-}
-
-/* Services */
-
-.services {
-    padding: 50px 0;
-}
-
-.service-item {
-    margin-bottom: 30px;
-}
-
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* Portfolio */
-
-.portfolio {
-    padding: 50px 0;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
-}
-
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
-
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
+/* Desktop ??? */
+@media (min-width: 768px) {
+    .intro {
+        padding: 0 20em;
+    }
+    .start {
+        padding: 0 10em;
+    }
+    header h1 {
+        font-size: 4.75em;
+    }
+    header p {
+        font-size: 1.75em;
     }
 }
 
-/* Footer */
+/*
+Tirando a imagem de fundo dos artigos
+<section id="home"
+*/
+#home.artigos {
+    background: none;
+    background-color: #222;
+} 
 
-footer {
-    padding: 100px 0;
-}
-
-
-
-/*************************************/
-/* Enxertos devfuria */
-
-.page-header {
-    margin-top: 0px;
-}
-section p {
-    text-align: justify;
-}
-footer {
-    color: #fff;
-    background-color: #000;
-    padding-top: 15px;
-    padding-bottom: 70px;
-    margin-top: 130px;
-}
-.btn-rodape {
-    display: inline-block;
-    padding: 8px;
-    margin: 4px 2px;
-    border-radius: 6px;    
-    background-color: #357EBD;
-    color: #FFF;
-}
 canvas, .canvas {
     background: #ffffff;
     cursor: pointer;
@@ -271,10 +43,19 @@ canvas, .canvas {
     box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
     width: 330px;
 }
+a {
+    color: #00A2E8;
+}
 a.link-externo {
   color: #c93900;
   padding-right: 15px;
   background: url(/assets/images/icon-external-link.gif) right top no-repeat;
+}
+a:hover, a:focus {
+    color: #666;
+}
+h1, h2 {
+	text-transform: uppercase;    
 }
 h2 {
     color: #122b3b;
@@ -287,7 +68,8 @@ h3 {
     color: #122b3b;
     margin-top:1.8em;
 }
-h2, h3, h4 {font-weight: bold}
+/*h2, h3, h4 {font-weight: bold}*/
+
 table {
     font-size:inherit;
     font: 100%;
@@ -296,7 +78,12 @@ table {
 table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
 table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
 
-/*pygmentize -S native -f html > highlight.css*/
+code {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* pygmentize -S native -f html > highlight.css */
 pre .hll { background-color: #ffffcc }
 pre .c { color: #408080; font-style: italic } /* Comment */
 pre .err { border: 1px solid #FF0000 } /* Error */
@@ -359,3 +146,126 @@ pre .vc { color: #19177C } /* Name.Variable.Class */
 pre .vg { color: #19177C } /* Name.Variable.Global */
 pre .vi { color: #19177C } /* Name.Variable.Instance */
 pre .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+
+/*
+Theme from Call to action
+http://bootsnipp.com/snippets/featured/call-to-action-with-dark-background
+*/
+.bs-calltoaction{
+    position: relative;
+    width:auto;
+    padding: 15px 25px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+    .bs-calltoaction > .row{
+        display:table;
+        width: calc(100% + 30px);
+    }
+     
+        .bs-calltoaction > .row > [class^="col-"],
+        .bs-calltoaction > .row > [class*=" col-"]{
+            float:none;
+            display:table-cell;
+            vertical-align:middle;
+        }
+
+            .cta-contents{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+                .cta-title{
+                    margin: 0 auto 15px;
+                    padding: 0;
+                }
+
+                .cta-desc{
+                    padding: 0;
+                }
+
+                .cta-desc p:last-child{
+                    margin-bottom: 0;
+                }
+
+            .cta-button{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+@media (max-width: 991px){
+    .bs-calltoaction > .row{
+        display:block;
+        width: auto;
+    }
+
+        .bs-calltoaction > .row > [class^="col-"],
+        .bs-calltoaction > .row > [class*=" col-"]{
+            float:none;
+            display:block;
+            vertical-align:middle;
+            position: relative;
+        }
+
+        .cta-contents{
+            text-align: center;
+        }
+}
+
+.bs-calltoaction.bs-calltoaction-default{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.bs-calltoaction.bs-calltoaction-primary{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.bs-calltoaction.bs-calltoaction-info{
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.bs-calltoaction.bs-calltoaction-success{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.bs-calltoaction.bs-calltoaction-warning{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.bs-calltoaction.bs-calltoaction-danger{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.bs-calltoaction.bs-calltoaction-primary .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-info .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-success .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-warning .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-danger .cta-button .btn{
+    border-color:#fff;
+}
+
+/*
+Paginação das séries
+*/
+h2.pagination{
+    margin-top:0em;
+}
+a.pagination{
+    margin: 20px 0px;
+}

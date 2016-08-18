@@ -1,6 +1,5 @@
 ---
-layout:      grid93-article
-title:       Somando números<br />(recursão)
+title:       Somando números (recursão)
 description: faça um algoritmo que some os dígitos de 1 até n
 menu:        logica-exercicios
 ---

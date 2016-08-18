@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando flash-plugin no Firefox
 description: Aprenda como instalar flash-plugin no Firefox
 ---

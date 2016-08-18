@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       "Metacaractere lista [ ]"
-description: 
-menu:        regex-metacaracteres
+description:
+serie:        Metacaracteres
+ordem:        2
 ---
 
 A lista casa com quem ela conhece e tem suas próprias regras.

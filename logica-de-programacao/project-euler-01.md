@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Projeto Euler
 description: Problema 01
 menu:        logica-exercicios

@@ -1,7 +1,6 @@
 ---
-layout:       grid12-article
-title:        Python,<br />servindo páginas HTML com CGI
-description:  Neste artigo escreveremos alguns scripts CGI em Ptyhon e<br />veremos eles funcionando, através do navegador,<br />como páginas HTML
+title:        Python, servindo páginas HTML com CGI
+description:  Neste artigo escreveremos alguns scripts CGI em Ptyhon e veremos eles funcionando, através do navegador, como páginas HTML
 ---
 
 __Como gerar páginas web com Python ?__ é uma das primeiras perguntas que fazemos quando iniciamos os estudos em Python.

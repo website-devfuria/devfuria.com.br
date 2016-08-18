@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       git rm
 description: Removendo arquivos no git
 ---

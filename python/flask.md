@@ -1,7 +1,6 @@
 ---
-layout:      grid12-article
-title:       Python Flask<br />Introdução
-description: Este artigo é uma breve introdução ao framework Flask<br />e pode servir como um tutorial prático<br />para quem quer dar os primeiros passos com o Flask
+title:       Python Flask Introdução
+description: Este artigo é uma breve introdução ao framework Flask e pode servir como um tutorial prático para quem quer dar os primeiros passos com o Flask
 ---
 
 Este artigo é uma breve introdução ao framework [Flask](http://flask.pocoo.org/ "link-externo") e pode servir como um

@@ -1,5 +1,4 @@
 ---
-layout: grid12-article
 title:  Entendendo e usando permissões no Linux
 ---
 

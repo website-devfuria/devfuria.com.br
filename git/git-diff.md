@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       git diff
 description: Visualizando suas mudanças selecionadas e não selecionadas
 ---

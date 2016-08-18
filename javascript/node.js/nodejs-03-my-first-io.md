@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Nodeschool - My First I/O!
 description: Terceiro exercício (My First I/O!) do Node.js da lista learnyounode da Nodeschool
 menu:        javascript-ns

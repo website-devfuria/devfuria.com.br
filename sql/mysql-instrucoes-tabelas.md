@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Instruções úteis para manipular tabelas no MySQL
 description: Instruções SQL para manipular tabelas no MySQL .
 menu:        mysql

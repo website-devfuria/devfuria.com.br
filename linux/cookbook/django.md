@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o Django (python)
 description: Aprenda como instalar o Django no Linux
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-index
 title:       "Linguagem C"
 description: O mínimo que você deve saber sobre a linguagem C
 ---

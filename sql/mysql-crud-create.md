@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       CRUD - C de create (insert)
 description: Entenda o sql INSERT, para quem nunca viu SQL!
 menu:        mysql

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o módulo WSGI 
 description: Aprenda como instalar o módulo WSGI para servir páginas em HTML
 ---

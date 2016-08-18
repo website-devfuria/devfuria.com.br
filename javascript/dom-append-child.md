@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       JavaScript - Append Child (DOM)
 description: Referência prática da função appendChild()
 menu:        javascript-dom

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       A9 Insufficient Transport Layer Protection
 description: Artigo sobre a vulnerabilidade Insuficiente Proteção da Camada de Trasporte, nono item da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)

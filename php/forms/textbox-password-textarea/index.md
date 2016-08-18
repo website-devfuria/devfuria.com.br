@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       Manipulando os controles text, password e textarea
 description: Veremos como enviar e receber dados através dos controles input text, password e textarea
-menu:        php-forms
+serie:       Formulários Web
+ordem:       4
 ---
 
 O formulário abaixo eu peguei emprestado do livro do Andy Budd (Criando Páginas Web com CSS)

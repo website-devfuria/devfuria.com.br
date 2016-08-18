@@ -1,5 +1,4 @@
 ---
-layout: grid12-index
 title:  TDD (Test Driven Development)
 ---
 

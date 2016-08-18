@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Python - Função interna repr()
 description: Exemplos práticos sobre a função interna repr()
 ---

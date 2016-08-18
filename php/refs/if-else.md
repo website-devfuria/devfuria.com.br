@@ -1,8 +1,6 @@
 ---
-layout:      grid93-article
 title:       PHP - Expressões Condicionais - if else
 description: Referência prática sobre Expressões Condicionais (f else) - PHP
-menu:        php-refs
 ---
 
 

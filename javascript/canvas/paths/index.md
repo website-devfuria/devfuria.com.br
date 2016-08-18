@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Canvas - Paths (caminhos)
 description: Descobrindo os caminhos (paths) do Canvas (HTML5).
 menu:        javascript-canvas

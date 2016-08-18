@@ -1,5 +1,4 @@
 ---
-layout:      grid12-index
 title:       Expressões Regulares
 description: Descomplicamos as expressões regulares
 ---
@@ -9,12 +8,18 @@ Seja bem vindo(a) a seção sobre Expressões Regulares!
 
 ### Artigos introdutórios
 
-{% include menus/regex-artigos.html %}
+<div class="list-group">
+    <a href="/regex/expressoes-regulares/" class="list-group-item">Introdução a Expressões Regulares</a>
+    <a href="/regex/metacaracteres/" class="list-group-item">Apresentação dos Metacaracteres</a>
+    <a href="/regex/cheat-sheet-matacaracteres/" class="list-group-item">Cheat sheet sobre Metacaracteres</a>
+    <a href="/regex/exemplos-de-expressoes-regulares/" class="list-group-item">Exemplos de Expressões Regulares</a>
+</div>
 
 
 ### Metacracteres
 
-{% include menus/regex-metacaracteres.html %}
+{% include get-serie.html page_serie="Metacaracteres" %} 
+{% include menus.html %} 
 
 
 
@@ -22,7 +27,7 @@ Seja bem vindo(a) a seção sobre Expressões Regulares!
 
 Subceção sobre [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
 
-{% include menus/javascript-regex.html %}
+include menus/javascript-regex.html
 
 
 
@@ -30,7 +35,7 @@ Subceção sobre [Expressões Regulares em JavaScript](/regex/javascript-express
 
 Subceção sobre [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
 
-{% include menus/php-regex.html %}
+{% include menus.html menus=site.data.menus.php-regex %}
 
 
 

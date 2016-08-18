@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       A7 Insecure Cryptographic Storage
 description: Artigo sobre a vulnerabilidade Armazenamento Criptográfico Inseguro, sétimo item da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)

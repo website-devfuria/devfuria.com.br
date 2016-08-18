@@ -1,7 +1,6 @@
 ---
-layout:      grid12-article
 title:       Exemplos de Expressões Regulares
-description: Já leu o básico sobre expressões regulares?<br /> Agora que tal olhar alguns exemplos?
+description: Já leu o básico sobre expressões regulares?  Agora que tal olhar alguns exemplos?
 ogimage:     exemplos-expressoes-regulares.png
 ---
 

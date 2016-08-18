@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Rápida introdução a linguagem C
 description: Uma pequena e rápida introdução a linguagem c
 ---

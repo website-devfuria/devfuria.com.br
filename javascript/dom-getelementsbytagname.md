@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       JavaScript - getElementsByTagName()
 description: Referência prática da função getElementsByTagName()
 menu:        javascript-dom

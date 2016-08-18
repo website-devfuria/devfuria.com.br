@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando conjunto de utilitários JDK (Java Development Kit)
 description: Aprenda a instalar o conjunto de utilitários JDK (Java Development Kit)
 ---

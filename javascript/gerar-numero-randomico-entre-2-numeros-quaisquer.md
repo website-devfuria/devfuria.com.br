@@ -1,7 +1,6 @@
 ---
-layout:      grid93-article
-title:       Um número randômico<br />entre 2 números quaisquer
-description: Aprenda com este artigo a criar uma função para gerar<br />um número randômico entre 2 números quaisquer
+title:       Um número randômico entre 2 números quaisquer
+description: Aprenda com este artigo a criar uma função para gerar um número randômico entre 2 números quaisquer
 menu:        javascript-rando
 ---
 

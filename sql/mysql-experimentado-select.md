@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Experimentando a instrução "select"
 description: Seus primeiros passos com a instrução 'select'
 menu:        mysql

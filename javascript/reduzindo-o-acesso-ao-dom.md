@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Reduzindo o acesso ao DOM (Document Object Model)
 description: 
 ---

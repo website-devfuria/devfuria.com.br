@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       "Metacaractere asterisco *"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        5
 ---
 
 O asterisco repete em qualquer quantidade

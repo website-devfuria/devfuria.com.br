@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o navegador Chome no Linux
 description: Como instalar o navegador Google Chrome no Linux
 ---

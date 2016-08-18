@@ -4,31 +4,27 @@
 
 <title>
     {% if page.title %}
-        {{ page.title | replace:'<br />',' ' }}        
+        {{ page.title }}        
     {% else %}
         {{ site.title }}
     {% endif %}
 </title>
 
-{% if page.description %}
-    <meta name="description" content="{{ page.description | replace:'<br />','' }}" />
-    <meta name="og:description" content="{{ page.description | replace:'<br />','' }}" />
-{% endif %}
+{% include head-descr.html %}
 
-<meta name="author" content="Flávio Alexandre Micheletti">
+{% include head-author.html %}
 
-<meta property="og:type" content="website" /> 
-<meta property="og:title" content="{{ page.title }}"/>
-<meta property="og:url" content="http://www.devfuria.com.br{{ page.url }}" />
-<meta property="og:image" content="http://www.devfuria.com.br{% if page.ogimage %}{{ page.ogimage | prepend: page.url }}{% else %}{{ "/assets/images/favicon.png" }}{% endif %}"/>
+{% include head-og.html %}
 
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="shortcut icon" type="imagens/gif" href="/assets/images/favicon.ico">    
+{% include head-canonical.html %}
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link rel="stylesheet" href="{{ "/assets/css/devfuria.css" | prepend: site.baseurl }}">
+{% include head-icon.html %}
 
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+{% include head-css.html %}
+
+{% include head-js.html %}
+
+{% include head-fonts.html %}
 
 <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

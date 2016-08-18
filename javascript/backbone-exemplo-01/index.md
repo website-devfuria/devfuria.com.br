@@ -1,7 +1,6 @@
 ---
-layout:      grid93-article
-title:       Backbone exemplo 01:<br /> Template e os eventos da Collection
-description: Pequeno exemplo de script Backbone (JavaScript)<br />onde exploro a questão do template e os eventos da collection.
+title:       "Backbone exemplo 01:  Template e os eventos da Collection"
+description: Pequeno exemplo de script Backbone (JavaScript) onde exploro a questão do template e os eventos da collection.
 menu:        javascript-backbone
 ogimage:     img.png   
 ---

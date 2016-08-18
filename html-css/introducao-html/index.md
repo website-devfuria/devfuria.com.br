@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Introdução ao HTML 
 description: 
 menu:        html-artigos-intro

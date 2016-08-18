@@ -1,7 +1,6 @@
 ---
-layout:      grid12-article
-title:       Python,<br />servindo páginas HTML com WSGI
-description: Neste artigo veremos como executar<br />script Python utilizando o WSGI.
+title:       Python, servindo páginas HTML com WSGI
+description: Neste artigo veremos como executar script Python utilizando o WSGI.
 ---
 
 Este artigo é um primeiro passo para quem quer testar e experimentar a especificação WSGI. Indicado para quem está querendo

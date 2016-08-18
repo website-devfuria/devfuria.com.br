@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Criando seu primeiro HTML 
 description: Aprenda com esse artigo a produzir seu primeiro HTML
 menu:        html-artigos-intro

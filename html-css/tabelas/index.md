@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       HTML & CSS - Tabelas 
 description:
 menu:        html-elementos  

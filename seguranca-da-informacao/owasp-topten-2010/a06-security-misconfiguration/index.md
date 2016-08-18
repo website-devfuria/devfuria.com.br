@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       A6 Security Misconfiguration
 description: Artigo sobre a vulnerabilidade Configuração Incorreta de Segurança, sexto item da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)

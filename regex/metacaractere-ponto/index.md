@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       "Metacaractere ponto ."
-description: 
-menu:        regex-metacaracteres         
+description:
+serie:        Metacaracteres
+ordem:        1
 ---
 
 O ponto casa com qualquer coisa.

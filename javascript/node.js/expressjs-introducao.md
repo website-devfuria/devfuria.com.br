@@ -1,7 +1,6 @@
 ---
-layout:      grid12-article
 title:       Introdução ao framework Express.js
-description: Este artigo é uma introdução prática ao framework Express.js<br />muito utilizado em programações Node.js
+description: Este artigo é uma introdução prática ao framework Express.js muito utilizado em programações Node.js
 ---
 
 Este artigo é uma introdução prática ao framework [Express.js](http://expressjs.com/ "link-externo") muito utilizado em 

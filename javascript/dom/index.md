@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       DOM - Document Object Model
 description: O que você precisa saber sobre o DOM (Document Object Model)
 menu:        javascript-dom

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o Pencil no Fedora
 description: Aprenda como instalar criardor de wireframes Pencil (Linux)
 ---

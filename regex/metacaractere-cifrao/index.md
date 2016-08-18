@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       "Metacaractere cifrão $"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        9
 ---
 
 O metacaracter cifrão marca o fim de uma linha e só é válido no final de uma ER.

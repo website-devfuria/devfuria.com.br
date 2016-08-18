@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Aprenda a integrar o Jade ao Express.js
 description: 
 ---

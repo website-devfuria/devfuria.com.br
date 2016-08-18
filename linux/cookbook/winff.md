@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o conversor de vídeos winFF no Fedora
 description: Aprenda como instalar o conversor de vídeos winFF no Fedora
 ---

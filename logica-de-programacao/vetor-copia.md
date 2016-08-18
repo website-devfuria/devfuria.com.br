@@ -1,7 +1,6 @@
 ---
-layout:      grid93-article
 title:       Vetor cópia
-description: Exercício de lógica de programação<br />envolvendo vetor.
+description: Exercício de lógica de programação envolvendo vetor.
 menu:        logica-exercicios
 ---
 

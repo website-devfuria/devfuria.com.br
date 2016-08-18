@@ -1,7 +1,6 @@
 ---
-layout:      grid12-article
-title:       Tutorial para iniciar com<br /> o Git e o GitHub
-description: Aprenda a trabalhar com Git e github,<br />artigo introdutório bastante prático e que<br />promete reduzir a curva de aprendizado da ferramenta.
+title:       Tutorial para iniciar com  o Git e o GitHub
+description: Aprenda a trabalhar com Git e github, artigo introdutório bastante prático e que promete reduzir a curva de aprendizado da ferramenta.
 ---
 
 Esta é uma introdução prática ao Git e GitHub, indicado para quem está dando os primeiros passos com o Git. Neste artigo

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Python - O básico da sintaxe
 description: Um guia rápido e básico da linguagem Python.
 ---

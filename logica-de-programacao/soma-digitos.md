@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Somar dígitos
 description: Exercício de lógica de programação para dígitos de um inteiro.
 menu:        logica-exercicios

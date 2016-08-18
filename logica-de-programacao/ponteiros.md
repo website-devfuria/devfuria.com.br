@@ -1,7 +1,6 @@
 ---
-layout:      grid93-article
 title:       Ponteiros
-description: Exercício de lógica <br />envolvendo ponteiros
+description: Exercício de lógica  envolvendo ponteiros
 menu:        logica-exercicios
 ---
 

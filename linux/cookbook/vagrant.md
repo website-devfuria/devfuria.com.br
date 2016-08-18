@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o Vagrant no Linux
 description: Aprenda como instalar o Vagrant no Linux
 ---

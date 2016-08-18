@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Python - sys.argv
 description: Neste artigo veremos o funcionamento de sys.argv na linguagem Python
 ---

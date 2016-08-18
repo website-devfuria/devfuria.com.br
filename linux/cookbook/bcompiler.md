@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando bcompiler no CentOS (compilador de PHP bytecode)
 description: Aprenda como instalar a extensão bcompiler para PHP na CentOS trata-se de um compilador de PHP bytecode
 ---

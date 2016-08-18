@@ -1,8 +1,7 @@
 ---
-layout:      grid93-article
 title:       O básico sobre a função preg match all
 description: Aprenda o básico sobre a função preg_match_all() + exemplo
-menu:        php-regex
+serie:       PHP e Expressão Regular
 ---
 
 

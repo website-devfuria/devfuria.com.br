@@ -20,12 +20,12 @@ img {
 }
 
 a {
-	color: #E7746F;
+    /*text-decoration: underline;*/
 }
 
 a:hover {
-	text-decoration: none;
-	color: #999;
+	/*text-decoration: none;*/
+	/*color: #999;*/
 }
 
 /* ---------------------------------------------- /*
@@ -68,7 +68,7 @@ a,
  * Typography
 /* ---------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
 	font: 700 40px/1.2 Raleway, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -102,7 +102,7 @@ h6 {
 	font-size: 11px;
 	letter-spacing: 1px;
 	font-weight: 400;
-}
+}*/
 
 /* ---------------------------------------------- /*
  * Reset border-radius
@@ -370,7 +370,7 @@ textarea.form-control {
 .intro {
 	position: absolute;
 	width: 100%;
-	top: 50%;
+	top: 40%;
 	left: 0;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);

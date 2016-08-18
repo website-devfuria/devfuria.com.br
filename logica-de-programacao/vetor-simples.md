@@ -1,7 +1,6 @@
 ---
-layout:      grid93-article
 title:       Vetor simples
-description: Exercício de lógica de programação<br />os diversos tipos de laços.
+description: Exercício de lógica de programação os diversos tipos de laços.
 menu:        logica-exercicios
 ---
 

@@ -1,6 +1,5 @@
 ---
-layout:      grid93-article
-title:       JavaScript <br />Funções anônimas
+title:       JavaScript  Funções anônimas
 description: Entenda o que são e como funcionam as funções anônimas em JavaScript
 menu:        javascript-refs
 ---

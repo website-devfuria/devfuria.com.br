@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Como instalar o GuestAdditions (CentOS)
 description: Aprenda a instalar os adicionais de convidados no CentOS
 menu:        linux-vbox

@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Campos de senha (input type=password)
 description: Artigo a respeito do controle password (formulário web) - HTML e CSS
 menu:        html-forms

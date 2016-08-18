@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Botões (button, submit e reset)
 description: Artigo a respeito dos controles button, submit e reset (formulário web) - HTML e CSS
 menu:        html-forms

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando navegador Opera no Fedora
 description: Aprenda como instalar browser Opera no Fedora
 ---

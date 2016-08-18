@@ -1,5 +1,4 @@
 ---
-layout:      grid12-index
 title:       PHP
 description: Aprenda PHP de verdade!
 ---
@@ -78,15 +77,22 @@ Leia mais sobre [Twig](/php/twig/).
 
 Aprenda a trabalhar com cada controle de um [formulário web](/php/forms/).
 
-{% include /menus/php-forms.html %}
+{% include get-serie.html page_serie="Formulários Web" %} 
+{% include menus.html %} 
 
 
 
 ### Artigos de referência
 
-Uma [referência prática](/php/refs/), direta e abrangente sobre a linguagem.
+Uma referência prática, direta e abrangente sobre a linguagem.
 
-{% include /menus/php-refs.html %}
+<div class="list-group">
+    <a href="/php/refs/if-else/" class="list-group-item">Expressões Condicionais - if else</a>
+    <a href="/php/refs/funcoes/" class="list-group-item">Funções</a>
+    <a href="/php/refs/require/" class="list-group-item">require(), require_once, include() e include_once()</a>
+    <a href="/php/refs/array_pop/" class="list-group-item">Função array_pop()</a>
+    <a href="/php/refs/in_array/" class="list-group-item">Função in_array()</a>
+</div>
 
 
 
@@ -94,7 +100,10 @@ Uma [referência prática](/php/refs/), direta e abrangente sobre a linguagem.
 
 Aprenda a trabalhar com arrays em PHP com esta série de artigos.
 
-{% include /menus/php-arrays.html %}
+<div class="list-group">
+    <a href="/php/criando-iterando-um-array/" class="list-group-item">Criando e iterando um array em PHP</a>
+    <a href="/php/arrays-funcoes-basicas/" class="list-group-item">Funções básicas de arrays</a>
+</div>
 
 
 
@@ -107,7 +116,9 @@ PREC é a mais atual. Em PHP, as expressão regulares devem ser tratadas como st
 
 As funções POSIX são derivadas de `ereg()`, já as funções do PREC são derivadas de `preg_macth()`.
 
-{% include /menus/php-regex.html %}
+
+{% include get-serie.html page_serie="PHP e Expressão Regular" %} 
+{% include menus.html %} 
 
 <hr/>
 Veja também

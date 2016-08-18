@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Descobrir os dias de 'n' meses
 description: Exercício de lógica de programação para descobrir os dias de n meses.
 menu:        logica-exercicios

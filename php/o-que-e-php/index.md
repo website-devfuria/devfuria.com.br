@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       O que é php?
 description: Artigo introdutório sobre PHP
 ---

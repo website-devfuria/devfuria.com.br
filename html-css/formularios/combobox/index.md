@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Caixa de seleção (combo box)
 description: Artigo a respeito do controle combobox. select (formulário web) - HTML e CSS
 menu:        html-forms

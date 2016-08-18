@@ -1,6 +1,5 @@
 ---
-layout:      grid93-article
-title:       JavaScript <br />argumentos de funções
+title:       JavaScript  argumentos de funções
 description: Referência prática de argumento de funções
 menu:        javascript-refs
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Configurando o Git com o arquivo .netrc
 description: Aprenda a configurar o Git para não pedir senha com o arquivo netrc
 ---

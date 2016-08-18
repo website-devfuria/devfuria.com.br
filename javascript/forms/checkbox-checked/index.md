@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Manipulando checkboxes com JavaScript
 description: Nesta matéria vamos aprender como trabalhar com checkboxes através do JavaScript
 menu:        javascript-forms

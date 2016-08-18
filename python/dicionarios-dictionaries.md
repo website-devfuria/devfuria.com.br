@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Python - O básico sobre dicionários
 description: O básico sobre dicionários (Python)
 menu:        python-basico

@@ -1,6 +1,5 @@
 ---
-layout:      grid12-article
-title:       Instalando e configurando< />o PHPMyAdmin no Linux
+title:       Instalando e configurando o PHPMyAdmin no Linux
 description: Aprenda como instalar e configurar<br />o PHPMyAdmin no Linux
 ---
 

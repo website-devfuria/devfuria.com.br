@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Como reiniciar o servidor Apache
 description: Lista dos comando e uma breve explicação<br>de como reinicializar o servidor web Apache
 ---

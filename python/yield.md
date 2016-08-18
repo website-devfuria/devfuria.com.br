@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Python - yield
 description: Apresentação pragmática da palavra reservada yield (Python)
 ---

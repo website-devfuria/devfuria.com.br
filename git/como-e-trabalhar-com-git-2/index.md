@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Como é trabalhar com Git - parte 2
 description: Essa é a segunda parte de uma história fictícia que ilustra o dia dia de quem utiliza o GitHub como versionamento de código
 ---

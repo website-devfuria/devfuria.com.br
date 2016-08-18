@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Estilizando formulários, exemplo de Andy Budd
 description: Este artigo é uma demonstração de como um formulário web pode ser estilizado como CSS
 ---

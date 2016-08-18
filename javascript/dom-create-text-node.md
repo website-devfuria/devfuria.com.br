@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       JavaScript - Create Text Node (DOM)
 description: Referência prática da função createTextNode()
 menu:        javascript-dom

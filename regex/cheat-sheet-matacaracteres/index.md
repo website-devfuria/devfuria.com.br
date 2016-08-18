@@ -1,7 +1,6 @@
 ---
-layout:      grid12-article
 title:       Cheat sheet - Metacaracteres
-description: Este artigo é uma cheat sheet (folha de cola)<br /> dos metacaracteres de Expressões Regulares
+description: Este artigo é uma cheat sheet (folha de cola)  dos metacaracteres de Expressões Regulares
 ogimage:     cheat-sheet-metacaracteres.png
 ---
 
@@ -271,11 +270,9 @@ Outros
     </tbody>
 </table>
 
-
-Veja também
----
-
-O Aurélio Marinho (Piazinho e mestre em Regex) preparou um pdf com um Cheat sheet (folha de cola, resumão) sobre as
-expressões regulares.
-
-[http://www.piazinho.com.br/download/expressoes-regulares-3-tabelas.pdf](http://www.piazinho.com.br/download/expressoes-regulares-3-tabelas.pdf "link-externo")
+{% include call.html
+    title="Link Externo"
+    descr="O Aurélio Marinho (Piazinho e mestre em Regex) preparou um pdf com um Cheat Sheet (folha de cola, resumão) sobre as expressões regulares."
+    href="http://www.piazinho.com.br/download/expressoes-regulares-3-tabelas.pdf"
+    label="Dowload!"
+%}

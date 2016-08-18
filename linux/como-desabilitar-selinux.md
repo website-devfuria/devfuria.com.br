@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Como desabilitar SElinux0 (Fedora e CentOS)
 description: Como desabilitar SElinux0 (Fedora e CentOS)
 ---

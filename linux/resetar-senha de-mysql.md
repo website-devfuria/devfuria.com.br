@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Como resetar a senha de root do MySql
 description: Dicas de como resetar a senha de root do MySql
 ---

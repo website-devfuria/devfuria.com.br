@@ -1,7 +1,6 @@
 ---
-layout:      grid93-article
 title:       Área quadrada
-description: Exercício de lógica de programação<br />resolvido onde o objetivo é encontrar a área quadrada.
+description: Exercício de lógica de programação resolvido onde o objetivo é encontrar a área quadrada.
 menu:        logica-exercicios
 ---
 

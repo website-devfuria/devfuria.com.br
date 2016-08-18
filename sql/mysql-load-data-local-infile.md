@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Populando tabela a partir de uma arquivo de texto no MySQL
 description: Vamos aprender como popular uma tabela no MySQL apartir de um arquivo de texto.
 menu:        mysql

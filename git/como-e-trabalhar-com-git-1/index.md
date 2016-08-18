@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Como é trabalhar com Git - parte 1
 description: Essa é uma história fictícia para demonstrar como é o dia dia de quem utiliza o Git
 ---

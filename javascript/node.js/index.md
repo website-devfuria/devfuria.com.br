@@ -1,5 +1,4 @@
 ---
-layout:      grid12-index
 title:       Node.js
 description: Aprenda Node.js
 ---

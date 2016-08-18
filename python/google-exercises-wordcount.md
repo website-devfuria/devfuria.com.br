@@ -1,7 +1,6 @@
 ---
-layout:      grid93-article
-title:       Lista de exercícios da Google<br />word count
-description: Exercício extraído da lista Google Python Exercise<br /> onde veremos manipulação básica de arquivo, tuplas,<br /> além funções como sorted(), .split() e .keys().
+title:       Lista de exercícios da Google word count
+description: Exercício extraído da lista Google Python Exercise  onde veremos manipulação básica de arquivo, tuplas,  além funções como sorted(), .split() e .keys().
 menu:        python-google
 ---
 

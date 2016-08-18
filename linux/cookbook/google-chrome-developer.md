@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando a última versão do Google Chrome
 description: Como instalar a ultima versao do navegador Google Chrome no Linux
 ---

@@ -1,6 +1,5 @@
 ---
-layout:      grid93-article
-title:       JavaScript <br />doument
+title:       JavaScript  doument
 description: Referência prática do objeto nativo document
 menu:        javascript-refs
 ---

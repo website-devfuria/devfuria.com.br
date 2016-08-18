@@ -1,7 +1,6 @@
 ---
-layout:      grid12-article
 title:       O básico sobre rotas no Express.js
-description: Este artigo ensina como montar rotas básicas<br />no framework Express.js (Node.js).
+description: Este artigo ensina como montar rotas básicas no framework Express.js (Node.js).
 ---
 
 Este é o segundo artigo sobre o framework [Express.js](http://expressjs.com/ "link-externo"). Estou assumindo que você

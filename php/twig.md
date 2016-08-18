@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Twig
 description: Separei um sequencia de vídeos sobre o template engine Twig para PHP
 ---

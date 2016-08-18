@@ -1,15 +1,150 @@
 #
 # Configurações
 #
+enable_disqus:    true
+enable_analytics: false
 
 # Antes era com kramdown
-markdown:    kramdown
+# markdown:    kramdown
 markdown:    redcarpet
 highlighter: pygments
 permalink:   pretty
-exclude:     [test-theme.html, readme.md, composer.json, composer.lock, .gitignore]
+exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
 gems:
   - jekyll-sitemap
 
 # Para atualizar mais rápido...
-exclude: [javascript, python, logica-de-programacao, tdd, linux, html-css, regex, misc, git, php, sql, c, seguranca-da-informacao]
+#exclude: 
+#    - javascript
+#    - php
+#    - python
+#    - logica-de-programacao
+#    - html-css
+#    - sql
+#    - misc
+#    - regex
+#    - tdd
+#    - git
+#    - c
+#    - seguranca-da-informacao
+#    - linux
+
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "javascript"
+    values:
+      category:
+        label: "JavaScript"
+        url:   "/javascript"
+  -
+    scope:
+      path: "php"
+    values:
+      category:
+        label: "PHP"
+        url:   "/php"
+  -
+    scope:
+      path: "python"
+    values:
+      category:
+        label: "Python"
+        url:   "/python"
+  -
+    scope:
+      path: "javascript/node.js"
+    values:
+      category:
+        label: "Node.js"
+        url:   "/javascript/node.js"
+  -
+    scope:
+      path: "javascript/backbone"
+    values:
+      category:
+        label: "Framework Backbone (Javascript)"
+        url:   "/javascript/backbone"
+  -
+    scope:
+      path: "javascript/canvas"
+    values:
+      category:
+        label: "Canvas"
+        url:   "/javascript/canvas"
+  -
+    scope:
+      path: "logica-de-programacao"
+    values:
+      category:
+        label: "Lógica de programação"
+        url:   "/logica-de-programacao"
+  -
+    scope:
+      path: "html-css"
+    values:
+      category:
+        label: "HTML & CSS"
+        url:   "/html-css"
+  -
+    scope:
+      path: "sql"
+    values:
+      category:
+        label: "SQL - Structured Query Language"
+        url:   "/sql"
+  -
+    scope:
+      path: "misc"
+    values:
+      category:
+        label: "Miscellaneous"
+        url:   "/misc"
+  -
+    scope:
+      path: "regex"
+    values:
+      category:
+        label: "Expressões Regulares"
+        url:   "/regex"
+  -
+    scope:
+      path: "git"
+    values:
+      category:
+        label: "Git"
+        url:   "/git"
+  -
+    scope:
+      path: "c"
+    values:
+      category:
+        label: "Linguagem C"
+        url:   "/c"
+  -
+    scope:
+      path: "tdd"
+    values:
+      category:
+        label: "TDD (Test Driven Development)"
+        url:   "/tdd"
+  -
+    scope:
+      path: "seguranca-da-informacao"
+    values:
+      category:
+        label: "Segurança da Informação"
+        url:   "/seguranca-da-informacao"
+  -
+    scope:
+      path: "linux"
+    values:
+      category:
+        label: "Linux"
+        url:   "/linux"

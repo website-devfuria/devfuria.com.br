@@ -1,7 +1,6 @@
 ---
-layout:      grid12-article
-title:       "Django<br />Error loading MySQLdb module:<br />No module named MySQLdb"
-description: Criando um projeto Django e configurando ele<br /> para trabalhar com o MySql, ao rodar o servidor...<br />Error loading MySQLdb module
+title:       "Django Error loading MySQLdb module: No module named MySQLdb"
+description: Criando um projeto Django e configurando ele  para trabalhar com o MySql, ao rodar o servidor... Error loading MySQLdb module
 ---
 
 Este artigo é para quem estiver criando um projeto __Django__ e configurando ele para trabalhar com o __MySql__, ao rodar o servidor com o

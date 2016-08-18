@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       "Metacaractere escape \\"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        11
 ---
 
 O metacaractere escape \ permite o uso do valor literal determinado símbolo que coincide com um metacaratere existente.

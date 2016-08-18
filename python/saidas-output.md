@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Python - saídas (output)
 description: O básico sobre saídas (output) em Python
 menu:        python-basico

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o Filezilla (FTP)
 description: Aprenda a instalar o Filezilla no Linux
 ---

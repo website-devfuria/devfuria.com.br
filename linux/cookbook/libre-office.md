@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o Libre Office no Linux
 description: Aprenda como instalar o Libre Office no Linux
 ---

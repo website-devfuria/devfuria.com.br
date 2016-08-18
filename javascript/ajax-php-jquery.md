@@ -1,7 +1,6 @@
 ---
-layout:      grid12-article
 title:       Aprenda a utilizar Ajax com PHP e jQuery
-description: "Aprenda neste artigo a utilizar Ajax com PHP e jQuery, <br />também veremos os métodos curtos: <br />jQuery.post(), jQuery.get() e jQuery.getJSON()"
+description: "Aprenda neste artigo a utilizar Ajax com PHP e jQuery,  também veremos os métodos curtos:  jQuery.post(), jQuery.get() e jQuery.getJSON()"
 ---
 
 Aprenda neste artigo a utilizar Ajax com PHP e jQuery. Pressuponho que você tenha um servidor web instalado, como o

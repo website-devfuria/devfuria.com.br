@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
 title:       "Metacaractere opcional ?"
 description: 
-menu:        regex-metacaracteres
+serie:        Metacaracteres
+ordem:        4
 ---
 
 O quantificador opcional indica que pode ter ou não a ocorrência da entidade anterior, pois ele a repete 0 ou 1 vez.

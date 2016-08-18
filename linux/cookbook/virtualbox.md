@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o VirtualBox no Linux
 description: Aprenda como instalar o VirtualBox no Linux
 ---

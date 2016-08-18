@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando PIL (Python Imaging Library) no Linux
 description: Aprenda como instalar PI (Python Imaging Library)
 ---

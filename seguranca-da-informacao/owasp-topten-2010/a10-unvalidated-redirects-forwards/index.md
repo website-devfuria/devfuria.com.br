@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       A10 Unvalidated Redirects and Forwards
 description: Artigo sobre a vulnerabilidade Redirecionamento e Encaminhamentos Inválidos, décimo e último item da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)

@@ -1,6 +1,5 @@
 ---
-layout:      grid93-article
-title:       JavaScript <br />RegExp()
+title:       JavaScript  RegExp()
 description: Referência prática da função RegExp()
 menu:        javascript-regex
 ---

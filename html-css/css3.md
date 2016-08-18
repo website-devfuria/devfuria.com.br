@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Uma introdução ao CSS 3
 description: 
 ---

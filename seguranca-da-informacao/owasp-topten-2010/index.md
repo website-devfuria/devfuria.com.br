@@ -1,5 +1,4 @@
 ---
-layout: grid12-article
 title: OWASP top ten 2010 - Introdução
 ---
 

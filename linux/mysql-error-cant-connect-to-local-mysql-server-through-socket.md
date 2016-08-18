@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       "MySQL, resolvendo o erro 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)"
 description: "Aprenda a resolve o erro 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)"
 ---

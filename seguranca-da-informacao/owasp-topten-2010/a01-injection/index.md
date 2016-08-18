@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       A1 SQL Injection
 description: Artigo sobre a vulnerabilidade Injeção de SQL, primeiro da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
