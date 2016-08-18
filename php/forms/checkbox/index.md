@@ -1,5 +1,5 @@
 ---
-layout:      php-serie
+layout:      php
 title:       Manipulando checkboxes com PHP
 description: "Veremos como enviar e receber dados através do controle checkbox (input type='check')"
 serie:       Formulários Web

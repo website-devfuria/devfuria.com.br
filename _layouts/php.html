@@ -13,6 +13,9 @@
             {{ content }}
         </article>
         
+        {% if page.serie %}        
+            {% include series-next-prev.html %}
+        {% endif %}
         {% include disqus.html %}
         {% include footer.html %}
         {% include scroll-to-top.html %}

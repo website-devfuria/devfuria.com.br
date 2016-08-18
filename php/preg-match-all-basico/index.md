@@ -1,5 +1,5 @@
 ---
-layout:      php-serie
+layout:      php
 title:       O básico sobre a função preg match all
 description: Aprenda o básico sobre a função preg_match_all() + exemplo
 serie:       PHP e Expressão Regular

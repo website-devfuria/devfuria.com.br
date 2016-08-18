@@ -1,5 +1,5 @@
 ---
-layout:      php-serie
+layout:      php
 title:       Enviado dados via GET e POST
 description: Estamos no navegador (browser) criando dois tipos de requisições GET e POST
 serie:       Formulários Web

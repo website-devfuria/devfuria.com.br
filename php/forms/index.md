@@ -1,5 +1,5 @@
 ---
-layout:      php-serie
+layout:      php
 title:       PHP - Trabalhando com formulário web
 description: Um sub seção que trata formulários web e PHP
 serie:       Formulários Web

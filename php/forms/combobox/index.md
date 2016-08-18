@@ -1,5 +1,5 @@
 ---
-layout:      php-serie
+layout:      php
 title:       Manipulando combobox com PHP
 description: Veremos como enviar e receber dados através do controle combobox (input-form-select)
 serie:       Formulários Web
