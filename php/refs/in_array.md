@@ -1,8 +1,7 @@
 ---
-layout:      grid93-article
+layout:      php
 title:       PHP - Função in_array()
 description: Referência prática da função in_array - PHP
-menu:        php-refs
 ---
 
 

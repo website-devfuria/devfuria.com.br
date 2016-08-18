@@ -1,8 +1,7 @@
 ---
-layout:      grid93-article
+layout:      php
 title:       PHP - Funcões
 description: Referência prática sobre Funcões - PHP
-menu:        php-refs
 ---
 
 ### O que são funções?
