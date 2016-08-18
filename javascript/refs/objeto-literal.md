@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       JavaScript  objeto literal
 description: Referência prática ao objeto literal
 menu:        javascript-refs

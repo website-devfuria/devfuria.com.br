@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o Python 3 (junto com o Python 2)
 description: Aprenda com esta receita como instalar o Python 3 sem afetar o Linux
 ---

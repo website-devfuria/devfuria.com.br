@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       JavaScript - getElementById()
 description: Referência prática da função getElementById()
 menu:        javascript-dom

@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Lógica de programação
 description: Tudo o que você precisa para aprender lógica de programação
 ---

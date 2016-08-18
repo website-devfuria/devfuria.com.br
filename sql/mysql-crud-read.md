@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       CRUD - R de read (select)
 description: Entenda o sql SELECT, para quem nunca viu SQL!
 menu:        mysql

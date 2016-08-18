@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       CRUD - U de update
 description: Entenda o sql UPDATE, para quem nunca viu SQL!
 menu:        mysql

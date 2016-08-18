@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Simples assert() com Node.js
 description: Descubra como fazer uma simples asserção  com o módulo assert() do Node.js (JavaScript)
 ---

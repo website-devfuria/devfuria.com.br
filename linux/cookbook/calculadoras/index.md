@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando calculadoras no Linux
 description: Aprenda como instalar as calculadores Speedcrunh e Gcalctool no Linux
 ---

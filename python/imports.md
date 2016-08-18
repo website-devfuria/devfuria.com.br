@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Importando módulos no Python (imports)
 description: Artigo que esclarece o funcionamento do comando imports da linguagem Python
 ---

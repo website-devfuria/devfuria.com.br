@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Python
 description: Aprenda a programar em Python de forma descomplicada.
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Fatorial (recursão)
 description: Faça um algoritmo que calcule o fatorial
 menu:        logica-exercicios

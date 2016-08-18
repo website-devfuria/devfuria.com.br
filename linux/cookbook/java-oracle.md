@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando conjunto de utilitários JDK (Java Development Kit) versão Oracle
 description: Aprenda a instalar JDK-8 (Java Development Kit) versão Oracle
 ---

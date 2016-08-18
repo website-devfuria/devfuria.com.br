@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Python, servindo páginas HTML com WSGI
 description: Neste artigo veremos como executar script Python utilizando o WSGI.
 ---

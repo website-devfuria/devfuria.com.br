@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Entenda o __name__ == "__main__"
 description: Este artigo é para quem está começando em Python e ainda não entendeu o funcionamento de __name__ == '__main__'
 ---

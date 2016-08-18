@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o Sublime no Linux
 description: Como instalar o Sublime no Linux
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o putty (acesso remoto)
 description: Descubra como instalar o putty (acesso remoto) no Linux
 ---

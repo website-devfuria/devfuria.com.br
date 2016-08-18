@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o rar no Fedora
 description: Aprenda como instalar o rar no Fedora
 ---

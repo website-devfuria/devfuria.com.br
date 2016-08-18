@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Introdução ao<br /> algoritmo de ordenação<br />Bubble Sort
 description: 
 menu:        logica-exercicios

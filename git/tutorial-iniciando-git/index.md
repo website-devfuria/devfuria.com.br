@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Tutorial para iniciar com  o Git e o GitHub
 description: Aprenda a trabalhar com Git e github, artigo introdutório bastante prático e que promete reduzir a curva de aprendizado da ferramenta.
 ---

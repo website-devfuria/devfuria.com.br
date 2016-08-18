@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       CRUD - D de delete
 description: Entenda o sql DELETE, para quem nunca viu SQL!
 menu:        mysql

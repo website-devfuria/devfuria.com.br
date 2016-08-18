@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Receitas para manipular arquivos de texto em Python
 description: 
 ---

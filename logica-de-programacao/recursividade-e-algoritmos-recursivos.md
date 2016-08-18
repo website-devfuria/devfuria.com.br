@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Recursividade e Algoritmos Recursivos
 description: Exemplos práticos de recursão em Python, C e JavaScript
 menu:        logica-exercicios

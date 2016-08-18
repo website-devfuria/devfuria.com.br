@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o sqlite no Linux
 description: Aprenda como instalar o banco de dados sqlite no Linux
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Backbone Views e Templates
 description: Artigo que demonstra o funcionamento dos templates nas views do framework Backbone para JavaScript
 menu:        javascript-backbone

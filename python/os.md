@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Python - os
 description: Neste artigo veremos o funcionamento do módulo python.os bem como as funções listdir(), exists(), isdir(), isfile()
 ---

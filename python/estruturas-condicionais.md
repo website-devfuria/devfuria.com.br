@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Python O básico sobre estrutura condicionais
 description: O básico sobre estrutura condicionais (Python)
 menu:        python-basico

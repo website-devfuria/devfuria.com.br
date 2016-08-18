@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Seletores CSS 
 description: 
 menu:        html-artigos-intro

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o wine
 description: Aprenda a instalar o wine no Linux
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Valor par ou ímpar
 description: Exercício de lógica de programação para descobrir se um número é par ou ímpar.
 menu:        logica-exercicios

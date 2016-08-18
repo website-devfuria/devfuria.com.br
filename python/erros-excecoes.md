@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Python - erros e exceções
 description: Entenda como trabalhar com erros e exceções em Python
 menu:        python-basico

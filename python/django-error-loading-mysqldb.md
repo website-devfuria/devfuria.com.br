@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       "Django Error loading MySQLdb module: No module named MySQLdb"
 description: Criando um projeto Django e configurando ele  para trabalhar com o MySql, ao rodar o servidor... Error loading MySQLdb module
 ---

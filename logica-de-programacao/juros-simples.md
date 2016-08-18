@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Juros simples
 description: Exercício de lógica de programação. Como calcular o juros simples ?.
 menu:        logica-exercicios

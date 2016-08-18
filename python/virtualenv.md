@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Virtualenv
 description: Matéria que mostra como dar os primeiros passos  com o Virtualenv um simulador de ambientes para Python
 ---

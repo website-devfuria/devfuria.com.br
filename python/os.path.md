@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Python - os.path
 description: Como funcionam as funções basename(), dirname() e os.path.abspath() do módulo os.path.
 ---

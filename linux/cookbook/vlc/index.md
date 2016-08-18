@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando VLC no CentOS
 description: Como instalar o player de audio e video VLCs no Linux
 ---

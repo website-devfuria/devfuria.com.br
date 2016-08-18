@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       O objeto window e  o espaço global em Javascript!
 description: Referência prática do objeto global - JavaScript
 menu:        javascript-refs

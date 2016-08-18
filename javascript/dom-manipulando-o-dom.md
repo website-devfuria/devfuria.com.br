@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Manipulando o DOM - Document Object Model
 description: Aprenda a manipular o elemento DOM Document Object Model
 menu:        javascript-dom

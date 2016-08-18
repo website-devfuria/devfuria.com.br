@@ -1,5 +1,4 @@
 ---
-layout: article
 title:  TDD (Test Driven Development)
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Canvas exemplo - retângulos randômicos coloridos
 description: Exemplo de canvas, Retângulos randômicos coloridos. 
 ---

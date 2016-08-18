@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Textbox (input type=text)
 description: Artigo a respeito do controle textbox (formulário web) - HTML e CSS
 menu:        html-forms

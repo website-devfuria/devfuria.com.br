@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       "'Rodando os testes'  ou 'compilando e executando',  socorro ?"
 description: Entendendo como o assert nos ajudará.
 ---

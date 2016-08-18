@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Utilitário de terminal cat (Linux)
 description: Rápido guia sobre o comando cat <br>muito utilizado no termial do Linux  que concatena e exibe arquivos
 ---

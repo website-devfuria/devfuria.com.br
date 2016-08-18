@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Primeiros passos com testes unitários em Python
 description: Se você precisa escrever teste de unidades em Python e não sabe por onde começar, este artigo é para você!
 ogimage:     img.png

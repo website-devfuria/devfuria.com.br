@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Os 3 estados do git
 description: "Aprenda sobre os 3 estados do git: Working Directory, Index e HEAD."
 ---

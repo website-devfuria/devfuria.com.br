@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Introdução ao  algoritmo de ordenação  Insertion Sort
 description:
 menu:        logica-exercicios

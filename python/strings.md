@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Python - O básico sobre string
 description: O básico sobre strings em Python
 menu:        python-basico

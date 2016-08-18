@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Code - A lâmpada
 description: Código em JavaScript que acende e apaga uma lâmpada 
 ---

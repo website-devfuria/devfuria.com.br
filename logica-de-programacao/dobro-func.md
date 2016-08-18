@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       O dobro de um número qualquer  (versão utilizando funções)
 description: Exercício de lógica de programação resolvido onde o objetivo é criar uma função para calcular o dobro de um número qualquer.
 menu:        logica-exercicios

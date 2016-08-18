@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Ponteiros
 description: Exercício de lógica  envolvendo ponteiros
 menu:        logica-exercicios

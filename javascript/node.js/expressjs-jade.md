@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Aprenda a integrar o Jade ao Express.js
 description: 
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Criando uma base de dados no MySQL
 description: Aprenda como criar base de dados com create databases; no MySQL.
 menu:        mysql

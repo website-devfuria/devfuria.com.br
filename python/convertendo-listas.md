@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Convertendo listas em strings
 description: Aprenda a converter listas em strings (Python)
 ---

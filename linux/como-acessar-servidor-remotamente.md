@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       SSH - acessando o Linux remotamente
 description: Como acessar o Linux remotamente e de forma segura
 ---

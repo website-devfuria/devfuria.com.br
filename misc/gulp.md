@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Gulp
 description: Rápida introdução a ferramenta de automação de tarefas Gulp (Node.js)
 ---

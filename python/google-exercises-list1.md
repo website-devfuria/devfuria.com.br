@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Lista de exercícios da Google list 1
 description: Exercício extraído da lista Google Python Exercise  onde trabalharemos com tuplas, .sort(), sorted() e fatimanto de sequencias.
 menu:        python-google

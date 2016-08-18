@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Python Flask Fazendo deploy com Apache
 description: Aprendar a configurar o servidor Apache  com a aplicação Flask (Python)
 ---

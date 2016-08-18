@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o samba no Fedora
 description: Como instalar o samba no Fedora
 ---

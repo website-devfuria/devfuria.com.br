@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       HTML & CSS - Listas 
 description: Aprenda comom criar e estilizar listas em HTML e CSS
 menu:        html-elementos  

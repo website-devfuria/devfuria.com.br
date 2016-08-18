@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Python - Expressões Regulares
 description: O básico sobre Expressões Regulares (regex) na linguagem Python
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Referência da linguagem  JavaScript
 description: Uma referência prática da linguagem JavaScript
 menu:        javascript-refs

@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Como era utilizado o Ajax no começo
 description: Este artigo apresenta a sintaxe de como era utilizado o objeto XMLHttpdRequest no início.
 ---

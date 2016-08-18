@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       "Backbone exemplo 04: Combobox"
 description: Exemplo de código do framework Backbone (JavaScript) que cria  uma combobox (o elemento select da HTML)
 menu:        javascript-backbone

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o Team Viewer no LInux
 description: Aprenda como instalar o Team Viewer no Linux
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Conversor Celsius/Fahrenheit
 description: Exercício de lógica de programação para converter celsius em fahrenheit e vice versa.
 menu:        logica-exercicios

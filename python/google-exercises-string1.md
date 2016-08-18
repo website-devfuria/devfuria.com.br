@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Lista de exercícios da Google strings 1
 description: Exercício extraído da lista Google Python Exercise  onde veremos o básico de funções e estrutura if
 menu:        python-google

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Qual é a versão do Ubuntu?
 description: Artigo que mostra como identificar  a versão do Ubuntu em modo texto  (pelo terminal)
 ---

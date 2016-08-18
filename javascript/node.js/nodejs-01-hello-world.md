@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Nodeschool - hello world
 description: Primeiro exercício (hello world) do Node.js da lista learnyounode da Nodeschool
 menu:        javascript-ns

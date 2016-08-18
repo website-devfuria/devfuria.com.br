@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       SQL - Structured Query Language
 description: Curso prático de SQL, aprenda a utilizar a SQL de forma descomplicada.
 ---

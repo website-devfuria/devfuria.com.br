@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       JavaScript
 description: Tudo o que você precisa saber sobre JavaScript a partir do zero
 ---

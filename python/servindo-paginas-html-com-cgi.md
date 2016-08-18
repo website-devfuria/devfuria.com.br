@@ -1,5 +1,4 @@
 ---
-layout:       grid12-article
 title:        Python, servindo páginas HTML com CGI
 description:  Neste artigo escreveremos alguns scripts CGI em Ptyhon e veremos eles funcionando, através do navegador, como páginas HTML
 ---

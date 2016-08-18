@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Introdução aos formulários web
 description: Este artigo é uma rápida introdução aos fomulários web, nele veremos como os formulários web funcionam e também um pequeno exemplo de estilização (CSS)
 ---

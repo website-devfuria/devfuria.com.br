@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Aprenda a utilizar Ajax com PHP e jQuery
 description: "Aprenda neste artigo a utilizar Ajax com PHP e jQuery,  também veremos os métodos curtos:  jQuery.post(), jQuery.get() e jQuery.getJSON()"
 ---

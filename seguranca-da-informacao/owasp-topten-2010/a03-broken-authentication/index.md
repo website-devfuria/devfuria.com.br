@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       A3 Broken Authentication and Session Management
 description: Artigo sobre a vulnerabilidade Quebra de Autenticação e da Gestão de Sessão, terceiro da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)

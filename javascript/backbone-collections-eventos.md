@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Backbone Collections e Eventos
 description: Este artigo demonstra como funcionam os eventos das collections do framework Backbone para JavaScript, veremos os eventos add, remove, sort e reset.
 menu:        javascript-backbone

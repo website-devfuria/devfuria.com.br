@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando Workbench & Utilities no Linux
 description: Aprenda como instalar o Workbench & Utilities no Linux
 ---

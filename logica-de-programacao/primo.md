@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Número primo
 description: Exercício de lógica de programação para descobrir se um número é primo.
 menu:        logica-exercicios

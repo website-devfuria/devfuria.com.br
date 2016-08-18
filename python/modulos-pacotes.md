@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Módulos e Pacotes em Python
 description: Artigo, com exemplo, ilustrando o funcionamento de módulos e pacotes em Python
 ---

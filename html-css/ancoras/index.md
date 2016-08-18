@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       HTML & CSS - Âncoras (links)
 description: Aprenda comom criar e estilizar links (âncoras) em HTML e CSS
 menu:        html-elementos 

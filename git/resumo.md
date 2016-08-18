@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Git - Resumo dos principais comandos
 description: 
 ---

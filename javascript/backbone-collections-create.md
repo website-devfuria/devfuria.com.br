@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Backbone Collections.create()
 description: 
 menu:        javascript-backbone

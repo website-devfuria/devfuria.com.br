@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Manipulando arquivos de texto em Python
 description: Aprenda a manipular (ler, escrever, adicionar, etc..)  arquivos de texto na linguagem Python
 ---

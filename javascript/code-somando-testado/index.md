@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Code - Somando (testado)
 description: Este artigo é um exemplo básico de como escrever testes de unidade em JavaScript utilizando o framework QUnit
 ---

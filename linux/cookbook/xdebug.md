@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o x-debug no Linux
 description: Como instalar x-debug no Linux.
 ---

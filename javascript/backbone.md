@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Framework Backbone (Javascript)
 description: Série de artigos (tutoriais) sobre o framework Backbone para JavaScript
 ---

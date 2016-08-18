@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Como gerar números aleatórios em Javascript
 description: Aprenda sobre a função Math.random() e como gerar um número randômico entre 0 e 1 entre outras receitas
 menu:        javascript-rando

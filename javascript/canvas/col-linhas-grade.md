@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Canvas exemplo - grid Lines
 description: Um exemplo grid line para Canvas, com ele é possível testar visualmente os desenhos em canvas.
 ---

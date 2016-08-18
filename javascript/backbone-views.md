@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Backbone Views
 description: Artigo para aprender como as  Views do framework Backbone (JavaScript) funcionam.
 menu:        javascript-backbone

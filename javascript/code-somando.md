@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Code - Somando
 description: Código em JavaScript que soma e subtrai um número.
 ---

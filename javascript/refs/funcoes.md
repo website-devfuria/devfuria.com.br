@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       JavaScript  funções
 description: Referência prática de funções
 menu:        javascript-refs

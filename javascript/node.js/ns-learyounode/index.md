@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Nodeschool - introdução ao learn you node
 description: Uma introdução ao aplicativo learyounode mantido pela Nodeschool
 ---

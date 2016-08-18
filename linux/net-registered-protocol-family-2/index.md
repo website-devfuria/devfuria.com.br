@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Resolvendo o erro "NET Registered protocol family 2" no Virtual Box
 description: Ao iniciar CentOS 5.6 no Virtual Box aparece o seguinte erro "NET Registered protocol family 2"
 menu:        linux-vbox

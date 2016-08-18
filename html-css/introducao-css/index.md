@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Introdução ao CSS
 description: Artigo introdutório sobre CSS - Cascading Style Sheet
 menu:        html-artigos-intro

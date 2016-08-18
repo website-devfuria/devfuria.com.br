@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Backbone Models
 description: Aprenda o básico sobre Models no framework Backbone para JavaScript,  veremos as funções get(), set() e toJSON().
 menu:        javascript-backbone

@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       JavaScript - Trabalhando com formulário web
 description: Sub seção que trata formulários web e JavaScript onde veremos artigos que ensinam como trabalhar com cada controle de um formulário web.
 ---

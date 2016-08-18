@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Canvas exemplo - linhas randômicas
 description: Exemplo de canvas, linhas coloridas e aleatórias que partem do centro do canvas. 
 ---

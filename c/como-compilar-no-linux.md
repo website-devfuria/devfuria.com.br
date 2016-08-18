@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Como compilar códigos  em C/C++ no Linux
 description: Compile códigos no terminal do Linux  linguagem C.
 ---

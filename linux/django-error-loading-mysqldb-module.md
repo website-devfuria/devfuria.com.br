@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       "Django, resolvendo o erro 'Error loading MySQLdb module: No module named MySQLdb'"
 description: "Aprenda a resolve o erro 'Error loading MySQLdb module' no Django"
 ---

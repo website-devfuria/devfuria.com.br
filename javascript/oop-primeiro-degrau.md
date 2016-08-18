@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       OOP - primeiro degrau
 description: Introduziremos conceito intuitivo de Programação Orientada a Objetos em JavaScript
 ---

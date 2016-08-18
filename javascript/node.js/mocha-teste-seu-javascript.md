@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Testando JavaScript com o Mocha
 description: Aprenda neste artigo como testar JavaScript com o Mocha
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       "Backbone exemplo 05:  Duas visões e uma função de callback"
 description: Exemplo de código Backbone (JavaScript) que cria uma combobox  utilizando-se duas visões e uma função de callback.
 menu:        javascript-backbone

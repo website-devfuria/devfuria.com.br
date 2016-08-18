@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Lista de exercícios da Google strings 2
 description: Exercício extraído da lista Google Python Exercise  onde veremos a função .find(), operador módulo (%) e fatiamento de sequencias
 menu:        python-google

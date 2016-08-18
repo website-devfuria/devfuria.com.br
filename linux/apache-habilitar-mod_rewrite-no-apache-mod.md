@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Habilitar mod_rewrite no Apache
 description: Aprenda como habilitar o módulo mod_rewrite no servidor Apache
 ---

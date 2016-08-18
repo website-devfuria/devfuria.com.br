@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando drivers nvidia no Ubuntu
 description: Como instalar drivers para placa de vídeo nvidia no Ubuntu
 ---

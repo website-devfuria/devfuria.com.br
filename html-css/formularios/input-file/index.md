@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Enviando arquivos (input type="file")
 description: Artigo a respeito do controle do tipo file (formulário web) - HTML e CSS
 menu:        html-forms

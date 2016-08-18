@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Programação Orientada a Objetos em Python
 description: Este artigo é um primeiro passo em direção a programação orientada a objetos através da linguagem Python
 ---

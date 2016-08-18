@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       "Linguagem C"
 description: O mínimo que você deve saber sobre a linguagem C
 ---

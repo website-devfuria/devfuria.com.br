@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       JavaScript  pattern.test()
 description: Referência prática da função test()
 menu:        javascript-regex

@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Opção global g  olhando vários resultados
 description: Referência prática sobre a opção global g (expressões regulares)
 menu:        javascript-regex

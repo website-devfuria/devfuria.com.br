@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Codificando caracteres no início do script Python
 description: As primeiras linhas de um script Python especificam explicitamente qual a codificação de caracteres utilizada em nosso script.
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Entenda a função assert()
 description: Aprenda como utilizar a função assert() na linguagem C
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Título
 description: Descrição
 ---

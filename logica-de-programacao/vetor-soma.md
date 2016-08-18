@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Função para somar vetor
 description: Exercício de lógica de programação. Criar função para somar vetor.
 menu:        logica-exercicios

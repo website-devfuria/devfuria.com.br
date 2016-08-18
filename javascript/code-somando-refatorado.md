@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Code - Somando (refatorado)
 ---
 

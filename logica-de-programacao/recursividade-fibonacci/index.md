@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Fibonacci (recursão)
 description: Faça um algoritmo que calcule<br ?>a sequencia de Fibonacci
 menu:        logica-exercicios

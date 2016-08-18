@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Explorando a minúscula biblioteca utils-merge (Node.js)
 description: O pacote utils-merge é uma biblioteca que possui apenas uma função e será objeto de estudos nesta matéria.
 ---

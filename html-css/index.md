@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       HTML & CSS
 description: Guia prático e conciso sobre HTML (HyperText Markup Language) e CSS (Cascading Style Sheet).
 ---

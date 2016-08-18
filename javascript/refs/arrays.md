@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       JavaScript  arrays
 description: Referência prática de arrays
 menu:        javascript-refs

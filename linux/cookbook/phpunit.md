@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Instalando o PHPUnit no Linux
 description: Como instalar o PHPUnit no Linux
 ---

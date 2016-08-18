@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       Node.js
 description: Aprenda Node.js
 ---

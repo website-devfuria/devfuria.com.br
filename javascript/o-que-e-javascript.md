@@ -1,5 +1,4 @@
 ---
-layout:      article
 title:       O que é JavaScript?
 description: 
 ---

@@ -1,5 +1,4 @@
 ---
-layout:      grid12-article
 title:       Aprenda a habilitar arquivos .htaccess no Apache
 description: Aprenda como habilitar a utilização de<br >arquivos .htaccess no servidor web Apache
 ---

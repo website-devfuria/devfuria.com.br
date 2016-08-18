@@ -1,5 +1,4 @@
 ---
-layout:      grid93-article
 title:       Função para gerar número randômico
 description: Função em JavaScript para gerar um número randômico entre 2 números quaisquer
 menu:        javascript-rando
