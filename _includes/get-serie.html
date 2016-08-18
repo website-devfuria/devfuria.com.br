@@ -5,3 +5,5 @@
         {% assign serie = serie | push: page %}
     {% endif %}
 {% endfor %}
+
+{% assign serie = serie | sort: 'ordem' %}

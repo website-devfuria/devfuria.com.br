@@ -3,6 +3,7 @@ layout:      php-serie
 title:       Manipulando radio button com PHP
 description: 'Veremos como enviar e receber dados através do controle radio button (input type="radio")'
 serie:       Formularios Web
+ordem:       6
 ---
 
 Radio buttons são controles de opção.
