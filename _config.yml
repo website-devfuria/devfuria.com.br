@@ -14,20 +14,20 @@ gems:
   - jekyll-sitemap
 
 # Para atualizar mais rápido...
-#exclude: 
-#    - javascript
-#    - php
-#    - python
-#    - logica-de-programacao
-#    - html-css
-#    - sql
+exclude: 
+    - javascript
+    - php
+    - python
+    - logica-de-programacao
+    - html-css
+    - sql
 #    - misc
-#    - regex
-#    - tdd
-#    - git
-#    - c
-#    - seguranca-da-informacao
-#    - linux
+    - regex
+    - tdd
+    - git
+    - c
+    - seguranca-da-informacao
+    - linux
 
 
 defaults:
