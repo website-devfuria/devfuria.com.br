@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
+layout:      php-serie
 title:       Manipulando checkboxes com PHP
 description: "Veremos como enviar e receber dados através do controle checkbox (input type='check')"
-menu:        php-forms
+serie:       Formularios Web
 ---
 
 Checkboxes são controles "booleanos" (modo de dizer), eles ou estão ligados (true) ou estão desligados (false).

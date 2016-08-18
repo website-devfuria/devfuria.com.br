@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
+layout:      php-serie
 title:       Manipulando listbox com PHP
 description: Veremos como enviar e receber dados através do controle select multiple
-menu:        php-forms
+serie:       Formularios Web
 ---
 
 Ao adicionar-mos a propriedade `multiple` ao controle `select` obtemos uma caixa de seleção de multipla escolha.

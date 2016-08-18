@@ -1,8 +1,8 @@
 ---
-layout:      grid93-article
+layout:      php-serie
 title:       Manipulando radio button com PHP
 description: 'Veremos como enviar e receber dados através do controle radio button (input type="radio")'
-menu:        php-forms
+serie:       Formularios Web
 ---
 
 Radio buttons são controles de opção.
