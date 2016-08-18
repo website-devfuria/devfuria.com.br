@@ -38,6 +38,13 @@ defaults:
       layout: "default"
   -
     scope:
+      path: "javascript"
+    values:
+      category:
+        label: "JavaScript"
+        url:   "/javascript"
+  -
+    scope:
       path: "php"
     values:
       category:
@@ -45,8 +52,78 @@ defaults:
         url:   "/php"
   -
     scope:
+      path: "python"
+    values:
+      category:
+        label: "Python"
+        url:   "/python"
+  -
+    scope:
+      path: "javascript/node.js"
+    values:
+      category:
+        label: "Node.js"
+        url:   "/javascript/node.js"
+  -
+    scope:
+      path: "javascript/backbone"
+    values:
+      category:
+        label: "Framework Backbone (Javascript)"
+        url:   "/javascript/backbone"
+  -
+    scope:
+      path: "javascript/canvas"
+    values:
+      category:
+        label: "Canvas"
+        url:   "/javascript/canvas"
+  -
+    scope:
+      path: "logica-de-programacao"
+    values:
+      category:
+        label: "Lógica de programação"
+        url:   "/logica-de-programacao"
+  -
+    scope:
+      path: "html-css"
+    values:
+      category:
+        label: "HTML & CSS"
+        url:   "/html-css"
+  -
+    scope:
+      path: "sql"
+    values:
+      category:
+        label: "SQL - Structured Query Language"
+        url:   "/sql"
+  -
+    scope:
+      path: "misc"
+    values:
+      category:
+        label: "Miscellaneous"
+        url:   "/misc"
+  -
+    scope:
       path: "regex"
     values:
       category:
         label: "Expressões Regulares"
         url:   "/regex"
+  -
+    scope:
+      path: "seguranca-da-informacao"
+    values:
+      category:
+        label: "Segurança da Informação"
+        url:   "/seguranca-da-informacao"
+  -
+    scope:
+      path: "linux"
+    values:
+      category:
+        label: "Linux"
+        url:   "/linux"
