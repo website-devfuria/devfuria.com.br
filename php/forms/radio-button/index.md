@@ -2,7 +2,7 @@
 layout:      php-serie
 title:       Manipulando radio button com PHP
 description: 'Veremos como enviar e receber dados através do controle radio button (input type="radio")'
-serie:       Formularios Web
+serie:       Formulários Web
 ordem:       6
 ---
 

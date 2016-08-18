@@ -78,7 +78,7 @@ Leia mais sobre [Twig](/php/twig/).
 
 Aprenda a trabalhar com cada controle de um [formulário web](/php/forms/).
 
-{% include get-serie.html page_serie="Formularios Web" %} 
+{% include get-serie.html page_serie="Formulários Web" %} 
 {% include menus.html %} 
 
 

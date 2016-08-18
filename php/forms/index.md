@@ -2,7 +2,7 @@
 layout:      php-serie
 title:       PHP - Trabalhando com formulário web
 description: Um sub seção que trata formulários web e PHP
-serie:       Formularios Web
+serie:       Formulários Web
 ordem:       1
 ---
 

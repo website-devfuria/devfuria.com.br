@@ -2,7 +2,7 @@
 layout:      php-serie
 title:       Manipulando os controles text, password e textarea
 description: Veremos como enviar e receber dados através dos controles input text, password e textarea
-serie:       Formularios Web
+serie:       Formulários Web
 ordem:       4
 ---
 
