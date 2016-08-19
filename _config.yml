@@ -1,7 +1,10 @@
+title: Desenvolvimento web
+url:   http://www.devfuria.com.br
+
 #
 # Configurações
 #
-enable_disqus:    true
+enable_disqus:    false
 enable_analytics: false
 
 # Antes era com kramdown
@@ -9,7 +12,7 @@ enable_analytics: false
 markdown:    redcarpet
 highlighter: pygments
 permalink:   pretty
-exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
+#exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
 gems:
   - jekyll-sitemap
 
@@ -21,7 +24,7 @@ exclude:
     - logica-de-programacao
     - html-css
     - sql
-#    - misc
+    - misc
     - regex
     - tdd
     - git
