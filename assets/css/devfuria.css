@@ -10,10 +10,10 @@
     padding-top: 120px;
 }
 
-/* Desktop ??? */
+/* Tablests ??? */
 @media (min-width: 768px) {
     .intro {
-        padding: 0 20em;
+        padding: 0 2em;
     }
     .start {
         padding: 0 10em;
@@ -23,6 +23,12 @@
     }
     .start {
         font-size: 1.85em;
+    }
+}
+/* Desktop ??? */
+@media (min-width: 1024px) {
+    .intro {
+        padding: 0 20em;
     }
 }
 
