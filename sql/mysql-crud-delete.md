@@ -1,7 +1,7 @@
 ---
-layout:      materia-sql
-title:       CRUD - D de delete, é o nosso delete!
+title:       CRUD - D de delete
 description: Entenda o sql DELETE, para quem nunca viu SQL!
+menu:        mysql
 ---
 
 Esta matéria é indicada para quem está começando a aprender os comandos básicos de SQL. Ela faz parte de uma sequência, se
@@ -33,4 +33,4 @@ Antes de deletar um registro talvez você queira executar um `select` para saber
 
 E após a exclusão, talvez você queira executar novamente o `select` para ter certeza de que o registro foi excluído.
 
-Pata tal, utilizamos a instrução `select` já visto em matérias anteriores ([CRUD - R de read, é o nosso select!](../mysql-crud-read/)).
+Pata tal, utilizamos a instrução [select](/sql/mysql-crud-read/) já visto em matérias anteriores.

@@ -1,7 +1,7 @@
 ---
-layout:      materia
 title:       Compartilhando pastas no Virtual Box
-description: 
+description: Aprenda como compartilhar pastas no Virtual Box
+menu:        linux-vbox
 ---
 
 Após instalado o __Virtual Box__ uma das primeira necessidades costuma ser compartilhar pastas entre sua máquina host
@@ -66,14 +66,3 @@ Ao prescionar o __enter__ não deve ser exibida nenhuma mensagem, isso significa
 Abra o __Nautilus__ (gerenciador de arquivo do Linux) e navegue até a pasta `home/seu-usuario/foo`.
 
 Você já deve estar enxergando os arquivos.
-
-
-Veja também
----
-
-- [Como instalar o GuestAdditions (CentOS)](/linux/vbox-guest-additions/ "Como instalar o GuestAdditions via console (CentOS)")
-    
-
-
-
-

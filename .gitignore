@@ -1,3 +1,4 @@
 _site
 /nbproject/
 *.run
+*.pdf

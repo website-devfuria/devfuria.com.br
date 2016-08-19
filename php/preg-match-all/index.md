@@ -1,13 +1,13 @@
 ---
-layout:      materia
 title:       Referência da função preg_match_all()
 description: Uma referência prática da função preg match all
+serie:       PHP e Expressão Regular
 ---
 
 
-{% highlight php %}
+```php
 $resultado = preg_match_all($pattern, $subject, $matches, $flags, $offset);
-{% endhighlight %}
+```
 
 Explicando...
 
@@ -22,7 +22,7 @@ Fonte: Gilmore (Dominando PHP e MYSQL, pag. 164)
 
 ### Protótipo da função
 
-{% highlight php %}
+```php
 int preg_match_all (
                 string $pattern,
                 string $subject
@@ -30,7 +30,7 @@ int preg_match_all (
                 [, int $flags = PREG_PATTERN_ORDER
                 [, int $offset = 0 ]]]
             )
-{% endhighlight %}
+```
 
 
 ### Parâmetros
@@ -84,13 +84,13 @@ Quando a flag é `PREG_PATTERN_ORDER` temos o seguinte quadro:
 
 Exemplo:
 
-{% highlight php %}
+```php
 <?php
 $pattern = "|<[^>]+>(.*)]+>|U";
 $subject = "<b>example: </b><div align=left>this is a test</div>";
 preg_match_all($pattern, $subject, $matches, PREG_PATTERN_ORDER);
 var_dump($matches);
-{% endhighlight %}
+```
 
 ![Figura com o resultado de preg-pattern-order](php-preg-pattern-order.png "preg-pattern-order")
 
@@ -100,21 +100,17 @@ Quando a flag é `PREG_SET_ORDER` temos o seguinte quadro:
 
 `$matches[1]` será um array com elementos relacionados pela segunda expressão regular entre parênteses.
 
-{% highlight php %}
+```php
 <?php
 $pattern = "|<[^>]+>(.*)]+>|U";
 $subject = "<b>example: </b><div align=left>this is a test</div>";
 preg_match_all($pattern, $subject, $matches, PREG_SET_ORDER);
 var_dump($matches);
-{% endhighlight %}
+```
 
 ![Figura com o resultado de preg-set-order](php-preg-set-order.png "preg-set-order")
 
 <hr>
-Fonte: [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php "link-externo")
+Fonte 
 
-
-Veja também
----
-
-- [O básico sobre a função preg match all](/php/preg-match-all-basico/ "O básico sobre a função preg match all")
+- [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php "link-externo")

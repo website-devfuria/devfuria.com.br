@@ -1,5 +1,4 @@
 ---
-layout:      materia
 title:       Linux
 description: Tudo o que você precisa saber sobre o Linux!
 ---
@@ -11,77 +10,73 @@ Se você nunca utilizou o Linux e está precisando de um empurrão veja a matér
 
 
 
-Cookbook - receitas de instalação de softwares no Linux
----
+### Cookbook - receitas de instalação de softwares no Linux
 
 Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o pessoal iniciante.
 
-Aqui, mantenho um [guia prático de instalações de aplicativos para Linux](index-receitas-instalacoes). veja os mais acessados
+Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, veja como instalar...
 
 <div class="list-group">
-    <a href="/linux/instalando-django/" class="list-group-item">Instalando o Django (python)</a>
-    <a href="/linux/instalando-pip/" class="list-group-item">Instalando o pip (gerenciados de pacotes do python)</a>
-    <a href="/linux/instalando-git/" class="list-group-item">Instalando o git</a>
-    <a href="/linux/instalando-nodejs/" class="list-group-item">Instalando o nodejs</a>
-    <a href="/linux/instalando-npm/" class="list-group-item">Instalando o npm</a>
-    <a href="/linux/instalando-java/" class="list-group-item">Instalando o Java (jdk)</a>
-    <a href="/linux/instalando-ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
+    <a href="/linux/cookbook/python/" class="list-group-item">Instalando o Python 3</a>
+    <a href="/linux/cookbook/django/" class="list-group-item">Instalando o Django (python)</a>
+    <a href="/linux/cookbook/pip/" class="list-group-item">Instalando o pip (gerenciador de pacotes do python)</a>
+    <a href="/linux/cookbook/git/" class="list-group-item">Instalando o git</a>
+    <a href="/linux/cookbook/nodejs/" class="list-group-item">Instalando o nodejs</a>
+    <a href="/linux/cookbook/npm/" class="list-group-item">Instalando o npm</a>
+    <a href="/linux/cookbook/java/" class="list-group-item">Instalando o Java (jdk)</a>
+    <a href="/linux/cookbook/ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
+Veja mais [receitas de instalação](/linux/cookbook/).
 
 
-Know how to - pequeno guia de "saber como fazer"
----
+### Artigos
 
 <div class="list-group">
+    <a href="/linux/utilitario-cat/" class="list-group-item">Utilitário de terminal cat (Linux)</a>
+    <a href="/linux/apache-habilitar-mod_rewrite-no-apache-mod/" class="list-group-item">Como habilitar mod_rewrite no Apache</a>
+    <a href="/linux/apache-habilitar-htaccess/" class="list-group-item">Como habilitar arquivos .htaccess no Apache</a>
+    <a href="/linux/apache-como-reiniciar-servidor-apache/" class="list-group-item">Como reiniciar o servidor Apache</a>
+    <a href="/linux/qual-a-versao-do-ubuntu/" class="list-group-item">Qual é a versão do Ubuntu?</a>
+    <a href="/linux/mysql-error-cant-connect-to-local-mysql-server-through-socket/" class="list-group-item">MySQL, resolvendo o erro 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)</a>
+    <a href="/linux/django-error-loading-mysqldb-module/" class="list-group-item">Django, resolvendo o erro: Error loading MySQLdb module: No module named MySQLdb</a>
+    <a href="/linux/como-desabilitar-selinux/" class="list-group-item">Como desabilitar SElinux0 (Fedora e CentOS)</a>
+    <a href="/linux/como-dar-permissao-de-execucao/" class="list-group-item">Como dar permissão de execução em um arquivo no Linux</a>
     <a href="/linux/como-acessar-servidor-remotamente/" class="list-group-item">SSH - acessando o Linux remotamente</a>
-    <a href="/linux/vbox-guest-additions/" class="list-group-item">Como instalar o GuestAdditions (CentOS)</a>
-    <a href="/linux/vbox-compartilhando-pastas/" class="list-group-item">Compartilhando pastas no Virtual Box</a>
     <a href="/linux/gnome-screenshot/" class="list-group-item">Como tirar um screenshot (CentOS)</a>
     <a href="/linux/como-saber-qual-versao-do-linux-esta-instalada/" class="list-group-item">Como saber qual versão do Linux está instalada</a>
     <a href="/linux/redirecionar-a-saida-do-terminal-para-arquivo/" class="list-group-item">Como redirecionar as saida do terminal (mysql) para um arquivo</a>
-    <!--<a href="" class="list-group-item"></a>-->
-</div> 
-
-
-What is this - para esclarecer dúvidas frequentes
----
-
-<div class="list-group">
     <a href="/linux/imagem-cd-iso/" class="list-group-item">O que é uma "imagem de CD"?</a>
-    <!--<a href="" class="list-group-item"></a>-->
-</div> 
-
-
-Error - Resolvendo erros e problemas
----
-
-<div class="list-group">
     <a href="/linux/problemas-instalacao-debian-7-5/" class="list-group-item">Problemas na instalação do Debian 7.5 (netinst)</a>
-    <a href="/linux/vbox-building-the-opengl-support-module/" class="list-group-item">Resolvendo o erro "Building the OpenGL support module"</a>
-    <a href="/linux/vbox-headers-for-the-current-running-kernel-were-not-found/" class="list-group-item">Resolvendo o erro "headers for the current running kernel were not found"</a>
-    <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
 
 
-Livros sobre Linux - para iniciantes
----
+### Série sobre o Virtual Box
+
+{% include /menus/linux-vbox.html %}
+
+
+### Livros sobre Linux - para iniciantes
+
+ - __Dominando o Linux__ livro online disponílvel em [www.hardware.com.br/livros/dominando-linux/](http://www.hardware.com.br/livros/dominando-linux/ "link-externo")
+<br /> ![Figura da capa do livro 'Linux, um guia prático'](livro-entendendo-dominando-linux-morimoto.jpg "linux")
+
+ - __Linux guia prático__ - Excelente! Outro livro na qual o Morimoto deu um show. O legal é que ele trás uma visão 
+panorâmica ao mesmo tempo que mantém uma riqueza de detalhes. Eu comprei o livro impresso por $70 pilas mas é possível
+ler o livro (gratuitamente) no site do morimoto: [www.hardware.com.br/livros/linux/](http://www.hardware.com.br/livros/linux/ "link-externo").
+<br /> ![Figura da capa do livro 'Linux, guia prático'](linux-guia-pratico-morimoto.jpg "linux")
 
  - __Linux um guia prático de comando, editores e programação de Shell__ - Recomendadíssimo. Ótimo livro, conteúdo de uma qualidade impressionante. Ele é passo a passo
 e não te deixa na mão, nem tem aquelas explicações vagas e subjetivas. Paguei $105 pilas por 600 páginas da conteúdo + 300
 páginas de referência. Valeu cada centavo.
-<br/> ![Figura da capa do livro 'Linux, um guia prático'](livro-linux-guia-pratico.jpeg "linux")
-
- - __Linux guia prático__ - Excelente. O Morimoto é mestre no assunto e deu um show neste livro. O legal é que ele trás 
-uma visão panorâmica ao mesmo tempo que mantém uma riqueza de detalhes. Eu comprei o livro impresso por $70 pilas mas é possível
-ler o livro (gratuitamente) no site do morimoto: [www.hardware.com.br/livros/linux/](http://www.hardware.com.br/livros/linux/ "link-externo").
-<br/> ![Figura da capa do livro 'Linux, guia prático'](linux-guia-pratico-morimoto.jpg "linux")
+<br /> ![Figura da capa do livro 'Linux, um guia prático'](livro-linux-guia-pratico.jpeg "linux")
 
 
-Comunidade
----
+
+
+### Comunidade
 
 Alguns lugares interessantes para pesquisar.
 

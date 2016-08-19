@@ -1,7 +1,7 @@
 ---
-layout:     materia
-title:      Canvas - Tamanho das linhas  (lineWidth)
+title:       Canvas - Tamanho das linhas  (lineWidth)
 description: Descubra como alterar o comprimento (width) das linhas em Canvas
+menu:        javascript-canvas
 ---
 
 
@@ -26,7 +26,7 @@ Vejamos um exemplo.
 
 <p><img src="canvas1.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 
@@ -34,7 +34,7 @@ context.moveTo(60, 60);
 context.lineTo(240, 60);
 context.lineWidth = 2;
 context.stroke();
-{% endhighlight %}
+```
 
 
 
@@ -48,7 +48,7 @@ Quando omitimos a propriedade, prevalecerá o tamanho padrão 1px.
 
 <p><img src="canvas2.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
 
@@ -62,7 +62,7 @@ context.moveTo(60, 60);
 context.lineTo(200, 60);
 context.lineWidth = 1;
 context.stroke();
-{% endhighlight %}
+```
 
 
 
@@ -78,7 +78,7 @@ Repare também que há um degradê na linha.
 <p><img src="canvas3.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 
@@ -105,11 +105,16 @@ context.moveTo(60, 80);
 context.lineTo(200, 80);
 context.lineWidth = 1;
 context.stroke();
-{% endhighlight %}
+```
 
 
-
-<hr>
-Fonte:
+### Fonte
 
 - [whatwg](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#dom-context-2d-linewidth "link-externo")
+
+
+
+Próxima matéria
+---
+
+[Canvas - Junção das linhas (lineJoin)](/javascript/canvas/linejoin-miter-round-bevel/)

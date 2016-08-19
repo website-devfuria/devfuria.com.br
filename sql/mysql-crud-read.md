@@ -1,7 +1,7 @@
 ---
-layout:      materia-sql
-title:       CRUD - R de read, é o nosso select!
+title:       CRUD - R de read (select)
 description: Entenda o sql SELECT, para quem nunca viu SQL!
+menu:        mysql
 ---
 
 Esta matéria é indicada para quem está começando a aprender os comandos básicos de SQL. Ela faz parte de uma sequência, se
@@ -101,4 +101,4 @@ condições (expressões).
 
 Depois de inserido o registro, talvez queiramos alterar/atualizar os dados.
 
-Utilizamos a instrução `update` que é assunto do próximo tópico [CRUD - U de update, é  o nosso update!](../mysql-crud-update/).
+Utilizamos a instrução `update` que é assunto do próximo tópico [CRUD - U de update](../mysql-crud-update/).

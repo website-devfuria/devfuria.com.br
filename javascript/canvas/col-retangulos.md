@@ -1,5 +1,4 @@
 ---
-layout:      materia
 title:       Canvas exemplo - retângulos randômicos coloridos
 description: Exemplo de canvas, Retângulos randômicos coloridos. 
 ---
@@ -55,7 +54,7 @@ description: Exemplo de canvas, Retângulos randômicos coloridos.
 
 __Linhas coloridas e aleatórias que partem do centro do canvas.__
 
-[Fork me on GitHub](https://github.com/devfuria/canvas/tree/master/linhas-rando-coloridas "link-externo") (O código fonte você também encontrará depois da seção "codando")
+[Fork me on GitHub](https://github.com/devfuria/canvas-exemplos/tree/master/linhas-rando-coloridas "link-externo") (O código fonte você também encontrará depois da seção "codando")
 
 Este canvas é um exercício para mim e para os leitores do devfuria.
 
@@ -68,7 +67,7 @@ Boa leitura!
 Código fonte
 ---
 
-{% highlight javascript %}
+```javascript
 /**
  * Objeto com as coordenadas
  */
@@ -112,4 +111,4 @@ function draw(coor) {
 setInterval(function() {
     draw(coor);
 }, 500);
-{% endhighlight %}
+```

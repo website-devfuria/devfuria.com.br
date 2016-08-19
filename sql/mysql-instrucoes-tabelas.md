@@ -1,7 +1,7 @@
 ---
-layout:      materia-sql
 title:       Instruções úteis para manipular tabelas no MySQL
 description: Instruções SQL para manipular tabelas no MySQL .
+menu:        mysql
 ---
 
 ### DESCRIBE
@@ -39,4 +39,7 @@ Truncar a tabela significa limpar todos os dados da tabela e zerar o os dados de
     TRUNCATE TABLE pet;
 
 Por enquanto, vamos utilizar quando quisermos apagar todos os dados.
+
+Continuando a sequência, agora aprenderemos como efetuar as [operações básicas (crud)](/sql/mysql-crud) `create`, `read`,
+`update` e `delete`.
 

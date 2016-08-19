@@ -1,7 +1,7 @@
 ---
-layout:      materia
-title:       JavaScript - operador ternário condicional
-description: Referência prática do operador ternário condicional - JavaScript
+title:       JavaScript  operador ternário condicional
+description: Referência prática do operador ternário condicional
+menu:        javascript-refs
 ---
 
 O operador condicional ternário é um atalho para o condicional `if`.
@@ -16,39 +16,39 @@ O operador condicional é o único operador ternário de JavaScript.
 
 ### Exemplo 1
 
-{% highlight javascript %}
+```javascript
 var isMenber = false;
 var fee = isMenber ? "$2.00" : "$10.00";
 console.log(fee);
 // $10.00
-{% endhighlight %}
+```
 
 
 ### Exemplo 2
 
 
-{% highlight javascript %}
+```javascript
 isMenber = false;
 "The fee is " + (isMenber ? "$2.00" : "$10.00")
 // The fee is $10.00
-{% endhighlight %}
+```
 
 
 ### Exemplo 3
 
-{% highlight javascript %}
+```javascript
 resultado = (a > b) ? "a é maior que b" : "b é maior que a";
-{% endhighlight %}
+```
 
 O código acima é equivalente ao de baixo:
 
-{% highlight javascript %}
+```javascript
 if (a > b) {
     resultado = "a é maior que b";
 } else {
     resultado = "b é maior que a";
 }
-{% endhighlight %}
+```
 
 
 

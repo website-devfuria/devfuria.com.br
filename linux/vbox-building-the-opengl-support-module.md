@@ -1,7 +1,7 @@
 ---
-layout: materia
-title:  Resolvendo o erro "Building the OpenGL support module"
+title:       Resolvendo o erro "Building the OpenGL support module"
 description: Matéria que ajuda a resolver erros na instalação do virtualbox
+menu:        linux-vbox
 ---
 
 
@@ -26,10 +26,3 @@ Agora é só criar os links:
 
 
 Agora tente reinstalar o __GuestAdditions__.
-
-
-Veja também
----
-
-- [Resolvendo o erro "headers for the current running kernel were not found"](/linux/vbox-headers-for-the-current-running-kernel-were-not-found/ "Resolvendo o erro 'headers for the current running kernel were not found'")
-- [Como instalar o GuestAdditions (CentOS)](/linux/vbox-guest-additions/ "Como instalar o GuestAdditions via console (CentOS)")

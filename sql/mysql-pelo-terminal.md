@@ -1,7 +1,7 @@
 ---
-layout:      materia-sql
-title:       Acessando o MySQL via console (terminal)
-description: Aprenda a acesar o MySQL via terminal no Linux.
+title:       Acessando o MySQL  via console (terminal)
+description: mysql -h localhost -u root -p  Para entender o comando acima leia o artigo abaixo.
+menu:        mysql
 ---
 
 
@@ -24,7 +24,7 @@ Mas se digitar apenas isso receberemos a seguinte mensagem:
 Bom começarmos com um erro, pois dessa forma você irá se habituando a “encarar” essas mensagens ao invés de ignorá-las
 (atitude comum de quem está iniciando).
 
-O que podemos descobrir com a menssagem? Olhe para ela atentamente e absorva todos os detalhes.
+O que podemos descobrir com a mensagem? Olhe para ela atentamente e absorva todos os detalhes.
 
 1. Primeiro sabemos o número do erro o que nos ajudará a fazer uma possível pesquisa na web e ter a certeza de que 
 estamos tratando do mesmo erro.

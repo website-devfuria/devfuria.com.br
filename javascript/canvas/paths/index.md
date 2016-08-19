@@ -1,11 +1,10 @@
 ---
-layout:     materia
-title:      Canvas - Paths (caminhos)
-description: Descubrindo os caminhos (paths) do Canvas.
+title:       Canvas - Paths (caminhos)
+description: Descobrindo os caminhos (paths) do Canvas (HTML5).
+menu:        javascript-canvas
 ---
 
-
-Cada objeto que implementa a interface __CanvasPathMethods__ possue um path (caminho).
+Cada objeto que implementa a interface __CanvasPathMethods__ possui um path (caminho).
 
 São eles:
     
@@ -21,7 +20,8 @@ São eles:
 
 Um path (caminho) tem uma lista de zero ou mais subpaths (subcaminhos).
 
-Cada subpath consiste de uma lista de um ou mais pontos, ligados por segmentos de linhas retas ou curvas, e um sinalizador que indica se o subpath está fechado ou não.
+Cada subpath consiste de uma lista de um ou mais pontos, ligados por segmentos de linhas retas ou curvas, e um sinalizador 
+que indica se o subpath está fechado ou não.
 
 
 
@@ -64,7 +64,7 @@ Ele pintou a linha até o ponto inicial (`beginPath`) que era `x=30` e `y=120`.
 
 <p><img src="canvas1.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 
@@ -74,13 +74,13 @@ context.lineTo(45, 90);  // traçamos uma diagonal até x=45 e y=90 (canto super
 context.lineTo(60, 120); // diagonal até x=60 e y=120 (canto direito)
 context.closePath();     // fecha o caminho (traça uma reta até x=30 e y=120 - beginPath)
 context.stroke();        // pinta o caminho
-{% endhighlight %}
+```
 
 
 ### Importante
 
-- Sem o `beginPath()`, o `closePath()` incrivelmente funciona. Pelo menos neste caso simples.
-- A ordem é importante, se o objetivo é fechar o caminho então `closePath()` deve vir sempre antes de `stroke()`
+- Sem o `beginPath()` o `closePath()`, incrivelmente, funciona. Pelo menos neste caso simples.
+- A ordem é importante, se o objetivo é fechar o caminho, então `closePath()` deve vir sempre antes de `stroke()`
 
 
 
@@ -97,7 +97,7 @@ Novamente, o método `closePath()` completa nosso triângulo.
 
 <p><img src="canvas2.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
 
@@ -107,7 +107,7 @@ context.lineTo(100,75);
 context.lineTo(100,25);
 context.closePath();
 context.stroke();
-{% endhighlight %}
+```
 
 
 
@@ -124,7 +124,7 @@ O método `fill()` desenha a última reta e preenche o triângulo.
 
 <p><img src="canvas3.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 
@@ -133,7 +133,7 @@ context.moveTo(30, 30);
 context.lineTo(90, 30);
 context.lineTo(30, 90);
 context.fill();
-{% endhighlight %}
+```
 
 
 ### Importante
@@ -151,7 +151,7 @@ Mas não pude deixar de mostrar o exemplo.
 
 <p><img src="canvas4.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex04');
 var context = canvas.getContext('2d');
 
@@ -160,7 +160,7 @@ context.moveTo(10, 10);
 context.lineTo(90, 90);
 context.bezierCurveTo(30, 30, 30, 60, 60, 150);
 context.fill();
-{% endhighlight %}
+```
 
 
 
@@ -171,7 +171,7 @@ Quanto será que o path influencia nosso paint? Muito, compare os exemplos abaix
 
 <p><img src="canvas5.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex05');
 var context = canvas.getContext('2d');
 
@@ -194,7 +194,7 @@ context.beginPath();
 context.moveTo(60, 120);
 context.lineTo(240, 120);
 context.stroke();
-{% endhighlight %}
+```
 
 No código acima, todas as linhas estão no tom cinza.
 
@@ -202,7 +202,7 @@ Já o debaixo, apenas a última linha está com tom cinza.
 
 <p><img src="canvas6.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex06');
 var context = canvas.getContext('2d');
 
@@ -225,7 +225,7 @@ context.stroke();
 context.moveTo(60, 120);
 context.lineTo(240, 120);
 context.stroke();
-{% endhighlight %}
+```
 
 
 Repare que no segundo exemplo o `beginPath()` foi comentado (anulado).
@@ -248,5 +248,13 @@ ou...
 
 Que o `beginPath()` seguido de outro `beginPath()` funciona também como `closePath()`?
 
-<hr>
-Fonte: [WHATWG - concept-path](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#concept-path "link-externo")
+
+### Fonte
+
+- [WHATWG - concept-path](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#concept-path "link-externo")
+
+
+Próxima matéria
+---
+
+[Canvas - Desenhando retângulos (strokeRect, fillRect, clearRect e rect)](/javascript/canvas/rect-strokerect-fillrect/)

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        {% include head.html %}
+        <style type="text/css">
+            h3 {
+                margin-top: 10px;
+                font-weight: normal;
+            }
+            .btn {
+                margin-bottom: 3px;
+                width: 90%;
+            }
+            @media (min-width:  700px) {
+                .btn {
+                    width: 40%;
+                }
+            }
+            @media (min-width:  992px) {
+                .btn {
+                    width: 21%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        {{ content }}
+    </body>
+    {% include footer-js.html %}
+    <script src="/assets/js/imagesloaded.pkgd.js"></script>
+</html>

@@ -1,18 +1,150 @@
-# Site settings
-title: www.devfuria.com.br
-email: feedback@devfuria.com.br
-description: "Site de desenvolvimento web"
+#
+# Configurações
+#
+enable_disqus:    true
+enable_analytics: false
 
-# Build settings
-markdown: kramdown
-permalink: pretty
-exclude: [linux, logica-de-programacao, git, javascript, php, seguranca-da-informacao, python, sql, html-css, regex]
+# Antes era com kramdown
+# markdown:    kramdown
+markdown:    redcarpet
+highlighter: pygments
+permalink:   pretty
+exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
+gems:
+  - jekyll-sitemap
 
-host: 0.0.0.0
-port: 4000
-url: http://www.devfuria.com.br
+# Para atualizar mais rápido...
+#exclude: 
+#    - javascript
+#    - php
+#    - python
+#    - logica-de-programacao
+#    - html-css
+#    - sql
+#    - misc
+#    - regex
+#    - tdd
+#    - git
+#    - c
+#    - seguranca-da-informacao
+#    - linux
 
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/foo.html"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "javascript"
+    values:
+      category:
+        label: "JavaScript"
+        url:   "/javascript"
+  -
+    scope:
+      path: "php"
+    values:
+      category:
+        label: "PHP"
+        url:   "/php"
+  -
+    scope:
+      path: "python"
+    values:
+      category:
+        label: "Python"
+        url:   "/python"
+  -
+    scope:
+      path: "javascript/node.js"
+    values:
+      category:
+        label: "Node.js"
+        url:   "/javascript/node.js"
+  -
+    scope:
+      path: "javascript/backbone"
+    values:
+      category:
+        label: "Framework Backbone (Javascript)"
+        url:   "/javascript/backbone"
+  -
+    scope:
+      path: "javascript/canvas"
+    values:
+      category:
+        label: "Canvas"
+        url:   "/javascript/canvas"
+  -
+    scope:
+      path: "logica-de-programacao"
+    values:
+      category:
+        label: "Lógica de programação"
+        url:   "/logica-de-programacao"
+  -
+    scope:
+      path: "html-css"
+    values:
+      category:
+        label: "HTML & CSS"
+        url:   "/html-css"
+  -
+    scope:
+      path: "sql"
+    values:
+      category:
+        label: "SQL - Structured Query Language"
+        url:   "/sql"
+  -
+    scope:
+      path: "misc"
+    values:
+      category:
+        label: "Miscellaneous"
+        url:   "/misc"
+  -
+    scope:
+      path: "regex"
+    values:
+      category:
+        label: "Expressões Regulares"
+        url:   "/regex"
+  -
+    scope:
+      path: "git"
+    values:
+      category:
+        label: "Git"
+        url:   "/git"
+  -
+    scope:
+      path: "c"
+    values:
+      category:
+        label: "Linguagem C"
+        url:   "/c"
+  -
+    scope:
+      path: "tdd"
+    values:
+      category:
+        label: "TDD (Test Driven Development)"
+        url:   "/tdd"
+  -
+    scope:
+      path: "seguranca-da-informacao"
+    values:
+      category:
+        label: "Segurança da Informação"
+        url:   "/seguranca-da-informacao"
+  -
+    scope:
+      path: "linux"
+    values:
+      category:
+        label: "Linux"
+        url:   "/linux"

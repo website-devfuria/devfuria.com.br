@@ -1,7 +1,7 @@
 ---
-layout:      materia-sql
-title:       CRUD - C de create, é o nosso insert!
+title:       CRUD - C de create (insert)
 description: Entenda o sql INSERT, para quem nunca viu SQL!
+menu:        mysql
 ---
 
 Esta matéria é indicada para quem está começando a aprender os comandos básicos de SQL. Ela faz parte de uma sequência, se

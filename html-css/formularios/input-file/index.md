@@ -1,7 +1,7 @@
 ---
-layout:      materia-html-forms
 title:       Enviando arquivos (input type="file")
-description: 
+description: Artigo a respeito do controle do tipo file (formulário web) - HTML e CSS
+menu:        html-forms
 ---
 
 
@@ -11,9 +11,9 @@ Ele é um botão acompanhado de uma text box.
 
 Ao clicar no botão "Browse", o navegador abre a janela "arquivos" de seu sistema operacional e você poderá selecionar os arquivos de seu hard-disk.
 
-{% highlight html %}
+```html
 <input type="file" />
-{% endhighlight %}
+```
 
 A imagem abaixo ilustra a utilização de 3 input files.
 

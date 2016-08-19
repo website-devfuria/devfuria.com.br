@@ -1,12 +1,11 @@
 ---
-layout:      materia
 title:       Python - O básico da sintaxe
 description: Um guia rápido e básico da linguagem Python.
 ---
 
 Este é um pequeno guia sobre a sintaxe de Python.
 
-Recomendado para quem nunca viu Python.
+Recomendado para quem está começando a aprender sobre Python ou para quem nunca viu Python.
 
 
 
@@ -15,75 +14,104 @@ Variáveis
 
 Uma variável não pode ser utilizada em uma expressão sem ter sido inicializada
 
-Não existe “criação automática” de variáveis
+Não existe "criação automática" de variáveis.
 
 Exemplo de atribuição:
 
-{% highlight python %}reais = euros * taxa{% endhighlight %}
+```python
+reais = euros * taxa
+```
 
 As variáveis `euros` e  `taxa` devem ser inicializadas, se não o erro `name 'euros' is not defined` será exibido.
 
+Também podemos inicializar mais de uma variável dessa forma...
+
+```python
+>>> a, b = 10, 20
+>>> a
+10
+>>> b
+20
+```
+
+
+Valor nulo (null)
+---
+
+Em Python, `None` equivale ao valor nulo (null).
+
+Podemos iniciar as variáveis com o valor `None`.
+
+```python
+reais = None
+```
 
 
 Saídas
 ---
 
-Saída simples.
+Saída simples válido para a versão 3 de Python.
 
-{% highlight python %}print "Welcome to Python!"{% endhighlight %}
+```python
+print("Welcome to Python!")
+```
 
 Saída mais elaborada.
 
-{% highlight python %}
+```python
 string_1 = "Camelot"
 string_2 = "place"
-print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
-{% endhighlight %}
+print("Let's not go to %s. 'Tis a silly %s." % (string_1, string_2))
+```
 
+Veja na documentação oficial as 
+[diferenças entre as versões 2 e 3](https://docs.python.org/3.0/whatsnew/3.0.html#print-is-a-function "link-externo").
 
 
 Entradas
 ---
 
-{% highlight python %}
+```python
 name  = raw_input("What is your name?")
 quest = raw_input("What is your quest?")
 color = raw_input("What is your favorite color?")
 
-print "Ah, so your name is %s, your quest is %s, " \
-"and your favorite color is %s." % (name, quest, color)
-{% endhighlight %}
+print("Ah, so your name is %s, your quest is %s, " \
+"and your favorite color is %s." % (name, quest, color) )
+```
 
 
 Endentação
 ---
 
-Em Python devemos endentar corretamente o código fonte.
+Python usa endentação como delimitação de bloco, portanto devemos endentar corretamente o código fonte.
 
 Abaixo vemos um código endentado de forma errada:
 
-{% highlight python %}
+```python
 def spam():
 eggs = 12
 return eggs
 
-print spam()
-{% endhighlight %}
+print(spam())
+```
 
 Abaixo, vemos o mesmo código corrigido:
 
-{% highlight python %}
+```python
 def spam():
     eggs = 12
     return eggs
 
-print spam()
-{% endhighlight %}
+print(spam())
+```
 
 
 ### Blocos
 
-Todos os comandos que aceitam blocos:
+Como visto acima, Python usa endentação como delimitação de bloco.
+
+Abaixo vemos os comandos que aceitam blocos:
 
 + if/elif/else
 + for/else
@@ -95,7 +123,9 @@ Todos os comandos que aceitam blocos:
 
 Se o bloco tem apenas um comando, pode-se escrever tudo em uma linha:
 
-{% highlight python %}if n < 0: print 'Valor inválido'{% endhighlight %}
+```python
+if n < 0: print('Valor inválido')
+```
 
 
 
@@ -104,31 +134,31 @@ Comentários
 
 Em linha.
 
-{% highlight python %}
+```python
 # comentário de linha
 """ Esse é de bloco mas está em uma linha só """
-{% endhighlight %}
+```
 
 Em bloco.
 
-{% highlight python %}
+```python
 """
 comentários
 comentários
 comentários
 """
-{% endhighlight %}
+```
 
 Aspas simples também funciona.
 
-{% highlight python %}
+```python
 '''
 this is
 a multi-line
 comment, i am handy for commenting out whole
 chunks of code very fast
 '''
-{% endhighlight %}
+```
 
 
 
@@ -172,23 +202,24 @@ Tipos de dados básicos
 
 Se, por exemplo, você digitar no console `dict` ele retornará:
 
-{% highlight python %}<type 'dict'>{% endhighlight %}
-
+```python
+<class 'dict'>
+```
 
 A função `type()` mostra o tipo do dado, veja alguns exemplos.
 
-{% highlight python %}
-type("text")        # <type 'text'>
-type(1)             # <type 'int'>
-type(0.99)          # <type 'float'>
-{% endhighlight %}
+```python
+type("text")        # <class 'str'>
+type(1)             # <class 'int'>
+type(0.99)          # <class 'float'>
+```
 
 Também é possível elaborar as seguintes expressões.
 
-{% highlight python %}
+```python
 type(1) == int      # True
 type(0.99) == float # True
-{% endhighlight %}
+```
 
 
 
@@ -199,30 +230,32 @@ Python possui `+ - * /`, nem precisava falar!.
 
 Mas talvez você se pergunte como calcular uma potência.
 
-{% highlight python %}10 ** 2 # print 100{% endhighlight %}
+```python
+10 ** 2 # print(100)
+```
 
 ...ou o resto da divisão com o operador módulo `%`.
 
-{% highlight python %}
+```python
 3 % 2 = 1
 5 % 2 = 1
-{% endhighlight %}
+```
 
 Veja também algumas funções matemáticas:
 
-{% highlight python %}
+```python
 max(5, 6, 7) # 7
 min(5, 6, 7) # 5
 abs(-1)      # 1
-{% endhighlight %}
+```
 
 
 Para trabalhar com números randômicos será preciso importar o módulo `random`.
 
-{% highlight python %}
+```python
 import random
 random.randint(1, 10)
-{% endhighlight %}
+```
 
 O código acima irá gerar números randômicos entre 1 e 10 (incluindo o 1 e o 10).
 
@@ -233,18 +266,22 @@ Strings
 
 Concatenamos strings com o sinal `+`.
 
-{% highlight python %}"Spam " + "and" + " eggs"{% endhighlight %}
+```python
+"Spam " + "and" + " eggs"
+```
 
 Quando concatenamos com um número, precisamos fazer a conversão.
 
-{% highlight python %}"The value of pi is around " + str(3.14){% endhighlight %}
+```python
+"The value of pi is around " + str(3.14)
+```
 
 Escapamos (scape) caracters com o sinal `\`
 
-{% highlight python %}
+```python
 'There's a snake in my boot!'  # errado
 'There\'s a snake in my boot!' # correto
-{% endhighlight %}
+```
 
 
 ### Métodos básicos de string
@@ -281,30 +318,30 @@ Exemplo, `"flavio.upper()"` equivale a `FLAVIO`.
 
 ### Acessando pelo index
 
-{% highlight python %}
+```python
 +---+---+---+---+---+---+
 | p | y | t | h | o | n |
 +---+---+---+---+---+---+
   0   1   2   3   4   5
-{% endhighlight %}
+```
 
-{% highlight python %}
+```python
 "python"[0] # 'p'
 "python"[1] # 'y'
 "python"[2] # 't'
 "python"[3] # 'h'
 "python"[4] # 'o'
 "python"[5] # 'n'
-{% endhighlight %}
+```
 
-Leia mais sobre [fatimanento de sequencias](../sequencias-fatiamento/ "Python - Sequencias").
+Leia mais sobre [fatiamento de sequências](/python/sequencias-fatiamento/ "Python - Sequências").
 
 
 ### Percorrendo strings (string lopping)
 
-{% highlight python %}
+```python
 for letter in "python":
-    print letter
+    print(letter)
 
 """
 p
@@ -314,87 +351,88 @@ h
 o
 n
 """
-{% endhighlight %}
+```
 
+Leia mais sobre [strings](/python/strings/ "Python - Strings").
 
 
 Controle de fluxo (condicionais)
 ---
 
-{% highlight python %}
+```python
 if expressao == True:
-    print "true"
+    print("true")
 else:
-    print "false"
-{% endhighlight %}
+    print("false")
+```
 
-
-{% highlight python %}
+```python
 if answer > 5:
     return 1
 elif answer < 5:
     return -1
 else:
     return 0
-{% endhighlight %}
+```
+
+Leia mais sobre [estruturas condicionais](/python/estruturas-condicionais/ "Python - Estruturas- Condicionais").
 
 
 
 Laços de repetição
 ---
 
-### while
+Exemplo com `for`...
 
-{% highlight python %}
+```python
+lista = ["p", "y", "t", "h", "o", "n"]
+for item in lista:
+    print item
+"""
+p
+y
+t
+h
+o
+n
+"""
+```
+
+Exempo com `while`...
+
+```python
 count = 0
 while count <= 5:
-    print "Hello, I am a while and count is", count
+    print(count)
     count += 1
+# 0 1 2 3 4 5
 
-"""
-Hello, I am a while and count is 0
-Hello, I am a while and count is 1
-Hello, I am a while and count is 2
-Hello, I am a while and count is 3
-Hello, I am a while and count is 4
-Hello, I am a while and count is 5
-"""
-{% endhighlight %}
+```
 
-Exemplo com __break__:
+Leia mais sobre [laços de repetição](/python/lacos-de-repeticao/ "Python - Laços de repetição").
 
-{% highlight python %}
-count = 0
-while True:
-    print count
-    count += 1
-    if count >= 5:
-        break
-
-# 1 2 3 4 5
-{% endhighlight %}
 
 
 
 Funções
 ---
 
-{% highlight python %}
+```python
 def foo():
     return "retorno da função"
 
-print foo() "retorno da função"
-{% endhighlight %}
+print(foo()) # "retorno da função"
+```
 
 Outro exemplo
 
-{% highlight python %}
+```python
 def add_two(a, b):
     c = a + b
     return c
-{% endhighlight %}
+```
 
-Leia mais sobre [funções](../functions/ "Python - funções(functions)").
+Leia mais sobre [funções](/python/functions/ "Python - funções(functions)").
 
 
 
@@ -403,65 +441,80 @@ Imports
 
 Para importar um módulo utilizamos o `import`.
 
-{% highlight python %}
+```python
 import math
-print math.sqrt(25)
-{% endhighlight %}
+print(math.sqrt(25))
+```
 
 O código acima importará todos os módulos de `math`, para importar apenas o necessário utilizamos `from`.
 
-{% highlight python %}from math import sqrt{% endhighlight %}
+```python
+from math import sqrt
+```
 
-Podemos importar todas as funções de `math` dessa forma:
+No terminal, para diminuir a digitação, costuma-se importar todas as funções de `math` dessa forma:
 
-{% highlight python %}
+```python
 from math import *
-{% endhighlight %}
+```
+
+Em geral, a prática do `import *` de um módulo ou pacote é desaprovada, uma vez que muitas vezes dificulta a leitura do 
+código.
+
+Leia mais sobre [imports](/python/imports/ "Importando módulos no Python (imports)").
 
 
 
 Datas
 ---
 
-{% highlight python %}
+```python
 from datetime import datetime
 now = datetime.now()
-print now
-print now.year
-print now.month
-print now.day
-{% endhighlight %}
+print(now)
+print(now.year)
+print(now.month)
+print(now.day)
+```
 
 Para imprimir a data no formato brasileiro:
 
-{% highlight python %}print '%s/%s/%s' % (now.day, now.month, now.year){% endhighlight %}
+```python
+print('%s/%s/%s' % (now.day, now.month, now.year))
+```
 
 Imprimindo as horas:
 
-{% highlight python %}print '%s:%s:%s' % (now.hour, now.minute, now.second){% endhighlight %}
+```python
+print('%s:%s:%s' % (now.hour, now.minute, now.second))
+```
 
 
 
 Listas (lists)
 ---
 
-{% highlight python %}
+```python
 animals = ["pangolin", "cassowary", "sloth", "dog"];
 animals[0]   # 'pangolin'
 animals[1]   # 'cassowary'
 animals[2]   # 'sloth'
 animals[3]   # 'dog'
-{% endhighlight %}
+```
 
 Ao acessar um índice inexistente recebemos um erro.
 
-{% highlight python %}animals[4]   # IndexError: list index out of range{% endhighlight %}
+```python
+animals[4]   # IndexError: list index out of range
+```
 
 A função `len()` retorna o tamanho da lista.
 
-{% highlight python %}len(animals) # 4{% endhighlight %}
+```python
+len(animals) # 4
+```
 
-Leia mais sobre [listas](../listas/ "Python - listas(list)").
+Leia mais sobre [listas](/python/listas/ "Python - listas(list)").
 
 
 ### range() 
@@ -474,7 +527,7 @@ A função `range()` retorna uma lista de inteiros. Seu conteúdo é definido pe
 
 Exemplos:
 
-{% highlight python %}
+```python
 range(4)
 [0, 1, 2, 3]
 
@@ -483,40 +536,40 @@ range(2, 8)
 
 range(2, 13, 3)
 [2, 5, 8, 11]
-{% endhighlight %}
+```
 
 
 Percorrendo (lopping):
 
-{% highlight python %}
+```python
 for i in range(20):
-    print i
-{% endhighlight %}
+    print(i)
+```
 
 
 
 Dicionários (dictionaries)
 ---
 
-{% highlight python %}
+```python
 people = {
     "name": "joao",
     "age": 39,
     "skylls": ['python', 'ruby', 'php']
 }
 
-print people['name']
-print people['age']
-print people['skylls']
+print(people['name'])
+print(people['age'])
+print(people['skylls'])
 
 """
 joao
 40
 ['python', 'ruby', 'php']
 """
-{% endhighlight %}
+```
 
-Leia mais sobre [dicinonários](../dicionarios-dictionaries/ "Python - dicionários (dctionaries)").
+Leia mais sobre [dicinonários](/python/dicionarios-dictionaries/ "Python - dicionários (dctionaries)").
 
 
 
@@ -525,52 +578,29 @@ Lambdas
 
 Exemplo:
 
-{% highlight python %}
+```python
 g = lambda x: x * 2
-print g(6) 
+print(g(6))
 # 12
-{% endhighlight %}
+```
 
 Para facilitar o entendimento, veja código abaixo, ele é similar.
 
-{% highlight python %}
+```python
 def f(x):
     return x * 2
-print f(6)
+print(f(6))
 # 12
-{% endhighlight %}
+```
 
 
 
 OOP - Programação Orientada a Objetos
 ---
 
-Uma classe consiste da palavra chave `class` seguida de seu nome e da classe herdada entre parênteses.
+Abaixo vemos um exemplo de classe em Python.
 
-A palavra `pass` serve para criarmos um classe vazia.
-
-Abaixo, criamos a classe vazia `Foo` que herda de `object`
-
-{% highlight python %}
-class Foo(object):
-    pass
-{% endhighlight %}
-
-Abaixo, criamos a classe `Triangle` com um método construtor `__init__`
-
-{% highlight python %}
-class Triangle(object):
-    def __init__(self, angle1, angle2, angle3):
-        self.angle1 = angle1
-        self.angle2 = angle2
-        self.angle3 = angle3
-{% endhighlight %}
-
-Todo método deve aceitar como parâmetro a palavra `self`, que se refere ao próprio objeto.
-
-Abaixo, criamos alguns métodos para nossa classe `Triangle`.
-
-{% highlight python %}
+```python
 class Triangle(object):
 
     def __init__(self, angle1, angle2, angle3):
@@ -578,49 +608,28 @@ class Triangle(object):
         self.angle2 = angle2
         self.angle3 = angle3
 
-    def soma_triangulo(self):
+    def sum_triangle(self):
         return self.angle1 + self.angle2 + self.angle3
 
     def check_angles(self):
-        if(self.soma_triangulo() == 180):
+        if(self.triangle() == 180):
             return True
         else:
             return False
-{% endhighlight %}
+```
+
+Abaixo vemos um exemplo simples de como __instanciar__ uma classe em Python.
+
+```python
+figure = Triangle(30, 40, 50)
+```
+
+Leia mais sobre [Programação Orientada a Objetos](/python/programacao-orientada-objetos/ "Programação Orientada a Objetos em Python").
 
 
-### Instanciando
 
-Abaixo vemos um exemplo simples de como utilizar (instanciar) uma classe em Python.
+Fontes
+---
 
-{% highlight python %}
-class Animal(object):
-    def __init__(self, name):
-        self.name = name
-
-zebra = Animal("Jeffrey")
-print zebra.name
-{% endhighlight %}
-
-
-### Herança
-
-Um exemplo simples.
-
-{% highlight python %}
-class Shape(object):
-    def __init__(self, number_of_sides):
-        self.number_of_sides = number_of_sides
-
-class Triangle(Shape):
-    def __init__(self, side1, side2, side3):
-       self.side1 = side1
-       self.side2 = side2
-       self.side3 = side3
-{% endhighlight %}
-
-
-### Fontes
-
-- [Python: apresentando a sintaxe (Luciano Ramalho)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf" link-externo")
-- [Codeacademy - Python Glossary](http://www.codecademy.com/glossary/python" link-externo")
+- [Python: apresentando a sintaxe (Luciano Ramalho)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf "link-externo")
+- [Codeacademy - Python Glossary](http://www.codecademy.com/glossary/python "link-externo")

@@ -1,100 +1,700 @@
 <!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-        <title>Desenvolvimento Web</title>
-        <meta name="description" content="Cursos, aulas, tutoriais, apostilas, matérias sobre programação web prá ninguém botar defeito!">
-        <meta name="keywords" content="aplicações web; desenvolvimento web; cursos web; tutoriais; artigos;">
-        <meta name="author" content="Flávio Alexandre Micheletti">
+	<title>DevFuria - Desenvolvimento Web</title>
 
-        <link rel="shortcut icon" href="http://www.devfuria.com.br/core/imagens/favicon_1_16x16x1.png">
+	<!-- CSS -->
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="/assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="/assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="/assets/css/animate.css" rel="stylesheet">
 
-        <link href="http://www.devfuria.com.br/core/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="http://www.devfuria.com.br/core/assets/css/docs.css" rel="stylesheet">
+	<!-- Custom styles CSS -->
+	<link href="/assets/css/style.css" rel="stylesheet" media="screen">
 
-        <link rel="shortcut icon" type="imagens/gif" href="http://www.devfuria.com.br/core/imagens/favicon.ico">
-        <meta property="og:image" content="http://www.devfuria.com.br/core/imagens/favicon_1_16x16x1.png"/>
-        <style type="text/css">
-            body {
-                padding-top: 0px;
-            }
-            .bs-masthead {
-                padding: 0px 15px;
-            }
-            h1 {
-                font-weight: bolder;
-                color: #2F4F4F
-            }
-            .btn {
-                margin-bottom: 3px;
-                width: 90%;
-            }
-            @media (min-width:  700px) {
-                .btn {
-                    width: 40%;
-                }
-            }
-            @media (min-width:  992px) {
-                .btn {
-                    width: 21%;
-                }
-            }
-        </style>
-    </head>
+    <script src="/assets/js/modernizr.custom.js"></script>
 
-    <body>
-        <a href="https://github.com/devfuria/www.devfuria.com.br"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</head>
+<body>
 
-    <main class="bs-masthead" id="content" role="main">
-        <div class="container">
+	<!-- Preloader -->
 
-            <h1>DevFuria</h1>
-            <p class="lead" style="margin-bottom: 0px"><small>Desenvolvimento web pra ninguém botar defeito!</small></p>
-            <p class="lead" ><small>Cursos, aulas, tutoriais, matérias... tudo muito bem preparado.</small></p>
-            <ul>
-                <li>Isto não é um blog!</li>
-                <li>É gratuito e sempre será!</li>
-                <li>Feito especialmente para o público iniciante.</li>
-                <li>Seja bem vindo e espero que você divirta-se aprendendo.</li>
-            </ul>
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
 
-            <p class="secoes">
-                <a class="btn btn-primary btn-lg" role="button" href="./logica-de-programacao/">Lógica de programação</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./javascript">JavaScript</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./python">Python</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./php">PHP</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./linux/">Linux</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./git/">Git</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./html-css">HTML & CSS</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./sql">SQL</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./regexp">Expressões Regulares</a>
-                <a class="btn btn-primary btn-lg" role="button" href="./seguranca-da-informacao/">Segurança da Informação</a>
-            </p>
-            <ul class="bs-masthead-links">
-                <li>
-                    <a href="https://github.com/devfuria" title="link-externo">Projeto no GitHub</a>
-                </li>
-                <li>
-                    <a href="flavio-alexandre-micheletti.html">Quem vôs fala</a>
-                </li>
-            </ul>
-        </div>
-    </main>
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+			<h1>DevFuria</h1>
+			<div class="start">Desenvolvimento web pra ninguém botar defeito!</div>
+
+		</div>
+
+        <a href="#razao">
+		<div class="scroll-down">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">DevFuria</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#razao">Por que?</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+						<li><a href="#depoimentos">Depoimentos</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+    <!-- Services start -->
+
+	<section id="razao" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Por que ?</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+                            <p>Porque amamos o que fazemos e nos divertimos fazendo.</p>
+							<p>O objetivo do site é colaborar na formação técnica de programadores.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-magic-wand"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Qualidade</h3>
+							<div class="iconbox-desc">
+								Chega de ler tutoriais bizarros por aí, nos prezamos pela qualidade dos nossos artigos
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-sm-3">
+                    <div class="iconbox wow slideInLeft">
+                        <div class="iconbox-icon">
+                            <span class="icon-puzzle"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Sem enrrolação</h3>
+                            <div class="iconbox-desc">
+                                Simples, prático, direto e  objetivo . Leia qualquer um de nosso artigos e confira você mesmo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="iconbox wow slideInLeft">
+                        <div class="iconbox-icon">
+                            <span class="icon-puzzle"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Dedicado</h3>
+                            <div class="iconbox-desc">
+                                Feito com todo o carinho e cuidado para o público iniciante
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="col-sm-3">
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span class="icon-badge"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Isto não é um blog</h3>
+							<div class="iconbox-desc">
+								Blog é reciclável, é bagunçado, sem pé nem cabeça! Mas caso queira, veja o nosso <a href="/blog/">blog</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Services end -->
+
+	<!-- Portfolio start -->
+
+	<section id="categorias" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Categorias</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Uma coleção de conteúdo de primeiríssima qualidade.
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
 
 
-    <footer class="container" role="contentinfo">
-    </footer>
+            <div class="row">
 
-    <script src="http://www.devfuria.com.br/core/assets/js/jquery.js"></script>
-    <script src="http://www.devfuria.com.br/core/dist/js/bootstrap.min.js"></script>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/javascript/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="JavaScript"/>
+                            <figcaption>
+                                <h2>JavaScript</h2>
+                                <p>ECMAScript</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
 
-    <script src="http://www.devfuria.com.br/core/assets/js/holder.js"></script>
-    <script src="http://www.devfuria.com.br/core/highlight/highlight.pack.js"></script>
-    <script src="http://www.devfuria.com.br/core/assets/js/application.js"></script>
-    <script src="http://www.devfuria.com.br/core/core.js"></script>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/php/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="PHP"/>
+                            <figcaption>
+                                <h2>PHP</h2>
+                                <p>para quem tem sangue nos olhos</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
 
-    <script src="http://www.devfuria.com.br/core/analytics.js"></script>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/python/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="Python"/>
+                            <figcaption>
+                                <h2>Python</h2>
+                                <p>sem mistérios!</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/javascript/node.js/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="Node.js"/>
+                            <figcaption>
+                                <h2>Node.js</h2>
+                                <p>É JavaScript do lado do servidor!</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/javascript/backbone/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="Backbone"/>
+                            <figcaption>
+                                <h2>Backbone</h2>
+                                <p>material inédito, surpreenda-se!</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/javascript/canvas/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="Canvas"/>
+                            <figcaption>
+                                <h2>Canvas</h2>
+                                <p>canvas.getContext('2d')</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/logica-de-programacao/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-vermelhos.png" alt="Lógica de programação"/>
+                            <figcaption>
+                                <h2>Lógica de programação</h2>
+                                <p>não entre aqui</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/html-css/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="HTML & CSS"/>
+                            <figcaption>
+                                <h2>HTML & CSS</h2>
+                                <p>Vai estudar um, tem que estudar o outro.</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/sql/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="SQL"/>
+                            <figcaption>
+                                <h2>SQL</h2>
+                                <p>Structured Query Language</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/misc/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="Miscellaneous"/>
+                            <figcaption>
+                                <h2>Miscellaneous</h2>
+                                <p>Assuntos diversos!</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/regex/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="Expressões Regulares"/>
+                            <figcaption>
+                                <h2>Expressões Regulares</h2>
+                                <p>descomplicamos</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/tdd/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="TDD"/>
+                            <figcaption>
+                                <h2>TDD</h2>
+                                <p>Test Driven Development</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/git/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="img01"/>
+                            <figcaption>
+                                <h2>Git</h2>
+                                <p>prático, prático, prático!</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/c/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="img01"/>
+                            <figcaption>
+                                <h2>C</h2>
+                                <p>Sem frescura!</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/seguranca-da-informacao/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="img01"/>
+                            <figcaption>
+                                <h2>Segurança da Informação</h2>
+                                <p>OWASP TOP TEN 2010</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <a href="/linux/">
+                        <figure class="effect-bubba">
+                            <img src="/assets/images/itens-azuis.png" alt="img01"/>
+                            <figcaption>
+                                <h2>Linux</h2>
+                                <p>Receitas de instalação e muito mais...</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+		</div><!-- .contaier -->
+
+	</section>
+
+	<!-- Portfolio end -->
+
+    <!-- Skills start -->
+    <!--
+    <section class="pfblock pfblock-gray" id="skills">
+
+			<div class="container">
+
+				<div class="row skills">
+
+					<div class="row">
+
+                        <div class="col-sm-6 col-sm-offset-3">
+
+                            <div class="pfblock-header wow fadeInUp">
+                                <h2 class="pfblock-title">My Skills</h2>
+                                <div class="pfblock-line"></div>
+                                <div class="pfblock-subtitle">
+                                    No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="80" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">80</span>
+                        </span>
+						<h3 class="text-center">Programming</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="90" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">90</span>
+                        </span>
+						<h3 class="text-center">Design</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">85</span>
+                        </span>
+						<h3 class="text-center">Marketing</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="95" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">95</span>
+                        </span>
+						<h3 class="text-center">UI / UX</h3>
+					</div>
+
+				</div>
+
+			</div>
+
+    </section>
+    -->
+
+    <!-- Skills end -->
+
+	<!-- CallToAction start -->
+
+	<section class="calltoaction">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<h2 class="wow slideInRight" data-wow-delay=".1s">Ta esperando o quê?</h2>
+					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+                        <p>Demorou para estudar com a gente!</p>
+                        <p>E não é porque é grátis não, é que aqui tem qualidade!</p>
+                    </div>
+				</div>
+
+				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+					<a href="#categorias" class="btn btn-lg">Escolha uma categoria</a>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- CallToAction end -->
+
+	<!-- Testimonials start -->
+
+	<section id="depoimentos" class="pfblock pfblock-gray">
+
+		<div class="container">
+
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Depoimentos</h2>
+                        <!--
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<p>A galera leu, curtiu, comentou, só me resta agadecer:</p>
+                            <p>muuuuuuuito obrigado!</p>
+						</div>
+                        -->
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <div class="row">
+
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <!--<img src="/assets/images/client-1.jpg" alt="client-1" />-->
+                    <blockquote>
+                      <p>Excelente explicação, rápida, prática, objetiva e esclarecedora...valeu!</p>
+                      <footer>Grazi AC</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <blockquote>
+                      <p>Caraca meu, muito resumido e bem explicadinho.. Parabéns!!!</p>
+                      <footer>Kevin Riquena</footer>
+                    </blockquote>
+                </div>
+
+                <div class="cbp-qtcontent">
+                    <blockquote>
+                      <p>Sensacional, Flávio! Estava me sentindo mal acostumado usando jQuery. Estou criando um projeto sem utilizar frameworks e treinando JS.Sua explicação foi excelente. Obrigado!</p>
+                      <footer>Rômulo Bastos</footer>
+                    </blockquote>
+                </div>
+
+                <div class="cbp-qtcontent">
+                    <blockquote>
+                      <p>Grande devfuria, parabéns pelos tutoriais</p>
+                      <footer>Paulo Robson</footer>
+                    </blockquote>
+                </div>
+
+                <div class="cbp-qtcontent">
+                    <blockquote>
+                      <p>De parabéns, simples e prático!</p>
+                      <footer>Emerson Andrey</footer>
+                    </blockquote>
+                </div>
+
+
+
+
+
+            </div>
+
+            </div><!-- .row -->
+
+
+		</div><!-- .row -->
+	</section>
+
+	<!-- Testimonial end -->
+
+
+	<!-- Contact start -->
+
+	<section id="contato" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">Contato</h2>
+						<div class="pfblock-line"></div>
+						<!--div class="pfblock-subtitle">
+							Fala que eu te escuto!
+						</div>-->
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<form id="contact-form" role="form">
+						<div class="ajax-hidden">
+							<div class="form-group wow fadeInUp">
+								<label class="sr-only" for="c_name">Name</label>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+								<label class="sr-only" for="c_email">Email</label>
+								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Enviar mensagem</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://www.facebook.com/devfuria/" class="wow fadeInUp" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://github.com/devfuria" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-github-square"></i></a></li>
+                        <!--
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
+                        -->
+					</ul>
+
+                    <p>
+                        Este obra está licenciado sob a
+                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+                            Creative Commons Atribuição 4.0 Internacional
+                        </a>.
+					</p>
+                    <p>
+                        <a href="/">www.devfuria.com.br</a> (desde 2012)
+                    </p>
+                    <p>
+                        <a href="http://scripteden.com/download/clean-one-page-personal-portfolio-template/" target="_blank">Theme</a>
+                    </p>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+    <!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+
+	<script src="/assets/js/jquery-1.11.1.min.js"></script>
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<script src="/assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="/assets/js/imagesloaded.pkgd.js"></script>
+	<script src="/assets/js/jquery.sticky.js"></script>
+	<script src="/assets/js/smoothscroll.js"></script>
+	<script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/jquery.easypiechart.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="/assets/js/custom.js"></script>
+
 </body>
 </html>

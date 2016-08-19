@@ -1,9 +1,7 @@
 ---
-layout:      materia
 title:       Como saber qual versão do Linux está instalada
 description: Comando que mostra qual é a versão do Linux
 ---
-
 
 Na maioria das distribuições Linux você poderá utilizar o comando abaixo:
 
@@ -21,5 +19,23 @@ No CentOS (Red Hat) também funciona o comando abaixo
 O retorno deve ser algo parecido com `CentOS release 6.5 (Final)`.
 
 
-Fonte [http://www.fogonacaixadagua.com.br/2009/10/como-saber-qual-versao-do-red-hat-centos-esta-instalada/](http://www.fogonacaixadagua.com.br/2009/10/como-saber-qual-versao-do-red-hat-centos-esta-instalada/ "link-externo")
+
+### Como descobrir a arquitetura ?
+
+Um retorno mais "completo" que inclui a arquitetura seria `uname -a`
+
+Possíveis retornos para 32 bits são:
+
+    i386
+    i486
+    i586
+    i686 
+
+E para 64 bits:
+
+    x86_64 
+
+### Fonte
+
+- [http://www.fogonacaixadagua.com.br/2009/10/como-saber-qual-versao-do-red-hat-centos-esta-instalada/](http://www.fogonacaixadagua.com.br/2009/10/como-saber-qual-versao-do-red-hat-centos-esta-instalada/ "link-externo")
     

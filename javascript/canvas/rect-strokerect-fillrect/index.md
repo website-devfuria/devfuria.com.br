@@ -1,7 +1,7 @@
 ---
-layout:     materia
-title:      Canvas - Desenhando retângulos (strokeRect, fillRect, clearRect e rect)
-description: Aprenda a desenhar retângulos no elemento Canvas.
+title:       Canvas - Desenhando retângulos
+description: Aprenda a desenhar retângulos  (strokeRect, fillRect, clearRect e rect)  no elemento Canvas.
+menu:        javascript-canvas
 ---
 
 
@@ -11,12 +11,12 @@ Todos os métodos esperam 2 argumentos, na verdade 4, que especificam um canto d
 
 Veja a assinatura das funções abaixo.
 
-{% highlight javascript %}
+```javascript
 strokeRect(x, y, width, height)
 fillRect  (x, y, width, height)
 clearRect (x, y, width, height)
 rect      (x, y, width, height)
-{% endhighlight %}
+```
 
 "Normalmente especificamos o canto superior esquerdo e, então, passamos um valor de largura e altura positivos, mas 
 também podem ser negativos."
@@ -40,12 +40,12 @@ A aparência dos cantos do retângulo é especificada pela propriedade `lineJoin
 <p><img src="canvas2.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 context.strokeStyle = 'red';
 context.strokeRect(20,20,100,100);
-{% endhighlight %}
+```
 
 
 
@@ -56,12 +56,12 @@ Preenche o retângulo especificado com a cor, gradiente ou padrão definido pela
 
 <p><img src="canvas3.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
 context.fillStyle = 'red';
 context.fillRect(20, 20, 100, 100);
-{% endhighlight %}
+```
 
 
 
@@ -72,13 +72,13 @@ Preenche o retângulo especificado com preto transparente.
 
 <p><img src="canvas4.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 context.fillStyle = 'red';
 context.fillRect(20, 20, 100, 100);
 context.clearRect(40, 40, 60, 60);
-{% endhighlight %}
+```
 
 
 
@@ -92,7 +92,7 @@ Quando este método retorna a posição atual é a coordenada (x, y) inicial.
 
 <p><img src="canvas5.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex04');
 var context = canvas.getContext('2d');
 context.strokeStyle = 'red';
@@ -100,13 +100,13 @@ context.strokeStyle = 'red';
 context.beginPath();
 context.rect(20, 20, 100, 100);
 context.stroke();
-{% endhighlight %}
+```
 
 Abaixo vemos o mesmo exemplo acrescentado do método `fill()`.
 
 <p><img src="canvas6.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex05');
 var context = canvas.getContext('2d');
 context.strokeStyle = 'red';
@@ -116,7 +116,7 @@ context.beginPath();
 context.rect(20, 20, 100, 100);
 context.stroke();
 context.fill();
-{% endhighlight %}
+```
 
 
 
@@ -154,7 +154,7 @@ O método strokeRect não influencia o caminho (path). A prova é o canvas do ex
 
 Veja que os métodos `lineTo` e `stroke` não tiveram efeito algum, só vemos o retângulo no canvas.
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex06');
 var context = canvas.getContext('2d');
 context.strokeStyle = "blue";
@@ -162,7 +162,7 @@ context.strokeStyle = "blue";
 context.strokeRect(60, 60, 30, 30);
 context.lineTo(10,10);
 context.stroke();
-{% endhighlight %}
+```
 
 
 ### Exemplo 02
@@ -178,7 +178,7 @@ O método seguinte (`lineTo(10,10)`) cumpre seu papel corretamente, pois ele des
 
 <p><img src="canvas8.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex06-1');
 var context = canvas.getContext('2d');
 context.strokeStyle = "blue";
@@ -186,7 +186,7 @@ context.strokeStyle = "blue";
 context.rect(60, 60, 30, 30);
 context.lineTo(10,10);
 context.stroke();
-{% endhighlight %}
+```
 
 
 ### Exemplo 03
@@ -197,7 +197,7 @@ Ele é igual ao exemplo 01, mas ao adicionar-mos a função `moveTo` (veja subli
 
 <p><img src="canvas9.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex06-2');
 var context = canvas.getContext('2d');
 context.strokeStyle = "blue";
@@ -210,7 +210,7 @@ context.moveTo(60, 60);
 context.lineTo(10,10);
 // pinte o caminho
 context.stroke();
-{% endhighlight %}
+```
 
 
 

@@ -1,7 +1,7 @@
 ---
-layout:     materia
-title:      Introdução ao Canvas
-description: Artigo introduzindo o canvas (HTML5)
+title:       Introdução ao Canvas
+description: Artigo introduzindo o canvas (HTML5) uma tela bitmap de resolução dependente que pode ser usada para renderizar gráficos, jogos, ou outras imagens em tempo real
+menu:        javascript-canvas
 ---
 
 
@@ -69,7 +69,7 @@ Abaixo temos um HTML de exemplo para você poder começar a utilizar o canvas.
 
 
 
-{% highlight html %}
+```html
 
 <!DOCTYPE html>
 <html>
@@ -102,7 +102,7 @@ Abaixo temos um HTML de exemplo para você poder começar a utilizar o canvas.
         </script>
     </body>
 </html>
-{% endhighlight %}
+```
 
 
 
@@ -157,7 +157,7 @@ Abaixo temos o exemplo básico da MDN.
 <p><img src="canvas-exemplo-mdn.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex01');
 
 if (canvas.getContext) {
@@ -169,7 +169,7 @@ if (canvas.getContext) {
     context.fillStyle = "rgba(0, 0, 200, 0.5)";
     context.fillRect(30, 30, 55, 50);
 }
-{% endhighlight %}  
+```  
 
 
 ### The Cloth Simulation
@@ -179,9 +179,13 @@ Andrew Hoyer é o maluco que fez isso [http://andrew-hoyer.com/experiments/cloth
 Para ver o código [https://github.com/ndrwhr/cloth-simulation](https://github.com/ndrwhr/cloth-simulation "link-externo")
 
 
-
-Fontes
----
+### Fontes
 
 - [Uso básico do canvas (MDN)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Canvas_tutorial/Basic_usage "link-externo")
 - [Capítulo 4 do livro "HTML5 Entendendo e Executando"](http://diveintohtml5.com.br/canvas.html "link-externo") disponível para consulta na web, traduzido pela comunidade.
+
+
+Próxima matéria
+---
+
+[Canvas - Desenhando linhas (lineTo e moveTo)](/javascript/canvas/lineto-moveto/)

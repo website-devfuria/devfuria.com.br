@@ -1,7 +1,7 @@
 ---
-layout:      materia-sql
 title:       Instalando o MySQL e acessando via terminal
 description: Aprenda a instalar e acessar o MySQL no terminal do Linux.
+menu:        mysql
 ---
 
 O software, normalmente, se divide em duas partes: servidor e cliente.
@@ -34,7 +34,7 @@ inicie o serviço...
 
 e habilite a senha digitando...
 
-    mysqladmin -u root password [your_password_here]
+    mysqladmin -u root password sua-senha-aqui
 
 
 

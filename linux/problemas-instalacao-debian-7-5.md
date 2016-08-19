@@ -1,7 +1,6 @@
 ---
-layout:      materia
 title:       Problemas na instalação do Debian 7 (netinst)
-description: Algumas dicas de como se virar com a instalação do Debinan whezzy (netinst)
+description: Algumas dicas de como se virar com a instalação do Debinan wheezy (netinst)
 ---
 
 

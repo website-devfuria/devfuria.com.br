@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        
+        {% include preloader.html %}
+        {% include artigos-jumbo.html %}
+        {% include artigos-nav.html %}
+        
+        <article id="conteudo" class="container">
+            {{ content }}
+        </article>
+        
+        {% if page.serie %}        
+            {% include series-next-prev.html %}
+        {% endif %}
+        {% include disqus.html %}
+        {% include footer.html %}
+        {% include scroll-to-top.html %}
+        
+    </body>
+    {% include footer-js.html %}
+</html>

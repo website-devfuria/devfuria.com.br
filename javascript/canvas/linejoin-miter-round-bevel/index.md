@@ -1,7 +1,7 @@
 ---
-layout:     materia
-title:      Canvas - Junção das linhas (lineJoin)
+title:       Canvas - Junção das linhas (lineJoin)
 description: Entenda o método lineJoin() do Canvas e suas propriedades (miter, round e bevel)
+menu:        javascript-canvas
 ---
 
 
@@ -22,7 +22,7 @@ Primeiro exemplo:
 
 <p><img src="canvas1.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex01');
 var context = canvas.getContext('2d');
 
@@ -32,14 +32,14 @@ context.lineTo(160, 100);
 context.lineJoin = 'miter';
 context.lineWidth = 25;
 context.stroke();
-{% endhighlight %}
+```
 
 
 Segundo exemplo:
 
 <p><img src="canvas2.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex01-1');
 var context = canvas.getContext('2d');
 
@@ -49,7 +49,7 @@ context.lineTo(130, 130);
 context.lineJoin = "miter";
 context.lineWidth = 25;
 context.stroke();
-{% endhighlight %}
+```
 
 
 
@@ -61,7 +61,7 @@ Primeiro exemplo:
 <p><img src="canvas3.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex02');
 var context = canvas.getContext('2d');
 
@@ -71,14 +71,14 @@ context.lineTo(160, 100);
 context.lineJoin = 'round';
 context.lineWidth = 25;
 context.stroke();
-{% endhighlight %}
+```
 
 
 Segundo exemplo:
 
 <p><img src="canvas4.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex02-1');
 var context = canvas.getContext('2d');
 
@@ -88,7 +88,7 @@ context.lineTo(130, 130);
 context.lineJoin = "round";
 context.lineWidth = 25;
 context.stroke();
-{% endhighlight %}
+```
 
 
 
@@ -100,7 +100,7 @@ Primeiro exemplo:
 <p><img src="canvas5.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex03');
 var context = canvas.getContext('2d');
 
@@ -110,14 +110,14 @@ context.lineTo(160, 100);
 context.lineJoin = 'bevel';
 context.lineWidth = 25;
 context.stroke();
-{% endhighlight %}
+```
 
 Segundo exemplo:
 
 <p><img src="canvas6.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
 
-{% highlight javascript %}
+```javascript
 var canvas = document.getElementById('ex03-1');
 var context = canvas.getContext('2d');
 
@@ -127,4 +127,11 @@ context.lineTo(130, 130);
 context.lineJoin = "bevel";
 context.lineWidth = 25;
 context.stroke();
-{% endhighlight %}
+```
+
+
+
+Próxima matéria
+---
+
+[Canvas - Limite das linhas (lineCap)](/javascript/canvas/linecap-butt-round-square/)
