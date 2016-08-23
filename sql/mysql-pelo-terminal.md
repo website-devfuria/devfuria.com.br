@@ -1,7 +1,8 @@
 ---
 title:       Acessando o MySQL  via console (terminal)
 description: mysql -h localhost -u root -p  Para entender o comando acima leia o artigo abaixo.
-menu:        mysql
+serie:       Introdução ao MySQL
+ordem:       2
 ---
 
 

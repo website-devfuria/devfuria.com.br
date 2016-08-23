@@ -1,7 +1,8 @@
 ---
 title:       Experimentando a instrução "select"
 description: Seus primeiros passos com a instrução 'select'
-menu:        mysql
+serie:       Introdução ao MySQL
+ordem:       4
 ---
 
 

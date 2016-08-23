@@ -1,7 +1,8 @@
 ---
 title:       Aprendendo a ler mensagens de erro
 description: Aprenderemos como ler mensagens de erro do MySQL.
-menu:        mysql
+serie:       Introdução ao MySQL
+ordem:       3
 ---
 
 Na [matéria anterior](../mysql-pelo-terminal/) vimos como se conectar com o banco de dados via console e é isso que vamos continuar fazendo aqui

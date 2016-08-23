@@ -1,8 +1,10 @@
 ---
 title:       Criando tabelas no MySQL
 description: Aprenda como criar tabelas no MySQL.
-menu:        mysql
+serie:       Introdução ao MySQL
+ordem:       7
 ---
+
 
 
 Antes de mais nada, precisamos [criar a base de dados](../mysql-criando-base-de-dados/). 

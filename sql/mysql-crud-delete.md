@@ -1,8 +1,10 @@
 ---
 title:       CRUD - D de delete
 description: Entenda o sql DELETE, para quem nunca viu SQL!
-menu:        mysql
+serie:       Introdução ao MySQL
+ordem:       14
 ---
+
 
 Esta matéria é indicada para quem está começando a aprender os comandos básicos de SQL. Ela faz parte de uma sequência, se
 você caiu aqui de paraquedas talvez queira ler [Entendendo o que é CRUD](../mysql-crud).

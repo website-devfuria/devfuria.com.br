@@ -1,7 +1,8 @@
 ---
 title:       Instalando o MySQL e acessando via terminal
 description: Aprenda a instalar e acessar o MySQL no terminal do Linux.
-menu:        mysql
+serie:       Introdução ao MySQL
+ordem:       1
 ---
 
 O software, normalmente, se divide em duas partes: servidor e cliente.

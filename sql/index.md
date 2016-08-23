@@ -23,8 +23,9 @@ Para você que não conhece nada sobre banco de dados, talvez queira ler uma
 Curso introdutório de SQL com banco de dados MySQL
 ---
 
-{% include menus/mysql.html %}
+{% include get-serie.html page_serie="Introdução ao MySQL" %}
+{% include menus.html %}
 
 
 <hr>
-* [Manual oficial do MySQL](http://dev.mysql.com/doc/index.html "link-externo") 
+* [Manual oficial do MySQL](http://dev.mysql.com/doc/index.html "link-externo")

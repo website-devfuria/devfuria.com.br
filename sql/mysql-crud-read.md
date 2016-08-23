@@ -1,8 +1,10 @@
 ---
 title:       CRUD - R de read (select)
 description: Entenda o sql SELECT, para quem nunca viu SQL!
-menu:        mysql
+serie:       Introdução ao MySQL
+ordem:       12
 ---
+
 
 Esta matéria é indicada para quem está começando a aprender os comandos básicos de SQL. Ela faz parte de uma sequência, se
 você caiu aqui de paraquedas talvez queira ler [Entendendo o que é CRUD](../mysql-crud).
