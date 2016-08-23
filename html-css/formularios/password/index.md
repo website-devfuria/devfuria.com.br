@@ -1,7 +1,8 @@
 ---
 title:       Campos de senha (input type=password)
 description: Artigo a respeito do controle password (formulário web) - HTML e CSS
-menu:        html-forms
+serie:       Controles Básicos (input)
+ordem:       3
 ---
 
 Os campos de senha são semelhantes as [textboxs](../text-box/), a diferença é que os __dados aparecem escondidos__

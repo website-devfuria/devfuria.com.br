@@ -1,7 +1,8 @@
 ---
 title:       Caixa de multipla seleção (List box)
 description: Artigo a respeito do controle list box (formulário web) - HTML e CSS
-menu:        html-forms
+serie:       Controles Básicos (não input)
+ordem:       2
 ---
 
 As __list box__ são as [combobox](../combobox/) de multipla escolha, para isso adicionamos a propriedade

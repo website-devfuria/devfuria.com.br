@@ -1,7 +1,8 @@
 ---
 title:       Text box multiline (textarea)
 description: Artigo a respeito do controle textbox-multline (formulário web) - HTML e CSS
-menu:        html-forms
+serie:       Controles Básicos (não input)
+ordem:       3
 ---
 
 Sabe aquelas textbox grandonas? São as textbox de várias linhas ou __textbox multiline__.

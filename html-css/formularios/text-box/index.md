@@ -1,7 +1,8 @@
 ---
 title:       Textbox (input type=text)
 description: Artigo a respeito do controle textbox (formulário web) - HTML e CSS
-menu:        html-forms
+serie:       Controles Básicos (input)
+ordem:       2
 ---
 
 A caixa de texto, de longe, é o controle mais utilizado.

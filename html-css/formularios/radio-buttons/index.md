@@ -1,7 +1,8 @@
 ---
 title:       Botões de opção (input type=radio)
 description: Artigo a respeito do controle radio button (formulário web) - HTML e CSS
-menu:        html-forms
+serie:       Controles Básicos (input)
+ordem:       5
 ---
 
 Os __radio buttons__ são como uma opção entre, no mínimo, duas.

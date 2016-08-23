@@ -1,6 +1,8 @@
 ---
 title:       Formulários web e seus controles
 description: Tudo o que você precisa saber sobre Formulários Web e seus controles.
+serie:       Controles Básicos (input)
+ordem:       1
 ---
 
 Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
@@ -42,8 +44,13 @@ idade=36
 
 Alterando-se a propriedade `type` podemos obter os seguintes controles:
 
+- Textbox (input type="text")
+- Campos de senha (input type="password")
+- Caixa de checagem (input type="checkbox")
+- Botões de opção (input type="radio")
+- Botões (button, submit e reset)
+- Enviando arquivos (input type="file")
 
-{% include /menus/html-forms-input.html %}
 
 
 
@@ -52,4 +59,6 @@ Controles básicos (não input)
 
 Nesta categoria encontram-se os controles "combo box", "list box" e "text box multiline":
 
-{% include /menus/html-forms-ninput.html %}
+- Caixa de seleção (combo box)
+- Caixa de multipla seleção (list box)
+- Text box multiline (text area)

@@ -17,12 +17,12 @@ gems:
   - jekyll-sitemap
 
 # Para atualizar mais rápido...
-exclude: 
+exclude:
     - javascript
     - php
     - python
     - logica-de-programacao
-    - html-css
+#    - html-css
     - sql
     - misc
     - regex

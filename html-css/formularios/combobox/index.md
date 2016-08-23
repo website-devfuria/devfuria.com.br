@@ -1,7 +1,8 @@
 ---
 title:       Caixa de seleção (combo box)
 description: Artigo a respeito do controle combobox. select (formulário web) - HTML e CSS
-menu:        html-forms
+serie:       Controles Básicos (não input)
+ordem:       1
 ---
 
 A caixa de seleção, vulgo __combobox__ é um controle parecido com um "menu de opções", veja a imagem abaixo.
