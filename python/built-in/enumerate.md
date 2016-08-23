@@ -75,4 +75,4 @@ for key, value in enumerate(["p", "y", "t", "h", "o", "n"]):
 ```
 
 
-{% include /menus/python-built-in-index.html %}
+{% include /alertas/python-built-in-index.html %}

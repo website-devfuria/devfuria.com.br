@@ -97,4 +97,4 @@ for x in zip(list_a, list_b):
 ```
 
 
-{% include /menus/python-built-in-index.html %}
+{% include /alertas/python-built-in-index.html %}

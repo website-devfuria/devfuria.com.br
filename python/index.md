@@ -19,7 +19,17 @@ Começando com Python
 
 Conheça o básico da sintaxe de Python através deste artigo [O básico da sintaxe de Python](./sintaxe-basica/).
 
-{% include menus/python-basico.html %}
+<div class="list-group">
+    <a href="/python/strings/" class="list-group-item">O básico sobre strings</a>
+    <a href="/python/saidas-output/" class="list-group-item">O básico sobre saídas (output)</a>
+    <a href="/python/estruturas-condicionais/" class="list-group-item">O básico sobre estrutura condicionais</a>
+    <a href="/python/lacos-de-repeticao/" class="list-group-item">O básico sobre laços de repetição</a>
+    <a href="/python/functions/" class="list-group-item">O básico de funções</a>
+    <a href="/python/listas/" class="list-group-item">O básico de listas</a>
+    <a href="/python/dicionarios-dictionaries/" class="list-group-item">O básico sobre dicionários</a>
+    <a href="/python/sequencias-fatiamento/" class="list-group-item">Operadores e fatiamento de sequências</a>
+    <a href="/python/erros-excecoes/" class="list-group-item">Erros e exceções</a>
+</div>
 
 
 Lógica de programação
@@ -51,8 +61,14 @@ Após essa maratona de exercícios (acima), eu sugiro que você pratique os exer
 as funções até os testes passarem. Os exercícios, por serem mais elaborados, são mais próximos da realidade do 
 desenvolvimento de software, eu apenas traduzi os  enunciados.
 
-{% include menus/python-google.html %}
-
+<div class="list-group">
+    <a href="/python/google-exercises-string1/" class="list-group-item">Exercícios Básicos - Strings 1</a>
+    <a href="/python/google-exercises-string2/" class="list-group-item">Exercícios Básicos - Strings 2</a>
+    <a href="/python/google-exercises-list1/" class="list-group-item">Exercícios Básicos - List 1</a>
+    <a href="/python/google-exercises-list2/" class="list-group-item">Exercícios Básicos - List 2</a>
+    <a href="/python/google-exercises-hello-sys-argv/" class="list-group-item">Hello Word com sys.argv</a>
+    <a href="/python/google-exercises-wordcount/" class="list-group-item">Exercícios Básicos - word count</a>
+</div>
 
 
 
@@ -79,6 +95,9 @@ Artigos diversos
 </div>
 
 
+
+Built in fuctions
+---
 
 {% include menus/python-built-in.html %}
 

@@ -50,4 +50,4 @@ Mas podemos convertê-los para string e, em seguida, converter para lista.
 ['1', '2', '3']
 ```
 
-{% include /menus/python-built-in-index.html %}
+{% include /alertas/python-built-in-index.html %}
