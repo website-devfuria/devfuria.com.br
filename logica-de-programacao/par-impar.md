@@ -1,7 +1,8 @@
 ---
 title:       Valor par ou ímpar
 description: Exercício de lógica de programação para descobrir se um número é par ou ímpar.
-menu:        logica-exercicios
+serie:       Lógica Nível 2
+ordem:       2
 ---
 
 {% include /menus/logica-paraquedas.html %}

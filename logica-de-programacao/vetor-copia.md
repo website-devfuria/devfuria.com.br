@@ -1,7 +1,8 @@
 ---
-title:       Vetor cópia
+title:       Vetor cópia - algoritmo para copiar um vetor
 description: Exercício de lógica de programação envolvendo vetor.
-menu:        logica-exercicios
+serie:       Lógica Nível 4 vetores
+ordem:       3
 ---
 
 {% include /menus/logica-paraquedas.html %}

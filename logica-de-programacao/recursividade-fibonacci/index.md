@@ -1,7 +1,8 @@
 ---
 title:       Fibonacci (recursão)
 description: Faça um algoritmo que calcule<br ?>a sequencia de Fibonacci
-menu:        logica-exercicios
+serie:       Lógica Nível 6
+ordem:       4
 ---
 
 {% include /menus/logica-paraquedas.html %}

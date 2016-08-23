@@ -1,7 +1,8 @@
 ---
-title:       Introdução ao<br /> algoritmo de ordenação<br />Bubble Sort
+title:       Introdução ao algoritmo de ordenação Bubble Sort
 description: 
-menu:        logica-exercicios
+serie:       Lógica Nível 7
+ordem:       1
 ogimage:     algoritmo-bubble-sort.png 
 ---
 

@@ -1,7 +1,8 @@
 ---
 title:       Número primo
 description: Exercício de lógica de programação para descobrir se um número é primo.
-menu:        logica-exercicios
+serie:       Lógica Nível 3
+ordem:       1
 ---
 
 {% include /menus/logica-paraquedas.html %}

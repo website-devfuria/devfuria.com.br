@@ -1,7 +1,8 @@
 ---
 title:       Exemplos na linguagem C do algoritmo Bubble Sort
 description: 
-menu:        logica-exercicios
+serie:       Lógica Nível 7
+ordem:       2
 ---
 
 Ordenar um vetor é algo interessante.

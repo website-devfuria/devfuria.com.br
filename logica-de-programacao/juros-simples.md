@@ -1,7 +1,8 @@
 ---
 title:       Juros simples
 description: Exercício de lógica de programação. Como calcular o juros simples ?.
-menu:        logica-exercicios
+serie:       Lógica Nível 1
+ordem:       2
 ---
 
 {% include /menus/logica-paraquedas.html %}

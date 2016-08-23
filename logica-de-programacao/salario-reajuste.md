@@ -1,7 +1,8 @@
 ---
 title:       Reajustando o salário
 description: Exercício de lógica de programação. Calcular o reajuste do salário.
-menu:        logica-exercicios
+serie:       Lógica Nível 1
+ordem:       3
 ---
 
 {% include /menus/logica-paraquedas.html %}

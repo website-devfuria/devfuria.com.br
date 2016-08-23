@@ -1,7 +1,8 @@
 ---
 title:       MDC máximo divisor comum
 description: Exercício de lógica de programação  para descobrir o MDC (máximo divisor comum).
-menu:        logica-exercicios
+serie:       Lógica Nível 3
+ordem:       3
 ---
 
 {% include /menus/logica-paraquedas.html %}

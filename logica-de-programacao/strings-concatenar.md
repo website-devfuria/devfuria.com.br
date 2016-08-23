@@ -1,7 +1,8 @@
 ---
 title:       Concatenar duas strings
 description: Exercício de lógica de programação para concatenar duas strings.
-menu:        logica-exercicios
+serie:       Lógica Nível 4 strings
+ordem:       4
 ---
 
 {% include /menus/logica-paraquedas.html %}

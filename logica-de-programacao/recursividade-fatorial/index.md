@@ -1,7 +1,8 @@
 ---
 title:       Fatorial (recursão)
 description: Faça um algoritmo que calcule o fatorial
-menu:        logica-exercicios
+serie:       Lógica Nível 6
+ordem:       3
 ---
 
 {% include /menus/logica-paraquedas.html %}

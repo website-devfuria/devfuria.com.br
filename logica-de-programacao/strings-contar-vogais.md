@@ -1,7 +1,8 @@
 ---
 title:       Contar vogais
 description: Exercício de lógica de programação para contar a quantidade de vogais de uma string.
-menu:        logica-exercicios
+serie:       Lógica Nível 4 strings
+ordem:       2
 ---
 
 {% include /menus/logica-paraquedas.html %}

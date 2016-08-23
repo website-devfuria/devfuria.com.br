@@ -1,7 +1,8 @@
 ---
 title:       Conversor Celsius/Fahrenheit
 description: Exercício de lógica de programação para converter celsius em fahrenheit e vice versa.
-menu:        logica-exercicios
+serie:       Lógica Nível 2
+ordem:       6
 ---
 
 {% include /menus/logica-paraquedas.html %}

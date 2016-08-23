@@ -1,7 +1,8 @@
 ---
 title:       Juros simples (OOP)
 description: Exercício de lógica de programação (com testes unitários) para calcular o juros simples.
-menu:        logica-exercicios
+serie:       Lógica Nível 5
+ordem:       4
 ---
 
 {% include /menus/logica-paraquedas.html %}

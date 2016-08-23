@@ -1,7 +1,8 @@
 ---
 title:       Valores repetidos em vetor
 description: Exercício de lógica de programação para descobrir se em um determinado vetor existem ou não valores repetidos.
-menu:        logica-exercicios
+serie:       Lógica Nível 4 vetores
+ordem:       5
 ---
 
 {% include /menus/logica-paraquedas.html %}

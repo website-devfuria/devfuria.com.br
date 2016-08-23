@@ -1,7 +1,8 @@
 ---
 title:       Antecessor e sucessor de um número qualquer<br >(versão orientado a objeto)
 description: Exercício de lógica de programação resolvido cujo objetivo é encontrar o sucessor e antecessor de um número qualquer.
-menu:        logica-exercicios
+serie:       Lógica Nível 5
+ordem:       3
 ---
 
 {% include /menus/logica-paraquedas.html %}

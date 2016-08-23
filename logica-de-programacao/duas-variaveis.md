@@ -1,7 +1,8 @@
 ---
 title:       Trocar o valor de duas variáveis
 description: Exercício de lógica de programação para trocar o valor de duas variáveis.
-menu:        logica-exercicios
+serie:       Lógica Nível 0
+ordem:       6
 ---
 
 {% include /menus/logica-paraquedas.html %}

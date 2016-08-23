@@ -1,7 +1,8 @@
 ---
 title:       Área quadrada
 description: Exercício de lógica de programação resolvido onde o objetivo é encontrar a área quadrada.
-menu:        logica-exercicios
+serie:       Lógica Nível 0
+ordem:       2
 ---
 
 {% include /menus/logica-paraquedas.html %}

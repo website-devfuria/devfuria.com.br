@@ -25,13 +25,14 @@ utilizar muito o terminal.
 
 ### Exercícios nível 0 (mais fácil que a Seleção Brasileira...)
 
-{% include /menus/logica-exerc-nivel-00.html %}
-
+{% include get-serie.html page_serie="Lógica Nível 0" %}
+{% include menus.html %}
 
 
 ### Exercícios nível 1
 
-{% include /menus/logica-exerc-nivel-01.html %}
+{% include get-serie.html page_serie="Lógica Nível 1" %}
+{% include menus.html %}
 
 
 
@@ -40,7 +41,8 @@ utilizar muito o terminal.
 
 Exercícios de lógica envolvendo __funções__.
 
-{% include /menus/logica-exerc-nivel-02.html %}
+{% include get-serie.html page_serie="Lógica Nível 2" %}
+{% include menus.html %}
 
 
 
@@ -49,7 +51,8 @@ Exercícios de lógica envolvendo __funções__.
 
 Exercícios para treinar __laços de repetição__.
 
-{% include /menus/logica-exerc-nivel-03.html %}
+{% include get-serie.html page_serie="Lógica Nível 3" %}
+{% include menus.html %}
 
 
 
@@ -58,11 +61,13 @@ Exercícios para treinar __laços de repetição__.
 
 Exercícios para treinar __vetores__.
 
-{% include /menus/logica-exerc-nivel-04v.html %}
+{% include get-serie.html page_serie="Lógica Nível 4 vetores" %}
+{% include menus.html %}
 
 Ainda exercícios para treinar vetores, mas desta vez utilizando __strings__.
 
-{% include /menus/logica-exerc-nivel-04s.html %}
+{% include get-serie.html page_serie="Lógica Nível 4 strings" %}
+{% include menus.html %}
 
 
 
@@ -73,7 +78,8 @@ Exercícios para treinar __programação orientada a objetos__.
 Neste nível veremos como aliar os exercícios de lógica com a programação orientada a objetos. Você perceberá que os 
 exercícios são de fácil resolução, pois o objetivo é mais entender o paradigma OOP do que exercitar o raciocínio lógico.
 
-{% include /menus/logica-exerc-nivel-05.html %}
+{% include get-serie.html page_serie="Lógica Nível 5" %}
+{% include menus.html %}
 
 
 
@@ -81,7 +87,8 @@ exercícios são de fácil resolução, pois o objetivo é mais entender o parad
 
 Exercícios para treinar __recursividade__.
 
-{% include /menus/logica-exerc-nivel-06.html %}
+{% include get-serie.html page_serie="Lógica Nível 6" %}
+{% include menus.html %}
 
 
 
@@ -89,7 +96,8 @@ Exercícios para treinar __recursividade__.
 
 Exercícios para treinar algoritmos já consagrados.
 
-{% include /menus/logica-exerc-nivel-07.html %}
+{% include get-serie.html page_serie="Lógica Nível 7" %}
+{% include menus.html %}
 
 
 
@@ -97,7 +105,8 @@ Exercícios para treinar algoritmos já consagrados.
 
 Exercícios para treinar __ponteiros__.
 
-{% include /menus/logica-exerc-nivel-08.html %}
+{% include get-serie.html page_serie="Lógica Nível 8" %}
+{% include menus.html %}
 
 
 
@@ -105,7 +114,8 @@ Exercícios para treinar __ponteiros__.
 
 Introdução ao [Projeto Euler](https://projecteuler.net/ "link-externo").
 
-{% include /menus/logica-exerc-nivel-09.html %}
+{% include get-serie.html page_serie="Lógica Nível 9" %}
+{% include menus.html %}
 
 
 

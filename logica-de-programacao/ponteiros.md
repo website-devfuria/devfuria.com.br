@@ -1,7 +1,8 @@
 ---
 title:       Ponteiros
 description: Exercício de lógica  envolvendo ponteiros
-menu:        logica-exercicios
+serie:       Lógica Nível 8
+ordem:       1
 ---
 
 Este é o primeiro exercício envolvendo ponteiros da linguagem C.

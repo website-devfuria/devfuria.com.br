@@ -1,7 +1,8 @@
 ---
 title:       Inverter string
 description: Exercício de lógica de programação para inverter uma string.
-menu:        logica-exercicios
+serie:       Lógica Nível 4 strings
+ordem:       5
 ---
 
 {% include /menus/logica-paraquedas.html %}

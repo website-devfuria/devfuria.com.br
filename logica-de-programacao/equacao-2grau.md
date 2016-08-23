@@ -1,7 +1,8 @@
 ---
 title:       Equação de 2 grau
 description: Exercício de lógica de programação - bhaskara.
-menu:        logica-exercicios
+serie:       Lógica Nível 2
+ordem:       7
 ---
 
 {% include /menus/logica-paraquedas.html %}

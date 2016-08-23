@@ -1,7 +1,8 @@
 ---
 title:       Contar string
 description: Exercício de lógica de programação para contar a quantidade de caracteres de uma string qualquer.
-menu:        logica-exercicios
+serie:       Lógica Nível 4 strings
+ordem:       1
 ---
 
 {% include /menus/logica-paraquedas.html %}

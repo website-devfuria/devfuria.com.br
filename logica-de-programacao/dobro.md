@@ -1,7 +1,8 @@
 ---
 title:       O dobro de um número qualquer
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular o dobro de um número qualquer.
-menu:        logica-exercicios
+serie:       Lógica Nível 0
+ordem:       1
 ---
 
 {% include /menus/logica-paraquedas.html %}

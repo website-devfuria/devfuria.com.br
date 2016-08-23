@@ -1,7 +1,8 @@
 ---
 title:       Funções para as 4  operações artiméticas
 description: Escreva uma função para cada uma das quatro  operações matemáticas simples.
-menu:        logica-exercicios
+serie:       Lógica Nível 2
+ordem:       5
 ---
 
 {% include /menus/logica-paraquedas.html %}

@@ -1,7 +1,8 @@
 ---
 title:       Área quadrada e área cúbica
 description: Exercício de lógica de programação resolvido cujo objetivo é encontrar a área quadra e cúbica.
-menu:        logica-exercicios
+serie:       Lógica Nível 5
+ordem:       2
 ---
 
 {% include /menus/logica-paraquedas.html %}

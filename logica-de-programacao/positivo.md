@@ -1,7 +1,8 @@
 ---
 title:       Valor positivo ou negativo
 description: Exercício de lógica de programação para descobrir se um número é positivo ou negativo.
-menu:        logica-exercicios
+serie:       Lógica Nível 2
+ordem:       3
 ---
 
 {% include /menus/logica-paraquedas.html %}

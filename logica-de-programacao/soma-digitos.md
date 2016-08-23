@@ -1,7 +1,8 @@
 ---
 title:       Somar dígitos
 description: Exercício de lógica de programação para dígitos de um inteiro.
-menu:        logica-exercicios
+serie:       Lógica Nível 3
+ordem:       2
 ---
 
 {% include /menus/logica-paraquedas.html %}

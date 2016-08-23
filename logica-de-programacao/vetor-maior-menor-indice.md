@@ -1,7 +1,8 @@
 ---
 title:       Maior e menor índice do vetor
 description: Exercício de lógica de programação para descobrir o índice do maior e o menor valor do vetor.
-menu:        logica-exercicios
+serie:       Lógica Nível 4 vetores
+ordem:       4
 ---
 
 {% include /menus/logica-paraquedas.html %}

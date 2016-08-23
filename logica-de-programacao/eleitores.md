@@ -1,7 +1,8 @@
 ---
 title:       "Votos em relação ao total de eleitores "
 description: Exercício de lógica de programação onde calculamos o percentual de votos em relação ao total de eleitores.
-menu:        logica-exercicios
+serie:       Lógica Nível 1
+ordem:       4
 ---
 
 {% include /menus/logica-paraquedas.html %}

@@ -1,7 +1,8 @@
 ---
 title:       Projeto Euler
 description: Apresentando o projeto
-menu:        logica-exercicios
+serie:       Lógica Nível 9
+ordem:       2
 ---
 
 > "Project Euler exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the 

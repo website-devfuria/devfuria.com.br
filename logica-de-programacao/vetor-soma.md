@@ -1,7 +1,8 @@
 ---
-title:       Função para somar vetor
+title:       Vetor soma - função para somar vetor
 description: Exercício de lógica de programação. Criar função para somar vetor.
-menu:        logica-exercicios
+serie:       Lógica Nível 4 vetores
+ordem:       2
 ---
 
 {% include /menus/logica-paraquedas.html %}

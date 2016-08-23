@@ -1,7 +1,8 @@
 ---
 title:       Projeto Euler
 description: Problema 01
-menu:        logica-exercicios
+serie:       Lógica Nível 9
+ordem:       2
 ---
 
 Este é o primeiro problema do Projeto Euler.

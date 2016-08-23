@@ -1,7 +1,8 @@
 ---
 title:       Custo de fabricação de um carro
 description: Exercício de lógica de programação resolvido para descobrir o custo final de um carro.
-menu:        logica-exercicios
+serie:       Lógica Nível 1
+ordem:       1
 ---
 
 {% include /menus/logica-paraquedas.html %}

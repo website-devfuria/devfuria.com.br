@@ -1,7 +1,8 @@
 ---
-title:       Introdução ao  algoritmo de ordenação  Insertion Sort
+title:       Introdução ao algoritmo de ordenação Insertion Sort
 description:
-menu:        logica-exercicios
+serie:       Lógica Nível 7
+ordem:       3
 ---
 
 Este artigo trata do algoritmo de ordenação __Insertion Sort__.

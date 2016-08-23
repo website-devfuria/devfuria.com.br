@@ -1,7 +1,8 @@
 ---
 title:       Média simples de 3 números
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular a média simples.
-menu:        logica-exercicios
+serie:       Lógica Nível 0
+ordem:       4
 ---
 
 {% include /menus/logica-paraquedas.html %}

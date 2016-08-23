@@ -1,7 +1,8 @@
 ---
 title:       Somando números (recursão)
 description: faça um algoritmo que some os dígitos de 1 até n
-menu:        logica-exercicios
+serie:       Lógica Nível 6
+ordem:       2
 ---
 
 {% include /menus/logica-paraquedas.html %}

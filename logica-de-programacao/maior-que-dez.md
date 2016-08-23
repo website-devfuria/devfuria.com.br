@@ -1,7 +1,8 @@
 ---
 title:       Maior que 10
 description: Exercício de lógica de programação para descobrir se valor é maior ou menor que 10.
-menu:        logica-exercicios
+serie:       Lógica Nível 2
+ordem:       4
 ---
 
 {% include /menus/logica-paraquedas.html %}

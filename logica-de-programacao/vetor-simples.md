@@ -1,7 +1,8 @@
 ---
-title:       Vetor simples
+title:       Vetor simples - algoritmo para carregar um vetor
 description: Exercício de lógica de programação os diversos tipos de laços.
-menu:        logica-exercicios
+serie:       Lógica Nível 4 vetores
+ordem:       1
 ---
 
 {% include /menus/logica-paraquedas.html %}
