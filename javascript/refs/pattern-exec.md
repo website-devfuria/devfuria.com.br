@@ -1,7 +1,8 @@
 ---
 title:       JavaScript  pattern.exec()
 description: Referência prática da função exec()
-menu:        javascript-regex
+serie:       JavaScript e Expressão Regular
+ordem:       2
 ---
 
 Em JavaScript também temos a forma `pattern.exec()`.
@@ -39,11 +40,3 @@ console.log(resultado['input']) // "Casa com a palavra exemplo."
 Se a expressão não casar, o valor da variável `resultado` será `null`.
 
 Se a expressão estiver sintaticamente errada o script será interrompido.
-
-
-
-Veja também
----
-
-...nossa seção sobre [expressões regulares](/regex/) e a matéria [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
-na mesma seção.

@@ -1,7 +1,8 @@
 ---
 title:       Opção global g  olhando vários resultados
 description: Referência prática sobre a opção global g (expressões regulares)
-menu:        javascript-regex
+serie:       JavaScript e Expressão Regular
+ordem:       5
 ---
 
 Como trabalhamos com mais de um resultado?
@@ -100,10 +101,3 @@ if (resultado) {
     console.log("não casou", resultado);
 }
 ```
-
-
-Veja também
----
-
-...nossa seção sobre [expressões regulares](/regex/) e a matéria [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
-na mesma seção.

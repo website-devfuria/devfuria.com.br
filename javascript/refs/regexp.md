@@ -1,7 +1,8 @@
 ---
 title:       JavaScript  RegExp()
 description: Referência prática da função RegExp()
-menu:        javascript-regex
+serie:       JavaScript e Expressão Regular
+ordem:       4
 ---
 
 
@@ -44,11 +45,3 @@ Uma vez com a expressão regular compilada podemos executá-la em qualquer uma d
 [test()](/javascript/refs/pattern-test/), 
 [exec()](/javascript/refs/pattern-exec/) e 
 [match()](/javascript/refs/string-match/).
-
-
-
-Veja também
----
-
-...nossa seção sobre [expressões regulares](/regex/) e a matéria [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
-na mesma seção.

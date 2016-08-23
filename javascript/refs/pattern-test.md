@@ -1,7 +1,8 @@
 ---
 title:       JavaScript  pattern.test()
 description: Referência prática da função test()
-menu:        javascript-regex
+serie:       JavaScript e Expressão Regular
+ordem:       1
 ---
 
 Em JavaScript também temos a forma `pattern.test()`.
@@ -29,10 +30,3 @@ O valor da variável `resultado` será `true` ou `false`.
 Se a expressão não casar ela retorna-rá `false`.
 
 Se a expressão estiver sintaticamente errada o script será interrompido.
-
-
-Veja também
----
-
-...nossa seção sobre [expressões regulares](/regex/) e a matéria [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
-na mesma seção.

@@ -1,7 +1,8 @@
 ---
 title:       JavaScript  string.match()
 description: Referência prática da função match()
-menu:        javascript-regex
+serie:       JavaScript e Expressão Regular
+ordem:       3
 ---
 
 Em JavaScript também temos a forma `string.match()`.
@@ -35,11 +36,3 @@ console.log(resultado['input']) // "Casa com a palavra exemplo."
 Se a expressão não casar, o valor da variável `resultado` será `null`.
 
 Se a expressão estiver sintaticamente errada o script será interrompido.
-
-
-
-Veja também
----
-
-...nossa seção sobre [expressões regulares](/regex/) e a matéria [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
-na mesma seção.
