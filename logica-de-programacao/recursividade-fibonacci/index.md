@@ -5,7 +5,7 @@ serie:       Lógica Nível 6
 ordem:       4
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 
 Exercício de lógica de programação

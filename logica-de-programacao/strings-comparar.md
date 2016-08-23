@@ -5,7 +5,7 @@ serie:       Lógica Nível 4 strings
 ordem:       3
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -173,4 +173,4 @@ O laço de repetição é trivial.
 
 
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}

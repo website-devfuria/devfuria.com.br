@@ -5,7 +5,7 @@ serie:       Lógica Nível 0
 ordem:       1
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -180,4 +180,4 @@ try {
 }
 ```
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}

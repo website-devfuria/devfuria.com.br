@@ -5,7 +5,7 @@ serie:       Lógica Nível 5
 ordem:       2
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -243,4 +243,4 @@ function Area(){
 };
 ```
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}

@@ -5,7 +5,7 @@ serie:       Lógica Nível 3
 ordem:       2
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -280,4 +280,4 @@ try {
 
 
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}

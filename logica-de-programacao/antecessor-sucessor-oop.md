@@ -5,7 +5,7 @@ serie:       Lógica Nível 5
 ordem:       3
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -200,4 +200,4 @@ assert 11 == Calc.sucessor(10)
 ```
 
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}

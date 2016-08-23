@@ -5,7 +5,7 @@ serie:       Lógica Nível 4 strings
 ordem:       1
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -187,4 +187,4 @@ Sem comentários...
 7
 ```
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}

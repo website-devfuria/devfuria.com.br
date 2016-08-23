@@ -5,7 +5,7 @@ serie:       Lógica Nível 4 strings
 ordem:       5
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -193,4 +193,4 @@ var reverseString = function(text) {
 
 
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}

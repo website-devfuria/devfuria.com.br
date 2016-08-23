@@ -5,7 +5,7 @@ serie:       Lógica Nível 5
 ordem:       4
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -268,4 +268,4 @@ A solução apresentada tanto em JavaScript como em Python não são as mais ind
 objeto era ilustrarmos as particularidades de cada linguagem ao invé de simplesmente resolver o enunciado.
 
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}

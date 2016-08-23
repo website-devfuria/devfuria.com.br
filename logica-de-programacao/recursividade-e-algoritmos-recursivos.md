@@ -5,7 +5,7 @@ serie:       Lógica Nível 6
 ordem:       1
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Função recursiva é aquela que invoca a si mesma.
 

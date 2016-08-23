@@ -5,7 +5,7 @@ serie:       Lógica Nível 4 vetores
 ordem:       3
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -214,4 +214,4 @@ Para comparar dois arrays precisamos usar `deepEqual()` ao invés de `equal()`.
 
 
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}

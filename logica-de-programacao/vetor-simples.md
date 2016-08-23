@@ -5,7 +5,7 @@ serie:       Lógica Nível 4 vetores
 ordem:       1
 ---
 
-{% include /menus/logica-paraquedas.html %}
+{% include /alertas/logica-paraquedas.html %}
 
 Exercício de lógica de programação
 ---
@@ -218,4 +218,4 @@ Obs: O conceito de vetor em JavaScript resume-se em um array, ou seja, um vetor 
 
 
 
-{% include /menus/logica-feedback.html %}
+{% include /alertas/logica-feedback.html %}
