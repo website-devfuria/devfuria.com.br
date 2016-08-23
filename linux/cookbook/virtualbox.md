@@ -1,6 +1,8 @@
 ---
 title:       Instalando o VirtualBox no Linux
 description: Aprenda como instalar o VirtualBox no Linux
+serie:       VirtualBox
+ordem:       1
 ---
 
 

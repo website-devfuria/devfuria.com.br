@@ -55,7 +55,8 @@ Veja mais [receitas de instalação](/linux/cookbook/).
 
 ### Série sobre o Virtual Box
 
-{% include /menus/linux-vbox.html %}
+{% include get-serie.html page_serie="VirtualBox" %}
+{% include menus.html %}
 
 
 ### Livros sobre Linux - para iniciantes

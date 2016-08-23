@@ -1,7 +1,8 @@
 ---
 title:       Compartilhando pastas no Virtual Box
 description: Aprenda como compartilhar pastas no Virtual Box
-menu:        linux-vbox
+serie:       VirtualBox
+ordem:       3
 ---
 
 Após instalado o __Virtual Box__ uma das primeira necessidades costuma ser compartilhar pastas entre sua máquina host
