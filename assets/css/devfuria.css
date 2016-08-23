@@ -19,7 +19,7 @@
         padding: 0 10em;
     }
     .intro h1 {
-        font-size: 5.75em;
+        font-size: 3.7em;
     }
     .start {
         font-size: 1.85em;
@@ -28,7 +28,7 @@
 /* Desktop ??? */
 @media (min-width: 1024px) {
     .intro {
-        padding: 0 20em;
+        padding: 0 15em;
     }
 }
 
