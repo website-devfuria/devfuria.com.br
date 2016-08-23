@@ -1,10 +1,11 @@
 ---
-title:       Lista de exercícios da Google list 2
-description: Exercício extraído da lista Google Python Exercise  onde veremos como fazer um 'merge' com as listas
-menu:        python-google
+title:       Basic Python Exercises - list 2
+description: Exercício onde veremos como fazer um 'merge' com as listas
+serie:       Google Python Exercise
+ordem:       4
 ---
 
-{% include /menus/python-google-paraquedas.html %}
+{% include /alertas/python-google-paraquedas.html %}
 
 ```python
 #!/usr/bin/python -tt

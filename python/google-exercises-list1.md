@@ -1,10 +1,11 @@
 ---
-title:       Lista de exercícios da Google list 1
-description: Exercício extraído da lista Google Python Exercise  onde trabalharemos com tuplas, .sort(), sorted() e fatimanto de sequencias.
-menu:        python-google
+title:       Basic Python Exercises - list 1
+description: Exercício onde trabalharemos com tuplas, .sort(), sorted() e fatimanto de sequencias.
+serie:       Google Python Exercise
+ordem:       3
 ---
 
-{% include /menus/python-google-paraquedas.html %}
+{% include /alertas/python-google-paraquedas.html %}
 
 ```python
 #!/usr/bin/python -tt

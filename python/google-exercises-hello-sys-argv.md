@@ -1,7 +1,8 @@
 ---
-title:       Hello Word com sys.argv
-description: Artigo baseado na lista de exercícios do Google Python Exercise que demosntra um 'Hello World' utilizando a propriedade sys.argv
-menu:        python-google
+title:       Basic Python Exercises - sys.argv
+description: Exercício que demosntra um 'Hello World' utilizando a propriedade sys.argv
+serie:       Google Python Exercise
+ordem:       6
 ---
 
 Este é o exemplo de "Hello Word" da Google, apesar de simples não pude deixar de incluí-lo pois

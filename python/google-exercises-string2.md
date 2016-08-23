@@ -1,10 +1,11 @@
 ---
-title:       Lista de exercícios da Google strings 2
-description: Exercício extraído da lista Google Python Exercise  onde veremos a função .find(), operador módulo (%) e fatiamento de sequencias
-menu:        python-google
+title:       Basic Python Exercises - strings 2
+description: Exercício onde veremos a função .find(), operador módulo (%) e fatiamento de sequencias
+serie:       Google Python Exercise
+ordem:       2
 ---
 
-{% include /menus/python-google-paraquedas.html %}
+{% include /alertas/python-google-paraquedas.html %}
 
 ```python
 #!/usr/bin/python -tt

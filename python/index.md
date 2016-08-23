@@ -61,14 +61,8 @@ Após essa maratona de exercícios (acima), eu sugiro que você pratique os exer
 as funções até os testes passarem. Os exercícios, por serem mais elaborados, são mais próximos da realidade do 
 desenvolvimento de software, eu apenas traduzi os  enunciados.
 
-<div class="list-group">
-    <a href="/python/google-exercises-string1/" class="list-group-item">Exercícios Básicos - Strings 1</a>
-    <a href="/python/google-exercises-string2/" class="list-group-item">Exercícios Básicos - Strings 2</a>
-    <a href="/python/google-exercises-list1/" class="list-group-item">Exercícios Básicos - List 1</a>
-    <a href="/python/google-exercises-list2/" class="list-group-item">Exercícios Básicos - List 2</a>
-    <a href="/python/google-exercises-hello-sys-argv/" class="list-group-item">Hello Word com sys.argv</a>
-    <a href="/python/google-exercises-wordcount/" class="list-group-item">Exercícios Básicos - word count</a>
-</div>
+{% include get-serie.html page_serie="Google Python Exercise" %}
+{% include menus.html %}
 
 
 

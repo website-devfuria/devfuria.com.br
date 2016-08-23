@@ -1,10 +1,11 @@
 ---
-title:       Lista de exercícios da Google word count
-description: Exercício extraído da lista Google Python Exercise  onde veremos manipulação básica de arquivo, tuplas,  além funções como sorted(), .split() e .keys().
-menu:        python-google
+title:       Basic Python Exercises - word count
+description: Exercício onde veremos manipulação básica de arquivo, tuplas,  além funções como sorted(), .split() e .keys().
+serie:       Google Python Exercise
+ordem:       5
 ---
 
-{% include /menus/python-google-paraquedas.html %}
+{% include /alertas/python-google-paraquedas.html %}
 
 ### Exercício
 
