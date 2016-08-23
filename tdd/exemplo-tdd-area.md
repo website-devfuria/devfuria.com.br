@@ -1,10 +1,9 @@
 ---
 title:       "Simples exemplo de TDD  Cálculo da área"
 description: Este artigo é um exemplo de TDD escrito na linguagem Python  que tem como objetivo criar uma classe para representar  a área (geometria)
-menu:        tdd-exemplos-simples
 ---
 
-{% include /menus/tdd-exemplos-simples-paraquedas.html %}
+{% include /alertas/tdd-paraquedas.html %}
 
 Seu objetivo é construir uma classe denominada `Area` que calcule tanto a área quadrada (primeiro método) como a
 área cúbica (segundo método). Faremos uso de programação orientada a objetos, 
@@ -113,8 +112,10 @@ if __name__ == '__main__':
 ```
 
 
-
-Próximo exemplo de TDD
----
-
-- [Simples exemplo de TDD - Triângulo](/tdd/exemplo-tdd-triangulo/)
+{% include call.html
+    style="success"
+    title="Próximo exemplo de TDD..."
+    descr="Simples exemplo de TDD - Triângulo"
+    href="/tdd/exemplo-tdd-triangulo/"
+    label="Ver matéria!"
+%}

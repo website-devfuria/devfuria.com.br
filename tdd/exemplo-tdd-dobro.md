@@ -1,10 +1,9 @@
 ---
 title:       "Simples exemplo de TDD   O dobro de um número qualquer"
 description: Primeiro artigo de uma série de exemplos básicos de  TDD (Test Driven Development) escrito na linguagen Python
-menu:        tdd-exemplos-simples
 ---
 
-{% include /menus/tdd-exemplos-simples-paraquedas.html %}
+{% include /alertas/tdd-paraquedas.html %}
 
 Este é o primeiro exemplo de TDD da série de exemplos na __linguagem Python__. Ele é extremamente simples por razões
 didáticas. Ela reflete pouco, ou quase nada (me lembrei do seu Madruga), de TDD. Mas deve ajudar, assim espero, a quem
@@ -130,9 +129,10 @@ o melhor de tudo, funcionando!
 E quem garante que seu código funciona? Os testes.
 
 
-Próximo exemplo
----
-
-- [Simples exemplo de TDD - O dobro de um número qualquer (funções)](/tdd/exemplo-tdd-dobro-func/)
-
-
+{% include call.html
+    style="success"
+    title="Próximo exemplo de TDD..."
+    descr="Simples exemplo de TDD - O dobro de um número qualquer (funções)"
+    href="/tdd/exemplo-tdd-dobro-func/"
+    label="Ver matéria!"
+%}

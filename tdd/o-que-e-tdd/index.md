@@ -136,17 +136,3 @@ Novamente, pergunte para os testes.
 E aí passaram?
 
 Fim o jogo.
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,9 @@
 ---
 title:       "Simples exemplo de TDD <br>O dobro de um número qualquer (OOP)"
 description: Este artigo é um exemplo de TDD escrito na linguagem Python  onde nosso objetivo é criar uma pequena classe, portanto faremos uso de OOP,  contendo um único método que nos informe o dobro de um número qualquer
-menu:        tdd-exemplos-simples 
 ---
 
-{% include /menus/tdd-exemplos-simples-paraquedas.html %}
+{% include /alertas/tdd-paraquedas.html %}
 
 Este exercício é um quebra gelo, o objetivo é dar o primeiro passo em relação a Programação Orientada a Objetos.
 
@@ -106,9 +105,10 @@ if __name__ == '__main__':
 ```
 
 
-
-
-Próximo exemplo de TDD
----
-
-- [Simples exemplo de TDD - Juros simples](/tdd/exemplo-tdd-juros-simples/)
+{% include call.html
+    style="success"
+    title="Próximo exemplo de TDD..."
+    descr="Simples exemplo de TDD - Juros simples"
+    href="/tdd/exemplo-tdd-juros-simples/"
+    label="Ver matéria!"
+%}

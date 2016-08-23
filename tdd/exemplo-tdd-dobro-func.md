@@ -1,10 +1,8 @@
 ---
 title:       "Simples exemplo de TDD  O dobro de um número qualquer (funções)"
 description: Exemplo básico de TDD onde iremos desenvolver uma função para calcular o dobro de um número qualquer.
-menu:        tdd-exemplos-simples
 ---
-
-{% include /menus/tdd-exemplos-simples-paraquedas.html %}
+{% include /alertas/tdd-paraquedas.html %}
 
 Este é o segundo exercício de TDD, seria bom se você já tivesse lido o exemplo anterior.
 
@@ -122,9 +120,10 @@ O que aprendemos com o TDD?
 4. Um teste falhando é sinal de progresso.
 
 
-
-
-Próximo exemplo
----
-
-- [Simples exemplo de TDD - O dobro de um número qualquer (OOP)](/tdd/exemplo-tdd-dobro-oop/)
+{% include call.html
+    style="success"
+    title="Próximo exemplo de TDD..."
+    descr="Simples exemplo de TDD - O dobro de um número qualquer (OOP)"
+    href="/tdd/exemplo-tdd-dobro-oop/"
+    label="Ver matéria!"
+%}

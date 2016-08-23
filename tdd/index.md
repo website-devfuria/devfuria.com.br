@@ -1,5 +1,6 @@
 ---
-title:  TDD (Test Driven Development)
+title:       TDD (Test Driven Development)
+description: Test Driven Development com exemplos práticos
 ---
 
 Seja bem vindo(a) a seção TDD (Test Driven Development)!
@@ -33,4 +34,11 @@ Sequência de exemplos de TDD escritos nas linguagens Python.
 
 Todos os exemplos são muito fáceis de seguir, eles são indicados para os "iniciantes iniciando" em TDD.
 
-{% include /menus/tdd-exemplos-simples.html %}
+<div class="list-group">
+    <a href="/tdd/exemplo-tdd-dobro/" class="list-group-item">O dobro de um número qualquer (estruturado)</a>
+    <a href="/tdd/exemplo-tdd-dobro-func/" class="list-group-item">O dobro de um número qualquer (funções)</a>
+    <a href="/tdd/exemplo-tdd-dobro-oop/" class="list-group-item">O dobro de um número qualquer (orientado a objetos)</a>
+    <a href="/tdd/exemplo-tdd-juros-simples/" class="list-group-item">Juros simples</a>
+    <a href="/tdd/exemplo-tdd-area/" class="list-group-item">Cálculo da área</a>
+    <a href="/tdd/exemplo-tdd-triangulo/" class="list-group-item">Triangulo</a>
+</div> 

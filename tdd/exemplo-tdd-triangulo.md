@@ -1,10 +1,9 @@
 ---
 title:       "Simples exemplo de TDD  Triângulo"
 description: Exemplo de TDD na linguagem Python fazendo uso de programação orientada a objetos onde construiremos uma classe que representa um triângulo (geometria)
-menu:        tdd-exemplos-simples
 ---
 
-{% include /menus/tdd-exemplos-simples-paraquedas.html %}
+{% include /alertas/tdd-paraquedas.html %}
 
 Vamos construindo um pequeno código na linguagem Python utilizando programação orientada a objetos.
 
@@ -314,11 +313,5 @@ class MyCalcTest(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-
-
-
-
-Próximo exemplo
----
 
 Este é o último exercício sobre TDD da série "básico".

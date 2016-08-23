@@ -1,10 +1,9 @@
 ---
 title:       "Simples exemplo de TDD  Juros simples"
 description: Pequeno exemplo de TDD na linguagem Python utilizando-se de programação orientada a objeto  para criar uma classe com um método  que retorne o juros simples.
-menu:        tdd-exemplos-simples
 ---
 
-{% include /menus/tdd-exemplos-simples-paraquedas.html %}
+{% include /alertas/tdd-paraquedas.html %}
 
 Neste artigo iremos construir um pequeno código na __linguagem Python__ utilizando a técnica de 
 programação orientada a objetos. Nosso objetivo é definir uma classe para calcular o juros simples segundo a fórmula abaixo.
@@ -88,8 +87,10 @@ Este exemplo é simples e curto, mas ele passa um lição importante, que está 
 com TDD: __os testes ajudam a documentar o funcionamento do código.__
 
 
-
-Próximo exemplo de TDD
----
-
-- [Simples exemplo de TDD - Cálculo da área](/tdd/exemplo-tdd-area/)
+{% include call.html
+    style="success"
+    title="Próximo exemplo de TDD..."
+    descr="Simples exemplo de TDD - Cálculo da área"
+    href="/tdd/exemplo-tdd-area/"
+    label="Ver matéria!"
+%}
