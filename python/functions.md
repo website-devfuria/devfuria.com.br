@@ -1,7 +1,6 @@
 ---
 title:       Python - O básico de funções
 description: O básico de funções em Python
-menu:        python-basico
 ---
 
 

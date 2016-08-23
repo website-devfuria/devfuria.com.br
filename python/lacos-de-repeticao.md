@@ -1,7 +1,6 @@
 ---
 title:       Python - Laços de repetição
 description: O básico sobre laços de repetição em Python
-menu:        python-basico
 ---
 
 ### for

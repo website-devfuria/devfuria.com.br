@@ -1,7 +1,6 @@
 ---
 title:       Python - saídas (output)
 description: O básico sobre saídas (output) em Python
-menu:        python-basico
 ---
 
 Para exibirmos o resultado de nosso script utilizamos da função `print()`.

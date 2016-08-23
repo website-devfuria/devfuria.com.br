@@ -1,7 +1,6 @@
 ---
 title:       Python - O básico sobre string
 description: O básico sobre strings em Python
-menu:        python-basico
 ---
 
 Em Python 3 tudo é objeto e uma string é do tipo `str`.
