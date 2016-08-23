@@ -18,8 +18,8 @@ Seja bem vindo(a) a seção sobre Expressões Regulares!
 
 ### Metacracteres
 
-{% include get-serie.html page_serie="Metacaracteres" %} 
-{% include menus.html %} 
+{% include get-serie.html page_serie="Metacaracteres" %}
+{% include menus.html %}
 
 
 
@@ -27,7 +27,8 @@ Seja bem vindo(a) a seção sobre Expressões Regulares!
 
 Subceção sobre [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
 
-include menus/javascript-regex.html
+{% include get-serie.html page_serie="JavaScript e Expressão Regular" %}
+{% include menus.html %}
 
 
 
@@ -35,7 +36,8 @@ include menus/javascript-regex.html
 
 Subceção sobre [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
 
-{% include menus.html menus=site.data.menus.php-regex %}
+{% include get-serie.html page_serie="PHP e Expressão Regular" %}
+{% include menus.html %}
 
 
 

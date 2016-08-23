@@ -13,7 +13,8 @@ Se você caiu nesta página de para quedas não deixe de ler a [página principa
 
 ### Artigos sobre Expressões Regulares e JavaScript
 
-{% include /menus/javascript-regex.html %}
+{% include get-serie.html page_serie="JavaScript e Expressão Regular" %}
+{% include menus.html %}
 
 
 <hr/>

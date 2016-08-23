@@ -73,7 +73,8 @@ Aprenda com esta série como trabalhar com números randômicos em JS.
 Em JavaScript temos 3 funções para tratarmos as [expressões regulares](/regex/): `test()`, `exec()` e `match()` e a
 função construtora `RegExp()`.
 
-{% include /menus/javascript-regex.html %}
+{% include get-serie.html page_serie="JavaScript e Expressão Regular" %}
+{% include menus.html %}
 
 Veja também na seção sobre expressões regulares a matéria 
 [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/).

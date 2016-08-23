@@ -22,7 +22,7 @@ As funções do PREC são derivadas de `preg_macth()`.
 
 
 
-### Leia as matérias na seção PHP:
+### Leia as matérias na categoria PHP:
 
 {% include get-serie.html page_serie="PHP e Expressão Regular" %} 
 {% include menus.html %} 
