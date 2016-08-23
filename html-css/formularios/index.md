@@ -17,7 +17,7 @@ Abaixo, temos um exemplo de formulário.
 </form>
 ```
 
-Leia uma [Introdução aos formulários web](/html-css/formularios/intro-formularios-web/).
+Leia uma [Introdução aos formulários web](/html-css/introducao-formularios-web/).
 
 
 

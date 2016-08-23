@@ -9,9 +9,9 @@ a um elemento. Ao contrário de `id`, contudo, o valor de um atributo `name` nã
 podem ter o mesmo nome e isso é comum no caso de [botões de seleção](/html-css/formularios/radio-buttons/) e 
 [caixa de seleção](/html-css/formularios/combobox/) em formulários web. Além disso ao contrário de `id`, o atributo 
 `name` é válido somente em alguns elementos HTML, incluindo 
-[formulários](http://www.devfuria.com.br/html-css/formularios/intro-formularios-web/), 
+[formulários](http://www.devfuria.com.br/html-css/introducao-formularios-web/), 
 [elementos de formulário](http://www.devfuria.com.br/html-css/formularios/), tag `iframe` e tag 
-[img](http://www.devfuria.com.br/html-css/formularios/intro-formularios-web/).
+[img](http://www.devfuria.com.br/html-css/introducao-formularios-web/).
 
 ```javascript
 var elementos = document.getElementsByName("nome-dos-elementos");

@@ -156,7 +156,7 @@ label .feedback {
     font-weight: bold;
     color:#760000;
     padding-left: 18px;
-    background: url(http://www.devfuria.com.br/html-css/formularios/intro-formularios-web/error.png) no-repeat left top;
+    background: url(http://www.devfuria.com.br/html-css/introducao-formularios-web/error.png) no-repeat left top;
 }
 ```
 
