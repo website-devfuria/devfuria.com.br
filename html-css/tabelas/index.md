@@ -1,7 +1,6 @@
 ---
 title:       HTML & CSS - Tabelas 
 description:
-menu:        html-elementos  
 ---
 
 As tabelas acomodam dados tabulares.

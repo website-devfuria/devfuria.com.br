@@ -1,7 +1,6 @@
 ---
 title:       Introdução ao CSS
 description: Artigo introdutório sobre CSS - Cascading Style Sheet
-menu:        html-artigos-intro
 ---
 
 Para estilizar o HTML devemos utilizar a CSS.

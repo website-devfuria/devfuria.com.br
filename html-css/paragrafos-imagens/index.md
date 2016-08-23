@@ -1,7 +1,6 @@
 ---
 title:       HTML & CSS - Parágrafos e imagens 
 description:
-menu:        html-elementos  
 ---
 
 A tag `p` é muito comum, ela representa um parágrafo e, obviamente, acomoda textos.

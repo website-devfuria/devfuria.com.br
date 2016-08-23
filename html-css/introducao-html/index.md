@@ -1,7 +1,6 @@
 ---
 title:       Introdução ao HTML 
 description: 
-menu:        html-artigos-intro
 ---
 
 Tim Berners-Lee, a culpa é toda dele. No começo dos anos 90, o dito cujo, inventou o HTML (HyperText Markup Language) 

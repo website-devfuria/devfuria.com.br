@@ -1,7 +1,6 @@
 ---
 title:       Criando um HTML de primeira qualidade
 description: Aprenda a desenvolver um HTML de primeria qualidade com este exemplo da csszengarden.com
-menu:        html-artigos-intro
 ---
 
 O site [www.csszengarden.com](http://www.csszengarden.com/ "link-externo") é notório por seus esforços em promover e 
