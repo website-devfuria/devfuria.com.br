@@ -1,7 +1,8 @@
 ---
 title:       "Backbone Unindo Collections e Views"
 description: Artigo, com exemplos, que mostra como unir  uma coleção (collections) a uma visão (view)  no framework Backbone para JavaScript
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       11
 ---
 
 Este artigo é um exemplo de integração da Collections (coleção) e da View (visão) do framework Backbone. Indicado para
@@ -178,11 +179,3 @@ var friends = new Friends(null, options);
 // Ao adicionar um modelo `{name: "fulano"}` ele é retransmitido
 // como parâmetro para a função de callback
 friends.add({name: "fulano"});
-```
-
-
-
-Próximo artigo
---
-
-- [Backbone - Sincronizando um modelo (model)](/javascript/backbone-sincronizando-models/)

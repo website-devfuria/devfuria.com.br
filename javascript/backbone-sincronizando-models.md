@@ -1,7 +1,8 @@
 ---
 title:       Backbone Sincronizando um modelo (model)
 description: Como fazer requisições AJAX através de um model do framework Backbone considerando o conceito Restfull, veremos os métodos fetch(), save()  destroy().
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       12
 ---
 
 Esta talvez seja a parte tão esperada desta sequência de tutorias sobre o Backbone: como realizar operações AJAX com o
@@ -152,11 +153,3 @@ O código acima irá gerar a seguinte requisição.
 
     url:    http://localhost/person/1
     method: DELETE
-
-
-
-
-Próximo artigo
---
-
-- [Backbone - Sincronizando coleções (collections)](/javascript/backbone-sincronizando-collections/)

@@ -1,6 +1,8 @@
 ---
 title:       Framework Backbone (Javascript)
 description: Série de artigos (tutoriais) sobre o framework Backbone para JavaScript
+serie:       Introdução ao Backbone
+ordem:       0
 ---
 
 [Backbone](http://backbonejs.org/ "link-externo") é um framework MVC para Javascript.

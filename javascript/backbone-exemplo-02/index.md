@@ -1,7 +1,8 @@
 ---
 title:       "Backbone exemplo 02: Views aninhadas"
 description: Pequeno exemplo de script Backbone (JavaScript)  onde exploro views aninhadas.
-menu:        javascript-backbone
+serie:       Exemplos de códigos em Backbone
+ordem:       2
 ---
 
 Este é o segundo exemplo demonstrando o Backbone, ele é uma extensão do primeiro (o anterior). Por tanto, se você não

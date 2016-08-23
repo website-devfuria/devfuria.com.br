@@ -1,7 +1,8 @@
 ---
 title:       Backbone Sincronizando coleções (collections)
 description: Breve artigo demonstrando como sincronizar  uma collection (framework Backbone) com o servidor  através de uma requisição AJAX.
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       13
 ---
 
 Ja vimos, em matéria anterior, como sincronizar o models (modelos), nesta matéria veremos que também é possível 
@@ -50,9 +51,3 @@ Repare que são apenas essas 3 linhas, nada mais nada menos. Só isso o que seu 
 
 Após criar o arquivo execute seu código JavaScript e veja o resultado, é esperado que o procedimento de callback 
 `sucess`.
-
-
-Próximo artigo
---
-
-- [Backbone - Explorando o sync](/javascript/backbone-sync/)

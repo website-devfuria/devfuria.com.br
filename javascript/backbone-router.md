@@ -1,7 +1,8 @@
 ---
 title:       Backbone Definindo rotas (router)
 description: Neste artigo veremos como definir rotas através  de hashtags no framework Backbone em JavsScript.
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       15
 ---
 
 O Backbone possue rotas para hashtags.

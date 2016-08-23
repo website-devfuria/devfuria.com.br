@@ -1,7 +1,8 @@
 ---
 title:       Backbone Models
 description: Aprenda o básico sobre Models no framework Backbone para JavaScript,  veremos as funções get(), set() e toJSON().
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       6
 ---
 
 No paradigma MVC, os __models__ referem-se ao modelo, aos dados, as regras de negócio... no Backbone não é diferente.
@@ -136,9 +137,3 @@ console.log(JSON.stringify(music03));
 // "{"name":"Garota de Ipanema","compositor":"Tom Jobim e Vinícius de Moraes"}"
 // "{"name":"Aquarela","compositor":"Toquinho"}"
 ```
-
-
-Próximo artigo
---
-
-- [Backbone - Models e Eventos](/javascript/backbone-models-eventos/)

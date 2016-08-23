@@ -17,7 +17,12 @@ Também poderá executá-lo do lado do servidor (__back end__) em linha de coman
 
 ### Como começar a programar em JavaScript?
 
-{% include /menus/javascript-artigos-intro.html %}
+<div class="list-group">
+    <a href="/javascript/o-que-e-javascript/" class="list-group-item">O que é JavaScript?</a>
+    <a href="/javascript/iniciando-com-javascript/" class="list-group-item">Iniciando em JavaScript</a>
+    <a href="/javascript/sintaxe-basica/" class="list-group-item">O básico da sintaxe</a>
+    <a href="/javascript/livros-javascript/" class="list-group-item">Livros sobre JavaScript</a>
+</div> 
 
 
 Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/tracks/javascript "link-externo").
@@ -26,19 +31,56 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 
 ### Artigos 
 
-{% include /menus/javascript-artigos.html %}
+<div class="list-group">
+    <a href="/javascript/debugando/" class="list-group-item">Debugando (depurando)</a>
+    <a href="/javascript/code-somando/" class="list-group-item">Code - Somando</a>
+    <a href="/javascript/code-somando-testado/" class="list-group-item">Code - Somando (testado)</a>
+    <a href="/javascript/code-somando-refatorado/" class="list-group-item">Code - Somando (refatorado)</a>
+    <a href="/javascript/code-lampada/" class="list-group-item">Code - A lâmpada</a>
+    <a href="/javascript/code-contador/" class="list-group-item">Code - Liga e desliga contador</a>
+    <a href="/javascript/tratando-eventos/" class="list-group-item">Tratando Eventos (de navegadores)</a>        
+    <a href="/javascript/oop-primeiro-degrau/" class="list-group-item">OOP - primeiro degrau</a>
+    <a href="/javascript/coffescript/" class="list-group-item">CoffeScript</a>
+</div> 
 
 
 
 ### Referência
 
-{% include /menus/javascript-refs.html %}
+<div class="list-group">
+    <a href="/javascript/refs/typeof/" class="list-group-item">Operador typeof</a>
+    <a href="/javascript/refs/if-else/" class="list-group-item">Fluxo de controle, Condicional (if / else)</a>
+    <a href="/javascript/refs/operador-condicional-ternario/" class="list-group-item">Operador ternário condicional</a>
+    <a href="/javascript/refs/split/" class="list-group-item">Método split()</a>
+    <a href="/javascript/refs/arrays/" class="list-group-item">Arrays</a>
+    <a href="/javascript/refs/funcoes/" class="list-group-item">Funções</a>
+    <a href="/javascript/refs/funcoes-anonimas/" class="list-group-item">Funções anônimas</a>
+    <a href="/javascript/refs/funcoes-argumentos/" class="list-group-item">Funções - argumentos (arguments)</a>
+    <a href="/javascript/refs/objeto-global/" class="list-group-item">O objeto window e o espaço global</a>
+    <a href="/javascript/refs/prototipos-prototype/" class="list-group-item">O objeto prototype</a>
+    <a href="/javascript/refs/objeto-literal/" class="list-group-item">Objeto literal</a>
+</div> 
 
 
 
 ### DOM - Document Object Model
 
-{% include /menus/javascript-dom.html %}
+<div class="list-group">
+    <a href="/javascript/dom/" class="list-group-item">DOM - Document Object Model</a>
+    <a href="/javascript/dom-nodelist/" class="list-group-item">DOM - NodeList()</a>
+    <a href="/javascript/dom-getelementbyid/" class="list-group-item">DOM - getElementById()</a>
+    <a href="/javascript/dom-getelementsbyname/" class="list-group-item">DOM - getElementsByName()</a>
+    <a href="/javascript/dom-getelementsbytagname/" class="list-group-item">DOM - getElementsByTagName()</a>
+    <a href="/javascript/dom-getelementsbyclassname/" class="list-group-item">DOM - getElementsByClassName()</a>
+    <a href="/javascript/dom-queryselectorall/" class="list-group-item">DOM - querySelectorAll()</a>
+    <a href="/javascript/dom-reduzindo-acesso-ao-dom/" class="list-group-item">DOM -  Reduzindo acesso ao documento - em breve!</a>
+    <a href="/javascript/dom-manipulando-o-dom/" class="list-group-item">DOM - Manipulando o documento</a>
+    <a href="/javascript/dom-append-child/" class="list-group-item">DOM - appendChild()</a>
+    <a href="/javascript/dom-create-element/" class="list-group-item">DOM - createElement()</a>
+    <a href="/javascript/dom-create-text-node/" class="list-group-item">DOM - createTextNode()</a>
+    <a href="/javascript/dom-insert-before/" class="list-group-item">DOM - insertBefore()</a>
+    <a href="/javascript/dom-remove-child/" class="list-group-item">DOM - removeChild()</a>
+</div>
 
 
 
@@ -56,7 +98,12 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 
 Aprenda a trabalhar com cada controle de um formulário web.
 
-{% include /menus/javascript-forms.html %}
+<div class="list-group">
+    <a href="/javascript/forms/textbox-password-textarea/" class="list-group-item">Manipulando os controles text, password e textarea</a>
+    <a href="/javascript/forms/checkbox-checked/" class="list-group-item">Manipulando checkboxes</a>
+    <a href="/javascript/forms/input-radio-button/" class="list-group-item">Manipulando radios buttons</a>
+    <a href="/javascript/forms/select-combobox/" class="list-group-item">Manipulando combobox (select)</a>
+</div>
 
 
 
@@ -64,7 +111,11 @@ Aprenda a trabalhar com cada controle de um formulário web.
 
 Aprenda com esta série como trabalhar com números randômicos em JS.
 
-{% include /menus/javascript-rando.html %}
+<div class="list-group">
+    <a href="/javascript/numeros-aleatorios/" class="list-group-item">Como gerar números aleatórios em Javascript</a>
+    <a href="/javascript/gerar-numero-randomico-entre-2-numeros-quaisquer/" class="list-group-item">Um número randômico entre 2 números quaisquer</a>
+    <a href="/javascript/funcao-gerar-aleatorios-entre-2-numeros/" class="list-group-item">Função para gerar número randômico</a>
+</div> 
 
 
 
@@ -96,6 +147,7 @@ manipulam o elemento).
 Artigos sobre o framework Backbone
 
 {% include /menus/javascript-backbone.html %}
+
 
 
 ### Livros sobre JavaScript

@@ -1,7 +1,8 @@
 ---
 title:       "Backbone exemplo 05:  Duas visões e uma função de callback"
 description: Exemplo de código Backbone (JavaScript) que cria uma combobox  utilizando-se duas visões e uma função de callback.
-menu:        javascript-backbone
+serie:       Exemplos de códigos em Backbone
+ordem:       5
 ---
 
 Este exemplo é a evolução do anterior, portanto, caso acho um pouco complicado você terá a opção de ler o anterior para

@@ -1,7 +1,8 @@
 ---
 title:       Backbone Views e Templates
 description: Artigo que demonstra o funcionamento dos templates nas views do framework Backbone para JavaScript
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       3
 ---
 
 Este artigo é um segundo passo com as views do framework Backbone. Nele veremos o que são templates, códigos de exemplo 
@@ -173,9 +174,3 @@ var PesquisaView = Backbone.View.extend({
 });
 var pesquisa_view = new PesquisaView();
 ```
-
-
-Próximo artigo
---
-
-- [Backbone - Views e eventos](/javascript/backbone-views-eventos/)

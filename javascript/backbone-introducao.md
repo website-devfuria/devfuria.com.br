@@ -1,7 +1,8 @@
 ---
 title:       Backbone Introdução
 description: Este artigo é uma introdução ao framework Backbone para JavaScript, acompanha um Hello World.
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       1
 ---
 
 [Backbone](http://backbonejs.org/ "link-externo") é um framework MVC para Javascript.
@@ -186,10 +187,3 @@ Como dito, a maior dependência do Backbone é a biblioteca Underscore, então s
 
 - [backbonejs.org](http://backbonejs.org/ "link-externo")
 - [underscorejs.org/](http://underscorejs.org/ "link-externo")
-
-
-
-Próximo artigo
----
-
-- [Backbone - Views](/javascript/backbone-views/)

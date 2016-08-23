@@ -1,7 +1,8 @@
 ---
 title:       Backbone Explorando o sync
 description: Veremos neste artigo como explorar a função sync do framework Backbone em JavaScript para realizar requisições aos servidor do tipo AJAX.
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       14
 ---
 
 Se você caiu de paraquedas nesta página, estamos na seção __Backbone__ procurando entender como funciona o sync.
@@ -152,10 +153,3 @@ Crie um arquivo denominando` index.html` na pasta `[documentroot]/person/update/
 Só isso, apenas a linha acima, nada de tags `body`, `head` ou `html`.
 
 Execute novamente seu código JavaScript e veja sua requisição obter sucesso.
-
-
-
-Próximo artigo
---
-
-- [Backbone - Definindo rotas (router)](/javascript/backbone-router/)

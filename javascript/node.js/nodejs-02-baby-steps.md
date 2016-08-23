@@ -4,7 +4,7 @@ description: Segundo exercício (baby steps) do Node.js da lista learnyounode da
 menu:        javascript-ns
 ---
 
-{% include /menus/javascript-ns-paraquedas.html %}
+{% include /alertas/js-ns-paraquedas.html %}
 
 
 ### Exercício

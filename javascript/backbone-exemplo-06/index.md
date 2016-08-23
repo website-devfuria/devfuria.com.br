@@ -1,7 +1,8 @@
 ---
 title:       "Backbone exemplo 06: checkbox + Bootstrap"
 description: Pequeno exemplo de script Backbone (JavaScript) onde exploramos o controle HTML checkbox juntamente com o framework Bootstrap
-menu:        javascript-backbone
+serie:       Exemplos de códigos em Backbone
+ordem:       6
 ---
 
 Neste exemplo de aplicação Backbone vemos um pouco da lógica envolvida na utilização do elemento HTML __checkbox__, 

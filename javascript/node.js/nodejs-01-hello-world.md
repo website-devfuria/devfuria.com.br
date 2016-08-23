@@ -4,7 +4,7 @@ description: Primeiro exercício (hello world) do Node.js da lista learnyounode 
 menu:        javascript-ns
 ---
 
-{% include /menus/javascript-ns-paraquedas.html %}
+{% include /alertas/js-ns-paraquedas.html %}
 
 
 ### Exercício

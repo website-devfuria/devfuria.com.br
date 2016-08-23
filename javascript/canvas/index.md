@@ -7,14 +7,26 @@ O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o q
 [HTML5](http://www.w3.org/TR/html5/ "link-externo"), obviamente, junto com o elemento, temos a API Canvas (funções que 
 manipulam o elemento).
 
-{% include  /menus/javascript-canvas.html %}
+<div class="list-group">
+    <a href="/javascript/canvas/introducao/" class="list-group-item">Introdução ao Canvas</a>
+    <a href="/javascript/canvas/lineto-moveto/" class="list-group-item">Desenhando linhas (lineTo e moveTo)</a>
+    <a href="/javascript/canvas/line-width/" class="list-group-item">Tamanho das linhas  (lineWidth)</a>
+    <a href="/javascript/canvas/linejoin-miter-round-bevel/" class="list-group-item">Junção das linhas (lineJoin)</a>
+    <a href="/javascript/canvas/linecap-butt-round-square/" class="list-group-item">Limite das linhas (lineCap)</a>
+    <a href="/javascript/canvas/paths/" class="list-group-item">Paths (caminhos)</a>
+    <a href="/javascript/canvas/rect-strokerect-fillrect" class="list-group-item">Desenhando retângulos (strokeRect, fillRect, clearRect e rect)</a>
+</div> 
 
 
 
 Exemplos de Canvas
 ---
 
-{% include  /menus/javascript-canvas-ex.html %}
+<div class="list-group">
+    <a href="/javascript/canvas/col-linhas-rando/" class="list-group-item">Linhas randômicas</a>
+    <a href="/javascript/canvas/col-linhas-grade/" class="list-group-item">Linhas de grade (grid lines)</a>
+    <a href="/javascript/canvas/col-retangulos/" class="list-group-item">Retângulos randômicos</a>
+</div> 
 
 
 

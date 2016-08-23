@@ -1,10 +1,9 @@
 ---
 title:       Backbone Collections.create()
 description: 
-menu:        javascript-backbone
 ---
 
-
+Isto é um rascunho...
 
 
     book/index.html

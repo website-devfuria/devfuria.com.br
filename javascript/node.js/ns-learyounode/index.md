@@ -45,5 +45,3 @@ Quando achar que está pronto, execute `learnyounode verify foo.js` para checar 
 Se estiver tudo ok, o programa além de mostrar o resultado esperado marcará como feito o exercício.
 
 Experimente!
-
-{% include /menus/javascript-ns.html %}

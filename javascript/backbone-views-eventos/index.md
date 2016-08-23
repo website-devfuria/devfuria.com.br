@@ -1,7 +1,8 @@
 ---
 title:       Backbone Views e Eventos
 description: Artigo que demonstra, de forma prática, como trabalhar  com eventos e views no framework Backbone (JavaSCcript).
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       4
 ---
 
 Este artigo mostra como atribuir funções aos eventos de uma visão (view) em Backbone (framework JavaScript). O artigo
@@ -98,8 +99,3 @@ var search_view = new SearchView();
 Veja o resultado do código acima ilustrado pela imagem abaixo.
 
 ![](resultados-no-console.png)
-
-Próximo artigo
---
-
-- [Backbone - Exemplos de utilização de Views](/javascript/backbone-views-exemplos/)

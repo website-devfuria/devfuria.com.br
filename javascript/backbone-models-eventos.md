@@ -1,7 +1,8 @@
 ---
 title:       Backbone Models e Eventos
 description: Este artigo demonstra como funcionam os eventos dos modelos do framework Backbone para JavaScript
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       7
 ---
 
 Este artigo demonstra como funcionam os eventos dos models (modelos) do framework Backbone.
@@ -65,9 +66,3 @@ person.set({ name: "Alexandre", age: 40});
 // "Alterando age para: 40"
 
 ```
-
-
-Próximo artigo
---
-
-- [Backbone - Unindo Models e Views](/javascript/backbone-models-views/)

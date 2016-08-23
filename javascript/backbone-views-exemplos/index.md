@@ -1,7 +1,8 @@
 ---
 title:       Backbone Um exemplo de visão (views)
 description: Um breve exemplo ilustrando como é uma View no framework Backbone (JavaScript)
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       5
 ---
 
 Este exemplo de utilização das Views do Backbone é bastante simples e só utilizaremos a classe __View__.
@@ -71,10 +72,3 @@ da view é o a div `"#app-container"`. O método `initialize()` está iniciando 
 Implementamos o método de callback `salvar()`.
 
 Veja a demo no [jsfiddle.net/flaviomicheletti/mwkf7pog/](http://jsfiddle.net/flaviomicheletti/mwkf7pog/ "link-externo").
-
-
-
-Próximo artigo
---
-
-- [Backbone - Models](/javascript/backbone-models/)

@@ -1,7 +1,8 @@
 ---
 title:       "Backbone exemplo 03: templates e eventos de Modelos"
 description: Pequeno exemplo de script Backbone (JavaScript) onde exploro templates no HTML e os eventos de modelos disparando ações da visão.
-menu:        javascript-backbone
+serie:       Exemplos de códigos em Backbone
+ordem:       3
 ---
 
 Este é o terceiro exemplo demonstrando o Backbone, ele é uma extensão do anterior. Por tanto, se você não

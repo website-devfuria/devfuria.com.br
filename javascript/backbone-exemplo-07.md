@@ -1,7 +1,8 @@
 ---
 title:       "Backbone exemplo 07:  Privilegiômetro"
 description: Primeiro exemplo real de código Backbone (JavaScript) 
-menu:        javascript-backbone
+serie:       Exemplos de códigos em Backbone
+ordem:       7
 ---
 
 Este e o primeiro exemplo real de utilização do framework Backbone.

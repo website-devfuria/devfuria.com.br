@@ -4,7 +4,7 @@ description: Terceiro exercício (My First I/O!) do Node.js da lista learnyounod
 menu:        javascript-ns
 ---
 
-{% include /menus/javascript-ns-paraquedas.html %}
+{% include /alertas/js-ns-paraquedas.html %}
 
 
 ### Exercício

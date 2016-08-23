@@ -1,7 +1,8 @@
 ---
 title:       Backbone Views
 description: Artigo para aprender como as  Views do framework Backbone (JavaScript) funcionam.
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       2
 ---
 
 Este artigo é um primeiro passo com as views do framework e, também, um primeiro contato com o próprio framework.
@@ -119,9 +120,3 @@ var ViewExemplo = Backbone.View.extend({
 });
 var view1 = new ViewExemplo();
 ```
-
-
-Próximo artigo
---
-
-- [Backbone - Views e Templates](/javascript/backbone-views-templates/)

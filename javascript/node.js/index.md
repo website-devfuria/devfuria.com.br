@@ -47,7 +47,21 @@ depois criará arquivos em __JavaScript__ que serão executados no terminal pelo
 nossa ajuda com uma [introdução ao 'learn you node'](ns-learyounode/), caso contrário pode partir para a lista de 
 exercícios...
 
-{% include /menus/javascript-ns.html %}
+<div class="list-group">
+    <a href="/javascript/node.js/nodejs-01-hello-world/" class="list-group-item">Hello world</a>
+    <a href="/javascript/node.js/nodejs-02-baby-steps/" class="list-group-item">Baby steps</a>
+    <a href="/javascript/node.js/nodejs-03-my-first-io/"  class="list-group-item">My First I/O!</a>
+    <a class="list-group-item">My First Async I/O! (em breve)</a>
+    <a class="list-group-item">Filtered LS (em breve)</a>
+    <a class="list-group-item">Make it modular (em breve)</a>
+    <a class="list-group-item">HTTP client (em breve)</a>
+    <a class="list-group-item">HTTP collect (em breve)</a>
+    <a class="list-group-item">Juggling Async (em breve)</a>
+    <a class="list-group-item">Time server (em breve)</a>
+    <a class="list-group-item">HTTP file server (em breve)</a>
+    <a class="list-group-item">HTTP uppercaserer (em breve)</a>
+    <a class="list-group-item">HTTP Json API server (em breve)</a>
+</div> 
 
 
 Explorando bibliotecas

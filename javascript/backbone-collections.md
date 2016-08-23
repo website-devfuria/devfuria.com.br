@@ -1,7 +1,8 @@
 ---
 title:       Backbone - Collections
 description: Aprenda o básico sobre Collections no framework Backbone para JavaScript, veremos diversas forma de percorre uma coleção além de como ordenar uma collection.
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       9
 ---
 
 As collections são coleções de modelos (models), portanto devemos adicionar modelos as coleções, veja exemplo abaixo.
@@ -236,10 +237,3 @@ console.log(JSON.stringify(colecao));
 // {"id":4,"firstName":"ringo","lastName":"Starr"}]"
 
 ```
-
-
-
-Próximo artigo
---
-
-- [Backbone - Collections e Eventos](/javascript/backbone-collections-eventos/)

@@ -1,7 +1,8 @@
 ---
 title:       Backbone Unindo Models e Views
 description: Artigo, com exemplos, que mostra como unir  um modelo (model) a uma visão (view) no framework Backbone para JavaScript
-menu:        javascript-backbone
+serie:       Introdução ao Backbone
+ordem:       0
 ---
 
 Este artigo é um exemplo de integração do Model (modelo) e da View (visão) do framework Backbone. Indicado para quem já
@@ -156,10 +157,3 @@ view.model.set({name: 'Micheletti', age: 40});
 ```
 
 Veja a demo no [jsfiddle.net/flaviomicheletti/gtkm6sn9/](http://jsfiddle.net/flaviomicheletti/gtkm6sn9/ "link-externo")
-
-
-
-Próximo artigo
---
-
-- [Backbone - Collections](/javascript/backbone-collections/)
