@@ -1,7 +1,6 @@
 ---
 title:       JavaScript  operador ternário condicional
 description: Referência prática do operador ternário condicional
-menu:        javascript-refs
 ---
 
 O operador condicional ternário é um atalho para o condicional `if`.

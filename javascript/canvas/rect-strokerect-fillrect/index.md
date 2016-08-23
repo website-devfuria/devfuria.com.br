@@ -1,7 +1,6 @@
 ---
 title:       Canvas - Desenhando retângulos
 description: Aprenda a desenhar retângulos  (strokeRect, fillRect, clearRect e rect)  no elemento Canvas.
-menu:        javascript-canvas
 ---
 
 

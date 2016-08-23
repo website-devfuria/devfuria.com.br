@@ -1,7 +1,6 @@
 ---
 title:       Manipulando  caixas de texto (textbox)  com JavaScript
 description: Aprendendo como os campos  textbox, password e textarea  funcionam com o Javascript
-menu:        javascript-forms
 ---
 
 Nesta matéria veremos como o JavaScript pode trabalhar com os controles:

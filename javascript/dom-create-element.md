@@ -1,7 +1,6 @@
 ---
 title:       JavaScript - Create Element (DOM)
 description: Referência prática da função createElement()
-menu:        javascript-dom
 ---
 
 

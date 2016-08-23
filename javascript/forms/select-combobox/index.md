@@ -1,7 +1,6 @@
 ---
 title:       Manipulando combobox (select)  com JavaScript
 description: O controle select (combobox) é uma caixa de seleção onde o usuário  poderá escolher uma entre as demais opções da lista.
-menu:        javascript-forms
 ---
 
 O controle __select (combobox)__ é uma caixa de seleção, o usuário poderá escolher uma entre as demais opções da lista.

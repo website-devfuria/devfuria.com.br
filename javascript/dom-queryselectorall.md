@@ -1,7 +1,6 @@
 ---
 title:       JavaScript - querySelectorAll()
 description: Referência prática da função querySelectorAll()
-menu:        javascript-dom
 ---
 
 ```javascript

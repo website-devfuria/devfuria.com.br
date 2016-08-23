@@ -1,7 +1,6 @@
 ---
 title:       Nodeschool - baby steps
 description: Segundo exercício (baby steps) do Node.js da lista learnyounode da Nodeschool
-menu:        javascript-ns
 ---
 
 {% include /alertas/js-ns-paraquedas.html %}

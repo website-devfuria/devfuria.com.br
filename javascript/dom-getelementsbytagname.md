@@ -1,7 +1,6 @@
 ---
 title:       JavaScript - getElementsByTagName()
 description: Referência prática da função getElementsByTagName()
-menu:        javascript-dom
 ---
 
 Todos os elementos HTML podem ser selecionados usando-se o método `getElementsByTagName()` do objeto __Document__. O 

@@ -1,7 +1,6 @@
 ---
 title:       Coffescript
 description: Um introdução ao compilador de JavaScript CoffeeScript
-menu:        javascript-artigos
 ---
 
 Este artigo é uma pequena introdução ao compilador de JavaScript __CoffeeScript__.

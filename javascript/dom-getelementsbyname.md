@@ -1,7 +1,6 @@
 ---
 title:       JavaScript - getElementsByName()
 description: Referência prática da função getElementsByName()
-menu:        javascript-dom
 ---
 
 A atributo HTML `name` se destinava originalmente a atribuir nomes a elementos de formulário e o valor desse atributo

@@ -1,7 +1,6 @@
 ---
 title:       JavaScript  Funções anônimas
 description: Entenda o que são e como funcionam as funções anônimas em JavaScript
-menu:        javascript-refs
 ---
 
 Em JavaScript podemos escrever funções naturalmente como o exemplo abaixo:

@@ -1,7 +1,6 @@
 ---
 title:       JavaScript - Create Text Node (DOM)
 description: Referência prática da função createTextNode()
-menu:        javascript-dom
 ---
 
 A função `createTextNode` cria um nó de texto e auxilia na criação de um elemento [DOM](/javascript/dom/).

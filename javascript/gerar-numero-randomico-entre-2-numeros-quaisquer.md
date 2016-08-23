@@ -1,7 +1,6 @@
 ---
 title:       Um número randômico entre 2 números quaisquer
 description: Aprenda com este artigo a criar uma função para gerar um número randômico entre 2 números quaisquer
-menu:        javascript-rando
 ---
 
 Este artigo ensina passo a passo como criar uma função em JavaScript que retorna um número aleatório entre 2 números quaisquer.

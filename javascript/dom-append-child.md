@@ -1,7 +1,6 @@
 ---
 title:       JavaScript - Append Child (DOM)
 description: Referência prática da função appendChild()
-menu:        javascript-dom
 ---
 
 A função `appendChild()` insere um elemento filho (children) ao elemento pai (parent) na última posição, ela auxilia 

@@ -1,7 +1,6 @@
 ---
 title:       JavaScript - getElementsByClassName()
 description: Referência prática da função getElementsByClassName()
-menu:        javascript-dom
 ---
 
 O atributo `class` de uma UTML é uma lista separada de zero ou mais identificadores por espaços. Ele descreve uma maneira

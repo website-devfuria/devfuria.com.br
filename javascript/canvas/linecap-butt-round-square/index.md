@@ -1,7 +1,6 @@
 ---
 title:       Canvas - Limite das linhas (lineCap)
 description: Artigo demonstrando como manipular os limites da linha de um Canvas
-menu:        javascript-canvas
 ---
 
 O método Estilo `lineCap()` define as extremidades das linhas.

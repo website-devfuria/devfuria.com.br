@@ -1,7 +1,6 @@
 ---
 title:       JavaScript  objeto literal
 description: Referência prática ao objeto literal
-menu:        javascript-refs
 ---
 
 Senhoras e senhores, com vocês a palavra de Stoyan Stefanov...

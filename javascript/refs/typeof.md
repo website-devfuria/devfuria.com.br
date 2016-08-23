@@ -1,7 +1,6 @@
 ---
 title:       JavaScript  typeof
 description: Referência prática de typeof
-menu:        javascript-refs
 ---
 
 O __typeof__ é um operador __unário__ colocado antes de seu operando, o qual pode ser de qualquer tipo. 

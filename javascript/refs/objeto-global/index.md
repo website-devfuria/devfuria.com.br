@@ -1,7 +1,7 @@
 ---
 title:       O objeto window e  o espaço global em Javascript!
 description: Referência prática do objeto global - JavaScript
-menu:        javascript-refs
+
 ---
 
 O objeto `window` é o principal objeto de Javascript, é nele onde as coisas começam... principalmente a 

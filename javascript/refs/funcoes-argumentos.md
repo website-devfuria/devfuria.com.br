@@ -1,7 +1,6 @@
 ---
 title:       JavaScript  argumentos de funções
 description: Referência prática de argumento de funções
-menu:        javascript-refs
 ---
 
 Um parâmetro extra que está disponível para funções quando elas são invocadas é a matriz `arguments`.

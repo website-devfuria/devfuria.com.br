@@ -1,7 +1,6 @@
 ---
 title:       JavaScript  split()
 description: Referência prática ao método split()
-menu:        javascript-refs
 ---
 
 O método `split()` divide (splits) um objeto do tipo string (`String object`) em um [array](/javascript/refs/arrays/) 

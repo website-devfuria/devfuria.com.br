@@ -1,7 +1,6 @@
 ---
 title:       Canvas - Paths (caminhos)
 description: Descobrindo os caminhos (paths) do Canvas (HTML5).
-menu:        javascript-canvas
 ---
 
 Cada objeto que implementa a interface __CanvasPathMethods__ possui um path (caminho).

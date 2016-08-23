@@ -1,7 +1,6 @@
 ---
 title:       JavaScript - Remove Child (DOM)
 description: Referência prática da função removeChild()
-menu:        javascript-dom
 ---
 
 O método `removeChild()` remove um nó da árvore de documentos ([DOM](/javascript/dom/)). Contudo, tome cuidado: esse
