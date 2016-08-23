@@ -7,13 +7,26 @@ Seja bem vindo a seção de HTML e CSS!
 
 Para quem nunca viu "esses caras" deve começar por aqui:
 
-{% include /menus/html-artigos-intro.html %}
+<div class="list-group">
+    <a href="/html-css/introducao-html/" class="list-group-item">Introdução ao HTML</a>
+    <a href="/html-css/primeiro-html/" class="list-group-item">Criando seu primeiro HTML</a>
+    <a href="/html-css/html-primeira-qualidade/" class="list-group-item">Criando um HTML de primeira qualidade</a>
+    <a href="/html-css/introducao-css/" class="list-group-item">Introdução ao CSS</a>
+    <a href="/html-css/unindo-css-html/" class="list-group-item">Unindo o CSS ao HTML</a>
+    <a href="/html-css/seletores-css/" class="list-group-item">Seletores CSS</a>
+</div>
 
 
 
 ### Elementos básicos de HTML
 
-{% include /menus/html-elementos.html %}
+<div class="list-group">
+    <a href="/html-css/ancoras/" class="list-group-item">Âncoras (links)</a>
+    <a href="/html-css/div-span/" class="list-group-item">Div e Span </a>
+    <a href="/html-css/listas/" class="list-group-item">Listas</a>
+    <a href="/html-css/paragrafos-imagens/" class="list-group-item">Parágrafos e imagens</a>
+    <a href="/html-css/tabelas/" class="list-group-item">Tabelas </a>
+</div>
 
 Veja também:
 
@@ -23,28 +36,35 @@ Veja também:
 
 ### Propriedades CSS
 
-{% include /menus/html-propriedades-css.html %}
+<div class="list-group">
+    <a href="/html-css/css-margin/" class="list-group-item">CSS - margin</a>
+</div>
 
 
 ### Formulários web e seus controles
 
 Esta é a subseção sobre [formulários web](/html-css/formularios/) e talvez você queira ler uma
-[introdução  aos formulários web](/html-css/formularios/intro-formularios-web).
+[introdução  aos formulários web](/html-css/introducao-formularios-web).
 
 A lista abaixo compõem os controles básicos do tipo __input__:
 
-{% include /menus/html-forms-input.html %}
+{% include get-serie.html page_serie="Controles Básicos (input)" %} 
+{% include menus.html %} 
 
 
 A lista abaixo compõem os controles básicos do tipo __não input__:
-
-{% include /menus/html-forms-ninput.html %}
+{% include get-serie.html page_serie="Controles Básicos (não input)" %} 
+{% include menus.html %} 
 
 
 
 ### Artigos
 
-{% include /menus/html-artigos.html %}
+<div class="list-group">
+    <a href="/html-css/elementos-inline-block-level/" class="list-group-item">Elementos in-line e elementos block-level</a>
+    <a href="/html-css/formulario-web-andy-budd/" class="list-group-item">Estilizando formulários com CSS (exemplo de Andy Budd)</a>
+    <a href="/html-css/ferramentas/" class="list-group-item">Ferramentas para trabalhar com HTML e CSS</a>
+</div>
 
 
 
