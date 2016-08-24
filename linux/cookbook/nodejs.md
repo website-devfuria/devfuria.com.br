@@ -48,7 +48,7 @@ Atualize o sistema e instale as dependências via __apt-get__:
 
 Vamos baixar os fontes diretamente do [git-hub](https://github.com/joyent/node "link-externo"):
 
-    git clone https://github.com/joyent/node.git
+    git clone https://github.com/nodejs/node.git
 
 Entre na pasta `node` digitando `cd node`.
 
