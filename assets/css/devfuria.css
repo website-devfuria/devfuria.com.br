@@ -273,6 +273,12 @@ http://bootsnipp.com/snippets/featured/call-to-action-with-dark-background
 /*
 Paginação das séries
 */
+.bs-calltoaction { /* distância do final do aritog até o call*/
+    margin-top: 100px;
+}
+.jumbotron{ /* distância do final do artigo até a div de navegação (séries)*/
+    margin-top: 100px
+}
 h2.pagination{
     margin-top:0em;
 }
