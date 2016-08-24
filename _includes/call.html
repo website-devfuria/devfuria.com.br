@@ -1,3 +1,25 @@
+{% comment %}
+
+Utilizado no final dos artigos para destacar links (internos e externos) interessantes.
+
+    Exemplo 1:
+    {% include call.html
+        style="success"
+        title="Leia em seguida..."
+        descr="Expressões Regulares - metacaracteres"
+        href="/regex/metacaracteres/"
+        label="Ver matéria!"
+    %}
+
+    Exemplo 2:
+    {% include call.html
+        title="Link Externo"
+        descr="O Aurélio Marinho (Piazinho e mestre em Regex) preparou um pdf com um Cheat Sheet (folha de cola, resumão) sobre as expressões regulares."
+        href="http://www.piazinho.com.br/download/expressoes-regulares-3-tabelas.pdf"
+        label="Dowload!"
+    %}
+
+{% endcomment %}
 <div class="container">
     <div class="row">
         <div class="col-lg-12">

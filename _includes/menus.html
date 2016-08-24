@@ -1,6 +1,15 @@
 {% comment %}
-As variáveis do bloco abaixo estão sendo criadas no include "artigos-nav"
-{% endcomment %} 
+
+Mostra as páginas de determinada série, como se fosse um menu da tal série.
+Depende do include "get-serie" pois é ele quem cria a variável 'serie'
+
+    Exemplo
+    {% include get-serie.html page_serie="Aqui vai o nome da série" %}
+    {% include menus.html %}
+
+{% endcomment %}
+
+ 
 <div class="list-group">
     {% for artigo in serie %}
         <a href="{{ artigo.url }}" class="list-group-item">{{ artigo.title }}</a>
