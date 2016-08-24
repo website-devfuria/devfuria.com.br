@@ -199,11 +199,3 @@ echo json_encode(array("nome" => "fulano", "idade" => "alguns-anos"));
 
 <hr>
 Documentação Oficial: [jQuery.getJSON](http://api.jquery.com/jQuery.getJSON/ "link-externo")
-
-
-
-Veja também
----
-
-- [Introdução ao Ajax](/javascript/ajax/)
-- [Como era utilizado o Ajax no começo](/javascript/ajax-no-inicio/)

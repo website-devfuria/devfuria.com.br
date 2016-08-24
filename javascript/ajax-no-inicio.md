@@ -95,10 +95,3 @@ os dados são, respectivamente, `responseText` e `responseXML`.
 
 <hr>
 Fonte [MDN - Começando com Ajax](https://developer.mozilla.org/pt-BR/docs/Ajax/Getting_Started "link-externo")
-
-
-Veja também
----
-
-- [Introdução ao Ajax](/javascript/ajax/)
-- [Aprenda a utilizar Ajax com PHP e jQuery](/javascript/ajax-php-jquery/)
