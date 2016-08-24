@@ -1,6 +1,8 @@
 ---
 title:       Como era utilizado o Ajax no começo
 description: Este artigo apresenta a sintaxe de como era utilizado o objeto XMLHttpdRequest no início.
+serie:       Ajax
+ordem:       2
 ---
 
 Este artigo apresenta a sintaxe de como era utilizado o objeto __XMLHttpRequest__ no início da utilização da técnica __AJAX__.

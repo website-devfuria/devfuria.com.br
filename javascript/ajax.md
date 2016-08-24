@@ -1,6 +1,8 @@
 ---
 title:       Introdução ao Ajax
 description: Este artigo é uma introdução a técnica Ajax e ao objeto XMLHttpdRequest
+serie:       Ajax
+ordem:       1
 ---
 
 __Ajax__ é o acrônimo (sem letras maiúsculas) de Asynchronous JavaScript and XML
