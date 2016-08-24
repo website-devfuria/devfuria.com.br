@@ -10,6 +10,10 @@
     padding-top: 120px;
 }
 
+#footer {
+    margin-top: 150px
+}
+
 /* Tablests ??? */
 @media (min-width: 768px) {
     .intro {
