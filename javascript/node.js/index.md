@@ -51,7 +51,7 @@ exercícios...
     <a href="/javascript/node.js/nodejs-01-hello-world/" class="list-group-item">Hello world</a>
     <a href="/javascript/node.js/nodejs-02-baby-steps/" class="list-group-item">Baby steps</a>
     <a href="/javascript/node.js/nodejs-03-my-first-io/"  class="list-group-item">My First I/O!</a>
-    <a class="list-group-item">My First Async I/O! (em breve)</a>
+    <a href="/javascript/node.js/nodejs-04-my-first-async-io/" class="list-group-item">My First Async I/O!</a>
     <a class="list-group-item">Filtered LS (em breve)</a>
     <a class="list-group-item">Make it modular (em breve)</a>
     <a class="list-group-item">HTTP client (em breve)</a>
