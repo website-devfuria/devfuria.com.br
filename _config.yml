@@ -10,6 +10,8 @@ enable_analytics: false
 # Antes era com kramdown
 # markdown:    kramdown
 markdown:    redcarpet
+redcarpet:
+    extensions: [with_toc_data]
 highlighter: pygments
 permalink:   pretty
 exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
