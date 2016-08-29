@@ -14,25 +14,25 @@ redcarpet:
     extensions: [with_toc_data]
 highlighter: pygments
 permalink:   pretty
-exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
+#exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
 gems:
   - jekyll-sitemap
 
 # Para atualizar mais rápido...
-#exclude:
-#    - javascript
-#    - php
-#    - python
+exclude:
+    - javascript
+    - php
+    - python
 #    - logica-de-programacao
-#    - html-css
-#    - sql
-#    - misc
-#    - regex
-#    - tdd
-#    - git
-#    - c
-#    - seguranca-da-informacao
-#    - linux
+    - html-css
+    - sql
+    - misc
+    - regex
+    - tdd
+    - git
+    - c
+    - seguranca-da-informacao
+    - linux
 
 
 defaults:
