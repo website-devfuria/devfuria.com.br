@@ -23,7 +23,7 @@ Para testar a instalação execute `learnyounode -v`, ele mostrará a versão in
 
 Para iniciar a aplicação digite...
 
-    leranyounode
+    learnyounode
 
 
 

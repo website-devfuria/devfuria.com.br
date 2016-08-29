@@ -40,8 +40,10 @@ console.log("HELLO WORLD");
 ```
 
 
-
-Próximo exercício
----
-
-- [Baby steps](/javascript/node.js/nodejs-02-baby-steps/)
+{% include call.html
+    style="success"
+    title="Próximo exercício"
+    descr="Baby steps"
+    href="/javascript/node.js/nodejs-02-baby-steps/"
+    label="Ver matéria!"
+%}
