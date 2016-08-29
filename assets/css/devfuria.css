@@ -7,7 +7,8 @@
 }
 
 #conteudo {
-    padding-top: 120px;
+    /* estava muito grande a distância entre o artigo e o header */
+    padding-top: 70px;
 }
 
 #footer {
@@ -71,14 +72,18 @@ h2 {
     color: #122b3b;
     line-height: 1.52em;
     font-size:200%;
-    margin-top:1.8em;
     border: none;
 }
 h3 {
     color: #122b3b;
-    margin-top:1.8em;
 }
-/*h2, h3, h4 {font-weight: bold}*/
+
+/* melhor padding do que magin, pois assim o # funciona */
+h2, h3, h4 {
+    margin-top:0;
+    padding-top: 2em; 
+}
+
 
 table {
     font-size:inherit;
