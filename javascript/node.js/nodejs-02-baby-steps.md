@@ -48,6 +48,7 @@ para cada exercício.
 ### Solução
 
 ```javascript
+// program02.js
 var length = process.argv.length,
     sum = 0;
 

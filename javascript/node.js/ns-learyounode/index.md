@@ -33,15 +33,30 @@ Aprendendo Node.js com o leranyounode
 
 Eis a tela inicial do programa learnyounode.
 
-![imagem ilustrando a tela inicial do leran you node](learnyounode-tela-inicial.jpg "imagem ilustrando a tela inicial do leran you node")
+![imagem ilustrando a tela inicial do leran you node](learnyounode-tela-inicial.jpg "imagem ilustrando a tela inicial do learnyounode")
 
 
 Você escolhe o exercício e o leranyounode irá mostrar as instruções para realizá-lo.
 
 Você deve criar um arquivo [JavaScript](/javascript/) com qualquer nome, por exemplo foo.js e escrever sua solução nele.
 
-Quando achar que está pronto, execute `learnyounode verify foo.js` para checar sua resposta.
+Quando achar que está pronto, execute `learnyounode verify program.js` para checar sua resposta.
 
 Se estiver tudo ok, o programa além de mostrar o resultado esperado marcará como feito o exercício.
 
 Experimente!
+
+
+
+### Dica
+
+O programa irá fornecer argumentos para seu programa quando você rodar...
+
+    learnyounode verify program.js`
+
+..., então você não precisa se preocupar em fornecê-los. Para testar seu programa sem a verificação, você pode 
+invocá-lo com...
+
+    learnyounode run program.js. 
+
+Quando você usa `run` você está invocando o ambiente de testes que o learnyounode prepara para cada exercício.

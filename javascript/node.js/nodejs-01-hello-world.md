@@ -17,7 +17,7 @@ Para fazer um programa Node.js, crie um novo arquivo com a extensão `.js` e com
 
 Execute seu programa rodando ele com o comando `node`, por exemplo:
 
-    node programa.js
+    node program01.js
 
 Você pode escrever no console da mesma maneira que no navegador:
 
@@ -25,7 +25,7 @@ Você pode escrever no console da mesma maneira que no navegador:
 
 Quando tiver terminado seu código, você deverá executar:
 
-    learnyounode verify programa.js
+    learnyounode verify program01.js
 
 Seu programa será testado, um relatório será gerado e a lição será marcada como 'completa' caso você 
 tenha sucesso.
@@ -36,6 +36,7 @@ tenha sucesso.
 Essa foi fácil!
 
 ```javascript
+// program01.js
 console.log("HELLO WORLD");
 ```
 
