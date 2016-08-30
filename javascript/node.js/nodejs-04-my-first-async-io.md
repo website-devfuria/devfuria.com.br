@@ -76,3 +76,12 @@ fs.readFile(file, 'utf8', function (err, contents) {
   console.log(lines)
 })
 ```
+
+
+{% include call.html
+    style="success"
+    title="Próximo exercício"
+    descr="Filtered LS"
+    href="/javascript/node.js/nodejs-05-filtered-ls/"
+    label="Ver matéria!"
+%}
