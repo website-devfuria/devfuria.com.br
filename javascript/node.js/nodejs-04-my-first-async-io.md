@@ -1,5 +1,5 @@
 ---
-title:       Nodeschool - My First I/O!
+title:       Nodeschool - My First Async I/O!
 description: Quarto exercício (My First Async I/O!) do Node.js da lista learnyounode da Nodeschool
 ---
 
@@ -17,42 +17,62 @@ O caminho completo até o arquivo à ser lido será fornecido como primeiro argu
 
 ### Dicas
 
-A solução para este problema é *quase* a mesma do problema anterior, exceto que desta vez você vai precisar fazer da 
-**maneira Node.JS**: assíncrona.
+A solução para este problema é parecida com a solução do problema anterior, a diferença  é que faremos de forma assíncrona.
+Em vez de `fs.readFileSync()` você deve utilizar `fs.readFile()`.
 
-Em vez de `fs.readFileSync()` você vai querer usar `fs.readFile()` e em vez de usar o valor de retorno desse método, 
-você vai precisar coletar o valor de uma função de callback que você irá passar como sendo o segundo argumento.
+Saiba que callbacks tradicionais do Node.js normalmente têm a seguinte assinatura:
 
-Lembre-se que callbacks tradicionais do Node.js normalmente têm a assinatura:
-
-```js
+```javascript
 function callback (err, data) { /* ... */ }
 ```
 
-então você pode checar se um erro ocorreu checando se o primeiro argumento é verdadeiro. Se não houver nenhum erro, 
-você deve ter seu objeto `Buffer` como segundo argumento. Assim como `readFileSync()`, você pode fornecer 'utf8' como 
-segundo argumento e colocar o callback como terceiro argumento, assim você terá uma `String` ao invés de um `Buffer`.
+Portanto, ao invés de utilizar o retorno do método...
 
-Documentação sobre o módulo `fs` pode ser encontrada apontando seu navegador para esse endereço:
-  {rootdir:/node_apidoc/fs.html}
+```javascript
+// errado !!!
+var data = fs.readFile();
+```
 
+..devemos coletar o valor de uma função de callback que você irá passar como segundo argumento `fs.readFile(file, callback)`,
+veja o exemplo abaixo.
 
+```javascript
+// certo !!!
+fs.readFile(file, function (err, data)) {
+    //
+    // aqui sim você poderá utilizar o valor da variável `data`
+    // pois é ela quem contém o "retorno da função"
+    //
+})
+```
 
+Além disso, podemos checar se um erro ocorreu checando se o primeiro argumento é verdadeiro.
 
 
 ### Solução
 
-
-### Código final
-
 ```javascript
-var fs   = require('fs');
-var path = process.argv[2];
+// program04a.js
+var fs   = require('fs')
+var file = process.argv[2]
 
-fs.readFile(path, 'utf8', function(err,data) {
-  var lines = data.split('\n');
-  console.log(lines.length-1);
-});
+fs.readFile(file, function (err, contents) {
+  var lines = contents.toString().split('\n').length - 1
+  console.log(lines)
+})
 ```
 
+Assim como `readFileSync()`, você pode fornecer 'utf8' como segundo argumento e colocar o callback como terceiro 
+argumento, assim você terá uma string ao invés de um buffer.
 
+
+```javascript
+// program04b.js
+var fs   = require('fs')
+var file = process.argv[2]
+
+fs.readFile(file, 'utf8', function (err, contents) {
+  var lines = contents.split('\n').length - 1
+  console.log(lines)
+})
+```
