@@ -2,7 +2,7 @@
 title:       Experimentando a instrução "select"
 description: Seus primeiros passos com a instrução 'select'
 serie:       Introdução ao MySQL
-ordem:       4
+ordem:       5
 ---
 
 
