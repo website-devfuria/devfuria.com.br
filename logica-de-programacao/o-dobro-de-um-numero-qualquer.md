@@ -1,8 +1,8 @@
 ---
 title:       O dobro de um número qualquer
-description: Primeiro exercício de lógica de programação para quebramos o gelo.
+description: Exercício de lógica de programação para calcular o dobro de um número qualquer.
 serie:       Lógica Nível 0
-ordem:       0
+ordem:       1
 ---
 
 {% include /alertas/logica-apresentacao.html %}
@@ -15,10 +15,9 @@ Faça uma função para calcular o dobro de um número qualquer.
 
 ### Comentários:
 
-Este é o primeiro exercício de lógica que abre a série. Ele é muito fácil de resolver e tem como 
-objetivo te ajudar na familiarização dos exercícios. Repare que temos um teste já escrito e para praticar basta codificar
-até ver os testes passarem. Eu vou seguir passo a passo com você.
-
+Este é o segundo exercício da série, nele já vamos utilizar as funções, pois não faz muito sentido testarmos o código
+sem ter ao menos uma função. Mesmo porque o teste visa sempre testar uma unidade, essa unidade deve ser (pelo menos)
+uma função.
 
 {% include /alertas/logica-linguagens.html %}
 
@@ -26,7 +25,6 @@ até ver os testes passarem. Eu vou seguir passo a passo com você.
 Linguagem C
 ---
 
-Como esse é o primeiro exercício vou me extender um pouco mais na explicação do processo de resolução, ok?
 
 Para sabermos se o código funciona vamos escrever um teste: `assert(  10 == dobro(5)  );`
 
@@ -127,11 +125,8 @@ Acho que vou gravar um vídeo para demonstrar isso, o que você acha?
 Linguagem Python
 ---
 
-Em Python seguimos o mesmo esquema, só que aqui é mais fácil pois, não temos que compilar o programa. Python é 
-intrepretada e não compilada.
+Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
 
-Se você tiver o Python devidamente instalado, basta executar `python foo.py` onde `foo.py` é um arquivo de texto simples
-com o seguinte conteúdo:
 
 ```python
 # -*- coding: utf-8 -*-
@@ -172,13 +167,7 @@ assert 10 == dobro(5), "o dobro de 5 deve ser 10"
 Linguagem JavaScript (Node.js)
 ---
 
-Em JavaScript muda tudo!
-
-Não, brincadeira, segue também o mesmo esquema!
-
-Crie um arquivo chamado ``foo.js` com o conteúdo abaixo e execute no terminal `node foo.js`
-
-Obviamente você deve ter o node.js devidamente instalado,
+Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
 
 ```javascript
 var assert = require('assert');
