@@ -1,8 +1,8 @@
 ---
 title:       Juros simples
-description: Exercício de lógica de programação. Como calcular o juros simples ?.
+description: Exercício de lógica de programação para calcular o juros simples.
 serie:       Lógica Nível 1
-ordem:       2
+ordem:       3
 ---
 
 {% include /alertas/logica-apresentacao.html %}
@@ -24,6 +24,8 @@ Onde:
 Vamos imaginar o seguinte cenário: um empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
 
 
+{% include /alertas/logica-linguagens.html %}
+
 
 Linguagem C
 ---
@@ -34,22 +36,19 @@ Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Calcula o juros simples
+//
+float juros_simples() {
+    return 0;
+}
+
 int main (){
-
-    // Para escrever o pequeno teste precisamos da variável `juros`.
-    // Declare aqui as variáveis que você utilizar.
-	float juros;
-	
-
-    // Aqui entra a lógica do programa.
-	juros = 0;
-
-
     // Este é o nosso teste.
     // Sabemos que 16000 * 0.04 * 4 = 2560, logo
     // a variável `juros` deve ter o valor igual a 2560.
-	assert(2560 == juros);
-	return 0;
+    assert(2560 == juros_simples(16000, 0.04, 4));
+    return 0;
 }
 ```
 
@@ -59,25 +58,19 @@ int main (){
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Calcula o juros simples
+//
+float juros_simples(float capital, float taxa, int n_periodos) {
+    return capital * taxa * n_periodos;
+}
+
 int main (){
-
-    // Para escrever o pequeno teste precisamos da variável `juros`.
-    // Declare aqui as variáveis que você utilizar.
-	float juros, capital, taxa;
-	int n_periodos;	
-
-    // Aqui entra a lógica do programa.
-	capital    = 16000;
-	taxa       = 0.04;
-	n_periodos = 4;
-	
-	juros = capital * taxa * n_periodos;
-
     // Este é o nosso teste.
     // Sabemos que 16000 * 0.04 * 4 = 2560, logo
     // a variável `juros` deve ter o valor igual a 2560.
-	assert(2560 == juros);
-	return 0;
+    assert(2560 == juros_simples(16000, 0.04, 4));
+    return 0;
 }
 ```
 
@@ -90,12 +83,15 @@ Abaixo nosso código inicial escrito em Python, utilize ele para resolver o prob
 ```python
 # -*- coding: utf-8 -*-
 
-# Aqui entra a lógica do programa.
-juros = 0;
+#
+# Calcula o juros simples
+#
+def juros_simples():
+    pass
 
 # Este é o nosso teste.
 # Sabemos que 16000 * 0.04 * 4 = 2560, logo...
-assert 2560 == juros, "juros deve ser igual a 2560"
+assert 2560 == juros_simples(16000, 0.04, 4), "juros deve ser igual a 2560"
 ```
 
 ### Solução na linguagem Python
@@ -103,16 +99,15 @@ assert 2560 == juros, "juros deve ser igual a 2560"
 ```python
 # -*- coding: utf-8 -*-
 
-# Aqui entra a lógica do programa.
-capital    = 16000;
-taxa       = 0.04;
-n_periodos = 4;
-
-juros = capital * taxa * n_periodos;
+#
+# Calcula o juros simples
+#
+def juros_simples(capital, taxa, n_periodos):
+    return capital * taxa * n_periodos;
 
 # Este é o nosso teste.
 # Sabemos que 16000 * 0.04 * 4 = 2560, logo...
-assert 2560 == juros, "juros deve ser igual a 2560"
+assert 2560 == juros_simples(16000, 0.04, 4), "juros deve ser igual a 2560"
 ```
 
 
@@ -125,25 +120,21 @@ Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para r
 ```javascript
 var assert = require('assert');
 
-// Variáveis
-var juros, capital, taxa, n_periodos; 
-
-// Aqui entra a lógica do programa.
-
-
-
-
-
+//
+// Calcula o juros simples
+//
+var juros_simples = function() {
+    return 0;
+}
 
 // Este é o nosso teste.
 // Sabemos que 16000 * 0.04 * 4 = 2560, logo
 // a variável `juros` deve ter o valor igual a 2560.
 try {
-    assert.equal(2560, juros);
+    assert.equal(2560, juros_simples(16000, 0.04, 4));
 } catch(e) {
     console.log(e);
 }
-
 ```
 
 
@@ -153,25 +144,21 @@ try {
 ```javascript
 var assert = require('assert');
 
-// Variáveis
-var juros, capital, taxa, n_periodos; 
-
-// Aqui entra a lógica do programa.
-capital    = 16000;
-taxa       = 0.04;
-n_periodos = 4;
-
-juros = capital * taxa * n_periodos;
+//
+// Calcula o juros simples
+//
+var juros_simples = function(capital, taxa, n_periodos) {
+    return capital * taxa * n_periodos;
+}
 
 // Este é o nosso teste.
 // Sabemos que 16000 * 0.04 * 4 = 2560, logo
 // a variável `juros` deve ter o valor igual a 2560.
 try {
-    assert.equal(2560, juros);
+    assert.equal(2560, juros_simples(16000, 0.04, 4));
 } catch(e) {
     console.log(e);
 }
-
 ```
 
 {% include /alertas/logica-feedback.html %}
