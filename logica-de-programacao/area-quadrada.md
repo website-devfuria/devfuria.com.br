@@ -1,6 +1,6 @@
 ---
 title:       Área quadrada
-description: Exercício de lógica de programação resolvido onde o objetivo é encontrar a área quadrada.
+description: Sabendo que a área quadrada é dada pela multiplicação dos lados, escreva um algoritmo que mostre a área quadrada de um espaço qualquer
 serie:       Lógica Nível 0
 ordem:       2
 ---
@@ -19,6 +19,9 @@ Exemplo:
 * 3 . 9 = 27
 
 
+{% include /alertas/logica-linguagens.html %}
+
+
 
 Linguagem C
 ---
@@ -29,20 +32,20 @@ Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Função que retorna o valor da área
+//
+int area(int lado1, int lado2) {
+
+
+}
+
+//
+// testes
+//
 int main (){
 
-    int lado1, lado2, area;
-
-    //
-    // Sua lógica (seu código)
-    //
-
-
-
-    //
-    // Seu teste
-    //
-    assert(27 == area);
+    assert(27 == area(3, 9));
 
     return 0;
 }
@@ -56,21 +59,19 @@ int main (){
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Função que retorna o valor da área
+//
+int area(int lado1, int lado2) {
+    return lado1 * lado2;
+}
+
+//
+// testes
+//
 int main (){
 
-    int lado1, lado2, area;
-
-    //
-    // Sua lógica (seu código)
-    //
-    lado1 = 3;
-    lado2 = 9;
-    area  = lado1 * lado2;
-
-    //
-    // Seu teste
-    //
-    assert(27 == area);
+    assert(27 == area(3, 9));
 
     return 0;
 }
@@ -86,22 +87,17 @@ Abaixo nosso código inicial escrito em Python, utilize ele para resolver o prob
 # -*- coding: utf-8 -*-
 
 #
-# Variáveis
+# Função que retorna o valor da área
 #
-lado1 = 3
-lado2 = 9
-area  = None
-
-#
-# Sua lógica (seu código)
-#
+def area(lado1, lado2):
+    pass
 
 
 
 #
 # Seu teste
 #
-assert 27 == area
+assert 27 == area(3, 9)
 ```
 
 
@@ -111,21 +107,15 @@ assert 27 == area
 # -*- coding: utf-8 -*-
 
 #
-# Variáveis
+# Função que retorna o valor da área
 #
-lado1 = 3
-lado2 = 9
-area  = None
-
-#
-# Sua lógica (seu código)
-#
-area  = lado1 * lado2
+def area(lado1, lado2):
+    return lado1 * lado2
 
 #
 # Seu teste
 #
-assert 27 == area
+assert 27 == area(3, 9)
 ```
 
 
@@ -139,23 +129,17 @@ Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para r
 var assert = require('assert');
 
 //
-// Variáveis
+// Função que retorna o valor da área
 //
-
-
-
-//
-// Sua ĺógica (seu código)
-//
-lado1 = 3;
-lado2 = 9;
-area  = lado1 * lado2;
+var area = function (lado1, lado2) {
+    return 0;
+}
 
 //
 // Seu teste
 //
 try {
-    assert.equal(27, area, "deve retornar o área");
+    assert.equal(27, area(3, 9), "deve retornar o área");
 } catch(e) {
     console.log(e);
 }
@@ -169,22 +153,17 @@ try {
 var assert = require('assert');
 
 //
-// Variáveis
+// Função que retorna o valor da área
 //
-var lado1, lado2, area;
-
-//
-// Sua ĺógica (seu código)
-//
-lado1 = 3;
-lado2 = 9;
-area  = lado1 * lado2;
+var area = function (lado1, lado2) {
+    return lado1 * lado2;
+}
 
 //
 // Seu teste
 //
 try {
-    assert.equal(27, area, "deve retornar o área");
+    assert.equal(27, area(3, 9), "deve retornar o área");
 } catch(e) {
     console.log(e);
 }
