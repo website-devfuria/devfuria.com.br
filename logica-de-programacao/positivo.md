@@ -5,7 +5,7 @@ serie:       Lógica Nível 2
 ordem:       3
 ---
 
-{% include /alertas/logica-paraquedas.html %}
+{% include /alertas/logica-apresentacao.html %}
 
 Exercício de lógica de programação
 ---

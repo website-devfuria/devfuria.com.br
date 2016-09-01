@@ -5,7 +5,7 @@ serie:       Lógica Nível 4 vetores
 ordem:       4
 ---
 
-{% include /alertas/logica-paraquedas.html %}
+{% include /alertas/logica-apresentacao.html %}
 
 Exercício de lógica de programação
 ---
