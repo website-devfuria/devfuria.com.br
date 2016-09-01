@@ -1,6 +1,6 @@
 ---
 title:       Descobrir os dias de 'n' meses
-description: Exercício de lógica de programação para descobrir os dias de n meses.
+description: Considerando que todos os meses tenham 30 dias, calcular o total de dias de n meses
 serie:       Lógica Nível 0
 ordem:       5
 ---
@@ -12,7 +12,7 @@ Exercício de lógica de programação
 
 Considerando que todos os meses tenham 30 dias, calcular o total de dias de n meses.
 
-
+{% include /alertas/logica-linguagens.html %}
 
 Linguagem C
 ---
@@ -23,20 +23,19 @@ Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Função que retorna o número de dias
+//
+int dias(int nMeses) {
+    return 0;
+}
+
+//
+// Seu teste
+//
 int main (){
 
-    int nMeses, dias;
-
-    //
-    // Sua lógica
-    //
-
-
-
-    //
-    // Seu teste
-    //
-    assert(210 == dias);
+    assert(210 == dias(7));
 
     return 0;
 }
@@ -50,20 +49,19 @@ int main (){
 #include <stdio.h>
 #include <assert.h>
 
+//
+// Função que retorna o número de dias
+//
+int dias(int nMeses) {
+    return nMeses * 30;
+}
+
+//
+// Seu teste
+//
 int main (){
 
-    int nMeses, dias;
-
-    //
-    // Sua lógica
-    //
-    nMeses = 7;
-    dias = nMeses * 30;
-
-    //
-    // Seu teste
-    //
-    assert(210 == dias);
+    assert(210 == dias(7));
 
     return 0;
 }
@@ -80,22 +78,15 @@ Abaixo nosso código inicial escrito em Python, utilize ele para resolver o prob
 # -*- coding: utf-8 -*-
 
 #
-# Variáveis
+# Função que retorna o número de dias
 #
-nMeses = 7
-dias   = 0
-
-#
-# Sua lógica
-#
-
-
-
+def dias(n_meses):
+    pass
 
 #
 # Seu teste
 #
-assert 210 == dias
+assert 210 == dias(7)
 ```
 
 
@@ -105,20 +96,15 @@ assert 210 == dias
 # -*- coding: utf-8 -*-
 
 #
-# Variáveis
+# Função que retorna o número de dias
 #
-nMeses = 7
-dias   = 0
-
-#
-# Sua lógica
-#
-dias = nMeses * 30
+def dias(n_meses):
+    return n_meses * 30
 
 #
 # Seu teste
 #
-assert 210 == dias
+assert 210 == dias(7)
 ```
 
 
@@ -132,26 +118,20 @@ Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para r
 var assert = require('assert');
 
 //
-// Variáveis
+// Função que retorna o número de dias
 //
-var nMeses, dias;
-
-//
-// Sua lógica
-//
-
-
-
+var dias = function(n_meses) {
+    return 0;
+}
 
 //
 // Seu teste
 //
 try {
-    assert.equal(210, dias, "deve retornar a total de dias");
+    assert.equal(210, dias(7), "deve retornar a total de dias");
 } catch(e) {
     console.log(e);
 }
-
 ```
 
 
@@ -162,25 +142,20 @@ try {
 var assert = require('assert');
 
 //
-// Variáveis
+// Função que retorna o número de dias
 //
-var nMeses, dias;
-
-//
-// Sua lógica
-//
-nMeses = 7;
-dias = nMeses * 30;
+var dias = function(n_meses) {
+    return n_meses * 30;
+}
 
 //
 // Seu teste
 //
 try {
-    assert.equal(210, dias, "deve retornar a total de dias");
+    assert.equal(210, dias(7), "deve retornar a total de dias");
 } catch(e) {
     console.log(e);
 }
-
 ```
 
 {% include /alertas/logica-feedback.html %}
