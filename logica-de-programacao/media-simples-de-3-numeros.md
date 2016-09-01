@@ -1,6 +1,6 @@
 ---
 title:       Média simples de 3 números
-description: Exercício de lógica de programação resolvido onde o objetivo é calcular a média simples.
+description: Faça um programa que calcule a média simples (aritmética) de 3 valores quaisquer.
 serie:       Lógica Nível 0
 ordem:       4
 ---
@@ -14,6 +14,7 @@ Faça um programa que calcule a média simples (aritmética) de 3 valores quaisq
 
 Utilize as variáveis `valor1`, `valor2` e `valor3`.
 
+{% include /alertas/logica-linguagens.html %}
 
 Linguagem C
 ---
@@ -24,20 +25,16 @@ Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 #include <stdio.h>
 #include <assert.h>
 
+int media(int valor1, int valor2, int valor3) {
+    return 0;
+}
+
+//
+// Seu teste
+//
 int main (){
 
-    int valor1, valor2, valor3, media;
-
-    //
-    // Sua lógica
-    //
-
-
-
-    //
-    // Seu teste
-    //
-    assert(7 == media);
+    assert(7 == media(6, 7, 8));
 
     return 0;
 }
@@ -51,22 +48,16 @@ int main (){
 #include <stdio.h>
 #include <assert.h>
 
+int media(int valor1, int valor2, int valor3) {
+    return (valor1 + valor2 + valor3) / 3;
+}
+
+//
+// Seu teste
+//
 int main (){
 
-    int valor1, valor2, valor3, media;
-
-    //
-    // Sua lógica
-    //
-    valor1 = 6;
-    valor2 = 7;
-    valor3 = 8;
-    media = (valor1 + valor2 + valor3) / 3;
-
-    //
-    // Seu teste
-    //
-    assert(7 == media);
+    assert(7 == media(6, 7, 8));
 
     return 0;
 }
@@ -81,23 +72,13 @@ Abaixo nosso código inicial escrito em Python, utilize ele para resolver o prob
 ```python
 # -*- coding: utf-8 -*-
 
-#
-# Variáveis
-#
-
-
-
-
-
-#
-# Sua lógica
-#
-media = (valor1 + valor2 + valor3) / 3
+def media(valor1, valor2, valor3):
+    pass
 
 #
 # Seu teste
 #
-assert 7 == media
+assert 7 == media(6, 7, 8)
 ```
 
 
@@ -106,23 +87,13 @@ assert 7 == media
 ```python
 # -*- coding: utf-8 -*-
 
-#
-# Variáveis
-#
-valor1 = 6
-valor2 = 7
-valor3 = 8
-
-
-#
-# Sua lógica
-#
-media = (valor1 + valor2 + valor3) / 3
+def media(valor1, valor2, valor3):
+    return (valor1 + valor2 + valor3) / 3
 
 #
 # Seu teste
 #
-assert 7 == media
+assert 7 == media(6, 7, 8)
 ```
 
 
@@ -136,29 +107,18 @@ Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para r
 ```javascript
 var assert = require('assert');
 
-//
-// Variáveis
-//
-var valor1, valor2, valor3, media;
-
-//
-// Sua lógica
-//
-
-
-
-
-
+var media = function(valor1, valor2, valor3) {
+    return 0;
+}
 
 //
 // Seu teste
 //
 try {
-    assert.equal(7, media, "deve retornar a média");
+    assert.equal(7, media(6, 7, 8), "deve retornar a média");
 } catch(e) {
     console.log(e);
 }
-
 ```
 
 
@@ -168,28 +128,18 @@ try {
 ```javascript
 var assert = require('assert');
 
-//
-// Variáveis
-//
-var valor1, valor2, valor3, media;
-
-//
-// Sua lógica
-//
-valor1 = 6;
-valor2 = 7;
-valor3 = 8;
-media  = (valor1 + valor2 + valor3) / 3;
+var media = function(valor1, valor2, valor3) {
+    return (valor1 + valor2 + valor3) / 3;
+}
 
 //
 // Seu teste
 //
 try {
-    assert.equal(7, media, "deve retornar a média");
+    assert.equal(7, media(6, 7, 8), "deve retornar a média");
 } catch(e) {
     console.log(e);
 }
-
 ```
 
 {% include /alertas/logica-feedback.html %}
