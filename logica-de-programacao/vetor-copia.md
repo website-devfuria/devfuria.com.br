@@ -1,6 +1,6 @@
 ---
-title:       Vetor cópia - algoritmo para copiar um vetor
-description: Exercício de lógica de programação envolvendo vetor.
+title:       Algoritmo para copiar um vetor
+description: Exercício de lógica de programação  para copiar um vetor
 serie:       Lógica Nível 4 vetores
 ordem:       3
 ---
@@ -33,7 +33,7 @@ int main() {
 
     //
     // Testes
-    //    
+    //
     assert(vetor2[0] == 10);
     assert(vetor2[1] == 20);
     assert(vetor2[2] == 30);
@@ -44,7 +44,7 @@ int main() {
 
 ### Solução na linguagem C
 
-Já sabemos que em C, se quisermos trabalhar com vetor e funções, teremos que passar um valor extra como parâmetro 
+Já sabemos que em C, se quisermos trabalhar com vetor e funções, teremos que passar um valor extra como parâmetro
 indicando o tamanho do vetor. Então, para simplificar o resultado, não utilizamos funções.
 
 Repare também que incluímos a variável `i`.
@@ -65,7 +65,7 @@ int main() {
 
     //
     // Testes
-    //    
+    //
     assert(vetor2[0] == 10);
     assert(vetor2[1] == 20);
     assert(vetor2[2] == 30);
@@ -110,7 +110,7 @@ assert lista1 == lista2
 
 Leia mais sobre [listas](/python/listas/) na seção Python.
 
-Mas os exercícios envolvendo vetores (listas) são para treinarmos os laços de repetição, então vamos ver como seria um 
+Mas os exercícios envolvendo vetores (listas) são para treinarmos os laços de repetição, então vamos ver como seria um
 código semelhante ao mostrado na linguagem C.
 
 ```python
@@ -181,7 +181,7 @@ Para efetuarmos um cópia, ou melhor, um clone, podemos fazer simplesmente isso.
 
     var b = a.slice();
 
-E também poderíamos criar o clone através de um laço de repetição. 
+E também poderíamos criar o clone através de um laço de repetição.
 
 Mas repare bem que mudamos o teste.
 

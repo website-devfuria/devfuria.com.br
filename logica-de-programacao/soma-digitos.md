@@ -1,6 +1,6 @@
 ---
 title:       Somar dígitos
-description: Exercício de lógica de programação para dígitos de um inteiro.
+description: Exercício de lógica de programação para somar os dígitos de um número inteiro.
 serie:       Lógica Nível 3
 ordem:       2
 ---
@@ -14,6 +14,11 @@ Faça um programa para somar os dígitos de um inteiro
 
 Sem utilizar recursos de string, ou seja, trabalhe apenas com tipos numéricos.
 
+Somar dígitos significa que dados um número qualquer, exemplo, 2015, devemos somar seus dígitos:
+
+    2  +  0 +  1 +  5
+
+O resultado esperado para o número acima seria 8.
 
 
 
@@ -26,7 +31,7 @@ Linguagem C
 #include <assert.h>
 
 //
-// Função que soma os dígitos de um número 
+// Função que soma os dígitos de um número
 //
 int somarDigitos(int numero) {
 
@@ -56,7 +61,7 @@ int main() {
 #include <assert.h>
 
 //
-// Função que soma os dígitos de um número 
+// Função que soma os dígitos de um número
 //
 int somarDigitos(int numero) {
     int soma = 0;
@@ -65,7 +70,7 @@ int somarDigitos(int numero) {
         soma   += numero % 10;
         numero  = numero / 10;
     }
-    
+
     return soma;
 }
 
@@ -167,7 +172,7 @@ for n in num:
     soma += n
 ```
 
-Mas o tipo numérico não é iterável (iterable), mas um lista é, então...
+Mas o tipo numérico não é iterável (iterable), mas uma lista é, então...
 
 ```python
 numList = [2, 0, 1, 5]
@@ -191,7 +196,7 @@ for n in numStr:
 
 Mas o exercício diz para não utilizarmos o recurso de strings.
 
-Poderia criar a lista conforme o código abaixo, mas ainda a conversão para string.
+Poderia criar a lista conforme o código abaixo, mas ainda haveria a conversão para string.
 
 ```python
 numList = [int(i) for i in str(2015)]
@@ -201,7 +206,7 @@ for n in numStr:
     soma += n
 ```
 
-Simplificando mais um pouco acabo encontrando outra forma, mas lá está a conversão.
+Simplificando mais um pouco, acabo encontrando outra forma. Porém, ainda vemos a conversão.
 
 ```python
 numList = map(int, str(2015))
@@ -212,7 +217,7 @@ for n in numStr:
 ```
 
 Legal, descobri que não há uma conversão direta de número para lista em Python e, após um longa divagação, percebe-se
-que todas as soluções recaem na solução inicial, portanto, a primeira solução é a mais indicada.
+que todas as soluções recaem na solução inicial, portanto, sou obrigado a admitir que a primeira solução é a mais indicada.
 
 
 

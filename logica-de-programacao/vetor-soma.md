@@ -1,6 +1,6 @@
 ---
-title:       Vetor soma - função para somar vetor
-description: Exercício de lógica de programação. Criar função para somar vetor.
+title:       Algoritmo para somar vetor
+description: Exercício de lógica de programação onde criaremos uma função para somar um vetor.
 serie:       Lógica Nível 4 vetores
 ordem:       2
 ---
@@ -68,7 +68,7 @@ Se quer um desafio na linguagem C tente desenvolver um código que descubra qual
 //
 int retSomaVetor(int vt[], int i) {
     int soma;
-    
+
     while (i > 0) {
         soma += vt[i - 1];
         i--;
@@ -128,7 +128,7 @@ assert 60 == somarLista(lista)
 
 A esta altura é bom lembrar que, nem de longe, estamos dizendo que Python é melhor que C, isso é bobagem.
 
-Esses exercícios com vetores são legais pois, estamos tendo a oportunidade de ver duas perspectivas diferentes: 
+Esses exercícios com vetores são legais pois, estamos tendo a oportunidade de ver duas perspectivas diferentes:
 a de uma linguagem da baixo e a de uma linguagem de alto nível.
 
 E em JavaScript, com seria?
@@ -201,7 +201,7 @@ try {
 
 ### Outra solução na linguagem JavaScript (Node.js)
 
-A solução acima equipara-se a solução do Python. Estamos utilizando o laço "for-in", porém esse tipo de laço foi 
+A solução acima equipara-se a solução do Python. Estamos utilizando o laço "for-in", porém esse tipo de laço foi
 introduzido na linguagem posteriormente, ou seja, como nós resolveríamos o problema (no passado)? Usando um laço "for"
 convencional e também da propriedade `length` de nosso array.
 

@@ -1,6 +1,6 @@
 ---
-title:       Vetor simples - algoritmo para carregar um vetor
-description: Exercício de lógica de programação os diversos tipos de laços.
+title:       Algoritmo para carregar um vetor
+description: Exercício de lógica de programação que ajuda a desenvolver os diversos tipos de laços.
 serie:       Lógica Nível 4 vetores
 ordem:       1
 ---
@@ -12,7 +12,7 @@ Exercício de lógica de programação
 
 Escreva um algoritmo para carregar um vetor com os números de 1 (inclusive) a 5 (inclusive) em ordem crescente.
 
-**Comentários:** Este é o primeiro exercício envolvendo vetores e começamos a notar a grande diferença entre uma 
+**Comentários:** Este é o primeiro exercício envolvendo vetores e começamos a notar a grande diferença entre uma
 linguagem de alto nível e uma de baixo nível. Obviamente que "nível" refere-se a distancia do hardware ou a proximidade
 com o "humano", não tem nada a ver com qualidade, ok?
 
