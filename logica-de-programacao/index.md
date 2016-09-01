@@ -23,13 +23,17 @@ Talvez você precise saber um pouco sobre [testes unitários](/tdd/) e também u
 utilizar muito o terminal.
 
 
-### Exercícios nível 0 (mais fácil que a Seleção Brasileira...)
+### Exercícios nível 0
+
+Mais fácil que a Seleção Brasileira...
 
 {% include get-serie.html page_serie="Lógica Nível 0" %}
 {% include menus.html %}
 
 
 ### Exercícios nível 1
+
+Vai exigir um pouco mais de atenção.
 
 {% include get-serie.html page_serie="Lógica Nível 1" %}
 {% include menus.html %}
@@ -38,8 +42,6 @@ utilizar muito o terminal.
 
 
 ### Exercícios nível 2
-
-Exercícios de lógica envolvendo __funções__.
 
 {% include get-serie.html page_serie="Lógica Nível 2" %}
 {% include menus.html %}
