@@ -34,7 +34,7 @@ var gulp = require('gulp');
 
 gulp.task('default', function() {
     //
-    // Seu código para as terafas defualt (padrão)
+    // Seu código para as terafas default (padrão)
     //
 });
 ```
@@ -43,7 +43,7 @@ Execute o __gulp__:
 
     $ gulp
 
-A tarefa padrão é executada porém não faz nada, exemplo:
+A tarefa padrão é executada, porém não faz nada, exemplo:
 
     [13:25:02] Using gulpfile ~/pasta/para/seu/projeto/gulpfile.js
     [13:25:02] Starting 'default'...
@@ -84,8 +84,8 @@ gulp.task('default', ['one', 'two']);
 
 ### Plugins
 
-O Gulp é a base da ferramente, quem faz o trabalho sujo são os plugins, após instalar o Gulp você provavelmente irá
-quere instalar alguns plugins. Temos plugin para quase tudo, no exemplo abaixo vou instalar apenas 2:
+O Gulp é a base da ferramenta, quem faz o trabalho sujo são os plugins, após instalar o Gulp você provavelmente irá
+querer instalar alguns plugins. Temos plugin para quase tudo, no exemplo abaixo vou instalar apenas 2:
 
     $ npm install gulp-util --save-dev
     $ npm install gulp-uglify --save-dev

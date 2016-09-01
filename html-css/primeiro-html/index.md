@@ -28,8 +28,7 @@ o IE), o resultado deve ser parecido com o abaixo:
 
 ### Explicando o código
 
-{% highlight html linenos %} 
-<!DOCTYPE html>
+{% highlight html linenos %}<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Seu primeiro HTML</title>

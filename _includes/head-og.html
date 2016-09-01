@@ -1,6 +1,9 @@
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="DevFuria" />
+<meta property="og:title" content="{{ page.title }}" />
 {% if page.description %}
 <meta name="og:description" content="{{ page.description  }}" />
 {% endif %}
-<meta property="og:type"    content="{{ page.title }}"/>
-<meta property="og:url"     content="http://www.devfuria.com.br{{ page.url }}" />
-<meta property="og:image"   content="http://www.devfuria.com.br{% if page.ogimage %}{{ page.ogimage | prepend: page.url }}{% else %}{{ "/assets/images/favicon.png" }}{% endif %}"/>
+<meta property="og:url"     content="{{ page.url | prepend: site.url }}" />
+<meta property="og:image"   content="{% if page.ogimage %}{{ page.ogimage | prepend: page.url | prepend: site: url }}{% else %}{{ "/assets/images/favicon.png" }}{% endif %}"/>

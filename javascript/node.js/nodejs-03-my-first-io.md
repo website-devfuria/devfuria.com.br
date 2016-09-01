@@ -49,12 +49,12 @@ A primeira coisa que você precisará para este exercício será um arquivo de t
     4
     5
 
-Eu dei o nome `03-texto.md` ao arquivo, ele contém 5 linhas onde as 3 primeiras contém algum conteúdo e as 2 últimas
+Eu dei o nome `program03-texto.md` ao arquivo, ele contém 5 linhas onde as 3 primeiras contém algum conteúdo e as 2 últimas
 estão vazias.
 
 O segundo passo é analisar o arquivo com o comando __Linux__ sugerido `cat file | wc -l`, no terminal do Linux execute:
 
-    cat 03-texto.md | wc -l
+    cat program03-texto.md | wc -l
     5
 
 O resultado é `5`, já sabemos o que esperar de nosso programa.
@@ -62,7 +62,7 @@ O resultado é `5`, já sabemos o que esperar de nosso programa.
 Agora podemos abrir e ler o arquivo de texto.
 
 ```javascript
-var contents = fs.readFileSync("03-texto.md")
+var contents = fs.readFileSync("program03-texto.md")
 ```
 
 Se olharmos para a variável `contents` teremos...
@@ -129,17 +129,44 @@ var contents = fs.readFileSync(process.argv[2])
 ### Código final
 
 ```javascript
-var fs = require('fs')
+// program03a.js
+var fs   = require('fs')
+var file = process.argv[2]
 
-var contents = fs.readFileSync(process.argv[2])
-var lines = contents.toString().split('\n').length - 1
+var contents = fs.readFileSync(file)
+var lines    = contents.toString().split('\n').length - 1
 console.log(lines)
 ```
 
-Ao checar o resultado (`learnyounode verify seu-script.js`) o aplicativo faz uma observação:
+Ao checar o resultado (`learnyounode verify program03a.js`) o aplicativo faz uma observação: "Você poderá evitar o 
+método `toString()` passando  `utf8` como segundo parâmetro da função `readFileSync()` e então você terá uma string."
 
-Você poderá evitar o método `toString()` passando  `utf8` como segundo parâmetro da função `readFileSync()` e então
-você terá uma string, exemplo:
+Exemplo:
 
-    fs.readFileSync(process.argv[2], 'utf8').split('\n').length - 1
+```javascript
+fs.readFileSync(process.argv[2], 'utf8').split('\n').length - 1
+```
 
+Isso significa que podemos despresar a função `.tostring()`, pois o resultado de `fs.readFileSync(file, 'utf8')` é 
+igual a `fs.readFileSync(file).toString()`.
+
+Atualizando o arquivo temos...
+
+```javascript
+// program03b.js
+var fs   = require('fs')
+var file = process.argv[2]
+
+var lines = fs.readFileSync(file, 'utf8').split('\n').length - 1
+
+console.log(lines)
+```
+
+
+{% include call.html
+    style="success"
+    title="Próximo exercício"
+    descr="My First Async I/O!"
+    href="/javascript/node.js/nodejs-04-my-first-async-io/"
+    label="Ver matéria!"
+%}
