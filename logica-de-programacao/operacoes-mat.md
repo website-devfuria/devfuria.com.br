@@ -1,8 +1,8 @@
 ---
 title:       Funções para as 4  operações artiméticas
-description: Escreva uma função para cada uma das quatro  operações matemáticas simples.
-serie:       Lógica Nível 2
-ordem:       5
+description: Escreva uma função para cada uma das quatro operações matemáticas simples.
+serie:       Lógica Nível 1
+ordem:       0
 ---
 
 {% include /alertas/logica-apresentacao.html %}
