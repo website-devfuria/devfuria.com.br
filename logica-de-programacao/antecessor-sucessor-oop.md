@@ -1,5 +1,5 @@
 ---
-title:       Antecessor e sucessor de um número qualquer<br >(versão orientado a objeto)
+title:       Antecessor e sucessor de um número qualquer (versão orientado a objeto)
 description: Exercício de lógica de programação resolvido cujo objetivo é encontrar o sucessor e antecessor de um número qualquer.
 serie:       Lógica Nível 5
 ordem:       3
