@@ -17,14 +17,14 @@ Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o p
 Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, veja como instalar...
 
 <div class="list-group">
-    <a href="/linux/cookbook/python/" class="list-group-item">Instalando o Python 3</a>
-    <a href="/linux/cookbook/django/" class="list-group-item">Instalando o Django (python)</a>
-    <a href="/linux/cookbook/pip/" class="list-group-item">Instalando o pip (gerenciador de pacotes do python)</a>
-    <a href="/linux/cookbook/git/" class="list-group-item">Instalando o git</a>
-    <a href="/linux/cookbook/nodejs/" class="list-group-item">Instalando o nodejs</a>
-    <a href="/linux/cookbook/npm/" class="list-group-item">Instalando o npm</a>
-    <a href="/linux/cookbook/java/" class="list-group-item">Instalando o Java (jdk)</a>
-    <a href="/linux/cookbook/ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
+    <a href="/linux/instalando-python/" class="list-group-item">Instalando o Python 3</a>
+    <a href="/linux/instalando-django/" class="list-group-item">Instalando o Django (python)</a>
+    <a href="/linux/instalando-pip/" class="list-group-item">Instalando o pip (gerenciador de pacotes do python)</a>
+    <a href="/linux/instalando-git/" class="list-group-item">Instalando o git</a>
+    <a href="/linux/instalando-nodejs/" class="list-group-item">Instalando o nodejs</a>
+    <a href="/linux/instalando-npm/" class="list-group-item">Instalando o npm</a>
+    <a href="/linux/instalando-java/" class="list-group-item">Instalando o Java (jdk)</a>
+    <a href="/linux/instalando-ruby-on-rails/" class="list-group-item">Instalando o Ruby On Rails</a>
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
