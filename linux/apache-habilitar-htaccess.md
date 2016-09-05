@@ -1,5 +1,6 @@
 ---
 title:       Aprenda a habilitar arquivos .htaccess no Apache
+description: Aprenda como habilitar a utilização de arquivos .htaccess no servidor web Apache
 ---
 
 Os arquivos `.htaccess` foram, inicialmente, planejado para controlar o acesso, ele ainda faz isso muito bem, mas ele
