@@ -1,5 +1,5 @@
 ---
-title:       Trocar o valor de duas variáveis  (utilizando ponteiros)
+title:       Trocar o valor de duas variáveis utilizando ponteiros
 description: Criar uma função para trocar o valor de duas variáveis.
 serie:       Lógica Nível 8
 ordem:       2
