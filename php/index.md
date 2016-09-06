@@ -47,6 +47,15 @@ está executando.
 Leia mais sobre [como debugar em PHP](/php/debugando/).
 
 
+
+### Entendendo o HTTP
+
+Introdução prática e descomplicada sobre o protocolo HTTP onde nosso objetivo é entender os métodos GET e POST.
+
+Leia mais sobre [como funcionam os métodos GET e POST](/php/como-funcionam-os-metodos-get-e-post/).
+
+
+
 ### OOP - Programação Orientada a Objetos
 
 Veremos como PHP implementa o OOP, saiba que cada linguagem pode implementar o paradigma de forma variada. O PHP 
