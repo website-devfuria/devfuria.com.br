@@ -3,8 +3,6 @@ title:       Python - yield
 description: Apresentação pragmática da palavra reservada yield (Python)
 ---
 
-Isto é um rascunho (um bom rascunho diga-se de passagem)...
-
 Há uma dificuldade inerente quanto o entendimento da palavra reservada __yield__. Pois para compreender de fato seu
 funcionamento precisamos possuir conceitos vizinhos como iteradores (iterators), geradores (generators) e expressões
 geradoras (generator expressions). A maioria dos artigos começam explicando esses conceitos e deixam para o final

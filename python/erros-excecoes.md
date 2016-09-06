@@ -3,7 +3,6 @@ title:       Python - erros e exceções
 description: Entenda como trabalhar com erros e exceções em Python
 ---
 
-Isto é um rascunho...
 
 Segundo a documentação do Python há pelo menos dois tipos distintos de erros: erros de sintaxe e exceções.
 

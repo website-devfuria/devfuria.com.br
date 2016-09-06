@@ -3,9 +3,6 @@ title:       Programação Orientada a Objetos em Python
 description: Este artigo é um primeiro passo em direção a programação orientada a objetos através da linguagem Python
 ---
 
-__Isto é um rascunho...__
-
-
 Uma classe consiste da palavra chave `class` seguida de seu nome e da classe herdada entre parênteses.
 
 Abaixo, criamos a classe vazia `Car` que herda de `object`.
