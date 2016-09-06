@@ -1,8 +1,8 @@
 ---
-title:  Ajustando o DocumentRoot no Apache
+title:       Ajustando o DocumentRoot no Apache
+description: Receita básica e rápida pra ajustar a pasta documentroot do Apache
 ---
 
-Isto é um rascunho...
 
 ### Ajustando o DocumentRoot no Ubuntu
 
@@ -16,9 +16,7 @@ Procure entender o arquivo e altere o caminho para:
 
 	/home/usuario/NetBeansProjects
 
-... o exemplo acima condiz com meu HD, obviamente você deve
-escolher a pasta que faz sentido no seu HD.
-
+... o exemplo acima condiz com meu HD, obviamente você deve escolher a pasta que faz sentido no seu HD.
 
 Reinicie apache
 
@@ -36,11 +34,6 @@ Mudar o dono da pastas /var/www/html de root para o seu usuário:
 	# cd /var/www/
 	# chown seu_usuario:seu_usuario html/ -R
 
-
 Alterando as permissões:
 
 	# chmod 777 -R html/
-	
-
-
-
