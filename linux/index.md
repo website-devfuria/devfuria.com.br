@@ -28,7 +28,7 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
     <!--<a href="" class="list-group-item"></a>-->
 </div> 
 
-Veja mais [receitas de instalação](/linux/cookbook/).
+Veja mais [receitas de instalação](/linux/receitas-de-instalacao-de-softwares-no-linux/).
 
 
 ### Artigos
