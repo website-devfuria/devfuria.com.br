@@ -1,13 +1,9 @@
 ---
-title:       Debian Wheezy
-description: 
+title:       Após instalar o Debian Wheezy
+description: O que instalar depois de instalar o Debian Wheezy
 ---
 
-Isto é um rascunho...
-
-
-Após instalação
----
+O básico:
 
     apt-get install build-essential
     apt-get install curl libssl-dev
@@ -43,5 +39,6 @@ Phpmyadmin:
 Chrome
     
     apt-get install chromium chromium-l10n
+
 
 Fonte: [wiki.debian.org/Chromium](https://wiki.debian.org/Chromium "link-externo")
