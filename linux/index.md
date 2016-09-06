@@ -50,6 +50,7 @@ Veja mais [receitas de instalação](/linux/receitas-de-instalacao-de-softwares-
     <a class="list-group-item" href="/linux/imagem-cd-iso/">O que é uma "imagem de CD"?</a>
     <a class="list-group-item" href="/linux/problemas-instalacao-debian-7-5/">Problemas na instalação do Debian 7.5 (netinst)</a>
     <a class="list-group-item" href="/linux/apos-instalar-o-debian-wheezy/">Após instalar o Debian Wheezy</a>
+    <a class="list-group-item" href="/linux/apos-instalar-o-centos/">Após instalar o CentOS</a>
 </div> 
 
 

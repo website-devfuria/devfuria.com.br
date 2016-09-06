@@ -1,18 +1,7 @@
 ---
-title:       CentOS
-description: 
+title:       Após instalar o CentOS
+description: O que instalar depois de instalar o CentOS
 ---
-
-Isto é um rascunho...
-
-
-Após instalação
----
-
-<!--
-http://www.vivaolinux.com.br/artigo/CentOS-Pos-instalacao-basica
-http://www.hardware.com.br/tutoriais/centos/pagina3.html
--->
 
 
 ### Habilitar menu de contexto no Nautilus "Open in terminal"
@@ -42,3 +31,9 @@ Instale as dependências
 Seguir o guia...
 
     https://trac.ffmpeg.org/wiki/CentosCompilationGuide
+
+
+Veja também
+
+- [vivaolinux.com.br/artigo/CentOS-Pos-instalacao-basica](http://www.vivaolinux.com.br/artigo/CentOS-Pos-instalacao-basica "link-externo")
+- [hardware.com.br/tutoriais/centos/pagina3.html](http://www.hardware.com.br/tutoriais/centos/pagina3.html "link-externo")
