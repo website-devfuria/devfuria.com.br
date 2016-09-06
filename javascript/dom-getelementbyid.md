@@ -46,7 +46,7 @@ Se não houver a necessidade de utilizar uma variável poderemos , então, acess
 document.getElementById("nome-identificador").value = "outro texto qualquer";
 ```
 
-<hr/>
+- - -
 Fonte
 
 - Manual do JS (MDN) falando sobre a função [getElementById()](https://developer.mozilla.org/en-US/docs/Web/API/document.getElementById "link-externo")

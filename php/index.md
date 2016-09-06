@@ -129,7 +129,8 @@ As funções POSIX são derivadas de `ereg()`, já as funções do PREC são der
 {% include get-serie.html page_serie="PHP e Expressão Regular" %} 
 {% include menus.html %} 
 
-<hr/>
+- - -
+
 Veja também
 
 - [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php "link-externo")

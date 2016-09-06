@@ -137,7 +137,7 @@ if ($resultado === 1) {
 ```
 
 
-<hr/>
+- - -
 Fonte
 
 - [Manual do PHP - preg_match()](http://php.net/manual/en/function.preg-match.php "link-externo")
