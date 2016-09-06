@@ -33,23 +33,23 @@ Veja mais [receitas de instalação](/linux/receitas-de-instalacao-de-softwares-
 ### Artigos
 
 <div class="list-group">
-    <a href="/linux/utilitario-cat/">Utilitário de terminal cat (Linux)</a>
-    <a href="/linux/apache-habilitar-mod_rewrite-no-apache-mod/">Como habilitar mod_rewrite no Apache</a>
-    <a href="/linux/apache-habilitar-htaccess/">Como habilitar arquivos .htaccess no Apache</a>
-    <a href="/linux/apache-como-reiniciar-servidor-apache/">Como reiniciar o servidor Apache</a>
-    <a href="/linux/apache-ajustando-documentroot/">Ajustando o DocumentRoot no Apache</a>
-    <a href="/linux/qual-a-versao-do-ubuntu/">Qual é a versão do Ubuntu?</a>
-    <a href="/linux/mysql-error-cant-connect-to-local-mysql-server-through-socket/">MySQL, resolvendo o erro 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)</a>
-    <a href="/linux/django-error-loading-mysqldb-module/">Django, resolvendo o erro: Error loading MySQLdb module: No module named MySQLdb</a>
-    <a href="/linux/como-desabilitar-selinux/">Como desabilitar SElinux0 (Fedora e CentOS)</a>
-    <a href="/linux/como-dar-permissao-de-execucao/">Como dar permissão de execução em um arquivo no Linux</a>
-    <a href="/linux/como-acessar-servidor-remotamente/">SSH - acessando o Linux remotamente</a>
-    <a href="/linux/gnome-screenshot/">Como tirar um screenshot (CentOS)</a>
-    <a href="/linux/como-saber-qual-versao-do-linux-esta-instalada/">Como saber qual versão do Linux está instalada</a>
-    <a href="/linux/redirecionar-a-saida-do-terminal-para-arquivo/">Como redirecionar as saída do terminal (mysql) para um arquivo</a>
-    <a href="/linux/imagem-cd-iso/">O que é uma "imagem de CD"?</a>
-    <a href="/linux/problemas-instalacao-debian-7-5/">Problemas na instalação do Debian 7.5 (netinst)</a>
-    <a href="/linux/apos-instalar-o-debian-wheezy/">Após instalar o Debian Wheezy</a>
+    <a class="list-group-item" href="/linux/utilitario-cat/">Utilitário de terminal cat (Linux)</a>
+    <a class="list-group-item" href="/linux/apache-habilitar-mod_rewrite-no-apache-mod/">Como habilitar mod_rewrite no Apache</a>
+    <a class="list-group-item" href="/linux/apache-habilitar-htaccess/">Como habilitar arquivos .htaccess no Apache</a>
+    <a class="list-group-item" href="/linux/apache-como-reiniciar-servidor-apache/">Como reiniciar o servidor Apache</a>
+    <a class="list-group-item" href="/linux/apache-ajustando-documentroot/">Ajustando o DocumentRoot no Apache</a>
+    <a class="list-group-item" href="/linux/qual-a-versao-do-ubuntu/">Qual é a versão do Ubuntu?</a>
+    <a class="list-group-item" href="/linux/mysql-error-cant-connect-to-local-mysql-server-through-socket/">MySQL, resolvendo o erro 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)</a>
+    <a class="list-group-item" href="/linux/django-error-loading-mysqldb-module/">Django, resolvendo o erro: Error loading MySQLdb module: No module named MySQLdb</a>
+    <a class="list-group-item" href="/linux/como-desabilitar-selinux/">Como desabilitar SElinux0 (Fedora e CentOS)</a>
+    <a class="list-group-item" href="/linux/como-dar-permissao-de-execucao/">Como dar permissão de execução em um arquivo no Linux</a>
+    <a class="list-group-item" href="/linux/como-acessar-servidor-remotamente/">SSH - acessando o Linux remotamente</a>
+    <a class="list-group-item" href="/linux/gnome-screenshot/">Como tirar um screenshot (CentOS)</a>
+    <a class="list-group-item" href="/linux/como-saber-qual-versao-do-linux-esta-instalada/">Como saber qual versão do Linux está instalada</a>
+    <a class="list-group-item" href="/linux/redirecionar-a-saida-do-terminal-para-arquivo/">Como redirecionar as saída do terminal (mysql) para um arquivo</a>
+    <a class="list-group-item" href="/linux/imagem-cd-iso/">O que é uma "imagem de CD"?</a>
+    <a class="list-group-item" href="/linux/problemas-instalacao-debian-7-5/">Problemas na instalação do Debian 7.5 (netinst)</a>
+    <a class="list-group-item" href="/linux/apos-instalar-o-debian-wheezy/">Após instalar o Debian Wheezy</a>
 </div> 
 
 
