@@ -44,10 +44,8 @@ logo, você deve ter o Node devidamente instalado e também poderemos utilizar o
 Leia mais no artigo [Gulp](/misc/gulp/)
 
 
-<!--
-<div class="list-group">
-    <a href="/misc/apache-virtual-host/" class="list-group-item">Apache - Configurando Virtual Hosts</a>
-    <a href="/misc/arquivo-hosts/" class="list-group-item">Arquivo hosts (/etc/hosts)</a>
-    <a href="/misc/cgi-common-gateway-interface/" class="list-group-item">CGI Servindo páginas web (html)</a>
-</div>
--->
+### Vagrant
+
+Vagrant é um gerenciador de máquinas virtuais.
+
+Leia mais no artigo [Vagrant](/misc/vagrant/)

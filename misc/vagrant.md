@@ -1,29 +1,9 @@
 ---
 title:       Vagrant
-description: Vagrant
+description: O básico do Vagrant
 ---
 
-Isto é um rascunho...
-
-
 Vagrant é um gerenciador de máquinas virtuais.
-
-
-Links
-
-http://www.vagrantup.com/
-
-http://friendsofvagrant.github.io/
-
-http://friendsofvagrant.github.io/v1/docs/getting-started
-
-
-
-Mais sobre Base boxes
-
-http://feed2.me/post/44067313534/building-your-own-base-box-for-vagrant
-https://github.com/okfn/ckan/wiki/How-to-Create-a-CentOS-Vagrant-Base-Box
-
 
 
 Receitas básicas
@@ -238,4 +218,18 @@ Para voltar ao trabalho novamente, execute
 ... e seu ambiente será reconstruído.
 
 
-Este é o passo para trocar de ambiente (reconstriundo instantaneamente).
+Este é o passo para trocar de ambiente (reconstruindo instantaneamente).
+
+
+
+### Links
+
+- [vagrantup.com](http://www.vagrantup.com/ "link-externo")
+- [friendsofvagrant.github.io](http://friendsofvagrant.github.io/ "link-externo")
+- [friendsofvagrant.github.io/v1/docs/getting-started](http://friendsofvagrant.github.io/v1/docs/getting-started "link-externo")
+
+
+### Mais sobre Base boxes
+
+- [feed2.me/post/44067313534/building-your-own-base-box-for-vagrant](http://feed2.me/post/44067313534/building-your-own-base-box-for-vagrant "link-externo")
+- [github.com/okfn/ckan/wiki/How-to-Create-a-CentOS-Vagrant-Base-Box](https://github.com/okfn/ckan/wiki/How-to-Create-a-CentOS-Vagrant-Base-Box "link-externo")
