@@ -6,8 +6,8 @@ description: Guia prático de instalações de softwares para Linux
 ### NodeJs
 
 <div class="list-group">
-    <a href="/linux/instalando-nodejs/" >Instalando o nodejs</a>
-    <a href="/linux/instalando-npm/" >Instalando o npm</a>
+    <a class="list-group-item" href="/linux/instalando-nodejs/" >Instalando o nodejs</a>
+    <a class="list-group-item" href="/linux/instalando-npm/" >Instalando o npm</a>
 </div>
 
 
