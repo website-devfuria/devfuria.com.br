@@ -35,6 +35,7 @@ description: Guia prático de instalações de softwares para Linux
     <a href="/linux/instalando-php/" class="list-group-item">Instalando o PHP  no Linux</a>
     <a href="/linux/instalando-phpunit/" class="list-group-item">Instalando o PHPUnit no Linux</a>
     <a href="/linux/instalando-xdebug/" class="list-group-item">Instalando o x-debug no Linux</a>
+    <a href="/linux/configurando-php/" class="list-group-item">Configurando o PHP</a>
 </div>
 
 
