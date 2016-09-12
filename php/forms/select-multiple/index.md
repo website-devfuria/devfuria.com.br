@@ -175,4 +175,4 @@ $valores_selecionados = array (
 ```
 
 Veja o código completo deste exemplo no GitHub
-[php-exemplo/forms/listbox/](https://github.com/devfuria/php-exemplos/tree/master/forms/listbox "link-externo").
+[php-exemplo/forms/listbox/](https://github.com/devfuria/php-exemplos/tree/master/listbox "link-externo").

@@ -383,4 +383,4 @@ $valor_selecionado = "sbc";
 ```
 
 Veja o código completo deste exemplo no GitHub
-[php-exemplo/forms/combobox/](https://github.com/devfuria/php-exemplos/tree/master/forms/combobox "link-externo").
+[php-exemplo/forms/combobox/](https://github.com/devfuria/php-exemplos/tree/master/combobox "link-externo").

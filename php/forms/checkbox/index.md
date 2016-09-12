@@ -177,4 +177,4 @@ $car  = (bool) rand(0, 1) ? "checked" : null;
 ```
 
 Veja o código completo deste exemplo no GitHub
-[GitHub](https://github.com/devfuria/php-exemplos/tree/master/forms/checkbox "link-externo").
+[GitHub](https://github.com/devfuria/php-exemplos/tree/master/checkbox "link-externo").

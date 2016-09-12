@@ -146,5 +146,5 @@ código ficar mais legível, mas __não tome isso como um estilo__, ok?
 
 
 Veja o código completo deste exemplo no GitHub
-[php-exemplo/forms/radio/](https://github.com/devfuria/php-exemplos/tree/master/forms/radio "link-externo").
+[php-exemplo/forms/radio/](https://github.com/devfuria/php-exemplos/tree/master/radio "link-externo").
 

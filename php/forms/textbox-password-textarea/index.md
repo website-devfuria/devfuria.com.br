@@ -194,4 +194,4 @@ $text = "algum texto";
 ```
 
 Veja o código completo deste exemplo no GitHub
-[php-exemplo/forms/textbox/](https://github.com/devfuria/php-exemplos/tree/master/forms/textbox "link-externo").
+[php-exemplo/forms/textbox/](https://github.com/devfuria/php-exemplos/tree/master/textbox "link-externo").
