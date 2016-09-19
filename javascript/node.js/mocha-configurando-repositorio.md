@@ -4,7 +4,7 @@ description: Este artigo é uma dica de como configurar seu repositório no GitH
 ---
 
 Este artigo é uma dica de como configurar seu repositório no [GitHub](/git/) uma vez que você pretende criar uma aplicação
-JavaScript (Node.js) e utilizar o framework de testes [mocha](/javascript/node.js/mocha-teste-seu-javascript/). Também 
+JavaScript (Node.js) e utilizar o framework de testes [mocha](http://mochajs.org/ "link-externo"). Também 
 veremos como o __npm__ poderá nos auxiliar com esse objetivo.
 
 Indico o artigo para quem já experimentou o Node, o npm e o Mocha. Você deve ter o [Node.js](/linux/cookbook/nodejs/) 
