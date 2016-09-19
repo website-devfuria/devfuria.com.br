@@ -89,7 +89,7 @@ int main() {
 }
 ```
 
-<hr>
+- - -
 Fonte: [http://www.ime.usp.br/~pf/algoritmos/aulas/string.html](http://www.ime.usp.br/~pf/algoritmos/aulas/string.html "link-externo")
 
 

@@ -42,7 +42,7 @@ Adicione um alias ao arquivo `.bashrc`:
 	# alias skype='LD_PRELOAD=/usr/lib/libv4l/v4l1compat.so /usr/bin/skype'
 
 
-<hr>
+- - -
 Fonte
 
 - [http://fedorasolved.org/Members/dcr226/installing-skype](http://fedorasolved.org/Members/dcr226/installing-skype "link-externo")

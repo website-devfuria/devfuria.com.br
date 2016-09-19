@@ -126,7 +126,7 @@ Execute:
     # gem install rails
 
 
-<hr>
+- - -
 Fonte:
 
 - [https://www.ruby-lang.org/en/installation/#building-from-source](https://www.ruby-lang.org/en/installation/#building-from-source "link-externo")

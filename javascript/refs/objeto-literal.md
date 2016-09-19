@@ -41,5 +41,5 @@ var obj = {
 ```
 
 
-<hr>
+- - -
 Fonte: Padrões JavaScript, Stefanov, pág. 58]

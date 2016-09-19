@@ -216,7 +216,7 @@ E há ainda o operador `[a:b:n]` que representa de `n` em `n` itens.
 </table>
 
 
-<hr>
+- - -
 Fonte:
 
 - [Slide 34 de "Python: apresentando a sintaxe" (Luciano Ramalho)](https://github.com/pythonprobr/pypratico/raw/master/academia/py_sintaxe.pdf "link-externo")

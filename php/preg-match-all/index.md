@@ -110,7 +110,7 @@ var_dump($matches);
 
 ![Figura com o resultado de preg-set-order](php-preg-set-order.png "preg-set-order")
 
-<hr>
+- - -
 Fonte 
 
 - [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php "link-externo")

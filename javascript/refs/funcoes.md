@@ -77,7 +77,7 @@ console.log(sum(4, 8, 15, 16, 23, 42)); // 108
 ```
 
 
-<hr>
+- - -
 Fontes
 
 - [MDN - JavaScript reference - Standard built-in objects - Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function "link-externo")

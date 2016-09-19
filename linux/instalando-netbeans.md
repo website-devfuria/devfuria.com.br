@@ -40,7 +40,7 @@ Dê permissão ao arquivo (`chmod 775 netbeans-6.5-python-linux.sh`) e excute:
 
 O problema é que a versão está defazada 6.5!!!
 
-<hr>
+- - -
 Fonte
 - [wiki.netbeans.org/Python](http://wiki.netbeans.org/Python "link-externo")
 

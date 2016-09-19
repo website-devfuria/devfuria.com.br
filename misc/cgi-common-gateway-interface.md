@@ -258,7 +258,7 @@ não, que informação faltou ou que informação poderia completar o artigo. Fi
 Agradeço desde já!
 
 
-<hr>
+- - -
 Fontes:
 
 - [http://pt.wikipedia.org/wiki/CGI](http://pt.wikipedia.org/wiki/CGI "link-externo")

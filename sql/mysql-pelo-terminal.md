@@ -79,7 +79,7 @@ Para sair do MySQL digite:
 
 O sistema responde com um simpático “Bye” e eu também.
 
-<hr>
+- - -
 Fonte
 
 * [Manual do MySQL - Connecting to and Disconnecting from the Server](http://dev.mysql.com/doc/refman/5.7/en/connecting-disconnecting.html "link-externo") 

@@ -164,7 +164,7 @@ input[type="text"] {
 ```
 
 
-<hr>
+- - -
 Fontes:
 
 - [www.cssportal.com/form-elements/text-box](http://www.cssportal.com/form-elements/text-box.php "link-externo")

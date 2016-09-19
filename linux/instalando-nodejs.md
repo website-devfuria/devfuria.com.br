@@ -29,7 +29,7 @@ E agora o __nodejs__:
     nvm alias default 0.10
     nvm use 0.10
 
-<hr>
+- - -
 Fonte
 - [Bevry's Learning Centre - Install Node.js](http://learn.bevry.me/node/install#via-node-version-manager-https-github-com-creationix-nvm- "linl-externo")
 
@@ -96,7 +96,7 @@ Para testar execute:
 
     node -v
 
-<hr>
+- - -
 Fonte
 - [http://nodebr.com/instalando-node-js-atraves-do-gerenciador-de-pacotes/](http://nodebr.com/instalando-node-js-atraves-do-gerenciador-de-pacotes/ "link-externo")
 
@@ -119,7 +119,7 @@ E instale...
 
     apt-get install nodejs nodejs-legacy
 
-<hr>
+- - -
 Fonte
 - [https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager "link-externo")
 

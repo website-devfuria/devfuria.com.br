@@ -93,5 +93,5 @@ xhr.onreadystatechange = function () {
 A partir deste ponto, podemos obter os dados em dois formatos: __texto plano__ e __XML__. As propriedades para acessar
 os dados são, respectivamente, `responseText` e `responseXML`.
 
-<hr>
+- - -
 Fonte [MDN - Começando com Ajax](https://developer.mozilla.org/pt-BR/docs/Ajax/Getting_Started "link-externo")

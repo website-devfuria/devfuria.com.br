@@ -49,7 +49,7 @@ Agora execute:
     yum localinstall *.rpm
 
 
-<hr>
+- - -
 Fonte
 
 - [http://www.tecmint.com/install-libreoffice-on-rhel-entos-6-3-5-8-and-fedora-17-16/](http://www.tecmint.com/install-libreoffice-on-rhel-entos-6-3-5-8-and-fedora-17-16/ "link-externo")
@@ -68,7 +68,7 @@ Na versão 17, execute:
 	# yum install libreoffice
 
 
-<hr>
+- - -
 Fonte
 
 -[http://www.youtube.com/watch?v=E3RhI23hFYs](http://www.youtube.com/watch?v=E3RhI23hFYs "link-externo")

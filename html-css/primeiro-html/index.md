@@ -58,7 +58,7 @@ este é outro assunto que trataremos em breve.
 
 
 
-<hr>
+- - -
 Fonte: 
 - [Introdução ao HTML- Mozilla.](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction "link-externo")
 

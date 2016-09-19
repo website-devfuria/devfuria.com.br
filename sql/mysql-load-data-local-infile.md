@@ -65,7 +65,7 @@ Se preferir peque o exemplo neste [gist](https://gist.github.com/flaviomichelett
 Na próxima matéria veremos como [manipular nossa tabela](../mysql-instrucoes-tabelas/), para isso utilizaremos algumas 
 instruções muito úteis (continuaremos utilizando a tabela pet).
 
-<hr>
+- - -
 Fonte
 
 - [Manual do MySQL - Loading Data into a Table](http://dev.mysql.com/doc/refman/5.7/en/loading-tables.html "link-externo")

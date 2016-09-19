@@ -61,5 +61,5 @@ Você poderá utilizar lançando mão de uma biblioteca como a jQuery, por exemp
 consulta baseada em seletor CSS como principal paradigma de programação. Os aplicativos Web baseados na jQuery utilizam
 um equivalente de `querySelectorAll()` portável e independente de navegador chamado `$()`.
 
-<hr>
+- - -
 Fonte: David Flanagan em seu livro “JavaScript: O guia definitivo” pág. 360

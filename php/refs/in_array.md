@@ -51,7 +51,7 @@ echo in_array(500, $arr) ? 'true' : 'false' ;               // 'true'
 ```
 
 
-<hr>
+- - -
 Fonte
 - [Manual do PHP - in-array](http://www.php.net/manual/pt_BR/function.in-array.php "link-externo")
 

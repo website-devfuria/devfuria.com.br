@@ -64,7 +64,7 @@ Mas o problema de dependência, obviamente, também afetará o
 Mas nada que um `apt-get -f install` não resolva.
     
 
-<hr>
+- - -
 Fonte
 
 - [Site Oficial - NINJA-IDE](http://ninja-ide.org "link-externo")

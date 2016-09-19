@@ -27,5 +27,5 @@ Curso introdutório de SQL com banco de dados MySQL
 {% include menus.html %}
 
 
-<hr>
+- - -
 * [Manual oficial do MySQL](http://dev.mysql.com/doc/index.html "link-externo")

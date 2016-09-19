@@ -25,7 +25,7 @@ e vice-versa.
 
 Não é mais um framework web em Python, nem é uma especificação enorme e assustadora que deve ser evitada a todo custo.
 
-<hr>
+- - -
 Fontes
 
 - [slideshare.net/wsgi](http://www.slideshare.net/hdiogenes/wsgi-a-resposta-para-a-questo-definitiva-sobre-python-a-web-e-tudo-mais-368429 "link-externo")

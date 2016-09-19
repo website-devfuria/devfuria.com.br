@@ -71,7 +71,7 @@ Veja um exemplo mais completo:
 </table>
 ```
 
-<hr>
+- - -
 Fontes:
 
 - [HTML table - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table "link-externo")
@@ -147,7 +147,7 @@ thead tr:hover {
 ```
 
 
-<hr>
+- - -
 Fontes:
 
 - Criando Páginas Web com CSS, Andy Budd, Capítulo 6.

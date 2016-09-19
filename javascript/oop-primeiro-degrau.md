@@ -96,7 +96,7 @@ Em JS invocamos os atributos e métodos através do "ponto" `.` conforme esquema
     # executando um método (uma função)
     objeto.metodo();
 
-<hr>
+- - -
 Fonte:
 - [Manual do JS (MDN) - Introduzindo a Orientação a Objetos](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript "link-externo")
 

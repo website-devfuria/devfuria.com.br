@@ -18,6 +18,6 @@ Instalando o __gnome-utils__ instalamos  o __gnome-screenshot__.
     yum install gnome-utils -y
 
 
-<hr>
+- - -
 Fonte:
 - [http://senecacd.wordpress.com/](http://senecacd.wordpress.com/2012/11/06/taking-screenshots-on-centos-gnome-screenshot-util/ "link-externo")

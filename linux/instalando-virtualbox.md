@@ -48,7 +48,7 @@ Reinicie (`reboot`) e execute:
     # chmod o-w /usr/lib
     # vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-4.3.0-89960.vbox-extpack
 
-<hr>
+- - -
 Fontes
 
 - [www.if-not-true-then-false.com/install-virtualbox-with-yum-on-fedora-centos-red-hat-rhel](http://www.if-not-true-then-false.com/2010/install-virtualbox-with-yum-on-fedora-centos-red-hat-rhel/ "link-externo")
@@ -97,7 +97,7 @@ Instalar o Vbox:
 
 	# yum install VirtualBox-4.2
 
-<hr>
+- - -
 Fonte:
 - [install-oracle-virtualbox-on-fedora](http://www.zealfortechnology.com/2012/06/install-oracle-virtualbox-on-fedora.html "link-externo")
 

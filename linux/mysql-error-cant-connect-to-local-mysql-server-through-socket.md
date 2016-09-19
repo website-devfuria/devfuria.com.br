@@ -21,7 +21,7 @@ E (novamente) reiniciar o MySQL.
 
     /etc/init.d/mysqld restart
 
-<hr>
+- - -
 Fonte:
 - [stackoverflow.com/questions/11657829](http://stackoverflow.com/questions/11657829/error-2002-hy000-cant-connect-to-local-mysql-server-through-socket-var-run/20680577#20680577 "link-externo")
 

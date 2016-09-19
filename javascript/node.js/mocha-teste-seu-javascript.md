@@ -102,7 +102,7 @@ Sua tela deve ser parecida com a minha:
         at Object._onImmediate (/home/flavio/.nvm/v0.10.29/lib/node_modules/mocha/lib/runner.js:275:5)
         at processImmediate [as _immediateCallback] (timers.js:336:15)
 
-<hr>
+- - -
 Fonte: -[www.marcioalthmann.net](http://www.marcioalthmann.net/2014/01/tdd-e-node-js-introducao-ao-mocha/ "link-externo")
 
 
@@ -304,5 +304,5 @@ Onde buscar mais informações
 - [Mocha Wiki](https://github.com/mochajs/mocha/wiki "link-externo")
 - [Google Group](http://groups.google.com/group/mochajs "link-externo")
 
-<hr>
-Site oficial [http://mochajs.org]( "link-externo")
+- - -
+Site oficial [http://mochajs.org](http://mochajs.org/ "link-externo")

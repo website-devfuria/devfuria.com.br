@@ -51,6 +51,6 @@ Outra opção são os programas __K3B__ e o __X-CD-Roast__:
 9. Finalmente, clique em Write tracks. 
 
 
-<hr>
+- - -
 Fonte
 - [https://www.debian.org/CD/faq/#what-is](https://www.debian.org/CD/faq/#what-is "link-externo")

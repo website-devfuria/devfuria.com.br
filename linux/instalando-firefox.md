@@ -58,7 +58,7 @@ Para corrigir o menu do Debian, pois ele ainda aponta para a versão antiga, uti
     aplications -> accessories -> mainMenu
 
 
-<hr>
+- - -
 Fonte:
 - [support.mozilla.org/pt-BR/instalando-o-firefox-no-linux](https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux "link-externo")
 
@@ -85,7 +85,7 @@ Dica, você não mais precisará do iceweasel, então pode desinstalar:
 
     apt-get remove iceweasel 
 
-<hr>
+- - -
 Fonte:
 - [http://linuxconfig.org/easy-way-to-install-firefox-browser-on-debian-7-wheezy](http://linuxconfig.org/easy-way-to-install-firefox-browser-on-debian-7-wheezy "link-externo")
 
@@ -127,7 +127,7 @@ Feche todas a isntâncias do __Firefox__ e digite no terminal `firefox`.
 
 Se não funcionar, reinicie o sistema e, novamente, digite no terminal `firefox`.
 
-<hr>
+- - -
 Fonte
 - [https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux](https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux "link-externo")
 
@@ -148,7 +148,7 @@ Se você prefere instalar o __Firefox__ via repositório tente os passos abaixo:
     # yum --enablerepo=remi list firefox
     # yum --enablerepo=remi install firefox
 
-<hr>
+- - -
 Fonte
 - [http://www.tecmint.com/install-firefox-in-rhelcentos-6-3-fedora-17-16/](http://www.tecmint.com/install-firefox-in-rhelcentos-6-3-fedora-17-16/ "link-exerno")
 
@@ -172,6 +172,6 @@ Atualize...
     # yum update firefox
 
 
-<hr>
+- - -
 Fonte
 - [http://www.if-not-true-then-false.com/2011/install-firefox-on-fedora-centos-red-hat-rhel/](http://www.if-not-true-then-false.com/2011/install-firefox-on-fedora-centos-red-hat-rhel/ "link-externo")

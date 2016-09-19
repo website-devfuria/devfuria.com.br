@@ -21,7 +21,7 @@ Para parar o serviço:
 	# /etc/init.d/samba stop
 
 
-<hr>
+- - -
 Fonte
 
 - [http://www.hardware.com.br/tutoriais/samba-swat/pagina3.html](http://www.hardware.com.br/tutoriais/samba-swat/pagina3.html "link-externo")

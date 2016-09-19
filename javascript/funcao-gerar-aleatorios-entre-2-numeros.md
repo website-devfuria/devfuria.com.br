@@ -32,5 +32,5 @@ console.log(  getRandomInt(5, 10)  ); // retornará 5, 6, 7, 8, 9 e 10
 ```
 
 
-<hr>
+- - -
 Fonte: [MDN - Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random "link-externo")

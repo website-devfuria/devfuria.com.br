@@ -165,7 +165,7 @@ var_dump($_GET);
 ```
 
 
-<hr>
+- - -
 Fontes
 
 - [w3 - XMLHttpRequest Level 1](https://dvcs.w3.org/hg/xhr/raw-file/default/xhr-1/Overview.html "link-externo")

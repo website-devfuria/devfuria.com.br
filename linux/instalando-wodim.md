@@ -40,7 +40,7 @@ Agora execute:
     wodim dev=/dev/hda path/to/image.iso
 
 
-<hr>
+- - -
 Fonte
 
 - [http://paradadigital.com/2010/09/25/gravar-imagem-iso-em-cd-dvd-no-linux-debian-ubuntu-pelo-terminal.html](http://paradadigital.com/2010/09/25/gravar-imagem-iso-em-cd-dvd-no-linux-debian-ubuntu-pelo-terminal.html "link-externo")

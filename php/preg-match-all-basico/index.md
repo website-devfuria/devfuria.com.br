@@ -69,7 +69,7 @@ A função `preg_math_all()` carregará a varirável `$matches` com todos as oco
 
 ![Figura com o resultado de preg match all](php-preg-match-all.png "preg match all")
 
-<hr>
+- - -
 Fonte
 
 - [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php "link-externo")

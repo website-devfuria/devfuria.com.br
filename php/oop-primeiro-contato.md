@@ -171,6 +171,6 @@ class Triangulo {
 
 Olhando para a classe podemos afirmar que classe é um conjunto de métodos e propriedades.
 
-<hr>
+- - -
 Fonte:
 - [Manual do PHP Introduzindo a Orientação a Objetos](http://www.php.net/manual/pt_BR/language.oop5.basic.php "link-externo")

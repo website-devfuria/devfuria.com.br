@@ -26,7 +26,7 @@ Uma vez que selecionamos a base de dados, é preciso saber as tabelas que ela co
 Não apareceu nenhuma? Não? Então vamos [criar nossa primeira tabela](../mysql-criando-tabelas/).
 
 
-<hr>
+- - -
 Fonte
 
 - [Manual do MySQL - Creating and Using a Database](http://dev.mysql.com/doc/refman/5.7/en/database-use.html "link-externo")

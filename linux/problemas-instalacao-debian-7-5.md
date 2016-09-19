@@ -69,7 +69,7 @@ Digite __CRTL + ALT + F5__ para voltar para a tela de instalação.
 Digite __CRTL + ALT + F1__ para abrir o terminal se precisar executar alguns comandos, ver logs, etc...
 
 
-<hr>
+- - -
 Fonte
 
 - [Debain como desktop "Capítulo 6 do livro Linux Guia prático, Morimoto"](http://www.hardware.com.br/livros/linux/capitulo-debian-como-desktop.html "link-externo")

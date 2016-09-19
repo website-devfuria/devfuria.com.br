@@ -25,7 +25,7 @@ Se você precisar configurar uma __lista de sources__, este [gist](https://gist.
 
 
 
-<hr>
+- - -
 Fontes
 
 - [Python Imaging Library (PIL)](http://www.pythonware.com/products/pil/ "link-externo")
@@ -55,7 +55,7 @@ durante a instalação.
     apt-get install libtiff4-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.5-dev tk8.5-dev python-tk
 
 
-<hr>
+- - -
 Fontes
 
 - [Pillow v2.5.0 (PIL fork) - Installation](http://pillow.readthedocs.org/en/latest/installation.html#simple-installation "link-externo")

@@ -170,7 +170,7 @@ E o HTML deve ser...
 ```
 
 
-<hr>
+- - -
 Fonte:
 
 - Criando Páginas Web com CSS, Andy Budd, pág 129 (capítulo 6 - Layout de formulário complexo)

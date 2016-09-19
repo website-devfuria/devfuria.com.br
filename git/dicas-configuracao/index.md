@@ -15,7 +15,7 @@ realiza.
 
 Para ver suas configurações execute `git config --list`.
 
-<hr>
+- - -
 Fontes
 - [Pro Git  Configuração Inicial do Git](http://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git "link-externo")
 - [](http://git-scm.com/book/pt-br/v1/Customizando-o-Git-Configura%C3%A7%C3%A3o-do-Git "link-externo")
@@ -47,7 +47,7 @@ Para você não ter que digitar tudo isso ai acima sempre que quizer ver o log, 
 Digite `git seu-atalho` para ver o resultado.
 
 
-<hr>
+- - -
 Fontes:
 
 

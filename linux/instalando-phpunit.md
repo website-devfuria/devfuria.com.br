@@ -17,7 +17,7 @@ mais suportado. Caso você esteja precisando desinstalar sua versão através do
 
     # pear uninstall phpunit/PHPUnit
 
-<hr>
+- - -
 Fonte
 
 - [Getting Started with PHPUnit](https://phpunit.de/getting-started.html "link-externo")

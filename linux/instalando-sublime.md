@@ -46,7 +46,7 @@ Instale
 
 	# yum install sublime-text
 
-<hr>
+- - -
 Fonte:
 
 - [http://drayanaindra.blogspot.com.br/2013/01/install-sublime-text-2-via-repo-fedora_1.html](http://drayanaindra.blogspot.com.br/2013/01/install-sublime-text-2-via-repo-fedora_1.html "link-externo")

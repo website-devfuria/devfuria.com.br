@@ -52,7 +52,7 @@ Se o arquivo CoffeScript (`experimental.coffee`) estiver em branco, o arquivo ge
 ```
 
 
-<hr>
+- - -
 Fontes:
 
 - [coffeescript.org](http://coffeescript.org/ "link-externo")

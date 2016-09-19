@@ -135,7 +135,7 @@ array (size=3)
 ```
 
 
-<hr>
+- - -
 Documentação Oficial: [jQuery.ajax](http://api.jquery.com/jQuery.ajax/ "link-externo")
 
 
@@ -158,7 +158,7 @@ Para testar o código acima, utiliza o `script.php` abaixo.
 var_dump($_POST);
 ```
 
-<hr>
+- - -
 Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-externo")
 
 
@@ -177,7 +177,7 @@ Para testar o código acima, utiliza o `script.php` abaixo.
 var_dump($_GET);
 ```
 
-<hr>
+- - -
 Documentação Oficial: [jQuery.post](http://api.jquery.com/jQuery.post/ "link-externo")
 
 
@@ -197,5 +197,5 @@ parecido como o exemplo abaixo.
 echo json_encode(array("nome" => "fulano", "idade" => "alguns-anos"));
 ```
 
-<hr>
+- - -
 Documentação Oficial: [jQuery.getJSON](http://api.jquery.com/jQuery.getJSON/ "link-externo")

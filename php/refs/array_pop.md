@@ -36,6 +36,6 @@ Emitirá um erro do tipo Warning quando invocado com um valor não-array.
 A função irá "resetar" o ponteiro do array depois do uso.
 
 
-<hr>
+- - -
 Fonte
 - [Manual do PHP - array-pop](http://www.php.net/manual/pt_BR/function.array-pop.php "link-externo")

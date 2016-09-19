@@ -111,7 +111,7 @@ Agora podemos popular (inserir dados) nossa tabela.
 Poderemos fazer isso de registro em registro com a instrução __insert into__ ou podemos fazer em uma "tacada só"
 [lendo os dados a partir de um arquivo de texto](../mysql-load-data-local-infile).
 
-<hr>
+- - -
 Fonte
 
 - [Manual do MySQL - Creating a Table](http://dev.mysql.com/doc/refman/5.7/en/creating-tables.html "link-externo")

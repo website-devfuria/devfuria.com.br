@@ -81,7 +81,7 @@ Nós podemos acessar, por exemplo, usuários (users) sobre o protocolo __HTTTP__
 - __DELETE /users/:id__ – Deleta um único usuário através de seu `id`
 
 
-<hr>
+- - -
 Fonte
 
 - [Express.js - Basic routing tutorial](http://expressjs.com/starter/basic-routing.html "link-externo")
