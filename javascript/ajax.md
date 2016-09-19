@@ -13,13 +13,13 @@ O termo foi inventado pelo Jesse, mas o objeto __XMLHttpRequest__ (o que faz a c
 mercado pela Microsoft em meados do 1999.
  
  "__Ajax__" foi um jargão popular por muitos anos; agora é apenas um termo útil para uma arquitetura de aplicativo Web
- baseada em scripts de requisições HTTP. (Flanagam em seu livro "JavaScript O gua Definitivo", capítulo 18 Scripts HTTP)
+ baseada em scripts de requisições HTTP. (Flanagam em seu livro "JavaScript O guia Definitivo", capítulo 18 Scripts HTTP)
 
 Ajax é um conjunto de tecnologia: JavaScript, XML e uma linguagem do lado do servidor que não está contida no nome mas
 é igualmente importante.
 
 No começo, os dados circulavam principalmente no formato __XML__, mas com a criação e popularidade do formato 
-[JSON](http://www.json.org/ "link-externo") este último passou a ser o formato dominate. É por essa razão que Ajax é
+[JSON](http://www.json.org/ "link-externo") este último passou a ser o formato dominante. É por essa razão que Ajax é
 considerado apenas um "termo útil".
 
 A idéia essencial do Ajax é fazer uma requisição ao servidor sem ter que renderizar toda a página HTML, o que 
