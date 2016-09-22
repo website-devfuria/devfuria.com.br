@@ -1,8 +1,8 @@
 ---
-title:       Projeto Euler
-description: Apresentando o projeto
+title:       Apresentando o projeto Euler
+description: "Projeto Euler existe para encorajar, desafiar e desenvolver as habilidades e gozo de qualquer pessoa com interesse no fascinante mundo da matemática"
 serie:       Lógica Nível 9
-ordem:       2
+ordem:       1
 ---
 
 > "Project Euler exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the 
