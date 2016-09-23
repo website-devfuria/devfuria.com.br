@@ -57,6 +57,10 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-apache-via-yum-apt-get/" >Instalando e configurando o Apache no Linux</a>
     <a class="list-group-item" href="/linux/instalando-apache-wsgi/" >Instalando o módulo WSGI</a>
+    <a class="list-group-item" href="/linux/apache-habilitar-mod_rewrite-no-apache-mod/">Como habilitar mod_rewrite no Apache</a>
+    <a class="list-group-item" href="/linux/apache-habilitar-htaccess/">Como habilitar arquivos .htaccess no Apache</a>
+    <a class="list-group-item" href="/linux/apache-como-reiniciar-servidor-apache/">Como reiniciar o servidor Apache</a>
+    <a class="list-group-item" href="/linux/apache-ajustando-documentroot/">Ajustando o DocumentRoot no Apache</a>
 </div>
 
 
@@ -90,7 +94,7 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-####  Útils
+####  Utilitários
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-virtualbox/" >Instalando o VirtualBox no Linux</a>
@@ -131,10 +135,6 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/utilitario-cat/">Utilitário de terminal cat (Linux)</a>
-    <a class="list-group-item" href="/linux/apache-habilitar-mod_rewrite-no-apache-mod/">Como habilitar mod_rewrite no Apache</a>
-    <a class="list-group-item" href="/linux/apache-habilitar-htaccess/">Como habilitar arquivos .htaccess no Apache</a>
-    <a class="list-group-item" href="/linux/apache-como-reiniciar-servidor-apache/">Como reiniciar o servidor Apache</a>
-    <a class="list-group-item" href="/linux/apache-ajustando-documentroot/">Ajustando o DocumentRoot no Apache</a>
     <a class="list-group-item" href="/linux/qual-a-versao-do-ubuntu/">Qual é a versão do Ubuntu?</a>
     <a class="list-group-item" href="/linux/mysql-error-cant-connect-to-local-mysql-server-through-socket/">MySQL, resolvendo o erro 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)</a>
     <a class="list-group-item" href="/linux/django-error-loading-mysqldb-module/">Django, resolvendo o erro: Error loading MySQLdb module: No module named MySQLdb</a>
