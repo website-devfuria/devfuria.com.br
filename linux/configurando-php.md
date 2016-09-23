@@ -1,6 +1,6 @@
 ---
 title:       Configurando o PHP
-description: Pequenas configuraçõs do PHP (o básico do básico)
+description: Pequenas configurações do PHP (o básico do básico)
 ---
 
 
@@ -8,13 +8,14 @@ description: Pequenas configuraçõs do PHP (o básico do básico)
 
 Altere o `php.ini` utilize seu editor preferido, eu vou utilizar o "nano":
 
+Localização do arquivo no Debian (Ubuntu):
+
+	# nano /etc/php5/apache2/php.ini
+
 Localização do arquivo no Fedora:
 	
 	# nano /etc/php.ini
 
-Localização do arquivo no Ubuntu:
-
-	# nano /etc/php5/apache2/php.ini
 
 Procure pelas linhas abaixo e altere os valores como se segue:
 
@@ -23,11 +24,7 @@ Procure pelas linhas abaixo e altere os valores como se segue:
 	track_errors = On
 	html_errors = On
 
-Reinicie o apache:
-
-	(fedora)# systemctl restart httpd.service
-
-	(ubuntu)# /etc/init.d/apache2 restart
+Agora [reinicie o apache](/linux/apache-como-reiniciar-servidor-apache/).
 
 
 
