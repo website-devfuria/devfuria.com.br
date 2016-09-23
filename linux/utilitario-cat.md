@@ -1,6 +1,6 @@
 ---
 title:       Utilitário de terminal cat (Linux)
-description: Rápido guia sobre o comando cat <br>muito utilizado no termial do Linux  que concatena e exibe arquivos
+description: Rápido guia sobre o comando cat  muito utilizado no termial do Linux  que concatena e exibe arquivos
 ---
 
 O utilitário __cat__ copia arquivos para a saída padrão. Você pode usar cat para mostrar o conteúdo de um ou mais 

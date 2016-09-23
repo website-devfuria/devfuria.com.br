@@ -1,6 +1,6 @@
 ---
 title:       Como reiniciar o servidor Apache
-description: Lista dos comando e uma breve explicação<br>de como reinicializar o servidor web Apache
+description: Lista dos comando e uma breve explicação de como reinicializar o servidor web Apache
 ---
 
 Neste breve artigo eu mostro como reinicializar o servidor web Apache no Linux.
