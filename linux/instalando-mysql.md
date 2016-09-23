@@ -19,8 +19,10 @@ Digite `exit` para sair.
 
 
 
-Ubuntu 15.4 (Vivid Vervet)
+Família Debian (Ubuntu)
 ---
+
+A receita abaixo eu utilizei em um Ubuntu 15.4 (vivid Verte) e também no Debian 8 (Jessie).
 
 	# apt-get install mysql-server mysql-client
     
