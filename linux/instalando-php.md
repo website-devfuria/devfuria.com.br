@@ -4,6 +4,31 @@ description: Como instalar PHP no Linux
 ---
 
 
+### Debian 8 (Jessie)
+
+Este receita de instalação cobre o __PHP 7__.
+
+No final do arquivo `/etc/apt/sources.list` acrescente o seguinte repositórios...
+
+    # PHP7
+    deb http://packages.dotdeb.org jessie all
+    deb-src http://packages.dotdeb.org jessie all
+
+Configure a chave gpg.
+
+    wget https://www.dotdeb.org/dotdeb.gpg
+    apt-key add dotdeb.gpg
+
+Atualize o sistema.
+
+    apt-get update
+
+Instale através do aptitute
+
+    aptitude install php7.0
+
+
+
 ### Ubuntu 15.4 (Vivid Vervet)
 
 Para instalar o PHP através do __apt-get__ execute o comando abaixo, você precisará ser root ou utiliza `sudo` antes do 
@@ -34,7 +59,7 @@ versões do PHP, isso é ótimo pois você poderá ter mais de uma versão insta
 
 
 
-### Pacotes complementares
+#### Pacotes complementares
 
 Talvez você queira instalar alguns pacotes complementares como, por exemplo a biblioteca GD para geração de imagens:
 
