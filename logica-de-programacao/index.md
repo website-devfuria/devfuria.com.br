@@ -1,6 +1,6 @@
 ---
 title:       Lógica de programação
-description: Tudo o que você precisa para aprender lógica de programação
+description: Lógica de programação para gente grande, aprenda lógica com o apoio de testes unitários!
 ---
 
 Seja bem vindo(a) a seção Lógica de programação!
