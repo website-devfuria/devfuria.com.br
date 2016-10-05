@@ -3,7 +3,7 @@ title:       Canvas - Limite das linhas (lineCap)
 description: Artigo demonstrando como manipular os limites da linha de um Canvas
 ---
 
-O método Estilo `lineCap()` define as extremidades das linhas.
+O método `lineCap()` define as extremidades das linhas.
 
 Os valores podem ser `"butt"`, `"round"` e `"square"`.
 
@@ -76,7 +76,7 @@ desenharLinhasGuias(context);
 Square
 ---
 
-<p><img src="canvas3.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
+<p><img src="canvas4.png" alt="fig exemplo de canvas" title="exemplo de canvas" class="canvas"/></p>
 
 ```javascript
 var canvas = document.getElementById('ex03');
