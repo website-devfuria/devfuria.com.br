@@ -1,14 +1,14 @@
 ---
 title:       Acessando o MySQL  via console (terminal)
-description: mysql -h localhost -u root -p  Para entender o comando acima leia o artigo abaixo.
+description: mysql -h localhost -u root -p  ...leia o artigo abaixo para entender o comando.
 serie:       Introdução ao MySQL
 ordem:       2
 ---
 
 
-Para testarmos a instalação do MySQL nada melhor do que acionarmos o aplicativo.
+Para testarmos a instalação do MySQL precisamos acionarmos o aplicativo.
 
-O MySQL utiliza a “label” `mysql>` na shell. Como exemplo veja a minha shell:
+O MySQL utiliza a “label” `mysql>` na shell, como exemplo veja a minha shell:
 
     [flavio@localhost www.devfuria.com.br]$
 
@@ -83,3 +83,12 @@ O sistema responde com um simpático “Bye” e eu também.
 Fonte
 
 * [Manual do MySQL - Connecting to and Disconnecting from the Server](http://dev.mysql.com/doc/refman/5.7/en/connecting-disconnecting.html "link-externo") 
+
+
+{% include call.html
+    style="success"
+    title="Ops, não vá embora ainda não!"
+    descr="Veja a index deste mini curso de sql e me diga o que você achou? Gostou da iniciativa? Faltou cobrir algum assunto?"
+    href="/sql/"
+    label="Ver lista de matérias!"
+%}

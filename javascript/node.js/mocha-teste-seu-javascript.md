@@ -22,7 +22,7 @@ Tendo o __Node__ e o __NPM__ instalados, execute no terminal o comando abaixo.
     npm install -g mocha
 
 
-Para testar a instalação, simplesmente execute no terminal `moch -V`, este comando irá mostrar a versão instalada,
+Para testar a instalação, simplesmente execute no terminal `mocha -V`, este comando irá mostrar a versão instalada,
 a minha foi `2.0.1`.
 
 
