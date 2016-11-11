@@ -24,9 +24,7 @@ Primeiro é preciso fazer o download.
 Mas como saber qual a versão correta para o seus sistema?
 
 Aí entra o "pulo do gato". O site do x-debug disponibiliza uma página onde você encontrará uma caixa de texto grande.
-Nela você deve inserir o conteúdo de seu `phpinfo()`, isso mesmo!
-
-Maluco né? Vou explicar melhor...
+Nela você deve inserir o conteúdo de seu `phpinfo()`, isso mesmo! Maluco né ? Vou explicar melhor...
 
 Crie um arquivo denominado `info.php` e salve no documentroot `/var/www/`. Insira no arquivo o seguinte conteúdo:
 
@@ -44,9 +42,9 @@ do x-debug (personalizado para sua máquina). Inclusive com o link para o downlo
 
 Para você ter um idéia do resultado, eu vou lhe mostrar o guia para a minha máquina:
 
-Dica: com você terá que executar o __phpize__, instale antes essas pacotes `apt-get install php5-dev php-pear`.
+Dica: como você terá que executar o __phpize__, instale antes essas pacotes `apt-get install php5-dev php-pear`.
 
-No meu caso o link será o exibio abaixo, vocçe precisa seguir o que foi dito acima para descobrir qual o seu link.
+No meu caso, a versão é `2.3.0`, você precisa seguir o que foi dito acima para descobrir qual o seu link.
 
     Download xdebug-2.3.0.tgz
 
@@ -65,7 +63,11 @@ Execute o __phpize__, você verá algo próximo a isso:
     Zend Module Api No:      20100525
     Zend Extension Api No:   220100525
 
-Compile.
+Dica: quanto você executa o `phpize` no seu terminal você ver´a uma numeração conforme exemplo acima. O seu número deve 
+ser idêntico ao mostrado pelo página "wizard" do x-debu. Se for diferente, atualize o phpize, como? Como root execute 
+`apt-get install php7.0-dev  `.
+
+Caso os números estahem corretos continuamos com a compilação, execute...
 
     ./configure
     make
@@ -82,9 +84,16 @@ Acrescente esta linha ao arquivo.
 
     zend_extension = /usr/lib/php5/20100525/xdebug.so
 
+Aproveite para habilitar o c-debug para o terminal, então repita o passo anterior mas neste arquivo...
+
+    nano /etc/php5/cli/php.ini
+
 Reinicie o servidor web (apache)
 
     /etc/init.d/apache2 restart
+
+
+
 
 
 Ubuntu 15.4 (Vivid Vervet)
@@ -105,6 +114,8 @@ Sua tela deve ser algo semelhante ao exibido abaixo.
         with Xdebug v2.2.6, Copyright (c) 2002-2014, by Derick Rethans
 
 A última linha indica que o __xdebug__ foi instalado.
+
+
 
 
 Ubuntu (versões antigas)
