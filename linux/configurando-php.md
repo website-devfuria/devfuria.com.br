@@ -10,11 +10,15 @@ Altere o `php.ini` utilize seu editor preferido, eu vou utilizar o "nano":
 
 Localização do arquivo no Debian (Ubuntu):
 
-	# nano /etc/php5/apache2/php.ini
+    # versão 7
+    nano /etc/php/7.0/apache2/php.ini
+
+    # versão 5
+	nano /etc/php5/apache2/php.ini
 
 Localização do arquivo no Fedora:
 	
-	# nano /etc/php.ini
+	nano /etc/php.ini
 
 
 Procure pelas linhas abaixo e altere os valores como se segue:
