@@ -7,13 +7,32 @@ Esta é a receita oficial do __PHPUnit__.
 
 Instalamos o __PHPUnit__ em qualquer distro através do PHP Archive (PHAR).
 
-    $ wget https://phar.phpunit.de/phpunit.phar
-    $ chmod +x phpunit.phar
-    $ sudo mv phpunit.phar /usr/local/bin/phpunit
-    $ phpunit --version
+    #
+    # baixe a  ferramenta
+    #
+    wget https://phar.phpunit.de/phpunit.phar
 
-Antigamente podíamos instalar através do __Pear__, mas esse processo não será
-mais suportado. Caso você esteja precisando desinstalar sua versão através do Pear utilize o comando abaixo
+    #
+    # dê permissão de execução
+    #
+    chmod +x phpunit.phar
+
+    #
+    # mova o arquivo (precisa ser root...
+    #
+    mv phpunit.phar /usr/local/bin/phpunit
+
+    #... ou usar o sudo)
+    sudo mv phpunit.phar /usr/local/bin/phpunit
+
+    #
+    # teste
+    #
+    phpunit --version
+
+Antigamente podíamos instalar através do __Pear__, mas esse processo não será mais suportado. 
+
+Caso você esteja precisando desinstalar sua versão através do Pear utilize o comando abaixo
 
     # pear uninstall phpunit/PHPUnit
 
