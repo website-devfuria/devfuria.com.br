@@ -1,9 +1,10 @@
+
 ---
 title:       Manipulando arquivos de texto em Python
 description: Aprenda a manipular (ler, escrever, adicionar, etc..)  arquivos de texto na linguagem Python
 ---
 
-Se você está compressa e quer ler receitas rápidas sugiro o artigo 
+Se você está compressa e quer ler receitas rápidas sugiro o artigo
 [Receitas para manipular arquivos de texto em Python](/python/receitas-para-manipular-arquivos-de-texto/).
 
 Caso contrário...
@@ -44,7 +45,7 @@ O terceiro parâmetro é opcional e nele especificamos a codificação do arquiv
 arquivo = open(nome-do-arquivo, 'r', encoding="utf8")
 ```
 
-Se tentarmos abrir um arquivo para leitura que não existe um erro será lançado.
+Se tentarmos abrir um arquivo para leitura que não existe, um erro será lançado.
 
 ```python
 >>> f = open('nome-errado.text', 'r')
@@ -53,7 +54,7 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'nome-errado.text'
 ```
 
-Se tentarmos abrir um arquivo para escrita que não existe então ele será criado, porém, se ele já existir, todo seu 
+Se tentarmos abrir um arquivo para escrita que não existe, então ele será criado, porém, se ele já existir, todo seu
 conteúdo será apagado no momento em que abrimos o arquivo.
 
 Devemos sempre fechar o arquivo aberto.
@@ -80,7 +81,7 @@ Podemos abrir um arquivo e iterar por cada linha conforme exemplo abaixo.
 >>> f = open('seu-arquivo.text', 'r')
 >>> for line in f:
 ...   line
-... 
+...
 'primeira linha\n'
 'segunda linha\n'
 'terceira linha\n'
@@ -125,7 +126,7 @@ Se quisermos ler todas linhas restantes em uma lista podemos utilizar a função
 []
 ```
 
-Repare que ao chamarmos pela segunda vez a função retornar uma lista vazia pois ela, na verdade, retorna as linhas 
+Repare que ao chamarmos pela segunda vez a função retornar uma lista vazia pois ela, na verdade, retorna as linhas
 restantes. Como, ao abrir o arquivo, restavam todas as linhas então ela retornou todas as linhas.
 
 Confundiu? Veja se este exemplo clareia as coisas.
@@ -142,7 +143,7 @@ Confundiu? Veja se este exemplo clareia as coisas.
 
 Para escrever em um arquivo sem apagar seu contéudo, ou seja, adicionando (incluído) novo conteúdo seguimos 3 passos:
 
-1. Ler todo o conteúdo do arquivo, 
+1. Ler todo o conteúdo do arquivo,
 2. efetuar a adição e
 3. escrever o novo conteúdo  no arquivo.
 
