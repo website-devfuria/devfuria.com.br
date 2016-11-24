@@ -13,13 +13,23 @@ Vamos habilitar o módulo de reescrita.
     # a2enmod rewrite
 
 Também precisamos fazer uma pequena alteração no arquivo de configuração do Apache, o problema aqui é você encontrar o
-dito cujo. 
+dito cujo.
 
 Normalmente ele se encontra neste local...
 
-    /etc/apache2/sites-available/default
+    #
+    # Família hedhat
+    #
+    /etc/httpd/conf/httpd.conf
 
-Em minha máquina (Ubuntu- Vivid Vervet) o local é este aqui...
+    #
+    # família Debian
+    #
+    /etc/apache2/apache2.conf
+
+Pode haver variações, por exemplo, o arquivo pode chamar-se `000-default.conf`.
+
+Em minha máquina (Ubuntu - Vivid Vervet) o local é este aqui...
 
     /etc/apache2/apache2.conf
 
@@ -44,3 +54,26 @@ Agora basta [reiniciar o Apache](/linux/apache-como-reiniciar-servidor-apache/).
     /etc/init.d/apache2 restart
 
 Você deve executar o comando acima como root ou utilizar `sudo` no início do comando.
+
+
+### Atenção a diretiva directory
+
+Aqui vai uma dica, o path (caminho) da diretiva deve apontar para a sua pasta de códigos (sua pasta de projetos),
+senão, "a coisa" não vai funcionar.
+
+Isso é válido, principalmente, no caso em que o valor de `DocumentRoot` tenha sido alterado.
+
+Em outras palavras, não adianta o seu `DocumentoRoot` apontar para `/seus/projetos/` e a diretiva `Directory` apontar 
+para a pasta raíz (`/`), ela deve apontar para `/seus/projetos`.
+
+
+### Testando
+
+Para testar podemos fazer um redirecionamento simples, bem simples.
+
+Crie o arquivo `.htaccess` na pasta `seu-document-root/old/` e acesse http://localhost/old
+
+    #
+    # /localhost/old/.htaccess
+    #
+    Redirect permanent /old http://devfuria.com.br/
