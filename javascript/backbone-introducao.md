@@ -44,11 +44,11 @@ A ordem didática desta sequência de tutoriais é mais ou menos como segue:
 Abaixo temos um arquivo HTML que nos servirá como esqueleto (matriz) para testar o framework Backbone.
 
 ```html
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
+    <meta charset="utf-8">
   </head>
   <body>
 
@@ -106,8 +106,12 @@ o exemplo abaixo.
 Não sei isso é bem um "Hello World!", mas serve para você realizar um teste inicial.
 
 ```html
-<html>
-  <head></head>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+  </head>
   <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
