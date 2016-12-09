@@ -5,9 +5,7 @@ description: O básico do Vagrant
 
 Vagrant é um gerenciador de máquinas virtuais.
 
-
-Receitas básicas
----
+Veja algumas receitas básicas.
 
 
 ### Configure Sua Primeira Instância
@@ -30,9 +28,7 @@ ou
 
 
 
-1. Configuração do Projeto Vagrant
----
-
+## 1. Configuração do Projeto Vagrant
 
     $ mkdir vagrant_guide
     $ cd vagrant_guide
@@ -45,8 +41,7 @@ Exemplo da estrutura de arquivos
         /outras pastas
 
 
-2. Boxes
----
+##  Boxes
 
 Depois da inicialização do projeto, o primeiro passo sempre é definir a base box no Vagrantfile.
 
@@ -68,9 +63,8 @@ Obs: se vc baixou a máquina então não precisa apontar para a url e sim para o
 ### Avisando o VagrantFile que sua box existe
 
     Vagrant::Config.run do |config|
-      config.vm.box = "lucid32"
+        config.vm.box = "lucid32"
     end
-
 
 ### Ligando e desligando a máquina:
 
@@ -81,7 +75,6 @@ Obs: se vc baixou a máquina então não precisa apontar para a url e sim para o
 ### vagrant SSH
 
 Acesse a máquina como no terminal. Na pasta onde está o projeto (projeto/app) digite:
-
 
     # vagrant ssh
 
@@ -94,8 +87,7 @@ Acessando os Arquivos do Projeto:
 
 
 
-3. Provisionamento
----
+##  Provisionamento
 
 Crie o arquivo manifests/default.pp n a pasta app/, ficará assim:
 
@@ -143,29 +135,24 @@ Acesse a SSH execute:
 
 
 
-4. Redirecionamento de Portas
----
+## Redirecionamento de Portas
 
-Avise ao VagrantFile do redirecionamento:
+Avise ao VagrantFile do redirecionamento.
 
-Vagrant::Config.run do |config|
+    Vagrant::Config.run do |config|
 
-  # Redireciona a porta 80 do guest para a porta 4567 do host
-  config.vm.forward_port 80, 4567
+      # Redireciona a porta 80 do guest para a porta 4567 do host
+      config.vm.forward_port 80, 4567
 
-end
+    end
 
-Faça um reload
-
-Abra o navegador e digite
+Faça um reload, em seguida, abra o navegador e digite
     
     localhost:4567
 
 
 
-5. Empacotamento
-
----
+## Empacotamento
 
 Tenha certeza que o ambiente virtual já foi criado pelo comando "vagrant up".
 
@@ -178,8 +165,7 @@ Para distribuir execute os comandos da seção "Configure Sua Primeira Instânci
 
 
 
-6. Desmontagem
----
+##. Desmontagem
 
 ### Suspender
 
@@ -201,7 +187,7 @@ Para retomar o trabalho, rode
     
     vagrant up 
 
-...que irá reinicar a máquina mas não repetirá a sequência de importação (uma vez que ela já foi importada antes).
+...que irá reiniciar a máquina mas não repetirá a sequência de importação (uma vez que ela já foi importada antes).
 
 
 
