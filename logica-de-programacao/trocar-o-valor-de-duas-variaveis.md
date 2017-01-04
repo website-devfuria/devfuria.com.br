@@ -19,7 +19,7 @@ fazendo com que o valor que está em `a` passe para `b` e vice-versa.
 ### Comentários:
 
 
-Este é o primeiro exercício de lógica que abre a série, ele é extremamente fácil de resolver e tem como 
+Este é o primeiro exercício de lógica que abre a série, ele é extremamente fácil de resolver e tem como
 objetivo te ajudar na familiarização dos exercícios.
 
 Começamos com as dua variáveis...
@@ -34,13 +34,13 @@ Você precisará trocar o valor entre elas, ou seja...
 
 Se você estivesse na faculdade resolvendo este exercício como você faria ?
 
-Você provavelmente se preocuparia em ler a entra e mostrar a saída, certo?
+Você provavelmente se preocuparia em ler a entrada e mostrar a saída, certo?
 
 Certo se você estivesse na faculdade, aqui estamos no devfuria, onde as coisas acontecem de verdade.
 
 No mundo real não programamos dessa forma, nos escrevemos um testes, vemos ele falhar e, por último, fazemos o teste
 passar implementando nossa lógica. Além disso para termos a certeza de que o código está funcionando nós simplesmente
-rodas o teste, se ele passar, significa que o código está funcionado!
+rodamos o teste, se ele passar, significa que o código está funcionado!
 
 Na linguagem C utilizamos a função `assert` para simularmos os testes, então nosso teste ficará assim...
 
@@ -87,23 +87,23 @@ int main (){
 }
 ```
 
-Devemos compilar o código acima. 
+Devemos compilar o código acima.
 
     gcc foo.c -o foo
 
-Entendeu o comando ? Não, explico.
+Entendeu o comando ? Não ? Explico...
 
     # este é um utilitário de linha de comando
     # que tem como objetivo compilar códigos escritos
     # na linguagem C
-    gcc 
+    gcc
 
     # Imaginando que escrevemos nosso código no arquivo
     # chamado `foo.c` devemos indicar o nome do arquivo
     # logo após o nome do compilador...
     gcc foo.c
 
-    # o parâmetro `-o` indicat qual será o objeto 
+    # o parâmetro `-o` indica qual será o objeto
     # ou melhor, qual será o arquivo executável
     # Em nosso eemplo, utilizo o nome `foo`
     -o foo
@@ -112,11 +112,16 @@ Entendeu o comando ? Não, explico.
     # Já no Windows devemos chamá-lo `foo.exe`, ficaria assim
     -o foo.exe
 
-Entendeu agora? Continuando, agora você deve executar o arquivo `foo` (ou `foo.exe`).
+Se você entendeu, continuamos. Você deve executar o arquivo.
 
+    # No Linux execute:
     ./foo
 
-O que você vê? Um erro disparado de nossa função `assert`, sinal vermelho, seu teste não está passando.
+    # No Windows acho que é só clicar em cima.
+
+O que você vê?
+
+Um erro disparado de nossa função `assert` ? Então, sinal vermelho, seu teste não está passando.
 
 Aqui começa o seu trabalho, você precisa fazê-lo passar.
 
@@ -157,13 +162,15 @@ Se você compilar o código acima e executá-lo dessa forma...
     gcc foo.c -o foo
     ./foo
 
-o que você vê agora ? Nada, certo? Pois bem, isso significa que seu teste passou.
+O que você vê agora ? Nada, certo?
+
+Pois bem, isso significa que seu teste passou.
 
 
 Linguagem Python
 ---
 
-Em Python seguimos o mesmo esquema, só que aqui é mais fácil pois, não temos que compilar o programa. Python é 
+Em Python seguimos o mesmo esquema, só que aqui é mais fácil pois, não temos que compilar o programa. Python é
 intrepretada e não compilada.
 
 Se você tiver o Python devidamente instalado, basta executar `python foo.py` onde `foo.py` é um arquivo de texto simples
