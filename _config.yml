@@ -14,25 +14,32 @@ redcarpet:
     extensions: [with_toc_data]
 highlighter: pygments
 permalink:   pretty
-exclude:     [theme, readme.md, composer.json, composer.lock, .gitignore]
 gems:
   - jekyll-sitemap
 
+exclude:
+    - theme
+    - readme.md
+    - composer.*
+    - .gitignore
+    - tests
+    - nbproject
 # Para atualizar mais rápido...
-#exclude:
-#    - javascript
-#    - php
-#    - python
-#    - logica-de-programacao
-#    - html-css
-#    - sql
-#    - misc
-#    - regex
-#    - tdd
-#    - git
-#    - c
-#    - seguranca-da-informacao
-#    - linux
+    - javascript
+    - php
+    - python
+    - logica-de-programacao
+    - html-css
+    - sql
+    - misc
+    - regex
+    - tdd
+    - git
+    - c
+    - seguranca-da-informacao
+    - linux
+    
+    
 
 #
 # A categoria deve possuir 'label' e 'url' para formarmos o menu

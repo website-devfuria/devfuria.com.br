@@ -1,5 +1,7 @@
 _site
 _config.yml
+composer.*
 /nbproject/
+logs/*
 *.run
 *.pdf

@@ -7,7 +7,7 @@ Não é um blog, ele parece-se mais com um site de cursos.
 Ele é feito especialmente para o público iniciante.
 
 
-## Instalação
+## Instalação - jekyll
 
 1. Você deve [instalar a linguagem ruby](http://www.devfuria.com.br/linux/cookbook/ruby-on-rails/).
 2. Instale a gem do Jekyll `gem install jekyll`.
@@ -18,7 +18,15 @@ Ele é feito especialmente para o público iniciante.
 7. Execute o jekyll `jekyll server` e veja o resultado em [http://localhost:4000/](http://localhost:4000/).
 
 
-##Você pode contribuir sim!!!
+## Instalação - php
+
+1. Gere o site (`jekyll build`) lembre-se de incluir o disqus e o googleanalytics
+2. Instale as dependencias: `~/composer.phar install`
+6. Crie a pasta `./logs` e dê permissão `777`
+7. Para visualizar tenha um [virtualhost](http://devfuria.com.br/misc/apache-virtual-host) devidamente configurado.
+
+
+## Você pode contribuir sim!!!
 
 Quer ajudar de alguma forma?
 
