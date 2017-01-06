@@ -25,7 +25,7 @@ function paginas($arr_uri) {
         require $pagina;
     } else {
         App::$slim->response->setStatus(404);
-        require App::$path['/'] . "/404/index.html";
+        require App::$path['/'] . "/404.html";
         log_pagina_nao_encontrada($str_uri);
     }
 }

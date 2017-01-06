@@ -17,7 +17,7 @@ class App {
     static $IP;
 }
 
-App::$slim = new \Slim\App;
+App::$slim = new \Slim\Slim();
 
 App::$path = array();
 App::$path['/']     = dirname(__FILE__);
