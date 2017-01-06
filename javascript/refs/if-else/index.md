@@ -1,6 +1,6 @@
 ---
 title:       JavaScript  Condicional if / else
-description: Referência prática sobre o perador condicional if / else - JavaScript
+description: Referência prática sobre o operador condicional if / else - JavaScript
 ---
 
 As instruções condicionais alteram o fluxo de controle de seu programa.
