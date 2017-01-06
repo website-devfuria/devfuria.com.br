@@ -48,17 +48,17 @@ Há ainda a opção de começar pelo [codeacademy](http://www.codecademy.com/en/
 ### Referência
 
 <div class="list-group">
-    <a href="/javascript/refs/typeof/" class="list-group-item">Operador typeof</a>
-    <a href="/javascript/refs/if-else/" class="list-group-item">Fluxo de controle, Condicional (if / else)</a>
-    <a href="/javascript/refs/operador-condicional-ternario/" class="list-group-item">Operador ternário condicional</a>
-    <a href="/javascript/refs/split/" class="list-group-item">Método split()</a>
-    <a href="/javascript/refs/arrays/" class="list-group-item">Arrays</a>
-    <a href="/javascript/refs/funcoes/" class="list-group-item">Funções</a>
-    <a href="/javascript/refs/funcoes-anonimas/" class="list-group-item">Funções anônimas</a>
-    <a href="/javascript/refs/funcoes-argumentos/" class="list-group-item">Funções - argumentos (arguments)</a>
-    <a href="/javascript/refs/objeto-global/" class="list-group-item">O objeto window e o espaço global</a>
-    <a href="/javascript/refs/prototipos-prototype/" class="list-group-item">O objeto prototype</a>
-    <a href="/javascript/refs/objeto-literal/" class="list-group-item">Objeto literal</a>
+    <a href="/javascript/typeof/" class="list-group-item">Operador typeof</a>
+    <a href="/javascript/if-else/" class="list-group-item">Fluxo de controle, Condicional (if / else)</a>
+    <a href="/javascript/operador-condicional-ternario/" class="list-group-item">Operador ternário condicional</a>
+    <a href="/javascript/split/" class="list-group-item">Método split()</a>
+    <a href="/javascript/arrays/" class="list-group-item">Arrays</a>
+    <a href="/javascript/funcoes/" class="list-group-item">Funções</a>
+    <a href="/javascript/funcoes-anonimas/" class="list-group-item">Funções anônimas</a>
+    <a href="/javascript/funcoes-argumentos/" class="list-group-item">Funções - argumentos (arguments)</a>
+    <a href="/javascript/objeto-global/" class="list-group-item">O objeto window e o espaço global</a>
+    <a href="/javascript/prototipos-prototype/" class="list-group-item">O objeto prototype</a>
+    <a href="/javascript/objeto-literal/" class="list-group-item">Objeto literal</a>
 </div> 
 
 
