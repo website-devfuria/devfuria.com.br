@@ -1,6 +1,6 @@
 _site
 _config.yml
-composer.*
+composer.lock
 /nbproject/
 logs/*
 *.run

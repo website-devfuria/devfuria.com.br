@@ -1,0 +1,10 @@
+{
+    "require": {
+        "slim/slim": "^3.6",
+        "monolog/monolog": "^1.17",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "config": {
+        "vendor-dir": "_site/vendor"
+    }    
+}
