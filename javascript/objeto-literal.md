@@ -1,6 +1,6 @@
 ---
-title:       JavaScript  objeto literal
-description: Referência prática ao objeto literal
+title:       Referência prática ao objeto literal em JavaScript
+description: O objeto literal var foo = {} talvez seja a forma mais intuitiva de se aprender OOP em JavaScript
 ---
 
 Senhoras e senhores, com vocês a palavra de Stoyan Stefanov...

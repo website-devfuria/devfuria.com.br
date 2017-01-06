@@ -1,6 +1,6 @@
 ---
-title:       JavaScript  argumentos de funções
-description: Referência prática de argumento de funções
+title:       Referência prática de argumento de funções em JavaScript
+description: O parâmetro extra 'arguments' e está disponível para funções quando elas são invocadas...
 ---
 
 Um parâmetro extra que está disponível para funções quando elas são invocadas é a matriz `arguments`.

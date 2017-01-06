@@ -1,5 +1,5 @@
 ---
-title:       JavaScript  Funções anônimas
+title:       Referência prática de funções anônimas em JavaScript
 description: Entenda o que são e como funcionam as funções anônimas em JavaScript
 ---
 

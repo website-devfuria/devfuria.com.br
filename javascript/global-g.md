@@ -1,6 +1,6 @@
 ---
-title:       Opção global g  olhando vários resultados
-description: Referência prática sobre a opção global g (expressões regulares)
+title:       Referência prática sobre a opção global g (expressões regulares)
+description: Você está montando sua expressão regular em JavaScript e pintou a necessidade de ver vários resultados...
 serie:       JavaScript e Expressão Regular
 ordem:       5
 ---

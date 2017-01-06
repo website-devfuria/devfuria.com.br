@@ -1,6 +1,6 @@
 ---
-title:       JavaScript  funções
-description: Referência prática de funções
+title:       Referência prática de funções em JavaScript
+description: Uma função é um objeto que tem código executável associado e pode ser chamada para executar esse código executável retornando um valor calculado
 ---
 
 Uma função é um objeto que tem código executável associado.

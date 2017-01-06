@@ -1,6 +1,6 @@
 ---
-title:       JavaScript  objeto prototype
-description: A propriedade `prototype` é utilizada  quando uma função atua como construtora.
+title:       Referência prática a propriedade prototype em JavaScript
+description: A propriedade prototype é fundamental em JavaScript, dominá-la é abrir as portas para o conceito de 'herança prototipica'
 ---
 
 A propriedade `prototype` é usada quando uma função atua como construtora. Ela se refere a um objeto que serve
