@@ -37,7 +37,6 @@ $variable = array(
     "/javascript/node.js/ns-02-baby-steps/"   => "/javascript/node.js/nodejs-02-baby-steps/",
     "/javascript/node.js/ns-03-my-first-io/"  => "/javascript/node.js/nodejs-03-my-first-io/",
     "/javascript/preparando-o-terreno"        => "/javascript/iniciando-com-javascript/",
-    "/javascript/objeto-global/"              => "/javascript/refs/objeto-global/",
     "/javascript/numeros-randomicos/"         => "/javascript/numeros-aleatorios/",
     "/javascript/backbone-hello-world/"       => "/javascript/backbone-introducao/",
     "/javascript/backbone-hello-world/"       => "/javascript/backbone-introducao/",
@@ -270,5 +269,10 @@ foreach ($variable as $key => $value) {
 
 App::$slim->get('/linux/cookbook/(:uri+)', function ($pag) {
     $nova_url = "/linux/instalando-" . $pag[0] . "/";
+    App::$slim->redirect($nova_url, 301);
+});
+
+App::$slim->get('/javascript/refs/(:uri+)', function ($pag) {
+    $nova_url = "/javascript/" . $pag[0] . "/";
     App::$slim->redirect($nova_url, 301);
 });
