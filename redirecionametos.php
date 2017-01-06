@@ -1,17 +1,17 @@
 <?php
 
 $variable = array(
-    "/index-old/"              => "/",
-    "/core/views"              => "/",
-    "/node_modules/.env"       => "/",
-    "/node_modules"            => "/",    
-    "/old/(:uri+)/"            => "/",
-    "/furia/(:uri+)/"          => "/",
-    "/fulia/"                  => "/",
-    "/fulia/index.php"         => "/",
-    "/google9a3a1fb0a47d86dd/" => "/",
-    "/vagrant.md"              => "/",
-    "/views/frm-feedback.php"  => "/",
+//    "/index-old/"              => "/",
+//    "/core/views"              => "/",
+//    "/node_modules/.env"       => "/",
+//    "/node_modules"            => "/",    
+//    "/old/(:uri+)/"            => "/",
+//    "/furia/(:uri+)/"          => "/",
+//    "/fulia/"                  => "/",
+//    "/fulia/index.php"         => "/",
+//    "/google9a3a1fb0a47d86dd/" => "/",
+//    "/vagrant.md"              => "/",
+//    "/views/frm-feedback.php"  => "/",
     
     "/blog/2015/10/07/aprenda-a-programar-do-zero.html" => "/blog",
     "/flavio-alexandre-micheletti.php"     => "https://flaviomicheletti.github.io/",
