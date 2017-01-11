@@ -11,4 +11,4 @@ Allow: /php
 Allow: /python
 Allow: /linux
 Allow: /seguranca-da-informacao
-Sitemap: http://www.devfuria.com/schemas/sitemap.xml
+Sitemap: http://www.devfuria.com/sitemap.xml
