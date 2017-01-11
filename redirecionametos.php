@@ -228,7 +228,8 @@ $variable = array(
     "/script-para-onde-envio-os-dados.php"                   => "/php/",
     "/seguranca-da-informacao/owasp-topten-2010-introducao/" => "/seguranca-da-informacao/owasp-topten-2010/",
 
-    "/tdd/tdd-test-driven-development/"         => "/logica-de-programacao/tdd-junto-com-logica-assim-tao-cedo/",
+    "/tdd/tdd-test-driven-development/"           => "/logica-de-programacao/tdd-junto-com-logica-assim-tao-cedo/",
+    "/tdd/tdd-test-driven-development/index.html" => "/logica-de-programacao/tdd-junto-com-logica-assim-tao-cedo/",
     "/tdd/exemplo-tdd-antecessor-sucessor/"     => "/tdd/",
     "/tdd/exemplo-tdd-area-quadra-oop/"         => "/tdd/",
     "/tdd/exemplo-tdd-area-quadrada/"           => "/tdd/",
