@@ -1,9 +1,9 @@
 /* Mobile */
 .intro h1 {
-    font-size: 1.9em;
+    font-size: 1.8em;
 }
 .start {
-    font-size: .9em;
+    font-size: 1.4em;
 }
 
 #conteudo {
@@ -15,27 +15,29 @@
     margin-top: 150px
 }
 
-/* Tablests ??? */
-@media (min-width: 768px) {
-    .intro {
-        padding: 0 2em;
-    }
-    .start {
-        padding: 0 10em;
-    }
+/* Tablets ??? */
+@media (min-width: 758px) {
     .intro h1 {
-        font-size: 3.7em;
+        font-size: 2.2em;
+        padding: 0.2em 4em;        
     }
     .start {
-        font-size: 1.85em;
+        padding: 0em 9em;
+        font-size: 1.8em;
     }
 }
 /* Desktop ??? */
 @media (min-width: 1024px) {
-    .intro {
-        padding: 0 15em;
+    .intro h1 {
+        font-size: 2.7em;
+        padding: 0.5em 6em;        
     }
+    .start {
+        padding: 0em 12em;
+        /*font-size: 2.7em;*/
+    }    
 }
+
 
 /*
 Tirando a imagem de fundo dos artigos
