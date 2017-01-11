@@ -3,6 +3,20 @@ title:       PHP
 description: Aprenda PHP de verdade!
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Course",
+  "name": "Curso prático da linguagem de programação PHP",
+  "description": "Aprenda PHP de verdade!",
+  "provider": {
+    "@type": "Organization",
+    "name": "Devfuria",
+    "sameAs": "http://www.facebook.com/devfuria/"
+  }
+}
+</script>
+
 PHP é uma linguagem de programação para uso geral.
 
 Inicialmente, projetada por [Rasmus Lerdorf](http://pt.wikipedia.org/wiki/Rasmus_Lerdorf "link-externo") na década de 

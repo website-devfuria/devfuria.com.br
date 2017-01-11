@@ -3,6 +3,34 @@ title:       Criando e iterando um array em PHP
 description: Aprenda como criar e iterar arrays em php com foreach e while
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://www.devfuria.com.br/php/criando-iterando-um-array/"
+  },
+  "headline": "Criando e iterando um array em PHP",
+  "datePublished": "2015-02-05T08:00:00+08:00",
+  "dateModified": "2015-02-05T09:20:00+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "Flávio Alexandre Micheletti"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Devfuria",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://devfuria.com.br/assets/images/favicon.png",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "description": "Aprenda como criar e iterar arrays em php com foreach e while"
+}
+</script>
 
 > Um array no PHP é atualmente um mapa ordenado. Um mapa é um tipo que relaciona valores para chaves. Este tipo é 
 > otimizado de várias maneiras, então você pode usá-lo como um array real, ou uma lista (vetor), hashtable (que é uma 
