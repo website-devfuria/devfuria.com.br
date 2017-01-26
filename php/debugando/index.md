@@ -45,7 +45,7 @@ Debugando com var_dump()
 
 Para contornar isso, o php conta com a função `var_dump()`.
 
-Devemos pasar como parâmetro a variável a ser analisada.
+Devemos passar como parâmetro a variável a ser analisada.
 
 ```php
 <?php
@@ -95,7 +95,7 @@ Nesse caso, ele trás várias informações e leitor deve acostumar-se a "extrai
 2. O erro propriamente dito: Division by zero.
 3. O script na qual ocorreu o erro
 4. A linha desse script
-5. O Call Stack, que mostra a senquência de executação, o tempo levado e a memória utilizada.
+5. O Call Stack, que mostra a senquência de execução, o tempo levado e a memória utilizada.
 
 São informações valiosas para quem está debugando.
 
