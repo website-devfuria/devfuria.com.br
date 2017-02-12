@@ -1,5 +1,5 @@
 ---
-title:       Backbone Um exemplo de visão (views)
+title:       Um exemplo de visão (views) em Backbone
 description: Um breve exemplo ilustrando como é uma View no framework Backbone (JavaScript)
 serie:       Introdução ao Backbone
 ordem:       5
@@ -25,7 +25,7 @@ O exemplo é tão simples que dá para mostrar em um único arquivo HTML, veja o
         <!-- Trecho HTML referente a visão (view) -->
         <div id="app-container">
           <h2>Lista</h2>
-          
+
           <input type="text" id="txt-item" />
           <input type="button" id="btn-salvar" value="Salvar" />
 
