@@ -29,19 +29,19 @@ exclude:
     - tests
     - nbproject
 # Para atualizar mais rápido...
-    # - javascript
-    # - php
-    # - python
-    # - logica-de-programacao
-    # - html-css
-    # - sql
-    # - misc
-    # - regex
-    # - tdd
-    # - git
-    # - c
-    # - seguranca-da-informacao
-    # - linux
+    - javascript
+    - php
+    - python
+    - logica-de-programacao
+    - html-css
+    - sql
+    - misc
+    - regex
+    - tdd
+    - git
+    - c
+    - seguranca-da-informacao
+    - linux
 
 
 
