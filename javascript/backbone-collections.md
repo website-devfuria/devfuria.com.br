@@ -1,5 +1,5 @@
 ---
-title:       Backbone - Collections
+title:       Backbone Collections
 description: Aprenda o básico sobre Collections no framework Backbone para JavaScript, veremos diversas forma de percorre uma coleção além de como ordenar uma collection.
 serie:       Introdução ao Backbone
 ordem:       9
@@ -28,7 +28,7 @@ console.log(colecao.length) // 4
 ```
 
 Também podemos definir a classe da coleção para ser, posteriormente, instanciada, veja exemplo abaixo. Repare que, além
-de utilizamos o método `extend()` do objeto `Backbone.Collection`, omitimos a palavra `new`. Ao definir a classe, 
+de utilizamos o método `extend()` do objeto `Backbone.Collection`, omitimos a palavra `new`. Ao definir a classe,
 aproveitamos para definir o método `initialize()`.
 
 ```javascript
@@ -126,7 +126,7 @@ theBeatles.forEach(function(model, index){
 });
 ```
 
-Também podemos utilizar a função `each()` herdada da biblioteca [underscorejs](http://underscorejs.org/ "link-externo"), 
+Também podemos utilizar a função `each()` herdada da biblioteca [underscorejs](http://underscorejs.org/ "link-externo"),
 veja exemplo abaixo.
 
 ```javascript
@@ -175,7 +175,7 @@ Repare que as propriedades `index` e `id` são distintas.
 Ordenando a coleção
 ---
 
-Ordenar uma coleção é uma funcionalidade muito útil, principalmente porte podemos escutar o evento `sort`, ou seja, a 
+Ordenar uma coleção é uma funcionalidade muito útil, principalmente porte podemos escutar o evento `sort`, ou seja, a
 cada nova ordenação podemos executar uma função de callback.
 
 Para ordernar a coleção precisamos evocar o método collection.sort, masantes disso é preciso dizer qual campo servirá
