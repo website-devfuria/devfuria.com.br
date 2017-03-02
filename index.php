@@ -22,7 +22,7 @@ function index() {
 }
 
 function paginas($arr_uri) {
-    # $arr_uri é um array eu descarto, ou seja, não utilizo.
+    # $arr_uri é um array que eu descarto, ou seja, não utilizo.
     unset($arr_uri);
 
     # getResourceUri() traz, no formato string, a parte após o domínio.

@@ -378,61 +378,15 @@ showthema:   true
         </div><!-- .row -->
         <div class="row">
             <div id="cbp-qtrotator" class="cbp-qtrotator">
-                <div class="cbp-qtcontent">
-                    <!--<img src="/assets/images/client-1.jpg" alt="client-1" />-->
-                    <blockquote>
-                        <p>Excelente explicação, rápida, prática, objetiva e esclarecedora...valeu!</p>
-                        <footer>Grazi AC</footer>
-                    </blockquote>
-                </div>
-                <div class="cbp-qtcontent">
-                    <blockquote>
-                        <p>Caraca meu, muito resumido e bem explicadinho.. Parabéns!!!</p>
-                        <footer>Kevin Riquena</footer>
-                    </blockquote>
-                </div>
-                <div class="cbp-qtcontent">
-                    <blockquote>
-                        <p>Sensacional, Flávio! Estava me sentindo mal acostumado usando jQuery. Estou criando um projeto sem utilizar frameworks e treinando JS.Sua explicação foi excelente. Obrigado!</p>
-                        <footer>Rômulo Bastos</footer>
-                    </blockquote>
-                </div>
-                <div class="cbp-qtcontent">
-                    <blockquote>
-                        <p>Grande devfuria, parabéns pelos tutoriais</p>
-                        <footer>Paulo Robson</footer>
-                    </blockquote>
-                </div>
-                <div class="cbp-qtcontent">
-                    <blockquote>
-                        <p>De parabéns, simples e prático!</p>
-                        <footer>Emerson Andrey</footer>
-                    </blockquote>
-                </div>
-                <div class="cbp-qtcontent">
-                    <blockquote>
-                        <p>Tenho aprendido muito com seus tutoriais, muito obrigado e parabéns pelo conteúdo.</p>
-                        <footer>Rodrigo Gonçalves</footer>
-                    </blockquote>
-                </div>
-                <div class="cbp-qtcontent">
-                    <blockquote>
-                        <p>Muito bom seu tutorial, parabéns!</p>
-                        <footer>Brito</footer>
-                    </blockquote>
-                </div>
-                <div class="cbp-qtcontent">
-                    <blockquote>
-                        <p>Muito obrigado! Não estava entendendo o que eram esses elementos até encontrar este post.</p>
-                        <footer>Lucas</footer>
-                    </blockquote>
-                </div>
-                <div class="cbp-qtcontent">
-                    <blockquote>
-                        <p>Muito bem feito o artigo, parabéns!! conserteza é de muita valia. Bem abordado os tópicos com a preocupação de passar desde a forma mais simples de testes até um framework. Obrigado!!!</p>
-                        <footer>Newton San</footer>
-                    </blockquote>
-                </div>
+                {% for depoimento in site.data.depoimentos %}
+                    <div class="cbp-qtcontent">
+                        <!--<img src="/assets/images/client-1.jpg" alt="client-1" />-->
+                        <blockquote>
+                            <p>{{ depoimento.texto }}</p>
+                            <footer>{{ depoimento.nome }}</footer>
+                        </blockquote>
+                    </div>
+                {% endfor %}
             </div>
         </div><!-- .row -->
     </div><!-- .row -->

@@ -1,10 +1,9 @@
-
 ---
 title:       Manipulando arquivos de texto em Python
 description: Aprenda a manipular (ler, escrever, adicionar, etc..)  arquivos de texto na linguagem Python
 ---
 
-Se você está compressa e quer ler receitas rápidas sugiro o artigo
+Se você está com pressa e quer ler receitas rápidas sugiro o artigo
 [Receitas para manipular arquivos de texto em Python](/python/receitas-para-manipular-arquivos-de-texto/).
 
 Caso contrário...

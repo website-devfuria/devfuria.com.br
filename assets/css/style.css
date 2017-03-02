@@ -9,7 +9,8 @@
 */
 
 body {
-	font: 300 14px/1.8 'Raleway', sans-serif;
+	/*font: 300 14px/1.8 'Raleway', sans-serif;*/
+	font: Lato,Helvetica,Arial,sans-serifsans-serif
 	color: #666;
 	overflow-x: hidden;
 }

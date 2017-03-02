@@ -19,7 +19,7 @@
 @media (min-width: 758px) {
     .intro h1 {
         font-size: 2.2em;
-        padding: 0.2em 4em;        
+        padding: 0.2em 4em;
     }
     .start {
         padding: 0em 9em;
@@ -30,12 +30,12 @@
 @media (min-width: 1024px) {
     .intro h1 {
         font-size: 2.7em;
-        padding: 0.5em 6em;        
+        padding: 0.5em 6em;
     }
     .start {
         padding: 0em 12em;
         /*font-size: 2.7em;*/
-    }    
+    }
 }
 
 
@@ -46,7 +46,7 @@ Tirando a imagem de fundo dos artigos
 #home.artigos {
     background: none;
     background-color: #222;
-} 
+}
 
 canvas, .canvas {
     background: #ffffff;
@@ -67,9 +67,9 @@ a.link-externo {
 a:hover, a:focus {
     color: #666;
 }
-h1, h2 {
-	text-transform: uppercase;    
-}
+/*h1, h2 {
+	text-transform: uppercase;
+}*/
 h2 {
     color: #122b3b;
     line-height: 1.52em;
@@ -83,7 +83,7 @@ h3 {
 /* melhor padding do que magin, pois assim o # funciona */
 h2, h3, h4 {
     margin-top:0;
-    padding-top: 2em; 
+    padding-top: 2em;
 }
 
 
@@ -183,7 +183,7 @@ http://bootsnipp.com/snippets/featured/call-to-action-with-dark-background
         display:table;
         width: calc(100% + 30px);
     }
-     
+
         .bs-calltoaction > .row > [class^="col-"],
         .bs-calltoaction > .row > [class*=" col-"]{
             float:none;

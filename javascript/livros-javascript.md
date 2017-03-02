@@ -49,6 +49,4 @@ Mas ainda não se sente muito íntimo com a linguagem, aconselho (nesta ordem):
 
 ### Veja também
 
-- Belíssimo artigo do [Vitor Brito - The book is on the table](http://www.vitorbritto.com.br/blog/the-book-is-on-the-table/ "link-externo")
-
 - Considere também a seguinte lista [http://lifeofjs.com/](http://lifeofjs.com/ "link-externo")
