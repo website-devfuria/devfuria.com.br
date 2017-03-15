@@ -32,9 +32,9 @@ description: Aprenda como criar e iterar arrays em php com foreach e while
 }
 </script>
 
-> Um array no PHP é atualmente um mapa ordenado. Um mapa é um tipo que relaciona valores para chaves. Este tipo é 
-> otimizado de várias maneiras, então você pode usá-lo como um array real, ou uma lista (vetor), hashtable (que é uma 
-> implementação de mapa), dicionário, coleção, pilha, fila e provavelmente mais. Como você pode ter outro array PHP como 
+> Um array no PHP é atualmente um mapa ordenado. Um mapa é um tipo que relaciona valores para chaves. Este tipo é
+> otimizado de várias maneiras, então você pode usá-lo como um array real, ou uma lista (vetor), hashtable (que é uma
+> implementação de mapa), dicionário, coleção, pilha, fila e provavelmente mais. Como você pode ter outro array PHP como
 >um valor, você pode facilmente simular árvores.
 >
 > <small>[Fonte: Manual do PHP - arrays](http://php.net/manual/pt_BR/language.types.array.php "link-externo")</small>
@@ -65,7 +65,11 @@ Criar um array
 
 Criando um array vazio.
 
+    # antigamente
     $arr = array();
+
+    # PHP7
+    $arr = [];
 
 Se executarmos `var_dump($arr)` veremos que o array está vazio.
 
@@ -83,8 +87,9 @@ Outro exemplo.
 
     $arr = array("melancia", "banana", "laranjas", "abacates");
 
-Quando o array acima cresce e fica grande demais para caber em 120 colunas temos como opção a forma abaixo.
+Se você for criar um array muito grande, então poderemos quebrar a linha, veja exemplo:
 
+    # antigamente
     $arr = array(
         "melancia",
         "banana",
@@ -92,6 +97,15 @@ Quando o array acima cresce e fica grande demais para caber em 120 colunas temos
         "abacates"
     );
 
+    # PHP 7
+    $arr = [
+        "melancia",
+        "banana",
+        "laranjas",
+        "abacates"
+    ];
+
+Eu gosto muito de usar dessa forma.
 
 
 Criar um array dinâmicamente
@@ -99,7 +113,7 @@ Criar um array dinâmicamente
 
 Essa é uma forma interessante, simplesmente vamos atribuindo valores ao array.
 
-    $arr = array();
+    $arr = [];
     $arr[] = 10;
     $arr[] = 11;
     $arr[] = 12;
@@ -107,7 +121,7 @@ Essa é uma forma interessante, simplesmente vamos atribuindo valores ao array.
 
 A função interna do PHP `array_push` ilustrada abaixo faz exatamente o mesmo que o código acima.
 
-    $arr = array();
+    $arr = [];
     array_push($arr, 10);
     array_push($arr, 11);
     array_push($arr, 12);
@@ -121,12 +135,12 @@ Especificando as chaves de um array
 
 Podemos especificar as chaves do array no momento da criação.
 
-    $arr = array(
-        "nome" => "Paulo Silva",
-        "rua" => "Rua 25 de Março",
+    $arr = [
+        "nome"   => "Paulo Silva",
+        "rua"    => "Rua 25 de Março",
         "bairro" => "Centro",
         "cidade" => "São Paulo"
-    );
+    ];
 
 O array acima é ilustrado abaixo.
 
@@ -135,12 +149,12 @@ O array acima é ilustrado abaixo.
 
 Outro exemplo
 
-    $arr = array(
+    $arr = [
         100 => "Primeiro item",
         101 => "Segundo item",
         102 => "Terceiro item",
         103 => "Quarto item"
-    );
+    ];
 
 Resultado:
 
@@ -153,12 +167,12 @@ Array numérico
 
 Um array é dito numérico quando as chaves (key) são inteiros.
 
-    $arr = array(
+    $arr = [
         0 => "vermelha",
         1 => "doce",
         2 => "redonda",
         3 => "maçã"
-    );
+    ];
 
 
 
@@ -167,12 +181,12 @@ Array associativo
 
 Um array é dito associativo quando as chaves (key) são strings.
 
-    $arr = array(
+    $arr = [
         "cor" => "vermelha",
         "sabor" => "doce",
         "formato" => "redonda",
         "nome" => "maçã"
-    );
+    ];
 
 Também dá para fazer o array misto (associativo e numérico)
 
@@ -183,12 +197,12 @@ Iterando um array com foreach
 
 Tomando o último array como exemplo:
 
-    $arr = array(
-        "cor" => "vermelha",
-        "sabor" => "doce",
+    $arr = [
+        "cor"     => "vermelha",
+        "sabor"   => "doce",
         "formato" => "redonda",
-        "nome" => "maçã"
-    );
+        "nome"    => "maçã"
+    ];
 
 Para percorrer(iterar) esse array e imprimir os resultado usamos o laço `foreach`.
 
