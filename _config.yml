@@ -18,7 +18,7 @@ permalink:   pretty
 #
 # para excluir um post do sitmap insira `sitemap: false`
 #
-gems:
+plugins:
   - jekyll-sitemap
 
 exclude:
