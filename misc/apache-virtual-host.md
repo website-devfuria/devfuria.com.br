@@ -3,6 +3,16 @@ title:        Apache - Configurando Virtual Hosts
 description:  Aprenda a utilizar Virtual Host no Apache, acompanha um exemplo prático.
 ---
 
+Este artigo é para quem quer configurar o Apache (localmente), através de Virtual Hosts, com o intento de imitar o
+ambiente de produção.
+
+Quando desenvolvemos softwares, utilizamos nossa própria máquina como se fosse um servidor local, por isso chamamos ela
+de __localhost__. Os desenvolvedores sempre tentam imitar ao máximo o ambiente de produção e existem algumas técnicas
+para conseguir esse objetivo. Enquanto escrevo este artigo (jan/2015), a forma mais elegante de imitar o ambiente de 
+produção é fazer uso do [Vagrant](https://www.vagrantup.com/ "link-externo"), mas essa não é a única forma. Durante
+muito tempo (antes do Vagrant) fizemos isso utilizando uma Virtual Host, quer dizer, já é uma técnica ultrapassada, porém
+ainda muito utilizada.
+
 O servidor Apache pode ser configurado para servir apenas a um site, o que é natural quando o cliente é dono e administra
 o servidor. Neste caso, a pasta principal (documentroot) `/var/www/` responderá por todos os sistemas ali instalados e
 haverá uma única configuração para os diversos sistemas.
@@ -17,15 +27,6 @@ você percebe a diferença entre as abordagens:
     1. Configurar o Apache para atender a diversos sites e sistemas (ambiente de produção)
     2. Configurar o Apache para desenvolver softwares (ambiente de desenvolvimento)
 
-Quando desenvolvemos softwares, utilizamos nossa própria máquina como se fosse um servidor local, por isso chamamos ela
-de __localhost__. Os desenvolvedores sempre tentam imitar ao máximo o ambiente de produção e existem algumas técnicas
-para conseguir esse objetivo. Enquanto escrevo este artigo (jan/2015), a forma mais elegante de imitar o ambiente de 
-produção é fazer uso do [Vagrant](https://www.vagrantup.com/ "link-externo"), mas essa não é a única forma. Durante
-muito tempo (antes do Vagrant) fizemos isso utilizando uma Virtual Host, quer dizer, já é uma técnica ultrapassada, porém
-ainda muito utilizada.
-
-Este artigo é para quem quer configurar o Apache (localmente), através de Virtual Hosts, com o intento de imitar o
-ambiente de produção.
 
 
 O que é Virtual Host ?
