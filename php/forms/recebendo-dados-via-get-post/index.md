@@ -45,7 +45,7 @@ echo $_GET['foo'];
 
 !["PHP erro undefined index"](undefined-index.png "PHP erro undefined index")
 
-E aí, j á sabe identificar o erro? O indice do array não foi definido (Undefined Index).
+E aí, já sabe identificar o erro? O indice do array não foi definido (Undefined Index).
 
 Quer dizer, estamos querendo utilizar um índice de um array que ainda não foi definido (inicializado).
 
@@ -108,7 +108,7 @@ Trocando as strings por código real temos:
 
 Voltamos a uma única linha, mas se tivermos 2 pontos ou mais teremos que repetir esse trambolhão aí.
 
-E se ao invés de dar `echo` atribuíssemos o valor (um dos resultado) na própria variável `$_POST['foo']`?
+E se, ao invés de dar `echo`, atribuíssemos o valor (um dos resultado) na própria variável `$_POST['foo']`?
 
     $_POST['foo'] = ( isset($_POST['foo']) ) ? $_POST['foo'] : null;
 
@@ -145,14 +145,14 @@ echo $_POST['pera'];
 echo $_POST['abacaxi'];
 ```
 
-Economizamos algumas linhas sem prejudicar a legibilidade (leia-se limpeza) do código.
+Economizamos algumas linhas sem prejudicar a legibilidade do código.
 
 
 
 Duplicando as variáveis
 ---
 
-A forma abaixo jṕa foi muito usual:
+A forma abaixo já foi muito usual:
 
 ```php
 <?php
@@ -182,4 +182,4 @@ O sabor da laranja está tanto em `$_POST['laranja']` como em `$laranja`.
     echo $_POST['laranja'];
     echo $laranja
 
-Se duplicar variáveis não for um problema para você então para mim também não é.
+Se, duplicar variáveis não for um problema para você, então para mim também não é.
