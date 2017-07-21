@@ -1,14 +1,14 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
+require_once dirname(__FILE__) . '/../_site/vendor/autoload.php';
 require_once dirname(__FILE__) . '/../app.php';
 
-class RequisicoesTest extends PHPUnit_Framework_TestCase {
+class RequisicoesTest extends PHPUnit\Framework\TestCase {
 
     protected $client;
 
     protected function setUp() {
-        $this->client = new GuzzleHttp\Client(['base_uri' => 'http://www.devfuria.vm02/']);
+        $this->client = new GuzzleHttp\Client(['base_uri' => 'http://www.devfuria.local/']);
     }
 
     public function testRequisicoesBasicas() {

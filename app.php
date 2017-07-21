@@ -21,7 +21,7 @@ App::$slim = new \Slim\Slim();
 
 App::$path = array();
 App::$path['/']     = dirname(__FILE__);
-App::$path['logs/'] = dirname(__FILE__) . "/logs/";
+App::$path['logs/'] = dirname(__FILE__) . "/_site/logs/";
 
 if (isset($_SERVER["REMOTE_ADDR"])) {
     App::$IP = $_SERVER["REMOTE_ADDR"];

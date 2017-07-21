@@ -1,9 +1,9 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
+require_once dirname(__FILE__) . '/../_site/vendor/autoload.php';
 require_once dirname(__FILE__) . '/../app.php';
 
-class LogsArquivoTest extends PHPUnit_Framework_TestCase {
+class LogsArquivoTest extends PHPUnit\Framework\TestCase {
 
     static $arquivo;
     static $file;
