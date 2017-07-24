@@ -8,7 +8,7 @@ ordem:       5
 Este exemplo é a evolução do anterior, portanto, caso acho um pouco complicado você terá a opção de ler o anterior para
 falicitar seu aprendizado.
 
-Neste exemplo estmaos construindo uma combobox com o framework Backbone (JavaScript). Desta vez criaremos a combo 
+Neste exemplo estmaos construindo uma combobox com o framework Backbone (JavaScript). Desta vez criaremos a combo
 utilizando-se de duas views. O HTML é bastante simples...
 
 ```html
@@ -21,27 +21,27 @@ utilizando-se de duas views. O HTML é bastante simples...
 </body>
 ```
 
-Em nosso script notamos duas visões. 
+Em nosso script notamos duas visões.
 
 A view `OptionView` cria um elemento na memória através do atributo `tagName`, no
 caso estamos criando a tag `option`. O desafio foi criar o atributo para a tag, na verdade é bem simples, utilizamos
 a jQuery para isso `this.$el.attr('value', this.model.id)` (veja a função `render()`). Mas fica a pergunta: podemos
 fazer isso de outra forma?
 
-Já a view principal `Combo` ficou mais simples, uma vez que retiramos os códigos que representavam cada __option__. A 
+Já a view principal `Combo` ficou mais simples, uma vez que retiramos os códigos que representavam cada __option__. A
 única observação é para a função `change()` que está delegando a chamada para a função `combo.eventChange()`. Estamos
 caminhando para a criação de um pequeno módulo chamado combo, quero dizer que o código está ficando maduro e aponta para
 um pequeno módulo contrutor de combobox. :)
 
 ```javascript
-Option = Backbone.Model.extend({
+var Option = Backbone.Model.extend({
     defaults: {
         id: 0,
         label: ""
     }
 });
 
-Options = Backbone.Collection.extend();
+var Options = Backbone.Collection.extend();
 
 //
 // View que representa cada option
@@ -63,11 +63,11 @@ var Combo = Backbone.View.extend({
     el: $('select'),
     initialize: function () {
         this.collection = new Options(null, this);
-        this.collection.on('add', this.render, this);    
+        this.collection.on('add', this.render, this);
     },
     events: {
         'click option':   'change',
-    },  
+    },
     add: function(option){
         this.collection.add(option);
     },

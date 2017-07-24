@@ -1,14 +1,15 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
+require_once dirname(__FILE__) . '/../_site/vendor/autoload.php';
 require_once dirname(__FILE__) . '/../app.php';
 
-class LogTest extends PHPUnit_Framework_TestCase {
+class LogTest extends PHPUnit\Framework\TestCase {
 
     static $file;
 
     public function testPaginaNaoEncontrada() {
         self::$file = log_pagina_nao_encontrada('path/to/page');
+        $this->assertTrue(true);
     }
 
     public static function tearDownAfterClass() {
@@ -18,5 +19,3 @@ class LogTest extends PHPUnit_Framework_TestCase {
     }
 
 }
-
-?>
