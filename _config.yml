@@ -4,8 +4,8 @@ url:   http://www.devfuria.com.br
 #
 # Configurações
 #
-enable_disqus:    false
-enable_analytics: false
+enable_disqus:    true
+enable_analytics: true
 
 # Antes era com kramdown
 # markdown:    kramdown
@@ -18,7 +18,7 @@ permalink:   pretty
 #
 # para excluir um post do sitmap insira (no post) `sitemap: false`
 #
-plugins:
+plugins_dir:
   - jekyll-sitemap
 
 exclude:
@@ -28,7 +28,6 @@ exclude:
     - .gitignore
     - tests
     - nbproject
-# Para atualizar mais rápido...
 #    - javascript
 #    - php
 #    - python

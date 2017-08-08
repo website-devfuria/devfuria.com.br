@@ -1,6 +1,6 @@
 ---
 title:       Trocar o valor de duas variáveis
-description: Primeiro exercício de lógica de programação para quebramos o gelo.
+description: Primeiro exercício de lógica de programação para quebrarmos o gelo.
 serie:       Lógica Nível 0
 ordem:       0
 ---
