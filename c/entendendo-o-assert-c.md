@@ -53,15 +53,15 @@ Desabilitar o assert
 
 É possível desabilitar o __assert__ sem mexer no código.
 
-Utilize a diretiva  `#define DEBUG`.
+Utilize a diretiva  `#define NDEBUG`.
 
 O exemplo anterior "false" funcionará corretamente (silenciosamente), veja:
 
     #include <stdio.h>
+    #define NDEBUG
     #include <assert.h>
 
-    #define DEBUG
-
+    
     int main(int argc, char const *argv[])
     {
         assert(1 == 2);
