@@ -9,7 +9,7 @@ Eu criei essa seção (re)pensando uma forma mais eficiente de ensinar a lógica
 
 Este curso é diferente de tudo o que você viu sobre lógica (bem diferente daqueles exercícios toscos da faculdade).
 
-Veremos lógica do ponto de vista de 3 linguagens: C (e C++), Python e JavaScript (Node.js) todas elas acompanhadas de 
+Veremos lógica do ponto de vista de 3 linguagens: C (e C++), Python e JavaScript (Node.js) todas elas acompanhadas de
 __testes unitários__. Ou seja, você saberá que o seu código está certo quando os testes estiverem passando.
 
 Se precisa de informações sobre as linguagens, veja as seções abaixo...
@@ -19,7 +19,7 @@ Se precisa de informações sobre as linguagens, veja as seções abaixo...
 - [JavaScript](/javascript)
 - [JavaScript - Node.js](/javascript/node.js)
 
-Talvez você precise saber um pouco sobre [testes unitários]/logica-de-programacao/tdd-junto-com-logica-assim-tao-cedo/) 
+Talvez você precise saber um pouco sobre [testes unitários](/logica-de-programacao/tdd-junto-com-logica-assim-tao-cedo/)
 e também um pouco sobre o [Linux](/linux) pois iremos utilizar muito o terminal.
 
 
@@ -78,7 +78,7 @@ Ainda exercícios para treinar vetores, mas desta vez utilizando __strings__.
 
 Exercícios para treinar __programação orientada a objetos__.
 
-Neste nível veremos como aliar os exercícios de lógica com a programação orientada a objetos. Você perceberá que os 
+Neste nível veremos como aliar os exercícios de lógica com a programação orientada a objetos. Você perceberá que os
 exercícios são de fácil resolução, pois o objetivo é mais entender o paradigma OOP do que exercitar o raciocínio lógico.
 
 {% include get-serie.html page_serie="Lógica Nível 5" %}
@@ -133,7 +133,7 @@ Bom, aconselho os trabalhos do professor de Ciência da Computação da USP Paul
 Mas esse não é o único, veja outras publicações do professor no link abaixo.
 
 - [http://www.ime.usp.br/~pf/](http://www.ime.usp.br/~pf/ "link-externo")
- 
+
 
 ![Figura satirizando a lógica de programação](vida-prog-25.png "Tirinha satirizando a logica de programação")
 

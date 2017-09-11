@@ -7,7 +7,7 @@ ordem:       7
 
 
 
-Antes de mais nada, precisamos [criar a base de dados](../mysql-criando-base-de-dados/). 
+Antes de mais nada, precisamos [criar a base de dados](../mysql-criando-base-de-dados/).
 
 No meu caso, eu criarei uma base chamada `devlabs`, mas você pode usar esse nome ou outro de sua preferência.
 
@@ -32,7 +32,7 @@ falamos sobre tipos de dados do MySQL, veremos o assunto em breve.
 ### Uma tabela de exemplo
 
 Eu retirei o exemplo do [manual do MySQL](http://dev.mysql.com/doc/refman/5.7/en/creating-tables.html "link-externo"):
-imagine que precisamos construir um sistema para um PetShop. Talvez você queira registrar os nome dos bichanos e seus 
+imagine que precisamos construir um sistema para um PetShop. Talvez você queira registrar os nome dos bichanos e seus
 respectivos donos.
 
 Já temos dois campos:
@@ -106,10 +106,10 @@ Veja com eu digitei:
         -> );
     Query OK, 0 rows affected (0.25 sec)
 
-Agora podemos popular (inserir dados) nossa tabela. 
+Agora podemos popular (inserir dados) nossa tabela.
 
 Poderemos fazer isso de registro em registro com a instrução __insert into__ ou podemos fazer em uma "tacada só"
-[lendo os dados a partir de um arquivo de texto](../mysql-load-data-local-infile).
+[populando tabela a partir de uma arquivo de texto no MySQL](../populando-tabela-a-partir-de-um-arquivo-de-texto-no-mysql/).
 
 - - -
 Fonte
