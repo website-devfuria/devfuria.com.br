@@ -1,10 +1,10 @@
 <?php
 
-$variable = array(
+return array(
 //    "/index-old/"              => "/",
 //    "/core/views"              => "/",
 //    "/node_modules/.env"       => "/",
-//    "/node_modules"            => "/",    
+//    "/node_modules"            => "/",
 //    "/old/(:uri+)/"            => "/",
 //    "/furia/(:uri+)/"          => "/",
 //    "/fulia/"                  => "/",
@@ -12,7 +12,7 @@ $variable = array(
 //    "/google9a3a1fb0a47d86dd/" => "/",
 //    "/vagrant.md"              => "/",
 //    "/views/frm-feedback.php"  => "/",
-    
+
     "/blog/2015/10/07/aprenda-a-programar-do-zero.html" => "/blog",
     "/flavio-alexandre-micheletti.php"     => "https://flaviomicheletti.github.io/",
     "/flavio-alexandre-micheletti.html"    => "https://flaviomicheletti.github.io/",
@@ -25,14 +25,14 @@ $variable = array(
     "/mapa-do-site/"                       => "/sitemap.xml",
     "/privilegiometro"                     => "http://privilegiometro.devfuria.com.br/",
     "/privilegiometro/"                    => "http://privilegiometro.devfuria.com.br/",
-    
+
     "/js"                => "/javascript/",
     "/js/index.php"      => "/javascript/",
     "/js/(:?curso)/"     => "/javascript/",
     "/js/imagens/"       => "/javascript/",
     "/javascript/forms/" => "/javascript/",
     "/javascript/refs/"  => "/javascript/",
-    "/javascript/refatoracao-codigo-limpo/index.html" => "/javascript/",    
+    "/javascript/refatoracao-codigo-limpo/index.html" => "/javascript/",
     "/javascript/refatoracao-codigo-limpo/"           => "/javascript/",
     "/javascript/node.js/ns-02-baby-steps/"   => "/javascript/node.js/nodejs-02-baby-steps/",
     "/javascript/node.js/ns-03-my-first-io/"  => "/javascript/node.js/nodejs-03-my-first-io/",
@@ -76,7 +76,7 @@ $variable = array(
     "/js/basico/select-combobox/"           => "/javascript/forms/select-combobox/",
     "/js/basico/input-radio-button/"        => "/javascript/forms/input-radio-button/",
     "/js/basico/(:uri+)/"                   => "/javascript/",
-    
+
     "/html-css/formularios/intro-formularios-web/"      => "/html-css/introducao-formularios-web/",
     "/html-css/formularios-web/"                        => "/html-css/introducao-formularios-web/",
     "/html-css/basico/formularios-web/?"                => "/html-css/introducao-formularios-web/",
@@ -87,7 +87,7 @@ $variable = array(
     "/html-css/basico/index.php"                        => "/html-css/",
     "/html-css/basico/reset-css/"                       => "/html-css/",
     "/html-css/basico/validando-html-e-css/code1.html"  => "/html-css/",
-    "/html-css/basico/validando-html-e-css/materia.mrk" => "/html-css/",    
+    "/html-css/basico/validando-html-e-css/materia.mrk" => "/html-css/",
     "/html-css/basico/intro/?"                          => "/html-css/introducao-html/",
     "/html-css/basico/html-intro/?"                     => "/html-css/introducao-html/",
     "/html-css/basico/html-e-css-intro/"                => "/html-css/",
@@ -100,20 +100,20 @@ $variable = array(
     "/html-css/basico/primeiro-html"                    => "/html-css/primeiro-html/",
     "/html-css/basico/primeiro-html/materia.md"         => "/html-css/primeiro-html/",
     "/%3Cb%3Ehtml%3C/b%3E-css/formularios/combo%3Cb%3Ebox%3C/b%3E" => "/html-css/formularios/combobox/",
-    
-    "/logica/?"                                     => "/logica-de-programacao/",    
-    "/logica/basico/(:uri+)/"                       => "/logica-de-programacao/",    
-    "/logica-de-programacao/basico/(:uri+)/"        => "/logica-de-programacao/",    
+
+    "/logica/?"                                     => "/logica-de-programacao/",
+    "/logica/basico/(:uri+)/"                       => "/logica-de-programacao/",
+    "/logica-de-programacao/basico/(:uri+)/"        => "/logica-de-programacao/",
     "/logica-de-programacao/o-que-e-tdd"            => "/tdd/",
     "/logica-de-programacao/o-que-e-tdd/"           => "/tdd/",
     "/logica-de-programacao/entendendo-o-assert-c/" => "/c/rodando-os-testes/",
-    
+
     "/logica-de-programacao/eleitores/"                 => "/logica-de-programacao/votos-em-relacao-ao-total-de-eleitores/",
     "/logica-de-programacao/c-eleitores/"               => "/logica-de-programacao/votos-em-relacao-ao-total-de-eleitores/",
     "/logica-de-programacao/custo-carro/"               => "/logica-de-programacao/custo-de-fabricacao-de-um-carro/",
     "/logica-de-programacao/c-custo-carro/"             => "/logica-de-programacao/custo-de-fabricacao-de-um-carro/",
     "/logica-de-programacao/dias-n-meses/"              => "/logica-de-programacao/descobrir-os-dias-de-n-meses/",
-    "/logica-de-programacao/c-dias-n-meses/"            => "/logica-de-programacao/",   
+    "/logica-de-programacao/c-dias-n-meses/"            => "/logica-de-programacao/",
     "/logica-de-programacao/antecessor-sucessor/"       => "/logica-de-programacao/antecessor-e-sucessor-de-um-numero-qualquer/",
     "/logica-de-programacao/media-simples/"             => "/logica-de-programacao/media-simples-de-3-numeros/",
     "/logica-de-programacao/c-duas-variaveis/"          => "/logica-de-programacao/trocar-o-valor-de-duas-variaveis/",
@@ -168,13 +168,14 @@ $variable = array(
     "/mysql-sql"                                => "/sql/",
     "/mysql-sql/"                               => "/sql/",
     "/mysql-sql/?"                              => "/sql/",
-    "/mysql-sql/intro/"                         => "/sql/",    
+    "/mysql-sql/intro/"                         => "/sql/",
     "/mysql/basico/?"                           => "/sql/",
     "/mysql/basico/intro/?"                     => "/sql/",
     "/mysql-sql/basico/criando-base-tabela/"    => "/sql/",
     "/mysql-sql/basico/primeiros-passos-mysql/" => "/sql/",
     "/sql/mysql-erro-1064/"                     => "/sql/mysql-ler-mensagens-erro/",
-    
+    "/sql/mysql-load-data-local-infile/"        => "/sql/populando-tabela-a-partir-de-um-arquivo-de-texto-no-mysql/",
+
     "/php/refs/"                                => "/php",
     "/php/forms/"                               => "/php",
     "/php/basico/"                              => "/php",
@@ -201,12 +202,12 @@ $variable = array(
     "/php/basico/logica-de-programacao/"        => "/logica-de-programacao/",
     "/php/forms/checkbox/-"                     => "/php/forms/checkbox/",
     "/php/arrays-vetores-matrizes/"             => "/php/criando-iterando-um-array/",
-    "/php/metodo-http-get-post/index.html"      => "/php/como-funcionam-os-metodos-get-e-post/",    
+    "/php/metodo-http-get-post/index.html"      => "/php/como-funcionam-os-metodos-get-e-post/",
     "/php/metodo-http-get-post/"                => "/php/como-funcionam-os-metodos-get-e-post/",
     "/twig.md"                                  => "/php/twig/",
-    
+
     "/python/django-error"     => "/python/",
-    
+
     "/regexp"                  => "/regex/",
     "/regexp/"                 => "/regex/",
     "/regexp//"                => "/regex/",
@@ -216,7 +217,7 @@ $variable = array(
     "/regexp/basico/draft/"    => "/regex/",
     "/regexp/basico/intro/"    => "/regex/",
     "/regex/relacao-completa/" => "/regex/",
-	
+
     "/regexp/basico/pattern-test/"                              => "/javascript/refs/pattern-test/",
     "/regexp/basico/ponto"                                      => "/regex/metacaractere-ponto/",
     "/regexp/basico/ponto/"                                     => "/regex/metacaractere-ponto/",
@@ -250,7 +251,7 @@ $variable = array(
 
     "/git/iniciando-com-git/" => "/git/",
     "/git/nao-pedir-senha/"   => "/git/netrc-nao-pedir-senha/",
-    
+
     "/linux/resetar-senha%20de-mysql/"            => "/linux",
     "/entendendo-e-usando-permissoes-no-linux.md" => "/linux",
     "/linux/cookbook/"                            => "/linux/receitas-de-instalacao-de-softwares-no-linux/",
@@ -258,22 +259,9 @@ $variable = array(
     "/linux/cookbook/recordmydesktop/"            => "/linux/instalando-gtk-recordmydesktop/",
     "/linux/reiniciar-servidor-apache"            => "/linux/apache-como-reiniciar-servidor-apache/",
     "/linux/reiniciar-servidor-apache/"           => "/linux/apache-como-reiniciar-servidor-apache/",
-    
-    
+
+
 );
 
-foreach ($variable as $key => $value) {
-    App::$slim->get($key, function () use ($value) {
-        App::$slim->redirect($value, 301);
-    });
-}
 
-App::$slim->get('/linux/cookbook/(:uri+)', function ($pag) {
-    $nova_url = "/linux/instalando-" . $pag[0] . "/";
-    App::$slim->redirect($nova_url, 301);
-});
 
-App::$slim->get('/javascript/refs/(:uri+)', function ($pag) {
-    $nova_url = "/javascript/" . $pag[0] . "/";
-    App::$slim->redirect($nova_url, 301);
-});
