@@ -44,11 +44,10 @@ function paginas($arr_uri) {
         # se nem o redirecionamento deu certo, então só nos resta isso..
         App::$slim->response->setStatus(404);
         require App::$path['/'] . "/404.html";
-        //log_pagina_nao_encontrada($str_uri);
+        log_pagina_nao_encontrada($str_uri);
     }
 }
 
-#
 function redirecionar_perdidos($uri) {
     if (strpos($uri, 'furia')) {
         App::$slim->redirect('/', 301);
@@ -58,7 +57,6 @@ function redirecionar_perdidos($uri) {
     }
 }
 
-#
 function redirecionar_php_nivel_zero($uri) {
     $arr_uri = explode('/', $uri);
     if ($arr_uri[1] == 'php' && $arr_uri[2] == 'nivel-zero') {
@@ -67,7 +65,7 @@ function redirecionar_php_nivel_zero($uri) {
         App::$slim->redirect($nova_url, 301);
     }
 }
-#
+
 function redirecionar_logica_basico($uri) {
     $arr_uri = explode('/', $uri);
     if ($arr_uri[1] == 'logica-de-programacao' && $arr_uri[2] == 'basico') {
@@ -77,7 +75,6 @@ function redirecionar_logica_basico($uri) {
     }
 }
 
-#
 function redirecionar_linux_cookbook($uri) {
     $arr_uri = explode('/', $uri);
     if ($arr_uri[1] == 'linux' && $arr_uri[2] == 'cookbook') {
@@ -87,7 +84,6 @@ function redirecionar_linux_cookbook($uri) {
     }
 }
 
-#
 function redirecionar_javascript_refs($uri) {
     $arr_uri = explode('/', $uri);
     if ($arr_uri[1] == 'javascript' && $arr_uri[2] == 'refs') {
@@ -97,7 +93,6 @@ function redirecionar_javascript_refs($uri) {
     }
 }
 
-#
 function redirecionar_outros($uri) {
     $map = require dirname(__FILE__) . '/redirecionametos.php';
 
@@ -109,5 +104,3 @@ function redirecionar_outros($uri) {
     }
 
 }
-
-
