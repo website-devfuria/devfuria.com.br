@@ -34,6 +34,9 @@ function paginas($arr_uri) {
     } else {
 
         # se não existir, tento um redirecionamento...
+        redirecionar_perdidos($str_uri);
+        redirecionar_php_nivel_zero($str_uri);
+        redirecionar_logica_basico($str_uri);
         redirecionar_linux_cookbook($str_uri);
         redirecionar_javascript_refs($str_uri);
         redirecionar_outros($str_uri);
@@ -46,7 +49,34 @@ function paginas($arr_uri) {
 }
 
 #
-# redireciona pasta "linux/cookbook/foo" -> "linux/instalando-foo/"
+function redirecionar_perdidos($uri) {
+    if (strpos($uri, 'furia')) {
+        App::$slim->redirect('/', 301);
+    }
+    if (strpos($uri, 'old')) {
+        App::$slim->redirect('/', 301);
+    }
+}
+
+#
+function redirecionar_php_nivel_zero($uri) {
+    $arr_uri = explode('/', $uri);
+    if ($arr_uri[1] == 'php' && $arr_uri[2] == 'nivel-zero') {
+        $nova_url = "/" . $arr_uri[1] . "/";
+        //var_dump($nova_url); die();
+        App::$slim->redirect($nova_url, 301);
+    }
+}
+#
+function redirecionar_logica_basico($uri) {
+    $arr_uri = explode('/', $uri);
+    if ($arr_uri[1] == 'logica-de-programacao' && $arr_uri[2] == 'basico') {
+        $nova_url = "/" . $arr_uri[1] . "/";
+        //var_dump($nova_url); die();
+        App::$slim->redirect($nova_url, 301);
+    }
+}
+
 #
 function redirecionar_linux_cookbook($uri) {
     $arr_uri = explode('/', $uri);
@@ -58,8 +88,6 @@ function redirecionar_linux_cookbook($uri) {
 }
 
 #
-# redireciona pasta "javascript/refs/foo" -> "javascript/foo/"
-#
 function redirecionar_javascript_refs($uri) {
     $arr_uri = explode('/', $uri);
     if ($arr_uri[1] == 'javascript' && $arr_uri[2] == 'refs') {
@@ -69,8 +97,6 @@ function redirecionar_javascript_refs($uri) {
     }
 }
 
-#
-# redireciona diversas url´s antigas
 #
 function redirecionar_outros($uri) {
     $map = require dirname(__FILE__) . '/redirecionametos.php';
