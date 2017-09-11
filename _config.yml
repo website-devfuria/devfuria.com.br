@@ -4,8 +4,8 @@ url:   http://www.devfuria.com.br
 #
 # Configurações
 #
-enable_disqus:    true
-enable_analytics: true
+enable_disqus:    false
+enable_analytics: false
 
 # Antes era com kramdown
 # markdown:    kramdown
