@@ -9,7 +9,7 @@ propriedades do objeto referido pela propriedade `prototype`. (Flanagan, JavaScr
 
 Um protótipo é um objeto (o que não é uma surpresa) e toda função que você cria recebe automaticamente uma propriedade
 `prototype` que aponta pra um novo objeto em branco. Esse objeto é quase idêntico a um objeto criado a partir de um
-[objeto literal](/javascript/refs/objeto-literal/) ou pelo construtor `Object()`, exceto que sua propriedade `constructor`
+[objeto literal](/javascript/objeto-literal/) ou pelo construtor `Object()`, exceto que sua propriedade `constructor`
 aponta para a função que você criou, e não para o objeto embutido `Object()`. Você pode adicionar membros a esse objeto
 em branco e, mais tarde, ter outros objetos herdando desse objeto e utilizando as propriedades dele como se fossem
 criadas por você. (Crockford, O melhor do JavaScript, pág. 21)

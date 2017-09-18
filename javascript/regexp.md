@@ -42,6 +42,6 @@ console.log(string.match(pattern)); // ["exemplo", 19, "Casa com a palavra exemp
 
 
 Uma vez com a expressão regular compilada podemos executá-la em qualquer uma das três formas já discutidas:
-[test()](/javascript/refs/pattern-test/), 
-[exec()](/javascript/refs/pattern-exec/) e 
-[match()](/javascript/refs/string-match/).
+[test()](/javascript/pattern-test/), 
+[exec()](/javascript/pattern-exec/) e 
+[match()](/javascript/string-match/).

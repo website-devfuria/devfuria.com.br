@@ -77,7 +77,7 @@ contents.toString()
 ```
 
 Após aplicarmos o método `toString()` podemos então dividir a string conforme o caracter de final de linha `\n` utilizando
-o método [split()](/javascript/refs/split/).
+o método [split()](/javascript/split/).
 
 ```javascript
 contents.toString().split('\n')

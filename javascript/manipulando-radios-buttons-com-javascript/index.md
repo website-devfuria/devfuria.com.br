@@ -44,13 +44,13 @@ Essas radios são radios afins, quer dizer, de um mesmo grupo.
 
 Como explicitamos isso para o HTML? Utilizando a propriedade `name` com o mesmo valor ("band-rock").
 
-Ao invés de utilizar a função [getElementById()](/javascript/refs/getelementbyid/) precisaremos de uma função que traga
+Ao invés de utilizar a função [getElementById()](/javascript/getelementbyid/) precisaremos de uma função que traga
 os elementos pela propriedade `name`.
 
     getElementsByName("valor-da-propriedade-name");
 
-O resultado desta [função](/javascript/refs/funcoes) é um conjunto de elemento, ou seja, um 
-[array](/javascript/refs/arrays/) de radios buttons.
+O resultado desta [função](/javascript/funcoes) é um conjunto de elemento, ou seja, um 
+[array](/javascript/arrays/) de radios buttons.
 
 Já está conseguindo visualizar a solução do problema?
 

@@ -70,7 +70,7 @@ element.onclick = function() {
 Em outras palavras, a cada clique no elemento HTML capturado será disparado uma função previamente atribuída.
 
 No JavaScript é muito comum colocarmos uma função dentro de uma variável e executarmos a função referenciando-se a 
-variável, essa técnica chama-se [funções anônimas](/javascript/refs/funcoes-anonimas/), veja:
+variável, essa técnica chama-se [funções anônimas](/javascript/funcoes-anonimas/), veja:
 
 ```javascript
 var minha_funcao = function(a, b) {return a + b};
@@ -78,7 +78,7 @@ var minha_funcao = function(a, b) {return a + b};
 
 Agora nos deparamos com o conteúdo de nossa função, ela deve refletir nossa lógica.
 
-Para saber se a lâmpada está ligada utilizamos a função [string.match()](/javascript/refs/string-match/), o trecho 
+Para saber se a lâmpada está ligada utilizamos a função [string.match()](/javascript/string-match/), o trecho 
 `string` é representado pelo *source* da imagem (`element.scr`).
 
 A linha do if está "dizendo" o seguinte: "Se a lâmpada estiver ligada...".

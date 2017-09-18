@@ -21,7 +21,7 @@ O __Node.js__ também possui um terminal interativo, digite `node` no terminal e
     12321
 
 Do lado do servidor, temos a variável `process` que seria equivalente a conhecida 
-[variável global window](/javascript/refs/objeto-global/) do lado do cliente.
+[variável global window](/javascript/objeto-global/) do lado do cliente.
 
 Assista este vídeo para saber mais sobre [o que é o Node.js](https://www.youtube.com/watch?v=B0hc7hmpCD4 "link-externo")
 

@@ -9,7 +9,7 @@ Se você nunca viu JavaScript e está começando a aprender, este é o exemplo m
 
 O exemplo serve também para entender um pouco sobre escopo, veja a variável `num`.
 
-De diferente, temos, além da função [getElementById()](/javascript/refs/getelementbyid/), a função `innerHTML()`.
+De diferente, temos, além da função [getElementById()](/javascript/getelementbyid/), a função `innerHTML()`.
 
 Ela "escreve" HTML no elemento referenciado, em nosso caso no elemento `p` (parâgrafo).
 
@@ -36,7 +36,7 @@ function mostrar(valor) {
 Preciso alertar que essa implementação não é a forma ideal de se programar em JavaScript. Na verdade, essa era a forma
 ideal praticada no anos 90. Hoje (nov/2014), podemos/devemos ao menos fazer algumas observações...
 
-Primeiro, estamos [poluindo o espaço global](/javascript/refs/objeto-global/). A variável `num` e nossas 3 funções estão
+Primeiro, estamos [poluindo o espaço global](/javascript/objeto-global/). A variável `num` e nossas 3 funções estão
 "soltas", elas deveriam estar em um container, por exemplo:
 
 ```javascript

@@ -51,7 +51,7 @@ btnStop.onclick = function() {
 Um porém é que, ao executarmos `clearInterval()` ele apenas interrompe a execução mas o valor da variável identificadora
 continua sendo válido (`true`). Precisamos atribuir `null` explicitamente para anular o valor da variável.
 
-Você deve ter reparado na [estrutura if](/javascript/refs/if-else/) do botão "Start count!"...
+Você deve ter reparado na [estrutura if](/javascript/if-else/) do botão "Start count!"...
 
 ```javascript
 if(!id) {

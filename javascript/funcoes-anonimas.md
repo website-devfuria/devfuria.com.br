@@ -41,7 +41,7 @@ var foo = function() {
 ```
 
 Uma função pode aceitar uma quantidade fixa de parâmetros (dados para serem trabalhos dentro da função) e também 
-uma quantidade desconhecida de parâmetros através da matriz [arguments](/javascript/refs/funcoes-argumentos/).
+uma quantidade desconhecida de parâmetros através da matriz [arguments](/javascript/funcoes-argumentos/).
 
 Abaixo conferimos um exemplo de função que soma dois números.
 

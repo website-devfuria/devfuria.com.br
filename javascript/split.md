@@ -3,7 +3,7 @@ title:       Referência prática ao método split() em JavaScript
 description: O método split() divide um objeto do tipo string em um array de strings separados pelo 'separador especificado' e obedece a um limite.
 ---
 
-O método `split()` divide (splits) um objeto do tipo string (`String object`) em um [array](/javascript/refs/arrays/) 
+O método `split()` divide (splits) um objeto do tipo string (`String object`) em um [array](/javascript/arrays/) 
 de strings separados pelo "separador especificado" (parâmetro separator) e obedece a um limite (parâmetro limit).
 
 Sintaxe:

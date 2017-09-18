@@ -43,7 +43,7 @@ Os valores especiais `null` e `undefined` são valores primitivos mas não são 
 
 Qualquer valor em JavaScript que não seja número, string, booleano, null ou undefined é um objeto.
 
-O [typeof](../refs/typeof/) é um operador unário colocado antes de seu operando, o qual pode ser de qualquer tipo. Seu valor é uma string 
+O [typeof](../typeof/) é um operador unário colocado antes de seu operando, o qual pode ser de qualquer tipo. Seu valor é uma string 
 que especifica o tipo do operando.
 
 ```javascript
@@ -140,11 +140,11 @@ if (n == 1) {
 }
 ```
 
-Leia mais sobre [Condicional if-else em JavaScript](/javascript/refs/if-else/)
+Leia mais sobre [Condicional if-else em JavaScript](/javascript/if-else/)
 
 ### Operador Condicional Ternário
 
-É possível obter resultados semelhantes usando o [operador condicional ternário](../refs/operador-condicional-ternario/) `condition ? expr1 : expr2`.
+É possível obter resultados semelhantes usando o [operador condicional ternário](../operador-condicional-ternario/) `condition ? expr1 : expr2`.
 
 ```javascript
 resultado = (a > b) ? "a é maior que b" : "b é maior que a";
@@ -189,7 +189,7 @@ for (var i = 0; i < 5; i++) {
 
 ### Arrays
 
-Em JavaScript, [arrays](../refs/arrays/) são um tipo especial de objeto que representam um conjunto ordenado de valores
+Em JavaScript, [arrays](../arrays/) são um tipo especial de objeto que representam um conjunto ordenado de valores
 numerados.
 
 ```javascript
@@ -211,7 +211,7 @@ a.length // 3
 
 ### Funções
 
-Uma [função](../refs/funcoes/) é um objeto que tem código executável associado. Uma função pode ser chamada para executar esse código
+Uma [função](../funcoes/) é um objeto que tem código executável associado. Uma função pode ser chamada para executar esse código
 executável e retornar um valor calculado.
 
 ```javascript
