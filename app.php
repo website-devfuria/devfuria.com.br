@@ -21,7 +21,8 @@ App::$slim = new \Slim\Slim();
 
 App::$path = array();
 App::$path['/']     = dirname(__FILE__);
-App::$path['logs/'] = dirname(__FILE__) . "/_site/logs/";
+// App::$path['logs/'] = dirname(__FILE__) . "/_site/logs/";
+App::$path['logs/'] = dirname(__FILE__) . "/logs/";
 
 if (isset($_SERVER["REMOTE_ADDR"])) {
     App::$IP = $_SERVER["REMOTE_ADDR"];
@@ -46,9 +47,26 @@ function criar_arquivo_log($pasta) {
 # registra um log de página não encontrada
 #
 function log_pagina_nao_encontrada($path_to_page) {
+    // var_dump(App::$path['logs/']); die();
     $file = criar_arquivo_log(App::$path['logs/']);
     $log = new Logger(App::$IP);
     $log->pushHandler(new StreamHandler(App::$path['logs/'] . $file, Logger::DEBUG));
     $log->addError('404', array($path_to_page));
     return App::$path['logs/'] . $file;
+}
+
+#
+# path/to/foo ---> path/to/foo/
+#
+function acrescentar_barra_no_final($uri_sem_barra_no_final) {
+    $arr_uri = explode('/', $uri_sem_barra_no_final);
+
+    $final = substr($uri_sem_barra_no_final, -1);
+    if ($final != "/") {
+         array_push($arr_uri, "");
+    }
+
+    $uri_com_barra_no_final = implode("/", $arr_uri);
+
+    return $uri_com_barra_no_final;
 }

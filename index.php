@@ -33,6 +33,8 @@ function paginas($arr_uri) {
         require $pagina;
     } else {
 
+        $str_uri = acrescentar_barra_no_final($str_uri);
+
         # se não existir, tento um redirecionamento...
         redirecionar_perdidos($str_uri);
         redirecionar_php_nivel_zero($str_uri);
