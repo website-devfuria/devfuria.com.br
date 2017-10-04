@@ -53,7 +53,7 @@ elemento inline.
 
 A CSS pode alterar o tipo do elemento. Com a propriedade `display` é possível utilizar os três valores:
 
-1. `lock`
+1. `block`
 2. `inline`
 3. `inline-block`
 
