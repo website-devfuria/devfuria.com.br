@@ -38,7 +38,7 @@ Outra ótima utilidade é que o cat ajuda a criar pequenos arquivos rapidamente.
     para indicar quebra de linha
     Quando quiser terminar pressione
     CONTROL + d
-    $
+
 
 Para entender o comando acima nada melhor que abrir o terminal e colocar a mão na massa.
 
