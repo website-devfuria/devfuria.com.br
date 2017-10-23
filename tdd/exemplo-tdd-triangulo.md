@@ -26,7 +26,7 @@ Se a função vai dizer sim ou não, então ela poderá retornar um tipo "boolea
         self.assertTrue(tri.ehTriangulo())
 
 
-Esse teste deve retornar um valor verdadeiro, pois os valores  de `a`, `b` e `c` obedecem a regra "o valor de cada lado 
+Esse teste deve retornar um valor verdadeiro, pois os valores  de `a`, `b` e `c` obedecem a regra "o valor de cada lado
 deve ser menor que a soma dos outros 2 lados". Antes, deixa eu mostrar a estrutura do arquivo.
 
     # -*- coding: utf-8 -*-
@@ -60,8 +60,8 @@ O código executa mas o teste não passa (red), precisamos implementar o método
 
     def ehTriangulo(self):
         if self.a < (self.b + self.c):
-            if self.b < (a + self.c):
-                if self.c < (a + self.b):
+            if self.b < (self.a + self.c):
+                if self.c < (self.a + self.b):
                     return True
 
 Neste ponto terminamos nosso trabalho. Tínhamos um objetivo, escrevemos um teste, vimos ele falhar e codificamos até os
@@ -74,18 +74,18 @@ testes passarem.
 Um mês depois... (primeira alteração)
 ---
 
-Seu chefe olha para você e diz que "o programa __também__ deverá informar se os valores formam um triângulo equilátero, 
+Seu chefe olha para você e diz que "o programa __também__ deverá informar se os valores formam um triângulo equilátero,
 isósceles ou escaleno" e entrega a você as seguintes regras:
 
 - Triângulo Equilátero: três lados iguais;
 - Triângulo Isósceles: quaisquer dois lados iguais;
-- Triângulo Escaleno: três lados diferentes; 
+- Triângulo Escaleno: três lados diferentes;
 
 OK, vamos alterar a classe `Triangulo` para acomodar as novas funcionalidades.
 
 Mas lembre-se que se passaram um mês e como sua equipe é grande, estamos preocupado se alguém mexeu no seu código.
 
-Você poderia olhar os logs do sistema de versionamento, mas de qualquer forma fica a pergunta: "será que o código ainda 
+Você poderia olhar os logs do sistema de versionamento, mas de qualquer forma fica a pergunta: "será que o código ainda
 está funcionando? Será que ninguém o quebrou?".
 
 Pergunte para os testes! Como? Rode os testes, se eles passarem (green) seu sistema funciona e você poderá trabalhar
@@ -118,7 +118,7 @@ E seguimos com a implementação da função.
         else:
             return False
 
-O escaleno foi fácil. Encorajado, corri para o isósceles... 
+O escaleno foi fácil. Encorajado, corri para o isósceles...
 
 
     def ehIsosceles(self):
@@ -190,7 +190,7 @@ Com os testes no vermelho, tentei...
 
 E tudo passou (green).
 
-Fui para o equilátero (3 lados iguais). 
+Fui para o equilátero (3 lados iguais).
 
 Pô, esse é o inverso do escaleno. Arriscarei dar um passo grande, eis o teste:
 
@@ -208,7 +208,7 @@ Pô, esse é o inverso do escaleno. Arriscarei dar um passo grande, eis o teste:
             return True
         else:
             return False
- 
+
 
 Tudo passou!.
 
@@ -225,7 +225,7 @@ import unittest
 #
 class Triangulo:
 
-    # 
+    #
     # Confirma se as medidas compõem um triângulo
     #
     def ehTriangulo(self):
