@@ -21,9 +21,9 @@ Primeiro resolvemos as dependências.
 
 Baixe o código fonte do __Ruby__ no site oficial
 
-[http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz](http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz "link-externo")
+[https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.2.tar.gz](https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.2.tar.gz "link-externo")
 
-Quando escrevo este artigo, a versão mais atual do __Ruby__ é a 2.1.2.
+Quando escrevo este artigo, a versão mais atual do __Ruby__ é a 2.4.2.
 
 Utilize a versão mais atual.
 
@@ -35,9 +35,9 @@ Eu prefiro mover o arquivo para minha home, no meu computador seria `/home/flavi
 
 Para descompactar execute:
 
-    # tar -xvcf ruby-2.1.2.tar.gz
+    # tar -xvcf ruby-2.4.2.tar.gz
 
-Ele irá criar uma pasta chamada `ruby-2.1.2`. Entre nela `cd /ruby-2.1.2`
+Ele irá criar uma pasta chamada `ruby-2.4.2`. Entre nela `cd /ruby-2.4.2`
 
 Execute tudo como root.
 
@@ -48,7 +48,7 @@ Execute tudo como root.
 
 Reinicialize a máquina.
 
-    
+
     gem update --system
 
 Reinicialize novamente a máquina.
@@ -101,11 +101,11 @@ Para checar execute:
 
 
 ### Instalando o RubyGems
- 
+
 O __RubyGems__ é o administrador de repositórios do Ruby. Com ele instalado, poderemos instalar qualquer "gens" dessa forma
 `gem install nome-da-gem`.
 
-Baixe o código fonte no site oficial 
+Baixe o código fonte no site oficial
 [http://rubygems.org/pages/download](http://rubygems.org/pages/download "link-externo")
 
 Também devemos dar [permissão de execução](/linux/como-dar-permissao-de-execucao) no arquivo.
