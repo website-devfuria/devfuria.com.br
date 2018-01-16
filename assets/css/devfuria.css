@@ -11,10 +11,6 @@
     padding-top: 70px;
 }
 
-#footer {
-    margin-top: 150px
-}
-
 /* Tablets ??? */
 @media (min-width: 758px) {
     .intro h1 {

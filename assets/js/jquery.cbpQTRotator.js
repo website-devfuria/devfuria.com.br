@@ -4,10 +4,11 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
+ /*
 ;( function( $, window, undefined ) {
 
 	'use strict';
@@ -94,7 +95,7 @@
 
 		},
 		_startProgress : function() {
-			
+
 			setTimeout( $.proxy( function() {
 				this.$progress.css( { transition : 'width ' + this.options.interval + 'ms linear', width : '100%' } );
 			}, this ), 25 );
@@ -139,9 +140,9 @@
 				}
 				instance[ options ].apply( instance, args );
 			});
-		} 
+		}
 		else {
-			this.each(function() {	
+			this.each(function() {
 				var instance = $.data( this, 'cbpQTRotator' );
 				if ( instance ) {
 					instance._init();
@@ -155,3 +156,6 @@
 	};
 
 } )( jQuery, window );
+
+
+*/

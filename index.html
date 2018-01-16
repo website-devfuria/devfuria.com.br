@@ -366,27 +366,240 @@ showthema:   true
             <div class="col-sm-6 col-sm-offset-3">
                 <div class="pfblock-header wow fadeInUp">
                     <h2 class="pfblock-title">Depoimentos</h2>
-                    <!--
                     <div class="pfblock-line"></div>
                     <div class="pfblock-subtitle">
-                        <p>A galera leu, curtiu, comentou, só me resta agadecer:</p>
-                        <p>muuuuuuuito obrigado!</p>
+                        <p>A galera leu, curtiu, comentou, só me resta agadecer: muuuuuuuito obrigado!</p>
                     </div>
-                    -->
                 </div>
             </div>
         </div><!-- .row -->
         <div class="row">
-            <div id="cbp-qtrotator" class="cbp-qtrotator">
-                {% for depoimento in site.data.depoimentos %}
-                    <div class="cbp-qtcontent">
-                        <!--<img src="/assets/images/client-1.jpg" alt="client-1" />-->
-                        <blockquote>
-                            <p>{{ depoimento.texto }}</p>
-                            <footer>{{ depoimento.nome }}</footer>
-                        </blockquote>
-                    </div>
-                {% endfor %}
+            <!--
+            O primeiro da lista é o depoimento mais recente....
+
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p></p>
+                    <footer><a href="#"></a></footer>
+                </blockquote>
+            </div>
+            -->
+
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Muito bom! Obrigado!</p>
+                    <footer><a href="http://www.devfuria.com.br/python/yield/#comment-3699133721">Danilo Braz</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Parabens pelo site...</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/dom/#comment-3685533765">valerio souza</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>que explicação sensacional....</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/dom-create-element/#comment-3683468494">LUIZ FELIPE</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Guardei no Firefox para estudar mais tarde, a noite. Conteúdo bem interessante, eu sinceramente não havia visto. Qualquer dúvida eu posto " aqui" , okay! ?</p>
+                    <footer><a href="http://www.devfuria.com.br/c/introducao-linguagem-c/#comment-3664089484">Willian Efaanz</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Parabéns pela explicação</p>
+                    <footer><a href="http://www.devfuria.com.br/logica-de-programacao/trocar-o-valor-de-duas-variaveis/#comment-3672490164">Jorge Bill Silva</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>legal o artigo.</p>
+                    <footer><a href="http://www.devfuria.com.br/python/saidas-output/#comment-3661558218">zumbipy</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Me auxiliou em uma questão, muito bom !</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/forms/input-radio-button/#comment-3636774896">Rapha Stecca</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Ajudou a entender um pouco mais sobre. Obrigado.</p>
+                    <footer><a href="http://www.devfuria.com.br/php/manipulando-checkboxes-com-php/#comment-3560414040">Ricardo Souza</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Flavio,deu certo! Estive todo esse tempo tentando de um jeito errado, muito obrigado!</p>
+                    <footer><a href="http://www.devfuria.com.br/sql/mysql-listar-base/#comment-3580898402">Sor Dantas, o Magro</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Muito bom, abriu para novas ideias.</p>
+                    <footer><a href="http://www.devfuria.com.br/python/tdd-primeiros-passos-com-testes-unitarios/#comment-3574121281">Luiz Gledson</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Post muito agregador!</p>
+                    <footer><a href="http://www.devfuria.com.br/blog/2015/10/07/a-pratica-deve-vir-antes-da-teoria.html#comment-3569277033">Israel Blender</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Olha, eu tmb coloco os atributos das minhas tags assim, facilita a leitura do código num futuro. E me ajudou bastante!</p>
+                    <footer><a href="http://www.devfuria.com.br/php/manipulando-radio-button-com-php/#comment-3574810910">Gualberto Dos Santos</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>muito legal e bem explicado parabéns!</p>
+                    <footer><a href="http://www.devfuria.com.br/logica-de-programacao/trocar-o-valor-de-duas-variaveis/#comment-3592643589">Natalia Rodrigues</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Muito obrigado!!!!!!!!!!!</p>
+                    <footer><a href="http://devfuria.com.br/linux/instalando-sqlite/#comment-3496702500">Tadeu Espíndola Palermo</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Excelente explicação, muito obrigado pelo artigo Lucas!</p>
+                    <footer><a href="http://devfuria.com.br/javascript/prototipos-prototype/#comment-3391239261">Leandro M. Silva </a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Excelente! Direto ao ponto...</p>
+                    <footer><a href="http://www.devfuria.com.br/python/sintaxe-basica/#comment-3316225832">Marcelo Romeu Gonçalves</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Thank's very much</p>
+                    <footer><a href="http://www.devfuria.com.br/git/netrc-nao-pedir-senha/#comment-3311432326">brazica</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Show de bola.. Parabéns</p>
+                    <footer><a href="http://www.devfuria.com.br/python/yield/#comment-3276927535">Eduardo</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>So para lhe dizer que este site e' fantastico! Obrigado por partilhar os seus conhecimentos com o pessoal! :)</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/backbone-exemplo-05/#comment-3262230385">Nuno Almeida</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Show !!</p>
+                    <footer><a href="http://www.devfuria.com.br/python/lacos-de-repeticao/#comment-3248117928">Bruno Peçanha</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Resolveu meu problema!</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/forms/input-radio-button/#comment-3215373541">Netlife NL</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Muito obrigado! Não estava entendendo o que eram esses elementos até encontrar este post.</p>
+                    <footer><a href="http://www.devfuria.com.br/html-css/elementos-inline-block-level/#comment-3033551740">Lucas</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Tenho aprendido muito com seus tutoriais, muito obrigado e parabéns pelo conteúdo.</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/dom-getelementbyid/#comment-2905104572">Rodrigo Gonçalves</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Estou estudando o NodeJS e me encantando com a estrutura e facilidade de executar a linguagem. Muito bacana esse compêndio de artigos, me ajudará bastante! Valeu msm!</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/node.js/#comment-2900773411">Rodrigo Zan</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Simples e Didático!!! Parabéns!!!</p>
+                    <footer><a href="http://www.devfuria.com.br/python/sintaxe-basica/#comment-3179804339">Evandro Costa</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Ajudou muito!</p>
+                    <footer><a href="http://www.devfuria.com.br/python/sintaxe-basica/#comment-3108586469">Carlos Henrique</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Show!! a Tirinha foi fod*! HAHAHA</p>
+                    <footer><a href="http://www.devfuria.com.br/logica-de-programacao/#comment-2923536078">Rodolfo Martins</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Muito bom seu tutorial, parabéns!</p>
+                    <footer><a href="http://www.devfuria.com.br/python/manipulando-arquivos-de-texto/#comment-3010849957">Brito</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Muito bem feito o artigo, parabéns!! conserteza é de muita valia. Bem abordado os tópicos com a preocupação de passar desde a forma mais simples de testes até um framework. Obrigado!!!</p>
+                    <footer><a href="http://www.devfuria.com.br/python/tdd-primeiros-passos-com-testes-unitarios/#comment-3034463140">Newton San</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>O DevFuria tem artigos muito interessante sobre várias áreas. Continuem com esse trabalho bacana :D</p>
+                    <footer><a href="http://www.devfuria.com.br/php/como-funcionam-os-metodos-get-e-post/#comment-3090951852">Edson Fell</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Sensacional, Flávio! Estava me sentindo mal acostumado usando jQuery. Estou criando um projeto sem utilizar frameworks e treinando JS.Sua explicação foi excelente. Obrigado!</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/dom-getelementbyid/#comment-2586607601">Rômulo Bastos</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Obrigado. Adorei.</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/forms/input-radio-button/#comment-2620405304">anonymousUP</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>De parabéns, simples e prático!</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/numeros-aleatorios/#comment-2315409860">Emerson Andrey</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Caraca meu, muito resumido e bem explicadinho.. Parabéns!!!</p>
+                    <footer><a href="http://www.devfuria.com.br/linux/apache-habilitar-mod_rewrite-no-apache-mod/#comment-2626611324">Kevin Riquena</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Excelente explicação, rápida, prática, objetiva e esclarecedora...valeu!</p>
+                    <footer><a href="http://www.devfuria.com.br/html-css/seletores-css/#comment-1790118192">Grazi AC</a></footer>
+                </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+                <blockquote>
+                    <p>Muito bem explicado!!!</p>
+                    <footer><a href="http://www.devfuria.com.br/javascript/dom-create-element/#comment-1841649928">Geilson Ribeiro Mirandola</a></footer>
+                </blockquote>
             </div>
         </div><!-- .row -->
     </div><!-- .row -->
@@ -394,38 +607,18 @@ showthema:   true
 
 
 <!-- Contact start -->
-<section id="contato" class="pfblock">
+<section id="contato" class="pfblock" style="padding-top: 60px;">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
                 <div class="pfblock-header">
                     <h2 class="pfblock-title">Contato</h2>
                     <div class="pfblock-line"></div>
+                    <p>Para entrar em contato com a gente, você pode...</p>
+                    <br />
+                    <p style="text-align: left">1) Abrir uma <a href="https://github.com/flaviomicheletti/devfuria.com.br/issues/new">issue</a> no repositório ou</p>
+                    <p style="text-align: left">2) Enviar um email para <strong>flaviomicheletti arroba hotmail.com.br</strong></p>
                 </div>
-            </div>
-        </div><!-- .row -->
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <form id="contact-form" role="form">
-                    <div class="ajax-hidden">
-                        <div class="form-group wow fadeInUp">
-                            <label class="sr-only" for="c_name">Name</label>
-                            <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
-                        </div>
-
-                        <div class="form-group wow fadeInUp" data-wow-delay=".1s">
-                            <label class="sr-only" for="c_email">Email</label>
-                            <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
-                        </div>
-
-                        <div class="form-group wow fadeInUp" data-wow-delay=".2s">
-                            <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Enviar mensagem</button>
-                    </div>
-                    <div class="ajax-response"></div>
-                </form>
             </div>
         </div><!-- .row -->
     </div><!-- .container -->
