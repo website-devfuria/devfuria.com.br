@@ -29,7 +29,6 @@ exclude:
     - tests
     - nbproject
 #    - javascript
-#    - php
 #    - python
 #    - logica-de-programacao
 #    - html-css
@@ -60,13 +59,6 @@ defaults:
       category:
         label: "JavaScript"
         url:   "/javascript"
-  -
-    scope:
-      path: "php"
-    values:
-      category:
-        label: "PHP"
-        url:   "/php"
   -
     scope:
       path: "python"
