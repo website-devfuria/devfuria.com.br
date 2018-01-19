@@ -28,19 +28,18 @@ exclude:
     - .gitignore
     - tests
     - nbproject
-#    - javascript
-#    - python
-#    - logica-de-programacao
-#    - html-css
-#    - sql
-#    - misc
-#    - regex
-#    - tdd
-#    - git
 #    - c
-#    - seguranca-da-informacao
-#    - linux
-
+    - git
+    - html-css
+    - javascript
+    - linux
+    - logica-de-programacao
+    - misc
+    - python
+    - regex
+    - seguranca-da-informacao
+    - sql
+    - tdd
 
 
 #
@@ -54,18 +53,32 @@ defaults:
       layout: "default"
   -
     scope:
+      path: "c"
+    values:
+      category:
+        label: "Linguagem C"
+        url:   "/c"
+  -
+    scope:
+      path: "git"
+    values:
+      category:
+        label: "Git"
+        url:   "/git"
+  -
+    scope:
+      path: "html-css"
+    values:
+      category:
+        label: "HTML & CSS"
+        url:   "/html-css"
+  -
+    scope:
       path: "javascript"
     values:
       category:
         label: "JavaScript"
-        url:   "/javascript"
-  -
-    scope:
-      path: "python"
-    values:
-      category:
-        label: "Python"
-        url:   "/python"
+        url:   "/javascript"    
   -
     scope:
       path: "javascript/node.js"
@@ -86,28 +99,21 @@ defaults:
     values:
       category:
         label: "Canvas"
-        url:   "/javascript/canvas"
+        url:   "/javascript/canvas"        
+  -
+    scope:
+      path: "linux"
+    values:
+      category:
+        label: "Linux"
+        url:   "/linux"
   -
     scope:
       path: "logica-de-programacao"
     values:
       category:
         label: "Lógica de programação"
-        url:   "/logica-de-programacao"
-  -
-    scope:
-      path: "html-css"
-    values:
-      category:
-        label: "HTML & CSS"
-        url:   "/html-css"
-  -
-    scope:
-      path: "sql"
-    values:
-      category:
-        label: "SQL - Structured Query Language"
-        url:   "/sql"
+        url:   "/logica-de-programacao"        
   -
     scope:
       path: "misc"
@@ -117,6 +123,13 @@ defaults:
         url:   "/misc"
   -
     scope:
+      path: "python"
+    values:
+      category:
+        label: "Python"
+        url:   "/python"        
+  -
+    scope:
       path: "regex"
     values:
       category:
@@ -124,18 +137,18 @@ defaults:
         url:   "/regex"
   -
     scope:
-      path: "git"
+      path: "seguranca-da-informacao"
     values:
       category:
-        label: "Git"
-        url:   "/git"
+        label: "Segurança da Informação"
+        url:   "/seguranca-da-informacao"      
   -
     scope:
-      path: "c"
+      path: "sql"
     values:
       category:
-        label: "Linguagem C"
-        url:   "/c"
+        label: "SQL - Structured Query Language"
+        url:   "/sql"
   -
     scope:
       path: "tdd"
@@ -143,17 +156,3 @@ defaults:
       category:
         label: "TDD (Test Driven Development)"
         url:   "/tdd"
-  -
-    scope:
-      path: "seguranca-da-informacao"
-    values:
-      category:
-        label: "Segurança da Informação"
-        url:   "/seguranca-da-informacao"
-  -
-    scope:
-      path: "linux"
-    values:
-      category:
-        label: "Linux"
-        url:   "/linux"
