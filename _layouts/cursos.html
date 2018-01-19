@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        
+        {% include preloader.html %}
+        <!-- Home start -->
+        <section id="home" class="pfblock-image screen-height artigos">
+            <div class="home-overlay"></div>
+            <div class="intro">
+                <h1>{{ page.title }}</h1>
+                <div class="start">{{page.description}}</div>
+                <p><small>{{ page.edicao }}</small></p>
+                <p><a class="btn btn-primary" href="{{ page.cadastro }}" role="button">Cadastre aqui!!!</a></p>
+            </div>
+
+            <!-- Button -->
+            <a href="#conteudo"><div class="scroll-down"><span><i class="fa fa-angle-down fa-2x"></i></span></div></a>
+        </section>
+        <!-- Home end -->
+
+        <article id="conteudo" class="container">
+            {{ content }}
+        </article>
+        
+        {% if page.serie %}        
+            {% include series-next-prev.html %}
+        {% endif %}
+        {% include disqus.html %}
+        {% include footer.html %}
+        {% include scroll-to-top.html %}
+        
+    </body>
+    {% include footer-js.html %}
+</html>
