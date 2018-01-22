@@ -98,7 +98,7 @@ Essa será especial, só para aqueles que terminarem toda (eu disse toda) a bate
     + O que não falar em uma entrevista
     + O que mandar por email
     + Como e onde procurar emprego (puta que p... a maior mamata hein?)
-    + Rompendo e superando as exigências
+    + Rompendo e superando as exigências das vagas
 - Entenda seu perfil comportamental (indo além da técnica)
 
 
