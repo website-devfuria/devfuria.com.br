@@ -112,7 +112,7 @@ return array(
 
     "/logica"                                           => "/logica-de-programacao/",
     "/logica/"                                          => "/logica-de-programacao/",
-    "/logica-de-/"                                       => "/logica-de-programacao/",
+    "/logica-de-/"                                      => "/logica-de-programacao/",
     "/logica/basico/intro"                              => "/logica-de-programacao/",
     "/logica/basico/intro/"                             => "/logica-de-programacao/",
     "/logica/basico/tdd/"                               => "/logica-de-programacao/",
@@ -124,7 +124,7 @@ return array(
     "/logica-de-programacao/entendendo-o-assert-c/"     => "/c/rodando-os-testes/",
     "/logica-de-programacao/como-compilar-no-linux/"    => "/logica-de-programacao/",
     "/logica-de-programacao/intro/"                     => "/logica-de-programacao/",
-
+    
     "/logica-de-programacao/eleitores/"                 => "/logica-de-programacao/votos-em-relacao-ao-total-de-eleitores/",
     "/logica-de-programacao/c-eleitores/"               => "/logica-de-programacao/votos-em-relacao-ao-total-de-eleitores/",
     "/logica-de-programacao/custo-carro/"               => "/logica-de-programacao/custo-de-fabricacao-de-um-carro/",
