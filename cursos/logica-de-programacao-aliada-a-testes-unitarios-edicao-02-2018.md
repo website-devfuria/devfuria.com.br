@@ -1,7 +1,7 @@
 ---
 layout:      cursos
 title:       Curso de Lógica de Programação Aliada a Testes Unitários
-description: 
+description:
 edicao:      Primeira Edição (Fevereiro/2018)
 cadastro:    "/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-jan-2018&utm_medium=index-do-curso"
 ---
@@ -40,14 +40,14 @@ do que eu falar.
 Vamos combinar o seguite ? Não guarde suas dúvidas com você, divida elas comigo. Utilize os comentários no final da
 página.
 
-Caso tenhamos alunos que nunca programaram na vida, tudo bem. Eu marco um intensivão com eles e deixo eles preparados 
+Caso tenhamos alunos que nunca programaram na vida, tudo bem. Eu marco um intensivão com eles e deixo eles preparados
 para o curso.
 
 
 
 ## O que veremos ?
 
-Utilizaremos a bateria de testes do site devfuria (este site aqui, rssss). Por tanto, veja 
+Utilizaremos a bateria de testes do site devfuria (este site aqui, rssss). Por tanto, veja
 [nesta página](/logica-de-programacao/) a lista completa de exercícios.
 
 Para rodar os testes usaremos a função `assert` de cada linguagem.
@@ -75,7 +75,7 @@ Para o Linux nos utilizaremos máquinas vituais (__Virtual Box__).
 - Estamos pronto para omeçar ?
 - Exercícios nível 0 - Aquecimento
 - Exercícios nível 1 - Raciocínio
-- Exercícios nível 2 - Raciocínio 
+- Exercícios nível 2 - Raciocínio
 - Exercícios nível 3 - Laços de repetição
 - Exercícios nível 4 - Vetores e String
 - Pausa para o café: Uma introdução sobre Orientação a objetos
@@ -199,7 +199,7 @@ Com um currículo desses meu amigo, dúvido que você não encontra-rá um bom e
 
 Entre para nossa lista e não perca nenhuma novidade !!!!
 
-<a href="{{ page.cadastro }}" class="btn btn-primary btn-large">Cadastre seu email]</a>
+<a href="{{ page.cadastro }}" class="btn btn-primary btn-large">Cadastre seu email</a>
 
 <br />
 <br />
