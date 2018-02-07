@@ -23,7 +23,9 @@ Eu estou gravando uma séria de vídeo explicando em detalhes certos aspectos do
 + [[02] Porque juntamos lógica com os testes ?](https://youtu.be/FbgMeSWKAQ4)
 + [[03] Seja mais esperto que sua Faculdade](https://youtu.be/7WxqhsXtTtQ)
 + [[04] Porque estamos utilizando 3 linguagens para aprender lógica ?](https://youtu.be/lgzcBc1E-g0)
-+ aguarde próximo vídeo
++ [[05] Detalhes do curso - parte 1](https://youtu.be/JZpE9QuFUbo)
++ [[06] Detalhes do curso - parte 2](https://youtu.be/DYpIWqmGhZg)
++ [[07] Vai começar o curso de lógica + testes ](https://youtu.be/Ua6sHnlNFws)
 
 
 
@@ -95,10 +97,9 @@ Essa será especial, só para aqueles que terminarem toda (eu disse toda) a bate
 - Como montar um currículo
 - Tudo sobre o mercado de trabalho
     + Como se comportar em uma entrevista de emprego
-    + O que não falar em uma entrevista
-    + O que mandar por email
+    + O que colocar no currículo
     + Como e onde procurar emprego (puta que p... a maior mamata hein?)
-    + Rompendo e superando as exigências das vagas
+    + Como romper e superar as exigências das vagas
 - Entenda seu perfil comportamental (indo além da técnica)
 
 
@@ -140,11 +141,9 @@ O depoimento deve ser um vídeo de 30 a 60 segundos (mais ou menos) em formato v
 
 ## Quando começa ?
 
-Está previsto para começar em Fevereiro de 2018 junto com as aulas letivas das escolas.
+A primeira aula será agora dia 8 de Fevereiro de 2018 as 20:00 em nosso [canal do youtube](https://www.youtube.com/channel/UC5hmNJ79ESjBf0SNR-iguIQ).
 
-Provavelmente iniciaremos antes do carnaval (semana do dia 5), mas pode ser que eu decida começar depois (semanda do dia 19).
-
-Quando eu tiver uma posição concreta eu aviso, ok ?
+A segunda aula ficará para a semana seguinte do Carnaval.
 
 
 ## Quando termina ?
