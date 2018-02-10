@@ -4,23 +4,23 @@
         {% include head.html %}
     </head>
     <body>
-        
+
         {% include preloader.html %}
         {% include artigos-jumbo.html %}
         {% include artigos-nav.html %}
-        
+
         <article id="conteudo" class="container">
-            {% include /cursos/logica.html %}
+            {% include cursos/logica.html %}
             {{ content }}
         </article>
-        
-        {% if page.serie %}        
+
+        {% if page.serie %}
             {% include series-next-prev.html %}
         {% endif %}
         {% include disqus.html %}
         {% include footer.html %}
         {% include scroll-to-top.html %}
-        
+
     </body>
     {% include footer-js.html %}
 </html>
