@@ -3,7 +3,8 @@ layout:      cursos
 title:       Curso de Lógica de Programação Aliada a Testes Unitários
 description:
 edicao:      Primeira Edição (Fevereiro/2018)
-cadastro:    "/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-jan-2018&utm_medium=index-do-curso"
+#cadastro:    "/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-jan-2018&utm_medium=index-do-curso"
+cadastro:    https://goo.gl/forms/LCWvmFIUr747EXai2
 ---
 
 Olá, seja bem vindo a descrição do curso de __Lógica de Programação aliada a Testes Unitários__!
