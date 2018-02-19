@@ -18,7 +18,7 @@ Fala sério, você já viu em algum lugar por aí um curso que unisse as duas co
 
 ## Veja os vídeos
 
-Eu estou gravando uma séria de vídeo explicando em detalhes certos aspectos do curso...
+Eu estou gravando uma série de vídeo explicando em detalhes certos aspectos do curso...
 
 + [[01] Divulgação do curso de Lógica de Programação](https://youtu.be/N6TmF9EyLwQ)
 + [[02] Porque juntamos lógica com os testes ?](https://youtu.be/FbgMeSWKAQ4)

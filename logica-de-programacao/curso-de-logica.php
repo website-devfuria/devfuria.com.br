@@ -24,15 +24,15 @@ $utm_medium   = (isset($_GET['utm_medium']))   ? $_GET['utm_medium'] :   'não-i
         <meta property="og:image" content="http://www.devfuria.com.br/assets/images/favicon.png"/>
         <link rel="canonical" href="http://www.devfuria.com.br/foo/">
         <link rel="shortcut icon" type="images/gif" href="/assets/images/favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
         <style type="text/css">
             body {
-                font-family: 'Source Code Pro', monospace;                
+                font-family: 'Source Code Pro', monospace;
                 height: 80vh;
                 display: flex;
                 flex-flow: column;
                 align-items: center;
-                text-align: center;  
+                text-align: center;
                 justify-content: center;
             }
             h1 {
@@ -50,13 +50,14 @@ $utm_medium   = (isset($_GET['utm_medium']))   ? $_GET['utm_medium'] :   'não-i
         <h2>Powered by devfuria.com.br</h2>
         <h1>Curso de Lógica de Programação <br /> + <br />Testes de Unidades</h1>
         <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p>
-        <form action="/mailing-list.php">
+        <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p> -->
+<!--         <form action="/mailing-list.php">
             <input type="hidden" value="<?php echo $utm_source; ?>" name="utm_source"/>
             <input type="hidden" value="<?php echo $utm_campaign; ?>" name="utm_campaign"/>
             <input type="hidden" value="<?php echo $utm_medium; ?>" name="utm_medium"/>
             <label><input type="text" value="" name="email"/></label>
             <label><button type="submit">Cadastrar</button></label>
         </form>
-    </body>
+ -->    </body>
     <script src="../assets/js/analytics.js"></script>
 </html>
