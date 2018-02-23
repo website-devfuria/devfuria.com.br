@@ -4,8 +4,8 @@ description: Uma introdução ao aplicativo learyounode mantido pela Nodeschool
 ---
 
 A Nodeschool teve uma idéia genial, criou um curso interativo de __Node.js__, o mais legal é que ele é gratuito.
-Digo mais, ele é do tipo "self service"! Você instala o programa __learyounode__ que é escrito em __JavaScritp__ e 
-feito para rodar no __Node.js__. Ele possui uma lista com 13 execícios que você vai desenvolvendo e conferindo com a 
+Digo mais, ele é do tipo "self service"! Você instala o programa __learyounode__ que é escrito em __JavaScript__ e
+feito para rodar no __Node.js__. Ele possui uma lista com 13 exercícios que você vai desenvolvendo e conferindo com a
 ajuda do programa.
 
 A primeira coisa que você precisa fazer é [instalar o Node.js no Linux](/linux/cookbook/nodejs/).
@@ -13,7 +13,7 @@ A primeira coisa que você precisa fazer é [instalar o Node.js no Linux](/linux
 A segunda coisa é [instalar o NPM](/linux/cookbook/npm/) que nada mais é do que é um repositório online para publicação
 de projetos de código aberto para o __Node.js__.
 
-Com o __Node,js__ e o __NPM__ devidamente instalados, podemos instalar o __learyounode__.
+Com o __Node.js__ e o __NPM__ devidamente instalados, podemos instalar o __learyounode__.
 
 Execute como usuário normal...
 
@@ -54,9 +54,9 @@ O programa irá fornecer argumentos para seu programa quando você rodar...
 
     learnyounode verify program.js`
 
-..., então você não precisa se preocupar em fornecê-los. Para testar seu programa sem a verificação, você pode 
+..., então você não precisa se preocupar em fornecê-los. Para testar seu programa sem a verificação, você pode
 invocá-lo com...
 
-    learnyounode run program.js. 
+    learnyounode run program.js.
 
 Quando você usa `run` você está invocando o ambiente de testes que o learnyounode prepara para cada exercício.

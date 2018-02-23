@@ -7,26 +7,26 @@ ordem:       1
 
 __Ajax__ é o acrônimo (sem letras maiúsculas) de Asynchronous JavaScript and XML
 
-O termo foi inventado por Jesse James Garrett e apareceu pela primeira vez em seu ensaio de fevereiro de 2005: 
+O termo foi inventado por Jesse James Garrett e apareceu pela primeira vez em seu ensaio de fevereiro de 2005:
 ["Ajax: A New Approach to Web Application"](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/ "link-externo").
 O termo foi inventado pelo Jesse, mas o objeto __XMLHttpRequest__ (o que faz a coisa toda acontecer) foi introduzido no
 mercado pela Microsoft em meados do 1999.
- 
+
  "__Ajax__" foi um jargão popular por muitos anos; agora é apenas um termo útil para uma arquitetura de aplicativo Web
  baseada em scripts de requisições HTTP. (Flanagam em seu livro "JavaScript O guia Definitivo", capítulo 18 Scripts HTTP)
 
 Ajax é um conjunto de tecnologia: JavaScript, XML e uma linguagem do lado do servidor que não está contida no nome mas
 é igualmente importante.
 
-No começo, os dados circulavam principalmente no formato __XML__, mas com a criação e popularidade do formato 
+No começo, os dados circulavam principalmente no formato __XML__, mas com a criação e popularidade do formato
 [JSON](http://www.json.org/ "link-externo") este último passou a ser o formato dominante. É por essa razão que Ajax é
 considerado apenas um "termo útil".
 
-A idéia essencial do Ajax é fazer uma requisição ao servidor sem ter que renderizar toda a página HTML, o que 
+A idéia essencial do Ajax é fazer uma requisição ao servidor sem ter que renderizar toda a página HTML, o que
 era custoso para a época devido a conexão com a Internet ser bem lenta. Porém, o mais legal é que você faz isso integrado
 a linguagem __JavaScript__. Essa combinação explosiva deu origem a uma nova era de aplicações web.
 
-   
+
 
 Seu primeiro programa Ajax
 ---
@@ -35,9 +35,8 @@ Crie um arquivo denominado `foo.txt` e insira nela uma única linha com o seguin
 
 Para executar o código abaixo você poderá utilizar as ferramentas do navegador. Eu estou no Firefox e estou utilizando
 o FireBug, se você estiver usando o Chrome, aperte a tecla `F12` para abrir o plugin equivalente.
-   
-{% highlight javascript linenos %} 
-var xhr = new XMLHttpRequest();
+
+{% highlight javascript linenos %}var xhr = new XMLHttpRequest();
 xhr.open("GET", "foo.txt", true);
 xhr.send();
 xhr.responseType = "text";
@@ -55,7 +54,7 @@ O método `open()` recebe três argumentos, sendo os dois primeiros obrigatório
 O primeiro argumento é tipo (verbo) de pedido [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP "link-externo")
  que você deve enviar (GET, POST, DELETE, etc...).
 
-O segundo é o local a partir do qual você deseja solicitar dados. A URL pode ser relativo ou absoluto, mas devido às 
+O segundo é o local a partir do qual você deseja solicitar dados. A URL pode ser relativo ou absoluto, mas devido às
 preocupações com segurança entre domínios, o destino deve residir no mesmo domínio.
 
 O terceiro argumento do método `open()` é um valor booleano que especifica se o pedido é feito de forma __assíncrona__
@@ -68,7 +67,7 @@ Na __linha 04__ definimos que a resposta do servidor será um texto plano. Não 
 padrão, mas eu quis deixar as coisas explícitas.
 
 Na __linha 05__ definimos uma função para o evento `onload` do objeto __XMLHttpRequest__. Este evento será executado
-caso a requisição seja realizada com sucesso. Neste caso, o resultado será `texto plano!\n` e estará acessível através 
+caso a requisição seja realizada com sucesso. Neste caso, o resultado será `texto plano!\n` e estará acessível através
 da propriedade `responseText` do objeto __XMLHttpRequest__.
 
 
@@ -100,7 +99,7 @@ seguinte conteúdo.
 O código abaixo fará uma requisição __Ajax__ para ler o conteúdo de um arquivo __XML__. Repare que o valor da propriedade
 `responseType` é `document` e não `xml`.
 
-{% highlight javascript linenos %} 
+{% highlight javascript linenos %}
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "arquivo.xml", true);
 xhr.send();
