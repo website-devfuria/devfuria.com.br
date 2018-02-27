@@ -4,6 +4,7 @@ return array(
     "/core/views/"              => "/",
     "/node_modules/.env/"       => "/",
     "/node_modules/"            => "/",
+    "/foo/"                   => "/",
     "/fulia/"                   => "/",
     "/fulia/index.php/"         => "/",
     "/google9a3a1fb0a47d86dd/"  => "/",
@@ -108,6 +109,7 @@ return array(
     "/html-css/basico/primeiro-html/slide-primeiro-html.odp/"  => "/html-css/primeiro-html/",
     "/html-css/basico/primeiro-html/"                    => "/html-css/primeiro-html/",
     "/html-css/basico/primeiro-html/materia.md/"         => "/html-css/primeiro-html/",
+    "/html-css/basico/primeiro-html/materia.mrk/"        => "/html-css/primeiro-html/",
     "/%3Cb%3Ehtml%3C/b%3E-css/formularios/combo%3Cb%3Ebox%3C/b%3E/" => "/html-css/formularios/combobox/",
 
     "/logica"                                           => "/logica-de-programacao/",
@@ -117,6 +119,7 @@ return array(
     "/logica/basico/intro/"                             => "/logica-de-programacao/",
     "/logica/basico/tdd/"                               => "/logica-de-programacao/",
     "/logica/basico/exercicio02/"                       => "/logica-de-programacao/",
+    "/logica/basico/exercicio05/"                       => "/logica-de-programacao/",
     "/logica/basico/exercicio06/"                       => "/logica-de-programacao/",
     "/logica/basico/exercicio08/"                       => "/logica-de-programacao/",
     "/logica/basico/exercicio09/"                       => "/logica-de-programacao/",
@@ -124,7 +127,7 @@ return array(
     "/logica-de-programacao/entendendo-o-assert-c/"     => "/c/rodando-os-testes/",
     "/logica-de-programacao/como-compilar-no-linux/"    => "/logica-de-programacao/",
     "/logica-de-programacao/intro/"                     => "/logica-de-programacao/",
-    
+
     "/logica-de-programacao/eleitores/"                 => "/logica-de-programacao/votos-em-relacao-ao-total-de-eleitores/",
     "/logica-de-programacao/c-eleitores/"               => "/logica-de-programacao/votos-em-relacao-ao-total-de-eleitores/",
     "/logica-de-programacao/custo-carro/"               => "/logica-de-programacao/custo-de-fabricacao-de-um-carro/",
@@ -259,6 +262,7 @@ return array(
     "/php/instalando-o-ambiente/"               => "/php/",
 
     "/python/django-error/"    => "/python/",
+    "/python/flas/"            => "/python/flask-apache/",
 
     "/regexp/"                 => "/regex/",
     "/regexp//"                => "/regex/",
@@ -282,6 +286,7 @@ return array(
 
     "/script-para-onde-envio-os-dados.php/"                  => "/php/",
     "/seguranca-da-informacao/owasp-topten-2010-introducao/" => "/seguranca-da-informacao/owasp-topten-2010/",
+    "/seguranca-da-informacao/owasp-topten-/"                 => "/seguranca-da-informacao/owasp-topten-2010/",
 
     "/tdd/tdd-test-driven-development/"            => "/logica-de-programacao/tdd-junto-com-logica-assim-tao-cedo/",
     "/tdd/tdd-test-driven-development/index.html/" => "/logica-de-programacao/tdd-junto-com-logica-assim-tao-cedo/",
@@ -313,6 +318,7 @@ return array(
     "/linux/cookbook/recordmydesktop/"            => "/linux/instalando-gtk-recordmydesktop/",
     "/linux/reiniciar-servidor-apache/"           => "/linux/apache-como-reiniciar-servidor-apache/",
     "/linux/reiniciar-servidor-apache/"           => "/linux/apache-como-reiniciar-servidor-apache/",
+    "/linux/insta/"                               => "/linux/instalando-wodim/",
 
 );
 

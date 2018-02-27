@@ -50,14 +50,18 @@ $utm_medium   = (isset($_GET['utm_medium']))   ? $_GET['utm_medium'] :   'não-i
         <h2>Powered by devfuria.com.br</h2>
         <h1>Curso de Lógica de Programação <br /> + <br />Testes de Unidades</h1>
         <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p>
-        <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p> -->
-<!--         <form action="/mailing-list.php">
+        <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p>
+
+<!--
+         <form action="/mailing-list.php">
             <input type="hidden" value="<?php echo $utm_source; ?>" name="utm_source"/>
             <input type="hidden" value="<?php echo $utm_campaign; ?>" name="utm_campaign"/>
             <input type="hidden" value="<?php echo $utm_medium; ?>" name="utm_medium"/>
             <label><input type="text" value="" name="email"/></label>
             <label><button type="submit">Cadastrar</button></label>
         </form>
- -->    </body>
+ -->
+
+     </body>
     <script src="../assets/js/analytics.js"></script>
 </html>

@@ -16,9 +16,9 @@ Diferente porque eu aliei o poder dos testes unitários aos exercícios de lógi
 Fala sério, você já viu em algum lugar por aí um curso que unisse as duas coisas: lógica + testes ?
 
 
-## Veja os vídeos
+## Série de Vídeos do Curso
 
-Eu estou gravando uma série de vídeo explicando em detalhes certos aspectos do curso...
+Eu estou gravando uma série de vídeos explicando em detalhes certos aspectos do curso...
 
 + [[01] Divulgação do curso de Lógica de Programação](https://youtu.be/N6TmF9EyLwQ)
 + [[02] Porque juntamos lógica com os testes ?](https://youtu.be/FbgMeSWKAQ4)
@@ -27,7 +27,29 @@ Eu estou gravando uma série de vídeo explicando em detalhes certos aspectos do
 + [[05] Detalhes do curso - parte 1](https://youtu.be/JZpE9QuFUbo)
 + [[06] Detalhes do curso - parte 2](https://youtu.be/DYpIWqmGhZg)
 + [[07] Vai começar o curso de lógica + testes ](https://youtu.be/Ua6sHnlNFws)
++ [[08] Curso de lógica de programação + testes unitários](https://youtu.be/SnCoxHMBcqQ)
++ [AO VIVO | Flávio 0 vs 2 Youtube](https://youtu.be/lgpCyunRRSw)
 
+__Aula #01:__
+
++ [Curso Lógica de Programação + Testes Unitários (1 aula)](https://youtu.be/AxUBkS84C9o)
++ [Aula #1a - Instalando o Virtual Box no Windows](https://youtu.be/MwDJ1MqJ6VY)
++ [Aula #1b - Instalando o Ubuntu Server no Virtual Box](https://youtu.be/jRzQqGO_EFY)
++ [Aula #1c - Fazendo a máquina virtual se comunicar pela rede](https://youtu.be/zOA8szJPcb4)
++ [Aula #1d - Acessando sua máquina virtual pelo terminal Git Bash](https://youtu.be/7QwTWLyWzdE)
++ [Aula #1e - Como serão os testes na linguagem Python](https://youtu.be/sZZNSvvn3I8)
++ [AO VIVO | Um pouco sobre mim, sobre o devfuria e sobre o curso de lógica!](https://youtu.be/6YxxUDP0FDs)
+
+__Aula #02:__
+
++ [Uma palavra de motivação - case udacity](https://youtu.be/NV2EsdJm_cg)
++ [Curso Lógica de Programação + Testes Unitários (2 aula)](https://youtu.be/Y_j_AOX3g8o)
++ [Aula #2a - Clonando nossa máquina virtual](https://youtu.be/OwC485IEc-U)
++ [Aula #2b - Instalando Node.js e GCC](https://youtu.be/9lGJue1I0Xg)
++ [Aula #2c - Compartilhando pastas](https://youtu.be/d_D9kkxssA8)
++ [Aula #2d - Exemplo em Python](https://youtu.be/bh_4HR9RJtU)
++ [Aula #2e - Exemplo em JavaScript (nodejs)](https://youtu.be/u4WOiKcvlVU)
++ [Aula #2f - Exemplo na linguagem C](https://youtu.be/wYb5EGir9JY)
 
 
 ## Para quem é indicado ?
@@ -142,7 +164,7 @@ O depoimento deve ser um vídeo de 30 a 60 segundos (mais ou menos) em formato v
 
 ## Quando começa ?
 
-A primeira aula será agora dia 8 de Fevereiro de 2018 as 20:00 em nosso [canal do youtube](https://www.youtube.com/channel/UC5hmNJ79ESjBf0SNR-iguIQ).
+A primeira aula será agora dia 8 de Fevereiro de 2018 as 20:00 em nosso [canal do youtube](https://www.youtube.com/user/DevFuria).
 
 A segunda aula ficará para a semana seguinte do Carnaval.
 
