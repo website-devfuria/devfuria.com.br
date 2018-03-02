@@ -28,7 +28,7 @@ exclude:
     - .gitignore
     - tests
     - nbproject
-#    - c
+    # - c
     - git
     - html-css
     - javascript
@@ -78,7 +78,7 @@ defaults:
     values:
       category:
         label: "JavaScript"
-        url:   "/javascript"    
+        url:   "/javascript"
   -
     scope:
       path: "javascript/node.js"
@@ -99,7 +99,7 @@ defaults:
     values:
       category:
         label: "Canvas"
-        url:   "/javascript/canvas"        
+        url:   "/javascript/canvas"
   -
     scope:
       path: "linux"
@@ -113,7 +113,7 @@ defaults:
     values:
       category:
         label: "Lógica de programação"
-        url:   "/logica-de-programacao"        
+        url:   "/logica-de-programacao"
   -
     scope:
       path: "misc"
@@ -127,7 +127,7 @@ defaults:
     values:
       category:
         label: "Python"
-        url:   "/python"        
+        url:   "/python"
   -
     scope:
       path: "regex"
@@ -141,7 +141,7 @@ defaults:
     values:
       category:
         label: "Segurança da Informação"
-        url:   "/seguranca-da-informacao"      
+        url:   "/seguranca-da-informacao"
   -
     scope:
       path: "sql"

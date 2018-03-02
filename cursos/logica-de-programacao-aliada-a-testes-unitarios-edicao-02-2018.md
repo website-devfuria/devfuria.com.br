@@ -30,7 +30,7 @@ Eu estou gravando uma série de vídeos explicando em detalhes certos aspectos d
 + [[08] Curso de lógica de programação + testes unitários](https://youtu.be/SnCoxHMBcqQ)
 + [AO VIVO | Flávio 0 vs 2 Youtube](https://youtu.be/lgpCyunRRSw)
 
-__Aula #01:__
+__Módulo #01:__
 
 + [Curso Lógica de Programação + Testes Unitários (1 aula)](https://youtu.be/AxUBkS84C9o)
 + [Aula #1a - Instalando o Virtual Box no Windows](https://youtu.be/MwDJ1MqJ6VY)
@@ -40,7 +40,7 @@ __Aula #01:__
 + [Aula #1e - Como serão os testes na linguagem Python](https://youtu.be/sZZNSvvn3I8)
 + [AO VIVO | Um pouco sobre mim, sobre o devfuria e sobre o curso de lógica!](https://youtu.be/6YxxUDP0FDs)
 
-__Aula #02:__
+__Módulo #02:__
 
 + [Uma palavra de motivação - case udacity](https://youtu.be/NV2EsdJm_cg)
 + [Curso Lógica de Programação + Testes Unitários (2 aula)](https://youtu.be/Y_j_AOX3g8o)
@@ -50,6 +50,16 @@ __Aula #02:__
 + [Aula #2d - Exemplo em Python](https://youtu.be/bh_4HR9RJtU)
 + [Aula #2e - Exemplo em JavaScript (nodejs)](https://youtu.be/u4WOiKcvlVU)
 + [Aula #2f - Exemplo na linguagem C](https://youtu.be/wYb5EGir9JY)
+
+__Módulo #03:__
+
++ [Curso Lógica de Programação + Testes Unitários (3 aula)](https://youtu.be/a3lUO6mBdi4)
++ [Aula #3a - Dica do comando mount (Linux)](https://youtu.be/bRylwTeXiP4)
++ [Aula #3b - Não programe mais dessa forma](https://youtu.be/q6vBXrVJ5pY)
++ [Aula #3c - Simulando um teste](https://youtu.be/xZje5ztoY2s)
++ [Aula #3d - Entendendo o assert](https://youtu.be/pfPjRz0xsVk)
++ [Aula #3e - Entendendo o assert (complemento)](https://youtu.be/pl3204dnESg)
++ [Aula #3f - Familiarizando com o GitHub](https://youtu.be/PZqUN3dE1nM)
 
 
 ## Para quem é indicado ?
