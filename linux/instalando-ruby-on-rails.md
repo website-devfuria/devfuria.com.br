@@ -18,6 +18,10 @@ Primeiro resolvemos as dependências.
 
     apt-get install gcc g++ make build-essential  git-core automake autoconf curl gawk libgcrypt11-dev libreadline-dev libruby1.9.1 libreadline6-dev zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3  libncurses5-dev  libtool bison pkg-config libffi-dev
 
+Há uma forma simplificada de fazer isso...
+
+    apt-get install build-essential
+
 
 Baixe o código fonte do __Ruby__ no site oficial
 
@@ -37,17 +41,17 @@ Para descompactar execute:
 
     # tar -xvcf ruby-2.4.2.tar.gz
 
-Ele irá criar uma pasta chamada `ruby-2.4.2`. Entre nela `cd /ruby-2.4.2`
+Ele irá criar uma pasta chamada `ruby-2.4.2`. Entre nela...
 
-Execute tudo como root.
+	cd /ruby-2.4.2
 
+... e execute tudo como root:
 
     ./configure CONFIGURE_OPTS=--disable-install-doc
     make
     make install
 
 Reinicialize a máquina.
-
 
     gem update --system
 
