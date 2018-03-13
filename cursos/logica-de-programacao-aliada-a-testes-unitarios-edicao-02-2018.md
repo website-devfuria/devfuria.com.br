@@ -3,8 +3,8 @@ layout:      cursos
 title:       Curso de Lógica de Programação Aliada a Testes Unitários
 description:
 edicao:      Primeira Edição (Fevereiro/2018)
-#cadastro:    "/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-jan-2018&utm_medium=index-do-curso"
-cadastro:    https://goo.gl/forms/LCWvmFIUr747EXai2
+cadastro:    "/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=index-do-curso"
+#cadastro:    https://goo.gl/forms/LCWvmFIUr747EXai2
 ---
 
 Olá, seja bem vindo a descrição do curso de __Lógica de Programação aliada a Testes Unitários__!
@@ -60,6 +60,34 @@ __Módulo #03:__
 + [Aula #3d - Entendendo o assert](https://youtu.be/pfPjRz0xsVk)
 + [Aula #3e - Entendendo o assert (complemento)](https://youtu.be/pl3204dnESg)
 + [Aula #3f - Familiarizando com o GitHub](https://youtu.be/PZqUN3dE1nM)
+
+
+__Módulo #04:__
+
++ [Aula #4a - Visão Geral do Git e GitHub](https://youtu.be/GQ1EBZGE2lo)
++ [Aula #4b - git clone + git commit](https://youtu.be/gm_N29HrL8g)
++ [Aula #4c - git push + git pull](https://youtu.be/aODd8Zfn4iY)
++ [Aula #4d - Markdown](https://youtu.be/bii3ors-C4w)
++ [Aula #4e - Criando um repositório](https://youtu.be/bgCdlPpMvK0)
+
+
+__Módulo #05:__
+
++ [Aula #5a - Revisando](https://youtu.be/p8-JjbDdaMQ)
++ [Aula #5b - Área Quadrada em Python](https://youtu.be/bdV-9Ndk4ME)
++ [Aula #5c - Área Quadrada em Node.js (JavaScript)](https://youtu.be/bKdBeuSmryo)
++ [Aula #5d - Área Quadrada em C](https://youtu.be/SZqKDfdfTf4)
++ [Aula #5e - git commit + git push](https://youtu.be/gB9ze4pUjU0)
+
+
+__Módulo #06:__
+
++ [Aula #6a - Antecessor e Sucessor em Python](https://youtu.be/FTQYhHKK7QA)
++ [Aula #6b - Antecessor e Sucessor em Node (JavaScript)](https://youtu.be/-RVvi1sYes4)
++ [Aula #6c - Antecessor e Sucessor em C](https://youtu.be/XC1ciNZWtd8)
++ [Aula #6d - git commit + git push](https://youtu.be/Mh_y4s9wRUk)
+
+
 
 
 ## Para quem é indicado ?
@@ -227,7 +255,7 @@ Com um currículo desses meu amigo, dúvido que você não encontra-rá um bom e
 
 - [facebbok/devfuria](https://www.facebook.com/devfuria/)
 - [youtube/devfuria](https://www.youtube.com/channel/UC5hmNJ79ESjBf0SNR-iguIQ)
-- sitedevfuria arroba gmail.com
+- sitedevfuria@gmail.com
 
 Entre para nossa lista e não perca nenhuma novidade !!!!
 
