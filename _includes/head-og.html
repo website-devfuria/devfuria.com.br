@@ -5,6 +5,6 @@
 {% if page.description %}
 <meta name="og:description" content="{{ page.description  }}" />
 {% endif %}
-<meta property="og:url"     content="{{ page.url | prepend: site.url }}" />
+<meta property="og:url"     content="{{ page.url | prepend: site._url }}" />
 
-<meta property="og:image"   content="{% if page.ogimage %}{{ page.ogimage | prepend: page.url | prepend: site.url }}{% else %}{{ "/assets/images/favicon.png" }}{% endif %}"/>
+<meta property="og:image"   content="{% if page.ogimage %}{{ page.ogimage | prepend: page.url | prepend: site._url }}{% else %}{{ "/assets/images/favicon.png" }}{% endif %}"/>
