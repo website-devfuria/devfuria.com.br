@@ -88,6 +88,22 @@ __Módulo #06:__
 + [Aula #6d - git commit + git push](https://youtu.be/Mh_y4s9wRUk)
 
 
+__Módulo #07:__
+
++ [Curso de lógica + testes (feedback )](https://youtu.be/2CS-wcl-bPM)
++ [Aula #7a - Introdução ao módulo 7](https://youtu.be/ez4nAfZRKzg)
++ [Aula #7b - Média Simples em Python](https://youtu.be/XDS0nwJRLX0)
++ [Aula #7c - Média Simples em Node (JavaScript)](https://youtu.be/02yw_2G-D-k)
++ [Aula #7d - Média Simples na linguagen C](https://youtu.be/MJhCET-9pDk)
++ []()
+
+__Módulo #08:__
+
++ [Aula #8a - Introdução ao módulo 8](https://youtu.be/rWJOTcBX9-o)
++ [Aula #8b - Descobrir os dias em python](https://youtu.be/eeDw18uIExQ)
++ [Aula #8c - Descobrir os dias em Node (JavaScript)](https://youtu.be/fs3ygRM4wHA)
++ [Aula #8d - Descobrir os dias em C](https://youtu.be/38rowYJTz_U)
++ [Aula #8e - git commit + git push](https://youtu.be/IlXhDGVKRSU)
 
 
 ## Para quem é indicado ?
