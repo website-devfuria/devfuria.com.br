@@ -2,6 +2,8 @@
 title:       A2 Cross-Site Scripting (XSS)
 description: Artigo sobre a vulnerabilidade XSS, segundo da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
+capitulo:    seginfo-topten2010
+ordem:       2
 ---
 
 A XSS ocorre quando a aplicação inclui dados fornecidos pelo atacante numa página enviada para o navegador sem que 

@@ -1,13 +1,3 @@
-<?php
-
-#
-# Recebendo alguns dados
-#
-$utm_source   = (isset($_GET['utm_source']))   ? $_GET['utm_source'] :   'não-informado';
-$utm_campaign = (isset($_GET['utm_campaign'])) ? $_GET['utm_campaign'] : 'não-informado';
-$utm_medium   = (isset($_GET['utm_medium']))   ? $_GET['utm_medium'] :   'não-informado';
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -53,16 +43,28 @@ $utm_medium   = (isset($_GET['utm_medium']))   ? $_GET['utm_medium'] :   'não-i
         <p>Encerramos as inscrições para a turma do 1 semestre de 2018, mas</p>
         <p>iremos abrir um anova turma no segundo semestre deste ano!</p>
         
-        <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p>
+        <p><strong>Se inscreva para a próxima turma e não perca nenhuma novidade !!!</strong></p>
+
+        <!-- <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p> -->
         <!-- <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p> -->
 
+<?php
+
+#
+# Recebendo alguns dados
+#
+$utm_source   = (isset($_GET['utm_source']))   ? $_GET['utm_source'] :   'não-informado';
+$utm_campaign = (isset($_GET['utm_campaign'])) ? $_GET['utm_campaign'] : 'não-informado';
+$utm_medium   = (isset($_GET['utm_medium']))   ? $_GET['utm_medium'] :   'não-informado';
+
+?>
 
          <form action="/mailing-list.php">
             <input type="hidden" value="<?php echo $utm_source; ?>" name="utm_source"/>
             <input type="hidden" value="<?php echo $utm_campaign; ?>" name="utm_campaign"/>
             <input type="hidden" value="<?php echo $utm_medium; ?>" name="utm_medium"/>
-            <label><input type="text" value="" name="email"/></label>
-            <label><button type="submit">Cadastrar</button></label>
+            <label><input type="text" value="" name="email" placeholder="seu melhor email" style="width: 250px" /></label>
+            <label><button type="submit">Inscreva-se</button></label>
         </form>
  
 

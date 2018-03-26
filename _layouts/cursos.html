@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        {% include head.html %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>
+            {% if page.title %}
+                {{ page.title }}        
+            {% else %}
+                {{ site.title }}
+            {% endif %}
+        </title>
+
+        {% if page.description %}
+            <meta name="description" content="{{ page.description }}" />
+        {% endif %}
+
+        <meta name="author" content="Flávio Alexandre Micheletti">
+
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="DevFuria" />
+        <meta property="og:title" content="{{ page.title }}" />
+        {% if page.description %}
+        <meta name="og:description" content="{{ page.description  }}" />
+        {% endif %}
+        <meta property="og:url"     content="{{ page.url | prepend: site._url }}" />
+
+        <meta property="og:image"   content="{% if page.ogimage %}{{ page.ogimage | prepend: page.url | prepend: site._url }}{% else %}{{ "/assets/clean/images/favicon.png" }}{% endif %}"/>
+
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site._url }}">
+
+        <link rel="shortcut icon" type="imagens/gif" href="/assets/clean/favicon.ico">
+        <link rel="apple-touch-icon"                 href="/assets/clean/touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="57x57"   href="/assets/clean/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72"   href="/assets/clean/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76"   href="/assets/clean/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/clean/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/clean/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/clean/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/clean/apple-touch-icon-180x180.png">
+        <!-- Frame Bootstrap -->
+
+        <!-- Frame Bootstrap -->
+        <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href="/assets/clean/css/font-awesome.min.css" >
+        <link rel="stylesheet" media="screen" href="/assets/clean/css/simple-line-icons.css" >
+        <!-- Theme: Clean -->
+        <link  rel="stylesheet" media="screen" href="/assets/clean/css/style.css" >
+        <!-- Theme: DevFuria -->
+        <link rel="stylesheet" media="screen" href="/assets/clean/css/devfuria.css" >
+        <script src="/assets/clean/js/modernizr.custom.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
         
-        {% include preloader.html %}
+        <!-- Preloader -->
+        <div id="preloader"><div id="status"></div></div>
+
         <!-- Home start -->
         <section id="home" class="pfblock-image screen-height artigos">
             <div class="home-overlay"></div>
@@ -13,7 +70,15 @@
                 <h1>{{ page.title }}</h1>
                 <div class="start">{{page.description}}</div>
                 <p><small>{{ page.edicao }}</small></p>
-                <p><a class="btn btn-primary" href="{{ page.cadastro }}" role="button">Inscrições encerradas!!!</a></p>
+
+                <p>Encerramos as inscrições para a turma do 1 semestre de 2018, mas</p>
+                <p>iremos abrir um anova turma no segundo semestre deste ano!</p>
+                
+                <p>Se inscreva para a próxima turma e não perca nenhuma novidade !!!!</p>
+                <p><a class="btn btn-primary" href="{{ page.cadastro }}" role="button">Próxima Turma!!!</a></p>
+
+                <!-- <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p> -->
+                <!-- <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p> -->
             </div>
 
             <!-- Button -->
@@ -25,13 +90,63 @@
             {{ content }}
         </article>
         
-        {% if page.serie %}        
-            {% include series-next-prev.html %}
-        {% endif %}
         {% include disqus.html %}
-        {% include footer.html %}
-        {% include scroll-to-top.html %}
         
+        <!-- Footer start -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-12">
+
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/devfuria/" class="wow fadeInUp" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://github.com/devfuria" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-github-square"></i></a></li>
+                        </ul>
+
+                        <p>
+                            Este obra está licenciado sob a
+                            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+                                Creative Commons Atribuição 4.0 Internacional
+                            </a>.
+                        </p>
+                        <p>
+                            <a href="/">www.devfuria.com.br</a> (desde 2012)
+                        </p>
+                        <p>
+                            <a href="http://scripteden.com/download/clean-one-page-personal-portfolio-template/" target="_blank">Theme</a>
+                        </p>
+                    </div>
+
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </footer>
+        <!-- Footer end -->     
+
+        <!-- Scroll to top -->
+        <div class="scroll-up"><a href="#home"><i class="fa fa-angle-up"></i></a></div>     
+        <script src="/assets/clean/js/jquery-1.11.1.min.js"></script>
+        <script src="/assets/clean/js/bootstrap.min.js"></script>
+        <script src="/assets/clean/js/jquery.parallax-1.1.3.js"></script>
+        <script src="/assets/clean/js/jquery.sticky.js"></script>
+        <script src="/assets/clean/js/smoothscroll.js"></script>
+        <script src="/assets/clean/js/wow.min.js"></script>
+        <script src="/assets/clean/js/jquery.easypiechart.js"></script>
+        <script src="/assets/clean/js/waypoints.min.js"></script>
+        <!--<script src="/assets/clean/js/jquery.cbpQTRotator.js"></script>-->
+        <script src="/assets/clean/js/custom.js"></script>
+        <script src="/assets/clean/js/jquery.js"></script>
+        <script src="/assets/clean/js/devfuria.js"></script>
+        {% if site.enable_analytics %}
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63607155-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-63607155-1');
+            </script>
+        {% endif %}
     </body>
-    {% include footer-js.html %}
-</html>
+</html> 

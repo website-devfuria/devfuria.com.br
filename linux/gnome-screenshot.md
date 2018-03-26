@@ -1,6 +1,8 @@
 ---
 title:      Como tirar um screenshot (CentOS)
 descrition: No Linux, você precisa tirar um print-screen da tela e não sabe como?
+capitulo:    linux-artigos
+ordem:
 ---
 
 Sabe quando você quer tirar um print-screen da tela? 

@@ -1,7 +1,7 @@
 ---
 title:       Botões de opção (input type=radio)
 description: Artigo a respeito do controle radio button (formulário web) - HTML e CSS
-serie:       Controles Básicos (input)
+capitulo:       controles-basicos-input
 ordem:       5
 ---
 

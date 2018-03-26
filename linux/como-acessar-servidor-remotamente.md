@@ -1,6 +1,8 @@
 ---
 title:       SSH - acessando o Linux remotamente
 description: Como acessar o Linux remotamente e de forma segura
+capitulo:    linux-artigos
+ordem:
 ---
 
 Você precisa acessar um servidor remotamente? utilize o __SSH__.
@@ -32,6 +34,6 @@ Instalando no Ubuntu
 
 ### Fontes
 
-- [Guia do Hardware - SSH na prática, para iniciantes](http://www.hardware.com.br/tutoriais/ssh-iniciantes/ "link-externo")
-- [Guia do Hardware - Dominando o SSH](http://www.hardware.com.br/tutoriais/dominando-ssh/pagina2.html "link-externo")
-- [Guia do Hardware - Guia de Acesso Remoto (SSH, NX Server, VNC e WTS)](http://www.hardware.com.br/guias/acesso-remoto/ "link-externo")
+- [Guia do Hardware - SSH na prática, para iniciantes](http://www.hardware.com.br/tutoriais/ssh-iniciantes/)
+- [Guia do Hardware - Dominando o SSH](http://www.hardware.com.br/tutoriais/dominando-ssh/pagina2.html)
+- [Guia do Hardware - Guia de Acesso Remoto (SSH, NX Server, VNC e WTS)](http://www.hardware.com.br/guias/acesso-remoto/)

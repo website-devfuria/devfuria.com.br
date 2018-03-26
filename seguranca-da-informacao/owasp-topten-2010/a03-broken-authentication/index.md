@@ -2,6 +2,8 @@
 title:       A3 Broken Authentication and Session Management
 description: Artigo sobre a vulnerabilidade Quebra de Autenticação e da Gestão de Sessão, terceiro da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
+capitulo:    seginfo-topten2010
+ordem:       3
 ---
 
 Esta vulnerabilidade está relacionada com a autenticação e o gerenciamento de sessão da aplicação web. Esta 

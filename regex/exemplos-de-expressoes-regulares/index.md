@@ -2,6 +2,8 @@
 title:       Exemplos de Expressões Regulares
 description: Já leu o básico sobre expressões regulares?  Agora que tal olhar alguns exemplos?
 ogimage:     exemplos-expressoes-regulares.png
+capitulo:    er-intro
+ordem:       4
 ---
 
 
@@ -148,10 +150,10 @@ A expressão regular `<p[^>]*>` pega todas as tags `p` iniciais.
 					
 ![Figura de exemplo de expressão regular](exemplos-expressao-regular-16.png "Exemplo de expressão regular")
 
-[Fonte](http://www.mywebref.com/Code_Helper/pages/33.html "link-externo")
+[Fonte](http://www.mywebref.com/Code_Helper/pages/33.html)
 
 
 Créditos dos exemplos
 ---
 
-A maioria dos exemplos são do [Piazinho](http://www.piazinho.com.br/ed3/exemplos.html#1 "link-externo")
+A maioria dos exemplos são do [Piazinho](http://www.piazinho.com.br/ed3/exemplos.html#1)

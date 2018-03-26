@@ -1,7 +1,7 @@
 ---
 title:       Caixa de checagem (input type=checkbox)
 description: Artigo a respeito do controle checkbox (formulário web) - HTML e CSS
-serie:       Controles Básicos (input)
+capitulo:       controles-basicos-input
 ordem:       4
 ---
 

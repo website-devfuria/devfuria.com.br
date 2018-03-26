@@ -1,7 +1,7 @@
 ---
 title:       Formulários web e seus controles
 description: Tudo o que você precisa saber sobre Formulários Web e seus controles.
-serie:       Controles Básicos (input)
+capitulo:       controles-basicos-input
 ordem:       1
 ---
 

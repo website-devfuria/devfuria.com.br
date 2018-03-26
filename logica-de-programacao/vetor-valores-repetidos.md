@@ -1,11 +1,11 @@
 ---
 title:       Valores repetidos em vetor
 description: Exercício de lógica de programação para descobrir se em um determinado vetor existem ou não valores repetidos.
-serie:       Lógica Nível 4 vetores
+capitulo:    logica-nivel-4-vetores
 ordem:       5
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -304,4 +304,3 @@ var haDuplicados = function(arr) {
 ```
 
 
-{% include /alertas/logica-feedback.html %}

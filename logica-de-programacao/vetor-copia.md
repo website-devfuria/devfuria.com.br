@@ -1,11 +1,11 @@
 ---
 title:       Algoritmo para copiar um vetor
 description: Exercício de lógica de programação  para copiar um vetor
-serie:       Lógica Nível 4 vetores
+capitulo:    logica-nivel-4-vetores
 ordem:       3
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -214,4 +214,3 @@ Para comparar dois arrays precisamos usar `deepEqual()` ao invés de `equal()`.
 
 
 
-{% include /alertas/logica-feedback.html %}

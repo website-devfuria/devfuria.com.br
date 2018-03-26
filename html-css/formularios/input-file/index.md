@@ -1,7 +1,7 @@
 ---
 title:       Enviando arquivos (input type="file")
 description: Artigo a respeito do controle do tipo file (formulário web) - HTML e CSS
-serie:       Controles Básicos (input)
+capitulo:       controles-basicos-input
 ordem:       7
 ---
 

@@ -1,7 +1,7 @@
 ---
 title:       Problema 01 do Projeto Euler
 description: Este e a solução do primeiro exercício do Projeto Euler, o objetivo é encorajar você a seguir os exercícios.
-serie:       Lógica Nível 9
+capitulo:    logica-nivel-9
 ordem:       2
 ---
 

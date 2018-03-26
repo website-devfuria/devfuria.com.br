@@ -25,7 +25,7 @@ Há uma forma simplificada de fazer isso...
 
 Baixe o código fonte do __Ruby__ no site oficial
 
-[https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.2.tar.gz](https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.2.tar.gz "link-externo")
+[https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.2.tar.gz](https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.2.tar.gz)
 
 Quando escrevo este artigo, a versão mais atual do __Ruby__ é a 2.4.2.
 
@@ -73,7 +73,7 @@ Primeiro vamos resolver algumas dependências.
 
 Baixe o código fonte do __Ruby__ no site oficial
 
-[http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz](http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz "link-externo")
+[http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz](http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz)
 
 Quando escrevo este artigo, a versão mais atual do __Ruby__ é a 2.1.2.
 
@@ -110,7 +110,7 @@ O __RubyGems__ é o administrador de repositórios do Ruby. Com ele instalado, p
 `gem install nome-da-gem`.
 
 Baixe o código fonte no site oficial
-[http://rubygems.org/pages/download](http://rubygems.org/pages/download "link-externo")
+[http://rubygems.org/pages/download](http://rubygems.org/pages/download)
 
 Também devemos dar [permissão de execução](/linux/como-dar-permissao-de-execucao) no arquivo.
 
@@ -133,5 +133,5 @@ Execute:
 - - -
 Fonte:
 
-- [https://www.ruby-lang.org/en/installation/#building-from-source](https://www.ruby-lang.org/en/installation/#building-from-source "link-externo")
-- [https://www.ruby-lang.org/pt/downloads/](https://www.ruby-lang.org/pt/downloads/ "link-externo")
+- [https://www.ruby-lang.org/en/installation/#building-from-source](https://www.ruby-lang.org/en/installation/#building-from-source)
+- [https://www.ruby-lang.org/pt/downloads/](https://www.ruby-lang.org/pt/downloads/)

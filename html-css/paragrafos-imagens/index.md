@@ -1,6 +1,8 @@
 ---
 title:       HTML & CSS - Parágrafos e imagens 
 description:
+capitulo:    html-css-elementos
+orem:        4
 ---
 
 A tag `p` é muito comum, ela representa um parágrafo e, obviamente, acomoda textos.

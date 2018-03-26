@@ -1,18 +1,17 @@
 ---
 title:       Antecessor e sucessor de um número qualquer
 description: Exercício de lógica de programação para calcular o sucessor e o antecessor de um número qualquer.
-serie:       Lógica Nível 0
+capitulo:    logica-nivel-0
 ordem:       3
 ---
 
-{% include /alertas/logica-apresentacao.html %}
 
 Exercício de lógica de programação
 ---
 
 Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualquer.
 
-{% include /alertas/logica-linguagens.html %}
+
 
 Linguagem C
 ---
@@ -172,4 +171,3 @@ try {
 
 ```
 
-{% include /alertas/logica-feedback.html %}

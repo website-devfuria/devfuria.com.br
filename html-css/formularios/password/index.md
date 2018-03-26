@@ -1,7 +1,7 @@
 ---
 title:       Campos de senha (input type=password)
 description: Artigo a respeito do controle password (formulário web) - HTML e CSS
-serie:       Controles Básicos (input)
+capitulo:       controles-basicos-input
 ordem:       3
 ---
 

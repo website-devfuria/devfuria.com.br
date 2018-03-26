@@ -10,9 +10,9 @@ e vice-versa.
 
 Leia mais em ...
 
-- [code.google.com - modwsgi](https://code.google.com/p/modwsgi/ "link-externo")
-- [wsgi.org/](http://wsgi.readthedocs.org/en/latest/ "link-externo")
-- [PEP 333 (Python Enhancement proposal #333)](https://www.python.org/dev/peps/pep-0333/ "link-externo")
+- [code.google.com - modwsgi](https://code.google.com/p/modwsgi/)
+- [wsgi.org/](http://wsgi.readthedocs.org/en/latest/)
+- [PEP 333 (Python Enhancement proposal #333)](https://www.python.org/dev/peps/pep-0333/)
 
 
 
@@ -26,12 +26,12 @@ Primeiro vamos atualizar seu sistema.
     apt-get update
     apt-get upgrade
 
-Você precisará ter o [Apache devidamente instalado](/linux/cookbook/apache-via-yum-apt-get/), mas caso queira fazer isso 
+Você precisará ter o [Apache devidamente instalado](/linux/instalando-apache-via-yum-apt-get/), mas caso queira fazer isso 
 rapidamente, execute o comando abaixo.
 
     apt-get install apache2
 
-Antes de instalar o __mod_wsgi__, instale a [biblioteca de desenvolvimento do Phyton](https://pythonhosted.org/setuptools/ "link-externo")
+Antes de instalar o __mod_wsgi__, instale a [biblioteca de desenvolvimento do Phyton](https://pythonhosted.org/setuptools/)
 com o comando abaixo.
 
     apt-get install python-setuptools

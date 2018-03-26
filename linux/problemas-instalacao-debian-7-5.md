@@ -1,6 +1,8 @@
 ---
 title:       Problemas na instalação do Debian 7 (netinst)
 description: Algumas dicas de como se virar com a instalação do Debinan wheezy (netinst)
+capitulo:    linux-artigos
+ordem:
 ---
 
 
@@ -72,4 +74,4 @@ Digite __CRTL + ALT + F1__ para abrir o terminal se precisar executar alguns com
 - - -
 Fonte
 
-- [Debain como desktop "Capítulo 6 do livro Linux Guia prático, Morimoto"](http://www.hardware.com.br/livros/linux/capitulo-debian-como-desktop.html "link-externo")
+- [Debain como desktop "Capítulo 6 do livro Linux Guia prático, Morimoto"](http://www.hardware.com.br/livros/linux/capitulo-debian-como-desktop.html)

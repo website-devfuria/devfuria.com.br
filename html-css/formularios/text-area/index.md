@@ -1,7 +1,7 @@
 ---
 title:       Text box multiline (textarea)
 description: Artigo a respeito do controle textbox-multline (formulário web) - HTML e CSS
-serie:       Controles Básicos (não input)
+capitulo:       controles-basicos-naoinput
 ordem:       3
 ---
 

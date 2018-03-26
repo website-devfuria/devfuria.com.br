@@ -2,6 +2,8 @@
 title:       A7 Insecure Cryptographic Storage
 description: Artigo sobre a vulnerabilidade Armazenamento Criptográfico Inseguro, sétimo item da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
+capitulo:    seginfo-topten2010
+ordem:       7
 ---
 
 Quando dados sensíveis não são cifrados. Quando a criptografia é usada de forma incorreta, seja pela má configuração ou

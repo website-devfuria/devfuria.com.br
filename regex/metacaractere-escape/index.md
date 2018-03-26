@@ -1,8 +1,8 @@
 ---
 title:       "Metacaractere escape \\"
 description: 
-serie:        Metacaracteres
-ordem:        11
+capitulo:    er-metacaracteres
+ordem:       11
 ---
 
 O metacaractere escape \ permite o uso do valor literal determinado símbolo que coincide com um metacaratere existente.
@@ -11,7 +11,6 @@ Em outras palavras, imagine que você precise casar o termo "meio*maluco", você
 termo.
 
 A expressão `meio\*maluco` casa com o termo exato `meio\*maluco`.
-
 
 Podemos escapar os metacaracteres para que seu valor literal passe a valer.
 

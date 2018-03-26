@@ -1,6 +1,8 @@
 ---
 title:       HTML & CSS - Listas 
 description: Aprenda comom criar e estilizar listas em HTML e CSS
+capitulo:    html-css-elementos
+orem:        3
 ---
 
 As listas ajudam a organizar o conteúdo, mas fazem muito mais do que isso. 

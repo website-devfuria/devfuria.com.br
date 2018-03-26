@@ -1,6 +1,8 @@
 ---
 title:       Introdução ao HTML 
 description: 
+capitulo:    html-css-intro
+orem:        1
 ---
 
 Tim Berners-Lee, a culpa é toda dele. No começo dos anos 90, o dito cujo, inventou o HTML (HyperText Markup Language) 
@@ -64,13 +66,13 @@ A barra para direita indica qual é a tag de fechamento, exemplo: `<p>aqui é um
 Quem define a especificação do HTML e CSS?
 ---
 
-O [W3C](http://www.w3.org/ "link-externo") é um consórcio que regulamenta as especificações tanto do __HTML__ como do __CSS__,
+O [W3C](http://www.w3.org/) é um consórcio que regulamenta as especificações tanto do __HTML__ como do __CSS__,
 é a __fonte oficial__ do HTML e CSS.
 
 É possível encontrar as traduções das especificações para a língua portuguesa: 
 
-- [Recomendações do W3C XHTML 1 - Tradução do Majour](http://www.maujor.com/w3c/xhtml10_2ed.html "link-externo")
-- [Recomendações do W3C CSS nível 1 - Tradução do Majour](http://www.maujor.com/tutorialcss1/css1tut.shtml "link-externo")
+- [Recomendações do W3C XHTML 1 - Tradução do Majour](http://www.maujor.com/w3c/xhtml10_2ed.html)
+- [Recomendações do W3C CSS nível 1 - Tradução do Majour](http://www.maujor.com/tutorialcss1/css1tut.shtml)
 
 Dois pequenos alertas:
 
@@ -88,8 +90,8 @@ Sim, são coisas distintas umas das outras, mas em sua essência não passam de 
 Por simplificação, utilizaremos o termo HTML de forma gernérica e quando for necessário ser mais específico utilizaremos
 o termo correto.
 
-O [HTML5](/html-css/html5/) é a versão mais atual do HTML. O grupo [WHATWG](http://www.whatwg.org/ "link-externo") não 
-teve a mesma pasciência que o pesoal da [W3C](http://www.w3.org/ "link-externo") e saiu na frente com as especificações.
+O [HTML5](/html-css/html5/) é a versão mais atual do HTML. O grupo [WHATWG](http://www.whatwg.org/) não 
+teve a mesma pasciência que o pesoal da [W3C](http://www.w3.org/) e saiu na frente com as especificações.
 A nova versão excluíu alguns elementos já defazados, inseriu alguns outros mais "semânticos" e trouxe novidades como 
 videos, armazenamento local, canvas(uma prancheta para você desenhar via código), geo-location, web off-line, campos 
 com autofoco, placeholders e muito mais. Se você é novato em HTML talvez não tenha entendido nada do que listamos sobre

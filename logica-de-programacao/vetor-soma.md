@@ -1,11 +1,11 @@
 ---
 title:       Algoritmo para somar vetor
 description: Exercício de lógica de programação onde criaremos uma função para somar um vetor.
-serie:       Lógica Nível 4 vetores
+capitulo:    logica-nivel-4-vetores
 ordem:       2
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -231,4 +231,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

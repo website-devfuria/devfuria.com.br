@@ -1,11 +1,11 @@
 ---
 title:       Triângulo
 description: Exercício de lógica de programação (com testes unitários e OOP) para descobrir se os lados informados formam ou não um triângulo.
-serie:       Lógica Nível 5
+capitulo:    logica-nivel-5
 ordem:       6
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -210,4 +210,4 @@ function Triangulo(a, b, c) {
 };
 ```
 
-{% include /alertas/logica-feedback.html %}
+

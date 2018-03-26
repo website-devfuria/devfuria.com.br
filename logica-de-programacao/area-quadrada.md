@@ -1,11 +1,11 @@
 ---
 title:       Área quadrada
 description: Sabendo que a área quadrada é dada pela multiplicação dos lados, escreva um algoritmo que mostre a área quadrada de um espaço qualquer
-serie:       Lógica Nível 0
+capitulo:    logica-nivel-0
 ordem:       2
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -19,7 +19,7 @@ Exemplo:
 * 3 . 9 = 27
 
 
-{% include /alertas/logica-linguagens.html %}
+
 
 
 
@@ -169,4 +169,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

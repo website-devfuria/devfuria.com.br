@@ -1,7 +1,7 @@
 ---
 title:       Introdução ao algoritmo de ordenação Insertion Sort
 description:
-serie:       Lógica Nível 7
+capitulo:    logica-nivel-7
 ordem:       3
 ---
 
@@ -142,5 +142,5 @@ trocas em cada iteração.
 Na 4 iteração, por exemplo, não houve troca alguma.
 
 Para baixar os exemplos utilize este 
-[repositório](https://github.com/devfuria/c-exemplos/blob/master/ordenacao/insertion-sort.c "link-externo").
+[repositório](https://github.com/devfuria/c-exemplos/blob/master/ordenacao/insertion-sort.c).
 

@@ -12,7 +12,7 @@ Com o x-debug, o resultado de `var_dump($array)` virá bem formatado, e será f�
 Obviamente que `var_dump($array)` é só um exemplo simples, você também poderá olhar "dentro" de objetos. Sem contar que,
 quando o script PHP lançar uma erro o x-debug exibirá o __traceback__ completo.
 
-O site Oficial é [xdebug.org](http://xdebug.org/index.php "link-externo").
+O site Oficial é [xdebug.org](http://xdebug.org/index.php).
 
 
 
@@ -35,7 +35,7 @@ de seu PHP.
 
 Copie todo o conteúdo desta página, acione __CTRL + A__ e depois copie.
 
-Vá até a página do [x-debug](http://xdebug.org/wizard.php "link-externo") e cole a informação dentro daquela caixa de texto.
+Vá até a página do [x-debug](http://xdebug.org/wizard.php) e cole a informação dentro daquela caixa de texto.
 
 Clique no botão __"Analyse my phpinfo() output"__ e bingo! A página seguinte será o passo a passo para instalação
 do x-debug (personalizado para sua máquina). Inclusive com o link para o download da versão correta do x-debug.

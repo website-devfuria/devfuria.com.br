@@ -1,11 +1,11 @@
 ---
 title:       O dobro de um número qualquer (OOP)
 description: Exercício de lógica de programação resolvido onde o objetivo é calcular o dobro de um número qualquer.
-serie:       Lógica Nível 5
+capitulo:    logica-nivel-5
 ordem:       1
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -214,4 +214,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

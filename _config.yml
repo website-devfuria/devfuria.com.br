@@ -1,158 +1,46 @@
-title: Desenvolvimento web
-url:   http://www.devfuria.com.br
-
-#
-# Configurações
-#
-enable_disqus:    false
-enable_analytics: false
-
-# Antes era com kramdown
-# markdown:    kramdown
-markdown:    redcarpet
-redcarpet:
-    extensions: [with_toc_data]
-highlighter: pygments
+enable_disqus:    true
+enable_analytics: true
+highlighter: rouge
 permalink:   pretty
 
-#
-# para excluir um post do sitmap insira (no post) `sitemap: false`
-#
-plugins_dir:
-  - jekyll-sitemap
+exclude:
+  - node_modules/
+  - nbproject/
+
+# for sitemap
+_url: http://www.devfuria.com.br
+
+# email
+email: "sitedevfuria@gmail.com"
 
 exclude:
-    - theme
     - readme.md
     - composer.*
     - .gitignore
     - tests
     - nbproject
-    # - c
+    # - backbone
+    - c
+    - cursos
     - git
+    - html-canvas
     - html-css
     - javascript
     - linux
     - logica-de-programacao
     - misc
+    - node.js
+    - php
     - python
     - regex
     - seguranca-da-informacao
     - sql
     - tdd
-
-
-#
-# A categoria deve possuir 'label' e 'url' para formarmos o menu
-#
+    
 defaults:
   -
     scope:
       path: ""
     values:
-      layout: "default"
-  -
-    scope:
-      path: "c"
-    values:
-      category:
-        label: "Linguagem C"
-        url:   "/c"
-  -
-    scope:
-      path: "git"
-    values:
-      category:
-        label: "Git"
-        url:   "/git"
-  -
-    scope:
-      path: "html-css"
-    values:
-      category:
-        label: "HTML & CSS"
-        url:   "/html-css"
-  -
-    scope:
-      path: "javascript"
-    values:
-      category:
-        label: "JavaScript"
-        url:   "/javascript"
-  -
-    scope:
-      path: "javascript/node.js"
-    values:
-      category:
-        label: "Node.js"
-        url:   "/javascript/node.js"
-  -
-    scope:
-      path: "javascript/backbone"
-    values:
-      category:
-        label: "Framework Backbone (Javascript)"
-        url:   "/javascript/backbone"
-  -
-    scope:
-      path: "javascript/canvas"
-    values:
-      category:
-        label: "Canvas"
-        url:   "/javascript/canvas"
-  -
-    scope:
-      path: "linux"
-    values:
-      category:
-        label: "Linux"
-        url:   "/linux"
-  -
-    scope:
-      path: "logica-de-programacao"
-    values:
-      category:
-        label: "Lógica de programação"
-        url:   "/logica-de-programacao"
-  -
-    scope:
-      path: "misc"
-    values:
-      category:
-        label: "Miscellaneous"
-        url:   "/misc"
-  -
-    scope:
-      path: "python"
-    values:
-      category:
-        label: "Python"
-        url:   "/python"
-  -
-    scope:
-      path: "regex"
-    values:
-      category:
-        label: "Expressões Regulares"
-        url:   "/regex"
-  -
-    scope:
-      path: "seguranca-da-informacao"
-    values:
-      category:
-        label: "Segurança da Informação"
-        url:   "/seguranca-da-informacao"
-  -
-    scope:
-      path: "sql"
-    values:
-      category:
-        label: "SQL - Structured Query Language"
-        url:   "/sql"
-  -
-    scope:
-      path: "tdd"
-    values:
-      category:
-        label: "TDD (Test Driven Development)"
-        url:   "/tdd"
+      layout: "artigo"
+

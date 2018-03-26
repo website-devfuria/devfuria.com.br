@@ -1,0 +1,55 @@
+{% comment %}
+
+Eu monto todas as variáveis aqui memsmo!
+
+{% endcomment %} 
+
+{% if page.capitulo %}
+
+    {% include get-capitulo.html page_serie=page.capitulo %}
+
+    {% for artigo in capitulo  %}
+        {% assign index_next = forloop.index0 | plus: 1 %}
+        {% assign index_prev = forloop.index0 | minus: 1 %}
+
+        {% if artigo.url == page.url %}
+            {% assign artigo_next = capitulo[index_next] %}
+            {% assign artigo_prev = capitulo[index_prev] %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="jumbotron" style="padding-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="pagination">Navegue nesta série!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Anterior
+                        <a class="btn btn-default btn-lg btn-block pagination" href="{{ artigo_prev.url }}">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            {{ artigo_prev.title }}
+                        </a>
+                    </p>
+                </div>
+
+                {% if artigo_next.title %}
+                    <div class="col-md-6">
+                        <p class="text-right">
+                            Próximo
+                            <a class="btn btn-primary btn-lg btn-block pagination" href="{{ artigo_next.url }}">
+                                {{ artigo_next.title }}
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            </a>
+                        </p>
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+{% endif %}

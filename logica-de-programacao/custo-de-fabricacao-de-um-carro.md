@@ -1,11 +1,11 @@
 ---
 title:       Custo de fabricação de um carro
 description: Exercício de lógica de programação resolvido para descobrir o custo final de um carro.
-serie:       Lógica Nível 1
+capitulo:    logica-nivel-1
 ordem:       2
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -23,7 +23,7 @@ Considerando os valores abaixo, faça um programa para calcular o custo de fabri
     Percentual dos Impostos  = 45%
 
 
-{% include /alertas/logica-linguagens.html %}
+
 
 
 Linguagem C
@@ -178,4 +178,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

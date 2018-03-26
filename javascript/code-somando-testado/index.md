@@ -1,6 +1,8 @@
 ---
 title:       Code - Somando (testado)
 description: Este artigo é um exemplo básico de como escrever testes de unidade em JavaScript utilizando o framework QUnit
+capitulo:    "js-artigos"
+ordem:       3
 ---
 
 Talvez esse seja o seu primeiro contato com o universo de "testes". Eu estou utilizando o código 

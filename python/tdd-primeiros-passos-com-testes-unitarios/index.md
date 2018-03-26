@@ -2,6 +2,8 @@
 title:       Primeiros passos com testes unitários em Python
 description: Se você precisa escrever teste de unidades em Python e não sabe por onde começar, este artigo é para você!
 ogimage:     img.png
+capitulo:    python-artigos
+ordem:       6
 ---
 
 Em Python, quando queremos escrever testes unitários podemos lançar mãos desde um simples `assert`, passando por funções

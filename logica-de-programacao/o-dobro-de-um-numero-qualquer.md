@@ -1,11 +1,11 @@
 ---
 title:       O dobro de um número qualquer
 description: Exercício de lógica de programação para calcular o dobro de um número qualquer.
-serie:       Lógica Nível 0
+capitulo:    logica-nivel-0
 ordem:       1
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 
 ### Exercício de lógica de programação
@@ -19,7 +19,7 @@ Este é o segundo exercício da série, nele já vamos utilizar as funções, po
 sem ter ao menos uma função. Mesmo porque o teste visa sempre testar uma unidade, essa unidade deve ser (pelo menos)
 uma função.
 
-{% include /alertas/logica-linguagens.html %}
+
 
 
 Linguagem C
@@ -218,4 +218,3 @@ try {
 
 ```
 
-{% include /alertas/logica-feedback.html %}

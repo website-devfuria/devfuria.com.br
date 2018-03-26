@@ -1,8 +1,8 @@
 ---
 title:       "Metacaractere asterisco *"
 description: 
-serie:        Metacaracteres
-ordem:        5
+capitulo:    er-metacaracteres
+ordem:       5
 ---
 
 O asterisco repete em qualquer quantidade

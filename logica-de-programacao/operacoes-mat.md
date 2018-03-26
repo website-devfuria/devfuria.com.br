@@ -1,11 +1,11 @@
 ---
 title:       Funções para as 4  operações artiméticas
 description: Escreva uma função para cada uma das quatro operações matemáticas simples.
-serie:       Lógica Nível 1
+capitulo:    logica-nivel-1
 ordem:       0
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -260,4 +260,3 @@ try {
 
 ```
 
-{% include /alertas/logica-feedback.html %}

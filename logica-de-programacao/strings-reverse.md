@@ -1,11 +1,11 @@
 ---
 title:       Inverter string
 description: Exercício de lógica de programação para inverter uma string.
-serie:       Lógica Nível 4 strings
+capitulo:    logica-nivel-4-strings
 ordem:       5
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -188,9 +188,8 @@ var reverseString = function(text) {
 }
 ```
 
-[Fonte das soluções em JavaScript](http://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/ "link-externo")
+[Fonte das soluções em JavaScript](http://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/)
 
 
 
 
-{% include /alertas/logica-feedback.html %}

@@ -1,7 +1,7 @@
 ---
 title:       Compartilhando pastas no Virtual Box
 description: Aprenda como compartilhar pastas no Virtual Box
-serie:       VirtualBox
+capitulo:    linux-virtualbox
 ordem:       3
 ---
 
@@ -26,13 +26,13 @@ na net para facilitar meu trabalho.
 
 Com a __máquina virtual__ aberta, clique no menu __Devices__, __Shared Folders__.
 
-![Figura1](virtualbox-shared-folders-01.png "a")
+![Figura1](virtualbox-shared-folders-01.png "[imagem virutal box 1]")
 
 A seguinte tela se abrirá.
 
 Agora clique no ícone __+__ (pastinha azul à direita).
 
-![Figur2](virtualbox-shared-folders-02.jpg "b")
+![Figur2](virtualbox-shared-folders-02.jpg "[imagem virutal box 2]")
 
 A opção __Folder Path__ será a pasta na sua máquina principal (host) que você deseja enxergar dentro da vm (máquina virtual).
 
@@ -40,11 +40,11 @@ A opção __Folder name__ é uma "labe". Dê o nome que quiser. Utilizaremos ele
 
 Deixe habilitado as checkboxes __Auto-mount__ e __Make permanent__.
 
-![Figura3](virtualbox-shared-folders-03.jpg "c")
+![Figura3](virtualbox-shared-folders-03.jpg "[imagem virutal box 3]")
 
 Clique no botão __OK__, sua tela se parecerá com a figura abaixo.
 
-![Figura4](virtualbox-shared-folders-04.png "d")
+![Figura4](virtualbox-shared-folders-04.png "[imagem virutal box 4]")
 
 Dê mais um __Ok__ para fechar essa tela.
 

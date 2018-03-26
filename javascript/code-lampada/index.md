@@ -1,6 +1,8 @@
 ---
 title:       Code - A lâmpada
 description: Código em JavaScript que acende e apaga uma lâmpada 
+capitulo:    "js-artigos"
+ordem:       5
 ---
 
 Nesta matéria utilizarei o código que faz a uma lâmpada acender e apagar.

@@ -1,6 +1,8 @@
 ---
 title:       Após instalar o CentOS
 description: O que instalar depois de instalar o CentOS
+capitulo:    linux-artigos
+ordem:
 ---
 
 
@@ -35,5 +37,5 @@ Seguir o guia...
 
 Veja também
 
-- [vivaolinux.com.br/artigo/CentOS-Pos-instalacao-basica](http://www.vivaolinux.com.br/artigo/CentOS-Pos-instalacao-basica "link-externo")
-- [hardware.com.br/tutoriais/centos/pagina3.html](http://www.hardware.com.br/tutoriais/centos/pagina3.html "link-externo")
+- [vivaolinux.com.br/artigo/CentOS-Pos-instalacao-basica](http://www.vivaolinux.com.br/artigo/CentOS-Pos-instalacao-basica)
+- [hardware.com.br/tutoriais/centos/pagina3.html](http://www.hardware.com.br/tutoriais/centos/pagina3.html)

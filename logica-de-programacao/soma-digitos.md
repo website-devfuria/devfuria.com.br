@@ -1,11 +1,11 @@
 ---
 title:       Somar dígitos
 description: Exercício de lógica de programação para somar os dígitos de um número inteiro.
-serie:       Lógica Nível 3
+capitulo:    logica-nivel-3
 ordem:       2
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -285,4 +285,3 @@ try {
 
 
 
-{% include /alertas/logica-feedback.html %}

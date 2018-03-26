@@ -7,7 +7,7 @@ description: Descubra como instalar o pip  o gerenciador de pacotes do Python no
 
 __pip__ é um sistema de gerenciamento de pacotes usado para instalar e gerenciar pacotes de software escritos na
 linguagem de programação [Python](/python/).
-( [wikipedia](http://pt.wikipedia.org/wiki/Pip_%28Python%29 "link-externo") ).
+( [wikipedia](http://pt.wikipedia.org/wiki/Pip_%28Python%29) ).
 
 
 ### Instalando via apt-get
@@ -23,7 +23,7 @@ linguagem de programação [Python](/python/).
     pip --version
 
 
-Uma forma alternativa de instalação indicada para quem usa o [Python 3](/linux/cookbook/python) é a seguinte:
+Uma forma alternativa de instalação indicada para quem usa o [Python 3](/linux/instalando-python) é a seguinte:
 
     cd /opt
     wget https://bootstrap.pypa.io/get-pip.py
@@ -34,7 +34,7 @@ Se você seguiu a forma alternativa, executar `pip --version` talvez retorne
     bash: pip: command not found
 
 Muito provavelmente, a instalação criou o atalho `pip3` ou `pip3.2` ou ainda `pip3.4`, o nome do link (atalho) vai 
-depender da versão do [Python](/linux/cookbook/python) instalado (`python --version`).
+depender da versão do [Python](/linux/instalando-python) instalado (`python --version`).
 
 
 
@@ -76,7 +76,7 @@ O fragmento `> fop.txt` faz com que o resultado do comando `freeze` ,seja enviad
 
 ### Fontes:
 
-- [Site oficial: https://pip.pypa.io/en/latest/](https://pip.pypa.io/en/latest/ "link-externo")
+- [Site oficial: https://pip.pypa.io/en/latest/](https://pip.pypa.io/en/latest/)
 
 
 Leia também

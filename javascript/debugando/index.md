@@ -1,6 +1,8 @@
 ---
-title:       Debugando (depurando) JS
+title:       Debugando (depurando) scripts em JavaScript
 description: Primeiros passos na arte de debugar JavaScript através do FIREBUG,  debugar é um esforço para encontrar determinado ponto defeituoso  no código para que seja corrigido.
+capitulo:    "js-artigos"
+ordem:       1
 ---
 
 O que é debugar ?

@@ -2,6 +2,8 @@
 title:       A10 Unvalidated Redirects and Forwards
 description: Artigo sobre a vulnerabilidade Redirecionamento e Encaminhamentos Inválidos, décimo e último item da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
+capitulo:    seginfo-topten2010
+ordem:       10
 ---
 
 Quando um atacante, por meio de engenharia social, ilude a vítima conseguindo que esta acesse uma URL que redireciona,

@@ -2,6 +2,8 @@
 title:       A6 Security Misconfiguration
 description: Artigo sobre a vulnerabilidade Configuração Incorreta de Segurança, sexto item da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
+capitulo:    seginfo-topten2010
+ordem:       6
 ---
 
 Configurações incorretas de segurança podem ocorrer na aplicação web, no servidor web, no módulo do PHP, no framework, 
@@ -20,8 +22,8 @@ o sistema, a tabela abaixo sintetiza a classificação do risco.
 Exemplo de aplicação vulnerável
 ---
 
-Suponha que a aplicação utilize framework's como [CideIgniter](http://www.codeigniter.com/ "link-externo") ou
-[Cake](http://cakephp.org/ "link-externo"), por exemplo. Vulnerabilidades XSS são encontradas e uma atualização é 
+Suponha que a aplicação utilize framework's como [CideIgniter](http://www.codeigniter.com/) ou
+[Cake](http://cakephp.org/), por exemplo. Vulnerabilidades XSS são encontradas e uma atualização é 
 lançada para corrigir o problema. Até que o framework não seja atualizado, atacantes poderão explorar as
 vulnerabilidades da aplicação.
 

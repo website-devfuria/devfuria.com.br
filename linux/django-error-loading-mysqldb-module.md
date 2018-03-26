@@ -1,6 +1,8 @@
 ---
 title:       "Django, resolvendo o erro 'Error loading MySQLdb module: No module named MySQLdb'"
 description: "Aprenda a resolve o erro 'Error loading MySQLdb module' no Django"
+capitulo:    linux-artigos
+ordem: 
 ---
 
 Este artigo demonstra como resolver o erro `Error loading MySQLdb module: No module named MySQLdb`. Importante destacar
@@ -21,7 +23,7 @@ A mensagem de erro que eu recebo é:
 Reproduzindo o erro
 ---
 
-Primeiro, instale o [pip](/linux/cookbook/pip/).
+Primeiro, instale o [pip](/linux/instalando-pip/).
 
     apt-get install python3-pip
 
@@ -245,5 +247,5 @@ Corri para tentar o `python3 manage.py runserver` mas agora o erro é outro:
 Agradecimentos
 ---
 
-Agradeço a pessoal do grupo [Google - Django Brasil](https://groups.google.com/forum/#!msg/django-brasil/Z8GqDpOVWh4/nuTV-p6Wo3IJ "link-externo") pela ajuda, leia o tópico.
+Agradeço a pessoal do grupo [Google - Django Brasil](https://groups.google.com/forum/#!msg/django-brasil/Z8GqDpOVWh4/nuTV-p6Wo3IJ) pela ajuda, leia o tópico.
 

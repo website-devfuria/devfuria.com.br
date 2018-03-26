@@ -26,5 +26,5 @@ Agora instale o soft
 
 ### Fonte:
 
-- [http://code.google.com/p/winff/wiki/FedoraInstallation](http://code.google.com/p/winff/wiki/FedoraInstallation "link-externo")
-- [http://www.hardware.com.br/artigos/winff/](http://www.hardware.com.br/artigos/winff/ "link-externo")
+- [http://code.google.com/p/winff/wiki/FedoraInstallation](http://code.google.com/p/winff/wiki/FedoraInstallation)
+- [http://www.hardware.com.br/artigos/winff/](http://www.hardware.com.br/artigos/winff/)

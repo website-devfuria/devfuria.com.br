@@ -1,7 +1,7 @@
 ---
 title:       Eu crudo, você cruda, eles crudam
 description: "Entendendo o que é CRUD, CRUD não é para comer! Trata-se das 4 operações básicas de SQL: create (insert), read (select), update, delete."
-serie:       Introdução ao MySQL
+capitulo:    sql-intro
 ordem:       10
 ---
 
@@ -31,7 +31,7 @@ quiser acompanhar os exercícios
 
 Para saber se você já possui a tabela, utilize o comando `SHOW TABLES`;
 
-Este [Gist](https://gist.github.com/flaviomicheletti/8359890 "link-externo") poderá te ajudar caso você queira criar 
+Este [Gist](https://gist.github.com/flaviomicheletti/8359890) poderá te ajudar caso você queira criar 
 rapidamente a tabela
 
 Então vamos a primeira letra do CRUD, a letra "c" de "create" ou melhor, "insert":

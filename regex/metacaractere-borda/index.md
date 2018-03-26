@@ -1,8 +1,8 @@
 ---
 title:       "Metacaractere borda \\b"
 description: 
-serie:        Metacaracteres
-ordem:        10
+capitulo:    er-metacaracteres
+ordem:       10
 ---
 
 O metacaractere borda marca a borda de um "trecho" (letras, números e sublinhado).

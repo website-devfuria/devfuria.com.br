@@ -14,9 +14,9 @@ nós veremos como:
 
 Antes de tudo, é preciso saber que Git não é GitHub.
 
-[Git]( "link-externo") é um sistema distribuído de controle de versão de código.
+[Git]() é um sistema distribuído de controle de versão de código.
 
-[GitHub]( "link-externo") é o local onde você hospeda o seu Git na web.
+[GitHub]() é o local onde você hospeda o seu Git na web.
 
 ![Git e GitHub são coisas distintas](git-e-github.png "Git e GitHub são coisas distintas")
 
@@ -149,7 +149,7 @@ com a figura abaixo.
 
 ![Imagem ilustrando um repositório no GitHub](repo.png "Imagem ilustrando um repositório no GitHub")
 
-Este [repositório](https://github.com/devfuria/foo "link-externo") existe de verdade!
+Este [repositório](https://github.com/devfuria/foo) existe de verdade!
 
 Eu criei ele para você poder treinar, bagunçar, testar, brincar, fazer o que você quiser com ele,
 sem a preocupação de acertar.

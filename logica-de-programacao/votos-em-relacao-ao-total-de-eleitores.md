@@ -1,11 +1,11 @@
 ---
 title:       Votos em relação ao total de eleitores
 description: Exercício de lógica de programação onde calculamos o percentual de votos em relação ao total de eleitores.
-serie:       Lógica Nível 5
+capitulo:    logica-nivel-5
 ordem:       6
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -28,7 +28,7 @@ pelo total de eleitores, etc...
 
 Utilize programação orientada a objetos.
 
-{% include /alertas/logica-linguagens.html %}
+
 
 
 Linguagem C
@@ -342,4 +342,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

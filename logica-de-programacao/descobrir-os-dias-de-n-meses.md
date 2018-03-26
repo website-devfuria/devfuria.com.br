@@ -1,18 +1,18 @@
 ---
 title:       Descobrir os dias de 'n' meses
 description: Considerando que todos os meses tenham 30 dias, calcular o total de dias de n meses
-serie:       Lógica Nível 0
+capitulo:    logica-nivel-0
 ordem:       5
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
 
 Considerando que todos os meses tenham 30 dias, calcular o total de dias de n meses.
 
-{% include /alertas/logica-linguagens.html %}
+
 
 Linguagem C
 ---
@@ -158,4 +158,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

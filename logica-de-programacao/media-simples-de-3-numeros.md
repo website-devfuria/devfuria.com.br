@@ -1,11 +1,10 @@
 ---
 title:       Média simples de 3 números
 description: Faça um programa que calcule a média simples (aritmética) de 3 valores quaisquer.
-serie:       Lógica Nível 0
+capitulo:    logica-nivel-0
 ordem:       4
 ---
 
-{% include /alertas/logica-apresentacao.html %}
 
 Exercício de lógica de programação
 ---
@@ -14,7 +13,7 @@ Faça um programa que calcule a média simples (aritmética) de 3 valores quaisq
 
 Utilize as variáveis `valor1`, `valor2` e `valor3`.
 
-{% include /alertas/logica-linguagens.html %}
+
 
 Linguagem C
 ---
@@ -142,4 +141,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

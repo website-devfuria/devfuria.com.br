@@ -1,4 +1,5 @@
 ---
+layout:      index-solto
 title:       Uma breve noção sobre  o que é TDD
 description: Noção básica sobre o que é TDD, apenas o suficiente para um primeiro contato com TDD (test driven development).
 ---
@@ -74,9 +75,6 @@ Esse será nosso __framework de testes__ imaginário.
 
 
 ### Praticando.
-
-
-
 
 Começe pelo teste. 
 

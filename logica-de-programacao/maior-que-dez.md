@@ -1,11 +1,11 @@
 ---
 title:       Maior que 10
 description: Exercício de lógica de programação para descobrir se valor é maior ou menor que 10.
-serie:       Lógica Nível 2
+capitulo:    logica-nivel-2
 ordem:       4
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -196,4 +196,3 @@ try {
 
 ```
 
-{% include /alertas/logica-feedback.html %}

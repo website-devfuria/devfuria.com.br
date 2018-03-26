@@ -1,4 +1,5 @@
 ---
+layout:      index-solto
 title:       CSS - margin
 description: 
 ---
@@ -7,7 +8,7 @@ A propriedade CSS __marigin__ define a margem do elemento.
 
 ![CSS marigin](margin-css.gif "CSS marigin" )
 
-[Fonte da imagem](http://www.ironpaper.com/current/2009/09/css-margin-web-design-help/#.VYhtU6PSOis "link-externo")
+[Fonte da imagem](http://www.ironpaper.com/current/2009/09/css-margin-web-design-help/#.VYhtU6PSOis)
 
 Exemplos...
 
@@ -26,7 +27,7 @@ A imagem abaixo explica melhor.
 
 ![exemplos da propriedade CSS marigin](margin-css-shorthand.jpg "exemplos da propriedade CSS marigin")
 
-[Fonte da imagem](http://www.mindfreakerstuff.com/2012/12/css3-and-css2-shorthand-guide/ "link-externo")
+[Fonte da imagem](http://www.mindfreakerstuff.com/2012/12/css3-and-css2-shorthand-guide/)
 
 Se definirmos uma única unidade ela valerá para os quatro lados:
 

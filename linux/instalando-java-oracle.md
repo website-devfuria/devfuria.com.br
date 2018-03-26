@@ -7,7 +7,7 @@ Caso você precise executar o Java no navegador talvez o OpenJDK lhe deixe na m�
 instalar a versão do Java da Oracle.
 
 Se o seu objetivo era instalar a versão OpenJDK veja esta est a receita 
-[Instalando conjunto de utilitários JDK (Java Development Kit)](/linux/cookbook/java/)
+[Instalando conjunto de utilitários JDK (Java Development Kit)](/linux/instalando-java/)
 
 Para certificar-se de sua versão execute...
 

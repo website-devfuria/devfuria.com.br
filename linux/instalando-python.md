@@ -34,7 +34,7 @@ Instalando
 ---
 
 Procure no site oficial a versão deseja do Python, escolha aqui sua versão 
-[https://www.python.org/ftp/python/](https://www.python.org/ftp/python/ "link-externo")
+[https://www.python.org/ftp/python/](https://www.python.org/ftp/python/)
 
 Neste exemplo utilizarei a versão 3.4.2, __nos comandos abaixo troque [`3.4.2`] pela versão na qual você está instalando__.
 

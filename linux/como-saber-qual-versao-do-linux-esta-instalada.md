@@ -1,6 +1,8 @@
 ---
 title:       Como saber qual versão do Linux está instalada
 description: Comando que mostra qual é a versão do Linux
+capitulo:    linux-artigos
+ordem:
 ---
 
 Na maioria das distribuições Linux você poderá utilizar o comando abaixo:
@@ -37,5 +39,5 @@ E para 64 bits:
 
 ### Fonte
 
-- [http://www.fogonacaixadagua.com.br/2009/10/como-saber-qual-versao-do-red-hat-centos-esta-instalada/](http://www.fogonacaixadagua.com.br/2009/10/como-saber-qual-versao-do-red-hat-centos-esta-instalada/ "link-externo")
+- [http://www.fogonacaixadagua.com.br/2009/10/como-saber-qual-versao-do-red-hat-centos-esta-instalada/](http://www.fogonacaixadagua.com.br/2009/10/como-saber-qual-versao-do-red-hat-centos-esta-instalada/)
     

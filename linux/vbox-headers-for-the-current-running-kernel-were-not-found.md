@@ -1,7 +1,7 @@
 ---
 title:       Resolvendo o erro "headers for the current running kernel were not found"
 description: Resolvendo o erro fix error "headers for the current running kernel were not found"
-serie:       VirtualBox
+capitulo:    linux-virtualbox
 ordem:       5
 ---
 
