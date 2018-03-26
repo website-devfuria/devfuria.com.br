@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
@@ -137,16 +140,6 @@
         <script src="/assets/clean/js/custom.js"></script>
         <script src="/assets/clean/js/jquery.js"></script>
         <script src="/assets/clean/js/devfuria.js"></script>
-        {% if site.enable_analytics %}
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63607155-1"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'UA-63607155-1');
-            </script>
-        {% endif %}
+        {% include footer-analytics.html %}
     </body>
 </html> 

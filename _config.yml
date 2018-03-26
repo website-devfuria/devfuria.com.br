@@ -1,5 +1,5 @@
-enable_disqus:    true
-enable_analytics: true
+enable_disqus:    false
+enable_analytics: false
 highlighter: rouge
 permalink:   pretty
 
@@ -20,22 +20,22 @@ exclude:
     - tests
     - nbproject
     # - backbone
-    - c
-    - cursos
-    - git
-    - html-canvas
-    - html-css
-    - javascript
-    - linux
-    - logica-de-programacao
-    - misc
-    - node.js
-    - php
-    - python
-    - regex
-    - seguranca-da-informacao
-    - sql
-    - tdd
+    # - c
+    # - cursos
+    # - git
+    # - html-canvas
+    # - html-css
+    # - javascript
+    # - linux
+    # - logica-de-programacao
+    # - misc
+    # - node.js
+    # - php
+    # - python
+    # - regex
+    # - seguranca-da-informacao
+    # - sql
+    # - tdd
     
 defaults:
   -
