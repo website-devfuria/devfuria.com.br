@@ -1,6 +1,8 @@
 ---
 title:       Introdução ao CSS
 description: Artigo introdutório sobre CSS - Cascading Style Sheet
+capitulo:    html-css-intro
+orem:        4
 ---
 
 Para estilizar o HTML devemos utilizar a CSS.
@@ -15,7 +17,7 @@ nem para sair do lugar. Quero dizer que é preciso aprender CSS para poder desen
 Não precisa ser ninja em CSS, mas quanto mais conhecimento você acomular sobre CSS (e HTML também) melhor e mais produtivo
 será seu dia a dia como desenvolvedor.
 
-Para o leitor ter uma idéia do poder da CSS dê uma olha no trabalho da [www.csszengarden.com](http://www.csszengarden.com/ "link-externo")
+Para o leitor ter uma idéia do poder da CSS dê uma olha no trabalho da [www.csszengarden.com](http://www.csszengarden.com/)
 
 Nesta altura, a __separação das obrigações__ de cada tecnologia deve estar bem claro em sua mente:
 
@@ -62,7 +64,7 @@ O trabalho em CSS continua. Para a versão 3, a especificação CSS foi dividida
 passando pelo processo de padronização separadamente. A especificadamente CSS e os documentos de trabalho podem ser
 encontrados no endereço abaixo.
 
-[www.w3.org/Style/CSS/](http://www.w3.org/Style/CSS/ "link-externo")
+[www.w3.org/Style/CSS/](http://www.w3.org/Style/CSS/)
 
 
 

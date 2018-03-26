@@ -1,6 +1,8 @@
 ---
-title:       Operador Condicional if / else - JavaScript
+title:       Operador Condicional if-else em JavaScript
 description: 'As instruções condicionais alteram o fluxo de controle de seu programa, elas dizem se devem ir para a "direita" ou para a "esquerda"'
+capitulo:    "js-referencia"
+ordem:       2
 ---
 
 As instruções condicionais alteram o fluxo de controle de seu programa.

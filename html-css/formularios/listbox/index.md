@@ -1,7 +1,7 @@
 ---
 title:       Caixa de multipla seleção (List box)
 description: Artigo a respeito do controle list box (formulário web) - HTML e CSS
-serie:       Controles Básicos (não input)
+capitulo:       controles-basicos-naoinput
 ordem:       2
 ---
 

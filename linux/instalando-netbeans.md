@@ -4,7 +4,7 @@ description: Como instalar o Netbeans no Linux
 ---
 
 
-Baixe a última versão no site oficial [http://netbeans.org](http://netbeans.org "link-externo") e dê 
+Baixe a última versão no site oficial [http://netbeans.org](http://netbeans.org) e dê 
 [permissão de execução](/linux/como-dar-permissao-de-execucao)
 
 Execute o arquivo (como usuário normal: 
@@ -42,7 +42,7 @@ O problema é que a versão está defazada 6.5!!!
 
 - - -
 Fonte
-- [wiki.netbeans.org/Python](http://wiki.netbeans.org/Python "link-externo")
+- [wiki.netbeans.org/Python](http://wiki.netbeans.org/Python)
 
 
 

@@ -1,11 +1,10 @@
 ---
 title:       MDC máximo divisor comum
 description: Exercício de lógica de programação  para descobrir o MDC (máximo divisor comum).
-serie:       Lógica Nível 3
+capitulo:    logica-nivel-3
 ordem:       3
 ---
 
-{% include /alertas/logica-apresentacao.html %}
 
 Exercício de lógica de programação
 ---
@@ -14,7 +13,6 @@ Faça um programa para calcular o MDC (máximo divisor comum) entre dois número
 
 Aconselho a utilizar o __método de divisões sucessivas__, pois você verá que a forma como costumamos resolver problemas
 matemáticos na mão nem sempre é o melhor caminho quando estamos codificando.
-
 
 
 
@@ -206,4 +204,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

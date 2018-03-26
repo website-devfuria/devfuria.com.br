@@ -1,6 +1,8 @@
 ---
 title:       Introdução aos formulários web
 description: Este artigo é uma rápida introdução aos fomulários web, nele veremos como os formulários web funcionam e também um pequeno exemplo de estilização (CSS)
+capitulo:    controles-basicos-input
+ordem:       0
 ---
 
 Este artigo é uma rápida introdução aos fomulários web, nele veremos como os formulários web funcionam e também um 
@@ -81,7 +83,7 @@ CSS vamos nos deter apenas em seu layout e estrutura.
 - - -
 Fonte:
 
-- [My first HTML form (MDN) - Exemplo básico de formulário web](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form "link-externo")
+- [My first HTML form (MDN) - Exemplo básico de formulário web](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form)
 
 
 

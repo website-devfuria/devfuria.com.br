@@ -1,9 +1,11 @@
 ---
 title:       Criando um HTML de primeira qualidade
 description: Aprenda a desenvolver um HTML de primeria qualidade com este exemplo da csszengarden.com
+capitulo:    html-css-intro
+orem:        3
 ---
 
-O site [www.csszengarden.com](http://www.csszengarden.com/ "link-externo") é notório por seus esforços em promover e
+O site [www.csszengarden.com](http://www.csszengarden.com/) é notório por seus esforços em promover e
 divulgar o poder do CSS unido a um bom HTML. Ele traz uma proposta interessante: criaram um HTML básico, porém bem formado,
 válido e desafiaram designers solicitando que o estilizassem sem "tocar" no HTML. Em outras palavras, o designer poderá
 utilizar o tema/estilo que quiser, mas não poderá jamais alterar o HTML e sua estrutura.
@@ -148,7 +150,7 @@ E aí, terminou? Então pode ver a solução
 
 ## Solução
 
-Veja o arquivo orginal no [GitHub](https://github.com/flaviomicheletti/html-css-exemplos/tree/master/zengarden-sample "link-externo").
+Veja o arquivo orginal no [GitHub](https://github.com/flaviomicheletti/html-css-exemplos/tree/master/zengarden-sample).
 
 ```html
 <h1>css Zen Garden</h1>

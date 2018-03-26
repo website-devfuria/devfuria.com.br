@@ -1,4 +1,5 @@
 ---
+layout:      artigo-solto
 title:       Gulp
 description: Rápida introdução a ferramenta de automação de tarefas Gulp (Node.js)
 ---

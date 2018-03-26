@@ -1,11 +1,11 @@
 ---
 title:       Reajustando o salário
 description: Exercício de lógica de programação para calcular o reajuste do salário
-serie:       Lógica Nível 1
+capitulo:    logica-nivel-1
 ordem:       4
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -16,7 +16,7 @@ Faça um algoritmo que calcule o reajuste de um salário, utilize os seguintes d
     reajuste = 15%,
 
 
-{% include /alertas/logica-linguagens.html %}
+
 
 
 Linguagem C
@@ -160,4 +160,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

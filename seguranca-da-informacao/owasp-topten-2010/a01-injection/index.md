@@ -2,6 +2,8 @@
 title:       A1 SQL Injection
 description: Artigo sobre a vulnerabilidade Injeção de SQL, primeiro da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
+capitulo:    seginfo-topten2010
+ordem:       1
 ---
 
 A Injeção caracteriza-se quando o atacante, incluindo utilizadores internos e administradores, podem enviar dados não 

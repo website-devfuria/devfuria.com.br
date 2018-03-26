@@ -1,11 +1,11 @@
 ---
 title:       Contar vogais
 description: Exercício de lógica de programação para contar a quantidade de vogais de uma string.
-serie:       Lógica Nível 4 strings
+capitulo:    logica-nivel-4-strings
 ordem:       2
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -90,7 +90,7 @@ int main() {
 ```
 
 - - -
-Fonte: [http://www.ime.usp.br/~pf/algoritmos/aulas/string.html](http://www.ime.usp.br/~pf/algoritmos/aulas/string.html "link-externo")
+Fonte: [http://www.ime.usp.br/~pf/algoritmos/aulas/string.html](http://www.ime.usp.br/~pf/algoritmos/aulas/string.html)
 
 
 
@@ -232,4 +232,3 @@ try {
 
 ```
 
-{% include /alertas/logica-feedback.html %}

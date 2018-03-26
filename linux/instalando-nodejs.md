@@ -11,7 +11,7 @@ Esta primeira é a mais interessante.
 Instalando o node.js através do nvm
 ---
 
-O [nvm](https://github.com/creationix/nvm "link-externo") é a sigla de "Node Version Manager", trata-se de um gerenciador
+O [nvm](https://github.com/creationix/nvm) é a sigla de "Node Version Manager", trata-se de um gerenciador
 de versão do __nodejs__.
 
 __Nota__: execute tudo como usuário normal (não como __root__).
@@ -31,7 +31,7 @@ E agora o __nodejs__:
 
 - - -
 Fonte
-- [Bevry's Learning Centre - Install Node.js](http://learn.bevry.me/node/install#via-node-version-manager-https-github-com-creationix-nvm- "linl-externo")
+- [Bevry's Learning Centre - Install Node.js](http://learn.bevry.me/node/install#via-node-version-manager-https-github-com-creationix-nvm)
 
 
 A seguir, as demais receitas....
@@ -46,7 +46,7 @@ Atualize o sistema e instale as dependências via __apt-get__:
     apt-get update && apt-get install git-core curl build-essential openssl libssl-dev
 
 
-Vamos baixar os fontes diretamente do [git-hub](https://github.com/joyent/node "link-externo"):
+Vamos baixar os fontes diretamente do [git-hub](https://github.com/joyent/node):
 
     git clone https://github.com/nodejs/node.git
 
@@ -98,7 +98,7 @@ Para testar execute:
 
 - - -
 Fonte
-- [http://nodebr.com/instalando-node-js-atraves-do-gerenciador-de-pacotes/](http://nodebr.com/instalando-node-js-atraves-do-gerenciador-de-pacotes/ "link-externo")
+- [http://nodebr.com/instalando-node-js-atraves-do-gerenciador-de-pacotes/](http://nodebr.com/instalando-node-js-atraves-do-gerenciador-de-pacotes/)
 
 
 
@@ -107,7 +107,7 @@ Via pacote deb (Debian-wheezy)
 
 Esta é a forma recomendado na documentação, mas comigo não funcionou! Então, boa sorte...
 
-Você precisará do [curl](http://curl.haxx.se/ "link-externo"):
+Você precisará do [curl](http://curl.haxx.se/):
 
     apt-get install curl
 
@@ -121,14 +121,14 @@ E instale...
 
 - - -
 Fonte
-- [https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager "link-externo")
+- [https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
 
 
 Veja também
 ---
 
-- [Instalando o npm](/linux/cookbook/npm/)
+- [Instalando o npm](/linux/instalando-npm/)
 - [Aprenda Node.js](/javascript/node.js/)
-- [Node.js no GitHub](https://github.com/joyent/node "link-externo")
-- [Node.js](http://nodejs.org/ "link-externo")
-- [Tutorial nodeschool](http://nodeschool.io/ "link-externo")
+- [Node.js no GitHub](https://github.com/joyent/node)
+- [Node.js](http://nodejs.org/)
+- [Tutorial nodeschool](http://nodeschool.io/)

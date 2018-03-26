@@ -33,13 +33,13 @@ Use o programa __cdrecord__. Imaginando que seu arquivo iso se chama `seu-arquiv
 
 Outra opção são os programas __K3B__ e o __X-CD-Roast__:
 
-* [K3b](http://k3b.plainblack.com/ "link-externo")
+* [K3b](http://k3b.plainblack.com/)
 1. Selecione o menu Tools - CD - Burn CD Image. 
 2. No diálogo que abre, informe o caminho para a imagem no campo Image to Burn,
 3. verifique se os outros campos estão corretos,
 4. então clique em Start.
 
-* [X-CD-Roast](http://www.xcdroast.org/ "link-externo")
+* [X-CD-Roast](http://www.xcdroast.org/)
 1. Após o programa iniciar, clique em Setup escolha a aba HD settings.
 2. Copie a imagem do CD Debian para um dos diretórios que são mostrados na tabela.
 3. (Se a tabela estiver vazia, digite o caminho de um diretório que você queira usar como temporário, e clique em Add.)
@@ -53,4 +53,4 @@ Outra opção são os programas __K3B__ e o __X-CD-Roast__:
 
 - - -
 Fonte
-- [https://www.debian.org/CD/faq/#what-is](https://www.debian.org/CD/faq/#what-is "link-externo")
+- [https://www.debian.org/CD/faq/#what-is](https://www.debian.org/CD/faq/#what-is)

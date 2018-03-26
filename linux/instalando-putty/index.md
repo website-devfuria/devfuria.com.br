@@ -40,4 +40,4 @@ Veja o tutorial abaixo para proceder com a compilação dos fontes.
 Site Oficial
 ---
 
-- [http://www.putty.org/](http://www.putty.org/ "link-externo")
+- [http://www.putty.org/](http://www.putty.org/)

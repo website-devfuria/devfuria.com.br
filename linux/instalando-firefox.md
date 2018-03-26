@@ -31,7 +31,7 @@ Em meu caso, eu já possuía o Firefox instalado via __apt-get__(gerenciador de 
 precisei instalar as bibliotecas, pois elas já tinham sido instaladas.
 
 Se é a primeira vez que você vai instalar, então atente para os 
-[requisitos](https://www.mozilla.org/en-US/firefox/20.0/system-requirements/ "link-externo").
+[requisitos](https://www.mozilla.org/en-US/firefox/20.0/system-requirements/).
 
 O arquivo de instalação fornecido pelo Mozilla em formato `.tar.bz2` não contém o código fonte, mas sim os arquivos 
 binários já compilados. Portanto, você pode simplesmente desempacotar e rodar os arquivos. Não é necessário compilar o 
@@ -41,7 +41,7 @@ As seguintes instruções instalarão o __Firefox__ em sua pasta "Home", e somen
 
 ### Passo a passo de como instalar o Firefox
 
-1. Baixe o Firefox através da [página de download](https://www.mozilla.org/en-US/firefox/new/?icn=tabz "link-externo") do Firefox, para a sua pasta "Home".
+1. Baixe o Firefox através da [página de download](https://www.mozilla.org/en-US/firefox/new/?icn=tabz) do Firefox, para a sua pasta "Home".
 2. Abra o terminal e siga para o diretório home: `cd ~`
 3. Extraia o conteúdo do arquivo baixado: `tar xvjf firefox-*.tar.bz2`
 4. Feche todas as janelas do Firefox se tiver alguma aberta.
@@ -60,7 +60,7 @@ Para corrigir o menu do Debian, pois ele ainda aponta para a versão antiga, uti
 
 - - -
 Fonte:
-- [support.mozilla.org/pt-BR/instalando-o-firefox-no-linux](https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux "link-externo")
+- [support.mozilla.org/pt-BR/instalando-o-firefox-no-linux](https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux)
 
 
 
@@ -87,7 +87,7 @@ Dica, você não mais precisará do iceweasel, então pode desinstalar:
 
 - - -
 Fonte:
-- [http://linuxconfig.org/easy-way-to-install-firefox-browser-on-debian-7-wheezy](http://linuxconfig.org/easy-way-to-install-firefox-browser-on-debian-7-wheezy "link-externo")
+- [http://linuxconfig.org/easy-way-to-install-firefox-browser-on-debian-7-wheezy](http://linuxconfig.org/easy-way-to-install-firefox-browser-on-debian-7-wheezy)
 
 
 
@@ -96,7 +96,7 @@ Instalando o Firefox manualmente (CentOS)
 
 Baixe a última versão do __Firefox__ através do link oficial
 
-[http://www.getfirefox.com/](http://www.getfirefox.com/ "link-externo")
+[http://www.getfirefox.com/](http://www.getfirefox.com/)
 
 No linux os downloads são salvos na pasta `/home/seu-usuario/Downloads`, vamos
 utilizar esta pasta tranquilamente, pois depois iremos apagar nossos vestígios.
@@ -129,7 +129,7 @@ Se não funcionar, reinicie o sistema e, novamente, digite no terminal `firefox`
 
 - - -
 Fonte
-- [https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux](https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux "link-externo")
+- [https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux](https://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux)
 
 
 
@@ -150,7 +150,7 @@ Se você prefere instalar o __Firefox__ via repositório tente os passos abaixo:
 
 - - -
 Fonte
-- [http://www.tecmint.com/install-firefox-in-rhelcentos-6-3-fedora-17-16/](http://www.tecmint.com/install-firefox-in-rhelcentos-6-3-fedora-17-16/ "link-exerno")
+- [http://www.tecmint.com/install-firefox-in-rhelcentos-6-3-fedora-17-16/](http://www.tecmint.com/install-firefox-in-rhelcentos-6-3-fedora-17-16/)
 
 
 
@@ -174,4 +174,4 @@ Atualize...
 
 - - -
 Fonte
-- [http://www.if-not-true-then-false.com/2011/install-firefox-on-fedora-centos-red-hat-rhel/](http://www.if-not-true-then-false.com/2011/install-firefox-on-fedora-centos-red-hat-rhel/ "link-externo")
+- [http://www.if-not-true-then-false.com/2011/install-firefox-on-fedora-centos-red-hat-rhel/](http://www.if-not-true-then-false.com/2011/install-firefox-on-fedora-centos-red-hat-rhel/)

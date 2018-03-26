@@ -2,6 +2,8 @@
 title:       Introdução a Expressões Regulares
 description: Uma pequena e rápida introdução as Expressões Regulares
 ogimage:     expressoes-regulares.png
+capitulo:    er-intro
+ordem:       1
 ---
 
 __O que são Expressões Regulares ?__
@@ -56,11 +58,3 @@ Veja os resultados (matches) da expressão abaixo:
 
 ![Figura ilustrando o 2 exemplo de expressão regular](exemplo2-expressoes-regulares.png)
 
-
-{% include call.html
-    style="success"
-    title="Leia em seguida..."
-    descr="Expressões Regulares - metacaracteres"
-    href="/regex/metacaracteres/"
-    label="Ver matéria!"
-%}

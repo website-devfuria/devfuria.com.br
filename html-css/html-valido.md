@@ -19,7 +19,7 @@ description:
 
 O HTML acima é um __XHTML__ válido porque ele atende aos requisitos básicos para poder ser considerado válido.
 
-Quem define os requesitos é o grupo W3C e o grupo WHATWG. O W3C disponibiliza até um [validador online](http://validator.w3.org/ "link-externo")
+Quem define os requesitos é o grupo W3C e o grupo WHATWG. O W3C disponibiliza até um [validador online](http://validator.w3.org/)
 para efetuar a validação dos HTML.
 
 Nós estamos falando de XHTML, que é uma versão anterior ao HTML5. O XHTML é interessante principalmente por que estamos

@@ -9,7 +9,7 @@ procure pela versão mais atual.
 Ao final da instalação o comando `java -version` deve trazer informação sobre`OpenJDK Runtime Environment`.
 
 Se você buscava isntlar a versão Java da Oracle veja esta outra receita 
-[Instalando conjunto de utilitários JDK (Java Development Kit) versão Oracle](/linux/cookbook/java-oracle/)
+[Instalando conjunto de utilitários JDK (Java Development Kit) versão Oracle](/linux/instalando-java-oracle/)
 
 ### Debian (wheezy)
 

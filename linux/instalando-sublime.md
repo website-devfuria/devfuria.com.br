@@ -4,7 +4,7 @@ description: Receitas para instalção do Sublime no Debian (wheezy) e no Fedora
 ---
 
 
-- [sublimetext.com/](https://www.sublimetext.com/  "link-externo")
+- [sublimetext.com/](https://www.sublimetext.com/ )
 
 
 ### Instalando o Sublime no Debian (wheezy)
@@ -26,7 +26,7 @@ Para arquitetura x86:
 - - -
 Fonte:
 
-- [www.simonewebdesign.it/](http://www.simonewebdesign.it/how-to-install-sublime-text-3-on-debian/ "link-externo")
+- [www.simonewebdesign.it/](http://www.simonewebdesign.it/how-to-install-sublime-text-3-on-debian/)
 
 
 
@@ -49,4 +49,4 @@ Instale
 - - -
 Fonte:
 
-- [http://drayanaindra.blogspot.com.br/2013/01/install-sublime-text-2-via-repo-fedora_1.html](http://drayanaindra.blogspot.com.br/2013/01/install-sublime-text-2-via-repo-fedora_1.html "link-externo")
+- [http://drayanaindra.blogspot.com.br/2013/01/install-sublime-text-2-via-repo-fedora_1.html](http://drayanaindra.blogspot.com.br/2013/01/install-sublime-text-2-via-repo-fedora_1.html)

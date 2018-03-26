@@ -6,7 +6,7 @@ description: Aprenda como instalar a extensão bcompiler para PHP na CentOS trat
 O __bcompiler__ é um módulo experimental em PHP que compila seu código fonte.
 
 Você deve instalar o útlima versão, no momentoe em que escrevo este artigo a versão mais atual é a 1.0.2.
-Verifique a última versão no site [pecl.php.net/package/bcompiler](http://pecl.php.net/package/bcompiler "link-externo")
+Verifique a última versão no site [pecl.php.net/package/bcompiler](http://pecl.php.net/package/bcompiler)
 
 Os pré requisitos para instalação são __apache__, __php__ e pacotes de dependência.
 
@@ -70,4 +70,4 @@ fclose($fh);
 Documentação
 ---
 
-- [Compilador de PHP bytecode ](http://php.net/manual/pt_BR/intro.bcompiler.php "link-externo")
+- [Compilador de PHP bytecode ](http://php.net/manual/pt_BR/intro.bcompiler.php)

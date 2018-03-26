@@ -1,7 +1,7 @@
 ---
 title:       Exemplos na linguagem C do algoritmo Bubble Sort
 description: 
-serie:       Lógica Nível 7
+capitulo:    logica-nivel-7
 ordem:       2
 ---
 
@@ -13,7 +13,7 @@ Bubble Sort.
 Pressuponho que você conheça o algoritmo.
 
 Para baixar os exemplos utilize este 
-[repositorio](https://github.com/devfuria/c-exemplos/blob/master/ordenacao/bubble-sort.c "link-externo").
+[repositorio](https://github.com/devfuria/c-exemplos/blob/master/ordenacao/bubble-sort.c).
 
 
 ### Exemplo 1

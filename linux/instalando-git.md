@@ -14,7 +14,7 @@ Na família Debian (Ubuntu) execute:
     # apt-get install git
 
 Você também pode compilar os fontes, leia o capítulo 
-[Primeiros passos - Instalando Git](http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git "link-externo")
+[Primeiros passos - Instalando Git](http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git)
 do livro Pro Git para saber como.
 
 Neste mesmo capítulo você encontrará as receitas para instalação no __Windows__ e no __Mac__.

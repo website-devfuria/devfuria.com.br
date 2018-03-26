@@ -24,4 +24,4 @@ Para parar o serviço:
 - - -
 Fonte
 
-- [http://www.hardware.com.br/tutoriais/samba-swat/pagina3.html](http://www.hardware.com.br/tutoriais/samba-swat/pagina3.html "link-externo")
+- [http://www.hardware.com.br/tutoriais/samba-swat/pagina3.html](http://www.hardware.com.br/tutoriais/samba-swat/pagina3.html)

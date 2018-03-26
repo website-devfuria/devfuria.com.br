@@ -1,7 +1,7 @@
 ---
 title:       Apresentando o projeto Euler
 description: "Projeto Euler existe para encorajar, desafiar e desenvolver as habilidades e gozo de qualquer pessoa com interesse no fascinante mundo da matemática"
-serie:       Lógica Nível 9
+capitulo:    logica-nivel-9
 ordem:       1
 ---
 
@@ -14,7 +14,7 @@ ordem:       1
 > Projetc Euler
 
 
-O [Projeto Euler](https://projecteuler.net/ "link-externo") é uma excelente proposta para desenvolver suas 
+O [Projeto Euler](https://projecteuler.net/) é uma excelente proposta para desenvolver suas 
 habilidades de programador(a). 
 
 São um pouco mais de 500 exercícios e um mais *nervoso* que o outro.

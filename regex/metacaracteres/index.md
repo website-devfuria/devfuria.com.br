@@ -2,6 +2,8 @@
 title:       Expressões Regulares metacaracteres
 description: Este artigo é uma breve apresentação dos principais metacaracteres das Expressões Regulares
 ogimage:     expressoes-regulares-metacaracteres.png
+capitulo:    er-intro
+ordem:       2
 ---
 
 Neste artigo você verá uma síntese de cada metacaracter e logo abaixo um link para se aprofundar o assunto.

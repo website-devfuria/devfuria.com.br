@@ -34,4 +34,4 @@ Executar
 
 ### Fontes:
 
-- [http://minimallinux.blogspot.com.br/2012/11/centos-6rhel-install-speedcrunch.html](http://minimallinux.blogspot.com.br/2012/11/centos-6rhel-install-speedcrunch.html "link-externo")
+- [http://minimallinux.blogspot.com.br/2012/11/centos-6rhel-install-speedcrunch.html](http://minimallinux.blogspot.com.br/2012/11/centos-6rhel-install-speedcrunch.html)

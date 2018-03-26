@@ -1,4 +1,5 @@
 ---
+layout:      artigo-solto
 title:       Vagrant
 description: O básico do Vagrant
 ---

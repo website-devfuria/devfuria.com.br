@@ -9,11 +9,11 @@ Na família __Red Hat__ (Fedora, CentoOS) normalmente utilizamos o __yum__ para 
 
 Na família __Debian__ (Ubuntu) normalmente utilizamos o __apt-get__. O Apache é referenciado por `apache2`.
 
-Para o pessoal do windows, siga este tutorial [Instalando o servidor Apache no Windows](http://www.superdownloads.com.br/materias/instalando-servidor-apache-no-windows-linux.html "link-externo")
+Para o pessoal do windows, siga este tutorial [Instalando o servidor Apache no Windows](http://www.superdownloads.com.br/materias/instalando-servidor-apache-no-windows-linux.html)
 
 Lá na frente, quando você estiver pronto para publicar o seu site ou o seu sistema, você precisará de
 um __Servidor VPS__, trata-se de um servidor virtual privado. VPS é a sigla de "Virtual Private Server", em português,
-Servidor Virtual Privado. Veja uma lista de [servidores VPS](https://www.melhorhospedagemdesites.com/servidor-vps/ "link-externo") para você escolher.
+Servidor Virtual Privado. Veja uma lista de [servidores VPS](https://www.melhorhospedagemdesites.com/servidor-vps/) para você escolher.
 
 
 

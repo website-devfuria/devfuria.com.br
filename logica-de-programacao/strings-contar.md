@@ -1,11 +1,11 @@
 ---
 title:       Contar string
 description: Exercício de lógica de programação para contar a quantidade de caracteres de uma string qualquer.
-serie:       Lógica Nível 4 strings
+capitulo:    logica-nivel-4-strings
 ordem:       1
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -101,7 +101,7 @@ Seu desafio é entender os seguintes códigos.
         return i;
     }
 
-A solução abaixo é do professor da [USP Paulo Feofiloff](http://www.ime.usp.br/~pf/algoritmos/aulas/bubi2.html "link-externo").
+A solução abaixo é do professor da [USP Paulo Feofiloff](http://www.ime.usp.br/~pf/algoritmos/aulas/bubi2.html).
 
     unsigned int strlen( string s) {
        int i;
@@ -187,4 +187,3 @@ Sem comentários...
 7
 ```
 
-{% include /alertas/logica-feedback.html %}

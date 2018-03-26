@@ -1,11 +1,11 @@
 ---
 title:       Maior e menor índice do vetor
 description: Exercício de lógica de programação para descobrir o índice do maior e o menor valor do vetor.
-serie:       Lógica Nível 4 vetores
+capitulo:    logica-nivel-4-vetores
 ordem:       4
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -233,4 +233,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

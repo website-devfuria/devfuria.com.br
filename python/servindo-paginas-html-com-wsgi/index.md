@@ -1,6 +1,8 @@
 ---
 title:       Python, servindo páginas HTML com WSGI
 description: Neste artigo veremos como executar script Python utilizando o WSGI.
+capitulo:    python-paginas-web
+ordem:       2
 ---
 
 Este artigo é um primeiro passo para quem quer testar e experimentar a especificação WSGI. Indicado para quem está querendo
@@ -45,7 +47,7 @@ Primeiro vamos atualizar seu sistema.
     apt-get update
     apt-get upgrade
 
-Você precisará ter o [Apache devidamente instalado](/linux/cookbook/apache-via-yum-apt-get/), mas caso queira fazer isso 
+Você precisará ter o [Apache devidamente instalado](/linux/instalando-apache-via-yum-apt-get/), mas caso queira fazer isso 
 rapidamente, execute o comando abaixo.
 
     apt-get install apache2

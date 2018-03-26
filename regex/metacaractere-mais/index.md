@@ -1,8 +1,8 @@
 ---
 title:       "Metacaractere mais +"
 description: 
-serie:        Metacaracteres
-ordem:        6
+capitulo:    er-metacaracteres
+ordem:       6
 ---
 
 O metacaracter `+` (mais) tem funcionamento idêntico ao do `*` (asterisco), a única diferença é que o mais não é 

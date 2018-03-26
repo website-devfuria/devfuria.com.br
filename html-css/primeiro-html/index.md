@@ -1,6 +1,8 @@
 ---
 title:       Criando seu primeiro HTML 
 description: Aprenda com esse artigo a produzir seu primeiro HTML
+capitulo:    html-css-intro
+orem:        2
 ---
 
 
@@ -60,7 +62,7 @@ este é outro assunto que trataremos em breve.
 
 - - -
 Fonte: 
-- [Introdução ao HTML- Mozilla.](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction "link-externo")
+- [Introdução ao HTML- Mozilla.](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction)
 
 
 Veja a próxima matéria

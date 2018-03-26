@@ -1,11 +1,11 @@
 ---
 title:       Concatenar duas strings
 description: Exercício de lógica de programação para concatenar duas strings.
-serie:       Lógica Nível 4 strings
+capitulo:    logica-nivel-4-strings
 ordem:       4
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -151,4 +151,3 @@ Idem...
 ```
 
 
-{% include /alertas/logica-feedback.html %}

@@ -1,11 +1,10 @@
 ---
 title:       Trocar o valor de duas variáveis
 description: Primeiro exercício de lógica de programação para quebrarmos o gelo.
-serie:       Lógica Nível 0
+capitulo:    logica-nivel-0
 ordem:       0
 ---
 
-{% include /alertas/logica-apresentacao.html %}
 
 
 ### Exercício de lógica de programação
@@ -50,7 +49,7 @@ Na linguagem C utilizamos a função `assert` para simularmos os testes, então 
 Agora basta implementar o código e ver os testes passarem.
 
 
-{% include /alertas/logica-linguagens.html %}
+
 
 
 Linguagem C
@@ -301,4 +300,3 @@ try {
 
 ```
 
-{% include /alertas/logica-feedback.html %}

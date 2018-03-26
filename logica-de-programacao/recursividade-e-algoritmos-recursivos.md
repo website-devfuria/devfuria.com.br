@@ -1,11 +1,11 @@
 ---
 title:       Recursividade e Algoritmos Recursivos
 description: Exemplos práticos de recursão em Python, C e JavaScript
-serie:       Lógica Nível 6
+capitulo:    logica-nivel-6
 ordem:       1
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Função recursiva é aquela que invoca a si mesma.
 

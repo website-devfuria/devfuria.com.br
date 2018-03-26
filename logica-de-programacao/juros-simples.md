@@ -1,11 +1,11 @@
 ---
 title:       Juros simples
 description: Exercício de lógica de programação para calcular o juros simples.
-serie:       Lógica Nível 1
+capitulo:    logica-nivel-1
 ordem:       3
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -24,7 +24,7 @@ Onde:
 Vamos imaginar o seguinte cenário: um empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
 
 
-{% include /alertas/logica-linguagens.html %}
+
 
 
 Linguagem C
@@ -161,4 +161,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

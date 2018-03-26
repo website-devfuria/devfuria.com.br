@@ -1,6 +1,7 @@
 ---
-title:        Apache - Configurando Virtual Hosts
-description:  Aprenda a utilizar Virtual Host no Apache, acompanha um exemplo prático.
+layout:      artigo-solto
+title:       Apache - Configurando Virtual Hosts
+description: Aprenda a utilizar Virtual Host no Apache, acompanha um exemplo prático.
 ---
 
 Este artigo é para quem quer configurar o Apache (localmente), através de Virtual Hosts, com o intento de imitar o

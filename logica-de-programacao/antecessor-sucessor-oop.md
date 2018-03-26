@@ -1,11 +1,11 @@
 ---
 title:       Antecessor e sucessor de um número qualquer (versão orientado a objeto)
 description: Exercício de lógica de programação resolvido cujo objetivo é encontrar o sucessor e antecessor de um número qualquer.
-serie:       Lógica Nível 5
+capitulo:    logica-nivel-5
 ordem:       3
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -200,4 +200,3 @@ assert 11 == Calc.sucessor(10)
 ```
 
 
-{% include /alertas/logica-feedback.html %}

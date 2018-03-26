@@ -1,6 +1,8 @@
 ---
 title:       Como é trabalhar com Git - parte 2
 description: Essa é a segunda parte de uma história fictícia que ilustra o dia dia de quem utiliza o GitHub como versionamento de código
+capitulo:    git-intro
+ordem:        2
 ---
 
 Eis aqui uma história fictícia para ilustrar como é o dia a dia de quem trabalha com Git e GitHUb.

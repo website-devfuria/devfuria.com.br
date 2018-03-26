@@ -1,11 +1,10 @@
 ---
 title:       Equação de 2 grau
 description: Exercício de lógica de programação - bhaskara.
-serie:       Lógica Nível 2
+capitulo:    logica-nivel-2
 ordem:       7
 ---
 
-{% include /alertas/logica-apresentacao.html %}
 
 Exercício de lógica de programação
 ---
@@ -267,4 +266,3 @@ try {
 }
 ```
 
-{% include /alertas/logica-feedback.html %}

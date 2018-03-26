@@ -1,6 +1,8 @@
 ---
-title:       "MySQL, resolvendo o erro 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)"
+title:       "MySQL, resolvendo o erro 'Can't connect to local MySQL server through socket"
 description: "Aprenda a resolve o erro 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)"
+capitulo:    linux-artigos
+ordem: 
 ---
 
 Este erro pode aparecer em contextos diferentes:
@@ -23,7 +25,7 @@ E (novamente) reiniciar o MySQL.
 
 - - -
 Fonte:
-- [stackoverflow.com/questions/11657829](http://stackoverflow.com/questions/11657829/error-2002-hy000-cant-connect-to-local-mysql-server-through-socket-var-run/20680577#20680577 "link-externo")
+- [stackoverflow.com/questions/11657829](http://stackoverflow.com/questions/11657829/error-2002-hy000-cant-connect-to-local-mysql-server-through-socket-var-run/20680577#20680577)
 
 
 ### Ao definir a senha de root

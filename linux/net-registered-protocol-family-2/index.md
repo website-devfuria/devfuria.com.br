@@ -1,7 +1,7 @@
 ---
 title:       Resolvendo o erro "NET Registered protocol family 2" no Virtual Box
 description: Ao iniciar CentOS 5.6 no Virtual Box aparece o seguinte erro "NET Registered protocol family 2"
-serie:       VirtualBox
+capitulo:    linux-virtualbox
 ordem:       6
 ---
 
@@ -17,4 +17,4 @@ Para resolver basta habiltar a opção __Enable IO APIC__ nas configurações da
 
 ### Fonte
 
-- [virtual-box-net-registered-protocol-2-hang](http://m04m.com/2012/01/13/virtual-box-net-registered-protocol-2-hang/ "link-externo")
+- [virtual-box-net-registered-protocol-2-hang](http://m04m.com/2012/01/13/virtual-box-net-registered-protocol-2-hang/)

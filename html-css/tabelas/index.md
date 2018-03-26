@@ -1,6 +1,8 @@
 ---
 title:       HTML & CSS - Tabelas 
 description:
+capitulo:    html-css-elementos
+orem:        5
 ---
 
 As tabelas acomodam dados tabulares.
@@ -74,7 +76,7 @@ Veja um exemplo mais completo:
 - - -
 Fontes:
 
-- [HTML table - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table "link-externo")
+- [HTML table - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table)
 
 Estilizando
 ---

@@ -1,6 +1,7 @@
 ---
-title:        Arquivo hosts (/etc/hosts)
-description:  Este artigo é uma breve explicação do funcionamento do arquivo /etc/hosts.
+layout:      artigo-solto
+title:       Arquivo hosts (/etc/hosts)
+description: Este artigo é uma breve explicação do funcionamento do arquivo /etc/hosts.
 ---
 
 O arquivo __hosts__ pode ser utilizado para diversos fins, no caso do desenvolvimento, ele pode nos interessar enquanto 
@@ -13,7 +14,7 @@ arquivo hosts se faz necessário.
 Este artigo é uma breve explicação do que é, como funciona e para que serve o arquivo hosts (considerando o Linux
 como sistema operacional). Para ajudar a entendê-lo, seria bom você ter uma noção do que é um 
 [número IP](http://pt.wikipedia.org/wiki/Endere%C3%A7o_IP "link-externo"), noção do que é uma Virtual Host e ter 
-instalado um [servidor web](/linux/cookbook/apache-via-yum-apt-get/) no Linux. Na verdade, o público alvo deste artigo 
+instalado um [servidor web](/linux/instalando-apache-via-yum-apt-get/) no Linux. Na verdade, o público alvo deste artigo 
 são aqueles desenvolvedores que possuem alguma experiência e estão tentando configurar uma Virtual Host (com o apoio 
 do arquivo hosts) para equiparar o ambiente de desenvolvimento com o de produção.
 

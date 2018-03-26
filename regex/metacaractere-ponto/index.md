@@ -1,7 +1,7 @@
 ---
 title:       "Metacaractere ponto ."
-description:
-serie:        Metacaracteres
+description: 
+capitulo:    er-metacaracteres
 ordem:        1
 ---
 

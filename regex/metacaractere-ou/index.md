@@ -1,8 +1,8 @@
 ---
 title:       "Metacaractere ou |"
 description: 
-serie:        Metacaracteres
-ordem:        12
+capitulo:    er-metacaracteres
+ordem:       12
 ---
 
 O metacaractere "ou" | serve para os casos em que temos mais de uma alternativa possível.

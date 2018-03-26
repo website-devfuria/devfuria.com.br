@@ -1,11 +1,11 @@
 ---
 title:       Comparar duas strings
 description: Exercício de lógica de programação para comparar duas strings.
-serie:       Lógica Nível 4 strings
+capitulo:    logica-nivel-4-strings
 ordem:       3
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -173,4 +173,3 @@ O laço de repetição é trivial.
 
 
 
-{% include /alertas/logica-feedback.html %}

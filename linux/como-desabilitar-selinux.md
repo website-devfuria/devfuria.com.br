@@ -1,6 +1,8 @@
 ---
 title:       Como desabilitar SElinux0 (Fedora e CentOS)
 description: Como desabilitar SElinux0 (Fedora e CentOS)
+capitulo:    linux-artigos
+ordem: 
 ---
 
 
@@ -41,6 +43,6 @@ Teste executando:
 
 ### Fonte
 
-- [Guia do hardware - Tutorial do CentOS](http://www.hardware.com.br/tutoriais/centos/pagina2.html "link-externo")
-- [docs.fedoraproject.org](http://docs.fedoraproject.org/en-US/Fedora/13/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Working_with_SELinux-Enabling_and_Disabling_SELinux.html "link-externo")
+- [Guia do hardware - Tutorial do CentOS](http://www.hardware.com.br/tutoriais/centos/pagina2.html)
+- [docs.fedoraproject.org](http://docs.fedoraproject.org/en-US/Fedora/13/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Working_with_SELinux-Enabling_and_Disabling_SELinux.html)
 

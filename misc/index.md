@@ -1,4 +1,5 @@
 ---
+layout: index-solto
 title:  Miscellaneous
 ---
 

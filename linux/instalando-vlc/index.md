@@ -36,5 +36,5 @@ Instale o aplicativo via `yum`:
 Site Oficcial
 ---
 
-[www.videolan.org](http://www.videolan.org/vlc/ "link-externo")
+[www.videolan.org](http://www.videolan.org/vlc/)
 

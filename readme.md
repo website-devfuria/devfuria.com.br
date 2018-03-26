@@ -7,6 +7,8 @@ Não é um blog, ele parece-se mais com um site de cursos.
 Ele é feito especialmente para o público iniciante.
 
 
+
+
 ## Instalação - jekyll
 
 1. Você deve [instalar a linguagem ruby](http://www.devfuria.com.br/linux/instalando-ruby-on-rails/).

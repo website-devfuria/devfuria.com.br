@@ -1,6 +1,8 @@
 ---
 title:       Dicas de configuração do Git
 description: Algumas dicas que facilitam a utilização do Git em noss dia a dia
+capitulo:    git-artigos
+orem:        1
 ---
 
 
@@ -17,8 +19,8 @@ Para ver suas configurações execute `git config --list`.
 
 - - -
 Fontes
-- [Pro Git  Configuração Inicial do Git](http://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git "link-externo")
-- [](http://git-scm.com/book/pt-br/v1/Customizando-o-Git-Configura%C3%A7%C3%A3o-do-Git "link-externo")
+- [Pro Git  Configuração Inicial do Git](http://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git)
+- [](http://git-scm.com/book/pt-br/v1/Customizando-o-Git-Configura%C3%A7%C3%A3o-do-Git)
 
 
 
@@ -51,5 +53,5 @@ Digite `git seu-atalho` para ver o resultado.
 Fontes:
 
 
-- [Pro Git - Visualizando o Histórico de Commits](http://git-scm.com/book/pt-br/v1/Git-Essencial-Visualizando-o-Hist%C3%B3rico-de-Commits "link-externo")
-- [git-scm.com/docs/git-log](http://git-scm.com/docs/git-log "link-externo")
+- [Pro Git - Visualizando o Histórico de Commits](http://git-scm.com/book/pt-br/v1/Git-Essencial-Visualizando-o-Hist%C3%B3rico-de-Commits)
+- [git-scm.com/docs/git-log](http://git-scm.com/docs/git-log)

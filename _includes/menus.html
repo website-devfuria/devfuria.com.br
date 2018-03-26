@@ -1,17 +1,18 @@
 {% comment %}
 
-Mostra as páginas de determinada série, como se fosse um menu da tal série.
-Depende do include "get-serie" pois é ele quem cria a variável 'serie'
+Mostra as páginas de determinada capítulo, como se fosse um menu da tal capítulo.
+Depende do include "get-capítulo" pois é ele quem cria a variável 'capitulo'
 
     Exemplo
-    {% include get-serie.html page_serie="Aqui vai o nome da série" %}
+    {% include get-capitulo.html page_serie="Aqui vai o nome da série" %}
     {% include menus.html %}
 
 {% endcomment %}
 
- 
 <div class="list-group">
-    {% for artigo in serie %}
-        <a href="{{ artigo.url }}" class="list-group-item">{{ artigo.title }}</a>
+    {% for artigo in capitulo %}
+        <a href="{{ artigo.url }}" class="list-group-item {% if artigo.url == page.url %}active{% endif %}">
+            {{ artigo.title }}
+        </a>
     {% endfor %}
 </div>

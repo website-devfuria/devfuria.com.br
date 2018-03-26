@@ -1,11 +1,11 @@
 ---
 title:       Número primo
 description: Exercício de lógica de programação para descobrir se um número é primo.
-serie:       Lógica Nível 3
+capitulo:    logica-nivel-3
 ordem:       1
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -398,8 +398,7 @@ avançar nesse sentido foge do escope deste artigo.
 
 Para você entender melhor essa questão sugiro a leitura do seguinte artigo:
 
-- [wiki.python.org.br/DeterminandoPrimos](http://wiki.python.org.br/DeterminandoPrimos "link-externo")
+- [wiki.python.org.br/DeterminandoPrimos](http://wiki.python.org.br/DeterminandoPrimos)
 
 
 
-{% include /alertas/logica-feedback.html %}

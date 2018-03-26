@@ -1,11 +1,11 @@
 ---
 title:       MMC mínimo múltiplo comum
 description: Exercício de lógica de programação para descobrir o MMC (mínimo múltiplo comum).
-serie:       Lógica Nível 3
+capitulo:    logica-nivel-3
 ordem:       4
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -230,5 +230,3 @@ try {
     console.log(e);
 }
 ```
-
-{% include /alertas/logica-feedback.html %}

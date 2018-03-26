@@ -1,7 +1,7 @@
 ---
 title:       Ponteiros
 description: Exercício de lógica  envolvendo ponteiros
-serie:       Lógica Nível 8
+capitulo:    logica-nivel-8
 ordem:       1
 ---
 

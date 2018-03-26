@@ -1,11 +1,11 @@
 ---
 title:       Juros simples (OOP)
 description: Exercício de lógica de programação (com testes unitários) para calcular o juros simples.
-serie:       Lógica Nível 5
+capitulo:    logica-nivel-5
 ordem:       4
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -268,4 +268,4 @@ A solução apresentada tanto em JavaScript como em Python não são as mais ind
 objeto era ilustrarmos as particularidades de cada linguagem ao invé de simplesmente resolver o enunciado.
 
 
-{% include /alertas/logica-feedback.html %}
+

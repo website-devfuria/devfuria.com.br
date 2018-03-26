@@ -1,8 +1,8 @@
 ---
 title:       "Metacaractere cifrão $"
 description: 
-serie:        Metacaracteres
-ordem:        9
+capitulo:    er-metacaracteres
+ordem:       9
 ---
 
 O metacaracter cifrão marca o fim de uma linha e só é válido no final de uma ER.

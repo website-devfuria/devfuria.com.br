@@ -53,6 +53,6 @@ Pegadinha: o alias (apelido) do programa não é __7zip__  como esperado e sim _
 
 ### Fontes:
 
-- [Site oficial: http://www.7-zip.org/](http://www.7-zip.org/ "link-externo")
-- [Ubuntu wiki: 7zip](http://wiki.ubuntu-br.org/7zip "link-externo")
-- [Descompactando arquivos 7z](http://www.vivaolinux.com.br/dica/Descompactando-arquivos-7z "link-externo")
+- [Site oficial: http://www.7-zip.org/](http://www.7-zip.org/)
+- [Ubuntu wiki: 7zip](http://wiki.ubuntu-br.org/7zip)
+- [Descompactando arquivos 7z](http://www.vivaolinux.com.br/dica/Descompactando-arquivos-7z)

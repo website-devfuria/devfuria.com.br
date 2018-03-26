@@ -45,4 +45,4 @@ Adicione um alias ao arquivo `.bashrc`:
 - - -
 Fonte
 
-- [http://fedorasolved.org/Members/dcr226/installing-skype](http://fedorasolved.org/Members/dcr226/installing-skype "link-externo")
+- [http://fedorasolved.org/Members/dcr226/installing-skype](http://fedorasolved.org/Members/dcr226/installing-skype)

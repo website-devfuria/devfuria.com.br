@@ -4,7 +4,7 @@ description: Aprenda como instalar PI (Python Imaging Library)
 ---
 
 
-O __PIL__ é uma biblioteca de manipulação de imagens para [Python](/linux/cookbook/python).
+O __PIL__ é uma biblioteca de manipulação de imagens para [Python](/linux/instalando-python).
 
 
 ### Para instalar no __CentOS__:
@@ -16,7 +16,7 @@ O __PIL__ é uma biblioteca de manipulação de imagens para [Python](/linux/coo
 
     apt-get install python-imaging
 
-Se você precisar configurar uma __lista de sources__, este [gist](https://gist.github.com/flaviomicheletti/73ca969a89ee2d78b1e6/edit "linl-externo") pode te ajudar.
+Se você precisar configurar uma __lista de sources__, este [gist](https://gist.github.com/flaviomicheletti/73ca969a89ee2d78b1e6/edit) pode te ajudar.
 
 
 ### Para testar a versão instalada:
@@ -28,8 +28,8 @@ Se você precisar configurar uma __lista de sources__, este [gist](https://gist.
 - - -
 Fontes
 
-- [Python Imaging Library (PIL)](http://www.pythonware.com/products/pil/ "link-externo")
-- [The Python Imaging Library Handbook](http://effbot.org/imagingbook/ "link-externo")
+- [Python Imaging Library (PIL)](http://www.pythonware.com/products/pil/)
+- [The Python Imaging Library Handbook](http://effbot.org/imagingbook/)
 
 
 Instalando o Pillow
@@ -43,7 +43,7 @@ Ele depende dos pacotes *python-devel* e *python-setuptools*,  para instalar ess
     apt-get install python3-dev python3-setuptools
 
 
-Eu instalei através do [pip](/linux/cookbook/pip/) dessa forma:
+Eu instalei através do [pip](/linux/instalando-pip/) dessa forma:
 
     pip install Pillow
 
@@ -58,9 +58,9 @@ durante a instalação.
 - - -
 Fontes
 
-- [Pillow v2.5.0 (PIL fork) - Installation](http://pillow.readthedocs.org/en/latest/installation.html#simple-installation "link-externo")
-- [Pillow on GitHub](https://github.com/python-pillow/Pillow "link-externo")
-- [docs.python-guide.org - Image Manipulation](http://docs.python-guide.org/en/latest/scenarios/imaging/#python-imaging-library "link-externo")
+- [Pillow v2.5.0 (PIL fork) - Installation](http://pillow.readthedocs.org/en/latest/installation.html#simple-installation)
+- [Pillow on GitHub](https://github.com/python-pillow/Pillow)
+- [docs.python-guide.org - Image Manipulation](http://docs.python-guide.org/en/latest/scenarios/imaging/#python-imaging-library)
 
 
 

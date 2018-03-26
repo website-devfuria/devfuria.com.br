@@ -2,6 +2,8 @@
 title:       A9 Insufficient Transport Layer Protection
 description: Artigo sobre a vulnerabilidade Insuficiente Proteção da Camada de Trasporte, nono item da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
+capitulo:    seginfo-topten2010
+ordem:       9
 ---
 
 Esta vulnerabilidade está mais relacionada com as configurações do servidor no qual a aplicação web está instalada do

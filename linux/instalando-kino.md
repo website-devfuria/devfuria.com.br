@@ -25,6 +25,6 @@ Instale via _rpm__:
 
 ### Veja mais informações em 
 
-- [http://fedorasolved.org/post-install-solutions/yum-config](http://fedorasolved.org/post-install-solutions/yum-config "link-externo")
-- [http://ccrma.stanford.edu/planetccrma/software/libraries.html](http://ccrma.stanford.edu/planetccrma/software/libraries.html "link-externo")
+- [http://fedorasolved.org/post-install-solutions/yum-config](http://fedorasolved.org/post-install-solutions/yum-config)
+- [http://ccrma.stanford.edu/planetccrma/software/libraries.html](http://ccrma.stanford.edu/planetccrma/software/libraries.html)
 

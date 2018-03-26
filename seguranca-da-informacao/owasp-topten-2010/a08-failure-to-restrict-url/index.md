@@ -2,6 +2,8 @@
 title:       A8 Failure to Restrict URL Access
 description: Artigo sobre a vulnerabilidade Falha na restrição de acesso a URL, oitavo item da lista TOP 10 da WOASP
 meta:        (OWASP top ten 2010)
+capitulo:    seginfo-topten2010
+ordem:       8
 ---
 
 

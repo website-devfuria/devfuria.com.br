@@ -1,8 +1,8 @@
 ---
 title:       "Metacaractere lista [ ]"
 description:
-serie:        Metacaracteres
-ordem:        2
+capitulo:    er-metacaracteres
+ordem:       2
 ---
 
 A lista casa com quem ela conhece e tem suas próprias regras.

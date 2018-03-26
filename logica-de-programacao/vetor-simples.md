@@ -1,11 +1,11 @@
 ---
 title:       Algoritmo para carregar um vetor
 description: Exercício de lógica de programação que ajuda a desenvolver os diversos tipos de laços.
-serie:       Lógica Nível 4 vetores
+capitulo:    logica-nivel-4-vetores
 ordem:       1
 ---
 
-{% include /alertas/logica-apresentacao.html %}
+
 
 Exercício de lógica de programação
 ---
@@ -218,4 +218,3 @@ Obs: O conceito de vetor em JavaScript resume-se em um array, ou seja, um vetor 
 
 
 
-{% include /alertas/logica-feedback.html %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {% include bread-crumb.html %}
+        </div>
+      </div>
+    </div>
+
+    <article class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <div class="page-header text-center">
+              <h1>{{ page.title }} <br /><small>{{page.description}}</small></h1>
+            </div>
+            {{ content }}
+        </div>
+      </div>
+    </article>
+
+    {% include footer.html %}
+    {% include footer-js.html %}
+
+  </body>
+</html>

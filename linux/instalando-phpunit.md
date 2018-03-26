@@ -39,4 +39,4 @@ Caso você esteja precisando desinstalar sua versão através do Pear utilize o 
 - - -
 Fonte
 
-- [Getting Started with PHPUnit](https://phpunit.de/getting-started.html "link-externo")
+- [Getting Started with PHPUnit](https://phpunit.de/getting-started.html)

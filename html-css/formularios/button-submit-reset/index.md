@@ -1,7 +1,7 @@
 ---
 title:       Botões (button, submit e reset)
 description: Artigo a respeito dos controles button, submit e reset (formulário web) - HTML e CSS
-serie:       Controles Básicos (input)
+capitulo:       controles-basicos-input
 ordem:       6
 ---
 
@@ -48,7 +48,7 @@ Da mesma forma que o elemento __input__, o atributo `type` também se faz presen
 - button (padrão)
 
 Leia mais sobre o elemento na documentação da 
-[MDN - button](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/button "link-externo").
+[MDN - button](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/button).
 
 
 
@@ -56,7 +56,7 @@ Estilizando
 ---
 
 O desafio de estilizar botões é manter um "set" de classes que possam ser utilizados em conjunto. Tomemos como exemplo
-as classes do framework [Bootstrap](http://getbootstrap.com/ "link-externo"):
+as classes do framework [Bootstrap](http://getbootstrap.com/):
 
 ```html
 <button class="btn btn-info">Enviar formulário</button>

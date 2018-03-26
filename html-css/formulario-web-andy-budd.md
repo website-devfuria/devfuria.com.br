@@ -1,6 +1,8 @@
 ---
 title:       Estilizando formulários, exemplo de Andy Budd
 description: Este artigo é uma demonstração de como um formulário web pode ser estilizado como CSS
+capitulo:    html-artigos
+orem:        2
 ---
 
 Este artigo é uma demonstração de como um formulário web pode ser estilizado como CSS. O exemplo é retirado do livro

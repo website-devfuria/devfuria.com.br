@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {% include bread-crumb.html %}
+        </div>
+      </div>
+    </div>
+
+    {% include /videos/index.html %}
+    
+    <article class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h1>{{ page.title }} <br /><small>{{page.description}}</small></h1>
+          </div>
+          {{ content }}
+        </div>
+      </div>
+    </article>
+
+    <hr />
+
+    {% include disqus.html %}
+
+    {% include footer.html %}
+    {% include footer-js.html %}
+
+  </body>
+</html>
+

@@ -1,5 +1,6 @@
 ---
-title: Git
+layout: index 
+title:  Git
 ---
 
 Seja bem vindo(a) a seção Git!
@@ -8,7 +9,7 @@ Seja bem vindo(a) a seção Git!
 
 ### O que é Git?
 
-> Git é um sistema distribuído de [controle de versão](http://pt.wikipedia.org/wiki/Sistema_de_controle_de_vers%C3%A3o "link-externo")
+> Git é um sistema distribuído de [controle de versão](http://pt.wikipedia.org/wiki/Sistema_de_controle_de_vers%C3%A3o)
 > livre e de código aberto projetado para lidar com tudo, desde pequenos a grandes projetos com velocidade e eficiência.
 >
 > (Site oficial)
@@ -17,7 +18,7 @@ Seja bem vindo(a) a seção Git!
 
 ### Aprenda como instalar o Git
 
-Lei o artigo [Instalando o Git](/linux/cookbook/git/) na seção Linux e descubra como instalar o Git no Linux, Windows ou Mac.
+Lei o artigo [Instalando o Git](/linux/instalando-git/) na seção Linux e descubra como instalar o Git no Linux, Windows ou Mac.
 
 
 
@@ -25,28 +26,25 @@ Lei o artigo [Instalando o Git](/linux/cookbook/git/) na seção Linux e descubr
 
 O Git é famoso por ter sua curva de aprendizado acentuada.
 
-Pensando nisso, eu preparei esta sequência em 5 passos que vai direto ao ponto.
+Pensando nisso, eu preparei um curso muito "mão na massa" e que vai direto ao ponto.
 
-- Passo 1 [Tutorial para iniciar com o Git e GitHub](/git/tutorial-iniciando-git/)
-- Passo 2 [Code Schooll](https://try.github.io/levels/1/challenges/1 "link-externo")
-- Passo 3 [Como é trabalhar com Git - parte 1](/git/como-e-trabalhar-com-git-1/)
-- Passo 4 [Como é trabalhar com Git - parte 2](/git/como-e-trabalhar-com-git-2/)
-- Passo 5 [Learn Git Branching](http://pcottle.github.io/learnGitBranching/ "link-externo")
+Para você entender o Git você precisa trabalhar com ele, o curso é sobre [lógica de programação](cursos/logica-de-programacao-aliada-a-testes-unitarios-edicao-02-2018/), mas nele você poderá
+trabalhar com o Git em cada exercício.
 
-Após estes passos talvez você queria ter em mãos um [resumo dos principais comandos](/git/resumo/).
+
+{% include get-capitulo.html page_serie="git-intro" %} 
+{% include menus.html %} 
+
 
 
 ### Artigos
 
 
-<div class="list-group">
-    <a href="/git/dicas-configuracao/" class="list-group-item">Dicas de configuração do Git</a>
-    <a href="/git/netrc-nao-pedir-senha/" class="list-group-item">Para não ter que ficar redigitando a senha</a>
-    <a href="/git/colaborando-no-github/" class="list-group-item">Colaborando no Git Hub (em breve)</a>
-    <a href="/git/os-3-estados/" class="list-group-item">Os 3 estados - Working Directory, Index e HEAD (em breve)</a>
-</div> 
+{% include get-capitulo.html page_serie="git-artigos" %} 
+{% include menus.html %} 
 
 
+<!--
 ### Artigos de referência
 
 <div class="list-group">
@@ -57,11 +55,11 @@ Após estes passos talvez você queria ter em mãos um [resumo dos principais co
     <a href="/git/git-rm/" class="list-group-item">rm (em breve)</a>
     <a href="/git/git-tags/" class="list-group-item">tags (em breve)</a>
 </div> 
-
+-->
 
 ### Veja também
 
-- [Site oficial](http://git-scm.com/ "link-externo")
-- [Site oficial - docs](http://git-scm.com/docs "link-externo")
-- [Site oficial - Git Cheat Sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf "link-externo")
-- [Livro Pro Git, na web e em português](http://git-scm.com/book/pt-br/ "link-externo")
+- [Site oficial](http://git-scm.com/)
+- [Site oficial - docs](http://git-scm.com/docs)
+- [Site oficial - Git Cheat Sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+- [Livro Pro Git, na web e em português](http://git-scm.com/book/pt-br/)

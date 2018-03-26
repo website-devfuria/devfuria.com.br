@@ -56,4 +56,4 @@ A mensagem de erro não deve aparecer mais.
 - - -
 Fonte
    
-- [stackoverflow.com/questions/16677558](http://stackoverflow.com/questions/16677558/startup-unable-to-load-dynamic-library-usr-lib-php-modules-module-so "link-externo")
+- [stackoverflow.com/questions/16677558](http://stackoverflow.com/questions/16677558/startup-unable-to-load-dynamic-library-usr-lib-php-modules-module-so)

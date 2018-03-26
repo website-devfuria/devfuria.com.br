@@ -43,4 +43,4 @@ Adicione no arquivo:
 
 ### Fontes:
 
-- [http://stackoverflow.com/questions/10607534/aptana-studio-3-install-using-yum](http://stackoverflow.com/questions/10607534/aptana-studio-3-install-using-yum "link-externo")
+- [http://stackoverflow.com/questions/10607534/aptana-studio-3-install-using-yum](http://stackoverflow.com/questions/10607534/aptana-studio-3-install-using-yum)

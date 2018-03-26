@@ -1,6 +1,8 @@
 ---
 title:       Seletores CSS 
 description: 
+capitulo:    html-css-intro
+orem:        6
 ---
 
 Um documento HTML bem estruturado fornece a estrutura à qual seus estilos são aplicados. Para poder estilizar um

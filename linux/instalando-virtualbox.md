@@ -1,7 +1,7 @@
 ---
 title:       Instalando o VirtualBox no Linux
 description: Aprenda como instalar o VirtualBox no Linux
-serie:       VirtualBox
+capitulo:    linux-virtualbox
 ordem:       1
 ---
 
@@ -51,8 +51,8 @@ Reinicie (`reboot`) e execute:
 - - -
 Fontes
 
-- [www.if-not-true-then-false.com/install-virtualbox-with-yum-on-fedora-centos-red-hat-rhel](http://www.if-not-true-then-false.com/2010/install-virtualbox-with-yum-on-fedora-centos-red-hat-rhel/ "link-externo")
-- [www.if-not-true-then-false.com/install-virtualbox-guest-additions-on-fedora-centos-red-hat-rhel](http://www.if-not-true-then-false.com/2010/install-virtualbox-guest-additions-on-fedora-centos-red-hat-rhel/ "link-externo")
+- [www.if-not-true-then-false.com/install-virtualbox-with-yum-on-fedora-centos-red-hat-rhel](http://www.if-not-true-then-false.com/2010/install-virtualbox-with-yum-on-fedora-centos-red-hat-rhel/)
+- [www.if-not-true-then-false.com/install-virtualbox-guest-additions-on-fedora-centos-red-hat-rhel](http://www.if-not-true-then-false.com/2010/install-virtualbox-guest-additions-on-fedora-centos-red-hat-rhel/)
 
 
 
@@ -99,14 +99,14 @@ Instalar o Vbox:
 
 - - -
 Fonte:
-- [install-oracle-virtualbox-on-fedora](http://www.zealfortechnology.com/2012/06/install-oracle-virtualbox-on-fedora.html "link-externo")
+- [install-oracle-virtualbox-on-fedora](http://www.zealfortechnology.com/2012/06/install-oracle-virtualbox-on-fedora.html)
 
 
 
 Ubuntu
 ---
 
-Utilize o Software Center ou siga esse tutorial [Como instalar o VirtualBox no Ubuntu ](http://ubuntued.info/como-instalar-o-virtualbox-no-ubuntu "link-externo")
+Utilize o Software Center ou siga esse tutorial [Como instalar o VirtualBox no Ubuntu ](http://ubuntued.info/como-instalar-o-virtualbox-no-ubuntu)
 
 
 

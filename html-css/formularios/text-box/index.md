@@ -1,7 +1,7 @@
 ---
 title:       Textbox (input type=text)
 description: Artigo a respeito do controle textbox (formulário web) - HTML e CSS
-serie:       Controles Básicos (input)
+capitulo:       controles-basicos-input
 ordem:       2
 ---
 
@@ -167,4 +167,4 @@ input[type="text"] {
 - - -
 Fontes:
 
-- [www.cssportal.com/form-elements/text-box](http://www.cssportal.com/form-elements/text-box.php "link-externo")
+- [www.cssportal.com/form-elements/text-box](http://www.cssportal.com/form-elements/text-box.php)

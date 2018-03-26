@@ -1,0 +1,23 @@
+{% comment %}
+
+É um include que faz papel de uma função, portanto, digo que
+é uma função para retornar determinado capítulo.
+Cria a variável 'capitulo' que é utiliza pelo include 'menu'
+
+    Exemplo
+    {% include get-capitulo.html page_serie="Aqui vai o nome do capítulo" %}
+    {% include menus.html %}
+
+{% endcomment %}
+
+
+
+{% assign capitulo = "" | split: "|"  %}
+
+{% for page in site.pages %}
+    {% if page.capitulo == include.page_serie %}
+        {% assign capitulo = capitulo | push: page %}
+    {% endif %}
+{% endfor %}
+
+{% assign capitulo = capitulo | sort: 'ordem' %}

@@ -1,4 +1,5 @@
 ---
+layout:      index
 title:       Expressões Regulares
 description: Descomplicamos as expressões regulares
 ---
@@ -16,9 +17,10 @@ Seja bem vindo(a) a seção sobre Expressões Regulares!
 </div>
 
 
+
 ### Metacracteres
 
-{% include get-serie.html page_serie="Metacaracteres" %}
+{% include get-capitulo.html page_serie="er-metacaracteres" %}
 {% include menus.html %}
 
 
@@ -27,7 +29,7 @@ Seja bem vindo(a) a seção sobre Expressões Regulares!
 
 Subceção sobre [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/)
 
-{% include get-serie.html page_serie="JavaScript e Expressão Regular" %}
+{% include get-capitulo.html page_serie="JavaScript e Expressão Regular" %}
 {% include menus.html %}
 
 
@@ -36,33 +38,33 @@ Subceção sobre [Expressões Regulares em JavaScript](/regex/javascript-express
 
 Subceção sobre [Expressões Regulares em PHP](/regex/php-expressoes-regulares/)
 
-{% include get-serie.html page_serie="PHP e Expressão Regular" %}
+{% include get-capitulo.html page_serie="PHP e Expressão Regular" %}
 {% include menus.html %}
 
 
 
 ### Testadores Online
 
-O [regexpal](http://regexpal.com/ "link-externo") é o mais famoso, porém ele implementa apenas o "sabor" JavaScript, e de vez
+O [regexpal](http://regexpal.com/) é o mais famoso, porém ele implementa apenas o "sabor" JavaScript, e de vez
 em quando você não consegue acessar o site.
 
-Tanto o [regexper](http://www.regexper.com/ "link-externo") quanto o [debuggex](https://www.debuggex.com/ "link-externo")
+Tanto o [regexper](http://www.regexper.com/) quanto o [debuggex](https://www.debuggex.com/)
 transformam sua expressão regular em um gráfico, o que ajuda a compreendê-las.
 
-No site [regexplanet](http://www.regexplanet.com/ "link-externo") é possível testar as expressões regulares em diversos
+No site [regexplanet](http://www.regexplanet.com/) é possível testar as expressões regulares em diversos
 sabores: Python, Ruby, .NET, GO, Haskell, Java, JavaSript, etc...
 
 
 
 ### A fonte...
 
-[Aurélio Marinho](http://aurelio.net/regex/ "link-externo") é a autoridade máxima Brasileira a respeitos das Expressões
+[Aurélio Marinho](http://aurelio.net/regex/) é a autoridade máxima Brasileira a respeitos das Expressões
 Regulares.
 
-Seu livro [Expressões Regulares - uma abordargem divertida](http://www.piazinho.com.br/ "link-externo") é leitura obrigatória,
+Seu livro [Expressões Regulares - uma abordargem divertida](http://www.piazinho.com.br/) é leitura obrigatória,
 encontra-se na 4 edição
 (Novatec).
 
-Também é possível ler online a [1 edição do livro](http://aurelio.net/regex/guia/ "link-externo").
+Também é possível ler online a [1 edição do livro](http://aurelio.net/regex/guia/).
 
 

@@ -30,7 +30,7 @@ ANTES da codificação", fiquei intrigado mas não dei a devida atenção porque
 opinião formada sobre testes unitários. Cometi um erro, estava confundindo TDD com Testes unitários,
 mas só fui descobrir isso com ajuda de um amigo.
 
-Um outro belo dia, esse meu amigo ([Marcus Vinícius](https://github.com/marcusesa "link-externo")evangelista PHP)
+Um outro belo dia, esse meu amigo ([Marcus Vinícius](https://github.com/marcusesa)evangelista PHP)
 apareceu lá na escritório e me mostrou a técnica. De forma bem simples, prática e direta ele disse:
 
 1. Pense melhor no que você quer fazer
@@ -144,7 +144,7 @@ Para executar digite:
 
     phpunit SuaClasseTest.php
 
-Veja um exemplo neste [Gist](https://gist.github.com/flaviomicheletti/8041173 "link-externo")
+Veja um exemplo neste [Gist](https://gist.github.com/flaviomicheletti/8041173)
 
 
 ### JavaScript -> QUnit

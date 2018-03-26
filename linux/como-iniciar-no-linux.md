@@ -59,7 +59,7 @@ Se traçarmos a minha linha de tempo teremos:
 
 Essa sequência funcionou comigo, não posso afirmar que isso vai funcionar com você, mas fica aí a sugestão.
 
-Leia mais sobre em [http://www.hardware.com.br/tutoriais/arvore-genealogica-linux/](http://www.hardware.com.br/tutoriais/arvore-genealogica-linux/ "link-externo")
+Leia mais sobre em [http://www.hardware.com.br/tutoriais/arvore-genealogica-linux/](http://www.hardware.com.br/tutoriais/arvore-genealogica-linux/)
 
 
 
@@ -67,13 +67,13 @@ Leia mais sobre em [http://www.hardware.com.br/tutoriais/arvore-genealogica-linu
 
 Se você optar pelo Ubuntu, baixe o sistema nos sites:
 
-[http://ubuntu-br.org/](http://ubuntu-br.org/ "link-externo")
+[http://ubuntu-br.org/](http://ubuntu-br.org/)
 
-[http://www.ubuntu.com/](http://www.ubuntu.com/ "link-externo")
+[http://www.ubuntu.com/](http://www.ubuntu.com/)
 
 E veja um pouco deste tutorial no guia do hardware
 
-[http://www.hardware.com.br/tutoriais/ubuntu/](http://www.hardware.com.br/tutoriais/ubuntu/ "link-externo")
+[http://www.hardware.com.br/tutoriais/ubuntu/](http://www.hardware.com.br/tutoriais/ubuntu/)
 
 
 ### Iniciando suavemente (sem impacto, sem traumas, sem sustos)
@@ -85,10 +85,10 @@ pode perder seus arquivos e até mesmo ter que reinstalar o __Windows__.
 
 Experimente:
 
-1. [Live Cd's](http://pt.wikipedia.org/wiki/Live_CD "link-externo"). É um cd vivo (como o nome diz) onde você coloca o cd na bandeja e inicia seu computador; dentro de instantes terá o sistema operacional na memória. Ao reiniciar sua máquina (e retirar o cd da bandeja) tudo estará como sempre esteve.
+1. [Live Cd's](http://pt.wikipedia.org/wiki/Live_CD). É um cd vivo (como o nome diz) onde você coloca o cd na bandeja e inicia seu computador; dentro de instantes terá o sistema operacional na memória. Ao reiniciar sua máquina (e retirar o cd da bandeja) tudo estará como sempre esteve.
 
-2. [Máquinas virtuais](http://en.wikipedia.org/wiki/List_of_live_CDs "link-externo"). É um aplicativo que simula uma 
-máquina no seu computador. O [Virtual Box](https://www.virtualbox.org/ "link-externo") é a __"vm"__  mais fácil para começar.
+2. [Máquinas virtuais](http://en.wikipedia.org/wiki/List_of_live_CDs). É um aplicativo que simula uma 
+máquina no seu computador. O [Virtual Box](https://www.virtualbox.org/) é a __"vm"__  mais fácil para começar.
 
 Após você ter tido uma ou as duas experiências acima aí poderá partir para a aventura de instalar o __Linux__ sobre o 
 __Windows__ como __dual boot__. Sempre que você ligar seu computador poderá escolhar entre inicializar o __Windows__ ou 

@@ -1,8 +1,8 @@
 ---
 title:       "Metacaractere grupo ()"
 description: 
-serie:        Metacaracteres
-ordem:        13
+capitulo:    er-metacaracteres
+ordem:       13
 ---
 
 O metacaractere grupo agrupa opções, dentro do grupo podemos ter um ou mais caracteres, metacaracteres e outros grupo.

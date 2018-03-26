@@ -1,4 +1,5 @@
 ---
+layout:      artigo-solto
 title:       Introdução ao conceito intuitivo de banco de dados
 description: O que é um banco de dados? O que é uma tabela? O que são registros?
 ---
@@ -6,7 +7,7 @@ description: O que é um banco de dados? O que é uma tabela? O que são registr
 ![Desenho em quadrinhos satirizando ao (mal)uso do Excel!](vida_prog_112.png "O Excel foi, é e sempre será utilizado 
 indevidamente como banco de dados.")
 
-[Fonte da imagem](http://vidadeprogramador.com.br/2011/05/24/banco-de-dados/ "link-externo")
+[Fonte da imagem](http://vidadeprogramador.com.br/2011/05/24/banco-de-dados/)
 
 O Excel foi, é e sempre será utilizado indevidamente como banco de dados. Essa foi só para descontrair, porque se eu 
 começasse essa seção com "Na década de 70..." a matéria perderia a graça e aprender deve ser algo divertido.
@@ -100,7 +101,7 @@ Se juntarmos as colunas e os registros teremos as tabelas:
 
 ![Tabelas](ex01-tabela.jpg "Tabelas") 
 
-[Fonte da imagem](http://blog.thiagobelem.net/relacionamento-de-tabelas-no-mysql/ "link-externo")
+[Fonte da imagem](http://blog.thiagobelem.net/relacionamento-de-tabelas-no-mysql/)
 
 
 
@@ -113,7 +114,7 @@ A imagem abaixo ilustra nosso banco de dados:
 
 ![Diagrama que representa um banco de dados](db.jpg "Diagrama que representa um banco de dados")
 
-[Fonte da imagem](http://www2.itssolucoes.com.br/banco-de-dadoss "link-externo")
+[Fonte da imagem](http://www2.itssolucoes.com.br/banco-de-dadoss)
 
 O cilindro azul e verde representam um banco de dados, os quadros abaixo deles representam nossas tabelas,
 esses quadros estão no formato __ER (Entidade Relacionamento)__, falaremos disso em breve.

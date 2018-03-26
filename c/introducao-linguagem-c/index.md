@@ -1,6 +1,8 @@
 ---
 title:       Rápida introdução a linguagem C
 description: Uma pequena e rápida introdução a linguagem c
+capitulo:    c-intro
+ordem:       1
 ---
 
 Rápida introdução a __linguagem C__.

@@ -7,7 +7,7 @@ description: Como instalar o Ninja IDE no Linux (Debian wheezy)
 
 NINJA-IDE é o acrónimo "Ninja-IDE Is Not Just Another IDE" (Ninja-IDE Não é apenas outro IDE).
 
-É uma [IDE](http://pt.wikipedia.org/wiki/Ambiente_de_desenvolvimento_integrado "link-externo") para desenvolvimento
+É uma [IDE](http://pt.wikipedia.org/wiki/Ambiente_de_desenvolvimento_integrado) para desenvolvimento
 na linguagem [Python](/python/).
 
 
@@ -50,7 +50,7 @@ Para resolver o problema basta executar:
 O legal desta receita é que ela também serve para __Ubuntu__.
 
 Novamente no site oficial, abaixo do link para download, estava um receita de instalação via 
-[ppa](http://www.diolinux.com.br/2013/02/como-adicionar-um-ppa-no-ubuntu.html "link-externo"), só que para Ubuntu.
+[ppa](http://www.diolinux.com.br/2013/02/como-adicionar-um-ppa-no-ubuntu.html), só que para Ubuntu.
 
 Será que funciona para Debian? Sim, funciona.
 
@@ -59,7 +59,7 @@ Será que funciona para Debian? Sim, funciona.
     apt-get install ninja-ide
 
 Mas o problema de dependência, obviamente, também afetará o 
-[apt-get](http://www.hardware.com.br/tutoriais/tutorial-completo-apt-get/ "link-externo").
+[apt-get](http://www.hardware.com.br/tutoriais/tutorial-completo-apt-get/).
 
 Mas nada que um `apt-get -f install` não resolva.
     
@@ -67,5 +67,5 @@ Mas nada que um `apt-get -f install` não resolva.
 - - -
 Fonte
 
-- [Site Oficial - NINJA-IDE](http://ninja-ide.org "link-externo")
-- [Repositório no GitHub](https://github.com/ninja-ide "link-externo")
+- [Site Oficial - NINJA-IDE](http://ninja-ide.org)
+- [Repositório no GitHub](https://github.com/ninja-ide)

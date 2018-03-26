@@ -1,11 +1,10 @@
 ---
 title:       Somando números (recursão)
 description: faça um algoritmo que some os dígitos de 1 até n
-serie:       Lógica Nível 6
+capitulo:    logica-nivel-6
 ordem:       2
 ---
 
-{% include /alertas/logica-apresentacao.html %}
 
 
 Exercício de lógica de programação

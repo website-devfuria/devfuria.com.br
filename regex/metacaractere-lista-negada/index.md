@@ -1,8 +1,8 @@
 ---
 title:       "Metacaractere lista negada [^]"
 description: 
-serie:        Metacaracteres
-ordem:        3
+capitulo:    er-metacaracteres
+ordem:       3
 ---
 
 Ela casará com qualquer coisa fora os componentes listados.

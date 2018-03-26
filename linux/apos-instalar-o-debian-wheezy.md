@@ -1,6 +1,8 @@
 ---
 title:       Após instalar o Debian Wheezy
 description: O que instalar depois de instalar o Debian Wheezy
+capitulo:    linux-artigos
+ordem:
 ---
 
 O básico:
@@ -41,4 +43,4 @@ Chrome
     apt-get install chromium chromium-l10n
 
 
-Fonte: [wiki.debian.org/Chromium](https://wiki.debian.org/Chromium "link-externo")
+Fonte: [wiki.debian.org/Chromium](https://wiki.debian.org/Chromium)

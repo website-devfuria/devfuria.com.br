@@ -28,7 +28,7 @@ Eu estou gravando uma série de vídeos explicando em detalhes certos aspectos d
 + [[06] Detalhes do curso - parte 2](https://youtu.be/DYpIWqmGhZg)
 + [[07] Vai começar o curso de lógica + testes ](https://youtu.be/Ua6sHnlNFws)
 + [[08] Curso de lógica de programação + testes unitários](https://youtu.be/SnCoxHMBcqQ)
-+ [AO VIVO | Flávio 0 vs 2 Youtube](https://youtu.be/lgpCyunRRSw)
++ [AO VIVO  &#124; Flávio 0 vs 2 Youtube](https://youtu.be/lgpCyunRRSw)
 
 __Módulo #01:__
 
@@ -38,7 +38,7 @@ __Módulo #01:__
 + [Aula #1c - Fazendo a máquina virtual se comunicar pela rede](https://youtu.be/zOA8szJPcb4)
 + [Aula #1d - Acessando sua máquina virtual pelo terminal Git Bash](https://youtu.be/7QwTWLyWzdE)
 + [Aula #1e - Como serão os testes na linguagem Python](https://youtu.be/sZZNSvvn3I8)
-+ [AO VIVO | Um pouco sobre mim, sobre o devfuria e sobre o curso de lógica!](https://youtu.be/6YxxUDP0FDs)
++ [AO VIVO  &#124; Um pouco sobre mim, sobre o devfuria e sobre o curso de lógica!](https://youtu.be/6YxxUDP0FDs)
 
 __Módulo #02:__
 
@@ -104,6 +104,23 @@ __Módulo #08:__
 + [Aula #8c - Descobrir os dias em Node (JavaScript)](https://youtu.be/fs3ygRM4wHA)
 + [Aula #8d - Descobrir os dias em C](https://youtu.be/38rowYJTz_U)
 + [Aula #8e - git commit + git push](https://youtu.be/IlXhDGVKRSU)
+
+__Módulo #09:__
+
++ [Aula #9a - Introdução](https://youtu.be/hbRpsIztPL8)
++ [Aula #9b - Operações Aritméticas em Python](https://youtu.be/Sgy6VlavxQw)
++ [Aula #9c - Operações Aritméticas em Node](https://youtu.be/hz-Js_zoFeQ)
++ [Aula #9d - Operações Aritméticas em C](https://youtu.be/AAil6y5n0Q0)
++ []()
+
+__Módulo #10:__
+
++ [Aula #10a Introdução](https://youtu.be/iT57IjW1VfY)
++ [Aula #10b - Custo de um carro (passo 1)](https://youtu.be/vxSavEbacFE)
++ [Aula #10c - Custo de um carro (passo 2)](https://youtu.be/NoXGWVmt6w4)
++ [Aula #10d - Custo de um carro (passo 3)](https://youtu.be/nAVlUE_bn0U)
++ [Aula #10e - Custo de um carro (passo 4)](https://youtu.be/eR8LQgcktag)
++ [Aula #10f - Comentários](https://youtu.be/qmu-9OqQ4sI)
 
 
 ## Para quem é indicado ?
@@ -267,17 +284,16 @@ Com um currículo desses meu amigo, dúvido que você não encontra-rá um bom e
 
 
 
-## Entre em contato
+## Se inscreva ( não fique de fora dessa!!! )
 
 - [facebbok/devfuria](https://www.facebook.com/devfuria/)
 - [youtube/devfuria](https://www.youtube.com/channel/UC5hmNJ79ESjBf0SNR-iguIQ)
-- sitedevfuria@gmail.com
+- {{ site.email }}
 
-Entre para nossa lista e não perca nenhuma novidade !!!!
+Se inscreva para a próxima turma e não perca nenhuma novidade !!!!
 
-<a href="{{ page.cadastro }}" class="btn btn-primary btn-large">Cadastre seu email</a>
+<a class="btn btn-primary" href="{{ page.cadastro }}" role="button">Próxima Turma!!!</a>
 
-<br />
 <br />
 <br />
 <br />

@@ -1,4 +1,5 @@
 ---
+layout:      index
 title:       Linux
 description: Tudo o que você precisa saber sobre o Linux!
 ---
@@ -8,15 +9,13 @@ Seja bem vindo(a) a seção Linux!
 Se você nunca utilizou o Linux e está precisando de um empurrão veja a matéria:
 [Como iniciar no Linux](./como-iniciar-no-linux/ "Como iniciar no Linux").
 
-
-
-### Cookbook - receitas de instalação de softwares no Linux
+### Receitas de instalação de softwares no Linux
 
 Instalar  aplicativos no Linux é um desafio constante e normalmente assusta o pessoal iniciante.
 
 Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, veja como instalar...
 
-#### NodeJs
+### Instalação do NodeJs
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-nodejs/" >Instalando o nodejs</a>
@@ -24,7 +23,7 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-#### Python
+### Instalação do Python
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-python/" >Instalando o Python 3</a>
@@ -35,14 +34,14 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-#### Ruby
+### Instalação do Ruby
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-ruby-on-rails/" >Instalando o Ruby On Rails</a>
 </div>
 
 
-#### PHP
+### Instalação do PHP
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-php/" >Instalando o PHP  no Linux</a>
@@ -52,7 +51,7 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-#### Apache
+### Instalação do Apache
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-apache-via-yum-apt-get/" >Instalando e configurando o Apache no Linux</a>
@@ -64,7 +63,7 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-#### Bancos de dados
+### Instalação do Bancos de dados
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-mysql/" >Instalando o MySql no Linux</a>
@@ -74,8 +73,7 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-
-####  Navegadores web (browser)
+### Instalação do  Navegadores web (browser)
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-firefox/" >Instalando o última versão do Firefox</a>
@@ -84,7 +82,7 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-####  IDE's e editores de texto
+### Instalação do  IDE's e editores de texto
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-netbeans/" >Instalando o Netbeans no Linux</a>
@@ -94,10 +92,9 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-####  Utilitários
+### Instalando Utilitários
 
 <div class="list-group">
-    <a class="list-group-item" href="/linux/instalando-virtualbox/" >Instalando o VirtualBox no Linux</a>
     <a class="list-group-item" href="/linux/instalando-git/" >Instalando o git</a>
     <a class="list-group-item" href="/linux/instalando-java/" >Instalando conjunto de utilitários JDK (Java Development Kit)</a>
     <a class="list-group-item" href="/linux/instalando-java-oracle/" >Instalando conjunto de utilitários JDK (Java Development Kit) versão Oracle</a>
@@ -116,7 +113,7 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-####  Audio & Som
+### Instalação do  Audio & Som
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/instalando-vlc/" >Instalando VLC no CentOS</a>
@@ -129,9 +126,10 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 </div>
 
 
-
-
 ### Artigos
+
+{% include get-capitulo.html page_serie="linux-artigos" %}
+{% include menus.html %}
 
 <div class="list-group">
     <a class="list-group-item" href="/linux/utilitario-cat/">Utilitário de terminal cat (Linux)</a>
@@ -154,18 +152,18 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 
 ### Série sobre o Virtual Box
 
-{% include get-serie.html page_serie="VirtualBox" %}
+{% include get-capitulo.html page_serie="linux-virtualbox" %}
 {% include menus.html %}
 
 
 ### Livros sobre Linux - para iniciantes
 
- - __Dominando o Linux__ livro online disponílvel em [www.hardware.com.br/livros/dominando-linux/](http://www.hardware.com.br/livros/dominando-linux/ "link-externo")
+ - __Dominando o Linux__ livro online disponílvel em [www.hardware.com.br/livros/dominando-linux/](http://www.hardware.com.br/livros/dominando-linux/)
 <br /> ![Figura da capa do livro 'Linux, um guia prático'](livro-entendendo-dominando-linux-morimoto.jpg "linux")
 
  - __Linux guia prático__ - Excelente! Outro livro na qual o Morimoto deu um show. O legal é que ele trás uma visão 
 panorâmica ao mesmo tempo que mantém uma riqueza de detalhes. Eu comprei o livro impresso por $70 pilas mas é possível
-ler o livro (gratuitamente) no site do morimoto: [www.hardware.com.br/livros/linux/](http://www.hardware.com.br/livros/linux/ "link-externo").
+ler o livro (gratuitamente) no site do morimoto: [www.hardware.com.br/livros/linux/](http://www.hardware.com.br/livros/linux/).
 <br /> ![Figura da capa do livro 'Linux, guia prático'](linux-guia-pratico-morimoto.jpg "linux")
 
  - __Linux um guia prático de comando, editores e programação de Shell__ - Recomendadíssimo. Ótimo livro, conteúdo de uma qualidade impressionante. Ele é passo a passo
@@ -180,6 +178,6 @@ páginas de referência. Valeu cada centavo.
 
 Alguns lugares interessantes para pesquisar.
 
-- [http://www.hardware.com.br/](http://www.hardware.com.br "link-externo")
-- [http://www.vivaolinux.com.br/linux/](http://www.vivaolinux.com.br/linux/ "link-externo")
-- [http://www.guiafoca.org/](http://www.guiafoca.org/ "link-externo")
+- [http://www.hardware.com.br/](http://www.hardware.com.br)
+- [http://www.vivaolinux.com.br/linux/](http://www.vivaolinux.com.br/linux/)
+- [http://www.guiafoca.org/](http://www.guiafoca.org/)

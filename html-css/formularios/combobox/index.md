@@ -1,7 +1,7 @@
 ---
 title:       Caixa de seleção (combo box)
 description: Artigo a respeito do controle combobox. select (formulário web) - HTML e CSS
-serie:       Controles Básicos (não input)
+capitulo:       controles-basicos-naoinput
 ordem:       1
 ---
 

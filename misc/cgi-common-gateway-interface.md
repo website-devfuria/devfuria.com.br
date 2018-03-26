@@ -1,4 +1,5 @@
 ---
+layout:      artigo-solto
 title:       CGI Servindo páginas web (html)
 description: Este artigo é um exemplo de utilização de scripts CGI sendo servidos pelo Apache
 ---
