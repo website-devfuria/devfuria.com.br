@@ -7,15 +7,13 @@ ordem:       4
 
 
 
-Exercício de lógica de programação
----
+## Exercício de lógica de programação
 
 Faça um programa para calcular o MMC (mínimo múltiplo comum) entre dois números.
 
 
 
-Linguagem C
----
+## Linguagem C
 
 ### Primeira solução
 
@@ -104,8 +102,7 @@ int mmc(int num1, int num2) {
 
 
 
-Linguagem Python
----
+## Linguagem Python
 
 ```python
 # -*- coding: utf-8 -*-
@@ -159,8 +156,7 @@ assert 60 == mmc(12, 20)
 
 
 
-Linguagem JavaScript (Node.js)
----
+## Linguagem JavaScript (Node.js)
 
 Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
 

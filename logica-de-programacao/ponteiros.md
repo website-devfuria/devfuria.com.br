@@ -190,6 +190,6 @@ ainda há muita coisa para aprendermos sobre ponteiros.
 
 Que tal vermos como eles agem sobre uma função?
 
-Esse é o próximo exercício [Trocar o valor de duas variáveis (utilizando ponteiros)](/logica-de-programacao/duas-variaveis-ponteiros/)
+Vá para a pŕoxima matéria!
 
-
+Até lá, abs. !
