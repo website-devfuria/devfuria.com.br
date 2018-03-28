@@ -95,7 +95,7 @@ __Módulo #07:__
 + [Aula #7b - Média Simples em Python](https://youtu.be/XDS0nwJRLX0)
 + [Aula #7c - Média Simples em Node (JavaScript)](https://youtu.be/02yw_2G-D-k)
 + [Aula #7d - Média Simples na linguagen C](https://youtu.be/MJhCET-9pDk)
-+ []()
+
 
 __Módulo #08:__
 
@@ -105,13 +105,14 @@ __Módulo #08:__
 + [Aula #8d - Descobrir os dias em C](https://youtu.be/38rowYJTz_U)
 + [Aula #8e - git commit + git push](https://youtu.be/IlXhDGVKRSU)
 
+
 __Módulo #09:__
 
 + [Aula #9a - Introdução](https://youtu.be/hbRpsIztPL8)
 + [Aula #9b - Operações Aritméticas em Python](https://youtu.be/Sgy6VlavxQw)
 + [Aula #9c - Operações Aritméticas em Node](https://youtu.be/hz-Js_zoFeQ)
 + [Aula #9d - Operações Aritméticas em C](https://youtu.be/AAil6y5n0Q0)
-+ []()
+
 
 __Módulo #10:__
 
