@@ -191,7 +191,7 @@ Linguagem Python
 # Função que descobre se o número é ou não primo.
 #
 def ehPrimo(num):
-	pass
+    pass
 
 #
 # Testes
@@ -219,17 +219,17 @@ Se quisermos imitar o que fizemos em C, aqui vai...
 
 ```python
 def ehPrimo(num):
-	divisores = 0
-	i = 1
-	while i <= num:
-		if num % i == 0 :
-			divisores = divisores + 1
-		i = i + 1
+    divisores = 0
+    i = 1
+    while i <= num:
+        if num % i == 0 :
+            divisores = divisores + 1
+        i = i + 1
 
-	if divisores == 2:
-		return True
-	else:
-		return False
+    if divisores == 2:
+        return True
+    else:
+        return False
 ```
 
 Você pode alterar o laço `while` por um laço `for`, veja exemplo abaixo.
@@ -239,9 +239,9 @@ Você pode alterar o laço `while` por um laço `for`, veja exemplo abaixo.
     ...
     ...
     for i in range(1, num + 1):
-    	...
-    	...
-    	...
+        ...
+        ...
+        ...
 ```
 
 Agora se quisermos partir para uma solução __um pouco mais__ pythonica, que tal...

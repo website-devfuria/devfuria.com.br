@@ -12,6 +12,19 @@ Exercício de lógica de programação
      
 Crie uma função que descubra se um valor é par ou ímpar.
 
+Neste exercício nós utilizarmos o operador módulo `%`.
+
+A operação módulo encontra o resto da divisão de um número por outro.
+
+Dados dois números a (o dividendo) e b o divisor, a modulo b (a mod b) é o resto da divisão de a por b. 
+
+Por exemplo, 7 mod 3 seria 1, enquanto 9 mod 3 seria 0.
+
+Portanto sua função deve...
+
+- retornar 1 ou mais caso negativo (é ímpar) e
+- retornar 0 caso positivo (é par)
+
         
 
 Linguagem C
@@ -22,14 +35,10 @@ Linguagem C
 #include <stdio.h>
 #include <assert.h>
 
+//
 // Função que descobre se um número é par ou ímpar
 //
-// retornará 1 caso positivo
-// retornará 0 caso negativo
-//
 int ehPar(int numero) {
-
-    // Aqui entra a lógica do programa.
 
 }
 
@@ -38,9 +47,9 @@ int ehPar(int numero) {
 //
 int main (){
 
-    assert(ehPar(8) == 0);
-    assert(ehPar(7) == 1);
-    assert(ehPar(0) == 0);
+    assert(ehPar(8) == 1);
+    assert(ehPar(7) == 0);
+    assert(ehPar(0) == 1);
 
     return 0;
 }
@@ -53,13 +62,15 @@ int main (){
 #include <stdio.h>
 #include <assert.h>
 
+//
 // Função que descobre se um número é par ou ímpar
 //
-// retornará 1 caso positivo
-// retornará 0 caso negativo
-//
 int ehPar(int numero) {
-    return numero % 2;
+    if (numero % 2 == 0) {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 //
@@ -67,9 +78,9 @@ int ehPar(int numero) {
 //
 int main (){
 
-    assert(ehPar(8) == 0);
-    assert(ehPar(7) == 1);
-    assert(ehPar(0) == 0);
+    assert(ehPar(8) == 1);
+    assert(ehPar(7) == 0);
+    assert(ehPar(0) == 1);
 
     return 0;
 }
@@ -81,20 +92,18 @@ Linguagem Python
 ```python
 # -*- coding: utf-8 -*-
 
+#
 # Função que descobre se um número é par ou ímpar
 #
-# retornará 1 caso positivo
-# retornará 0 caso negativo
-#
 def ehPar(numero):
-	pass
+    pass
 
 #
 # Testes
 #
-assert ehPar(8) == 0
-assert ehPar(7) == 1
-assert ehPar(0) == 0
+assert ehPar(8)
+assert not ehPar(7)
+assert ehPar(0)
 ```
 
 
@@ -104,20 +113,21 @@ assert ehPar(0) == 0
 ```python
 # -*- coding: utf-8 -*-
 
+#
 # Função que descobre se um número é par ou ímpar
 #
-# retornará 1 caso positivo
-# retornará 0 caso negativo
-#
 def ehPar(numero):
-	return numero % 2
+    if numero % 2 == 0:
+        return True
+    else:
+        return False
 
 #
 # Testes
 #
-assert ehPar(8) == 0
-assert ehPar(7) == 1
-assert ehPar(0) == 0
+assert ehPar(8)
+assert not ehPar(7)
+assert ehPar(0)
 ```
 
 
@@ -130,14 +140,10 @@ Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para r
 ```javascript
 var assert = require('assert');
 
+// 
 // Função que descobre se um número é par ou ímpar
 //
-// retornará 1 caso positivo
-// retornará 0 caso negativo
-//
 var ehPar = function(numero) {
-
-
 
 }
 
@@ -145,13 +151,12 @@ var ehPar = function(numero) {
 // Testes
 //
 try {
-    assert.equal(0, ehPar(8));
-    assert.equal(1, ehPar(7));
-    assert.equal(0, ehPar(0));
+    assert.ok(ehPar(8));
+    assert.ok(!ehPar(7));
+    assert.ok(ehPar(0));
 } catch(e) {
     console.log(e);
 }
-
 ```
 
 
@@ -161,26 +166,27 @@ try {
 ```javascript
 var assert = require('assert');
 
+// 
 // Função que descobre se um número é par ou ímpar
 //
-// retornará 1 caso positivo
-// retornará 0 caso negativo
-//
 var ehPar = function(numero) {
-    return numero % 2;
+    if (numero % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 //
 // Testes
 //
 try {
-    assert.equal(0, ehPar(8));
-    assert.equal(1, ehPar(7));
-    assert.equal(0, ehPar(0));
+    assert.ok(ehPar(8));
+    assert.ok(!ehPar(7));
+    assert.ok(ehPar(0));
 } catch(e) {
     console.log(e);
 }
-
 ``` 
 
 
