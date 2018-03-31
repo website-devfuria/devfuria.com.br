@@ -2,10 +2,9 @@
 
 O site aborda desenvolvimento de aplicações web.
 
-Não é um blog, ele parece-se mais com um site de cursos.
-
 Ele é feito especialmente para o público iniciante.
 
+Não é um blog, ele parece-se mais com um site de cursos.
 
 
 
@@ -40,4 +39,4 @@ Para gerar o site utilize o jekyll.
 
 ## Contato
 
-flaviomicheletti@hotmail.com
+sitedevfuria@gmail.com

@@ -15,8 +15,6 @@ Faça um programa para calcular o MMC (mínimo múltiplo comum) entre dois núme
 
 ## Linguagem C
 
-### Primeira solução
-
 Se calcularmos o __MDC__ poderemos utilizar a propriedade:
 
 "Sejam __a__ e __b__ dois ou mais números naturais não nulos temos que MMC(a, b) . MDC(a, b) = a . b."
