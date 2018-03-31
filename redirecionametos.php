@@ -60,12 +60,13 @@ return array(
     "/javascript/forms/select-combobox/"           => "/javascript/manipulando-combobox-select-com-javascript/",
     "/js/basico/select-combobox/"                  => "/javascript/manipulando-combobox-select-com-javascript/",
 
-    "/javascript/node.js/ns-02-baby-steps/"                 => "//node.js/learnyounode-02-baby-steps/",
-    "/javascript/node.js/ns-03-my-first-io/"                => "//node.js/learnyounode-03-my-first-io/",
+    "/javascript/node.js/"                                  => "/node.js/",
+    "/javascript/node.js/ns-02-baby-steps/"                 => "/node.js/learnyounode-02-baby-steps/",
+    "/javascript/node.js/ns-03-my-first-io/"                => "/node.js/learnyounode-03-my-first-io/",
     "/javascript/mocha-teste-seu-javascript/"               => "/node.js/mocha-teste-seu-javascript/",
     
     "/javascript/node.js/ns-learyounode/"                   => "/node.js/introducao-ao-learnyounode/",
-    "/javascript/node.js/expressjs-introducao/   "          => "/node.js/introducao-ao-framework-express-js/",
+    "/javascript/node.js/expressjs-introducao/"             => "/node.js/introducao-ao-framework-express-js/",
     "/javascript/node.js/expressjs-rotas-routing/"          => "/node.js/o-basico-sobre-rotas-no-express-js/",
     "/javascript/node.js/mocha-configurando-repositorio/"   => "/node.js/configurando-repositorio-git-para-trabalhar-com-mocha/",
     "/javascript/node.js/mocha-teste-seu-javascript/"       => "/node.js/testando-javascript-com-o-mocha/",
