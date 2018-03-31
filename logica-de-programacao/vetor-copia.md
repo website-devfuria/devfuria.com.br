@@ -120,7 +120,7 @@ lista1 = [10, 20, 30]
 
 lista2 = []
 for i in lista1:
-	lista2.append(i)
+    lista2.append(i)
 
 #
 # Será que as listas são iguais?
@@ -134,10 +134,10 @@ Em Python podemos utilizar lista e funções sem o inconveniente de ter que pass
 # -*- coding: utf-8 -*-
 
 def copiarLista(lista1):
-	nova_lista = []
-	for i in lista1:
-		nova_lista.append(i)
-	return nova_lista
+    nova_lista = []
+    for i in lista1:
+        nova_lista.append(i)
+    return nova_lista
 
 #
 # Será que as listas são iguais?

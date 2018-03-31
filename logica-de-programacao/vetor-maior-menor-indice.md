@@ -126,13 +126,13 @@ iMenor = 0
 i = 0
 while i < len(lista):
 
-	if lista[i] > lista[iMaior]:
-		iMaior = i
+    if lista[i] > lista[iMaior]:
+        iMaior = i
 
-	if lista[i] < lista[iMenor]:
-		iMenor = i
+    if lista[i] < lista[iMenor]:
+        iMenor = i
 
-	i = i + 1
+    i = i + 1
 
 #
 # Testes
@@ -153,11 +153,11 @@ iMenor = 0
 
 for index, item in enumerate(lista):
 
-	if lista[index] > lista[iMaior]:
-		iMaior = index
+    if lista[index] > lista[iMaior]:
+        iMaior = index
 
-	if lista[index] < lista[iMenor]:
-		iMenor = index
+    if lista[index] < lista[iMenor]:
+        iMenor = index
 
 #
 # Testes
@@ -180,8 +180,6 @@ var assert = require('assert');
 //
 // Sua lógica
 //
-
-
 
 
 
@@ -216,7 +214,7 @@ for(i = 0; i < arr.length; i++) {
     }
 
     if (arr[i] < arr[iMenor]) {
-       iMenor = i;        
+       iMenor = i;
     }
 }
 

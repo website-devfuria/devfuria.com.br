@@ -29,7 +29,7 @@ int main() {
     //
     // Teste
     //
-    assert(1== resp);
+    assert(1 == resp);
 
     return (0);
 }
@@ -64,7 +64,7 @@ int main() {
     //
     // Teste
     //
-    assert(1== resp);
+    assert(1 == resp);
 
     return (0);
 }
@@ -78,7 +78,7 @@ Linguagem Python
 
 Dica: em Python tente remover os duplicados e depois comparar os tamanhos das listas.
 
-Se os tamanhos forem iguais sabemos que não houve alteração, nem tão pouco valores repetidos. 
+Se os tamanhos forem iguais sabemos que não houve alteração, nem tão pouco valores repetidos.
 
 Se os tamanhos forem diferentes é porque houve valores repetidos.
 
@@ -108,7 +108,7 @@ Este exercício de lógica é para praticar laços de repetição, então aí va
 def haDuplicados(lista):
     _lis = []
 
-	# removendo duplicados
+    # removendo duplicados
     for x in lista:
         if x not in _lis:
             _lis.append(x)
@@ -127,22 +127,22 @@ Resolvo separar as obrigações em duas funções...
 ```python
 def removerDuplicados(duplicado):
     _lis = []
-    
+
     for x in duplicado:
         if x not in _lis:
             _lis.append(x)
-    
+
     return _lis
 
 def haDuplicados(lista):
-	if len(lista) != len(removerDuplicados(lista)):
-		return True
-	else:
-		return False
+    if len(lista) != len(removerDuplicados(lista)):
+        return True
+    else:
+        return False
 ```
 
 Já melhorou! Agora é nítido que o código funciona em duas etapas. Isso faz toda a diferença, por que agora estou olhando
-individualmente para cada função. 
+individualmente para cada função.
 
 Estou olhando para `removerDuplicados()` e me pergunto dá para simplificar?
 
@@ -172,8 +172,8 @@ def haDuplicados(lista):
         return False
 ```
 
-Quem não conhece a função `set()` do Python vai ficar meio na dúvida do funcionamento do código, mas codificar pensando
-no desenvolvedor iniciante está fora de cogitação. Neste caso, nada que um bom comentário não resolva.
+Quem não conhece a função `set()` do Python vai ficar meio na dúvida do funcionamento do código.
+Neste caso, nada que um bom comentário não resolva.
 
 ```python
 # Descobre se há duplicados em duas etapas.
@@ -183,7 +183,7 @@ def haDuplicados(lista):
     ...
 ```
 
-Estando tudo no lugar, sobrou tempo para raciocinar melhor e percebemos que a expressão é o próprio resultado, então... 
+Estando tudo no lugar, sobrou tempo para raciocinar melhor e percebemos que a expressão é o próprio resultado, então...
 
 ```python
 def haDuplicados(lista):
@@ -206,9 +206,7 @@ var assert = require('assert');
 
 var haDuplicados = function(arr) {
 
-
     // aqui entra a sua lógica
-
 
 }
 
@@ -228,8 +226,8 @@ try {
 
 ### Solução na linguagem JavaScript (Node.js)
 
-Nós poderíamos imitar a linguagem C na solução, mas não precisamos nem perder o nosso tempo com isso. Também poderíamos 
-resolver em 2 passos, semelhante a solução em Python (removemos e depois comparamos o tamanho das listas). 
+Nós poderíamos imitar a linguagem C na solução, mas não precisamos nem perder o nosso tempo com isso. Também poderíamos
+resolver em 2 passos, semelhante a solução em Python (removemos e depois comparamos o tamanho das listas).
 Mas eu quero tentar algo diferente, será que conseguiremos descobrir se há ou não repetidos sem mexer no array?
 
 Sim! Veja o código...
@@ -241,7 +239,7 @@ var haDuplicados = function(arr) {
     var i;
     for(i = 0; i < arr.length; i++) {
         if(arr.indexOf(arr[i]) != i) {
-            return true;    
+            return true;
         };
     }
     return false;
@@ -271,7 +269,7 @@ O segredo está na utilização da função embutida `indexOf()`, ela retorna o 
     console.log(arr.indexOf(300)); // 2 <--- atenção
     console.log(arr.indexOf(500)); // 4
 
-A função retorná sempre o primeiro valor encontrado e aqui está a mágica. Quando houver repetido, teremos um pequeno 
+A função retorná sempre o primeiro valor encontrado e aqui está a mágica. Quando houver repetido, teremos um pequeno
 desencontro entre valor e índice, veja as expressões abaixo...
 
     arr.indexOf(100) == 0; // true
@@ -280,7 +278,7 @@ desencontro entre valor e índice, veja as expressões abaixo...
     arr.indexOf(300) == 3; // false <--- aqui temos o valor repetido
     arr.indexOf(500) == 4; // true
 
-Resumindo, sempre que houver valores repetidos teremos ao menos um valor `false`, logo basta percorrer o array e checar 
+Resumindo, sempre que houver valores repetidos teremos ao menos um valor `false`, logo basta percorrer o array e checar
 se o valor atual bate com o índice (do laço, da iteração). Se ainda não entendeu, veja o código comentado abaixo.
 
 ```javascript
@@ -294,7 +292,7 @@ var haDuplicados = function(arr) {
         // for diferente do índice corrente "i"
         // retornamos "true"
         if(arr.indexOf(arr[i]) != i) {
-            return true;    
+            return true;
         };
     }
     // Se não houver repetido
@@ -302,5 +300,3 @@ var haDuplicados = function(arr) {
     return false;
 }
 ```
-
-
