@@ -3,7 +3,7 @@ layout:      cursos
 title:       Curso de Lógica de Programação Aliada a Testes Unitários
 description:
 edicao:      Primeira Edição (Fevereiro/2018)
-cadastro:    "/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=index-do-curso"
+cadastro:    "/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=index-do-curso"
 #cadastro:    https://goo.gl/forms/LCWvmFIUr747EXai2
 ---
 
@@ -122,6 +122,8 @@ __Módulo #10:__
 + [Aula #10d - Custo de um carro (passo 3)](https://youtu.be/nAVlUE_bn0U)
 + [Aula #10e - Custo de um carro (passo 4)](https://youtu.be/eR8LQgcktag)
 + [Aula #10f - Comentários](https://youtu.be/qmu-9OqQ4sI)
++ [AO VIVO &#124; Curso de Lógica + Testes](https://youtu.be/4niqahLO4nk)
+
 
 
 ## Para quem é indicado ?
