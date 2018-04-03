@@ -34,12 +34,12 @@ Eu sei que `10` é o resultado esperado da função `dobro()` caso o parâmatro 
 
 Em outras palavras, é o mesmo que dizer que a expressão `10 == dobro(5)` retornará `true`.
 
-Entendido isso podemos avançar. A função `assert()` funciona da seguinte maneira: ela fica em silêncio se o parâmetro 
+Entendido isso podemos avançar. A função `assert()` funciona da seguinte maneira: ela fica em silêncio se o parâmetro
 for verdadeiro `assert(true)` e ela "grita" se o parâmetro for `false` `asssert(false)`.
 
 Se o programa ficar em silêncio (não responder nada, absolutamente nada), entendemos então que o teste está funcionado.
 
-Se o programa "gritar" alguma coisa, entendemos que o programa não está fazendo o que deveria fazer e que, portanto, a 
+Se o programa "gritar" alguma coisa, entendemos que o programa não está fazendo o que deveria fazer e que, portanto, a
 lógica empregada precisa ser corrigida.
 
 Vamos botar a mão na massa...
@@ -64,10 +64,10 @@ int dobro(int num) {
 //
 int main (){
 
-	assert(10 == dobro(5));
-	assert(12 == dobro(6));
+    assert(10 == dobro(5));
+    assert(12 == dobro(6));
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -107,10 +107,10 @@ int dobro(int num) {
 //
 int main (){
 
-	assert(10 == dobro(5));
-	assert(12 == dobro(6));
+    assert(10 == dobro(5));
+    assert(12 == dobro(6));
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -135,7 +135,7 @@ Abaixo nosso código inicial escrito em Python, utilize ele para resolver o prob
 # Função que retorna o dobro de um número qualquer
 #
 def dobro(num):
-	pass
+    pass
 
 #
 # Seus testes
@@ -155,7 +155,7 @@ assert 10 == dobro(5), "o dobro de 5 deve ser 10"
 # Função que retorna o dobro de um número qualquer
 #
 def dobro(num):
-	return num * 2
+    return num * 2
 
 #
 # Seus testes

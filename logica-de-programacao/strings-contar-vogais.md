@@ -49,10 +49,10 @@ int main() {
 ### Solução na linguagem C
 
 Em C temos que perguntar se determinado caracter está contido dentro do vetor pesquisado. Fazemos isso, com um aninhamento
-de laços de repetição, ou melhor, com um laço dentro de outro. 
+de laços de repetição, ou melhor, com um laço dentro de outro.
 
-O código de solução (mostrado abaixo) se parece em muito com o código do problema de 
-[vetor com valores repetidos](/logica-de-programacao/c-vetor-valores-repetidos/).
+O código de solução (mostrado abaixo) se parece em muito com o código do problema de
+[vetor com valores repetidos](/logica-de-programacao/vetor-valores-repetidos/).
 
 ```c
 #include <stdio.h>

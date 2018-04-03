@@ -29,7 +29,7 @@ Para utilizarmos um vetor como se fosse um string, seguimos o seguinte exemplo..
 Para encontrar a solução você poderá percorre esse vetor e checar se chegou ao fim da "string" comparando o valor atual
 do vetor com zero dessa forma `ola[i] != 0`.
 
-Espere aí, eu já estou lhe dando o resultado do problema! Não, não estou. É que a solução deste problema está mais 
+Espere aí, eu já estou lhe dando o resultado do problema! Não, não estou. É que a solução deste problema está mais
 relacionada com o conhecimento que temos (ou não) da linguagem do que com a lógica.
 
 
@@ -91,7 +91,7 @@ int main() {
 
 ### Desafio na linguagem C
 
-As funções abaixo também funcionam, porém a implementação é um pouco diferente. 
+As funções abaixo também funcionam, porém a implementação é um pouco diferente.
 
 Seu desafio é entender os seguintes códigos.
 
@@ -145,7 +145,7 @@ for letra in s:
 """
 ```
 
-A linguagem C trata a string como sendo um vetor e, por tanto, podemos acessá-lo através de seu 
+A linguagem C trata a string como sendo um vetor e, por tanto, podemos acessá-lo através de seu
 índice. No mínimo curioso, é que em Python temos o mesmo aspecto, veja o trecho abaixo.
 
 ```python
@@ -158,7 +158,7 @@ s[5]  # 'r'
 s[6]  # 'a'
 ```
 
-Escrevi o código abaixo para ilustrar uma imitação do que fizemos em C.
+Então poderíamos fazer um laço `while` ao invés do laço `for`....
 
 ```python
 while i < len(s):
@@ -174,6 +174,20 @@ r
 a
 """
 ```
+
+
+E para finalizar, escrevi o código abaixo para ilustrar uma imitação do que fizemos em C.
+
+```python
+>>> s = "palavra"
+>>> i = 0
+>>> while i < len(s):
+...     i = i + 1
+...
+>>> i
+7
+```
+
 
 
 

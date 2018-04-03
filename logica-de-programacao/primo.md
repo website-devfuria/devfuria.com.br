@@ -15,7 +15,7 @@ Faça um programa para identificar se um número é primo.
 Lembre-se que número primo, é um número natural, maior que 1, apenas divisível por si próprio e pela unidade.
 
 
-__Comentários__: 
+__Comentários__:
 
 Os problemas (e as soluções) envolvendo os números primos são fascinantes e não é objetivo deste artigo
 esgotar o assunto, muito pelo contrário, o objetivo é simplesmente ser a porta de entrada, o primeiro degrau.
@@ -135,24 +135,25 @@ Tente entendê-lo e faço o teste de mesa.
 
 int ehPrimo(int num) {
     int i, count = 0;
-    
+
     for (i = 2; i <= num / 2; i++) {
         if (num % i == 0) {
             count++;
             break;
         }
     }
-    
+
     if (count == 0)
         return 1;
     else
-        return 2;
+        return 0;
 
 }
 
 int main() {
     assert(1 == ehPrimo(2));
-    assert(0 == ehPrimo(3));
+    assert(1 == ehPrimo(3));
+    assert(0 == ehPrimo(4));
     return 0;
 }
 ```
@@ -172,7 +173,7 @@ int ehPrimo(int num) {
     return 1;
 }
 
-main() {
+int main() {
     assert(1 == ehPrimo(2));
     assert(1 == ehPrimo(3));
     return 0;
@@ -388,8 +389,8 @@ try {
 Não termina aqui
 ---
 
-O universo dos números primos é algo muito interessante. Quem estudou um pouco sobre criptografia sabe dos desafios 
-envolvendo os números primos. Eles são utilizados, por exemplo, no algoritmo RSA. Acho que o maior desafio relacionado 
+O universo dos números primos é algo muito interessante. Quem estudou um pouco sobre criptografia sabe dos desafios
+envolvendo os números primos. Eles são utilizados, por exemplo, no algoritmo RSA. Acho que o maior desafio relacionado
 aos números primos é a questão de performance, quando testamos com números grandes os problemas começam a aparecer.
 
 Este primeiro exercício aqui proposto não deve ser o fim e sim o início dessa história, o nosso exemplo é excelente para
@@ -399,6 +400,4 @@ avançar nesse sentido foge do escope deste artigo.
 Para você entender melhor essa questão sugiro a leitura do seguinte artigo:
 
 - [wiki.python.org.br/DeterminandoPrimos](http://wiki.python.org.br/DeterminandoPrimos)
-
-
 

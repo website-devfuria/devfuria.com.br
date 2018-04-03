@@ -25,9 +25,12 @@ Linguagem C
 #include <assert.h>
 
 int main() {
-
+    int vetor[5];
+    int i;
 
     // Aqui entra a lógica do programa.
+
+
 
 
     //
@@ -40,6 +43,7 @@ int main() {
     assert(5 == vetor[4]);
     return 0;
 }
+
 ```
 
 
@@ -54,6 +58,7 @@ int main() {
     int vetor[5];
     int i;
 
+    // Aqui entra a lógica do programa.
     for (i = 0; i < 5; i++) {
         vetor[i] = i + 1;
     }
@@ -68,6 +73,7 @@ int main() {
     assert(5 == vetor[4]);
     return 0;
 }
+
 ```
 
 ### Desafios na linguagem C
@@ -215,6 +221,3 @@ try {
 ```
 
 Obs: O conceito de vetor em JavaScript resume-se em um array, ou seja, um vetor é equivalente a um array unidimensional.
-
-
-

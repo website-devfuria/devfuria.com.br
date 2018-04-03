@@ -72,6 +72,11 @@ int main() {
 
 ### Solução na linguagem C
 
+Para incluir a biblioteca `math` ao se compilar o código, devemos usar o parâmetro `-lm`.
+
+    gcc foo.c -o foo.run -lm
+
+
 ```c
 #include <math.h>
 #include <stdio.h>

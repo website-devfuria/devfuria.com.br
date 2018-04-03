@@ -21,6 +21,8 @@ Linguagem C
 #include <assert.h>
 
 int main() {
+    int vet[5], tamanho = 5; // vetor e tamanho do vetor
+    int i, j, resp = 0;      // auxiliares
 
 
     // Aqui entra a lógica do programa.
@@ -33,6 +35,7 @@ int main() {
 
     return (0);
 }
+
 ```
 
 

@@ -67,7 +67,7 @@ Se quer um desafio na linguagem C tente desenvolver um código que descubra qual
 // Função que retorna a soma de dois vetores
 //
 int retSomaVetor(int vt[], int i) {
-    int soma;
+    int soma = 0;
 
     while (i > 0) {
         soma += vt[i - 1];

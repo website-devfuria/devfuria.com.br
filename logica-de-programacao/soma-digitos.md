@@ -180,6 +180,8 @@ soma = 0
 
 for n in numList:
     soma += n
+
+return soma
 ```
 
 O código acima é perfeito, mas como transformar o número em uma lista?
@@ -192,6 +194,8 @@ soma = 0
 
 for n in numStr:
     soma += int(n)
+
+return soma
 ```
 
 Mas o exercício diz para não utilizarmos o recurso de strings.
@@ -209,11 +213,13 @@ for n in numStr:
 Simplificando mais um pouco, acabo encontrando outra forma. Porém, ainda vemos a conversão.
 
 ```python
-numList = map(int, str(2015))
+numStr = map(int, str(2015))
 soma = 0
 
 for n in numStr:
     soma += n
+
+return soma
 ```
 
 Legal, descobri que não há uma conversão direta de número para lista em Python e, após um longa divagação, percebe-se

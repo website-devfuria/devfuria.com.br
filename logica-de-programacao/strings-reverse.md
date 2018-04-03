@@ -24,6 +24,11 @@ Linguagem C
 
 int main() {
 
+    char str[] = "lamina";
+    char temp;
+    int i, j;
+
+
     // Aqui entra a lógica do programa.
 
 
@@ -34,6 +39,7 @@ int main() {
 
     return (0);
 }
+
 ```
 
 
@@ -106,20 +112,29 @@ assert "lamina" == reverseString(palavra)
 
 
 ```python
+#
+# 1
+#
 def reverseString(text):
     l = list(text)
     l.reverse()
     return ''.join(l)
 ```
 
-Se você pesquisar na Internet verá soluções variantes como as propostas a baixo.
+Se você pesquisar na Internet, encontrará soluções cmo os exemplos abaixo.
 
 ```python
+#
+# 2
+#
 def reverseString(text):
     return ''.join(reversed(text))
 ```
 
 ```python
+#
+# 3
+#
 def reverseString(text):
     return text[::-1]
 ```
@@ -136,9 +151,10 @@ Abaixo nosso código inicial escrito em JavaScript, utilize ele para resolver o 
 ```javascript
 var assert = require('assert');
 
+//
+//
+//
 var reverseString = function(s) {
-
-
 
 
 }

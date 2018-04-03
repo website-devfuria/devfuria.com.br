@@ -1,4 +1,5 @@
 ---
+layout:      index-solto
 title:       Python - O básico da sintaxe
 description: Um guia rápido e básico da linguagem Python.
 ---
@@ -64,7 +65,7 @@ string_2 = "place"
 print("Let's not go to %s. 'Tis a silly %s." % (string_1, string_2))
 ```
 
-Veja na documentação oficial as 
+Veja na documentação oficial as
 [diferenças entre as versões 2 e 3](https://docs.python.org/3.0/whatsnew/3.0.html#print-is-a-function "link-externo").
 
 
@@ -226,7 +227,7 @@ type(0.99) == float # True
 Números
 ---
 
-Python possui `+ - * /`, nem precisava falar!. 
+Python possui `+ - * /`, nem precisava falar!.
 
 Mas talvez você se pergunte como calcular uma potência.
 
@@ -458,7 +459,7 @@ No terminal, para diminuir a digitação, costuma-se importar todas as funções
 from math import *
 ```
 
-Em geral, a prática do `import *` de um módulo ou pacote é desaprovada, uma vez que muitas vezes dificulta a leitura do 
+Em geral, a prática do `import *` de um módulo ou pacote é desaprovada, uma vez que muitas vezes dificulta a leitura do
 código.
 
 Leia mais sobre [imports](/python/imports/ "Importando módulos no Python (imports)").
@@ -517,7 +518,7 @@ len(animals) # 4
 Leia mais sobre [listas](/python/listas/ "Python - listas(list)").
 
 
-### range() 
+### range()
 
 A função `range()` retorna uma lista de inteiros. Seu conteúdo é definido pelos argumentos, veja:
 

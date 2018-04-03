@@ -76,7 +76,7 @@ int mmc(int num1, int num2) {
 
 ### Segunda solução na linguagem C
 
-Sempre há mais de uma solução para um mesmo problema. O desafio é realizar o teste de mesa e procurar entender o 
+Sempre há mais de uma solução para um mesmo problema. O desafio é realizar o teste de mesa e procurar entender o
 funcionamento do código.
 
 ```c
@@ -177,7 +177,7 @@ var mmc = function(num1, num2) {
 try {
 
     // 2 * 2 * 3 * 5 = 60
-    assert.equal(60 == mmc(12, 20));
+    assert.equal(60, mmc(12, 20));
 
 } catch(e) {
     console.log(e);
@@ -195,7 +195,7 @@ var assert = require('assert');
 // Função mmc
 //
 var mmc = function(num1, num2) {
-    resto, a, b;
+    var resto, a, b;
 
     a = num1;
     b = num2;
@@ -208,7 +208,7 @@ var mmc = function(num1, num2) {
 
     } while (resto != 0);
 
-    return ( num1 * num2) / a;
+    return (num1 * num2) / a;
 }
 
 
@@ -218,7 +218,7 @@ var mmc = function(num1, num2) {
 try {
 
     // 2 * 2 * 3 * 5 = 60
-    assert.equal(60 == mmc(12, 20));
+    assert.equal(60, mmc(12, 20));
 
 } catch(e) {
     console.log(e);

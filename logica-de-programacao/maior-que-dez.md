@@ -9,7 +9,7 @@ ordem:       4
 
 Exercício de lógica de programação
 ---
-        
+
 Crie uma função que descubra se um valor é maior ou menor que 10.
 
 
@@ -23,7 +23,6 @@ Linguagem C
 #include <stdio.h>
 #include <assert.h>
 
-//
 // Função que descobre se um número é ou não maior que 10
 //
 // retornará 1 caso seja maior
@@ -45,8 +44,8 @@ int main (){
 
     return 0;
 }
-```  
-      
+```
+
 
 ### Solução na linguagem C
 
@@ -54,7 +53,6 @@ int main (){
 #include <stdio.h>
 #include <assert.h>
 
-//
 // Função que descobre se um número é ou não maior que 10
 //
 // retornará 1 caso seja maior
@@ -126,7 +124,7 @@ def ehMaiorQue10(valorQualquer):
 #
 assert 1 == ehMaiorQue10(17)
 assert 0 == ehMaiorQue10(9)
-``` 
+```
 
 
 Linguagem JavaScript (Node.js)
@@ -138,7 +136,6 @@ Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para r
 ```javascript
 var assert = require('assert');
 
-//
 // Função que descobre se um número é ou não maior que 10
 //
 // retornará 1 caso seja maior

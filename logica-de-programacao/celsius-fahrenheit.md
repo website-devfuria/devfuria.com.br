@@ -113,13 +113,13 @@ Linguagem Python
 # Converte fahrenheit em celsius
 #
 def toCelsius(fahrenheit):
-	pass
+    pass
 
 #
 # Converte celsius em fahrenheit
 #
 def toFahrenheit(celsius):
-	pass
+    pass
 
 #
 # Testes
@@ -142,13 +142,13 @@ assert fahrenheit == toFahrenheit(celsius)
 # Converte fahrenheit em celsius
 #
 def toCelsius(fahrenheit):
-	return 5 * (fahrenheit - 32) / 9;
+    return 5 * (fahrenheit - 32) / 9;
 
 #
 # Converte celsius em fahrenheit
 #
 def toFahrenheit(celsius):
-	return celsius / 5 * 9 + 32;
+    return celsius / 5 * 9 + 32;
 
 #
 # Testes

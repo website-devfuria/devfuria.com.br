@@ -25,9 +25,12 @@ Utilize vetores e o laço "do-while".
 #include <assert.h>
 
 int main() {
+    int vetor[5], i = 0, iMaior = 0, iMenor = 0;
 
 
     // Aqui entra a lógica do programa.
+
+
 
 
     // teste do maior índice
@@ -139,7 +142,6 @@ while i < len(lista):
 #
 assert iMaior == 3
 assert iMenor == 2
-
 ```
 
 Podemos deixar o código mais pythonico utilizando a função `enumarete`.
@@ -177,9 +179,16 @@ Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para r
 ```javascript
 var assert = require('assert');
 
+var arr    = [6, 10, 4, 21, 9],
+    iMaior = 0,
+    iMenor = 0,
+    i =0;
+
 //
 // Sua lógica
 //
+
+
 
 
 
@@ -208,6 +217,9 @@ var arr    = [6, 10, 4, 21, 9],
     iMenor = 0,
     i =0;
 
+//
+// Sua lógica
+//
 for(i = 0; i < arr.length; i++) {
     if (arr[i] > arr[iMaior]) {
         iMaior = i;

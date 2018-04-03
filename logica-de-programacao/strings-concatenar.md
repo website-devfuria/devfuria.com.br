@@ -40,7 +40,7 @@ int main() {
 
     concatenar(str1, str2);
 
-    assert(strcmp("abcdefg", str1) == 0);    
+    assert(strcmp("abcdefg", str1) == 0);
 
     return (0);
 }
@@ -50,13 +50,22 @@ int main() {
 ### Primeira solução
 
 ```c
-int concatenar(char s1[], char s2[]) {
+//
+// Primeira solução
+//
+void concatenar(char s1[], char s2[]) {
     int i, j;
 
+    // Olha que laço for maroto!!!
+    // Com ele eu vou pegar o tamanho da primeira string...
+    // descomente o `printf` para ver o tamnho da primeira string.
     for (i = 0; s1[i] != '\0'; ++i);
+    // printf("%d \n", i);
+
     for (j = 0; s2[j] != '\0'; ++j, ++i) {
         s1[i] = s2[j];
     }
+    s1[i] = '\0';
 }
 ```
 
@@ -64,6 +73,28 @@ int concatenar(char s1[], char s2[]) {
 ### Segunda solução
 
 ```c
+//
+// Segunda solução (versão ponteiros)
+//
+char* concatenar(char *s1, char *s2) {
+    int i, j;
+
+    for (i = 0; s1[i] != '\0'; ++i);
+    for (j = 0; s2[j] != '\0'; ++j, ++i) {
+        s1[i] = s2[j];
+    }
+    s1[i] = '\0';
+    return s1;
+}
+```
+
+
+### Terceira solução
+
+```c
+//
+// Terceira solução
+//
 void concatenar(char s[], char t[]) {
     int i = 0, j = 0;
 
@@ -76,28 +107,34 @@ void concatenar(char s[], char t[]) {
 ```
 
 
-### Terceira solução
+### Quarta solução
 
 ```c
+//
+// Quarta solução
+//
 void concatenar(char s1[], char s2[]) {
     int i, j;
 
     i = strlen(s1);
 
-    for (j = 0; s2[j] != ""; i++, j++) {
+    for (j = 0; s2[j] != 0; i++, j++) {
         s1[i] = s2[j];
     }
 
-    s1[i] = "";
+    s1[i] = 0;
 }
 ```
 
 
-### Quarta solução
+### Quinta solução
 
 Esta solução utiliza-se de ponteiros.
 
 ```c
+//
+// Quinta solução
+//
 void concatenar(char *original, char *add) {
     while (*original)
         original++;
@@ -112,15 +149,20 @@ void concatenar(char *original, char *add) {
 ```
 
 
-### Quinta solução
+
+### Sexta solução
 
 Esta solução é ótima pois, ela aproveita que incluímos a biblioteca `string.h` e utiliza uma função pronta para resolver
 este problema.
 
 ```c
+//
+// Sexta solução
+//
 void concatenar(char str1[], char str2[]) {
     strcat(str1, str2);
 }
+
 ```
 
 
