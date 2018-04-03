@@ -64,7 +64,7 @@ return array(
     "/javascript/node.js/ns-02-baby-steps/"                 => "/node.js/learnyounode-02-baby-steps/",
     "/javascript/node.js/ns-03-my-first-io/"                => "/node.js/learnyounode-03-my-first-io/",
     "/javascript/mocha-teste-seu-javascript/"               => "/node.js/mocha-teste-seu-javascript/",
-    
+
     "/javascript/node.js/ns-learyounode/"                   => "/node.js/introducao-ao-learnyounode/",
     "/javascript/node.js/expressjs-introducao/"             => "/node.js/introducao-ao-framework-express-js/",
     "/javascript/node.js/expressjs-rotas-routing/"          => "/node.js/o-basico-sobre-rotas-no-express-js/",
@@ -129,6 +129,7 @@ return array(
     "/javascript/canvas/paths/"                      => "/html-canvas/paths-caminhos/",
     "/js/canvas/rect-strokeRect-fillRect/"           => "/html-canvas/desenhando-retangulos/",
     "/javascript/canvas/rect-strokeRect-fillRect/"   => "/html-canvas/desenhando-retangulos/",
+    "/javascript/canvas/rect-strokerect-fillrect/"   => "/html-canvas/desenhando-retangulos/",
     "/js/canvas/canvas-linhas-rando-coloridas/"      => "/html-canvas/exemplo-linhas-randomicas/",
     "/javascript/canvas/col-linhas-rando/"           => "/html-canvas/exemplo-linhas-randomicas/",
     "/js/canvas/canvas-grid/"                        => "/html-canvas/exemplo-grid-lines/",
@@ -178,6 +179,7 @@ return array(
     "/logica/basico/exercicio06/"                       => "/logica-de-programacao/",
     "/logica/basico/exercicio08/"                       => "/logica-de-programacao/",
     "/logica/basico/exercicio09/"                       => "/logica-de-programacao/",
+    "/logica-de-p/"                                     => "/logica-de-programacao/",
     "/logica-de-programacao/o-que-e-tdd/"               => "/tdd/",
     "/logica-de-programacao/entendendo-o-assert-c/"     => "/c/rodando-os-testes/",
     "/logica-de-programacao/como-compilar-no-linux/"    => "/logica-de-programacao/",
@@ -307,6 +309,8 @@ return array(
     "/php/preg-match-all-basico//"              => "/php/referencia-da-funcao-preg-match-all/",
     "/php/preg-match-all-basico/"               => "/php/o-basico-sobre-a-funcao-preg-match-all/",
     "/php/o-basico-sobre-a-fun%C3%A7%C3%A3o-preg-match/"  => "/php/o-basico-sobre-a-funcao-preg-match/",
+    "/php/o-basico-sobre-a-funcao-preg/"                  => "/php/o-basico-sobre-a-funcao-preg-match/",
+
     "/php/preg-match-basico/"                             => "/php/o-basico-sobre-a-funcao-preg-match/",
     "/php/oop-primeiro-contato/"                => "/php",
     "/php/oop-visibilidade/"                    => "/php",
@@ -321,7 +325,8 @@ return array(
     "/python/built-in/list/"      => "/python/built-in-list/",
     "/python/built-in/enumerate/" => "/python/built-in-enumerate/",
     "/python/built-in/repr/"      => "/python/built-in-repr/",
-    "/python/built-in/zip/"       => "/python/built-in-zip/",    
+    "/python/built-in/zip/"       => "/python/built-in-zip/",
+    "/python/os.path/"            => "/python/os-path/",
 
     "/regexp/"                 => "/regex/",
     "/regexp//"                => "/regex/",
