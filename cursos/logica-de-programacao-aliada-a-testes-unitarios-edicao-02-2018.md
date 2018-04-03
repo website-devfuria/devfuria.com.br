@@ -125,6 +125,42 @@ __Módulo #10:__
 + [AO VIVO &#124; Curso de Lógica + Testes](https://youtu.be/4niqahLO4nk)
 
 
+__Módulo #11:__
+
++ [Aula #11a - Revisando o GitHub](https://youtu.be/dkVyubASmMw)
++ [Aula #11b - Juros Simples](https://youtu.be/OepIEvKrBMk)
++ [Aula #11c - Reajustando o Salário](https://youtu.be/rT1K6Bwpnl8)
++ [Aula #11d - Comitando no GitHub](https://youtu.be/zxDpjKgQI1g)
+
+
+__Módulo #12:__
+
++ [Aula #12a - Par ou Ímpar](https://youtu.be/zqo-GvxbVQg)
++ [Aula #12b - Positivo ou Negativo](https://youtu.be/llCbIfBFU3A)
++ [Aula #12c - Maior ou Menor que 10](https://youtu.be/OmAbfIa7IfI)
++ [Aula #12d - Celsius e Fahrenheit](https://youtu.be/8N4LedUPqyY)
++ [Aula #12e - Equação do 2 grau](https://youtu.be/Kg7D6Z-Kpq4)
++ [Aula #12f - Commitando no GitHub](https://youtu.be/iVQ4yz3iES8)
+
+
+__Módulo #13:__
+
++ [Aula #13a - Números Primos](https://youtu.be/LWdR-6JWR0o)
++ [Aula #13b - Somar Dígitos](https://youtu.be/e2gFNzUUdnk)
++ [Aula #13c - Calculando o MDC](https://youtu.be/lRg8adJf13Q)
++ [Aula #13d - Calculando o MMC](https://youtu.be/RwlVgRWxVhI)
+
+
+__Módulo #14:__
+
++ [Aula #14a - Algoritmo para carregar vetor](https://youtu.be/xrC2BRFEzI4)
++ [Aula #14b - Algoritmo para somar vetor](https://youtu.be/aBysSOQdL2k)
++ [Aula #14c - Algoritmo para copiar um vetor](https://youtu.be/J7uf_rCHvDI)
++ [Aula #14d - Maior e menor índice do vetor](https://youtu.be/J3nBdKtXdEE)
++ [Aula #14e - Valores repetidos em vetor](https://youtu.be/_fO3TV4q7jU)
+
+
+
 
 ## Para quem é indicado ?
 
