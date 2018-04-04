@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Full SCreen Sections</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            html, body {
+                margin: 0;
+                height:100%;
+                width:100%;
+                padding:0;
+            }
+            section {
+                display: block;
+                background: #CFF;
+                height:100%;
+                width:100%;
+                padding: 60px;
+                padding-left: 120px;
+                box-sizing:border-box;
+            }
+            #one {
+                background: #111816;
+                color: #fff;
+                font-size: 30px;
+            }
+            #two {
+                background: #123037;
+                color: #fff;
+                font-size: 30px;
+            }
+            #three {
+                background: #74BE98;
+                font-size: 30px;
+            }
+            #four {
+                background: #BED28D;
+                font-size: 30px;
+            }
+            #five {
+                background: #95211D;
+                color: #fff;
+                font-size: 30px;
+            }
+            nav {
+                position: fixed;
+            }
+            nav a {
+                display: block;
+                font-size: 12px;
+                color: #FFF;
+                text-align: center;
+                background: #000;
+                padding: 10px;
+                margin: 3px;
+            }
+        </style>        
+    </head>
+    <body>
+        <nav> <a href="#one">one</a>
+            <a href="#two">two</a>
+            <a href="#three">three</a>
+            <a href="#four">four</a>
+            <a href="#five">five</a>
+
+        </nav>
+        <section id="one">Page 1</section>
+        <section id="two">Page 2</section>
+        <section id="three">Page 3</section>
+        <section id="four">Page 4</section>
+        <section id="five">Page 5</section>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $('a[href*=#]:not([href=#])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

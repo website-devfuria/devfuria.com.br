@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Viewport</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            html {
+                font-family: sans-serif;
+                line-height: 1.15;
+            }            
+            .container { text-align: center; }
+
+            /*
+             * Font-size is 10% of the viewport height.
+             * When the height of the viewport changes,
+             * so does the font-size.
+             */
+
+            h1 { font-size: 20vh; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>My<br />special<br />headline</h1>
+            <p>Re-size the viewport and see the headline magically resize!</p>
+        </div>
+    </body>
+</html>

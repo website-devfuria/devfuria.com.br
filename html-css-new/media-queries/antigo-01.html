@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>media-queries</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background: red;
+                color: white;
+                font-family: monospace;
+                text-align: center;
+                font-size: 2em;
+            }
+            body:before { 
+                content: 'estado original';
+            }
+
+            @media screen and (min-width: 901px) {  
+                body {
+                    background: blue;
+                }
+                body:before { 
+                    content: 'min-width: 901px';
+                }
+            }
+            @media screen and (min-width: 301px) and (max-width: 900px) {  
+                body { 
+                    background: green;
+                }
+                body:before { 
+                    content: '(min-width: 301px) and (max-width: 900px)';
+                }
+            }
+        </style>
+    </head>
+    <body>
+    </body>
+</html>

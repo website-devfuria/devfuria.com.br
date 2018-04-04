@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>01 Flex Box Container</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            * {
+              font-family: monospace
+            }
+            span {
+                color: tomato;
+                width: 11em;
+                float: left;
+            }            
+            .container {
+                border: 1px solid #000;
+                display: flex;
+                flex-direction: row;
+            }
+            .item {
+                width: 100px;
+                line-height: 100px;
+                background-color: #b1dfbb;
+                text-align: center;
+                margin: 10px;
+                color: white;
+                font-weight: bold;
+                font-size: 3em;
+            }
+        </style>
+    </head>
+    <body>
+        <p><span>flex-direction: </span>row (default) | row-reverse | column | column-reverse</p>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </body>
+</html>

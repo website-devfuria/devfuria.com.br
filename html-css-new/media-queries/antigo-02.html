@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>media-queries</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background: red;
+                color: white;
+                font-family: monospace;
+                text-align: center;
+                font-size: 2em;
+            }
+            body:before {
+                content: 'estado original';
+            }
+            @media only screen and (min-width: 480px) {
+                body {
+                    background: #000000;
+                }
+                body:before {
+                    content: 'min-width: 480px';
+                }
+            }
+            @media only screen and (min-width: 600px) {
+                body {
+                    background: #A9A9A9;
+                }
+                body:before {
+                    content: 'min-width: 600px';
+                }
+            }
+            @media only screen and (min-width: 768px) {
+                body {
+                    background: #C8C8C8;
+                }
+                body:before {
+                    content: 'min-width: 768px';
+                }
+            }
+            @media only screen and (min-width: 992px) {
+                body {
+                    background: #E0E0E0;
+                }
+                body:before {
+                    content: 'min-width: 992px';
+                }
+            }
+            @media only screen and (min-width: 1382px) {
+                body {
+                    background: #FFFFFF;
+                    color: black;
+
+                }
+                body:before {
+                    content: 'min-width: 1382px';
+                }
+            }
+        </style>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p {
+                max-width: 600px;                
+                padding : 1em;
+                border  : 1px solid black;
+            }
+
+            span {
+                border  : 1px solid green;
+                /* That makes the box visible, regardless of its type */
+                background-color: yellow;
+            }
+
+            .inline       { display: inline;       }
+            .block        { display: block;        }
+            .inline-block { display: inline-block; }
+
+        </style>
+    </head>
+    <body>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <span class="inline">Mauris tempus turpis id ante mollis dignissim.</span>
+            Nam sed dolor non tortor lacinia lobortis id dapibus nunc.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <span class="block">Mauris tempus turpis id ante mollis dignissim.</span>
+            Nam sed dolor non tortor lacinia lobortis id dapibus nunc.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <span class="inline-block">Mauris tempus turpis id ante mollis dignissim.</span>
+            Nam sed dolor non tortor lacinia lobortis id dapibus nunc.
+        </p>
+
+    </body>
+</html>

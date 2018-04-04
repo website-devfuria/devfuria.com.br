@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo after</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .exciting-text::after {
+                content: "<- now this *is* exciting!"; 
+                color: green;
+            }
+            .boring-text::after {
+                content: "<- BORING!";
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p class="boring-text">Here is some plain old boring text.</p>
+        
+        <p>Here is some normal text that is neither boring nor exciting.</p>
+        
+        <p class="exciting-text">
+            Contributing to MDN is easy and fun.
+            Just hit the edit button to add new live samples, or improve existing samples.
+        </p>
+        
+    </body>
+</html>
