@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       Dúvidas dos primeiros capiptulos
 description: Tire suas dúvidas aqui !
 disqus:      true

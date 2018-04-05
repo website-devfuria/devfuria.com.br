@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       Media Queries
 description:
 capitulo:    "layout"

@@ -1,7 +1,7 @@
 ---
 layout:      puro-n2
 title:       margin
-description: 
+description:
 capitulo:    "estilos-basicos"
 ordem:       0
 ---
@@ -10,7 +10,6 @@ A propriedade CSS __marigin__ define a margem do elemento.
 
 ![CSS marigin](margin-css.gif "CSS marigin" )
 
-[Fonte da imagem](http://www.ironpaper.com/current/2009/09/css-margin-web-design-help/#.VYhtU6PSOis "link-externo")
 
 Exemplos...
 
@@ -19,7 +18,7 @@ Exemplos...
     margin: 5px 10px 5px 10px;
 
     /* top | horizontal | bottom */
-    margin: 5px 10px 5px; 
+    margin: 5px 10px 5px;
 
     /* vertical | horizontal */
     margin: 5px 10px;

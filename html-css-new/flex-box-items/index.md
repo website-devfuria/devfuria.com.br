@@ -1,7 +1,6 @@
 ---
-layout:      labs
 title:       Flex Box - items
-description: 
+description:
 capitulo:    "layout"
 ordem:       4
 ---

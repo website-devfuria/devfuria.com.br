@@ -1,7 +1,6 @@
 ---
-layout:      labs
 title:       Flex Box - containers
-description: 
+description:
 capitulo:    "layout"
 ordem:       4
 ---
@@ -63,7 +62,7 @@ Veja [demo](02.html).
 
 Agora vamos testar a propriedade `align-items`.
 
-Ela pode alinhar as boxes no início (`flex-start`), no final (`flex-end`) e no centro (`center`). Parecido com a 
+Ela pode alinhar as boxes no início (`flex-start`), no final (`flex-end`) e no centro (`center`). Parecido com a
 propriedade anterior (justify-content) você não acha ?
 
 O baseline costuma causar alguma dúvida, falaremos dele futuramente.

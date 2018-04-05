@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       Estilização básica de um formulário web
 description: A primeira coisa a ser comentado é que cada controle está acompanhado do elemento label. Esse elemento pode ajudar a adicionar estrutura e aumentar a acessibilidade aos formulários web.
 capitulo:    "formularios"
@@ -38,7 +37,7 @@ Talvez você queira ver o [exemplo real](exemplo-1.html).
 
 
 A primeira coisa a ser comentado é que cada controle está acompanhado do elemento `label`. Esse elemento pode ajudar a
-adicionar estrutura e aumentar a acessibilidade aos formulários web. Em muitos navegadores, clicar no elemento label 
+adicionar estrutura e aumentar a acessibilidade aos formulários web. Em muitos navegadores, clicar no elemento label
 fará com que o elemento do formulário ganhe o foco, veja o exemplo:
 
 ```html
@@ -65,4 +64,4 @@ input {
 ```
 
 Veja como ficou [nosso exemplo](exemplo-2.html).
- 
+

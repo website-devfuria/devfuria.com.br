@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       Grid Layout
 description: Uma introdução Grid Layout
 capitulo:    "layout"
@@ -41,7 +40,7 @@ O primeiro exemplo é o menor passo que eu pude imaginar, uma div que será noss
 ```css
 .container-box {
     width: 200px;
-    height: 200px;                
+    height: 200px;
     display: grid;
 }
 ```
@@ -55,16 +54,16 @@ O primeiro exemplo é o menor passo que eu pude imaginar, uma div que será noss
 
 ```html
 <div class="container-box">
-    <header class="box"></header>            
+    <header class="box"></header>
     <main class="box"></main>
-    <footer class="box"></footer>            
+    <footer class="box"></footer>
 </div>
 ```
 
 ```css
 .container-box {
     width: 200px;
-    height: 200px;                
+    height: 200px;
     display: grid;
 }
 ```
@@ -79,16 +78,16 @@ O primeiro exemplo é o menor passo que eu pude imaginar, uma div que será noss
 
 ```html
 <div class="container-box">
-    <header class="box"></header>            
+    <header class="box"></header>
     <main class="box"></main>
-    <footer class="box"></footer>            
+    <footer class="box"></footer>
 </div>
 ```
 
 ```css
 .container-box {
     width: 100%;
-     /*height: 400px;*/                 
+     /*height: 400px;*/
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px;
@@ -136,9 +135,9 @@ O primeiro exemplo é o menor passo que eu pude imaginar, uma div que será noss
 
 ```html
 <div class="container-box">
-    <header class="box"></header>            
+    <header class="box"></header>
     <main class="box"></main>
-    <footer class="box"></footer>            
+    <footer class="box"></footer>
 </div>
 ```
 
@@ -179,9 +178,9 @@ footer {
 
 ```html
 <div class="container-box">
-    <header class="box"></header>            
+    <header class="box"></header>
     <main class="box"></main>
-    <footer class="box"></footer>            
+    <footer class="box"></footer>
 </div>
 ```
 

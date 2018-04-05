@@ -1,7 +1,6 @@
 ---
-layout:      labs
 title:       Page Background Image
-description: 
+description:
 capitulo:    "layout"
 ordem:       3
 ---
@@ -30,12 +29,12 @@ Utilizando as 3 imagens, nós poderemos ver como se comporta cada técnica em si
 
 ## 1 técnica
 
-    body { 
-        background: url(china.jpg) no-repeat center center fixed; 
+    body {
+        background: url(china.jpg) no-repeat center center fixed;
         background-size: cover;
-    }  
+    }
 
-O valor `cover` da propriedade `background-size` resolve bem o nosso problema. 
+O valor `cover` da propriedade `background-size` resolve bem o nosso problema.
 
 Veja como se comportou cada imagem:
 
@@ -54,8 +53,8 @@ Você precisa aumentar e diminuir o tamanho da tela de seu navegador.
         margin: 0;
     }
     .bg {
-        height: 100%; 
-        background: url(china.jpg) no-repeat center center fixed; 
+        height: 100%;
+        background: url(china.jpg) no-repeat center center fixed;
         background-size: cover;
     }
 
@@ -76,13 +75,13 @@ Veja como se comportou cada imagem:
 ## 3 Técnica
 
     body {
-        background-image: url("china.jpg"); 
+        background-image: url("china.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 100vh;
-    } 
+    }
 
-A terceira técnica deixa de utilizar o `background-size: cover` para trabalhar com um tamanho 100%, ela influencia na 
+A terceira técnica deixa de utilizar o `background-size: cover` para trabalhar com um tamanho 100%, ela influencia na
 proporção da tela (aspect ratio).
 
 Veja como se comportou cada imagem:
@@ -98,9 +97,9 @@ Veja como se comportou cada imagem:
 A quarta técnica é bem interessante pois ela mantém a imagem com um tamanho fixo, sem influenciar na proporção.
 
     img {
-        position: fixed; 
-        top: 0; 
-        left: 0; 
+        position: fixed;
+        top: 0;
+        left: 0;
 
         min-width: 100%;
         min-height: 100%;
@@ -116,20 +115,20 @@ Apenas uma imagem funcionou bem, descubra qual foi...
 ## 5 Técnica
 
     body {
-        margin: 0;                
-        position: fixed; 
-        top: -50%; 
-        left: -50%; 
-        width: 200%; 
+        margin: 0;
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
         height: 200%;
     }
     img {
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        right: 0; 
-        bottom: 0; 
-        margin: auto; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
         min-width: 50%;
         min-height: 50%;
     }
@@ -137,7 +136,7 @@ Apenas uma imagem funcionou bem, descubra qual foi...
 Essa caiu bem para a imagem china.jpg, mas para as demais não deu muito certo. Essa técnica também foi a mais verbosa,
 eu acho que ela serve mais como fins didáticos do que para um fim prático.
 
-Faça um esforço para entender a "lógica" dessa técnica. Como disse, não sei se vale apena para aplicação, mas com o 
+Faça um esforço para entender a "lógica" dessa técnica. Como disse, não sei se vale apena para aplicação, mas com o
 objetivo de aprendizado é um verdadeiro desafio. Veja os exemplos:
 
 - [05-china](05-china.html)

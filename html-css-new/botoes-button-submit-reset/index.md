@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       "Botões: button, submit e reset"
 description: Artigo a respeito dos controles button, submit e reset (formulário web) - HTML e CSS
 capitulo:    "formularios"
@@ -48,7 +47,7 @@ Da mesma forma que o elemento __input__, o atributo `type` também se faz presen
 - reset
 - button (padrão)
 
-Leia mais sobre o elemento na documentação da 
+Leia mais sobre o elemento na documentação da
 [MDN - button](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/button).
 
 

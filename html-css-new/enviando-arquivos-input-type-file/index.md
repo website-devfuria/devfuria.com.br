@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       "Enviando arquivos: input type file"
 description: Controle HTML que envia arquivos (faz upload) para o servidor, ele vem acompanhado de uma text box, você poderá selecionar os arquivos de seu hard-disk.
 capitulo:    "formularios"

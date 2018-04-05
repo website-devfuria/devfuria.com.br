@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       "Combo box: caixa de seleção"
 description: A caixa de seleção é um controle parecido com um menu de opções. As opções (que vão dentro da tag select` utilizam a tag option.
 capitulo:    "formularios"
@@ -141,7 +140,7 @@ As __list box__ são as combobox de multipla escolha, para isso adicionamos a pr
 ```
 
 Tudo que foi dito para a combobox é válido para a __listbox__, na verdade é o mesmo controle,
-só mudamos uma propriedade. 
+só mudamos uma propriedade.
 
 ![Ilustração de um campo list box ](select-multiple-list.png "Ilustração de um campo listobox")
 

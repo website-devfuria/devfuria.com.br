@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       "Checkbox: caixa de checagem"
 description: As checkboxes são como uma escolha booleana true ou false, sim ou não. Normalmente vem em grupo, mas também podem vir sozinhas.
 capitulo:    "formularios"
@@ -38,7 +37,7 @@ Mas a especificação diz que é para ser usado dessa forma:
 
 De qualquer forma, o navegador entenderá que a __checkbox__ deve ser assinalada. Uma coisa importante de se dizer é que
 a propriedade `value` é inútil. Explico, se o controle for clicado, o valor que é enviado para o servidor é `value=on`
-e se NÂO clicado, o valor é `value=off`, certo??? Errado, e isso é muito triste! Quando o controle não é clicado ele 
+e se NÂO clicado, o valor é `value=off`, certo??? Errado, e isso é muito triste! Quando o controle não é clicado ele
 não envia nada, nada mesmo. Quando é clicado, ele envia o valor que você especificar na propriedade `value`.
 
 Isso faz sentido para você? Pra mim não, mas tudo bem.
@@ -51,7 +50,7 @@ O que mais incomoda em relação aos __checkboxes__ são a falta de alinhamento 
 a inconsistência entre os navegadores.
 
 Uma forma simples de deixar a __label__ alinhado com a __checkbox__ é configurar a propriedade "alinhamento vertical"
-no meio e ajustar a altura com a propriedade `top`. Para `top` funcionar, o elemento precisa estar posicionado 
+no meio e ajustar a altura com a propriedade `top`. Para `top` funcionar, o elemento precisa estar posicionado
 relativamente.
 
 ```css

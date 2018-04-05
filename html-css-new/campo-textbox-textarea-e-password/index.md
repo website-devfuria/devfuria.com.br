@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       "Campos: textbox, textarea e password"
 description: A caixa de texto, de longe, é o controle mais utilizado, ela serve como entrada básica de texto ou números, na verdade de qualquer caracter.
 capitulo:    "formularios"
@@ -43,7 +42,7 @@ As propriedades `rows` e `cols` referem-se ao número de linhas e colunas respec
 
 ## password
 
-Os campos de senha são semelhantes as textboxs], a diferença é que os __dados aparecem escondidos__ pelo sinal de 
+Os campos de senha são semelhantes as textboxs], a diferença é que os __dados aparecem escondidos__ pelo sinal de
 asterisco (*).
 
 ```html

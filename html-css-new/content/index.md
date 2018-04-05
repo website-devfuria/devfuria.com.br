@@ -11,7 +11,7 @@ Já pensou em criar conteúdo através do CSS ?
 Bom, não é algo para usar e abusar, acho que deve ser usado com bom senso.
 
 A propriedade CSS `content` é usada para gerar conteúdo em um elemento qualquer. Ela terá efeito nos pseudoelementos
-`::before` e `::after` . 
+`::before` e `::after` .
 
 Onde usar ? Se você tiver um pouco de imaginação, poderá utilizar de forma bem criativa. Veja alguns exemplos...
 
@@ -19,18 +19,18 @@ Onde usar ? Se você tiver um pouco de imaginação, poderá utilizar de forma b
 
 ## Testando
 
-Este primeiro exemplo é para vermos a propriedade funcionando. Eu criei uma classe CSS `.teste` e aplique aos parágrafos
+Este primeiro exemplo é para vermos a propriedade funcionando. Eu criei uma classe CSS `.teste` e apliquei aos parágrafos
 dessa forma `<p class="teste">`.
 
 ```css
 <p class="teste">Primeiro parágrafo</p>
 <p class="teste">Segundo parágrafo</p>
 <p class="teste">Terceiro parágrafo</p>
-.teste::before { 
+.teste::before {
   content: "«";
   color: blue;
 }
-.teste::after { 
+.teste::after {
   content: "»";
   color: red;
 }
@@ -42,11 +42,11 @@ O código acima gerará o seguinte resultado:
 <p class="teste">Segundo parágrafo</p>
 <p class="teste">Terceiro parágrafo</p>
 <style>
-.teste::before { 
+.teste::before {
   content: "«";
   color: blue;
 }
-.teste::after { 
+.teste::after {
   content: "»";
   color: red;
 }
@@ -100,7 +100,7 @@ q::after {
 
 ## Exemplo 2
 
-Agora imagine que você precisa destacar determinados itens dentro de uma lista. Tudo bem que você poderia fazer isso 
+Agora imagine que você precisa destacar determinados itens dentro de uma lista. Tudo bem que você poderia fazer isso
 mudando a cor e espessura, mas e se você quizesse incluir um pequeno conteúdo ? É o caso deste exemplo.
 
 O código abaixo...
@@ -109,7 +109,7 @@ O código abaixo...
 <ol>
   <li>Political Thriller</li>
   <li class="new-entry">Halloween Stories</li>
-  <li>My Biography</li>    
+  <li>My Biography</li>
   <li class="new-entry">Vampire Romance</li>
 </ol>
 <style>
@@ -127,7 +127,7 @@ O código abaixo...
 <ol>
   <li>Political Thriller</li>
   <li class="new-entry">Halloween Stories</li>
-  <li>My Biography</li>    
+  <li>My Biography</li>
   <li class="new-entry">Vampire Romance</li>
 </ol>
 <style>

@@ -1,5 +1,4 @@
 ---
-layout:      labs
 title:       Flex Box
 description: Uma introdução ao flex box
 capitulo:    "layout"
@@ -15,7 +14,7 @@ Mas não é para ficar só na leitura, precisa colocar a mão na massa. É isso 
 
 Você precisa ver a coisa funcionando! Se não, não vai absorver o conhecimento.
 
-Eu preparei cada exemplo com o maior caprinho, cabe a você se exercirtar em cada um deles. Vá item a item: lendo e 
+Eu preparei cada exemplo com o maior caprinho, cabe a você se exercirtar em cada um deles. Vá item a item: lendo e
 colocando em prática, lendo e colocando em prática, lendo e colocando em prática, etc...
 
 

@@ -1,12 +1,11 @@
 ---
-layout:      labs
 title:       Introdução aos formulários web
 description: O formulário pega os dados digitado pelo usuário, associa cada dado a um nome de campo e os envia ao servidor. Lá no outro lado (no servidor), um linguagem de servidor recebe os dados e faz alguma coisa com eles, seguindo a lógica do script criado pelo programador.
 capitulo:    "formularios"
 ordem:       1
 ---
 
-Este artigo é uma rápida introdução aos fomulários web, nele veremos como os formulários web funcionam e também um 
+Este artigo é uma rápida introdução aos fomulários web, nele veremos como os formulários web funcionam e também um
 pequeno exemplo de estilização (CSS)
 
 Um __formulário web__ é a porta de entrada dos dados de sua aplicação.
@@ -41,7 +40,7 @@ Abaixo, temos um exemplo de formulário.
 
 ## Como os formulários web funcionam?
 
-O formulário "pega" os dados digitado pelo usuário, associa cada dado a um nome de campo e os envia ao servidor. 
+O formulário "pega" os dados digitado pelo usuário, associa cada dado a um nome de campo e os envia ao servidor.
 Lá no outro lado (no servidor), um linguagem de servidor recebe os dados e faz alguma coisa com eles, seguindo a lógica
 do script criado pelo programador.
 
@@ -65,7 +64,7 @@ esse formulário submeter seus dados para o servidor, ele poderá trabalhar com 
 
 Esse negócio é tão simples que fica até difícil de explicar, rs.
 
-Veja o famoso formulário horizontal do Facebook. Vamos analisar apenas a "tarja azul", temos os campos `login`, `senha` 
+Veja o famoso formulário horizontal do Facebook. Vamos analisar apenas a "tarja azul", temos os campos `login`, `senha`
 e uma chekbox "mantanha-me conectado".
 
 !["formulário web de exemplo"](form-facebook.png "formulário web de exemplo")
