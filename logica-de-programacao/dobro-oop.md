@@ -16,7 +16,7 @@ Este exercício nós já fizemos a versão estruturada e a versão utilizando fu
 simples. Como é o primeiro exercício envolvendo programação orientada a objetos e, diga-se de passagem, é aqui que os
 testes unitários começam a fazer mais sentido, eu suponho que você tenho o mínimo conhecimentos sobre OOP.
 
-Para quem vem acompanhando os exercícios devemos reparar é que antes utilizávamos o compilador `gcc` (linguagem C) e 
+Para quem vem acompanhando os exercícios devemos reparar é que antes utilizávamos o compilador `gcc` (linguagem C) e
 iremos utilizar o compilador g++ (linugagem C++).
 
 
@@ -149,7 +149,7 @@ assert 10 == calc.dobro(5)
 Linguagem JavaScript
 ---
 
-Em JavaScript não temos classe (até a especificação ECMAscript 5). Porém as funções podem representar uma classe e é 
+Em JavaScript não temos classe (até a especificação ECMAScript 5). Porém as funções podem representar uma classe e é
 exatamente isso o que estamos fazendo abaixo.
 
 
@@ -165,7 +165,7 @@ function Calc(){
     // Este é o método da classe
     //
     this.dobro = function(){
-    
+
         //
         // aqui entra a sua lógica
         //
@@ -187,7 +187,7 @@ try {
 
 ### Solução na linguagem JavaScript
 
-A versõa ES6 (EcmaSCript 6) já contempla a utilização de classes para JavaScript, poderíamos resolver o exercício já
+A versõa ES6 (ECMAScript 6) já contempla a utilização de classes para JavaScript, poderíamos resolver o exercício já
 com os novos recurso da linguagem, mas por um bom tempo (escrevo este artigo em maio/2015) veremos a forma abaixo como
 a solução mais comumente encontrada.
 

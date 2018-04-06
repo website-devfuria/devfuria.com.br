@@ -1,5 +1,5 @@
 ---
-title:       Antecessor e sucessor de um número qualquer (versão orientado a objeto)
+title:       Antecessor e sucessor de um número qualquer (OOP)
 description: Exercício de lógica de programação resolvido cujo objetivo é encontrar o sucessor e antecessor de um número qualquer.
 capitulo:    logica-nivel-5
 ordem:       3
@@ -69,7 +69,7 @@ int main() {
 //
 class Calc {
 public:
-    
+
     // retorna o antecessor de um número
     int antecessor(int num) {
 

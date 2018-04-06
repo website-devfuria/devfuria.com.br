@@ -127,7 +127,7 @@ Linguagem JavaScript
 Vou fugir do padrão e mostrar primeio a implementação na linguagem JavaScript.
 
 Dessa vez não utilizaremos a função construtora como nos exemplos anteriores. Vamos fazer algo bem arcaico, diga-se de
-passagem, vamos criar um variável e instanciar o tipo primitivo `Object`. O exemplo é só para ilustrar como a programação 
+passagem, vamos criar um variável e instanciar o tipo primitivo `Object`. O exemplo é só para ilustrar como a programação
 orientada a objeto pode diferenciar e muito de uma linguagem para outra.
 
 ```javascript
@@ -195,7 +195,7 @@ try {
 Linguagem Python
 ---
 
-Eu deixei o Python por último para tentar fazer um paralelo com a linguagem JavaScript e, ao invés do exercício, vou 
+Eu deixei o Python por último para tentar fazer um paralelo com a linguagem JavaScript e, ao invés do exercício, vou
 mostrar a resposta.
 
 Para utilizarmos funções anônimas em Python devemos lançar mão da expressão `lambda`.
@@ -265,7 +265,7 @@ assert 2560 == juros.simples(juros)
 ```
 
 A solução apresentada tanto em JavaScript como em Python não são as mais indicadas, eu optei por elas porque o meu
-objeto era ilustrarmos as particularidades de cada linguagem ao invé de simplesmente resolver o enunciado.
+objeto era ilustrarmos as particularidades de cada linguagem ao invés de simplesmente resolver o enunciado.
 
 
 
