@@ -203,7 +203,7 @@ var assert = require('assert');
 //
 var dobro = function(num) {
 
-    // Aqui entra a lógica do programa.
+    return num * 2;
 
 }
 
