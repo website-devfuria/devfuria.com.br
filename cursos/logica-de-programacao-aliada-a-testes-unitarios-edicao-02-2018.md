@@ -160,6 +160,26 @@ __Módulo #14:__
 + [Aula #14e - Valores repetidos em vetor](https://youtu.be/_fO3TV4q7jU)
 
 
+__Módulo #15:__
+
++ [Aula #15a - Contar a quantidade de caracteres](https://youtu.be/FfgizKwmGeE)
++ [Aula #15b - Contar a quantidade de vogais](https://youtu.be/GDLXhYbN50w)
++ [Aula #15c - Comparar duas strings](https://youtu.be/0qjDromTTy4)
++ [Aula #15d - Concatenar duas strings](https://youtu.be/84yqQSmkOwU)
++ [Aula #15e - Inverter uma string](https://youtu.be/z2-yLaTUWr4)
+
+
+__Módulo #16:__
+
++ [Aula #16a - Programação Orientada a Objetos](https://youtu.be/5tk6ZHFnXws)
++ [Aula #16b - Programação Orientada a Objetos (o dobro)](https://youtu.be/fcfeUDu_43c)
++ [Aula #16c - Programação Orientada a Objetos (área)](https://youtu.be/fkjXWrLgniQ)
++ [Aula #16d - Programação Orientada a Objetos (antecessor)](https://youtu.be/ZxAHPKIKxKc)
++ [Aula #16e - Programação Orientada a Objetos (juros)](https://youtu.be/fkJyYbaaD2g)
++ [Aula #16f - Programação Orientada a Objetos (votos)](https://youtu.be/MxleeTzAMLY)
++ [Aula #16g - Programação Orientada a Objetos (triângulo)](https://youtu.be/hXOzQ0TCrD0)
+
+
 
 
 ## Para quem é indicado ?
