@@ -19,7 +19,7 @@ A função fatorial normalmente é definida por:
 
 Por exemplo,
 
-    5! = 1 x 2 x 3 x 4 x 5 = 120 
+    5! = 1 x 2 x 3 x 4 x 5 = 120
 
 Veja mais alguns resultados e que você poderá utilizar como testes:
 
@@ -40,7 +40,7 @@ Agora é só trabalhar, não vale ver as respostas!!!!
 Resultados
 ---
 
-Vamos iniciar as soluções em JavaScript só que sem recursividade, só para termos um comparativo de como ficaria a 
+Vamos iniciar as soluções em JavaScript só que sem recursividade, só para termos um comparativo de como ficaria a
 solução de forma iterativa (sem recursão).
 
 ```javascript
@@ -62,7 +62,6 @@ try {
     assert.equal(1, fatorial(0));
     assert.equal(1, fatorial(1));
     assert.equal(2, fatorial(2));
-    assert.equal(6, fatorial(3));
     assert.equal(6, fatorial(3));
     assert.equal(24, fatorial(4));
     assert.equal(120, fatorial(5));
@@ -91,7 +90,6 @@ int main() {
     assert(1   == fatorial(1));
     assert(2   == fatorial(2));
     assert(6   == fatorial(3));
-    assert(6   == fatorial(3));
     assert(24  == fatorial(4));
     assert(120 == fatorial(5));
     assert(720 == fatorial(6));
@@ -102,16 +100,17 @@ int main() {
 Solução em Python...
 
 ```python
+# -*- coding: utf-8 -*-
+
 def fatorial(n):
-  if n <= 1:
-    return 1
-  else:
-    return n * fatorial(n - 1)
+    if n <= 1:
+        return 1
+    else:
+        return n * fatorial(n - 1)
 
 assert 1   == fatorial(0)
 assert 1   == fatorial(1)
 assert 2   == fatorial(2)
-assert 6   == fatorial(3)
 assert 6   == fatorial(3)
 assert 24  == fatorial(4)
 assert 120 == fatorial(5)

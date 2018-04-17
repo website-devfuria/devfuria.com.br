@@ -28,46 +28,6 @@ Linguagem C++
 // Classe Calc
 //
 class Calc {
-    //
-    // seu código
-    //
-};
-
-//
-// Testes unitários...
-//
-void testAntecessor() {
-    Calc c;
-    assert(9 == c.antecessor(10));
-}
-
-void testSucessor() {
-    Calc c;
-    assert(11 == c.sucessor(10));
-}
-// ...fim dos testes.
-
-//
-// Início do programa
-//
-int main() {
-    testAntecessor();
-    testSucessor();
-    return 0;
-}
-```
-
-
-### Solução na linguagem C++
-
-```c
-#include <iostream>
-#include <assert.h>
-
-//
-// Classe Calc
-//
-class Calc {
 public:
 
     // retorna o antecessor de um número
@@ -111,6 +71,33 @@ int main() {
     testSucessor();
     return 0;
 }
+
+```
+
+
+### Solução na linguagem C++
+
+```c
+//
+// Classe Calc
+//
+class Calc {
+public:
+
+    // retorna o antecessor de um número
+    int antecessor(int num) {
+        // sua lógica
+        return num - 1;
+
+    }
+
+    // retorna o sucessor de um número
+    int sucessor(int num) {
+        // sua lógica
+        return num + 1;
+
+    }
+};
 ```
 
 
@@ -163,12 +150,29 @@ try {
 ### Solução na linguagem JavaScript
 
 ```javascript
+//
+// Um objeto literal
+//
 var Calc = {
+
+    // Método
     antecessor: function(num){
+
+        //
+        // sua lógica
+        //
         return num - 1;
-    },
+
+    }, // reparou na vírgula ?
+
+    // Método
     sucessor: function(num){
+
+        //
+        // sua lógica
+        //
         return num + 1;
+
     }
 }
 ```
@@ -190,8 +194,10 @@ linguagens, mas não o são. Variáveis estáticas em Python tomam outro caminho
 # -*- coding: utf-8 -*-
 
 class Calc(object):
+
     def antecessor(num):
         return num - 1
+
     def sucessor(num):
         return num + 1
 

@@ -15,48 +15,18 @@ faça um algoritmo para descobrir se formam ou não um triângulo.
 
 Saiba que para formar um triângulo, o valor de cada lado deve ser menor que a soma dos outros 2 lados.
 
+- 'a', 'b', e 'c' devem formam um triângulo, a função retorna true
+- se as medidas não formam um triângulo, a função retorna false
+
+
 Utilize programação orientada a objetos.
+
+
 
 
 
 Linguagem C++
 ---
-
-```c
-#include <iostream>
-#include <assert.h>
-
-//
-// Classe Triângulo
-//
-class Triangulo {
-    //
-    // seu código
-    //
-};
-
-//
-// Teste unitário
-//
-void testEhTriangulo() {
-
-    Triangulo tri;
-    tri.a = 3;
-    tri.b = 4;
-    tri.c = 5;
-    assert(tri.ehTriangulo());
-}
-
-//
-// Início do programa
-//
-int main() {
-    testEhTriangulo();
-    return 0;
-}
-```
-
-### Solução na linguagem C++
 
 ```c
 #include <iostream>
@@ -72,7 +42,55 @@ public:
     //
     // Verifica se as medidas compõem ou não um triângulo
     //
-    bool ehTriangulo() {
+    bool validarForma() {
+
+
+    }
+};
+
+//
+// Teste unitários...
+//
+void testValidarFormaCasoPositivo() {
+    Triangulo triangulo;
+    triangulo.a = 3;
+    triangulo.b = 4;
+    triangulo.c = 5;
+    assert(triangulo.validarForma());
+}
+
+void testValidarFormaCasoNegativo() {
+    Triangulo triangulo;
+    triangulo.a = 1;
+    triangulo.b = 4;
+    triangulo.c = 5;
+    assert(!triangulo.validarForma());
+}
+
+//
+// Início do programa
+//
+int main() {
+    testValidarFormaCasoPositivo();
+    testValidarFormaCasoNegativo();
+    return 0;
+}
+```
+
+### Solução na linguagem C++
+
+```c
+//
+// Classe Triângulo
+//
+class Triangulo {
+public:
+    int a, b, c;
+
+    //
+    // Verifica se as medidas compõem ou não um triângulo
+    //
+    bool validarForma() {
         if (a < (b + c)) {
             if (b < (a + c)) {
                 if (c < (a + b)) {
@@ -82,25 +100,6 @@ public:
         }
     }
 };
-
-//
-// Teste unitário
-//
-void testEhTriangulo() {
-    Triangulo tri;
-    tri.a = 3;
-    tri.b = 4;
-    tri.c = 5;
-    assert(tri.ehTriangulo());
-}
-
-//
-// Início do programa
-//
-int main() {
-    testEhTriangulo();
-    return 0;
-}
 ```
 
 
@@ -128,11 +127,12 @@ class Triangulo(object):
 
 # Caso positivo
 triangulo = Triangulo(3, 4, 5)
-assert triangulo.validarForma(), "a=3, b=4, e c=5 devem formar um triângulo, a função retorna true"
+assert triangulo.validarForma()
 
 # Caso negativo
 triangulo = Triangulo(1, 4, 5)
-assert not triangulo.validarForma(), "se as medidas não formam um triângulo, a função retorna false"
+assert not triangulo.validarForma()
+
 ```
 
 
@@ -154,7 +154,7 @@ def validarForma(self):
 Linguagem JavaScript
 ---
 
-Vamos imitar a linguagem Python e utilizarmo o construtor da função. Mas repare que não temos um método mágico contrutor
+Vamos imitar a linguagem Python e utilizarmos o construtor da função. Mas repare que não temos um método mágico construtor
 como o `__init__`.
 
 
@@ -178,11 +178,11 @@ try {
 
     // Caso positivo
     var triangulo = new Triangulo(3, 4, 5);
-    assert.equal(true, triangulo.validarForma(), "a=3, b=4, e c=5 devem formam um triângulo, a função retorna true");
+    assert.equal(true, triangulo.validarForma());
 
     // Caso negativo
     var triangulo = new Triangulo(1, 4, 5);
-    assert.equal(false, triangulo.validarForma(), "se as medidas não formam um triângulo, a função retorna false");
+    assert.equal(false, triangulo.validarForma());
 
 } catch(e) {
     console.log(e);
@@ -193,20 +193,20 @@ try {
 ### Solução na linguagem JavaScript
 
 ```javascript
-function Triangulo(a, b, c) {
-    this.a = a;
-    this.b = b;
-    this.c = c;
-    this.validarForma = function() {
-        if (this.a < (this.b + this.c)) {
-            if (this.b < (this.a + this.c)) {
-                if (this.c < (this.a + this.b)) {
-                    return true;
-                }
+this.validarForma = function() {
+
+    //
+    // Aqui entra a lógica de seu programa!
+    //
+    if (this.a < (this.b + this.c)) {
+        if (this.b < (this.a + this.c)) {
+            if (this.c < (this.a + this.b)) {
+                return true;
             }
         }
-        return false;
-    };
+    }
+    return false;
+
 };
 ```
 

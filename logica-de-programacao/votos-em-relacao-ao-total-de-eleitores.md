@@ -17,7 +17,7 @@ Considerando a tabela abaixo...
     votos brancos      = 150
     nulos              = 50
 
-Faça uma classe que 3 métodos que calculam...
+Faça uma classe com 3 métodos que calculam...
 
 - o percentual do votos válidos em relação ao total de eleitores,
 - o percentual de brancos em relação ao total de eleitores
@@ -63,7 +63,7 @@ public:
     }
 
     float percNulos() {
-        return 0
+        return 0;
     }
 };
 
@@ -174,8 +174,6 @@ assert 0.05 == votos.percNulos(),   "percNulos deve ser igual a 0.05"
 
 
 ```python
-# -*- coding: utf-8 -*-
-
 #
 # Classe Votos
 #
@@ -195,52 +193,6 @@ class Votos(object):
 
     def percNulos(self):
         return self.nulos / self.total_eleitores
-
-
-#
-# Testes
-#
-votos = Votos(1000)
-votos.validos = 800;
-votos.brancos = 150;
-votos.nulos   = 50;
-
-assert 0.8  == votos.percValidos(), "'percValidos' deve ser igual a 0.8"
-assert 0.15 == votos.percBrancos(), "'percBrancos' deve ser igual a 0.15"
-assert 0.05 == votos.percNulos(),   "percNulos deve ser igual a 0.05"# -*- coding: utf-8 -*-
-
-#
-# Classe Votos
-#
-class Votos(object):
-
-    def __init__(self, total_eleitores):
-        self.total_eleitores = total_eleitores
-        self.validos = 0;
-        self.brancos = 0;
-        self.nulos   = 0;
-
-    def percValidos(self):
-        return self.validos / self.total_eleitores
-
-    def percBrancos(self):
-        return self.brancos / self.total_eleitores
-
-    def percNulos(self):
-        return self.nulos / self.total_eleitores
-
-
-#
-# Testes
-#
-votos = Votos(1000)
-votos.validos = 800;
-votos.brancos = 150;
-votos.nulos   = 50;
-
-assert 0.8  == votos.percValidos(), "'percValidos' deve ser igual a 0.8"
-assert 0.15 == votos.percBrancos(), "'percBrancos' deve ser igual a 0.15"
-assert 0.05 == votos.percNulos(),   "percNulos deve ser igual a 0.05"
 ```
 
 
@@ -299,8 +251,6 @@ try {
 
 
 ```javascript
-var assert = require('assert');
-
 //
 // Classe Votos
 //
@@ -323,22 +273,4 @@ function Votos(total_eleitores) {
     }
 
 }
-
-//
-// Testes
-//
-try {
-
-    var votos = new Votos(1000);
-    votos.validos = 800;
-    votos.brancos = 150;
-    votos.nulos   = 50;
-
-    assert.equal(0.8,  votos.percValidos());
-    assert.equal(0.15, votos.percBrancos());
-    assert.equal(0.05, votos.percNulos());
-} catch(e) {
-    console.log(e);
-}
 ```
-

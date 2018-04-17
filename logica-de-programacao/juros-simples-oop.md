@@ -56,7 +56,7 @@ void testJurosSimples() {
     Juros juros;
 
     juros.capital = 16000;
-    juros.taxa = 0.04;
+    juros.taxa    = 0.04;
     juros.periodo = 4;
 
     assert(2560 == juros.simples());
@@ -66,7 +66,7 @@ void testJurosSimples() {
 // Início do programa
 //
 int main() {
-	// Chamamos o teste unitário
+    // Executando o teste unitário
     testJurosSimples();
     return 0;
 }
@@ -77,9 +77,6 @@ int main() {
 
 
 ```c
-#include <iostream>
-#include <assert.h>
-
 //
 // Classe Juros
 //
@@ -94,29 +91,6 @@ public:
         return capital * taxa * periodo;
     }
 };
-
-//
-// Teste Unitário
-//
-void testJurosSimples() {
-
-    Juros juros;
-
-    juros.capital = 16000;
-    juros.taxa = 0.04;
-    juros.periodo = 4;
-
-    assert(2560 == juros.simples());
-}
-
-//
-// Início do programa
-//
-int main() {
-	// Chamamos o teste unitário
-    testJurosSimples();
-    return 0;
-}
 ```
 
 
@@ -124,11 +98,8 @@ int main() {
 Linguagem JavaScript
 ---
 
-Vou fugir do padrão e mostrar primeio a implementação na linguagem JavaScript.
-
-Dessa vez não utilizaremos a função construtora como nos exemplos anteriores. Vamos fazer algo bem arcaico, diga-se de
-passagem, vamos criar um variável e instanciar o tipo primitivo `Object`. O exemplo é só para ilustrar como a programação
-orientada a objeto pode diferenciar e muito de uma linguagem para outra.
+Dessa vez vamos fazer algo bem arcaico, diga-se de passagem, vamos criar um variável e instanciar o tipo primitivo `Object`.
+O exemplo é só para ilustrar como a programação orientada a objeto pode diferenciar e muito de uma linguagem para outra.
 
 ```javascript
 var assert = require('assert');
@@ -154,8 +125,8 @@ try {
     //
     // Teste
     //
+
     // Repare que NÂO instanciamos o objeto
-    //
     juros.capital = 16000;
     juros.taxa = 0.04;
     juros.periodo = 4;
@@ -170,23 +141,8 @@ try {
 ### Solução na linguagem JavaScript
 
 ```javascript
-var assert = require('assert');
-
-var juros = new Object();
-
 juros.simples = function() {
     return this.capital * this.taxa * this.periodo;
-}
-
-try {
-
-    juros.capital = 16000;
-    juros.taxa = 0.04;
-    juros.periodo = 4;
-    assert.equal(2560, juros.simples());
-
-} catch(e) {
-    console.log(e);
 }
 ```
 

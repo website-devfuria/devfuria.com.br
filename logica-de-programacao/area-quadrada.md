@@ -44,9 +44,7 @@ int area(int lado1, int lado2) {
 // testes
 //
 int main (){
-
     assert(27 == area(3, 9));
-
     return 0;
 }
 ```
@@ -70,9 +68,7 @@ int area(int lado1, int lado2) {
 // testes
 //
 int main (){
-
     assert(27 == area(3, 9));
-
     return 0;
 }
 ```

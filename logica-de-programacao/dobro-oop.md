@@ -12,13 +12,17 @@ Exercício de lógica de programação
 
 Seu objetivo é fazer uma classe denominada `Calc` com um método que retorne o dobro de um número.
 
-Este exercício nós já fizemos a versão estruturada e a versão utilizando funções, além disso a solução é estupidamente
-simples. Como é o primeiro exercício envolvendo programação orientada a objetos e, diga-se de passagem, é aqui que os
+Este exercício nós já fizemos na versão estruturada e a versão utilizando funções.
+
+Como este é o primeiro exercício envolvendo programação orientada a objetos e, diga-se de passagem, é aqui que os
 testes unitários começam a fazer mais sentido, eu suponho que você tenho o mínimo conhecimentos sobre OOP.
 
 Para quem vem acompanhando os exercícios devemos reparar é que antes utilizávamos o compilador `gcc` (linguagem C) e
-iremos utilizar o compilador g++ (linugagem C++).
+iremos utilizar o compilador g++ (linguagem C++).
 
+Para instalar o compilador g++ no Debian/Ubuntu execute:
+
+    apt install g++
 
 
 Linguagem C++
@@ -32,9 +36,14 @@ Linguagem C++
 // Classe Calc
 //
 class Calc {
-    //
-    // seu código
-    //
+public:
+    int dobro(int num) {
+
+        //
+        // aqui entra sua lógica
+        //
+
+    }
 };
 
 //
@@ -58,9 +67,6 @@ int main() {
 ### Solução na linguagem C++
 
 ```c
-#include <iostream>
-#include <assert.h>
-
 //
 // Classe Calc
 //
@@ -70,22 +76,6 @@ public:
         return num * 2;
     }
 };
-
-//
-// Teste unitário
-//
-void testDobro() {
-    Calc c;
-    assert(10 == c.dobro(5));
-}
-
-//
-// Início do programa
-//
-int main() {
-    testDobro();
-    return 0;
-}
 ```
 
 
@@ -112,9 +102,10 @@ Abaixo nosso código inicial escrito em Python, utilize ele para resolver o prob
 # Classe
 #
 class Calc(object):
+
+    # o dobro de um número qualquer
     def dobro(self, num):
         pass
-
 
 #
 # Teste
@@ -133,6 +124,8 @@ assert 10 == calc.dobro(5)
 # Classe
 #
 class Calc(object):
+
+    # o dobro de um número qualquer
     def dobro(self, num):
         return num * 2
 
@@ -194,12 +187,21 @@ a solução mais comumente encontrada.
 ```javascript
 var assert = require('assert');
 
-// Nossa classe
+//
+// Está é nossa classe
+//
 function Calc(){
 
-    // Nosso método
+    //
+    // Este é o método da classe
+    //
     this.dobro = function(num){
+
+        //
+        // aqui entra a sua lógica
+        //
         return num * 2;
+
     }
 
 };
@@ -212,5 +214,6 @@ try {
 } catch(e) {
     console.log(e);
 }
+
 ```
 

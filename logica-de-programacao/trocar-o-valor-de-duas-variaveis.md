@@ -68,6 +68,8 @@ Abaixo nosso código inicial escrito em C.
 int main (){
 
     int a, b, temp;
+    a = 999;
+    b = 555;
 
     //
     // Sua lógica
@@ -136,16 +138,15 @@ Esta é a solução completa.
 int main (){
 
     int a, b, temp;
+    a = 999;
+    b = 555;
 
     //
     // Sua lógica
     //
-    a = 999;
-    b = 555;
-    temp = a;	  // registramos o valor de 'a' em 'temp'
-    a    = b;	  // sobrescrever 'a' com o valor de 'b'
+    temp = a;     // registramos o valor de 'a' em 'temp'
+    a    = b;     // sobrescrever 'a' com o valor de 'b'
     b    = temp;  // sobrescrever 'b' com o valor que era de 'a' (e foi registrado em 'temp')
-
 
     //
     // Testes
@@ -185,6 +186,7 @@ com o seguinte conteúdo:
 a = 999
 b = 555
 
+
 #
 # Sua lógica
 #
@@ -214,9 +216,9 @@ b = 555
 #
 # Sua lógica
 #
-temp = a  	  # registramos o valor de 'a' em 'temp'
-a    = b	  # sobrescrever 'a' com o valor de 'b'
-b    = temp   # sobrescrever 'b' com o valor que era de 'a' (e foi registrado em 'temp')
+temp = a    # registramos o valor de 'a' em 'temp'
+a    = b    # sobrescrever 'a' com o valor de 'b'
+b    = temp # sobrescrever 'b' com o valor que era de 'a' (e foi registrado em 'temp')
 
 #
 # Testes
@@ -234,7 +236,7 @@ Em JavaScript muda tudo!
 
 Não, brincadeira, segue também o mesmo esquema!
 
-Crie um arquivo chamado ``foo.js` com o conteúdo abaixo e execute no terminal `node foo.js`
+Crie um arquivo chamado `foo.js` com o conteúdo abaixo e execute no terminal `node foo.js`.
 
 Obviamente você deve ter o node.js devidamente instalado,
 
@@ -246,6 +248,9 @@ var assert = require('assert');
 // Variáveis
 //
 var a, b, temp;
+a = 999;
+b = 555;
+
 
 //
 // Sua lógica
@@ -278,15 +283,15 @@ var assert = require('assert');
 // Variáveis
 //
 var a, b, temp;
+a = 999;
+b = 555;
 
 //
 // Sua lógica
 //
-a    = 999;
-b    = 555;
-temp = a;     // registramos o valor de 'a' em 'temp'
-a    = b;     // sobrescrever 'a' com o valor de 'b'
-b    = temp;  // sobrescrever 'b' com o valor que era de 'a' (e foi registrado em 'temp')
+temp = a;    // registramos o valor de 'a' em 'temp'
+a    = b;    // sobrescrever 'a' com o valor de 'b'
+b    = temp; // sobrescrever 'b' com o valor que era de 'a' (e foi registrado em 'temp')
 
 //
 // Seu teste

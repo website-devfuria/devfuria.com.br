@@ -13,7 +13,7 @@ Faça um programa que calcule a sequencia de Fibonacci.
 
 Vamos lembrar o que é o sequencia de Fibonacci?
 
-É uma sequencia de números inteiros, começando normalmente por 0 e 1, na qual, cada termo subsequente (número de 
+É uma sequencia de números inteiros, começando normalmente por 0 e 1, na qual, cada termo subsequente (número de
 Fibonacci) corresponde a soma dos dois anteriores.
 
 A sequência é definida pela fórmula abaixo.
@@ -44,10 +44,13 @@ Resultados
 Vejamos a solução em Python.
 
 ```python
+# -*- coding: utf-8 -*-
+
 def fib(n):
     if n == 1 or n == 2:
         return 1
-    return fib(n-1) + fib(n-2)
+
+    return fib(n - 1) + fib(n - 2)
 
 assert fib(1) == 1
 assert fib(2) == 1
@@ -62,10 +65,29 @@ Ainda em Python vejamos a solução iterativa.
 ```python
 def fib(n):
     a, b = 1, 1
+
     for i in range(n-1):
-        a, b = b, a+b
+        a, b = b, a + b
+
     return a
 ```
+
+Será que o código acima é equivalente ao apresentado a seguir ?
+
+```python
+def fib(n):
+    a, b = 1, 1
+
+    for i in range(n-1):
+        a = b
+        b = a + b
+
+    return a
+```
+
+Não, não é!
+
+Há uma diferença no seu funcionamento (entendimento), você consegue dizer qual é ?
 
 
 Desafios

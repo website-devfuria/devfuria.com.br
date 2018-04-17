@@ -38,7 +38,7 @@ class Area {
 //
 void testAreaQuadrada() {
     Area area;
-    
+
     area.lado1 = 3;
     area.lado2 = 9;
     assert(27 == area.quadrada());
@@ -46,13 +46,12 @@ void testAreaQuadrada() {
 
 void testAreaCubica() {
     Area area;
-    
+
     area.lado1 = 3;
     area.lado2 = 6;
     area.lado3 = 2;
     assert(36 == area.cubica());
 }
-// .. fim dos testes
 
 //
 // Início do programa
@@ -67,9 +66,6 @@ int main() {
 ### Solução na linguagem C++
 
 ```c
-#include <iostream>
-#include <assert.h>
-
 //
 // Classe Area
 //
@@ -87,36 +83,6 @@ public:
         return lado1 * lado2 * lado3;
     }
 };
-
-//
-// Testes unitários...
-//
-void testAreaQuadrada() {
-    Area area;
-    
-    area.lado1 = 3;
-    area.lado2 = 9;
-    assert(27 == area.quadrada());
-}
-
-void testAreaCubica() {
-    Area area;
-    
-    area.lado1 = 3;
-    area.lado2 = 6;
-    area.lado3 = 2;
-    assert(36 == area.cubica());
-}
-// .. fim dos testes
-
-//
-// Início do programa
-//
-int main() {
-    testAreaQuadrada();
-    testAreaCubica();
-    return 0;
-}
 ```
 
 
@@ -147,13 +113,13 @@ area = Area()
 
 # testando a área quadrada
 area.lado1 = 3
-area.lado2 = 9    
+area.lado2 = 9
 assert 27 == area.quadrada()
 
 # testando a área cúbica
 area.lado1 = 3
-area.lado2 = 6    
-area.lado3 = 2    
+area.lado2 = 6
+area.lado3 = 2
 assert 36 == area.cubica()
 ```
 
@@ -193,7 +159,7 @@ function Area(){
     // Método
     //
     this.quadrada = function(){
-        
+
         // sua lógica
 
     }
@@ -202,7 +168,7 @@ function Area(){
     // Método
     //
     this.cubica = function(){
-        
+
         // sua lógica
 
     }
@@ -215,13 +181,13 @@ try {
 
     // testando a área quadrada
     area.lado1 = 3;
-    area.lado2 = 9;    
+    area.lado2 = 9;
     assert.equal(27, area.quadrada());
 
     // testando a área cúbica
     area.lado1 = 3;
-    area.lado2 = 6;    
-    area.lado3 = 2;    
+    area.lado2 = 6;
+    area.lado3 = 2;
     assert.equal(36, area.cubica());
 
 } catch(e) {
