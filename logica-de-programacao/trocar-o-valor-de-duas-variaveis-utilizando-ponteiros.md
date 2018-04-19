@@ -12,7 +12,7 @@ Abaixo vemos uma réplica do exercício.
 
 Repare que os testes (`assert`) estão dentro da função, de outra forma não funcionaria.
 
-Precisamos deixar nossa função mais autônoma retirando os testes de dentro dela. A dificuldade, neste caso, é retornar 
+Precisamos deixar nossa função mais autônoma retirando os testes de dentro dela. A dificuldade, neste caso, é retornar
 dois valores diferentes, como faríamos isso? Além disso, como passaríamos a variável e não o seu valor?
 
 ```c
@@ -23,8 +23,8 @@ void troca (int a, int b) {
      int aux;
 
      aux = a;
-     a = b;
-     b = aux;
+     a   = b;
+     b   = aux;
 
     assert(a == 555);
     assert(b == 999);
@@ -54,7 +54,6 @@ void troca (int *a, int *b) {
      aux = *a;
      *a  = *b;
      *b  = aux;
-
 }
 
 int main() {

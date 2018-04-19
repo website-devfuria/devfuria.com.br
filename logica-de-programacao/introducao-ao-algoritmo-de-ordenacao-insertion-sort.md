@@ -14,7 +14,7 @@ Vamos utilizar o mesmo vetor de exemplo do artigo anterior.
 O nosso objetivo é fazer um algoritmo que ordene o vetor acima.
 
 O Insertion Sorte começa a trabalhar com o segundo valor do vetor e vai jogando ele para a esquerda (início do vetor).
-Ele percorre todo o vetor um única vez, porém para fazer o movimento descrito (jogar para o início) ele utiliza-se de 
+Ele percorre todo o vetor um única vez, porém para fazer o movimento descrito (jogar para o início) ele utiliza-se de
 outro laço interno. O esquema seria mais ou menos isso...
 
     // o primeiro laço percorre o vetor completamente
@@ -23,14 +23,14 @@ outro laço interno. O esquema seria mais ou menos isso...
         // empurrando o número para o início do vetor
         while
 
-Vamos ver um passo a passo. Com dito iniciamos a trabalhar com o segundo valor do vetor, ou seja, o de índice `1`, 
+Vamos ver um passo a passo. Com dito iniciamos a trabalhar com o segundo valor do vetor, ou seja, o de índice `1`,
 no caso o valor `3`.
 
      5 [3] 2  4  7  1  0  6
     (5  3) 2  4  7  1  0  6   comparamos com o valor anterior
      3--5  2  4  7  1  0  6   trocamos
 
-Na segunda iteração pegamos o próximo valor (`2`) e vamos comparando para trás, quero dizer, vamos comparando com os 
+Na segunda iteração pegamos o próximo valor (`2`) e vamos comparando para trás, quero dizer, vamos comparando com os
 valores anteriores.
 
      3  5 [2] 4  7  1  0  6
@@ -99,48 +99,35 @@ Obs: Eu utilizo os mesmos valores do vídeo.
 Segue o exemplo na linguagem C:
 
 ```c
-void insertion_sort_1 (int vetor[], int n) {
    int k, j, aux;
+
    for (k = 1; k <= n - 1; k++){
+      printf("\n[%d] ", k);
+
       aux = vetor[k];
       j = k - 1;
       while (j >= 0 && aux < vetor[j]) {
+         printf("%d, ", j);
+
          vetor[j+1] = vetor[j];
          j--;
       }
+
       vetor[j+1] = aux;
    }
-}
 ```
 
-Se olharmos os índices do vetor  dessa forma...
+Se olharmos os índices do vetor teremos o seguinte resultado:
 
-```c
-   ...
-   for (k = 1; k <= n - 1; k++){
-      printf("\n[%d] ", k);   // <----
-      aux = vetor[k];
-      j = k - 1;
-      while (j >= 0 && aux < vetor[j]) {
-         printf("%d, ", j);  // <----
-         ...
-```
-
-...teremos o seguinte resultado:
-
-    [1] 0, 
-    [2] 1, 0, 
-    [3] 2, 
-    [4] 
-    [5] 4, 3, 2, 1, 0, 
-    [6] 5, 4, 3, 2, 1, 0, 
-    [7] 6, 
+    [1] 0,
+    [2] 1, 0,
+    [3] 2,
+    [4]
+    [5] 4, 3, 2, 1, 0,
+    [6] 5, 4, 3, 2, 1, 0,
+    [7] 6,
 
 Pode parecer estranho à primeira vista, mas olhando com cuidado você verá que os índices referem-se a quantidade de
 trocas em cada iteração.
 
 Na 4 iteração, por exemplo, não houve troca alguma.
-
-Para baixar os exemplos utilize este 
-[repositório](https://github.com/devfuria/c-exemplos/blob/master/ordenacao/insertion-sort.c).
-

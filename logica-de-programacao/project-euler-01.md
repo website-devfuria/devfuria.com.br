@@ -53,6 +53,8 @@ Depois foi só implementar a função que somasse os múltiplos até um determin
 Veja como ficou o código incluindo os testes.
 
 ```python
+# -*- coding: utf-8 -*-
+
 def eh_multiplo_de(numero, multiplo):
     return numero % multiplo == 0
 
@@ -64,21 +66,19 @@ def soma_multiplos_abaixo_de(limite):
     return soma
 
 #
-# eh_multiplo_de()
+# Testes
 #
 assert eh_multiplo_de(3, 3)
 assert not eh_multiplo_de(4, 3)
 assert eh_multiplo_de(5, 5)
 
-#
-# soma_multiplos_abaixo_de()
-#
+assert 23 == soma_multiplos_abaixo_de(10) # 3 + 5 + 6 + 9
+assert 78 == soma_multiplos_abaixo_de(20) # 3 + 5 + 6 + 9 + 10 + 12 + 15 + 18
 
-// 3 + 5 + 6 + 9
-assert 23 == soma_multiplos_abaixo_de(10)
-
-// 3 + 5 + 6 + 9 + 10 + 12 + 15 + 18
-assert 78 == soma_multiplos_abaixo_de(20)
+#
+# Resultado
+#
+print( soma_multiplos_abaixo_de(1000) )
 ```
 
 Para descobrir o resultado imprima o valor de `soma_multiplos_abaixo_de(1000)`.
@@ -97,35 +97,67 @@ Mostrarei aqui alguns que achei significativo.
 ___Exemplo 1:___
 
 ```python
-k = list(range(1000))
-x = list()
-for i in k:
-    if i%3 == 0 or i%5 == 0:
-        x.append(i)
-    else:
-        continue
-print(sum(x))
+# -*- coding: utf-8 -*-
+
+def soma_multiplos_abaixo_de(limite):
+    k = list(range(limite))
+    x = list()
+    for i in k:
+        if i%3 == 0 or i%5 == 0:
+            x.append(i)
+        else:
+            continue
+    return sum(x)
+
+#
+# Resultado
+#
+print( soma_multiplos_abaixo_de(1000) )
 ```
 
 ___Exemplo 2:___
 
 ```python
-sum = 0
-for i in range(1000):
-    if i%3 == 0 or i%5 == 0:
-        sum += i
-print(sum)
+# -*- coding: utf-8 -*-
+
+def soma_multiplos_abaixo_de(limite):
+    sum = 0
+    for i in range(limite):
+        if i%3 == 0 or i%5 == 0:
+            sum += i
+    return sum
+
+#
+# Resultado
+#
+print( soma_multiplos_abaixo_de(1000) )
 ```
 
 ___Exemplo 3:___
 
 
 ```python
-sum([i for i in range(1000) if i%3 == 0 or i%5 == 0])
+# -*- coding: utf-8 -*-
+
+def soma_multiplos_abaixo_de(limite):
+    return sum([i for i in range(limite) if i%3 == 0 or i%5 == 0])
+
+#
+# Resultado
+#
+print( soma_multiplos_abaixo_de(1000) )
 ```
 
 ___Exemplo 4:___
 
 ```python
-sum(filter(lambda x : (x%3 == 0) or (x%5 == 0), range (1000)))
+# -*- coding: utf-8 -*-
+
+def soma_multiplos_abaixo_de(limite):
+    return sum(filter(lambda x : (x%3 == 0) or (x%5 == 0), range (limite)))
+
+#
+# Resultado
+#
+print( soma_multiplos_abaixo_de(1000) )
 ```

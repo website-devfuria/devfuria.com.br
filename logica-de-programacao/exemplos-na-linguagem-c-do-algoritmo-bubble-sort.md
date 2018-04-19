@@ -1,28 +1,30 @@
 ---
 title:       Exemplos na linguagem C do algoritmo Bubble Sort
-description: 
+description:
 capitulo:    logica-nivel-7
 ordem:       2
 ---
 
 Ordenar um vetor é algo interessante.
 
-Neste artigo eu mostro 4 exemplos escritos na linguagem C que ordenam um vetor através do já conhecido algoritmo 
+Neste artigo eu mostro 4 exemplos escritos na linguagem C que ordenam um vetor através do já conhecido algoritmo
 Bubble Sort.
 
 Pressuponho que você conheça o algoritmo.
-
-Para baixar os exemplos utilize este 
-[repositorio](https://github.com/devfuria/c-exemplos/blob/master/ordenacao/bubble-sort.c).
 
 
 ### Exemplo 1
 
 ```c
-void bubble_sort_1 (int vetor[], int n) {
+void bubble_sort (int vetor[], int n) {
     int k, j, aux;
+
     for (k = 1; k < n; k++) {
+        printf("\n[%d] ", k);
+
         for (j = 0; j < n - 1; j++) {
+            printf("%d, ", j);
+
             if (vetor[j] > vetor[j + 1]) {
                 aux          = vetor[j];
                 vetor[j]     = vetor[j + 1];
@@ -65,10 +67,15 @@ Vamos ao exemplo 2, pois ele esclarecerá as coisas.
 ### Exemplo 2
 
 ```c
-void bubble_sort_2 (int vetor[], int n) {
+void bubble_sort (int vetor[], int n) {
     int k, j, aux;
+
     for (k = 1; k < n; k++) {
+        printf("\n[%d] ", k);
+
         for (j = 0; j < n - k; j++) {
+            printf("%d, ", j);
+
             if (vetor[j] > vetor[j + 1]) {
                 aux          = vetor[j];
                 vetor[j]     = vetor[j + 1];
@@ -81,7 +88,7 @@ void bubble_sort_2 (int vetor[], int n) {
 
 A diferença entre o primeiro exemplo é o laço `for` mais interno.
 
-Ele não mais compara `n - 1` e sim `n - k`, ou seja, ele é mais econômico e reflete com fidelidade o algoritmo 
+Ele não mais compara `n - 1` e sim `n - k`, ou seja, ele é mais econômico e reflete com fidelidade o algoritmo
 Bubble Sort.
 
 Se você imprimir os índices `k` e `j` verá algo semelhante ao exibido abaixo.
@@ -107,11 +114,15 @@ Isso implica em fazer a correção "menos um". O que antes era `k < n` agora fic
 No laço mais interno (segundo laço) também precisamos corrigi com "menos um".
 
 ```c
-void bubble_sort_3 (int vetor[], int n) {
+void bubble_sort (int vetor[], int n) {
     int k, j, aux;
 
     for (k = 0; k < n - 1; k++) {
+        printf("\n[%d] ", k);
+
         for (j = 0; j < n - k - 1; j++) {
+            printf("%d, ", j);
+
             if (vetor[j] > vetor[j + 1]) {
                 aux          = vetor[j];
                 vetor[j]     = vetor[j + 1];
@@ -124,12 +135,12 @@ void bubble_sort_3 (int vetor[], int n) {
 
 Apesar disso o algoritmo chega ao mesmo resultado, veja os índices impressos:
 
-    [0] 0, 1, 2, 3, 4, 5, 6, 
-    [1] 0, 1, 2, 3, 4, 5, 
-    [2] 0, 1, 2, 3, 4, 
-    [3] 0, 1, 2, 3, 
-    [4] 0, 1, 2, 
-    [5] 0, 1, 
+    [0] 0, 1, 2, 3, 4, 5, 6,
+    [1] 0, 1, 2, 3, 4, 5,
+    [2] 0, 1, 2, 3, 4,
+    [3] 0, 1, 2, 3,
+    [4] 0, 1, 2,
+    [5] 0, 1,
     [6] 0,
 
 Podemos considerar que o algoritmo ficou menos legível se comparamos com o exemplo 2, mas ele reflete mais fielmente a
@@ -156,10 +167,15 @@ Isso implica em trocar `for (k = 0; k < n - 1; k++) {` por `for (k = n - 1; k > 
 E no segundo laço, simplificamos, `for (j = 0; j < n - k - 1; j++) {` por `for (j = 0; j < k; j++) {`.
 
 ```c
-void bubble_sort_4 (int vetor[], int n) {
+void bubble_sort (int vetor[], int n) {
     int k, j, aux;
+
     for (k = n - 1; k > 0; k--) {
+        printf("\n[%d] ", k);
+
         for (j = 0; j < k; j++) {
+            printf("%d, ", j);
+
             if (vetor[j] > vetor[j + 1]) {
                 aux          = vetor[j];
                 vetor[j]     = vetor[j + 1];

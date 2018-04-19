@@ -31,7 +31,7 @@ Veja com atenção o código abaixo:
 #include <stdio.h>
 #include <assert.h>
 
-main() {
+void main() {
 
     int x, y;
 
@@ -41,7 +41,6 @@ main() {
 
     assert(x == 20);
     assert(y == 10);
-    return 0;
 }
 ```
 
@@ -69,7 +68,7 @@ E aqui está a pegadinha.
 y = x;
 ```
 
-O que é passado (atribuído) para a variável `y`? 
+O que é passado (atribuído) para a variável `y`?
 
 Bom, alguma coisa de `x` é atribuído a `y`, e esse "alguma coisa" seria o *valor* ou a *referência* de `x`?
 
@@ -145,7 +144,7 @@ Mas voltando ao nosso pequeno trecho de código `y = &x`, atribuímos a `y` o en
 Podemos dizer, em outras palavras, que `y` está *amarrado* em `x`, pois se mudarmos o valor de `x`, o valor de `y` também
 será alterado. Quer dizer, `y` é um ponteiro para a variável `x`.
 
-Obs: A utilidade de ponteiros não é ficar apontando para outras variáveis. Estamos estudando um exemplo "bobo" que tem 
+Obs: A utilidade de ponteiros não é ficar apontando para outras variáveis. Estamos estudando um exemplo "bobo" que tem
 como objetivo ser apenas didático.
 
 Se continuarmos a ler o código...
@@ -184,12 +183,11 @@ y = &x;
 
 Neste caso, `y` aponta para `x` e que estiver em `x`, obviamente, estará em `y`.
 
-Talvez esse seja o seu primeiro passo no entendimento de ponteiros da linguagem C, por tanto eu procurei extrair os 
-elementos mais simples do assunto __ponteiros__ para não "travarmos" no entendimento. Obviamente não terminamos aqui, 
+Talvez esse seja o seu primeiro passo no entendimento de ponteiros da linguagem C, por tanto eu procurei extrair os
+elementos mais simples do assunto __ponteiros__ para não "travarmos" no entendimento. Obviamente não terminamos aqui,
 ainda há muita coisa para aprendermos sobre ponteiros.
 
 Que tal vermos como eles agem sobre uma função?
 
-Vá para a pŕoxima matéria!
+Vá para a próxima matéria!
 
-Até lá, abs. !
