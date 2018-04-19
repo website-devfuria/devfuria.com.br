@@ -180,6 +180,12 @@ __Módulo #16:__
 + [Aula #16g - Programação Orientada a Objetos (triângulo)](https://youtu.be/hXOzQ0TCrD0)
 
 
+__Aulas bônus__
+
++ [Brincando com o GiHub 01](https://youtu.be/LBn5VVRxn-Q)
++ [Brincando com o GiHub 02](https://youtu.be/1qzIV8fprhM)
+
+
 
 
 ## Para quem é indicado ?
