@@ -186,6 +186,19 @@ __Aulas bônus__
 + [Brincando com o GiHub 02](https://youtu.be/1qzIV8fprhM)
 
 
+__Módulo #17:__
+
++ [Aula #17a - Recursividade em C, Python e JavaScript](https://youtu.be/lDQZrhrCK_4)
++ [Aula #17b - Somando números (recursivo)](https://youtu.be/xTM9hGPudo8)
++ [Aula #17c - Fatorial (recursividade)](https://youtu.be/Hvtl_UycWrg)
++ [Aula #17d - Sequencia de Fibonacci  (recursividade)](https://youtu.be/QbGLVG1khSs)
+
+
+__Aulas bônus__
+
++ [Livros de Tecnologia (pausa para o café)](https://youtu.be/SWp-v5JAo3A)
+
+
 
 
 ## Para quem é indicado ?
