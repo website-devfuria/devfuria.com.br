@@ -21,7 +21,7 @@ __Comentários__:
 
 Já vimos no artigo anterior uma introdução sobre a recursividade (algoritmos de recursão).
 
-Este exercício se parece com a sequência de Fibonacci, parece mas não é, cuidado para não confundir.
+Este exercício se parece com o Fatorial, parece mas não é, cuidado para não confundir.
 
 
 Linguagem C
@@ -55,6 +55,7 @@ void main() {
 Esta solução é muito parecida com o Fatorial (próximo exercício), a diferença é que somamos os números
 (ao invês de multiplicar).
 
+
 ```c
 int add(int n) {
     int sum;
@@ -64,27 +65,14 @@ int add(int n) {
     else
         sum = n + add(n - 1);
 
-    return (sum);
+    return sum;
 }
 ```
+
 
 ### 2 Solução na linguagem C
 
 ```c
-//
-// https://pt.wikihow.com/Somar-os-N%C3%BAmeros-Inteiros-de-1-at%C3%A9-N
-//
-int add(int n) {
-    return (n * (n + 1)) / 2;
-}
-```
-
-### 3 Solução na linguagem C
-
-```c
-//
-// https://youtu.be/YEeYk9uEqEI
-//
 int add(int n) {
     if (n == 0)
         return 0;
@@ -93,17 +81,29 @@ int add(int n) {
 }
 ```
 
-### 4 Solução na linguagem C
+
+
+### 3 Solução na linguagem C
 
 Pensando na solução anterior (3), será que dá para inverter o if ?
 
 ```c
 int add(int n) {
     if (n != 0)
-        return n + add(n-1);
+        return n + add(n - 1);
     else
         return 0;
 }
 ```
 
 
+### 4 Solução na linguagem C
+
+
+```c
+int add(int n) {
+    return (n * (n + 1)) / 2;
+}
+```
+
+Fonte [pt.wikihow.com/Somar-os-Números-Inteiros-de-1-até-N](https://pt.wikihow.com/Somar-os-N%C3%BAmeros-Inteiros-de-1-at%C3%A9-N)

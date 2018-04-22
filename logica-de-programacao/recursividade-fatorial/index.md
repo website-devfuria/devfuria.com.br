@@ -13,9 +13,8 @@ Faça um programa que calcule o fatorial de um número qualquer.
 
 Vamos lembrar o que é o fatorial?
 
-A função fatorial normalmente é definida por:
-
-![Definição do fatorial](fatorial-01.png)
+Seja `n` um número natural, tal que `n` >= 2, chama-se fatorial de `n` o produto de todos os números naturais
+consecutivos de `n` até 1.
 
 Por exemplo,
 
@@ -23,6 +22,7 @@ Por exemplo,
 
 Veja mais alguns resultados e que você poderá utilizar como testes:
 
+    0! = 1
     1! = 1
     2! = 2
     3! = 6
@@ -31,6 +31,8 @@ Veja mais alguns resultados e que você poderá utilizar como testes:
     6! = 720
 
 Atente que `0! = 1` porque o produto vazio (produto de nenhum número) é `1`.
+
+![](fatorial-02.png)
 
 Agora é só trabalhar, não vale ver as respostas!!!!
 

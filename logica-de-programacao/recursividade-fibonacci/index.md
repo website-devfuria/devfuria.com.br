@@ -1,6 +1,6 @@
 ---
 title:       Fibonacci (recursão)
-description: Faça um algoritmo que calcule<br ?>a sequencia de Fibonacci
+description: Faça um algoritmo que calcule a sequencia de Fibonacci
 capitulo:    logica-nivel-6
 ordem:       4
 ---
@@ -26,6 +26,7 @@ Os primeiros números deste sequencia seria...
 
 Então, podemos utilizar como testes os resultados abaixo.
 
+    fib(0) == 0
     fib(1) == 1
     fib(2) == 1
     fib(3) == 2
@@ -47,11 +48,12 @@ Vejamos a solução em Python.
 # -*- coding: utf-8 -*-
 
 def fib(n):
-    if n == 1 or n == 2:
-        return 1
+    if n < 2:
+        return n
 
     return fib(n - 1) + fib(n - 2)
 
+assert fib(0) == 0
 assert fib(1) == 1
 assert fib(2) == 1
 assert fib(3) == 2

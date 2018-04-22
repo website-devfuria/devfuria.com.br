@@ -13,7 +13,7 @@ Vamos utilizar o mesmo vetor de exemplo do artigo anterior.
 
 O nosso objetivo é fazer um algoritmo que ordene o vetor acima.
 
-O Insertion Sorte começa a trabalhar com o segundo valor do vetor e vai jogando ele para a esquerda (início do vetor).
+O Insertion Sort começa a trabalhar com o segundo valor do vetor e vai jogando ele para a esquerda (início do vetor).
 Ele percorre todo o vetor um única vez, porém para fazer o movimento descrito (jogar para o início) ele utiliza-se de
 outro laço interno. O esquema seria mais ou menos isso...
 
@@ -23,7 +23,7 @@ outro laço interno. O esquema seria mais ou menos isso...
         // empurrando o número para o início do vetor
         while
 
-Vamos ver um passo a passo. Com dito iniciamos a trabalhar com o segundo valor do vetor, ou seja, o de índice `1`,
+Vamos ver um passo a passo. Com dito, iniciamos a trabalhar com o segundo valor do vetor, ou seja, o de índice `1`,
 no caso o valor `3`.
 
      5 [3] 2  4  7  1  0  6
@@ -42,9 +42,9 @@ valores anteriores.
 Na terceira iteração pegamos o valor `4` e, novamente, comparamos com os valores anteriores.
 
      2  3  5 [4] 7  1  0  6
-     2  3 (5  4) 7  1  0  6
-     2  3  4--5  7  1  0  6
-     2 (3  4) 5  7  1  0  6
+     2  3 (5  4) 7  1  0  6   comparamos com o valor anterior
+     2  3  4--5  7  1  0  6   trocamos
+     2 (3  4) 5  7  1  0  6   comparamos com o valor anterior
 
 Na quarta iteração é bem rápida pois o valor que pegamos (`7`) acabamos não trocando e isto significa que podemos seguir
 em frente.
