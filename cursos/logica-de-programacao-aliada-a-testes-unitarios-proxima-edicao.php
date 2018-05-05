@@ -40,9 +40,8 @@
         <h2>Powered by devfuria.com.br</h2>
         <h1>Curso de Lógica de Programação <br /> + <br />Testes de Unidades</h1>
 
-        <p>Encerramos as inscrições para a turma do 1 semestre de 2018, mas</p>
-        <p>iremos abrir uma <strong>nova turma no segundo semestre</strong> deste ano!</p>
-        
+        <p>Iremos abrir uma <strong>nova turma no segundo semestre</strong> deste ano!</p>
+
         <p><strong>Se inscreva</strong> para a próxima turma e não perca nenhuma novidade !!!</p>
 
         <!-- <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p> -->
@@ -66,7 +65,7 @@ $utm_medium   = (isset($_GET['utm_medium']))   ? $_GET['utm_medium'] :   'não-i
             <label><input type="text" value="" name="email" placeholder="seu melhor email" style="width: 250px" /></label>
             <label><button type="submit">Inscreva-se</button></label>
         </form>
- 
+
 
      </body>
     <script src="../assets/js/analytics.js"></script>

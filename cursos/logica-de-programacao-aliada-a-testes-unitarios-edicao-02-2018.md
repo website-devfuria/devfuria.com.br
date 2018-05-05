@@ -199,6 +199,28 @@ __Aulas bônus__
 + [Livros de Tecnologia (pausa para o café)](https://youtu.be/SWp-v5JAo3A)
 
 
+__Módulo #18:__
+
++ [Aula #18a - Introdução ao algoritmo bubble sort](https://youtu.be/NBLpc6KR2Fo)
++ [Aula #18b - Primeiro exemplo bubble sort](https://youtu.be/_gCzxCOb-n8)
++ [Aula #18c - Segundo exemplo bubble sort](https://youtu.be/hgEaro0IBqM)
++ [Aula #18d - Terceiro exemplo bubble sort](https://youtu.be/8wYJBYWl5Qo)
++ [Aula #18e - Quarto exemplo bubble sort](https://youtu.be/_QHQYh9Dp6c)
++ [Aula #18f - Exemplo insertion sort](https://youtu.be/2cEDLrozFm4)
+
+
+__Módulo #19:__
+
++ [Aula #19a  - Ponteiros na Linguagem C](https://youtu.be/XEQ9HWuckzY)
++ [Aula #19b - O básico sobre ponteiros (Linguagem C)](https://youtu.be/TT-dWLq9spg)
+
+
+__Módulo #20:__
+
++ [Aula #20a - Apresentando o Projeto Euler](https://youtu.be/Wzjm15vitGU)
++ [Aula #20b  - Primeiro Problema do Projeto Euler](https://youtu.be/Xe9zs81OiTk)
++ [Aula #20c - Estamos quase lá!!!](https://youtu.be/RMWM10gb6sE)
+
 
 
 ## Para quem é indicado ?
