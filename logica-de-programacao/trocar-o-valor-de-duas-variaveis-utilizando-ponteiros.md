@@ -38,9 +38,11 @@ int main() {
 
 Este é um bom execício para compreender a diferença entre o que é passar parâmetros por valores e por referência.
 
-"Por valor" nossa função receberá os valores e manipulá-los não interfere no conteúdo das variáveis originais.
+    por valor      = nossa função receberá os valores e
+                     manipulá-los não interfere no conteúdo das variáveis originais.
 
-"Por referência" obtemos a referência daquela variável e, dessa forma, alteramos o valor original da variável.
+    por referência = temos a referência daquela variável e, dessa forma,
+                     alteramos o valor original da variável.
 
 Veja abaixo nosso código alterado para se comportar exatamente como descrevemos.
 

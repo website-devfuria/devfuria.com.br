@@ -11,11 +11,11 @@ Será necessário que você tenha os conceitos básico sobre o que é um ponteir
 
 Mas se não tiver, tubo bem, isto ajudará:
 
-Para declarar um ponteiro utilizamos operador unário `*`.
+Para declarar um ponteiro utilizamos operador `*`.
 
-Para acessarmos o endereço de uma variável utilizamos o operador unário `&`.
+Para acessarmos o endereço de uma variável utilizamos o operador `&`.
 
-- * para ponteiros
+- &lowast; para ponteiros
 - & para endereço
 
 Eu separei o exercício em duas partes...
@@ -181,7 +181,7 @@ No segundo exemplo `y` recebe o endereço de `x` (por referência):
 y = &x;
 ```
 
-Neste caso, `y` aponta para `x` e que estiver em `x`, obviamente, estará em `y`.
+Neste caso, `y` aponta para `x` e o que estiver em `x`, obviamente, estará em `y`.
 
 Talvez esse seja o seu primeiro passo no entendimento de ponteiros da linguagem C, por tanto eu procurei extrair os
 elementos mais simples do assunto __ponteiros__ para não "travarmos" no entendimento. Obviamente não terminamos aqui,
