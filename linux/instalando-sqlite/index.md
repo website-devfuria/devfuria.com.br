@@ -1,6 +1,7 @@
 ---
 title:       Instalando o sqlite no Linux
 description: Aprenda como instalar o banco de dados sqlite no Linux
+capitulo:    linux-instalando-db
 ---
 
 [sqlite](https://www.sqlite.org/) é um banco de dados famoso pela sua facilidade de instalação. Cada banco de dados é representado por um arquivo no disco

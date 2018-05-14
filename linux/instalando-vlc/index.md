@@ -1,6 +1,7 @@
 ---
 title:       Instalando VLC no CentOS
 description: Como instalar o player de audio e video VLCs no Linux
+capitulo:    linux-instalando-audio-som
 ---
 
 ![](vlc-ubuntu.jpg)

@@ -1,6 +1,7 @@
 ---
 title:       Instalando calculadoras no Linux
 description: Aprenda como instalar as calculadores Speedcrunh e Gcalctool no Linux
+capitulo:    linux-instalando-utils
 ---
 
 
@@ -25,7 +26,7 @@ Gcalctool
 
 Executar
 
-    # yum -y install gcalctool 
+    # yum -y install gcalctool
 
 
 ![](calculadora-gcalctool.png)

@@ -1,6 +1,7 @@
 ---
 title:       Instalando o putty (acesso remoto)
 description: Descubra como instalar o putty (acesso remoto) no Linux
+capitulo:    linux-instalando-utils
 ---
 
 ![putty](putty.jpg "putty")
@@ -8,7 +9,7 @@ description: Descubra como instalar o putty (acesso remoto) no Linux
 O Putty é um client (cliente) para acesso remoto. Ele é ótimo se voce estiver no __Windows__ e quiser acessar uma
 máquina __Linux__.
 
-Se você estiver no __Linux__ e quer acessar outra máquina __Linux__, faça isso vii terminal utilizando o 
+Se você estiver no __Linux__ e quer acessar outra máquina __Linux__, faça isso vii terminal utilizando o
 [SSH](/linux/como-acessar-servidor-remotamente/).
 
 Se de qualquer forma você quiser instalar o __Putty__ no __Linux__, seguem as receitas:
