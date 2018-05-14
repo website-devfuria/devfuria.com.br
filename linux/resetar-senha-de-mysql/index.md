@@ -1,6 +1,7 @@
 ---
 title:       Como resetar a senha de root do MySql
 description: Dicas de como resetar a senha de root do MySql
+capitulo:    linux-instalando-db
 ---
 
 A receita abaixo foi testada em um __CentOS__.

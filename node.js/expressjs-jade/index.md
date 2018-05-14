@@ -1,6 +1,7 @@
 ---
+layout:      artigo-solto
 title:       Aprenda a integrar o Jade ao Express.js
-description: 
+description:
 ---
 
 Em breve!
