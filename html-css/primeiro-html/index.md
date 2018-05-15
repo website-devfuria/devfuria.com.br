@@ -1,5 +1,5 @@
 ---
-title:       Criando seu primeiro HTML 
+title:       Criando seu primeiro HTML
 description: Aprenda com esse artigo a produzir seu primeiro HTML
 capitulo:    html-css-intro
 orem:        2
@@ -42,8 +42,8 @@ o IE), o resultado deve ser parecido com o abaixo:
 </html>
 {% endhighlight %}
 
-Na linha 1 temos o [DTD (Document type definition)](/html-css/dtd-doctype/), ele define qual é o tipo de documento, no exemplo ele indica que
-o documento é do tipo [HTML5](/html-css/html5/). Inclua sempre o DTD, vulgo __doctype__ em seus arquivos HTML, em breve
+Na linha 1 temos o DTD (Document type definition), ele define qual é o tipo de documento, no exemplo ele indica que
+o documento é do tipo [HTML5](/html-css/). Inclua sempre o DTD, vulgo __doctype__ em seus arquivos HTML, em breve
 voltaremos a falar mais sobre esse assunto. Por hora, saiba que ele é muito importante.
 
 Na linha 2 começamos o HTML de fato. Entre as linhas 3 e 6 temos o __cabeçalho__ (head) e entre as linhas 7 e 9 temos
@@ -61,7 +61,7 @@ este é outro assunto que trataremos em breve.
 
 
 - - -
-Fonte: 
+Fonte:
 - [Introdução ao HTML- Mozilla.](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction)
 
 

@@ -31,7 +31,7 @@ animals[4]   # IndexError: list index out of range
 ```
 
 Podemos fatiar (leia-se acessar) um lista de diversas formas, veja a matéria sobre
-[fatiamento de sequencias](../sequencias-fatiamento/ "Python - Sequencias").
+[fatiamento de sequencias](/python/sequencias-fatiamento/ "Python - Sequencias").
 
 
 ### Para criar uma lista
@@ -98,7 +98,7 @@ Your choices are:
 
 ### Copiando listas
 
-Se quisermos copiar uma lista podemos realizar uma simples atribuição, mas manteremos uma relação entre as duas, ou 
+Se quisermos copiar uma lista podemos realizar uma simples atribuição, mas manteremos uma relação entre as duas, ou
 melhor, ambas apontam para o mesmo objeto e as alterações em uma afetará a outra.
 
 ```python

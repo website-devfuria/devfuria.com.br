@@ -3,7 +3,7 @@ title:       "Backbone exemplo 01:  Template e os eventos da Collection"
 description: Pequeno exemplo de script Backbone (JavaScript) onde exploro a questão do template e os eventos da collection.
 capitulo:    backbone-exemplos
 ordem:       1
-ogimage:     img.png   
+ogimage:     img.png
 ---
 
 Este é o primeiro exemplo que vemos do Backbone após termos visto todos os tópicos sobre o framework.
@@ -88,4 +88,4 @@ var ListView = Backbone.View.extend({
 var listView = new ListView();
 ```
 
-Veja a [demo](/javascript/backbone-exemplo-01/backbone.html).
+Veja a [demo](/backbone/exemplo-01/backbone.html).

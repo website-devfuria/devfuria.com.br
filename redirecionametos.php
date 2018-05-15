@@ -52,11 +52,14 @@ return array(
     "/javascript/refs/dom-remove/"            => "/javascript/dom-remove-child/",
     "/javascript/global-g/"                   => "/javascript/referencia-pratica-sobre-a-opcao-global-g/",
     "/javascript/dom-remove/"                 => "/javascript/dom-remove-child/",
+    "/javascript/ajax-php/"                   => "/javascript/ajax-php-jquery/",
 
     "/javascript/forms/textbox-password-textarea/" => "/javascript/manipulando-caixas-de-texto-com-javascript/",
     "/javascript/forms/checkbox-checked/"          => "/javascript/manipulando-checkboxes-com-javascript/",
     "/javascript/forms/input-radio-button/"        => "/javascript/manipulando-radios-buttons-com-javascript/",
     "/js/basico/input-radio-button/"               => "/javascript/manipulando-radios-buttons-com-javascript/",
+    "/javascript/manipulando-radios/"              => "/javascript/manipulando-radios-buttons-com-javascript/",
+    "/javascript/manipulando-combobox/"            => "/javascript/manipulando-combobox-select-com-javascript/",
     "/javascript/forms/select-combobox/"           => "/javascript/manipulando-combobox-select-com-javascript/",
     "/js/basico/select-combobox/"                  => "/javascript/manipulando-combobox-select-com-javascript/",
 
@@ -80,6 +83,7 @@ return array(
     "/javascript/node.js/nodejs-05-filtered-ls/"            => "/node.js/learnyounode-05-filtered-ls/",
     "/javascript/node.js/programando-com-node-utils-merge/" => "/node.js/explorando-a-minuscula-biblioteca-utils-merge/",
     "/node.js/templates-engine-tutorial-jade/"              => "/node.js/tutorial-sobre-o-template-jade-node-express/",
+    "/javascript/node.js/templates-engine-tutorial-jade/"   => "/node.js/tutorial-sobre-o-template-jade-node-express/",
 
     "/javascript/backbone/"                                 => "/backbone/",
     "/javascript/backbone-introducao/"                      => "/backbone/introducao/",
@@ -98,6 +102,7 @@ return array(
     "/javascript/backbone-sync/"                            => "/backbone/sync/",
     "/javascript/backbone-router/"                          => "/backbone/router/",
     "/javascript/backbone-exemplo-01/"                      => "/backbone/exemplo-01/",
+    "/javascript/backbone-exemplo-01/backbone.html/"        => "/backbone/exemplo-01/",
     "/javascript/backbone-exemplo-02/"                      => "/backbone/exemplo-02/",
     "/javascript/backbone-exemplo-03/"                      => "/backbone/exemplo-03/",
     "/javascript/backbone-exemplo-04/"                      => "/backbone/exemplo-04/",
@@ -139,6 +144,10 @@ return array(
     "/javascript/canvas/col-linhas-grade/"           => "/html-canvas/exemplo-grid-lines/",
     "/javascript/canvas/col-retangulos/"             => "/html-canvas/exemplo-retangulos-randomicos/",
 
+
+    "/html/"                                            => "/html-css/",
+    "/html-css/html5/"                                  => "/html-css/",
+    "/html-css/dtd-doctype/"                            => "/html-css/",
     "/html-css/historia-html/"                          => "/html-css/introducao-html/",
     "/html-css/historia-html/?/"                        => "/html-css/introducao-html/",
     "/html-css/basico/semantica/"                       => "/html-css/",
@@ -170,7 +179,12 @@ return array(
     "/html-css/basico/primeiro-html/"                               => "/html-css/primeiro-html/",
     "/html-css/basico/primeiro-html/materia.md/"                    => "/html-css/primeiro-html/",
     "/html-css/basico/primeiro-html/materia.mrk/"                   => "/html-css/primeiro-html/",
+    "/html-css/basico/primeiro-html/1080P/"                         => "/html-css/primeiro-html/",
+    "/html-css/basico/primeiro-html/720P/"                          => "/html-css/primeiro-html/",
     "/%3Cb%3Ehtml%3C/b%3E-css/formularios/combo%3Cb%3Ebox%3C/b%3E/" => "/html-css/formularios/combobox/",
+
+    "/c/rodando-os-testes/rodando-os-testes/"           => "/c/rodando-os-testes/",
+    "/c/entendendo-o-assert-c/entendendo-o-assert-c/"   => "/c/entendendo-o-assert-c/",
 
     "/logica"                                           => "/logica-de-programacao/",
     "/logica/"                                          => "/logica-de-programacao/",
@@ -261,6 +275,7 @@ return array(
     "/mysql-sql/basico/crud/"                   => "/sql/mysql-crud/",
     "/sql/mysql-erro-1064/"                     => "/sql/mysql-ler-mensagens-erro/",
     "/sql/mysql-load-data-local-infile/"        => "/sql/populando-tabela-a-partir-de-um-arquivo-de-texto-no-mysql/",
+    "/sql/mysql/"                               => "/sql/mysql-criando-tabelas/",
 
     "/php/refs/"                                => "/php",
     "/php/refs/require/"                        => "/php/",
@@ -303,9 +318,11 @@ return array(
     "/php/arrays-funcoes-basicas/"              => "/php/criando-e-iterando-um-array/",
     "/php/criando-iterando-um-array/"           => "/php/criando-e-iterando-um-array/",
     "/php/forms/radio-button/"                  => "/php/manipulando-radio-button-com-php/",
+    "/php/manipulando-radio/"                   => "/php/manipulando-radio-button-com-php/",
     "/php/forms/select-multiple/"               => "/php/manipulando-listbox-com-php/",
     "/php/forms/textbox-password-textarea/"     => "/php/manipulando-os-controles-text-password-e-textarea/",
     "/php/forms/combobox/"                      => "/php/manipulando-combobox-com-php/",
+    "/php/manipulando-combobox/"                 => "/php/manipulando-combobox-com-php/",
     "/php/forms/checkbox/"                      => "/php/manipulando-checkboxes-com-php/",
     "/php/forms/enviando-dados-via-get-post/"   => "/php/enviando-dados-via-get-post/",
     "/php/forms/recebendo-dados-via-get-post/"  => "/php/recebendo-dados-via-get-post/",
@@ -331,6 +348,8 @@ return array(
     "/python/built-in/repr/"      => "/python/built-in-repr/",
     "/python/built-in/zip/"       => "/python/built-in-zip/",
     "/python/os.path/"            => "/python/os-path/",
+    "/python/sequencias-fatiamento/sequencias-fatiamento/"  => "/python/sequencias-fatiamento/",
+    "/python/saidas-output/saidas-output/"                  => "/python/saidas-output/",
 
     "/regexp/"                 => "/regex/",
     "/regexp//"                => "/regex/",

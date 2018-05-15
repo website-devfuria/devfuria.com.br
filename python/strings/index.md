@@ -82,7 +82,7 @@ s[:]  # 'flavio'
 s[0:] # 'flavio'
 ```
 
-Leia mais sobre [fatiamento de sequências](../sequencias-fatiamento/ "Python - Sequências").
+Leia mais sobre [fatiamento de sequências](/python/sequencias-fatiamento/ "Python - Sequências").
 
 
 Concatenamos strings com o sinal `+`, exemplo: `"Spam " + "and" + " eggs"`
