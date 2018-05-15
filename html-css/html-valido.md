@@ -1,6 +1,9 @@
 ---
+layout:      artigo-solto
 title:       Validando o HTML
-description: 
+description:
+sitemap: false
+published: false
 ---
 
 ```html
