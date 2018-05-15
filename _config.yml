@@ -19,24 +19,25 @@ exclude:
     - .gitignore
     - tests
     - nbproject
-    # - backbone
-    # - c
-    # - cursos
-    # - git
-    # - html-canvas
-    # - html-css
-    # - javascript
-    # - linux
-    # - logica-de-programacao
-    # - misc
-    # - node.js
-    # - php
-    # - python
-    # - regex
-    # - seguranca-da-informacao
-    # - sql
-    # - tdd
-    
+    # - html-css-new
+    - backbone
+    - c
+    - cursos
+    - git
+    - html-canvas
+    - html-css
+    - javascript
+    - linux
+    - logica-de-programacao
+    - misc
+    - node.js
+    - php
+    - python
+    - regex
+    - seguranca-da-informacao
+    - sql
+    - tdd
+
 defaults:
   -
     scope:
