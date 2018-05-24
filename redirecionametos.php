@@ -76,6 +76,7 @@ return array(
     "/javascript/node.js/mocha-configurando-repositorio/"   => "/node.js/configurando-repositorio-git-para-trabalhar-com-mocha/",
     "/node.js/mocha-teste-seu-javascript/"                  => "/node.js/testando-javascript-com-o-mocha/",
     "/javascript/mocha-teste-seu-javascript/"               => "/node.js/testando-javascript-com-o-mocha/",
+    "/javascript/node.js/mocha-teste-seu-javascript/"       => "/node.js/testando-javascript-com-o-mocha/",
     "/javascript/node.js/nodejs-01-hello-world/"            => "/node.js/learnyounode-01-hello-world/",
     "/javascript/node.js/nodejs-02-baby-steps/"             => "/node.js/learnyounode-02-baby-steps/",
     "/javascript/node.js/nodejs-03-my-first-io/"            => "/node.js/learnyounode-03-my-first-io/",
@@ -84,6 +85,7 @@ return array(
     "/javascript/node.js/programando-com-node-utils-merge/" => "/node.js/explorando-a-minuscula-biblioteca-utils-merge/",
     "/node.js/templates-engine-tutorial-jade/"              => "/node.js/tutorial-sobre-o-template-jade-node-express/",
     "/javascript/node.js/templates-engine-tutorial-jade/"   => "/node.js/tutorial-sobre-o-template-jade-node-express/",
+    "/javascript/node.js/simples-assert-com-nodejs/"        => "/node.js/simples-assert-com-nodejs/",
 
     "/javascript/backbone/"                                 => "/backbone/",
     "/javascript/backbone-introducao/"                      => "/backbone/introducao/",
@@ -408,6 +410,9 @@ return array(
     "/linux/reiniciar-servidor-apache/"           => "/linux/apache-como-reiniciar-servidor-apache/",
     "/linux/reiniciar-servidor-apache/"           => "/linux/apache-como-reiniciar-servidor-apache/",
     "/linux/insta/"                               => "/linux/instalando-wodim/",
+    "/linux/instalando-kino/instalando-kino/"     => "/linux/instalando-kino/",
+    "/linux/instalando-wine/instalando-wine/"     => "/linux/instalando-wine/",
+    "/linux/index-receitas-instalacoes/"          => "/linux/",
     "/linux/receitas-de-instalacao-de-softwares-no-linux/" => "/linux/",
 
 );
