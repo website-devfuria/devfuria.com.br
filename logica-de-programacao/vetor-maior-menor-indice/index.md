@@ -14,6 +14,8 @@ Dado um vetor qualquer sem valores repetidos, descubra qual é o índice do maio
 
 Repare que eu quero o índice e não o valor daquele índice.
 
+{% include logica-videos.html url_embeded="J3nBdKtXdEE" %}
+
 
 Linguagem C
 ---

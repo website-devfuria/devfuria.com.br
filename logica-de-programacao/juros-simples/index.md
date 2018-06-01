@@ -6,7 +6,6 @@ ordem:       3
 ---
 
 
-
 Exercício de lógica de programação
 ---
 
@@ -23,6 +22,7 @@ Onde:
 
 Vamos imaginar o seguinte cenário: um empréstimo de R$ 16.000,00 sobre a taxa de 4% durante 4 meses.
 
+{% include logica-videos.html url_embeded="OepIEvKrBMk" %}
 
 
 

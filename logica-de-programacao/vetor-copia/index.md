@@ -14,6 +14,8 @@ Crie um algoritmo para copiar um vetor (utilize laço de repetição).
 
 Use a nomenclatura `vetor1` para o vetor original e `vetor2` para o vetor copiado.
 
+{% include logica-videos.html url_embeded="J7uf_rCHvDI" %}
+
 
 
 Linguagem C

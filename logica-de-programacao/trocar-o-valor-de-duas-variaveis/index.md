@@ -55,6 +55,8 @@ Agora basta implementar o código e ver os testes passarem.
 Linguagem C
 ---
 
+{% include logica-videos.html url_embeded="wYb5EGir9JY" %}
+
 Como esse é o primeiro exercício vou me estender um pouco mais na explicação do processo de resolução, ok?
 
 Conforme avançarmos pelos exercícios eu vou deixar você na sua responsabilidade para resolver os problemas sozinho.
@@ -127,6 +129,8 @@ Um erro disparado de nossa função `assert` ? Então, sinal vermelho, seu teste
 Aqui começa o seu trabalho, você precisa fazê-lo passar.
 
 
+
+
 ### Solução na linguagem C
 
 Esta é a solução completa.
@@ -169,6 +173,8 @@ Pois bem, isso significa que seu teste passou.
 
 Linguagem Python
 ---
+
+{% include logica-videos.html url_embeded="bh_4HR9RJtU" %}
 
 Em Python seguimos o mesmo esquema, só que aqui é mais fácil pois, não temos que compilar o programa. Python é
 intrepretada e não compilada.
@@ -231,6 +237,8 @@ assert b == 999
 
 Linguagem JavaScript (Node.js)
 ---
+
+{% include logica-videos.html url_embeded="u4WOiKcvlVU" %}
 
 Em JavaScript muda tudo!
 

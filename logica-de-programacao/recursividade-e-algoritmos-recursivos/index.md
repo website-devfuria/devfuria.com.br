@@ -18,7 +18,7 @@ Veja o exemplo abaixo em Python.
 ...   else:
 ...     print(n)
 ...     contagemRegressiva(n-1)
-... 
+...
 >>> contagemRegressiva(5)
 5
 4
@@ -36,7 +36,7 @@ Uma outra forma de entender a recursão é comparar o código ao seu equivalente
 ...     print(n)
 ...     n = n - 1
 ...   print('Decolar!')
-... 
+...
 >>> contagemRegressiva(5)
 5
 4
@@ -49,7 +49,7 @@ Decolar!
 Uma definição mais formal de recursão seria....
 
 > Em programação, a recursividade é um mecanismo útil e poderoso que permite a uma função chamar a si mesma direta ou
-> indiretamente, ou seja, uma função é dita recursiva se ela contém pelo menos uma chamada explícita ou implícita a si 
+> indiretamente, ou seja, uma função é dita recursiva se ela contém pelo menos uma chamada explícita ou implícita a si
 > própria.
 >
 > Prof. Wellington Lima dos Santos (Unicamp)
@@ -122,5 +122,7 @@ etc...
 
 E aí, conseguiu entender o que é recursividade?
 
-Os exemplos mais clássicos de recursão é o algoritmo que calcula o fatorial e o a escala de Fibonacci. Em breve 
+Os exemplos mais clássicos de recursão é o algoritmo que calcula o fatorial e o a escala de Fibonacci. Em breve
 escreverei sobre estes dois exemplos, porém neste artigo, eu quis trazer exemplos mais simples para facilitar o entendimento.
+
+{% include logica-videos.html url_embeded="lDQZrhrCK_4" %}

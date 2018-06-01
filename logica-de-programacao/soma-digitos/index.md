@@ -20,6 +20,8 @@ Somar dígitos significa que dados um número qualquer, exemplo, 2015, devemos s
 
 O resultado esperado para o número acima seria 8.
 
+{% include logica-videos.html url_embeded="e2gFNzUUdnk" %}
+
 
 
 Linguagem C

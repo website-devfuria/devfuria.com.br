@@ -24,6 +24,8 @@ Para instalar o compilador g++ no Debian/Ubuntu execute:
 
     apt install g++
 
+{% include logica-videos.html url_embeded="fcfeUDu_43c" %}
+
 
 Linguagem C++
 ---

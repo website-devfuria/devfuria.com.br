@@ -125,6 +125,8 @@ Acho que vou gravar um vídeo para demonstrar isso, o que você acha?
 Linguagem Python
 ---
 
+{% include logica-videos.html url_embeded="pfPjRz0xsVk" %}
+
 Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
 
 

@@ -19,7 +19,7 @@ Lembrando:
     x1    = ( (-b + √Δ)/2a)
     x2    = ( (-b - √Δ)/2a)
 
-
+{% include logica-videos.html url_embeded="Kg7D6Z-Kpq4" %}
 
 
 Linguagem C

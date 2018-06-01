@@ -26,6 +26,8 @@ Exemplo:
 Linguagem C
 ---
 
+{% include logica-videos.html url_embeded="SZqKDfdfTf4" %}
+
 Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
@@ -77,6 +79,9 @@ int main (){
 Linguagem Python
 ---
 
+{% include logica-videos.html url_embeded="bdV-9Ndk4ME" %}
+
+
 Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
 
 ```python
@@ -118,6 +123,8 @@ assert 27 == area(3, 9)
 
 Linguagem JavaScript (Node.js)
 ---
+
+{% include logica-videos.html url_embeded="bKdBeuSmryo" %}
 
 Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
 

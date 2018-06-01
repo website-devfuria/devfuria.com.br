@@ -10,8 +10,10 @@ ordem:       5
 Exercício de lógica de programação
 ---
 
-
 Faça um programa que inverta uma string, exemplo: "animal" em "lamina".
+
+{% include logica-videos.html url_embeded="z2-yLaTUWr4" %}
+
 
 
 Linguagem C

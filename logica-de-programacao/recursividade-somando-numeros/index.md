@@ -23,6 +23,9 @@ Já vimos no artigo anterior uma introdução sobre a recursividade (algoritmos 
 
 Este exercício se parece com o Fatorial, parece mas não é, cuidado para não confundir.
 
+{% include logica-videos.html url_embeded="xTM9hGPudo8" %}
+
+
 
 Linguagem C
 ---

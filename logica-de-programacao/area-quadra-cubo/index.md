@@ -15,6 +15,7 @@ Seu objetivo é construir uma classe denominada `Area` que calcule tanto a área
 
 Utilize programação orientada a objetos.
 
+{% include logica-videos.html url_embeded="fkjXWrLgniQ" %}
 
 
 Linguagem C++

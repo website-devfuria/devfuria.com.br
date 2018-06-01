@@ -85,6 +85,11 @@ int main() {
 Linguagem Python
 ---
 
++ [Aula #10b - Custo de um carro (passo 1)](https://youtu.be/vxSavEbacFE)
++ [Aula #10c - Custo de um carro (passo 2)](https://youtu.be/NoXGWVmt6w4)
++ [Aula #10d - Custo de um carro (passo 3)](https://youtu.be/nAVlUE_bn0U)
++ [Aula #10e - Custo de um carro (passo 4)](https://youtu.be/eR8LQgcktag)
+
 Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
 
 ```python

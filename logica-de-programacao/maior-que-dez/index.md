@@ -12,6 +12,7 @@ Exercício de lógica de programação
 
 Crie uma função que descubra se um valor é maior ou menor que 10.
 
+{% include logica-videos.html url_embeded="OmAbfIa7IfI" %}
 
 
 Linguagem C

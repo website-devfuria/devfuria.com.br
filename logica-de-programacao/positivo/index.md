@@ -9,10 +9,12 @@ ordem:       3
 
 Exercício de lógica de programação
 ---
-     
+
 Crie uma função que descubra se um valor é positivo ou negativo (considere o valor zero como positivo)
 
-        
+{% include logica-videos.html url_embeded="llCbIfBFU3A" %}
+
+
 
 Linguagem C
 ---

@@ -13,6 +13,7 @@ Exercício de lógica de programação
 
 Faça um programa que descubra a quantidade de vogais de uma determinada string.
 
+{% include logica-videos.html url_embeded="GDLXhYbN50w" %}
 
 
 Linguagem C

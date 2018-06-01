@@ -23,6 +23,8 @@ esgotar o assunto, muito pelo contrário, o objetivo é simplesmente ser a porta
 Outro ponto a comentar é a questão dos testes, você verá que é difícil determinar o quanto de testes seriam suficientes
 para garantir o correto funcionamento do algoritmo.
 
+{% include logica-videos.html url_embeded="LWdR-6JWR0o" %}
+
 
 Linguagem C
 ---

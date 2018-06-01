@@ -16,6 +16,10 @@ A primeira função mostrará o antecessor de um número qualquer.
 
 A segunda função mostrará o sucessor de um número qualquer.
 
+{% include logica-videos.html url_embeded="ZxAHPKIKxKc" %}
+
+
+
 
 Linguagem C++
 ---

@@ -15,6 +15,8 @@ Faça um programa para comparar se duas strings são iguais.
 __Comentários:__ este é mais um exercício para exercitarmos laços de repetição. Esta série referem-se as strings pois,
 sabemos que em C as strings se assemelham a um vetor (`char string[]`).
 
+{% include logica-videos.html url_embeded="0qjDromTTy4" %}
+
 
 
 Linguagem C
@@ -64,8 +66,8 @@ int compararStrings(char str1[], char str2[]) {
             return 2;
         }
         i++;
-    } while(str1[i] != 0); 
-    
+    } while(str1[i] != 0);
+
     return 1;
 }
 ```
@@ -166,7 +168,7 @@ Em JS temos a mesma facilidade....
 true
 > "laranja" != "amarelo"
 true
-> 
+>
 ```
 
 O laço de repetição é trivial.

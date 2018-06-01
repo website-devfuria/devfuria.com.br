@@ -36,7 +36,7 @@ Então, podemos utilizar como testes os resultados abaixo.
 
 Agora é com você, não vale ver as respostas!!!!
 
-
+{% include logica-videos.html url_embeded="QbGLVG1khSs" %}
 
 
 Resultados

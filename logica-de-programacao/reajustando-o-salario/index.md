@@ -15,7 +15,7 @@ Faça um algoritmo que calcule o reajuste de um salário, utilize os seguintes d
     salário  = 1.000,00
     reajuste = 15%,
 
-
+{% include logica-videos.html url_embeded="rT1K6Bwpnl8" %}
 
 
 

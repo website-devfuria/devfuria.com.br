@@ -28,6 +28,7 @@ Utilize orientação a objetos para resolver o problema.
 Como nós já resolvemos este exercício na versão "estruturada" (não utilizamos nem ao menos as funções) eu resolvi
 mostrar algumas particularidades das linguagens Python e JavaScript.
 
+{% include logica-videos.html url_embeded="fkJyYbaaD2g" %}
 
 
 Linguagem C++

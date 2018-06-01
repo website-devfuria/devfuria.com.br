@@ -1,5 +1,5 @@
 ---
-title:       Funções para as 4  operações artiméticas
+title:       Funções para as 4 operações aritméticas
 description: Escreva uma função para cada uma das quatro operações matemáticas simples.
 capitulo:    logica-nivel-1
 ordem:       0
@@ -13,14 +13,16 @@ Exercício de lógica de programação
 Escreva uma função para cada uma das quatro operações matemáticas simples:
 
 - adição,
-- subtrair,
-- multiplicar e
-- dividir
+- subtração,
+- multiplicação e
+- dividisão
 
-      
-  
+
+
 Linguagem C
 ---
+
+{% include logica-videos.html url_embeded="AAil6y5n0Q0" %}
 
 ```c
 #include <stdio.h>
@@ -55,14 +57,14 @@ int dividir(int num, int divisor) {
 // Testes
 //
 int main (){
-    
+
     int num = 10;
-    
+
 	assert(12 == somar(num, 2));
 	assert(8 == subtrair(num, 2));
 	assert(20 == multiplicar(num, 2));
 	assert(5 == dividir(num, 2));
-    
+
 	return 0;
 }
 ```
@@ -96,22 +98,24 @@ int dividir(int num, int divisor) {
 // Testes
 //
 int main (){
-    
+
     int num = 10;
-    
+
 	assert(12 == somar(num, 2));
 	assert(8 == subtrair(num, 2));
 	assert(20 == multiplicar(num, 2));
 	assert(5 == dividir(num, 2));
-    
+
 	return 0;
 }
-```  
+```
 
 
 
 Linguagem Python
 ---
+
+{% include logica-videos.html url_embeded="Sgy6VlavxQw" %}
 
 ```python
 # -*- coding: utf-8 -*-
@@ -133,7 +137,7 @@ def dividir(num, divisor):
 
 #
 # Testes
-# 
+#
 assert 12 == somar(10, 2)
 assert 8 == subtrair(10, 2)
 assert 20 == multiplicar(10, 2)
@@ -164,16 +168,18 @@ def dividir(num, divisor):
 
 #
 # Testes
-# 
+#
 assert 12 == somar(10, 2)
 assert 8 == subtrair(10, 2)
 assert 20 == multiplicar(10, 2)
 assert 5 == dividir(10, 2)
-```  
+```
 
 
 Linguagem JavaScript (Node.js)
 ---
+
+{% include logica-videos.html url_embeded="hz-Js_zoFeQ" %}
 
 Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
 

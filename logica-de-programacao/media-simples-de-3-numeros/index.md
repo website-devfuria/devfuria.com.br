@@ -18,6 +18,8 @@ Utilize as variáveis `valor1`, `valor2` e `valor3`.
 Linguagem C
 ---
 
+{% include logica-videos.html url_embeded="MJhCET-9pDk" %}
+
 Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
@@ -66,6 +68,8 @@ int main (){
 Linguagem Python
 ---
 
+{% include logica-videos.html url_embeded="XDS0nwJRLX0" %}
+
 Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
 
 ```python
@@ -99,6 +103,9 @@ assert 7 == media(6, 7, 8)
 
 Linguagem JavaScript (Node.js)
 ---
+
+{% include logica-videos.html url_embeded="02yw_2G-D-k" %}
+
 
 Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
 

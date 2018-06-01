@@ -16,6 +16,8 @@ Escreva um algoritmo para mostrar o sucessor e o antecessor de um número qualqu
 Linguagem C
 ---
 
+{% include logica-videos.html url_embeded="XC1ciNZWtd8" %}
+
 Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
@@ -74,6 +76,8 @@ int main (){
 Linguagem Python
 ---
 
+{% include logica-videos.html url_embeded="FTQYhHKK7QA" %}
+
 Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
 
 ```python
@@ -116,6 +120,8 @@ assert sucessor(10) == 11
 
 Linguagem JavaScript (Node.js)
 ---
+
+{% include logica-videos.html url_embeded="-RVvi1sYes4" %}
 
 Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
 

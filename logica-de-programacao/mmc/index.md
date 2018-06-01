@@ -11,6 +11,8 @@ ordem:       4
 
 Faça um programa para calcular o MMC (mínimo múltiplo comum) entre dois números.
 
+{% include logica-videos.html url_embeded="RwlVgRWxVhI" %}
+
 
 
 ## Linguagem C

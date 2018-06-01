@@ -21,7 +21,7 @@ Saiba que para formar um triângulo, o valor de cada lado deve ser menor que a s
 
 Utilize programação orientada a objetos.
 
-
+{% include logica-videos.html url_embeded="hXOzQ0TCrD0" %}
 
 
 

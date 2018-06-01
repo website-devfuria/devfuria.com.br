@@ -69,6 +69,8 @@ Ainda exercícios para treinar vetores, mas desta vez utilizando __strings__.
 
 ### Lista de Exercícios nível 5
 
+{% include logica-videos.html url_embeded="5tk6ZHFnXws" %}
+
 Exercícios para treinar __programação orientada a objetos__.
 
 Neste nível veremos como aliar os exercícios de lógica com a programação orientada a objetos. Você perceberá que os

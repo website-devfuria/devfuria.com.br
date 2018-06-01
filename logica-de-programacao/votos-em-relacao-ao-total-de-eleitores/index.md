@@ -28,7 +28,7 @@ pelo total de eleitores, etc...
 
 Utilize programação orientada a objetos.
 
-
+{% include logica-videos.html url_embeded="MxleeTzAMLY" %}
 
 
 Linguagem C

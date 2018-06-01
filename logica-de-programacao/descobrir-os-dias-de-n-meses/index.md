@@ -17,6 +17,8 @@ Considerando que todos os meses tenham 30 dias, calcular o total de dias de n me
 Linguagem C
 ---
 
+{% include logica-videos.html url_embeded="38rowYJTz_U" %}
+
 Abaixo nosso código inicial escrito em C, utilize ele para resolver o problema.
 
 ```c
@@ -72,6 +74,8 @@ int main (){
 Linguagem Python
 ---
 
+{% include logica-videos.html url_embeded="eeDw18uIExQ" %}
+
 Abaixo nosso código inicial escrito em Python, utilize ele para resolver o problema.
 
 ```python
@@ -110,6 +114,8 @@ assert 210 == dias(7)
 
 Linguagem JavaScript (Node.js)
 ---
+
+{% include logica-videos.html url_embeded="fs3ygRM4wHA" %}
 
 Abaixo nosso código inicial escrito em JavaScript (Node.js), utilize ele para resolver o problema.
 

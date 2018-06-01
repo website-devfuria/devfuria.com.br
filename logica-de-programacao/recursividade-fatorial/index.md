@@ -36,7 +36,7 @@ Atente que `0! = 1` porque o produto vazio (produto de nenhum número) é `1`.
 
 Agora é só trabalhar, não vale ver as respostas!!!!
 
-
+{% include logica-videos.html url_embeded="Hvtl_UycWrg" %}
 
 
 Resultados

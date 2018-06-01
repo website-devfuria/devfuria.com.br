@@ -12,6 +12,8 @@ Exercício de lógica de programação
 
 Faça um programa para concatenar duas strings.
 
+{% include logica-videos.html url_embeded="84yqQSmkOwU" %}
+
 
 
 Linguagem C

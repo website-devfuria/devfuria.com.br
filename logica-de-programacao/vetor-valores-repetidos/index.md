@@ -12,6 +12,8 @@ Exercício de lógica de programação
 
 Faça um programa que identifique se em um determinado vetor, existem ou não valores repetidos.
 
+{% include logica-videos.html url_embeded="_fO3TV4q7jU" %}
+
 
 Linguagem C
 ---

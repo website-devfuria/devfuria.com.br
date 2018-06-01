@@ -21,6 +21,9 @@ Saiba que 100c é igual a 212f, veja fórmula:
        5            9
 
 
+{% include logica-videos.html url_embeded="8N4LedUPqyY" %}
+
+
 
 Linguagem C
 ---
