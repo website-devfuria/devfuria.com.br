@@ -5,14 +5,14 @@ description: Tudo o que você precisa saber sobre JavaScript a partir do zero
 ---
 
 
-JavaScript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos, 
+JavaScript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos,
 baseada em protótipos e em funções de primeira classe.
 
-Você pode executar JavaScript do lado do cliente (__front end__) em um navegador web, dê preferência ao 
+Você pode executar JavaScript do lado do cliente (__front end__) em um navegador web, dê preferência ao
 [Firefox](https://www.mozilla.org/pt-BR/firefox/new/) ou ao [Google Chrome](https://www.google.com/chrome/).
 
-Também poderá executá-lo do lado do servidor (__back end__) em linha de comando através do 
-[Node.js](/javascript/node.js/).
+Também poderá executá-lo do lado do servidor (__back end__) em linha de comando através do
+[Node.js](/node.js/).
 
 
 
@@ -22,7 +22,7 @@ Também poderá executá-lo do lado do servidor (__back end__) em linha de coman
 {% include menus.html %}
 
 
-### Artigos 
+### Artigos
 
 {% include get-capitulo.html page_serie="js-artigos" %}
 {% include menus.html %}
@@ -71,7 +71,7 @@ função construtora `RegExp()`.
 {% include get-capitulo.html page_serie="js-regex" %}
 {% include menus.html %}
 
-Veja também na seção sobre expressões regulares a matéria 
+Veja também na seção sobre expressões regulares a matéria
 [Expressões Regulares em JavaScript](/regex/javascript-expressoes-regulares/).
 
 
@@ -84,7 +84,7 @@ Ele cumpre o que promete __"tudo o que você precisa saber sobre JavaScript a ap
 
 A didática é excelente, o comprometimento com a qualidade é sem igual.
 
-!["Livro Só JavaScript"](livro-simple-js.jpg "Livro Só JavaScript")
+!["Livro Só JavaScript"](./livros-javascript/livro-simple-js.jpg "Livro Só JavaScript")
 
 Leia mais sobre [Livros sobre JavaScript](./livros-javascript/).
 

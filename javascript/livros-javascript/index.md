@@ -21,7 +21,7 @@ em cobrir o essencial do JavaScript.
 
 A didática é excelente, o comprometimento com a qualidade é sem igual.
 
-!["Livro Só JavaScript"](../livro-simple-js.jpg "Livro Só Javascript")
+!["Livro Só JavaScript"](livro-simple-js.jpg "Livro Só Javascript")
 
 Obs: Este é o único livro que eu indico para quem está começando com __JavaScript__, isto é sinal que há poucos livros
 para iniciantes. Uma pena!
