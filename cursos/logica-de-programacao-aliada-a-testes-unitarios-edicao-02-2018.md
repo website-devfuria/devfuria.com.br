@@ -100,7 +100,7 @@ __Módulo #07:__
 __Módulo #08:__
 
 + [Aula #8a - Introdução ao módulo 8](https://youtu.be/rWJOTcBX9-o)
-+ [Aula #8b - Descobrir os dias em python](https://youtu.be/eeDw18uIExQ)
++ [Aula #8b - Descobrir os dias em Python](https://youtu.be/eeDw18uIExQ)
 + [Aula #8c - Descobrir os dias em Node (JavaScript)](https://youtu.be/fs3ygRM4wHA)
 + [Aula #8d - Descobrir os dias em C](https://youtu.be/38rowYJTz_U)
 + [Aula #8e - git commit + git push](https://youtu.be/IlXhDGVKRSU)
