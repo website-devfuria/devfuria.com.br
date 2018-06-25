@@ -123,7 +123,7 @@ def reverseString(text):
     return ''.join(l)
 ```
 
-Se você pesquisar na Internet, encontrará soluções cmo os exemplos abaixo.
+Se você pesquisar na Internet, encontrará soluções como os exemplos abaixo.
 
 ```python
 #
