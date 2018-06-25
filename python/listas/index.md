@@ -58,7 +58,7 @@ Ou também podemos utilizar a função interna (built in) [list()](/python/built
 
 ```python
 lis = list() # equivalente a l = []
-lis = list(['a', 'b, 'c']) # equivalente a l = ['a', 'b, 'c']
+lis = list(['a', 'b', 'c']) # equivalente a l = ['a', 'b, 'c']
 ```
 
 
