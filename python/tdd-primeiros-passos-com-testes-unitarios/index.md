@@ -8,18 +8,18 @@ ordem:       6
 
 Em Python, quando queremos escrever testes unitários podemos lançar mãos desde um simples `assert`, passando por funções
 auxiliares até um framework de testes unitários completo. Neste artigo vou mostrar rapidamente como funciona o statement
-`assert` e mostrar também algumas funções que também podem ser úteis, termino mostrando um "Hello world" do 
+`assert` e mostrar também algumas funções que também podem ser úteis, termino mostrando um "Hello world" do
 __Unit testing framework__.
 
 assert
 ---
 
-Em Python podemos fazer simples asserções utilizando o statement 
+Em Python podemos fazer simples asserções utilizando o statement
 [assert](https://docs.python.org/2/reference/simple_stmts.html#the-assert-statement "link-externo").
 
     assert True
 
-Se executarmos no terminal `assert True`, o comando fica em silêncio, nada responde. Esse é o comportamento esperado, 
+Se executarmos no terminal `assert True`, o comando fica em silêncio, nada responde. Esse é o comportamento esperado,
 pois a asserção teve sucesso e o "silêncio" é o sintoma de que tudo está funcionando.
 
 Se executarmos `assert False` o comando dispara um erro...
@@ -28,7 +28,7 @@ Se executarmos `assert False` o comando dispara um erro...
       File "<stdin>", line 1, in <module>
     AssertionError
 
-O statement aceita como segundo parâmetro uma string que pode ser um mensagem explicativa e é exibida quando a asserção 
+O statement aceita como segundo parâmetro uma string que pode ser um mensagem explicativa e é exibida quando a asserção
 falha.
 
     >>> assert False, "mensagem explicativa"
@@ -70,7 +70,7 @@ def test(expression1, expression2):
         return 'Fail'
 ```
 
-Já o [tutorial do Goole](http://code.google.com/edu/languages/google-python-class/ "link-externo") sugere uma função 
+Já o [tutorial do Google](http://code.google.com/edu/languages/google-python-class/ "link-externo") sugere uma função
 igualmente simples, porém, ligeiramente mais sofisticada, veja código seguinte.
 
 ```python
@@ -86,7 +86,7 @@ def test(got, expected):
 
 Pesquisando na web encontrei mais dois exemplos que merecem nossa atenção.
 
-O primeiro deles, você confere no código abaixo. Repare que temos a utilização do objeto __sys__ e que a saída dessa 
+O primeiro deles, você confere no código abaixo. Repare que temos a utilização do objeto __sys__ e que a saída dessa
 função é bem mais elaborada, ela alerta até o número da linha onde o erro foi encontrado.
 
 ```python
@@ -147,7 +147,7 @@ if __name__ == '__main__':
 ```
 
 O resultado de `python foo.py` você confere abaixo.
-    
+
     .
     ----------------------------------------------------------------------
     Ran 1 test in 0.000s
@@ -173,7 +173,7 @@ if __name__ == '__main__':
 ```
 
 O resultado é semelhante ao anterior.
-    
+
     .
     ----------------------------------------------------------------------
     Ran 1 test in 0.000s
