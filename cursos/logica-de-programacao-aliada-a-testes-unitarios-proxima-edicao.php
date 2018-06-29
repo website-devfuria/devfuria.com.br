@@ -40,9 +40,11 @@
         <h2>Powered by devfuria.com.br</h2>
         <h1>Curso de Lógica de Programação <br /> + <br />Testes de Unidades</h1>
 
-        <p>Iremos abrir uma <strong>nova turma no segundo semestre</strong> deste ano!</p>
+        <p>Aberta as inscrições para a próxima turma!!!</p>
 
-        <p><strong>Se inscreva</strong> para a próxima turma e não perca nenhuma novidade !!!</p>
+        <p>As vagas são disputadas e é por tempo limitado.</p>
+
+        <p><strong>Se inscreva agora</strong> e garanta a sua vaga!</p>
 
         <!-- <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p> -->
         <!-- <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p> -->
