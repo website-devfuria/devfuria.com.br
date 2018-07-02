@@ -9,7 +9,7 @@ ambiente de produção.
 
 Quando desenvolvemos softwares, utilizamos nossa própria máquina como se fosse um servidor local, por isso chamamos ela
 de __localhost__. Os desenvolvedores sempre tentam imitar ao máximo o ambiente de produção e existem algumas técnicas
-para conseguir esse objetivo. Enquanto escrevo este artigo (jan/2015), a forma mais elegante de imitar o ambiente de 
+para conseguir esse objetivo. Enquanto escrevo este artigo (jan/2015), a forma mais elegante de imitar o ambiente de
 produção é fazer uso do [Vagrant](https://www.vagrantup.com/ "link-externo"), mas essa não é a única forma. Durante
 muito tempo (antes do Vagrant) fizemos isso utilizando uma Virtual Host, quer dizer, já é uma técnica ultrapassada, porém
 ainda muito utilizada.
@@ -21,7 +21,7 @@ haverá uma única configuração para os diversos sistemas.
 O Apache também pode ser configurado para hospedar vários sites no mesmo servidor, cada um com sua própria configuração,
 fazemos isso através do [Virtual Host](http://httpd.apache.org/docs/2.4/ "link-externo").
 
-Configurar o Apache com a intenção de administrá-lo é um trabalho para os profissionais de infraestrutura, porém neste 
+Configurar o Apache com a intenção de administrá-lo é um trabalho para os profissionais de infraestrutura, porém neste
 artigo nos vamos aprender a configurar o Apache apenas para adequar o ambiente de desenvolvimento. Digo isto para que
 você percebe a diferença entre as abordagens:
 
@@ -33,11 +33,11 @@ você percebe a diferença entre as abordagens:
 O que é Virtual Host ?
 ---
 
-Virtual Hosts (sites virtuais) é um recurso que permite servir mais de um site no mesmo servidor. Podem ser usadas 
+Virtual Hosts (sites virtuais) é um recurso que permite servir mais de um site no mesmo servidor. Podem ser usadas
 diretivas específicas para o controle do site virtual, como nome do administrador, erros de acesso a página, controle de
 acesso e outros dados úteis para personalizar e gerenciar o site. ([wikibooks.org - Guia do Linux](http://pt.wikibooks.org/wiki/Guia_do_Linux/Avan%C3%A7ado/Apache/Virtual_Hosts "link-externo"))
 
-Imagine que você precise servir 2 sites distintos: `www.joao.com.br` e `www.maria.com.br`, cada qual com sua configuração, 
+Imagine que você precise servir 2 sites distintos: `www.joao.com.br` e `www.maria.com.br`, cada qual com sua configuração,
 exemplo:
 
     // arquivo "/etc/apache2/sites-available/joao"
@@ -59,15 +59,15 @@ Se listarmos o diretório `/etc/apache2/sites-available/` veremos o seguinte res
     maria
 
 Este são as Virtual Hosts disponível para seu servidor Apache, para habilitar devemos utilizar o comando `a2ensite` e
-para desabilitar utilizamos o comando `a2dissite`. 
+para desabilitar utilizamos o comando `a2dissite`.
 
 Repare que ambos os exemplos apontam para o documentroot padrão `/var/www/`, ou seja o Virtual Host não é o responsável
-pela redirecionamento. Se você configurar o Apache para um ambiente de produção você deve utilizar um 
-[servidor de DNS](http://pt.wikipedia.org/wiki/Domain_Name_System "link-externo"), se você configurar o Apache para um 
+pela redirecionamento. Se você configurar o Apache para um ambiente de produção você deve utilizar um
+[servidor de DNS](http://pt.wikipedia.org/wiki/Domain_Name_System "link-externo"), se você configurar o Apache para um
 ambiente de desenvolvimento você pode utilizar algo mais simples que um DNS, o [arquivo hots](/misc/arquivo-hosts/), por
 exemplo.
 
-Veja mais detalhes em 
+Veja mais detalhes em
 [hardware.com.br - Apache: Usando virtual hosts](http://www.hardware.com.br/dicas/apache-virtual-hosts.html "link-externo")
 
 Explicar o que é um Virtual Host através da teoria pode ser pouco produtivo, então vamos partir para um exemplo prático...
@@ -77,7 +77,7 @@ Criando uma Virtual Host
 ---
 
 Nosso objetivo é criar um Virtual Host para o endereço fictício `www.foo.local`. Os arquivos do projeto estarão em um
-local parecido com este `/pasta/de/projetos/foo`, logo, se digitarmos a URL no navegador o servidor web deve 
+local parecido com este `/pasta/de/projetos/foo`, logo, se digitarmos a URL no navegador o servidor web deve
 redirecionar para nossa pasta (`/pasta/de/projetos/foo`).
 
 Supomos que o projeto rode sobre o domínio `www.foo.com.br`, mas não vamos redirecionar o domínio oficial se não você
@@ -99,18 +99,18 @@ __curl__: `curl www.foo.local`.
 
 O resultado de `www.foo.local` deve ser idêntico ao resultado de `localhost`.
 
-Agora, vamos partir para a __configuração do Apache__. Eu estou no Debian (wheezy), se você tiver em outra distro, 
+Agora, vamos partir para a __configuração do Apache__. Eu estou no Debian (wheezy), se você tiver em outra distro,
 talvez tenha que acertar um caminho ou outro mas, em geral, a configuração é bem parecida.
 
 Vamos até a pasta onde o Apache guarda os Virtual Hosts `cd /etc/apache2/sites-available`.
 
-A partir desta pasta, como dito, o Apache pode habilitar ou desabilitar individualmente cada Virtual Hosts, faremos isso 
+A partir desta pasta, como dito, o Apache pode habilitar ou desabilitar individualmente cada Virtual Hosts, faremos isso
 através dos comandos listados a seguir:
 
 - `a2ensite nome-do-arquivo` - para habilitar
 - `a2dissite nome-do-arquivo` - para desabilitar
 
-Quando habilitamos um "site" o Apache cria um link para a pasta `/etc/apache2/sites-enabled`, quando desabilitamos, ele 
+Quando habilitamos um "site" o Apache cria um link para a pasta `/etc/apache2/sites-enabled`, quando desabilitamos, ele
 remove o link.
 
 Crie um arquivo denominado simplesmente `foo` e insira o seguinte conteúdo.
@@ -146,9 +146,9 @@ Na pasta `/pasta/de/projetos/foo` crie um arquivo HTML bem simples chamado `inde
     </body>
 </html>
 ```
-Novamente, acesse a URL `www.foo.loca`, você deve ver o HTML acima renderizado.
+Novamente, acesse a URL `www.foo.local`, você deve ver o HTML acima renderizado.
 
-Se encontra algum problema tente ver os logs do Apache `tail /var/log/apache2/error.log` no Debian ou 
+Se encontra algum problema tente ver os logs do Apache `tail /var/log/apache2/error.log` no Debian ou
 `tail /var/log/httpd/error_log` para família RedHat.
 
 
@@ -156,7 +156,7 @@ Se encontra algum problema tente ver os logs do Apache `tail /var/log/apache2/er
 Veja também
 ---
 
-__CGI__ é um acrónimo para a expressão inglesa __Common Gateway Interface__. Consiste numa importante tecnologia que 
+__CGI__ é um acrónimo para a expressão inglesa __Common Gateway Interface__. Consiste numa importante tecnologia que
 permite gerar páginas dinâmicas, permitindo a um navegador passar parâmetros para um programa alojado num servidor web.
 Assim, designam-se por __scripts CGI__ os pequenos programas (veja exemplos ao longo da matéria) que interpretam esses
 parâmetros e geram a página depois de os processar.
