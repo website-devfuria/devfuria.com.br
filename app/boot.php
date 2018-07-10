@@ -73,9 +73,7 @@ if (isset($_SERVER["SERVER_ADDR"])) {
 # acesso ao banco de dados
 #
 function getConnection() {
-    // return new PDO('mysql:host=localhost;dbname=db', "user", "pass");
-    return new PDO('mysql:host=localhost;dbname=devfuria', "root", "1234");
-    // return new PDO('mysql:host=localhost;dbname=conexaod_dev', "conexaod_dev", "alfa9876");
+   return new PDO('mysql:host=localhost;dbname=db', "user", "pass");
 }
 
 #
