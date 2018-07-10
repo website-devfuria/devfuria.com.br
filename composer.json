@@ -1,0 +1,11 @@
+{
+    "require": {
+        "slim/slim": "^2.6",
+        "monolog/monolog": "^1.17",
+        "mnapoli/front-yaml": "^1.6",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "config": {
+        "vendor-dir": "app/vendor"
+    }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>position: relative</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            * {
+                font-family: monospace
+            }
+            .item {
+                width: 150px; 
+                line-height: 125px;
+                background-color: #b1dfbb;
+                text-align: center;
+                margin: 1px;
+                color: white;
+                font-weight: bold;
+                font-size: 2em;
+            }
+            .item.a {
+                background-color: red;
+            }
+            .item.b {
+                background-color: blue;
+                position: relative;
+                left: 20px;                
+                top: 20px;               
+            }
+            .item.c {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="item a">a) red</div>
+        <div class="item b">b) blue</div>
+        <div class="item c">c) green</div>
+    </body>
+</html>

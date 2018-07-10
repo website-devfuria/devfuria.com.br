@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Full SCreen Sections</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                font-weight: 500;
+                font-family: 'HelveticaNeue';
+            }
+            section {
+                width: 100%;
+                padding: 0 7%;
+                display: table;
+                margin: 0;
+                max-width: none;
+                background-color: #373B44;
+                height: 100vh;
+            }
+            section:nth-of-type(2n) {
+                background-color: #FE4B74;
+            }
+            .intro {
+                height: 90vh;
+            }
+            .content {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            h1 {
+                font-size: 3em;
+                display: block;
+                color: white;
+                font-weight: 300;
+            }
+            p {
+                font-size: 1.5em;
+                font-weight: 500;
+                color: #C3CAD9;
+            }
+            a {
+                font-weight: 700;
+                color: #373B44;
+                position: relative;
+            }
+            a:hover {
+                opacity: 0.8;
+            }
+            a:active {
+                top: 1px;
+            }
+
+            footer {
+                padding: 1% 5%;
+                text-align: center;
+                background-color: #373B44;
+                color: white;
+            }
+            footer a {
+                color: #FE4B74;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- https://medium.com/@ckor/make-full-screen-sections-with-1-line-of-css-b82227c75cbd -->
+        <section class="intro">  
+            <div class="content">
+                <h1>GOTOCHINA</h1>
+                <p>This website is the result of a study-trip to Shanghai and Beijing, made by 17 Norwegian students in February 2008. We hope this site can be helpful for others visiting China. Through this website we will give a presentation of our trip, and share tips and knowledge we gained when traveling.</p>
+            </div>
+        </section>
+        <section>  
+            <div class="content">
+                <h1>Resize your browser and see how they adapt.</h1>
+            </div>
+        </section>
+        <section>  
+            <div class="content">
+                <h1>It's amazing and fast.</h1>
+            </div>
+        </section>
+        <section>  
+            <div class="content">
+                <h1>See the <a href="http://caniuse.com/#feat=viewport-units">browser support.</a></h1>
+            </div>
+        </section>
+        <footer>
+            Made by <a href="https://www.twitter.com/ckor">@ckor</a>
+        </footer>
+    </body>
+</html>

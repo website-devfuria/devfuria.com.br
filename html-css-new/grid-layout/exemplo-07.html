@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <title>grid</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            * {box-sizing: border-box;}
+            body {
+                padding: 50px;
+            }
+            .container-box {
+                width: 100%;
+                max-width: 700px;
+                margin: 0 auto;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: auto;
+                grid-template-rows: 50px 330px 50px;
+                grid-template-areas:
+                    'header header header'
+                    'aside main main'
+                    'footer footer footer'
+                    ;
+            }
+            .box {
+                background-color: tomato;
+            }
+            header {
+                grid-area: header;
+            }
+            aside {
+                grid-area: aside;
+            }
+            main {
+                grid-area: main;
+            }
+            footer {
+                grid-area: footer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-box">
+            <header class="box"></header>
+            <aside class="box"></aside>
+            <main class="box"></main>
+            <footer class="box"></footer>
+        </div>
+    </body>
+</html>

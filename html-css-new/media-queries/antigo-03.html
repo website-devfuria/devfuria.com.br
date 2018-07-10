@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>media-queries</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background: red;
+                color: white;
+                font-family: monospace;
+                text-align: center;
+                font-size: 2em;
+            }
+            body:before {
+                content: 'estado original';
+            }
+            @media (min-width: 37em) {
+                body {
+                    background: #000000;
+                }
+                body:before {
+                    content: 'min-width: 592px';
+                }
+            }
+            @media (min-width: 41em) {
+                body {
+                    background: #606060;
+                }
+                body:before {
+                    content: 'min-width: 656px';
+                }
+            }
+            @media (min-width: 47em) {
+                body {
+                    background: #A9A9A9;
+                }
+                body:before {
+                    content: 'min-width: 752px';
+                }
+            }
+            @media (min-width: 68em) {
+                body {
+                    background: #C8C8C8;
+                }
+                body:before {
+                    content: 'min-width: 1088px';
+                }
+            }
+            @media (min-width: 82em) {
+                body {
+                    background: #E0E0E0;
+                }
+                body:before {
+                    content: 'min-width: 1312px';
+                }
+            }
+            @media (min-width: 100em) {
+                body {
+                    background: #FFFFFF;
+                    color: black;
+                }
+                body:before {
+                    content: 'min-width: 1600px';
+                }
+            }
+        </style>
+    </head>
+    <body>
+    </body>
+</html>

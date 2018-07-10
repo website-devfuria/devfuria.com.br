@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Exemplo-09 Flex Box</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            body {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+
+            .half {
+                width: 100%;
+                -ms-flex-preferred-size: 57.14286vh;
+                flex-basis: 57.14286vh;
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+            }
+
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+            }
+
+            .half {
+                position: relative;
+                font: 600 32px Poppins, sans-serif;
+                color: #f6e8ea;
+                background: #ef626c;
+            }
+            .half + .half {
+                background: #84dcff;
+            }
+
+            p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 72%;
+                margin: 0;
+                text-align: center;
+            }
+
+            .social {
+                display: block;
+                max-height: 0;
+                opacity: 0;
+                -webkit-animation: appear 1s 4s;
+                animation: appear 1s 4s;
+            }
+
+            a {
+                color: #f9eef0;
+            }
+
+            @-webkit-keyframes appear {
+                50% {
+                    max-height: 2em;
+                    opacity: 0;
+                }
+                100% {
+                    max-height: 2em;
+                    opacity: 1;
+                }
+            }
+
+            @keyframes appear {
+                50% {
+                    max-height: 2em;
+                    opacity: 0;
+                }
+                100% {
+                    max-height: 2em;
+                    opacity: 1;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="half">
+            <p>
+                These panes always split the window in the correct direction.
+            </p>
+        </div>
+        <div class="half">
+            <p>
+                Pure CSS, only 5 rules.<span class="social">by  <a href="https://twitter.com/rileyjshaw" target="_blank">rileyjshaw</a>.</span>
+            </p>
+        </div>
+    </body>
+</html>

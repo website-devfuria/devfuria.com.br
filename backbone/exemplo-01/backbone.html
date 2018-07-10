@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo Backbone - devfuria.com.br</title>
+        <meta name="description" content="Demo - pequeno exemplo de script Backbone (JavaScript) onde exploro a questão do template e os eventos da collection." />
+    
+        <meta property="og:title" content="Backbone exemplo"/>
+        <meta property="og:url" content="http://www.devfuria.com.br/javascript/backbone-exemplo-01/" />
+        <meta property="og:image" content="http://www.devfuria.com.br/javascript/backbone-exemplo-01/img.png"/>
+    
+        <!-- framework bootstrap --> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+              <h1>Exemplo Backbone</h1>
+              <p>
+                  Este é um exemplo de script Backbone. Ele explora a questão do template e como "colamos" uma collection 
+                  a uma view fazendo uso do evento <code>add</code>.
+              </p>
+              <p><a class="btn btn-primary btn-lg" href="http://www.devfuria.com.br/javascript/backbone-exemplo-01/" role="button">Veja o artigo</a></p>
+            </div>        
+        </div>
+        
+        <!-- HTML --> 
+        <div class="container">
+            <table class="table">
+                <caption><button id="add" class="btn btn-success">Add list item</button></caption>
+            </table>
+        </div>
+
+        <!-- dependências --> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+
+        <!-- script--> 
+        <script src="index.js"></script>
+
+    </body>
+</html>

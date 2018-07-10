@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo first line</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            ::first-line {
+                color: blue;
+                text-transform: uppercase;
+
+                /* As propriedades abaixo não são aplicáveis */
+                margin-left: 20px;
+                text-indent: 20px;
+            }
+            p {
+                width: 300px;
+            }            
+        </style>
+    </head>
+    <body>
+        <p>
+            Styles will only be applied to the first line of this paragraph.
+            After that, all text will be styled like normal. See what I mean?
+        </p>
+        <span>
+            The first line of this text will not receive special styling
+            because it is not a block-level element.
+        </span>
+    </body>
+</html>

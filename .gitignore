@@ -1,0 +1,6 @@
+app/vendor/
+composer.lock
+/nbproject/
+logs/*
+*.run
+*.pdf

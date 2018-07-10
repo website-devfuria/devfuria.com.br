@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo Backbone - devfuria.com.br</title>
+        <meta name="description" content="Demo - pequeno exemplo de script Backbone (JavaScript) onde exploramos o controle HTML checkbox juntamente com o framework Bootstrap." />
+
+        <meta property="og:title" content="Backbone exemplo"/>
+        <meta property="og:url" content="http://www.devfuria.com.br/javascript/backbone-exemplo-06/" />
+        <meta property="og:image" content="http://www.devfuria.com.br/javascript/backbone-exemplo-06/img-demo.png"/>
+
+        <!-- framework bootstrap --> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Exemplo Backbone</h1>
+                <p>
+                    Este é um exemplo de script Backbone. Ele explora a utilização do controle HTML checkbox juntamente 
+                    com o framework Bootstrap.
+                </p>
+                <p><a class="btn btn-primary btn-lg" href="http://www.devfuria.com.br/javascript/backbone-exemplo-06/" role="button">Veja o artigo</a></p>
+            </div>        
+        </div>
+
+        <!-- HTML --> 
+        <script type="text/template" id="service-item">
+            <div class="checkbox">
+            <label>
+            <input type="checkbox" name="<%= key %>"/> <%= title %> <span>$ <%= price %></span>
+            </label>
+            </div>
+        </script>
+
+        <div class="container">
+            <div class="panel panel-default" id="main">
+                <div class="panel-heading">My Services</div>
+                <ul class="list-group" id="services"></ul>
+                <div class="panel-footer">
+                    <p id="total">total: <span>$0</span></p>      
+                </div>
+            </div>	
+        </div>     
+
+        <!-- dependências --> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+
+        <!-- script--> 
+        <script src="index.js"></script>
+
+    </body>
+</html>

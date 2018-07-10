@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font: 62.5%/1 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+            }
+            form {
+                font-size: 1.4em;
+            }
+            label {
+                display: block;
+            }
+            input {
+                width: 300px;
+            }
+            textarea {
+                width: 300px;
+                height: 100px;
+            }
+            /* Quando o controle receber foco...*/
+            input:focus, textarea:focus {
+                background: #ffc;
+            }
+            p.botoes {
+                text-align: right;
+            }
+            #btnSubmit {
+                width: 100px;
+            }            
+        </style>
+    </head>
+    <body>
+
+        <form action="#" method="post">
+            <p>
+                <label for="author">Name: </label>
+                <input name="author" id="author" type="text" />
+            </p>
+            <p>
+                <label for="email">Email Address:</label>
+                <input name="email" id="email" type="text" />
+            </p>
+
+            <p>
+                <label for="pass">Password:</label>
+                <input name="pass" id="pass" type="password" />
+            </p>
+            <p>
+                <label for="text">Message:</label>
+                <textarea name="text" id="text" cols="20" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="button" value="Submit!" id="btnSubmit"/>
+            </p>
+        </form>
+
+    </body>
+</html>

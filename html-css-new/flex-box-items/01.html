@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>01 Flex Box Items</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            * {
+                font-family: monospace
+            }
+            p {
+                width: 800px;
+            }
+            span {
+                color: tomato;
+                width: 11em;
+                float: left;
+            }
+            .container {
+                height: 400px;
+                border: 1px solid #000;
+                display: flex;
+                flex-direction: row;
+/*                 justify-content: center; */
+/*                 align-items: center; */
+/*                 flex-wrap: wrap; */
+/*                 align-content: center; */
+            }
+            .item {
+/*                 width: 150px; */
+                line-height: 125px;
+                background-color: #b1dfbb;
+                text-align: center;
+                margin: 1px;
+                color: white;
+                font-weight: bold;
+                font-size: 2em;
+            }
+            .item.a {
+                background-color: red;
+                order: 0;
+            }
+            .item.b {
+                background-color: blue;
+                order: 0;
+            }
+            .item.c {
+                background-color: green;
+                order: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item a">a) red</div>
+            <div class="item b">b) blue</div>
+            <div class="item c">c) green</div>
+        </div>
+    </body>
+</html>
