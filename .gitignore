@@ -1,6 +1,8 @@
-app/vendor/
 composer.lock
 /nbproject/
 logs/*
 *.run
 *.pdf
+app/boot.php
+app/vendor/
+app/logs/
