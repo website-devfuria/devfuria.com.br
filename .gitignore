@@ -1,7 +1,0 @@
-_site
-_config.yml
-composer.lock
-/nbproject/
-logs/*
-*.run
-*.pdf
