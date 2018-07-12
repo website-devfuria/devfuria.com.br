@@ -54,9 +54,9 @@
             <div class="intro">
                 <h1>Curso de Lógica de Programação Aliada a Testes Unitários <br /><small></small></h1>
                 <div class="start"></div>
-                <p><small>Segunda Edição</small></p>
+                <p>Seja bem vindo(a) a sua plataforma EAD</p>
 
-                <p>Seja bem vindo (a) : Fulano de tal</p>
+                <p>Flávio Alexandre Micheletti</p>
             </div>
 
             <!-- Button -->
@@ -67,28 +67,39 @@
         <article id="conteudo" class="container">
             <p>Olá, seja bem vindo ao curso de <strong>Lógica de Programação aliada a Testes Unitários</strong>!</p>
             <p>Esta é a nossa singela plataforma EAD.</p>
-            <p>Estamos trabalhando dura para incluir novas funcionalidades.</p>
+            <p>Estamos trabalhando duro para incluir novas funcionalidades.</p>
             <p>Se você tiver uma sugestão de melhoria, escreva nos comentários no rodapé.</p>
 
-            <h2>Preparando o terreno</h2>
-            <ul>
-                <li><a href="https://youtu.be/fOJP9RH6_jg">Como instalar o Python no seu computador ?</a></li>
-                <li><a href="https://youtu.be/ehFIHfQQpO8">Como instalar o git-bash no Windows ?</a></li>
-                <li><a href="https://youtu.be/6V11nocsg6U">Aprenda os comandos básicos do terminal do Linux</a></li>
-                <li><a href="https://youtu.be/A4o353RMPeU">Aprenda a dar os primeiros passos na linguagem Python !</a></li>
-                <li><a href="https://youtu.be/WqZP7atO3SE">A sintaxe básica de Python</a></li>
-            </ul>
+            <?php foreach($modulos as $modulo): ?>
+                <br />
+                <br />
+                <br />
+                <table class="table table-condensed">
+                    <tr>
+                        <th><?php echo $modulo['titulo'] ?></th><th></th><th></th>
+                    </tr>
+                    <?php foreach($modulo['videos'] as $video): ?>
+                        <tr>
+                            <td>
+                                <a href="<?php echo $video->url ?>" target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                </a>
 
-            <p>Se você já está pronto, borá lá começar a estudar...</p>
+                                <?php echo ($video->novotitulo) ? $video->novotitulo : $video->titulo; ?>
+                            </td>
+                            <td class="text-center"><?php echo $video->duracao ?></td>
+                            <td class="text-center"><label><input type="checkbox" name=""></label></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
 
-            <h2>Vídeos do Curso</h2>
+            <?php endforeach; ?>
 
-            <p><strong>Módulo #01:</strong></p>
-            <ul>
-                <li><a href="https://youtu.be/xSOJM9MeBlU">Aula 001 - Trocar o valor de duas variáveis </a></li>
-            </ul>
+            <br />
+            <br />
+            <br />
+
         </article>
-
 
         <footer id="footer">
             <div class="container">
