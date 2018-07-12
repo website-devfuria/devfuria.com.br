@@ -41,7 +41,11 @@ Site::$path = array();
 Site::$path['/']         = dirname(dirname(__FILE__));       # caminho absoluto
 Site::$path['logs/']     = dirname(__FILE__) . "/logs/";     # dominio.com/logs/
 Site::$path['includes/'] = dirname(__FILE__) . "/includes/"; # dominio.com/includes/
+Site::$path['api/']      = dirname(dirname(dirname(__FILE__))) . "/devfuria.subs/api"; #
 
+// if(file_exists(Site::$path['api/'])) {
+//     die('ok');
+// }
 
 #
 # url
@@ -64,17 +68,11 @@ if (isset($_SERVER["SERVER_ADDR"])) {
 
 
 #
-# ligar/desligar
+# ligar
 #
 // Site::$enable_analytics = true;
 // Site::$enable_disqus    = true;
 
-#
-# acesso ao banco de dados
-#
-function getConnection() {
-   return new PDO('mysql:host=localhost;dbname=db', "user", "pass");
-}
 
 #
 # email que receberão notificações

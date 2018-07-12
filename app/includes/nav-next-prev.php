@@ -55,9 +55,9 @@ if (isset($page->front['capitulo'])):
                                 <!-- Próximo -->
 
                                 <a class="btn btn-success btn-lg btn-block pagination" href="<?php echo $artigo_next['url'] ?>">
-                                    <img src="/app/assets/imagens/next-page.png" />
                                     <?php echo $artigo_next['title'] ?>
                                     <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+                                    <img src="/app/assets/imagens/next-page.png" />
                                 </a>
                             </p>
                         <?php endif ?>
