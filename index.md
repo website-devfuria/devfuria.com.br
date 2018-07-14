@@ -57,7 +57,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                     <div class="pfblock-line"></div>
                     <div class="pfblock-subtitle">Nossa exteeeeeensa lista de cursos (rsssss).</div>
                     <br />
-                    <p>Em Fevereiro de 2018 inicaremos a primeira edição do curso de <strong>Lógica de Programação Aliada a Testes Unitários</strong>.</p>
+                    <p>Em Fevereiro de 2018 iniciaremos a primeira edição do curso de <strong>Lógica de Programação Aliada a Testes Unitários</strong>.</p>
                     <p><a class="btn btn-primary" href="cursos/logica-de-programacao-aliada-a-testes-unitarios-edicao-02-2018/" role="button">Curso de Lógica de Programação</a></p>
                 </div>
             </div>
