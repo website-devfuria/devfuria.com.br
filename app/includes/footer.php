@@ -5,12 +5,12 @@
                 <ul class="social-links">
                     <li>
                         <a href="https://www.facebook.com/devfuria/" class="wow fadeInUp" target="_blank">
-                            <i class="fa fa-facebook">f</i>
+                            <i class="fa fa-facebook"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/devfuria" class="wow fadeInUp" data-wow-delay=".1s" target="_blank">
-                            <i class="fa fa-github-square">g</i>
+                            <i class="fa fa-github-square"></i>
                         </a>
                     </li>
                 </ul>

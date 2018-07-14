@@ -16,7 +16,8 @@
       </div>
     </div>
 
-    <?php #include(Site::$path['includes/'] . "ad/index.html.php") ?>
+    <?php include(Site::$path['includes/'] . "ad-video.php") ?>
+
 
     <article class="container">
       <div class="row">
