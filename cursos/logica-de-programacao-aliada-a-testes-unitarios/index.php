@@ -22,4 +22,4 @@ $page->front['title'] = "Curso de Lógica de Programação Aliada a Testes Unit�
 #
 # view
 #
-require "view-home.php";
+require "index-view.php";

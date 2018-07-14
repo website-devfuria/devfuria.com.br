@@ -54,16 +54,16 @@ require "../app/boot.php";
         <!-- <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p> -->
         <!-- <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p> -->
 
-<?php
+        <?php
 
-#
-# Recebendo alguns dados
-#
-$utm_source   = (isset($_GET['utm_source']))   ? $_GET['utm_source'] :   'não-informado';
-$utm_campaign = (isset($_GET['utm_campaign'])) ? $_GET['utm_campaign'] : 'não-informado';
-$utm_medium   = (isset($_GET['utm_medium']))   ? $_GET['utm_medium'] :   'não-informado';
+        #
+        # Recebendo alguns dados
+        #
+        $utm_source   = (isset($_GET['utm_source']))   ? $_GET['utm_source'] :   'não-informado';
+        $utm_campaign = (isset($_GET['utm_campaign'])) ? $_GET['utm_campaign'] : 'não-informado';
+        $utm_medium   = (isset($_GET['utm_medium']))   ? $_GET['utm_medium'] :   'não-informado';
 
-?>
+        ?>
 
         <form action="<?php echo Site::$url['mailing-list/'] ?>">
             <input type="hidden" value="<?php echo $utm_source; ?>" name="utm_source"/>
