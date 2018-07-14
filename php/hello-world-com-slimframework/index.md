@@ -135,7 +135,7 @@ Normalmente aparece o erro `RewriteEngine not allowed here` é por que esquecemo
 
 ## Projetos Compartilhados
 
-Envie um email para "{{ site.email }}" com o link para o seu projeto e encontre ele na lista abaixo...
+Envie um email para sitedevfuria@gmail.com com o link para o seu projeto e encontre ele na lista abaixo...
 
 - Seja o primeiro a divulgar o seu trabalho
 - Seja o segundo a divulgar o seu trabalho
