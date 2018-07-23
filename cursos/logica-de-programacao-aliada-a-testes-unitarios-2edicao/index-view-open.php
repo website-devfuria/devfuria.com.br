@@ -17,9 +17,10 @@
             <div class="intro">
                 <h1>Curso de Lógica de Programação Aliada a Testes Unitários <br /><small></small></h1>
                 <div class="start"></div>
-                <p>Seja bem vindo(a) a sua plataforma EAD</p>
-
-                <p>Flávio Alexandre Micheletti</p>
+                <p>Experimente gratuitamente e</p>
+                <p>tenha acesso ao conteúdo exclusivo !!!!</p>
+                <p><a class="btn btn-primary" href="/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=index-do-ead" role="button">Efetuar matrícula</a></p>
+                <p>Se você é aluno, <a class="" href="login/" role="button">clique aqui</a></p>
             </div>
 
             <!-- Button -->
@@ -28,10 +29,8 @@
         <!-- Home end -->
 
         <article id="conteudo" class="container">
-            <p>Olá, seja bem vindo ao curso de <strong>Lógica de Programação aliada a Testes Unitários</strong>!</p>
-            <p>Esta é a nossa singela plataforma EAD.</p>
-            <p>Estamos trabalhando duro para incluir novas funcionalidades.</p>
-            <p>Se você tiver uma sugestão de melhoria, escreva nos comentários no rodapé.</p>
+
+            <p>Escrever alguma coisa!</p>
 
             <?php foreach($modulos as $modulo): ?>
                 <br />
@@ -42,16 +41,26 @@
                         <th style="width: 90%"><?php echo $modulo['titulo'] ?></th><th></th><th></th>
                     </tr>
                     <?php foreach($modulo['videos'] as $video): ?>
-                        <tr>
+                        <tr class="<?php //echo $video->publico ? "active" : ""; ?>">
                             <td>
-                                <a href="<?php echo $video->url ?>" target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
-                                    <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
-                                </a>
+                                <?php if ($video->publico): ?>
+                                    <a href="<?php echo $video->url ?>"
+                                        target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                    </a>
+                                <?php else: ?>
+                                    <a href="/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=experimente"
+                                        target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                    </a>
+                                <?php endif ?>
 
                                 <?php echo ($video->novotitulo) ? $video->novotitulo : $video->titulo; ?>
+                                <?php if ($video->publico): ?>
+                                    <span class="label label-success">Experimente</span>
+                                <?php endif ?>
                             </td>
                             <td class="text-center"><?php echo $video->duracao ?></td>
-                            <td class="text-center"><label><input type="checkbox" name=""></label></td>
                         </tr>
                     <?php endforeach; ?>
                 </table>

@@ -45,11 +45,11 @@ require "../app/boot.php";
         <h2>Powered by devfuria.com.br</h2>
         <h1>Curso de Lógica de Programação <br /> + <br />Testes de Unidades</h1>
 
-        <p>Aberta as inscrições para a próxima turma!!!</p>
+        <p>Estão abertas as matrículas!</p>
 
         <p>As vagas são disputadas e é por tempo limitado.</p>
 
-        <p><strong>Se inscreva agora</strong> e garanta a sua vaga!</p>
+        <p><strong>Quero me matricular no curso</strong>!</p>
 
         <!-- <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p> -->
         <!-- <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p> -->
@@ -70,7 +70,7 @@ require "../app/boot.php";
             <input type="hidden" value="<?php echo $utm_campaign; ?>" name="utm_campaign"/>
             <input type="hidden" value="<?php echo $utm_medium; ?>" name="utm_medium"/>
             <label><input type="text" value="" name="email" placeholder="seu melhor email" style="width: 250px" /></label>
-            <label><button type="submit">Inscreva-se</button></label>
+            <label><button type="submit">Efetuar Matrícula</button></label>
         </form>
 
     </body>
