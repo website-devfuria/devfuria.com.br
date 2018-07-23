@@ -171,6 +171,8 @@ function mapa() {
         "/mapa-do-site/"           => "/",
         "/privilegiometro/"        => "http://privilegiometro.devfuria.com.br/",
 
+        "/cursos/logica-de-programacao-aliada-a-testes-unitarios-edicao-02-2018/" => "/cursos/logica-de-programacao-aliada-a-testes-unitarios-1edicao/",
+
         "/js/"               => "/javascript/",
         "/js/index.php/"     => "/javascript/",
         "/js/imagens/"       => "/javascript/",
