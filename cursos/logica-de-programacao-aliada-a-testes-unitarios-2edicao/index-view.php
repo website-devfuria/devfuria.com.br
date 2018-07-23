@@ -74,5 +74,29 @@
         <?php include(Site::$path['includes/'] . "footer-js.php") ?>
         <?php include(Site::$path['/'] . "/app/assets/clean/include-js.php") ?>
 
+        <script type="text/javascript">
+            var aluno_id = <?php echo $aluno->id ?>;
+            var curso_id = <?php echo $aluno->curso_id ?>;
+
+            chks = document.querySelectorAll('[type="checkbox"]');
+            chks.forEach(function (element, index, array) {
+                //console.log();
+                var aula_id = element.id;
+                element.onclick = function () {
+                    if (element.checked) {
+                        var uri = "aluno=" + aluno_id + "&curso=" + curso_id + "&aula=" + aula_id + "&action=on";
+                        //console.log(uri);
+                    } else {
+                        var uri = "aluno=" + aluno_id + "&curso=" + curso_id + "&aula=" + aula_id + "&action=off";
+                        //console.log(uri);
+                    }
+
+                    $.get("/app/aulas-assistidas.php", uri, function( data ) {
+                        //console.log(data);
+                    });
+                };
+            });
+        </script>
+
     </body>
 </html>
