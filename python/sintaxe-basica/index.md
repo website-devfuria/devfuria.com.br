@@ -8,7 +8,11 @@ Este é um pequeno guia sobre a sintaxe de Python.
 
 Recomendado para quem está começando a aprender sobre Python ou para quem nunca viu Python.
 
+Se você prefere a versão em vídeo, aqui vai...
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WqZP7atO3SE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Se você prefere ler, é só continuar...
 
 Variáveis
 ---

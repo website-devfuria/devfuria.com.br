@@ -1,9 +1,32 @@
 ---
 layout:      secao+toc
 title:       Python
-description: Aprenda a programar em Python de forma descomplicada.
+description: Aprenda a programar em Python com esse curso grátis online de forma descomplicada.
 ---
 
+Bem vindo ao Curso Online Grátis de Python!
+
+Ele é um tutorial que vái do básico ao intermediário em Python.
+
+Ele também é um verdadeiro guia para iniciantes na linguagem Python.
+
+Aqui eu também reuno exercícios para iniciantes na linguagem Python.
+
+Eu espero que esse material aqui reunido faça uma grande diferença em sua jornadae ajude você a
+aprender a programar em Python.
+
+Este tutorial (parece até um livro sobre python) eu recomendo para quem está começando em Python.
+
+Você já se perguntou: Por onde começar ? Como começar a aprender Python ?
+
+Eis aqui a resposta!
+
+E não deixe de conferir nosso curso em vídeo sobre Python!
+
+Veja nosso canal no youtube [python tutorial youtube](https://www.youtube.com/user/DevFuria)
+
+
+## Rápida introdução
 
 Python é uma linguagem de programação de alto nível. É possível programar tanto para desktop quanto para web.
 
@@ -17,6 +40,8 @@ Não foi fácil?
 
 Começando com Python
 ---
+
+Neste prímeiro capítulo é para responder a pergunta: Como começar a aprender Python ?
 
 Conheça o básico da sintaxe de Python através deste artigo [O básico da sintaxe de Python](./sintaxe-basica/).
 
@@ -41,9 +66,7 @@ lógica de programação.
 
 Eu preparei um __curso de lógica de programação aliada a testes unitários__ que é fora do comun.
 
-A primeira edição do curos começou no primeiro semestre de 2018, você pode conferir os vídeo em nosso [canal do youtube](https://www.youtube.com/user/DevFuria).
-
-A segunda edição acontecerá no segundo semestre de 2018, [cadastre aqui seu email](/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=python-index)
+Cadastre [aqui seu email](/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=python-index)
 para não perder a próxima turma!
 
 
