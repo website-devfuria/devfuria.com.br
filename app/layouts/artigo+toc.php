@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <?php include(Site::$path['includes/'] . "ad-video.php") ?>
+    <?php //include(Site::$path['includes/'] . "ad-video.php") ?>
 
 
     <article class="container">
