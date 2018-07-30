@@ -29,7 +29,7 @@ a {
 a.link-externo {
   color: #c93900;
   padding-right: 15px;
-  background: url(/app/assets/boots3/icon-external-link.gif) right top no-repeat;
+  background: url(/app/assets/imagens/icon-external-link.gif) right top no-repeat;
 }
 a:hover, a:focus {
     color: #666;
