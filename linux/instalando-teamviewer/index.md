@@ -1,6 +1,7 @@
 ---
-title:       Instalando o Team Viewer no LInux
+title:       Instalando o Team Viewer no Linux
 description: Aprenda como instalar o Team Viewer no Linux
+capitulo:    linux-instalando-utils
 ---
 
 TeamViewer é um pacote para o controle remoto, compartilhamento de desktop, reuniões on-line, web conferência e
@@ -19,7 +20,7 @@ Dar permissão de execução.
 	chmod 777 teamviewer_linux.rpm
 
 Executar o rpm.
-	
+
 	rpm -ivh teamviewer_linux.rpm
 
 
@@ -33,10 +34,10 @@ Baixar o pacote conforma arquitetura.
 	http://download.teamviewer.com/download/teamviewer_linux.deb
 
 64 bits:
-	
+
 	http://download.teamviewer.com/download/teamviewer_linux_x64.deb
 
-Dar permissão de execução 
+Dar permissão de execução
 
 	chmod 777 file
 

@@ -1,7 +1,7 @@
 ---
 title:       Funções internas (bulti in functions)
 description: Exemplos práticos das funções internas de Python
-capitulo:    python-builtin
+capitulo:    python-built-in
 ordem:       1
 ---
 
@@ -21,7 +21,7 @@ ordem:       1
             <li class="list-group-item disabled">bytes</li>
             <li class="list-group-item disabled">callable</li>
             <li class="list-group-item disabled">chr</li>
-            
+
             <li class="list-group-item disabled">classmethod</li>
             <li class="list-group-item disabled">compile</li>
             <li class="list-group-item disabled">complex</li>
@@ -51,7 +51,7 @@ ordem:       1
             <li class="list-group-item disabled">input</li>
             <li class="list-group-item disabled">int</li>
             <li class="list-group-item disabled">isinstance</li>
-            
+
         </ul>
     </div>
     <div class="col-md-3">
@@ -66,7 +66,7 @@ ordem:       1
             <li class="list-group-item disabled">memoryview</li>
             <li class="list-group-item disabled">min</li>
             <li class="list-group-item disabled">next</li>
-            
+
             <li class="list-group-item disabled">object</li>
             <li class="list-group-item disabled">oct</li>
             <li class="list-group-item disabled">open</li>
@@ -88,7 +88,7 @@ ordem:       1
             <li class="list-group-item disabled">sorted</li>
             <li class="list-group-item disabled">staticmethod</li>
             <li class="list-group-item disabled">str</li>
-            
+
             <li class="list-group-item disabled">sum</li>
             <li class="list-group-item disabled">super</li>
             <li class="list-group-item disabled">tuple</li>

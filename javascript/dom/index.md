@@ -49,7 +49,7 @@ __HTML__ e __XML__. A API não é especialmente complicada, mas existem vários 
 
 Trabalhar com a árvore __DOM__ de uma página é uma das tarefas mais comuns do JavaScript no lado do cliente. Isso também
 é uma das principais causas de dores de cabeça ( e dá ao JavaScript uma má reputação), porque os métodos __DOM__ são
-implementados de forma inconsistente nos navegadores. É por isso que usar uma [boa biblioteca JavaScript](/javascript/bibliotecas/),
+implementados de forma inconsistente nos navegadores. É por isso que usar uma boa biblioteca JavaScript,
 que abstraia as diferenças dos navegadores, pode acelerar significativamente o desenvolvimento. Considere ao menos
 aprender 2 ou 3 bibliotecas JavaScript.
 

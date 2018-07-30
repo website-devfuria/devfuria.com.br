@@ -1,6 +1,7 @@
 ---
 title:       Instalando a última versão do Google Chrome
-description: Como instalar a ultima versao do navegador Google Chrome no Linux
+description: Como instalar a ultima versão do navegador Google Chrome no Linux
+capitulo:    linux-instalando-utils
 ---
 
 Escolha sua versão e baixe o Chrome no seguinte link...
@@ -8,7 +9,7 @@ Escolha sua versão e baixe o Chrome no seguinte link...
 [http://www.google.com.br/chrome/](http://www.google.com.br/chrome/)
 
 
-O link disponibiliza pacotes `deb`(Debian, Ubuntu) e pacotes `rpm` (CentOS, 
+O link disponibiliza pacotes `deb`(Debian, Ubuntu) e pacotes `rpm` (CentOS,
 Fedora, openSUSE).
 
 No meu caso eu escolhi o __rpm__ pois meu sistema é CentOS.

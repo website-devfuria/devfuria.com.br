@@ -1,6 +1,7 @@
 ---
 title:       Tutorial sobre o template Jade (node + express)
 description: Aprenda com este tutorial os primeiros passos com o template Jade (express.js)
+capitulo:    "node-express"
 ---
 
 O [Jade]() é um __template engine__ muito utilizado em conjunto com o [Express.js].s
@@ -53,7 +54,7 @@ Que, após convertido, se transformará em...
 No __Jade__ é preciso respeitar o espaçamento entre as tags separando cada tag por tabulação ou por espaços. Não é permitido
 ter uma página utilizando os dois meios, ou é um ou é outro.
 
-O site [www.learnjade.com](http://www.learnjade.com/) mantém um tutorial genial para entender como o 
+O site [www.learnjade.com](http://www.learnjade.com/) mantém um tutorial genial para entender como o
 __Jade__ funciona. Na aba "Jade Tour" é possível ver exemplos bastantes lúdicos.
 
 Veja outros exemplos:
@@ -80,7 +81,7 @@ Veja outros exemplos:
 <tr>
     <td><code>input</code></td><td><code>&lt;input/&gt;</code></td>
 </tr>
-</table> 
+</table>
 
 
 

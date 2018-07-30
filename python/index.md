@@ -253,7 +253,7 @@ O Flask é um framework minimalista para Python.
 
 
 
-Experimente Python 3
+Instalando Python 3
 ---
 
 Python 3 é a versão mais atual da linguagem. Para ser mais exato, enquanto escrevo (dez/2014), a versão mais atual é
@@ -273,7 +273,7 @@ Aprenda a [instalar o Virtualenv](/linux/instalando-virtualenv/).
 Aprenda a [instalar o pil](/linux/instalando-pil/).
 
 
-Livros sobre Python
+Livros de Python para iniciantes
 ---
 
 Leia este belo artigo de Eric Hideki onde o autor indica alguns bons livros (em português) sobre Python

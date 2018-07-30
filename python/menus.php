@@ -53,3 +53,13 @@ $menu['python-artigos'] = [
     "/python/django-error-loading-mysqldb/"              => "Django Error loading MySQLdb module: No module named MySQLdb",
 ];
 
+#
+#
+#
+$menu['python-built-in'] = [
+    "/python/built-in/"      => "Funções internas (bulti in functions)",
+    "/python/built-in-enumerate/" => "Python - Função interna enumarate()",
+    "/python/built-in-list"       => "Função interna list()",
+    "/python/built-in-repr/"      => "Função interna repr()",
+    "/python/built-in-zip/"       => "Função interna zip()",
+];

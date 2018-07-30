@@ -98,6 +98,8 @@ Aqui, mantenho um __guia prático de instalações de aplicativos para Linux__, 
 ### Instalando Utilitários
 
 <div class="list-group">
+    <a href="/linux/instalando-teamviewer/" class="list-group-item ">Instalando o Team Viewer no Linux</a>
+    <a href="/linux/instalando-vagrant/" class="list-group-item ">Instalando o Vagrant no Linux</a>
     <a href="/linux/instalando-skype/" class="list-group-item ">Instalando o Skype no Fedora</a>
     <a href="/linux/instalando-filezilla/" class="list-group-item ">Instalando o Filezilla (FTP)</a>
     <a href="/linux/instalando-pencil/" class="list-group-item ">Instalando o Pencil no Fedora</a>

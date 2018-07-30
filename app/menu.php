@@ -123,6 +123,7 @@ function menu_secao($capitulo) {
         case 'python-artigos':
         case 'python-google':
         case 'python-basico':
+        case 'python-built-in':
             return "python";
             break;
 

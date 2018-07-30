@@ -85,6 +85,8 @@ $menu['linux-instalando-editores'] = [
 #
 #
 $menu['linux-instalando-utils'] = [
+    "/linux/instalando-teamviewer/"    => "Instalando o Team Viewer no Linux",
+    "/linux/instalando-vagrant/"       => "Instalando o Vagrant no Linux",
     "/linux/instalando-skype/"         => "Instalando o Skype no Fedora",
     "/linux/instalando-filezilla/"     => "Instalando o Filezilla (FTP)",
     "/linux/instalando-pencil/"        => "Instalando o Pencil no Fedora",

@@ -148,6 +148,7 @@ function redirecionar_pelo_mapa($uri) {
 #
 function mapa() {
     return array(
+        "/urls.php/"                  => "/",
         "/core/views/"              => "/",
         "/node_modules/.env/"       => "/",
         "/node_modules/"            => "/",
@@ -178,6 +179,7 @@ function mapa() {
         "/js/imagens/"       => "/javascript/",
         "/javascript/forms/" => "/javascript/",
         "/javascript/refs/"  => "/javascript/",
+        "/javascript/bibliotecas/"  => "/javascript/",
         "/javascript/refatoracao-codigo-limpo/index.html/" => "/javascript/",
         "/javascript/refatoracao-codigo-limpo/"            => "/javascript/",
         "/javascript/preparando-o-terreno/"       => "/javascript/iniciando-com-javascript/",
@@ -550,6 +552,7 @@ function mapa() {
         "/git/nao-pedir-senha/"   => "/git/netrc-nao-pedir-senha/",
         "/git/os-3-estados/"      => "/git/",
         "/git/git-rm/"            => "/git/",
+        "/git/git-reset/"         => "/git/",
 
         "/linux/resetar-senha%20de-mysql/"            => "/linux",
         "/entendendo-e-usando-permissoes-no-linux.md/"=> "/linux",

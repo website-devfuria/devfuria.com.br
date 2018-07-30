@@ -1,5 +1,6 @@
 ---
-title:  Entendendo e usando permissões no Linux
+title:    Entendendo e usando permissões no Linux
+capitulo:    linux-artigos
 ---
 
 Em breve!

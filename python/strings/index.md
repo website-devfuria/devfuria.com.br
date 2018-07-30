@@ -183,7 +183,7 @@ Aceita listas.
 
 ```python
 "-".join(['flavio', 'alxandre', 'micheletti'])
-# 'flavio-alxandre-micheletti'
+# 'flavio-alexandre-micheletti'
 ```
 
 

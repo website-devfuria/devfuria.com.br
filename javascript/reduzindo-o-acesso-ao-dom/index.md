@@ -1,6 +1,7 @@
 ---
+layout:      artigo
 title:       Reduzindo o acesso ao DOM (Document Object Model)
-description: 
+description:
 ---
 
 Em breve!

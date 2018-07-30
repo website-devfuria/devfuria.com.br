@@ -1,7 +1,7 @@
 ---
 title:       Python - Função interna list()
 description: Exemplos práticos sobre a função interna list()
-capitulo:    python-builtin
+capitulo:    python-built-in
 ordem:       3
 ---
 
@@ -22,7 +22,7 @@ Podemos converte tuplas em lista.
 [1, 2, 3]
 ```
 
-O retorno da função `range()` não é uma lista e sim uma sequência do tipo range. 
+O retorno da função `range()` não é uma lista e sim uma sequência do tipo range.
 
 ```python
 >>> type(range(0, 10, 2))

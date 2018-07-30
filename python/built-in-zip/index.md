@@ -1,7 +1,7 @@
 ---
 title:       Python - Função interna zip()
 description: Exemplos práticos sobre a função interna zip()
-capitulo:    python-builtin
+capitulo:    python-built-in
 ordem:       5
 ---
 
@@ -18,7 +18,7 @@ Tudo bem, eu também não. É melhor vermos os exemplos.
 >>> y = [4, 5, 6]
 >>> for t in zip(x, y):
 ...   print(t)
-... 
+...
 (1, 4)
 (2, 5)
 (3, 6)
@@ -63,13 +63,13 @@ Para inverter o dicionário acima fazemos...
 >>> prices_invertido = list(zip(prices.values(), prices.keys()))
 >>> for t in prices_invertido:
 ...   print(t)
-... 
+...
 (45.23, 'ACME')
 (205.55, 'IBM')
 (37.2, 'HPQ')
 (10.75, 'FB')
 (612.78, 'AAPL')
->>> 
+>>>
 ```
 
 Mas repare que o retorno é uma lista (e não um dicionário).

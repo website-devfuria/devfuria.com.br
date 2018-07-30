@@ -1,4 +1,5 @@
 ---
+layout:      artigo
 title:       Como iniciar no Linux
 description: Descubra como começar no Linux sem mistérios.
 ---
@@ -7,11 +8,11 @@ Gostaria de lhe dizer que usar o __Linux__ é fácil, mas não é (embora isso s
 uma viagem muito empolgante e, na maioria das vezes, pode ser bastante divertido trabalhar no Linux.
 
 Para quem vem do Windows é 2x mais difícil pois a gente tenta encontrar as "coisas parecidas" no Linux, eu vim do Windows
-e se este é o seu caso aconselho a não tentar fazer isso. Esqueça os softwares que você usa no Windows, esqueça as 
+e se este é o seu caso aconselho a não tentar fazer isso. Esqueça os softwares que você usa no Windows, esqueça as
 ferramentas, esqueça tudo. Limpe sua mente, entre no Linux de cabeça aberta, afinal foi dessa forma que você iniciou com
 o Windows.
 
-Você precisa experimentar o __Linux__. A melhor forma é instalar o sistema e brincar com ele, ir se acostumando com a 
+Você precisa experimentar o __Linux__. A melhor forma é instalar o sistema e brincar com ele, ir se acostumando com a
 interface e tentar fazer algumas coisas básicas.
 
 
@@ -25,7 +26,7 @@ Nada animador isso né?
 
 Mas saiba que existem pouco menos de 10 distros principais, as demais são tudo pequenas variações.
 
-As duas distro mais populares são a Red Hat e o Debian. E as distro que estão logo abaixo chamamos de família __Red Hat__ 
+As duas distro mais populares são a Red Hat e o Debian. E as distro que estão logo abaixo chamamos de família __Red Hat__
 e a outra de família __Debian__.
 
 Grotescamente, a árvore de distros, nas quais eu aconselho que você experiemente primeiro, ficaria mais ou menos assim:
@@ -38,7 +39,7 @@ Grotescamente, a árvore de distros, nas quais eu aconselho que você experiemen
 
 Eu não posso lhe dizer qual distro começar, mas posso dizer por onde eu comecei e para onde estou indo.
 
-Eu comecei com a __Ubuntu__ (em 2012), ela sem dúvida é a distro mais indicada para inciantes, pois ela faz muitas 
+Eu comecei com a __Ubuntu__ (em 2012), ela sem dúvida é a distro mais indicada para inciantes, pois ela faz muitas
 coisas pelo usuário.A __Kubuntu__ é a mesma coisa que __Ubuntu__, só muda a interface gráfica, sem mistérios.
 
 Depois eu me cansei e quis experimentar a família do outro  lado (__RedHat__) e fui para o __Fedora__ (em 2013). Esta também
@@ -80,22 +81,22 @@ E veja um pouco deste tutorial no guia do hardware
 
 Não tenha medo, nada de ruim pode acontecer a não ser que você seja muito afobado(a).
 
-A pior coisa que você pode fazer é iniciar instalando o __Linux__ sobre o __Windows__. A instalação pode falhar e você 
+A pior coisa que você pode fazer é iniciar instalando o __Linux__ sobre o __Windows__. A instalação pode falhar e você
 pode perder seus arquivos e até mesmo ter que reinstalar o __Windows__.
 
 Experimente:
 
 1. [Live Cd's](http://pt.wikipedia.org/wiki/Live_CD). É um cd vivo (como o nome diz) onde você coloca o cd na bandeja e inicia seu computador; dentro de instantes terá o sistema operacional na memória. Ao reiniciar sua máquina (e retirar o cd da bandeja) tudo estará como sempre esteve.
 
-2. [Máquinas virtuais](http://en.wikipedia.org/wiki/List_of_live_CDs). É um aplicativo que simula uma 
+2. [Máquinas virtuais](http://en.wikipedia.org/wiki/List_of_live_CDs). É um aplicativo que simula uma
 máquina no seu computador. O [Virtual Box](https://www.virtualbox.org/) é a __"vm"__  mais fácil para começar.
 
-Após você ter tido uma ou as duas experiências acima aí poderá partir para a aventura de instalar o __Linux__ sobre o 
-__Windows__ como __dual boot__. Sempre que você ligar seu computador poderá escolhar entre inicializar o __Windows__ ou 
+Após você ter tido uma ou as duas experiências acima aí poderá partir para a aventura de instalar o __Linux__ sobre o
+__Windows__ como __dual boot__. Sempre que você ligar seu computador poderá escolhar entre inicializar o __Windows__ ou
 o __Linux__.
 
-E quem sabe um dia, você estufa o peito e instala apenas o __Linux__ como sistema operacional. Aí você poderá fazer 
-exatamente o inverso: instalar o __Windows__ como uma máquina virtual caso precise de algum aplicativo que não tem no 
+E quem sabe um dia, você estufa o peito e instala apenas o __Linux__ como sistema operacional. Aí você poderá fazer
+exatamente o inverso: instalar o __Windows__ como uma máquina virtual caso precise de algum aplicativo que não tem no
 __Linux__ (como o Office, por exemplo).
 
 Em ambos os casos, utilizamos um arquivo do tipo __iso__ para gravar uma [imagem no CD](/linux/imagem-cd-iso/).
@@ -106,10 +107,10 @@ Em ambos os casos, utilizamos um arquivo do tipo __iso__ para gravar uma [imagem
 E o que o torna tão popular entre os desenvolvedores?
 
 Essa pergunta é difícil de ser respondida de forma genérica, porém é fácil quando falamos de forma bem pessoal. Quero
-dizer que cada um tem suas próprias razões para usar/gostar do __Linux__. Como não posso falar por todo mundo, vou falar 
+dizer que cada um tem suas próprias razões para usar/gostar do __Linux__. Como não posso falar por todo mundo, vou falar
 apenas por mim.
 
-Eu gosto do Linux porque com ele eu tenho o desafio constante, quase que diário, de aprendizado. Todo dia, aprendo uma 
+Eu gosto do Linux porque com ele eu tenho o desafio constante, quase que diário, de aprendizado. Todo dia, aprendo uma
 coisa nova e interessante sobre sistemas operacionais, aplicativos, ferramentas e etc...
 
 Gosto do __Linux__ porque ele é da bandeira __Software livre__. Poder olhar e alterar o código fonte de um  aplicativo é

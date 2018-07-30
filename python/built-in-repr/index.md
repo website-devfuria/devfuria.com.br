@@ -1,7 +1,7 @@
 ---
 title:       Python - Função interna repr()
 description: Exemplos práticos sobre a função interna repr()
-capitulo:    python-builtin
+capitulo:    python-built-in
 ordem:       4
 ---
 

@@ -1,6 +1,7 @@
 ---
 title:       Instalando o navegador Chome no Linux
 description: Como instalar o navegador Google Chrome no Linux
+capitulo:    linux-instalando-utils
 ---
 
 

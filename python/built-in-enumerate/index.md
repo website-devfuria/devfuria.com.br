@@ -1,7 +1,7 @@
 ---
 title:       Python - Função interna enumarate()
 description: Exemplos práticos sobre a função interna enumarate()
-capitulo:    python-builtin
+capitulo:    python-built-in
 ordem:       2
 ---
 
@@ -17,13 +17,13 @@ Se aplicarmos outra função interna [list](/python/built-in/list/), obteremos o
 
 ```python
 >>> list(enumerate(seasons))
-[(0, 'Spring'), 
- (1, 'Summer'), 
- (2, 'Fall'), 
+[(0, 'Spring'),
+ (1, 'Summer'),
+ (2, 'Fall'),
  (3, 'Winter')]
 ```
 
-Obs: o terminal do Python não apresenta os dados formatados como exibido acima, eu que ajeitei para facilitar a 
+Obs: o terminal do Python não apresenta os dados formatados como exibido acima, eu que ajeitei para facilitar a
 visualização.
 
 Também podemos definir o início do índice.
@@ -32,7 +32,7 @@ Também podemos definir o início do índice.
 >>> list(enumerate(seasons, start=1))
 [(1, 'Spring'),
  (2, 'Summer'),
- (3, 'Fall'), 
+ (3, 'Fall'),
  (4, 'Winter')]
 ```
 
