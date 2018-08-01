@@ -10,9 +10,9 @@ Ele é um tutorial que vái do básico ao intermediário em Python.
 
 Ele também é um verdadeiro guia para iniciantes na linguagem Python.
 
-Aqui eu também reuno exercícios para iniciantes na linguagem Python.
+Aqui eu também reúno exercícios para iniciantes na linguagem Python.
 
-Eu espero que esse material aqui reunido faça uma grande diferença em sua jornadae ajude você a
+Eu espero que esse material aqui reunido faça uma grande diferença em sua jornada e ajude você a
 aprender a programar em Python.
 
 Este tutorial (parece até um livro sobre python) eu recomendo para quem está começando em Python.
