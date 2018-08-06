@@ -20,25 +20,25 @@ Fala sério, você já viu em algum lugar por aí um curso que unisse as duas co
 
 Eu estou gravando uma série de vídeos explicando em detalhes certos aspectos do curso...
 
-+ [[01] Divulgação do curso de Lógica de Programação](https://youtu.be/N6TmF9EyLwQ)
-+ [[02] Porque juntamos lógica com os testes ?](https://youtu.be/FbgMeSWKAQ4)
-+ [[03] Seja mais esperto que sua Faculdade](https://youtu.be/7WxqhsXtTtQ)
-+ [[04] Porque estamos utilizando 3 linguagens para aprender lógica ?](https://youtu.be/lgzcBc1E-g0)
-+ [[05] Detalhes do curso - parte 1](https://youtu.be/JZpE9QuFUbo)
-+ [[06] Detalhes do curso - parte 2](https://youtu.be/DYpIWqmGhZg)
-+ [[07] Vai começar o curso de lógica + testes ](https://youtu.be/Ua6sHnlNFws)
-+ [[08] Curso de lógica de programação + testes unitários](https://youtu.be/SnCoxHMBcqQ)
-+ [AO VIVO  &#124; Flávio 0 vs 2 Youtube](https://youtu.be/lgpCyunRRSw)
++ [01 &#124; Divulgação do curso de Lógica de Programação](https://youtu.be/N6TmF9EyLwQ)
++ [02 &#124; Porque juntamos lógica com os testes ?](https://youtu.be/FbgMeSWKAQ4)
++ [03 &#124; Seja mais esperto que sua Faculdade](https://youtu.be/7WxqhsXtTtQ)
++ [04 &#124; Porque estamos utilizando 3 linguagens para aprender lógica ?](https://youtu.be/lgzcBc1E-g0)
++ [05 &#124; Detalhes do curso - parte 1](https://youtu.be/JZpE9QuFUbo)
++ [06 &#124; Detalhes do curso - parte 2](https://youtu.be/DYpIWqmGhZg)
++ [07 &#124; Vai começar o curso de lógica + testes ](https://youtu.be/Ua6sHnlNFws)
++ [08 &#124; Curso de lógica de programação + testes unitários](https://youtu.be/SnCoxHMBcqQ)
++ [09 &#124; AO VIVO &#124; Flávio 0 vs 2 Youtube](https://youtu.be/lgpCyunRRSw)
 
 __Módulo #01:__
 
-+ [01:16 Curso Lógica de Programação + Testes Unitários (1 aula)](https://youtu.be/AxUBkS84C9o)
-+ [07:05 Aula #1a - Instalando o Virtual Box no Windows](https://youtu.be/MwDJ1MqJ6VY)
-+ [11:54 Aula #1b - Instalando o Ubuntu Server no Virtual Box](https://youtu.be/jRzQqGO_EFY)
-+ [06:23 Aula #1c - Fazendo a máquina virtual se comunicar pela rede](https://youtu.be/zOA8szJPcb4)
-+ [07:29 Aula #1d - Acessando sua máquina virtual pelo terminal Git Bash](https://youtu.be/7QwTWLyWzdE)
-+ [13:24 Aula #1e - Como serão os testes na linguagem Python](https://youtu.be/sZZNSvvn3I8)
-+ [13:16 AO VIVO  &#124; Um pouco sobre mim, sobre o devfuria e sobre o curso de lógica!](https://youtu.be/6YxxUDP0FDs)
++ [07:05 &#124; Aula 01 &#124; Instalando o Virtual Box no Windows](https://youtu.be/MwDJ1MqJ6VY)
++ [11:54 &#124; Aula 02 &#124; Instalando o Ubuntu Server no Virtual Box](https://youtu.be/jRzQqGO_EFY)
++ [06:23 &#124; Aula 03 &#124; Fazendo a máquina virtual se comunicar pela rede](https://youtu.be/zOA8szJPcb4)
++ [07:29 &#124; Aula 04 &#124; Acessando sua máquina virtual pelo terminal Git Bash](https://youtu.be/7QwTWLyWzdE)
++ [13:24 &#124; Aula 05 &#124; Como serão os testes na linguagem Python](https://youtu.be/sZZNSvvn3I8)
++ [01:16 &#124; Aula 06 &#124; Revisando Módulo 01](https://youtu.be/AxUBkS84C9o)
++ [13:16 &#124; AO VIVO &#124; Um pouco sobre mim, sobre o devfuria e sobre o curso de lógica!](https://youtu.be/6YxxUDP0FDs)
 
 __Módulo #02:__
 
