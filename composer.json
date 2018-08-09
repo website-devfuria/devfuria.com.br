@@ -1,6 +1,7 @@
 {
     "require": {
-        "slim/slim": "^2.6",
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.1",
         "monolog/monolog": "^1.17",
         "mnapoli/front-yaml": "^1.6",
         "guzzlehttp/guzzle": "~6.0"
