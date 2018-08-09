@@ -31,7 +31,11 @@ date_default_timezone_set("America/Sao_Paulo");
 #
 # slim
 #
-Site::$slim = new \Slim\Slim();
+$config = ['settings' => [
+    'addContentLengthHeader' => false,
+    'displayErrorDetails'    => true,
+]];
+Site::$slim = new \Slim\App($config);
 
 
 #
@@ -83,3 +87,22 @@ Site::$emails = ["sitedevfuria@gmail.com"];
 # Representa uma página
 #
 $page = new Page();
+
+
+
+
+
+
+// Get container
+$container = Site::$slim->getContainer();
+
+// Register component on container
+$container['view'] = function ($container) {
+    $view = new \Slim\Views\Twig('/');
+
+    // Instantiate and add Slim specific extension
+    $basePath = rtrim(str_ireplace('index.php', '', $container->get('request')->getUri()->getBasePath()), '/');
+    $view->addExtension(new Slim\Views\TwigExtension($container->get('router'), $basePath));
+
+    return $view;
+};
