@@ -1,51 +1,49 @@
 <?php
 
+
 #
 #
 #
 require dirname(__FILE__) . '/app/boot.php';
 
-#
-# router /
-#
-Site::$slim->get('/', 'index');
 
 #
-# router /{paginas}
+# /
 #
-Site::$slim->get('(:uri+)', 'paginas');
+Site::$slim->get('/', function ($request, $response, $args) {
+    // var_dump(paginas(['index.md']));
+    return $response->write('foi');
+});
+
+
+#
+# /{paginas}
+#
+Site::$slim->get('[/{uri:.*}]', function ($request, $response, $args) {
+
+    $md = file_get_contents('python/index.md');
+    // var_dump($md); die();
+
+    $parser = new \Mni\FrontYAML\Parser();
+    // var_dump($parser); die();
+    $document = $parser->parse($md);
+    // var_dump($document); die();
+
+    $front = $document->getYAML();
+    // var_dump($front); die();
+
+    $content = $document->getContent();
+    // var_dump($content); //die();
+    // echo $content;
+
+    return $this->view->fetchFromString($content, ['abc' => 123]);
+    // return $response->write('páginas');
+});
+
 
 #
 # start slim
 #
 Site::$slim->run();
 
-#
-# Esta é a home
-#
-function index() {
-     paginas(['index.md']);
-    // require "index.html";
-}
-
-#
-# Aqui ele tenta carregar as páginas conforme a url
-#
-function paginas($pagina_arr) {
-
-    $page = $GLOBALS['page'];                                        # página
-
-    $page->uri_arr = $pagina_arr;                                    # traz a parte após o domínio, no formato array.
-    $page->uri_str = Site::$slim->request->getResourceUri();         # traz a parte após o domínio, no formato string.
-    $page->url_str = Site::$dominio . $page->uri_str;
-    $page->path_md = Site::$path['/'] . $page->uri_str . "index.md"; # arquivo md
-
-    // var_dump($page); die();
-
-    if (file_exists($page->path_md)) {
-        carregar($page);
-    } else {
-        redirecionar($page->uri_str);
-    }
-}
 
