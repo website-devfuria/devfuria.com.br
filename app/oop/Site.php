@@ -5,26 +5,15 @@
 #
 class Site {
 
-    static $dominio = "http://www.devfuria.com.br";
-    static $title   = "devfuria"; // para substituir títulos ausentes
-    static $name; // namespace para logs
-    static $author  = "Flávio Alexandre Micheletti";
+    public $title   = "devfuria"; // para substituir títulos ausentes
+    public $name; // namespace para logs
+    public $author  = "Flávio Alexandre Micheletti";
 
 
-    static $slim;
-    static $path    = [];
-    static $url     = [];
+    public $emails  = []; // que receberam notificações
 
-    static $uri;
-
-    static $emails  = []; // que receberam notificações
-
-    static $enable_analytics = false;
-    static $enable_disqus    = false;
+    public $enable_analytics = false;
+    public $enable_disqus    = false;
 
 }
-
-#
-# veja que as propriedades são todas estáticas, então não precisa instanciar
-#
 
