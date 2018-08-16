@@ -42,156 +42,156 @@ __Módulo #01:__
 
 __Módulo #02:__
 
-+ [02:29 Uma palavra de motivação - case udacity](https://youtu.be/NV2EsdJm_cg)
-+ [01:25 Curso Lógica de Programação + Testes Unitários (2 aula)](https://youtu.be/Y_j_AOX3g8o)
-+ [02:31 Aula #2a - Clonando nossa máquina virtual](https://youtu.be/OwC485IEc-U)
-+ [09:00 Aula #2b - Instalando Node.js e GCC](https://youtu.be/9lGJue1I0Xg)
-+ [12:23 Aula #2c - Compartilhando pastas](https://youtu.be/d_D9kkxssA8)
-+ [06:33 Aula #2d - Exemplo em Python](https://youtu.be/bh_4HR9RJtU)
-+ [03:37 Aula #2e - Exemplo em JavaScript (nodejs)](https://youtu.be/u4WOiKcvlVU)
-+ [04:08 Aula #2f - Exemplo na linguagem C](https://youtu.be/wYb5EGir9JY)
++ [02:29 &#124; Uma palavra de motivação - case udacity](https://youtu.be/NV2EsdJm_cg)
++ [01:25 &#124; Curso Lógica de Programação + Testes Unitários (2 aula)](https://youtu.be/Y_j_AOX3g8o)
++ [02:31 &#124; Aula 01 &#124; Clonando nossa máquina virtual](https://youtu.be/OwC485IEc-U)
++ [09:00 &#124; Aula 02 &#124; Instalando Node.js e GCC](https://youtu.be/9lGJue1I0Xg)
++ [12:23 &#124; Aula 03 &#124; Compartilhando pastas](https://youtu.be/d_D9kkxssA8)
++ [06:33 &#124; Aula 04 &#124; Exemplo em Python](https://youtu.be/bh_4HR9RJtU)
++ [03:37 &#124; Aula 05 &#124; Exemplo em JavaScript (nodejs)](https://youtu.be/u4WOiKcvlVU)
++ [04:08 &#124; Aula 06 &#124; Exemplo na linguagem C](https://youtu.be/wYb5EGir9JY)
 
 __Módulo #03:__
 
-+ [02:07 Curso Lógica de Programação + Testes Unitários (3 aula)](https://youtu.be/a3lUO6mBdi4)
-+ [08:48 Aula #3a - Dica do comando mount (Linux)](https://youtu.be/bRylwTeXiP4)
-+ [11:14 Aula #3b - Não programe mais dessa forma](https://youtu.be/q6vBXrVJ5pY)
-+ [10:53 Aula #3c - Simulando um teste](https://youtu.be/xZje5ztoY2s)
-+ [07:58 Aula #3d - Entendendo o assert](https://youtu.be/pfPjRz0xsVk)
-+ [05:03 Aula #3e - Entendendo o assert (complemento)](https://youtu.be/pl3204dnESg)
-+ [07:28 Aula #3f - Familiarizando com o GitHub](https://youtu.be/PZqUN3dE1nM)
++ [02:07 &#124; Curso Lógica de Programação + Testes Unitários (3 aula)](https://youtu.be/a3lUO6mBdi4)
++ [08:48 &#124; Aula 01 &#124; Dica do comando mount (Linux)](https://youtu.be/bRylwTeXiP4)
++ [11:14 &#124; Aula 02 &#124; Não programe mais dessa forma](https://youtu.be/q6vBXrVJ5pY)
++ [10:53 &#124; Aula 03 &#124; Simulando um teste](https://youtu.be/xZje5ztoY2s)
++ [07:58 &#124; Aula 03 &#124; Entendendo o assert](https://youtu.be/pfPjRz0xsVk)
++ [05:03 &#124; Aula 04 &#124; Entendendo o assert (complemento)](https://youtu.be/pl3204dnESg)
++ [07:28 &#124; Aula 05 &#124; Familiarizando com o GitHub](https://youtu.be/PZqUN3dE1nM)
 
 
 __Módulo #04:__
 
-+ [17:57 Aula #4a - Visão Geral do Git e GitHub](https://youtu.be/GQ1EBZGE2lo)
-+ [14:07 Aula #4b - git clone + git commit](https://youtu.be/gm_N29HrL8g)
-+ [06:45 Aula #4c - git push + git pull](https://youtu.be/aODd8Zfn4iY)
-+ [13:20 Aula #4d - Markdown](https://youtu.be/bii3ors-C4w)
-+ [13:36 Aula #4e - Criando um repositório](https://youtu.be/bgCdlPpMvK0)
++ [17:57 &#124; Aula 01 &#124; Visão Geral do Git e GitHub](https://youtu.be/GQ1EBZGE2lo)
++ [14:07 &#124; Aula 02 &#124; git clone + git commit](https://youtu.be/gm_N29HrL8g)
++ [06:45 &#124; Aula 03 &#124; git push + git pull](https://youtu.be/aODd8Zfn4iY)
++ [13:20 &#124; Aula 04 &#124; Markdown](https://youtu.be/bii3ors-C4w)
++ [13:36 &#124; Aula 05 &#124; Criando um repositório](https://youtu.be/bgCdlPpMvK0)
 
 
 __Módulo #05:__
 
-+ [09:03 Aula #5a - Revisando](https://youtu.be/p8-JjbDdaMQ)
-+ [05:48 Aula #5b - Área Quadrada em Python](https://youtu.be/bdV-9Ndk4ME)
-+ [01:54 Aula #5c - Área Quadrada em Node.js (JavaScript)](https://youtu.be/bKdBeuSmryo)
-+ [03:48 Aula #5d - Área Quadrada em C](https://youtu.be/SZqKDfdfTf4)
-+ [04:56 Aula #5e - git commit + git push](https://youtu.be/gB9ze4pUjU0)
++ [09:03 &#124; Aula 01 &#124; Revisando](https://youtu.be/p8-JjbDdaMQ)
++ [05:48 &#124; Aula 02 &#124; Área Quadrada em Python](https://youtu.be/bdV-9Ndk4ME)
++ [01:54 &#124; Aula 03 &#124; Área Quadrada em Node.js (JavaScript)](https://youtu.be/bKdBeuSmryo)
++ [03:48 &#124; Aula 04 &#124; Área Quadrada em C](https://youtu.be/SZqKDfdfTf4)
++ [04:56 &#124; Aula 05 &#124; git commit + git push](https://youtu.be/gB9ze4pUjU0)
 
 
 __Módulo #06:__
 
-+ [06:25 Aula #6a - Antecessor e Sucessor em Python](https://youtu.be/FTQYhHKK7QA)
-+ [03:20 Aula #6b - Antecessor e Sucessor em Node (JavaScript)](https://youtu.be/-RVvi1sYes4)
-+ [02:59 Aula #6c - Antecessor e Sucessor em C](https://youtu.be/XC1ciNZWtd8)
-+ [02:51 Aula #6d - git commit + git push](https://youtu.be/Mh_y4s9wRUk)
++ [06:25 &#124; Aula 01 &#124; Antecessor e Sucessor em Python](https://youtu.be/FTQYhHKK7QA)
++ [03:20 &#124; Aula 02 &#124; Antecessor e Sucessor em Node (JavaScript)](https://youtu.be/-RVvi1sYes4)
++ [02:59 &#124; Aula 03 &#124; Antecessor e Sucessor em C](https://youtu.be/XC1ciNZWtd8)
++ [02:51 &#124; Aula 04 &#124; git commit + git push](https://youtu.be/Mh_y4s9wRUk)
 
 
 __Módulo #07:__
 
 + [03:45 Curso de lógica + testes (feedback )](https://youtu.be/2CS-wcl-bPM)
-+ [05:52 Aula #7a - Introdução ao módulo 7](https://youtu.be/ez4nAfZRKzg)
-+ [03:32 Aula #7b - Média Simples em Python](https://youtu.be/XDS0nwJRLX0)
-+ [03:09 Aula #7c - Média Simples em Node (JavaScript)](https://youtu.be/02yw_2G-D-k)
-+ [03:08 Aula #7d - Média Simples na linguagen C](https://youtu.be/MJhCET-9pDk)
++ [05:52 &#124; Aula 01 &#124; Introdução ao módulo 7](https://youtu.be/ez4nAfZRKzg)
++ [03:32 &#124; Aula 02 &#124; Média Simples em Python](https://youtu.be/XDS0nwJRLX0)
++ [03:09 &#124; Aula 03 &#124; Média Simples em Node (JavaScript)](https://youtu.be/02yw_2G-D-k)
++ [03:08 &#124; Aula 04 &#124; Média Simples na linguagen C](https://youtu.be/MJhCET-9pDk)
 
 
 __Módulo #08:__
 
-+ [05:53 Aula #8a - Introdução ao módulo 8](https://youtu.be/rWJOTcBX9-o)
-+ [05:15 Aula #8b - Descobrir os dias em Python](https://youtu.be/eeDw18uIExQ)
-+ [02:04 Aula #8c - Descobrir os dias em Node (JavaScript)](https://youtu.be/fs3ygRM4wHA)
-+ [02:25 Aula #8d - Descobrir os dias em C](https://youtu.be/38rowYJTz_U)
-+ [04:28 Aula #8e - git commit + git push](https://youtu.be/IlXhDGVKRSU)
++ [05:53 &#124; Aula 01 &#124; Introdução ao módulo 8](https://youtu.be/rWJOTcBX9-o)
++ [05:15 &#124; Aula 02 &#124; Descobrir os dias em Python](https://youtu.be/eeDw18uIExQ)
++ [02:04 &#124; Aula 03 &#124; Descobrir os dias em Node (JavaScript)](https://youtu.be/fs3ygRM4wHA)
++ [02:25 &#124; Aula 04 &#124; Descobrir os dias em C](https://youtu.be/38rowYJTz_U)
++ [04:28 &#124; Aula 05 &#124; git commit + git push](https://youtu.be/IlXhDGVKRSU)
 
 
 __Módulo #09:__
 
-+ [02:10 Aula #9a - Introdução](https://youtu.be/hbRpsIztPL8)
-+ [02:40 Aula #9b - Operações Aritméticas em Python](https://youtu.be/Sgy6VlavxQw)
-+ [02:19 Aula #9c - Operações Aritméticas em Node](https://youtu.be/hz-Js_zoFeQ)
-+ [02:35 Aula #9d - Operações Aritméticas em C](https://youtu.be/AAil6y5n0Q0)
++ [02:10 &#124; Aula 01 &#124; Introdução](https://youtu.be/hbRpsIztPL8)
++ [02:40 &#124; Aula 02 &#124; Operações Aritméticas em Python](https://youtu.be/Sgy6VlavxQw)
++ [02:19 &#124; Aula 03 &#124; Operações Aritméticas em Node](https://youtu.be/hz-Js_zoFeQ)
++ [02:35 &#124; Aula 04 &#124; Operações Aritméticas em C](https://youtu.be/AAil6y5n0Q0)
 
 
 __Módulo #10:__
 
-+ [03:05 Aula #10a Introdução](https://youtu.be/iT57IjW1VfY)
-+ [02:06 Aula #10b - Custo de um carro (passo 1)](https://youtu.be/vxSavEbacFE)
-+ [02:16 Aula #10c - Custo de um carro (passo 2)](https://youtu.be/NoXGWVmt6w4)
-+ [01:56 Aula #10d - Custo de um carro (passo 3)](https://youtu.be/nAVlUE_bn0U)
-+ [02:10 Aula #10e - Custo de um carro (passo 4)](https://youtu.be/eR8LQgcktag)
-+ [01:38 Aula #10f - Comentários](https://youtu.be/qmu-9OqQ4sI)
-+ [07:29 AO VIVO &#124; Curso de Lógica + Testes](https://youtu.be/4niqahLO4nk)
++ [03:05 &#124; Aula 01 Introdução](https://youtu.be/iT57IjW1VfY)
++ [02:06 &#124; Aula 02 &#124; Custo de um carro (passo 1)](https://youtu.be/vxSavEbacFE)
++ [02:16 &#124; Aula 03 &#124; Custo de um carro (passo 2)](https://youtu.be/NoXGWVmt6w4)
++ [01:56 &#124; Aula 04 &#124; Custo de um carro (passo 3)](https://youtu.be/nAVlUE_bn0U)
++ [02:10 &#124; Aula 05 &#124; Custo de um carro (passo 4)](https://youtu.be/eR8LQgcktag)
++ [01:38 &#124; Aula 06 &#124; Comentários](https://youtu.be/qmu-9OqQ4sI)
++ [07:29 &#124; AO VIVO &#124; Curso de Lógica + Testes](https://youtu.be/4niqahLO4nk)
 
 
 __Módulo #11:__
 
-+ [06:31 Aula #11a - Revisando o GitHub](https://youtu.be/dkVyubASmMw)
-+ [04:48 Aula #11b - Juros Simples](https://youtu.be/OepIEvKrBMk)
-+ [03:08 Aula #11c - Reajustando o Salário](https://youtu.be/rT1K6Bwpnl8)
-+ [08:27 Aula #11d - Comitando no GitHub](https://youtu.be/zxDpjKgQI1g)
++ [06:31 &#124; Aula 01 &#124; Revisando o GitHub](https://youtu.be/dkVyubASmMw)
++ [04:48 &#124; Aula 02 &#124; Juros Simples](https://youtu.be/OepIEvKrBMk)
++ [03:08 &#124; Aula 03 &#124; Reajustando o Salário](https://youtu.be/rT1K6Bwpnl8)
++ [08:27 &#124; Aula 04 &#124; Comitando no GitHub](https://youtu.be/zxDpjKgQI1g)
 
 
 __Módulo #12:__
 
-+ [04:22 Aula #12a - Par ou Ímpar](https://youtu.be/zqo-GvxbVQg)
-+ [02:47 Aula #12b - Positivo ou Negativo](https://youtu.be/llCbIfBFU3A)
-+ [02:50 Aula #12c - Maior ou Menor que 10](https://youtu.be/OmAbfIa7IfI)
-+ [03:53 Aula #12d - Celsius e Fahrenheit](https://youtu.be/8N4LedUPqyY)
-+ [03:53 Aula #12e - Equação do 2 grau](https://youtu.be/Kg7D6Z-Kpq4)
-+ [05:54 Aula #12f - Commitando no GitHub](https://youtu.be/iVQ4yz3iES8)
++ [04:22 &#124; Aula 01 &#124; Par ou Ímpar](https://youtu.be/zqo-GvxbVQg)
++ [02:47 &#124; Aula 02 &#124; Positivo ou Negativo](https://youtu.be/llCbIfBFU3A)
++ [02:50 &#124; Aula 03 &#124; Maior ou Menor que 10](https://youtu.be/OmAbfIa7IfI)
++ [03:53 &#124; Aula 04 &#124; Celsius e Fahrenheit](https://youtu.be/8N4LedUPqyY)
++ [03:53 &#124; Aula 05 &#124; Equação do 2 grau](https://youtu.be/Kg7D6Z-Kpq4)
++ [05:54 &#124; Aula 06 &#124; Commitando no GitHub](https://youtu.be/iVQ4yz3iES8)
 
 
 __Módulo #13:__
 
-+ [07:34 Aula #13a - Números Primos](https://youtu.be/LWdR-6JWR0o)
-+ [02:22 Aula #13b - Somar Dígitos](https://youtu.be/e2gFNzUUdnk)
-+ [02:06 Aula #13c - Calculando o MDC](https://youtu.be/lRg8adJf13Q)
-+ [01:27 Aula #13d - Calculando o MMC](https://youtu.be/RwlVgRWxVhI)
++ [07:34 &#124; Aula 01 &#124; Números Primos](https://youtu.be/LWdR-6JWR0o)
++ [02:22 &#124; Aula 02 &#124; Somar Dígitos](https://youtu.be/e2gFNzUUdnk)
++ [02:06 &#124; Aula 03 &#124; Calculando o MDC](https://youtu.be/lRg8adJf13Q)
++ [01:27 &#124; Aula 04 &#124; Calculando o MMC](https://youtu.be/RwlVgRWxVhI)
 
 
 __Módulo #14:__
 
-+ [07:42 Aula #14a - Algoritmo para carregar vetor](https://youtu.be/xrC2BRFEzI4)
-+ [05:54 Aula #14b - Algoritmo para somar vetor](https://youtu.be/aBysSOQdL2k)
-+ [09:31 Aula #14c - Algoritmo para copiar um vetor](https://youtu.be/J7uf_rCHvDI)
-+ [04:00 Aula #14d - Maior e menor índice do vetor](https://youtu.be/J3nBdKtXdEE)
-+ [11:23 Aula #14e - Valores repetidos em vetor](https://youtu.be/_fO3TV4q7jU)
++ [07:42 &#124; Aula 01 &#124; Algoritmo para carregar vetor](https://youtu.be/xrC2BRFEzI4)
++ [05:54 &#124; Aula 02 &#124; Algoritmo para somar vetor](https://youtu.be/aBysSOQdL2k)
++ [09:31 &#124; Aula 03 &#124; Algoritmo para copiar um vetor](https://youtu.be/J7uf_rCHvDI)
++ [04:00 &#124; Aula 04 &#124; Maior e menor índice do vetor](https://youtu.be/J3nBdKtXdEE)
++ [11:23 &#124; Aula 05 &#124; Valores repetidos em vetor](https://youtu.be/_fO3TV4q7jU)
 
 
 __Módulo #15:__
 
-+ [07:36 Aula #15a - Contar a quantidade de caracteres](https://youtu.be/FfgizKwmGeE)
-+ [02:55 Aula #15b - Contar a quantidade de vogais](https://youtu.be/GDLXhYbN50w)
-+ [02:49 Aula #15c - Comparar duas strings](https://youtu.be/0qjDromTTy4)
-+ [05:52 Aula #15d - Concatenar duas strings](https://youtu.be/84yqQSmkOwU)
-+ [04:53 Aula #15e - Inverter uma string](https://youtu.be/z2-yLaTUWr4)
++ [07:36 &#124; Aula 01 &#124; Contar a quantidade de caracteres](https://youtu.be/FfgizKwmGeE)
++ [02:55 &#124; Aula 02 &#124; Contar a quantidade de vogais](https://youtu.be/GDLXhYbN50w)
++ [02:49 &#124; Aula 03 &#124; Comparar duas strings](https://youtu.be/0qjDromTTy4)
++ [05:52 &#124; Aula 04 &#124; Concatenar duas strings](https://youtu.be/84yqQSmkOwU)
++ [04:53 &#124; Aula 05 &#124; Inverter uma string](https://youtu.be/z2-yLaTUWr4)
 
 
 __Módulo #16:__
 
-+ [05:53 Aula #16a - Programação Orientada a Objetos](https://youtu.be/5tk6ZHFnXws)
-+ [15:04 Aula #16b - Programação Orientada a Objetos (o dobro)](https://youtu.be/fcfeUDu_43c)
-+ [05:36 Aula #16c - Programação Orientada a Objetos (área)](https://youtu.be/fkjXWrLgniQ)
-+ [05:24 Aula #16d - Programação Orientada a Objetos (antecessor)](https://youtu.be/ZxAHPKIKxKc)
-+ [08:43 Aula #16e - Programação Orientada a Objetos (juros)](https://youtu.be/fkJyYbaaD2g)
-+ [06:39 Aula #16f - Programação Orientada a Objetos (votos)](https://youtu.be/MxleeTzAMLY)
-+ [07:43 Aula #16g - Programação Orientada a Objetos (triângulo)](https://youtu.be/hXOzQ0TCrD0)
++ [05:53 &#124; Aula 01 &#124; Programação Orientada a Objetos](https://youtu.be/5tk6ZHFnXws)
++ [15:04 &#124; Aula 02 &#124; Programação Orientada a Objetos (o dobro)](https://youtu.be/fcfeUDu_43c)
++ [05:36 &#124; Aula 03 &#124; Programação Orientada a Objetos (área)](https://youtu.be/fkjXWrLgniQ)
++ [05:24 &#124; Aula 04 &#124; Programação Orientada a Objetos (antecessor)](https://youtu.be/ZxAHPKIKxKc)
++ [08:43 &#124; Aula 05 &#124; Programação Orientada a Objetos (juros)](https://youtu.be/fkJyYbaaD2g)
++ [06:39 &#124; Aula 06 &#124; Programação Orientada a Objetos (votos)](https://youtu.be/MxleeTzAMLY)
++ [07:43 &#124; Aula 07 &#124; Programação Orientada a Objetos (triângulo)](https://youtu.be/hXOzQ0TCrD0)
 
 
-__Aulas bônus__
+__Módulo bônus sobre GitHub__
 
-+ [18:50 Brincando com o GiHub 01](https://youtu.be/LBn5VVRxn-Q)
-+ [15:17 Brincando com o GiHub 02](https://youtu.be/1qzIV8fprhM)
++ [18:50 &#124; Brincando com o GiHub 01](https://youtu.be/LBn5VVRxn-Q)
++ [15:17 &#124; Brincando com o GiHub 02](https://youtu.be/1qzIV8fprhM)
 
 
 __Módulo #17:__
 
-+ [13:49 Aula #17a - Recursividade em C, Python e JavaScript](https://youtu.be/lDQZrhrCK_4)
-+ [07:33 Aula #17b - Somando números (recursivo)](https://youtu.be/xTM9hGPudo8)
-+ [04:05 Aula #17c - Fatorial (recursividade)](https://youtu.be/Hvtl_UycWrg)
-+ [14:56 Aula #17d - Sequencia de Fibonacci  (recursividade)](https://youtu.be/QbGLVG1khSs)
++ [13:49 &#124; Aula 01 &#124; Recursividade em C, Python e JavaScript](https://youtu.be/lDQZrhrCK_4)
++ [07:33 &#124; Aula 02 &#124; Somando números (recursivo)](https://youtu.be/xTM9hGPudo8)
++ [04:05 &#124; Aula 03 &#124; Fatorial (recursividade)](https://youtu.be/Hvtl_UycWrg)
++ [14:56 &#124; Aula 04 &#124; Sequencia de Fibonacci  (recursividade)](https://youtu.be/QbGLVG1khSs)
 
 
 __Aulas bônus__
@@ -201,25 +201,25 @@ __Aulas bônus__
 
 __Módulo #18:__
 
-+ [11:46 Aula #18a - Introdução ao algoritmo bubble sort](https://youtu.be/NBLpc6KR2Fo)
-+ [06:26 Aula #18b - Primeiro exemplo bubble sort](https://youtu.be/_gCzxCOb-n8)
-+ [02:31 Aula #18c - Segundo exemplo bubble sort](https://youtu.be/hgEaro0IBqM)
-+ [03:21 Aula #18d - Terceiro exemplo bubble sort](https://youtu.be/8wYJBYWl5Qo)
-+ [05:58 Aula #18e - Quarto exemplo bubble sort](https://youtu.be/_QHQYh9Dp6c)
-+ [11:42 Aula #18f - Exemplo insertion sort](https://youtu.be/2cEDLrozFm4)
++ [11:46 &#124; Aula 01 &#124; Introdução ao algoritmo bubble sort](https://youtu.be/NBLpc6KR2Fo)
++ [06:26 &#124; Aula 02 &#124; Primeiro exemplo bubble sort](https://youtu.be/_gCzxCOb-n8)
++ [02:31 &#124; Aula 03 &#124; Segundo exemplo bubble sort](https://youtu.be/hgEaro0IBqM)
++ [03:21 &#124; Aula 04 &#124; Terceiro exemplo bubble sort](https://youtu.be/8wYJBYWl5Qo)
++ [05:58 &#124; Aula 05 &#124; Quarto exemplo bubble sort](https://youtu.be/_QHQYh9Dp6c)
++ [11:42 &#124; Aula 06 &#124; Exemplo insertion sort](https://youtu.be/2cEDLrozFm4)
 
 
 __Módulo #19:__
 
-+ [16:52 Aula #19a  - Ponteiros na Linguagem C](https://youtu.be/XEQ9HWuckzY)
-+ [08:48 Aula #19b - O básico sobre ponteiros (Linguagem C)](https://youtu.be/TT-dWLq9spg)
++ [16:52 &#124; Aula 01 &#124; Ponteiros na Linguagem C](https://youtu.be/XEQ9HWuckzY)
++ [08:48 &#124; Aula 02 &#124; O básico sobre ponteiros (Linguagem C)](https://youtu.be/TT-dWLq9spg)
 
 
 __Módulo #20:__
 
-+ [06:09 Aula #20a - Apresentando o Projeto Euler](https://youtu.be/Wzjm15vitGU)
-+ [12:19 Aula #20b  - Primeiro Problema do Projeto Euler](https://youtu.be/Xe9zs81OiTk)
-+ [10:20 Aula #20c - Estamos quase lá!!!](https://youtu.be/RMWM10gb6sE)
++ [06:09 &#124; Aula 01 &#124; Apresentando o Projeto Euler](https://youtu.be/Wzjm15vitGU)
++ [12:19 &#124; Aula 02 &#124; Primeiro Problema do Projeto Euler](https://youtu.be/Xe9zs81OiTk)
++ [10:20 &#124; Aula 02 &#124; Estamos quase lá!!!](https://youtu.be/RMWM10gb6sE)
 
 
 
