@@ -115,8 +115,8 @@ Caso você recebe o erro `400 Page Not Found`, certifique-se de que tenho acessa
 
 Caso você receba o erro `500 Internal Server Error` poderá consultar os arquivos de log do Apache.
 
-No Ubuntu, o arquivo encontra-se no seguinte local `var/log/apache2/error.log` você poderá abrí-lo em um editor de texto qualquer ou ainda
-visualizar pelo terminal através do utilitário [cat](/linux/utilitario-cat/) dessa forma...
+No Ubuntu, o arquivo encontra-se no seguinte local `var/log/apache2/error.log` você poderá abrí-lo em um editor de texto
+qualquer ou ainda visualizar pelo terminal através do utilitário [cat](/linux/utilitario-cat/) dessa forma...
 
     cat var/log/apache2/error.log
 
