@@ -1,0 +1,12 @@
+<!-- {{ dump(page.uri_arr) }} -->
+
+<ol class="breadcrumb navbar-static-top">
+    {% if page.uri_arr | length == 2 %}
+        <li><a href="/">devfuria.com.br</a></li>
+        <li class="active">{{ page.uri_arr[0] }}</li>
+    {% else %}
+        <li><a href="/">devfuria.com.br</a></li>
+        <li><a href="../">{{ page.uri_arr[0] }}</a></li>
+        <li class="active">{{ page.uri_arr[1] }}</li>
+    {% endif %}
+</ol>
