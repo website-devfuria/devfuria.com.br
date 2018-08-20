@@ -1,0 +1,39 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    {% include 'includes/header.html' %}
+
+    {% include 'boots3/css.html' %}
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {% include 'includes/bread-crumb.html' %}
+        </div>
+      </div>
+    </div>
+
+    <article class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h1>{{ page.title ? page.title }} <br /><small>{{ page.description ? page.description }}</small></h1>
+          </div>
+            {{ content | raw }}
+        </div>
+      </div>
+    </article>
+
+    <hr />
+
+    {% include 'includes/disqus.html' %}
+
+    {% include 'includes/footer.html' %}
+    {% include 'includes/footer-js.html' %}
+
+{% endblock %}
