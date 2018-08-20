@@ -15,5 +15,7 @@ class Site {
     public $enable_analytics = false;
     public $enable_disqus    = false;
 
+
+
 }
 
