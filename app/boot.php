@@ -37,25 +37,34 @@ session_start();
 # site
 #
 $site = new Site();
+$site->title  = "devfuria";
+$site->author = "Flaǘio Micheletti";
 
 #
 # slim
 #
+
 $config = ['settings' => [
     'addContentLengthHeader' => false,
     'displayErrorDetails'    => true,
 ]];
+
 $slim = new \Slim\App($config);
+
+$container = $slim->getContainer();
+
 
 
 #
 # path
 #
 $site->path = array();
-$site->path['/']         = dirname(dirname(__FILE__));       # caminho absoluto
-$site->path['logs/']     = dirname(__FILE__) . "/logs/";     # dominio.com/logs/
-$site->path['includes/'] = dirname(__FILE__) . "/includes/"; # dominio.com/includes/
-$site->path['api/']      = dirname(dirname(dirname(__FILE__))) . "/devfuria.subs/api"; #
+$site->path['/']         = dirname(dirname(__FILE__));
+$site->path['app/']      = $site->path['/'] . "/app";
+$site->path['logs/']     = $site->path['app/'] . "/logs";
+$site->path['includes/'] = $site->path['app/'] . "/includes";
+$site->path['api/']      = dirname($site->path['/']) . "/devfuria.subs/api";
+// var_dump($site->path);
 
 // if(file_exists($site->path['api/'])) {
 //     die('ok');
@@ -64,7 +73,13 @@ $site->path['api/']      = dirname(dirname(dirname(__FILE__))) . "/devfuria.subs
 #
 # url
 #
+$site->url = array();
+
+# subititue `bas_url()`
+$site->url['base']          = $container->get('request')->getUri()->getBasePath();
+
 $site->url['mailing-list/'] = "/app/mailing-list.php";
+// var_dump($site->url);
 
 
 #
@@ -93,16 +108,8 @@ if (isset($_SERVER["SERVER_ADDR"])) {
 #
 $site->emails = ["sitedevfuria@gmail.com"];
 
-#
-# Representa uma página
-#
-$page = new Page();
 
 
-
-
-// Get container
-$container = $slim->getContainer();
 
 // Register component on container
 $container['view'] = function ($container) {
@@ -115,7 +122,8 @@ $container['view'] = function ($container) {
     #
     # base_url()
     #
-    $basePath = rtrim(str_ireplace('index.php', '', $container->get('request')->getUri()->getBasePath()), '/');
+    $site = $GLOBALS['site'];
+    $basePath = rtrim(str_ireplace('index.php', "", $site->url['base']));
     $view->addExtension(new Slim\Views\TwigExtension($container->get('router'), $basePath));
 
     #
