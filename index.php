@@ -1,11 +1,9 @@
 <?php
 
-
 #
 #
 #
 require dirname(__FILE__) . '/app/boot.php';
-
 
 
 
@@ -25,42 +23,34 @@ $slim->get('/foo', function ($request, $response, $args) {
     return $response->write('acessou /foo');
     // return $this->view->fetchFromString('');
 
-
 });
+
+
 
 #
 # /{paginas}
 #
 $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
 
-    $md = file_get_contents('python/index.md');
-     // var_dump($md); die();
+    $site = $GLOBALS['site'];
+    // var_dump($site); die();
 
-    $parser   = new \Mni\FrontYAML\Parser();
-    // var_dump($parser); die();
+    // $page = new Page('/python/index.md');
+    $page = new Page('/python/sintaxe-basica/index.md');
+    // var_dump($page); die();
 
-    $document = $parser->parse($md);
-    // var_dump($document); die();
+    $page->uri_str = $args['uri'];
+    $page->uri_arr = explode('/', $page->uri_str);
+    // var_dump($page); die();
 
-    $front    = $document->getYAML();
-    // var_dump($front); die();
-
-    $content  = $document->getContent();
-    // var_dump($content); die();
-    // echo $content;
-
-    $content_parsed = $this->view->fetchFromString($content, ['abc' => 123]);
+    $content_parsed = $this->view->fetchFromString($page->content, ['abc' => 123]);
     // var_dump($content_parsed); die();
 
-// var_dump('1',$_SESSION);
-
-
-    return $this->view->render($response, 'artigo.html', ["content"  => $content_parsed ]);
-
+    // return $this->view->render($response, 'layouts/artigo.html', ['site' => $site, 'page' => $page, "content"  => $content_parsed]);
+    return $this->view->render($response, 'layouts/artigo+toc.html', ['site' => $site, 'page' => $page, "content"  => $content_parsed]);
 
     // return $response->write('páginas');
 });
-
 
 #
 # start slim
