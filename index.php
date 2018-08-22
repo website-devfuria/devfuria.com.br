@@ -61,6 +61,7 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
         // $layout = 'layouts/basico2.html';
         // $layout = 'layouts/basico3.html';
         // $layout = 'layouts/basico4.html';
+        $layout = 'layouts/cursos.html';
         // $layout = 'layouts/artigo+toc.html';
         // $layout = 'layouts/artigo.html';
         // $layout = 'layouts/home.html';
