@@ -14,12 +14,11 @@ error_reporting(E_ALL);
 #
 # dependências
 #
-require dirname(__FILE__) . '/vendor/autoload.php';
-require dirname(__FILE__) . '/oop/Site.php';
-require dirname(__FILE__) . '/oop/Page.php';
-require dirname(__FILE__) . '/menu.php';
-require dirname(__FILE__) . '/carregar.php';
-require dirname(__FILE__) . '/redirecionar.php';
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . "/our-autoload.php";
+require __DIR__ . '/menu.php';
+require __DIR__ . '/carregar.php';
+require __DIR__ . '/redirecionar.php';
 
 
 #
@@ -36,7 +35,7 @@ session_start();
 #
 # site
 #
-$site = new Site();
+$site = new \oop\Site();
 $site->title  = "devfuria";
 $site->author = "Flaǘio Micheletti";
 
@@ -58,28 +57,29 @@ $container = $slim->getContainer();
 #
 # path
 #
-$site->path = array();
-$site->path['/']         = dirname(dirname(__FILE__));
-$site->path['app/']      = $site->path['/'] . "/app";
-$site->path['logs/']     = $site->path['app/'] . "/logs";
-$site->path['includes/'] = $site->path['app/'] . "/includes";
-$site->path['api/']      = dirname($site->path['/']) . "/devfuria.subs/api";
-// var_dump($site->path);
+$site->path = new oop\Path;
+$site->path->base     = dirname(__DIR__);
+$site->path->app      = $site->path->base . "/app";
+$site->path->logs     = $site->path->app . "/logs";
+$site->path->includes = $site->path->app . "/templates/includes";
+$site->path->api      = dirname($site->path->base) . "/devfuria.subs/api";
+// var_dump($site->path); die();
 
-// if(file_exists($site->path['api/'])) {
+// if(file_exists($site->path->api)) {
 //     die('ok');
 // }
 
 #
 # url
 #
-$site->url = array();
+$site->url = new oop\Url();
 
-# subititue `bas_url()`
-$site->url['base']          = $container->get('request')->getUri()->getBasePath();
+# substitue `bas_url()`
+$site->url->base        = $container->get('request')->getUri()->getBasePath();
+$site->url->mailinglist = "/app/mailing-list.php";
+// var_dump($site->url); die();
 
-$site->url['mailing-list/'] = "/app/mailing-list.php";
-// var_dump($site->url);
+
 
 
 #
@@ -123,8 +123,7 @@ $container['view'] = function ($container) {
     # base_url()
     #
     $site = $GLOBALS['site'];
-    $basePath = rtrim(str_ireplace('index.php', "", $site->url['base']));
-    $view->addExtension(new Slim\Views\TwigExtension($container->get('router'), $basePath));
+    $view->addExtension(new Slim\Views\TwigExtension($container->get('router'), $site->url->base));
 
     #
     # objeto pagina
