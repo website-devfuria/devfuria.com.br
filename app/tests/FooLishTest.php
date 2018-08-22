@@ -1,6 +1,5 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
 require_once dirname(__FILE__) . '/../boot.php';
 
 
@@ -27,7 +26,7 @@ class FooLishTest extends PHPUnit\Framework\TestCase {
         $path = dirname(dirname(dirname(__FILE__)));
         // print_r($path);
 
-        $this->assertEquals($this->site->path['/'], $path);
+        $this->assertEquals($this->site->path->base, $path);
 
     }
 

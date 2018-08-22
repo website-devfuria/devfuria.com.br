@@ -1,34 +1,32 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
-require_once dirname(__FILE__) . '/../boot.php';
+require_once __DIR__ . '/../boot.php';
 
+use oop\Page;
 
 #
 #
 #
 class FooLishTest extends PHPUnit\Framework\TestCase {
 
-    #
-    #
-    #
     public function testPageFabric() {
-        $page = new Page('/python/index.md');
 
-        $this->assertInstanceOf("Page", $page);
+        $page = Page::getPage("/python/");
 
+        $this->assertInstanceOf("oop\Page", $page);
+
+        $this->assertTrue(is_string($page->md));
         $this->assertTrue(is_string($page->title));
         $this->assertTrue(is_string($page->content));
 
     }
 
-    #
-    #
-    #
-    public function testRead() {
-        $p = new Page('/python/index.md');
-        $this->assertTrue(is_string($p->md));
-    }
 
+    public function testFoo() {
+
+        $page = Page::getPage("/python/");
+        $this->assertTrue($page->exist());
+
+    }
 
 }
