@@ -4,8 +4,6 @@ title:       Python
 description: Aprenda a programar em Python com esse curso grátis online de forma descomplicada.
 ---
 
-{{ abc }}
-
 Bem vindo ao Curso Online Grátis de Python!
 
 Ele é um tutorial que vái do básico ao intermediário em Python.
