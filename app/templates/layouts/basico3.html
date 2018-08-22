@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ base_url() }}/app/templates/basico3/highlight.css" >
+        <link rel="stylesheet" href="{{ base_url() }}/app/templates/basico3/index.css" >
+    </head>
+    <body>
+        <h1>{{ page.title }}</h1>
+        <hr />
+        {{ content | raw }}
+    </body>
+</html>
+
