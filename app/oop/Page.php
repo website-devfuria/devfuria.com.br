@@ -1,5 +1,11 @@
 <?php
 
+namespace oop;
+
+use oop\File;
+use oop\Url;
+use oop\Path;
+
 #
 # Page
 #
@@ -8,20 +14,29 @@ class Page {
     #
     #
     #
-    function __construct($path_to_file_md) {
+    static function getPage($uri) {
+        return new Page(new File($uri, $GLOBALS['site']));
+    }
 
-        $this->md = $this->read($path_to_file_md);
+    #
+    #
+    #
+    function __construct($file) {
 
-        $parser   = new \Mni\FrontYAML\Parser();
+        $this->file = $file;
+
+        $this->md   = file_get_contents($this->file->path->base);
+
+        $parser     = new \Mni\FrontYAML\Parser();
         // var_dump($parser); die();
 
-        $document = $parser->parse($this->md);
+        $document   = $parser->parse($this->md);
         // var_dump($document); die();
 
-        $front    = $document->getYAML();
+        $front      = $document->getYAML();
         // var_dump($front); die();
 
-        $content  = $document->getContent();
+        $content    = $document->getContent();
         // var_dump($content); die();
         // echo $content;
 
@@ -44,11 +59,9 @@ class Page {
     #
     #
     #
-    function read($path_to_file_md) {
-        $site = $GLOBALS['site'];
-        return file_get_contents($site->path['/'] . $path_to_file_md);
+    function exist() {
+        return $this->file->exist();
     }
-
 
 }
 
