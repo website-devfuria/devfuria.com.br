@@ -17,8 +17,6 @@ error_reporting(E_ALL);
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . "/our-autoload.php";
 require __DIR__ . '/menu.php';
-require __DIR__ . '/carregar.php';
-require __DIR__ . '/redirecionar.php';
 
 
 #
@@ -62,6 +60,7 @@ $site->path->base     = dirname(__DIR__);
 $site->path->app      = $site->path->base . "/app";
 $site->path->logs     = $site->path->app . "/logs";
 $site->path->includes = $site->path->app . "/templates/includes";
+$site->path->layouts  = $site->path->app . "/templates/layouts";
 $site->path->api      = dirname($site->path->base) . "/devfuria.subs/api";
 // var_dump($site->path); die();
 

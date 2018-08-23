@@ -45,74 +45,53 @@ $slim->get('/foo', function ($request, $response, $args) {
 #
 $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
 
-    // $site = $GLOBALS['site'];
-    // var_dump($site); //die();
+    $site = $GLOBALS['site'];         // var_dump($site); //die();
+    $uri  = "/" . $args['uri'];       // var_dump($uri); die();
+    $page = oop\Page::getPage($uri);  // var_dump($page); die();
 
-    // $file = new oop\File($args['uri'], $site);
-    // var_dump($this); // die();
+    # se não existir...
+    if (!$page->exist()) {
 
-    // $page = new \oop\Page($file);
-    // var_dump($page->file); die();
+        # ... tenta redirecionar
+        $redirect = new oop\Redirect($uri);                    // var_dump($uri, $redirect->new_destination); die();
+        $page = oop\Page::getPage($redirect->new_destination); // var_dump($page->exist()); die();
 
-    $uri = "/" . $args['uri'];
-    // var_dump($uri); die();
+        # se nem tem redirecionamneto...
+        if (!$page->exist()) {
 
-    $page = oop\Page::getPage($uri);
-    // var_dump($page); die();
-
-    if ($page->exist()) {
-        // $layout = 'layouts/basico1.html';
-        // $layout = 'layouts/basico2.html';
-        // $layout = 'layouts/basico3.html';
-        // $layout = 'layouts/basico4.html';
-        // $layout = 'layouts/cursos.html';
-        // $layout = 'layouts/artigo+toc.html';
-        // $layout = 'layouts/artigo.html';
-        // $layout = 'layouts/home.html';
-        // $layout = 'layouts/html-01.html';
-        // $layout = 'layouts/nulo.html';
-        // $layout = 'layouts/secao+toc.html';
-        // $layout = 'layouts/secao.html';
-
-        $content_parsed = $this->view->fetchFromString($page->content, ['abc' => 123]);
-        // var_dump($content_parsed); die();
-
-        return $this->view->render($response, $layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
-
-    } else {
-
-        $redirect = new oop\Redirect($uri);
-        // var_dump($uri, $redirect->new_destination); die();
-
-        $page = oop\Page::getPage($redirect->new_destination);
-        // var_dump($page->exist()); die();
-
-        if ($page->exist()) {
-            $target = $GLOBALS['site']->url->base . $redirect->new_destination;
-            var_dump($target); die();
-            // return $response->withRedirect($target, 301);
-
-        } else {
-
-            # se nenhum redirecionamento deu certo,
-            # então só nos resta isso..
-
-            $file = new oop\File('/', $GLOBALS['site']);
-            $file->path->base = $GLOBALS['site']->path->base . "/404.md";
-            // var_dump($file); die();
-
+            # ... erro 404
+            $file = new oop\File('/', $site);
+            $file->path->base = $site->path->base . "/404.md";
             $page = new oop\Page($file);
-            // var_dump($page); die();
 
-            oop\Logs::pagina_nao_encontrada($uri);
+            oop\Logs::pagina_nao_encontrada($uri); // log
 
             $content_parsed = $this->view->fetchFromString($page->content);
-            return $this->view->render($response, "layouts/" . $page->layout . ".html", ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
+            return $this->view->render($response, $site->getLayout($page->layout), [
+                'site'     => $site,
+                'page'     => $page,
+                "content"  => $content_parsed
+            ]);
         }
+
+        # Redirecionamento...
+        $target = $GLOBALS['site']->url->base . $redirect->new_destination;
+        var_dump($target); die();
+        // return $response->withRedirect($target, 301);
 
     }
 
-    die("o fim da picada: $uri");
+    #
+    # Carregar página
+    #
+    $content_parsed = $this->view->fetchFromString($page->content);
+    // var_dump($content_parsed); die();
+
+    return $this->view->render($response, $site->getLayout($page->layout), [
+        'site' => $site,
+        'page' => $page,
+        "content"  => $content_parsed
+    ]);
 
 });
 

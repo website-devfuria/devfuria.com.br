@@ -15,7 +15,7 @@ class Redirect {
 
         $uri = $this->acrescentar_barra_no_final($_uri);
 
-        $map = mapa();
+        $map = $this->mapa();
 
         # a uri solicitada está mapeada ?
         if (array_key_exists($uri, $map)) {
