@@ -21,7 +21,10 @@ class Site {
     #
     # Retorna o endereço do layout
     #
-    function getLayout($front_layout = "artigo+menu") {
+    function getLayout($front_layout) {
+
+        # layout padrão
+        $front_layout = ($front_layout) ? $front_layout : "artigo+menu";
 
         $site = $GLOBALS['site'];
 

@@ -11,6 +11,8 @@ use oop\Path;
 #
 class Page {
 
+    public $layout = null;
+
     #
     #
     #
