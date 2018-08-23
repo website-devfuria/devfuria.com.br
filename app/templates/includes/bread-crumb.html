@@ -2,11 +2,11 @@
 
 <ol class="breadcrumb navbar-static-top">
     {% if page.file.uri.arr | length == 2 %}
-        <li><a href="/">devfuria.com.br</a></li>
-        <li class="active">{{ page.file.uri.arr[0] }}</li>
+        <li><a href="{{ base_url() }}">devfuria.com.br</a></li>
+        <li class="active">{{ page.file.uri.arr[1] }}</li>
     {% else %}
         <li><a href="/">devfuria.com.br</a></li>
-        <li><a href="../">{{ page.file.uri.arr[0] }}</a></li>
-        <li class="active">{{ page.file.uri.arr[1] }}</li>
+        <li><a href="../">{{ page.file.uri.arr[1] }}</a></li>
+        <li class="active">{{ page.file.uri.arr[2] }}</li>
     {% endif %}
 </ol>
