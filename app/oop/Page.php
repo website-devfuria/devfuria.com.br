@@ -25,6 +25,10 @@ class Page {
 
         $this->file = $file;
 
+        if(!$this->file->exist()) {
+            return null;
+        }
+
         $this->md   = file_get_contents($this->file->path->base);
 
         $parser     = new \Mni\FrontYAML\Parser();

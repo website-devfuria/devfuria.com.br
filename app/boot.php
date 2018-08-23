@@ -37,7 +37,7 @@ session_start();
 #
 $site = new \oop\Site();
 $site->title  = "devfuria";
-$site->author = "Flaǘio Micheletti";
+$site->author = "Flávio Micheletti";
 
 #
 # slim

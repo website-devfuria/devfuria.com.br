@@ -13,10 +13,13 @@ $slim->get('/', function ($request, $response, $args) {
     // var_dump('/'); die();
     // return $response->write('acessou index');
 
+    // $site = $GLOBALS['site'];
+    // var_dump($site); //die();
+
     $page = oop\Page::getPage('/');
+    // var_dump($page->file); die();
     $layout = 'layouts/home.html';
     return $this->view->render($response, $layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
-
 });
 
 #
@@ -26,14 +29,15 @@ $slim->get('/foo', function ($request, $response, $args) {
     // var_dump('/foo'); die();
     // return $response->write('acessou /foo');
     // return $this->view->fetchFromString('');
-    $page = oop\Page::getPage('../home');
+
+    // $site = $GLOBALS['site'];
+    // var_dump($site); //die();
+
+    $page = oop\Page::getPage('/foo/');
+    // var_dump($page->file); die();
     $layout = 'layouts/home.html';
     return $this->view->render($response, $layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
-
-
-
 });
-
 
 
 #
@@ -48,9 +52,12 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
     // var_dump($this); // die();
 
     // $page = new \oop\Page($file);
-    // var_dump($page); die();
+    // var_dump($page->file); die();
 
-    $page = oop\Page::getPage($args['uri']);
+    $uri = "/" . $args['uri'];
+    // var_dump($uri); die();
+
+    $page = oop\Page::getPage($uri);
     // var_dump($page); die();
 
     if ($page->exist()) {
@@ -61,7 +68,7 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
         // $layout = 'layouts/basico2.html';
         // $layout = 'layouts/basico3.html';
         // $layout = 'layouts/basico4.html';
-        $layout = 'layouts/cursos.html';
+        // $layout = 'layouts/cursos.html';
         // $layout = 'layouts/artigo+toc.html';
         // $layout = 'layouts/artigo.html';
         // $layout = 'layouts/home.html';

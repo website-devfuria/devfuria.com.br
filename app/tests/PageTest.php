@@ -7,7 +7,7 @@ use oop\Page;
 #
 #
 #
-class FooLishTest extends PHPUnit\Framework\TestCase {
+class PageTest extends PHPUnit\Framework\TestCase {
 
     public function testPageFabric() {
 
