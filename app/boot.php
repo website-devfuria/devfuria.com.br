@@ -82,17 +82,17 @@ $site->url->mailinglist = "/app/mailing-list.php";
 
 
 
-#
-# usao principalmente para criar um namespace para os logs
-#
-if (isset($_SERVER["SERVER_ADDR"])) {
-    // pega o ip como nome da Site
-    $site->name = $_SERVER["SERVER_ADDR"];
-} else {
-    // nos testes cai aqui
-    $site->name = 'sem-nome';
-}
-//var_dump($site->name); die();
+// #
+// # usado principalmente para criar um namespace para os logs
+// #
+// if (isset($_SERVER["SERVER_ADDR"])) {
+//     // pega o ip como nome da Site
+//     $site->name = $_SERVER["SERVER_ADDR"];
+// } else {
+//     // nos testes cai aqui
+//     $site->name = 'sem-nome';
+// }
+// //var_dump($site->name); die();
 
 
 
