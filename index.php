@@ -76,8 +76,8 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
 
         # Redirecionamento...
         $target = $GLOBALS['site']->url->base . $redirect->new_destination;
-        var_dump($target); die();
-        // return $response->withRedirect($target, 301);
+        // var_dump($target); die();
+        return $response->withRedirect($target, 301);
 
     }
 
