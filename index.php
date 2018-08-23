@@ -95,18 +95,23 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
         } else {
             # se nenhum redirecionamento deu certo,
             # então só nos resta isso..
-            // Site::$slim->response->setStatus(404);
-            // require Site::$path['/'] . "/404.html";
+
+            $file = new oop\File('/', $GLOBALS['site']);
+            $file->path->base = $GLOBALS['site']->path->base . "/404.md";
+            // var_dump($file); die();
+
+            $page = new oop\Page($file);
+            // var_dump($page); die();
+
+            $content_parsed = $this->view->fetchFromString($page->content);
+            return $this->view->render($response, "layouts/" . $page->layout . ".html", ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
+
             // log_pagina_nao_encontrada($str_uri);
-
-            // return $response->write('página não existe');
-            // redirecionar($page->uri_str);
-
         }
 
     }
 
-    var_dump("algum problema: $uri"); die();
+    die("o fim da picada: $uri");
 
 });
 
