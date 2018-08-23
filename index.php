@@ -93,6 +93,7 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
             // return $response->withRedirect($target, 301);
 
         } else {
+
             # se nenhum redirecionamento deu certo,
             # então só nos resta isso..
 
@@ -103,10 +104,10 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
             $page = new oop\Page($file);
             // var_dump($page); die();
 
+            oop\Logs::pagina_nao_encontrada($uri);
+
             $content_parsed = $this->view->fetchFromString($page->content);
             return $this->view->render($response, "layouts/" . $page->layout . ".html", ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
-
-            // log_pagina_nao_encontrada($str_uri);
         }
 
     }
