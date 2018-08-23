@@ -138,7 +138,6 @@ function redirecionar_pelo_mapa($uri) {
     if (array_key_exists($uri, $map)) {
         $nova_url = $map[$uri];
         //var_dump($nova_url); die();
-        Site::$slim->redirect($nova_url, 301);
     }
 
 }
@@ -148,12 +147,14 @@ function redirecionar_pelo_mapa($uri) {
 #
 function mapa() {
     return array(
-        "/urls.php/"                  => "/",
+        "/urls.php/"                => "/",
         "/core/views/"              => "/",
         "/node_modules/.env/"       => "/",
         "/node_modules/"            => "/",
         "/foo/"                     => "/",
         "/fulia/"                   => "/",
+        "/furia/"                   => "/",
+        "/old/"                     => "/",
         "/fulia/index.php/"         => "/",
         "/google9a3a1fb0a47d86dd/"  => "/",
         "/vagrant.md/"              => "/",

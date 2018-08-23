@@ -9,8 +9,8 @@ use oop\Page;
 #
 class PageTest extends PHPUnit\Framework\TestCase {
 
-    public function testPageFabric() {
 
+    public function testPageFabric() {
         $page = Page::getPage("/python/");
 
         $this->assertInstanceOf("oop\Page", $page);
@@ -21,12 +21,12 @@ class PageTest extends PHPUnit\Framework\TestCase {
 
     }
 
-
+    #
+    # Se apagar a seção python/, esse teste irá falhar
+    #
     public function testFoo() {
-
         $page = Page::getPage("/python/");
         $this->assertTrue($page->exist());
-
     }
 
 }
