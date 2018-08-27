@@ -40,7 +40,7 @@ pela que se sentir mais a vontade e se especialize na que mais gostar, porém nu
 de mais informações procure entender as diferenças entre um programador __server-side__ e um __front-end__.
 
 
-### Afinal, o que é JavaScript?
+### Afinal, o que é JavaScript ?
 
 > "JavaScript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos,
 > baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de
@@ -89,7 +89,7 @@ a.sort() // A versão orientada a objetos de "sort(a)"
 
 
 
-### JavaScript é seguro?
+### JavaScript é seguro ?
 
 Vamos estender essa pergunta para: a linguagem de programação X é segura?
 
