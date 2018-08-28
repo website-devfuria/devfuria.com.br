@@ -28,7 +28,7 @@
         </div>
         <div class="col-md-3 hidden-xs">
           <p>Neste capítulo...</p>
-          <?php echo menu($page->front['capitulo']); ?>
+          {% include '/includes/menu.html' with {'menu': page.menu}  %}
           <p class="text-center">
             <a class="btn btn-default" href="../">Índice</a>
           </p>

@@ -13,7 +13,7 @@ class SiteTest extends PHPUnit\Framework\TestCase {
     public function testFoo() {
 
         $site = new Site();
-        $this->assertEquals('layouts/artigo+menu.html', $site->getLayout());
+        $this->assertEquals('layouts/artigo+menu.html', $site->getLayout('artigo+menu'));
 
     }
 

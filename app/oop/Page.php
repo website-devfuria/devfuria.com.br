@@ -17,7 +17,9 @@ class Page {
     #
     #
     static function getPage($uri) {
-        return new Page(new File($uri, $GLOBALS['site']));
+        $page = new Page(new File($uri, $GLOBALS['site']));
+        $page->secao = $page->file->uri->arr[1];
+        return $page;
     }
 
     #
@@ -68,6 +70,15 @@ class Page {
     function exist() {
         return $this->file->exist();
     }
+
+    // #
+    // #
+    // #
+    // function isSection() {
+    //     return  (count($this->file->uri->arr) == 3) ? true : false;
+    //     # também poderia ser: tem seção mas não tem capítulo
+    // }
+
 
 }
 

@@ -18,7 +18,7 @@ function menu($capitulo) {
 #
 #
 #
-function menu_secao($capitulo) {
+function qual_he_a_secao_do_capitulo($capitulo) {
 
     switch ($capitulo) {
 
@@ -153,7 +153,7 @@ function menu_secao($capitulo) {
 #
 #
 #
-function menu_arquivo($secao) {
+function caminho_completo_do_arquivo_de_menus($secao) {
     return Site::$path['/'] . "/$secao/menus.php";
 }
 
@@ -163,10 +163,10 @@ function menu_arquivo($secao) {
 function menu_dados($capitulo) {
 
     # descobrir a seção através do capítulo
-    $secao   = menu_secao($capitulo);
+    $secao   = qual_he_a_secao_do_capitulo($capitulo);
 
     # caminho completo do arquivo de menus da seção escolhida
-    $arquivo = menu_arquivo($secao);
+    $arquivo = caminho_completo_do_arquivo_de_menus($secao);
     require($arquivo);
 
     // var_dump($capitulo, $secao, $arquivo);                 # javascript-comecar, javascript, '[path]/javascript/menus.php'

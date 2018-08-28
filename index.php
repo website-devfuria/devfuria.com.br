@@ -40,10 +40,13 @@ $slim->get('/foo', function ($request, $response, $args) {
     return $this->view->render($response, $layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
 });
 
+
+
 #
 # /{paginas}
 #
 $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
+    // var_dump($args); die();
 
     $site = $GLOBALS['site'];         // var_dump($site); //die();
     $uri  = "/" . $args['uri'];       // var_dump($uri); die();
@@ -81,20 +84,34 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
 
     }
 
+    // var_dump($site->path->base);
+    // var_dump($page->isSection());
+    // var_dump($page->secao);
+    // var_dump($page->capitulo);
+    // die()
+
+    $secao = new oop\Section();
+    $secao->setMenus($site->path->base, $page->secao);
+    $page->menus = $secao->menus;
+
+    if (isset($page->capitulo)) {
+        $page->menu = $secao->getMenu($page->capitulo);
+    }
+    // var_dump($secao);die();
+
     #
     # Carregar página
     #
-    $content_parsed = $this->view->fetchFromString($page->content);
+    $content_parsed = $this->view->fetchFromString($page->content, ["page" => $page]);
     // var_dump($content_parsed); die();
 
     return $this->view->render($response, $site->getLayout($page->layout), [
-        'site' => $site,
-        'page' => $page,
+        "site" => $site,
+        "page" => $page,
         "content"  => $content_parsed
     ]);
 
 });
-
 
 
 
