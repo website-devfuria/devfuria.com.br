@@ -8,7 +8,7 @@ $menu = [];
 #
 $menu['backbone-intro'] = [
     "/backbone/introducao/"                => "Backbone Introdução",
-    "/backbone/views/"                     =>"Backbone Views",
+    "/backbone/views/"                     => "Backbone Views",
     "/backbone/views-templates/"           => "Backbone Views e Templates",
     "/backbone/views-eventos/"             => "Backbone Views e Eventos",
     "/backbone/views-exemplos/"            => "Um exemplo de visão (views) em Backbone",
@@ -37,3 +37,4 @@ $menu['backbone-exemplos'] = [
     "/backbone/exemplo-07/" =>"Backbone exemplo 07: Privilegiômetro"
 ];
 
+return $menu;

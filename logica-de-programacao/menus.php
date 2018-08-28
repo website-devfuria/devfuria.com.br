@@ -123,3 +123,5 @@ $menu['logica-nivel-9'] = [
     "/logica-de-programacao/project-euler-01/" => "Problema 01 do Projeto Euler"
 ];
 
+
+return $menu;

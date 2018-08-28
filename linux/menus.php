@@ -36,7 +36,7 @@ $menu['linux-instalando-php'] = [
     "/linux/instalando-php/"     => "Instalando o PHP  no Linux",
     "/linux/configurando-php/"   => "Configurando o PHP",
     "/linux/instalando-phpunit/" => "Instalando o PHPUnit no Linux",
-    "/linux/instalando-xdebug/"   => "Instalando o x-debug no Linux",
+    "/linux/instalando-xdebug/"  => "Instalando o x-debug no Linux",
 ];
 
 #
@@ -148,3 +148,5 @@ $menu['linux-virtualbox'] = [
     "/linux/vbox-headers-for-the-current-running-kernel-were-not-found/" => 'Resolvendo o erro "headers for the current running kernel were not found"',
     "/linux/net-registered-protocol-family-2/"         => 'Resolvendo o erro "NET Registered protocol family 2" no Virtual Box',
 ];
+
+return $menu;

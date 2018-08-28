@@ -22,3 +22,4 @@ $menu['sql-intro'] = [
     "/sql/mysql-crud-delete/"          => "CRUD - D de delete",
 ];
 
+return $menu;

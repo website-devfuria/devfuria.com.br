@@ -33,3 +33,24 @@ $menu['er-metacaracteres'] = [
     "/regex/metacaractere-retrorreferencia/" => "Metacaractere retrorreferência \\1 ... \9"
 ];
 
+#
+# lembra de mudar também na seção javascript
+#
+$menu['javascript-regex'] = [
+    "/javascript/pattern-test/" => "JavaScript  pattern.test()",
+    "/javascript/pattern-exec/" => "pattern.exec()",
+    "/javascript/string-match/" => "string.match()",
+    "/javascript/regexp/"       => "RegExp()",
+    "/javascript/referencia-pratica-sobre-a-opcao-global-g/" => "Referência prática sobre a opção global g (expressões regulares)",
+];
+
+#
+# lembra de mudar também na seção php
+#
+$menu['php-regex'] = [
+    "/php/o-basico-sobre-a-funcao-preg-match/"     => "O básico sobre a função preg match",
+    "/php/o-basico-sobre-a-funcao-preg-match-all/" => "O básico sobre a função preg_match_all",
+    "/php/referencia-da-funcao-preg-match-all/"    => "Referência da função preg_match_all"
+];
+
+return $menu;

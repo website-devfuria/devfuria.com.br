@@ -25,3 +25,5 @@ $menu['canvas-exemplos'] = [
     "/html-canvas/exemplo-retangulos-randomicos/" => "Exemplo - retângulos randômicos"
 
 ];
+
+return $menu;

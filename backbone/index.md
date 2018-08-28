@@ -14,36 +14,13 @@ A documentação do Backbone começa falando dos modelos (models), aí tudo quan
 também começa falando dos models. Eu resolvi fazer diferente, como as coisas acontecem primeiro nas Views acho mais
 prático começar por elas, então eu preparei este tutorial iniciando-se pelas Views.
 
-<div class="list-group">
-    <a href="/backbone/introducao/" class="list-group-item ">Backbone Introdução</a>
-    <a href="/backbone/views/" class="list-group-item ">Backbone Views</a>
-    <a href="/backbone/views-templates/" class="list-group-item ">Backbone Views e Templates</a>
-    <a href="/backbone/views-eventos/" class="list-group-item ">Backbone Views e Eventos</a>
-    <a href="/backbone/views-exemplos/" class="list-group-item ">Um exemplo de visão (views) em Backbone</a>
-    <a href="/backbone/models/" class="list-group-item ">Backbone Models</a>
-    <a href="/backbone/models-eventos/" class="list-group-item ">Backbone Models e Eventos</a>
-    <a href="/backbone/models-views/" class="list-group-item ">Backbone Unindo Models e Views</a>
-    <a href="/backbone/collections/" class="list-group-item ">Backbone Collections</a>
-    <a href="/backbone/collections-eventos/" class="list-group-item ">Backbone Collections e Eventos</a>
-    <a href="/backbone/collections-views/" class="list-group-item ">Backbone Unindo Collections e Views</a>
-    <a href="/backbone/sincronizando-models/" class="list-group-item ">Backbone Sincronizando um modelo (model)</a>
-    <a href="/backbone/sincronizando-collections/" class="list-group-item ">Backbone Sincronizando coleções (collections)</a>
-    <a href="/backbone/sync/" class="list-group-item ">Backbone Explorando o sync</a>
-    <a href="/backbone/router/" class="list-group-item ">Backbone Definindo rotas (router)</a>
-</div>
+
+{% include '/includes/menu.html' with {'menu': page.menus['backbone-intro']} %}
 
 Se você procura por [códigos de exemplo](https://github.com/devfuria/backbone-exemplos), eu separei no GitHub um
 repositório apenas com os códigos deste tutorial.
 
-<div class="list-group">
-    <a href="/backbone/exemplo-01/" class="list-group-item ">Backbone exemplo 01: Template e os eventos da Collection</a>
-    <a href="/backbone/exemplo-02/" class="list-group-item ">Backbone exemplo 02: Views aninhadas</a>
-    <a href="/backbone/exemplo-03/" class="list-group-item ">Backbone exemplo 03: templates e eventos de Modelos</a>
-    <a href="/backbone/exemplo-04/" class="list-group-item ">Backbone exemplo 04: Combobox</a>
-    <a href="/backbone/exemplo-05/" class="list-group-item ">Backbone exemplo 05: Duas visões e uma função de callback</a>
-    <a href="/backbone/exemplo-06/" class="list-group-item ">Backbone exemplo 06: checkbox + Bootstrap</a>
-    <a href="/backbone/exemplo-07/" class="list-group-item ">Backbone exemplo 07: Privilegiômetro</a>
-</div>
+{% include '/includes/menu.html' with {'menu': page.menus['backbone-exemplos']} %}
 
 
 Além deste tutorial...

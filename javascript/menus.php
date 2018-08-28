@@ -95,7 +95,7 @@ $menu['javascript-random'] = [
 ];
 
 #
-#
+# lembra de mudar também na seção regex
 #
 $menu['javascript-regex'] = [
     "/javascript/pattern-test/" => "JavaScript  pattern.test()",

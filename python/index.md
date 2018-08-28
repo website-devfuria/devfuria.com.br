@@ -45,17 +45,7 @@ Neste prímeiro capítulo é para responder a pergunta: Como começar a aprender
 
 Conheça o básico da sintaxe de Python através deste artigo [O básico da sintaxe de Python](./sintaxe-basica/).
 
-<div class="list-group">
-    <a href="{{ base_url() }}/python/strings/" class="list-group-item">O básico sobre strings</a>
-    <a href="{{ base_url() }}/python/saidas-output/" class="list-group-item">O básico sobre saídas (output)</a>
-    <a href="{{ base_url() }}/python/estruturas-condicionais/" class="list-group-item">O básico sobre estrutura condicionais</a>
-    <a href="{{ base_url() }}/python/lacos-de-repeticao/" class="list-group-item">O básico sobre laços de repetição</a>
-    <a href="{{ base_url() }}/python/functions/" class="list-group-item">O básico de funções</a>
-    <a href="{{ base_url() }}/python/listas/" class="list-group-item">O básico de listas</a>
-    <a href="{{ base_url() }}/python/dicionarios-dictionaries/" class="list-group-item">O básico sobre dicionários</a>
-    <a href="{{ base_url() }}/python/sequencias-fatiamento/" class="list-group-item">Operadores e fatiamento de sequências</a>
-    <a href="{{ base_url() }}/python/erros-excecoes/" class="list-group-item">Erros e exceções</a>
-</div>
+{% include '/includes/menu.html' with {'menu': page.menus['python-basico']} %}
 
 
 Lógica de programação (curso)
@@ -95,38 +85,12 @@ Após essa maratona de exercícios (acima), eu sugiro que você pratique os exer
 as funções até os testes passarem. Os exercícios, por serem mais elaborados, são mais próximos da realidade do
 desenvolvimento de software, eu apenas traduzi os  enunciados.
 
-<div class="list-group">
-    <a href="{{ base_url() }}/python/google-exercises-string1/" class="list-group-item ">Basic Python Exercises - strings 1</a>
-    <a href="{{ base_url() }}/python/google-exercises-string2/" class="list-group-item ">Basic Python Exercises - strings 2</a>
-    <a href="{{ base_url() }}/python/google-exercises-list1/" class="list-group-item ">Basic Python Exercises - list 1</a>
-    <a href="{{ base_url() }}/python/google-exercises-list2/" class="list-group-item ">Basic Python Exercises - list 2</a>
-    <a href="{{ base_url() }}/python/google-exercises-wordcount/" class="list-group-item ">Basic Python Exercises - word count</a>
-    <a href="{{ base_url() }}/python/google-exercises-hello-sys-argv/" class="list-group-item ">Basic Python Exercises - sys.argv</a>
-</div>
-
+{% include '/includes/menu.html' with {'menu': page.menus['python-google']} %}
 
 Artigos diversos
 ---
 
-<div class="list-group">
-    <a href="{{ base_url() }}/python/convertendo-listas/" class="list-group-item ">Convertendo listas em strings</a>
-    <a href="{{ base_url() }}/python/manipulando-arquivos-de-texto/" class="list-group-item ">Manipulando arquivos de texto em Python</a>
-    <a href="{{ base_url() }}/python/receitas-para-manipular-arquivos-de-texto/" class="list-group-item ">Receitas para manipular arquivos de texto em Python</a>
-    <a href="{{ base_url() }}/python/regex/" class="list-group-item ">Python - Expressões Regulares</a>
-    <a href="{{ base_url() }}/python/programacao-orientada-objetos/" class="list-group-item ">Programação Orientada a Objetos em Python</a>
-    <a href="{{ base_url() }}/python/tdd-primeiros-passos-com-testes-unitarios/" class="list-group-item ">Primeiros passos com testes unitários em Python</a>
-    <a href="{{ base_url() }}/python/codificacao-de-caracteres/" class="list-group-item ">Codificando caracteres no início do script Python</a>
-    <a href="{{ base_url() }}/python/entenda-__name__-__main__/" class="list-group-item ">Entenda o __name__ == "__main__"</a>
-    <a href="{{ base_url() }}/python/imports/" class="list-group-item ">Importando módulos no Python (imports)</a>
-    <a href="{{ base_url() }}/python/modulos-pacotes/" class="list-group-item ">Módulos e Pacotes em Python</a>
-    <a href="{{ base_url() }}/python/virtualenv/" class="list-group-item ">Virtualenv</a>
-    <a href="{{ base_url() }}/python/yield/" class="list-group-item ">Python - yield</a>
-    <a href="{{ base_url() }}/python/sys-argv/" class="list-group-item ">Python - sys.argv</a>
-    <a href="{{ base_url() }}/python/os/" class="list-group-item ">Python - os</a>
-    <a href="{{ base_url() }}/python/os-path/" class="list-group-item ">Python - os.path</a>
-    <a href="{{ base_url() }}/python/django-error-loading-mysqldb/" class="list-group-item ">Django Error loading MySQLdb module: No module named MySQLdb</a>
-</div>
-
+{% include '/includes/menu.html' with {'menu': page.menus['python-artigos']} %}
 
 
 Built in fuctions

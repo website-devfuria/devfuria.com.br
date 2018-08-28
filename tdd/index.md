@@ -35,11 +35,4 @@ Sequência de exemplos de TDD escritos nas linguagens Python.
 
 Todos os exemplos são muito fáceis de seguir, eles são indicados para os "iniciantes iniciando" em TDD.
 
-<div class="list-group">
-    <a href="/tdd/exemplo-tdd-dobro/" class="list-group-item ">Simples exemplo de TDD - O dobro de um número qualquer</a>
-    <a href="/tdd/exemplo-tdd-dobro-func/" class="list-group-item ">Simples exemplo de TDD - O dobro de um número qualquer (funções)</a>
-    <a href="/tdd/exemplo-tdd-dobro-oop/" class="list-group-item ">Simples exemplo de TDD - O dobro de um número qualquer (OOP)</a>
-    <a href="/tdd/exemplo-tdd-juros-simples/" class="list-group-item ">Simples exemplo de TDD - Juros simples</a>
-    <a href="/tdd/exemplo-tdd-area/" class="list-group-item ">Simples exemplo de TDD - Cálculo da área</a>
-    <a href="/tdd/exemplo-tdd-triangulo/" class="list-group-item ">Simples exemplo de TDD - Triângulo</a>
-</div>
+{% include '/includes/menu.html' with {'menu': page.menus['tdd-exemplos']} %}

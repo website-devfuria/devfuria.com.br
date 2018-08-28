@@ -146,3 +146,4 @@ $menu['html-formularios'] = [
     "/html-css-new/enviando-arquivos-input-type-file/" => "Enviando arquivos: input type file"
 ];
 
+return $menu;

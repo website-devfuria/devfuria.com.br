@@ -60,7 +60,7 @@ $menu['php-twig'] = [
 ];
 
 #
-#
+# lembra de mudar também na seção regex
 #
 $menu['php-regex'] = [
     "/php/o-basico-sobre-a-funcao-preg-match/"     => "O básico sobre a função preg match",
@@ -68,3 +68,4 @@ $menu['php-regex'] = [
     "/php/referencia-da-funcao-preg-match-all/"    => "Referência da função preg_match_all"
 ];
 
+return $menu;

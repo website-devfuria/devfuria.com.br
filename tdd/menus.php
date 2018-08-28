@@ -15,3 +15,4 @@ $menu['tdd-exemplos'] = [
     "/tdd/exemplo-tdd-triangulo/"     => "Simples exemplo de TDD - Triângulo"
 ];
 
+return $menu;

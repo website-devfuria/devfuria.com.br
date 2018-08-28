@@ -58,4 +58,4 @@ $menu['html-artigos'] = [
     "/html-css/elementos-inline-block-level/" => "Elementos in-line e elementos block-level"
 ];
 
-
+return $menu;

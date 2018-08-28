@@ -13,3 +13,4 @@ $menu['c-intro'] = [
     "/c/rodando-os-testes/"      => "'Rodando os testes'  ou 'compilando e executando',  socorro ?"
 ];
 
+return $menu;

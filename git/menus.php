@@ -21,3 +21,4 @@ $menu['git-artigos'] = [
     "/git/netrc-nao-pedir-senha/" => "Configurando o Git com o arquivo .netrc",
 ];
 
+return $menu;
