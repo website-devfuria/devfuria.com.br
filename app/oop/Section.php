@@ -11,7 +11,7 @@ class Section {
     #
     # os menus da seção
     #
-    function setMenus($path_base, $secao) {
+    function getMenus($path_base, $secao) {
         $caminho_completo_do_arquivo_de_menus = $path_base . "/$secao/menus.php";
 
         if (!file_exists($caminho_completo_do_arquivo_de_menus)) {
@@ -19,6 +19,7 @@ class Section {
         }
 
         $this->menus = require $caminho_completo_do_arquivo_de_menus;
+        return $this->menus;
     }
 
     #
@@ -27,7 +28,6 @@ class Section {
     function getMenu($capitulo) {
         return $this->menus[$capitulo];
     }
-
 
 }
 
