@@ -4,7 +4,6 @@ title:       JavaScript
 description: Tudo o que você precisa saber sobre JavaScript a partir do zero
 ---
 
-
 JavaScript (às vezes chamado apenas de JS) é uma linguagem de programação, leve, interpretada, orientada a objetos,
 baseada em protótipos e em funções de primeira classe.
 
@@ -15,42 +14,39 @@ Também poderá executá-lo do lado do servidor (__back end__) em linha de coman
 [Node.js](/node.js/).
 
 
-
-### O básico
+## O básico
 
 {% include '/includes/menu.html' with {'menu': page.menus['javascript-comecar']}  %}
 
-
-### Artigos
+## Artigos
 
 {% include '/includes/menu.html' with {'menu': page.menus['javascript-artigos']}  %}
 
-
-### Referência
+## Referência
 
 {% include '/includes/menu.html' with {'menu': page.menus['javascript-referencia']}  %}
 
-### Document Object Model
+## Document Object Model
 
 {% include '/includes/menu.html' with {'menu': page.menus['javascript-dom']}  %}
 
-### Ajax
+## Ajax
 
 {% include '/includes/menu.html' with {'menu': page.menus['javascript-ajax']}  %}
 
-### Formulários Web
+## Formulários Web
 
 Aprenda a trabalhar com cada controle de um formulário web.
 
 {% include '/includes/menu.html' with {'menu': page.menus['javascript-forms']}  %}
 
-### Números Aleatórios
+## Números Aleatórios
 
 Aprenda com esta série como trabalhar com números randômicos em JS.
 
 {% include '/includes/menu.html' with {'menu': page.menus['javascript-random']}  %}
 
-### Expressões Regulares
+## Expressões Regulares
 
 Em JavaScript temos 3 funções para tratarmos as [expressões regulares](/regex/): `test()`, `exec()` e `match()` e a
 função construtora `RegExp()`.
@@ -64,7 +60,7 @@ Veja também na seção sobre expressões regulares a matéria
 
 
 
-### Livros Sobre JavaScript
+## Livros Sobre JavaScript
 
 Para quem nunca viu JavaScript, aconselho o livro da dupla Kevin Yank e Cameron Adams __Simple JavaScript__.
 
@@ -78,6 +74,6 @@ Leia mais sobre [Livros sobre JavaScript](./livros-javascript/).
 
 
 
-### Site Oficial
+## Site Oficial
 
 - [Mozzila - JavaScript](https://developer.mozilla.org/en-US/learn/javascript )
