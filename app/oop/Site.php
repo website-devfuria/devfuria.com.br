@@ -36,20 +36,6 @@ class Site {
 
         return "layouts/$front_layout.html";
     }
-    // $layout = 'layouts/basico1.html';
-    // $layout = 'layouts/basico2.html';
-    // $layout = 'layouts/basico3.html';
-    // $layout = 'layouts/basico4.html';
-    // $layout = 'layouts/cursos.html';
-    // $layout = 'layouts/artigo+toc.html';
-    // $layout = 'layouts/artigo.html';
-    // $layout = 'layouts/home.html';
-    // $layout = 'layouts/html-01.html';
-    // $layout = 'layouts/nulo.html';
-    // $layout = 'layouts/secao+toc.html';
-    // $layout = 'layouts/secao.html';
-
-
 
 }
 
