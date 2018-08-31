@@ -91,13 +91,13 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
     // die()
 
     $secao = new oop\Section();
-    $secao->setMenus($site->path->base, $page->secao);
-    $page->menus = $secao->menus;
+    $page->menus = $secao->getMenus($site->path->base, $page->secao);
 
     if (isset($page->capitulo)) {
         $page->menu = $secao->getMenu($page->capitulo);
+        $page->setPrevAndNext();
     }
-    // var_dump($secao);die();
+    // var_dump($page->menu);die();
 
     #
     # Carregar página
