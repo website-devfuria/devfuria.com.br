@@ -22,12 +22,10 @@ class Logs {
     #
     function criar_arquivo() {
         $file = $this->site->path->logs . "/" . date("Y-m-d");
-
         if (!file_exists($file)) {
             $fp = fopen($file, "a");
             fclose($fp);
         }
-
         return $file;
     }
 
