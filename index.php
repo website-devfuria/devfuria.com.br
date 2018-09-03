@@ -17,9 +17,9 @@ $slim->get('/', function ($request, $response, $args) {
 
     $page = oop\Page::getPage('/');
     // var_dump($page->file); die();
-    $layout = 'layouts/home.html';
+    $page->layout = 'layouts/home.html';
     $content_parsed = $this->view->fetchFromString($page->content);
-    return $this->view->render($response, $layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
+    return $this->view->render($response, $page->layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
 });
 
 #
@@ -40,6 +40,10 @@ $slim->get('/foo', function ($request, $response, $args) {
     return $this->view->render($response, $layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
 });
 
+#
+# outras rotas
+#
+require("cursos/rotas.php");
 
 
 #
@@ -112,9 +116,6 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
     ]);
 
 });
-
-
-
 
 #
 # start slim
