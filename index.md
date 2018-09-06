@@ -58,7 +58,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                     <div class="pfblock-subtitle">Nossa exteeeeeensa lista de cursos (rsssss).</div>
                     <br />
                     <p>Estão aberta as matrículas para a 2 edição do curso de <strong>Lógica de Programação Aliada a Testes Unitários</strong>.</p>
-                    <p><a class="btn btn-primary" href="/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Eu quero!!!</a></p>
+                    <p><a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Eu quero!!!</a></p>
                 </div>
             </div>
         </div><!-- .row -->
