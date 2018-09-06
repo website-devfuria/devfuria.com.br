@@ -390,7 +390,7 @@ Com um currículo desses meu amigo, dúvido que você não encontra-rá um bom e
 
 Se inscreva para a próxima turma e não perca nenhuma novidade !!!!
 
-<a class="btn btn-primary" href="/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=index-do-curso" role="button">Próxima Turma!!!</a>
+<a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=index-do-curso" role="button">Próxima Turma!!!</a>
 
 <br />
 <br />

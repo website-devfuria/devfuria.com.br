@@ -39,25 +39,25 @@
             <br />
             <table class="table table-condensed">
                 <tr>
-                    <th style="width: 90%"><?php echo $modulo['titulo'] ?></th><th></th><th></th>
+                    <th style="width: 90%">{{ modulo.titulo }}</th><th></th><th></th>
                 </tr>
-                <?php foreach($modulo['videos'] as $video): ?>
-                    <tr class="<?php //echo $video->publico ? "active" : ""; ?>">
+                {% for video in modulo.videos %}
+                    <tr class="active">
                         <td>
-                            <a href="<?php echo $video->url ?>"
+                            <a href="{{ video.url }}"
                                 target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
                                 <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
                             </a>
-                            <?php echo ($video->novotitulo) ? $video->novotitulo : $video->titulo; ?>
+                            {{ video.novotitulo ? video.novotitulo : video.titulo }}
                         </td>
-                        <td class="text-center"><?php echo $video->duracao ?></td>
+                        <td class="text-center">{{ video.duracao  }}</td>
                         <td class="text-center">
                             <label>
-                                <input type="checkbox" <?php echo aula_assistida($video->id, $aluno) ? 'checked="checked"' : '' ?> name="" id="<?php echo $video->id ?>" />
+                                <input type="checkbox" {{ video.assistido  ? 'checked="checked"' }} name="" id="{{ video.id }}" />
                             </label>
                         </td>
                     </tr>
-                <?php endforeach; ?>
+                {% endfor %}
             </table>
 
         {% endfor %}
@@ -74,5 +74,30 @@
     {% include 'includes/footer-js.html' %}
 
     {% include 'clean/js.html' %}
+
+        <script type="text/javascript">
+            var aluno_id = {{ aluno.id  }};
+            var curso_id = {{ aluno.cursos_id }};
+
+            chks = document.querySelectorAll('[type="checkbox"]');
+            chks.forEach(function (element, index, array) {
+                //console.log();
+                var aula_id = element.id;
+                element.onclick = function () {
+                    if (element.checked) {
+                        var uri = "aluno=" + aluno_id + "&curso=" + curso_id + "&aula=" + aula_id + "&action=on";
+                        //console.log(uri);
+                    } else {
+                        var uri = "aluno=" + aluno_id + "&curso=" + curso_id + "&aula=" + aula_id + "&action=off";
+                        //console.log(uri);
+                    }
+
+                    $.get("/app/aulas-assistidas.php", uri, function( data ) {
+                        //console.log(data);
+                    });
+                };
+            });
+        </script>
+
 
 {% endblock %}
