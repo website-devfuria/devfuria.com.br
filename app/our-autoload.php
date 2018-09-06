@@ -7,7 +7,7 @@
 spl_autoload_register(null, false);
 spl_autoload_extensions('.php, .php');
 
-function classLoader($class) {
+function classLoaderSite($class) {
     $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
 
     $file = __DIR__ . DIRECTORY_SEPARATOR . $class . '.php';
@@ -17,4 +17,4 @@ function classLoader($class) {
     }
 }
 
-spl_autoload_register('classLoader');
+spl_autoload_register('classLoaderSite');
