@@ -28,7 +28,7 @@ date_default_timezone_set("America/Sao_Paulo");
 #
 # Session
 #
-// session_start();
+session_start();
 
 #
 # site

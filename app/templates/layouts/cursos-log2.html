@@ -85,14 +85,14 @@
                 var aula_id = element.id;
                 element.onclick = function () {
                     if (element.checked) {
-                        var uri = "aluno=" + aluno_id + "&curso=" + curso_id + "&aula=" + aula_id + "&action=on";
+                        var uri = "" + aluno_id + "/" + curso_id + "/" + aula_id + "/on";
                         //console.log(uri);
                     } else {
-                        var uri = "aluno=" + aluno_id + "&curso=" + curso_id + "&aula=" + aula_id + "&action=off";
+                        var uri = "" + aluno_id + "/" + curso_id + "/" + aula_id + "/off";
                         //console.log(uri);
                     }
 
-                    $.get("/app/aulas-assistidas.php", uri, function( data ) {
+                    $.get("{{ base_url() }}/cursos/aulas-assistidas/" + uri,  function( data ) {
                         //console.log(data);
                     });
                 };
