@@ -37,7 +37,7 @@ class Autenticador {
     #
     #
     static function get_aluno_by_hash($hash) {
-        require $GLOBALS['site']->path->api . '/boot.php';
+        // require $GLOBALS['site']->path->api . '/boot.php';
         return Alunos::fabric_by_hash($hash);
     }
 
