@@ -20,9 +20,11 @@
         <div class="intro">
             <h1>{{ page.title }} <br /><small>{{ page.description }}</small></h1>
             <div class="start"></div>
-            <p>Seja bem vindo(a) a sua plataforma EAD</p>
 
-            <p>{{ aluno.nome }}</p>
+            <p>Experimente gratuitamente e</p>
+            <p>tenha acesso a este conteúdo exclusivo !!!!</p>
+            <p><a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=index-do-ead" role="button">Efetuar matrícula</a></p>
+            <!-- <p>Se você é aluno, <a class="" href="login/" role="button">clique aqui</a></p> -->
         </div>
 
         <!-- Button -->
@@ -44,18 +46,26 @@
                 {% for video in modulo.videos %}
                     <tr class="">
                         <td>
-                            <a href="{{ video.url }}"
-                                target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
-                                <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
-                            </a>
+
+                            {% if video.publico %}
+                                <a href="{{ video.url }}"
+                                    target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                </a>
+                            {% else %}
+                                <a href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=experimente"
+                                    target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                </a>
+                            {% endif %}
+
                             {{ video.novotitulo ? video.novotitulo : video.titulo }}
+
+                            {% if video.publico %}
+                                <span class="label label-success">Experimente</span>
+                            {% endif %}
                         </td>
                         <td class="text-center">{{ video.duracao  }}</td>
-                        <td class="text-center">
-                            <label>
-                                <input type="checkbox" {{ video.assistido  ? 'checked="checked"' }} name="" id="{{ video.id }}" />
-                            </label>
-                        </td>
                     </tr>
                 {% endfor %}
             </table>
@@ -74,30 +84,5 @@
     {% include 'includes/footer-js.html' %}
 
     {% include 'clean/js.html' %}
-
-        <script type="text/javascript">
-            var aluno_id = {{ aluno.id  }};
-            var curso_id = {{ aluno.cursos_id }};
-
-            chks = document.querySelectorAll('[type="checkbox"]');
-            chks.forEach(function (element, index, array) {
-                //console.log();
-                var aula_id = element.id;
-                element.onclick = function () {
-                    if (element.checked) {
-                        var uri = "" + aluno_id + "/" + curso_id + "/" + aula_id + "/on";
-                        //console.log(uri);
-                    } else {
-                        var uri = "" + aluno_id + "/" + curso_id + "/" + aula_id + "/off";
-                        //console.log(uri);
-                    }
-
-                    $.get("{{ base_url() }}/cursos/aulas-assistidas/" + uri,  function( data ) {
-                        //console.log(data);
-                    });
-                };
-            });
-        </script>
-
 
 {% endblock %}
