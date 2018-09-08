@@ -5,14 +5,11 @@
 #
 $slim->get('/cursos/', function ($request, $response, $args) {
 
+    $site = $GLOBALS['site'];
     $page = oop\Page::getPage('/cursos/');
-    // var_dump($page->file); die();
-    // $layout = 'layouts/home.html';
     $content_parsed = $this->view->fetchFromString($page->content);
-    // var_dump($content_parsed); die();
-    $page->layout = "/layouts/basico1.html";
 
-    return $this->view->render($response, $page->layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
+    return $this->view->render($response, $site->getLayout($page->layout), ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
 
 });
 
@@ -49,22 +46,45 @@ $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-1edicao/', f
 });
 
 #
+#
+#
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/', function ($request, $response, $args) {
+
+    $site = $GLOBALS['site'];
+    require $site->path->api . '/boot.php';
+
+    $page = oop\Page::getPage('/cursos/logica+testes-2degustacao/');
+    $content_parsed = $this->view->fetchFromString($page->content);
+    $modulos = fulia_log2_videos_view([]);
+
+    return $this->view->render($response, $site->getLayout($page->layout), [
+        "site"    => $GLOBALS['site'],
+        "page"    => $page,
+        "content" => $content_parsed,
+        "modulos" => $modulos
+    ]);
+
+});
+
+#
 # 2 edição
 #
 $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/{hash}', function ($request, $response, $args) {
-    # token
-    // if (isset($_GET['t'])) {
-        $aluno = oop\Autenticador::get_aluno_by_hash($args['hash']);
-
-        if($aluno) {
-            $aluno->aulas = $aluno->aulas_assistidas($aluno->cursos_id);
-            // var_dump($aluno->export()); die();
-            // var_dump($aluno->aulas); die();
-        }
-
-    // }
-
     $site = $GLOBALS['site'];
+    require $site->path->api . '/boot.php';
+
+    $aluno = oop\Autenticador::get_aluno_by_hash($args['hash']);
+    // var_dump($aluno); die();
+    if(!$aluno) {
+        $target = $site->url->base . "/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/";
+        $target = $site->url->base . "/foo";
+        var_dump($target); die();
+        return $response->withRedirect($target, 200);
+    }
+
+    $aluno->aulas = $aluno->aulas_assistidas($aluno->cursos_id);
+    // var_dump($aluno->export()); die();
+    // var_dump($aluno->aulas); die();
 
     # crio a sessão (visível em api)
     $_SESSION['aluno'] = ($aluno) ? $aluno->export() : null;
@@ -81,7 +101,7 @@ $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/{has
     $modulos = fulia_log2_videos_view($aluno->aulas);
     // var_dump($modulos[1]);
     // var_dump($modulos);
-    //die();
+    // die();
 
     return $this->view->render($response, $site->getLayout($page->layout), [
         "site"    => $GLOBALS['site'],
@@ -90,7 +110,6 @@ $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/{has
         "modulos" => $modulos,
         "aluno"   => $aluno
     ]);
-
 });
 
 #
@@ -135,6 +154,4 @@ $slim->get('/cursos/aulas-assistidas/{aluno}/{curso}/{aula}/{action}', function 
     # update
     #
     aulas_assistidas_update($args['aluno'], $args['curso'], $assistidas);
-
-
 });
