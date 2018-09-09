@@ -8,7 +8,4 @@ description:
 
 Ôpa, estamos construindo esta página.
 
-Que tal dar um pulo lá na [home]({{ base_url() }}) ?
-
-
-[home](/devfuria/devfuria.com.br)
+Que tal dar um pulo lá na [home](../) ?
