@@ -3,8 +3,6 @@ layout:      cursos
 title:       Curso de Lógica de Programação Aliada a Testes Unitários
 description:
 edicao:      Primeira Edição (Fevereiro/2018)
-cadastro:    "/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=index-do-curso"
-#cadastro:    https://goo.gl/forms/LCWvmFIUr747EXai2
 ---
 
 Olá, seja bem vindo a descrição do curso de __Lógica de Programação aliada a Testes Unitários__!
@@ -390,7 +388,7 @@ Com um currículo desses meu amigo, dúvido que você não encontra-rá um bom e
 
 Se inscreva para a próxima turma e não perca nenhuma novidade !!!!
 
-<a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=index-do-curso" role="button">Próxima Turma!!!</a>
+<a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proxima-turma&utm_medium=index-do-curso" role="button">Próxima Turma!!!</a>
 
 <br />
 <br />
