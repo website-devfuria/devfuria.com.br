@@ -18,14 +18,24 @@ $slim->get('/cursos/', function ($request, $response, $args) {
 #
 $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/', function ($request, $response, $args) {
 
-    $page = oop\Page::getPage('/cursos/logica+testes-proxima-edicao/');
-    var_dump($page->file); die();
-    // $layout = 'layouts/home.html';
-    $content_parsed = $this->view->fetchFromString($page->content);
-    // var_dump($content_parsed); die();
-    $page->layout = "/layouts/cursos-log-next.html";
+    $params = $request->getQueryParams();
 
-    // return $this->view->render($response, $page->layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
+    $utm = [];
+    $utm['source']   = (isset($params['utm_source']))   ? $params['utm_source'] :   'não-informado';
+    $utm['campaign'] = (isset($params['utm_campaign'])) ? $params['utm_campaign'] : 'não-informado';
+    $utm['medium']   = (isset($params['utm_medium']))   ? $params['utm_medium'] :   'não-informado';
+
+    $site = $GLOBALS['site'];
+    // var_dump($site->url->mailinglist); die();
+
+    $page = oop\Page::getPage("/");
+    $page->tittle = "Curso Lógica de Programação + Testes de Unidades";
+    $page->layout = "layouts/cursos-next-open.html";
+    return $this->view->render($response, $page->layout, [
+        'site'    => $GLOBALS['site'],
+        'page'    => $page,
+        'utm'     => $utm,
+    ]);
 
 });
 
