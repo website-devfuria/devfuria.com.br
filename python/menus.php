@@ -64,4 +64,21 @@ $menu['python-built-in'] = [
     "/python/built-in-zip/"       => "Função interna zip()",
 ];
 
+#
+#
+#
+$menu['python-paginas-web'] = [
+    "/python/servindo-paginas-html-com-cgi/"  => "Python, servindo páginas HTML com CGI",
+    "/python/servindo-paginas-html-com-wsgi/" => "Python, servindo páginas HTML com WSGI",
+];
+
+#
+#
+#
+$menu['python-flask'] = [
+    "/python/flask/"        => "Flask - Introdução",
+    "/python/flask-apache/" => "Flask - Fazendo deploy com Apache",
+];
+
+
 return $menu;

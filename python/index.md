@@ -37,7 +37,6 @@ Digite `python` no terminal, o console interativo será aberto é você poderá 
 Não foi fácil?
 
 
-
 Começando com Python
 ---
 
@@ -75,7 +74,6 @@ Vá até a seção de [lógica de programação](/logica-de-programacao/) e prat
 -->
 
 
-
 Basic Python Exercises
 ---
 
@@ -83,7 +81,7 @@ Após essa maratona de exercícios (acima), eu sugiro que você pratique os exer
 [Basic Python Exercises](https://developers.google.com/edu/python/exercises/basic). O legal dos exercícios
 é que eles vem com os testes prontos, ou seja, você olha para o teste para ver como o código deveria funcionar e implementa
 as funções até os testes passarem. Os exercícios, por serem mais elaborados, são mais próximos da realidade do
-desenvolvimento de software, eu apenas traduzi os  enunciados.
+desenvolvimento de software, eu apenas traduzi os enunciados.
 
 {% include '/includes/menu.html' with {'menu': page.menus['python-google']} %}
 
@@ -198,11 +196,7 @@ Para que páginas web sejam servidas por scripts Python devemos ter o servidor w
 precisaremos entender os diferentes protocolos que fazem a ponte entre os scrips Python e o Servidor Web. Pois, sozinho,
 o servidor não saberá como fazer a ligação entre a requisição e a linguagem Python.
 
-<div class="list-group">
-    <a href="{{ base_url() }}/python/servindo-paginas-html-com-cgi/" class="list-group-item">Python, servindo páginas HTML com CGI</a>
-    <a href="{{ base_url() }}/python/servindo-paginas-html-com-wsgi/" class="list-group-item">Python, servindo páginas HTML com WSGI</a>
-</div>
-
+{% include '/includes/menu.html' with {'menu': page.menus['python-paginas-web']} %}
 
 
 Framework Flask
@@ -210,11 +204,7 @@ Framework Flask
 
 O Flask é um framework minimalista para Python.
 
-<div class="list-group">
-    <a href="{{ base_url() }}/python/flask/" class="list-group-item">Flask - Introdução</a>
-    <a href="{{ base_url() }}/python/flask-apache/" class="list-group-item">Flask - Fazendo deploy com Apache</a>
-</div>
-
+{% include '/includes/menu.html' with {'menu': page.menus['python-flask']} %}
 
 
 Instalando Python 3
@@ -244,8 +234,6 @@ Leia este belo artigo de Eric Hideki onde o autor indica alguns bons livros (em 
 [Livros de Python, quais são as boas indicações?](http://blog.pycursos.com/livros-de-python-quais-sao-as-boas-indicacoes/#comment-21243)
 
 
-
-
 Comunidade (indo além!)
 ---
 
@@ -266,7 +254,6 @@ criador da linguagem, Guido van Rossum, traduzido para o português pela comunid
 - [GitHub - Python Brasil Programadores](https://github.com/Python-Devs-Brasil) Coleção de repos do grupo do Facebook.
 
 - [Blog - ericstk.wordpress.com](https://ericstk.wordpress.com/)
-
 
 
 Site Oficial

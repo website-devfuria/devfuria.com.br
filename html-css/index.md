@@ -15,7 +15,7 @@ Para quem nunca viu "esses caras" deve começar por aqui:
 
 ### Capítulo 2 - Elementos Básicos de HTML
 
-{% include '/includes/menu.html' with {'menu': page.menus['html-css-elementos']}  }
+{% include '/includes/menu.html' with {'menu': page.menus['html-css-elementos']} %}
 
 
 Veja também:
