@@ -18,7 +18,8 @@ class Page {
     #
     static function getPage($uri) {
         $page = new Page(new File($uri, $GLOBALS['site']));
-        $page->secao = $page->file->uri->arr[1];
+        # isso para se precarver das páginas inexistentes
+        $page->secao =  array_key_exists(1, $page->file->uri->arr) ? $page->file->uri->arr[1] : 'sem-seção';
         return $page;
     }
 

@@ -56,13 +56,16 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
     $site = $GLOBALS['site'];         // var_dump($site); //die();
     $uri  = "/" . $args['uri'];       // var_dump($uri); die();
     $page = oop\Page::getPage($uri);  // var_dump($page); die();
+    // var_dump($uri);
 
     # se não existir...
     if (!$page->exist()) {
 
         # ... tenta redirecionar
-        $redirect = new oop\Redirect($uri);                    // var_dump($uri, $redirect->new_destination); die();
-        $page = oop\Page::getPage($redirect->new_destination); // var_dump($page->exist()); die();
+        $redirect = new oop\Redirect($uri);
+        // var_dump($redirect->new_destination); die();
+        $page = oop\Page::getPage($redirect->new_destination);
+        // var_dump($page->exist()); die();
 
         # se nem tem redirecionamneto...
         if (!$page->exist()) {
