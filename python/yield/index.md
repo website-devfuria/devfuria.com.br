@@ -66,7 +66,7 @@ Para o código ser executado precisamos utilizar a função `next()` ou usar um 
     100
     200
 
-Se agruparmos valores separados por vírgula, a função `yield` retornará um dupla.
+Se agruparmos valores separados por vírgula, a função `yield` retornará um tupla.
 
     >>> def foo():
     ...   yield 10, 20, 30
@@ -83,8 +83,9 @@ Continuando o código acima, se chamarmos mais uma vez a função `next()`, enco
     >>>
 
 
-No artigo do [Mazulo](http://indacode.com/introducao-ao-python-generators/) encontrei uma explicação
-mais formal sobre o yield...
+<!-- [Mazulo](http://indacode.com/introducao-ao-python-generators/) -->
+
+No artigo do Mazulo (saiu do ar) encontrei uma explicação mais formal sobre o yield...
 
 Quando uma função que está executando encontra o yield, ela suspende a execução naquele ponto, salva seu contexto e
 retorna para o chamador, juntamente com qualquer valor na `lista_expressao;` quando o chamador invoca o método `next()`

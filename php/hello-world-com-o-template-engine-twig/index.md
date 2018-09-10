@@ -59,11 +59,11 @@ echo $twig->render('index.html', array('name' => 'Fabien'));
 
 Deixe eu fazer uma breve explicação de cada linha...
 
-Se você instalou o Twig corretamente então, precisaremos fazer referência a "lib" (libary, biblioteca).
+Se você instalou o Twig corretamente então, precisaremos fazer referência a "lib" (library, biblioteca).
 
     require "../vendor/autoload.php";
 
-O "Loader Filessytem" irá determinar onde estão nossos templates, para tanto será preciso criar a pasta `templates/`, 
+O "Loader Filessytem" irá determinar onde estão nossos templates, para tanto será preciso criar a pasta `templates/`,
 caso ainda não tenha criado.
 
     $loader = new Twig_Loader_Filesystem('./templates');
@@ -72,11 +72,11 @@ Na sequencia precisaremos recuperar o ambiente (environment) passando o "loader"
 
     $twig   = new Twig_Environment($loader);
 
-Com o ambiente "em mãos" poderemos renderizar o template que quizermos, é exatamtne o que estamos fazendo nesta linha....
+Com o ambiente "em mãos" poderemos renderizar o template que quizermos, é exatamente o que estamos fazendo nesta linha....
 
     echo $twig->render('index.html', array('name' => 'Fabien'));
 
-Executamos `$twig->render()`, o primeiro parâmetro é o local/nome do template, o segundo parâmetro é um array de 
+Executamos `$twig->render()`, o primeiro parâmetro é o local/nome do template, o segundo parâmetro é um array de
 variáveis que delegamos para o template. Em nosso exemplo, teremos disponível no template a variável `name` com que
 contém o nome ``Fabien` (o criador do Twig).
 
