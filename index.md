@@ -31,7 +31,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-" href="index.html">DevFuria</a>
+                <a class="navbar-" href="{{ base_url() }}">DevFuria</a>
             </div>
             <div class="collapse navbar-collapse" id="custom-collapse">
                 <ul class="nav navbar-nav navbar-right">
