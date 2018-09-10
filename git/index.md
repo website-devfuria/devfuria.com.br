@@ -32,21 +32,12 @@ Pensando nisso, eu preparei um curso muito "mão na massa" e que vai direto ao p
 Para você entender o Git você precisa trabalhar com ele, o curso é sobre [lógica de programação](cursos/logica-de-programacao-aliada-a-testes-unitarios-edicao-02-2018/), mas nele você poderá
 trabalhar com o Git em cada exercício.
 
-
-<div class="list-group">
-    <a href="/git/tutorial-iniciando-git/" class="list-group-item ">Tutorial para iniciar com  o Git e o GitHub</a>
-    <a href="/git/como-e-trabalhar-com-git-1/" class="list-group-item ">Como é trabalhar com Git - parte 1</a>
-    <a href="/git/como-e-trabalhar-com-git-2/" class="list-group-item ">Como é trabalhar com Git - parte 2</a>
-    <a href="/git/resumo/" class="list-group-item ">Resumo dos principais comandos do Git</a>
-</div>
+{% include '/includes/menu.html' with {'menu': page.menus['git-intro']} %}
 
 
 ### Artigos
 
-<div class="list-group">
-    <a href="/git/dicas-configuracao/" class="list-group-item ">Dicas de configuração do Git</a>
-    <a href="/git/netrc-nao-pedir-senha/" class="list-group-item ">Configurando o Git com o arquivo .netrc</a>
-</div>
+{% include '/includes/menu.html' with {'menu': page.menus['git-artigos']} %}
 
 <!--
 ### Artigos de referência

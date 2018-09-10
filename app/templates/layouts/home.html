@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    {% include 'includes/header.html' %}
+    {% include 'includes/header-og.html' %}
+
+    {% include 'clean/css.html' %}
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- Preloader -->
+    <div id="preloader"><div id="status"></div></div>
+    {{ content | raw }}
+
+    {% include 'includes/footer.html' %}
+    {% include 'includes/footer-js.html' %}
+
+    {% include 'clean/js.html' %}
+
+{% endblock %}

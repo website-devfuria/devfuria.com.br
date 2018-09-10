@@ -63,3 +63,5 @@ $menu['python-built-in'] = [
     "/python/built-in-repr/"      => "Função interna repr()",
     "/python/built-in-zip/"       => "Função interna zip()",
 ];
+
+return $menu;

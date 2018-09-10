@@ -1,0 +1,9 @@
+
+    <div class="list-group">
+        {% for url, label in menu %}
+            <a href="{{ base_url() ~ url }}"
+               class="{{ url == page.file.uri.str ?  'list-group-item active' : 'list-group-item' }}">
+               {{ label }}
+           </a>
+        {% endfor %}
+    </div>

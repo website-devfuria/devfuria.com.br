@@ -48,6 +48,7 @@ depois criará arquivos em __JavaScript__ que serão executados no terminal pelo
 nossa ajuda com uma [introdução ao 'learn you node'](introducao-ao-learnyounode/), caso contrário pode partir para a lista de
 exercícios...
 
+
 <div class="list-group">
     <a href="introducao-ao-learnyounode/" class="list-group-item ">Nodeschool - Introdução ao learn you node</a>
     <a href="learnyounode-01-hello-world/" class="list-group-item ">Nodeschool - hello world</a>
@@ -83,13 +84,7 @@ Testes unitários (Unit Test) com Node.js
 
 Em breve, uma série de arquivos falando sobre __testes unitários__ e JavaScript no lado do servidor.
 
-<div class="list-group">
-    <a href="/node.js/modulos/" class="list-group-item ">Módulos</a>
-    <a href="/node.js/simples-assert-com-nodejs/" class="list-group-item ">Simples assert() com Node.js</a>
-    <a href="/node.js/testando-javascript-com-o-mocha/" class="list-group-item ">Testando JavaScript com o Mocha</a>
-    <a href="/node.js/configurando-repositorio-git-para-trabalhar-com-mocha/" class="list-group-item ">Configurando seu repositório Git para trabalhar com o Mocha</a>
-    <a href="/node.js/shouldjs/" class="list-group-item ">Shoudjs</a>
-</div>
+{% include '/includes/menu.html' with {'menu': page.menus['node-unit-tests']} %}
 
 
 Express
@@ -97,10 +92,8 @@ Express
 
 O [Express.js](http://expressjs.com/) é um dos frameworks mais utilizados do __Node.js__.
 
-<div class="list-group">
-        <a href="/node.js/introducao-ao-framework-express-js/" class="list-group-item ">Introdução ao framework Express.js</a>
-        <a href="/node.js/o-basico-sobre-rotas-no-express-js/" class="list-group-item ">O básico sobre rotas no Express.js</a>
-</div>
+
+{% include '/includes/menu.html' with {'menu': page.menus['node-express']} %}
 
 
 Site Oficial

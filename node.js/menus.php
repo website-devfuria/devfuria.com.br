@@ -34,3 +34,5 @@ $menu['node-express'] = [
     "/node.js/introducao-ao-framework-express-js/" => "Introdução ao framework Express.js",
     "/node.js/o-basico-sobre-rotas-no-express-js/" => "O básico sobre rotas no Express.js"
 ];
+
+return $menu;

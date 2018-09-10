@@ -31,7 +31,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-" href="index.html">DevFuria</a>
+                <a class="navbar-" href="{{ base_url() }}">DevFuria</a>
             </div>
             <div class="collapse navbar-collapse" id="custom-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -58,7 +58,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                     <div class="pfblock-subtitle">Nossa exteeeeeensa lista de cursos (rsssss).</div>
                     <br />
                     <p>Estão aberta as matrículas para a 2 edição do curso de <strong>Lógica de Programação Aliada a Testes Unitários</strong>.</p>
-                    <p><a class="btn btn-primary" href="/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Eu quero!!!</a></p>
+                    <p><a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Eu quero!!!</a></p>
                 </div>
             </div>
         </div><!-- .row -->
@@ -84,7 +84,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="javascript/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="JavaScript"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="JavaScript"/>
                             <figcaption>
                                 <h2>JavaScript</h2>
                                 <p>ECMAScript</p>
@@ -97,7 +97,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="php/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="PHP"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="PHP"/>
                             <figcaption>
                                 <h2>PHP</h2>
                                 <p>para quem tem sangue nos olhos</p>
@@ -110,7 +110,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="python/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="Python"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="Python"/>
                             <figcaption>
                                 <h2>Python</h2>
                                 <p>sem mistérios!</p>
@@ -123,7 +123,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="node.js/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="Node.js"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="Node.js"/>
                             <figcaption>
                                 <h2>Node.js</h2>
                                 <p>É JavaScript do lado do servidor!</p>
@@ -136,7 +136,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="backbone/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="Backbone"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="Backbone"/>
                             <figcaption>
                                 <h2>Backbone</h2>
                                 <p>material inédito, surpreenda-se!</p>
@@ -149,7 +149,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="html-canvas/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="Canvas"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="Canvas"/>
                             <figcaption>
                                 <h2>Canvas</h2>
                                 <p>canvas.getContext('2d')</p>
@@ -162,7 +162,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="logica-de-programacao/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-vermelhos.png" alt="Lógica de programação"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-vermelhos.png" alt="Lógica de programação"/>
                             <figcaption>
                                 <h2>Lógica de programação</h2>
                                 <p>não entre aqui</p>
@@ -175,7 +175,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="html-css/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="HTML & CSS"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="HTML & CSS"/>
                             <figcaption>
                                 <h2>HTML & CSS</h2>
                                 <p>Vai estudar um, tem que estudar o outro.</p>
@@ -188,7 +188,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="sql/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="SQL"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="SQL"/>
                             <figcaption>
                                 <h2>SQL</h2>
                                 <p>Structured Query Language</p>
@@ -201,7 +201,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="misc/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="Miscellaneous"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="Miscellaneous"/>
                             <figcaption>
                                 <h2>Miscellaneous</h2>
                                 <p>Assuntos diversos!</p>
@@ -214,7 +214,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="regex/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="Expressões Regulares"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="Expressões Regulares"/>
                             <figcaption>
                                 <h2>Expressões Regulares</h2>
                                 <p>descomplicamos</p>
@@ -227,7 +227,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="tdd/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="TDD"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="TDD"/>
                             <figcaption>
                                 <h2>TDD</h2>
                                 <p>Test Driven Development</p>
@@ -240,7 +240,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="git/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="img01"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="img01"/>
                             <figcaption>
                                 <h2>Git</h2>
                                 <p>prático, prático, prático!</p>
@@ -253,7 +253,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="c/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="img01"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="img01"/>
                             <figcaption>
                                 <h2>C</h2>
                                 <p>Sem frescura!</p>
@@ -266,7 +266,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="seguranca-da-informacao/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="img01"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="img01"/>
                             <figcaption>
                                 <h2>Segurança da Informação</h2>
                                 <p>OWASP TOP TEN 2010</p>
@@ -279,7 +279,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="grid wow zoomIn">
                     <a href="linux/">
                         <figure class="effect-bubba">
-                            <img src="app/assets/clean/images/itens-azuis.png" alt="img01"/>
+                            <img src="{{ base_url() }}/app/templates/clean/images/itens-azuis.png" alt="img01"/>
                             <figcaption>
                                 <h2>Linux</h2>
                                 <p>Receitas de instalação e muito mais...</p>
@@ -433,7 +433,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                     <footer><a href="http://devfuria.com.br/javascript/manipulando-radios-buttons-com-javascript/#comment-3800579651">Jeferson Fernandes</a></footer>
                 </blockquote>
             </div>
-            <div class="cbp-qtcontent">
+<!--             <div class="cbp-qtcontent">
                 <blockquote>
                     <p>Top parabéns, grande abraço!</p>
                     <footer><a href="http://www.devfuria.com.br/sql/mysql-pelo-terminal/#comment-3796872968">Willian Sandro</a></footer>
@@ -679,7 +679,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                     <footer><a href="http://www.devfuria.com.br/javascript/dom-create-element/#comment-1841649928">Geilson Ribeiro Mirandola</a></footer>
                 </blockquote>
             </div>
-        </div><!-- .row -->
+ -->        </div><!-- .row -->
     </div><!-- .row -->
 </section>
 

@@ -24,22 +24,7 @@ Para você que não conhece nada sobre banco de dados, talvez queira ler uma
 Curso introdutório de SQL com banco de dados MySQL
 ---
 
-<div class="list-group">
-    <a href="/sql/mysql-instalando/" class="list-group-item ">Instalando o MySQL e acessando via terminal</a>
-    <a href="/sql/mysql-pelo-terminal/" class="list-group-item ">Acessando o MySQL  via console (terminal)</a>
-    <a href="/sql/mysql-ler-mensagens-erro/" class="list-group-item ">Aprendendo a ler mensagens de erro</a>
-    <a href="/sql/mysql-listar-base/" class="list-group-item ">Listar e selecionar bases de dados</a>
-    <a href="/sql/mysql-experimentado-select/" class="list-group-item ">Experimentando a instrução "select"</a>
-    <a href="/sql/mysql-criando-tabelas/" class="list-group-item ">Criando tabelas no MySQL</a>
-    <a href="/sql/populando-tabela-a-partir-de-um-arquivo-de-texto-no-mysql/" class="list-group-item ">Populando tabela a partir de uma arquivo de texto no MySQL</a>
-    <a href="/sql/mysql-instrucoes-tabelas/" class="list-group-item ">Instruções úteis para manipular tabelas no MySQL</a>
-    <a href="/sql/mysql-crud/" class="list-group-item ">Eu crudo, você cruda, eles crudam</a>
-    <a href="/sql/mysql-crud-create/" class="list-group-item ">CRUD - C de create (insert)</a>
-    <a href="/sql/mysql-crud-read/" class="list-group-item ">CRUD - R de read (select)</a>
-    <a href="/sql/mysql-crud-update/" class="list-group-item ">CRUD - U de update</a>
-    <a href="/sql/mysql-crud-delete/" class="list-group-item ">CRUD - D de delete</a>
-</div>
-
+{% include '/includes/menu.html' with {'menu': page.menus['sql-intro']} %}
 
 - - -
 * [Manual oficial do MySQL](http://dev.mysql.com/doc/index.html)

@@ -1,0 +1,54 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    {% include 'includes/header.html' %}
+    {% include 'includes/header-og.html' %}
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: 'Source Code Pro', monospace;
+            height: 80vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            padding: 0;
+            font-size: .8em;
+            color: #767676;
+        }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+        <h2>Powered by devfuria.com.br</h2>
+        <h1>Curso de Lógica de Programação <br /> + <br />Testes de Unidades</h1>
+
+        <p>Estão abertas as matrículas!</p>
+
+        <p>As vagas são disputadas e é por tempo limitado.</p>
+
+        <p><strong>Quero me matricular no curso</strong>!</p>
+
+        <!-- <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p> -->
+        <!-- <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p> -->
+
+        <form action="{{ base_url() }}{{ site.url.mailinglist }}">
+            <input type="hidden" value="{{ utm.source }}" name="utm_source"/>
+            <input type="hidden" value="{{ utm.campaign}}" name="utm_campaign"/>
+            <input type="hidden" value="{{ utm.medium }}" name="utm_medium"/>
+            <label><input type="text" value="" name="email" placeholder="seu melhor email" style="width: 250px" /></label>
+            <label><button type="submit">Efetuar Matrícula</button></label>
+        </form>
+
+{% endblock %}

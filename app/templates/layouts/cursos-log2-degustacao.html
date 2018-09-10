@@ -1,0 +1,88 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    {% include 'includes/header.html' %}
+    {% include 'includes/header-og.html' %}
+
+    {% include 'clean/css.html' %}
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- Preloader -->
+    <div id="preloader"><div id="status"></div></div>
+
+    <!-- Home start -->
+    <section id="home" class="pfblock-image screen-height artigos">
+        <div class="home-overlay"></div>
+        <div class="intro">
+            <h1>{{ page.title }} <br /><small>{{ page.description }}</small></h1>
+            <div class="start"></div>
+
+            <p>Experimente gratuitamente e</p>
+            <p>tenha acesso a este conteúdo exclusivo !!!!</p>
+            <p><a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proxima-turma&utm_medium=experimente-ead" role="button">Efetuar matrícula</a></p>
+            <!-- <p>Se você é aluno, <a class="" href="login/" role="button">clique aqui</a></p> -->
+        </div>
+
+        <!-- Button -->
+        <a href="#conteudo"><div class="scroll-down"><span><i class="fa fa-angle-down fa-2x"></i></span></div></a>
+    </section>
+    <!-- Home end -->
+
+    <article id="conteudo" class="container">
+        {{ content | raw }}
+
+        {% for modulo in modulos %}
+            <br />
+            <br />
+            <br />
+            <table class="table table-condensed">
+                <tr>
+                    <th style="width: 90%">{{ modulo.titulo }}</th><th></th><th></th>
+                </tr>
+                {% for video in modulo.videos %}
+                    <tr class="">
+                        <td>
+
+                            {% if video.publico %}
+                                <a href="{{ video.url }}"
+                                    target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                </a>
+                            {% else %}
+                                <a href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php?utm_source=devfuria.com.br&utm_campaign=logica-proxima-turma&utm_medium=experimente-ead"
+                                    target="_blanck" type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                </a>
+                            {% endif %}
+
+                            {{ video.novotitulo ? video.novotitulo : video.titulo }}
+
+                            {% if video.publico %}
+                                <span class="label label-success">Experimente</span>
+                            {% endif %}
+                        </td>
+                        <td class="text-center">{{ video.duracao  }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+        {% endfor %}
+
+        <br />
+        <br />
+        <br />
+
+    </article>
+
+    {% include 'includes/disqus.html' %}
+
+    {% include 'includes/footer.html' %}
+    {% include 'includes/footer-js.html' %}
+
+    {% include 'clean/js.html' %}
+
+{% endblock %}

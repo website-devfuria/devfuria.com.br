@@ -14,12 +14,8 @@ error_reporting(E_ALL);
 #
 # dependências
 #
-require dirname(__FILE__) . '/vendor/autoload.php';
-require dirname(__FILE__) . '/oop/Site.php';
-require dirname(__FILE__) . '/oop/Page.php';
-require dirname(__FILE__) . '/menu.php';
-require dirname(__FILE__) . '/carregar.php';
-require dirname(__FILE__) . '/redirecionar.php';
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . "/our-autoload.php";
 
 
 #
@@ -29,57 +25,119 @@ date_default_timezone_set("America/Sao_Paulo");
 
 
 #
+# Session
+#
+session_start();
+
+#
+# site
+#
+$site = new \oop\Site();
+$site->title  = "devfuria";
+$site->author = "Flávio Micheletti";
+
+#
 # slim
 #
-Site::$slim = new \Slim\Slim();
+
+$config = ['settings' => [
+    'addContentLengthHeader' => false,
+    'displayErrorDetails'    => true,
+]];
+
+$slim = new \Slim\App($config);
+
+$container = $slim->getContainer();
+
 
 
 #
 # path
 #
-Site::$path = array();
-Site::$path['/']         = dirname(dirname(__FILE__));       # caminho absoluto
-Site::$path['logs/']     = dirname(__FILE__) . "/logs/";     # dominio.com/logs/
-Site::$path['includes/'] = dirname(__FILE__) . "/includes/"; # dominio.com/includes/
-Site::$path['api/']      = dirname(dirname(dirname(__FILE__))) . "/devfuria.subs/api"; #
+$site->path = new oop\Path;
+$site->path->base     = dirname(__DIR__);
+$site->path->app      = $site->path->base . "/app";
+$site->path->logs     = $site->path->app . "/logs";
+$site->path->includes = $site->path->app . "/templates/includes";
+$site->path->layouts  = $site->path->app . "/templates/layouts";
+$site->path->api      = dirname($site->path->base) . "/devfuria.subs/api";
+// var_dump($site->path); die();
 
-// if(file_exists(Site::$path['api/'])) {
+// if(file_exists($site->path->api)) {
 //     die('ok');
 // }
 
 #
 # url
 #
-Site::$url['mailing-list/'] = "/app/mailing-list.php";
+$site->url = new oop\Url();
+
+# substitue `bas_url()`
+$site->url->base        = $container->get('request')->getUri()->getBasePath();
+$site->url->mailinglist = "/app/mailing-list/";
+// var_dump($site->url); die();
 
 
-#
-# usao principalmente para criar um namespace para os logs
-#
-if (isset($_SERVER["SERVER_ADDR"])) {
-    // pega o ip como nome da Site
-    Site::$name = $_SERVER["SERVER_ADDR"];
-} else {
-    // nos testes cai aqui
-    Site::$name = 'sem-nome';
-}
-//var_dump(Site::$name); die();
+
+
+// #
+// # usado principalmente para criar um namespace para os logs
+// #
+// if (isset($_SERVER["SERVER_ADDR"])) {
+//     // pega o ip como nome da Site
+//     $site->name = $_SERVER["SERVER_ADDR"];
+// } else {
+//     // nos testes cai aqui
+//     $site->name = 'sem-nome';
+// }
+// //var_dump($site->name); die();
 
 
 
 #
 # ligar
 #
-// Site::$enable_analytics = true;
-// Site::$enable_disqus    = true;
+// $site->enable_analytics = true;
+// $site->enable_disqus    = true;
 
 
 #
 # email que receberão notificações
 #
-Site::$emails = ["sitedevfuria@gmail.com"];
+$site->emails = ["sitedevfuria@gmail.com"];
 
-#
-# Representa uma página
-#
-$page = new Page();
+
+
+
+// Register component on container
+$container['view'] = function ($container) {
+
+    #
+    # local dos templates, debug ativado
+    #
+    $view = new \Slim\Views\Twig($path_to_templates = "app/templates", ['debug' => true]);
+
+    #
+    # base_url()
+    #
+    $site = $GLOBALS['site'];
+    $view->addExtension(new Slim\Views\TwigExtension($container->get('router'), $site->url->base));
+
+    #
+    # objeto pagina
+    #
+    $view->getEnvironment()->addGlobal("pagina",  'página foi');
+
+    #
+    # session
+    #
+    $view->getEnvironment()->addGlobal("session",  $_SESSION);
+
+    #
+    # habilitar debug com dump()
+    #
+    $view->addExtension(new Twig_Extension_Debug());
+
+    return $view;
+};
+

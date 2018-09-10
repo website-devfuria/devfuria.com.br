@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        {{ page.title ? page.title : site.title }}
+    </title>
+
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+
+    {% if page.author %}
+        <meta name="author" content="{{ page.author }}" />
+    {% else %}
+        <meta name="author" content="{{ site.author }}">
+    {% endif %}
+
+    <link rel="shortcut icon" type="images/gif" href="{{ base_url() }}/assets/images/favicon.ico">
+
+    <!--
+
+    include others css
+
+    <link  rel="stylesheet" media="screen" href="/app/assets/foo/style.css" >
+
+    -->
+    <link rel="stylesheet" media="screen" href="{{ base_url() }}/app/templates/clean/css/font-awesome.min.css" >

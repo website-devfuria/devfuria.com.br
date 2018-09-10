@@ -1,30 +1,41 @@
 <?php
 
+namespace oop;
+
 #
 # Site
 #
 class Site {
 
-    static $dominio = "http://www.devfuria.com.br";
-    static $title   = "devfuria"; // para substituir títulos ausentes
-    static $name; // namespace para logs
-    static $author  = "Flávio Alexandre Micheletti";
+    public $title   = "devfuria"; // para substituir títulos ausentes
+    public $name; // namespace para logs
+    public $author  = "Flávio Alexandre Micheletti";
 
 
-    static $slim;
-    static $path    = [];
-    static $url     = [];
+    public $emails  = []; // que receberam notificações
 
-    static $uri;
+    public $enable_analytics = false;
+    public $enable_disqus    = false;
 
-    static $emails  = []; // que receberam notificações
 
-    static $enable_analytics = false;
-    static $enable_disqus    = false;
+    #
+    # Retorna o endereço do layout
+    #
+    function getLayout($front_layout) {
+
+        # layout padrão
+        $front_layout = ($front_layout) ? $front_layout : "artigo+menu";
+
+        $site = $GLOBALS['site'];
+
+        $endereco_layout = $site->path->layouts . "/$front_layout.html";
+
+        if (!file_exists($endereco_layout)) {
+            throw new \Exception("Layout não encontrado: $front_layout");
+        }
+
+        return "layouts/$front_layout.html";
+    }
 
 }
-
-#
-# veja que as propriedades são todas estáticas, então não precisa instanciar
-#
 

@@ -1,9 +1,11 @@
 ---
-layout: nulo
+layout:      cursos
+title:       Nossos Cursos
+description:
 ---
 
-Faltou uma index aqui!
+<div style="margin-top: 80vh"></div>
 
-Esses caras do defuria, viu!
+Ôpa, estamos construindo esta página.
 
-Tá bom, vai para a [home](../) então. 
+Que tal dar um pulo lá na [home](../) ?

@@ -45,17 +45,7 @@ Neste prímeiro capítulo é para responder a pergunta: Como começar a aprender
 
 Conheça o básico da sintaxe de Python através deste artigo [O básico da sintaxe de Python](./sintaxe-basica/).
 
-<div class="list-group">
-    <a href="/python/strings/" class="list-group-item">O básico sobre strings</a>
-    <a href="/python/saidas-output/" class="list-group-item">O básico sobre saídas (output)</a>
-    <a href="/python/estruturas-condicionais/" class="list-group-item">O básico sobre estrutura condicionais</a>
-    <a href="/python/lacos-de-repeticao/" class="list-group-item">O básico sobre laços de repetição</a>
-    <a href="/python/functions/" class="list-group-item">O básico de funções</a>
-    <a href="/python/listas/" class="list-group-item">O básico de listas</a>
-    <a href="/python/dicionarios-dictionaries/" class="list-group-item">O básico sobre dicionários</a>
-    <a href="/python/sequencias-fatiamento/" class="list-group-item">Operadores e fatiamento de sequências</a>
-    <a href="/python/erros-excecoes/" class="list-group-item">Erros e exceções</a>
-</div>
+{% include '/includes/menu.html' with {'menu': page.menus['python-basico']} %}
 
 
 Lógica de programação (curso)
@@ -66,7 +56,7 @@ lógica de programação.
 
 Eu preparei um __curso de lógica de programação aliada a testes unitários__ que é fora do comun.
 
-Cadastre [aqui seu email](/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-proximo-curso&utm_medium=python-index)
+Cadastre [aqui seu email](/logica-de-programacao/curso-de-logica.php?utm_source=devfuria.com.br&utm_campaign=logica-proxima-turma&utm_medium=python-index)
 para não perder a próxima turma!
 
 
@@ -95,38 +85,12 @@ Após essa maratona de exercícios (acima), eu sugiro que você pratique os exer
 as funções até os testes passarem. Os exercícios, por serem mais elaborados, são mais próximos da realidade do
 desenvolvimento de software, eu apenas traduzi os  enunciados.
 
-<div class="list-group">
-    <a href="/python/google-exercises-string1/" class="list-group-item ">Basic Python Exercises - strings 1</a>
-    <a href="/python/google-exercises-string2/" class="list-group-item ">Basic Python Exercises - strings 2</a>
-    <a href="/python/google-exercises-list1/" class="list-group-item ">Basic Python Exercises - list 1</a>
-    <a href="/python/google-exercises-list2/" class="list-group-item ">Basic Python Exercises - list 2</a>
-    <a href="/python/google-exercises-wordcount/" class="list-group-item ">Basic Python Exercises - word count</a>
-    <a href="/python/google-exercises-hello-sys-argv/" class="list-group-item ">Basic Python Exercises - sys.argv</a>
-</div>
-
+{% include '/includes/menu.html' with {'menu': page.menus['python-google']} %}
 
 Artigos diversos
 ---
 
-<div class="list-group">
-    <a href="/python/convertendo-listas/" class="list-group-item ">Convertendo listas em strings</a>
-    <a href="/python/manipulando-arquivos-de-texto/" class="list-group-item ">Manipulando arquivos de texto em Python</a>
-    <a href="/python/receitas-para-manipular-arquivos-de-texto/" class="list-group-item ">Receitas para manipular arquivos de texto em Python</a>
-    <a href="/python/regex/" class="list-group-item ">Python - Expressões Regulares</a>
-    <a href="/python/programacao-orientada-objetos/" class="list-group-item ">Programação Orientada a Objetos em Python</a>
-    <a href="/python/tdd-primeiros-passos-com-testes-unitarios/" class="list-group-item ">Primeiros passos com testes unitários em Python</a>
-    <a href="/python/codificacao-de-caracteres/" class="list-group-item ">Codificando caracteres no início do script Python</a>
-    <a href="/python/entenda-__name__-__main__/" class="list-group-item ">Entenda o __name__ == "__main__"</a>
-    <a href="/python/imports/" class="list-group-item ">Importando módulos no Python (imports)</a>
-    <a href="/python/modulos-pacotes/" class="list-group-item ">Módulos e Pacotes em Python</a>
-    <a href="/python/virtualenv/" class="list-group-item ">Virtualenv</a>
-    <a href="/python/yield/" class="list-group-item ">Python - yield</a>
-    <a href="/python/sys-argv/" class="list-group-item ">Python - sys.argv</a>
-    <a href="/python/os/" class="list-group-item ">Python - os</a>
-    <a href="/python/os-path/" class="list-group-item ">Python - os.path</a>
-    <a href="/python/django-error-loading-mysqldb/" class="list-group-item ">Django Error loading MySQLdb module: No module named MySQLdb</a>
-</div>
-
+{% include '/includes/menu.html' with {'menu': page.menus['python-artigos']} %}
 
 
 Built in fuctions
@@ -159,7 +123,7 @@ Built in fuctions
     </div>
     <div class="col-md-3">
         <ul class="list-group">
-            <li class="list-group-item "><a href="/python/built-in-enumerate/">enumarate</a></li>
+            <li class="list-group-item "><a href="{{ base_url() }}/python/built-in-enumerate/">enumarate</a></li>
             <li class="list-group-item disabled">eval</li>
             <li class="list-group-item disabled">exec</li>
             <li class="list-group-item disabled">filter</li>
@@ -185,7 +149,7 @@ Built in fuctions
             <li class="list-group-item disabled">issubclass</li>
             <li class="list-group-item disabled">iter</li>
             <li class="list-group-item disabled">len</a></li>
-            <li class="list-group-item "><a href="/python/built-in-list/">list</a></li>
+            <li class="list-group-item "><a href="{{ base_url() }}/python/built-in-list/">list</a></li>
             <li class="list-group-item disabled">locals</li>
             <li class="list-group-item disabled">map</li>
             <li class="list-group-item disabled">max</li>
@@ -205,7 +169,7 @@ Built in fuctions
     <div class="col-md-3">
         <ul class="list-group">
             <li class="list-group-item disabled">range</a></li>
-            <li class="list-group-item "><a href="/python/built-in-repr/">repr</a></li>
+            <li class="list-group-item "><a href="{{ base_url() }}/python/built-in-repr/">repr</a></li>
             <li class="list-group-item disabled">reversed</li>
             <li class="list-group-item disabled">round</li>
             <li class="list-group-item disabled">set</li>
@@ -220,7 +184,7 @@ Built in fuctions
             <li class="list-group-item disabled">tuple</li>
             <li class="list-group-item disabled">type</li>
             <li class="list-group-item disabled">vars</li>
-            <li class="list-group-item "><a href="/python/built-in-zip/">zip</a></li>
+            <li class="list-group-item "><a href="{{ base_url() }}/python/built-in-zip/">zip</a></li>
             <li class="list-group-item disabled">__import__</li>
         </ul>
     </div>
@@ -235,8 +199,8 @@ precisaremos entender os diferentes protocolos que fazem a ponte entre os scrips
 o servidor não saberá como fazer a ligação entre a requisição e a linguagem Python.
 
 <div class="list-group">
-    <a href="/python/servindo-paginas-html-com-cgi/" class="list-group-item">Python, servindo páginas HTML com CGI</a>
-    <a href="/python/servindo-paginas-html-com-wsgi/" class="list-group-item">Python, servindo páginas HTML com WSGI</a>
+    <a href="{{ base_url() }}/python/servindo-paginas-html-com-cgi/" class="list-group-item">Python, servindo páginas HTML com CGI</a>
+    <a href="{{ base_url() }}/python/servindo-paginas-html-com-wsgi/" class="list-group-item">Python, servindo páginas HTML com WSGI</a>
 </div>
 
 
@@ -247,8 +211,8 @@ Framework Flask
 O Flask é um framework minimalista para Python.
 
 <div class="list-group">
-    <a href="/python/flask/" class="list-group-item">Flask - Introdução</a>
-    <a href="/python/flask-apache/" class="list-group-item">Flask - Fazendo deploy com Apache</a>
+    <a href="{{ base_url() }}/python/flask/" class="list-group-item">Flask - Introdução</a>
+    <a href="{{ base_url() }}/python/flask-apache/" class="list-group-item">Flask - Fazendo deploy com Apache</a>
 </div>
 
 

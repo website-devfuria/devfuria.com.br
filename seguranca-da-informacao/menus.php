@@ -20,3 +20,4 @@ $menu['seginfo-topten2010'] = [
     "/seguranca-da-informacao/owasp-topten-2010/a10-unvalidated-redirects-forwards/" => "A10 Unvalidated Redirects and Forwards"
 ];
 
+return $menu;

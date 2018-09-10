@@ -8,24 +8,13 @@ O Canvas é uma tela de bitmap que você pode desenhar e dar animação para o q
 [HTML5](http://www.w3.org/TR/html5/), obviamente, junto com o elemento, temos a API Canvas (funções que
 manipulam o elemento).
 
-<div class="list-group">
-    <a href="/html-canvas/introducao-ao-canvas/" class="list-group-item ">Introdução ao Canvas</a>
-    <a href="/html-canvas/desenhando-linhas-lineto-moveto/" class="list-group-item ">Desenhando linhas (lineTo e moveTo)</a>
-    <a href="/html-canvas/tamanho-das-linhas-linewidth/" class="list-group-item ">Tamanho das linhas (lineWidth)</a>
-    <a href="/html-canvas/juncao-das-linhas-linejoin-miter-round-bevel/" class="list-group-item ">Junção das linhas (lineJoin, miter, round, bevel)</a>
-    <a href="/html-canvas/limite-das-linhas-linecap-butt-round-square/" class="list-group-item ">Limite das linhas (lineCap, butt, round, square)</a>
-    <a href="/html-canvas/paths-caminhos/" class="list-group-item ">Paths (caminhos)</a>
-    <a href="/html-canvas/desenhando-retangulos/" class="list-group-item ">Desenhando retângulos</a>
-</div>
+{% include '/includes/menu.html' with {'menu': page.menus['canvas']} %}
 
 
 ## Exemplos de Canvas
 
-<div class="list-group">
-    <a href="/html-canvas/exemplo-linhas-randomicas/" class="list-group-item ">Exemplo - linhas randômicas</a>
-    <a href="/html-canvas/exemplo-grid-lines/" class="list-group-item ">Exemplo - grid lines</a>
-    <a href="/html-canvas/exemplo-retangulos-randomicos/" class="list-group-item ">Exemplo - retângulos randômicos</a>
-</div>
+{% include '/includes/menu.html' with {'menu': page.menus['canvas-exemplos']} %}
+
 
 ## Referência
 ---
