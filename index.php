@@ -44,6 +44,7 @@ $slim->get('/foo', function ($request, $response, $args) {
 # outras rotas
 #
 require("cursos/rotas.php");
+require("app/rotas.php");
 
 
 #

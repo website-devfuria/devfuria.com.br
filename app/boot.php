@@ -74,7 +74,7 @@ $site->url = new oop\Url();
 
 # substitue `bas_url()`
 $site->url->base        = $container->get('request')->getUri()->getBasePath();
-$site->url->mailinglist = "/app/mailing-list.php";
+$site->url->mailinglist = "/app/mailing-list/";
 // var_dump($site->url); die();
 
 
