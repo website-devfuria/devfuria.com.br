@@ -7,7 +7,12 @@ namespace oop;
 #
 class Url {
 
-    function foo() {
+    #
+    #
+    #
+    function get_home() {
+        // var_dump(($this->base == '') ?  '/' : $this->base); die();
+        return ($this->base == '') ?  '/' : $this->base;
     }
 
 }

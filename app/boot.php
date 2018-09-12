@@ -72,7 +72,7 @@ $site->path->api      = dirname($site->path->base) . "/devfuria.subs/api";
 #
 $site->url = new oop\Url();
 
-# substitue `bas_url()`
+# substitue `base_url()`
 $site->url->base        = $container->get('request')->getUri()->getBasePath();
 $site->url->mailinglist = "/app/mailing-list/";
 // var_dump($site->url); die();
@@ -97,8 +97,8 @@ $site->url->mailinglist = "/app/mailing-list/";
 #
 # ligar
 #
-// $site->enable_analytics = true;
-// $site->enable_disqus    = true;
+$site->enable_analytics = true;
+$site->enable_disqus    = true;
 
 
 #
@@ -124,9 +124,10 @@ $container['view'] = function ($container) {
     $view->addExtension(new Slim\Views\TwigExtension($container->get('router'), $site->url->base));
 
     #
-    # objeto pagina
+    # home_url
     #
-    $view->getEnvironment()->addGlobal("pagina",  'página foi');
+    $view->getEnvironment()->addGlobal("home_url",  $site->url->get_home());
+    // var_dump($site->url->get_home()); die();
 
     #
     # session
