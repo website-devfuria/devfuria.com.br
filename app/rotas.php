@@ -1,16 +1,16 @@
 <?php
 
 #
-# Registra no banco de dados os emails
+# Registra no banco de dados os contatos
 #
 $slim->get('/app/mailing-list/', function ($request, $response, $args) {
 
     $params = $request->getQueryParams();
 
     $utm = [];
-    $utm_source   = (isset($params['utm_source']))   ? $params['utm_source'] :   'não-informado';
+    $utm_source   = (isset($params['utm_source']))   ? $params['utm_source']   : 'não-informado';
     $utm_campaign = (isset($params['utm_campaign'])) ? $params['utm_campaign'] : 'não-informado';
-    $utm_medium   = (isset($params['utm_medium']))   ? $params['utm_medium'] :   'não-informado';
+    $utm_medium   = (isset($params['utm_medium']))   ? $params['utm_medium']   : 'não-informado';
 
     $email  = (isset($params['email'])) ? $params['email'] : 'não-informado';
     $quando = date('Y-m-d H:i:s');
@@ -27,7 +27,7 @@ $slim->get('/app/mailing-list/', function ($request, $response, $args) {
     require $site->path->api . '/boot.php';
 
     # insert
-    fulia_mail_create($email, $utm_source, $utm_campaign, $utm_medium, $quando);
+    Contatos::registrar($email, $utm_source, $utm_campaign, $utm_medium, $quando);
 
     # notificação
     $headers = "From: " . $email . "\r\n" .

@@ -56,7 +56,7 @@ $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-1edicao/', f
 });
 
 #
-#
+# 2 edição (degustação)
 #
 $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/', function ($request, $response, $args) {
 
@@ -65,7 +65,9 @@ $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/', f
 
     $page = oop\Page::getPage('/cursos/logica+testes-2degustacao/');
     $content_parsed = $this->view->fetchFromString($page->content);
-    $modulos = fulia_log2_videos_view([]);
+
+    $log2 = R::dispense("logica2");
+    $modulos = $log2->list_view([]);
 
     return $this->view->render($response, $site->getLayout($page->layout), [
         "site"    => $GLOBALS['site'],
@@ -88,8 +90,8 @@ $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/{has
     if(!$aluno) {
         $target = $site->url->base . "/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/";
         $target = $site->url->base . "/foo";
-        var_dump($target); die();
-        return $response->withRedirect($target, 200);
+        // var_dump($target); die();
+        return $response->withRedirect($target, 301);
     }
 
     $aluno->aulas = $aluno->aulas_assistidas($aluno->cursos_id);
@@ -108,8 +110,8 @@ $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-2edicao/{has
     // var_dump($site->getLayout($page->layout)); die();
 
     # módulos do curso
-    $modulos = fulia_log2_videos_view($aluno->aulas);
-    // var_dump($modulos[1]);
+    $log2 = R::dispense("logica2");
+    $modulos = $log2->list_view($aluno->aulas);
     // var_dump($modulos);
     // die();
 
@@ -142,10 +144,9 @@ $slim->get('/cursos/aulas-assistidas/{aluno}/{curso}/{aula}/{action}', function 
     #
     $arr = [];
     if ($args['action'] == 'on') {
-        $arr = aulas_assistidas_adicionar($args['aula'], $arr_aulas);
+        $arr = AulasAssistidas::adicionar($args['aula'], $arr_aulas);
     } elseif ($action == 'off') {
-        echo "b";
-        $arr = aulas_assistidas_remover($args['aula'], $arr_aulas);
+        $arr = AulasAssistidas::remover($args['aula'], $arr_aulas);
     } else {
         echo "não faz nada, certo ?";
     }
@@ -163,5 +164,5 @@ $slim->get('/cursos/aulas-assistidas/{aluno}/{curso}/{aula}/{action}', function 
     #
     # update
     #
-    aulas_assistidas_update($args['aluno'], $args['curso'], $assistidas);
+    AulasAssistidas::update($args['aluno'], $args['curso'], $assistidas);
 });
