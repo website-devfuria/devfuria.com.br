@@ -10,7 +10,7 @@
                     <div class="col-md-6">
                         {% if page.prev %}
                             <p>
-                                <a class="btn btn-default btn-lg btn-block pagination" href="{{ page.prev.url }}">
+                                <a class="btn btn-default btn-lg btn-block pagination" href="{{ base_url() }}{{ page.prev.url }}">
                                     <img src="{{ base_url() }}/app/assets/imagens/prev-page.png" />
                                     <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
                                    {{ page.prev.tittle | slice(0, 30) }}
@@ -22,7 +22,7 @@
                     <div class="col-md-6">
                             {% if page.prev %}
                             <p class="text-right">
-                                <a class="btn btn-success btn-lg btn-block pagination" href="{{ page.next.url }}">
+                                <a class="btn btn-success btn-lg btn-block pagination" href="{{ base_url() }}{{ page.next.url }}">
                                     {{ page.next.tittle | slice(0, 30) }}
                                     <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
                                     <img src="{{ base_url() }}/app/assets/imagens/next-page.png" />
