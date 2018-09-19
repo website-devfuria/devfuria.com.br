@@ -13,6 +13,28 @@ $slim->get('/cursos/', function ($request, $response, $args) {
 
 });
 
+
+#
+# próxima edição ???
+#
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/', function ($request, $response, $args) {
+    var_dump('asd'); die();
+});
+
+#
+# redirecionamento
+#
+$slim->get('/logica-de-programacao/curso-de-logica.php', function ($request, $response, $args) {
+
+    $site = $GLOBALS['site'];
+    $query = $request->getUri()->getQuery();
+    $destino = $site->url->base . "/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?" . $query;
+    // var_dump($query, $destino); die();
+
+    return $response->withRedirect($destino, 301);
+});
+
+
 #
 # próxima edição
 #
