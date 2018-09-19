@@ -56,21 +56,25 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
     $site = $GLOBALS['site'];         // var_dump($site); //die();
     $uri  = "/" . $args['uri'];       // var_dump($uri); die();
     $page = oop\Page::getPage($uri);  // var_dump($page); die();
-    // var_dump($uri);
+    // var_dump($uri); die();
 
+    #
     # se não existir...
+    #
     if (!$page->exist()) {
-
-        # ... tenta redirecionar
+        #
+        # tenta redirecionar
+        #
         $redirect = new oop\Redirect($uri);
-        // var_dump($redirect->new_destination); die();
-        $page = oop\Page::getPage($redirect->new_destination);
-        // var_dump($page->exist()); die();
-
-        # se nem tem redirecionamneto...
-        if (!$page->exist()) {
-
-            # ... erro 404
+        if ($redirect->new_destination) {    # se tem redirecionamneto...
+            $page = oop\Page::getPage($redirect->new_destination);
+            $target = $site->url->base . $redirect->new_destination;
+            // var_dump($target); die();
+            return $response->withRedirect($target, 301);
+        } else {
+            #
+            # erro 404
+            #
             $file = new oop\File('/', $site);
             $file->path->base = $site->path->base . "/404.md";
             $page = new oop\Page($file);
@@ -84,14 +88,11 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
                 "content"  => $content_parsed
             ]);
         }
-
-        # Redirecionamento...
-        $target = $GLOBALS['site']->url->base . $redirect->new_destination;
-        // var_dump($target); die();
-        return $response->withRedirect($target, 301);
-
     }
 
+    #
+    # Abrir página
+    #
     // var_dump($site->path->base);
     // var_dump($page->isSection());
     // var_dump($page->secao);
@@ -105,7 +106,9 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
         $page->menu = $secao->getMenu($page->capitulo);
         $page->setPrevAndNext();
     }
-    // var_dump($page->menu);die();
+    // var_dump($page->menu);
+    // var_dump($page->content);
+    // die();
 
     #
     # Carregar página
