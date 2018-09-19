@@ -120,7 +120,11 @@ class Redirect {
             "/views/frm-feedback.php/"  => "/",
             "/views/js-rodape.php/"     => "/",
 
-            "/blog/2015/10/07/aprenda-a-programar-do-zero.html/" => "/blog",
+            "/blog/"                                                     => "/blog/index.html",
+            "/blog/2016/05/03/videos-sobre-inteligencia-artificial.html/" => "/blog/index.html",
+            "/blog/2015/10/07/aprenda-a-programar-do-zero.html/"         => "/blog",
+
+
             "/flavio-alexandre-micheletti.php/"     => "https://flaviomicheletti.github.io/",
             "/flavio-alexandre-micheletti.html/"    => "https://flaviomicheletti.github.io/",
             "/tcc-flavio-alexandre-micheletti.pdf/" => "https://flaviomicheletti.github.io/tcc-flavio-alexandre-micheletti.pdf",
@@ -133,6 +137,7 @@ class Redirect {
             "/privilegiometro/"        => "http://privilegiometro.devfuria.com.br/",
 
             "/cursos/logica-de-programacao-aliada-a-testes-unitarios-edicao-02-2018/" => "/cursos/logica-de-programacao-aliada-a-testes-unitarios-1edicao/",
+            "/cursos/logica-de-programacao-aliada-a-testes-unitarios-edicao-02-2018/{{ page.cadastro }}/" => "/cursos/logica-de-programacao-aliada-a-testes-unitarios-1edicao/",
 
             "/js/"               => "/javascript/",
             "/js/index.php/"     => "/javascript/",
@@ -164,6 +169,7 @@ class Redirect {
             "/javascript/global-g/"                   => "/javascript/referencia-pratica-sobre-a-opcao-global-g/",
             "/javascript/dom-remove/"                 => "/javascript/dom-remove-child/",
             "/javascript/ajax-php/"                   => "/javascript/ajax-php-jquery/",
+            "/javascript/typeof/typeof/"              => "/javascript/typeof/",
 
             "/javascript/forms/textbox-password-textarea/" => "/javascript/manipulando-caixas-de-texto-com-javascript/",
             "/javascript/forms/checkbox-checked/"          => "/javascript/manipulando-checkboxes-com-javascript/",
@@ -209,6 +215,7 @@ class Redirect {
             "/javascript/backbone-models-views/"                    => "/backbone/models-views",
             "/javascript/backbone-collections/"                     => "/backbone/collections/",
             "/javascript/backbone-collections-eventos/"             => "/backbone/collections-eventos/",
+            "/javascript/backbone-collections-create/"              => "/backbone/",
             "/javascript/backbone-collections-views/"               => "/backbone/collections-views/",
             "/javascript/backbone-sincronizando-models/"            => "/backbone/sincronizando-models/",
             "/javascript/backbone-sincronizando-collections/"       => "/backbone/sincronizando-collections/",
@@ -256,11 +263,14 @@ class Redirect {
             "/js/canvas/canvas-grid/"                        => "/html-canvas/exemplo-grid-lines/",
             "/javascript/canvas/col-linhas-grade/"           => "/html-canvas/exemplo-grid-lines/",
             "/javascript/canvas/col-retangulos/"             => "/html-canvas/exemplo-retangulos-randomicos/",
+            "/javascript/canvas/"                            => "/html-canvas/",
 
 
             "/html/"                                            => "/html-css/",
             "/html-css/html5/"                                  => "/html-css/",
+            "/html-css/css3/"                                   => "/html-css/",
             "/html-css/dtd-doctype/"                            => "/html-css/",
+            "/html-css/html-valido/"                            => "/html-css/",
             "/html-css/historia-html/"                          => "/html-css/introducao-html/",
             "/html-css/historia-html/?/"                        => "/html-css/introducao-html/",
             "/html-css/basico/semantica/"                       => "/html-css/",
@@ -298,6 +308,8 @@ class Redirect {
 
             "/c/rodando-os-testes/rodando-os-testes/"           => "/c/rodando-os-testes/",
             "/c/entendendo-o-assert-c/entendendo-o-assert-c/"   => "/c/entendendo-o-assert-c/",
+            "/c/como-compilar-no-linux/introducao-linguagem-c/" => "/c/como-compilar-no-linux/",
+            "/c/como-compilar-no-linux/como-compilar-no-linux/" => "/c/como-compilar-no-linux/",
 
             "/logica"                                           => "/logica-de-programacao/",
             "/logica/"                                          => "/logica-de-programacao/",
@@ -315,6 +327,7 @@ class Redirect {
             "/logica-de-programacao/entendendo-o-assert-c/"     => "/c/rodando-os-testes/",
             "/logica-de-programacao/como-compilar-no-linux/"    => "/logica-de-programacao/",
             "/logica-de-programacao/intro/"                     => "/logica-de-programacao/",
+            "/logica-de-programacao/strings/"                   => "/logica-de-programacao/",
 
             "/logica-de-programacao/eleitores/"                 => "/logica-de-programacao/votos-em-relacao-ao-total-de-eleitores/",
             "/logica-de-programacao/c-eleitores/"               => "/logica-de-programacao/votos-em-relacao-ao-total-de-eleitores/",
@@ -369,6 +382,7 @@ class Redirect {
             "/logica-de-programacao/cpp-juros-simples/"         => "/logica-de-programacao/juros-simples/",
             "/logica-de-programacao/exemplos/"                  => "/logica-de-programacao/",
             "/logica-de-programacao/exemplos-na-linguagem/"     => "/logica-de-programacao/",
+            "/logica-de-programacao/exemplos-na-linguagem-c/"   => "/logica-de-programacao/",
             "/logica-de-programacao/introducao-linguagem-c/"    => "/c/",
             "/logica-de-programacao/c-antecessor-sucessor/"     => "/logica-de-programacao/antecessor-sucessor/",
 
@@ -436,6 +450,7 @@ class Redirect {
             "/php/forms/textbox-password-textarea/"     => "/php/manipulando-os-controles-text-password-e-textarea/",
             "/php/forms/combobox/"                      => "/php/manipulando-combobox-com-php/",
             "/php/manipulando-combobox/"                 => "/php/manipulando-combobox-com-php/",
+            "/php/manipulando-listbox/"                 => "/php/manipulando-listbox-com-php/",
             "/php/forms/checkbox/"                      => "/php/manipulando-checkboxes-com-php/",
             "/php/forms/enviando-dados-via-get-post/"   => "/php/enviando-dados-via-get-post/",
             "/php/forms/recebendo-dados-via-get-post/"  => "/php/recebendo-dados-via-get-post/",
@@ -513,6 +528,13 @@ class Redirect {
             "/git/os-3-estados/"      => "/git/",
             "/git/git-rm/"            => "/git/",
             "/git/git-reset/"         => "/git/",
+            "/git/branch/"            => "/git/",
+            "/git/git-tags/"          => "/git/",
+            "/git/git-merge/"         => "/git/",
+            "/git/git-diff/"          => "/git/",
+            "/git/git-clone/"         => "/git/",
+            "/git/git-tags/"          => "/git/",
+            "/git/colaborando-no-github/" => "/git/",
 
             "/linux/resetar-senha%20de-mysql/"            => "/linux",
             "/entendendo-e-usando-permissoes-no-linux.md/"=> "/linux",
