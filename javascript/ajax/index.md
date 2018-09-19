@@ -36,14 +36,15 @@ Crie um arquivo denominado `foo.txt` e insira nela uma única linha com o seguin
 Para executar o código abaixo você poderá utilizar as ferramentas do navegador. Eu estou no Firefox e estou utilizando
 o FireBug, se você estiver usando o Chrome, aperte a tecla `F12` para abrir o plugin equivalente.
 
-{% highlight javascript linenos %}var xhr = new XMLHttpRequest();
+```javascript
+var xhr = new XMLHttpRequest();
 xhr.open("GET", "foo.txt", true);
 xhr.send();
 xhr.responseType = "text";
 xhr.onload = function(){
   console.log(this.response);
 }
-{% endhighlight %}
+```
 
 Na __linha 1__ criamos um objeto __XMLHttpRequest__.
 
@@ -99,7 +100,7 @@ seguinte conteúdo.
 O código abaixo fará uma requisição __Ajax__ para ler o conteúdo de um arquivo __XML__. Repare que o valor da propriedade
 `responseType` é `document` e não `xml`.
 
-{% highlight javascript linenos %}
+```javascript
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "arquivo.xml", true);
 xhr.send();
@@ -107,7 +108,7 @@ xhr.responseType = "document";
 xhr.onload = function(){
   console.log(this.response);
 }
-{% endhighlight %}
+```
 
 
 

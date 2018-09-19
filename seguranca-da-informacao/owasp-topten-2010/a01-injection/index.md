@@ -65,7 +65,7 @@ O código que interage com o formulário deve receber os dados vindo do formulá
 de dados, montar a declaração SQL, enviá-la para o banco de dados (o interpretador) e checar se houve êxito na execução
 da declaração.
 
-{% highlight php linenos %}
+```php
 <?php
 $login  = $_POST['login'];
 $senha  = $_POST['senha'];
@@ -81,7 +81,7 @@ else
     echo "Você não foi logado no sistema!!!";
 
 var_dump($sql);
-{% endhighlight %}
+```
 
 As linhas 2 e 3 recebem os dados vindos do formulário via método `post` e armazenam em suas respectivas variáveis. A
 linha 5 conecta-se com o banco de dados. A linha 7 cria dinamicamente a declaração SQL. A linha 8 envia e executa a
@@ -112,7 +112,7 @@ em seu lugar estão apenas as referências ":login" e ":senha". A função princ
 parâmetro para o nome da variável especificada" (Manual Oficial do PHP, 2011) é ela quem faz todo o trabalho de
 sanitização. A linha 20 executa o comando e, entre as linhas 22 e 25, é checado o resultado da consulta.
 
-{% highlight php linenos %}
+```php
 <?php
 $dsn        = 'mysql:dbname=teste;host=localhost';
 $user       = 'desenvolvedor';
@@ -138,7 +138,7 @@ if( $sth->rowCount() )
 	echo "reusultado: true";
 else
 	echo "reusultado: false";
-{% endhighlight %}
+```
 
 A segunda forma, stored procedures (SP), são procedimentos previamente armazenados no SGBD. Seu funcionamento é similar
 as funções em uma linguagem de programação. SP podem receber ou não parâmetros e podem retornar ou não algum valor. A
@@ -155,7 +155,7 @@ o comando SQL que faz "chamada" para a SP e o índice 1 recupera o valor retorna
 do índice o(zero). A linha 16 executa o comando SQL de índice 1 e guarda o seu resultado na variável `$res`. A linha 17
 apenas transforma o resultado da consulta em um objeto. Entre as linhas 20 e 24 checamos o resultado da consulta.
 
-{% highlight php linenos %}
+```php
 <?php
 $mysqli = new mysqli("localhost", "desenvolvedor", "12345678", "teste");
 if (mysqli_connect_errno()) {
@@ -182,7 +182,7 @@ else
 
 $mysqli->close();
 ?>
-{% endhighlight %}
+```
 
 A stored procedure utilizada é ilustrada pelo código abaixo.
 
@@ -204,7 +204,7 @@ e também podem ser aplicadas diferentes abordagens para codificação de saída
 função nativa do SGBD Mysql `mysql_real_escape_string()` seja utilizada para codificação de caracteres. O uso dessa
 função é implementada no código abaixo.
 
-{% highlight php linenos %}
+```php
 <?php
 $link = mysql_connect('localhost', 'desenvolvedor', '12345678');
 mysql_select_db("teste");
@@ -227,7 +227,7 @@ if( mysql_num_rows($result) == 1 ){
 }else{
 	echo "reusltado: false";
 }
-{% endhighlight %}
+```
 
 Observando o código nota-se que entre a linha 2 e 6 é feita a conexão com o banco de dados feito através do driver mysql.
 As linhas 8 e 9 recebem os dados do formulário. As linhas 11 e 12 fazem o trabalho de codificação de saída dos caracteres

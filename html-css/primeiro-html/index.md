@@ -30,7 +30,8 @@ o IE), o resultado deve ser parecido com o abaixo:
 
 ### Explicando o código
 
-{% highlight html linenos %}<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Seu primeiro HTML</title>
@@ -40,7 +41,7 @@ o IE), o resultado deve ser parecido com o abaixo:
         <p>Aqui é onde as coisas acontecem, o corpo de seu HTML</p>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Na linha 1 temos o DTD (Document type definition), ele define qual é o tipo de documento, no exemplo ele indica que
 o documento é do tipo [HTML5](/html-css/). Inclua sempre o DTD, vulgo __doctype__ em seus arquivos HTML, em breve
