@@ -12,7 +12,7 @@ central.
 
 Trabalhar com o Git é ter o terminal sempre por perto, abro o terminal e vou até minha pasta de projeto.
 
-A primeira coisa que me pergunto é "será que estou no [branch](/git/branch/) correto para trabalhar?".
+A primeira coisa que me pergunto é "será que estou no branch correto para trabalhar?".
 
     git status
 
@@ -25,8 +25,8 @@ dado momento.
 Essa última é "matadora" __produção em dado momento__, perfeito!
 
 Não fui eu quem criou a issue, então questionei meu colega do porquê do nome, ele me disse que prefere identificar suas
-issues pelo id. Se eu abrir o projeto no GitHub e procurar na seção "issues", encontrarei a referida issue além de 
-informações detalhadas sobre o que se trata. O mais legal é dá para fazer comentários como se fosse um post e, dessa 
+issues pelo id. Se eu abrir o projeto no GitHub e procurar na seção "issues", encontrarei a referida issue além de
+informações detalhadas sobre o que se trata. O mais legal é dá para fazer comentários como se fosse um post e, dessa
 forma, manter uma documentação muita rica sobre o processo.
 
 Continuando meu trabalho, o comando `git status` não apenas me indica em qual branch estou trabalhando mas também trás
@@ -36,7 +36,7 @@ informações sobre minha árvore de trabalho, os arquivos propriamente dito. El
     git add arquivo3
 
 O `git add` é assim, ele seleciona arquivos e pastas para serem monitorados pelo Git, mas eles (os arquivos e minhas
-alterações) somente entrarão para a o histórico (uma linha do tempo) após eu efetuar o "commit". 
+alterações) somente entrarão para a o histórico (uma linha do tempo) após eu efetuar o "commit".
 
 Cada __commit__ é realizado localmente, quer dizer, ninguém saberá sobre minhas alterações até que eu as publique no
 repositório remoto. Esse é um dos pontos fortes sobre o Git que a comunidade adora destacar. Lá vou eu realizar um commit.
@@ -44,11 +44,11 @@ repositório remoto. Esse é um dos pontos fortes sobre o Git que a comunidade a
     git commit -m "minha mensagem"`
 
 Quando eu comecei no Git, meus commits eram grandes,
-haviam muita coisa neles. Depois, fui aprendendo que menor é melhor, o menor commit possível é uma única linha em um 
+haviam muita coisa neles. Depois, fui aprendendo que menor é melhor, o menor commit possível é uma única linha em um
 único arquivo. Acredite, isso é muito bom, mas nem sempre precisa ser assim. Veja repositórios de outras pessoas para
 saber como elas separam seus próprios commits.
 
-O ciclo se repetiu ao longo daquela manhã, desenvolvia em passos pequenos, adicionava e "comitava" na mesma medida. A 
+O ciclo se repetiu ao longo daquela manhã, desenvolvia em passos pequenos, adicionava e "comitava" na mesma medida. A
 sequência de comandos abaixo...
 
     git add .
@@ -70,7 +70,7 @@ eu resolvi publicar minhas alterações para que meu colega também pudesse ver 
 
 Este é o inverso do comando anterior, ele diz: *empurre minhas alterações para o repositório origin no branch denominado issue53*.
 
-Com o tempo, os comandos `git pull` e `git push`, também se tonaram corriqueiros, primeiro eu atualizo localmente 
+Com o tempo, os comandos `git pull` e `git push`, também se tonaram corriqueiros, primeiro eu atualizo localmente
 puxando (pull) as informações, depois eu empurro (push) minhas alterações para o repositório remoto.
 
 Agora era só fazer um __merge__ com o branch principal (master). Fizemos isso na intercafe do GitHub, pois lá fica

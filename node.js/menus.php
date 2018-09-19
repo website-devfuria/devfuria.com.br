@@ -7,12 +7,12 @@ $menu = [];
 #
 #
 $menu['learnyounode'] = [
-    "introducao-ao-learnyounode/"        => "Nodeschool - Introdução ao learn you node",
-    "learnyounode-01-hello-world/"       => "Nodeschool - hello world",
-    "learnyounode-02-baby-steps/"        => "Nodeschool - baby steps",
-    "learnyounode-03-my-first-io/"       => "Nodeschool - My First I/O!",
-    "learnyounode-04-my-first-async-io/" => "Nodeschool - My First Async I/O!",
-    "learnyounode-05-filtered-ls/"       => "Nodeschool - Filtered LS",
+    "/node.js/introducao-ao-learnyounode/"        => "Nodeschool - Introdução ao learn you node",
+    "/node.js/learnyounode-01-hello-world/"       => "Nodeschool - hello world",
+    "/node.js/learnyounode-02-baby-steps/"        => "Nodeschool - baby steps",
+    "/node.js/learnyounode-03-my-first-io/"       => "Nodeschool - My First I/O!",
+    "/node.js/learnyounode-04-my-first-async-io/" => "Nodeschool - My First Async I/O!",
+    "/node.js/learnyounode-05-filtered-ls/"       => "Nodeschool - Filtered LS",
 
 ];
 

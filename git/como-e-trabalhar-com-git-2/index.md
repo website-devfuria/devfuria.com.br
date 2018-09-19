@@ -29,7 +29,7 @@ A imagem acima ilustra um ramo (branch). Só não confunda a direção das setas
 que, em nossa linha de tempo, o passado (old base) fica mais a esquerda, este é o nosso ponto de partida. A direção é
 da esquerda para a direita e conforme avançamos na linha do tempo, mais para o direita estaremos.
 
-Se branch é um conceito obscuro para você, então faça uma pausa e leia mais sobre [branchs](/git/branch/).
+Se branch é um conceito obscuro para você, então faça uma pausa e leia mais sobre branchs.
 
 Continuando, se eu listo os branchs com `git branch` então com `git checkout` eu troco de branch.
 
