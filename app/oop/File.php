@@ -26,6 +26,9 @@ class File {
     }
 
     function exist() {
+        // var_dump($this->path->base);
+        // var_dump(file_exists($this->path->base));
+        // die();
         return file_exists($this->path->base) ? true : false;
     }
 
