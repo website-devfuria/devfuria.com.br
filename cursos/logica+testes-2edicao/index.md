@@ -9,5 +9,3 @@ Olá, seja bem vindo ao curso de __Lógica de Programação aliada a Testes Unit
 
 Esta é a nossa singela plataforma EAD.
 
-Estamos trabalhando duro para incluir novas funcionalidades.
-

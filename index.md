@@ -55,14 +55,38 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                 <div class="pfblock-header wow fadeInUp">
                     <h2 class="pfblock-title">Cursos</h2>
                     <div class="pfblock-line"></div>
-                    <div class="pfblock-subtitle">Nossa exteeeeeensa lista de cursos (rsssss).</div>
-                    <br />
+                </div>
+            </div>
+        </div><!-- .row -->
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="pfblock-header wow fadeInUp">
+<!--                     <h3 class="pfblock-title">Other</h3>
                     <p>Estão aberta as matrículas para a 2 edição do curso de <strong>Lógica de Programação Aliada a Testes Unitários</strong>.</p>
-                    <p><a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Eu quero!!!</a></p>
+                    <p><a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Eu quero!!!</a></p> -->
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="pfblock-header wow fadeInUp">
+                    <h3 class="pfblock-title">Lógica + Testes</h3>
+                    <p>Este curso é para desafiar sua lógica de programção.</p>
+                    <p>Você nunca mais será o mesmo</p>
+                    <p>depois deste curso !!!</p>
+                    <p><a class="btn btn-danger" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Só para os corajosos!!!</a></p>
+                    <!-- <p><a class="btn btn-danger" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios/" role="button">Só para os corajosos!!!</a></p> -->
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="pfblock-header wow fadeInUp">
+<!--                     <h3 class="pfblock-title">Cursos</h3>
+                    <p>Estão aberta as matrículas para a 2 edição do curso de <strong>Lógica de Programação Aliada a Testes Unitários</strong>.</p>
+                    <p><a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Eu quero!!!</a></p> -->
                 </div>
             </div>
         </div><!-- .row -->
     </div><!-- .contaier -->
+
+
 </section>
 
 <!-- Categorias -->

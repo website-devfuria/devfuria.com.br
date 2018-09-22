@@ -13,30 +13,15 @@ $slim->get('/cursos/', function ($request, $response, $args) {
 
 });
 
-
 #
-# próxima edição ???
+# Esta é a página do curso, que explica o curso em detalhes
 #
 $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/', function ($request, $response, $args) {
-    var_dump('asd'); die();
+    var_dump('montar páginas de cursos'); die();
 });
 
 #
-# redirecionamento
-#
-$slim->get('/logica-de-programacao/curso-de-logica.php', function ($request, $response, $args) {
-
-    $site = $GLOBALS['site'];
-    $query = $request->getUri()->getQuery();
-    $destino = $site->url->base . "/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?" . $query;
-    // var_dump($query, $destino); die();
-
-    return $response->withRedirect($destino, 301);
-});
-
-
-#
-# próxima edição
+# entrar para lista da próxima edição
 #
 $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/', function ($request, $response, $args) {
 
@@ -187,4 +172,32 @@ $slim->get('/cursos/aulas-assistidas/{aluno}/{curso}/{aula}/{action}', function 
     # update
     #
     AulasAssistidas::update($args['aluno'], $args['curso'], $assistidas);
+});
+
+
+
+
+#
+# redirecionamentos:
+#
+
+#
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao.php', function ($request, $response, $args) {
+    $site = $GLOBALS['site'];
+    $query = $request->getUri()->getQuery();
+    $destino = $site->url->base . "/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?" . $query;
+    // var_dump($query, $destino); die();
+
+    return $response->withRedirect($destino, 301);
+});
+
+#
+$slim->get('/logica-de-programacao/curso-de-logica.php', function ($request, $response, $args) {
+
+    $site = $GLOBALS['site'];
+    $query = $request->getUri()->getQuery();
+    $destino = $site->url->base . "/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?" . $query;
+    // var_dump($query, $destino); die();
+
+    return $response->withRedirect($destino, 301);
 });

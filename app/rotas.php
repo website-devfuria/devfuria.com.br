@@ -1,5 +1,8 @@
 <?php
 
+use models\Contatos;
+
+
 #
 # Registra no banco de dados os contatos
 #
@@ -27,11 +30,47 @@ $slim->get('/app/mailing-list/', function ($request, $response, $args) {
     require $site->path->api . '/boot.php';
 
     # insert
-    Contatos::registrar($email, $utm_source, $utm_campaign, $utm_medium, $quando);
+    try {
 
+        $inscrito = Contatos::registrar($email, $utm_source, $utm_campaign, $utm_medium, $quando);
+        // var_dump($inscrito); die();
+
+    } catch (Exception $e) {
+        echo "não foi possível efetuar sua inscrição (email inválido ?)";
+        die();
+        // echo "<pre>";
+        // print_r("Mailer Error: " . $e);
+        // echo "</pre>";
+    }
+
+    if (isset($inscrito)) {
+        // echo '<p>Thanks man! <a href="javascript:window.history.go(-2)"> Go Back </a></p>';
+        exibir_uma_mensagem_legal();
+        tomar_ciencia_da_inscricao_do_seguinte($inscrito);
+    } else {
+        echo "não foi possível efetuar sua inscrição";
+    }
+
+
+});
+
+
+
+#
+#
+function exibir_uma_mensagem_legal() {
+    echo "mensagem legal";
+
+
+}
+
+#
+# aux - enviar notificação de inscrição
+#
+function tomar_ciencia_da_inscricao_do_seguinte($inscrito) {
     # notificação
-    $headers = "From: " . $email . "\r\n" .
-               "Reply-To: " . $email  . "\r\n" .
+    $headers = "From: " . $inscrito->email . "\r\n" .
+               "Reply-To: " . $inscrito->email  . "\r\n" .
                "MIME-Version: 1.0\r\n" .
                "Content-Type: text/html; charset=UTF-8\r\n" .
                "X-Mailer: PHP/" . phpversion();
@@ -44,19 +83,19 @@ $slim->get('/app/mailing-list/', function ($request, $response, $args) {
       <body>
         <table>
           <tr>
-            <th>email</th><td>$email</td>
+            <th>email</th><td>$inscrito->email</td>
           </tr>
           <tr>
-            <th>utm_source</th><td>$utm_source</td>
+            <th>utm_source</th><td>$inscrito->utm_source</td>
           </tr>
           <tr>
-            <th>utm_campaign</th><td>$utm_campaign</td>
+            <th>utm_campaign</th><td>$inscrito->utm_campaign</td>
           </tr>
           <tr>
-            <th>utm_medium</th><td>$utm_medium</td>
+            <th>utm_medium</th><td>$inscrito->utm_medium</td>
           </tr>
           <tr>
-            <th>quando</th><td>$quando</td>
+            <th>quando</th><td>$inscrito->quando</td>
           </tr>
         </table>
       </body>
@@ -70,6 +109,4 @@ EOT;
         mail($email, $subject, $message, $headers);
     }
 
-    echo '<p>Thanks man ! <a href="javascript:window.history.go(-2)"> Go Back </a></p>';
-
-});
+}
