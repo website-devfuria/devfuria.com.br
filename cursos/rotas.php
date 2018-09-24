@@ -58,7 +58,11 @@ $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-1edicao/', f
     // var_dump($content_parsed); die();
     $page->layout = "/layouts/cursos-log1.html";
 
-    return $this->view->render($response, $page->layout, ['site' => $GLOBALS['site'], 'page' => $page, "content"  => $content_parsed]);
+    return $this->view->render($response, $page->layout, [
+        'site'    => $GLOBALS['site'],
+        'page'    => $page,
+        "content" => $content_parsed
+    ]);
 
 });
 

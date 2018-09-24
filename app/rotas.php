@@ -30,38 +30,18 @@ $slim->get('/app/mailing-list/', function ($request, $response, $args) {
     require $site->path->api . '/boot.php';
 
     # insert
-    try {
-
-        $inscrito = Contatos::registrar($email, $utm_source, $utm_campaign, $utm_medium, $quando);
-        // var_dump($inscrito); die();
-
-    } catch (Exception $e) {
-        echo "não foi possível efetuar sua inscrição (email inválido ?)";
-        die();
-        // echo "<pre>";
-        // print_r("Mailer Error: " . $e);
-        // echo "</pre>";
-    }
-
-    if (isset($inscrito)) {
-        // echo '<p>Thanks man! <a href="javascript:window.history.go(-2)"> Go Back </a></p>';
-        exibir_uma_mensagem_legal();
-        tomar_ciencia_da_inscricao_do_seguinte($inscrito);
-    } else {
-        echo "não foi possível efetuar sua inscrição";
-    }
-
+    $inscrito = Contatos::registrar($email, $utm_source, $utm_campaign, $utm_medium, $quando);
+    exibir_uma_mensagem_legal();
+    tomar_ciencia_da_inscricao_do_seguinte($inscrito);
 
 });
 
-
-
+#
 #
 #
 function exibir_uma_mensagem_legal() {
-    echo "mensagem legal";
-
-
+    // echo "mensagem legal";
+    echo '<p>Thanks man! <a href="javascript:window.history.go(-2)"> Go Back </a></p>';
 }
 
 #
