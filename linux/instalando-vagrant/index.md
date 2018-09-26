@@ -9,11 +9,11 @@ capitulo:    linux-instalando-utils
 
 Baixe o pacote .rpm e execute
 
-    # rpm -ivh vagrant_1.3.1_x86_64.rpm
+    rpm -ivh vagrant_1.3.1_x86_64.rpm
 
 Para testar a instalação:
 
-    # vagrant -v
+    vagrant -v
 
 
 

@@ -40,7 +40,7 @@ Eu prefiro mover o arquivo para minha home, no meu computador seria `/home/flavi
 
 Para descompactar execute:
 
-    # tar -xvcf ruby-2.4.2.tar.gz
+    tar -xvcf ruby-2.4.2.tar.gz
 
 Ele irá criar uma pasta chamada `ruby-2.4.2`. Entre nela...
 
@@ -70,7 +70,7 @@ Instalando o Ruby no CentOS (6.4)
 
 Primeiro vamos resolver algumas dependências.
 
-    # yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel
+    yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel
 
 Baixe o código fonte do __Ruby__ no site oficial
 
@@ -88,21 +88,21 @@ Eu prefiro mover o arquivo para minha home, no meu computador seria `/home/flavi
 
 Para descompactar execute:
 
-    # tar -xvcf ruby-2.1.2.tar.gz
+    tar -xvcf ruby-2.1.2.tar.gz
 
 Ele irá criar uma pasta chamada `ruby-2.1.2`. Entre nela `cd /ruby-2.1.2`
 
 Execute tudo como root.
 
-    # ./configure
-    # make
-    # make install
+    ./configure
+    make
+    make install
 
 Pronto! __Ruby__ instalado.
 
 Para checar execute:
 
-    # ruby --version
+    ruby --version
 
 
 ### Instalando o RubyGems
@@ -117,18 +117,18 @@ Também devemos dar [permissão de execução](/linux/como-dar-permissao-de-exec
 
 Para descompactar execute:
 
-    # tar -xvcf rubygems-2.2.2
+    tar -xvcf rubygems-2.2.2
 
 Agora, entre na pasta e execute:
 
-    # ruby setup.rb
+    ruby setup.rb
 
 
 ### Instalando o Rails
 
 Execute:
 
-    # gem install rails
+    gem install rails
 
 
 - - -

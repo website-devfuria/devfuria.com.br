@@ -10,12 +10,12 @@ banco de dados, o desenvolvedor pode optar por entregar o seu software juntament
 
 Execute os comandos abaixo no terminal para instalar na família Debian/Ubuntu.
 
-    # apt-get install sqlite3
-    # apt-get install libsqlite3-dev
+    apt-get install sqlite3
+    apt-get install libsqlite3-dev
 
 Para visualizar cada arquivo, ou melhor, cada banco de dados, você poderá instalar o aplicativo __sqlitebrowser__:
 
-    # apt-get install sqlitebrowser
+    apt-get install sqlitebrowser
 
 No Debian, após a instalação, o aplicativo pode ser encontrado no seguinte menu: Applications/Programming/SQLite database browser.
 

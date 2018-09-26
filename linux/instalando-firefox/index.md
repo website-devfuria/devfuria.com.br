@@ -140,14 +140,14 @@ Instalando o Firefox via repositório (CentOS)
 
 Se você prefere instalar o __Firefox__ via repositório tente os passos abaixo:
 
-    # wget Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
-    # rpm -Uvh epel-release-6-8.noarch.rpm
+    wget Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+    rpm -Uvh epel-release-6-8.noarch.rpm
 
-    # wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-    # rpm -Uvh remi-release-6.rpm
+    wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+    rpm -Uvh remi-release-6.rpm
 
-    # yum --enablerepo=remi list firefox
-    # yum --enablerepo=remi install firefox
+    yum --enablerepo=remi list firefox
+    yum --enablerepo=remi install firefox
 
 - - -
 Fonte
@@ -160,17 +160,17 @@ Atualizando o Firefox para a última versão (CentOS)
 
 Adicionar os seguintes repositórios:
 
-    # rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
-    # rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+    rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+    rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 
 O comando seguinte mostra na tela o pacote que poderá ser atualizado
 
-    # yum --enablerepo=remi list firefox
+    yum --enablerepo=remi list firefox
 
 
 Atualize...
 
-    # yum update firefox
+    yum update firefox
 
 
 - - -

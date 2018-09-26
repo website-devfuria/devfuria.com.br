@@ -5,4 +5,4 @@ capitulo:    linux-instalando-audio-som
 ---
 
 
-	# yum install gtk-recordmydesktop
+    yum install gtk-recordmydesktop

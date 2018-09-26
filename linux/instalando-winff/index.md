@@ -16,12 +16,12 @@ capitulo:    linux-instalando-audio-som
 
 Adicione  o pacote abaixo
 
-	# yum install http://winff.org/docs/rpm/fedora/winff-repo-1.0-1.noarch.rpm
+    yum install http://winff.org/docs/rpm/fedora/winff-repo-1.0-1.noarch.rpm
 
 
 Agora instale o soft
 
-	# yum install winff
+    yum install winff
 
 
 

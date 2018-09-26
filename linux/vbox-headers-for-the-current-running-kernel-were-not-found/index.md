@@ -20,11 +20,11 @@ Se apareceu o erro abaixo
 
 Atualize seu sistema
 
-    # yum update
+    yum update
 
 E instale o kernel-devel
 
-    # yum install kernel-devel
+    yum install kernel-devel
 
 Aproveite para instalar o gcc
 

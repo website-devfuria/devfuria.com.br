@@ -25,7 +25,7 @@ Se você buscava isntlar a versão Java da Oracle veja esta outra receita
 ### Fedora
 
 
-	# su -c "yum install java-1.7.0-openjdk"
+    su -c "yum install java-1.7.0-openjdk"
 
 
 ### Ubuntu 12+

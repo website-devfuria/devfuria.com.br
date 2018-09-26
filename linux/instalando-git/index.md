@@ -8,11 +8,11 @@ No Linux podemos instalar o git através dos pacotes do sistema.
 
 Na família HadHat (Fedora, CentOS, etc...) execute:
 
-	# yum install git-core
+    yum install git-core
 
 Na família Debian (Ubuntu) execute:
 
-    # apt-get install git
+    apt-get install git
 
 Você também pode compilar os fontes, leia o capítulo
 [Primeiros passos - Instalando Git](http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git)
@@ -38,8 +38,8 @@ Para ver suas configurações execute `git config --list`.
 
 Talvez você queira aproveitar e instalar os utilitários de interface __gitk__ e __git gui__, basta executar:
 
-    # yum install gitk git-gui        // hadhat
-    # apt-get install gitk git-gui    // debian
+    yum install gitk git-gui        // hadhat
+    apt-get install gitk git-gui    // debian
 
 Para rodar o gitk execute, no terminal,  `gitk`.
 

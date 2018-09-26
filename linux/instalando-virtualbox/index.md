@@ -11,17 +11,17 @@ CentOS
 
 Baixar os seguintes pacotes ( http://rpm.pbone.net ):
 
-    VirtualBox-4.2-4.2.18_88780_el6-1.x86_64.rpm 
+    VirtualBox-4.2-4.2.18_88780_el6-1.x86_64.rpm
     SDL-1.2.14-3.el6.x86_64.rpm
     dkms-2.2.0.3-8.1.noarch.rpm
-    epel-release-6-8.noarch.rpm 
+    epel-release-6-8.noarch.rpm
 
 Instale-os:
 
     rpm -ivh SDL
     rpm -ivh VirtualBox
     rpm -ivh dkms
-    rpm -ivh epel-release-6-8.noarch.rpm 
+    rpm -ivh epel-release-6-8.noarch.rpm
 
 
 Execute:
@@ -43,10 +43,10 @@ Reinicie (`reboot`) e execute:
 
  Caso apareça o erro: "Failed to load VMMR0.r0 (VERR_SUPLIB_WORLD_WRITABLE)", execute no terminal:
 
-    # wget http://download.virtualbox.org/virtualbox/4.3.0/Oracle_VM_VirtualBox_Extension_Pack-4.3.0-89960.vbox-extpack
-    # chmod o-w /usr
-    # chmod o-w /usr/lib
-    # vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-4.3.0-89960.vbox-extpack
+    wget http://download.virtualbox.org/virtualbox/4.3.0/Oracle_VM_VirtualBox_Extension_Pack-4.3.0-89960.vbox-extpack
+    chmod o-w /usr
+    chmod o-w /usr/lib
+    vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-4.3.0-89960.vbox-extpack
 
 - - -
 Fontes
@@ -76,7 +76,7 @@ Fedora
 ---
 
 Numa pasta qualquer, crie um arquivo chamado `virtualbox.repo` e insira nele o seguinte conteúdo:
-	
+
 	[virtualbox]
 	name=Fedora $releasever - $basearch - VirtualBox
 	baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/$releasever/$basearch
@@ -87,15 +87,15 @@ Numa pasta qualquer, crie um arquivo chamado `virtualbox.repo` e insira nele o s
 
 Mover o arquivo recém criado para a pasta de repositórios adicionais do Fedora:
 
-	# mv virtualbox.repo /etc/yum.repos.d/
+    mv virtualbox.repo /etc/yum.repos.d/
 
 Agora, instale o pacote DMKS executando:
 
-	# yum install dkms
+    yum install dkms
 
 Instalar o Vbox:
 
-	# yum install VirtualBox-4.2
+    yum install VirtualBox-4.2
 
 - - -
 Fonte:
@@ -111,7 +111,7 @@ Utilize o Software Center ou siga esse tutorial [Como instalar o VirtualBox no U
 
 
 
-Configurações 
+Configurações
 ---
 
 
@@ -126,11 +126,11 @@ Obs: Desculpe, você terá que procurar este arquivo na net.
 
 Após a instalação, inicialize o terminal e execute os seguintes comandos:
 
-    # sudo apt-get update
-    # sudo apt-get install dkms
-    # sudo adduser seu_usuário vboxusers
+    sudo apt-get update
+    sudo apt-get install dkms
+    sudo adduser seu_usuário vboxusers
 
-Além da instalação acima também será preciso instalar o __samba__. Para isso, plugue o USB na máquina, entre nas suas 
+Além da instalação acima também será preciso instalar o __samba__. Para isso, plugue o USB na máquina, entre nas suas
 configurações e habilite a opção compartilhamento. Após a conclusão, inicialize a VirtualBox e nas configurações encontre
 o seu USB.
 
@@ -140,7 +140,7 @@ o seu USB.
 
 É preciso adicionar seu usuário ao grupo vboxusers
 
-    # adduser seu_usuario vboxusers
+    adduser seu_usuario vboxusers
 
 
 
@@ -154,8 +154,8 @@ Quando o virtual box apresenta o seguinte erro:
 
 Execute para corrigir:
 
-    # apt-get install virtual-dkms
-    # modprobe vboxdrv
+    apt-get install virtual-dkms
+    modprobe vboxdrv
 
 
 
@@ -164,11 +164,11 @@ Execute para corrigir:
 
 Quando o VirtualBox apresenta o erro acima, execute para corrigir:
 
-	# yum install kernel-develckernel-headers gcc dkms
+    yum install kernel-develckernel-headers gcc dkms
 
 Execute  em seguida:
 
-    # /etc/init.d/vboxdrv setup
+    /etc/init.d/vboxdrv setup
 
 
 <!--

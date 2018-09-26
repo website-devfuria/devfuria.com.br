@@ -7,7 +7,7 @@ capitulo:    linux-instalando-utils
 
 No Ubuntu voce pode tentar o comando abaixo:
 
-    # apt-get install msttcorefonts x-ttcidfont-conf
+    apt-get install msttcorefonts x-ttcidfont-conf
 
 
 Aproveite para dar uma olhada nos seguintes artigos.

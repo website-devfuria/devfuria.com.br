@@ -7,9 +7,9 @@ capitulo:    linux-instalando-utils
 
 Importe a chave GPGP
 
-	# su -c "gpg --keyserver pgp.mit.edu --recv-keys 0xD66B746E"
+    su -c "gpg --keyserver pgp.mit.edu --recv-keys 0xD66B746E"
 
-	# su -c "gpg -a -o /etc/pki/rpm-gpg/RPM-GPG-KEY-skype --export 0xD66B746E"
+    su -c "gpg -a -o /etc/pki/rpm-gpg/RPM-GPG-KEY-skype --export 0xD66B746E"
 
 Inclua o repositório do __Skype__:
 
@@ -25,22 +25,22 @@ Crie um arquivo chamado `skype.repo` e insira o conteúdo abaixo:
 
 Mova o arquivo para a pasta `/etc/yum.repos.d/`, veja comando abaixo:
 
-	# mv skype.repo /etc/yum.repos.d/
+    mv skype.repo /etc/yum.repos.d/
 
 
 Instale as dependências:
 
-	# yum install libXScrnSaver.i?86 libX11.i?86 libXv.i?86 libv4l.i?86 alsa-plugins-pulseaudio.i?86 qt-x11.i?86;
+    yum install libXScrnSaver.i?86 libX11.i?86 libXv.i?86 libv4l.i?86 alsa-plugins-pulseaudio.i?86 qt-x11.i?86;
 
 Instale o software:
 
-	# wget http://www.skype.com/go/getskype-linux-beta-fc10
-    # yum localinstall skype-*.rpm --nogpgcheck
+    wget http://www.skype.com/go/getskype-linux-beta-fc10
+    yum localinstall skype-*.rpm --nogpgcheck
 
 
 Adicione um alias ao arquivo `.bashrc`:
 
-	# alias skype='LD_PRELOAD=/usr/lib/libv4l/v4l1compat.so /usr/bin/skype'
+    alias skype='LD_PRELOAD=/usr/lib/libv4l/v4l1compat.so /usr/bin/skype'
 
 
 - - -

@@ -7,13 +7,13 @@ capitulo:    linux-instalando-browser
 
 ### Debian (wheezy)
 
-    # apt-get install flashplugin-nonfree
+    apt-get install flashplugin-nonfree
 
 ### Fedora 19
 
 Digite no terminal
 
-    # yum install chromium flash-plugin
+    yum install chromium flash-plugin
 
 
 ### CentOS (6.4)
@@ -32,7 +32,7 @@ Eu testei depois de instalados, então não sei dizer qual que realmente resolve
 Dê [permissão de execução](/linux/como-dar-permissao-de-execucao) para os arquivos __rpm__ (precisa ser root) e, em seguida,
 instale via rpm:
 
-    # rpm -ivh nome-do-pacote.rpm
+    rpm -ivh nome-do-pacote.rpm
 
 Reinicie o Firefox.
 

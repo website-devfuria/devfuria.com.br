@@ -29,7 +29,7 @@ O comando completo varia de distro para distro, veja as diferenças:
 
 ### Família Debian, Ubuntu
 
-	# /etc/init.d/apache2 [comando]
+    /etc/init.d/apache2 [comando]
 
 
 ### Família HadHat, CentOS

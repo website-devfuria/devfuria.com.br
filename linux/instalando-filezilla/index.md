@@ -16,15 +16,15 @@ Abaixo seguem receitas de como instalar via __apt-get__ / __yum__:
 
 ### CentOS 6.4+
 
-	# yum -y install filezilla
+    yum -y install filezilla
 
 ### Fedora 17+
 
-	# yum -y install filezilla
+    yum -y install filezilla
 
 ### Ubuntu
 
-    # apt-get -y install filezilla filezilla-locales
+    apt-get -y install filezilla filezilla-locales
 
 Ou instale via software center
 

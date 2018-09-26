@@ -35,9 +35,9 @@ Instale através do aptitute
 Para instalar o PHP através do __apt-get__ execute o comando abaixo, você precisará ser root ou utiliza `sudo` antes do
 comando.
 
-    # apt-get install php5
+    apt-get install php5
 
-São, aproximadamente, 25mb baixados. Para testar a instalação execute...
+Serão baixados 25 megabytes, aproximadamente. Para testar a instalação execute...
 
     php -v
 
@@ -64,11 +64,11 @@ versões do PHP, isso é ótimo pois você poderá ter mais de uma versão insta
 
 Talvez você queira instalar alguns pacotes complementares como, por exemplo a biblioteca GD para geração de imagens:
 
-    # apt-get install php5-gd
+    apt-get install php5-gd
 
 Ou a biblioteca __curl__:
 
-    # apt-get install php5-curl
+    apt-get install php5-curl
 
 
 Você é quem deve definir o que instalar, para ajudar temos o comando abaixo que lista as possíveis opções...
@@ -92,11 +92,11 @@ Seguimos a mesma idéia de instalação do Ubuntu.
 
 Primeiro instalamos o php:
 
-    # yum install php
+    yum install php
 
 Depois, os demais pacotes...
 
-    # yum install php-common php-pecl-apc php-cli php-pear php-pdo php-mysql php-pgsql php-pecl-mongo
+    yum install php-common php-pecl-apc php-cli php-pear php-pdo php-mysql php-pgsql php-pecl-mongo
 	php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml php-soap
 
 

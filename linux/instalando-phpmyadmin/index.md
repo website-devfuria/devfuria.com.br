@@ -9,7 +9,7 @@ O PhpMyAdmin é um aplicativo responsável por oferecer uma interface amigável 
 
 ### Ubuntu 15.4 (Vivid Vervet)
 
-    # apt-get install phpmyadmin
+    apt-get install phpmyadmin
 
 Responda as perguntas do instalador e, ao final, abra o navegador, digite `localhost/phpmyadmin`. A tela de "login" deve
 ser exibida, digite novamente o usuário do MySQL (root) e sua senha. Pronto, você está dentro do sistema, agora é possível
@@ -21,16 +21,16 @@ manipular o MySQL com um interface amigável.
 
 Talvez seja preciso instalar o EPEL antes:
 
-    # wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
-    # rpm -ivh EPEL-release-6-8.noarch.rpm
+    wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+    rpm -ivh EPEL-release-6-8.noarch.rpm
 
 Instale o software:
 
-    # yum install phpmyadmin -y
+    yum install phpmyadmin -y
 
 Reinicie o apache
 
-    # /etc/init.d/httpd restart
+    /etc/init.d/httpd restart
 
 
 
@@ -38,11 +38,11 @@ Reinicie o apache
 
 Instale:
 
-	# yum install phpmyadmin
+    yum install phpmyadmin
 
 Reinicie a apche:
 
-	# systemctl restart httpd.service
+    systemctl restart httpd.service
 
 
 
@@ -51,7 +51,7 @@ Reinicie a apche:
 
 Edite o arquivo abaixo...
 
-	# nano usr/share/phpmyadmin/libraries/config.default.php
+    nano usr/share/phpmyadmin/libraries/config.default.php
 
 ...alterando as seguintes variáveis
 
@@ -61,4 +61,4 @@ Edite o arquivo abaixo...
 
 Para alterar apenas a senha, digite no terminal...
 
-	# mysqladmin -u root -p'oldpassword' password newpass
+    mysqladmin -u root -p'oldpassword' password newpass

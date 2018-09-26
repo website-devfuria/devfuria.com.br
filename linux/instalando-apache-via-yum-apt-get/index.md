@@ -24,16 +24,16 @@ CentOS
 
 Instale o __Apache__ via __yum__:
 
-    # yum install httpd -y
+    yum install httpd -y
 
 Inicie o serviço.
 
-    # /etc/init.d/httpd start
+    /etc/init.d/httpd start
 
 
 Configure para iniciar junto com o sistema operacional.
 
-    # chkconfig httpd on
+    chkconfig httpd on
 
 Para testar, abra o navegador e acesse `http://localhost`.
 
@@ -47,18 +47,18 @@ Fedora
 
 Instale o __Apache__ via __yum__:
 
-    # yum install httpd
+    yum install httpd
 
 
 Inicie o serviço.
 
-    # systemctl start httpd.service
+    systemctl start httpd.service
 
 Repare que o Fedora utiliza esse tal de __systemctl__.
 
 Coloque o __Apache__ para iniciar junto com o sistema operacional:
 
-    # chkconfig --levels 235 httpd on
+    chkconfig --levels 235 httpd on
 
 Para testar, abra o navegador e acesse `http://localhost`.
 
@@ -72,12 +72,12 @@ Ubuntu
 
 Atualize o sistema.
 
-    # apt-get update
-    # apt-get upgrade
+    apt-get update
+    apt-get upgrade
 
 Instale o __Apache__.
 
-    # apt-get install apache2
+    apt-get install apache2
 
 Para testar, abra o navegador e acesse `http://localhost`.
 

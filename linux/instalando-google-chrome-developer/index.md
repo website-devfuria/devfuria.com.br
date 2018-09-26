@@ -22,13 +22,13 @@ Após baixar o arquivo, [dê permissão de execução](/linux/como-dar-permissao
 
 Eu optei em executar através do __yum__, deu tudo certo, bastou...
 
-    # yum google-chrome-stable_current_x86_64
+    yum google-chrome-stable_current_x86_64
 
 Mas você também poderá executar...
 
-    # rpm -ivh google-chrome-stable_current_x86_64.rpm
+    rpm -ivh google-chrome-stable_current_x86_64.rpm
 
 
 ### DEB
 
-    # dpkg -i google-chrome-stable_current_x86_64.deb
+    dpkg -i google-chrome-stable_current_x86_64.deb

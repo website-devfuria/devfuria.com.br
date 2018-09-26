@@ -10,7 +10,7 @@ Wodim é um gravador de imagens iso.
 
 ### Instalando
 
-    # yum install wodim
+    yum install wodim
 
 
 ### Como utilizar o Wodim

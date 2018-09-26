@@ -9,7 +9,7 @@ capitulo:    linux-instalando-apache
 
 Altere o arquivo "default" no seguinte local:
 
-	# nano /etc/apache2/sites-available/default
+    nano /etc/apache2/sites-available/default
 
 Eu utilizei o "nano" como editor de textos.
 
@@ -21,7 +21,7 @@ Procure entender o arquivo e altere o caminho para:
 
 Reinicie apache
 
-	# /etc/init.d/apache2 restart
+    /etc/init.d/apache2 restart
 
 
 
@@ -32,9 +32,9 @@ optei por dar permissão de escrita e alterar o dono das pastas.
 
 Mudar o dono da pastas /var/www/html de root para o seu usuário:
 
-	# cd /var/www/
-	# chown seu_usuario:seu_usuario html/ -R
+    cd /var/www/
+    chown seu_usuario:seu_usuario html/ -R
 
 Alterando as permissões:
 
-	# chmod 777 -R html/
+    chmod 777 -R html/

@@ -6,14 +6,14 @@ capitulo:    linux-instalando-audio-som
 
 Adicione os repositórios abaixo:
 
-	# su -c 'rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm'
-	# su -c 'rpm -Uvh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm'
-	# su -c 'rpm -Uvh http://rpm.livna.org/livna-release.rpm'
+    su -c 'rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm'
+    su -c 'rpm -Uvh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm'
+    su -c 'rpm -Uvh http://rpm.livna.org/livna-release.rpm'
 
 Instale as dependências
 
-	# yum install mjpegtools mjpegtools-devel
-	# yum install libquicktime
+    yum install mjpegtools mjpegtools-devel
+    yum install libquicktime
 
 Baixar o RPM (kino-1.3.4-1.el6.rf.x86_64.rpm), procure pela versão mais atual.
 
@@ -21,7 +21,7 @@ Baixar o RPM (kino-1.3.4-1.el6.rf.x86_64.rpm), procure pela versão mais atual.
 
 Instale via _rpm__:
 
-	# rpm -ivh kino-1.3.4-1.el6.rf.x86_64.rpm
+    rpm -ivh kino-1.3.4-1.el6.rf.x86_64.rpm
 
 
 ### Veja mais informações em

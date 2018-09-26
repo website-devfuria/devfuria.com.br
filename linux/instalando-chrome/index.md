@@ -25,7 +25,7 @@ No arquivo, insira o seguinte conteúdo:
 
 Agora instale via `yum`.
 
-	# yum install google-chrome-stable
+    yum install google-chrome-stable
 
 
 
@@ -33,9 +33,9 @@ Agora instale via `yum`.
 
 Ttrata-se de um script que faz o trabalho pesado:
 
-	# wget http://chrome.richardlloyd.org.uk/install_chrome.sh
-	# chmod u+x install_chrome.sh
-	# ./install_chrome.sh
+    wget http://chrome.richardlloyd.org.uk/install_chrome.sh
+    chmod u+x install_chrome.sh
+    ./install_chrome.sh
 
 - - -
 Fonte:
@@ -48,14 +48,14 @@ Fedora
 
 Instale as dependências:
 
-	# yum install redhat-lsb wget
+    yum install redhat-lsb wget
 
 Baixar o pacote __rpm__ no site da google e dê [permissão para execução](/linux/como-dar-permissao-de-execucao/).
 
 
 Instale:
 
-	# rpm -ivh nome-do-pacote.rpm
+    rpm -ivh nome-do-pacote.rpm
 
 
 
@@ -74,8 +74,8 @@ Baixar pacote e dar [permissão para execução](/linux/como-dar-permissao-de-ex
 
 Instalar dependências
 
-	# apt-get install libxss1
+    apt-get install libxss1
 
 Executar o pacote.
 
-	# dpkg google-crhme*.deb
+    dpkg google-crhme*.deb

@@ -126,21 +126,21 @@ Dica: talvez seja muito mais fácil instalar pelo Software-Center, caso não con
 
 Instale os seguintes pacotes:
 
-	# apt-get install php5-dev php-pear
+    apt-get install php5-dev php-pear
 
 Com o PECL (pear) pode-se instalar novos pacotes no estilo `apt-get`, instale o x-debug:
 
-    # pecl install xdebug
+    pecl install xdebug
 
 Onde será que o Linux gravou a extensão x-debug? Digite e anote o caminho:
 
-    # find / -name 'xdebug.so' 2> /dev/null
+    find / -name 'xdebug.so' 2> /dev/null
 
 Agora, precisamos dizer ao PHP que o x-debug existe. Par tal, é preciso incluir um linha no final do arquivo `php.ini`.
 
 Abra o `php.ini`:
 
-    # nano /etc/php5/php.ini
+    nano /etc/php5/php.ini
 
 No final do arquivo ou no fim da seção "extensões" inclua a seguinte linha:
 
@@ -148,7 +148,7 @@ No final do arquivo ou no fim da seção "extensões" inclua a seguinte linha:
 
 Reinicie o apache
 
-	# /etc/init.d/apache2 restart
+    /etc/init.d/apache2 restart
 
 
 
@@ -160,4 +160,4 @@ Fedora
 
 Execute o comando abaixo e [reinicie o apache](/linux/reiniciar-servidor-apache/)
 
-	# yum install php-pecl-xdebug
+    yum install php-pecl-xdebug

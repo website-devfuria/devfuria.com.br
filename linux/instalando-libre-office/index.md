@@ -15,7 +15,7 @@ Nela colocaremos os arquivos de instalação (rpm).
 
 Baixe o __Libre Office__, execute o comando:
 
-    # wget http://download.documentfoundation.org/libreoffice/stable/4.1.1/rpm/x86_64/LibreOffice_4.1.1_Linux_x86-64_rpm.tar.gz
+    wget http://download.documentfoundation.org/libreoffice/stable/4.1.1/rpm/x86_64/LibreOffice_4.1.1_Linux_x86-64_rpm.tar.gz
 
 Obs: 4.1 é a versão atual em set/2013.
 
@@ -65,8 +65,8 @@ Acima da versão 17 do Fedora, já vem instalado.
 
 Na versão 17, execute:
 
-	# yum list|grep libreoffice
-	# yum install libreoffice
+    yum list|grep libreoffice
+    yum install libreoffice
 
 
 - - -

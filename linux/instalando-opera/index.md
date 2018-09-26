@@ -12,6 +12,6 @@ Baixar o pacot rpm no site do opera
 
 Executar o arquivo
 
-	# rpm -Uvh /path/to/downloaded/opera/rpm/package/opera-*.rpm
+    rpm -Uvh /path/to/downloaded/opera/rpm/package/opera-*.rpm
 
 Onde o `*` deve ser trocado pelo número da versão.

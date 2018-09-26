@@ -13,17 +13,17 @@ Os pré requisitos para instalação são __apache__, __php__ e pacotes de depen
 
 Como root, digite os comandos:
 
-    # wget http://pecl.php.net/get/bcompiler-1.0.2.tgz
-    # tar -xvf bcompiler-1.0.2.tgz
-    # phpize
-    # ./configure
-    # make
-    # make install
-    # make test
+    wget http://pecl.php.net/get/bcompiler-1.0.2.tgz
+    tar -xvf bcompiler-1.0.2.tgz
+    phpize
+    ./configure
+    make
+    make install
+    make test
 
 Se ocorrer um erro com __phpize__, digite no terminal
 
-    # yum install php-devel
+    yum install php-devel
 
 Em seguida, entre no __php.ini__
 

@@ -37,15 +37,15 @@ Fonte:
 
 Adicione o repositório
 
-	# yum-config-manager --add-repo http://repo.cloudhike.com/sublime2/fedora/sublime2.repo
+    yum-config-manager --add-repo http://repo.cloudhike.com/sublime2/fedora/sublime2.repo
 
 Habilite o repositório
 
-	# yum-config-manager --enable
+    yum-config-manager --enable
 
 Instale
 
-	# yum install sublime-text
+    yum install sublime-text
 
 - - -
 Fonte:

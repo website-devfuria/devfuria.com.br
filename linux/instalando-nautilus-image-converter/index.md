@@ -6,4 +6,4 @@ capitulo:    linux-instalando-audio-som
 
 Redimensionador de imagens para o Nautilus (gerenciador de aruqivos do Linux).
 
-	# yum install nautilus-image-converter
+    yum install nautilus-image-converter

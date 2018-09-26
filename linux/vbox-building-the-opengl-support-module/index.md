@@ -12,18 +12,18 @@ Para resolver precisaremos criar alguns linsk simbólicos para a seguinte pasta 
 
 Para descobrir a versão de seu kernel, execute
 
-    # uname -r.
+    uname -r.
 
 Mas não precisa anotar, podemos fazer isso de forma mais direta, veja:
 
-    # cd /usr/src/kernels/$(uname -r)/include/drm
+    cd /usr/src/kernels/$(uname -r)/include/drm
 
 Agora é só criar os links:
 
-    # ln -s /usr/include/drm/drm.h drm.h  
-    # ln -s /usr/include/drm/drm_sarea.h drm_sarea.h  
-    # ln -s /usr/include/drm/drm_mode.h drm_mode.h  
-    # ln -s /usr/include/drm/drm_fourcc.h drm_fourcc.h
+    ln -s /usr/include/drm/drm.h drm.h
+    ln -s /usr/include/drm/drm_sarea.h drm_sarea.h
+    ln -s /usr/include/drm/drm_mode.h drm_mode.h
+    ln -s /usr/include/drm/drm_fourcc.h drm_fourcc.h
 
 
 Agora tente reinstalar o __GuestAdditions__.

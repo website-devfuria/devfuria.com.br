@@ -7,16 +7,16 @@ capitulo:    linux-instalando-audio-som
 
 Adicione o repositório:
 
-	# add-apt-repository ppa:ubuntu-x-swat/x-updates
+    add-apt-repository ppa:ubuntu-x-swat/x-updates
 
 Atualize o sistema
 
-	# apt-get update
+    apt-get update
 
 Instale os divers
 
-	# apt-get install nvidia-current
+    apt-get install nvidia-current
 
 Reinicie a máquina
 
-	# reboot
+    reboot

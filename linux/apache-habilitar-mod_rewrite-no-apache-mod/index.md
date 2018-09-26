@@ -11,7 +11,7 @@ Vou mostrar como fazer isso no servidor Apache em uma máquina Debian/Ubuntu.
 Vamos habilitar o módulo de reescrita.
 
     $ cd /etc/apache2/mods-available
-    # a2enmod rewrite
+    a2enmod rewrite
 
 Também precisamos fazer uma pequena alteração no arquivo de configuração do Apache, o problema aqui é você encontrar o
 dito cujo.
@@ -19,12 +19,12 @@ dito cujo.
 Normalmente ele se encontra neste local...
 
     #
-    # Família hedhat
+    Família hedhat
     #
     /etc/httpd/conf/httpd.conf
 
     #
-    # família Debian
+    família Debian
     #
     /etc/apache2/apache2.conf
 
@@ -75,6 +75,6 @@ Para testar podemos fazer um redirecionamento simples, bem simples.
 Crie o arquivo `.htaccess` na pasta `seu-document-root/old/` e acesse http://localhost/old
 
     #
-    # /localhost/old/.htaccess
+    /localhost/old/.htaccess
     #
     Redirect permanent /old http://devfuria.com.br/

@@ -10,11 +10,11 @@ Speedcrunch
 
 Baixiar pacote rpm:
 
-    # http://share.cx.com/w6FmSF
+    http://share.cx.com/w6FmSF
 
 Instalar
 
-    # rpm -Uvh speedcrunch-0.10.1-3.x86_64.rpm
+    rpm -Uvh speedcrunch-0.10.1-3.x86_64.rpm
 
 
 ![](calculadora-scrunch.jpeg)
@@ -26,7 +26,7 @@ Gcalctool
 
 Executar
 
-    # yum -y install gcalctool
+    yum -y install gcalctool
 
 
 ![](calculadora-gcalctool.png)

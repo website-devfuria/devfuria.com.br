@@ -2,7 +2,7 @@
 title:       "Django, resolvendo o erro 'Error loading MySQLdb module: No module named MySQLdb'"
 description: "Aprenda a resolve o erro 'Error loading MySQLdb module' no Django"
 capitulo:    linux-artigos
-ordem: 
+ordem:
 ---
 
 Este artigo demonstra como resolver o erro `Error loading MySQLdb module: No module named MySQLdb`. Importante destacar
@@ -139,7 +139,7 @@ Na [documentação do Django](https://docs.djangoproject.com/en/1.7/ref/database
 No segundo link eu baixei o pacote para Debian e tentei instalar.
 Não obtive mensagem de erro, mas parece que não surtiu efeito algum.
 
-    dpkg -i mysql-connector-python_1.2.3-1debian6.0_all.deb 
+    dpkg -i mysql-connector-python_1.2.3-1debian6.0_all.deb
     A seleccionar pacote anteriormente não seleccionado mysql-connector-python.
     (Lendo banco de dados ... 181790 ficheiros e directórios actualmente instalados.)
     Desempacotando mysql-connector-python (de mysql-connector-python_1.2.3-1debian6.0_all.deb) ...
@@ -205,9 +205,9 @@ Além de arriscado não deu certo...
 
 Clone o repositório https://github.com/farcepest/MySQLdb1 mas não o __master__ e sim o branch __MySQLdb-1.3__.
 
-    # cd MySQL-python-XXXXX
-    # python3 setup.py build
-    # python3 setup.py install
+    cd MySQL-python-XXXXX
+    python3 setup.py build
+    python3 setup.py install
 
 Comigo parou no __build__, deu o erro:
 
@@ -219,8 +219,8 @@ OK, entrei no arquivo `setup_posix.py` na linha 2 e troquei `from ConfigParser` 
 
 Executei novamente...
 
-    # python3 setup.py build
-    # python3 setup.py install
+    python3 setup.py build
+    python3 setup.py install
 
 Tudo OK, 1/2 caminho andado.
 
@@ -240,7 +240,7 @@ Corri para tentar o `python3 manage.py runserver` mas agora o erro é outro:
     AttributeError: 'module' object has no attribute 'StringType'
 
 
-    
+
 
 
 

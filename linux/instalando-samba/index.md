@@ -7,19 +7,19 @@ capitulo:    linux-instalando-utils
 
 Execute o seguinte comando:
 
-	# yum install samba samba-client samba-doc samba-swat
+    yum install samba samba-client samba-doc samba-swat
 
 Inicialize o serviço (atalho)
 
-	# service smb start
+    service smb start
 
 Para iniciar o serviço:
 
-	# /etc/init.d/samba start
+    /etc/init.d/samba start
 
 Para parar o serviço:
 
-	# /etc/init.d/samba stop
+    /etc/init.d/samba stop
 
 
 - - -
