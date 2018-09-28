@@ -19,11 +19,11 @@ $menu['html-css-intro'] = [
 #
 #
 $menu['html-css-elementos'] = [
-    "/html-css/listas/"             => "HTML &amp; CSS - Listas",
-    "/html-css/div-span/"           => "HTML &amp; CSS - Div e Span",
-    "/html-css/paragrafos-imagens/" => "HTML &amp; CSS - Parágrafos e imagens",
-    "/html-css/tabelas/"            => "HTML &amp; CSS - Tabelas",
-    "/html-css/ancoras/"            => "HTML &amp; CSS - Âncoras (links)"
+    "/html-css/listas/"             => "HTML & CSS - Listas",
+    "/html-css/div-span/"           => "HTML & CSS - Div e Span",
+    "/html-css/paragrafos-imagens/" => "HTML & CSS - Parágrafos e imagens",
+    "/html-css/tabelas/"            => "HTML & CSS - Tabelas",
+    "/html-css/ancoras/"            => "HTML & CSS - Âncoras (links)"
 ];
 
 #
