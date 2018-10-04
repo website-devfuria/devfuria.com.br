@@ -69,7 +69,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
             <div class="col-sm-4">
                 <div class="pfblock-header wow fadeInUp">
                     <h3 class="pfblock-title">Lógica + Testes</h3>
-                    <p>Este curso é para desafiar sua lógica de programção.</p>
+                    <p>Este curso é para desafiar sua lógica de programação.</p>
                     <p>Você nunca mais será o mesmo</p>
                     <p>depois deste curso !!!</p>
                     <p><a class="btn btn-danger" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Só para os corajosos!!!</a></p>
