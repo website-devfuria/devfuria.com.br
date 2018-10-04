@@ -61,6 +61,7 @@ $site->path->logs     = $site->path->app . "/logs";
 $site->path->includes = $site->path->app . "/templates/includes";
 $site->path->layouts  = $site->path->app . "/templates/layouts";
 $site->path->api      = dirname($site->path->base) . "/devfuria.subs/api";
+$site->path->pagseg   = dirname($site->path->base) . "/devfuria.subs/pagseguro";
 // var_dump($site->path); die();
 
 // if(file_exists($site->path->api)) {
@@ -97,8 +98,8 @@ $site->url->mailinglist = "/app/mailing-list/";
 #
 # ligar
 #
-$site->enable_analytics = true;
-$site->enable_disqus    = true;
+$site->enable_analytics = false;
+$site->enable_disqus    = false;
 
 
 #
