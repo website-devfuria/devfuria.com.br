@@ -15,6 +15,7 @@ $slim->get('/app/mailing-list/', function ($request, $response, $args) {
     $utm_campaign = (isset($params['utm_campaign'])) ? $params['utm_campaign'] : 'não-informado';
     $utm_medium   = (isset($params['utm_medium']))   ? $params['utm_medium']   : 'não-informado';
 
+    $nome   = (isset($params['nome'])) ? $params['nome'] : '';
     $email  = (isset($params['email'])) ? $params['email'] : 'não-informado';
     $quando = date('Y-m-d H:i:s');
 
@@ -22,6 +23,7 @@ $slim->get('/app/mailing-list/', function ($request, $response, $args) {
     // $utm_source   = "a2";
     // $utm_campaign = "a3";
     // $utm_medium   = "a4";
+    // $nome   = "a0";
     // $email  = "a1";
     // $quando = date('Y-m-d H:i:s');
 
@@ -30,9 +32,11 @@ $slim->get('/app/mailing-list/', function ($request, $response, $args) {
     require $site->path->api . '/boot.php';
 
     # insert
-    $inscrito = Contatos::registrar($email, $utm_source, $utm_campaign, $utm_medium, $quando);
-    exibir_uma_mensagem_legal();
-    tomar_ciencia_da_inscricao_do_seguinte($inscrito);
+    $inscrito = Contatos::registrar($nome, $email, $utm_source, $utm_campaign, $utm_medium, $quando);
+    if ($inscrito) {
+        exibir_uma_mensagem_legal();
+        tomar_ciencia_da_inscricao_do_seguinte($inscrito);
+    }
 
 });
 
