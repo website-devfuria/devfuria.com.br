@@ -4,52 +4,65 @@
 
     {% include 'includes/header.html' %}
     {% include 'includes/header-og.html' %}
-
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-    <style type="text/css">
-        body {
-            font-family: 'Source Code Pro', monospace;
-            height: 80vh;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-        }
-        h1 {
-            margin: 0;
-            padding: 0;
-        }
-        h2 {
-            padding: 0;
-            font-size: .8em;
-            color: #767676;
-        }
-    </style>
+    {% include 'skeleton204/css.html' %}
 
 {% endblock %}
 
 {% block body %}
 
-        <h2>Powered by devfuria.com.br</h2>
-        <h1>Curso de Lógica <br /> + <br />Testes de Unidades</h1>
+    <div class="container">
+        <section class="header">
+            <p>Bem vindo(a) ao site devfuria.com.br</p>
+            <h2 class="title">Curso de Lógica  + Testes de Unidades</h2>
 
-        <!-- <p>Estão abertas as matrículas!</p> -->
-        <!-- <p>As vagas são disputadas e é por tempo limitado.</p> -->
-        <!-- <p><strong>Quero me matricular no curso</strong>!</p> -->
+            <form action="{{ base_url() }}{{ site.url.mailinglist }}">
+                <input type="hidden" value="{{ utm.source }}" name="utm_source"/>
+                <input type="hidden" value="{{ utm.campaign}}" name="utm_campaign"/>
+                <input type="hidden" value="{{ utm.medium }}" name="utm_medium"/>
+                <label><input type="text" value="" name="nome" placeholder="primeiro nome" style="width: 250px" /></label>
+                <label><input type="text" value="" name="email" placeholder="seu melhor email" style="width: 250px" /></label>
+                <button type="submit"class="button button-primary">Pré inscrição</button>
+            </form>
 
-        <!-- <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p> -->
-        <!-- <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p> -->
+            <p>Nós enviaremos para você um email com </p>
+            <p>mais detalhes sobre o curso</p>
+            <p>e o acesso a plataforma.</p>
 
+            <!-- <a href="{{ base_url() }}"><img src="{{ base_url() }}/app/assets/imagens/devfuria-face-capa-02.png" alt="eu" width="30%" height="30%" /></a> -->
+            <!-- <img src="{{ base_url() }}/app/assets/imagens/135420.jpg" alt="eu" width="30%" height="30%" /> -->
 
-        <p><br /></p>
+            <!-- <p><a class="btn btn-primary" href="h{{ base_url() }}/cursos//logica-de-programacao-aliada-a-testes-unitarios/" role="button">Saiba mais</a></p> -->
 
-        <form action="{{ base_url() }}{{ site.url.mailinglist }}">
-            <input type="hidden" value="{{ utm.source }}" name="utm_source"/>
-            <input type="hidden" value="{{ utm.campaign}}" name="utm_campaign"/>
-            <input type="hidden" value="{{ utm.medium }}" name="utm_medium"/>
-            <label><input type="text" value="" name="email" placeholder="seu melhor email" style="width: 250px" /></label>
-            <label><button type="submit">Efetuar Matrícula</button></label>
-        </form>
+            <!--
+            <p>Estão abertas as matrículas!</p>
+            <p>As vagas são disputadas e é por tempo limitado.</p>
+            <p><strong>Quero me matricular no curso</strong>!</p>
+            -->
+
+            <!--
+            <p>Cadastre seu email e descubra mais detalhes sobre este curso!</p>
+            <p><a class="btn btn-primary" href="https://goo.gl/forms/LCWvmFIUr747EXai2" role="button">Cadastre-se aqui!!!</a></p>
+            -->
+
+            <!--
+            <div class="value-props row">
+                <div class="four columns value-prop">
+                      <img class="value-img" src="images/feather.svg">
+                      Light as a feather at ~400 lines &amp; built with mobile in mind.
+                </div>
+                <div class="four columns value-prop">
+                      <img class="value-img" src="images/pens.svg">
+                      Styles designed to be a starting point, not a UI framework.
+                </div>
+                <div class="four columns value-prop">
+                      <img class="value-img" src="images/watch.svg">
+                    Quick to start with zero compiling or installing necessary.
+                </div>
+            </div>
+            -->
+
+        </section>
+    </div>
+
 
 {% endblock %}
