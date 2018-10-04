@@ -17,11 +17,75 @@ $slim->get('/cursos/', function ($request, $response, $args) {
 # Esta é a página do curso, que explica o curso em detalhes
 #
 $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/', function ($request, $response, $args) {
-    var_dump('montar páginas de cursos'); die();
+    // $site = $GLOBALS['site'];
+    // var_dump($site->url->base);
+    // echo "<a href='{$site->url->base}/cursos/logica-de-programacao-aliada-a-testes-unitarios/checkout'>checkout</a>";
+
+    $page = oop\Page::getPage('/cursos/logica+testes-2sobre/');
+    // var_dump($page->file); die();
+    // $layout = 'layouts/home.html';
+    $content_parsed = $this->view->fetchFromString($page->content);
+    // var_dump($content_parsed); die();
+    $page->layout = "/layouts/cursos-log2-sobre.html";
+
+    return $this->view->render($response, $page->layout, [
+        'site'    => $GLOBALS['site'],
+        'page'    => $page,
+        "content" => $content_parsed
+    ]);
+
+
+
+});
+
+
+#
+# Comprar
+#
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/checkout', function ($request, $response, $args) {
+    # api
+    $site = $GLOBALS['site'];
+    require $site->path->pagseg . '/boot.php';
+
+    InicializarPagSeguro($ambiente, $conta, $token, $logs, $path_log);
+    $url_pagto = getUrlChekout();
+    echo "<a href='$url_pagto'>ir para checkout pagseguro</a>";
+    return $response->withRedirect($url_pagto);
+
+});
+
+
+#
+# teste manual pagseguro (session code)
+#
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/checkout/session-code', function ($request, $response, $args) {
+    # api
+    $site = $GLOBALS['site'];
+    require $site->path->pagseg . '/boot.php';
+
+    InicializarPagSeguro($ambiente, $conta, $token, $logs, $path_log);
+    $sessionCode = getSessionCode();
+    var_dump($sessionCode);
 });
 
 #
-# entrar para lista da próxima edição
+# teste manual pagseguro (url)
+#
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/checkout/url', function ($request, $response, $args) {
+    # api
+    $site = $GLOBALS['site'];
+    require $site->path->pagseg . '/boot.php';
+
+    InicializarPagSeguro($ambiente, $conta, $token, $logs, $path_log);
+    $url_pagto = getUrlChekout();;
+    var_dump($url_pagto);
+    echo "<a href='$url_pagto'>ir para checkout pagseguro</a>";
+});
+
+
+
+#
+# entrar para lista da próxima edição (próxima turma, lista de espera, inscritos)
 #
 $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/', function ($request, $response, $args) {
 
