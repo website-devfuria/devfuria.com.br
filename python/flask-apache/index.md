@@ -29,7 +29,7 @@ de deploy:
 - FastCGI
 - CGI
 
-Neste artigo mostrarei como fazer o deploy do Flask com o Apache (utilizando o módulo __mod_wsgi__).
+Neste artigo mostrarei como fazer o deploy do Flask com o Apache (utilizando o módulo `mod_wsgi` ).
 
 O exemplo consiste em definir uma URL para o projeto, por exemplo `www.flask-test.loc` e, após acessar a URL, ver o
 resultado "Hello World!". Você precisará ter o [módulo WSGI instalado](/linux/instalando-apache-wsgi/) além do próprio
