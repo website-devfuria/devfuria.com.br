@@ -32,12 +32,12 @@ rapidamente, execute o comando abaixo.
 
     apt-get install apache2
 
-Antes de instalar o __mod_wsgi__, instale a [biblioteca de desenvolvimento do Phyton](https://pythonhosted.org/setuptools/)
+Antes de instalar o mod_wsgi, instale a [biblioteca de desenvolvimento do Phyton](https://pythonhosted.org/setuptools/)
 com o comando abaixo.
 
     apt-get install python-setuptools
 
-Agora, basta instalar o __mod_wsgi__.
+Agora, basta instalar o mod_wsgi.
 
     apt-get install libapache2-mod-wsgi
 

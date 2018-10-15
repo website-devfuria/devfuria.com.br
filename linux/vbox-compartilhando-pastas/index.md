@@ -15,13 +15,12 @@ Resumidamente, fazemos isso em 2 passos:
 
 
 
-Passo a Passo (Host Linux, guest Linux) 
+Passo a Passo (Host Linux, guest Linux)
 ---
 
 Este passo a passo foi testado em uma máquina host Linux com máquina virtual também Linux.
 
-Obs: As figuras mostram a interface do __Windows__ ou qualquer outra coisa, não repare não! Eu costumo "pegar" imanges 
-na net para facilitar meu trabalho.
+Obs: As figuras mostram a interface do __Windows__.
 
 
 Com a __máquina virtual__ aberta, clique no menu __Devices__, __Shared Folders__.
@@ -59,7 +58,7 @@ Você precisa definir isso antes de continuarmos.
 Abra o terminal, crie a pasta `home/seu-usuario/foo`.
 
 Como __root__ (ou utilize o utilitário `sudo` antes da instrução), execute o seguinte comando:
-    
+
     mount -t vboxsf foo home/seu-usuario/foo
 
 Ao prescionar o __enter__ não deve ser exibida nenhuma mensagem, isso significa que deu tudo certo.

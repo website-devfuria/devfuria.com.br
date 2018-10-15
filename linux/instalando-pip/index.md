@@ -72,7 +72,7 @@ Entende melhor o comando:
 
 O comando `freeze` lista os pacotes que já foram instalados.
 
-O fragmento `> fop.txt` faz com que o resultado do comando `freeze` ,seja enviado para o referido arquivo.
+O fragmento `> fop.txt` faz com que o resultado do comando `freeze` seja enviado para o referido arquivo.
 
 
 ### Fontes:

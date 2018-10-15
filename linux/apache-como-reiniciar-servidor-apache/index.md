@@ -29,11 +29,15 @@ O comando completo varia de distro para distro, veja as diferenças:
 
 ### Família Debian, Ubuntu
 
+    systemctl [comando] apache2.service
+    service apache2 [comando]
     /etc/init.d/apache2 [comando]
 
 
 ### Família HadHat, CentOS
 
+    systemctl [comando] httpd.service
+    service httpd [comando]
     /etc/init.d/httpd [comando]
 
 ### Debian (wheezy)
