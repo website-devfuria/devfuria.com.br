@@ -18,3 +18,4 @@ function classLoaderSite($class) {
 }
 
 spl_autoload_register('classLoaderSite');
+
