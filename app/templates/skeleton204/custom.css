@@ -87,7 +87,8 @@
 /* Larger than phone */
 @media (min-width: 550px) {
   .header {
-    margin-top: 18rem; }
+    /*margin-top: 18rem; }*/
+    margin-top: 2rem; }
   .value-props {
     margin-top: 9rem;
     margin-bottom: 7rem; }
