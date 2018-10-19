@@ -63,7 +63,7 @@ Lembre-se de trocar o trecho `/seu-usuario/` por seu usuário de verdade.
 Os arquivos
 ---
 
-Nosso arquivo principal terá o mesmo conteúdo do exemplo "Hello World!" que eu demonstrei no artigo []() e que você
+Nosso arquivo principal terá o mesmo conteúdo do exemplo "Hello World!" que eu demonstrei no artigo anterior e que você
 também encontra na documentação do Flask. A diferença é que agora o arquivo chama-se `myapp.py`.
 
 ```python
@@ -180,10 +180,13 @@ resultado esperado:
 Neste momento é comum aparecer o erro __"Internal Server Error"__, para solucionar o problema você deve tentar entender
 melhor o que está acontecendo, para isso veja o arquivo de log do Apache.
 
+    # no Debian
+    /var/log/apache2/error.log
 
-    tail /var/log/apache2/error.log
+    # para família RedHat.
+    tail /var/log/httpd/error_log
 
-O comando acima deve lhe trazer mais informações sobre o erro que está acontecendo.
+Um dos comandos acima (dependendo da usa distro) deve lhe trazer mais informações sobre o erro que está acontecendo.
 
 
 

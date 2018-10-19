@@ -58,7 +58,7 @@ Se listarmos o diretório `/etc/apache2/sites-available/` veremos o seguinte res
     joao
     maria
 
-Este são as Virtual Hosts disponível para seu servidor Apache, para habilitar devemos utilizar o comando `a2ensite` e
+Estas são as Virtual Hosts disponíveis para seu servidor Apache. Para habilitar devemos utilizar o comando `a2ensite` e
 para desabilitar utilizamos o comando `a2dissite`.
 
 Repare que ambos os exemplos apontam para o documentroot padrão `/var/www/`, ou seja o Virtual Host não é o responsável
@@ -77,15 +77,16 @@ Criando uma Virtual Host
 ---
 
 Nosso objetivo é criar um Virtual Host para o endereço fictício `www.foo.local`. Os arquivos do projeto estarão em um
-local parecido com este `/pasta/de/projetos/foo`, logo, se digitarmos a URL no navegador o servidor web deve
+local parecido com este `/pasta/de/projetos/foo`, logo, se digitarmos a URL no navegador, o servidor web deve
 redirecionar para nossa pasta (`/pasta/de/projetos/foo`).
 
-Supomos que o projeto rode sobre o domínio `www.foo.com.br`, mas não vamos redirecionar o domínio oficial se não você
-terá que alterar sua Virtual Host cada vez que quiser trocar entre a versão de produção e a de desenvolvimento.
+Suponhamos que o projeto rode sobre o domínio `www.foo.com.br`. Não vamos redirecionar o domínio oficial afim de evitar
+que você tenha que modificar sua Virtual Host cada vez que precisar alternar entre a versão de produção e a de desenvolvimento.
+Explico melhor:
 
-- A versão de __produção__ responde pela ULR `www.foo.com.br`
+- A versão de __produção__ responderá pela ULR `www.foo.com.br`
 
-- A versão de __desenvolvimento__ responde pela ULR `www.foo.local`
+- A versão de __desenvolvimento__ responderá pela ULR `www.foo.local`
 
 Vamos começar alterando o [arquivo hots](/misc/arquivo-hosts/). Normalmente, ele se encontra no endereço `/etc/hosts`.
 
@@ -127,7 +128,7 @@ Podemos, então, habilitar o novo Virtual Host com o comando abaixo.
 
     a2ensite foo
 
-Para surtir efeito, devemos reiniciar o Apache `service apache2 reload` (na família RedHat `/etc/apache2/conf.d/apache2 restart`).
+Para surtir efeito, devemos [reiniciar o Apache](/linux/apache-como-reiniciar-servidor-apache/).
 
 
 ### Testando
@@ -148,7 +149,7 @@ Na pasta `/pasta/de/projetos/foo` crie um arquivo HTML bem simples chamado `inde
 ```
 Novamente, acesse a URL `www.foo.local`, você deve ver o HTML acima renderizado.
 
-Se encontra algum problema tente ver os logs do Apache `tail /var/log/apache2/error.log` no Debian ou
+Se encontrar algum problema, tente ver os logs do Apache `tail /var/log/apache2/error.log` no Debian ou
 `tail /var/log/httpd/error_log` para família RedHat.
 
 
