@@ -1,5 +1,11 @@
 <?php
 
+
+$curso_url = "logica-de-programacao+testes-unitarios-em-python";
+$curso_tit = "Curso Lógica de Programação + Testes de Unidades em Python";
+$curso_tit_curto = "Lógica + Testes em Python";
+
+
 #
 # /cursos
 #
@@ -14,27 +20,103 @@ $slim->get('/cursos/', function ($request, $response, $args) {
 });
 
 #
-# Esta é a página do curso, que explica o curso em detalhes
+# LP1 sobre curso -> checkout
 #
-$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/', function ($request, $response, $args) {
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/lp1', function ($request, $response, $args) {
     // $site = $GLOBALS['site'];
     // var_dump($site->url->base);
     // echo "<a href='{$site->url->base}/cursos/logica-de-programacao-aliada-a-testes-unitarios/checkout'>checkout</a>";
 
-    $page = oop\Page::getPage('/cursos/logica+testes-2sobre/');
+    $page = oop\Page::getPage('/cursos/logica+testes-2lp1/');
     // var_dump($page->file); die();
     // $layout = 'layouts/home.html';
     $content_parsed = $this->view->fetchFromString($page->content);
     // var_dump($content_parsed); die();
-    $page->layout = "/layouts/cursos-log2-sobre.html";
+    $page->layout = "/layouts/cursos-log2-lp1.html";
 
     return $this->view->render($response, $page->layout, [
         'site'    => $GLOBALS['site'],
         'page'    => $page,
-        "content" => $content_parsed
+        'content' => $content_parsed
     ]);
 
 
+
+});
+
+#
+# LP2 sobre curso + captura de email
+#
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/lp2', function ($request, $response, $args) {
+
+    $params = $request->getQueryParams();
+
+    $utm = [];
+    $utm['source']   = (isset($params['utm_source']))   ? $params['utm_source'] :   'não-informado';
+    $utm['campaign'] = (isset($params['utm_campaign'])) ? $params['utm_campaign'] : 'não-informado';
+    $utm['medium']   = (isset($params['utm_medium']))   ? $params['utm_medium'] :   'não-informado';
+
+    $site = $GLOBALS['site'];
+    // var_dump($site->url->mailinglist); die();
+
+    $page = oop\Page::getPage('/cursos/logica+testes-2lp2/');
+    // var_dump($page->file); die();
+    // $layout = 'layouts/home.html';
+    $content_parsed = $this->view->fetchFromString($page->content);
+    // var_dump($content_parsed); die();
+
+    // $page->tittle = "Curso Lógica de Programação + Testes de Unidades";
+    $page->layout = "layouts/cursos-log2-lp2.html";
+    return $this->view->render($response, $page->layout, [
+        'site'    => $GLOBALS['site'],
+        'page'    => $page,
+        'utm'     => $utm,
+        'content' => $content_parsed
+    ]);
+
+});
+
+#
+# redirecionamento
+#
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/', function ($request, $response, $args) {
+    $site = $GLOBALS['site'];
+    $curso_url = $GLOBALS['curso_url'];
+    $curso_tit = $GLOBALS['curso_url'];
+
+    $query = $request->getUri()->getQuery();
+    $destino = $site->url->base . "/cursos/$curso_url/lp3/?" . $query;
+    // var_dump($query, $destino); die();
+
+    return $response->withRedirect($destino, 301);
+
+});
+
+
+#
+#
+#
+$slim->get("/cursos/$curso_url/lp3/", function ($request, $response, $args) {
+    var_dump('bateu'); die();
+
+    $params = $request->getQueryParams();
+
+    $utm = [];
+    $utm['source']   = (isset($params['utm_source']))   ? $params['utm_source'] :   'não-informado';
+    $utm['campaign'] = (isset($params['utm_campaign'])) ? $params['utm_campaign'] : 'não-informado';
+    $utm['medium']   = (isset($params['utm_medium']))   ? $params['utm_medium'] :   'não-informado';
+
+    $site = $GLOBALS['site'];
+    // var_dump($site->url->mailinglist); die();
+
+    $page = oop\Page::getPage("/");
+    $page->tittle = "Curso Lógica de Programação + Testes de Unidades";
+    $page->layout = "layouts/cursos-log2-next-open.html";
+    return $this->view->render($response, $page->layout, [
+        'site'    => $GLOBALS['site'],
+        'page'    => $page,
+        'utm'     => $utm,
+    ]);
 
 });
 
@@ -82,33 +164,6 @@ $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/checkout/url
     echo "<a href='$url_pagto'>ir para checkout pagseguro</a>";
 });
 
-
-
-#
-# entrar para lista da próxima edição (próxima turma, lista de espera, inscritos)
-#
-$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/', function ($request, $response, $args) {
-
-    $params = $request->getQueryParams();
-
-    $utm = [];
-    $utm['source']   = (isset($params['utm_source']))   ? $params['utm_source'] :   'não-informado';
-    $utm['campaign'] = (isset($params['utm_campaign'])) ? $params['utm_campaign'] : 'não-informado';
-    $utm['medium']   = (isset($params['utm_medium']))   ? $params['utm_medium'] :   'não-informado';
-
-    $site = $GLOBALS['site'];
-    // var_dump($site->url->mailinglist); die();
-
-    $page = oop\Page::getPage("/");
-    $page->tittle = "Curso Lógica de Programação + Testes de Unidades";
-    $page->layout = "layouts/cursos-next-open.html";
-    return $this->view->render($response, $page->layout, [
-        'site'    => $GLOBALS['site'],
-        'page'    => $page,
-        'utm'     => $utm,
-    ]);
-
-});
 
 #
 # 1 edição
@@ -243,8 +298,6 @@ $slim->get('/cursos/aulas-assistidas/{aluno}/{curso}/{aula}/{action}', function 
 });
 
 
-
-
 #
 # redirecionamentos:
 #
@@ -269,3 +322,22 @@ $slim->get('/logica-de-programacao/curso-de-logica.php', function ($request, $re
 
     return $response->withRedirect($destino, 301);
 });
+
+#
+// $slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/', function ($request, $response, $args) {
+//     $site = $GLOBALS['site'];
+//     $query = $request->getUri()->getQuery();
+//     $destino = $site->url->base . "/cursos/logica-de-programacao+testes-unitarios-python/?" . $query;
+//     // var_dump($query, $destino); die();
+
+//     return $response->withRedirect($destino, 301);
+// });
+
+#
+$slim->get('/cursos/logica-de-programacao-aliada-a-testes-unitarios/[{uri:.*}/]', function ($request, $response, $args) {
+    var_dump($args);
+    $query = $request->getUri()->getQuery();
+    var_dump($query);
+//logica-de-programacao+testes-unitarios-python
+});
+

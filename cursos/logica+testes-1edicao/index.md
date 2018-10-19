@@ -1,11 +1,11 @@
 ---
 layout:      cursos
-title:       Curso de Lógica de Programação Aliada a Testes Unitários
+title:       Lógica de Programação + Testes Unitários em Python
 description:
 edicao:      Primeira Edição (Fevereiro/2018)
 ---
 
-Olá, seja bem vindo a descrição do curso de __Lógica de Programação aliada a Testes Unitários__!
+Olá, seja bem vindo a descrição do curso de __Lógica de Programação + Testes Unitários em Python__!
 
 Este não é um curso de lógica convencional, ele é um pouco diferente do que você conhece.
 
