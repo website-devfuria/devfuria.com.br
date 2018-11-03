@@ -24,31 +24,8 @@ clearInterval(identificador);
 
 É o que estamos fazendo com a variável `id`.
 
-<div data-height="553" data-theme-id="2897" data-slug-hash="zfmkj" data-default-tab="js" data-user="flaviomicheletti" class='codepen'><pre><code>var btnStart = document.getElementById(&#x27;btn-start&#x27;);
-var btnStop  = document.getElementById(&#x27;btn-stop&#x27;);
-var display  = document.getElementById(&#x27;display&#x27;);
-var id       = null;
-
-btnStart.onclick = function() {
-  // A animação não será reiniciada caso
-  // já tenha sido iniciada
-  if(!id) {
-    // A mágica...
-    id = setInterval(function () {
-      display.value = Number(display.value) + 1;
-    }, 100);
-  }
-}
-btnStop.onclick = function() {
-  // Desliga a animação mas
-  // o valor de `id` continua sendo válido (true)
-  clearInterval(id);
-  // Anulamos o valor da variável id,
-  // é como se ela fosse uma variável de controle
-  id = null;
-}</code></pre>
-<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/zfmkj/'>Liga e desliga contador</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="300" data-theme-id="2897" data-slug-hash="zfmkj" data-default-tab="js,result" data-user="flaviomicheletti" data-pen-title="Liga e desliga contador" class="codepen">See the Pen <a href="https://codepen.io/flaviomicheletti/pen/zfmkj/">Liga e desliga contador</a> by Flávio Micheletti (<a href="https://codepen.io/flaviomicheletti">@flaviomicheletti</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Um porém é que, ao executarmos `clearInterval()` ele apenas interrompe a execução mas o valor da variável identificadora
 continua sendo válido (`true`). Precisamos atribuir `null` explicitamente para anular o valor da variável.

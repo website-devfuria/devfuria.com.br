@@ -9,16 +9,8 @@ Nesta matéria utilizarei o código que faz a uma lâmpada acender e apagar.
 
 Clique nas abas para visualizar as partes separadamente: HTML, JS e resultado.
 
-<div data-height="266" data-theme-id="2897" data-slug-hash="zFGvl" data-default-tab="js" data-user="flaviomicheletti" class='codepen'><pre><code>var element = document.getElementById(&#39;myimage&#39;);
-element.onclick = function() {
-    if (element.src.match(&quot;lampada-on&quot;)) {
-        element.src=&quot;http://www.devfuria.com.br/javascript/code-lampada/lampada-off.gif&quot;;
-    } else {
-        element.src=&quot;http://www.devfuria.com.br/javascript/code-lampada/lampada-on.gif&quot;;
-    }
-};</code></pre>
-<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/zFGvl/'>a lâmpada</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="300" data-theme-id="2897" data-slug-hash="NOeBYR" data-default-tab="js,result" data-user="flaviomicheletti" data-pen-title="a lâmpada" class="codepen">See the Pen <a href="https://codepen.io/flaviomicheletti/pen/NOeBYR/">a lâmpada</a> by Flávio Micheletti (<a href="https://codepen.io/flaviomicheletti">@flaviomicheletti</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 A lógica do programa é bem simples, utilizamos 2 imagens:
 

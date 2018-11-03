@@ -15,25 +15,8 @@ De diferente, temos, além da função [getElementById()](/javascript/getelement
 
 Ela "escreve" HTML no elemento referenciado, em nosso caso no elemento `p` (parâgrafo).
 
-
-<div data-height="372" data-theme-id="2897" data-slug-hash="mJhKg" data-default-tab="js" data-user="flaviomicheletti" class='codepen'><pre><code>var num = 0;
-
-function add() {
-    num++;
-    mostrar(num);
-}
-
-function sub() {
-    num--;
-    mostrar(num);
-}
-
-function mostrar(valor) {
-    document.getElementById(&quot;resultado&quot;).innerHTML = valor;
-}</code></pre>
-<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/mJhKg/'>Somando</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
+<p data-height="300" data-theme-id="2897" data-slug-hash="mJhKg" data-default-tab="js,result" data-user="flaviomicheletti" data-pen-title="Somando" class="codepen">See the Pen <a href="https://codepen.io/flaviomicheletti/pen/mJhKg/">Somando</a> by Flávio Micheletti (<a href="https://codepen.io/flaviomicheletti">@flaviomicheletti</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Preciso alertar que essa implementação não é a forma ideal de se programar em JavaScript. Na verdade, essa era a forma
 ideal praticada no anos 90. Hoje (nov/2014), podemos/devemos ao menos fazer algumas observações...
