@@ -5,6 +5,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
 ---
 
 
+
 <!-- Home start -->
 <section id="home" class="pfblock-image screen-height">
     <div class="home-overlay"></div>
@@ -72,8 +73,7 @@ description: Cursos, aulas, tutoriais, apostilas, matérias sobre programação 
                     <p>Este curso é um desafio para você,</p>
                     <p>diferente de tudo que você já viu.</p>
                     <p>Você nunca mais será o mesmo depois deste curso.</p>
-                    <p><a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios-proxima-edicao/?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Saiba mais!</a></p>
-                    <!-- <p><a class="btn btn-danger" href="{{ base_url() }}/cursos/logica-de-programacao-aliada-a-testes-unitarios/" role="button">Só para os corajosos!!!</a></p> -->
+                    <p><a class="btn btn-primary" href="{{ base_url() }}/cursos/logica-de-programacao+testes-unitarios-em-python/proxima-turma?utm_source=devfuria.com.br&utm_campaign=matriculas&utm_medium=home-page" role="button">Saiba mais!</a></p>
                 </div>
             </div>
             <div class="col-sm-4">
