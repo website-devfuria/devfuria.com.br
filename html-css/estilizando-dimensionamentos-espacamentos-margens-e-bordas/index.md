@@ -20,8 +20,10 @@ Devemos utilizar as unidades de medias, mas eu não quero entrar neste assunto a
 Podemos alterar a margem de um elemento com a propriedade `margin`, veja este artigo para saber mais sobre <br />
 [a proriedade margin](../margin/).
 
+<!--
 Podemos alterar o espaçamento de um elemento com a propriedade `padding`, veja este artigo para saber mais sobre <br />
-[a proriedade padding](../padding/)
+a proriedade padding../padding/)
+-->
 
 Podemos alterar a borda de um elemento com a propriedade `border-style`, veja este artigo para saber mais sobre <br />
 [a proriedade border-style](../border-style/)
