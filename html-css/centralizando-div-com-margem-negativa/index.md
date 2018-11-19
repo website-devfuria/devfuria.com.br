@@ -2,7 +2,7 @@
 layout:      basico3
 title:       Centralizando div com margem negativa
 description:
-capitulo:    "divs-centralizando"
+capitulo:    "html-divs-centralizando"
 ordem:       2
 ---
 

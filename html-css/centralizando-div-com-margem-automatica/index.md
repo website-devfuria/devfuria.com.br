@@ -2,7 +2,7 @@
 layout:      basico3
 title:       Centralizando div com margem automatica
 description:
-capitulo:    "divs-centralizando"
+capitulo:    "html-divs-centralizando"
 ordem:       1
 ---
 
