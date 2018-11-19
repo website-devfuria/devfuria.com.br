@@ -85,7 +85,7 @@ O navegador vem com um conjunto de fontes instaladas, um pequeno conjunto defini
 - cursive
 - fantasy
 
-Veja o artigo [Font Family genéricas](/html-css/font-family-genericas/) para você perceber a diferênça entre os cincos tipos
+Veja o artigo [Font Family genéricas](../font-family-genericas/) para você perceber a diferênça entre os cincos tipos
 básicos de fontes. Na verdade não são tipos, são famílias.
 
 
@@ -105,7 +105,7 @@ As fontes seguras são assim denominadas pois são o conjunto de fontes mais enc
 
 Ainda sim é um conjunto bem limitado opções.
 
-Veja o artigo [Font Family seguras](/html-css/font-family-seguras/) para você visualizar as diferençãs entre as fontes.
+Veja o artigo [Font Family seguras](../font-family-seguras/) para você visualizar as diferençãs entre as fontes.
 
 
 ## Fontes Desejadas (a cereja do bolo)

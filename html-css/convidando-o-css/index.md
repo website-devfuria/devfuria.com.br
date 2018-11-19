@@ -4,7 +4,6 @@ title:       Convidando o CSS
 capitulo:    "html-segundo"
 ordem:       1
 ---
-<!DOCTYPE html>
 <html>
     <head>
         <title>Convidando o CSS</title>

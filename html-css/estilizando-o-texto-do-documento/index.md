@@ -1,5 +1,5 @@
 ---
-layout:      puro
+layout:      nulo
 title:       Estilizando o texto do documento
 capitulo:    "html-segundo"
 ordem:       8

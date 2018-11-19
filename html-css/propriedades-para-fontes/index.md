@@ -72,7 +72,7 @@ Você pode utilizar medidas absolutas ou relativas.
 
 Define a família de fontes a ser utilizada.
 
-As cincos [fontes seguras](/html-css/font-family-seguras/) (as mais básicas) são: serif, sans-serif, monospace, cursive e fantasy.
+As cincos [fontes seguras](../font-family-seguras/) (as mais básicas) são: serif, sans-serif, monospace, cursive e fantasy.
 
 
 

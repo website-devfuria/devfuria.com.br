@@ -1,5 +1,5 @@
 ---
-layout:      puro
+layout:      nulo
 title:       Centralizando div com margem negativa - parte 1
 description:
 ---

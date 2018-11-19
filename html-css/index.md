@@ -9,9 +9,9 @@ description: Guia prático e conciso.
 
 Seja muito bem vindo a este curso de HTML e CSS!
 
-Este projeto está disponível no [github](https://github.com/devfuria/html-css) e encontra-se na versão
-[0.1](https://github.com/devfuria/html-css/releases) de Janeiro de 2018, veja o log de
-[cada atualização](https://github.com/devfuria/html-css/commits/master).
+Este projeto está disponível no [github](https://github.com/devfuria..) e encontra-se na versão
+[0.1](https://github.com/devfuria../releases) de Janeiro de 2018, veja o log de
+[cada atualização](https://github.com/devfuria../commits/master).
 Utilize os comentários de cada página, caso tenha alguma dúvida. Se precisar de ajuda com seu código, utilize o github.
 
 
@@ -89,7 +89,7 @@ __...contribua!__
 - Você acha que pode melhorar algum artigo ?
 - Gostaria de criar um artigo sobre HTML e/ou CSS ?
 
-Você pode clonar o [projeto](https://github.com/devfuria/html-css/) do GitHub e nos enviar um pull request.
+Você pode clonar o [projeto](https://github.com/devfuria../) do GitHub e nos enviar um pull request.
 
 Veja [quem já contribuiu](https://github.com/devfuria/devfuria.com.br/graphs/contributors) com o projeto!!!
 
@@ -99,7 +99,7 @@ __...faltou cobrir algum tópico ?__
 Esse é um mini-curso sobre HTML e CSS, mas minha intenção é fazê-lo crescer cada vez mais. Eu jé tenho alguns tópicos em mente
 que irei cobrir e tenho a certeza que você também deve ter alguma coisa em mente, que tal compartilhar a sua ideia ?
 
-Na lista de [issus do repositório](https://github.com/devfuria/html-css/issues) você poderá ver o que já temos em mente
+Na lista de [issus do repositório](https://github.com/devfuria../issues) você poderá ver o que já temos em mente
 (para evitar de criar um item duplicado). Fique à vontade para adicionar o item que você quizer. Também poderá escrever
 um comentário nos itens já existentes.
 

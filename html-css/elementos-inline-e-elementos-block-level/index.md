@@ -62,7 +62,7 @@ A CSS pode alterar o tipo do elemento, com a propriedade `display` é possível 
 2. `inline`
 3. `inline-block`
 
-Na verdade, há mais opções, leia mais sobre a propriedade [display](/html-css/display/)!
+Na verdade, há mais opções, leia mais sobre a propriedade [display](../display/)!
 
 
 ## Dá parar inverter o comportamento

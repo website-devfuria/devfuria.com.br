@@ -21,7 +21,7 @@ __block-level__.
 - `display: inline;`
 - `display: block;`
 
-Se você quiser entendê-los leia o artigo [Elementos in-line e elementos block-level](/html-css/elementos-inline-block-level/).
+Se você quiser entendê-los leia o artigo [Elementos in-line e elementos block-level](../elementos-inline-block-level/).
 
 
 
@@ -62,12 +62,12 @@ O que você pensa à respeito ?
 - `display: flex;`
 - `display: grid;`
 
-Nem tão novo assim, mas igualmente importantes, procure no [índice](/html-css/) o capítulo sobre __Layouts__.
+Nem tão novo assim, mas igualmente importantes, procure no [índice](../) o capítulo sobre __Layouts__.
 
 <!--
 Nem tão novo assim, mas igualmente importantes, por isso há um capítulo dedicado a cada um deles.
 
-Procure no [índice](/html-css/) os capítulos sobre __Flex Box__ e __Grid Layout__.
+Procure no [índice](../) os capítulos sobre __Flex Box__ e __Grid Layout__.
 -->
 
 

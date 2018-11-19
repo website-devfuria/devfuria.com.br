@@ -1,5 +1,5 @@
 ---
-layout:      puro
+layout:      nulo
 title:       Estilizando a fonte do documento
 capitulo:    "html-segundo"
 ordem:       7

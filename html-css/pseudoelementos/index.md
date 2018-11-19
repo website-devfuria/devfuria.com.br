@@ -76,7 +76,7 @@ conteúdo decorativo à um elemento utilizando a propriedade `content`.  Este el
 
 Veja uma [demo](exemplo-after.html).
 
-Mas veja também o artigo [content](/html-css/content/) para maiores informações e exemplos.
+Mas veja também o artigo [content](../content/) para maiores informações e exemplos.
 
 Fonte [mozilla.org/docs/Web/CSS/::after](https://developer.mozilla.org/pt-BR/docs/Web/CSS/::after)
 
@@ -99,7 +99,7 @@ conteúdo decorativo à um elemento utilizando a propriedade `content`. Este ele
 
 Veja uma [demo](exemplo-before.html).
 
-Mas veja também o artigo [content](/html-css/content/) para maiores informações e exemplos.
+Mas veja também o artigo [content](../content/) para maiores informações e exemplos.
 
 Fonte [mozilla.org/docs/Web/CSS/::before](https://developer.mozilla.org/pt-BR/docs/Web/CSS/::before)
 

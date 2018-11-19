@@ -123,7 +123,7 @@ Uma página deve ter títulos e subtítulos bem definidos, os mencanismos de bus
 
 Uma página deve ter pelo menos uma tag `h1` (princípio de SEO).
 
-Aprenda mais sobre [elementos de texto](/html-css/texto/).
+Aprenda mais sobre [elementos de texto](../texto/).
 
 
 ## Links
@@ -144,7 +144,7 @@ O código abaixo...
 
 O atributo `href` aponta para a próxima página.
 
-Aprenda mais sobre [âcoras e links](/html-css/ancoras-links/).
+Aprenda mais sobre [âcoras e links](../ancoras-links/).
 
 
 
@@ -199,7 +199,7 @@ __resultado:__
     <li>Salt and pepper to taste</li>
 </ul>
 
-Aprenda mais sobre [listas](/html-css/listas/).
+Aprenda mais sobre [listas](../listas/).
 
 
 
@@ -280,7 +280,7 @@ table {
 }
 </style>
 
-Aprenda mais sobre [tabelas](/html-css/tabelas/).
+Aprenda mais sobre [tabelas](../tabelas/).
 
 
 ## Formulários

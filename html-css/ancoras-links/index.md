@@ -15,10 +15,10 @@ O elemento da âncora é ilustrado abaixo.
 
 Onde __alvo__ será na verdade o destino do link e __label__ será o texto exibido no documento.
 
-Vou mostrar um <a href="/html-css/ancoras-links/">link real</a> gerado pelo código abaixo...
+Vou mostrar um <a href="../ancoras-links/">link real</a> gerado pelo código abaixo...
 
 ```html
-<a href="/html-css/ancoras-links/">link real</a>
+<a href="../ancoras-links/">link real</a>
 ```
 
 Esse link não faz muita coisa, pois ao clicar nele somos remetidos para a mesma página.
@@ -44,7 +44,7 @@ Não falei que ela era importante ? Nunca se esqueça dela, ok?
 Para abrir o link em nova aba basta utilizar o atributo/valor `target="_blank"`.
 
 ```html
-<a href="/html-css/ancoras-links/" target="_blank" >link real</a>
+<a href="../ancoras-links/" target="_blank" >link real</a>
 ```
 
 O valor `_blank` sempre criar uma aba nova. Caso voce queira (re)utilizar a mesma aba, então poderá usar um nome qualquer
@@ -58,7 +58,7 @@ que você deu a ela.
 Podemos colocar uma imagem como label e toda a área da imagem será clicável.
 
 ```html
-<a href="/html-css/ancoras-links/">
+<a href="../ancoras-links/">
     <img src="/path/to/imgs/imagem.jpg" />
 </a>
 ```
@@ -88,7 +88,7 @@ O SEO considera todos os seus links.
 Quando você quiser que ele desconsidere um link, poderá utilizar o atributo/valor `rel="nofollow"`.
 
 ```html
-<a href="/html-css/ancoras-links/" rel="nofollow" >link real</a>
+<a href="../ancoras-links/" rel="nofollow" >link real</a>
 ```
 
 A prorpiedade `rel` é abreviação para "relationship", ela descreve o relacionamento entre o documento e destino (href)

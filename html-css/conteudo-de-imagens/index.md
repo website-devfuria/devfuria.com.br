@@ -24,7 +24,7 @@ ordem:       8
 
         <h2>Pronto para o teste ?</h2>
         <p>Agora você chegou ao fim dessa série introdutória sobre HTML eu gostaria de desafiá-lo a realizar nosso teste.</p>
-        <p>Tem corajem ? Então, <a href="/html-css/teste-seu-conhecimento-sobre-html-01/">faça o teste</a>.</p>
+        <p>Tem corajem ? Então, <a href="../teste-seu-conhecimento-sobre-html-01/">faça o teste</a>.</p>
 
     </body>
 </html>

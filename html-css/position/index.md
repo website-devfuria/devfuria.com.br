@@ -65,4 +65,4 @@ utilizadas.
 Para esses elementos as propriedades `top`, `right`, `bottom` e `left` são importantes pois são elas que irão definar a
 localização do referido elemento;
 
-Veja artigo completo com exemplos sobre [posicionamento-fixo](/html-css/posicionamento-fixo/).
+Veja artigo completo com exemplos sobre [posicionamento-fixo](../posicionamento-fixo/).

@@ -1,5 +1,5 @@
 ---
-layout:      puro
+layout:      nulo
 title:       Estilizando dimensionamentos, espaçamentos, margens e bordas
 capitulo:    "html-segundo"
 ordem:       9
@@ -18,13 +18,13 @@ Devemos utilizar as unidades de medias, mas eu não quero entrar neste assunto a
 - __em__ (pixels) medida relativa baseado no tamanho de fonte
 
 Podemos alterar a margem de um elemento com a propriedade `margin`, veja este artigo para saber mais sobre <br />
-[a proriedade margin](/html-css/margin/).
+[a proriedade margin](../margin/).
 
 Podemos alterar o espaçamento de um elemento com a propriedade `padding`, veja este artigo para saber mais sobre <br />
-[a proriedade padding](/html-css/padding/)
+[a proriedade padding](../padding/)
 
 Podemos alterar a borda de um elemento com a propriedade `border-style`, veja este artigo para saber mais sobre <br />
-[a proriedade border-style](/html-css/border-style/)
+[a proriedade border-style](../border-style/)
 
 Como __exercício__, tente alterar o estilo desta página (use o plugin do navegador) explorando as propriedades acima apresentadas.
 
@@ -33,4 +33,4 @@ Como __exercício__, tente alterar o estilo desta página (use o plugin do naveg
 
 Agora você chegou ao fim dessa série introdutória sobre CSS eu gostaria de desafiá-lo a realizar nosso teste.
 
-Tem corajem ? Então, [faça o teste](/html-css/teste-seu-conhecimento-sobre-css-01/)
+Tem corajem ? Então, [faça o teste](../teste-seu-conhecimento-sobre-css-01/)

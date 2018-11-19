@@ -70,8 +70,8 @@ Se você observar na URL de seu navegador, verá que o fragmento `index.html` fo
 
 Experimente acessar as duas formas...
 
-- [o-basico-sobre-servidor-web/index.html](/html-css/o-basico-sobre-servidor-web/index.html)
-- [o-basico-sobre-servidor-web/](/html-css/o-basico-sobre-servidor-web/)
+- [o-basico-sobre-servidor-web/index.html](../o-basico-sobre-servidor-web/index.html)
+- [o-basico-sobre-servidor-web/](../o-basico-sobre-servidor-web/)
 
 Viu como tanto faz?
 
