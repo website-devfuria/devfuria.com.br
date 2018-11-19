@@ -97,13 +97,13 @@ class Page {
         }
         // var_dump("$url_prev | $url_acti | $url_next"); die();
 
-        if (array_key_exists($url_prev, $this->menu)) {
+        if (isset($url_prev) && array_key_exists($url_prev, $this->menu) ) {
             $this->prev = ['url' => $url_prev, 'tittle' => $this->menu[$url_prev]];
         } else {
             $this->prev = ['url' => '', 'tittle' => ''];
         }
 
-        if (array_key_exists($url_next, $this->menu)) {
+        if (isset($url_next) && array_key_exists($url_next, $this->menu) ) {
             $this->next = ['url' => $url_next, 'tittle' => $this->menu[$url_next]];
         } else {
             $this->next = ['url' => '', 'tittle' => ''];
