@@ -1,7 +1,7 @@
 ---
-layout:   puro
+layout:   nulo
 title:    Teste seu conhecimento sobre CSS
-capitulo: "segundo"
+capitulo: "html-segundo"
 ordem:    10
 ---
 
