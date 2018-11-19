@@ -1,6 +1,6 @@
 ---
 layout:      basico3
-title:       "Flutuando imagens - float: right"
+title:       "Flutuando imagens - float: left"
 description:
 ---
 
@@ -19,17 +19,17 @@ description:
   </li>
 </ul>
 
-
 <pre>
 img {
   ...
-  float: right;
+  float: left;
 }
 </pre>
 
+
 <!-- resultado -->
 <p>
-    <img src="https://www.devfuria.com.br../paragrafos-imagens/tom-jobim.jpg" alt="Tom Jobim" />
+    <img src="../tom-jobim.jpg" alt="Tom Jobim" />
     Antônio Carlos Brasileiro de Almeida Jobim (Rio de Janeiro, 25 de janeiro de 1927 —
     Nova Iorque, 8 de dezembro de 1994),  mais conhecido como Tom Jobim, foi um compositor, maestro, pianista,
     cantor, arranjador e violonista brasileiro.
@@ -49,10 +49,11 @@ img {
 
 
 
+
 <style>
 img {
-  float: right;
-  margin-left: 10px;
+  float: left;
+  margin-right: 10px
 }
 p {
   text-align: justify;
