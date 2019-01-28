@@ -43,7 +43,7 @@ $slim->get('/foo', function ($request, $response, $args) {
 #
 # outras rotas
 #
-// require("app/rotas.php");
+require("app/rotas.php");
 
 
 #
@@ -55,7 +55,7 @@ $slim->get('[/{uri:.*}]', function ($request, $response, $args) {
     $site = $GLOBALS['site'];         // var_dump($site); //die();
     $uri  = "/" . $args['uri'];       // var_dump($uri); die();
     $page = oop\Page::getPage($uri);  // var_dump($page); die();
-    // var_dump($uri); die();
+    // var_dump($site); die();
 
     #
     # se não existir...
