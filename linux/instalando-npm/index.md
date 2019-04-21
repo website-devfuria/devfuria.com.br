@@ -12,7 +12,11 @@ de código aberto para o [Node.js](/javascript/node.js/); segundo, ele é um uti
 com este repositório online, que ajuda na instalação de pacotes, gerenciamento de versão e gerenciamento de dependências.
 
 
-Execute:
+### Instalação rápida na Linux
+
+Baixe e execute o script instalador (shel script) com a ajuda do utilitário `curl`.
+
+Dá para fazer tudo (baixar e executar) em uma única linha...
 
     curl http://npmjs.org/install.sh | sudo sh
 
@@ -22,9 +26,17 @@ Para testar a instalação:
     npm -v
 
 
+### Instalação mais adequada
 
-Veja também
----
+Na hora de instalar o npm e o nodejs, o ideal, antes de tudo, é instalar um cara chamado __nvm__ (Node Version Manager).
+Com ele você pode instalar várias versões do node e do npm. E o melhor de tudo, você pode alternar facilmente entre as
+versões instaladas.
 
-- [Instalando o Node.js](/linux/instalando-nodejs/)
-- [Aprenda Node.js](/javascript/node.js/)
+Então, vá para o artigo [Instalando o Node.js](/linux/instalando-nodejs/) e veja  a receita "Instalando o node.js através do nvm".
+
+
+### Como aprender node js ?
+
+Eu preparei uma série de artigos para você [aprender Node.js](/javascript/node.js/).
+
+Divirta-se!!!
