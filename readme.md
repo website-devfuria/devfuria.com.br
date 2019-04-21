@@ -6,7 +6,7 @@ Ele é feito especialmente para o público iniciante.
 
 Não é um blog, ele parece-se mais com um site de cursos.
 
-Acompanha a gente pelo [facebook](https://www.facebook.com/devfuria/) e também pelo [youtube](https://www.youtube.com/user/DevFuria).
+Acompanha a gente pelo [youtube](https://www.youtube.com/user/DevFuria).
 
 
 ## Instalação - php
