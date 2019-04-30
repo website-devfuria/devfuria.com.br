@@ -1,4 +1,8 @@
-# [www.devfuria.com.br](http://www.devfuria.com.br "DevFuria")
+# DevFuria
+
+[www.devfuria.com.br](http://www.devfuria.com.br "DevFuria")
+
+Desde 2012 contribuíndo com a comunidade de desenvolvimento.
 
 O site aborda desenvolvimento de aplicações web.
 
@@ -11,21 +15,25 @@ Acompanha a gente pelo [youtube](https://www.youtube.com/user/DevFuria).
 
 ## Instalação - php
 
-Em breve!!!
+Você precisará ter insalado:
 
++ Apache
++ PHP
++ Composer
 
-## Você pode contribuir sim!!!
+No terminal, execute...
 
-Quer ajudar de alguma forma?
+    git clone https://github.com/flaviomicheletti/devfuria.com.br
+    cd devfuria.com.br
+    composer install
+    // dependendo da sua instalação, pode ser...
+    ~/composer.phar install
 
-A primeira coisa que você terá que fazer é definir "em que" e "como" ajudar.
+Acesse `http://localhost/devfuria.com.br`.
+
 
 
 ## Contato
 
 sitedevfuria@gmail.com
 
-
-## to do
-
-Aqui entra a lista de à fazeres.
