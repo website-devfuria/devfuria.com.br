@@ -77,8 +77,6 @@ Testando JSON...
     obj.should.have.keys('foo', 'baz');
     obj.should.have.keys(['foo', 'baz']);
 
-Fonte dos exemplos [www.phloxblog.in/node-js-uni-testing-js](http://www.phloxblog.in/node-js-uni-testing-js/#.VSfm6lmQneQ)
-
 
 Site Oficial:
 ---
