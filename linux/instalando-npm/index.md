@@ -12,7 +12,7 @@ de código aberto para o [Node.js](/javascript/node.js/); segundo, ele é um uti
 com este repositório online, que ajuda na instalação de pacotes, gerenciamento de versão e gerenciamento de dependências.
 
 
-### Instalação rápida na Linux
+### Instalação rápida no Linux
 
 Baixe e execute o script instalador (shel script) com a ajuda do utilitário `curl`.
 
@@ -24,6 +24,13 @@ Dá para fazer tudo (baixar e executar) em uma única linha...
 Para testar a instalação:
 
     npm -v
+
+
+### Atualizando o npm
+
+Olá, voltei (do futuro) para dizer como atualizar o npm.
+
+    npm install -g npm
 
 
 ### Instalação mais adequada
