@@ -1,6 +1,0 @@
-<?php
-
-
-$menu = [];
-
-return $menu;
