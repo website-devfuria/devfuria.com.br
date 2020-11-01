@@ -1,14 +1,10 @@
 # DevFuria
 
-"O que é isso, o site devfuria acabou ?"
+Eu fragmentei as seções do site devfuria.
 
-Obviamente que não, mas eu mudei um pouco as coisas de lugar.
+Agora cada seção tem seu próprio repositório.
 
-
-Seção Backbonejs:
-
-- http://devfuria.com.br/backbonejs/
-- https://github.com/flaviomicheletti/backbonejs
+Você sabe como [instalar o site devfuria](como-instalar/) localmente na sua máquina ?]
 
 Seção Git:
 
@@ -84,3 +80,8 @@ Seção TDD:
 
 - http://devfuria.com.br/tdd/
 - https://github.com/flaviomicheletti/tdd
+
+Seção Backbonejs:
+
+- http://devfuria.com.br/backbonejs/
+- https://github.com/flaviomicheletti/backbonejs
