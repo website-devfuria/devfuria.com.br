@@ -1,14 +1,18 @@
 # Como instalar o site devufuria localmente
 
+## Clonando os repos
 
-Instalação o jekyll
+https://gist.github.com/flaviomicheletti/eb74baba38a9bdb657bcbc89df1a4e39
+
+
+## Instalação o jekyll
 
 1. Você deve [instalar a linguagem ruby](http://www.devfuria.com.br/linux/instalando-ruby-on-rails/).
    Talvez você precise rodar como root `apt-get install ruby-dev`
 2. Instale a gem do Jekyll `gem install jekyll`.
 
 
-Executando localmente
+## Executando localmente
 
 1. Clone o repositório (`git clone https://github.com/devfuria/devfuria.com.br.git`).
 2. Execute o jekyll `jekyll server` e veja o resultado em [http://localhost:4000/](http://localhost:4000/).
