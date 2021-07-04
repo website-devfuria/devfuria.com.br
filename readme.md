@@ -4,7 +4,7 @@ Eu fragmentei as seções do site devfuria.
 
 Agora cada seção tem seu próprio repositório.
 
-Você sabe como [instalar o site devfuria](como-instalar/) localmente na sua máquina ?]
+Você sabe como [instalar o site devfuria](como-instalar.md/) localmente na sua máquina ?
 
 Seção Git:
 
