@@ -1,4 +1,4 @@
-# Como instalar o site devufuria localmente
+# Como instalar o site devfuria localmente
 
 ## Clonando os repos
 
