@@ -17,3 +17,13 @@ https://gist.github.com/flaviomicheletti/eb74baba38a9bdb657bcbc89df1a4e39
 1. Clone o repositório (`git clone https://github.com/devfuria/devfuria.com.br.git`).
 2. Execute o jekyll `jekyll server` e veja o resultado em [http://localhost:4000/](http://localhost:4000/).
 
+
+## Docker
+
+   docker run --rm \
+     --volume="$PWD:/srv/jekyll" \
+     --publish [::1]:4000:4000 \
+     jekyll/jekyll \
+     jekyll serve
+
+https://github.com/envygeeks/jekyll-docker
