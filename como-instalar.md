@@ -26,6 +26,8 @@ https://gist.github.com/flaviomicheletti/eb74baba38a9bdb657bcbc89df1a4e39
      jekyll/jekyll \
      jekyll serve
      
+---
+     
     docker run --rm --volume="$PWD:/srv/jekyll" --publish [::1]:4000:4000 jekyll/jekyll jekyll serve     
 
 https://github.com/envygeeks/jekyll-docker
