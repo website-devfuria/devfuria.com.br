@@ -42,4 +42,4 @@ Today the numbers speak for themselves...
 
 ## Where's the content?
 
-[Start here](/content.md)
+[Start here](/docs.md)

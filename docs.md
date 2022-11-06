@@ -8,7 +8,7 @@ I fragmented the devfuria site sections.
 
 Now each section has its own repository.
 
-Do you know how to [install devfuria site](know-how-to-install.md/) locally on your machine?
+Do you know how to [install devfuria site](install.md/) locally on your machine?
 
 
 Git Section

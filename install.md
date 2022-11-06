@@ -1,9 +1,10 @@
-# How to install devfuria site locally
+# Documentation
 
+## How to install
 
-__1) Clonando os repos:__
+__1) Cloning the repos:__
 
-You need to clone the [repositories](/content.md).
+You need to clone the [repositories](/docs.md).
 
 <br />
 
@@ -17,8 +18,8 @@ __2) Installing jekyll:__
 
 __3) Running Local:__
 
-1. clone the repository (`git clone https://github.com/devfuria/devfuria.com.br.git`).
-2. Run the jekyll `jekyll server` and see the result at [http://localhost:4000/](http://localhost:4000/).
+- Clone the repository (`git clone https://github.com/devfuria/devfuria.com.br.git`).
+- Run the jekyll `jekyll server` and see the result at [http://localhost:4000/](http://localhost:4000/).
 
 
 <br />
