@@ -1,25 +1,29 @@
 # How to install devfuria site locally
 
 
-## 1) Clonando os repos
+__1) Clonando os repos:__
 
 You need to clone the [repositories](/content.md).
 
+<br />
 
-## 2) Installing jekyll
+__2) Installing jekyll:__
 
-1. You must [install ruby language](http://www.devfuria.com.br/linux/instalando-ruby-on-rails/).
-   Maybe you need to run as root `apt-get install ruby-dev`
-2. Install Jekyll's gem `gem install jekyll`.
+- You must [install ruby language](http://www.devfuria.com.br/linux/instalando-ruby-on-rails/).
+  Maybe you need to run as root `apt-get install ruby-dev`
+- Install Jekyll's gem `gem install jekyll`.
+
+<br />
+
+__3) Running Local:__
+
+1. clone the repository (`git clone https://github.com/devfuria/devfuria.com.br.git`).
+2. Run the jekyll `jekyll server` and see the result at [http://localhost:4000/](http://localhost:4000/).
 
 
-## 3) Running Local
+<br />
 
-1. Clone o repositório (`git clone https://github.com/devfuria/devfuria.com.br.git`).
-2. Run the jekyll `jekyll server` e veja o resultado em [http://localhost:4000/](http://localhost:4000/).
-
-
-## Docker
+__Docker:__
 
 In case you need a Docker image...
 
